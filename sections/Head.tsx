@@ -48,6 +48,9 @@ export default function HeadComponent({
       <link rel="manifest" href="/site.webmanifest"></link>
       <link rel="mask-icon" href="/safari-pinned-tab.svg" data-color="#003232">
       </link>
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"></link>
       <meta name="theme-color" content="#003232"></meta>
       <meta name="msapplication-TileColor" content="#003232"></meta>
       {styleUrls?.map((styleUrl: string) => (

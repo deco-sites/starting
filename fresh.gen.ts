@@ -9,10 +9,21 @@ import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_middleware.ts";
 import * as $3 from "./routes/index.tsx";
 import * as $$0 from "./islands/LiveControls.tsx";
-import * as $$$0 from "./sections/GetStarted.tsx";
-import * as $$$1 from "./sections/Head.tsx";
-import * as $$$2 from "./sections/Markdown.tsx";
-import * as $$$3 from "./sections/QuillText.tsx";
+import * as $$$0 from "./sections/About.tsx";
+import * as $$$1 from "./sections/Carousel.tsx";
+import * as $$$2 from "./sections/Cms.tsx";
+import * as $$$3 from "./sections/Community.tsx";
+import * as $$$4 from "./sections/Delight.tsx";
+import * as $$$5 from "./sections/Divider.tsx";
+import * as $$$6 from "./sections/Faq.tsx";
+import * as $$$7 from "./sections/Features.tsx";
+import * as $$$8 from "./sections/Footer.tsx";
+import * as $$$9 from "./sections/Head.tsx";
+import * as $$$10 from "./sections/Header.tsx";
+import * as $$$11 from "./sections/Integration.tsx";
+import * as $$$12 from "./sections/Markdown.tsx";
+import * as $$$13 from "./sections/Partner.tsx";
+import * as $$$14 from "./sections/QuillText.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -24,28 +35,58 @@ const manifest: DecoManifest = {
   },
   islands: { "./islands/LiveControls.tsx": $$0 },
   sections: {
-    "./sections/GetStarted.tsx": $$$0,
-    "./sections/Head.tsx": $$$1,
-    "./sections/Markdown.tsx": $$$2,
-    "./sections/QuillText.tsx": $$$3,
+    "./sections/About.tsx": $$$0,
+    "./sections/Carousel.tsx": $$$1,
+    "./sections/Cms.tsx": $$$2,
+    "./sections/Community.tsx": $$$3,
+    "./sections/Delight.tsx": $$$4,
+    "./sections/Divider.tsx": $$$5,
+    "./sections/Faq.tsx": $$$6,
+    "./sections/Features.tsx": $$$7,
+    "./sections/Footer.tsx": $$$8,
+    "./sections/Head.tsx": $$$9,
+    "./sections/Header.tsx": $$$10,
+    "./sections/Integration.tsx": $$$11,
+    "./sections/Markdown.tsx": $$$12,
+    "./sections/Partner.tsx": $$$13,
+    "./sections/QuillText.tsx": $$$14,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
-    "./sections/GetStarted.tsx": {
-      "inputSchema": {
-        "title": " Get Started",
-        "type": "object",
-        "properties": {
-          "enableInspectVSCode": {
-            "type": [
-              "boolean",
-              "null",
-            ],
-            "title": "Enable Inspect V S Code",
-          },
-        },
-        "required": [],
-      },
+    "./sections/About.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Carousel.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Cms.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Community.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Delight.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Divider.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Faq.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Features.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Footer.tsx": {
+      "inputSchema": null,
       "outputSchema": null,
     },
     "./sections/Head.tsx": {
@@ -97,6 +138,14 @@ const manifest: DecoManifest = {
       },
       "outputSchema": null,
     },
+    "./sections/Header.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Integration.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
     "./sections/Markdown.tsx": {
       "inputSchema": {
         "title": " Markdown",
@@ -111,6 +160,10 @@ const manifest: DecoManifest = {
           "text",
         ],
       },
+      "outputSchema": null,
+    },
+    "./sections/Partner.tsx": {
+      "inputSchema": null,
       "outputSchema": null,
     },
     "./sections/QuillText.tsx": {
