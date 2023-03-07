@@ -54,7 +54,20 @@ const manifest: DecoManifest = {
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
     "./sections/About.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " About",
+        "type": "object",
+        "properties": {
+          "html": {
+            "format": "html",
+            "type": "string",
+            "title": "Html",
+          },
+        },
+        "required": [
+          "html",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Carousel.tsx": {
