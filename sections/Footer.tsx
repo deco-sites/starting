@@ -1,11 +1,22 @@
 export default function Footer() {
   return (
-    <section class="bg-[#053535]">
-      <div class="px-6 md:px-[3.03rem] flex flex-col md:flex-row md:justify-between gap-16">
+    <section class="relative bg-[#053535] pt-6 pb-32 overflow-hidden">
+      <div class="hidden md:block md:absolute md:w-full bottom-[-10%]">
+        <svg class="w-full h-[50%]" viewBox="0 0 1440 397" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1313.93 469.388C1249.42 469.388 1238.38 410.078 1258.75 352.33C1274.87 306.454 1313.08 258.222 1369.95 258.222C1437.02 258.222 1443.81 321.497 1424.28 376.866C1407.31 424.328 1369.1 469.388 1313.93 469.388ZM1294.4 554.003C1406.45 554.003 1506.64 496.279 1546.52 391.862C1588.13 281.917 1541.44 171.997 1388.63 171.997C1266.39 171.997 1173.01 243.178 1137.36 337.286C1097.46 443.265 1140.77 553.979 1294.4 553.979V554.003ZM922.569 554.003C966.704 554.003 1011.72 545.303 1043.11 532.639C1054.15 504.161 1055 476.477 1046.51 448.817C1024.43 456.723 993.891 464.629 962.473 464.629C877.583 464.629 869.947 406.112 887.771 356.271C907.298 303.281 958.243 260.577 1038.88 260.577C1060.11 260.577 1080.48 263.749 1093.2 270.863C1115.28 243.178 1128 215.494 1130.55 187.041C1111.88 179.134 1080.46 172.021 1039.73 172.021C907.298 172.021 802.881 243.995 765.53 343.654C729.881 437.762 757.043 554.027 922.569 554.027V554.003ZM466.697 327.025C489.628 279.562 525.277 251.902 571.965 251.902C613.572 251.902 620.356 273.266 613.572 289.872C603.383 312.798 568.586 327.049 466.722 327.049L466.697 327.025ZM503.196 554.003C546.48 554.003 607.614 546.096 658.559 522.377C667.045 496.279 666.194 470.181 656.856 443.289C624.587 458.309 579.601 467.009 538.845 467.009C478.562 467.009 445.467 448.817 446.319 402.94C611.019 406.906 696.761 379.221 724.774 311.188C752.787 242.385 704.396 171.997 589.789 171.997C467.548 171.997 377.55 253.464 344.455 341.251C309.658 434.566 331.712 554.003 503.196 554.003ZM11.108 554.003C124.012 554.003 188.241 505.747 262.943 357.857C303.699 276.39 338.496 196.509 378.401 117.421L425.941 131.648C438.683 135.613 445.467 128.476 439.535 117.421L381.831 7.50065C377.575 -0.40574 368.238 -1.19878 362.305 1.18034L218.834 51.7909C206.942 55.7561 207.794 66.0175 219.685 69.1897L262.143 81.8544C227.346 155.415 184.037 266.129 149.239 335.724C110.186 413.226 90.6593 467.802 24.4439 467.802C-41.7715 467.802 -52.8117 419.546 -24.7984 350.744C7.4709 270.863 61.7948 247.144 123.754 263.749C140.727 241.616 153.47 208.381 158.551 178.341C140.727 173.607 119.498 172.021 101.674 172.021C1.51228 172.021 -97.8237 220.276 -138.58 321.497C-191.201 451.989 -142.552 554.027 11.108 554.027V554.003Z" fill="#2BD58A"/>
+        </svg>
+      </div>
+      <div class="absolute w-full bottom-0 md:hidden">
+        <svg class="w-full h-[50%]" viewBox="0 0 430 252" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M96.3473 502.978C198.778 502.978 257.049 459.167 324.821 324.898C361.796 250.934 393.365 178.41 429.568 106.607L472.698 119.523C484.258 123.123 490.413 116.643 485.031 106.607L432.68 6.81026C428.819 -0.367927 420.348 -1.08793 414.965 1.07208L284.803 47.0212C274.015 50.6212 274.787 59.9376 285.576 62.8176L324.095 74.3158C292.526 141.101 253.234 241.618 221.665 304.803C186.234 375.167 168.519 424.716 108.446 424.716C48.3733 424.716 38.3572 380.905 63.7718 318.44C93.0476 245.916 142.332 224.381 198.544 239.458C213.942 219.363 225.503 189.189 230.113 161.916C213.942 157.618 194.682 156.178 178.512 156.178C87.6417 156.178 -2.47923 199.989 -39.4543 291.887C-87.1944 410.36 -43.0583 503 96.3473 503V502.978Z" fill="#2BD58A"/>
+        </svg>
+      </div>
+      <div class="px-6 md:px-[3.03rem] flex flex-col md:flex-row md:justify-between">
         <ul>
           <li>
-            <a href="#">
+            <a class="grid pb-32" href="#">
               <svg
+                class="justify-self-end"
                 width="68"
                 height="34"
                 viewBox="0 0 68 34"
@@ -20,12 +31,12 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <div class="justify-center md:flex-grow">
+        <div class="justify-center md:flex-grow pl-32">
           <ul class="grid md:grid-cols-3 md:w-2/3 gap-4">
             <li>
               <a
                 href="#"
-                class="px-2 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
+                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
               >
                 Company
               </a>
@@ -33,7 +44,7 @@ export default function Footer() {
             <li>
               <a
                 href="#"
-                class="px-2 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
+                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
               >
                 Community
               </a>
@@ -41,7 +52,7 @@ export default function Footer() {
             <li>
               <a
                 href="#"
-                class="px-2 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
+                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
               >
                 Docs
               </a>
@@ -49,7 +60,7 @@ export default function Footer() {
             <li>
               <a
                 href="#"
-                class="px-2 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
+                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
               >
                 Pricing
               </a>
@@ -57,7 +68,7 @@ export default function Footer() {
             <li>
               <a
                 href="#"
-                class="px-2 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
+                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
               >
                 Camp
               </a>
@@ -65,31 +76,40 @@ export default function Footer() {
             <li>
               <a
                 href="#"
-                class="px-2 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
+                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
               >
                 Blog
               </a>
             </li>
           </ul>
         </div>
-        <ul class="hidden md:block md:flex md:flex-row">
+        <ul class="hidden md:flex md:flex-row md:gap-4 md:flex-shrink-0">
           <li>
             <a
               href="#"
-              class="px-2 font-inter font-normal text-white opacity-[80%]"
+              class="block px-2 py-2.5 font-inter font-normal text-[#2FD180]"
             >
-              Company
+              Login
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              class="px-2 font-inter font-normal text-white opacity-[80%]"
-            >
-              Company
-            </a>
+            <button class="px-4 py-1 my-1.5 font-inter font-normal text-[#161A16] bg-[#06E474] rounded-sm">
+              Register
+            </button>
           </li>
         </ul>
+      </div>
+      <div>
+        <ul class="flex flex-row justify-end px-6 md:px-[3.03rem] py-32 md:pt-56">
+            <li>
+              <a
+                href="#"
+                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
+              >
+                Built with Deco
+              </a>
+            </li>
+          </ul>
       </div>
     </section>
   );

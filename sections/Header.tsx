@@ -1,6 +1,14 @@
-export default function Header() {
+export interface Props {
+  menuLinks: Array<{ label: string; href: string }>;
+  idiom: string;
+  login: string;
+  register: string;
+
+}
+
+export default function Header({ menuLinks, idiom, login, register }: Props) {
   return (
-    <nav class="flex flex-row justify-between items-center px-3 bg-[#1F261F]">
+    <nav class="flex flex-row justify-between items-center px-3 py-1.5 bg-[#1F261F]">
       <ul>
         <li>
           <a href="#">
@@ -20,76 +28,24 @@ export default function Header() {
         </li>
       </ul>
       <ul class="hidden md:flex md:flex-row md:gap-8">
-        <li class="relative py-2 group">
-          <a
-            href="#"
-            class="block px-2 font-inter font-normal bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-            Company
-          </a>
-          <div
-            class="absolute w-full h-[3px] bg-transparent bottom-0 bg-linear-transp-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-          </div>
-        </li>
-        <li class="relative py-2 group">
-          <a
-            href="#"
-            class="block px-2 font-inter font-normal bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-            Pricing
-          </a>
-          <div
-            class="absolute w-full h-[3px] bg-transparent bottom-0 bg-linear-transp-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-          </div>
-        </li>
-        <li class="relative py-2 group">
-          <a
-            href="#"
-            class="block px-2 font-inter font-normal bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-            Community
-          </a>
-          <div
-            class="absolute w-full h-[3px] bg-transparent bottom-0 bg-linear-transp-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-          </div>
-        </li>
-        <li class="relative py-2 group">
-          <a
-            href="#"
-            class="block px-2 font-inter font-normal bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-            Camp
-          </a>
-          <div
-            class="absolute w-full h-[3px] bg-transparent bottom-0 bg-linear-transp-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-          </div>
-        </li>
-        <li class="relative py-2 group">
-          <a
-            href="#"
-            class="block px-2 font-inter font-normal bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-            Blog
-          </a>
-          <div
-            class="absolute w-full h-[3px] bg-transparent bottom-0 bg-linear-transp-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
-            style="background-size: 200%;"
-          >
-          </div>
-        </li>
+        {menuLinks.map((link) => {
+          return (
+            <li class="relative py-2 group">
+              <a
+                href={link.href}
+                class="block px-2 font-inter font-normal bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
+                style="background-size: 200%;"
+              >
+                {link.label}
+              </a>
+              <div
+                class="absolute w-full h-[3px] bg-transparent bottom-0 bg-linear-transp-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
+                style="background-size: 200%;"
+              >
+              </div>
+            </li>
+          )
+        })}
       </ul>
       <ul class="md:flex md:flex-row md:gap-4">
         <li class="md:hidden">
@@ -108,7 +64,7 @@ export default function Header() {
         <li class="hidden md:block md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:hover:border-[#2FD180] md:transition md:ease-in-out md:duration-300">
           <a href="#">
             <div class="flex flex-row items-center gap-1">
-              <span class="font-inter font-normal text-[#2FD180]">Eng</span>
+              <span class="font-inter font-normal text-[#2FD180]">{idiom}</span>
               <svg
                 width="20"
                 height="20"
@@ -129,12 +85,12 @@ export default function Header() {
         </li>
         <li class="hidden md:block md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:hover:border-[#2FD180] md:transition md:ease-in-out md:duration-300">
           <a href="#" class="block font-inter font-normal text-[#2FD180]">
-            Login
+            {login}
           </a>
         </li>
         <li class="hidden md:block md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:hover:border-[#2FD180] md:transition md:ease-in-out md:duration-300">
           <a href="#" class="block font-inter font-normal text-[#2FD180]">
-            Register
+            {register}
           </a>
         </li>
       </ul>

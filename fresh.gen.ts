@@ -58,14 +58,40 @@ const manifest: DecoManifest = {
         "title": " About",
         "type": "object",
         "properties": {
-          "html": {
+          "mainText": {
             "format": "html",
             "type": "string",
-            "title": "Html",
+            "title": "Main Text",
+          },
+          "secondText": {
+            "type": "string",
+            "title": "Second Text",
+          },
+          "placeholder": {
+            "type": "string",
+            "title": "Placeholder",
+          },
+          "button": {
+            "type": "string",
+            "title": "Button",
+          },
+          "blackBlock": {
+            "format": "html",
+            "type": "string",
+            "title": "Black Block",
+          },
+          "greenBlock": {
+            "type": "string",
+            "title": "Green Block",
           },
         },
         "required": [
-          "html",
+          "mainText",
+          "secondText",
+          "placeholder",
+          "button",
+          "blackBlock",
+          "greenBlock",
         ],
       },
       "outputSchema": null,
@@ -75,7 +101,44 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Cms.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Cms",
+        "type": "object",
+        "properties": {
+          "firstTitle": {
+            "type": "string",
+            "title": "First Title",
+          },
+          "secondTitle": {
+            "type": "string",
+            "title": "Second Title",
+          },
+          "textLeftFirstTitle": {
+            "type": "string",
+            "title": "Text Left First Title",
+          },
+          "textRightFirstTitle": {
+            "type": "string",
+            "title": "Text Right First Title",
+          },
+          "textLeftSecondTitle": {
+            "type": "string",
+            "title": "Text Left Second Title",
+          },
+          "textRightSecondTitle": {
+            "type": "string",
+            "title": "Text Right Second Title",
+          },
+        },
+        "required": [
+          "firstTitle",
+          "secondTitle",
+          "textLeftFirstTitle",
+          "textRightFirstTitle",
+          "textLeftSecondTitle",
+          "textRightSecondTitle",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Community.tsx": {
@@ -95,7 +158,44 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Features.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Features",
+        "type": "object",
+        "properties": {
+          "col1Ttitle": {
+            "type": "string",
+            "title": "Col1 Ttitle",
+          },
+          "col1Text": {
+            "type": "string",
+            "title": "Col1 Text",
+          },
+          "col2Title": {
+            "type": "string",
+            "title": "Col2 Title",
+          },
+          "col2Text": {
+            "type": "string",
+            "title": "Col2 Text",
+          },
+          "col3Title": {
+            "type": "string",
+            "title": "Col3 Title",
+          },
+          "col3Text": {
+            "type": "string",
+            "title": "Col3 Text",
+          },
+        },
+        "required": [
+          "col1Ttitle",
+          "col1Text",
+          "col2Title",
+          "col2Text",
+          "col3Title",
+          "col3Text",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Footer.tsx": {
@@ -152,11 +252,73 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Header.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Header",
+        "type": "object",
+        "properties": {
+          "menuLinks": {
+            "title": "Menu Links",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "title": "Label",
+                },
+                "href": {
+                  "type": "string",
+                  "title": "Href",
+                },
+              },
+              "required": [
+                "label",
+                "href",
+              ],
+            },
+          },
+          "idiom": {
+            "type": "string",
+            "title": "Idiom",
+          },
+          "login": {
+            "type": "string",
+            "title": "Login",
+          },
+          "register": {
+            "type": "string",
+            "title": "Register",
+          },
+        },
+        "required": [
+          "menuLinks",
+          "idiom",
+          "login",
+          "register",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Integration.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Integration",
+        "type": "object",
+        "properties": {
+          "mainText": {
+            "format": "html",
+            "type": "string",
+            "title": "Main Text",
+          },
+          "secondText": {
+            "type": "string",
+            "title": "Second Text",
+          },
+        },
+        "required": [
+          "mainText",
+          "secondText",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Markdown.tsx": {

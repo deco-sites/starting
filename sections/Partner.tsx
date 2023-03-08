@@ -1,7 +1,7 @@
 export default function Partner() {
   return (
     <section class="flex flex-col bg-[#053535] pt-4 pb-12 md:pb-32">
-      <div class="grid grid-cols-1 px-6 pb-12 gap-10 md:px-[11rem] md:grid-cols-2">
+      <div class="grid grid-cols-1 px-6 pb-12 gap-10 md:px-[7rem] md:grid-cols-2">
         <div class="relative md:order-2 w-full h-full grid">
           <div
             class="block absolute w-full h-full md:hidden z-0"
@@ -40,7 +40,7 @@ export default function Partner() {
         >
         </div>
       </div>
-      <div class="mx-6 mt-12 pt-8 grid grid-cols-1 gap-8 border-t border-t-[1px] border-white-opacity items-end md:mx-[11rem] md:grid-cols-4">
+      <div class="mx-6 mt-12 pt-8 grid grid-cols-1 gap-8 border-t border-t-[1px] border-white-opacity items-end md:mx-[7rem] md:grid-cols-4">
         <div class="border-b border-b-0.5 border-white pb-2">
           <p class="font-sans not-italic font-normal text-lg text-white opacity-[67%]">
             Manage all storefronts in one place

@@ -1,4 +1,13 @@
-export default function Features() {
+export interface Props {
+  col1Ttitle: string;
+  col1Text: string;
+  col2Title: string;
+  col2Text: string;
+  col3Title: string;
+  col3Text: string;
+}
+
+export default function Features({col1Text, col1Ttitle, col2Title, col2Text, col3Title, col3Text}: Props) {
   return (
     <section class="px-6 py-16 md:px-[6rem] bg-[#053535]">
       <div class="grid grid-cols-1 gap-16 md:grid-cols-3">
@@ -9,11 +18,10 @@ export default function Features() {
           >
           </div>
           <p class="font-inter not-italic font-medium text-3xl text-white opacity-80">
-            Use any platform <br />of your choice
+            {col1Ttitle}
           </p>
           <p class="font-sans not-italic	font-normal text-lg text-white opacity-80">
-            Deco is a vendor-neutral platform that lets you select the products
-            that are best for you, regardless of the vendor.
+            {col1Text}
           </p>
         </div>
         <div class="flex flex-col gap-8">
@@ -25,12 +33,10 @@ export default function Features() {
             </div>
           </div>
           <p class="font-inter not-italic font-medium text-3xl text-white opacity-80">
-            Get blazing-fast <br />websites
+            {col2Title}
           </p>
           <p class="font-sans not-italic	font-normal text-lg text-white opacity-80">
-            Pagespeeds affects SEO, visitor engagement and sales. Deco leverages
-            edge computing and CDN capabilities to ensure digital experiences
-            are always fast.
+            {col2Text}
           </p>
         </div>
         <div class="flex flex-col gap-8">
@@ -40,12 +46,10 @@ export default function Features() {
           >
           </div>
           <p class="font-inter not-italic font-medium text-3xl text-white opacity-80">
-            Save time and money
+            {col3Title}
           </p>
           <p class="font-sans not-italic	font-normal text-lg text-white opacity-80">
-            Cheaper. Faster. Stronger. Get all the tools you need to build and
-            optimize your headless experience for less price and make your teams
-            work smarter.
+            {col3Text}
           </p>
         </div>
       </div>
