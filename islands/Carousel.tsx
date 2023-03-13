@@ -10,7 +10,7 @@ export default function Carousel(props: Props) {
   const [transition, setTranstion] = useState(0);
   return (
     <div>
-        <div id="desktopCarousel" class={"flex flex-row gap-[2%] px-6 md:px-[7rem] group transition-[translate] ease-in-out duration-700 "+ "md:-translate-x-["+(28*transition)+"%]"+ " -translate-x-["+(90*transition)+"%]"}>
+        <div id="desktopCarousel" class={"flex flex-row gap-[2%] px-[4%] md:px-[7rem] group transition-[translate] ease-in-out duration-700 "+ "md:-translate-x-["+(28*transition)+"%]"+ " -translate-x-["+(94*transition)+"%]"}>
           {props.images.map((image, index) => {
             return (
               <div class={"flex flex-col md:w-[32%] z-0 w-[100%] flex-shrink-0 rounded transition-[opacity] ease-in-out "+(((index) >= (0 + transition) &&  (index) <= (2 + transition)) ? ' md:opacity-100' : ' md:opacity-50')+(((index) >= (0 + transition) &&  (index) <= (0 + transition)) ? ' opacity-100' : ' opacity-50')}>
