@@ -1,4 +1,11 @@
-export default function Footer() {
+export interface Props {
+  menuLinks: Array<{ label: string; href: string }>;
+  login: string;
+  register: string;
+  built: string;
+}
+
+export default function Footer({menuLinks, login, register, built}: Props) {
   return (
     <section class="relative bg-[#053535] pt-6 pb-32 overflow-hidden">
       <div class="hidden md:block md:absolute md:w-full bottom-[-10%]">
@@ -33,54 +40,18 @@ export default function Footer() {
         </ul>
         <div class="justify-center md:flex-grow pl-32">
           <ul class="grid md:grid-cols-3 md:w-2/3 gap-4">
-            <li>
+            {menuLinks.map((link) => {
+            return (
+              <li>
               <a
-                href="#"
+                href={link.href}
                 class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
               >
-                Company
+                {link.label}
               </a>
             </li>
-            <li>
-              <a
-                href="#"
-                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
-              >
-                Community
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
-              >
-                Docs
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
-              >
-                Camp
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
-              >
-                Blog
-              </a>
-            </li>
+            )
+          })}
           </ul>
         </div>
         <ul class="hidden md:flex md:flex-row md:gap-4 md:flex-shrink-0">
@@ -89,12 +60,12 @@ export default function Footer() {
               href="#"
               class="block px-2 py-2.5 font-inter font-normal text-[#2FD180]"
             >
-              Login
+              {login}
             </a>
           </li>
           <li>
             <button class="px-4 py-1 my-1.5 font-inter font-normal text-[#161A16] bg-[#06E474] rounded-sm">
-              Register
+              {register}
             </button>
           </li>
         </ul>
@@ -106,7 +77,7 @@ export default function Footer() {
                 href="#"
                 class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left"
               >
-                Built with Deco
+                {built}
               </a>
             </li>
           </ul>

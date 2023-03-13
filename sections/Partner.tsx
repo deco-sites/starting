@@ -1,4 +1,18 @@
-export default function Partner() {
+import type { Image } from "$live/std/ui/types/Image.ts";
+
+export interface Props {
+  mainText: string;
+  imgFirstLine: Image;
+  imgSecondLine: Image;
+  imgThirdLine: Image;
+  col1: string;
+  col2: string;
+  col3: string;
+  col4: string;
+  button: string;
+}
+
+export default function Partner({mainText, imgFirstLine, imgSecondLine, imgThirdLine, col1, col2, col3, col4, button}: Props) {
   return (
     <section class="flex flex-col bg-[#053535] pt-4 pb-12 md:pb-32">
       <div class="grid grid-cols-1 px-6 pb-12 gap-10 md:px-[7rem] md:grid-cols-2">
@@ -20,51 +34,51 @@ export default function Partner() {
           </div>
         </div>
         <p class="font-sans not-italic font-bold text-5xl text-white md:text-9xl md:order-1">
-          Become<br />a partner<br />agency
+          {mainText}
         </p>
       </div>
       <div class="overflow-hidden">
         <div
-          class="h-20 bg-repeat-x w-[300%] animate-walk"
-          style="background-image: url('/repeat_logo.png')"
+          class="h-20 w-[300%] animate-walk bg-repeat-x"
+          style={`background-image: url(${imgFirstLine})`}
         >
         </div>
         <div
-          class="h-20 bg-repeat-x w-[300%] animate-walk"
-          style="background-image: url('/repeat_logo.png');  animation-delay: 300ms;"
+          class="h-20 w-[300%] animate-walk bg-repeat-x"
+          style={`background-image: url(${imgSecondLine}); animation-delay: 300ms`}
         >
         </div>
         <div
-          class="h-20 bg-repeat-x w-[300%] animate-walk"
-          style="background-image: url('/repeat_logo.png'); animation-delay: 600ms;"
+          class="h-20 w-[300%] animate-walk bg-repeat-x"
+          style={`background-image: url(${imgThirdLine}); animation-delay: 600ms`}
         >
         </div>
       </div>
       <div class="mx-6 mt-12 pt-8 grid grid-cols-1 gap-8 border-t border-t-[1px] border-white-opacity items-end md:mx-[7rem] md:grid-cols-4">
         <div class="border-b border-b-0.5 border-white pb-2">
           <p class="font-sans not-italic font-normal text-lg text-white opacity-[67%]">
-            Manage all storefronts in one place
+            {col1}
           </p>
         </div>
         <div class="border-b border-b-0.5 border-white pb-2">
           <p class="font-sans not-italic font-normal text-lg text-white opacity-[67%]">
-            Easier stack for hiring and training
+            {col2}
           </p>
         </div>
         <div class="border-b border-b-0.5 border-white pb-2">
           <p class="font-sans not-italic font-normal text-lg text-white opacity-[67%]">
-            Expand your market
+            {col3}
           </p>
         </div>
         <div class="border-b border-b-0.5 border-white pb-2">
           <p class="font-sans not-italic font-normal text-lg text-white opacity-[67%]">
-            Make your customers happy
+            {col4}
           </p>
         </div>
       </div>
       <div class="hidden pt-12 md:flex md:flex-row md:justify-center">
         <button class="px-20 py-3.5 bg-[#06E474] text-[#161A16] font-inter font-normal not-italic rounded-sm">
-          Join us
+          {button}
         </button>
       </div>
     </section>

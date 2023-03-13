@@ -8,7 +8,8 @@ import * as $0 from "./routes/[...catchall].tsx";
 import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_middleware.ts";
 import * as $3 from "./routes/index.tsx";
-import * as $$0 from "./islands/LiveControls.tsx";
+import * as $$0 from "./islands/Carousel.tsx";
+import * as $$1 from "./islands/LiveControls.tsx";
 import * as $$$0 from "./sections/About.tsx";
 import * as $$$1 from "./sections/Carousel.tsx";
 import * as $$$2 from "./sections/Cms.tsx";
@@ -33,7 +34,7 @@ const manifest: DecoManifest = {
     "./routes/_middleware.ts": $2,
     "./routes/index.tsx": $3,
   },
-  islands: { "./islands/LiveControls.tsx": $$0 },
+  islands: { "./islands/Carousel.tsx": $$0, "./islands/LiveControls.tsx": $$1 },
   sections: {
     "./sections/About.tsx": $$$0,
     "./sections/Carousel.tsx": $$$1,
@@ -97,7 +98,48 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Carousel.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Carousel",
+        "type": "object",
+        "properties": {
+          "images": {
+            "title": "Images",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Text",
+                },
+                "image": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Image",
+                },
+                "author": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Author",
+                },
+              },
+              "required": [
+                "title",
+                "text",
+                "image",
+                "author",
+              ],
+            },
+          },
+        },
+        "required": [
+          "images",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Cms.tsx": {
@@ -142,11 +184,90 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Community.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Community",
+        "type": "object",
+        "properties": {
+          "mainText": {
+            "type": "string",
+            "title": "Main Text",
+          },
+          "subText": {
+            "type": "string",
+            "title": "Sub Text",
+          },
+          "col1Title": {
+            "type": "string",
+            "title": "Col1 Title",
+          },
+          "col1Text": {
+            "type": "string",
+            "title": "Col1 Text",
+          },
+          "col2Title": {
+            "type": "string",
+            "title": "Col2 Title",
+          },
+          "col2Text": {
+            "type": "string",
+            "title": "Col2 Text",
+          },
+          "col3Title": {
+            "type": "string",
+            "title": "Col3 Title",
+          },
+          "col3Text": {
+            "type": "string",
+            "title": "Col3 Text",
+          },
+          "col4Title": {
+            "type": "string",
+            "title": "Col4 Title",
+          },
+          "col4Text": {
+            "type": "string",
+            "title": "Col4 Text",
+          },
+        },
+        "required": [
+          "mainText",
+          "subText",
+          "col1Title",
+          "col1Text",
+          "col2Title",
+          "col2Text",
+          "col3Title",
+          "col3Text",
+          "col4Title",
+          "col4Text",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Delight.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Delight",
+        "type": "object",
+        "properties": {
+          "mainText": {
+            "type": "string",
+            "title": "Main Text",
+          },
+          "placeholder": {
+            "type": "string",
+            "title": "Placeholder",
+          },
+          "button": {
+            "type": "string",
+            "title": "Button",
+          },
+        },
+        "required": [
+          "mainText",
+          "placeholder",
+          "button",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Divider.tsx": {
@@ -154,7 +275,39 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Faq.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Faq",
+        "type": "object",
+        "properties": {
+          "quest1": {
+            "type": "string",
+            "title": "Quest1",
+          },
+          "quest2": {
+            "type": "string",
+            "title": "Quest2",
+          },
+          "quest3": {
+            "type": "string",
+            "title": "Quest3",
+          },
+          "quest4": {
+            "type": "string",
+            "title": "Quest4",
+          },
+          "quest5": {
+            "type": "string",
+            "title": "Quest5",
+          },
+        },
+        "required": [
+          "quest1",
+          "quest2",
+          "quest3",
+          "quest4",
+          "quest5",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Features.tsx": {
@@ -199,7 +352,51 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Footer.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Footer",
+        "type": "object",
+        "properties": {
+          "menuLinks": {
+            "title": "Menu Links",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "title": "Label",
+                },
+                "href": {
+                  "type": "string",
+                  "title": "Href",
+                },
+              },
+              "required": [
+                "label",
+                "href",
+              ],
+            },
+          },
+          "login": {
+            "type": "string",
+            "title": "Login",
+          },
+          "register": {
+            "type": "string",
+            "title": "Register",
+          },
+          "built": {
+            "type": "string",
+            "title": "Built",
+          },
+        },
+        "required": [
+          "menuLinks",
+          "login",
+          "register",
+          "built",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Head.tsx": {
@@ -338,7 +535,62 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/Partner.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Partner",
+        "type": "object",
+        "properties": {
+          "mainText": {
+            "type": "string",
+            "title": "Main Text",
+          },
+          "imgFirstLine": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Img First Line",
+          },
+          "imgSecondLine": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Img Second Line",
+          },
+          "imgThirdLine": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Img Third Line",
+          },
+          "col1": {
+            "type": "string",
+            "title": "Col1",
+          },
+          "col2": {
+            "type": "string",
+            "title": "Col2",
+          },
+          "col3": {
+            "type": "string",
+            "title": "Col3",
+          },
+          "col4": {
+            "type": "string",
+            "title": "Col4",
+          },
+          "button": {
+            "type": "string",
+            "title": "Button",
+          },
+        },
+        "required": [
+          "mainText",
+          "imgFirstLine",
+          "imgSecondLine",
+          "imgThirdLine",
+          "col1",
+          "col2",
+          "col3",
+          "col4",
+          "button",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/QuillText.tsx": {

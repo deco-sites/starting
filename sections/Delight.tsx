@@ -1,4 +1,10 @@
-export default function Delight() {
+export interface Props {
+  mainText: string;
+  placeholder: string;
+  button: string;
+}
+
+export default function Delight({mainText, placeholder, button}: Props) {
   return (
     <section class="px-6 py-16 md:px-[7rem] bg-[#02F67C] overflow-hidden">
       <div class="relative flex flex-col gap-8">
@@ -15,16 +21,16 @@ export default function Delight() {
         >
         </div>
         <p class="font-sans not-italic font-bold text-[#1F261F] text-5xl md:text-9xl z-10">
-          Ready to delight your customers?
+          {mainText}
         </p>
         <div class="flex flex-row h-12 border-[1px] border-solid border-[#1F261F] md:w-4/5 md:justify-self-end z-10">
           <input
             type="email"
             class="w-[60%] md:w-3/4 font-inter font-normal not-italic bg-transparent focus:outline-none placeholder-[#1F261F] pl-4"
-            placeholder="Enter yout work email"
+            placeholder={placeholder}
           />
           <button class="px-2 text-center text-white bg-[#1F261F] rounded-l-full flex-grow w-[40%] md:w-1/4">
-            Get early access
+            {button}
           </button>
         </div>
       </div>

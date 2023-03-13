@@ -1,9 +1,17 @@
-export default function Faq() {
+export interface Props {
+  quest1: string;
+  quest2: string;
+  quest3: string;
+  quest4: string;
+  quest5: string;
+}
+
+export default function Faq({quest1, quest2, quest3, quest4, quest5}: Props) {
   return (
     <section class="flex flex-col px-6 py-32 bg-[#06E474] md:px-[7rem]">
       <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
         <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          What is deco?
+          {quest1}
         </p>
         <svg
           class="flex-shrink-0"
@@ -24,7 +32,7 @@ export default function Faq() {
       </div>
       <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
         <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          Does deco replaces my current commerce platform?
+          {quest2}
         </p>
         <svg
           class="flex-shrink-0"
@@ -45,7 +53,7 @@ export default function Faq() {
       </div>
       <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
         <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          What tech stack deco uses?
+          {quest3}
         </p>
         <svg
           class="flex-shrink-0"
@@ -66,7 +74,7 @@ export default function Faq() {
       </div>
       <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
         <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          How deco enables fast websites?
+          {quest4}
         </p>
         <svg
           class="flex-shrink-0"
@@ -87,7 +95,7 @@ export default function Faq() {
       </div>
       <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
         <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          How can I get more details on the platform?
+          {quest5}
         </p>
         <svg
           class="flex-shrink-0"
