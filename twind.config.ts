@@ -1,5 +1,15 @@
 /** @type {import('$fresh/plugins/twind').Options} */
+
 export default {
+  preflight: (preflight) => ({
+    ...preflight,
+    html: {
+          'line-height': '1.5',
+          '-webkit-text-size-adjust': '100%',
+          'font-family': 'Albert Sans,sans-serif',
+          'scroll-behavior': 'smooth'
+    },
+  }),
   theme: {
     backgroundPosition: {
       "position-100": "100%",
@@ -126,6 +136,7 @@ export default {
         "border-black-opacity": "rgba(0, 0, 0, 0.05)",
         "white-79": "rgba(255, 255, 255, 0.79)",
         "semi-white-13": "rgba(217, 217, 217, 0.13)",
+        "mytheme-10": "rgba(255, 255, 255, 0.10)",
         primary: "#2FD180",
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",

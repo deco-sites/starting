@@ -73,10 +73,6 @@ const manifest: DecoManifest = {
             "type": "string",
             "title": "Second Text",
           },
-          "placeholder": {
-            "type": "string",
-            "title": "Placeholder",
-          },
           "button": {
             "type": "string",
             "title": "Button",
@@ -94,7 +90,6 @@ const manifest: DecoManifest = {
         "required": [
           "mainText",
           "secondText",
-          "placeholder",
           "button",
           "blackBlock",
           "greenBlock",
