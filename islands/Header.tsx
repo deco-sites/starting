@@ -122,7 +122,7 @@ export interface Props {
                 </li>
               </ul>
             </div>
-            <li class="hidden md:block md:relative md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:hover:border-[#2FD180] md:focus-within:border-[#2FD180] md:transition md:ease-in-out md:duration-300 group">
+            <li class="hidden md:block md:relative md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:hover:border-[#2FD180] md:focus-within md:transition md:ease-in-out md:duration-300 group cursor-pointer">
               <a href="#">
                 <div class="flex flex-row items-center gap-1">
                   <span class="font-inter font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.idiom}</span>
