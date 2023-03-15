@@ -20,9 +20,11 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
         <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[38px]">
          {secondText}
         </p>
-        <a href="#delight" class="grid bg-[#1F261F] h-12 w-full items-center text-center text-white bg-[#1F261F] rounded font-inter font-normal not-italic text-[16px] leading-[19.36px]">
-          {button}
-        </a>
+        <div class="bg-[#1F261F] rounded">
+          <a href="#delight" class="grid bg-[#1F261F] h-12 w-full items-center text-center text-white rounded font-inter font-normal not-italic text-[16px] leading-[19.36px] hover:bg-mytheme-10">
+            {button}
+          </a>
+        </div>
       </div>
       <div class="grid grid-rows-2 gap-4 pt-[2.5rem] pb-[3.5rem] md:grid-rows-none md:grid-cols-5 md:gap-0">
         <div class="relative grid mr-3 bg-[#1F261F] rounded-r-full h-72 md:ml-[3.03rem] md:rounded-l-full md:col-span-2 overflow-hidden group">
