@@ -6,7 +6,7 @@ export interface Props {
 
 export default function Delight({mainText, placeholder, button}: Props) {
   return (
-    <section id="delight" class="px-6 py-16 md:px-[7rem] bg-[#02F67C] overflow-hidden">
+    <section id="delight" class="px-3 py-16 md:px-[7rem] bg-[#02F67C] overflow-hidden">
       <div class="relative flex flex-col gap-8">
         <div class="relative h-64 md:hidden">
           <div

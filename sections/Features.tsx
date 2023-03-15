@@ -9,7 +9,7 @@ export interface Props {
 
 export default function Features({col1Text, col1Ttitle, col2Title, col2Text, col3Title, col3Text}: Props) {
   return (
-    <section class="px-6 py-16 md:px-[6rem] bg-[#053535]">
+    <section class="px-3 py-16 md:px-[6rem] bg-[#053535]">
       <div class="grid grid-cols-1 gap-16 md:grid-cols-3">
         <div class="flex flex-col gap-8">
           <div

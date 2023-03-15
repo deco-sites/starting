@@ -15,7 +15,7 @@ export interface Props {
 export default function Partner({mainText, imgFirstLine, imgSecondLine, imgThirdLine, col1, col2, col3, col4, button}: Props) {
   return (
     <section class="flex flex-col bg-[#053535] pt-4 pb-12 md:pb-32">
-      <div class="grid grid-cols-1 px-6 pb-12 gap-10 md:px-[7rem] md:grid-cols-2">
+      <div class="grid grid-cols-1 px-3 pb-12 gap-10 md:px-[7rem] md:grid-cols-2">
         <div class="relative md:order-2 w-full h-full grid">
           <div
             class="block absolute w-full h-full md:hidden z-0"

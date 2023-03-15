@@ -17,7 +17,7 @@ export default function Carousel(props: Props) {
                 <div class="relative h-48 bg-gray-600">
                   <img src={image.image} alt="" class="absolute w-full h-full z-0" />
                   <p
-                    class="absolute px-6 pt-4 font-inter font-normal not-italic text-base text-white z-10"
+                    class="absolute px-3 pt-4 font-inter font-normal not-italic text-base text-white z-10"
                     style="text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);"
                   >
                     {image.title}
@@ -25,7 +25,7 @@ export default function Carousel(props: Props) {
                   <img src={image.author} alt="" class="absolute h-12 w-12 rounded-full bg-red-200 -bottom-6 left-6"/>
                 </div>
                 <div class="grid h-36 bg-white rounded border-[1px] border-solid border-border-black-opacity">
-                  <p class="px-6 font-inter font-normal not-italic text-xl text-black opacity-[80%] self-center justify-self-center">
+                  <p class="px-3 font-inter font-normal not-italic text-xl text-black opacity-[80%] self-center justify-self-center">
                     {image.text}
                   </p>
                 </div>
@@ -69,7 +69,7 @@ export default function Carousel(props: Props) {
             </svg>
           </button>
         </div>
-        <div class="flex flew-row justify-end gap-4 px-6 pt-6 md:hidden">
+        <div class="flex flew-row justify-end gap-4 px-3 pt-6 md:hidden">
         <div class="grid h-12 w-12 rounded-full bg-black">
           <button class="self-center justify-self-center" onClick={() => setTranstion(transition - 1)}>
             <svg

@@ -8,7 +8,7 @@ export interface Props {
 
 export default function Faq({quest1, quest2, quest3, quest4, quest5}: Props) {
   return (
-    <section class="flex flex-col px-6 py-32 bg-[#06E474] md:px-[7rem]">
+    <section class="flex flex-col px-3 py-32 bg-[#06E474] md:px-[7rem]">
       <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
         <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
           {quest1}

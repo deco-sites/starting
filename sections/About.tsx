@@ -13,10 +13,10 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
   return (
     <section class="flex flex-col bg-[#F3FFF9]">
       <div class="max-w-screen-2xl m-auto">
-      <div class="px-6 pt-[7rem] md:px-[2.03rem] md:pt-[13rem]">
+      <div class="px-3 pt-[7rem] md:px-[2.03rem] md:pt-[13rem]">
         <QuillText class="font-sans font-bold not-italic text-[#202320] text-[56px] md:text-[120px] leading-[45px] md:leading-[105.5px] tracking[-1%]" html={mainText}/>
       </div>
-      <div class="grid grid-cols-1 items-center gap-4 px-6 pt-[3.68rem] md:px-[2.03rem] md:py-[4rem] md:grid-cols-2">
+      <div class="grid grid-cols-1 items-center gap-4 px-3 pt-[3.68rem] md:px-[2.03rem] md:py-[4rem] md:grid-cols-2">
         <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[38px]">
          {secondText}
         </p>
@@ -26,9 +26,11 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
           </a>
         </div>
       </div>
+      
+
       <div class="grid grid-rows-2 gap-4 pt-[2.5rem] pb-[3.5rem] md:grid-rows-none md:grid-cols-5 md:gap-0">
         <div class="relative grid mr-3 bg-[#1F261F] rounded-r-full h-72 md:ml-[2.03rem] md:rounded-l-full md:col-span-2 overflow-hidden group">
-              <QuillText class="px-6 md:pl-[5rem] pt-[4rem] w-3/4 md:w-full font-inter not-italic font-medium text-[22px] leading-[26.63px] text-white md:text-[32px] md:leading-[38.73px]" html={blackBlock}/>
+              <QuillText class="px-3 md:pl-[5rem] pt-[4rem] w-3/4 md:w-full font-inter not-italic font-medium text-[22px] leading-[26.63px] text-white md:text-[32px] md:leading-[38.73px]" html={blackBlock}/>
               <div class="translate-y-[-105px] md:translate-y-[-110px] translate-x-[10px]">
                 <img src="/mobile_group_1/Rectangle 768.png" alt="" class="absolute right-[230px] top-[140px] z-40 group-hover:translate-x-[20px] group-hover:translate-y-[20px] transition ease-in-out duration-700"/>
                 <img src="/mobile_group_1/Rectangle 755.png" alt="" class="absolute right-[165px] top-[155px] z-20 group-hover:-translate-y-[20px] transition ease-in-out duration-700"/>

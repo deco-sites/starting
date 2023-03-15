@@ -15,7 +15,7 @@ export interface Props {
     const [open, setOpen] = useState(false);
     return (
       <section class="bg-[#1F261F] fixed z-50 w-full">
-        <nav class="flex flex-row justify-between items-center px-3 h-12 max-w-screen-2xl m-auto w-full">
+        <nav class="flex flex-row justify-between items-center px-3 h-12 max-w-screen-2xl m-auto">
           <ul>
             <li>
               <a href="#">
@@ -77,7 +77,7 @@ export interface Props {
                 
               </button>
             </li>
-            <div class={open ? "flex flex-col justify-between w-full gap-[40px] absolute bg-[#1F261F] left-0 top-[3rem] border-t z-50 px-6 md:hidden" : "hidden"} style="border-image: linear-gradient(90deg, rgba(45,195,120,1) 20%, rgba(255,255,255,0) 60%) 1;">
+            <div class={open ? "flex flex-col justify-between w-full gap-[40px] absolute bg-[#1F261F] left-0 top-[3rem] border-t z-50 px-3 md:hidden" : "hidden"} style="border-image: linear-gradient(90deg, rgba(45,195,120,1) 20%, rgba(255,255,255,0) 60%) 1;">
               <ul class="hidden flex flex-col divide-y divide-semi-white-13">
                 {props.menuLinks.map((link) => {
                   return (
