@@ -472,6 +472,13 @@ const manifest: DecoManifest = {
                   "type": "string",
                   "title": "Href",
                 },
+                "targetBlank": {
+                  "type": [
+                    "boolean",
+                    "null",
+                  ],
+                  "title": "Target Blank",
+                },
               },
               "required": [
                 "label",
@@ -483,15 +490,96 @@ const manifest: DecoManifest = {
             "type": "string",
             "title": "Idiom",
           },
+          "pt": {
+            "title": "Pt",
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "title": "Label",
+              },
+              "url": {
+                "type": "string",
+                "title": "Url",
+              },
+              "selected": {
+                "type": [
+                  "boolean",
+                  "null",
+                ],
+                "title": "Selected",
+              },
+            },
+            "required": [
+              "label",
+              "url",
+            ],
+          },
+          "eng": {
+            "title": "Eng",
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "title": "Label",
+              },
+              "url": {
+                "type": "string",
+                "title": "Url",
+              },
+              "selected": {
+                "type": [
+                  "boolean",
+                  "null",
+                ],
+                "title": "Selected",
+              },
+            },
+            "required": [
+              "label",
+              "url",
+            ],
+          },
           "login": {
-            "type": "string",
             "title": "Login",
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "title": "Label",
+              },
+              "url": {
+                "type": "string",
+                "title": "Url",
+              },
+            },
+            "required": [
+              "label",
+              "url",
+            ],
+          },
+          "linkedinUrl": {
+            "type": "string",
+            "title": "Linkedin Url",
+          },
+          "gitUrl": {
+            "type": "string",
+            "title": "Git Url",
+          },
+          "discordUrl": {
+            "type": "string",
+            "title": "Discord Url",
           },
         },
         "required": [
           "menuLinks",
           "idiom",
+          "pt",
+          "eng",
           "login",
+          "linkedinUrl",
+          "gitUrl",
+          "discordUrl",
         ],
       },
       "outputSchema": null,
