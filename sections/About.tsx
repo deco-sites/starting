@@ -2,7 +2,7 @@ import QuillText from "../components/QuillText.tsx";
 import type { HTML } from "$live/std/ui/types/HTML.ts";
 
 export interface Props {
-  mainText: HTML;
+  mainText: string;
   secondText: string;
   button: string;
   blackBlock: HTML;
@@ -14,7 +14,8 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
     <section class="flex flex-col bg-[#F3FFF9]">
       <div class="max-w-screen-2xl m-auto">
       <div class="px-3 pt-[7rem] md:px-[2.03rem] md:pt-[13rem]">
-        <QuillText class="font-sans font-bold not-italic text-[#202320] text-[56px] md:text-[120px] leading-[45px] md:leading-[105.5px] tracking[-1%]" html={mainText}/>
+        <p class="font-sans font-bold not-italic text-[#202320] text-[56px] md:text-[120px] leading-[45px] md:leading-[105.5px] tracking[-1%]"  dangerouslySetInnerHTML={{ __html: mainText }}>
+        </p>
       </div>
       <div class="grid grid-cols-1 items-center gap-4 px-3 pt-[3.68rem] md:px-[2.03rem] md:py-[4rem] md:grid-cols-2">
         <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[38px]">
@@ -56,7 +57,6 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
         </div>
         <div class="relative ml-6 bg-[#02F67C] rounded-l-full h-72 md:mr-[2.03rem] md:col-span-3 md:rounded-l-none md:rounded-r-full overflow-hidden group">
             <p class="pl-[5rem] pt-[4rem] md:w-1/2 font-inter not-italic font-medium text-[22px] leading-[26.63px] text-[#1F261F] md:text-[32px] md:leading-[38.73px]">
-              {greenBlock}
             </p>
             <div class="py-6 absolute md:w-1/2 md:h-full md:right-0 md:top-0 group">
               <div class="grid grid-cols-6 gap-2 items-center justify-items-center h-full group">
