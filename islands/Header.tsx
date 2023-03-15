@@ -15,7 +15,7 @@ export interface Props {
     const [open, setOpen] = useState(false);
     return (
       <section class="bg-[#1F261F] fixed z-50 w-full">
-        <nav class="flex flex-row justify-between items-center px-3 h-12 max-w-screen-2xl m-auto">
+        <nav class="flex flex-row justify-between items-center px-3 h-12 max-w-screen-2xl m-auto w-full">
           <ul>
             <li>
               <a href="#">
