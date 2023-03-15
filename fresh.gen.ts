@@ -584,7 +584,6 @@ const manifest: DecoManifest = {
         "type": "object",
         "properties": {
           "mainText": {
-            "format": "html",
             "type": "string",
             "title": "Main Text",
           },
