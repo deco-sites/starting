@@ -56,19 +56,25 @@ export interface Props {
             })}
           </ul>
           <ul class="md:flex md:flex-row md:gap-4">
-            <li class="md:hidden">
+            <li class="md:hidden grid items-center">
               <button class="focus:outline-none" onClick={() => setOpen(!open)}>
                 <svg
-                  width="39"
+                  width="35"
                   height="32"
                   viewBox="0 0 39 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  class={open ? 'hidden' : ''}
                 >
                   <rect x="19" y="2" width="17" height="4" rx="2" fill="#2FD180" />
                   <rect x="11" y="14" width="25" height="4" rx="2" fill="#2FD180" />
                   <rect x="3" y="26" width="33" height="4" rx="2" fill="#2FD180" />
                 </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2FD180" width="35" height="32" class={open ? '' : 'hidden'}>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+
+                
               </button>
             </li>
             <div class={open ? "flex flex-col justify-between w-full gap-[40px] absolute bg-[#1F261F] left-0 top-[3rem] border-t z-50 px-6 md:hidden" : "hidden"} style="border-image: linear-gradient(90deg, rgba(45,195,120,1) 20%, rgba(255,255,255,0) 60%) 1;">
