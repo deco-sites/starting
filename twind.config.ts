@@ -10,7 +10,7 @@ export default {
         "white-green":
           "linear-gradient(to top, #06E474 0%, #06E474 43%, #FFFFFF 43%, #FFFFFF 100%)",
         "linear-white-green":
-          "linear-gradient(90deg,  rgba(255,255,255,0.8) 0%, rgba(47,209,128,0.8) 49%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 100%)",
+          "linear-gradient(90deg,  rgba(255,255,255,0.8) 0%, rgba(47,209,128,0.8) 49%, rgba(255,255,255,0.79) 50%, rgba(255,255,255,0.79) 100%)",
         "linear-transp-green":
           "linear-gradient(90deg,  rgba(255,255,255,0) 0%, rgba(47,209,128,0.8) 49%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%)",
       },
@@ -124,6 +124,8 @@ export default {
         "white-opacity": "rgba(255, 255, 255, 0.22)",
         "border-white-opacity": "rgba(255, 255, 255, 0.05)",
         "border-black-opacity": "rgba(0, 0, 0, 0.05)",
+        "white-79": "rgba(255, 255, 255, 0.79)",
+        "semi-white-13": "rgba(217, 217, 217, 0.13)",
         primary: "#2FD180",
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",

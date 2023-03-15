@@ -482,16 +482,11 @@ const manifest: DecoManifest = {
             "type": "string",
             "title": "Login",
           },
-          "register": {
-            "type": "string",
-            "title": "Register",
-          },
         },
         "required": [
           "menuLinks",
           "idiom",
           "login",
-          "register",
         ],
       },
       "outputSchema": null,
