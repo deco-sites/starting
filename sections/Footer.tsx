@@ -18,7 +18,7 @@ export default function Footer({menuLinks, login, register, built}: Props) {
           <path d="M96.3473 502.978C198.778 502.978 257.049 459.167 324.821 324.898C361.796 250.934 393.365 178.41 429.568 106.607L472.698 119.523C484.258 123.123 490.413 116.643 485.031 106.607L432.68 6.81026C428.819 -0.367927 420.348 -1.08793 414.965 1.07208L284.803 47.0212C274.015 50.6212 274.787 59.9376 285.576 62.8176L324.095 74.3158C292.526 141.101 253.234 241.618 221.665 304.803C186.234 375.167 168.519 424.716 108.446 424.716C48.3733 424.716 38.3572 380.905 63.7718 318.44C93.0476 245.916 142.332 224.381 198.544 239.458C213.942 219.363 225.503 189.189 230.113 161.916C213.942 157.618 194.682 156.178 178.512 156.178C87.6417 156.178 -2.47923 199.989 -39.4543 291.887C-87.1944 410.36 -43.0583 503 96.3473 503V502.978Z" fill="#2BD58A"/>
         </svg>
       </div>
-      <div class="px-6 md:px-[3.03rem] flex flex-col md:flex-row md:justify-between">
+      <div class="px-6 md:px-[2.03rem] flex flex-col md:flex-row md:justify-between">
         <ul>
           <li>
             <a class="grid pb-32" href="#">
@@ -71,7 +71,7 @@ export default function Footer({menuLinks, login, register, built}: Props) {
         </ul>
       </div>
       <div>
-        <ul class="flex flex-row justify-end px-6 md:px-[3.03rem] py-32 md:pt-56">
+        <ul class="flex flex-row justify-end px-6 md:px-[2.03rem] py-32 md:pt-56">
             <li>
               <a
                 href="#"

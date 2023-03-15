@@ -12,11 +12,11 @@ export interface Props {
 export default function About({ mainText, secondText, button, blackBlock, greenBlock }: Props) {
   return (
     <section class="flex flex-col bg-[#F3FFF9]">
-      <div class="max-w-screen-xl m-auto">
-      <div class="px-6 pt-[7rem] md:px-[3.03rem] md:pt-[15rem]">
+      <div class="max-w-screen-2xl m-auto">
+      <div class="px-6 pt-[7rem] md:px-[2.03rem] md:pt-[15rem]">
         <QuillText class="font-sans font-bold not-italic text-[#202320] text-[56px] md:text-[120px] leading-[45px] md:leading-[105.5px] tracking[-1%]" html={mainText}/>
       </div>
-      <div class="grid grid-cols-1 items-center gap-4 px-6 pt-[3.68rem] md:px-[3.03rem] md:py-[4rem] md:grid-cols-2">
+      <div class="grid grid-cols-1 items-center gap-4 px-6 pt-[3.68rem] md:px-[2.03rem] md:py-[4rem] md:grid-cols-2">
         <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[38px]">
          {secondText}
         </p>

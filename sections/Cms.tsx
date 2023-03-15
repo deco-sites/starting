@@ -9,7 +9,7 @@ export interface Props {
 
 export default function Cms({firstTitle, secondTitle, textLeftFirstTitle, textRightFirstTitle, textLeftSecondTitle, textRightSecondTitle}: Props) {
   return (
-    <section class="bg-[#F3FFF9] md:px-[3.03rem] md:py-12">
+    <section class="bg-[#F3FFF9] md:px-[2.03rem] md:py-12">
       <div class="flex flex-col pl-6 pt-8 bg-[#053535] md:px-[5rem] md:pt-[4rem] md:rounded-[2rem] overflow-hidden animate-backgound-color">
         <div class="grid grid-cols-2 pr-6 gap-6">
           <div class="relative">
