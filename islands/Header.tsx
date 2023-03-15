@@ -144,7 +144,7 @@ export interface Props {
                 </div>
               </a>
               <div class="absolute right-0 hidden group-hover:block group-focus-within:block">
-                <div class="h-8"></div>
+                <div class="h-[19px]"></div>
                 <div class="flex flex-col w-[152px] bg-[#1F261F] p-2 rounded">
                   <div class="flex flex-row items-center justify-between">
                     <a href={props.pt.url} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
