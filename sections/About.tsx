@@ -57,6 +57,7 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
         </div>
         <div class="relative ml-6 bg-[#02F67C] rounded-l-full h-72 md:mr-[2.03rem] md:col-span-3 md:rounded-l-none md:rounded-r-full overflow-hidden group">
             <p class="pl-[5rem] pt-[4rem] md:w-1/2 font-inter not-italic font-medium text-[22px] leading-[26.63px] text-[#1F261F] md:text-[32px] md:leading-[38.73px]">
+              {greenBlock}
             </p>
             <div class="py-6 absolute md:w-1/2 md:h-full md:right-0 md:top-0 group">
               <div class="grid grid-cols-6 gap-2 items-center justify-items-center h-full group">

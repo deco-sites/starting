@@ -372,34 +372,17 @@ const manifest: DecoManifest = {
         "title": " Footer",
         "type": "object",
         "properties": {
-          "menuLinks": {
-            "title": "Menu Links",
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "label": {
-                  "type": "string",
-                  "title": "Label",
-                },
-                "href": {
-                  "type": "string",
-                  "title": "Href",
-                },
-              },
-              "required": [
-                "label",
-                "href",
-              ],
-            },
-          },
-          "login": {
+          "linkedinUrl": {
             "type": "string",
-            "title": "Login",
+            "title": "Linkedin Url",
           },
-          "register": {
+          "gitUrl": {
             "type": "string",
-            "title": "Register",
+            "title": "Git Url",
+          },
+          "discordUrl": {
+            "type": "string",
+            "title": "Discord Url",
           },
           "built": {
             "type": "string",
@@ -407,9 +390,9 @@ const manifest: DecoManifest = {
           },
         },
         "required": [
-          "menuLinks",
-          "login",
-          "register",
+          "linkedinUrl",
+          "gitUrl",
+          "discordUrl",
           "built",
         ],
       },
