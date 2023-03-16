@@ -1,3 +1,5 @@
+import CmsIsland from '../islands/Carousel.tsx';
+
 export interface Props {
   firstTitle: string;
   secondTitle: string;

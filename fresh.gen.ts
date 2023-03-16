@@ -9,8 +9,9 @@ import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_middleware.ts";
 import * as $3 from "./routes/index.tsx";
 import * as $$0 from "./islands/Carousel.tsx";
-import * as $$1 from "./islands/Header.tsx";
-import * as $$2 from "./islands/LiveControls.tsx";
+import * as $$1 from "./islands/Cms.tsx";
+import * as $$2 from "./islands/Header.tsx";
+import * as $$3 from "./islands/LiveControls.tsx";
 import * as $$$0 from "./sections/About.tsx";
 import * as $$$1 from "./sections/Carousel.tsx";
 import * as $$$2 from "./sections/Cms.tsx";
@@ -37,8 +38,9 @@ const manifest: DecoManifest = {
   },
   islands: {
     "./islands/Carousel.tsx": $$0,
-    "./islands/Header.tsx": $$1,
-    "./islands/LiveControls.tsx": $$2,
+    "./islands/Cms.tsx": $$1,
+    "./islands/Header.tsx": $$2,
+    "./islands/LiveControls.tsx": $$3,
   },
   sections: {
     "./sections/About.tsx": $$$0,
@@ -277,6 +279,34 @@ const manifest: DecoManifest = {
             "type": "string",
             "title": "Button",
           },
+          "form": {
+            "title": "Form",
+            "type": "object",
+            "properties": {
+              "method": {
+                "type": "string",
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "get",
+                  },
+                  {
+                    "type": "string",
+                    "const": "post",
+                  },
+                ],
+                "title": "Method",
+              },
+              "action": {
+                "type": "string",
+                "title": "Action",
+              },
+            },
+            "required": [
+              "method",
+              "action",
+            ],
+          },
         },
         "required": [
           "mainText",
@@ -285,6 +315,7 @@ const manifest: DecoManifest = {
           "position",
           "linkedin",
           "button",
+          "form",
         ],
       },
       "outputSchema": null,

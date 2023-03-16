@@ -5,9 +5,10 @@ export interface Props {
   position: string;
   linkedin: string;
   button: string;
+  form: {method: 'get' | 'post'; action: string}
 }
 
-export default function Delight({mainText, name, email, position, linkedin, button}: Props) {
+export default function Delight({mainText, name, email, position, linkedin, button, form}: Props) {
   return (
     <section id="delight" class="bg-[#02F67C]">
       <div class="relative flex flex-col gap-8 px-3 py-16 md:px-[7rem] overflow-hidden max-w-screen-2xl m-auto">
@@ -26,11 +27,11 @@ export default function Delight({mainText, name, email, position, linkedin, butt
         <p class="font-sans not-italic font-bold text-[#1F261F] text-5xl md:text-9xl z-10">
           {mainText}
         </p>
-        <form class="flex flex-col md:w-1/2 gap-4 z-10">
-          <input type="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={name}/>
-          <input type="email" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={email}/>
-          <input type="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={position}/>
-          <input type="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={linkedin}/>
+        <form action={form.action} method={form.method} class="flex flex-col md:w-1/2 gap-4 z-10">
+          <input type="text" name="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={name}/>
+          <input type="email" name="email" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={email}/>
+          <input type="text" name="position" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={position}/>
+          <input type="text" name="linkedin" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={linkedin}/>
           <div class="bg-[#1F261F] rounded">
             <button type="submit" class="grid bg-[#1F261F] h-10 w-full items-center text-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[16px] leading-[19.36px] hover:bg-mytheme-10">
               {button}
