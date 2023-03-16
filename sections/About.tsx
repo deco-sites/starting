@@ -11,27 +11,26 @@ export interface Props {
 
 export default function About({ mainText, secondText, button, blackBlock, greenBlock }: Props) {
   return (
-    <section class="flex flex-col bg-[#F3FFF9]">
+    <section class="flex flex-col bg-[#F3FFF9] mb-10 md:mb-0">
       <div class="max-w-screen-2xl m-auto">
-      <div class="px-3 pt-[7rem] md:px-[2.03rem] md:pt-[13rem]">
-        <p class="font-sans font-bold not-italic text-[#202320] text-[56px] md:text-[120px] leading-[45px] md:leading-[105.5px] tracking[-1%]"  dangerouslySetInnerHTML={{ __html: mainText }}>
-        </p>
-      </div>
-      <div class="grid grid-cols-1 items-center gap-4 px-3 pt-[3.68rem] md:px-[2.03rem] md:py-[4rem] md:grid-cols-2">
-        <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[38px]">
-         {secondText}
-        </p>
-        <div class="bg-[#1F261F] rounded">
-          <a href="#delight" class="grid bg-[#1F261F] h-12 w-full items-center text-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[16px] leading-[19.36px] hover:bg-mytheme-10">
-            {button}
-          </a>
+        <div class="px-4 pt-[7rem] md:px-[2rem] md:pt-[11rem]">
+          <p class="font-sans font-bold not-italic text-[#202320] text-[56px] md:text-[120px] leading-[45px] md:leading-[105px] tracking[-1%]" dangerouslySetInnerHTML={{ __html: mainText }} />
         </div>
-      </div>
-      
+        <div class="grid grid-cols-1 items-center gap-[2rem] md:gap-[9rem] px-4 pt-[6rem] md:px-[2rem] md:pt-[4rem] md:pb-[5rem] md:grid-cols-2">
+          <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[38px]">
+          {secondText}
+          </p>
+          <div class="bg-[#1F261F] rounded">
+            <a href="#delight" class="grid bg-[#1F261F] h-16 w-full items-center text-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[20px] hover:bg-mytheme-10">
+              {button}
+            </a>
+          </div>
+        </div>
+        
 
-      <div class="grid grid-rows-2 gap-4 pt-[2.5rem] pb-[3.5rem] md:grid-rows-none md:grid-cols-5 md:gap-0">
-        <div class="relative grid mr-3 bg-[#1F261F] rounded-r-full h-72 md:ml-[2.03rem] md:rounded-l-full md:col-span-2 overflow-hidden group">
-              <QuillText class="px-3 md:pl-[5rem] pt-[4rem] w-3/4 md:w-full font-inter not-italic font-medium text-[22px] leading-[26.63px] text-white md:text-[32px] md:leading-[38.73px]" html={blackBlock}/>
+        <div class="md:flex pt-[2.5rem] md:gap-4">
+          <div class="relative flex-none md:w-[30rem] grid bg-[#1F261F] rounded-r-full h-[19rem] mb-4 md:mb-0 mr-6 md:ml-[2rem] md:rounded-l-full overflow-hidden group">
+              <QuillText class="pl-7 pr-16 md:pl-[5rem] pt-[3rem] md:w-full font-inter not-italic font-medium text-[22px] leading-[26.5px] text-white md:text-[32px] md:leading-[38.5px]" html={blackBlock}/>
               <div class="translate-y-[-105px] md:translate-y-[-110px] translate-x-[10px]">
                 <img src="/mobile_group_1/Rectangle 768.png" alt="" class="absolute right-[230px] top-[140px] z-40 group-hover:translate-x-[20px] group-hover:translate-y-[20px] transition ease-in-out duration-700"/>
                 <img src="/mobile_group_1/Rectangle 755.png" alt="" class="absolute right-[165px] top-[155px] z-20 group-hover:-translate-y-[20px] transition ease-in-out duration-700"/>
@@ -54,41 +53,41 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
                   </g>
                 </svg>
               </div>
-        </div>
-        <div class="relative ml-6 bg-[#02F67C] rounded-l-full h-72 md:mr-[2.03rem] md:col-span-3 md:rounded-l-none md:rounded-r-full overflow-hidden group">
-            <p class="pl-[5rem] pt-[4rem] md:w-1/2 font-inter not-italic font-medium text-[22px] leading-[26.63px] text-[#1F261F] md:text-[32px] md:leading-[38.73px]">
-              {greenBlock}
-            </p>
-            <div class="py-6 absolute md:w-1/2 md:h-full md:right-0 md:top-0 group">
-              <div class="grid grid-cols-6 gap-2 items-center justify-items-center h-full group">
-                <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
-                <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+          </div>
+          <div class="relative flex-auto bg-[#02F67C] rounded-l-full h-[19rem] ml-4 md:mr-[2rem] md:col-span-3 md:rounded-l-none md:rounded-r-full overflow-hidden group">
+              <p class="ml-[5rem] md:ml-[4rem] pt-[3rem] w-[16rem] md:w-[20rem] font-inter not-italic font-medium text-[22px] leading-[26.5px] text-[#1F261F] md:text-[32px] md:leading-[38.5px]">
+                {greenBlock}
+              </p>
+              <div class="py-6 absolute md:w-1/2 md:h-full md:right-0 md:top-0 group">
+                <div class="grid grid-cols-6 gap-2 items-center justify-items-center h-full group">
+                  <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_727.png" alt="" class="transform scale-50 rotate-45 translate-x-[45px] group-hover:rotate-0 group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_730.png" alt="" class="transform scale-50 translate-x-[50px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_731.png" alt="" class="transform scale-50 translate-x-[40px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                  <img src="/Rectangle_728.png" alt="" class="transform scale-50 translate-x-[27px] group-hover:scale-100 group-hover:translate-x-0 transition ease-in-out duration-700"/>
+                </div>
               </div>
-            </div>
+          </div>
         </div>
-      </div>
       </div>
     </section>
   );
