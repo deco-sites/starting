@@ -31,13 +31,13 @@ export default function Community({mainText, subText, col1Title, col1Text, col2T
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-3 md:px-[7rem]">
-          <div class="flex flex-col gap-4 md:p-4 border-transparent border-1 hover:shadow-custom-shadow rounded-xl transition ease-in duration-300">
+          <div class="flex flex-col gap-4 md:p-8 border-transparent border-1 md:hover:shadow-custom-shadow rounded-xl transition ease-in duration-300">
             <p class="font-inter text-black font-medium text-[32px] leading-[38.73px]">{col1Title}</p>
             <p class="font-inter text-black font-normal opacity-[80%] text-[22px] leading-[26.4px]">
               {col1Text}
             </p>
           </div>
-          <div class="flex flex-col gap-4 md:p-4 border-transparent border-1 hover:shadow-custom-shadow rounded-xl transition ease-in duration-300">
+          <div class="flex flex-col gap-4 md:p-8 border-transparent border-1 md:hover:shadow-custom-shadow rounded-xl transition ease-in duration-300">
             <p class="font-inter text-black font-medium text-3xl">
               {col2Title}
             </p>
@@ -45,13 +45,13 @@ export default function Community({mainText, subText, col1Title, col1Text, col2T
               {col2Text}
             </p>
           </div>
-          <div class="flex flex-col gap-4 md:p-4 border-transparent border-1 hover:shadow-custom-shadow rounded-xl transition ease-in duration-300">
+          <div class="flex flex-col gap-4 md:p-8 border-transparent border-1 md:hover:shadow-custom-shadow rounded-xl transition ease-in duration-300">
             <p class="font-inter text-black font-medium text-[32px] leading-[38.73px]">{col3Title}</p>
             <p class="font-inter text-black font-normal opacity-[80%] text-[22px] leading-[26.4px]">
               {col3Text}
             </p>
           </div>
-          <div class="flex flex-col gap-4 md:p-4 border-transparent border-1 hover:shadow-custom-shadow rounded-xl transition ease-in duration-300">
+          <div class="flex flex-col gap-4 md:p-8 border-transparent border-1 md:hover:shadow-custom-shadow rounded-xl transition ease-in duration-300">
             <p class="font-inter text-black font-medium text-[32px] leading-[38.73px]">{col4Title}</p>
             <p class="font-inter text-black font-normal opacity-[80%] text-[22px] leading-[26.4px]">
               {col4Text}
