@@ -56,7 +56,7 @@ export default function Footer({linkedinUrl, gitUrl, discordUrl, built}: Props) 
             <li>
               <a
                 href="#"
-                class="px-2 pt-2.5 font-inter font-normal text-white opacity-[80%] block text-right md:text-left z-50"
+                class="px-2 pt-2.5 font-inter font-normal text-white block text-right text-[16px] leading-[19px] z-50"
               >
                 {built}
               </a>
