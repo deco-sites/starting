@@ -625,18 +625,30 @@ const manifest: DecoManifest = {
             "title": "Main Text",
           },
           "imgFirstLine": {
-            "format": "image-uri",
-            "type": "string",
+            "type": "array",
+            "items": {
+              "format": "image-uri",
+              "type": "string",
+              "title": "Image",
+            },
             "title": "Img First Line",
           },
           "imgSecondLine": {
-            "format": "image-uri",
-            "type": "string",
+            "type": "array",
+            "items": {
+              "format": "image-uri",
+              "type": "string",
+              "title": "Image",
+            },
             "title": "Img Second Line",
           },
           "imgThirdLine": {
-            "format": "image-uri",
-            "type": "string",
+            "type": "array",
+            "items": {
+              "format": "image-uri",
+              "type": "string",
+              "title": "Image",
+            },
             "title": "Img Third Line",
           },
           "col1": {
