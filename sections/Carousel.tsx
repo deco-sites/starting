@@ -9,7 +9,7 @@ export default function Carousel({images}: Props) {
   
   return (
     
-    <section class="relative py-4 md:bg-white-green overflow-hidden">
+    <section class="md:bg-white-green">
       <CarouselIsland images={images}></CarouselIsland>
     </section>
   );
