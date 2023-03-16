@@ -1,5 +1,6 @@
 export interface Props {
-  mainText: string;
+  mainTextPt1: string;
+  mainTextPt2: string;
   subText: string;
   col1Title: string;
   col1Text: string;
@@ -12,17 +13,22 @@ export interface Props {
 
 }
 
-export default function Community({mainText, subText, col1Title, col1Text, col2Title, col2Text, col3Title, col3Text, col4Title, col4Text}: Props) {
+export default function Community({mainTextPt1, mainTextPt2, subText, col1Title, col1Text, col2Title, col2Text, col3Title, col3Text, col4Title, col4Text}: Props) {
   return (
     <section>
       <div class="flex flex-col pb-20 md:pb-32 max-w-screen-2xl m-auto">
         <div class="grid grid-cols-1 px-3 overflow-hidden md:px-[7rem] md:pt-[5rem] md:grid-cols-2">
           <img
             src="/Group_521.png"
-            class="justify-self-end translate-x-9 md:order-2 md:justify-self-start"
+            class="justify-self-end md:order-2 md:justify-self-start"
           />
-          <p class="-translate-y-12 font-sans not-italic font-bold text-[#1F261F] text-[56px] leading-[45px] md:pt-32 md:text-[128.94px] md:leading-[105.5px] tracking[-1%] md:order-1">
-            {mainText}
+          <p class="-translate-y-12 w-[80%] md:w-[100%] font-sans not-italic font-bold text-[#1F261F] text-[56px] leading-[45px] md:pt-32 md:text-[128.94px] md:leading-[105.5px] tracking[-1%] md:order-1">
+            {mainTextPt1}
+          </p>
+        </div>
+        <div class="px-3 md:px-[7rem]">
+          <p class="-translate-y-12 font-sans not-italic font-bold text-[#1F261F] text-[56px] leading-[45px] md:text-[128.94px] md:leading-[105.5px] tracking[-1%] md:order-1">
+            {mainTextPt2}
           </p>
         </div>
         <div class="-translate-y-6 px-3 md:px-[7rem]">

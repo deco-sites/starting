@@ -187,9 +187,13 @@ const manifest: DecoManifest = {
         "title": " Community",
         "type": "object",
         "properties": {
-          "mainText": {
+          "mainTextPt1": {
             "type": "string",
-            "title": "Main Text",
+            "title": "Main Text Pt1",
+          },
+          "mainTextPt2": {
+            "type": "string",
+            "title": "Main Text Pt2",
           },
           "subText": {
             "type": "string",
@@ -229,7 +233,8 @@ const manifest: DecoManifest = {
           },
         },
         "required": [
-          "mainText",
+          "mainTextPt1",
+          "mainTextPt2",
           "subText",
           "col1Title",
           "col1Text",
