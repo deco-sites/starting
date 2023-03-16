@@ -61,11 +61,11 @@ export default function Partner({mainText, imgFirstLine, imgSecondLine, imgThird
         </p>
       </div>
       <div class="overflow-hidden">
-        <div class="flex flex-row flex-nowrap w-full animate-walk items-center" dangerouslySetInnerHTML={{ __html: ImageLines(imgFirstLine) }}>
+        <div class="flex flex-row flex-nowrap w-full animate-walk items-center gap-4" dangerouslySetInnerHTML={{ __html: ImageLines(imgFirstLine) }}>
         </div>
-        <div class="flex flex-row flex-nowrap w-full animate-walk items-center" style="animation-delay: 300ms" dangerouslySetInnerHTML={{ __html: ImageLines(imgSecondLine) }}>
+        <div class="flex flex-row flex-nowrap w-full animate-walk items-center gap-4" style="animation-delay: 300ms" dangerouslySetInnerHTML={{ __html: ImageLines(imgSecondLine) }}>
         </div>
-        <div class="flex flex-row flex-nowrap w-full animate-walk items-center" style="animation-delay: 600ms" dangerouslySetInnerHTML={{ __html: ImageLines(imgThirdLine) }}>
+        <div class="flex flex-row flex-nowrap w-full animate-walk items-center gap-4" style="animation-delay: 600ms" dangerouslySetInnerHTML={{ __html: ImageLines(imgThirdLine) }}>
         </div>
       </div>
       <div class="mx-6 mt-12 pt-8 grid grid-cols-1 gap-8 border-t border-t-[1px] border-white-opacity items-end md:mx-[7rem] md:grid-cols-4">
