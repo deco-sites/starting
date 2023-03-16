@@ -28,7 +28,7 @@ export default function Faq({questions}: Props) {
                   />
                 </svg>
               </summary>
-              <p class="py-2 font-inter font-normal not-italic text-[22px] leading-[26.63px] text-[#131614] md:text-[22px] md:leading-[26.4px]">{item.answer}</p>
+              <p class="py-2 font-inter font-normal not-italic text-[20px] leading-[24px] text-[#131614] md:text-[22px] md:leading-[26.4px]">{item.answer}</p>
             </details>
           )
         })}
