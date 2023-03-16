@@ -30,7 +30,7 @@ export default function Community({mainText, subText, col1Title, col1Text, col2T
             {subText}
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-3 md:px-[7rem]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-3 md:px-[7rem] pt-16">
           <div class="flex flex-col gap-4 md:p-8 border-transparent border-1 md:hover:shadow-custom-shadow rounded-xl transition ease-in duration-300">
             <p class="font-inter text-black font-medium text-[32px] leading-[38.73px]">{col1Title}</p>
             <p class="font-inter text-black font-normal opacity-[80%] text-[22px] leading-[26.4px]">
