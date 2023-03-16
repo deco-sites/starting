@@ -125,12 +125,12 @@ export interface Props {
           </ul>
           <ul class="hidden md:flex md:flex-row md:gap-4 px-3">
             <li class="group cursor-pointer md:relative">
-              <a href="#" class="hidden md:flex gap-2 items-center md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:focus-within:border-[#2FD180] md:transition md:ease-in-out md:duration-300">
+              <button class="hidden md:flex gap-2 items-center md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:focus-within:border-[#2FD180] focus:outline-none md:transition md:ease-in-out md:duration-300">
                 <span class="font-inter font-normal text-[16px] text-[#2FD180]">{props.idiom}</span>
                 <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" stroke="#55D695" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
-              </a>
+              </button>
               <div class="absolute right-0 mt-3 hidden group-focus-within:block">
                 <div class="flex flex-col w-[152px] bg-[#1F261F] p-2 rounded">
                   <div class="flex flex-row items-center justify-between">
