@@ -9,8 +9,8 @@ export interface Props {
 
 export default function Delight({mainText, name, email, position, linkedin, button}: Props) {
   return (
-    <section id="delight" class="px-3 py-16 md:px-[7rem] bg-[#02F67C] overflow-hidden">
-      <div class="relative flex flex-col gap-8">
+    <section id="delight" class="bg-[#02F67C]">
+      <div class="relative flex flex-col gap-8 px-3 py-16 md:px-[7rem] overflow-hidden max-w-screen-2xl m-auto">
         <div class="relative h-64 md:hidden">
           <div
             class="absolute w-[227.23px] h-[548.01px] bottom-0 right-44"
