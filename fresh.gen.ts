@@ -283,33 +283,30 @@ const manifest: DecoManifest = {
         "title": " Faq",
         "type": "object",
         "properties": {
-          "quest1": {
-            "type": "string",
-            "title": "Quest1",
-          },
-          "quest2": {
-            "type": "string",
-            "title": "Quest2",
-          },
-          "quest3": {
-            "type": "string",
-            "title": "Quest3",
-          },
-          "quest4": {
-            "type": "string",
-            "title": "Quest4",
-          },
-          "quest5": {
-            "type": "string",
-            "title": "Quest5",
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "question": {
+                  "type": "string",
+                  "title": "Question",
+                },
+                "answer": {
+                  "type": "string",
+                  "title": "Answer",
+                },
+              },
+              "required": [
+                "question",
+                "answer",
+              ],
+            },
+            "title": "Questions",
           },
         },
         "required": [
-          "quest1",
-          "quest2",
-          "quest3",
-          "quest4",
-          "quest5",
+          "questions",
         ],
       },
       "outputSchema": null,

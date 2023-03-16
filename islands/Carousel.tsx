@@ -33,7 +33,7 @@ export default function Carousel(props: Props) {
               //     </div>
               //     </div>
               // </div>
-              <div class="flex flex-col w-[360px] h-[433px] m-auto flex-shrink-0">
+              <a href="" class="flex flex-col w-[360px] h-[433px] m-auto flex-shrink-0">
                 <div class="relative h-2/3 bg-gray-600">
                   <img src={image.image} alt="" class="absolute w-full h-full z-0" />
                   <p class="absolute px-3 pt-4 font-inter font-normal not-italic text-base text-white z-10" style="text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);">
@@ -46,7 +46,7 @@ export default function Carousel(props: Props) {
                     {image.text}
                   </p>
                 </div>
-              </div>
+              </a>
             )
           })}
       </div>

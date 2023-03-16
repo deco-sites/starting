@@ -9,6 +9,15 @@ export default {
           'font-family': 'Albert Sans,sans-serif',
           'scroll-behavior': 'smooth'
     },
+    'details > summary': {
+      'list-style': 'none'
+    },    
+    'details summary::-webkit-details-marker': {
+      'display':'none'
+    },
+    'details[open] summary svg': {
+      'transform': 'rotate(180deg)'
+    }
   }),
   theme: {
     backgroundPosition: {

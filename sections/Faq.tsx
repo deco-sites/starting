@@ -1,119 +1,36 @@
 export interface Props {
-  quest1: string;
-  quest2: string;
-  quest3: string;
-  quest4: string;
-  quest5: string;
+  questions: {question:string; answer:string}[]
 }
 
-export default function Faq({quest1, quest2, quest3, quest4, quest5}: Props) {
+export default function Faq({questions}: Props) {
   return (
     <section class="flex flex-col px-3 py-32 bg-[#06E474] md:px-[7rem]">
-      <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
-        <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          {quest1}
-        </p>
-        <svg
-          class="flex-shrink-0"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke-width="1.5"
-          stroke="#131614"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
-      <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
-        <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          {quest2}
-        </p>
-        <svg
-          class="flex-shrink-0"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke-width="1.5"
-          stroke="#131614"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
-      <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
-        <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          {quest3}
-        </p>
-        <svg
-          class="flex-shrink-0"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke-width="1.5"
-          stroke="#131614"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
-      <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
-        <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          {quest4}
-        </p>
-        <svg
-          class="flex-shrink-0"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke-width="1.5"
-          stroke="#131614"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
-      <div class="flex flex-row py-2 items-center justify-between border-b border-solid border-[#131614]">
-        <p class="font-inter font-normal not-italic text-xl text-[#131614] md:text-3xl">
-          {quest5}
-        </p>
-        <svg
-          class="flex-shrink-0"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke-width="1.5"
-          stroke="#131614"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
+      {questions.map((item) => {
+        return (
+          <details class="border-b border-solid border-[#131614]">
+            <summary class="flex flex-row py-2 items-center justify-between group cursor-pointer">
+              <p class="font-inter font-normal not-italic text-[22px] leading-[26.63px] text-[#131614] md:text-[32px] md:leading-[38.73px]">{item.question}</p>
+              <svg
+                class="flex-shrink-0"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
+                stroke="#131614"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </summary>
+            <p class="py-2 font-inter font-normal not-italic text-[22px] leading-[26.63px] text-[#131614] md:text-[22px] md:leading-[26.4px]">{item.answer}</p>
+          </details>
+        )
+      })}
     </section>
   );
 }
