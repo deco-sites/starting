@@ -22,7 +22,7 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
          {secondText}
         </p>
         <div class="bg-[#1F261F] rounded">
-          <a href="#delight" class="grid bg-[#1F261F] h-12 w-full items-center text-center text-white rounded font-inter font-normal not-italic text-[16px] leading-[19.36px] hover:bg-mytheme-10">
+          <a href="#delight" class="grid bg-[#1F261F] h-12 w-full items-center text-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[16px] leading-[19.36px] hover:bg-mytheme-10">
             {button}
           </a>
         </div>

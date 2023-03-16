@@ -32,7 +32,7 @@ export default function Delight({mainText, name, email, position, linkedin, butt
           <input type="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={position}/>
           <input type="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={linkedin}/>
           <div class="bg-[#1F261F] rounded">
-            <button type="submit" class="grid bg-[#1F261F] h-10 w-full items-center text-center text-white rounded font-inter font-normal not-italic text-[16px] leading-[19.36px] hover:bg-mytheme-10">
+            <button type="submit" class="grid bg-[#1F261F] h-10 w-full items-center text-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[16px] leading-[19.36px] hover:bg-mytheme-10">
               {button}
             </button>
         </div>
