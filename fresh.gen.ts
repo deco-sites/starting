@@ -257,9 +257,21 @@ const manifest: DecoManifest = {
             "type": "string",
             "title": "Main Text",
           },
-          "placeholder": {
+          "name": {
             "type": "string",
-            "title": "Placeholder",
+            "title": "Name",
+          },
+          "email": {
+            "type": "string",
+            "title": "Email",
+          },
+          "position": {
+            "type": "string",
+            "title": "Position",
+          },
+          "linkedin": {
+            "type": "string",
+            "title": "Linkedin",
           },
           "button": {
             "type": "string",
@@ -268,7 +280,10 @@ const manifest: DecoManifest = {
         },
         "required": [
           "mainText",
-          "placeholder",
+          "name",
+          "email",
+          "position",
+          "linkedin",
           "button",
         ],
       },

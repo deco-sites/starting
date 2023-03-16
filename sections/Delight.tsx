@@ -1,10 +1,13 @@
 export interface Props {
   mainText: string;
-  placeholder: string;
+  name: string;
+  email: string;
+  position: string;
+  linkedin: string;
   button: string;
 }
 
-export default function Delight({mainText, placeholder, button}: Props) {
+export default function Delight({mainText, name, email, position, linkedin, button}: Props) {
   return (
     <section id="delight" class="px-3 py-16 md:px-[7rem] bg-[#02F67C] overflow-hidden">
       <div class="relative flex flex-col gap-8">
@@ -23,16 +26,17 @@ export default function Delight({mainText, placeholder, button}: Props) {
         <p class="font-sans not-italic font-bold text-[#1F261F] text-5xl md:text-9xl z-10">
           {mainText}
         </p>
-        <div class="flex flex-row h-12 border-[1px] border-solid border-[#1F261F] md:w-4/5 md:justify-self-end z-10">
-          <input
-            type="email"
-            class="w-[60%] md:w-3/4 font-inter font-normal not-italic bg-transparent focus:outline-none placeholder-[#1F261F] pl-4"
-            placeholder={placeholder}
-          />
-          <button class="px-2 text-center text-white bg-[#1F261F] rounded-l-full flex-grow w-[40%] md:w-1/4">
-            {button}
-          </button>
+        <form class="flex flex-col md:w-1/2 gap-4 z-10">
+          <input type="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={name}/>
+          <input type="email" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={email}/>
+          <input type="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={position}/>
+          <input type="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={linkedin}/>
+          <div class="bg-[#1F261F] rounded">
+            <button type="submit" class="grid bg-[#1F261F] h-10 w-full items-center text-center text-white rounded font-inter font-normal not-italic text-[16px] leading-[19.36px] hover:bg-mytheme-10">
+              {button}
+            </button>
         </div>
+        </form>
       </div>
     </section>
   );
