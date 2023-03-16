@@ -28,7 +28,7 @@ export default function Delight({mainText, name, email, position, linkedin, butt
           {mainText}
         </p>
         <form action={form.action} method={form.method} class="flex flex-col md:w-1/2 gap-4 z-10">
-          <input type="text" name="text" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={name} required/>
+          <input type="text" name="name" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={name} required/>
           <input type="email" name="email" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={email} required/>
           <input type="text" name="position" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={position} required/>
           <input type="text" name="linkedin" class="border-[1px] h-10 border-solid border-black bg-transparent font-inter font-normal not-italic focus:outline-none placeholder-[#161A16] pl-4" placeholder={linkedin} required/>
