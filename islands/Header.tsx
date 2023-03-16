@@ -15,10 +15,10 @@ export interface Props {
     const [open, setOpen] = useState(false);
     return (
       <section class="bg-[#1F261F] fixed z-50 w-full">
-        <nav class="flex flex-row justify-between items-center px-3 h-12 max-w-screen-2xl m-auto">
-          <ul>
-            <li>
-              <a href="#">
+        <nav class="flex flex-row justify-between items-center h-12 max-w-screen-2xl m-auto">
+          <ul class="h-full">
+            <li class="h-full">
+              <a class="flex items-center h-full px-3" href="/">
                 <svg
                   width="68"
                   height="34"
@@ -34,20 +34,20 @@ export interface Props {
               </a>
             </li>
           </ul>
-          <ul class="hidden md:flex md:flex-row md:gap-[40px] h-full">
+          <ul class="hidden md:flex md:flex-row md:gap-4 h-full">
             {props.menuLinks.map((link) => {
               return (
                 <li class="relative group h-full grid">
                   <a
                     target={link.targetBlank ? '_blank' : '_self'}
                     href={link.href}
-                    class="block px-2 self-center font-inter font-normal text-[16px] leading-[19.36px] bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
+                    class="flex items-center h-full px-4 self-center font-inter font-normal text-[16px] bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
                     style="background-size: 200%;"
                   >
                     {link.label}
                   </a>
                   <div
-                    class="absolute w-full h-[2.5px] bg-transparent bottom-0 bg-linear-transp-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
+                    class="absolute w-full h-[2px] bg-transparent bottom-0 bg-linear-transp-green bg-position-100 transition-[bg] ease-in duration-300 group-hover:bg-position-0"
                     style="background-size: 200%;"
                   >
                   </div>
@@ -55,8 +55,8 @@ export interface Props {
               )
             })}
           </ul>
-          <ul class="md:flex md:flex-row md:gap-4">
-            <li class="md:hidden grid items-center">
+          <ul class="md:hidden px-3">
+            <li class="grid items-center">
               <button class="focus:outline-none" onClick={() => setOpen(!open)}>
                 <svg
                   width="35"
@@ -122,33 +122,20 @@ export interface Props {
                 </li>
               </ul>
             </div>
-            <li class="hidden md:block md:relative md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:hover:border-[#2FD180] md:focus-within md:transition md:ease-in-out md:duration-300 group cursor-pointer">
-              <a href="#">
-                <div class="flex flex-row items-center gap-1">
-                  <span class="font-inter font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.idiom}</span>
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    stroke-width="1.5"
-                    stroke="#2FD180"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </div>
+          </ul>
+          <ul class="hidden md:flex md:flex-row md:gap-4 px-3">
+            <li class="group cursor-pointer md:relative">
+              <a href="#" class="hidden md:flex gap-2 items-center md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:focus-within:border-[#2FD180] md:transition md:ease-in-out md:duration-300">
+                <span class="font-inter font-normal text-[16px] text-[#2FD180]">{props.idiom}</span>
+                <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" stroke="#55D695" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
               </a>
-              <div class="absolute right-0 hidden group-hover:block group-focus-within:block">
-                <div class="h-[19px]"></div>
+              <div class="absolute right-0 mt-3 hidden group-focus-within:block">
                 <div class="flex flex-col w-[152px] bg-[#1F261F] p-2 rounded">
                   <div class="flex flex-row items-center justify-between">
                     <a href={props.pt.url} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
-                      <p class="font-sans not-italic font-normal leading-[20px] text-[15px] text-[#2FD180] flex-grow">{props.pt.label}</p>
+                      <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">{props.pt.label}</p>
                       <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class={props.pt.selected ? '' : 'hidden'}>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z" fill="#2FD180"/>
                       </svg>
@@ -156,7 +143,7 @@ export interface Props {
                   </div>
                   <div class="flex flex-row items-center justify-between">
                     <a href={props.eng.url} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
-                      <p class="font-sans not-italic font-normal leading-[20px] text-[15px] text-[#2FD180] flex-grow">{props.eng.label}</p>
+                      <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">{props.eng.label}</p>
                       <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class={props.eng.selected ? '' : 'hidden'}>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z" fill="#2FD180"/>
                       </svg>
@@ -165,8 +152,8 @@ export interface Props {
                 </div>
               </div>
             </li>
-            <li class="hidden md:block md:px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:hover:border-[#2FD180] md:transition md:ease-in-out md:duration-300">
-              <a href={props.login.url} class="block font-inter font-normal text-[16px] leading-[19.36px] text-[#2FD180]">
+            <li>
+              <a href={props.login.url} class="block font-inter font-normal text-[16px] text-[#2FD180] px-3 md:py-1 md:border-1 md:rounded-full md:border-[#1F261F] md:hover:border-[#2FD180] md:transition md:ease-in-out md:duration-300">
                 {props.login.label}
               </a>
             </li>
