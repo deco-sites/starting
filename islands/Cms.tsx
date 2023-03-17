@@ -205,7 +205,7 @@ export interface Props {
                             </div>
                         </div>
                         <div class="flex flex-col w-[100%] md:w-[48%] gap-[2%] flex-shrink-0">
-                            <div class={`${lineButton.rightImageMobile} md:${lineButton.rightImage} z-0 border-t border-l`} style="border-image: linear-gradient(90deg, rgba(45,195,120,1) 20%, rgba(255,255,255,0) 100%) 1;">
+                            <div class={`${lineButton.rightImageMobile} md:${lineButton.rightImage} z-0 border-t border-l`} style="border-image: linear-gradient(90deg, rgba(45,195,120,1) 20%, rgba(255,255,255,0) 60%) 1;">
                                 <img src={props.rightImage} class="w-full" alt=""/>
                             </div>
                         </div>
