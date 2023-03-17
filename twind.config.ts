@@ -243,25 +243,23 @@ export default {
       },
       animation: {
         walk: "walk 30s ease-in-out infinite",
-        'backgound-color': "backgound-color 10s linear infinite", 'backgound-color-v2': "backgound-color-v2 10s linear infinite",
-        'backgound-color-reverse': "backgound-color-reverse 10s linear infinite", 'backgound-color-v2-reverse': "backgound-color-v2-reverse 10s linear infinite",
-        'left-opacity': "left-opacity 10s linear infinite", 'left-opacity-v2': "left-opacity-v2 10s linear infinite",
-        'left-time-line': "left-time-line 10s linear infinite", 'left-time-line-v2': "left-time-line-v2 10s linear infinite",
-        'left-text': "left-text 10s linear infinite", 'left-text-v2': "left-text-v2 10s linear infinite",
-        'left-image': "left-image 10s linear infinite", 'left-image-v2': "left-image-v2 10s linear infinite",
-        'left-image-reverse': "left-image-reverse 10s linear infinite", 'left-image-reverse-v2': "left-image-reverse-v2 10s linear infinite",
+        'backgound-color': "backgound-color 15s linear infinite", 'backgound-color-v2': "backgound-color-v2 15s linear infinite",
+        'backgound-color-reverse': "backgound-color-reverse 15s linear infinite", 'backgound-color-v2-reverse': "backgound-color-v2-reverse 15s linear infinite",
+        'left-opacity': "left-opacity 15s linear infinite", 'left-opacity-v2': "left-opacity-v2 15s linear infinite",
+        'left-time-line': "left-time-line 15s linear infinite", 'left-time-line-v2': "left-time-line-v2 15s linear infinite",
+        'left-text': "left-text 15s linear infinite", 'left-text-v2': "left-text-v2 15s linear infinite",
+        'left-image': "left-image 15s linear infinite", 'left-image-v2': "left-image-v2 15s linear infinite",
+        'left-image-reverse': "left-image-reverse 15s linear infinite", 'left-image-reverse-v2': "left-image-reverse-v2 15s linear infinite",
 
-        'right-opacity': "right-opacity 10s linear infinite", 'right-opacity-v2': "right-opacity-v2 10s linear infinite",
-        'right-time-line': "right-time-line 10s linear infinite", 'right-time-line-v2': "right-time-line-v2 10s linear infinite",
-        'right-text': "right-text 10s linear infinite", 'right-text-v2': "right-text-v2 10s linear infinite",
-        'right-image': "right-image 10s linear infinite", 'right-image-v2': "right-image-v2 10s linear infinite",
-        'right-image-reverse': "right-image-reverse 10s linear infinite", 'right-image-reverse-v2': "right-image-reverse-v2 10s linear infinite",
+        'right-opacity': "right-opacity 15s linear infinite", 'right-opacity-v2': "right-opacity-v2 15s linear infinite",
+        'right-time-line': "right-time-line 15s linear infinite", 'right-time-line-v2': "right-time-line-v2 15s linear infinite",
+        'right-text': "right-text 15s linear infinite", 'right-text-v2': "right-text-v2 15s linear infinite",
+        'right-image': "right-image 15s linear infinite", 'right-image-v2': "right-image-v2 15s linear infinite",
+        'right-image-reverse': "right-image-reverse 15s linear infinite", 'right-image-reverse-v2': "right-image-reverse-v2 15s linear infinite",
 
 
 
-        'cms-white-mobile': "cms-white-mobile 10s linear infinite",
-
-        
+        'cms-white-mobile': "cms-white-mobile 15s linear infinite",
 
         
 
@@ -272,9 +270,11 @@ export default {
         
 
         
-        'text-first': "text-first 10s linear infinite",
 
-        'text-second': "text-second 10s linear infinite",
+        
+        'text-first': "text-first 15s linear infinite",
+
+        'text-second': "text-second 15s linear infinite",
       },
       screens: {
         sm: "640px",
