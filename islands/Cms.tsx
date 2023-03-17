@@ -21,11 +21,7 @@ export interface Props {
             <div>
                 <div class={`md:px-[5rem] pt-6 md:pt-[4rem] bg-[#053535] md:rounded max-w-screen-2xl m-auto overflow-hidden ${lineButton.leftColor}`}>
                     <div class="px-3 md:px-0 flex flex-row gap-[4%]">
-                        <div class="relative w-[48%] flex-shrink-0">
-                            <p class={`font-inter not-italic font-medium text-white text-[20px] leading-[24.2px] pb-4 md:text-[32px] md:leading-[38.73px] ${lineButton.leftHeader}`}>
-                                {props.leftHeader}
-                            </p>
-                            <div class="cursor-pointer"  onClick={() => {
+                        <div class="relative w-[48%] flex-shrink-0 cursor-pointer" onClick={() => {
                                     let aux = Object.assign({}, lineButton);
 
                                     if (aux.leftColor === 'animate-backgound-color') {
@@ -98,15 +94,15 @@ export interface Props {
 
                                     setLineButton(aux)
                             }}>
+                            <p class={`font-inter not-italic font-medium text-white text-[20px] leading-[24.2px] pb-4 md:text-[32px] md:leading-[38.73px] ${lineButton.leftHeader}`}>
+                                {props.leftHeader}
+                            </p>
+                            <div>
                                 <div class="absolute bg-[#F3FFF9] opacity-50 h-0.5 w-full bottom-0 mt-4"></div>
                                 <div class={`absolute bg-[#00FF80] opacity-100 h-0.5 w-full bottom-0 mt-4 ${lineButton.leftLine}`}></div>
                             </div>
                         </div>
-                        <div class="relative w-[48%] flex-shrink-0">
-                            <p class={`font-inter not-italic font-medium text-white text-[20px] leading-[24.2px] pb-4 md:text-[32px] md:leading-[38.73px] ${lineButton.rightHeader}`}>
-                                {props.rightHeader}
-                            </p>
-                            <div class="cursor-pointer" onClick={() => {
+                        <div class="relative w-[48%] flex-shrink-0 cursor-pointer" onClick={() => {
                                 let aux = Object.assign({}, lineButton);
 
                                 if (aux.leftColor === 'animate-backgound-color-reverse') {
@@ -175,6 +171,10 @@ export interface Props {
 
                                 setLineButton(aux)
                             }}>
+                            <p class={`font-inter not-italic font-medium text-white text-[20px] leading-[24.2px] pb-4 md:text-[32px] md:leading-[38.73px] ${lineButton.rightHeader}`}>
+                                {props.rightHeader}
+                            </p>
+                            <div>
                                 <div class="absolute bg-[#F3FFF9] opacity-50 h-0.5 w-full bottom-0 mt-4"></div>
                                 <div class={`absolute bg-[#00FF80] opacity-100 h-0.5 w-full bottom-0 mt-4 ${lineButton.rightLine}`}></div>
                             </div>
