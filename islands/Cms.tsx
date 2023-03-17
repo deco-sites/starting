@@ -167,6 +167,7 @@ export interface Props {
                                     aux.rightImageMobile = 'animate-right-image-mobile-reverse-v2'
                                 } else {
                                     aux.rightImageMobile = 'animate-right-image-mobile-reverse'
+                                    console.log('oi')
                                 }
 
                                 setLineButton(aux)
@@ -180,20 +181,38 @@ export interface Props {
                             </div>
                         </div>
                     </div>
-                    <div class="px-3 md:px-0 flex flex-row gap-3 md:gap-[4%] py-6 md:pt-12 overflow-hidden">
-                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0">
-                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.leftImageMobile} md:${lineButton.leftText}`}>
+                    <div class="px-3 flex flex-row gap-3 py-6 overflow-hidden md:hidden">
+                        <div class={"relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "}>
+                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.leftImageMobile}`}>
                                 {props.leftTitle}
                             </p>
-                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] ${lineButton.leftImageMobile} md:${lineButton.leftText}`}>
+                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] ${lineButton.leftImageMobile}`}>
                                 {props.leftContent}
                             </p>
                         </div>
-                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0">
-                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.rightImageMobile} md:${lineButton.rightText}`}>
+                        <div class={"relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "}>
+                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.rightImageMobile}`}>
                                 {props.rightTitle}
                             </p>
-                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] ${lineButton.rightImageMobile} md:${lineButton.rightText}`}>
+                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] ${lineButton.rightImageMobile}`}>
+                                {props.rightContent}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hidden md:px-0 md:flex md:flex-row md:gap-[4%] md:pt-12 md:overflow-hidden">
+                        <div class={"relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "}>
+                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] md:${lineButton.leftText}`}>
+                                {props.leftTitle}
+                            </p>
+                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] md:${lineButton.leftText}`}>
+                                {props.leftContent}
+                            </p>
+                        </div>
+                        <div class={"relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "}>
+                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] md:${lineButton.rightText}`}>
+                                {props.rightTitle}
+                            </p>
+                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] md:${lineButton.rightText}`}>
                                 {props.rightContent}
                             </p>
                         </div>
