@@ -181,7 +181,7 @@ export interface Props {
                         </div>
                     </div>
                     <div class="px-3 md:px-0 flex flex-row gap-3 md:gap-[4%] py-6 md:pt-12 overflow-hidden">
-                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-[2%] flex-shrink-0">
+                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0">
                             <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.leftImageMobile} md:${lineButton.leftText}`}>
                                 {props.leftTitle}
                             </p>
@@ -189,7 +189,7 @@ export interface Props {
                                 {props.leftContent}
                             </p>
                         </div>
-                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-[2%] flex-shrink-0">
+                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0">
                             <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.rightImageMobile} md:${lineButton.rightText}`}>
                                 {props.rightTitle}
                             </p>
