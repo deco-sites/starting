@@ -9,8 +9,8 @@ export interface Props {
 export default function Carousel(props: Props) {
   const [transition, setTranstion] = useState(0);
   return (
-    <div class="relative py-4 max-w-screen-2xl m-auto px-[4%] md:px-[7rem]">
-        <div class="overflow-hidden">
+    <div class="relative py-4 max-w-screen-2xl m-auto px-[4%] md:px-[7rem] overflow-hidden">
+        <div class="">
         <div id="desktopCarousel" class={"flex flex-row gap-[2%] transition-[translate] ease-in-out duration-700"+ "md:-translate-x-["+(28*transition)+"%]"+ " -translate-x-["+(94*transition)+"%]"}>
           {props.images.map((image, index) => {
             return (

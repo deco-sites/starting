@@ -148,38 +148,50 @@ const manifest: DecoManifest = {
         "title": " Cms",
         "type": "object",
         "properties": {
-          "firstTitle": {
+          "leftHeader": {
             "type": "string",
-            "title": "First Title",
+            "title": "Left Header",
           },
-          "secondTitle": {
+          "rightHeader": {
             "type": "string",
-            "title": "Second Title",
+            "title": "Right Header",
           },
-          "textLeftFirstTitle": {
+          "leftTitle": {
             "type": "string",
-            "title": "Text Left First Title",
+            "title": "Left Title",
           },
-          "textRightFirstTitle": {
+          "rightTitle": {
             "type": "string",
-            "title": "Text Right First Title",
+            "title": "Right Title",
           },
-          "textLeftSecondTitle": {
+          "leftContent": {
             "type": "string",
-            "title": "Text Left Second Title",
+            "title": "Left Content",
           },
-          "textRightSecondTitle": {
+          "rightContent": {
             "type": "string",
-            "title": "Text Right Second Title",
+            "title": "Right Content",
+          },
+          "leftImage": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Left Image",
+          },
+          "rightImage": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Right Image",
           },
         },
         "required": [
-          "firstTitle",
-          "secondTitle",
-          "textLeftFirstTitle",
-          "textRightFirstTitle",
-          "textLeftSecondTitle",
-          "textRightSecondTitle",
+          "leftHeader",
+          "rightHeader",
+          "leftTitle",
+          "rightTitle",
+          "leftContent",
+          "rightContent",
+          "leftImage",
+          "rightImage",
         ],
       },
       "outputSchema": null,
