@@ -15,11 +15,11 @@ export interface Props {
 
   export default function Cms(props: Props) {
     const [lineButton, setLineButton] = useState({
-        leftColor: 'animate-backgound-color', leftHeader: 'animate-left-opacity', leftLine: 'animate-left-time-line', leftText: 'animate-left-text', leftImage: 'animate-left-image',
-                                                   rightHeader: 'animate-right-opacity', rightLine: 'animate-right-time-line', rightText: 'animate-right-text', rightImage: 'animate-right-image'});
+        leftColor: 'animate-backgound-color', leftHeader: 'animate-left-opacity', leftLine: 'animate-left-time-line', leftText: 'animate-left-text', leftImage: 'animate-left-image', leftImageMobile: 'animate-left-image-mobile',
+                                                   rightHeader: 'animate-right-opacity', rightLine: 'animate-right-time-line', rightText: 'animate-right-text', rightImage: 'animate-right-image', rightImageMobile: 'animate-right-image-mobile'});
     return (
             <div>
-                <div class={`md:px-[5rem] pt-6 md:pt-[4rem] bg-[#053535] rounded max-w-screen-2xl m-auto overflow-hidden ${lineButton.leftColor}`}>
+                <div class={`md:px-[5rem] pt-6 md:pt-[4rem] bg-[#053535] md:rounded max-w-screen-2xl m-auto overflow-hidden ${lineButton.leftColor}`}>
                     <div class="px-3 md:px-0 flex flex-row gap-[4%]">
                         <div class="relative w-[48%] flex-shrink-0">
                             <p class={`font-inter not-italic font-medium text-white text-[20px] leading-[24.2px] pb-4 md:text-[32px] md:leading-[38.73px] ${lineButton.leftHeader}`}>
@@ -57,6 +57,12 @@ export interface Props {
                                     } else {
                                         aux.leftImage = 'animate-left-image'
                                     }
+
+                                    if (aux.leftImageMobile === 'animate-left-image-mobile') {
+                                        aux.leftImageMobile = 'animate-left-image-mobile-v2'
+                                    } else {
+                                        aux.leftImageMobile = 'animate-left-image-mobile'
+                                    }
                                     // right side 
                                     if (aux.rightHeader === 'animate-right-opacity') {
                                         aux.rightHeader = 'animate-right-opacity-v2'
@@ -80,6 +86,12 @@ export interface Props {
                                         aux.rightImage = 'animate-right-image-v2'
                                     } else {
                                         aux.rightImage = 'animate-right-image'
+                                    }
+
+                                    if (aux.rightImageMobile === 'animate-right-image-mobile') {
+                                        aux.rightImageMobile = 'animate-right-image-mobile-v2'
+                                    } else {
+                                        aux.rightImageMobile = 'animate-right-image-mobile'
                                     }
 
                                     
@@ -125,6 +137,11 @@ export interface Props {
                                 } else {
                                     aux.leftImage = 'animate-left-image-reverse'
                                 }
+                                if (aux.leftImageMobile === 'animate-left-image-mobile-reverse') {
+                                    aux.leftImageMobile = 'animate-left-image-mobile-reverse-v2'
+                                } else {
+                                    aux.leftImageMobile = 'animate-left-image-mobile-reverse'
+                                }
 
 
 
@@ -150,6 +167,11 @@ export interface Props {
                                 } else {
                                     aux.rightImage = 'animate-right-image-reverse'
                                 }
+                                if (aux.rightImageMobile === 'animate-right-image-mobile-reverse') {
+                                    aux.rightImageMobile = 'animate-right-image-mobile-reverse-v2'
+                                } else {
+                                    aux.rightImageMobile = 'animate-right-image-mobile-reverse'
+                                }
 
                                 setLineButton(aux)
                             }}>
@@ -159,31 +181,31 @@ export interface Props {
                         </div>
                     </div>
                     <div class="px-3 md:px-0 flex flex-row gap-3 md:gap-[4%] py-6 md:pt-12 overflow-hidden">
-                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0">
-                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.leftText}`}>
+                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-[2%] flex-shrink-0">
+                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.leftImageMobile} md:${lineButton.leftText}`}>
                                 {props.leftTitle}
                             </p>
-                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] ${lineButton.leftText}`}>
+                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] ${lineButton.leftImageMobile} md:${lineButton.leftText}`}>
                                 {props.leftContent}
                             </p>
                         </div>
-                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0">
-                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.rightText}`}>
+                        <div class="relative flex flex-col w-[100%] md:w-[48%] gap-[2%] flex-shrink-0">
+                            <p class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.rightImageMobile} md:${lineButton.rightText}`}>
                                 {props.rightTitle}
                             </p>
-                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] ${lineButton.rightText}`}>
+                            <p class={`font-sans not-italic font-normal text-[#F3FFF9] text-[20px] leading-[30px] ${lineButton.rightImageMobile} md:${lineButton.rightText}`}>
                                 {props.rightContent}
                             </p>
                         </div>
                     </div>
-                    <div class="pl-3 md:pl-0 flex flex-row gap-3 md:gap-[4%] pt-6 lg:h-[420px] xl:h-[510px] 2xl:h-[530px]">
-                        <div class="flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0">
-                            <div class={`${lineButton.leftImage} z-0`}>
+                    <div class="pl-3 md:pl-0 flex flex-row gap-3 md:gap-[4%] pt-6 lg:h-[420px] xl:h-[510px] 2xl:h-[530px] transition ease-in-out group">
+                        <div class="flex flex-col w-[100%] md:w-[48%] gap-[2%] flex-shrink-0">
+                            <div class={`${lineButton.leftImageMobile} md:${lineButton.leftImage} z-0`}>
                                 <img src={props.leftImage} class="w-full" alt="" />
                             </div>
                         </div>
-                        <div class="flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0">
-                            <div class={`${lineButton.rightImage} z-0 border-t border-l`} style="border-image: linear-gradient(90deg, rgba(45,195,120,1) 20%, rgba(255,255,255,0) 100%) 1;">
+                        <div class="flex flex-col w-[100%] md:w-[48%] gap-[2%] flex-shrink-0">
+                            <div class={`${lineButton.rightImageMobile} md:${lineButton.rightImage} z-0 border-t border-l`} style="border-image: linear-gradient(90deg, rgba(45,195,120,1) 20%, rgba(255,255,255,0) 100%) 1;">
                                 <img src={props.rightImage} class="w-full" alt=""/>
                             </div>
                         </div>

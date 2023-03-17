@@ -219,18 +219,61 @@ export default {
           "100%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)' },
         },
 
-
-
-
-
-
-        'cms-white-mobile': {
-          "0%": { transform: "translateY(0%)"},
-          "10%": { transform: "translateY(-100%)"},
-          "50%": { transform: "translateY(-100%)"},
-          "60%": { transform: "translateY(0%)"},
-          "100%": { transform: "translateY(0%)"},
-          
+        'left-image-mobile': {
+          "0%": { transform: "translateX(105%)"},
+          "10%": { transform: "translateX(0%)"},
+          "50%": { transform: "translateX(0%)"},
+          "60%": { transform: "translateX(105%)"},
+          "100%": { transform: "translateX(105%)"},
+        },
+        'left-image-mobile-v2': {
+          "0%": { transform: "translateX(105%)"},
+          "10%": { transform: "translateX(0%)"},
+          "50%": { transform: "translateX(0%)"},
+          "60%": { transform: "translateX(105%)"},
+          "100%": { transform: "translateX(105%)"},
+        },
+        'left-image-mobile-reverse': {
+          "0%": { transform: "translateX(0%)"},
+          "10%": { transform: "translateX(105%)"},
+          "50%": { transform: "translateX(105%)"},
+          "60%": { transform: "translateX(0%)"},
+          "100%": { transform: "translateX(0%)"},
+        },
+        'left-image-mobile-reverse-v2': {
+          "0%": { transform: "translateX(0%)"},
+          "10%": { transform: "translateX(105%)"},
+          "50%": { transform: "translateX(105%)"},
+          "60%": { transform: "translateX(0%)"},
+          "100%": { transform: "translateX(0%)"},
+        },
+        'right-image-mobile': {
+          "0%": { transform: "translateX(-100%)"},
+          "10%": { transform: "translateX(0%)"},
+          "50%": { transform: "translateX(0%)"},
+          "60%": { transform: "translateX(-100%)"},
+          "100%": { transform: "translateX(-100%)"},
+        },
+        'right-image-mobile-v2': {
+          "0%": { transform: "translateX(-100%)"},
+          "10%": { transform: "translateX(0%)"},
+          "50%": { transform: "translateX(0%)"},
+          "60%": { transform: "translateX(-100%)"},
+          "100%": { transform: "translateX(-100%)"},
+        },
+        'right-image-mobile-reverse': {
+          "0%": { transform: "translateX(0%)"},
+          "10%": { transform: "translateX(-100%)"},
+          "50%": { transform: "translateX(-100%)"},
+          "60%": { transform: "translateX(0%)"},
+          "100%": { transform: "translateX(0%)"},
+        },
+        'right-image-mobile-reverse-v2': {
+          "0%": { transform: "translateX(0%)"},
+          "10%": { transform: "translateX(-100%)"},
+          "50%": { transform: "translateX(-100%)"},
+          "60%": { transform: "translateX(0%)"},
+          "100%": { transform: "translateX(0%)"},
         },
         
        
@@ -257,24 +300,12 @@ export default {
         'right-image': "right-image 15s linear infinite", 'right-image-v2': "right-image-v2 15s linear infinite",
         'right-image-reverse': "right-image-reverse 15s linear infinite", 'right-image-reverse-v2': "right-image-reverse-v2 15s linear infinite",
 
+        'left-image-mobile': 'left-image-mobile 15s linear infinite', 'left-image-mobile-v2': 'left-image-mobile-v2 15s linear infinite',
+        'left-image-mobile-reverse': 'left-image-mobile-reverse 15s linear infinite', 'left-image-mobile-reverse-v2': 'left-image-mobile-reverse-v2 15s linear infinite',
+        'right-image-mobile': 'right-image-mobile 15s linear infinite', 'right-image-mobile-v2': 'right-image-mobile-v2 15s linear infinite',
+        'right-image-mobile-reverse': 'right-image-mobile-reverse 15s linear infinite', 'right-image-mobile-reverse-v2': 'right-image-mobile-reverse-v2 15s linear infinite',
 
 
-        'cms-white-mobile': "cms-white-mobile 15s linear infinite",
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-        'text-first': "text-first 15s linear infinite",
-
-        'text-second': "text-second 15s linear infinite",
       },
       screens: {
         sm: "640px",
