@@ -21,7 +21,7 @@ export default {
     '.hidden-scroll::-webkit-scrollbar': {
       display: 'none',
     },
-    'hidden-scroll':{
+    '.hidden-scroll':{
       '-ms-overflow-style': 'none',  /* IE and Edge */
       'scrollbar-width': 'none'  /* Firefox */
     }
