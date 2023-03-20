@@ -8,10 +8,10 @@ import * as $0 from "./routes/[...catchall].tsx";
 import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_middleware.ts";
 import * as $3 from "./routes/index.tsx";
-import * as $$0 from "./islands/Carousel.tsx";
-import * as $$1 from "./islands/Cms.tsx";
-import * as $$2 from "./islands/Header.tsx";
-import * as $$3 from "./islands/LiveControls.tsx";
+import * as $$0 from "./islands/Cms.tsx";
+import * as $$1 from "./islands/Header.tsx";
+import * as $$2 from "./islands/LiveControls.tsx";
+import * as $$3 from "./islands/SliderJS.tsx";
 import * as $$$0 from "./sections/About.tsx";
 import * as $$$1 from "./sections/Carousel.tsx";
 import * as $$$2 from "./sections/Cms.tsx";
@@ -37,10 +37,10 @@ const manifest: DecoManifest = {
     "./routes/index.tsx": $3,
   },
   islands: {
-    "./islands/Carousel.tsx": $$0,
-    "./islands/Cms.tsx": $$1,
-    "./islands/Header.tsx": $$2,
-    "./islands/LiveControls.tsx": $$3,
+    "./islands/Cms.tsx": $$0,
+    "./islands/Header.tsx": $$1,
+    "./islands/LiveControls.tsx": $$2,
+    "./islands/SliderJS.tsx": $$3,
   },
   sections: {
     "./sections/About.tsx": $$$0,
@@ -103,8 +103,8 @@ const manifest: DecoManifest = {
         "title": " Carousel",
         "type": "object",
         "properties": {
-          "images": {
-            "title": "Images",
+          "cards": {
+            "title": "Cards",
             "type": "array",
             "items": {
               "type": "object",
@@ -127,18 +127,23 @@ const manifest: DecoManifest = {
                   "type": "string",
                   "title": "Author",
                 },
+                "url": {
+                  "type": "string",
+                  "title": "Url",
+                },
               },
               "required": [
                 "title",
                 "text",
                 "image",
                 "author",
+                "url",
               ],
             },
           },
         },
         "required": [
-          "images",
+          "cards",
         ],
       },
       "outputSchema": null,
