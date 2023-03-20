@@ -34,7 +34,7 @@ export default {
     extend: {
       backgroundImage: {
         "white-green":
-          "linear-gradient(to top, #06E474 0%, #06E474 40%, #FFFFFF 40%, #FFFFFF 100%)",
+          "linear-gradient(to top, #06E474 0%, #06E474 38%, #FFFFFF 38%, #FFFFFF 100%)",
         "linear-white-green":
           "linear-gradient(90deg,  rgba(255,255,255,0.8) 0%, rgba(47,209,128,0.8) 49%, rgba(255,255,255,0.79) 50%, rgba(255,255,255,0.79) 100%)",
         "linear-transp-green":

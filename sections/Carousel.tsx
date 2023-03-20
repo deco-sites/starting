@@ -37,13 +37,13 @@ export default function Carousel({cards}: Props) {
             )
           })}
         </Slider>
-        <div class="flex flex-row justify-end gap-2 py-2">
-          <button class="rounded-full p-2 bg-black focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:left-[6rem] md:top-[35%]" data-slide="prev" aria-label="Previous item">
+        <div class="flex flex-row justify-end gap-2 pt-6 pb-12 md:pt-0 md:pb-0 md:py-0">
+          <button class="rounded-full p-3 bg-black focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:left-[6rem] md:top-[35%]" data-slide="prev" aria-label="Previous item">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </button>
-          <button class="rounded-full p-2 bg-black focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:top-[35%] right-[6rem]" data-slide="next" aria-label="Next item">
+          <button class="rounded-full p-3 bg-black focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:top-[35%] right-[6rem]" data-slide="next" aria-label="Next item">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
