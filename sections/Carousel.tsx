@@ -16,16 +16,16 @@ export default function Carousel({cards}: Props) {
       <div class="relative px-3 md:px-[7rem] max-w-screen-2xl m-auto">
         <Slider
           class="relative gap-6 col-span-full row-start-2 row-end-5 hidden-scroll"
-          snap="snap-center sm:snap-start block first:ml-6 sm:first:ml-0 last:mr-6 sm:last:mr-0 opacity-50 disabled:opacity-100 focus:outline-none"
+          snap="snap-center sm:snap-start first:ml-6 sm:first:ml-0 last:mr-6 sm:last:mr-0 opacity-50 disabled:opacity-100 focus:outline-none w-full"
           >
           {cards?.map((card) => {
             return (
               <a href={card.url} target="_blank">
-                <article class="min-w-[270px] max-w-[270px] min-h-[325px] max-h-[325px] rounded border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden">
+                <article class="rounded border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden">
                   <p class="absolute px-3 pt-4 font-inter font-normal not-italic text-base text-white z-10" style="text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);">
                     {card.title}
                   </p>
-                  <img src={card.image} alt="" />
+                  <img src={card.image} alt="" class="w-full"/>
                   <div class="relative">
                     <img src={card.author} alt="" class="rounded-full absolute px-3 bottom-[-1.5rem]"/>
                   </div>
