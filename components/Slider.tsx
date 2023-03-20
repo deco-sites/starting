@@ -7,7 +7,7 @@ type Props = JSX.IntrinsicElements["ul"] & {
 
 function Slider({
   children,
-  snap = "snap-center",
+  snap = "snap-center disabled:opacity-50",
   class: _class = "gap-6 scrollbar-none",
   ...props
 }: Props) {

@@ -134,10 +134,8 @@ const setup = ({ rootId, behavior, interval }: Props) => {
 
         if (item.isIntersecting) {
           dot?.setAttribute("disabled", "");
-          item.target.classList.contains('opacity-50') ? item.target.classList.remove('opacity-50') : '';
         } else {
           dot?.removeAttribute("disabled");
-          item.target.classList.add('opacity-50');
         }
       }),
     { threshold: THRESHOLD, root: slider },
