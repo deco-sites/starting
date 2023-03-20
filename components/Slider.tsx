@@ -7,7 +7,7 @@ type Props = JSX.IntrinsicElements["ul"] & {
 
 function Slider({
   children,
-  snap = "snap-center disabled:opacity-50",
+  snap = "snap-center",
   class: _class = "gap-6 scrollbar-none",
   ...props
 }: Props) {
@@ -18,11 +18,10 @@ function Slider({
       {...props}
     >
       {Children.map(children, (child, index) => (
-        <li
-          data-slider-item={index}
-          class={snap}
-        >
-          {child}
+        <li>
+          <button type="button" data-slider-item={index} data-dot={index} class={snap}>
+            {child}
+          </button>
         </li>
       ))}
     </ul>
