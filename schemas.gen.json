@@ -1095,12 +1095,27 @@
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image"
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xQYXJ0bmVyLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFBhcnRuZXIudHN4@Props": {
       "type": "object",
       "properties": {
         "mainText": {
           "type": "string",
           "title": "Main Text"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "benefits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Benefits"
+        },
+        "button": {
+          "type": "string",
+          "title": "Button"
         },
         "imgFirstLine": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image[]",
@@ -1113,40 +1128,18 @@
         "imgThirdLine": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image[]",
           "title": "Img Third Line"
-        },
-        "col1": {
-          "type": "string",
-          "title": "Col1"
-        },
-        "col2": {
-          "type": "string",
-          "title": "Col2"
-        },
-        "col3": {
-          "type": "string",
-          "title": "Col3"
-        },
-        "col4": {
-          "type": "string",
-          "title": "Col4"
-        },
-        "button": {
-          "type": "string",
-          "title": "Button"
         }
       },
       "required": [
         "mainText",
+        "title",
+        "benefits",
+        "button",
         "imgFirstLine",
         "imgSecondLine",
-        "imgThirdLine",
-        "col1",
-        "col2",
-        "col3",
-        "col4",
-        "button"
+        "imgThirdLine"
       ],
-      "title": "deco-sites/starting\\sections\\Partner.tsx@Props"
+      "title": "deco-sites/starting\\components\\ui\\Partner.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9RdWlsbFRleHQudHN4@Props": {
       "type": "object",
@@ -1809,7 +1802,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xQYXJ0bmVyLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFBhcnRuZXIudHN4@Props"
         }
       ],
       "required": [
