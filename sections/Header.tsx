@@ -1,4 +1,4 @@
-import HeaderIsland from '../islands/Header.tsx';
+import HeaderIsland from "deco-sites/starting/islands/Header.tsx";
 
 export interface Props {
   menuLinks: Array<{ label: string; href: string;  targetBlank?: boolean}>;

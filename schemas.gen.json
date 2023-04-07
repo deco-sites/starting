@@ -91,7 +91,7 @@
       ],
       "title": "deco-sites/starting\\islands\\Cms.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXGhlYWRlclxIZWFkZXIudHN4@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXEhlYWRlclxIZWFkZXIudHN4@Props": {
       "type": "object",
       "properties": {
         "menuLinks": {
@@ -217,7 +217,7 @@
         "gitUrl",
         "discordUrl"
       ],
-      "title": "deco-sites/starting\\components\\header\\Header.tsx@Props"
+      "title": "deco-sites/starting\\components\\Header\\Header.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
       "$ref": "#/root/flags"
@@ -624,6 +624,10 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Props": {
       "type": "object",
       "properties": {
+        "darkMode": {
+          "type": "boolean",
+          "title": "Dark Mode"
+        },
         "title": {
           "type": "string",
           "title": "Title"
@@ -634,6 +638,7 @@
         }
       },
       "required": [
+        "darkMode",
         "title",
         "sections"
       ],
@@ -1571,7 +1576,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXGhlYWRlclxIZWFkZXIudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXEhlYWRlclxIZWFkZXIudHN4@Props"
         }
       ],
       "required": [
