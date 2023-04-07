@@ -836,6 +836,10 @@
             {
               "type": "string",
               "const": "FastPagespeed"
+            },
+            {
+              "type": "string",
+              "const": "Check"
             }
           ],
           "type": "string",
@@ -881,31 +885,93 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Features.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@SubMenu": {
       "type": "object",
       "properties": {
-        "linkedinUrl": {
+        "title": {
           "type": "string",
-          "title": "Linkedin Url"
+          "title": "Title"
         },
-        "gitUrl": {
+        "href": {
           "type": "string",
-          "title": "Git Url"
-        },
-        "discordUrl": {
-          "type": "string",
-          "title": "Discord Url"
-        },
-        "built": {
-          "type": "string",
-          "title": "Built"
+          "title": "Href"
         }
       },
       "required": [
-        "linkedinUrl",
-        "gitUrl",
-        "discordUrl",
-        "built"
+        "title",
+        "href"
+      ],
+      "title": "SubMenu"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@SubMenu[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@SubMenu"
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "submenu": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@SubMenu[]",
+          "title": "Submenu"
+        }
+      },
+      "required": [
+        "title",
+        "href",
+        "submenu"
+      ],
+      "title": "Menu"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu"
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "menu": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu[]",
+          "title": "Menu"
+        },
+        "social": {
+          "type": "object",
+          "properties": {
+            "linkedinUrl": {
+              "type": "string",
+              "title": "Linkedin Url"
+            },
+            "gitUrl": {
+              "type": "string",
+              "title": "Git Url"
+            },
+            "discordUrl": {
+              "type": "string",
+              "title": "Discord Url"
+            }
+          },
+          "required": [
+            "linkedinUrl",
+            "gitUrl",
+            "discordUrl"
+          ],
+          "title": "Social"
+        }
+      },
+      "required": [
+        "menu",
+        "social"
       ],
       "title": "deco-sites/starting\\sections\\Footer.tsx@Props"
     },
