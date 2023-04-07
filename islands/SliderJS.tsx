@@ -1,1 +1,1 @@
-export { default } from "../components/SliderJS.tsx";
+export { default } from "../components/ui/SliderJS.tsx";
