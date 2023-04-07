@@ -91,7 +91,7 @@
       ],
       "title": "deco-sites/starting\\islands\\Cms.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXEhlYWRlclxIZWFkZXIudHN4@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xpc2xhbmRzXEhlYWRlci50c3g=@Props": {
       "type": "object",
       "properties": {
         "menuLinks": {
@@ -217,7 +217,7 @@
         "gitUrl",
         "discordUrl"
       ],
-      "title": "deco-sites/starting\\components\\Header\\Header.tsx@Props"
+      "title": "deco-sites/starting\\islands\\Header.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
       "$ref": "#/root/flags"
@@ -1232,13 +1232,41 @@
           "type": "string",
           "title": "Description Text"
         },
-        "buttonCTA1": {
-          "type": "string",
-          "title": "Button C T A1"
+        "buttonCta1": {
+          "type": "object",
+          "properties": {
+            "buttonName": {
+              "type": "string",
+              "title": "Button Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "buttonName",
+            "href"
+          ],
+          "title": "Button Cta1"
         },
-        "buttonCTA2": {
-          "type": "string",
-          "title": "Button C T A2"
+        "buttonCta2": {
+          "type": "object",
+          "properties": {
+            "buttonName": {
+              "type": "string",
+              "title": "Button Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "buttonName",
+            "href"
+          ],
+          "title": "Button Cta2"
         },
         "blackBlock": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
@@ -1253,8 +1281,8 @@
         "theme",
         "mainText",
         "descriptionText",
-        "buttonCTA1",
-        "buttonCTA2",
+        "buttonCta1",
+        "buttonCta2",
         "blackBlock",
         "greenBlock"
       ],
@@ -1576,7 +1604,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXEhlYWRlclxIZWFkZXIudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xpc2xhbmRzXEhlYWRlci50c3g=@Props"
         }
       ],
       "required": [
