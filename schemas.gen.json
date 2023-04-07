@@ -91,7 +91,7 @@
       ],
       "title": "deco-sites/starting\\islands\\Cms.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xpc2xhbmRzXEhlYWRlci50c3g=@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXEhlYWRlclxIZWFkZXIudHN4@Props": {
       "type": "object",
       "properties": {
         "menuLinks": {
@@ -217,7 +217,7 @@
         "gitUrl",
         "discordUrl"
       ],
-      "title": "deco-sites/starting\\islands\\Header.tsx@Props"
+      "title": "deco-sites/starting\\components\\Header\\Header.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
       "$ref": "#/root/flags"
@@ -1518,7 +1518,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xpc2xhbmRzXEhlYWRlci50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXEhlYWRlclxIZWFkZXIudHN4@Props"
         }
       ],
       "required": [
