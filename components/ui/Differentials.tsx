@@ -19,7 +19,7 @@ export interface Props{
 export default function  Differentials({ title, sections } : Props) {
 
     return(
-        <section class="mt-12 bg-dark-green">
+        <section class="mt-12 bg-linear">
             <div class="max-w-screen-2xl mx-auto px-6 md:px-28">
                 <h2 class="text-[42px] text-white opacity-90 text-center">{title}</h2>
                 <div class="mt-24 flex flex-col gap-16">
