@@ -2,50 +2,52 @@ import QuillText from "deco-sites/starting/components/ui/QuillText.tsx";
 import type { HTML } from "deco-sites/std/components/types.ts";
 
 export interface Props {
-  mainLine1Text: string;
-  mainLine2Text: string;
+  theme: 'ligth' | 'dark'
+  mainText: string
   descriptionText: string;
-  button: string;
+  buttonCTA1: string;
+  buttonCTA2: string;
   blackBlock: HTML;
   greenBlock: string;
 }
 
-export default function MainBanner({ mainLine1Text, mainLine2Text, descriptionText, button, blackBlock, greenBlock }: Props) {
+export default function MainBanner({theme, mainText, descriptionText, buttonCTA1, buttonCTA2, blackBlock, greenBlock }: Props) {
   return (
     <div class="flex flex-col bg-[#F3FFF9] mb-10 md:mb-0">
       <div class="max-w-screen-2xl m-auto">
         <div class="px-4 pt-[7rem] md:px-[2rem] md:pt-[11rem]">
-          <h1 class="flex flex-col font-sans font-bold not-italic text-primary-dark text-[66px] md:text-[92px] leading-[6rem]">
-            <span class="flex justify-start items-center">
-              {mainLine1Text}
-              <span class="overflow-y-hidden w-[184px] h-[80px] flex justify-center items-center relative text-center">
-                <span style="color: #2FD180" class=" absolute animate-switcherText10">10%</span>
-                <span style="color: #2FD180" class=" absolute animate-switcherText20">20%</span>
-                <span style="color: #2FD180" class=" absolute animate-switcherText30">30%</span>
-                <span style="color: #2FD180" class=" absolute animate-switcherText40">40%</span>
-                <span style="color: #2FD180" class=" absolute animate-switcherText50">50%</span>
-                <span style="color: #2FD180" class=" absolute animate-switcherText60">60%</span>
-                <span style="color: #2FD180" class=" absolute animate-switcherText70">70%</span>
+          <h1 class="flex flex-row justify-start items-end font-sans font-bold not-italic text-dark-green text-[56px] leading-[3rem] md:( flex-row text-[92px] leading-[6rem] items-start )">
+              <span class="w-[100%] lg:(w-[70%])">{mainText}</span>
+              <span class="overflow-y-hidden  -left-[40px] w-[21%] h-[80px] flex justify-start items-center relative text-center lg:(left-0 w-[20%])">
+                <span style="color: #2FD180" class="absolute animate-switcherText10">10%</span>
+                <span style="color: #2FD180" class="absolute animate-switcherText20">20%</span>
+                <span style="color: #2FD180" class="absolute animate-switcherText30">30%</span>
+                <span style="color: #2FD180" class="absolute animate-switcherText40">40%</span>
+                <span style="color: #2FD180" class="absolute animate-switcherText50">50%</span>
+                <span style="color: #2FD180" class="absolute animate-switcherText60">60%</span>
+                <span style="color: #2FD180" class="absolute animate-switcherText70">70%</span>
               </span>
-            </span>
-            
-            <span>{mainLine2Text}</span>
         </h1>
         </div>
-        <div class="grid grid-cols-1 items-center gap-[2rem] md:gap-[9rem] px-4 pt-[6rem] md:px-[2rem] md:pt-[4rem] md:pb-[5rem] md:grid-cols-2">
+        <div class="flex px-8">
+        <div class="flex flex-col items-center gap-[2rem]">
           <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[38px]">
           {descriptionText}
           </p>
-          <div class="bg-[#1F261F] rounded">
-            <a href="#delight" class="grid bg-[#1F261F] h-16 w-full items-center text-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[20px] hover:bg-mytheme-10">
-              {button}
+          
+          <div class="w-full bg-[#1F261F] rounded ">
+            <a href="#delight" class="flex bg-[#1F261F] h-16 justify-start pl-8 items-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[20px] hover:bg-mytheme-10">
+              {buttonCTA1}
+            </a>
+          </div>
+          <div class="w-full bg-white rounded border-1 border-dark-green">
+            <a href="#delight" class="flex bg-white h-16 justify-center items-center text-dark-green rounded font-inter font-normal not-italic text-[20px] hover:bg-mytheme-10">
+              {buttonCTA2}
             </a>
           </div>
         </div>
         
-
-        <div class="md:flex pt-[2.5rem] md:gap-4">
-          <div class="relative flex-none md:w-[30rem] grid bg-[#1F261F] rounded-r-full h-[19rem] mb-4 md:mb-0 mr-6 md:ml-[2rem] md:rounded-l-full overflow-hidden group">
+        <div class="relative flex-none md:w-[30rem] grid bg-[#1F261F] rounded-r-full h-[19rem] mb-4 md:mb-0 mr-6 md:ml-[2rem] md:rounded-l-full overflow-hidden group">
               <QuillText class="pl-7 pr-16 md:pl-[5rem] pt-[3rem] md:w-full font-inter not-italic font-medium text-[22px] leading-[26.5px] text-white md:text-[32px] md:leading-[38.5px]" html={blackBlock}/>
               <div class="translate-y-[-105px] md:translate-y-[-110px] translate-x-[10px]">
                 <img src="/mobile_group_1/Rectangle 768.png" alt="" class="absolute right-[230px] top-[140px] z-40 group-hover:translate-x-[20px] group-hover:translate-y-[20px] transition ease-in-out duration-700"/>
@@ -70,6 +72,10 @@ export default function MainBanner({ mainLine1Text, mainLine2Text, descriptionTe
                 </svg>
               </div>
           </div>
+          </div>
+
+        <div class="md:flex pt-[2.5rem] md:gap-4">
+          
           <div class="relative flex-auto bg-[#02F67C] rounded-l-full h-[19rem] ml-4 md:mr-[2rem] md:col-span-3 md:rounded-l-none md:rounded-r-full overflow-hidden group">
               <p class="ml-[5rem] md:ml-[4rem] pt-[3rem] w-[16rem] md:w-[20rem] font-inter not-italic font-medium text-[22px] leading-[26.5px] text-[#1F261F] md:text-[32px] md:leading-[38.5px]">
                 {greenBlock}

@@ -1205,21 +1205,35 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@Props": {
       "type": "object",
       "properties": {
-        "mainLine1Text": {
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ligth"
+            },
+            {
+              "type": "string",
+              "const": "dark"
+            }
+          ],
           "type": "string",
-          "title": "Main Line1 Text"
+          "title": "Theme"
         },
-        "mainLine2Text": {
+        "mainText": {
           "type": "string",
-          "title": "Main Line2 Text"
+          "title": "Main Text"
         },
         "descriptionText": {
           "type": "string",
           "title": "Description Text"
         },
-        "button": {
+        "buttonCTA1": {
           "type": "string",
-          "title": "Button"
+          "title": "Button C T A1"
+        },
+        "buttonCTA2": {
+          "type": "string",
+          "title": "Button C T A2"
         },
         "blackBlock": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
@@ -1231,10 +1245,11 @@
         }
       },
       "required": [
-        "mainLine1Text",
-        "mainLine2Text",
+        "theme",
+        "mainText",
         "descriptionText",
-        "button",
+        "buttonCTA1",
+        "buttonCTA2",
         "blackBlock",
         "greenBlock"
       ],
