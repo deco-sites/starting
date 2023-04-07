@@ -336,6 +336,7 @@ export default {
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
         "highlight": "#02F67C",
+        "dark-green": "#0A2121",
         transparent: "transparent",
       },
       fontFamily: {
