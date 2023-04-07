@@ -38,7 +38,10 @@ export type AvailableIcons =
   | "IconCart"
   | "PigMoney"
   | "FastClock"
-  | "FastPagespeed";
+  | "FastPagespeed"
+  | "Check"
+  | "WhiteArrow"
+  | "GreenArrow";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
