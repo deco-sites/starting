@@ -624,6 +624,10 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Props": {
       "type": "object",
       "properties": {
+        "darkMode": {
+          "type": "boolean",
+          "title": "Dark Mode"
+        },
         "title": {
           "type": "string",
           "title": "Title"
@@ -634,6 +638,7 @@
         }
       },
       "required": [
+        "darkMode",
         "title",
         "sections"
       ],
@@ -825,6 +830,14 @@
             {
               "type": "string",
               "const": "Check"
+            },
+            {
+              "type": "string",
+              "const": "WhiteArrow"
+            },
+            {
+              "type": "string",
+              "const": "GreenArrow"
             }
           ],
           "type": "string",
