@@ -41,6 +41,7 @@ export default {
           "linear-gradient(90deg,  rgba(255,255,255,0) 0%, rgba(47,209,128,0.8) 49%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%)",
         "linear-transp-green-transp":
           "radial-gradient(circle, rgba(0,255,128,1) 0%, rgba(0,255,128,0) 100%)",
+        "linear": "linear-gradient(180deg, #053535 0%, #0A2121 100%);"
       },
       boxShadow: {
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",
@@ -283,15 +284,7 @@ export default {
           "50%": { transform: "translateX(-102%)"},
           "60%": { transform: "translateX(0%)"},
           "100%": { transform: "translateX(0%)"},
-        },
-        
-       
-       
-        
-        
-        
-        
-        
+        },     
       },
       animation: {
         walk: "walk 30s ease-in-out infinite",
