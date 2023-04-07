@@ -1,5 +1,5 @@
 import { useId } from "preact/hooks";
-import type { Image } from "$live/std/ui/types/Image.ts";
+import type { Image } from "deco-sites/std/components/types.ts";
 import Slider from "../components/ui/Slider.tsx";
 import SliderControllerJS from "../islands/SliderJS.tsx";
 

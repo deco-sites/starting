@@ -1,4 +1,4 @@
-import QuillText from "$live/std/ui/components/QuillText.tsx";
-export * from "$live/std/ui/components/QuillText.tsx";
+import QuillText from "deco-sites/std/components/QuillText.tsx";
+export * from "deco-sites/std/components/QuillText.tsx";
 
 export default QuillText;
