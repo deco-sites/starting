@@ -21,7 +21,7 @@ export default function Cms(props: Props) {
                 <div class={`md:px-[5rem] pt-6 md:pt-[4rem] bg-[#053535] md:rounded max-w-screen-2xl m-auto overflow-hidden ${lineButton.leftColor}`}>
                     <div class="px-3 md:px-0 flex flex-row gap-[4%]">
                         <div class="relative w-[48%] flex-shrink-0 cursor-pointer" onClick={() => {
-                                    let aux = Object.assign({}, lineButton);
+                                    const aux = Object.assign({}, lineButton);
 
                                     if (aux.leftColor === 'animate-backgound-color') {
                                         aux.leftColor = 'animate-backgound-color-v2'
@@ -102,7 +102,7 @@ export default function Cms(props: Props) {
                             </div>
                         </div>
                         <div class="relative w-[48%] flex-shrink-0 cursor-pointer" onClick={() => {
-                                let aux = Object.assign({}, lineButton);
+                                const aux = Object.assign({}, lineButton);
 
                                 if (aux.leftColor === 'animate-backgound-color-reverse') {
                                     aux.leftColor = 'animate-backgound-color-v2-reverse'

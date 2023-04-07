@@ -1,4 +1,4 @@
-import type { HTML } from "$live/std/ui/components/types.ts";
+import type { HTML } from "deco-sites/std/components/types.ts";
 export interface Props {
   html: HTML;
   class: string;
