@@ -9,7 +9,7 @@ export interface Props {
     linkedinUrl: string;
     gitUrl: string;
     discordUrl: string;
-  }
+}
 
 export default function Header(props: Props) {
 const [open, setOpen] = useState(false);
