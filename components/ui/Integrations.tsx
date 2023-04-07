@@ -18,7 +18,7 @@ export interface Props {
 
 export default function Integration({mainText, secondText, image, imageEffect}: Props) {
   return (
-    <section class="bg-[#053535] h-[150vw] md:h-auto">
+    <section class="bg-dark-green h-[150vw] md:h-auto">
       <div class="relative flex flex-col md:flex-row md:px-[7rem] pt-4 pb-12 md:pb-32 max-w-screen-2xl m-auto">
         <div class="w-full z-10">
           <Picture class="w-full md:w-1/2 block" preload={false}>
