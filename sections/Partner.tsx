@@ -1,4 +1,4 @@
-import type { Image } from "$live/std/ui/types/Image.ts";
+import type { Image } from "deco-sites/std/components/types.ts";
 
 export interface Props {
   mainText: string;
@@ -56,7 +56,7 @@ export default function Partner({mainText, imgFirstLine, imgSecondLine, imgThird
           >
           </div>
         </div>
-        <p class="font-sans not-italic font-bold text-white text-[56px] md:text-[128.94px] leading-[45px] md:leading-[105.5px] tracking[-1%] md:order-1">
+        <p class="font-sans not-italic font-bold text-white text-[56px] md:text-[128.94px] leading-[45px] md:leading-[105.5px] tracking-[-1%] md:order-1">
           {mainText}
         </p>
       </div>
@@ -69,22 +69,22 @@ export default function Partner({mainText, imgFirstLine, imgSecondLine, imgThird
         </div>
       </div>
       <div class="mx-6 mt-12 pt-8 grid grid-cols-1 gap-8 border-t border-t-[1px] border-white-opacity items-end md:mx-[7rem] md:grid-cols-4">
-        <div class="border-b border-b-0.5 border-white pb-2">
+        <div class="border-b border-b-1 border-white pb-2">
           <p class="font-sans not-italic font-normal text-[22px] leading-[24px] text-white opacity-[67%]">
             {col1}
           </p>
         </div>
-        <div class="border-b border-b-0.5 border-white pb-2">
+        <div class="border-b border-b-1 border-white pb-2">
           <p class="font-sans not-italic font-normal text-[22px] leading-[24px] text-white opacity-[67%]">
             {col2}
           </p>
         </div>
-        <div class="border-b border-b-0.5 border-white pb-2">
+        <div class="border-b border-b-1 border-white pb-2">
           <p class="font-sans not-italic font-normal text-[22px] leading-[24px] text-white opacity-[67%]">
             {col3}
           </p>
         </div>
-        <div class="border-b border-b-0.5 border-white pb-2">
+        <div class="border-b border-b-1 border-white pb-2">
           <p class="font-sans not-italic font-normal text-[22px] leading-[24px] text-white opacity-[67%]">
             {col4}
           </p>

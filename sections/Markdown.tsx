@@ -1,5 +1,5 @@
-import Markdown, { Props } from "$live/std/ui/components/Markdown.tsx";
-export * from "$live/std/ui/components/Markdown.tsx";
+import Markdown, { Props } from "deco-sites/std/components/Markdown.tsx";
+export * from "deco-sites/std/components/Markdown.tsx";
 
 export default function MarkdownContainer(props: Props) {
   return (

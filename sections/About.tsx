@@ -1,5 +1,5 @@
 import QuillText from "../components/ui/QuillText.tsx";
-import type { HTML } from "$live/std/ui/types/HTML.ts";
+import type { HTML } from "deco-sites/std/components/types.ts";
 
 export interface Props {
   mainText: string;
@@ -14,7 +14,7 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
     <section class="flex flex-col bg-[#F3FFF9] mb-10 md:mb-0">
       <div class="max-w-screen-2xl m-auto">
         <div class="px-4 pt-[7rem] md:px-[2rem] md:pt-[11rem]">
-          <p class="font-sans font-bold not-italic text-[#202320] text-[56px] md:text-[120px] leading-[45px] md:leading-[105px] tracking[-1%]" dangerouslySetInnerHTML={{ __html: mainText }} />
+          <p class="font-sans font-bold not-italic text-[#202320] text-[56px] md:text-[120px] leading-[45px] md:leading-[105px] tracking-[-1%]" dangerouslySetInnerHTML={{ __html: mainText }} />
         </div>
         <div class="grid grid-cols-1 items-center gap-[2rem] md:gap-[9rem] px-4 pt-[6rem] md:px-[2rem] md:pt-[4rem] md:pb-[5rem] md:grid-cols-2">
           <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[38px]">
