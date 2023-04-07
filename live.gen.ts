@@ -23,9 +23,10 @@ import * as $$$$$$$$8 from "./sections/Footer.tsx";
 import * as $$$$$$$$9 from "./sections/Head.tsx";
 import * as $$$$$$$$10 from "./sections/Header.tsx";
 import * as $$$$$$$$11 from "./sections/Integration.tsx";
-import * as $$$$$$$$12 from "./sections/Markdown.tsx";
-import * as $$$$$$$$13 from "./sections/Partner.tsx";
-import * as $$$$$$$$14 from "./sections/QuillText.tsx";
+import * as $$$$$$$$12 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$13 from "./sections/Markdown.tsx";
+import * as $$$$$$$$14 from "./sections/Partner.tsx";
+import * as $$$$$$$$15 from "./sections/QuillText.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -82,9 +83,10 @@ const manifest: DecoManifest = {
     "deco-sites/starting/sections/Head.tsx": $$$$$$$$9,
     "deco-sites/starting/sections/Header.tsx": $$$$$$$$10,
     "deco-sites/starting/sections/Integration.tsx": $$$$$$$$11,
-    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$12,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$13,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$12,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$13,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$15,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {

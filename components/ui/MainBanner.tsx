@@ -1,24 +1,40 @@
-import QuillText from "$start/components/components/ui/QuillText.tsx";
-import type { HTML } from "$live/std/ui/types/HTML.ts";
+import QuillText from "deco-sites/starting/components/ui/QuillText.tsx";
+import type { HTML } from "deco-sites/std/components/types.ts";
 
 export interface Props {
-  mainText: string;
-  secondText: string;
+  mainLine1Text: string;
+  mainLine2Text: string;
+  descriptionText: string;
   button: string;
   blackBlock: HTML;
   greenBlock: string;
 }
 
-export default function About({ mainText, secondText, button, blackBlock, greenBlock }: Props) {
+export default function MainBanner({ mainLine1Text, mainLine2Text, descriptionText, button, blackBlock, greenBlock }: Props) {
   return (
-    <section class="flex flex-col bg-[#F3FFF9] mb-10 md:mb-0">
+    <div class="flex flex-col bg-[#F3FFF9] mb-10 md:mb-0">
       <div class="max-w-screen-2xl m-auto">
         <div class="px-4 pt-[7rem] md:px-[2rem] md:pt-[11rem]">
-          <p class="font-sans font-bold not-italic text-[#202320] text-[56px] md:text-[120px] leading-[45px] md:leading-[105px] tracking[-1%]" dangerouslySetInnerHTML={{ __html: mainText }} />
+          <h1 class="flex flex-col font-sans font-bold not-italic text-primary-dark text-[66px] md:text-[92px] leading-[6rem]">
+            <span class="flex justify-start items-center">
+              {mainLine1Text}
+              <span class="overflow-y-hidden w-[184px] h-[80px] flex justify-center items-center relative text-center">
+                <span style="color: #2FD180" class=" absolute animate-switcherText10">10%</span>
+                <span style="color: #2FD180" class=" absolute animate-switcherText20">20%</span>
+                <span style="color: #2FD180" class=" absolute animate-switcherText30">30%</span>
+                <span style="color: #2FD180" class=" absolute animate-switcherText40">40%</span>
+                <span style="color: #2FD180" class=" absolute animate-switcherText50">50%</span>
+                <span style="color: #2FD180" class=" absolute animate-switcherText60">60%</span>
+                <span style="color: #2FD180" class=" absolute animate-switcherText70">70%</span>
+              </span>
+            </span>
+            
+            <span>{mainLine2Text}</span>
+        </h1>
         </div>
         <div class="grid grid-cols-1 items-center gap-[2rem] md:gap-[9rem] px-4 pt-[6rem] md:px-[2rem] md:pt-[4rem] md:pb-[5rem] md:grid-cols-2">
           <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[38px]">
-          {secondText}
+          {descriptionText}
           </p>
           <div class="bg-[#1F261F] rounded">
             <a href="#delight" class="grid bg-[#1F261F] h-16 w-full items-center text-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[20px] hover:bg-mytheme-10">
@@ -89,6 +105,6 @@ export default function About({ mainText, secondText, button, blackBlock, greenB
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
