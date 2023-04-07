@@ -91,7 +91,7 @@
       ],
       "title": "deco-sites/starting\\islands\\Cms.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXEhlYWRlclxIZWFkZXIudHN4@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xpc2xhbmRzXEhlYWRlci50c3g=@Props": {
       "type": "object",
       "properties": {
         "menuLinks": {
@@ -217,7 +217,7 @@
         "gitUrl",
         "discordUrl"
       ],
-      "title": "deco-sites/starting\\components\\Header\\Header.tsx@Props"
+      "title": "deco-sites/starting\\islands\\Header.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
       "$ref": "#/root/flags"
@@ -1207,6 +1207,87 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Integrations.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "theme": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ligth"
+            },
+            {
+              "type": "string",
+              "const": "dark"
+            }
+          ],
+          "type": "string",
+          "title": "Theme"
+        },
+        "mainText": {
+          "type": "string",
+          "title": "Main Text"
+        },
+        "descriptionText": {
+          "type": "string",
+          "title": "Description Text"
+        },
+        "buttonCta1": {
+          "type": "object",
+          "properties": {
+            "buttonName": {
+              "type": "string",
+              "title": "Button Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "buttonName",
+            "href"
+          ],
+          "title": "Button Cta1"
+        },
+        "buttonCta2": {
+          "type": "object",
+          "properties": {
+            "buttonName": {
+              "type": "string",
+              "title": "Button Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "buttonName",
+            "href"
+          ],
+          "title": "Button Cta2"
+        },
+        "blackBlock": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
+          "title": "Black Block"
+        },
+        "greenBlock": {
+          "type": "string",
+          "title": "Green Block"
+        }
+      },
+      "required": [
+        "theme",
+        "mainText",
+        "descriptionText",
+        "buttonCta1",
+        "buttonCta2",
+        "blackBlock",
+        "greenBlock"
+      ],
+      "title": "deco-sites/starting\\components\\ui\\MainBanner.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9NYXJrZG93bi50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -1523,7 +1604,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXEhlYWRlclxIZWFkZXIudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xpc2xhbmRzXEhlYWRlci50c3g=@Props"
         }
       ],
       "required": [
@@ -1925,6 +2006,27 @@
             "deco-sites/starting/sections/Integration.tsx"
           ],
           "default": "deco-sites/starting/sections/Integration.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9NYWluQmFubmVyLnRzeA==": {
+      "title": "deco-sites/starting/sections/MainBanner.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/MainBanner.tsx"
+          ],
+          "default": "deco-sites/starting/sections/MainBanner.tsx"
         }
       }
     },
@@ -2330,6 +2432,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbnRlZ3JhdGlvbi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9NYWluQmFubmVyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9NYXJrZG93bi50c3g="
