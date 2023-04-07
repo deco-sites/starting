@@ -2,7 +2,7 @@
   "imports": {
     "deco-sites/starting/": "./",
     "$start/": "./",
-    "$live/": "https://denopkg.com/deco-cx/live@0.12.0/",
+    "$live/": "https://denopkg.com/deco-cx/live@1.0.0-rc.43/",
     "inspect_vscode/": "https://deno.land/x/inspect_vscode@0.1.2/",
     "supabase": "https://esm.sh/@supabase/supabase-js@1.35.4",
     "json-schema": "https://esm.sh/v92/@types/json-schema@7.0.11/X-YS9yZWFjdDpwcmVhY3QvY29tcGF0CmQvcHJlYWN0QDEwLjEwLjY/index.d.ts",
@@ -15,7 +15,7 @@
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
     "std/": "https://deno.land/std@0.181.0/",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.0.0-rc.12/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.0.0-rc.11/",
     "prefetch": "https://deno.land/x/prefetch@0.0.6/mod.ts"
   }
 }
