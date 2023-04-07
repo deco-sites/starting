@@ -587,6 +587,73 @@
       ],
       "title": "deco-sites/starting\\sections\\Delight.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Sections": {
+      "type": "object",
+      "properties": {
+        "imagePosition": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "left"
+            },
+            {
+              "type": "string",
+              "const": "right"
+            }
+          ],
+          "type": "string",
+          "title": "Image Position"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Subtitle"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "imagePosition",
+        "image",
+        "title",
+        "subtitle",
+        "text"
+      ],
+      "title": "Sections"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Sections[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Sections"
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "sections": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Sections[]",
+          "title": "Sections"
+        }
+      },
+      "required": [
+        "title",
+        "sections"
+      ],
+      "title": "deco-sites/starting\\components\\ui\\Differentials.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGYXEudHN4@Props": {
       "type": "object",
       "properties": {
@@ -1641,6 +1708,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EaWZmZXJlbnRpYWxzLnRzeA==": {
+      "title": "deco-sites/starting/sections/Differentials.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/Differentials.tsx"
+          ],
+          "default": "deco-sites/starting/sections/Differentials.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EaXZpZGVyLnRzeA==": {
       "title": "deco-sites/starting/sections/Divider.tsx",
       "type": "object",
@@ -2161,6 +2249,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EZWxpZ2h0LnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EaWZmZXJlbnRpYWxzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EaXZpZGVyLnRzeA=="

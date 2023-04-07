@@ -16,16 +16,17 @@ import * as $$$$$$$$1 from "./sections/Carousel.tsx";
 import * as $$$$$$$$2 from "./sections/Cms.tsx";
 import * as $$$$$$$$3 from "./sections/Community.tsx";
 import * as $$$$$$$$4 from "./sections/Delight.tsx";
-import * as $$$$$$$$5 from "./sections/Divider.tsx";
-import * as $$$$$$$$6 from "./sections/Faq.tsx";
-import * as $$$$$$$$7 from "./sections/Features.tsx";
-import * as $$$$$$$$8 from "./sections/Footer.tsx";
-import * as $$$$$$$$9 from "./sections/Head.tsx";
-import * as $$$$$$$$10 from "./sections/Header.tsx";
-import * as $$$$$$$$11 from "./sections/Integration.tsx";
-import * as $$$$$$$$12 from "./sections/Markdown.tsx";
-import * as $$$$$$$$13 from "./sections/Partner.tsx";
-import * as $$$$$$$$14 from "./sections/QuillText.tsx";
+import * as $$$$$$$$5 from "./sections/Differentials.tsx";
+import * as $$$$$$$$6 from "./sections/Divider.tsx";
+import * as $$$$$$$$7 from "./sections/Faq.tsx";
+import * as $$$$$$$$8 from "./sections/Features.tsx";
+import * as $$$$$$$$9 from "./sections/Footer.tsx";
+import * as $$$$$$$$10 from "./sections/Head.tsx";
+import * as $$$$$$$$11 from "./sections/Header.tsx";
+import * as $$$$$$$$12 from "./sections/Integration.tsx";
+import * as $$$$$$$$13 from "./sections/Markdown.tsx";
+import * as $$$$$$$$14 from "./sections/Partner.tsx";
+import * as $$$$$$$$15 from "./sections/QuillText.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -75,16 +76,17 @@ const manifest: DecoManifest = {
     "deco-sites/starting/sections/Cms.tsx": $$$$$$$$2,
     "deco-sites/starting/sections/Community.tsx": $$$$$$$$3,
     "deco-sites/starting/sections/Delight.tsx": $$$$$$$$4,
-    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$5,
-    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$6,
-    "deco-sites/starting/sections/Features.tsx": $$$$$$$$7,
-    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$8,
-    "deco-sites/starting/sections/Head.tsx": $$$$$$$$9,
-    "deco-sites/starting/sections/Header.tsx": $$$$$$$$10,
-    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$11,
-    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$12,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$13,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$5,
+    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$6,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$7,
+    "deco-sites/starting/sections/Features.tsx": $$$$$$$$8,
+    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$9,
+    "deco-sites/starting/sections/Head.tsx": $$$$$$$$10,
+    "deco-sites/starting/sections/Header.tsx": $$$$$$$$11,
+    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$12,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$13,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$15,
     "$live/sections/PageInclude.tsx": i1$$$0,
   },
   "handlers": {
