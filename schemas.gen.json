@@ -617,43 +617,202 @@
       ],
       "title": "deco-sites/starting\\sections\\Faq.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGZWF0dXJlcy50c3g=@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Card": {
       "type": "object",
       "properties": {
-        "col1Ttitle": {
+        "icon": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ChevronLeft"
+            },
+            {
+              "type": "string",
+              "const": "ChevronRight"
+            },
+            {
+              "type": "string",
+              "const": "ChevronUp"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "QuestionMarkCircle"
+            },
+            {
+              "type": "string",
+              "const": "User"
+            },
+            {
+              "type": "string",
+              "const": "ShoppingCart"
+            },
+            {
+              "type": "string",
+              "const": "Bars3"
+            },
+            {
+              "type": "string",
+              "const": "Heart"
+            },
+            {
+              "type": "string",
+              "const": "MagnifyingGlass"
+            },
+            {
+              "type": "string",
+              "const": "XMark"
+            },
+            {
+              "type": "string",
+              "const": "Plus"
+            },
+            {
+              "type": "string",
+              "const": "Minus"
+            },
+            {
+              "type": "string",
+              "const": "MapPin"
+            },
+            {
+              "type": "string",
+              "const": "Phone"
+            },
+            {
+              "type": "string",
+              "const": "Elo"
+            },
+            {
+              "type": "string",
+              "const": "Mastercard"
+            },
+            {
+              "type": "string",
+              "const": "Visa"
+            },
+            {
+              "type": "string",
+              "const": "Pix"
+            },
+            {
+              "type": "string",
+              "const": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok"
+            },
+            {
+              "type": "string",
+              "const": "Truck"
+            },
+            {
+              "type": "string",
+              "const": "Discount"
+            },
+            {
+              "type": "string",
+              "const": "Return"
+            },
+            {
+              "type": "string",
+              "const": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Deco"
+            },
+            {
+              "type": "string",
+              "const": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "Trash"
+            },
+            {
+              "type": "string",
+              "const": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "logoVnda"
+            },
+            {
+              "type": "string",
+              "const": "IconCart"
+            },
+            {
+              "type": "string",
+              "const": "PigMoney"
+            },
+            {
+              "type": "string",
+              "const": "FastClock"
+            },
+            {
+              "type": "string",
+              "const": "FastPagespeed"
+            }
+          ],
           "type": "string",
-          "title": "Col1 Ttitle"
+          "title": "Icon"
         },
-        "col1Text": {
+        "title": {
           "type": "string",
-          "title": "Col1 Text"
+          "title": "Title"
         },
-        "col2Title": {
+        "text": {
           "type": "string",
-          "title": "Col2 Title"
-        },
-        "col2Text": {
-          "type": "string",
-          "title": "Col2 Text"
-        },
-        "col3Title": {
-          "type": "string",
-          "title": "Col3 Title"
-        },
-        "col3Text": {
-          "type": "string",
-          "title": "Col3 Text"
+          "title": "Text"
         }
       },
       "required": [
-        "col1Ttitle",
-        "col1Text",
-        "col2Title",
-        "col2Text",
-        "col3Title",
-        "col3Text"
+        "icon",
+        "title",
+        "text"
       ],
-      "title": "deco-sites/starting\\sections\\Features.tsx@Props"
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Card[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Card"
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "cards": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Card[]",
+          "title": "Cards"
+        }
+      },
+      "required": [
+        "title",
+        "cards"
+      ],
+      "title": "deco-sites/starting\\components\\ui\\Features.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Props": {
       "type": "object",
@@ -1482,7 +1641,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGZWF0dXJlcy50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Props"
         }
       ],
       "required": [
