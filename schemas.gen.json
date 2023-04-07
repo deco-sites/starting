@@ -860,6 +860,46 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEludGVncmF0aW9ucy50c3g=@Props": {
       "type": "object",
       "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "imageDesktop": {
+              "type": "object",
+              "properties": {
+                "src": {
+                  "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                  "title": "Src"
+                }
+              },
+              "required": [
+                "src"
+              ],
+              "title": "Image Desktop"
+            },
+            "imageMobile": {
+              "type": "object",
+              "properties": {
+                "src": {
+                  "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                  "title": "Src"
+                }
+              },
+              "required": [
+                "src"
+              ],
+              "title": "Image Mobile"
+            }
+          },
+          "required": [
+            "imageDesktop",
+            "imageMobile"
+          ],
+          "title": "Image"
+        },
+        "imageEffect": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image Effect"
+        },
         "mainText": {
           "type": "string",
           "title": "Main Text"
@@ -870,6 +910,8 @@
         }
       },
       "required": [
+        "image",
+        "imageEffect",
         "mainText",
         "secondText"
       ],
