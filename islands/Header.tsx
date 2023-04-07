@@ -1,1 +1,1 @@
-export { default } from "$start/components/Header/Header.tsx";
+export { default } from "$start/components/header/Header.tsx";
