@@ -1,4 +1,4 @@
-import QuillText from "../components/QuillText.tsx";
+import QuillText from "../components/ui/QuillText.tsx";
 import type { HTML } from "$live/std/ui/types/HTML.ts";
 
 export interface Props {
