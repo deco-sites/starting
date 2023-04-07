@@ -457,68 +457,53 @@
       ],
       "title": "deco-sites/starting\\sections\\Cms.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xDb21tdW5pdHkudHN4@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbW11bml0eS50c3g=@Props": {
       "type": "object",
       "properties": {
-        "mainTextPt1": {
+        "mainText": {
           "type": "string",
-          "title": "Main Text Pt1"
+          "title": "Main Text"
         },
-        "mainTextPt2": {
+        "secondText": {
           "type": "string",
-          "title": "Main Text Pt2"
+          "title": "Second Text"
         },
-        "subText": {
+        "labelFirstButton": {
           "type": "string",
-          "title": "Sub Text"
+          "title": "Label First Button"
         },
-        "col1Title": {
+        "hrefFirstButton": {
           "type": "string",
-          "title": "Col1 Title"
+          "title": "Href First Button"
         },
-        "col1Text": {
+        "labelSecondButton": {
           "type": "string",
-          "title": "Col1 Text"
+          "title": "Label Second Button"
         },
-        "col2Title": {
+        "hrefSecondButton": {
           "type": "string",
-          "title": "Col2 Title"
+          "title": "Href Second Button"
         },
-        "col2Text": {
-          "type": "string",
-          "title": "Col2 Text"
+        "blurBackground": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Blur Background"
         },
-        "col3Title": {
-          "type": "string",
-          "title": "Col3 Title"
-        },
-        "col3Text": {
-          "type": "string",
-          "title": "Col3 Text"
-        },
-        "col4Title": {
-          "type": "string",
-          "title": "Col4 Title"
-        },
-        "col4Text": {
-          "type": "string",
-          "title": "Col4 Text"
+        "peopleImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "People Image"
         }
       },
       "required": [
-        "mainTextPt1",
-        "mainTextPt2",
-        "subText",
-        "col1Title",
-        "col1Text",
-        "col2Title",
-        "col2Text",
-        "col3Title",
-        "col3Text",
-        "col4Title",
-        "col4Text"
+        "mainText",
+        "secondText",
+        "labelFirstButton",
+        "hrefFirstButton",
+        "labelSecondButton",
+        "hrefSecondButton",
+        "blurBackground",
+        "peopleImage"
       ],
-      "title": "deco-sites/starting\\sections\\Community.tsx@Props"
+      "title": "deco-sites/starting\\components\\ui\\Community.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xEZWxpZ2h0LnRzeA==@Props": {
       "type": "object",
@@ -769,6 +754,10 @@
             {
               "type": "string",
               "const": "FastPagespeed"
+            },
+            {
+              "type": "string",
+              "const": "Check"
             }
           ],
           "type": "string",
@@ -1597,7 +1586,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xDb21tdW5pdHkudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbW11bml0eS50c3g=@Props"
         }
       ],
       "required": [
