@@ -12,8 +12,7 @@ export interface Props {
     rightImage: Image;
   }
 
-
-  export default function Cms(props: Props) {
+export default function Cms(props: Props) {
     const [lineButton, setLineButton] = useState({
         leftColor: 'animate-backgound-color', leftHeader: 'animate-left-opacity', leftLine: 'animate-left-time-line', leftText: 'animate-left-text', leftImage: 'animate-left-image', leftImageMobile: 'animate-left-image-mobile',
                                                    rightHeader: 'animate-right-opacity', rightLine: 'animate-right-time-line', rightText: 'animate-right-text', rightImage: 'animate-right-image', rightImageMobile: 'animate-right-image-mobile'});
