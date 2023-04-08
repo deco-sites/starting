@@ -2455,11 +2455,17 @@
           "title": "Second Text"
         },
         "labelFirstButton": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Label First Button"
         },
         "hrefFirstButton": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Href First Button"
         },
         "labelSecondButton": {
@@ -2482,8 +2488,6 @@
       "required": [
         "mainText",
         "secondText",
-        "labelFirstButton",
-        "hrefFirstButton",
         "labelSecondButton",
         "hrefSecondButton",
         "blurBackground",
