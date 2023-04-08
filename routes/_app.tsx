@@ -1,6 +1,6 @@
 import { AppProps } from "$fresh/server.ts";
 import { context } from "$live/live.ts";
-import GoogleTagManager from "partytown/integrations/GoogleTagManager.tsx";
+import GoogleTagManager from "partytown/integrations/GTM.tsx";
 
 const trackingId = "";
 
