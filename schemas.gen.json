@@ -2586,7 +2586,7 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Differentials.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGYXEudHN4@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZhcS50c3g=@Props": {
       "type": "object",
       "properties": {
         "questions": {
@@ -2614,7 +2614,7 @@
       "required": [
         "questions"
       ],
-      "title": "deco-sites/starting\\sections\\Faq.tsx@Props"
+      "title": "deco-sites/starting\\components\\ui\\Faq.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Card": {
       "type": "object",
@@ -4431,7 +4431,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGYXEudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZhcS50c3g=@Props"
         }
       ],
       "required": [
