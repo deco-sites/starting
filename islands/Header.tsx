@@ -14,7 +14,7 @@ export interface Props {
 export default function Header(props: Props) {
 const [open, setOpen] = useState(false);
 return (
-    <section class="bg-[#0A2121] fixed z-50 w-full">
+    <section class="bg-[#0A2121] fixed top-0 z-50 w-full">
     <nav class="flex flex-row justify-between items-center h-[63px] pb-[4px] max-w-screen-2xl m-auto">
     <div class="md:hidden w-[100vw] h-[4px] fixed top-[60px] transition ease-in-out duration-300 left-0" style="background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,255,128,1) 100%);"></div>
         <ul class="h-full">
