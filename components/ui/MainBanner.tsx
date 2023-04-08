@@ -4,10 +4,19 @@ import Image from "deco-sites/std/components/Image.tsx"
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
+  switcherButton1:{
+    name: string,
+    href: string
+  }
+  switcherButton2:{
+    name: string,
+    href: string
+  }
   /** @description Ativar thema dark para esta página */
   themeDark: boolean
   mainText: string
   descriptionText: string;
+  activePercentualCarrosel?: boolean
   buttonCta1: {
     buttonName: string
     href: string
@@ -29,17 +38,30 @@ export interface bannerProps{
   altBannerBottomImage: string,
 }
 
-export default function MainBanner({themeDark, mainText, descriptionText, buttonCta1, buttonCta2, miniBanner}: Props) {
+export default function MainBanner({switcherButton1, switcherButton2, themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner}: Props) {
 
   const themeIsLigth = !themeDark
 
   return (
-    <div class="flex flex-col bg-[#F3FFF9] mb-10 md:mb-0">
+    <div class={(themeIsLigth ? " bg-[#F3FFF9]":"bg-dark-green-gradient") +" "+ "flex flex-col mb-0"}>
       <div class="max-w-screen-2xl m-auto">
         <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem])">
-          <h1 class="flex flex-row justify-start items-end font-sans font-bold not-italic text-dark-green text-[56px] leading-[3rem] md:( flex-row text-[92px] leading-[6rem] items-start )">
-              <span class="w-[100%] lg:(w-[70%])">{mainText}</span>
-              <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[80px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
+          
+          <div id="switcehr-page" class={(themeIsLigth ? "bg-[#CDE5D9]" : "bg-primary-dark" ) + " " + "w-full flex p-2 gap-2  rounded-full border-2 border-white border-opacity-5 mb-10 lg:(w-1/3)"}>
+
+            <a class={(themeIsLigth ? "bg-dark-green text-[#f3fff9ca]" : "bg-primary-dark text-[#f3fff9ca]" ) + " " + "w-1/2 flex justify-center items-center rounded-full p-[14px] hover:shadow-button-hover-shadow transition-all duration-500" } href={switcherButton1?.href}>
+              {switcherButton1?.name}
+            </a>
+            
+            <a class={(themeIsLigth ? "bg-[#CDE5D9] text-dark-green" : "bg-white text-dark-green border-2 border-dark-green") + " " + "w-1/2 flex justify-center items-center rounded-full p-[14px]shadow-button-shadow hover:shadow-button-hover-shadow transition-all duration-500" } href={switcherButton2?.href}>
+              {switcherButton2?.name}
+            </a>
+          </div>
+
+          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3rem] md:( flex-row text-[7.76vw] leading-[6rem] items-start)"}>
+              <span class="w-full">{mainText}</span>
+              {
+                activePercentualCarrosel ? <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[92px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
                 <span style="color: #2FD180" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText30">30%</span>
@@ -47,12 +69,13 @@ export default function MainBanner({themeDark, mainText, descriptionText, button
                 <span style="color: #2FD180" class="absolute animate-switcherText50">50%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText60">60%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText70">70%</span>
-              </span>
+              </span> : null
+              }
         </h1>
         </div>
         <div class="flex p-4 flex-col gap-20 justify-center items-center lg:(flex-row p-8)">
         <div class="flex flex-col gap-[2rem] lg:(w-[46%] items-center)">
-          <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[2rem]">
+          <p class={(themeIsLigth ? "text-frame-515-rgba" : "text-[#f3fff9b0]") +" "+ "font-sans font-normal not-italic text-[32px] leading-[2rem]"}>
           {descriptionText}
           </p>
           <div id="buttons-wrapper" class="w-full flex flex-col gap-4">
@@ -75,9 +98,9 @@ export default function MainBanner({themeDark, mainText, descriptionText, button
           </div>
         </div>
         
-        <div class="w-[91vw] h-80 flex flex-col relative -left-[20px] overflow-hidden bg-dark-green rounded-r-full lg:(w-[80%] h-[300px] flex-row) group">
-            <div class="flex justify-start items-center font-inter font-medium text-white lg:justify-center ">
-              <h3 class="w-[80%] p-6 pt-8 text-[24px] lg:(w-full px-10 text-[32px])">{miniBanner?.titleText}</h3>
+        <div class={(themeIsLigth ? "bg-dark-green text-white" : "bg-primary text-dark-green") +" "+ "w-[91vw] h-80 flex flex-col relative -left-[20px] overflow-hidden rounded-r-full lg:(w-[80%] h-[300px] flex-row) group font-inter"}>
+            <div class="flex justify-start items-center lg:justify-center">
+              <h3 class="w-[80%] p-6 pt-8 text-[24px] font-medium leading-9 lg:(w-full px-10 text-[32px])">{miniBanner?.titleText}</h3>
             </div>
             <div class="w-full relative rounded-r-full lg:(w-1/2)">
 
@@ -93,7 +116,7 @@ export default function MainBanner({themeDark, mainText, descriptionText, button
                   decoding="sync"
                 />
                 <div class="absolute -bottom-4 -right-14 lg:(-bottom-16 -right-24) ">
-                  <span class="w-[80px] block relative top-[65px] right-16 text-right text-white leading-4 font-normal text-[12px] lg:top-[108px]">{miniBanner?.linkedText}</span>
+                  <span class="w-[80px] block relative top-[65px] right-16 text-right leading-4 font-normal text-[12px] lg:top-[108px]">{miniBanner?.linkedText}</span>
                   <Image 
                     src={miniBanner?.bannerBottomImage}
                     class="max-w-[500px] lg:(w-[476px])"
