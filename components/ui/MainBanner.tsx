@@ -36,10 +36,10 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
   return (
     <div class="flex flex-col bg-[#F3FFF9] mb-10 md:mb-0">
       <div class="max-w-screen-2xl m-auto">
-        <div class="px-8 pt-[8rem] md:px-[2rem] md:pt-[11rem]">
+        <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem])">
           <h1 class="flex flex-row justify-start items-end font-sans font-bold not-italic text-dark-green text-[56px] leading-[3rem] md:( flex-row text-[92px] leading-[6rem] items-start )">
               <span class="w-[100%] lg:(w-[70%])">{mainText}</span>
-              <span class="overflow-y-hidden  -left-[40px] top-[20px] w-[21%] h-[80px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
+              <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[80px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
                 <span style="color: #2FD180" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText30">30%</span>
@@ -50,8 +50,8 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
               </span>
         </h1>
         </div>
-        <div class="flex p-8 flex-col gap-12 justify-center items-center lg:(flex-row)">
-        <div class="flex flex-col gap-[2rem] lg:(w-1/2 items-center)">
+        <div class="flex p-4 flex-col gap-20 justify-center items-center lg:(flex-row p-8)">
+        <div class="flex flex-col gap-[2rem] lg:(w-[46%] items-center)">
           <p class="font-sans font-normal not-italic text-frame-515-rgba text-[32px] leading-[2rem]">
           {descriptionText}
           </p>
