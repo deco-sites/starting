@@ -21,8 +21,6 @@ export interface Props {
 
 export interface bannerProps{
   titleText:string,
-  imgLogoSrc: LiveImage,
-  imgLogoAlt: string,
   bannerTopImage: LiveImage,
   altBannerTopImage: string,
   bannerBottomImage: LiveImage,
@@ -39,7 +37,7 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
         <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem])">
           <h1 class="flex flex-row justify-start items-end font-sans font-bold not-italic text-dark-green text-[56px] leading-[3rem] md:( flex-row text-[92px] leading-[6rem] items-start )">
               <span class="w-[100%] lg:(w-[70%])">{mainText}</span>
-              <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[80px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
+              <span class="overflow-y-hidden  -left-[40px] top-[20px] w-[30%] h-[80px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
                 <span style="color: #2FD180" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText30">30%</span>
@@ -67,21 +65,26 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
           </div>
         </div>
         
-        <div class="w-[91vw] h-80 flex relative -left-[20px] bg-dark-green rounded-r-full lg:(w-[80%] h-[300px]) ">
+        <div class="w-[91vw] h-80 flex flex-col relative -left-[20px] overflow-hidden bg-dark-green rounded-r-full lg:(w-[80%] h-[300px] flex-row) group">
             <div>{miniBanner?.titleText}</div>
-            <div class="w-full relative">
-              <Image 
-                src={miniBanner?.imgLogoSrc}
-                width={450}
-                alt={miniBanner?.imgLogoAlt}
-                title={miniBanner?.imgLogoAlt}
-              />
-              <Image 
-                src={miniBanner?.imgLogoSrc}
-                width={450}
-                alt={miniBanner?.imgLogoAlt}
-                title={miniBanner?.imgLogoAlt}
-              />
+            <div class="w-full relative flex h-80 justify-end items-center rounded-r-full">
+
+              <div id="mini-banners-art-montage">
+                <Image 
+                  src={miniBanner?.bannerTopImage}
+                  class="w-[200px] max-w-[600px] relative -bottom-12 lg:(w-[597px] -bottom-6 left-56 group-hover:bottom-3  duration-300 ease-in) z-10"
+                  width={250}
+                  alt={miniBanner?.altBannerTopImage}
+                  title={miniBanner?.altBannerTopImage}
+                />
+                <Image 
+                  src={miniBanner?.bannerBottomImage}
+                  class="w-[200px] max-w-[500px] absolute bottom-0 lg:(w-[476px] -bottom-16 -right-24)"
+                  width={250}
+                  alt={miniBanner?.altBannerBottomImage}
+                  title={miniBanner?.altBannerBottomImage}
+                />
+              </div>  
             </div>
           </div>
           </div>
