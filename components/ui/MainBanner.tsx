@@ -4,7 +4,8 @@ import Image from "deco-sites/std/components/Image.tsx"
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
-  theme: 'ligth' | 'dark'
+  /** @description Ativar thema dark para esta página */
+  themeDark: boolean
   mainText: string
   descriptionText: string;
   buttonCta1: {
@@ -21,15 +22,16 @@ export interface Props {
 
 export interface bannerProps{
   titleText:string,
+  linkedText: string,
   bannerTopImage: LiveImage,
   altBannerTopImage: string,
   bannerBottomImage: LiveImage,
   altBannerBottomImage: string,
 }
 
-export default function MainBanner({theme, mainText, descriptionText, buttonCta1, buttonCta2, miniBanner}: Props) {
+export default function MainBanner({themeDark, mainText, descriptionText, buttonCta1, buttonCta2, miniBanner}: Props) {
 
-  const themeIsLigth = theme === 'ligth' ? true : false
+  const themeIsLigth = !themeDark
 
   return (
     <div class="flex flex-col bg-[#F3FFF9] mb-10 md:mb-0">
@@ -37,7 +39,7 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
         <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem])">
           <h1 class="flex flex-row justify-start items-end font-sans font-bold not-italic text-dark-green text-[56px] leading-[3rem] md:( flex-row text-[92px] leading-[6rem] items-start )">
               <span class="w-[100%] lg:(w-[70%])">{mainText}</span>
-              <span class="overflow-y-hidden  -left-[40px] top-[20px] w-[30%] h-[80px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
+              <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[80px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
                 <span style="color: #2FD180" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText30">30%</span>
@@ -74,26 +76,37 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
         </div>
         
         <div class="w-[91vw] h-80 flex flex-col relative -left-[20px] overflow-hidden bg-dark-green rounded-r-full lg:(w-[80%] h-[300px] flex-row) group">
-            <div class="font-inter font-medium text-2xl text-white">
-              {miniBanner?.titleText}
+            <div class="flex justify-start items-center font-inter font-medium text-white lg:justify-center ">
+              <h3 class="w-[80%] p-6 pt-8 text-[24px] lg:(w-full px-10 text-[32px])">{miniBanner?.titleText}</h3>
             </div>
-            <div class="w-full relative flex h-80 justify-end items-center rounded-r-full">
+            <div class="w-full relative rounded-r-full lg:(w-1/2)">
 
-              <div id="mini-banners-art-montage">
+              <div id="mini-banners-art-montage" class="w-full flex justify-end items-center">
                 <Image 
                   src={miniBanner?.bannerTopImage}
-                  class="w-[200px] max-w-[600px] relative -bottom-12 lg:(w-[597px] -bottom-6 left-56 group-hover:bottom-3  duration-300 ease-in) z-10"
-                  width={250}
+                  class="max-w-[600px] relative bottom-8 left-24 lg:(w-[597px] -bottom-6 left-56 group-hover:bottom-3  duration-300 ease-in) z-10"
+                  width={350}
                   alt={miniBanner?.altBannerTopImage}
                   title={miniBanner?.altBannerTopImage}
+                  preload
+                  loading="eager"
+                  decoding="sync"
                 />
-                <Image 
-                  src={miniBanner?.bannerBottomImage}
-                  class="w-[200px] max-w-[500px] absolute bottom-0 lg:(w-[476px] -bottom-16 -right-24)"
-                  width={250}
-                  alt={miniBanner?.altBannerBottomImage}
-                  title={miniBanner?.altBannerBottomImage}
-                />
+                <div class="absolute -bottom-4 -right-14 lg:(-bottom-16 -right-24) ">
+                  <span class="w-[80px] block relative top-[65px] right-16 text-right text-white leading-4 font-normal text-[12px] lg:top-[108px]">{miniBanner?.linkedText}</span>
+                  <Image 
+                    src={miniBanner?.bannerBottomImage}
+                    class="max-w-[500px] lg:(w-[476px])"
+                    width={300}
+                    alt={miniBanner?.altBannerBottomImage}
+                    title={miniBanner?.altBannerBottomImage}
+                    preload
+                    loading="eager"
+                    decoding="sync"
+                  />
+                 
+                </div>
+                
               </div>  
             </div>
           </div>
