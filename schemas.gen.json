@@ -3617,6 +3617,95 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Partner.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "price": {
+          "type": "string",
+          "title": "Price"
+        },
+        "priceCustom": {
+          "type": "boolean",
+          "title": "Price Custom"
+        },
+        "button": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "title": "Text"
+            },
+            "link": {
+              "type": "string",
+              "title": "Link"
+            }
+          },
+          "required": [
+            "text",
+            "link"
+          ],
+          "title": "Button"
+        },
+        "benefits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Benefits"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "price",
+        "priceCustom",
+        "button",
+        "benefits"
+      ],
+      "title": "Plan"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan"
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "freePlan": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan",
+          "title": "Free Plan"
+        },
+        "paidPlans": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan[]",
+          "title": "Paid Plans"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "freePlan",
+        "paidPlans"
+      ],
+      "title": "deco-sites/starting\\components\\ui\\Pricing.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy9RdWlsbFRleHQudHN4@Props": {
       "type": "object",
       "properties": {
@@ -4967,6 +5056,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QcmljaW5nLnRzeA==": {
+      "title": "deco-sites/starting/sections/Pricing.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/Pricing.tsx"
+          ],
+          "default": "deco-sites/starting/sections/Pricing.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9RdWlsbFRleHQudHN4": {
       "title": "deco-sites/starting/sections/QuillText.tsx",
       "type": "object",
@@ -5623,6 +5733,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QYXJ0bmVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QcmljaW5nLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9RdWlsbFRleHQudHN4"
