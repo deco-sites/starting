@@ -14,7 +14,7 @@ export interface Props {
   
 export default function Features({title, cards}: Props) {
 return (
-    <section class="bg-dark-green lg:h-[100vh] flex justify-center items-center flex-col">
+    <section class="bg-dark-green py-[104px] flex justify-center items-center flex-col">
         <h2 class="text-[#F3FFF9] text-[32px] lg:text-[48px] max-w-[856px] text-center pt-[40px] gap-16 md:gap-32 px-6 md:px-[5rem] max-w-screen-2xl mx-auto">{title}</h2>
         <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-3 px-6 pt-[40px] md:pt-20 pb-[40px] md:pb-24 md:px-[2rem] max-w-screen-2xl mx-auto">
             {cards?.map(card => (
