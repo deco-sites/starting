@@ -27,6 +27,7 @@ import * as $$$$$$$$13 from "./sections/MainBanner.tsx";
 import * as $$$$$$$$14 from "./sections/Markdown.tsx";
 import * as $$$$$$$$15 from "./sections/Partner.tsx";
 import * as $$$$$$$$16 from "./sections/QuillText.tsx";
+import * as $$$$$$$$17 from "./sections/TripletBanner.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -135,6 +136,7 @@ const manifest: DecoManifest = {
     "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$14,
     "deco-sites/starting/sections/Partner.tsx": $$$$$$$$15,
     "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$16,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$17,
     "$live/sections/PageInclude.tsx": i2$$$9,
     "deco-sites/std/sections/configYourViews.global.tsx": i2$$$0,
     "deco-sites/std/sections/SEO.tsx": i2$$$1,
