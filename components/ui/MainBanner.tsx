@@ -49,16 +49,16 @@ export default function MainBanner({switcherButton1, switcherButton2, themeDark,
           
           <div id="switcehr-page" class={(themeIsLigth ? "bg-[#CDE5D9]" : "bg-primary-dark" ) + " " + "w-full flex p-2 gap-2  rounded-full border-2 border-white border-opacity-5 mb-10 lg:(w-1/3)"}>
 
-            <a class={(themeIsLigth ? "bg-dark-green text-[#f3fff9ca]" : "bg-primary-dark text-[#f3fff9ca]" ) + " " + "w-1/2 flex justify-center items-center rounded-full p-[14px] hover:shadow-button-hover-shadow transition-all duration-500" } href={switcherButton1?.href}>
+            <a class={(themeIsLigth ? "bg-dark-green text-[#f3fff9ca]" : "bg-primary-dark text-[#f3fff9ca]" ) + " " + "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px]  hover:shadow-button-hover-shadow transition-all duration-500" } href={switcherButton1?.href}>
               {switcherButton1?.name}
             </a>
             
-            <a class={(themeIsLigth ? "bg-[#CDE5D9] text-dark-green" : "bg-white text-dark-green border-2 border-dark-green") + " " + "w-1/2 flex justify-center items-center rounded-full p-[14px]shadow-button-shadow hover:shadow-button-hover-shadow transition-all duration-500" } href={switcherButton2?.href}>
+            <a class={(themeIsLigth ? "bg-[#CDE5D9] text-dark-green" : "bg-white text-dark-green border-2 border-dark-green") + " " + "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px] shadow-button-shadow hover:shadow-button-hover-shadow transition-all duration-500" } href={switcherButton2?.href}>
               {switcherButton2?.name}
             </a>
           </div>
 
-          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3rem] md:( flex-row text-[7.76vw] leading-[6rem] items-start)"}>
+          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3.5rem] md:( flex-row text-[7.76vw] leading-[8rem] items-start)"}>
               <span class="w-full">{mainText}</span>
               {
                 activePercentualCarrosel ? <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[92px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
