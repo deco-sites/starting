@@ -17,7 +17,7 @@ export interface Props {
 export default function Community({lazyload, blurBackground, peopleImage, mainText, secondText, labelFirstButton, hrefFirstButton, labelSecondButton, hrefSecondButton}: Props) {
   return (
     <section class="flex flex-col items-center justify-center lg:(flex-row-reverse gap-[75px]) bg-white py-[63px] px-6 md:px-[2rem] max-w-screen-2xl mx-auto">
-      <div class="relative lg:w-[50%]">
+      <div class="relative lg:w-[50%] min-h-[360px]">
         <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="relative w-full" width={581} height={581} src={blurBackground}/>
         <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="absolute w-full top-0" width={537} height={497} src={peopleImage}/>
       </div>
