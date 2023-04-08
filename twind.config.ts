@@ -16,7 +16,7 @@ export default {
       'display':'none'
     },
     'details[open] summary svg': {
-      'transform': 'rotate(180deg)'
+      'transform': 'rotate(90deg)'
     },
     '.hidden-scroll::-webkit-scrollbar': {
       display: 'none',

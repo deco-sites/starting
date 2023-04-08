@@ -2491,7 +2491,7 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Community.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xEZWxpZ2h0LnRzeA==@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlbGlnaHQudHN4@Props": {
       "type": "object",
       "properties": {
         "mainText": {
@@ -2512,7 +2512,7 @@
         "buttonText",
         "href"
       ],
-      "title": "deco-sites/starting\\sections\\Delight.tsx@Props"
+      "title": "deco-sites/starting\\components\\ui\\Delight.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Sections": {
       "type": "object",
@@ -2780,6 +2780,10 @@
             {
               "type": "string",
               "const": "GreenArrow"
+            },
+            {
+              "type": "string",
+              "const": "Sale"
             }
           ],
           "type": "string",
@@ -4373,7 +4377,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xEZWxpZ2h0LnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlbGlnaHQudHN4@Props"
         }
       ],
       "required": [
