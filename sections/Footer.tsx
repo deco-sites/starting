@@ -18,7 +18,7 @@ export interface Props {
   }
 }
 
-function SubMenu({menu}){
+function SubMenu({ menu } : {menu: Menu[]}){
   return(
     <div class="flex flex-col md:flex-row gap-4 md:gap-[120px]">
       {
