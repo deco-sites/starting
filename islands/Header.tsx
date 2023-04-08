@@ -42,7 +42,7 @@ return (
                 class="absolute w-full h-[4px] bg-transparent bottom-[-4px] z-20 bg-position-100 transition-colors ease-in duration-300 group-hover:bg-linear-transp-green-transp"
                 >
                 </div>
-                <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 group-hover:background-[rgba(0,0,0,0)]" style="background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,255,128,1) 100%);"></div>
+                <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 group-hover:bg-[rgba(0,0,0,0)]" style="background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,255,128,1) 100%);"></div>
                 <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 z-10 group-hover:bg-[#0A2121]"></div>
             </li>
             )
