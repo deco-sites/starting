@@ -1,4 +1,4 @@
-import Icon from "$start/components/ui/Icon.tsx";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 import Image from "deco-sites/std/components/Image.tsx"
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
@@ -67,7 +67,7 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
           </div>
         </div>
         
-        <div class="w-screen h-80 lg:(w-[80%] h-[300px]) flex relative -left-[33px] bg-dark-green rounded-r-full">
+        <div class="w-[350px] h-80 lg:(w-[80%] h-[300px]) flex relative -left-[33px] bg-dark-green rounded-r-full">
             <div>{miniBanner?.titleText}</div>
             <div class="w-full relative">
               <Image 
