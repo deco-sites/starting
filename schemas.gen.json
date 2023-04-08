@@ -3443,6 +3443,42 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@Props": {
       "type": "object",
       "properties": {
+        "switcherButton1": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "name",
+            "href"
+          ],
+          "title": "Switcher Button1"
+        },
+        "switcherButton2": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "name",
+            "href"
+          ],
+          "title": "Switcher Button2"
+        },
         "themeDark": {
           "type": "boolean",
           "title": "Theme Dark",
@@ -3455,6 +3491,13 @@
         "descriptionText": {
           "type": "string",
           "title": "Description Text"
+        },
+        "activePercentualCarrosel": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Active Percentual Carrosel"
         },
         "buttonCta1": {
           "type": "object",
@@ -3498,6 +3541,8 @@
         }
       },
       "required": [
+        "switcherButton1",
+        "switcherButton2",
         "themeDark",
         "mainText",
         "descriptionText",

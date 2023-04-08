@@ -41,11 +41,15 @@ export default {
           "linear-gradient(90deg,  rgba(255,255,255,0) 0%, rgba(47,209,128,0.8) 49%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%)",
         "linear-transp-green-transp":
           "radial-gradient(circle, rgba(0,255,128,1) 0%, rgba(0,255,128,0) 100%)",
-        "linear": "linear-gradient(180deg, #053535 0%, #0A2121 100%);"
+        "linear": "linear-gradient(180deg, #053535 0%, #0A2121 100%);",
+        "dark-green-gradient": 
+          "linear-gradient(180deg, #0A2121 0%, #053535 100%);",
       },
       boxShadow: {
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",
-        "footer-shadow": "0px -6px 8px rgba(255, 255, 255, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.5)"
+        "footer-shadow": "0px -6px 8px rgba(255, 255, 255, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.5)",
+        "button-shadow": "0px 0px 4px rgba(0, 0, 0, 0.35)",
+        "button-hover-shadow": "-2px -2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.2)",
       },
       transitionProperty: {
         "height": "height",
