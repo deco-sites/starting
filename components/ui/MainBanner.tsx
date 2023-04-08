@@ -67,7 +67,7 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
           </div>
         </div>
         
-        <div class="w-[350px] h-80 lg:(w-[80%] h-[300px]) flex relative -left-[33px] bg-dark-green rounded-r-full">
+        <div class="w-[91vw] h-80 flex relative -left-[20px] bg-dark-green rounded-r-full lg:(w-[80%] h-[300px]) ">
             <div>{miniBanner?.titleText}</div>
             <div class="w-full relative">
               <Image 
