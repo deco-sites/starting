@@ -42,7 +42,11 @@ export type AvailableIcons =
   | "Check"
   | "WhiteArrow"
   | "GreenArrow"
-  | "Sale";
+  | "Sale"
+  | "Book"
+  | "Bag"
+  | "Cash"
+  | "Support";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
