@@ -43,7 +43,7 @@ export default function MainBanner({switcherButton1, switcherButton2, themeDark,
   const themeIsLigth = !themeDark
 
   return (
-    <div class={(themeIsLigth ? " bg-[#F3FFF9]":"bg-dark-green-gradient") +" "+ "flex flex-col mb-0"}>
+    <div class={(themeIsLigth ? " bg-[#F3FFF9]":"bg-dark-green-gradient") +" "+ "flex flex-col mb-0 pb-[5rem]"}>
       <div class="max-w-screen-2xl m-auto">
         <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem])">
           
