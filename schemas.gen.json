@@ -2350,6 +2350,235 @@
       ],
       "title": "deco-sites/starting\\sections\\About.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJlbmVmaXRzLnRzeA==@Card": {
+      "type": "object",
+      "properties": {
+        "icon": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ChevronLeft"
+            },
+            {
+              "type": "string",
+              "const": "ChevronRight"
+            },
+            {
+              "type": "string",
+              "const": "ChevronUp"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "QuestionMarkCircle"
+            },
+            {
+              "type": "string",
+              "const": "User"
+            },
+            {
+              "type": "string",
+              "const": "ShoppingCart"
+            },
+            {
+              "type": "string",
+              "const": "Bars3"
+            },
+            {
+              "type": "string",
+              "const": "Heart"
+            },
+            {
+              "type": "string",
+              "const": "MagnifyingGlass"
+            },
+            {
+              "type": "string",
+              "const": "XMark"
+            },
+            {
+              "type": "string",
+              "const": "Plus"
+            },
+            {
+              "type": "string",
+              "const": "Minus"
+            },
+            {
+              "type": "string",
+              "const": "MapPin"
+            },
+            {
+              "type": "string",
+              "const": "Phone"
+            },
+            {
+              "type": "string",
+              "const": "Elo"
+            },
+            {
+              "type": "string",
+              "const": "Mastercard"
+            },
+            {
+              "type": "string",
+              "const": "Visa"
+            },
+            {
+              "type": "string",
+              "const": "Pix"
+            },
+            {
+              "type": "string",
+              "const": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok"
+            },
+            {
+              "type": "string",
+              "const": "Truck"
+            },
+            {
+              "type": "string",
+              "const": "Discount"
+            },
+            {
+              "type": "string",
+              "const": "Return"
+            },
+            {
+              "type": "string",
+              "const": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Deco"
+            },
+            {
+              "type": "string",
+              "const": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "Trash"
+            },
+            {
+              "type": "string",
+              "const": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "logoVnda"
+            },
+            {
+              "type": "string",
+              "const": "IconCart"
+            },
+            {
+              "type": "string",
+              "const": "PigMoney"
+            },
+            {
+              "type": "string",
+              "const": "FastClock"
+            },
+            {
+              "type": "string",
+              "const": "FastPagespeed"
+            },
+            {
+              "type": "string",
+              "const": "Check"
+            },
+            {
+              "type": "string",
+              "const": "WhiteArrow"
+            },
+            {
+              "type": "string",
+              "const": "GreenArrow"
+            },
+            {
+              "type": "string",
+              "const": "Sale"
+            },
+            {
+              "type": "string",
+              "const": "Book"
+            },
+            {
+              "type": "string",
+              "const": "Bag"
+            },
+            {
+              "type": "string",
+              "const": "Cash"
+            },
+            {
+              "type": "string",
+              "const": "Support"
+            }
+          ],
+          "type": "string",
+          "title": "Icon"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "icon",
+        "title",
+        "text",
+        "href"
+      ],
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJlbmVmaXRzLnRzeA==@Card[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJlbmVmaXRzLnRzeA==@Card"
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJlbmVmaXRzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "cards": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJlbmVmaXRzLnRzeA==@Card[]",
+          "title": "Cards"
+        }
+      },
+      "required": [
+        "cards"
+      ],
+      "title": "deco-sites/starting\\components\\ui\\Benefits.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xDYXJvdXNlbC50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -2788,6 +3017,22 @@
             {
               "type": "string",
               "const": "Sale"
+            },
+            {
+              "type": "string",
+              "const": "Book"
+            },
+            {
+              "type": "string",
+              "const": "Bag"
+            },
+            {
+              "type": "string",
+              "const": "Cash"
+            },
+            {
+              "type": "string",
+              "const": "Support"
             }
           ],
           "type": "string",
@@ -4346,6 +4591,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9CZW5lZml0cy50c3g=": {
+      "title": "deco-sites/starting/sections/Benefits.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJlbmVmaXRzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/Benefits.tsx"
+          ],
+          "default": "deco-sites/starting/sections/Benefits.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYXJvdXNlbC50c3g=": {
       "title": "deco-sites/starting/sections/Carousel.tsx",
       "type": "object",
@@ -5264,6 +5530,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9BYm91dC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9CZW5lZml0cy50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYXJvdXNlbC50c3g="
