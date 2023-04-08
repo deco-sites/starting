@@ -20,6 +20,7 @@ export interface Props {
 }
 
 export interface bannerProps{
+  titleText:string,
   imgLogoSrc: LiveImage,
   imgLogoAlt: string,
   bannerTopImage: LiveImage,
@@ -67,7 +68,7 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
         </div>
         
         <div class="w-screen h-80 lg:(w-[80%] h-[300px]) flex relative -left-[33px] bg-dark-green rounded-r-full">
-            <div>A headless frontend solution, integrated with any platform</div>
+            <div>{miniBanner?.titleText}</div>
             <div class="w-full relative">
               <Image 
                 src={miniBanner?.imgLogoSrc}
