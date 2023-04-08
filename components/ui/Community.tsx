@@ -11,14 +11,15 @@ export interface Props {
   hrefSecondButton: string;
   blurBackground: LiveImage;
   peopleImage: LiveImage;
+  lazyload?: false | true;
 }
 
-export default function Community({blurBackground, peopleImage, mainText, secondText, labelFirstButton, hrefFirstButton, labelSecondButton, hrefSecondButton}: Props) {
+export default function Community({lazyload, blurBackground, peopleImage, mainText, secondText, labelFirstButton, hrefFirstButton, labelSecondButton, hrefSecondButton}: Props) {
   return (
     <section class="flex flex-col items-center justify-center lg:(flex-row-reverse gap-[75px]) bg-white py-[63px] px-6 md:px-[2rem] max-w-screen-2xl mx-auto">
       <div class="relative lg:w-[50%]">
-        <Image class="relative w-full" width={581} height={581} src={blurBackground}/>
-        <Image class="absolute w-full top-0" width={537} height={497} src={peopleImage}/>
+        <Image loading={lazyload ? 'lazy' : 'eager'} class="relative w-full" width={581} height={581} src={blurBackground}/>
+        <Image loading={lazyload ? 'lazy' : 'eager'} class="absolute w-full top-0" width={537} height={497} src={peopleImage}/>
       </div>
       <div class="flex flex-col lg:w-[50%] gap-[24px] mt-[40px]">
         <h2 class="text-[56px] lg:(order-1 text-[70px] leading-[81px]) xl:text-[80px] text-[#1F261F] font-bold leading-[54px]">{mainText}</h2>

@@ -2579,7 +2579,7 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Benefits.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xDYXJvdXNlbC50c3g=@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENhcm91c2VsLnRzeA==@Props": {
       "type": "object",
       "properties": {
         "cards": {
@@ -2622,7 +2622,7 @@
       "required": [
         "cards"
       ],
-      "title": "deco-sites/starting\\sections\\Carousel.tsx@Props"
+      "title": "deco-sites/starting\\components\\ui\\Carousel.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xDbXMudHN4@Props": {
       "type": "object",
@@ -2712,6 +2712,20 @@
         "peopleImage": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "People Image"
+        },
+        "lazyload": {
+          "anyOf": [
+            {
+              "type": "boolean",
+              "const": false
+            },
+            {
+              "type": "boolean",
+              "const": true
+            }
+          ],
+          "type": "boolean",
+          "title": "Lazyload"
         }
       },
       "required": [
@@ -4617,7 +4631,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xDYXJvdXNlbC50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENhcm91c2VsLnRzeA==@Props"
         }
       ],
       "required": [
