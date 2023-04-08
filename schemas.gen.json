@@ -1207,6 +1207,49 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Integrations.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@bannerProps": {
+      "type": "object",
+      "properties": {
+        "titleText": {
+          "type": "string",
+          "title": "Title Text"
+        },
+        "imgLogoSrc": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Img Logo Src"
+        },
+        "imgLogoAlt": {
+          "type": "string",
+          "title": "Img Logo Alt"
+        },
+        "bannerTopImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Banner Top Image"
+        },
+        "altBannerTopImage": {
+          "type": "string",
+          "title": "Alt Banner Top Image"
+        },
+        "bannerBottomImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Banner Bottom Image"
+        },
+        "altBannerBottomImage": {
+          "type": "string",
+          "title": "Alt Banner Bottom Image"
+        }
+      },
+      "required": [
+        "titleText",
+        "imgLogoSrc",
+        "imgLogoAlt",
+        "bannerTopImage",
+        "altBannerTopImage",
+        "bannerBottomImage",
+        "altBannerBottomImage"
+      ],
+      "title": "bannerProps"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@Props": {
       "type": "object",
       "properties": {
@@ -1268,13 +1311,9 @@
           ],
           "title": "Button Cta2"
         },
-        "blackBlock": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML",
-          "title": "Black Block"
-        },
-        "greenBlock": {
-          "type": "string",
-          "title": "Green Block"
+        "miniBanner": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@bannerProps",
+          "title": "Mini Banner"
         }
       },
       "required": [
@@ -1283,8 +1322,7 @@
         "descriptionText",
         "buttonCta1",
         "buttonCta2",
-        "blackBlock",
-        "greenBlock"
+        "miniBanner"
       ],
       "title": "deco-sites/starting\\components\\ui\\MainBanner.tsx@Props"
     },
