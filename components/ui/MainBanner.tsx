@@ -58,7 +58,7 @@ export default function MainBanner({switcherButton1, switcherButton2, themeDark,
             </a>
           </div>
 
-          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3rem] md:( flex-row text-[112px] leading-[6rem] items-start)"}>
+          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3rem] md:( flex-row text-[7.76vw] leading-[6rem] items-start)"}>
               <span class="w-full">{mainText}</span>
               {
                 activePercentualCarrosel ? <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[92px] flex justify-start items-center relative text-center lg:(left-0 top-0 w-[20%])">
