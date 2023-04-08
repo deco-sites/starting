@@ -56,14 +56,17 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
           <div id="buttons-wrapper" class="w-full flex flex-col gap-4">
             <button class={(themeIsLigth ? "bg-dark-green" : "bg-white" ) + " " + "w-full group flex lg:justify-start justify-center items-center gap-[10px] rounded p-[14px] border-1 border-dark-green" }>
  
-              <a class={themeIsLigth ? "text-white" : "text-dark-green" + " " + "text-[16px] font-medium"} href=        {buttonCta1?.href}>{buttonCta1?.buttonName}
-              </a>  
-
+              <a class={themeIsLigth ? "text-white" : "text-dark-green" + " " + "text-[16px] font-medium"} href=        {buttonCta1?.href}>
+                {buttonCta1?.buttonName}
+              </a>
               <Icon class="hidden transition lg:group-hover:block" id={ themeIsLigth ? "WhiteArrow" : "GreenArrow" } width={15} height={15} strokeWidth={"1"}/>
             </button>
 
             <button class={(themeIsLigth ? "bg-white" : "bg-dark-green") + " "+ "w-full group flex lg:justify-start justify-center items-center gap-[10px] rounded p-[14px] border-1 border-dark-green" }>
-              <a class={(themeIsLigth ? "text-dark-green" : "text-white") + " " + "text-[16px] font-medium"} href={buttonCta2?.href}>{buttonCta2?.buttonName}</a>
+
+              <a class={(themeIsLigth ? "text-dark-green" : "text-white") + " " + "text-[16px] font-medium"} href={buttonCta2?.href}>
+                {buttonCta2?.buttonName}
+              </a>
               <Icon class="hidden transition lg:group-hover:block" id={ themeIsLigth ? "GreenArrow" : "WhiteArrow" } width={15} height={15} strokeWidth={"1"} />
             </button>
 
@@ -71,7 +74,9 @@ export default function MainBanner({theme, mainText, descriptionText, buttonCta1
         </div>
         
         <div class="w-[91vw] h-80 flex flex-col relative -left-[20px] overflow-hidden bg-dark-green rounded-r-full lg:(w-[80%] h-[300px] flex-row) group">
-            <div>{miniBanner?.titleText}</div>
+            <div class="font-inter font-medium text-2xl text-white">
+              {miniBanner?.titleText}
+            </div>
             <div class="w-full relative flex h-80 justify-end items-center rounded-r-full">
 
               <div id="mini-banners-art-montage">
