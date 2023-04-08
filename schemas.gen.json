@@ -1214,14 +1214,6 @@
           "type": "string",
           "title": "Title Text"
         },
-        "imgLogoSrc": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Img Logo Src"
-        },
-        "imgLogoAlt": {
-          "type": "string",
-          "title": "Img Logo Alt"
-        },
         "bannerTopImage": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Banner Top Image"
@@ -1241,8 +1233,6 @@
       },
       "required": [
         "titleText",
-        "imgLogoSrc",
-        "imgLogoAlt",
         "bannerTopImage",
         "altBannerTopImage",
         "bannerBottomImage",
