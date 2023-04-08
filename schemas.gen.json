@@ -2586,7 +2586,7 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Differentials.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGYXEudHN4@Props": {
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZhcS50c3g=@Props": {
       "type": "object",
       "properties": {
         "questions": {
@@ -2614,7 +2614,7 @@
       "required": [
         "questions"
       ],
-      "title": "deco-sites/starting\\sections\\Faq.tsx@Props"
+      "title": "deco-sites/starting\\components\\ui\\Faq.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Card": {
       "type": "object",
@@ -3160,6 +3160,10 @@
           "type": "string",
           "title": "Title Text"
         },
+        "linkedText": {
+          "type": "string",
+          "title": "Linked Text"
+        },
         "bannerTopImage": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
           "title": "Banner Top Image"
@@ -3179,6 +3183,7 @@
       },
       "required": [
         "titleText",
+        "linkedText",
         "bannerTopImage",
         "altBannerTopImage",
         "bannerBottomImage",
@@ -3189,19 +3194,10 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@Props": {
       "type": "object",
       "properties": {
-        "theme": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "ligth"
-            },
-            {
-              "type": "string",
-              "const": "dark"
-            }
-          ],
-          "type": "string",
-          "title": "Theme"
+        "themeDark": {
+          "type": "boolean",
+          "title": "Theme Dark",
+          "description": "Ativar thema dark para esta página"
         },
         "mainText": {
           "type": "string",
@@ -3253,7 +3249,7 @@
         }
       },
       "required": [
-        "theme",
+        "themeDark",
         "mainText",
         "descriptionText",
         "buttonCta1",
@@ -4435,7 +4431,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGYXEudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZhcS50c3g=@Props"
         }
       ],
       "required": [
