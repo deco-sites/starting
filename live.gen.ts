@@ -8,9 +8,8 @@ import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/Cms.tsx";
-import * as $$$$$1 from "./islands/LiveControls.tsx";
-import * as $$$$$2 from "./islands/SliderJS.tsx";
-import * as $$$$$3 from "./islands/Header.tsx";
+import * as $$$$$1 from "./islands/SliderJS.tsx";
+import * as $$$$$2 from "./islands/Header.tsx";
 import * as $$$$$$$$0 from "./sections/QuillText.tsx";
 import * as $$$$$$$$1 from "./sections/Features.tsx";
 import * as $$$$$$$$2 from "./sections/Markdown.tsx";
@@ -115,9 +114,8 @@ const manifest: DecoManifest = {
   },
   "islands": {
     "./islands/Cms.tsx": $$$$$0,
-    "./islands/LiveControls.tsx": $$$$$1,
-    "./islands/SliderJS.tsx": $$$$$2,
-    "./islands/Header.tsx": $$$$$3,
+    "./islands/SliderJS.tsx": $$$$$1,
+    "./islands/Header.tsx": $$$$$2,
   },
   "sections": {
     "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$0,
