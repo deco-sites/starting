@@ -6,8 +6,8 @@ export interface Props {
 
 export default function Faq({questions}: Props) {
   return (
-    <section class="bg-[#06E474]">
-      <div class="flex flex-col px-3 py-32 md:px-[7rem] max-w-screen-2xl m-auto">
+    <section class="bg-highlight">
+      <div class="flex flex-col px-3 pb-[120px] pt-[80px] md:px-[7rem] max-w-screen-2xl m-auto">
         {questions.map((item) => {
           return (
             <details class="border-b border-solid border-[#131614]">

@@ -14,11 +14,11 @@ function Slider({
   return (
     <ul
       data-slider
-      class={`grid grid-flow-col items-center overflow-x-auto overscroll-x-contain snap-x snap-mandatory ${_class}`}
+      class={`grid grid-flow-col items-center overflow-x-auto overscroll-x-contain  ${_class}`}
       {...props}
     >
       {Children.map(children, (child, index) => (
-        <li class="min-w-[270px] max-w-[270px] min-h-[325px] max-h-[325px] w-full overflow-hidden">
+        <li class="min-w-[360px] max-w-[360px] min-h-[425px] max-h-[425px] w-full overflow-hidden">
           <button data-slider-item={index} data-dot={index} class={snap}>
             {child}
           </button>
