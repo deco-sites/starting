@@ -4454,6 +4454,22 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EaXZpZGVyLnRzeA==": {
+      "title": "deco-sites/starting/sections/Divider.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/Divider.tsx"
+          ],
+          "default": "deco-sites/starting/sections/Divider.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9GYXEudHN4": {
       "title": "deco-sites/starting/sections/Faq.tsx",
       "type": "object",
@@ -5245,6 +5261,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EaWZmZXJlbnRpYWxzLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EaXZpZGVyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9GYXEudHN4"

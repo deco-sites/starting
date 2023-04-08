@@ -19,7 +19,7 @@ return (
         <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-3 px-6 pt-[40px] md:pt-20 pb-[40px] md:pb-24 md:px-[2rem] max-w-screen-2xl mx-auto">
             {cards?.map(card => (
                 <>
-                    <div class="border-box relative flex flex-col p-[1px] rounded-lg" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))">
+                    <div class="border-box relative flex flex-col p-[2px] rounded-lg" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))">
                         <div class="bg-[#223737] rounded-lg h-full w-full flex flex-col gap-4 p-[32px]">
                             <Icon id={card.icon} width={55} height={55} strokeWidth={"1"} />
                             <p class="mt-2 mr-32 md:mr-0 font-inter not-italic font-medium text-[32px] md:text-[26px] lg:text-[32px] leading-[38.5px] text-white">
