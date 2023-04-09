@@ -1,5 +1,5 @@
 export interface ButtonSwitcherProps {
-  themeDark: boolean,
+  themeDark: boolean;
   switcherButton1: {
     name: string;
     href: string;
@@ -10,11 +10,10 @@ export interface ButtonSwitcherProps {
   };
 }
 
-export default function ButtonSwitcher(
-  { themeDark, switcherButton1, switcherButton2 }: ButtonSwitcherProps,
+export default function ButtonSwitcher({ themeDark, switcherButton1, switcherButton2 }: ButtonSwitcherProps
 ) {
   const themeIsLigth = !themeDark;
-  
+
   return (
     <>
       <div

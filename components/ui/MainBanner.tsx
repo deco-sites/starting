@@ -5,22 +5,22 @@ import ButtonSwitcher,{ButtonSwitcherProps} from "deco-sites/starting/components
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
-  switcherButton: ButtonSwitcherProps
+  switcherButton: ButtonSwitcherProps;
   /** @description Ativar thema dark para esta página */
-  themeDark: boolean
-  mainText: string
+  themeDark: boolean;
+  mainText: string;
   descriptionText: string;
-  activePercentualCarrosel?: boolean
+  activePercentualCarrosel?: boolean;
   buttonCta1: {
     buttonName: string
     href: string
-  }
+  };
   buttonCta2: {
     buttonName: string
     href: string
-  }
+  };
 
-  miniBanner: bannerProps
+  miniBanner: bannerProps;
 }
 
 export interface bannerProps{
@@ -32,6 +32,7 @@ export interface bannerProps{
   altBannerBottomImage: string,
 }
 
+
 export default function MainBanner({switcherButton, themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner}: Props) {
 
   const themeIsLigth = !themeDark
@@ -42,7 +43,6 @@ export default function MainBanner({switcherButton, themeDark, mainText, descrip
         <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem])">
           <ButtonSwitcher 
             {...switcherButton}
-            themeDark={themeDark}
           />
           <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3.5rem] md:( flex-row text-[7.76vw] leading-[6.6rem] items-start)"}>
               <span class="w-full">{mainText}</span>
