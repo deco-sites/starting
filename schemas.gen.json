@@ -3575,128 +3575,67 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xIZWFkZXIudHN4@Props": {
       "type": "object",
       "properties": {
-        "menuLinks": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "label": {
-                "type": "string",
-                "title": "Label"
-              },
-              "href": {
-                "type": "string",
-                "title": "Href"
-              },
-              "targetBlank": {
-                "type": [
-                  "boolean",
-                  "null"
-                ],
-                "title": "Target Blank"
-              }
-            },
-            "required": [
-              "label",
-              "href"
-            ]
-          },
-          "title": "Menu Links"
-        },
-        "idiom": {
+        "title": {
           "type": "string",
-          "title": "Idiom"
+          "title": "Title"
         },
-        "pt": {
-          "type": "object",
-          "properties": {
-            "label": {
-              "type": "string",
-              "title": "Label"
-            },
-            "url": {
-              "type": "string",
-              "title": "Url"
-            },
-            "selected": {
-              "type": [
-                "boolean",
-                "null"
-              ],
-              "title": "Selected"
-            }
-          },
-          "required": [
-            "label",
-            "url"
-          ],
-          "title": "Pt"
-        },
-        "eng": {
-          "type": "object",
-          "properties": {
-            "label": {
-              "type": "string",
-              "title": "Label"
-            },
-            "url": {
-              "type": "string",
-              "title": "Url"
-            },
-            "selected": {
-              "type": [
-                "boolean",
-                "null"
-              ],
-              "title": "Selected"
-            }
-          },
-          "required": [
-            "label",
-            "url"
-          ],
-          "title": "Eng"
-        },
-        "login": {
-          "type": "object",
-          "properties": {
-            "label": {
-              "type": "string",
-              "title": "Label"
-            },
-            "url": {
-              "type": "string",
-              "title": "Url"
-            }
-          },
-          "required": [
-            "label",
-            "url"
-          ],
-          "title": "Login"
-        },
-        "linkedinUrl": {
+        "href": {
           "type": "string",
-          "title": "Linkedin Url"
+          "title": "Href"
         },
-        "gitUrl": {
-          "type": "string",
-          "title": "Git Url"
-        },
-        "discordUrl": {
-          "type": "string",
-          "title": "Discord Url"
+        "submenu": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@SubMenu[]",
+          "title": "Submenu"
         }
       },
       "required": [
-        "menuLinks",
-        "idiom",
-        "pt",
-        "eng",
-        "login",
-        "linkedinUrl",
-        "gitUrl",
-        "discordUrl"
+        "title",
+        "href",
+        "submenu"
+      ],
+      "title": "Menu"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu"
+      },
+      "title": "Menu[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "menu": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu[]",
+          "title": "Menu"
+        },
+        "social": {
+          "type": "object",
+          "properties": {
+            "linkedinUrl": {
+              "type": "string",
+              "title": "Linkedin Url"
+            },
+            "gitUrl": {
+              "type": "string",
+              "title": "Git Url"
+            },
+            "discordUrl": {
+              "type": "string",
+              "title": "Discord Url"
+            }
+          },
+          "required": [
+            "linkedinUrl",
+            "gitUrl",
+            "discordUrl"
+          ],
+          "title": "Social"
+        }
+      },
+      "required": [
+        "menu",
+        "social"
       ],
       "title": "deco-sites/starting\\sections\\Header.tsx@Props"
     },
@@ -3760,6 +3699,57 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Integrations.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyLnRzeA==@ButtonSwitcherProps": {
+      "type": "object",
+      "properties": {
+        "themeDark": {
+          "type": "boolean",
+          "title": "Theme Dark"
+        },
+        "switcherButton1": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "name",
+            "href"
+          ],
+          "title": "Switcher Button1"
+        },
+        "switcherButton2": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "name",
+            "href"
+          ],
+          "title": "Switcher Button2"
+        }
+      },
+      "required": [
+        "themeDark",
+        "switcherButton1",
+        "switcherButton2"
+      ],
+      "title": "ButtonSwitcherProps"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@bannerProps": {
       "type": "object",
       "properties": {
@@ -3801,41 +3791,9 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@Props": {
       "type": "object",
       "properties": {
-        "switcherButton1": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "title": "Name"
-            },
-            "href": {
-              "type": "string",
-              "title": "Href"
-            }
-          },
-          "required": [
-            "name",
-            "href"
-          ],
-          "title": "Switcher Button1"
-        },
-        "switcherButton2": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "title": "Name"
-            },
-            "href": {
-              "type": "string",
-              "title": "Href"
-            }
-          },
-          "required": [
-            "name",
-            "href"
-          ],
-          "title": "Switcher Button2"
+        "switcherButton": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyLnRzeA==@ButtonSwitcherProps",
+          "title": "Switcher Button"
         },
         "themeDark": {
           "type": "boolean",
@@ -3899,8 +3857,7 @@
         }
       },
       "required": [
-        "switcherButton1",
-        "switcherButton2",
+        "switcherButton",
         "themeDark",
         "mainText",
         "descriptionText",
