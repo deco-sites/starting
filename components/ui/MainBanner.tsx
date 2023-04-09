@@ -40,14 +40,14 @@ export default function MainBanner({switcherButton, themeDark, mainText, descrip
   return (
     <div class={(themeIsLigth ? " bg-[#F3FFF9]":"bg-dark-green-gradient") +" "+ "flex flex-col mb-0 pb-[5rem]"}>
       <div class="max-w-screen-2xl m-auto">
-        <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem])">
+        <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem]) 2xl:(max-w-[1280px])">
           <ButtonSwitcher 
             {...switcherButton}
           />
-          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3.5rem] md:( flex-row text-[7.76vw] leading-[6.6rem] items-start)"}>
-              <span class="w-full">{mainText}</span>
+          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3.5rem] md:( flex-row text-[7.76vw] leading-[6.6rem] items-start) 2xl:(text-[112px] leading-[8rem])"}>
+              <span class="w-full 2xl:w-auto">{mainText}</span>
               {
-                activePercentualCarrosel ? <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[92px] flex justify-start items-center relative text-center lg:(left-0 w-[20%])">
+                activePercentualCarrosel ? <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[92px] flex justify-start items-center relative text-center lg:(left-0 w-[20%]) 2xl:(w-[10%] h-[120px] top-0)">
                 <span style="color: #2FD180" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText30">30%</span>
