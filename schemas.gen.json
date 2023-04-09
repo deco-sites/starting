@@ -18,18 +18,18 @@
       "properties": {
         "repo": {
           "type": "string",
-          "title": "Repo",
-          "description": "Complete user/repo format"
+          "description": "Complete user/repo format",
+          "title": "Repo"
         },
         "branch": {
           "type": "string",
-          "title": "Branch",
-          "description": "Branch"
+          "description": "Branch",
+          "title": "Branch"
         },
         "path": {
           "type": "string",
-          "title": "Path",
-          "description": "Path to fetch, or leave blank and add :path route param."
+          "description": "Path to fetch, or leave blank and add :path route param.",
+          "title": "Path"
         }
       },
       "required": [
@@ -85,8 +85,74 @@
         }
       ]
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing": {
+      "title": "Thing"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ListItem": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing"
+        }
+      ],
+      "properties": {
+        "@type": {
+          "type": "string",
+          "const": "ListItem",
+          "title": "@type"
+        },
+        "item": {
+          "title": "Item"
+        },
+        "position": {
+          "type": "number",
+          "title": "Position"
+        }
+      },
+      "required": [
+        "@type",
+        "item",
+        "position"
+      ],
+      "title": "ListItem"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ListItem[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ListItem"
+      },
+      "title": "ListItem[]"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@omitQHR5cGU=ItemList": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing"
+        }
+      ],
+      "properties": {
+        "itemListElement": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ListItem[]",
+          "title": "Item List Element"
+        },
+        "numberOfItems": {
+          "type": "number",
+          "title": "Number Of Items"
+        }
+      },
+      "required": [
+        "itemListElement",
+        "numberOfItems"
+      ],
+      "title": "omitQHR5cGU=ItemList"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@BreadcrumbList": {
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@omitQHR5cGU=ItemList"
+        }
+      ],
       "properties": {
         "@type": {
           "type": "string",
@@ -154,7 +220,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@FilterToggleValue"
-      }
+      },
+      "title": "FilterToggleValue[]"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@FilterToggle": {
       "type": "object",
@@ -207,7 +274,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@FilterBase"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@FilterRange"
         }
       ],
       "properties": {
@@ -235,16 +302,130 @@
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@FilterRange"
         }
-      ]
+      ],
+      "title": "FilterRange|FilterToggle"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@FilterRange|FilterToggle[]": {
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@FilterRange|FilterToggle"
-      }
+      },
+      "title": "FilterRange|FilterToggle[]"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ImageObject": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing"
+        }
+      ],
+      "properties": {
+        "@type": {
+          "type": "string",
+          "const": "ImageObject",
+          "title": "@type"
+        }
+      },
+      "required": [
+        "@type"
+      ],
+      "title": "ImageObject"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ImageObject[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ImageObject"
+      },
+      "title": "ImageObject[]"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@omitQHR5cGU=Thing": {
+      "type": "object",
+      "properties": {
+        "@id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "@id"
+        },
+        "additionalType": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Additional Type"
+        },
+        "alternateName": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Alternate Name"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "disambiguatingDescription": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Disambiguating Description"
+        },
+        "identifier": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Identifier"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ImageObject[]",
+          "title": "Image"
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Name"
+        },
+        "sameAs": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Same As"
+        },
+        "subjectOf": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subject Of"
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Url"
+        }
+      },
+      "required": [],
+      "title": "omitQHR5cGU=Thing"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@PropertyValue": {
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@omitQHR5cGU=Thing"
+        }
+      ],
       "properties": {
         "@type": {
           "type": "string",
@@ -310,7 +491,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@PropertyValue"
-      }
+      },
+      "title": "PropertyValue[]"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@AggregateRating": {
       "type": "object",
@@ -349,6 +531,11 @@
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductLeaf": {
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Product"
+        }
+      ],
       "properties": {},
       "required": [],
       "title": "ProductLeaf"
@@ -357,10 +544,16 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductLeaf"
-      }
+      },
+      "title": "ProductLeaf[]"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductGroup": {
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing"
+        }
+      ],
       "properties": {
         "@type": {
           "type": "string",
@@ -376,7 +569,10 @@
           "title": "Product Group I D"
         },
         "additionalProperty": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@PropertyValue[]",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@PropertyValue"
+          },
           "title": "Additional Property"
         },
         "model": {
@@ -409,8 +605,42 @@
       "required": [],
       "title": "QuantitativeValue"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@omitQHR5cGU=PriceSpecification": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing"
+        }
+      ],
+      "properties": {
+        "eligibleQuantity": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@QuantitativeValue",
+          "title": "Eligible Quantity"
+        },
+        "price": {
+          "type": "number",
+          "title": "Price"
+        },
+        "priceCurrency": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Price Currency"
+        }
+      },
+      "required": [
+        "price"
+      ],
+      "title": "omitQHR5cGU=PriceSpecification"
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@UnitPriceSpecification": {
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@omitQHR5cGU=PriceSpecification"
+        }
+      ],
       "properties": {
         "@type": {
           "type": "string",
@@ -502,10 +732,16 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@UnitPriceSpecification"
-      }
+      },
+      "title": "UnitPriceSpecification[]"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Offer": {
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing"
+        }
+      ],
       "properties": {
         "@type": {
           "type": "string",
@@ -634,7 +870,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Offer"
-      }
+      },
+      "title": "Offer[]"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@AggregateOffer": {
       "type": "object",
@@ -679,6 +916,11 @@
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Review": {
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing"
+        }
+      ],
       "properties": {
         "@type": {
           "type": "string",
@@ -732,6 +974,11 @@
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Product": {
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@omitQHR5cGU=Thing"
+        }
+      ],
       "properties": {
         "@type": {
           "type": "string",
@@ -827,7 +1074,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Product"
-      }
+      },
+      "title": "Product[]"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@SortOption": {
       "type": "object",
@@ -851,7 +1099,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@SortOption"
-      }
+      },
+      "title": "SortOption[]"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@ProductListingPage": {
       "type": "object",
@@ -1029,8 +1278,8 @@
             "string",
             "null"
           ],
-          "title": "Query",
-          "description": "overides the query term"
+          "description": "overides the query term",
+          "title": "Query"
         },
         "count": {
           "type": "number",
@@ -1184,24 +1433,24 @@
       "properties": {
         "limit": {
           "type": "number",
-          "title": "Limit",
-          "description": "total number of items to display"
+          "description": "total number of items to display",
+          "title": "Limit"
         },
         "term": {
           "type": [
             "string",
             "null"
           ],
-          "title": "Term",
-          "description": "query to use on search"
+          "description": "query to use on search",
+          "title": "Term"
         },
         "wildcard": {
           "type": [
             "boolean",
             "null"
           ],
-          "title": "Wildcard",
-          "description": "search for term anywhere"
+          "description": "search for term anywhere",
+          "title": "Wildcard"
         },
         "sort": {
           "anyOf": [
@@ -1223,16 +1472,16 @@
             }
           ],
           "type": "string",
-          "title": "Sort",
-          "description": "search sort parameter"
+          "description": "search sort parameter",
+          "title": "Sort"
         },
         "tags": {
           "type": "array",
           "items": {
             "type": "string"
           },
-          "title": "Tags",
-          "description": "search for products that have certain tag"
+          "description": "search for products that have certain tag",
+          "title": "Tags"
         }
       },
       "required": [
@@ -1374,7 +1623,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Search"
-      }
+      },
+      "title": "Search[]"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Suggestion": {
       "type": "object",
@@ -1433,9 +1683,9 @@
             "number",
             "null"
           ],
-          "title": "Count",
           "description": "limit the number of searches",
-          "default": "4"
+          "default": "4",
+          "title": "Count"
         }
       },
       "required": [],
@@ -1503,7 +1753,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Navbar"
-      }
+      },
+      "title": "Navbar[]"
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Navbar[]|null": {
       "anyOf": [
@@ -1547,9 +1798,9 @@
             "number",
             "null"
           ],
-          "title": "Levels",
           "description": "Number of levels of categories to be returned",
-          "default": "2"
+          "default": "2",
+          "title": "Levels"
         }
       },
       "required": [],
@@ -1563,8 +1814,8 @@
             "string",
             "null"
           ],
-          "title": "Query",
-          "description": "overides the query term"
+          "description": "overides the query term",
+          "title": "Query"
         },
         "count": {
           "type": "number",
@@ -1582,13 +1833,13 @@
       "properties": {
         "query": {
           "type": "string",
-          "title": "Query",
-          "description": "query to use on search"
+          "description": "query to use on search",
+          "title": "Query"
         },
         "count": {
           "type": "number",
-          "title": "Count",
-          "description": "total number of items to display"
+          "description": "total number of items to display",
+          "title": "Count"
         },
         "sort": {
           "anyOf": [
@@ -1626,17 +1877,17 @@
             }
           ],
           "type": "string",
-          "title": "Sort",
-          "description": "search sort parameter"
+          "description": "search sort parameter",
+          "title": "Sort"
         },
         "collection": {
           "type": "array",
           "items": {
             "type": "string"
           },
-          "title": "Collection",
           "description": "Collection ID or (Product Cluster id). For more info: https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/search .",
-          "pattern": "\\d*"
+          "pattern": "\\d*",
+          "title": "Collection"
         }
       },
       "required": [
@@ -1653,16 +1904,16 @@
             "string",
             "null"
           ],
-          "title": "Term",
-          "description": "overides the query term"
+          "description": "overides the query term",
+          "title": "Term"
         },
         "tags": {
           "type": "array",
           "items": {
             "type": "string"
           },
-          "title": "Tags",
-          "description": "filter products by tag"
+          "description": "filter products by tag",
+          "title": "Tags"
         },
         "count": {
           "type": "number",
@@ -1683,8 +1934,8 @@
             "string",
             "null"
           ],
-          "title": "Term",
-          "description": "overides the query term"
+          "description": "overides the query term",
+          "title": "Term"
         },
         "count": {
           "type": "number",
@@ -1696,8 +1947,8 @@
             "string",
             "null"
           ],
-          "title": "Ft",
-          "description": "FullText term"
+          "description": "FullText term",
+          "title": "Ft"
         },
         "fq": {
           "type": [
@@ -1711,8 +1962,8 @@
             "string",
             "null"
           ],
-          "title": "Map",
-          "description": "map param"
+          "description": "map param",
+          "title": "Map"
         }
       },
       "required": [
@@ -1725,13 +1976,13 @@
       "properties": {
         "query": {
           "type": "string",
-          "title": "Query",
-          "description": "query to use on search"
+          "description": "query to use on search",
+          "title": "Query"
         },
         "count": {
           "type": "number",
-          "title": "Count",
-          "description": "total number of items to display"
+          "description": "total number of items to display",
+          "title": "Count"
         },
         "sort": {
           "anyOf": [
@@ -1769,17 +2020,17 @@
             }
           ],
           "type": "string",
-          "title": "Sort",
-          "description": "search sort parameter"
+          "description": "search sort parameter",
+          "title": "Sort"
         },
         "collection": {
           "type": "array",
           "items": {
             "type": "string"
           },
-          "title": "Collection",
           "description": "Collection ID or (Product Cluster id). For more info: https://developers.vtex.com/docs/api-reference/search-api#get-/api/catalog_system/pub/products/search .",
-          "pattern": "\\d*"
+          "pattern": "\\d*",
+          "title": "Collection"
         }
       },
       "required": [
@@ -1793,13 +2044,13 @@
       "properties": {
         "query": {
           "type": "string",
-          "title": "Query",
-          "description": "search term to use on search"
+          "description": "search term to use on search",
+          "title": "Query"
         },
         "count": {
           "type": "number",
-          "title": "Count",
-          "description": "total number of items to display"
+          "description": "total number of items to display",
+          "title": "Count"
         }
       },
       "required": [
@@ -1871,24 +2122,24 @@
       "properties": {
         "domain": {
           "type": "string",
-          "title": "Domain",
-          "description": "Your VNDA domain name. For example, https://mystore.vnda.com.br"
+          "description": "Your VNDA domain name. For example, https://mystore.vnda.com.br",
+          "title": "Domain"
         },
         "authToken": {
           "type": "string",
-          "title": "Auth Token",
-          "description": "The token generated from admin panel. Read here: https://developers.vnda.com.br/docs/chave-de-acesso-e-requisicoes. Do not add any other permissions than catalog."
+          "description": "The token generated from admin panel. Read here: https://developers.vnda.com.br/docs/chave-de-acesso-e-requisicoes. Do not add any other permissions than catalog.",
+          "title": "Auth Token"
         },
         "useSandbox": {
           "type": "boolean",
-          "title": "Use Sandbox",
-          "description": "Define if sandbox environment should be used"
+          "description": "Define if sandbox environment should be used",
+          "title": "Use Sandbox"
         },
         "defaultPriceCurrency": {
           "type": "string",
-          "title": "Default Price Currency",
           "description": "Default price currency.",
-          "default": "USD"
+          "default": "USD",
+          "title": "Default Price Currency"
         }
       },
       "required": [
@@ -1933,24 +2184,24 @@
       "properties": {
         "account": {
           "type": "string",
-          "title": "Account",
-          "description": "VTEX Account name. For more info, read here: https://help.vtex.com/en/tutorial/o-que-e-account-name--i0mIGLcg3QyEy8OCicEoC."
+          "description": "VTEX Account name. For more info, read here: https://help.vtex.com/en/tutorial/o-que-e-account-name--i0mIGLcg3QyEy8OCicEoC.",
+          "title": "Account"
         },
         "defaultLocale": {
           "type": "string",
-          "title": "Default Locale",
-          "description": "Locale used for VTEX Intelligent Search client."
+          "description": "Locale used for VTEX Intelligent Search client.",
+          "title": "Default Locale"
         },
         "defaultPriceCurrency": {
           "type": "string",
-          "title": "Default Price Currency",
           "description": "Default price currency.",
-          "default": "USD"
+          "default": "USD",
+          "title": "Default Price Currency"
         },
         "defaultSalesChannel": {
           "type": "string",
-          "title": "Default Sales Channel",
-          "description": "VTEX sales channel. This will be the default sales channel your site. For more info, read here: https://help.vtex.com/tutorial/how-trade-policies-work--6Xef8PZiFm40kg2STrMkMV"
+          "description": "VTEX sales channel. This will be the default sales channel your site. For more info, read here: https://help.vtex.com/tutorial/how-trade-policies-work--6Xef8PZiFm40kg2STrMkMV",
+          "title": "Default Sales Channel"
         },
         "defaultRegionId": {
           "type": [
@@ -1985,13 +2236,13 @@
       "properties": {
         "storeName": {
           "type": "string",
-          "title": "Store Name",
-          "description": "Shopify store name."
+          "description": "Shopify store name.",
+          "title": "Store Name"
         },
         "storefrontAccessToken": {
           "type": "string",
-          "title": "Storefront Access Token",
-          "description": "Shopify storefront access token."
+          "description": "Shopify storefront access token.",
+          "title": "Storefront Access Token"
         }
       },
       "required": [
@@ -2027,7 +2278,8 @@
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image": {
       "type": "string",
-      "format": "image-uri"
+      "format": "image-uri",
+      "title": "Image"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xpc2xhbmRzXENtcy50c3g=@Props": {
       "type": "object",
@@ -2268,13 +2520,15 @@
       "title": "deco-sites/starting\\components\\ui\\ImpactCalculator.tsx@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
-      "$ref": "#/root/flags"
+      "$ref": "#/root/flags",
+      "title": "Flag"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag[]": {
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag"
-      }
+      },
+      "title": "Flag[]"
     },
     "ZGVjby1jeC9saXZlL2hhbmRsZXJzL3JvdXRlc1NlbGVjdGlvbi50cw==@SelectionConfig": {
       "type": "object",
@@ -2290,7 +2544,8 @@
       "title": "deco-cx/live/handlers/routesSelection.ts@SelectionConfig"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler": {
-      "$ref": "#/root/handlers"
+      "$ref": "#/root/handlers",
+      "title": "Handler"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler@record": {
       "title": "Unknown record",
@@ -2320,7 +2575,8 @@
       "title": "deco-cx/live/handlers/router.ts@RouterConfig"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page": {
-      "$ref": "#/root/pages"
+      "$ref": "#/root/pages",
+      "title": "Page"
     },
     "ZGVjby1jeC9saXZlL2hhbmRsZXJzL2RldlBhZ2UudHM=@DevConfig": {
       "type": "object",
@@ -2349,13 +2605,30 @@
       "title": "deco-cx/live/handlers/fresh.ts@FreshConfig"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section": {
-      "$ref": "#/root/sections"
+      "$ref": "#/root/sections",
+      "title": "Section"
     },
-    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]": {
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9pc2xhbmQudHM=@Island": {
+      "$ref": "#/root/islands",
+      "title": "Island"
+    },
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Island|Section": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9pc2xhbmQudHM=@Island"
+        }
+      ],
+      "title": "Island|Section"
+    },
+    "ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Island|Section[]": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section"
-      }
+        "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Island|Section"
+      },
+      "title": "Island|Section[]"
     },
     "ZGVjby1jeC9saXZlL3BhZ2VzL0xpdmVQYWdlLnRzeA==@Props": {
       "type": "object",
@@ -2365,7 +2638,7 @@
           "title": "Name"
         },
         "sections": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Section[]",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9zZWN0aW9uLnRz@Island|Section[]",
           "title": "Sections"
         }
       },
@@ -2377,7 +2650,8 @@
     },
     "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@HTML": {
       "type": "string",
-      "format": "html"
+      "format": "html",
+      "title": "HTML"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xBYm91dC50c3g=@Props": {
       "type": "object",
@@ -2626,7 +2900,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJlbmVmaXRzLnRzeA==@Card"
-      }
+      },
+      "title": "Card[]"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJlbmVmaXRzLnRzeA==@Props": {
       "type": "object",
@@ -2831,24 +3106,24 @@
             "string",
             "null"
           ],
-          "title": "Alt",
-          "description": "alt text image"
+          "description": "alt text image",
+          "title": "Alt"
         },
         "depoiment": {
           "type": [
             "string",
             "null"
           ],
-          "title": "Depoiment",
-          "description": "depoiment in text"
+          "description": "depoiment in text",
+          "title": "Depoiment"
         },
         "signature": {
           "type": [
             "string",
             "null"
           ],
-          "title": "Signature",
-          "description": "depoiment signature"
+          "description": "depoiment signature",
+          "title": "Signature"
         }
       },
       "required": [],
@@ -2858,7 +3133,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@PersonDepoiment"
-      }
+      },
+      "title": "PersonDepoiment[]"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@Props": {
       "type": "object",
@@ -2872,8 +3148,8 @@
             "boolean",
             "null"
           ],
-          "title": "Preload",
-          "description": "Check this option when this banner is the biggest image on the screen for image optimizations"
+          "description": "Check this option when this banner is the biggest image on the screen for image optimizations",
+          "title": "Preload"
         },
         "interval": {
           "type": [
@@ -2934,7 +3210,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Sections"
-      }
+      },
+      "title": "Sections[]"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Props": {
       "type": "object",
@@ -3198,7 +3475,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Card"
-      }
+      },
+      "title": "Card[]"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEZlYXR1cmVzLnRzeA==@Props": {
       "type": "object",
@@ -3240,7 +3518,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@SubMenu"
-      }
+      },
+      "title": "SubMenu[]"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu": {
       "type": "object",
@@ -3269,7 +3548,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu"
-      }
+      },
+      "title": "Menu[]"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Props": {
       "type": "object",
@@ -3702,8 +3982,8 @@
         },
         "themeDark": {
           "type": "boolean",
-          "title": "Theme Dark",
-          "description": "Ativar thema dark para esta página"
+          "description": "Ativar thema dark para esta página",
+          "title": "Theme Dark"
         },
         "mainText": {
           "type": "string",
@@ -3789,7 +4069,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image"
-      }
+      },
+      "title": "Image[]"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFBhcnRuZXIudHN4@Props": {
       "type": "object",
@@ -3818,11 +4099,17 @@
           "title": "Img First Line"
         },
         "imgSecondLine": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image[]",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image"
+          },
           "title": "Img Second Line"
         },
         "imgThirdLine": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image[]",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image"
+          },
           "title": "Img Third Line"
         }
       },
@@ -3892,12 +4179,6 @@
       ],
       "title": "Plan"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan"
-      }
-    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Props": {
       "type": "object",
       "properties": {
@@ -3914,7 +4195,10 @@
           "title": "Free Plan"
         },
         "paidPlans": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan[]",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan"
+          },
           "title": "Paid Plans"
         }
       },
@@ -3961,7 +4245,8 @@
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFRyaXBsZXRCYW5uZXIudHN4@Card"
-      }
+      },
+      "title": "Card[]"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFRyaXBsZXRCYW5uZXIudHN4@Props": {
       "type": "object",
@@ -4088,8 +4373,8 @@
           "items": {
             "type": "string"
           },
-          "title": "Tracking Ids",
-          "description": "google tag manager container id. For more info: https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation ."
+          "description": "google tag manager container id. For more info: https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation .",
+          "title": "Tracking Ids"
         }
       },
       "required": [],
@@ -4138,16 +4423,16 @@
             "string",
             "null"
           ],
-          "title": "Start",
-          "format": "date-time"
+          "format": "date-time",
+          "title": "Start"
         },
         "end": {
           "type": [
             "string",
             "null"
           ],
-          "title": "End",
-          "format": "date-time"
+          "format": "date-time",
+          "title": "End"
         }
       },
       "required": [],
@@ -4188,13 +4473,15 @@
       "title": "deco-cx/live/matchers/MatchSite.ts@Props"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher": {
-      "$ref": "#/root/matchers"
+      "$ref": "#/root/matchers",
+      "title": "Matcher"
     },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher[]": {
       "type": "array",
       "items": {
         "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9tYXRjaGVyLnRz@Matcher"
-      }
+      },
+      "title": "Matcher[]"
     },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoTXVsdGkudHM=@Props": {
       "type": "object",
@@ -4761,7 +5048,7 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0Ntcy50c3g=": {
+    "Li9pc2xhbmRzL0Ntcy50c3g=": {
       "title": "./islands/Cms.tsx",
       "type": "object",
       "allOf": [
@@ -4782,7 +5069,7 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0hlYWRlci50c3g=": {
+    "Li9pc2xhbmRzL0hlYWRlci50c3g=": {
       "title": "./islands/Header.tsx",
       "type": "object",
       "allOf": [
@@ -4803,7 +5090,7 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4": {
+    "Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4": {
       "title": "./islands/ImpactCalculator.tsx",
       "type": "object",
       "allOf": [
@@ -4824,7 +5111,7 @@
         }
       }
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL1NsaWRlckpTLnRzeA==": {
+    "Li9pc2xhbmRzL1NsaWRlckpTLnRzeA==": {
       "title": "./islands/SliderJS.tsx",
       "type": "object",
       "required": [
@@ -5919,16 +6206,16 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0Ntcy50c3g="
+          "$ref": "#/definitions/Li9pc2xhbmRzL0Ntcy50c3g="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0hlYWRlci50c3g="
+          "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
+          "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
         },
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
+          "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
         }
       ]
     },

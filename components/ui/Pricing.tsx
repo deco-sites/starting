@@ -41,13 +41,13 @@ export default function Pricing({ title, text, freePlan, paidPlans } : Props){
 
     return(
         <section class="py-[63px] bg-linear">
-            <div class="max-w-screen-2xl m-auto pt-[80px]">
-                <div class="max-w-[760px] mx-auto text-center">
-                    <h1 class="text-[52px] text-almost-white font-semibold">{title}</h1>
-                    <p class="text-[22px] text-almost-white">{text}</p> 
+            <div class="max-w-screen-2xl m-auto pt-[80px] px-4 md:px-0">
+                <div class="flex flex-col gap-4 max-w-[760px] mx-auto text-center">
+                    <h1 class="text-[42px] leading-[42px] md:text-[52px] text-almost-white font-semibold">{title}</h1>
+                    <p class="text-[18px] md:text-[22px] text-almost-white">{text}</p> 
                 </div>
 
-                <div class="flex flex-col md:flex-row justify-center items-center gap-[72px] mt-[80px]">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-[72px] mt-[40px] md:mt-[80px]">
                     <div class="bg-linear-border p-[1px] rounded-[8px] w-full max-w-[460px]">
                         <div class="flex flex-col gap-[20px] p-8 bg-linear-pricing rounded-[8px]">
                             <div>
@@ -73,11 +73,11 @@ export default function Pricing({ title, text, freePlan, paidPlans } : Props){
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row justify-around py-[80px] px-10">
+                <div class="flex flex-row gap-8 overflow-auto justify-items-start md:justify-around pt-[40px] md:py-[80px] px-2 md:px-10">
                     {
                         paidPlans.map(plan => {
                             return(
-                                <div class="bg-linear-y-border p-[1px] rounded-[8px] w-full max-w-[300px]">
+                                <div class="bg-linear-y-border p-[1px] rounded-[8px] w-full max-w-[300px] min-w-[75vw] md:min-w-[0]">
                                     <div class="flex flex-col gap-[20px] p-8 bg-linear-pricing-y rounded-[8px]">
                                         <h2 class="text-almost-white text-[22px] font-semibold">{plan.title}</h2>
                                         <p class="text-almost-white text-[13px] min-h-[40px]">{plan.text}</p>
