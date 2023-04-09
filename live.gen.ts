@@ -8,29 +8,29 @@ import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/Cms.tsx";
-import * as $$$$$1 from "./islands/SliderJS.tsx";
-import * as $$$$$2 from "./islands/Header.tsx";
-import * as $$$$$$$$0 from "./sections/QuillText.tsx";
-import * as $$$$$$$$1 from "./sections/Pricing.tsx";
-import * as $$$$$$$$2 from "./sections/Features.tsx";
-import * as $$$$$$$$3 from "./sections/Markdown.tsx";
+import * as $$$$$1 from "./islands/Header.tsx";
+import * as $$$$$2 from "./islands/SliderJS.tsx";
+import * as $$$$$$$$0 from "./sections/About.tsx";
+import * as $$$$$$$$1 from "./sections/Benefits.tsx";
+import * as $$$$$$$$2 from "./sections/Carousel.tsx";
+import * as $$$$$$$$3 from "./sections/Cms.tsx";
 import * as $$$$$$$$4 from "./sections/Community.tsx";
-import * as $$$$$$$$5 from "./sections/Divider.tsx";
-import * as $$$$$$$$6 from "./sections/Partner.tsx";
+import * as $$$$$$$$5 from "./sections/Delight.tsx";
+import * as $$$$$$$$6 from "./sections/DepoimentsCarrossel.tsx";
 import * as $$$$$$$$7 from "./sections/Differentials.tsx";
-import * as $$$$$$$$8 from "./sections/Cms.tsx";
-import * as $$$$$$$$9 from "./sections/Footer.tsx";
-import * as $$$$$$$$10 from "./sections/Head.tsx";
-import * as $$$$$$$$11 from "./sections/Integration.tsx";
-import * as $$$$$$$$12 from "./sections/Header.tsx";
-import * as $$$$$$$$13 from "./sections/MainBanner.tsx";
-import * as $$$$$$$$14 from "./sections/TripletBanner.tsx";
-import * as $$$$$$$$15 from "./sections/Faq.tsx";
-import * as $$$$$$$$16 from "./sections/DepoimentsCarrossel.tsx";
-import * as $$$$$$$$17 from "./sections/Delight.tsx";
-import * as $$$$$$$$18 from "./sections/Benefits.tsx";
-import * as $$$$$$$$19 from "./sections/About.tsx";
-import * as $$$$$$$$20 from "./sections/Carousel.tsx";
+import * as $$$$$$$$8 from "./sections/Divider.tsx";
+import * as $$$$$$$$9 from "./sections/Faq.tsx";
+import * as $$$$$$$$10 from "./sections/Features.tsx";
+import * as $$$$$$$$11 from "./sections/Footer.tsx";
+import * as $$$$$$$$12 from "./sections/Head.tsx";
+import * as $$$$$$$$13 from "./sections/Header.tsx";
+import * as $$$$$$$$14 from "./sections/Integration.tsx";
+import * as $$$$$$$$15 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$16 from "./sections/Markdown.tsx";
+import * as $$$$$$$$17 from "./sections/Partner.tsx";
+import * as $$$$$$$$18 from "./sections/Pricing.tsx";
+import * as $$$$$$$$19 from "./sections/QuillText.tsx";
+import * as $$$$$$$$20 from "./sections/TripletBanner.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -118,31 +118,31 @@ const manifest: DecoManifest = {
   },
   "islands": {
     "./islands/Cms.tsx": $$$$$0,
-    "./islands/SliderJS.tsx": $$$$$1,
-    "./islands/Header.tsx": $$$$$2,
+    "./islands/Header.tsx": $$$$$1,
+    "./islands/SliderJS.tsx": $$$$$2,
   },
   "sections": {
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$0,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$1,
-    "deco-sites/starting/sections/Features.tsx": $$$$$$$$2,
-    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$3,
+    "deco-sites/starting/sections/About.tsx": $$$$$$$$0,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$1,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$2,
+    "deco-sites/starting/sections/Cms.tsx": $$$$$$$$3,
     "deco-sites/starting/sections/Community.tsx": $$$$$$$$4,
-    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$5,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$6,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$5,
+    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$6,
     "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$7,
-    "deco-sites/starting/sections/Cms.tsx": $$$$$$$$8,
-    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$9,
-    "deco-sites/starting/sections/Head.tsx": $$$$$$$$10,
-    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$11,
-    "deco-sites/starting/sections/Header.tsx": $$$$$$$$12,
-    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$13,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$14,
-    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$15,
-    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$16,
-    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$17,
-    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$18,
-    "deco-sites/starting/sections/About.tsx": $$$$$$$$19,
-    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$20,
+    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$8,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$9,
+    "deco-sites/starting/sections/Features.tsx": $$$$$$$$10,
+    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$11,
+    "deco-sites/starting/sections/Head.tsx": $$$$$$$$12,
+    "deco-sites/starting/sections/Header.tsx": $$$$$$$$13,
+    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$15,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$16,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$17,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$18,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$19,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$20,
     "$live/sections/PageInclude.tsx": i2$$$9,
     "deco-sites/std/sections/configYourViews.global.tsx": i2$$$0,
     "deco-sites/std/sections/SEO.tsx": i2$$$1,
