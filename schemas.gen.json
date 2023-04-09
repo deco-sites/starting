@@ -3575,128 +3575,67 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xIZWFkZXIudHN4@Props": {
       "type": "object",
       "properties": {
-        "menuLinks": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "label": {
-                "type": "string",
-                "title": "Label"
-              },
-              "href": {
-                "type": "string",
-                "title": "Href"
-              },
-              "targetBlank": {
-                "type": [
-                  "boolean",
-                  "null"
-                ],
-                "title": "Target Blank"
-              }
-            },
-            "required": [
-              "label",
-              "href"
-            ]
-          },
-          "title": "Menu Links"
-        },
-        "idiom": {
+        "title": {
           "type": "string",
-          "title": "Idiom"
+          "title": "Title"
         },
-        "pt": {
-          "type": "object",
-          "properties": {
-            "label": {
-              "type": "string",
-              "title": "Label"
-            },
-            "url": {
-              "type": "string",
-              "title": "Url"
-            },
-            "selected": {
-              "type": [
-                "boolean",
-                "null"
-              ],
-              "title": "Selected"
-            }
-          },
-          "required": [
-            "label",
-            "url"
-          ],
-          "title": "Pt"
-        },
-        "eng": {
-          "type": "object",
-          "properties": {
-            "label": {
-              "type": "string",
-              "title": "Label"
-            },
-            "url": {
-              "type": "string",
-              "title": "Url"
-            },
-            "selected": {
-              "type": [
-                "boolean",
-                "null"
-              ],
-              "title": "Selected"
-            }
-          },
-          "required": [
-            "label",
-            "url"
-          ],
-          "title": "Eng"
-        },
-        "login": {
-          "type": "object",
-          "properties": {
-            "label": {
-              "type": "string",
-              "title": "Label"
-            },
-            "url": {
-              "type": "string",
-              "title": "Url"
-            }
-          },
-          "required": [
-            "label",
-            "url"
-          ],
-          "title": "Login"
-        },
-        "linkedinUrl": {
+        "href": {
           "type": "string",
-          "title": "Linkedin Url"
+          "title": "Href"
         },
-        "gitUrl": {
-          "type": "string",
-          "title": "Git Url"
-        },
-        "discordUrl": {
-          "type": "string",
-          "title": "Discord Url"
+        "submenu": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@SubMenu[]",
+          "title": "Submenu"
         }
       },
       "required": [
-        "menuLinks",
-        "idiom",
-        "pt",
-        "eng",
-        "login",
-        "linkedinUrl",
-        "gitUrl",
-        "discordUrl"
+        "title",
+        "href",
+        "submenu"
+      ],
+      "title": "Menu"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu"
+      },
+      "title": "Menu[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "menu": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xGb290ZXIudHN4@Menu[]",
+          "title": "Menu"
+        },
+        "social": {
+          "type": "object",
+          "properties": {
+            "linkedinUrl": {
+              "type": "string",
+              "title": "Linkedin Url"
+            },
+            "gitUrl": {
+              "type": "string",
+              "title": "Git Url"
+            },
+            "discordUrl": {
+              "type": "string",
+              "title": "Discord Url"
+            }
+          },
+          "required": [
+            "linkedinUrl",
+            "gitUrl",
+            "discordUrl"
+          ],
+          "title": "Social"
+        }
+      },
+      "required": [
+        "menu",
+        "social"
       ],
       "title": "deco-sites/starting\\sections\\Header.tsx@Props"
     },
