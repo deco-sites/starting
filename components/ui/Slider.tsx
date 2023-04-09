@@ -3,12 +3,14 @@ import type { JSX } from "preact";
 
 type Props = JSX.IntrinsicElements["ul"] & {
   snap?: string;
+  itemClass?:string
 };
 
 function Slider({
   children,
   snap = "snap-center",
   class: _class = "gap-6 scrollbar-none",
+  itemClass,
   ...props
 }: Props) {
   return (
@@ -18,7 +20,7 @@ function Slider({
       {...props}
     >
       {Children.map(children, (child, index) => (
-        <li class="min-w-[360px] max-w-[360px] min-h-[425px] max-h-[425px] w-full overflow-hidden">
+        <li class={`min-w-[360px] max-w-[100vw] max-h-[425px] overflow-hidden ${itemClass ? itemClass : "w-full min-h-[425px]"}`}>
           <button data-slider-item={index} data-dot={index} class={snap}>
             {child}
           </button>

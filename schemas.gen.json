@@ -2761,6 +2761,70 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Delight.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@PersonDepoiment": {
+      "type": "object",
+      "properties": {
+        "alt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Alt",
+          "description": "alt text image"
+        },
+        "depoiment": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Depoiment",
+          "description": "depoiment in text"
+        },
+        "signature": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Signature",
+          "description": "depoiment signature"
+        }
+      },
+      "required": [],
+      "title": "PersonDepoiment"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@PersonDepoiment[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@PersonDepoiment"
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "depoiments": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@PersonDepoiment[]",
+          "title": "Depoiments"
+        },
+        "preload": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Preload",
+          "description": "Check this option when this banner is the biggest image on the screen for image optimizations"
+        },
+        "interval": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Interval",
+          "description": "time (in seconds) to start the carousel autoplay"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/starting\\components\\ui\\DepoimentsCarrossel.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Sections": {
       "type": "object",
       "properties": {
@@ -4844,6 +4908,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EZXBvaW1lbnRzQ2Fycm9zc2VsLnRzeA==": {
+      "title": "deco-sites/starting/sections/DepoimentsCarrossel.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/DepoimentsCarrossel.tsx"
+          ],
+          "default": "deco-sites/starting/sections/DepoimentsCarrossel.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EaWZmZXJlbnRpYWxzLnRzeA==": {
       "title": "deco-sites/starting/sections/Differentials.tsx",
       "type": "object",
@@ -5714,6 +5799,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EZWxpZ2h0LnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EZXBvaW1lbnRzQ2Fycm9zc2VsLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EaWZmZXJlbnRpYWxzLnRzeA=="
