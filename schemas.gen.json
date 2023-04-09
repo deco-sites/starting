@@ -3763,6 +3763,10 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyLnRzeA==@ButtonSwitcherProps": {
       "type": "object",
       "properties": {
+        "themeDark": {
+          "type": "boolean",
+          "title": "Theme Dark"
+        },
         "switcherButton1": {
           "type": "object",
           "properties": {
@@ -3801,6 +3805,7 @@
         }
       },
       "required": [
+        "themeDark",
         "switcherButton1",
         "switcherButton2"
       ],
