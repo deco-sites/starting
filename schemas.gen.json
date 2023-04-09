@@ -3604,6 +3604,57 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Integrations.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyLnRzeA==@ButtonSwitcherProps": {
+      "type": "object",
+      "properties": {
+        "themeDark": {
+          "type": "boolean",
+          "title": "Theme Dark"
+        },
+        "switcherButton1": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "name",
+            "href"
+          ],
+          "title": "Switcher Button1"
+        },
+        "switcherButton2": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "href": {
+              "type": "string",
+              "title": "Href"
+            }
+          },
+          "required": [
+            "name",
+            "href"
+          ],
+          "title": "Switcher Button2"
+        }
+      },
+      "required": [
+        "themeDark",
+        "switcherButton1",
+        "switcherButton2"
+      ],
+      "title": "ButtonSwitcherProps"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@bannerProps": {
       "type": "object",
       "properties": {
@@ -3645,41 +3696,9 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@Props": {
       "type": "object",
       "properties": {
-        "switcherButton1": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "title": "Name"
-            },
-            "href": {
-              "type": "string",
-              "title": "Href"
-            }
-          },
-          "required": [
-            "name",
-            "href"
-          ],
-          "title": "Switcher Button1"
-        },
-        "switcherButton2": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "title": "Name"
-            },
-            "href": {
-              "type": "string",
-              "title": "Href"
-            }
-          },
-          "required": [
-            "name",
-            "href"
-          ],
-          "title": "Switcher Button2"
+        "switcherButton": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyLnRzeA==@ButtonSwitcherProps",
+          "title": "Switcher Button"
         },
         "themeDark": {
           "type": "boolean",
@@ -3743,8 +3762,7 @@
         }
       },
       "required": [
-        "switcherButton1",
-        "switcherButton2",
+        "switcherButton",
         "themeDark",
         "mainText",
         "descriptionText",

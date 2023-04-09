@@ -1,32 +1,26 @@
 import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 import Image from "deco-sites/std/components/Image.tsx"
+import ButtonSwitcher,{ButtonSwitcherProps} from "deco-sites/starting/components/ui/ButtonSwitcher.tsx";
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
-  switcherButton1:{
-    name: string,
-    href: string
-  }
-  switcherButton2:{
-    name: string,
-    href: string
-  }
+  switcherButton: ButtonSwitcherProps;
   /** @description Ativar thema dark para esta página */
-  themeDark: boolean
-  mainText: string
+  themeDark: boolean;
+  mainText: string;
   descriptionText: string;
-  activePercentualCarrosel?: boolean
+  activePercentualCarrosel?: boolean;
   buttonCta1: {
     buttonName: string
     href: string
-  }
+  };
   buttonCta2: {
     buttonName: string
     href: string
-  }
+  };
 
-  miniBanner: bannerProps
+  miniBanner: bannerProps;
 }
 
 export interface bannerProps{
@@ -38,30 +32,22 @@ export interface bannerProps{
   altBannerBottomImage: string,
 }
 
-export default function MainBanner({switcherButton1, switcherButton2, themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner}: Props) {
+
+export default function MainBanner({switcherButton, themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner}: Props) {
 
   const themeIsLigth = !themeDark
 
   return (
     <div class={(themeIsLigth ? " bg-[#F3FFF9]":"bg-dark-green-gradient") +" "+ "flex flex-col mb-0 pb-[5rem]"}>
       <div class="max-w-screen-2xl m-auto">
-        <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem])">
-          
-          <div id="switcehr-page" class={(themeIsLigth ? "bg-[#CDE5D9]" : "bg-primary-dark" ) + " " + "w-full flex p-2 gap-2  rounded-full border-2 border-white border-opacity-5 mb-10 lg:(w-1/3)"}>
-
-            <a class={(themeIsLigth ? "bg-dark-green text-[#f3fff9ca]" : "bg-primary-dark text-[#f3fff9ca]" ) + " " + "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px]  hover:shadow-button-hover-shadow transition-all duration-500" } href={switcherButton1?.href}>
-              {switcherButton1?.name}
-            </a>
-            
-            <a class={(themeIsLigth ? "bg-[#CDE5D9] text-dark-green" : "bg-white text-dark-green border-2 border-dark-green shadow-button-shadow") + " " + "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px] hover:shadow-button-hover-shadow transition-all duration-500" } href={switcherButton2?.href}>
-              {switcherButton2?.name}
-            </a>
-          </div>
-
-          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3.5rem] md:( flex-row text-[7.76vw] leading-[6.6rem] items-start)"}>
-              <span class="w-full">{mainText}</span>
+        <div class="px-4 pt-24 pb-8 md:(px-[2rem] pt-[11rem]) 2xl:(max-w-[1280px])">
+          <ButtonSwitcher 
+            {...switcherButton}
+          />
+          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex flex-row justify-start items-end font-sans font-bold not-italic text-[56px] leading-[3.5rem] md:( flex-row text-[7.76vw] leading-[6.6rem] items-start) 2xl:(text-[112px] leading-[8rem])"}>
+              <span class="w-full 2xl:w-auto">{mainText}</span>
               {
-                activePercentualCarrosel ? <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[92px] flex justify-start items-center relative text-center lg:(left-0 w-[20%])">
+                activePercentualCarrosel ? <span class="overflow-y-clip  -left-[40px] top-[20px] w-[30%] h-[92px] flex justify-start items-center relative text-center lg:(left-0 w-[20%]) 2xl:(w-[10%] h-[120px] top-0)">
                 <span style="color: #2FD180" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText30">30%</span>
