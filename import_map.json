@@ -2,7 +2,7 @@
   "imports": {
     "deco-sites/starting/": "./",
     "$start/": "./",
-    "$live/": "https://denopkg.com/deco-cx/live@1.0.0-rc.43/",
+    "$live/": "https://denopkg.com/deco-cx/live@1.0.0-rc.44/",
     "inspect_vscode/": "https://deno.land/x/inspect_vscode@0.1.2/",
     "supabase": "https://esm.sh/@supabase/supabase-js@1.35.4",
     "json-schema": "https://esm.sh/v92/@types/json-schema@7.0.11/X-YS9yZWFjdDpwcmVhY3QvY29tcGF0CmQvcHJlYWN0QDEwLjEwLjY/index.d.ts",
