@@ -20,8 +20,13 @@ export default function ImpactCalculator({ mainText, formInfos, buttonText } : P
     const labelClass = ""
     const inputClass = "w-full mt-2 pl-4 border-1 border-dark-green h-[52px] rounded-[4px]"
 
+    const website = useSignal("")
+    const sessions = useSignal("")
+    const conversion = useSignal("")
+    const average = useSignal("")
+
     const desktopPercent = useSignal<number | undefined>(50)
-    const mobilePercent = useSignal(50)
+    const mobilePercent = useSignal<number | undefined>(50)
 
     const handleChange = (e : HTMLInputElement | null) => {
         console.log(e?.value)
@@ -32,7 +37,11 @@ export default function ImpactCalculator({ mainText, formInfos, buttonText } : P
 
     const handleClick = (e : JSX.TargetedMouseEvent<HTMLButtonElement>) => {
         e.preventDefault()
-        console.log("calcular aqui")
+        fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}`)
+        .then(response => response.json())
+        .then(result => {
+            console.log(result)
+        })
     }
 
     const mobileNumber = Number(mobilePercent)
@@ -58,24 +67,44 @@ export default function ImpactCalculator({ mainText, formInfos, buttonText } : P
                     <form action="#" class="flex flex-col gap-6">
                         <div>
                             <label htmlFor="">{formInfos.websiteLabel}</label>
-                            <input type="text" class={`${inputClass}`}/>
+                            <input 
+                                type="text" 
+                                value={website} 
+                                onInput={(e) => website.value = (e.target as HTMLInputElement).value} 
+                                class={`${inputClass}`}
+                            />
                         </div>
                         <div class="grid grid-cols-3 gap-6 justify-between">
                             <div class="flex flex-col justify-between">
                                 <label htmlFor="">{formInfos.sessionsLabel}</label>
-                                <input type="number" class={`${inputClass}`}/>
+                                <input 
+                                    type="number" 
+                                    value={sessions} 
+                                    onInput={(e) => sessions.value = (e.target as HTMLInputElement).value} 
+                                    class={`${inputClass}`}
+                                />
                             </div>
                             <div class="flex flex-col justify-between">
                                 <label htmlFor="">{formInfos.conversionLabel}</label>
                                 <div class="relative">
-                                    <input type="number" class={`${inputClass}`}/>
+                                    <input 
+                                        type="number" 
+                                        value={conversion} 
+                                        onInput={(e) => conversion.value = (e.target as HTMLInputElement).value} 
+                                        class={`${inputClass}`}
+                                    />
                                     <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">%</span>
                                 </div>          
                             </div>
                             <div class="flex flex-col justify-between">
                                 <label htmlFor="">{formInfos.averageOrderLabel}</label>
                                 <div class="relative">
-                                    <input type="number" class={`${inputClass}`}/>
+                                    <input 
+                                        type="number" 
+                                        value={average} 
+                                        onInput={(e) => average.value = (e.target as HTMLInputElement).value} 
+                                        class={`${inputClass}`}
+                                    />
                                     <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">$</span>
                                 </div>      
                             </div>  
