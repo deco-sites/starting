@@ -24,6 +24,42 @@ export default {
     '.hidden-scroll':{
       '-ms-overflow-style': 'none',  /* IE and Edge */
       'scrollbar-width': 'none'  /* Firefox */
+    },
+    'input[type="range"]': {
+      '-webkit-appearance': 'none',
+      'appearance': 'none',
+      'background': 'transparent',
+      'cursor': 'pointer',
+      'width': '100%',
+    },
+    'input[type="range"]:focus': {
+      'outline': 'none',
+    },
+    'input[type="range"]::-webkit-slider-runnable-track': {
+      'background-color': '#06E474',
+      'border-radius': '0.5rem',
+      'height': '0.7rem',
+    },
+    'input[type="range"]::-webkit-slider-thumb': {
+      '-webkit-appearance': 'none', /* Override default look */
+      'appearance': 'none',
+      'margin-top': '-3px',/* Centers thumb on the track */
+      'background': 'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);',
+      'border-radius': '1rem',
+      'border': '1px solid black',
+      'height': '1.2rem',
+      'width': '1.2rem',
+    },
+    'input[type="range"]:focus::-webkit-slider-thumb': {
+      'border': '2px solid black',
+    },
+    'input::-webkit-outer-spin-button': {
+      '-webkit-appearance': 'none',
+      'margin': '0',
+    },
+    'input::-webkit-inner-spin-button': {
+      '-webkit-appearance': 'none',
+      'margin': '0',
     }
   }),
   theme: {
@@ -46,7 +82,7 @@ export default {
         "linear-pricing-y": "linear-gradient(0deg, #0A2121 0.89%, #1D4949 99.08%)",
         "linear-border": "linear-gradient(31deg, #ffffff 0.89%, #053535e8 25%, #053535e8 75%, #ffffff 99.08%)",
         "linear-y-border": "linear-gradient(180deg, #F3FFF9 0.89%, #053535e8 80.08%, transparent 99%)",
-        "dark-green-gradient": "linear-gradient(180deg, #0A2121 0%, #053535 100%);",
+        "dark-green-gradient": "linear-gradient(180deg, #0A2121 0%, #053535 100%)",
       },
       boxShadow: {
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",

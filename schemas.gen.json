@@ -2457,6 +2457,68 @@
       ],
       "title": "deco-sites/starting\\islands\\Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEltcGFjdENhbGN1bGF0b3IudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "mainText": {
+          "type": "string",
+          "title": "Main Text"
+        },
+        "formInfos": {
+          "type": "object",
+          "properties": {
+            "websiteLabel": {
+              "type": "string",
+              "title": "Website Label"
+            },
+            "sessionsLabel": {
+              "type": "string",
+              "title": "Sessions Label"
+            },
+            "conversionLabel": {
+              "type": "string",
+              "title": "Conversion Label"
+            },
+            "averageOrderLabel": {
+              "type": "string",
+              "title": "Average Order Label"
+            },
+            "trafficSplitLabel": {
+              "type": "string",
+              "title": "Traffic Split Label"
+            },
+            "trafficMobile": {
+              "type": "string",
+              "title": "Traffic Mobile"
+            },
+            "trafficDesktop": {
+              "type": "string",
+              "title": "Traffic Desktop"
+            }
+          },
+          "required": [
+            "websiteLabel",
+            "sessionsLabel",
+            "conversionLabel",
+            "averageOrderLabel",
+            "trafficSplitLabel",
+            "trafficMobile",
+            "trafficDesktop"
+          ],
+          "title": "Form Infos"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        }
+      },
+      "required": [
+        "mainText",
+        "formInfos",
+        "buttonText"
+      ],
+      "title": "deco-sites/starting\\components\\ui\\ImpactCalculator.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
       "$ref": "#/root/flags",
       "title": "Flag"
@@ -3699,6 +3761,68 @@
         "discordUrl"
       ],
       "title": "deco-sites/starting\\sections\\Header.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xJbXBhY3RDYWxjdWxhdG9yLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "mainText": {
+          "type": "string",
+          "title": "Main Text"
+        },
+        "formInfos": {
+          "type": "object",
+          "properties": {
+            "websiteLabel": {
+              "type": "string",
+              "title": "Website Label"
+            },
+            "sessionsLabel": {
+              "type": "string",
+              "title": "Sessions Label"
+            },
+            "conversionLabel": {
+              "type": "string",
+              "title": "Conversion Label"
+            },
+            "averageOrderLabel": {
+              "type": "string",
+              "title": "Average Order Label"
+            },
+            "trafficSplitLabel": {
+              "type": "string",
+              "title": "Traffic Split Label"
+            },
+            "trafficMobile": {
+              "type": "string",
+              "title": "Traffic Mobile"
+            },
+            "trafficDesktop": {
+              "type": "string",
+              "title": "Traffic Desktop"
+            }
+          },
+          "required": [
+            "websiteLabel",
+            "sessionsLabel",
+            "conversionLabel",
+            "averageOrderLabel",
+            "trafficSplitLabel",
+            "trafficMobile",
+            "trafficDesktop"
+          ],
+          "title": "Form Infos"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        }
+      },
+      "required": [
+        "mainText",
+        "formInfos",
+        "buttonText"
+      ],
+      "title": "deco-sites/starting\\sections\\ImpactCalculator.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEludGVncmF0aW9ucy50c3g=@Props": {
       "type": "object",
@@ -4961,6 +5085,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4": {
+      "title": "./islands/ImpactCalculator.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEltcGFjdENhbGN1bGF0b3IudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ImpactCalculator.tsx"
+          ],
+          "default": "./islands/ImpactCalculator.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1NsaWRlckpTLnRzeA==": {
       "title": "./islands/SliderJS.tsx",
       "type": "object",
@@ -5368,6 +5513,27 @@
             "deco-sites/starting/sections/Header.tsx"
           ],
           "default": "deco-sites/starting/sections/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbXBhY3RDYWxjdWxhdG9yLnRzeA==": {
+      "title": "deco-sites/starting/sections/ImpactCalculator.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xJbXBhY3RDYWxjdWxhdG9yLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/ImpactCalculator.tsx"
+          ],
+          "default": "deco-sites/starting/sections/ImpactCalculator.tsx"
         }
       }
     },
@@ -6041,6 +6207,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
         }
       ]
@@ -6123,6 +6292,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbXBhY3RDYWxjdWxhdG9yLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbnRlZ3JhdGlvbi50c3g="

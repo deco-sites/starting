@@ -9,8 +9,8 @@ export interface Props {
   
 export default function TripletBanner({ cards }: Props) {
 return (
-    <section class="bg-[#fff] py-[104px] flex justify-center items-center flex-col">
-        <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-3 px-6 pt-[40px] md:pt-20 pb-[40px] md:pb-24 md:px-[2rem] max-w-screen-2xl mx-auto">
+    <section class="bg-[#fff] flex justify-center items-center flex-col mt-[40px]">
+        <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-3 mx-4 pb-[40px] md:pb-24 max-w-[1440px] md:mx-auto">
             {cards?.map(card => (
                 <>
                     <div class="border-box bg-[#fff] relative flex flex-col p-[2px] rounded-[24px]">

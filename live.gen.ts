@@ -9,7 +9,8 @@ import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/Cms.tsx";
 import * as $$$$$1 from "./islands/Header.tsx";
-import * as $$$$$2 from "./islands/SliderJS.tsx";
+import * as $$$$$2 from "./islands/ImpactCalculator.tsx";
+import * as $$$$$3 from "./islands/SliderJS.tsx";
 import * as $$$$$$$$0 from "./sections/About.tsx";
 import * as $$$$$$$$1 from "./sections/Benefits.tsx";
 import * as $$$$$$$$2 from "./sections/Carousel.tsx";
@@ -24,13 +25,14 @@ import * as $$$$$$$$10 from "./sections/Features.tsx";
 import * as $$$$$$$$11 from "./sections/Footer.tsx";
 import * as $$$$$$$$12 from "./sections/Head.tsx";
 import * as $$$$$$$$13 from "./sections/Header.tsx";
-import * as $$$$$$$$14 from "./sections/Integration.tsx";
-import * as $$$$$$$$15 from "./sections/MainBanner.tsx";
-import * as $$$$$$$$16 from "./sections/Markdown.tsx";
-import * as $$$$$$$$17 from "./sections/Partner.tsx";
-import * as $$$$$$$$18 from "./sections/Pricing.tsx";
-import * as $$$$$$$$19 from "./sections/QuillText.tsx";
-import * as $$$$$$$$20 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$14 from "./sections/ImpactCalculator.tsx";
+import * as $$$$$$$$15 from "./sections/Integration.tsx";
+import * as $$$$$$$$16 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$17 from "./sections/Markdown.tsx";
+import * as $$$$$$$$18 from "./sections/Partner.tsx";
+import * as $$$$$$$$19 from "./sections/Pricing.tsx";
+import * as $$$$$$$$20 from "./sections/QuillText.tsx";
+import * as $$$$$$$$21 from "./sections/TripletBanner.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -119,7 +121,8 @@ const manifest: DecoManifest = {
   "islands": {
     "./islands/Cms.tsx": $$$$$0,
     "./islands/Header.tsx": $$$$$1,
-    "./islands/SliderJS.tsx": $$$$$2,
+    "./islands/ImpactCalculator.tsx": $$$$$2,
+    "./islands/SliderJS.tsx": $$$$$3,
   },
   "sections": {
     "deco-sites/starting/sections/About.tsx": $$$$$$$$0,
@@ -136,13 +139,14 @@ const manifest: DecoManifest = {
     "deco-sites/starting/sections/Footer.tsx": $$$$$$$$11,
     "deco-sites/starting/sections/Head.tsx": $$$$$$$$12,
     "deco-sites/starting/sections/Header.tsx": $$$$$$$$13,
-    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$14,
-    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$15,
-    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$16,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$17,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$18,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$19,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$20,
+    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$15,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$16,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$17,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$18,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$19,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$20,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$21,
     "$live/sections/PageInclude.tsx": i2$$$9,
     "deco-sites/std/sections/configYourViews.global.tsx": i2$$$0,
     "deco-sites/std/sections/SEO.tsx": i2$$$1,
