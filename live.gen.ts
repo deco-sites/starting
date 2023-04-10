@@ -6,7 +6,8 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 
 import * as $0 from "./functions/LoadGitHubRaw.ts";
-import * as $$$$0 from "./routes/_app.tsx";
+import * as $$$$0 from "./routes/index.tsx";
+import * as $$$$1 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/Cms.tsx";
 import * as $$$$$1 from "./islands/Header.tsx";
 import * as $$$$$2 from "./islands/ImpactCalculator.tsx";
@@ -110,7 +111,8 @@ const manifest: DecoManifest = {
     "deco-sites/std/functions/vtexLegacyRelatedProductsLoader.ts": i2$16,
   },
   "routes": {
-    "./routes/_app.tsx": $$$$0,
+    "./routes/index.tsx": $$$$0,
+    "./routes/_app.tsx": $$$$1,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/live/workbench.ts": $live_workbench,
     "./routes/live/editorData.ts": $live_editorData,
