@@ -1,5 +1,4 @@
 export interface ButtonSwitcherProps {
-  themeDark: boolean;
   switcherButton1: {
     name: string;
     href: string;
@@ -10,7 +9,7 @@ export interface ButtonSwitcherProps {
   };
 }
 
-export default function ButtonSwitcher({ themeDark, switcherButton1, switcherButton2 }: ButtonSwitcherProps
+export default function ButtonSwitcher({infor, themeDark}: {infor:ButtonSwitcherProps ,themeDark:boolean}
 ) {
   const themeIsLigth = !themeDark;
 
@@ -27,9 +26,9 @@ export default function ButtonSwitcher({ themeDark, switcherButton1, switcherBut
             : "bg-primary-dark text-[#f3fff9ca]") +
             " " +
             "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px]  hover:shadow-button-hover-shadow transition-all duration-500"}
-          href={switcherButton1?.href}
+          href={infor.switcherButton1?.href}
         >
-          {switcherButton1?.name}
+          {infor.switcherButton1?.name}
         </a>
 
         <a
@@ -38,9 +37,9 @@ export default function ButtonSwitcher({ themeDark, switcherButton1, switcherBut
             : "bg-white text-dark-green border-2 border-dark-green shadow-button-shadow") +
             " " +
             "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px] hover:shadow-button-hover-shadow transition-all duration-500"}
-          href={switcherButton2?.href}
+          href={infor.switcherButton2?.href}
         >
-          {switcherButton2?.name}
+          {infor.switcherButton2?.name}
         </a>
       </div>
     </>
