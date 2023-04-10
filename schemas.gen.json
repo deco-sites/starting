@@ -2457,6 +2457,73 @@
       ],
       "title": "deco-sites/starting\\islands\\Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEltcGFjdENhbGN1bGF0b3IudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "mainText": {
+          "type": "string",
+          "title": "Main Text"
+        },
+        "formInfos": {
+          "type": "object",
+          "properties": {
+            "websiteLabel": {
+              "type": "string",
+              "title": "Website Label"
+            },
+            "sessionsLabel": {
+              "type": "string",
+              "title": "Sessions Label"
+            },
+            "conversionLabel": {
+              "type": "string",
+              "title": "Conversion Label"
+            },
+            "averageOrderLabel": {
+              "type": "string",
+              "title": "Average Order Label"
+            },
+            "trafficSplitLabel": {
+              "type": "string",
+              "title": "Traffic Split Label"
+            },
+            "trafficMobile": {
+              "type": "string",
+              "title": "Traffic Mobile"
+            },
+            "trafficDesktop": {
+              "type": "string",
+              "title": "Traffic Desktop"
+            }
+          },
+          "required": [
+            "websiteLabel",
+            "sessionsLabel",
+            "conversionLabel",
+            "averageOrderLabel",
+            "trafficSplitLabel",
+            "trafficMobile",
+            "trafficDesktop"
+          ],
+          "title": "Form Infos"
+        },
+        "potencialIncrease": {
+          "type": "string",
+          "title": "Potencial Increase"
+        },
+        "buttonText": {
+          "type": "string",
+          "title": "Button Text"
+        }
+      },
+      "required": [
+        "mainText",
+        "formInfos",
+        "potencialIncrease",
+        "buttonText"
+      ],
+      "title": "deco-sites/starting\\components\\ui\\ImpactCalculator.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9mbGFnLnRz@Flag": {
       "$ref": "#/root/flags",
       "title": "Flag"
@@ -3012,6 +3079,76 @@
         "peopleImage"
       ],
       "title": "deco-sites/starting\\components\\ui\\Community.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        }
+      },
+      "required": [],
+      "title": "listItem"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem"
+      },
+      "title": "listItem[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Benefits": {
+      "type": "object",
+      "properties": {
+        "mainTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "a short main title text",
+          "title": "Main Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "a short subtitle text",
+          "title": "Description"
+        },
+        "listItems": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem[]",
+          "description": "add a item to information list in contact page",
+          "title": "List Items"
+        }
+      },
+      "required": [
+        "listItems"
+      ],
+      "title": "Benefits"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "infor": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Benefits",
+          "description": "settings of benefits section in page",
+          "title": "Infor"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/starting\\components\\ui\\ContactUs.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlbGlnaHQudHN4@Props": {
       "type": "object",
@@ -3763,10 +3900,6 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyLnRzeA==@ButtonSwitcherProps": {
       "type": "object",
       "properties": {
-        "themeDark": {
-          "type": "boolean",
-          "title": "Theme Dark"
-        },
         "switcherButton1": {
           "type": "object",
           "properties": {
@@ -3805,7 +3938,6 @@
         }
       },
       "required": [
-        "themeDark",
         "switcherButton1",
         "switcherButton2"
       ],
@@ -4966,6 +5098,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4": {
+      "title": "./islands/ImpactCalculator.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEltcGFjdENhbGN1bGF0b3IudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ImpactCalculator.tsx"
+          ],
+          "default": "./islands/ImpactCalculator.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1NsaWRlckpTLnRzeA==": {
       "title": "./islands/SliderJS.tsx",
       "type": "object",
@@ -5192,6 +5345,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db250YWN0VXMudHN4": {
+      "title": "deco-sites/starting/sections/ContactUs.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/ContactUs.tsx"
+          ],
+          "default": "deco-sites/starting/sections/ContactUs.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EZWxpZ2h0LnRzeA==": {
       "title": "deco-sites/starting/sections/Delight.tsx",
       "type": "object",
@@ -5373,6 +5547,27 @@
             "deco-sites/starting/sections/Header.tsx"
           ],
           "default": "deco-sites/starting/sections/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbXBhY3RDYWxjdWxhdG9yLnRzeA==": {
+      "title": "deco-sites/starting/sections/ImpactCalculator.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEltcGFjdENhbGN1bGF0b3IudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/ImpactCalculator.tsx"
+          ],
+          "default": "deco-sites/starting/sections/ImpactCalculator.tsx"
         }
       }
     },
@@ -6046,6 +6241,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
         }
       ]
@@ -6103,6 +6301,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db21tdW5pdHkudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db250YWN0VXMudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EZWxpZ2h0LnRzeA=="
         },
         {
@@ -6128,6 +6329,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbXBhY3RDYWxjdWxhdG9yLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbnRlZ3JhdGlvbi50c3g="
