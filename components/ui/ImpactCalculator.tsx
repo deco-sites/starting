@@ -19,7 +19,7 @@ export interface Props{
 
 export default function ImpactCalculator({ mainText, formInfos, potencialIncrease, buttonText } : Props){
 
-    const inputClass = "w-full mt-2 pl-4 border-1 border-dark-green h-[52px] rounded-[4px]"
+    const inputClass = "w-full bg-[#F3FFF9] mt-2 pl-4 border-1 border-dark-green h-[52px] rounded-[4px]"
 
     const website = useSignal("")
     const sessions = useSignal("")
@@ -99,9 +99,9 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
     //const comment = {`left: calc(${( 73 + (Number(mobilePercent) / 100 * 18)) <= 75 ?73 + (Number(mobilePercent) / 100 * 18) >= 89 ? "" : "0px" :Number(mobilePercent) + "% - " + (73 + (Number(mobilePercent) / 100 * 18))}px)`}
 
     return(
-        <section class="">
+        <section class="bg-[#F3FFF9]">
             <div class="absolute bg-dark-green w-full h-[180px]"></div>
-            <div class="relative bg-white flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border-1 rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
+            <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border-1 rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
                 <div class="md:max-w-[40%]">
                     <p class="text-2xl md:text-5xl text-center md:leading-[53px] text-dark-green">{mainText}</p>
                 </div>
