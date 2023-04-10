@@ -13,7 +13,7 @@ export default function Delight({mainText, buttonText, href}: Props) {
         <p class="font-sans text-center not-italic leading-[38px] font-bold text-[#0A2121] max-w-[930px] text-[39px] md:text-[72px] lg:text-[92px] xl:text-[112px] leading-none z-10">
           {mainText}
         </p>
-        <button class="bg-[#0A2121] group h-10 md:h-12 w-full md:max-w-[329px] items-center text-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[16px] leading-[19.36px]">
+        <button class="bg-[#0A2121] group h-[53px] w-full md:max-w-[329px] items-center text-center text-[#F3FFF9] rounded font-inter font-normal not-italic text-[16px] leading-[19.36px]">
           <a class="flex justify-center items-center gap-[10px] h-full w-full" href={href}>
             {buttonText}
             <Icon class="hidden transition md:group-hover:block" id="WhiteArrow" width={15} height={15} strokeWidth={"1"} />
