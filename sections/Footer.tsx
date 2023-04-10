@@ -49,7 +49,7 @@ export default function Footer({menu, social}: Props) {
   return (
     <section class="bg-dark-green">
       <div class="max-w-screen-2xl m-auto pb-24 md:pb-32 py-8">
-        <div class="px-3 md:px-[2.03rem] flex flex-col md:flex-row gap-12 md:justify-between">
+        <div class="px-6 md:px-[2.03rem] flex flex-col md:flex-row gap-12 md:justify-between">
           <div class="flex flex-col gap-2">
             <a class="grid" href="#">
               <svg
