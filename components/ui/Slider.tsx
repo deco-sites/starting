@@ -8,7 +8,7 @@ type Props = JSX.IntrinsicElements["ul"] & {
 
 function Slider({
   children,
-  snap = "snap-center",
+  snap = "scroll-snap-center",
   class: _class = "gap-6 scrollbar-none",
   itemClass,
   ...props
@@ -16,7 +16,7 @@ function Slider({
   return (
     <ul
       data-slider
-      class={`grid grid-flow-col items-center overflow-x-auto overscroll-x-contain  ${_class}`}
+      class={`grid grid-flow-col items-center overflow-x-auto overscroll-x-contain snap-x snap-mandatory ${_class}`}
       {...props}
     >
       {Children.map(children, (child, index) => (

@@ -3039,6 +3039,11 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@PersonDepoiment": {
       "type": "object",
       "properties": {
+        "avatar": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "image of person",
+          "title": "Avatar"
+        },
         "alt": {
           "type": [
             "string",
@@ -3048,23 +3053,21 @@
           "title": "Alt"
         },
         "depoiment": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "description": "depoiment in text",
           "title": "Depoiment"
         },
         "signature": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "description": "depoiment signature",
           "title": "Signature"
         }
       },
-      "required": [],
+      "required": [
+        "avatar",
+        "depoiment",
+        "signature"
+      ],
       "title": "PersonDepoiment"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlcG9pbWVudHNDYXJyb3NzZWwudHN4@PersonDepoiment[]": {
@@ -3098,7 +3101,9 @@
           "description": "time (in seconds) to start the carousel autoplay"
         }
       },
-      "required": [],
+      "required": [
+        "depoiments"
+      ],
       "title": "deco-sites/starting\\components\\ui\\DepoimentsCarrossel.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERpZmZlcmVudGlhbHMudHN4@Sections": {
