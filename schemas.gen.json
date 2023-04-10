@@ -2507,6 +2507,10 @@
           ],
           "title": "Form Infos"
         },
+        "potencialIncrease": {
+          "type": "string",
+          "title": "Potencial Increase"
+        },
         "buttonText": {
           "type": "string",
           "title": "Button Text"
@@ -2515,6 +2519,7 @@
       "required": [
         "mainText",
         "formInfos",
+        "potencialIncrease",
         "buttonText"
       ],
       "title": "deco-sites/starting\\components\\ui\\ImpactCalculator.tsx@Props"

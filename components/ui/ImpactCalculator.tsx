@@ -1,5 +1,6 @@
 import { useSignal } from "@preact/signals";
 import { JSX } from 'preact'
+import Spinner from "deco-sites/starting/components/ui/Spinner.tsx";
 
 export interface Props{
     mainText: string;
@@ -12,21 +13,25 @@ export interface Props{
         trafficMobile: string;
         trafficDesktop: string;
     }
+    potencialIncrease: string;
     buttonText: string;
 }
 
-export default function ImpactCalculator({ mainText, formInfos, buttonText } : Props){
+export default function ImpactCalculator({ mainText, formInfos, potencialIncrease, buttonText } : Props){
 
-    const labelClass = ""
     const inputClass = "w-full mt-2 pl-4 border-1 border-dark-green h-[52px] rounded-[4px]"
 
     const website = useSignal("")
     const sessions = useSignal("")
-    const conversion = useSignal("")
-    const average = useSignal("")
+    const conversion = useSignal("1")
+    const average = useSignal("50")
 
     const desktopPercent = useSignal<number | undefined>(50)
     const mobilePercent = useSignal<number | undefined>(50)
+
+    const loading = useSignal(false)
+
+    const revenue = useSignal<null | number>(null)
 
     const handleChange = (e : HTMLInputElement | null) => {
         console.log(e?.value)
@@ -35,13 +40,50 @@ export default function ImpactCalculator({ mainText, formInfos, buttonText } : P
         console.log(73 + (Number(mobilePercent) / 100 * 18))
     }
 
-    const handleClick = (e : JSX.TargetedMouseEvent<HTMLButtonElement>) => {
+    /*const handleClick = (e : JSX.TargetedMouseEvent<HTMLButtonElement>) => {
         e.preventDefault()
-        fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}`)
+        loading.value = true
+        fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=mobile`)
         .then(response => response.json())
         .then(result => {
-            console.log(result)
+            const LCP = result.lighthouseResult.audits["largest-contentful-paint"].numericValue
+
+            const restInSeconds = (LCP - 2000) / 1000
+
+            const conversionOptimized = Number(conversion) * Math.pow(1.07, restInSeconds)
+
+            const newRevenue = Number(sessions) * (conversionOptimized / 100) * Number(average)
+
+            revenue.value = newRevenue
+
+            loading.value = false
+
         })
+    } */
+
+    const handleClick = (e : JSX.TargetedMouseEvent<HTMLButtonElement>) => {
+
+        const LCP = 3000
+
+        const restInSeconds = (LCP - 2000) / 1000
+
+        const conversionOptimized = Number(conversion) * Math.pow(1.07, restInSeconds)
+
+        const newRevenue = Number(sessions) * (conversionOptimized / 100) * Number(average)
+
+        revenue.value = newRevenue
+
+        loading.value = false
+
+    }
+
+    const formatPrice = (price : number | null) => {
+        const USDollar = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+        });
+        
+        return USDollar.format(price!)
     }
 
     const mobileNumber = Number(mobilePercent)
@@ -132,12 +174,19 @@ export default function ImpactCalculator({ mainText, formInfos, buttonText } : P
                                 <span class="max-w-[50px] text-[#66736C] text-[14px] text-right">{formInfos.trafficDesktop}</span>
                             </div>
                         </div>
-                        <button
-                        class="py-4 px-6 w-full bg-dark-green text-white rounded-[4px]"
-                        onClick={(e) => handleClick(e)}
-                        >
-                            {buttonText}
-                        </button>
+                        {
+                            revenue.value ? 
+                            <div>
+                                <span>{potencialIncrease}</span>
+                                <p class="text-[82px] font-bold">{formatPrice(Number(revenue))}<span class="text-[32px] font-normal">USD</span></p>
+                            </div> :
+                            <button
+                            class="py-4 px-6 w-full bg-dark-green text-white rounded-[4px]"
+                            onClick={(e) => handleClick(e)}
+                            >
+                                {loading.value ? <Spinner size={20} /> : buttonText}
+                            </button>
+                        }
                     </form>
                 </div>                        
             </div>
