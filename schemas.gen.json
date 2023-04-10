@@ -3767,68 +3767,6 @@
       ],
       "title": "deco-sites/starting\\sections\\Header.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xJbXBhY3RDYWxjdWxhdG9yLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "mainText": {
-          "type": "string",
-          "title": "Main Text"
-        },
-        "formInfos": {
-          "type": "object",
-          "properties": {
-            "websiteLabel": {
-              "type": "string",
-              "title": "Website Label"
-            },
-            "sessionsLabel": {
-              "type": "string",
-              "title": "Sessions Label"
-            },
-            "conversionLabel": {
-              "type": "string",
-              "title": "Conversion Label"
-            },
-            "averageOrderLabel": {
-              "type": "string",
-              "title": "Average Order Label"
-            },
-            "trafficSplitLabel": {
-              "type": "string",
-              "title": "Traffic Split Label"
-            },
-            "trafficMobile": {
-              "type": "string",
-              "title": "Traffic Mobile"
-            },
-            "trafficDesktop": {
-              "type": "string",
-              "title": "Traffic Desktop"
-            }
-          },
-          "required": [
-            "websiteLabel",
-            "sessionsLabel",
-            "conversionLabel",
-            "averageOrderLabel",
-            "trafficSplitLabel",
-            "trafficMobile",
-            "trafficDesktop"
-          ],
-          "title": "Form Infos"
-        },
-        "buttonText": {
-          "type": "string",
-          "title": "Button Text"
-        }
-      },
-      "required": [
-        "mainText",
-        "formInfos",
-        "buttonText"
-      ],
-      "title": "deco-sites/starting\\sections\\ImpactCalculator.tsx@Props"
-    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEludGVncmF0aW9ucy50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -5526,7 +5464,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xzZWN0aW9uc1xJbXBhY3RDYWxjdWxhdG9yLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEltcGFjdENhbGN1bGF0b3IudHN4@Props"
         }
       ],
       "required": [

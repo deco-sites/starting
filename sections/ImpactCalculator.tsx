@@ -1,18 +1,6 @@
 import ImpactCalculator from "deco-sites/starting/islands/ImpactCalculator.tsx";
 
-export interface Props{
-    mainText: string;
-    formInfos:{
-        websiteLabel: string;
-        sessionsLabel: string;
-        conversionLabel: string;
-        averageOrderLabel: string;
-        trafficSplitLabel: string;
-        trafficMobile: string;
-        trafficDesktop: string;
-    }
-    buttonText: string;
-}
+import type { Props } from "deco-sites/starting/components/ui/ImpactCalculator.tsx"
 
   function ImpactCalculatorSection(props: Props) {
     return <ImpactCalculator {...props} />;
