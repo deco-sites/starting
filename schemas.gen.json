@@ -3080,6 +3080,76 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Community.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        }
+      },
+      "required": [],
+      "title": "listItem"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem"
+      },
+      "title": "listItem[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Benefits": {
+      "type": "object",
+      "properties": {
+        "mainTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "a short main title text",
+          "title": "Main Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "a short subtitle text",
+          "title": "Description"
+        },
+        "listItems": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem[]",
+          "description": "add a item to information list in contact page",
+          "title": "List Items"
+        }
+      },
+      "required": [
+        "listItems"
+      ],
+      "title": "Benefits"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "infor": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Benefits",
+          "description": "settings of benefits section in page",
+          "title": "Infor"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/starting\\components\\ui\\ContactUs.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlbGlnaHQudHN4@Props": {
       "type": "object",
       "properties": {
@@ -5275,6 +5345,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db250YWN0VXMudHN4": {
+      "title": "deco-sites/starting/sections/ContactUs.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/ContactUs.tsx"
+          ],
+          "default": "deco-sites/starting/sections/ContactUs.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EZWxpZ2h0LnRzeA==": {
       "title": "deco-sites/starting/sections/Delight.tsx",
       "type": "object",
@@ -6208,6 +6299,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db21tdW5pdHkudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db250YWN0VXMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9EZWxpZ2h0LnRzeA=="
