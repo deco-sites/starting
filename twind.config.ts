@@ -90,6 +90,7 @@ export default {
         "footer-shadow": "0px -6px 8px rgba(255, 255, 255, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.5)",
         "button-shadow": "0px 0px 4px rgba(0, 0, 0, 0.35)",
         "button-hover-shadow": "-2px -2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.2)",
+        "button-white-hover-shadow": "-2px -2px 4px rgba(255, 255, 255, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.06)",
       },
       transitionProperty: {
         "height": "height",
