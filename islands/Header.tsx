@@ -1,3 +1,5 @@
+import { IS_BROWSER } from "https://deno.land/x/fresh@1.1.4/src/runtime/utils.ts";
+import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
 
 export interface Props {
@@ -12,7 +14,16 @@ export interface Props {
  }
 
 export default function Header(props: Props) {
-const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
+    const urlPortuguese = useSignal("")
+    const urlEnglish = useSignal("")
+
+    if(IS_BROWSER){
+        console.log(window.location.pathname)
+        urlPortuguese.value = window.location.pathname.replace("en", "pt")
+        urlEnglish.value = window.location.pathname.replace("pt", "en")
+    }
+
 return (
     <section class="bg-[#0A2121] fixed top-0 z-50 w-full">
     <nav class="flex flex-row justify-between items-center h-[63px] pb-[4px] max-w-screen-2xl m-auto">
@@ -70,7 +81,7 @@ return (
             
             </button>
         </li>
-        <div class={open ? "flex flex-col justify-between w-full gap-[40px] absolute bg-[#0A2121] left-0 top-[63px] z-50 py-[24px] px-3 md:hidden" : "hidden"}>
+        <div class={open ? "flex flex-col justify-between w-full h-[94vh] gap-[40px] absolute bg-[#0A2121] left-0 top-[63px] z-50 py-[24px] px-3 md:hidden" : "hidden"}>
             <ul class="flex flex-col divide-y divide-semi-white-13">
             {props.menuLinks.map((link) => {
                 return (
@@ -127,7 +138,7 @@ return (
             <div class="absolute right-0 mt-5 hidden group-focus-within:block">
             <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
                 <div class="flex flex-row items-center justify-between">
-                <a href={props.pt.url} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
+                <a href={urlPortuguese.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
                     <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">{props.pt.label}</p>
                     <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class={props.pt.selected ? '' : 'hidden'}>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z" fill="#2FD180"/>
@@ -135,7 +146,7 @@ return (
                 </a>  
                 </div>
                 <div class="flex flex-row items-center justify-between">
-                <a href={props.eng.url} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
+                <a href={urlEnglish.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
                     <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">{props.eng.label}</p>
                     <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class={props.eng.selected ? '' : 'hidden'}>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z" fill="#2FD180"/>
