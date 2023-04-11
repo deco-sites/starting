@@ -18,7 +18,7 @@ export default function ButtonSwitcher({infor, themeDark}: {infor:ButtonSwitcher
       <div
         id="switcehr-page"
         class={(themeIsLigth ? "bg-[#CDE5D9]" : "bg-primary-dark") + " " +
-          "w-full flex p-2 gap-2  rounded-full border-2 border-white border-opacity-5 mb-10 lg:(w-1/3)"}
+          "w-full h-[62px] flex p-2 gap-2  rounded-full border-2 border-white border-opacity-5 mb-10 lg:(w-1/3)"}
       >
         <a
           class={(themeIsLigth
