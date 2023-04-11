@@ -1,6 +1,7 @@
 import { useSignal } from "@preact/signals";
 import { JSX } from 'preact'
 import Spinner from "deco-sites/starting/components/ui/Spinner.tsx";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface Props{
     mainText: string;
@@ -103,7 +104,7 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
             <div class="absolute bg-dark-green w-full h-[180px]"></div>
             <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border-1 rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
                 <div class="md:max-w-[40%]">
-                    <p class="text-2xl md:text-5xl text-center md:leading-[53px] text-dark-green">{mainText}</p>
+                    <p class="text-2xl md:text-5xl text-center md:text-left md:leading-[53px] text-dark-green">{mainText}</p>
                 </div>
                 <div>
                     <form action="#" class="flex flex-col gap-6">
@@ -181,10 +182,16 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                                 <p class="text-[82px] font-bold">{formatPrice(Number(revenue))}<span class="text-[32px] font-normal">USD</span></p>
                             </div> :
                             <button
-                            class="py-4 px-6 w-full bg-dark-green text-white rounded-[4px]"
+                            class="flex justify-center items-center py-4 group px-6 w-full bg-dark-green text-white rounded-[4px]"
                             onClick={(e) => handleClick(e)}
                             >
-                                {loading.value ? <Spinner size={20} /> : buttonText}
+                                {loading.value ? 
+                                <Spinner size={20} /> : 
+                                <div class="flex justify-center items-center gap-2">
+                                    <p>{buttonText}</p> 
+                                    <Icon class="hidden transition lg:group-hover:block" id="WhiteArrow" width={15} height={15} strokeWidth={"1"} />
+                                </div>
+                                }
                             </button>
                         }
                     </form>
