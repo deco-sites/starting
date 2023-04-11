@@ -3,6 +3,7 @@ import SliderControllerJS from "deco-sites/starting/components/ui/SliderJS.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import type { ImageObject } from "deco-sites/std/commerce/types.ts";
+import Icon from "$start/components/ui/Icon.tsx";
 
 interface Dots {
   images: LiveImage[];
@@ -37,37 +38,18 @@ function Controls() {
     <>
       <div class="flex flex-row justify-end gap-2 pt-6 pb-12 md:pt-0 md:pb-0 md:py-0">
         <button
-          class="rounded-full p-3 bg-white focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:left-[6rem] md:top-[40%]"
+          class="rounded-full p-3 bg-dark-green md:bg-[#fff] focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:left-[1rem] md:top-[40%]"
           data-slide="prev"
           aria-label="Previous item"
         >
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 11 19"
-            stroke-width="1.5"
-            stroke="white"
-            class="w-6 h-6"
-            style="transform:rotateY(180deg)"
-          >
-            <path d="M1 1.57812L9.56198 8.78821C10.0463 9.19606 10.0345 9.94566 9.53749 10.338L1 17.0781" stroke="black" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+          <Icon class="text-[#fff] md:text-[#000]" id="ChevronLeft" width={30} height={30} strokeWidth={"2"} />
         </button>
         <button
-          class="rounded-full p-3 bg-white focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:top-[40%] right-[6rem]"
+          class="rounded-full p-3 bg-dark-green md:bg-[#fff] focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:top-[40%] right-[1rem]"
           data-slide="next"
           aria-label="Next item"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 11 19"
-            stroke-width="1.5"
-            stroke="white"
-            class="w-6 h-6"
-          >
-            <path d="M1 1.57812L9.56198 8.78821C10.0463 9.19606 10.0345 9.94566 9.53749 10.338L1 17.0781" stroke="black" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+          <Icon class="text-[#fff] md:text-[#000]" id="ChevronRight" width={30} height={30} strokeWidth={"2"} />
         </button>
       </div>
     </>
@@ -126,21 +108,30 @@ export default function DepoimentsCarroussel(
     
     <div
       id={thumbsSliderId}
-      class="block bg-dark-green relative max-w-screen-2xl m-auto"
+      class="block px-6 md:px-[2rem] my-[3rem] relative"
     >
 
-      <Dots images={images}/>
+      {/* <Dots images={images}/> */}
         <Slider
-          itemClass="min-h-[unset] last:mr-14"
-          class="relative gap-14 row-start-1 p-0"
+          itemClass="max-h-[520px] w-[calc(100vw-3rem)] md:w-[calc(100vw-4rem)] 2xl:w-[1536px]"
+          class="max-w-screen-2xl overflow-x-hidden mx-auto relative bg-dark-green rounded-[48px] row-start-1 p-0"
           snap="snap-center"
         >
           {depoiments?.map((item) => {
               return(
-                <div class="h-[200px]">
-                  <div key={item?.signature} class="flex flex-col justify-center items-center w-screen">
-                    {/* <img src={depoiment?.avatar} alt={depoiment?.alt} /> */}
-                    <p class="font-sans text-[white] text-[20px] p-4 lg:( px-24 text-[40px])">
+                <div class="w-[calc(100vw-3rem)] md:w-[calc(100vw-4rem)] 2xl:w-[1536px]">
+                  <div key={item?.signature} class="py-[50px] px-[25px] flex flex-col justify-center items-center gap-[36px]">
+                    <Image
+                      style={{ aspectRatio: "122 / 122" }}
+                      src={item?.avatar}
+                      alt={item?.avatar}
+                      width={122}
+                      class="rounded-full"
+                      height={122}
+                      // Preload LCP image for better web vitals
+                      loading={"lazy"}
+                    />
+                    <p class="font-sans text-[white] text-[20px] p-4 lg:(px-24 text-[40px])">
                       {item?.depoiment}
                     </p>
                     <span class="text-[#02F67C] text-[16px]">
@@ -151,7 +142,10 @@ export default function DepoimentsCarroussel(
               )
           })}
         </Slider>
-      <Controls />
+
+      <div class="max-w-screen-2xl mx-auto relative block md:top-[-200px] lg:top-[-250px]">
+        <Controls />
+      </div>
 
       <SliderControllerJS rootId={thumbsSliderId} />
 
