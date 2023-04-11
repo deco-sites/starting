@@ -69,6 +69,7 @@ export default {
     },
     extend: {
       backgroundImage: {
+        "contact-us-bg-gradient":"linear-gradient(169.63deg, #00FF80 -0.25%, #095F5D 152.54%), conic-gradient(from -90deg at 50% 50%, #FFFFFF 0deg, rgba(255, 255, 255, 0) 187.5deg, #FFFFFF 360deg);",
         "white-green":
           "linear-gradient(to top, #02F67C 0%, #02F67C 38%, #FFFFFF 38%, #FFFFFF 100%)",
         "linear-white-green":

@@ -20,7 +20,7 @@ export interface Props{
 
 export default function ContactUs ({infor}: Props){
     return (
-        <div class="flex font-sans p-40">
+        <div class="flex font-sans p-40  overflow-x-hidden">
             <div class="w-1/2 text-left">
                 <h1 class="text-dark-green text-5xl leading-[53px]">{infor?.mainTitle}</h1>
                 <h2 class="font-normal text-3xl text-dark-green opacity-50 pt-4 leading-9">{infor?.description}</h2>
@@ -47,7 +47,7 @@ export default function ContactUs ({infor}: Props){
                 </ol>
             </div>
             <div class="w-1/2 relative">
-                <span class="w-[40px] h-full bg-primary"></span>
+                <div class="w-[352px] h-[180vh] bg-contact-us-bg-gradient absolute -rotate-[35deg] -z-10 left-[300px] -top-[120px] overflow-y-hidden"></div>
             </div>
         </div>
     )
