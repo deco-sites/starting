@@ -65,16 +65,16 @@ export default function MainBanner({switcherButton, themeDark, mainText, descrip
           <p class={(themeIsLigth ? "text-frame-515-rgba" : "text-[#f3fff9b0]") +" "+ "font-sans font-normal not-italic text-[32px] leading-[2rem]"}>
           {descriptionText}
           </p>
-          <div id="buttons-wrapper" class="w-full flex flex-col gap-4">
-            <button class={(themeIsLigth ? "bg-dark-green" : "bg-white" ) + " " + "w-full group flex lg:justify-start justify-center items-center gap-[10px] rounded p-[14px] border-1 border-dark-green" }>
+          <div id="buttons-wrapper" class="w-full flex flex-col gap-4 ">
+            <button class={(themeIsLigth ? "bg-dark-green" : "bg-white" ) + " " + "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1 border-dark-green" }>
  
               <a class={themeIsLigth ? "text-white" : "text-dark-green" + " " + "text-[16px] font-medium"} href=        {buttonCta1?.href}>
                 {buttonCta1?.buttonName}
               </a>
-              <Icon class="hidden transition lg:group-hover:block" id={ themeIsLigth ? "WhiteArrow" : "GreenArrow" } width={15} height={15} strokeWidth={"1"}/>
+              <Icon class="hidden transition lg:group-hover:(block)" id={ themeIsLigth ? "WhiteArrow" : "GreenArrow" } width={15} height={15} strokeWidth={"1"}/>
             </button>
 
-            <button class={(themeIsLigth ? "bg-white" : "bg-dark-green") + " "+ "w-full group flex lg:justify-start justify-center items-center gap-[10px] rounded p-[14px] border-1 border-dark-green" }>
+            <button class={(themeIsLigth ? "bg-white border-dark-green" : "bg-none border-white") + " "+ "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1" }>
 
               <a class={(themeIsLigth ? "text-dark-green" : "text-white") + " " + "text-[16px] font-medium"} href={buttonCta2?.href}>
                 {buttonCta2?.buttonName}
