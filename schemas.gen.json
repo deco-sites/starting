@@ -3684,11 +3684,17 @@
           "title": "Url"
         },
         "imageUrl": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Image Url"
         },
         "faviconUrl": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Favicon Url"
         },
         "styleUrls": {
@@ -3699,18 +3705,17 @@
           "title": "Style Urls"
         },
         "themeColor": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Theme Color"
         }
       },
       "required": [
         "title",
         "description",
-        "url",
-        "imageUrl",
-        "faviconUrl",
-        "styleUrls",
-        "themeColor"
+        "url"
       ],
       "title": "deco-sites/starting\\sections\\Head.tsx@Props"
     },
