@@ -97,6 +97,22 @@ export default {
         "spacing": "margin, padding",
       },
       keyframes: {
+        blur1:{
+          "0%": {transform: "translateY(0) translateX(0)"},
+          "20%": {transform: "translateY(25%) translateX(0)"},
+          "40%": {transform: "translateY(40%) translateX(-10%) rotate(-90deg)"},
+          "60%": {transform: "translateY(20%) translateX(-25%) rotate(-120deg)"},
+          "80%": {transform: "translateY(0%) translateX(-15%) rotate(-90deg)"},
+          "100%": {transform: "translateY(0) translateX(0)"},
+        },
+        blur2:{
+          "0%": {transform: "translateY(0) translateX(0)"},
+          "20%": {transform: "translateY(-15%) translateX(-15%) rotate(90deg)"},
+          "40%": {transform: "translateY(-30%) translateX(0) rotate(120deg)"},
+          "60%": {transform: "translateY(-20%) translateX(40%) scale(130%) rotate(90deg)"},
+          "80%": {transform: "translateY(-10%) translateX(25%) scale(115%)"},
+          "100%": {transform: "translateY(0) translateX(0)"},
+        },
         switcherText10:{
           "0%": { transform: "translateY(0%)" , opacity:1 },
           "4%": { transform: "translateY(0%)" , opacity:1 },
@@ -410,6 +426,8 @@ export default {
         },     
       },
       animation: {
+        blur1: "blur1 15s linear infinite",
+        blur2: "blur2 15s linear infinite",
         switcherText10: "switcherText10 ease 13s infinite",
         switcherText20: "switcherText20 ease 13s infinite",
         switcherText30: "switcherText30 ease 13s infinite",
