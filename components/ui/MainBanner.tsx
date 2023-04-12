@@ -48,7 +48,7 @@ export default function MainBanner({switcherButton, themeDark, mainText, descrip
           <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ " inline-block font-sans w-full font-bold not-italic text-[13.2vw] leading-[3.5rem] md:(w-full max-w-[1200px] text-[112px] leading-[6.5rem])"}>
                 {mainText}
                 {
-                activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] pt-0 relative text-center inline-flex pl-3.5  md:(h-[120px] pl-6 pt-6 w-auto)">
+                activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] pt-0 relative text-center inline-flex pl-3.5 md:(h-[90px] pt-0)  xl:(h-[120px] pl-6 pt-6 w-auto)">
                 <span style="color: #2FD180" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText30">30%</span>
