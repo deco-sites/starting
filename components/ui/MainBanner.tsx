@@ -45,7 +45,7 @@ export default function MainBanner({switcherButton, themeDark, mainText, descrip
             infor={switcherButton}
             themeDark={themeDark}
           />
-          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex justify-end items-end font-sans w-full font-bold not-italic text-[13.2vw] leading-[3.5rem] md:(w-full max-w-[1200px] text-[112px] leading-[6.5rem])"}>
+          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ "flex  justify-end items-end font-sans w-full font-bold not-italic text-[13.2vw] leading-[3.5rem] md:(w-full max-w-[1200px] text-[112px] leading-[6.5rem])"}>
 
                 {mainText}
                 {
