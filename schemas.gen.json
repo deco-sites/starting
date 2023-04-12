@@ -3047,9 +3047,13 @@
           "type": "string",
           "title": "Href Second Button"
         },
-        "blurBackground": {
+        "blur1Background": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "title": "Blur Background"
+          "title": "Blur1 Background"
+        },
+        "blur2Background": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Blur2 Background"
         },
         "peopleImage": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
@@ -3075,7 +3079,8 @@
         "secondText",
         "labelSecondButton",
         "hrefSecondButton",
-        "blurBackground",
+        "blur1Background",
+        "blur2Background",
         "peopleImage"
       ],
       "title": "deco-sites/starting\\components\\ui\\Community.tsx@Props"

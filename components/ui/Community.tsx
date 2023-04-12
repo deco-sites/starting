@@ -9,17 +9,21 @@ export interface Props {
   hrefFirstButton?: string;
   labelSecondButton: string;
   hrefSecondButton: string;
-  blurBackground: LiveImage;
+  blur1Background: LiveImage;
+  blur2Background: LiveImage;
   peopleImage: LiveImage;
   lazyload?: false | true;
 }
 
-export default function Community({lazyload, blurBackground, peopleImage, mainText, secondText, labelFirstButton, hrefFirstButton, labelSecondButton, hrefSecondButton}: Props) {
+export default function Community({lazyload, blur1Background, blur2Background, peopleImage, mainText, secondText, labelFirstButton, hrefFirstButton, labelSecondButton, hrefSecondButton}: Props) {
   return (
-    <section class="flex flex-col items-center justify-center lg:(flex-row-reverse gap-[75px]) bg-white py-[63px] px-6 md:px-[2rem] max-w-screen-2xl mx-auto">
-      <div class="relative lg:w-[50%] min-h-[360px]">
-        <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="relative w-full" width={366} height={366} src={blurBackground}/>
-        <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="absolute w-full top-0" width={366} height={339} src={peopleImage}/>
+    <section class="flex flex-col items-center justify-center lg:(flex-row-reverse gap-[75px]) bg-white py-[63px] px-6 md:px-[2rem] max-w-screen-2xl mx-auto overflow-x-hidden overflow-y-hidden 2xl:(overflow-x-unset overflow-y-unset)">
+      <div class="relative lg:w-[50%] min-h-[500px] sm:min-h-[800px] lg:min-h-[821px]">
+        <div class="relative w-full min-h-[500px] sm:min-h-[800px] lg:min-h-[821px] min-w-[100vw] lg:min-w-[100%]">
+          <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="absolute top-[0] right-[-75px] animate-blur1 lg:(w-[600px] h-[600px]) 2xl:(w-[700px] h-[700px])" width={400} height={400} src={blur1Background}/>
+          <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="absolute top-[140px] animate-blur2 lg:(w-[600px] h-[600px]) 2xl:(w-[700px] h-[700px])" width={400} height={400} src={blur2Background}/>
+        </div>
+        <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="absolute overflow-y-hidden w-full top-0 mt-[10%]" width={366} height={339} src={peopleImage}/>
       </div>
       <div class="flex flex-col lg:w-[50%] gap-[24px] mt-[40px]">
         <h2 class="text-[56px] lg:(order-1 text-[70px] leading-[81px]) xl:text-[80px] text-[#1F261F] font-bold leading-[54px]">{mainText}</h2>
