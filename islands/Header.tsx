@@ -37,27 +37,27 @@ return (
             </a>
         </li>
         </ul>
-        <ul class="hidden md:flex md:flex-row  h-full">
+        <ul class="hidden md:flex md:flex-row h-full group">
         {props.menuLinks.map((link, index) => {
             return (
-            <li class="relative group h-full grid">
+            <li class="relative group-[item] h-full grid hover:children:text-[#02F67C]">
                 <a
                 target={link.targetBlank ? '_blank' : '_self'}
                 href={link.href}
-                class="flex items-center h-full px-[24px] self-center font-inter font-normal text-[16px] bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 group-hover:text-[#02F67C]"
+                class="flex items-center h-full px-[24px] self-center font-inter font-normal text-[16px] bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 hover:children:bg-linear-transp-green-transp flex justify-center"
                 style="background-size: 200%;"
                 >
                 {link.label}
-                </a>
+                
                 <div
-                class="absolute w-full h-[4px] bg-transparent bottom-[-4px] z-20 bg-position-100 transition-colors ease-in duration-300 group-hover:bg-linear-transp-green-transp"
+                class="absolute w-full h-[4px] bg-transparent bottom-[-4px] z-20 bg-position-100 transition-colors ease-in duration-[0]"
                 >
                 </div>
-                <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 group-hover:bg-[rgba(0,0,0,0)]" style="background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,255,128,1) 100%);"></div>
-                <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 z-10 group-hover:bg-[#0A2121]"></div>
+                </a>
             </li>
             )
         })}
+            <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:(bg-transparent bg-none)"></div>
         </ul>
         <ul class="md:hidden px-3">
         <li class="grid items-center">

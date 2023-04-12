@@ -84,6 +84,7 @@ export default {
         "linear-border": "linear-gradient(31deg, #ffffff 0.89%, #053535e8 25%, #053535e8 75%, #ffffff 99.08%)",
         "linear-y-border": "linear-gradient(180deg, #F3FFF9 0.89%, #053535e8 80.08%, transparent 99%)",
         "dark-green-gradient": "linear-gradient(180deg, #0A2121 0%, #053535 100%)",
+        "linear-header": "linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,255,128,1) 100%)"
       },
       boxShadow: {
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",
