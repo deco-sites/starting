@@ -13,9 +13,9 @@ export default function Faq({questions}: Props) {
             <details class="border-b border-solid border-[#131614]">
               <summary class="flex flex-row py-5 items-center gap-[16px] group cursor-pointer">
                 <Icon class="" id="ChevronRight" width={15} height={15} strokeWidth={"3"} />
-                <p class="font-inter font-normal not-italic text-[22px] leading-[26.63px] text-[#131614] md:text-[32px] md:leading-[38.73px]">{item.question}</p>
+                <p class="font-normal not-italic text-[22px] leading-[26.63px] text-[#131614] md:text-[32px] md:leading-[38.73px]">{item.question}</p>
               </summary>
-              <p class="pl-[36px] pb-5 font-inter font-normal not-italic text-[16px] leading-[24px] text-[#131614] md:text-[20px] md:leading-[26.4px]">{item.answer}</p>
+              <p class="pl-[36px] pb-5 font-normal not-italic text-[16px] leading-[24px] text-[#131614] md:text-[20px] md:leading-[30px]">{item.answer}</p>
             </details>
           )
         })}

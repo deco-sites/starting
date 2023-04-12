@@ -135,7 +135,7 @@ return (
                 <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#fff]" stroke="#55D695" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
             </button>
-            <div class="absolute right-0 mt-5 hidden group-focus-within:block">
+            <div class="absolute right-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#fff]">
             <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
                 <div class="flex flex-row items-center justify-between">
                 <a href={urlPortuguese.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">

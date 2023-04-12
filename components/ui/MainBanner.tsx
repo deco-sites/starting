@@ -49,7 +49,6 @@ export default function MainBanner({switcherButton, themeDark, mainText, descrip
                 {mainText}
                 {
                 activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] pt-0 relative text-center inline-flex pl-3.5  md:(h-[120px] pl-6 pt-6 w-auto)">
-                
                 <span style="color: #2FD180" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText30">30%</span>
@@ -58,10 +57,8 @@ export default function MainBanner({switcherButton, themeDark, mainText, descrip
                 <span style="color: #2FD180" class="absolute animate-switcherText60">60%</span>
                 <span style="color: #2FD180" class="absolute animate-switcherText70">70%</span>
               </div> : null
-              }
-    
-              
-        </h1>
+            }  
+          </h1>
         </div>
         <div class="flex p-4 flex-col gap-20 justify-center items-center lg:(flex-row p-8)">
         <div class="flex flex-col gap-[2rem] lg:(w-[46%] items-center)">
