@@ -7,6 +7,9 @@ export default function GlobalTags(){
             <style
                 dangerouslySetInnerHTML={{
                 __html: `
+                body {
+                    overflow-x: hidden;
+                }
                 /* latin */
                 @font-face {
                     font-family: 'Albert Sans';
