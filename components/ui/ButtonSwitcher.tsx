@@ -33,10 +33,10 @@ export default function ButtonSwitcher({infor, themeDark}: {infor:ButtonSwitcher
 
         <a
           class={(themeIsLigth
-            ? "bg-[#CDE5D9] text-dark-green"
-            : "bg-white text-dark-green border-2 border-dark-green shadow-button-shadow") +
+            ? "bg-[#CDE5D9] text-dark-green hover:shadow-button-white-hover-shadow "
+            : "bg-white text-dark-green shadow-button-shadow hover:shadow-none") +
             " " +
-            "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px] hover:shadow-button-white-hover-shadow transition-all duration-500"}
+            "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px] transition-all duration-500 border-none"}
           href={infor.switcherButton2?.href}
         >
           {infor.switcherButton2?.name}
