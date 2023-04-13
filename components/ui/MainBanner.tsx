@@ -1,6 +1,5 @@
 import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 import Image from "deco-sites/std/components/Image.tsx"
-import ButtonSwitcher,{ButtonSwitcherProps} from "deco-sites/starting/components/ui/ButtonSwitcher.tsx";
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
@@ -41,10 +40,7 @@ export default function MainBanner({switcherButton, themeDark, mainText, descrip
     <div class={(themeIsLigth ? " bg-[#F3FFF9]":"bg-dark-green-gradient") +" "+ "flex flex-col mb-0 pb-[5rem]"}>
       <div class="max-w-screen-2xl m-auto">
         <div class="max-w-[100vw] px-4 pt-24 pb-8 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
-          <ButtonSwitcher
-            infor={switcherButton}
-            themeDark={themeDark}
-          />
+
           <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ " inline-block font-sans w-full font-bold not-italic text-[13.2vw] leading-[3.5rem] md:(w-full max-w-[1200px] text-[112px] leading-[6.5rem])"}>
                 {mainText}
                 {
