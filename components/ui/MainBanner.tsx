@@ -19,6 +19,8 @@ export interface Props {
   };
 
   miniBanner: bannerProps;
+  /** @description Default: 13.2vw */
+  mobileH1Size?: string,
 }
 
 export interface bannerProps{
@@ -31,7 +33,7 @@ export interface bannerProps{
 }
 
 
-export default function MainBanner({ themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner}: Props) {
+export default function MainBanner({ themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner, mobileH1Size = '13.2vw'}: Props) {
 
   const themeIsLigth = !themeDark
 
@@ -40,7 +42,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
       <div class="max-w-screen-2xl m-auto">
         <div class="max-w-[100vw] px-4 pt-24 pb-8 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
 
-          <h1 class={(themeIsLigth ? "text-dark-green" : "text-white") +" "+ " inline-block font-sans w-full font-bold not-italic text-[13.2vw] leading-[3.5rem] md:(w-full max-w-[1280px] text-[112px] leading-[6.5rem])"}>
+          <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[3.5rem] md:(w-full max-w-[1280px] text-[112px] leading-[6.5rem])`}>
                 {mainText}
                 {
                 activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] pt-0 absolute text-center inline-flex pl-3.5 md:(h-[90px] pt-0 mt-[-1.5rem]) xl:(h-[120px] pl-6 pt-6 w-auto)">

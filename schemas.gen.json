@@ -4002,6 +4002,14 @@
         "miniBanner": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL01haW5CYW5uZXIudHN4@bannerProps",
           "title": "Mini Banner"
+        },
+        "mobileH1Size": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Default: 13.2vw",
+          "title": "Mobile H1 Size"
         }
       },
       "required": [
