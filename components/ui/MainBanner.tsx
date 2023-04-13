@@ -59,7 +59,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
         </div>
         <div class="flex p-4 flex-col gap-20 justify-center items-center lg:(flex-row p-8)">
         <div class="flex flex-col gap-[2rem] lg:(w-[46%] items-center)">
-          <p class={(themeIsLigth ? "text-frame-515-rgba" : "text-[#f3fff9b0]") +" "+ "font-sans font-normal not-italic text-[32px] leading-[2rem]"}>
+          <p class={(themeIsLigth ? "text-frame-515-rgba" : "text-[#f3fff9b0]") +" "+ "font-sans font-normal not-italic text-[32px] leading-[1.18]"}>
           {descriptionText}
           </p>
           <div id="buttons-wrapper" class="w-full flex flex-col gap-4 ">
@@ -82,9 +82,9 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
           </div>
         </div>
         
-        <div class={(themeIsLigth ? "bg-dark-green text-white" : "bg-primary text-dark-green") +" "+ "w-[91vw] h-80 flex flex-col relative -left-[20px] overflow-hidden rounded-r-full lg:(w-[80%] h-[300px] flex-row) group font-inter"}>
+        <div class={(themeIsLigth ? "bg-dark-green text-white" : "bg-primary text-dark-green") +" "+ "w-[91vw] h-80 flex flex-col relative -left-[20px] overflow-hidden rounded-r-full lg:(w-[80%] h-[300px] flex-row) group"}>
             <div class="flex justify-start items-center lg:justify-center">
-              <h3 class="w-[80%] p-6 pt-8 text-[24px] font-medium leading-9 lg:(w-full px-10 text-[32px])">{miniBanner?.titleText}</h3>
+              <h3 class="w-[80%] p-6 pt-8 text-[24px] font-medium leading-[1.18] lg:(w-full px-10 text-[32px])">{miniBanner?.titleText}</h3>
             </div>
             <div class="w-full relative rounded-r-full lg:(w-1/2)">
 
