@@ -3161,6 +3161,54 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Community.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyRm9ybXMudHN4@ButtonSwitcherFormsProps": {
+      "type": "object",
+      "properties": {
+        "switchB1": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Name"
+            },
+            "actionUrl": {
+              "type": "string",
+              "title": "Action Url"
+            }
+          },
+          "required": [
+            "actionUrl"
+          ],
+          "title": "Switch B1"
+        },
+        "switchB2": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "actionUrl": {
+              "type": "string",
+              "title": "Action Url"
+            }
+          },
+          "required": [
+            "name",
+            "actionUrl"
+          ],
+          "title": "Switch B2"
+        }
+      },
+      "required": [
+        "switchB1",
+        "switchB2"
+      ],
+      "title": "ButtonSwitcherFormsProps"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem": {
       "type": "object",
       "properties": {
@@ -3222,13 +3270,19 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Props": {
       "type": "object",
       "properties": {
+        "switcherButtonConfigs": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyRm9ybXMudHN4@ButtonSwitcherFormsProps",
+          "title": "Switcher Button Configs"
+        },
         "infor": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Benefits",
           "description": "settings of benefits section in page",
           "title": "Infor"
         }
       },
-      "required": [],
+      "required": [
+        "switcherButtonConfigs"
+      ],
       "title": "deco-sites/starting\\components\\ui\\ContactUs.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlbGlnaHQudHN4@Props": {
@@ -4064,52 +4118,6 @@
       ],
       "title": "deco-sites/starting\\components\\ui\\Integrations.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyLnRzeA==@ButtonSwitcherProps": {
-      "type": "object",
-      "properties": {
-        "switcherButton1": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "title": "Name"
-            },
-            "href": {
-              "type": "string",
-              "title": "Href"
-            }
-          },
-          "required": [
-            "name",
-            "href"
-          ],
-          "title": "Switcher Button1"
-        },
-        "switcherButton2": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "title": "Name"
-            },
-            "href": {
-              "type": "string",
-              "title": "Href"
-            }
-          },
-          "required": [
-            "name",
-            "href"
-          ],
-          "title": "Switcher Button2"
-        }
-      },
-      "required": [
-        "switcherButton1",
-        "switcherButton2"
-      ],
-      "title": "ButtonSwitcherProps"
-    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@bannerProps": {
       "type": "object",
       "properties": {
@@ -4151,10 +4159,6 @@
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXE1haW5CYW5uZXIudHN4@Props": {
       "type": "object",
       "properties": {
-        "switcherButton": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyLnRzeA==@ButtonSwitcherProps",
-          "title": "Switcher Button"
-        },
         "themeDark": {
           "type": "boolean",
           "description": "Ativar thema dark para esta página",
@@ -4217,7 +4221,6 @@
         }
       },
       "required": [
-        "switcherButton",
         "themeDark",
         "mainText",
         "descriptionText",
