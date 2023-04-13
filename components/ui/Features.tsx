@@ -1,8 +1,8 @@
-import Icon from "$start/components/ui/Icon.tsx";
-import type { AvailableIcons } from "$start/components/ui/Icon.tsx";
+import Image from "deco-sites/std/components/Image.tsx"
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Card {
-    icon: AvailableIcons;
+    image?: LiveImage;
     title: string;
     text: string;
 }
@@ -21,7 +21,15 @@ return (
                 <>
                     <div class="border-box relative flex flex-col p-[2px] rounded-lg" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))">
                         <div class="bg-[#223737] rounded-lg h-full w-full flex flex-col gap-4 p-[32px]">
-                            <Icon id={card.icon} width={55} height={55} strokeWidth={"1"} />
+                            {card.image && <Image 
+                                src={card.image}
+                                width={55}
+                                alt={card.text}
+                                preload
+                                loading="eager"
+                                decoding="sync"
+                            />}
+                            
                             <p class="mt-2 mr-32 md:mr-0 not-italic text-[32px] md:text-[26px] lg:text-[32px] leading-[38.5px] text-white opacity-90">
                                 {card.title}
                             </p>
