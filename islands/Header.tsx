@@ -44,11 +44,11 @@ export default function Header(props: Props) {
 
 return (
     <section class="bg-[#0A2121] fixed top-0 z-50 w-full">
-    <nav class="flex flex-row justify-between items-center h-[63px] pb-[4px] max-w-screen-2xl m-auto">
+    <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto">
     <div class="md:hidden w-[100vw] h-[4px] fixed top-[60px] transition ease-in-out duration-300 left-0" style="background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,255,128,1) 100%);"></div>
         <ul class="h-full flex items-center">
             <li class="h-full">
-                <a class="flex items-center h-full px-3" href="/">
+                <a class="flex items-center h-full px-3 pb-[6px]" href="/">
                 <svg width="70" height="25" viewBox="0 0 70 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M59.4431 20.8319C56.8399 20.8319 56.3938 18.2622 57.2157 15.7614C57.8665 13.7738 59.4079 11.6839 61.7041 11.6839C64.4112 11.6839 64.6847 14.4246 63.8964 16.8231C63.2104 18.8795 61.6689 20.8319 59.4431 20.8319ZM58.6548 24.4968C63.1768 24.4968 67.2191 21.9959 68.8293 17.4739C70.5083 12.7121 68.6231 7.9502 62.4573 7.9502C57.5243 7.9502 53.7554 11.0331 52.3163 15.1106C50.7061 19.7014 52.4538 24.4968 58.6548 24.4968ZM43.6497 24.4968C45.431 24.4968 47.2474 24.1194 48.5139 23.5726C48.96 22.3397 48.9936 21.1405 48.6514 19.9412C47.7607 20.2834 46.5279 20.6272 45.2599 20.6272C41.8332 20.6272 41.5262 18.0927 42.2457 15.9341C43.034 13.6395 45.0888 11.7894 48.3444 11.7894C49.2014 11.7894 50.0233 11.9269 50.5366 12.2356C51.4273 11.0363 51.9405 9.83704 52.0445 8.6042C51.2913 8.26201 50.0233 7.9534 48.3795 7.9534C43.0356 7.9534 38.8206 11.0715 37.3144 15.3872C35.8752 19.4647 36.9722 24.5 43.6528 24.5L43.6497 24.4968ZM25.253 14.6645C26.1772 12.6081 27.6163 11.4105 29.5016 11.4105C31.1805 11.4105 31.454 12.3347 31.1805 13.0543C30.7696 14.0472 29.3641 14.6645 25.253 14.6645ZM26.7257 24.4968C28.4734 24.4968 30.9391 24.1546 32.9954 23.1264C33.3376 21.9959 33.304 20.8654 32.9267 19.6998C31.6251 20.3506 29.8086 20.7279 28.1648 20.7279C25.7327 20.7279 24.3959 19.9396 24.4311 17.9536C31.0766 18.1247 34.5369 16.9255 35.6674 13.9801C36.7979 10.9995 34.8455 7.9502 30.2195 7.9502C25.2866 7.9502 21.6552 11.4792 20.3184 15.2817C18.9145 19.324 19.8051 24.4968 26.7241 24.4968H26.7257ZM6.86752 24.4968C11.4247 24.4968 14.0167 22.4069 17.0309 16.0012C18.6746 12.4722 20.0802 9.01195 21.6904 5.58686L23.6092 6.20408C24.1225 6.37517 24.3975 6.06656 24.1577 5.58686L21.8279 0.824993C21.6568 0.482804 21.2794 0.447625 21.0396 0.551561L15.2496 2.74381C14.7699 2.9149 14.8034 3.36103 15.2831 3.49695L16.9957 4.04541C15.5917 7.23224 13.844 12.0277 12.4385 15.0418C10.8619 18.3998 10.0751 20.7631 7.40319 20.7631C4.73124 20.7631 4.28511 18.6732 5.41562 15.6926C6.71721 12.2324 8.90946 11.2042 11.4103 11.9237C12.0963 10.9643 12.6096 9.52523 12.8143 8.22363C12.0947 8.01736 11.2376 7.9502 10.5197 7.9502C6.47736 7.9502 2.46863 10.0401 0.824847 14.4246C-1.29864 20.0771 0.664946 24.4968 6.86592 24.4968H6.86752Z" fill="#02F67C"/>
                 </svg>
@@ -56,13 +56,13 @@ return (
             </li>
             <li class="group cursor-pointer relative">
                 <button class="flex gap-2 items-center md:px-3 md:py-1 md:focus-within:(border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
-                <span class="font-normal text-[16px] text-[#fff] group-hover:text-[#06E474]">{props.pageInitial}</span>
+                <span class="font-normal text-[16px] text-[#fff]">{props.pageInitial}</span>
                 <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#55D695]" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
                 </button>
-                <div class="absolute right-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
-                <div class="flex flex-col w-[200px] bg-[#0A2121;] p-2 rounded">
+                <div class="absolute left-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
+                <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
                     <div class="flex flex-row items-center justify-between">
                     <a href={urlMarketers.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
                         <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">{props.mkt.label}</p>
@@ -139,16 +139,16 @@ return (
             </ul>
             <ul class="flex flex-col">
             <li class="h-[50px] grid items-center">
-                <a href={urlPortuguese.value} class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.pt.label}</a>
+                <a href={urlPortuguese.value} class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.pt.label}</a>
             </li>
             <li class="h-[50px] grid items-center">
-                <a href={urlEnglish.value} class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.eng.label}</a>
+                <a href={urlEnglish.value} class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.eng.label}</a>
             </li>
             <li class="h-[50px] grid items-center">
-                <a href={props.sign.url} class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.sign.label}</a>
+                <a href={props.sign.url} class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.sign.label}</a>
             </li>
             <li class="h-[50px] grid items-center">
-                <a href={props.login.url} class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.login.label}</a>
+                <a href={props.login.url} class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.login.label}</a>
             </li>
             </ul>
             <ul class="flex flex-row justify-center">
@@ -178,10 +178,10 @@ return (
         </ul>
         <ul class="hidden md:flex md:flex-row md:gap-4 px-3">
         <li class="group cursor-pointer md:relative">
-            <button class="hidden md:flex gap-2 items-center md:px-3 md:py-1 md:focus-within:(border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
-            <span class=" font-normal text-[16px] text-[#06E474] group-hover:text-[#fff]">{props.idiom}</span>
+            <button class="hidden md:flex gap-2 items-center md:px-3 md:py-1 text-[#06E474] md:focus-within:(group-focus-within:text-[#fff] border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
+            <span class=" font-normal text-[16px]">{props.idiom}</span>
             <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#fff]" stroke="#55D695" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#fff] stroke-current" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
             </button>
             <div class="absolute right-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
