@@ -44,7 +44,7 @@ export default function Integration({mainText, secondText, image, imageEffect}: 
             />
           </Picture>
         </div>
-        <div class="absolute top-[74vw] flex flex-col px-3 gap-10 md:(left-[39%] top-[41%] max-w-[760px])">
+        <div class="absolute top-[74vw] flex flex-col px-6 gap-10 md:(left-[39%] top-[41%] max-w-[760px])">
           <Picture class="block absolute max-w-full top-[-130px] left-[10px] md:(top-[-300px] left-[-350px])" preload={false}>
             <Source
               media="(max-width: 767px)"

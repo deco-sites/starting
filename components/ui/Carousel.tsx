@@ -12,7 +12,7 @@ export default function Carousel({cards}: Props) {
 
   return (
     <section class="md:bg-white-green" id={id}>
-      <div class="relative px-3 md:px-[7rem] max-w-screen-2xl m-auto">
+      <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto">
         <Slider
           class="relative gap-6 col-span-full row-start-2 row-end-5 hidden-scroll"
           snap="opacity-50 disabled:opacity-100 focus:outline-none"

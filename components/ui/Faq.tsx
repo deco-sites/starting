@@ -7,7 +7,7 @@ export interface Props {
 export default function Faq({questions}: Props) {
   return (
     <section class="bg-highlight">
-      <div class="flex flex-col px-3 pb-[120px] pt-[80px] md:px-[7rem] max-w-screen-2xl m-auto">
+      <div class="flex flex-col px-6 pb-[120px] pt-[80px] md:px-[7rem] max-w-screen-2xl m-auto">
         {questions.map((item) => {
           return (
             <details class="border-b border-solid border-[#131614]">

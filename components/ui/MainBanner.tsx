@@ -40,7 +40,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
   return (
     <div class={(themeIsLigth ? " bg-[#F3FFF9]":"bg-dark-green-gradient") +" "+ "flex flex-col mb-0 pb-[5rem]"}>
       <div class="max-w-screen-2xl m-auto">
-        <div class="max-w-[100vw] px-4 pt-24 pb-8 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
+        <div class="max-w-[100vw] px-6 pt-24 pb-8 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
 
           <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[3.5rem] md:(w-full max-w-[1280px] text-[112px] leading-[6.5rem])`}>
                 {mainText}
@@ -57,7 +57,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
             }  
           </h1>
         </div>
-        <div class="flex p-4 flex-col gap-20 justify-center items-center lg:(flex-row p-8)">
+        <div class="flex px-6 py-4 flex-col gap-20 justify-center items-center lg:(flex-row p-8)">
         <div class="flex flex-col gap-[2rem] lg:(w-[46%] items-center)">
           <p class={(themeIsLigth ? "text-frame-515-rgba" : "text-[#f3fff9b0]") +" "+ "font-sans font-normal not-italic text-[32px] leading-[1.18]"}>
           {descriptionText}
@@ -71,7 +71,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
               <Icon class="hidden transition lg:group-hover:(block)" id={ themeIsLigth ? "WhiteArrow" : "GreenArrow" } width={15} height={15} strokeWidth={"1"}/>
             </button>
 
-            <button class={(themeIsLigth ? "bg-white border-dark-green" : "bg-none border-white") + " "+ "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1" }>
+            <button class={(themeIsLigth ? "border-dark-green" : "bg-none border-white") + " "+ "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1" }>
 
               <a class={(themeIsLigth ? "text-dark-green" : "text-white") + " " + "text-[16px] font-medium"} href={buttonCta2?.href}>
                 {buttonCta2?.buttonName}
