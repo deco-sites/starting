@@ -6,6 +6,7 @@ export interface Props {
   pt: {label: string; url: string; selected?: boolean};
   eng: {label: string; url: string; selected?: boolean};
   login: {label: string; url:string};
+  sign: {label: string; url:string};
   pageInitial: string;
   mkt: {label: string; url: string; selected?: boolean};
   dev: {label: string; url: string; selected?: boolean};
@@ -14,8 +15,8 @@ export interface Props {
   discordUrl: string;
 }
 
-export default function Header({ menuLinks, idiom, pt, eng, login, pageInitial, mkt, dev, linkedinUrl, gitUrl, discordUrl }: Props) {
+export default function Header({ menuLinks, sign, idiom, pt, eng, login, pageInitial, mkt, dev, linkedinUrl, gitUrl, discordUrl }: Props) {
   return (
-    <HeaderIsland menuLinks={menuLinks} pageInitial={pageInitial} mkt={mkt} dev={dev} idiom={idiom} pt={pt} eng={eng} login={login} linkedinUrl={linkedinUrl} gitUrl={gitUrl} discordUrl={discordUrl}></HeaderIsland>
+    <HeaderIsland menuLinks={menuLinks} sign={sign} pageInitial={pageInitial} mkt={mkt} dev={dev} idiom={idiom} pt={pt} eng={eng} login={login} linkedinUrl={linkedinUrl} gitUrl={gitUrl} discordUrl={discordUrl}></HeaderIsland>
   );
 }

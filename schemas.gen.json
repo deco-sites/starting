@@ -2486,6 +2486,24 @@
           ],
           "title": "Login"
         },
+        "sign": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ],
+          "title": "Sign"
+        },
         "linkedinUrl": {
           "type": "string",
           "title": "Linkedin Url"
@@ -2508,6 +2526,7 @@
         "mkt",
         "dev",
         "login",
+        "sign",
         "linkedinUrl",
         "gitUrl",
         "discordUrl"
@@ -3884,6 +3903,24 @@
           ],
           "title": "Login"
         },
+        "sign": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ],
+          "title": "Sign"
+        },
         "pageInitial": {
           "type": "string",
           "title": "Page Initial"
@@ -3957,6 +3994,7 @@
         "pt",
         "eng",
         "login",
+        "sign",
         "pageInitial",
         "mkt",
         "dev",
