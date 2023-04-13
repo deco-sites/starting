@@ -82,7 +82,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
           </div>
         </div>
         
-        <div class={(themeIsLigth ? "bg-dark-green text-white" : "bg-primary text-dark-green") +" "+ "h-80 flex flex-col relative -left-[20px] overflow-hidden rounded-r-full lg:(w-[80%] h-[300px] flex-row) group"}>
+        <div class={(themeIsLigth ? "bg-dark-green text-white" : "bg-primary text-dark-green") +" "+ "h-80 flex flex-col relative -left-6 overflow-hidden rounded-r-full lg:(w-[80%] h-[300px] flex-row) group"}>
             <div class="flex justify-start items-center lg:justify-center">
               <h3 class="w-[80%] p-6 pt-8 text-[24px] font-medium leading-[1.18] lg:(w-full px-10 text-[32px])">{miniBanner?.titleText}</h3>
             </div>
