@@ -139,16 +139,16 @@ return (
             </ul>
             <ul class="flex flex-col">
             <li class="h-[50px] grid items-center">
-                <a href={urlPortuguese.value} class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.pt.label}</a>
+                <a href={urlPortuguese.value} class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.pt.label}</a>
             </li>
             <li class="h-[50px] grid items-center">
-                <a href={urlEnglish.value} class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.eng.label}</a>
+                <a href={urlEnglish.value} class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.eng.label}</a>
             </li>
             <li class="h-[50px] grid items-center">
-                <a href={props.sign.url} class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.sign.label}</a>
+                <a href={props.sign.url} class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.sign.label}</a>
             </li>
             <li class="h-[50px] grid items-center">
-                <a href={props.login.url} class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.login.label}</a>
+                <a href={props.login.url} class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]">{props.login.label}</a>
             </li>
             </ul>
             <ul class="flex flex-row justify-center">
