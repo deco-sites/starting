@@ -48,7 +48,7 @@ export default function Carousel({cards}: Props) {
                       {card.text}
                     </p>
                     <p class="text-[#66736C] text-left">
-                      {card.author}
+                      {card.writtenByLabel}{" "}{card.author}
                     </p>
                     <p class="text-[#66736C] text-left">
                       {card.date}
