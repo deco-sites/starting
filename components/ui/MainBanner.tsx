@@ -91,7 +91,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
               <div id="mini-banners-art-montage" class="w-full flex justify-end items-center">
                 <Image 
                   src={miniBanner?.bannerTopImage}
-                  class="max-w-[600px] relative bottom-8 left-24 lg:(w-[597px] -bottom-6 left-56 group-hover:bottom-3  duration-300 ease-in) z-10"
+                  class="max-w-[600px] relative bottom-8 left-24 lg:(w-[597px] -bottom-16 left-56 group-hover:scale-105 group-hover:bottom-0  duration-200 ease-in) z-10"
                   width={350}
                   alt={miniBanner?.altBannerTopImage}
                   title={miniBanner?.altBannerTopImage}
@@ -100,11 +100,11 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
                   decoding="sync"
                   srcset={`${miniBanner?.bannerTopImage} 2x`}
                 />
-                <div class="absolute -bottom-4 -right-14 lg:(-bottom-16 -right-24) ">
+                <div class="absolute -bottom-4 -right-20 lg:(-bottom-16 -right-32 group-hover:-right-16  duration-200  ease-in) ">
                   <span class="w-[80px] block relative top-[65px] right-16 text-right leading-4 font-normal text-[12px] lg:top-[108px]">{miniBanner?.linkedText}</span>
                   <Image 
                     src={miniBanner?.bannerBottomImage}
-                    class="max-w-[500px] lg:(w-[476px])"
+                    class="max-w-[500px] lg:(w-[476px]) group-hover:scale-105 duration-[300ms] ease-in"
                     width={300}
                     alt={miniBanner?.altBannerBottomImage}
                     title={miniBanner?.altBannerBottomImage}
