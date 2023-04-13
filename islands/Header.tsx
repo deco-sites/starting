@@ -56,13 +56,13 @@ return (
             </li>
             <li class="group cursor-pointer relative">
                 <button class="flex gap-2 items-center md:px-3 md:py-1 md:focus-within:(border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
-                <span class="font-normal text-[16px] text-[#fff] group-hover:text-[#06E474]">{props.pageInitial}</span>
+                <span class="font-normal text-[16px] text-[#fff]">{props.pageInitial}</span>
                 <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#55D695]" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
                 </button>
-                <div class="absolute right-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
-                <div class="flex flex-col w-[200px] bg-[#0A2121;] p-2 rounded">
+                <div class="absolute left-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
+                <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
                     <div class="flex flex-row items-center justify-between">
                     <a href={urlMarketers.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
                         <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">{props.mkt.label}</p>
