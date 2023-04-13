@@ -15,7 +15,7 @@ export default function GlobalTags(){
                     font-family: 'Albert Sans';
                     font-style: normal;
                     font-weight: 400;
-                    font-display: swap;
+                    font-display: display;
                     src: url(${
                     asset("/fonts/font_albert.woff2")
                 }) format('woff2');
@@ -26,7 +26,7 @@ export default function GlobalTags(){
                     font-family: 'Albert Sans';
                     font-style: normal;
                     font-weight: 500;
-                    font-display: swap;
+                    font-display: display;
                     src: url(${
                     asset("/fonts/font_albert.woff2")
                 }) format('woff2');
@@ -37,7 +37,7 @@ export default function GlobalTags(){
                     font-family: 'Albert Sans';
                     font-style: normal;
                     font-weight: 600;
-                    font-display: swap;
+                    font-display: display;
                     src: url(${
                     asset("/fonts/font_albert.woff2")
                 }) format('woff2');
@@ -48,7 +48,7 @@ export default function GlobalTags(){
                     font-family: 'Albert Sans';
                     font-style: normal;
                     font-weight: 700;
-                    font-display: swap;
+                    font-display: display;
                     src: url(${
                     asset("/fonts/font_albert.woff2")
                 }) format('woff2');
