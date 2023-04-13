@@ -4,7 +4,6 @@ import Image from "deco-sites/std/components/Image.tsx"
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
-  switcherButton: ButtonSwitcherProps;
   /** @description Ativar thema dark para esta página */
   themeDark: boolean;
   mainText: string;
@@ -32,7 +31,7 @@ export interface bannerProps{
 }
 
 
-export default function MainBanner({switcherButton, themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner}: Props) {
+export default function MainBanner({ themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner}: Props) {
 
   const themeIsLigth = !themeDark
 
