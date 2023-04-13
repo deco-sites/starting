@@ -178,10 +178,10 @@ return (
         </ul>
         <ul class="hidden md:flex md:flex-row md:gap-4 px-3">
         <li class="group cursor-pointer md:relative">
-            <button class="hidden md:flex gap-2 items-center md:px-3 md:py-1 md:focus-within:(border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
-            <span class=" font-normal text-[16px] text-[#06E474] group-hover:text-[#fff]">{props.idiom}</span>
+            <button class="hidden md:flex gap-2 items-center md:px-3 md:py-1 text-[#06E474] md:focus-within:(group-focus-within:text-[#fff] border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
+            <span class=" font-normal text-[16px]">{props.idiom}</span>
             <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#fff]" stroke="#55D695" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#fff] stroke-current" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
             </button>
             <div class="absolute right-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
