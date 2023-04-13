@@ -27,7 +27,7 @@ export default function  Differentials({ darkMode, title, sections } : Props) {
                     {
                         sections?.map(section => {
                             return(
-                                <div class={`flex gap-6 items-center justify-around flex-col-reverse md:(${section.imagePosition == "left" ? "flex-row" : "flex-row-reverse"})`}>
+                                <div class={`flex gap-6 md:items-center justify-around flex-col-reverse md:(${section.imagePosition == "left" ? "flex-row" : "flex-row-reverse"})`}>
                                     <div>
                                         <Image 
                                             src={section.image}
