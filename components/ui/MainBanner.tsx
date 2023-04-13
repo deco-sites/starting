@@ -98,6 +98,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
                   preload
                   loading="eager"
                   decoding="sync"
+                  srcset={`${miniBanner?.bannerTopImage} 2x`}
                 />
                 <div class="absolute -bottom-4 -right-14 lg:(-bottom-16 -right-24) ">
                   <span class="w-[80px] block relative top-[65px] right-16 text-right leading-4 font-normal text-[12px] lg:top-[108px]">{miniBanner?.linkedText}</span>
