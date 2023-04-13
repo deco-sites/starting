@@ -2414,6 +2414,60 @@
           ],
           "title": "Eng"
         },
+        "pageInitial": {
+          "type": "string",
+          "title": "Page Initial"
+        },
+        "mkt": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            },
+            "selected": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Selected"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ],
+          "title": "Mkt"
+        },
+        "dev": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            },
+            "selected": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Selected"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ],
+          "title": "Dev"
+        },
         "login": {
           "type": "object",
           "properties": {
@@ -2431,6 +2485,24 @@
             "url"
           ],
           "title": "Login"
+        },
+        "sign": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ],
+          "title": "Sign"
         },
         "linkedinUrl": {
           "type": "string",
@@ -2450,7 +2522,11 @@
         "idiom",
         "pt",
         "eng",
+        "pageInitial",
+        "mkt",
+        "dev",
         "login",
+        "sign",
         "linkedinUrl",
         "gitUrl",
         "discordUrl"
@@ -3881,6 +3957,78 @@
           ],
           "title": "Login"
         },
+        "sign": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ],
+          "title": "Sign"
+        },
+        "pageInitial": {
+          "type": "string",
+          "title": "Page Initial"
+        },
+        "mkt": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            },
+            "selected": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Selected"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ],
+          "title": "Mkt"
+        },
+        "dev": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            },
+            "selected": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Selected"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ],
+          "title": "Dev"
+        },
         "linkedinUrl": {
           "type": "string",
           "title": "Linkedin Url"
@@ -3900,6 +4048,10 @@
         "pt",
         "eng",
         "login",
+        "sign",
+        "pageInitial",
+        "mkt",
+        "dev",
         "linkedinUrl",
         "gitUrl",
         "discordUrl"

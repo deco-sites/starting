@@ -21,14 +21,14 @@ export default function Carousel({cards}: Props) {
             return (
               <a href={card.url} target="_blank">
                 <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden">
-                  <p class="bg-black text-white absolute px-2 m-5 font-inter font-normal not-italic text-[14px] z-10 rounded-[26px]" >
+                  <p class="bg-black text-white absolute px-2 m-5 font-normal not-italic text-[14px] z-10 rounded-[26px]" >
                     {card.title}
                   </p>
                   <img src={card.image} alt="" class="w-full"/>
                   <div class="relative">
                     <img src={card.author} alt="" class="rounded-full absolute px-3 bottom-[-1.5rem]"/>
                   </div>
-                  <p class="px-3 font-inter font-normal py-8 not-italic text-left text-[20px] text-black opacity-[80%] self-center justify-self-center">
+                  <p class="px-3 font-normal py-8 not-italic text-left text-[20px] text-black opacity-[80%] self-center justify-self-center">
                     {card.text}
                   </p>
               </article>
