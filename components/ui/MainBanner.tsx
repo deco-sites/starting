@@ -57,7 +57,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
             }  
           </h1>
         </div>
-        <div class="flex px-6 py-6 flex-col gap-20 justify-center items-center lg:(flex-row p-8)">
+        <div class="flex px-6 py-6 flex-col gap-20 justify-center items-start lg:items-center lg:(flex-row p-8)">
         <div class="flex flex-col gap-[2rem] lg:(w-[46%] items-center)">
           <p class={(themeIsLigth ? "text-frame-515-rgba" : "text-[#f3fff9b0]") +" "+ "font-sans font-normal not-italic text-[24px] md:text-[32px] leading-[1.18]"}>
           {descriptionText}
@@ -82,16 +82,16 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
           </div>
         </div>
         
-        <div class={(themeIsLigth ? "bg-dark-green text-white" : "bg-primary text-dark-green") +" "+ "h-80 flex flex-col relative -left-6 overflow-hidden rounded-r-full lg:(w-[80%] h-[300px] flex-row) group"}>
+        <div class={(themeIsLigth ? "bg-dark-green text-white" : "bg-primary text-dark-green") +" "+ "h-80 flex flex-col relative -left-6 overflow-hidden rounded-r-full md:(flex-row w-[80%]) lg:(h-[300px]) group"}>
             <div class="flex justify-start items-center lg:justify-center">
-              <h3 class="w-[80%] p-6 pt-8 text-[24px] font-medium leading-[1.18] lg:(w-full px-10 text-[32px])">{miniBanner?.titleText}</h3>
+              <h3 class="w-[80%] p-6 pt-8 text-[24px] md:(w-full text-[32px]) font-medium leading-[1.18] lg:(w-full px-10 text-[32px])">{miniBanner?.titleText}</h3>
             </div>
             <div class="w-full relative rounded-r-full lg:(w-1/2)">
 
               <div id="mini-banners-art-montage" class="w-full flex justify-end items-center">
                 <Image 
                   src={miniBanner?.bannerTopImage}
-                  class="relative bottom-8 left-24 lg:(max-w-[600px] w-[597px] -bottom-12 left-56 group-hover:scale-105 group-hover:bottom-0  duration-300 ease-in) z-10"
+                  class="relative bottom-8 left-24 md:(max-w-[400px] w-[400px] -bottom-8) lg:(max-w-[600px] w-[597px] -bottom-12 left-56 group-hover:scale-105 group-hover:bottom-0  duration-300 ease-in) z-10"
                   width={350}
                   alt={miniBanner?.altBannerTopImage}
                   title={miniBanner?.altBannerTopImage}
@@ -101,10 +101,10 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
                   srcset={`${miniBanner?.bannerTopImage} 2x`}
                 />
                 <div class="absolute -bottom-4 -right-20 lg:(-bottom-16 -right-32 group-hover:-right-20  duration-300  ease-in) ">
-                  <span class="w-[80px] block relative top-[65px] right-16 text-right leading-4 font-normal text-[12px] lg:top-[108px]">{miniBanner?.linkedText}</span>
+                  <span class="w-[80px] block relative top-[65px] md:top-[85px] right-16 text-right leading-4 font-normal text-[12px] lg:top-[108px]">{miniBanner?.linkedText}</span>
                   <Image 
                     src={miniBanner?.bannerBottomImage}
-                    class="lg:(max-w-[500px] w-[476px]) group-hover:scale-105 duration-[300ms] ease-in"
+                    class="md:(w-[400px]) lg:(max-w-[500px] w-[476px]) group-hover:scale-105 duration-[300ms] ease-in"
                     width={300}
                     alt={miniBanner?.altBannerBottomImage}
                     title={miniBanner?.altBannerBottomImage}
