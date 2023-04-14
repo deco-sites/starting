@@ -3163,6 +3163,10 @@
             "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image"
           },
           "title": "Img Third Line"
+        },
+        "buttonHref": {
+          "type": "string",
+          "title": "Button Href"
         }
       },
       "required": [
@@ -3172,7 +3176,8 @@
         "button",
         "imgFirstLine",
         "imgSecondLine",
-        "imgThirdLine"
+        "imgThirdLine",
+        "buttonHref"
       ],
       "title": "deco-sites/starting/components/ui/Partner.tsx@Props"
     },
