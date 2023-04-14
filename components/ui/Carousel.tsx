@@ -24,35 +24,40 @@ export default function Carousel({cards}: Props) {
       <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto">
         <Slider
           class="relative gap-6 col-span-full row-start-2 row-end-5 hidden-scroll"
-          itemClass="min-h-[482px]"
           snap="opacity-50 disabled:opacity-100 focus:outline-none"
           >
           {cards?.map((card) => {
             return (
               <a href={card.url} target="_blank" class="rounded-[8px]">
-                <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden">
-                  <Image 
-                    src={card.image}
-                    fetchPriority={"low"} 
-                    class="w-auto"
-                    preload={false} 
-                    loading={'lazy'}
-                    width={359}
-                    height={240}
-                  />
-                  <div class="flex flex-col gap-4 py-8 px-6 rounded-[8px]">
-                    <p class="bg-black text-white px-3 w-[fit-content] font-normal not-italic text-[14px] z-10 rounded-[26px] flex items-center" >
-                      {card.title}
-                    </p>
-                    <p class="font-normal not-italic text-left text-[20px] text-black opacity-[80%] self-center justify-self-center">
-                      {card.text}
-                    </p>
-                    <p class="text-[#66736C] text-left">
-                      {card.writtenByLabel}{" "}{card.author}
-                    </p>
-                    <p class="text-[#66736C] text-left">
-                      {card.date}
-                    </p>
+                <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden h-[475px] md:h-[505px]">
+                  <div>
+                    <Image 
+                      src={card.image}
+                      fetchPriority={"low"} 
+                      class="w-auto"
+                      preload={false} 
+                      loading={'lazy'}
+                      width={359}
+                      height={240}
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4 justify-between py-8 px-6 rounded-[8px] h-[47%]">
+                    <div class="flex flex-col gap-4">
+                      <p class="bg-black text-white px-3 w-[fit-content] font-normal not-italic text-[14px] z-10 rounded-[26px] flex items-center" >
+                        {card.title}
+                      </p>
+                      <p class="font-normal not-italic text-left text-[20px] text-black opacity-[80%]">
+                        {card.text}
+                      </p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                      <p class="text-[#66736C] text-left">
+                        {card.writtenByLabel}{" "}{card.author}
+                      </p>
+                      <p class="text-[#66736C] text-left">
+                        {card.date}
+                      </p>
+                    </div>
                   </div>
                 </article>
               </a>
