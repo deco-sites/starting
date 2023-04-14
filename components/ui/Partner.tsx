@@ -9,6 +9,7 @@ export interface Props {
   imgFirstLine: Image[];
   imgSecondLine: Image[];
   imgThirdLine: Image[];
+  buttonHref: string;
 }
 
 function ImageLines(images:string[]) {
@@ -64,7 +65,7 @@ export default function Partner(
                 ))}
                 <div class="pt-6 md:max-w-[200px]">
                     <a
-                        href="#delight"
+                        href={buttonHref}
                         class="block w-full bg-[#02F67C] transition py-3.5 text-[#161A16] font-inter border-1 border-[transparent] font-medium not-italic rounded-[40px] text-center text-[16px] leading-[19.36px] hover:(bg-[transparent] text-[#02F67C] border-[#02F67C])"
                     >
                         {button}
