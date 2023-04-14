@@ -1,7 +1,15 @@
 import Icon from "$start/components/ui/Icon.tsx";
 
+export interface Question {
+  question: string;
+  /**
+   * @format textarea
+   */
+  answer: string;
+}
+
 export interface Props {
-  questions: {question:string; answer:string}[]
+  questions: Question[]
 }
 
 export default function Faq({questions}: Props) {
