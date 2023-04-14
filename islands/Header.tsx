@@ -66,14 +66,14 @@ return (
             {
                 showSwitcher.value &&
                 <>
-                    <details class="select-none flex gap-2 items-center md:px-3 md:py-1 md:open:(border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
+                    <details class="select-none flex gap-2 items-center md:open:(border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
                         
-                        <summary class="notShow font-normal text-[16px] text-[#fff] flex items-center justify-center gap-[5px]">{props.pageInitial}
+                        <summary class="notShow font-normal text-[16px] md:px-3 md:py-1 text-[#fff] flex items-center justify-center gap-[5px]">{props.pageInitial}
                             <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#55D695]" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
                             </svg>
                         </summary>
-                    <div class="absolute left-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
+                    <div class="absolute left-0 mt-5 rounded border-1 border-[#ffffff10]">
                         <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
                             <div class="flex flex-row items-center justify-between">
                                 <a href={urlMarketers.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
@@ -194,14 +194,14 @@ return (
         </ul>
         <ul class="hidden md:flex md:flex-row md:gap-4 px-3">
         <li class="group cursor-pointer md:relative">
-            <details class="select-none hidden md:flex gap-2 items-center md:px-3 md:py-1 text-[#06E474] md:open:(group-focus-within:text-[#fff] border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
-            <summary class="notShow font-normal text-[16px] flex items-center justify-center gap-[5px]">{props.idiom}
+            <details class="select-none hidden md:flex gap-2 items-center text-[#06E474] md:open:(group-focus-within:text-[#fff] border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
+            <summary class="notShow md:px-3 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px]">{props.idiom}
             <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#fff] stroke-current" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
             </summary>
             
-            <div class="absolute right-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
+            <div class="absolute right-0 mt-5 rounded border-1 border-[#ffffff10]">
             <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
                 <div class="flex flex-row items-center justify-between">
                 <a href={urlPortuguese.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
