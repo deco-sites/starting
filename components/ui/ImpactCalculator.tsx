@@ -23,59 +23,86 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
     const inputClass = "w-full bg-[#F3FFF9] mt-2 pl-4 border-1 border-dark-green h-[52px] rounded-[4px]"
 
     const website = useSignal("")
-    const sessions = useSignal("")
-    const conversion = useSignal("1")
-    const average = useSignal("50")
+    const sessions = useSignal(0)
+    const conversion = useSignal(1)
+    const average = useSignal(50)
+    const mobileLCP = useSignal(0)
+    const desktopLCP = useSignal(0)
 
-    const desktopPercent = useSignal<number | undefined>(50)
-    const mobilePercent = useSignal<number | undefined>(50)
+    const desktopPercent = useSignal<number>(50)
+    const mobilePercent = useSignal<number>(50)
 
     const loading = useSignal(false)
 
     const revenue = useSignal<null | number>(null)
 
     const handleChange = (e : HTMLInputElement | null) => {
-        console.log(e?.value)
         mobilePercent.value = Number(e?.value)
         desktopPercent.value = 100 - Number(e?.value)
-        console.log(73 + (Number(mobilePercent) / 100 * 18))
     }
-
-    /*const handleClick = (e : JSX.TargetedMouseEvent<HTMLButtonElement>) => {
-        e.preventDefault()
-        loading.value = true
-        fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=mobile`)
-        .then(response => response.json())
-        .then(result => {
-            const LCP = result.lighthouseResult.audits["largest-contentful-paint"].numericValue
-
-            const restInSeconds = (LCP - 2000) / 1000
-
-            const conversionOptimized = Number(conversion) * Math.pow(1.07, restInSeconds)
-
-            const newRevenue = Number(sessions) * (conversionOptimized / 100) * Number(average)
-
-            revenue.value = newRevenue
-
-            loading.value = false
-
-        })
-    } */
 
     const handleClick = (e : JSX.TargetedMouseEvent<HTMLButtonElement>) => {
 
-        const LCP = 3000
+        e.preventDefault()
+        loading.value = true
 
-        const restInSeconds = (LCP - 2000) / 1000
+        const promiseMobile = fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=mobile`).then(response => response.json())
+        const promiseDesktop = fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=desktop`).then(response => response.json())
 
-        const conversionOptimized = Number(conversion) * Math.pow(1.07, restInSeconds)
+        Promise.all([promiseMobile, promiseDesktop])
+        .then(results => {
+            results.forEach(result => {
+                const resultLCP = result.lighthouseResult.audits["largest-contentful-paint"].numericValue
+                if(result.lighthouseResult.configSettings.formFactor == "mobile"){
+                    mobileLCP.value = resultLCP
+                }else{
+                    desktopLCP.value = resultLCP
+                }
+            })
+            loading.value = false
+        })
+    } 
 
-        const newRevenue = Number(sessions) * (conversionOptimized / 100) * Number(average)
+    if(sessions.value != 0 && website.value != "" && mobileLCP.value != 0 && mobileLCP.value != 0){
 
-        revenue.value = newRevenue
+        const secondsInMobile = getSecondsToImprove(mobileLCP.value)
+        const secondsInDesktop = getSecondsToImprove(desktopLCP.value)
 
-        loading.value = false
+        const conversionOptimized = getConversionOptimized(conversion.value, secondsInMobile)
+        const conversionOptimizedDesktop = getConversionOptimized(conversion.value, secondsInDesktop)
 
+        const currentRevenue = sessions.value * (conversion.value / 100) * average.value
+
+        const newRevenue = getNewRevenue(sessions.value, mobilePercent.value, conversionOptimized, average.value)
+        const newRevenueDesktop = getNewRevenue(sessions.value, desktopPercent.value, conversionOptimizedDesktop, average.value)
+
+        const incrementInOneYear = getIncrementInOneYear(newRevenue, newRevenueDesktop, currentRevenue)
+
+        revenue.value = incrementInOneYear
+    }
+
+    function getSecondsToImprove(currentSeconds: number){
+        const BEST_TIME = 2000
+        const seconds = (currentSeconds - BEST_TIME) / 1000
+        return seconds < 0 ? 0 : seconds
+    }
+
+    function getConversionOptimized(currentConversion: number, secondsToImprove: number){
+        const IMPROVE_PERCENT = 1.07
+        const conversionOptimized = secondsToImprove > 0 ? currentConversion * Math.pow(IMPROVE_PERCENT, secondsToImprove) : currentConversion
+        return conversionOptimized
+    }
+
+    function getNewRevenue(sessions : number, percentDevice : number, conversionOptimized : number, average : number){
+        const percentOfSessions = (sessions * percentDevice / 100)
+        const newRevenue = percentOfSessions * (conversionOptimized / 100) * average
+        return newRevenue
+    }
+
+    function getIncrementInOneYear(newRevenue : number, newRevenueDesktop : number, currentRevenue : number){
+        const totalNewRevenue = newRevenue + newRevenueDesktop
+        const increment = (totalNewRevenue - currentRevenue) * 12 //months
+        return increment
     }
 
     const formatPrice = (price : number | null) => {
@@ -87,17 +114,6 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
         return USDollar.format(price!)
     }
 
-    const mobileNumber = Number(mobilePercent)
-
-    let left = `calc(${mobilePercent}% - ${(73 + (Number(mobilePercent) / 100 * 18))}px)`
-
-    if(73 + (mobileNumber / 100 * 18) <= 75){
-        left = "0px"
-    }else if(73 + (mobileNumber / 100 * 18) >= 89){
-        left = `calc(100% - 170px);`
-    }
-
-    //const comment = {`left: calc(${( 73 + (Number(mobilePercent) / 100 * 18)) <= 75 ?73 + (Number(mobilePercent) / 100 * 18) >= 89 ? "" : "0px" :Number(mobilePercent) + "% - " + (73 + (Number(mobilePercent) / 100 * 18))}px)`}
 
     return(
         <section class="bg-[#F3FFF9]">
@@ -123,7 +139,7 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                                 <input 
                                     type="number" 
                                     value={sessions} 
-                                    onInput={(e) => sessions.value = (e.target as HTMLInputElement).value} 
+                                    onInput={(e) => sessions.value = Number((e.target as HTMLInputElement).value)} 
                                     class={`${inputClass}`}
                                 />
                             </div>
@@ -133,7 +149,7 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                                     <input 
                                         type="number" 
                                         value={conversion} 
-                                        onInput={(e) => conversion.value = (e.target as HTMLInputElement).value} 
+                                        onInput={(e) => conversion.value = Number((e.target as HTMLInputElement).value)} 
                                         class={`${inputClass}`}
                                     />
                                     <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">%</span>
@@ -145,7 +161,7 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                                     <input 
                                         type="number" 
                                         value={average} 
-                                        onInput={(e) => average.value = (e.target as HTMLInputElement).value} 
+                                        onInput={(e) => average.value = Number((e.target as HTMLInputElement).value)} 
                                         class={`${inputClass}`}
                                     />
                                     <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">$</span>
@@ -156,30 +172,20 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                             <label htmlFor="">{formInfos.trafficSplitLabel}</label>
                             <input 
                                 type="range" 
-                                class="w-full mb-2" 
+                                class="w-full mb-1" 
                                 min="0" 
                                 max="100"
                                 onInput={(e) => handleChange(e.target as HTMLInputElement)}/>
-                            <div 
-                                class="relative bg-black w-[170px] text-center py-2 text-almost-white text-[12px]"
-                                style={`left: ${left}`}
-                            >
-                                <span 
-                                    class="absolute top-[-5px] inline block w-0 h-0 border-l-[5px] border-r-[5px]  border-transparent" 
-                                    style={`border-bottom:5px solid black; left: calc(50% - 8px)`}
-                                ></span>
-                                {`${mobilePercent}% mobile / ${desktopPercent}% desktop`}
-                            </div>
                             <div class="flex justify-between">
-                                <span class="max-w-[50px] text-[#66736C] text-[14px]">{formInfos.trafficMobile}</span>
-                                <span class="max-w-[50px] text-[#66736C] text-[14px] text-right">{formInfos.trafficDesktop}</span>
+                                <span class="text-[#161616] font-semibold text-[14px]">{formInfos.trafficMobile}{" "}{mobilePercent}%</span>
+                                <span class="text-[#161616] font-semibold text-[14px] text-right">{desktopPercent}%{" "}{formInfos.trafficDesktop}</span>
                             </div>
                         </div>
                         {
-                            revenue.value ? 
+                            revenue.value || revenue.value == 0 ? 
                             <div>
                                 <span>{potencialIncrease}</span>
-                                <p class="text-[82px] font-bold">{formatPrice(Number(revenue))}<span class="text-[32px] font-normal">USD</span></p>
+                                <p class="text-[44px] md:text-[82px] font-bold overflow-auto">{formatPrice(Number(revenue))}<span class="text-[22px] md:text-[32px] font-normal">USD</span></p>
                             </div> :
                             <button
                             class="flex justify-center items-center py-4 group px-6 w-full bg-dark-green text-white rounded-[4px]"
