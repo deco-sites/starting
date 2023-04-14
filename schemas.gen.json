@@ -3131,6 +3131,14 @@
           "type": "string",
           "title": "Main Text"
         },
+        "desktopMainTextSize": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Default: 74px",
+          "title": "Desktop Main Text Size"
+        },
         "title": {
           "type": "string",
           "title": "Title"
