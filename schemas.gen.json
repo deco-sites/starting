@@ -3018,12 +3018,20 @@
                 "title": "Image"
               },
               "author": {
-                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "type": "string",
                 "title": "Author"
               },
               "url": {
                 "type": "string",
                 "title": "Url"
+              },
+              "date": {
+                "type": "string",
+                "title": "Date"
+              },
+              "writtenByLabel": {
+                "type": "string",
+                "title": "Written By Label"
               }
             },
             "required": [
@@ -3031,7 +3039,9 @@
               "text",
               "image",
               "author",
-              "url"
+              "url",
+              "date",
+              "writtenByLabel"
             ]
           },
           "title": "Cards"
