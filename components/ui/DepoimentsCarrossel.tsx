@@ -36,7 +36,7 @@ export interface Props {
 function Controls() {
   return (
     <>
-      <div class="flex flex-row justify-end gap-2 pt-6 pb-12 md:pt-0 md:pb-0 md:py-0">
+      <div class="flex flex-row justify-end gap-2 pt-6 md:pb-12 md:pt-0 md:pb-0 md:py-0">
         <button
           class="rounded-full p-3 bg-dark-green md:bg-[#fff] focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:left-[1rem] md:top-[40%]"
           data-slide="prev"

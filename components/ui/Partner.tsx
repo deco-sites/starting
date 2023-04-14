@@ -9,6 +9,7 @@ export interface Props {
   imgFirstLine: Image[];
   imgSecondLine: Image[];
   imgThirdLine: Image[];
+  buttonHref: string;
 }
 
 function ImageLines(images:string[]) {
@@ -41,21 +42,22 @@ export default function Partner(
     imgFirstLine,
     imgSecondLine,
     imgThirdLine,
+    buttonHref,
   }: Props,
 ) {
   return (
-    <section class="py-[200px]" style="background: linear-gradient(360deg, #053535 0.04%, #0A2121 100.04%)">
+    <section class="py-16 md:py-[200px]" style="background: linear-gradient(360deg, #053535 0.04%, #0A2121 100.04%)">
         <div class="flex flex-col px-6 md:px-[2rem] md:flex-row xl:gap-[80px] max-w-screen-2xl m-auto">
             <div class="flex pb-6 gap-10 md:w-[45%] lg:w-[40%] xl:w-[38%]">
-                <h2 class="font-sans not-italic font-bold text-white text-[56px] md:text-[64px] lg:text-[74px] xl:text-[94px] 2xl:text-[112px] leading-[54px] md:leading-[105.5px] tracking-[-1%] md:order-1">
+                <h2 class="font-sans not-italic font-bold text-white text-[56px] md:text-[64px] lg:text-[74px] xl:text-[94px] 2xl:text-[112px] leading-[.95] tracking-[-1%] md:order-1">
                     {mainText}
                 </h2>
             </div>
-            <div class="mt-12 grid gap-4 items-end md:(w-[55%] mt-0)">
+            <div class="mt-4 md:mt-12 grid gap-4 items-end md:(w-[55%] mt-0)">
                 <h3 class="text-[32px] opacity-80 text-white">{title}</h3>
                 {benefits?.map(benefit => (
-                    <div class="flex items-center gap-[8px] border-t-1 border-white py-[16px]">
-                        <Icon id="Check" width={20} height={20} strokeWidth={"1"} />
+                    <div class="flex gap-[8px] border-t-1 border-white py-[16px]">
+                        <div class="flex-none pt-[2px]"><Icon id="Check" width={20} height={20} strokeWidth={"1"} /></div>
                         <p class="font-sans not-italic font-normal text-[20px] leading-[24px] text-white opacity-[80%]">
                         {benefit}
                         </p>
@@ -63,7 +65,7 @@ export default function Partner(
                 ))}
                 <div class="pt-6 md:max-w-[200px]">
                     <a
-                        href="#delight"
+                        href={buttonHref}
                         class="block w-full bg-[#02F67C] transition py-3.5 text-[#161A16] font-inter border-1 border-[transparent] font-medium not-italic rounded-[40px] text-center text-[16px] leading-[19.36px] hover:(bg-[transparent] text-[#02F67C] border-[#02F67C])"
                     >
                         {button}
