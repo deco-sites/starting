@@ -73,11 +73,11 @@ export default function Pricing({ title, text, freePlan, paidPlans } : Props){
                     </div>
                 </div>
 
-                <div class="flex flex-row gap-8 overflow-auto justify-items-start md:justify-around pt-[40px] md:py-[80px] px-2 md:px-10">
+                <div class="flex flex-row gap-8 overflow-auto justify-items-start lg:justify-around pt-[40px] md:py-[80px] px-2 md:px-10">
                     {
                         paidPlans.map(plan => {
                             return(
-                                <div class="bg-linear-y-border p-[1px] rounded-[8px] w-full max-w-[300px] min-w-[75vw] md:min-w-[0]">
+                                <div class="bg-linear-y-border p-[1px] pt-[2px] rounded-[8px] w-full max-w-[300px] min-w-[75vw] md:min-w-[250px]">
                                     <div class="flex flex-col gap-[20px] p-8 bg-linear-pricing-y rounded-[8px]">
                                         <h2 class="text-almost-white text-[22px] font-semibold">{plan.title}</h2>
                                         <p class="text-almost-white text-[13px] min-h-[40px]">{plan.text}</p>
