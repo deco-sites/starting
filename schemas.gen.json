@@ -2406,11 +2406,17 @@
               "title": "Form Title"
             },
             "BusinessCTAName": {
-              "type": "string",
+              "type": [
+                "string",
+                "null"
+              ],
               "title": " Business C T A Name"
             },
             "DevCTAName": {
-              "type": "string",
+              "type": [
+                "string",
+                "null"
+              ],
               "title": " Dev C T A Name"
             },
             "PlaceholderfieldName": {
@@ -2465,8 +2471,6 @@
             }
           },
           "required": [
-            "BusinessCTAName",
-            "DevCTAName",
             "urlToActionBusiness",
             "urlToActionDev"
           ],
