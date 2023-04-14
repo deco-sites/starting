@@ -62,36 +62,39 @@ return (
                 </svg>
                 </a>
             </li>
-            <li class="group cursor-pointer relative w-[205px]">
+            <li class="group cursor-pointer relative min-w-[150px]">
             {
                 showSwitcher.value &&
                 <>
-                    <button class="flex gap-2 items-center md:px-3 md:py-1 md:focus-within:(border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
-                    <span class="font-normal text-[16px] text-[#fff]">{props.pageInitial}</span>
-                    <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#55D695]" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    </button>
+                    <details class="select-none flex gap-2 items-center md:px-3 md:py-1 md:open:(border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
+                        
+                        <summary class="notShow font-normal text-[16px] text-[#fff] flex items-center justify-center gap-[5px]">{props.pageInitial}
+                            <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#55D695]" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </summary>
                     <div class="absolute left-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
-                    <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
-                        <div class="flex flex-row items-center justify-between">
-                        <a href={urlMarketers.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
-                            <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">{props.mkt.label}</p>
-                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class={props.mkt.selected ? '' : 'hidden'}>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z" fill="#2FD180"/>
-                            </svg>
-                        </a>  
-                        </div>
-                        <div class="flex flex-row items-center justify-between">
-                        <a href={urlDevelopers.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
-                            <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">{props.dev.label}</p>
-                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class={props.dev.selected ? '' : 'hidden'}>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z" fill="#2FD180"/>
-                            </svg>
-                        </a>  
+                        <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
+                            <div class="flex flex-row items-center justify-between">
+                                <a href={urlMarketers.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
+                                    <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">{props.mkt.label}</p>
+                                    <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class={props.mkt.selected ? '' : 'hidden'}>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z" fill="#2FD180"/>
+                                    </svg>
+                                </a>  
+                            </div>
+                            <div class="flex flex-row items-center justify-between">
+                            <a href={urlDevelopers.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
+                                <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">{props.dev.label}</p>
+                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class={props.dev.selected ? '' : 'hidden'}>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z" fill="#2FD180"/>
+                                </svg>
+                            </a>  
+                            </div>
                         </div>
                     </div>
-                    </div>
+                    
+                    </details>
                 </>
             }
             </li>
@@ -191,12 +194,13 @@ return (
         </ul>
         <ul class="hidden md:flex md:flex-row md:gap-4 px-3">
         <li class="group cursor-pointer md:relative">
-            <button class="hidden md:flex gap-2 items-center md:px-3 md:py-1 text-[#06E474] md:focus-within:(group-focus-within:text-[#fff] border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
-            <span class=" font-normal text-[16px]">{props.idiom}</span>
+            <details class="select-none hidden md:flex gap-2 items-center md:px-3 md:py-1 text-[#06E474] md:open:(group-focus-within:text-[#fff] border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
+            <summary class="notShow font-normal text-[16px] flex items-center justify-center gap-[5px]">{props.idiom}
             <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#fff] stroke-current" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
-            </button>
+            </summary>
+            
             <div class="absolute right-0 mt-5 hidden group-focus-within:block rounded border-1 border-[#ffffff10]">
             <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
                 <div class="flex flex-row items-center justify-between">
@@ -217,6 +221,7 @@ return (
                 </div>
             </div>
             </div>
+            </details>
         </li>
         <li>
             <a href={props.login.url} class="block md:hover:(border-[#02F67C] border-1 text-[#fff]) border-[transparent] border-1  font-normal text-[16px] text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300">
