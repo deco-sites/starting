@@ -23,7 +23,7 @@ export default function Community({lazyload, blur1Background, blur2Background, p
           <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="absolute top-[0] right-[-75px] animate-blur1 lg:(w-[600px] h-[600px]) 2xl:(w-[700px] h-[700px])" width={400} height={400} src={blur1Background}/>
           <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="absolute top-[140px] animate-blur2 lg:(w-[600px] h-[600px]) 2xl:(w-[700px] h-[700px])" width={400} height={400} src={blur2Background}/>
         </div>
-        <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="absolute overflow-y-hidden w-full top-0 mt-[10%] px-6 md:px-0" width={366} height={339} src={peopleImage}/>
+        <Image fetchPriority={lazyload ? "low" : "high"} preload={lazyload ? false : true} loading={lazyload ? 'lazy' : 'eager'} class="md:w-[80vw] absolute overflow-y-hidden w-full top-0 mt-[10%] px-6 md:px-0" width={366} height={339} src={peopleImage}/>
       </div>
       <div class="flex flex-col lg:w-[50%] gap-[24px] md:mt-[40px]">
         <h2 class="text-[56px] lg:(order-1 text-[70px]) xl:text-[80px] text-[#1F261F] font-bold leading-[.95]">{mainText}</h2>

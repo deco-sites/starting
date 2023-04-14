@@ -10,7 +10,7 @@ export interface Props {
 export default function TripletBanner({ cards }: Props) {
 return (
     <section class="bg-[#F3FFF9] flex justify-center items-center flex-col pt-[40px]">
-        <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-3 mx-4 pb-[40px] md:pb-24 max-w-[1440px] md:mx-auto">
+        <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-3 mx-4 pb-[40px] px-4 md:pb-24 max-w-[1440px] md:mx-auto">
             {cards?.map(card => (
                 <>
                     <div class="border-box bg-[#F3FFF9] relative flex flex-col p-[2px] rounded-[24px]">

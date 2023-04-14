@@ -23,7 +23,7 @@ export default function  Differentials({ darkMode, title, sections } : Props) {
         <section class={`py-10 md:py-[120px] ${darkMode ? "bg-dark-green" : "bg-linear"}`}>
             <div class="max-w-screen-2xl mx-auto px-6 md:px-28">
                 <h2 class="text-[32px] md:text-[42px] text-white opacity-90 md:text-center leading-[1.18]">{title}</h2>
-                <div class="mt-12 md:mt-24 flex flex-col gap-10 md:gap-16">
+                <div class="mt-12 md:mt-24 flex flex-col gap-10 md:gap-16 items-center">
                     {
                         sections?.map(section => {
                             return(

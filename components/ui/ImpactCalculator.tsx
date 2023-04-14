@@ -118,90 +118,92 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
     return(
         <section class="bg-[#F3FFF9]">
             <div class="absolute bg-dark-green w-full h-[180px]"></div>
-            <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border-1 rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
-                <div class="md:max-w-[40%]">
-                    <p class="text-2xl md:text-5xl text-center md:text-left md:leading-[53px] text-dark-green">{mainText}</p>
-                </div>
-                <div>
-                    <form action="#" class="flex flex-col gap-6">
-                        <div>
-                            <label htmlFor="">{formInfos.websiteLabel}</label>
-                            <input 
-                                type="text" 
-                                value={website} 
-                                onInput={(e) => website.value = (e.target as HTMLInputElement).value} 
-                                class={`${inputClass}`}
-                            />
-                        </div>
-                        <div class="grid grid-cols-3 gap-6 justify-between">
-                            <div class="flex flex-col justify-between">
-                                <label htmlFor="">{formInfos.sessionsLabel}</label>
+            <div class="px-4">
+                <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border-1 rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
+                    <div class="md:max-w-[40%]">
+                        <p class="text-2xl md:text-5xl text-center md:text-left md:leading-[53px] text-dark-green">{mainText}</p>
+                    </div>
+                    <div>
+                        <form action="#" class="flex flex-col gap-6">
+                            <div>
+                                <label htmlFor="">{formInfos.websiteLabel}</label>
                                 <input 
-                                    type="number" 
-                                    value={sessions} 
-                                    onInput={(e) => sessions.value = Number((e.target as HTMLInputElement).value)} 
+                                    type="text" 
+                                    value={website} 
+                                    onInput={(e) => website.value = (e.target as HTMLInputElement).value} 
                                     class={`${inputClass}`}
                                 />
                             </div>
-                            <div class="flex flex-col justify-between">
-                                <label htmlFor="">{formInfos.conversionLabel}</label>
-                                <div class="relative">
+                            <div class="grid grid-cols-3 gap-6 justify-between">
+                                <div class="flex flex-col justify-between">
+                                    <label htmlFor="">{formInfos.sessionsLabel}</label>
                                     <input 
                                         type="number" 
-                                        value={conversion} 
-                                        onInput={(e) => conversion.value = Number((e.target as HTMLInputElement).value)} 
+                                        value={sessions} 
+                                        onInput={(e) => sessions.value = Number((e.target as HTMLInputElement).value)} 
                                         class={`${inputClass}`}
                                     />
-                                    <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">%</span>
-                                </div>          
-                            </div>
-                            <div class="flex flex-col justify-between">
-                                <label htmlFor="">{formInfos.averageOrderLabel}</label>
-                                <div class="relative">
-                                    <input 
-                                        type="number" 
-                                        value={average} 
-                                        onInput={(e) => average.value = Number((e.target as HTMLInputElement).value)} 
-                                        class={`${inputClass}`}
-                                    />
-                                    <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">$</span>
-                                </div>      
-                            </div>  
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label htmlFor="">{formInfos.trafficSplitLabel}</label>
-                            <input 
-                                type="range" 
-                                class="w-full mb-1" 
-                                min="0" 
-                                max="100"
-                                onInput={(e) => handleChange(e.target as HTMLInputElement)}/>
-                            <div class="flex justify-between">
-                                <span class="text-[#161616] font-semibold text-[14px]">{formInfos.trafficMobile}{" "}{mobilePercent}%</span>
-                                <span class="text-[#161616] font-semibold text-[14px] text-right">{desktopPercent}%{" "}{formInfos.trafficDesktop}</span>
-                            </div>
-                        </div>
-                        {
-                            revenue.value || revenue.value == 0 ? 
-                            <div>
-                                <span>{potencialIncrease}</span>
-                                <p class="text-[44px] md:text-[82px] font-bold overflow-auto">{formatPrice(Number(revenue))}<span class="text-[22px] md:text-[32px] font-normal">USD</span></p>
-                            </div> :
-                            <button
-                            class="flex justify-center items-center py-4 group px-6 w-full bg-dark-green text-white rounded-[4px]"
-                            onClick={(e) => handleClick(e)}
-                            >
-                                {loading.value ? 
-                                <Spinner size={20} /> : 
-                                <div class="flex justify-center items-center gap-2">
-                                    <p>{buttonText}</p> 
-                                    <Icon class="hidden transition lg:group-hover:block" id="WhiteArrow" width={15} height={15} strokeWidth={"1"} />
                                 </div>
-                                }
-                            </button>
-                        }
-                    </form>
-                </div>                        
+                                <div class="flex flex-col justify-between">
+                                    <label htmlFor="">{formInfos.conversionLabel}</label>
+                                    <div class="relative">
+                                        <input 
+                                            type="number" 
+                                            value={conversion} 
+                                            onInput={(e) => conversion.value = Number((e.target as HTMLInputElement).value)} 
+                                            class={`${inputClass}`}
+                                        />
+                                        <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">%</span>
+                                    </div>          
+                                </div>
+                                <div class="flex flex-col justify-between">
+                                    <label htmlFor="">{formInfos.averageOrderLabel}</label>
+                                    <div class="relative">
+                                        <input 
+                                            type="number" 
+                                            value={average} 
+                                            onInput={(e) => average.value = Number((e.target as HTMLInputElement).value)} 
+                                            class={`${inputClass}`}
+                                        />
+                                        <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">$</span>
+                                    </div>      
+                                </div>  
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label htmlFor="">{formInfos.trafficSplitLabel}</label>
+                                <input 
+                                    type="range" 
+                                    class="w-full mb-1" 
+                                    min="0" 
+                                    max="100"
+                                    onInput={(e) => handleChange(e.target as HTMLInputElement)}/>
+                                <div class="flex justify-between">
+                                    <span class="text-[#161616] font-semibold text-[14px]">{formInfos.trafficMobile}{" "}{mobilePercent}%</span>
+                                    <span class="text-[#161616] font-semibold text-[14px] text-right">{desktopPercent}%{" "}{formInfos.trafficDesktop}</span>
+                                </div>
+                            </div>
+                            {
+                                revenue.value || revenue.value == 0 ? 
+                                <div>
+                                    <span>{potencialIncrease}</span>
+                                    <p class="text-[44px] md:text-[82px] font-bold overflow-auto">{formatPrice(Number(revenue))}<span class="text-[22px] md:text-[32px] font-normal">USD</span></p>
+                                </div> :
+                                <button
+                                class="flex justify-center items-center py-4 group px-6 w-full bg-dark-green text-white rounded-[4px]"
+                                onClick={(e) => handleClick(e)}
+                                >
+                                    {loading.value ? 
+                                    <Spinner size={20} /> : 
+                                    <div class="flex justify-center items-center gap-2">
+                                        <p>{buttonText}</p> 
+                                        <Icon class="hidden transition lg:group-hover:block" id="WhiteArrow" width={15} height={15} strokeWidth={"1"} />
+                                    </div>
+                                    }
+                                </button>
+                            }
+                        </form>
+                    </div>                        
+                </div>
             </div>
         </section>
     )
