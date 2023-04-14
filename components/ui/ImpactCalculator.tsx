@@ -65,8 +65,8 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
 
     if(sessions.value != 0 && website.value != "" && mobileLCP.value != 0 && mobileLCP.value != 0){
 
-        const secondsInMobile = getSecondsToImprove(mobileLCP.value)
-        const secondsInDesktop = getSecondsToImprove(desktopLCP.value)
+        const secondsInMobile = getSecondsToImprove(mobileLCP.value, 2000)
+        const secondsInDesktop = getSecondsToImprove(desktopLCP.value, 500)
 
         const conversionOptimized = getConversionOptimized(conversion.value, secondsInMobile)
         const conversionOptimizedDesktop = getConversionOptimized(conversion.value, secondsInDesktop)
@@ -81,8 +81,8 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
         revenue.value = incrementInOneYear
     }
 
-    function getSecondsToImprove(currentSeconds: number){
-        const BEST_TIME = 2000
+    function getSecondsToImprove(currentSeconds: number, bestTime: number){
+        const BEST_TIME = bestTime
         const seconds = (currentSeconds - BEST_TIME) / 1000
         return seconds < 0 ? 0 : seconds
     }
