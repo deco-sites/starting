@@ -9,9 +9,10 @@ import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/index.tsx";
 import * as $$$$1 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/Cms.tsx";
-import * as $$$$$1 from "./islands/Header.tsx";
-import * as $$$$$2 from "./islands/ImpactCalculator.tsx";
-import * as $$$$$3 from "./islands/SliderJS.tsx";
+import * as $$$$$1 from "./islands/ContactUs.tsx";
+import * as $$$$$2 from "./islands/Header.tsx";
+import * as $$$$$3 from "./islands/ImpactCalculator.tsx";
+import * as $$$$$4 from "./islands/SliderJS.tsx";
 import * as $$$$$$$$0 from "./sections/About.tsx";
 import * as $$$$$$$$1 from "./sections/Benefits.tsx";
 import * as $$$$$$$$2 from "./sections/Carousel.tsx";
@@ -123,9 +124,10 @@ const manifest: DecoManifest = {
   },
   "islands": {
     "./islands/Cms.tsx": $$$$$0,
-    "./islands/Header.tsx": $$$$$1,
-    "./islands/ImpactCalculator.tsx": $$$$$2,
-    "./islands/SliderJS.tsx": $$$$$3,
+    "./islands/ContactUs.tsx": $$$$$1,
+    "./islands/Header.tsx": $$$$$2,
+    "./islands/ImpactCalculator.tsx": $$$$$3,
+    "./islands/SliderJS.tsx": $$$$$4,
   },
   "sections": {
     "deco-sites/starting/sections/About.tsx": $$$$$$$$0,

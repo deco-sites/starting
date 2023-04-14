@@ -2329,6 +2329,155 @@
       ],
       "title": "deco-sites/starting\\islands\\Cms.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        }
+      },
+      "required": [],
+      "title": "listItem"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem"
+      },
+      "title": "listItem[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Benefits": {
+      "type": "object",
+      "properties": {
+        "mainTitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "a short main title text",
+          "title": "Main Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "a short subtitle text",
+          "title": "Description"
+        },
+        "listItems": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem[]",
+          "description": "add a item to information list in contact page",
+          "title": "List Items"
+        }
+      },
+      "required": [
+        "listItems"
+      ],
+      "title": "Benefits"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "infor": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Benefits",
+          "description": "settings of benefits section in page",
+          "title": "Infor"
+        },
+        "formInfor": {
+          "type": "object",
+          "properties": {
+            "formTitle": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Form Title"
+            },
+            "BusinessCTAName": {
+              "type": "string",
+              "title": " Business C T A Name"
+            },
+            "DevCTAName": {
+              "type": "string",
+              "title": " Dev C T A Name"
+            },
+            "PlaceholderfieldName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": " Placeholderfield Name"
+            },
+            "PlaceholderfieldEmail": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": " Placeholderfield Email"
+            },
+            "PlaceholderfieldPosition": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": " Placeholderfield Position"
+            },
+            "PlaceholderfieldSocial": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": " Placeholderfield Social"
+            },
+            "PlaceholderFieldExtra": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": " Placeholder Field Extra"
+            },
+            "submiteName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Submite Name"
+            },
+            "urlToActionBusiness": {
+              "type": "string",
+              "title": "Url To Action Business"
+            },
+            "urlToActionDev": {
+              "type": "string",
+              "title": "Url To Action Dev"
+            }
+          },
+          "required": [
+            "BusinessCTAName",
+            "DevCTAName",
+            "urlToActionBusiness",
+            "urlToActionDev"
+          ],
+          "title": "Form Infor"
+        }
+      },
+      "required": [
+        "formInfor"
+      ],
+      "title": "deco-sites/starting\\components\\ui\\ContactUs.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xpc2xhbmRzXEhlYWRlci50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -3170,174 +3319,6 @@
         "peopleImage"
       ],
       "title": "deco-sites/starting\\components\\ui\\Community.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyRm9ybXMudHN4@ButtonSwitcherFormsProps": {
-      "type": "object",
-      "properties": {
-        "switchB1": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Name"
-            },
-            "actionUrl": {
-              "type": "string",
-              "title": "Action Url"
-            }
-          },
-          "required": [
-            "actionUrl"
-          ],
-          "title": "Switch B1"
-        },
-        "switchB2": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "title": "Name"
-            },
-            "actionUrl": {
-              "type": "string",
-              "title": "Action Url"
-            }
-          },
-          "required": [
-            "name",
-            "actionUrl"
-          ],
-          "title": "Switch B2"
-        }
-      },
-      "required": [
-        "switchB1",
-        "switchB2"
-      ],
-      "title": "ButtonSwitcherFormsProps"
-    },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Title"
-        },
-        "description": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Description"
-        }
-      },
-      "required": [],
-      "title": "listItem"
-    },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem"
-      },
-      "title": "listItem[]"
-    },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Benefits": {
-      "type": "object",
-      "properties": {
-        "mainTitle": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "a short main title text",
-          "title": "Main Title"
-        },
-        "description": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "a short subtitle text",
-          "title": "Description"
-        },
-        "listItems": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@listItem[]",
-          "description": "add a item to information list in contact page",
-          "title": "List Items"
-        }
-      },
-      "required": [
-        "listItems"
-      ],
-      "title": "Benefits"
-    },
-    "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "switcherButtonConfigs": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXEJ1dHRvblN3aXRjaGVyRm9ybXMudHN4@ButtonSwitcherFormsProps",
-          "title": "Switcher Button Configs"
-        },
-        "infor": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Benefits",
-          "description": "settings of benefits section in page",
-          "title": "Infor"
-        },
-        "formInfor": {
-          "type": "object",
-          "properties": {
-            "formTitle": {
-              "type": "string",
-              "title": "Form Title"
-            },
-            "PlaceholderfieldName": {
-              "type": "string",
-              "title": " Placeholderfield Name"
-            },
-            "PlaceholderfieldEmail": {
-              "type": "string",
-              "title": " Placeholderfield Email"
-            },
-            "PlaceholderfieldPosition": {
-              "type": "string",
-              "title": " Placeholderfield Position"
-            },
-            "PlaceholderfieldSocial": {
-              "type": "string",
-              "title": " Placeholderfield Social"
-            },
-            "PlaceholderFieldExtra": {
-              "type": "string",
-              "title": " Placeholder Field Extra"
-            },
-            "submiteName": {
-              "type": "string",
-              "title": "Submite Name"
-            }
-          },
-          "required": [
-            "formTitle",
-            "PlaceholderfieldName",
-            "PlaceholderfieldEmail",
-            "PlaceholderfieldPosition",
-            "PlaceholderfieldSocial",
-            "PlaceholderFieldExtra",
-            "submiteName"
-          ],
-          "title": "Form Infor"
-        }
-      },
-      "required": [
-        "switcherButtonConfigs",
-        "formInfor"
-      ],
-      "title": "deco-sites/starting\\components\\ui\\ContactUs.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXERlbGlnaHQudHN4@Props": {
       "type": "object",
@@ -5126,6 +5107,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0NvbnRhY3RVcy50c3g=": {
+      "title": "./islands/ContactUs.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXENvbnRhY3RVcy50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ContactUs.tsx"
+          ],
+          "default": "./islands/ContactUs.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0hlYWRlci50c3g=": {
       "title": "./islands/Header.tsx",
       "type": "object",
@@ -6285,6 +6287,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Ntcy50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0NvbnRhY3RVcy50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
