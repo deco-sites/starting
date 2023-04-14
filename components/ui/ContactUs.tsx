@@ -105,7 +105,7 @@ export default function ContactUs({ infor, formInfor }: Props) {
                   selectedUrlToAction: formInfor?.urlToActionBusiness,
                 })}
             >
-              {formInfor?.BusinessCTAName}
+              {formInfor?.BusinessCTAName || 'I’m a Business user'}
             </button>
 
             <button
@@ -121,7 +121,7 @@ export default function ContactUs({ infor, formInfor }: Props) {
                   selectedUrlToAction: formInfor?.urlToActionDev,
                 })}
             >
-              {formInfor?.DevCTAName}
+              {formInfor?.DevCTAName || 'I’m a Developer'}
             </button>
           </div>
 
