@@ -42,10 +42,10 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
       <div class="max-w-screen-2xl m-auto">
         <div class="max-w-[100vw] px-6 pt-24 pb-8 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
 
-          <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[3.5rem] md:(w-full max-w-[1280px] text-[112px] leading-[6.5rem])`}>
+          <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[4rem] sm:(leading-[5.5rem]) md:(w-full max-w-[1280px] text-[112px] leading-[6.5rem]) relative`}>
                 {mainText}
                 {
-                activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] pt-0 absolute text-center inline-flex pl-3.5 md:(h-[90px] pt-0 mt-[-1.5rem]) xl:(h-[120px] pl-6 pt-6 w-auto)">
+                activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] max-h-[70px] pt-0 absolute text-center inline-flex pl-3.5 sm:(h-[80px] max-h-[94px] bottom-0) md:(h-[94px] pt-0 mt-[-1.5rem]) xl:(h-[120px] pl-6 pt-6 w-auto max-h-[120px])">
                 <span style="color: #06E474" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #06E474" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #06E474" class="absolute animate-switcherText30">30%</span>

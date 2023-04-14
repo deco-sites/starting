@@ -20,7 +20,7 @@ function Slider({
       {...props}
     >
       {Children.map(children, (child, index) => (
-        <li class={`min-w-[360px] max-w-[100vw] max-h-[425px] overflow-hidden ${itemClass ? itemClass : "w-full min-h-[425px]"}`}>
+        <li class={`w-full min-w-[420px] max-w-[100vw] overflow-hidden ${itemClass}`}>
           <button data-slider-item={index} data-dot={index} class={snap}>
             {child}
           </button>
