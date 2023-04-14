@@ -24,6 +24,8 @@ export default function Header(props: Props) {
     const urlMarketers = useSignal("")
     const urlDevelopers = useSignal("")
     const showSwitcher = useSignal(false)
+    const openSwitcher = useSignal(false)
+    const openLanguage = useSignal(false)
 
     const currentLanguageLink = props.pt.selected ? props.pt.url : props.eng.url
 
@@ -47,8 +49,23 @@ export default function Header(props: Props) {
         if(homePageHas.includes(urlPage)) {
             showSwitcher.value = true
         }
-
     }
+
+    const handleMenu = () => {
+        if (openSwitcher.value == false) {
+            openSwitcher.value = true
+        } else {
+            openSwitcher.value = false
+        }
+    } 
+
+    const handleLanguage = () => {
+        if (openLanguage.value == false) {
+            openLanguage.value = true
+        } else {
+            openLanguage.value = false
+        }
+    } 
 
 return (
     <section class="bg-[#0A2121] fixed top-0 z-50 w-full">
@@ -66,14 +83,15 @@ return (
             {
                 showSwitcher.value &&
                 <>
-                    <details class="select-none flex gap-2 items-center md:open:(border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
+                    <div class={`select-none flex gap-2 items-center ${openSwitcher.value ? 'md:(border-[#06E474] border-1)' : '' }  border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300`}>
                         
-                        <summary class="notShow font-normal text-[16px] md:px-3 md:py-1 text-[#fff] flex items-center justify-center gap-[5px]">{props.pageInitial}
+                        <div onClick={handleMenu} class="z-10 font-normal text-[16px] md:px-3 md:py-1 text-[#fff] flex items-center justify-center gap-[5px]">{props.pageInitial}
                             <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#55D695]" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
                             </svg>
-                        </summary>
-                    <div class="absolute left-0 mt-5 rounded border-1 border-[#ffffff10]">
+                        </div>
+                    <div onClick={handleMenu} class={`${openSwitcher.value ? 'block cursor-default w-[110vw] h-[110vh] absolute left-[-100px] top-[-20px]' : 'hidden' }`}></div>
+                    <div class={`${openSwitcher.value ? 'block' : 'hidden' } absolute top-[35px] left-0 mt-5 rounded border-1 border-[#ffffff10]`}>
                         <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
                             <div class="flex flex-row items-center justify-between">
                                 <a href={urlMarketers.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
@@ -94,7 +112,7 @@ return (
                         </div>
                     </div>
                     
-                    </details>
+                    </div>
                 </>
             }
             </li>
@@ -194,14 +212,14 @@ return (
         </ul>
         <ul class="hidden lg:flex lg:flex-row lg:gap-4 px-3">
             <li class="group cursor-pointer md:relative">
-                <details class="select-none hidden md:flex gap-2 items-center text-[#06E474] md:open:(group-focus-within:text-[#fff] border-[#06E474] border-1) border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300">
-                <summary class="notShow md:px-3 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px]">{props.idiom}
-                <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#fff] stroke-current" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-                </summary>
-                
-                <div class="absolute right-0 mt-5 rounded border-1 border-[#ffffff10]">
+                <div class={`select-none hidden ${openLanguage.value ? 'md:(text-[#fff] border-[#06E474] border-1)' : '' } md:flex gap-2 items-center text-[#06E474] border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300`}>
+                    <div onClick={handleLanguage} class="z-10 md:px-3 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px]">{props.idiom}
+                        <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5" class="group-hover:border-[#fff] stroke-current" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                <div onClick={handleLanguage} class={`${openLanguage.value ? 'block cursor-default w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]' : 'hidden' }`}></div>
+                <div class={`${openLanguage.value ? 'block' : 'hidden' } absolute top-[35px] right-0 mt-5 rounded border-1 border-[#ffffff10]`}>
                 <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
                     <div class="flex flex-row items-center justify-between">
                     <a href={urlPortuguese.value} class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded">
@@ -221,7 +239,7 @@ return (
                     </div>
                 </div>
                 </div>
-                </details>
+                </div>
             </li>
             <li>
                 <a href={props.login.url} class="block md:hover:(border-[#02F67C] border-1 text-[#fff]) border-[transparent] border-1  font-normal text-[16px] text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300">
