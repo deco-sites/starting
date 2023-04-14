@@ -40,9 +40,9 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
   return (
     <div class={(themeIsLigth ? " bg-[#F3FFF9]":"bg-dark-green-gradient") +" "+ "flex flex-col mb-0 pb-[5rem]"}>
       <div class="max-w-screen-2xl m-auto">
-        <div class="max-w-[100vw] px-6 pt-24 pb-8 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
+        <div class="max-w-[100vw] px-6 pt-24 pb-2 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
 
-          <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[4rem] sm:(leading-[5.5rem]) md:(w-full max-w-[1280px] text-[112px] leading-[6.5rem]) relative`}>
+          <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[.93] md:(w-full max-w-[1280px] text-[112px]) relative`}>
                 {mainText}
                 {
                 activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] max-h-[70px] pt-0 absolute text-center inline-flex pl-3.5 sm:(h-[80px] max-h-[94px] bottom-0) md:(h-[94px] pt-0 mt-[-1.5rem]) xl:(h-[120px] pl-6 pt-6 w-auto max-h-[120px])">
@@ -57,9 +57,9 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
             }  
           </h1>
         </div>
-        <div class="flex px-6 py-4 flex-col gap-20 justify-center items-center lg:(flex-row p-8)">
+        <div class="flex px-6 py-6 flex-col gap-20 justify-center items-center lg:(flex-row p-8)">
         <div class="flex flex-col gap-[2rem] lg:(w-[46%] items-center)">
-          <p class={(themeIsLigth ? "text-frame-515-rgba" : "text-[#f3fff9b0]") +" "+ "font-sans font-normal not-italic text-[32px] leading-[1.18]"}>
+          <p class={(themeIsLigth ? "text-frame-515-rgba" : "text-[#f3fff9b0]") +" "+ "font-sans font-normal not-italic text-[24px] md:text-[32px] leading-[1.18]"}>
           {descriptionText}
           </p>
           <div id="buttons-wrapper" class="w-full flex flex-col gap-4 ">
@@ -91,7 +91,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
               <div id="mini-banners-art-montage" class="w-full flex justify-end items-center">
                 <Image 
                   src={miniBanner?.bannerTopImage}
-                  class="max-w-[600px] relative bottom-8 left-24 lg:(w-[597px] -bottom-12 left-56 group-hover:scale-105 group-hover:bottom-0  duration-300 ease-in) z-10"
+                  class="relative bottom-8 left-24 lg:(max-w-[600px] w-[597px] -bottom-12 left-56 group-hover:scale-105 group-hover:bottom-0  duration-300 ease-in) z-10"
                   width={350}
                   alt={miniBanner?.altBannerTopImage}
                   title={miniBanner?.altBannerTopImage}
@@ -104,7 +104,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
                   <span class="w-[80px] block relative top-[65px] right-16 text-right leading-4 font-normal text-[12px] lg:top-[108px]">{miniBanner?.linkedText}</span>
                   <Image 
                     src={miniBanner?.bannerBottomImage}
-                    class="max-w-[500px] lg:(w-[476px]) group-hover:scale-105 duration-[300ms] ease-in"
+                    class="lg:(max-w-[500px] w-[476px]) group-hover:scale-105 duration-[300ms] ease-in"
                     width={300}
                     alt={miniBanner?.altBannerBottomImage}
                     title={miniBanner?.altBannerBottomImage}

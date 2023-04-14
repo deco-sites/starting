@@ -18,8 +18,8 @@ export interface Props {
 
 export default function Integration({mainText, secondText, image, imageEffect}: Props) {
   return (
-    <section class="bg-dark-green h-[150vw] md:h-auto">
-      <div class="relative flex flex-col md:flex-row md:px-[7rem] pt-4 pb-12 md:pb-32 max-w-screen-2xl m-auto">
+    <section class="bg-dark-green md:pb-0 md:h-auto">
+      <div class="relative flex flex-col md:flex-row md:px-[7rem] pt-4 pb-64 md:pb-24 max-w-screen-2xl m-auto">
         <div class="w-full z-10">
           <Picture class="w-full md:w-1/2 block" preload={false}>
             <Source
@@ -44,8 +44,8 @@ export default function Integration({mainText, secondText, image, imageEffect}: 
             />
           </Picture>
         </div>
-        <div class="absolute top-[74vw] flex flex-col px-6 gap-10 md:(left-[39%] top-[41%] max-w-[760px])">
-          <Picture class="block absolute max-w-full top-[-130px] left-[10px] md:(top-[-300px] left-[-350px])" preload={false}>
+        <div class="absolute top-[74vw] flex flex-col px-6 gap-8 md:(left-[39%] top-[41%] max-w-[780px])">
+          <Picture class="block absolute max-w-full top-[-150px] left-[10px] md:(top-[-300px] left-[-350px])" preload={false}>
             <Source
               media="(max-width: 767px)"
               fetchPriority={"low"}
@@ -67,8 +67,8 @@ export default function Integration({mainText, secondText, image, imageEffect}: 
               alt="Image Effect"
             />
           </Picture>
-          <p class='font-sans not-italic font-bold text-white text-[56px] leading-[64px] tracking-[-1%] z-10 md:(text-[8vw] leading-[75.5px]) xl:(text-[112px] leading-[105.5px])' dangerouslySetInnerHTML={{ __html: mainText }}></p>
-          <p class="font-sans not-italic font-normal text-[20px] md:text-[2vw] xl:text-[24px] leading-[30px] text-white opacity-[67%] z-10">
+          <p class='font-sans font-bold text-white text-[56px] leading-[.95] tracking-[-1%] z-10 md:(text-[8vw]) xl:(text-[112px])' dangerouslySetInnerHTML={{ __html: mainText }}></p>
+          <p class="font-sans text-[20px] md:text-[2vw] xl:text-[24px] leading-[30px] text-white opacity-[67%] z-10">
             {secondText}
           </p>
         </div>
