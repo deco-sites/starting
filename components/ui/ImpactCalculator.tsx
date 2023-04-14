@@ -126,8 +126,9 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                     <div>
                         <form action="#" class="flex flex-col gap-6">
                             <div>
-                                <label htmlFor="">{formInfos.websiteLabel}</label>
+                                <label htmlFor={formInfos.websiteLabel}>{formInfos.websiteLabel}</label>
                                 <input 
+                                    id={formInfos.websiteLabel}
                                     type="text" 
                                     value={website} 
                                     onInput={(e) => website.value = (e.target as HTMLInputElement).value} 
@@ -136,8 +137,9 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                             </div>
                             <div class="grid grid-cols-3 gap-6 justify-between">
                                 <div class="flex flex-col justify-between">
-                                    <label htmlFor="">{formInfos.sessionsLabel}</label>
+                                    <label htmlFor={formInfos.sessionsLabel}>{formInfos.sessionsLabel}</label>
                                     <input 
+                                        id={formInfos.sessionsLabel}
                                         type="number" 
                                         value={sessions} 
                                         onInput={(e) => sessions.value = Number((e.target as HTMLInputElement).value)} 
@@ -145,9 +147,10 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                                     />
                                 </div>
                                 <div class="flex flex-col justify-between">
-                                    <label htmlFor="">{formInfos.conversionLabel}</label>
+                                    <label htmlFor={formInfos.conversionLabel}>{formInfos.conversionLabel}</label>
                                     <div class="relative">
                                         <input 
+                                            id={formInfos.conversionLabel}
                                             type="number" 
                                             value={conversion} 
                                             onInput={(e) => conversion.value = Number((e.target as HTMLInputElement).value)} 
@@ -157,9 +160,10 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                                     </div>          
                                 </div>
                                 <div class="flex flex-col justify-between">
-                                    <label htmlFor="">{formInfos.averageOrderLabel}</label>
+                                    <label htmlFor={formInfos.averageOrderLabel}>{formInfos.averageOrderLabel}</label>
                                     <div class="relative">
                                         <input 
+                                            id={formInfos.averageOrderLabel}
                                             type="number" 
                                             value={average} 
                                             onInput={(e) => average.value = Number((e.target as HTMLInputElement).value)} 
@@ -170,8 +174,9 @@ export default function ImpactCalculator({ mainText, formInfos, potencialIncreas
                                 </div>  
                             </div>
                             <div class="flex flex-col gap-2">
-                                <label htmlFor="">{formInfos.trafficSplitLabel}</label>
+                                <label htmlFor={formInfos.trafficSplitLabel}>{formInfos.trafficSplitLabel}</label>
                                 <input 
+                                    id={formInfos.trafficSplitLabel}
                                     type="range" 
                                     class="w-full mb-1" 
                                     min="0" 
