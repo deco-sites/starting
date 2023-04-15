@@ -43,9 +43,10 @@ export default function ContactUs({ infor, formInfor }: Props) {
     selectedUrlToAction: "/",
   });
   return (
-    <div class="flex flex-col items-center font-sans p-6 pt-[103px] pb-10 xl:p-40 gap-y-10 overflow-x-hidden xl:(flex-row gap-x-[120px])">
+    <div class="flex flex-col items-center font-sans p-6 pt-[103px] pb-10 xl:p-40 gap-y-10 overflow-hidden xl:(flex-row gap-x-[120px])">
+    
       <div class="w-full text-left xl:w-1/2 ">
-        <h1 class="text-dark-green text-5xl leading-[53px]">
+        <h1 class="text-dark-green text-5xl leading-[53px] lg:text-[3.3334vw] 2xl:text-5xl">
           {infor?.mainTitle}
         </h1>
         <h2 class="font-normal text-3xl text-dark-green opacity-50 pt-4 leading-9">
@@ -76,7 +77,7 @@ export default function ContactUs({ infor, formInfor }: Props) {
         </ol>
       </div>
       <div class="w-full xl:w-1/2 relative max-w-[443px]">
-
+      <span class="hidden lg:(w-[352px] h-[900px] block absolute right-0 -top-24 bg-contact-us-bg-gradient rotate-[333deg] -z-10)"></span>
         <form
           class="flex flex-col justify-center items-center bg-white border-1 border-dark-green rounded-2xl p-4 md:p-8 gap-6 placeholder-[#161A16] "
           action=""
