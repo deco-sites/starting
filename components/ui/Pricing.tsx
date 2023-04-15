@@ -16,6 +16,7 @@ export interface Props {
     title: string;
     text: string;
     freePlan : Plan;
+    recurrence: string;
     paidPlans : Plan[];
 }
 
@@ -25,19 +26,19 @@ function Button({text, link} : {text: string; link: string}){
     )
 }
 
-function Price({price, custom} : {price: string; custom: boolean}){
+function Price({price, custom, recurrence} : {price: string; custom: boolean, recurrence: string}){
     return(
         <div class={`flex ${custom ? "justify-items-start" : "justify-center"} flex items-center gap-2 min-h-[72px]`}>
             <p class={`text-highlight ${custom ? "text-[32px]" : "text-[48px]"}`}>{price}</p>
             {
-                !custom && <span class="text-almost-white">per <br /> month</span>
+                !custom && <span class="text-almost-white max-w-[50px]">{recurrence}</span>
             }
             
         </div>
     )
 }
 
-export default function Pricing({ title, text, freePlan, paidPlans } : Props){
+export default function Pricing({ title, text, freePlan, paidPlans, recurrence } : Props){
 
     return(
         <section class="py-[63px] bg-linear">
@@ -54,7 +55,7 @@ export default function Pricing({ title, text, freePlan, paidPlans } : Props){
                                 <h2 class="text-highlight text-[32px] font-semibold">{freePlan.title}</h2>
                                 <p class="text-almost-white text-[13px] ">{freePlan.text}</p>
                             </div>
-                            <Price price={freePlan.price} custom={freePlan.priceCustom}/>
+                            <Price price={freePlan.price} custom={freePlan.priceCustom} recurrence={recurrence}/>
                             <Button link={freePlan.button.link} text={freePlan.button.text}/>
                         </div>
                     </div>
@@ -81,7 +82,7 @@ export default function Pricing({ title, text, freePlan, paidPlans } : Props){
                                     <div class="flex flex-col gap-[20px] p-8 bg-linear-pricing-y rounded-[8px]">
                                         <h2 class="text-almost-white text-[22px] font-semibold">{plan.title}</h2>
                                         <p class="text-almost-white text-[13px] min-h-[40px]">{plan.text}</p>
-                                        <Price price={plan.price} custom={plan.priceCustom}/>
+                                        <Price price={plan.price} custom={plan.priceCustom} recurrence={recurrence}/>
                                         <ul>
                                             {
                                                 plan.benefits.map(benefit => {
