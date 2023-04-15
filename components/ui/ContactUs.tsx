@@ -43,7 +43,7 @@ export default function ContactUs({ infor, formInfor }: Props) {
     selectedUrlToAction: "/",
   });
   return (
-    <div class="flex flex-col font-sans p-6 pt-[103px] pb-10 xl:p-40 gap-y-10 overflow-x-hidden xl:(flex-row gap-x-[120px])">
+    <div class="flex flex-col items-center font-sans p-6 pt-[103px] pb-10 xl:p-40 gap-y-10 overflow-x-hidden xl:(flex-row gap-x-[120px])">
       <div class="w-full text-left xl:w-1/2 ">
         <h1 class="text-dark-green text-5xl leading-[53px]">
           {infor?.mainTitle}
@@ -79,7 +79,7 @@ export default function ContactUs({ infor, formInfor }: Props) {
 
         <form
           class="flex flex-col justify-center items-center bg-white border-1 border-dark-green rounded-2xl p-4 md:p-8 gap-6 placeholder-[#161A16] "
-          action={active.selectedUrlToAction}
+          action=""
         >
           <span class="text-[20px]">
             {formInfor?.formTitle || "Ready to delight your customers?"}
@@ -92,37 +92,40 @@ export default function ContactUs({ infor, formInfor }: Props) {
             <span id="bg-switcher" class={`${(active.btn2On
                 ? "translate-x-[103%] md:translate-x-[106%] xl:translate-x-[105%]"
                 : "")} w-[42%] md:w-[39%] h-[42px] absolute bg-dark-green rounded-full transition-all duration-1000 ease-out`}></span>
-            <button
+            <input
+              type="button"
+              name={formInfor?.BusinessCTAName || 'I’m a Business user'}
+              value={formInfor?.BusinessCTAName || 'I’m a Business user'}
               class={(active.btn1On
                 ? "text-[#f3fff9ca]"
                 : "text-dark-green") +
                 " " +
-                "w-[50%] max-w-[175px] flex justify-center items-center rounded-full p-[9px] lg:p-[11px] transition-all duration-500 border-none z-10 outline-none hover:outline-none"}
+                "w-[50%] max-w-[175px] cursor-pointer bg-transparent flex justify-center items-center rounded-full p-[9px] lg:p-[11px] transition-all duration-500 z-10 outline-none hover:(outline-none border-none)"}
               onClick={() =>
                 setActive({
                   btn1On: true,
                   btn2On: false,
                   selectedUrlToAction: formInfor?.urlToActionBusiness,
                 })}
-            >
-              {formInfor?.BusinessCTAName || 'I’m a Business user'}
-            </button>
+            />
 
-            <button
+            <input
+              type="button"
+              name= {formInfor?.DevCTAName || 'I’m a Developer'}
+              value= {formInfor?.DevCTAName || 'I’m a Developer'}
               class={(active.btn2On
                 ? "text-white"
                 : "text-dark-green") +
                 " " +
-                "w-[50%] max-w-[175px] flex justify-center items-center rounded-full p-[9px] lg:p-[11px] transition-all duration-500 border-none z-10 outline-none hover:outline-none"}
+                "w-[50%] max-w-[175px] cursor-pointer bg-transparent flex justify-center items-center rounded-full p-[9px] lg:p-[11px] transition-all duration-500 border-none z-10 outline-none hover:(outline-none border-none)"}
               onClick={() =>
                 setActive({
                   btn1On: false,
                   btn2On: true,
                   selectedUrlToAction: formInfor?.urlToActionDev,
                 })}
-            >
-              {formInfor?.DevCTAName || 'I’m a Developer'}
-            </button>
+            />
+
           </div>
 
           <input
