@@ -4254,13 +4254,13 @@
           "type": "string",
           "title": "Text"
         },
-        "freePlan": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan",
-          "title": "Free Plan"
-        },
         "recurrence": {
           "type": "string",
           "title": "Recurrence"
+        },
+        "freePlan": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan",
+          "title": "Free Plan"
         },
         "paidPlans": {
           "type": "array",
@@ -4273,8 +4273,8 @@
       "required": [
         "title",
         "text",
-        "freePlan",
         "recurrence",
+        "freePlan",
         "paidPlans"
       ],
       "title": "deco-sites/starting\\components\\ui\\Pricing.tsx@Props"

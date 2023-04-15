@@ -52,7 +52,7 @@ export default function Partner(
     <section class="py-16 md:py-[200px]" style="background: linear-gradient(360deg, #053535 0.04%, #0A2121 100.04%)">
         <div class="flex flex-col px-6 md:px-[2rem] md:flex-row xl:gap-[80px] max-w-screen-2xl m-auto">
             <div class="flex pb-6 gap-10 md:w-[45%] lg:w-[40%] xl:w-[38%]">
-                <h2 class={`font-sans not-italic font-bold text-white text-[56px] md:text-[64px] lg:text-[74px] xl:text-[${desktopMainTextSize ? desktopMainTextSize : '94px'}] 2xl:text-[112px] leading-[.95] tracking-[-1%] md:order-1`}>
+                <h2 class={`font-sans not-italic font-bold text-white text-[56px] md:text-[64px] lg:text-[74px] xl:text-[${desktopMainTextSize ? desktopMainTextSize : '94px'}] leading-[.95] tracking-[-1%] md:order-1`}>
                     {mainText}
                 </h2>
             </div>
