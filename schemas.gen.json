@@ -4258,6 +4258,10 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZ1xjb21wb25lbnRzXHVpXFByaWNpbmcudHN4@Plan",
           "title": "Free Plan"
         },
+        "recurrence": {
+          "type": "string",
+          "title": "Recurrence"
+        },
         "paidPlans": {
           "type": "array",
           "items": {
@@ -4270,6 +4274,7 @@
         "title",
         "text",
         "freePlan",
+        "recurrence",
         "paidPlans"
       ],
       "title": "deco-sites/starting\\components\\ui\\Pricing.tsx@Props"
