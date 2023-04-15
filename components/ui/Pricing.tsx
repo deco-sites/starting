@@ -15,8 +15,8 @@ export interface Plan{
 export interface Props {
     title: string;
     text: string;
-    freePlan : Plan;
     recurrence: string;
+    freePlan : Plan;
     paidPlans : Plan[];
 }
 
