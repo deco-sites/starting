@@ -21,7 +21,7 @@ export interface Props {
   /** @description settings of benefits section in page*/
   infor?: Benefits;
 
-  formInfor: {
+  formInfor?: {
     formTitle?: string;
     BusinessCTAName?: string;
     DevCTAName?: string;
