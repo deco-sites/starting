@@ -2552,9 +2552,7 @@
           "title": "Form Infor"
         }
       },
-      "required": [
-        "formInfor"
-      ],
+      "required": [],
       "title": "deco-sites/starting/components/ui/ContactUs.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0hlYWRlci50c3g=@Props": {

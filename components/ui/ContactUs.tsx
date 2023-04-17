@@ -48,7 +48,7 @@ export default function ContactUs({ infor, formInfor }: Props) {
   return (
     <div class="flex flex-col items-top font-sans p-6 pt-[103px] pb-10 xl:p-40 gap-y-10 overflow-hidden xl:(flex-row gap-x-[120px])">
     
-      <div class="w-full text-left xl:w-1/2 mt-6">
+      <div class="w-full text-left xl:w-1/2">
         <h1 class="text-dark-green text-5xl leading-[53px] lg:text-[3.3334vw] 2xl:text-5xl">
           {infor?.mainTitle}
         </h1>
