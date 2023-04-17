@@ -2,6 +2,7 @@ import { useState } from "preact/hooks";
 
 export interface listItem {
   title?: string;
+  /** @format textarea */
   description?: string;
 }
 
@@ -9,16 +10,18 @@ export interface Benefits {
   /** @description a short main title text*/
   mainTitle?: string;
   /** @description a short subtitle text*/
+  /** @format textarea */
   description?: string;
   /** @description add a item to information list in contact page*/
   listItems: listItem[];
+  showbullets?: boolean;
 }
 
 export interface Props {
   /** @description settings of benefits section in page*/
   infor?: Benefits;
 
-  formInfor: {
+  formInfor?: {
     formTitle?: string;
     BusinessCTAName?: string;
     DevCTAName?: string;
@@ -43,9 +46,9 @@ export default function ContactUs({ infor, formInfor }: Props) {
     selectedUrlToAction: "/",
   });
   return (
-    <div class="flex flex-col items-center font-sans p-6 pt-[103px] pb-10 xl:p-40 gap-y-10 overflow-hidden xl:(flex-row gap-x-[120px])">
+    <div class="flex flex-col items-top font-sans p-6 pt-[103px] pb-10 xl:p-40 gap-y-10 overflow-hidden xl:(flex-row gap-x-[120px])">
     
-      <div class="w-full text-left xl:w-1/2 ">
+      <div class="w-full text-left xl:w-1/2">
         <h1 class="text-dark-green text-5xl leading-[53px] lg:text-[3.3334vw] 2xl:text-5xl">
           {infor?.mainTitle}
         </h1>
@@ -88,11 +91,11 @@ export default function ContactUs({ infor, formInfor }: Props) {
 
           <div
             id="switcehr-page"
-            class={"w-full h-[62px] flex p-2 gap-2 bg-[#CDE5D9] rounded-full border-2 border-white border-opacity-5 text-[3.7vw] md:text-[15px]"}
+            class={"w-full h-[62px] flex p-2 gap-2 bg-[#CDE5D9] rounded-full border-2 border-white border-opacity-5 text-[15px]"}
           >
             <span id="bg-switcher" class={`${(active.btn2On
                 ? "translate-x-[103%] md:translate-x-[106%] xl:translate-x-[105%]"
-                : "")} w-[42%] md:w-[39%] h-[42px] absolute bg-dark-green rounded-full transition-all duration-1000 ease-out`}></span>
+                : "")} w-[42%] md:w-[39%] h-[42px] absolute bg-dark-green rounded-full transition-all duration-500 ease-in-out`}></span>
             <input
               type="button"
               name={formInfor?.BusinessCTAName || 'I’m a Business user'}

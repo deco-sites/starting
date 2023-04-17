@@ -63,21 +63,20 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
           {descriptionText}
           </p>
           <div id="buttons-wrapper" class="w-full flex flex-col gap-4 ">
-            <button class={(themeIsLigth ? "bg-dark-green" : "bg-white" ) + " " + "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1 border-dark-green" }>
- 
-              <a class={themeIsLigth ? "text-white" : "text-dark-green" + " " + "text-[16px] font-medium"} href=        {buttonCta1?.href}>
+            <a class={(themeIsLigth ? "bg-dark-green" : "bg-white" ) + " " + "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1 border-dark-green" } href={buttonCta1?.href}>
+              <span class={themeIsLigth ? "text-white" : "text-dark-green" + " " + "text-[16px] font-medium"}>
                 {buttonCta1?.buttonName}
-              </a>
+              </span>
               <Icon class="hidden transition lg:group-hover:(block)" id={ themeIsLigth ? "WhiteArrow" : "GreenArrow" } width={15} height={15} strokeWidth={"1"}/>
-            </button>
+            </a>
 
-            <button class={(themeIsLigth ? "border-dark-green" : "bg-none border-white") + " "+ "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1" }>
+            <a class={(themeIsLigth ? "border-dark-green" : "bg-none border-white") + " "+ "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1" } href={buttonCta2?.href}>
 
-              <a class={(themeIsLigth ? "text-dark-green" : "text-white") + " " + "text-[16px] font-medium"} href={buttonCta2?.href}>
+              <span class={(themeIsLigth ? "text-dark-green" : "text-white") + " " + "text-[16px] font-medium"}>
                 {buttonCta2?.buttonName}
-              </a>
+              </span>
               <Icon class="hidden transition lg:group-hover:block" id={ themeIsLigth ? "GreenArrow" : "WhiteArrow" } width={15} height={15} strokeWidth={"1"} />
-            </button>
+            </a>
 
           </div>
         </div>
