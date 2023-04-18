@@ -1,4 +1,5 @@
-/** @type {import('$fresh/plugins/twind').Options} */
+import { theme } from "twind";
+import typography from "twind-typography";
 
 export default {
   preflight: (preflight) => ({
@@ -65,6 +66,11 @@ export default {
       'margin': '0',
     }
   }),
+  plugins: {
+    ...typography({
+      className: 'prose',
+    }),
+  },
   theme: {
     backgroundPosition: {
       "position-100": "100%",
@@ -492,7 +498,46 @@ export default {
       },
       fontSize:{
         'responsiveHeadingText':'clamp(3.5rem, 0.3451rem + 6.5728vw, 7rem);'
-      }
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: {
+              color: "#FF4500",
+              fontWeight: "700",
+              fontSize: "52px",
+              fontFamily: theme("fontFamily", ["sans"]),
+            },
+            h2: {
+              marginTop: "28px",
+              marginBottom: "28px",
+              color: theme("colors", ["secondary-dark"]),
+              fontFamily: theme("fontFamily", ["sans"]),
+              fontWeight: "500",
+            },
+            h3: {
+              marginTop: "28px",
+              marginBottom: "16px",
+              color: theme("colors", ["secondary-dark"]),
+              fontFamily: theme("fontFamily", ["sans"]),
+              fontWeight: "600",
+            },
+            color: theme("colors", ["primary-dark"]),
+            a: {
+              color: theme("colors", ["primary-green-light"]),
+            },
+            strong: {
+              color: theme("colors", ["primary-dark"]),
+            },
+            span: {
+              color: theme("colors", ["secondary-dark"]),
+            },
+            p: {
+              lineHeight: "1.6rem",
+            },
+          },
+        },
+      },
     },
   },
 };
