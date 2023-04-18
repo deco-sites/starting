@@ -83,7 +83,7 @@ export default function ContactUs({ infor, formInfor }: Props) {
       <span class="hidden lg:(w-[352px] h-[900px] block absolute right-0 -top-24 bg-contact-us-bg-gradient rotate-[333deg] -z-10)"></span>
         <form
           class="flex flex-col justify-center items-center bg-white border-1 border-dark-green rounded-2xl p-4 md:p-8 gap-6 placeholder-[#161A16] "
-          action=""
+          method="POST" action="/api/leads"
         >
           <span class="text-[20px]">
             {formInfor?.formTitle || "Ready to delight your customers?"}
@@ -135,30 +135,35 @@ export default function ContactUs({ infor, formInfor }: Props) {
           <input
             class="w-full h-[51px] border-1 border-dark-green p-4"
             type="text"
+            name="userName"
             placeholder={formInfor?.PlaceholderfieldName || "Name"}
             required
           />
           <input
             class="w-full h-[51px] border-1 border-dark-green p-4"
             type="email"
+            name="userEmail"
             placeholder={formInfor?.PlaceholderfieldEmail || "Work e-mail"}
             required
           />
           <input
             class="w-full h-[51px] border-1 border-dark-green p-4"
             type="text"
+            name="userRole"
             placeholder={formInfor?.PlaceholderfieldPosition || "Position"}
             required
           />
           <input
             class="w-full h-[51px] border-1 border-dark-green p-4"
             type="text"
-            placeholder={formInfor?.PlaceholderfieldSocial || "Linkdin"}
+            name="userLinkedin"
+            placeholder={formInfor?.PlaceholderfieldSocial || "Linkedin"}
             required
           />
           <input
             class="w-full h-[51px] border-1 border-dark-green p-4"
             type="text"
+            name="userMessage"
             placeholder={formInfor?.PlaceholderFieldExtra ||
               "Anything you would like to add? (optional)"}
           />
