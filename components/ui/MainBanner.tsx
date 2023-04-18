@@ -42,7 +42,7 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
       <div class="max-w-screen-2xl m-auto">
         <div class="max-w-[100vw] px-6 pt-24 pb-2 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
 
-          <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[.93] md:(w-full max-w-[1280px] text-[112px]) relative`}>
+          <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[.93] md:(w-full max-w-[1280px] text-[106px]) lg:(text-[112px]) relative`}>
                 {mainText}
                 {
                 activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] max-h-[70px] pt-0 absolute text-center inline-flex pl-3.5 sm:(h-[80px] max-h-[94px] bottom-0) md:(h-[94px] pt-0 mt-[-1.5rem]) xl:(h-[120px] pl-6 pt-6 w-auto max-h-[120px])">
