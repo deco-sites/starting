@@ -4,8 +4,8 @@
 
 import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
-
 import * as $0 from "./functions/LoadGitHubRaw.ts";
+import * as $1 from "./functions/LoadPageProps.ts";
 import * as $$$$0 from "./routes/index.tsx";
 import * as $$$$1 from "./routes/gfm.css.ts";
 import * as $$$$2 from "./routes/docs/[...slug].tsx";
@@ -17,48 +17,52 @@ import * as $$$$$2 from "./islands/ContactUs.tsx";
 import * as $$$$$3 from "./islands/SliderJS.tsx";
 import * as $$$$$4 from "./islands/Header.tsx";
 import * as $$$$$$$$0 from "./sections/QuillText.tsx";
-import * as $$$$$$$$1 from "./sections/Pricing.tsx";
-import * as $$$$$$$$2 from "./sections/ImpactCalculator.tsx";
-import * as $$$$$$$$3 from "./sections/Features.tsx";
-import * as $$$$$$$$4 from "./sections/Markdown.tsx";
-import * as $$$$$$$$5 from "./sections/Community.tsx";
-import * as $$$$$$$$6 from "./sections/Divider.tsx";
-import * as $$$$$$$$7 from "./sections/Partner.tsx";
-import * as $$$$$$$$8 from "./sections/Differentials.tsx";
-import * as $$$$$$$$9 from "./sections/Cms.tsx";
-import * as $$$$$$$$10 from "./sections/Footer.tsx";
-import * as $$$$$$$$11 from "./sections/Head.tsx";
-import * as $$$$$$$$12 from "./sections/Integration.tsx";
-import * as $$$$$$$$13 from "./sections/ContactUs.tsx";
-import * as $$$$$$$$14 from "./sections/Header.tsx";
-import * as $$$$$$$$15 from "./sections/MainBanner.tsx";
-import * as $$$$$$$$16 from "./sections/TripletBanner.tsx";
-import * as $$$$$$$$17 from "./sections/Faq.tsx";
-import * as $$$$$$$$18 from "./sections/DepoimentsCarrossel.tsx";
-import * as $$$$$$$$19 from "./sections/Delight.tsx";
-import * as $$$$$$$$20 from "./sections/Benefits.tsx";
-import * as $$$$$$$$21 from "./sections/About.tsx";
-import * as $$$$$$$$22 from "./sections/Carousel.tsx";
+import * as $$$$$$$$1 from "./sections/BlogHeader.tsx";
+import * as $$$$$$$$2 from "./sections/Pricing.tsx";
+import * as $$$$$$$$3 from "./sections/BlogPostList.tsx";
+import * as $$$$$$$$4 from "./sections/ImpactCalculator.tsx";
+import * as $$$$$$$$5 from "./sections/BlogPostHeader.tsx";
+import * as $$$$$$$$6 from "./sections/Features.tsx";
+import * as $$$$$$$$7 from "./sections/Markdown.tsx";
+import * as $$$$$$$$8 from "./sections/Community.tsx";
+import * as $$$$$$$$9 from "./sections/Divider.tsx";
+import * as $$$$$$$$10 from "./sections/Partner.tsx";
+import * as $$$$$$$$11 from "./sections/Differentials.tsx";
+import * as $$$$$$$$12 from "./sections/Cms.tsx";
+import * as $$$$$$$$13 from "./sections/Footer.tsx";
+import * as $$$$$$$$14 from "./sections/Head.tsx";
+import * as $$$$$$$$15 from "./sections/Integration.tsx";
+import * as $$$$$$$$16 from "./sections/ContactUs.tsx";
+import * as $$$$$$$$17 from "./sections/Header.tsx";
+import * as $$$$$$$$18 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$19 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$20 from "./sections/Faq.tsx";
+import * as $$$$$$$$21 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$$$$22 from "./sections/Delight.tsx";
+import * as $$$$$$$$23 from "./sections/Benefits.tsx";
+import * as $$$$$$$$24 from "./sections/About.tsx";
+import * as $$$$$$$$25 from "./sections/Carousel.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
+import * as $live_invoke from "$live/routes/live/invoke/index.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
 import * as $live_inspect from "$live/routes/live/inspect.ts";
 import * as $live_meta from "$live/routes/live/_meta.ts";
 import * as $live_previews from "$live/routes/live/previews/[...block].tsx";
 import * as $live_catchall from "$live/routes/[...catchall].tsx";
-import * as i2$$$$0 from "$live/handlers/routesSelection.ts";
-import * as i2$$$$1 from "$live/handlers/router.ts";
-import * as i2$$$$2 from "$live/handlers/devPage.ts";
 import * as i2$$$$3 from "$live/handlers/fresh.ts";
+import * as i2$$$$2 from "$live/handlers/devPage.ts";
+import * as i2$$$$1 from "$live/handlers/router.ts";
+import * as i2$$$$0 from "$live/handlers/routesSelection.ts";
 import * as i2$$$$$0 from "$live/pages/LivePage.tsx";
 import * as i2$$$9 from "$live/sections/PageInclude.tsx";
-import * as i2$$$$$$0 from "$live/matchers/MatchDate.ts";
 import * as i2$$$$$$1 from "$live/matchers/MatchUserAgent.ts";
-import * as i2$$$$$$2 from "$live/matchers/MatchSite.ts";
-import * as i2$$$$$$3 from "$live/matchers/MatchMulti.ts";
 import * as i2$$$$$$4 from "$live/matchers/MatchRandom.ts";
+import * as i2$$$$$$3 from "$live/matchers/MatchMulti.ts";
+import * as i2$$$$$$2 from "$live/matchers/MatchSite.ts";
 import * as i2$$$$$$5 from "$live/matchers/MatchEnvironment.ts";
 import * as i2$$$$$$6 from "$live/matchers/MatchAlways.ts";
+import * as i2$$$$$$0 from "$live/matchers/MatchDate.ts";
 import * as i2$$$$$$$0 from "$live/flags/audience.ts";
 import * as i2$$$$$$$1 from "$live/flags/everyone.ts";
 import * as i2$0 from "deco-sites/std/functions/vtexConfig.ts";
@@ -93,9 +97,10 @@ import * as i2$$$6 from "deco-sites/std/sections/configVNDA.global.tsx";
 import * as i2$$$7 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as i2$$$8 from "deco-sites/std/sections/SEOPDP.tsx";
 
-const manifest: DecoManifest = {
+const manifest = {
   "functions": {
     "deco-sites/starting/functions/LoadGitHubRaw.ts": $0,
+    "deco-sites/starting/functions/LoadPageProps.ts": $1,
     "deco-sites/std/functions/vtexConfig.ts": i2$0,
     "deco-sites/std/functions/vtexProductListingPage.ts": i2$1,
     "deco-sites/std/functions/vndaProductList.ts": i2$2,
@@ -122,6 +127,7 @@ const manifest: DecoManifest = {
     "./routes/_app.tsx": $$$$4,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/live/workbench.ts": $live_workbench,
+    "./routes/live/invoke/index.ts": $live_invoke,
     "./routes/live/editorData.ts": $live_editorData,
     "./routes/live/inspect.ts": $live_inspect,
     "./routes/live/_meta.ts": $live_meta,
@@ -137,28 +143,31 @@ const manifest: DecoManifest = {
   },
   "sections": {
     "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$0,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$1,
-    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$2,
-    "deco-sites/starting/sections/Features.tsx": $$$$$$$$3,
-    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$4,
-    "deco-sites/starting/sections/Community.tsx": $$$$$$$$5,
-    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$6,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$7,
-    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$8,
-    "deco-sites/starting/sections/Cms.tsx": $$$$$$$$9,
-    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$10,
-    "deco-sites/starting/sections/Head.tsx": $$$$$$$$11,
-    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$12,
-    "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$13,
-    "deco-sites/starting/sections/Header.tsx": $$$$$$$$14,
-    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$15,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$16,
-    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$17,
-    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$18,
-    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$19,
-    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$20,
-    "deco-sites/starting/sections/About.tsx": $$$$$$$$21,
-    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$22,
+    "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$1,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$2,
+    "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$$$3,
+    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$4,
+    "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$$$5,
+    "deco-sites/starting/sections/Features.tsx": $$$$$$$$6,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$7,
+    "deco-sites/starting/sections/Community.tsx": $$$$$$$$8,
+    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$9,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$10,
+    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$11,
+    "deco-sites/starting/sections/Cms.tsx": $$$$$$$$12,
+    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$13,
+    "deco-sites/starting/sections/Head.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$15,
+    "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$16,
+    "deco-sites/starting/sections/Header.tsx": $$$$$$$$17,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$18,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$19,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$20,
+    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$21,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$22,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$23,
+    "deco-sites/starting/sections/About.tsx": $$$$$$$$24,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$25,
     "$live/sections/PageInclude.tsx": i2$$$9,
     "deco-sites/std/sections/configYourViews.global.tsx": i2$$$0,
     "deco-sites/std/sections/SEO.tsx": i2$$$1,
@@ -171,22 +180,22 @@ const manifest: DecoManifest = {
     "deco-sites/std/sections/SEOPDP.tsx": i2$$$8,
   },
   "handlers": {
-    "$live/handlers/routesSelection.ts": i2$$$$0,
-    "$live/handlers/router.ts": i2$$$$1,
-    "$live/handlers/devPage.ts": i2$$$$2,
     "$live/handlers/fresh.ts": i2$$$$3,
+    "$live/handlers/devPage.ts": i2$$$$2,
+    "$live/handlers/router.ts": i2$$$$1,
+    "$live/handlers/routesSelection.ts": i2$$$$0,
   },
   "pages": {
     "$live/pages/LivePage.tsx": i2$$$$$0,
   },
   "matchers": {
-    "$live/matchers/MatchDate.ts": i2$$$$$$0,
     "$live/matchers/MatchUserAgent.ts": i2$$$$$$1,
-    "$live/matchers/MatchSite.ts": i2$$$$$$2,
-    "$live/matchers/MatchMulti.ts": i2$$$$$$3,
     "$live/matchers/MatchRandom.ts": i2$$$$$$4,
+    "$live/matchers/MatchMulti.ts": i2$$$$$$3,
+    "$live/matchers/MatchSite.ts": i2$$$$$$2,
     "$live/matchers/MatchEnvironment.ts": i2$$$$$$5,
     "$live/matchers/MatchAlways.ts": i2$$$$$$6,
+    "$live/matchers/MatchDate.ts": i2$$$$$$0,
   },
   "flags": {
     "$live/flags/audience.ts": i2$$$$$$$0,
@@ -203,4 +212,6 @@ const manifest: DecoManifest = {
   "baseUrl": import.meta.url,
 };
 
-export default manifest;
+export type Manifest = typeof manifest;
+
+export default manifest satisfies DecoManifest;

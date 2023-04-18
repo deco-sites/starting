@@ -1,5 +1,5 @@
-import Icon from "$start/components/ui/Icon.tsx";
-import type { AvailableIcons } from "$start/components/ui/Icon.tsx";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import type { AvailableIcons } from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface Card {
     icon: AvailableIcons;

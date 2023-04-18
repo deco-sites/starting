@@ -6,7 +6,7 @@ import {
 } from "./docs.ts";
 import DocsLanguageSwitcher from "./DocsLanguageSwitcher.tsx";
 import JoinDiscord from "./JoinDiscord.tsx";
-// import SearchButton from "$start/islands/SearchButton.tsx";
+// import SearchButton from "deco-sites/starting/islands/SearchButton.tsx";
 
 interface Props {
   menu: MenuData;

@@ -1,10 +1,10 @@
 // Copied mostly from: https://github.com/denoland/fresh/blob/744a10e5911df38bff779686c86ca10fb4589dfe/www/routes/docs/%5B...slug%5D.tsx
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { frontMatter, gfm } from "$start/components/utils/markdown.ts";
+import { frontMatter, gfm } from "deco-sites/starting/components/utils/markdown.ts";
 
-import DocsTitle from "$start/components/ui/docs/DocsTitle.tsx";
-import { TableOfContentsEntry } from "$start/components/ui/docs/docs.ts";
+import DocsTitle from "deco-sites/starting/components/ui/docs/DocsTitle.tsx";
+import { TableOfContentsEntry } from "deco-sites/starting/components/ui/docs/docs.ts";
 import DocsSidebar from "../../components/ui/docs/DocsSidebar.tsx";
 import Footer from "../../sections/Footer.tsx";
 import {
