@@ -2,13 +2,13 @@ import { LoaderReturnType } from "$live/types.ts";
 import { getBlogPath, PostList } from "deco-sites/starting/components/utils/Blog.ts";
 
 export type Props = {
-  postList: LoaderReturnType<string>;
+  postList: LoaderReturnType<PostList>;
   page: LoaderReturnType<{ url: string }>;
 };
 
 export default function BlogPostHeader(props: Props) {
   const url = props.page.url;
-  const postsList = JSON.parse(props.postList) as PostList;
+  const postsList = props.postList;
   const post = postsList.posts.filter((x) => getBlogPath(x.path) === url)[0];
   if (!post) {
     return <div>Post not found.</div>;

@@ -1,3 +1,6 @@
+export interface PostBody {
+  data: string;
+}
 interface Post {
     title: string;
     path: string;

@@ -3,11 +3,11 @@ import { getBlogPath, PostList } from "deco-sites/starting/components/utils/Blog
 import Image from "deco-sites/std/components/Image.tsx";
 
 export type Props = {
-  postList: LoaderReturnType<string>;
+  postList: LoaderReturnType<PostList>;
 };
 
 export default function MarkdownContainer(props: Props) {
-  const postsList = JSON.parse(props.postList) as PostList;
+  const postsList = props.postList;
   const highlightPost = postsList.posts[0];
   const normalPosts = postsList.posts.filter((post) =>
     postsList.posts.indexOf(post) != 0

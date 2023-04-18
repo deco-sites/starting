@@ -1,5 +1,4 @@
-import Markdown, { Props } from "deco-sites/std/components/Markdown.tsx";
-export * from "deco-sites/std/components/Markdown.tsx";
+import Markdown, { Props } from "../components/ui/Markdown.tsx";
 
 export default function MarkdownContainer(props: Props) {
   return (
