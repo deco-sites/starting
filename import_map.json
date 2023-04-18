@@ -16,7 +16,7 @@
     "@preact/signals-core": "https://esm.sh/@preact/signals-core@1.2.3",
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
-    "std/": "https://deno.land/std@0.181.0/",
+    "std/": "https://deno.land/std@0.162.0/",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.0.0-rc.11/",
     "prefetch": "https://deno.land/x/prefetch@0.0.6/mod.ts"
   }

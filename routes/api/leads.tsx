@@ -18,6 +18,8 @@ export const handler: Handlers<null, LiveState> = {
 
     const formData = Object.fromEntries((await req.formData()).entries());
 
+    console.log(JSON.stringify(formData))
+
     await fetch(ZAPIER_WEBHOOK ?? "", {
       method: "POST",
       body: JSON.stringify(formData),

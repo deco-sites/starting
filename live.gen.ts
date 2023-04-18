@@ -7,8 +7,10 @@ import { DecoManifest } from "$live/types.ts";
 
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/index.tsx";
-import * as $$$$1 from "./routes/api/leads.tsx";
-import * as $$$$2 from "./routes/_app.tsx";
+import * as $$$$1 from "./routes/gfm.css.ts";
+import * as $$$$2 from "./routes/docs/[...slug].tsx";
+import * as $$$$3 from "./routes/api/leads.tsx";
+import * as $$$$4 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/ImpactCalculator.tsx";
 import * as $$$$$1 from "./islands/Cms.tsx";
 import * as $$$$$2 from "./islands/ContactUs.tsx";
@@ -114,8 +116,10 @@ const manifest: DecoManifest = {
   },
   "routes": {
     "./routes/index.tsx": $$$$0,
-    "./routes/api/leads.tsx": $$$$1,
-    "./routes/_app.tsx": $$$$2,
+    "./routes/gfm.css.ts": $$$$1,
+    "./routes/docs/[...slug].tsx": $$$$2,
+    "./routes/api/leads.tsx": $$$$3,
+    "./routes/_app.tsx": $$$$4,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/live/workbench.ts": $live_workbench,
     "./routes/live/editorData.ts": $live_editorData,

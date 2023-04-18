@@ -27,7 +27,7 @@ export default function Header(props: Props) {
     const openSwitcher = useSignal(false)
     const openLanguage = useSignal(false)
 
-    const currentLanguageLink = props.pt.selected ? props.pt.url : props.eng.url
+    const currentLanguageLink = props.eng.selected ? "/en" : "/pt"
 
     if(IS_BROWSER){
         urlPortuguese.value = window.location.pathname.replace("en", "pt")

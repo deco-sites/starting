@@ -3387,30 +3387,32 @@
           "type": "object",
           "properties": {
             "linkedinUrl": {
-              "type": "string",
+              "type": [
+                "string",
+                "null"
+              ],
               "title": "Linkedin Url"
             },
             "gitUrl": {
-              "type": "string",
+              "type": [
+                "string",
+                "null"
+              ],
               "title": "Git Url"
             },
             "discordUrl": {
-              "type": "string",
+              "type": [
+                "string",
+                "null"
+              ],
               "title": "Discord Url"
             }
           },
-          "required": [
-            "linkedinUrl",
-            "gitUrl",
-            "discordUrl"
-          ],
+          "required": [],
           "title": "Social"
         }
       },
-      "required": [
-        "menu",
-        "social"
-      ],
+      "required": [],
       "title": "deco-sites/starting/sections/Footer.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkLnRzeA==@Props": {
@@ -3700,15 +3702,24 @@
           "title": "Dev"
         },
         "linkedinUrl": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Linkedin Url"
         },
         "gitUrl": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Git Url"
         },
         "discordUrl": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Discord Url"
         }
       },
@@ -3721,10 +3732,7 @@
         "sign",
         "pageInitial",
         "mkt",
-        "dev",
-        "linkedinUrl",
-        "gitUrl",
-        "discordUrl"
+        "dev"
       ],
       "title": "deco-sites/starting/sections/Header.tsx@Props"
     },
