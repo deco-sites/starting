@@ -4454,6 +4454,13 @@
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0Nhcm91c2VsLnRzeA==@Props": {
       "type": "object",
       "properties": {
+        "bottomPadding": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Bottom Padding"
+        },
         "cards": {
           "type": "array",
           "items": {

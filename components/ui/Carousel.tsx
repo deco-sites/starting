@@ -5,6 +5,7 @@ import Slider from "deco-sites/starting/components/ui/Slider.tsx";
 import SliderControllerJS from "deco-sites/starting/islands/SliderJS.tsx";
 
 export interface Props {
+  bottomPadding?: string;
   cards: Array<{ 
     title: string; 
     text: string; 
@@ -16,11 +17,11 @@ export interface Props {
   }>;
 }
 
-export default function Carousel({cards}: Props) {
+export default function Carousel({bottomPadding, cards}: Props) {
   const id = useId();
 
   return (
-    <section class="md:bg-white-green mt-20" id={id}>
+    <section class={`${bottomPadding && `pb-[${bottomPadding}]`} md:bg-white-green mt-20`} id={id}>
       <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto">
         <Slider
           class="relative gap-6 col-span-full row-start-2 row-end-5 hidden-scroll"
