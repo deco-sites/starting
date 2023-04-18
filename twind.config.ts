@@ -490,6 +490,9 @@ export default {
         serif: ["serif"],
         inter: ["Inter", "sans-serif"],
       },
+      fontSize:{
+        'responsiveHeadingText':'clamp(3.5rem, 0.3451rem + 6.5728vw, 7rem);'
+      }
     },
   },
 };

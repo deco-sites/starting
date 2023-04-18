@@ -33,7 +33,7 @@ export interface bannerProps{
 }
 
 
-export default function MainBanner({ themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner, mobileH1Size = '13.2vw'}: Props) {
+export default function MainBanner({ themeDark, mainText, descriptionText, activePercentualCarrosel, buttonCta1, buttonCta2, miniBanner, mobileH1Size = '12vw'}: Props) {
 
   const themeIsLigth = !themeDark
 
@@ -42,10 +42,10 @@ export default function MainBanner({ themeDark, mainText, descriptionText, activ
       <div class="max-w-screen-2xl m-auto">
         <div class="max-w-[100vw] px-6 pt-24 pb-2 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
 
-          <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[.93] md:(w-full max-w-[1280px] text-[106px]) lg:(text-[112px]) relative`}>
+          <h1 class={`${themeIsLigth ? "text-dark-green" : "text-white"} inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[.93] md:(w-full max-w-[1280px] text-responsiveHeadingText relative`}>
                 {mainText}
                 {
-                activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] max-h-[70px] pt-0 absolute text-center inline-flex pl-3.5 sm:(h-[80px] max-h-[94px] bottom-0) md:(h-[94px] pt-0 mt-[-1.5rem]) xl:(h-[120px] pl-6 pt-6 w-auto max-h-[120px])">
+                activePercentualCarrosel ? <div class="overflow-y-clip h-[13vw] max-h-[70px] pt-0 absolute text-center inline-flex pl-3.5 sm:(h-[80px]) md:(h-[7vw] pt-0 mt-0) xl:(h-[120px] pl-6 pt-0 w-auto max-h-[120px])">
                 <span style="color: #06E474" class="absolute animate-switcherText10">10%</span>
                 <span style="color: #06E474" class="absolute animate-switcherText20">20%</span>
                 <span style="color: #06E474" class="absolute animate-switcherText30">30%</span>
