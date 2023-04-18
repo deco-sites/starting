@@ -14,8 +14,8 @@ export interface Props {
   
 export default function Benefits({cards}: Props) {
 return (
-    <section class="bg-[#fff] py-[20px] flex justify-center items-center flex-col">
-        <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-1 lg:grid-cols-2 px-6 pt-[40px] pb-[40px] md:pb-24 md:px-[2rem] max-w-screen-2xl mx-auto">
+    <section class="bg-[#fff] flex justify-center items-center flex-col">
+        <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-1 lg:grid-cols-2 px-6 pb-[40px] md:pb-24 md:px-[2rem] max-w-screen-2xl mx-auto">
             {cards?.map(card => (
                 <>
                     <div class="border-box relative flex flex-col p-[2px] rounded-lg lg:min-h-[220px]" style="background: linear-gradient(225deg, rgba(9,95,93,0.1) 0%, rgba(3,196,115,0.8) 50%, rgba(9,95,93,0.1) 100%)">

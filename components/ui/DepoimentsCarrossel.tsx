@@ -120,7 +120,7 @@ export default function DepoimentsCarroussel(
           {depoiments?.map((item) => {
               return(
                 <div class="w-[calc(100vw-3rem)] md:w-[calc(100vw-4rem)] 2xl:w-[1536px]">
-                  <div key={item?.signature} class="py-[50px] px-[25px] flex flex-col justify-center items-center gap-[36px]">
+                  <div key={item?.signature} class="py-[50px] px-[25px] md:px-[50px] lg:px-[25px] flex flex-col justify-center items-center gap-[36px]">
                     <Image
                       style={{ aspectRatio: "122 / 122" }}
                       src={item?.avatar}
