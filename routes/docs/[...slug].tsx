@@ -146,14 +146,14 @@ export default function DocsPage(props: PageProps<Data>) {
         <Header
           menuLinks={[
             { label: lang == 'en' ? 'Community' : 'Comunidade', href: `/${lang}/community`, targetBlank: false },
-            { label: "Camp", href: "/camp", targetBlank: false },
+            { label: "Camp", href: `/${lang}/blog`, targetBlank: false },
             { label: "Blog", href: `/${lang}/blog`, targetBlank: false },
             { label: lang == 'en' ? 'Docs' : 'Documentação', href: `/docs/${lang}`, targetBlank: false },
             { label: lang == 'en' ? 'Pricing' : 'Preços', href: `/${lang}/pricing`, targetBlank: false },
           ]}
           idiom={lang == 'en' ? 'Eng' : 'Port'}
-          pt={{ label: "Port", url: "/docs/pt", selected: lang == 'pt' }}
-          eng={{ label: "Eng", url: "/docs/en", selected: lang == 'en' }}
+          pt={{ label: "Português", url: "/docs/pt", selected: lang == 'pt' }}
+          eng={{ label: "English", url: "/docs/en", selected: lang == 'en' }}
           login={{ label: "Login", url: "/admin" }}
           sign={{ label: lang == 'en' ? 'Sign up' : 'Cadastrar-se', url: "/onboarding" }}
           pageInitial="/"
