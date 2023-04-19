@@ -16,8 +16,6 @@ export default function MarkdownContainer(props: Props) {
     postsList.posts.indexOf(post) != 0
   );
 
-  console.log(postsList)
-
   return (
     <section class="pt-40 lg:max-w-[894px] mx-auto">
       <div>

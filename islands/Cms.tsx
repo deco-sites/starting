@@ -187,7 +187,6 @@ export default function Cms(props: Props) {
                 aux.rightImageMobile = "animate-right-image-mobile-reverse-v2";
               } else {
                 aux.rightImageMobile = "animate-right-image-mobile-reverse";
-                console.log("oi");
               }
 
               setLineButton(aux);

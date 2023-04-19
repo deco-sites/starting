@@ -13,9 +13,11 @@ export default function BlogPostHeader(props: Props) {
   const url = props.page.url;
   const postsList = props.postList;
   const post = postsList.posts.filter((x) => getBlogPath(x.path) === url)[0];
+
   if (!post) {
     return <div>Post not found.</div>;
   }
+
   return (
     <section class="max-w-4xl w-full px-8 md:p-0 mx-auto">
       <div class="mb-8 sm:mb-11 mt-10 sm:mt-16">
