@@ -43,7 +43,7 @@ const registrationInput = [
   },
 ];
 
-const RegistrationFormSection = () => {
+const RegistrationForm = () => {
   return (
     <div class="lg:flex justify-between max-w-[1100px] mx-auto mb-40">
       <div class="max-w-[510px] mx-auto">
@@ -136,4 +136,4 @@ const RegistrationFormSection = () => {
   );
 };
 
-export default RegistrationFormSection;
+export default RegistrationForm;
