@@ -177,7 +177,7 @@ export default function Header(props: Props) {
                             href="#"
                             onClick={(e) => {
                               e.preventDefault()
-                              window.history.pushState({}, "", urlMarketers.value)
+                              window.history.pushState({}, "", urlDevelopers.value)
                               location.reload()
                             }}
                             class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
