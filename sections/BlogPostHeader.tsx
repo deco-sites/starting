@@ -4,16 +4,26 @@ import {
   PostList,
 } from "deco-sites/starting/components/utils/Blog.ts";
 
+export type PathObj = {
+  url: string;
+}
+
+export type PropNull = {
+  ignoreProp?: string;
+}
+
 export type Props = {
   postList: LoaderReturnType<PostList>;
-  page: LoaderReturnType<{ url: string }>;
+  page: LoaderReturnType<PathObj>;
 };
 
 export default function BlogPostHeader(props: Props) {
   const url = props.page.url;
   const postsList = props.postList;
   const post = postsList.posts.filter((x) => getBlogPath(x.path) === url)[0];
-
+  
+  console.log(1111111111111111, url, postsList);
+  
   if (!post) {
     return <div>Post not found.</div>;
   }
