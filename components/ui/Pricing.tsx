@@ -59,7 +59,7 @@ export default function Pricing(
 ) {
   return (
     <section class="py-[63px] bg-linear">
-      <div class="md:flex gap-16 max-w-[1024px] mx-auto pt-[80px] px-4 md:px-0 pb-20">
+      <div class="md:flex gap-16 max-w-[1024px] mx-auto pt-[80px] px-4 md:px-0 pb-10">
         <div class="flex flex-col gap-4 md:w-1/2 mx-auto">
           <h1 class="text-[42px] leading-[1.1] md:text-[52px] text-almost-white font-semibold">
             {title}
@@ -69,9 +69,9 @@ export default function Pricing(
 
         <div class="md:w-1/2 flex flex-col md:flex-row justify-center items-center gap-[72px]">
           <div class="bg-linear-border p-[1px] rounded-[8px] w-full max-w-[460px]">
-            <div class="flex flex-col gap-[20px] p-8 bg-linear-pricing rounded-[8px]">
-              <div>
-                <h2 class="text-highlight text-[32px] font-semibold">
+            <div class="flex flex-col gap-5 p-8 bg-linear-pricing rounded-[8px]">
+              <div class="flex flex-col gap-3">
+                <h2 class="text-highlight text-[32px] leading-[1.1] font-semibold">
                   {freePlan.title}
                 </h2>
                 <p class="text-almost-white text-[13px] ">{freePlan.text}</p>
