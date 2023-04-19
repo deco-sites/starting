@@ -56,7 +56,7 @@ export default function HeadComponent({
       {styleUrls?.map((styleUrl: string) => (
         <link rel="stylesheet" href={asset(styleUrl)}></link>
       ))}
-      
+
       {/* TODO: Procurar o script */}
       {/* <script async id="quicklink" src="/scripts/quicklink.umd.js"></script> */}
       <script

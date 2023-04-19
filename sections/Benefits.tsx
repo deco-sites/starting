@@ -1,7 +1,9 @@
-import Benefits, { Props } from '$start/components/ui/Benefits.tsx'
+import Benefits, {
+  Props,
+} from "deco-sites/starting/components/ui/Benefits.tsx";
 
-function BenefitsSection(props:Props){
-    return <Benefits {...props}/>
+function BenefitsSection(props: Props) {
+  return <Benefits {...props} />;
 }
 
 export default BenefitsSection;

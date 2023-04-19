@@ -1,5 +1,7 @@
-import ContactUs,{Props} from "deco-sites/starting/components/ui/ContactUs.tsx";
+import ContactUs, {
+  Props,
+} from "deco-sites/starting/components/ui/ContactUs.tsx";
 
-export default function ContactUsSection(props:Props){
-    return <ContactUs {...props}/>
+export default function ContactUsSection(props: Props) {
+  return <ContactUs {...props} />;
 }

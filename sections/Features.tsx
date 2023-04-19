@@ -1,6 +1,6 @@
 import Features, {
   Props,
-} from "$start/components/ui/Features.tsx";
+} from "deco-sites/starting/components/ui/Features.tsx";
 
 function FeaturesSection(props: Props) {
   return <Features {...props} />;

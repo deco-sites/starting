@@ -3,7 +3,7 @@ import SliderControllerJS from "deco-sites/starting/components/ui/SliderJS.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import type { ImageObject } from "deco-sites/std/commerce/types.ts";
-import Icon from "$start/components/ui/Icon.tsx";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 
 interface Dots {
   images: LiveImage[];
@@ -42,14 +42,26 @@ function Controls() {
           data-slide="prev"
           aria-label="Previous item"
         >
-          <Icon class="text-[#fff] md:text-[#000]" id="ChevronLeft" width={30} height={30} strokeWidth={"2"} />
+          <Icon
+            class="text-[#fff] md:text-[#000]"
+            id="ChevronLeft"
+            width={30}
+            height={30}
+            strokeWidth={"2"}
+          />
         </button>
         <button
           class="rounded-full p-3 bg-dark-green md:bg-[#fff] focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:top-[40%] right-[1rem]"
           data-slide="next"
           aria-label="Next item"
         >
-          <Icon class="text-[#fff] md:text-[#000]" id="ChevronRight" width={30} height={30} strokeWidth={"2"} />
+          <Icon
+            class="text-[#fff] md:text-[#000]"
+            id="ChevronRight"
+            width={30}
+            height={30}
+            strokeWidth={"2"}
+          />
         </button>
       </div>
     </>
@@ -99,60 +111,57 @@ function Dots({ images }: Dots) {
 export default function DepoimentsCarroussel(
   { depoiments, preload, interval }: Props,
 ) {
-  const thumbsSliderId = '1231231';
+  const thumbsSliderId = "1231231";
 
-  const images = depoiments.map(depoiment => depoiment.avatar) ?? [];
+  const images = depoiments.map((depoiment) => depoiment.avatar) ?? [];
 
   return (
     <>
-    
-    <div
-      id={thumbsSliderId}
-      class="block px-6 md:px-[2rem] my-[3rem] relative"
-    >
-
-      {/* <Dots images={images}/> */}
+      <div
+        id={thumbsSliderId}
+        class="block px-6 md:px-[2rem] my-[3rem] relative"
+      >
+        {/* <Dots images={images}/> */}
         <Slider
           itemClass="max-h-[520px] w-[calc(100vw-3rem)] md:w-[calc(100vw-4rem)] 2xl:w-[1536px]"
           class="max-w-screen-2xl overflow-x-hidden mx-auto relative bg-dark-green rounded-[48px] row-start-1 p-0"
           snap="snap-center"
         >
           {depoiments?.map((item) => {
-              return(
-                <div class="w-[calc(100vw-3rem)] md:w-[calc(100vw-4rem)] 2xl:w-[1536px]">
-                  <div key={item?.signature} class="py-[50px] px-[25px] md:px-[50px] lg:px-[25px] flex flex-col justify-center items-center gap-[36px]">
-                    <Image
-                      style={{ aspectRatio: "122 / 122" }}
-                      src={item?.avatar}
-                      alt={item?.avatar}
-                      width={122}
-                      class="rounded-full"
-                      height={122}
-                      // Preload LCP image for better web vitals
-                      loading={"lazy"}
-                    />
-                    <p class="font-sans text-[white] text-[20px] p-4 lg:(px-24 text-[40px])">
-                      {item?.depoiment}
-                    </p>
-                    <span class="text-[#02F67C] text-[16px]">
-                        {item?.signature}
-                    </span>
-                  </div>
+            return (
+              <div class="w-[calc(100vw-3rem)] md:w-[calc(100vw-4rem)] 2xl:w-[1536px]">
+                <div
+                  key={item?.signature}
+                  class="py-[50px] px-[25px] md:px-[50px] lg:px-[25px] flex flex-col justify-center items-center gap-[36px]"
+                >
+                  <Image
+                    style={{ aspectRatio: "122 / 122" }}
+                    src={item?.avatar}
+                    alt={item?.avatar}
+                    width={122}
+                    class="rounded-full"
+                    height={122}
+                    // Preload LCP image for better web vitals
+                    loading={"lazy"}
+                  />
+                  <p class="font-sans text-[white] text-[20px] p-4 lg:(px-24 text-[40px])">
+                    {item?.depoiment}
+                  </p>
+                  <span class="text-[#02F67C] text-[16px]">
+                    {item?.signature}
+                  </span>
                 </div>
-              )
+              </div>
+            );
           })}
         </Slider>
 
-      <div class="max-w-screen-2xl mx-auto relative block md:top-[-200px] lg:top-[-250px]">
-        <Controls />
+        <div class="max-w-screen-2xl mx-auto relative block md:top-[-200px] lg:top-[-250px]">
+          <Controls />
+        </div>
+
+        <SliderControllerJS rootId={thumbsSliderId} />
       </div>
-
-      <SliderControllerJS rootId={thumbsSliderId} />
-
-    </div>
-
-    
-    
     </>
   );
 }
