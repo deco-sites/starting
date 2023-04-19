@@ -24,6 +24,7 @@ function Button({ text, link }: { text: string; link: string }) {
   return (
     <a
       href={link}
+      target="_blank"
       class="block w-full text-center font-semibold rounded-[48px] py-3 px-[22px] bg-highlight border-2 border-highlight duration-500 hover:(bg-transparent text-highlight)"
     >
       {text}
@@ -119,8 +120,12 @@ export default function Pricing(
                     {plan.benefits.map((benefit) => {
                       return (
                         <li class="text-almost-white flex gap-2 py-1">
-                          <CheckIcon color="white" />
-                          {benefit}
+                          <div class="flex-none pt-[2px]">
+                            <CheckIcon color="white" />
+                          </div>
+                          <div class="flex-auto">
+                            {benefit}
+                          </div>
                         </li>
                       );
                     })}
