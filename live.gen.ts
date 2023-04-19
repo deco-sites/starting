@@ -41,16 +41,17 @@ import * as $$$$$$$$17 from "./sections/Footer.tsx";
 import * as $$$$$$$$18 from "./sections/Head.tsx";
 import * as $$$$$$$$19 from "./sections/Integration.tsx";
 import * as $$$$$$$$20 from "./sections/ContactUs.tsx";
-import * as $$$$$$$$21 from "./sections/Header.tsx";
-import * as $$$$$$$$22 from "./sections/MainBanner.tsx";
-import * as $$$$$$$$23 from "./sections/TripletBanner.tsx";
-import * as $$$$$$$$24 from "./sections/CampMentor.tsx";
-import * as $$$$$$$$25 from "./sections/Faq.tsx";
-import * as $$$$$$$$26 from "./sections/DepoimentsCarrossel.tsx";
-import * as $$$$$$$$27 from "./sections/Delight.tsx";
-import * as $$$$$$$$28 from "./sections/Benefits.tsx";
-import * as $$$$$$$$29 from "./sections/About.tsx";
-import * as $$$$$$$$30 from "./sections/Carousel.tsx";
+import * as $$$$$$$$21 from "./sections/FooterBigLogo.tsx";
+import * as $$$$$$$$22 from "./sections/Header.tsx";
+import * as $$$$$$$$23 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$24 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$25 from "./sections/CampMentor.tsx";
+import * as $$$$$$$$26 from "./sections/Faq.tsx";
+import * as $$$$$$$$27 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$$$$28 from "./sections/Delight.tsx";
+import * as $$$$$$$$29 from "./sections/Benefits.tsx";
+import * as $$$$$$$$30 from "./sections/About.tsx";
+import * as $$$$$$$$31 from "./sections/Carousel.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -176,16 +177,17 @@ const manifest = {
     "deco-sites/starting/sections/Head.tsx": $$$$$$$$18,
     "deco-sites/starting/sections/Integration.tsx": $$$$$$$$19,
     "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$20,
-    "deco-sites/starting/sections/Header.tsx": $$$$$$$$21,
-    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$22,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$23,
-    "deco-sites/starting/sections/CampMentor.tsx": $$$$$$$$24,
-    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$25,
-    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$26,
-    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$27,
-    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$28,
-    "deco-sites/starting/sections/About.tsx": $$$$$$$$29,
-    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$21,
+    "deco-sites/starting/sections/Header.tsx": $$$$$$$$22,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$23,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$24,
+    "deco-sites/starting/sections/CampMentor.tsx": $$$$$$$$25,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$26,
+    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$27,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$28,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$29,
+    "deco-sites/starting/sections/About.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$31,
     "$live/sections/PageInclude.tsx": i2$$$9,
     "deco-sites/std/sections/configYourViews.global.tsx": i2$$$0,
     "deco-sites/std/sections/SEO.tsx": i2$$$1,

@@ -3353,7 +3353,10 @@
       "type": "object",
       "properties": {
         "mainText": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Main Text"
         },
         "desktopMainTextSize": {
@@ -3365,7 +3368,10 @@
           "title": "Desktop Main Text Size"
         },
         "title": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Title"
         },
         "benefits": {
@@ -3376,7 +3382,10 @@
           "title": "Benefits"
         },
         "button": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Button"
         },
         "imgFirstLine": {
@@ -3392,20 +3401,14 @@
           "title": "Img Third Line"
         },
         "buttonHref": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Button Href"
         }
       },
-      "required": [
-        "mainText",
-        "title",
-        "benefits",
-        "button",
-        "imgFirstLine",
-        "imgSecondLine",
-        "imgThirdLine",
-        "buttonHref"
-      ],
+      "required": [],
       "title": "deco-sites/starting/components/ui/Partner.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0RpZmZlcmVudGlhbHMudHN4@Sections": {
@@ -6062,6 +6065,22 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Gb290ZXJCaWdMb2dvLnRzeA==": {
+      "title": "deco-sites/starting/sections/FooterBigLogo.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/FooterBigLogo.tsx"
+          ],
+          "default": "deco-sites/starting/sections/FooterBigLogo.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4": {
       "title": "deco-sites/starting/sections/Header.tsx",
       "type": "object",
@@ -6914,6 +6933,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db250YWN0VXMudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Gb290ZXJCaWdMb2dvLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4"
