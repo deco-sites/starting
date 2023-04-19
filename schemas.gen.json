@@ -5379,8 +5379,8 @@
         }
       }
     },
-    "Li9pc2xhbmRzL2NhbXBIZWFkZXIudHN4": {
-      "title": "./islands/campHeader.tsx",
+    "Li9pc2xhbmRzL0NhbXBIZWFkZXIudHN4": {
+      "title": "./islands/CampHeader.tsx",
       "type": "object",
       "required": [
         "__resolveType"
@@ -5389,9 +5389,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "./islands/campHeader.tsx"
+            "./islands/CampHeader.tsx"
           ],
-          "default": "./islands/campHeader.tsx"
+          "default": "./islands/CampHeader.tsx"
         }
       }
     },
@@ -5474,8 +5474,8 @@
         }
       }
     },
-    "Li9pc2xhbmRzL2NhbXBNZW50b3IudHN4": {
-      "title": "./islands/campMentor.tsx",
+    "Li9pc2xhbmRzL0NhbXBNZW50b3IudHN4": {
+      "title": "./islands/CampMentor.tsx",
       "type": "object",
       "required": [
         "__resolveType"
@@ -5484,9 +5484,9 @@
         "__resolveType": {
           "type": "string",
           "enum": [
-            "./islands/campMentor.tsx"
+            "./islands/CampMentor.tsx"
           ],
-          "default": "./islands/campMentor.tsx"
+          "default": "./islands/CampMentor.tsx"
         }
       }
     },
@@ -6745,7 +6745,7 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
         },
         {
-          "$ref": "#/definitions/Li9pc2xhbmRzL2NhbXBIZWFkZXIudHN4"
+          "$ref": "#/definitions/Li9pc2xhbmRzL0NhbXBIZWFkZXIudHN4"
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Ntcy50c3g="
@@ -6760,7 +6760,7 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
         },
         {
-          "$ref": "#/definitions/Li9pc2xhbmRzL2NhbXBNZW50b3IudHN4"
+          "$ref": "#/definitions/Li9pc2xhbmRzL0NhbXBNZW50b3IudHN4"
         }
       ]
     },

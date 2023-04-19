@@ -1,7 +1,1 @@
-import Header from "deco-sites/starting/islands/campHeader.tsx";
-
-function CampHero() {
-  return <Header />;
-}
-
-export default CampHero;
+export { default} from "deco-sites/starting/islands/CampHeader.tsx";
