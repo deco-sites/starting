@@ -58,8 +58,8 @@ export default function Pricing(
   { title, text, freePlan, paidPlans, recurrence }: Props,
 ) {
   return (
-    <section class="py-[63px] bg-linear">
-      <div class="md:flex gap-16 max-w-[1024px] mx-auto pt-[80px] px-4 md:px-0 pb-10">
+    <section class="flex flex-col gap-12 pt-[63px] bg-linear">
+      <div class="md:flex gap-16 max-w-[1024px] mx-auto pt-[80px] px-4 md:px-0">
         <div class="flex flex-col gap-4 md:w-1/2 mx-auto">
           <h1 class="text-[42px] leading-[1.1] md:text-[52px] text-almost-white font-semibold">
             {title}
@@ -97,43 +97,40 @@ export default function Pricing(
             </ul>
           </div>
         </div>
-
-        {
-          false && (
-            <div class="flex flex-row gap-8 overflow-auto justify-items-start lg:justify-around pt-[40px] md:py-[80px] px-2 md:px-10">
-              {paidPlans.map((plan) => {
-                return (
-                  <div class="bg-linear-y-border p-[1px] pt-[2px] rounded-[8px] w-full max-w-[300px] min-w-[75vw] md:min-w-[250px]">
-                    <div class="flex flex-col gap-[20px] p-8 bg-linear-pricing-y rounded-[8px]">
-                      <h2 class="text-almost-white text-[22px] font-semibold">
-                        {plan.title}
-                      </h2>
-                      <p class="text-almost-white text-[13px] min-h-[40px]">
-                        {plan.text}
-                      </p>
-                      <Price
-                        price={plan.price}
-                        custom={plan.priceCustom}
-                        recurrence={recurrence}
-                      />
-                      <ul>
-                        {plan.benefits.map((benefit) => {
-                          return (
-                            <li class="text-almost-white flex gap-2 py-1">
-                              <CheckIcon color="white" />
-                              {benefit}
-                            </li>
-                          );
-                        })}
-                      </ul>
-                      <Button link={plan.button.link} text={plan.button.text} />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          )
-        }
+      </div>
+      <div>
+        <div class="flex flex-row gap-8 overflow-auto justify-items-start lg:justify-around pt-[40px] md:pt-[80px] px-2 md:px-10">
+          {paidPlans.map((plan) => {
+            return (
+              <div class="bg-linear-y-border p-[1px] pt-[2px] rounded-[8px] w-full max-w-[300px] min-w-[75vw] md:min-w-[250px]">
+                <div class="flex flex-col gap-[20px] p-8 bg-linear-pricing-y rounded-[8px]">
+                  <h2 class="text-almost-white text-[22px] font-semibold">
+                    {plan.title}
+                  </h2>
+                  <p class="text-almost-white text-[13px] min-h-[40px]">
+                    {plan.text}
+                  </p>
+                  <Price
+                    price={plan.price}
+                    custom={plan.priceCustom}
+                    recurrence={recurrence}
+                  />
+                  <ul>
+                    {plan.benefits.map((benefit) => {
+                      return (
+                        <li class="text-almost-white flex gap-2 py-1">
+                          <CheckIcon color="white" />
+                          {benefit}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  <Button link={plan.button.link} text={plan.button.text} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
