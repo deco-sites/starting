@@ -4113,12 +4113,12 @@
         },
         "depoiment": {
           "type": "string",
-          "description": "depoiment in text",
+          "format": "textarea",
           "title": "Depoiment"
         },
         "signature": {
           "type": "string",
-          "description": "depoiment signature",
+          "format": "textarea",
           "title": "Signature"
         }
       },
