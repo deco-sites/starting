@@ -158,7 +158,7 @@ export default function DocsPage(props: PageProps<Data>) {
           sign={{ label: lang == 'en' ? 'Sign up' : 'Cadastrar-se', url: "/onboarding" }}
           pageInitial="/"
         />
-        <div class="flex-1">
+        <div class="flex-1 mt-16">
           <input
             type="checkbox"
             class="hidden toggle"
