@@ -161,8 +161,8 @@ export default function ImpactCalculator(
 
   return (
     <section class="bg-[#F3FFF9]">
-      <div class="absolute bg-dark-green w-full h-[180px]"></div>
-      <div class="px-4">
+      <div class="absolute bg-dark-green w-full h-[270px]"></div>
+      <div class="px-4 pt-24">
         <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border-1 rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
           <div class="md:max-w-[40%]">
             <p class="text-2xl md:text-5xl text-center md:text-left md:leading-[53px] text-dark-green">

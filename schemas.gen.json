@@ -3072,6 +3072,24 @@
       ],
       "title": "deco-sites/std/components/QuillText.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "pricingTableId": {
+          "type": "string",
+          "title": "Pricing Table Id"
+        },
+        "publishableKey": {
+          "type": "string",
+          "title": "Publishable Key"
+        }
+      },
+      "required": [
+        "pricingTableId",
+        "publishableKey"
+      ],
+      "title": "deco-sites/starting/sections/StripePricing.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9CbG9nSGVhZGVyLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -3353,10 +3371,7 @@
       "type": "object",
       "properties": {
         "mainText": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "title": "Main Text"
         },
         "desktopMainTextSize": {
@@ -3368,10 +3383,7 @@
           "title": "Desktop Main Text Size"
         },
         "title": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "title": "Title"
         },
         "benefits": {
@@ -3382,10 +3394,7 @@
           "title": "Benefits"
         },
         "button": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "title": "Button"
         },
         "imgFirstLine": {
@@ -3401,14 +3410,20 @@
           "title": "Img Third Line"
         },
         "buttonHref": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": "string",
           "title": "Button Href"
         }
       },
-      "required": [],
+      "required": [
+        "mainText",
+        "title",
+        "benefits",
+        "button",
+        "imgFirstLine",
+        "imgSecondLine",
+        "imgThirdLine",
+        "buttonHref"
+      ],
       "title": "deco-sites/starting/components/ui/Partner.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0RpZmZlcmVudGlhbHMudHN4@Sections": {
@@ -5686,6 +5701,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA==": {
+      "title": "deco-sites/starting/sections/StripePricing.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/StripePricing.tsx"
+          ],
+          "default": "deco-sites/starting/sections/StripePricing.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wQ29tbWVudHMudHN4": {
       "title": "deco-sites/starting/sections/CampComments.tsx",
       "type": "object",
@@ -6876,6 +6912,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9RdWlsbFRleHQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wQ29tbWVudHMudHN4"
