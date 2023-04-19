@@ -60,7 +60,7 @@ export default function Container(
       {isActive && (
         <div
           key={props.name}
-          class="col-span-1 bg-white rounded-[10px] p-[3px] shadow bg-gradient-to-br from-primary-darker to-deco-medium-green md:mt-0 mt-6 max-w-[320px]"
+          class="col-span-1 bg-white rounded-[10px] p-[3px] shadow bg-gradient-to-br from-[#002020] to-[#23AB6E] md:mt-0 mt-6 max-w-[320px]"
         >
           <div class="rounded-lg bg-white p-[2px]">
             <div class="w-full flex items-center justify-between p-6 space-x-6">

@@ -14,11 +14,12 @@ import * as $$$$2 from "./routes/docs/[...slug].tsx";
 import * as $$$$3 from "./routes/api/leads.tsx";
 import * as $$$$4 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/ImpactCalculator.tsx";
-import * as $$$$$1 from "./islands/Cms.tsx";
-import * as $$$$$2 from "./islands/ContactUs.tsx";
-import * as $$$$$3 from "./islands/SliderJS.tsx";
-import * as $$$$$4 from "./islands/Header.tsx";
-import * as $$$$$5 from "./islands/campMentor.tsx";
+import * as $$$$$1 from "./islands/campHeader.tsx";
+import * as $$$$$2 from "./islands/Cms.tsx";
+import * as $$$$$3 from "./islands/ContactUs.tsx";
+import * as $$$$$4 from "./islands/SliderJS.tsx";
+import * as $$$$$5 from "./islands/Header.tsx";
+import * as $$$$$6 from "./islands/campMentor.tsx";
 import * as $$$$$$$$0 from "./sections/CampHero.tsx";
 import * as $$$$$$$$1 from "./sections/QuillText.tsx";
 import * as $$$$$$$$2 from "./sections/CampComments.tsx";
@@ -146,11 +147,12 @@ const manifest = {
   },
   "islands": {
     "./islands/ImpactCalculator.tsx": $$$$$0,
-    "./islands/Cms.tsx": $$$$$1,
-    "./islands/ContactUs.tsx": $$$$$2,
-    "./islands/SliderJS.tsx": $$$$$3,
-    "./islands/Header.tsx": $$$$$4,
-    "./islands/campMentor.tsx": $$$$$5,
+    "./islands/campHeader.tsx": $$$$$1,
+    "./islands/Cms.tsx": $$$$$2,
+    "./islands/ContactUs.tsx": $$$$$3,
+    "./islands/SliderJS.tsx": $$$$$4,
+    "./islands/Header.tsx": $$$$$5,
+    "./islands/campMentor.tsx": $$$$$6,
   },
   "sections": {
     "deco-sites/starting/sections/CampHero.tsx": $$$$$$$$0,

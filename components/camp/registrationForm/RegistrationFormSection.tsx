@@ -45,7 +45,7 @@ const registrationInput = [
 
 const RegistrationFormSection = () => {
   return (
-    <div class="lg:flex justify-between max-w-[1100px] mx-auto">
+    <div class="lg:flex justify-between max-w-[1100px] mx-auto mb-40">
       <div class="max-w-[510px] mx-auto">
         <RegistrationStepsHeader text="Comece agora!" />
         <div class="flex justify-center items-center">

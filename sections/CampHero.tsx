@@ -1,4 +1,4 @@
-import Header from "deco-sites/starting/components/camp/header/Header.tsx";
+import Header from "deco-sites/starting/islands/campHeader.tsx";
 
 function CampHero() {
     return <Header />

@@ -19,7 +19,7 @@ const Button = <A extends Elements = "button">(
   return (
     <Component
       {...props}
-      class="bg-gradient-to-r block text-center from-primary-darker to-green-900 p-4 text-white font-semibold rounded-2xl w-full focus:outline-none hover:shadow"
+      class="bg-gradient-to-r block text-center from-[#002020] to-green-900 p-4 text-white font-semibold rounded-2xl w-full focus:outline-none hover:shadow"
     />
   );
 };

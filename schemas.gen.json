@@ -5379,6 +5379,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL2NhbXBIZWFkZXIudHN4": {
+      "title": "./islands/campHeader.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/campHeader.tsx"
+          ],
+          "default": "./islands/campHeader.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0Ntcy50c3g=": {
       "title": "./islands/Cms.tsx",
       "type": "object",
@@ -6727,6 +6743,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL2NhbXBIZWFkZXIudHN4"
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0Ntcy50c3g="
