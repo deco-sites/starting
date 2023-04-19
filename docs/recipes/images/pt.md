@@ -253,9 +253,9 @@ prioridade do seu request.
 
 #### Utilizando o componente Image do Live
 
-O componente `Image` foi construído com o objetivo de melhorar
-performance da sua página utilizando as propriedades mencionadas anteriormente.
-Além disso, os componentes de `Image` e `Source` utilizam por padrão imagens otimizadas no
+O componente `Image` foi construído com o objetivo de melhorar performance da
+sua página utilizando as propriedades mencionadas anteriormente. Além disso, os
+componentes de `Image` e `Source` utilizam por padrão imagens otimizadas no
 formato `webp` e adicionam `srcset` com largura 1x, 1.5x e 2x
 
 **Utilizando o componente de Imagem**

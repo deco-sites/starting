@@ -112,10 +112,12 @@ export default function Cms(props: Props) {
               {props.leftHeader}
             </p>
             <div>
-              <div class="absolute bg-[#F3FFF9] opacity-50 h-0.5 w-full bottom-0 mt-4"></div>
+              <div class="absolute bg-[#F3FFF9] opacity-50 h-0.5 w-full bottom-0 mt-4">
+              </div>
               <div
                 class={`absolute bg-[#00FF80] opacity-100 h-0.5 w-full bottom-0 mt-4 ${lineButton.leftLine}`}
-              ></div>
+              >
+              </div>
             </div>
           </div>
           <div
@@ -197,18 +199,18 @@ export default function Cms(props: Props) {
               {props.rightHeader}
             </p>
             <div>
-              <div class="absolute bg-[#F3FFF9] opacity-50 h-0.5 w-full bottom-0 mt-4"></div>
+              <div class="absolute bg-[#F3FFF9] opacity-50 h-0.5 w-full bottom-0 mt-4">
+              </div>
               <div
                 class={`absolute bg-[#00FF80] opacity-100 h-0.5 w-full bottom-0 mt-4 ${lineButton.rightLine}`}
-              ></div>
+              >
+              </div>
             </div>
           </div>
         </div>
         <div class="px-3 flex flex-row gap-3 py-6 overflow-hidden md:hidden">
           <div
-            class={
-              "relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "
-            }
+            class={"relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "}
           >
             <p
               class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.leftImageMobile}`}
@@ -222,9 +224,7 @@ export default function Cms(props: Props) {
             </p>
           </div>
           <div
-            class={
-              "relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "
-            }
+            class={"relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "}
           >
             <p
               class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] ${lineButton.rightImageMobile}`}
@@ -240,9 +240,7 @@ export default function Cms(props: Props) {
         </div>
         <div class="hidden md:px-0 md:flex md:flex-row md:gap-[4%] md:pt-12 md:overflow-hidden">
           <div
-            class={
-              "relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "
-            }
+            class={"relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "}
           >
             <p
               class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] md:${lineButton.leftText}`}
@@ -256,9 +254,7 @@ export default function Cms(props: Props) {
             </p>
           </div>
           <div
-            class={
-              "relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "
-            }
+            class={"relative flex flex-col w-[100%] md:w-[48%] gap-8 flex-shrink-0 "}
           >
             <p
               class={`font-inter not-italic font-normal text-[#F3FFF9] text-[48px] leading-[53px] md:${lineButton.rightText}`}

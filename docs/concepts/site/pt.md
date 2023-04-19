@@ -27,5 +27,5 @@ de alterações no código.
 [Audience](/docs/en/concepts/audience). As Audiences permitem personalização de
 conteúdo, testes A/B e criação de campanhas. -->
 
-Os Sites são colaborativos e **pertencem à um time** em nosso Admin. Membros
-do time podem ser adicionados para que possam trabalhar juntos no Site.
+Os Sites são colaborativos e **pertencem à um time** em nosso Admin. Membros do
+time podem ser adicionados para que possam trabalhar juntos no Site.

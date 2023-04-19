@@ -18,12 +18,11 @@ em uma Section usando [Loaders](/docs/pt/concepts/loader).
 
 ## O que vamos construir
 
-O exemplo que usaremos é simples, mas tem complexidades
-comuns à outros casos:
+O exemplo que usaremos é simples, mas tem complexidades comuns à outros casos:
 
 - Fazer _fetch_ de fatos sobre cachorros usando a [Dog API](https://dogapi.dog/)
-  **permitindo ao usuário configurar quantos fatos serão retornados** no
-  Admin da _deco.cx_.
+  **permitindo ao usuário configurar quantos fatos serão retornados** no Admin
+  da _deco.cx_.
 - Apresentar esses fatos em uma Section.
 
 <img width="1512" alt="Dados de renderização de Section obtidos da API" src="https://user-images.githubusercontent.com/18706156/225758802-7277e774-921d-46e5-b384-bc9245b8eef1.png">

@@ -9,7 +9,8 @@ export interface ButtonSwitcherProps {
   };
 }
 
-export default function ButtonSwitcher({infor, themeDark}: {infor:ButtonSwitcherProps ,themeDark:boolean}
+export default function ButtonSwitcher(
+  { infor, themeDark }: { infor: ButtonSwitcherProps; themeDark: boolean },
 ) {
   const themeIsLigth = !themeDark;
 
@@ -26,7 +27,8 @@ export default function ButtonSwitcher({infor, themeDark}: {infor:ButtonSwitcher
             : "bg-primary-dark text-[#f3fff9ca]") +
             " " +
             "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px]  hover:shadow-button-hover-shadow transition-all duration-500"}
-          href={infor?.switcherButton1?.href || `#${infor?.switcherButton1?.name}`}
+          href={infor?.switcherButton1?.href ||
+            `#${infor?.switcherButton1?.name}`}
         >
           {infor?.switcherButton1?.name}
         </a>
@@ -37,7 +39,8 @@ export default function ButtonSwitcher({infor, themeDark}: {infor:ButtonSwitcher
             : "bg-white text-dark-green shadow-button-shadow hover:shadow-none") +
             " " +
             "w-1/2 flex justify-center items-center rounded-full p-[9px] lg:p-[14px] transition-all duration-500 border-none"}
-          href={infor?.switcherButton2?.href || `#${infor?.switcherButton2?.name}`}
+          href={infor?.switcherButton2?.href ||
+            `#${infor?.switcherButton2?.name}`}
         >
           {infor?.switcherButton2?.name}
         </a>

@@ -35,7 +35,11 @@ const MentorInfos = (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src="/camp/github-icon.png" class="w-9 h-9" alt="github Icon" />
+              <Icon
+                src="/camp/github-icon.png"
+                class="w-9 h-9"
+                alt="github Icon"
+              />
             </a>
           </div>
         </div>

@@ -22,7 +22,9 @@ const gitHubRawLoader: LoaderFunction<Props, PostBody> = async (
   const path = "/abertura-ii-hackathon-deco.md";
   const res = await fetch(
     `https://raw.githubusercontent.com/${repo}/${branch}/${path}`,
-  ).then(async (res) => {return {data: await res.text()}});
+  ).then(async (res) => {
+    return { data: await res.text() };
+  });
 
   return {
     data: res,

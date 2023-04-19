@@ -5,70 +5,71 @@ export default {
   preflight: (preflight) => ({
     ...preflight,
     html: {
-          'line-height': '1.5',
-          '-webkit-text-size-adjust': '100%',
-          'font-family': 'Albert Sans,sans-serif',
-          'scroll-behavior': 'smooth'
+      "line-height": "1.5",
+      "-webkit-text-size-adjust": "100%",
+      "font-family": "Albert Sans,sans-serif",
+      "scroll-behavior": "smooth",
     },
-    'details > summary': {
-      'list-style': 'none'
-    },    
-    'details summary::-webkit-details-marker': {
-      'display':'none'
+    "details > summary": {
+      "list-style": "none",
     },
-    'details[open] summary svg': {
-      'transform': 'rotate(90deg)'
+    "details summary::-webkit-details-marker": {
+      "display": "none",
     },
-    'details[open] summary.notShow svg': {
-      'transform': 'rotate(0)'
+    "details[open] summary svg": {
+      "transform": "rotate(90deg)",
     },
-    '.hidden-scroll::-webkit-scrollbar': {
-      display: 'none',
+    "details[open] summary.notShow svg": {
+      "transform": "rotate(0)",
     },
-    '.hidden-scroll':{
-      '-ms-overflow-style': 'none',  /* IE and Edge */
-      'scrollbar-width': 'none'  /* Firefox */
+    ".hidden-scroll::-webkit-scrollbar": {
+      display: "none",
+    },
+    ".hidden-scroll": {
+      "-ms-overflow-style": "none", /* IE and Edge */
+      "scrollbar-width": "none", /* Firefox */
     },
     'input[type="range"]': {
-      '-webkit-appearance': 'none',
-      'appearance': 'none',
-      'background': 'transparent',
-      'cursor': 'pointer',
-      'width': '100%',
+      "-webkit-appearance": "none",
+      "appearance": "none",
+      "background": "transparent",
+      "cursor": "pointer",
+      "width": "100%",
     },
     'input[type="range"]:focus': {
-      'outline': 'none',
+      "outline": "none",
     },
     'input[type="range"]::-webkit-slider-runnable-track': {
-      'background-color': '#06E474',
-      'border-radius': '0.5rem',
-      'height': '0.7rem',
+      "background-color": "#06E474",
+      "border-radius": "0.5rem",
+      "height": "0.7rem",
     },
     'input[type="range"]::-webkit-slider-thumb': {
-      '-webkit-appearance': 'none', /* Override default look */
-      'appearance': 'none',
-      'margin-top': '-3px',/* Centers thumb on the track */
-      'background': 'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);',
-      'border-radius': '1rem',
-      'border': '1px solid black',
-      'height': '1.2rem',
-      'width': '1.2rem',
+      "-webkit-appearance": "none", /* Override default look */
+      "appearance": "none",
+      "margin-top": "-3px", /* Centers thumb on the track */
+      "background":
+        "radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);",
+      "border-radius": "1rem",
+      "border": "1px solid black",
+      "height": "1.2rem",
+      "width": "1.2rem",
     },
     'input[type="range"]:focus::-webkit-slider-thumb': {
-      'border': '2px solid black',
+      "border": "2px solid black",
     },
-    'input::-webkit-outer-spin-button': {
-      '-webkit-appearance': 'none',
-      'margin': '0',
+    "input::-webkit-outer-spin-button": {
+      "-webkit-appearance": "none",
+      "margin": "0",
     },
-    'input::-webkit-inner-spin-button': {
-      '-webkit-appearance': 'none',
-      'margin': '0',
-    }
+    "input::-webkit-inner-spin-button": {
+      "-webkit-appearance": "none",
+      "margin": "0",
+    },
   }),
   plugins: {
     ...typography({
-      className: 'prose',
+      className: "prose",
     }),
   },
   theme: {
@@ -78,7 +79,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "contact-us-bg-gradient":"linear-gradient(169.63deg, #00FF80 -0.25%, #095F5D 152.54%), conic-gradient(from -90deg at 50% 50%, #FFFFFF 0deg, rgba(255, 255, 255, 0) 187.5deg, #FFFFFF 360deg);",
+        "contact-us-bg-gradient":
+          "linear-gradient(169.63deg, #00FF80 -0.25%, #095F5D 152.54%), conic-gradient(from -90deg at 50% 50%, #FFFFFF 0deg, rgba(255, 255, 255, 0) 187.5deg, #FFFFFF 360deg);",
         "white-green":
           "linear-gradient(to top, #02F67C 0%, #02F67C 38%, #FFFFFF 38%, #FFFFFF 100%)",
         "linear-white-green":
@@ -88,117 +90,137 @@ export default {
         "linear-transp-green-transp":
           "radial-gradient(circle, rgba(0,255,128,1) 0%, rgba(0,255,128,0) 100%)",
         "linear": "linear-gradient(180deg, #053535 0%, #0A2121 100%);",
-        "linear-pricing": "linear-gradient(67.74deg, #053535 0.89%, #1D4949 47.43%, #053535 99.08%)",
-        "linear-pricing-y": "linear-gradient(0deg, #0A2121 0.89%, #1D4949 99.08%)",
-        "linear-border": "linear-gradient(31deg, #ffffff 0.89%, #053535e8 25%, #053535e8 75%, #ffffff 99.08%)",
-        "linear-y-border": "linear-gradient(180deg, #F3FFF9 0.89%, #053535e8 80.08%, transparent 99%)",
-        "dark-green-gradient": "linear-gradient(180deg, #0A2121 0%, #053535 100%)",
-        "linear-header": "linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,255,128,1) 100%)"
+        "linear-pricing":
+          "linear-gradient(67.74deg, #053535 0.89%, #1D4949 47.43%, #053535 99.08%)",
+        "linear-pricing-y":
+          "linear-gradient(0deg, #0A2121 0.89%, #1D4949 99.08%)",
+        "linear-border":
+          "linear-gradient(31deg, #ffffff 0.89%, #053535e8 25%, #053535e8 75%, #ffffff 99.08%)",
+        "linear-y-border":
+          "linear-gradient(180deg, #F3FFF9 0.89%, #053535e8 80.08%, transparent 99%)",
+        "dark-green-gradient":
+          "linear-gradient(180deg, #0A2121 0%, #053535 100%)",
+        "linear-header":
+          "linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,255,128,1) 100%)",
       },
       boxShadow: {
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",
-        "footer-shadow": "0px -6px 8px rgba(255, 255, 255, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.5)",
+        "footer-shadow":
+          "0px -6px 8px rgba(255, 255, 255, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.5)",
         "button-shadow": "0px 0px 4px rgba(0, 0, 0, 0.35)",
-        "button-hover-shadow": "-2px -2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.2)",
-        "button-white-hover-shadow": "-2px -2px 4px rgba(255, 255, 255, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.06)",
+        "button-hover-shadow":
+          "-2px -2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.2)",
+        "button-white-hover-shadow":
+          "-2px -2px 4px rgba(255, 255, 255, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.06)",
       },
       transitionProperty: {
         "height": "height",
         "spacing": "margin, padding",
       },
       keyframes: {
-        blur1:{
-          "0%": {transform: "translateY(0) translateX(0)"},
-          "20%": {transform: "translateY(25%) translateX(0)"},
-          "40%": {transform: "translateY(40%) translateX(-10%) rotate(-90deg)"},
-          "60%": {transform: "translateY(20%) translateX(-25%) rotate(-120deg)"},
-          "80%": {transform: "translateY(0%) translateX(-15%) rotate(-90deg)"},
-          "100%": {transform: "translateY(0) translateX(0)"},
+        blur1: {
+          "0%": { transform: "translateY(0) translateX(0)" },
+          "20%": { transform: "translateY(25%) translateX(0)" },
+          "40%": {
+            transform: "translateY(40%) translateX(-10%) rotate(-90deg)",
+          },
+          "60%": {
+            transform: "translateY(20%) translateX(-25%) rotate(-120deg)",
+          },
+          "80%": {
+            transform: "translateY(0%) translateX(-15%) rotate(-90deg)",
+          },
+          "100%": { transform: "translateY(0) translateX(0)" },
         },
-        blur2:{
-          "0%": {transform: "translateY(0) translateX(0)"},
-          "20%": {transform: "translateY(-15%) translateX(-15%) rotate(90deg)"},
-          "40%": {transform: "translateY(-30%) translateX(0) rotate(120deg)"},
-          "60%": {transform: "translateY(-20%) translateX(40%) scale(130%) rotate(90deg)"},
-          "80%": {transform: "translateY(-10%) translateX(25%) scale(115%)"},
-          "100%": {transform: "translateY(0) translateX(0)"},
+        blur2: {
+          "0%": { transform: "translateY(0) translateX(0)" },
+          "20%": {
+            transform: "translateY(-15%) translateX(-15%) rotate(90deg)",
+          },
+          "40%": { transform: "translateY(-30%) translateX(0) rotate(120deg)" },
+          "60%": {
+            transform:
+              "translateY(-20%) translateX(40%) scale(130%) rotate(90deg)",
+          },
+          "80%": { transform: "translateY(-10%) translateX(25%) scale(115%)" },
+          "100%": { transform: "translateY(0) translateX(0)" },
         },
-        switcherText10:{
-          "0%": { transform: "translateY(0%)" , opacity:1 },
-          "4%": { transform: "translateY(0%)" , opacity:1 },
-          "14%": { transform: "translateY(-150%)", opacity:0 },
-          "28%": { transform: "translateY(150%)"},
+        switcherText10: {
+          "0%": { transform: "translateY(0%)", opacity: 1 },
+          "4%": { transform: "translateY(0%)", opacity: 1 },
+          "14%": { transform: "translateY(-150%)", opacity: 0 },
+          "28%": { transform: "translateY(150%)" },
           "42%": { transform: "translateY(150%)" },
           "56%": { transform: "translateY(150%)" },
-          "70%": { transform: "translateY(150%)"},
-          "84%": { transform: "translateY(150%)" , opacity:0 },
-          "to": { transform: "translateY(0%)", opacity:1 },
+          "70%": { transform: "translateY(150%)" },
+          "84%": { transform: "translateY(150%)", opacity: 0 },
+          "to": { transform: "translateY(0%)", opacity: 1 },
         },
-        switcherText20:{
-          "0%": { transform: "translateY(150%)"},
-          "14%": { transform: "translateY(0%)", opacity:1 },
-          "18%": { transform: "translateY(0%)", opacity:1 },
-          "28%": { transform: "translateY(-150%)", opacity:0},
-          "42%": { transform: "translateY(150%)", opacity:0 },
+        switcherText20: {
+          "0%": { transform: "translateY(150%)" },
+          "14%": { transform: "translateY(0%)", opacity: 1 },
+          "18%": { transform: "translateY(0%)", opacity: 1 },
+          "28%": { transform: "translateY(-150%)", opacity: 0 },
+          "42%": { transform: "translateY(150%)", opacity: 0 },
           "56%": { transform: "translateY(150%)" },
           "70%": { transform: "translateY(150%)" },
-          "84%": { transform: "translateY(150%)" },
-          "to": { transform: "translateY(150%)"},
-        },
-        switcherText30:{
-          "0%": { transform: "translateY(150%)"},
-          "14%": { transform: "translateY(150%)"},
-          "28%": { transform: "translateY(0%)", opacity:1},
-          "32%": { transform: "translateY(0%)", opacity:1},
-          "42%": { transform: "translateY(-150%)", opacity:0},
-          "56%": { transform: "translateY(150%)" , opacity:0 },
-          "70%": { transform: "translateY(150%)" },
-          "84%": { transform: "translateY(150%)" },
-          "to": { transform: "translateY(150%)"},
-        },
-        switcherText40:{
-          "0%": { transform: "translateY(150%)"},
-          "14%": { transform: "translateY(150%)" },
-          "28%": { transform: "translateY(150%)"},
-          "42%": { transform: "translateY(0%)", opacity:1},
-          "46%": { transform: "translateY(0%)", opacity:1},
-          "56%": { transform: "translateY(-150%)", opacity:0 },
-          "70%": { transform: "translateY(150%)", opacity:0  },
           "84%": { transform: "translateY(150%)" },
           "to": { transform: "translateY(150%)" },
         },
-        switcherText50:{
-          "0%": { transform: "translateY(150%)"},
+        switcherText30: {
+          "0%": { transform: "translateY(150%)" },
           "14%": { transform: "translateY(150%)" },
-          "28%": { transform: "translateY(150%)" },
-          "42%": { transform: "translateY(150%)"},
-          "56%": { transform: "translateY(0%)", opacity:1 },
-          "60%": { transform: "translateY(0%)", opacity:1 },
-          "70%": { transform: "translateY(-150%)", opacity:0},
+          "28%": { transform: "translateY(0%)", opacity: 1 },
+          "32%": { transform: "translateY(0%)", opacity: 1 },
+          "42%": { transform: "translateY(-150%)", opacity: 0 },
+          "56%": { transform: "translateY(150%)", opacity: 0 },
+          "70%": { transform: "translateY(150%)" },
           "84%": { transform: "translateY(150%)" },
-          "to": { transform: "translateY(150%)" , opacity:0 },
+          "to": { transform: "translateY(150%)" },
         },
-        switcherText60:{
-          "0%": { transform: "translateY(150%)"},
+        switcherText40: {
+          "0%": { transform: "translateY(150%)" },
           "14%": { transform: "translateY(150%)" },
           "28%": { transform: "translateY(150%)" },
-          "42%": { transform: "translateY(150%)"},
-          "56%": { transform: "translateY(150%)"},
-          "70%": { transform: "translateY(0%)", opacity:1},
-          "74%": { transform: "translateY(0%)", opacity:1},
-          "84%": { transform: "translateY(-150%)" , opacity:0 },
-          "to": { transform: "translateY(150%)",opacity:0},
+          "42%": { transform: "translateY(0%)", opacity: 1 },
+          "46%": { transform: "translateY(0%)", opacity: 1 },
+          "56%": { transform: "translateY(-150%)", opacity: 0 },
+          "70%": { transform: "translateY(150%)", opacity: 0 },
+          "84%": { transform: "translateY(150%)" },
+          "to": { transform: "translateY(150%)" },
         },
-        switcherText70:{
-          "0%": { transform: "translateY(150%)"},
+        switcherText50: {
+          "0%": { transform: "translateY(150%)" },
           "14%": { transform: "translateY(150%)" },
           "28%": { transform: "translateY(150%)" },
-          "42%": { transform: "translateY(150%)"},
-          "56%": { transform: "translateY(150%)"},
-          "70%": { transform: "translateY(150%)", opacity:0 },
-          "84%": { transform: "translateY(0%)", opacity:1},
-          "88%": { transform: "translateY(0%)", opacity:1},
-          "to": { transform: "translateY(-150%)" , opacity:0 },
+          "42%": { transform: "translateY(150%)" },
+          "56%": { transform: "translateY(0%)", opacity: 1 },
+          "60%": { transform: "translateY(0%)", opacity: 1 },
+          "70%": { transform: "translateY(-150%)", opacity: 0 },
+          "84%": { transform: "translateY(150%)" },
+          "to": { transform: "translateY(150%)", opacity: 0 },
+        },
+        switcherText60: {
+          "0%": { transform: "translateY(150%)" },
+          "14%": { transform: "translateY(150%)" },
+          "28%": { transform: "translateY(150%)" },
+          "42%": { transform: "translateY(150%)" },
+          "56%": { transform: "translateY(150%)" },
+          "70%": { transform: "translateY(0%)", opacity: 1 },
+          "74%": { transform: "translateY(0%)", opacity: 1 },
+          "84%": { transform: "translateY(-150%)", opacity: 0 },
+          "to": { transform: "translateY(150%)", opacity: 0 },
+        },
+        switcherText70: {
+          "0%": { transform: "translateY(150%)" },
+          "14%": { transform: "translateY(150%)" },
+          "28%": { transform: "translateY(150%)" },
+          "42%": { transform: "translateY(150%)" },
+          "56%": { transform: "translateY(150%)" },
+          "70%": { transform: "translateY(150%)", opacity: 0 },
+          "84%": { transform: "translateY(0%)", opacity: 1 },
+          "88%": { transform: "translateY(0%)", opacity: 1 },
+          "to": { transform: "translateY(-150%)", opacity: 0 },
         },
         walk: {
           "0%": { transform: "translateX(-50%)" },
@@ -206,234 +228,410 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
 
-        'backgound-color': {
-          "0%": { 'background-color': "black" },
-          "10%": { 'background-color': "#053535" },
-          "50%": { 'background-color': "#053535" },
-          "60%": { 'background-color': "black" },
-          "100%": { 'background-color': "black" },
+        "backgound-color": {
+          "0%": { "background-color": "black" },
+          "10%": { "background-color": "#053535" },
+          "50%": { "background-color": "#053535" },
+          "60%": { "background-color": "black" },
+          "100%": { "background-color": "black" },
         },
-        'backgound-color-v2': {
-          "0%": { 'background-color': "black" },
-          "10%": { 'background-color': "#053535" },
-          "50%": { 'background-color': "#053535" },
-          "60%": { 'background-color': "black" },
-          "100%": { 'background-color': "black" },
+        "backgound-color-v2": {
+          "0%": { "background-color": "black" },
+          "10%": { "background-color": "#053535" },
+          "50%": { "background-color": "#053535" },
+          "60%": { "background-color": "black" },
+          "100%": { "background-color": "black" },
         },
-        'backgound-color-reverse': {
-          "0%": { 'background-color': "#053535" },
-          "10%": { 'background-color': "black" },
-          "50%": { 'background-color': "black" },
-          "60%": { 'background-color': "#053535" },
-          "100%": { 'background-color': "#053535" },
+        "backgound-color-reverse": {
+          "0%": { "background-color": "#053535" },
+          "10%": { "background-color": "black" },
+          "50%": { "background-color": "black" },
+          "60%": { "background-color": "#053535" },
+          "100%": { "background-color": "#053535" },
         },
-        'backgound-color-v2-reverse': {
-          "0%": { 'background-color': "#053535" },
-          "10%": { 'background-color': "black" },
-          "50%": { 'background-color': "black" },
-          "60%": { 'background-color': "#053535" },
-          "100%": { 'background-color': "#053535" },
+        "backgound-color-v2-reverse": {
+          "0%": { "background-color": "#053535" },
+          "10%": { "background-color": "black" },
+          "50%": { "background-color": "black" },
+          "60%": { "background-color": "#053535" },
+          "100%": { "background-color": "#053535" },
         },
-        'left-opacity': {
+        "left-opacity": {
           "0%": { opacity: 0.5 },
           "10%": { opacity: 1.0 },
           "50%": { opacity: 1.0 },
           "60%": { opacity: 0.5 },
           "100%": { opacity: 0.5 },
         },
-        'left-opacity-v2': {
+        "left-opacity-v2": {
           "0%": { opacity: 0.5 },
           "10%": { opacity: 1.0 },
           "50%": { opacity: 1.0 },
           "60%": { opacity: 0.5 },
           "100%": { opacity: 0.5 },
         },
-        'left-time-line': {
-          "0%": { width: '0%' },
-          "10%": { width: '0%' },
-          "50%": { width: '100%' },
-          "60%": { width: '100%' },
-          "60.01%": { width: '0%' },
-          "100%": { width: '0%' },
+        "left-time-line": {
+          "0%": { width: "0%" },
+          "10%": { width: "0%" },
+          "50%": { width: "100%" },
+          "60%": { width: "100%" },
+          "60.01%": { width: "0%" },
+          "100%": { width: "0%" },
         },
-        'left-time-line-v2': {
-          "0%": { width: '0%' },
-          "10%": { width: '0%' },
-          "50%": { width: '100%' },
-          "60%": { width: '100%' },
-          "60.01%": { width: '0%' },
-          "100%": { width: '0%' },
+        "left-time-line-v2": {
+          "0%": { width: "0%" },
+          "10%": { width: "0%" },
+          "50%": { width: "100%" },
+          "60%": { width: "100%" },
+          "60.01%": { width: "0%" },
+          "100%": { width: "0%" },
         },
-        'left-text': {
-          "0%": {  },
-          "10%": {  },
-          "50%": { visibility: 'hidden' },
-          "60%": {  },
-          "100%": { visibility: 'hidden' },
+        "left-text": {
+          "0%": {},
+          "10%": {},
+          "50%": { visibility: "hidden" },
+          "60%": {},
+          "100%": { visibility: "hidden" },
         },
-        'left-text-v2': {
-          "0%": {  },
-          "10%": {  },
-          "50%": { visibility: 'hidden' },
-          "60%": {  },
-          "100%": { visibility: 'hidden' },
+        "left-text-v2": {
+          "0%": {},
+          "10%": {},
+          "50%": { visibility: "hidden" },
+          "60%": {},
+          "100%": { visibility: "hidden" },
         },
-        'left-image': {
-          "0%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)'  },
-          "10%": { width: "130%", transform: "translateY(40px)", filter: 'blur(0px)', 'z-index': 10 },
-          "50%": { width: "130%", transform: "translateY(40px)", filter: 'blur(0px)', 'z-index': 10 },
-          "60%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)' },
-          "100%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)' },
+        "left-image": {
+          "0%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
+          "10%": {
+            width: "130%",
+            transform: "translateY(40px)",
+            filter: "blur(0px)",
+            "z-index": 10,
+          },
+          "50%": {
+            width: "130%",
+            transform: "translateY(40px)",
+            filter: "blur(0px)",
+            "z-index": 10,
+          },
+          "60%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
+          "100%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
         },
-        'left-image-v2': {
-          "0%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)'  },
-          "10%": { width: "130%", transform: "translateY(40px)", filter: 'blur(0px)', 'z-index': 10 },
-          "50%": { width: "130%", transform: "translateY(40px)", filter: 'blur(0px)', 'z-index': 10 },
-          "60%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)' },
-          "100%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)' },
+        "left-image-v2": {
+          "0%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
+          "10%": {
+            width: "130%",
+            transform: "translateY(40px)",
+            filter: "blur(0px)",
+            "z-index": 10,
+          },
+          "50%": {
+            width: "130%",
+            transform: "translateY(40px)",
+            filter: "blur(0px)",
+            "z-index": 10,
+          },
+          "60%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
+          "100%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
         },
-        'left-image-reverse': {
-          "0%": { width: "130%",  filter: 'blur(0)', transform: "translateY(40px)" },
-          "10%": { width: "100%",  filter: 'blur(8px)', transform: "translateY(0px)" },
-          "50%": { width: "100%", filter: 'blur(8px)', transform: "translateY(0px)" },
-          "60%": { width: "130%", filter: 'blur(0)', transform: "translateY(40px)", 'z-index': 10 },
-          "100%": { width: "130%", filter: 'blur(0)', transform: "translateY(40px)", 'z-index': 10 },
+        "left-image-reverse": {
+          "0%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateY(40px)",
+          },
+          "10%": {
+            width: "100%",
+            filter: "blur(8px)",
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            width: "100%",
+            filter: "blur(8px)",
+            transform: "translateY(0px)",
+          },
+          "60%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateY(40px)",
+            "z-index": 10,
+          },
+          "100%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateY(40px)",
+            "z-index": 10,
+          },
         },
-        'left-image-reverse-v2': {
-          "0%": { width: "130%",  filter: 'blur(0)', transform: "translateY(40px)" },
-          "10%": { width: "100%",  filter: 'blur(8px)', transform: "translateY(0px)" },
-          "50%": { width: "100%", filter: 'blur(8px)', transform: "translateY(0px)" },
-          "60%": { width: "130%", filter: 'blur(0)', transform: "translateY(40px)", 'z-index': 10 },
-          "100%": { width: "130%", filter: 'blur(0)', transform: "translateY(40px)", 'z-index': 10 },
+        "left-image-reverse-v2": {
+          "0%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateY(40px)",
+          },
+          "10%": {
+            width: "100%",
+            filter: "blur(8px)",
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            width: "100%",
+            filter: "blur(8px)",
+            transform: "translateY(0px)",
+          },
+          "60%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateY(40px)",
+            "z-index": 10,
+          },
+          "100%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateY(40px)",
+            "z-index": 10,
+          },
         },
 
-        'right-opacity': {
+        "right-opacity": {
           "0%": { opacity: 0.5 },
           "10%": { opacity: 0.5 },
           "50%": { opacity: 0.5 },
           "60%": { opacity: 1.0 },
           "100%": { opacity: 1.0 },
         },
-        'right-opacity-v2': {
+        "right-opacity-v2": {
           "0%": { opacity: 0.5 },
           "10%": { opacity: 0.5 },
           "50%": { opacity: 0.5 },
           "60%": { opacity: 1.0 },
           "100%": { opacity: 1.0 },
         },
-        'right-time-line': {
-          "0%": { width: '100%' },
-          "10%": { width: '100%' },
-          "10.01%": { width: '0%' },
-          "60%": { width: '0%' },
-          "100%": { width: '100%' },
+        "right-time-line": {
+          "0%": { width: "100%" },
+          "10%": { width: "100%" },
+          "10.01%": { width: "0%" },
+          "60%": { width: "0%" },
+          "100%": { width: "100%" },
         },
-        'right-time-line-v2': {
-          "0%": { width: '100%' },
-          "10%": { width: '100%' },
-          "10.01%": { width: '0%' },
-          "60%": { width: '0%' },
-          "100%": { width: '100%' },
+        "right-time-line-v2": {
+          "0%": { width: "100%" },
+          "10%": { width: "100%" },
+          "10.01%": { width: "0%" },
+          "60%": { width: "0%" },
+          "100%": { width: "100%" },
         },
-        'right-text': {
-          "0%": { visibility: 'hidden' },
-          "10%": { visibility: 'hidden' },
-          "50%": { visibility: 'hidden' },
-          "60%": { visibility: 'visible' },
-          "100%": { visibility: 'hidden' },
+        "right-text": {
+          "0%": { visibility: "hidden" },
+          "10%": { visibility: "hidden" },
+          "50%": { visibility: "hidden" },
+          "60%": { visibility: "visible" },
+          "100%": { visibility: "hidden" },
         },
-        'right-text-v2': {
-          "0%": { visibility: 'hidden' },
-          "10%": { visibility: 'hidden' },
-          "50%": { visibility: 'hidden' },
-          "60%": { visibility: 'visible' },
-          "100%": { visibility: 'hidden' },
+        "right-text-v2": {
+          "0%": { visibility: "hidden" },
+          "10%": { visibility: "hidden" },
+          "50%": { visibility: "hidden" },
+          "60%": { visibility: "visible" },
+          "100%": { visibility: "hidden" },
         },
-        'right-image': {
-          "0%": { width: "130%",  filter: 'blur(0)', transform: "translateX(-30%) translateY(40px)" },
-          "10%": { width: "100%",  filter: 'blur(8px)', transform: "translateX(0%) translateY(0px)" },
-          "50%": { width: "100%", filter: 'blur(8px)', transform: "translateX(0%) translateY(0px)" },
-          "60%": { width: "130%", filter: 'blur(0)', transform: "translateX(-30%) translateY(40px)", 'z-index': 10 },
-          "100%": { width: "130%", filter: 'blur(0)', transform: "translateX(-30%) translateY(40px)", 'z-index': 10 },
+        "right-image": {
+          "0%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateX(-30%) translateY(40px)",
+          },
+          "10%": {
+            width: "100%",
+            filter: "blur(8px)",
+            transform: "translateX(0%) translateY(0px)",
+          },
+          "50%": {
+            width: "100%",
+            filter: "blur(8px)",
+            transform: "translateX(0%) translateY(0px)",
+          },
+          "60%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateX(-30%) translateY(40px)",
+            "z-index": 10,
+          },
+          "100%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateX(-30%) translateY(40px)",
+            "z-index": 10,
+          },
         },
-        'right-image-v2': {
-          "0%": { width: "130%",  filter: 'blur(0)', transform: "translateX(-30%) translateY(40px)" },
-          "10%": { width: "100%",  filter: 'blur(8px)', transform: "translateX(0%) translateY(0px)" },
-          "50%": { width: "100%", filter: 'blur(8px)', transform: "translateX(0%) translateY(0px)" },
-          "60%": { width: "130%", filter: 'blur(0)', transform: "translateX(-30%) translateY(40px)", 'z-index': 10 },
-          "100%": { width: "130%", filter: 'blur(0)', transform: "translateX(-30%) translateY(40px)", 'z-index': 10 },
+        "right-image-v2": {
+          "0%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateX(-30%) translateY(40px)",
+          },
+          "10%": {
+            width: "100%",
+            filter: "blur(8px)",
+            transform: "translateX(0%) translateY(0px)",
+          },
+          "50%": {
+            width: "100%",
+            filter: "blur(8px)",
+            transform: "translateX(0%) translateY(0px)",
+          },
+          "60%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateX(-30%) translateY(40px)",
+            "z-index": 10,
+          },
+          "100%": {
+            width: "130%",
+            filter: "blur(0)",
+            transform: "translateX(-30%) translateY(40px)",
+            "z-index": 10,
+          },
         },
-        'right-image-reverse': {
-          "0%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)'  },
-          "10%": { width: "130%", transform: "translateX(-30%) translateY(40px)", filter: 'blur(0px)', 'z-index': 10 },
-          "50%": { width: "130%", transform: "translateX(-30%) translateY(40px)", filter: 'blur(0px)', 'z-index': 10 },
-          "60%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)' },
-          "100%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)' },
+        "right-image-reverse": {
+          "0%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
+          "10%": {
+            width: "130%",
+            transform: "translateX(-30%) translateY(40px)",
+            filter: "blur(0px)",
+            "z-index": 10,
+          },
+          "50%": {
+            width: "130%",
+            transform: "translateX(-30%) translateY(40px)",
+            filter: "blur(0px)",
+            "z-index": 10,
+          },
+          "60%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
+          "100%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
         },
-        'right-image-reverse-v2': {
-          "0%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)'  },
-          "10%": { width: "130%", transform: "translateX(-30%) translateY(40px)", filter: 'blur(0px)', 'z-index': 10 },
-          "50%": { width: "130%", transform: "translateX(-30%) translateY(40px)", filter: 'blur(0px)', 'z-index': 10 },
-          "60%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)' },
-          "100%": { width: "100%", transform: "translateY(0px)", filter: 'blur(8px)' },
+        "right-image-reverse-v2": {
+          "0%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
+          "10%": {
+            width: "130%",
+            transform: "translateX(-30%) translateY(40px)",
+            filter: "blur(0px)",
+            "z-index": 10,
+          },
+          "50%": {
+            width: "130%",
+            transform: "translateX(-30%) translateY(40px)",
+            filter: "blur(0px)",
+            "z-index": 10,
+          },
+          "60%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
+          "100%": {
+            width: "100%",
+            transform: "translateY(0px)",
+            filter: "blur(8px)",
+          },
         },
 
-        'left-image-mobile': {
-          "0%": { transform: "translateX(105%)"},
-          "10%": { transform: "translateX(0%)"},
-          "50%": { transform: "translateX(0%)"},
-          "60%": { transform: "translateX(105%)"},
-          "100%": { transform: "translateX(105%)"},
+        "left-image-mobile": {
+          "0%": { transform: "translateX(105%)" },
+          "10%": { transform: "translateX(0%)" },
+          "50%": { transform: "translateX(0%)" },
+          "60%": { transform: "translateX(105%)" },
+          "100%": { transform: "translateX(105%)" },
         },
-        'left-image-mobile-v2': {
-          "0%": { transform: "translateX(105%)"},
-          "10%": { transform: "translateX(0%)"},
-          "50%": { transform: "translateX(0%)"},
-          "60%": { transform: "translateX(105%)"},
-          "100%": { transform: "translateX(105%)"},
+        "left-image-mobile-v2": {
+          "0%": { transform: "translateX(105%)" },
+          "10%": { transform: "translateX(0%)" },
+          "50%": { transform: "translateX(0%)" },
+          "60%": { transform: "translateX(105%)" },
+          "100%": { transform: "translateX(105%)" },
         },
-        'left-image-mobile-reverse': {
-          "0%": { transform: "translateX(0%)"},
-          "10%": { transform: "translateX(105%)"},
-          "50%": { transform: "translateX(105%)"},
-          "60%": { transform: "translateX(0%)"},
-          "100%": { transform: "translateX(0%)"},
+        "left-image-mobile-reverse": {
+          "0%": { transform: "translateX(0%)" },
+          "10%": { transform: "translateX(105%)" },
+          "50%": { transform: "translateX(105%)" },
+          "60%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(0%)" },
         },
-        'left-image-mobile-reverse-v2': {
-          "0%": { transform: "translateX(0%)"},
-          "10%": { transform: "translateX(105%)"},
-          "50%": { transform: "translateX(105%)"},
-          "60%": { transform: "translateX(0%)"},
-          "100%": { transform: "translateX(0%)"},
+        "left-image-mobile-reverse-v2": {
+          "0%": { transform: "translateX(0%)" },
+          "10%": { transform: "translateX(105%)" },
+          "50%": { transform: "translateX(105%)" },
+          "60%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(0%)" },
         },
-        'right-image-mobile': {
-          "0%": { transform: "translateX(-102%)"},
-          "10%": { transform: "translateX(0%)"},
-          "50%": { transform: "translateX(0%)"},
-          "60%": { transform: "translateX(-102%)"},
-          "100%": { transform: "translateX(-102%)"},
+        "right-image-mobile": {
+          "0%": { transform: "translateX(-102%)" },
+          "10%": { transform: "translateX(0%)" },
+          "50%": { transform: "translateX(0%)" },
+          "60%": { transform: "translateX(-102%)" },
+          "100%": { transform: "translateX(-102%)" },
         },
-        'right-image-mobile-v2': {
-          "0%": { transform: "translateX(-102%)"},
-          "10%": { transform: "translateX(0%)"},
-          "50%": { transform: "translateX(0%)"},
-          "60%": { transform: "translateX(-102%)"},
-          "100%": { transform: "translateX(-102%)"},
+        "right-image-mobile-v2": {
+          "0%": { transform: "translateX(-102%)" },
+          "10%": { transform: "translateX(0%)" },
+          "50%": { transform: "translateX(0%)" },
+          "60%": { transform: "translateX(-102%)" },
+          "100%": { transform: "translateX(-102%)" },
         },
-        'right-image-mobile-reverse': {
-          "0%": { transform: "translateX(0%)"},
-          "10%": { transform: "translateX(-102%)"},
-          "50%": { transform: "translateX(-102%)"},
-          "60%": { transform: "translateX(0%)"},
-          "100%": { transform: "translateX(0%)"},
+        "right-image-mobile-reverse": {
+          "0%": { transform: "translateX(0%)" },
+          "10%": { transform: "translateX(-102%)" },
+          "50%": { transform: "translateX(-102%)" },
+          "60%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(0%)" },
         },
-        'right-image-mobile-reverse-v2': {
-          "0%": { transform: "translateX(0%)"},
-          "10%": { transform: "translateX(-102%)"},
-          "50%": { transform: "translateX(-102%)"},
-          "60%": { transform: "translateX(0%)"},
-          "100%": { transform: "translateX(0%)"},
-        },     
+        "right-image-mobile-reverse-v2": {
+          "0%": { transform: "translateX(0%)" },
+          "10%": { transform: "translateX(-102%)" },
+          "50%": { transform: "translateX(-102%)" },
+          "60%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
       },
       animation: {
         blur1: "blur1 15s linear infinite",
@@ -446,26 +644,46 @@ export default {
         switcherText60: "switcherText60 ease 13s infinite",
         switcherText70: "switcherText70 ease 13s infinite",
         walk: "walk 30s ease-in-out infinite",
-        'backgound-color': "backgound-color 15s linear infinite", 'backgound-color-v2': "backgound-color-v2 15s linear infinite",
-        'backgound-color-reverse': "backgound-color-reverse 15s linear infinite", 'backgound-color-v2-reverse': "backgound-color-v2-reverse 15s linear infinite",
-        'left-opacity': "left-opacity 15s linear infinite", 'left-opacity-v2': "left-opacity-v2 15s linear infinite",
-        'left-time-line': "left-time-line 15s linear infinite", 'left-time-line-v2': "left-time-line-v2 15s linear infinite",
-        'left-text': "left-text 15s linear infinite", 'left-text-v2': "left-text-v2 15s linear infinite",
-        'left-image': "left-image 15s linear infinite", 'left-image-v2': "left-image-v2 15s linear infinite",
-        'left-image-reverse': "left-image-reverse 15s linear infinite", 'left-image-reverse-v2': "left-image-reverse-v2 15s linear infinite",
+        "backgound-color": "backgound-color 15s linear infinite",
+        "backgound-color-v2": "backgound-color-v2 15s linear infinite",
+        "backgound-color-reverse":
+          "backgound-color-reverse 15s linear infinite",
+        "backgound-color-v2-reverse":
+          "backgound-color-v2-reverse 15s linear infinite",
+        "left-opacity": "left-opacity 15s linear infinite",
+        "left-opacity-v2": "left-opacity-v2 15s linear infinite",
+        "left-time-line": "left-time-line 15s linear infinite",
+        "left-time-line-v2": "left-time-line-v2 15s linear infinite",
+        "left-text": "left-text 15s linear infinite",
+        "left-text-v2": "left-text-v2 15s linear infinite",
+        "left-image": "left-image 15s linear infinite",
+        "left-image-v2": "left-image-v2 15s linear infinite",
+        "left-image-reverse": "left-image-reverse 15s linear infinite",
+        "left-image-reverse-v2": "left-image-reverse-v2 15s linear infinite",
 
-        'right-opacity': "right-opacity 15s linear infinite", 'right-opacity-v2': "right-opacity-v2 15s linear infinite",
-        'right-time-line': "right-time-line 15s linear infinite", 'right-time-line-v2': "right-time-line-v2 15s linear infinite",
-        'right-text': "right-text 15s linear infinite", 'right-text-v2': "right-text-v2 15s linear infinite",
-        'right-image': "right-image 15s linear infinite", 'right-image-v2': "right-image-v2 15s linear infinite",
-        'right-image-reverse': "right-image-reverse 15s linear infinite", 'right-image-reverse-v2': "right-image-reverse-v2 15s linear infinite",
+        "right-opacity": "right-opacity 15s linear infinite",
+        "right-opacity-v2": "right-opacity-v2 15s linear infinite",
+        "right-time-line": "right-time-line 15s linear infinite",
+        "right-time-line-v2": "right-time-line-v2 15s linear infinite",
+        "right-text": "right-text 15s linear infinite",
+        "right-text-v2": "right-text-v2 15s linear infinite",
+        "right-image": "right-image 15s linear infinite",
+        "right-image-v2": "right-image-v2 15s linear infinite",
+        "right-image-reverse": "right-image-reverse 15s linear infinite",
+        "right-image-reverse-v2": "right-image-reverse-v2 15s linear infinite",
 
-        'left-image-mobile': 'left-image-mobile 15s linear infinite', 'left-image-mobile-v2': 'left-image-mobile-v2 15s linear infinite',
-        'left-image-mobile-reverse': 'left-image-mobile-reverse 15s linear infinite', 'left-image-mobile-reverse-v2': 'left-image-mobile-reverse-v2 15s linear infinite',
-        'right-image-mobile': 'right-image-mobile 15s linear infinite', 'right-image-mobile-v2': 'right-image-mobile-v2 15s linear infinite',
-        'right-image-mobile-reverse': 'right-image-mobile-reverse 15s linear infinite', 'right-image-mobile-reverse-v2': 'right-image-mobile-reverse-v2 15s linear infinite',
-
-
+        "left-image-mobile": "left-image-mobile 15s linear infinite",
+        "left-image-mobile-v2": "left-image-mobile-v2 15s linear infinite",
+        "left-image-mobile-reverse":
+          "left-image-mobile-reverse 15s linear infinite",
+        "left-image-mobile-reverse-v2":
+          "left-image-mobile-reverse-v2 15s linear infinite",
+        "right-image-mobile": "right-image-mobile 15s linear infinite",
+        "right-image-mobile-v2": "right-image-mobile-v2 15s linear infinite",
+        "right-image-mobile-reverse":
+          "right-image-mobile-reverse 15s linear infinite",
+        "right-image-mobile-reverse-v2":
+          "right-image-mobile-reverse-v2 15s linear infinite",
       },
       screens: {
         sm: "640px",
@@ -496,8 +714,8 @@ export default {
         serif: ["serif"],
         inter: ["Inter", "sans-serif"],
       },
-      fontSize:{
-        'responsiveHeadingText':'clamp(3.5rem, 0.3451rem + 6.5728vw, 7rem);'
+      fontSize: {
+        "responsiveHeadingText": "clamp(3.5rem, 0.3451rem + 6.5728vw, 7rem);",
       },
       typography: {
         DEFAULT: {

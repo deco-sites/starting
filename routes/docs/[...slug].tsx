@@ -1,7 +1,10 @@
 // Copied mostly from: https://github.com/denoland/fresh/blob/744a10e5911df38bff779686c86ca10fb4589dfe/www/routes/docs/%5B...slug%5D.tsx
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { frontMatter, gfm } from "deco-sites/starting/components/utils/markdown.ts";
+import {
+  frontMatter,
+  gfm,
+} from "deco-sites/starting/components/utils/markdown.ts";
 
 import DocsTitle from "deco-sites/starting/components/ui/docs/DocsTitle.tsx";
 import { TableOfContentsEntry } from "deco-sites/starting/components/ui/docs/docs.ts";
@@ -14,7 +17,7 @@ import {
   MenuData,
 } from "../../docs/toc.ts";
 import NewLandingHeader from "../../components/ui/docs/NewLandingHeader.tsx";
-import Header from "../../sections/Header.tsx"
+import Header from "../../sections/Header.tsx";
 
 interface Data {
   page: Page;
@@ -142,17 +145,17 @@ export default function DocsPage(props: PageProps<Data>) {
       <div class="flex flex-col min-h-screen">
         <Header
           menuLinks={[
-            { label: "Community", href: "/en/community",  targetBlank: false },
+            { label: "Community", href: "/en/community", targetBlank: false },
             { label: "Camp", href: "https://deco.camp/", targetBlank: false },
             { label: "Blog", href: "/blog", targetBlank: false },
             { label: "Docs", href: "/docs", targetBlank: false },
-            { label: "Pricing", href: "/en/pricing", targetBlank: false }
+            { label: "Pricing", href: "/en/pricing", targetBlank: false },
           ]}
           idiom="Eng"
-          pt={{label: "Port", url: "/docs/pt", selected: false}}
-          eng={{label: "Eng", url: "/docs/en", selected: false}}
-          login={{label: "Login", url: "/admin"}}
-          sign={{label: "Sign up", url: "/onboarding"}}
+          pt={{ label: "Port", url: "/docs/pt", selected: false }}
+          eng={{ label: "Eng", url: "/docs/en", selected: false }}
+          login={{ label: "Login", url: "/admin" }}
+          sign={{ label: "Sign up", url: "/onboarding" }}
           pageInitial="/"
         />
         <NewLandingHeader

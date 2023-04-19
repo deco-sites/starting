@@ -44,7 +44,7 @@ const Button = forwardRef<HTMLButtonElement, Props>(({
       type={type}
       ref={ref}
     >
-      {loading === true ? '' : children}
+      {loading === true ? "" : children}
     </Component>
   );
 });
