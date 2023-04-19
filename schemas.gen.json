@@ -5458,6 +5458,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL2NhbXBNZW50b3IudHN4": {
+      "title": "./islands/campMentor.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/campMentor.tsx"
+          ],
+          "default": "./islands/campMentor.tsx"
+        }
+      }
+    },
     "JGxpdmUvaGFuZGxlcnMvZnJlc2gudHM=": {
       "title": "$live/handlers/fresh.ts",
       "type": "object",
@@ -5563,6 +5579,22 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wSGVyby50c3g=": {
+      "title": "deco-sites/starting/sections/CampHero.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/CampHero.tsx"
+          ],
+          "default": "deco-sites/starting/sections/CampHero.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9RdWlsbFRleHQudHN4": {
       "title": "deco-sites/starting/sections/QuillText.tsx",
       "type": "object",
@@ -5581,6 +5613,22 @@
             "deco-sites/starting/sections/QuillText.tsx"
           ],
           "default": "deco-sites/starting/sections/QuillText.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wQ29tbWVudHMudHN4": {
+      "title": "deco-sites/starting/sections/CampComments.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/CampComments.tsx"
+          ],
+          "default": "deco-sites/starting/sections/CampComments.tsx"
         }
       }
     },
@@ -5710,6 +5758,22 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wU3RlcHMudHN4": {
+      "title": "deco-sites/starting/sections/CampSteps.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/CampSteps.tsx"
+          ],
+          "default": "deco-sites/starting/sections/CampSteps.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9NYXJrZG93bi50c3g=": {
       "title": "deco-sites/starting/sections/Markdown.tsx",
       "type": "object",
@@ -5728,6 +5792,22 @@
             "deco-sites/starting/sections/Markdown.tsx"
           ],
           "default": "deco-sites/starting/sections/Markdown.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wUmVnaXN0cmF0aW9uLnRzeA==": {
+      "title": "deco-sites/starting/sections/CampRegistration.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/CampRegistration.tsx"
+          ],
+          "default": "deco-sites/starting/sections/CampRegistration.tsx"
         }
       }
     },
@@ -5975,6 +6055,22 @@
             "deco-sites/starting/sections/TripletBanner.tsx"
           ],
           "default": "deco-sites/starting/sections/TripletBanner.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wTWVudG9yLnRzeA==": {
+      "title": "deco-sites/starting/sections/CampMentor.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/CampMentor.tsx"
+          ],
+          "default": "deco-sites/starting/sections/CampMentor.tsx"
         }
       }
     },
@@ -6643,6 +6739,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL2NhbXBNZW50b3IudHN4"
         }
       ]
     },
@@ -6684,7 +6783,13 @@
           "$ref": "#/definitions/Resolvable"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wSGVyby50c3g="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9RdWlsbFRleHQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wQ29tbWVudHMudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9CbG9nSGVhZGVyLnRzeA=="
@@ -6705,7 +6810,13 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9GZWF0dXJlcy50c3g="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wU3RlcHMudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9NYXJrZG93bi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wUmVnaXN0cmF0aW9uLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db21tdW5pdHkudHN4"
@@ -6742,6 +6853,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9UcmlwbGV0QmFubmVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9DYW1wTWVudG9yLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9GYXEudHN4"
