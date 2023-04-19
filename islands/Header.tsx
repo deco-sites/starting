@@ -144,7 +144,12 @@ export default function Header(props: Props) {
                       <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
                         <div class="flex flex-row items-center justify-between">
                           <a
-                            href={urlMarketers.value}
+                            href="#"
+                            onClick={(e) => {
+                              e.preventDefault()
+                              window.history.pushState({}, "", urlMarketers.value)
+                              location.reload()
+                            }}
                             class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
                           >
                             <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">
@@ -169,7 +174,12 @@ export default function Header(props: Props) {
                         </div>
                         <div class="flex flex-row items-center justify-between">
                           <a
-                            href={urlDevelopers.value}
+                            href="#"
+                            onClick={(e) => {
+                              e.preventDefault()
+                              window.history.pushState({}, "", urlMarketers.value)
+                              location.reload()
+                            }}
                             class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
                           >
                             <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">
