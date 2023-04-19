@@ -100,7 +100,7 @@ export default function Pricing(
         </div>
       </div>
       <div>
-        <div class="flex flex-row gap-8 overflow-auto justify-items-start lg:justify-around pt-[40px] md:pt-[80px] px-2 md:px-10">
+        <div class="flex flex-row gap-8 overflow-auto justify-items-start lg:justify-around max-w-[1440px] mx-auto pt-[40px] md:pt-[80px] px-2 md:px-10">
           {paidPlans.map((plan) => {
             return (
               <div class="bg-linear-y-border p-[1px] pt-[2px] rounded-[8px] w-full max-w-[300px] min-w-[75vw] md:min-w-[250px]">
