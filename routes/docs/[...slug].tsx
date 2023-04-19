@@ -146,7 +146,6 @@ export default function DocsPage(props: PageProps<Data>) {
         <Header
           menuLinks={[
             { label: lang == 'en' ? 'Community' : 'Comunidade', href: `/${lang}/community`, targetBlank: false },
-            { label: "Camp", href: `/${lang}/blog`, targetBlank: false },
             { label: "Blog", href: `/${lang}/blog`, targetBlank: false },
             { label: lang == 'en' ? 'Docs' : 'Documentação', href: `/docs/${lang}`, targetBlank: false },
             { label: lang == 'en' ? 'Pricing' : 'Preços', href: `/${lang}/pricing`, targetBlank: false },
