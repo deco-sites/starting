@@ -82,7 +82,7 @@ export const handler: Handlers<Data> = {
 export default function DocsPage(props: PageProps<Data>) {
   let description;
 
-  const switchLanguage = props.data.page.language === "en" ? "Por" : "Eng";
+  const lang = props.data.page.language;
   const languageLink = props.url.pathname.replaceAll(
     "/" + props.data.page.language + "/",
     `/${props.data.page.language === "en" ? "pt" : "en"}/`,
@@ -145,42 +145,18 @@ export default function DocsPage(props: PageProps<Data>) {
       <div class="flex flex-col min-h-screen">
         <Header
           menuLinks={[
-            { label: "Community", href: "/en/community", targetBlank: false },
-            { label: "Camp", href: "https://deco.camp/", targetBlank: false },
-            { label: "Blog", href: "/blog", targetBlank: false },
-            { label: "Docs", href: "/docs", targetBlank: false },
-            { label: "Pricing", href: "/en/pricing", targetBlank: false },
+            { label: lang == 'en' ? 'Community' : 'Comunidade', href: `/${lang}/community`, targetBlank: false },
+            { label: "Camp", href: "/camp", targetBlank: false },
+            { label: "Blog", href: `/${lang}/blog`, targetBlank: false },
+            { label: lang == 'en' ? 'Docs' : 'Documentação', href: `/docs/${lang}`, targetBlank: false },
+            { label: lang == 'en' ? 'Pricing' : 'Preços', href: `/${lang}/pricing`, targetBlank: false },
           ]}
-          idiom="Eng"
-          pt={{ label: "Port", url: "/docs/pt", selected: false }}
-          eng={{ label: "Eng", url: "/docs/en", selected: false }}
+          idiom={lang == 'en' ? 'Eng' : 'Port'}
+          pt={{ label: "Port", url: "/docs/pt", selected: lang == 'pt' }}
+          eng={{ label: "Eng", url: "/docs/en", selected: lang == 'en' }}
           login={{ label: "Login", url: "/admin" }}
-          sign={{ label: "Sign up", url: "/onboarding" }}
+          sign={{ label: lang == 'en' ? 'Sign up' : 'Cadastrar-se', url: "/onboarding" }}
           pageInitial="/"
-        />
-        <NewLandingHeader
-          language={switchLanguage}
-          languageLink={languageLink}
-          login="Login"
-          register="Register"
-          menuLinks={[
-            {
-              label: "Community",
-              href: "https://discord.com/invite/9fkbcvR833",
-            },
-            {
-              label: "Camp",
-              href: "https://deco.camp/",
-            },
-            {
-              label: "Blog",
-              href: "https://www.deco.cx/blog",
-            },
-            {
-              label: "Docs",
-              href: "https://www.deco.cx/docs/pt/introduction",
-            },
-          ]}
         />
         <div class="flex-1">
           <input
