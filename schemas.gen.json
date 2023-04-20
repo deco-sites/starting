@@ -2585,7 +2585,10 @@
           "title": "Infor"
         },
         "langThanks": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "description": "Thanks page language (default en)",
           "title": "Lang Thanks"
         },
@@ -2671,9 +2674,7 @@
           "title": "Form Infor"
         }
       },
-      "required": [
-        "langThanks"
-      ],
+      "required": [],
       "title": "deco-sites/starting/components/ui/ContactUs.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0hlYWRlci50c3g=@Props": {

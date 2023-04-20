@@ -21,7 +21,7 @@ export interface Props {
   /** @description settings of benefits section in page*/
   infor?: Benefits;
   /** @description Thanks page language (default en)*/
-  langThanks: string;
+  langThanks?: string;
 
   formInfor?: {
     formTitle?: string;
@@ -40,7 +40,7 @@ export interface Props {
   };
 }
 
-export default function ContactUs({ infor, lang = 'en', formInfor }: Props) {
+export default function ContactUs({ infor, langThanks = 'en', formInfor }: Props) {
   const [active, setActive] = useState({
     btn1On: true,
     btn2On: false,
@@ -133,7 +133,7 @@ export default function ContactUs({ infor, lang = 'en', formInfor }: Props) {
             />
           </div>
           
-          <input type="hidden" name="lang" value={lang} />
+          <input type="hidden" name="lang" value={langThanks} />
           <input
             class="w-full h-[51px] border-1 border-dark-green p-4"
             type="text"
