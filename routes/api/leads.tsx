@@ -18,8 +18,6 @@ export const handler: Handlers<null, LiveState> = {
 
     const formData = Object.fromEntries((await req.formData()).entries());
 
-    console.log(JSON.stringify(formData));
-
     await fetch(ZAPIER_WEBHOOK ?? "", {
       method: "POST",
       body: JSON.stringify(formData),
@@ -30,9 +28,11 @@ export const handler: Handlers<null, LiveState> = {
       site_id: 1,
     });
 
+    const lang = formData.lang == 'en' ? 'en' : 'pt'
+
     return new Response(null, {
       headers: {
-        Location: "/",
+        Location: `/${lang}`,
       },
       status: 302,
     });

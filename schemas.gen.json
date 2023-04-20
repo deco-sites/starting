@@ -2584,6 +2584,11 @@
           "description": "settings of benefits section in page",
           "title": "Infor"
         },
+        "langThanks": {
+          "type": "string",
+          "description": "Thanks page language (default en)",
+          "title": "Lang Thanks"
+        },
         "formInfor": {
           "type": "object",
           "properties": {
@@ -2666,7 +2671,9 @@
           "title": "Form Infor"
         }
       },
-      "required": [],
+      "required": [
+        "langThanks"
+      ],
       "title": "deco-sites/starting/components/ui/ContactUs.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0hlYWRlci50c3g=@Props": {
@@ -4573,6 +4580,41 @@
       ],
       "title": "deco-sites/starting/sections/StripePricing.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9UaGFua3MudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "message": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Message"
+        },
+        "buttonText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Button Text"
+        },
+        "homeLink": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Home Link"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/starting/sections/Thanks.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1RyaXBsZXRCYW5uZXIudHN4@Card": {
       "type": "object",
       "properties": {
@@ -6343,6 +6385,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9UaGFua3MudHN4": {
+      "title": "deco-sites/starting/sections/Thanks.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9UaGFua3MudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/Thanks.tsx"
+          ],
+          "default": "deco-sites/starting/sections/Thanks.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9UcmlwbGV0QmFubmVyLnRzeA==": {
       "title": "deco-sites/starting/sections/TripletBanner.tsx",
       "type": "object",
@@ -7030,6 +7093,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9UaGFua3MudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9UcmlwbGV0QmFubmVyLnRzeA=="
