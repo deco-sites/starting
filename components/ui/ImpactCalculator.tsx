@@ -5,6 +5,7 @@ import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface Props {
   mainText: string;
+  delayWarningMessage?: string;
   formInfos: {
     websiteLabel: string;
     sessionsLabel: string;
@@ -16,10 +17,18 @@ export interface Props {
   };
   potencialIncrease: string;
   buttonText: string;
+  bgStripColor?: 'bg-dark-green' | 'bg-highlight';
 }
 
 export default function ImpactCalculator(
-  { mainText, formInfos, potencialIncrease, buttonText }: Props,
+  { 
+    mainText,
+    formInfos,
+    potencialIncrease,
+    buttonText,
+    bgStripColor,
+    delayWarningMessage = "The calculation may take a few minutes to finish due to a request we make to PageSpeed's API."
+  }: Props,
 ) {
   const inputClass =
     "w-full bg-[#F3FFF9] mt-2 pl-4 border-1 border-dark-green h-[52px] rounded-[4px]";
@@ -161,12 +170,15 @@ export default function ImpactCalculator(
 
   return (
     <section class="bg-[#F3FFF9]">
-      <div class="absolute bg-dark-green w-full h-[270px]"></div>
+      <div class={`${!bgStripColor || bgStripColor == 'bg-dark-green' ? 'bg-dark-green' : 'bg-highlight'} absolute bg-dark-green w-full h-[270px]`}></div>
       <div class="px-4 pt-24">
         <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border-1 rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
-          <div class="md:max-w-[40%]">
+          <div class="md:max-w-[40%] flex flex-col gap-4">
             <p class="text-2xl md:text-5xl text-center md:text-left md:leading-[53px] text-dark-green">
               {mainText}
+            </p>
+            <p class="">
+              {delayWarningMessage}
             </p>
           </div>
           <div>

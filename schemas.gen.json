@@ -2880,6 +2880,13 @@
           "type": "string",
           "title": "Main Text"
         },
+        "delayWarningMessage": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Delay Warning Message"
+        },
         "formInfos": {
           "type": "object",
           "properties": {
@@ -2930,6 +2937,20 @@
         "buttonText": {
           "type": "string",
           "title": "Button Text"
+        },
+        "bgStripColor": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "bg-dark-green"
+            },
+            {
+              "type": "string",
+              "const": "bg-highlight"
+            }
+          ],
+          "type": "string",
+          "title": "Bg Strip Color"
         }
       },
       "required": [
