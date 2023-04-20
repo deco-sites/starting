@@ -47,12 +47,13 @@ import * as $$$$$$$$23 from "./sections/Header.tsx";
 import * as $$$$$$$$24 from "./sections/MainBanner.tsx";
 import * as $$$$$$$$25 from "./sections/TripletBanner.tsx";
 import * as $$$$$$$$26 from "./sections/CampMentor.tsx";
-import * as $$$$$$$$27 from "./sections/Faq.tsx";
-import * as $$$$$$$$28 from "./sections/DepoimentsCarrossel.tsx";
-import * as $$$$$$$$29 from "./sections/Delight.tsx";
-import * as $$$$$$$$30 from "./sections/Benefits.tsx";
-import * as $$$$$$$$31 from "./sections/About.tsx";
-import * as $$$$$$$$32 from "./sections/Carousel.tsx";
+import * as $$$$$$$$27 from "./sections/Thanks.tsx";
+import * as $$$$$$$$28 from "./sections/Faq.tsx";
+import * as $$$$$$$$29 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$$$$30 from "./sections/Delight.tsx";
+import * as $$$$$$$$31 from "./sections/Benefits.tsx";
+import * as $$$$$$$$32 from "./sections/About.tsx";
+import * as $$$$$$$$33 from "./sections/Carousel.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -158,8 +159,8 @@ const manifest = {
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$9,
-    "deco-sites/starting/sections/About.tsx": $$$$$$$$31,
-    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/About.tsx": $$$$$$$$32,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$31,
     "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$4,
     "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$$$8,
     "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$$$6,
@@ -168,15 +169,15 @@ const manifest = {
     "deco-sites/starting/sections/CampMentor.tsx": $$$$$$$$26,
     "deco-sites/starting/sections/CampRegistration.tsx": $$$$$$$$12,
     "deco-sites/starting/sections/CampSteps.tsx": $$$$$$$$10,
-    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$32,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$33,
     "deco-sites/starting/sections/Cms.tsx": $$$$$$$$17,
     "deco-sites/starting/sections/Community.tsx": $$$$$$$$13,
     "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$21,
-    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$29,
-    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$28,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$29,
     "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$16,
     "deco-sites/starting/sections/Divider.tsx": $$$$$$$$14,
-    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$27,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$28,
     "deco-sites/starting/sections/Features.tsx": $$$$$$$$9,
     "deco-sites/starting/sections/Footer.tsx": $$$$$$$$18,
     "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$22,
@@ -190,6 +191,7 @@ const manifest = {
     "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$5,
     "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$1,
     "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$2,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$27,
     "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$25,
     "deco-sites/std/sections/Analytics.tsx": i2$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$3,
