@@ -146,9 +146,13 @@ export default function Header(props: Props) {
                           <a
                             href="#"
                             onClick={(e) => {
-                              e.preventDefault()
-                              window.history.pushState({}, "", urlMarketers.value)
-                              location.reload()
+                              e.preventDefault();
+                              window.history.pushState(
+                                {},
+                                "",
+                                urlMarketers.value,
+                              );
+                              location.reload();
                             }}
                             class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
                           >
@@ -176,9 +180,13 @@ export default function Header(props: Props) {
                           <a
                             href="#"
                             onClick={(e) => {
-                              e.preventDefault()
-                              window.history.pushState({}, "", urlDevelopers.value)
-                              location.reload()
+                              e.preventDefault();
+                              window.history.pushState(
+                                {},
+                                "",
+                                urlDevelopers.value,
+                              );
+                              location.reload();
                             }}
                             class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
                           >

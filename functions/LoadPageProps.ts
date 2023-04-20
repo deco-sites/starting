@@ -1,7 +1,6 @@
 import type { LoaderFunction } from "$live/types.ts";
 import { PathObj, PropNull } from "../sections/BlogPostHeader.tsx";
 
-
 /**
  * @title PageProps Raw Loader
  * @description Grabs data from page request

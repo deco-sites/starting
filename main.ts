@@ -17,8 +17,8 @@ await start($live(manifest, site), {
     prefetchPlugin(),
     partytownPlugin(),
     twindPlugin({
-      selfURL: new URL("./twind.config.ts", import.meta.url).href,
       ...twindConfig,
+      selfURL: new URL("./twind.config.ts", import.meta.url).href,
     }),
   ],
 });

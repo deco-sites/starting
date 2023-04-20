@@ -1,8 +1,8 @@
-import { theme } from "twind";
+import { Preflight, theme } from "twind";
 import typography from "twind-typography";
 
 export default {
-  preflight: (preflight) => ({
+  preflight: (preflight: Preflight) => ({
     ...preflight,
     html: {
       "line-height": "1.5",

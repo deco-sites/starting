@@ -69,6 +69,8 @@ import * as i2$$$$1 from "$live/handlers/router.ts";
 import * as i2$$$$0 from "$live/handlers/routesSelection.ts";
 import * as i2$$$$$0 from "$live/pages/LivePage.tsx";
 import * as i2$$$9 from "$live/sections/PageInclude.tsx";
+import * as i1$$$1 from "$live/sections/Slot.tsx";
+import * as i1$$$2 from "$live/sections/UseSlot.tsx";
 import * as i2$$$$$$6 from "$live/matchers/MatchAlways.ts";
 import * as i2$$$$$$0 from "$live/matchers/MatchDate.ts";
 import * as i2$$$$$$5 from "$live/matchers/MatchEnvironment.ts";
@@ -161,6 +163,8 @@ const manifest = {
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$9,
+    "$live/sections/Slot.tsx": i1$$$1,
+    "$live/sections/UseSlot.tsx": i1$$$2,
     "deco-sites/starting/sections/About.tsx": $$$$$$$$32,
     "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$31,
     "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$4,

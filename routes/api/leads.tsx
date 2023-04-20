@@ -28,7 +28,7 @@ export const handler: Handlers<null, LiveState> = {
       site_id: 1,
     });
 
-    const lang = formData.lang == 'en' ? 'en' : 'pt'
+    const lang = formData.lang == "en" ? "en" : "pt";
 
     return new Response(null, {
       headers: {
