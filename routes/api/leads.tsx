@@ -32,7 +32,7 @@ export const handler: Handlers<null, LiveState> = {
 
     return new Response(null, {
       headers: {
-        Location: `/${lang}`,
+        Location: `/${lang}/thanks`,
       },
       status: 302,
     });
