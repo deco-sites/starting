@@ -63,6 +63,18 @@ export default function ImpactCalculator(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=desktop`,
     ).then((response) => response.json());
 
+    const formData = new FormData();
+    formData.append("domain", website.value);
+    formData.append("sessions", sessions.value);
+    formData.append("conversion", conversion.value);
+    formData.append("value", average.value);
+    formData.append("traffic", mobilePercent.value);
+
+    fetch("/api/calc", {
+      method: "POST",
+      body: formData,
+    });
+
     Promise.all([promiseMobile, promiseDesktop])
       .then((results) => {
         results.forEach((result) => {
@@ -182,13 +194,14 @@ export default function ImpactCalculator(
             </p>
           </div>
           <div>
-            <form action="#" class="flex flex-col gap-6">
+            <form action="/api/calc" class="flex flex-col gap-6">
               <div>
                 <label htmlFor={formInfos.websiteLabel}>
                   {formInfos.websiteLabel}
                 </label>
                 <input
                   id={formInfos.websiteLabel}
+                  name="domain"
                   type="text"
                   value={website}
                   onInput={(e) =>
@@ -203,6 +216,7 @@ export default function ImpactCalculator(
                   </label>
                   <input
                     id={formInfos.sessionsLabel}
+                    name="sessions"
                     type="number"
                     value={sessions}
                     onInput={(e) =>
@@ -219,6 +233,7 @@ export default function ImpactCalculator(
                   <div class="relative">
                     <input
                       id={formInfos.conversionLabel}
+                      name="conversion"
                       type="number"
                       value={conversion}
                       onInput={(e) =>
@@ -239,6 +254,7 @@ export default function ImpactCalculator(
                   <div class="relative">
                     <input
                       id={formInfos.averageOrderLabel}
+                      name="value"
                       type="number"
                       value={average}
                       onInput={(e) =>
@@ -259,6 +275,7 @@ export default function ImpactCalculator(
                 </label>
                 <input
                   id={formInfos.trafficSplitLabel}
+                  name="traffic"
                   type="range"
                   class="w-full mb-1"
                   min="0"
