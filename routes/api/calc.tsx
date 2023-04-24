@@ -2,8 +2,7 @@ import type { Handlers } from "$fresh/server.ts";
 
 import type { LiveState } from "$live/types.ts";
 
-//const ZAPIER_WEBHOOK = Deno.env.get("ZAPIER_WEBHOOK2");
-const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/15094351/3uecnqk/";
+const ZAPIER_WEBHOOK = Deno.env.get("ZAPIER_WEBHOOK2");
 
 export const handler: Handlers<null, LiveState> = {
   POST: async (req) => {
