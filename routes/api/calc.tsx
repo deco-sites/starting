@@ -8,7 +8,6 @@ const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/15094351/3uecnqk/";
 export const handler: Handlers<null, LiveState> = {
   POST: async (req) => {
     const formData = Object.fromEntries((await req.formData()).entries());
-    console.log('ohgo', formData)
 
     if (!ZAPIER_WEBHOOK) {
       return new Response(null, {
