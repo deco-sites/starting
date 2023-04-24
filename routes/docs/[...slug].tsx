@@ -232,7 +232,7 @@ export default function DocsPage(props: PageProps<Data>) {
             <Content page={props.data.page} />
           </div>
         </div>
-        <Footer anchor="/" />
+        <Footer />
       </div>
     </>
   );

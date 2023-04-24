@@ -16,6 +16,7 @@ await start($live(manifest, site), {
   plugins: [
     prefetchPlugin(),
     partytownPlugin(),
+    // @ts-expect-error: I don't know how this config was made. Adding here to supress compile errors. @author Lucis
     twindPlugin({
       ...twindConfig,
       selfURL: new URL("./twind.config.ts", import.meta.url).href,
