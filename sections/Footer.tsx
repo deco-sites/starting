@@ -78,7 +78,7 @@ export default function Footer({
             <span class="text-white">© 2023 All rights reserved</span>
           </div>
 
-          <SubMenu menu={menu} />
+          {menu && <SubMenu menu={menu} />}
           <ul class="flex flex-row justify-items-start md:justify-end items-start gap-4">
             <li>
               <a

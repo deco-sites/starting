@@ -12,18 +12,16 @@ export interface Props {
   rightImage: Image;
 }
 
-export default function Cms(
-  {
-    leftHeader,
-    rightHeader,
-    leftTitle,
-    rightTitle,
-    leftContent,
-    rightContent,
-    leftImage,
-    rightImage,
-  }: Props,
-) {
+export default function Cms({
+  leftHeader,
+  rightHeader,
+  leftTitle,
+  rightTitle,
+  leftContent,
+  rightContent,
+  leftImage,
+  rightImage,
+}: Props) {
   return (
     <section class="bg-[#F3FFF9] md:px-[2.03rem] md:py-12">
       <CmsIsland
@@ -35,8 +33,7 @@ export default function Cms(
         rightContent={rightContent}
         leftImage={leftImage}
         rightImage={rightImage}
-      >
-      </CmsIsland>
+      />
     </section>
   );
 }

@@ -1,8 +1,8 @@
-import { theme } from "twind";
+import { Preflight, theme } from "twind";
 import typography from "twind-typography";
 
 export default {
-  preflight: (preflight) => ({
+  preflight: (preflight: Preflight) => ({
     ...preflight,
     html: {
       "line-height": "1.5",
@@ -289,16 +289,16 @@ export default {
         "left-text": {
           "0%": {},
           "10%": {},
-          "50%": { visibility: "hidden" },
+          "50%": { visibility: "hidden" as const },
           "60%": {},
-          "100%": { visibility: "hidden" },
+          "100%": { visibility: "hidden" as const },
         },
         "left-text-v2": {
           "0%": {},
           "10%": {},
-          "50%": { visibility: "hidden" },
+          "50%": { visibility: "hidden" as const },
           "60%": {},
-          "100%": { visibility: "hidden" },
+          "100%": { visibility: "hidden" as const },
         },
         "left-image": {
           "0%": {
@@ -446,18 +446,18 @@ export default {
           "100%": { width: "100%" },
         },
         "right-text": {
-          "0%": { visibility: "hidden" },
-          "10%": { visibility: "hidden" },
-          "50%": { visibility: "hidden" },
-          "60%": { visibility: "visible" },
-          "100%": { visibility: "hidden" },
+          "0%": { visibility: "hidden" as const },
+          "10%": { visibility: "hidden" as const },
+          "50%": { visibility: "hidden" as const },
+          "60%": { visibility: "visible" as const },
+          "100%": { visibility: "hidden" as const },
         },
         "right-text-v2": {
-          "0%": { visibility: "hidden" },
-          "10%": { visibility: "hidden" },
-          "50%": { visibility: "hidden" },
-          "60%": { visibility: "visible" },
-          "100%": { visibility: "hidden" },
+          "0%": { visibility: "hidden" as const },
+          "10%": { visibility: "hidden" as const },
+          "50%": { visibility: "hidden" as const },
+          "60%": { visibility: "visible" as const },
+          "100%": { visibility: "hidden" as const },
         },
         "right-image": {
           "0%": {

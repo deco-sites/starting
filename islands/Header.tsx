@@ -8,8 +8,8 @@ export interface Props {
   pt: { label: string; url: string; selected?: boolean };
   eng: { label: string; url: string; selected?: boolean };
   pageInitial: string;
-  mkt: { label: string; url: string; selected?: boolean };
-  dev: { label: string; url: string; selected?: boolean };
+  mkt?: { label: string; url: string; selected?: boolean };
+  dev?: { label: string; url: string; selected?: boolean };
   login: { label: string; url: string };
   sign: { label: string; url: string };
   linkedinUrl: string;
@@ -38,7 +38,7 @@ export default function Header(props: Props) {
     urlMarketers.value = urlPage.includes("en") ? "/en" : "/pt";
     urlDevelopers.value = urlPage.includes("en") ? "/en/dev" : "/pt/dev";
 
-    if (urlPage.includes("dev")) {
+    if (urlPage.includes("dev") && props.mkt && props.dev) {
       props.pageInitial = urlPage.includes("en")
         ? "for developers"
         : "para desenvolvedores";
@@ -146,14 +146,18 @@ export default function Header(props: Props) {
                           <a
                             href="#"
                             onClick={(e) => {
-                              e.preventDefault()
-                              window.history.pushState({}, "", urlMarketers.value)
-                              location.reload()
+                              e.preventDefault();
+                              window.history.pushState(
+                                {},
+                                "",
+                                urlMarketers.value,
+                              );
+                              location.reload();
                             }}
                             class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
                           >
                             <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">
-                              {props.mkt.label}
+                              {props?.mkt?.label}
                             </p>
                             <svg
                               width="15"
@@ -161,7 +165,7 @@ export default function Header(props: Props) {
                               viewBox="0 0 15 10"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              class={props.mkt.selected ? "" : "hidden"}
+                              class={props?.mkt?.selected ? "" : "hidden"}
                             >
                               <path
                                 fill-rule="evenodd"
@@ -176,14 +180,18 @@ export default function Header(props: Props) {
                           <a
                             href="#"
                             onClick={(e) => {
-                              e.preventDefault()
-                              window.history.pushState({}, "", urlDevelopers.value)
-                              location.reload()
+                              e.preventDefault();
+                              window.history.pushState(
+                                {},
+                                "",
+                                urlDevelopers.value,
+                              );
+                              location.reload();
                             }}
                             class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
                           >
                             <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">
-                              {props.dev.label}
+                              {props?.dev?.label}
                             </p>
                             <svg
                               width="15"
@@ -191,7 +199,7 @@ export default function Header(props: Props) {
                               viewBox="0 0 15 10"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              class={props.dev.selected ? "" : "hidden"}
+                              class={props?.dev?.selected ? "" : "hidden"}
                             >
                               <path
                                 fill-rule="evenodd"

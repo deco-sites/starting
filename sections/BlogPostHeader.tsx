@@ -6,11 +6,11 @@ import {
 
 export type PathObj = {
   url: string;
-}
+};
 
 export type PropNull = {
   ignoreProp?: string;
-}
+};
 
 export type Props = {
   postList: LoaderReturnType<PostList>;
@@ -21,7 +21,7 @@ export default function BlogPostHeader(props: Props) {
   const url = props.page.url;
   const postsList = props.postList;
   const post = postsList.posts.filter((x) => getBlogPath(x.path) === url)[0];
-  
+
   if (!post) {
     return <div>Post not found.</div>;
   }
@@ -29,7 +29,10 @@ export default function BlogPostHeader(props: Props) {
   return (
     <section class="max-w-4xl w-full px-8 md:px-0 mx-auto pt-16">
       <div class="mb-8 sm:mb-11 mt-10 sm:mt-16">
-        <a class="group flex items-center cursor-pointer text-subdued" href="/pt/blog">
+        <a
+          class="group flex items-center cursor-pointer text-subdued"
+          href="/pt/blog"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -49,7 +49,7 @@ export default function HeadComponent({
       <link rel="mask-icon" href="/safari-pinned-tab.svg" data-color="#003232">
       </link>
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
       </link>
       <meta name="theme-color" content="#003232"></meta>
       <meta name="msapplication-TileColor" content="#003232"></meta>

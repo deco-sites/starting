@@ -16,7 +16,7 @@ export interface Props {
  */
 const gitHubRawLoader: LoaderFunction<Props, PostList> = async (
   _req,
-  ctx,
+  _ctx,
   { repo, branch, path },
 ) => {
   const resultPath = path;

@@ -40,7 +40,9 @@ export interface Props {
   };
 }
 
-export default function ContactUs({ infor, langThanks = 'en', formInfor }: Props) {
+export default function ContactUs(
+  { infor, langThanks = "en", formInfor }: Props,
+) {
   const [active, setActive] = useState({
     btn1On: true,
     btn2On: false,
@@ -113,7 +115,7 @@ export default function ContactUs({ infor, langThanks = 'en', formInfor }: Props
                 setActive({
                   btn1On: true,
                   btn2On: false,
-                  selectedUrlToAction: formInfor?.urlToActionBusiness,
+                  selectedUrlToAction: formInfor?.urlToActionBusiness!,
                 })}
             />
 
@@ -128,11 +130,11 @@ export default function ContactUs({ infor, langThanks = 'en', formInfor }: Props
                 setActive({
                   btn1On: false,
                   btn2On: true,
-                  selectedUrlToAction: formInfor?.urlToActionDev,
+                  selectedUrlToAction: formInfor?.urlToActionDev!,
                 })}
             />
           </div>
-          
+
           <input type="hidden" name="lang" value={langThanks} />
           <input
             class="w-full h-[51px] border-1 border-dark-green p-4"

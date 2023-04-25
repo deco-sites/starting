@@ -35,8 +35,8 @@ export default function Integration(
               media="(min-width: 768px)"
               fetchPriority={"low"}
               src={image.imageDesktop.src}
-              width={"auto"}
-              height={"auto"}
+              width={637}
+              height={657}
             />
             <img
               class="object-cover w-full sm:h-full"

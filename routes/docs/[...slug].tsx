@@ -145,16 +145,31 @@ export default function DocsPage(props: PageProps<Data>) {
       <div class="flex flex-col min-h-screen">
         <Header
           menuLinks={[
-            { label: lang == 'en' ? 'Community' : 'Comunidade', href: `/${lang}/community`, targetBlank: false },
+            {
+              label: lang == "en" ? "Community" : "Comunidade",
+              href: `/${lang}/community`,
+              targetBlank: false,
+            },
             { label: "Blog", href: `/${lang}/blog`, targetBlank: false },
-            { label: lang == 'en' ? 'Docs' : 'Documentação', href: `/docs/${lang}`, targetBlank: false },
-            { label: lang == 'en' ? 'Pricing' : 'Preços', href: `/${lang}/pricing`, targetBlank: false },
+            {
+              label: lang == "en" ? "Docs" : "Documentação",
+              href: `/docs/${lang}`,
+              targetBlank: false,
+            },
+            {
+              label: lang == "en" ? "Pricing" : "Preços",
+              href: `/${lang}/pricing`,
+              targetBlank: false,
+            },
           ]}
-          idiom={lang == 'en' ? 'Eng' : 'Port'}
-          pt={{ label: "Português", url: "/docs/pt", selected: lang == 'pt' }}
-          eng={{ label: "English", url: "/docs/en", selected: lang == 'en' }}
+          idiom={lang == "en" ? "Eng" : "Port"}
+          pt={{ label: "Português", url: "/docs/pt", selected: lang == "pt" }}
+          eng={{ label: "English", url: "/docs/en", selected: lang == "en" }}
           login={{ label: "Login", url: "/admin" }}
-          sign={{ label: lang == 'en' ? 'Sign up' : 'Cadastrar-se', url: "/onboarding" }}
+          sign={{
+            label: lang == "en" ? "Sign up" : "Cadastrar-se",
+            url: "/onboarding",
+          }}
           pageInitial="/"
         />
         <div class="flex-1 mt-16">
@@ -217,7 +232,7 @@ export default function DocsPage(props: PageProps<Data>) {
             <Content page={props.data.page} />
           </div>
         </div>
-        <Footer anchor="/" />
+        <Footer />
       </div>
     </>
   );
