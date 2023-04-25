@@ -1,10 +1,11 @@
 import { MiddlewareHandlerContext } from "$fresh/server.ts";
+import { handler as liveHandler } from "$live/routes/_middleware.ts";
 
 interface State {
   data: string;
 }
 
-export async function handler(
+async function _handler(
   req: Request,
   ctx: MiddlewareHandlerContext<State>,
 ) {
@@ -54,3 +55,5 @@ export async function handler(
     }
   }
 }
+
+export const handler = [_handler, liveHandler];
