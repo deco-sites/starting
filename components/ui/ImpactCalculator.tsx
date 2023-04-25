@@ -66,10 +66,10 @@ export default function ImpactCalculator(
 
     const formData = new FormData();
     formData.append("domain", website.value);
-    formData.append("sessions", sessions.value);
-    formData.append("conversion", conversion.value);
-    formData.append("value", average.value);
-    formData.append("traffic", mobilePercent.value);
+    formData.append("sessions", `${sessions.value}`);
+    formData.append("conversion", `${conversion.value}`);
+    formData.append("value", `${average.value}`);
+    formData.append("traffic", `${mobilePercent.value}`);
 
     fetch("/api/calc", {
       method: "POST",

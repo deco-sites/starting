@@ -2871,8 +2871,6 @@
         "pt",
         "eng",
         "pageInitial",
-        "mkt",
-        "dev",
         "login",
         "sign",
         "linkedinUrl",
@@ -4301,9 +4299,7 @@
         "eng",
         "login",
         "sign",
-        "pageInitial",
-        "mkt",
-        "dev"
+        "pageInitial"
       ],
       "title": "deco-sites/starting/sections/Header.tsx@Props"
     },

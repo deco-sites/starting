@@ -10,10 +10,13 @@ import * as $2 from "./functions/LoadPageProps.ts";
 import * as $3 from "./functions/LoadGitHubRawPostList.ts";
 import * as $$$$0 from "./routes/index.tsx";
 import * as $$$$1 from "./routes/gfm.css.ts";
-import * as $$$$2 from "./routes/docs/[...slug].tsx";
-import * as $$$$3 from "./routes/api/calc.tsx";
-import * as $$$$4 from "./routes/api/leads.tsx";
-import * as $$$$5 from "./routes/_app.tsx";
+import * as $$$$2 from "./routes/admin/[...catchall].tsx";
+import * as $$$$3 from "./routes/_middleware.ts";
+import * as $$$$4 from "./routes/docs/[...slug].tsx";
+import * as $$$$5 from "./routes/live/[...catchall].tsx";
+import * as $$$$6 from "./routes/api/calc.tsx";
+import * as $$$$7 from "./routes/api/leads.tsx";
+import * as $$$$8 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/ImpactCalculator.tsx";
 import * as $$$$$1 from "./islands/CampHeader.tsx";
 import * as $$$$$2 from "./islands/Cms.tsx";
@@ -55,7 +58,6 @@ import * as $$$$$$$$30 from "./sections/Delight.tsx";
 import * as $$$$$$$$31 from "./sections/Benefits.tsx";
 import * as $$$$$$$$32 from "./sections/About.tsx";
 import * as $$$$$$$$33 from "./sections/Carousel.tsx";
-import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
@@ -137,15 +139,17 @@ const manifest = {
     "deco-sites/std/functions/vtexSuggestions.ts": i2$5,
   },
   "routes": {
-    "./routes/_app.tsx": $$$$5,
-    "./routes/_middleware.ts": $live_middleware,
+    "./routes/_app.tsx": $$$$8,
+    "./routes/_middleware.ts": $$$$3,
     "./routes/[...catchall].tsx": $live_catchall,
-    "./routes/api/calc.tsx": $$$$3,
-    "./routes/api/leads.tsx": $$$$4,
-    "./routes/docs/[...slug].tsx": $$$$2,
+    "./routes/admin/[...catchall].tsx": $$$$2,
+    "./routes/api/calc.tsx": $$$$6,
+    "./routes/api/leads.tsx": $$$$7,
+    "./routes/docs/[...slug].tsx": $$$$4,
     "./routes/gfm.css.ts": $$$$1,
     "./routes/index.tsx": $$$$0,
     "./routes/live/_meta.ts": $live_meta,
+    "./routes/live/[...catchall].tsx": $$$$5,
     "./routes/live/editorData.ts": $live_editorData,
     "./routes/live/inspect.ts": $live_inspect,
     "./routes/live/invoke/index.ts": $live_invoke,
