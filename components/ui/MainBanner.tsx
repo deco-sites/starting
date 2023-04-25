@@ -173,6 +173,7 @@ export default function MainBanner(
               : "bg-primary text-dark-green") +
               " " +
               "h-80 flex flex-col relative -left-6 overflow-hidden rounded-r-full md:(flex-row w-[80%]) lg:(h-[300px]) group"}
+            style="-webkit-transform: translate3d(0, 0, 0)"
           >
             <div class="flex justify-start items-center lg:justify-center">
               <h3 class="w-[80%] p-6 pt-8 text-[24px] md:(w-full text-[32px]) font-medium leading-[1.18] lg:(w-full px-10 text-[32px])">
@@ -186,7 +187,7 @@ export default function MainBanner(
               >
                 <Image
                   src={miniBanner?.bannerTopImage}
-                  class="relative bottom-8 left-24 md:(max-w-[400px] w-[400px] -bottom-8) lg:(max-w-[600px] w-[597px] -bottom-12 left-56 group-hover:scale-105 group-hover:bottom-0  duration-300 ease-in) z-10"
+                  class="relative bottom-8 left-24 md:(max-w-[400px] w-[400px] -bottom-8) lg:(max-w-[600px] w-[597px] -bottom-12 left-56 group-hover:scale-105 group-hover:bottom-0  duration-300 ease-in) z-2"
                   width={350}
                   alt={miniBanner?.altBannerTopImage}
                   title={miniBanner?.altBannerTopImage}
