@@ -25,7 +25,7 @@ function Button({ text, link }: { text: string; link: string }) {
     <a
       href={link}
       target="_blank"
-      class="block w-full text-center font-semibold rounded-[48px] py-3 px-[22px] bg-highlight border-2 border-highlight duration-500 hover:(bg-transparent text-highlight)"
+      class="block w-full text-center font-semibold rounded-[48px] py-3 px-[22px] bg-highlight border-2 border-highlight duration-500 hover:bg-transparent hover:text-highlight"
     >
       {text}
     </a>

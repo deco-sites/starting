@@ -146,7 +146,7 @@ export default function DepoimentsCarroussel(
                     // Preload LCP image for better web vitals
                     loading={"lazy"}
                   />
-                  <p class="font-sans text-[white] text-[16px] leading-[1.4] md:p-4 lg:(px-24 text-3xl leading-[1.3])">
+                  <p class="font-sans text-[white] text-[16px] leading-[1.4] md:p-4 lg:px-24 lg:text-3xl lg:leading-[1.3]">
                     {item?.depoiment}
                   </p>
                   <span class="text-[#02F67C] text-[16px]">

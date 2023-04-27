@@ -10,7 +10,7 @@ export default function Markdown({ post }: Props) {
   const body = marky(post.data);
   return (
     <div
-      class="markdown-body prose"
+      class="markdown-body prose max-w-none"
       dangerouslySetInnerHTML={{ __html: body }}
     />
   );

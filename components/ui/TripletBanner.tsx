@@ -14,7 +14,7 @@ export default function TripletBanner({ cards }: Props) {
         {cards?.map((card) => (
           <>
             <div class="border-box bg-[#F3FFF9] relative flex flex-col p-[2px] rounded-[24px]">
-              <div class="rounded-[24px] rounded-tr-none border-1 border-[#053535] h-full w-full flex flex-col gap-4 px-[40px] py-[50px]">
+              <div class="rounded-[24px] rounded-tr-none border border-[#053535] h-full w-full flex flex-col gap-4 px-[40px] py-[50px]">
                 <p class="mt-2 leading-10 font-inter text-center md:text-left not-italic font-medium text-[32px] md:text-[26px] lg:text-[32px] leading-[38.5px] text-[#0A2121]">
                   {card.title}
                 </p>

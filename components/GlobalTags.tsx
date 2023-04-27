@@ -3,6 +3,8 @@ import { asset, Head } from "$fresh/runtime.ts";
 export default function GlobalTags() {
   return (
     <Head>
+      <link href={asset("/tailwind.css")} rel="stylesheet" />
+
       <style
         dangerouslySetInnerHTML={{
           __html: `

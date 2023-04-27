@@ -1,6 +1,6 @@
 export default function JoinDiscord({ language }: { language: string }) {
   return (
-    <div class="border-1 border border-black rounded p-4">
+    <div class="border border-black rounded p-4">
       <p class="mb-2">
         <span class="font-bold inline-flex items-center justify-start gap-1 text-sm">
           {language === "pt"
@@ -19,7 +19,7 @@ export default function JoinDiscord({ language }: { language: string }) {
         <a
           href="http://deco.cx/discord/"
           target="_blank"
-          class="px-3 h-9 bg-[#eee] hover:bg-[#ccc] box-border border-solid outline-none rounded-r rounded-l whitespace-nowrap inline-flex gap-2 items-center justify-center border-1 border-white  disabled:border-1 w-full"
+          class="px-3 h-9 bg-[#eee] hover:bg-[#ccc] box-border border-solid outline-none rounded-r rounded-l whitespace-nowrap inline-flex gap-2 items-center justify-center border border-white  disabled:border w-full"
         >
           <svg
             width="18"

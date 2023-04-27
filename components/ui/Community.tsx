@@ -30,14 +30,14 @@ export default function Community(
   }: Props,
 ) {
   return (
-    <section class="flex flex-col items-center justify-center lg:(flex-row-reverse gap-[75px]) bg-white md:py-[63px] px-6 md:px-[2rem] max-w-screen-2xl mx-auto overflow-x-hidden overflow-y-hidden 2xl:(overflow-x-unset overflow-y-unset)">
+    <section class="flex flex-col items-center justify-center lg:flex-row-reverse lg:gap-[75px] bg-white md:py-[63px] px-6 md:px-[2rem] max-w-screen-2xl mx-auto overflow-x-hidden overflow-y-hidden 2xl:overflow-x-unset 2xl:overflow-y-unset">
       <div class="flex justify-center relative lg:w-[50%] h-[110vw] md:h-auto min-h-[380px] sm:min-h-[800px] lg:min-h-[821px]">
         <div class="relative w-full min-h-[380px] sm:min-h-[800px] lg:min-h-[821px] min-w-[100vw] lg:min-w-[100%]">
           <Image
             fetchPriority={lazyload ? "low" : "high"}
             preload={lazyload ? false : true}
             loading={lazyload ? "lazy" : "eager"}
-            class="absolute top-[0] right-[-75px] animate-blur1 lg:(w-[600px] h-[600px]) 2xl:(w-[700px] h-[700px])"
+            class="absolute top-[0] right-[-75px] animate-blur1 lg:w-[600px] lg:h-[600px] 2xl:w-[700px] 2xl:h-[700px]"
             width={400}
             height={400}
             src={blur1Background}
@@ -46,7 +46,7 @@ export default function Community(
             fetchPriority={lazyload ? "low" : "high"}
             preload={lazyload ? false : true}
             loading={lazyload ? "lazy" : "eager"}
-            class="absolute top-[140px] animate-blur2 lg:(w-[600px] h-[600px]) 2xl:(w-[700px] h-[700px])"
+            class="absolute top-[140px] animate-blur2 lg:w-[600px] lg:h-[600px] 2xl:w-[700px] 2xl:h-[700px]"
             width={400}
             height={400}
             src={blur2Background}
@@ -63,18 +63,18 @@ export default function Community(
         />
       </div>
       <div class="flex flex-col lg:w-[50%] gap-[24px] md:mt-[40px]">
-        <h2 class="text-[56px] lg:(order-1 text-[70px]) xl:text-[80px] text-[#1F261F] font-bold leading-[.95]">
+        <h2 class="text-[56px] lg:order-1 lg:text-[70px] xl:text-[80px] text-[#1F261F] font-bold leading-[.95]">
           {mainText}
         </h2>
         <p class="text-[24px] md:text-[32px] lg:order-3 text-[#1f261f99] leading-[1.18]">
           {secondText}
         </p>
-        <div class="flex flex-col lg:(flex-row order-2) w-full gap-[16px]">
+        <div class="flex flex-col lg:flex-row lg:order-2 w-full gap-[16px]">
           {labelFirstButton &&
             hrefFirstButton &&
             (
               <a
-                class="w-full group flex lg:max-w-[300px] justify-center items-center gap-[10px] rounded p-[14px] border-1 border-[#0A2121]"
+                class="w-full group flex lg:max-w-[300px] justify-center items-center gap-[10px] rounded p-[14px] border border-[#0A2121]"
                 href={hrefFirstButton}
               >
                 <span class="text-[16px] font-medium text-[#0A2121]">
@@ -90,7 +90,7 @@ export default function Community(
               </a>
             )}
           <a
-            class={`flex group lg:max-w-[300px] justify-center items-center gap-[10px] w-full rounded p-[14px] border-1 border-[#0A2121] bg-[#0A2121]`}
+            class={`flex group lg:max-w-[300px] justify-center items-center gap-[10px] w-full rounded p-[14px] border border-[#0A2121] bg-[#0A2121]`}
             href={hrefSecondButton}
           >
             <svg

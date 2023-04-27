@@ -1,7 +1,7 @@
 export default function DocsTitle(props: { title: string }) {
   return (
     <>
-      <a href="/" class="text(2xl gray-900) block flex items-center">
+      <a href="/" class="text-2xl text-gray-900 flex items-center">
         <svg
           viewBox="0 0 79 27"
           fill="none"

@@ -186,8 +186,8 @@ export default function DocsPage(props: PageProps<Data>) {
               class="absolute inset-0 bg-gray-600 opacity-75"
               for="docs_sidebar"
             />
-            <div class="relative flex-1 flex flex-col w-[16rem] h-full bg-white border(r-2 gray-100)">
-              <div class="p-4 border(b-2 gray-100) bg-[##C5FFE9]">
+            <div class="relative flex-1 flex flex-col w-[16rem] h-full bg-white border-r-2 border-gray-100">
+              <div class="p-4 border-b-2 border-gray-100 bg-[##C5FFE9]">
                 <DocsTitle title="docs" />
               </div>
               <nav class="pt-6 pb-16 px-4 overflow-x-auto">
@@ -223,7 +223,7 @@ export default function DocsPage(props: PageProps<Data>) {
           </div>
           <div class="mx-auto max-w-screen-lg px-4 flex gap-6">
             {/* Desktop Sidebar */}
-            <nav class="w-[16rem] flex-shrink-0 hidden md:block py-8 pr-4 border(r-2 gray-100)">
+            <nav class="w-[16rem] flex-shrink-0 hidden md:block py-8 pr-4 border-r-2 border-gray-100">
               <DocsSidebar
                 path={props.url.pathname}
                 menu={props.data.page.menu}
@@ -247,7 +247,7 @@ function Content(props: { page: Page }) {
 
   return (
     <main class="py-6 overflow-hidden">
-      <h1 class="text(4xl gray-900) tracking-tight font-extrabold mt-6">
+      <h1 class="text-4xl text-gray-900 tracking-tight font-extrabold mt-6">
         {props.page.title}
       </h1>
       {props.page.data.since && (
@@ -267,7 +267,7 @@ function Content(props: { page: Page }) {
   );
 }
 
-const button = "p-2 bg-gray-100 w-full border(1 gray-200) grid";
+const button = "p-2 bg-gray-100 w-full border border-gray-200 grid";
 
 function ForwardBackButtons(props: { slug: string; language: string }) {
   const nextLabel = props.language === "en" ? "Next" : "Próximo";
@@ -277,7 +277,7 @@ function ForwardBackButtons(props: { slug: string; language: string }) {
     props.language as "en",
     props.slug,
   );
-  const upper = "text(sm gray-600)";
+  const upper = "text-sm text-gray-600";
   const category = "font-normal";
   const lower = "text-gray-900 font-medium";
 
