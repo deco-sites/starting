@@ -1,78 +1,10 @@
-import { Preflight, theme } from "twind";
-import typography from "twind-typography";
-
 export default {
-  preflight: (preflight: Preflight) => ({
-    ...preflight,
-    html: {
-      "line-height": "1.5",
-      "-webkit-text-size-adjust": "100%",
-      "font-family": "Albert Sans,sans-serif",
-      "scroll-behavior": "smooth",
-    },
-    "details > summary": {
-      "list-style": "none",
-    },
-    "details summary::-webkit-details-marker": {
-      "display": "none",
-    },
-    "details[open] summary svg": {
-      "transform": "rotate(90deg)",
-    },
-    "details[open] summary.notShow svg": {
-      "transform": "rotate(0)",
-    },
-    ".hidden-scroll::-webkit-scrollbar": {
-      display: "none",
-    },
-    ".hidden-scroll": {
-      "-ms-overflow-style": "none", /* IE and Edge */
-      "scrollbar-width": "none", /* Firefox */
-    },
-    'input[type="range"]': {
-      "-webkit-appearance": "none",
-      "appearance": "none",
-      "background": "transparent",
-      "cursor": "pointer",
-      "width": "100%",
-    },
-    'input[type="range"]:focus': {
-      "outline": "none",
-    },
-    'input[type="range"]::-webkit-slider-runnable-track': {
-      "background-color": "#06E474",
-      "border-radius": "0.5rem",
-      "height": "0.7rem",
-    },
-    'input[type="range"]::-webkit-slider-thumb': {
-      "-webkit-appearance": "none", /* Override default look */
-      "appearance": "none",
-      "margin-top": "-3px", /* Centers thumb on the track */
-      "background":
-        "radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%);",
-      "border-radius": "1rem",
-      "border": "1px solid black",
-      "height": "1.2rem",
-      "width": "1.2rem",
-    },
-    'input[type="range"]:focus::-webkit-slider-thumb': {
-      "border": "2px solid black",
-    },
-    "input::-webkit-outer-spin-button": {
-      "-webkit-appearance": "none",
-      "margin": "0",
-    },
-    "input::-webkit-inner-spin-button": {
-      "-webkit-appearance": "none",
-      "margin": "0",
-    },
-  }),
-  plugins: {
-    ...typography({
-      className: "prose",
-    }),
-  },
+  content: ["./**/*.tsx"],
   theme: {
+    // https://tailwindcss.com/docs/container#centering-by-default
+    container: {
+      center: true,
+    },
     backgroundPosition: {
       "position-100": "100%",
       "position-0": "0%",
@@ -710,52 +642,44 @@ export default {
         transparent: "transparent",
       },
       fontFamily: {
-        sans: ["Albert Sans", "sans-serif"],
-        serif: ["serif"],
-        inter: ["Inter", "sans-serif"],
+        sans: "Albert Sans, sans-serif",
+        serif: "serif",
+        inter: "Inter, sans-serif",
       },
       fontSize: {
         "responsiveHeadingText": "clamp(3.5rem, 0.3451rem + 6.5728vw, 7rem);",
       },
-      typography: {
+      typography: (theme: (x: string) => string) => ({
         DEFAULT: {
           css: {
             h1: {
               color: "#FF4500",
               fontWeight: "700",
               fontSize: "52px",
-              fontFamily: theme("fontFamily", ["sans"]),
+              fontFamily: theme("fontFamily.sans"),
             },
             h2: {
               marginTop: "28px",
               marginBottom: "28px",
-              color: theme("colors", ["secondary-dark"]),
-              fontFamily: theme("fontFamily", ["sans"]),
+              fontFamily: theme("fontFamily.sans"),
               fontWeight: "500",
             },
             h3: {
               marginTop: "28px",
               marginBottom: "16px",
-              color: theme("colors", ["secondary-dark"]),
-              fontFamily: theme("fontFamily", ["sans"]),
+              fontFamily: theme("fontFamily.sans"),
               fontWeight: "600",
             },
-            color: theme("colors", ["primary-dark"]),
-            a: {
-              color: theme("colors", ["primary-green-light"]),
-            },
+            color: theme('colors["primary-dark"]'),
             strong: {
-              color: theme("colors", ["primary-dark"]),
-            },
-            span: {
-              color: theme("colors", ["secondary-dark"]),
+              color: theme('colors["primary-dark"]'),
             },
             p: {
               lineHeight: "1.6rem",
             },
           },
         },
-      },
+      }),
     },
   },
 };

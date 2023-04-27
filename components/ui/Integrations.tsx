@@ -46,9 +46,9 @@ export default function Integration(
             />
           </Picture>
         </div>
-        <div class="absolute top-[74vw] flex flex-col px-3 md:px-6 gap-8 md:(left-[39%] top-[41%] max-w-[780px])">
+        <div class="absolute top-[74vw] flex flex-col px-3 md:px-6 gap-8 md:left-[39%] md:top-[41%] md:max-w-[780px]">
           <Picture
-            class="block absolute max-w-full top-[-150px] left-[10px] md:(top-[-300px] left-[-350px])"
+            class="block absolute max-w-full top-[-150px] left-[10px] md:top-[-300px] md:left-[-350px]"
             preload={false}
           >
             <Source
@@ -73,7 +73,7 @@ export default function Integration(
             />
           </Picture>
           <p
-            class="font-sans font-bold text-white text-[56px] leading-[.95] tracking-[-1%] z-10 md:(text-[8vw]) xl:(text-[112px])"
+            class="font-sans font-bold text-white text-[56px] leading-[.95] tracking-[-1%] z-10 md:text-[8vw] xl:text-[112px]"
             dangerouslySetInnerHTML={{ __html: mainText }}
           >
           </p>

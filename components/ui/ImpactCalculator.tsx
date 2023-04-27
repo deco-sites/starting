@@ -32,7 +32,7 @@ export default function ImpactCalculator(
   }: Props,
 ) {
   const inputClass =
-    "w-full bg-[#F3FFF9] mt-2 pl-4 border-1 border-dark-green h-[52px] rounded-[4px]";
+    "w-full bg-[#F3FFF9] mt-2 pl-4 border border-dark-green h-[52px] rounded-[4px]";
 
   const website = useSignal("");
   const sessions = useSignal(0);
@@ -192,7 +192,7 @@ export default function ImpactCalculator(
       >
       </div>
       <div class="px-4 pt-24">
-        <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border-1 rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
+        <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
           <div class="md:max-w-[40%] flex flex-col gap-4">
             <p class="text-2xl md:text-5xl text-center md:text-left md:leading-[53px] text-dark-green">
               {mainText}

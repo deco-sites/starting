@@ -63,7 +63,7 @@ export default function Partner(
             {mainText}
           </h2>
         </div>
-        <div class="mt-4 md:mt-12 grid gap-4 items-end md:(w-[55%] mt-0)">
+        <div class="mt-4 md:mt-12 grid gap-4 items-end md:w-[55%] md:mt-0">
           <h3 class="text-[32px] opacity-80 text-white">{title}</h3>
           {benefits?.map((benefit) => (
             <div class="flex gap-[8px] border-t-1 border-white py-[16px]">
@@ -78,7 +78,7 @@ export default function Partner(
           <div class="pt-6 md:max-w-[200px]">
             <a
               href={buttonHref}
-              class="block w-full bg-[#02F67C] transition py-3.5 text-[#161A16] font-inter border-1 border-[transparent] font-medium not-italic rounded-[40px] text-center text-[16px] leading-[19.36px] hover:(bg-[transparent] text-[#02F67C] border-[#02F67C])"
+              class="block w-full bg-[#02F67C] transition py-3.5 text-[#161A16] font-inter border border-[transparent] font-medium not-italic rounded-[40px] text-center text-[16px] leading-[19.36px] hover:bg-[transparent] hover:text-[#02F67C] hover:border-[#02F67C]"
             >
               {button}
             </a>

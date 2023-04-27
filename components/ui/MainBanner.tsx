@@ -52,16 +52,16 @@ export default function MainBanner(
         "flex flex-col mb-0 pb-[5rem]"}
     >
       <div class="max-w-screen-2xl m-auto">
-        <div class="max-w-[100vw] px-6 pt-24 pb-2 md:(px-[2rem] pt-36) 2xl:(max-w-[1280px])">
+        <div class="max-w-[100vw] px-6 pt-24 pb-2 md:px-[2rem] md:pt-36 2xl:max-w-[1280px]">
           <h1
             class={`${
               themeIsLigth ? "text-dark-green" : "text-white"
-            } inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[.93] md:(w-full max-w-[1280px] text-responsiveHeadingText relative`}
+            } inline-block font-sans w-full font-bold not-italic text-[${mobileH1Size}] leading-[.93] md:w-full md:max-w-[1280px] md:text-responsiveHeadingText md:relative`}
           >
             {mainText}
             {activePercentualCarrosel
               ? (
-                <div class="overflow-hidden h-[13vw] max-h-[70px] w-[30%] pt-0 absolute text-center inline-flex pl-3.5 sm:(h-[80px]) md:(h-[7vw] w-[20%] pt-0 mt-0) xl:(h-[120px] pl-6 pt-0 max-h-[120px])">
+                <div class="overflow-hidden h-[13vw] max-h-[70px] w-[30%] pt-0 absolute text-center inline-flex pl-3.5 sm:h-[80px] md:h-[7vw] md:w-[20%] md:pt-0 md:mt-0 xl:h-[120px] xl:pl-6 xl:pt-0 xl:max-h-[120px]">
                   <span
                     style="color: #06E474"
                     class="absolute animate-switcherText10"
@@ -109,8 +109,8 @@ export default function MainBanner(
               : null}
           </h1>
         </div>
-        <div class="flex px-6 py-6 flex-col gap-20 justify-center items-start lg:items-center lg:(flex-row p-8)">
-          <div class="flex flex-col gap-[2rem] lg:(w-[46%] items-center)">
+        <div class="flex px-6 py-6 flex-col gap-20 justify-center items-start lg:items-center lg:flex-row lg:p-8">
+          <div class="flex flex-col gap-[2rem] lg:w-[46%] lg:items-center">
             <p
               class={(themeIsLigth
                 ? "text-frame-515-rgba"
@@ -123,7 +123,7 @@ export default function MainBanner(
             <div id="buttons-wrapper" class="w-full flex flex-col gap-4 ">
               <a
                 class={(themeIsLigth ? "bg-dark-green" : "bg-white") + " " +
-                  "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1 border-dark-green"}
+                  "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border border-dark-green"}
                 href={buttonCta1?.href}
               >
                 <span
@@ -134,7 +134,7 @@ export default function MainBanner(
                   {buttonCta1?.buttonName}
                 </span>
                 <Icon
-                  class="hidden transition lg:group-hover:(block)"
+                  class="hidden transition lg:group-hover:block"
                   id={themeIsLigth ? "WhiteArrow" : "GreenArrow"}
                   width={15}
                   height={15}
@@ -147,7 +147,7 @@ export default function MainBanner(
                   ? "border-dark-green"
                   : "bg-none border-white") +
                   " " +
-                  "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border-1"}
+                  "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border"}
                 href={buttonCta2?.href}
               >
                 <span
@@ -172,22 +172,22 @@ export default function MainBanner(
               ? "bg-dark-green text-white"
               : "bg-primary text-dark-green") +
               " " +
-              "h-80 flex flex-col relative -left-6 overflow-hidden rounded-r-full md:(flex-row w-[80%]) lg:(h-[300px]) group"}
+              "h-80 flex flex-col relative -left-6 overflow-hidden rounded-r-full md:flex-row md:w-[80%] lg:h-[300px] group"}
             style="-webkit-transform: translate3d(0, 0, 0)"
           >
             <div class="flex justify-start items-center lg:justify-center">
-              <h3 class="w-[80%] p-6 pt-8 text-[24px] md:(w-full text-[32px]) font-medium leading-[1.18] lg:(w-full px-10 text-[32px])">
+              <h3 class="w-[80%] p-6 pt-8 text-[24px] md:w-full md:text-[32px] font-medium leading-[1.18] lg:w-full lg:px-10 lg:text-[32px]">
                 {miniBanner?.titleText}
               </h3>
             </div>
-            <div class="w-full relative rounded-r-full lg:(w-1/2)">
+            <div class="w-full relative rounded-r-full lg:w-1/2">
               <div
                 id="mini-banners-art-montage"
                 class="w-full flex justify-end items-center"
               >
                 <Image
                   src={miniBanner?.bannerTopImage}
-                  class="relative bottom-8 left-24 md:(max-w-[400px] w-[400px] -bottom-8) lg:(max-w-[600px] w-[597px] -bottom-12 left-56 group-hover:scale-105 group-hover:bottom-0  duration-300 ease-in) z-2"
+                  class="relative bottom-8 left-24 md:max-w-[400px] md:w-[400px] md:-bottom-8 lg:max-w-[600px] lg:w-[597px] lg:-bottom-12 lg:left-56 lg:group-hover:scale-105 lg:group-hover:bottom-0 lg:duration-300 lg:ease-in z-2"
                   width={350}
                   alt={miniBanner?.altBannerTopImage}
                   title={miniBanner?.altBannerTopImage}
@@ -196,13 +196,13 @@ export default function MainBanner(
                   decoding="sync"
                   srcset={`${miniBanner?.bannerTopImage} 2x`}
                 />
-                <div class="absolute -bottom-4 -right-20 lg:(-bottom-16 -right-32 group-hover:-right-20  duration-300  ease-in) ">
+                <div class="absolute -bottom-4 -right-20 lg:-bottom-16 lg:-right-32 lg:group-hover:-right-20  lg:duration-300  lg:ease-in">
                   <span class="w-[80px] block relative top-[65px] md:top-[85px] right-16 text-right leading-4 font-normal text-[12px] lg:top-[108px]">
                     {miniBanner?.linkedText}
                   </span>
                   <Image
                     src={miniBanner?.bannerBottomImage}
-                    class="md:(w-[400px]) lg:(max-w-[500px] w-[476px]) group-hover:scale-105 duration-[300ms] ease-in"
+                    class="md:w-[400px] lg:max-w-[500px] lg:w-[476px] group-hover:scale-105 duration-[300ms] ease-in"
                     width={300}
                     alt={miniBanner?.altBannerBottomImage}
                     title={miniBanner?.altBannerBottomImage}

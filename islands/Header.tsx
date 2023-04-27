@@ -103,8 +103,8 @@ export default function Header(props: Props) {
                 <>
                   <div
                     class={`select-none flex gap-2 items-center ${
-                      openSwitcher.value ? "md:(border-[#06E474] border-1)" : ""
-                    }  border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300`}
+                      openSwitcher.value ? "md:border-[#06E474] md:border" : ""
+                    }  border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300`}
                   >
                     <div
                       onClick={handleMenu}
@@ -139,7 +139,7 @@ export default function Header(props: Props) {
                     <div
                       class={`${
                         openSwitcher.value ? "block" : "hidden"
-                      } absolute top-[35px] left-0 mt-5 rounded border-1 border-[#ffffff10]`}
+                      } absolute top-[35px] left-0 mt-5 rounded border border-[#ffffff10]`}
                     >
                       <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
                         <div class="flex flex-row items-center justify-between">
@@ -220,22 +220,19 @@ export default function Header(props: Props) {
         <ul class="hidden lg:flex lg:flex-row h-full group">
           {props.menuLinks.map((link, index) => {
             return (
-              <li class="relative group-[item] h-full grid hover:children:text-[#02F67C]">
+              <li class="relative h-full grid hover:text-[#02F67C] text-transparent ">
                 <a
                   target={link.targetBlank ? "_blank" : "_self"}
                   href={link.href}
-                  class="flex items-center h-full px-[24px] self-center  font-normal text-[16px] bg-clip-text text-transparent bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 hover:children:bg-linear-transp-green-transp flex justify-center"
+                  class="flex items-center h-full px-[24px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-center after:absolute after:w-full after:h-[4px] after:bg-transparent after:hover:bg-linear-transp-green-transp after:bottom-[-4px] after:z-20 after:bg-position-100 after:transition-colors after:ease-in after:duration-[0]"
                   style="background-size: 200%;"
                 >
                   {link.label}
-
-                  <div class="absolute w-full h-[4px] bg-transparent bottom-[-4px] z-20 bg-position-100 transition-colors ease-in duration-[0]">
-                  </div>
                 </a>
               </li>
             );
           })}
-          <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:(bg-transparent bg-none)">
+          <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:bg-transparent group-hover:bg-none">
           </div>
         </ul>
         <ul class="lg:hidden px-3">
@@ -421,9 +418,9 @@ export default function Header(props: Props) {
             <div
               class={`select-none hidden ${
                 openLanguage.value
-                  ? "md:(text-[#fff] border-[#06E474] border-1)"
+                  ? "md:text-[#fff] md:border-[#06E474] md:border"
                   : ""
-              } md:flex gap-2 items-center text-[#06E474] border-[transparent] rounded-full border-1 md:hover:(border-[#2FD180] border-1 rounded-full) focus:outline-none md:transition md:ease-in-out md:duration-300`}
+              } md:flex gap-2 items-center text-[#06E474] border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300`}
             >
               <div
                 onClick={handleLanguage}
@@ -457,7 +454,7 @@ export default function Header(props: Props) {
               <div
                 class={`${
                   openLanguage.value ? "block" : "hidden"
-                } absolute top-[35px] right-0 mt-5 rounded border-1 border-[#ffffff10]`}
+                } absolute top-[35px] right-0 mt-5 rounded border border-[#ffffff10]`}
               >
                 <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
                   <div class="flex flex-row items-center justify-between">
@@ -517,7 +514,7 @@ export default function Header(props: Props) {
           <li>
             <a
               href={props.login.url}
-              class="block md:hover:(border-[#02F67C] border-1 text-[#fff]) border-[transparent] border-1  font-normal text-[16px] text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
+              class="block md:hover:border-[#02F67C] md:hover:border md:hover:text-[#fff] border-[transparent] border font-normal text-[16px] text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
             >
               {props.login.label}
             </a>
@@ -525,7 +522,7 @@ export default function Header(props: Props) {
           <li>
             <a
               href={props.sign.url}
-              class="block md:hover:(bg-[#0A2121] border-1 text-[#fff]) border-[#02F67C] border-1  bg-[#02F67C] font-normal text-[16px] text-[#0A2121] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
+              class="block md:hover:bg-[#0A2121] md:hover:border md:hover:text-[#fff] border-[#02F67C] border bg-[#02F67C] font-normal text-[16px] text-[#0A2121] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
             >
               {props.sign.label}
             </a>

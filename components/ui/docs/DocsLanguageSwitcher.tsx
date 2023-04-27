@@ -14,16 +14,16 @@ export default function DocsLanguageSwitcher({ currentPathname }: Props) {
         <a
           href={englishLink}
           class={isLanguage("en")
-            ? "text(green-600 hover:green-500)"
-            : "text(gray-900 hover:gray-600)"}
+            ? "text-green-600 hover:text-green-500"
+            : "text-gray-900 hover:text-gray-600"}
         >
           English
         </a>
         <a
           href={portugueseLink}
           class={isLanguage("pt")
-            ? "text(green-600 hover:green-500)"
-            : "text(gray-900 hover:gray-600)"}
+            ? "text-green-600 hover:text-green-500)"
+            : "text-gray-900 hover:text-gray-600)"}
         >
           Português
         </a>

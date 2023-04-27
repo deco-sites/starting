@@ -22,9 +22,8 @@ export default function Carousel({ bottomPadding, cards }: Props) {
 
   return (
     <section
-      class={`${
-        bottomPadding && `pb-[${bottomPadding}]`
-      } md:bg-white-green mt-20`}
+      class="md:bg-white-green mt-20"
+      style={{ paddingBottom: bottomPadding }}
       id={id}
     >
       <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto">
@@ -40,7 +39,7 @@ export default function Carousel({ bottomPadding, cards }: Props) {
                     <Image
                       src={card.image}
                       fetchPriority={"low"}
-                      class="w-auto"
+                      class="w-full"
                       preload={false}
                       loading={"lazy"}
                       width={359}
