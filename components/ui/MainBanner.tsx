@@ -19,7 +19,7 @@ export interface Props {
   };
 
   miniBanner: bannerProps;
-  /** @description Default: 13.2vw */
+  /** @description Default: 44px */
   mobileH1Size?: string;
 }
 
@@ -41,7 +41,7 @@ export default function MainBanner(
     buttonCta1,
     buttonCta2,
     miniBanner,
-    mobileH1Size = "12vw",
+    mobileH1Size = "44px",
   }: Props,
 ) {
   const themeIsLigth = !themeDark;
