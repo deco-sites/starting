@@ -61,7 +61,7 @@ export default function MainBanner(
             {mainText}
             {activePercentualCarrosel
               ? (
-                <div class="overflow-hidden h-[13vw] max-h-[70px] w-[30%] pt-0 absolute text-center inline-flex pl-3.5 sm:h-[80px] md:h-[7vw] md:w-[20%] md:pt-0 md:mt-0 xl:h-[120px] xl:pl-6 xl:pt-0 xl:max-h-[120px]">
+                <div class="overflow-hidden h-[13vw] max-h-[70px] w-[30%] pt-0 absolute text-center inline-flex pl-3.5 sm:h-[80px] md:h-[7vw] md:w-[250px] md:pt-0 md:mt-0 xl:h-[120px] xl:pl-6 xl:pt-0 xl:max-h-[120px]">
                   <span
                     style="color: #06E474"
                     class="absolute animate-switcherText10"
