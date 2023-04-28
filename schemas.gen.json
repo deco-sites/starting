@@ -4517,7 +4517,7 @@
             "string",
             "null"
           ],
-          "description": "Default: 13.2vw",
+          "description": "Default: 44px",
           "title": "Mobile H1 Size"
         }
       },

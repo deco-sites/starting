@@ -187,7 +187,7 @@ export default function MainBanner(
               >
                 <Image
                   src={miniBanner?.bannerTopImage}
-                  class="relative bottom-8 left-24 md:max-w-[400px] md:w-[400px] md:-bottom-8 lg:max-w-[600px] lg:w-[597px] lg:-bottom-12 lg:left-56 lg:group-hover:scale-105 lg:group-hover:bottom-0 lg:duration-300 lg:ease-in z-2"
+                  class="relative bottom-8 left-24 md:max-w-[400px] md:w-[400px] md:-bottom-8 lg:max-w-[600px] lg:w-[597px] lg:-bottom-12 lg:left-56 lg:group-hover:scale-105 lg:group-hover:bottom-0 lg:duration-300 lg:ease-in z-10"
                   width={350}
                   alt={miniBanner?.altBannerTopImage}
                   title={miniBanner?.altBannerTopImage}
