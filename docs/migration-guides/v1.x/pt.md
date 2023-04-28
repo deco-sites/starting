@@ -16,6 +16,9 @@ Quer ver um exemplo de migração? Confira esse
 [pull request](https://github.com/deco-sites/fashion/pull/123) no Fashion
 starter.
 
+Fique por dentro de todos os detalhes dessa release
+[através do nosso blog announcement](https://www.deco.cx/blog/live.ts-1.x.md).
+
 Se você estiver usando live.ts v0.x e quiser migrar para v1.x, é isso que você
 precisa fazer:
 

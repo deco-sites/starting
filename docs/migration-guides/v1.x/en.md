@@ -15,6 +15,9 @@ deno run -A https://denopkg.com/deco-cx/live@1.0.0/scripts/upgrade.ts
 Want to see some code? Check our fashion migration
 [pull request](https://github.com/deco-sites/fashion/pull/123).
 
+Stay up-to-date with all the details of this release by checking out our
+[release announcement blog post](https://www.deco.cx/blog/live.ts-1.x.md).
+
 If you're using live.ts v0.x and want to migrate to v1.x, here's what you need
 to do:
 

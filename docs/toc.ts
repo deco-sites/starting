@@ -25,60 +25,81 @@ const tableOfContents: TableOfContents = [{
     title: { pt: "Page", en: "Page" },
     slug: "concepts/page",
   }, {
+    title: { pt: "Layout", en: "Layout" },
+    slug: "concepts/layout",
+  }, {
     title: { pt: "Site", en: "Site" },
     slug: "concepts/site",
   }],
 }, {
   title: { en: "Tutorials", pt: "Tutoriais" },
-  children: [{
-    title: { pt: "Criando um Site", en: "Creating a Site" },
-    slug: "tutorials/101",
-  }, {
-    title: { pt: "Codando uma Section", en: "Coding a new Section" },
-    slug: "tutorials/creating-a-section",
-  }, {
-    title: { pt: "Buscando dados de API", en: "Fetching data from APIs" },
-    slug: "tutorials/data-fetching",
-  }, {
-    title: {
-      pt: "Importando outros Sites",
-      en: "Importing other sites",
+  children: [
+    {
+      title: { pt: "Criando um Site", en: "Creating a Site" },
+      slug: "tutorials/101",
     },
-    slug: "tutorials/importing-other-sites",
-  }, {
-    title: { pt: "Conectando com VTEX", en: "Connecting with VTEX" },
-    slug: "tutorials/connecting-vtex",
-  }, {
-    title: {
-      pt: "Instalando VTEX Intelligent Search",
-      en: "Installing VTEX Intelligent Search",
+    {
+      title: { pt: "Codando uma Section", en: "Coding a new Section" },
+      slug: "tutorials/creating-a-section",
     },
-    slug: "tutorials/installing-vtex-is",
-  }, {
-    title: {
-      pt: "Integrando com GTM",
-      en: "Integrating with GTM",
+    {
+      title: {
+        pt: "Criando um Layout para páginas",
+        en: "Creating a page Layout",
+      },
+      slug: "tutorials/creating-a-layout",
     },
-    slug: "tutorials/gtm-integration-guide",
-  }, {
-    title: {
-      pt: "Simplificando loaders com carregadores de propriedades",
-      en: "Simplyfing data fetching with a PropsLoader",
+    {
+      title: { pt: "Buscando dados de API", en: "Fetching data from APIs" },
+      slug: "tutorials/data-fetching",
     },
-    slug: "tutorials/props-loader",
-  }, {
-    title: {
-      pt: "Criando components universais",
-      en: "Creating universal components",
+    {
+      title: {
+        pt: "Importando outros Sites",
+        en: "Importing other sites",
+      },
+      slug: "tutorials/importing-other-sites",
     },
-    slug: "tutorials/universal-components",
-  }, {
-    title: {
-      pt: "Invocando loaders a partir do browser",
-      en: "Client-side loaders invocation",
+    {
+      title: { pt: "Conectando com VTEX", en: "Connecting with VTEX" },
+      slug: "tutorials/connecting-vtex",
     },
-    slug: "tutorials/client-side-invocation",
-  }],
+    {
+      title: {
+        pt: "Instalando VTEX Intelligent Search",
+        en: "Installing VTEX Intelligent Search",
+      },
+      slug: "tutorials/installing-vtex-is",
+    },
+    {
+      title: {
+        pt: "Integrando com GTM",
+        en: "Integrating with GTM",
+      },
+      slug: "tutorials/gtm-integration-guide",
+    },
+    {
+      title: {
+        pt: "Simplificando loaders com carregadores de propriedades",
+        en: "Simplyfing data fetching with a PropsLoader",
+      },
+      slug: "tutorials/props-loader",
+    },
+    {
+      title: {
+        pt: "Criando components universais",
+        en: "Creating universal components",
+      },
+      slug: "tutorials/universal-components",
+    },
+    {
+      title: {
+        pt: "Invocando loaders a partir do browser",
+        en: "Client-side loaders invocation",
+      },
+      slug: "tutorials/client-side-invocation",
+    },
+  ],
 }, {
   title: { en: "Recipes", pt: "Receitas" },
   children: [{
