@@ -34,8 +34,8 @@ export default function ImpactCalculator(
   const inputClass =
     "w-full bg-[#F3FFF9] mt-2 pl-4 border border-dark-green h-[52px] rounded-[4px]";
 
-  const website = useSignal("");
-  const sessions = useSignal(0);
+  const website = useSignal("http://");
+  const sessions = useSignal(10000);
   const conversion = useSignal(1);
   const average = useSignal(50);
   const mobileLCP = useSignal(0);
@@ -53,7 +53,7 @@ export default function ImpactCalculator(
     desktopPercent.value = 100 - Number(e?.value);
   };
 
-  const handleClick = (e: JSX.TargetedMouseEvent<HTMLButtonElement>) => {
+  const handleSubmit = (e: JSX.TargetedEvent<HTMLFormElement>) => {
     e.preventDefault();
     loading.value = true;
 
@@ -202,7 +202,7 @@ export default function ImpactCalculator(
             </p>
           </div>
           <div>
-            <form action="/api/calc" class="flex flex-col gap-6">
+            <form action="/api/calc" class="flex flex-col gap-6" onSubmit={(e) => handleSubmit(e)}>
               <div>
                 <label htmlFor={formInfos.websiteLabel}>
                   {formInfos.websiteLabel}
@@ -210,8 +210,13 @@ export default function ImpactCalculator(
                 <input
                   id={formInfos.websiteLabel}
                   name="domain"
-                  type="text"
+                  type="url"
+                  placeholder="http://example.com"
+                  pattern="(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
+                  required
                   value={website}
+                  onFocus={(e) =>
+                    (e.target as HTMLInputElement).classList.add('invalid:border-pink-500', 'invalid:text-pink-600', 'focus:invalid:border-pink-500', 'focus:invalid:ring-pink-500')}
                   onInput={(e) =>
                     website.value = (e.target as HTMLInputElement).value}
                   class={`${inputClass}`}
@@ -226,6 +231,7 @@ export default function ImpactCalculator(
                     id={formInfos.sessionsLabel}
                     name="sessions"
                     type="number"
+                    required
                     value={sessions}
                     onInput={(e) =>
                       sessions.value = Number(
@@ -243,6 +249,7 @@ export default function ImpactCalculator(
                       id={formInfos.conversionLabel}
                       name="conversion"
                       type="number"
+                      required
                       value={conversion}
                       onInput={(e) =>
                         conversion.value = Number(
@@ -264,6 +271,7 @@ export default function ImpactCalculator(
                       id={formInfos.averageOrderLabel}
                       name="value"
                       type="number"
+                      required
                       value={average}
                       onInput={(e) =>
                         average.value = Number(
@@ -314,7 +322,6 @@ export default function ImpactCalculator(
                 : (
                   <button
                     class="flex justify-center items-center py-4 group px-6 w-full bg-dark-green text-white rounded-[4px]"
-                    onClick={(e) => handleClick(e)}
                   >
                     {loading.value
                       ? <Spinner size={20} />
