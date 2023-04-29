@@ -32,7 +32,10 @@ async function _handler(
       return redirectTo(
         "https://drive.google.com/drive/folders/1fMIVfALCEa3Er2iX0kNF-87IQSWtpSyy?usp=share_link",
       );
-
+    case "/onboarding":
+      return redirectTo(
+        "https://deco.cx/onboarding",
+      );
     case "/hackathon":
       return redirectTo("https://airtable.com/shrMMkEKoH1I2GLHA");
     case "/ifood":
