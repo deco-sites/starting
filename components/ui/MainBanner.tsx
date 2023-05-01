@@ -172,7 +172,7 @@ export default function MainBanner(
               ? "bg-dark-green text-white"
               : "bg-primary text-dark-green") +
               " " +
-              "h-80 flex flex-col relative -left-6 overflow-hidden rounded-r-full md:flex-row md:w-[80%] lg:h-[300px] group"}
+              "h-auto flex flex-col relative -left-6 overflow-hidden rounded-r-full md:flex-row md:w-[80%] lg:h-[300px] group"}
             style="-webkit-transform: translate3d(0, 0, 0)"
           >
             <div class="flex justify-start items-center lg:justify-center">
@@ -196,7 +196,7 @@ export default function MainBanner(
                   decoding="sync"
                   srcset={`${miniBanner?.bannerTopImage} 2x`}
                 />
-                <div class="absolute -bottom-4 -right-20 lg:-bottom-16 lg:-right-32 lg:group-hover:-right-20  lg:duration-300  lg:ease-in">
+                <div class="absolute -bottom-8 -right-20 lg:-bottom-16 lg:-right-32 lg:group-hover:-right-20  lg:duration-300  lg:ease-in">
                   <span class="w-[80px] block relative top-[65px] md:top-[85px] right-16 text-right leading-4 font-normal text-[12px] lg:top-[108px]">
                     {miniBanner?.linkedText}
                   </span>
