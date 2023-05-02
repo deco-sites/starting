@@ -326,7 +326,7 @@ export default function Header(props: Props) {
                   {props.eng.label}
                 </a>
               </li>
-              <li class="h-[50px] grid items-center">
+              <li class="h-[50px] grid items-center hidden">
                 <a
                   href={props.sign.url}
                   class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
