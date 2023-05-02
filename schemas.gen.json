@@ -4717,9 +4717,81 @@
       ],
       "title": "deco-sites/std/components/QuillText.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA==@Plan": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "price": {
+          "type": "string",
+          "title": "Price"
+        },
+        "priceCustom": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Price Custom"
+        },
+        "benefits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Benefits"
+        },
+        "button": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "title": "Text"
+            },
+            "link": {
+              "type": "string",
+              "title": "Link"
+            }
+          },
+          "required": [
+            "text",
+            "link"
+          ],
+          "title": "Button"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "price",
+        "button"
+      ],
+      "title": "Plan"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA==@Props": {
       "type": "object",
       "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "title": "Text"
+        },
+        "recurrence": {
+          "type": "string",
+          "title": "Recurrence"
+        },
+        "freePlan": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA==@Plan",
+          "title": "Free Plan"
+        },
         "pricingTableId": {
           "type": "string",
           "title": "Pricing Table Id"
@@ -4730,6 +4802,10 @@
         }
       },
       "required": [
+        "title",
+        "text",
+        "recurrence",
+        "freePlan",
         "pricingTableId",
         "publishableKey"
       ],
