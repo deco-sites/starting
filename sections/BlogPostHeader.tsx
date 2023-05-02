@@ -27,7 +27,7 @@ export default function BlogPostHeader(props: Props) {
   }
 
   return (
-    <section class="max-w-4xl w-full px-8 md:px-0 mx-auto pt-16">
+    <section class="max-w-4xl w-full px-5 md:px-0 mx-auto pt-16">
       <div class="mb-8 sm:mb-11 mt-10 sm:mt-16">
         <a
           class="group flex items-center cursor-pointer text-subdued"
@@ -53,10 +53,10 @@ export default function BlogPostHeader(props: Props) {
         </a>
       </div>
       <div class="w-full flex flex-col gap-4">
-        <h1 class="text-5xl text-5xl leading-[1.1">
+        <h1 class="text-4xl md:text-5xl leading-[1.1">
           {post.title}
         </h1>
-        <div class="text-3xl leading-[1.18] text-[#66736C]">
+        <div class="text-2xl md:text-3xl leading-[1.18] text-[#66736C]">
           {post.descr}
         </div>
         <div class="text-[#66736C]">

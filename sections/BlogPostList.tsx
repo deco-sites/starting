@@ -17,34 +17,32 @@ export default function MarkdownContainer(props: Props) {
   );
 
   return (
-    <section class="pt-40 lg:max-w-[894px] mx-auto">
+    <section class="pt-24 md:pt-40 px-5 lg:max-w-[940px] mx-auto">
       <div>
         <a
           href={getBlogPath(highlightPost.path)}
-          class="group w-full"
+          class="block w-full text-deco-dark-green mb-10 sm:mb-20 md:hover:scale-105 duration-200"
         >
-          <div class="text-deco-dark-green mb-10 sm:mb-20">
-            <Image
-              src={highlightPost.img}
-              sizes="(max-width: 894px) 100vw, 50vw"
-              width={894}
-              height={502}
-              loading="eager"
-              decoding="async"
-              fetchPriority="high"
-              preload
-            />
-            <div class="mt-6 flex flex-col gap-4">
-              <h1 class="text-5xl leading-[1.1]">
-                {highlightPost.title}
-              </h1>
-              <div class="text-3xl leading-[1.18] text-[#66736C]">
-                {highlightPost.descr}
-              </div>
-              <div class="text-xl leading-[1.5] text-[#66736C]">
-                <span class="mr-5">{highlightPost.date}</span>
-                <span>{highlightPost.author}</span>
-              </div>
+          <Image
+            src={highlightPost.img}
+            sizes="(max-width: 894px) 100vw, 50vw"
+            width={894}
+            height={502}
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+            preload
+          />
+          <div class="mt-6 flex flex-col gap-4">
+            <h1 class="text-5xl leading-[1.1]">
+              {highlightPost.title}
+            </h1>
+            <div class="text-2xl md:text-3xl leading-[1.18] text-[#66736C]">
+              {highlightPost.descr}
+            </div>
+            <div class="md:text-xl leading-[1.5] text-[#66736C]">
+              <span class="mr-5">{highlightPost.date}</span>
+              <span>{highlightPost.author}</span>
             </div>
           </div>
         </a>
@@ -52,7 +50,7 @@ export default function MarkdownContainer(props: Props) {
 
       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
         {normalPosts.map((post) => (
-          <a href={getBlogPath(post.path)} class="group mx-auto">
+          <a href={getBlogPath(post.path)} class="group mx-auto md:hover:scale-105 duration-200">
             <div class="w-full text-deco-dark-green mb-10 sm:mb-20">
               <Image
                 src={post.img}
