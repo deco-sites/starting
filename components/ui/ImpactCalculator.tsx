@@ -202,7 +202,11 @@ export default function ImpactCalculator(
             </p>
           </div>
           <div>
-            <form action="/api/calc" class="flex flex-col gap-6" onSubmit={(e) => handleSubmit(e)}>
+            <form
+              action="/api/calc"
+              class="flex flex-col gap-6"
+              onSubmit={(e) => handleSubmit(e)}
+            >
               <div>
                 <label htmlFor={formInfos.websiteLabel}>
                   {formInfos.websiteLabel}
@@ -216,7 +220,12 @@ export default function ImpactCalculator(
                   required
                   value={website}
                   onFocus={(e) =>
-                    (e.target as HTMLInputElement).classList.add('invalid:border-pink-500', 'invalid:text-pink-600', 'focus:invalid:border-pink-500', 'focus:invalid:ring-pink-500')}
+                    (e.target as HTMLInputElement).classList.add(
+                      "invalid:border-pink-500",
+                      "invalid:text-pink-600",
+                      "focus:invalid:border-pink-500",
+                      "focus:invalid:ring-pink-500",
+                    )}
                   onInput={(e) =>
                     website.value = (e.target as HTMLInputElement).value}
                   class={`${inputClass}`}
@@ -320,9 +329,7 @@ export default function ImpactCalculator(
                   </div>
                 )
                 : (
-                  <button
-                    class="flex justify-center items-center py-4 group px-6 w-full bg-dark-green text-white rounded-[4px]"
-                  >
+                  <button class="flex justify-center items-center py-4 group px-6 w-full bg-dark-green text-white rounded-[4px]">
                     {loading.value
                       ? <Spinner size={20} />
                       : (

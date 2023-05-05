@@ -3015,6 +3015,52 @@
       ],
       "title": "deco-sites/starting/components/ui/ImpactCalculator.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvdWkvTGFuZ3VhZ2VTd2l0Y2hlci50c3g=@Language": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        },
+        "short": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Short",
+          "description": "If there is no short mode the label will be used on selected value"
+        }
+      },
+      "required": [
+        "label",
+        "link"
+      ],
+      "title": "Language"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvdWkvTGFuZ3VhZ2VTd2l0Y2hlci50c3g=@Language[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvdWkvTGFuZ3VhZ2VTd2l0Y2hlci50c3g=@Language"
+      },
+      "title": "Language[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvSGVhZGVyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "languages": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvdWkvTGFuZ3VhZ2VTd2l0Y2hlci50c3g=@Language[]",
+          "title": "Languages"
+        }
+      },
+      "required": [
+        "languages"
+      ],
+      "title": "deco-sites/starting/components/ranking/Header.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page": {
       "$ref": "#/root/pages",
       "title": "Page"
@@ -3470,6 +3516,14 @@
             {
               "type": "string",
               "const": "Cash"
+            },
+            {
+              "type": "string",
+              "const": "VndaLogo"
+            },
+            {
+              "type": "string",
+              "const": "VTEXLogo"
             },
             {
               "type": "string",
@@ -4717,6 +4771,131 @@
       ],
       "title": "deco-sites/std/components/QuillText.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Props": {
+      "type": "object",
+      "properties": {},
+      "required": [],
+      "title": "deco-sites/starting/components/ranking/AnalyzeForm.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site": {
+      "type": "object",
+      "properties": {
+        "pagespeedPoints": {
+          "type": "number",
+          "title": "Pagespeed Points"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "website": {
+          "type": "string",
+          "title": "Website"
+        },
+        "poweredBy": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Powered By"
+        }
+      },
+      "required": [
+        "pagespeedPoints",
+        "name",
+        "website"
+      ],
+      "title": "Site"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site"
+      },
+      "title": "Site[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "tableHeader": {
+          "type": "object",
+          "properties": {
+            "pagespeed": {
+              "type": "string",
+              "title": "Pagespeed"
+            },
+            "name": {
+              "type": "string",
+              "title": "Name"
+            },
+            "website": {
+              "type": "string",
+              "title": "Website"
+            },
+            "poweredBy": {
+              "type": "string",
+              "title": "Powered By"
+            }
+          },
+          "required": [
+            "pagespeed",
+            "name",
+            "website",
+            "poweredBy"
+          ],
+          "title": "Table Header"
+        },
+        "footer": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string",
+              "title": "Text"
+            },
+            "linkText": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Link Text"
+            },
+            "linkHref": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Link Href"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "title": "Footer"
+        },
+        "hideFavicons": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Hide Favicons"
+        },
+        "sites": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site[]",
+          "title": "Sites"
+        }
+      },
+      "required": [
+        "title",
+        "tableHeader",
+        "footer",
+        "sites"
+      ],
+      "title": "deco-sites/starting/components/ranking/RankingList.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA==@Plan": {
       "type": "object",
       "properties": {
@@ -5858,6 +6037,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1JhbmtpbmdIZWFkZXIudHN4": {
+      "title": "./islands/RankingHeader.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvSGVhZGVyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/RankingHeader.tsx"
+          ],
+          "default": "./islands/RankingHeader.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1NsaWRlckpTLnRzeA==": {
       "title": "./islands/SliderJS.tsx",
       "type": "object",
@@ -6658,6 +6858,69 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9SYW5raW5nQW5hbHl6ZS50c3g=": {
+      "title": "deco-sites/starting/sections/RankingAnalyze.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/RankingAnalyze.tsx"
+          ],
+          "default": "deco-sites/starting/sections/RankingAnalyze.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9SYW5raW5nSGVhZGVyLnRzeA==": {
+      "title": "deco-sites/starting/sections/RankingHeader.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvSGVhZGVyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/RankingHeader.tsx"
+          ],
+          "default": "deco-sites/starting/sections/RankingHeader.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9SYW5raW5nTGlzdC50c3g=": {
+      "title": "deco-sites/starting/sections/RankingList.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/RankingList.tsx"
+          ],
+          "default": "deco-sites/starting/sections/RankingList.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA==": {
       "title": "deco-sites/starting/sections/StripePricing.tsx",
       "type": "object",
@@ -7251,6 +7514,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1JhbmtpbmdIZWFkZXIudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
         }
       ]
@@ -7393,6 +7659,15 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9RdWlsbFRleHQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9SYW5raW5nQW5hbHl6ZS50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9SYW5raW5nSGVhZGVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9SYW5raW5nTGlzdC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9TdHJpcGVQcmljaW5nLnRzeA=="

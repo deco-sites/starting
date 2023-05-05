@@ -46,6 +46,8 @@ export type AvailableIcons =
   | "Book"
   | "Bag"
   | "Cash"
+  | "VndaLogo"
+  | "VTEXLogo"
   | "Support";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
@@ -66,7 +68,7 @@ function Icon(
       {...otherProps}
       width={width ?? size}
       height={height ?? size}
-      strokeWidth={strokeWidth}
+      stroke-width={strokeWidth}
     >
       <use href={asset(`/sprites.svg#${id}`)} />
     </svg>

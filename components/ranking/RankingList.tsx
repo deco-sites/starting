@@ -1,0 +1,97 @@
+import Header from "deco-sites/starting/islands/RankingHeader.tsx";
+import { SiteItem } from "./list/SiteItem.tsx";
+
+export interface Site {
+  pagespeedPoints: number;
+  name: string;
+  website: string;
+  poweredBy?: string;
+}
+
+export interface Props {
+  title: string;
+  tableHeader: {
+    pagespeed: string;
+    name: string;
+    website: string;
+    poweredBy: string;
+  };
+  footer: {
+    text: string;
+    linkText?: string;
+    linkHref?: string;
+  };
+  hideFavicons?: boolean;
+  sites: Site[];
+}
+
+export default function RankingList({
+  title,
+  hideFavicons = false,
+  tableHeader,
+  footer,
+  sites,
+}: Props) {
+  const { pagespeed, name, website, poweredBy } = tableHeader;
+
+  return (
+    <div class="min-h-[calc(100vh-98px)] text-zinc-100 flex justify-between flex-col max-w-screen-xl px-6 md:px-10 mx-auto">
+      <div>
+        <h1 class="text-[10vw] leading-[10vw] font-bold text-almost-white text-center mb-10">
+          {title}
+        </h1>
+        <table class="w-full text-left table-auto">
+          <thead class="md:table-header-group hidden">
+            <th></th>
+            <th class="font-semibold text-base text-center">{pagespeed}</th>
+            <th class="font-semibold text-base">{name}</th>
+            <th class="font-semibold text-base">{website}</th>
+            <th class="font-semibold text-base">{poweredBy}</th>
+          </thead>
+          <tbody class="">
+            {sites.map((site, index) => (
+              <>
+                <SiteItem
+                  site={site}
+                  hideFavicons={hideFavicons}
+                  key={index}
+                  position={index + 1}
+                />
+                <SiteItem
+                  site={site}
+                  hideFavicons={hideFavicons}
+                  key={index}
+                  position={2}
+                />
+                <SiteItem
+                  site={site}
+                  hideFavicons={hideFavicons}
+                  key={index}
+                  position={3}
+                />
+                <SiteItem
+                  site={site}
+                  hideFavicons={hideFavicons}
+                  key={index}
+                  position={4}
+                />
+              </>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <footer class="py-8 relative">
+        <div class="absolute bg-linear-shadowing h-72 w-full bottom-full left-0" />
+        <p class="text-almost-white text-[4vw] text-center">
+          {footer.text} {footer.linkHref && footer.linkText
+            ? (
+              <a class="text-secondary" href={footer.linkHref}>
+                {footer.linkText}
+              </a>
+            )
+            : null}
+        </p>
+      </footer>
+    </div>
+  );
+}
