@@ -1,2 +1,2 @@
-export { default } from "deco-sites/starting/components/ranking/AnalyzeForm.tsx";
-export type { Props } from "deco-sites/starting/components/ranking/AnalyzeForm.tsx";
+export { default } from "deco-sites/starting/islands/RankingAnalyze.tsx";
+export * as typings from "deco-sites/starting/islands/RankingAnalyze.tsx";

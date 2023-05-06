@@ -16,6 +16,7 @@
               "deco-sites/starting/functions/LoadGitHubRawPost.ts",
               "deco-sites/starting/functions/LoadGitHubRawPostList.ts",
               "deco-sites/starting/functions/LoadPageProps.ts",
+              "deco-sites/starting/functions/psiRankingList.ts",
               "deco-sites/std/functions/occProductDetailsPage.ts",
               "deco-sites/std/functions/shopifyProductDetailsPage.ts",
               "deco-sites/std/functions/shopifyProductList.ts",
@@ -45,6 +46,7 @@
               "./islands/ContactUs.tsx",
               "./islands/Header.tsx",
               "./islands/ImpactCalculator.tsx",
+              "./islands/RankingAnalyze.tsx",
               "./islands/RankingHeader.tsx",
               "./islands/SliderJS.tsx",
               "$live/handlers/devPage.ts",
@@ -327,6 +329,67 @@
       },
       "required": [],
       "title": "deco-sites/starting/sections/BlogPostHeader.tsx@PropNull"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site": {
+      "type": "object",
+      "properties": {
+        "pagespeedPoints": {
+          "type": "number",
+          "title": "Pagespeed Points"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "website": {
+          "type": "string",
+          "title": "Website"
+        },
+        "poweredBy": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Powered By"
+        }
+      },
+      "required": [
+        "pagespeedPoints",
+        "name",
+        "website"
+      ],
+      "title": "Site"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site[]": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site"
+          },
+          "title": "deco-sites/starting/components/ranking/RankingList.tsx@Site[]"
+        },
+        {
+          "title": "GitHub Raw Loader",
+          "description": "Grabs data from a GitHub repo",
+          "type": "object",
+          "required": [
+            "__resolveType"
+          ],
+          "properties": {
+            "__resolveType": {
+              "type": "string",
+              "enum": [
+                "deco-sites/starting/functions/psiRankingList.ts"
+              ],
+              "default": "deco-sites/starting/functions/psiRankingList.ts"
+            }
+          }
+        }
+      ]
     },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing": {
       "title": "Thing"
@@ -3136,6 +3199,133 @@
       ],
       "title": "deco-sites/starting/components/ui/ImpactCalculator.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Link": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "highlight": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Highlight"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "title": "Link"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Link[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Link"
+      },
+      "title": "Link[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@AnalyzeFormTranslation": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "form": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "button": {
+              "type": "string",
+              "title": "Button"
+            },
+            "placeholder": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Placeholder"
+            },
+            "error": {
+              "type": "string",
+              "title": "Error"
+            }
+          },
+          "required": [
+            "label",
+            "button",
+            "error"
+          ],
+          "title": "Form"
+        },
+        "loading": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "description": {
+              "type": "string",
+              "title": "Description"
+            }
+          },
+          "required": [
+            "title",
+            "description"
+          ],
+          "title": "Loading"
+        },
+        "result": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "links": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Link[]",
+              "title": "Links"
+            }
+          },
+          "required": [
+            "title",
+            "links"
+          ],
+          "title": "Result"
+        }
+      },
+      "required": [
+        "title",
+        "form",
+        "loading",
+        "result"
+      ],
+      "title": "AnalyzeFormTranslation"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "translations": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@AnalyzeFormTranslation",
+          "title": "Translations"
+        }
+      },
+      "required": [
+        "translations"
+      ],
+      "title": "deco-sites/starting/components/ranking/AnalyzeForm.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvdWkvTGFuZ3VhZ2VTd2l0Y2hlci50c3g=@Language": {
       "type": "object",
       "properties": {
@@ -3175,6 +3365,20 @@
         "languages": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvdWkvTGFuZ3VhZ2VTd2l0Y2hlci50c3g=@Language[]",
           "title": "Languages"
+        },
+        "size": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "normal"
+            },
+            {
+              "type": "string",
+              "const": "large"
+            }
+          ],
+          "type": "string",
+          "title": "Size"
         }
       },
       "required": [
@@ -4892,57 +5096,6 @@
       ],
       "title": "deco-sites/std/components/QuillText.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Props": {
-      "type": "object",
-      "properties": {
-        "test": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Test"
-        }
-      },
-      "required": [],
-      "title": "deco-sites/starting/components/ranking/AnalyzeForm.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site": {
-      "type": "object",
-      "properties": {
-        "pagespeedPoints": {
-          "type": "number",
-          "title": "Pagespeed Points"
-        },
-        "name": {
-          "type": "string",
-          "title": "Name"
-        },
-        "website": {
-          "type": "string",
-          "title": "Website"
-        },
-        "poweredBy": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Powered By"
-        }
-      },
-      "required": [
-        "pagespeedPoints",
-        "name",
-        "website"
-      ],
-      "title": "Site"
-    },
-    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site"
-      },
-      "title": "Site[]"
-    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Props": {
       "type": "object",
       "properties": {
@@ -5599,6 +5752,23 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9mdW5jdGlvbnMvcHNpUmFua2luZ0xpc3QudHM=": {
+      "title": "GitHub Raw Loader",
+      "description": "Grabs data from a GitHub repo",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/functions/psiRankingList.ts"
+          ],
+          "default": "deco-sites/starting/functions/psiRankingList.ts"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL29jY1Byb2R1Y3REZXRhaWxzUGFnZS50cw==": {
       "title": "Oracle Commerce Cloud Product Page Loader",
       "description": "Works on routes of type /:slug/p",
@@ -6181,6 +6351,27 @@
             "./islands/ImpactCalculator.tsx"
           ],
           "default": "./islands/ImpactCalculator.tsx"
+        }
+      }
+    },
+    "Li9pc2xhbmRzL1JhbmtpbmdBbmFseXplLnRzeA==": {
+      "title": "./islands/RankingAnalyze.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/RankingAnalyze.tsx"
+          ],
+          "default": "./islands/RankingAnalyze.tsx"
         }
       }
     },
@@ -7558,6 +7749,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9mdW5jdGlvbnMvTG9hZFBhZ2VQcm9wcy50cw=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9mdW5jdGlvbnMvcHNpUmFua2luZ0xpc3QudHM="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL29jY1Byb2R1Y3REZXRhaWxzUGFnZS50cw=="
         },
         {
@@ -7659,6 +7853,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1JhbmtpbmdBbmFseXplLnRzeA=="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL1JhbmtpbmdIZWFkZXIudHN4"

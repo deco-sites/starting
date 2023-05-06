@@ -1,5 +1,5 @@
-import Header from "deco-sites/starting/islands/RankingHeader.tsx";
 import { SiteItem } from "./list/SiteItem.tsx";
+import { LoaderReturnType } from "$live/types.ts";
 
 export interface Site {
   pagespeedPoints: number;
@@ -22,7 +22,7 @@ export interface Props {
     linkHref?: string;
   };
   hideFavicons?: boolean;
-  sites: Site[];
+  sites: LoaderReturnType<Site[]>;
 }
 
 export default function RankingList({
@@ -30,7 +30,7 @@ export default function RankingList({
   hideFavicons = false,
   tableHeader,
   footer,
-  sites,
+  sites = [],
 }: Props) {
   const { pagespeed, name, website, poweredBy } = tableHeader;
 
@@ -40,56 +40,37 @@ export default function RankingList({
         <h1 class="text-[9vw] sm:text-[10vw] xl:text-[7vw] leading-[9vw] sm:leading-[10vw] xl:leading-[7vw] font-bold text-almost-white text-center mb-10">
           {title}
         </h1>
-        <table class="w-full text-left table-auto">
-          <thead class="md:table-header-group hidden">
-            <th></th>
-            <th class="font-semibold text-base text-center">{pagespeed}</th>
-            <th class="font-semibold text-base">{name}</th>
-            <th class="font-semibold text-base">{website}</th>
-            <th class="font-semibold text-base">{poweredBy}</th>
-          </thead>
-          <tbody class="">
-            {sites.map((site, index) => (
-              <>
+        {sites.length ? (
+          <table class="w-full text-left table-auto">
+            <thead class="md:table-header-group hidden">
+              <th></th>
+              <th class="font-semibold text-base text-center">{pagespeed}</th>
+              <th class="font-semibold text-base">{name}</th>
+              <th class="font-semibold text-base">{website}</th>
+              <th class="font-semibold text-base">{poweredBy}</th>
+            </thead>
+            <tbody class="">
+              {sites.map((site, index) => (
                 <SiteItem
                   site={site}
                   hideFavicons={hideFavicons}
                   key={index}
                   position={index + 1}
                 />
-                <SiteItem
-                  site={site}
-                  hideFavicons={hideFavicons}
-                  key={index}
-                  position={2}
-                />
-                <SiteItem
-                  site={site}
-                  hideFavicons={hideFavicons}
-                  key={index}
-                  position={3}
-                />
-                <SiteItem
-                  site={site}
-                  hideFavicons={hideFavicons}
-                  key={index}
-                  position={4}
-                />
-              </>
-            ))}
-          </tbody>
-        </table>
+              ))}
+            </tbody>
+          </table>
+        ) : null}
       </div>
       <footer class="py-8 relative">
         <div class="absolute bg-linear-shadowing h-72 w-screen bottom-full left-1/2 -translate-x-1/2" />
         <p class="text-almost-white text-[4vw] xl:text-[3vw] text-center">
-          {footer.text} {footer.linkHref && footer.linkText
-            ? (
-              <a class="text-secondary" href={footer.linkHref}>
-                {footer.linkText}
-              </a>
-            )
-            : null}
+          {footer.text}{" "}
+          {footer.linkHref && footer.linkText ? (
+            <a class="text-secondary" href={footer.linkHref}>
+              {footer.linkText}
+            </a>
+          ) : null}
         </p>
       </footer>
     </div>

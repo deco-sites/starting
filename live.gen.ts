@@ -6,8 +6,9 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRawPost.ts";
 import * as $1 from "./functions/LoadGitHubRaw.ts";
-import * as $2 from "./functions/LoadPageProps.ts";
-import * as $3 from "./functions/LoadGitHubRawPostList.ts";
+import * as $2 from "./functions/psiRankingList.ts";
+import * as $3 from "./functions/LoadPageProps.ts";
+import * as $4 from "./functions/LoadGitHubRawPostList.ts";
 import * as $$$$0 from "./routes/index.tsx";
 import * as $$$$1 from "./routes/gfm.css.ts";
 import * as $$$$2 from "./routes/admin/[...catchall].tsx";
@@ -25,7 +26,8 @@ import * as $$$$$3 from "./islands/ContactUs.tsx";
 import * as $$$$$4 from "./islands/SliderJS.tsx";
 import * as $$$$$5 from "./islands/Header.tsx";
 import * as $$$$$6 from "./islands/CampMentor.tsx";
-import * as $$$$$7 from "./islands/RankingHeader.tsx";
+import * as $$$$$7 from "./islands/RankingAnalyze.tsx";
+import * as $$$$$8 from "./islands/RankingHeader.tsx";
 import * as $$$$$$$$0 from "./sections/CampHero.tsx";
 import * as $$$$$$$$1 from "./sections/QuillText.tsx";
 import * as $$$$$$$$2 from "./sections/StripePricing.tsx";
@@ -124,8 +126,9 @@ const manifest = {
   "functions": {
     "deco-sites/starting/functions/LoadGitHubRaw.ts": $1,
     "deco-sites/starting/functions/LoadGitHubRawPost.ts": $0,
-    "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $3,
-    "deco-sites/starting/functions/LoadPageProps.ts": $2,
+    "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $4,
+    "deco-sites/starting/functions/LoadPageProps.ts": $3,
+    "deco-sites/starting/functions/psiRankingList.ts": $2,
     "deco-sites/std/functions/occProductDetailsPage.ts": i2$0,
     "deco-sites/std/functions/shopifyProductDetailsPage.ts": i2$1,
     "deco-sites/std/functions/shopifyProductList.ts": i2$2,
@@ -171,7 +174,8 @@ const manifest = {
     "./islands/ContactUs.tsx": $$$$$3,
     "./islands/Header.tsx": $$$$$5,
     "./islands/ImpactCalculator.tsx": $$$$$0,
-    "./islands/RankingHeader.tsx": $$$$$7,
+    "./islands/RankingAnalyze.tsx": $$$$$7,
+    "./islands/RankingHeader.tsx": $$$$$8,
     "./islands/SliderJS.tsx": $$$$$4,
   },
   "sections": {

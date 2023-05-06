@@ -61,7 +61,7 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
         <a href={site.website}>{url.host.replace("www.", "")}</a>
       </td>
       <td>
-        <div class="flex md:gap-2 gap-1 items-center justify-end">
+        <div class="flex md:gap-2 gap-1 items-center justify-end md:justify-start">
           <Icon
             class="md:w-[69px] md:h-[28px] w-[35px] h-[14px] "
             id="VndaLogo"
