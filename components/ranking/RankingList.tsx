@@ -37,7 +37,7 @@ export default function RankingList({
   return (
     <div class="min-h-[calc(100vh-98px)] text-zinc-100 flex justify-between flex-col max-w-screen-xl px-6 md:px-10 mx-auto">
       <div>
-        <h1 class="text-[10vw] leading-[10vw] font-bold text-almost-white text-center mb-10">
+        <h1 class="text-[9vw] sm:text-[10vw] xl:text-[7vw] leading-[9vw] sm:leading-[10vw] xl:leading-[7vw] font-bold text-almost-white text-center mb-10">
           {title}
         </h1>
         <table class="w-full text-left table-auto">
@@ -81,8 +81,8 @@ export default function RankingList({
         </table>
       </div>
       <footer class="py-8 relative">
-        <div class="absolute bg-linear-shadowing h-72 w-full bottom-full left-0" />
-        <p class="text-almost-white text-[4vw] text-center">
+        <div class="absolute bg-linear-shadowing h-72 w-screen bottom-full left-1/2 -translate-x-1/2" />
+        <p class="text-almost-white text-[4vw] xl:text-[3vw] text-center">
           {footer.text} {footer.linkHref && footer.linkText
             ? (
               <a class="text-secondary" href={footer.linkHref}>

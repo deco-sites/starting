@@ -35,7 +35,7 @@ export default {
         "linear-header":
           "linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,255,128,1) 100%)",
         "linear-shadowing":
-          "linear-gradient(180deg,rgba(6,53,53,0),rgb(6,50,50))",
+          "linear-gradient(180deg,rgba(6,53,53,0),rgb(6,50,49,0.7))",
       },
       boxShadow: {
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",
