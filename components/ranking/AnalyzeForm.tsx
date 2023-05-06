@@ -67,9 +67,9 @@ export default function AnalyzeForm({ translations }: Props) {
       fetch(
         "https://psi-test-api.fly.dev/?t=AIzaSyADcbhTjzpb5EGL0ACHhMtFD2i9sJMsn3I&n=1&url=" +
           encodeURIComponent(psURL),
-        { method: "GET" }
+        { method: "GET" },
       ).then((res) => {
-        res.text().then((r) => console.log(r))
+        res.text().then((r) => console.log(r));
         // const { data } = JSON.parse();
         // console.log(JSON.stringify(data, null, 2));
         // const score = (data ? data.score.mean : -1) * 100;

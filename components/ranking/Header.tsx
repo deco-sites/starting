@@ -24,7 +24,9 @@ export default function Header({ languages, size = "normal" }: Props) {
       </Head>
       <header
         class={`flex justify-between max-w-screen-xl mx-auto px-4 py-8 md:px-10 ${
-          size === "normal" ? "md:pb-6 md:pt-10" : "md:pt-20 fixed w-full left-1/2 -translate-x-1/2"
+          size === "normal"
+            ? "md:pb-6 md:pt-10"
+            : "md:pt-20 fixed w-full left-1/2 -translate-x-1/2"
         }`}
       >
         <div class="text-secondary">
