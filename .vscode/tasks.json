@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "deno",
+      "command": "run",
+      "args": [
+        "-A",
+        "--watch=sections/,functions/",
+        "dev.ts"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "label": "deno: run"
+    }
+  ]
+}
