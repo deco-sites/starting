@@ -9,11 +9,11 @@ const psiRankingListLoader: LoaderFunction<null, Site[]> = async (req) => {
   const url = new URL(req.url);
 
   const res = await fetch(`${url.origin}/api/ranking`).then((res) =>
-    res.json()
+    res.text()
   );
 
   return {
-    data: res,
+    data: JSON.parse(res),
   };
 };
 
