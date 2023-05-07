@@ -13,7 +13,8 @@ const logoIds: Record<string, AvailableIcons> = {
   vnda: "VndaLogo",
   vtex: "VTEXLogo",
   shopify: "ShopifyLogo",
-  deco: "Deco",
+  deco: "DecoLogo",
+  occ: "OCCLogo",
 };
 
 export function SiteItem({ position, site, hideFavicons }: Props) {
@@ -70,19 +71,19 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
         <a href={site.website}>{url.host.replace("www.", "")}</a>
       </td>
       <td>
-        <div class="poweredby-list flex md:gap-2 gap-1 items-center justify-end md:justify-start">
+        <div class="poweredby-list flex items-center justify-end md:justify-center">
           {Object.entries(site.poweredBy).map(([key, value]) =>
             value
               ? (
                 <div class="flex items-center justify-center">
                   <Icon
-                    class={`md:w-[69px] w-[35px] ${
+                    class={`md:w-[120px] w-[60px] ${
                       key === "deco" ? "text-primary" : ""
                     }`}
                     id={logoIds[key]}
                     strokeWidth={1}
-                    width={70}
-                    height={30}
+                    width={120}
+                    height={32}
                   />
                 </div>
               )

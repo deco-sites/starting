@@ -49,6 +49,8 @@ export type AvailableIcons =
   | "VndaLogo"
   | "VTEXLogo"
   | "ShopifyLogo"
+  | "DecoLogo"
+  | "OCCLogo"
   | "Support";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {

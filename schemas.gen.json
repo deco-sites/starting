@@ -363,13 +363,18 @@
             "shopify": {
               "type": "boolean",
               "title": "Shopify"
+            },
+            "occ": {
+              "type": "boolean",
+              "title": "Occ"
             }
           },
           "required": [
             "deco",
             "vtex",
             "vnda",
-            "shopify"
+            "shopify",
+            "occ"
           ],
           "title": "Powered By"
         },
@@ -3880,6 +3885,14 @@
             {
               "type": "string",
               "const": "ShopifyLogo"
+            },
+            {
+              "type": "string",
+              "const": "DecoLogo"
+            },
+            {
+              "type": "string",
+              "const": "OCCLogo"
             },
             {
               "type": "string",

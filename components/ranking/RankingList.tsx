@@ -42,7 +42,7 @@ export default function RankingList({
                 <th class="font-semibold text-base text-center">{pagespeed}</th>
                 <th class="font-semibold text-base">{name}</th>
                 <th class="font-semibold text-base">{website}</th>
-                <th class="font-semibold text-base">{poweredBy}</th>
+                <th class="font-semibold text-base text-center">{poweredBy}</th>
               </thead>
               <tbody class="">
                 {sites.map((site, index) => (
@@ -59,7 +59,7 @@ export default function RankingList({
           : null}
       </div>
       <footer class="py-8 relative">
-        <div class="absolute bg-linear-shadowing h-72 w-screen bottom-full left-1/2 -translate-x-1/2" />
+        <div class="pointer-events-none absolute bg-linear-shadowing h-72 w-screen bottom-full left-1/2 -translate-x-1/2" />
         <p class="text-almost-white text-[4vw] xl:text-[3vw] text-center">
           {footer.text} {footer.linkHref && footer.linkText
             ? (
