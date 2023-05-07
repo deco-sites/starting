@@ -30,20 +30,22 @@ const normalizeSite = async (
     document.querySelector("#__DECO_STATE")?.textContent ?? "null",
   );
 
-  const isVTEX = html.includes(".vteximg.");
+  const isVTEX = html.includes(".vteximg.") || html.includes(".vtexassets.");
   const isVnda = html.includes("cdn.vnda.com.br");
   const isShopify = html.includes("cdn.shopify.com");
+  const isOcc = html.includes('id="oracle-cc');
 
   const ogTitle = document
     .querySelector('[property="og:title"]')
     ?.attributes.getNamedItem("content")?.value;
+  const titleTag = document.querySelector("title")?.textContent;
 
   const name = [
     ...document.querySelectorAll('[type="application/ld+json"]'),
   ].reduce<string[]>((initial, script) => {
     const json = JSON.parse(script.textContent);
 
-    if (!json.name) return initial;
+    if (!json?.name) return initial;
 
     return [...initial, json.name];
   }, []);
@@ -55,7 +57,7 @@ const normalizeSite = async (
   return {
     pagespeedPoints: score,
     website: url,
-    name: name[0] ?? ogTitle ?? decoState?.name,
+    name: name[0] ?? ogTitle ?? titleTag ?? decoState?.name,
     favicon: faviconUrl
       ? `${url}${faviconUrl.replace("/", "")}`
       : `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=32`,
@@ -64,6 +66,7 @@ const normalizeSite = async (
       vtex: isVTEX,
       vnda: isVnda,
       shopify: isShopify,
+      occ: isOcc,
     },
   };
 };
@@ -74,10 +77,11 @@ const ranking: {
   sort: () => void;
   update: (s: Site) => void;
   add: (s: Site) => void;
+  removeLast: () => void;
 } = {
   list: [
     {
-      pagespeedPoints: 80,
+      pagespeedPoints: 81,
       website: "https://www.lolja.com.br/",
       name: "LOLJA - Atelier do Sicko LTDA",
       favicon: "https://www.lolja.com.br/favicon.ico?v=1682538853",
@@ -86,10 +90,11 @@ const ranking: {
         vtex: false,
         vnda: true,
         shopify: false,
+        occ: false,
       },
     },
     {
-      pagespeedPoints: 80,
+      pagespeedPoints: 94,
       website: "https://onevc.deco.site/",
       name: "ONEVC",
       favicon:
@@ -99,6 +104,7 @@ const ranking: {
         vtex: false,
         vnda: false,
         shopify: false,
+        occ: false,
       },
     },
     {
@@ -112,10 +118,11 @@ const ranking: {
         vtex: true,
         vnda: false,
         shopify: false,
+        occ: false,
       },
     },
     {
-      pagespeedPoints: 80,
+      pagespeedPoints: 85,
       website: "https://new.zeedog.com.br/",
       name: "Coleiras, guias e peitorais para cachorros | Zee.Dog",
       favicon: "https://new.zeedog.com.br/apple-touch-icon.png",
@@ -124,10 +131,11 @@ const ranking: {
         vtex: true,
         vnda: false,
         shopify: false,
+        occ: false,
       },
     },
     {
-      pagespeedPoints: 80,
+      pagespeedPoints: 81,
       website: "https://www.sallve.com.br/",
       name: "Sallve",
       favicon:
@@ -137,6 +145,21 @@ const ranking: {
         vtex: false,
         vnda: false,
         shopify: true,
+        occ: false,
+      },
+    },
+    {
+      pagespeedPoints: 80,
+      website: "https://www.webcontinental.com.br/",
+      name: "WebContinental - Sua melhor escolha",
+      favicon:
+        "https://www.webcontinental.com.br/file/v6505997660124336710/general/ms-icon-310x310.png",
+      poweredBy: {
+        deco: false,
+        vtex: false,
+        vnda: false,
+        shopify: false,
+        occ: true,
       },
     },
   ],
@@ -155,6 +178,9 @@ const ranking: {
   },
   add: function (newSite) {
     this.list = this.list.concat([newSite]);
+  },
+  removeLast: function () {
+    this.list = this.list.splice(-1);
   },
 };
 
@@ -209,6 +235,10 @@ export const handler: Handlers = {
       }
       ranking.sort();
 
+      if (ranking.list.length > 20) {
+        ranking.removeLast();
+      }
+
       return new Response(JSON.stringify(ranking.list), {
         headers: { "Content-Type": "application/json" },
         status,
@@ -252,6 +282,7 @@ export interface Site {
     vtex: boolean;
     vnda: boolean;
     shopify: boolean;
+    occ: boolean;
   };
   favicon: string;
 }
