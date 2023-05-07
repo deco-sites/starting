@@ -330,7 +330,7 @@
       "required": [],
       "title": "deco-sites/starting/sections/BlogPostHeader.tsx@PropNull"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site": {
+    "ZGVjby1zaXRlcy9zdGFydGluZy9yb3V0ZXMvYXBpL3JhbmtpbmcudHM=@Site": {
       "type": "object",
       "properties": {
         "pagespeedPoints": {
@@ -346,21 +346,48 @@
           "title": "Website"
         },
         "poweredBy": {
-          "type": [
-            "string",
-            "null"
+          "type": "object",
+          "properties": {
+            "deco": {
+              "type": "boolean",
+              "title": "Deco"
+            },
+            "vtex": {
+              "type": "boolean",
+              "title": "Vtex"
+            },
+            "vnda": {
+              "type": "boolean",
+              "title": "Vnda"
+            },
+            "shopify": {
+              "type": "boolean",
+              "title": "Shopify"
+            }
+          },
+          "required": [
+            "deco",
+            "vtex",
+            "vnda",
+            "shopify"
           ],
           "title": "Powered By"
+        },
+        "favicon": {
+          "type": "string",
+          "title": "Favicon"
         }
       },
       "required": [
         "pagespeedPoints",
         "name",
-        "website"
+        "website",
+        "poweredBy",
+        "favicon"
       ],
       "title": "Site"
     },
-    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site[]": {
+    "ZGVjby1zaXRlcy9zdGFydGluZy9yb3V0ZXMvYXBpL3JhbmtpbmcudHM=@Site[]": {
       "anyOf": [
         {
           "$ref": "#/definitions/Resolvable"
@@ -368,13 +395,13 @@
         {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site"
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9yb3V0ZXMvYXBpL3JhbmtpbmcudHM=@Site"
           },
-          "title": "deco-sites/starting/components/ranking/RankingList.tsx@Site[]"
+          "title": "deco-sites/starting/routes/api/ranking.ts@Site[]"
         },
         {
-          "title": "GitHub Raw Loader",
-          "description": "Grabs data from a GitHub repo",
+          "title": "PageSpeed Insights Ranking Loader",
+          "description": "Gets ranking information",
           "type": "object",
           "required": [
             "__resolveType"
@@ -3852,6 +3879,10 @@
             },
             {
               "type": "string",
+              "const": "ShopifyLogo"
+            },
+            {
+              "type": "string",
               "const": "Support"
             }
           ],
@@ -5166,7 +5197,7 @@
           "title": "Hide Favicons"
         },
         "sites": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Site[]",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9yb3V0ZXMvYXBpL3JhbmtpbmcudHM=@Site[]",
           "title": "Sites"
         }
       },
@@ -5753,8 +5784,8 @@
       }
     },
     "ZGVjby1zaXRlcy9zdGFydGluZy9mdW5jdGlvbnMvcHNpUmFua2luZ0xpc3QudHM=": {
-      "title": "GitHub Raw Loader",
-      "description": "Grabs data from a GitHub repo",
+      "title": "PageSpeed Insights Ranking Loader",
+      "description": "Gets ranking information",
       "type": "object",
       "required": [
         "__resolveType"

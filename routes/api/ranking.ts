@@ -1,4 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
+import { DOMParser } from "deno-dom";
 
 const parseBody = async <T>(
   body: ReadableStream<Uint8Array> | null,
@@ -16,12 +17,56 @@ const parseBody = async <T>(
   return null;
 };
 
-interface Site {
-  pagespeedPoints: number;
-  name: string;
-  website: string;
-  poweredBy?: string;
-}
+const normalizeSite = async (
+  url: string,
+  score: number,
+): Promise<Site | null> => {
+  const html = await fetch(encodeURI(url)).then((r) => r.text());
+  const document = new DOMParser().parseFromString(html, "text/html");
+
+  if (!document) return null;
+
+  const decoState = JSON.parse(
+    document.querySelector("#__DECO_STATE")?.textContent ?? "null",
+  );
+
+  const isVTEX = html.includes(".vteximg.");
+  const isVnda = html.includes("cdn.vnda.com.br");
+  const isShopify = html.includes("cdn.shopify.com");
+
+  const ogTitle = document
+    .querySelector('[property="og:title"]')
+    ?.attributes.getNamedItem("content")?.value;
+
+  const name = [
+    ...document.querySelectorAll('[type="application/ld+json"]'),
+  ].reduce<string[]>((initial, script) => {
+    const json = JSON.parse(script.textContent);
+
+    if (!json.name) return initial;
+
+    return [...initial, json.name];
+  }, []);
+
+  const faviconUrl = document
+    .querySelector('[rel*="icon"]')
+    ?.attributes.getNamedItem("href")?.value;
+
+  return {
+    pagespeedPoints: score,
+    website: url,
+    name: name[0] ?? ogTitle ?? decoState?.name,
+    favicon: faviconUrl
+      ? `${url}${faviconUrl.replace("/", "")}`
+      : `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${url}&size=32`,
+    poweredBy: {
+      deco: Boolean(decoState),
+      vtex: isVTEX,
+      vnda: isVnda,
+      shopify: isShopify,
+    },
+  };
+};
 
 const ranking: {
   list: Site[];
@@ -30,7 +75,71 @@ const ranking: {
   update: (s: Site) => void;
   add: (s: Site) => void;
 } = {
-  list: [],
+  list: [
+    {
+      pagespeedPoints: 80,
+      website: "https://www.lolja.com.br/",
+      name: "LOLJA - Atelier do Sicko LTDA",
+      favicon: "https://www.lolja.com.br/favicon.ico?v=1682538853",
+      poweredBy: {
+        deco: false,
+        vtex: false,
+        vnda: true,
+        shopify: false,
+      },
+    },
+    {
+      pagespeedPoints: 80,
+      website: "https://onevc.deco.site/",
+      name: "ONEVC",
+      favicon:
+        "https://onevc.deco.site/favicon-32x32.png?__frsh_c=7zpp0pez23y0",
+      poweredBy: {
+        deco: true,
+        vtex: false,
+        vnda: false,
+        shopify: false,
+      },
+    },
+    {
+      pagespeedPoints: 80,
+      website: "https://www.ibyte.com.br/",
+      name: "ibyte",
+      favicon:
+        "https://www.ibyte.com.br//lojaibyte.vteximg.com.br/arquivos/lojaibyte-favicon.ico?v=637250178839800000",
+      poweredBy: {
+        deco: false,
+        vtex: true,
+        vnda: false,
+        shopify: false,
+      },
+    },
+    {
+      pagespeedPoints: 80,
+      website: "https://new.zeedog.com.br/",
+      name: "Coleiras, guias e peitorais para cachorros | Zee.Dog",
+      favicon: "https://new.zeedog.com.br/apple-touch-icon.png",
+      poweredBy: {
+        deco: true,
+        vtex: true,
+        vnda: false,
+        shopify: false,
+      },
+    },
+    {
+      pagespeedPoints: 80,
+      website: "https://www.sallve.com.br/",
+      name: "Sallve",
+      favicon:
+        "https://www.sallve.com.br//cdn.shopify.com/s/files/1/0074/3486/2639/files/favicon_d74c4991-033d-4948-81c5-b86e334224f7.png?crop=center&height=32&v=1670006971&width=32",
+      poweredBy: {
+        deco: false,
+        vtex: false,
+        vnda: false,
+        shopify: true,
+      },
+    },
+  ],
   sort: function () {
     this.list = this.list.sort((a, b) => b.pagespeedPoints - a.pagespeedPoints);
   },
@@ -82,12 +191,13 @@ export const handler: Handlers = {
     const score = (data?.score.mean ?? -1) * 100;
 
     if (score >= 80) {
-      const newSite = {
-        pagespeedPoints: Number(score.toFixed(0)),
-        name: "test",
-        website: url,
-        poweredBy: "",
-      };
+      const newSite = await normalizeSite(url, score);
+
+      if (!newSite) {
+        return new Response("Site connection problem", {
+          status: 400,
+        });
+      }
 
       let status;
       if (ranking.check(newSite)) {
@@ -131,4 +241,17 @@ interface Cumulativelayoutshift {
   confidence_interval: number[];
   mean: number;
   std_dev: number;
+}
+
+export interface Site {
+  pagespeedPoints: number;
+  name: string;
+  website: string;
+  poweredBy: {
+    deco: boolean;
+    vtex: boolean;
+    vnda: boolean;
+    shopify: boolean;
+  };
+  favicon: string;
 }

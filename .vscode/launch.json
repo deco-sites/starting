@@ -13,8 +13,8 @@
       "runtimeExecutable": "/usr/local/bin/deno",
       "runtimeArgs": [
         "run",
-        "--inspect-wait",
-        "--allow-all"
+        "-A",
+        "--inspect"
       ],
       "attachSimplePort": 9229
     }

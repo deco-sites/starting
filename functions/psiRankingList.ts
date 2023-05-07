@@ -1,9 +1,9 @@
 import type { LoaderFunction } from "$live/types.ts";
-import type { Site } from "deco-sites/starting/components/ranking/RankingList.tsx";
+import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
 
 /**
- * @title GitHub Raw Loader
- * @description Grabs data from a GitHub repo
+ * @title PageSpeed Insights Ranking Loader
+ * @description Gets ranking information
  */
 const psiRankingListLoader: LoaderFunction<null, Site[]> = async (req) => {
   const url = new URL(req.url);

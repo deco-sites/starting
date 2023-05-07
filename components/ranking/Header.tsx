@@ -18,6 +18,18 @@ export default function Header({ languages, size = "normal" }: Props) {
               body {
                 background-image: linear-gradient(180deg, #0A2121 0%, #053535 100%);
               }
+              .poweredby-list > div + div:before {
+                content: "+";
+                display: block;
+                margin-right: 4px;
+              }
+              @media screen and (min-width: 768px) {
+                .poweredby-list > div + div:before {
+                  content: "+";
+                  display: block;
+                  margin-right: 8px;
+                }
+              }
             `,
           }}
         />

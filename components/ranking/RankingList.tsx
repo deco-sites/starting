@@ -1,12 +1,6 @@
 import { SiteItem } from "./list/SiteItem.tsx";
+import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
 import { LoaderReturnType } from "$live/types.ts";
-
-export interface Site {
-  pagespeedPoints: number;
-  name: string;
-  website: string;
-  poweredBy?: string;
-}
 
 export interface Props {
   title: string;
@@ -42,7 +36,7 @@ export default function RankingList({
         </h1>
         {sites.length
           ? (
-            <table class="w-full text-left table-auto">
+            <table class="w-full text-left table-auto border-spacing-1">
               <thead class="md:table-header-group hidden">
                 <th></th>
                 <th class="font-semibold text-base text-center">{pagespeed}</th>

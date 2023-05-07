@@ -1,11 +1,20 @@
-import type { Site } from "../RankingList.tsx";
-import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
+import Icon, {
+  AvailableIcons,
+} from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface Props {
   site: Site;
   position: number;
   hideFavicons: boolean;
 }
+
+const logoIds: Record<string, AvailableIcons> = {
+  vnda: "VndaLogo",
+  vtex: "VTEXLogo",
+  shopify: "ShopifyLogo",
+  deco: "Deco",
+};
 
 export function SiteItem({ position, site, hideFavicons }: Props) {
   const url = new URL(site.website);
@@ -38,16 +47,16 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
           </span>
         </div>
       </td>
-      <td class="">
-        <a href={site.website}>
+      <td class="max-w-[300px]">
+        <a href={site.website} class="flex items-center">
           {hideFavicons
             ? null
             : (
-              <div class="md:p-[10px] p-[6px] rounded-full bg-white md:mr-4 mr-2 inline-block align-middle">
+              <div class="min-w-[24px] min-h-[24px] max-w-[24px] max-h-[24px] md:max-w-[40px] md:max-h-[40px] md:min-w-[40px] md:min-h-[40px] md:p-[10px] p-[6px] rounded-full bg-white md:mr-4 mr-2 inline-block align-middle">
                 <img
                   width={20}
                   height={20}
-                  class="w-3 h-3 md:w-5 md:h-5"
+                  class="w-full h-full"
                   src={`https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${site.website}&size=32`}
                 />
               </div>
@@ -61,20 +70,24 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
         <a href={site.website}>{url.host.replace("www.", "")}</a>
       </td>
       <td>
-        <div class="flex md:gap-2 gap-1 items-center justify-end md:justify-start">
-          <Icon
-            class="md:w-[69px] md:h-[28px] w-[35px] h-[14px] "
-            id="VndaLogo"
-            width={69}
-            height={28}
-          />
-          +
-          <Icon
-            class="md:w-[66px] md:h-[24px] w-[33px] h-[12px] "
-            id="VTEXLogo"
-            width={66}
-            height={24}
-          />
+        <div class="poweredby-list flex md:gap-2 gap-1 items-center justify-end md:justify-start">
+          {Object.entries(site.poweredBy).map(([key, value]) =>
+            value
+              ? (
+                <div class="flex items-center justify-center">
+                  <Icon
+                    class={`md:w-[69px] w-[35px] ${
+                      key === "deco" ? "text-primary" : ""
+                    }`}
+                    id={logoIds[key]}
+                    strokeWidth={1}
+                    width={70}
+                    height={30}
+                  />
+                </div>
+              )
+              : null
+          )}
         </div>
       </td>
     </tr>
