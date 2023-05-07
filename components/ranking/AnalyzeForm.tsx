@@ -111,22 +111,30 @@ export default function AnalyzeForm({ translations }: Props) {
   return (
     <div class="flex min-h-[100vh] flex-col justify-center items-center text-almost-white px-6 md:px-0">
       {(!response.value.data && !response.value.loading) ||
-      response.value.error ? (
-        <Form onSubmit={handleSubmit} translations={translations} ref={input} />
-      ) : null}
+          response.value.error
+        ? (
+          <Form
+            onSubmit={handleSubmit}
+            translations={translations}
+            ref={input}
+          />
+        )
+        : null}
       {response.value.data &&
-      !response.value.error &&
-      !response.value.loading ? (
-        <Result
-          status={response.value.status}
-          translations={translations}
-          sites={response.value.data}
-          site={response.value.url}
-        />
-      ) : null}
-      {response.value.loading ? (
-        <Loading site={response.value.url} translations={translations} />
-      ) : null}
+          !response.value.error &&
+          !response.value.loading
+        ? (
+          <Result
+            status={response.value.status}
+            translations={translations}
+            sites={response.value.data}
+            site={response.value.url}
+          />
+        )
+        : null}
+      {response.value.loading
+        ? <Loading site={response.value.url} translations={translations} />
+        : null}
     </div>
   );
 }
