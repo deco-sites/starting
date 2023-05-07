@@ -49,7 +49,7 @@ export interface Props {
 export default function AnalyzeForm({ translations }: Props) {
   const input = useRef<HTMLInputElement>(null);
   const response = useSignal<FetchData>({
-    loading: true,
+    loading: false,
     data: null,
     error: false,
     url: "",
@@ -85,9 +85,11 @@ export default function AnalyzeForm({ translations }: Props) {
               ...response.peek(),
               status: res.status,
             };
-            return res.json();
+            return res.text();
           })
-          .then((data) => {
+          .then((textContent) => {
+            const data = textContent ? JSON.parse(textContent) : [];
+
             response.value = {
               ...response.peek(),
               url: psURL,

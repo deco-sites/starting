@@ -31,21 +31,23 @@ export default function Result({ status, translations, sites, site }: Props) {
         <h1 class="md:text-5xl text-3xl text-center font-semibold">
           {translations.result.title}
         </h1>
-        {status !== 204 ? (
-          <div class="relative mt-6">
-            <div class="pointer-events-none bg-[linear-gradient(180deg,rgb(9,39,39),rgba(6,53,53,0))] absolute h-[70px] md:h-[100px] w-screen top-0 left-1/2 -translate-x-1/2" />
-            <div class="max-h-[190px] md:max-h-[290px] overflow-hidden">
-              <div class="md:py-24 py-16">
-                <SiteList sites={sites} hideHeader />
+        {status !== 204
+          ? (
+            <div class="relative mt-6">
+              <div class="pointer-events-none bg-[linear-gradient(180deg,rgb(9,39,39),rgba(6,53,53,0))] absolute h-[70px] md:h-[100px] w-screen top-0 left-1/2 -translate-x-1/2" />
+              <div class="max-h-[190px] md:max-h-[290px] overflow-hidden">
+                <div class="md:py-24 py-16">
+                  <SiteList sites={sites} hideHeader />
+                </div>
               </div>
+              <div class="pointer-events-none bg-[linear-gradient(180deg,rgba(6,53,53,0),rgb(8,46,47))] absolute h-[70px] md:h-[100px] w-screen bottom-0 left-1/2 -translate-x-1/2" />
             </div>
-            <div class="pointer-events-none bg-[linear-gradient(180deg,rgba(6,53,53,0),rgb(8,46,47))] absolute h-[70px] md:h-[100px] w-screen bottom-0 left-1/2 -translate-x-1/2" />
-          </div>
-        ) : (
-          <p class="md:text-3xl text-2xl mt-4 text-center">
-            {translations.result.failure}
-          </p>
-        )}
+          )
+          : (
+            <p class="md:text-3xl text-2xl mt-4 text-center">
+              {translations.result.failure}
+            </p>
+          )}
       </div>
       <div class="md:pb-20 pb-6 flex md:flex-row flex-col md:gap-6 gap-4">
         {translations.result.links.map((link) => (

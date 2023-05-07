@@ -2,7 +2,7 @@ import { Handlers } from "$fresh/server.ts";
 import { DOMParser } from "deno-dom";
 
 const parseBody = async <T>(
-  body: ReadableStream<Uint8Array> | null,
+  body: ReadableStream<Uint8Array> | null
 ): Promise<T | null> => {
   if (body === null) {
     return null;
@@ -19,7 +19,7 @@ const parseBody = async <T>(
 
 const normalizeSite = async (
   _url: string,
-  score: number,
+  score: number
 ): Promise<Site | null> => {
   const url = new URL(_url).origin;
 
@@ -29,7 +29,7 @@ const normalizeSite = async (
   if (!document) return null;
 
   const decoState = JSON.parse(
-    document.querySelector("#__DECO_STATE")?.textContent ?? "null",
+    document.querySelector("#__DECO_STATE")?.textContent ?? "null"
   );
 
   const isVTEX = html.includes(".vteximg.") || html.includes(".vtexassets.");
@@ -57,7 +57,7 @@ const normalizeSite = async (
     ?.attributes.getNamedItem("href")?.value;
 
   return {
-    pagespeedPoints: score,
+    pagespeedPoints: Math.ceil(score),
     website: url,
     name: name[0] ?? ogTitle ?? titleTag ?? decoState?.name,
     favicon: faviconUrl
@@ -81,90 +81,7 @@ const ranking: {
   add: (s: Site) => void;
   removeLast: () => void;
 } = {
-  list: [
-    {
-      pagespeedPoints: 81,
-      website: "https://www.lolja.com.br",
-      name: "LOLJA - Atelier do Sicko LTDA",
-      favicon: "https://www.lolja.com.br/favicon.ico?v=1682538853",
-      poweredBy: {
-        deco: false,
-        vtex: false,
-        vnda: true,
-        shopify: false,
-        occ: false,
-      },
-    },
-    {
-      pagespeedPoints: 94,
-      website: "https://onevc.deco.site",
-      name: "ONEVC",
-      favicon:
-        "https://onevc.deco.site/favicon-32x32.png?__frsh_c=7zpp0pez23y0",
-      poweredBy: {
-        deco: true,
-        vtex: false,
-        vnda: false,
-        shopify: false,
-        occ: false,
-      },
-    },
-    {
-      pagespeedPoints: 80,
-      website: "https://www.ibyte.com.br",
-      name: "ibyte",
-      favicon:
-        "https://www.ibyte.com.br//lojaibyte.vteximg.com.br/arquivos/lojaibyte-favicon.ico?v=637250178839800000",
-      poweredBy: {
-        deco: false,
-        vtex: true,
-        vnda: false,
-        shopify: false,
-        occ: false,
-      },
-    },
-    {
-      pagespeedPoints: 85,
-      website: "https://new.zeedog.com.br",
-      name: "Coleiras, guias e peitorais para cachorros | Zee.Dog",
-      favicon: "https://new.zeedog.com.br/apple-touch-icon.png",
-      poweredBy: {
-        deco: true,
-        vtex: true,
-        vnda: false,
-        shopify: false,
-        occ: false,
-      },
-    },
-    {
-      pagespeedPoints: 81,
-      website: "https://www.sallve.com.br",
-      name: "Sallve",
-      favicon:
-        "https://www.sallve.com.br//cdn.shopify.com/s/files/1/0074/3486/2639/files/favicon_d74c4991-033d-4948-81c5-b86e334224f7.png?crop=center&height=32&v=1670006971&width=32",
-      poweredBy: {
-        deco: false,
-        vtex: false,
-        vnda: false,
-        shopify: true,
-        occ: false,
-      },
-    },
-    {
-      pagespeedPoints: 80,
-      website: "https://www.webcontinental.com.br",
-      name: "WebContinental - Sua melhor escolha",
-      favicon:
-        "https://www.webcontinental.com.br/file/v6505997660124336710/general/ms-icon-310x310.png",
-      poweredBy: {
-        deco: false,
-        vtex: false,
-        vnda: false,
-        shopify: false,
-        occ: true,
-      },
-    },
-  ],
+  list: [],
   sort: function () {
     this.list = this.list.sort((a, b) => b.pagespeedPoints - a.pagespeedPoints);
   },
@@ -197,7 +114,6 @@ export const handler: Handlers = {
   // analyze site
   async POST(req) {
     const body = await parseBody<{ url: string }>(req.body);
-    new Response("Invalid request: body is null");
 
     if (!body || !body?.url) {
       return new Response("Invalid request: Insert a URL", {
@@ -206,18 +122,17 @@ export const handler: Handlers = {
     }
     const { url } = body;
 
-    // const { data }: PageSpeedResponse = await fetch(
-    //   `https://psi-test-api.fly.dev/?t=AIzaSyADcbhTjzpb5EGL0ACHhMtFD2i9sJMsn3I&n=10&url=${url}`,
-    // ).then((res) => res.json());
+    const { data }: PageSpeedResponse = await fetch(
+      `https://psi-test-api.fly.dev/?t=AIzaSyADcbhTjzpb5EGL0ACHhMtFD2i9sJMsn3I&n=10&url=${url}`
+    ).then((res) => res.json());
 
-    // if (!data) {
-    //   return new Response("Insert a correct URL", {
-    //     status: 400,
-    //   });
-    // }
+    if (!data) {
+      return new Response("Insert a correct URL", {
+        status: 400,
+      });
+    }
 
-    // const score = (data?.score.mean ?? -1) * 100;
-    const score = 80;
+    const score = (data?.score.mean ?? -1) * 100;
 
     if (score >= 80) {
       const newSite = await normalizeSite(url, score);
@@ -248,7 +163,10 @@ export const handler: Handlers = {
       });
     }
 
-    return new Response(null, { status: 204 });
+    return new Response(null, {
+      status: 204,
+      headers: { "Content-Type": "application/json" },
+    });
   },
 };
 
