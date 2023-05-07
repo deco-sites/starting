@@ -20,7 +20,10 @@ const logoIds: Record<string, AvailableIcons> = {
 export function SiteItem({ position, site, hideFavicons }: Props) {
   const url = new URL(site.website);
   return (
-    <tr class={`${position > 1 ? "border-t-[1px]" : ""} border-[#525252]`}>
+    <tr
+      id={url.origin}
+      class={`${position > 1 ? "border-t-[1px]" : ""} border-[#525252]`}
+    >
       <td class="md:text-xl text-sm font-semibold">{position}</td>
       <td class="md:w-[150px] text-center">
         <div class="inline-flex relative justify-center md:py-6 py-4 px-2">
@@ -50,18 +53,16 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
       </td>
       <td class="max-w-[300px]">
         <a href={site.website} class="flex items-center">
-          {hideFavicons
-            ? null
-            : (
-              <div class="min-w-[24px] min-h-[24px] max-w-[24px] max-h-[24px] md:max-w-[40px] md:max-h-[40px] md:min-w-[40px] md:min-h-[40px] md:p-[10px] p-[6px] rounded-full bg-white md:mr-4 mr-2 inline-block align-middle">
-                <img
-                  width={20}
-                  height={20}
-                  class="w-full h-full"
-                  src={`https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${site.website}&size=32`}
-                />
-              </div>
-            )}
+          {hideFavicons ? null : (
+            <div class="min-w-[24px] min-h-[24px] max-w-[24px] max-h-[24px] md:max-w-[40px] md:max-h-[40px] md:min-w-[40px] md:min-h-[40px] md:p-[10px] p-[6px] rounded-full bg-white md:mr-4 mr-2 inline-block align-middle">
+              <img
+                width={20}
+                height={20}
+                class="w-full h-full"
+                src={`https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${site.website}&size=32`}
+              />
+            </div>
+          )}
           <span class="md:text-[28px] md:leading-[32px] text-base inline-block align-middle font-semibold">
             {site.name}
           </span>
@@ -73,21 +74,19 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
       <td>
         <div class="poweredby-list flex items-center justify-end md:justify-center">
           {Object.entries(site.poweredBy).map(([key, value]) =>
-            value
-              ? (
-                <div class="flex items-center justify-center">
-                  <Icon
-                    class={`md:w-[120px] w-[60px] ${
-                      key === "deco" ? "text-primary" : ""
-                    }`}
-                    id={logoIds[key]}
-                    strokeWidth={1}
-                    width={120}
-                    height={32}
-                  />
-                </div>
-              )
-              : null
+            value ? (
+              <div class="flex items-center justify-center">
+                <Icon
+                  class={`md:w-[120px] w-[60px] ${
+                    key === "deco" ? "text-primary" : ""
+                  }`}
+                  id={logoIds[key]}
+                  strokeWidth={1}
+                  width={120}
+                  height={32}
+                />
+              </div>
+            ) : null
           )}
         </div>
       </td>

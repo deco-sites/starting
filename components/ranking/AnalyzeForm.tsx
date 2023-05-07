@@ -29,6 +29,7 @@ export interface AnalyzeFormTranslation {
   };
   result: {
     title: string;
+    failure: string;
     links: Link[];
   };
 }
@@ -106,7 +107,7 @@ export default function AnalyzeForm({ translations }: Props) {
   };
 
   return (
-    <div class="max-w-[750px] mx-auto flex min-h-[100vh] flex-col justify-center items-center text-almost-white px-6 md:px-0">
+    <div class="flex min-h-[100vh] flex-col justify-center items-center text-almost-white px-6 md:px-0">
       {(!response.value.data && !response.value.loading) ||
       response.value.error ? (
         <Form onSubmit={handleSubmit} translations={translations} ref={input} />

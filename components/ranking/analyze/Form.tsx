@@ -10,7 +10,7 @@ export interface Props {
 const Form = forwardRef<HTMLInputElement, Props>(
   ({ translations, onSubmit }, ref) => {
     return (
-      <>
+      <article class="max-w-[750px]">
         <h1 class="text-3xl md:text-5xl font-semibold md:mb-10 mb-6 text-center">
           {translations.title}
         </h1>
@@ -36,9 +36,9 @@ const Form = forwardRef<HTMLInputElement, Props>(
             {translations.form.button}
           </button>
         </form>
-      </>
+      </article>
     );
-  },
+  }
 );
 
 export default Form;

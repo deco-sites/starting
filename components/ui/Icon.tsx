@@ -51,6 +51,7 @@ export type AvailableIcons =
   | "ShopifyLogo"
   | "DecoLogo"
   | "OCCLogo"
+  | "ArrowRight"
   | "Support";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {

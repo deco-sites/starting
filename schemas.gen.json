@@ -3325,6 +3325,10 @@
               "type": "string",
               "title": "Title"
             },
+            "failure": {
+              "type": "string",
+              "title": "Failure"
+            },
             "links": {
               "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Link[]",
               "title": "Links"
@@ -3332,6 +3336,7 @@
           },
           "required": [
             "title",
+            "failure",
             "links"
           ],
           "title": "Result"
@@ -3893,6 +3898,10 @@
             {
               "type": "string",
               "const": "OCCLogo"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRight"
             },
             {
               "type": "string",
@@ -5140,6 +5149,34 @@
       ],
       "title": "deco-sites/std/components/QuillText.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@TableHeaderTranslations": {
+      "type": "object",
+      "properties": {
+        "pagespeed": {
+          "type": "string",
+          "title": "Pagespeed"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "website": {
+          "type": "string",
+          "title": "Website"
+        },
+        "poweredBy": {
+          "type": "string",
+          "title": "Powered By"
+        }
+      },
+      "required": [
+        "pagespeed",
+        "name",
+        "website",
+        "poweredBy"
+      ],
+      "title": "TableHeaderTranslations"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@Props": {
       "type": "object",
       "properties": {
@@ -5148,31 +5185,7 @@
           "title": "Title"
         },
         "tableHeader": {
-          "type": "object",
-          "properties": {
-            "pagespeed": {
-              "type": "string",
-              "title": "Pagespeed"
-            },
-            "name": {
-              "type": "string",
-              "title": "Name"
-            },
-            "website": {
-              "type": "string",
-              "title": "Website"
-            },
-            "poweredBy": {
-              "type": "string",
-              "title": "Powered By"
-            }
-          },
-          "required": [
-            "pagespeed",
-            "name",
-            "website",
-            "poweredBy"
-          ],
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvUmFua2luZ0xpc3QudHN4@TableHeaderTranslations",
           "title": "Table Header"
         },
         "footer": {
