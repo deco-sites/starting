@@ -8,13 +8,20 @@ import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
 const psiRankingListLoader: LoaderFunction<null, Site[]> = async (req) => {
   const url = new URL(req.url);
 
-  const res = await fetch(`${url.origin}/api/ranking`).then((res) =>
-    res.text()
-  );
+  try {
+    const res = await fetch(`${url.origin}/api/ranking`).then((res) =>
+      res.text()
+    );
 
-  return {
-    data: JSON.parse(res),
-  };
+    return {
+      data: JSON.parse(res),
+    };
+  } catch (err) {
+    console.log(err);
+    return {
+      data: null,
+    };
+  }
 };
 
 export default psiRankingListLoader;
