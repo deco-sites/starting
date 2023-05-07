@@ -18,7 +18,7 @@ export interface Props {
     linkHref?: string;
   };
   hideFavicons?: boolean;
-  sites: LoaderReturnType<Site[]>;
+  sites: LoaderReturnType<string>;
 }
 
 export default function RankingList({
@@ -26,8 +26,9 @@ export default function RankingList({
   hideFavicons = false,
   tableHeader,
   footer,
-  sites = [],
+  sites,
 }: Props) {
+  console.log(sites);
   return (
     <div class="min-h-[calc(100vh-98px)] text-zinc-100 flex justify-between flex-col max-w-screen-xl px-6 md:px-10 mx-auto">
       <div>
@@ -37,7 +38,7 @@ export default function RankingList({
         {sites.length
           ? (
             <SiteList
-              sites={sites}
+              sites={[]}
               translations={tableHeader}
               hideFavicons={hideFavicons}
             />
