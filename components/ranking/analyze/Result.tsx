@@ -5,6 +5,7 @@ export interface Props {
   status: number;
   translations: AnalyzeFormTranslation;
   sites: Site[];
+  site: string;
 }
 
 export default function Result({ status, translations, sites }: Props) {

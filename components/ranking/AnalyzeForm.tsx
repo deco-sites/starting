@@ -21,6 +21,9 @@ export interface AnalyzeFormTranslation {
     error: string;
   };
   loading: {
+    /**
+     * @description You can insert {{pageName}} where you desires to replace by site URL
+     */
     title: string;
     description: string;
   };
@@ -45,7 +48,7 @@ export interface Props {
 export default function AnalyzeForm({ translations }: Props) {
   const input = useRef<HTMLInputElement>(null);
   const response = useSignal<FetchData>({
-    loading: false,
+    loading: true,
     data: null,
     error: false,
     url: "",
@@ -105,27 +108,22 @@ export default function AnalyzeForm({ translations }: Props) {
   return (
     <div class="max-w-[750px] mx-auto flex min-h-[100vh] flex-col justify-center items-center text-almost-white px-6 md:px-0">
       {(!response.value.data && !response.value.loading) ||
-          response.value.error
-        ? (
-          <Form
-            onSubmit={handleSubmit}
-            translations={translations}
-            ref={input}
-          />
-        )
-        : null}
+      response.value.error ? (
+        <Form onSubmit={handleSubmit} translations={translations} ref={input} />
+      ) : null}
       {response.value.data &&
-          !response.value.error &&
-          !response.value.loading
-        ? (
-          <Result
-            status={response.value.status}
-            translations={translations}
-            sites={response.value.data}
-          />
-        )
-        : null}
-      {response.value.loading ? <Loading translations={translations} /> : null}
+      !response.value.error &&
+      !response.value.loading ? (
+        <Result
+          status={response.value.status}
+          translations={translations}
+          sites={response.value.data}
+          site={response.value.url}
+        />
+      ) : null}
+      {response.value.loading ? (
+        <Loading site={response.value.url} translations={translations} />
+      ) : null}
     </div>
   );
 }
