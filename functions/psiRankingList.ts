@@ -1,11 +1,14 @@
 import type { LoaderFunction } from "$live/types.ts";
-import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
+// import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
 
 /**
  * @title PageSpeed Insights Ranking Loader
  * @description Gets ranking information
  */
-const psiRankingListLoader: LoaderFunction<null, Site[]> = async (req) => {
+const psiRankingListLoader: LoaderFunction<
+  null,
+  { test: string } | null
+> = async (req) => {
   const url = new URL(req.url);
 
   try {
@@ -14,7 +17,9 @@ const psiRankingListLoader: LoaderFunction<null, Site[]> = async (req) => {
     );
 
     return {
-      data: JSON.parse(res),
+      data: {
+        test: res,
+      },
     };
   } catch (err) {
     console.log(err);
