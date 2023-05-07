@@ -73,7 +73,7 @@ const normalizeSite = async (
   };
 };
 
-const ranking: {
+export const ranking: {
   list: Site[];
   check: (s: Site) => boolean;
   sort: () => void;
@@ -104,13 +104,6 @@ const ranking: {
 };
 
 export const handler: Handlers = {
-  // list site ranking
-  GET(_req) {
-    ranking.sort();
-    return new Response(JSON.stringify(ranking.list), {
-      headers: { "Content-Type": "application/json" },
-    });
-  },
   // analyze site
   async POST(req) {
     const body = await parseBody<{ url: string }>(req.body);

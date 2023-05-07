@@ -330,6 +330,99 @@
       "required": [],
       "title": "deco-sites/starting/sections/BlogPostHeader.tsx@PropNull"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9yb3V0ZXMvYXBpL3JhbmtpbmcudHM=@Site": {
+      "type": "object",
+      "properties": {
+        "pagespeedPoints": {
+          "type": "number",
+          "title": "Pagespeed Points"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "website": {
+          "type": "string",
+          "title": "Website"
+        },
+        "poweredBy": {
+          "type": "object",
+          "properties": {
+            "deco": {
+              "type": "boolean",
+              "title": "Deco"
+            },
+            "vtex": {
+              "type": "boolean",
+              "title": "Vtex"
+            },
+            "vnda": {
+              "type": "boolean",
+              "title": "Vnda"
+            },
+            "shopify": {
+              "type": "boolean",
+              "title": "Shopify"
+            },
+            "occ": {
+              "type": "boolean",
+              "title": "Occ"
+            }
+          },
+          "required": [
+            "deco",
+            "vtex",
+            "vnda",
+            "shopify",
+            "occ"
+          ],
+          "title": "Powered By"
+        },
+        "favicon": {
+          "type": "string",
+          "title": "Favicon"
+        }
+      },
+      "required": [
+        "pagespeedPoints",
+        "name",
+        "website",
+        "poweredBy",
+        "favicon"
+      ],
+      "title": "Site"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9yb3V0ZXMvYXBpL3JhbmtpbmcudHM=@Site[]": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/Resolvable"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9yb3V0ZXMvYXBpL3JhbmtpbmcudHM=@Site"
+          },
+          "title": "deco-sites/starting/routes/api/ranking.ts@Site[]"
+        },
+        {
+          "title": "PageSpeed Insights Ranking Loader",
+          "description": "Gets ranking information",
+          "type": "object",
+          "required": [
+            "__resolveType"
+          ],
+          "properties": {
+            "__resolveType": {
+              "type": "string",
+              "enum": [
+                "deco-sites/starting/functions/psiRankingList.ts"
+              ],
+              "default": "deco-sites/starting/functions/psiRankingList.ts"
+            }
+          }
+        }
+      ]
+    },
     "ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Thing": {
       "title": "Thing"
     },
@@ -5130,16 +5223,7 @@
           "title": "Hide Favicons"
         },
         "sites": {
-          "type": "object",
-          "properties": {
-            "test": {
-              "type": "string",
-              "title": "Test"
-            }
-          },
-          "required": [
-            "test"
-          ],
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9yb3V0ZXMvYXBpL3JhbmtpbmcudHM=@Site[]",
           "title": "Sites"
         }
       },
