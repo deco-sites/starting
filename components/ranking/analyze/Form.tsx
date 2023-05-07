@@ -38,7 +38,7 @@ const Form = forwardRef<HTMLInputElement, Props>(
         </form>
       </>
     );
-  }
+  },
 );
 
 export default Form;

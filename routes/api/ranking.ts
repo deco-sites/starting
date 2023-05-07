@@ -2,7 +2,7 @@ import { Handlers } from "$fresh/server.ts";
 import { DOMParser } from "deno-dom";
 
 const parseBody = async <T>(
-  body: ReadableStream<Uint8Array> | null
+  body: ReadableStream<Uint8Array> | null,
 ): Promise<T | null> => {
   if (body === null) {
     return null;
@@ -19,7 +19,7 @@ const parseBody = async <T>(
 
 const normalizeSite = async (
   _url: string,
-  score: number
+  score: number,
 ): Promise<Site | null> => {
   const url = new URL(_url).origin;
 
@@ -29,7 +29,7 @@ const normalizeSite = async (
   if (!document) return null;
 
   const decoState = JSON.parse(
-    document.querySelector("#__DECO_STATE")?.textContent ?? "null"
+    document.querySelector("#__DECO_STATE")?.textContent ?? "null",
   );
 
   const isVTEX = html.includes(".vteximg.") || html.includes(".vtexassets.");
