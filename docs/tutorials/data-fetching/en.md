@@ -99,7 +99,6 @@ Loader**.
 2. Export a function called `loader` in the same file as your Section.
 
 ```ts
-import type { LoaderContext } from "$live/types.ts";
 import type { SectionProps } from "$live/mod.ts";
 
 // Props type that will be configured in deco.cx's Admin
@@ -109,8 +108,8 @@ export interface Props {
 }
 
 export async function loader(
+  { numberOfFacts, title }: Props,
   _req: Request,
-  { state: { $live: { numberOfFacts, title } } }: LoaderContext<Props>,
 ) {
   const { facts: dogFacts } = (await fetch(
     `https://dogapi.dog/api/facts?number=${numberOfFacts ?? 1}`,
