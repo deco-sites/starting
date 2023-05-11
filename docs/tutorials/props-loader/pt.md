@@ -18,7 +18,6 @@ direta para o componente, sem que haja nenhum uso pelo loader em si.
 Tomemos como exemplo o loader abaixo:
 
 ```ts
-import type { LoaderContext } from "$live/types.ts";
 import type { SectionProps } from "$live/mod.ts";
 
 // Props type that will be configured in deco.cx's Admin
@@ -28,8 +27,8 @@ export interface Props {
 }
 
 export async function loader(
+  { numberOfFacts, title }: Props,
   _req: Request,
-  { state: { $live: { numberOfFacts, title } } }: LoaderContext<Props>,
 ) {
   const { facts: dogFacts } = (await fetch(
     `https://dogapi.dog/api/facts?number=${numberOfFacts ?? 1}`,
@@ -78,8 +77,8 @@ export interface LoadProps {
 }
 
 async function dogFacts(
-  _req: Request,
-  { state: { $live: { numberOfFacts } } }: LoaderContext<LoadProps>,
+  { numberOfFacts }: LoadProps,
+  _req: Request
 ): Promise<string[]> {
   const { facts } = (await fetch(
     `https://dogapi.dog/api/facts?number=${numberOfFacts ?? 1}`,
@@ -97,7 +96,6 @@ Agora, vamos;
 
 ```ts
 import { PropsLoader } from "$live/mod.ts";
-import type { LoaderContext } from "$live/types.ts";
 
 // Props type that will be configured in deco.cx's Admin
 export interface LoadProps {
@@ -106,8 +104,8 @@ export interface LoadProps {
 }
 
 async function dogFacts(
-  _req: Request,
-  { state: { $live: { numberOfFacts } } }: LoaderContext<LoadProps>,
+  { numberOfFacts }: LoadProps,
+  _req: Request
 ): Promise<string[]> {
   const { facts } = (await fetch(
     `https://dogapi.dog/api/facts?number=${numberOfFacts ?? 1}`,
@@ -132,8 +130,8 @@ export default function DogFacts({ title, dogFacts }: Props) {
 }
 
 export const loader: PropsLoader<
+  LoadProps,
   Props,
-  LoadProps
 > = {
   dogFacts,
 };
