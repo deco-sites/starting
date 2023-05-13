@@ -123,7 +123,7 @@ export default function MainBanner(
             <div id="buttons-wrapper" class="w-full flex flex-col gap-4 ">
               <a
                 class={(themeIsLigth ? "bg-dark-green" : "bg-white") + " " +
-                  "w-full group flex justify-center items-center gap-[10px] rounded p-[14px] border border-dark-green"}
+                  "hidden md:flex w-full group justify-center items-center gap-[10px] rounded p-[14px] border border-dark-green"}
                 href={buttonCta1?.href}
               >
                 <span
