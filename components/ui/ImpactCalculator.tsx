@@ -40,6 +40,7 @@ export default function ImpactCalculator(
   const average = useSignal(50);
   const mobileLCP = useSignal(0);
   const desktopLCP = useSignal(0);
+  const showExplanation = useSignal(false);
 
   const desktopPercent = useSignal<number>(50);
   const mobilePercent = useSignal<number>(50);
@@ -89,6 +90,7 @@ export default function ImpactCalculator(
           }
         });
         loading.value = false;
+        showExplanation.value = true;
       });
   };
 
@@ -96,8 +98,8 @@ export default function ImpactCalculator(
     sessions.value != 0 && website.value != "" && mobileLCP.value != 0 &&
     mobileLCP.value != 0
   ) {
-    const secondsInMobile = getSecondsToImprove(mobileLCP.value, 2000);
-    const secondsInDesktop = getSecondsToImprove(desktopLCP.value, 500);
+    const secondsInMobile = getSecondsToImprove(mobileLCP.value, 2500);
+    const secondsInDesktop = getSecondsToImprove(desktopLCP.value, 2500);
 
     const conversionOptimized = getConversionOptimized(
       conversion.value,
@@ -176,6 +178,7 @@ export default function ImpactCalculator(
     const USDollar = new Intl.NumberFormat("en-US", {
       style: "currency",
       currency: "USD",
+      maximumFractionDigits: 0,
     });
 
     return USDollar.format(price!);
@@ -192,16 +195,66 @@ export default function ImpactCalculator(
       >
       </div>
       <div class="px-4 pt-24">
-        <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10">
-          <div class="md:max-w-[40%] flex flex-col gap-4">
+        <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10 overflow-hidden">
+          <div class={`md:max-w-[40%] flex flex-col gap-4`}>
             <p class="text-2xl md:text-5xl text-center md:text-left md:leading-[53px] text-dark-green">
               {mainText}
             </p>
-            <p class="">
+            <p>{potencialIncrease}</p>
+            <p class={`${!showExplanation.value ? 'block' : 'hidden'}`}>
               {delayWarningMessage}
             </p>
           </div>
-          <div>
+          <div class={`${showExplanation.value ? 'block' : 'hidden'} w-full flex items-center`}>
+            <div class="flex flex-col gap-5">
+              <div>
+                <span class="hidden">{potencialIncrease}</span>
+                <p class="text-[44px] md:text-[82px] font-bold overflow-auto flex gap-2 items-baseline">
+                  <span>{formatPrice(Number(revenue))}</span>
+                  <span class="text-[22px] md:text-[32px] font-normal">
+                    / ano
+                  </span>
+                </p>
+                <p class={`${showExplanation.value ? 'block' : 'hidden'}`}>
+                  <button class="underline" onClick={() => { showExplanation.value = false }}>Calcular novamente</button>
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-xl">Como é feito o cálculo?</h3>
+                <div class="text-sm">O LCP (ou velocidade de carregamento percebida) atual do site é de {parseFloat(mobileLCP.value / 1000).toFixed(1)}s no mobile e {parseFloat(desktopLCP.value / 1000).toFixed(1)}s no desktop, podendo ser otimizados para até 2.5s. O Google estima um aumento de 7% na conversão para cada segundo ganho no LCP. Com estes parâmetros chegamos nos seguintes valores:</div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <h4 class="text-xl">Potencial de ganho em um ano</h4>
+                <table class="w-fit">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th class="text-center font-normal px-5 pb-1">Mobile</th>
+                      <th class="text-center font-normal px-5 pb-1">Desktop</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td class="pr-5 pb-1">LCP</td>
+                        <td class="text-center px-5 pb-1">{getSecondsToImprove(mobileLCP.value, 2500).toFixed(1)}s</td>
+                        <td class="text-center px-5 pb-1">{getSecondsToImprove(desktopLCP.value, 2500).toFixed(1)}s</td>
+                    </tr>
+                    <tr>
+                        <td class="pr-5 pb-1">Conversão</td>
+                        <td class="text-center px-5 pb-1">{(getConversionOptimized(conversion.value, getSecondsToImprove(mobileLCP.value, 2500)) - conversion.value).toFixed(2)}%</td>
+                        <td class="text-center px-5 pb-1">{(getConversionOptimized(conversion.value, getSecondsToImprove(desktopLCP.value, 2500)) - conversion.value).toFixed(2)}%</td>
+                    </tr>
+                    <tr>
+                        <td class="pr-5 pb-1">Faturamento</td>
+                        <td class="text-center px-5 pb-1">{formatPrice(getNewRevenue(sessions.value, mobilePercent.value, getConversionOptimized(conversion.value, getSecondsToImprove(mobileLCP.value, 2500)) - conversion.value, average.value ) * 12)}</td>
+                        <td class="text-center px-5 pb-1">{formatPrice(getNewRevenue(sessions.value, desktopPercent.value, getConversionOptimized(conversion.value, getSecondsToImprove(desktopLCP.value, 2500)) - conversion.value, average.value ) * 12)}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class={`${!showExplanation.value ? 'block' : 'hidden'}`}>
             <form action="/api/calc" class="flex flex-col gap-6" onSubmit={(e) => handleSubmit(e)}>
               <div>
                 <label htmlFor={formInfos.websiteLabel}>
@@ -222,7 +275,7 @@ export default function ImpactCalculator(
                   class={`${inputClass}`}
                 />
               </div>
-              <div class="grid grid-cols-3 gap-6 justify-between">
+              <div class="grid grid-cols-3 gap-3 md:gap-6 justify-between">
                 <div class="flex flex-col justify-between">
                   <label htmlFor={formInfos.sessionsLabel}>
                     {formInfos.sessionsLabel}
@@ -307,38 +360,24 @@ export default function ImpactCalculator(
                   </span>
                 </div>
               </div>
-              {revenue.value || revenue.value == 0
-                ? (
-                  <div>
-                    <span>{potencialIncrease}</span>
-                    <p class="text-[44px] md:text-[82px] font-bold overflow-auto">
-                      {formatPrice(Number(revenue))}
-                      <span class="text-[22px] md:text-[32px] font-normal">
-                        USD
-                      </span>
-                    </p>
-                  </div>
-                )
-                : (
-                  <button
-                    class="flex justify-center items-center py-4 group px-6 w-full bg-dark-green text-white rounded-[4px]"
-                  >
-                    {loading.value
-                      ? <Spinner size={20} />
-                      : (
-                        <div class="flex justify-center items-center gap-2">
-                          <p>{buttonText}</p>
-                          <Icon
-                            class="hidden transition lg:group-hover:block"
-                            id="WhiteArrow"
-                            width={15}
-                            height={15}
-                            strokeWidth={"1"}
-                          />
-                        </div>
-                      )}
-                  </button>
-                )}
+                <button
+                  class="flex justify-center items-center h-12 group px-6 w-full bg-dark-green text-white rounded-[4px]"
+                >
+                  {loading.value
+                    ? <Spinner size={20} />
+                    : (
+                      <div class="flex justify-center items-center gap-2">
+                        <p>{buttonText}</p>
+                        <Icon
+                          class="hidden transition lg:group-hover:block"
+                          id="WhiteArrow"
+                          width={15}
+                          height={15}
+                          strokeWidth={"1"}
+                        />
+                      </div>
+                    )}
+                </button>
             </form>
           </div>
         </div>
