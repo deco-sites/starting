@@ -2984,6 +2984,59 @@
           ],
           "title": "Form Infos"
         },
+        "result": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "string",
+              "title": "Year"
+            },
+            "calculateAgain": {
+              "type": "string",
+              "title": "Calculate Again"
+            },
+            "howWeCalculateTitle": {
+              "type": "string",
+              "title": "How We Calculate Title"
+            },
+            "howWeCalculateText1": {
+              "type": "string",
+              "title": "How We Calculate Text1"
+            },
+            "howWeCalculateText2": {
+              "type": "string",
+              "title": "How We Calculate Text2"
+            },
+            "howWeCalculateText3": {
+              "type": "string",
+              "title": "How We Calculate Text3"
+            },
+            "gainInOneYear": {
+              "type": "string",
+              "title": "Gain In One Year"
+            },
+            "conversion": {
+              "type": "string",
+              "title": "Conversion"
+            },
+            "revenue": {
+              "type": "string",
+              "title": "Revenue"
+            }
+          },
+          "required": [
+            "year",
+            "calculateAgain",
+            "howWeCalculateTitle",
+            "howWeCalculateText1",
+            "howWeCalculateText2",
+            "howWeCalculateText3",
+            "gainInOneYear",
+            "conversion",
+            "revenue"
+          ],
+          "title": "Result"
+        },
         "potencialIncrease": {
           "type": "string",
           "title": "Potencial Increase"
@@ -3010,6 +3063,7 @@
       "required": [
         "mainText",
         "formInfos",
+        "result",
         "potencialIncrease",
         "buttonText"
       ],

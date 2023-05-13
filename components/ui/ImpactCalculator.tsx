@@ -15,6 +15,19 @@ export interface Props {
     trafficMobile: string;
     trafficDesktop: string;
   };
+  result: {
+    year: string;
+    calculateAgain: string;
+    howWeCalculateTitle: string;
+    /** @format textarea */
+    howWeCalculateText1: string;
+    howWeCalculateText2: string;
+    /** @format textarea */
+    howWeCalculateText3: string;
+    gainInOneYear: string;
+    conversion: string;
+    revenue: string;
+  },
   potencialIncrease: string;
   buttonText: string;
   bgStripColor?: "bg-dark-green" | "bg-highlight";
@@ -24,6 +37,7 @@ export default function ImpactCalculator(
   {
     mainText,
     formInfos,
+    result,
     potencialIncrease,
     buttonText,
     bgStripColor,
@@ -94,12 +108,15 @@ export default function ImpactCalculator(
       });
   };
 
+  let secondsInMobile = 0;
+  let secondsInDesktop = 0;
+
   if (
     sessions.value != 0 && website.value != "" && mobileLCP.value != 0 &&
     mobileLCP.value != 0
   ) {
-    const secondsInMobile = getSecondsToImprove(mobileLCP.value, 2500);
-    const secondsInDesktop = getSecondsToImprove(desktopLCP.value, 2500);
+    secondsInMobile = getSecondsToImprove(mobileLCP.value, 2500);
+    secondsInDesktop = getSecondsToImprove(desktopLCP.value, 2500);
 
     const conversionOptimized = getConversionOptimized(
       conversion.value,
@@ -195,9 +212,9 @@ export default function ImpactCalculator(
       >
       </div>
       <div class="px-4 pt-24">
-        <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-4 p-4 md:p-16 z-10 overflow-hidden">
+        <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-2 px-5 py-6 md:p-16">
           <div class={`md:max-w-[40%] flex flex-col gap-4`}>
-            <p class="text-2xl md:text-5xl text-center md:text-left md:leading-[53px] text-dark-green">
+            <p class="text-2xl md:text-5xl md:leading-[53px] text-dark-green">
               {mainText}
             </p>
             <p>{potencialIncrease}</p>
@@ -205,53 +222,50 @@ export default function ImpactCalculator(
               {delayWarningMessage}
             </p>
           </div>
-          <div class={`${showExplanation.value ? 'block' : 'hidden'} w-full flex items-center`}>
-            <div class="flex flex-col gap-5">
-              <div>
-                <span class="hidden">{potencialIncrease}</span>
-                <p class="text-[44px] md:text-[82px] font-bold overflow-auto flex gap-2 items-baseline">
-                  <span>{formatPrice(Number(revenue))}</span>
-                  <span class="text-[22px] md:text-[32px] font-normal">
-                    / ano
-                  </span>
-                </p>
-                <p class={`${showExplanation.value ? 'block' : 'hidden'}`}>
-                  <button class="underline" onClick={() => { showExplanation.value = false }}>Calcular novamente</button>
-                </p>
-              </div>
-              <div class="flex flex-col gap-3">
-                <h3 class="text-xl">Como é feito o cálculo?</h3>
-                <div class="text-sm">O LCP (ou velocidade de carregamento percebida) atual do site é de {parseFloat(mobileLCP.value / 1000).toFixed(1)}s no mobile e {parseFloat(desktopLCP.value / 1000).toFixed(1)}s no desktop, podendo ser otimizados para até 2.5s. O Google estima um aumento de 7% na conversão para cada segundo ganho no LCP. Com estes parâmetros chegamos nos seguintes valores:</div>
-              </div>
-              <div class="flex flex-col gap-3">
-                <h4 class="text-xl">Potencial de ganho em um ano</h4>
-                <table class="w-fit">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th class="text-center font-normal px-5 pb-1">Mobile</th>
-                      <th class="text-center font-normal px-5 pb-1">Desktop</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <td class="pr-5 pb-1">LCP</td>
-                        <td class="text-center px-5 pb-1">{getSecondsToImprove(mobileLCP.value, 2500).toFixed(1)}s</td>
-                        <td class="text-center px-5 pb-1">{getSecondsToImprove(desktopLCP.value, 2500).toFixed(1)}s</td>
-                    </tr>
-                    <tr>
-                        <td class="pr-5 pb-1">Conversão</td>
-                        <td class="text-center px-5 pb-1">{(getConversionOptimized(conversion.value, getSecondsToImprove(mobileLCP.value, 2500)) - conversion.value).toFixed(2)}%</td>
-                        <td class="text-center px-5 pb-1">{(getConversionOptimized(conversion.value, getSecondsToImprove(desktopLCP.value, 2500)) - conversion.value).toFixed(2)}%</td>
-                    </tr>
-                    <tr>
-                        <td class="pr-5 pb-1">Faturamento</td>
-                        <td class="text-center px-5 pb-1">{formatPrice(getNewRevenue(sessions.value, mobilePercent.value, getConversionOptimized(conversion.value, getSecondsToImprove(mobileLCP.value, 2500)) - conversion.value, average.value ) * 12)}</td>
-                        <td class="text-center px-5 pb-1">{formatPrice(getNewRevenue(sessions.value, desktopPercent.value, getConversionOptimized(conversion.value, getSecondsToImprove(desktopLCP.value, 2500)) - conversion.value, average.value ) * 12)}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <div class={`${showExplanation.value ? 'flex' : 'hidden'} flex-col gap-5`}>
+            <div>
+              <p class="text-[44px] md:text-[82px] font-bold overflow-auto flex gap-2 items-baseline">
+                <span>{formatPrice(Number(revenue))}</span>
+                <span class="text-[22px] md:text-[32px] font-normal">
+                  / {result.year}
+                </span>
+              </p>
+              <p class={`${showExplanation.value ? 'block' : 'hidden'}`}>
+                <button class="underline" onClick={() => { showExplanation.value = false }}>{result.calculateAgain}</button>
+              </p>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h3 class="text-xl">{result.howWeCalculateTitle}</h3>
+              <div class="text-sm">{result.howWeCalculateText1} {parseFloat(mobileLCP.value / 1000).toFixed(1)}s {result.howWeCalculateText2} {parseFloat(desktopLCP.value / 1000).toFixed(1)}s {result.howWeCalculateText3}</div>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h4 class="text-xl">{result.gainInOneYear}</h4>
+              <table class="w-fit">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="text-center font-normal px-5 pb-1">Mobile</th>
+                    <th class="text-center font-normal px-5 pb-1">Desktop</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td class="pr-5 pb-1">LCP</td>
+                      <td class="text-center px-5 pb-1">{secondsInMobile > 0 && '-'}{secondsInMobile?.toFixed(1)}s</td>
+                      <td class="text-center px-5 pb-1">{secondsInDesktop > 0 && '-'}{secondsInDesktop?.toFixed(1)}s</td>
+                  </tr>
+                  <tr>
+                      <td class="pr-5 pb-1">{result.conversion}</td>
+                      <td class="text-center px-5 pb-1">{secondsInMobile > 0 && '+'}{(getConversionOptimized(conversion.value, secondsInMobile) - conversion.value).toFixed(2)}%</td>
+                      <td class="text-center px-5 pb-1">{secondsInDesktop > 0 && '+'}{(getConversionOptimized(conversion.value, secondsInDesktop) - conversion.value).toFixed(2)}%</td>
+                  </tr>
+                  <tr>
+                      <td class="pr-5 pb-1">{result.revenue}</td>
+                      <td class="text-center px-5 pb-1">{secondsInMobile > 0 && '+'}{formatPrice(getNewRevenue(sessions.value, mobilePercent.value, getConversionOptimized(conversion.value, secondsInMobile) - conversion.value, average.value ) * 12)}</td>
+                      <td class="text-center px-5 pb-1">{secondsInDesktop > 0 && '+'}{formatPrice(getNewRevenue(sessions.value, desktopPercent.value, getConversionOptimized(conversion.value, secondsInDesktop) - conversion.value, average.value ) * 12)}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div class={`${!showExplanation.value ? 'block' : 'hidden'}`}>
