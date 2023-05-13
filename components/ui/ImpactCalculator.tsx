@@ -74,10 +74,18 @@ export default function ImpactCalculator(
 
     const promiseMobile = fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=mobile`,
-    ).then((response) => response.json());
+    ).then((response) => response.json()).catch((error) => {
+      loading.value = false;
+      alert('Request to PageSpeed has failed. Please try again.')
+      console.log('errorrrr', error)
+    });
     const promiseDesktop = fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=desktop`,
-    ).then((response) => response.json());
+    ).then((response) => response.json()).catch((error) => {
+      loading.value = false;
+      alert('Request to PageSpeed has failed. Please try again.')
+      console.log('errorrrr', error)
+    });
 
     const formData = new FormData();
     formData.append("domain", website.value);
