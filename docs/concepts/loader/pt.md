@@ -81,7 +81,6 @@ export default async function searchLoader(
 
   return products ?? [];
 }
-
 ```
 
 [Fonte](https://github.com/deco-sites/std/blob/bedf496b7a2a480c1a9dfae477fe34020daae821/functions/shopifyProductList.ts)

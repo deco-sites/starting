@@ -10,8 +10,8 @@ O que diferencia a _deco.cx_ são seus recursos de **personalização** e o quã
 fácil é **gerenciar o conteúdo sem alterações de código**. A _deco.cx_ também
 torna fácil para os desenvolvedores codificar componentes e comportamentos de UI
 usando uma **stack web simples** com **[Preact](https://preactjs.com/)**,
-**[Twind](https://twind.style/)** e **[Deno](https://deno.land/)**. Somos a
-plataforma para criar experiências _headless commerce_.
+**[Tailwind](https://tailwindcss.com)** e **[Deno](https://deno.land/)**. Somos
+a plataforma para criar experiências _headless commerce_.
 
 ![https://user-images.githubusercontent.com/18706156/224878795-66bc06b8-10bf-4285-9833-d375137e8914.png](https://user-images.githubusercontent.com/18706156/224878795-66bc06b8-10bf-4285-9833-d375137e8914.png)
 

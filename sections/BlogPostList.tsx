@@ -50,7 +50,10 @@ export default function MarkdownContainer(props: Props) {
 
       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
         {normalPosts.map((post) => (
-          <a href={getBlogPath(post.path)} class="group mx-auto md:hover:scale-105 duration-200">
+          <a
+            href={getBlogPath(post.path)}
+            class="group mx-auto md:hover:scale-105 duration-200"
+          >
             <div class="w-full text-deco-dark-green mb-10 sm:mb-20">
               <Image
                 src={post.img}
