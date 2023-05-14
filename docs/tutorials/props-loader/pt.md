@@ -78,7 +78,7 @@ export interface LoadProps {
 
 async function dogFacts(
   { numberOfFacts }: LoadProps,
-  _req: Request
+  _req: Request,
 ): Promise<string[]> {
   const { facts } = (await fetch(
     `https://dogapi.dog/api/facts?number=${numberOfFacts ?? 1}`,
@@ -105,7 +105,7 @@ export interface LoadProps {
 
 async function dogFacts(
   { numberOfFacts }: LoadProps,
-  _req: Request
+  _req: Request,
 ): Promise<string[]> {
   const { facts } = (await fetch(
     `https://dogapi.dog/api/facts?number=${numberOfFacts ?? 1}`,
@@ -131,7 +131,7 @@ export default function DogFacts({ title, dogFacts }: Props) {
 
 export const loader: PropsLoader<
   LoadProps,
-  Props,
+  Props
 > = {
   dogFacts,
 };

@@ -14,8 +14,8 @@ to be replicated only with HTML and CSS, delivering a optimal performance for
 mobile and desktop devices.
 
 The big secret of this type of menu is the use of the `group` class from
-[twind](https://twind.style/). With it, we managed to make the menu visible
-depending on the element being overlaid.
+[Tailwind](https://tailwindcss.com). With it, we managed to make the menu
+visible depending on the element being overlaid.
 
 For example, suppose the following code:
 
