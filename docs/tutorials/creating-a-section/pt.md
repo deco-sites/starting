@@ -23,7 +23,7 @@ Abra a pasta do seu site em uma IDE e execute as seguintes ações:
    1. `sections/LatestPosts.tsx`
 
       ```tsx
-      interface Props {
+      export interface Props {
         title: string;
       }
 
