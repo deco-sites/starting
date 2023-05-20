@@ -9,7 +9,7 @@
   },
   "editor.defaultFormatter": "denoland.vscode-deno",
   "[markdown]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
