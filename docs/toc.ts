@@ -94,8 +94,8 @@ const tableOfContents: TableOfContents = [{
     },
     {
       title: {
-        pt: "Invocando loaders a partir do browser",
-        en: "Client-side loaders invocation",
+        pt: "Invocando funções a partir do browser",
+        en: "Client-side function invocation",
       },
       slug: "tutorials/client-side-invocation",
     },
