@@ -22,6 +22,9 @@ const tableOfContents: TableOfContents = [{
     title: { pt: "Loader", en: "Loader" },
     slug: "concepts/loader",
   }, {
+    title: { pt: "Action", en: "Action" },
+    slug: "concepts/action",
+  }, {
     title: { pt: "Page", en: "Page" },
     slug: "concepts/page",
   }, {
@@ -94,8 +97,8 @@ const tableOfContents: TableOfContents = [{
     },
     {
       title: {
-        pt: "Invocando loaders a partir do browser",
-        en: "Client-side loaders invocation",
+        pt: "Invocando funções a partir do browser",
+        en: "Client-side function invocation",
       },
       slug: "tutorials/client-side-invocation",
     },
