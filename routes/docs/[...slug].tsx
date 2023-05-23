@@ -162,7 +162,7 @@ export default function DocsPage(props: PageProps<Data>) {
               targetBlank: false,
             },
           ]}
-          idiom={lang == "en" ? "Eng" : "Port"}
+          idiom={{ label: lang == "en" ? "Eng" : "Port" }}
           pt={{ label: "Português", url: "/docs/pt", selected: lang == "pt" }}
           eng={{ label: "English", url: "/docs/en", selected: lang == "en" }}
           login={{ label: "Login", url: "/admin" }}

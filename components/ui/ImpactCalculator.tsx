@@ -257,9 +257,9 @@ export default function ImpactCalculator(
               <h3 class="text-xl">{result.howWeCalculateTitle}</h3>
               <div class="text-sm">
                 {result.howWeCalculateText1}{" "}
-                {parseFloat(mobileLCP.value / 1000).toFixed(1)}s{" "}
+                {parseFloat(String(mobileLCP.value / 1000)).toFixed(1)}s{" "}
                 {result.howWeCalculateText2}{" "}
-                {parseFloat(desktopLCP.value / 1000).toFixed(1)}s{" "}
+                {parseFloat(String(desktopLCP.value / 1000)).toFixed(1)}s{" "}
                 {result.howWeCalculateText3}
               </div>
             </div>

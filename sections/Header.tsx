@@ -2,10 +2,10 @@ import HeaderIsland from "deco-sites/starting/islands/Header.tsx";
 
 export interface Props {
   menuLinks: Array<{ label: string; href: string; targetBlank?: boolean }>;
-  idiom: string;
+  idiom?: { label: string; canShowIdiom?: boolean };
   pt: { label: string; url: string; selected?: boolean };
   eng: { label: string; url: string; selected?: boolean };
-  login: { label: string; url: string };
+  login?: { label: string; url: string; canShowLogin?: boolean };
   sign: { label: string; url: string };
   pageInitial: string;
   mkt?: { label: string; url: string; selected?: boolean };

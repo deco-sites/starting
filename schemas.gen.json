@@ -124,6 +124,7 @@
               "deco-sites/std/sections/SEO.tsx",
               "deco-sites/std/sections/SEOPDP.tsx",
               "deco-sites/std/sections/SEOPLP.tsx",
+              "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx",
               "$live/matchers/MatchAlways.ts",
               "$live/matchers/MatchDate.ts",
               "$live/matchers/MatchEnvironment.ts",
@@ -7066,7 +7067,23 @@
           "title": "Menu Links"
         },
         "idiom": {
-          "type": "string",
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "canShowIdiom": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Can Show Idiom"
+            }
+          },
+          "required": [
+            "label"
+          ],
           "title": "Idiom"
         },
         "pt": {
@@ -7183,6 +7200,13 @@
             "url": {
               "type": "string",
               "title": "Url"
+            },
+            "canShowLogin": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Can Show Login"
             }
           },
           "required": [
@@ -7224,11 +7248,9 @@
       },
       "required": [
         "menuLinks",
-        "idiom",
         "pt",
         "eng",
         "pageInitial",
-        "login",
         "sign",
         "linkedinUrl",
         "gitUrl",
@@ -7455,7 +7477,16 @@
           "title": "Path Template"
         },
         "handler": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler",
+          "type": "object",
+          "properties": {
+            "value": {
+              "$ref": "#/definitions/ZGVjby1jeC9saXZlL2Jsb2Nrcy9oYW5kbGVyLnRz@Handler",
+              "title": "Value"
+            }
+          },
+          "required": [
+            "value"
+          ],
           "title": "Handler"
         }
       },
@@ -8607,7 +8638,23 @@
           "title": "Menu Links"
         },
         "idiom": {
-          "type": "string",
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "title": "Label"
+            },
+            "canShowIdiom": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Can Show Idiom"
+            }
+          },
+          "required": [
+            "label"
+          ],
           "title": "Idiom"
         },
         "pt": {
@@ -8670,6 +8717,13 @@
             "url": {
               "type": "string",
               "title": "Url"
+            },
+            "canShowLogin": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Can Show Login"
             }
           },
           "required": [
@@ -8774,10 +8828,8 @@
       },
       "required": [
         "menuLinks",
-        "idiom",
         "pt",
         "eng",
-        "login",
         "sign",
         "pageInitial"
       ],
@@ -9517,6 +9569,19 @@
       ],
       "title": "deco-sites/std/components/seo/SEOPLP.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvVlRFWFBvcnRhbERhdGFMYXllckNvbXBhdGliaWxpdHkudHN4@LoaderProps": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvZnVuY3Rpb25zL3JlcXVlc3RUb1BhcmFtLnRz@RequestURLParam",
+          "title": "Slug"
+        }
+      },
+      "required": [
+        "slug"
+      ],
+      "title": "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx@LoaderProps"
+    },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
       "properties": {
@@ -9704,7 +9769,11 @@
         },
         "name": {
           "type": "string",
-          "title": "Name"
+          "title": "The audience name (will be used on cookies).",
+          "description": "Add a meaningful short word for the audience name.",
+          "maxLength": 22,
+          "minLength": 3,
+          "pattern": "^[A-Za-z0-9_]+$"
         },
         "routes": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
@@ -9820,7 +9889,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@682b8a68cbc5199dd2e895e75f998147|WorkflowRef": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -9838,13 +9907,13 @@
           ]
         }
       ],
-      "title": "95abd76f92dd138f258080286726977e|WorkflowRef"
+      "title": "682b8a68cbc5199dd2e895e75f998147|WorkflowRef"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@682b8a68cbc5199dd2e895e75f998147|WorkflowRef",
           "title": "Workflow"
         },
         "id": {
@@ -12579,6 +12648,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvVlRFWFBvcnRhbERhdGFMYXllckNvbXBhdGliaWxpdHkudHN4": {
+      "title": "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvVlRFWFBvcnRhbERhdGFMYXllckNvbXBhdGliaWxpdHkudHN4@LoaderProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx"
+          ],
+          "default": "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx"
+        }
+      }
+    },
     "JGxpdmUvbWF0Y2hlcnMvTWF0Y2hBbHdheXMudHM=": {
       "title": "$live/matchers/MatchAlways.ts",
       "type": "object",
@@ -13624,6 +13714,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvU0VPUExQLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvVlRFWFBvcnRhbERhdGFMYXllckNvbXBhdGliaWxpdHkudHN4"
         }
       ]
     },

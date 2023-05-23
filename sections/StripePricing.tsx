@@ -81,7 +81,7 @@ export default function StripePricing(
               </div>
               <Price
                 price={freePlan.price}
-                custom={freePlan.priceCustom}
+                custom={!!freePlan.priceCustom}
                 recurrence={recurrence}
               />
               <Button link={freePlan.button.link} text={freePlan.button.text} />

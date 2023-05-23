@@ -4,13 +4,13 @@ import { useState } from "preact/hooks";
 
 export interface Props {
   menuLinks: Array<{ label: string; href: string; targetBlank?: boolean }>;
-  idiom: string;
+  idiom?: { label: string; canShowIdiom?: boolean };
   pt: { label: string; url: string; selected?: boolean };
   eng: { label: string; url: string; selected?: boolean };
   pageInitial: string;
   mkt?: { label: string; url: string; selected?: boolean };
   dev?: { label: string; url: string; selected?: boolean };
-  login: { label: string; url: string };
+  login?: { label: string; url: string; canShowLogin?: boolean };
   sign: { label: string; url: string };
   linkedinUrl: string;
   gitUrl: string;
@@ -310,22 +310,26 @@ export default function Header(props: Props) {
               })}
             </ul>
             <ul class="flex flex-col">
-              <li class="h-[50px] grid items-center">
-                <a
-                  href={urlPortuguese.value}
-                  class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
-                >
-                  {props.pt.label}
-                </a>
-              </li>
-              <li class="h-[50px] grid items-center">
-                <a
-                  href={urlEnglish.value}
-                  class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
-                >
-                  {props.eng.label}
-                </a>
-              </li>
+              {props.idiom?.canShowIdiom && (
+                <>
+                  <li class="h-[50px] grid items-center">
+                    <a
+                      href={urlPortuguese.value}
+                      class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
+                    >
+                      {props.pt.label}
+                    </a>
+                  </li>
+                  <li class="h-[50px] grid items-center">
+                    <a
+                      href={urlEnglish.value}
+                      class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
+                    >
+                      {props.eng.label}
+                    </a>
+                  </li>
+                </>
+              )}
               <li class="h-[50px] grid items-center hidden">
                 <a
                   href={props.sign.url}
@@ -334,14 +338,16 @@ export default function Header(props: Props) {
                   {props.sign.label}
                 </a>
               </li>
-              <li class="h-[50px] grid items-center">
-                <a
-                  href={props.login.url}
-                  class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
-                >
-                  {props.login.label}
-                </a>
-              </li>
+              {props.login?.canShowLogin && (
+                <li class="h-[50px] grid items-center">
+                  <a
+                    href={props.login?.url}
+                    class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
+                  >
+                    {props.login?.label}
+                  </a>
+                </li>
+              )}
             </ul>
             <ul class="flex flex-row justify-center">
               <li class="h-[50px] grid items-center">
@@ -414,111 +420,115 @@ export default function Header(props: Props) {
           </div>
         </ul>
         <ul class="hidden lg:flex lg:flex-row lg:gap-4 px-3">
-          <li class="group cursor-pointer md:relative">
-            <div
-              class={`select-none hidden ${
-                openLanguage.value
-                  ? "md:text-[#fff] md:border-[#06E474] md:border"
-                  : ""
-              } md:flex gap-2 items-center text-[#06E474] border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300`}
-            >
+          {props.idiom?.canShowIdiom && (
+            <li class="group cursor-pointer md:relative">
               <div
-                onClick={handleLanguage}
-                class="z-10 md:px-3 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px]"
-              >
-                {props.idiom}
-                <svg
-                  width="9"
-                  height="5"
-                  viewBox="0 0 9 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5"
-                    class="group-hover:border-[#fff] stroke-current"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-              <div
-                onClick={handleLanguage}
-                class={`${
+                class={`select-none hidden ${
                   openLanguage.value
-                    ? "block cursor-default w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]"
-                    : "hidden"
-                }`}
+                    ? "md:text-[#fff] md:border-[#06E474] md:border"
+                    : ""
+                } md:flex gap-2 items-center text-[#06E474] border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300`}
               >
-              </div>
-              <div
-                class={`${
-                  openLanguage.value ? "block" : "hidden"
-                } absolute top-[35px] right-0 mt-5 rounded border border-[#ffffff10]`}
-              >
-                <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
-                  <div class="flex flex-row items-center justify-between">
-                    <a
-                      href={urlPortuguese.value}
-                      class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
-                    >
-                      <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">
-                        {props.pt.label}
-                      </p>
-                      <svg
-                        width="15"
-                        height="10"
-                        viewBox="0 0 15 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class={props.pt.selected ? "" : "hidden"}
+                <div
+                  onClick={handleLanguage}
+                  class="z-10 md:px-3 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px]"
+                >
+                  {props.idiom.label}
+                  <svg
+                    width="9"
+                    height="5"
+                    viewBox="0 0 9 5"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5"
+                      class="group-hover:border-[#fff] stroke-current"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div
+                  onClick={handleLanguage}
+                  class={`${
+                    openLanguage.value
+                      ? "block cursor-default w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]"
+                      : "hidden"
+                  }`}
+                >
+                </div>
+                <div
+                  class={`${
+                    openLanguage.value ? "block" : "hidden"
+                  } absolute top-[35px] right-0 mt-5 rounded border border-[#ffffff10]`}
+                >
+                  <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
+                    <div class="flex flex-row items-center justify-between">
+                      <a
+                        href={urlPortuguese.value}
+                        class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
                       >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
-                          fill="#2FD180"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="flex flex-row items-center justify-between">
-                    <a
-                      href={urlEnglish.value}
-                      class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
-                    >
-                      <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">
-                        {props.eng.label}
-                      </p>
-                      <svg
-                        width="15"
-                        height="10"
-                        viewBox="0 0 15 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class={props.eng.selected ? "" : "hidden"}
+                        <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">
+                          {props.pt.label}
+                        </p>
+                        <svg
+                          width="15"
+                          height="10"
+                          viewBox="0 0 15 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class={props.pt.selected ? "" : "hidden"}
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
+                            fill="#2FD180"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="flex flex-row items-center justify-between">
+                      <a
+                        href={urlEnglish.value}
+                        class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
                       >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
-                          fill="#2FD180"
-                        />
-                      </svg>
-                    </a>
+                        <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">
+                          {props.eng.label}
+                        </p>
+                        <svg
+                          width="15"
+                          height="10"
+                          viewBox="0 0 15 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class={props.eng.selected ? "" : "hidden"}
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
+                            fill="#2FD180"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <a
-              href={props.login.url}
-              class="block md:hover:border-[#02F67C] md:hover:border md:hover:text-[#fff] border-[transparent] border font-normal text-[16px] text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
-            >
-              {props.login.label}
-            </a>
-          </li>
+            </li>
+          )}
+          {props.login?.canShowLogin && (
+            <li>
+              <a
+                href={props.login?.url}
+                class="block md:hover:border-[#02F67C] md:hover:border md:hover:text-[#fff] border-[transparent] border font-normal text-[16px] text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
+              >
+                {props.login?.label}
+              </a>
+            </li>
+          )}
           <li>
             <a
               href={props.sign.url}
