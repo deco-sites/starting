@@ -109,6 +109,7 @@
               "deco-sites/starting/sections/MainBanner.tsx",
               "deco-sites/starting/sections/Markdown.tsx",
               "deco-sites/starting/sections/Partner.tsx",
+              "deco-sites/starting/sections/Performance.tsx",
               "deco-sites/starting/sections/Pricing.tsx",
               "deco-sites/starting/sections/QuillText.tsx",
               "deco-sites/starting/sections/StripePricing.tsx",
@@ -9094,6 +9095,32 @@
       ],
       "title": "deco-sites/starting/components/ui/Partner.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2NhbXAvcGVyZm9ybWFuY2UvcGVyZm9ybWFuY2UudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Text"
+        },
+        "simulatorTitle": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Simulator Title"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "simulatorTitle"
+      ],
+      "title": "deco-sites/starting/components/camp/performance/performance.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ByaWNpbmcudHN4@Plan": {
       "type": "object",
       "properties": {
@@ -9889,7 +9916,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@682b8a68cbc5199dd2e895e75f998147|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|ef52652399efcf028b1edca4cf80cc7a": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -9907,13 +9934,13 @@
           ]
         }
       ],
-      "title": "682b8a68cbc5199dd2e895e75f998147|WorkflowRef"
+      "title": "WorkflowRef|ef52652399efcf028b1edca4cf80cc7a"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@682b8a68cbc5199dd2e895e75f998147|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|ef52652399efcf028b1edca4cf80cc7a",
           "title": "Workflow"
         },
         "id": {
@@ -12333,6 +12360,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QZXJmb3JtYW5jZS50c3g=": {
+      "title": "deco-sites/starting/sections/Performance.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2NhbXAvcGVyZm9ybWFuY2UvcGVyZm9ybWFuY2UudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/Performance.tsx"
+          ],
+          "default": "deco-sites/starting/sections/Performance.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QcmljaW5nLnRzeA==": {
       "title": "deco-sites/starting/sections/Pricing.tsx",
       "type": "object",
@@ -13669,6 +13717,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QYXJ0bmVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QZXJmb3JtYW5jZS50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QcmljaW5nLnRzeA=="

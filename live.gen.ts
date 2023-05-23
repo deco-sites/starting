@@ -53,11 +53,12 @@ import * as $$$$$$$$25 from "./sections/Integration.tsx";
 import * as $$$$$$$$26 from "./sections/MainBanner.tsx";
 import * as $$$$$$$$27 from "./sections/Markdown.tsx";
 import * as $$$$$$$$28 from "./sections/Partner.tsx";
-import * as $$$$$$$$29 from "./sections/Pricing.tsx";
-import * as $$$$$$$$30 from "./sections/QuillText.tsx";
-import * as $$$$$$$$31 from "./sections/StripePricing.tsx";
-import * as $$$$$$$$32 from "./sections/Thanks.tsx";
-import * as $$$$$$$$33 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$29 from "./sections/Performance.tsx";
+import * as $$$$$$$$30 from "./sections/Pricing.tsx";
+import * as $$$$$$$$31 from "./sections/QuillText.tsx";
+import * as $$$$$$$$32 from "./sections/StripePricing.tsx";
+import * as $$$$$$$$33 from "./sections/Thanks.tsx";
+import * as $$$$$$$$34 from "./sections/TripletBanner.tsx";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
 import * as $live_invoke_key from "$live/routes/live/invoke/[...key].ts";
@@ -260,11 +261,12 @@ const manifest = {
     "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$26,
     "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$27,
     "deco-sites/starting/sections/Partner.tsx": $$$$$$$$28,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$29,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$30,
-    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$31,
-    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$32,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/Performance.tsx": $$$$$$$$29,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$31,
+    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$32,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$34,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
