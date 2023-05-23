@@ -1,6 +1,7 @@
 import { Source } from "deco-sites/std/components/Picture.tsx";
 import { Video as LiveVideo } from "deco-sites/std/components/types.ts";
 import VideoComponent from "deco-sites/std/components/Video.tsx";
+import { useEffect, useState } from "preact/hooks";
 
 export interface Props {
   /** @title Vídeo Mobile */
@@ -11,15 +12,24 @@ export interface Props {
   alt?: string;
   /** @title Link */
   link: string;
+  resetVideo: boolean;
 }
 
 export default function Video(props: Props) {
+  const [videoKey, setVideoKey] = useState(0);
+
+  useEffect(() => {
+    if (props.resetVideo) {
+      setVideoKey((prevKey) => prevKey + 1); // Atualiza a chave para reiniciar o vídeo
+    }
+  }, [props.resetVideo]);
+
   return (
     <VideoComponent
+      key={videoKey} // Define a chave única para reiniciar o componente
       height={100}
       width={100}
       src={props.desktop}
-      loop={true}
       playsInline={true}
       autoPlay={true}
       muted={true}

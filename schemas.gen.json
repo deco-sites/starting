@@ -7484,12 +7484,17 @@
         "link": {
           "type": "string",
           "title": "Link"
+        },
+        "resetVideo": {
+          "type": "boolean",
+          "title": "Reset Video"
         }
       },
       "required": [
         "mobile",
         "desktop",
-        "link"
+        "link",
+        "resetVideo"
       ],
       "title": "Props"
     },
@@ -8060,6 +8065,14 @@
             {
               "type": "string",
               "const": "Support"
+            },
+            {
+              "type": "string",
+              "const": "Restart"
+            },
+            {
+              "type": "string",
+              "const": "DecoSimulator"
             }
           ],
           "type": "string",

@@ -46,7 +46,9 @@ export type AvailableIcons =
   | "Book"
   | "Bag"
   | "Cash"
-  | "Support";
+  | "Support"
+  | "Restart"
+  | "DecoSimulator";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

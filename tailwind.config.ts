@@ -685,4 +685,4 @@ export default {
       }),
     },
   },
-}
+};
