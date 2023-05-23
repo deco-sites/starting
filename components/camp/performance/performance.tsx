@@ -1,5 +1,6 @@
 import Simulator from "deco-sites/starting/components/camp/performance/simulator.tsx";
-
+import { IImage } from "deco-sites/starting/components/ui/Image.tsx";
+import { Props as IVideo } from "deco-sites/starting/components/ui/Video.tsx";
 export interface Props {
   /**
    * @format textarea
@@ -9,10 +10,14 @@ export interface Props {
    * @format textarea
    */
   text: string;
+
   /**
    * @format textarea
    */
   simulatorTitle: string;
+  simulatorImage: IImage;
+  simulatorVideoNew: IVideo;
+  simulatorVideoOld: IVideo;
 }
 
 const Performance = (
@@ -33,7 +38,12 @@ const Performance = (
         >
         </div>
 
-        <Simulator title={props.simulatorTitle} />
+        <Simulator
+          title={props?.simulatorTitle}
+          image={props?.simulatorImage}
+          videoNew={props?.simulatorVideoNew}
+          videoOld={props?.simulatorVideoOld}
+        />
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ export default {
           "linear-gradient(90deg,  rgba(255,255,255,0) 0%, rgba(47,209,128,0.8) 49%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%)",
         "linear-transp-green-transp":
           "radial-gradient(circle, rgba(0,255,128,1) 0%, rgba(0,255,128,0) 100%)",
-        "linear": "linear-gradient(180deg, #053535 0%, #0A2121 100%);",
+        linear: "linear-gradient(180deg, #053535 0%, #0A2121 100%);",
         "linear-pricing":
           "linear-gradient(67.74deg, #053535 0.89%, #1D4949 47.43%, #053535 99.08%)",
         "linear-pricing-y":
@@ -46,8 +46,11 @@ export default {
           "-2px -2px 4px rgba(255, 255, 255, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.06)",
       },
       transitionProperty: {
-        "height": "height",
-        "spacing": "margin, padding",
+        height: "height",
+        spacing: "margin, padding",
+      },
+      gridTemplateColumns: {
+        "custom-grid-mockup": "1fr 9px 1fr",
       },
       keyframes: {
         blur1: {
@@ -86,7 +89,7 @@ export default {
           "56%": { transform: "translateY(150%)" },
           "70%": { transform: "translateY(150%)" },
           "84%": { transform: "translateY(150%)", opacity: 0 },
-          "to": { transform: "translateY(0%)", opacity: 1 },
+          to: { transform: "translateY(0%)", opacity: 1 },
         },
         switcherText20: {
           "0%": { transform: "translateY(150%)" },
@@ -97,7 +100,7 @@ export default {
           "56%": { transform: "translateY(150%)" },
           "70%": { transform: "translateY(150%)" },
           "84%": { transform: "translateY(150%)" },
-          "to": { transform: "translateY(150%)" },
+          to: { transform: "translateY(150%)" },
         },
         switcherText30: {
           "0%": { transform: "translateY(150%)" },
@@ -108,7 +111,7 @@ export default {
           "56%": { transform: "translateY(150%)", opacity: 0 },
           "70%": { transform: "translateY(150%)" },
           "84%": { transform: "translateY(150%)" },
-          "to": { transform: "translateY(150%)" },
+          to: { transform: "translateY(150%)" },
         },
         switcherText40: {
           "0%": { transform: "translateY(150%)" },
@@ -119,7 +122,7 @@ export default {
           "56%": { transform: "translateY(-150%)", opacity: 0 },
           "70%": { transform: "translateY(150%)", opacity: 0 },
           "84%": { transform: "translateY(150%)" },
-          "to": { transform: "translateY(150%)" },
+          to: { transform: "translateY(150%)" },
         },
         switcherText50: {
           "0%": { transform: "translateY(150%)" },
@@ -130,7 +133,7 @@ export default {
           "60%": { transform: "translateY(0%)", opacity: 1 },
           "70%": { transform: "translateY(-150%)", opacity: 0 },
           "84%": { transform: "translateY(150%)" },
-          "to": { transform: "translateY(150%)", opacity: 0 },
+          to: { transform: "translateY(150%)", opacity: 0 },
         },
         switcherText60: {
           "0%": { transform: "translateY(150%)" },
@@ -141,7 +144,7 @@ export default {
           "70%": { transform: "translateY(0%)", opacity: 1 },
           "74%": { transform: "translateY(0%)", opacity: 1 },
           "84%": { transform: "translateY(-150%)", opacity: 0 },
-          "to": { transform: "translateY(150%)", opacity: 0 },
+          to: { transform: "translateY(150%)", opacity: 0 },
         },
         switcherText70: {
           "0%": { transform: "translateY(150%)" },
@@ -152,7 +155,7 @@ export default {
           "70%": { transform: "translateY(150%)", opacity: 0 },
           "84%": { transform: "translateY(0%)", opacity: 1 },
           "88%": { transform: "translateY(0%)", opacity: 1 },
-          "to": { transform: "translateY(-150%)", opacity: 0 },
+          to: { transform: "translateY(-150%)", opacity: 0 },
         },
         walk: {
           "0%": { transform: "translateX(-50%)" },
@@ -636,7 +639,7 @@ export default {
         primary: "#2FD180",
         "primary-dark": "#003232",
         "primary-light": "#C5FFE9",
-        "highlight": "#02F67C",
+        highlight: "#02F67C",
         "dark-green": "#0A2121",
         "almost-white": "#F3FFF9",
         transparent: "transparent",
@@ -647,7 +650,7 @@ export default {
         inter: "Inter, sans-serif",
       },
       fontSize: {
-        "responsiveHeadingText": "clamp(3.5rem, 0.3451rem + 6.5728vw, 7rem);",
+        responsiveHeadingText: "clamp(3.5rem, 0.3451rem + 6.5728vw, 7rem);",
       },
       typography: (theme: (x: string) => string) => ({
         DEFAULT: {
@@ -682,4 +685,4 @@ export default {
       }),
     },
   },
-};
+}

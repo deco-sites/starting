@@ -23,7 +23,8 @@ import * as $$$$$2 from "./islands/Cms.tsx";
 import * as $$$$$3 from "./islands/ContactUs.tsx";
 import * as $$$$$4 from "./islands/Header.tsx";
 import * as $$$$$5 from "./islands/ImpactCalculator.tsx";
-import * as $$$$$6 from "./islands/SliderJS.tsx";
+import * as $$$$$6 from "./islands/Simulator.tsx";
+import * as $$$$$7 from "./islands/SliderJS.tsx";
 import * as $$$$$$$$0 from "./sections/About.tsx";
 import * as $$$$$$$$1 from "./sections/Benefits.tsx";
 import * as $$$$$$$$2 from "./sections/BlogHeader.tsx";
@@ -226,7 +227,8 @@ const manifest = {
     "./islands/ContactUs.tsx": $$$$$3,
     "./islands/Header.tsx": $$$$$4,
     "./islands/ImpactCalculator.tsx": $$$$$5,
-    "./islands/SliderJS.tsx": $$$$$6,
+    "./islands/Simulator.tsx": $$$$$6,
+    "./islands/SliderJS.tsx": $$$$$7,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,

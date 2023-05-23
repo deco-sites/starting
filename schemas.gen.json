@@ -68,6 +68,7 @@
               "./islands/ContactUs.tsx",
               "./islands/Header.tsx",
               "./islands/ImpactCalculator.tsx",
+              "./islands/Simulator.tsx",
               "./islands/SliderJS.tsx",
               "$live/handlers/devPage.ts",
               "$live/handlers/fresh.ts",
@@ -7401,6 +7402,126 @@
       ],
       "title": "deco-sites/starting/components/ui/ImpactCalculator.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0ltYWdlLnRzeA==@IImage": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "desktop otimized image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "mobile otimized image",
+          "title": "Mobile"
+        },
+        "href": {
+          "type": "string",
+          "description": "when user clicks on the image, go to this link",
+          "title": "Href"
+        },
+        "alt": {
+          "type": "string",
+          "description": "Image's alt text",
+          "title": "Alt"
+        },
+        "widthDesktop": {
+          "type": "number",
+          "description": "width desktop",
+          "title": "Width Desktop"
+        },
+        "heightDesktop": {
+          "type": "number",
+          "description": "height desktop",
+          "title": "Height Desktop"
+        },
+        "widthMobile": {
+          "type": "number",
+          "description": "width mobile",
+          "title": "Width Mobile"
+        },
+        "heightMobile": {
+          "type": "number",
+          "description": "height mobile",
+          "title": "Height Mobile"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile",
+        "href",
+        "alt",
+        "widthDesktop",
+        "heightDesktop",
+        "widthMobile",
+        "heightMobile"
+      ],
+      "title": "IImage"
+    },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Video": {
+      "type": "string",
+      "format": "video-uri",
+      "title": "Video"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ZpZGVvLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Video",
+          "title": "Vídeo Mobile"
+        },
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Video",
+          "title": "Vídeo Desktop"
+        },
+        "alt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Video alt text"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        }
+      },
+      "required": [
+        "mobile",
+        "desktop",
+        "link"
+      ],
+      "title": "Props"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2NhbXAvcGVyZm9ybWFuY2Uvc2ltdWxhdG9yLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Title"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0ltYWdlLnRzeA==@IImage",
+          "title": "Image"
+        },
+        "videoNew": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ZpZGVvLnRzeA==@Props",
+          "title": "Video New"
+        },
+        "videoOld": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ZpZGVvLnRzeA==@Props",
+          "title": "Video Old"
+        }
+      },
+      "required": [
+        "title",
+        "image",
+        "videoNew",
+        "videoOld"
+      ],
+      "title": "deco-sites/starting/components/camp/performance/simulator.tsx@Props"
+    },
     "ZGVjby1jeC9saXZlL2Jsb2Nrcy9wYWdlLnRz@Page": {
       "$ref": "#/root/pages",
       "title": "Page"
@@ -9112,12 +9233,27 @@
           "type": "string",
           "format": "textarea",
           "title": "Simulator Title"
+        },
+        "simulatorImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0ltYWdlLnRzeA==@IImage",
+          "title": "Simulator Image"
+        },
+        "simulatorVideoNew": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ZpZGVvLnRzeA==@Props",
+          "title": "Simulator Video New"
+        },
+        "simulatorVideoOld": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ZpZGVvLnRzeA==@Props",
+          "title": "Simulator Video Old"
         }
       },
       "required": [
         "title",
         "text",
-        "simulatorTitle"
+        "simulatorTitle",
+        "simulatorImage",
+        "simulatorVideoNew",
+        "simulatorVideoOld"
       ],
       "title": "deco-sites/starting/components/camp/performance/performance.tsx@Props"
     },
@@ -11535,6 +11671,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1NpbXVsYXRvci50c3g=": {
+      "title": "./islands/Simulator.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2NhbXAvcGVyZm9ybWFuY2Uvc2ltdWxhdG9yLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/Simulator.tsx"
+          ],
+          "default": "./islands/Simulator.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1NsaWRlckpTLnRzeA==": {
       "title": "./islands/SliderJS.tsx",
       "type": "object",
@@ -13570,6 +13727,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1NpbXVsYXRvci50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL1NsaWRlckpTLnRzeA=="
