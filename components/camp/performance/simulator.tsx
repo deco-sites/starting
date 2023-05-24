@@ -1,12 +1,15 @@
+import { useEffect, useState } from "preact/hooks";
 import Image, { IImage } from "deco-sites/starting/components/ui/Image.tsx";
 import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import { Props as IVideo } from "deco-sites/starting/components/ui/Video.tsx";
+
 import ProgressBar from "deco-sites/starting/components/camp/performance/progressBar.tsx";
 import Counter from "deco-sites/starting/components/camp/performance/counter.tsx";
+
 import CountButton from "deco-sites/starting/components/camp/performance/countButton.tsx";
-import Video, {
-  Props as IVideo,
-} from "deco-sites/starting/components/ui/Video.tsx";
-import { useEffect, useState } from "preact/hooks";
+import Media from "deco-sites/starting/components/camp/performance/media.tsx";
+import SimulationInfo from "deco-sites/starting/components/camp/performance/simulationInfo.tsx";
+import Timer from "deco-sites/starting/components/camp/performance/timer.tsx";
 
 export interface Props {
   /**
@@ -88,33 +91,20 @@ const Simulator = (
         <div class="absolute top-5 w-full h-[90%] px-8 flex items-center">
           {hasActiveSimulation
             ? (
-              <div class="grid grid-cols-custom-grid-mockup w-full h-full items-center">
-                <Video {...props.videoNew} resetVideo={resetVideo} />
-                <div class="h-full w-full bg-almost-white relative -top-[21px]" />
-                <Video {...props.videoOld} resetVideo={resetVideo} />
-              </div>
+              <Media
+                resetVideo={resetVideo}
+                videoNew={props.videoNew}
+                videoOld={props.videoOld}
+              />
             )
-            : (
-              <div class="bg-[#FFFFFFE5] w-screen h-[360px] absolute -left-6 top-[20%] p-6">
-                <div class="w-[80%] max-w-[300px] mx-auto">
-                  <p class="mb-4 font-regular text-[22px] text-dark-green">
-                    Gravamos uma simulação do carregamento da Home da Animale em
-                    uma conexão 3G, comparando o site atual vs com a versão
-                    deco.cx.
-                  </p>
-                  <b class="text-[22px] text-dark-green">
-                    O resultado é bastante promissor!
-                  </b>
-                </div>
-              </div>
-            )}
+            : <SimulationInfo />}
         </div>
         {hasActiveSimulation
           ? (
             <div class="fade-in absolute -bottom-[1px] -left-6 z-20 bg-[#FFFFFFE5] w-screen h-[260px] p-6">
               <div class="w-full flex flex-col justify-center items-center max-w-[382px] mx-auto">
                 <div class="flex gap-3 justify-center items-center mb-7">
-                  <div class="w-[148px] h-[148px] rounded-full flex flex-col items-center gap-2 border border-dark-green bg-[#06E474]">
+                  <Timer className="bg-[#06E474]">
                     <Icon id="DecoSimulator" size={55} />
                     <p class="font-inter font-semibold text-5xl text-dark-green">
                       <Counter
@@ -123,7 +113,7 @@ const Simulator = (
                         tempoMaximo={tempo1Maximo}
                       />
                     </p>
-                  </div>
+                  </Timer>
 
                   <div class="w-8 h-8 rounded-full flex flex-col items-center gap-2 border border-dark-green bg-dark-green ">
                     <span class="font-regular text-base text-almost-white mt-[3px]">
@@ -131,7 +121,7 @@ const Simulator = (
                     </span>
                   </div>
 
-                  <div class="w-[148px] h-[148px] rounded-full flex flex-col items-center justify-center gap-2 border border-dark-green bg-almost-white">
+                  <Timer className="justify-center bg-almost-white">
                     <p class="font-semibold text-lg text-dark-green">
                       Atual
                     </p>
@@ -142,7 +132,7 @@ const Simulator = (
                         tempoMaximo={tempo2Maximo}
                       />
                     </p>
-                  </div>
+                  </Timer>
                 </div>
 
                 <ProgressBar
