@@ -3,13 +3,35 @@ description: An Action in deco.cx is a function that mutates data.
 since: 1.0.0
 ---
 
-An **Action** in deco.cx is a typescript function that mutates data within the application. Actions are triggered by specific user interactions or events and are responsible for updating the application's state accordingly. Unlike Loaders, which fetch data from external sources, Actions focus on modifying the data already present in the application. They can perform operations such as **updating**, **creating**, or **deleting** data based on the specified logic. Actions provide precise control and flexibility over data mutation and seamlessly integrate with other blocks like Loaders to enable a seamless flow of data within the application.
+An **Action** in deco.cx is a typescript function that mutates data within the
+application. Actions are triggered by specific user interactions or events and
+are responsible for updating the application's state accordingly. Unlike
+Loaders, which fetch data from external sources, Actions focus on modifying the
+data already present in the application. They can perform operations such as
+**updating**, **creating**, or **deleting** data based on the specified logic.
+Actions provide precise control and flexibility over data mutation and
+seamlessly integrate with other blocks like Loaders to enable a seamless flow of
+data within the application.
 
-Actions, like **Loaders**, are implemented as typescript functions and reside locally in the `/actions/` folder of your project. They can be invoked in response to user interactions, form submissions, or any other defined triggers. By encapsulating data mutation logic within Actions, developers can manage and track changes made to the application's state, providing users with dynamic and interactive experiences.
+Actions, like **Loaders**, are implemented as typescript functions and reside
+locally in the `/actions/` folder of your project. They can be invoked in
+response to user interactions, form submissions, or any other defined triggers.
+By encapsulating data mutation logic within Actions, developers can manage and
+track changes made to the application's state, providing users with dynamic and
+interactive experiences.
 
-> Note: While Loaders focus on fetching data from external sources, Actions concentrate on mutating data within the application. By leveraging both Loaders and Actions in deco.cx, developers can create powerful applications that fetch and manipulate data seamlessly.
+> Note: While Loaders focus on fetching data from external sources, Actions
+> concentrate on mutating data within the application. By leveraging both
+> Loaders and Actions in deco.cx, developers can create powerful applications
+> that fetch and manipulate data seamlessly.
 
-One of the great benefits of **Actions** is their ability to work in conjunction with **Loaders** and other blocks. While **Loaders** focus on fetching data, **Actions** focus on mutating data. This means that multiple **Actions** can be invoked from the same interface, allowing users to modify data from different sources or perform a series of related operations. By leveraging both **Loaders** and **Actions**, developers can create flexible and powerful applications that seamlessly integrate data fetching and mutation.
+One of the great benefits of **Actions** is their ability to work in conjunction
+with **Loaders** and other blocks. While **Loaders** focus on fetching data,
+**Actions** focus on mutating data. This means that multiple **Actions** can be
+invoked from the same interface, allowing users to modify data from different
+sources or perform a series of related operations. By leveraging both
+**Loaders** and **Actions**, developers can create flexible and powerful
+applications that seamlessly integrate data fetching and mutation.
 
 In addition to mutating data data, **Actions** in _deco.cx_ **can also export a
 typescript props type,** which allows them to be configured in the

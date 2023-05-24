@@ -3,9 +3,24 @@ description: Uma Action na deco.cx é uma função que modifica dados.
 since: 1.0.0
 ---
 
-Uma **Action** no deco.cx é uma função em typescript que **modifica** dados dentro da aplicação. As **Action** são acionadas por _interações_ específicas do **usuário** ou **eventos** e são responsáveis por atualizar o estado da aplicação de acordo. Ao contrário dos **Loaders**, que buscam dados de fontes externas, as **Action** concentram-se em modificar os dados já presentes na aplicação. Elas podem realizar operações como **atualização**, **criação** ou **exclusão** de dados com base na lógica especificada. As **Action** proporcionam _controle_ preciso e flexibilidade sobre a mutação de dados e integram-se perfeitamente a outros blocos, como os **Loaders**, para permitir um fluxo contínuo de dados na aplicação.
+Uma **Action** no deco.cx é uma função em typescript que **modifica** dados
+dentro da aplicação. As **Action** são acionadas por _interações_ específicas do
+**usuário** ou **eventos** e são responsáveis por atualizar o estado da
+aplicação de acordo. Ao contrário dos **Loaders**, que buscam dados de fontes
+externas, as **Action** concentram-se em modificar os dados já presentes na
+aplicação. Elas podem realizar operações como **atualização**, **criação** ou
+**exclusão** de dados com base na lógica especificada. As **Action**
+proporcionam _controle_ preciso e flexibilidade sobre a mutação de dados e
+integram-se perfeitamente a outros blocos, como os **Loaders**, para permitir um
+fluxo contínuo de dados na aplicação.
 
-As **Action**, assim como os **Loaders**, são implementadas como funções em typescript e estão localizadas na pasta `/actions/` do seu projeto. Elas podem ser invocadas em resposta a interações do usuário, envios de formulários ou qualquer outro gatilho definido. Ao encapsular a lógica de mutação de dados nas **Action**, os desenvolvedores podem gerenciar e rastrear as alterações feitas no estado da aplicação, proporcionando aos usuários experiências dinâmicas e interativas.
+As **Action**, assim como os **Loaders**, são implementadas como funções em
+typescript e estão localizadas na pasta `/actions/` do seu projeto. Elas podem
+ser invocadas em resposta a interações do usuário, envios de formulários ou
+qualquer outro gatilho definido. Ao encapsular a lógica de mutação de dados nas
+**Action**, os desenvolvedores podem gerenciar e rastrear as alterações feitas
+no estado da aplicação, proporcionando aos usuários experiências dinâmicas e
+interativas.
 
 ## Código de exemplo
 
