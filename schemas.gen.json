@@ -9260,9 +9260,17 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ZpZGVvLnRzeA==@Props",
           "title": "Simulator Video New"
         },
+        "simulatorTimerVideoNew": {
+          "type": "number",
+          "title": "Simulator Timer Video New"
+        },
         "simulatorVideoOld": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ZpZGVvLnRzeA==@Props",
           "title": "Simulator Video Old"
+        },
+        "simulatorTimerVideoOld": {
+          "type": "number",
+          "title": "Simulator Timer Video Old"
         }
       },
       "required": [
@@ -9271,7 +9279,9 @@
         "simulatorTitle",
         "simulatorImage",
         "simulatorVideoNew",
-        "simulatorVideoOld"
+        "simulatorTimerVideoNew",
+        "simulatorVideoOld",
+        "simulatorTimerVideoOld"
       ],
       "title": "deco-sites/starting/components/camp/performance/performance.tsx@Props"
     },

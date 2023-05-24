@@ -17,7 +17,9 @@ export interface Props {
   simulatorTitle: string;
   simulatorImage: IImage;
   simulatorVideoNew: IVideo;
+  simulatorTimerVideoNew: number;
   simulatorVideoOld: IVideo;
+  simulatorTimerVideoOld: number;
 }
 
 const Performance = (
@@ -43,6 +45,8 @@ const Performance = (
           image={props?.simulatorImage}
           videoNew={props?.simulatorVideoNew}
           videoOld={props?.simulatorVideoOld}
+          timerVideoNew={props?.simulatorTimerVideoNew}
+          timerVideoOld={props?.simulatorTimerVideoOld}
         />
       </div>
     </div>
