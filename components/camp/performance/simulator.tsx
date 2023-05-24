@@ -87,80 +87,88 @@ const Simulator = (
       </div>
 
       <div className="relative">
-        <Image image={props.image} className="min-h-[470px]" />
-        <div class="absolute top-5 w-full h-[90%] px-8 flex items-center">
-          {hasActiveSimulation
-            ? (
-              <Media
-                resetVideo={resetVideo}
-                videoNew={props.videoNew}
-                videoOld={props.videoOld}
-              />
-            )
-            : <SimulationInfo />}
+        <div class="max-w-[342px] mx-auto">
+          <Image image={props.image} className="min-h-[470px]" />
         </div>
+
         {hasActiveSimulation
           ? (
-            <div class="fade-in absolute -bottom-[1px] -left-6 z-20 bg-[#FFFFFFE5] w-screen h-[260px] p-6">
-              <div class="w-full flex flex-col justify-center items-center max-w-[382px] mx-auto">
-                <div class="flex gap-3 justify-center items-center mb-7">
-                  <Timer className="bg-[#06E474]">
-                    <Icon id="DecoSimulator" size={55} />
-                    <p class="font-inter font-semibold text-5xl text-dark-green">
-                      <Counter
-                        resetCounter={resetCounter}
-                        onTempoAtualizado={handleTempoAtualizado1}
-                        tempoMaximo={tempo1Maximo}
-                      />
-                    </p>
-                  </Timer>
+            <>
+              <div class="absolute top-5 w-full h-[90%] px-8 flex items-center">
+                <Media
+                  resetVideo={resetVideo}
+                  videoNew={props.videoNew}
+                  videoOld={props.videoOld}
+                />
+              </div>
+              <div class="fade-in absolute -bottom-[1px] -left-6 z-20 bg-[#FFFFFFE5] w-screen h-[260px] p-6">
+                <div class="w-full flex flex-col justify-center items-center max-w-[382px] mx-auto">
+                  <div class="flex gap-3 justify-center items-center mb-7">
+                    <Timer className="bg-[#06E474]">
+                      <Icon id="DecoSimulator" size={55} />
+                      <p class="font-inter font-semibold text-5xl text-dark-green">
+                        <Counter
+                          resetCounter={resetCounter}
+                          onTempoAtualizado={handleTempoAtualizado1}
+                          tempoMaximo={tempo1Maximo}
+                        />
+                      </p>
+                    </Timer>
 
-                  <div class="w-8 h-8 rounded-full flex flex-col items-center gap-2 border border-dark-green bg-dark-green ">
-                    <span class="font-regular text-base text-almost-white mt-[3px]">
-                      VS
-                    </span>
+                    <div class="w-8 h-8 rounded-full flex flex-col items-center gap-2 border border-dark-green bg-dark-green ">
+                      <span class="font-regular text-base text-almost-white mt-[3px]">
+                        VS
+                      </span>
+                    </div>
+
+                    <Timer className="justify-center bg-almost-white">
+                      <p class="font-semibold text-lg text-dark-green">
+                        Atual
+                      </p>
+                      <p class="font-inter font-medium text-[33px] text-dark-green">
+                        <Counter
+                          resetCounter={resetCounter}
+                          onTempoAtualizado={handleTempoAtualizado2}
+                          tempoMaximo={tempo2Maximo}
+                        />
+                      </p>
+                    </Timer>
                   </div>
 
-                  <Timer className="justify-center bg-almost-white">
-                    <p class="font-semibold text-lg text-dark-green">
-                      Atual
-                    </p>
-                    <p class="font-inter font-medium text-[33px] text-dark-green">
-                      <Counter
-                        resetCounter={resetCounter}
-                        onTempoAtualizado={handleTempoAtualizado2}
-                        tempoMaximo={tempo2Maximo}
-                      />
-                    </p>
-                  </Timer>
+                  <ProgressBar
+                    firstTimeSeconds={tempo.tempo1.segundos}
+                    secondTimeSeconds={tempo.tempo2.segundos}
+                    firstTimeMilliseconds={tempo.tempo1.milissegundos}
+                    secondTimeMilliseconds={tempo.tempo2.milissegundos}
+                  />
+
+                  {countersFinalizados && (
+                    <CountButton
+                      onClick={handleRestartSimulation}
+                      variant="outline"
+                    >
+                      <Icon id="Restart" size={19} />
+                      <span>Reiniciar simulação</span>
+                    </CountButton>
+                  )}
                 </div>
-
-                <ProgressBar
-                  firstTimeSeconds={tempo.tempo1.segundos}
-                  secondTimeSeconds={tempo.tempo2.segundos}
-                  firstTimeMilliseconds={tempo.tempo1.milissegundos}
-                  secondTimeMilliseconds={tempo.tempo2.milissegundos}
-                />
-
-                {countersFinalizados && (
-                  <CountButton
-                    onClick={handleRestartSimulation}
-                    variant="outline"
-                  >
-                    <Icon id="Restart" size={19} />
-                    <span>Reiniciar simulação</span>
-                  </CountButton>
-                )}
               </div>
-            </div>
+            </>
           )
           : (
-            <CountButton
-              variant="filled"
-              onClick={handleToActivateSimulation}
-            >
-              Iniciar simulação
-            </CountButton>
+            <div class="absolute -left-6 bottom-0 w-screen flex items-end bg-[#FFFFFFE5]">
+              <div class="w-full max-w-[342px] mx-auto">
+                <div class="p-6 pb-0 mb-6">
+                  <SimulationInfo />
+                </div>
+                <CountButton
+                  variant="filled"
+                  onClick={handleToActivateSimulation}
+                >
+                  Iniciar simulação
+                </CountButton>
+              </div>
+            </div>
           )}
       </div>
     </div>

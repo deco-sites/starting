@@ -11,7 +11,7 @@ export default function CountButton(
 ) {
   const variantStyle = {
     outline: `bg-almost-white border border-dark-green  gap-2`,
-    filled: `bg-[#06E474] absolute bottom-[-2px] border-0`,
+    filled: `bg-[#06E474] border-0`,
   };
 
   return (
