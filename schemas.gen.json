@@ -7491,15 +7491,17 @@
           "title": "Link"
         },
         "resetVideo": {
-          "type": "boolean",
+          "type": [
+            "boolean",
+            "null"
+          ],
           "title": "Reset Video"
         }
       },
       "required": [
         "mobile",
         "desktop",
-        "link",
-        "resetVideo"
+        "link"
       ],
       "title": "Props"
     },
@@ -7519,16 +7521,26 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ZpZGVvLnRzeA==@Props",
           "title": "Video New"
         },
+        "timerVideoNew": {
+          "type": "number",
+          "title": "Timer Video New"
+        },
         "videoOld": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ZpZGVvLnRzeA==@Props",
           "title": "Video Old"
+        },
+        "timerVideoOld": {
+          "type": "number",
+          "title": "Timer Video Old"
         }
       },
       "required": [
         "title",
         "image",
         "videoNew",
-        "videoOld"
+        "timerVideoNew",
+        "videoOld",
+        "timerVideoOld"
       ],
       "title": "deco-sites/starting/components/camp/performance/simulator.tsx@Props"
     },

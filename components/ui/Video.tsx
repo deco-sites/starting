@@ -12,7 +12,7 @@ export interface Props {
   alt?: string;
   /** @title Link */
   link: string;
-  resetVideo: boolean;
+  resetVideo?: boolean;
 }
 
 export default function Video(props: Props) {

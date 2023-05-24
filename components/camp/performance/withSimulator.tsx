@@ -11,29 +11,25 @@ import Timer from "deco-sites/starting/components/camp/performance/timer.tsx";
 interface Props {
   videoOld: IVideo;
   videoNew: IVideo;
-  timerVideoNew: number;
-  timerVideoOld: number;
+  timerVideoNew: { seconds: number; milliseconds: number };
+  timerVideoOld: { seconds: number; milliseconds: number };
 }
 
 export default function WithSimulator(props: Props) {
   const [resetCounter, setResetCounter] = useState(false);
   const [resetVideo, setResetVideo] = useState(false);
   const [countersFinalizados, setCountersFinalizados] = useState(false);
-
   const [tempo, setTempo] = useState({
-    tempo1: { segundos: 0, milissegundos: 0 },
-    tempo2: { segundos: 0, milissegundos: 0 },
+    tempo1: { seconds: 0, milliseconds: 0 },
+    tempo2: { seconds: 0, milliseconds: 0 },
   });
-
-  const tempo1Maximo = { segundos: 4, milissegundos: 2 };
-  const tempo2Maximo = { segundos: 12, milissegundos: 3 };
 
   useEffect(() => {
     if (
-      tempo.tempo1.segundos >= tempo1Maximo.segundos &&
-      tempo.tempo1.milissegundos >= tempo1Maximo.milissegundos &&
-      tempo.tempo2.segundos >= tempo2Maximo.segundos &&
-      tempo.tempo2.milissegundos >= tempo2Maximo.milissegundos
+      tempo.tempo1.seconds >= props.timerVideoNew.seconds &&
+      tempo.tempo1.milliseconds >= props.timerVideoNew.milliseconds &&
+      tempo.tempo2.seconds >= props.timerVideoOld.seconds &&
+      tempo.tempo2.milliseconds >= props.timerVideoOld.milliseconds
     ) {
       setCountersFinalizados(true);
       setResetCounter(false);
@@ -44,7 +40,7 @@ export default function WithSimulator(props: Props) {
   }, [tempo]);
 
   const handleTempoAtualizado1 = (
-    novoTempo: { segundos: number; milissegundos: number },
+    novoTempo: { seconds: number; milliseconds: number },
   ) => {
     setTempo((prevTempo) => ({
       ...prevTempo,
@@ -53,7 +49,7 @@ export default function WithSimulator(props: Props) {
   };
 
   const handleTempoAtualizado2 = (
-    novoTempo: { segundos: number; milissegundos: number },
+    novoTempo: { seconds: number; milliseconds: number },
   ) => {
     setTempo((prevTempo) => ({
       ...prevTempo,
@@ -83,8 +79,8 @@ export default function WithSimulator(props: Props) {
               <p class="font-inter font-semibold text-5xl text-dark-green">
                 <Counter
                   resetCounter={resetCounter}
-                  onTempoAtualizado={handleTempoAtualizado1}
-                  tempoMaximo={tempo1Maximo}
+                  onTimeUpdate={handleTempoAtualizado1}
+                  maxTime={props.timerVideoNew}
                 />
               </p>
             </Timer>
@@ -102,18 +98,18 @@ export default function WithSimulator(props: Props) {
               <p class="font-inter font-medium text-[33px] text-dark-green">
                 <Counter
                   resetCounter={resetCounter}
-                  onTempoAtualizado={handleTempoAtualizado2}
-                  tempoMaximo={tempo2Maximo}
+                  onTimeUpdate={handleTempoAtualizado2}
+                  maxTime={props.timerVideoOld}
                 />
               </p>
             </Timer>
           </div>
 
           <ProgressBar
-            firstTimeSeconds={tempo.tempo1.segundos}
-            secondTimeSeconds={tempo.tempo2.segundos}
-            firstTimeMilliseconds={tempo.tempo1.milissegundos}
-            secondTimeMilliseconds={tempo.tempo2.milissegundos}
+            firstTimeSeconds={tempo.tempo1.seconds}
+            secondTimeSeconds={tempo.tempo2.seconds}
+            firstTimeMilliseconds={tempo.tempo1.milliseconds}
+            secondTimeMilliseconds={tempo.tempo2.milliseconds}
           />
 
           {countersFinalizados && (

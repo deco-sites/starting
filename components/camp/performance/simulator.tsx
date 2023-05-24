@@ -16,10 +16,29 @@ export interface Props {
   timerVideoOld: number;
 }
 
+function formatTime(time: number) {
+  const [seconds, milliseconds] = time.toPrecision().split(".");
+
+  return {
+    seconds: Number(seconds),
+    milliseconds: Number(milliseconds),
+  };
+}
+
 const Simulator = (
   props: Props,
 ) => {
   const [hasActiveSimulation, sethasActiveSimulation] = useState(false);
+  const timeNew = formatTime(props.timerVideoNew);
+  const timeOld = formatTime(props.timerVideoOld);
+  const maxTimeNew = {
+    seconds: timeNew.seconds,
+    milliseconds: timeNew.milliseconds,
+  };
+  const maxTimeOld = {
+    seconds: timeOld.seconds,
+    milliseconds: timeOld.milliseconds,
+  };
 
   function handleToActivateSimulation() {
     sethasActiveSimulation(true);
@@ -43,8 +62,8 @@ const Simulator = (
             <WithSimulator
               videoNew={props.videoNew}
               videoOld={props.videoOld}
-              timerVideoNew={props.timerVideoNew}
-              timerVideoOld={props.timerVideoOld}
+              timerVideoNew={maxTimeNew}
+              timerVideoOld={maxTimeOld}
             />
           )
           : (

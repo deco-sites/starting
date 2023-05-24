@@ -1,4 +1,4 @@
-import { ComponentChildren, JSX } from "preact";
+import { ComponentChildren } from "preact";
 
 interface Props {
   className?: string;

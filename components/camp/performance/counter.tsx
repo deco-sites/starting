@@ -1,69 +1,66 @@
 import { useEffect, useState } from "preact/hooks";
 
 interface Props {
-  tempoMaximo: { segundos: number; milissegundos: number };
-  onTempoAtualizado: (
-    tempo: { segundos: number; milissegundos: number },
+  maxTime: { seconds: number; milliseconds: number };
+  onTimeUpdate: (
+    tempo: { seconds: number; milliseconds: number },
   ) => void;
   resetCounter: boolean;
 }
 
-const Counter = ({ onTempoAtualizado, tempoMaximo, resetCounter }: Props) => {
-  const [tempo, setTempo] = useState({ segundos: 0, milissegundos: 0 });
+const Counter = ({ onTimeUpdate, maxTime, resetCounter }: Props) => {
+  const [time, setTime] = useState({ seconds: 0, milliseconds: 0 });
 
   useEffect(() => {
     let intervalId = 0;
 
-    const iniciarContador = () => {
+    const startCounter = () => {
       intervalId = setInterval(() => {
-        setTempo((tempoAnterior) => {
-          // Incrementa o tempo em 1 milissegundo
-          const novoMilissegundos = tempoAnterior.milissegundos + 1;
-          let novoSegundos = tempoAnterior.segundos;
+        setTime((previousTime) => {
+          const newMilliseconds = previousTime.milliseconds + 1;
+          let newSeconds = previousTime.seconds;
 
-          // Verifica se é necessário incrementar os segundos
-          if (novoMilissegundos >= 100) {
-            novoSegundos += 1;
+          if (newMilliseconds >= 100) {
+            newSeconds += 1;
           }
 
-          // Verifica se o tempo máximo foi atingido
           if (
-            novoSegundos >= tempoMaximo.segundos &&
-            novoMilissegundos >= tempoMaximo.milissegundos
+            newSeconds >= maxTime.seconds &&
+            newMilliseconds >= maxTime.milliseconds
           ) {
-            clearInterval(intervalId); // Interrompe o intervalo
-            onTempoAtualizado(tempoMaximo); // Chama a função de retorno com o tempo máximo
-            return tempoMaximo; // Atualiza o tempo no estado com o tempo máximo
+            clearInterval(intervalId);
+            onTimeUpdate(maxTime);
+            return maxTime;
           }
 
-          const novoTempo = {
-            segundos: novoSegundos,
-            milissegundos: novoMilissegundos >= 100 ? 0 : novoMilissegundos,
+          const newTime = {
+            seconds: newSeconds,
+            milliseconds: newMilliseconds >= 100 ? 0 : newMilliseconds,
           };
 
-          onTempoAtualizado(novoTempo); // Chama a função de retorno com o novo tempo
-          return novoTempo; // Atualiza o tempo no estado
+          onTimeUpdate(newTime);
+          return newTime;
         });
-      }, 10); // Atualiza o contador a cada 10 milissegundos
+      }, 10);
     };
 
     if (resetCounter) {
-      setTempo({ segundos: 0, milissegundos: 0 }); // Reinicia o tempo para 0
-      clearInterval(intervalId); // Limpa o intervalo anterior, se houver
-      iniciarContador(); // Inicia o novo contador
+      setTime({ seconds: 0, milliseconds: 0 });
+      clearInterval(intervalId);
+      startCounter();
     } else {
-      iniciarContador(); // Continua o contador atual
+      startCounter();
     }
 
     return () => {
-      clearInterval(intervalId); // Limpa o intervalo quando o componente é desmontado
+      clearInterval(intervalId);
     };
-  }, [resetCounter]); // Executa o efeito quando a propriedade resetCounter mudar
+  }, [resetCounter]);
 
-  const exibirTempo = tempo.segundos >= tempoMaximo.segundos &&
-      tempo.milissegundos >= tempoMaximo.milissegundos
-    ? `${tempoMaximo.segundos}.${tempoMaximo.milissegundos}s`
-    : `${tempo.segundos}.${tempo.milissegundos}s`;
+  const exibirTempo = time.seconds >= maxTime.seconds &&
+      time.milliseconds >= maxTime.milliseconds
+    ? `${maxTime.seconds}.${maxTime.milliseconds}s`
+    : `${time.seconds}.${time.milliseconds}s`;
 
   return <>{exibirTempo}</>;
 };
