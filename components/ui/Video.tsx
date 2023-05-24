@@ -13,6 +13,7 @@ export interface Props {
   /** @title Link */
   link: string;
   resetVideo?: boolean;
+  className?: string;
 }
 
 export default function Video(props: Props) {
@@ -33,7 +34,7 @@ export default function Video(props: Props) {
       playsInline={true}
       autoPlay={true}
       muted={true}
-      class="w-full"
+      class={`w-full ${props.className}`}
       loading="eager"
     >
       <Source

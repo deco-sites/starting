@@ -7496,6 +7496,13 @@
             "null"
           ],
           "title": "Reset Video"
+        },
+        "className": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Class Name"
         }
       },
       "required": [

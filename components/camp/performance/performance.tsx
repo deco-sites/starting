@@ -27,18 +27,16 @@ const Performance = (
 ) => {
   return (
     <div class="py-10 md:py-[120px] bg-almost-white">
-      <div class="pt-12 pb-6 px-6 ">
+      <div class="pt-12 pb-6 px-6 md:px-16">
         <div
-          class="font-bold text-[46px] text-[#202320] leading-[44.16px] mb-8"
+          class="font-bold text-[46px] text-[#202320] leading-[44.16px] md:leading-[105px] mb-8 md:mb-14 md:text-[112px]"
           dangerouslySetInnerHTML={{ __html: props.title }}
-        >
-        </div>
+        />
 
         <div
-          class="font-regular text-2xl text-[#1F261FAB] mb-10"
+          class="font-regular text-2xl md:text-[32px] text-[#1F261FAB] mb-10"
           dangerouslySetInnerHTML={{ __html: props.text }}
-        >
-        </div>
+        />
 
         <Simulator
           title={props?.simulatorTitle}
