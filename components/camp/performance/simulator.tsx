@@ -1,6 +1,8 @@
 import { useState } from "preact/hooks";
 import Image, { IImage } from "deco-sites/starting/components/ui/Image.tsx";
-import { Props as IVideo } from "deco-sites/starting/components/ui/Video.tsx";
+import Video, {
+  Props as IVideo,
+} from "deco-sites/starting/components/ui/Video.tsx";
 import WithSimulator from "deco-sites/starting/components/camp/performance/withSimulator.tsx";
 import WithoutSimulator from "deco-sites/starting/components/camp/performance/withoutSimulator.tsx";
 
@@ -29,6 +31,8 @@ const Simulator = (
   props: Props,
 ) => {
   const [hasActiveSimulation, sethasActiveSimulation] = useState(false);
+  const [resetVideo, setResetVideo] = useState(false);
+
   const timeNew = formatTime(props.timerVideoNew);
   const timeOld = formatTime(props.timerVideoOld);
   const maxTimeNew = {
@@ -74,7 +78,16 @@ const Simulator = (
         </div>
 
         <div class="items-center relative gap-12 justify-center hidden md:flex ">
-          <Image image={props.image} className="min-h-[470px]" />
+          <div class="relative flex justify-center items-center">
+            <Image image={props.image} className="min-h-[470px]" />
+            {hasActiveSimulation && (
+              <Video
+                {...props.videoNew}
+                resetVideo={resetVideo}
+                className="rounded-lg absolute max-w-[225px] top-[7%]"
+              />
+            )}
+          </div>
           <div class="hidden md:flex justify-center items-center">
             {hasActiveSimulation
               ? (
@@ -83,6 +96,8 @@ const Simulator = (
                   videoOld={props.videoOld}
                   timerVideoNew={maxTimeNew}
                   timerVideoOld={maxTimeOld}
+                  setResetVideo={setResetVideo}
+                  resetVideo={resetVideo}
                 />
               )
               : (
@@ -91,7 +106,16 @@ const Simulator = (
                 />
               )}
           </div>
-          <Image image={props.image} className="min-h-[470px]" />
+          <div class="relative flex justify-center items-center">
+            <Image image={props.image} className="min-h-[470px]" />
+            {hasActiveSimulation && (
+              <Video
+                {...props.videoOld}
+                resetVideo={resetVideo}
+                className="rounded-lg absolute max-w-[225px] top-[7%]"
+              />
+            )}
+          </div>
         </div>
 
         <div class="block md:hidden">
@@ -102,6 +126,8 @@ const Simulator = (
                 videoOld={props.videoOld}
                 timerVideoNew={maxTimeNew}
                 timerVideoOld={maxTimeOld}
+                setResetVideo={setResetVideo}
+                resetVideo={resetVideo}
               />
             )
             : (

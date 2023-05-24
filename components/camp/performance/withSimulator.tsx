@@ -1,11 +1,11 @@
-import { useEffect, useState } from "preact/hooks";
+import { StateUpdater, useEffect, useState } from "preact/hooks";
 import { Props as IVideo } from "deco-sites/starting/components/ui/Video.tsx";
 import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 import ProgressBar from "deco-sites/starting/components/camp/performance/progressBar.tsx";
 import Counter from "deco-sites/starting/components/camp/performance/counter.tsx";
 
 import CountButton from "deco-sites/starting/components/camp/performance/countButton.tsx";
-import Media from "deco-sites/starting/components/camp/performance/media.tsx";
+import VideosMobile from "deco-sites/starting/components/camp/performance/videoMobile.tsx";
 import Timer from "deco-sites/starting/components/camp/performance/timer.tsx";
 
 interface Timer {
@@ -18,11 +18,12 @@ interface Props {
   videoNew: IVideo;
   timerVideoNew: Timer;
   timerVideoOld: Timer;
+  resetVideo: boolean;
+  setResetVideo: StateUpdater<boolean>;
 }
 
 export default function WithSimulator(props: Props) {
   const [resetCounter, setResetCounter] = useState(false);
-  const [resetVideo, setResetVideo] = useState(false);
   const [countersFinalizados, setCountersFinalizados] = useState(false);
   const [firstTimer, setFirstTimer] = useState<Timer>({
     seconds: 0,
@@ -42,7 +43,7 @@ export default function WithSimulator(props: Props) {
     ) {
       setCountersFinalizados(true);
       setResetCounter(false);
-      setResetVideo(false);
+      props.setResetVideo(false);
     } else {
       setCountersFinalizados(false);
     }
@@ -62,26 +63,18 @@ export default function WithSimulator(props: Props) {
 
   function handleRestartSimulation() {
     setResetCounter(true);
-    setResetVideo(true);
+    props.setResetVideo(true);
   }
 
   return (
     <>
       <div class="absolute top-5 w-full h-[90%] px-8 flex items-center md:hidden">
-        <Media
-          resetVideo={resetVideo}
+        <VideosMobile
+          resetVideo={props.resetVideo}
           videoNew={props.videoNew}
           videoOld={props.videoOld}
         />
       </div>
-      <div class="hidden md:block">
-        <Media
-          resetVideo={resetVideo}
-          videoNew={props.videoNew}
-          videoOld={props.videoOld}
-        />
-      </div>
-
       <div class="md:hidden fade-in absolute -bottom-[1px] -left-6 z-20 bg-[#FFFFFFE5] w-screen h-[260px] p-6 rounded-[12px]">
         <div class="w-full flex flex-col justify-center items-center max-w-[382px] mx-auto">
           <div class="flex gap-3 justify-center items-center mb-7">

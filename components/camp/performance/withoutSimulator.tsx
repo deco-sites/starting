@@ -23,8 +23,8 @@ export default function WithoutSimulator(props: Props) {
         </div>
       </div>
 
-      <div class="hidden md:block bg-[#FFFFFFE5] absolute rounded-[12px]">
-        <div class="w-full max-w-[496] mx-auto">
+      <div class="hidden md:block bg-[#FFFFFFE5] absolute rounded-[12px] p-6 z-10">
+        <div class="w-full max-w-[496px] mx-auto">
           <div class="flex gap-3 justify-center items-center mb-7">
             <div
               class={`w-[148px] h-[148px] rounded-full flex justify-center items-center gap-2 border border-dark-green bg-[#06E474]`}
