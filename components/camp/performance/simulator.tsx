@@ -2,6 +2,7 @@ import Image, { IImage } from "deco-sites/starting/components/ui/Image.tsx";
 import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 import ProgressBar from "deco-sites/starting/components/camp/performance/progressBar.tsx";
 import Counter from "deco-sites/starting/components/camp/performance/counter.tsx";
+import CountButton from "deco-sites/starting/components/camp/performance/countButton.tsx";
 import Video, {
   Props as IVideo,
 } from "deco-sites/starting/components/ui/Video.tsx";
@@ -152,24 +153,24 @@ const Simulator = (
                 />
 
                 {countersFinalizados && (
-                  <button
+                  <CountButton
                     onClick={handleRestartSimulation}
-                    class="w-full max-w-[382px] bg-almost-white py-[17px] rounded text-base font-500 font-inter text-dark-green border border-dark-green flex gap-2 justify-center items-center"
+                    variant="outline"
                   >
                     <Icon id="Restart" size={19} />
                     <span>Reiniciar simulação</span>
-                  </button>
+                  </CountButton>
                 )}
               </div>
             </div>
           )
           : (
-            <button
+            <CountButton
+              variant="filled"
               onClick={handleToActivateSimulation}
-              class="w-full max-w-[382px] bg-[#06E474] absolute bottom-[-2px] py-[17px] rounded text-base font-500 font-inter text-dark-green border-0"
             >
               Iniciar simulação
-            </button>
+            </CountButton>
           )}
       </div>
     </div>
