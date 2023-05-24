@@ -21,8 +21,10 @@ const Simulator = (
   props: Props,
 ) => {
   const [hasActiveSimulation, sethasActiveSimulation] = useState(false);
-  const [tempo1, setTempo1] = useState({ segundos: 0, milissegundos: 0 });
-  const [tempo2, setTempo2] = useState({ segundos: 0, milissegundos: 0 });
+  const [tempo, setTempo] = useState({
+    tempo1: { segundos: 0, milissegundos: 0 },
+    tempo2: { segundos: 0, milissegundos: 0 },
+  });
   const [resetCounter, setResetCounter] = useState(false);
   const [resetVideo, setResetVideo] = useState(false);
   const [countersFinalizados, setCountersFinalizados] = useState(false);
@@ -31,14 +33,21 @@ const Simulator = (
   const tempo2Maximo = { segundos: 12, milissegundos: 3 };
 
   const handleTempoAtualizado1 = (
-    tempo: { segundos: number; milissegundos: number },
+    novoTempo: { segundos: number; milissegundos: number },
   ) => {
-    setTempo1(tempo);
+    setTempo((prevTempo) => ({
+      ...prevTempo,
+      tempo1: novoTempo,
+    }));
   };
+
   const handleTempoAtualizado2 = (
-    tempo: { segundos: number; milissegundos: number },
+    novoTempo: { segundos: number; milissegundos: number },
   ) => {
-    setTempo2(tempo);
+    setTempo((prevTempo) => ({
+      ...prevTempo,
+      tempo2: novoTempo,
+    }));
   };
 
   function handleRestartSimulation() {
@@ -46,18 +55,24 @@ const Simulator = (
     setResetVideo(true);
   }
 
+  function handleToActivateSimulation() {
+    sethasActiveSimulation(true);
+  }
+
   useEffect(() => {
     if (
-      tempo1.segundos >= tempo1Maximo.segundos &&
-      tempo1.milissegundos >= tempo1Maximo.milissegundos &&
-      tempo2.segundos >= tempo2Maximo.segundos &&
-      tempo2.milissegundos >= tempo2Maximo.milissegundos
+      tempo.tempo1.segundos >= tempo1Maximo.segundos &&
+      tempo.tempo1.milissegundos >= tempo1Maximo.milissegundos &&
+      tempo.tempo2.segundos >= tempo2Maximo.segundos &&
+      tempo.tempo2.milissegundos >= tempo2Maximo.milissegundos
     ) {
       setCountersFinalizados(true);
+      setResetCounter(false);
+      setResetVideo(false);
     } else {
       setCountersFinalizados(false);
     }
-  }, [tempo1, tempo2]);
+  }, [tempo]);
 
   return (
     <div>
@@ -130,10 +145,10 @@ const Simulator = (
                 </div>
 
                 <ProgressBar
-                  firstTimeSeconds={tempo1.segundos}
-                  firstTimeMilliseconds={tempo1.milissegundos}
-                  secondTimeSeconds={tempo2.segundos}
-                  secondTimeMilliseconds={tempo2.milissegundos}
+                  firstTimeSeconds={tempo.tempo1.segundos}
+                  secondTimeSeconds={tempo.tempo2.segundos}
+                  firstTimeMilliseconds={tempo.tempo1.milissegundos}
+                  secondTimeMilliseconds={tempo.tempo2.milissegundos}
                 />
 
                 {countersFinalizados && (
@@ -150,7 +165,7 @@ const Simulator = (
           )
           : (
             <button
-              onClick={() => sethasActiveSimulation(true)}
+              onClick={handleToActivateSimulation}
               class="w-full max-w-[382px] bg-[#06E474] absolute bottom-[-2px] py-[17px] rounded text-base font-500 font-inter text-dark-green border-0"
             >
               Iniciar simulação
