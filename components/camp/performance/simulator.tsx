@@ -73,8 +73,19 @@ const Simulator = (
       </div>
 
       <div className="relative">
-        <div class="max-w-[342px] mx-auto md:hidden">
-          <Image image={props.image} className="min-h-[470px]" />
+        <div class="relative md:hidden">
+          <div class="max-w-[342px] mx-auto md:hidden">
+            <Image image={props.image} className="min-h-[470px]" />
+          </div>
+          {hasActiveSimulation && (
+            <div class="absolute top-5 w-full h-[90%] px-8 flex items-center md:hidden">
+              <div class="grid grid-cols-custom-grid-mockup w-full h-full items-center md:hidden">
+                <Video {...props.videoNew} resetVideo={resetVideo} />
+                <div class="h-full w-full bg-almost-white relative -top-[21px]" />
+                <Video {...props.videoOld} resetVideo={resetVideo} />
+              </div>
+            </div>
+          )}
         </div>
 
         <div class="items-center relative gap-12 justify-center hidden md:flex ">

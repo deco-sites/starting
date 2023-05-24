@@ -5,7 +5,6 @@ import ProgressBar from "deco-sites/starting/components/camp/performance/progres
 import Counter from "deco-sites/starting/components/camp/performance/counter.tsx";
 
 import CountButton from "deco-sites/starting/components/camp/performance/countButton.tsx";
-import VideosMobile from "deco-sites/starting/components/camp/performance/videoMobile.tsx";
 import Timer from "deco-sites/starting/components/camp/performance/timer.tsx";
 
 interface Timer {
@@ -68,13 +67,6 @@ export default function WithSimulator(props: Props) {
 
   return (
     <>
-      <div class="absolute top-5 w-full h-[90%] px-8 flex items-center md:hidden">
-        <VideosMobile
-          resetVideo={props.resetVideo}
-          videoNew={props.videoNew}
-          videoOld={props.videoOld}
-        />
-      </div>
       <div class="md:hidden fade-in absolute -bottom-[1px] -left-6 z-20 bg-[#FFFFFFE5] w-screen h-[260px] p-6 rounded-[12px]">
         <div class="w-full flex flex-col justify-center items-center max-w-[382px] mx-auto">
           <div class="flex gap-3 justify-center items-center mb-7">
