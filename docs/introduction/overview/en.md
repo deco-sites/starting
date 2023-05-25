@@ -10,7 +10,7 @@ blazingly fast websites.
 What sets _deco.cx_ apart is its **personalization** features and how easy it is
 to **manage content without code changes**. deco.cx also makes it **easy for
 developers** to code UI components and behavior using a **simple web stack**
-with [Preact](https://preactjs.com/), [Twind](https://twind.style/) and
+with [Preact](https://preactjs.com/), [Tailwind](https://tailwindcss.com) and
 [Deno](https://deno.land/). We are the platform to create headless commerce
 experiences.
 

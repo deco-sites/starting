@@ -9,7 +9,7 @@ props** no Admin da _deco.cx_.
 
 ## Leitura sugerida
 
-- [Introdução: Tech Stack](http:///docs/pt/introduction/tech-stack)
+- [Introdução: Tech Stack](/docs/pt/introduction/tech-stack)
 - [Conceitos: Section](/docs/pt/concepts/section)
 
 Abra a pasta do seu site em uma IDE e execute as seguintes ações:
@@ -23,7 +23,7 @@ Abra a pasta do seu site em uma IDE e execute as seguintes ações:
    1. `sections/LatestPosts.tsx`
 
       ```tsx
-      interface Props {
+      export interface Props {
         title: string;
       }
 

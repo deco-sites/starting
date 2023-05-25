@@ -1,5 +1,5 @@
 ---
-description: Usamos Preact, Deno, Fresh e Twind. Se você tem experiência anterior com HTML, CSS, JavaScript e React, trabalhar com deco.cx será muito fácil para você.
+description: Usamos Preact, Deno, Fresh e Tailwind. Se você tem experiência anterior com HTML, CSS, JavaScript e React, trabalhar com deco.cx será muito fácil para você.
 ---
 
 Ao criar um site ou loja online com a _deco.cx_, você tem a flexibilidade de
@@ -19,11 +19,10 @@ deco.cx:
 usado para renderizar componentes de UI no servidor e no cliente. Ele usa _JSX_
 para criar componentes da web e geralmente é bem simples de aprender.
 
-### [Twind](https://twind.style/)
+### [Tailwind](https://tailwindcss.com)
 
-**Twind** é uma solução de estilos CSS baseada em classes utilitárias. É bem
-parecido com [TailwindCSS](https://tailwindcss.com/), porém é otimizado para
-desempenho. Twind é o que torna a criação de sites _deco.cx_ realmente rápida!
+**Tailwind** é uma solução de estilos CSS baseada em classes utilitárias, o que
+o torna ideal para iniciantes. O Tailwind também é otimizado para performance.
 
 ### [Deno](https://deno.com/deploy)
 

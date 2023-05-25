@@ -56,7 +56,7 @@ And that! To test that everything is working, do the following:
 1. Go to your deco site `https://<<sitename>>.deco.site`.
 2. Go to the developer tools and access the **Network** tab.
 3. Reload the page and make sure the script
-   `https://www.googletagmanager.com/gtm.js?id=GTM-P6D23BB` is being loaded.
+   `https://www.googletagmanager.com/gtm.js?id={GTM-ID}` is being loaded.
 
 ## Integrating Google Analytics 4
 

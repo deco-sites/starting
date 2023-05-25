@@ -22,7 +22,7 @@ Open the folder of your site's code in a IDE and perform the following actions:
    1. `sections/LatestPosts.tsx`
 
       ```tsx
-      interface Props {
+      export interface Props {
         title: string;
       }
 

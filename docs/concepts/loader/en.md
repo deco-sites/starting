@@ -43,7 +43,7 @@ easier to manage and scale your project.
 This is the implementation of the `shopifyProductList.ts` Loader:
 
 ```tsx
-import type { LoaderContext } from "$live/types.ts";
+import type { FnContext } from "$live/types.ts";
 
 import { ConfigShopify, createClient } from "../commerce/shopify/client.ts";
 import { toProduct } from "../commerce/shopify/transform.ts";
@@ -57,11 +57,11 @@ export interface Props {
 }
 
 export default async function searchLoader(
+  props: Props,
   _req: Request,
-  ctx: LoaderContext<Props, { configShopify: ConfigShopify }>,
+  ctx: FnContext<{ configShopify: ConfigShopify }>,
 ): Promise<Product[] | null> {
-  const props = ctx.state.$live;
-  const { configShopify } = ctx.state;
+  const { configShopify } = ctx;
   const shopify = createClient(configShopify);
 
   const count = props.count ?? 12;
@@ -89,4 +89,4 @@ export default async function searchLoader(
 ## Recommended Reading
 
 - [Fetching data from APIs](/docs/en/tutorials/data-fetching)
-- [Client-side loaders invocation](/docs/en/tutorials/client-side-invocation)
+- [Client-side function invocation](/docs/en/tutorials/client-side-invocation)

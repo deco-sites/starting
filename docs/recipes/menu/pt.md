@@ -14,8 +14,8 @@ comportamento é possivel de ser replicado somente com HTML e CSS, entregando um
 performance optimal para dispositivos moveis e desktop.
 
 O grande segredo desse tipo de menu é a utilizacao da classe `group` do
-[twind](https://twind.style/). Com ela, conseguimos fazer o menu ficar visivel
-dependendo do elemento sendo sobreposto.
+[Tailwind](https://tailwindcss.com). Com ela, conseguimos fazer o menu ficar
+visivel dependendo do elemento sendo sobreposto.
 
 Por exemplo, suponha o seguinte codigo:
 
