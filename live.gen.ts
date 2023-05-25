@@ -51,20 +51,23 @@ import * as $$$$$$$$22 from "./sections/Head.tsx";
 import * as $$$$$$$$23 from "./sections/Header.tsx";
 import * as $$$$$$$$24 from "./sections/ImpactCalculator.tsx";
 import * as $$$$$$$$25 from "./sections/Integration.tsx";
-import * as $$$$$$$$26 from "./sections/MainBanner.tsx";
-import * as $$$$$$$$27 from "./sections/Markdown.tsx";
-import * as $$$$$$$$28 from "./sections/Partner.tsx";
-import * as $$$$$$$$29 from "./sections/Performance.tsx";
-import * as $$$$$$$$30 from "./sections/Pricing.tsx";
-import * as $$$$$$$$31 from "./sections/QuillText.tsx";
-import * as $$$$$$$$32 from "./sections/StripePricing.tsx";
-import * as $$$$$$$$33 from "./sections/Thanks.tsx";
-import * as $$$$$$$$34 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$26 from "./sections/LinkToStoreSection.tsx";
+import * as $$$$$$$$27 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$28 from "./sections/Markdown.tsx";
+import * as $$$$$$$$29 from "./sections/PageSpeed.tsx";
+import * as $$$$$$$$30 from "./sections/Partner.tsx";
+import * as $$$$$$$$31 from "./sections/Performance.tsx";
+import * as $$$$$$$$32 from "./sections/Pricing.tsx";
+import * as $$$$$$$$33 from "./sections/QuillText.tsx";
+import * as $$$$$$$$34 from "./sections/StripePricing.tsx";
+import * as $$$$$$$$35 from "./sections/Thanks.tsx";
+import * as $$$$$$$$36 from "./sections/TripletBanner.tsx";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
 import * as $live_invoke_key from "$live/routes/live/invoke/[...key].ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
 import * as $live_inspect from "$live/routes/live/inspect/[...block].ts";
+import * as $live_release from "$live/routes/live/release.ts";
 import * as $live_meta from "$live/routes/live/_meta.ts";
 import * as $live_previews from "$live/routes/live/previews/[...block].tsx";
 import * as $live_catchall from "$live/routes/[...catchall].tsx";
@@ -83,6 +86,7 @@ import * as i2$$$$1 from "$live/sections/Slot.tsx";
 import * as i2$$$$2 from "$live/sections/UseSlot.tsx";
 import * as i2$$$$$$$$0 from "$live/matchers/MatchAlways.ts";
 import * as i2$$$$$$$$1 from "$live/matchers/MatchDate.ts";
+import * as i1$$$$$2 from "$live/matchers/MatchDevice.ts";
 import * as i2$$$$$$$$2 from "$live/matchers/MatchEnvironment.ts";
 import * as i2$$$$$$$$3 from "$live/matchers/MatchHost.ts";
 import * as i2$$$$$$$$4 from "$live/matchers/MatchMulti.ts";
@@ -218,6 +222,7 @@ const manifest = {
     "./routes/live/invoke/[...key].ts": $live_invoke_key,
     "./routes/live/invoke/index.ts": $live_invoke,
     "./routes/live/previews/[...block].tsx": $live_previews,
+    "./routes/live/release.ts": $live_release,
     "./routes/live/workbench.ts": $live_workbench,
   },
   "islands": {
@@ -260,15 +265,17 @@ const manifest = {
     "deco-sites/starting/sections/Header.tsx": $$$$$$$$23,
     "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$24,
     "deco-sites/starting/sections/Integration.tsx": $$$$$$$$25,
-    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$26,
-    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$27,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$28,
-    "deco-sites/starting/sections/Performance.tsx": $$$$$$$$29,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$30,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$31,
-    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$32,
-    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$33,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$34,
+    "deco-sites/starting/sections/LinkToStoreSection.tsx": $$$$$$$$26,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$27,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$28,
+    "deco-sites/starting/sections/PageSpeed.tsx": $$$$$$$$29,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/Performance.tsx": $$$$$$$$31,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$32,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$34,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$35,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$36,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
@@ -314,6 +321,7 @@ const manifest = {
   "matchers": {
     "$live/matchers/MatchAlways.ts": i2$$$$$$$$0,
     "$live/matchers/MatchDate.ts": i2$$$$$$$$1,
+    "$live/matchers/MatchDevice.ts": i1$$$$$2,
     "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$2,
     "$live/matchers/MatchHost.ts": i2$$$$$$$$3,
     "$live/matchers/MatchMulti.ts": i2$$$$$$$$4,

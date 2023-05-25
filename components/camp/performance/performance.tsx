@@ -27,7 +27,7 @@ const Performance = (
 ) => {
   return (
     <div class="py-10 md:py-[120px] bg-almost-white">
-      <div class="pt-12 pb-6 px-6 md:px-16">
+      <div class="pt-12 pb-0 px-6 md:px-16">
         <div
           class="font-bold text-[46px] text-[#202320] leading-[44.16px] md:leading-[105px] mb-8 md:mb-14 md:text-[112px]"
           dangerouslySetInnerHTML={{ __html: props.title }}

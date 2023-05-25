@@ -48,7 +48,8 @@ export type AvailableIcons =
   | "Cash"
   | "Support"
   | "Restart"
-  | "DecoSimulator";
+  | "DecoSimulator"
+  | "DecoIconWhite";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
