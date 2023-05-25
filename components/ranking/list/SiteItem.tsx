@@ -55,7 +55,7 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
       <td class="max-w-[300px]">
         <a href={site.website} class="flex items-center">
           {hideFavicons ? null : <FaviconImage image={site.favicon} />}
-          <span class="md:text-[28px] md:leading-[32px] text-base inline-block align-middle font-semibold">
+          <span class="md:text-[28px] md:leading-[32px] text-base inline-block align-middle font-semibold truncate">
             {site.name}
           </span>
         </a>
