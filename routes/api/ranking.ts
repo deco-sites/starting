@@ -55,9 +55,9 @@ const updateRanking = async (
     method,
     headers: myHeaders,
     body: JSON.stringify({ fields: toDB(record) }),
-  })
-    .then(() => console.log("ok"))
-    .catch((error) => console.log("error", error));
+  }).catch((error) => {
+    throw new Error(error);
+  });
 };
 
 const toDB = (site: Site): SiteDB => {
@@ -204,8 +204,6 @@ export const handler: Handlers = {
         });
       }
 
-      console.log({ newSite });
-
       let status;
       const rankingSite = await ranking.check(newSite);
       if (rankingSite) {
@@ -219,7 +217,7 @@ export const handler: Handlers = {
       }
 
       const list = await ranking.getList();
-      console.log(list)
+
       return new Response(JSON.stringify(list), {
         headers: { "Content-Type": "application/json" },
         status,
