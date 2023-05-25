@@ -19,15 +19,16 @@ import * as $$$$6 from "./routes/api/ranking.ts";
 import * as $$$$7 from "./routes/api/calc.tsx";
 import * as $$$$8 from "./routes/api/leads.tsx";
 import * as $$$$9 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/ImpactCalculator.tsx";
-import * as $$$$$1 from "./islands/CampHeader.tsx";
-import * as $$$$$2 from "./islands/Cms.tsx";
-import * as $$$$$3 from "./islands/ContactUs.tsx";
-import * as $$$$$4 from "./islands/SliderJS.tsx";
-import * as $$$$$5 from "./islands/Header.tsx";
-import * as $$$$$6 from "./islands/CampMentor.tsx";
-import * as $$$$$7 from "./islands/RankingAnalyze.tsx";
-import * as $$$$$8 from "./islands/RankingHeader.tsx";
+import * as $$$$$0 from "./islands/FaviconImage.tsx";
+import * as $$$$$1 from "./islands/ImpactCalculator.tsx";
+import * as $$$$$2 from "./islands/CampHeader.tsx";
+import * as $$$$$3 from "./islands/Cms.tsx";
+import * as $$$$$4 from "./islands/ContactUs.tsx";
+import * as $$$$$5 from "./islands/SliderJS.tsx";
+import * as $$$$$6 from "./islands/Header.tsx";
+import * as $$$$$7 from "./islands/CampMentor.tsx";
+import * as $$$$$8 from "./islands/RankingAnalyze.tsx";
+import * as $$$$$9 from "./islands/RankingHeader.tsx";
 import * as $$$$$$$$0 from "./sections/CampHero.tsx";
 import * as $$$$$$$$1 from "./sections/QuillText.tsx";
 import * as $$$$$$$$2 from "./sections/StripePricing.tsx";
@@ -230,15 +231,16 @@ const manifest = {
     "./routes/live/workbench.ts": $live_workbench,
   },
   "islands": {
-    "./islands/CampHeader.tsx": $$$$$1,
-    "./islands/CampMentor.tsx": $$$$$6,
-    "./islands/Cms.tsx": $$$$$2,
-    "./islands/ContactUs.tsx": $$$$$3,
-    "./islands/Header.tsx": $$$$$5,
-    "./islands/ImpactCalculator.tsx": $$$$$0,
-    "./islands/RankingAnalyze.tsx": $$$$$7,
-    "./islands/RankingHeader.tsx": $$$$$8,
-    "./islands/SliderJS.tsx": $$$$$4,
+    "./islands/CampHeader.tsx": $$$$$2,
+    "./islands/CampMentor.tsx": $$$$$7,
+    "./islands/Cms.tsx": $$$$$3,
+    "./islands/ContactUs.tsx": $$$$$4,
+    "./islands/FaviconImage.tsx": $$$$$0,
+    "./islands/Header.tsx": $$$$$6,
+    "./islands/ImpactCalculator.tsx": $$$$$1,
+    "./islands/RankingAnalyze.tsx": $$$$$8,
+    "./islands/RankingHeader.tsx": $$$$$9,
+    "./islands/SliderJS.tsx": $$$$$5,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,

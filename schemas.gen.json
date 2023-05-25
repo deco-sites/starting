@@ -67,6 +67,7 @@
               "./islands/CampMentor.tsx",
               "./islands/Cms.tsx",
               "./islands/ContactUs.tsx",
+              "./islands/FaviconImage.tsx",
               "./islands/Header.tsx",
               "./islands/ImpactCalculator.tsx",
               "./islands/RankingAnalyze.tsx",
@@ -382,6 +383,13 @@
     "ZGVjby1zaXRlcy9zdGFydGluZy9yb3V0ZXMvYXBpL3JhbmtpbmcudHM=@Site": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Id"
+        },
         "pagespeedPoints": {
           "type": "number",
           "title": "Pagespeed Points"
@@ -7139,6 +7147,19 @@
       "required": [],
       "title": "deco-sites/starting/components/ui/ContactUs.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0Zhdmljb25JbWFnZS50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "string",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "image"
+      ],
+      "title": "deco-sites/starting/islands/FaviconImage.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0hlYWRlci50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -11845,6 +11866,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0Zhdmljb25JbWFnZS50c3g=": {
+      "title": "./islands/FaviconImage.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0Zhdmljb25JbWFnZS50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/FaviconImage.tsx"
+          ],
+          "default": "./islands/FaviconImage.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0hlYWRlci50c3g=": {
       "title": "./islands/Header.tsx",
       "type": "object",
@@ -14003,6 +14045,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0NvbnRhY3RVcy50c3g="
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0Zhdmljb25JbWFnZS50c3g="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="

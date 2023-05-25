@@ -10,7 +10,7 @@
       "type": "node",
       "program": "${workspaceFolder}/dev.ts",
       "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "/usr/local/bin/deno",
+      "runtimeExecutable": "/Users/gustavovasconcellos/.deno/bin/deno",
       "runtimeArgs": [
         "run",
         "-A",
