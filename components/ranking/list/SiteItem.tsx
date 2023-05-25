@@ -66,19 +66,21 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
       <td>
         <div class="poweredby-list flex items-center justify-end md:justify-center">
           {Object.entries(site.poweredBy).map(([key, value]) =>
-            value ? (
-              <div class="flex items-center justify-center">
-                <Icon
-                  class={`md:w-[120px] w-[60px] ${
-                    key === "deco" ? "text-primary" : ""
-                  }`}
-                  id={logoIds[key]}
-                  strokeWidth={1}
-                  width={120}
-                  height={32}
-                />
-              </div>
-            ) : null
+            value
+              ? (
+                <div class="flex items-center justify-center">
+                  <Icon
+                    class={`md:w-[120px] w-[60px] ${
+                      key === "deco" ? "text-primary" : ""
+                    }`}
+                    id={logoIds[key]}
+                    strokeWidth={1}
+                    width={120}
+                    height={32}
+                  />
+                </div>
+              )
+              : null
           )}
         </div>
       </td>
