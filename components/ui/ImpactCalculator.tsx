@@ -40,7 +40,8 @@ export default function ImpactCalculator({
   potencialIncrease,
   buttonText,
   bgStripColor,
-  delayWarningMessage = "The calculation may take a few minutes to finish due to a request we make to PageSpeed's API.",
+  delayWarningMessage =
+    "The calculation may take a few minutes to finish due to a request we make to PageSpeed's API.",
 }: Props) {
   const inputClass =
     "w-full bg-[#F3FFF9] mt-2 pl-4 border border-dark-green h-[52px] rounded-[4px]";
@@ -70,7 +71,7 @@ export default function ImpactCalculator({
     loading.value = true;
 
     const promiseMobile = fetch(
-      `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=mobile`
+      `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=mobile`,
     )
       .then((response) => response.json())
       .catch((error) => {
@@ -79,7 +80,7 @@ export default function ImpactCalculator({
         console.log("errorrrr", error);
       });
     const promiseDesktop = fetch(
-      `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=desktop`
+      `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=desktop`,
     )
       .then((response) => response.json())
       .catch((error) => {
@@ -130,33 +131,33 @@ export default function ImpactCalculator({
 
     const conversionOptimized = getConversionOptimized(
       conversion.value,
-      secondsInMobile
+      secondsInMobile,
     );
     const conversionOptimizedDesktop = getConversionOptimized(
       conversion.value,
-      secondsInDesktop
+      secondsInDesktop,
     );
 
-    const currentRevenue =
-      sessions.value * (conversion.value / 100) * average.value;
+    const currentRevenue = sessions.value * (conversion.value / 100) *
+      average.value;
 
     const newRevenue = getNewRevenue(
       sessions.value,
       mobilePercent.value,
       conversionOptimized,
-      average.value
+      average.value,
     );
     const newRevenueDesktop = getNewRevenue(
       sessions.value,
       desktopPercent.value,
       conversionOptimizedDesktop,
-      average.value
+      average.value,
     );
 
     const incrementInOneYear = getIncrementInOneYear(
       newRevenue,
       newRevenueDesktop,
-      currentRevenue
+      currentRevenue,
     );
 
     revenue.value = incrementInOneYear;
@@ -170,13 +171,12 @@ export default function ImpactCalculator({
 
   function getConversionOptimized(
     currentConversion: number,
-    secondsToImprove: number
+    secondsToImprove: number,
   ) {
     const IMPROVE_PERCENT = 1.07;
-    const conversionOptimized =
-      secondsToImprove > 0
-        ? currentConversion * Math.pow(IMPROVE_PERCENT, secondsToImprove)
-        : currentConversion;
+    const conversionOptimized = secondsToImprove > 0
+      ? currentConversion * Math.pow(IMPROVE_PERCENT, secondsToImprove)
+      : currentConversion;
     return conversionOptimized;
   }
 
@@ -184,18 +184,18 @@ export default function ImpactCalculator({
     sessions: number,
     percentDevice: number,
     conversionOptimized: number,
-    average: number
+    average: number,
   ) {
     const percentOfSessions = (sessions * percentDevice) / 100;
-    const newRevenue =
-      percentOfSessions * (conversionOptimized / 100) * average;
+    const newRevenue = percentOfSessions * (conversionOptimized / 100) *
+      average;
     return newRevenue;
   }
 
   function getIncrementInOneYear(
     newRevenue: number,
     newRevenueDesktop: number,
-    currentRevenue: number
+    currentRevenue: number,
   ) {
     const totalNewRevenue = newRevenue + newRevenueDesktop;
     const increment = (totalNewRevenue - currentRevenue) * 12; //months
@@ -220,7 +220,8 @@ export default function ImpactCalculator({
             ? "bg-dark-green"
             : "bg-highlight"
         } absolute w-full h-[270px]`}
-      ></div>
+      >
+      </div>
       <div class="px-4 pt-24">
         <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-2 px-5 py-6 md:p-16">
           <div class={`md:max-w-[40%] flex flex-col gap-4`}>
@@ -294,7 +295,7 @@ export default function ImpactCalculator({
                       {(
                         getConversionOptimized(
                           conversion.value,
-                          secondsInMobile
+                          secondsInMobile,
                         ) - conversion.value
                       ).toFixed(2)}
                       %
@@ -304,7 +305,7 @@ export default function ImpactCalculator({
                       {(
                         getConversionOptimized(
                           conversion.value,
-                          secondsInDesktop
+                          secondsInDesktop,
                         ) - conversion.value
                       ).toFixed(2)}
                       %
@@ -320,10 +321,10 @@ export default function ImpactCalculator({
                           mobilePercent.value,
                           getConversionOptimized(
                             conversion.value,
-                            secondsInMobile
+                            secondsInMobile,
                           ) - conversion.value,
-                          average.value
-                        ) * 12
+                          average.value,
+                        ) * 12,
                       )}
                     </td>
                     <td class="text-center px-5 pb-1">
@@ -334,10 +335,10 @@ export default function ImpactCalculator({
                           desktopPercent.value,
                           getConversionOptimized(
                             conversion.value,
-                            secondsInDesktop
+                            secondsInDesktop,
                           ) - conversion.value,
-                          average.value
-                        ) * 12
+                          average.value,
+                        ) * 12,
                       )}
                     </td>
                   </tr>
@@ -368,12 +369,11 @@ export default function ImpactCalculator({
                       "invalid:border-pink-500",
                       "invalid:text-pink-600",
                       "focus:invalid:border-pink-500",
-                      "focus:invalid:ring-pink-500"
-                    )
-                  }
-                  onInput={(e) =>
-                    (website.value = (e.target as HTMLInputElement).value)
-                  }
+                      "focus:invalid:ring-pink-500",
+                    )}
+                  onInput={(
+                    e,
+                  ) => (website.value = (e.target as HTMLInputElement).value)}
                   class={`${inputClass}`}
                 />
               </div>
@@ -388,11 +388,9 @@ export default function ImpactCalculator({
                     type="number"
                     required
                     value={sessions}
-                    onInput={(e) =>
-                      (sessions.value = Number(
-                        (e.target as HTMLInputElement).value
-                      ))
-                    }
+                    onInput={(e) => (sessions.value = Number(
+                      (e.target as HTMLInputElement).value,
+                    ))}
                     class={`${inputClass}`}
                   />
                 </div>
@@ -407,11 +405,9 @@ export default function ImpactCalculator({
                       type="number"
                       required
                       value={conversion}
-                      onInput={(e) =>
-                        (conversion.value = Number(
-                          (e.target as HTMLInputElement).value
-                        ))
-                      }
+                      onInput={(e) => (conversion.value = Number(
+                        (e.target as HTMLInputElement).value,
+                      ))}
                       class={`${inputClass}`}
                     />
                     <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">
@@ -430,11 +426,9 @@ export default function ImpactCalculator({
                       type="number"
                       required
                       value={average}
-                      onInput={(e) =>
-                        (average.value = Number(
-                          (e.target as HTMLInputElement).value
-                        ))
-                      }
+                      onInput={(e) => (average.value = Number(
+                        (e.target as HTMLInputElement).value,
+                      ))}
                       class={`${inputClass}`}
                     />
                     <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">
@@ -466,20 +460,20 @@ export default function ImpactCalculator({
                 </div>
               </div>
               <button class="flex justify-center items-center h-12 group px-6 w-full bg-dark-green text-white rounded-[4px]">
-                {loading.value ? (
-                  <Spinner size={20} />
-                ) : (
-                  <div class="flex justify-center items-center gap-2">
-                    <p>{buttonText}</p>
-                    <Icon
-                      class="hidden transition lg:group-hover:block"
-                      id="WhiteArrow"
-                      width={15}
-                      height={15}
-                      strokeWidth={"1"}
-                    />
-                  </div>
-                )}
+                {loading.value
+                  ? <Spinner size={20} />
+                  : (
+                    <div class="flex justify-center items-center gap-2">
+                      <p>{buttonText}</p>
+                      <Icon
+                        class="hidden transition lg:group-hover:block"
+                        id="WhiteArrow"
+                        width={15}
+                        height={15}
+                        strokeWidth={"1"}
+                      />
+                    </div>
+                  )}
               </button>
             </form>
           </div>
