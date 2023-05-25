@@ -7,7 +7,7 @@ const AIRTABLE_URL =
   "https://api.airtable.com/v0/appNJ277dOGNDgi2A/tbluRhRRBIYtNKoPR";
 
 const parseBody = async <T>(
-  body: ReadableStream<Uint8Array> | null
+  body: ReadableStream<Uint8Array> | null,
 ): Promise<T | null> => {
   if (body === null) {
     return null;
@@ -35,7 +35,7 @@ const fetchRanking = async (website?: string) => {
     {
       method: "GET",
       headers: myHeaders,
-    }
+    },
   )
     .then((response) => response.json())
     .then((data: AirTableListResponse) => {
@@ -45,7 +45,7 @@ const fetchRanking = async (website?: string) => {
 
 const updateRanking = async (
   { id: recordId, ...record }: Site,
-  method: "POST" | "PATCH"
+  method: "POST" | "PATCH",
 ) => {
   const myHeaders = new Headers();
   myHeaders.append("Authorization", `Bearer ${AUTH_TOKEN}`);
@@ -91,7 +91,7 @@ const toSite = (record: Record): Site => {
 
 const normalizeSite = async (
   _url: string,
-  score: number
+  score: number,
 ): Promise<Site | null> => {
   const url = new URL(_url).origin;
 
@@ -101,7 +101,7 @@ const normalizeSite = async (
   if (!document) return null;
 
   const decoState = JSON.parse(
-    document.querySelector("#__DECO_STATE")?.textContent ?? "null"
+    document.querySelector("#__DECO_STATE")?.textContent ?? "null",
   );
 
   const isVTEX = html.includes(".vteximg.") || html.includes(".vtexassets.");
@@ -184,7 +184,7 @@ export const handler: Handlers = {
     const { url } = body;
 
     const { data }: PageSpeedResponse = await fetch(
-      `https://psi-test-api.fly.dev/?t=AIzaSyADcbhTjzpb5EGL0ACHhMtFD2i9sJMsn3I&n=10&url=${url}`
+      `https://psi-test-api.fly.dev/?t=AIzaSyADcbhTjzpb5EGL0ACHhMtFD2i9sJMsn3I&n=10&url=${url}`,
     ).then((res) => res.json());
 
     if (!data) {
