@@ -12,15 +12,20 @@ export interface Sections {
 }
 
 export interface Props {
+  bgColor?: string;
   darkMode: boolean;
   title: string;
   sections: Sections[];
 }
 
-export default function Differentials({ darkMode, title, sections }: Props) {
+export default function Differentials(
+  { darkMode, bgColor, title, sections }: Props,
+) {
   return (
     <section
-      class={`py-10 md:py-[120px] ${darkMode ? "bg-dark-green" : "bg-linear"}`}
+      class={`py-10 md:py-[120px] ${darkMode ? "bg-dark-green" : ""} ${
+        !darkMode && !bgColor && "bg-linear"
+      } ${bgColor ? `bg-[${bgColor}]` : ""}`}
     >
       <div class="max-w-screen-2xl mx-auto px-6 md:px-28">
         <h2 class="text-[32px] md:text-[42px] text-white opacity-90 md:text-center leading-[1.18]">

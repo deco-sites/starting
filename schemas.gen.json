@@ -82,6 +82,7 @@
               "$live/sections/Slot.tsx",
               "$live/sections/UseSlot.tsx",
               "deco-sites/starting/sections/About.tsx",
+              "deco-sites/starting/sections/AboutDeco.tsx",
               "deco-sites/starting/sections/Benefits.tsx",
               "deco-sites/starting/sections/BlogHeader.tsx",
               "deco-sites/starting/sections/BlogPostHeader.tsx",
@@ -7995,6 +7996,50 @@
       ],
       "title": "deco-sites/starting/sections/About.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2NhbXAvYWJvdXREZWNvL2luZGV4LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "text": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Text"
+        },
+        "videoHeightDesktop": {
+          "type": "number",
+          "title": "Video Height Desktop"
+        },
+        "videoWidthDesktop": {
+          "type": "number",
+          "title": "Video Width Desktop"
+        },
+        "videoWidthMobile": {
+          "type": "number",
+          "title": "Video Width Mobile"
+        },
+        "videoHeightMobile": {
+          "type": "number",
+          "title": "Video Height Mobile"
+        },
+        "videoUrlCode": {
+          "type": "string",
+          "title": "Video Url Code"
+        }
+      },
+      "required": [
+        "title",
+        "text",
+        "videoHeightDesktop",
+        "videoWidthDesktop",
+        "videoWidthMobile",
+        "videoHeightMobile",
+        "videoUrlCode"
+      ],
+      "title": "deco-sites/starting/components/camp/aboutDeco/index.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0JlbmVmaXRzLnRzeA==@Card": {
       "type": "object",
       "properties": {
@@ -8608,6 +8653,13 @@
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0RpZmZlcmVudGlhbHMudHN4@Props": {
       "type": "object",
       "properties": {
+        "bgColor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Bg Color"
+        },
         "darkMode": {
           "type": "boolean",
           "title": "Dark Mode"
@@ -12193,6 +12245,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9BYm91dERlY28udHN4": {
+      "title": "deco-sites/starting/sections/AboutDeco.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2NhbXAvYWJvdXREZWNvL2luZGV4LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/AboutDeco.tsx"
+          ],
+          "default": "deco-sites/starting/sections/AboutDeco.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9CZW5lZml0cy50c3g=": {
       "title": "deco-sites/starting/sections/Benefits.tsx",
       "type": "object",
@@ -14086,6 +14159,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9BYm91dC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9BYm91dERlY28udHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9CZW5lZml0cy50c3g="
