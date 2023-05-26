@@ -8146,10 +8146,6 @@
             {
               "type": "string",
               "const": "DecoIconWhite"
-            },
-            {
-              "type": "string",
-              "const": "ArrowRightLinear"
             }
           ],
           "type": "string",

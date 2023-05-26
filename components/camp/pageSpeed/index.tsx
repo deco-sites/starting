@@ -16,46 +16,51 @@ export interface Props {
 export default function PageSpeed(props: Props) {
   return (
     <section class="bg-dark-green px-6 py-14">
-      <div class="mb-8">
-        <h3 class="font-inter font-regular text-5xl text-almost-white mb-10">
-          {props.title}
-        </h3>
-        <p class="font-medium text-xl text-almost-white mb-6">
-          {props.subtitle}
-        </p>
+      <h3 class="font-inter font-regular text-5xl text-almost-white mb-10 md:text-center">
+        {props.title}
+      </h3>
 
-        <p class="font-regular text-xl text-almost-white">
-          {props.text}
-        </p>
-      </div>
+      <div class="md:flex justify-between items-center md:px-40">
+        <div class="mb-8 md:max-w-[345px]">
+          <div>
+            <p class="font-medium text-xl text-almost-white mb-6">
+              {props.subtitle}
+            </p>
 
-      <div class="flex flex-col gap-[40px]">
-        {props.pageSpeed.map((page, index) => (
-          <>
-            {index === 0 && (
-              <div class="flex justify-between items-center">
-                <p class="font-regular text-xl text-almost-white">
-                  Atual
-                </p>
-                <Icon id="DecoIconWhite" size={57} />
-              </div>
-            )}
+            <p class="font-regular text-xl text-almost-white">
+              {props.text}
+            </p>
+          </div>
+        </div>
 
-            <div>
-              <p class="font-regular text-xl text-almost-white text-center">
-                {page.label}
-              </p>
-
-              <div key={page.label} class="flex justify-between gap-[53px]">
-                <Image image={page.store} />
-                <div class="flex flex-col justify-center">
-                  <ArrowRight />
+        <div class="flex flex-col gap-[40px]">
+          {props.pageSpeed.map((page, index) => (
+            <>
+              {index === 0 && (
+                <div class="flex justify-between items-center">
+                  <p class="font-regular text-xl text-almost-white">
+                    Atual
+                  </p>
+                  <Icon id="DecoIconWhite" size={57} />
                 </div>
-                <Image image={page.deco} />
+              )}
+
+              <div>
+                <p class="font-regular text-xl text-almost-white text-center">
+                  {page.label}
+                </p>
+
+                <div key={page.label} class="flex justify-between gap-[53px]">
+                  <Image image={page.store} />
+                  <div class="flex flex-col justify-center">
+                    <ArrowRight />
+                  </div>
+                  <Image image={page.deco} />
+                </div>
               </div>
-            </div>
-          </>
-        ))}
+            </>
+          ))}
+        </div>
       </div>
     </section>
   );
