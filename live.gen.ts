@@ -39,30 +39,31 @@ import * as $$$$$$$$10 from "./sections/CampSteps.tsx";
 import * as $$$$$$$$11 from "./sections/Carousel.tsx";
 import * as $$$$$$$$12 from "./sections/Cms.tsx";
 import * as $$$$$$$$13 from "./sections/Community.tsx";
-import * as $$$$$$$$14 from "./sections/ContactUs.tsx";
-import * as $$$$$$$$15 from "./sections/Delight.tsx";
-import * as $$$$$$$$16 from "./sections/DepoimentsCarrossel.tsx";
-import * as $$$$$$$$17 from "./sections/Differentials.tsx";
-import * as $$$$$$$$18 from "./sections/Divider.tsx";
-import * as $$$$$$$$19 from "./sections/Faq.tsx";
-import * as $$$$$$$$20 from "./sections/Features.tsx";
-import * as $$$$$$$$21 from "./sections/Footer.tsx";
-import * as $$$$$$$$22 from "./sections/FooterBigLogo.tsx";
-import * as $$$$$$$$23 from "./sections/Head.tsx";
-import * as $$$$$$$$24 from "./sections/Header.tsx";
-import * as $$$$$$$$25 from "./sections/ImpactCalculator.tsx";
-import * as $$$$$$$$26 from "./sections/Integration.tsx";
-import * as $$$$$$$$27 from "./sections/LinkToStoreSection.tsx";
-import * as $$$$$$$$28 from "./sections/MainBanner.tsx";
-import * as $$$$$$$$29 from "./sections/Markdown.tsx";
-import * as $$$$$$$$30 from "./sections/PageSpeed.tsx";
-import * as $$$$$$$$31 from "./sections/Partner.tsx";
-import * as $$$$$$$$32 from "./sections/Performance.tsx";
-import * as $$$$$$$$33 from "./sections/Pricing.tsx";
-import * as $$$$$$$$34 from "./sections/QuillText.tsx";
-import * as $$$$$$$$35 from "./sections/StripePricing.tsx";
-import * as $$$$$$$$36 from "./sections/Thanks.tsx";
-import * as $$$$$$$$37 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$14 from "./sections/Company.tsx";
+import * as $$$$$$$$15 from "./sections/ContactUs.tsx";
+import * as $$$$$$$$16 from "./sections/Delight.tsx";
+import * as $$$$$$$$17 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$$$$18 from "./sections/Differentials.tsx";
+import * as $$$$$$$$19 from "./sections/Divider.tsx";
+import * as $$$$$$$$20 from "./sections/Faq.tsx";
+import * as $$$$$$$$21 from "./sections/Features.tsx";
+import * as $$$$$$$$22 from "./sections/Footer.tsx";
+import * as $$$$$$$$23 from "./sections/FooterBigLogo.tsx";
+import * as $$$$$$$$24 from "./sections/Head.tsx";
+import * as $$$$$$$$25 from "./sections/Header.tsx";
+import * as $$$$$$$$26 from "./sections/ImpactCalculator.tsx";
+import * as $$$$$$$$27 from "./sections/Integration.tsx";
+import * as $$$$$$$$28 from "./sections/LinkToStoreSection.tsx";
+import * as $$$$$$$$29 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$30 from "./sections/Markdown.tsx";
+import * as $$$$$$$$31 from "./sections/PageSpeed.tsx";
+import * as $$$$$$$$32 from "./sections/Partner.tsx";
+import * as $$$$$$$$33 from "./sections/Performance.tsx";
+import * as $$$$$$$$34 from "./sections/Pricing.tsx";
+import * as $$$$$$$$35 from "./sections/QuillText.tsx";
+import * as $$$$$$$$36 from "./sections/StripePricing.tsx";
+import * as $$$$$$$$37 from "./sections/Thanks.tsx";
+import * as $$$$$$$$38 from "./sections/TripletBanner.tsx";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
 import * as $live_invoke_key from "$live/routes/live/invoke/[...key].ts";
@@ -254,30 +255,31 @@ const manifest = {
     "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$11,
     "deco-sites/starting/sections/Cms.tsx": $$$$$$$$12,
     "deco-sites/starting/sections/Community.tsx": $$$$$$$$13,
-    "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$14,
-    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$15,
-    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$16,
-    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$17,
-    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$18,
-    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$19,
-    "deco-sites/starting/sections/Features.tsx": $$$$$$$$20,
-    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$21,
-    "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$22,
-    "deco-sites/starting/sections/Head.tsx": $$$$$$$$23,
-    "deco-sites/starting/sections/Header.tsx": $$$$$$$$24,
-    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$25,
-    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$26,
-    "deco-sites/starting/sections/LinkToStoreSection.tsx": $$$$$$$$27,
-    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$28,
-    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$29,
-    "deco-sites/starting/sections/PageSpeed.tsx": $$$$$$$$30,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$31,
-    "deco-sites/starting/sections/Performance.tsx": $$$$$$$$32,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$33,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$34,
-    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$35,
-    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$36,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$37,
+    "deco-sites/starting/sections/Company.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$15,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$16,
+    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$17,
+    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$18,
+    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$19,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$20,
+    "deco-sites/starting/sections/Features.tsx": $$$$$$$$21,
+    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$22,
+    "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$23,
+    "deco-sites/starting/sections/Head.tsx": $$$$$$$$24,
+    "deco-sites/starting/sections/Header.tsx": $$$$$$$$25,
+    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$26,
+    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$27,
+    "deco-sites/starting/sections/LinkToStoreSection.tsx": $$$$$$$$28,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$29,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/PageSpeed.tsx": $$$$$$$$31,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$32,
+    "deco-sites/starting/sections/Performance.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$34,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$35,
+    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$36,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$37,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$38,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,

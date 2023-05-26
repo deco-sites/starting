@@ -95,6 +95,7 @@
               "deco-sites/starting/sections/Carousel.tsx",
               "deco-sites/starting/sections/Cms.tsx",
               "deco-sites/starting/sections/Community.tsx",
+              "deco-sites/starting/sections/Company.tsx",
               "deco-sites/starting/sections/ContactUs.tsx",
               "deco-sites/starting/sections/Delight.tsx",
               "deco-sites/starting/sections/DepoimentsCarrossel.tsx",
@@ -8507,6 +8508,79 @@
       ],
       "title": "deco-sites/starting/components/ui/Community.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2NhbXAvY29tcGFueVNlY3Rpb24vaW5kZXgudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "MaeztraLogo"
+            },
+            {
+              "type": "string",
+              "const": "CorebizLogo"
+            },
+            {
+              "type": "string",
+              "const": "QualityLogo"
+            },
+            {
+              "type": "string",
+              "const": "EplusLogo"
+            },
+            {
+              "type": "string",
+              "const": "InfraCommerceLogo"
+            },
+            {
+              "type": "string",
+              "const": "CodebyLogo"
+            },
+            {
+              "type": "string",
+              "const": "N1Logo"
+            },
+            {
+              "type": "string",
+              "const": "FrnLogo"
+            },
+            {
+              "type": "string",
+              "const": "WeDigiLogo"
+            },
+            {
+              "type": "string",
+              "const": "EnextLogo"
+            },
+            {
+              "type": "string",
+              "const": "CodeblueLogo"
+            },
+            {
+              "type": "string",
+              "const": "VndaLogo"
+            }
+          ],
+          "type": "string",
+          "title": "Logo"
+        },
+        "logoImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0ltYWdlLnRzeA==@IImage",
+          "title": "Logo Image"
+        },
+        "text": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Text"
+        }
+      },
+      "required": [
+        "logo",
+        "text"
+      ],
+      "title": "deco-sites/starting/components/camp/companySection/index.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0RlbGlnaHQudHN4@Props": {
       "type": "object",
       "properties": {
@@ -12493,6 +12567,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db21wYW55LnRzeA==": {
+      "title": "deco-sites/starting/sections/Company.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2NhbXAvY29tcGFueVNlY3Rpb24vaW5kZXgudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/Company.tsx"
+          ],
+          "default": "deco-sites/starting/sections/Company.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db250YWN0VXMudHN4": {
       "title": "deco-sites/starting/sections/ContactUs.tsx",
       "type": "object",
@@ -14198,6 +14293,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db21tdW5pdHkudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db21wYW55LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Db250YWN0VXMudHN4"
