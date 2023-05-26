@@ -22,12 +22,20 @@ const ProgressBar = ({
         firstTimeMilliseconds +
         secondTimeSeconds * 1000 +
         secondTimeMilliseconds;
-      const percentage1 =
+      let calculatedPercentage1 =
         ((firstTimeSeconds * 1000 + firstTimeMilliseconds) / total) * 100;
-      const percentage2 =
+      let calculatedPercentage2 =
         ((secondTimeSeconds * 1000 + secondTimeMilliseconds) / total) * 100;
-      setPercentage1(percentage1);
-      setPercentage2(percentage2);
+
+      if (calculatedPercentage1 > 100) {
+        calculatedPercentage1 = 100;
+      }
+      if (calculatedPercentage2 > 100) {
+        calculatedPercentage2 = 100;
+      }
+
+      setPercentage1(calculatedPercentage1);
+      setPercentage2(calculatedPercentage2);
     };
 
     calculatePercentage();
@@ -43,13 +51,11 @@ const ProgressBar = ({
       <div
         className="bg-[#06E474] rounded h-full relative z-10"
         style={{ width: `${percentage1}%` }}
-      >
-      </div>
+      />
       <div
         className="bg-almost-white rounded h-full relative -top-2"
         style={{ width: `${percentage2}%` }}
-      >
-      </div>
+      />
     </div>
   );
 };
