@@ -1,6 +1,9 @@
 import Image, { IImage } from "deco-sites/starting/components/ui/Image.tsx";
 import ArrowRight from "deco-sites/starting/components/ui/icons/ArrowRight.tsx";
 import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import { Props as PropsCalculator } from "deco-sites/starting/components/ui/ImpactCalculator.tsx";
+import ImpactCalculator from "deco-sites/starting/islands/ImpactCalculator.tsx";
+import CardInfo from "deco-sites/starting/components/camp/pageSpeed/cardInfo.tsx";
 
 export interface Props {
   title: string;
@@ -11,6 +14,7 @@ export interface Props {
     store: IImage;
     deco: IImage;
   }[];
+  calculator: PropsCalculator;
 }
 
 export default function PageSpeed(props: Props) {
@@ -61,6 +65,27 @@ export default function PageSpeed(props: Props) {
             </>
           ))}
         </div>
+      </div>
+
+      <div class="mt-28 mb-14">
+        {props.calculator && (
+          <ImpactCalculator isAdditionalComponent {...props.calculator} />
+        )}
+      </div>
+
+      <div class="flex flex-col md:grid md:grid-cols-3 md:px-2 gap-10">
+        <CardInfo
+          title="Aumente a conversão"
+          text="Melhore a conversão por meio da navegação sem interrupções, aumentando a satisfação e o engajamento do cliente."
+        />
+        <CardInfo
+          title="Aumente o tráfego orgânico"
+          text="Eleve o ranking de SEO, visibilidade online e confiança com tempos de carregamento ultrarrápidos."
+        />
+        <CardInfo
+          title="Menos despesas com PPC"
+          text="Reduza as despesas com mídia paga, diminuindo as taxas de rejeição, aumentando as pontuações de qualidade e otimizando os investimentos em anúncios."
+        />
       </div>
     </section>
   );

@@ -28,9 +28,18 @@ export interface Props {
     conversion: string;
     revenue: string;
   };
+  defaultValues?: {
+    website: string;
+    sessions: number;
+    conversion: number;
+    averageOrder: number;
+    trafficMobile: number;
+    trafficDesktop: number;
+  };
   potencialIncrease: string;
   buttonText: string;
   bgStripColor?: "bg-dark-green" | "bg-highlight";
+  isAdditionalComponent?: boolean;
 }
 
 export default function ImpactCalculator(
@@ -40,7 +49,9 @@ export default function ImpactCalculator(
     result,
     potencialIncrease,
     buttonText,
+    defaultValues,
     bgStripColor,
+    isAdditionalComponent = false,
     delayWarningMessage =
       "The calculation may take a few minutes to finish due to a request we make to PageSpeed's API.",
   }: Props,
@@ -48,10 +59,10 @@ export default function ImpactCalculator(
   const inputClass =
     "w-full bg-[#F3FFF9] mt-2 pl-4 border border-dark-green h-[52px] rounded-[4px]";
 
-  const website = useSignal("http://");
-  const sessions = useSignal(10000);
-  const conversion = useSignal(1);
-  const average = useSignal(50);
+  const website = useSignal(defaultValues?.website ?? "http://");
+  const sessions = useSignal(defaultValues?.sessions ?? 10000);
+  const conversion = useSignal(defaultValues?.conversion ?? 1);
+  const average = useSignal(defaultValues?.averageOrder ?? 50);
   const mobileLCP = useSignal(0);
   const desktopLCP = useSignal(0);
   const showExplanation = useSignal(false);
@@ -216,10 +227,10 @@ export default function ImpactCalculator(
           !bgStripColor || bgStripColor == "bg-dark-green"
             ? "bg-dark-green"
             : "bg-highlight"
-        } absolute w-full h-[270px]`}
+        } ${isAdditionalComponent ? "" : "absolute w-full h-[270px]"}`}
       >
       </div>
-      <div class="px-4 pt-24">
+      <div class={isAdditionalComponent ? "bg-dark-green" : "px-4 pt-24"}>
         <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-2 px-5 py-6 md:p-16">
           <div class={`md:max-w-[40%] flex flex-col gap-4`}>
             <p class="text-2xl md:text-5xl md:leading-[53px] text-dark-green">

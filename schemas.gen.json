@@ -7420,6 +7420,44 @@
           ],
           "title": "Result"
         },
+        "defaultValues": {
+          "type": "object",
+          "properties": {
+            "website": {
+              "type": "string",
+              "title": "Website"
+            },
+            "sessions": {
+              "type": "number",
+              "title": "Sessions"
+            },
+            "conversion": {
+              "type": "number",
+              "title": "Conversion"
+            },
+            "averageOrder": {
+              "type": "number",
+              "title": "Average Order"
+            },
+            "trafficMobile": {
+              "type": "number",
+              "title": "Traffic Mobile"
+            },
+            "trafficDesktop": {
+              "type": "number",
+              "title": "Traffic Desktop"
+            }
+          },
+          "required": [
+            "website",
+            "sessions",
+            "conversion",
+            "averageOrder",
+            "trafficMobile",
+            "trafficDesktop"
+          ],
+          "title": "Default Values"
+        },
         "potencialIncrease": {
           "type": "string",
           "title": "Potencial Increase"
@@ -7441,6 +7479,13 @@
           ],
           "type": "string",
           "title": "Bg Strip Color"
+        },
+        "isAdditionalComponent": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Is Additional Component"
         }
       },
       "required": [
@@ -9290,13 +9335,18 @@
             ]
           },
           "title": "Page Speed"
+        },
+        "calculator": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0ltcGFjdENhbGN1bGF0b3IudHN4@Props",
+          "title": "Calculator"
         }
       },
       "required": [
         "title",
         "subtitle",
         "text",
-        "pageSpeed"
+        "pageSpeed",
+        "calculator"
       ],
       "title": "deco-sites/starting/components/camp/pageSpeed/index.tsx@Props"
     },
