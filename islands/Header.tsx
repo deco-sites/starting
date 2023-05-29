@@ -97,7 +97,7 @@ export default function Header(props: Props) {
               </svg>
             </a>
           </li>
-          <li class="group cursor-pointer relative min-w-[150px]">
+          <li class="group cursor-pointer relative min-w-[150px] md:min-w-0">
             {showSwitcher.value &&
               (
                 <>
@@ -217,7 +217,7 @@ export default function Header(props: Props) {
               )}
           </li>
         </ul>
-        <ul class="hidden lg:flex lg:flex-row h-full group">
+        <ul class="hidden md:flex md:flex-row h-full group">
           {props.menuLinks.map((link, index) => {
             return (
               <li class="relative h-full grid hover:text-[#02F67C] text-transparent ">
@@ -235,7 +235,7 @@ export default function Header(props: Props) {
           <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:bg-transparent group-hover:bg-none">
           </div>
         </ul>
-        <ul class="lg:hidden px-3">
+        <ul class="md:hidden px-3">
           <li class="grid items-center">
             <button class="focus:outline-none" onClick={() => setOpen(!open)}>
               <svg
@@ -419,7 +419,7 @@ export default function Header(props: Props) {
             </ul>
           </div>
         </ul>
-        <ul class="hidden lg:flex lg:flex-row lg:gap-4 px-3">
+        <ul class="hidden md:flex md:flex-row md:gap-4 px-3">
           {props.idiom?.canShowIdiom && (
             <li class="group cursor-pointer md:relative">
               <div

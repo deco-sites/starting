@@ -1,3 +1,5 @@
+import Image, { IImage } from "deco-sites/starting/components/ui/Image.tsx";
+
 export interface SubMenu {
   title: string;
   href: string;
@@ -11,6 +13,8 @@ export interface Menu {
 
 export interface Props {
   menu?: Menu[];
+  canShowLogo?: boolean;
+  logoImage?: IImage;
   social?: {
     linkedinUrl?: string;
     gitUrl?: string;
@@ -49,6 +53,8 @@ function SubMenu({ menu }: { menu: Menu[] }) {
 
 export default function Footer({
   menu,
+  logoImage,
+  canShowLogo = false,
   social = {
     linkedinUrl: "https://www.linkedin.com/company/deco-cx/",
     gitUrl: "https://github.com/deco-cx",
@@ -148,6 +154,12 @@ export default function Footer({
             </li>
           </ul>
         </div>
+
+        {canShowLogo && (
+          <div class="mt-10 md:mt-24 relative -bottom-8">
+            <Image image={logoImage} />
+          </div>
+        )}
       </div>
     </section>
   );

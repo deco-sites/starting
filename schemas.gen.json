@@ -1,7 +1,6 @@
 {
   "definitions": {
     "Resolvable": {
-      "$id": "Resolvable",
       "title": "Select from saved",
       "required": [
         "__resolveType"
@@ -6359,7 +6358,7 @@
         },
         "count": {
           "type": "number",
-          "description": "total number of items to display",
+          "description": "total number of items to display. Required for collection",
           "title": "Count"
         }
       },
@@ -6420,7 +6419,7 @@
         },
         "count": {
           "type": "number",
-          "description": "total number of items to display",
+          "description": "total number of items to display. Required for query",
           "title": "Count"
         }
       },
@@ -6721,6 +6720,14 @@
           ],
           "description": "ProductGroup ID",
           "title": "Id"
+        },
+        "hideUnavailableItems": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "remove unavailable items from result",
+          "title": "Hide Unavailable Items"
         }
       },
       "required": [
@@ -8902,6 +8909,17 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Gb290ZXIudHN4@Menu[]",
           "title": "Menu"
         },
+        "canShowLogo": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Can Show Logo"
+        },
+        "logoImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0ltYWdlLnRzeA==@IImage",
+          "title": "Logo Image"
+        },
         "social": {
           "type": "object",
           "properties": {
@@ -9878,6 +9896,14 @@
           },
           "description": "google tag manager container id. For more info: https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation .",
           "title": "Tracking Ids"
+        },
+        "src": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "custom url for serving google tag manager. Set either this url or the tracking id",
+          "title": "Src"
         }
       },
       "required": [],
@@ -10407,7 +10433,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@152d1319cf173b0e492fff2a74a4a49d|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|a7dd1dc82cac75852b4d2ea195ef01a8": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -10425,13 +10451,13 @@
           ]
         }
       ],
-      "title": "152d1319cf173b0e492fff2a74a4a49d|WorkflowRef"
+      "title": "WorkflowRef|a7dd1dc82cac75852b4d2ea195ef01a8"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@152d1319cf173b0e492fff2a74a4a49d|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef|a7dd1dc82cac75852b4d2ea195ef01a8",
           "title": "Workflow"
         },
         "id": {
