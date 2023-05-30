@@ -30,6 +30,7 @@
     display: none;
   }
 
+
   .hidden-scroll {
     -ms-overflow-style: none;
     /* IE and Edge */
@@ -100,3 +101,11 @@
 @layer components {}
 
 @layer utilities {}
+
+.animation-icon>a>svg {
+  opacity: 0;
+}
+
+.animation-icon:hover>a>svg {
+  opacity: 1;
+}

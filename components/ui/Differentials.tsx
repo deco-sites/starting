@@ -7,7 +7,7 @@ export interface Sections {
   imagePosition: "left" | "right";
   image: LiveImage;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   text: string;
 }
 
@@ -52,7 +52,7 @@ export default function Differentials(
                     {section.title}
                   </h3>
                   <p class="text-[22px] md:text-[32px] text-white opacity-90">
-                    {section.subtitle}
+                    {section?.subtitle}
                   </p>
                   <p class="text-[20px] md:text-[22px] text-white opacity-90">
                     {section.text}
