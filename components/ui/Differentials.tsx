@@ -35,7 +35,7 @@ export default function Differentials(
           {sections?.map((section) => {
             return (
               <div
-                class={`flex gap-6 md:gap-[92px] md:items-center justify-around flex-col-reverse ${
+                class={`flex gap-6 lg:gap-[92px] md:items-center justify-around flex-col-reverse ${
                   section.imagePosition == "left"
                     ? "md:flex-row"
                     : "md:flex-row-reverse"
