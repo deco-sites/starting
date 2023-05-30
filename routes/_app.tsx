@@ -17,7 +17,9 @@ export default function App(props: AppProps) {
           <Script
             dangerouslySetInnerHTML={{
               __html: `
-              dataLayer.push('config', 'G-2JTXN810QT');
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-2JTXN810QT');
           `,
             }}
           />
