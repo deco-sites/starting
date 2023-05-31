@@ -6,6 +6,7 @@ export interface Props {
   sites: Site[];
   hideFavicons?: boolean;
   hideHeader?: boolean;
+  hidePosition?: boolean;
   translations?: TableHeaderTranslations;
 }
 
@@ -13,13 +14,14 @@ export function SiteList({
   sites,
   hideFavicons = false,
   hideHeader,
+  hidePosition = false,
   translations,
 }: Props) {
   return (
     <table class="w-full text-left table-auto border-spacing-1">
       {hideHeader ? null : (
         <thead class="md:table-header-group hidden">
-          <th></th>
+          {hidePosition ? null : <th></th>}
           <th class="font-semibold text-base text-center">
             {translations?.pagespeed}
           </th>
@@ -35,6 +37,7 @@ export function SiteList({
           <SiteItem
             site={site}
             hideFavicons={hideFavicons}
+            hidePosition={hidePosition}
             key={index}
             position={index + 1}
           />

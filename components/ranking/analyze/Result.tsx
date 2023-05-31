@@ -6,18 +6,17 @@ import { AnalyzeFormTranslation } from "../AnalyzeForm.tsx";
 import { SiteList } from "../list/SiteList.tsx";
 
 export interface Props {
-  status: number;
   translations: AnalyzeFormTranslation;
   sites: Site[];
-  site: string;
+  siteUrl: string;
 }
 
-export default function Result({ status, translations, sites, site }: Props) {
+export default function Result({ translations, sites, siteUrl }: Props) {
   useEffect(() => {
     if (!IS_BROWSER) return;
 
     setTimeout(() => {
-      document.getElementById(site)?.scrollIntoView({
+      document.getElementById(siteUrl)?.scrollIntoView({
         behavior: "smooth",
         block: "center",
         inline: "center",
@@ -31,7 +30,7 @@ export default function Result({ status, translations, sites, site }: Props) {
         <h1 class="md:text-5xl text-3xl text-center font-semibold">
           {translations.result.title}
         </h1>
-        {status !== 204
+        {sites.length > 1
           ? (
             <div class="relative mt-6">
               <div class="pointer-events-none bg-[linear-gradient(180deg,rgb(9,39,39),rgba(6,53,53,0))] absolute h-[70px] md:h-[100px] w-screen top-0 left-1/2 -translate-x-1/2" />
@@ -44,12 +43,20 @@ export default function Result({ status, translations, sites, site }: Props) {
             </div>
           )
           : (
-            <p class="md:text-3xl text-2xl mt-4 text-center">
-              {translations.result.failure}
-            </p>
+            <div class="relative md:mt-10 mt-6">
+              <div>
+                <SiteList sites={sites} hideHeader hidePosition />
+              </div>
+              <p class="text-2xl mt-4 md:mt-8 text-center text-[#D98470]">
+                {translations.result.failure.title}
+              </p>
+              <p class="text-2xl mt-6 md:mt-4 text-center">
+                {translations.result.failure.description}
+              </p>
+            </div>
           )}
       </div>
-      <div class="md:pb-20 pb-6 flex md:flex-row flex-col md:gap-6 gap-4">
+      <div class="md:pb-20 pb-6 flex md:flex-row flex-col md:gap-6 gap-4 md:mt-0 mt-12">
         {translations.result.links.map((link) => (
           <a
             class={`${

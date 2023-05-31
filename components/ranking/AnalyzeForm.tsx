@@ -29,7 +29,12 @@ export interface AnalyzeFormTranslation {
   };
   result: {
     title: string;
-    failure: string;
+    failure: {
+      /** @default "Oops! Your PageSpeed is under 80 and couldn't make the cut for our ranking" */
+      title: string;
+      /** @default "Ready to accelerate your website? Try Deco now and see the difference!" */
+      description: string;
+    };
     links: Link[];
   };
 }
@@ -109,7 +114,7 @@ export default function AnalyzeForm({ translations }: Props) {
   };
 
   return (
-    <div class="flex min-h-[100vh] flex-col justify-center items-center text-almost-white px-6 md:px-0">
+    <div class="flex md:min-h-[100vh] min-h-[calc(100vh-106px)] flex-col justify-center items-center text-almost-white px-6 md:px-0">
       {(!response.value.data && !response.value.loading) ||
           response.value.error
         ? (
@@ -125,10 +130,9 @@ export default function AnalyzeForm({ translations }: Props) {
           !response.value.loading
         ? (
           <Result
-            status={response.value.status}
             translations={translations}
             sites={response.value.data}
-            site={response.value.url}
+            siteUrl={response.value.url}
           />
         )
         : null}

@@ -25,18 +25,19 @@ const parseBody = async <T>(
 const fetchRanking = async (website?: string) => {
   const myHeaders = new Headers();
   myHeaders.append("Authorization", `Bearer ${AUTH_TOKEN}`);
+  const params = new URLSearchParams({
+    maxRecords: "100",
+    "sort[0][field]": "pagespeedPoints",
+    "sort[0][direction]": "desc",
+    filterByFormula: website
+      ? `FIND("${website}",website)`
+      : "pagespeedPoints>=80",
+  });
 
-  return await fetch(
-    `${AIRTABLE_URL}?maxRecords=20&sort%5B0%5D%5Bfield%5D=pagespeedPoints&sort%5B0%5D%5Bdirection%5D=desc${
-      website
-        ? `&filterByFormula=${encodeURIComponent(`FIND("${website}",website)`)}`
-        : ""
-    }`,
-    {
-      method: "GET",
-      headers: myHeaders,
-    },
-  )
+  return await fetch(`${AIRTABLE_URL}?${params.toString()}`, {
+    method: "GET",
+    headers: myHeaders,
+  })
     .then((response) => response.json())
     .then((data: AirTableListResponse) => {
       return data.records.map(toSite);
@@ -195,39 +196,37 @@ export const handler: Handlers = {
 
     const score = (data?.score.mean ?? -1) * 100;
 
-    if (score >= 80) {
-      const newSite = await normalizeSite(url, score);
+    const newSite = await normalizeSite(url, score);
 
-      if (!newSite) {
-        return new Response("Site connection problem", {
-          status: 400,
-        });
-      }
-
-      let status;
-      const rankingSite = await ranking.check(newSite);
-      if (rankingSite) {
-        if (rankingSite.pagespeedPoints < newSite.pagespeedPoints) {
-          await ranking.update({ id: rankingSite.id, ...newSite });
-        }
-        status = 200;
-      } else {
-        await ranking.add(newSite);
-        status = 201;
-      }
-
-      const list = await ranking.getList();
-
-      return new Response(JSON.stringify(list), {
-        headers: { "Content-Type": "application/json" },
-        status,
+    if (!newSite) {
+      return new Response("Site connection problem", {
+        status: 400,
       });
     }
 
-    return new Response(null, {
-      status: 204,
-      headers: { "Content-Type": "application/json" },
-    });
+    let status;
+    const rankingSite = await ranking.check(newSite);
+    if (rankingSite) {
+      if (rankingSite.pagespeedPoints < newSite.pagespeedPoints) {
+        await ranking.update({ id: rankingSite.id, ...newSite });
+      }
+      status = 200;
+    } else {
+      await ranking.add(newSite);
+      status = 201;
+    }
+
+    const list = await ranking.getList();
+
+    return new Response(
+      JSON.stringify(
+        score >= 80 ? list : [{ id: rankingSite?.id ?? "", ...newSite }],
+      ),
+      {
+        headers: { "Content-Type": "application/json" },
+        status,
+      },
+    );
   },
 };
 

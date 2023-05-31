@@ -8,6 +8,7 @@ export interface Props {
   site: Site;
   position: number;
   hideFavicons: boolean;
+  hidePosition: boolean;
 }
 
 const logoIds: Record<string, AvailableIcons> = {
@@ -18,14 +19,21 @@ const logoIds: Record<string, AvailableIcons> = {
   occ: "OCCLogo",
 };
 
-export function SiteItem({ position, site, hideFavicons }: Props) {
+export function SiteItem({
+  position,
+  site,
+  hideFavicons,
+  hidePosition,
+}: Props) {
   const url = new URL(site.website);
   return (
     <tr
       id={url.origin}
       class={`${position > 1 ? "border-t-[1px]" : ""} border-[#525252]`}
     >
-      <td class="md:text-xl text-sm font-semibold">{position}</td>
+      {hidePosition
+        ? null
+        : <td class="md:text-xl text-sm font-semibold">{position}</td>}
       <td class="md:w-[150px] text-center">
         <div class="inline-flex relative justify-center md:py-6 py-4 px-2">
           <svg
@@ -52,7 +60,7 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
           </span>
         </div>
       </td>
-      <td class="max-w-[300px]">
+      <td class="md:max-w-[300px] max-w-[200px]">
         <a href={site.website} class="flex items-center">
           {hideFavicons ? null : <FaviconImage image={site.favicon} />}
           <span class="md:text-[28px] md:leading-[32px] text-base inline-block align-middle font-semibold truncate">
@@ -60,7 +68,7 @@ export function SiteItem({ position, site, hideFavicons }: Props) {
           </span>
         </a>
       </td>
-      <td class="text-base md:table-cell hidden">
+      <td class="text-base md:table-cell hidden md:text-left text-center">
         <a href={site.website}>{url.host.replace("www.", "")}</a>
       </td>
       <td>
