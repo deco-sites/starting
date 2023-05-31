@@ -5,10 +5,7 @@ interface State {
   data: string;
 }
 
-async function _handler(
-  req: Request,
-  ctx: MiddlewareHandlerContext<State>,
-) {
+async function _handler(req: Request, ctx: MiddlewareHandlerContext<State>) {
   const pathname = new URL(req.url).pathname;
 
   const redirectTo = (url: string) =>
@@ -33,9 +30,7 @@ async function _handler(
         "https://drive.google.com/drive/folders/1fMIVfALCEa3Er2iX0kNF-87IQSWtpSyy?usp=share_link",
       );
     case "/onboarding":
-      return redirectTo(
-        "https://deco.cx/onboarding",
-      );
+      return redirectTo("https://deco.cx/onboarding");
     case "/hackathon":
       return redirectTo("https://airtable.com/shrMMkEKoH1I2GLHA");
     case "/ifood":
@@ -52,6 +47,8 @@ async function _handler(
       return redirectTo(
         "https://drive.google.com/file/d/1tihCV4Y5zRPXGdpP6prmIvNevUBpWKcu/view?usp=sharing",
       );
+    case "/analize":
+      return redirectTo("https://deco.cx/en/analize");
     default: {
       const resp = await ctx.next();
       return resp;

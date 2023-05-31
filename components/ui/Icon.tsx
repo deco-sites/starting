@@ -46,6 +46,12 @@ export type AvailableIcons =
   | "Book"
   | "Bag"
   | "Cash"
+  | "VndaLogo"
+  | "VTEXLogo"
+  | "ShopifyLogo"
+  | "DecoLogo"
+  | "OCCLogo"
+  | "ArrowRight"
   | "Support";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
@@ -58,15 +64,20 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   size?: number;
 }
 
-function Icon(
-  { id, strokeWidth = 16, size, width, height, ...otherProps }: Props,
-) {
+function Icon({
+  id,
+  strokeWidth = 16,
+  size,
+  width,
+  height,
+  ...otherProps
+}: Props) {
   return (
     <svg
       {...otherProps}
       width={width ?? size}
       height={height ?? size}
-      strokeWidth={strokeWidth}
+      stroke-width={strokeWidth}
     >
       <use href={asset(`/sprites.svg#${id}`)} />
     </svg>

@@ -14,7 +14,7 @@ export interface Plan {
   title: string;
   text: string;
   price: string;
-  priceCustom?: boolean;
+  priceCustom: boolean;
   benefits?: string[];
   button: {
     text: string;

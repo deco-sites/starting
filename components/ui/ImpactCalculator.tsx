@@ -33,18 +33,16 @@ export interface Props {
   bgStripColor?: "bg-dark-green" | "bg-highlight";
 }
 
-export default function ImpactCalculator(
-  {
-    mainText,
-    formInfos,
-    result,
-    potencialIncrease,
-    buttonText,
-    bgStripColor,
-    delayWarningMessage =
-      "The calculation may take a few minutes to finish due to a request we make to PageSpeed's API.",
-  }: Props,
-) {
+export default function ImpactCalculator({
+  mainText,
+  formInfos,
+  result,
+  potencialIncrease,
+  buttonText,
+  bgStripColor,
+  delayWarningMessage =
+    "The calculation may take a few minutes to finish due to a request we make to PageSpeed's API.",
+}: Props) {
   const inputClass =
     "w-full bg-[#F3FFF9] mt-2 pl-4 border border-dark-green h-[52px] rounded-[4px]";
 
@@ -74,18 +72,22 @@ export default function ImpactCalculator(
 
     const promiseMobile = fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=mobile`,
-    ).then((response) => response.json()).catch((error) => {
-      loading.value = false;
-      alert("Request to PageSpeed has failed. Please try again.");
-      console.log("errorrrr", error);
-    });
+    )
+      .then((response) => response.json())
+      .catch((error) => {
+        loading.value = false;
+        alert("Request to PageSpeed has failed. Please try again.");
+        console.log("errorrrr", error);
+      });
     const promiseDesktop = fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=desktop`,
-    ).then((response) => response.json()).catch((error) => {
-      loading.value = false;
-      alert("Request to PageSpeed has failed. Please try again.");
-      console.log("errorrrr", error);
-    });
+    )
+      .then((response) => response.json())
+      .catch((error) => {
+        loading.value = false;
+        alert("Request to PageSpeed has failed. Please try again.");
+        console.log("errorrrr", error);
+      });
 
     const formData = new FormData();
     formData.append("domain", website.value);
@@ -99,28 +101,29 @@ export default function ImpactCalculator(
       body: formData,
     });
 
-    Promise.all([promiseMobile, promiseDesktop])
-      .then((results) => {
-        results.forEach((result) => {
-          const resultLCP =
-            result.lighthouseResult.audits["largest-contentful-paint"]
-              .numericValue;
-          if (result.lighthouseResult.configSettings.formFactor == "mobile") {
-            mobileLCP.value = resultLCP;
-          } else {
-            desktopLCP.value = resultLCP;
-          }
-        });
-        loading.value = false;
-        showExplanation.value = true;
+    Promise.all([promiseMobile, promiseDesktop]).then((results) => {
+      results.forEach((result) => {
+        const resultLCP =
+          result.lighthouseResult.audits["largest-contentful-paint"]
+            .numericValue;
+        if (result.lighthouseResult.configSettings.formFactor == "mobile") {
+          mobileLCP.value = resultLCP;
+        } else {
+          desktopLCP.value = resultLCP;
+        }
       });
+      loading.value = false;
+      showExplanation.value = true;
+    });
   };
 
   let secondsInMobile = 0;
   let secondsInDesktop = 0;
 
   if (
-    sessions.value != 0 && website.value != "" && mobileLCP.value != 0 &&
+    sessions.value != 0 &&
+    website.value != "" &&
+    mobileLCP.value != 0 &&
     mobileLCP.value != 0
   ) {
     secondsInMobile = getSecondsToImprove(mobileLCP.value, 2500);
@@ -183,7 +186,7 @@ export default function ImpactCalculator(
     conversionOptimized: number,
     average: number,
   ) {
-    const percentOfSessions = sessions * percentDevice / 100;
+    const percentOfSessions = (sessions * percentDevice) / 100;
     const newRevenue = percentOfSessions * (conversionOptimized / 100) *
       average;
     return newRevenue;
@@ -257,9 +260,9 @@ export default function ImpactCalculator(
               <h3 class="text-xl">{result.howWeCalculateTitle}</h3>
               <div class="text-sm">
                 {result.howWeCalculateText1}{" "}
-                {parseFloat(mobileLCP.value / 1000).toFixed(1)}s{" "}
+                {parseFloat(`${mobileLCP.value / 1000}`).toFixed(1)}s{" "}
                 {result.howWeCalculateText2}{" "}
-                {parseFloat(desktopLCP.value / 1000).toFixed(1)}s{" "}
+                {parseFloat(`${desktopLCP.value / 1000}`).toFixed(1)}s{" "}
                 {result.howWeCalculateText3}
               </div>
             </div>
@@ -289,17 +292,23 @@ export default function ImpactCalculator(
                     <td class="pr-5 pb-1">{result.conversion}</td>
                     <td class="text-center px-5 pb-1">
                       {secondsInMobile > 0 && "+"}
-                      {(getConversionOptimized(
-                        conversion.value,
-                        secondsInMobile,
-                      ) - conversion.value).toFixed(2)}%
+                      {(
+                        getConversionOptimized(
+                          conversion.value,
+                          secondsInMobile,
+                        ) - conversion.value
+                      ).toFixed(2)}
+                      %
                     </td>
                     <td class="text-center px-5 pb-1">
                       {secondsInDesktop > 0 && "+"}
-                      {(getConversionOptimized(
-                        conversion.value,
-                        secondsInDesktop,
-                      ) - conversion.value).toFixed(2)}%
+                      {(
+                        getConversionOptimized(
+                          conversion.value,
+                          secondsInDesktop,
+                        ) - conversion.value
+                      ).toFixed(2)}
+                      %
                     </td>
                   </tr>
                   <tr>
@@ -362,8 +371,9 @@ export default function ImpactCalculator(
                       "focus:invalid:border-pink-500",
                       "focus:invalid:ring-pink-500",
                     )}
-                  onInput={(e) =>
-                    website.value = (e.target as HTMLInputElement).value}
+                  onInput={(
+                    e,
+                  ) => (website.value = (e.target as HTMLInputElement).value)}
                   class={`${inputClass}`}
                 />
               </div>
@@ -378,9 +388,9 @@ export default function ImpactCalculator(
                     type="number"
                     required
                     value={sessions}
-                    onInput={(e) => sessions.value = Number(
+                    onInput={(e) => (sessions.value = Number(
                       (e.target as HTMLInputElement).value,
-                    )}
+                    ))}
                     class={`${inputClass}`}
                   />
                 </div>
@@ -395,10 +405,9 @@ export default function ImpactCalculator(
                       type="number"
                       required
                       value={conversion}
-                      onInput={(e) =>
-                        conversion.value = Number(
-                          (e.target as HTMLInputElement).value,
-                        )}
+                      onInput={(e) => (conversion.value = Number(
+                        (e.target as HTMLInputElement).value,
+                      ))}
                       class={`${inputClass}`}
                     />
                     <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">
@@ -417,10 +426,9 @@ export default function ImpactCalculator(
                       type="number"
                       required
                       value={average}
-                      onInput={(e) =>
-                        average.value = Number(
-                          (e.target as HTMLInputElement).value,
-                        )}
+                      onInput={(e) => (average.value = Number(
+                        (e.target as HTMLInputElement).value,
+                      ))}
                       class={`${inputClass}`}
                     />
                     <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">

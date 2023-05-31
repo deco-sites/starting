@@ -6,66 +6,76 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRawPost.ts";
 import * as $1 from "./functions/LoadGitHubRaw.ts";
-import * as $2 from "./functions/LoadPageProps.ts";
-import * as $3 from "./functions/LoadGitHubRawPostList.ts";
+import * as $2 from "./functions/psiRankingList.ts";
+import * as $3 from "./functions/LoadPageProps.ts";
+import * as $4 from "./functions/LoadGitHubRawPostList.ts";
 import * as $$$$0 from "./routes/index.tsx";
 import * as $$$$1 from "./routes/gfm.css.ts";
 import * as $$$$2 from "./routes/admin/[...catchall].tsx";
 import * as $$$$3 from "./routes/_middleware.ts";
 import * as $$$$4 from "./routes/docs/[...slug].tsx";
 import * as $$$$5 from "./routes/live/[...catchall].tsx";
-import * as $$$$6 from "./routes/api/calc.tsx";
-import * as $$$$7 from "./routes/api/leads.tsx";
-import * as $$$$8 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/ImpactCalculator.tsx";
-import * as $$$$$1 from "./islands/CampHeader.tsx";
-import * as $$$$$2 from "./islands/Cms.tsx";
-import * as $$$$$3 from "./islands/ContactUs.tsx";
-import * as $$$$$4 from "./islands/SliderJS.tsx";
-import * as $$$$$5 from "./islands/Header.tsx";
-import * as $$$$$6 from "./islands/CampMentor.tsx";
+import * as $$$$6 from "./routes/api/ranking.ts";
+import * as $$$$7 from "./routes/api/calc.tsx";
+import * as $$$$8 from "./routes/api/leads.tsx";
+import * as $$$$9 from "./routes/_app.tsx";
+import * as $$$$$0 from "./islands/FaviconImage.tsx";
+import * as $$$$$1 from "./islands/ImpactCalculator.tsx";
+import * as $$$$$2 from "./islands/CampHeader.tsx";
+import * as $$$$$3 from "./islands/Cms.tsx";
+import * as $$$$$4 from "./islands/ContactUs.tsx";
+import * as $$$$$5 from "./islands/SliderJS.tsx";
+import * as $$$$$6 from "./islands/Header.tsx";
+import * as $$$$$7 from "./islands/CampMentor.tsx";
+import * as $$$$$8 from "./islands/RankingAnalyze.tsx";
+import * as $$$$$9 from "./islands/RankingHeader.tsx";
 import * as $$$$$$$$0 from "./sections/CampHero.tsx";
 import * as $$$$$$$$1 from "./sections/QuillText.tsx";
 import * as $$$$$$$$2 from "./sections/StripePricing.tsx";
 import * as $$$$$$$$3 from "./sections/CampComments.tsx";
 import * as $$$$$$$$4 from "./sections/BlogHeader.tsx";
-import * as $$$$$$$$5 from "./sections/Pricing.tsx";
-import * as $$$$$$$$6 from "./sections/BlogPostList.tsx";
-import * as $$$$$$$$7 from "./sections/ImpactCalculator.tsx";
-import * as $$$$$$$$8 from "./sections/BlogPostHeader.tsx";
-import * as $$$$$$$$9 from "./sections/Features.tsx";
-import * as $$$$$$$$10 from "./sections/CampSteps.tsx";
-import * as $$$$$$$$11 from "./sections/Markdown.tsx";
-import * as $$$$$$$$12 from "./sections/CampRegistration.tsx";
-import * as $$$$$$$$13 from "./sections/Community.tsx";
-import * as $$$$$$$$14 from "./sections/Divider.tsx";
-import * as $$$$$$$$15 from "./sections/Partner.tsx";
-import * as $$$$$$$$16 from "./sections/Differentials.tsx";
-import * as $$$$$$$$17 from "./sections/Cms.tsx";
-import * as $$$$$$$$18 from "./sections/Footer.tsx";
-import * as $$$$$$$$19 from "./sections/Head.tsx";
-import * as $$$$$$$$20 from "./sections/Integration.tsx";
-import * as $$$$$$$$21 from "./sections/ContactUs.tsx";
-import * as $$$$$$$$22 from "./sections/FooterBigLogo.tsx";
-import * as $$$$$$$$23 from "./sections/Header.tsx";
-import * as $$$$$$$$24 from "./sections/MainBanner.tsx";
-import * as $$$$$$$$25 from "./sections/TripletBanner.tsx";
-import * as $$$$$$$$26 from "./sections/CampMentor.tsx";
-import * as $$$$$$$$27 from "./sections/Thanks.tsx";
-import * as $$$$$$$$28 from "./sections/Faq.tsx";
-import * as $$$$$$$$29 from "./sections/DepoimentsCarrossel.tsx";
-import * as $$$$$$$$30 from "./sections/Delight.tsx";
-import * as $$$$$$$$31 from "./sections/Benefits.tsx";
-import * as $$$$$$$$32 from "./sections/About.tsx";
-import * as $$$$$$$$33 from "./sections/Carousel.tsx";
+import * as $$$$$$$$5 from "./sections/RankingList.tsx";
+import * as $$$$$$$$6 from "./sections/Pricing.tsx";
+import * as $$$$$$$$7 from "./sections/BlogPostList.tsx";
+import * as $$$$$$$$8 from "./sections/ImpactCalculator.tsx";
+import * as $$$$$$$$9 from "./sections/BlogPostHeader.tsx";
+import * as $$$$$$$$10 from "./sections/Features.tsx";
+import * as $$$$$$$$11 from "./sections/CampSteps.tsx";
+import * as $$$$$$$$12 from "./sections/Markdown.tsx";
+import * as $$$$$$$$13 from "./sections/CampRegistration.tsx";
+import * as $$$$$$$$14 from "./sections/Community.tsx";
+import * as $$$$$$$$15 from "./sections/Divider.tsx";
+import * as $$$$$$$$16 from "./sections/Partner.tsx";
+import * as $$$$$$$$17 from "./sections/Differentials.tsx";
+import * as $$$$$$$$18 from "./sections/Cms.tsx";
+import * as $$$$$$$$19 from "./sections/Footer.tsx";
+import * as $$$$$$$$20 from "./sections/Head.tsx";
+import * as $$$$$$$$21 from "./sections/Integration.tsx";
+import * as $$$$$$$$22 from "./sections/ContactUs.tsx";
+import * as $$$$$$$$23 from "./sections/FooterBigLogo.tsx";
+import * as $$$$$$$$24 from "./sections/Header.tsx";
+import * as $$$$$$$$25 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$26 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$27 from "./sections/CampMentor.tsx";
+import * as $$$$$$$$28 from "./sections/Thanks.tsx";
+import * as $$$$$$$$29 from "./sections/Faq.tsx";
+import * as $$$$$$$$30 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$$$$31 from "./sections/Delight.tsx";
+import * as $$$$$$$$32 from "./sections/Benefits.tsx";
+import * as $$$$$$$$33 from "./sections/About.tsx";
+import * as $$$$$$$$34 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$$$35 from "./sections/RankingHeader.tsx";
+import * as $$$$$$$$36 from "./sections/Carousel.tsx";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
 import * as $live_invoke_key from "$live/routes/live/invoke/[...key].ts";
 import * as $live_editorData from "$live/routes/live/editorData.ts";
 import * as $live_inspect from "$live/routes/live/inspect/[...block].ts";
+import * as $live_release from "$live/routes/live/release.ts";
 import * as $live_meta from "$live/routes/live/_meta.ts";
 import * as $live_previews from "$live/routes/live/previews/[...block].tsx";
 import * as $live_catchall from "$live/routes/[...catchall].tsx";
+import * as i1$0 from "$live/loaders/state.ts";
 import * as i2$$$0 from "$live/loaders/workflows/events.ts";
 import * as i2$$$1 from "$live/loaders/workflows/get.ts";
 import * as i2$$$$$$0 from "$live/handlers/devPage.ts";
@@ -81,12 +91,13 @@ import * as i2$$$$1 from "$live/sections/Slot.tsx";
 import * as i2$$$$2 from "$live/sections/UseSlot.tsx";
 import * as i2$$$$$$$$0 from "$live/matchers/MatchAlways.ts";
 import * as i2$$$$$$$$1 from "$live/matchers/MatchDate.ts";
-import * as i2$$$$$$$$2 from "$live/matchers/MatchEnvironment.ts";
-import * as i2$$$$$$$$3 from "$live/matchers/MatchHost.ts";
-import * as i2$$$$$$$$4 from "$live/matchers/MatchMulti.ts";
-import * as i2$$$$$$$$5 from "$live/matchers/MatchRandom.ts";
-import * as i2$$$$$$$$6 from "$live/matchers/MatchSite.ts";
-import * as i2$$$$$$$$7 from "$live/matchers/MatchUserAgent.ts";
+import * as i2$$$$$$$$2 from "$live/matchers/MatchDevice.ts";
+import * as i2$$$$$$$$3 from "$live/matchers/MatchEnvironment.ts";
+import * as i2$$$$$$$$4 from "$live/matchers/MatchHost.ts";
+import * as i2$$$$$$$$5 from "$live/matchers/MatchMulti.ts";
+import * as i2$$$$$$$$6 from "$live/matchers/MatchRandom.ts";
+import * as i2$$$$$$$$7 from "$live/matchers/MatchSite.ts";
+import * as i2$$$$$$$$8 from "$live/matchers/MatchUserAgent.ts";
 import * as i2$$$$$$$$$0 from "$live/flags/audience.ts";
 import * as i2$$$$$$$$$1 from "$live/flags/everyone.ts";
 import * as i2$$$$$0 from "$live/actions/workflows/cancel.ts";
@@ -169,8 +180,9 @@ const manifest = {
   "functions": {
     "deco-sites/starting/functions/LoadGitHubRaw.ts": $1,
     "deco-sites/starting/functions/LoadGitHubRawPost.ts": $0,
-    "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $3,
-    "deco-sites/starting/functions/LoadPageProps.ts": $2,
+    "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $4,
+    "deco-sites/starting/functions/LoadPageProps.ts": $3,
+    "deco-sites/starting/functions/psiRankingList.ts": $2,
     "deco-sites/std/functions/butterCMSAds.ts": i2$0,
     "deco-sites/std/functions/butterCMSBrands.ts": i2$1,
     "deco-sites/std/functions/butterCMSCategories.ts": i2$2,
@@ -200,12 +212,13 @@ const manifest = {
     "deco-sites/std/functions/vtexWishlist.ts": i2$26,
   },
   "routes": {
-    "./routes/_app.tsx": $$$$8,
+    "./routes/_app.tsx": $$$$9,
     "./routes/_middleware.ts": $$$$3,
     "./routes/[...catchall].tsx": $live_catchall,
     "./routes/admin/[...catchall].tsx": $$$$2,
-    "./routes/api/calc.tsx": $$$$6,
-    "./routes/api/leads.tsx": $$$$7,
+    "./routes/api/calc.tsx": $$$$7,
+    "./routes/api/leads.tsx": $$$$8,
+    "./routes/api/ranking.ts": $$$$6,
     "./routes/docs/[...slug].tsx": $$$$4,
     "./routes/gfm.css.ts": $$$$1,
     "./routes/index.tsx": $$$$0,
@@ -216,55 +229,62 @@ const manifest = {
     "./routes/live/invoke/[...key].ts": $live_invoke_key,
     "./routes/live/invoke/index.ts": $live_invoke,
     "./routes/live/previews/[...block].tsx": $live_previews,
+    "./routes/live/release.ts": $live_release,
     "./routes/live/workbench.ts": $live_workbench,
   },
   "islands": {
-    "./islands/CampHeader.tsx": $$$$$1,
-    "./islands/CampMentor.tsx": $$$$$6,
-    "./islands/Cms.tsx": $$$$$2,
-    "./islands/ContactUs.tsx": $$$$$3,
-    "./islands/Header.tsx": $$$$$5,
-    "./islands/ImpactCalculator.tsx": $$$$$0,
-    "./islands/SliderJS.tsx": $$$$$4,
+    "./islands/CampHeader.tsx": $$$$$2,
+    "./islands/CampMentor.tsx": $$$$$7,
+    "./islands/Cms.tsx": $$$$$3,
+    "./islands/ContactUs.tsx": $$$$$4,
+    "./islands/FaviconImage.tsx": $$$$$0,
+    "./islands/Header.tsx": $$$$$6,
+    "./islands/ImpactCalculator.tsx": $$$$$1,
+    "./islands/RankingAnalyze.tsx": $$$$$8,
+    "./islands/RankingHeader.tsx": $$$$$9,
+    "./islands/SliderJS.tsx": $$$$$5,
   },
   "sections": {
     "$live/sections/PageInclude.tsx": i2$$$$0,
     "$live/sections/Slot.tsx": i2$$$$1,
     "$live/sections/UseSlot.tsx": i2$$$$2,
-    "deco-sites/starting/sections/About.tsx": $$$$$$$$32,
-    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$31,
+    "deco-sites/starting/sections/About.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$32,
     "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$4,
-    "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$$$8,
-    "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$$$6,
+    "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$$$9,
+    "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$$$7,
     "deco-sites/starting/sections/CampComments.tsx": $$$$$$$$3,
     "deco-sites/starting/sections/CampHero.tsx": $$$$$$$$0,
-    "deco-sites/starting/sections/CampMentor.tsx": $$$$$$$$26,
-    "deco-sites/starting/sections/CampRegistration.tsx": $$$$$$$$12,
-    "deco-sites/starting/sections/CampSteps.tsx": $$$$$$$$10,
-    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$33,
-    "deco-sites/starting/sections/Cms.tsx": $$$$$$$$17,
-    "deco-sites/starting/sections/Community.tsx": $$$$$$$$13,
-    "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$21,
-    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$30,
-    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$29,
-    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$16,
-    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$14,
-    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$28,
-    "deco-sites/starting/sections/Features.tsx": $$$$$$$$9,
-    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$18,
-    "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$22,
-    "deco-sites/starting/sections/Head.tsx": $$$$$$$$19,
-    "deco-sites/starting/sections/Header.tsx": $$$$$$$$23,
-    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$7,
-    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$20,
-    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$24,
-    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$11,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$15,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$5,
+    "deco-sites/starting/sections/CampMentor.tsx": $$$$$$$$27,
+    "deco-sites/starting/sections/CampRegistration.tsx": $$$$$$$$13,
+    "deco-sites/starting/sections/CampSteps.tsx": $$$$$$$$11,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$36,
+    "deco-sites/starting/sections/Cms.tsx": $$$$$$$$18,
+    "deco-sites/starting/sections/Community.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$22,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$31,
+    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$17,
+    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$15,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$29,
+    "deco-sites/starting/sections/Features.tsx": $$$$$$$$10,
+    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$19,
+    "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$23,
+    "deco-sites/starting/sections/Head.tsx": $$$$$$$$20,
+    "deco-sites/starting/sections/Header.tsx": $$$$$$$$24,
+    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$8,
+    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$21,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$25,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$12,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$16,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$6,
     "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$1,
+    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$34,
+    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$35,
+    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$5,
     "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$2,
-    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$27,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$25,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$28,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$26,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
@@ -278,6 +298,7 @@ const manifest = {
     "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx": i2$$$$13,
   },
   "loaders": {
+    "$live/loaders/state.ts": i1$0,
     "$live/loaders/workflows/events.ts": i2$$$0,
     "$live/loaders/workflows/get.ts": i2$$$1,
     "deco-sites/std/loaders/vtex/cart.ts": i2$$$2,
@@ -310,12 +331,13 @@ const manifest = {
   "matchers": {
     "$live/matchers/MatchAlways.ts": i2$$$$$$$$0,
     "$live/matchers/MatchDate.ts": i2$$$$$$$$1,
-    "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$2,
-    "$live/matchers/MatchHost.ts": i2$$$$$$$$3,
-    "$live/matchers/MatchMulti.ts": i2$$$$$$$$4,
-    "$live/matchers/MatchRandom.ts": i2$$$$$$$$5,
-    "$live/matchers/MatchSite.ts": i2$$$$$$$$6,
-    "$live/matchers/MatchUserAgent.ts": i2$$$$$$$$7,
+    "$live/matchers/MatchDevice.ts": i2$$$$$$$$2,
+    "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$3,
+    "$live/matchers/MatchHost.ts": i2$$$$$$$$4,
+    "$live/matchers/MatchMulti.ts": i2$$$$$$$$5,
+    "$live/matchers/MatchRandom.ts": i2$$$$$$$$6,
+    "$live/matchers/MatchSite.ts": i2$$$$$$$$7,
+    "$live/matchers/MatchUserAgent.ts": i2$$$$$$$$8,
   },
   "flags": {
     "$live/flags/audience.ts": i2$$$$$$$$$0,
