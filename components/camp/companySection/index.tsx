@@ -12,11 +12,11 @@ export interface Props {
 
 export default function CompanySection(props: Props) {
   return (
-    <section class="px-10 py-[76px] flex items-center flex-col">
+    <section class="px-10 py-32 md:py-36 flex items-center flex-col">
       <div>
         {props.logo
-          ? <Logo id={props.logo} />
-          : <Image image={props.logoImage} />}
+          ? <Logo height="60px" id={props.logo} />
+          : <Image className="h-[60px]" image={props.logoImage} />}
       </div>
 
       <div
