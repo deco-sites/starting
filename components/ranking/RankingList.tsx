@@ -44,8 +44,7 @@ export default function RankingList({
           )
           : null}
       </div>
-      <footer class="py-8 relative">
-        <div class="pointer-events-none absolute bg-linear-shadowing h-72 w-screen bottom-full left-1/2 -translate-x-1/2" />
+      <footer class="py-8">
         <p class="text-almost-white text-[4vw] xl:text-[3vw] text-center">
           {footer.text} {footer.linkHref && footer.linkText
             ? (

@@ -14,10 +14,36 @@ export interface Link {
 
 export interface AnalyzeFormTranslation {
   title: string;
+  /** @title Form */
   form: {
-    label: string;
+    /** @default "Contact Information" */
+    contactTitle: string;
+    website: {
+      /** @default "Website URL" */
+      label: string;
+      placeholder?: string;
+    };
+    name: {
+      /** @default Name */
+      label: string;
+      placeholder?: string;
+    };
+    phone: {
+      /** @default Phone */
+      label: string;
+      placeholder?: string;
+    };
+    email: {
+      /** @default E-mail */
+      label: string;
+      placeholder?: string;
+    };
+    agency: {
+      /** @default Agency */
+      label: string;
+      placeholder?: string;
+    };
     button: string;
-    placeholder?: string;
     error: string;
   };
   loading: {
@@ -52,7 +78,6 @@ export interface Props {
 }
 
 export default function AnalyzeForm({ translations }: Props) {
-  const input = useRef<HTMLInputElement>(null);
   const response = useSignal<FetchData>({
     loading: false,
     data: null,
@@ -64,14 +89,19 @@ export default function AnalyzeForm({ translations }: Props) {
   const handleSubmit = (event: JSX.TargetedEvent<HTMLFormElement, Event>) => {
     event.preventDefault();
 
-    if (!input.current?.value) {
-      return alert(translations.form.error);
-    }
+    const { agency, name, phone, website, email } = event.currentTarget
+      .elements as typeof event.currentTarget.elements & {
+        agency: { value: string };
+        name: { value: string };
+        phone: { value: string };
+        website: { value: string };
+        email: { value: string };
+      };
 
     try {
-      const handledValue = input.current.value.includes("https://")
-        ? input.current.value
-        : `https://${input.current.value}`;
+      const handledValue = website.value.includes("https://")
+        ? website.value
+        : `https://${website.value}`;
       const psURL = new URL(handledValue).origin;
 
       if (psURL) {
@@ -83,7 +113,13 @@ export default function AnalyzeForm({ translations }: Props) {
 
         fetch("/api/ranking", {
           method: "POST",
-          body: JSON.stringify({ url: psURL }),
+          body: JSON.stringify({
+            url: psURL,
+            contactName: name.value || "",
+            contactEmail: email.value || "",
+            contactPhone: phone.value || "",
+            contactAgency: agency.value || "",
+          }),
         })
           .then((res) => {
             response.value = {
@@ -117,13 +153,7 @@ export default function AnalyzeForm({ translations }: Props) {
     <div class="flex md:min-h-[100vh] min-h-[calc(100vh-106px)] flex-col justify-center items-center text-almost-white px-6 md:px-0">
       {(!response.value.data && !response.value.loading) ||
           response.value.error
-        ? (
-          <Form
-            onSubmit={handleSubmit}
-            translations={translations}
-            ref={input}
-          />
-        )
+        ? <Form onSubmit={handleSubmit} translations={translations} />
         : null}
       {response.value.data &&
           !response.value.error &&
