@@ -52,7 +52,7 @@ const Simulator = (
     <div class="justify-between gap-[140px] md:grid grid-cols-2">
       <div>
         <div
-          class="font-regular text-[32px] text-[#0A2121] leading-[44.16px] mb-10"
+          class="font-regular text-[32px] text-[#0A2121] leading-[1.18] md:leading-[44.16px] mb-10"
           dangerouslySetInnerHTML={{ __html: props.title }}
         >
         </div>
