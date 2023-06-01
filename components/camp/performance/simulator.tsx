@@ -57,17 +57,22 @@ const Simulator = (
         >
         </div>
 
-        <div class="hidden md:block text-dark-green text-[22px] font-semibold">
-          <p>
+        <div class="hidden md:block text-dark-green text-[22px]">
+          <p className="mb-4">
             Gravamos uma simulação do carregamento da Home da Animale em uma
             conexão 3G, comparando seu site atual vs com a deco.
           </p>
-          <p>
+          <p className="mb-2 font-semibold md:font-normal">
             O resultado é bastante promissor!
           </p>
           <span>
-            Visite
-            <a href="http://animale.deco.site">http://animale.deco.site.</a>
+            Visite{"  "}
+            <a
+              class="mb-4 hover:cursor-pointer font-semibold underline"
+              href="http://animale.deco.site"
+            >
+              http://animale.deco.site.
+            </a>
           </span>
         </div>
       </div>
