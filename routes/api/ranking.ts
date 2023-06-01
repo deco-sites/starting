@@ -7,7 +7,7 @@ const AIRTABLE_URL =
   "https://api.airtable.com/v0/appNJ277dOGNDgi2A/tbluRhRRBIYtNKoPR";
 
 const parseBody = async <T>(
-  body: ReadableStream<Uint8Array> | null,
+  body: ReadableStream<Uint8Array> | null
 ): Promise<T | null> => {
   if (body === null) {
     return null;
@@ -31,7 +31,7 @@ const fetchRanking = async (website?: string) => {
     "sort[0][direction]": "desc",
     filterByFormula: website
       ? `FIND("${website}",website)`
-      : "pagespeedPoints>=80",
+      : "AND(pagespeedPoints>=80,hide=FALSE())",
   });
 
   return await fetch(`${AIRTABLE_URL}?${params.toString()}`, {
@@ -46,7 +46,7 @@ const fetchRanking = async (website?: string) => {
 
 const updateRanking = async (
   { id: recordId, ...record }: Site,
-  method: "POST" | "PATCH",
+  method: "POST" | "PATCH"
 ) => {
   const myHeaders = new Headers();
   myHeaders.append("Authorization", `Bearer ${AUTH_TOKEN}`);
@@ -93,8 +93,16 @@ const toSite = (record: Record): Site => {
 const normalizeSite = async (
   _url: string,
   score: number,
+  lcp: number,
+  contact: {
+    contactName?: string;
+    contactEmail?: string;
+    contactPhone?: string;
+    contactAgency?: string;
+  }
 ): Promise<Site | null> => {
   const url = new URL(_url).origin;
+  const { contactName, contactEmail, contactPhone, contactAgency } = contact;
 
   const html = await fetch(encodeURI(url)).then((r) => r.text());
   const document = new DOMParser().parseFromString(html, "text/html");
@@ -102,7 +110,7 @@ const normalizeSite = async (
   if (!document) return null;
 
   const decoState = JSON.parse(
-    document.querySelector("#__DECO_STATE")?.textContent ?? "null",
+    document.querySelector("#__DECO_STATE")?.textContent ?? "null"
   );
 
   const isVTEX = html.includes(".vteximg.") || html.includes(".vtexassets.");
@@ -144,6 +152,11 @@ const normalizeSite = async (
       shopify: isShopify,
       occ: isOcc,
     },
+    lcp,
+    contactName,
+    contactEmail,
+    contactPhone,
+    contactAgency,
   };
 };
 
@@ -175,17 +188,24 @@ export const ranking: {
 export const handler: Handlers = {
   // analyze site
   async POST(req) {
-    const body = await parseBody<{ url: string }>(req.body);
+    const body = await parseBody<{
+      url: string;
+      contactName?: string;
+      contactEmail?: string;
+      contactPhone?: string;
+      contactAgency?: string;
+    }>(req.body);
 
     if (!body || !body?.url) {
       return new Response("Invalid request: Insert a URL", {
         status: 400,
       });
     }
-    const { url } = body;
+    const { url, contactName, contactEmail, contactPhone, contactAgency } =
+      body;
 
     const { data }: PageSpeedResponse = await fetch(
-      `https://psi-test-api.fly.dev/?t=AIzaSyADcbhTjzpb5EGL0ACHhMtFD2i9sJMsn3I&n=10&url=${url}`,
+      `https://psi-test-api.fly.dev/?t=AIzaSyADcbhTjzpb5EGL0ACHhMtFD2i9sJMsn3I&n=10&url=${url}`
     ).then((res) => res.json());
 
     if (!data) {
@@ -195,8 +215,14 @@ export const handler: Handlers = {
     }
 
     const score = (data?.score.mean ?? -1) * 100;
+    const lcp = Math.round(data?.largest_contentful_paint.mean ?? -1) / 1000;
 
-    const newSite = await normalizeSite(url, score);
+    const newSite = await normalizeSite(url, score, lcp, {
+      contactName,
+      contactEmail,
+      contactPhone,
+      contactAgency,
+    });
 
     if (!newSite) {
       return new Response("Site connection problem", {
@@ -206,10 +232,19 @@ export const handler: Handlers = {
 
     let status;
     const rankingSite = await ranking.check(newSite);
+
     if (rankingSite) {
-      if (rankingSite.pagespeedPoints < newSite.pagespeedPoints) {
-        await ranking.update({ id: rankingSite.id, ...newSite });
-      }
+      const handledSite = {
+        ...rankingSite,
+        ...newSite,
+        id: rankingSite.id,
+        pagespeedPoints:
+          rankingSite.pagespeedPoints < newSite.pagespeedPoints
+            ? newSite.pagespeedPoints
+            : rankingSite.pagespeedPoints,
+      };
+      await ranking.update(handledSite);
+
       status = 200;
     } else {
       await ranking.add(newSite);
@@ -220,12 +255,12 @@ export const handler: Handlers = {
 
     return new Response(
       JSON.stringify(
-        score >= 80 ? list : [{ id: rankingSite?.id ?? "", ...newSite }],
+        score >= 80 ? list : [{ id: rankingSite?.id ?? "", ...newSite }]
       ),
       {
         headers: { "Content-Type": "application/json" },
         status,
-      },
+      }
     );
   },
 };
@@ -236,19 +271,19 @@ interface PageSpeedResponse {
 }
 
 interface Data {
-  cumulative_layout_shift: Cumulativelayoutshift;
-  first_contentful_paint: Cumulativelayoutshift;
-  js_execution_time: Cumulativelayoutshift;
-  largest_contentful_paint: Cumulativelayoutshift;
-  score: Cumulativelayoutshift;
-  speed_index: Cumulativelayoutshift;
+  cumulative_layout_shift: ScoreData;
+  first_contentful_paint: ScoreData;
+  js_execution_time: ScoreData;
+  largest_contentful_paint: ScoreData;
+  score: ScoreData;
+  speed_index: ScoreData;
   success_runs: number;
-  time_to_interactive: Cumulativelayoutshift;
-  total_blocking_time: Cumulativelayoutshift;
+  time_to_interactive: ScoreData;
+  total_blocking_time: ScoreData;
   url: string;
 }
 
-interface Cumulativelayoutshift {
+interface ScoreData {
   confidence_interval: number[];
   mean: number;
   std_dev: number;
@@ -267,13 +302,13 @@ export interface Site {
     occ: boolean;
   };
   favicon: string;
+  lcp: number;
+  contactName?: string;
+  contactEmail?: string;
+  contactPhone?: string;
+  contactAgency?: string;
 }
 
-interface AirTableGetResponse {
-  id: string;
-  createdTime: string;
-  fields: SiteDB;
-}
 interface AirTableListResponse {
   records: Record[];
 }
@@ -290,4 +325,9 @@ interface SiteDB {
   name: string;
   favicon: string;
   poweredBy: string;
+  lcp: number;
+  contactName?: string;
+  contactEmail?: string;
+  contactPhone?: string;
+  contactAgency?: string;
 }
