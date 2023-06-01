@@ -91,12 +91,12 @@ export default function AnalyzeForm({ translations }: Props) {
 
     const { agency, name, phone, website, email } = event.currentTarget
       .elements as typeof event.currentTarget.elements & {
-      agency: { value: string };
-      name: { value: string };
-      phone: { value: string };
-      website: { value: string };
-      email: { value: string };
-    };
+        agency: { value: string };
+        name: { value: string };
+        phone: { value: string };
+        website: { value: string };
+        email: { value: string };
+      };
 
     try {
       const handledValue = website.value.includes("https://")
@@ -152,21 +152,23 @@ export default function AnalyzeForm({ translations }: Props) {
   return (
     <div class="flex md:min-h-[100vh] min-h-[calc(100vh-106px)] flex-col justify-center items-center text-almost-white px-6 md:px-0">
       {(!response.value.data && !response.value.loading) ||
-      response.value.error ? (
-        <Form onSubmit={handleSubmit} translations={translations} />
-      ) : null}
+          response.value.error
+        ? <Form onSubmit={handleSubmit} translations={translations} />
+        : null}
       {response.value.data &&
-      !response.value.error &&
-      !response.value.loading ? (
-        <Result
-          translations={translations}
-          sites={response.value.data}
-          siteUrl={response.value.url}
-        />
-      ) : null}
-      {response.value.loading ? (
-        <Loading site={response.value.url} translations={translations} />
-      ) : null}
+          !response.value.error &&
+          !response.value.loading
+        ? (
+          <Result
+            translations={translations}
+            sites={response.value.data}
+            siteUrl={response.value.url}
+          />
+        )
+        : null}
+      {response.value.loading
+        ? <Loading site={response.value.url} translations={translations} />
+        : null}
     </div>
   );
 }

@@ -25,7 +25,9 @@ const Form = ({ translations, onSubmit }: Props) => {
           name="website"
           required
         />
-        <h2 class="md:text-xl text-lg text-left font-medium pt-4 w-full">{translations.form.contactTitle}</h2>
+        <h2 class="md:text-xl text-lg text-left font-medium pt-4 w-full">
+          {translations.form.contactTitle}
+        </h2>
         {optionalFields.map((field) => (
           <FieldForm
             label={translations.form[field].label}

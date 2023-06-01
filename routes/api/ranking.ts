@@ -7,7 +7,7 @@ const AIRTABLE_URL =
   "https://api.airtable.com/v0/appNJ277dOGNDgi2A/tbluRhRRBIYtNKoPR";
 
 const parseBody = async <T>(
-  body: ReadableStream<Uint8Array> | null
+  body: ReadableStream<Uint8Array> | null,
 ): Promise<T | null> => {
   if (body === null) {
     return null;
@@ -46,7 +46,7 @@ const fetchRanking = async (website?: string) => {
 
 const updateRanking = async (
   { id: recordId, ...record }: Site,
-  method: "POST" | "PATCH"
+  method: "POST" | "PATCH",
 ) => {
   const myHeaders = new Headers();
   myHeaders.append("Authorization", `Bearer ${AUTH_TOKEN}`);
@@ -99,7 +99,7 @@ const normalizeSite = async (
     contactEmail?: string;
     contactPhone?: string;
     contactAgency?: string;
-  }
+  },
 ): Promise<Site | null> => {
   const url = new URL(_url).origin;
   const { contactName, contactEmail, contactPhone, contactAgency } = contact;
@@ -110,7 +110,7 @@ const normalizeSite = async (
   if (!document) return null;
 
   const decoState = JSON.parse(
-    document.querySelector("#__DECO_STATE")?.textContent ?? "null"
+    document.querySelector("#__DECO_STATE")?.textContent ?? "null",
   );
 
   const isVTEX = html.includes(".vteximg.") || html.includes(".vtexassets.");
@@ -205,7 +205,7 @@ export const handler: Handlers = {
       body;
 
     const { data }: PageSpeedResponse = await fetch(
-      `https://psi-test-api.fly.dev/?t=AIzaSyADcbhTjzpb5EGL0ACHhMtFD2i9sJMsn3I&n=10&url=${url}`
+      `https://psi-test-api.fly.dev/?t=AIzaSyADcbhTjzpb5EGL0ACHhMtFD2i9sJMsn3I&n=10&url=${url}`,
     ).then((res) => res.json());
 
     if (!data) {
@@ -238,10 +238,9 @@ export const handler: Handlers = {
         ...rankingSite,
         ...newSite,
         id: rankingSite.id,
-        pagespeedPoints:
-          rankingSite.pagespeedPoints < newSite.pagespeedPoints
-            ? newSite.pagespeedPoints
-            : rankingSite.pagespeedPoints,
+        pagespeedPoints: rankingSite.pagespeedPoints < newSite.pagespeedPoints
+          ? newSite.pagespeedPoints
+          : rankingSite.pagespeedPoints,
       };
       await ranking.update(handledSite);
 
@@ -255,12 +254,12 @@ export const handler: Handlers = {
 
     return new Response(
       JSON.stringify(
-        score >= 80 ? list : [{ id: rankingSite?.id ?? "", ...newSite }]
+        score >= 80 ? list : [{ id: rankingSite?.id ?? "", ...newSite }],
       ),
       {
         headers: { "Content-Type": "application/json" },
         status,
-      }
+      },
     );
   },
 };

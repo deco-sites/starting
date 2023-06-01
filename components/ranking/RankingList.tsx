@@ -34,22 +34,25 @@ export default function RankingList({
         <h1 class="text-[9vw] sm:text-[10vw] xl:text-[7vw] leading-[9vw] sm:leading-[10vw] xl:leading-[7vw] font-bold text-almost-white text-center mb-10">
           {title}
         </h1>
-        {sites.length ? (
-          <SiteList
-            sites={sites}
-            translations={tableHeader}
-            hideFavicons={hideFavicons}
-          />
-        ) : null}
+        {sites.length
+          ? (
+            <SiteList
+              sites={sites}
+              translations={tableHeader}
+              hideFavicons={hideFavicons}
+            />
+          )
+          : null}
       </div>
       <footer class="py-8">
         <p class="text-almost-white text-[4vw] xl:text-[3vw] text-center">
-          {footer.text}{" "}
-          {footer.linkHref && footer.linkText ? (
-            <a class="text-secondary" href={footer.linkHref}>
-              {footer.linkText}
-            </a>
-          ) : null}
+          {footer.text} {footer.linkHref && footer.linkText
+            ? (
+              <a class="text-secondary" href={footer.linkHref}>
+                {footer.linkText}
+              </a>
+            )
+            : null}
         </p>
       </footer>
     </div>
