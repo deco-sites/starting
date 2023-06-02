@@ -49,7 +49,11 @@ const Simulator = (
   }
 
   return (
-    <div class="justify-between gap-[140px] md:grid grid-cols-2">
+    <div
+      class={`justify-between gap-[140px] md:grid grid-cols-2 ${
+        hasActiveSimulation && "pb-32 sm:pb-56 md:pb-0"
+      }`}
+    >
       <div>
         <div
           class="font-regular text-[32px] text-[#0A2121] leading-[1.18] md:leading-[44.16px] mb-10"
@@ -95,12 +99,15 @@ const Simulator = (
 
         <div class="items-center relative gap-12 justify-center hidden md:flex ">
           <div class="relative flex justify-center items-center">
-            <Image image={props.image} className="min-h-[470px]" />
+            <Image
+              image={props.image}
+              className="md:min-h-[470px]"
+            />
             {hasActiveSimulation && (
               <Video
                 {...props.videoNew}
                 resetVideo={resetVideo}
-                className="rounded-lg absolute max-w-[225px] top-[7%]"
+                className="rounded-lg absolute max-w-[225px] md:w-[10vw] lg:w-[13vw] top-[7%]"
               />
             )}
           </div>
@@ -128,7 +135,7 @@ const Simulator = (
               <Video
                 {...props.videoOld}
                 resetVideo={resetVideo}
-                className="rounded-lg absolute max-w-[225px] top-[7%]"
+                className="rounded-lg absolute max-w-[225px] md:w-[10vw] lg:w-[13vw]  top-[7%]"
               />
             )}
           </div>
