@@ -9,10 +9,6 @@ interface Props {
     seconds: number;
     milliseconds: number;
   };
-  firstVideoMaxTime: {
-    seconds: number;
-    milliseconds: number;
-  };
 }
 
 const ProgressBar = ({
@@ -21,7 +17,6 @@ const ProgressBar = ({
   secondTimeSeconds,
   secondTimeMilliseconds,
   secondVideoMaxTime,
-  firstVideoMaxTime,
 }: Props) => {
   const [percentage1, setPercentage1] = useState(0);
   const [percentage2, setPercentage2] = useState(0);
@@ -42,13 +37,6 @@ const ProgressBar = ({
     }
     if (calculatedPercentage2 > 100) {
       calculatedPercentage2 = 100;
-    }
-
-    if (
-      timeSecondVideo <
-        firstVideoMaxTime.seconds * 1000 + firstVideoMaxTime.milliseconds
-    ) {
-      calculatedPercentage2 = 0;
     }
 
     setPercentage1(calculatedPercentage1);
