@@ -33,10 +33,9 @@ const ProgressBar = ({
     const total = secondVideoMaxTime.seconds * 1000 +
       secondVideoMaxTime.milliseconds;
 
-    let calculatedPercentage1 = Math.ceil((timeFirstVideo / total) * 100 / 5) *
-      5;
-    let calculatedPercentage2 = Math.ceil((timeSecondVideo / total) * 100 / 5) *
-      5;
+    let calculatedPercentage1 = (timeFirstVideo / total) * 100;
+    5;
+    let calculatedPercentage2 = (timeSecondVideo / total) * 100;
 
     if (calculatedPercentage1 > 100) {
       calculatedPercentage1 = 100;
@@ -69,11 +68,17 @@ const ProgressBar = ({
     <div className="w-full h-4 bg-dark-green mb-8 p-1 relative rounded-lg">
       <div
         className="bg-[#06E474] rounded h-full relative z-50"
-        style={{ width: `${percentage1}%` }}
+        style={{
+          width: `${percentage1}%`,
+          transition: "width 0.1s ease-in-out",
+        }}
       />
       <div
         className="bg-almost-white rounded h-full relative -top-2 z-0"
-        style={{ width: `${percentage2}%` }}
+        style={{
+          width: `${percentage2}%`,
+          transition: "width 0.1s ease-in-out",
+        }}
       />
     </div>
   );
