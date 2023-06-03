@@ -106,6 +106,7 @@ export default function WithSimulator(props: Props) {
             secondTimeSeconds={secondTimer.seconds}
             firstTimeMilliseconds={firstTimer.milliseconds}
             secondTimeMilliseconds={secondTimer.milliseconds}
+            secondVideoMaxTime={props.timerVideoOld}
           />
 
           {countersFinalizados && (
@@ -159,6 +160,7 @@ export default function WithSimulator(props: Props) {
             firstTimeMilliseconds={firstTimer.milliseconds}
             secondTimeSeconds={secondTimer.seconds}
             secondTimeMilliseconds={secondTimer.milliseconds}
+            secondVideoMaxTime={props.timerVideoOld}
           />
 
           {countersFinalizados && (
