@@ -25,7 +25,10 @@ export function SiteItem({
   hideFavicons,
   hidePosition,
 }: Props) {
-  const url = new URL(site.website);
+  const safeUrl = site.website.startsWith("http")
+    ? site.website
+    : `https://${site.website}`;
+  const url = new URL(safeUrl);
   return (
     <tr
       id={url.origin}

@@ -1,8 +1,8 @@
 {
   "imports": {
     "deco-sites/starting/": "./",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.9.23/",
-    "$live/": "https://denopkg.com/deco-cx/live@1.8.6/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.9.28/",
+    "$live/": "https://denopkg.com/deco-cx/live@1.9.5/",
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.3.3/",
     "$fresh/": "https://deno.land/x/fresh@1.1.5/",
     "preact": "https://esm.sh/preact@10.13.2",
