@@ -29,6 +29,7 @@ export function SiteItem({
     ? site.website
     : `https://${site.website}`;
   const url = new URL(safeUrl);
+  const favicon = site.favicon ?? `${url.toString()}/favicon.ico`;
   return (
     <tr
       id={url.origin}
@@ -64,15 +65,15 @@ export function SiteItem({
         </div>
       </td>
       <td class="md:max-w-[300px] max-w-[200px]">
-        <a href={site.website} class="flex items-center">
-          {hideFavicons ? null : <FaviconImage image={site.favicon} />}
+        <a href={url.toString()} class="flex items-center">
+          {hideFavicons ? null : <FaviconImage image={favicon} />}
           <span class="md:text-[28px] md:leading-[32px] text-base inline-block align-middle font-semibold truncate">
             {site.name}
           </span>
         </a>
       </td>
       <td class="text-base md:table-cell hidden md:text-left text-center">
-        <a href={site.website}>{url.host.replace("www.", "")}</a>
+        <a href={url.toString()}>{url.host.replace("www.", "")}</a>
       </td>
       <td>
         <div class="poweredby-list flex items-center justify-end md:justify-center">
