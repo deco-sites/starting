@@ -31,7 +31,7 @@ const fetchRanking = async (website?: string) => {
     "sort[0][direction]": "desc",
     filterByFormula: website
       ? `FIND("${website}",website)`
-      : "AND(pagespeedPoints>=80,hide=FALSE())",
+      : "AND(hide=FALSE())",
   });
 
   return await fetch(`${AIRTABLE_URL}?${params.toString()}`, {

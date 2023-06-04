@@ -30,6 +30,12 @@ export function SiteItem({
     : `https://${site.website}`;
   const url = new URL(safeUrl);
   const favicon = site.favicon ?? `${url.toString()}/favicon.ico`;
+  const strokeColor = site.pagespeedPoints > 80
+    ? "#44D58B"
+    : site.pagespeedPoints > 60
+    ? "#F4CE61"
+    : "#DC7156";
+
   return (
     <tr
       id={url.origin}
@@ -46,7 +52,7 @@ export function SiteItem({
             viewBox="0 0 36 36"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            stroke="#02F67C"
+            stroke={strokeColor}
             stroke-width="3"
             stroke-dasharray={`${site.pagespeedPoints}, 100`}
             class="md:w-[52px] md:h-[52px] w-9 h-9"
@@ -59,7 +65,10 @@ export function SiteItem({
               stroke-linecap="round"
             />
           </svg>
-          <span class="font-semibold text-secondary md:text-xl text-base -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 absolute">
+          <span
+            style={{ color: strokeColor }}
+            class="font-semibold text-secondary md:text-xl text-base -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 absolute"
+          >
             {site.pagespeedPoints}
           </span>
         </div>
