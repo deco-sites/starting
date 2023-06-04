@@ -29,7 +29,12 @@ export function SiteItem({
     ? site.website
     : `https://${site.website}`;
   const url = new URL(safeUrl);
-  const favicon = site.favicon ?? `${url.toString()}/favicon.ico`;
+  const favicon = site.favicon
+    ? (site.favicon.startsWith("/")
+      ? `https://${url.host}${site.favicon}`
+      : site.favicon)
+    : "";
+
   const strokeColor = site.pagespeedPoints > 80
     ? "#44D58B"
     : site.pagespeedPoints > 60
