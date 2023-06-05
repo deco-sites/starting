@@ -31,7 +31,7 @@ export default function RankingList({
   return (
     <div class="min-h-[calc(100vh-98px)] text-zinc-100 flex justify-between flex-col max-w-screen-xl px-6 md:px-10 mx-auto">
       <div>
-        <h1 class="text-[6vw] sm:text-[7vw] xl:text-[4vw] leading-[1.2] font-bold text-almost-white text-center mb-12">
+        <h1 class="text-[7vw] sm:text-[7vw] xl:text-[5vw] leading-[1.2] font-bold text-almost-white text-center mb-12">
           {title}
         </h1>
         {sites.length
