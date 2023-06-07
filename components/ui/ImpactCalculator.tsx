@@ -462,6 +462,18 @@ export default function ImpactCalculator(
                   </span>
                 </div>
               </div>
+              <div class="justify-start">
+                <span class="text-primary-dark">
+                  Potencial increase in annual revenue
+
+                  <h2 class="text-primary-dark font-semibold -mt-6 text-[8rem]">
+                    $150,000
+                    <span class="text-[3rem]">
+                      USD
+                    </span>
+                  </h2>
+                </span>
+              </div>
               <button class="flex justify-center items-center h-12 group px-6 w-full bg-dark-green text-white rounded-[4px]">
                 {loading.value
                   ? <Spinner size={20} />
