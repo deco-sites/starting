@@ -231,7 +231,7 @@ export default function ImpactCalculator(
       >
       </div>
       <div class={isAdditionalComponent ? "bg-dark-green" : "px-4 pt-24"}>
-        <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 md:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-2 px-5 py-6 md:p-16">
+        <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 lg:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-2 px-6 md:px-2 lg:px-5 py-6 md:py-4 lg:py-6 md:p-16">
           <div class={`md:max-w-[40%] flex flex-col gap-4`}>
             <p class="text-2xl md:text-5xl md:leading-[53px] text-dark-green">
               {mainText}
@@ -348,149 +348,155 @@ export default function ImpactCalculator(
               </table>
             </div>
           </div>
-          <div class={`${!showExplanation.value ? "block" : "hidden"}`}>
-            <form
-              action="/api/calc"
-              class="flex flex-col gap-6"
-              onSubmit={(e) => handleSubmit(e)}
-            >
-              <div>
-                <label htmlFor={formInfos.websiteLabel}>
-                  {formInfos.websiteLabel}
-                </label>
-                <input
-                  id={formInfos.websiteLabel}
-                  name="domain"
-                  type="url"
-                  placeholder="http://example.com"
-                  pattern="(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
-                  required
-                  value={website}
-                  onFocus={(e) =>
-                    (e.target as HTMLInputElement).classList.add(
-                      "invalid:border-pink-500",
-                      "invalid:text-pink-600",
-                      "focus:invalid:border-pink-500",
-                      "focus:invalid:ring-pink-500",
-                    )}
-                  onInput={(e) =>
-                    website.value = (e.target as HTMLInputElement).value}
-                  class={`${inputClass}`}
-                />
-              </div>
-              <div class="grid grid-cols-3 gap-3 md:gap-6 justify-between">
-                <div class="flex flex-col justify-between">
-                  <label htmlFor={formInfos.sessionsLabel}>
-                    {formInfos.sessionsLabel}
+          <div
+            class={`${!showExplanation.value ? "block" : "hidden"}`}
+          >
+            <div>
+              <form
+                action="/api/calc"
+                class="flex flex-col gap-6"
+                onSubmit={(e) => handleSubmit(e)}
+              >
+                <div>
+                  <label htmlFor={formInfos.websiteLabel}>
+                    {formInfos.websiteLabel}
                   </label>
                   <input
-                    id={formInfos.sessionsLabel}
-                    name="sessions"
-                    type="number"
+                    id={formInfos.websiteLabel}
+                    name="domain"
+                    type="url"
+                    placeholder="http://example.com"
+                    pattern="(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
                     required
-                    value={sessions}
-                    onInput={(e) => sessions.value = Number(
-                      (e.target as HTMLInputElement).value,
-                    )}
+                    value={website}
+                    onFocus={(e) =>
+                      (e.target as HTMLInputElement).classList.add(
+                        "invalid:border-pink-500",
+                        "invalid:text-pink-600",
+                        "focus:invalid:border-pink-500",
+                        "focus:invalid:ring-pink-500",
+                      )}
+                    onInput={(e) =>
+                      website.value = (e.target as HTMLInputElement).value}
                     class={`${inputClass}`}
                   />
                 </div>
-                <div class="flex flex-col justify-between">
-                  <label htmlFor={formInfos.conversionLabel}>
-                    {formInfos.conversionLabel}
-                  </label>
-                  <div class="relative">
+                <div class="grid grid-cols-3 gap-3 md:gap-6 justify-between">
+                  <div class="flex flex-col justify-between">
+                    <label htmlFor={formInfos.sessionsLabel}>
+                      {formInfos.sessionsLabel}
+                    </label>
                     <input
-                      id={formInfos.conversionLabel}
-                      name="conversion"
+                      id={formInfos.sessionsLabel}
+                      name="sessions"
                       type="number"
                       required
-                      value={conversion}
-                      onInput={(e) =>
-                        conversion.value = Number(
-                          (e.target as HTMLInputElement).value,
-                        )}
+                      value={sessions}
+                      onInput={(e) => sessions.value = Number(
+                        (e.target as HTMLInputElement).value,
+                      )}
                       class={`${inputClass}`}
                     />
-                    <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">
-                      %
-                    </span>
                   </div>
-                </div>
-                <div class="flex flex-col justify-between">
-                  <label htmlFor={formInfos.averageOrderLabel}>
-                    {formInfos.averageOrderLabel}
-                  </label>
-                  <div class="relative">
-                    <input
-                      id={formInfos.averageOrderLabel}
-                      name="value"
-                      type="number"
-                      required
-                      value={average}
-                      onInput={(e) =>
-                        average.value = Number(
-                          (e.target as HTMLInputElement).value,
-                        )}
-                      class={`${inputClass}`}
-                    />
-                    <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">
-                      $
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="flex flex-col gap-2">
-                <label htmlFor={formInfos.trafficSplitLabel}>
-                  {formInfos.trafficSplitLabel}
-                </label>
-                <input
-                  id={formInfos.trafficSplitLabel}
-                  name="traffic"
-                  type="range"
-                  class="w-full mb-1"
-                  min="0"
-                  max="100"
-                  onInput={(e) => handleChange(e.target as HTMLInputElement)}
-                />
-                <div class="flex justify-between">
-                  <span class="text-[#161616] font-semibold text-[14px]">
-                    {formInfos.trafficMobile} {mobilePercent}%
-                  </span>
-                  <span class="text-[#161616] font-semibold text-[14px] text-right">
-                    {desktopPercent}% {formInfos.trafficDesktop}
-                  </span>
-                </div>
-              </div>
-              <div class="justify-start">
-                <span class="text-primary-dark">
-                  Potencial increase in annual revenue
-
-                  <h2 class="text-primary-dark font-semibold -mt-6 text-[8rem]">
-                    $150,000
-                    <span class="text-[3rem]">
-                      USD
-                    </span>
-                  </h2>
-                </span>
-              </div>
-              <button class="flex justify-center items-center h-12 group px-6 w-full bg-dark-green text-white rounded-[4px]">
-                {loading.value
-                  ? <Spinner size={20} />
-                  : (
-                    <div class="flex justify-center items-center gap-2">
-                      <p>{buttonText}</p>
-                      <Icon
-                        class="hidden transition lg:group-hover:block"
-                        id="WhiteArrow"
-                        width={15}
-                        height={15}
-                        strokeWidth={"1"}
+                  <div class="flex flex-col justify-between">
+                    <label htmlFor={formInfos.conversionLabel}>
+                      {formInfos.conversionLabel}
+                    </label>
+                    <div class="relative">
+                      <input
+                        id={formInfos.conversionLabel}
+                        name="conversion"
+                        type="number"
+                        required
+                        value={conversion}
+                        onInput={(e) =>
+                          conversion.value = Number(
+                            (e.target as HTMLInputElement).value,
+                          )}
+                        class={`${inputClass}`}
                       />
+                      <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">
+                        %
+                      </span>
                     </div>
-                  )}
-              </button>
-            </form>
+                  </div>
+                  <div class="flex flex-col justify-between">
+                    <label htmlFor={formInfos.averageOrderLabel}>
+                      {formInfos.averageOrderLabel}
+                    </label>
+                    <div class="relative">
+                      <input
+                        id={formInfos.averageOrderLabel}
+                        name="value"
+                        type="number"
+                        required
+                        value={average}
+                        onInput={(e) =>
+                          average.value = Number(
+                            (e.target as HTMLInputElement).value,
+                          )}
+                        class={`${inputClass}`}
+                      />
+                      <span class="absolute top-[24px] right-[10px] text-[#66736C] text-[14px]">
+                        $
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label htmlFor={formInfos.trafficSplitLabel}>
+                    {formInfos.trafficSplitLabel}
+                  </label>
+                  <input
+                    id={formInfos.trafficSplitLabel}
+                    name="traffic"
+                    type="range"
+                    class="w-full mb-1"
+                    min="0"
+                    max="100"
+                    onInput={(e) => handleChange(e.target as HTMLInputElement)}
+                  />
+                  <div class="flex justify-between">
+                    <span class="text-[#161616] font-semibold text-[14px]">
+                      Mobile {mobilePercent}%
+                    </span>
+                    <span class="text-[#161616] font-semibold text-[14px] text-right">
+                      {desktopPercent}% Desktop
+                    </span>
+                  </div>
+                </div>
+                <div class="justify-start">
+                  <span class="text-primary-dark">
+                    Potencial increase in annual revenue
+
+                    <div class="flex justify-center">
+                      <h2 class="text-primary-dark font-semibold md:-mt-6 text-[15vw] md:text-[6rem] lg:text-[8rem]">
+                        $150,000
+                        <span class="text-[6vw] md:text-[2rem] lg:text-[3rem]">
+                          USD
+                        </span>
+                      </h2>
+                    </div>
+                  </span>
+                </div>
+                <button class="flex justify-center items-center h-12 group px-6 w-full bg-dark-green text-white rounded-[4px]">
+                  {loading.value
+                    ? <Spinner size={20} />
+                    : (
+                      <div class="flex justify-center items-center gap-2">
+                        <p>{buttonText}</p>
+                        <Icon
+                          class="hidden transition lg:group-hover:block"
+                          id="WhiteArrow"
+                          width={15}
+                          height={15}
+                          strokeWidth={"1"}
+                        />
+                      </div>
+                    )}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
