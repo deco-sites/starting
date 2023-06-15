@@ -9646,6 +9646,13 @@
           ],
           "title": "Active Percentual Carrosel"
         },
+        "activatePageSpeedCarrosel": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Activate Page Speed Carrosel"
+        },
         "buttonCta1": {
           "type": "object",
           "properties": {

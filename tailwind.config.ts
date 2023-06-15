@@ -79,6 +79,24 @@ export default {
           "80%": { transform: "translateY(-10%) translateX(25%) scale(115%)" },
           "100%": { transform: "translateY(0) translateX(0)" },
         },
+        pageSpeedSwitcherText10: {
+          "0%": { transform: "translateY(0%)", opacity: 1 },
+          "30%": { transform: "translateY(-150%)", opacity: 0 },
+          "70%": { transform: "translateY(150%)", opacity: 0 },
+          to: { transform: "translateY(0%)", opacity: 1 },
+        },
+        pageSpeedSwitcherText20: {
+          "0%": { transform: "translateY(150%)" },
+          "30%": { transform: "translateY(0%)", opacity: 1 },
+          "70%": { transform: "translateY(-150%)", opacity: 0 },
+          to: { transform: "translateY(150%)", opacity: 0 },
+        },
+        pageSpeedSwitcherText30: {
+          "0%": { transform: "translateY(150%)" },
+          "30%": { transform: "translateY(150%)" },
+          "70%": { transform: "translateY(0%)", opacity: 1 },
+          to: { transform: "translateY(-150%)", opacity: 0 },
+        },
         switcherText10: {
           "0%": { transform: "translateY(0%)", opacity: 1 },
           "4%": { transform: "translateY(0%)", opacity: 1 },
@@ -570,6 +588,9 @@ export default {
       animation: {
         blur1: "blur1 15s linear infinite",
         blur2: "blur2 15s linear infinite",
+        pageSpeedSwitcherText10: "pageSpeedSwitcherText10 ease 7s infinite",
+        pageSpeedSwitcherText20: "pageSpeedSwitcherText20 ease 7s infinite",
+        pageSpeedSwitcherText30: "pageSpeedSwitcherText30 ease 7s infinite",
         switcherText10: "switcherText10 ease 13s infinite",
         switcherText20: "switcherText20 ease 13s infinite",
         switcherText30: "switcherText30 ease 13s infinite",
