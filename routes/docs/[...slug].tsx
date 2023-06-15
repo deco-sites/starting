@@ -96,7 +96,7 @@ export default function DocsPage(props: PageProps<Data>) {
     <>
       <Head>
         <title>{props.data.page?.title ?? "Not Found"} | deco.cx docs</title>
-        <link rel="stylesheet" href={`/gfm.css?build=${__FRSH_BUILD_ID}`} />
+        <link rel="stylesheet" href={`/gfm.css`} />
         {description && <meta name="description" content={description} />}
         <style
           dangerouslySetInnerHTML={{
