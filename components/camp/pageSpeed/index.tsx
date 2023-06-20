@@ -25,37 +25,38 @@ export default function PageSpeed(props: Props) {
           {props.title}
         </h3>
 
-        <div class="md:flex justify-between items-center md:px-40">
-          <div class="mb-8 md:max-w-[345px]">
+        <div class="md:flex justify-between items-center md:px-10 lg:px-[80px]">
+          <div class="mb-8 md:max-w-[345px] lg:max-w-[400px]">
             <div>
-              <p class="font-medium text-xl text-almost-white mb-6">
+              <p class="font-medium text-xl lg:text-[50px] text-almost-white mb-6">
                 {props.subtitle}
               </p>
 
-              <p class="font-regular text-xl text-almost-white">
+              <p class="font-regular text-xl lg:text-[21px] text-almost-white">
                 {props.text}
               </p>
             </div>
           </div>
 
-          <div class="flex flex-col gap-[40px]">
+          <div class="flex flex-col gap-[20px]">
             {props.pageSpeed.map((page, index) => (
               <>
                 {index === 0 && (
-                  <div class="flex justify-between items-center">
-                    <p class="font-regular text-xl text-almost-white">
+                  <div class="flex justify-around md:justify-between
+                   items-center">
+                    <p class="font-regular text-xl text-almost-white ml-[0px] lg:ml-[206px]">
                       Atual
                     </p>
                     <Icon id="DecoIconWhite" size={57} />
                   </div>
                 )}
 
-                <div>
-                  <p class="font-regular text-xl text-almost-white text-center">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+                  <p class="font-regular text-xl text-almost-white text-center m-4">
                     {page.label}
                   </p>
 
-                  <div key={page.label} class="flex justify-between gap-[53px]">
+                  <div key={page.label} class="flex justify-between gap-[30px]">
                     <Image image={page.store} />
                     <div class="flex flex-col justify-center">
                       <ArrowRight />
