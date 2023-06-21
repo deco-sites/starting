@@ -65,7 +65,7 @@ export default function ImpactCalculator(
   const average = useSignal(defaultValues?.averageOrder ?? 50);
   const mobileLCP = useSignal(0);
   const desktopLCP = useSignal(0);
-  const showExplanation = useSignal(false);
+  const showExplanation = useSignal(true);
 
   const desktopPercent = useSignal<number>(50);
   const mobilePercent = useSignal<number>(50);
@@ -230,21 +230,23 @@ export default function ImpactCalculator(
         } ${isAdditionalComponent ? "" : "absolute w-full h-[270px]"}`}
       >
       </div>
-      <div class={isAdditionalComponent ? "bg-dark-green" : "px-4 pt-24"}>
-        <div class="relative bg-[#F3FFF9] flex flex-col md:flex-row gap-4 lg:gap-16 border-dark-green border rounded-[24px] max-w-[1440px] md:m-auto mx-2 px-6 md:px-2 lg:px-5 py-6 md:py-4 lg:py-6 md:p-16">
-          <div class={`md:max-w-[40%] flex flex-col gap-4`}>
-            <p class="text-2xl md:text-5xl md:leading-[53px] text-dark-green">
-              {mainText}
-            </p>
-            <p>{potencialIncrease}</p>
-            <p class={`${!showExplanation.value ? "block" : "hidden"}`}>
-              {delayWarningMessage}
-            </p>
+      <div class={isAdditionalComponent ? "bg-dark-green" : "px-5 pt-24"}>
+        <div class="bg-[#F3FFF9] flex flex-col md:flex-row gap-3 justify-center lg:gap-12 border-dark-green border rounded-[24px] max-w-[1440px] mx-2 px-6 md:px-8 lg:px-16 py-6 md:py-8 lg:py-16">
+          <div class="md:w-[40%]">
+            <div class={`flex flex-col gap-4`}>
+              <p class="text-2xl md:text-5xl md:leading-[53px] text-dark-green">
+                Potencial de ganho com o site da <strong>Animale</strong>{" "}
+                mais rápido
+              </p>
+              <p class={`${!showExplanation.value ? "block" : "hidden"}`}>
+                {delayWarningMessage}
+              </p>
+            </div>
           </div>
           <div
             class={`${
               showExplanation.value ? "flex" : "hidden"
-            } flex-col gap-5`}
+            } flex-col gap-5 md:w-[70%]`}
           >
             <div>
               <p class="text-[44px] md:text-[82px] font-bold overflow-auto flex gap-2 items-baseline">
@@ -266,16 +268,12 @@ export default function ImpactCalculator(
             </div>
             <div class="flex flex-col gap-3">
               <h3 class="text-xl">{result.howWeCalculateTitle}</h3>
-              <div class="text-sm">
-                {result.howWeCalculateText1}{" "}
-                {parseFloat(String(mobileLCP.value / 1000)).toFixed(1)}s{" "}
-                {result.howWeCalculateText2}{" "}
-                {parseFloat(String(desktopLCP.value / 1000)).toFixed(1)}s{" "}
-                {result.howWeCalculateText3}
+              <div class="text-md">
+                {result.howWeCalculateText1}
               </div>
             </div>
             <div class="flex flex-col gap-3">
-              <h4 class="text-xl">{result.gainInOneYear}</h4>
+              <h4 class="text-xl">Potencial de ganho em um ano</h4>
               <table class="w-fit">
                 <thead>
                   <tr>
@@ -297,7 +295,7 @@ export default function ImpactCalculator(
                     </td>
                   </tr>
                   <tr>
-                    <td class="pr-5 pb-1">{result.conversion}</td>
+                    <td class="pr-5 pb-1">Conversão</td>
                     <td class="text-center px-5 pb-1">
                       {secondsInMobile > 0 && "+"}
                       {(getConversionOptimized(
@@ -314,7 +312,7 @@ export default function ImpactCalculator(
                     </td>
                   </tr>
                   <tr>
-                    <td class="pr-5 pb-1">{result.revenue}</td>
+                    <td class="pr-5 pb-1">Faturamento</td>
                     <td class="text-center px-5 pb-1">
                       {secondsInMobile > 0 && "+"}
                       {formatPrice(
@@ -392,9 +390,10 @@ export default function ImpactCalculator(
                       type="number"
                       required
                       value={sessions}
-                      onInput={(e) => sessions.value = Number(
-                        (e.target as HTMLInputElement).value,
-                      )}
+                      onInput={(e) =>
+                        sessions.value = Number(
+                          (e.target as HTMLInputElement).value,
+                        )}
                       class={`${inputClass}`}
                     />
                   </div>
