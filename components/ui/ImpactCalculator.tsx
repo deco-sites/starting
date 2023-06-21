@@ -65,7 +65,7 @@ export default function ImpactCalculator(
   const average = useSignal(defaultValues?.averageOrder ?? 50);
   const mobileLCP = useSignal(0);
   const desktopLCP = useSignal(0);
-  const showExplanation = useSignal(true);
+  const showExplanation = useSignal(false);
 
   const desktopPercent = useSignal<number>(50);
   const mobilePercent = useSignal<number>(50);
