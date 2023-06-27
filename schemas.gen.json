@@ -7452,6 +7452,27 @@
     "ZGVjby1zaXRlcy9zdGFydGluZy9pc2xhbmRzL0hlYWRlci50c3g=@Props": {
       "type": "object",
       "properties": {
+        "githubBarText": {
+          "type": "object",
+          "properties": {
+            "mobile": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Mobile"
+            },
+            "desktop": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Desktop"
+            }
+          },
+          "required": [],
+          "title": "Github Bar Text"
+        },
         "menuLinks": {
           "type": "array",
           "items": {
@@ -9317,9 +9338,36 @@
       ],
       "title": "deco-sites/starting/sections/Head.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4@GitHub": {
+      "type": "object",
+      "properties": {
+        "mobile": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "html",
+          "title": "Mobile"
+        },
+        "desktop": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "html",
+          "title": "Desktop"
+        }
+      },
+      "required": [],
+      "title": "GitHub"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4@Props": {
       "type": "object",
       "properties": {
+        "githubBarText": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4@GitHub",
+          "title": "Github Bar Text"
+        },
         "menuLinks": {
           "type": "array",
           "items": {

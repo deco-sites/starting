@@ -1,6 +1,14 @@
 import HeaderIsland from "deco-sites/starting/islands/Header.tsx";
 
+export interface GitHub {
+  /** @format html */
+  mobile?: string;
+  /** @format html */
+  desktop?: string;
+}
+
 export interface Props {
+  githubBarText?: GitHub;
   menuLinks: Array<{ label: string; href: string; targetBlank?: boolean }>;
   idiom: string;
   pt: { label: string; url: string; selected?: boolean };

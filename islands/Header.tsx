@@ -3,6 +3,10 @@ import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
 
 export interface Props {
+  githubBarText?: {
+    mobile?: string;
+    desktop?: string;
+  };
   menuLinks: Array<{ label: string; href: string; targetBlank?: boolean }>;
   idiom: string;
   pt: { label: string; url: string; selected?: boolean };
@@ -71,9 +75,15 @@ export default function Header(props: Props) {
 
   return (
     <section class="bg-[#0A2121] fixed top-0 z-50 w-full">
-      <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto">
+      { (props.githubBarText?.desktop || props.githubBarText?.mobile) && (
+        <div class="text-center bg-black text-white font-normal text-sm py-3">
+          <div class="hidden lg:block" dangerouslySetInnerHTML={{ __html: props.githubBarText?.desktop || "" }}></div>
+          <div class="lg:hidden" dangerouslySetInnerHTML={{ __html: props.githubBarText?.mobile || "" }}></div>
+        </div>
+      ) }
+      <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <div
-          class="md:hidden w-[100vw] h-[4px] fixed top-[60px] transition ease-in-out duration-300 left-0"
+          class="md:hidden w-[100vw] h-[4px] absolute top-[60px] transition ease-in-out duration-300 left-0"
           style="background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,255,128,1) 100%);"
         >
         </div>
@@ -232,7 +242,7 @@ export default function Header(props: Props) {
               </li>
             );
           })}
-          <div class="w-[100vw] h-[4px] fixed top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:bg-transparent group-hover:bg-none">
+          <div class="w-[100vw] h-[4px] absolute top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:bg-transparent group-hover:bg-none">
           </div>
         </ul>
         <ul class="lg:hidden px-3">
