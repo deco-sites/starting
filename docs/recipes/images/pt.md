@@ -1,373 +1,319 @@
 ---
-description: Aprenda a usar imagens em seu site sem perder performance.
+description: Aprenda como usar imagens em seu site sem perder desempenho.
 ---
 
-> TL;DR
+> Resumo
 >
-> Para melhorar a métrica de LCP da sua página, onde o elemento do LCP é uma
-> imagem, utilize imagens responsivas com dimensões adequadas e a tag link no
-> head do documento com as propriedades
-> `rel="preload" as="image" href="<<src_da_imagem>>"`.
+> Deco oferece componentes de Imagem, Picture e Source para trabalhar com
+> imagens. Esses componentes adicionam padrões sensíveis para acelerar seu site.
+> Para adicionar uma imagem ao seu site:
 >
-> O Live oferece componentes de Image, Picture e Source que fazem isso
-> automaticamente.
+> 1. Adicione os componentes de imagem (`<Image/>`, `<Source>`, `<Picture>`) ao
+   > seu código
+> 2. Estilize os componentes com CSS até obter a aparência desejada
+> 3. Defina os atributos de largura e altura. Confira #Adicionando propriedades
+   > de largura e altura
 
-Neste post vamos aprender sobre como utilizar das propriedades da tag de `<img>`
-e tag de `<link>` para melhorar a performance e experiência de navegação na
-página. Por fim como utilizar o componente de imagem do live para obter a máxima
-performance utilizando as propriedades da tag `<img>`, junto da tag `<link>`.
-Será necessário conhecimento básico de HTML e CSS para compreender os conceitos
-descritos aqui.
+Neste artigo, você aprenderá como adicionar imagens ao seu site mantendo um bom
+[LCP](https://web.dev/lcp/). Será necessário ter conhecimentos básicos de HTML e
+CSS. Além disso, certifique-se de entender os seguintes conceitos:
 
-Você que é desenvolvedor frontend já deve ter se deparado com alguma dessas duas
-imagens, a primeira é o report do CoreWebVitals do PageSpeed Insights, já a
-segunda é o report do Lighthouse.
+- LCP: https://web.dev/lcp/
+- aspect-ratio CSS: https://www.w3schools.com/cssref/css_pr_aspect-ratio.php
 
-<img width="964" alt="Resultados do PageSpeed" src="https://user-images.githubusercontent.com/18706156/224483655-907ec9fe-77b4-4c6a-9794-be382fe4deeb.png">
+### Devo usar image ou picture?
 
-#### 
+Existem duas tags HTML para adicionar imagens a um site, `<img/>` e
+`<picture/>`. Você deve escolher uma ou outra dependendo do design do seu site
+em dispositivos móveis e desktop. Use `<img/>` quando a proporção da imagem for
+a mesma em todos os tamanhos de tela. Use `<picture/>` se as proporções variarem
+com o tamanho da janela.
 
-<img width="960" alt="Resultados do PageSpeed" src="https://user-images.githubusercontent.com/18706156/224483656-bbf928ff-f96b-4156-83af-732dc3935ecb.png">
+No exemplo abaixo, temos a página de um produto em um site de comércio
+eletrônico. Observe que a imagem principal do produto mantém sua proporção
+(360/500 neste caso) tanto em dispositivos móveis quanto em desktops. Nesse
+caso, devemos usar a tag `<img/>`.
 
-Pode observar que a métrica de Largest Contentful Paint (LCP) está pintada de
-vermelho em ambas as imagens. Mas o que é LCP? LCP é uma métrica que indica
-quanto tempo durou, em segundos, para exibir o maior texto ou imagem de uma
-página. Baseado neste tempo, o Lighthouse, ferramenta que calcula esta métrica,
-categoriza em: "Boa", "A melhorar" e "Ruim".
+<img src="/docs/image-aspect-ratio.png">
 
-Por que é importante melhorar o LCP? A Google, criadora do Lighthouse, e outras
-empresas realizaram pesquisas e identificaram que existe uma correlação entre um
-baixo LCP e uma alta conversão da página.
+No entanto, no exemplo do carrossel de imagens abaixo, vemos que a imagem Não
+mantém sua proporção em dispositivos móveis/desktop, passando de 1440/600 para
+360/600. Nesse caso, devemos usar o elemento `<picture/>`.
 
-Assumindo que queremos sites que convertem mais, como podemos melhorar o LCP de
-uma página, que o elemento do LCP é uma imagem? Veremos algumas estratégias para
-diminuir o tempo do LCP
+<img src="/docs/picture-aspect-ratio.png">
 
-#### Adequando tamanho da imagem baseado no viewport
+Continue lendo para aprender como usar essas tags para adicionar imagens ao seu
+site.
 
-A primeira abordagem consiste em baixar imagens de dimensões menores, fazendo
-com que trafegue, na internet, menos dados das images e, consequentemente,
-baixando elas mais rápido, fazendo com que o LCP diminua. Para baixar imagens
-menores, podemos utilizar algumas abordagens, uma delas é a propriedade
-[**srcset**](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset)
-da tag img.
+#### Adicionando imagem
 
-#### Srcset
+Usar apenas a tag `<img/>` do HTML pode ser muito difícil e pode reduzir o
+desempenho do seu site. Para isso, o Deco fornece um componente `<Image/>`. Este
+componente funciona de maneira semelhante à tag `<img/>`, mas oferece algumas
+configurações padrão interessantes, como:
 
-A propriedade **srcset** consiste em fornecer imagens candidatas para ser
-renderizada pelo browser, considerando a largura da viewport ou a densidade de
-pixel da tela do dispositivo (DPR). Neste exemplo abaixo, as imagens candidatas
-estão sendo consideradas baseado na viewport do dispositivo.
+- Imagens responsivas para todos os tamanhos de tela
+- Tags de pré-carregamento para melhorar o LCP
 
-```html
-<img
-  src="/imagem-1920px.png"
-  srcset="/imagem-720px.png 720w, /imagem-1024px.png 1024w, /imagem-1920px.png 1920w" />
-```
-
-Esse exemplo mostra que para dimensões de até 720px renderiza imagem
-`imagem-720px.png` , para dimensões até 1024px renderiza a imagem
-`imagem-1024px.png` , assim em diante.
-
-A tabela abaixo mostra como o browser faz para escolher a imagem candidata.
-
-| Largura da Viewport | DPR | Largura da **viewport** considerando DPR (largura viewport x DPR) | Imagem escolhida pelo browser (currentSrc) |
-| ------------------- | --- | ----------------------------------------------------------------- | ------------------------------------------ |
-| 360px               | 1   | 360 × 1 = 360px                                                   | /imagem-720px.png                          |
-| 360px               | 2   | 360 × 2 = 720px                                                   | /imagem-720px.png                          |
-| 360px               | 3   | 360 × 3 = 1080px                                                  | /imagem-1920px.png                         |
-| 420px               | 1   | 420 × 1 = 420px                                                   | /imagem-720px.png                          |
-| 420px               | 2   | 420 × 2 = 840px                                                   | /imagem-1024px.png                         |
-| 1440px              | 1   | 1440 × 1 = 1440px                                                 | /imagem-1920px.png                         |
-
-> currentSrc é uma propriedade que representa a src escolhida pelo browser para
-> ser renderizada. Esta propriedade pode ser encontrada nos elementos do DOM do
-> tipo HTMLImageElement.
-
-#### Sizes + srcset
-
-Em alguns casos é interessante renderizar imagens diferentes e em dimensões
-diferentes baseados na viewport, porém a propriedade srcset não consegue lidar
-com este caso. Para lidar com isso, existe a propriedade
-[**sizes**](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/sizes)
-da tag img.
-
-A propriedade **sizes** possui uma lista separada por vírgula, e cada valor
-descreve a largura da imagem renderizada em relação a viewport. Utilizando o
-mesmo exemplo anterior, adicionando sizes:
-
-```html
-<img
-  src="/imagem-1920px.png"
-  sizes="(max-width: 720px) 100vw, (max-width: 1024px) 50vw, 25vw"
-  srcset="/imagem-720px.png 720w, /imagem-1024px.png 1024w, /imagem-1920px.png 1920w" />
-```
-
-No exemplo acima o browser, com a propriedade sizes, você indica ao browser que:
-
-- se a viewport é menor ou igual a 720px, então a imagem renderizada terá a
-  largura de 100vw;
-- se a viewport é maior do que 720px e menor ou igual a 1024px, então a imagem
-  renderizada terá a largura de 50vw
-- qualquer outro tamanho de tela maior do que 1024px, então a imagem a
-  renderizada terá largura de 25vw
-
-> O valor do tamanho da imagem que será renderizada pode ser descrito com px,
-> cm, em, ex ou vw.
-
-A tabela abaixo mostra como browser faz para selecionar as imagens candidatas
-descritas no **srcset**
-
-| Largura da Viewport | Largura da imagem         | DPR | Largura da **imagem** considerando DPR (largura viewport x DPR) | Imagem escolhida pelo browser (currentSrc) |
-| ------------------- | ------------------------- | --- | --------------------------------------------------------------- | ------------------------------------------ |
-| 360px               | 100vw = 1 \* 360px        | 1   | 360 × 1 = 360px                                                 | /imagem-720px.png                          |
-| 360px               | 100vw = 1 \* 360px        | 2   | 360 × 2 = 720px                                                 | /imagem-720px.png                          |
-| 420px               | 100vw = 1 × 420px         | 1   | 420 × 1 = 420px                                                 | /imagem-720px.png                          |
-| 420px               | 100vw = 1 × 420px         | 2   | 420 × 2 = 840px                                                 | /imagem-1024px.png                         |
-| 760px               | 50vw = 1/2 × 760 = 380px  | 1   | 380 × 1 = 380px                                                 | /imagem-720px.png                          |
-| 760px               | 50vw = 1/2 × 760 = 380px  | 2   | 380 × 2 = 760px                                                 | /imagem-1024px.png                         |
-| 1440px              | 25vw = 1/4 × 1440 = 360px | 1   | 360 × 1 = 360px                                                 | /imagem-720px.png                          |
-| 1512px              | 25vw = 1/4 × 1512 = 378px | 2   | 378 × 2 = 756px                                                 | /imagem-1024px.png                         |
-
-Essas são as formas de renderizar as imagens candidatas da tag img do exemplo.
-
-#### \<picture\> e \<source\>
-
-Quando é necessário ter imagens diferentes beseado na largura da viewport é
-recomendado utilizar as tags `picture` e `source`. A tag source, utilizada como
-filho da tag picture, tem as propriedades sizes e srcset com semântica iguais as
-da tag `<img>`, além destas duas existe a propriedade media que recebe um valor
-de media query. Quando o valor media está presente na tag source, o browser
-elege, somente, as imagens presentes no srcset da tag source cuja media query
-der match. Veja o exemplo
-
-```html
-<picture>
-  <source media="(max-width: 720px)" srcset="/imagem-360px.png 360w, /imagem-720px.png 720w" />
-  <source media="(max-width: 1024px)" srcset="/imagem-1024px.png 1024w" />
-  <source media="(min-width: 1025px)" srcset="/imagem-1920px.png 1920w"/>
-  <img src="/imagem-1920px.png" />
-</picture>
-```
-
-Veja a seguir como o browser escolhe as imagens:
-
-| Largura da Viewport | Largura da imagem  | DPR | Largura da **imagem** considerando DPR (largura viewport x DPR) | Imagem escolhida pelo browser (currentSrc) |
-| ------------------- | ------------------ | --- | --------------------------------------------------------------- | ------------------------------------------ |
-| 360px               | 100vw = 1 \* 360px | 1   | 360 × 1 = 360px                                                 | /imagem-360px.png                          |
-| 360px               | 100vw = 1 \* 360px | 2   | 360 × 2 = 720px                                                 | /imagem-720px.png                          |
-| 420px               | 100vw = 1 × 420px  | 1   | 420 × 1 = 420px                                                 | /imagem-720px.png                          |
-| 420px               | 100vw = 1 × 420px  | 2   | 420 × 2 = 840px                                                 | /imagem-720px.png                          |
-
-Observe que mesmo a largura da imagem sendo maior do que 720px o browser não
-elege imagens de outra tag source que tem largura maior.
-
-Para mais informações sobre a tag picture e source:
-<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture> e
-[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source").
-
-#### Priorizando carregamento de imagens
-
-Recapitulando, queremos oferecer uma boa performance da sua página e uma boa
-usabilidade. Até aqui, neste tutorial, aprendemos como otimizar os recursos
-consumidos pelo browser através de imagens diferentes e de dimensões adequadas.
-
-Além disso, o browser permite alterar a prioridade de algumas "atividades",
-durante seu
-[ciclo de vida](https://dev.to/antonfrattaroli/what-happens-when-you-type-googlecom-into-a-browser-and-press-enter-39g8)
-para renderizar uma página. Uma forma de alterar a prioridade é através das
-propriedades **loading** da tag `<img>`.
-
-A propriedade **loading** pode assumir dois valores:
-
-- **eager**: a imagem é carregada imediatamente, independente de estar ou não
-  dentro da viewport. Este é o valor padrão para propriedade loading;
-- **lazy**: adia o carregamento da imagem até que a imagem fique a uma certa
-  distância da viewport. Esta distância varia e é definida pela implementação do
-  browser.
-
-Logo, para imagens que estão fora da viewport ou não são exibidas logo que a
-página é carregada, é interessante ter a propriedade loading com valor `lazy`
-para poupar recursos de banda e armazenamento.
-
-O browser também permite dizer para ele como decodificar uma imagem fora da
-thread principal melhorando o desempenho e usabilidade geral da aplicação. Isso
-é feito através da propriedade **decoding** da tag `<img>`.
-
-A propriedade **decoding** pode assumir três valores:
-
-- **sync:** decodificar sincronamente e na thread principal;
-- **async:** decodificar assincronamente e fora da thread principal;
-- **auto:** valor padrão, sem preferência para decodificar, o browser escolhe a
-  melhor forma de decodificar;
-
-Desta forma, para as imagens que estão fora da viewport ou não são exibidas logo
-que a pagina é carregada, é interessante ter a propriedade decoding com valor
-`async` para poupar recursos de cpu.
-
-Exemplo utilizando propriedades loading e decoding;
-
-```html
-<!-- imagem acima do fold -->
-<img src="/imagem.png" loading="eager" />
-
-<!-- imagem abaixo do fold ou não renderizada ao carregar a página -->
-<img src="/imagem.png" loading="lazy" decoding="async" />
-```
-
-Em testes realizados com 3 imagens acima do fold com loading eager, foi
-comparado o decoding sync vs async, o resultado foi inconclusivo.
-
-Para mais informações observar o PR:
-<https://github.com/deco-sites/fashion/pull/60>
-
-#### <link rel="preload" as="image" fetchpriority="high" />
-
-Também é possível dizer para o browser que um recurso pode ser pré carregado
-antes mesmo de que o browser chegue precisar dele. Desta forma é possível pré
-carregar a imagem que é o LCP da página, antes mesmo que o browser identifique a
-tag `<img>` dá imagem. Para fazer isso você pode utilizar a tag `<link>` dentro
-da tag `<head>` .
-
-Além disso, é possível priorizar o request de um recurso através da propriedade
-**fetchpriority,** da tag `<link>`, com valor "high" e o sizes query da imagem.
-
-Exemplo abaixo mostra como pré carregar uma imagem, que é o LCP, e aumentar a
-prioridade do seu request.
-
-```html
-<head>
-  <link rel="preload" as="image" fetchpriority="high" media="(max-width: 720px)" href="/imagem-720px.png" imagesrcset="/imagem-720px.png 720w" />
-  <link rel="preload" as="image" fetchpriority="high" media="(max-width: 1024px)" href="/imagem-1024px.png" imagesrcset="/imagem-1024px.png 1024w" />
-  <link rel="preload" as="image" fetchpriority="high" media="(min-width: 1025px)" href="/imagem-1920px.png" imagesrcset="/imagem-1920px.png 1920w" />
-</head>
-<body>
-  <picture>
-    <source media="(max-width: 720px)" srcset="/imagem-720px.png 720w" />
-    <source media="(max-width: 1024px)" srcset="/imagem-1024px.png 1024w" />
-    <source media="(min-width: 1025px)" srcset="/imagem-1920px.png 1920w"/>
-    <img src="/imagem-1920px.png" />
-  </picture>
-</body>
-```
-
-#### Utilizando o componente Image do Live
-
-O componente `Image` foi construído com o objetivo de melhorar performance da
-sua página utilizando as propriedades mencionadas anteriormente. Além disso, os
-componentes de `Image` e `Source` utilizam por padrão imagens otimizadas no
-formato `webp` e adicionam `srcset` com largura 1x, 1.5x e 2x
-
-**Utilizando o componente de Imagem**
+Recomenda-se nunca usar a tag `<img/>` diretamente, mas usar o componente
+`<Image/>` em vez disso. Para usá-lo:
 
 ```tsx
 import Image from "deco-sites/std/components/Image.tsx";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
-export type Props = {
-  imageUrl: LiveImage;
-};
+export default function MeuComponente() {
+  return <Image src="https://example.com/image.png" />;
+}
+```
 
-export default function MeuComponente(props: Props) {
+Agora, você deverá ver a imagem no seu navegador! O componente `<Image/>` não
+adiciona nenhum estilo por padrão. Para estilizá-lo, você pode usar CSS como de
+costume. Por exemplo, para fazer a imagem preencher todo o espaço disponível,
+você pode aplicar
+
+os seguintes tokens do Tailwind ao código acima:
+
+```tsx
+import Image from "deco-sites/std/components/Image.tsx";
+
+export default function MeuComponente() {
   return (
     <Image
-      src={props.imageUrl}
-      sizes="(max-width: 640px) 100vw, 50vw"
-      width={420}
-      height={420}
-      loading="eager"
-      decoding="async"
-      fetchPriority="high"
-      preload
+      src="https://example.com/image.png"
+      class="w-full h-full object-cover"
     />
   );
 }
 ```
 
-O tipo `LiveImage` da propiedade `imageUrl` permite que o usuário do admin da
-deco.cx possa fazer upload de uma imagem. Na section, essa propiedade retorna
-uma string com o endereço da imagem carregada.
+Agora, siga o guia para adicionar as propriedades padrão de `width` e `height`
+ao componente `<Image/>`. Observe que isso é obrigatório e não seguir este guia
+pode ter um grande impacto no desempenho.
 
-A propriedade preload do componente Image adiciona uma tag link com **preload**
-no **head** do `document`. O HTML gerado com esse componente:
+#### Adicionando picture
 
-```html
-<html>
-  <head>
-    <link rel="preload" as="image" href=/image.png" imagesrcset=".../w-420,h-420/image.png 420w, .../w-630,h-630/image.png 630w, .../w-840,h-840/image.png 840w" imgagesizes="(max-width: 640px) 100vw, 50vw" fetchpriority="high" />
-  </head>
-  <body>
-    <img src="/image.png" srcset=".../w-420,h-420/image.png 420w, .../w-630,h-630/image.png 630w, .../w-840,h-840/image.png 840w" sizes="(max-width: 640px) 100vw, 50vw" width={420} height={420} loading="eager" decoding="async" />
-  </body>
-</html>
-```
+As tags `<picture/>` e `<source/>` do HTML sofrem dos mesmos problemas da tag
+`<img/>`. Ambas são complexas e difíceis de usar. Para isso, o Deco também
+fornece os componentes personalizados `<Picture/>` e `<Source/>`, que trazem
+recursos como:
 
-**Utilizando o componente Picture e Source**
+- Imagens responsivas para todos os tamanhos de tela
+- Tags de pré-carregamento para melhorar o LCP
+
+Abaixo, você encontrará um exemplo mínimo que renderiza uma imagem para desktop
+e outra para dispositivos móveis.
 
 ```tsx
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 
 function MeuComponente() {
   return (
-    <Picture class="w-screen block" preload>
+    <Picture>
       <Source
-        media="(max-width: 767px)"
-        fetchPriority="high"
-        src="/image-mobile.png"
-        width={360}
-        height={331}
+        media="(max-width: 768px)"
+        src="https://example.com/image-mobile.png"
       />
       <Source
         media="(min-width: 768px)"
-        fetchPriority="high"
-        src="/image-desktop.png"
-        width={1366}
-        height={517}
+        src="https://example.com/image-desktop.png"
+      />
+      <img src="https://example.com/image-desktop.png" />
+    </Picture>
+  );
+}
+```
+
+> Observe que você deve usar a tag `<img/>` dentro de Picture, não o componente
+> `<Image/>`. Observe que o atributo `src` na tag `<img/>` É OBRIGATÓRIO e deve
+> receber a imagem maior, neste caso, a do desktop.
+
+O exemplo acima renderiza a imagem `/image-mobile.png` em tamanhos de tela de
+até 768px de largura. Em tamanhos de tela maiores, será renderizada a imagem
+`/image-desktop.png`.
+
+Para estilizar essa imagem, adicione classes à tag `<img/>`. Por exemplo, para
+fazer a imagem preencher todo o espaço disponível, você pode aplicar os
+seguintes tokens do Tailwind ao código acima:
+
+```tsx
+import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+
+function MeuComponente() {
+  return (
+    <Picture>
+      <Source
+        media="(max-width: 768px)"
+        src="https://example.com/image-mobile.png"
+      />
+      <Source
+        media="(min-width: 768px)"
+        src="https://example.com/image-desktop.png"
       />
       <img
-        class="object-cover w-full"
-        loading="eager"
-        decoding="async"
-        src="/image-desktop.png"
-        width={1366}
-        height={517}
+        src="https://example.com/image-desktop.png"
+        class="w-full h-full object-cover"
       />
     </Picture>
   );
 }
 ```
 
-O HTML gerado com esse componente:
+Agora, siga o guia para adicionar as propriedades padrão de `width` e `height`
+ao componente `<Source/>`. Observe que isso é obrigatório e não seguir este guia
+pode impactar no desempenho.
 
-```html
-<html>
- <head>
-  <link as="image" rel="preload" href="/image-mobile.png" imagesrcset=".../w-360,h-600/image-mobile.png 360w, .../w-540,h-900/image-mobile.png 540w, .../w-720,h-1200/image-mobile.png 720w" fetchpriority="high" media="(max-width: 767px)">
-  <link as="image" rel="preload" href="/image-desktop.png" imagesrcset=".../w-1366,h-600/image-desktop.png 1366w, .../w-2049,h-900/image-desktop.png 2049w, .../w-2732,h-1200/image-desktop.png 2732w" fetchpriority="high" media="(min-width: 768px)">
- </head>
- <body>
-  <picture>
-   <source media="(max-width: 767px)" fetchpriority="high" width="360" height="600" srcset=".../w-360,h-600/image-mobile.png 360w, .../w-540,h-900/image-mobile.png 540w, .../w-720,h-1200/image-mobile.png 720w">
-   <source media="(min-width: 768px)" fetchpriority="high" width="1366" height="600" srcset=".../w-1366,h-600/image-desktop.png 1366w, .../w-2049,h-900/image-desktop.png 2049w, .../w-2732,h-1200/image-desktop.png 2732w">
-   <img class="object-cover w-full" loading="eager" decoding="async" src="/image-desktop.png" alt="Feminino">
-  </picture>
- </body>
-</html>
+#### Adicionando propriedades de largura e altura
+
+Os atributos `width` e `height` da imagem podem ser muito confusos, mesmo para
+os desenvolvedores mais experientes. Essa confusão ocorre pelo fato de que esses
+atributos
+
+NÃO alteram o tamanho final da imagem renderizada na tela. Em vez disso, eles
+alteram a imagem que o navegador irá baixar em um cenário de imagem responsiva.
+Escolher valores adequados de largura e altura é a chave para baixar uma imagem
+pequena para obter bons resultados de LCP.
+
+Para descobrir um bom valor para largura e altura:
+
+1. Abra seu site e inspecione o elemento da imagem.
+2. Defina o viewport para o tamanho desejado (412px para dispositivos móveis ou
+   1440px para desktop).
+3. Passe o mouse sobre a tag da imagem. Você deverá ver algo como:
+   <img src="/docs/width-attribute.png" />
+4. Voilà! Um bom valor de largura e altura está disponível no atributo "Rendered
+   size". Neste caso, a `width` é 270px e a `height` é 377px.
+
+Agora, abra seu componente e preencha os valores de largura e altura:
+
+```tsx
+import Image from "deco-sites/std/components/Image.tsx";
+
+export default function MeuComponente() {
+  return <Image src="https://example.com/image.png" width={270} height={377} />;
+}
 ```
 
-<!-- TODO: Linkar com o tipo LiveImage que automaticamente adiciona um upload de imagem -->
+Para Pictures, aplique o mesmo método para cada atributo Source:
 
-Para mais informações sobre as APIs dos componentes de imagem, picture e source
-do live, acesse:
-<https://github.com/deco-cx/live/blob/main/std/ui/components/Image.tsx> ,
+```tsx
+import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 
-[https://github.com/deco-cx/live/blob/main/std/ui/components/Picture.tsx](https://github.com/deco-cx/live/blob/main/std/ui/components/Image.tsx)
+function MeuComponente() {
+  return (
+    <Picture>
+      <Source
+        media="(max-width: 768px)"
+        src="https://example.com/image-mobile.png"
+        width={270}
+        height={377}
+      />
+      <Source
+        media="(min-width: 768px)"
+        src="https://example.com/image-desktop.png"
+        width={800}
+        height={1200}
+      />
+      <img
+        src="https://example.com/image-desktop.png"
+        class="w-full h-full object-cover"
+      />
+    </Picture>
+  );
+}
+```
 
-**Referencias:**
+#### Carregando imagens de forma otimizada - melhorando o LCP
+
+Para um bom LCP, não apenas você precisa enviar payloads pequenos, mas também
+precisa carregar os ativos na ordem correta, priorizando aqueles que estão
+visíveis na tela em relação aos que estão abaixo da dobra. Uma boa heurística é:
+
+1. Priorizar a imagem do LCP.
+2. Carregar todas as outras imagens de forma preguiçosa (lazy load).
+
+Felizmente, os componentes `<Image>` e `<Picture>` do Deco nos ajudam a obter
+esse comportamento. Comece localizando o elemento LCP na tela. Em seguida, abra
+o código do componente e verifique se:
+
+1. O atributo `preload` está definido.
+2. O atributo `loading` está definido como 'eager'.
+3. O atributo `fetchPriority` esta definido como 'high'
+
+Por exemplo, para um componente `<Image/>`:
+
+```tsx
+import Image from "deco-sites/std/components/Image.tsx";
+
+export default function MyComponent() {
+  return (
+    <Image
+      src="https://example.com/image.png"
+      width={270}
+      height={377}
+      preload
+      loading="eager"
+      fetchPriority="high"
+    />
+  );
+}
+```
+
+Para um `<Picture/>`:
+
+```tsx
+import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+
+function MyComponent() {
+  return (
+    <Picture preload>
+      <Source
+        media="(max-width: 768px)"
+        src="https://example.com/image-mobile.png"
+        width={270}
+        height={377}
+      />
+      <Source
+        media="(min-width: 768px)"
+        src="https://example.com/image-desktop.png"
+        width={800}
+        height={1200}
+      />
+      <img
+        loading="eager"
+        fetchPriority="high"
+        src="https://example.com/image-desktop.png"
+        class="w-full h-full object-cover"
+      />
+    </Picture>
+  );
+}
+```
+
+Verifique que outras imagens nao tenham os atibuto de preload e tenha o
+`loading="lazy"` e `fetchPriority="low"`. Ao adicionar essas configurações, você
+estará otimizando o carregamento de imagens para melhorar o LCP.
+
+> Note que a pagina final deveria ter somente uma imagem pré-carregada. O
+> pré-carregamento de multiplas imagens pode piorar a nota LCP. Para verificar
+> que somente uma imagem esteja sendo pré-carregada, verifique que ha somente
+> uma tag `<link rel="preload"/>`.
+
+Agora você sabe como adicionar imagens ao seu site usando os componentes
+`<Image/>`, `<Picture/>` e `<Source/>` do Deco. Lembre-se de ajustar as
+propriedades de largura e altura corretamente e otimizar o carregamento das
+imagens para um melhor desempenho do LCP.
+
+Você quer aprender como usamos HTML/CSS/JS para implementar os componentes de
+Image, Picture e Source? Veja o código fonte em:
+[Image.tsx](https://github.com/deco-cx/live/blob/main/std/ui/components/Image.tsx)
+,
+[Picture.tsx](https://github.com/deco-cx/live/blob/main/std/ui/components/Picture.tsx)
+
+**Referências:**
 
 <https://github.com/deco-cx/live/blob/main/std/ui/components/Image.tsx>
 
-[https://github.com/deco-cx/live/blob/main/std/ui/components/Picture.tsx](https://github.com/deco-cx/live/blob/main/std/ui/components/Image.tsx)
+<https://github.com/deco-cx/live/blob/main/std/ui/components/Picture.tsx>
 
 <https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset>
 

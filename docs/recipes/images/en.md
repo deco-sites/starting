@@ -225,8 +225,9 @@ Hopefully, deco `<Image>` and `<Picture>` components help us achieving this
 behavior. Start by locating the LCP element on your screen. After that, open the
 component's code and make sure:
 
-1. preload attribute is set
-2. loading attribute is set to 'eager'
+1. `preload` attribute is set
+2. `loading` attribute is set to 'eager'
+3. `fetchPriority` attribute is set to 'high'
 
 For instance, for an `<Image/>` component:
 
@@ -241,6 +242,7 @@ export default function MyComponent() {
       height={377}
       preload
       loading="eager"
+      fetchPriority="high"
     />
   );
 }
@@ -268,6 +270,7 @@ function MyComponent() {
       />
       <img
         loading="eager"
+        fetchPriority="high"
         src="https://example.com/image-desktop.png"
         class="w-full h-full object-cover"
       />

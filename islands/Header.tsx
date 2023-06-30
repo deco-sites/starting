@@ -75,12 +75,24 @@ export default function Header(props: Props) {
 
   return (
     <section class="bg-[#0A2121] fixed top-0 z-50 w-full">
-      { (props.githubBarText?.desktop || props.githubBarText?.mobile) && (
+      {(props.githubBarText?.desktop || props.githubBarText?.mobile) && (
         <div class="text-center bg-black text-white font-normal text-sm py-3">
-          <div class="hidden lg:block" dangerouslySetInnerHTML={{ __html: props.githubBarText?.desktop || "" }}></div>
-          <div class="lg:hidden" dangerouslySetInnerHTML={{ __html: props.githubBarText?.mobile || "" }}></div>
+          <div
+            class="hidden lg:block"
+            dangerouslySetInnerHTML={{
+              __html: props.githubBarText?.desktop || "",
+            }}
+          >
+          </div>
+          <div
+            class="lg:hidden"
+            dangerouslySetInnerHTML={{
+              __html: props.githubBarText?.mobile || "",
+            }}
+          >
+          </div>
         </div>
-      ) }
+      )}
       <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <div
           class="md:hidden w-[100vw] h-[4px] absolute top-[60px] transition ease-in-out duration-300 left-0"
