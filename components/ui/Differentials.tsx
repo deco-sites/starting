@@ -1,4 +1,3 @@
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
