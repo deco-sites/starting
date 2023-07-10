@@ -79,5 +79,5 @@ export default action;
 
 ## Leitura recomendada
 
-- [Buscando dados de API](/docs/pt/tutorials/data-fetching)
-- [Invocando funções através da API](/docs/pt/tutorials/client-side-invocation)
+- [Buscando dados de API](/docs/pt/developing/fetching-data)
+- [Invocando funções através da API](/docs/pt/developing/fetching-data-client)

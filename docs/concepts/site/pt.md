@@ -3,7 +3,7 @@
 ---
 
 É importante entender o conceito de **Site** para utilizar a _deco.cx_. Um site
-é uma coleção de configurações como [Audiences](/docs/en/concepts/audience),
+é uma coleção de configurações como [Segments](/docs/en/concepts/segment),
 [Pages](/docs/en/concepts/page) e [Sections](/docs/en/concepts/section) que são
 vinculadas e acessadas por meio de um domínio ou URL comum.
 
