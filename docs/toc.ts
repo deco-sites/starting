@@ -83,15 +83,13 @@ const tableOfContents: TableOfContents = [{
       en: "Fetching data from APIs",
     },
     slug: "developing/fetching-data",
-  },
-  {
+  }, {
     title: {
       pt: "Carregando dados de uma API a partir do browser",
       en: "Client-side Invocation",
     },
     slug: "developing/fetching-data-client",
-  },
-  {
+  }, {
     title: {
       pt: "Importando Blocks de um site",
       en: "Import Blocks from a site",
@@ -208,8 +206,8 @@ const tableOfContents: TableOfContents = [{
   }],
 }, {
   title: {
-    pt: "Concepts",
-    en: "Conceitos",
+    pt: "Conceitos",
+    en: "Concepts",
   },
   children: [{
     title: {
@@ -241,8 +239,7 @@ const tableOfContents: TableOfContents = [{
       en: "Page",
     },
     slug: "concepts/page",
-  },
-  {
+  }, {
     title: {
       pt: "Segment",
       en: "Segment",
@@ -269,14 +266,14 @@ if (import.meta.main) {
         ]);
         await Deno.writeTextFile(
           join(path, "en.md"),
-`---
+          `---
 description: TODO
 since: 1.0.0
 ---`,
         );
         await Deno.writeTextFile(
           join(path, "pt.md"),
-`---
+          `---
 description: TODO
 since: 1.0.0
 ---`,
@@ -302,14 +299,14 @@ since: 1.0.0
 
             await Deno.writeTextFile(
               join(path, "en.md"),
-`---
+              `---
 description: TODO
 since: 1.0.0
 ---`,
             );
             await Deno.writeTextFile(
               join(path, "pt.md"),
-`---
+              `---
 description: TODO
 since: 1.0.0
 ---`,
