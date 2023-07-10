@@ -94,5 +94,5 @@ export default action;
 
 ## Recommended Reading
 
-- [Fetching data from APIs](/docs/en/tutorials/data-fetching)
-- [Client-side function invocation](/docs/en/tutorials/client-side-invocation)
+- [Fetching data from APIs](/docs/en/developing/fetching-data)
+- [Client-side function invocation](/docs/en/developing/fetching-data-client)

@@ -41,7 +41,7 @@ export const handler: Handlers<Data> = {
       return new Response(null, {
         status: 307,
         headers: {
-          location: `/docs/${language || "en"}/introduction/overview`,
+          location: `/docs/${language || "en"}/overview`,
         },
       });
     }

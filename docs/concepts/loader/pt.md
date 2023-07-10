@@ -87,5 +87,5 @@ export default async function searchLoader(
 
 ## Leitura recomendada
 
-- [Buscando dados de API](/docs/pt/tutorials/data-fetching)
-- [Invocando um loader através da API](/docs/pt/tutorials/client-side-invocation)
+- [Buscando dados de API](/docs/pt/develping/fetching-data)
+- [Invocando um loader através da API](/docs/pt/developing/fetching-data-client)

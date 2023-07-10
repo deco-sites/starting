@@ -10,7 +10,7 @@ sources**, transform it if necessary, and **provide it to the site Sections that
 need it.** Loaders can be used to fetch data from APIs, databases, or any other
 external source. They live locally on the `/loaders/` folder of your project,
 but it's also possible to
-[import Loaders from other Sites](/docs/en/tutorials/importing-other-sites).
+[import Loaders from other Sites](/docs/en/developing/importing-other-sites).
 
 <!-- TODO: Update folder name after new engine -->
 
@@ -88,5 +88,5 @@ export default async function searchLoader(
 
 ## Recommended Reading
 
-- [Fetching data from APIs](/docs/en/tutorials/data-fetching)
-- [Client-side function invocation](/docs/en/tutorials/client-side-invocation)
+- [Fetching data from APIs](/docs/en/developing/fetching-data)
+- [Client-side function invocation](/docs/en/developing/fetching-data-client)
