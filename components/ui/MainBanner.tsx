@@ -220,7 +220,6 @@ export default function MainBanner(
                   preload
                   loading="eager"
                   decoding="sync"
-                  srcset={`${miniBanner?.bannerTopImage} 2x`}
                 />
                 <div class="absolute -bottom-4 -right-20 lg:-bottom-16 lg:-right-32 lg:group-hover:-right-20  lg:duration-300  lg:ease-in">
                   <span class="w-[80px] block relative top-[65px] md:top-[85px] right-16 text-right leading-4 font-normal text-[12px] lg:top-[108px]">
