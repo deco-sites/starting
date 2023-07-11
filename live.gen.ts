@@ -65,6 +65,7 @@ import * as $$$$$$$$33 from "./sections/About.tsx";
 import * as $$$$$$$$34 from "./sections/RankingAnalyze.tsx";
 import * as $$$$$$$$35 from "./sections/RankingHeader.tsx";
 import * as $$$$$$$$36 from "./sections/Carousel.tsx";
+import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
 import * as $live_invoke_key from "$live/routes/live/invoke/[...key].ts";
@@ -104,10 +105,10 @@ import * as i2$$$$$$$$9 from "$live/matchers/MatchUserAgent.ts";
 import * as i2$$$$$$$$$0 from "$live/flags/audience.ts";
 import * as i2$$$$$$$$$1 from "$live/flags/everyone.ts";
 import * as i2$$$$$$$$$2 from "$live/flags/flag.ts";
+import * as i2$$$$$$$$$3 from "$live/flags/multivariate.ts";
 import * as i2$$$$$$0 from "$live/actions/workflows/cancel.ts";
-import * as i2$$$$$$1 from "$live/actions/workflows/run.ts";
-import * as i2$$$$$$2 from "$live/actions/workflows/signal.ts";
-import * as i2$$$$$$3 from "$live/actions/workflows/start.ts";
+import * as i2$$$$$$1 from "$live/actions/workflows/signal.ts";
+import * as i2$$$$$$2 from "$live/actions/workflows/start.ts";
 import * as i2$0 from "deco-sites/std/functions/butterCMSAds.ts";
 import * as i2$1 from "deco-sites/std/functions/butterCMSBrands.ts";
 import * as i2$2 from "deco-sites/std/functions/butterCMSCategories.ts";
@@ -170,6 +171,7 @@ import * as i2$$$$$12 from "deco-sites/std/sections/SEO.tsx";
 import * as i2$$$$$13 from "deco-sites/std/sections/SEOPDP.tsx";
 import * as i2$$$$$14 from "deco-sites/std/sections/SEOPLP.tsx";
 import * as i2$$$$$15 from "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx";
+import * as i2$$$$$$3 from "deco-sites/std/actions/vtex/analytics/sendEvent.ts";
 import * as i2$$$$$$4 from "deco-sites/std/actions/vtex/cart/addItems.ts";
 import * as i2$$$$$$5 from "deco-sites/std/actions/vtex/cart/getInstallment.ts";
 import * as i2$$$$$$6 from "deco-sites/std/actions/vtex/cart/removeItemAttachment.ts";
@@ -243,6 +245,7 @@ const manifest = {
     "./routes/live/previews/index.tsx": $live_previews_index,
     "./routes/live/release.ts": $live_release,
     "./routes/live/workbench.ts": $live_workbench,
+    "./routes/live/workflows/run.ts": $live_workflows,
   },
   "islands": {
     "./islands/CampHeader.tsx": $$$$$2,
@@ -364,12 +367,13 @@ const manifest = {
     "$live/flags/audience.ts": i2$$$$$$$$$0,
     "$live/flags/everyone.ts": i2$$$$$$$$$1,
     "$live/flags/flag.ts": i2$$$$$$$$$2,
+    "$live/flags/multivariate.ts": i2$$$$$$$$$3,
   },
   "actions": {
     "$live/actions/workflows/cancel.ts": i2$$$$$$0,
-    "$live/actions/workflows/run.ts": i2$$$$$$1,
-    "$live/actions/workflows/signal.ts": i2$$$$$$2,
-    "$live/actions/workflows/start.ts": i2$$$$$$3,
+    "$live/actions/workflows/signal.ts": i2$$$$$$1,
+    "$live/actions/workflows/start.ts": i2$$$$$$2,
+    "deco-sites/std/actions/vtex/analytics/sendEvent.ts": i2$$$$$$3,
     "deco-sites/std/actions/vtex/cart/addItems.ts": i2$$$$$$4,
     "deco-sites/std/actions/vtex/cart/getInstallment.ts": i2$$$$$$5,
     "deco-sites/std/actions/vtex/cart/removeItemAttachment.ts": i2$$$$$$6,
