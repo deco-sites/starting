@@ -50,6 +50,48 @@ const tableOfContents: TableOfContents = [{
   }],
 }, {
   title: {
+    pt: "Conceitos",
+    en: "Concepts",
+  },
+  children: [{
+    title: {
+      pt: "Block",
+      en: "Block",
+    },
+    slug: "concepts/block",
+  }, {
+    title: {
+      pt: "Section",
+      en: "Section",
+    },
+    slug: "concepts/section",
+  }, {
+    title: {
+      pt: "Loader",
+      en: "Loader",
+    },
+    slug: "concepts/loader",
+  }, {
+    title: {
+      pt: "Action",
+      en: "Action",
+    },
+    slug: "concepts/action",
+  }, {
+    title: {
+      pt: "Page",
+      en: "Page",
+    },
+    slug: "concepts/page",
+  }, {
+    title: {
+      pt: "Segment",
+      en: "Segment",
+    },
+    slug: "concepts/segment",
+  }],
+}, {
+  title: {
     pt: "Desenvolvendo novas funcionalidades",
     en: "Developing new capabilities",
   },
@@ -203,48 +245,6 @@ const tableOfContents: TableOfContents = [{
       en: "GTM",
     },
     slug: "composable-apis/gtm",
-  }],
-}, {
-  title: {
-    pt: "Conceitos",
-    en: "Concepts",
-  },
-  children: [{
-    title: {
-      pt: "Block",
-      en: "Block",
-    },
-    slug: "concepts/block",
-  }, {
-    title: {
-      pt: "Section",
-      en: "Section",
-    },
-    slug: "concepts/section",
-  }, {
-    title: {
-      pt: "Loader",
-      en: "Loader",
-    },
-    slug: "concepts/loader",
-  }, {
-    title: {
-      pt: "Action",
-      en: "Action",
-    },
-    slug: "concepts/action",
-  }, {
-    title: {
-      pt: "Page",
-      en: "Page",
-    },
-    slug: "concepts/page",
-  }, {
-    title: {
-      pt: "Segment",
-      en: "Segment",
-    },
-    slug: "concepts/segment",
   }],
 }];
 
