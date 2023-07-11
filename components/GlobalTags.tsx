@@ -14,7 +14,7 @@ export default function GlobalTags() {
                 /* latin */
                 @font-face {
                     font-family: 'Albert Sans';
-                    font-style: normal;
+                    font-style: swap;
                     font-weight: 400;
                     font-display: display;
                     src: url(${
@@ -25,7 +25,7 @@ export default function GlobalTags() {
                 /* latin */
                 @font-face {
                     font-family: 'Albert Sans';
-                    font-style: normal;
+                    font-style: swap;
                     font-weight: 500;
                     font-display: display;
                     src: url(${
@@ -36,7 +36,7 @@ export default function GlobalTags() {
                 /* latin */
                 @font-face {
                     font-family: 'Albert Sans';
-                    font-style: normal;
+                    font-style: swap;
                     font-weight: 600;
                     font-display: display;
                     src: url(${
@@ -47,7 +47,7 @@ export default function GlobalTags() {
                 /* latin */
                 @font-face {
                     font-family: 'Albert Sans';
-                    font-style: normal;
+                    font-style: swap;
                     font-weight: 700;
                     font-display: display;
                     src: url(${
