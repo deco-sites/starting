@@ -13,21 +13,21 @@ On the other hand, proxies are utilized when you want to _keep the user_ within 
 
 By leveraging proxies and redirects, you can optimize content delivery, manage transitions, and provide a seamless user experience. In the following sections, let's explore how to add proxies and redirects using deco's Admin, step by step.
 
-The overall process involves changing the site route map and attaching a proxy or a redirect depending wether your use case needs one or the other. At the end of the process we're going to have an example route `/example-proxy` that proxies requests to google.com and a `/example-redirect` that redirects you to google.com homepage. Notice the difference: the former will let you in the same domain and the latter will leave your site domain.
+The overall process involves changing the site route map and attaching a proxy or a redirect depending wether your use case needs one or the other. At the end of the process we should be able to create an example route `/example-proxy` that proxies requests to deco.cx and a `/example-redirect` that redirects you to google.com homepage. Notice the difference: the former will let you in the same domain and the latter will leave your site domain.
 
 # Step by step
 
 Adding a Redirect:
 
 1. First, log in to the Deco Admin. Once you're logged in, you can access the site you want to work with.
-2. Open the ./routes/[...catchall].tsx block, which is responsible for routing your site. You can access it by using the following link (replace $sitename with your site name): Admin Routes Block
-3. Click on "Add audiences," and a select menu will appear.
+2. Open the ./routes/[...catchall].tsx block, which is responsible for routing your site. You can access it by using the following link (replace $sitename with your site name): https://deco.cx/admin/sites/$sitename/blocks/.%2Froutes%2F%5B...catchall%5D.tsx
+3. Click on "Add audiences," and a select menu will appear.<img width="1511" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/18545536-5971-47d5-a6f3-22f9a740df2b">
 4. Below "Create new," select the "Audience Everyone" option.
-5. A new select menu named "Routes" will appear. Under "Create new," choose the option deco-cx/deco/flags/audience.ts@Route[]. Then click on the "+" button to add a new route.
+5. A new select menu named "Routes" will appear. Under "Create new," choose the option deco-cx/deco/flags/audience.ts@Route[]. Then click on the "+" button to add a new route.<img width="1508" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/07e308df-6adb-4a2d-830c-eed8bca3fa06">
 6. Fill in the "pathtemplate" field with the desired route, e.g., /example-redirect (ignore the "href checkbox" option for now).
 7. In the "Handler" option, select "Redirect Handler" (or $live/handlers/redirect.ts).
-8. In the "To" field, enter https://google.com or the URL you want to redirect to.
-9. Choose the type as "temporary" since this redirect may change over time. If the redirect should not change over time, you can select "permanent" (which may result in faster responses since permanent redirects are cached by the user's browser).
+8. In the "To" field, enter h`ttps://google.com` or the URL you want to redirect to.
+9. Choose the type as "temporary" since this redirect may change over time. If the redirect should not change over time, you can select "permanent" (which may result in faster responses since permanent redirects are cached by the user's browser).<img width="1508" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/56e3c2a9-cde2-4541-9781-58f84e27eb98">
 10. Save and publish the changes.
 
 Now you can access https://your-store.deco.site/example-redirect and check if the redirect is working.

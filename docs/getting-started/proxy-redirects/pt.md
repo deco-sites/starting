@@ -13,21 +13,21 @@ Por outro lado, os proxies são utilizados quando você deseja _manter o usuári
 
 Ao utilizar proxies e redirecionamentos, você pode otimizar a entrega de conteúdo, gerenciar transições e fornecer uma experiência de usuário perfeita. Nas seções a seguir, vamos explorar como adicionar proxies e redirecionamentos usando o Admin do Deco, passo a passo.
 
-O processo geral envolve a alteração do mapa de rotas do site e a associação de um proxy ou redirecionamento, dependendo do caso de uso específico. Ao final do processo, teremos uma rota de exemplo `/example-proxy` que faz proxy de solicitações para o google.com e uma rota `/example-redirect` que redireciona para a página inicial do google.com. Observe a diferença: o primeiro manterá você no mesmo domínio, enquanto o último o levará para fora do domínio do seu site.
+O processo geral envolve a alteração do mapa de rotas do site e a associação de um proxy ou redirecionamento, dependendo do caso de uso específico. Ao final do processo, saberemos como criar uma rota de exemplo `/example-proxy` que faz proxy de solicitações para o deco.cx e uma rota `/example-redirect` que redireciona para a página inicial do google.com. Observe a diferença: o primeiro manterá você no mesmo domínio, enquanto o último o levará para fora do domínio do seu site.
 
 # Passo a passo
 
 Adicionando um Redirecionamento:
 
 1. Primeiramente, faça login no Admin do Deco. Uma vez logado, você pode acessar o site com o qual deseja trabalhar.
-2. Abra o bloco `./routes/[...catchall].tsx`, que é responsável pelo roteamento do seu site. Você pode acessá-lo utilizando o seguinte link (substitua `$sitename` pelo nome do seu site): Bloco de Rotas do Admin
-3. Clique em "Adicionar públicos-alvo" e um menu suspenso será exibido.
-4. Abaixo de "Criar novo", selecione a opção "Público-alvo Todos".
-5. Um novo menu suspenso chamado "Rotas" será exibido. Em "Criar novo", escolha a opção `deco-cx/deco/flags/audience.ts@Route[]`. Em seguida, clique no botão "+" para adicionar uma nova rota.
+2. Abra o bloco `./routes/[...catchall].tsx`, que é responsável pelo roteamento do seu site. Você pode acessá-lo utilizando o seguinte link (substitua `$sitename` pelo nome do seu site): https://deco.cx/admin/sites/$sitename/blocks/.%2Froutes%2F%5B...catchall%5D.tsx
+3. Clique em "Adicionar públicos-alvo" e um menu suspenso será exibido.<img width="1511" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/18545536-5971-47d5-a6f3-22f9a740df2b">
+4. Abaixo de "Criar novo", selecione a opção "Audience Everyone".
+5. Um novo menu suspenso chamado "Rotas" será exibido. Em "Criar novo", escolha a opção `deco-cx/deco/flags/audience.ts@Route[]`. Em seguida, clique no botão "+" para adicionar uma nova rota.<img width="1508" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/07e308df-6adb-4a2d-830c-eed8bca3fa06">
 6. Preencha o campo "pathtemplate" com a rota desejada, por exemplo, `/example-redirect` (ignore a opção "checkbox href" por enquanto).
 7. Na opção "Handler", selecione "Redirect Handler" (ou `$live/handlers/redirect.ts`).
-8. No campo "Para", insira `https://google.com` ou a URL para a qual deseja redirecionar.
-9. Escolha o tipo como "temporary" já que este redirecionamento pode mudar ao longo do tempo. Se o redirecionamento não deve mudar ao longo do tempo, você pode selecionar "permanent" (o que pode resultar em respostas mais rápidas, já que os redirecionamentos permanentes são armazenados em cache pelo navegador do usuário).
+8. No campo "To", insira `https://google.com` ou a URL para a qual deseja redirecionar.
+9. Escolha o tipo como "temporary" já que este redirecionamento pode mudar ao longo do tempo. Se o redirecionamento não deve mudar ao longo do tempo, você pode selecionar "permanent" (o que pode resultar em respostas mais rápidas, já que os redirecionamentos permanentes são armazenados em cache pelo navegador do usuário).<img width="1508" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/56e3c2a9-cde2-4541-9781-58f84e27eb98">
 10. Salve e publique as alterações.
 
 Agora você pode acessar `https://seu-site.deco.site/example-redirect` e verificar se o redirecionamento está funcionando corretamente.
@@ -38,7 +38,7 @@ Para criar um proxy em vez de um redirecionamento, você pode seguir os mesmos p
 
 Repita os passos de 1 a 5 da seção "Adicionando um Redirecionamento".
 1. Na opção "Handler", selecione "Proxy Handler" (ou `$live/handlers/proxy.ts`).
-2. No campo "Para", insira a URL exata que deve ser usada como proxy, por exemplo, `https://google.com`.
+2. No campo "To", insira a URL exata que deve ser usada como proxy, por exemplo, `https://deco.cx`.
 3. Salve e publique as alterações.
 
-Agora, ao acessar a rota especificada (por exemplo, `https://seu-site.deco.site/example-proxy`), você será proxied para a URL especificada (neste caso, `https://google.com`).
+Agora, ao acessar a rota especificada (por exemplo, `https://seu-site.deco.site/example-proxy`), você será proxied para a URL especificada (neste caso, `https://deco.cx`).
