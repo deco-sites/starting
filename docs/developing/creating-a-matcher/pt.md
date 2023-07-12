@@ -15,13 +15,14 @@ Os **Matchers padrão** estão prontamente disponíveis no deco e abrangem uma v
 
 No entanto, o poder dos Matchers vai além das opções padrão. O deco oferece a capacidade de criar **Matchers personalizados** para atender às necessidades específicas do seu negócio. Com Matchers personalizados, você pode estender a funcionalidade do deco para integrar fontes de dados externas, como buscar dados de um sistema Salesforce ERP, e usar esses dados para determinar o segmento ao qual um usuário pertence.
 
-## Personalizando Matchers para Atender às Suas Necessidades
+## Matchers Nativos
 
-A criação de um Matcher personalizado envolve **escrever código dentro do código do seu site**. Ao aproveitar a flexibilidade dos Matchers personalizados, você pode acessar APIs externas, bancos de dados ou qualquer outra fonte de dados para obter informações sobre seus usuários e tomar decisões informadas sobre sua segmentação.
-
-Por exemplo, suponha que você queira usar dados de um sistema Salesforce ERP para determinar a qual segmento um usuário pertence. Você pode escrever um [loader](/docs/pt/concepts/loader) que integre com a API do Salesforce, recupere dados relevantes do usuário e avalie as condições com base nesses dados, conectando esse loader ao seu Matcher personalizado. Isso permite que você segmente dinamicamente os usuários com base em seus dados do Salesforce, abrindo novas possibilidades de personalização e entrega de conteúdo direcionado.
-
-Com a capacidade de criar Matchers personalizados, você tem a flexibilidade de adaptar a deco às necessidades específicas do seu site. Você pode aproveitar fontes de dados externas, realizar cálculos complexos e implementar lógica intricada para determinar a segmentação do usuário e fornecer experiências personalizadas.
+| Matcher         | Casos de Uso Comuns                                     | Sticky  |
+|-----------------|--------------------------------------------------------|---------|
+| Random Matcher | Testar A/B na página com 50% do tráfego                 | session |
+| Cron Matcher | Alterar uma página toda sexta-feira entre 10h e 11h     | none    |
+| Date Matcher | Criar a página da Black Friday/ Agendar banners para aparecerem em datas e horários específicos | none |
+| Device Matcher | Exibir uma página diferente com base no dispositivo do usuário | none  |
 
 ## Desenvolvendo um Novo Matcher
 

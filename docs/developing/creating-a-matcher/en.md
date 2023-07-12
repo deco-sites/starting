@@ -15,13 +15,14 @@ _Standard Matchers_ are readily available in deco and cover a range of common co
 
 However, the power of Matchers extends beyond the standard options. deco provides the capability to create **custom Matchers** to meet the specific needs of your business. With custom Matchers, you can extend deco's functionality to integrate external data sources, such as fetching data from a Salesforce ERP system, and then use that data to determine the segment to which a user belongs.
 
-## Customizing Matchers to Meet Your Needs
+## Native Matchers
 
-Creating a custom Matcher involves **writing code within your site's codebase**. By leveraging the flexibility of custom Matchers, you can tap into external APIs, databases, or any other data source to gather information about your users and make informed decisions about their segmentation.
-
-For example, let's say you want to use data from a Salesforce ERP system to determine which segment a user belongs to. You can write a [loader](/docs/en/concepts/loader) that integrates with the Salesforce API, retrieves relevant user data, and evaluates the conditions based on that data and connect this loader to your custom Matcher. This allows you to dynamically segment users based on their Salesforce data, opening up new possibilities for personalization and targeted content delivery.
-
-With the ability to create custom **Matchers**, you have the flexibility to adapt deco to suit your site's specific requirements. You can leverage external data sources, perform complex calculations, and implement intricate logic to determine user segmentation and deliver tailored experiences.
+| Matcher         | Common Use Cases                                                      | Sticky  |
+|-----------------|----------------------------------------------------------------------|---------|
+| Random Matcher  | A/B test your page with 50% of traffic.                              | session |
+| Cron Matcher      | Change a page every Friday between 10 AM and 11 AM.                   | none    |
+| Date Matcher      | Create a Black Friday page / Schedule banners to appear at specific dates and times. | none |
+| Device Matcher    | Show a different page based on the user's device.                     | none    |
 
 ## Developing a new Matcher
 
