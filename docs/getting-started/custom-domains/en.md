@@ -34,23 +34,23 @@ To add a domain:
 
 1. Go to the home page of the site and navigate to the Settings tab.
 
-![Home page](https://github.com/deco-sites/starting/assets/882438/c95da5f4-75a8-42ed-b747-674157c52c80)
+    !["Site home"](https://github.com/deco-sites/starting/assets/882438/c95da5f4-75a8-42ed-b747-674157c52c80)
 
 2. In Settings, under the Domains listing, check that there is a `deco.site` domain and add an existing domain.
 
-![Settings tab](https://github.com/deco-sites/starting/assets/882438/3cf4102a-d9f3-49d6-aaa0-8aeac5e064b6)
+    !["Settings tab"](https://github.com/deco-sites/starting/assets/882438/3cf4102a-d9f3-49d6-aaa0-8aeac5e064b6)
 
 3. Add your domain for the site in the opened modal. The domain should only be the name, without any protocol (http/https) or slashes. Wait for the initial configuration process.
 
-![Settings tab](https://github.com/deco-sites/starting/assets/882438/4b2a6b1e-a711-4733-9779-367ac0141e41)
+    !["Add domain"](https://github.com/deco-sites/starting/assets/882438/4b2a6b1e-a711-4733-9779-367ac0141e41)
 
 4. After adding, the domain is registered with Deco but is not yet operational. You now need to set up the domain. Under `...`, click on setup to view the configuration instructions.
 
-![Settings tab](https://github.com/deco-sites/starting/assets/882438/ac14645d-6f59-45cf-ae6e-c918eec7247f)
+    !["Domain setup"](https://github.com/deco-sites/starting/assets/882438/ac14645d-6f59-45cf-ae6e-c918eec7247f)
 
 5. Add the domain configuration to your domain server. This represents a `CNAME` record from the custom domain to the deco domain. In the example, this would be a record from the domain `example.dirlididi.org` to `test-fashionmgr.deco.site`.
 
-![Domain preparation](https://github.com/deco-sites/starting/assets/882438/98f2505f-db78-42e8-9c5c-5350360f7495)
+    ![CNAME configuration](https://github.com/deco-sites/starting/assets/882438/98f2505f-db78-42e8-9c5c-5350360f7495)
 
 6. Once configured, click on validate configuration for Deco to verify if the record was set up correctly. The certificate configuration step may fail, but if that happens, it will be retried in the background.
 
