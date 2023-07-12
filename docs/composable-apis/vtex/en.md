@@ -4,7 +4,7 @@ description: Learn how to integrate deco with VTEX ecommerce platform.
 
 This article guides you on creating and configuring a website at  [**deco.cx**](http://deco.cx) for a _storefront_ using data from [VTEX](https://vtex.com/ "https://vtex.com/") ecommerce platform.
 
-> TL;DR: To connect to VTEX you need to change `vtex.ts` account configuration at https://deco.cx/admin/sites/{site}/blocks/configVTEX
+> TL;DR: To connect to VTEX you need to change `vtex.ts` block configuration at https://deco.cx/admin/sites/{site}/blocks/configVTEX
 
 > **Video**: To watch the content of this article, click
 [here](https://www.loom.com/share/9fee00a691dd44cfb35d1e2680719e5e)
@@ -76,6 +76,8 @@ Common issues when connecting to VTEX arises from:
 
 1. VTEX Intelligent Search (IS) **is not installed on the account**
 If you are not sure IS is installed in your account, please use the traditional (VTEX Catalog) loaders. Beware some features of [Fashion starter](https://github.com/deco-sites/fashion) like _autocomplete_ depend on Intelligent Search. 
+2. Wrong sales channel setup. 
+Setting up the wrong sales channel may lead to the wrong products being displayed. Find the correct sales channel and default locale on the next section. 
 
 ## Finding accountName and salesChannel
 
@@ -108,4 +110,4 @@ in _deco.cx_, follow these steps:
 
 <img width="1281" alt="image" src="https://user-images.githubusercontent.com/18706156/226075931-6ffe568e-a6c9-4850-ad88-2a02f7a9f5f0.png">
 
-_Example of a parsed vtex_segment._
+
