@@ -30,6 +30,9 @@ In case you already have a website at deco.cx, advance to the next section. Foll
 
 Currently, VTEX does not expose its UI services through a public URL on the internet. For this reason, we need a secondary URL for enabling proxying *checkout* and *my-account* services. Following our example above, create a new subdomain, let's say `proxy.mystore.com` and point it to VTEX following this [guide](https://help.vtex.com/tutorial/configuring-domains-in-account-management--tutorials_2450). After that, the `proxy.mystore.com` will be the `Public store URL` required on the next step
 
+The final architecture of the setup is:
+<img width="1066" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
+
 ## Connecting to VTEX
 To connect to your VTEX account:
 
@@ -43,10 +46,7 @@ To connect to your VTEX account:
 6. Set the `Public store URL`.
 7. Click on `Save` and then `Publish`. 
 
-🎉 Congratulations, you have setup the VTEX integration. To test the integration is working correctly, try creating a [#collection shelf]
-
-The final architecture of the setup is:
-<img width="1066" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
+🎉 Congratulations, you have setup the VTEX integration. To ensure the integration is working properly, keep reading and create a reuseable collection block.
 
 ## Adding your collections to your website.
 After the VTEX setup is complete, try adding a shelf to your webiste. 
