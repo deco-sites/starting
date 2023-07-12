@@ -36,7 +36,7 @@ If you created a site on deco.cx based on our
 needed to integrate with GTM**. However, it is necessary to configure the global
 section **Analytics** by adding the trackingId property with the ID of the
 container
-(https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation)
+(<https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation>)
 previously set up.
 
 For that, follow the steps:
@@ -84,28 +84,7 @@ For that, follow the steps:
 
 ```javascript
 function main() {
-  var flags = document.cookie
-    .split(";")
-    .map(function(x) {
-      return x.trim().split("=");
-    })
-    .map(function (splitted) {
-      var key = splitted[0];
-      var values ​​= splitted.slice(1);
-      return [key, values.join("=")];
-    })
-    .filter(function (splitted) {
-      return splitted[0].startsWith("dcxf");
-    })
-    .map(function (splitted) {
-      return JSON.parse(atob(splitted[1]));
-    });
-
-  return flags.filter(function (f) {
-    return f.isMatch;
-  }).map(function (f) {
-    return f.key;
-  });
+  return window.LIVE.flags.map(function (flag) { if( flag.value) {return flag.name;} else { return null } }).filter(Boolean);
 }
 ```
 
