@@ -21,21 +21,21 @@ By leveraging Matchers and their capabilities, you can create dynamic and person
 
 ## Step by step
 
-1. First, log in to the Deco Admin. Once you're logged in, you can access the _site_ you want to work with.
-2. Go to the `Pages` section, which can be found in the top bar of the Admin interface.
+1. First, log in to the deco Admin. Once you're logged in, you can access the _site_ you want to work with.
+2. Go to the `Pages` section, which can be found in the top bar of the Admin interface.<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/67292436-67a6-4d79-b981-1007f82693fa">
 3. Select the page you want to work with by clicking on it.
-4. Once you're inside the page, locate the three dots (`...`) on the right side of the "Sections" label. (use the same button to remove all variants).
-5. Click on the three dots and select the `Create variants` option. At this point, you may not notice any immediate changes, but two new variants will be added to the page. The last variant represents the current page and always evaluates to true, while the first variant is created without a selected condition. Let's choose a condition for this variant.
+4. Once you're inside the page, locate the three dots (`...`) on the right side of the "Sections" label. (use the same button to remove all variants).<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/f8fa78af-a120-4a10-96bb-e97aeb61628c">
+5. Click on the three dots and select the `Create variants` option. At this point, you may not notice any immediate changes, but two new variants will be added to the page. The last variant represents the current page and always evaluates to true, while the first variant is created without a selected condition. Let's choose a condition for this variant.<img width="1508" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/ed22f647-0616-4485-88c0-fb5152ddcb7f">
 6. Click on the first variant in the list.
 7. Select the `Condition` option and choose `Device Matcher`.
-8. Select the `Mobile` option and ensure that you have the `Desktop` viewport selected in the Admin Preview.
-9. Make any visual changes to the page that you want to differentiate for this variant (e.g., add a carousel to the top of the page). Note that the current preview reflects the changes made for the selected variant.
-10. Return to the previous page and observe that the original page is loaded.
-11. Change the viewport to mobile and observe that the modified page for the variant is now visible.
+8. Select the `Mobile` option and ensure that you have the `Desktop` viewport selected in the Admin Preview.<img width="1511" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/c7315927-9b36-4c0d-9370-a92cdfd2fb81">
+9. Make any visual changes to the page that you want to differentiate for this variant (e.g., add a carousel to the top of the page). Note that the current preview reflects the changes made for the selected variant.<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/75cd33d4-5413-47c3-9b9d-27b5bf7d3a4b">
+10. Return to the previous page and observe that the original page is loaded.<img width="1510" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/1aac9c6b-a4f5-4882-a831-13d8b65e7bf9">
+11. Change the viewport to mobile and observe that the modified page for the variant is now visible.<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/2f23f622-3a34-4f37-953d-bb9431838004">
 
 ## Explanation
 
-When you have multiple variants within a single page, Deco automatically previews the selected variant by default. If no variant is selected, Deco shows you what the user would see if they were assigned to the variant. This allows you to navigate between selected variants and visualize what the user experience would be like for each variant.
+When you have multiple variants within a single page, deco automatically previews the selected variant by default. If no variant is selected, deco shows you what the user would see if they were assigned to the variant. This allows you to navigate between selected variants and visualize what the user experience would be like for each variant.
 
 You can also have a variant inside a variant. You can use different matchers or a combination of them.
 
