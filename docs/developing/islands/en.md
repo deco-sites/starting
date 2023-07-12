@@ -1,51 +1,51 @@
 ---
-description: Client-side interactivity.
+description: Client-side Interactivity.
 since: 1.1.0
 ---
 
-# Summary
+One of the reasons deco is fast is our edge first approach to creating websites. This means that all code you write runs on our servers instead of running on slow, inconsitent user devices (browser). However, sometimes we need to provide extra interactivity to our websites, like adding `onClick`, `useState` or `useEffect` event handlers. 
+In this guide you will learn how to create components that run on the browser. Make sure to read our performance tips before creating any JavaScript on the browser to avoid common pitfails with client-side JavaScript
 
-1. Introduction to Islands
-   - Islands limitations
-   - Signals
-2. Creating your first island
-   - Adding a new component (`RandomDogFact.tsx`)
-   - Considerations and tips
-3. Troubleshooting
+# Making components interactive
+Suppose you have the following component. A counter that allows the user to add/subtract to the displayed value. 
+// TODO: add component's image
 
-# Introduction to Islands
-Islands are browser-interactive components within the Deno Fresh architecture.
-
-By default, all Fresh components are server-rendered, and their HTML is sent to the browser without attached JS. However, there are times when some degree of interaction in the browser is necessary. For example, a user may need to interact with a button to display a counter:
-
+This component can be implemented with the following code:
 ```tsx
-import { useSignal } from "@preact/signals";
+import { useState } from 'preact/hooks'
 
-export default function MyIsland() {
-  const count = useSignal(0);
+export default function Counter () {
+  const [count, setCount] = useState(0)
 
   return (
     <div>
-      Counter is at {count}.{" "}
-      <button onClick={() => (count.value += 1)}>+</button>
+      <button onClick={() => setCount(count-1)}>
+        -
+      </button>
+      <span>{count}</span>
+      <button onClick={() => setCount(count+1)}>
+        +
+      </button>
     </div>
-  );
+  )
 }
 ```
-_Source: [Fresh documentation - EN](https://fresh.deno.dev/docs/concepts/islands)_
 
-By default, Fresh will only generate the HTML for this code, excluding the onClick code for the button.
+Creating a file called `Counter.tsx` and placing it into the `components` folder gives us the following result on the screen:
+// TODO: add component's image
 
-A component becomes an island when it is placed within the top-level `islands` folder or when it is imported (directly or indirectly) by a component within that directory. In islands, the HTML is still generated on the server but sent to the browser where it is "hydrated" with the JavaScript that makes it interactive.
+However, when we try clicking on the button, nothing happens. This is because deco does not ship any JavaScript to the browser, thus making hooks like `useState` and `useEffect` not work. To opt into shipping JavaScript to the browser, you must move the `Counter.tsx` file into a special folder called `islands` in the project's root. Moving the component's file into the `islands` folder, we have the component with a working interaction
+// TODO: add component's image gif
 
-Therefore, if you need to create user interaction that...
+This component is now called an `island`!
+
+Althought adding islands to your project solves seems tempting, keep in mind that islands slow down websites and harm [TBT metric](https://web.dev/tbt/), so before moving any component to the `island` folder, make sure that your final interactivity:
 
 - Isn't achieved through page navigation with links or form submissions...
 - Isn't an interaction built purely with CSS...
 - Requires manipulation of elements or the current page's state
 (e.g., using onClick, onChange, useEffect, another hook, or an event listener)
 
-Then, you need to make use of islands.
 
 ## Islands usage limitations
 
