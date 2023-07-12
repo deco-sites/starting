@@ -85,6 +85,12 @@ const tableOfContents: TableOfContents = [{
     slug: "concepts/page",
   }, {
     title: {
+      pt: "Matcher",
+      en: "Matcher",
+    },
+    slug: "concepts/matcher",
+  }, {
+    title: {
       pt: "Segment",
       en: "Segment",
     },
@@ -131,12 +137,6 @@ const tableOfContents: TableOfContents = [{
       en: "Client-side Invocation",
     },
     slug: "developing/fetching-data-client",
-  }, {
-    title: {
-      pt: "Criando um Matcher Block",
-      en: "Creating a Matcher Block",
-    },
-    slug: "developing/creating-a-matcher",
   }, {
     title: {
       pt: "Importando Blocks de um site",

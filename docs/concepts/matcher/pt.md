@@ -1,5 +1,5 @@
 ---
-description: Learn about Matchers and their role in empowering Variants in deco
+description: Um Matcher na deco é uma função que retorna um booleano
 since: 1.18.0
 ---
 

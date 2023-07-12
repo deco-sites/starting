@@ -1,5 +1,5 @@
 ---
-description: Learn about Matchers and their role in empowering Variants in deco
+description: A Matcher in deco.cx is a function that returns a boolean.
 since: 1.18.0
 ---
 
