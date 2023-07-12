@@ -4,7 +4,7 @@ description: Learn how to integrate deco with VTEX ecommerce platform.
 
 This article guides you on creating and configuring a website at  [**deco.cx**](http://deco.cx) for a _storefront_ using data from [VTEX](https://vtex.com/ "https://vtex.com/") ecommerce platform.
 
-> TL;DR: 
+> TL;DR: To connect to VTEX you need to change `vtex.ts` account configuration at https://deco.cx/admin/sites/{site}/blocks/configVTEX
 
 > **Video**: To watch the content of this article, click
 [here](https://www.loom.com/share/9fee00a691dd44cfb35d1e2680719e5e)
@@ -37,7 +37,7 @@ To connect to your VTEX account:
 2. On the topbar, select *blocks*
 3. Choose the *Accounts* tab
 4. Select the **vtex.ts** block and click on the configVTEX block. You should see something like: 
-TODO: add image
+<img width="480" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/4a0296d0-671c-4d46-9f46-1ee9aa3f1782">
 
 5. Change the account configuration from `bravtexfashionstore` to your VTEX [account name](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC)
 6. Set the `Public store URL`.
@@ -46,21 +46,30 @@ TODO: add image
 🎉 Congratulations, you have setup the VTEX integration. To test the integration is working correctly, try creating a [#collection shelf]
 
 The final architecture of the setup is:
-
-TODO: add architecture image
+<img width="1066" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
 
 ## Adding your collections to your website.
 After the VTEX setup is complete, try adding a shelf to your webiste. 
 
 1. Access your site's administrative panel at [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
 2. On the topbar, select *blocks*
-3. Select the block `/Products/ProductShelf.tsx` and click on the `+` button 
-4. On the `products` field, select any VTEX integration (legacy or Intelligent Search).
-5. Fill the `Collection ID` with a valid collection, e.g. 139
-6. Fill the `count` attribute with the number of products to display, let's say 6.
-7. Now, on the top right corner, click on `Create` and name it, e.g. `Collection 139`
-8. On the top right corner click on `Publish`. 
-9. You can now drag&drop the block `Collection 139` in any page.
+3. Select the block `/Products/ProductShelf.tsx` and click on the `+` button
+<img width="480" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">
+
+5. On the `products` field, select any VTEX integration (legacy or Intelligent Search).
+<img width="434" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/9e084af6-db18-472e-92ac-7255bc4d9705">
+
+6. Fill the `Collection ID` with a valid collection, e.g. 139
+7. Fill the `count` attribute with the number of products to display, let's say 6.
+<img width="349" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/df0794a8-fbcc-4c74-915e-ba13e179e9a7">
+
+
+8. Now, on the top right corner, click on `Create` and name it, e.g. `Collection 139`
+<img width="577" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/97720584-3206-4457-8972-a719323962c4">
+
+9. On the top right corner click on `Publish`. 
+10. You can now drag&drop the block `Collection 139` in any page.
+<img width="1504" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/bfc74614-b44b-45a9-b1e6-2465e0149ac4">
 
 ### Troubleshooting
 Common issues when connecting to VTEX arises from:
