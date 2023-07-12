@@ -13,12 +13,12 @@ Ao utilizar proxies e redirecionamentos, você pode otimizar a entrega de conte�
 
 O processo geral envolve a alteração do mapa de rotas do site e a associação de um proxy ou redirecionamento, dependendo do caso de uso específico. Ao final do processo, saberemos como criar uma rota de exemplo `/example-proxy` que faz proxy de solicitações para o deco.cx e uma rota `/example-redirect` que redireciona para a página inicial do google.com. Observe a diferença: o primeiro manterá você no mesmo domínio, enquanto o último o levará para fora do domínio do seu site.
 
-# Passo a passo
+## Passo a passo
 
-Adicionando um Redirecionamento:
+### Adicionando um Redirecionamento
 
 1. Primeiro, faça login no Admin da deco. Uma vez logado, você pode acessar o _site_ com o qual deseja trabalhar.
-2. Abra o bloco `./routes/[...catchall].tsx`, que é responsável pelo **roteamento** do seu site. Você pode acessá-lo usando o seguinte link (substitua `$sitename` pelo nome do seu site): https://deco.cx/admin/sites/$sitename/blocks/.%2Froutes%2F%5B...catchall%5D.tsx
+2. Abra o bloco `./routes/[...catchall].tsx`, que é responsável pelo **roteamento** do seu site. Você pode acessá-lo usando o seguinte link (substitua `$sitename` pelo nome do seu site): <https://deco.cx/admin/sites/$sitename/blocks/.%2Froutes%2F%5B...catchall%5D.tsx>
 3. Clique em `Adicionar Audiência` e um menu de seleção será exibido. <img width="1511" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/18545536-5971-47d5-a6f3-22f9a740df2b">
 4. Abaixo de `Criar novo`, selecione a opção `Audience Everyone`.
 5. Um novo menu de seleção chamado `Routes` será exibido. Em `Criar novo`, escolha a opção _deco-cx/deco/flags/audience.ts@Route[]_. Em seguida, clique no botão `+` para adicionar uma nova rota. <img width="1508" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/07e308df-6adb-4a2d-830c-eed8bca3fa06">
@@ -32,13 +32,14 @@ Agora você pode acessar `https://seu-site.deco.site/example-redirect` e verific
 
 > Perceba que, se você precisa adicionar um novo redirect, você precisa repetir os passos de 5. em diante, pois a audiência já terá sido criada.
 
-Adicionando um Proxy:
+### Adicionando um Proxy
 
 Proxies são utilizados quando você deseja _manter o usuário_ dentro do _mesmo site, mas fornecendo um conteúdo diferente_. Os **proxies** permitem o compartilhamento de recursos sob o mesmo domínio, proporcionando uma experiência de usuário unificada. Isso pode ser especialmente útil quando você precisa servir conteúdo de diferentes fontes ou plataformas, mantendo uma interface de usuário consistente. Os proxies são comumente usados durante processos de migração de plataforma, permitindo que você adote gradualmente o Deco e decida se uma página específica deve ser proxied ou servida diretamente pelo Deco.
 
 Para criar um proxy em vez de um redirecionamento, você pode seguir os mesmos passos mencionados acima, com algumas alterações:
 
 Repita os passos de 1 a 5 da seção "Adicionando um Redirecionamento".
+
 1. Na opção "Handler", selecione "Proxy Handler" (ou `$live/handlers/proxy.ts`).
 2. No campo "To", insira a URL exata que deve ser usada como proxy, por exemplo, `https://deco.cx`.
 3. Salve e publique as alterações.
