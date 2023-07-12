@@ -5,7 +5,7 @@ since: 1.18.0
 
 # Matchers: Empowering Variants
 
-**Matchers** are essential building blocks in deco that play a pivotal role in empowering **Variants**. They allow you to evaluate specific conditions and segment your audience based on various criteria. By leveraging Matchers, you can create personalized and dynamic experiences for your users. When you create a new **Matcher Block** you may call it a [Segment](/docs/en/concepts/segment).
+**Matchers** are essential building blocks in deco that play a pivotal role in empowering [Variants](/docs/en/getting-started/variants). They allow you to evaluate specific conditions and segment your audience based on various criteria. By leveraging Matchers, you can create personalized and dynamic experiences for your users. When you create a new **Matcher Block** you may call it a [Segment](/docs/en/concepts/segment).
 
 ## Understanding Matchers
 

@@ -5,7 +5,7 @@ since: 1.18.0
 
 # Matchers: Potencializando as Variants
 
-Os **Matchers** são blocos essenciais no deco que desempenham um papel fundamental ao potencializar as **Variants**. Eles permitem que você avalie condições específicas e segmente seu público com base em vários critérios. Ao aproveitar os Matchers, você pode criar experiências personalizadas e dinâmicas para seus usuários. Ao criar um novo **Matcher Block**, você pode chamá-lo de [Segmento](/docs/pt/concepts/segment).
+Os **Matchers** são blocos essenciais no deco que desempenham um papel fundamental ao potencializar as [Variants](/docs/pt/getting-started/variants). Eles permitem que você avalie condições específicas e segmente seu público com base em vários critérios. Ao aproveitar os Matchers, você pode criar experiências personalizadas e dinâmicas para seus usuários. Ao criar um novo **Matcher Block**, você pode chamá-lo de [Segmento](/docs/pt/concepts/segment).
 
 ## Compreendendo os Matchers
 
