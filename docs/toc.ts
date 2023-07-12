@@ -133,6 +133,12 @@ const tableOfContents: TableOfContents = [{
     slug: "developing/fetching-data-client",
   }, {
     title: {
+      pt: "Criando um Matcher Block",
+      en: "Creating a Matcher Block",
+    },
+    slug: "developing/creating-a-matcher",
+  }, {
+    title: {
       pt: "Importando Blocks de um site",
       en: "Import Blocks from a site",
     },
