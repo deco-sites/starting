@@ -31,7 +31,7 @@ const tableOfContents: TableOfContents = [{
     slug: "getting-started/variants",
   }, {
     title: {
-      pt: "Adicionando domínios customizados",
+      pt: "Adicionando domínios próprios",
       en: "Adding custom domains",
     },
     slug: "getting-started/custom-domains",

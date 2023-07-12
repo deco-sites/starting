@@ -11,6 +11,7 @@ since: 1.1.0
 2. Creating your first island
    - Adding a new component (`RandomDogFact.tsx`)
    - Considerations and tips
+3. Troubleshooting
 
 # Introduction to Islands
 Islands are browser-interactive components within the Deno Fresh architecture.
@@ -139,6 +140,35 @@ Making a component an island will at least double its size in bytes. The server 
 
 Also, refer to:
 
-
 - [Introduction to the Islands architecture - EN](https://deno.com/blog/intro-to-islands)
 - TODO RECIPES
+
+# Troubleshooting
+
+## Island has no interaction
+
+The file must be in the `islands` directory. The file cannot be in any subdirectory within `islands`. Check if there are any errors in the `console` that prevented the hydration process.
+
+## Island does not run and/or displays errors in the deno console.
+
+All island initialization JavaScript code runs first on the server and then on the client. It's common to include code that only makes sense on the server (e.g., using `localStorage`, manipulating the DOM, making a request, etc.). You can use `IS_BROWSER` to determine that a code should only be executed on the client.
+
+```tsx
+import { useSignal } from "@preact/signals";
+import { IS_BROWSER } from "$fresh/runtime.ts";
+
+export default function MyIsland() {
+  let initalValue = 0;
+  if (IS_BROWSER) {
+    initalValue = localStorage.getItem("count");
+  }
+  const count = useSignal(initalValue);
+
+  return (
+    <div>
+      Counter is at {count}.{" "}
+      <button onClick={() => (count.value += 1)}>+</button>
+    </div>
+  );
+}
+```

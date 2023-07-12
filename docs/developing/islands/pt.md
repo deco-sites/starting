@@ -11,6 +11,7 @@ since: 1.1.0
 2. Criando sua primeira ilha
    - Adicionando um novo componente chamado `RandomDogFact.tsx`
    - Cuidados e dicas ao usar ilhas
+3. Erros comuns
 
 # Introdução a Ilhas
 
@@ -141,3 +142,33 @@ Consulte também:
 
 - [Introdução a arquitetura de ilhas - EN](https://deno.com/blog/intro-to-islands)
 - TODO RECIPES
+
+# Erros comuns
+
+## A ilha continua sem interação
+
+O arquivo deve estar no diretório `islands`. O arquivo não pode estar em algum subdiretório dentro de `islands`. Verifique se no `console` há algum erro que impediu o processo de hidratação.
+
+## A ilha não executa e/ou apresentas erros no console do deno.
+
+Todo código javascript de inicialização da ilha é executado primeiro no servidor e depois no cliente. É comum colocar código que só faz sentido no servidor (ex.: usar o `localStorage`, manipular a DOM, fazer uma chamada, etc.). É possível fazer uso do `IS_BROWSER` para determinar que um código seja executado apenas no cliente.
+
+```tsx
+import { useSignal } from "@preact/signals";
+import { IS_BROWSER } from "$fresh/runtime.ts";
+
+export default function MyIsland() {
+  let initalValue = 0;
+  if (IS_BROWSER) {
+    initalValue = localStorage.getItem("count");
+  }
+  const count = useSignal(initalValue);
+
+  return (
+    <div>
+      Counter is at {count}.{" "}
+      <button onClick={() => (count.value += 1)}>+</button>
+    </div>
+  );
+}
+```
