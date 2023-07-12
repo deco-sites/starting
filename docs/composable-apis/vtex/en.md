@@ -1,149 +1,72 @@
 ---
-description: Learn how to configure deco connection with any VTEX account.
+description: Learn how to integrate deco with VTEX ecommerce platform.
 ---
 
-## Video version
+This article guides you on creating and configuring a website at  [**deco.cx**](http://deco.cx) for a _storefront_ using data from [VTEX](https://vtex.com/ "https://vtex.com/") ecommerce platform.
 
-To watch the content of this article, click
+> TL;DR: 
+
+> **Video**: To watch the content of this article, click
 [here](https://www.loom.com/share/9fee00a691dd44cfb35d1e2680719e5e)
 
-This guide shows you how to create and configure a website on
-[**deco.cx**](http://deco.cx) for a _storefront_ that reads platform data from
-ecommerce [VTEX](https://vtex.com/ "https://vtex.com/").
 
 ## Prerequisites
 
-- Access to
+- A deco webiste. Create one for free at
   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
-- An `accountName` VTEX
-  [(help)](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC "https://help.vtex.com/tutorial/what-is-an-account -name--i0mIGLcg3QyEy8OCicEoC").
+- A VTEX account [(help)](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC).
 
-[**deco.cx**](http://deco.cx) is made especially for creating high performance
-commerce experiences, and in this guide we will teach you how to give the first
-steps to set up a _deco_ site that reads data from a VTEX account.
 
 ## Creating the website
 
-To proceed, follow the steps in the guide [[Documentation deco/Guides: Get
-started use Live]] and **select the Deco Commerce template in site creation.**
+In case you already have a website at deco.cx, advance to the next section. Follow the steps in this [guide](/docs/en/getting-started/creating-a-site) otherwise. 
+
+> Make sure your site was created based on the **Deco Commerce** template below
 
 <img width="586" alt="Creating a website in deco.cx" src="https://user-images.githubusercontent.com/18706156/224514991-0e882420-00a8-4272-a2d0-71f73ac77d23.png">
 
-Complete all the steps in the guide, finally **cloning the site repository newly
-created locally.**
+## Setting up the `Public store URL`
+*Deco commerce* template currently proxies VTEX's own *checkout* and *my-account* services. This means that your final user will NOT be redirected to any other domain when checking out. For instance, let's say, before any migration to deco, your store is hosted on `www.mystore.com` and the checkout url is `https://www.mystore.com/checkout`. After migrating to deco, your store will continue being served on `www.mystore.com` and your checkout url will still be `https://www.mystore.com/checkout`. 
 
-After that, you should have a _deco_ storefront created and you should be
-running the site locally on your machine.
+Currently, VTEX does not expose its UI services through a public URL on the internet. For this reason, we need a secondary URL for enabling proxying *checkout* and *my-account* services. Following our example above, create a new subdomain, let's say `proxy.mystore.com` and point it to VTEX following this [guide](https://help.vtex.com/tutorial/configuring-domains-in-account-management--tutorials_2450). After that, the `proxy.mystore.com` will be the `Public store URL` required on the next step
 
-## Setting the account name
+## Connecting to VTEX
+To connect to your VTEX account:
 
-The **Deco Commerce** template already has an automatic connection with VTEX,
-however a test account (`bravtexfashionstore`) is used which must be replaced
-with the account you intend to develop the store with. that will be useful for
-setting up shelves with actual products from the store being developed and also
-ensure that the product page and Minicart work correctly.
+1. Access your site's administrative panel at [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+2. On the topbar, select *blocks*
+3. Choose the *Accounts* tab
+4. Select the **vtex.ts** block and click on the configVTEX block. You should see something like: 
+TODO: add image
 
-To make this change, follow these steps:
+5. Change the account configuration from `bravtexfashionstore` to your VTEX [account name](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC)
+6. Set the `Public store URL`.
+7. Click on `Save` and then `Publish`. 
 
-1. Access your site's administrative panel at
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+🎉 Congratulations, you have setup the VTEX integration. To test the integration is working correctly, try creating a [#collection shelf]
 
-2. Go to **Library.**
+The final architecture of the setup is:
 
-3. In the **Global Sections** group, select the item **vtexconfig.global.tsx.**
+TODO: add architecture image
 
-4. In Account, change `bravtexfashionstore` by the desired account name.
+## Adding your collections to your website.
+After the VTEX setup is complete, try adding a shelf to your webiste. 
 
-5. Click on **Save Draft**
+1. Access your site's administrative panel at [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+2. On the topbar, select *blocks*
+3. Select the block `/Products/ProductShelf.tsx` and click on the `+` button 
+4. On the `products` field, select any VTEX integration (legacy or Intelligent Search).
+5. Fill the `Collection ID` with a valid collection, e.g. 139
+6. Fill the `count` attribute with the number of products to display, let's say 6.
+7. Now, on the top right corner, click on `Create` and name it, e.g. `Collection 139`
+8. On the top right corner click on `Publish`. 
+9. You can now drag&drop the block `Collection 139` in any page.
 
-<img width="486" alt="Configuração da VTEX dentro do admin da deco.cx" src="https://user-images.githubusercontent.com/18706156/224514994-d5edd89b-705c-42e6-952e-3db3f9d5de2e.png">
+### Troubleshooting
+Common issues when connecting to VTEX arises from:
 
-If necessary, also change settings such as the sales channel (_sales channel)_
-and the language of the store.
-
-To test the changes, go back to the list of Sections in the Library and select
-the **ProductShelf.** This Section can be configured to search for products in
-VTEX with a given configuration. Click the pen icon (✏️) and edit the field
-**Query** for some keyword related to the account catalog you configured (eg if
-it's a furniture store, type _"table")._
-
-<img width="1440" alt="Editor da deco.cx com uma página de ProductShelf" src="https://user-images.githubusercontent.com/18706156/224514990-0e41dba8-96b8-475b-9744-48706d2de623.png">
-
-> If you have not yet configured an integration with VTEX, click on the arrows
-> 🔁 or **"Add Integration"** and select the option **vtexProductList** and
-> configure the integration by adding a value to the fields **Query** and
-> **Count**
-
-When clicking on a product, it is also expected that its detail page (PDP)
-render correctly according to the selected product. Now you can use the Sections
-and Functions already included in your project to display configured account
-products.
-
-## Didn't work?
-
-If you made changes to the VTEX global configuration, changed `ProductShelf`'s
-query to a term relevant to the configured account but still no product was
-returned it is possible that the VTEX Intelligent Search (IS) **is not installed
-on the account**. If you have VTEX Admin access, learn how to
-[install VTEX IS](/docs/en/tutorials/installing-vtex-is).
-
-However, there is no problem: **it is possible to connect to VTEX using the
-traditional search APIs**. Possibly some features of
-[Fashion starter](https://github.com/deco-sites/fashion) like _autocomplete_
-search will not work, but the main features of the store will.
-
-To use these APIs, just **change the Loaders** used for the `vtexLegacy...`
-version. Follow the steps below to change this setting for the entire site:
-
-1. In _deco.cx_ Admin, access the **Pages** section.
-2. Select the **Home** Page that is **Published** (that is, it is the home used
-   in production.)
-3. Select Section `ProductShelf`.
-4. In the `Products` prop, click on the arrow icon to change the Loader and
-   select the `vtexLegacyProductList.ts`.
-5. Click on the edit icon, next to Loader, and fill in the required `props`
-   `query` and `count`.
-6. Click Save.
-7. Now, click on **Publish**.
-
-<img width="1310" alt="image" src="https://user-images.githubusercontent.com/18706156/226076534-1e768d7d-830c-4f35-89ef-bc43445539f7.png">
-
-_Selecting Loader `vtexProductList.ts` for Shelf_
-
-Follow the same steps for the other published Pages of the Site to ensure that
-the navigation flow will work correctly using legacy VTEX APIs. Here are the
-Pages and Sections respectively that need to be changed.
-
-- **Categories** `(/*)` and **Search Page** `(/s)`: `SearchControls` and
-  `ProductGallery`.
-- **Product Page** `(/:slug/p)`: `ProductDetails` and `ProductShelf`.
-
-> Don't forget to Save **and Publish** the changes.
-
-> For Pages with two Sections that need Loaders, it is possible to select
-> **Loaders already configured** so as not to burden the loading of the Page.
-
-## Configuring checkout
-
-Currently, we use the
-[same strategy VTEX FastStore uses](https://www.faststore.dev/how-to-guides/platform-integration/vtex/integrating-vtex-checkout "https://www.faststore.dev/how- to-guides/platform-integration/vtex/integrating-vtex-checkout")
-to integrate with VTEX Checkout, so **a domain is required secondary that is
-linked to the VTEX account.** By clicking the **Finish button Purchase** on the
-Minicart on the _deco_ site, the user is redirected to
-`https://{dominioConfigurado}/checkout?orderFormId=(…)` and manages to finish
-the flow normally.
-
-It is likely that the account you set up above already has a public domain that
-is being used, and it is possible to use it in the construction stage of the
-store. With that domain in hand, follow these steps:
-
-1. Open the `Cart.tsx` file and replace the string
-   [`https://bravtexfashionstore.vtexcommercestable.com.br`](https://bravtexfashionstore.vtexcommercestable.com.br)
-   by the chosen domain of the store.
-
-2. Open the `routes/api/[...catchall].tsx` file and replace the string
-   [`bravtexfashionstore`](https://bravtexfashionstore.vtexcommercestable.com.br)
-   by the **account name** used in the previous session
+1. VTEX Intelligent Search (IS) **is not installed on the account**
+If you are not sure IS is installed in your account, please use the traditional (VTEX Catalog) loaders. Beware some features of [Fashion starter](https://github.com/deco-sites/fashion) like _autocomplete_ depend on Intelligent Search. 
 
 ## Finding accountName and salesChannel
 
