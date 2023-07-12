@@ -15,7 +15,7 @@ Esse comportamento permite que você reutilize o **mesmo resultado do matcher em
 
 Além disso, alguns matchers têm um comportamento `sticky`, o que significa que o resultado do matcher pode ser armazenado na sessão do usuário e permanecer consistente até o término da sessão. Isso é especialmente útil para testes A/B, onde os usuários são atribuídos a uma variante específica e devem ter uma experiência consistente durante a sessão.
 
-Aproveitando os Matchers e suas capacidades, você pode criar experiências dinâmicas e personalizadas para seus usuários, ao mesmo tempo em que otimiza o desempenho, reduzindo avaliações redundantes e mantendo a consistência entre as variantes. Para saber mais sobre como criar novos matchers, consulte nossa [documentação de Matchers](/docs/pt/developing/creating-a-matcher).
+Aproveitando os Matchers e suas capacidades, você pode criar experiências dinâmicas e personalizadas para seus usuários, ao mesmo tempo em que otimiza o desempenho, reduzindo avaliações redundantes e mantendo a consistência entre as variantes. Para saber mais sobre como criar novos matchers, consulte nossa [documentação de Matchers](/docs/pt/concepts/matcher).
 
 > Atualmente, não oferecemos suporte a outras variantes além das Seções de Página. Essa funcionalidade será adicionada no futuro.
 

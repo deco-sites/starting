@@ -15,7 +15,7 @@ This behavior allows you to reuse the **same matcher result across multiple vari
 
 Furthermore, some Matchers have a `sticky` behavior, meaning that the result of the matcher can be stored in the user's session and remain consistent until the session ends. This is particularly useful for AB tests, where users are assigned to a specific variant and should have a consistent experience throughout their session.
 
-By leveraging Matchers and their capabilities, you can create dynamic and personalized experiences for your users while optimizing performance by reducing redundant evaluations and maintaining consistency across variants. To read more about how to create new matchers check our [Matchers Documentation](/docs/en/developing/creating-a-matcher).
+By leveraging Matchers and their capabilities, you can create dynamic and personalized experiences for your users while optimizing performance by reducing redundant evaluations and maintaining consistency across variants. To read more about how to create new matchers check our [Matchers Documentation](/docs/en/concepts/matcher).
 
 > Currently we do not supported other variants than Page Sections, this feature will be added in the future.
 
