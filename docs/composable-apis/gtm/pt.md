@@ -90,28 +90,7 @@ GTM. Para isso, siga os passos:
 
 ```javascript
 function main() {
-  var flags = document.cookie
-    .split(";")
-    .map(function (x) {
-      return x.trim().split("=");
-    })
-    .map(function (splitted) {
-      var key = splitted[0];
-      var values = splitted.slice(1);
-      return [key, values.join("=")];
-    })
-    .filter(function (splitted) {
-      return splitted[0].startsWith("dcxf");
-    })
-    .map(function (splitted) {
-      return JSON.parse(atob(splitted[1]));
-    });
-
-  return flags.filter(function (f) {
-    return f.isMatch;
-  }).map(function (f) {
-    return f.key;
-  });
+  return window.LIVE.flags.map(function (flag) { if( flag.value) {return flag.name;} else { return null } }).filter(Boolean);
 }
 ```
 
