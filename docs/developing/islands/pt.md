@@ -6,6 +6,13 @@ since: 1.1.0
 Uma das razões pelas quais o Deco é rápido é a nossa abordagem centrada no servidor para criar sites. Isso significa que todo o código que você escreve é executado em nossos servidores, em vez de ser executado em dispositivos de usuário lentos e inconsistentes (navegador). No entanto, às vezes precisamos fornecer interatividade extra aos nossos sites, como adicionar manipuladores de eventos `onClick`, `useState` ou `useEffect`. 
 Neste guia, você aprenderá como criar componentes que são executados no navegador. Certifique-se de ler nossas dicas de desempenho antes de criar qualquer JavaScript no navegador, para evitar problemas comuns com o JavaScript do lado do cliente.
 
+# Sumário
+
+1. Tornando os componentes interativos
+2. Limitações de uso das islands
+3. Compartilhando estado entre as islands
+4. Considerações e dicas
+
 # Tornando os componentes interativos
 Suponha que você tenha o seguinte componente. Um contador que permite ao usuário adicionar/subtrair o valor exibido. 
 <img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
@@ -52,7 +59,7 @@ Embora adicionar islands ao seu projeto pareça tentador, tenha em mente que as 
 - Requer manipulação de elementos ou estado da página atual
 (por exemplo, usando onClick, onChange, useEffect, outro hook ou um ouvinte de eventos)
 
-## Limitações de uso das islands
+# Limitações de uso das islands
 
 As islands são componentes do Preact. Isso significa que elas aceitam `props`. No entanto, esses valores devem ser um dos seguintes:
 
@@ -66,7 +73,7 @@ As islands são componentes do Preact. Isso significa que elas aceitam `props`. 
 
 Objetos complexos como `Date`, funções e classes personalizadas não são aceitos como props de islands.
 
-## Compartilhando estado entre as islands
+# Compartilhando estado entre as islands
 
 No desenvolvimento normal do Preact, o compartilhamento de estado entre componentes geralmente é feito por meio da API [Context](https://preactjs.com/guide/v10/context/). Isso funciona bem para um aplicativo de lado do cliente completo. No entanto, como estamos usando a arquitetura de islands, compartilhar estado entre as islands requer uma nova abordagem.
 
@@ -98,7 +105,7 @@ Para definir efeitos colaterais em mudanças de signal, use as operações `effe
 
 > Observe que o compartilhamento de estado por meio da API `Context` NÃO funcionará, pois o contexto estará fora das islands e, portanto, só estará disponível no servidor.
 
-## Considerações e dicas
+# Considerações e dicas
 
 Ao transformar um componente em uma island, pelo menos o tamanho dele em bytes será duplicado. O servidor renderiza o HTML para esse elemento e o envia para o navegador, mas também envia basicamente o mesmo HTML mais o JS a ser injetado no lado do cliente. Portanto, tente criar apenas as islands necessárias, pois elas tornam o processo de renderização mais intensivo em
 

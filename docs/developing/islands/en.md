@@ -6,6 +6,13 @@ since: 1.1.0
 One of the reasons deco is fast is our edge first approach to creating websites. This means that all code you write runs on our servers instead of running on slow, inconsitent user devices (browser). However, sometimes we need to provide extra interactivity to our websites, like adding `onClick`, `useState` or `useEffect` event handlers. 
 In this guide you will learn how to create components that run on the browser. Make sure to read our performance tips before creating any JavaScript on the browser to avoid common pitfails with client-side JavaScript
 
+# Summary
+
+1. Making components interactive
+2. Islands usage limitations
+3. Sharing state among islands.
+4. Considerations and tips
+
 # Making components interactive
 Suppose you have the following component. A counter that allows the user to add/subtract to the displayed value. 
 <img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
@@ -53,7 +60,7 @@ Althought adding islands to your project seems tempting, keep in mind that islan
 (e.g., using onClick, onChange, useEffect, another hook, or an event listener)
 
 
-## Islands usage limitations
+# Islands usage limitations
 
 Islands are Preact components. This means they accept `props`. However, these values must be one of:
 
@@ -67,7 +74,7 @@ Islands are Preact components. This means they accept `props`. However, these va
 
 Complex objects such as Date, functions, and custom classes are not accepted as islands props.
 
-## Sharing state among islands.
+# Sharing state among islands.
 
 In normal Preact development, sharing state between components is usually done via the [Context](https://preactjs.com/guide/v10/context/) API. This works fine for a full client-side application. However, since we are using islands architecture, sharing state among islands require a new approach.
 
@@ -99,7 +106,7 @@ To define side-effects over signal changes, use the `effect`, `batch`, `computed
 
 > Note that sharing state via the `Context` API will NOT work, since the context will be outside the islands, and thus, only available on the server. 
 
-## Considerations and tips
+# Considerations and tips
 
 Making a component an island will at least double its size in bytes. The server renders the HTML for this element and sends it to the browser, but it also sends essentially the same HTML plus the JS to be injected on the client side. Therefore, try to create only the necessary islands, as they make the rendering process more resource-intensive.
 
