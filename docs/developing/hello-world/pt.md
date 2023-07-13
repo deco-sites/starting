@@ -102,8 +102,6 @@ export default function LatestPosts({ title, photo }: Props) {
 
 Ao salvar e carregar o admin no ambiente local (com o `deno` em execução), é possível ver que o admin prepara componentes próprios de formulário para a colocação de imagens, data, bem como sinaliza o que é cada campo a partir do `title` indicado em código.
 
-![Admin com o `LatestPosts.tsx` atualizado](https://github.com/deco-sites/starting/assets/882438/47cca914-fa38-449b-8063-317ce58dcac8)
-
 # Tematizando a Section com DaisyUI
 
 No projeto base deco, é possível acessar uma Section especial, a `Theme.tsx`. Esta section define tokens e nomes especiais de classes que podem ser utilizadas por outras Sections seguindo a estrutura da ferramenta DaisyUI. Dentro do `Theme.tsx` é possível observar alguns tokens como o de cores principais:
