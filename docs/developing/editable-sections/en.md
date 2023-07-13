@@ -6,17 +6,17 @@ since: 1.0.0
 # Summary
 1. Introduction to Sections (dev)
 2. First modification and environment selection
-3. Summary: Modifying and testing a \`section\`
+3. Step-by-step: Modifying and testing a `section`
 
 # Introduction to Sections (dev)
 
-A Section represents a configurable UI element for a deco Site. Now, it is necessary to understand what this represents in terms of development.
+A Section represents a configurable UI element for a deco Site. Now, it is necessary to understand what this represents for a developer.
 
-A Section is a `tsx` code inside the `sections` folder and it:
+A Section is a `tsx` code inside the `sections` folder. Also, a Section:
 
 - is a [Preact](https://preactjs.com/) component
 - has serializable properties
-- exports the type of its properties
+- exports its properties type
 
 A Preact component is a function exported by default (`export default`) that receives properties, returns JSX, and is invoked on each rendering of the defined element. As an example, open the `sections/Intro.tsx` file from the ecommerce template in VSCode. This file is also accessible [on the deco GitHub](https://github.com/deco-sites/start/blob/main/sections/Intro.tsx).
 
@@ -164,7 +164,7 @@ By pointing to `localhost`, the admin now queries the locally running version to
 
 To allow others to see the modification, it is necessary to commit and push the changes. The `main` branch contains the code that is displayed on the default domain of the Site, but it is possible to view other branches of the repository by selecting the desired branch in the environment selector.
 
-# Summary: Modifying and testing a `section`
+# Step-by-step: Modifying and testing a `section`
 
 In summary, to test modifications on the Section `FAQ.tsx`:
 
@@ -180,6 +180,6 @@ In summary, to test modifications on the Section `FAQ.tsx`:
 
 5. Look for `Intro.tsx` among the blocks.
 
-6. **Ready!** Now you can configure `props` for that Section and see how it is being rendered. The preview will automatically update if you modify the code of the Section locally.
+6. **Ready to go!** Now you can configure `props` for that Section and see how it is being rendered. The preview will automatically update if you modify the code of the Section locally.
 
 Remember to save your file. If there are any typing or transformation errors, they will be signaled in the command line or in VSCode. When you are comfortable with the modifications, submit the modified file to the GitHub repository.

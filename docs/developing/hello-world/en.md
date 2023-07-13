@@ -19,10 +19,7 @@ Open your site's folder in an IDE and perform the following actions:
 1. Create a `.tsx` file in the `sections/` folder of your Site with the desired name
    for the Section (e.g.: `LatestPosts.tsx`).
 
-2. Export a [Preact](https://preactjs.com/) component **using
-   `export default`** as shown in the example below:
-
-   1. `sections/LatestPosts.tsx`
+2. Export a [Preact](https://preactjs.com/) component **using `export default`** as shown in the example below. File `sections/LatestPosts.tsx`:
 
       ```tsx
       export interface Props {
@@ -45,16 +42,16 @@ If the project is running locally (`deno task start`) and if the environment sel
 
 # Properties of a Section
 
-A Section can have any property that is serializable and interpretable in the property form in the deco admin. This includes:
+A Section can have any property that is serializable and accept as a property in deco admin. That includes:
 
 - `strings` and `numbers`
 - Simple types of serializable objects
-- Generated types of union, extension, `Pick`, or `Omit`
+- Generated types from union, extends, `Pick`, or `Omit`
 - `Sections` (`import { Section } from "$live/blocks/section.ts"`)
 - `Image` (`import { Image } from "deco-sites/std/components/types.ts"`) and other components from the deco standard library
 - Arrays of the types indicated above
 
-In addition to the above types, it is possible to annotate some properties so that the admin form changes the insertion mechanism or to determine certain aspects of the property's behavior.
+In addition to those types, it is possible to annotate some properties so that the admin form changes the input mechanism or to determine certain aspects of the property's behavior.
 
 As an example, let's add three new properties to our `LatestPosts` component, one for an image (`photo`), another for the post body (`post`), and one for the post time.
 
