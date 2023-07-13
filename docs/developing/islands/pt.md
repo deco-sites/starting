@@ -101,3 +101,9 @@ Para definir efeitos colaterais em mudanças de signal, use as operações `effe
 ## Considerações e dicas
 
 Ao transformar um componente em uma island, pelo menos o tamanho dele em bytes será duplicado. O servidor renderiza o HTML para esse elemento e o envia para o navegador, mas também envia basicamente o mesmo HTML mais o JS a ser injetado no lado do cliente. Portanto, tente criar apenas as islands necessárias, pois elas tornam o processo de renderização mais intensivo em
+
+Para aprender mais sobre o processo de renderização na deco e receber dicas de como implementar padrões de comuns de design:
+
+- [Introduction to the Islands architecture - EN](https://deno.com/blog/intro-to-islands)
+- TODO: [Understanding deco rendering pipeline](TODO)
+- TODO: [Recipes: islands](TODO)
