@@ -86,7 +86,7 @@ export default function Footer({
           </div>
 
           {menu && <SubMenu menu={menu} />}
-          <div class="flex flex-col md:flex-row md:items-center lg:items-end lg:flex-col justify-between gap-6">
+          <div class="flex flex-col md:flex-row md:items-center lg:items-end lg:flex-col md:justify-between lg:justify-end gap-6 lg:gap-4">
             <ul class="flex flex-row justify-items-start md:justify-end items-start gap-4">
               <li>
                 <a
