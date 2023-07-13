@@ -105,14 +105,14 @@ const tableOfContents: TableOfContents = [{
     title: { pt: "Configuração do ambiente", en: "Environment setup" },
     slug: "developing/setup",
   }, {
-    title: { pt: "Hello World", en: "Hello World" },
-    slug: "developing/hello-world",
-  }, {
     title: {
       pt: "Tornando uma Seção configurável",
       en: "Making Sections editable",
     },
     slug: "developing/editable-sections",
+  }, {
+    title: { pt: "Criando uma Section", en: "Creating a Section" },
+    slug: "developing/hello-world",
   }, {
     title: {
       pt: "Adicionando interatividade em uma página",
