@@ -21,3 +21,11 @@ descrição: |
 O processo de criação do site será iniciado e, após o término, você verá o painel do site:
 
 <img width="1512" alt="Painel do site em deco.cx" src="https://github.com/deco-cx/deco/assets/18706156/13d2331e-86b2-4db5-b11a-2cff2ac807ac">
+
+## Navegando no site
+
+Logo abaixo de **Domínio de Produção** você verá a URL do seu site. Essa URL é pública e o site já está online e acessível..
+
+Você deve ver algo semelhante a https://start.deco.cx, que foi o modelo escolhido no processo de criação.
+
+> A deco.cx é gratuita até 50.000 visualizações/visitas por mês. Verifique nossos [Preços](https://www.deco.cx/en/pricing) para mais informações.
