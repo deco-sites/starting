@@ -8,14 +8,21 @@ Este artigo orienta você na criação e configuração de um website no [**deco
 
 > **Vídeo**: Para assistir ao conteúdo deste artigo, clique [aqui](https://www.loom.com/share/9fee00a691dd44cfb35d1e2680719e5e)
 
+# Sumário
+1. Pré-requisitos
+1. Criando o website
+1. Configurando a `URL Pública da Loja`
+1. Conectando à VTEX
+1. Adicionando suas coleções ao seu website.
+1. Solução de problemas
 
-## Pré-requisitos
+# Pré-requisitos
 
 - Um website no Deco. Crie um gratuitamente em [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
 - Uma conta na VTEX [(ajuda)](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC).
 
 
-## Criando o website
+# Criando o website
 
 Caso você já tenha um website no deco.cx, avance para a próxima seção. Caso contrário, siga as etapas deste [guia](/docs/pt-br/getting-started/creating-a-site) para criar um.
 
@@ -23,7 +30,7 @@ Caso você já tenha um website no deco.cx, avance para a próxima seção. Caso
 
 <img width="586" alt="Criando um website no deco.cx" src="https://user-images.githubusercontent.com/18706156/224514991-0e882420-00a8-4272-a2d0-71f73ac77d23.png">
 
-## Configurando a `URL Pública da Loja`
+# Configurando a `URL Pública da Loja`
 O modelo *Deco Commerce* atualmente faz o proxy dos serviços *checkout* e *my-account* da própria VTEX. Isso significa que seu usuário final NÃO será redirecionado para nenhum outro domínio ao fazer o checkout. Por exemplo, vamos supor que, antes de migrar para o Deco, sua loja esteja hospedada em `www.minhaloja.com` e a URL de checkout seja `https://www.minhaloja.com/checkout`. Após migrar para o Deco, sua loja continuará sendo servida em `www.minhaloja.com` e a URL de checkout ainda será `https://www.minhaloja.com/checkout`.
 
 Atualmente, a VTEX não expõe seus serviços de interface de usuário por meio de uma URL pública na internet. Por esse motivo, precisamos de uma URL secundária para habilitar o proxy dos serviços de *checkout* e *my-account*. Seguindo nosso exemplo acima, crie um subdomínio novo, por exemplo `proxy.minhaloja.com`, e aponte-o para a VTEX seguindo este [guia](https://help.vtex.com/tutorial/configuring-domains-in-account-management--tutorials_2450). Depois disso, o `proxy.minhaloja.com` será a `URL Pública da Loja` necessária na próxima etapa.
@@ -31,7 +38,7 @@ Atualmente, a VTEX não expõe seus serviços de interface de usuário por meio 
 A arquitetura final da configuração é:
 <img width="1066" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
 
-## Conectando à VTEX
+# Conectando à VTEX
 Para se conectar à sua conta na VTEX:
 
 1. Acesse o painel administrativo do seu site em [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
@@ -46,7 +53,7 @@ Para se conectar à sua conta na VTEX:
 
 🎉 Parabéns, você configurou a integração com a VTEX. Para garantir que a integração esteja funcionando corretamente, continue lendo e crie um bloco de coleção reutilizável.
 
-## Adicionando suas coleções ao seu website.
+# Adicionando suas coleções ao seu website.
 Após a configuração da VTEX ser concluída, tente adicionar uma prateleira ao seu website.
 
 1. Acesse o painel administrativo do seu site em [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
@@ -71,42 +78,32 @@ Após a configuração da VTEX ser concluída, tente adicionar uma prateleira ao
  o bloco `Coleção 139` em qualquer página.
 <img width="1504" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/bfc74614-b44b-45a9-b1e6-2465e0149ac4">
 
-### Solução de problemas
+# Solução de problemas
 Problemas comuns ao conectar-se à VTEX surgem de:
 
 1. VTEX Intelligent Search (IS) **não está instalada na conta**
 Se você não tem certeza se a IS está instalada em sua conta, use os carregadores tradicionais (VTEX Catalog). Cuidado, algumas funcionalidades do [Fashion starter](https://github.com/deco-sites/fashion), como o _autocomplete_, dependem da VTEX Intelligent Search.
-2. Sales channel errado.
-Um sales channel mal configurado pode levar a produtos errados serem renderizados na tela. Encontre os valores corretos de sales channel e locale em seguida.
+2. salesChannel/defaultLocale errado.
+Um salesChannel/defaultLocale mal configurado pode levar a produtos e preços errados serem renderizados. Para descobrir o valor correto:
+   1. Abra o _Dev Tools_, e va para **Application** ou **Storage**.
+   1. No lado esquerdo, selecione **Cookies** e a url do site.
+   1. Procure pelo Cookie `vtex_segment` e **copie o valor**.
+   1. Em outra aba, abra https://jwt.io e cole o valor do cookie copiado no paço anterior.
+   1. No JSON retornado: 
+      A propriedade `channel` traz o valor do `salesChannel`.
+      A propriedade `cultureInfo` traz o valor de `defaultLocale`.
 
-## Encontrando accountName e salesChannel
 
-Se você tem acesso a uma URL pública de uma loja VTEX, mas precisa encontrar o
-`accountName`, `salesChannel` e `defaultLocale` para configurar a integração
-no _deco.cx_, siga estas etapas:
+   > Na maioria dos casos `salesChannel` is 1
 
-**accountName**
+   <img width="1281" alt="image" src="https://user-images.githubusercontent.com/18706156/226075931-6ffe568e-a6c9-4850-ad88-2a02f7a9f5f0.png">
+3. Configuração de accountName incorreta.
+Para descobrir o accountName correto:
+   1. Acesse a URL da sua loja atual, por exemplo: https://www.minhaloja.com.br. 
+   1. Clique com o botão direito e selecione **Inspecionar**.
+   1. Com as _Ferramentas de Desenvolvedor_ abertas, pressione _Ctrl + F_ para abrir a busca dentro do código HTML.
+   1. Procure por `vtexassets` ou `vteximg` (dependendo do CMS atual da loja).
+   1. O `accountName` estará nas URLs com o formato:
+      `{accountName}.vtexassets.com` ou `{accountName}.vteximg.com.br`.
 
-1. Acesse a URL da loja.
-2. Clique com o botão direito e selecione **Inspecionar**.
-3. Com as _Ferramentas de Desenvolvimento_ abertas, digite _Ctrl + F_ para abrir a busca dentro do HTML.
-4. Procure por `vtexassets` ou `vteximg` (dependendo do CMS atual da loja).
-5. O `accountName` estará nas URLs no formato:
-   `{accountName}.vtexassets.com` ou `{accountName}.vteximg.com.br`.
-
-![Exemplo na loja www.minhaloja.com](https://user-images.githubusercontent.com/18706156/226031270-83a1888d-cde8-445e-84be-52d58a55e3c4.png)
-
-**salesChannel** e **defaultLocale**
-
-1. Com as _Ferramentas de Desenvolvimento_ abertas, vá para **Aplicativo** ou **Armazenamento**.
-2. No lado esquerdo, selecione o item **Cookies** e selecione a URL da loja.
-3. Procure pelo Cookie `vtex_segment` e **copie o seu valor**, que começa com
-   `ey`.
-4. Acesse o site https://jwt.io e cole o valor.
-5. Verifique o JSON retornado. O campo `channel` traz o valor de `salesChannel`
-   e o campo `cultureInfo` traz o `defaultLocale`.
-
-> Na maioria dos casos, o `salesChannel` é 1.
-
-<img width="1281" alt="imagem" src="https://user-images.githubusercontent.com/18706156/226075931-6ffe568e-a6c9-4850-ad88-2a02f7a9f5f0.png">
-
+   ![Exemplo na loja www.mash.com.br](https://user-images.githubusercontent.com/18706156/226031270-83a1888d-cde8-445e-84be-52d58a55e3c4.png)
