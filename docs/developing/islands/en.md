@@ -8,7 +8,7 @@ In this guide you will learn how to create components that run on the browser. M
 
 # Making components interactive
 Suppose you have the following component. A counter that allows the user to add/subtract to the displayed value. 
-// TODO: add component's image
+<img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
 
 This component can be implemented with the following code:
 ```tsx
@@ -32,10 +32,16 @@ export default function Counter () {
 ```
 
 Creating a file called `Counter.tsx` and placing it into the `components` folder gives us the following result on the screen:
-// TODO: add component's image
 
-However, when we try clicking on the button, nothing happens. This is because deco does not ship any JavaScript to the browser, thus making hooks like `useState` and `useEffect` not work. To opt into shipping JavaScript to the browser, you must move the `Counter.tsx` file into a special folder called `islands` in the project's root. Moving the component's file into the `islands` folder, we have the component with a working interaction
-// TODO: add component's image gif
+![Jul-13-2023 10-34-48](https://github.com/deco-sites/starting/assets/1753396/49db9135-842c-46ca-94cb-e65290611d57)
+
+However, when we try clicking on the button, nothing happens. This is because deco does not ship any JavaScript to the browser, thus making hooks like `useState` and `useEffect` not work. To opt into shipping JavaScript to the browser, you must move the `Counter.tsx` file into a special folder called `islands` in the project's root. 
+
+![Jul-13-2023 10-40-08](https://github.com/deco-sites/starting/assets/1753396/e672d732-8377-44fb-9494-057ec22a7e29)
+
+Moving the component's file into the `islands` folder, we have the component with a working interaction
+
+![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
 
 This component is now called an `island`!
 
