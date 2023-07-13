@@ -1,174 +1,116 @@
 ---
-description: Adicionando interatividade em uma página
+description: Adicionando interatividade à página.
 since: 1.1.0
 ---
 
-# Tópicos
+Uma das razões pelas quais o Deco é rápido é a nossa abordagem centrada no servidor para criar sites. Isso significa que todo o código que você escreve é executado em nossos servidores, em vez de ser executado em dispositivos de usuário lentos e inconsistentes (navegador). No entanto, às vezes precisamos fornecer interatividade extra aos nossos sites, como adicionar manipuladores de eventos `onClick`, `useState` ou `useEffect`. 
+Neste guia, você aprenderá como criar componentes que são executados no navegador. Certifique-se de ler nossas dicas de desempenho antes de criar qualquer JavaScript no navegador, para evitar problemas comuns com o JavaScript do lado do cliente.
 
-1. Introdução a Ilhas (Islands)
-   - Limitações no uso de ilhas
-   - Signals
-2. Criando sua primeira ilha
-   - Adicionando um novo componente chamado `RandomDogFact.tsx`
-   - Cuidados e dicas ao usar ilhas
-3. Erros comuns
+# Sumário
 
-# Introdução a Ilhas
+1. Tornando os componentes interativos
+2. Limitações de uso das islands
+3. Compartilhando estado entre as islands
+4. Considerações e dicas
 
-Ilhas são componentes com interatividade no browser dentro da arquitetura do Deno Fresh.
+# Tornando os componentes interativos
+Suponha que você tenha o seguinte componente. Um contador que permite ao usuário adicionar/subtrair o valor exibido. 
+<img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
 
-Por padrão, todo componente é renderizado no servidor e seu HTML é enviado ao Browser sem JS em anexo. Mas, por vezes, é preciso ter algum grau de interação no navegador. Como exemplo, pode ser necessário interagir com um botão para exibir um contador:
-
+Este componente pode ser implementado com o seguinte código:
 ```tsx
-import { useSignal } from "@preact/signals";
+import { useState } from 'preact/hooks'
 
-export default function MyIsland() {
-  const count = useSignal(0);
+export default function Counter () {
+  const [count, setCount] = useState(0)
 
   return (
     <div>
-      Counter is at {count}.{" "}
-      <button onClick={() => (count.value += 1)}>+</button>
+      <button onClick={() => setCount(count-1)}>
+        -
+      </button>
+      <span>{count}</span>
+      <button onClick={() => setCount(count+1)}>
+        +
+      </button>
     </div>
-  );
+  )
 }
 ```
-_Retirado da [documentação do Fresh](https://fresh.deno.dev/docs/concepts/islands)_
 
-Por padrão, o Fresh irá apenas gerar o HTML desse código, removendo, inclusive o código de `onClick` do botão.
+Ao criar um arquivo chamado `Counter.tsx` e colocá-lo na pasta `components`, obtemos o seguinte resultado na tela:
 
-Um componente se torna uma ilha no momento que é colocada dentro da pasta `islands`, ou quando é importada (diretamente ou indiretamente) por algum componente que esteja nesse diretório. Nas ilhas, o HTML ainda é gerado do lado do servidor mas enviado ao cliente onde "recebe" o JS que a torna interativa (processo de "hidratação").
+![Jul-13-2023 10-34-48](https://github.com/deco-sites/starting/assets/1753396/49db9135-842c-46ca-94cb-e65290611d57)
 
-Assim, se você precisa criar interação com o usuário que…
-- Não é feita por navegação de páginas com links ou submit de form…
-- Não é uma interação construída via CSS…
-- Exige interação manipulação de elementos ou estado da página atual
-(exemplo: com o uso de `onClick`, `onChange`, `useEffect`, algum outro hook ou event listener)
+No entanto, quando tentamos clicar no botão, nada acontece. Isso ocorre porque o Deco não envia nenhum JavaScript para o navegador, tornando os hooks como `useState` e `useEffect` inoperantes. Para habilitar o envio de JavaScript para o navegador, você deve mover o arquivo `Counter.tsx` para uma pasta especial chamada `islands` na raiz do projeto.
 
-Então, você precisa fazer uso de ilhas.
+![Jul-13-2023 10-40-08](https://github.com/deco-sites/starting/assets/1753396/e672d732-8377-44fb-9494-057ec22a7e29)
 
-## Limitações no uso de ilhas
+Ao mover o arquivo do componente para a pasta `islands`, temos o componente com uma interação funcional.
 
-Uma ilha pode receber propriedades como qualquer outro componente, desde que estas propriedades sejam serializáveis. Isto significa que é possível receber o seguintes valores:
+![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
 
-- Os tipos primitivos `string`, `boolean`, `bigint`, e `null`
-- A maioria dos números (`Infinity`, `-Infinity`, e `NaN` são convertidas para `null`)
-- Objetos simples, com chaves em `string` e valores serializáveis
+Agora esse componente é chamado de `island`!
+
+Embora adicionar islands ao seu projeto pareça tentador, tenha em mente que as islands tornam os sites mais lentos e prejudicam a métrica TBT ([Total Blocking Time](https://web.dev/tbt/)). Portanto, antes de mover qualquer componente para a pasta `island`, verifique se sua interatividade final:
+
+- Não é alcançada por meio de navegação de página com links ou envio de formulários...
+- Não é uma interação construída puramente com CSS...
+- Requer manipulação de elementos ou estado da página atual
+(por exemplo, usando onClick, onChange, useEffect, outro hook ou um ouvinte de eventos)
+
+# Limitações de uso das islands
+
+As islands são componentes do Preact. Isso significa que elas aceitam `props`. No entanto, esses valores devem ser um dos seguintes:
+
+- Tipos primitivos `string`, `boolean`, `bigint` e `null`
+- Objetos simples com chaves `string` e valores serializáveis
 - Arrays de valores serializáveis
 - `Uint8Array`
-- JSX Elements (APENAS como props.children)
-- Preact Signals (se o valor da signal for serializável)
+- Elementos JSX (SOMENTE como props.children)
+- Sinais do Preact (se o valor do sinal for serializável)
+- A maioria dos números (`Infinity`, `-Infinity` e `NaN` são convertidos para `null`)
 
-Objetos complexos, como `Date`, funções, classes customizáveis, não são aceitas nas ilhas.
+Objetos complexos como `Date`, funções e classes personalizadas não são aceitos como props de islands.
 
-## Signals
+# Compartilhando estado entre as islands
 
-No Preact é comum fazer o uso de signals para gerência de estado de um componente e controle da interação com o usuário.
+No desenvolvimento normal do Preact, o compartilhamento de estado entre componentes geralmente é feito por meio da API [Context](https://preactjs.com/guide/v10/context/). Isso funciona bem para um aplicativo de lado do cliente completo. No entanto, como estamos usando a arquitetura de islands, compartilhar estado entre as islands requer uma nova abordagem.
 
-Um signal:
+O Preact introduziu um novo conceito chamado [Signals](https://preactjs.com/guide/v10/signals/). Os signals são uma ótima maneira de compartilhar estado entre as islands, pois é possível publicar e se inscrever em eventos de alteração em uma API concisa.
 
-- é criado com um estado inicial de valor (`const count = useSignal(0);`)
-- é utilizado por um componente (`Counter is at {count}.{" "}`)
-- força uma nova renderização dos componentes que o utilizem quando o mesmo for atualizado (`count.value += 1`)
+Para usar signals, importe:
+```tsx 
+import { signal } from '@preact/signals';
+```
 
-Para reagir a alterações de signals, use as operações `effect`, `batch`, `computed` ou `useComputed`. Veja a [documentação de signals - EN](https://preactjs.com/guide/v10/signals/).
-
-# Criando sua primeira ilha
-
-## Adicionando um novo componente chamado `RandomDogFact.tsx`
-
-1. Crie um arquivo `RandomDogFact.tsx` na pasta `islands`
-
-2. Abra o arquivo `islands/RandomDogFact.tsx` e coloque o seguinte corpo:
+Agora, use o escopo global para criar, modificar e se inscrever em um signal:
 
 ```tsx
 import { signal } from "@preact/signals";
 
-export interface DogFact {
-    fact: string;
-  }
-  
-  export interface Props {
-    title: string;
-  }
-  
-  const getNewDogFact = async () => {
-    const { facts: dogFacts } = (await fetch(
-      `https://dogapi.dog/api/facts?number=1`,
-    ).then((r) => r.json())) as { facts: string[] };
-    if (dogFacts[0]) {
-        dogFact.value = dogFacts[0];
-    }
-  }
-  
-  const dogFact = signal<string>("🐕");
+const count = signal(0);
 
-  export default function RandomDogFact({ title }: Props) {
-    return (
-      <div onClick={getNewDogFact} class="p-4 cursor-pointer">
-        <h1 class="font-bold">{title}</h1>
-        <span>{dogFact}</span>
-      </div>
-    );
-  }
+// Leia o valor de um signal acessando .value:
+console.log(count.value);   // 0
+
+// Atualize o valor de um signal:
+count.value += 1;
+
+// O valor do signal foi alterado:
+console.log(count.value);  // 1
 ```
 
-3. Use o elemento `<RandomDogFact>` em uma section. Exemplo:
+Para definir efeitos colaterais em mudanças de signal, use as operações `effect`, `batch`, `computed` ou `useComputed`. Consulte a [documentação dos signals](https://preactjs.com/guide/v10/signals/) para obter mais detalhes. Além disso, dê uma olhada em [compartilhando estado entre islands](https://fresh.deno.dev/docs/examples/sharing-state-between-islands).
 
-```tsx
-import RandomDogFact from "deco-sites/fashion/islands/RandomDogFact.tsx";
+> Observe que o compartilhamento de estado por meio da API `Context` NÃO funcionará, pois o contexto estará fora das islands e, portanto, só estará disponível no servidor.
 
-// ...
+# Considerações e dicas
 
-function ProductGallery({ products, layout }: Props) {
-  return (
-    <div class="grid grid-cols-2 gap-2 items-center sm:grid-cols-4 sm:gap-10">
-      <RandomDogFact title="Dog Fact" />
-      {products?.map((product, index) => (
-        <ProductCard product={product} preload={index === 0} layout={layout} />
-      ))}
-    </div>
-  );
-}
-```
+Ao transformar um componente em uma island, pelo menos o tamanho dele em bytes será duplicado. O servidor renderiza o HTML para esse elemento e o envia para o navegador, mas também envia basicamente o mesmo HTML mais o JS a ser injetado no lado do cliente. Portanto, tente criar apenas as islands necessárias, pois elas tornam o processo de renderização mais intensivo em
 
-Por ser uma ilha, o elemento `RandomDogFact` é renderizado uma vez no servidor, mas seu corpo HTML e JS (incluindo de suas dependências) é enviado ao browser para ter seu JS novamente habilitado e ativado. Caso essa ilha não estivesse colocada no diretório `islands`, ela não seria clicável.
+Para aprender mais sobre o processo de renderização na deco e receber dicas de como implementar padrões de comuns de design:
 
-## Cuidados e dicas ao usar ilhas
-
-Tornar um componente como ilha no mínimo tende a dobrar o seu tamanho em bytes. O servidor renderiza o HTML desse elemento e envia para o browser, mas também envia basicamente o mesmo HTML acrescido do JS a ser injetado no lado do cliente. Desta forma, tente criar o mínimo necessário de ilhas, pois elas tornam o processo de renderização custoso.
-
-Consulte também:
-
-- [Introdução a arquitetura de ilhas - EN](https://deno.com/blog/intro-to-islands)
-- TODO RECIPES
-
-# Erros comuns
-
-## A ilha continua sem interação
-
-O arquivo deve estar no diretório `islands`. O arquivo não pode estar em algum subdiretório dentro de `islands`. Verifique se no `console` há algum erro que impediu o processo de hidratação.
-
-## A ilha não executa e/ou apresentas erros no console do deno.
-
-Todo código javascript de inicialização da ilha é executado primeiro no servidor e depois no cliente. É comum colocar código que só faz sentido no servidor (ex.: usar o `localStorage`, manipular a DOM, fazer uma chamada, etc.). É possível fazer uso do `IS_BROWSER` para determinar que um código seja executado apenas no cliente.
-
-```tsx
-import { useSignal } from "@preact/signals";
-import { IS_BROWSER } from "$fresh/runtime.ts";
-
-export default function MyIsland() {
-  let initalValue = 0;
-  if (IS_BROWSER) {
-    initalValue = localStorage.getItem("count");
-  }
-  const count = useSignal(initalValue);
-
-  return (
-    <div>
-      Counter is at {count}.{" "}
-      <button onClick={() => (count.value += 1)}>+</button>
-    </div>
-  );
-}
-```
+- [Introduction to the Islands architecture - EN](https://deno.com/blog/intro-to-islands)
+- TODO: [Understanding deco rendering pipeline](TODO)
+- TODO: [Recipes: islands](TODO)

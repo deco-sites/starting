@@ -1,174 +1,117 @@
 ---
-description: Client-side interactivity.
+description: Client-side Interactivity.
 since: 1.1.0
 ---
 
+One of the reasons deco is fast is our edge first approach to creating websites. This means that all code you write runs on our servers instead of running on slow, inconsitent user devices (browser). However, sometimes we need to provide extra interactivity to our websites, like adding `onClick`, `useState` or `useEffect` event handlers. 
+In this guide you will learn how to create components that run on the browser. Make sure to read our performance tips before creating any JavaScript on the browser to avoid common pitfails with client-side JavaScript
+
 # Summary
 
-1. Introduction to Islands
-   - Islands limitations
-   - Signals
-2. Creating your first island
-   - Adding a new component (`RandomDogFact.tsx`)
-   - Considerations and tips
-3. Troubleshooting
+1. Making components interactive
+2. Islands usage limitations
+3. Sharing state among islands.
+4. Considerations and tips
 
-# Introduction to Islands
-Islands are browser-interactive components within the Deno Fresh architecture.
+# Making components interactive
+Suppose you have the following component. A counter that allows the user to add/subtract to the displayed value. 
+<img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
 
-By default, all Fresh components are server-rendered, and their HTML is sent to the browser without attached JS. However, there are times when some degree of interaction in the browser is necessary. For example, a user may need to interact with a button to display a counter:
-
+This component can be implemented with the following code:
 ```tsx
-import { useSignal } from "@preact/signals";
+import { useState } from 'preact/hooks'
 
-export default function MyIsland() {
-  const count = useSignal(0);
+export default function Counter () {
+  const [count, setCount] = useState(0)
 
   return (
     <div>
-      Counter is at {count}.{" "}
-      <button onClick={() => (count.value += 1)}>+</button>
+      <button onClick={() => setCount(count-1)}>
+        -
+      </button>
+      <span>{count}</span>
+      <button onClick={() => setCount(count+1)}>
+        +
+      </button>
     </div>
-  );
+  )
 }
 ```
-_Source: [Fresh documentation - EN](https://fresh.deno.dev/docs/concepts/islands)_
 
-By default, Fresh will only generate the HTML for this code, excluding the onClick code for the button.
+Creating a file called `Counter.tsx` and placing it into the `components` folder gives us the following result on the screen:
 
-A component becomes an island when it is placed within the top-level `islands` folder or when it is imported (directly or indirectly) by a component within that directory. In islands, the HTML is still generated on the server but sent to the browser where it is "hydrated" with the JavaScript that makes it interactive.
+![Jul-13-2023 10-34-48](https://github.com/deco-sites/starting/assets/1753396/49db9135-842c-46ca-94cb-e65290611d57)
 
-Therefore, if you need to create user interaction that...
+However, when we try clicking on the button, nothing happens. This is because deco does not ship any JavaScript to the browser, thus making hooks like `useState` and `useEffect` not work. To opt into shipping JavaScript to the browser, you must move the `Counter.tsx` file into a special folder called `islands` in the project's root. 
+
+![Jul-13-2023 10-40-08](https://github.com/deco-sites/starting/assets/1753396/e672d732-8377-44fb-9494-057ec22a7e29)
+
+Moving the component's file into the `islands` folder, we have the component with a working interaction
+
+![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
+
+This component is now called an `island`!
+
+Althought adding islands to your project seems tempting, keep in mind that islands slow down websites and harm [TBT metric](https://web.dev/tbt/), so before moving any component to the `island` folder, make sure that your final interactivity:
 
 - Isn't achieved through page navigation with links or form submissions...
 - Isn't an interaction built purely with CSS...
 - Requires manipulation of elements or the current page's state
 (e.g., using onClick, onChange, useEffect, another hook, or an event listener)
 
-Then, you need to make use of islands.
 
-## Islands usage limitations
+# Islands usage limitations
 
-An island can receive properties like any other component, as long as these properties are serializable. This means you can receive the following values:
+Islands are Preact components. This means they accept `props`. However, these values must be one of:
 
 - Primitive types `string`, `boolean`, `bigint`, and `null`
-- Most numbers (`Infinity`, `-Infinity`, and `NaN` are converted to `null`)
 - Simple objects with `string` keys and serializable values
 - Arrays of serializable values
 - `Uint8Array`
 - JSX Elements (ONLY as props.children)
 - Preact Signals (if the signal value is serializable)
+- Most numbers (`Infinity`, `-Infinity`, and `NaN` are converted to `null`)
 
-Complex objects such as Date, functions, and custom classes are not accepted in islands props.
+Complex objects such as Date, functions, and custom classes are not accepted as islands props.
 
-## Signals
+# Sharing state among islands.
 
-In Preact, it's common to use signals for managing component state and control user interaction.
+In normal Preact development, sharing state between components is usually done via the [Context](https://preactjs.com/guide/v10/context/) API. This works fine for a full client-side application. However, since we are using islands architecture, sharing state among islands require a new approach.
 
-A signal:
+Preact introduced a new concept called [Signals](https://preactjs.com/guide/v10/signals/). Signals are a great way of sharing state between islands, since one can publish and subscribe for change events in a concise API. 
 
-- is created with an initial value (`const count = useSignal(0);`)
-- is used by a component (`Counter is at {count}.{" "}`)
-- triggers a re-render of components that use it when the signal is updated (`count.value += 1`)
+To use signals, 
+```tsx 
+import { signal } from '@preact/signals';
+```
 
-To define side-effects over signal changes, use the `effect`, `batch`, `computed`, or `useComputed` operations. Refer to the [signals documentation](https://preactjs.com/guide/v10/signals/) for more details.
-
-# Creating your first island
-
-## Adding a new component (`RandomDogFact.tsx`)
-
-1. Create a file named `RandomDogFact.tsx` in the `islands` folder
-
-2. Open the `islands/RandomDogFact.tsx` file and add the following content:
+Now, use the global scope to create, mutate and subscribe to a signal:
 
 ```tsx
 import { signal } from "@preact/signals";
 
-export interface DogFact {
-    fact: string;
-  }
-  
-  export interface Props {
-    title: string;
-  }
-  
-  const getNewDogFact = async () => {
-    const { facts: dogFacts } = (await fetch(
-      `https://dogapi.dog/api/facts?number=1`,
-    ).then((r) => r.json())) as { facts: string[] };
-    if (dogFacts[0]) {
-        dogFact.value = dogFacts[0];
-    }
-  }
-  
-  const dogFact = signal<string>("🐕");
+const count = signal(0);
 
-  export default function RandomDogFact({ title }: Props) {
-    return (
-      <div onClick={getNewDogFact} class="p-4 cursor-pointer">
-        <h1 class="font-bold">{title}</h1>
-        <span>{dogFact}</span>
-      </div>
-    );
-  }
+// Read a signal’s value by accessing .value:
+console.log(count.value);   // 0
+
+// Update a signal’s value:
+count.value += 1;
+
+// The signal's value has changed:
+console.log(count.value);  // 1
 ```
 
-3. Use the `<RandomDogFact>` element in a section. For example:
+To define side-effects over signal changes, use the `effect`, `batch`, `computed`, or `useComputed` operations. Refer to the [signals documentation](https://preactjs.com/guide/v10/signals/) for more details. Also, take a look at [sharing state between islands](https://fresh.deno.dev/docs/examples/sharing-state-between-islands).
 
-```tsx
-import RandomDogFact from "deco-sites/fashion/islands/RandomDogFact.tsx";
+> Note that sharing state via the `Context` API will NOT work, since the context will be outside the islands, and thus, only available on the server. 
 
-// ...
-
-function ProductGallery({ products, layout }: Props) {
-  return (
-    <div class="grid grid-cols-2 gap-2 items-center sm:grid-cols-4 sm:gap-10">
-      <RandomDogFact title="Dog Fact" />
-      {products?.map((product, index) => (
-        <ProductCard product={product} preload={index === 0} layout={layout} />
-      ))}
-    </div>
-  );
-}
-```
-
-Being an island, the `RandomDogFact` element is rendered once on the server, but its HTML and JS (including its dependencies) are sent to the browser to have its JS enabled and executed again. If this island were not placed in the islands directory, it would not be clickable.
-
-## Considerations and tips
+# Considerations and tips
 
 Making a component an island will at least double its size in bytes. The server renders the HTML for this element and sends it to the browser, but it also sends essentially the same HTML plus the JS to be injected on the client side. Therefore, try to create only the necessary islands, as they make the rendering process more resource-intensive.
 
-Also, refer to:
+To learn more about deco's rendering process and receive some tips on implementing common design patterns:
 
 - [Introduction to the Islands architecture - EN](https://deno.com/blog/intro-to-islands)
-- TODO RECIPES
-
-# Troubleshooting
-
-## Island has no interaction
-
-The file must be in the `islands` directory. The file cannot be in any subdirectory within `islands`. Check if there are any errors in the `console` that prevented the hydration process.
-
-## Island does not run and/or displays errors in the deno console.
-
-All island initialization JavaScript code runs first on the server and then on the client. It's common to include code that only makes sense on the server (e.g., using `localStorage`, manipulating the DOM, making a request, etc.). You can use `IS_BROWSER` to determine that a code should only be executed on the client.
-
-```tsx
-import { useSignal } from "@preact/signals";
-import { IS_BROWSER } from "$fresh/runtime.ts";
-
-export default function MyIsland() {
-  let initalValue = 0;
-  if (IS_BROWSER) {
-    initalValue = localStorage.getItem("count");
-  }
-  const count = useSignal(initalValue);
-
-  return (
-    <div>
-      Counter is at {count}.{" "}
-      <button onClick={() => (count.value += 1)}>+</button>
-    </div>
-  );
-}
-```
+- TODO: [Understanding deco rendering pipeline](TODO)
+- TODO: [Recipes: islands](TODO)
