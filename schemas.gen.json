@@ -9877,6 +9877,31 @@
       },
       "title": "Menu[]"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Gb290ZXIudHN4@ExtraLink": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "title": "ExtraLink"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Gb290ZXIudHN4@ExtraLink[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Gb290ZXIudHN4@ExtraLink"
+      },
+      "title": "ExtraLink[]"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Gb290ZXIudHN4@Props": {
       "type": "object",
       "properties": {
@@ -9911,6 +9936,10 @@
           },
           "required": [],
           "title": "Social"
+        },
+        "extraLinks": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Gb290ZXIudHN4@ExtraLink[]",
+          "title": "Extra Links"
         }
       },
       "required": [],
