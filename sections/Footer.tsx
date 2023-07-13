@@ -158,7 +158,7 @@ export default function Footer({
             {extraLinks && extraLinks?.length > 0 && (
               <div class="flex flex-col md:flex-row gap-5 lg:gap-10 text-white">
                 {extraLinks.map((item) => (
-                  <a class="link text-sm hover:underline" href={item.href}>{item.label}</a>
+                  <a target="_blank" class="link text-sm hover:underline" href={item.href}>{item.label}</a>
                 ))}
               </div>
             )}
