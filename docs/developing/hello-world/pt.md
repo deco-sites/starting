@@ -1,16 +1,19 @@
 ---
-description: Aprenda como criar uma Section para um Site usando deco.cx
+description: Criando uma Section
+since: 1.0.0
 ---
 
-Neste tutorial você aprenderá como criar uma nova implementação de
-[Section](/docs/pt/concepts/section) no repositório do seu
-[Site](/docs/pt/concepts/site) e veja como os usuários podem **configurar seus
-props** no Admin da _deco.cx_.
+# Tópicos
 
-## Leitura sugerida
+1. Criando uma Section
+2. Propriedades de uma Section
+3. Tematizando a Section com DaisyUI
 
-- [Introdução: Tech Stack](/docs/pt/developing/setup)
-- [Conceitos: Section](/docs/pt/concepts/section)
+# Criando uma Section
+
+A Section é um componente [Preact](https://preactjs.com/) que é configurável no Admin. Para que a Section seja visĩvel no Admin, é preciso criar esse componente na pasta `sections/` ou em algum de seus sub-diretórios.
+
+Comece criando uma Section para, em seguida, explorar diferentes tipos de propriedades e especializações de propriedades no admin.
 
 Abra a pasta do seu site em uma IDE e execute as seguintes ações:
 
@@ -39,42 +42,142 @@ Abra a pasta do seu site em uma IDE e execute as seguintes ações:
 
 **Pronto!** A Section foi criada localmente no seu projeto.
 
-## Testando a Section
+Caso o projeto esteja rodando localmente (`deno task start`) e caso o seletor de ambientes esteja apontando para `localhost:8000`, será possível visualizar a nova Section na biblioteca de blocos (**Library**).
 
-Mesmo que o código desta Section esteja apenas em _localhost_, você pode
-visualizar como ela está sendo renderizada e também testar a configuração de
-suas `props`. Para cada prop que você exporta o tipo, renderizaremos um campo
-para edição do valor no Admin. Também é possível carregar
-[dados obtidos de APIs externas](/docs/pt/developing/fetching-data)
+# Propriedades de uma Section
 
-Para testar a Section `LatestPosts.tsx`:
+Uma Section pode ter como propriedade qualquer elemento que seja serializável, e interpretável no formulário de propriedades no admin da deco. Isto inclue:
 
-1. Execute `deno task start` no Terminal. _(Você não precisa executar novamente
-   se já rodando)_
+- `strings` e `numbers`
+- Tipos simples de objetos serializáveis
+- Tipos gerados de união, extensão, `Pick` ou `Omit`
+- `Sections` ( `import { Section } from "$live/blocks/section.ts"` )
+- `Image` (`import { Image } from "deco-sites/std/components/types.ts"`) e outros componentes da biblioteca padrão deco
+- Arrays dos tipos indicados acima
 
-2. Acesse o Admin de _deco.cx_ em https://deco.cx/admin, selecione seu Site e vá
-   em `Library`.
+Além dos tipos acima, é possível anotar algumas propriedades para que o formulário do admin altere o mecanismo de inserção ou para determinar alguns aspectos do comportamento da propriedade.
 
-3. Certifique-se de que `localhost:8000` esteja selecionado no Seletor de
-   Ambiente no canto superior direito da página.
+Como exemplo, vamos adicionar três novas propriedades ao nosso componente `LatestPosts`, uma para imagem (`photo`), outro para o corpo da postagem (`post`) e um para a hora da postagem.
 
-4. Procure `LatestPosts.tsx` na barra lateral esquerda.
+```tsx
+import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
+import Image from "deco-sites/std/components/Image.tsx";
 
-5. **Pronto!** Agora você pode configurar `props` para essa Section, clicar em
-   `Salvar` e ver como ela está sendo renderizada. O _preview_ atualizará
-   automaticamente se você alterar o código da Section localmente.
+export interface Props {
+   /**
+    * @title Post image.
+    */
+   photo?: DecoImage;
+   /**
+   * @title Post body.
+   */
+   post: string;
+   /**
+   * @title Publish date.
+   * @format datetime
+   */
+   datetime: string;
+   /**
+   * @title Post title.
+   */
+   title: string;
+}
 
-<img width="994" alt="Visualização do Editor de Section no Admin da deco" src="https://user-images.githubusercontent.com/18706156/225371920-e1c35a7a-c994-4b96-b9bd-554caab02455.png" >
+export default function LatestPosts({ title, photo }: Props) {
+   return (
+      <div>
+      {photo && <Image
+         src={photo}
+         alt={`${title} image`}
+         height={500}
+         width={500}
+         class="rounded"
+      />}
+      <h1 class="font-bold">{title}</h1>
+      <p>This is an example section</p>
+      </div>
+   );
+}
+```
 
-## Leitura adicional
+Ao salvar e carregar o admin no ambiente local (com o `deno` em execução), é possível ver que o admin prepara componentes próprios de formulário para a colocação de imagens, data, bem como sinaliza o que é cada campo a partir do `title` indicado em código.
 
-As Section são um dos conceitos mais poderosos da _deco.cx_, e há muito mais
-você pode fazer com elas. Leia estas Receitas para saber mais sobre as
-funcionalidades de Sections:
+# Tematizando a Section com DaisyUI
 
-- [Sections customizáveis](/docs/pt/recipes/customizable-sections)
-- [Carregando dados de APIs](/docs/pt/tutorials/data-fetching)
+No projeto base deco, é possível acessar uma Section especial, a `Theme.tsx`. Esta section define tokens e nomes especiais de classes que podem ser utilizadas por outras Sections seguindo a estrutura da ferramenta DaisyUI. Dentro do `Theme.tsx` é possível observar alguns tokens como o de cores principais:
 
-> _Dica_: Se você usa VSCode,
-> [aqui](https://gist.github.com/lucis/9ac9756ce7df18033d53e5c03ad8a62d) estão
-> alguns _snippets_ pra auxiliar na criação desses componentes.
+```tsx
+export interface MainColors {
+  /**
+   * @format color
+   * @title Base
+   * @default #FFFFFF
+   */
+  "base-100": string;
+  /**
+   * @format color
+   * @title Primary
+   * @default #003232
+   */
+  "primary": string;
+  /**
+   * @format color
+   * @title Scondary
+   * @default #8C3D3D
+   */
+  "secondary": string;
+  /**
+   * @format color
+   * @title Tertiary
+   * @default #00FF7F
+   */
+  "tertiary": string;
+}
+```
+
+Adapte a classe de postagens para fazer uso de alguns tokens. Por exemplo, o título principal da postagem agora segue a cor primária do site.
+
+```tsx
+import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
+import Image from "deco-sites/std/components/Image.tsx";
+
+export interface Props {
+   /**
+    * @title Post image.
+    */
+   photo?: DecoImage;
+   /**
+   * @title Post body.
+   */
+   post: string;
+   /**
+   * @title Publish date.
+   * @format datetime
+   */
+   datetime: string;
+   /**
+   * @title Post title.
+   */
+   title: string;
+}
+
+export default function LatestPosts({ title, photo }: Props) {
+   return (
+      <div>
+      {photo && <Image
+         src={photo}
+         alt={`${title} image`}
+         height={500}
+         width={500}
+         class="rounded"
+      />}
+      <h1 class="font-bold text-primary">{title}</h1>
+      <p>This is an example section</p>
+      </div>
+   );
+}
+```
+
+O cõdigo fonte do `Theme.tsx` apresenta diferentes usos dos tokens. Agora, caso um componente de `Theme` esteja na mesma página do `LatestPosts`, este último podera ser estilizado a partir do componente de tema.
+
+![Estilização com o componente de tema](https://github.com/deco-sites/starting/assets/882438/58860548-d4e4-46f8-a198-75461cf8ab86)
