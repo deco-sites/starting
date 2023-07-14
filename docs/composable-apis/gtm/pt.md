@@ -37,7 +37,7 @@ página.
 Se você criou um site na deco.cx baseado no nosso
 [starter de ecommerce](https://fashion.deco.site/), ele **já tem todo o código
 necessário para se integrar com o GTM**. No entanto, é necessário configurar um bloco section chamado analytics **Analytics** adicionando a propriedade `trackingId` com o ID do
-container
+[container]
 (https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation)
 previamente configurado.
 
