@@ -31,6 +31,10 @@ tags in a service worker and improves the load time of the page.
 
 ## Integrating GTM in deco.cx
 
+---
+todo todo tod: update with the pt version
+---
+
 If you created a site on deco.cx based on our
 [ecommerce starter](https://fashion.deco.site/), it **already has all the code
 needed to integrate with GTM**. However, it is necessary to configure the global
