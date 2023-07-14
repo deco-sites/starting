@@ -44,13 +44,13 @@ previamente configurado.
 Para isso, siga os passos:
 
 1. Abra a página **Blocos** no Admin da deco.cx
-2. Selecione os blocos do tipo `sections`.
-3. Selecione o bloco section salvo, cujo nome é `analytics`.
+2. Selecione `Sections`.
+3. Busque por `Analytics`.
 4. Edite a Section `Analytics`, adicionando ou editando a propriedade **Tracking
    ID** com o ID do seu container no GTM.
-5. Salve e publique a section analytics.
+5. Salve e Publique o bloco.
 
-Todas as páginas que utilizam esta section, analytics, será atualizada
+Todas as páginas que utilizam esta section (`Analytics`) será atualizada
 automaticamente.
 
 É isso! Para testar que está tudo funcionando, faça o seguinte:
@@ -63,7 +63,7 @@ automaticamente.
 
 ## Integrando o Google Analytics 4
 
-> Recomendamos que utilize o Google Analytics como tag do GTM para evitar interferência. Caso utilize google analytics pelo gtag, adicione seu `GA measurement id` na propriedade `GA measurement ids` da section analytics. 
+> Recomendamos que utilize o Google Analytics como tag do GTM para evitar interferência. Caso utilize Google Analytics pelo GTag, adicione seu `GA measurement id` na propriedade `GA measurement ids` da section analytics. 
 
 Se já existe uma tag do Google Analytics 4 (GA4) no container do GTM
 configurado, automaticamente o seu site deco.cx já estará enviando eventos para
