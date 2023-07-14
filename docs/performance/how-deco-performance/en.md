@@ -17,7 +17,7 @@ To understand deco's approach to web development, you first need to understand h
 Web development in the 90s was pretty straight forward. Create a `.html` file, write its content in plain html, link it to images and style it with a `.css` file. Place all files in one folder and upload it to your server. When users visit your website, the server responds with the static content and people can access your static content. 
 
 ## 2000s
-In the 2000s, people started to realize that the web is a great place for doing business. The sheer availability and reach of the web, allowed business to reach customers on distant lands. One problem, however, was that creating complex and dynamic interactions, like login forms and interactive checkout experiences, required more from the web than plain html. JavaScript gained popularity in this decade, however, it wasn't powerfull enough for managing the life cycle of entire applications. That's when we see the rise of smart servers, like php, django and rails. 
+In the 2000s, people started to realize that the web is a great place for doing business. The sheer availability and reach of the web, allowed business to reach customers on distant lands. One problem, however, was that creating complex and dynamic interactions, like login forms and interactive checkout experiences, required more from the web than plain html. JavaScript gained popularity in this decade, however, it wasn't powerfull enough for managing the entire applications. That's when frameworks like django and rails gained popularity. 
 These frameworks allowed developers to generate specific html content for specific users, unlocking custom experiences, like a new feature for payed users for instance. 
 
 1. How client/server works. How to create a 
