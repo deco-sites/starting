@@ -16,7 +16,7 @@ It's very important to have control and autonomy to manage your pages and blocks
 4. By clicking on the `Revisions` tab, you can access a list of versions for this page (or block) and who was responsible for making them. You can also inspect what has changed between different versions by clicking on the version you want. <img width="1440" alt="image" src="https://user-images.githubusercontent.com/84691125/253417506-8df4b1c5-f3eb-4362-b078-47ae068a672c.png">
 5. When you make changes to any page or block you need to click on `Save`, otherwise the changes you've made will be lost. <img width="1440" alt="image" src="https://user-images.githubusercontent.com/84691125/253417783-ddba9529-bd5a-4196-9fe5-e9a5e2495534.png">
 6. Afterwards, a new revision will be generated with the change you just saved. However, it's important to keep in mind that this version is not yet published.<img width="1440" alt="image" src="https://user-images.githubusercontent.com/84691125/253417839-2d3bc0ea-6f0a-43bc-9d4e-c90001dbe5da.png">
-6. If you want the changes you've made to be published, after saving you need to click on `Publish`, to replace the current published version of your page or to create an A/B test with your changes.<img width="1440" alt="image" src="https://user-images.githubusercontent.com/84691125/253417892-d188bb57-6c31-414e-b59b-9911b2132c43.png">
+7. If you want the changes you've made to be published, after saving you need to click on `Publish`, to replace the current published version of your page or to create an A/B test with your changes.<img width="1440" alt="image" src="https://user-images.githubusercontent.com/84691125/253417892-d188bb57-6c31-414e-b59b-9911b2132c43.png">
 
 # Releases 
 
