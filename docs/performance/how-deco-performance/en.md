@@ -17,10 +17,23 @@ To understand deco's approach to web development, you first need to understand h
 Web development in the 90s was pretty straight forward. Create a `.html` file, write its content in plain html, link it to images and style it with a `.css` file. Place all files in one folder and upload it to your server. When users visit your website, the server responds with the static content and people can access your static content. 
 
 ## 2000s
-In the 2000s, people started to realize that the web is a great place for doing business. The sheer availability and reach of the web, allowed business to reach customers on distant lands. One problem, however, was that creating complex and dynamic interactions, like login forms and interactive checkout experiences, required more from the web than plain html. JavaScript gained popularity in this decade, however, it wasn't powerfull enough for managing the entire applications. That's when frameworks like django and rails gained popularity. 
+In the 2000s, people started to realize that the web is a great place for doing business. The sheer availability and reach of the web, allowed business to reach customers on distant lands. One problem, however, was that creating complex and dynamic interactions, like login forms and interactive checkout experiences, required more from the web than plain html. JavaScript gained popularity in this decade, however, it wasn't powerfull enough for managing entire applications. That's when frameworks like django and rails gained popularity. 
 These frameworks allowed developers to generate specific html content for specific users, unlocking custom experiences, like a new feature for payed users for instance. 
 
-1. How client/server works. How to create a 
-2. How 
+The schematics below show how a page is rendered using these frameworks:
+// TODO: add schematics
+
+When the browser asks for a page, the server doesn't return a static `.html` stored in a folder. It now generates dynamically the html based on the user asking for that page. Also, the developer links some JavaScript to the generated `.html` to add client-side interactivity. 
+
+## 2010s
+The issue with the aforementioned stack is that the developer needs to be fluent in 4 different languages, HTML/CSS/JS and their framework language (python, ruby etc). Also, as the website grows in complexity, maintaining those isolated `.js` files becomes more and more difficult. To circunvent these issues, JS-first frameworks, like React and Angular started to appear. These frameworks usually work around the idea of a single page application (SPA) and use a server-side javascript runtime called Node.JS to run the framework server side. 
+The nice thing about this stack is that you completely remove the need of a forth language, sticking to the good&old HTML/CSS/JS. Also, the code becomes way more maintainable since you don't serve the JS as they are on the project, but you go through a "build" phase where the code base get compiled into multiple `.js` files that are then served to the browser. These files are called a bundle. Below you can see a diagram showing the process of writing a file in React and it being used for the browser
+
+The issue with the architecture above is that you ship the same code twice to browser, one in html format and another in JS format. This overuse of JS, alongside a process called [hydration]() makes initial boot times of websites using SPA, in general, worse than previous architectures. Another drawback of this architecture is that issues like memory leaks and overall RAM memory usage require attention. This is because navigations do not restart the JavaScript engine, making mistakes unforgiven.
+
+## 2020s
+The whole rationale behind SPAs was that at every generation, consumer electronics processing power would grow and these ineficiencies in boot times and memory consumption would be irrelevant. Although being true, this assumption did not realize in emerging markets where cheap mobile devices attached to poor network conditions can be found. Also, this assumption failed to take in consideration that websites grow in complexity, and although we have much better devices today, websites are much more demanding, making these issues of boot time and memory still relevant in the 2020s.
+
+
 
 # Deco rendering pipeline
