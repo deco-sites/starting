@@ -41,4 +41,9 @@ At deco, we bet on [Fresh's](https://fresh.deno.dev/) and [Astro's](https://astr
 Next section provides a deep dive into how deco island architecture and rendering pipeline works.
 
 # Deco rendering pipeline
+The diagram below shows how deco's rendering pipeline work. 
+// TODO: add diagram
 
+// TODO: explain the diagram.
+
+To best use this architecture for performance, try keeping the number of islands small and each island as light as possible. To achieve this, try thinking if the interaction can be done via anchor tags navigations, form submitions or CSS state selectors, like `:hover`, `:checked` etc.
