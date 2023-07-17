@@ -9063,6 +9063,21 @@
             },
             {
               "type": "string",
+              "const": "Post",
+              "default": "Post"
+            },
+            {
+              "type": "string",
+              "const": "BoldHeart",
+              "default": "BoldHeart"
+            },
+            {
+              "type": "string",
+              "const": "Chart",
+              "default": "Chart"
+            },
+            {
+              "type": "string",
               "const": "QuestionMarkCircle",
               "default": "QuestionMarkCircle"
             },
@@ -9185,6 +9200,11 @@
               "type": "string",
               "const": "Discord",
               "default": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "DiscordButton",
+              "default": "DiscordButton"
             },
             {
               "type": "string",
@@ -9527,6 +9547,287 @@
         "hrefSecondButton": {
           "type": "string",
           "title": "Href Second Button"
+        },
+        "iconSecondButton": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ChevronLeft",
+              "default": "ChevronLeft"
+            },
+            {
+              "type": "string",
+              "const": "ChevronRight",
+              "default": "ChevronRight"
+            },
+            {
+              "type": "string",
+              "const": "ChevronUp",
+              "default": "ChevronUp"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDown",
+              "default": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "Post",
+              "default": "Post"
+            },
+            {
+              "type": "string",
+              "const": "BoldHeart",
+              "default": "BoldHeart"
+            },
+            {
+              "type": "string",
+              "const": "Chart",
+              "default": "Chart"
+            },
+            {
+              "type": "string",
+              "const": "QuestionMarkCircle",
+              "default": "QuestionMarkCircle"
+            },
+            {
+              "type": "string",
+              "const": "User",
+              "default": "User"
+            },
+            {
+              "type": "string",
+              "const": "ShoppingCart",
+              "default": "ShoppingCart"
+            },
+            {
+              "type": "string",
+              "const": "Bars3",
+              "default": "Bars3"
+            },
+            {
+              "type": "string",
+              "const": "Heart",
+              "default": "Heart"
+            },
+            {
+              "type": "string",
+              "const": "MagnifyingGlass",
+              "default": "MagnifyingGlass"
+            },
+            {
+              "type": "string",
+              "const": "XMark",
+              "default": "XMark"
+            },
+            {
+              "type": "string",
+              "const": "Plus",
+              "default": "Plus"
+            },
+            {
+              "type": "string",
+              "const": "Minus",
+              "default": "Minus"
+            },
+            {
+              "type": "string",
+              "const": "MapPin",
+              "default": "MapPin"
+            },
+            {
+              "type": "string",
+              "const": "Phone",
+              "default": "Phone"
+            },
+            {
+              "type": "string",
+              "const": "Elo",
+              "default": "Elo"
+            },
+            {
+              "type": "string",
+              "const": "Mastercard",
+              "default": "Mastercard"
+            },
+            {
+              "type": "string",
+              "const": "Visa",
+              "default": "Visa"
+            },
+            {
+              "type": "string",
+              "const": "Pix",
+              "default": "Pix"
+            },
+            {
+              "type": "string",
+              "const": "Logo",
+              "default": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Facebook",
+              "default": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "Instagram",
+              "default": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok",
+              "default": "Tiktok"
+            },
+            {
+              "type": "string",
+              "const": "Truck",
+              "default": "Truck"
+            },
+            {
+              "type": "string",
+              "const": "Discount",
+              "default": "Discount"
+            },
+            {
+              "type": "string",
+              "const": "Return",
+              "default": "Return"
+            },
+            {
+              "type": "string",
+              "const": "CreditCard",
+              "default": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Deco",
+              "default": "Deco"
+            },
+            {
+              "type": "string",
+              "const": "Discord",
+              "default": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "DiscordButton",
+              "default": "DiscordButton"
+            },
+            {
+              "type": "string",
+              "const": "Trash",
+              "default": "Trash"
+            },
+            {
+              "type": "string",
+              "const": "FilterList",
+              "default": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp",
+              "default": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "logoVnda",
+              "default": "logoVnda"
+            },
+            {
+              "type": "string",
+              "const": "IconCart",
+              "default": "IconCart"
+            },
+            {
+              "type": "string",
+              "const": "PigMoney",
+              "default": "PigMoney"
+            },
+            {
+              "type": "string",
+              "const": "FastClock",
+              "default": "FastClock"
+            },
+            {
+              "type": "string",
+              "const": "FastPagespeed",
+              "default": "FastPagespeed"
+            },
+            {
+              "type": "string",
+              "const": "Check",
+              "default": "Check"
+            },
+            {
+              "type": "string",
+              "const": "WhiteArrow",
+              "default": "WhiteArrow"
+            },
+            {
+              "type": "string",
+              "const": "GreenArrow",
+              "default": "GreenArrow"
+            },
+            {
+              "type": "string",
+              "const": "Sale",
+              "default": "Sale"
+            },
+            {
+              "type": "string",
+              "const": "Book",
+              "default": "Book"
+            },
+            {
+              "type": "string",
+              "const": "Bag",
+              "default": "Bag"
+            },
+            {
+              "type": "string",
+              "const": "Cash",
+              "default": "Cash"
+            },
+            {
+              "type": "string",
+              "const": "VndaLogo",
+              "default": "VndaLogo"
+            },
+            {
+              "type": "string",
+              "const": "VTEXLogo",
+              "default": "VTEXLogo"
+            },
+            {
+              "type": "string",
+              "const": "ShopifyLogo",
+              "default": "ShopifyLogo"
+            },
+            {
+              "type": "string",
+              "const": "DecoLogo",
+              "default": "DecoLogo"
+            },
+            {
+              "type": "string",
+              "const": "OCCLogo",
+              "default": "OCCLogo"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRight",
+              "default": "ArrowRight"
+            },
+            {
+              "type": "string",
+              "const": "Support",
+              "default": "Support"
+            }
+          ],
+          "type": "string",
+          "title": "Icon Second Button"
         },
         "blur1Background": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
