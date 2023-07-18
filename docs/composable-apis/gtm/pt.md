@@ -77,11 +77,6 @@ _Exemplo de requisição collect que envia dados para o GA4_
 > configurado (ex: uBlock Origin). Alguns navegadores já integram adblocks por
 > padrão.
 
--------
-
-TODO TODO TODO TODO: update this sections
--------
-
 Entretanto, caso você queira analisar suas métricas **de acordo com os testes
 A/B criados na deco.cx**, é necessário fazer uma configuração extra no container
 GTM. Para isso, siga os passos:
