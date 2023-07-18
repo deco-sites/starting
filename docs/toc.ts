@@ -139,6 +139,12 @@ const tableOfContents: TableOfContents = [{
     slug: "developing/fetching-data-client",
   }, {
     title: {
+      pt: "Capturando exceções nas Sections",
+      en: "Sections error boundaries",
+    },
+    slug: "developing/error-boundaries",
+  }, {
+    title: {
       pt: "Importando Blocks de um site",
       en: "Import Blocks from a site",
     },
