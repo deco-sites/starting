@@ -33,7 +33,7 @@ export default function Community(
   }: Props,
 ) {
   return (
-    <section class="flex flex-col items-center justify-center lg:flex-row-reverse lg:gap-[75px] bg-white md:py-[63px] px-6 md:px-[2rem] max-w-screen-2xl mx-auto overflow-x-hidden overflow-y-hidden 2xl:overflow-x-unset 2xl:overflow-y-unset">
+    <section class="flex flex-col items-center justify-center lg:flex-row-reverse lg:gap-[75px] bg-white pt-[63px] pb-[40px] lg:pb-0 px-6 md:px-[2rem] max-w-screen-2xl mx-auto overflow-x-hidden overflow-y-hidden 2xl:overflow-x-unset 2xl:overflow-y-unset">
       <div class="flex justify-center relative lg:w-[50%] h-[110vw] md:h-auto min-h-[380px] sm:min-h-[800px] lg:min-h-[821px]">
         <div class="relative w-full min-h-[380px] sm:min-h-[800px] lg:min-h-[821px] min-w-[100vw] lg:min-w-[100%]">
           <Image
