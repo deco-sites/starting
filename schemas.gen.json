@@ -120,6 +120,7 @@
               "deco-sites/starting/sections/Header.tsx",
               "deco-sites/starting/sections/ImpactCalculator.tsx",
               "deco-sites/starting/sections/Integration.tsx",
+              "deco-sites/starting/sections/Links.tsx",
               "deco-sites/starting/sections/MainBanner.tsx",
               "deco-sites/starting/sections/Markdown.tsx",
               "deco-sites/starting/sections/Partner.tsx",
@@ -9315,6 +9316,26 @@
               "type": "string",
               "const": "Support",
               "default": "Support"
+            },
+            {
+              "type": "string",
+              "const": "Share",
+              "default": "Share"
+            },
+            {
+              "type": "string",
+              "const": "FilterList",
+              "default": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp",
+              "default": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "Linkedin",
+              "default": "Linkedin"
             }
           ],
           "type": "string",
@@ -9824,6 +9845,26 @@
               "type": "string",
               "const": "Support",
               "default": "Support"
+            },
+            {
+              "type": "string",
+              "const": "Share",
+              "default": "Share"
+            },
+            {
+              "type": "string",
+              "const": "FilterList",
+              "default": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp",
+              "default": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "Linkedin",
+              "default": "Linkedin"
             }
           ],
           "type": "string",
@@ -10594,6 +10635,534 @@
         "secondText"
       ],
       "title": "deco-sites/starting/components/ui/Integrations.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Link": {
+      "type": "object",
+      "properties": {
+        "icon": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ChevronLeft",
+              "default": "ChevronLeft"
+            },
+            {
+              "type": "string",
+              "const": "ChevronRight",
+              "default": "ChevronRight"
+            },
+            {
+              "type": "string",
+              "const": "ChevronUp",
+              "default": "ChevronUp"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDown",
+              "default": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "Post",
+              "default": "Post"
+            },
+            {
+              "type": "string",
+              "const": "BoldHeart",
+              "default": "BoldHeart"
+            },
+            {
+              "type": "string",
+              "const": "Chart",
+              "default": "Chart"
+            },
+            {
+              "type": "string",
+              "const": "QuestionMarkCircle",
+              "default": "QuestionMarkCircle"
+            },
+            {
+              "type": "string",
+              "const": "User",
+              "default": "User"
+            },
+            {
+              "type": "string",
+              "const": "ShoppingCart",
+              "default": "ShoppingCart"
+            },
+            {
+              "type": "string",
+              "const": "Bars3",
+              "default": "Bars3"
+            },
+            {
+              "type": "string",
+              "const": "Heart",
+              "default": "Heart"
+            },
+            {
+              "type": "string",
+              "const": "MagnifyingGlass",
+              "default": "MagnifyingGlass"
+            },
+            {
+              "type": "string",
+              "const": "XMark",
+              "default": "XMark"
+            },
+            {
+              "type": "string",
+              "const": "Plus",
+              "default": "Plus"
+            },
+            {
+              "type": "string",
+              "const": "Minus",
+              "default": "Minus"
+            },
+            {
+              "type": "string",
+              "const": "MapPin",
+              "default": "MapPin"
+            },
+            {
+              "type": "string",
+              "const": "Phone",
+              "default": "Phone"
+            },
+            {
+              "type": "string",
+              "const": "Elo",
+              "default": "Elo"
+            },
+            {
+              "type": "string",
+              "const": "Mastercard",
+              "default": "Mastercard"
+            },
+            {
+              "type": "string",
+              "const": "Visa",
+              "default": "Visa"
+            },
+            {
+              "type": "string",
+              "const": "Pix",
+              "default": "Pix"
+            },
+            {
+              "type": "string",
+              "const": "Logo",
+              "default": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Facebook",
+              "default": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "Instagram",
+              "default": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok",
+              "default": "Tiktok"
+            },
+            {
+              "type": "string",
+              "const": "Truck",
+              "default": "Truck"
+            },
+            {
+              "type": "string",
+              "const": "Discount",
+              "default": "Discount"
+            },
+            {
+              "type": "string",
+              "const": "Return",
+              "default": "Return"
+            },
+            {
+              "type": "string",
+              "const": "CreditCard",
+              "default": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Deco",
+              "default": "Deco"
+            },
+            {
+              "type": "string",
+              "const": "Discord",
+              "default": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "DiscordButton",
+              "default": "DiscordButton"
+            },
+            {
+              "type": "string",
+              "const": "Trash",
+              "default": "Trash"
+            },
+            {
+              "type": "string",
+              "const": "FilterList",
+              "default": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp",
+              "default": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "logoVnda",
+              "default": "logoVnda"
+            },
+            {
+              "type": "string",
+              "const": "IconCart",
+              "default": "IconCart"
+            },
+            {
+              "type": "string",
+              "const": "PigMoney",
+              "default": "PigMoney"
+            },
+            {
+              "type": "string",
+              "const": "FastClock",
+              "default": "FastClock"
+            },
+            {
+              "type": "string",
+              "const": "FastPagespeed",
+              "default": "FastPagespeed"
+            },
+            {
+              "type": "string",
+              "const": "Check",
+              "default": "Check"
+            },
+            {
+              "type": "string",
+              "const": "WhiteArrow",
+              "default": "WhiteArrow"
+            },
+            {
+              "type": "string",
+              "const": "GreenArrow",
+              "default": "GreenArrow"
+            },
+            {
+              "type": "string",
+              "const": "Sale",
+              "default": "Sale"
+            },
+            {
+              "type": "string",
+              "const": "Book",
+              "default": "Book"
+            },
+            {
+              "type": "string",
+              "const": "Bag",
+              "default": "Bag"
+            },
+            {
+              "type": "string",
+              "const": "Cash",
+              "default": "Cash"
+            },
+            {
+              "type": "string",
+              "const": "VndaLogo",
+              "default": "VndaLogo"
+            },
+            {
+              "type": "string",
+              "const": "VTEXLogo",
+              "default": "VTEXLogo"
+            },
+            {
+              "type": "string",
+              "const": "ShopifyLogo",
+              "default": "ShopifyLogo"
+            },
+            {
+              "type": "string",
+              "const": "DecoLogo",
+              "default": "DecoLogo"
+            },
+            {
+              "type": "string",
+              "const": "OCCLogo",
+              "default": "OCCLogo"
+            },
+            {
+              "type": "string",
+              "const": "ArrowRight",
+              "default": "ArrowRight"
+            },
+            {
+              "type": "string",
+              "const": "Support",
+              "default": "Support"
+            },
+            {
+              "type": "string",
+              "const": "Share",
+              "default": "Share"
+            },
+            {
+              "type": "string",
+              "const": "FilterList",
+              "default": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp",
+              "default": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "Linkedin",
+              "default": "Linkedin"
+            }
+          ],
+          "type": "string",
+          "description": "20px transparent png recommended",
+          "title": "Icon"
+        },
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "title": "Link"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Link[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Link"
+      },
+      "title": "Link[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Social": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "Instagram",
+              "default": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "Facebook",
+              "default": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "Linkedin",
+              "default": "Linkedin"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp",
+              "default": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "Discord",
+              "default": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok",
+              "default": "Tiktok"
+            }
+          ],
+          "type": "string",
+          "title": "Label"
+        }
+      },
+      "required": [
+        "href",
+        "label"
+      ],
+      "title": "Social"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Social[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Social"
+      },
+      "title": "Social[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "header": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Title"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Description"
+            },
+            "logo": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Logo"
+            },
+            "textColor": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Text Color"
+            },
+            "link": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Link"
+            }
+          },
+          "required": [],
+          "title": "Header"
+        },
+        "links": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Link[]",
+              "title": "Items"
+            },
+            "style": {
+              "type": "object",
+              "properties": {
+                "textColor": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Text Color"
+                },
+                "backgroundColors": {
+                  "type": "object",
+                  "properties": {
+                    "neutral": {
+                      "type": "array",
+                      "items": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "title": "Neutral"
+                    },
+                    "hover": {
+                      "type": "array",
+                      "items": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "title": "Hover"
+                    }
+                  },
+                  "required": [],
+                  "title": "Background Colors"
+                }
+              },
+              "required": [],
+              "title": "Style"
+            }
+          },
+          "required": [],
+          "title": "Links"
+        },
+        "social": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Social[]",
+              "title": "Items"
+            },
+            "style": {
+              "type": "object",
+              "properties": {
+                "iconColor": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Icon Color"
+                }
+              },
+              "required": [],
+              "title": "Style"
+            }
+          },
+          "required": [],
+          "title": "Social"
+        },
+        "background": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Image"
+            },
+            "backgroundColors": {
+              "type": "array",
+              "items": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "title": "Background Colors"
+            }
+          },
+          "required": [],
+          "title": "Background"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/starting/components/ui/Links.tsx@Props"
     },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL01haW5CYW5uZXIudHN4@bannerProps": {
       "type": "object",
@@ -14534,6 +15103,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9MaW5rcy50c3g=": {
+      "title": "deco-sites/starting/sections/Links.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0xpbmtzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/Links.tsx"
+          ],
+          "default": "deco-sites/starting/sections/Links.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9NYWluQmFubmVyLnRzeA==": {
       "title": "deco-sites/starting/sections/MainBanner.tsx",
       "type": "object",
@@ -16092,6 +16682,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbnRlZ3JhdGlvbi50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9MaW5rcy50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9NYWluQmFubmVyLnRzeA=="

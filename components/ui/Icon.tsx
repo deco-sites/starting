@@ -56,7 +56,11 @@ export type AvailableIcons =
   | "DecoLogo"
   | "OCCLogo"
   | "ArrowRight"
-  | "Support";
+  | "Support"
+  | "Share"
+  | "FilterList"
+  | "WhatsApp"
+  | "Linkedin";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
