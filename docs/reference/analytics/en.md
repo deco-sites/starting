@@ -156,3 +156,8 @@ export const sendEvent = <E extends AnalyticsEvent>(event: E) => {
 };
 
 ```
+
+## Integrating cart data with the AnalyticsItem type
+
+To integrate a new cart data model, add a data mapper in the `useCart.ts` hook of the platform you are implementing.
+Example from the [VTEX useCart](https://github.com/deco-sites/std/blob/main/packs/vtex/hooks/useCart.ts).

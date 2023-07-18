@@ -158,3 +158,8 @@ export const sendEvent = <E extends AnalyticsEvent>(event: E) => {
 };
 
 ```
+
+## Integrando dado do carrinho com o tipo AnalyticsItem 
+
+Para integrar um novo modelo de dados de carrinho, adicione um mapeador de dados no hook de `useCart.ts` da plataforma que está implementando.
+Exemplo do [useCart da VTEX](https://github.com/deco-sites/std/blob/main/packs/vtex/hooks/useCart.ts).
