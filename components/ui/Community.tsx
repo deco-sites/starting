@@ -60,8 +60,8 @@ export default function Community(
           preload={lazyload ? false : true}
           loading={lazyload ? "lazy" : "eager"}
           class="md:w-[80vw] absolute overflow-y-hidden w-full top-0 mt-[10%] px-6 md:px-0"
-          width={366}
-          height={339}
+          width={732}
+          height={678}
           src={peopleImage}
         />
       </div>
