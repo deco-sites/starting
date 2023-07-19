@@ -17,6 +17,11 @@ export interface Benefits {
   showbullets?: boolean;
 }
 
+export interface NeedOption {
+  name: string;
+  label: string;
+}
+
 export interface Props {
   /** @description settings of benefits section in page*/
   infor?: Benefits;
@@ -32,22 +37,31 @@ export interface Props {
     PlaceholderfieldPosition?: string;
     PlaceholderfieldSocial?: string;
     PlaceholderFieldExtra?: string;
+    PlaceholderFieldNeeds?: string;
     submiteName?: string;
     /** @description set the post url to action submit form business*/
     urlToActionBusiness: string;
     /** @description set the post url to action submit form developers*/
     urlToActionDev: string;
   };
+  FieldNeedOptions?: Array<NeedOption>;
 }
 
 export default function ContactUs(
-  { infor, langThanks = "en", formInfor }: Props,
+  { infor, langThanks = "en", formInfor, FieldNeedOptions = [
+    { name: "platform", label: "deco.cx platform" },
+    { name: "partnership", label: "Partnetship" },
+    { name: "whitelabel", label: "Whitelabel" },
+    { name: "deco.hub", label: "deco.hub" },
+    { name: "other", label: "Other (describe below)" },
+  ] }: Props,
 ) {
   const [active, setActive] = useState({
     btn1On: true,
     btn2On: false,
     selectedUrlToAction: "/",
   });
+
   return (
     <div class="flex flex-col items-top font-sans p-6 pt-[130px] pb-10 xl:p-40 gap-y-10 overflow-hidden xl:flex-row xl:gap-x-[120px]">
       <div class="w-full text-left xl:w-1/2">
@@ -164,6 +178,17 @@ export default function ContactUs(
             placeholder={formInfor?.PlaceholderfieldSocial || "Linkedin"}
             required
           />
+          <select
+            class="w-full h-[51px] border border-dark-green flex items-center px-4"
+            name="userNeeds"
+          >
+            <option disabled selected>{formInfor?.PlaceholderFieldNeeds || "What would you like to talk about?"}</option>
+            {
+              FieldNeedOptions.map(need => {
+                return <option name={need.name}>{need.label}</option>
+              })
+            }
+          </select>
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
