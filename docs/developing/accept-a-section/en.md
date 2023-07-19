@@ -9,7 +9,7 @@ In deco, you can create powerful and flexible [Sections](/docs/en/concepts/secti
 
 ## Overview
 
-When creating a Section that accepts other sections as parameters, you define an interface for the props of your Section component. This interface includes a property called `Section`, which is of type `Section`. The `Section` type is a generic type that represents any other section in deco.
+When creating a Section that accepts other sections as parameters, you define an interface for the props of your Section component. This interface includes a property  which is of type `Section`. The `Section` type is a generic type that represents any other section in deco.
 
 ## Implementation
 
@@ -17,7 +17,7 @@ To create a Section that accepts other Sections as parameters, follow these step
 
 1. Import the `Section` type from `$live/blocks/section.ts`.
 
-2. Define an interface for the props of your section component. Include a property called `section`, which is of type `Section`.
+2. Define an interface for the props of your section component. Include a property called `myProp`, which is of type `Section`.
 
 ```tsx
 // MySection.tsx
@@ -25,10 +25,10 @@ To create a Section that accepts other Sections as parameters, follow these step
 import { Section } from "$live/blocks/section.ts";
 
 export interface Props {
-  section: Section;
+  myProp: Section;
 }
 
-export default function MySection({ section: { Component, props } }: Props) {
+export default function MySection({ myProp: { Component, props } }: Props) {
   return (
     <div>
       <Component {...props} />
@@ -37,7 +37,7 @@ export default function MySection({ section: { Component, props } }: Props) {
 }
 ```
 
-3. Inside your section component, access the `Component` and `props` properties from the `section` prop. The `Component` property represents the component function of the section passed as a parameter, and the `props` property contains the props of that section.
+3. Inside your section component, access the `Component` and `props` properties from the `myProp` prop. The `Component` property represents the component function of the section passed as a parameter, and the `props` property contains the props of that section.
 
 ## Example
 
@@ -71,12 +71,12 @@ Now, you want to create a higher-order section called `ProductContainerSection`,
 import { Section } from "$live/blocks/section.ts";
 
 export interface Props {
-  section: Section;
+  myProp: Section;
 }
 
-export default function ProductContainerSection({ section: { Component, props } }: Props) {
+export default function ProductContainerSection({ myProp: { Component, props } }: Props) {
   return (
-    <div className="product-container">
+    <div className="flex gap-4">
       <Component {...props} />
     </div>
   );
@@ -84,18 +84,6 @@ export default function ProductContainerSection({ section: { Component, props } 
 ```
 
 With this setup, you can now use `ProductContainerSection` to wrap any other section, including the `ProductCardSection`, and add a container around it.
-
-```tsx
-import ProductCardSection from "./ProductCardSection.tsx";
-import ProductContainerSection from "./ProductContainerSection.tsx";
-
-// Usage in your app
-const productProps = { title: "Product A", price: 29.99, imageUrl: "/product-a.jpg" };
-
-<MySection section={ProductContainerSection} props={productProps} />
-```
-
-In this example, we pass `ProductCardSection` as a parameter to `ProductContainerSection` and provide the necessary props for `ProductCardSection`. The result will be a product card wrapped inside a container, all achieved through the composability of sections.
 
 ## Note
 

@@ -9,7 +9,7 @@ No deco, você pode criar [Seções](/docs/pt-br/concepts/section) poderosas e f
 
 ## Visão Geral
 
-Ao criar uma Seção que aceita outras seções como parâmetros, você define uma interface para as props do seu componente de Seção. Essa interface inclui uma propriedade chamada `section`, que é do tipo `Section`. O tipo `Section` é um tipo genérico que representa qualquer outra seção no deco.
+Ao criar uma Seção que aceita outras seções como parâmetros, você define uma interface para as props do seu componente de Seção. Essa interface inclui uma propriedade com o nome da sua escolha, que é do tipo `Section`. O tipo `Section` é um tipo genérico que representa qualquer outra seção no deco.
 
 ## Implementação
 
@@ -17,7 +17,7 @@ Para criar uma Seção que aceita outras Seções como parâmetros, siga estas e
 
 1. Importe o tipo `Section` de `$live/blocks/section.ts`.
 
-2. Defina uma interface para as props do seu componente de seção. Inclua uma propriedade chamada `section`, que é do tipo `Section`.
+2. Defina uma interface para as props do seu componente de seção. Inclua uma propriedade com nome de sua escolha, que é do tipo `Section`.
 
 ```tsx
 // MySection.tsx
@@ -25,10 +25,10 @@ Para criar uma Seção que aceita outras Seções como parâmetros, siga estas e
 import { Section } from "$live/blocks/section.ts";
 
 export interface Props {
-  section: Section;
+  myProp: Section;
 }
 
-export default function MySection({ section: { Component, props } }: Props) {
+export default function MySection({ myProp: { Component, props } }: Props) {
   return (
     <div>
       <Component {...props} />
@@ -37,7 +37,7 @@ export default function MySection({ section: { Component, props } }: Props) {
 }
 ```
 
-3. Dentro do seu componente de seção, acesse as propriedades `Component` e `props` da prop `section`. A propriedade `Component` representa a função do componente da seção passada como parâmetro, e a propriedade `props` contém as props dessa seção.
+3. Dentro do seu componente de seção, acesse as propriedades `Component` e `props` da prop `myProp`. A propriedade `Component` representa a função do componente da seção passada como parâmetro, e a propriedade `props` contém as props dessa seção.
 
 ## Exemplo
 
@@ -71,12 +71,12 @@ Agora, você deseja criar uma seção de ordem superior chamada `ProductContaine
 import { Section } from "$live/blocks/section.ts";
 
 export interface Props {
-  section: Section;
+  myProp: Section;
 }
 
-export default function ProductContainerSection({ section: { Component, props } }: Props) {
+export default function ProductContainerSection({ myProp: { Component, props } }: Props) {
   return (
-    <div className="product-container">
+    <div className="flex gap-4">
       <Component {...props} />
     </div>
   );
@@ -84,18 +84,6 @@ export default function ProductContainerSection({ section: { Component, props } 
 ```
 
 Com essa configuração, agora você pode usar `ProductContainerSection` para envolver qualquer outra seção, incluindo `ProductCardSection`, e adicionar um contêiner ao redor dela.
-
-```tsx
-import ProductCardSection from "./ProductCardSection.tsx";
-import ProductContainerSection from "./ProductContainerSection.tsx";
-
-// Uso em seu aplicativo
-const productProps = { title: "Produto A", price: 29.99, imageUrl: "/product-a.jpg" };
-
-<MySection section={ProductContainerSection} props={productProps} />
-```
-
-Neste exemplo, passamos `ProductCardSection` como um parâmetro para `ProductContainerSection` e fornecemos as props necessárias para `ProductCardSection`. O resultado será um cartão de produto envolvido por um contêiner, tudo isso alcançado por meio da composição de seções.
 
 ## Nota
 
