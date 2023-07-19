@@ -313,7 +313,7 @@ export default function Header(props: Props) {
           </li>
           <div
             class={open
-              ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[63px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
+              ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
               : "hidden"}
           >
             <ul class="flex flex-col divide-y divide-semi-white-13">

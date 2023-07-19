@@ -54,7 +54,7 @@ export default function MainBanner(
         "flex flex-col mb-0 pb-[5rem]"}
     >
       <div class="max-w-screen-2xl m-auto">
-        <div class="max-w-[100vw] px-6 pt-24 pb-2 md:px-[2rem] md:pt-36 2xl:max-w-[1280px]">
+        <div class="max-w-[100vw] px-6 pt-36 pb-2 md:px-[2rem] md:pt-36 2xl:max-w-[1280px]">
           <h1
             class={`${
               themeIsLigth ? "text-dark-green" : "text-white"
