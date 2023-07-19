@@ -139,10 +139,22 @@ const tableOfContents: TableOfContents = [{
     slug: "developing/fetching-data-client",
   }, {
     title: {
-      pt: "Capturando exceções nas Sections",
+      pt: "Capturando exceções nas Seções",
       en: "Sections error boundaries",
     },
     slug: "developing/error-boundaries",
+  }, {
+    title: {
+      pt: "Redirecionando usuários a partir de Seções",
+      en: "Redirecting users from Sections",
+    },
+    slug: "developing/redirecting-users",
+  }, {
+    title: {
+      pt: "Aceitando uma Seção como parâmetro da minha Seção",
+      en: "Accepting Other Sections as Parameters in Your Section",
+    },
+    slug: "developing/accept-a-section",
   }, {
     title: {
       pt: "Importando Blocks de um site",
