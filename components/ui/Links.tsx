@@ -1,4 +1,5 @@
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import Icon, { AvailableIcons } from "./Icon.tsx";
 import Text from "./Text.tsx";
 import type { ComponentChildren } from "preact";
@@ -25,6 +26,8 @@ export interface Props {
   header?: {
     title?: string;
     description?: string;
+    /** @description overrides Description */
+    richDescription?: HTML;
     /** @description 150p x 150p image recommended */
     logo?: LiveImage;
     /** @description color to be used in title and description */
@@ -64,19 +67,26 @@ function Links(props: Props) {
   const iconColorClass = generateIconColorClass(props);
   const headerTextClass = generateHeaderTextColor(props);
   const linkClass = generateLinkClasses(props);
-  const logoOrIcon = header?.logo ? (
-    <img class="w-full" decoding="async" src={header.logo} alt={header.title} />
-  ) : (
-    <Icon id="Logo" size={150} />
-  );
+  const logoOrIcon = header?.logo
+    ? (
+      <img
+        class="w-full"
+        decoding="async"
+        src={header.logo}
+        alt={header.title}
+      />
+    )
+    : <Icon id="Logo" size={150} />;
 
-  const maybeLink = header?.link ? (
-    <a href={header?.link!} target="_blank">
-      {logoOrIcon}
-    </a>
-  ) : (
-    logoOrIcon
-  );
+  const maybeLink = header?.link
+    ? (
+      <a href={header?.link!} target="_blank">
+        {logoOrIcon}
+      </a>
+    )
+    : (
+      logoOrIcon
+    );
 
   return (
     <BaseContainer background={background}>
@@ -93,7 +103,7 @@ function Links(props: Props) {
           </Text>
         )}
 
-        {Boolean(header?.description) && (
+        {!header?.richDescription && Boolean(header?.description) && (
           <Text
             tone="default"
             class={`text-center ${headerTextClass}`}
@@ -101,6 +111,11 @@ function Links(props: Props) {
           >
             {header?.description}
           </Text>
+        )}
+
+        {Boolean(header?.richDescription) && (
+          <div dangerouslySetInnerHTML={{ __html: header?.richDescription! }}>
+          </div>
         )}
       </header>
 
@@ -171,7 +186,7 @@ function Links(props: Props) {
 function generateColorClasses(
   colors?: string[],
   gradientDirection = "r",
-  prefix = ""
+  prefix = "",
 ) {
   if (!colors || colors.length === 0) return "";
   if (colors.length === 1) return `${prefix}bg-[${colors[0]}]`;
