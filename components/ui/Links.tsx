@@ -1,5 +1,6 @@
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
+import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 import Icon, { AvailableIcons } from "./Icon.tsx";
 import Text from "./Text.tsx";
 import type { ComponentChildren } from "preact";
@@ -114,8 +115,7 @@ function Links(props: Props) {
         )}
 
         {Boolean(header?.richDescription) && (
-          <div dangerouslySetInnerHTML={{ __html: header?.richDescription! }}>
-          </div>
+          <HTMLRenderer html={header?.richDescription!} />
         )}
       </header>
 
