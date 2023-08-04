@@ -28,6 +28,7 @@ Replace `$SITE` in the URL with the actual name of your site.
 ## Step 4: Access "Manifest" and Choose "Installed Apps"
 
 After opening the URL, you will be directed to a page that shows your site's middleware. Access the "Manifest" section, and if "Installed Apps" is not chosen yet, select it from the options.
+<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/db1c43c6-8bac-4413-94ed-320974b6c24f">
 
 ## Step 5: Add the App
 
@@ -36,6 +37,8 @@ Click on the "Add Apps" button to install the desired App on your site. A list o
 ## Step 6: Choose Your Desired App and Configure the State
 
 Choose the App you want to install from the list. You will be prompted to fulfill the required state of the App. This may include providing certain configurations or parameters to customize the App's behavior within your site.
+
+<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/ef02574e-5670-4c20-87d6-c0f0efd5122c">
 
 ## Step 7: Save and Publish
 
