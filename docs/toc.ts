@@ -2,7 +2,7 @@ import { join } from "https://deno.land/std@0.190.0/path/mod.ts";
 
 type LocalizedTitle = { pt?: string; en?: string };
 type Entry = { title: LocalizedTitle; slug?: string };
-type TopLevelEntry = Entry & { children?: Array<Entry> };
+type TopLevelEntry = Entry & { children?: Array<TopLevelEntry> };
 
 type TableOfContents = Array<TopLevelEntry>;
 
@@ -394,7 +394,7 @@ export const getNextAndPreviousPost = (
 
   const currentIndex = tableOfContentsEntries.findLastIndex((
     { slug: currentSlug },
-  ) => currentSlug === slug);
+  ) => currentSlug && slug.includes(currentSlug));
 
   const previous = currentIndex === 0 ? undefined : getNextPreviousForEntry(
     language,
