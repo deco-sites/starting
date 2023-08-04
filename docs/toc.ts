@@ -47,6 +47,12 @@ const tableOfContents: TableOfContents = [{
       en: "Restoring versions",
     },
     slug: "getting-started/releases-revisions",
+  }, {
+    title: {
+      pt: "Instalando Apps",
+      en: "Installing Apps",
+    },
+    slug: "getting-started/installing-an-app",
   }],
 }, {
   title: {
@@ -95,6 +101,12 @@ const tableOfContents: TableOfContents = [{
       en: "Segment",
     },
     slug: "concepts/segment",
+  }, {
+    title: {
+      pt: "App",
+      en: "App",
+    },
+    slug: "concepts/app",
   }],
 }, {
   title: {
@@ -161,6 +173,18 @@ const tableOfContents: TableOfContents = [{
       en: "Import Blocks from a site",
     },
     slug: "developing/importing-other-sites",
+  }, {
+    title: {
+      pt: "Desenvolvendo Apps",
+      en: "Developing Apps",
+    },
+    slug: "developing/creating-an-app",
+  }, {
+    title: {
+      pt: "Instalando Apps",
+      en: "Installing Apps",
+    },
+    slug: "developing/making-an-app-installable",
   }],
 }, {
   title: {
