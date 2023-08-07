@@ -28,7 +28,7 @@ Replace `$SITE` in the URL with the actual name of your site.
 ## Step 4: Access "Apps" and Choose "Installed Apps"
 
 After opening the URL, you will be directed to a page that shows your site's middleware. Access the "Apps" section, and if "Installed Apps" is not chosen yet, select it from the options.
-<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/db1c43c6-8bac-4413-94ed-320974b6c24f">
+<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/88dea405-fb9c-44ca-8ea3-3d26dae13531">
 
 ## Step 5: Add the App
 
