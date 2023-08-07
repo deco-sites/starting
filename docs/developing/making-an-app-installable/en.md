@@ -1,6 +1,6 @@
 ---
 description: Making an App Installable
-since: 1.23.3
+since: 1.24.0
 ---
 
 # Making an App Installable

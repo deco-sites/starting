@@ -1,6 +1,6 @@
 ---
 description: Apps - Capacidades de Negócios para os seus Sites Deco
-since: 1.23.3
+since: 1.24.0
 ---
 
 # Deco Apps

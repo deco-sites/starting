@@ -1,6 +1,6 @@
 ---
 description: Desenvolvendo um App
-since: 1.23.3
+since: 1.24.0
 ---
 
 # Pré-requisitos

@@ -1,6 +1,6 @@
 ---
 description: Tornando um app Instalável
-since: 1.23.3
+since: 1.24.0
 ---
 
 Para tornar o seu App Deco instalável em um site Deco, siga estes simples passos:
