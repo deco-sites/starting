@@ -5,85 +5,79 @@ since: 1.24.0
 
 # Pré-requisitos
 
-Antes de começar, certifique-se de ter os seguintes itens instalados em seu sistema:
+Antes de começar, verifique se você possui os seguintes itens instalados no seu sistema:
 
 - [Deno](https://deno.land/)
-- [Deco CLI](https://deco.cx/docs/en/developing/getting-started#installation)
 
-## Passo 1: Inicializando o App Deco
+## Passo 1: Inicializando o App deco
 
-Para começar o desenvolvimento do seu App Deco, execute o seguinte comando em seu terminal:
+Para iniciar o desenvolvimento do seu App deco, execute o seguinte comando no seu terminal:
 
 ```bash
 deno run -A https://deco.cx/init
 ```
 
-Esse comando irá inicializar um novo projeto de App Deco no diretório atual. Escolha um nome significativo para o seu app quando solicitado.
+Este comando inicializará um novo projeto de App deco no diretório atual. Escolha um nome significativo para o seu app quando solicitado.
 
-## Passo 2: Navegando até o Diretório do App Deco
+## Passo 2: Navegando até o Diretório do App deco
 
-Após a inicialização ser concluída, navegue até o diretório do seu App Deco usando o seguinte comando:
+Após a inicialização ser concluída, navegue até o diretório do seu App deco usando o seguinte comando:
 
 ```bash
 cd $NOME_DO_SEU_APP
 ```
 
-Substitua `$NOME_DO_SEU_APP` pelo nome que você escolheu para o seu App Deco durante a inicialização.
+Substitua `$NOME_DO_SEU_APP` pelo nome que você escolheu para o seu App deco durante a inicialização.
 
-## Passo 3: Entendendo os Arquivos
+## Passo 3: Entendendo o Arquivo `mod.ts`
 
-Agora, vamos dar uma olhada nos arquivos do seu App Deco:
-
-### `state.ts`
+Agora, vamos dar uma olhada no arquivo `mod.ts` do seu App deco:
 
 ```ts
+import manifest, { name } from "./manifest.gen.ts";
+import type { Manifest } from "./manifest.gen.ts";
+export { name };
+import type { App, AppContext as AC } from "../deps.ts";
+
 export interface State {
   url: string;
 }
+export default function App(
+  state: State,
+): App<Manifest, State> {
+  return {
+    manifest,
+    state,
+  };
+}
+
+export type AppContext = AC<ReturnType<typeof App>>;
 ```
 
-Neste arquivo, você define o estado compartilhado do seu app. A interface `State` especifica as propriedades e seus tipos que serão utilizados por outros componentes dentro do seu App Deco. Por exemplo, nos exemplos anteriores, o arquivo `state.ts` foi definido com uma única propriedade `url`.
+O arquivo `mod.ts` é o coração do seu App deco e é escrito pelo desenvolvedor. Neste arquivo, você importa o `manifest` gerado automaticamente e define a interface `State`, que representa as propriedades do seu app. Pode ser usado para configurar API keys para uma chamada a alguma dada API.
 
-### `mod.ts`
+A função `App` é exportada e recebe o objeto `state` como argumento, representando o estado do seu app. Em seguida, ela retorna um objeto contendo o `manifest` e o `state` definidos. Essa função é fundamental para que o seu app funcione corretamente.
 
-Este arquivo é gerado automaticamente pelo Deco. Ele contém configurações e importações importantes que fazem seu App Deco funcionar perfeitamente. O tipo `AppContext` deve ser importado deste arquivo, permitindo que você acesse as propriedades definidas em `state.ts`.
+Por fim, é exportado o tipo `AppContext`, que representa o contexto do seu app e permite acessar as propriedades definidas no `mod.ts`.
 
-### `loaders/bin.ts`
+## Passo 4: Desenvolvendo o seu App deco
 
-```ts
-import { AppContext } from "../mod.ts";
-export interface Props {
-  status: number;
-}
-export default function GetBin(
-  { status }: Props,
-  _req: Request,
-  ctx: AppContext,
-): Promise<Response> {
-  return fetch(`${ctx.url}/${status}`);
-}
-```
+Agora que você entende a estrutura básica do seu App deco, você pode começar a desenvolvê-lo. Sinta-se à vontade para adicionar mais componentes, como seções, ações, fluxos de trabalho ou manipuladores, para aprimorar a funcionalidade do seu app.
 
-Este é um exemplo de arquivo que representa um dos componentes que você pode criar no seu App Deco. Neste exemplo, temos um loader chamado `GetBin`, que busca dados de uma API usando o `ctx.url` definido no estado compartilhado. O loader recebe uma prop `status` e realiza uma busca com base no status fornecido.
+## Passo 5: Construindo o seu App deco
 
-## Passo 4: Desenvolvendo sua App
-
-Agora que você entende a estrutura básica do seu App Deco, pode começar a desenvolvê-lo. Sinta-se à vontade para adicionar mais componentes, como seções, ações, fluxos de trabalho ou manipuladores, para aprimorar a funcionalidade do seu app.
-
-## Passo 5: Buildando sua App
-
-Para ver o seu App Deco em ação, execute o seguinte comando:
+Para ver o seu App deco em ação, execute o seguinte comando:
 
 ```bash
 deno task start
 ```
 
-Este comando iniciará o seu app e gerará automaticamente os arquivos necessários para que ele seja utilizado por qualquer site Deco.
+Este comando iniciará o seu app e automaticamente gerará os arquivos necessários para torná-lo utilizável em qualquer site deco.
 
 ## Conclusão
 
-Parabéns! Você criou e desenvolveu com sucesso a seu própria App. Você aprendeu sobre os arquivos importantes no seu App Deco e como acessar as propriedades do estado compartilhado em outros componentes. Os Apps Deco oferecem uma maneira poderosa de agrupar e compartilhar capacidades empresariais, facilitando a manutenção e a escalabilidade de seus projetos Deco. Feliz codificação e sinta-se à vontade para explorar mais recursos do Deco para aprimorar ainda mais seus apps! 🚀
+Parabéns! Você criou e desenvolveu com sucesso o seu próprio App deco. Você aprendeu sobre o arquivo `mod.ts`, o coração do seu app, que permite que você defina o `manifest` e o `state` do seu app. Os Apps deco oferecem uma maneira poderosa de agrupar e compartilhar capacidades empresariais, tornando mais fácil a manutenção e escalabilidade dos seus projetos deco. Divirta-se codificando e sinta-se à vontade para explorar mais recursos do deco para aprimorar ainda mais os seus apps! 🚀
 
-## Leitura adicional
+## Leitura Adicional
 
-- [Tornar um App Instalável](/docs/pt/developing/installing-an-app)
+- [Tornando um App Instalável](/docs/en/developing/installing-an-app)

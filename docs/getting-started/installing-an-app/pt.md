@@ -5,11 +5,11 @@ since: 1.24.0
 
 # Pré-requisitos
 
-- Você deve possuir um site Deco com o App desejado já disponível no diretório de Apps, seguindo o tutorial [Tornando um app instalável](/docs/pt-br/developing/making-an-app-installable).
+- Você deve possuir um site deco com o App desejado já disponível no diretório de Apps, seguindo o tutorial [Tornando um app instalável](/docs/pt-br/developing/making-an-app-installable).
 
-## Passo 1: Faça o login no Deco Admin
+## Passo 1: Faça o login no deco Admin
 
-Primeiramente, faça o login em sua conta do Deco Admin acessando [https://deco.cx/admin](https://deco.cx/admin).
+Primeiramente, faça o login em sua conta do deco Admin acessando [https://deco.cx/admin](https://deco.cx/admin).
 
 ## Passo 2: Escolha o Site de Destino
 
@@ -46,6 +46,6 @@ Após configurar o state do App, clique em "Save and Publish" para aplicar as al
 
 ## Passo 8: Explore os Blocos Instalados
 
-Após a instalação do App, você poderá ver todos os blocos e componentes que o App inclui. Esses blocos podem ser usados para aprimorar o seu site Deco com as funcionalidades adicionais fornecidas pelo App instalado.
+Após a instalação do App, você poderá ver todos os blocos e componentes que o App inclui. Esses blocos podem ser usados para aprimorar o seu site deco com as funcionalidades adicionais fornecidas pelo App instalado.
 
-Parabéns! Você instalou com sucesso um App usando o Deco Admin. Divirta-se explorando as novas capacidades e recursos que o App instalado traz ao seu site Deco. Se necessário, você pode personalizar ainda mais o App instalado ou explorar outros Apps disponíveis para expandir ainda mais as funcionalidades dos seus projetos Deco. Aproveite a gestão e o aprimoramento dos seus sites Deco! 🚀
+Parabéns! Você instalou com sucesso um App usando o deco Admin. Divirta-se explorando as novas capacidades e recursos que o App instalado traz ao seu site deco. Se necessário, você pode personalizar ainda mais o App instalado ou explorar outros Apps disponíveis para expandir ainda mais as funcionalidades dos seus projetos deco. Aproveite a gestão e o aprimoramento dos seus sites deco! 🚀

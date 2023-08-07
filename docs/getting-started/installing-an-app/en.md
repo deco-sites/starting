@@ -5,11 +5,11 @@ since: 1.24.0
 
 # Prerequisites
 
-- You must have a Deco site with the desired App already available in the Apps directory by following the [making an app installable tutorial](/docs/en/developing/making-an-app-installable).
+- You must have a deco site with the desired App already available in the Apps directory by following the [making an app installable tutorial](/docs/en/developing/making-an-app-installable).
 
-## Step 1: Log in to Deco Admin
+## Step 1: Log in to deco Admin
 
-First, log in to your Deco Admin account by navigating to [https://deco.cx/admin](https://deco.cx/admin).
+First, log in to your deco Admin account by navigating to [https://deco.cx/admin](https://deco.cx/admin).
 
 ## Step 2: Choose Your Target Site
 
@@ -46,6 +46,6 @@ After configuring the state of the App, click on "Save and Publish" to apply the
 
 ## Step 8: Explore the Installed Blocks
 
-Once the App is installed, you will be able to see all the blocks and components that the App includes. These blocks can be used to enhance your Deco site with the additional functionalities provided by the installed App.
+Once the App is installed, you will be able to see all the blocks and components that the App includes. These blocks can be used to enhance your deco site with the additional functionalities provided by the installed App.
 
-Congratulations! You have successfully installed an App using Deco Admin. Enjoy exploring the new capabilities and features that the installed App brings to your Deco site. If needed, you can further customize the installed App or explore other available Apps to further expand the functionalities of your Deco projects. Happy managing and enhancing your Deco sites! 🚀
+Congratulations! You have successfully installed an App using deco Admin. Enjoy exploring the new capabilities and features that the installed App brings to your deco site. If needed, you can further customize the installed App or explore other available Apps to further expand the functionalities of your deco projects. Happy managing and enhancing your deco sites! 🚀

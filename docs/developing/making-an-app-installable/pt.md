@@ -3,7 +3,7 @@ description: Tornando um app Instalável
 since: 1.24.0
 ---
 
-Para tornar o seu App Deco instalável em um site Deco, siga estes simples passos:
+Para tornar o seu App deco instalável em um site deco, siga estes simples passos:
 
 1. Execute o seguinte comando em seu terminal para instalar o seu App:
 
@@ -19,4 +19,4 @@ Substitua `$NOME_DO_SEU_APP` pela localização da sua App, que pode ser uma pas
 deno task start
 ```
 
-Após concluir essas etapas, o seu App Deco estará instalado e pronto para ser usado em qualquer site Deco que você desejar. Agora você pode compartilhar e aproveitar suas capacidades empresariais de forma prática e eficiente. Divirta-se construindo e usando os seus Apps Deco! 🚀
+Após concluir essas etapas, o seu App deco estará instalado e pronto para ser usado em qualquer site deco que você desejar. Agora você pode compartilhar e aproveitar suas capacidades empresariais de forma prática e eficiente. Divirta-se construindo e usando os seus Apps deco! 🚀

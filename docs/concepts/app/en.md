@@ -38,7 +38,7 @@ To use a Deco App in your Deco site, you can run the following commands:
 1. To install the App:
 
    ```sh
-   deno eval 'import "$live/scripts/apps/install.ts"' $APP_URL
+   deno task install $APP_URL
    ```
 
    Replace `$APP_URL` with the path location or HTTP URL of the App.
@@ -46,7 +46,7 @@ To use a Deco App in your Deco site, you can run the following commands:
 2. To uninstall the App:
 
    ```sh
-   deno eval 'import "$live/scripts/apps/uninstall.ts"' $APP_URL
+   deno task uninstall $APP_URL
    ```
 
    Replace `$APP_URL` with the path location or HTTP URL of the App.
