@@ -25,9 +25,9 @@ https://deco.cx/admin/sites/$SITE/blocks/.%2Froutes%2F_middleware.ts
 
 Replace `$SITE` in the URL with the actual name of your site.
 
-## Step 4: Access "Manifest" and Choose "Installed Apps"
+## Step 4: Access "Apps" and Choose "Installed Apps"
 
-After opening the URL, you will be directed to a page that shows your site's middleware. Access the "Manifest" section, and if "Installed Apps" is not chosen yet, select it from the options.
+After opening the URL, you will be directed to a page that shows your site's middleware. Access the "Apps" section, and if "Installed Apps" is not chosen yet, select it from the options.
 <img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/db1c43c6-8bac-4413-94ed-320974b6c24f">
 
 ## Step 5: Add the App
