@@ -33,7 +33,7 @@ Any changes you make to the form are **automatically reflected** in the preview 
 
 Edit your site's SEO title, description, and image to suit what you're building, and ensure social media previews behave as expected. You can test different versions to see what fits best.
 
-After that, **click the Save button** on the top right to create a new revision of this block. Revisions are immutable versions of the edited data in the deco and are meant to be able to track and revert changes over time. Learn more about [here](/docs/en/getting-started/releases-revisions).
+After that, **click the Save button** on the top right to create a new revision of this block. Revisions are immutable versions of the edited data in the deco and are meant to be able to track and revert changes over time. Learn more about [here](/docs/en/getting-started/releases-revisio ns).
 
 ## Publishing the changes
 
