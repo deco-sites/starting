@@ -16,14 +16,17 @@ const tableOfContents: TableOfContents = [{
     slug: "getting-started/creating-a-site",
   }, {
     title: { pt: "Atualizando o SEO", en: "Updating SEO" },
-    slug: "getting-started/loader",
+    slug: "getting-started/updating-seo",
   }, {
     title: { pt: "Criando nova uma Página", en: "Creating a new Page" },
     slug: "getting-started/creating-a-new-page",
-  }, {
-    title: { pt: "Reusando Seções", en: "Reusing Sections" },
-    slug: "getting-started/reusing-sections",
-  }, {
+  },
+  // TODO
+  // {
+  //   title: { pt: "Reusando Seções", en: "Reusing Sections" },
+  //   slug: "getting-started/reusing-sections",
+  // },
+  {
     title: {
       pt: "Segmentação de Conteúdo",
       en: "Segmenting Content with Variants",
