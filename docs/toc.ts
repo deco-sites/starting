@@ -11,52 +11,59 @@ const tableOfContents: TableOfContents = [{
   slug: "overview",
 }, {
   title: { pt: "Comece agora", en: "Getting Started" },
-  children: [{
-    title: { pt: "Criando um Site", en: "Creating a Site" },
-    slug: "getting-started/creating-a-site",
-  }, {
-    title: { pt: "Atualizando o SEO", en: "Updating SEO" },
-    slug: "getting-started/updating-seo",
-  }, {
-    title: { pt: "Criando nova uma Página", en: "Creating a new Page" },
-    slug: "getting-started/creating-a-new-page",
-  },
-  // TODO
-  // {
-  //   title: { pt: "Reusando Seções", en: "Reusing Sections" },
-  //   slug: "getting-started/reusing-sections",
-  // },
-  {
-    title: {
-      pt: "Segmentação de Conteúdo",
-      en: "Segmenting Content with Variants",
+  children: [
+    {
+      title: { pt: "Criando um Site", en: "Creating a Site" },
+      slug: "getting-started/creating-a-site",
     },
-    slug: "getting-started/variants",
-  }, {
-    title: {
-      pt: "Adicionando domínios próprios",
-      en: "Adding custom domains",
+    {
+      title: { pt: "Atualizando o SEO", en: "Updating SEO" },
+      slug: "getting-started/updating-seo",
     },
-    slug: "getting-started/custom-domains",
-  }, {
-    title: {
-      pt: "Criando Redirecionamentos e Proxies",
-      en: "Adding Proxies and Redirects",
+    {
+      title: { pt: "Criando nova uma Página", en: "Creating a new Page" },
+      slug: "getting-started/creating-a-new-page",
+    }, // TODO
+    // {
+    //   title: { pt: "Reusando Seções", en: "Reusing Sections" },
+    //   slug: "getting-started/reusing-sections",
+    // },
+    {
+      title: {
+        pt: "Segmentação de Conteúdo",
+        en: "Segmenting Content with Variants",
+      },
+      slug: "getting-started/variants",
     },
-    slug: "getting-started/proxy-redirects",
-  }, {
-    title: {
-      pt: "Restaurando versões",
-      en: "Restoring versions",
+    {
+      title: {
+        pt: "Adicionando domínios próprios",
+        en: "Adding custom domains",
+      },
+      slug: "getting-started/custom-domains",
     },
-    slug: "getting-started/releases-revisions",
-  }, {
-    title: {
-      pt: "Instalando Apps",
-      en: "Installing Apps",
+    {
+      title: {
+        pt: "Criando Redirecionamentos e Proxies",
+        en: "Adding Proxies and Redirects",
+      },
+      slug: "getting-started/proxy-redirects",
     },
-    slug: "getting-started/installing-an-app",
-  }],
+    {
+      title: {
+        pt: "Restaurando versões",
+        en: "Restoring versions",
+      },
+      slug: "getting-started/releases-revisions",
+    },
+    {
+      title: {
+        pt: "Instalando Apps",
+        en: "Installing Apps",
+      },
+      slug: "getting-started/installing-an-app",
+    },
+  ],
 }, {
   title: {
     pt: "Conceitos",
@@ -182,6 +189,9 @@ const tableOfContents: TableOfContents = [{
       en: "Developing Apps",
     },
     slug: "developing/creating-an-app",
+  }, {
+    title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
+    slug: "developing/using-secrets",
   }, {
     title: {
       pt: "Instalando Apps",
