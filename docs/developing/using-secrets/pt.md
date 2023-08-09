@@ -37,6 +37,8 @@ Neste exemplo, o prop `secret` é declarado na interface `Props`. A função `lo
 
 Após declarar o prop de secret, os usuários podem configurar secrets para o seu site. No entanto, observe que a configuração de secrets apontando para `localhost` não funcionará. Você deve apontar para o domínio de produção, o que significa que você precisa de pelo menos um deployment declarando a dependência do secret.
 
+> Importante: Uma vez que o Secret for configurado, o valor original dele não é revelado na UI do Admin, ou seja, você precisa ter acesso ao segredo para saber o valor original dele.
+
 ## Passo 3: Lidando com o Desenvolvimento Local
 
 Ao desenvolver localmente, um secret tem um "nome" na interface do admin. Esse nome pode ser preenchido como uma variável de ambiente, que será usada localmente em vez da chave real usada em produção.

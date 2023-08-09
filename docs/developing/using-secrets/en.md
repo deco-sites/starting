@@ -37,6 +37,8 @@ In this example, the `secret` prop is declared in the `Props` interface. The `lo
 
 After declaring the secret prop, users can configure secrets for your site. However, note that configuring secrets pointing to localhost won't work. You should point to your production domain, which means you need at least one deployment declaring the secret dependency.
 
+> Important note: Secrets cannot be revealed on the Admin UI. They will be hidden by default.
+
 ## Step 3: Handling Local Development
 
 When developing locally, a secret has a "name" in the admin UI. This name can be fulfilled as an environment variable, which will be used locally instead of the actual key being used in production.
