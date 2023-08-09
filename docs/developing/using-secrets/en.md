@@ -35,7 +35,7 @@ In this example, the `secret` prop is declared in the `Props` interface. The `lo
 
 ## Step 2: Configuring Secrets
 
-After declaring the secret prop, users can configure secrets for your site. However, note that configuring secrets pointing to localhost won't work. You should point to your production domain, which means you need at least one deployment declaring the secret dependency.
+After declaring the secret prop, users can configure secrets for your site. However, note that testing secrets on localhost won't work. You should point to your production domain, which means you need at least one deployment declaring the secret dependency.
 
 > Important note: Secrets cannot be revealed on the Admin UI. They will be hidden by default.
 
@@ -43,6 +43,10 @@ After declaring the secret prop, users can configure secrets for your site. Howe
 
 When developing locally, a secret has a "name" in the admin UI. This name can be fulfilled as an environment variable, which will be used locally instead of the actual key being used in production.
 
-## Conclusion
+Note: You can set the envvar when running your site by passing before running your actual command, e.g
 
-Secrets provide a secure way to manage sensitive information in your sites. By declaring secret props and allowing users to configure them, you can ensure that your site's confidential data remains protected. Whether you're working on production deployments or local development, using secrets is a crucial step to enhance the security and functionality of your sites.
+```sh
+ENV_VAR=mysecretvalue deno task start
+```
+
+This will make the `ENV_VAR` available in runtime with the `mysecretvalue` value to be used locally.

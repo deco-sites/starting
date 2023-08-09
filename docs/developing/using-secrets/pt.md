@@ -43,6 +43,10 @@ Após declarar o prop de secret, os usuários podem configurar secrets para o se
 
 Ao desenvolver localmente, um secret tem um "nome" na interface do admin. Esse nome pode ser preenchido como uma variável de ambiente, que será usada localmente em vez da chave real usada em produção.
 
-## Conclusão
+Importante: Você pode setar uma variável de ambiente passando o valor dela antes de rodar o commando final, por exemplo:
 
-Secrets fornecem uma maneira segura de gerenciar informações sensíveis nos seus sites. Ao declarar props de secret e permitir que os usuários os configurem, você pode garantir que os dados confidenciais do seu site permaneçam protegidos. Seja trabalhando em implantações de produção ou no desenvolvimento local, usar secrets é um passo crucial para melhorar a segurança e a funcionalidade dos seus sites.
+```sh
+ENV_VAR=mysecretvalue deno task start
+```
+
+Isto fará com que o valor de `ENV_VAR` (que deve ser o nome da sua secret) seja `mysecretvalue` quando usada localmente.
