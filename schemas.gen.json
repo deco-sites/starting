@@ -86,6 +86,7 @@
               "./islands/FaviconImage.tsx",
               "./islands/Header.tsx",
               "./islands/ImpactCalculator.tsx",
+              "./islands/PopularDocuments.tsx",
               "./islands/RankingAnalyze.tsx",
               "./islands/RankingHeader.tsx",
               "./islands/SliderJS.tsx",
@@ -135,6 +136,7 @@
               "deco-sites/starting/sections/MainBanner.tsx",
               "deco-sites/starting/sections/Markdown.tsx",
               "deco-sites/starting/sections/Partner.tsx",
+              "deco-sites/starting/sections/PopularDocuments.tsx",
               "deco-sites/starting/sections/PopularTopics.tsx",
               "deco-sites/starting/sections/Pricing.tsx",
               "deco-sites/starting/sections/QuillText.tsx",
@@ -10852,6 +10854,75 @@
       ],
       "title": "deco-sites/starting/components/ui/ImpactCalculator.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvUG9wdWxhckRvY3VtZW50cy9Qb3B1bGFyRG9jdW1lbnRzLnRzeA==@Card": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "label": {
+          "type": "string",
+          "title": "Label"
+        }
+      },
+      "required": [
+        "href",
+        "image",
+        "label"
+      ],
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvUG9wdWxhckRvY3VtZW50cy9Qb3B1bGFyRG9jdW1lbnRzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "maxCardsMobile": {
+          "type": "number",
+          "title": "Max Cards Mobile"
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvUG9wdWxhckRvY3VtZW50cy9Qb3B1bGFyRG9jdW1lbnRzLnRzeA==@Card"
+          },
+          "title": "Cards"
+        },
+        "buttonLabel": {
+          "type": "string",
+          "title": "Button Label"
+        },
+        "lazyload": {
+          "anyOf": [
+            {
+              "type": "boolean",
+              "const": false,
+              "default": false
+            },
+            {
+              "type": "boolean",
+              "const": true,
+              "default": true
+            }
+          ],
+          "type": "boolean",
+          "title": "Lazyload"
+        }
+      },
+      "required": [
+        "title",
+        "maxCardsMobile",
+        "buttonLabel"
+      ],
+      "title": "deco-sites/starting/components/decohelp/help/PopularDocuments/PopularDocuments.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3JhbmtpbmcvQW5hbHl6ZUZvcm0udHN4@Link": {
       "type": "object",
       "properties": {
@@ -17254,6 +17325,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1BvcHVsYXJEb2N1bWVudHMudHN4": {
+      "title": "./islands/PopularDocuments.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvUG9wdWxhckRvY3VtZW50cy9Qb3B1bGFyRG9jdW1lbnRzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/PopularDocuments.tsx"
+          ],
+          "default": "./islands/PopularDocuments.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1JhbmtpbmdBbmFseXplLnRzeA==": {
       "title": "./islands/RankingAnalyze.tsx",
       "type": "object",
@@ -18234,6 +18326,27 @@
             "deco-sites/starting/sections/Partner.tsx"
           ],
           "default": "deco-sites/starting/sections/Partner.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Qb3B1bGFyRG9jdW1lbnRzLnRzeA==": {
+      "title": "deco-sites/starting/sections/PopularDocuments.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvUG9wdWxhckRvY3VtZW50cy9Qb3B1bGFyRG9jdW1lbnRzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/PopularDocuments.tsx"
+          ],
+          "default": "deco-sites/starting/sections/PopularDocuments.tsx"
         }
       }
     },
@@ -19755,6 +19868,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1BvcHVsYXJEb2N1bWVudHMudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL1JhbmtpbmdBbmFseXplLnRzeA=="
         },
         {
@@ -19924,6 +20040,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QYXJ0bmVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Qb3B1bGFyRG9jdW1lbnRzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Qb3B1bGFyVG9waWNzLnRzeA=="
