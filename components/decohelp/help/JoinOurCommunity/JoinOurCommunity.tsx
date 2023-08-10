@@ -33,8 +33,8 @@ export default function JoinOurCommunity(
 ) {
   return (
     <section class="bg-[#F9FAFA] w-full my-[40px]">
-      <div class="flex flex-col lg:flex-row items-center lg:justify-between justify-center lg:gap-[48px] lg:pt-[59px] lg:pt-0 sm:py-[40px] pb-[40px] lg:pb-[27.55px] px-6 md:px-[2rem] max-w-[1200px] mx-auto overflow-x-hidden overflow-y-hidden 2xl:overflow-x-unset 2xl:overflow-y-unset">
-        <div class="flex justify-center relative lg:w-[50%] h-[110vw] md:h-auto min-h-[367px] lg:min-h-[325px] lg:mx-0 mx-[24px]">
+      <div class="flex flex-col lg:flex-row items-center lg:justify-start justify-center lg:gap-[130.43px] lg:pt-[59px] lg:pt-0 sm:py-[40px] pb-[40px] lg:pb-[27.55px] px-6 md:px-[2rem] max-w-[1200px] mx-auto overflow-x-hidden overflow-y-hidden 2xl:overflow-x-unset 2xl:overflow-y-unset">
+        <div class="flex justify-center relative lg:w-[41%] h-[110vw] md:h-auto min-h-[367px] lg:min-h-[325px] lg:mx-0 mx-[24px]">
           <div class="relative w-full max-h-[354px] lg:max-h-[325px] min-w-[100vw] lg:min-w-[100%]">
             <Image
               fetchPriority={lazyload ? "low" : "high"}
