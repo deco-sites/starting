@@ -59,14 +59,15 @@ import * as $$$$$$$$27 from "./sections/Links.tsx";
 import * as $$$$$$$$28 from "./sections/MainBanner.tsx";
 import * as $$$$$$$$29 from "./sections/Markdown.tsx";
 import * as $$$$$$$$30 from "./sections/Partner.tsx";
-import * as $$$$$$$$31 from "./sections/Pricing.tsx";
-import * as $$$$$$$$32 from "./sections/QuillText.tsx";
-import * as $$$$$$$$33 from "./sections/RankingAnalyze.tsx";
-import * as $$$$$$$$34 from "./sections/RankingHeader.tsx";
-import * as $$$$$$$$35 from "./sections/RankingList.tsx";
-import * as $$$$$$$$36 from "./sections/StripePricing.tsx";
-import * as $$$$$$$$37 from "./sections/Thanks.tsx";
-import * as $$$$$$$$38 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$31 from "./sections/PopularTopics.tsx";
+import * as $$$$$$$$32 from "./sections/Pricing.tsx";
+import * as $$$$$$$$33 from "./sections/QuillText.tsx";
+import * as $$$$$$$$34 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$$$35 from "./sections/RankingHeader.tsx";
+import * as $$$$$$$$36 from "./sections/RankingList.tsx";
+import * as $$$$$$$$37 from "./sections/StripePricing.tsx";
+import * as $$$$$$$$38 from "./sections/Thanks.tsx";
+import * as $$$$$$$$39 from "./sections/TripletBanner.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -314,14 +315,15 @@ const manifest = {
     "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$28,
     "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$29,
     "deco-sites/starting/sections/Partner.tsx": $$$$$$$$30,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$31,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$32,
-    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$33,
-    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$34,
-    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$35,
-    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$36,
-    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$37,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$38,
+    "deco-sites/starting/sections/PopularTopics.tsx": $$$$$$$$31,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$32,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$34,
+    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$35,
+    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$36,
+    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$37,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$38,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$39,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$7,

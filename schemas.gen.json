@@ -135,6 +135,7 @@
               "deco-sites/starting/sections/MainBanner.tsx",
               "deco-sites/starting/sections/Markdown.tsx",
               "deco-sites/starting/sections/Partner.tsx",
+              "deco-sites/starting/sections/PopularTopics.tsx",
               "deco-sites/starting/sections/Pricing.tsx",
               "deco-sites/starting/sections/QuillText.tsx",
               "deco-sites/starting/sections/RankingAnalyze.tsx",
@@ -14038,6 +14039,65 @@
       ],
       "title": "deco-sites/starting/components/ui/Partner.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvUG9wdWxhclRvcGljcy9Qb3B1bGFyVG9waWNzLnRzeA==@Topic": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "lazyload": {
+          "anyOf": [
+            {
+              "type": "boolean",
+              "const": false,
+              "default": false
+            },
+            {
+              "type": "boolean",
+              "const": true,
+              "default": true
+            }
+          ],
+          "type": "boolean",
+          "title": "Lazyload"
+        }
+      },
+      "required": [
+        "href",
+        "image",
+        "label"
+      ],
+      "title": "Topic"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvUG9wdWxhclRvcGljcy9Qb3B1bGFyVG9waWNzLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvUG9wdWxhclRvcGljcy9Qb3B1bGFyVG9waWNzLnRzeA==@Topic"
+          },
+          "title": "Topics"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "deco-sites/starting/components/decohelp/help/PopularTopics/PopularTopics.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL1ByaWNpbmcudHN4@Plan": {
       "type": "object",
       "properties": {
@@ -18177,6 +18237,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Qb3B1bGFyVG9waWNzLnRzeA==": {
+      "title": "deco-sites/starting/sections/PopularTopics.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvUG9wdWxhclRvcGljcy9Qb3B1bGFyVG9waWNzLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/PopularTopics.tsx"
+          ],
+          "default": "deco-sites/starting/sections/PopularTopics.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QcmljaW5nLnRzeA==": {
       "title": "deco-sites/starting/sections/Pricing.tsx",
       "type": "object",
@@ -19843,6 +19924,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QYXJ0bmVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Qb3B1bGFyVG9waWNzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9QcmljaW5nLnRzeA=="
