@@ -130,6 +130,7 @@
               "deco-sites/starting/sections/FooterBigLogo.tsx",
               "deco-sites/starting/sections/Head.tsx",
               "deco-sites/starting/sections/Header.tsx",
+              "deco-sites/starting/sections/HelpBlogPosts.tsx",
               "deco-sites/starting/sections/HelpFaq.tsx",
               "deco-sites/starting/sections/HowCanWeHelp.tsx",
               "deco-sites/starting/sections/ImpactCalculator.tsx",
@@ -13287,6 +13288,66 @@
       ],
       "title": "deco-sites/starting/sections/Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvQmxvZ1Bvc3RzL0hlbHBCbG9nUG9zdHMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "image": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Image"
+              },
+              "altImage": {
+                "type": "string",
+                "title": "Alt Image"
+              },
+              "url": {
+                "type": "string",
+                "title": "Url"
+              },
+              "avatar": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Avatar"
+              },
+              "altAvatar": {
+                "type": "string",
+                "title": "Alt Avatar"
+              },
+              "writtenByLabel": {
+                "type": "string",
+                "title": "Written By Label"
+              },
+              "label": {
+                "type": "string",
+                "title": "Label"
+              }
+            },
+            "required": [
+              "title",
+              "image",
+              "altImage",
+              "url",
+              "avatar",
+              "altAvatar",
+              "writtenByLabel",
+              "label"
+            ]
+          },
+          "title": "Cards"
+        }
+      },
+      "required": [
+        "cards"
+      ],
+      "title": "deco-sites/starting/components/decohelp/help/BlogPosts/HelpBlogPosts.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvSG93Q2FuV2VIZWxwL0hvd0NhbldlSGVscC50c3g=@Tags": {
       "type": "object",
       "properties": {
@@ -18645,6 +18706,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWxwQmxvZ1Bvc3RzLnRzeA==": {
+      "title": "deco-sites/starting/sections/HelpBlogPosts.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvQmxvZ1Bvc3RzL0hlbHBCbG9nUG9zdHMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/HelpBlogPosts.tsx"
+          ],
+          "default": "deco-sites/starting/sections/HelpBlogPosts.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWxwRmFxLnRzeA==": {
       "title": "deco-sites/starting/sections/HelpFaq.tsx",
       "type": "object",
@@ -20527,6 +20609,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWxwQmxvZ1Bvc3RzLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWxwRmFxLnRzeA=="
