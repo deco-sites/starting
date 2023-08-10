@@ -85,6 +85,7 @@
               "./islands/ContactUs.tsx",
               "./islands/FaviconImage.tsx",
               "./islands/Header.tsx",
+              "./islands/HelpFaq.tsx",
               "./islands/ImpactCalculator.tsx",
               "./islands/PopularDocuments.tsx",
               "./islands/RankingAnalyze.tsx",
@@ -129,6 +130,7 @@
               "deco-sites/starting/sections/FooterBigLogo.tsx",
               "deco-sites/starting/sections/Head.tsx",
               "deco-sites/starting/sections/Header.tsx",
+              "deco-sites/starting/sections/HelpFaq.tsx",
               "deco-sites/starting/sections/HowCanWeHelp.tsx",
               "deco-sites/starting/sections/ImpactCalculator.tsx",
               "deco-sites/starting/sections/Integration.tsx",
@@ -10710,6 +10712,84 @@
       ],
       "title": "deco-sites/starting/islands/Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Question": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "title": "Question"
+        },
+        "answer": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Answer"
+        }
+      },
+      "required": [
+        "question",
+        "answer"
+      ],
+      "title": "Question"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Question[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Question"
+      },
+      "title": "Question[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Tab": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "questions": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Question[]",
+          "title": "Questions"
+        }
+      },
+      "required": [
+        "label",
+        "questions"
+      ],
+      "title": "Tab"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Tab[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Tab"
+      },
+      "title": "Tab[]"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "maxTabs": {
+          "type": "number",
+          "title": "Max Tabs"
+        },
+        "tabs": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Tab[]",
+          "title": "Tabs"
+        },
+        "buttonLabel": {
+          "type": "string",
+          "title": "Button Label"
+        }
+      },
+      "required": [
+        "title",
+        "maxTabs",
+        "buttonLabel"
+      ],
+      "title": "deco-sites/starting/components/decohelp/help/FAQ/HelpFaq.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0ltcGFjdENhbGN1bGF0b3IudHN4@Props": {
       "type": "object",
       "properties": {
@@ -17304,6 +17384,27 @@
         }
       }
     },
+    "Li9pc2xhbmRzL0hlbHBGYXEudHN4": {
+      "title": "./islands/HelpFaq.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/HelpFaq.tsx"
+          ],
+          "default": "./islands/HelpFaq.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4": {
       "title": "./islands/ImpactCalculator.tsx",
       "type": "object",
@@ -18179,6 +18280,27 @@
             "deco-sites/starting/sections/Header.tsx"
           ],
           "default": "deco-sites/starting/sections/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWxwRmFxLnRzeA==": {
+      "title": "deco-sites/starting/sections/HelpFaq.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvRkFRL0hlbHBGYXEudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/HelpFaq.tsx"
+          ],
+          "default": "deco-sites/starting/sections/HelpFaq.tsx"
         }
       }
     },
@@ -19865,6 +19987,9 @@
           "$ref": "#/definitions/Li9pc2xhbmRzL0hlYWRlci50c3g="
         },
         {
+          "$ref": "#/definitions/Li9pc2xhbmRzL0hlbHBGYXEudHN4"
+        },
+        {
           "$ref": "#/definitions/Li9pc2xhbmRzL0ltcGFjdENhbGN1bGF0b3IudHN4"
         },
         {
@@ -20019,6 +20144,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWxwRmFxLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Ib3dDYW5XZUhlbHAudHN4"
