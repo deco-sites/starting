@@ -128,6 +128,7 @@
               "deco-sites/starting/sections/FooterBigLogo.tsx",
               "deco-sites/starting/sections/Head.tsx",
               "deco-sites/starting/sections/Header.tsx",
+              "deco-sites/starting/sections/HowCanWeHelp.tsx",
               "deco-sites/starting/sections/ImpactCalculator.tsx",
               "deco-sites/starting/sections/Integration.tsx",
               "deco-sites/starting/sections/Links.tsx",
@@ -13133,6 +13134,112 @@
       ],
       "title": "deco-sites/starting/sections/Header.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvSG93Q2FuV2VIZWxwL0hvd0NhbldlSGVscC50c3g=@Tags": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "title": "Tags"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvSG93Q2FuV2VIZWxwL0hvd0NhbldlSGVscC50c3g=@Card": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        },
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "description": {
+          "type": "string",
+          "format": "textarea",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "href",
+        "image",
+        "alt",
+        "label",
+        "description"
+      ],
+      "title": "Card"
+    },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvSG93Q2FuV2VIZWxwL0hvd0NhbldlSGVscC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvSG93Q2FuV2VIZWxwL0hvd0NhbldlSGVscC50c3g=@Tags"
+          },
+          "title": "Tags"
+        },
+        "cards": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvSG93Q2FuV2VIZWxwL0hvd0NhbldlSGVscC50c3g=@Card"
+          },
+          "title": "Cards"
+        },
+        "lazyload": {
+          "anyOf": [
+            {
+              "type": "boolean",
+              "const": false,
+              "default": false
+            },
+            {
+              "type": "boolean",
+              "const": true,
+              "default": true
+            }
+          ],
+          "type": "boolean",
+          "title": "Lazyload"
+        }
+      },
+      "required": [
+        "title",
+        "image",
+        "alt",
+        "tags"
+      ],
+      "title": "deco-sites/starting/components/decohelp/help/HowCanWeHelp/HowCanWeHelp.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL3VpL0ludGVncmF0aW9ucy50c3g=@Props": {
       "type": "object",
       "properties": {
@@ -17923,6 +18030,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Ib3dDYW5XZUhlbHAudHN4": {
+      "title": "deco-sites/starting/sections/HowCanWeHelp.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9jb21wb25lbnRzL2RlY29oZWxwL2hlbHAvSG93Q2FuV2VIZWxwL0hvd0NhbldlSGVscC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/starting/sections/HowCanWeHelp.tsx"
+          ],
+          "default": "deco-sites/starting/sections/HowCanWeHelp.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbXBhY3RDYWxjdWxhdG9yLnRzeA==": {
       "title": "deco-sites/starting/sections/ImpactCalculator.tsx",
       "type": "object",
@@ -19694,6 +19822,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9IZWFkZXIudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9Ib3dDYW5XZUhlbHAudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGFydGluZy9zZWN0aW9ucy9JbXBhY3RDYWxjdWxhdG9yLnRzeA=="
