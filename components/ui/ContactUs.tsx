@@ -48,13 +48,18 @@ export interface Props {
 }
 
 export default function ContactUs(
-  { infor, langThanks = "en", formInfor, FieldNeedOptions = [
-    { name: "platform", label: "deco.cx platform" },
-    { name: "partnership", label: "Partnetship" },
-    { name: "whitelabel", label: "Whitelabel" },
-    { name: "deco.hub", label: "deco.hub" },
-    { name: "other", label: "Other (describe below)" },
-  ] }: Props,
+  {
+    infor,
+    langThanks = "en",
+    formInfor,
+    FieldNeedOptions = [
+      { name: "platform", label: "deco.cx platform" },
+      { name: "partnership", label: "Partnetship" },
+      { name: "whitelabel", label: "Whitelabel" },
+      { name: "deco.hub", label: "deco.hub" },
+      { name: "other", label: "Other (describe below)" },
+    ],
+  }: Props,
 ) {
   const [active, setActive] = useState({
     btn1On: true,
@@ -182,12 +187,13 @@ export default function ContactUs(
             class="w-full h-[51px] border border-dark-green flex items-center px-4"
             name="userNeeds"
           >
-            <option disabled selected>{formInfor?.PlaceholderFieldNeeds || "What would you like to talk about?"}</option>
-            {
-              FieldNeedOptions.map(need => {
-                return <option name={need.name}>{need.label}</option>
-              })
-            }
+            <option disabled selected>
+              {formInfor?.PlaceholderFieldNeeds ||
+                "What would you like to talk about?"}
+            </option>
+            {FieldNeedOptions.map((need) => {
+              return <option name={need.name}>{need.label}</option>;
+            })}
           </select>
           <input
             class="w-full h-[51px] border border-dark-green p-4"
