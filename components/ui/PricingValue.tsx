@@ -8,7 +8,7 @@ export default function PricingValue(
   { price, text, subtext }: Props,
 ) {
   return (
-    <section class="flex flex-col gap-12 py-[63px] bg-dark-green">
+    <section class="flex flex-col gap-12 pb-12 bg-dark-green">
       <div class="md:flex gap-16 max-w-[1024px] mx-auto px-4 md:px-0">
         <div class="flex flex-col gap-4 mx-auto">
           <h2 class="text-[42px] leading-[1.1] md:text-3xl text-almost-white font-semibold">
