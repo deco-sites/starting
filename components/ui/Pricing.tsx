@@ -60,7 +60,7 @@ export default function Pricing(
 ) {
   return (
     <section class="flex flex-col gap-12 pt-[63px] bg-linear">
-      <div class="md:flex gap-16 max-w-[1024px] mx-auto pt-[80px] px-4 md:px-0">
+      <div class="flex flex-col md:flex-row gap-16 max-w-[1024px] mx-auto pt-[80px] px-4 md:px-0">
         <div class="flex flex-col gap-4 md:w-1/2 mx-auto">
           <h1 class="text-[42px] leading-[1.1] md:text-[52px] text-almost-white font-semibold">
             {title}
