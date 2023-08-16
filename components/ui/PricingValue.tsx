@@ -28,6 +28,7 @@ export default function PricingValue(
           <div class="w-4/5 md:w-full py-4 mx-auto items-center md:py-8 rounded-[8px]">
             <Button
               type="button"
+              as="a"
               href={button.link}
               children={button.text}
               target="_blank"
