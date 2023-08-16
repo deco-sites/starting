@@ -1,3 +1,5 @@
+import Button from "deco-sites/starting/components/ui/Button.tsx";
+
 export interface Props {
   price: string;
   text: string;
@@ -8,23 +10,11 @@ export interface Props {
   };
 }
 
-function Button({ text, link }: { text: string; link: string }) {
-  return (
-    <a
-      href={link}
-      target="_blank"
-      class="block w-full text-center font-semibold rounded-[48px] py-3 px-[22px] bg-highlight border-2 border-highlight duration-500 hover:bg-transparent hover:text-highlight"
-    >
-      {text}
-    </a>
-  );
-}
-
 export default function PricingValue(
   { price, text, subtext, button }: Props,
 ) {
   return (
-    <section class="flex gap-12 bg-dark-green justify-center">
+    <section class="flex gap-12 bg-dark-green md:py-12 justify-center">
       <div class="flex flex-col md:flex-row max-w-[1024px] gap-16">
         <div class="md:flex gap-16 px-4 md:px-0 items-center">
           <div class="flex flex-col gap-4 px-8 md:px-0">
@@ -36,7 +26,13 @@ export default function PricingValue(
         </div>
         <div class="flex md:block justify-center">
           <div class="w-4/5 md:w-full py-4 mx-auto items-center md:py-8 rounded-[8px]">
-            <Button link={button.link} text={button.text} />
+            <Button
+              type="button"
+              href={button.link}
+              children={button.text}
+              target="_blank"
+              variant="inverse"
+            />
           </div>
         </div>
       </div>
