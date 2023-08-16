@@ -1,4 +1,7 @@
+import typography from "typography";
+
 export default {
+  plugins: [typography],
   content: ["./**/*.tsx"],
   theme: {
     // https://tailwindcss.com/docs/container#centering-by-default
