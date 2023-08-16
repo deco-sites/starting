@@ -8,6 +8,7 @@ export type Props =
     as?: keyof JSX.IntrinsicElements | ComponentType;
     variant?: keyof typeof variants;
     loading?: boolean;
+    disabled?: boolean;
   };
 
 const variants = {
@@ -43,7 +44,7 @@ const Button = forwardRef<HTMLButtonElement, Props>(({
       {...props}
       className={`inline-flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed transition-colors duration-150 ease-in border ${styles} ${_class}`}
       disabled={disabled || loading}
-      type={type}
+      type={type as string}
       ref={ref}
     >
       {loading === true ? "" : children}
