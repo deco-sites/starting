@@ -14,7 +14,7 @@ export default function PricingValue(
   { price, text, subtext, button }: Props,
 ) {
   return (
-    <section class="flex gap-12 bg-dark-green md:py-12 justify-center">
+    <section class="flex gap-12 bg-dark-green md:pb-32 justify-center">
       <div class="flex flex-col md:flex-row max-w-[1024px] gap-16">
         <div class="md:flex gap-16 px-4 md:px-0 items-center">
           <div class="flex flex-col gap-4 px-8 md:px-0">
