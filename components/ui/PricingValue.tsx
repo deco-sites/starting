@@ -25,7 +25,7 @@ export default function PricingValue(
 ) {
   return (
     <section class="flex gap-12 py-12 bg-dark-green justify-center">
-      <div class="flex max-w-[1024px] gap-12">
+      <div class="flex flex-col md:flex-row max-w-[1024px] gap-12">
         <div class="md:flex gap-16 px-4 md:px-0 items-center">
           <div class="flex flex-col gap-4">
             <h2 class="text-[42px] leading-[1.1] md:text-3xl text-almost-white font-semibold">
