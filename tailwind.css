@@ -26,6 +26,12 @@
     transform: rotate(0);
   }
 
+  details[open] {
+    >.faq .chevron-down {
+      transform: rotate(180deg);
+    }
+  }
+
   .hidden-scroll::-webkit-scrollbar {
     display: none;
   }

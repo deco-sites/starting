@@ -18,6 +18,10 @@ export default {
           "linear-gradient(169.63deg, #00FF80 -0.25%, #095F5D 152.54%), conic-gradient(from -90deg at 50% 50%, #FFFFFF 0deg, rgba(255, 255, 255, 0) 187.5deg, #FFFFFF 360deg);",
         "white-green":
           "linear-gradient(to top, #02F67C 0%, #02F67C 38%, #FFFFFF 38%, #FFFFFF 100%)",
+        "white-green-half-desktop":
+          "linear-gradient(to top, #02F67C 0%, #02F67C 50%, #FFFFFF 50%, #FFFFFF 100%)",
+        "white-green-half-mobile":
+          "linear-gradient(to top, #02F67C 0%, #02F67C 55%, #FFFFFF 45%, #FFFFFF 100%)",
         "linear-white-green":
           "linear-gradient(90deg,  rgba(255,255,255,0.8) 0%, rgba(47,209,128,0.8) 49%, rgba(255,255,255,0.79) 50%, rgba(255,255,255,0.79) 100%)",
         "linear-transp-green":
