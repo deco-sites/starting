@@ -19,6 +19,8 @@ const variants = {
     "h-[36px] px-3 rounded bg-interactive-inverse font-button text-button border-transparent hover:bg-hover active:border-interactive disabled:border-transparent disabled:text-subdued focus:outline-none",
   icon:
     "h-[36px] px-2 rounded-full bg-transparent text-default border-transparent hover:bg-hover active:border-interactive disabled:text-subdued disabled:bg-interactive-inverse focus:outline-none",
+  inverse:
+    "block w-full h-full text-center font-semibold rounded-[48px] py-3 px-[22px] bg-highlight border-2 border-highlight duration-500 hover:bg-transparent hover:text-highlight",
 };
 
 const Button = forwardRef<HTMLButtonElement, Props>(({
@@ -36,12 +38,15 @@ const Button = forwardRef<HTMLButtonElement, Props>(({
   >;
   const styles = variants[variant];
 
+  const optionDisabled = typeof disabled === 'boolean' ? disabled : disabled?.value ?? false;
+  const optionType = typeof type === 'string' ? type : type?.value ?? 'button';
+
   return (
     <Component
       {...props}
       className={`inline-flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed transition-colors duration-150 ease-in border ${styles} ${_class}`}
-      disabled={disabled || loading}
-      type={type}
+      disabled={optionDisabled || loading}
+      type={optionType}
       ref={ref}
     >
       {loading === true ? "" : children}
