@@ -11,7 +11,7 @@ Deco Apps are powerful bundles of business capabilities that can be imported and
 
 In deco, Apps serve as modular building blocks that encapsulate specific features or capabilities. They enable developers to package and share business-specific functionalities across different projects, making it easier to maintain and scale your deco sites.
 
-By running the command `deno run -A https://deco.cx/init` in your terminal, you can start developing an App from scratch and get it up and running quickly.
+By running the command `deno run -A -r https://deco.cx/init` in your terminal, you can start developing an App from scratch and get it up and running quickly.
 
 ## App Configuration
 
@@ -25,7 +25,7 @@ deco Apps can be managed in a monorepo, providing a centralized location to stor
 
 To create your own deco Apps, follow these steps:
 
-1. Run the command `deno run -A https://deco.cx/init` to initialize a new deco App.
+1. Run the command `deno run -A -r https://deco.cx/init` to initialize a new deco App.
 2. Define the functionalities or components you want to bundle into the App.
 3. Organize the functions, sections, loaders, or other deco components within the App directory.
 4. Configure the App to accept parameters and be customizable within the deco Admin.
