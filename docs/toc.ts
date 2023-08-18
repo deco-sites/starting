@@ -307,6 +307,41 @@ const tableOfContents: TableOfContents = [{
     },
     slug: "composable-apis/gtm",
   }],
+}, {
+  title: {
+    pt: "Treinamento Comercial",
+  },
+  children: [{
+    title: {
+      pt: "Introdução",
+    },
+    slug: "treinamento-comercial/introducao",
+  }, {
+    title: {
+      pt: "Agenda",
+    },
+    slug: "treinamento-comercial/agenda",
+  }, {
+    title: {
+      pt: "Diagnóstico Inicial",
+    },
+    slug: "treinamento-comercial/diagnostico-inicial",
+  }, {
+    title: {
+      pt: "Sales Deck",
+    },
+    slug: "treinamento-comercial/sales-deck",
+  }, {
+    title: {
+      pt: "Q&A Comercial",
+    },
+    slug: "treinamento-comercial/qa-comercial",
+  }, {
+    title: {
+      pt: "Produto",
+    },
+    slug: "treinamento-comercial/produto",
+  }],
 }];
 
 if (import.meta.main) {
