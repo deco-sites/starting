@@ -1,5 +1,6 @@
 {
   "imports": {
+    "https://deno.land/x/gfm@0.1.23/mod.ts": "./overrides/gfm.mod.ts",
     "deco-sites/starting/": "./",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.20.4/",
     "$live/": "https://denopkg.com/deco-cx/deco@1.27.2/",
