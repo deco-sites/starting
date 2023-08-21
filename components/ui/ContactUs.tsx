@@ -1,5 +1,4 @@
-import { useState } from "preact/hooks";
-
+import { Head } from "$fresh/runtime.ts";
 export interface listItem {
   title?: string;
   /** @format textarea */
@@ -35,7 +34,6 @@ export interface Props {
     ContactTitle?: string;
     PlaceholderfieldName?: string;
     PlaceholderfieldEmail?: string;
-    PlaceholderfieldPosition?: string;
     PlaceholderfieldPhone?: string;
     PlaceholderfieldSocial?: string;
     PlaceholderFieldExtra?: string;
@@ -58,20 +56,19 @@ export default function ContactUs(
     langThanks = "en",
     formInfor,
     FieldNeedOptions = [
-      { name: "platform", label: "deco.cx platform" },
-      { name: "partnership", label: "Partnetship" },
-      { name: "whitelabel", label: "Whitelabel" },
-      { name: "deco.hub", label: "deco.hub" },
-      { name: "other", label: "Other (describe below)" },
+      { name: "Plataforma deco.cx", label: "deco.cx platform" },
+      { name: "Parceria com a deco.cx", label: "Partnetship" },
+      { name: "Whitelabel deco.cx", label: "Whitelabel" },
+      { name: "decoHub", label: "deco.hub" },
+      { name: "Outros", label: "Other (describe below)" },
     ],
     FieldContacts = [
-      { name: "system_integrator", label: "System Integrator" },
-      { name: "enterprise", label: "Ecommerce Enterprise" },
-      { name: "holding", label: "Ecommerce Holding" },
+      { name: "Agência", label: "System Integrator" },
+      { name: "Marca", label: "Ecommerce Enterprise" },
+      { name: "Grupo de Marcas", label: "Ecommerce Holding" },
     ],
   }: Props,
 ) {
-
   return (
     <div class="flex flex-col items-top font-sans p-6 pt-[130px] pb-10 xl:p-40 gap-y-10 overflow-hidden xl:flex-row xl:gap-x-[120px]">
       <div class="w-full text-left xl:w-1/2">
@@ -122,35 +119,29 @@ export default function ContactUs(
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="userName"
-            placeholder={formInfor?.PlaceholderfieldName || "Name"}
+            placeholder={formInfor?.PlaceholderfieldName || "Name*"}
             required
           />
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="email"
             name="userEmail"
-            placeholder={formInfor?.PlaceholderfieldEmail || "Work e-mail"}
+            placeholder={formInfor?.PlaceholderfieldEmail || "Work e-mail*"}
             required
           />
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="userRole"
-            placeholder={formInfor?.PlaceholderfieldPosition || "Position"}
-            required
-          />
-          <input
-            class="w-full h-[51px] border border-dark-green p-4"
-            type="text"
-            name="userRole"
-            placeholder={formInfor?.PlaceholderfieldPhone || "Phone"}
+            placeholder={formInfor?.PlaceholderfieldPhone || "Phone*"}
             required
           />
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="userLinkedin"
-            placeholder={formInfor?.PlaceholderfieldSocial || "Linkedin"}
+            placeholder={formInfor?.PlaceholderfieldSocial ||
+              "Linkedin (optional)"}
           />
 
           <fieldset class="w-full border border-dark-green py-2 px-4">
@@ -158,7 +149,12 @@ export default function ContactUs(
             {FieldContacts.map((contact) => (
               <div>
                 <label>
-                  <input class="mr-2" type="checkbox" name="contact" value={contact.name} />
+                  <input
+                    class="mr-2"
+                    type="radio"
+                    name="contact"
+                    value={contact.name}
+                  />
                   {contact.label}
                 </label>
               </div>
@@ -174,21 +170,24 @@ export default function ContactUs(
                 "What would you like to talk about?"}
             </option>
             {FieldNeedOptions.map((need) => {
-              return <option name={need.name}>{need.label}</option>;
+              return (
+                <option name={need.name} value={need.name}>{need.label}</option>
+              );
             })}
           </select>
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="siteUrl"
-            placeholder={formInfor?.PlaceholderfieldUrlSite || "Site URL"}
+            placeholder={formInfor?.PlaceholderfieldUrlSite || "Site URL*"}
             required
           />
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="pageviews"
-            placeholder={formInfor?.PlaceholderfieldPageviews || "Number of Pageviews per month"}
+            placeholder={formInfor?.PlaceholderfieldPageviews ||
+              "Number of Pageviews per month*"}
             required
           />
           <input
