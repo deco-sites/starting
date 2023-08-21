@@ -1,4 +1,10 @@
-import { emojify, htmlEscape, Marked, Prism, sanitizeHtml } from "https://deno.land/x/gfm@0.1.23/deps.ts";
+import {
+  emojify,
+  htmlEscape,
+  Marked,
+  Prism,
+  sanitizeHtml,
+} from "https://deno.land/x/gfm@0.1.23/deps.ts";
 import { CSS } from "https://deno.land/x/gfm@0.1.23/style.js";
 export { CSS };
 
