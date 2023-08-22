@@ -12,11 +12,11 @@ export interface Props {
 
 function Heading({ title, subtitle, desktop, mobile, alt }: Props) {
   return (
-    <div class="relative w-full bg-lightGreen h-[780px] sm:h-[640px] md:h-[500px] xl:h-[440px] lg:h-[450px] 2xl:h-[440px] pb-12 lg:pb-16">
+    <div class="relative bg-lightGreen h-[780px] sm:h-[640px] md:h-[500px] xl:h-[440px] lg:h-[450px] 2xl:h-[440px] pb-12 lg:pb-16">
       <div class="container pt-32 md:pt-[166px]">
-        <div class="flex flex-col gap-8 md:flex-row pl-6 sm:pl-0">
-          <div class="w-[100%] md:w-[84%] lg:w-[74%] xl:w-[74%] lg:pl-4 sm:pl-6">
-            <h2 class="font-semibold text-[43px] leading-tight lg:text-[42px] xl:text-[46px] 2xl:text-[67px] text-[#113032]">
+        <div class="flex flex-col gap-8 md:flex-row">
+          <div class="md:w-[84%] lg:w-[74%] xl:w-[74%] mx-4 md:mx-0">
+            <h2 class="font-semibold text-[38px] lg:text-[43px] leading-tight lg:text-[42px] xl:text-[46px] 2xl:text-[67px] text-[#113032]">
               {title}
             </h2>
             <h4 class="text-[22px] font-medium text-[#113032] leading-tight lg:text-[22px] xl:text-[28px] mt-6">
@@ -24,7 +24,7 @@ function Heading({ title, subtitle, desktop, mobile, alt }: Props) {
             </h4>
           </div>
           <div
-            class="h-[325px] sm:h-[340px] w-100vw md:w-[84%] lg:w-[84%] xl:w-[84%] bg-bgImage   z-50"
+            class="h-[325px] sm:h-[340px] w-100vw md:w-[84%] lg:w-[84%] xl:w-[84%] bg-bgImage   z-50 pr-4"
             style="border-radius: 200px 0 0 200px; z-index: 10;"
           >
             <div class="z-40 mt-[18px] flex items-center justify-start md:my-2 md:ml-2 relative">
