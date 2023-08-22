@@ -25,7 +25,7 @@ function Heading({ title, subtitle, desktop, mobile, alt }: Props) {
           </div>
           <div
             class="h-[325px] sm:h-[340px] w-100vw md:w-[84%] lg:w-[84%] xl:w-[84%] bg-bgImage   z-50"
-            style="border-radius: 200px 0 0 200px; z-index: 100;"
+            style="border-radius: 200px 0 0 200px; z-index: 10;"
           >
             <div class="z-40 mt-[18px] flex items-center justify-start md:my-2 md:ml-2 relative">
               <Picture class="lg:w-[600px]">
