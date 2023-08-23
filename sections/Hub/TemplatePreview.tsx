@@ -85,7 +85,7 @@ function TemplatePreview(props: Props) {
                     </div>
                     )}
                 </div>
-                <div class="flex-none font-medium text-right">
+                <div class="text-[15px] flex-none font-medium text-right">
                     {info.price}
                 </div>
             </div>
