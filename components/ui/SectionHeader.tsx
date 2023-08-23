@@ -35,7 +35,7 @@ function Header(props: Props) {
               (
                 <h2
                   class={`
-                  text-[13px] lg:text-[15px] leading-[22px]  font-medium lg:font-normal text-[#1F2937] pl-1
+                  text-[13px] lg:text-[15px] leading-[22px]  font-medium lg:font-normal text-[#1F2937]
                   ${props.colorReverse ? "text-[#1F2937]" : "text-[#1F2937]"}
                   ${
                     props.fontSize === "Normal"
