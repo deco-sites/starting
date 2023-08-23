@@ -3,28 +3,17 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import { useEffect, useId, useState } from "preact/hooks";
 import Header from "deco-sites/starting/components/ui/SectionHeader.tsx";
 import PageSpeed from "deco-sites/starting/components/ui/PageSpeed.tsx";
+import { Template } from "deco-sites/starting/components/ui/Types.tsx";
 
-export interface CustomColor {
-  /**
-   * @format color
-   * @title Base
-   * @default #FFFFFF
-   */
-  "base-100": string;
-}
-export interface Card {
-  img: LiveImage;
-  cor: CustomColor;
-}
-export interface Category {
+export interface TemplateInfo {
   tag?: string;
-  label: string;
-  pageSpeed: number;
-  price: string;
+  label?: string;
   description?: string;
+
+  pageSpeed: number;
   href: string;
-  image: Card[];
-  buttonText?: string;
+  price: string;
+  alignment?: "center" | "left";
 }
 
 export interface Props {
@@ -32,7 +21,7 @@ export interface Props {
     title?: string;
     description?: string;
   };
-  list?: Category[];
+  list?: Template[];
   layout?: {
     headerAlignment?: "center" | "left";
     categoryCard?: {
@@ -41,18 +30,7 @@ export interface Props {
     };
   };
 }
-function CardText(
-  { tag, label, description, alignment, pageSpeed, price }: {
-    tag?: string;
-    label?: string;
-    description?: string;
-
-    pageSpeed: number;
-    href: string;
-    price: string;
-    alignment?: "center" | "left";
-  },
-) {
+function CardText({ tag, label, description, alignment, pageSpeed, price }: TemplateInfo) {
   return (
     <div
       class={`w-full px-3 flex gap-3 items-center ${
