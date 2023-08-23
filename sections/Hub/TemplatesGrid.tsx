@@ -70,7 +70,7 @@ function TemplatesGrid(props: Props) {
         image: {
           img:
             "https://ik.imagekit.io/decocx/tr:w-680,h-680/https:/ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fdcb3c8f-d629-485e-bf70-8060bd8a9f65",
-          cor: "",
+          color: "",
         },
         buttonText: "Ver produtos",
         pageSpeed: 10,
@@ -151,7 +151,7 @@ function TemplatesGrid(props: Props) {
                                     : ""
                                 }`}
                                 onClick={() => handleThemeChange(index, buttonIndex)}
-                                style={{ backgroundColor: (image.cor["base-100"]) }}
+                                style={{ backgroundColor: (image.color) }}
                             >
                             </div>
                             ))

@@ -10,18 +10,14 @@ export interface Template {
     buttonText?: string;  
 }
 
-export interface CustomColor {
+export interface Screenshot {
+    img: LiveImage;
     /**
      * @format color
      * @title Base
      * @default #FFFFFF
      */
-    "base-100": string;
-}  
-
-export interface Screenshot {
-    img: LiveImage;
-    cor: CustomColor;
+    color: string;
 }
   
   
