@@ -55,11 +55,37 @@ function TemplatePreview(props: Props) {
   const onChangeWidth = (larg: string) => {
     setWidth(larg);
   };
+
+  function TemplateInfo() {
+    return (
+      <div class="flex gap-6 text-white">
+          <div class="flex-auto flex gap-4">
+            {info.pageSpeed && <PageSpeed score={info.pageSpeed} size={40} />}
+            <div class="flex-auto flex flex-col">
+                {info.label && (
+                <h3 class="text-[15px] font-medium">
+                    {info.label}
+                </h3>
+                )}
+                {info.description && (
+                <div class="text-[13px] text-neutral">
+                    {info.description}
+                </div>
+                )}
+            </div>
+          </div>
+          <div class="text-[15px] flex-none font-medium text-right text-[#f4f4f4]">
+              {info.price}
+          </div>
+      </div>
+    )
+  }
+
   return (
     <div class="flex flex-col">
       <header class="w-full bg-headerTheme ">
-        <nav class="px-6 py-2 flex justify-between items-center">
-          <div class="flex items-center gap-6 w-5/12">
+        <nav class="px-4 md:px-6 py-2 flex justify-between items-center">
+          <div class="flex items-center gap-6 md:w-5/12">
             <div>
               <a class="flex items-center pr-3 py-2 gap-2" href={buttonBack.href}>
                 <IconArrowLeft class="w-6 h-6 text-white" />
@@ -69,29 +95,12 @@ function TemplatePreview(props: Props) {
               </a>
             </div>
 
-            <div
-              class={`px-3 flex gap-6 text-white`}
-            >
-                {info.pageSpeed && <PageSpeed score={info.pageSpeed} size={40} />}
-                <div class="flex-auto flex flex-col">
-                    {info.label && (
-                    <h3 class="text-[15px] font-medium">
-                        {info.label}
-                    </h3>
-                    )}
-                    {info.description && (
-                    <div class="text-[13px] text-neutral">
-                        {info.description}
-                    </div>
-                    )}
-                </div>
-                <div class="text-[15px] flex-none font-medium text-right">
-                    {info.price}
-                </div>
+            <div class="hidden md:block flex-none">
+              {TemplateInfo()}
             </div>
           </div>
 
-          <div class="flex-none flex flex-row items-center justify-between gap-10">
+          <div class="flex-none hidden lg:flex flex-row items-center justify-between gap-10">
             <div class="flex flex-row items-center justify-center w-[126px]">
               {
                 devices.map((device, i) => {
@@ -119,15 +128,18 @@ function TemplatePreview(props: Props) {
             </div>
           </div>
 
-          <div class="w-5/12 flex justify-end">
+          <div class="md:w-5/12 flex justify-end">
             <a href={buttonCta.href} class="px-3 py-2 bg-white hover:bg-gray-300 rounded-[4px] text-[15px] font-semibold">
             { buttonCta.label }
             </a>
           </div>
         </nav>
+        <div class="md:hidden px-4 md:px-6 py-3">
+          {TemplateInfo()}
+        </div>
       </header>
-      <div class="w-full h-full bg-lightGreen">
-        <div class="h-[calc(100vh_-_58px)] mx-auto transition-width duration-200" style={{ width: (width) }}>
+      <div class="w-full h-full bg-headerTheme">
+        <div class="h-[calc(100vh_-_122px)] md:h-[calc(100vh_-_58px)] mx-auto transition-width duration-200" style={{ width: (width) }}>
           <iframe
             title="Embedded Content"
             className="h-full w-full"
