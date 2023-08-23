@@ -1,10 +1,12 @@
 import IconArrowLeft from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/arrow-left.tsx";
 import Icon, { AvailableIcons } from "deco-sites/starting/components/ui/Icon.tsx";
+import { Template } from "deco-sites/starting/components/ui/Types.tsx";
+import PageSpeed from "deco-sites/starting/components/ui/PageSpeed.tsx";
 
 import { useState } from "preact/hooks";
 
 export interface Props {
-  url: string;
+  info?: Template;
   buttonBack?: {
     label?: string;
     href?: string;
@@ -17,7 +19,12 @@ export interface Props {
 
 function TemplatePreview(props: Props) {
   const {
-    url = "http://www.google.com",
+    info = {
+      label: "Template",
+      pageSpeed: 99,
+      price: "Free",
+      url: "http://www.deco.cx/"
+    },
     buttonBack = {
       label: "Templates",
       href: "/en/hub/"
@@ -52,15 +59,39 @@ function TemplatePreview(props: Props) {
     <div class="flex flex-col">
       <header class="w-full bg-headerTheme ">
         <nav class="px-6 py-2 flex justify-between items-center">
-          <div>
-            <a class="flex items-center pr-3 py-2 gap-2" href={buttonBack.href}>
-              <IconArrowLeft class="w-6 h-6 text-white" />
-              <span class="text-white text-[15px] font-normal">
-                { buttonBack.label }
-              </span>
-            </a>
+          <div class="flex items-center gap-6 w-5/12">
+            <div>
+              <a class="flex items-center pr-3 py-2 gap-2" href={buttonBack.href}>
+                <IconArrowLeft class="w-6 h-6 text-white" />
+                <span class="text-white text-[15px] font-normal">
+                  { buttonBack.label }
+                </span>
+              </a>
+            </div>
+
+            <div
+              class={`px-3 flex gap-6 text-white`}
+            >
+                {info.pageSpeed && <PageSpeed score={info.pageSpeed} size={40} />}
+                <div class="flex-auto flex flex-col">
+                    {info.label && (
+                    <h3 class="text-[15px] font-medium">
+                        {info.label}
+                    </h3>
+                    )}
+                    {info.description && (
+                    <div class="text-[13px] text-neutral">
+                        {info.description}
+                    </div>
+                    )}
+                </div>
+                <div class="flex-none font-medium text-right">
+                    {info.price}
+                </div>
+            </div>
           </div>
-          <div class="flex flex-row items-center justify-between gap-10">
+
+          <div class="flex-none flex flex-row items-center justify-between gap-10">
             <div class="flex flex-row items-center justify-center w-[126px]">
               {
                 devices.map((device, i) => {
@@ -68,7 +99,7 @@ function TemplatePreview(props: Props) {
                     <div
                       title={device.name}
                       class={`basis-1/3 flex items-center justify-center w-[42px] h-[38px] border border-[#525252] cursor-pointer
-                        ${ width == device.width ? "bg-white " : " " }
+                        ${ width == device.width ? "bg-white" : "hover:bg-gray-800" }
                         ${ i === 0 ? "rounded-tl-md rounded-bl-md" : "border-l-0" }
                         ${ i === devices.length - 1 ? "rounded-tr-md rounded-br-md" : "" }
                       }`}
@@ -87,19 +118,20 @@ function TemplatePreview(props: Props) {
               }
             </div>
           </div>
-          <div>
-            <a href={buttonCta.href} class="w-[100px] h-[36px px-3 py-2 bg-white text-black cursor-pointer hover:bg-gray-300 rounded-[4px] text-[15px] leading-[20px] font-semibold">
+
+          <div class="w-5/12 flex justify-end">
+            <a href={buttonCta.href} class="px-3 py-2 bg-white hover:bg-gray-300 rounded-[4px] text-[15px] font-semibold">
             { buttonCta.label }
             </a>
           </div>
         </nav>
       </header>
       <div class="w-full h-full bg-lightGreen">
-        <div class="h-[calc(100vh_-_54px)] mx-auto transition-width duration-200" style={{ width: (width) }}>
+        <div class="h-[calc(100vh_-_58px)] mx-auto transition-width duration-200" style={{ width: (width) }}>
           <iframe
             title="Embedded Content"
             className="h-full w-full"
-            src={url}
+            src={info.url}
             frameBorder="0"
             allowFullScreen
           />

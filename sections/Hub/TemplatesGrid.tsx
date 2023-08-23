@@ -1,17 +1,15 @@
 import Image from "deco-sites/std/components/Image.tsx";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import { useEffect, useId, useState } from "preact/hooks";
 import Header from "deco-sites/starting/components/ui/SectionHeader.tsx";
 import PageSpeed from "deco-sites/starting/components/ui/PageSpeed.tsx";
 import { Template } from "deco-sites/starting/components/ui/Types.tsx";
 
 export interface TemplateInfo {
-  tag?: string;
   label?: string;
   description?: string;
 
   pageSpeed: number;
-  href: string;
+  url: string;
   price: string;
   alignment?: "center" | "left";
 }
@@ -30,7 +28,7 @@ export interface Props {
     };
   };
 }
-function CardText({ tag, label, description, alignment, pageSpeed, price }: TemplateInfo) {
+function CardText({ label, description, alignment, pageSpeed, price }: TemplateInfo) {
   return (
     <div
       class={`w-full px-3 flex gap-3 items-center ${
@@ -39,7 +37,6 @@ function CardText({ tag, label, description, alignment, pageSpeed, price }: Temp
     >
         {pageSpeed && <PageSpeed score={pageSpeed} size={40} />}
         <div class="flex-auto flex flex-col">
-            {tag && <div class="text-sm text-primary">{tag}</div>}
             {label && (
             <h3 class="font-semibold">
                 {label}
@@ -67,10 +64,9 @@ function TemplatesGrid(props: Props) {
     },
     list = [
       {
-        tag: "10% off",
         label: "Feminino",
         description: "Moda feminina direto de Milão",
-        href: "/feminino",
+        url: "/feminino",
         image: {
           img:
             "https://ik.imagekit.io/decocx/tr:w-680,h-680/https:/ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fdcb3c8f-d629-485e-bf70-8060bd8a9f65",
@@ -114,10 +110,9 @@ function TemplatesGrid(props: Props) {
         <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-10">
         {list.map((
             {
-              tag,
               label,
               description,
-              href,
+              url,
               image,
               buttonText,
               pageSpeed,
@@ -126,28 +121,16 @@ function TemplatesGrid(props: Props) {
             index,
           ) => (
             <div class="flex flex-col gap-4 border border-[#C9CFCF] rounded-lg bg-white overflow-hidden pb-3 md:hover:scale-105 duration-200">
-                {layout.categoryCard?.textPosition === "top" &&
-                    (
-                    <CardText
-                        tag={tag}
-                        price={price}
-                        href={href}
-                        label={label}
-                        pageSpeed={pageSpeed}
-                        description={description}
-                        alignment={layout?.categoryCard?.textAlignment}
-                    />
-                    )}
                 {image &&
                     (
-                    <a href={href} class="block relative overflow-hidden h-[200px] sm:h-[244px] border-[#C9CFCF] border-b">
+                    <a href={url} class="block relative overflow-hidden h-[200px] sm:h-[244px] border-[#C9CFCF] border-b">
                         <figure>
                             <Image
                                 class="object-top object-cover"
                                 src={Array.isArray(image)
                                 ? image[themes[index]].img
                                 : image.img}
-                                alt={description || label || tag}
+                                alt={description || label}
                                 width={398}
                                 height={244}
                                 loading="lazy"
@@ -189,9 +172,8 @@ function TemplatesGrid(props: Props) {
                         (
                         <CardText
                             price={price}
-                            tag={tag}
                             label={label}
-                            href={href}
+                            url={url}
                             description={description}
                             pageSpeed={pageSpeed}
                             alignment={layout?.categoryCard?.textAlignment}

@@ -1,13 +1,12 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Template {
-    tag?: string;
     label: string;
     pageSpeed: number;
     price: string;
     description?: string;
-    href: string;
-    image: Screenshot[];
+    url: string;
+    image?: Screenshot[];
     buttonText?: string;  
 }
 
