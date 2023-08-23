@@ -24,11 +24,12 @@ import * as $$$$$4 from "./islands/Cms.tsx";
 import * as $$$$$5 from "./islands/PopularDocuments.tsx";
 import * as $$$$$6 from "./islands/ContactUs.tsx";
 import * as $$$$$7 from "./islands/SliderJS.tsx";
-import * as $$$$$8 from "./islands/Header.tsx";
-import * as $$$$$9 from "./islands/CampMentor.tsx";
-import * as $$$$$10 from "./islands/HelpFaq.tsx";
-import * as $$$$$11 from "./islands/RankingAnalyze.tsx";
-import * as $$$$$12 from "./islands/RankingHeader.tsx";
+import * as $$$$$8 from "./islands/ChangeDevice.tsx";
+import * as $$$$$9 from "./islands/Header.tsx";
+import * as $$$$$10 from "./islands/CampMentor.tsx";
+import * as $$$$$11 from "./islands/HelpFaq.tsx";
+import * as $$$$$12 from "./islands/RankingAnalyze.tsx";
+import * as $$$$$13 from "./islands/RankingHeader.tsx";
 import * as $$$$$$$$0 from "./sections/PopularTopics.tsx";
 import * as $$$$$$$$1 from "./sections/CampHero.tsx";
 import * as $$$$$$$$2 from "./sections/QuillText.tsx";
@@ -67,22 +68,21 @@ import * as $$$$$$$$34 from "./sections/Thanks.tsx";
 import * as $$$$$$$$35 from "./sections/Faq.tsx";
 import * as $$$$$$$$36 from "./sections/DepoimentsCarrossel.tsx";
 import * as $$$$$$$$37 from "./sections/Links.tsx";
-import * as $$$$$$$$38 from "./sections/Hub/CategoryGrid.tsx";
-import * as $$$$$$$$39 from "./sections/Hub/Advantage.tsx";
-import * as $$$$$$$$40 from "./sections/Hub/Heading.tsx";
-import * as $$$$$$$$41 from "./sections/Hub/TemplatesGrid.tsx";
-import * as $$$$$$$$42 from "./sections/Hub/Device.tsx";
-import * as $$$$$$$$43 from "./sections/Hub/Agencies.tsx";
-import * as $$$$$$$$44 from "./sections/Hub/Logos.tsx";
+import * as $$$$$$$$38 from "./sections/Hub/Advantage.tsx";
+import * as $$$$$$$$39 from "./sections/Hub/Heading.tsx";
+import * as $$$$$$$$40 from "./sections/Hub/TemplatesGrid.tsx";
+import * as $$$$$$$$41 from "./sections/Hub/Agencies.tsx";
+import * as $$$$$$$$42 from "./sections/Hub/Logos.tsx";
+import * as $$$$$$$$43 from "./sections/Hub/TemplatePreview.tsx";
+import * as $$$$$$$$44 from "./sections/Hub/TemplateIframe.tsx";
 import * as $$$$$$$$45 from "./sections/Hub/Creator.tsx";
-import * as $$$$$$$$46 from "./sections/Hub/HeaderTheme.tsx";
-import * as $$$$$$$$47 from "./sections/Delight.tsx";
-import * as $$$$$$$$48 from "./sections/Benefits.tsx";
-import * as $$$$$$$$49 from "./sections/About.tsx";
-import * as $$$$$$$$50 from "./sections/HelpFaq.tsx";
-import * as $$$$$$$$51 from "./sections/RankingAnalyze.tsx";
-import * as $$$$$$$$52 from "./sections/RankingHeader.tsx";
-import * as $$$$$$$$53 from "./sections/Carousel.tsx";
+import * as $$$$$$$$46 from "./sections/Delight.tsx";
+import * as $$$$$$$$47 from "./sections/Benefits.tsx";
+import * as $$$$$$$$48 from "./sections/About.tsx";
+import * as $$$$$$$$49 from "./sections/HelpFaq.tsx";
+import * as $$$$$$$$50 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$$$51 from "./sections/RankingHeader.tsx";
+import * as $$$$$$$$52 from "./sections/Carousel.tsx";
 import { DecoManifest } from "$live/types.ts";
 import * as i2$$$0 from "$live/loaders/secret.ts";
 import * as i2$$$1 from "$live/loaders/state.ts";
@@ -267,17 +267,18 @@ const manifest = {
   },
   "islands": {
     "./islands/CampHeader.tsx": $$$$$2,
-    "./islands/CampMentor.tsx": $$$$$9,
+    "./islands/CampMentor.tsx": $$$$$10,
+    "./islands/ChangeDevice.tsx": $$$$$8,
     "./islands/ChangeTheme.tsx": $$$$$3,
     "./islands/Cms.tsx": $$$$$4,
     "./islands/ContactUs.tsx": $$$$$6,
     "./islands/FaviconImage.tsx": $$$$$0,
-    "./islands/Header.tsx": $$$$$8,
-    "./islands/HelpFaq.tsx": $$$$$10,
+    "./islands/Header.tsx": $$$$$9,
+    "./islands/HelpFaq.tsx": $$$$$11,
     "./islands/ImpactCalculator.tsx": $$$$$1,
     "./islands/PopularDocuments.tsx": $$$$$5,
-    "./islands/RankingAnalyze.tsx": $$$$$11,
-    "./islands/RankingHeader.tsx": $$$$$12,
+    "./islands/RankingAnalyze.tsx": $$$$$12,
+    "./islands/RankingHeader.tsx": $$$$$13,
     "./islands/SliderJS.tsx": $$$$$7,
   },
   "sections": {
@@ -286,8 +287,8 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$$2,
     "$live/sections/Slot.tsx": i2$$$$$3,
     "$live/sections/UseSlot.tsx": i2$$$$$4,
-    "deco-sites/starting/sections/About.tsx": $$$$$$$$49,
-    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$48,
+    "deco-sites/starting/sections/About.tsx": $$$$$$$$48,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$47,
     "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$5,
     "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$$$13,
     "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$$$9,
@@ -296,11 +297,11 @@ const manifest = {
     "deco-sites/starting/sections/CampMentor.tsx": $$$$$$$$33,
     "deco-sites/starting/sections/CampRegistration.tsx": $$$$$$$$18,
     "deco-sites/starting/sections/CampSteps.tsx": $$$$$$$$15,
-    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$53,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$52,
     "deco-sites/starting/sections/Cms.tsx": $$$$$$$$23,
     "deco-sites/starting/sections/Community.tsx": $$$$$$$$19,
     "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$28,
-    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$47,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$46,
     "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$36,
     "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$22,
     "deco-sites/starting/sections/Divider.tsx": $$$$$$$$20,
@@ -311,17 +312,16 @@ const manifest = {
     "deco-sites/starting/sections/Head.tsx": $$$$$$$$25,
     "deco-sites/starting/sections/Header.tsx": $$$$$$$$30,
     "deco-sites/starting/sections/HelpBlogPosts.tsx": $$$$$$$$17,
-    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$$$50,
+    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$$$49,
     "deco-sites/starting/sections/HowCanWeHelp.tsx": $$$$$$$$8,
-    "deco-sites/starting/sections/Hub/Advantage.tsx": $$$$$$$$39,
-    "deco-sites/starting/sections/Hub/Agencies.tsx": $$$$$$$$43,
-    "deco-sites/starting/sections/Hub/CategoryGrid.tsx": $$$$$$$$38,
+    "deco-sites/starting/sections/Hub/Advantage.tsx": $$$$$$$$38,
+    "deco-sites/starting/sections/Hub/Agencies.tsx": $$$$$$$$41,
     "deco-sites/starting/sections/Hub/Creator.tsx": $$$$$$$$45,
-    "deco-sites/starting/sections/Hub/Device.tsx": $$$$$$$$42,
-    "deco-sites/starting/sections/Hub/HeaderTheme.tsx": $$$$$$$$46,
-    "deco-sites/starting/sections/Hub/Heading.tsx": $$$$$$$$40,
-    "deco-sites/starting/sections/Hub/Logos.tsx": $$$$$$$$44,
-    "deco-sites/starting/sections/Hub/TemplatesGrid.tsx": $$$$$$$$41,
+    "deco-sites/starting/sections/Hub/Heading.tsx": $$$$$$$$39,
+    "deco-sites/starting/sections/Hub/Logos.tsx": $$$$$$$$42,
+    "deco-sites/starting/sections/Hub/TemplateIframe.tsx": $$$$$$$$44,
+    "deco-sites/starting/sections/Hub/TemplatePreview.tsx": $$$$$$$$43,
+    "deco-sites/starting/sections/Hub/TemplatesGrid.tsx": $$$$$$$$40,
     "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$12,
     "deco-sites/starting/sections/Integration.tsx": $$$$$$$$27,
     "deco-sites/starting/sections/JoinOurCommunity.tsx": $$$$$$$$10,
@@ -334,8 +334,8 @@ const manifest = {
     "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$7,
     "deco-sites/starting/sections/PricingValue.tsx": $$$$$$$$11,
     "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$2,
-    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$51,
-    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$52,
+    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$50,
+    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$51,
     "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$6,
     "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$3,
     "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$34,

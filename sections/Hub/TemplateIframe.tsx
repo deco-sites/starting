@@ -1,4 +1,4 @@
-function Device() {
+function TemplateIframe() {
   return (
     <div class="w-full h-full bg-lightGreen">
       <div class="h-[100vh] container" style={{ "width": "" }}>
@@ -14,4 +14,4 @@ function Device() {
   );
 }
 
-export default Device;
+export default TemplateIframe;
