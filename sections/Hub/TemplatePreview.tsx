@@ -139,7 +139,7 @@ function TemplatePreview(props: Props) {
         </div>
       </header>
       <div class="w-full h-full bg-headerTheme">
-        <div class="h-[calc(100vh_-_122px)] md:h-[calc(100vh_-_58px)] mx-auto transition-width duration-200" style={{ width: (width) }}>
+        <div class="h-[calc(100vh_-_195px)] md:h-[calc(100vh_-_58px)] mx-auto transition-width duration-200" style={{ width: (width) }}>
           <iframe
             title="Embedded Content"
             className="h-full w-full"
