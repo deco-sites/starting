@@ -8,7 +8,7 @@ import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 export interface Image {
   mobile: ImageType;
   desktop: ImageType;
-  altText: string;
+  label: string;
   href: string;
 }
 
@@ -26,7 +26,7 @@ export interface Props {
 
 const IMAGES = [
   {
-    altText: "deco",
+    label: "deco",
     mobile:
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fe7cd8ba-c954-45d6-9282-ee7d8ca8e3c7",
     href: "",
@@ -34,7 +34,7 @@ const IMAGES = [
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fe7cd8ba-c954-45d6-9282-ee7d8ca8e3c7",
   },
   {
-    altText: "deco",
+    label: "deco",
     mobile:
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/637e8601-6b86-4979-aa97-68013a2a60fd",
     href: "",
@@ -97,6 +97,7 @@ function Agencies(props: Props) {
                     <img
                       class="object-contain w-[84px] max-h-[35px] sm:h-[60px] md:w-[90px] "
                       src={element.desktop}
+                      alt={element.label}
                     />
                   </a>
                 </Picture>
