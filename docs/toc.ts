@@ -341,6 +341,16 @@ const tableOfContents: TableOfContents = [{
       pt: "Produto",
     },
     slug: "treinamento-comercial/produto",
+  }, {
+    title: {
+      pt: "Headless & Composable",
+    },
+    slug: "treinamento-comercial/headless-composable",
+  }, {
+    title: {
+      pt: "Web Performance",
+    },
+    slug: "treinamento-comercial/web-performance",
   }],
 }];
 
