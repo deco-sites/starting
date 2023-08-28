@@ -89,6 +89,12 @@ export interface Youtube {
   embedId: string;
   /** @description title for the youtube video */
   label: string;
+  /** @description custom width youtube video */
+  width?: string;
+  /** @description custom height youtube video */
+  height?: string;
+  /** @description custom maximum height youtube video */
+  maxHeight?: string;
   Underline?: boolean;
 }
 

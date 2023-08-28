@@ -49,7 +49,13 @@ function renderContentItem(item: ContentType) {
     : "embedId" in item
     ? (
       <>
-        <YoutubeEmbed embedId={item.embedId} label={item.label} />
+        <YoutubeEmbed
+          embedId={item.embedId}
+          label={item.label}
+          width={item?.width}
+          height={item?.height}
+          maxHeight={item?.maxHeight}
+        />
       </>
     )
     : null;
