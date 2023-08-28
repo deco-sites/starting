@@ -1,4 +1,6 @@
-import Icon, { AvailableIcons } from "deco-sites/starting/components/ui/Icon.tsx";
+import Icon, {
+  AvailableIcons,
+} from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface Card {
   title: string;

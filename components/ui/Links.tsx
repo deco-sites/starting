@@ -85,9 +85,7 @@ function Links(props: Props) {
         {logoOrIcon}
       </a>
     )
-    : (
-      logoOrIcon
-    );
+    : logoOrIcon;
 
   return (
     <BaseContainer background={background}>

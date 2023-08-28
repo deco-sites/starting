@@ -61,19 +61,17 @@ function Logos(props: Props) {
     () =>
       images && images.length > 0
         ? images
-        : Array(20).fill(null).map((_, i) => IMAGES[i % 2]),
+        : Array(20).fill(null).map((_, i) => IMAGES[i % 2]) as Image[],
     [],
   );
 
-  function Logo(element) {
+  function Logo(element: Image) {
     return (
       <div
         class="flex items-center justify-center w-[109px] sm:w-[138px] sl:w-[124px] sl:h-[110px] sm:h-[110px]  h-[100px] lg:rounded-[16px]  md:w-[30%] lg:h-[120px] lg:w-[172px] md:h-[120px] border-2 border-gray-200 relative"
         style={{ "borderRadius": "16px" }}
       >
-        <div
-          class="w-full h-full z-60 relative flex items-center justify-center"
-        >
+        <div class="w-full h-full z-60 relative flex items-center justify-center">
           <Picture>
             <Source
               media="(max-width: 767px)"
@@ -103,7 +101,7 @@ function Logos(props: Props) {
           </div>
         </div>
       </div>
-    )
+    );
   }
 
   return (
@@ -119,7 +117,9 @@ function Logos(props: Props) {
             Current integrations
           </h2>
           <div class="flex flex-wrap justify-center gap-2 md:gap-4">
-            {list.filter((element) => !element.active).map((element) => Logo(element))}
+            {list.filter((element) => !element.active).map((element) =>
+              Logo(element)
+            )}
           </div>
         </div>
 
@@ -128,7 +128,9 @@ function Logos(props: Props) {
             Coming soon
           </h2>
           <div class="flex flex-wrap justify-center gap-2 md:gap-4">
-            {list.filter((element) => element.active).map((element) => Logo(element))}
+            {list.filter((element) => element.active).map((element) =>
+              Logo(element)
+            )}
           </div>
         </div>
 

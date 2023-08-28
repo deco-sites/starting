@@ -68,7 +68,6 @@ export type AvailableIcons =
   | "WhatsApp"
   | "WhiteArrow";
 
-
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
    * Symbol id from element to render. Take a look at `/static/icons.svg`.
