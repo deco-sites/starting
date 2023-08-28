@@ -2,88 +2,90 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./functions/LoadGitHubRawPost.ts";
-import * as $1 from "./functions/LoadGitHubRaw.ts";
-import * as $2 from "./functions/psiRankingList.ts";
+import * as $0 from "./functions/LoadGitHubRaw.ts";
+import * as $1 from "./functions/LoadGitHubRawPost.ts";
+import * as $2 from "./functions/LoadGitHubRawPostList.ts";
 import * as $3 from "./functions/LoadPageProps.ts";
-import * as $4 from "./functions/LoadGitHubRawPostList.ts";
-import * as $$$$0 from "./routes/index.tsx";
-import * as $$$$1 from "./routes/gfm.css.ts";
-import * as $$$$2 from "./routes/admin/[...catchall].tsx";
-import * as $$$$3 from "./routes/_middleware.ts";
+import * as $4 from "./functions/psiRankingList.ts";
+import * as $$$$0 from "./routes/admin/[...catchall].tsx";
+import * as $$$$1 from "./routes/api/calc.tsx";
+import * as $$$$2 from "./routes/api/leads.tsx";
+import * as $$$$3 from "./routes/api/ranking.ts";
 import * as $$$$4 from "./routes/docs/[...slug].tsx";
-import * as $$$$5 from "./routes/api/ranking.ts";
-import * as $$$$6 from "./routes/api/calc.tsx";
-import * as $$$$7 from "./routes/api/leads.tsx";
-import * as $$$$8 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/FaviconImage.tsx";
-import * as $$$$$1 from "./islands/ImpactCalculator.tsx";
-import * as $$$$$2 from "./islands/CampHeader.tsx";
+import * as $$$$5 from "./routes/gfm.css.ts";
+import * as $$$$6 from "./routes/index.tsx";
+import * as $$$$7 from "./routes/_app.tsx";
+import * as $$$$8 from "./routes/_middleware.ts";
+import * as $$$$$0 from "./islands/CampHeader.tsx";
+import * as $$$$$1 from "./islands/CampMentor.tsx";
+import * as $$$$$2 from "./islands/ChangeDevice.tsx";
 import * as $$$$$3 from "./islands/ChangeTheme.tsx";
 import * as $$$$$4 from "./islands/Cms.tsx";
-import * as $$$$$5 from "./islands/PopularDocuments.tsx";
-import * as $$$$$6 from "./islands/ContactUs.tsx";
-import * as $$$$$7 from "./islands/SliderJS.tsx";
-import * as $$$$$8 from "./islands/ChangeDevice.tsx";
-import * as $$$$$9 from "./islands/Header.tsx";
-import * as $$$$$10 from "./islands/CampMentor.tsx";
-import * as $$$$$11 from "./islands/HelpFaq.tsx";
+import * as $$$$$5 from "./islands/ContactUs.tsx";
+import * as $$$$$6 from "./islands/FaviconImage.tsx";
+import * as $$$$$7 from "./islands/Header.tsx";
+import * as $$$$$8 from "./islands/HelpFaq.tsx";
+import * as $$$$$9 from "./islands/ImpactCalculator.tsx";
+import * as $$$$$10 from "./islands/Page.tsx";
+import * as $$$$$11 from "./islands/PopularDocuments.tsx";
 import * as $$$$$12 from "./islands/RankingAnalyze.tsx";
 import * as $$$$$13 from "./islands/RankingHeader.tsx";
-import * as $$$$$$$$0 from "./sections/PopularTopics.tsx";
-import * as $$$$$$$$1 from "./sections/CampHero.tsx";
-import * as $$$$$$$$2 from "./sections/QuillText.tsx";
-import * as $$$$$$$$3 from "./sections/StripePricing.tsx";
-import * as $$$$$$$$4 from "./sections/CampComments.tsx";
-import * as $$$$$$$$5 from "./sections/BlogHeader.tsx";
-import * as $$$$$$$$6 from "./sections/RankingList.tsx";
-import * as $$$$$$$$7 from "./sections/Pricing.tsx";
-import * as $$$$$$$$8 from "./sections/SectionList.tsx";
-import * as $$$$$$$$9 from "./sections/HowCanWeHelp.tsx";
-import * as $$$$$$$$10 from "./sections/BlogPostList.tsx";
-import * as $$$$$$$$11 from "./sections/JoinOurCommunity.tsx";
-import * as $$$$$$$$12 from "./sections/PricingValue.tsx";
-import * as $$$$$$$$13 from "./sections/ImpactCalculator.tsx";
-import * as $$$$$$$$14 from "./sections/BlogPostHeader.tsx";
-import * as $$$$$$$$15 from "./sections/Features.tsx";
-import * as $$$$$$$$16 from "./sections/CampSteps.tsx";
-import * as $$$$$$$$17 from "./sections/Markdown.tsx";
-import * as $$$$$$$$18 from "./sections/HelpBlogPosts.tsx";
-import * as $$$$$$$$19 from "./sections/CampRegistration.tsx";
-import * as $$$$$$$$20 from "./sections/Community.tsx";
-import * as $$$$$$$$21 from "./sections/Divider.tsx";
-import * as $$$$$$$$22 from "./sections/Partner.tsx";
-import * as $$$$$$$$23 from "./sections/Differentials.tsx";
-import * as $$$$$$$$24 from "./sections/Cms.tsx";
-import * as $$$$$$$$25 from "./sections/Footer.tsx";
-import * as $$$$$$$$26 from "./sections/Head.tsx";
-import * as $$$$$$$$27 from "./sections/PopularDocuments.tsx";
-import * as $$$$$$$$28 from "./sections/Integration.tsx";
-import * as $$$$$$$$29 from "./sections/ContactUs.tsx";
-import * as $$$$$$$$30 from "./sections/FooterBigLogo.tsx";
-import * as $$$$$$$$31 from "./sections/Header.tsx";
-import * as $$$$$$$$32 from "./sections/MainBanner.tsx";
-import * as $$$$$$$$33 from "./sections/TripletBanner.tsx";
-import * as $$$$$$$$34 from "./sections/CampMentor.tsx";
-import * as $$$$$$$$35 from "./sections/Thanks.tsx";
-import * as $$$$$$$$36 from "./sections/Faq.tsx";
-import * as $$$$$$$$37 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$14 from "./islands/SliderJS.tsx";
+import * as $$$$$$$$0 from "./sections/About.tsx";
+import * as $$$$$$$$1 from "./sections/Benefits.tsx";
+import * as $$$$$$$$2 from "./sections/BlogHeader.tsx";
+import * as $$$$$$$$3 from "./sections/BlogPostHeader.tsx";
+import * as $$$$$$$$4 from "./sections/BlogPostList.tsx";
+import * as $$$$$$$$5 from "./sections/CampComments.tsx";
+import * as $$$$$$$$6 from "./sections/CampHero.tsx";
+import * as $$$$$$$$7 from "./sections/CampMentor.tsx";
+import * as $$$$$$$$8 from "./sections/CampRegistration.tsx";
+import * as $$$$$$$$9 from "./sections/CampSteps.tsx";
+import * as $$$$$$$$10 from "./sections/Carousel.tsx";
+import * as $$$$$$$$11 from "./sections/Cms.tsx";
+import * as $$$$$$$$12 from "./sections/Community.tsx";
+import * as $$$$$$$$13 from "./sections/ContactUs.tsx";
+import * as $$$$$$$$14 from "./sections/Delight.tsx";
+import * as $$$$$$$$15 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$$$$16 from "./sections/Differentials.tsx";
+import * as $$$$$$$$17 from "./sections/Divider.tsx";
+import * as $$$$$$$$18 from "./sections/Faq.tsx";
+import * as $$$$$$$$19 from "./sections/Features.tsx";
+import * as $$$$$$$$20 from "./sections/Footer.tsx";
+import * as $$$$$$$$21 from "./sections/FooterBigLogo.tsx";
+import * as $$$$$$$$22 from "./sections/Head.tsx";
+import * as $$$$$$$$23 from "./sections/Header.tsx";
+import * as $$$$$$$$24 from "./sections/HelpBlogPosts.tsx";
+import * as $$$$$$$$25 from "./sections/HelpFaq.tsx";
+import * as $$$$$$$$26 from "./sections/HowCanWeHelp.tsx";
+import * as $$$$$$$$27 from "./sections/Hub/Advantage.tsx";
+import * as $$$$$$$$28 from "./sections/Hub/Agencies.tsx";
+import * as $$$$$$$$29 from "./sections/Hub/Creator.tsx";
+import * as $$$$$$$$30 from "./sections/Hub/Heading.tsx";
+import * as $$$$$$$$31 from "./sections/Hub/Logos.tsx";
+import * as $$$$$$$$32 from "./sections/Hub/TemplateIframe.tsx";
+import * as $$$$$$$$33 from "./sections/Hub/TemplatePreview.tsx";
+import * as $$$$$$$$34 from "./sections/Hub/TemplatesGrid.tsx";
+import * as $$$$$$$$35 from "./sections/ImpactCalculator.tsx";
+import * as $$$$$$$$36 from "./sections/Integration.tsx";
+import * as $$$$$$$$37 from "./sections/JoinOurCommunity.tsx";
 import * as $$$$$$$$38 from "./sections/Links.tsx";
-import * as $$$$$$$$39 from "./sections/Hub/Advantage.tsx";
-import * as $$$$$$$$40 from "./sections/Hub/Heading.tsx";
-import * as $$$$$$$$41 from "./sections/Hub/TemplatesGrid.tsx";
-import * as $$$$$$$$42 from "./sections/Hub/Agencies.tsx";
-import * as $$$$$$$$43 from "./sections/Hub/Logos.tsx";
-import * as $$$$$$$$44 from "./sections/Hub/TemplatePreview.tsx";
-import * as $$$$$$$$45 from "./sections/Hub/TemplateIframe.tsx";
-import * as $$$$$$$$46 from "./sections/Hub/Creator.tsx";
-import * as $$$$$$$$47 from "./sections/Delight.tsx";
-import * as $$$$$$$$48 from "./sections/Benefits.tsx";
-import * as $$$$$$$$49 from "./sections/About.tsx";
-import * as $$$$$$$$50 from "./sections/HelpFaq.tsx";
-import * as $$$$$$$$51 from "./sections/RankingAnalyze.tsx";
-import * as $$$$$$$$52 from "./sections/RankingHeader.tsx";
-import * as $$$$$$$$53 from "./sections/Carousel.tsx";
+import * as $$$$$$$$39 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$40 from "./sections/Markdown.tsx";
+import * as $$$$$$$$41 from "./sections/Page.tsx";
+import * as $$$$$$$$42 from "./sections/Partner.tsx";
+import * as $$$$$$$$43 from "./sections/PopularDocuments.tsx";
+import * as $$$$$$$$44 from "./sections/PopularTopics.tsx";
+import * as $$$$$$$$45 from "./sections/Pricing.tsx";
+import * as $$$$$$$$46 from "./sections/PricingValue.tsx";
+import * as $$$$$$$$47 from "./sections/QuillText.tsx";
+import * as $$$$$$$$48 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$$$49 from "./sections/RankingHeader.tsx";
+import * as $$$$$$$$50 from "./sections/RankingList.tsx";
+import * as $$$$$$$$51 from "./sections/SectionList.tsx";
+import * as $$$$$$$$52 from "./sections/StripePricing.tsx";
+import * as $$$$$$$$53 from "./sections/Thanks.tsx";
+import * as $$$$$$$$54 from "./sections/TripletBanner.tsx";
 import * as $$$$$$$$$0 from "./matchers/MatchPath.ts";
 import { DecoManifest } from "$live/types.ts";
 import * as i2$$$0 from "$live/loaders/secret.ts";
@@ -224,11 +226,11 @@ import * as i2$$$$$$24 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts"
 
 const manifest = {
   "functions": {
-    "deco-sites/starting/functions/LoadGitHubRaw.ts": $1,
-    "deco-sites/starting/functions/LoadGitHubRawPost.ts": $0,
-    "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $4,
+    "deco-sites/starting/functions/LoadGitHubRaw.ts": $0,
+    "deco-sites/starting/functions/LoadGitHubRawPost.ts": $1,
+    "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $2,
     "deco-sites/starting/functions/LoadPageProps.ts": $3,
-    "deco-sites/starting/functions/psiRankingList.ts": $2,
+    "deco-sites/starting/functions/psiRankingList.ts": $4,
     "deco-sites/std/functions/butterCMSAds.ts": i2$0,
     "deco-sites/std/functions/butterCMSBrands.ts": i2$1,
     "deco-sites/std/functions/butterCMSCategories.ts": i2$2,
@@ -257,31 +259,32 @@ const manifest = {
     "deco-sites/std/functions/vtexWishlist.ts": i2$25,
   },
   "routes": {
-    "./routes/_app.tsx": $$$$8,
-    "./routes/_middleware.ts": $$$$3,
-    "./routes/admin/[...catchall].tsx": $$$$2,
-    "./routes/api/calc.tsx": $$$$6,
-    "./routes/api/leads.tsx": $$$$7,
-    "./routes/api/ranking.ts": $$$$5,
+    "./routes/_app.tsx": $$$$7,
+    "./routes/_middleware.ts": $$$$8,
+    "./routes/admin/[...catchall].tsx": $$$$0,
+    "./routes/api/calc.tsx": $$$$1,
+    "./routes/api/leads.tsx": $$$$2,
+    "./routes/api/ranking.ts": $$$$3,
     "./routes/docs/[...slug].tsx": $$$$4,
-    "./routes/gfm.css.ts": $$$$1,
-    "./routes/index.tsx": $$$$0,
+    "./routes/gfm.css.ts": $$$$5,
+    "./routes/index.tsx": $$$$6,
   },
   "islands": {
-    "./islands/CampHeader.tsx": $$$$$2,
-    "./islands/CampMentor.tsx": $$$$$10,
-    "./islands/ChangeDevice.tsx": $$$$$8,
+    "./islands/CampHeader.tsx": $$$$$0,
+    "./islands/CampMentor.tsx": $$$$$1,
+    "./islands/ChangeDevice.tsx": $$$$$2,
     "./islands/ChangeTheme.tsx": $$$$$3,
     "./islands/Cms.tsx": $$$$$4,
-    "./islands/ContactUs.tsx": $$$$$6,
-    "./islands/FaviconImage.tsx": $$$$$0,
-    "./islands/Header.tsx": $$$$$9,
-    "./islands/HelpFaq.tsx": $$$$$11,
-    "./islands/ImpactCalculator.tsx": $$$$$1,
-    "./islands/PopularDocuments.tsx": $$$$$5,
+    "./islands/ContactUs.tsx": $$$$$5,
+    "./islands/FaviconImage.tsx": $$$$$6,
+    "./islands/Header.tsx": $$$$$7,
+    "./islands/HelpFaq.tsx": $$$$$8,
+    "./islands/ImpactCalculator.tsx": $$$$$9,
+    "./islands/Page.tsx": $$$$$10,
+    "./islands/PopularDocuments.tsx": $$$$$11,
     "./islands/RankingAnalyze.tsx": $$$$$12,
     "./islands/RankingHeader.tsx": $$$$$13,
-    "./islands/SliderJS.tsx": $$$$$7,
+    "./islands/SliderJS.tsx": $$$$$14,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
@@ -289,60 +292,61 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$$2,
     "$live/sections/Slot.tsx": i2$$$$$3,
     "$live/sections/UseSlot.tsx": i2$$$$$4,
-    "deco-sites/starting/sections/About.tsx": $$$$$$$$49,
-    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$48,
-    "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$5,
-    "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$$$14,
-    "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$$$10,
-    "deco-sites/starting/sections/CampComments.tsx": $$$$$$$$4,
-    "deco-sites/starting/sections/CampHero.tsx": $$$$$$$$1,
-    "deco-sites/starting/sections/CampMentor.tsx": $$$$$$$$34,
-    "deco-sites/starting/sections/CampRegistration.tsx": $$$$$$$$19,
-    "deco-sites/starting/sections/CampSteps.tsx": $$$$$$$$16,
-    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$53,
-    "deco-sites/starting/sections/Cms.tsx": $$$$$$$$24,
-    "deco-sites/starting/sections/Community.tsx": $$$$$$$$20,
-    "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$29,
-    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$47,
-    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$37,
-    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$23,
-    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$21,
-    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$36,
-    "deco-sites/starting/sections/Features.tsx": $$$$$$$$15,
-    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$25,
-    "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$30,
-    "deco-sites/starting/sections/Head.tsx": $$$$$$$$26,
-    "deco-sites/starting/sections/Header.tsx": $$$$$$$$31,
-    "deco-sites/starting/sections/HelpBlogPosts.tsx": $$$$$$$$18,
-    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$$$50,
-    "deco-sites/starting/sections/HowCanWeHelp.tsx": $$$$$$$$9,
-    "deco-sites/starting/sections/Hub/Advantage.tsx": $$$$$$$$39,
-    "deco-sites/starting/sections/Hub/Agencies.tsx": $$$$$$$$42,
-    "deco-sites/starting/sections/Hub/Creator.tsx": $$$$$$$$46,
-    "deco-sites/starting/sections/Hub/Heading.tsx": $$$$$$$$40,
-    "deco-sites/starting/sections/Hub/Logos.tsx": $$$$$$$$43,
-    "deco-sites/starting/sections/Hub/TemplateIframe.tsx": $$$$$$$$45,
-    "deco-sites/starting/sections/Hub/TemplatePreview.tsx": $$$$$$$$44,
-    "deco-sites/starting/sections/Hub/TemplatesGrid.tsx": $$$$$$$$41,
-    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$13,
-    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$28,
-    "deco-sites/starting/sections/JoinOurCommunity.tsx": $$$$$$$$11,
+    "deco-sites/starting/sections/About.tsx": $$$$$$$$0,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$1,
+    "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$2,
+    "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$$$3,
+    "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$$$4,
+    "deco-sites/starting/sections/CampComments.tsx": $$$$$$$$5,
+    "deco-sites/starting/sections/CampHero.tsx": $$$$$$$$6,
+    "deco-sites/starting/sections/CampMentor.tsx": $$$$$$$$7,
+    "deco-sites/starting/sections/CampRegistration.tsx": $$$$$$$$8,
+    "deco-sites/starting/sections/CampSteps.tsx": $$$$$$$$9,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$10,
+    "deco-sites/starting/sections/Cms.tsx": $$$$$$$$11,
+    "deco-sites/starting/sections/Community.tsx": $$$$$$$$12,
+    "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$13,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$15,
+    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$16,
+    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$17,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$18,
+    "deco-sites/starting/sections/Features.tsx": $$$$$$$$19,
+    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$20,
+    "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$21,
+    "deco-sites/starting/sections/Head.tsx": $$$$$$$$22,
+    "deco-sites/starting/sections/Header.tsx": $$$$$$$$23,
+    "deco-sites/starting/sections/HelpBlogPosts.tsx": $$$$$$$$24,
+    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$$$25,
+    "deco-sites/starting/sections/HowCanWeHelp.tsx": $$$$$$$$26,
+    "deco-sites/starting/sections/Hub/Advantage.tsx": $$$$$$$$27,
+    "deco-sites/starting/sections/Hub/Agencies.tsx": $$$$$$$$28,
+    "deco-sites/starting/sections/Hub/Creator.tsx": $$$$$$$$29,
+    "deco-sites/starting/sections/Hub/Heading.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/Hub/Logos.tsx": $$$$$$$$31,
+    "deco-sites/starting/sections/Hub/TemplateIframe.tsx": $$$$$$$$32,
+    "deco-sites/starting/sections/Hub/TemplatePreview.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/Hub/TemplatesGrid.tsx": $$$$$$$$34,
+    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$35,
+    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$36,
+    "deco-sites/starting/sections/JoinOurCommunity.tsx": $$$$$$$$37,
     "deco-sites/starting/sections/Links.tsx": $$$$$$$$38,
-    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$32,
-    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$17,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$22,
-    "deco-sites/starting/sections/PopularDocuments.tsx": $$$$$$$$27,
-    "deco-sites/starting/sections/PopularTopics.tsx": $$$$$$$$0,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$7,
-    "deco-sites/starting/sections/PricingValue.tsx": $$$$$$$$12,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$2,
-    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$51,
-    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$52,
-    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$6,
-    "deco-sites/starting/sections/SectionList.tsx": $$$$$$$$8,
-    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$3,
-    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$35,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$39,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$40,
+    "deco-sites/starting/sections/Page.tsx": $$$$$$$$41,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$42,
+    "deco-sites/starting/sections/PopularDocuments.tsx": $$$$$$$$43,
+    "deco-sites/starting/sections/PopularTopics.tsx": $$$$$$$$44,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$45,
+    "deco-sites/starting/sections/PricingValue.tsx": $$$$$$$$46,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$47,
+    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$48,
+    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$49,
+    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$50,
+    "deco-sites/starting/sections/SectionList.tsx": $$$$$$$$51,
+    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$52,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$53,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$54,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$7,
