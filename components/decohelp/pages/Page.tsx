@@ -136,7 +136,7 @@ export default function Page({
                       <>
                         {renderContentItem(item)}
                         {item?.Underline && (
-                          <span class="flex border-b bg-zinc-300"/>
+                          <span class="flex border-b bg-zinc-300" />
                         )}
                       </>
                     ))}
