@@ -26,18 +26,11 @@ import * as $$$$$6 from "./islands/FaviconImage.tsx";
 import * as $$$$$7 from "./islands/Header.tsx";
 import * as $$$$$8 from "./islands/HelpFaq.tsx";
 import * as $$$$$9 from "./islands/ImpactCalculator.tsx";
-<<<<<<< HEAD
 import * as $$$$$10 from "./islands/Page.tsx";
 import * as $$$$$11 from "./islands/PopularDocuments.tsx";
 import * as $$$$$12 from "./islands/RankingAnalyze.tsx";
 import * as $$$$$13 from "./islands/RankingHeader.tsx";
 import * as $$$$$14 from "./islands/SliderJS.tsx";
-=======
-import * as $$$$$10 from "./islands/PopularDocuments.tsx";
-import * as $$$$$11 from "./islands/RankingAnalyze.tsx";
-import * as $$$$$12 from "./islands/RankingHeader.tsx";
-import * as $$$$$13 from "./islands/SliderJS.tsx";
->>>>>>> 0c09ebfbed3ebfee8b902ea8a1f63a2f6f02f4c6
 import * as $$$$$$$$0 from "./sections/About.tsx";
 import * as $$$$$$$$1 from "./sections/Benefits.tsx";
 import * as $$$$$$$$2 from "./sections/BlogHeader.tsx";
@@ -79,7 +72,6 @@ import * as $$$$$$$$37 from "./sections/JoinOurCommunity.tsx";
 import * as $$$$$$$$38 from "./sections/Links.tsx";
 import * as $$$$$$$$39 from "./sections/MainBanner.tsx";
 import * as $$$$$$$$40 from "./sections/Markdown.tsx";
-<<<<<<< HEAD
 import * as $$$$$$$$41 from "./sections/Page.tsx";
 import * as $$$$$$$$42 from "./sections/Partner.tsx";
 import * as $$$$$$$$43 from "./sections/PopularDocuments.tsx";
@@ -94,22 +86,6 @@ import * as $$$$$$$$51 from "./sections/SectionList.tsx";
 import * as $$$$$$$$52 from "./sections/StripePricing.tsx";
 import * as $$$$$$$$53 from "./sections/Thanks.tsx";
 import * as $$$$$$$$54 from "./sections/TripletBanner.tsx";
-import * as $$$$$$$$$0 from "./matchers/MatchPath.ts";
-=======
-import * as $$$$$$$$41 from "./sections/Partner.tsx";
-import * as $$$$$$$$42 from "./sections/PopularDocuments.tsx";
-import * as $$$$$$$$43 from "./sections/PopularTopics.tsx";
-import * as $$$$$$$$44 from "./sections/Pricing.tsx";
-import * as $$$$$$$$45 from "./sections/PricingValue.tsx";
-import * as $$$$$$$$46 from "./sections/QuillText.tsx";
-import * as $$$$$$$$47 from "./sections/RankingAnalyze.tsx";
-import * as $$$$$$$$48 from "./sections/RankingHeader.tsx";
-import * as $$$$$$$$49 from "./sections/RankingList.tsx";
-import * as $$$$$$$$50 from "./sections/SectionList.tsx";
-import * as $$$$$$$$51 from "./sections/StripePricing.tsx";
-import * as $$$$$$$$52 from "./sections/Thanks.tsx";
-import * as $$$$$$$$53 from "./sections/TripletBanner.tsx";
->>>>>>> 0c09ebfbed3ebfee8b902ea8a1f63a2f6f02f4c6
 import { DecoManifest } from "$live/types.ts";
 import * as i2$$$0 from "$live/loaders/secret.ts";
 import * as i2$$$1 from "$live/loaders/state.ts";
@@ -303,18 +279,11 @@ const manifest = {
     "./islands/Header.tsx": $$$$$7,
     "./islands/HelpFaq.tsx": $$$$$8,
     "./islands/ImpactCalculator.tsx": $$$$$9,
-<<<<<<< HEAD
     "./islands/Page.tsx": $$$$$10,
     "./islands/PopularDocuments.tsx": $$$$$11,
     "./islands/RankingAnalyze.tsx": $$$$$12,
     "./islands/RankingHeader.tsx": $$$$$13,
     "./islands/SliderJS.tsx": $$$$$14,
-=======
-    "./islands/PopularDocuments.tsx": $$$$$10,
-    "./islands/RankingAnalyze.tsx": $$$$$11,
-    "./islands/RankingHeader.tsx": $$$$$12,
-    "./islands/SliderJS.tsx": $$$$$13,
->>>>>>> 0c09ebfbed3ebfee8b902ea8a1f63a2f6f02f4c6
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
@@ -363,7 +332,6 @@ const manifest = {
     "deco-sites/starting/sections/Links.tsx": $$$$$$$$38,
     "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$39,
     "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$40,
-<<<<<<< HEAD
     "deco-sites/starting/sections/Page.tsx": $$$$$$$$41,
     "deco-sites/starting/sections/Partner.tsx": $$$$$$$$42,
     "deco-sites/starting/sections/PopularDocuments.tsx": $$$$$$$$43,
@@ -378,21 +346,6 @@ const manifest = {
     "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$52,
     "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$53,
     "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$54,
-=======
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$41,
-    "deco-sites/starting/sections/PopularDocuments.tsx": $$$$$$$$42,
-    "deco-sites/starting/sections/PopularTopics.tsx": $$$$$$$$43,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$44,
-    "deco-sites/starting/sections/PricingValue.tsx": $$$$$$$$45,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$46,
-    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$47,
-    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$48,
-    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$49,
-    "deco-sites/starting/sections/SectionList.tsx": $$$$$$$$50,
-    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$51,
-    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$52,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$53,
->>>>>>> 0c09ebfbed3ebfee8b902ea8a1f63a2f6f02f4c6
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$7,
