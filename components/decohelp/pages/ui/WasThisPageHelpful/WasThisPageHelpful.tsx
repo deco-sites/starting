@@ -7,10 +7,10 @@ export interface WasThisPageHelpfulProps {
   WasThisPageHelpful?: {
     Label?: string;
     Button?: {
-      Yes?: string;
-      PositiveIcon?: LiveImage;
-      No?: string;
+      NegativeButtonLabel?: string;
       NegativeIcon?: LiveImage;
+      PositiveButtonLabel?: string;
+      PositiveIcon?: LiveImage;
       Width?: number;
       Height?: number;
     };
@@ -36,30 +36,44 @@ export default function WasThisPageHelpfulContent({
               {label}
             </span>
             <div class="flex gap-2 lg:w-auto w-full">
-              <button class={button} aria-label={buttonProps?.Yes ?? ""}>
-                <figure>
-                  <Image
-                    src={buttonProps?.PositiveIcon || ""}
-                    class="min-w-4 min-h-4"
-                    alt={buttonProps?.Yes ?? ""}
-                    width={buttonProps?.Width ?? 16}
-                    height={buttonProps?.Height ?? 16}
-                  />
-                </figure>
-                {buttonProps?.Yes ?? ""}
-              </button>
-              <button class={button} aria-label={buttonProps?.No ?? ""}>
-                <figure>
-                  <Image
-                    src={buttonProps?.NegativeIcon || ""}
-                    class="min-w-4 min-h-4"
-                    alt={buttonProps?.No ?? ""}
-                    width={buttonProps?.Width ?? 16}
-                    height={buttonProps?.Height ?? 16}
-                  />
-                </figure>
-                {buttonProps?.No ?? ""}
-              </button>
+              {buttonProps?.NegativeButtonLabel && (
+                <button
+                  class={button}
+                  aria-label={buttonProps?.NegativeButtonLabel ?? ""}
+                >
+                  {buttonProps.NegativeIcon && (
+                    <figure>
+                      <Image
+                        src={buttonProps.NegativeIcon}
+                        class="min-w-4 min-h-4"
+                        alt={buttonProps?.NegativeButtonLabel ?? ""}
+                        width={buttonProps?.Width ?? 16}
+                        height={buttonProps?.Height ?? 16}
+                      />
+                    </figure>
+                  )}
+                  {buttonProps?.NegativeButtonLabel ?? ""}
+                </button>
+              )}
+              {buttonProps?.PositiveButtonLabel && (
+                <button
+                  class={button}
+                  aria-label={buttonProps?.PositiveButtonLabel ?? ""}
+                >
+                  {buttonProps.PositiveIcon && (
+                    <figure>
+                      <Image
+                        src={buttonProps.PositiveIcon}
+                        class="min-w-4 min-h-4"
+                        alt={buttonProps?.PositiveButtonLabel ?? ""}
+                        width={buttonProps?.Width ?? 16}
+                        height={buttonProps?.Height ?? 16}
+                      />
+                    </figure>
+                  )}
+                  {buttonProps?.PositiveButtonLabel ?? ""}
+                </button>
+              )}
             </div>
           </div>
           <HTMLRenderer html={text} />
