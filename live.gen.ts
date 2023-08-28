@@ -86,6 +86,7 @@ import * as $$$$$$$$51 from "./sections/SectionList.tsx";
 import * as $$$$$$$$52 from "./sections/StripePricing.tsx";
 import * as $$$$$$$$53 from "./sections/Thanks.tsx";
 import * as $$$$$$$$54 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$$0 from "./matchers/MatchPath.ts";
 import { DecoManifest } from "$live/types.ts";
 import * as i2$$$0 from "$live/loaders/secret.ts";
 import * as i2$$$1 from "$live/loaders/state.ts";
@@ -359,6 +360,20 @@ const manifest = {
     "deco-sites/std/sections/SEOPLP.tsx": i2$$$$$15,
     "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx": i2$$$$$16,
   },
+  "matchers": {
+    "$live/matchers/MatchAlways.ts": i2$$$$$$$$0,
+    "$live/matchers/MatchCron.ts": i2$$$$$$$$1,
+    "$live/matchers/MatchDate.ts": i2$$$$$$$$2,
+    "$live/matchers/MatchDevice.ts": i2$$$$$$$$3,
+    "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$4,
+    "$live/matchers/MatchHost.ts": i2$$$$$$$$5,
+    "$live/matchers/MatchLocation.ts": i2$$$$$$$$6,
+    "$live/matchers/MatchMulti.ts": i2$$$$$$$$7,
+    "$live/matchers/MatchRandom.ts": i2$$$$$$$$8,
+    "$live/matchers/MatchSite.ts": i2$$$$$$$$9,
+    "$live/matchers/MatchUserAgent.ts": i2$$$$$$$$10,
+    "deco-sites/starting/matchers/MatchPath.ts": $$$$$$$$$0,
+  },
   "loaders": {
     "$live/loaders/secret.ts": i2$$$0,
     "$live/loaders/state.ts": i2$$$1,
@@ -410,19 +425,6 @@ const manifest = {
   },
   "pages": {
     "$live/pages/LivePage.tsx": i2$$$$$$$0,
-  },
-  "matchers": {
-    "$live/matchers/MatchAlways.ts": i2$$$$$$$$0,
-    "$live/matchers/MatchCron.ts": i2$$$$$$$$1,
-    "$live/matchers/MatchDate.ts": i2$$$$$$$$2,
-    "$live/matchers/MatchDevice.ts": i2$$$$$$$$3,
-    "$live/matchers/MatchEnvironment.ts": i2$$$$$$$$4,
-    "$live/matchers/MatchHost.ts": i2$$$$$$$$5,
-    "$live/matchers/MatchLocation.ts": i2$$$$$$$$6,
-    "$live/matchers/MatchMulti.ts": i2$$$$$$$$7,
-    "$live/matchers/MatchRandom.ts": i2$$$$$$$$8,
-    "$live/matchers/MatchSite.ts": i2$$$$$$$$9,
-    "$live/matchers/MatchUserAgent.ts": i2$$$$$$$$10,
   },
   "flags": {
     "$live/flags/audience.ts": i2$$$$$$$$$0,
