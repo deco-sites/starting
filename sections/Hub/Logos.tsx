@@ -17,6 +17,10 @@ export interface Image {
 export interface Props {
   button: boolean;
   title?: string;
+  subtitle?: {
+    current?: string;
+    comingSoon?: string;
+  }
   label: string;
   href: string;
   description?: string;
@@ -50,6 +54,7 @@ const IMAGES = [
 function Logos(props: Props) {
   const {
     title,
+    subtitle = { current: "Current integrations", comingSoon: "Coming soon" },
     label,
     href,
     button,
@@ -114,7 +119,7 @@ function Logos(props: Props) {
         />
         <div class="flex flex-col gap-8">
           <h2 class="text-[20px] font-semibold leading-8 text-[#1F2937] text-center">
-            Current integrations
+            {subtitle.current}
           </h2>
           <div class="flex flex-wrap justify-center gap-2 md:gap-4">
             {list.filter((element) => !element.active).map((element) =>
@@ -125,7 +130,7 @@ function Logos(props: Props) {
 
         <div class="flex flex-col gap-8">
           <h2 class="text-[20px] font-semibold leading-8 text-[#1F2937] text-center">
-            Coming soon
+            {subtitle.comingSoon}
           </h2>
           <div class="flex flex-wrap justify-center gap-2 md:gap-4">
             {list.filter((element) => element.active).map((element) =>
