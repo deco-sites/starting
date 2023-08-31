@@ -1,51 +1,38 @@
 ---
-description: Instalando Apps
-since: 1.24.0
+descrição: Instalanda apps
+desde: 1.33.2
 ---
 
 # Pré-requisitos
 
-- Você deve possuir um site deco com o App desejado já disponível no diretório de Apps, seguindo o tutorial [Tornando um app instalável](/docs/pt-br/developing/making-an-app-installable).
+Antes de começar, certifique-se de ter um site deco pronto, e a App desejado deve estar disponível no diretório Apps. Se você não tem certeza de como fazer isso, consulte o [tutorial de tornar uma app instalável](/docs/en/developing/making-an-app-installable).
 
-## Passo 1: Faça o login no deco Admin
+## Passo 1: Acesse o deco Admin
 
-Primeiramente, faça o login em sua conta do deco Admin acessando [https://deco.cx/admin](https://deco.cx/admin).
+Comece fazendo login na sua conta do deco Admin. Visite [https://deco.cx/admin](https://deco.cx/admin) e insira suas credenciais.
 
 ## Passo 2: Escolha o Site de Destino
 
-Após fazer o login, escolha o site de destino onde deseja instalar o App. Após selecionar o site, você será direcionado para a página inicial do site.
+Após fazer login, selecione o site específico onde deseja instalar o App. Você será direcionado para a página inicial do site.
 
-## Passo 3: Abra a URL do Middleware
+## Passo 3: Acesse a Seção "Apps"
 
-Na página inicial do site, abra a seguinte URL em seu navegador:
+Na página inicial do site, navegue até a seção "Apps". Esta é a seção onde você encontrará todos os Apps disponíveis para instalação.
 
-```
-https://deco.cx/admin/sites/$SITE/blocks/.%2Froutes%2F_middleware.ts
-```
+## Passo 4: Adicione um Bloco da app
 
-Substitua `$SITE` na URL pelo nome real do seu site.
+Dentro da seção "Apps", crie um novo bloco da App. Dê a ele um nome; é comum usar a versão, como `site@v0`, e publique-o.
 
-## Passo 4: Acesse "Apps" e escolha "Installed Apps"
+## Passo 5: Configure a App
 
-Após abrir a URL, você será direcionado para uma página que mostra o middleware do seu site. Acesse a seção "Apps" e, caso "Installed Apps" ainda não esteja selecionado, escolha essa opção entre as opções disponíveis.
+Com um bloco da app criado, você também será solicitado a preencher quaisquer configurações ou parâmetros necessários.
 
-<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/88dea405-fb9c-44ca-8ea3-3d26dae13531">
-## Passo 5: Adicione o App
+## Passo 6: Salve e Publique
 
-Clique no botão "Add Apps" para instalar o App desejado no seu site. Uma lista de Apps disponíveis será exibida.
+Após configurar o bloco da app, clique em "Salvar e Publicar" para aplicar as alterações e instalar um App no seu site.
 
-## Passo 6: Escolha o App desejado e configure o State
+## Passo 7: Explore os Blocos Instalados
 
-Escolha o App que deseja instalar na lista. Você será solicitado a preencher o state necessário do App. Isso pode incluir fornecer determinadas configurações ou parâmetros para personalizar o comportamento do App dentro do seu site.
+Depois de instalado, você terá acesso a todos os blocos e componentes que um App inclui. Esses blocos podem ser integrados ao seu site deco para fornecer funcionalidades adicionais.
 
-<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/ef02574e-5670-4c20-87d6-c0f0efd5122c">
-
-## Passo 7: Salve e Publique
-
-Após configurar o state do App, clique em "Save and Publish" para aplicar as alterações e instalar o App no seu site.
-
-## Passo 8: Explore os Blocos Instalados
-
-Após a instalação do App, você poderá ver todos os blocos e componentes que o App inclui. Esses blocos podem ser usados para aprimorar o seu site deco com as funcionalidades adicionais fornecidas pelo App instalado.
-
-Parabéns! Você instalou com sucesso um App usando o deco Admin. Divirta-se explorando as novas capacidades e recursos que o App instalado traz ao seu site deco. Se necessário, você pode personalizar ainda mais o App instalado ou explorar outros Apps disponíveis para expandir ainda mais as funcionalidades dos seus projetos deco. Aproveite a gestão e o aprimoramento dos seus sites deco! 🚀
+Parabéns! Você instalou com sucesso um App usando o deco Admin. Explore as novas capacidades e recursos que um App instalado traz para o seu site deco. Sinta-se à vontade para personalizar o App ainda mais ou explorar outros Apps disponíveis para expandir as funcionalidades do seu projeto deco. Aproveite para gerenciar e aprimorar o seu site deco! 🚀
