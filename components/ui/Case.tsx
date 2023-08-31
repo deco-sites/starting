@@ -34,13 +34,9 @@ export interface Props {
     DevCTAName?: string;
     ContactTitle?: string;
     PlaceholderfieldName?: string;
-    PlaceholderfieldEmail?: string;d
+    PlaceholderfieldEmail?: string;
     PlaceholderfieldPhone?: string;
     submiteName?: string;
-    /** @description set the post url to action submit form business*/
-    urlToActionBusiness: string;
-    /** @description set the post url to action submit form developers*/
-    urlToActionDev: string;
   };
   FieldNeedOptions?: Array<NeedOption>;
   FieldContacts?: Array<NeedOption>;
@@ -98,7 +94,7 @@ export default function ContactUs(
         <form
           class="flex flex-col justify-center items-center bg-white border border-dark-green rounded-2xl p-4 md:p-8 gap-6 placeholder-[#161A16] "
           method="POST"
-          action="/api/leads"
+          action={"/api/case"}
         >
           <span class="text-[20px]">
             {formInfor?.formTitle || "Ready to delight your customers?"}
