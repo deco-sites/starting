@@ -34,24 +34,24 @@ Substitua `$NOME_DO_SEU_APP` pelo nome que você escolheu para o seu App deco du
 Agora, vamos dar uma olhada no arquivo `mod.ts` do seu App deco:
 
 ```ts
-import manifest, { name } from "./manifest.gen.ts";
+import manifest from "./manifest.gen.ts";
 import type { Manifest } from "./manifest.gen.ts";
-export { name };
-import type { App, AppContext as AC } from "../deps.ts";
+import type { App, AppContext as AC } from "deco/mod.ts";
 
 export interface State {
   url: string;
 }
+export type MyApp = App<Manifest, State>;
 export default function App(
   state: State,
-): App<Manifest, State> {
+): MyApp {
   return {
     manifest,
     state,
   };
 }
 
-export type AppContext = AC<ReturnType<typeof App>>;
+export type AppContext = AC<MyApp>;
 ```
 
 O arquivo `mod.ts` é o coração do seu App deco e é escrito pelo desenvolvedor. Neste arquivo, você importa o `manifest` gerado automaticamente e define a interface `State`, que representa as propriedades do seu app. Pode ser usado para configurar API keys para uma chamada a alguma dada API.

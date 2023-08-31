@@ -34,24 +34,24 @@ Replace `$YOUR_APP_NAME` with the name you chose for your Deco App during initia
 Now, let's take a look at the `mod.ts` file in your Deco App:
 
 ```ts
-import manifest, { name } from "./manifest.gen.ts";
+import manifest from "./manifest.gen.ts";
 import type { Manifest } from "./manifest.gen.ts";
-export { name };
-import type { App, AppContext as AC } from "../deps.ts";
+import type { App, AppContext as AC } from "deco/mod.ts";
 
 export interface State {
   url: string;
 }
+export type MyApp = App<Manifest, State>;
 export default function App(
   state: State,
-): App<Manifest, State> {
+): MyApp {
   return {
     manifest,
     state,
   };
 }
 
-export type AppContext = AC<ReturnType<typeof App>>;
+export type AppContext = AC<MyApp>;
 ```
 
 The `mod.ts` file is the heart of your Deco App and is written by the developer. In this file, you import the automatically generated `manifest` and define the `State` interface, which represents the properties of your app.
