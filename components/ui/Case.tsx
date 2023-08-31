@@ -24,6 +24,7 @@ export interface NeedOption {
 export interface Props {
   /** @description Thanks page language (default en)*/
   langThanks?: string;
+  /** @description Name to register in DB */
   caseName: string;
   caseLink: string;
   /** @description settings of benefits section in page*/

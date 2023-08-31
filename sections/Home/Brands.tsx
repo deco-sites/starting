@@ -49,11 +49,11 @@ export default function Brands(props: Props) {
   const themeIsLigth = !themeDark;
 
   return (
-    <div class={`${themeIsLigth ? "bg-[#F3FFF9]" : "bg-dark-green-gradient"}`}>
+    <div class={`${themeIsLigth ? "bg-[#F3FFF9]" : "bg-[#053535]"}`}>
       <div class="lg:container mx-4 flex flex-col gap-8 lg:gap-12 pb-8 md:pb-12 lg:pb-20">
         {
           title && (
-            <h2 class="center text-[22px] md:text-[32px] opacity-90 text-center leading-[1.18]">
+            <h2 class={`${themeIsLigth ? "" : "text-white"} center text-[22px] md:text-[32px] opacity-90 text-center leading-[1.18]`}>
               {title}
             </h2>
           )
