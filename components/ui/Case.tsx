@@ -24,6 +24,7 @@ export interface NeedOption {
 export interface Props {
   /** @description Thanks page language (default en)*/
   langThanks?: string;
+  caseName: string;
   caseLink: string;
   /** @description settings of benefits section in page*/
   infor?: Benefits;
@@ -45,6 +46,7 @@ export interface Props {
 export default function ContactUs(
   {
     langThanks = "en",
+    caseName,
     caseLink,
     infor,
     formInfor,
@@ -101,6 +103,7 @@ export default function ContactUs(
           </span>
 
           <input type="hidden" name="lang" value={langThanks} />
+          <input type="hidden" name="caseName" value={caseName} />
           <input type="hidden" name="caseLink" value={caseLink} />
           <input
             class="w-full h-[51px] border border-dark-green p-4"
