@@ -4,7 +4,13 @@ export default function GlobalTags() {
   return (
     <Head>
       <link href={asset("/tailwind.css")} rel="stylesheet" />
-
+      {/* Plausible Analytics */}
+      <script
+        defer
+        data-domain="www.deco.cx"
+        data-api="https://plausible.io/api/event"
+        src={asset("/plausible_script.js")}
+      />
       <style
         dangerouslySetInnerHTML={{
           __html: `
