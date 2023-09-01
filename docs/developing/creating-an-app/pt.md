@@ -82,4 +82,4 @@ Parabéns! Você criou e desenvolveu com sucesso o seu próprio App deco. Você 
 
 ## Leitura Adicional
 
-- [Tornando um App Instalável](/docs/en/getting-started/installing-an-app)
+- [Tornando um App Instalável](/docs/en/developing/making-an-app-installable)

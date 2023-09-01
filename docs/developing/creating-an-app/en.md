@@ -83,4 +83,4 @@ Congratulations! You have successfully created and developed your own deco App. 
 
 ## Further Reading
 
-- [Making an App Installable](/docs/en/getting-started/installing-an-app)
+- [Making an App Installable](/docs/en/developing/making-an-app-installable)
