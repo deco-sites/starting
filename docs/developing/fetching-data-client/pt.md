@@ -30,10 +30,7 @@ import { useCallback } from "preact/hooks";
 export default function MyIsland() {
 
   const fetchData = useCallback(() => {
-    const data = await Runtime.invoke({
-      key: "path/to/your/function",
-      props: {/* your function input props */},
-    });
+        const data = await Runtime.app.loaders.myLoader({/* your function input props */});
   }, [])
 
   return <div>
@@ -53,32 +50,11 @@ Você também pode agrupar solicitações passando um objeto com várias chaves,
 uma representando uma invocação desejada. Por exemplo:
 
 ```ts
-const { data1, data2 } = await Runtime.invoke({
-  data1: {
-    key: "path/to/your/loader1",
-    props: {/* your function input props */},
-  },
-  data2: {
-    key: "path/to/your/loader2",
-    props: {/* your function input props */},
-  },
+const { data1, data2 } = await Runtime({
+  data1: Runtime.app.loaders.myLoader({/* your function input props */}),
+  data2: Runtime.app.loaders.myLoader2({/* your function input props */}),
 });
 ```
-
-Por fim, você pode selecionar quais propriedades deseja retornar do seu objeto
-de dados usando a propriedade `select`. Esta propriedade recebe uma matriz de
-caminhos (separados por `.`) que você deseja retornar. Por exemplo:
-
-```ts
-const data = await Runtime.invoke({
-  key: "path/to/your/function",
-  props: {/* your function input props */},
-  select: ["prop1", "prop2.subprop"],
-});
-```
-
-Este código buscará os dados da sua função e retornará apenas as propriedades
-`prop1` e `prop2.subprop`.
 
 Com esses passos, agora você pode começar a usar a Invocação de funções
 client-side em sua aplicação Live.ts, happy coding!

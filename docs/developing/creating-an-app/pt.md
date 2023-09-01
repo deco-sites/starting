@@ -72,6 +72,8 @@ Para ver o seu App deco em ação, execute o seguinte comando:
 deno task start
 ```
 
+<img width="466" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/a0dfa130-91e0-4542-84e6-29d4539c7cff">
+
 Este comando iniciará o seu app e automaticamente gerará os arquivos necessários para torná-lo utilizável em qualquer site deco.
 
 ## Conclusão
@@ -80,4 +82,4 @@ Parabéns! Você criou e desenvolveu com sucesso o seu próprio App deco. Você 
 
 ## Leitura Adicional
 
-- [Tornando um App Instalável](/docs/en/developing/installing-an-app)
+- [Tornando um App Instalável](/docs/en/developing/making-an-app-installable)
