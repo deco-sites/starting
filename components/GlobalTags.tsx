@@ -7,7 +7,7 @@ export default function GlobalTags() {
       {/* Plausible Analytics */}
       <script
         defer
-        data-domain="www.deco.cx"
+        data-domain="deco.cx"
         data-api="https://plausible.io/api/event"
         src={asset("/plausible_script.js")}
       />
