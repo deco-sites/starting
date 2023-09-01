@@ -1,12 +1,23 @@
 import { IS_BROWSER } from "https://deno.land/x/fresh@1.1.4/src/runtime/utils.ts";
+import Slider from "deco-sites/starting/components/ui/Slider2.tsx";
+import SliderJS from "deco-sites/starting/islands/SliderJS.tsx";
 import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
+import { useId } from "deco-sites/starting/sdk/useId.ts";
+
+export interface Alert {
+  label: string;
+}
 
 export interface Props {
   githubBarText?: {
     mobile?: string;
     desktop?: string;
   };
+  alerts?: {
+    mobile?: Alert[];
+    desktop?: Alert[];
+  }
   menuLinks: Array<{ label: string; href: string; targetBlank?: boolean }>;
   idiom: string;
   pt: { label: string; url: string; selected?: boolean };
@@ -73,26 +84,82 @@ export default function Header(props: Props) {
     }
   };
 
+  const idMobile = useId();
+  const idDesktop = useId();
+  const alerts = props.alerts;
+
   return (
     <section class="bg-[#0A2121] fixed top-0 z-50 w-full">
-      {(props.githubBarText?.desktop || props.githubBarText?.mobile) && (
-        <div class="text-center bg-black text-white font-normal text-sm py-3">
-          <div
-            class="hidden lg:block"
-            dangerouslySetInnerHTML={{
-              __html: props.githubBarText?.desktop || "",
-            }}
-          >
+      <style>
+        {`
+          .carousel {
+            display: inline-flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .carousel-item {
+            box-sizing: content-box;
+            display: flex;
+            flex: none;
+            scroll-snap-align: start;
+        }
+        
+        .carousel-center .carousel-item {
+            scroll-snap-align: center;
+        }
+        
+        .carousel-end .carousel-item {
+            scroll-snap-align: end;
+        }
+
+        .carousel::-webkit-scrollbar {
+          display: none
+        }
+        `}
+      </style>
+      {
+        alerts?.mobile && alerts?.mobile.length > 0 && (
+          <div id={idMobile} class="lg:hidden">
+            <Slider class="carousel carousel-center w-screen bg-black text-white font-normal text-sm py-3">
+              {alerts.mobile.map((alert, index) => (
+                <Slider.Item index={index} class="carousel-item">
+                  <span
+                    class="flex justify-center items-center w-screen"
+                    dangerouslySetInnerHTML={{
+                      __html: alert.label,
+                    }}
+                  />
+                </Slider.Item>
+              ))}
+            </Slider>
+            <SliderJS rootId={idMobile} interval={5 * 1e3} />
           </div>
-          <div
-            class="lg:hidden"
-            dangerouslySetInnerHTML={{
-              __html: props.githubBarText?.mobile || "",
-            }}
-          >
+        )
+      }
+      {
+        alerts?.desktop && alerts?.desktop.length > 0 && (
+          <div id={idDesktop} class="hidden lg:block">
+            <Slider class="carousel carousel-center w-screen bg-black text-white font-normal text-sm py-3">
+              {alerts.desktop.map((alert, index) => (
+                <Slider.Item index={index} class="carousel-item">
+                  <span
+                    class="flex justify-center items-center w-screen"
+                    dangerouslySetInnerHTML={{
+                      __html: alert.label,
+                    }}
+                  />
+                </Slider.Item>
+              ))}
+            </Slider>
+            <SliderJS rootId={idDesktop} interval={5 * 1e3} />
           </div>
-        </div>
-      )}
+        )
+      }
+
       <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <div
           class="md:hidden w-[100vw] h-[4px] absolute top-[60px] transition ease-in-out duration-300 left-0"
@@ -313,7 +380,7 @@ export default function Header(props: Props) {
           </li>
           <div
             class={open
-              ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[63px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
+              ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
               : "hidden"}
           >
             <ul class="flex flex-col divide-y divide-semi-white-13">

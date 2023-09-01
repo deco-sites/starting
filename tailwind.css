@@ -26,6 +26,12 @@
     transform: rotate(0);
   }
 
+  details[open] {
+    >.faq .chevron-down {
+      transform: rotate(180deg);
+    }
+  }
+
   .hidden-scroll::-webkit-scrollbar {
     display: none;
   }
@@ -81,6 +87,32 @@
     -webkit-appearance: none;
     margin: 0;
   }
+
+  .rotate-90 {
+    transform: rotate(90deg);
+  }
+
+  .grid-page-desktop {
+    grid-template-columns: 284px auto 280px;
+  }
+
+  .grid-page-tablet {
+    grid-template-columns: 284px auto;
+  }
+
+  .grid-page-mobile {
+    grid-template-columns: 1fr;
+  }
+
+  .nested {
+    counter-reset: item;
+  }
+
+  .nested li a:before {
+    content: counters(item, ".")".";
+    counter-increment: item;
+  }
+
 }
 
 @layer components {}

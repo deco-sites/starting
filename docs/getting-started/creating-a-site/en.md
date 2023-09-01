@@ -3,81 +3,29 @@ description: |
    Step-by-step on how to create a Site on deco.cx
 ---
 
-# If you need help...
+## Prerequisites
 
-- Go to <https://deco.cx/discord> if you have questions or problems during the
-  use. Also join our community!
-
-## What you need to know before you start
-
-- Read the documents on the [**Intro**](/docs/en/overview) and
-  [**Concepts**](/docs/en/concepts/section) sections.
+- Read deco.cx's [**Overview**](/docs/en/overview).
 
 ## Create a deco.cx website
 
-_deco.cx_ abstracts away all the complexities of setting up a repository,
-connecting a CMS and deploy to the edge. This allows you to focus only on what
-matters: your website code.
+1. Login/Signup on [https://deco.cx/admin](https://deco.cx/admin).
+2. Create a new **Team** if you aren't part of one yet.
+3. Click on **+ Create Site**.
+4. Set a name for your site.
+5. **Important:** Select the **Start** template.
+6. Click on **Create**.
 
-The first step is to have a _deco.cx_ account and website. Go to
-<https://deco.cx/onboarding>, login with your Github account and follow the
-step-by-step instructions on the page to create your developer account.
+<img width="1512" alt="Creating a site on deco.cx" src="https://github-production-user-asset-6210df.s3.amazonaws.com/18706156/253386927-287e0b0d-5e96-46a3-9396-5cae24519bf3.png">
 
-## Clone your site repository
+The site creation process will start and, after it finished, you'll see the site's dashboard:
 
-Accept the invitation to access the repository created for your site. This
-invitation is sent to the email address of your Github profile.
+<img width="1512" alt="Site Dashboard on deco.cx" src="https://github.com/deco-cx/deco/assets/18706156/13d2331e-86b2-4db5-b11a-2cff2ac807ac">
 
-Use the `git clone` command to download the code from the website to your
-machine. We recommend using SSH. For this, open the terminal and run the
-command:
+## Navigating on your site
 
-```
-git clone git@github.com:deco-sites/site-name.git
-```
+Right below **Production Domain** you can see your site's URL. This URL is public and the site is already online.
 
-**Remember to change `site-name` to your site name.**
+You should see something similar to https://start.deco.cx, which was the template chosen in the creation process.
 
-If you prefer, you can clone the repository using other methods, such as _git
-https_ or via the _Github_ tool. On your repository page On _Github_ you can
-find details about these different ways to clone.
-
-# Developing
-
-## Run local server
-
-In the terminal, enter the website folder and run the command:
-
-```
-deno task start
-```
-
-## See your local sections on Live
-
-1. Go to <https://deco.cx/admin>.
-
-2. Select the website you are developing
-
-3. Go to Library.
-
-4. In the _topbar_ environment selector select _localhost:8000_ and see the
-   sections that are in your local repository.
-
-<img width="1252" alt="image" src="https://user-images.githubusercontent.com/18706156/224518020-0008c8d5-d9cc-4191-a4c3-81c2cf5d1f2d.png">
-
-## Publish your changes to production
-
-_deploy_ in production is very simple: just _push_ your changes on the _branch_
-_**main**_, which is the main branch.
-
-You can go to _site-name.deco.site_ to see the latest version of your site on
-air.
-
-# Ready! You can now start creating amazing websites :)
-
-With this initial tutorial you have enough to start developing sections and
-connectors to allow them to be used in creating pages.
-
-Be sure to join our
-[discord community](https://deco.cx/discord "https://deco.cx/discord") to ask
-questions, follow the news and keep evolving together with us!
+> deco.cx is free up until 50.000 page view/visits per month. Check our [Pricing](https://www.deco.cx/en/pricing) for more info.

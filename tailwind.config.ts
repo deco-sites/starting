@@ -1,4 +1,7 @@
+import typography from "typography";
+
 export default {
+  plugins: [typography],
   content: ["./**/*.tsx"],
   theme: {
     // https://tailwindcss.com/docs/container#centering-by-default
@@ -15,6 +18,10 @@ export default {
           "linear-gradient(169.63deg, #00FF80 -0.25%, #095F5D 152.54%), conic-gradient(from -90deg at 50% 50%, #FFFFFF 0deg, rgba(255, 255, 255, 0) 187.5deg, #FFFFFF 360deg);",
         "white-green":
           "linear-gradient(to top, #02F67C 0%, #02F67C 38%, #FFFFFF 38%, #FFFFFF 100%)",
+        "white-green-half-desktop":
+          "linear-gradient(to top, #02F67C 0%, #02F67C 50%, #FFFFFF 50%, #FFFFFF 100%)",
+        "white-green-half-mobile":
+          "linear-gradient(to top, #02F67C 0%, #02F67C 55%, #FFFFFF 45%, #FFFFFF 100%)",
         "linear-white-green":
           "linear-gradient(90deg,  rgba(255,255,255,0.8) 0%, rgba(47,209,128,0.8) 49%, rgba(255,255,255,0.79) 50%, rgba(255,255,255,0.79) 100%)",
         "linear-transp-green":
@@ -36,6 +43,8 @@ export default {
           "linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,255,128,1) 100%)",
         "linear-shadowing":
           "linear-gradient(180deg,rgba(6,53,53,0),rgb(6,50,49,0.7))",
+        "gradient-green":
+          "linear-gradient(to bottom, #F3FFF9 300px, #ffffff 20%);",
       },
       boxShadow: {
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",
@@ -664,6 +673,20 @@ export default {
         "dark-green": "#0A2121",
         "almost-white": "#F3FFF9",
         transparent: "transparent",
+        landingPrimary: "#0A2121",
+        customGray: "#FAFAFA",
+        lightGreen: "#F3FFF9",
+        icon: "#2FD1800D",
+        headerTheme: "#0A1F1F",
+        landingText: "#06E474",
+        agenciesColor: "#063535",
+        hoverAgencie: "#1F4949",
+        hoverPartners: "rgba(228, 227, 226, 0.3)",
+        landingHover: "rgba(114, 177, 117, 0.09)",
+        bgImage: "#02F67C",
+        cardIcon: "#rgba(182, 228, 198, 0.8)",
+        cardLanguage: "#001341",
+        hoverBtn: "#e2c069",
       },
       fontFamily: {
         sans: "Albert Sans, sans-serif",

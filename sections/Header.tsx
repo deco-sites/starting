@@ -7,8 +7,20 @@ export interface GitHub {
   desktop?: string;
 }
 
+export interface Alert {
+  /** @format html */
+  /** @title Text */
+  label: string;
+}
+
+export interface Alerts {
+  mobile?: Alert[];
+  desktop?: Alert[];
+}
+
 export interface Props {
   githubBarText?: GitHub;
+  alerts?: Alerts;
   menuLinks: Array<{ label: string; href: string; targetBlank?: boolean }>;
   idiom: string;
   pt: { label: string; url: string; selected?: boolean };

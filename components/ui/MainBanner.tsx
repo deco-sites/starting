@@ -51,10 +51,10 @@ export default function MainBanner(
   return (
     <div
       class={(themeIsLigth ? " bg-[#F3FFF9]" : "bg-dark-green-gradient") + " " +
-        "flex flex-col mb-0 pb-[5rem]"}
+        "flex flex-col mb-0 pb-4 md:pb-10 lg:pb-20"}
     >
       <div class="max-w-screen-2xl m-auto">
-        <div class="max-w-[100vw] px-6 pt-24 pb-2 md:px-[2rem] md:pt-36 2xl:max-w-[1280px]">
+        <div class="max-w-[100vw] px-6 pt-36 pb-2 md:px-[2rem] md:pt-36 2xl:max-w-[1280px]">
           <h1
             class={`${
               themeIsLigth ? "text-dark-green" : "text-white"
@@ -135,7 +135,7 @@ export default function MainBanner(
               : null}
           </h1>
         </div>
-        <div class="flex px-6 py-6 flex-col gap-20 justify-center items-start lg:items-center lg:flex-row lg:p-8">
+        <div class="flex px-6 py-6 flex-col gap-20 justify-center items-start lg:items-center lg:flex-row lg:px-8">
           <div class="flex flex-col gap-[2rem] lg:w-[46%] lg:items-center">
             <p
               class={(themeIsLigth

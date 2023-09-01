@@ -2,7 +2,7 @@ import { join } from "https://deno.land/std@0.190.0/path/mod.ts";
 
 type LocalizedTitle = { pt?: string; en?: string };
 type Entry = { title: LocalizedTitle; slug?: string };
-type TopLevelEntry = Entry & { children?: Array<Entry> };
+type TopLevelEntry = Entry & { children?: Array<TopLevelEntry> };
 
 type TableOfContents = Array<TopLevelEntry>;
 
@@ -11,43 +11,59 @@ const tableOfContents: TableOfContents = [{
   slug: "overview",
 }, {
   title: { pt: "Comece agora", en: "Getting Started" },
-  children: [{
-    title: { pt: "Criando um Site", en: "Creating a Site" },
-    slug: "getting-started/creating-a-site",
-  }, {
-    title: { pt: "Atualizando o SEO", en: "Updating SEO" },
-    slug: "getting-started/loader",
-  }, {
-    title: { pt: "Criando nova uma Página", en: "Creating a new Page" },
-    slug: "getting-started/creating-a-new-page",
-  }, {
-    title: { pt: "Reusando Seções", en: "Reusing Sections" },
-    slug: "getting-started/reusing-sections",
-  }, {
-    title: {
-      pt: "Segmentação de Conteúdo",
-      en: "Segmenting Content with Variants",
+  children: [
+    {
+      title: { pt: "Criando um Site", en: "Creating a Site" },
+      slug: "getting-started/creating-a-site",
     },
-    slug: "getting-started/variants",
-  }, {
-    title: {
-      pt: "Adicionando domínios próprios",
-      en: "Adding custom domains",
+    {
+      title: { pt: "Atualizando o SEO", en: "Updating SEO" },
+      slug: "getting-started/updating-seo",
     },
-    slug: "getting-started/custom-domains",
-  }, {
-    title: {
-      pt: "Criando Redirecionamentos e Proxies",
-      en: "Adding Proxies and Redirects",
+    {
+      title: { pt: "Criando nova uma Página", en: "Creating a new Page" },
+      slug: "getting-started/creating-a-new-page",
+    }, // TODO
+    // {
+    //   title: { pt: "Reusando Seções", en: "Reusing Sections" },
+    //   slug: "getting-started/reusing-sections",
+    // },
+    {
+      title: {
+        pt: "Segmentação de Conteúdo",
+        en: "Segmenting Content with Variants",
+      },
+      slug: "getting-started/variants",
     },
-    slug: "getting-started/proxy-redirects",
-  }, {
-    title: {
-      pt: "Restaurando versões",
-      en: "Restoring versions",
+    {
+      title: {
+        pt: "Adicionando domínios próprios",
+        en: "Adding custom domains",
+      },
+      slug: "getting-started/custom-domains",
     },
-    slug: "getting-started/releases-revisions",
-  }],
+    {
+      title: {
+        pt: "Criando Redirecionamentos e Proxies",
+        en: "Adding Proxies and Redirects",
+      },
+      slug: "getting-started/proxy-redirects",
+    },
+    {
+      title: {
+        pt: "Restaurando versões",
+        en: "Restoring versions",
+      },
+      slug: "getting-started/releases-revisions",
+    },
+    {
+      title: {
+        pt: "Instalando Apps",
+        en: "Installing Apps",
+      },
+      slug: "getting-started/installing-an-app",
+    },
+  ],
 }, {
   title: {
     pt: "Conceitos",
@@ -95,6 +111,12 @@ const tableOfContents: TableOfContents = [{
       en: "Segment",
     },
     slug: "concepts/segment",
+  }, {
+    title: {
+      pt: "App",
+      en: "App",
+    },
+    slug: "concepts/app",
   }],
 }, {
   title: {
@@ -105,14 +127,14 @@ const tableOfContents: TableOfContents = [{
     title: { pt: "Configuração do ambiente", en: "Environment setup" },
     slug: "developing/setup",
   }, {
-    title: { pt: "Hello World", en: "Hello World" },
-    slug: "developing/hello-world",
-  }, {
     title: {
       pt: "Tornando uma Seção configurável",
       en: "Making Sections editable",
     },
     slug: "developing/editable-sections",
+  }, {
+    title: { pt: "Criando uma Section", en: "Creating a Section" },
+    slug: "developing/hello-world",
   }, {
     title: {
       pt: "Adicionando interatividade em uma página",
@@ -139,10 +161,43 @@ const tableOfContents: TableOfContents = [{
     slug: "developing/fetching-data-client",
   }, {
     title: {
+      pt: "Capturando exceções nas Seções",
+      en: "Sections error boundaries",
+    },
+    slug: "developing/error-boundaries",
+  }, {
+    title: {
+      pt: "Redirecionando usuários a partir de Seções",
+      en: "Redirecting users from Sections",
+    },
+    slug: "developing/redirecting-users",
+  }, {
+    title: {
+      pt: "Aceitando uma Seção como parâmetro da minha Seção",
+      en: "Accepting Other Sections as Parameters in Your Section",
+    },
+    slug: "developing/accept-a-section",
+  }, {
+    title: {
       pt: "Importando Blocks de um site",
       en: "Import Blocks from a site",
     },
     slug: "developing/importing-other-sites",
+  }, {
+    title: {
+      pt: "Desenvolvendo Apps",
+      en: "Developing Apps",
+    },
+    slug: "developing/creating-an-app",
+  }, {
+    title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
+    slug: "developing/using-secrets",
+  }, {
+    title: {
+      pt: "Instalando Apps",
+      en: "Installing Apps",
+    },
+    slug: "developing/making-an-app-installable",
   }],
 }, {
   title: {
@@ -251,6 +306,51 @@ const tableOfContents: TableOfContents = [{
       en: "GTM",
     },
     slug: "composable-apis/gtm",
+  }],
+}, {
+  title: {
+    pt: "Treinamento Comercial",
+  },
+  children: [{
+    title: {
+      pt: "Introdução",
+    },
+    slug: "treinamento-comercial/introducao",
+  }, {
+    title: {
+      pt: "Agenda",
+    },
+    slug: "treinamento-comercial/agenda",
+  }, {
+    title: {
+      pt: "Diagnóstico Inicial",
+    },
+    slug: "treinamento-comercial/diagnostico-inicial",
+  }, {
+    title: {
+      pt: "Sales Deck",
+    },
+    slug: "treinamento-comercial/sales-deck",
+  }, {
+    title: {
+      pt: "Q&A Comercial",
+    },
+    slug: "treinamento-comercial/qa-comercial",
+  }, {
+    title: {
+      pt: "Produto",
+    },
+    slug: "treinamento-comercial/produto",
+  }, {
+    title: {
+      pt: "Headless & Composable",
+    },
+    slug: "treinamento-comercial/headless-composable",
+  }, {
+    title: {
+      pt: "Web Performance",
+    },
+    slug: "treinamento-comercial/web-performance",
   }],
 }];
 
@@ -376,7 +476,7 @@ export const getNextAndPreviousPost = (
 
   const currentIndex = tableOfContentsEntries.findLastIndex((
     { slug: currentSlug },
-  ) => currentSlug === slug);
+  ) => currentSlug && slug.includes(currentSlug));
 
   const previous = currentIndex === 0 ? undefined : getNextPreviousForEntry(
     language,

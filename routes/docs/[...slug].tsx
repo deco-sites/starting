@@ -239,7 +239,7 @@ export default function DocsPage(props: PageProps<Data>) {
 }
 
 function Content(props: { page: Page }) {
-  const _html = gfm.render(props.page.markdown);
+  const _html = gfm.render(props.page.markdown, { allowIframes: true });
   const html = _html.replaceAll(
     /( href="https:\/\/(?!www.deco)).*?/g,
     ' target="_blank"$1',

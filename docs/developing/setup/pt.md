@@ -1,10 +1,23 @@
 ---
-description: Usamos Preact, Deno, Fresh e Tailwind. Se você tem experiência anterior com HTML, CSS, JavaScript e React, trabalhar com deco.cx será muito fácil para você.
+description: Configuração do ambiente.
+since: 1.0.0
 ---
 
-Ao criar um site ou loja online com a _deco.cx_, você tem a flexibilidade de
+- Leia o guia em **Comece agora** para entender os conceitos base e a ferramenta de admin da deco
+
+- **Importante**, é possível acessar <https://deco.cx/discord> para respoder dúvidas ou problemas com a _deco.cx_. Participe também da nossa comunidade!
+
+# Tópicos
+
+1. Tecnologias utilizadas na deco
+2. Comece a desenvolver com a deco
+3. Desenvolvendo com a deco
+
+# Tecnologias utilizadas na deco
+
+Ao criar um site ou loja online com a _deco.cx_, o usuário tem a flexibilidade de
 criar [Sections](/docs/pt/concepts/section) e
-[Functions](/docs/pt/concepts/loader) que atendem às suas necessidades
+[Loaders](/docs/pt/concepts/loader) que atendem às suas necessidades
 exclusivas. Para ajudá-la a criar esses componentes com facilidade e rapidez,
 contamos com um conjunto de tecnologias poderosas e eficientes.
 
@@ -27,7 +40,7 @@ o torna ideal para iniciantes. O Tailwind também é otimizado para performance.
 ### [Deno](https://deno.com/deploy)
 
 O **Deno** é um ambiente de execução JavaScript e TypeScript. É usado para fazer
-nosso sites, escritos em Typescript, executados por um servidor. Deno é
+Sites na deco, escritos em Typescript, executados por um servidor. Deno é
 semelhante a Node.js (_curiosidade_: eles foram
 [criados pela mesma pessoa](https://www.youtube.com/watch?v=M3BM9TB-8yA)).
 
@@ -38,9 +51,69 @@ desenvolvedores JavaScript e TypeScript. Foi projetado para tornar fácil a
 criação de aplicações web de alta qualidade, alta performance e altamente
 personalizáveis.
 
+# Comece a desenvolver com a deco
+
+## Ferramentas necessárias
+
 A única configuração necessária para codificar sites _deco.cx_ é **instalar o
 Deno** em sua máquina. Para instalar o Deno, siga as
 [instruções na página deno.land](https://deno.land/manual/getting_started/installation).
 
-> Também esperamos que você tenha o
-> [Git instalado](https://github.com/git-guides/install-git).
+> Recomendamos fortemente o uso do [Visual Studio Code](https://code.visualstudio.com/download) como IDE e do [Git](https://github.com/git-guides/install-git) para controle de versão.
+
+## Crie um site deco.cx
+
+_deco.cx_ abstrai todas as complexidades de configurar um repositório, conectar
+um CMS e deployar na edge. Isso permite que você se concentre apenas no que
+importa: o código e conteúdo do seu Site.
+
+## Clone o repositório do seu site
+
+Aceite o convite para se juntar ao repositório criado para o seu Site. Esse
+convite é enviado para o endereço de e-mail do seu perfil do Github.
+
+Caso não tenha utilizado uma conta do github para entrar no admin ou caso não tenha recebido um convite, é possível adicionar uma conta do github como colaborador do Site.
+
+![Adicionando colaborador no repositório](https://github.com/deco-sites/starting/assets/882438/721397f6-d24b-4f50-bef4-bc2fbf11f35c)
+
+Use o comando `git clone` para baixar o código do site para o seu máquina.
+Recomendamos o uso de SSH. Abra o terminal e execute o comando:
+
+```bash
+git clone git@github.com:deco-sites/site-name.git
+```
+
+**Lembre-se de alterar `site-name` para o nome do seu site.**
+
+Se preferir, é possível clonar o repositório usando outros métodos, como _git
+https_, por meio da ferramenta _Github_ ou através de uma IDE. Na página do repositório no _Github_ há detalhes sobre algumas diferentes maneiras para fazer o clone.
+
+# Desenvolvendo com a deco
+
+## Executar servidor local
+
+No terminal, basta entrar na pasta do site e executar o comando:
+
+```bash
+deno task start
+```
+
+Aguarde a inicialização do projeto. Na primeira execução, o deno irá baixar e realizar um cache das dependências do projeto, e a deco irá preparar detalhes do site.
+
+O site estará acessível em <http://localhost:8000>.
+
+Caso o código de alguma seção em uso na página inicial do site seja alterado, isto será refletido no endereço acima.
+
+## Publicando alterações
+
+O processo de _deploy_ em produção é muito simples: apenas fazer um _git push_ das alterações na _branch_ _**main**_.
+
+Acessando o endereço em produção (como <https://example.deco.site>), essas alterações estarão disponíveis.
+
+## Agora você pode começar a criar sites cada vez mais do seu jeito! :)
+
+Continue estando a deco para entender o potencial e como criar ou alterar sections, loaders e outros elementos da deco para criar sites e experiências cada vez ,mais personalizadas.
+
+Certifique-se de se juntar ao nosso
+[comunidade no Discord](https://deco.cx/discord). Acompanhe as novidades e
+continue evoluindo junto com a gente!

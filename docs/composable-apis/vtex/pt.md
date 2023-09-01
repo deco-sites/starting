@@ -6,7 +6,7 @@ Este artigo orienta você na criação e configuração de um website no [**deco
 
 > TL;DR: Para se conectar à VTEX, você precisa alterar a configuração do bloco `vtex.ts` em https://deco.cx/admin/sites/{site}/blocks/configVTEX
 
-> **Vídeo**: Para assistir ao conteúdo deste artigo, clique [aqui](https://www.loom.com/share/9fee00a691dd44cfb35d1e2680719e5e)
+> **Vídeo**: Para assistir ao conteúdo deste artigo, clique [aqui](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
 
 # Sumário
 1. Pré-requisitos

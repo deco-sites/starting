@@ -1,7 +1,6 @@
 import { useSignal } from "@preact/signals";
 import { Site } from "deco-sites/starting/routes/api/ranking.ts";
 import { JSX } from "preact";
-import { useRef } from "preact/compat";
 import Form from "./analyze/Form.tsx";
 import Loading from "./analyze/Loading.tsx";
 import Result from "./analyze/Result.tsx";
