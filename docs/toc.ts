@@ -351,6 +351,31 @@ const tableOfContents: TableOfContents = [{
       pt: "Web Performance",
     },
     slug: "treinamento-comercial/web-performance",
+  }, {
+    title: {
+      pt: "Agências Parceiras",
+    },
+    slug: "treinamento-comercial/agencias-parceiras",
+  }, {
+    title: {
+      pt: "Nichos de Clients",
+    },
+    slug: "treinamento-comercial/nichos-de-clientes",
+  }, {
+    title: {
+      pt: "Objeções",
+    },
+    slug: "treinamento-comercial/objecoes",
+  }, {
+    title: {
+      pt: "Seu Primeiro Case",
+    },
+    slug: "treinamento-comercial/seu-primeiro-case",
+  }, {
+    title: {
+      pt: "Próximos Passos",
+    },
+    slug: "treinamento-comercial/proximos-passos",
   }],
 }];
 
