@@ -36,22 +36,21 @@ página.
 
 Se você criou um site na deco.cx baseado no nosso
 [starter de ecommerce](https://fashion.deco.site/), ele **já tem todo o código
-necessário para se integrar com o GTM**. No entanto, é necessário configurar a
-section global **Analytics** adicionando a propriedade `trackingId` com o ID do
-container
+necessário para se integrar com o GTM**. No entanto, é necessário configurar um bloco section chamado analytics **Analytics** adicionando a propriedade `trackingId` com o ID do
+[container]
 (https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation)
 previamente configurado.
 
 Para isso, siga os passos:
 
-1. Abra a página **Pages** no Admin da deco.cx
-2. Selecione `Global` no filtro de Status.
-3. Selecione a página que com nome `Analytics`.
+1. Abra a página **Blocos** no Admin da deco.cx
+2. Selecione `Sections`.
+3. Busque por `Analytics`.
 4. Edite a Section `Analytics`, adicionando ou editando a propriedade **Tracking
    ID** com o ID do seu container no GTM.
-5. Salve a página.
+5. Salve e Publique o bloco.
 
-Todas as páginas que utilizam esta section global, Analytics, será atualizada
+Todas as páginas que utilizam esta section (`Analytics`) será atualizada
 automaticamente.
 
 É isso! Para testar que está tudo funcionando, faça o seguinte:
@@ -59,10 +58,12 @@ automaticamente.
 1. Acesse seu site deco `https://<<sitename>>.deco.site`.
 2. Vá até as ferramentas de desenvolvedor e acesse a aba **Network**.
 3. Recarregue a página e certifique-se que o script
-   `https://www.googletagmanager.com/gtm.js?id=GTM-P6D23BB` está sendo
+   `https://www.googletagmanager.com/gtm.js?id=` está sendo
    carregado.
 
 ## Integrando o Google Analytics 4
+
+> Recomendamos que utilize o Google Analytics como tag do GTM para evitar interferência. Caso utilize Google Analytics pelo GTag, adicione seu `GA measurement id` na propriedade `GA measurement ids` da section analytics. 
 
 Se já existe uma tag do Google Analytics 4 (GA4) no container do GTM
 configurado, automaticamente o seu site deco.cx já estará enviando eventos para

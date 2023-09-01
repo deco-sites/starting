@@ -31,25 +31,17 @@ tags in a service worker and improves the load time of the page.
 
 ## Integrating GTM in deco.cx
 
-If you created a site on deco.cx based on our
-[ecommerce starter](https://fashion.deco.site/), it **already has all the code
-needed to integrate with GTM**. However, it is necessary to configure the global
-section **Analytics** by adding the trackingId property with the ID of the
-container
-(<https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation>)
-previously set up.
+If you have created a website on deco.cx based on our [ecommerce starter](https://fashion.deco.site/), it **already has all the necessary code to integrate with GTM**. However, you need to configure a section block called **Analytics** by adding the `trackingId` property with the ID of the [container](https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation) previously configured.
 
 For that, follow the steps:
 
-1. Open Pages on deco.cx's Admin.
-2. Select `Global` on the Status filter.
-3. Select the Analytics page.
-4. Edit the Analytics section, adding or editing the **Tracking Id** property
-   with your GTM's container ID.
-5. Save the page.
+1. Open the **Blocks** page in the deco.cx Admin.
+2. Select **Sections**.
+3. Search for **Analytics**.
+4. Edit the **Analytics** section by adding or editing the **Tracking ID** property with the ID of your container in GTM.
+5. Save and Publish the block.
 
-All pages that use this global section, Analytics, will be automatically
-updated.
+All pages that use this section (**Analytics**) will be automatically updated.
 
 And that! To test that everything is working, do the following:
 
@@ -59,6 +51,8 @@ And that! To test that everything is working, do the following:
    `https://www.googletagmanager.com/gtm.js?id={GTM-ID}` is being loaded.
 
 ## Integrating Google Analytics 4
+
+> We recommend using Google Analytics as the GTM tag to avoid interference. If you are using Google Analytics with GTag, add your `GA measurement id` to the `GA measurement ids` property of the analytics section.
 
 If there is already a Google Analytics 4 (GA4) tag in the GTM container
 configured, your deco.cx site will automatically be sending events to the GA4.
