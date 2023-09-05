@@ -20,7 +20,7 @@ const Breadcrumb: FunctionalComponent<BreadcrumbProps> = (
   }
 
   return (
-    <nav class="relative top-[140px] z-10">
+    <nav class="relative top-[83px] px-12 z-10">
       <ul class="flex items-center flex-wrap gap-2">
         {pathSegments.map(({ name, path }, index) => (
           <li class="flex items-center gap-2" key={index}>
