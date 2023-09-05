@@ -67,7 +67,7 @@ export default function Page({
   next,
 }: Props & WasThisPageHelpfulProps & ForwardBackContent) {
   return (
-    <div class="mx-auto pb-[48px] lg:top-[140px] relative lg:mb-[140px]">
+    <div class="mx-auto pb-[48px] lg:top-[100px] relative lg:mb-[140px]">
       <BreadCrumb homePath={homePath} homeLabel={homeLabel} />
       <div
         class={`w-full`}

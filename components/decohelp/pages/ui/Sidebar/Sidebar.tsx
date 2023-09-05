@@ -178,7 +178,7 @@ export default function Sidebar({
 
   return (
     <div
-      class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[140px] top-[60px] h-screen lg:mb-[40px] ${
+      class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[100px] top-[60px] h-screen lg:mb-[40px] ${
         isMobile ? "absolute" : "sticky"
       }`}
     >
