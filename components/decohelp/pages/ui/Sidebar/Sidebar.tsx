@@ -2,15 +2,24 @@ import { useEffect, useState } from "preact/hooks";
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import MenuButton from "deco-sites/starting/components/decohelp/pages/ui/Sidebar/MenuButton.tsx";
+import useMenuState from "deco-sites/starting/components/decohelp/pages/hooks/useMenuState.ts";
 
 export interface SidebarContent {
+  /** @description Icon for closing the mobile menu */
+  iconMenuClose: LiveImage;
+  /** @description Icon for opening the mobile menu */
+  iconMenuOpen: LiveImage;
+  /** @description Alternate text for the mobile menu icon */
+  AltIconMenu: string;
   SidebarTitle?: string;
-  Subtitle?: string;
+  /** @description Icon displayed beside the sidebar title */
   SidebarIcon?: LiveImage;
+  /** @description Alternate text for the sidebar icon */
   AltIcon?: string;
+  Subtitle?: string;
   LinkSubtitle?: string;
   Topics?: Array<Topic>;
-  class?: string;
 }
 
 export interface Topic {
@@ -23,12 +32,48 @@ export interface Topic {
 
 export interface SubTopic {
   label: string;
+  fontWeight?:
+    | "100"
+    | "200"
+    | "300"
+    | "400"
+    | "500"
+    | "600"
+    | "700"
+    | "800"
+    | "900"
+    | "bold"
+    | "bolder"
+    | "inherit"
+    | "initial"
+    | "lighter"
+    | "normal"
+    | "revert"
+    | "unset";
   SidebarLink: string;
   NestedTopics?: Array<ChildTopic>;
 }
 
 export interface ChildTopic {
   label: string;
+  fontWeight?:
+    | "100"
+    | "200"
+    | "300"
+    | "400"
+    | "500"
+    | "600"
+    | "700"
+    | "800"
+    | "900"
+    | "bold"
+    | "bolder"
+    | "inherit"
+    | "initial"
+    | "lighter"
+    | "normal"
+    | "revert"
+    | "unset";
   SidebarLink: string;
 }
 
@@ -59,13 +104,15 @@ const isSubTopicActive = (
 };
 
 export default function Sidebar({
+  iconMenuClose,
+  iconMenuOpen,
+  AltIconMenu,
   SidebarTitle,
   SidebarIcon,
   AltIcon,
   Subtitle,
   LinkSubtitle,
   Topics,
-  class: sidebarClass,
 }: SidebarContent) {
   const [currentSlug, setCurrentSlug] = useState<string | null>(null);
   const [openTopicIndex, setOpenTopicIndex] = useState<number | null>(null);
@@ -96,159 +143,222 @@ export default function Sidebar({
     );
   };
 
-  return (
-    <aside
-      class={`lg:max-w-[284px] w-full h-full lg:block z-10 ${sidebarClass}`}
-    >
-      <ul class="flex flex-col lg:py-0 pb-[140px] lg:pl-0 pl-[24px] max-h-full overflow-x-auto lg:pt-0 pt-[140px] pr-[40px]">
-        <li class="flex items-center mb-[24px]">
-          {SidebarIcon && SidebarIcon.length > 0 && (
-            <figure class="mr-2">
-              <Image src={SidebarIcon} alt={AltIcon} width={32} height={32} />
-            </figure>
-          )}
-          <h2 class="text-[#2FD180] text-[28px] font-semibold leading-none">
-            {SidebarTitle}
-          </h2>
-        </li>
-        {Subtitle && Subtitle.length > 0 && (
-          <li class="my-[8px] ml-[25px]">
-            <a
-              href={LinkSubtitle}
-              class={`${
-                currentSlug === subtitleSlug ? "text-blue-600" : "text-zinc-900"
-              } text-[15px] font-semibold leading-tight`}
-            >
-              {Subtitle}
-            </a>
-          </li>
-        )}
-        {Topics &&
-          Topics.map((topic, index) => {
-            const isActive = isTopicActive(
-              currentSlug,
-              topic,
-              openTopicIndex,
-              index,
-            );
-            return (
-              <ul key={index} class="mt-2 mb-3 flex flex-col">
-                <li
-                  class="flex items-center py-2 cursor-pointer gap-2"
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    toggleTopicMenu(index);
-                  }}
-                >
-                  <Icon
-                    class={` ${openTopicIndex === index ? "rotate-90" : ""}`}
-                    id="ChevronRight"
-                    width={16}
-                    height={16}
-                    strokeWidth={"3"}
-                  />
-                  {topic.Image && (
-                    <Image
-                      class="w-4 h-4"
-                      src={topic?.Image || ""}
-                      alt={topic?.AltImage}
-                      width={20}
-                      height={20}
-                    />
-                  )}
-                  <a
-                    href={topic?.LinkTopic}
-                    class="text-zinc-900 text-[15px] font-semibold leading-tight cursor-pointer"
-                  >
-                    {topic.label}
-                  </a>
-                  {topic.SubTopics && topic.SubTopics.length > 0 && (
-                    <span class="w-5 h-5 p-1 bg-[#C9CECE] rounded-full text-white text-[13px] font-semibold leading-tight flex items-center justify-center">
-                      {topic.SubTopics.length}
-                    </span>
-                  )}
-                </li>
-                {topic.SubTopics &&
-                  topic.SubTopics.length > 0 && (
-                  <ol
-                    class={`font-semibold flex flex-col list-decimal nested ${
-                      isActive ? "" : "hidden"
-                    }`}
-                  >
-                    {topic.SubTopics.map((subTopic, subTopicIndex) => {
-                      const isActiveSubTopic = isSubTopicActive(
-                        currentSlug,
-                        subTopic,
-                      );
+  const { isMenuOpen, setIsMenuOpen, isMobile } = useMenuState();
 
-                      return (
-                        <li
-                          key={subTopicIndex}
-                          class={`flex flex-col cursor-pointer ${
-                            isActiveSubTopic
-                              ? "text-[#2E6ED9]"
-                              : "text-zinc-900 relative w-min-content"
-                          }`}
-                        >
-                          <span
-                            class="flex items-center hover:bg-[#F8F9F5] pl-[32px] pr-2 py-2"
-                            onClick={(event) => {
-                              event.preventDefault();
-                              toggleDropdown(subTopicIndex);
-                            }}
+  const altIconMenuClose = AltIconMenu;
+  const altIconMenuOpen = AltIconMenu;
+
+  const menuCloseProps = {
+    Image: iconMenuClose,
+    AltIconMenu: altIconMenuClose,
+  };
+
+  const menuOpenProps = {
+    Image: iconMenuOpen,
+    AltIconMenu: altIconMenuOpen,
+  };
+
+  const firstTopic = Topics?.[0];
+  const firstSubTopic = firstTopic?.SubTopics?.[0];
+  const firstNestedTopic = firstSubTopic?.NestedTopics?.[0];
+
+  const fontWeightSubtopic = {
+    fontWeight: firstSubTopic?.fontWeight || "normal",
+  };
+
+  const fontWeightChildtopic = {
+    fontWeight: firstNestedTopic?.fontWeight || "normal",
+  };
+
+  function getFontWeightStyle(fontWeightValue: string) {
+    return {
+      fontWeight: fontWeightValue,
+    };
+  }
+
+  return (
+    <div
+      class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[140px] top-[60px] h-screen lg:mb-[40px] ${
+        isMobile ? "absolute" : "sticky"
+      }`}
+    >
+      <div class="flex gap-2 z-30 relative">
+        <MenuButton
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          isMobile={isMobile}
+          iconMenuClose={menuCloseProps}
+          iconMenuOpen={menuOpenProps}
+        />
+      </div>
+      <aside
+        class={`lg:max-w-[388px] w-full h-full lg:block bg-white border-r-2 border-[#D4DBD7] ${
+          !isMobile ? "lg:pl-[64px]" : ""
+        } ${isMenuOpen && isMobile ? "block z-20 pl-0 fixed" : "hidden"}`}
+      >
+        <ul
+          class={`flex flex-col lg:py-0 pb-[140px] lg:pl-0 pl-[24px] pr-[40px] max-h-full overflow-x-auto lg:pt-0 ${
+            isMenuOpen && isMobile ? "pr-[40px] pt-[40px] " : "pr-0 pt-[140px]"
+          }`}
+        >
+          <li class="flex items-center mb-[24px]">
+            {SidebarIcon && SidebarIcon.length > 0 && (
+              <figure class="mr-2">
+                <Image src={SidebarIcon} alt={AltIcon} width={32} height={32} />
+              </figure>
+            )}
+            <h2 class="text-[#2FD180] text-[28px] font-semibold leading-none">
+              {SidebarTitle}
+            </h2>
+          </li>
+          {Subtitle && Subtitle.length > 0 && (
+            <li class="my-[8px] ml-[25px]">
+              <a
+                href={LinkSubtitle}
+                class={`${
+                  currentSlug === subtitleSlug
+                    ? "text-blue-600"
+                    : "text-zinc-900"
+                } text-[15px] font-semibold leading-tight`}
+              >
+                {Subtitle}
+              </a>
+            </li>
+          )}
+          {Topics &&
+            Topics.map((topic, index) => {
+              const isActive = isTopicActive(
+                currentSlug,
+                topic,
+                openTopicIndex,
+                index,
+              );
+              return (
+                <ul key={index} class="mt-2 mb-3 flex flex-col">
+                  <li
+                    class="flex items-center py-2 cursor-pointer gap-2"
+                    onClick={(event) => {
+                      event.stopPropagation();
+                      toggleTopicMenu(index);
+                    }}
+                  >
+                    <Icon
+                      class={` ${openTopicIndex === index ? "rotate-90" : ""}`}
+                      id="ChevronRight"
+                      width={16}
+                      height={16}
+                      strokeWidth={"3"}
+                    />
+                    {topic.Image && (
+                      <Image
+                        class="w-4 h-4"
+                        src={topic?.Image || ""}
+                        alt={topic?.AltImage}
+                        width={20}
+                        height={20}
+                      />
+                    )}
+                    <a
+                      href={topic?.LinkTopic}
+                      class="text-zinc-900 text-[15px] font-semibold leading-tight cursor-pointer"
+                    >
+                      {topic.label}
+                    </a>
+                    {topic.SubTopics && topic.SubTopics.length > 0 && (
+                      <span class="w-5 h-5 p-1 bg-[#C9CECE] rounded-full text-white text-[13px] font-semibold leading-tight flex items-center justify-center">
+                        {topic.SubTopics.length}
+                      </span>
+                    )}
+                  </li>
+                  {topic.SubTopics &&
+                    topic.SubTopics.length > 0 && (
+                    <ol
+                      class={`font-semibold flex flex-col list-decimal ${
+                        isActive ? "" : "hidden"
+                      }`}
+                    >
+                      {topic.SubTopics.map((subTopic, subTopicIndex) => {
+                        const isActiveSubTopic = isSubTopicActive(
+                          currentSlug,
+                          subTopic,
+                        );
+
+                        return (
+                          <li
+                            key={subTopicIndex}
+                            class={`flex flex-col cursor-pointer ${
+                              isActiveSubTopic
+                                ? "text-[#2E6ED9]"
+                                : "text-zinc-900 relative w-min-content"
+                            }`}
                           >
-                            {subTopic.NestedTopics &&
-                              subTopic.NestedTopics.length > 0 && (
-                              <Icon
-                                class={`mr-2 ${
-                                  openSubTopicIndex === subTopicIndex
-                                    ? "rotate-90"
-                                    : ""
-                                }`}
-                                id="ChevronRight"
-                                width={16}
-                                height={16}
-                                strokeWidth={"3"}
-                              />
-                            )}
-                            <a
-                              href={subTopic.SidebarLink}
-                              class={`text-zinc-900 text-[15px] font-semibold leading-tight cursor-pointer`}
-                              onClick={(e) => e.stopPropagation()}
+                            <span
+                              class="flex items-center hover:bg-[#F8F9F5] pl-[32px] pr-2 py-2"
+                              onClick={(event) => {
+                                event.preventDefault();
+                                toggleDropdown(subTopicIndex);
+                              }}
                             >
-                              <span class="ml-[5px]">{subTopic.label}</span>
-                            </a>
-                          </span>
-                          {subTopic.NestedTopics &&
-                            subTopic.NestedTopics.length > 0 &&
-                            openSubTopicIndex === subTopicIndex && (
-                            <ol class="ml-9 flex flex-col nested">
-                              {subTopic.NestedTopics.map(
-                                (ChildTopic, subSubIndex) => (
-                                  <li>
-                                    <a
-                                      class="flex items-center pl-[32px] pr-2 py-2 text-zinc-900 text-[15px] font-semibold leading-tight cursor-pointer hover:bg-[#F8F9F5]"
-                                      href={ChildTopic.SidebarLink}
-                                      key={subSubIndex}
-                                    >
-                                      <span class="ml-[5px]">
-                                        {ChildTopic.label}
-                                      </span>
-                                    </a>
-                                  </li>
-                                ),
+                              {subTopic.NestedTopics &&
+                                subTopic.NestedTopics.length > 0 && (
+                                <Icon
+                                  class={`mr-2 ${
+                                    openSubTopicIndex === subTopicIndex
+                                      ? "rotate-90"
+                                      : ""
+                                  }`}
+                                  id="ChevronRight"
+                                  width={16}
+                                  height={16}
+                                  strokeWidth={"3"}
+                                />
                               )}
-                            </ol>
-                          )}
-                        </li>
-                      );
-                    })}
-                  </ol>
-                )}
-              </ul>
-            );
-          })}
-      </ul>
-    </aside>
+                              <a
+                                href={subTopic.SidebarLink}
+                                class={`text-zinc-900 text-[15px] leading-tight cursor-pointer`}
+                                onClick={(e) => e.stopPropagation()}
+                                style={getFontWeightStyle(
+                                  fontWeightSubtopic.fontWeight || "normal",
+                                )}
+                              >
+                                <span>{subTopic.label}</span>
+                              </a>
+                            </span>
+                            {subTopic.NestedTopics &&
+                              subTopic.NestedTopics.length > 0 &&
+                              openSubTopicIndex === subTopicIndex && (
+                              <ol class="ml-9 flex flex-col">
+                                {subTopic.NestedTopics.map(
+                                  (ChildTopic, subSubIndex) => (
+                                    <li>
+                                      <a
+                                        class="flex items-center pl-[32px] pr-2 py-2 text-zinc-900 text-[15px] leading-tight cursor-pointer hover:bg-[#F8F9F5]"
+                                        href={ChildTopic.SidebarLink}
+                                        key={subSubIndex}
+                                        style={getFontWeightStyle(
+                                          fontWeightChildtopic.fontWeight ||
+                                            "normal",
+                                        )}
+                                      >
+                                        <span>
+                                          {ChildTopic.label}
+                                        </span>
+                                      </a>
+                                    </li>
+                                  ),
+                                )}
+                              </ol>
+                            )}
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  )}
+                </ul>
+              );
+            })}
+        </ul>
+      </aside>
+    </div>
   );
 }
