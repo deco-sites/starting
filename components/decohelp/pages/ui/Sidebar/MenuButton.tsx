@@ -13,7 +13,6 @@ interface MenuButtonProps {
   isMenuOpen: boolean;
   setIsMenuOpen: (value: boolean) => void;
   isMobile: boolean;
-  class?: string;
 }
 
 const MenuButton = ({
@@ -24,11 +23,11 @@ const MenuButton = ({
   iconMenuOpen,
 }: MenuButtonProps) => {
   return (
-    <div className="pl-6 lg:hidden relative z-20 lg:top-0 top-[140px] flex">
+    <div className="pl-6 lg:hidden relative lg:top-0 lg:top-[100px] top-[24px] flex">
       {isMenuOpen && isMobile
         ? (
           <button
-            class={`top-[148px] left-[calc(100%_-_40px)] ${
+            class={`top-[100px] left-[calc(100%_-_40px)] ${
               isMenuOpen && isMobile ? "fixed" : "relative"
             }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
