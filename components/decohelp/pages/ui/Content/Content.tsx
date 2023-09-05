@@ -1,18 +1,13 @@
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
-import MenuButton from "deco-sites/starting/components/decohelp/pages/ui/Sidebar/MenuButton.tsx";
-import Sidebar from "deco-sites/starting/components/decohelp/pages/ui/Sidebar/Sidebar.tsx";
 import YoutubeEmbed from "deco-sites/starting/components/decohelp/pages/ui/Youtube/YoutubeEmbed.tsx";
-import OnThisPageItem from "deco-sites/starting/components/decohelp/pages/ui/OnThisPage/OnThisPage.tsx";
-import BreadCrumb from "deco-sites/starting/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
 import WasThisPageHelpfulContent, {
   WasThisPageHelpfulProps,
 } from "deco-sites/starting/components/decohelp/pages/ui/WasThisPageHelpful/WasThisPageHelpful.tsx";
 import ForwardBackButtons, {
   ForwardBackContent,
 } from "deco-sites/starting/components/decohelp/pages/ui/ForwardBackButtons/ForwardBackButtons.tsx";
-import useMenuState from "deco-sites/starting/components/decohelp/pages/hooks/useMenuState.ts";
-import { useFixedContentOnScroll } from "deco-sites/starting/components/decohelp/pages/hooks/useFixedContentOnScroll.ts";
+import BreadCrumb from "deco-sites/starting/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
 import {
   ContentType,
   Props,
@@ -62,70 +57,23 @@ function renderContentItem(item: ContentType) {
 }
 
 export default function Page({
-  Title,
-  Version,
   homeLabel,
   homePath,
+  Title,
+  Version,
   PageContent,
-  SidebarContent: {
-    iconMenuClose,
-    iconMenuOpen,
-    AltIconMenu,
-    SidebarTitle,
-    SidebarIcon,
-    AltIcon,
-    Subtitle,
-    LinkSubtitle,
-    Topics,
-  },
-  OnThisPage,
   WasThisPageHelpful,
   previous,
   next,
 }: Props & WasThisPageHelpfulProps & ForwardBackContent) {
-  const { isMenuOpen, setIsMenuOpen, isMobile } = useMenuState();
-  const isContentFixed = useFixedContentOnScroll();
-
-  const menuCloseProps = {
-    Image: iconMenuClose,
-    AltIconMenu: AltIconMenu,
-  };
-
-  const menuOpenProps = {
-    Image: iconMenuOpen,
-    AltIconMenu: AltIconMenu,
-  };
-
   return (
-    <div class="mx-auto pb-[48px]">
+    <div class="mx-auto pb-[48px] lg:top-[140px] relative lg:mb-[140px]">
+      <BreadCrumb homePath={homePath} homeLabel={homeLabel} />
       <div
-        class={`grid xl:grid-page-desktop lg:grid-page-tablet grid-page-mobile w-full mx-auto max-w-[1440px] lg:px-[64px] lg:gap-[40px] gap-[24px]`}
+        class={`w-full`}
       >
-        <div class={`flex flex-col border-r-2 border-[#D4DBD7] lg:mt-[140px]`}>
-          <div class="flex gap-2">
-            <MenuButton
-              isMenuOpen={isMenuOpen}
-              setIsMenuOpen={setIsMenuOpen}
-              isMobile={isMobile}
-              iconMenuClose={menuCloseProps}
-              iconMenuOpen={menuOpenProps}
-            />
-            <BreadCrumb homePath={homePath} homeLabel={homeLabel} />
-          </div>
-          <Sidebar
-            SidebarTitle={SidebarTitle}
-            SidebarIcon={SidebarIcon}
-            AltIcon={AltIcon}
-            Subtitle={Subtitle}
-            LinkSubtitle={LinkSubtitle}
-            Topics={Topics}
-            class={`${isContentFixed ? "lg:relative fixed" : "fixed"} ${
-              isMenuOpen && isMobile ? "block bg-white" : "hidden"
-            }`}
-          />
-        </div>
-        <div class="w-full lg:px-0 px-6 relative">
-          <div class="flex flex-col gap-[8px] pt-[140px]">
+        <div class="w-full xl:px-0 lg:pl-0 lg:pr-[64px] px-6 relative z-0">
+          <div class="flex flex-col gap-[8px] lg:pt-0 pt-[118px]">
             <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
               {Title}
             </h1>
@@ -162,29 +110,6 @@ export default function Page({
               next={next}
             />
           </div>
-        </div>
-        <div class="max-w-[280px] w-full xl:block hidden relative h-screen pt-[140px]">
-          <ul
-            class={`list-disc flex flex-col gap-2 
-            ${isContentFixed ? "relative" : "fixed"} `}
-          >
-            {OnThisPage[0]?.label && (
-              <h3 class="text-black text-[15px] font-semibold leading-tight mb-2">
-                {OnThisPage[0].label}
-              </h3>
-            )}
-            {OnThisPage.length > 0 && (
-              <>
-                {OnThisPage.map(({ content }) => (
-                  <>
-                    {content?.map(({ label, active }) => (
-                      <OnThisPageItem label={label} active={active} />
-                    ))}
-                  </>
-                ))}
-              </>
-            )}
-          </ul>
         </div>
       </div>
     </div>

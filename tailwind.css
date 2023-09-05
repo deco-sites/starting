@@ -93,26 +93,16 @@
   }
 
   .grid-page-desktop {
-    grid-template-columns: 284px auto 280px;
+    grid-template-columns: 388px auto 344px;
   }
 
   .grid-page-tablet {
-    grid-template-columns: 284px auto;
+    grid-template-columns: 388px auto;
   }
 
   .grid-page-mobile {
     grid-template-columns: 1fr;
   }
-
-  .nested {
-    counter-reset: item;
-  }
-
-  .nested li a:before {
-    content: counters(item, ".")".";
-    counter-increment: item;
-  }
-
 }
 
 @layer components {}
