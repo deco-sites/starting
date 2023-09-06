@@ -78,35 +78,3 @@ export interface Youtube {
   maxHeight?: string;
   Underline?: boolean;
 }
-
-
-export interface WasThisPageHelpfulProps {
-  WasThisPageHelpful?: {
-    Label?: string;
-    Icon?: {
-      IconYes?: LiveImage;
-      IconNo?: LiveImage;
-      Width?: number;
-      Height?: number;
-    };
-    Yes?: string;
-    IconNo?: LiveImage;
-    No?: string;
-    Text?: HTML;
-  };
-}
-
-export interface ForwardBackContent {
-  previous?: {
-    href?: string;
-    title?: string;
-    category?: string;
-    previousLabel?: string;
-  };
-  next?: {
-    href?: string;
-    title?: string;
-    category?: string;
-    nextLabel?: string;
-  };
-}
