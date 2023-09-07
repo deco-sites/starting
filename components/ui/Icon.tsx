@@ -18,6 +18,7 @@ export type AvailableIcons =
   | "Check"
   | "CreditCard"
   | "Deco"
+  | "DecoIcon"
   | "DecoLogo"
   | "DeviceDesktop"
   | "DeviceMobile"

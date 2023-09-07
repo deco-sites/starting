@@ -26,6 +26,7 @@ export default function MarkdownContainer(props: Props) {
           <Image
             src={highlightPost.img}
             sizes="(max-width: 894px) 100vw, 50vw"
+            style={{ maxHeight: "300px" }}
             width={894}
             height={502}
             loading="eager"

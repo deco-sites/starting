@@ -2,6 +2,7 @@ export interface Props {
     /** @title Title */
     label?: string;
     titleLevel?: "H1" | "H2"
+    onlyShowTitle?: boolean;
     /** @format html */
     text: string;
 }
@@ -9,6 +10,7 @@ export interface Props {
 export default function ArticleParagraph({
     label,
     titleLevel = "H1",
+    onlyShowTitle,
     text,
 }: Props) {
     return (
@@ -30,18 +32,22 @@ export default function ArticleParagraph({
                             <>
                                 {
                                     titleLevel === "H1" && (
-                                        <h2 class="text-3xl font-semibold">{label}</h2>
+                                        <h2 class="text-3xl font-semibold leading-tight">{label}</h2>
                                     )
                                 }
                                 {
                                     titleLevel === "H2" && (
-                                        <h3 class="text-xl font-medium">{label}</h3>
+                                        <h3 class="text-xl font-medium leading-tight">{label}</h3>
                                     )
                                 }
                             </>
                         )
                     }
-                    <div class="leading-normal article-content" dangerouslySetInnerHTML={{ __html: text }}></div>
+                    {
+                        onlyShowTitle ? "" : (
+                            <div class="text-lg leading-normal article-content" dangerouslySetInnerHTML={{ __html: text }}></div>
+                        )
+                    }
                 </div>
             </div>
         </div>
