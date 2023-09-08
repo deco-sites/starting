@@ -106,7 +106,7 @@ export default function OnThisPage(props: OnThisPage) {
 
   return (
     <div
-      class={`max-w-[344px] w-full xl:block hidden relative h-screen lg:top-[100px] lg:mb-[140px] ${
+      class={`max-w-[344px] w-full xl:block hidden lg:top-[100px] lg:mb-[140px] ${
         isMobile ? "absolute" : "sticky"
       }`}
     >

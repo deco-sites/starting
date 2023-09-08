@@ -24,7 +24,7 @@ function renderContentItem(item: ContentType) {
     ? (
       <article
         aria-label={item.label}
-        class="bg-[#f6f8fa] p-4 rounded-md leading-normal overflow-auto my-2"
+        class="bg-[#f6f8fa] p-4 rounded-md leading-normal overflow-auto my-2 coding"
       >
         <HTMLRenderer html={item.Code} />
       </article>
@@ -49,7 +49,6 @@ function renderContentItem(item: ContentType) {
           label={item.label}
           width={item?.width}
           height={item?.height}
-          maxHeight={item?.maxHeight}
         />
       </>
     )
@@ -67,7 +66,7 @@ export default function Page({
   next,
 }: Props & WasThisPageHelpfulProps & ForwardBackContent) {
   return (
-    <div class="mx-auto pb-[48px] lg:top-[100px] relative lg:mb-[140px]">
+    <div class="mx-auto relative lg:mb-[40px] lg:border-l-2 lg:border-[#D4DBD7] lg:px-[40px]">
       <BreadCrumb homePath={homePath} homeLabel={homeLabel} />
       <div
         class={`w-full`}
@@ -78,7 +77,7 @@ export default function Page({
               {Title}
             </h1>
             {Version && Version.length > 0 && (
-              <span class="px-2 py-1 bg-white bg-opacity-0 rounded border border-zinc-300 text-neutral-900 text-[13px] font-semibold leading-tight max-w-[96px] my-2.5 whitespace-nowrap">
+              <span class="px-2 py-1 bg-white bg-opacity-0 rounded border border-zinc-300 text-neutral-900 text-[13px] font-semibold leading-tight w-min my-2.5 whitespace-nowrap">
                 {Version}
               </span>
             )}

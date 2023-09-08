@@ -178,7 +178,7 @@ export default function Sidebar({
 
   return (
     <div
-      class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[100px] top-[60px] h-screen lg:mb-[40px] ${
+      class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[100px] top-[60px] lg:mb-[40px] ${
         isMobile ? "absolute" : "sticky"
       }`}
     >
@@ -192,7 +192,7 @@ export default function Sidebar({
         />
       </div>
       <aside
-        class={`lg:max-w-[388px] w-full h-full lg:block bg-white border-r-2 border-[#D4DBD7] ${
+        class={`lg:max-w-[388px] w-full h-full lg:block bg-white ${
           !isMobile ? "lg:pl-[64px]" : ""
         } ${isMenuOpen && isMobile ? "block z-20 pl-0 fixed" : "hidden"}`}
       >
