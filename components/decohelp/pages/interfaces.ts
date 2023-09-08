@@ -74,7 +74,5 @@ export interface Youtube {
   width?: string;
   /** @description custom height youtube video */
   height?: string;
-  /** @description custom maximum height youtube video */
-  maxHeight?: string;
   Underline?: boolean;
 }

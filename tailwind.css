@@ -103,6 +103,10 @@
   .grid-page-mobile {
     grid-template-columns: 1fr;
   }
+
+  .coding div pre {
+    white-space: pre-wrap;
+  }
 }
 
 @layer components {}
