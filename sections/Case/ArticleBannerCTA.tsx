@@ -18,7 +18,7 @@ export default function ArticleBannerCTA({
                         {text}
                     </div>
                     <div class="flex-none">
-                        <a class="bg-primary text-white uppercase flex justify-center px-6 py-4 rounded" href={button && button.href}>{button && button.label || "Baixar e-book"}</a>
+                        <a class="bg-primary text-white uppercase flex justify-center px-6 py-4 rounded hover:scale-110 duration-100" href={button && button.href}>{button && button.label || "Baixar e-book"}</a>
                     </div>
                 </div>
             </div>
