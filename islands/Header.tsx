@@ -10,10 +10,6 @@ export interface Alert {
 }
 
 export interface Props {
-  githubBarText?: {
-    mobile?: string;
-    desktop?: string;
-  };
   alerts?: {
     mobile?: Alert[];
     desktop?: Alert[];
