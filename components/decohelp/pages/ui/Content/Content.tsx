@@ -62,7 +62,7 @@ export default function Page({
   WasThisPageHelpful,
 }: Props & WasThisPageHelpfulProps) {
   return (
-    <div class="mx-auto relative lg:mb-[40px] lg:border-l-2 lg:border-[#D4DBD7] lg:px-[40px]">
+    <div class="mx-auto relative lg:mb-[40px] mb-[32px] lg:border-l-2 lg:border-[#D4DBD7] lg:px-[40px]">
       <BreadCrumb homePath={homePath} homeLabel={homeLabel} />
       <div
         class={`w-full`}
