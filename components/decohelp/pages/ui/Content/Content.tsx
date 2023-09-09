@@ -4,9 +4,7 @@ import YoutubeEmbed from "deco-sites/starting/components/decohelp/pages/ui/Youtu
 import WasThisPageHelpfulContent, {
   WasThisPageHelpfulProps,
 } from "deco-sites/starting/components/decohelp/pages/ui/WasThisPageHelpful/WasThisPageHelpful.tsx";
-import ForwardBackButtons, {
-  ForwardBackContent,
-} from "deco-sites/starting/components/decohelp/pages/ui/ForwardBackButtons/ForwardBackButtons.tsx";
+import ForwardBackButtons from "deco-sites/starting/components/decohelp/pages/ui/ForwardBackButtons/ForwardBackButtons.tsx";
 import BreadCrumb from "deco-sites/starting/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
 import {
   ContentType,
@@ -62,9 +60,7 @@ export default function Page({
   Version,
   PageContent,
   WasThisPageHelpful,
-  previous,
-  next,
-}: Props & WasThisPageHelpfulProps & ForwardBackContent) {
+}: Props & WasThisPageHelpfulProps) {
   return (
     <div class="mx-auto relative lg:mb-[40px] lg:border-l-2 lg:border-[#D4DBD7] lg:px-[40px]">
       <BreadCrumb homePath={homePath} homeLabel={homeLabel} />
@@ -72,7 +68,7 @@ export default function Page({
         class={`w-full`}
       >
         <div class="w-full xl:px-0 lg:pl-0 lg:pr-[64px] px-6 relative z-0">
-          <div class="flex flex-col gap-[8px] lg:pt-0 pt-[118px]">
+          <div class="flex flex-col gap-[8px] lg:pt-0 pt-[161px]">
             <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
               {Title}
             </h1>
@@ -104,10 +100,7 @@ export default function Page({
             <WasThisPageHelpfulContent
               WasThisPageHelpful={WasThisPageHelpful}
             />
-            <ForwardBackButtons
-              previous={previous}
-              next={next}
-            />
+            <ForwardBackButtons />
           </div>
         </div>
       </div>
