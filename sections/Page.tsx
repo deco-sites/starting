@@ -12,7 +12,7 @@ export default function (props: SectionProps) {
 
   return (
     <div
-      class={`grid xl:grid-page-desktop lg:grid-page-tablet grid-page-mobile w-full mx-auto max-w-[1440px] lg:pt-[100px]`}
+      class={`grid xl:grid-page-desktop lg:grid-page-tablet grid-page-mobile w-full mx-auto max-w-[1440px] lg:pt-[140px]`}
     >
       {renderSection(props.SectionSidebar, 0)}
       {renderSection(props.SectionContent, 1)}

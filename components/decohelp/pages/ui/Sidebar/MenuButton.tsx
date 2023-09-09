@@ -23,11 +23,11 @@ const MenuButton = ({
   iconMenuOpen,
 }: MenuButtonProps) => {
   return (
-    <div className="pl-6 lg:hidden relative lg:top-0 lg:top-[100px] top-[24px] flex">
+    <div className="pl-6 lg:hidden relative lg:top-0 lg:top-[140px] top-[24px] flex">
       {isMenuOpen && isMobile
         ? (
           <button
-            class={`top-[100px] left-[calc(100%_-_40px)] ${
+            class={`top-[143px] left-[calc(100%_-_40px)] ${
               isMenuOpen && isMobile ? "fixed" : "relative"
             }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
