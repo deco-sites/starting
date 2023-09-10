@@ -67,7 +67,7 @@ export default function Page({
       <div
         class={`w-full`}
       >
-        <div class="w-full xl:px-0 lg:pl-0 lg:pr-[64px] px-6 relative z-0">
+        <div class="w-full xl:px-0 lg:pl-0 px-6 relative z-0">
           <div class="flex flex-col gap-[8px] lg:pt-0 pt-[161px]">
             <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
               {Title}

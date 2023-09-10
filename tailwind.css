@@ -93,11 +93,11 @@
   }
 
   .grid-page-desktop {
-    grid-template-columns: 388px auto 344px;
+    grid-template-columns: 26.945% auto 23.195%;
   }
 
   .grid-page-tablet {
-    grid-template-columns: 388px auto;
+    grid-template-columns: 30.835% auto;
   }
 
   .grid-page-mobile {
