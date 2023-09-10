@@ -83,13 +83,11 @@ const isTopicActive = (
   openTopicIndex: number | null,
   index: number,
 ): boolean => {
-  const linkSlug = topic.LinkTopic?.split("/").pop()?.toLowerCase();
-  const isActiveTopic = currentSlug === linkSlug ||
-    topic.SubTopics.some(
-      (subTopic) =>
-        subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === currentSlug,
-    );
-  const isOpen = openTopicIndex === index || isActiveTopic;
+  topic.SubTopics.some(
+    (subTopic) =>
+      subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === currentSlug,
+  );
+  const isOpen = openTopicIndex === index;
 
   return isOpen;
 };
@@ -178,7 +176,7 @@ export default function Sidebar({
 
   return (
     <div
-      class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[100px] top-[60px] lg:mb-[40px] ${
+      class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[140px] top-[103px] lg:mb-[40px] ${
         isMobile ? "absolute" : "sticky"
       }`}
     >
@@ -293,7 +291,9 @@ export default function Sidebar({
                             }`}
                           >
                             <span
-                              class="flex items-center hover:bg-[#F8F9F5] pl-[32px] pr-2 py-2"
+                              class={`flex items-center pl-[32px] pr-2 py-2 ${
+                                isActiveSubTopic ? "" : "hover:bg-[#F8F9F5]"
+                              }`}
                               onClick={(event) => {
                                 event.preventDefault();
                                 toggleDropdown(subTopicIndex);
@@ -315,7 +315,11 @@ export default function Sidebar({
                               )}
                               <a
                                 href={subTopic.SidebarLink}
-                                class={`text-zinc-900 text-[15px] leading-tight cursor-pointer`}
+                                class={`text-[15px] leading-tight cursor-pointer ${
+                                  isActiveSubTopic
+                                    ? "text-[#2E6ED9]"
+                                    : "text-zinc-900 relative w-min-content"
+                                }`}
                                 onClick={(e) => e.stopPropagation()}
                                 style={getFontWeightStyle(
                                   fontWeightSubtopic.fontWeight || "normal",
@@ -332,7 +336,7 @@ export default function Sidebar({
                                   (ChildTopic, subSubIndex) => (
                                     <li>
                                       <a
-                                        class="flex items-center pl-[32px] pr-2 py-2 text-zinc-900 text-[15px] leading-tight cursor-pointer hover:bg-[#F8F9F5]"
+                                        class={`flex items-center pl-[32px] pr-2 py-2 text-zinc-900 text-[15px] leading-tight cursor-pointer hover:bg-[#F8F9F5]`}
                                         href={ChildTopic.SidebarLink}
                                         key={subSubIndex}
                                         style={getFontWeightStyle(
