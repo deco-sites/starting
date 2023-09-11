@@ -65,7 +65,7 @@ export default function Page({
     <div class="mx-auto relative lg:mb-[40px] mb-[32px] lg:border-l-2 lg:border-[#D4DBD7] lg:px-[40px]">
       <BreadCrumb homePath={homePath} homeLabel={homeLabel} />
       <div
-        class={`w-full`}
+        class="w-full"
       >
         <div class="w-full xl:px-0 lg:pl-0 px-6 relative z-0">
           <div class="flex flex-col gap-[8px] lg:pt-0 pt-[161px]">
