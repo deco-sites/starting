@@ -5,16 +5,14 @@ interface YoutubeEmbedProps {
   label: string;
   width?: string;
   height?: string;
-  maxHeight?: string;
 }
 
 const YoutubeEmbed: FunctionComponent<YoutubeEmbedProps> = (
-  { embedId, label, width, height, maxHeight },
+  { embedId, label, width, height },
 ) => (
   <>
     <iframe
-      class="w-full h-screen my-4"
-      style={{ maxHeight: maxHeight }}
+      class="w-full my-4"
       width={width}
       height={height}
       src={`https://www.youtube.com/embed/${embedId}`}

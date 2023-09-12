@@ -26,11 +26,11 @@ export default function WasThisPageHelpfulContent({
   const buttonProps = WasThisPageHelpful?.Button;
   const label = WasThisPageHelpful?.Label ?? "";
   const text = WasThisPageHelpful?.Text ?? "";
-
+  
   return (
     <>
-      {WasThisPageHelpful && (
-        <div class="bg-[#FAFAFA] flex flex-col p-4 mb-4 rounded-2xl lg:gap-6 gap-y-4">
+      {label && (
+        <div class="bg-[#FAFAFA] flex flex-col p-4 rounded-2xl lg:gap-6 gap-y-4">
           <div class="flex lg:flex-row flex-col items-center lg:gap-0 gap-y-4">
             <span class="text-[#161616] text-xl font-semibold leading-normal lg:mr-4 lg:whitespace-nowrap">
               {label}

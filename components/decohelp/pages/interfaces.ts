@@ -9,27 +9,8 @@ export interface Props {
   homeLabel: string;
   /** @description Breadcrumb path for the home link */
   homePath: string;
-  SidebarContent: SidebarContent;
   /** @description Main content structure of the page */
   PageContent: Content[];
-  OnThisPage: OnThisPage[];
-}
-
-export interface SidebarContent {
-  /** @description Icon for closing the mobile menu */
-  iconMenuClose: LiveImage;
-  /** @description Icon for opening the mobile menu */
-  iconMenuOpen: LiveImage;
-  /** @description Alternate text for the mobile menu icon */
-  AltIconMenu: string;
-  SidebarTitle?: string;
-  /** @description Icon displayed beside the sidebar title */
-  SidebarIcon?: LiveImage;
-  /** @description Alternate text for the sidebar icon */
-  AltIcon?: string;
-  Subtitle?: string;
-  LinkSubtitle?: string;
-  Topics?: Array<Topic>;
 }
 
 export interface Topic {
@@ -93,48 +74,5 @@ export interface Youtube {
   width?: string;
   /** @description custom height youtube video */
   height?: string;
-  /** @description custom maximum height youtube video */
-  maxHeight?: string;
   Underline?: boolean;
-}
-
-export interface OnThisPage {
-  label?: string;
-  content: Array<OnThisPageContent>;
-}
-
-export interface OnThisPageContent {
-  label: string;
-  active?: boolean;
-}
-
-export interface WasThisPageHelpfulProps {
-  WasThisPageHelpful?: {
-    Label?: string;
-    Icon?: {
-      IconYes?: LiveImage;
-      IconNo?: LiveImage;
-      Width?: number;
-      Height?: number;
-    };
-    Yes?: string;
-    IconNo?: LiveImage;
-    No?: string;
-    Text?: HTML;
-  };
-}
-
-export interface ForwardBackContent {
-  previous?: {
-    href?: string;
-    title?: string;
-    category?: string;
-    previousLabel?: string;
-  };
-  next?: {
-    href?: string;
-    title?: string;
-    category?: string;
-    nextLabel?: string;
-  };
 }
