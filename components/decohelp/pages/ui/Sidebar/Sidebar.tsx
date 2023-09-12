@@ -234,19 +234,25 @@ export default function Sidebar({
               return (
                 <ul key={index} class="mt-2 mb-3 flex flex-col">
                   <li
-                    class="flex items-center py-2 cursor-pointer gap-2"
+                    class={`flex items-center py-2 cursor-pointer gap-2 ${
+                      topic.SubTopics && topic.SubTopics.length > 0
+                        ? ""
+                        : "ml-[24px]"
+                    }`}
                     onClick={(event) => {
                       event.stopPropagation();
                       toggleTopicMenu(index);
                     }}
                   >
-                    <Icon
-                      class={` ${openTopicIndex === index ? "rotate-90" : ""}`}
-                      id="ChevronRight"
-                      width={16}
-                      height={16}
-                      strokeWidth={"3"}
-                    />
+                    {topic.SubTopics && topic.SubTopics.length > 0 && (
+                      <Icon
+                        class={`${openTopicIndex === index ? "rotate-90" : ""}`}
+                        id="ChevronRight"
+                        width={16}
+                        height={16}
+                        strokeWidth={"3"}
+                      />
+                    )}
                     {topic.Image && (
                       <Image
                         class="w-4 h-4"
