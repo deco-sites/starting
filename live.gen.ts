@@ -7,6 +7,7 @@ import * as $1 from "./functions/LoadGitHubRawPost.ts";
 import * as $2 from "./functions/LoadGitHubRawPostList.ts";
 import * as $3 from "./functions/LoadPageProps.ts";
 import * as $4 from "./functions/psiRankingList.ts";
+import * as $$$0 from "./loaders/denoLoader.ts";
 import * as $$$$0 from "./routes/admin/[...catchall].tsx";
 import * as $$$$1 from "./routes/api/calc.tsx";
 import * as $$$$2 from "./routes/api/case.tsx";
@@ -90,22 +91,23 @@ import * as $$$$$$$$51 from "./sections/JoinOurCommunity.tsx";
 import * as $$$$$$$$52 from "./sections/Links.tsx";
 import * as $$$$$$$$53 from "./sections/MainBanner.tsx";
 import * as $$$$$$$$54 from "./sections/Markdown.tsx";
-import * as $$$$$$$$55 from "./sections/OnThisPage.tsx";
-import * as $$$$$$$$56 from "./sections/Page.tsx";
-import * as $$$$$$$$57 from "./sections/Partner.tsx";
-import * as $$$$$$$$58 from "./sections/PopularDocuments.tsx";
-import * as $$$$$$$$59 from "./sections/PopularTopics.tsx";
-import * as $$$$$$$$60 from "./sections/Pricing.tsx";
-import * as $$$$$$$$61 from "./sections/PricingValue.tsx";
-import * as $$$$$$$$62 from "./sections/QuillText.tsx";
-import * as $$$$$$$$63 from "./sections/RankingAnalyze.tsx";
-import * as $$$$$$$$64 from "./sections/RankingHeader.tsx";
-import * as $$$$$$$$65 from "./sections/RankingList.tsx";
-import * as $$$$$$$$66 from "./sections/SectionList.tsx";
-import * as $$$$$$$$67 from "./sections/Sidebar.tsx";
-import * as $$$$$$$$68 from "./sections/StripePricing.tsx";
-import * as $$$$$$$$69 from "./sections/Thanks.tsx";
-import * as $$$$$$$$70 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$55 from "./sections/MarkdownContent.tsx";
+import * as $$$$$$$$56 from "./sections/OnThisPage.tsx";
+import * as $$$$$$$$57 from "./sections/Page.tsx";
+import * as $$$$$$$$58 from "./sections/Partner.tsx";
+import * as $$$$$$$$59 from "./sections/PopularDocuments.tsx";
+import * as $$$$$$$$60 from "./sections/PopularTopics.tsx";
+import * as $$$$$$$$61 from "./sections/Pricing.tsx";
+import * as $$$$$$$$62 from "./sections/PricingValue.tsx";
+import * as $$$$$$$$63 from "./sections/QuillText.tsx";
+import * as $$$$$$$$64 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$$$65 from "./sections/RankingHeader.tsx";
+import * as $$$$$$$$66 from "./sections/RankingList.tsx";
+import * as $$$$$$$$67 from "./sections/SectionList.tsx";
+import * as $$$$$$$$68 from "./sections/Sidebar.tsx";
+import * as $$$$$$$$69 from "./sections/StripePricing.tsx";
+import * as $$$$$$$$70 from "./sections/Thanks.tsx";
+import * as $$$$$$$$71 from "./sections/TripletBanner.tsx";
 import * as $$$$$$$$$0 from "./matchers/MatchPath.ts";
 import * as i1$0 from "$live/loaders/secret.ts";
 import * as i1$1 from "$live/loaders/state.ts";
@@ -278,6 +280,46 @@ const manifest = {
     "deco-sites/std/functions/vtexSuggestions.ts": i2$24,
     "deco-sites/std/functions/vtexWishlist.ts": i2$25,
   },
+  "loaders": {
+    "$live/loaders/secret.ts": i1$0,
+    "$live/loaders/state.ts": i1$1,
+    "$live/loaders/workflows/events.ts": i1$2,
+    "$live/loaders/workflows/get.ts": i1$3,
+    "deco-sites/starting/loaders/denoLoader.ts": $$$0,
+    "deco-sites/std/loaders/linxImpulse/autocompletes/popular.ts": i2$$$0,
+    "deco-sites/std/loaders/linxImpulse/autocompletes/suggestions.ts": i2$$$1,
+    "deco-sites/std/loaders/linxImpulse/pages/recommendations.ts": i2$$$2,
+    "deco-sites/std/loaders/linxImpulse/products/similarItems.ts": i2$$$3,
+    "deco-sites/std/loaders/linxImpulse/search.ts": i2$$$4,
+    "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts": i2$$$5,
+    "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts": i2$$$6,
+    "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts": i2$$$7,
+    "deco-sites/std/loaders/vnda/cart.ts": i2$$$8,
+    "deco-sites/std/loaders/vnda/productDetailsPage.ts": i2$$$9,
+    "deco-sites/std/loaders/vnda/productList.ts": i2$$$10,
+    "deco-sites/std/loaders/vnda/productListingPage.ts": i2$$$11,
+    "deco-sites/std/loaders/vnda/proxy.ts": i2$$$12,
+    "deco-sites/std/loaders/vtex/cart.ts": i2$$$13,
+    "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts":
+      i2$$$14,
+    "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts": i2$$$15,
+    "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts":
+      i2$$$16,
+    "deco-sites/std/loaders/vtex/intelligentSearch/suggestions.ts": i2$$$17,
+    "deco-sites/std/loaders/vtex/legacy/productDetailsPage.ts": i2$$$18,
+    "deco-sites/std/loaders/vtex/legacy/productList.ts": i2$$$19,
+    "deco-sites/std/loaders/vtex/legacy/productListingPage.ts": i2$$$20,
+    "deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts": i2$$$21,
+    "deco-sites/std/loaders/vtex/legacy/suggestions.ts": i2$$$22,
+    "deco-sites/std/loaders/vtex/navbar.ts": i2$$$23,
+    "deco-sites/std/loaders/vtex/proxy.ts": i2$$$24,
+    "deco-sites/std/loaders/vtex/user.ts": i2$$$25,
+    "deco-sites/std/loaders/vtex/wishlist.ts": i2$$$26,
+    "deco-sites/std/loaders/x/font.ts": i2$$$27,
+    "deco-sites/std/loaders/x/image.ts": i2$$$28,
+    "deco-sites/std/loaders/x/redirects.ts": i2$$$29,
+    "deco-sites/std/loaders/x/redirectsFromCsv.ts": i2$$$30,
+  },
   "routes": {
     "./routes/_app.tsx": $$$$8,
     "./routes/_middleware.ts": $$$$9,
@@ -371,22 +413,23 @@ const manifest = {
     "deco-sites/starting/sections/Links.tsx": $$$$$$$$52,
     "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$53,
     "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$54,
-    "deco-sites/starting/sections/OnThisPage.tsx": $$$$$$$$55,
-    "deco-sites/starting/sections/Page.tsx": $$$$$$$$56,
-    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$57,
-    "deco-sites/starting/sections/PopularDocuments.tsx": $$$$$$$$58,
-    "deco-sites/starting/sections/PopularTopics.tsx": $$$$$$$$59,
-    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$60,
-    "deco-sites/starting/sections/PricingValue.tsx": $$$$$$$$61,
-    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$62,
-    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$63,
-    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$64,
-    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$65,
-    "deco-sites/starting/sections/SectionList.tsx": $$$$$$$$66,
-    "deco-sites/starting/sections/Sidebar.tsx": $$$$$$$$67,
-    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$68,
-    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$69,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$70,
+    "deco-sites/starting/sections/MarkdownContent.tsx": $$$$$$$$55,
+    "deco-sites/starting/sections/OnThisPage.tsx": $$$$$$$$56,
+    "deco-sites/starting/sections/Page.tsx": $$$$$$$$57,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$58,
+    "deco-sites/starting/sections/PopularDocuments.tsx": $$$$$$$$59,
+    "deco-sites/starting/sections/PopularTopics.tsx": $$$$$$$$60,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$61,
+    "deco-sites/starting/sections/PricingValue.tsx": $$$$$$$$62,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$63,
+    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$64,
+    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$65,
+    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$66,
+    "deco-sites/starting/sections/SectionList.tsx": $$$$$$$$67,
+    "deco-sites/starting/sections/Sidebar.tsx": $$$$$$$$68,
+    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$69,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$70,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$71,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
@@ -415,45 +458,6 @@ const manifest = {
     "deco-sites/starting/matchers/MatchPath.ts": $$$$$$$$$0,
   },
   "name": "deco-sites/starting",
-  "loaders": {
-    "$live/loaders/secret.ts": i1$0,
-    "$live/loaders/state.ts": i1$1,
-    "$live/loaders/workflows/events.ts": i1$2,
-    "$live/loaders/workflows/get.ts": i1$3,
-    "deco-sites/std/loaders/linxImpulse/autocompletes/popular.ts": i2$$$0,
-    "deco-sites/std/loaders/linxImpulse/autocompletes/suggestions.ts": i2$$$1,
-    "deco-sites/std/loaders/linxImpulse/pages/recommendations.ts": i2$$$2,
-    "deco-sites/std/loaders/linxImpulse/products/similarItems.ts": i2$$$3,
-    "deco-sites/std/loaders/linxImpulse/search.ts": i2$$$4,
-    "deco-sites/std/loaders/nuvemShop/nuvemShopProductDetailsPage.ts": i2$$$5,
-    "deco-sites/std/loaders/nuvemShop/nuvemShopProductList.ts": i2$$$6,
-    "deco-sites/std/loaders/nuvemShop/nuvemShopProductListingPage.ts": i2$$$7,
-    "deco-sites/std/loaders/vnda/cart.ts": i2$$$8,
-    "deco-sites/std/loaders/vnda/productDetailsPage.ts": i2$$$9,
-    "deco-sites/std/loaders/vnda/productList.ts": i2$$$10,
-    "deco-sites/std/loaders/vnda/productListingPage.ts": i2$$$11,
-    "deco-sites/std/loaders/vnda/proxy.ts": i2$$$12,
-    "deco-sites/std/loaders/vtex/cart.ts": i2$$$13,
-    "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts":
-      i2$$$14,
-    "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts": i2$$$15,
-    "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts":
-      i2$$$16,
-    "deco-sites/std/loaders/vtex/intelligentSearch/suggestions.ts": i2$$$17,
-    "deco-sites/std/loaders/vtex/legacy/productDetailsPage.ts": i2$$$18,
-    "deco-sites/std/loaders/vtex/legacy/productList.ts": i2$$$19,
-    "deco-sites/std/loaders/vtex/legacy/productListingPage.ts": i2$$$20,
-    "deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts": i2$$$21,
-    "deco-sites/std/loaders/vtex/legacy/suggestions.ts": i2$$$22,
-    "deco-sites/std/loaders/vtex/navbar.ts": i2$$$23,
-    "deco-sites/std/loaders/vtex/proxy.ts": i2$$$24,
-    "deco-sites/std/loaders/vtex/user.ts": i2$$$25,
-    "deco-sites/std/loaders/vtex/wishlist.ts": i2$$$26,
-    "deco-sites/std/loaders/x/font.ts": i2$$$27,
-    "deco-sites/std/loaders/x/image.ts": i2$$$28,
-    "deco-sites/std/loaders/x/redirects.ts": i2$$$29,
-    "deco-sites/std/loaders/x/redirectsFromCsv.ts": i2$$$30,
-  },
   "handlers": {
     "$live/handlers/devPage.ts": i1$$0,
     "$live/handlers/fresh.ts": i1$$1,

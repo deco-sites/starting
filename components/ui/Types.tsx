@@ -1,5 +1,12 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
+export interface MDFileContent {
+  /**
+   * @format textarea
+   */
+  content: string;
+}
+
 export interface Template {
   label: string;
   pageSpeed: number;
