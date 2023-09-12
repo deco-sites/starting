@@ -1,6 +1,7 @@
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import { Section } from "$live/blocks/section.ts";
 
 export interface Props {
   Title: string;
@@ -40,7 +41,11 @@ export interface Content {
   Type: ContentType[];
 }
 
-export type ContentType = Text | Code | Image | Youtube;
+export type ContentType = Text | Code | Image | Youtube | SectionBlock;
+
+export interface SectionBlock {
+  section: Section;
+}
 
 export interface Text {
   Text: HTML;

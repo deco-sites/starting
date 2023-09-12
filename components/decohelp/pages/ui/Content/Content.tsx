@@ -10,8 +10,11 @@ import {
   ContentType,
   Props,
 } from "deco-sites/starting/components/decohelp/pages/interfaces.ts";
+import { useLivePageContext } from "$live/pages/LivePage.tsx";
 
-function renderContentItem(item: ContentType) {
+function renderContentItem(item: ContentType, idx: number) {
+  const { renderSection } = useLivePageContext();
+
   return "Text" in item
     ? (
       <article aria-label={item.label}>
@@ -50,7 +53,11 @@ function renderContentItem(item: ContentType) {
         />
       </>
     )
-    : null;
+    : "section" in item ? (<>
+      {renderSection(item.section, idx)}
+    </>):
+    <>
+    </>;
 }
 
 export default function Page({
@@ -81,10 +88,10 @@ export default function Page({
               ? (
                 PageContent.map(({ Type }) => (
                   <div class="flex flex-col gap-[8px] w-full mx-auto mb-4">
-                    {Type.map((item) => (
+                    {Type.map((item, idx) => (
                       <>
-                        {renderContentItem(item)}
-                        {item?.Underline && (
+                        {renderContentItem(item, idx)}
+                        {Object.hasOwn(item, "Underline") && item?.Underline && (
                           <span class="flex border-b bg-zinc-300" />
                         )}
                       </>
