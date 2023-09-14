@@ -18,7 +18,7 @@ const gitHubRawLoader: LoaderFunction<Props, PostBody> = async (
   { repo, branch },
 ) => {
   const url = new URL(_req.url);
-  const path = url.pathname.split("/")[2];
+  const path = url.pathname.split("/").pop();
 
   const res = await fetch(
     `https://raw.githubusercontent.com/${repo}/${branch}/${path}`,
