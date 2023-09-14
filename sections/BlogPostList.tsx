@@ -24,6 +24,7 @@ export default function MarkdownContainer(props: Props) {
           class="block w-full text-deco-dark-green mb-10 sm:mb-20 md:hover:scale-105 duration-200"
         >
           <Image
+            class="object-contain"
             src={highlightPost.img}
             sizes="(max-width: 894px) 100vw, 50vw"
             style={{ maxHeight: "300px" }}
