@@ -15,5 +15,5 @@ export interface PostList {
 }
 
 export function getBlogPath(fname: string) {
-  return "/blog/" + fname;
+  return "/pt/blog/" + fname;
 }
