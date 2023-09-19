@@ -1,20 +1,27 @@
 import Container from "./Container.tsx";
-import { useState } from "preact/hooks";
 
-const containers = [
-  {
-    name: "Alunos",
-    icon: "/camp/students-icon.png",
-    class: "h-10",
-    attachments: [{ name: "Ganhe dinheiro para aprender." }, {
-      name: "Seja orientado por experts.",
-    }, { name: "Trabalhe para grandes marcas." }],
-  },
-  { name: "Mentores", icon: "/camp/mentors-icon.png", class: "h-10 " },
-  { name: "Empresas", icon: "/camp/business-icon.png", class: "h-10" },
-];
+export interface Props {
+  students?: string[];
+  mentors?: string[];
+  companys?: string[];
+}
 
-const PersonaAccordion = () => {
+const PersonaAccordion = ({
+  students = [],
+  mentors = [],
+  companys = [],
+}: Props) => {
+  const containers = [
+    {
+      name: "Alunos",
+      icon: "/camp/students-icon.png",
+      class: "h-10",
+      attachments: students,
+    },
+    { name: "Mentores", icon: "/camp/mentors-icon.png", class: "h-10 ", attachments: mentors, },
+    { name: "Empresas", icon: "/camp/business-icon.png", class: "h-10", attachments: companys, },
+  ];
+  
   return (
     <div class="lg:flex block justify-between w-full">
       {containers.map((cont, i) => (

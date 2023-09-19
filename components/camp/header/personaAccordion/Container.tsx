@@ -7,7 +7,7 @@ export default function Container(
     class: string;
     icon: string;
     index: number;
-    att: { name: string }[] | undefined;
+    att: string[] | undefined;
   },
 ) {
   const [isActive, setIsActive] = useState(false);
@@ -102,7 +102,7 @@ export default function Container(
               {props.att?.map((att) => (
                 <div class="flex mt-4">
                   <img src="/camp/check-icon.png" class="h-6" />
-                  <span class="text-black ml-4">{att.name}</span>
+                  <span class="text-black ml-4">{att}</span>
                 </div>
               ))}
 
