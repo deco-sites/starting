@@ -35,7 +35,7 @@ export default function ContactUs(
         <form
           class="flex flex-col justify-center items-center text-base md:text-xl bg-white border border-dark-green rounded-2xl p-4 md:p-8 gap-6 placeholder-[#161A16] "
           method="POST"
-          action="/api/webinar.tsx"
+          action="/api/webinar"
         >
           <span class="text-[20px]">
             {formInfor?.formTitle || "Reserve agora a sua vaga!"}
