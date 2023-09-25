@@ -687,6 +687,8 @@ export default {
         cardIcon: "#rgba(182, 228, 198, 0.8)",
         cardLanguage: "#001341",
         hoverBtn: "#e2c069",
+        "h1-color": "#1F261F",
+        "h2-color": "#0A2121",
       },
       fontFamily: {
         sans: "Albert Sans, sans-serif",
@@ -695,6 +697,8 @@ export default {
       },
       fontSize: {
         responsiveHeadingText: "clamp(3.5rem, 0.3451rem + 6.5728vw, 7rem);",
+        "3.5xl": ["2rem", "118%"], // Adicionando um tamanho personalizado (3.5xl)
+        "6.5xl": ["4rem", "100%"], // Adicionando um tamanho personalizado (6.5xl)
       },
       typography: (theme: (x: string) => string) => ({
         DEFAULT: {
