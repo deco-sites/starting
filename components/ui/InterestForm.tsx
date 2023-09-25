@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 
 export interface Props {
-  /** @description settings of benefits section in page*/
+  webinarName: string;
   /** @description Thanks page language (default en)*/
   langThanks?: string;
 
@@ -23,6 +23,7 @@ export interface Props {
 
 export default function ContactUs(
   {
+    webinarName,
     langThanks = "pt",
     formInfor,
   }: Props,
@@ -42,6 +43,7 @@ export default function ContactUs(
           </span>
 
           <input type="hidden" name="lang" value={langThanks} />
+          <input type="hidden" name="webinarName" value={webinarName} />
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
