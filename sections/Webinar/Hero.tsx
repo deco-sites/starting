@@ -12,7 +12,6 @@ export interface Button {
 }
 
 export interface Props {
-  /** @format textarea */
   bannerHero?: DecoImage;
   bannerHeroMobile?: DecoImage;
   titleImg?: string;
@@ -85,7 +84,7 @@ export default function Hero({
           </div>
           <div className="flex pb-8 w-[100%] aspect-[53/65] z-20 md:pb-0 xl:w-[583px] md:h-[100%]">
             <picture className="w-full">
-              <source media="(max-width: 760px)" srcSet={bannerHeroMobile} />
+              <source media="(max-width: 760px:)" srcSet={bannerHeroMobile} />
               <img
                 className="bg-[#053535] h-full md:h-[94%] w-[100%]"
                 alt={titleImg}
