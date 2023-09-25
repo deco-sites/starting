@@ -12,6 +12,10 @@ export interface Button {
 }
 
 export interface Props {
+<<<<<<< HEAD
+=======
+  /** @format textarea */
+>>>>>>> Add: Webinar Black Friday Page
   bannerHero?: DecoImage;
   bannerHeroMobile?: DecoImage;
   titleImg?: string;
@@ -38,7 +42,11 @@ export default function Hero({
   ],
 
   scrollButton = [
+<<<<<<< HEAD
     { title: "Reserve seu lugar", "href": "#webinar_form" },
+=======
+    { title: "Reserve seu lugar", "href": "#form" },
+>>>>>>> Add: Webinar Black Friday Page
   ],
 }: Props) {
   return (
@@ -71,7 +79,11 @@ export default function Hero({
               target="_blank"
               href={href}
               aria-label={title}
+<<<<<<< HEAD
               class="flex text-[16px] bg-[#02F67C] py-4 px-[22px] w-52 h-14 font-medium text-h2-color rounded-3xl items-center justify-center text-center gap-2 hover:opacity-75 xl:hidden"
+=======
+              class="flex text-[16px] bg-[#02F67C] py-4 px-[22px] w-52 h-14 font-medium text-h2-color rounded-3xl items-center justify-center text-center gap-2 hover:opacity-75"
+>>>>>>> Add: Webinar Black Friday Page
             >
               {title}
             </a>
@@ -84,9 +96,15 @@ export default function Hero({
           </div>
           <div className="flex pb-8 w-[100%] aspect-[53/65] z-20 md:pb-0 xl:w-[583px] md:h-[100%]">
             <picture className="w-full">
+<<<<<<< HEAD
               <source media="(max-width: 760px)" srcSet={bannerHeroMobile} className="rounded-[20px]"/>
               <img
                 className="bg-[#053535] h-full md:h-[94%] w-[100%] rounded-[20px]"
+=======
+              <source media="(max-width: 760px)" srcSet={bannerHeroMobile} />
+              <img
+                className="bg-[#053535] h-full md:h-[94%] w-[100%]"
+>>>>>>> Add: Webinar Black Friday Page
                 alt={titleImg}
                 src={bannerHero}
               />
