@@ -12,13 +12,7 @@ export interface Button {
 }
 
 export interface Props {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   /** @format textarea */
->>>>>>> Add: Webinar Black Friday Page
-=======
->>>>>>> Fix: Banner Prop Desktop
   bannerHero?: DecoImage;
   bannerHeroMobile?: DecoImage;
   titleImg?: string;
@@ -45,11 +39,7 @@ export default function Hero({
   ],
 
   scrollButton = [
-<<<<<<< HEAD
     { title: "Reserve seu lugar", "href": "#webinar_form" },
-=======
-    { title: "Reserve seu lugar", "href": "#form" },
->>>>>>> Add: Webinar Black Friday Page
   ],
 }: Props) {
   return (
@@ -97,7 +87,7 @@ export default function Hero({
             <picture className="w-full">
               <source media="(max-width: 760px)" srcSet={bannerHeroMobile} className="rounded-[20px]"/>
               <img
-                className="bg-[#053535] h-full md:h-[94%] w-[100%]"
+                className="bg-[#053535] h-full md:h-[94%] w-[100%] rounded-[20px]"
                 alt={titleImg}
                 src={bannerHero}
               />

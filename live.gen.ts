@@ -2,12 +2,13 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./functions/LoadGitHubRawPost.ts";
-import * as $1 from "./functions/LoadGitHubRaw.ts";
-import * as $2 from "./functions/psiRankingList.ts";
+import * as $0 from "./functions/LoadGitHubRaw.ts";
+import * as $1 from "./functions/LoadGitHubRawPost.ts";
+import * as $2 from "./functions/LoadGitHubRawPostList.ts";
 import * as $3 from "./functions/LoadPageProps.ts";
-import * as $4 from "./functions/LoadGitHubRawPostList.ts";
+import * as $4 from "./functions/psiRankingList.ts";
 import * as $$$0 from "./loaders/denoLoader.ts";
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -180,6 +181,71 @@ import * as $$$$$$$$30 from "./sections/Footer.tsx";
 import * as $$$$$$$$31 from "./sections/FooterBigLogo.tsx";
 import * as $$$$$$$$32 from "./sections/General/Spacer.tsx";
 import * as $$$$$$$$33 from "./sections/Head.tsx";
+=======
+import * as $$$$0 from "./routes/admin/[...catchall].tsx";
+import * as $$$$1 from "./routes/api/calc.tsx";
+import * as $$$$2 from "./routes/api/case.tsx";
+import * as $$$$3 from "./routes/api/leads.tsx";
+import * as $$$$4 from "./routes/api/ranking.ts";
+import * as $$$$5 from "./routes/api/webinar.tsx";
+import * as $$$$6 from "./routes/docs/[...slug].tsx";
+import * as $$$$7 from "./routes/gfm.css.ts";
+import * as $$$$8 from "./routes/index.tsx";
+import * as $$$$9 from "./routes/_app.tsx";
+import * as $$$$10 from "./routes/_middleware.ts";
+import * as $$$$$0 from "./islands/CampHeader.tsx";
+import * as $$$$$1 from "./islands/CampMentor.tsx";
+import * as $$$$$2 from "./islands/Case.tsx";
+import * as $$$$$3 from "./islands/ChangeDevice.tsx";
+import * as $$$$$4 from "./islands/ChangeTheme.tsx";
+import * as $$$$$5 from "./islands/Cms.tsx";
+import * as $$$$$6 from "./islands/ContactUs.tsx";
+import * as $$$$$7 from "./islands/Content.tsx";
+import * as $$$$$8 from "./islands/FaviconImage.tsx";
+import * as $$$$$9 from "./islands/Header.tsx";
+import * as $$$$$10 from "./islands/HelpFaq.tsx";
+import * as $$$$$11 from "./islands/ImpactCalculator.tsx";
+import * as $$$$$12 from "./islands/OnThisPage.tsx";
+import * as $$$$$13 from "./islands/PopularDocuments.tsx";
+import * as $$$$$14 from "./islands/RankingAnalyze.tsx";
+import * as $$$$$15 from "./islands/RankingHeader.tsx";
+import * as $$$$$16 from "./islands/Sidebar.tsx";
+import * as $$$$$17 from "./islands/SliderJS.tsx";
+import * as $$$$$$$$0 from "./sections/About.tsx";
+import * as $$$$$$$$1 from "./sections/Benefits.tsx";
+import * as $$$$$$$$2 from "./sections/BlogHeader.tsx";
+import * as $$$$$$$$3 from "./sections/BlogPostHeader.tsx";
+import * as $$$$$$$$4 from "./sections/BlogPostList.tsx";
+import * as $$$$$$$$5 from "./sections/CampComments.tsx";
+import * as $$$$$$$$6 from "./sections/CampHero.tsx";
+import * as $$$$$$$$7 from "./sections/CampMentor.tsx";
+import * as $$$$$$$$8 from "./sections/CampRegistration.tsx";
+import * as $$$$$$$$9 from "./sections/CampSteps.tsx";
+import * as $$$$$$$$10 from "./sections/Carousel.tsx";
+import * as $$$$$$$$11 from "./sections/Case/ArticleBannerCTA.tsx";
+import * as $$$$$$$$12 from "./sections/Case/ArticleDivider.tsx";
+import * as $$$$$$$$13 from "./sections/Case/ArticleHeader.tsx";
+import * as $$$$$$$$14 from "./sections/Case/ArticleNumbers.tsx";
+import * as $$$$$$$$15 from "./sections/Case/ArticleParagraph.tsx";
+import * as $$$$$$$$16 from "./sections/Case/ArticleQuote.tsx";
+import * as $$$$$$$$17 from "./sections/Case/ArticleVideo.tsx";
+import * as $$$$$$$$18 from "./sections/Case/ArticleYoutubeVideo.tsx";
+import * as $$$$$$$$19 from "./sections/Case/Case.tsx";
+import * as $$$$$$$$20 from "./sections/Cms.tsx";
+import * as $$$$$$$$21 from "./sections/Community.tsx";
+import * as $$$$$$$$22 from "./sections/ContactUs.tsx";
+import * as $$$$$$$$23 from "./sections/Content.tsx";
+import * as $$$$$$$$24 from "./sections/Delight.tsx";
+import * as $$$$$$$$25 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$$$$26 from "./sections/Differentials.tsx";
+import * as $$$$$$$$27 from "./sections/Divider.tsx";
+import * as $$$$$$$$28 from "./sections/Faq.tsx";
+import * as $$$$$$$$29 from "./sections/Features.tsx";
+import * as $$$$$$$$30 from "./sections/Footer.tsx";
+import * as $$$$$$$$31 from "./sections/FooterBigLogo.tsx";
+import * as $$$$$$$$32 from "./sections/General/Spacer.tsx";
+import * as $$$$$$$$33 from "./sections/Head.tsx";
+>>>>>>> Fix: Scroll function and hidden desktop
 import * as $$$$$$$$34 from "./sections/Header.tsx";
 import * as $$$$$$$$35 from "./sections/HelpBlogPosts.tsx";
 import * as $$$$$$$$36 from "./sections/HelpFaq.tsx";
@@ -218,6 +284,7 @@ import * as $$$$$$$$68 from "./sections/Sidebar.tsx";
 import * as $$$$$$$$69 from "./sections/StripePricing.tsx";
 import * as $$$$$$$$70 from "./sections/Thanks.tsx";
 import * as $$$$$$$$71 from "./sections/TripletBanner.tsx";
+<<<<<<< HEAD
 import * as $$$$$$$$72 from "./sections/Webinar/Hero.tsx";
 import * as $$$$$$$$73 from "./sections/Webinar/ParagraphList.tsx";
 >>>>>>> Add: Webinar Black Friday Page
@@ -264,6 +331,10 @@ import * as $$$$$$$$71 from "./sections/RankingAnalyze.tsx";
 import * as $$$$$$$$72 from "./sections/RankingHeader.tsx";
 import * as $$$$$$$$73 from "./sections/Carousel.tsx";
 >>>>>>> Improve webinar details
+=======
+import * as $$$$$$$$72 from "./sections/Webinar/Content.tsx";
+import * as $$$$$$$$73 from "./sections/Webinar/Hero.tsx";
+>>>>>>> Fix: Scroll function and hidden desktop
 import * as $$$$$$$$$0 from "./matchers/MatchPath.ts";
 import * as i1$0 from "$live/loaders/secret.ts";
 import * as i1$1 from "$live/loaders/state.ts";
@@ -404,11 +475,11 @@ import * as i2$$$$$$20 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts"
 
 const manifest = {
   "functions": {
-    "deco-sites/starting/functions/LoadGitHubRaw.ts": $1,
-    "deco-sites/starting/functions/LoadGitHubRawPost.ts": $0,
-    "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $4,
+    "deco-sites/starting/functions/LoadGitHubRaw.ts": $0,
+    "deco-sites/starting/functions/LoadGitHubRawPost.ts": $1,
+    "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $2,
     "deco-sites/starting/functions/LoadPageProps.ts": $3,
-    "deco-sites/starting/functions/psiRankingList.ts": $2,
+    "deco-sites/starting/functions/psiRankingList.ts": $4,
     "deco-sites/std/functions/butterCMSAds.ts": i2$0,
     "deco-sites/std/functions/butterCMSBrands.ts": i2$1,
     "deco-sites/std/functions/butterCMSCategories.ts": i2$2,
@@ -479,6 +550,7 @@ const manifest = {
   "routes": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Improve webinar details
     "./routes/_app.tsx": $$$$10,
@@ -494,6 +566,8 @@ const manifest = {
     "./routes/index.tsx": $$$$0,
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> Fix: Scroll function and hidden desktop
     "./routes/_app.tsx": $$$$9,
     "./routes/_middleware.ts": $$$$10,
     "./routes/admin/[...catchall].tsx": $$$$0,
@@ -501,6 +575,7 @@ const manifest = {
     "./routes/api/case.tsx": $$$$2,
     "./routes/api/leads.tsx": $$$$3,
     "./routes/api/ranking.ts": $$$$4,
+<<<<<<< HEAD
     "./routes/api/sendLead.tsx": $$$$5,
     "./routes/docs/[...slug].tsx": $$$$6,
     "./routes/gfm.css.ts": $$$$7,
@@ -508,26 +583,32 @@ const manifest = {
 >>>>>>> Add: Webinar Black Friday Page
 =======
 >>>>>>> Improve webinar details
+=======
+    "./routes/api/webinar.tsx": $$$$5,
+    "./routes/docs/[...slug].tsx": $$$$6,
+    "./routes/gfm.css.ts": $$$$7,
+    "./routes/index.tsx": $$$$8,
+>>>>>>> Fix: Scroll function and hidden desktop
   },
   "islands": {
-    "./islands/CampHeader.tsx": $$$$$5,
-    "./islands/CampMentor.tsx": $$$$$14,
-    "./islands/Case.tsx": $$$$$1,
-    "./islands/ChangeDevice.tsx": $$$$$11,
-    "./islands/ChangeTheme.tsx": $$$$$6,
-    "./islands/Cms.tsx": $$$$$7,
-    "./islands/ContactUs.tsx": $$$$$9,
-    "./islands/Content.tsx": $$$$$4,
-    "./islands/FaviconImage.tsx": $$$$$2,
-    "./islands/Header.tsx": $$$$$12,
-    "./islands/HelpFaq.tsx": $$$$$15,
-    "./islands/ImpactCalculator.tsx": $$$$$3,
-    "./islands/OnThisPage.tsx": $$$$$0,
-    "./islands/PopularDocuments.tsx": $$$$$8,
-    "./islands/RankingAnalyze.tsx": $$$$$16,
-    "./islands/RankingHeader.tsx": $$$$$17,
-    "./islands/Sidebar.tsx": $$$$$13,
-    "./islands/SliderJS.tsx": $$$$$10,
+    "./islands/CampHeader.tsx": $$$$$0,
+    "./islands/CampMentor.tsx": $$$$$1,
+    "./islands/Case.tsx": $$$$$2,
+    "./islands/ChangeDevice.tsx": $$$$$3,
+    "./islands/ChangeTheme.tsx": $$$$$4,
+    "./islands/Cms.tsx": $$$$$5,
+    "./islands/ContactUs.tsx": $$$$$6,
+    "./islands/Content.tsx": $$$$$7,
+    "./islands/FaviconImage.tsx": $$$$$8,
+    "./islands/Header.tsx": $$$$$9,
+    "./islands/HelpFaq.tsx": $$$$$10,
+    "./islands/ImpactCalculator.tsx": $$$$$11,
+    "./islands/OnThisPage.tsx": $$$$$12,
+    "./islands/PopularDocuments.tsx": $$$$$13,
+    "./islands/RankingAnalyze.tsx": $$$$$14,
+    "./islands/RankingHeader.tsx": $$$$$15,
+    "./islands/Sidebar.tsx": $$$$$16,
+    "./islands/SliderJS.tsx": $$$$$17,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i1$$$$0,
@@ -535,6 +616,7 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i1$$$$2,
     "$live/sections/Slot.tsx": i1$$$$3,
     "$live/sections/UseSlot.tsx": i1$$$$4,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -615,6 +697,8 @@ const manifest = {
     "deco-sites/starting/sections/Webinar/Content.tsx": $$$$$$$$14,
     "deco-sites/starting/sections/Webinar/Hero.tsx": $$$$$$$$13,
 =======
+=======
+>>>>>>> Fix: Scroll function and hidden desktop
     "deco-sites/starting/sections/About.tsx": $$$$$$$$0,
     "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$1,
     "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$2,
@@ -648,6 +732,7 @@ const manifest = {
     "deco-sites/starting/sections/Footer.tsx": $$$$$$$$30,
     "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$31,
     "deco-sites/starting/sections/General/Spacer.tsx": $$$$$$$$32,
+<<<<<<< HEAD
     "deco-sites/starting/sections/Head.tsx": $$$$$$$$33,
     "deco-sites/starting/sections/Header.tsx": $$$$$$$$34,
     "deco-sites/starting/sections/HelpBlogPosts.tsx": $$$$$$$$35,
@@ -733,6 +818,49 @@ const manifest = {
     "deco-sites/starting/sections/Webinar/Content.tsx": $$$$$$$$14,
     "deco-sites/starting/sections/Webinar/Hero.tsx": $$$$$$$$13,
 >>>>>>> Improve webinar details
+=======
+    "deco-sites/starting/sections/Head.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/Header.tsx": $$$$$$$$34,
+    "deco-sites/starting/sections/HelpBlogPosts.tsx": $$$$$$$$35,
+    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$$$36,
+    "deco-sites/starting/sections/Home/Brands.tsx": $$$$$$$$37,
+    "deco-sites/starting/sections/HowCanWeHelp.tsx": $$$$$$$$38,
+    "deco-sites/starting/sections/Hub/Advantage.tsx": $$$$$$$$39,
+    "deco-sites/starting/sections/Hub/Agencies.tsx": $$$$$$$$40,
+    "deco-sites/starting/sections/Hub/Creator.tsx": $$$$$$$$41,
+    "deco-sites/starting/sections/Hub/Heading.tsx": $$$$$$$$42,
+    "deco-sites/starting/sections/Hub/Integrations.tsx": $$$$$$$$43,
+    "deco-sites/starting/sections/Hub/SectionSubtitle.tsx": $$$$$$$$44,
+    "deco-sites/starting/sections/Hub/SectionTitle.tsx": $$$$$$$$45,
+    "deco-sites/starting/sections/Hub/TemplateIframe.tsx": $$$$$$$$46,
+    "deco-sites/starting/sections/Hub/TemplatePreview.tsx": $$$$$$$$47,
+    "deco-sites/starting/sections/Hub/TemplatesGrid.tsx": $$$$$$$$48,
+    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$49,
+    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$50,
+    "deco-sites/starting/sections/JoinOurCommunity.tsx": $$$$$$$$51,
+    "deco-sites/starting/sections/Links.tsx": $$$$$$$$52,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$53,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$54,
+    "deco-sites/starting/sections/MarkdownContent.tsx": $$$$$$$$55,
+    "deco-sites/starting/sections/OnThisPage.tsx": $$$$$$$$56,
+    "deco-sites/starting/sections/Page.tsx": $$$$$$$$57,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$58,
+    "deco-sites/starting/sections/PopularDocuments.tsx": $$$$$$$$59,
+    "deco-sites/starting/sections/PopularTopics.tsx": $$$$$$$$60,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$61,
+    "deco-sites/starting/sections/PricingValue.tsx": $$$$$$$$62,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$63,
+    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$64,
+    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$65,
+    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$66,
+    "deco-sites/starting/sections/SectionList.tsx": $$$$$$$$67,
+    "deco-sites/starting/sections/Sidebar.tsx": $$$$$$$$68,
+    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$69,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$70,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$71,
+    "deco-sites/starting/sections/Webinar/Content.tsx": $$$$$$$$72,
+    "deco-sites/starting/sections/Webinar/Hero.tsx": $$$$$$$$73,
+>>>>>>> Fix: Scroll function and hidden desktop
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
