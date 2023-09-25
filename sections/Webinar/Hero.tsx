@@ -38,7 +38,7 @@ export default function Hero({
   ],
 
   scrollButton = [
-    { title: "Reserve seu lugar", "href": "#form" },
+    { title: "Reserve seu lugar", "href": "#webinar_form" },
   ],
 }: Props) {
   return (
@@ -71,7 +71,7 @@ export default function Hero({
               target="_blank"
               href={href}
               aria-label={title}
-              class="flex text-[16px] bg-[#02F67C] py-4 px-[22px] w-52 h-14 font-medium text-h2-color rounded-3xl items-center justify-center text-center gap-2 hover:opacity-75"
+              class="flex text-[16px] bg-[#02F67C] py-4 px-[22px] w-52 h-14 font-medium text-h2-color rounded-3xl items-center justify-center text-center gap-2 hover:opacity-75 xl:hidden"
             >
               {title}
             </a>
@@ -84,9 +84,9 @@ export default function Hero({
           </div>
           <div className="flex pb-8 w-[100%] aspect-[53/65] z-20 md:pb-0 xl:w-[583px] md:h-[100%]">
             <picture className="w-full">
-              <source media="(max-width: 760px:)" srcSet={bannerHeroMobile} />
+              <source media="(max-width: 760px)" srcSet={bannerHeroMobile} className="rounded-[20px]"/>
               <img
-                className="bg-[#053535] h-full md:h-[94%] w-[100%]"
+                className="bg-[#053535] h-full md:h-[94%] w-[100%] rounded-[20px]"
                 alt={titleImg}
                 src={bannerHero}
               />

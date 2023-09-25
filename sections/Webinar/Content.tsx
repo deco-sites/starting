@@ -46,7 +46,7 @@ export default function Content({
               dangerouslySetInnerHTML={{ __html: text }}
             />
           </div>
-          <div className="flex gap-16 flex-col lg:w-[411px] xl:w-[511px]">
+          <div id="webinar_form" className="flex gap-16 flex-col lg:w-[411px] xl:w-[511px]">
             <InterestForm {..._form} />
             {aboutSection.map((
               { title, source, speakerName, speakerRole, subText },
