@@ -15,9 +15,9 @@ export interface Props {
     PlaceholderFieldExtra?: string;
     submiteName?: string;
     /** @description set the post url to action submit form business*/
-    urlToActionBusiness: string;
+    urlToActionBusiness?: string;
     /** @description set the post url to action submit form developers*/
-    urlToActionDev: string;
+    urlToActionDev?: string;
   };
 }
 
