@@ -17,7 +17,7 @@ export interface Props {
   aboutSection?: Array<About>;
 }
 
-export default function ParagraphList({
+export default function Content({
   title = "O que você vai ver",
   text =
     "A Black Friday está chegando. E a sua loja está pronta?Criar uma landing page alta conversão é uma das melhores maneiras de fazer isso. Uma landing page bem-feita pode ajudar a direcionar o tráfego para sua loja online, aumentar o seu brand awareness e impulsionar as vendas. Ao final deste webinar, você estará pronto para construir sua própria landing page otimizada, com performance incomparável, para a Black Friday. O que vamos lhe mostrar: Dicas de como criar um landing page de alta conversão Como você pode se preparar para a Black Friday A criação de uma página ao vivo em 5 minutos usando deco.cx",
