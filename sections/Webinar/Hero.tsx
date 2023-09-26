@@ -12,7 +12,6 @@ export interface Button {
 }
 
 export interface Props {
-  /** @format textarea */
   bannerHero?: DecoImage;
   bannerHeroMobile?: DecoImage;
   titleImg?: string;
@@ -43,7 +42,7 @@ export default function Hero({
   ],
 }: Props) {
   return (
-    <div className="flex items-center mx-8 py-10 lg:mx-auto md:px-12 md:py-16 lg:px-16 gap-16 lg:py-20 lg:max-w-[1440px] xl:px-16">
+    <div className="flex items-center mx-8 py-10 md:mx-auto md:px-14 md:py-16 lg:px-16 gap-16 lg:py-20 lg:max-w-[1440px] xl:px-16">
       <div class="flex flex-col-reverse items-start justify-between self-sttretch font-albert-sans md:gap-4 lg:gap-6 xl:gap-12 md:flex-row lg:container lg:max-w-[1440px] text-xl md:text-base">
         <div class="flex flex-col gap-8 md:w-[46%] lg:max-w-[561px] items-start">
           <div class="text-black opacity-60 leading-3">{preHeadline}</div>
@@ -69,21 +68,20 @@ export default function Hero({
           )}
           {scrollButton.map(({ href, title }) => (
             <a
-              target="_blank"
               href={href}
               aria-label={title}
-              class="flex text-[16px] bg-[#02F67C] py-4 px-[22px] w-52 h-14 font-medium text-h2-color rounded-3xl items-center justify-center text-center gap-2 hover:opacity-75 xl:hidden"
+              class="hidden md:flex text-[16px] bg-[#02F67C] py-4 px-[22px] w-52 h-14 font-medium text-h2-color rounded-3xl items-center justify-center text-center gap-2 hover:opacity-75"
             >
               {title}
             </a>
           ))}
         </div>
-        <div class="relative flex lg:w-full md:w-[48%] md:max-w-[583px] h-full">
-          <div class="absolute w-[400px] md:top-[-18vh] h-[400px] xl:w-[821px] xl:h-[821px] bg-gradient-to-br from-[#00FF80] to-[#D9D9D9] rounded-full top-[-8vh] lg:left-[80%] transform -translate-x-1/2 blur-3xl z-[-999] opacity-70">
+        <div class="flex relative lg:w-full md:w-[50%] md:max-w-[583px] h-full">
+          <div class="absolute w-[400px] top-[-21vh] left-[65vw] md:top-[-7vh] md:left-[80%] h-[400px] xl:w-[821px] xl:h-[821px] bg-gradient-to-br from-[#00FF80] to-[#D9D9D9] rounded-full transform -translate-x-1/2 blur-3xl z-[-999] opacity-70">
           </div>
-          <div class="absolute w-[270px] md:bottom-0 h-[270px] xl:w-[541px] xl:h-[541px] bg-gradient-to-r from-[#09BBB7B2] to-[#D9D9D9] rounded-full bottom-8 lg:left-1/4 transform -translate-x-1/2 blur-3xl z-[-999] opacity-80">
+          <div class="absolute w-[270px] bottom-[-39vh] left-[25vw] md:left-1/4  md:bottom-[-2vh] h-[270px] xl:w-[541px] xl:h-[541px] bg-gradient-to-r from-[#09BBB7B2] to-[#D9D9D9] rounded-full bottom-8 transform -translate-x-1/2 blur-3xl z-[-999] opacity-80">
           </div>
-          <div className="pb-8 lg:w-full aspect-[53/65] md:pb-0 xl:w-[583px] md:h-full">
+          <div className="hidden md:flex pb-8 lg:w-full aspect-[53/65] md:pb-0 xl:w-[583px] md:h-full">
             <picture>
               <source media="(max-width: 760px)" srcSet={bannerHeroMobile} className="rounded-[20px]"/>
               <img
