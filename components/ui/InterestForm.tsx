@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 
 export interface Props {
-  webinarName: string;
+  webinarName?: string;
   /** @description Thanks page language (default en)*/
   langThanks?: string;
 
@@ -30,7 +30,7 @@ export default function ContactUs(
 ) {
   return (
     <div>
-      <div class="relative lg:w-full max-w-[511px]">
+      <div class="relative mx-auto md:w-full max-w-[511px]">
         <form
           class="flex flex-col justify-center items-center text-base md:text-xl bg-white border border-dark-green rounded-2xl p-4 md:p-8 gap-6 placeholder-[#161A16] "
           method="POST"

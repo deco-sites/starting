@@ -13,7 +13,7 @@ export interface About {
 export interface Props {
   title?: string;
   text?: HTML;
-  form?: InterestFormProps;
+  form: InterestFormProps;
   aboutSection?: Array<About>;
 }
 
@@ -34,9 +34,9 @@ export default function Content({
   ],
 }: Props) {
   return (
-    <div class="lg:w-full lg:mx-auto flex font-albert-sans flex-col pb-20 mx-8 gap-16 md:px-12 lg:px-16 lg:pb-28 pt-8 lg:flex-row items-center lg:items-start justify-center lg:max-w-[1440px] text-xl md:text-base">
+    <div class="lg:w-full lg:mx-auto flex font-albert-sans flex-col pb-20 mx-8 md:mx-auto gap-16 md:px-14 lg:px-16 lg:pb-28 pt-4 md:pt-8 lg:flex-row items-center lg:items-start justify-center lg:max-w-[1440px] text-xl md:text-base">
       <div className="flex flex-col justify-between self-stretch items-center lg:container max-w-[1440px] lg:items-start lg:flex-row">
-        <div className="flex flex-col lg:w-full mb-16 gap-4 self-stretch lg:items-start lg:mb-0 lg:max-w-[48%] xl:max-w-[619px]">
+        <div className="hidden md:flex flex-col lg:w-full mb-16 gap-4 self-stretch lg:items-start lg:mb-0 lg:max-w-[48%] xl:max-w-[619px]">
           <h2 class="flex-none font-bold text-3xl lg:text-4xl/[110%] xl:text-5xl/[110%] pb-2 lg:w-full">
             {title}
           </h2>
@@ -47,6 +47,15 @@ export default function Content({
         </div>
         <div id="webinar_form" className="flex gap-16 flex-col lg:w-[411px] xl:w-[511px]">
           <InterestForm {..._form} />
+          <div className="flex md:hidden flex-col lg:w-full gap-4 self-stretch lg:items-start lg:mb-0 lg:max-w-[48%] xl:max-w-[619px]">
+            <h2 class="flex-none font-bold text-3xl lg:text-4xl/[110%] xl:text-5xl/[110%] pb-2 lg:w-full">
+              {title}
+            </h2>
+            <div
+              class="text-black opacity-60 text-xl"
+              dangerouslySetInnerHTML={{ __html: text }}
+            />
+          </div>
           {aboutSection.map((
             { title, source, speakerName, speakerRole, subText },
           ) => (
@@ -60,7 +69,7 @@ export default function Content({
                   src={source}
                   alt={title}
                 />
-                <div className="flex flex-col items-start text-black flex-1">
+                <div className="flex flex-col items-start text-black flex-1 justify-center">
                   <h4 class="font-bold leading-[118.75%] text-xl">
                     {speakerName}
                   </h4>
