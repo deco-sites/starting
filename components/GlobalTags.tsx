@@ -16,6 +16,7 @@ export default function GlobalTags() {
           __html: `
                 body {
                     overflow-x: hidden;
+                    scroll-behavior: smooth;
                 }
                 /* latin */
                 @font-face {
