@@ -28,10 +28,9 @@ If you have questions about this flow, read about [contributing to open-source](
 
 ## Structure
 
-In the root folder of the repo, you'll see a lot of folder. Each one of those represent an app. It's recommended that you take a look into those examples so you can better understand the app composition. 
+In the root folder of the repo, you'll see a lot of folder. Each one of those represent an app. It's recommended that you take a look into those examples so you can better understand the app composition.
 
 ![List of apps in deco-cx/apps](https://github.com/deco-cx/apps/assets/18706156/d6d0c90e-c348-4ca7-9d59-8c44aef522d2)
-
 
 ## The example use case
 
@@ -66,7 +65,6 @@ It's also in this file that you can make clients/services available to the app's
 ## Creating the HTTP client
 
 Most of the integrations will require making requests to an external API via REST or GraphQL. In order to provide a better Developer Experience, we provide a `createHTTPClient` and `createGraphqlClient` that can be used to call external endpoints with type-safety. You can see an example of this in `wake/mod.ts`.
-
 
 > deco.cx automatically generates typing definitions for OpenAPI specifications. Just drop the JSON export for the api in `*.openapi.json` file and run `deno task start`. You can see an example in the `wake` app.
 
@@ -197,7 +195,7 @@ Now that the loader is created (returning only an empty array for noew), let's c
 
 ## Testing our app locally
 
-In order to test our loader, we need to install the app in a deco site. And, to make the `random-product` app installable, we need to first it include it in Deco Hub (which itself is an app) and "build" our application. To do that:
+In order to test our loader, we need to install the app in a deco site. And, to make the `random-product` app installable, we first need to include it in Deco Hub (which itself is an app) and "build" our application. To do that:
 
 1. Create a `random-product.ts` file inside `decohub/apps`.
 2. Paste the following line:
@@ -206,23 +204,39 @@ In order to test our loader, we need to install the app in a deco site. And, to 
 
 3. Run `deno task start` in the `apps` root folder _(not `apps/deco-hub/apps`, but `apps`_.)
 
-Done! After this, the manifests will be generated and the apps will be ready.
+After this, the manifests will be generated and the apps will be ready. If anything is not right, the process will let you know.
 
-## TODO
+Now, to test our app, let's use a deco site we have available and **link it locally** so we can check that everything is working fine. I'll use [`storefront`](https://github.com/deco-sites/storefront) but you can use any other site that have `decohub.ts` installed. If you don't have a site yet, create a new one and select `storefront-vtex` as a template.
 
-- Linkar no import_map de algum site
-- Rodar o site com deno task start
-- Acessar o admin
-- Migrar pra localhost
-- Buscar `random-product` na lista de apps
-- Instalar, preenchendo o rootEndpoint
-- Voltar pra Blocks
-- Buscar o loader
-- Testar
-- Comparar com um loader real
-- Criar o transform
-- Testar na shelf
-- Ship it
+1. Place the site's repository in the same folder as the `apps` repo you've been working with.
+2. Open the site's code and then open the `import_map.json` file.
+3. Replace the value of the `"apps"` entry to `"../apps/`.
+4. Run `deno task start` in the site's root folder.
 
+If everything is ok, the site should be running and accessible via <http://localhost:8000>.
 
+Let's go to deco's admin for this site to finish our setup.
 
+1. Access <http://localhost:8000>.
+2. Press `.` on your keyboard to be redirected to the CMS.
+3. Click on `Block` to go to the Blocks page in Admin.
+4. In the top right, change the environment to `http://localhost:8000`.
+5. In the `Apps` tab, search for `random-product.ts`. You should see a row representing the app that was just created. Refresh the page otherwise.
+6. Click on the `+` button to start instaling that app.
+7. Fill `https://random-data-api.com` in the `Root Endpoint` field.
+8. Click on `Save` and give it a meaningful name _(e.g: `random-product-app`)_.
+9. After having saved the block, click on `Publish`.
+
+Now, the app is installed in that site. This means that our `productList.ts` loader should be available to use. Let's check:
+
+1. Go back to the `Blocks` page.
+2. Select the `Loaders` tab.
+3. Search for `productList` and select the one that is from `random-product`.
+4. Fill the `Count` with a number like `4`.
+5. You should see an empty response (because the loader is returning []) but the list of beers should be logged in the server's console.
+
+<img width="1512" alt="Running a loader in deco.cx" src="https://github.com/deco-cx/apps/assets/18706156/89219299-f25c-4de0-a7b2-3d0b4b9f3bb6">
+
+<img width="1509" alt="Console of the running loader" src="https://github.com/deco-cx/apps/assets/18706156/f8e79159-3c37-4864-a972-6a90489889ef">
+
+## Transforming the data
