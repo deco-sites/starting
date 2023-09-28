@@ -12,7 +12,7 @@ export interface Template {
   pageSpeed: number;
   price: string;
   description?: string;
-  url: string;
+  slug?: string;
   image?: Screenshot[];
   buttonText?: string;
 }

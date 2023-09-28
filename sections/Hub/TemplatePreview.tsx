@@ -6,8 +6,10 @@ import { Template } from "deco-sites/starting/components/ui/Types.tsx";
 import PageSpeed from "deco-sites/starting/components/ui/PageSpeed.tsx";
 
 import { useState } from "preact/hooks";
+import { template } from "$fresh/src/server/render.ts";
 
 export interface Props {
+  lang?: "pt",
   info?: Template;
   buttonBack?: {
     label?: string;
@@ -15,17 +17,17 @@ export interface Props {
   };
   buttonCta?: {
     label?: string;
-    href?: string;
   };
 }
 
 function TemplatePreview(props: Props) {
   const {
+    lang = "pt",
     info = {
       label: "Template",
       pageSpeed: 99,
       price: "Grátis",
-      url: "http://www.deco.cx/",
+      slug: "start",
     },
     buttonBack = {
       label: "Templates",
@@ -33,7 +35,6 @@ function TemplatePreview(props: Props) {
     },
     buttonCta = {
       label: "Testar gratuitamente",
-      href: "https://deco.cx/admin/new?team=1&teamName=deco.cx",
     },
   } = props;
 
@@ -93,7 +94,7 @@ function TemplatePreview(props: Props) {
             <div>
               <a
                 class="flex items-center pr-3 py-2 gap-2"
-                href={buttonBack.href}
+                href={`/${lang}/hub`}
               >
                 <IconArrowLeft class="w-6 h-6 text-white" />
                 <span class="text-white text-[15px] font-normal">
@@ -150,7 +151,7 @@ function TemplatePreview(props: Props) {
 
           <div class="md:w-5/12 flex justify-end">
             <a
-              href={buttonCta.href}
+              href={`https://deco.cx/admin/new?template=${info.slug}`}
               class="px-3 py-2 bg-white hover:bg-gray-300 rounded-[4px] text-[15px] font-semibold"
             >
               {buttonCta.label}
@@ -169,7 +170,7 @@ function TemplatePreview(props: Props) {
           <iframe
             title="Embedded Content"
             className="h-full w-full"
-            src={info.url}
+            src={`https://${info.slug}.deco.site/`}
             frameBorder="0"
             allowFullScreen
           />
