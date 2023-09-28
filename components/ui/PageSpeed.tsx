@@ -30,7 +30,7 @@ export const COLORS = {
 export const labelRating = (score?: number | null) =>
   score == null
     ? "unknown"
-    : score >= 90
+    : score >= 80
     ? "good"
     : score >= 50
     ? "needs-improvement"
