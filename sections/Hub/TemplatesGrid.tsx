@@ -9,12 +9,13 @@ export interface TemplateInfo {
   description?: string;
 
   pageSpeed: number;
-  url: string;
+  slug: string;
   price: string;
   alignment?: "center" | "left";
 }
 
 export interface Props {
+  lang: string;
   header?: {
     title?: string;
     description?: string;
@@ -29,7 +30,7 @@ export interface Props {
   };
 }
 function CardText(
-  { label, description, alignment, pageSpeed, price }: TemplateInfo,
+  { label, description, alignment, pageSpeed, price, slug }: TemplateInfo,
 ) {
   return (
     <div
@@ -60,6 +61,7 @@ function CardText(
 function TemplatesGrid(props: Props) {
   const id = `category-list-${useId()}`;
   const {
+    lang = "pt",
     header = {
       title: "",
       description: "",
@@ -68,7 +70,7 @@ function TemplatesGrid(props: Props) {
       {
         label: "Feminino",
         description: "Moda feminina direto de Milão",
-        url: "/feminino",
+        slug: "feminino",
         image: {
           img:
             "https://ik.imagekit.io/decocx/tr:w-680,h-680/https:/ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fdcb3c8f-d629-485e-bf70-8060bd8a9f65",
@@ -114,7 +116,7 @@ function TemplatesGrid(props: Props) {
             {
               label,
               description,
-              url,
+              slug,
               image,
               buttonText,
               pageSpeed,
@@ -126,7 +128,7 @@ function TemplatesGrid(props: Props) {
               {image &&
                 (
                   <a
-                    href={url}
+                    href={`/${lang}/hub/preview/${slug}`}
                     class="block relative overflow-hidden h-[200px] sm:h-[244px] border-[#C9CFCF] border-b"
                   >
                     <figure>
@@ -176,9 +178,9 @@ function TemplatesGrid(props: Props) {
               {layout.categoryCard?.textPosition === "bottom" &&
                 (
                   <CardText
+                    slug={slug || ""}
                     price={price}
                     label={label}
-                    url={url}
                     description={description}
                     pageSpeed={pageSpeed}
                     alignment={layout?.categoryCard?.textAlignment}
