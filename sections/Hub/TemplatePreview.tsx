@@ -24,15 +24,15 @@ function TemplatePreview(props: Props) {
     info = {
       label: "Template",
       pageSpeed: 99,
-      price: "Free",
+      price: "Grátis",
       url: "http://www.deco.cx/",
     },
     buttonBack = {
       label: "Templates",
-      href: "/en/hub/",
+      href: "/pt/hub/",
     },
     buttonCta = {
-      label: "Try it now for free",
+      label: "Testar gratuitamente",
       href: "https://deco.cx/admin/new?team=1&teamName=deco.cx",
     },
   } = props;
