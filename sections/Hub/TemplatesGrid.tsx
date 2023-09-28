@@ -15,7 +15,7 @@ export interface TemplateInfo {
 }
 
 export interface Props {
-  lang: string;
+  lang?: string;
   header?: {
     title?: string;
     description?: string;
