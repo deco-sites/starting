@@ -18,6 +18,7 @@ export interface Template {
 }
 
 export interface Screenshot {
+  label?: string;
   img: LiveImage;
   /**
    * @format color
