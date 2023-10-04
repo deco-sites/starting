@@ -10,15 +10,17 @@ import * as $4 from "./functions/LoadGitHubRawPostList.ts";
 import * as $$$0 from "./loaders/denoLoader.ts";
 import * as $$$$0 from "./routes/index.tsx";
 import * as $$$$1 from "./routes/gfm.css.ts";
-import * as $$$$2 from "./routes/admin/[...catchall].tsx";
-import * as $$$$3 from "./routes/_middleware.ts";
-import * as $$$$4 from "./routes/docs/[...slug].tsx";
-import * as $$$$5 from "./routes/api/case.tsx";
-import * as $$$$6 from "./routes/api/webinar.tsx";
-import * as $$$$7 from "./routes/api/ranking.ts";
-import * as $$$$8 from "./routes/api/calc.tsx";
-import * as $$$$9 from "./routes/api/leads.tsx";
-import * as $$$$10 from "./routes/_app.tsx";
+import * as $$$$2 from "./routes/proxy/image/index.tsx";
+import * as $$$$3 from "./routes/admin/[...catchall].tsx";
+import * as $$$$4 from "./routes/hackathon4.ts";
+import * as $$$$5 from "./routes/_middleware.ts";
+import * as $$$$6 from "./routes/docs/[...slug].tsx";
+import * as $$$$7 from "./routes/api/case.tsx";
+import * as $$$$8 from "./routes/api/webinar.tsx";
+import * as $$$$9 from "./routes/api/ranking.ts";
+import * as $$$$10 from "./routes/api/calc.tsx";
+import * as $$$$11 from "./routes/api/leads.tsx";
+import * as $$$$12 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/OnThisPage.tsx";
 import * as $$$$$1 from "./islands/Case.tsx";
 import * as $$$$$2 from "./islands/FaviconImage.tsx";
@@ -324,17 +326,19 @@ const manifest = {
     "deco-sites/std/loaders/x/redirectsFromCsv.ts": i2$$$30,
   },
   "routes": {
-    "./routes/_app.tsx": $$$$10,
-    "./routes/_middleware.ts": $$$$3,
-    "./routes/admin/[...catchall].tsx": $$$$2,
-    "./routes/api/calc.tsx": $$$$8,
-    "./routes/api/case.tsx": $$$$5,
-    "./routes/api/leads.tsx": $$$$9,
-    "./routes/api/ranking.ts": $$$$7,
-    "./routes/api/webinar.tsx": $$$$6,
-    "./routes/docs/[...slug].tsx": $$$$4,
+    "./routes/_app.tsx": $$$$12,
+    "./routes/_middleware.ts": $$$$5,
+    "./routes/admin/[...catchall].tsx": $$$$3,
+    "./routes/api/calc.tsx": $$$$10,
+    "./routes/api/case.tsx": $$$$7,
+    "./routes/api/leads.tsx": $$$$11,
+    "./routes/api/ranking.ts": $$$$9,
+    "./routes/api/webinar.tsx": $$$$8,
+    "./routes/docs/[...slug].tsx": $$$$6,
     "./routes/gfm.css.ts": $$$$1,
+    "./routes/hackathon4.ts": $$$$4,
     "./routes/index.tsx": $$$$0,
+    "./routes/proxy/image/index.tsx": $$$$2,
   },
   "islands": {
     "./islands/CampHeader.tsx": $$$$$5,
