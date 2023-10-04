@@ -8,7 +8,7 @@ export const handler: Handlers = {
       .replaceAll('href="/', 'href="https://hackathon-10-23.deco.site/')
       .replaceAll("url(/", "url(https://hackathon-10-23.deco.site/")
       .replaceAll('"/_frsh/', '"https://hackathon-10-23.deco.site/_frsh/')
-      .replaceAll('https://hackathon-10-23.deco.site/sprites.svg', '/proxy/image?image=https://hackathon-10-23.deco.site/sprites.svg');
+      .replaceAll('https://hackathon-10-23.deco.site/sprites.svg', '/svg-hacka/sprites.svg');
 
     return new Response(modifiedText, {
       status: response.status,
