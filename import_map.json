@@ -14,7 +14,6 @@
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.0/",
     "deno-dom": "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts",
-    "typography": "npm:@tailwindcss/typography@0.5.9",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.9.14/"
+    "typography": "npm:@tailwindcss/typography@0.5.9"
   }
 }
