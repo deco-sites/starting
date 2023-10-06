@@ -198,6 +198,12 @@ const tableOfContents: TableOfContents = [{
       en: "Installing Apps",
     },
     slug: "developing/making-an-app-installable",
+  }, {
+    title: {
+      pt: "Partial",
+      en: "Partial",
+    },
+    slug: "developing/partial"
   }],
 }, {
   title: {
