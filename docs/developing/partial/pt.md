@@ -22,8 +22,7 @@ Na Deco, todas as [Sections](/docs/en/concepts/section) são tratadas como parci
 ## Exemplo: Seletor de SKU
 
 Os seletores de SKU permitem que os compradores explorem diferentes variações de um produto, cada um com seu conjunto único de preços, imagens e disponibilidade. Considere o exemplo a seguir:
-
-<!-- TODO: Adicionar um seletor de SKU que muda imagens - Um seletor de tênis é uma excelente escolha, pois muda imagens e cores. -->
+![sku-selector](https://github.com/deco-sites/starting/assets/1753396/cdaca2fc-34cd-404b-8679-d159872f7faa)
 
 Como demonstrado, a alteração do SKU selecionado pode resultar em alterações significativas na página. Uma abordagem direta é criar um sinal para armazenar o SKU atualmente selecionado e atualizá-lo a cada clique:
 
