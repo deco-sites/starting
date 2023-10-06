@@ -20,8 +20,7 @@ At Deco, all [Sections](/docs/en/concepts/section) are treated as partials. This
 ## Example: SKU Selector
 
 SKU selectors enable shoppers to explore different variations of a product, each with its unique set of prices, images, and availability. Consider the example below:
-
-<!-- TODO: Add a SKU selector that changes images - A tennis SKU selector is an excellent choice as it changes images and colors. -->
+![sku-selector](https://github.com/deco-sites/starting/assets/1753396/cdaca2fc-34cd-404b-8679-d159872f7faa)
 
 As demonstrated, altering the selected SKU can result in significant changes to the page. A straightforward approach is to create a signal to store the currently selected SKU and update it on each click:
 
