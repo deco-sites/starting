@@ -6,384 +6,452 @@ type TopLevelEntry = Entry & { children?: Array<TopLevelEntry> };
 
 type TableOfContents = Array<TopLevelEntry>;
 
-const tableOfContents: TableOfContents = [{
-  title: { pt: "Visão Geral", en: "Overview" },
-  slug: "overview",
-}, {
-  title: { pt: "Comece agora", en: "Getting Started" },
-  children: [
-    {
-      title: { pt: "Criando um Site", en: "Creating a Site" },
-      slug: "getting-started/creating-a-site",
-    },
-    {
-      title: { pt: "Atualizando o SEO", en: "Updating SEO" },
-      slug: "getting-started/updating-seo",
-    },
-    {
-      title: { pt: "Criando nova uma Página", en: "Creating a new Page" },
-      slug: "getting-started/creating-a-new-page",
-    }, // TODO
-    // {
-    //   title: { pt: "Reusando Seções", en: "Reusing Sections" },
-    //   slug: "getting-started/reusing-sections",
-    // },
-    {
-      title: {
-        pt: "Segmentação de Conteúdo",
-        en: "Segmenting Content with Variants",
+const tableOfContents: TableOfContents = [
+  {
+    title: { pt: "Visão Geral", en: "Overview" },
+    slug: "overview",
+  },
+  {
+    title: { pt: "Comece agora", en: "Getting Started" },
+    children: [
+      {
+        title: { pt: "Criando um Site", en: "Creating a Site" },
+        slug: "getting-started/creating-a-site",
       },
-      slug: "getting-started/variants",
-    },
-    {
-      title: {
-        pt: "Adicionando domínios próprios",
-        en: "Adding custom domains",
+      {
+        title: { pt: "Atualizando o SEO", en: "Updating SEO" },
+        slug: "getting-started/updating-seo",
       },
-      slug: "getting-started/custom-domains",
-    },
-    {
-      title: {
-        pt: "Criando Redirecionamentos e Proxies",
-        en: "Adding Proxies and Redirects",
+      {
+        title: { pt: "Criando nova uma Página", en: "Creating a new Page" },
+        slug: "getting-started/creating-a-new-page",
+      }, // TODO
+      // {
+      //   title: { pt: "Reusando Seções", en: "Reusing Sections" },
+      //   slug: "getting-started/reusing-sections",
+      // },
+      {
+        title: {
+          pt: "Segmentação de Conteúdo",
+          en: "Segmenting Content with Variants",
+        },
+        slug: "getting-started/variants",
       },
-      slug: "getting-started/proxy-redirects",
-    },
-    {
-      title: {
-        pt: "Restaurando versões",
-        en: "Restoring versions",
+      {
+        title: {
+          pt: "Adicionando domínios próprios",
+          en: "Adding custom domains",
+        },
+        slug: "getting-started/custom-domains",
       },
-      slug: "getting-started/releases-revisions",
-    },
-    {
-      title: {
-        pt: "Instalando Apps",
-        en: "Installing Apps",
+      {
+        title: {
+          pt: "Criando Redirecionamentos e Proxies",
+          en: "Adding Proxies and Redirects",
+        },
+        slug: "getting-started/proxy-redirects",
       },
-      slug: "getting-started/installing-an-app",
-    },
-  ],
-}, {
-  title: {
-    pt: "Conceitos",
-    en: "Concepts",
+      {
+        title: {
+          pt: "Restaurando versões",
+          en: "Restoring versions",
+        },
+        slug: "getting-started/releases-revisions",
+      },
+      {
+        title: {
+          pt: "Instalando Apps",
+          en: "Installing Apps",
+        },
+        slug: "getting-started/installing-an-app",
+      },
+    ],
   },
-  children: [{
+  {
     title: {
-      pt: "Block",
-      en: "Block",
+      pt: "Conceitos",
+      en: "Concepts",
     },
-    slug: "concepts/block",
-  }, {
-    title: {
-      pt: "Section",
-      en: "Section",
-    },
-    slug: "concepts/section",
-  }, {
-    title: {
-      pt: "Loader",
-      en: "Loader",
-    },
-    slug: "concepts/loader",
-  }, {
-    title: {
-      pt: "Action",
-      en: "Action",
-    },
-    slug: "concepts/action",
-  }, {
-    title: {
-      pt: "Page",
-      en: "Page",
-    },
-    slug: "concepts/page",
-  }, {
-    title: {
-      pt: "Matcher",
-      en: "Matcher",
-    },
-    slug: "concepts/matcher",
-  }, {
-    title: {
-      pt: "Segment",
-      en: "Segment",
-    },
-    slug: "concepts/segment",
-  }, {
-    title: {
-      pt: "App",
-      en: "App",
-    },
-    slug: "concepts/app",
-  }],
-}, {
-  title: {
-    pt: "Desenvolvendo novas funcionalidades",
-    en: "Developing new capabilities",
+    children: [
+      {
+        title: {
+          pt: "Block",
+          en: "Block",
+        },
+        slug: "concepts/block",
+      },
+      {
+        title: {
+          pt: "Section",
+          en: "Section",
+        },
+        slug: "concepts/section",
+      },
+      {
+        title: {
+          pt: "Loader",
+          en: "Loader",
+        },
+        slug: "concepts/loader",
+      },
+      {
+        title: {
+          pt: "Action",
+          en: "Action",
+        },
+        slug: "concepts/action",
+      },
+      {
+        title: {
+          pt: "Page",
+          en: "Page",
+        },
+        slug: "concepts/page",
+      },
+      {
+        title: {
+          pt: "Matcher",
+          en: "Matcher",
+        },
+        slug: "concepts/matcher",
+      },
+      {
+        title: {
+          pt: "Segment",
+          en: "Segment",
+        },
+        slug: "concepts/segment",
+      },
+      {
+        title: {
+          pt: "App",
+          en: "App",
+        },
+        slug: "concepts/app",
+      },
+    ],
   },
-  children: [{
-    title: { pt: "Configuração do ambiente", en: "Environment setup" },
-    slug: "developing/setup",
-  }, {
+  {
     title: {
-      pt: "Tornando uma Seção configurável",
-      en: "Making Sections editable",
+      pt: "Desenvolvendo novas funcionalidades",
+      en: "Developing new capabilities",
     },
-    slug: "developing/editable-sections",
-  }, {
-    title: { pt: "Criando uma Section", en: "Creating a Section" },
-    slug: "developing/hello-world",
-  }, {
-    title: {
-      pt: "Adicionando interatividade em uma página",
-      en: "Client-side interactivity",
-    },
-    slug: "developing/islands",
-  }, {
-    title: {
-      pt: "Tematizando uma Seção",
-      en: "Making a Section Themeable",
-    },
-    slug: "developing/themeable-section",
-  }, {
-    title: {
-      pt: "Carregando dados de uma API",
-      en: "Fetching data from APIs",
-    },
-    slug: "developing/fetching-data",
-  }, {
-    title: {
-      pt: "Carregando dados de uma API a partir do browser",
-      en: "Client-side Invocation",
-    },
-    slug: "developing/fetching-data-client",
-  }, {
-    title: {
-      pt: "Capturando exceções nas Seções",
-      en: "Sections error boundaries",
-    },
-    slug: "developing/error-boundaries",
-  }, {
-    title: {
-      pt: "Redirecionando usuários a partir de Seções",
-      en: "Redirecting users from Sections",
-    },
-    slug: "developing/redirecting-users",
-  }, {
-    title: {
-      pt: "Aceitando uma Seção como parâmetro da minha Seção",
-      en: "Accepting Other Sections as Parameters in Your Section",
-    },
-    slug: "developing/accept-a-section",
-  }, {
-    title: {
-      pt: "Importando Blocks de um site",
-      en: "Import Blocks from a site",
-    },
-    slug: "developing/importing-other-sites",
-  }, {
-    title: {
-      pt: "Desenvolvendo Apps",
-      en: "Developing Apps",
-    },
-    slug: "developing/creating-an-app",
-  }, {
-    title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
-    slug: "developing/using-secrets",
-  }, {
-    title: {
-      pt: "Instalando Apps",
-      en: "Installing Apps",
-    },
-    slug: "developing/making-an-app-installable",
-  }, {
-    title: {
-      pt: "Partial",
-      en: "Partial",
-    },
-    slug: "developing/partial"
-  }],
-}, {
-  title: {
-    pt: "Referência",
-    en: "Reference",
+    children: [
+      {
+        title: { pt: "Configuração do ambiente", en: "Environment setup" },
+        slug: "developing/setup",
+      },
+      {
+        title: {
+          pt: "Tornando uma Seção configurável",
+          en: "Making Sections editable",
+        },
+        slug: "developing/editable-sections",
+      },
+      {
+        title: { pt: "Criando uma Section", en: "Creating a Section" },
+        slug: "developing/hello-world",
+      },
+      {
+        title: {
+          pt: "Adicionando interatividade em uma página",
+          en: "Client-side interactivity",
+        },
+        slug: "developing/islands",
+      },
+      {
+        title: {
+          pt: "Tematizando uma Seção",
+          en: "Making a Section Themeable",
+        },
+        slug: "developing/themeable-section",
+      },
+      {
+        title: {
+          pt: "Carregando dados de uma API",
+          en: "Fetching data from APIs",
+        },
+        slug: "developing/fetching-data",
+      },
+      {
+        title: {
+          pt: "Carregando dados de uma API a partir do browser",
+          en: "Client-side Invocation",
+        },
+        slug: "developing/fetching-data-client",
+      },
+      {
+        title: {
+          pt: "Capturando exceções nas Seções",
+          en: "Sections error boundaries",
+        },
+        slug: "developing/error-boundaries",
+      },
+      {
+        title: {
+          pt: "Redirecionando usuários a partir de Seções",
+          en: "Redirecting users from Sections",
+        },
+        slug: "developing/redirecting-users",
+      },
+      {
+        title: {
+          pt: "Aceitando uma Seção como parâmetro da minha Seção",
+          en: "Accepting Other Sections as Parameters in Your Section",
+        },
+        slug: "developing/accept-a-section",
+      },
+      {
+        title: {
+          pt: "Importando Blocks de um site",
+          en: "Import Blocks from a site",
+        },
+        slug: "developing/importing-other-sites",
+      },
+      {
+        title: {
+          pt: "Desenvolvendo Apps",
+          en: "Developing Apps",
+        },
+        slug: "developing/creating-an-app",
+      },
+      {
+        title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
+        slug: "developing/using-secrets",
+      },
+      {
+        title: {
+          pt: "Instalando Apps",
+          en: "Installing Apps",
+        },
+        slug: "developing/making-an-app-installable",
+      },
+      {
+        title: {
+          pt: "Partial",
+          en: "Partial",
+        },
+        slug: "developing/partial",
+      },
+    ],
   },
-  children: [{
-    title: { pt: "Problemas comuns", en: "Troubleshooting" },
-    slug: "reference/troubleshooting",
-  }, {
-    title: { pt: "Tipos utilitários", en: "Utility types" },
-    slug: "reference/utility-types",
-  }, {
+  {
     title: {
-      pt: "Contribuindo",
-      en: "Contributing",
+      pt: "Referência",
+      en: "Reference",
     },
-    slug: "reference/contributing",
-  }, {
-    title: {
-      pt: "E-commerce Analytics",
-      en: "E-commerce Analytics",
-    },
-    slug: "reference/analytics",
-  }],
-}, {
-  title: {
-    pt: "Performance",
-    en: "Performance",
+    children: [
+      {
+        title: { pt: "Problemas comuns", en: "Troubleshooting" },
+        slug: "reference/troubleshooting",
+      },
+      {
+        title: { pt: "Tipos utilitários", en: "Utility types" },
+        slug: "reference/utility-types",
+      },
+      {
+        title: {
+          pt: "Contribuindo",
+          en: "Contributing",
+        },
+        slug: "reference/contributing",
+      },
+      {
+        title: {
+          pt: "E-commerce Analytics",
+          en: "E-commerce Analytics",
+        },
+        slug: "reference/analytics",
+      },
+    ],
   },
-  children: [{
+  {
     title: {
-      pt: "Porque performance importa",
-      en: "Why web performance matters",
+      pt: "Performance",
+      en: "Performance",
     },
-    slug: "performance/why",
-  }, {
-    title: {
-      pt: "Como usar a deco para atingir alta performance",
-      en: "How can you use deco for achieve high performance",
-    },
-    slug: "performance/how-deco-performance",
-  }, {
-    title: {
-      pt: "Dicas para atingir uma alta performance",
-      en: "Performance tips",
-    },
-    slug: "performance/tips",
-  }],
-}, {
-  title: {
-    pt: "Criando componentes reutilizáveis",
-    en: "Creating composable UIs",
+    children: [
+      {
+        title: {
+          pt: "Porque performance importa",
+          en: "Why web performance matters",
+        },
+        slug: "performance/why",
+      },
+      {
+        title: {
+          pt: "Como usar a deco para atingir alta performance",
+          en: "How can you use deco for achieve high performance",
+        },
+        slug: "performance/how-deco-performance",
+      },
+      {
+        title: {
+          pt: "Dicas para atingir uma alta performance",
+          en: "Performance tips",
+        },
+        slug: "performance/tips",
+      },
+    ],
   },
-  children: [{
+  {
     title: {
-      pt: "Dados padronizados",
-      en: "Standard data types",
+      pt: "Criando componentes reutilizáveis",
+      en: "Creating composable UIs",
     },
-    slug: "composable-uis/standard-data-types",
-  }, {
-    title: {
-      pt: "Biblioteca de blocos",
-      en: "Block Library",
-    },
-    slug: "composable-uis/block-library",
-  }, {
-    title: {
-      pt: "E-commerce",
-      en: "E-commerce",
-    },
-    slug: "composable-uis/ecommerce",
-  }],
-}, {
-  title: {
-    pt: "Criando APIs reutilizáveis",
-    en: "Creating composable APIs",
+    children: [
+      {
+        title: {
+          pt: "Dados padronizados",
+          en: "Standard data types",
+        },
+        slug: "composable-uis/standard-data-types",
+      },
+      {
+        title: {
+          pt: "Biblioteca de blocos",
+          en: "Block Library",
+        },
+        slug: "composable-uis/block-library",
+      },
+      {
+        title: {
+          pt: "E-commerce",
+          en: "E-commerce",
+        },
+        slug: "composable-uis/ecommerce",
+      },
+    ],
   },
-  children: [{
+  {
     title: {
-      pt: "NuvemShop",
-      en: "NuvemShop",
+      pt: "Criando APIs reutilizáveis",
+      en: "Creating composable APIs",
     },
-    slug: "composable-apis/nuvemshop",
-  }, {
-    title: {
-      pt: "Shopify",
-      en: "Shopify",
-    },
-    slug: "composable-apis/shopify",
-  }, {
-    title: {
-      pt: "VNDA.",
-      en: "VNDA.",
-    },
-    slug: "composable-apis/vnda",
-  }, {
-    title: {
-      pt: "VTEX",
-      en: "VTEX",
-    },
-    slug: "composable-apis/vtex",
-  }, {
-    title: {
-      pt: "GTM",
-      en: "GTM",
-    },
-    slug: "composable-apis/gtm",
-  }],
-}, {
-  title: {
-    pt: "Treinamento Comercial",
+    children: [
+      {
+        title: {
+          pt: "NuvemShop",
+          en: "NuvemShop",
+        },
+        slug: "composable-apis/nuvemshop",
+      },
+      {
+        title: {
+          pt: "Shopify",
+          en: "Shopify",
+        },
+        slug: "composable-apis/shopify",
+      },
+      {
+        title: {
+          pt: "VNDA.",
+          en: "VNDA.",
+        },
+        slug: "composable-apis/vnda",
+      },
+      {
+        title: {
+          pt: "VTEX",
+          en: "VTEX",
+        },
+        slug: "composable-apis/vtex",
+      },
+      {
+        title: {
+          pt: "GTM",
+          en: "GTM",
+        },
+        slug: "composable-apis/gtm",
+      },
+    ],
   },
-  children: [{
+  {
     title: {
-      pt: "Introdução",
+      pt: "Treinamento Comercial",
     },
-    slug: "treinamento-comercial/introducao",
-  }, {
-    title: {
-      pt: "Agenda",
-    },
-    slug: "treinamento-comercial/agenda",
-  }, {
-    title: {
-      pt: "Diagnóstico Inicial",
-    },
-    slug: "treinamento-comercial/diagnostico-inicial",
-  }, {
-    title: {
-      pt: "Sales Deck",
-    },
-    slug: "treinamento-comercial/sales-deck",
-  }, {
-    title: {
-      pt: "Q&A Comercial",
-    },
-    slug: "treinamento-comercial/qa-comercial",
-  }, {
-    title: {
-      pt: "Produto",
-    },
-    slug: "treinamento-comercial/produto",
-  }, {
-    title: {
-      pt: "Headless & Composable",
-    },
-    slug: "treinamento-comercial/headless-composable",
-  }, {
-    title: {
-      pt: "Web Performance",
-    },
-    slug: "treinamento-comercial/web-performance",
-  }, {
-    title: {
-      pt: "Agências Parceiras",
-    },
-    slug: "treinamento-comercial/agencias-parceiras",
-  }, {
-    title: {
-      pt: "Nichos de Clients",
-    },
-    slug: "treinamento-comercial/nichos-de-clientes",
-  }, {
-    title: {
-      pt: "Objeções",
-    },
-    slug: "treinamento-comercial/objecoes",
-  }, {
-    title: {
-      pt: "Seu Primeiro Case",
-    },
-    slug: "treinamento-comercial/seu-primeiro-case",
-  }, {
-    title: {
-      pt: "Próximos Passos",
-    },
-    slug: "treinamento-comercial/proximos-passos",
-  }],
-}];
+    children: [
+      {
+        title: {
+          pt: "Introdução",
+        },
+        slug: "treinamento-comercial/introducao",
+      },
+      {
+        title: {
+          pt: "Agenda",
+        },
+        slug: "treinamento-comercial/agenda",
+      },
+      {
+        title: {
+          pt: "Diagnóstico Inicial",
+        },
+        slug: "treinamento-comercial/diagnostico-inicial",
+      },
+      {
+        title: {
+          pt: "Sales Deck",
+        },
+        slug: "treinamento-comercial/sales-deck",
+      },
+      {
+        title: {
+          pt: "Q&A Comercial",
+        },
+        slug: "treinamento-comercial/qa-comercial",
+      },
+      {
+        title: {
+          pt: "Produto",
+        },
+        slug: "treinamento-comercial/produto",
+      },
+      {
+        title: {
+          pt: "Headless & Composable",
+        },
+        slug: "treinamento-comercial/headless-composable",
+      },
+      {
+        title: {
+          pt: "Web Performance",
+        },
+        slug: "treinamento-comercial/web-performance",
+      },
+      {
+        title: {
+          pt: "Agências Parceiras",
+        },
+        slug: "treinamento-comercial/agencias-parceiras",
+      },
+      {
+        title: {
+          pt: "Nichos de Clients",
+        },
+        slug: "treinamento-comercial/nichos-de-clientes",
+      },
+      {
+        title: {
+          pt: "Objeções",
+        },
+        slug: "treinamento-comercial/objecoes",
+      },
+      {
+        title: {
+          pt: "Seu Primeiro Case",
+        },
+        slug: "treinamento-comercial/seu-primeiro-case",
+      },
+      {
+        title: {
+          pt: "Próximos Passos",
+        },
+        slug: "treinamento-comercial/proximos-passos",
+      },
+    ],
+  },
+];
 
 if (import.meta.main) {
   for (const content of tableOfContents) {
@@ -394,7 +462,9 @@ if (import.meta.main) {
       );
       let isCreated = false;
       if (!stat.isDirectory) {
-        isCreated = await Deno.mkdir(path).then(() => true).catch(() => false);
+        isCreated = await Deno.mkdir(path)
+          .then(() => true)
+          .catch(() => false);
       }
       if (!content.children && !isCreated) {
         await Promise.all([
@@ -425,9 +495,9 @@ since: 1.0.0
         );
         if (!stat.isDirectory) {
           if (
-            await Deno.mkdir(path, { recursive: true }).then(() => true).catch(
-              () => false,
-            )
+            await Deno.mkdir(path, { recursive: true })
+              .then(() => true)
+              .catch(() => false)
           ) {
             await Promise.all([
               Deno.create(`${join(path, "en.md")}`),
@@ -505,9 +575,9 @@ export const getNextAndPreviousPost = (
     );
   }, [] as TopLevelEntry[]);
 
-  const currentIndex = tableOfContentsEntries.findLastIndex((
-    { slug: currentSlug },
-  ) => currentSlug && slug.includes(currentSlug));
+  const currentIndex = tableOfContentsEntries.findLastIndex(
+    ({ slug: currentSlug }) => currentSlug && slug.includes(currentSlug),
+  );
 
   const previous = currentIndex === 0 ? undefined : getNextPreviousForEntry(
     language,
