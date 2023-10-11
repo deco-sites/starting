@@ -4,7 +4,7 @@ description: Learn how to integrate deco with VTEX ecommerce platform.
 
 This article guides you on creating and configuring a website at  [**deco.cx**](http://deco.cx) for a _storefront_ using data from [VTEX](https://vtex.com/ "https://vtex.com/") ecommerce platform.
 
-> TL;DR: To connect to VTEX you need to change `vtex.ts` block configuration at https://deco.cx/admin/sites/{site}/blocks/configVTEX
+> TL;DR: To connect to VTEX you need to change `vtex` app configuration at https://deco.cx/admin/sites/{site}/library?type=apps
 
 > **Video**: To watch the content of this article, click
 [here](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
@@ -30,9 +30,9 @@ This article guides you on creating and configuring a website at  [**deco.cx**](
 
 In case you already have a website at deco.cx, advance to the next section. Follow the steps in this [guide](/docs/en/getting-started/creating-a-site) otherwise. 
 
-> Make sure your site was created based on the **Deco Commerce** template below
+> Make sure your site was created based on the **Storefront-Vtex** template below
 
-<img width="586" alt="Creating a website in deco.cx" src="https://user-images.githubusercontent.com/18706156/224514991-0e882420-00a8-4272-a2d0-71f73ac77d23.png">
+<img width="586" alt="Creating a website in deco.cx" src="https://github.com/deco-sites/starting/assets/76620866/90c657d0-e674-441f-b3b4-267692fc31a0">
 
 # Setting up the `Public store URL`
 *Deco commerce* template currently proxies VTEX's own *checkout* and *my-account* services. This means that your final user will NOT be redirected to any other domain when checking out. For instance, let's say, before any migration to deco, your store is hosted on `www.mystore.com` and the checkout url is `https://www.mystore.com/checkout`. After migrating to deco, your store will continue being served on `www.mystore.com` and your checkout url will still be `https://www.mystore.com/checkout`. 
@@ -47,9 +47,9 @@ To connect to your VTEX account:
 
 1. Access your site's administrative panel at [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
 2. On the topbar, select *blocks*
-3. Choose the *Accounts* tab
-4. Select the **vtex.ts** block and click on the configVTEX block. You should see something like: 
-<img width="480" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/4a0296d0-671c-4d46-9f46-1ee9aa3f1782">
+3. Choose the *Apps* tab
+4. Select the **vtex** app. You should see something like: 
+<img width="580" alt="image" src="https://github.com/deco-sites/starting/assets/76620866/3a9fe86d-089a-41a6-84b5-d371a90a3a11">
 
 5. Change the account configuration from `bravtexfashionstore` to your VTEX [account name](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC)
 6. Set the `Public store URL`.

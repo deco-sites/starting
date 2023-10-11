@@ -4,7 +4,7 @@ descrição: Aprenda a integrar o Deco com a plataforma de comércio eletrônico
 
 Este artigo orienta você na criação e configuração de um website no [**deco.cx**](http://deco.cx) para uma _loja virtual_ utilizando dados da plataforma de comércio eletrônico [VTEX](https://vtex.com/ "https://vtex.com/").
 
-> TL;DR: Para se conectar à VTEX, você precisa alterar a configuração do bloco `vtex.ts` em https://deco.cx/admin/sites/{site}/blocks/configVTEX
+> TL;DR: Para se conectar à VTEX, você precisa alterar a configuração do app `vtex` em https://deco.cx/admin/sites/{site}/library?type=apps
 
 > **Vídeo**: Para assistir ao conteúdo deste artigo, clique [aqui](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
 
@@ -26,9 +26,9 @@ Este artigo orienta você na criação e configuração de um website no [**deco
 
 Caso você já tenha um website no deco.cx, avance para a próxima seção. Caso contrário, siga as etapas deste [guia](/docs/pt-br/getting-started/creating-a-site) para criar um.
 
-> Certifique-se de que seu site foi criado com base no modelo **Deco Commerce** abaixo:
+> Certifique-se de que seu site foi criado com base no modelo **Storefront-Vtex** abaixo:
 
-<img width="586" alt="Criando um website no deco.cx" src="https://user-images.githubusercontent.com/18706156/224514991-0e882420-00a8-4272-a2d0-71f73ac77d23.png">
+<img width="586" alt="Criando um website no deco.cx" src="https://github.com/deco-sites/starting/assets/76620866/90c657d0-e674-441f-b3b4-267692fc31a0">
 
 # Configurando a `URL Pública da Loja`
 O modelo *Deco Commerce* atualmente faz o proxy dos serviços *checkout* e *my-account* da própria VTEX. Isso significa que seu usuário final NÃO será redirecionado para nenhum outro domínio ao fazer o checkout. Por exemplo, vamos supor que, antes de migrar para o Deco, sua loja esteja hospedada em `www.minhaloja.com` e a URL de checkout seja `https://www.minhaloja.com/checkout`. Após migrar para o Deco, sua loja continuará sendo servida em `www.minhaloja.com` e a URL de checkout ainda será `https://www.minhaloja.com/checkout`.
@@ -43,9 +43,9 @@ Para se conectar à sua conta na VTEX:
 
 1. Acesse o painel administrativo do seu site em [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
 2. Na barra superior, selecione *blocos*.
-3. Escolha a guia *Contas*.
-4. Selecione o bloco **vtex.ts** e clique no bloco configVTEX. Você verá algo como:
-<img width="480" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/4a0296d0-671c-4d46-9f46-1ee9aa3f1782">
+3. Escolha a guia *Apps*.
+4. Selecione o app **vtex.ts** Você verá algo como:
+<img width="580" alt="imagem" src="https://github.com/deco-sites/starting/assets/76620866/3a9fe86d-089a-41a6-84b5-d371a90a3a11">
 
 5. Altere a configuração da conta de `bravtexfashionstore` para o nome da sua conta VTEX [aqui](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC).
 6. Defina a `URL Pública da Loja`.
