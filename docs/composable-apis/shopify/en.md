@@ -11,8 +11,8 @@ This article guides you through creating and configuring a website on [**deco.cx
 
 # Prerequisites
 
-- A website on Deco. Create one for free at[https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
-- An account on Shopify..
+- A website on Deco. Create one for free at [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+- An account on Shopify.
 
 
 # Creating the Website
