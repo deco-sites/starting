@@ -53,11 +53,16 @@ function renderContentItem(item: ContentType, idx: number) {
         />
       </>
     )
-    : "section" in item ? (<>
-      {renderSection(item.section, idx)}
-    </>):
-    <>
-    </>;
+    : "section" in item
+    ? (
+      <>
+        {renderSection(item.section, idx)}
+      </>
+    )
+    : (
+      <>
+      </>
+    );
 }
 
 export default function Page({
@@ -71,9 +76,7 @@ export default function Page({
   return (
     <div class="mx-auto relative lg:mb-[40px] mb-[32px] lg:border-l-2 lg:border-[#D4DBD7] lg:px-[40px]">
       <BreadCrumb homePath={homePath} homeLabel={homeLabel} />
-      <div
-        class="w-full"
-      >
+      <div class="w-full">
         <div class="w-full xl:px-0 lg:pl-0 px-6 relative z-0">
           <div class="flex flex-col gap-[8px] lg:pt-0 pt-[161px]">
             <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
@@ -91,9 +94,8 @@ export default function Page({
                     {Type.map((item, idx) => (
                       <>
                         {renderContentItem(item, idx)}
-                        {Object.hasOwn(item, "Underline") && item?.Underline && (
-                          <span class="flex border-b bg-zinc-300" />
-                        )}
+                        {Object.hasOwn(item, "Underline") && item?.Underline &&
+                          <span class="flex border-b bg-zinc-300" />}
                       </>
                     ))}
                   </div>

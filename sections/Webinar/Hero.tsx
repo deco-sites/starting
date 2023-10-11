@@ -83,7 +83,11 @@ export default function Hero({
           </div>
           <div className="hidden md:flex pb-8 lg:w-full aspect-[53/65] md:pb-0 xl:w-[583px] md:h-full">
             <picture>
-              <source media="(max-width: 760px)" srcSet={bannerHeroMobile} className="rounded-[20px]"/>
+              <source
+                media="(max-width: 760px)"
+                srcSet={bannerHeroMobile}
+                className="rounded-[20px]"
+              />
               <img
                 className="bg-[#053535] lg:h-full md:h-[94%] lg:w-full rounded-[20px]"
                 alt={titleImg}

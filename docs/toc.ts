@@ -203,7 +203,7 @@ const tableOfContents: TableOfContents = [{
       pt: "Partial",
       en: "Partial",
     },
-    slug: "developing/partial"
+    slug: "developing/partial",
   }],
 }, {
   title: {
