@@ -22,14 +22,20 @@ export default function ForwardBackButtons() {
   const [isEnglishState, setIsEnglishState] = useState(isEnglish);
 
   useEffect(() => {
-    const encodedURL = window.location.href.split(window.location.search||window.location.hash||/[?#]/)[0];
+    const encodedURL = window.location.href.split(
+      window.location.search || window.location.hash || /[?#]/,
+    )[0];
     const decodedURL = decodeURIComponent(encodedURL);
 
     const links = document.querySelectorAll("aside a");
     const linkArray = Array.from(links);
 
-    const currentIndex = linkArray.map((x, index) => ({value: x.getAttribute("href") || "", index})).toSorted((x, y) => 
-    x.value.length - y.value.length).find((link) => decodedURL.includes(link.value))?.index;
+    const currentIndex = linkArray.map((x, index) => ({
+      value: x.getAttribute("href") || "",
+      index,
+    })).toSorted((x, y) => x.value.length - y.value.length).find((link) =>
+      decodedURL.includes(link.value)
+    )?.index;
 
     if (currentIndex !== undefined && currentIndex !== -1) {
       if (currentIndex > 0) {

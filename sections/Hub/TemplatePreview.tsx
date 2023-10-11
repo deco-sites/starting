@@ -9,7 +9,7 @@ import { useState } from "preact/hooks";
 import { template } from "$fresh/src/server/render.ts";
 
 export interface Props {
-  lang?: string,
+  lang?: string;
   info?: Template;
   buttonBack?: {
     label?: string;

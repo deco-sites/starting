@@ -45,7 +45,10 @@ export default function Content({
             dangerouslySetInnerHTML={{ __html: text }}
           />
         </div>
-        <div id="webinar_form" className="flex gap-16 flex-col lg:w-[411px] xl:w-[511px]">
+        <div
+          id="webinar_form"
+          className="flex gap-16 flex-col lg:w-[411px] xl:w-[511px]"
+        >
           <InterestForm {..._form} />
           <div className="flex md:hidden flex-col lg:w-full gap-4 self-stretch lg:items-start lg:mb-0 lg:max-w-[48%] xl:max-w-[619px]">
             <h2 class="flex-none font-bold text-3xl lg:text-4xl/[110%] xl:text-5xl/[110%] pb-2 lg:w-full">

@@ -18,10 +18,20 @@ const PersonaAccordion = ({
       class: "h-10",
       attachments: students,
     },
-    { name: "Mentores", icon: "/camp/mentors-icon.png", class: "h-10 ", attachments: mentors, },
-    { name: "Empresas", icon: "/camp/business-icon.png", class: "h-10", attachments: companys, },
+    {
+      name: "Mentores",
+      icon: "/camp/mentors-icon.png",
+      class: "h-10 ",
+      attachments: mentors,
+    },
+    {
+      name: "Empresas",
+      icon: "/camp/business-icon.png",
+      class: "h-10",
+      attachments: companys,
+    },
   ];
-  
+
   return (
     <div class="lg:flex block justify-between w-full">
       {containers.map((cont, i) => (

@@ -13,7 +13,7 @@ export interface Props {
   alerts?: {
     mobile?: Alert[];
     desktop?: Alert[];
-  }
+  };
   menuLinks: Array<{ label: string; href: string; targetBlank?: boolean }>;
   idiom: string;
   pt: { label: string; url: string; selected?: boolean };
@@ -117,44 +117,40 @@ export default function Header(props: Props) {
         }
         `}
       </style>
-      {
-        alerts?.mobile && alerts?.mobile.length > 0 && (
-          <div id={idMobile} class="lg:hidden">
-            <Slider class="carousel carousel-center w-screen bg-black text-white font-normal text-sm py-3">
-              {alerts.mobile.map((alert, index) => (
-                <Slider.Item index={index} class="carousel-item">
-                  <span
-                    class="flex justify-center items-center w-screen"
-                    dangerouslySetInnerHTML={{
-                      __html: alert.label,
-                    }}
-                  />
-                </Slider.Item>
-              ))}
-            </Slider>
-            <SliderJS rootId={idMobile} interval={5 * 1e3} />
-          </div>
-        )
-      }
-      {
-        alerts?.desktop && alerts?.desktop.length > 0 && (
-          <div id={idDesktop} class="hidden lg:block">
-            <Slider class="carousel carousel-center w-screen bg-black text-white font-normal text-sm py-3">
-              {alerts.desktop.map((alert, index) => (
-                <Slider.Item index={index} class="carousel-item">
-                  <span
-                    class="flex justify-center items-center w-screen"
-                    dangerouslySetInnerHTML={{
-                      __html: alert.label,
-                    }}
-                  />
-                </Slider.Item>
-              ))}
-            </Slider>
-            <SliderJS rootId={idDesktop} interval={5 * 1e3} />
-          </div>
-        )
-      }
+      {alerts?.mobile && alerts?.mobile.length > 0 && (
+        <div id={idMobile} class="lg:hidden">
+          <Slider class="carousel carousel-center w-screen bg-black text-white font-normal text-sm py-3">
+            {alerts.mobile.map((alert, index) => (
+              <Slider.Item index={index} class="carousel-item">
+                <span
+                  class="flex justify-center items-center w-screen"
+                  dangerouslySetInnerHTML={{
+                    __html: alert.label,
+                  }}
+                />
+              </Slider.Item>
+            ))}
+          </Slider>
+          <SliderJS rootId={idMobile} interval={5 * 1e3} />
+        </div>
+      )}
+      {alerts?.desktop && alerts?.desktop.length > 0 && (
+        <div id={idDesktop} class="hidden lg:block">
+          <Slider class="carousel carousel-center w-screen bg-black text-white font-normal text-sm py-3">
+            {alerts.desktop.map((alert, index) => (
+              <Slider.Item index={index} class="carousel-item">
+                <span
+                  class="flex justify-center items-center w-screen"
+                  dangerouslySetInnerHTML={{
+                    __html: alert.label,
+                  }}
+                />
+              </Slider.Item>
+            ))}
+          </Slider>
+          <SliderJS rootId={idDesktop} interval={5 * 1e3} />
+        </div>
+      )}
 
       <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <div
