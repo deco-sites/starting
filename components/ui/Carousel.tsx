@@ -4,6 +4,9 @@ import Image from "deco-sites/std/components/Image.tsx";
 import Slider from "deco-sites/starting/components/ui/Slider.tsx";
 import SliderControllerJS from "deco-sites/starting/islands/SliderJS.tsx";
 
+const getAspectRatio = (width: number, aspectRatio: number) => width / aspectRatio;
+const IMAGE_WIDTH = 360;
+
 export interface Props {
   bottomPadding?: string;
   cards: Array<{
@@ -33,17 +36,17 @@ export default function Carousel({ bottomPadding, cards }: Props) {
         >
           {cards?.map((card) => {
             return (
-              <a href={card.url} target="_blank" class="rounded-[8px]">
+              <a href={card.url} target="_blank" class="rounded-[8px] block w-[420px]">
                 <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden h-[475px] md:h-[505px]">
                   <div>
                     <Image
                       src={card.image}
                       fetchPriority={"low"}
-                      class="w-full"
+                      class="w-full aspect-[16/9]"
                       preload={false}
                       loading={"lazy"}
-                      width={359}
-                      height={240}
+                      width={IMAGE_WIDTH}
+                      height={getAspectRatio(IMAGE_WIDTH, 16/9)}
                     />
                   </div>
                   <div class="flex flex-col gap-4 justify-between py-8 px-6 rounded-[8px] h-[47%]">
