@@ -36,7 +36,7 @@ export default function Carousel({ bottomPadding, cards }: Props) {
         >
           {cards?.map((card) => {
             return (
-              <a href={card.url} target="_blank" class="rounded-[8px] w-[420px]">
+              <a href={card.url} target="_blank" class="rounded-[8px] block w-[420px]">
                 <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden h-[475px] md:h-[505px]">
                   <div>
                     <Image
