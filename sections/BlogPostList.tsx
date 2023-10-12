@@ -4,6 +4,7 @@ import {
   PostList,
 } from "deco-sites/starting/components/utils/Blog.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import HeroPost from "../sections/HeroPost.tsx";
 
 export type Props = {
   postList: LoaderReturnType<PostList>;
@@ -17,38 +18,18 @@ export default function MarkdownContainer(props: Props) {
   );
 
   return (
-    <section class="pt-24 md:pt-40 px-5 lg:max-w-[940px] mx-auto">
-      <div>
-        <a
-          href={getBlogPath(highlightPost.path)}
-          class="block w-full text-deco-dark-green mb-10 sm:mb-20 md:hover:scale-105 duration-200"
-        >
-          <Image
-            class="object-contain"
-            src={highlightPost.img}
-            sizes="(max-width: 894px) 100vw, 50vw"
-            style={{ maxHeight: "300px" }}
-            width={894}
-            height={502}
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
-            preload
-          />
-          <div class="mt-6 flex flex-col gap-4">
-            <h1 class="text-5xl leading-[1.1]">
-              {highlightPost.title}
-            </h1>
-            <div class="text-2xl md:text-3xl leading-[1.18] text-[#66736C]">
-              {highlightPost.descr}
-            </div>
-            <div class="md:text-xl leading-[1.5] text-[#66736C]">
-              <span class="mr-5">{highlightPost.date}</span>
-              <span>{highlightPost.author}</span>
-            </div>
-          </div>
-        </a>
-      </div>
+    <section class="pt-24 md:pt-40 px-5 mx-auto container">
+      {/* <HeroPost /> */}
+      <HeroPost
+        title={highlightPost.title}
+        description={highlightPost.descr}
+        date={highlightPost.date}
+        readTime={highlightPost.readTime} // You need to calculate or get this value from your data
+        authorName={highlightPost.author}
+        authorAvatar={highlightPost.authorAvatar}
+        blogThumbnail={highlightPost.img}
+        blogLink={getBlogPath(highlightPost.path)}
+      />
 
       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-8">
         {normalPosts.map((post) => (

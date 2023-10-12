@@ -1,6 +1,7 @@
 export interface PostBody {
   data: string;
 }
+/** @title {{{title}}} - {{{author}}} */
 interface Post {
   title: string;
   path: string;
@@ -8,6 +9,8 @@ interface Post {
   descr: string;
   date: string;
   author: string;
+  authorAvatar?: string;
+  readTime?: string;
 }
 
 export interface PostList {
