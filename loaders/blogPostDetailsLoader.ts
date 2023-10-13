@@ -1,4 +1,3 @@
-import { LoaderReturnType } from "deco/mod.ts";
 import {
   getBlogPath,
   Post,

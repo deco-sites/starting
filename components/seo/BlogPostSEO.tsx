@@ -1,5 +1,4 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import type { LoaderReturnType } from "$live/types.ts";
 import Metatags from "./BlogMetatags.tsx";
 import { Post } from "deco-sites/starting/components/utils/Blog.ts";
 
