@@ -22,6 +22,8 @@ export interface PostList {
   posts: Array<Post>;
 }
 
-export function getBlogPath(fname: string) {
-  return "/pt/blog/" + fname;
+const BLOG_DEFAULT_LOCALE = "pt";
+
+export function getBlogPath(fname: string, locale?: string) {
+  return `/${locale || BLOG_DEFAULT_LOCALE}/blog/${fname}`;
 }
