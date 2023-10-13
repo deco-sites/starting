@@ -156,9 +156,5 @@
 .prose :where(img):not(:where([class~=not-prose] *)) {
   border-radius: 0.5rem;
   transition: transform .2s;
-}
-
-.prose :where(img:hover):not(:where([class~=not-prose] *)) {
-  transform: scale(1.5);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
 }
