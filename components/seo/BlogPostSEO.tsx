@@ -16,7 +16,7 @@ export interface Props {
   description?: string;
   /** @description Recommended: 16 x 16 px */
   favicon?: LiveImage;
-  post: LoaderReturnType<Post>;
+  post: Post;
 }
 
 const BlogPostSEO = (props: Props) => {
