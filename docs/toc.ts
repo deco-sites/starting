@@ -233,6 +233,13 @@ const tableOfContents: TableOfContents = [
         },
         slug: "developing/partial",
       },
+      {
+        title: {
+          pt: "Modificando o status de retorno de uma pagina",
+          en: "Modifying the return status of a page",
+        },
+        slug: "developing/modifying-status",
+      },
     ],
   },
   {
