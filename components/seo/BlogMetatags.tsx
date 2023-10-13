@@ -5,7 +5,7 @@ import type { Props as SEOProps } from "deco-sites/std/components/seo/types.ts";
 import type { LoaderReturnType } from "$live/types.ts";
 
 interface Props extends Omit<SEOProps, "context"> {
-  context?: LoaderReturnType<Post | null>;
+  context?: Post | null;
 }
 
 function Metatags(props: Props) {
