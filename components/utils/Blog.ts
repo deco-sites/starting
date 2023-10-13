@@ -16,6 +16,12 @@ export interface Post {
    * @format textarea
    */
   content?: string;
+  seo?: {
+    title?: string;
+    description?: string;
+    image?: string;
+    canonical?: string;
+  };
 }
 
 export interface PostList {
