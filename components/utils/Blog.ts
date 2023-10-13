@@ -2,7 +2,7 @@ export interface PostBody {
   data: string;
 }
 /** @title {{{title}}} - {{{author}}} */
-interface Post {
+export interface Post {
   title: string;
   path: string;
   img: string;
@@ -10,6 +10,7 @@ interface Post {
   date: string;
   author: string;
   authorAvatar?: string;
+  authorRole?: string;
   readTime?: string;
 }
 
