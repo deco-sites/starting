@@ -3,9 +3,8 @@ import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import Slider from "deco-sites/starting/components/ui/Slider.tsx";
 import SliderControllerJS from "deco-sites/starting/islands/SliderJS.tsx";
+import { getAspectRatio } from "deco-sites/starting/sdk/utils.ts";
 
-const getAspectRatio = (width: number, aspectRatio: number) =>
-  width / aspectRatio;
 const IMAGE_WIDTH = 360;
 
 export interface Props {
@@ -67,9 +66,7 @@ export default function Carousel({ bottomPadding, cards }: Props) {
                       <p class="text-[#66736C] text-left">
                         {card.writtenByLabel} {card.author}
                       </p>
-                      <p class="text-[#66736C] text-left">
-                        {card.date}
-                      </p>
+                      <p class="text-[#66736C] text-left">{card.date}</p>
                     </div>
                   </div>
                 </article>

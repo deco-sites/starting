@@ -1,7 +1,4 @@
-import {
-  getBlogPath,
-  Post,
-} from "deco-sites/starting/components/utils/Blog.ts";
+import { Post } from "deco-sites/starting/components/utils/Blog.ts";
 
 export default function FeaturedPost({
   title,
@@ -19,10 +16,7 @@ export default function FeaturedPost({
       <div class="mx-auto">
         <div class="mx-auto ">
           <div class="w-full cursor-pointer">
-            <a
-              class="grid gap-8 lg:grid-cols-2 lg:gap-16"
-              href={getBlogPath(path)}
-            >
+            <a class="grid gap-8 lg:grid-cols-2 lg:gap-16" href={path}>
               <div class="relative h-96 w-full overflow-auto rounded-lg border">
                 <span
                   style={`box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0`}

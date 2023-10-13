@@ -1,8 +1,6 @@
 import { Post } from "deco-sites/starting/components/utils/Blog.ts";
+import { getAspectRatio } from "deco-sites/starting/sdk/utils.ts";
 import Image from "deco-sites/std/components/Image.tsx";
-
-export const getAspectRatio = (width: number, aspectRatio: number) =>
-  width / aspectRatio;
 
 const IMAGE_WIDTH = 360;
 
