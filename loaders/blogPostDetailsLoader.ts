@@ -7,7 +7,7 @@ import {
 import { PathObj } from "deco-sites/starting/sections/BlogPostHeader.tsx";
 
 export type Props = {
-  postList: LoaderReturnType<PostList>;
+  postList: PostList;
   page: LoaderReturnType<PathObj>;
 };
 
