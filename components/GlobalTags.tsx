@@ -67,6 +67,11 @@ export default function GlobalTags() {
         }}
       >
       </style>
+
+      <meta
+        name="google-site-verification"
+        content="bMxp0bAEXy-5NLu-aQyCag1DBqf-XpVNy_cf933_ECA"
+      />
     </Head>
   );
 }
