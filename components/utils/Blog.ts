@@ -12,6 +12,10 @@ export interface Post {
   authorAvatar?: string;
   authorRole?: string;
   readTime?: string;
+  /**
+   * @format textarea
+   */
+  content?: string;
 }
 
 export interface PostList {
