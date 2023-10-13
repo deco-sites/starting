@@ -23,8 +23,8 @@ const BlogPostSEO = (props: Props) => {
     ...props.post,
     seo: {
       ...props?.post?.seo,
-      title: props.post?.seo?.title || props.title,
-      description: props.post?.seo?.description || props.description,
+      title: props.post?.seo?.title || props.post.title,
+      description: props.post?.seo?.description || props.post.descr,
       image: props.post?.seo?.image || props.post?.img,
     },
   } as Post;
