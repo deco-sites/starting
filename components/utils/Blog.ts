@@ -1,13 +1,17 @@
 export interface PostBody {
   data: string;
 }
-interface Post {
+/** @title {{{title}}} - {{{author}}} */
+export interface Post {
   title: string;
   path: string;
   img: string;
   descr: string;
   date: string;
   author: string;
+  authorAvatar?: string;
+  authorRole?: string;
+  readTime?: string;
 }
 
 export interface PostList {
