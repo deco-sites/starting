@@ -8,7 +8,6 @@ export type Props = {
 
 export default function Markdown({ post }: Props) {
   const body = marky(post.data);
-  console.log('oi', body)
   return (
     <div
       class="markdown-body prose max-w-none"

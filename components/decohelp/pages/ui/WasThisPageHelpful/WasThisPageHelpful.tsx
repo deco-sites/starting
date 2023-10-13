@@ -26,7 +26,7 @@ export default function WasThisPageHelpfulContent({
   const buttonProps = WasThisPageHelpful?.Button;
   const label = WasThisPageHelpful?.Label ?? "";
   const text = WasThisPageHelpful?.Text ?? "";
-  
+
   return (
     <>
       {label && (

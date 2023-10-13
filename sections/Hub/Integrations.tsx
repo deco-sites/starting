@@ -18,7 +18,7 @@ export interface Props {
     show?: boolean;
     label?: string;
     href?: string;
-  }
+  };
   images?: Image[];
 }
 
@@ -96,15 +96,12 @@ function Integrations(props: Props) {
       <div class="container py-8 flex flex-col gap-8 lg:gap-12 lg:py-10 ">
         <div class="flex flex-col gap-8">
           <div class="flex flex-wrap justify-center gap-2 md:gap-4">
-            {list.map((element) =>
-              Logo(element)
-            )}
+            {list.map((element) => Logo(element))}
           </div>
         </div>
 
-        {
-          button?.show && (
-            <div class="flex items-center justify-center">
+        {button?.show && (
+          <div class="flex items-center justify-center">
             <a
               href={button?.href}
               target="_blank"
@@ -112,9 +109,8 @@ function Integrations(props: Props) {
             >
               {button?.label}
             </a>
-          </div>  
-          )
-        }
+          </div>
+        )}
       </div>
     </div>
   );

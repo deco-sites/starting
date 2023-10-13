@@ -18,7 +18,7 @@ export interface Props {
     show?: boolean;
     label?: string;
     href?: string;
-  }
+  };
 }
 
 const IMAGES = [
@@ -94,10 +94,9 @@ function Agencies(props: Props) {
             </div>
           ))}
         </div>
-        
-        {
-          button?.show && (
-            <div class="flex items-center justify-center">
+
+        {button?.show && (
+          <div class="flex items-center justify-center">
             <a
               href={button?.href}
               target="_blank"
@@ -105,9 +104,8 @@ function Agencies(props: Props) {
             >
               {button?.label}
             </a>
-          </div>  
-          )
-        }
+          </div>
+        )}
       </div>
     </div>
   );
