@@ -20,7 +20,11 @@ export type Props = {
 export default function BlogPostHeader(props: Props) {
   const url = props.page.url;
   const postsList = props.postList;
-  const post = postsList.posts.filter((x) => getBlogPath(x.path) === url)[0];
+  const locale = url.split("/")[1];
+
+  const post = postsList.posts.filter(
+    (x) => getBlogPath(x.path, locale) === url,
+  )[0];
 
   if (!post) {
     return <div>Post not found.</div>;
@@ -47,15 +51,11 @@ export default function BlogPostHeader(props: Props) {
               d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
             />
           </svg>
-          <span class="ml-4 group-hover:underline">
-            Voltar para o blog
-          </span>
+          <span class="ml-4 group-hover:underline">Voltar para o blog</span>
         </a>
       </div>
       <div class="w-full flex flex-col gap-4">
-        <h1 class="text-4xl md:text-5xl leading-[1.1">
-          {post.title}
-        </h1>
+        <h1 class="text-4xl md:text-5xl leading-[1.1">{post.title}</h1>
         <div class="text-2xl md:text-3xl leading-[1.18] text-[#66736C]">
           {post.descr}
         </div>
