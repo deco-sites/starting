@@ -32,7 +32,7 @@ export default function BlogPostHeader(props: Props) {
 
   return (
     <section class="max-w-2xl w-full px-5 md:px-0 mx-auto pt-16">
-      <div class="mb-8 sm:mb-11 mt-10 sm:mt-16">
+      <div class="mb-8 sm:mb-11 mt-16">
         <a
           class="group flex items-center cursor-pointer text-subdued"
           href="/pt/blog"
