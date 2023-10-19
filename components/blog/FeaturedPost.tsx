@@ -30,7 +30,7 @@ export default function FeaturedPost({
                   />
                 </span>
               </div>
-              <div class="flex flex-col space-y-2 lg:(mr-16 mt-16 mb-16)">
+              <div class="flex flex-col space-y-2 lg:mr-16 lg:mt-16 lg:mb-16">
                 <div class="text-scale-900 flex space-x-2 text-sm">
                   <p>{date}</p>
                   <p>•</p>
