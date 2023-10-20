@@ -10,8 +10,9 @@ import * as $4 from "./functions/LoadGitHubRawPostList.ts";
 import * as $$$0 from "./loaders/denoTopicsLoader.ts";
 import * as $$$1 from "./loaders/blogPostLoader.ts";
 import * as $$$2 from "./loaders/blogPostDetailsLoader.ts";
-import * as $$$3 from "./loaders/blogPostMarkdownLoader.ts";
-import * as $$$4 from "./loaders/denoLoader.ts";
+import * as $$$3 from "./loaders/featuredPosts.ts";
+import * as $$$4 from "./loaders/blogPostMarkdownLoader.ts";
+import * as $$$5 from "./loaders/denoLoader.ts";
 import * as $$$$0 from "./routes/index.tsx";
 import * as $$$$1 from "./routes/gfm.css.ts";
 import * as $$$$2 from "./routes/proxy/image/index.tsx";
@@ -298,9 +299,10 @@ const manifest = {
     "$live/loaders/workflows/get.ts": i1$3,
     "deco-sites/starting/loaders/blogPostDetailsLoader.ts": $$$2,
     "deco-sites/starting/loaders/blogPostLoader.ts": $$$1,
-    "deco-sites/starting/loaders/blogPostMarkdownLoader.ts": $$$3,
-    "deco-sites/starting/loaders/denoLoader.ts": $$$4,
+    "deco-sites/starting/loaders/blogPostMarkdownLoader.ts": $$$4,
+    "deco-sites/starting/loaders/denoLoader.ts": $$$5,
     "deco-sites/starting/loaders/denoTopicsLoader.ts": $$$0,
+    "deco-sites/starting/loaders/featuredPosts.ts": $$$3,
     "deco-sites/std/loaders/linxImpulse/autocompletes/popular.ts": i2$$$0,
     "deco-sites/std/loaders/linxImpulse/autocompletes/suggestions.ts": i2$$$1,
     "deco-sites/std/loaders/linxImpulse/pages/recommendations.ts": i2$$$2,
