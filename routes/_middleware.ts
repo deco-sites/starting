@@ -31,8 +31,6 @@ async function _handler(req: Request, ctx: MiddlewareHandlerContext<State>) {
       );
     case "/onboarding":
       return redirectTo("https://deco.cx/onboarding");
-    case "/hackathon":
-      return redirectTo("https://airtable.com/shrMMkEKoH1I2GLHA");
     case "/ifood":
       return redirectTo("https://airtable.com/shrquWd6sEWZQVdC4");
     case "/demo-pt":
