@@ -90,7 +90,7 @@ Embora essa abordagem ofereça um desempenho ideal, eliminando a necessidade de 
 
 ```tsx
 // sections/ProductDetails.tsx
-import { usePartial } from "apps/website/hooks/usePartial.ts";
+import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 export default function DetalhesDoProduto ({ skus }) {
   return (
@@ -101,13 +101,13 @@ export default function DetalhesDoProduto ({ skus }) {
       Cor:
       <ul>
         <li>
-          <button {...usePartial({ href: skus[0].url })}>Vermelho</button>
+          <button {...usePartialSection({ href: skus[0].url })}>Vermelho</button>
         </li>
         <li>
-          <button {...usePartial({ href: skus[1].url })}>Azul</button>
+          <button {...usePartialSection({ href: skus[1].url })}>Azul</button>
         </li>
         <li>
-          <button {...usePartial({ href: skus[2].url })}>Verde</button>
+          <button {...usePartialSection({ href: skus[2].url })}>Verde</button>
         </li>
       </
 
@@ -119,68 +119,35 @@ ul>
 
 A mágica aqui está no gancho `usePartial` combinado com a tag `button`. Este gancho aceita um parâmetro `href` e aprimora a tag do botão. Quando o usuário clica no botão, ele desencadeia a navegação do lado do cliente e aplica atualizações de diferenças de HTML. Essa abordagem elimina a necessidade de ilhas, aumentando o desempenho, ao mesmo tempo em que mantém a posição de rolagem para uma experiência do usuário aprimorada.
 
-### Melhorando Transições
-
-Como visto no exemplo anterior, ao clicar no seletor de SKU, toda a página é buscada, mesmo que apenas uma Section deva mudar. Para renderizar apenas uma Section específica da página, o gancho `usePartial` permite que você especifique o ID da Section para renderização parcial. Felizmente, esse ID é passado como props para todas as Sections. Ao refatorar o código da Section, conseguimos isso:
-
-```tsx
-// sections/ProductDetails.tsx
-import { usePartial } from "apps/website/hooks/usePartial.ts";
-
-export default function DetalhesDoProduto ({ skus, id }) {
-  return (
-    <div>
-      <ImageSlider sku={skuSelecionado} />
-      <ProductPrice sku={skuSelecionado}>
-
-      Cor:
-      <ul>
-        <li>
-          <button {...usePartial({ href: skus[0].url, id })}>Vermelho</button>
-        </li>
-        <li>
-          <button {...usePartial({ href: skus[1].url, id })}>Azul</button>
-        </li>
-        <li>
-          <button {...usePartial({ href: skus[2].url, id })}>Verde</button>
-        </li>
-      </ul>
-    </div>
-  )
-}
-```
-
-Com esse ajuste, apenas a Section `DetalhesDoProduto.tsx` é renderizada parcialmente, proporcionando uma experiência do usuário mais simplificada.
-
 ## Exemplo: Abas
 
 Embora tenhamos explorado como aproveitar os Partials para seletores de SKU, a navegação por abas apresenta um desafio único. As abas não possuem URLs canônicos, tornando difícil gerenciar transições de estado. No entanto, o gancho `usePartial` nos permite substituir as props que uma Section usa para renderização, simplificando o processo:
 
 ```tsx
-import { usePartial } from "apps/website/hooks/usePartial.ts";
+import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 interface Props {
   activeIndex: number
 }
 
-const SectionDeAbas = ({ activeIndex, id }) => {
+const SectionDeAbas = ({ activeIndex }) => {
   return (
     <div>
       <button 
         class={activeIndex === 0 && 'active'} 
-        {...usePartial<typeof SectionDeAbas>({ id, props: { activeIndex: 0 } })}
+        {...usePartialSection<typeof SectionDeAbas>({ props: { activeIndex: 0 } })}
       >
         Aba 1
       </button> 
       <button 
         class={activeIndex === 1 && 'active'} 
-        {...usePartial<typeof SectionDeAbas>({ id, props: { activeIndex: 1 } })}
+        {...usePartialSection<typeof SectionDeAbas>({ props: { activeIndex: 1 } })}
       >
         Aba 2
       </button> 
       <button 
         class={activeIndex === 2 && 'active'} 
-        {...usePartial<typeof SectionDeAbas>({ id, props: { activeIndex: 2 } })}
+        {...usePartialSection<typeof SectionDeAbas>({ props: { activeIndex: 2 } })}
       >
         Aba 3
       </button>
@@ -189,5 +156,5 @@ const SectionDeAbas = ({ activeIndex, id }) => {
 }
 ```
 
-Neste exemplo, a prop `activeIndex` é substituída a cada chamada de `usePartial`, simplificando o uso de Partials e eliminando a necessidade de gerenciar URLs e parâmetros de pesquisa em nossas Sections.
+Neste exemplo, a prop `activeIndex` é substituída a cada chamada de `usePartialSection`, simplificando o uso de Partials e eliminando a necessidade de gerenciar URLs e parâmetros de pesquisa em nossas Sections.
 
