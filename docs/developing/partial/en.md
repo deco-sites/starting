@@ -88,7 +88,7 @@ While this approach offers optimal performance by eliminating the need for islan
 
 ```tsx
 // sections/ProductDetails.tsx
-import { usePartial } from "apps/website/hooks/usePartial.ts";
+import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 export default function ProductDetails ({ skus }) {
   return (
@@ -99,13 +99,13 @@ export default function ProductDetails ({ skus }) {
       Color:
       <ul>
         <li>
-          <button {...usePartial({ href: skus[0].url })}>Red</button>
+          <button {...usePartialSection({ href: skus[0].url })}>Red</button>
         </li>
         <li>
-          <button {...usePartial({ href: skus[1].url })}>Blue</button>
+          <button {...usePartialSection({ href: skus[1].url })}>Blue</button>
         </li>
         <li>
-          <button {...usePartial({ href: skus[2].url })}>Green</button>
+          <button {...usePartialSection({ href: skus[2].url })}>Green</button>
         </li>
       </ul>
     </div>
@@ -115,68 +115,35 @@ export default function ProductDetails ({ skus }) {
 
 The magic here lies in the `usePartial` hook combined with the `button` tag. This hook accepts an `href` parameter and enhances the button tag. When the user clicks the button, it triggers client-side navigation and applies HTML diff updates. This approach eliminates the need for islands, boosting performance, while maintaining the scroll position for an improved user experience.
 
-### Improving Transitions Performance
-
-As seen in the previous example, clicking the SKU selector fetches the entire page, even though only a section should change. To render only a specific section of the page, the `usePartial` hook allows you to specify the section's ID for partial rendering. Fortunately, this ID is passed as props to all sections. By refactoring the section code, we achieve this:
-
-```tsx
-// sections/ProductDetails.tsx
-import { usePartial } from "apps/website/hooks/usePartial.ts";
-
-export default function ProductDetails ({ skus, id }) {
-  return (
-    <div>
-      <ImageSlider sku={selectedSku} />
-      <ProductPrice sku={selectedSku}>
-
-      Color:
-      <ul>
-        <li>
-          <button {...usePartial({ href: skus[0].url, id })}>Red</button>
-        </li>
-        <li>
-          <button {...usePartial({ href: skus[1].url, id })}>Blue</button>
-        </li>
-        <li>
-          <button {...usePartial({ href: skus[2].url, id })}>Green</button>
-        </li>
-      </ul>
-    </div>
-  )
-}
-```
-
-With this adjustment, only the `ProductDetails.tsx` section is partially rendered, providing a more streamlined user experience.
-
 ## Example: Tabs
 
-While we've explored how to leverage Partials for SKU selectors, tabbed navigation presents a unique challenge. Tabs lack canonical URLs, making it challenging to manage state transitions. However, the `usePartial` hook allows us to override the props that a section uses for rendering, simplifying the process:
+While we've explored how to leverage Partials for SKU selectors, tabbed navigation presents a unique challenge. Tabs lack canonical URLs, making it challenging to manage state transitions. However, the `usePartialSection` hook allows us to override the props that a section uses for rendering, simplifying the process:
 
 ```tsx
-import { usePartial } from "apps/website/hooks/usePartial.ts";
+import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 interface Props {
   activeIndex: number
 }
 
-const TabbedSection = ({ activeIndex, id }) => {
+const TabbedSection = ({ activeIndex }) => {
   return (
     <div>
       <button 
         class={activeIndex === 0 && 'active'} 
-        {...usePartial<typeof TabbedSection>({ id, props: { activeIndex: 0 } })}
+        {...usePartialSection<typeof TabbedSection>({ props: { activeIndex: 0 } })}
       >
         Tab 1
       </button> 
       <button 
         class={activeIndex === 1 && 'active'} 
-        {...usePartial<typeof TabbedSection>({ id, props: { activeIndex: 1 } })}
+        {...usePartialSection<typeof TabbedSection>({ props: { activeIndex: 1 } })}
       >
         Tab 2
       </button> 
       <button 
         class={activeIndex === 2 && 'active'} 
-        {...usePartial<typeof TabbedSection>({ id, props: { activeIndex: 2 } })}
+        {...usePartialSection<typeof TabbedSection>({ props: { activeIndex: 2 } })}
       >
         Tab 3
       </button>
@@ -185,4 +152,4 @@ const TabbedSection = ({ activeIndex, id }) => {
 }
 ```
 
-In this example, the `activeIndex` prop is overridden with each `usePartial` call, simplifying the use of Partials and eliminating the need to manage URLs and search parameters within our sections.
+In this example, the `activeIndex` prop is overridden with each `usePartialSection` call, simplifying the use of Partials and eliminating the need to manage URLs and search parameters within our sections.
