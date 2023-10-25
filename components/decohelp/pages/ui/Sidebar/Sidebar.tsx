@@ -83,10 +83,6 @@ const isTopicActive = (
   openTopicIndex: number | null,
   index: number,
 ): boolean => {
-  topic.SubTopics.some(
-    (subTopic) =>
-      subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === currentSlug,
-  );
   const isOpen = openTopicIndex === index;
 
   return isOpen;
@@ -123,6 +119,17 @@ export default function Sidebar({
     const pathParts = currentPath.split("/");
     const slug = pathParts[pathParts.length - 1].toLowerCase();
     setCurrentSlug(slug);
+    if (Topics) {
+      Topics.forEach((topic, index) => {
+        const isActive = topic.SubTopics.some(
+          (subTopic) =>
+            subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug,
+        );
+        if (isActive) {
+          setOpenTopicIndex(index);
+        }
+      });
+    }
   }, []);
 
   const subtitleSlug = LinkSubtitle?.split("/").pop()?.toLowerCase();
