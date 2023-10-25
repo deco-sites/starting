@@ -1,5 +1,4 @@
 import { useId } from "preact/hooks";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import Slider from "deco-sites/starting/components/ui/Slider.tsx";
 import SliderControllerJS from "deco-sites/starting/islands/SliderJS.tsx";
@@ -35,9 +34,8 @@ export default function Carousel({ bottomPadding, cards, locale }: Props) {
           {cards.map((card) => {
             return (
               <a
-                href={""}
-                target="_blank"
-                class="rounded-[8px] flex w-[420px] h-full"
+              href={getBlogPath(card.path, locale)}
+              class="rounded-[8px] flex w-[420px] h-full"
               >
                 <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden">
                   <div>
