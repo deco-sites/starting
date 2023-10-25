@@ -11,7 +11,7 @@ export interface Doc {
 }
 
 const loader = async (
-  props: { urlPattern: string; group: number; docs?: Doc[] },
+  props: { urlPattern: string; group: number; docs?: Doc[], docsPath?: string },
   _req: Request,
   _ctx: LoaderContext,
 ): Promise<MDFileContent> => {
@@ -19,9 +19,10 @@ const loader = async (
   const slug = (match && match[props.group]) ?? "/404";
   const [language, ...rest] = slug.split("/");
   const documentSlug = rest.join("/");
+  const path = props.docsPath ?? "docs";
 
   const url = new URL(
-    `../docs/${documentSlug}/${language}.md`,
+    `../${path}/${documentSlug}/${language}.md`,
     import.meta.url,
   );
 
