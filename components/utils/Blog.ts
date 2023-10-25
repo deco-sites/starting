@@ -1,3 +1,5 @@
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+
 export interface PostBody {
   data: string;
 }
@@ -5,7 +7,7 @@ export interface PostBody {
 export interface Post {
   title: string;
   path: string;
-  img: string;
+  img: LiveImage;
   tags?: string[];
   descr: string;
   date: string;
@@ -21,7 +23,7 @@ export interface Post {
   seo?: {
     title?: string;
     description?: string;
-    image?: string;
+    image?: LiveImage;
     canonical?: string;
   };
 }
