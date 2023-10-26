@@ -11,7 +11,7 @@ export interface Doc {
 }
 
 const loader = async (
-  props: { urlPattern: string; group: number; docs?: Doc[], docsPath?: string },
+  props: { urlPattern: string; group: number; docs?: Doc[]; docsPath?: string },
   _req: Request,
   _ctx: LoaderContext,
 ): Promise<MDFileContent> => {
@@ -28,7 +28,6 @@ const loader = async (
 
   const doc = props.docs?.find((doc) => doc.path === slug);
 
-  console.log(slug);
   if (doc) {
     return { content: doc.content };
   }
