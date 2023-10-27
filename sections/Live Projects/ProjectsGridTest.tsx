@@ -104,7 +104,7 @@ function TemplatesGrid(props: Props) {
   return (
     <div className="flex flex-col items-center mx-8 pb-10 md:mx-auto md:px-14 md:pb-16 lg:px-16 gap-y-10 lg:pb-20 lg:max-w-[1440px] xl:px-16">
       <div id="index" className="flex flex-start gap-x-12 h-[32px] w-full px-4">
-        <div className="flex flex-start border-b-2 gap-x-12 h-[32px] w-full px-4">
+        <div className="flex flex-start border-b-2 gap-x-8 h-[32px] w-full px-4">
 
         </div>
       </div>
