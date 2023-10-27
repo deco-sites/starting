@@ -2,6 +2,7 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+<<<<<<< HEAD
 import * as $0 from "./functions/LoadGitHubRawPostList.ts";
 import * as $1 from "./functions/LoadPageProps.ts";
 import * as $2 from "./functions/LoadGitHubRaw.ts";
@@ -120,6 +121,129 @@ import * as $$$$$$$$72 from "./sections/Case/ArticleQuote.tsx";
 import * as $$$$$$$$73 from "./sections/Case/ArticleBannerCTA.tsx";
 import * as $$$$$$$$74 from "./sections/Case/ArticleNumbers.tsx";
 import * as $$$$$$$$75 from "./sections/Divider.tsx";
+=======
+import * as $0 from "./functions/LoadGitHubRaw.ts";
+import * as $1 from "./functions/LoadGitHubRawPost.ts";
+import * as $2 from "./functions/LoadGitHubRawPostList.ts";
+import * as $3 from "./functions/LoadPageProps.ts";
+import * as $4 from "./functions/psiRankingList.ts";
+import * as $$$0 from "./loaders/blogPostDetailsLoader.ts";
+import * as $$$1 from "./loaders/blogPostLoader.ts";
+import * as $$$2 from "./loaders/blogPostMarkdownLoader.ts";
+import * as $$$3 from "./loaders/denoLoader.ts";
+import * as $$$4 from "./loaders/denoTopicsLoader.ts";
+import * as $$$$0 from "./routes/admin/[...catchall].tsx";
+import * as $$$$1 from "./routes/api/calc.tsx";
+import * as $$$$2 from "./routes/api/case.tsx";
+import * as $$$$3 from "./routes/api/leads.tsx";
+import * as $$$$4 from "./routes/api/ranking.ts";
+import * as $$$$5 from "./routes/api/webinar.tsx";
+import * as $$$$6 from "./routes/docs/[...slug].tsx";
+import * as $$$$7 from "./routes/gfm.css.ts";
+import * as $$$$8 from "./routes/hackathon4.ts";
+import * as $$$$9 from "./routes/index.tsx";
+import * as $$$$10 from "./routes/proxy/image/index.tsx";
+import * as $$$$11 from "./routes/_app.tsx";
+import * as $$$$12 from "./routes/_middleware.ts";
+import * as $$$$$0 from "./islands/CampHeader.tsx";
+import * as $$$$$1 from "./islands/CampMentor.tsx";
+import * as $$$$$2 from "./islands/Case.tsx";
+import * as $$$$$3 from "./islands/ChangeDevice.tsx";
+import * as $$$$$4 from "./islands/ChangeTheme.tsx";
+import * as $$$$$5 from "./islands/Cms.tsx";
+import * as $$$$$6 from "./islands/ContactUs.tsx";
+import * as $$$$$7 from "./islands/Content.tsx";
+import * as $$$$$8 from "./islands/FaviconImage.tsx";
+import * as $$$$$9 from "./islands/Header.tsx";
+import * as $$$$$10 from "./islands/HelpFaq.tsx";
+import * as $$$$$11 from "./islands/ImpactCalculator.tsx";
+import * as $$$$$12 from "./islands/LiveProjects.tsx";
+import * as $$$$$13 from "./islands/OnThisPage.tsx";
+import * as $$$$$14 from "./islands/PopularDocuments.tsx";
+import * as $$$$$15 from "./islands/RankingAnalyze.tsx";
+import * as $$$$$16 from "./islands/RankingHeader.tsx";
+import * as $$$$$17 from "./islands/Sidebar.tsx";
+import * as $$$$$18 from "./islands/SliderJS.tsx";
+import * as $$$$$$$$0 from "./sections/About.tsx";
+import * as $$$$$$$$1 from "./sections/Benefits.tsx";
+import * as $$$$$$$$2 from "./sections/BlogHeader.tsx";
+import * as $$$$$$$$3 from "./sections/BlogPostHeader.tsx";
+import * as $$$$$$$$4 from "./sections/BlogPostList.tsx";
+import * as $$$$$$$$5 from "./sections/BlogPostSEO.tsx";
+import * as $$$$$$$$6 from "./sections/CampComments.tsx";
+import * as $$$$$$$$7 from "./sections/CampHero.tsx";
+import * as $$$$$$$$8 from "./sections/CampMentor.tsx";
+import * as $$$$$$$$9 from "./sections/CampRegistration.tsx";
+import * as $$$$$$$$10 from "./sections/CampSteps.tsx";
+import * as $$$$$$$$11 from "./sections/Carousel.tsx";
+import * as $$$$$$$$12 from "./sections/Case/ArticleBannerCTA.tsx";
+import * as $$$$$$$$13 from "./sections/Case/ArticleDivider.tsx";
+import * as $$$$$$$$14 from "./sections/Case/ArticleHeader.tsx";
+import * as $$$$$$$$15 from "./sections/Case/ArticleNumbers.tsx";
+import * as $$$$$$$$16 from "./sections/Case/ArticleParagraph.tsx";
+import * as $$$$$$$$17 from "./sections/Case/ArticleQuote.tsx";
+import * as $$$$$$$$18 from "./sections/Case/ArticleVideo.tsx";
+import * as $$$$$$$$19 from "./sections/Case/ArticleYoutubeVideo.tsx";
+import * as $$$$$$$$20 from "./sections/Case/Case.tsx";
+import * as $$$$$$$$21 from "./sections/Cms.tsx";
+import * as $$$$$$$$22 from "./sections/Community.tsx";
+import * as $$$$$$$$23 from "./sections/ContactUs.tsx";
+import * as $$$$$$$$24 from "./sections/Content.tsx";
+import * as $$$$$$$$25 from "./sections/Delight.tsx";
+import * as $$$$$$$$26 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$$$$27 from "./sections/Differentials.tsx";
+import * as $$$$$$$$28 from "./sections/Divider.tsx";
+import * as $$$$$$$$29 from "./sections/Faq.tsx";
+import * as $$$$$$$$30 from "./sections/Features.tsx";
+import * as $$$$$$$$31 from "./sections/Footer.tsx";
+import * as $$$$$$$$32 from "./sections/FooterBigLogo.tsx";
+import * as $$$$$$$$33 from "./sections/General/Spacer.tsx";
+import * as $$$$$$$$34 from "./sections/Head.tsx";
+import * as $$$$$$$$35 from "./sections/Header.tsx";
+import * as $$$$$$$$36 from "./sections/HelpBlogPosts.tsx";
+import * as $$$$$$$$37 from "./sections/HelpFaq.tsx";
+import * as $$$$$$$$38 from "./sections/HeroPost.tsx";
+import * as $$$$$$$$39 from "./sections/Home/Brands.tsx";
+import * as $$$$$$$$40 from "./sections/HowCanWeHelp.tsx";
+import * as $$$$$$$$41 from "./sections/Hub/Advantage.tsx";
+import * as $$$$$$$$42 from "./sections/Hub/Agencies.tsx";
+import * as $$$$$$$$43 from "./sections/Hub/Creator.tsx";
+import * as $$$$$$$$44 from "./sections/Hub/Heading.tsx";
+import * as $$$$$$$$45 from "./sections/Hub/Integrations.tsx";
+import * as $$$$$$$$46 from "./sections/Hub/SectionSubtitle.tsx";
+import * as $$$$$$$$47 from "./sections/Hub/SectionTitle.tsx";
+import * as $$$$$$$$48 from "./sections/Hub/TemplateIframe.tsx";
+import * as $$$$$$$$49 from "./sections/Hub/TemplatePreview.tsx";
+import * as $$$$$$$$50 from "./sections/Hub/TemplatesGrid.tsx";
+import * as $$$$$$$$51 from "./sections/ImpactCalculator.tsx";
+import * as $$$$$$$$52 from "./sections/Integration.tsx";
+import * as $$$$$$$$53 from "./sections/JoinOurCommunity.tsx";
+import * as $$$$$$$$54 from "./sections/Links.tsx";
+import * as $$$$$$$$55 from "./sections/Live Projects/Hero.tsx";
+import * as $$$$$$$$56 from "./sections/Live Projects/ProjectsGrid.tsx";
+import * as $$$$$$$$57 from "./sections/Live Projects/ProjectsGridTest.tsx";
+import * as $$$$$$$$58 from "./sections/MainBanner.tsx";
+import * as $$$$$$$$59 from "./sections/Markdown.tsx";
+import * as $$$$$$$$60 from "./sections/MarkdownContent.tsx";
+import * as $$$$$$$$61 from "./sections/OnThisPage.tsx";
+import * as $$$$$$$$62 from "./sections/Page.tsx";
+import * as $$$$$$$$63 from "./sections/Partner.tsx";
+import * as $$$$$$$$64 from "./sections/PopularDocuments.tsx";
+import * as $$$$$$$$65 from "./sections/PopularTopics.tsx";
+import * as $$$$$$$$66 from "./sections/Pricing.tsx";
+import * as $$$$$$$$67 from "./sections/PricingValue.tsx";
+import * as $$$$$$$$68 from "./sections/QuillText.tsx";
+import * as $$$$$$$$69 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$$$70 from "./sections/RankingHeader.tsx";
+import * as $$$$$$$$71 from "./sections/RankingList.tsx";
+import * as $$$$$$$$72 from "./sections/SectionList.tsx";
+import * as $$$$$$$$73 from "./sections/Sidebar.tsx";
+import * as $$$$$$$$74 from "./sections/StripePricing.tsx";
+import * as $$$$$$$$75 from "./sections/Thanks.tsx";
+import * as $$$$$$$$76 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$$77 from "./sections/Webinar/Content.tsx";
+import * as $$$$$$$$78 from "./sections/Webinar/Hero.tsx";
+>>>>>>> Fix: Adding Island/Removing unwanted content
 import * as $$$$$$$$$0 from "./matchers/MatchPath.ts";
 import * as i1$0 from "$live/loaders/secret.ts";
 import * as i1$1 from "$live/loaders/state.ts";
@@ -260,11 +384,19 @@ import * as i2$$$$$$20 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts"
 
 const manifest = {
   "functions": {
+<<<<<<< HEAD
     "deco-sites/starting/functions/LoadGitHubRaw.ts": $2,
     "deco-sites/starting/functions/LoadGitHubRawPost.ts": $4,
     "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $0,
     "deco-sites/starting/functions/LoadPageProps.ts": $1,
     "deco-sites/starting/functions/psiRankingList.ts": $3,
+=======
+    "deco-sites/starting/functions/LoadGitHubRaw.ts": $0,
+    "deco-sites/starting/functions/LoadGitHubRawPost.ts": $1,
+    "deco-sites/starting/functions/LoadGitHubRawPostList.ts": $2,
+    "deco-sites/starting/functions/LoadPageProps.ts": $3,
+    "deco-sites/starting/functions/psiRankingList.ts": $4,
+>>>>>>> Fix: Adding Island/Removing unwanted content
     "deco-sites/std/functions/butterCMSAds.ts": i2$0,
     "deco-sites/std/functions/butterCMSBrands.ts": i2$1,
     "deco-sites/std/functions/butterCMSCategories.ts": i2$2,
@@ -297,12 +429,20 @@ const manifest = {
     "$live/loaders/state.ts": i1$1,
     "$live/loaders/workflows/events.ts": i1$2,
     "$live/loaders/workflows/get.ts": i1$3,
+<<<<<<< HEAD
     "deco-sites/starting/loaders/blogPostDetailsLoader.ts": $$$1,
     "deco-sites/starting/loaders/blogPostLoader.ts": $$$4,
     "deco-sites/starting/loaders/blogPostMarkdownLoader.ts": $$$5,
     "deco-sites/starting/loaders/denoLoader.ts": $$$0,
     "deco-sites/starting/loaders/denoTopicsLoader.ts": $$$2,
     "deco-sites/starting/loaders/featuredPosts.ts": $$$3,
+=======
+    "deco-sites/starting/loaders/blogPostDetailsLoader.ts": $$$0,
+    "deco-sites/starting/loaders/blogPostLoader.ts": $$$1,
+    "deco-sites/starting/loaders/blogPostMarkdownLoader.ts": $$$2,
+    "deco-sites/starting/loaders/denoLoader.ts": $$$3,
+    "deco-sites/starting/loaders/denoTopicsLoader.ts": $$$4,
+>>>>>>> Fix: Adding Island/Removing unwanted content
     "deco-sites/std/loaders/linxImpulse/autocompletes/popular.ts": i2$$$0,
     "deco-sites/std/loaders/linxImpulse/autocompletes/suggestions.ts": i2$$$1,
     "deco-sites/std/loaders/linxImpulse/pages/recommendations.ts": i2$$$2,
@@ -338,6 +478,7 @@ const manifest = {
     "deco-sites/std/loaders/x/redirectsFromCsv.ts": i2$$$30,
   },
   "routes": {
+<<<<<<< HEAD
     "./routes/_app.tsx": $$$$10,
     "./routes/_middleware.ts": $$$$9,
     "./routes/admin/[...catchall].tsx": $$$$8,
@@ -371,6 +512,42 @@ const manifest = {
     "./islands/RankingHeader.tsx": $$$$$8,
     "./islands/Sidebar.tsx": $$$$$16,
     "./islands/SliderJS.tsx": $$$$$11,
+=======
+    "./routes/_app.tsx": $$$$11,
+    "./routes/_middleware.ts": $$$$12,
+    "./routes/admin/[...catchall].tsx": $$$$0,
+    "./routes/api/calc.tsx": $$$$1,
+    "./routes/api/case.tsx": $$$$2,
+    "./routes/api/leads.tsx": $$$$3,
+    "./routes/api/ranking.ts": $$$$4,
+    "./routes/api/webinar.tsx": $$$$5,
+    "./routes/docs/[...slug].tsx": $$$$6,
+    "./routes/gfm.css.ts": $$$$7,
+    "./routes/hackathon4.ts": $$$$8,
+    "./routes/index.tsx": $$$$9,
+    "./routes/proxy/image/index.tsx": $$$$10,
+  },
+  "islands": {
+    "./islands/CampHeader.tsx": $$$$$0,
+    "./islands/CampMentor.tsx": $$$$$1,
+    "./islands/Case.tsx": $$$$$2,
+    "./islands/ChangeDevice.tsx": $$$$$3,
+    "./islands/ChangeTheme.tsx": $$$$$4,
+    "./islands/Cms.tsx": $$$$$5,
+    "./islands/ContactUs.tsx": $$$$$6,
+    "./islands/Content.tsx": $$$$$7,
+    "./islands/FaviconImage.tsx": $$$$$8,
+    "./islands/Header.tsx": $$$$$9,
+    "./islands/HelpFaq.tsx": $$$$$10,
+    "./islands/ImpactCalculator.tsx": $$$$$11,
+    "./islands/LiveProjects.tsx": $$$$$12,
+    "./islands/OnThisPage.tsx": $$$$$13,
+    "./islands/PopularDocuments.tsx": $$$$$14,
+    "./islands/RankingAnalyze.tsx": $$$$$15,
+    "./islands/RankingHeader.tsx": $$$$$16,
+    "./islands/Sidebar.tsx": $$$$$17,
+    "./islands/SliderJS.tsx": $$$$$18,
+>>>>>>> Fix: Adding Island/Removing unwanted content
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i1$$$$0,
@@ -378,6 +555,7 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i1$$$$2,
     "$live/sections/Slot.tsx": i1$$$$3,
     "$live/sections/UseSlot.tsx": i1$$$$4,
+<<<<<<< HEAD
     "deco-sites/starting/sections/About.tsx": $$$$$$$$9,
     "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$47,
     "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$7,
@@ -454,6 +632,88 @@ const manifest = {
     "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$11,
     "deco-sites/starting/sections/Webinar/Content.tsx": $$$$$$$$52,
     "deco-sites/starting/sections/Webinar/Hero.tsx": $$$$$$$$53,
+=======
+    "deco-sites/starting/sections/About.tsx": $$$$$$$$0,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$$$1,
+    "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$$$2,
+    "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$$$3,
+    "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$$$4,
+    "deco-sites/starting/sections/BlogPostSEO.tsx": $$$$$$$$5,
+    "deco-sites/starting/sections/CampComments.tsx": $$$$$$$$6,
+    "deco-sites/starting/sections/CampHero.tsx": $$$$$$$$7,
+    "deco-sites/starting/sections/CampMentor.tsx": $$$$$$$$8,
+    "deco-sites/starting/sections/CampRegistration.tsx": $$$$$$$$9,
+    "deco-sites/starting/sections/CampSteps.tsx": $$$$$$$$10,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$$$11,
+    "deco-sites/starting/sections/Case/ArticleBannerCTA.tsx": $$$$$$$$12,
+    "deco-sites/starting/sections/Case/ArticleDivider.tsx": $$$$$$$$13,
+    "deco-sites/starting/sections/Case/ArticleHeader.tsx": $$$$$$$$14,
+    "deco-sites/starting/sections/Case/ArticleNumbers.tsx": $$$$$$$$15,
+    "deco-sites/starting/sections/Case/ArticleParagraph.tsx": $$$$$$$$16,
+    "deco-sites/starting/sections/Case/ArticleQuote.tsx": $$$$$$$$17,
+    "deco-sites/starting/sections/Case/ArticleVideo.tsx": $$$$$$$$18,
+    "deco-sites/starting/sections/Case/ArticleYoutubeVideo.tsx": $$$$$$$$19,
+    "deco-sites/starting/sections/Case/Case.tsx": $$$$$$$$20,
+    "deco-sites/starting/sections/Cms.tsx": $$$$$$$$21,
+    "deco-sites/starting/sections/Community.tsx": $$$$$$$$22,
+    "deco-sites/starting/sections/ContactUs.tsx": $$$$$$$$23,
+    "deco-sites/starting/sections/Content.tsx": $$$$$$$$24,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$$$25,
+    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$$$26,
+    "deco-sites/starting/sections/Differentials.tsx": $$$$$$$$27,
+    "deco-sites/starting/sections/Divider.tsx": $$$$$$$$28,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$$$29,
+    "deco-sites/starting/sections/Features.tsx": $$$$$$$$30,
+    "deco-sites/starting/sections/Footer.tsx": $$$$$$$$31,
+    "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$$$32,
+    "deco-sites/starting/sections/General/Spacer.tsx": $$$$$$$$33,
+    "deco-sites/starting/sections/Head.tsx": $$$$$$$$34,
+    "deco-sites/starting/sections/Header.tsx": $$$$$$$$35,
+    "deco-sites/starting/sections/HelpBlogPosts.tsx": $$$$$$$$36,
+    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$$$37,
+    "deco-sites/starting/sections/HeroPost.tsx": $$$$$$$$38,
+    "deco-sites/starting/sections/Home/Brands.tsx": $$$$$$$$39,
+    "deco-sites/starting/sections/HowCanWeHelp.tsx": $$$$$$$$40,
+    "deco-sites/starting/sections/Hub/Advantage.tsx": $$$$$$$$41,
+    "deco-sites/starting/sections/Hub/Agencies.tsx": $$$$$$$$42,
+    "deco-sites/starting/sections/Hub/Creator.tsx": $$$$$$$$43,
+    "deco-sites/starting/sections/Hub/Heading.tsx": $$$$$$$$44,
+    "deco-sites/starting/sections/Hub/Integrations.tsx": $$$$$$$$45,
+    "deco-sites/starting/sections/Hub/SectionSubtitle.tsx": $$$$$$$$46,
+    "deco-sites/starting/sections/Hub/SectionTitle.tsx": $$$$$$$$47,
+    "deco-sites/starting/sections/Hub/TemplateIframe.tsx": $$$$$$$$48,
+    "deco-sites/starting/sections/Hub/TemplatePreview.tsx": $$$$$$$$49,
+    "deco-sites/starting/sections/Hub/TemplatesGrid.tsx": $$$$$$$$50,
+    "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$$$51,
+    "deco-sites/starting/sections/Integration.tsx": $$$$$$$$52,
+    "deco-sites/starting/sections/JoinOurCommunity.tsx": $$$$$$$$53,
+    "deco-sites/starting/sections/Links.tsx": $$$$$$$$54,
+    "deco-sites/starting/sections/Live Projects/Hero.tsx": $$$$$$$$55,
+    "deco-sites/starting/sections/Live Projects/ProjectsGrid.tsx": $$$$$$$$56,
+    "deco-sites/starting/sections/Live Projects/ProjectsGridTest.tsx":
+      $$$$$$$$57,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$$$58,
+    "deco-sites/starting/sections/Markdown.tsx": $$$$$$$$59,
+    "deco-sites/starting/sections/MarkdownContent.tsx": $$$$$$$$60,
+    "deco-sites/starting/sections/OnThisPage.tsx": $$$$$$$$61,
+    "deco-sites/starting/sections/Page.tsx": $$$$$$$$62,
+    "deco-sites/starting/sections/Partner.tsx": $$$$$$$$63,
+    "deco-sites/starting/sections/PopularDocuments.tsx": $$$$$$$$64,
+    "deco-sites/starting/sections/PopularTopics.tsx": $$$$$$$$65,
+    "deco-sites/starting/sections/Pricing.tsx": $$$$$$$$66,
+    "deco-sites/starting/sections/PricingValue.tsx": $$$$$$$$67,
+    "deco-sites/starting/sections/QuillText.tsx": $$$$$$$$68,
+    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$$$69,
+    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$$$70,
+    "deco-sites/starting/sections/RankingList.tsx": $$$$$$$$71,
+    "deco-sites/starting/sections/SectionList.tsx": $$$$$$$$72,
+    "deco-sites/starting/sections/Sidebar.tsx": $$$$$$$$73,
+    "deco-sites/starting/sections/StripePricing.tsx": $$$$$$$$74,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$$$75,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$$$76,
+    "deco-sites/starting/sections/Webinar/Content.tsx": $$$$$$$$77,
+    "deco-sites/starting/sections/Webinar/Hero.tsx": $$$$$$$$78,
+>>>>>>> Fix: Adding Island/Removing unwanted content
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
