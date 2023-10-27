@@ -42,7 +42,7 @@ export default function Carousel({ bottomPadding, cards, locale }: Props) {
                     <Image
                       src={card.img}
                       fetchPriority={"low"}
-                      class="w-full aspect-[16/9]"
+                      class="w-full aspect-[16/9] object-cover"
                       preload={false}
                       loading={"lazy"}
                       width={IMAGE_WIDTH}
