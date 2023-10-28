@@ -1,6 +1,6 @@
 import type { Handlers } from "$fresh/server.ts";
 
-import type { LiveState } from "$live/types.ts";
+import type { LiveState } from "deco/types.ts";
 
 const ZAPIER_WEBHOOK = Deno.env.get("ZAPIER_WEBHOOK2");
 

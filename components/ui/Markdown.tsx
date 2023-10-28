@@ -1,6 +1,6 @@
 import { marky } from "https://deno.land/x/marky@v1.1.6/mod.ts";
 import defaultParsers from "https://deno.land/x/marky@v1.1.6/parsers.ts";
-import { LoaderReturnType } from "$live/types.ts";
+import { LoaderReturnType } from "deco/types.ts";
 import { PostBody } from "../utils/Blog.ts";
 
 export type Props = {

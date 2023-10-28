@@ -1,4 +1,4 @@
-import type { LoaderFunction } from "$live/types.ts";
+import type { LoaderFunction } from "deco/types.ts";
 import { PathObj, PropNull } from "../sections/BlogPostHeader.tsx";
 
 /**

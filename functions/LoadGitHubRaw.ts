@@ -1,4 +1,4 @@
-import type { LoaderFunction } from "$live/types.ts";
+import type { LoaderFunction } from "deco/types.ts";
 
 export interface Props {
   /** @description Complete user/repo format */

@@ -10,7 +10,7 @@ import {
   ContentType,
   Props,
 } from "deco-sites/starting/components/decohelp/pages/interfaces.ts";
-import { useLivePageContext } from "$live/pages/LivePage.tsx";
+import { useLivePageContext } from "deco/pages/LivePage.tsx";
 
 function renderContentItem(item: ContentType, idx: number) {
   const { renderSection } = useLivePageContext();

@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-import { LoaderReturnType } from "$live/types.ts";
+import { LoaderReturnType } from "deco/types.ts";
 import { MDFileContent } from "deco-sites/starting/components/ui/Types.tsx";
 
 import {
