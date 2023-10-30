@@ -33,7 +33,6 @@ export default function DocsPage(
   return (
     <>
       <Head>
-        <title>{getTitle(body) ?? "Not Found"} | deco.cx docs</title>
         <link rel="stylesheet" href={`/gfm.css`} />
         {description && <meta name="description" content={description} />}
         <style
@@ -81,7 +80,7 @@ export default function DocsPage(
         </style>
       </Head>
       <div class="flex flex-col min-h-screen">
-        <div class="flex-1 mt-16">
+        <div class="flex-1">
           <div class="mx-auto max-w-screen-lg px-4 flex gap-6">
             <Content content={frontMatterContent} />
           </div>
