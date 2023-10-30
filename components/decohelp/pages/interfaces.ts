@@ -4,7 +4,7 @@ import Image from "deco-sites/std/components/Image.tsx";
 import { Section } from "$live/blocks/section.ts";
 
 export interface Props {
-  Title: string;
+  Title?: string;
   Version?: string;
   /** @description Breadcrumb label for the home link */
   homeLabel: string;
