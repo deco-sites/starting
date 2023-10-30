@@ -2,7 +2,7 @@
   "imports": {
     "deco-sites/starting/": "./",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.22.4/",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.35.5/",
+    "$live/": "https://denopkg.com/deco-cx/deco@1.44.1/",
     "$store/": "./",
     "deco/": "https://denopkg.com/deco-cx/deco@1.44.1/",
     "apps/": "https://denopkg.com/deco-cx/apps@0.17.2/",
