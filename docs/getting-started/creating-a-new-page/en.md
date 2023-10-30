@@ -6,7 +6,7 @@ You should be familiar with the core concepts of [Blocks](/docs/en/concepts/bloc
 
 **Pages** have a dedicated section in deco.cx's Admin and you can access it via the top menu.
 
-<img width="1001" alt="image" src="/docs/creating-new-page/pages-menu.png">
+![Creating pages](/docs/creating-new-page/pages-menu.png)
 
 In this page, you see all the pages published on the site, alongside the path which they're accessible to your users.
 
@@ -17,13 +17,12 @@ To create a new page on your site, **click on the Create button in the top right
 - **Name:** meaningful name to understand what that page represents. Doesn't impact page's UI or metadata.
 - **Path:** represents the URL which that page will be accesible for your users. It can be static (e.g: `/posts`) or dynamic (e.g: `/posts/:slug`, `/search/*`), following [URLPattern](http://mdn.io/urlpattern) schema.
 - **Template** (optional): copy sections from a page that already exists. 
-- **AI Prompt** (optional): provide a suggestion to enable the AI to modify your page.
 
 You'll be redirected to the page editor after the page is created. Now it's possible to edit and add new Sections available in your site and setup the page just as you want it.
 
 To add a new Section to the page, click on **Add Sections** button in the editor and check all the available options.
 
-<img width="1512" alt="image" src="/docs/creating-new-page/add-section.png">
+![Creating pages](/docs/creating-new-page/add-section.png)
 
 > If you want to develop/code a new Section, check our [Developing Guide](/docs/en/developing/setup).
 
