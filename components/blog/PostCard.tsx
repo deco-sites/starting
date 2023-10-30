@@ -6,9 +6,9 @@ const IMAGE_WIDTH = 360;
 
 export function BlogPostCard(props: Post) {
   return (
-    <a href={props.path} class="group mx-auto duration-200">
+    <a href={props.path} class="group duration-200">
       <div class="flex flex-col w-full text-deco-dark-green mb-10 sm:mb-20">
-        <div class="overflow-hidden rounded-lg ">
+        <div class="overflow-hidden rounded-lg">
           <Image
             src={props.img}
             class="w-full aspect-[4/3] transition-transform duration-300 transform group-hover:scale-105 object-cover"

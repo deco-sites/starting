@@ -1,26 +1,22 @@
 import { useId } from "preact/hooks";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import Slider from "deco-sites/starting/components/ui/Slider.tsx";
 import SliderControllerJS from "deco-sites/starting/islands/SliderJS.tsx";
 import { getAspectRatio } from "deco-sites/starting/sdk/utils.ts";
+import {
+  Post,
+  getBlogPath,
+} from "deco-sites/starting/components/utils/Blog.ts";
 
 const IMAGE_WIDTH = 360;
 
 export interface Props {
   bottomPadding?: string;
-  cards: Array<{
-    title: string;
-    text: string;
-    image: LiveImage;
-    author: string;
-    url: string;
-    date: string;
-    writtenByLabel: string;
-  }>;
+  cards: Post[];
+  locale?: string;
 }
 
-export default function Carousel({ bottomPadding, cards }: Props) {
+export default function Carousel({ bottomPadding, cards, locale }: Props) {
   const id = useId();
 
   return (
@@ -31,22 +27,22 @@ export default function Carousel({ bottomPadding, cards }: Props) {
     >
       <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto">
         <Slider
-          class="relative gap-6 col-span-full row-start-2 row-end-5 hidden-scroll"
-          snap="opacity-50 disabled:opacity-100 focus:outline-none"
+          class="relative gap-6 col-span-full row-start-2 row-end-5 auto-rows-fr hidden-scroll"
+          itemClass="h-full"
+          snap="opacity-50 disabled:opacity-100 focus:outline-none h-full"
         >
-          {cards?.map((card) => {
+          {cards.map((card) => {
             return (
               <a
-                href={card.url}
-                target="_blank"
-                class="rounded-[8px] block w-[420px]"
+              href={getBlogPath(card.path, locale)}
+              class="rounded-[8px] flex w-[420px] h-full"
               >
-                <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden h-[475px] md:h-[505px]">
+                <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden">
                   <div>
                     <Image
-                      src={card.image}
+                      src={card.img}
                       fetchPriority={"low"}
-                      class="w-full aspect-[16/9]"
+                      class="w-full aspect-[16/9] object-cover"
                       preload={false}
                       loading={"lazy"}
                       width={IMAGE_WIDTH}
@@ -55,18 +51,24 @@ export default function Carousel({ bottomPadding, cards }: Props) {
                   </div>
                   <div class="flex flex-col gap-4 justify-between py-8 px-6 rounded-[8px] h-[47%]">
                     <div class="flex flex-col gap-4">
-                      <p class="bg-black text-white px-3 w-[fit-content] font-normal not-italic text-[14px] z-10 rounded-[26px] flex items-center">
+                      <div class="flex flex-row gap-2">
+                        {card.tags?.map((tag) => (
+                          <p class="bg-black text-white px-3 w-[fit-content] font-normal not-italic text-[14px] z-10 rounded-[26px] flex items-center">
+                            {tag}
+                          </p>
+                        ))}
+                      </div>
+                      <h1 class="font-normal not-italic text-left text-[20px] text-black opacity-[80%]leading-[1.18]">
                         {card.title}
-                      </p>
-                      <p class="font-normal not-italic text-left text-[20px] text-black opacity-[80%]">
-                        {card.text}
-                      </p>
+                      </h1>
+                      <div class="text-base text-[#66736C] leading-[1.5] line-clamp-2 overflow-ellipsis text-left">
+                        {card.descr}
+                      </div>
                     </div>
                     <div class="flex flex-col gap-2">
                       <p class="text-[#66736C] text-left">
-                        {card.writtenByLabel} {card.author}
+                        {card.date} • {card.author}
                       </p>
-                      <p class="text-[#66736C] text-left">{card.date}</p>
                     </div>
                   </div>
                 </article>

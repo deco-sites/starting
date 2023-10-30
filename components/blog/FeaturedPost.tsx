@@ -1,4 +1,5 @@
 import { Post } from "deco-sites/starting/components/utils/Blog.ts";
+import Image from "deco-sites/std/components/Image.tsx";
 
 export default function FeaturedPost({
   title,
@@ -21,16 +22,17 @@ export default function FeaturedPost({
                 <span
                   style={`box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0`}
                 >
-                  <img
+                  <Image
                     alt="blog thumbnail"
                     src={img}
                     decoding="async"
                     style={`position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover`}
-                    sizes="100vw"
+                    height={382}
+                    width={714}
                   />
                 </span>
               </div>
-              <div class="flex flex-col space-y-2 lg:(mr-16 mt-16 mb-16)">
+              <div class="flex flex-col space-y-2 lg:mr-16 lg:mt-16 lg:mb-16">
                 <div class="text-scale-900 flex space-x-2 text-sm">
                   <p>{date}</p>
                   <p>•</p>
@@ -43,13 +45,19 @@ export default function FeaturedPost({
                     <div class="flex items-center space-x-3">
                       <div class="relative h-10 w-10 overflow-auto">
                         <span>
-                          <img
-                            alt={`${author} avatar`}
-                            src={authorAvatar}
-                            decoding="async"
-                            class="rounded-full"
-                            sizes="100vw"
-                          />
+                          {authorAvatar &&
+                            (
+                              <Image
+                                alt={`${author} avatar`}
+                                src={authorAvatar}
+                                decoding="async"
+                                loading="lazy"
+                                class="rounded-full"
+                                sizes="100vw"
+                                width={40}
+                                height={40}
+                              />
+                            )}
                         </span>
                       </div>
                       <div class="flex flex-col">

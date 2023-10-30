@@ -332,8 +332,8 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
-      pt: "Criando APIs reutilizáveis",
-      en: "Creating composable APIs",
+      pt: "Deco Hub",
+      en: "Deco Hub",
     },
     children: [
       {
@@ -371,6 +371,13 @@ const tableOfContents: TableOfContents = [
         },
         slug: "composable-apis/gtm",
       },
+      {
+        title: {
+          pt: "Criando um novo app",
+          en: "Creating a new app",
+        },
+        slug: "hub/create-new",
+      }
     ],
   },
   {
