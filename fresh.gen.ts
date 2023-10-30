@@ -21,8 +21,8 @@ import * as $$3 from "./islands/ChangeDevice.tsx";
 import * as $$4 from "./islands/ChangeTheme.tsx";
 import * as $$5 from "./islands/Cms.tsx";
 import * as $$6 from "./islands/ContactUs.tsx";
-import * as $$7 from "./islands/Content.tsx";
-import * as $$8 from "./islands/FaviconImage.tsx";
+import * as $$7 from "./islands/FaviconImage.tsx";
+import * as $$8 from "./islands/ForwardBackButtons/ForwardBackButtons.tsx";
 import * as $$9 from "./islands/Header.tsx";
 import * as $$10 from "./islands/HelpFaq.tsx";
 import * as $$11 from "./islands/ImpactCalculator.tsx";
@@ -57,8 +57,8 @@ const manifest = {
     "./islands/ChangeTheme.tsx": $$4,
     "./islands/Cms.tsx": $$5,
     "./islands/ContactUs.tsx": $$6,
-    "./islands/Content.tsx": $$7,
-    "./islands/FaviconImage.tsx": $$8,
+    "./islands/FaviconImage.tsx": $$7,
+    "./islands/ForwardBackButtons/ForwardBackButtons.tsx": $$8,
     "./islands/Header.tsx": $$9,
     "./islands/HelpFaq.tsx": $$10,
     "./islands/ImpactCalculator.tsx": $$11,
