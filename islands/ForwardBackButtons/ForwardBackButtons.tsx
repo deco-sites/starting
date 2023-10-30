@@ -3,6 +3,7 @@ import { useEffect, useState } from "preact/hooks";
 interface PageButton {
   title: string;
   href: string;
+  enabled: boolean;
 }
 
 export default function ForwardBackButtons() {
@@ -12,10 +13,12 @@ export default function ForwardBackButtons() {
   const [previous, setPrevious] = useState<PageButton>({
     title: "",
     href: "",
+    enabled: false,
   });
   const [next, setNext] = useState<PageButton>({
     title: "",
     href: "",
+    enabled: false,
   });
 
   const isEnglish = window.navigator.language.startsWith("en");
@@ -33,7 +36,7 @@ export default function ForwardBackButtons() {
     const currentIndex = linkArray.map((x, index) => ({
       value: x.getAttribute("href") || "",
       index,
-    })).toSorted((x, y) => x.value.length - y.value.length).find((link) =>
+    })).toSorted((x, y) => y.value.length - x.value.length).find((link) =>
       decodedURL.includes(link.value)
     )?.index;
 
@@ -43,6 +46,7 @@ export default function ForwardBackButtons() {
         setPrevious({
           title: previousLink.textContent || "",
           href: previousLink.getAttribute("href") || "",
+          enabled: !!previousLink.getAttribute("href"),
         });
       }
 
@@ -51,6 +55,7 @@ export default function ForwardBackButtons() {
         setNext({
           title: nextLink.textContent || "",
           href: nextLink.getAttribute("href") || "",
+          enabled: !!nextLink.getAttribute("href"),
         });
       }
 
@@ -62,24 +67,34 @@ export default function ForwardBackButtons() {
 
   return (
     <div class="mt-6 flex justify-between">
-      <a href={previous.href} class={`text-left flex flex-col gap-2`}>
-        <span class={upper}>
-          {`←  ${isEnglishState ? "Previous" : "Anterior"}`}
-        </span>
-        <span class={lower}>
-          <span class="text-[#2E6ED9] text-xl font-semibold leading-normal">
-            {previous.title}
-          </span>
-        </span>
-      </a>
-      <a href={next.href} class={`text-right flex flex-col gap-2`}>
-        <span class={upper}>{`${isEnglishState ? "Next" : "Próximo"}  →`}</span>
-        <span class={lower}>
-          <span class="text-[#2E6ED9] text-xl font-semibold leading-normal">
-            {next.title}
-          </span>
-        </span>
-      </a>
+      {previous.enabled
+        ? (
+          <a href={previous.href} class={`text-left flex flex-col gap-2`}>
+            <span class={upper}>
+              {`←  ${isEnglishState ? "Previous" : "Anterior"}`}
+            </span>
+            <span class={lower}>
+              <span class="text-[#2E6ED9] text-xl font-semibold leading-normal">
+                {previous.title}
+              </span>
+            </span>
+          </a>
+        )
+        : <span />}
+      {next.enabled
+        ? (
+          <a href={next.href} class={`text-right flex flex-col gap-2`}>
+            <span class={upper}>
+              {`${isEnglishState ? "Next" : "Próximo"}  →`}
+            </span>
+            <span class={lower}>
+              <span class="text-[#2E6ED9] text-xl font-semibold leading-normal">
+                {next.title}
+              </span>
+            </span>
+          </a>
+        )
+        : <span />}
     </div>
   );
 }

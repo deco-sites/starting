@@ -4,8 +4,8 @@ import Slider from "deco-sites/starting/components/ui/Slider.tsx";
 import SliderControllerJS from "deco-sites/starting/islands/SliderJS.tsx";
 import { getAspectRatio } from "deco-sites/starting/sdk/utils.ts";
 import {
-  Post,
   getBlogPath,
+  Post,
 } from "deco-sites/starting/components/utils/Blog.ts";
 
 const IMAGE_WIDTH = 360;
@@ -34,8 +34,8 @@ export default function Carousel({ bottomPadding, cards, locale }: Props) {
           {cards.map((card) => {
             return (
               <a
-              href={getBlogPath(card.path, locale)}
-              class="rounded-[8px] flex w-[420px] h-full"
+                href={getBlogPath(card.path, locale)}
+                class="rounded-[8px] flex w-[420px] h-full"
               >
                 <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden">
                   <div>

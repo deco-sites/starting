@@ -24,7 +24,7 @@ const loader = ({ postList, page, maxPosts }: Props): Post[] => {
   if (post) {
     const tags = post.tags || [];
     posts.sort(
-      (a, b) => countMatchingTags(b, tags) - countMatchingTags(a, tags)
+      (a, b) => countMatchingTags(b, tags) - countMatchingTags(a, tags),
     );
   }
 

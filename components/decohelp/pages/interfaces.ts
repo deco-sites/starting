@@ -45,6 +45,7 @@ export type ContentType = Text | Code | Image | Youtube | SectionBlock;
 
 export interface SectionBlock {
   section: Section;
+  Underline?: boolean;
 }
 
 export interface Text {

@@ -377,7 +377,7 @@ const tableOfContents: TableOfContents = [
           en: "Creating a new app",
         },
         slug: "hub/create-new",
-      }
+      },
     ],
   },
   {

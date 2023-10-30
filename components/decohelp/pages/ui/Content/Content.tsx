@@ -4,7 +4,7 @@ import YoutubeEmbed from "deco-sites/starting/components/decohelp/pages/ui/Youtu
 import WasThisPageHelpfulContent, {
   WasThisPageHelpfulProps,
 } from "deco-sites/starting/components/decohelp/pages/ui/WasThisPageHelpful/WasThisPageHelpful.tsx";
-import ForwardBackButtons from "deco-sites/starting/components/decohelp/pages/ui/ForwardBackButtons/ForwardBackButtons.tsx";
+import ForwardBackButtons from "deco-sites/starting/islands/ForwardBackButtons/ForwardBackButtons.tsx";
 import BreadCrumb from "deco-sites/starting/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
 import {
   ContentType,
