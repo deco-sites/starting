@@ -23,7 +23,7 @@ const tableOfContents: TableOfContents = [
         slug: "getting-started/updating-seo",
       },
       {
-        title: { pt: "Criando nova uma Página", en: "Creating a new Page" },
+        title: { pt: "Criando uma nova Página", en: "Creating a new Page" },
         slug: "getting-started/creating-a-new-page",
       }, // TODO
       // {
@@ -472,7 +472,7 @@ if (import.meta.main) {
     if (content.slug) {
       const path = `./${content.slug}`;
       const stat: { isDirectory: boolean } = await Deno.stat(path).catch(
-        (_) => ({ isDirectory: false })
+        (_) => ({ isDirectory: false }),
       );
       let isCreated = false;
       if (!stat.isDirectory) {
@@ -490,14 +490,14 @@ if (import.meta.main) {
           `---
 description: TODO
 since: 1.0.0
----`
+---`,
         );
         await Deno.writeTextFile(
           join(path, "pt.md"),
           `---
 description: TODO
 since: 1.0.0
----`
+---`,
         );
         continue;
       }
@@ -505,7 +505,7 @@ since: 1.0.0
       for (const children of content.children) {
         const path = `./${children.slug}`;
         const stat: { isDirectory: boolean } = await Deno.stat(path).catch(
-          (_) => ({ isDirectory: false })
+          (_) => ({ isDirectory: false }),
         );
         if (!stat.isDirectory) {
           if (
@@ -523,14 +523,14 @@ since: 1.0.0
               `---
 description: TODO
 since: 1.0.0
----`
+---`,
             );
             await Deno.writeTextFile(
               join(path, "pt.md"),
               `---
 description: TODO
 since: 1.0.0
----`
+---`,
             );
           }
         }
@@ -547,7 +547,7 @@ const tableOfContentsBySlug = tableOfContents.reduce((acc, cur) => {
       if (!cur.slug) return acc;
       acc[cur.slug] = cur;
       return acc;
-    }, {} as Record<string, TopLevelEntry>)
+    }, {} as Record<string, TopLevelEntry>),
   );
 }, {} as Record<string, TopLevelEntry>);
 
@@ -573,7 +573,7 @@ type NextOrPrevious = { title?: string; category?: string; href?: string };
 
 const getNextPreviousForEntry = (
   language: SupportedLanguages,
-  entry: TopLevelEntry
+  entry: TopLevelEntry,
 ): NextOrPrevious => ({
   href: `/docs/${language}/${entry.slug}`,
   title: entry.title?.[language],
@@ -581,33 +581,29 @@ const getNextPreviousForEntry = (
 
 export const getNextAndPreviousPost = (
   language: SupportedLanguages,
-  slug: string
+  slug: string,
 ) => {
   const tableOfContentsEntries = tableOfContents.reduce((entries, cur) => {
     return entries.concat(
-      [cur, ...(cur.children || [])].filter(({ slug }) => slug)
+      [cur, ...(cur.children || [])].filter(({ slug }) => slug),
     );
   }, [] as TopLevelEntry[]);
 
   const currentIndex = tableOfContentsEntries.findLastIndex(
-    ({ slug: currentSlug }) => currentSlug && slug.includes(currentSlug)
+    ({ slug: currentSlug }) => currentSlug && slug.includes(currentSlug),
   );
 
-  const previous =
-    currentIndex === 0
-      ? undefined
-      : getNextPreviousForEntry(
-          language,
-          tableOfContentsEntries[currentIndex - 1]
-        );
+  const previous = currentIndex === 0 ? undefined : getNextPreviousForEntry(
+    language,
+    tableOfContentsEntries[currentIndex - 1],
+  );
 
-  const next =
-    currentIndex === tableOfContentsEntries.length - 1
-      ? undefined
-      : getNextPreviousForEntry(
-          language,
-          tableOfContentsEntries[currentIndex + 1]
-        );
+  const next = currentIndex === tableOfContentsEntries.length - 1
+    ? undefined
+    : getNextPreviousForEntry(
+      language,
+      tableOfContentsEntries[currentIndex + 1],
+    );
 
   return {
     previous,
