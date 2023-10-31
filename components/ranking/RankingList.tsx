@@ -1,4 +1,4 @@
-import { LoaderReturnType } from "$live/types.ts";
+import { LoaderReturnType } from "deco/types.ts";
 import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
 import { SiteList } from "./list/SiteList.tsx";
 

@@ -1,5 +1,5 @@
-import { Section } from "$live/blocks/section.ts";
-import { useLivePageContext } from "$live/pages/LivePage.tsx";
+import { Section } from "deco/blocks/section.ts";
+import { useLivePageContext } from "deco/pages/LivePage.tsx";
 
 export interface SectionProps {
   SectionSidebar: Section;

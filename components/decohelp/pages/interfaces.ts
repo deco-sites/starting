@@ -1,7 +1,7 @@
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
-import { Section } from "$live/blocks/section.ts";
+import { Section } from "deco/blocks/section.ts";
 
 export interface Props {
   Title?: string;

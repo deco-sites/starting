@@ -1,6 +1,6 @@
 {
   "deno.enable": true,
-  "deno.importMap": "./import_map.json",
+  "deno.importMap": "./deno.json",
   "deno.codeLens.test": true,
   "editor.quickSuggestions": {
     "strings": true

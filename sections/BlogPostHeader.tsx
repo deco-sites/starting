@@ -1,4 +1,4 @@
-import { LoaderReturnType } from "$live/types.ts";
+import { LoaderReturnType } from "deco/types.ts";
 import {
   getBlogPath,
   PostList,

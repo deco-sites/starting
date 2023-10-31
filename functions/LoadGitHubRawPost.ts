@@ -1,4 +1,4 @@
-import type { LoaderFunction } from "$live/types.ts";
+import type { LoaderFunction } from "deco/types.ts";
 import { PostBody } from "../components/utils/Blog.ts";
 
 export interface Props {

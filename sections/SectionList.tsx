@@ -1,6 +1,6 @@
-import { Section } from "$live/blocks/section.ts";
-import { notUndefined } from "$live/engine/core/utils.ts";
-import { useLivePageContext } from "$live/pages/LivePage.tsx";
+import { Section } from "deco/blocks/section.ts";
+import { notUndefined } from "deco/engine/core/utils.ts";
+import { useLivePageContext } from "deco/pages/LivePage.tsx";
 
 export interface Props {
   sections: Section[];
