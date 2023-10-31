@@ -13,10 +13,10 @@ usando uma **stack web simples** com **[Preact](https://preactjs.com/)**,
 **[Tailwind](https://tailwindcss.com)** e **[Deno](https://deno.land/)**. Somos
 a plataforma para criar experiências _headless commerce_.
 
-![https://user-images.githubusercontent.com/18706156/224878795-66bc06b8-10bf-4285-9833-d375137e8914.png](https://user-images.githubusercontent.com/18706156/224878795-66bc06b8-10bf-4285-9833-d375137e8914.png)
+![deco admin](https://github.com/deco-cx/apps/assets/882438/5a497330-93e5-497d-a572-fde44421d6ac)
 
 Quando você cria um site na _deco.cx_, ele é automaticamente **deployado na
-_edge_ em 34 regiões em todo o mundo** no [Deno Deploy](https://deno.com/). Isso
+_edge_ em 35 regiões em todo o mundo** no [Deno Deploy](https://deno.com/). Isso
 significa que suas páginas são servidas próximas aos seus usuários, garantindo
 um desempenho ultrarrápido. Além disso, fornecemos um repositório do Github onde
 você pode gerenciar seu código e colaborar com outras pessoas do seu time. Com a
@@ -52,43 +52,88 @@ Este é o código de uma [Section](/docs/pt/concepts/section) `ProductShelf` na
 _deco.cx_:
 
 ```tsx
-import ProductCard from "$store/components/product/ProductCard.tsx";
-import Container from "$store/components/ui/Container.tsx";
-import Text from "$store/components/ui/Text.tsx";
+import ProductCard, {
+  Layout as cardLayout,
+} from "$store/components/product/ProductCard.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
+import Header from "$store/components/ui/SectionHeader.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
-import type { Product } from "deco-sites/std/commerce/types.ts";
+import SliderJS from "$store/islands/SliderJS.tsx";
+import { useId } from "$store/sdk/useId.ts";
+import { useOffer } from "$store/sdk/useOffer.ts";
+import { usePlatform } from "$store/sdk/usePlatform.tsx";
+import type { Product } from "apps/commerce/types.ts";
 
 export interface Props {
-  title: string;
-  products: Product[];
+  products: Product[] | null;
+  title?: string;
+  description?: string;
+  layout?: {
+    headerAlignment?: "center" | "left";
+    headerfontSize?: "Normal" | "Large";
+  };
+  cardLayout?: cardLayout;
 }
 
 function ProductShelf({
-  title,
   products,
+  title,
+  description,
+  layout,
+  cardLayout,
 }: Props) {
-  return (
-    <Container class="flex flex-col items-center gap-10 py-10">
-      {title && (
-        <h2>
-          <Text variant="heading-2">{title}</Text>
-        </h2>
-      )}
-      <Slider class="gap-6">
-        {products?.map((product, index) => {
-          const ml = index === 0 ? "ml-6 sm:ml-0" : "";
-          const mr = index === products.length - 1 ? "mr-6 sm:mr-0" : "";
+  const id = useId();
+  const platform = usePlatform();
 
-          return (
-            <div
-              class={`min-w-[220px] max-w-[220px] sm:min-w-[287px] sm:max-w-[287px] ${ml} ${mr}`}
+  if (!products || products.length === 0) {
+    return null;
+  }
+
+  return (
+    <div class="w-full container  py-8 flex flex-col gap-12 lg:gap-16 lg:py-10">
+      <Header
+        title={title || ""}
+        description={description || ""}
+        fontSize={layout?.headerfontSize || "Large"}
+        alignment={layout?.headerAlignment || "center"}
+      />
+
+      <div
+        id={id}
+        class="container grid grid-cols-[48px_1fr_48px] px-0 sm:px-5"
+      >
+        <Slider class="carousel carousel-center sm:carousel-end gap-6 col-span-full row-start-2 row-end-5">
+          {products?.map((product, index) => (
+            <Slider.Item
+              index={index}
+              class="carousel-item w-[270px] sm:w-[292px] first:pl-6 sm:first:pl-0 last:pr-6 sm:last:pr-0"
             >
-              <ProductCard key={index} product={product} />
-            </div>
-          );
-        })}
-      </Slider>
-    </Container>
+              <ProductCard
+                product={product}
+                itemListName={title}
+                layout={cardLayout}
+                platform={platform}
+                index={index}
+              />
+            </Slider.Item>
+          ))}
+        </Slider>
+
+        <>
+          <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
+            <Slider.PrevButton class="btn btn-circle btn-outline absolute right-1/2 bg-base-100">
+              <Icon size={24} id="ChevronLeft" strokeWidth={3} />
+            </Slider.PrevButton>
+          </div>
+          <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
+            <Slider.NextButton class="btn btn-circle btn-outline absolute left-1/2 bg-base-100">
+              <Icon size={24} id="ChevronRight" strokeWidth={3} />
+            </Slider.NextButton>
+          </div>
+        </>
+        <SliderJS rootId={id} />
+      </div>
+    </div>
   );
 }
 

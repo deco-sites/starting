@@ -29,30 +29,63 @@ To add a domain:
 - The user needs to be an administrator of the site.
 - The user needs to acquire a custom domain from a name server provider that allows `CNAME` configuration.
 - The user or administrator of the custom domain needs to create a `CNAME` record as indicated in the validation step.
+- ONLY if the domain already has any "CAA" records, it is necessary to add new records.
+
+## Before adding a domain
+
+Additional configuration may be required on your website depending on the integration used.
+
+If the domain has a `CAA` record, you need to add new domains so that we can generate the certificate for your new domain. Important: `If your domain doesn't have CAA records, this step is not necessary (and not recommended)`.
+
+You can check if the domain has these records using the [Google Admin Toolbox Dig](https://toolbox.googleapps.com/apps/dig/#CAA/) or the command `dig yourdomain.com.br caa +short`. If the query doesn't return data (`Record not found!`), skip this step.
+
+If your site has certificates, you need to add the following records, especially the last two (`pki.goog`). Add them to your site's domain (or use `@` as the field name).
+
+```
+0 issue "digicert.com; cansignhttpexchanges=yes"
+0 issuewild "digicert.com; cansignhttpexchanges=yes"
+0 issue "sectigo.com"
+0 issuewild "sectigo.com"
+0 issue "letsencrypt.org"
+0 issuewild "letsencrypt.org"
+0 issue "pki.goog; cansignhttpexchanges=yes"
+0 issuewild "pki.goog; cansignhttpexchanges=yes"
+```
+
+Some domain providers do not accept CAA with `cansignhttpexchanges`. In that case, configure it without this property:
+
+```
+0 issue "digicert.com"
+0 issuewild "digicert.com"
+0 issue "sectigo.com"
+0 issuewild "sectigo.com"
+0 issue "letsencrypt.org"
+0 issuewild "letsencrypt.org"
+0 issue "pki.goog"
+0 issuewild "pki.goog"
+```
+
+Check with your domain provider for further instructions on how to add these records.
 
 ## Adding a domain in the admin panel
 
 1. Go to the home page of the site and navigate to the Settings tab.
 
-    !["Site home"](https://github.com/deco-sites/starting/assets/882438/c95da5f4-75a8-42ed-b747-674157c52c80)
+![Site settings](https://github.com/deco-cx/apps/assets/882438/7c60ddbd-7164-42ea-bd16-d8c5d70603df)
 
-2. In Settings, under the Domains listing, check that there is a `deco.site` domain and add an existing domain.
-
-    !["Settings tab"](https://github.com/deco-sites/starting/assets/882438/3cf4102a-d9f3-49d6-aaa0-8aeac5e064b6)
+2. In Settings, under the Domains listing, check that there is a `deco.site` domain and add an existing domain.  **Contact us if you don't have a `deco.site` domain**.
 
 3. Add your domain for the site in the opened modal. The domain should only be the name, without any protocol (http/https) or slashes. Wait for the initial configuration process.
 
-    !["Add domain"](https://github.com/deco-sites/starting/assets/882438/4b2a6b1e-a711-4733-9779-367ac0141e41)
+![Add domain](https://github.com/deco-cx/apps/assets/882438/8c19ae5c-e522-4a60-9b8b-28e4815cced6)
 
 4. After adding, the domain is registered with Deco but is not yet operational. You now need to set up the domain. Under `...`, click on setup to view the configuration instructions.
 
-    !["Domain setup"](https://github.com/deco-sites/starting/assets/882438/ac14645d-6f59-45cf-ae6e-c918eec7247f)
+5. Add the domain configuration to your domain server. This represents a `CNAME` record from the custom domain to the deco domain. In the example, this would be a record from the domain `www.example.com` to `startest.deco.site`.
 
-5. Add the domain configuration to your domain server. This represents a `CNAME` record from the custom domain to the deco domain. In the example, this would be a record from the domain `example.dirlididi.org` to `test-fashionmgr.deco.site`.
+![Domain setup](https://github.com/deco-cx/apps/assets/882438/0d9d876e-2a5e-4e05-8767-dc77e69c548b)
 
-    ![CNAME configuration](https://github.com/deco-sites/starting/assets/882438/98f2505f-db78-42e8-9c5c-5350360f7495)
-
-6. Once configured, click on validate configuration for Deco to verify if the record was set up correctly. The certificate configuration step may fail, but if that happens, it will be retried in the background.
+6. Once configured, click on validate configuration for Deco to verify if the record was set up correctly. Important: The domain will remain in an "awaiting" state until we complete the configuration on our infrastructure.
 
 7. Wait a few minutes and test accessing your domain in the browser.
 
