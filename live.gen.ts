@@ -19,13 +19,12 @@ import * as $$$$2 from "./routes/api/case.tsx";
 import * as $$$$3 from "./routes/api/leads.tsx";
 import * as $$$$4 from "./routes/api/ranking.ts";
 import * as $$$$5 from "./routes/api/webinar.tsx";
-import * as $$$$6 from "./routes/docs/[...slug].tsx";
-import * as $$$$7 from "./routes/gfm.css.ts";
-import * as $$$$8 from "./routes/hackathon4.ts";
-import * as $$$$9 from "./routes/index.tsx";
-import * as $$$$10 from "./routes/proxy/image/index.tsx";
-import * as $$$$11 from "./routes/_app.tsx";
-import * as $$$$12 from "./routes/_middleware.ts";
+import * as $$$$6 from "./routes/gfm.css.ts";
+import * as $$$$7 from "./routes/hackathon4.ts";
+import * as $$$$8 from "./routes/index.tsx";
+import * as $$$$9 from "./routes/proxy/image/index.tsx";
+import * as $$$$10 from "./routes/_app.tsx";
+import * as $$$$11 from "./routes/_middleware.ts";
 import * as $$$$$0 from "./islands/CampHeader.tsx";
 import * as $$$$$1 from "./islands/CampMentor.tsx";
 import * as $$$$$2 from "./islands/Case.tsx";
@@ -342,19 +341,18 @@ const manifest = {
     "deco-sites/std/loaders/x/redirectsFromCsv.ts": i2$$$30,
   },
   "routes": {
-    "./routes/_app.tsx": $$$$11,
-    "./routes/_middleware.ts": $$$$12,
+    "./routes/_app.tsx": $$$$10,
+    "./routes/_middleware.ts": $$$$11,
     "./routes/admin/[...catchall].tsx": $$$$0,
     "./routes/api/calc.tsx": $$$$1,
     "./routes/api/case.tsx": $$$$2,
     "./routes/api/leads.tsx": $$$$3,
     "./routes/api/ranking.ts": $$$$4,
     "./routes/api/webinar.tsx": $$$$5,
-    "./routes/docs/[...slug].tsx": $$$$6,
-    "./routes/gfm.css.ts": $$$$7,
-    "./routes/hackathon4.ts": $$$$8,
-    "./routes/index.tsx": $$$$9,
-    "./routes/proxy/image/index.tsx": $$$$10,
+    "./routes/gfm.css.ts": $$$$6,
+    "./routes/hackathon4.ts": $$$$7,
+    "./routes/index.tsx": $$$$8,
+    "./routes/proxy/image/index.tsx": $$$$9,
   },
   "islands": {
     "./islands/CampHeader.tsx": $$$$$0,
