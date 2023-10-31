@@ -9,11 +9,10 @@ import * as $3 from "./routes/api/case.tsx";
 import * as $4 from "./routes/api/leads.tsx";
 import * as $5 from "./routes/api/ranking.ts";
 import * as $6 from "./routes/api/webinar.tsx";
-import * as $7 from "./routes/docs/[...slug].tsx";
-import * as $8 from "./routes/gfm.css.ts";
-import * as $9 from "./routes/hackathon4.ts";
-import * as $10 from "./routes/index.tsx";
-import * as $11 from "./routes/proxy/image/index.tsx";
+import * as $7 from "./routes/gfm.css.ts";
+import * as $8 from "./routes/hackathon4.ts";
+import * as $9 from "./routes/index.tsx";
+import * as $10 from "./routes/proxy/image/index.tsx";
 import * as $$0 from "./islands/CampHeader.tsx";
 import * as $$1 from "./islands/CampMentor.tsx";
 import * as $$2 from "./islands/Case.tsx";
@@ -43,11 +42,10 @@ const manifest = {
     "./routes/api/leads.tsx": $4,
     "./routes/api/ranking.ts": $5,
     "./routes/api/webinar.tsx": $6,
-    "./routes/docs/[...slug].tsx": $7,
-    "./routes/gfm.css.ts": $8,
-    "./routes/hackathon4.ts": $9,
-    "./routes/index.tsx": $10,
-    "./routes/proxy/image/index.tsx": $11,
+    "./routes/gfm.css.ts": $7,
+    "./routes/hackathon4.ts": $8,
+    "./routes/index.tsx": $9,
+    "./routes/proxy/image/index.tsx": $10,
   },
   islands: {
     "./islands/CampHeader.tsx": $$0,

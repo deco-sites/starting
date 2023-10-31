@@ -79,9 +79,11 @@ export default function Page({
       <div class="w-full">
         <div class="w-full xl:px-0 lg:pl-0 px-6 relative z-0">
           <div class="flex flex-col gap-[8px] lg:pt-0 pt-[161px]">
-            <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
-              {Title}
-            </h1>
+            {Title && (
+              <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
+                {Title}
+              </h1>
+            )}
             {Version && Version.length > 0 && (
               <span class="px-2 py-1 bg-white bg-opacity-0 rounded border border-zinc-300 text-neutral-900 text-[13px] font-semibold leading-tight w-min my-2.5 whitespace-nowrap">
                 {Version}
