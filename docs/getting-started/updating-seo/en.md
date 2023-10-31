@@ -1,44 +1,42 @@
 ---
 description: |
-   How to edit a block in deco.cx
+  How to edit a block in deco.cx
 ---
 
-Using deco.cx's Admin you can change the site's content without needing to change the code, thanks to the [Blocks](/docs/en/concepts/blocks) concept.
+Let's begin updating the website information.
+deco.cx allows you, through the Admin, to change content without the need for code changes, and this is done through the concept of [Blocks](/docs/en/concepts/blocks).
 
-The first Block we can edit is the **SEO**, a saved Section that is used by the site's home page. This block configures important metadata about the page such as **title, description and thumbnail** (this information is used in social media previews).
+The first Block we can edit is the **site**,
+an [App](/docs/en/concepts/app) from deco that configures and prepares a project to operate as a website on the internet. This block configures important metadata about the page, including SEO data and title, description, and thumbnail (this information is used in social media previews).
 
-Conveniently, you can preview how **SEO** is set up in the site's dashboard.
+Conveniently, on the Site detail page in deco, you can preview how the **SEO** is configured.
 
-Click on **Edit** on the top right to change its data. You will be redirected to the block editing page.
+To edit it, click on **Edit** in the upper right corner. You will be redirected to the block editing page.
 
-<img width="1401" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/18706156/258239685-81217494-3b40-4025-9385-672cab77008e.png ">
+![SEO Editing](https://github.com/deco-cx/apps/assets/882438/c7986877-6c2c-4f21-90e6-3634c73f22f6)
 
 Our block editor is divided into two sections:
 
-1. **Preview**: see how your block will be rendered, on the left. _(or some helpful UI if you're editing metadata)._
-2. **Form**: edit the information that was made available by developers.
+1. **Form**: edit the information that the people who created the block made available for editing on the right sidebar.
+2. **Preview**: when applicable, preview how your block will be rendered on the left side.
 
-In the page's _topbar_, you have access to:
-- **URL bar**: test specific URLs for the block you are editing (useful for product pages, for example).
-- **Performance Metrics:** check which resources this block is using and the amount of Javascript sent to the browser.
-- **View/Edit Toggle**: Disable automatic _overlay_ in preview to test interactive block elements.
+In the top bar of the page, you have access to:
+- **Address bar**: test specific URLs for the block you are editing (useful for product pages, for example).
 
+And in the sidebar, you can select other views of the page:
+- **Performance Metrics:** see which resources this block is using and the amount of JavaScript being sent to the browser.
+- **Revisions:** access the version history of the edited content.
+- **JSON Editor:** edit form data as JSON.
+- **Preview mode:**: disable the automatic overlay on the preview to test interactive elements of the block.
 
-<img width="1512" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/18706156/258239802-e6bc0f12-a996-4867-930a-df76daebdd9d.png ">
+![editor](https://github.com/deco-cx/apps/assets/882438/ebcee0fc-1d97-4b2d-a5e9-54a873d88b1e)
 
+All changes you make in the form are **automatically reflected** in the preview on the left. When you are editing pages, you can also use the preview to select specific sections and reorder them directly on the page.
 
-Any changes you make to the form are **automatically reflected** in the preview on the left. When you're editing pages, you can also use preview to select specific Sections and reorder them right on the page.
+## Editing SEO
 
-## Editing the SEO
+Edit the title, description, and image of your site's SEO according to what you are building and ensure that social media previews are as expected. You can try different versions to see what suits you best.
 
-Edit your site's SEO title, description, and image to suit what you're building, and ensure social media previews behave as expected. You can test different versions to see what fits best.
+After that, **click the Publish button** in the upper right to create a new revision of this block. Revisions are immutable versions of the data edited in deco and are used to track and roll back changes over time. Learn more about them [here](/docs/en/getting-started/releases-revisions).
 
-After that, **click the Save button** on the top right to create a new revision of this block. Revisions are immutable versions of the edited data in the deco and are meant to be able to track and revert changes over time. Learn more about [here](/docs/en/getting-started/releases-revisio ns).
-
-## Publishing the changes
-
-To actually change your site's SEO _meta tags_, you need to publish the current revision you just saved. **Click the Publish button** to make the changes effective.
-
-<img width="384" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/18706156/258240949-394a198c-f25a-4a83-80a4-76f0aecf6b99.png ">
-
-Ready! Now your site has up-to-date SEO data and you've learned how to edit a block in deco.cx.
+There you go! Now your site has updated SEO data, and you have learned how to edit a block in deco.cx.
