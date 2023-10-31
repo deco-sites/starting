@@ -22,16 +22,35 @@ By leveraging Matchers and their capabilities, you can create dynamic and person
 ## Step by step
 
 1. First, log in to the deco Admin. Once you're logged in, you can access the _site_ you want to work with.
-2. Go to the `Pages` section, which can be found in the top bar of the Admin interface.<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/67292436-67a6-4d79-b981-1007f82693fa">
+2. Go to the `Pages` section, which can be found in the top bar of the Admin interface.
+
+![Page list](https://github.com/deco-cx/apps/assets/882438/801edff7-7e6e-4606-8556-bcaf4a2bfec8)
+
 3. Select the page you want to work with by clicking on it.
-4. Once you're inside the page, locate the three dots (`...`) on the right side of the "Sections" label. (use the same button to remove all variants).<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/f8fa78af-a120-4a10-96bb-e97aeb61628c">
-5. Click on the three dots and select the `Create variants` option. At this point, you may not notice any immediate changes, but two new variants will be added to the page. The last variant represents the current page and always evaluates to true, while the first variant is created without a selected condition. Let's choose a condition for this variant.<img width="1508" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/ed22f647-0616-4485-88c0-fb5152ddcb7f">
+
+4. Once you're inside the page, locate the flag icon (`🏴`) on the right side of the "Sections" label. (use the same button to remove all variants).
+
+![Create variant](https://github.com/deco-cx/apps/assets/882438/1989b41d-d959-488b-b863-c7b697fa1754)
+
+5. At this point, two new variants will be added to the page. The last variant (`Default`) represents the current page and always evaluates to true, while the first variant is created without a selected condition. Let's choose a condition for this variant.
+
+
+
 6. Click on the first variant in the list.
 7. Select the `Condition` option and choose `Device Matcher`.
-8. Select the `Mobile` option and ensure that you have the `Desktop` viewport selected in the Admin Preview.<img width="1511" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/c7315927-9b36-4c0d-9370-a92cdfd2fb81">
-9. Make any visual changes to the page that you want to differentiate for this variant (e.g., add a carousel to the top of the page). Note that the current preview reflects the changes made for the selected variant.<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/75cd33d4-5413-47c3-9b9d-27b5bf7d3a4b">
-10. Return to the previous page and observe that the original page is loaded.<img width="1510" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/1aac9c6b-a4f5-4882-a831-13d8b65e7bf9">
-11. Change the viewport to mobile and observe that the modified page for the variant is now visible.<img width="1512" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/2f23f622-3a34-4f37-953d-bb9431838004">
+8. Select the `Mobile` option and ensure that you have the `Desktop` viewport selected in the Admin Preview.
+
+![Select matcher](https://github.com/deco-cx/apps/assets/882438/c096a2fd-a9e1-4aca-87a9-99da8ca2d9d0)
+
+9. Make any visual changes to the page that you want to differentiate for this variant (e.g., add a carousel to the top of the page). Note that the current preview reflects the changes made for the selected variant.
+
+![Changing page for mobile users](https://github.com/deco-cx/apps/assets/882438/8f21d149-fd51-45e8-9d74-73c27fce1a56)
+
+10. Publish your changes and switch between variants to observe their differences.
+
+11. Go to your site and change the viewport to mobile and observe that the modified page for the variant is now visible.
+
+![View your changes](https://github.com/deco-cx/apps/assets/882438/4e18d62b-fbaa-49e0-bf39-72d002a582f8)
 
 ## Explanation
 
@@ -45,7 +64,11 @@ You can create **A/B Tests** manually by selecting the `Random Matcher` conditio
 
 ## Analytics
 
-You have the flexibility to integrate your own analytics platform and compare the results against each variant being used. To access the information of the variants used in a specific PageView, you can utilize the `window.LIVE.flags` variable. This variable is an array that contains objects with two properties: `name` (the name of the Matcher) and `value` (the evaluated result of the Matcher, either `true` or `false`). By leveraging this information, you can analyze and track the performance of each variant and make informed decisions based on the data obtained.
+You have the flexibility to integrate your own analytics platform and compare the results against each variant being used. To access the information of the variants used in a specific PageView, you can utilize the `window.LIVE.flags` variable. This variable is an array that contains objects with two properties: `name` (the name of the Matcher) and `value` (the evaluated result of the Matcher, either `true` or `false`).
+
+These flags are also available in the `X-Deco-Matchers` header, where each cookie has a value of `1` if the condition is evaluated as true, or `0` otherwise.
+
+By leveraging this information, you can analyze and track the performance of each variant and make informed decisions based on the data obtained.
 
 We are continuously working to enhance our analytics capabilities and streamline the process of accessing and analyzing test results. Our goal is to provide a seamless experience where you can create and manage tests, as well as view and interpret the corresponding analytics data, all in one centralized location. By consolidating these functionalities, we aim to make it easier for you to make data-driven decisions and optimize your website's performance.
 
