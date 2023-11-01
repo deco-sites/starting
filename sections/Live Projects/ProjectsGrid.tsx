@@ -15,7 +15,6 @@ export interface Screenshot {
 
 export interface Template {
   label: string;
-  category?: string;
   description?: string;
   link?: string;
   image?: Screenshot[];
@@ -38,6 +37,7 @@ export interface Classification {
 
 interface Category {
   label: string;
+  hideCategory?: boolean; 
   cards: Template[];
 }
 
@@ -51,7 +51,7 @@ interface Props {
 }
 
 function CardText(
-  { label, category, description, alignment }: TemplateInfo,
+  { label, category, description, alignment }: TemplateInfo, 
 ) {
   return (
     <div
@@ -95,6 +95,7 @@ function TemplatesGrid(props: Props) {
     indexCategories = [
       {
         label: "MODA",
+        hideCategory: false,
         cards: [
           {
             label: "Feminino",
@@ -155,11 +156,17 @@ function TemplatesGrid(props: Props) {
     return categories.find(category => category.label === label);
 };
 
-  const itensParaExibir = categoriaSelecionada === 'Todos'
-  ? indexCategories.flatMap(category => category.cards as Template[])
-  : categoriaSelecionada
-    ? indexCategories.find(category => category.label === categoriaSelecionada)?.cards || []
-    : [];
+const itensParaExibir = categoriaSelecionada === 'Todos'
+? indexCategories.flatMap(category => category.cards.map(card => ({
+    ...card,
+    category: category.label, // Adiciona o campo category ao card
+  })))
+: categoriaSelecionada
+  ? indexCategories.find(category => category.label === categoriaSelecionada)?.cards.map(card => ({
+      ...card,
+      category: categoriaSelecionada, // Adiciona o campo category ao card
+    })) || []
+  : [];
 
   const totalPaginas = Math.ceil(itensParaExibir.length / itensPorPagina);
   const primeiroItem = (paginaAtual - 1) * itensPorPagina;
@@ -214,8 +221,17 @@ function TemplatesGrid(props: Props) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 md:p-4">
         {itensPaginaAtual.map(({ label, description, link, image, category }, index) => {
-  const categoryInfo = !category ? findCategoryByLabel(categoriaSelecionada, indexCategories) : findCategoryByLabel(category, indexCategories);
-            
+            let categoryInfo;
+            if (category) {
+              categoryInfo = indexCategories.find(cat => cat.label === category);
+            } else {
+              categoryInfo = indexCategories.find(cat => cat.label === categoriaSelecionada);
+            }
+        
+            const shouldHideCategory = categoryInfo?.hideCategory || false;
+
+            console.log(shouldHideCategory)
+
             return (
                 <a
                     href={`${link}`}
@@ -238,7 +254,7 @@ function TemplatesGrid(props: Props) {
                     {layoutCategoryCard?.textPosition === "bottom" && (
                         <CardText
                             label={label}
-                            category={categoryInfo?.label || category}
+                            category={!shouldHideCategory ? categoryInfo?.label || category : ''}
                             description={description}
                             alignment={layoutCategoryCard?.textAlignment}
                         />
