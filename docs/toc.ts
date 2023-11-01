@@ -53,8 +53,8 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Restaurando versões",
-          en: "Restoring versions",
+          pt: "Criando rascunhos e Restaurando versões",
+          en: "Creating drafts and Restoring versions",
         },
         slug: "getting-started/releases-revisions",
       },
