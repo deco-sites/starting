@@ -5,34 +5,28 @@ since: 1.33.2
 
 # Prerequisites
 
-Before you begin, make sure you have a deco site ready, and the desired App should be available in the Apps directory. If you're unsure how to achieve this, refer to the [making an app installable tutorial](/docs/en/developing/making-an-app-installable).
+Before you begin, make sure you have a ready Deco site, and the desired App should be available in the Apps directory. If you're unsure how to do this, refer to the [tutorial on making an app installable](/docs/en/developing/making-an-app-installable).
 
-## Step 1: Log in to deco Admin
+# Apps
 
-Start by logging in to your deco Admin account. Visit [https://deco.cx/admin](https://deco.cx/admin) and enter your credentials.
+An `App` allows you to add new functionalities to your site in a straightforward manner.
 
-## Step 2: Choose Your Target Site
+# Installing the App
 
-After logging in, select the specific site where you want to install the App. You'll be directed to the site's home.
+1. **Access the Deco Admin:** Start by logging into your Deco Admin account. Visit [https://admin.deco.cx](https://admin.deco.cx) and enter your credentials.
 
-## Step 3: Access the "Apps" Section
+2. **Choose the Target Site:** After logging in, select the specific site where you want to install the App. You will be directed to the site's homepage.
 
-In the site's home, navigate to the "Apps" section. This section is where you'll find all the Apps available for installation.
+3. **Access the "Apps" Section:** On the site's homepage, navigate to the "Apps" section. This is where you will find all the Apps available for installation. Select to view all "available Apps".
 
-## Step 4: Add the App Block
+![Apps Section](https://github.com/deco-cx/apps/assets/882438/e2533612-6828-4fb6-9959-96f000ca3537)
 
-Inside the "Apps" section, create a new App block. Give it a name; it's commonly used to specify the version, such as `site@v0` and publish it.
+4. **Add an App Block:** Click on "Add" to install an App. This starts the process of creating a block. Configure the block and click on "Create" (give it a name; it's common to use the version, like `site@v0`).
 
-## Step 5: Configure the App
+5. **Explore Installed Blocks:** Once installed, you will have access to all the blocks and components that an App includes. These blocks can be integrated into your Deco site to provide additional functionality.
 
-With the App block created, you'll also be prompted to fulfill any required configurations or parameters.
+Congratulations! You have successfully installed an App using the Deco Admin. Explore the new capabilities and features that an installed App brings to your Deco site. Feel free to further customize the App or explore other available Apps to expand the functionality of your Deco project. Enjoy managing and enhancing your Deco site! 🚀
 
-## Step 6: Save and Publish
+> You can always change the App settings by clicking on the created block.
 
-After configuring the App block, click "Save and Publish" to apply the changes and install the App on your site.
-
-## Step 7: Explore the Installed Blocks
-
-Once the App is installed, you'll have access to all the blocks and components it includes. These blocks can be integrated into your deco site to provide additional functionalities.
-
-Congratulations! You've successfully installed an App using deco Admin. Explore the newfound capabilities and features that the installed App brings to your deco site. Feel free to customize the App further or explore other available Apps to expand your deco project's functionalities. Enjoy managing and enhancing your deco site! 🚀
+![Changing App Settings](https://github.com/deco-cx/apps/assets/882438/5cf7fe48-89b1-47cd-be82-2f7ff601e640)
