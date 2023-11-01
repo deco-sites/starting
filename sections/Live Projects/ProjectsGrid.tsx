@@ -35,10 +35,15 @@ export interface Classification {
   itensPorPagina: number;
 }
 
-export interface Props {
-  /* @default */
-  indexCategories?: string[];
-  cards?: Template[];
+
+interface Category {
+  label: string;
+  cards: Template[];
+}
+
+interface Props {
+  itensPerPage?: number;
+  indexCategories?: Category[];
   layoutCategoryCard?: {
     textPosition?: "top" | "bottom";
     textAlignment?: "center" | "left";
@@ -86,53 +91,54 @@ function CardText(
 function TemplatesGrid(props: Props) {
   const id = `category-cards-${useId()}`;
   const {
-    indexCategories = ['Todos','Fashion', 'PET', 'Farma', 'B2B', 'Saúde', 'Outros'],
-    cards = [
+    itensPerPage = 6,
+    indexCategories = [
       {
-        label: "Feminino",
-        category: "MODA",
-        description: "Moda feminina direto de Milão",
-        link: "feminino",
-        image: {
-          img:
-            "https://ik.imagekit.io/decocx/tr:w-680,h-680/https:/ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fdcb3c8f-d629-485e-bf70-8060bd8a9f65",
-          color: "",
-        },
+        label: "MODA",
+        cards: [
+          {
+            label: "Feminino",
+            category: "MODA",
+            description: "Moda feminina direto de Milão",
+            link: "feminino",
+            image: {
+              img: "https://ik.imagekit.io/decocx/tr:w-680,h-680/https:/ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fdcb3c8f-d629-485e-bf70-8060bd8a9f65",
+              color: "",
+            },
+          },
+          {
+            label: "Invisível",
+            category: "Todos",  // Marque como "Todos"
+            description: "Este card é invisível",
+            link: "invisivel",
+            image: {
+              img: "https://exemplo.com/invisivel.jpg",
+              color: "",
+            },
+          },
+        ],
       },
     ],
     layoutCategoryCard = {
-        textPosition: "top",
-        textAlignment: "center",
+      textPosition: "top",
+      textAlignment: "center",
     },
   } = props;
-  const [themes, setThemes] = useState(cards.map(() => 0));
+  
+  const [themes, setThemes] = useState(indexCategories.flatMap(category => category.cards.map(() => 0)));
 
   const [classification, setClassification] = useState<Classification>({
     categoriaSelecionada: 'Todos',
     paginaAtual: 1,
-    itensPorPagina: 6,
+    itensPorPagina: itensPerPage,
   });
 
-  const [mostrarCardsOutrasCategorias, setMostrarCardsOutrasCategorias] = useState(false);
-
   const handleChangeCategoria = (novaCategoria: string) => {
-    if (novaCategoria === 'Outros') {
-      console.log('Clicou em Outros');
-      setClassification({
-        categoriaSelecionada: novaCategoria,
-        paginaAtual: 1,
-        itensPorPagina: classification.itensPorPagina,
-        });
-      setMostrarCardsOutrasCategorias(true);
-    }
-    else{
-      setClassification({
-        categoriaSelecionada: novaCategoria,
-        paginaAtual: 1,
-        itensPorPagina: classification.itensPorPagina,
-      });
-      setMostrarCardsOutrasCategorias(false);
-    }
+    setClassification({
+      categoriaSelecionada: novaCategoria,
+      paginaAtual: 1,
+      itensPorPagina: classification.itensPorPagina,
+    });
   };
 
   const handleChangePagina = (novaPagina: number) => {
@@ -145,17 +151,20 @@ function TemplatesGrid(props: Props) {
 
   const { categoriaSelecionada, paginaAtual, itensPorPagina } = classification;
 
-    const itensFiltrados = mostrarCardsOutrasCategorias
-    ? cards.filter(item => item.category && !indexCategories.includes(item.category))
-    : (categoriaSelecionada === 'Todos'
-      ? cards
-      : cards.filter(item => item.category === categoriaSelecionada)
-    );
+  const findCategoryByLabel = (label: string, categories: { label: string }[]) => {
+    return categories.find(category => category.label === label);
+};
 
-  const totalPaginas = Math.ceil(itensFiltrados.length / itensPorPagina);
+  const itensParaExibir = categoriaSelecionada === 'Todos'
+  ? indexCategories.flatMap(category => category.cards as Template[])
+  : categoriaSelecionada
+    ? indexCategories.find(category => category.label === categoriaSelecionada)?.cards || []
+    : [];
+
+  const totalPaginas = Math.ceil(itensParaExibir.length / itensPorPagina);
   const primeiroItem = (paginaAtual - 1) * itensPorPagina;
-  const ultimoItem = Math.min(primeiroItem + itensPorPagina, itensFiltrados.length);
-  const itensPaginaAtual = itensFiltrados.slice(primeiroItem, ultimoItem);
+  const ultimoItem = Math.min(primeiroItem + itensPorPagina, itensParaExibir.length);
+  const itensPaginaAtual = itensParaExibir.slice(primeiroItem, ultimoItem);
 
   return (
     <div className="flex flex-col items-center mx-8 pb-10 md:mx-auto md:px-14 md:pb-16 lg:px-16 gap-y-10 lg:pb-20 lg:max-w-[1440px] xl:px-16">
@@ -168,22 +177,32 @@ function TemplatesGrid(props: Props) {
               handleChangeCategoria(selectedValue);
             }}
           >
-          {indexCategories.map((category) => (
-            <option key={category} value={category}>
-              {category}
+          <option value="Todos">Todos</option>
+          {indexCategories.map((category, index) => (
+            <option key={index} value={category.label}>
+              {category.label}
             </option>
           ))}
         </select>
         <div className="hidden md:flex flex-start border-b-2 gap-x-8 h-[32px] w-full">
-            {indexCategories.map((category) => (
               <div
-                key={category}
+                key={'Todos'}
                 className={`cursor-pointer ${
-                  (categoriaSelecionada === category && !mostrarCardsOutrasCategorias) || (mostrarCardsOutrasCategorias && category === 'Outros') ? 'font-bold border-b-2 border-black' : ''
+                  (categoriaSelecionada === 'Todos') ? 'font-bold border-b-2 border-black' : ''
                 }`}
-                onClick={() => handleChangeCategoria(category)}
+                onClick={() => handleChangeCategoria('Todos')}
               >
-                {category}
+                Todos
+              </div>
+            {indexCategories.map((category, index) => (
+              <div
+                key={index}
+                className={`cursor-pointer ${
+                  (categoriaSelecionada === category.label) ? 'font-bold border-b-2 border-black' : ''
+                }`}
+                onClick={() => handleChangeCategoria(category.label)}
+              >
+                {category.label}
               </div>
           ))}
         </div>
@@ -194,46 +213,39 @@ function TemplatesGrid(props: Props) {
       >
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 md:p-4">
-          {itensPaginaAtual.map((
-            {
-              label,
-              category,
-              description,
-              link,
-              image,
-            },
-            index,
-          ) => (
-              <a
-              href={`${link}`} className="flex flex-col gap-4 border border-[#C9CFCF] rounded-lg bg-white overflow-hidden pb-3 md:hover:scale-105 duration-200" key={index}>
-              {image &&
-                (
-                    <figure>
-                      <Image
-                        className="object-top object-cover"
-                        src={Array.isArray(image)
-                          ? image[themes[index]].img
-                          : image.img}
-                        alt={category || label}
-                        width={398}
-                        height={244}
-                        loading="lazy"
-                        style={{ width: "100%" }}
-                      />
-                    </figure>
-                  
-                )}
-              {layoutCategoryCard?.textPosition === "bottom" &&
-                (
-                  <CardText
-                    label={label}
-                    category={category}
-                    description={description}
-                    alignment={layoutCategoryCard?.textAlignment}
-                  />
-                )}
-            </a>
-          ))}
+        {itensPaginaAtual.map(({ label, description, link, image, category }, index) => {
+  const categoryInfo = !category ? findCategoryByLabel(categoriaSelecionada, indexCategories) : findCategoryByLabel(category, indexCategories);
+            
+            return (
+                <a
+                    href={`${link}`}
+                    className="flex flex-col gap-4 border border-[#C9CFCF] rounded-lg bg-white overflow-hidden pb-3 md:hover:scale-105 duration-200"
+                    key={index}
+                >
+                    {image && (
+                        <figure>
+                            <Image
+                                className="object-top object-cover"
+                                src={Array.isArray(image) ? image[themes[index]]?.img : (image as { img: string })?.img}
+                                alt={label}
+                                width={398}
+                                height={244}
+                                loading="lazy"
+                                style={{ width: "100%" }}
+                            />
+                        </figure>
+                    )}
+                    {layoutCategoryCard?.textPosition === "bottom" && (
+                        <CardText
+                            label={label}
+                            category={categoryInfo?.label || category}
+                            description={description}
+                            alignment={layoutCategoryCard?.textAlignment}
+                        />
+                    )}
+                </a>
+            );
+        })}
         </div>
       </div>
       <div id="pagination" className="flex items-center gap-1">
