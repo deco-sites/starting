@@ -29,10 +29,14 @@ export default function DocsPage(
   if (attrs?.description) {
     description = String(attrs.description);
   }
-
   return (
     <>
       <Head>
+        <title>
+          {props.data.title
+            ? `${props.data.title} | deco.cx docs`
+            : "deco.cx docs"}
+        </title>
         <link rel="stylesheet" href={`/gfm.css`} />
         {description && <meta name="description" content={description} />}
         <style
@@ -80,8 +84,13 @@ export default function DocsPage(
         </style>
       </Head>
       <div class="flex flex-col min-h-screen">
-        <div class="flex-1">
-          <div class="mx-auto max-w-screen-lg px-4 flex gap-6">
+        <div class="flex-1 px-4">
+          {props.data.title && (
+            <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
+              {props.data.title}
+            </h1>
+          )}
+          <div class="mx-auto max-w-screen-lg flex gap-6">
             <Content content={frontMatterContent} />
           </div>
         </div>
@@ -99,7 +108,7 @@ function Content(props: MDContent) {
   );
 
   return (
-    <main class="py-6 overflow-hidden">
+    <main class="py-2 overflow-hidden">
       {attrs.since && (
         <span class="bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
           Version: {attrs.since}

@@ -1,6 +1,7 @@
 import { MDFileContent } from "deco-sites/starting/components/ui/Types.tsx";
 import type { LoaderContext } from "deco/types.ts";
 import { redirect } from "deco/mod.ts";
+import { getTitleForPost } from "deco-sites/starting/docs/toc.ts";
 
 /** @title {{{path}}} */
 export interface Doc {
@@ -9,6 +10,7 @@ export interface Doc {
    * @format textarea
    */
   content: string;
+  title?: string;
 }
 
 const loader = async (
@@ -38,11 +40,11 @@ const loader = async (
   const doc = props.docs?.find((doc) => doc.path === slug);
 
   if (doc) {
-    return { content: doc.content };
+    return { content: doc.content, title: doc.title };
   }
 
   const fileContent = await Deno.readTextFile(url);
-  return { content: fileContent };
+  return { content: fileContent, title: getTitleForPost(language, documentSlug) };
 };
 
 export default loader;

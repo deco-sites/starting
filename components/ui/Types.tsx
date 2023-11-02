@@ -5,6 +5,7 @@ export interface MDFileContent {
    * @format textarea
    */
   content: string;
+  title?: string;
 }
 
 export interface Template {
