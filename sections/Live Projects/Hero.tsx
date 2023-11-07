@@ -3,39 +3,40 @@ import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
 /** @title {{{title}}} - {{{href}}} */
 
 export interface Props {
-  Banner?: {
+  Banner?:{
     bannerHero?: DecoImage;
     bannerHeroMobile?: DecoImage;
     titleImg?: string;
-  };
+  }
   headline?: string;
   headlineSubtitle?: string;
-  ctaButtons?: {
+  ctaButtons?:{
     titleGreenButton?: string;
     hrefGreenButton?: string;
     titleWhiteButton?: string;
     hrefWhiteButton?: string;
-  };
+  }
 }
 
 export default function Hero({
   Banner = {
-    bannerHero: "",
-    bannerHeroMobile: "",
-    titleImg: "Escolha uma Imagem",
+  bannerHero: "",
+  bannerHeroMobile: "",
+  titleImg:"Escolha uma Imagem",
   },
   headline = "Live Projects",
   headlineSubtitle =
     "Com mais de 100 implementações bem-sucedidas só no Brasil, a deco.cx é a plataforma de Frontend que você precisa para levar seu site ao próximo nível. Seja B2B ou B2C, nossa solução é comprovada no mercado para oferecer uma experiência de compra excepcional!",
   ctaButtons = {
-    titleGreenButton: "Agende uma demo",
+    titleGreenButton: "Agende uma demo", 
     hrefGreenButton: "",
-    titleWhiteButton: "Customer Stories",
+    titleWhiteButton: "Customer Stories", 
     hrefWhiteButton: "",
-  },
+  }
+
 }: Props) {
   return (
-    <div className="flex items-center mx-8 py-12 md:mx-auto md:px-14 md:py-16 lg:px-16 gap-16 lg:py-20 lg:max-w-[1440px] xl:px-16">
+    <div className="flex items-center mx-8 py-12 md:mx-auto md:px-14 md:py-16 lg:px-16 gap-16 lg:py-20 lg:max-w-[1440px] xl:px-16 xl:mt-[107px]">
       <div class="flex flex-col gap-8 items-start justify-between self-sttretch font-albert-sans lg:gap-8 xl:gap-12 md:flex-row lg:container lg:max-w-[1440px] text-xl md:text-base">
         <div class="flex flex-col gap-8 md:gap-12 md:w-[100%] md:max-w-[580px] lg:w-[44.2%] items-start">
           <div className="flex flex-col w-full gap-8 md:gap-6">
