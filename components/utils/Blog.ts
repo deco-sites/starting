@@ -1,21 +1,30 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
+export type SupportedLocales = "en" | "pt";
+
 export interface PostBody {
   data: string;
 }
-/** @title {{{title}}} - {{{author}}} */
+
+/** @title {{{path}}} */
 export interface Post {
-  title: string;
   path: string;
   img: LiveImage;
-  tags?: string[];
-  descr: string;
   date: string;
+  tags?: string[];
   author: string;
   authorAvatar?: string;
   authorRole?: string;
   readTime?: string;
-  lang?: string;
+  body: {
+    pt?: PostData;
+    en?: PostData;
+  };
+}
+
+export interface PostData {
+  title: string;
+  descr: string;
   /**
    * @format textarea
    */

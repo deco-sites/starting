@@ -1,17 +1,20 @@
-import { Post } from "deco-sites/starting/components/utils/Blog.ts";
+import {
+  Post,
+  SupportedLocales,
+} from "deco-sites/starting/components/utils/Blog.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 
 export default function FeaturedPost({
-  title,
-  descr,
   img,
   path,
+  body,
   date,
   readTime,
   author,
   authorRole,
   authorAvatar,
-}: Post) {
+  locale = "en",
+}: Post & { locale?: SupportedLocales }) {
   return (
     <div class="overflow-hidden py-12">
       <div class="mx-auto">
@@ -39,25 +42,24 @@ export default function FeaturedPost({
                   <p>{readTime} minute read</p>
                 </div>
                 <div class="flex flex-col space-y-4">
-                  <h2 class="font-medium text-3xl">{title}</h2>
-                  <p class="p text-xl">{descr}</p>
+                  <h2 class="font-medium text-3xl">{body[locale]?.title}</h2>
+                  <p class="p text-xl">{body[locale]?.descr}</p>
                   <div>
                     <div class="flex items-center space-x-3">
                       <div class="relative h-10 w-10 overflow-auto">
                         <span>
-                          {authorAvatar &&
-                            (
-                              <Image
-                                alt={`${author} avatar`}
-                                src={authorAvatar}
-                                decoding="async"
-                                loading="lazy"
-                                class="rounded-full"
-                                sizes="100vw"
-                                width={40}
-                                height={40}
-                              />
-                            )}
+                          {authorAvatar && (
+                            <Image
+                              alt={`${author} avatar`}
+                              src={authorAvatar}
+                              decoding="async"
+                              loading="lazy"
+                              class="rounded-full"
+                              sizes="100vw"
+                              width={40}
+                              height={40}
+                            />
+                          )}
                         </span>
                       </div>
                       <div class="flex flex-col">

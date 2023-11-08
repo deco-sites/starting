@@ -6,6 +6,7 @@ import { getAspectRatio } from "deco-sites/starting/sdk/utils.ts";
 import {
   getBlogPath,
   Post,
+  SupportedLocales,
 } from "deco-sites/starting/components/utils/Blog.ts";
 
 const IMAGE_WIDTH = 360;
@@ -13,10 +14,14 @@ const IMAGE_WIDTH = 360;
 export interface Props {
   bottomPadding?: string;
   cards: Post[];
-  locale?: string;
+  locale?: SupportedLocales;
 }
 
-export default function Carousel({ bottomPadding, cards, locale }: Props) {
+export default function Carousel({
+  bottomPadding,
+  cards,
+  locale = "en",
+}: Props) {
   const id = useId();
 
   return (
@@ -59,10 +64,10 @@ export default function Carousel({ bottomPadding, cards, locale }: Props) {
                         ))}
                       </div>
                       <h1 class="font-normal not-italic text-left text-[20px] text-black opacity-[80%]leading-[1.18]">
-                        {card.title}
+                        {card.body[locale]?.title}
                       </h1>
                       <div class="text-base text-[#66736C] leading-[1.5] line-clamp-2 overflow-ellipsis text-left">
-                        {card.descr}
+                        {card.body[locale]?.title}
                       </div>
                     </div>
                     <div class="flex flex-col gap-2">

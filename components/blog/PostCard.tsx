@@ -1,10 +1,16 @@
-import { Post } from "deco-sites/starting/components/utils/Blog.ts";
+import {
+  Post,
+  SupportedLocales,
+} from "deco-sites/starting/components/utils/Blog.ts";
 import { getAspectRatio } from "deco-sites/starting/sdk/utils.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 
 const IMAGE_WIDTH = 360;
 
-export function BlogPostCard(props: Post) {
+export function BlogPostCard({
+  locale = "en",
+  ...props
+}: Post & { locale?: SupportedLocales }) {
   return (
     <a href={props.path} class="group duration-200">
       <div class="flex flex-col w-full text-deco-dark-green mb-10 sm:mb-20">
@@ -22,9 +28,11 @@ export function BlogPostCard(props: Post) {
           />
         </div>
         <div class="mt-6 flex flex-col gap-2">
-          <h1 class="text-xl font-medium leading-[1.18]">{props.title}</h1>
+          <h1 class="text-xl font-medium leading-[1.18]">
+            {props.body[locale]?.title}
+          </h1>
           <div class="text-base text-[#66736C] leading-[1.5]">
-            {props.descr}
+            {props.body[locale]?.descr}
           </div>
           <div class="text-sm font-light text-[#66736C]">
             <div class="flex gap-2">
