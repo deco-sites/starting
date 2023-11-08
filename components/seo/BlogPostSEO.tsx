@@ -1,6 +1,9 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Metatags from "./BlogMetatags.tsx";
-import { Post } from "deco-sites/starting/components/utils/Blog.ts";
+import {
+  Post,
+  SupportedLocales,
+} from "deco-sites/starting/components/utils/Blog.ts";
 
 export interface Props {
   /**
@@ -16,16 +19,19 @@ export interface Props {
   /** @description Recommended: 16 x 16 px */
   favicon?: LiveImage;
   post: Post;
+  locale?: SupportedLocales;
 }
 
-const BlogPostSEO = (props: Props) => {
+const BlogPostSEO = ({ locale = "en", ...props }: Props) => {
   const context = {
     ...props.post,
     seo: {
-      ...props?.post?.seo,
-      title: props.post?.seo?.title || props.post.title,
-      description: props.post?.seo?.description || props.post.descr,
-      image: props.post?.seo?.image || props.post?.img,
+      ...props?.post?.body[locale]?.seo,
+      title: props.post?.body[locale]?.seo?.title ||
+        props.post.body[locale]?.title,
+      description: props.post?.body[locale]?.seo?.description ||
+        props.post.body[locale]?.descr,
+      image: props.post?.body[locale]?.seo?.image || props.post?.img,
     },
   } as Post;
 

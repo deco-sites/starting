@@ -2,6 +2,7 @@ import { LoaderReturnType } from "deco/types.ts";
 import {
   getBlogPath,
   PostList,
+  SupportedLocales,
 } from "deco-sites/starting/components/utils/Blog.ts";
 
 export type PathObj = {
@@ -21,7 +22,7 @@ export type Props = {
 export default function BlogPostHeader(props: Props) {
   const url = props.page.url;
   const postsList = props.postList;
-  const locale = url.split("/")[1];
+  const locale = url.split("/")[1] as SupportedLocales;
   const backToBlog = props.backToBlog || "Voltar para o blog";
 
   const post = postsList.posts.filter(
@@ -57,9 +58,11 @@ export default function BlogPostHeader(props: Props) {
         </a>
       </div>
       <div class="w-full flex flex-col gap-4">
-        <h1 class="text-4xl md:text-5xl leading-[1.1">{post.title}</h1>
+        <h1 class="text-4xl md:text-5xl leading-[1.1">
+          {post.body[locale]?.title}
+        </h1>
         <div class="text-2xl md:text-3xl leading-[1.18] text-[#66736C]">
-          {post.descr}
+          {post.body[locale]?.descr}
         </div>
         <div class="text-[#66736C]">
           <span class="mr-5">{post.date}</span>
