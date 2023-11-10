@@ -18,7 +18,7 @@ the loader itself.
 Let's take the loader below as an example:
 
 ```ts
-import type { SectionProps } from "$live/mod.ts";
+import type { SectionProps } from "deco/mod.ts";
 
 // Props type that will be configured in deco.cx's Admin
 export interface Props {
@@ -88,12 +88,12 @@ async function dogFacts(
 Note that, even though we are receiving `title` as a parameter, we are not using
 it. Now, let's:
 
-1. Import `PropsLoader` from $live.
+1. Import `PropsLoader` from deco.
 2. change our `loader` function to be a map that contains the property we want
    to load
 
 ```ts
-import { PropsLoader } from "$live/mod.ts";
+import { PropsLoader } from "deco/mod.ts";
 
 // Props type that will be configured in deco.cx's Admin
 export interface LoadProps {

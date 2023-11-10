@@ -38,7 +38,7 @@ Open your site's folder in an IDE and perform the following actions:
 
 **Done!** The Section has been created locally in your project.
 
-If the project is running locally (`deno task start`) and if the environment selector is pointing to `localhost:8000`, it will be possible to see the new Section in the block library (**Library**).
+If the project is running locally (`deno task start`) and if the environment selector is pointing to `localhost:8000`, it will be possible to see the new Section in the section library (**Sections**).
 
 # Properties of a Section
 
@@ -47,8 +47,8 @@ A Section can have any property that is serializable and accept as a property in
 - `strings` and `numbers`
 - Simple types of serializable objects
 - Generated types from union, extends, `Pick`, or `Omit`
-- `Sections` (`import { Section } from "$live/blocks/section.ts"`)
-- `Image` (`import { Image } from "deco-sites/std/components/types.ts"`) and other components from the deco standard library
+- `Sections` (`import { Section } from "deco/blocks/section.ts"`)
+- `ImageWidget` (`import type { ImageWidget } from "apps/admin/widgets.ts";`) and other components from the admin widgets
 - Arrays of the types indicated above
 
 In addition to those types, it is possible to annotate some properties so that the admin form changes the input mechanism or to determine certain aspects of the property's behavior.
@@ -56,14 +56,15 @@ In addition to those types, it is possible to annotate some properties so that t
 As an example, let's add three new properties to our `LatestPosts` component, one for an image (`photo`), another for the post body (`post`), and one for the post time.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
+
 
 export interface Props {
    /**
     * @title Post image.
     */
-   photo?: DecoImage;
+   photo?: ImageWidget;
    /**
    * @title Post body.
    */
@@ -176,4 +177,4 @@ export default function LatestPosts({ title, photo }: Props) {
 
 The source code of Theme.tsx demonstrates different uses of the tokens. Now, if a Theme component is on the same page as LatestPosts, the latter can be styled from the theme component.
 
-![Styling with the theme component](https://github.com/deco-sites/starting/assets/882438/58860548-d4e4-46f8-a198-75461cf8ab86)
+![Styling with the theme component](https://github.com/deco-cx/apps/assets/882438/10e8d567-6eab-498b-ac8e-44e3362b3131)

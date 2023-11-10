@@ -5,7 +5,7 @@ since: 1.0.0
 
 # Realizando Redirecionamentos em Seções
 
-Os redirecionamentos em seções permitem que você direcione eficientemente os usuários para diferentes páginas com base em determinadas condições, proporcionando uma experiência de navegação suave e contínua. Com o Live.ts, você pode implementar facilmente redirecionamentos usando carregadores inline e a função `redirect` do módulo `$live/mod.ts`.
+Os redirecionamentos em seções permitem que você direcione eficientemente os usuários para diferentes páginas com base em determinadas condições, proporcionando uma experiência de navegação suave e contínua. Com o Live.ts, você pode implementar facilmente redirecionamentos usando carregadores inline e a função `redirect` do módulo `deco/mod.ts`.
 
 ## Visão Geral
 
@@ -15,10 +15,10 @@ Os redirecionamentos permitem que você evite a fase inteira de renderização, 
 
 Para criar um redirecionamento em uma seção, siga estes passos simples:
 
-1. Crie um carregador inline dentro do componente da sua seção e importe a função `redirect` do módulo `$live/mod.ts`.
+1. Crie um carregador inline dentro do componente da sua seção e importe a função `redirect` do módulo `deco/mod.ts`.
 
 ```tsx
-import { redirect } from "$live/mod.ts";
+import { redirect } from "deco/mod.ts";
 
 export default function MyComponent(props: Props) {
   // Sua lógica de componente vai aqui
@@ -49,7 +49,7 @@ Observe que você precisa retornar algo (neste caso, as `props`) na função `lo
 Digamos que você deseje redirecionar os usuários para uma página de login caso eles não estejam autenticados:
 
 ```tsx
-import { redirect } from "$live/mod.ts";
+import { redirect } from "deco/mod.ts";
 
 export default function MyComponent(props: Props) {
   // Sua lógica de componente vai aqui

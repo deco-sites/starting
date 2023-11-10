@@ -59,7 +59,7 @@ Recomenda-se nunca usar a tag `<img/>` diretamente, mas usar o componente
 `<Image/>` em vez disso. Para usá-lo:
 
 ```tsx
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export default function MeuComponente() {
   return <Image src="https://example.com/image.png" />;
@@ -74,7 +74,7 @@ você pode aplicar
 os seguintes tokens do Tailwind ao código acima:
 
 ```tsx
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export default function MeuComponente() {
   return (
@@ -104,7 +104,7 @@ Abaixo, você encontrará um exemplo mínimo que renderiza uma imagem para deskt
 e outra para dispositivos móveis.
 
 ```tsx
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 function MeuComponente() {
   return (
@@ -136,7 +136,7 @@ fazer a imagem preencher todo o espaço disponível, você pode aplicar os
 seguintes tokens do Tailwind ao código acima:
 
 ```tsx
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 function MeuComponente() {
   return (
@@ -186,7 +186,7 @@ Para descobrir um bom valor para largura e altura:
 Agora, abra seu componente e preencha os valores de largura e altura:
 
 ```tsx
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export default function MeuComponente() {
   return <Image src="https://example.com/image.png" width={270} height={377} />;
@@ -196,7 +196,7 @@ export default function MeuComponente() {
 Para Pictures, aplique o mesmo método para cada atributo Source:
 
 ```tsx
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 function MeuComponente() {
   return (
@@ -242,7 +242,7 @@ o código do componente e verifique se:
 Por exemplo, para um componente `<Image/>`:
 
 ```tsx
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export default function MyComponent() {
   return (
@@ -261,7 +261,7 @@ export default function MyComponent() {
 Para um `<Picture/>`:
 
 ```tsx
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 function MyComponent() {
   return (

@@ -116,7 +116,7 @@ image that will be hosted on _deco.cx_ servers.
 the image loading and can be used in conjunction with this property. Example:
 
 ```tsx
-import type { Image } from "$live/std/ui/types/Image.ts";
+import type { ImageWidget as Image } from "apps/admin/widgets.ts";
 
 export interface props {
   bannerImg: Image;
@@ -132,7 +132,7 @@ Example of use
 [here](https://github.com/deco-sites/fashion/blob/e15a0320fe9e0b7503eb4723f7c230b23886c2b5/sections/VideoCarousel.tsx#L3).
 
 ```ts
-import type { Video } from "$live/std/ui/types/Video.ts";
+import type { VideoWidget as Video } from "apps/admin/widgets.ts";
 
 export interface props {
   myVideo: Video;

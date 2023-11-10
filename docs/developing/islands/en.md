@@ -1,6 +1,6 @@
 ---
 description: Client-side Interactivity.
-since: 1.1.0
+since: 1.0.0
 ---
 
 One of the reasons deco is fast is our edge first approach to creating websites. This means that all code you write runs on our servers instead of running on slow, inconsitent user devices (browser). However, sometimes we need to provide extra interactivity to our websites, like adding `onClick`, `useState` or `useEffect` event handlers. 
@@ -74,11 +74,36 @@ Islands are Preact components. This means they accept `props`. However, these va
 
 Complex objects such as Date, functions, and custom classes are not accepted as islands props.
 
+# Using Signals Instead of State
+
+`useState` requires working with a separate function for value updates. Preact also uses [`Signals`](https://preactjs.com/guide/v10/signals/) for handling state. A `signal` has a reference that holds a value, but it also has a `.value` attribute that allows updating this value.
+
+Within a component, if the state is only used locally, you can use the `useSignal` hook to create these elements that can be used in the function body or in the JSX returned, as in the example below.
+
+```tsx
+import { useSignal } from "@preact/signals";
+
+export default function Counter() {
+  const count = useSignal(0)
+
+  return (
+    <div>
+      <button onClick={() => count.value-- }>
+        -
+      </button>
+      <span>{count}</span>
+      <button onClick={() => count.value++ }>
+        +
+      </button>
+    </div>
+  )
+}
+
 # Sharing state among islands.
 
 In normal Preact development, sharing state between components is usually done via the [Context](https://preactjs.com/guide/v10/context/) API. This works fine for a full client-side application. However, since we are using islands architecture, sharing state among islands require a new approach.
 
-Preact introduced a new concept called [Signals](https://preactjs.com/guide/v10/signals/). Signals are a great way of sharing state between islands, since one can publish and subscribe for change events in a concise API. 
+Signals are also a great way of sharing state between islands, since one can publish and subscribe for change events in a concise API. 
 
 To use signals, 
 ```tsx 
@@ -110,8 +135,5 @@ To define side-effects over signal changes, use the `effect`, `batch`, `computed
 
 Making a component an island will at least double its size in bytes. The server renders the HTML for this element and sends it to the browser, but it also sends essentially the same HTML plus the JS to be injected on the client side. Therefore, try to create only the necessary islands, as they make the rendering process more resource-intensive.
 
-To learn more about deco's rendering process and receive some tips on implementing common design patterns:
-
+Futher read:
 - [Introduction to the Islands architecture - EN](https://deno.com/blog/intro-to-islands)
-- TODO: [Understanding deco rendering pipeline](TODO)
-- TODO: [Recipes: islands](TODO)

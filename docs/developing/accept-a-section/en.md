@@ -15,14 +15,14 @@ When creating a Section that accepts other sections as parameters, you define an
 
 To create a Section that accepts other Sections as parameters, follow these steps:
 
-1. Import the `Section` type from `$live/blocks/section.ts`.
+1. Import the `Section` type from `deco/blocks/section.ts`.
 
 2. Define an interface for the props of your section component. Include a property called `myProp`, which is of type `Section`.
 
 ```tsx
 // MySection.tsx
 
-import { Section } from "$live/blocks/section.ts";
+import { Section } from "deco/blocks/section.ts";
 
 export interface Props {
   myProp: Section;
@@ -68,7 +68,7 @@ Now, you want to create a higher-order section called `ProductContainerSection`,
 ```tsx
 // ProductContainerSection.tsx
 
-import { Section } from "$live/blocks/section.ts";
+import { Section } from "deco/blocks/section.ts";
 
 export interface Props {
   myProp: Section;
@@ -84,6 +84,60 @@ export default function ProductContainerSection({ myProp: { Component, props } }
 ```
 
 With this setup, you can now use `ProductContainerSection` to wrap any other section, including the `ProductCardSection`, and add a container around it.
+
+Now, let's say you want restrict your section to `ProductCard` because you have a lot of sections in your site but only that one should fit in that place, you can do the following:
+
+```tsx
+// ProductCardSection.tsx
+
+import { JSX } from "preact";
+
+// Define a named type, for example, "ProductCard," pointing to `JSX.Element`
+export type ProductCard = JSX.Element;
+
+// Define the props interface
+export interface Props {
+  title: string;
+  price: number;
+  imageUrl: string;
+}
+
+// Implement the section and specify the return type as "ProductCard"
+export default function ProductCardSection({ title, price, imageUrl }: Props): ProductCard {
+  return (
+    <div>
+      <img src={imageUrl} alt={title} />
+      <h3>{title}</h3>
+      <p>{price}</p>
+    </div>
+  );
+}
+```
+
+Now, you can depend directly on `ProductCard`:
+
+```tsx
+// ProductContainerSection.tsx
+
+import { Section } from "deco/blocks/section.ts";
+import { ProductCard } from "./ProductCardSection.tsx";
+
+// Specify the prop interface with `Section<ProductCard>`
+export interface Props {
+  myProp: Section<ProductCard>;
+}
+
+// Implement the section
+export default function ProductContainerSection({ myProp: { Component, props } }: Props) {
+  return (
+    <div className="flex gap-4">
+      <Component {...props} />
+    </div>
+  );
+}
+```
+
+This ensures consistency and reinforces the concept of a named type, making it easier for developers to and business users constrain their sections as they wish!
 
 ## Note
 

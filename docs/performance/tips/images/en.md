@@ -55,7 +55,7 @@ It's recommended you never use the `<img/>` tag directly, but use `<Image/>`
 component instead. To use it:
 
 ```tsx
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export default function MyComponent() {
   return <Image src="https://example.com/image.png" />;
@@ -68,7 +68,7 @@ instance, to make the image fill available space, you can apply the following
 tailwind tokens to the code above:
 
 ```tsx
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export default function MyComponent() {
   return (
@@ -97,7 +97,7 @@ Below, you can find the minimal example rendering one image for desktop and
 another one for mobile.
 
 ```tsx
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 function MyComponent() {
   return (
@@ -128,7 +128,7 @@ image fill available space, you can apply the following tailwind tokens to the
 code above:
 
 ```tsx
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 function MyComponent() {
   return (
@@ -176,7 +176,7 @@ To figure out a good value for width and height:
 Now, open your component and fill the width/height values:
 
 ```tsx
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export default function MyComponent() {
   return <Image src="https://example.com/image.png" width={270} height={377} />;
@@ -186,7 +186,7 @@ export default function MyComponent() {
 For Pictures, apply the same method for each Source attribute:
 
 ```tsx
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 function MyComponent() {
   return (
@@ -232,7 +232,7 @@ component's code and make sure:
 For instance, for an `<Image/>` component:
 
 ```tsx
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export default function MyComponent() {
   return (
@@ -251,7 +251,7 @@ export default function MyComponent() {
 For a picture:
 
 ```tsx
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 function MyComponent() {
   return (

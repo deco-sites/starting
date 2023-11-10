@@ -52,8 +52,8 @@ function AddToCart({ name, sku, id, price, discount, currency }: Props) {
 2. Sending a `view_item` event on the product page when it loads, using SendEventOnLoad.
 
 ```tsx
-import type { Product } from "deco-sites/std/commerce/types.ts";
-import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
+import type { Product } from "apps/commerce/types.ts";
+import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { SendEventOnLoad } from "$store/sdk/analytics.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
 
@@ -86,8 +86,8 @@ function ProductDetails({ product, currency }: Props) {
 3. Sending a `select_item` event when clicking on a product link, using SendEventOnClick. Using SendEventOnClick is useful when the component is rendered on the server.
 
 ```tsx
-import type { Product } from "deco-sites/std/commerce/types.ts";
-import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
+import type { Product } from "apps/commerce/types.ts";
+import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { SendEventOnClick } from "$store/sdk/analytics.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
 
@@ -160,4 +160,4 @@ export const sendEvent = <E extends AnalyticsEvent>(event: E) => {
 ## Integrating cart data with the AnalyticsItem type
 
 To integrate a new cart data model, add a data mapper in the `useCart.ts` hook of the platform you are implementing.
-Example from the [VTEX useCart](https://github.com/deco-sites/std/blob/main/packs/vtex/hooks/useCart.ts).
+Example from the [VTEX useCart](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/hooks/useCart.ts#L1).

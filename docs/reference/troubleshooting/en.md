@@ -59,7 +59,7 @@ Check if the environment selector (preview) points to the correct address.
 
 New versions of the deco framework and std bring fixes to common project issues:
 
-`deno eval 'import "$live/scripts/update.ts"'`
+`deno eval 'import "deco/scripts/update.ts"'`
 
 # A component is not interactive, the click/button doesn't work
 

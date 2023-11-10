@@ -59,7 +59,15 @@ A única configuração necessária para codificar sites _deco.cx_ é **instalar
 Deno** em sua máquina. Para instalar o Deno, siga as
 [instruções na página deno.land](https://deno.land/manual/getting_started/installation).
 
-> Recomendamos fortemente o uso do [Visual Studio Code](https://code.visualstudio.com/download) como IDE e do [Git](https://github.com/git-guides/install-git) para controle de versão.
+> Certifique-se de manter o deno atualizado! Caso já tenha o deno instalado, rode o `deno upgrade` para atualizá-lo.
+
+Recomendamos fortemente o uso do [Visual Studio Code](https://code.visualstudio.com/download) como IDE e do [Git](https://github.com/git-guides/install-git) para controle de versão.
+
+## Testando a deco localmente (opcional)!
+
+A deco oferece um mecanismo para testar e explorar nosso sistema sem a necessidade de subir código ou fazer um deployment na nossa infraestrutura. Para isso, acesse: https://play.deco.cx/
+
+![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
 
 ## Crie um site deco.cx
 
@@ -74,7 +82,7 @@ convite é enviado para o endereço de e-mail do seu perfil do Github.
 
 Caso não tenha utilizado uma conta do github para entrar no admin ou caso não tenha recebido um convite, é possível adicionar uma conta do github como colaborador do Site.
 
-![Adicionando colaborador no repositório](https://github.com/deco-sites/starting/assets/882438/721397f6-d24b-4f50-bef4-bc2fbf11f35c)
+![Adicionando colaborador no repositório](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9)
 
 Use o comando `git clone` para baixar o código do site para o seu máquina.
 Recomendamos o uso de SSH. Abra o terminal e execute o comando:
@@ -101,6 +109,8 @@ deno task start
 Aguarde a inicialização do projeto. Na primeira execução, o deno irá baixar e realizar um cache das dependências do projeto, e a deco irá preparar detalhes do site.
 
 O site estará acessível em <http://localhost:8000>.
+
+> Alguns browsers impedem acessar ou executar código no domínio `localhost`! Desative proteções de acesso ou privacidade do browser para acessar esse endereço.
 
 Caso o código de alguma seção em uso na página inicial do site seja alterado, isto será refletido no endereço acima.
 

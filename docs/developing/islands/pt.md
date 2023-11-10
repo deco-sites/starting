@@ -1,6 +1,6 @@
 ---
 description: Adicionando interatividade à página.
-since: 1.1.0
+since: 1.0.0
 ---
 
 Uma das razões pelas quais o Deco é rápido é a nossa abordagem centrada no servidor para criar sites. Isso significa que todo o código que você escreve é executado em nossos servidores, em vez de ser executado em dispositivos de usuário lentos e inconsistentes (navegador). No entanto, às vezes precisamos fornecer interatividade extra aos nossos sites, como adicionar manipuladores de eventos `onClick`, `useState` ou `useEffect`. 
@@ -73,11 +73,37 @@ As islands são componentes do Preact. Isso significa que elas aceitam `props`. 
 
 Objetos complexos como `Date`, funções e classes personalizadas não são aceitos como props de islands.
 
+# Utilizando signals no lugar de state
+
+O `useState` exige que se trabalhe com uma função a parte para a atualização de valor. Preact, e outros sistemas, oferecem [`Signals`](https://preactjs.com/guide/v10/signals/) para tratamento de estado até do `useState`. Um `signal` tem uma referência que tem valor mas que também tem um atributo `.value` que permite atualizar esse valor.
+
+Dentro de um componente, caso o estado seja só usado localmente, é possível fazer uso do hook `useSignal` para criar esses elementos que podem ser utilizado no corpo da função ou no próprio JSX retornado, como no exemplo abaixo.
+
+```tsx
+import { useSignal } from "@preact/signals";
+
+export default function Counter() {
+  const count = useSignal(0)
+
+  return (
+    <div>
+      <button onClick={() => count.value-- }>
+        -
+      </button>
+      <span>{count}</span>
+      <button onClick={() => count.value++ }>
+        +
+      </button>
+    </div>
+  )
+}
+```
+
 # Compartilhando estado entre as islands
 
 No desenvolvimento normal do Preact, o compartilhamento de estado entre componentes geralmente é feito por meio da API [Context](https://preactjs.com/guide/v10/context/). Isso funciona bem para um aplicativo de lado do cliente completo. No entanto, como estamos usando a arquitetura de islands, compartilhar estado entre as islands requer uma nova abordagem.
 
-O Preact introduziu um novo conceito chamado [Signals](https://preactjs.com/guide/v10/signals/). Os signals são uma ótima maneira de compartilhar estado entre as islands, pois é possível publicar e se inscrever em eventos de alteração em uma API concisa.
+Os signals são uma ótima maneira de compartilhar estado entre as islands, pois é possível publicar e se inscrever em eventos de alteração em uma API concisa.
 
 Para usar signals, importe:
 ```tsx 
@@ -109,8 +135,5 @@ Para definir efeitos colaterais em mudanças de signal, use as operações `effe
 
 Ao transformar um componente em uma island, pelo menos o tamanho dele em bytes será duplicado. O servidor renderiza o HTML para esse elemento e o envia para o navegador, mas também envia basicamente o mesmo HTML mais o JS a ser injetado no lado do cliente. Portanto, tente criar apenas as islands necessárias, pois elas tornam o processo de renderização mais intensivo em
 
-Para aprender mais sobre o processo de renderização na deco e receber dicas de como implementar padrões de comuns de design:
-
+Leitura complementar:
 - [Introduction to the Islands architecture - EN](https://deno.com/blog/intro-to-islands)
-- TODO: [Understanding deco rendering pipeline](TODO)
-- TODO: [Recipes: islands](TODO)

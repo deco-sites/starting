@@ -42,7 +42,7 @@ Abra a pasta do seu site em uma IDE e execute as seguintes ações:
 
 **Pronto!** A Section foi criada localmente no seu projeto.
 
-Caso o projeto esteja rodando localmente (`deno task start`) e caso o seletor de ambientes esteja apontando para `localhost:8000`, será possível visualizar a nova Section na biblioteca de blocos (**Library**).
+Caso o projeto esteja rodando localmente (`deno task start`) e caso o seletor de ambientes esteja apontando para `localhost:8000`, será possível visualizar a nova Section na biblioteca de sections (**Sections**).
 
 # Propriedades de uma Section
 
@@ -51,8 +51,8 @@ Uma Section pode ter como propriedade qualquer elemento que seja serializável, 
 - `strings` e `numbers`
 - Tipos simples de objetos serializáveis
 - Tipos gerados de união, extensão, `Pick` ou `Omit`
-- `Sections` ( `import { Section } from "$live/blocks/section.ts"` )
-- `Image` (`import { Image } from "deco-sites/std/components/types.ts"`) e outros componentes da biblioteca padrão deco
+- `Sections` ( `import { Section } from "deco/blocks/section.ts"` )
+- `ImageWidget` (`import type { ImageWidget } from "apps/admin/widgets.ts";`) e outros components do admin
 - Arrays dos tipos indicados acima
 
 Além dos tipos acima, é possível anotar algumas propriedades para que o formulário do admin altere o mecanismo de inserção ou para determinar alguns aspectos do comportamento da propriedade.
@@ -180,4 +180,4 @@ export default function LatestPosts({ title, photo }: Props) {
 
 O cõdigo fonte do `Theme.tsx` apresenta diferentes usos dos tokens. Agora, caso um componente de `Theme` esteja na mesma página do `LatestPosts`, este último podera ser estilizado a partir do componente de tema.
 
-![Estilização com o componente de tema](https://github.com/deco-sites/starting/assets/882438/58860548-d4e4-46f8-a198-75461cf8ab86)
+![Estilização com o componente de tema](https://github.com/deco-cx/apps/assets/882438/10e8d567-6eab-498b-ac8e-44e3362b3131)

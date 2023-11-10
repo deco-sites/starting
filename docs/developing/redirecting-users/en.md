@@ -5,7 +5,7 @@ since: 1.0.0
 
 # Making Redirects in Sections
 
-Redirects in sections allow you to efficiently direct users to different pages based on certain conditions, providing a smooth and seamless navigation experience. With Live.ts, you can easily implement redirects using inline loaders and the `redirect` function from the `$live/mod.ts` module.
+Redirects in sections allow you to efficiently direct users to different pages based on certain conditions, providing a smooth and seamless navigation experience. With Live.ts, you can easily implement redirects using inline loaders and the `redirect` function from the `deco/mod.ts` module.
 
 ## Overview
 
@@ -15,10 +15,10 @@ Redirects enable you to short-circuit the entire rendering phase, bypassing the 
 
 To create a redirect in a section, follow these simple steps:
 
-1. Create an inline loader within your section component, and import the `redirect` function from the `$live/mod.ts` module.
+1. Create an inline loader within your section component, and import the `redirect` function from the `deco/mod.ts` module.
 
 ```tsx
-import { redirect } from "$live/mod.ts";
+import { redirect } from "deco/mod.ts";
 
 export default function MyComponent(props: Props) {
   // Your component logic goes here
@@ -49,7 +49,7 @@ Please note that you need to return something (in this case, the `props`) in the
 Let's say you want to redirect users to a login page if they are not authenticated:
 
 ```tsx
-import { redirect } from "$live/mod.ts";
+import { redirect } from "deco/mod.ts";
 
 export default function MyComponent(props: Props) {
   // Your component logic goes here
