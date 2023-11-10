@@ -11,7 +11,7 @@ executadas antes da renderização de cada página e seu principal objetivo é
 buscar dados de APIs, bancos de dados ou qualquer outra fonte externa. As
 implementações locais de Loaders vivem na pasta `/loaders` do seu projeto, porém
 é possível
-[importar Loaders de outros Sites](/docs/pt/tutorials/importing-other-sites).
+[Instalar novas apps](/docs/pt/getting-started/installing-an-app) que contém outros loaders.
 
 Além de buscar dados, os Loaders na _deco.cx_ **também podem exportar um tipo de
 Props Typescript**, o que permite que sejam configurados no
@@ -39,14 +39,17 @@ facilitando o gerenciamento e a escala do seu projeto.
 
 ## Código de exemplo
 
-Esta é a implementação do Loader `shopifyProductList.ts`:
+Esta é a implementação do Loader `shopify/loaders/ProductList.ts`:
 
 ```tsx
-import type { FnContext } from "deco/types.ts";
-
-import { ConfigShopify, createClient } from "../commerce/shopify/client.ts";
-import { toProduct } from "../commerce/shopify/transform.ts";
-import { Product } from "../commerce/types.ts";
+import type { Product } from "../../commerce/types.ts";
+import { AppContext } from "../../shopify/mod.ts";
+import { ListProducts } from "../utils/storefront/queries.ts";
+import {
+  ListProductsQuery,
+  ListProductsQueryVariables,
+} from "../utils/storefront/storefront.graphql.gen.ts";
+import { toProduct } from "../utils/transform.ts";
 
 export interface Props {
   /** @description search term to use on search */
@@ -55,35 +58,42 @@ export interface Props {
   count: number;
 }
 
-export default async function searchLoader(
+/**
+ * @title Shopify Integration
+ * @description Product List loader
+ */
+const loader = async (
   props: Props,
   _req: Request,
-  ctx: FnContext<{ configShopify: ConfigShopify }>,
-): Promise<Product[] | null> {
-  const { configShopify } = ctx;
-  const shopify = createClient(configShopify);
+  ctx: AppContext,
+): Promise<Product[] | null> => {
+  const { storefront } = ctx;
 
   const count = props.count ?? 12;
   const query = props.query || "";
 
-  // Fetch Shopify's API using deco's built-in Shopify Client
-  const data = await shopify.products({
-    first: count,
-    query,
+  const data = await storefront.query<
+    ListProductsQuery,
+    ListProductsQueryVariables
+  >({
+    variables: { first: count, query },
+    ...ListProducts,
   });
 
   // Transform Shopify product format into schema.org's compatible format
   // If a property is missing from the final `products` array you can add
   // it in here
   const products = data?.products.nodes.map((p) =>
-    toProduct(p, p.variants.nodes[0])
+    toProduct(p, p.variants.nodes[0], new URL(_req.url))
   );
 
   return products ?? [];
-}
+};
+
+export default loader;
 ```
 
-[Fonte](https://github.com/deco-sites/std/blob/bedf496b7a2a480c1a9dfae477fe34020daae821/functions/shopifyProductList.ts)
+[Fonte](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/shopify/loaders/ProductList.ts#L1)
 
 ## Leitura recomendada
 

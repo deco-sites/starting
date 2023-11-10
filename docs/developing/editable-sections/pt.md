@@ -24,7 +24,7 @@ Um componente Preact, é uma função exportada por padrão (`export default`) q
 O código deste elemento é escrito em HTML com JS, como no exemplo abaixo.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 
@@ -105,7 +105,7 @@ Um projeto deco faz uso do tipo das propriedades de um componente para gerar aut
 Execute o projeto localmente (`deno task start`) e altere o código da `Intro` para receber uma nova propriedade opcional, o `hightlight` de um link. Para isso, altere o tipo `Link` e o código JSX do componente, lembrando de salvar o arquivo após a alteração.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 

@@ -52,7 +52,7 @@ Uma Section pode ter como propriedade qualquer elemento que seja serializável, 
 - Tipos simples de objetos serializáveis
 - Tipos gerados de união, extensão, `Pick` ou `Omit`
 - `Sections` ( `import { Section } from "deco/blocks/section.ts"` )
-- `Image` (`import { Image } from "deco-sites/std/components/types.ts"`) e outros componentes da biblioteca padrão deco
+- `Image` (`import { ImageWidget } from "apps/admin/widgets.ts"`) e outros componentes da biblioteca padrão deco
 - Arrays dos tipos indicados acima
 
 Além dos tipos acima, é possível anotar algumas propriedades para que o formulário do admin altere o mecanismo de inserção ou para determinar alguns aspectos do comportamento da propriedade.
@@ -60,8 +60,8 @@ Além dos tipos acima, é possível anotar algumas propriedades para que o formu
 Como exemplo, vamos adicionar três novas propriedades ao nosso componente `LatestPosts`, uma para imagem (`photo`), outro para o corpo da postagem (`post`) e um para a hora da postagem.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
    /**
@@ -138,8 +138,8 @@ export interface MainColors {
 Adapte a classe de postagens para fazer uso de alguns tokens. Por exemplo, o título principal da postagem agora segue a cor primária do site.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
    /**

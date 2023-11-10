@@ -18,12 +18,12 @@ A Section is a `tsx` code inside the `sections` folder. Also, a Section:
 - has serializable properties
 - exports its properties type
 
-A Preact component is a function exported by default (`export default`) that receives properties, returns JSX, and is invoked on each rendering of the defined element. As an example, open the `sections/Intro.tsx` file from the ecommerce template in VSCode. This file is also accessible [on the deco GitHub](https://github.com/deco-sites/start/blob/main/sections/Intro.tsx).
+A Preact component is a function exported by default (`export default`) that receives properties, returns JSX, and is invoked on each rendering of the defined element. As an example, open the `sections/Hero.tsx` file from the ecommerce template in VSCode. This file is also accessible [on the deco GitHub](https://github.com/deco-sites/start/blob/main/sections/Hero.tsx)
 
 The code of this element is written in HTML with JS, as shown in the example below.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 
@@ -104,7 +104,7 @@ A deco project uses the type of a component's properties to automatically genera
 Run the project locally (`deno task start`) and modify the code of the `Intro` to receive a new optional property, the `highlight` of a link. To do this, modify the `Link` type and the JSX code of the component, remembering to save the file after the modification.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
 import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 

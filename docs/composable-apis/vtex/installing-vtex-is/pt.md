@@ -14,8 +14,8 @@ produtos que desejam.
 
 A _deco.cx_ oferece **integração nativa com a VTEX Intelligent Search** através
 dos [Loaders](/docs/pt/concepts/loader) disponíveis em
-[deco-sites/std](https://github.com/deco-sites/std). Você pode vê-la em ação no
-[Fashion starter](https://fashion.deco.site).
+[deco-cx/apps](https://github.com/deco-cx/apps). Você pode vê-la em ação no
+[Fashion starter](https://storefront-vtex.deco.site).
 
 Infelizmente, a VTEX IS **não vem pré-instalada em todas as contas VTEX**, e
 você precisa instalá-la para usar as APIs em seu Site _deco.cx_. Não se

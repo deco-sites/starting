@@ -15,8 +15,8 @@ for shoppers to find the products they want.
 
 _deco.cx_ offers **native integration with VTEX Intelligent Search** via the
 [Loaders](/docs/en/concepts/loader) available in
-[deco-sites/std](https://github.com/deco-sites/std). You can see it in action in
-the [Fashion starter](https://fashion.deco.site).
+[deco-cx/apps](https://github.com/deco-cx/apps). You can see it in action in
+the [Storefront starter](https://storefront-vtex.deco.site).
 
 Unfortunately, VTEX IS **does not come pre-installed in all VTEX accounts**, and
 you need to install it to use its APIs in your _deco.cx_ Site. Don't worry:

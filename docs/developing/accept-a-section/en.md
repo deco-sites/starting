@@ -85,6 +85,60 @@ export default function ProductContainerSection({ myProp: { Component, props } }
 
 With this setup, you can now use `ProductContainerSection` to wrap any other section, including the `ProductCardSection`, and add a container around it.
 
+Now, let's say you want restrict your section to `ProductCard` because you have a lot of sections in your site but only that one should fit in that place, you can do the following:
+
+```tsx
+// ProductCardSection.tsx
+
+import { JSX } from "preact";
+
+// Define a named type, for example, "ProductCard," pointing to `JSX.Element`
+export type ProductCard = JSX.Element;
+
+// Define the props interface
+export interface Props {
+  title: string;
+  price: number;
+  imageUrl: string;
+}
+
+// Implement the section and specify the return type as "ProductCard"
+export default function ProductCardSection({ title, price, imageUrl }: Props): ProductCard {
+  return (
+    <div>
+      <img src={imageUrl} alt={title} />
+      <h3>{title}</h3>
+      <p>{price}</p>
+    </div>
+  );
+}
+```
+
+Now, you can depend directly on `ProductCard`:
+
+```tsx
+// ProductContainerSection.tsx
+
+import { Section } from "deco/blocks/section.ts";
+import { ProductCard } from "./ProductCardSection.tsx";
+
+// Specify the prop interface with `Section<ProductCard>`
+export interface Props {
+  myProp: Section<ProductCard>;
+}
+
+// Implement the section
+export default function ProductContainerSection({ myProp: { Component, props } }: Props) {
+  return (
+    <div className="flex gap-4">
+      <Component {...props} />
+    </div>
+  );
+}
+```
+
+This ensures consistency and reinforces the concept of a named type, making it easier for developers to and business users constrain their sections as they wish!
+
 ## Note
 
 With the ability to accept other sections as parameters, you can create highly modular and customizable sections that adapt to different use cases and make your Live.ts applications even more powerful and flexible. Happy coding! 🧩🚀

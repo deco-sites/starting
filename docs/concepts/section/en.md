@@ -6,7 +6,7 @@ description: |
 Sections are **UI components built with [Preact](https://preactjs.com/)** that
 can receive props configured by users on _deco.cx_'s Admin. The Section local
 implementations live on the `sections/` folder in the Site's code, but it's also
-possible to [import Sections](/docs/en/developing/importing-other-sites).
+possible to [Install Apps](/docs/pt/getting-started/installing-an-app).
 
 Some examples of Section for an ecommerce store would be:
 

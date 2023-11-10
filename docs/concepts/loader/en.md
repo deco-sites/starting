@@ -10,7 +10,7 @@ sources**, transform it if necessary, and **provide it to the site Sections that
 need it.** Loaders can be used to fetch data from APIs, databases, or any other
 external source. They live locally on the `/loaders/` folder of your project,
 but it's also possible to
-[import Loaders from other Sites](/docs/en/developing/importing-other-sites).
+[Installing apps](/docs/en/getting-started/installing-an-app) that contain loaders.
 
 <!-- TODO: Update folder name after new engine -->
 
@@ -31,7 +31,7 @@ can be reused across [Sites](/docs/en/concepts/site) or across teams, making it
 easier to manage and scale your project.
 
 > All Sections for ecommerce stores created by _deco.cx_ in the
-> [Fashion](https://github.com/deco-sites/fashion) start use a canonical Product
+> [Storefront](https://github.com/deco-sites/storefront) start use a canonical Product
 > type, and also every Loader that connects to ecommerce providers's APIs. This
 > means that you can reuse the same UI to show data from different places,
 > depending on the configuration.
@@ -40,14 +40,17 @@ easier to manage and scale your project.
 
 ## Example Code
 
-This is the implementation of the `shopifyProductList.ts` Loader:
+This is the implementation of the `shopify/loaders/ProductList.ts` Loader:
 
 ```tsx
-import type { FnContext } from "deco/types.ts";
-
-import { ConfigShopify, createClient } from "../commerce/shopify/client.ts";
-import { toProduct } from "../commerce/shopify/transform.ts";
-import { Product } from "../commerce/types.ts";
+import type { Product } from "../../commerce/types.ts";
+import { AppContext } from "../../shopify/mod.ts";
+import { ListProducts } from "../utils/storefront/queries.ts";
+import {
+  ListProductsQuery,
+  ListProductsQueryVariables,
+} from "../utils/storefront/storefront.graphql.gen.ts";
+import { toProduct } from "../utils/transform.ts";
 
 export interface Props {
   /** @description search term to use on search */
@@ -56,35 +59,42 @@ export interface Props {
   count: number;
 }
 
-export default async function searchLoader(
+/**
+ * @title Shopify Integration
+ * @description Product List loader
+ */
+const loader = async (
   props: Props,
   _req: Request,
-  ctx: FnContext<{ configShopify: ConfigShopify }>,
-): Promise<Product[] | null> {
-  const { configShopify } = ctx;
-  const shopify = createClient(configShopify);
+  ctx: AppContext,
+): Promise<Product[] | null> => {
+  const { storefront } = ctx;
 
   const count = props.count ?? 12;
   const query = props.query || "";
 
-  // Fetch Shopify's API using deco's built-in Shopify Client
-  const data = await shopify.products({
-    first: count,
-    query,
+  const data = await storefront.query<
+    ListProductsQuery,
+    ListProductsQueryVariables
+  >({
+    variables: { first: count, query },
+    ...ListProducts,
   });
 
   // Transform Shopify product format into schema.org's compatible format
   // If a property is missing from the final `products` array you can add
   // it in here
   const products = data?.products.nodes.map((p) =>
-    toProduct(p, p.variants.nodes[0])
+    toProduct(p, p.variants.nodes[0], new URL(_req.url))
   );
 
   return products ?? [];
-}
+};
+
+export default loader;
 ```
 
-[Source](https://github.com/deco-sites/std/blob/bedf496b7a2a480c1a9dfae477fe34020daae821/functions/shopifyProductList.ts)
+[Source](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/shopify/loaders/ProductList.ts#L1)
 
 ## Recommended Reading
 

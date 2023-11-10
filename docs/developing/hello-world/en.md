@@ -48,7 +48,7 @@ A Section can have any property that is serializable and accept as a property in
 - Simple types of serializable objects
 - Generated types from union, extends, `Pick`, or `Omit`
 - `Sections` (`import { Section } from "deco/blocks/section.ts"`)
-- `Image` (`import { Image } from "deco-sites/std/components/types.ts"`) and other components from the deco standard library
+- `Image` (`import { ImageWidget as Image } from "apps/admin/widgets.ts"`) and other components from the deco standard library
 - Arrays of the types indicated above
 
 In addition to those types, it is possible to annotate some properties so that the admin form changes the input mechanism or to determine certain aspects of the property's behavior.
@@ -56,8 +56,8 @@ In addition to those types, it is possible to annotate some properties so that t
 As an example, let's add three new properties to our `LatestPosts` component, one for an image (`photo`), another for the post body (`post`), and one for the post time.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
    /**
@@ -134,8 +134,8 @@ export interface MainColors {
 Modify the post class to make use of some tokens. For example, the main title of the post now follows the primary color of the site.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
    /**
