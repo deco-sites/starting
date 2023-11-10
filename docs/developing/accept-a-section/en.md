@@ -15,14 +15,14 @@ When creating a Section that accepts other sections as parameters, you define an
 
 To create a Section that accepts other Sections as parameters, follow these steps:
 
-1. Import the `Section` type from `$live/blocks/section.ts`.
+1. Import the `Section` type from `deco/blocks/section.ts`.
 
 2. Define an interface for the props of your section component. Include a property called `myProp`, which is of type `Section`.
 
 ```tsx
 // MySection.tsx
 
-import { Section } from "$live/blocks/section.ts";
+import { Section } from "deco/blocks/section.ts";
 
 export interface Props {
   myProp: Section;
@@ -68,7 +68,7 @@ Now, you want to create a higher-order section called `ProductContainerSection`,
 ```tsx
 // ProductContainerSection.tsx
 
-import { Section } from "$live/blocks/section.ts";
+import { Section } from "deco/blocks/section.ts";
 
 export interface Props {
   myProp: Section;

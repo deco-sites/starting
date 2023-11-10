@@ -15,14 +15,14 @@ Ao criar uma Seção que aceita outras seções como parâmetros, você define u
 
 Para criar uma Seção que aceita outras Seções como parâmetros, siga estas etapas:
 
-1. Importe o tipo `Section` de `$live/blocks/section.ts`.
+1. Importe o tipo `Section` de `deco/blocks/section.ts`.
 
 2. Defina uma interface para as props do seu componente de seção. Inclua uma propriedade com nome de sua escolha, que é do tipo `Section`.
 
 ```tsx
 // MySection.tsx
 
-import { Section } from "$live/blocks/section.ts";
+import { Section } from "deco/blocks/section.ts";
 
 export interface Props {
   myProp: Section;
@@ -68,7 +68,7 @@ Agora, você deseja criar uma seção de ordem superior chamada `ProductContaine
 ```tsx
 // ProductContainerSection.tsx
 
-import { Section } from "$live/blocks/section.ts";
+import { Section } from "deco/blocks/section.ts";
 
 export interface Props {
   myProp: Section;

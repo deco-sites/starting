@@ -16,7 +16,7 @@ The pre-requisites to make your component work with error boundaries is having t
 ```json
 {
   "imports": {
-    "$live/": "https://denopkg.com/deco-cx/deco@1.21.4/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.21.4/",
     "$fresh/": "https://denopkg.com/deco-cx/fresh@1.3.2/",
     "preact": "https://esm.sh/preact@10.16.0",
     "preact/": "https://esm.sh/preact@10.16.0/",
@@ -37,7 +37,7 @@ To create an error boundary, you can follow these steps:
 ```tsx
 // ProductShelf.tsx
 
-import { ErrorBoundaryParams } from "$live/types.ts";
+import { ErrorBoundaryParams } from "deco/types.ts";
 
 export interface Props {
     myProp: string;

@@ -19,7 +19,7 @@ Antes de começar, verifique se você possui o seguinte:
 Para usar secrets no seu site, você precisa declarar um prop de secret nos seus componentes. Aqui está um exemplo de como fazer isso em uma seção usando um inline loader:
 
 ```tsx
-import { Secret } from "$live/loaders/secret.ts";
+import { Secret } from "apps/website/loaders/secret.ts";
 
 export interface Props {
   secret: Secret;

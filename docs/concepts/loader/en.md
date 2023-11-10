@@ -43,7 +43,7 @@ easier to manage and scale your project.
 This is the implementation of the `shopifyProductList.ts` Loader:
 
 ```tsx
-import type { FnContext } from "$live/types.ts";
+import type { FnContext } from "deco/types.ts";
 
 import { ConfigShopify, createClient } from "../commerce/shopify/client.ts";
 import { toProduct } from "../commerce/shopify/transform.ts";

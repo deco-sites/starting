@@ -42,7 +42,7 @@ facilitando o gerenciamento e a escala do seu projeto.
 Esta é a implementação do Loader `shopifyProductList.ts`:
 
 ```tsx
-import type { FnContext } from "$live/types.ts";
+import type { FnContext } from "deco/types.ts";
 
 import { ConfigShopify, createClient } from "../commerce/shopify/client.ts";
 import { toProduct } from "../commerce/shopify/transform.ts";

@@ -52,11 +52,11 @@ loader ao configurar as propriedades do componente no Editor Admin.
 
 De fato, nossa ProductShelf possui ao menos quatro implementações distintas para
 ler produtos de APIs e até mesmo plataformas de e-commerce distintas, são elas:
-[VNDAProductList](https://github.com/deco-sites/std/blob/c99ccad64e350b4e4775f98232394486e18b4715/functions/vndaProductList.ts#L1),
-[VTEXProductList](https://github.com/deco-sites/std/blob/c99ccad64e350b4e4775f98232394486e18b4715/functions/vtexProductList.ts#L1),
-[VTEXLegacyProductList](https://github.com/deco-sites/std/blob/c99ccad64e350b4e4775f98232394486e18b4715/functions/vtexLegacyProductList.ts#L1),
-e
-[ShopifyProductList](https://github.com/deco-sites/std/blob/c99ccad64e350b4e4775f98232394486e18b4715/functions/shopifyProductList.ts#L1)
+[VNDAProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vnda/loaders/productList.ts#L1),
+[VTEXProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/loaders/intelligentSearch/productList.ts#L1),
+[VTEXLegacyProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/loaders/legacy/productList.ts#L1),
+It is
+[ShopifyProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/shopify/loaders/intelligentSearch/ProductList.ts#L1)
 
 Isso faz com que Universal Components sejam algo que tem um valor e usabilidade
 muito grande comparado a componentes que dependem de dados de APIs!

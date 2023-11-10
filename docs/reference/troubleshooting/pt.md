@@ -59,7 +59,7 @@ Verifique se o seletor de ambientes (preview) aponta para o endereço correto.
 
 Novas versões do framework da deco e do std trazem correções de falhas comuns ao projeto:
 
-`deno eval 'import "$live/scripts/update.ts"'`
+`deno eval 'import "deco/scripts/update.ts"'`
 
 # Um componente não está interativo, o click/botão não funciona
 

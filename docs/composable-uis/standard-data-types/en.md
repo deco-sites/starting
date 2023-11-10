@@ -51,11 +51,11 @@ Editor.
 
 In fact, our ProductShelf has at least four distinct implementations for read
 products from APIs and even different e-commerce platforms, they are:
-[VNDAProductList](https://github.com/deco-sites/std/blob/c99ccad64e350b4e4775f98232394486e18b4715/functions/vndaProductList.ts#L1),
-[VTEXProductList](https://github.com/deco-sites/std/blob/c99ccad64e350b4e4775f98232394486e18b4715/functions/vtexProductList.ts#L1),
-[VTEXLegacyProductList](https://github.com/deco-sites/std/blob/c99ccad64e350b4e4775f98232394486e18b4715/functions/vtexLegacyProductList.ts#L1),
+[VNDAProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vnda/loaders/productList.ts#L1),
+[VTEXProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/loaders/intelligentSearch/productList.ts#L1),
+[VTEXLegacyProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/loaders/legacy/productList.ts#L1),
 It is
-[ShopifyProductList](https://github.com/deco-sites/std/blob/c99ccad64e350b4e4775f98232394486e18b4715/functions/shopifyProductList.ts#L1)
+[ShopifyProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/shopify/loaders/intelligentSearch/ProductList.ts#L1)
 
 This makes Universal Components something that has value and usability. very
 large compared to components that depend on data from APIs!

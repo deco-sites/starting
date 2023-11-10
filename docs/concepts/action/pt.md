@@ -27,9 +27,7 @@ interativas.
 Esta é a implementação da Action `newsletter/subscribe.ts`:
 
 ```tsx
-import { paths } from "../../utils/paths.ts";
-import type { Context } from "deco-sites/std/packs/vtex/accounts/vtex.ts";
-import type { OrderForm } from "deco-sites/std/packs/vtex/types.ts";
+import { AppContext } from "../../mod.ts";
 
 export interface Props {
   email: string;
@@ -39,16 +37,12 @@ export interface Props {
   campaing?: string;
 }
 
-/**
- * @docs https://developers.vtex.com/docs/api-reference/checkout-api#post-/api/checkout/pub/orderForm/-orderFormId-/items
- */
 const action = async (
   props: Props,
   _req: Request,
-  ctx: Context,
-): Promise<OrderForm> => {
-  const { configVTEX: config } = ctx;
-  const url = new URL(`${paths(config!)["no-cache"]["Newsletter.aspx"]}`);
+  ctx: AppContext,
+): Promise<void> => {
+  const { vcsDeprecated } = ctx;
   const form = new FormData();
   const {
     email,
@@ -64,19 +58,15 @@ const action = async (
   form.append("newsInternalPart", part);
   form.append("newsInternalCampaign", campaing);
 
-  const response = await fetch(url, {
-    method: "POST",
+  await vcsDeprecated["POST /no-cache/Newsletter.aspx"]({}, {
     body: form,
   });
-
-  return response.json();
 };
 
 export default action;
 ```
 
-[Fonte](https://github.com/deco-sites/std/blob/ed4b378b50ea618009f99a9da84b7142baab0729/packs/vtex/actions/newletter/subscribe.ts)
-
+[Fonte](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/actions/newsletter/subscribe.ts#L1C1-L37C23)
 ## Leitura recomendada
 
 - [Buscando dados de API](/docs/pt/developing/fetching-data)

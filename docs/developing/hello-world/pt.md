@@ -51,7 +51,7 @@ Uma Section pode ter como propriedade qualquer elemento que seja serializável, 
 - `strings` e `numbers`
 - Tipos simples de objetos serializáveis
 - Tipos gerados de união, extensão, `Pick` ou `Omit`
-- `Sections` ( `import { Section } from "$live/blocks/section.ts"` )
+- `Sections` ( `import { Section } from "deco/blocks/section.ts"` )
 - `Image` (`import { Image } from "deco-sites/std/components/types.ts"`) e outros componentes da biblioteca padrão deco
 - Arrays dos tipos indicados acima
 

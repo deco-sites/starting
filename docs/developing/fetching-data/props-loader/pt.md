@@ -18,7 +18,7 @@ direta para o componente, sem que haja nenhum uso pelo loader em si.
 Tomemos como exemplo o loader abaixo:
 
 ```ts
-import type { SectionProps } from "$live/mod.ts";
+import type { SectionProps } from "deco/mod.ts";
 
 // Props type that will be configured in deco.cx's Admin
 export interface Props {
@@ -90,12 +90,12 @@ async function dogFacts(
 Note que, mesmo recebendo `title` como parâmetro, não estamos fazendo uso dele.
 Agora, vamos;
 
-1. Importar o `PropsLoader` do $live
+1. Importar o `PropsLoader` do deco
 2. mudar nossa função `loader` para ser um mapa que contém a propriedade na qual
    queremos carregar dinamicamente, que no nosso caso é `dogFacts`.
 
 ```ts
-import { PropsLoader } from "$live/mod.ts";
+import { PropsLoader } from "deco/mod.ts";
 
 // Props type that will be configured in deco.cx's Admin
 export interface LoadProps {

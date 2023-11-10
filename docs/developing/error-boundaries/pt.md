@@ -16,7 +16,7 @@ Os pré-requisitos para fazer o seu componente funcionar com tratamento de erro 
 ```json
 {
   "imports": {
-    "$live/": "https://denopkg.com/deco-cx/deco@1.21.4/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.21.4/",
     "$fresh/": "https://denopkg.com/deco-cx/fresh@1.3.2/",
     "preact": "https://esm.sh/preact@10.16.0",
     "preact/": "https://esm.sh/preact@10.16.0/",
@@ -37,7 +37,7 @@ Para criar um limite de erro, você pode seguir estes passos:
 ```tsx
 // ProductShelf.tsx
 
-import { ErrorBoundaryParams } from "$live/types.ts";
+import { ErrorBoundaryParams } from "deco/types.ts";
 
 export interface Props {
     myProp: string;

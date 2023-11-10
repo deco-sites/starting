@@ -31,7 +31,7 @@ In your repository, matchers are located within the `matchers` folder, similar t
 The signature of our matcher will follow this structure:
 
 ```ts
-import { MatchContext } from "$live/blocks/matcher.ts";
+import { MatchContext } from "deco/blocks/matcher.ts";
 
 export interface Props {
 }
