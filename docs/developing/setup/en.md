@@ -41,7 +41,15 @@ Our technology stack is focused on **simplicity and performance**, making it acc
 
 The only setup required to code _deco.cx_ sites is to **install Deno** on your machine. To install Deno, follow the [instructions on the deno.land page](https://deno.land/manual/getting_started/installation).
 
-> We highly recommend using [Visual Studio Code](https://code.visualstudio.com/download) as the IDE and [Git](https://github.com/git-guides/install-git) as the version control tool.
+> Make sure to keep Deno up-to-date! If you already have Deno installed, run `deno upgrade` to update it.
+
+We highly recommend using [Visual Studio Code](https://code.visualstudio.com/download) as the IDE and [Git](https://github.com/git-guides/install-git) as the version control tool.
+
+## Testing Deco Locally (Optional)!
+
+Deco offers a mechanism to test and explore our system without the need to deploy code or make a deployment on our infrastructure. To do this, visit: https://play.deco.cx/
+
+![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
 
 ## Create a deco site
 
@@ -53,7 +61,7 @@ Accept the invitation to join the repository created for your site. This invitat
 
 If you haven't used a GitHub account to log into the admin or haven't received an invitation, you can add a GitHub account as a collaborator to the site.
 
-![Adding collaborator to the repository](https://github.com/deco-sites/starting/assets/882438/721397f6-d24b-4f50-bef4-bc2fbf11f35c)
+![Adding collaborator to the repository](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9)
 
 Use the `git clone` command to download the site code to your machine. We recommend using SSH. Open the terminal and execute the command:
 
@@ -79,6 +87,8 @@ deno task start
 Wait for the project to initialize. On the first run, deno will download and cache the project dependencies, and deco will prepare site details.
 
 The site will be accessible at <http://localhost:8000>.
+
+> Some browsers may block access to or execution of code on the `localhost` domain! Disable browser ad blockers or privacy protections to access this address.
 
 If the code of any section used on the site's homepage is modified, it will be reflected at the above address.
 

@@ -19,14 +19,12 @@ Uma Section é um código `tsx` dentro da pasta `sections` e que:
 - tem propriedades serializáveis
 - exporta o tipo de suas propriedades
 
-Um componente Preact, é uma função exportada por padrão (`export default`) que recebe propriedades, retorna um JSX e é invocada a cada renderização do elemento que é definido. Como exemplo, abra, no VSCode, a section `sections/Intro.tsx` do template de ecommerce. Este arquivo também está acessível [no github da deco](https://github.com/deco-sites/start/blob/main/sections/Intro.tsx).
+Um componente Preact, é uma função exportada por padrão (`export default`) que recebe propriedades, retorna um JSX e é invocada a cada renderização do elemento que é definido. Como exemplo, abra, no VSCode, a section `sections/Hero.tsx` do template de ecommerce. Este arquivo também está acessível [no github da deco](https://github.com/deco-sites/start/blob/main/sections/Hero.tsx).
 
 O código deste elemento é escrito em HTML com JS, como no exemplo abaixo.
 
 ```tsx
-import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
-import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
-import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 
 /** @title {{{title}}} - {{{href}}} */
 export interface Link {
@@ -35,46 +33,57 @@ export interface Link {
 }
 
 export interface Props {
-  /** @description: Ex: "Software Engineer" */
-  headline: string;
-  /** @title Upload your photo */
-  picture?: DecoImage;
-  introduction: HTML;
+  logo?: ImageWidget;
+  title?: string;
+  /** @format textarea */
+  headline?: string;
   links?: Array<Link>;
 }
 
-export default function Intro({
-  headline,
-  picture,
-  introduction,
-  links,
+export default function Hero({
+  title = "deco.cx",
+  logo = "/logo.svg",
+  headline =
+    "The digital experience platform that combines performance and personalization for the ultimate sales results.",
+  links = [
+    { title: "Official website", "href": "https://deco.cx/" },
+    { title: "Linkedin", "href": "https://www.linkedin.com/company/deco-cx/" },
+    { title: "Discord", "href": "https://deco.cx/discord" },
+  ],
 }: Props) {
   return (
-    <header class="pt-20 pb-32 flex justify-center items-center">
-      <div class="flex flex-col gap-2 text-3xl">
-        <h1 class="font-bold text-4xl">{headline}</h1>
+    <header class="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base">
+      <div class="mb-10 md:mb-20">
         <img
-          class="object-cover w-24 h-24 rounded-full"
-          src={picture}
-          alt={headline}
+          class="object-cover w-20"
+          src={logo}
+          alt={title}
         />
-        <HTMLRenderer html={introduction} />
-        {!!links?.length && (
-          <ul>
-            {links.map(({ href, title }) => (
-              <a href={href} aria-label={title}>
-                <li>{title}</li>
-              </a>
-            ))}
-          </ul>
-        )}
       </div>
+      <div class="font-bold text-3xl lg:text-6xl leading-tight lg:leading-none xl:w-5/6">
+        {headline}
+      </div>
+      {!!links?.length && (
+        <ul class="mt-8 flex flex-col md:flex-row gap-2 md:gap-4">
+          {links.map(({ href, title }) => (
+            <li>
+              <a target="_blank" href={href} aria-label={title} class="link">
+                {title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </header>
   );
 }
 ```
 
-Observe os tipos exportados neste arquivo. Estes mesmos tipos são acessíveis no Admin ao criar um bloco Intro. No Admin, selecione a **Library**, o bloco `Intro` e a opção de criar de bloco para visualizar as mesmas propriedades em um formulário de edição.
+Observe os tipos exportados neste arquivo. Estes mesmos tipos são acessíveis no Admin ao criar um bloco Intro. No Admin, selecione a **Sections**, o bloco `Hero` e a opção de criar de bloco para visualizar as mesmas propriedades em um formulário de edição.
+
+![Criar bloco](https://github.com/deco-cx/apps/assets/882438/c7eee318-c6df-4ade-abd8-66390758aca7)
+
+As propriedades do código de um bloco se refletem no Admin.
 
 ```tsx
 /** @title {{{title}}} - {{{href}}} */
@@ -84,17 +93,16 @@ export interface Link {
 }
 
 export interface Props {
-  /** @description: Ex: "Software Engineer" */
-  headline: string;
-  /** @title Upload your photo */
-  picture?: DecoImage;
-  introduction: HTML;
+  logo?: ImageWidget;
+  title?: string;
+  /** @format textarea */
+  headline?: string;
   links?: Array<Link>;
 }
 ```
 _Tipos no arquivo de uma Section_
 
-![Edição de propriedades da Section Intro](https://github.com/deco-sites/start/assets/882438/ad261083-b924-4737-917f-f01548385a0c)
+![Edição de propriedades da Section Hero](https://github.com/deco-cx/apps/assets/882438/b57f6fae-da58-4cc4-a5cc-aa99985cd442)
 
 Um projeto deco faz uso do tipo das propriedades de um componente para gerar automáticamente o formulário de preenchimento de bloco no Admin. Na figura a seguir é possível visualizar como o Admin conhece as informações a serem colocadas no formulário. Para isto, o Admin entra em contato com o Site em produção para pegar os dados das propriedades das Sections daquele projeto. Por sua vez, o código em um Site é oriundo do GitHub, o mesmo que o desenvolvedor utiliza.
 
@@ -102,64 +110,55 @@ Um projeto deco faz uso do tipo das propriedades de um componente para gerar aut
 
 # Primeira alteração e seleção de ambiente
 
-Execute o projeto localmente (`deno task start`) e altere o código da `Intro` para receber uma nova propriedade opcional, o `hightlight` de um link. Para isso, altere o tipo `Link` e o código JSX do componente, lembrando de salvar o arquivo após a alteração.
+Execute o projeto localmente (`deno task start`) e altere o código da `Hero` para receber uma nova propriedade opcional, o `hightlight` de um link. Para isso, altere o tipo `Link` e o código JSX do componente, lembrando de salvar o arquivo após a alteração.
 
 ```tsx
-import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
-import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
-import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
-/** @title {{{title}}} - {{{href}}} */
-export interface Link {
-  title: string;
-  href: string;
-  hightlight?: boolean;
-}
 
 export interface Props {
-  /** @description: Ex: "Software Engineer" */
-  headline: string;
-  /** @title Upload your photo */
-  picture?: DecoImage;
-  introduction: HTML;
-  links?: Array<Link>;
+   /**
+    * @title Post image.
+    */
+   photo?: ImageWidget;
+   /**
+   * @title Post body.
+   */
+   post: string;
+   /**
+   * @title Publish date.
+   * @format datetime
+   */
+   datetime: string;
+   /**
+   * @title Post title.
+   */
+   title: string;
 }
 
-export default function Intro({
-  headline,
-  picture,
-  introduction,
-  links,
-}: Props) {
-  return (
-    <header class="pt-20 pb-32 flex justify-center items-center">
-      <div class="flex flex-col gap-2 text-3xl">
-        <h1 class="font-bold text-4xl">{headline}</h1>
-        <img
-          class="object-cover w-24 h-24 rounded-full"
-          src={picture}
-          alt={headline}
-        />
-        <HTMLRenderer html={introduction} />
-        {!!links?.length && (
-          <ul>
-            {links.map(({ href, title, hightlight }) => (
-              <a href={href} aria-label={title}>
-                <li class={`${hightlight ? "font-black" : ""}`}>{title}</li>
-              </a>
-            ))}
-          </ul>
-        )}
+export default function LatestPosts({ title, photo }: Props) {
+   return (
+      <div>
+      {photo && <Image
+         src={photo}
+         alt={`${title} image`}
+         height={500}
+         width={500}
+         class="rounded"
+      />}
+      <h1 class="font-bold">{title}</h1>
+      <p>This is an example section</p>
       </div>
-    </header>
-  );
+   );
 }
+
 ```
 _Alterando o tipo Link e o JSX com a nova propriedade `hightlight`_
 
 Ao realizar esta alteração localmente, ela não afeta ou impacta o Site em produção. No entanto, com o projeto localmente (`deno task start`), é possível visualizar tal alteração no próprio Admin. Para isto, é importante ir no seletor de ambiente, e escolher o `localhost:8000` como referência.
 
-![Alterando o ambiente](https://github.com/deco-sites/starting/assets/882438/6154427b-86b3-4569-87af-c5c21f7b7520)
+![Alterando o ambiente](https://github.com/deco-cx/apps/assets/882438/62efa5c1-f960-4d21-8ec8-2c8f729c1093)
 
 Ao apontar para o `localhost`, o admin consulta agora a versão rodando localmente para detectar as propriedades e `sections` disponíveis.
 
@@ -167,20 +166,20 @@ Para que outras pessoas possam ver a alteração, é preciso realizar o `commit`
 
 # Resumo: Para alterar e testar uma `section`
 
-De forma sucinta, para testar alterações na Section `FAQ.tsx`:
+De forma sucinta, para testar alterações na Section `Hero.tsx`:
 
 1. Execute `deno task start` no Terminal. _(Você não precisa executar novamente
    se já estiver rodando)_
 
-2. Realize alterações localmente no arquivo `sections/Intro.tsx`.
+2. Realize alterações localmente no arquivo `sections/Hero.tsx`.
 
 3. Acesse o Admin de _deco.cx_ em https://deco.cx/admin, selecione seu Site e vá
-   em `Library`.
+   em `Sections`.
 
 4. Certifique-se de que `localhost:8000` esteja selecionado no Seletor de
    Ambiente no canto superior direito da página.
 
-5. Procure `Intro.tsx` dentre os blocos.
+5. Procure `Hero` dentre os blocos.
 
 6. **Pronto!** Agora você pode configurar `props` para essa Section e ver como ela está sendo renderizada. O _preview_ atualizará automaticamente se você alterar o código da Section localmente.
 
