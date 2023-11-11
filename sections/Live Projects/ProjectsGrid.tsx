@@ -37,7 +37,7 @@ export interface Classification {
 
 interface Category {
   label: string;
-  hideCategory?: boolean; 
+  hideCategoryNameOnCard?: boolean; 
   cards: Template[];
 }
 
@@ -95,7 +95,7 @@ function TemplatesGrid(props: Props) {
     indexCategories = [
       {
         label: "MODA",
-        hideCategory: false,
+        hideCategoryNameOnCard: false,
         cards: [
           {
             label: "Feminino",
@@ -104,16 +104,6 @@ function TemplatesGrid(props: Props) {
             link: "feminino",
             image: {
               img: "https://ik.imagekit.io/decocx/tr:w-680,h-680/https:/ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fdcb3c8f-d629-485e-bf70-8060bd8a9f65",
-              color: "",
-            },
-          },
-          {
-            label: "Invisível",
-            category: "Todos",  // Marque como "Todos"
-            description: "Este card é invisível",
-            link: "invisivel",
-            image: {
-              img: "https://exemplo.com/invisivel.jpg",
               color: "",
             },
           },
@@ -156,8 +146,6 @@ function TemplatesGrid(props: Props) {
     return categories.find(category => category.label === label);
 };
 
-const [todosCards, setTodosCards] = useState<Template[]>([]);
-
 const itensParaExibir = categoriaSelecionada === 'Todos'
 ? indexCategories.flatMap(category => category.cards.map(card => ({
     ...card,
@@ -166,11 +154,11 @@ const itensParaExibir = categoriaSelecionada === 'Todos'
 : categoriaSelecionada
   ? indexCategories.find(category => category.label === categoriaSelecionada)?.cards.map(card => ({
       ...card,
-      category: categoriaSelecionada, // Adiciona o campo category ao card
+      category: categoriaSelecionada,
     })) || []
   : [];
 
-  const [ordenacaoAleatoriaFeita, setOrdenacaoAleatoriaFeita] = useState(false);
+const [ordenacaoAleatoriaFeita, setOrdenacaoAleatoriaFeita] = useState(false);
 
 useEffect(() => {
   if (categoriaSelecionada === 'Todos' && !ordenacaoAleatoriaFeita) {
@@ -240,7 +228,7 @@ useEffect(() => {
               categoryInfo = indexCategories.find(cat => cat.label === categoriaSelecionada);
             }
         
-            const shouldHideCategory = categoryInfo?.hideCategory || false;
+            const shouldHideCategory = categoryInfo?.hideCategoryNameOnCard || false;
 
             return (
                 <a
