@@ -156,6 +156,8 @@ function TemplatesGrid(props: Props) {
     return categories.find(category => category.label === label);
 };
 
+const [todosCards, setTodosCards] = useState<Template[]>([]);
+
 const itensParaExibir = categoriaSelecionada === 'Todos'
 ? indexCategories.flatMap(category => category.cards.map(card => ({
     ...card,
@@ -167,6 +169,16 @@ const itensParaExibir = categoriaSelecionada === 'Todos'
       category: categoriaSelecionada, // Adiciona o campo category ao card
     })) || []
   : [];
+
+  const [ordenacaoAleatoriaFeita, setOrdenacaoAleatoriaFeita] = useState(false);
+
+useEffect(() => {
+  if (categoriaSelecionada === 'Todos' && !ordenacaoAleatoriaFeita) {
+    // Ordenação aleatória apenas na primeira renderização da página
+    setOrdenacaoAleatoriaFeita(true);
+    itensParaExibir.sort(() => Math.random() - 0.5);
+  }
+}, [categoriaSelecionada, ordenacaoAleatoriaFeita, itensParaExibir]); 
 
   const totalPaginas = Math.ceil(itensParaExibir.length / itensPorPagina);
   const primeiroItem = (paginaAtual - 1) * itensPorPagina;
@@ -194,7 +206,7 @@ const itensParaExibir = categoriaSelecionada === 'Todos'
         <div className="hidden md:flex flex-start border-b-2 gap-x-8 h-[32px] w-full">
               <div
                 key={'Todos'}
-                className={`cursor-pointer ${
+                className={`cursor-pointer relative top-[2px] ${
                   (categoriaSelecionada === 'Todos') ? 'font-bold border-b-2 border-black' : ''
                 }`}
                 onClick={() => handleChangeCategoria('Todos')}
@@ -204,7 +216,7 @@ const itensParaExibir = categoriaSelecionada === 'Todos'
             {indexCategories.map((category, index) => (
               <div
                 key={index}
-                className={`cursor-pointer ${
+                className={`cursor-pointer relative top-[2px] ${
                   (categoriaSelecionada === category.label) ? 'font-bold border-b-2 border-black' : ''
                 }`}
                 onClick={() => handleChangeCategoria(category.label)}
@@ -229,8 +241,6 @@ const itensParaExibir = categoriaSelecionada === 'Todos'
             }
         
             const shouldHideCategory = categoryInfo?.hideCategory || false;
-
-            console.log(shouldHideCategory)
 
             return (
                 <a
