@@ -37,7 +37,7 @@ export interface Classification {
 
 interface Category {
   label: string;
-  hideCategory?: boolean; 
+  hideCategoryNameOnCard?: boolean; 
   cards: Template[];
 }
 
@@ -95,7 +95,7 @@ function TemplatesGrid(props: Props) {
     indexCategories = [
       {
         label: "MODA",
-        hideCategory: false,
+        hideCategoryNameOnCard: false,
         cards: [
           {
             label: "Feminino",
@@ -104,16 +104,6 @@ function TemplatesGrid(props: Props) {
             link: "feminino",
             image: {
               img: "https://ik.imagekit.io/decocx/tr:w-680,h-680/https:/ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fdcb3c8f-d629-485e-bf70-8060bd8a9f65",
-              color: "",
-            },
-          },
-          {
-            label: "Invisível",
-            category: "Todos",  // Marque como "Todos"
-            description: "Este card é invisível",
-            link: "invisivel",
-            image: {
-              img: "https://exemplo.com/invisivel.jpg",
               color: "",
             },
           },
@@ -164,9 +154,19 @@ const itensParaExibir = categoriaSelecionada === 'Todos'
 : categoriaSelecionada
   ? indexCategories.find(category => category.label === categoriaSelecionada)?.cards.map(card => ({
       ...card,
-      category: categoriaSelecionada, // Adiciona o campo category ao card
+      category: categoriaSelecionada,
     })) || []
   : [];
+
+const [ordenacaoAleatoriaFeita, setOrdenacaoAleatoriaFeita] = useState(false);
+
+useEffect(() => {
+  if (categoriaSelecionada === 'Todos' && !ordenacaoAleatoriaFeita) {
+    // Ordenação aleatória apenas na primeira renderização da página
+    setOrdenacaoAleatoriaFeita(true);
+    itensParaExibir.sort(() => Math.random() - 0.5);
+  }
+}, [categoriaSelecionada, ordenacaoAleatoriaFeita, itensParaExibir]); 
 
   const totalPaginas = Math.ceil(itensParaExibir.length / itensPorPagina);
   const primeiroItem = (paginaAtual - 1) * itensPorPagina;
@@ -194,7 +194,7 @@ const itensParaExibir = categoriaSelecionada === 'Todos'
         <div className="hidden md:flex flex-start border-b-2 gap-x-8 h-[32px] w-full">
               <div
                 key={'Todos'}
-                className={`cursor-pointer ${
+                className={`cursor-pointer relative top-[2px] ${
                   (categoriaSelecionada === 'Todos') ? 'font-bold border-b-2 border-black' : ''
                 }`}
                 onClick={() => handleChangeCategoria('Todos')}
@@ -204,7 +204,7 @@ const itensParaExibir = categoriaSelecionada === 'Todos'
             {indexCategories.map((category, index) => (
               <div
                 key={index}
-                className={`cursor-pointer ${
+                className={`cursor-pointer relative top-[2px] ${
                   (categoriaSelecionada === category.label) ? 'font-bold border-b-2 border-black' : ''
                 }`}
                 onClick={() => handleChangeCategoria(category.label)}
@@ -228,9 +228,7 @@ const itensParaExibir = categoriaSelecionada === 'Todos'
               categoryInfo = indexCategories.find(cat => cat.label === categoriaSelecionada);
             }
         
-            const shouldHideCategory = categoryInfo?.hideCategory || false;
-
-            console.log(shouldHideCategory)
+            const shouldHideCategory = categoryInfo?.hideCategoryNameOnCard || false;
 
             return (
                 <a
