@@ -64,8 +64,8 @@ export default function Hero({
             </a>
           </div>
         </div>
-        <div class="flex relative w-full aspect-[191/131] md:w-[100%] md:max-w-[640px] lg:w-[48.7%] h-full bg-[#D9D9D9] rounded-[4px]">
-          <div className="flex lg:w-full  md:aspect-[16/11] md:pb-0 md:h-full">
+        <div class="flex relative w-full aspect-video md:w-[100%] md:max-w-[640px] lg:w-[48.7%] h-full rounded-[4px]">
+          <div className="flex lg:w-full  md:aspect-video md:pb-0 md:h-full">
             <picture>
               <source
                 media="(max-width: 760px)"
@@ -73,7 +73,7 @@ export default function Hero({
                 className="rounded-[4px]"
               />
               <img
-                className="lg:h-full md:h-full lg:w-full rounded-[4px]"
+                className="lg:h-full md:h-full lg:w-full rounded-[4px] object-cover"
                 alt={Banner.titleImg}
                 src={Banner.bannerHero}
               />
