@@ -23,7 +23,7 @@ Para adicionar uma nova Section à página, clique no botão **Add Sections** no
 
 ![Criando páginas](/docs/creating-new-page/add-section.png)
 
-> Se você deseja desenvolver/codar uma nova seção, consulte nosso [Guia de desenvolvimento](/docs/en/developing/setup).
+> Se você deseja desenvolver/codar uma nova seção, consulte nosso [Guia de desenvolvimento](/docs/pt/developing/setup).
 
 ## Publicação
 
@@ -33,4 +33,4 @@ Se a página foi publicada anteriormente, o modal Publish oferecerá a opção d
 
 ## Variantes
 
-Além do teste A/B, que randomiza quais usuários veem o novo conteúdo, é possível segmentar e personalizar o conteúdo no deco.cx usando outros fatores como localização, dispositivo e mais. Leia  sobre variantes [aqui](/docs/en/getting-started/variants).
+Além do teste A/B, que randomiza quais usuários veem o novo conteúdo, é possível segmentar e personalizar o conteúdo no deco.cx usando outros fatores como localização, dispositivo e mais. Leia  sobre variantes [aqui](/docs/pt/getting-started/variants).

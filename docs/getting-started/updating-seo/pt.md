@@ -7,7 +7,7 @@ Vamos começar a atualizar as informações do site.
 A deco.cx permite que, através do Admin, seja possível alterar conteúdo sem precisar de mudanças de código, e isso é feito através do conceito de [Blocks](/docs/pt/concepts/blocks).
 
 O primeiro Block que podemos editar é o de **site**,
-um App da deco que configura e prepara um projeto para operar como website na internet. Esse bloco configura metadados importantes sobre a página, incluindo dados de SEO e título, descrição e miniatura (essas informações são usadas nos previews de redes sociais).
+um [App](/docs/pt/concepts/app) da deco que configura e prepara um projeto para operar como website na internet. Esse bloco configura metadados importantes sobre a página, incluindo dados de SEO e título, descrição e miniatura (essas informações são usadas nos previews de redes sociais).
 
 Convenientemente, na página de detalhe do Site na deco é possível pré-visualizar como o **SEO** está configurado.
 

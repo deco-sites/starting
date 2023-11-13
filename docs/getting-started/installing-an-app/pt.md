@@ -5,7 +5,7 @@ desde: 1.33.2
 
 # Pré-requisitos
 
-Antes de começar, certifique-se de ter um site deco pronto, e a App desejado deve estar disponível no diretório Apps. Se você não tem certeza de como fazer isso, consulte o [tutorial de tornar uma app instalável](/docs/en/developing/making-an-app-installable).
+Antes de começar, certifique-se de ter um site deco pronto, e a App desejado deve estar disponível no diretório Apps. Se você não tem certeza de como fazer isso, consulte o [tutorial de tornar uma app instalável](/docs/pt/developing/making-an-app-installable).
 
 # Apps
 
