@@ -174,10 +174,10 @@ useEffect(() => {
   const itensPaginaAtual = itensParaExibir.slice(primeiroItem, ultimoItem);
 
   return (
-    <div className="flex flex-col items-center mx-8 pb-10 md:mx-auto md:px-14 md:pb-16 lg:px-16 gap-y-10 lg:pb-20 lg:max-w-[1440px] xl:px-16">
-      <div id="index" className="flex flex-start gap-x-12 h-[36px] w-full md:px-4">
+    <div className="flex flex-col items-center mx-8 pb-10 lg:mx-auto lg:px-14 lg:pb-16 lg:px-16 gap-y-10 lg:pb-20 lg:max-w-[1440px] xl:px-16">
+      <div id="index" className="flex flex-start gap-x-12 h-[36px] w-full lg:px-4">
           <select
-            className="p-2 cursor-pointer w-full border-[1px] border-[#C9CFCF] rounded md:hidden"
+            className="p-2 cursor-pointer w-full border-[1px] border-[#C9CFCF] rounded lg:hidden"
             value={categoriaSelecionada}
             onChange={(e) => {
               const selectedValue = (e.target as HTMLSelectElement).value;
@@ -191,7 +191,7 @@ useEffect(() => {
             </option>
           ))}
         </select>
-        <div className="hidden md:flex flex-start border-b-2 gap-x-8 h-[32px] w-full">
+        <div className="hidden lg:flex flex-start border-b-2 gap-x-8 h-[32px] w-full">
               <div
                 key={'Todos'}
                 className={`cursor-pointer relative top-[2px] ${
