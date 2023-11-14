@@ -26,11 +26,13 @@ Aproveitando os Matchers e suas capacidades, você pode criar experiências din�
 
 
 3. Selecione a página com a qual deseja trabalhar, clicando nela.
+
 4. Ao entrar na página, localize o ícone de bandeira (`🏴`) no lado direito do rótulo "Seções". (use o mesmo botão para remover todas as variantes).
 
 ![Criar variante](https://github.com/deco-cx/apps/assets/882438/1989b41d-d959-488b-b863-c7b697fa1754)
 
-5. Você pode não notar nenhuma mudança imediata, mas duas novas variantes serão adicionadas à página. A última variante (`Padrão`) representa a página atual e sempre avalia como verdadeira, enquanto a primeira variante é criada sem uma condição selecionada. Vamos escolher uma condição para esta variante.<img width="1508" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/ed22f647-0616-4485-88c0-fb5152ddcb7f">
+5. Neste ponto, duas novas variantes serão adicionadas à página. A última variante (`Padrão`) representa a página atual e sempre avalia como verdadeira, enquanto a primeira variante é criada sem uma condição selecionada. Vamos escolher uma condição para esta variante.
+
 6. Clique na primeira variante da lista.
 7. Selecione a opção `Condição` e escolha `Device Matcher`.
 8. Selecione a opção `Mobile` e certifique-se de que você tenha selecionado a visualização `Desktop` na pré-visualização do Admin.
@@ -42,8 +44,8 @@ Aproveitando os Matchers e suas capacidades, você pode criar experiências din�
 ![Alterando páginas para usuários mobile](https://github.com/deco-cx/apps/assets/882438/8f21d149-fd51-45e8-9d74-73c27fce1a56)
 
 
-10. Volte para a página anterior e observe que a página original é carregada.<img width="1510" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/1aac9c6b-a4f5-4882-a831-13d8b65e7bf9">
-11. Altere a visualização para móvel e observe que a página modificada da variante agora está visível.
+10. Publique suas alterações e alterne entre as variantes para observar suas diferenças.
+11. Acesse o seu site e altere a visualização para móvel e observe que a página modificada para a variante agora está visível.
 
 ![Visualização suas alterações](https://github.com/deco-cx/apps/assets/882438/4e18d62b-fbaa-49e0-bf39-72d002a582f8)
 
@@ -68,4 +70,4 @@ Ao aproveitar essas informações, você pode analisar e rastrear o desempenho d
 
 Estamos trabalhando continuamente para aprimorar nossas capacidades de análise e simplificar o processo de acesso e análise dos resultados dos testes. Nosso objetivo é fornecer uma experiência integrada, em que você possa criar e gerenciar testes, além de visualizar e interpretar os dados de análise correspondentes, tudo em um local centralizado. Ao consolidar essas funcionalidades, buscamos facilitar a tomada de decisões com base em dados e otimizar o desempenho do seu site.
 
-Configura nossa documentação de [GTM Analytics](/docs/pt/composable-apis/gtm) para mais informações.
+Verifique nossa [Documentação de GTM Analytics](/docs/pt/composable-apis/gtm) para mais informações.
