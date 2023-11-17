@@ -35,12 +35,14 @@ function generateItemXML(post: Post, locale: SupportedLocales): string {
     img,
   } = post;
 
+  const pubDate = new Date(date).toUTCString();
+
   return `
     <item>
       <title>${xmlEncode(body[locale]?.title ?? "")}</title>
-      <link>https://deco.cx/blog${getBlogPath(path, locale)}</link>
+      <link>https://deco.cx${getBlogPath(path, locale)}</link>
       <description>${xmlEncode(body[locale]?.descr ?? "")}</description>
-      <pubDate>${date}</pubDate>
+      <pubDate>${pubDate}</pubDate>
       <author>${xmlEncode(author)}</author>
       <authorAvatar>${xmlEncode(authorAvatar)}</authorAvatar>
       <authorRole>${xmlEncode(authorRole)}</authorRole>
@@ -62,7 +64,7 @@ export default function BlogRSS({
       .map((post: Post) => generateItemXML(post, locale))
       .join("\n");
 
-    const rssHeader = `<?xml version="1.0" encoding="UTF-8" ?>
+    const rss = `<?xml version="1.0" encoding="UTF-8" ?>
       <rss version="2.0">
         <channel>
           <title>${title}</title>
@@ -74,7 +76,7 @@ export default function BlogRSS({
         </channel>
       </rss>`;
 
-    return new Response(rssHeader, {
+    return new Response(rss, {
       headers: {
         "content-type": "text/xml",
       },
