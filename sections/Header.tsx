@@ -1,4 +1,4 @@
-import HeaderIsland from "deco-sites/starting/islands/Header.tsx";
+import HeaderIsland, { MenuLink } from "deco-sites/starting/islands/Header.tsx";
 
 export interface GitHub {
   /** @format html */
@@ -21,7 +21,7 @@ export interface Alerts {
 export interface Props {
   githubBarText?: GitHub;
   alerts?: Alerts;
-  menuLinks: Array<{ label: string; href: string; targetBlank?: boolean }>;
+  menuLinks: MenuLink[];
   idiom: string;
   pt: { label: string; url: string; selected?: boolean };
   eng: { label: string; url: string; selected?: boolean };

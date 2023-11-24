@@ -4,9 +4,17 @@ import SliderJS from "deco-sites/starting/islands/SliderJS.tsx";
 import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
 import { useId } from "deco-sites/starting/sdk/useId.ts";
+import { Dropdown } from "deco-sites/starting/components/ui/Dropdown.tsx";
 
 export interface Alert {
   label: string;
+}
+
+export interface MenuLink {
+  label: string;
+  href: string;
+  targetBlank?: boolean;
+  nested?: MenuLink[];
 }
 
 export interface Props {
@@ -14,7 +22,7 @@ export interface Props {
     mobile?: Alert[];
     desktop?: Alert[];
   };
-  menuLinks: Array<{ label: string; href: string; targetBlank?: boolean }>;
+  menuLinks: MenuLink[];
   idiom: string;
   pt: { label: string; url: string; selected?: boolean };
   eng: { label: string; url: string; selected?: boolean };
@@ -26,6 +34,79 @@ export interface Props {
   linkedinUrl: string;
   gitUrl: string;
   discordUrl: string;
+}
+
+function MobileMenuLink({ href, label, targetBlank, nested, ...props }: MenuLink) {
+  const hasNested = nested && nested.length > 0;
+  if (hasNested) {
+    return (
+      <li class="pt-4 grid items-center">
+        <a
+          href={href}
+          target={targetBlank ? "_blank" : "_self"}
+          class="block px-[24px]  font-normal text-[16px] leading-[19.36px] text-white-79"
+        >
+          {label}
+        </a>
+        <ul class="pl-[24px]">
+          {nested.map((item) => (
+            <MobileMenuLink {...item} />
+          ))}
+        </ul>
+      </li>
+    );
+  }
+
+  return (
+    <li class={"grid items-center py-4"}>
+      <a
+        href={href}
+        target={targetBlank ? "_blank" : "_self"}
+        class="block px-[24px]  font-normal text-[16px] leading-[19.36px] text-white-79"
+      >
+        {label}
+      </a>
+    </li>
+  );
+}
+
+function MenuLink({ href, label, targetBlank, nested, ...props }: MenuLink) {
+
+  const open = useSignal(false)
+
+  const setOpen = () => open.value = !open.value
+
+  if (nested && nested.length > 0) {
+    return (
+      <li
+        class="relative h-full grid"
+        {...props}
+      >
+        <Dropdown
+          items={nested}
+          value={label}
+          onClick={setOpen}
+          open={open.value}
+        />
+      </li>
+    );
+  }
+
+  return (
+    <li
+      class="relative h-full grid hover:text-[#02F67C] text-transparent"
+      {...props}
+    >
+      <a
+        target={targetBlank ? "_blank" : "_self"}
+        href={href}
+        class="flex items-center h-full px-[24px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-center after:absolute after:w-full after:h-[4px] after:bg-transparent after:hover:bg-linear-transp-green-transp after:bottom-[-4px] after:z-20 after:bg-position-100 after:transition-colors after:ease-in after:duration-[0]"
+        style="background-size: 200%;"
+      >
+        {label}
+      </a>
+    </li>
+  );
 }
 
 export default function Header(props: Props) {
@@ -156,8 +237,7 @@ export default function Header(props: Props) {
         <div
           class="md:hidden w-[100vw] h-[4px] absolute top-[60px] transition ease-in-out duration-300 left-0"
           style="background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,255,128,1) 100%);"
-        >
-        </div>
+        ></div>
         <ul class="h-full flex items-center">
           <li class="h-full">
             <a
@@ -179,142 +259,128 @@ export default function Header(props: Props) {
             </a>
           </li>
           <li class="group cursor-pointer relative min-w-[150px]">
-            {showSwitcher.value &&
-              (
-                <>
+            {showSwitcher.value && (
+              <>
+                <div
+                  class={`select-none flex gap-2 items-center ${
+                    openSwitcher.value ? "md:border-[#06E474] md:border" : ""
+                  }  border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300`}
+                >
                   <div
-                    class={`select-none flex gap-2 items-center ${
-                      openSwitcher.value ? "md:border-[#06E474] md:border" : ""
-                    }  border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300`}
+                    onClick={handleMenu}
+                    class="z-10 font-normal text-[16px] md:px-3 md:py-1 text-[#fff] flex items-center justify-center gap-[5px]"
                   >
-                    <div
-                      onClick={handleMenu}
-                      class="z-10 font-normal text-[16px] md:px-3 md:py-1 text-[#fff] flex items-center justify-center gap-[5px]"
+                    {props.pageInitial}
+                    <svg
+                      width="9"
+                      height="5"
+                      viewBox="0 0 9 5"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      {props.pageInitial}
-                      <svg
-                        width="9"
-                        height="5"
-                        viewBox="0 0 9 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5"
-                          class="group-hover:border-[#55D695]"
-                          stroke="#fff"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                        />
-                      </svg>
-                    </div>
-                    <div
-                      onClick={handleMenu}
-                      class={`${
-                        openSwitcher.value
-                          ? "block cursor-default w-[110vw] h-[110vh] absolute left-[-100px] top-[-20px]"
-                          : "hidden"
-                      }`}
-                    >
-                    </div>
-                    <div
-                      class={`${
-                        openSwitcher.value ? "block" : "hidden"
-                      } absolute top-[35px] left-0 mt-5 rounded border border-[#ffffff10]`}
-                    >
-                      <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
-                        <div class="flex flex-row items-center justify-between">
-                          <a
-                            href="#"
-                            onClick={(e) => {
-                              e.preventDefault();
-                              window.history.pushState(
-                                {},
-                                "",
-                                urlMarketers.value,
-                              );
-                              location.reload();
-                            }}
-                            class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
+                      <path
+                        d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5"
+                        class="group-hover:border-[#55D695]"
+                        stroke="#fff"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    onClick={handleMenu}
+                    class={`${
+                      openSwitcher.value
+                        ? "block cursor-default w-[110vw] h-[110vh] absolute left-[-100px] top-[-20px]"
+                        : "hidden"
+                    }`}
+                  ></div>
+                  <div
+                    class={`${
+                      openSwitcher.value ? "block" : "hidden"
+                    } absolute top-[35px] left-0 mt-5 rounded border border-[#ffffff10]`}
+                  >
+                    <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
+                      <div class="flex flex-row items-center justify-between">
+                        <a
+                          href="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            window.history.pushState(
+                              {},
+                              "",
+                              urlMarketers.value
+                            );
+                            location.reload();
+                          }}
+                          class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
+                        >
+                          <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">
+                            {props?.mkt?.label}
+                          </p>
+                          <svg
+                            width="15"
+                            height="10"
+                            viewBox="0 0 15 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class={props?.mkt?.selected ? "" : "hidden"}
                           >
-                            <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">
-                              {props?.mkt?.label}
-                            </p>
-                            <svg
-                              width="15"
-                              height="10"
-                              viewBox="0 0 15 10"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                              class={props?.mkt?.selected ? "" : "hidden"}
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
-                                fill="#2FD180"
-                              />
-                            </svg>
-                          </a>
-                        </div>
-                        <div class="flex flex-row items-center justify-between">
-                          <a
-                            href="#"
-                            onClick={(e) => {
-                              e.preventDefault();
-                              window.history.pushState(
-                                {},
-                                "",
-                                urlDevelopers.value,
-                              );
-                              location.reload();
-                            }}
-                            class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
+                              fill="#2FD180"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="flex flex-row items-center justify-between">
+                        <a
+                          href="#"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            window.history.pushState(
+                              {},
+                              "",
+                              urlDevelopers.value
+                            );
+                            location.reload();
+                          }}
+                          class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
+                        >
+                          <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">
+                            {props?.dev?.label}
+                          </p>
+                          <svg
+                            width="15"
+                            height="10"
+                            viewBox="0 0 15 10"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class={props?.dev?.selected ? "" : "hidden"}
                           >
-                            <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">
-                              {props?.dev?.label}
-                            </p>
-                            <svg
-                              width="15"
-                              height="10"
-                              viewBox="0 0 15 10"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                              class={props?.dev?.selected ? "" : "hidden"}
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
-                                fill="#2FD180"
-                              />
-                            </svg>
-                          </a>
-                        </div>
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
+                              fill="#2FD180"
+                            />
+                          </svg>
+                        </a>
                       </div>
                     </div>
                   </div>
-                </>
-              )}
+                </div>
+              </>
+            )}
           </li>
         </ul>
         <ul class="hidden lg:flex lg:flex-row h-full group">
           {props.menuLinks.map((link, index) => {
-            return (
-              <li class="relative h-full grid hover:text-[#02F67C] text-transparent ">
-                <a
-                  target={link.targetBlank ? "_blank" : "_self"}
-                  href={link.href}
-                  class="flex items-center h-full px-[24px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-center after:absolute after:w-full after:h-[4px] after:bg-transparent after:hover:bg-linear-transp-green-transp after:bottom-[-4px] after:z-20 after:bg-position-100 after:transition-colors after:ease-in after:duration-[0]"
-                  style="background-size: 200%;"
-                >
-                  {link.label}
-                </a>
-              </li>
-            );
+            return <MenuLink key={index} {...link} />;
           })}
-          <div class="w-[100vw] h-[4px] absolute top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:bg-transparent group-hover:bg-none">
-          </div>
+          <div class="w-[100vw] h-[4px] absolute top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:bg-transparent group-hover:bg-none"></div>
         </ul>
         <ul class="lg:hidden px-3">
           <li class="grid items-center">
@@ -371,22 +437,16 @@ export default function Header(props: Props) {
             </button>
           </li>
           <div
-            class={open
-              ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
-              : "hidden"}
+            class={
+              open
+                ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
+                : "hidden"
+            }
           >
             <ul class="flex flex-col divide-y divide-semi-white-13">
               {props.menuLinks.map((link) => {
                 return (
-                  <li class="h-[50px] grid items-center">
-                    <a
-                      href={link.href}
-                      target={link.targetBlank ? "_blank" : "_self"}
-                      class="block px-[24px]  font-normal text-[16px] leading-[19.36px] text-white-79"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
+                  <MobileMenuLink key={link.label} {...link} />
                 );
               })}
             </ul>
@@ -496,101 +556,24 @@ export default function Header(props: Props) {
         </ul>
         <ul class="hidden lg:flex lg:flex-row lg:gap-4 px-3">
           <li class="group cursor-pointer md:relative">
-            <div
-              class={`select-none hidden ${
-                openLanguage.value
-                  ? "md:text-[#fff] md:border-[#06E474] md:border"
-                  : ""
-              } md:flex gap-2 items-center text-[#06E474] border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300`}
-            >
-              <div
-                onClick={handleLanguage}
-                class="z-10 md:px-3 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px]"
-              >
-                {props.idiom}
-                <svg
-                  width="9"
-                  height="5"
-                  viewBox="0 0 9 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5"
-                    class="group-hover:border-[#fff] stroke-current"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-              <div
-                onClick={handleLanguage}
-                class={`${
-                  openLanguage.value
-                    ? "block cursor-default w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]"
-                    : "hidden"
-                }`}
-              >
-              </div>
-              <div
-                class={`${
-                  openLanguage.value ? "block" : "hidden"
-                } absolute top-[35px] right-0 mt-5 rounded border border-[#ffffff10]`}
-              >
-                <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
-                  <div class="flex flex-row items-center justify-between">
-                    <a
-                      href={urlPortuguese.value}
-                      class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
-                    >
-                      <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">
-                        {props.pt.label}
-                      </p>
-                      <svg
-                        width="15"
-                        height="10"
-                        viewBox="0 0 15 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class={props.pt.selected ? "" : "hidden"}
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
-                          fill="#2FD180"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="flex flex-row items-center justify-between">
-                    <a
-                      href={urlEnglish.value}
-                      class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
-                    >
-                      <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">
-                        {props.eng.label}
-                      </p>
-                      <svg
-                        width="15"
-                        height="10"
-                        viewBox="0 0 15 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class={props.eng.selected ? "" : "hidden"}
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
-                          fill="#2FD180"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Dropdown
+              value={props.idiom}
+              open={openLanguage.value}
+              onClick={handleLanguage}
+              variant="rounded"
+              items={[
+                {
+                  label: props.pt.label,
+                  href: urlPortuguese.value,
+                  selected: props.pt.selected,
+                },
+                {
+                  label: props.eng.label,
+                  href: urlEnglish.value,
+                  selected: props.eng.selected,
+                },
+              ]}
+            />
           </li>
           <li>
             <a
