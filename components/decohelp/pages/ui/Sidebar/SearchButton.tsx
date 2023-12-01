@@ -14,7 +14,7 @@ export default function SearchButton(
   props: { docsearch?: (args: DocSearchProps) => void; },
 ) {
   const ref = useRef<HTMLDivElement>(null);
-  const devMode = window.location.href && window.location.href.includes("__d");
+  const lang = window.location.href &&  window.location.href.includes("/en/") ? "en" : "pt";
   useEffect(() => {
     if (ref.current) {
       props.docsearch || docsearch({
@@ -22,19 +22,21 @@ export default function SearchButton(
         apiKey: "1bce943613df73233ccfca9f733b2a47",
         indexName: "deco",
         container: ref.current,
-        debug: devMode,
+        searchParameters: {
+          facetFilters: [`language:${lang}`],
+        },
       });
     }
   }, [ref.current]);
   return (
     <>
       <Head>
-        <link rel="preconnect" href="https://RBDERIH9EY-dsn.algolia.net" crossorigin />
+        <link rel="preconnect" href="https://RBDERIH9EY-dsn.algolia.net" crossOrigin="true" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
       </Head>
       <div
         title="Search Button"
-        class={"h-9 mb-6 " + (props.class ?? "")}
+        class="h-9 mb-6"
         ref={ref}
       >
       </div>
