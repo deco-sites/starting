@@ -1,6 +1,6 @@
 import { MDFileContent } from "deco-sites/starting/components/ui/Types.tsx";
 import type { LoaderContext } from "deco/types.ts";
-import { redirect } from "deco/mod.ts";
+import { badRequest, redirect } from "deco/mod.ts";
 import { getTitleForPost } from "deco-sites/starting/docs/toc.ts";
 
 /** @title {{{path}}} */
@@ -43,8 +43,13 @@ const loader = async (
     return { content: doc.content, title: doc.title };
   }
 
-  const fileContent = await Deno.readTextFile(url);
-  return { content: fileContent, title: getTitleForPost(language, documentSlug) };
+  try {
+    const fileContent = await Deno.readTextFile(url);
+    return { content: fileContent, title: getTitleForPost(language, documentSlug) };
+  }
+  catch {
+    badRequest("File not found");
+  }
 };
 
 export default loader;
