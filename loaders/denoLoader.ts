@@ -48,7 +48,8 @@ const loader = async (
     return { content: fileContent, title: getTitleForPost(language, documentSlug) };
   }
   catch {
-    badRequest("File not found");
+    badRequest({message: "File not found"});
+    return { content: "" };
   }
 };
 
