@@ -11,10 +11,12 @@ type DocSearchProps = {
 };
 
 export default function SearchButton(
-  props: { docsearch?: (args: DocSearchProps) => void; },
+  props: { docsearch?: (args: DocSearchProps) => void },
 ) {
   const ref = useRef<HTMLDivElement>(null);
-  const lang = window.location.href &&  window.location.href.includes("/en/") ? "en" : "pt";
+  const lang = window.location.href && window.location.href.includes("/en/")
+    ? "en"
+    : "pt";
   useEffect(() => {
     if (ref.current) {
       props.docsearch || docsearch({
@@ -31,8 +33,15 @@ export default function SearchButton(
   return (
     <>
       <Head>
-        <link rel="preconnect" href="https://RBDERIH9EY-dsn.algolia.net" crossOrigin="true" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+        <link
+          rel="preconnect"
+          href="https://RBDERIH9EY-dsn.algolia.net"
+          crossOrigin="true"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+        />
       </Head>
       <div
         title="Search Button"

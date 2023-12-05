@@ -45,10 +45,12 @@ const loader = async (
 
   try {
     const fileContent = await Deno.readTextFile(url);
-    return { content: fileContent, title: getTitleForPost(language, documentSlug) };
-  }
-  catch {
-    badRequest({message: "File not found"});
+    return {
+      content: fileContent,
+      title: getTitleForPost(language == "en" ? "en" : "pt", documentSlug),
+    };
+  } catch {
+    badRequest({ message: "File not found" });
     return { content: "" };
   }
 };

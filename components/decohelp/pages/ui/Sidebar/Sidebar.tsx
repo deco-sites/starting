@@ -230,7 +230,7 @@ export default function Sidebar({
               </a>
             </li>
           )}
-          <SearchButton class="mr-4 sm:mr-0" />
+          <SearchButton />
           {Topics &&
             Topics.map((topic, index) => {
               const isActive = isTopicActive(
