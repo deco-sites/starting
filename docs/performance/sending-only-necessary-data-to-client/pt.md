@@ -13,7 +13,7 @@ Quando o tamanho do JSON passa de ~500kb, é provável que a UI não precisa do 
 
 - Inicie solicitando as informações necessárias usando props.
   
-- Utilize um loader para obter os dados desejados. Em algumas situações, pode retornar muitos dados, como ao solicitar produtos da [VTEX](https://www.deco.cx/docs/pt/composable-apis/vtex). Esteja ciente de que pode retornar mais dados do que o necessário.
+- Utilize um loader para obter os dados desejados. Em algumas situações, pode retornar muitos dados, por exemplo, ao solicitar produtos relacionados da [VTEX](https://www.deco.cx/docs/pt/composable-apis/vtex). Esteja ciente de que pode retornar mais dados do que o necessário.
   
 - Transmita apenas os dados processados para o componente JSX, reduzindo assim a carga desnecessária no cliente.
 
