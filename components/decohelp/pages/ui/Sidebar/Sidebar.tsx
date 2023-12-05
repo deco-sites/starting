@@ -305,7 +305,7 @@ export default function Sidebar({
                           >
                             <a
                               href={subTopic.SidebarLink}
-                              class={`flex items-center pl-[32px] pr-2 py-2 ${
+                              class={`flex items-center pl-[32px] pr-2 py-2 text-[15px] leading-tight cursor-pointer ${
                                 isActiveSubTopic
                                   ? "text-[#2E6ED9]"
                                   : "text-zinc-900 relative w-min-content hover:bg-[#F8F9F5]"
