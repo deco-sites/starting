@@ -2,7 +2,7 @@
 description: Create pages on deco.cx with no need to code
 ---
 
-You should be familiar with the core concepts of [Blocks](/docs/en/concepts/blocks) and [Section](/docs/en/concepts/sections), and now let's understand how to tie those together and create pages in a deco.cx site.
+You should be familiar with the core concepts of [Blocks](/docs/en/concepts/block) and [Section](/docs/en/concepts/section), and now let's understand how to tie those together and create pages in a deco.cx site.
 
 **Pages** have a dedicated section in deco.cx's Admin and you can access it via the top menu.
 
@@ -34,4 +34,4 @@ If the page has been published before, the Publish modal will offer you the opti
 
 ## Variants
 
-Beside A/B testing, which randomizes which users see the new content, it's possible to segment and personalize content in deco.cx using other factors like user's location, device and more. Read more about Variants [here](/docs/en/getting-started/variants).
+Besides A/B testing, which randomizes which users see the new content, it's possible to segment and personalize content in deco.cx using other factors like user's location, device and more. Read more about Variants [here](/docs/en/getting-started/variants).

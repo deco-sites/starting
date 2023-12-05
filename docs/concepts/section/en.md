@@ -6,9 +6,9 @@ description: |
 Sections are **UI components built with [Preact](https://preactjs.com/)** that
 can receive props configured by users on _deco.cx_'s Admin. The Section local
 implementations live on the `sections/` folder in the Site's code, but it's also
-possible to [Install Apps](/docs/pt/getting-started/installing-an-app).
+possible to [Install Apps](/docs/en/getting-started/installing-an-app).
 
-Some examples of Section for an ecommerce store would be:
+Some examples of Sections for an ecommerce store would be:
 
 - **ProductShelf.tsx:** displays a product shelf with image, title and price.
 - **Header.tsx:** displays the standard header of the store, containing logo,
@@ -20,8 +20,8 @@ Some examples of Section for an ecommerce store would be:
 
 Note that Sections run on the **server-side only**, so state and lifecycle such
 as `useState`, `useEffect` and callbacks such as `onClick`, `onInput` will not
-work. In order for those to work you'll need to use
-[interative Islands](https://fresh.deno.dev/docs/concepts/islands)
+work. In order for those to work, you'll need to use
+[interactive Islands](https://fresh.deno.dev/docs/concepts/islands)
 
 In _deco.cx_'s Admin, it's possible to interact with Sections in two places:
 
