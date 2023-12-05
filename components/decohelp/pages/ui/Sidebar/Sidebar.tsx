@@ -303,14 +303,16 @@ export default function Sidebar({
                                 : "text-zinc-900 relative w-min-content"
                             }`}
                           >
-                            <span
-                              class={`flex items-center pl-[32px] pr-2 py-2 ${
-                                isActiveSubTopic ? "" : "hover:bg-[#F8F9F5]"
+                            <a
+                              href={subTopic.SidebarLink}
+                              class={`flex items-center pl-[32px] pr-2 py-2 text-[15px] leading-tight cursor-pointer ${
+                                isActiveSubTopic
+                                  ? "text-[#2E6ED9]"
+                                  : "text-zinc-900 relative w-min-content hover:bg-[#F8F9F5]"
                               }`}
-                              onClick={(event) => {
-                                event.preventDefault();
-                                toggleDropdown(subTopicIndex);
-                              }}
+                              style={getFontWeightStyle(
+                                fontWeightSubtopic.fontWeight || "normal",
+                              )}
                             >
                               {subTopic.NestedTopics &&
                                 subTopic.NestedTopics.length > 0 && (
@@ -326,21 +328,8 @@ export default function Sidebar({
                                   strokeWidth={"3"}
                                 />
                               )}
-                              <a
-                                href={subTopic.SidebarLink}
-                                class={`text-[15px] leading-tight cursor-pointer ${
-                                  isActiveSubTopic
-                                    ? "text-[#2E6ED9]"
-                                    : "text-zinc-900 relative w-min-content"
-                                }`}
-                                onClick={(e) => e.stopPropagation()}
-                                style={getFontWeightStyle(
-                                  fontWeightSubtopic.fontWeight || "normal",
-                                )}
-                              >
-                                <span>{subTopic.label}</span>
-                              </a>
-                            </span>
+                              <span>{subTopic.label}</span>
+                            </a>
                             {subTopic.NestedTopics &&
                               subTopic.NestedTopics.length > 0 &&
                               openSubTopicIndex === subTopicIndex && (
