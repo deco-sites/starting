@@ -15,7 +15,7 @@ function DropdownItem({ href, label, selected }: DropdownItemProps) {
         href={href}
         class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
       >
-        <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">
+        <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow whitespace-nowrap">
           {label}
         </p>
         <svg
@@ -72,7 +72,7 @@ export function Dropdown({
     <div class={`${open ? variantClass.open : ""} ${variantClass.default}`}>
       <div
         onClick={onClick}
-        class="z-10 md:px-3 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px]"
+        class="z-10 md:px-3 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer"
       >
         {value}
         <svg
@@ -94,19 +94,18 @@ export function Dropdown({
         onClick={onClick}
         class={`${
           open
-            ? "block cursor-default w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]"
+            ? "block cursor-pointer w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]"
             : "hidden"
         }`}
-      ></div>
+      >
+      </div>
       <div
         class={`${open ? "block" : "hidden"} ${
           variant === "flat" ? "top-[48px]" : "top-[35px]"
         } z-30 absolute right-0 mt-5 rounded border border-[#ffffff10]`}
       >
         <div class="flex flex-col w-[152px] bg-[#0A2121;] p-2 rounded">
-          {items.map((item) => (
-            <DropdownItem {...item} />
-          ))}
+          {items.map((item) => <DropdownItem {...item} />)}
         </div>
       </div>
     </div>
