@@ -1,131 +1,57 @@
 ---
-description: TODO
+description: Sending only necessary data to client
 since: 1.0.0
 ---
 
-In some situations, when using [loaders](http://localhost:8000/docs/en/concepts/loader) to fetch data, an excessive amount of information may be received, negatively impacting page performance. This is evidenced by the significant size of the JSON transmitted to the client.
+When loading data from external APIs using [Loaders](/docs/pt/concepts/loader) and sending them to the [Section](/docs/pt/concepts/section), it is possible that the size of the _payload_ may negatively impact the site's performance. The impact occurs both in the initial loading time and in the [hydration](https://blog.saeloun.com/2021/12/16/hydration/), where the page is "initialized" in the browser to make it interactive (using `useEffect`, `useSignal`, etc.). You can visualize the size of the final JSON in the **Performance** tab in the CMS deco.
 
-![287814343-44b8fc59-2c25-4a55-bbe3-16810d5501a6](https://github.com/deco-sites/starting/assets/76822093/ab2d2212-1e3e-487d-ad6a-3eb225f9b15b)
+![288067513-db3a14e1-c0ac-47f8-83b9-afc8db60de71](https://github.com/deco-sites/starting/assets/76822093/ec005f5d-4169-4e89-acd0-8c06baf3c80d)
 
-To mitigate this issue, we propose implementing a client-side data preprocessing process, ensuring that only necessary information is transmitted and used in the markup/UI.
+When the JSON size exceeds ~500kb, it's likely that the UI doesn't need the complete data but rather some portion of it, or a computation based on other values. To reduce this size and improve page performance, it's possible to **filter the data** directly in the Loader, passing only what is necessary to the UI.
 
 ## Data Flow
 
-1. Data Request: Initiate the normal data flow by requesting the necessary information through props.
+- Initiate the request for necessary information using props.
 
-2. Data Loader: Use a loader to fetch the desired data. In some scenarios, the loader may return a substantial amount of data, for instance, when fetching related products from [VTEX](https://www.deco.cx/docs/en/composable-apis/vtex). However, it's essential to note that there are instances where the loader might return more data than necessary for the specific operation.
+- Employ a loader to fetch the desired data. In certain situations, it may return a substantial amount of data, for instance, when requesting products from [VTEX](https://www.deco.cx/docs/en/composable-apis/vtex). Be aware that it might return more data than necessary.
 
-3. Inline Preprocessing: Introduce an inline data preprocessing mechanism. This component will receive the same props as the loader and process the data to transmit only essential information, optimizing performance.
-
-4. Delivery to Component: Transmit only the processed data to the JSX component, thus reducing unnecessary load on the client.
+- Transmit only the processed data to the JSX component, thereby reducing unnecessary load on the client.
 
 ## Example Code
 
-This is the implementation of the `storefront/loaders/Layouts/ProductCard.tsx`:
+Implementation example of a [Loader](docs/en/developing/fetching-data):
 
 ```tsx
-import ProductCard, { Layout } from "$store/components/product/ProductCard.tsx";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
+import type { SectionProps } from "deco/mod.ts";
 
-interface Props {
-  /** @title Product Card layout props */
-  layout: Layout;
+// Props type that will be configured in deco.cx's Admin
+export interface Props {
+  title: string;
+  numberOfFacts?: number;
 }
 
-/** @title Product Card Layout */
-const loader = ({ layout }: Props): Layout => layout;
+export async function loader(
+  { numberOfFacts, title }: Props,
+  _req: Request,
+) {
+  const { facts: dogFacts } = (await fetch(
+    `https://dogapi.dog/api/facts?number=${numberOfFacts ?? 1}`,
+  ).then((r) => r.json())) as { facts: string[] };
+  return { dogFacts, title };
+}
 
-export const Preview = (props: Props) => {
-  const { layout } = props;
-
+export default function DogFacts(
+  { title, dogFacts }: SectionProps<typeof loader>,
+) {
   return (
-    <div class="h-full w-full grid place-items-center">
-      <div class="max-w-xs">
-        <ProductCard
-          layout={layout}
-          platform={usePlatform()}
-          product={{
-            "@type": "Product",
-            "category": "Masculino>Camisetas Gola Lisa",
-            "productID": "165",
-            "url": "",
-            "name": "Product Test",
-            "description": "Product Description",
-            "brand": {
-              "@type": "Brand",
-              "@id": "2000000",
-              "name": "deco.cx",
-            },
-            "inProductGroupWithID": "33",
-            "sku": "165",
-            "gtin": "789456123003305",
-            "additionalProperty": [
-              {
-                "@type": "PropertyValue",
-                "name": "TAMANHO",
-                "value": "GG",
-                "valueReference": "SPECIFICATION",
-              },
-            ],
-            "isVariantOf": {
-              "@type": "ProductGroup",
-              "productGroupID": "33",
-              "hasVariant": [],
-              "name": "Camiseta Masculina Gola Lisa Olive",
-              "additionalProperty": [],
-            },
-            "image": [
-              {
-                "@type": "ImageObject",
-                "alternateName": "test",
-                "url":
-                  "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/b9e0a819-6a75-47af-84fe-90b44fecda5f",
-              },
-              {
-                "@type": "ImageObject",
-                "alternateName": "test",
-                "url":
-                  "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/b9e0a819-6a75-47af-84fe-90b44fecda5f",
-              },
-            ],
-            "offers": {
-              "@type": "AggregateOffer",
-              "priceCurrency": "BRL",
-              "highPrice": 69.3,
-              "lowPrice": 69.3,
-              "offerCount": 1,
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "price": 69.3,
-                  "seller": "1",
-                  "priceValidUntil": "2024-09-04T13:03:31Z",
-                  "inventoryLevel": { "value": 10000 },
-                  "teasers": [],
-                  "priceSpecification": [
-                    {
-                      "@type": "UnitPriceSpecification",
-                      "priceType": "https://schema.org/ListPrice",
-                      "price": 179,
-                    },
-                    {
-                      "@type": "UnitPriceSpecification",
-                      "priceType": "https://schema.org/SalePrice",
-                      "price": 69.3,
-                    },
-                  ],
-                  "availability": "https://schema.org/InStock",
-                },
-              ],
-            },
-          }}
-        />
-      </div>
+    <div class="p-4">
+      <h1 class="font-bold">{title}</h1>
+      <ul>
+        {dogFacts.map((fact) => <li>{fact}</li>)}
+      </ul>
     </div>
   );
-};
-
-export default loader;
+}
 ```
 
 ## Benefits
