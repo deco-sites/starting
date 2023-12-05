@@ -18,11 +18,11 @@ It's very important to have control and autonomy to manage your pages and blocks
 
 3. On the right sidebar of the screen, you can see the page properties and a navigation bar with tabs such as `Form`, `JSON`, and `Revisions` (`↻`).
 
-![Revisions](https://github.com/deco-cx/apps/assets/882438/86b9b319-e314-4928-ac84-db415358ed28)
+   ![Revisions](https://github.com/deco-cx/apps/assets/882438/86b9b319-e314-4928-ac84-db415358ed28)
 
 4. By clicking on the `Revisions` tab (`↻`), you can access a list of versions for that page (or block) and who was responsible for making them. You can also load the data from a version to use as a basis for the current edit.
 
-> To restore an old version, simply select the version to be restored and click `Publish`.
+   > To restore an old version, simply select the version to be restored and click `Publish`.
 
 5. When you make changes to any page or block, you need to click `Publish`, otherwise the changes made will be lost.
 
@@ -50,6 +50,6 @@ So, remember:
 1. When you access the `Releases` tab on the top bar, you can see a list of releases on the screen, but only one of them is published.
 2. Once you publish a revision of any page or block, a new release will be generated. Therefore, when you access the `Releases` tab after some published modification, you will be able to see the new published version of the release listed along with the others.
 
-![Releases](https://github.com/deco-cx/apps/assets/882438/719d710a-61a0-4aaf-b253-556b4195f3e0)
+   ![Releases](https://github.com/deco-cx/apps/assets/882438/719d710a-61a0-4aaf-b253-556b4195f3e0)
 
 3. If you prefer to republish a version of the previously published release, different from the current release, you can click on `...` and then click `Publish` to restore the chosen version.

@@ -71,19 +71,19 @@ Veja mais instruções no seu provedor de domínios em como adicionar esses camp
 
 1. Entre na página inicial do site, e navegue para a aba de Configurações.
 
-![Configuraçãos do site](https://github.com/deco-cx/apps/assets/882438/7c60ddbd-7164-42ea-bd16-d8c5d70603df)
+   ![Configuraçãos do site](https://github.com/deco-cx/apps/assets/882438/7c60ddbd-7164-42ea-bd16-d8c5d70603df)
 
 2. Em Configurações, na listagem de Domínios, verifique que há um domínio `deco.site` e adicione um domínio existente. **Caso não tenha um domínio `deco.site`, entre em contato conosco**.
 
 3. Adicione o domínio próprio do site no modal aberto. O domínio deve ser apenas o nome, sem protocolo (http/https) ou barras. Aguarde o processo de configuração inicial.
 
-![Adicionar domínio](https://github.com/deco-cx/apps/assets/882438/8c19ae5c-e522-4a60-9b8b-28e4815cced6)
+   ![Adicionar domínio](https://github.com/deco-cx/apps/assets/882438/8c19ae5c-e522-4a60-9b8b-28e4815cced6)
 
 4. Depois da adição, o domínio está registrado na deco, mas ainda não é operante. É preciso agora fazer o setup do domínio. Em `...`, clicando em setup, haverá instruções de configuração.
 
 5. Adicione a configuração de domínio no seu servidor de domínios. Isto representa um apontamento `CNAME` do domínio própio, para o domínio da deco. No exemplo, isto representa um apontamento do domínio `www.example.com` para `startest.deco.site`.
 
-![Validação do domínio](https://github.com/deco-cx/apps/assets/882438/0d9d876e-2a5e-4e05-8767-dc77e69c548b)
+   ![Validação do domínio](https://github.com/deco-cx/apps/assets/882438/0d9d876e-2a5e-4e05-8767-dc77e69c548b)
 
 6. Uma vez configurado, clique em validar configuração para que a deco valide se o apontamento foi corretamente realizado. **Importante: O domínio continuará no estado de em espera por validação até que o apontamento seja realizado na nossa infraestrutura**.
 

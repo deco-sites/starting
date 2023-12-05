@@ -18,11 +18,11 @@ since: 1.0.0
 
 3. Na barra lateral direita da tela você pode ver as propriedades da página e uma barra de navegação com abas como `Form`, `JSON` e `Revisions` (`↻`).
 
-![Revisões](https://github.com/deco-cx/apps/assets/882438/86b9b319-e314-4928-ac84-db415358ed28)
+    ![Revisões](https://github.com/deco-cx/apps/assets/882438/86b9b319-e314-4928-ac84-db415358ed28)
 
 4. Ao clicar na aba de `Revisions` (`↻`), você consegue ter acesso a uma lista de versões para essa página (ou bloco) e quem foi o responsável por realizá-las. Você também pode carregas os dados de uma versão para usar como base da edição atual.
 
-> Para restaurar uma versão antiga, basta selecionar a versão a ser resturada e clicar em `Publicar`.
+    > Para restaurar uma versão antiga, basta selecionar a versão a ser resturada e clicar em `Publicar`.
 
 5. Quando você faz alterações em qualquer página ou bloco, você precisa clicar em `Publicar`, caso contrário as alterações feitas serão perdidas.
 
@@ -49,6 +49,6 @@ Então, lembre-se:
 1. Quando você acessa a aba `Lançamentos` na barra superior, você pode ver uma lista de lançamentos na tela, mas apenas um deles está publicado.
 2. Uma vez que você publica uma revisão de qualquer página ou bloco, um novo lançamento será gerado. Desse modo, ao acessar a aba `Lançamentos` após alguma modificação publicada, você poderá ver a nova versão publicada do lançamento listada junto com as demais.
 
-![Lançamentos](https://github.com/deco-cx/apps/assets/882438/719d710a-61a0-4aaf-b253-556b4195f3e0)
+    ![Lançamentos](https://github.com/deco-cx/apps/assets/882438/719d710a-61a0-4aaf-b253-556b4195f3e0)
 
 3. Caso prefira republicar uma versão do lançamento publicado anteriormente, diferente do lançamento atual, você pode clicar em `…` e depois clicar em `Publicar` para restaurar a versão escolhida.
