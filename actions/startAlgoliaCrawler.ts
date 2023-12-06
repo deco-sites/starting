@@ -1,14 +1,14 @@
 const action = async (): Promise<void> => {
-  const CRAWLER_ID = "2a9862c7-25b6-4e72-a194-7152d768959c";
+  const CRAWLER_USER_ID = "2a9862c7-25b6-4e72-a194-7152d768959c";
   const CRAWLER_API_KEY = "dfecac9615010e34398c83b859e629f1";
+  const CRAWLER_ID = "8c6a627b-685a-45e6-8674-401b2d960f23";
 
   const url =
     `https://crawler.algolia.com/api/1/crawlers/${CRAWLER_ID}/reindex`;
   const headers = {
     "Content-Type": "application/json",
-    "Authorization": "Basic " +
-      Buffer.from(`${CRAWLER_ID}:${CRAWLER_API_KEY}`).toString("base64"),
-  };
+    "Authorization": "Basic " + btoa(`${CRAWLER_USER_ID}:${CRAWLER_API_KEY}`),
+  }; 
 
   await fetch(url, {
     method: "POST",
