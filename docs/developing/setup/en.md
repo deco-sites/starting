@@ -68,7 +68,7 @@ We highly recommend using
 [Visual Studio Code](https://code.visualstudio.com/download) as the IDE and
 [Git](https://github.com/git-guides/install-git) as the version control tool.
 
-## Testing Deco Locally (Optional)!
+## Test Deco Locally (Optional)!
 
 Deco offers a mechanism to test and explore our system without the need to
 deploy code or make a deployment on our infrastructure. To do this, visit:
