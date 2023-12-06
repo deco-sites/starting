@@ -129,11 +129,11 @@ reflected at the above address.
 
 ## Publishing changes
 
-The production deployment process is very simple: just do a _git push_ of the
-changes to the _**main**_ branch.
+The development deployment process is very simple: do a _git push_ of the changes to the _**main**_ branch.
 
-When accessing the production URL (such as <https://example.deco.site>), these
-changes will be available.
+These changes will be available when accessing the dev URL (such as <https://deco-sites-example.deno.dev/>).
+
+You can also create a deco.site domain in the admin tool that will make <https://example.deco.site/> available to use.
 
 ## Now you can start creating sites in your own way! :)
 
