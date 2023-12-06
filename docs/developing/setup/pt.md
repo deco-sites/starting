@@ -118,9 +118,11 @@ Caso o código de alguma seção em uso na página inicial do site seja alterado
 
 ## Publicando alterações
 
-O processo de _deploy_ em produção é muito simples: apenas fazer um _git push_ das alterações na _branch_ _**main**_.
+O processo de _deploy_ em development é muito simples: apenas fazer um _git push_ das alterações na _branch_ _**main**_.
 
-Acessando o endereço em produção (como <https://example.deco.site>), essas alterações estarão disponíveis.
+Acessando o endereço em dev (como <https://deco-sites-example.deno.dev/>), essas alterações estarão disponíveis.
+
+Você também pode criar um domínio deco.site no admin que disponibilizará para uso <https://example.deco.site/>.
 
 ## Agora você pode começar a criar sites cada vez mais do seu jeito! :)
 
