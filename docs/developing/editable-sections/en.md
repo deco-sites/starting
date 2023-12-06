@@ -137,7 +137,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 export interface Link {
   title: string;
   href: string;
-  hightlight?: boolean;
+  highlight?: boolean;
 }
 
 export interface Props {
@@ -173,11 +173,11 @@ export default function Hero({
       </div>
       {!!links?.length && (
         <ul class="mt-8 flex flex-col md:flex-row gap-2 md:gap-4">
-          {links.map(({ href, title, hightlight }) => (
-            <a href={href} aria-label={title}>
-              <li class={`${hightlight ? "font-black" : ""}`}>{title}</li>
-            </a>
-          ))}
+            {links.map(({ href, title, highlight }) => (
+              <a href={href} aria-label={title}>
+                <li class={`${highlight ? "font-black" : ""}`}>{title}</li>
+              </a>
+            ))}
         </ul>
       )}
     </header>
