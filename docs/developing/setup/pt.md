@@ -63,7 +63,7 @@ Deno** em sua máquina. Para instalar o Deno, siga as
 
 Recomendamos fortemente o uso do [Visual Studio Code](https://code.visualstudio.com/download) como IDE e do [Git](https://github.com/git-guides/install-git) para controle de versão.
 
-## Testando a deco localmente (opcional)!
+## Teste a deco localmente (opcional)!
 
 A deco oferece um mecanismo para testar e explorar nosso sistema sem a necessidade de subir código ou fazer um deployment na nossa infraestrutura. Para isso, acesse: https://play.deco.cx/
 
