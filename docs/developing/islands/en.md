@@ -98,6 +98,7 @@ export default function Counter() {
     </div>
   )
 }
+```
 
 # Sharing state among islands.
 

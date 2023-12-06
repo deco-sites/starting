@@ -138,8 +138,8 @@ export interface MainColors {
 Adapte a classe de postagens para fazer uso de alguns tokens. Por exemplo, o título principal da postagem agora segue a cor primária do site.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
    /**

@@ -132,11 +132,11 @@ export interface MainColors {
 }
 ```
 
-Modify the post class to make use of some tokens. For example, the main title of the post now follows the primary color of the site.
+Modify the LatestPost class to make use of some tokens. For example, the main title of the post now follows the primary color of the site.
 
 ```tsx
-import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
    /**
