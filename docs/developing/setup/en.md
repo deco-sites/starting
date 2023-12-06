@@ -45,13 +45,15 @@ The only setup required to code _deco.cx_ sites is to **install Deno** on your m
 
 We highly recommend using [Visual Studio Code](https://code.visualstudio.com/download) as the IDE and [Git](https://github.com/git-guides/install-git) as the version control tool.
 
-## Testing Deco Locally (Optional)!
+## Test Deco Locally (Optional)!
 
 Deco offers a mechanism to test and explore our system without the need to deploy code or make a deployment on our infrastructure. To do this, visit: https://play.deco.cx/
 
 ![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
 
 ## Create a deco site
+
+**Important**: Before proceeding with this section, make sure to check out [Creating a Site](/docs/en/getting-started/creating-a-site).
 
 _deco.cx_ abstracts all the complexities of setting up a repository, connecting a CMS, and deploying to the edge. This allows you to focus only on what matters: the code and content of your site.
 

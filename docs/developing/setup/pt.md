@@ -71,6 +71,8 @@ A deco oferece um mecanismo para testar e explorar nosso sistema sem a necessida
 
 ## Crie um site deco.cx
 
+**Importante**: Antes de seguir com essa seção, dê uma olhada em [Criando um Site](/docs/pt/getting-started/creating-a-site).
+
 _deco.cx_ abstrai todas as complexidades de configurar um repositório, conectar
 um CMS e deployar na edge. Isso permite que você se concentre apenas no que
 importa: o código e conteúdo do seu Site.
