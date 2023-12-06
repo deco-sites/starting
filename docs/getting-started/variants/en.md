@@ -17,7 +17,7 @@ Furthermore, some Matchers have a `sticky` behavior, meaning that the result of 
 
 By leveraging Matchers and their capabilities, you can create dynamic and personalized experiences for your users while optimizing performance by reducing redundant evaluations and maintaining consistency across variants. To read more about how to create new matchers check our [Matchers Documentation](/docs/en/concepts/matcher).
 
-> Currently we do not supported other variants than Page Sections, this feature will be added in the future.
+> Currently we do not support variants other than Page Sections; this feature will be added in the future.
 
 ## Step by step
 

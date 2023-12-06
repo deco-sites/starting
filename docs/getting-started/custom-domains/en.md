@@ -71,19 +71,19 @@ Check with your domain provider for further instructions on how to add these rec
 
 1. Go to the home page of the site and navigate to the Settings tab.
 
-![Site settings](https://github.com/deco-cx/apps/assets/882438/7c60ddbd-7164-42ea-bd16-d8c5d70603df)
+   ![Site settings](https://github.com/deco-cx/apps/assets/882438/7c60ddbd-7164-42ea-bd16-d8c5d70603df)
 
 2. In Settings, under the Domains listing, check that there is a `deco.site` domain and add an existing domain.  **Contact us if you don't have a `deco.site` domain**.
 
 3. Add your domain for the site in the opened modal. The domain should only be the name, without any protocol (http/https) or slashes. Wait for the initial configuration process.
 
-![Add domain](https://github.com/deco-cx/apps/assets/882438/8c19ae5c-e522-4a60-9b8b-28e4815cced6)
+   ![Add domain](https://github.com/deco-cx/apps/assets/882438/8c19ae5c-e522-4a60-9b8b-28e4815cced6)
 
 4. After adding, the domain is registered with Deco but is not yet operational. You now need to set up the domain. Under `...`, click on setup to view the configuration instructions.
 
 5. Add the domain configuration to your domain server. This represents a `CNAME` record from the custom domain to the deco domain. In the example, this would be a record from the domain `www.example.com` to `startest.deco.site`.
 
-![Domain setup](https://github.com/deco-cx/apps/assets/882438/0d9d876e-2a5e-4e05-8767-dc77e69c548b)
+   ![Domain setup](https://github.com/deco-cx/apps/assets/882438/0d9d876e-2a5e-4e05-8767-dc77e69c548b)
 
 6. Once configured, click on validate configuration for Deco to verify if the record was set up correctly. Important: The domain will remain in an "awaiting" state until we complete the configuration on our infrastructure.
 

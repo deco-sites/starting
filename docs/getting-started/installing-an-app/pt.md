@@ -19,7 +19,7 @@ Uma `App` permite adicionar novas funcionalidades no seu site de maneira bem dir
 
 3. **Acesse a Seção "Apps":** Na página inicial do site, navegue até a seção "Apps". Esta é a seção onde você encontrará todos os Apps disponíveis para instalação. Selecione para ver todos os Apps disponíveis.
 
-![Seção de Apps](https://github.com/deco-cx/apps/assets/882438/e2533612-6828-4fb6-9959-96f000ca3537)
+    ![Seção de Apps](https://github.com/deco-cx/apps/assets/882438/e2533612-6828-4fb6-9959-96f000ca3537)
 
 4. **Adicione um Bloco da app:** Clique em adicionar App. Isto inicia o processo de criar um bloco. Configure o bloco e clique em criar. (dê a ele um nome; é comum usar a versão, como `site@v0`).
 

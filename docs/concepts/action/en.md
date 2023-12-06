@@ -33,7 +33,7 @@ sources or perform a series of related operations. By leveraging both
 **Loaders** and **Actions**, developers can create flexible and powerful
 applications that seamlessly integrate data fetching and mutation.
 
-In addition to mutating data data, **Actions** in _deco.cx_ **can also export a
+In addition to mutating data, **Actions** in _deco.cx_ **can also export a
 typescript props type,** which allows them to be configured in the
 [Admin](https://deco.cx/admin) just like [Sections](/docs/en/concepts/section).
 

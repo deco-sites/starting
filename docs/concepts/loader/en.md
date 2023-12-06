@@ -23,7 +23,7 @@ Loaders configurable in this way, it becomes easier to manage the data flowing
 into Sections and ensure that the Site is displaying the right information to
 visitors.
 
-One other greate benefit of Loaders in _deco.cx_ is that **multiple loaders can
+One other great benefit of Loaders in _deco.cx_ is that **multiple loaders can
 return the same data type**. This allows [Sections](/docs/en/concepts/section)
 that receive, for example, an array of canonical Product to get data from
 different Loaders, depending on the user's configuration. This means that UIs

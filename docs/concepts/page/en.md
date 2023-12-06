@@ -8,7 +8,7 @@ commonly have many Pages. Each Page consists of **one or more configured
 components that make up the Page's content. A Page will also be **associated
 with a URL path** that, when visited, should render such Page. This path can be
 a static one like `/about` or something dynamic like `/products/:slug`, that
-will match multiple URLs with a dynmic parameter following the
+will match multiple URLs with a dynamic parameter following the
 [URLPattern API](https://developer.mozilla.org/en-US/docs/Web/API/URL_Pattern_API).
 
 <img width="1512" alt="image" src="https://user-images.githubusercontent.com/18706156/225141097-0538f723-6e5f-4a85-ba41-03fa145c87bc.png">

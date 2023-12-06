@@ -20,11 +20,11 @@ The overall process involves changing the site route map and attaching a proxy o
 1. First, log in to the Deco Admin. Once logged in, you can access the site you want to work with.
 
 2. Go to the site's `redirects` configuration.
-![Redirects in Admin](https://github.com/deco-cx/apps/assets/882438/29e9f388-2c32-4190-96e5-ac5a8001b68c)
+    ![Redirects in Admin](https://github.com/deco-cx/apps/assets/882438/29e9f388-2c32-4190-96e5-ac5a8001b68c)
 
 3. Click on `Create a redirect` and configure it according to your needs.
 
-![Create Redirect](https://github.com/deco-cx/apps/assets/882438/63a7d2a4-cc53-47eb-adca-c6cb601e7f41)
+    ![Create Redirect](https://github.com/deco-cx/apps/assets/882438/63a7d2a4-cc53-47eb-adca-c6cb601e7f41)
 
 4. Fill in the `From` field with the desired route, for example, `/example-redirect`, and in the `To` field, enter `https://google.com` or the URL to which you want to **redirect**.
 
@@ -44,7 +44,7 @@ To create a proxy instead of a redirection, you can follow these steps:
 
 2. Open the site `App` for editing. And press to add a new `site map`.
 
-![Add Site Map](https://github.com/deco-cx/apps/assets/882438/92427ed1-54cb-49f2-88f5-3be8c1c27b8a)
+    ![Add Site Map](https://github.com/deco-cx/apps/assets/882438/92427ed1-54cb-49f2-88f5-3be8c1c27b8a)
 
 3. Select the route type as `Route`, and add this new route.
 
@@ -60,11 +60,11 @@ Repeat steps 1 and 2 from the previous section. Then:
 
 1. Upload a file named `redirect.csv` to the project's base. It should have the format as indicated below:
 
-```
-from,to,type
-/example-redirect,/test,temporary
-/google,https://www.google.com,permanent
-```
+    ```
+    from,to,type
+    /example-redirect,/test,temporary
+    /google,https://www.google.com,permanent
+    ```
 
 
 2. Add the route of type `redirectsFromCsv.ts`.

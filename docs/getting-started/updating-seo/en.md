@@ -4,7 +4,7 @@ description: |
 ---
 
 Let's begin updating the website information.
-deco.cx allows you, through the Admin, to change content without the need for code changes, and this is done through the concept of [Blocks](/docs/en/concepts/blocks).
+deco.cx allows you, through the Admin, to change content without the need for code changes, and this is done through the concept of [Blocks](/docs/en/concepts/block).
 
 The first Block we can edit is the **site**,
 an [App](/docs/en/concepts/app) from deco that configures and prepares a project to operate as a website on the internet. This block configures important metadata about the page, including SEO data and title, description, and thumbnail (this information is used in social media previews).
