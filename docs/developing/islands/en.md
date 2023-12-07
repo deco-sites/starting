@@ -47,30 +47,13 @@ export default function Counter() {
 }
 ```
 
-Creating a file called `Counter.tsx` and placing it into the `components` folder
-gives us the following result on the screen:
-
-![Jul-13-2023 10-34-48](https://github.com/deco-sites/starting/assets/1753396/49db9135-842c-46ca-94cb-e65290611d57)
-
-However, when we try clicking on the button, nothing happens. This is because
-deco does not ship any JavaScript to the browser, thus making hooks like
-`useState` and `useEffect` not work. To opt into shipping JavaScript to the
-browser, you must move the `Counter.tsx` file into a special folder called
-`islands` in the project's root.
-
-![Jul-13-2023 10-40-08](https://github.com/deco-sites/starting/assets/1753396/e672d732-8377-44fb-9494-057ec22a7e29)
-
-Moving the component's file into the `islands` folder, we have the component
-with a working interaction
+Creating a file called `Counter.tsx` and placing it into the `islands` folder gives us the following result on the screen:
 
 ![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
 
-This component is now called an `island`!
+This is called an `island`!
 
-Althought adding islands to your project seems tempting, keep in mind that
-islands slow down websites and harm [TBT metric](https://web.dev/tbt/), so
-before moving any component to the `island` folder, make sure that your final
-interactivity:
+Although adding islands to your project seems tempting, keep in mind that islands slow down websites and harm [TBT metric](https://web.dev/tbt/), so before moving any component to the `island` folder, make sure that your final interactivity:
 
 - Isn't achieved through page navigation with links or form submissions...
 - Isn't an interaction built purely with CSS...

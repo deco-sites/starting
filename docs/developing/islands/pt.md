@@ -48,25 +48,11 @@ export default function Counter() {
 }
 ```
 
-Ao criar um arquivo chamado `Counter.tsx` e colocá-lo na pasta `components`,
-obtemos o seguinte resultado na tela:
-
-![Jul-13-2023 10-34-48](https://github.com/deco-sites/starting/assets/1753396/49db9135-842c-46ca-94cb-e65290611d57)
-
-No entanto, quando tentamos clicar no botão, nada acontece. Isso ocorre porque o
-Deco não envia nenhum JavaScript para o navegador, tornando os hooks como
-`useState` e `useEffect` inoperantes. Para habilitar o envio de JavaScript para
-o navegador, você deve mover o arquivo `Counter.tsx` para uma pasta especial
-chamada `islands` na raiz do projeto.
-
-![Jul-13-2023 10-40-08](https://github.com/deco-sites/starting/assets/1753396/e672d732-8377-44fb-9494-057ec22a7e29)
-
-Ao mover o arquivo do componente para a pasta `islands`, temos o componente com
-uma interação funcional.
+Ao criar um arquivo chamado `Counter.tsx` e colocá-lo na pasta `islands`, obtemos o seguinte resultado na tela:
 
 ![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
 
-Agora esse componente é chamado de `island`!
+Agora isso é chamado de `island`!
 
 Embora adicionar islands ao seu projeto pareça tentador, tenha em mente que as
 islands tornam os sites mais lentos e prejudicam a métrica TBT
