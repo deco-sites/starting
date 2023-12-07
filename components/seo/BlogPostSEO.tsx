@@ -4,6 +4,7 @@ import {
   Post,
   SupportedLocales,
 } from "deco-sites/starting/components/utils/Blog.ts";
+import type { Props as SEOProps } from "deco-sites/std/components/seo/types.ts";
 
 export interface Props {
   /**
@@ -33,7 +34,7 @@ const BlogPostSEO = ({ locale = "en", ...props }: Props) => {
         props.post.body[locale]?.descr,
       image: props.post?.body[locale]?.seo?.image || props.post?.img,
     },
-  } as Post;
+  } as Post & {seo: SEOProps};
 
   return <Metatags {...props} context={context} />;
 };
