@@ -7,11 +7,18 @@ since: 1.21.4
 
 ## Overview
 
-Error boundaries are a powerful concept available to be used since 1.21.4 version, to handle errors that occur during the rendering of components. They allow you to gracefully handle errors and prevent the entire application from crashing due to an unhandled error.
+Error boundaries are a powerful concept available to be used since 1.21.4
+version, to handle errors that occur during the rendering of components. They
+allow you to gracefully handle errors and prevent the entire application from
+crashing due to an unhandled error.
 
-In deco, creating an error boundary is as simple as exporting a component function named `ErrorBoundary` that takes an object with two properties: `props` and `error`. The `props` property contains the original component's props, and the `error` property holds the error object that was thrown by the component.
+In deco, creating an error boundary is as simple as exporting a component
+function named `ErrorBoundary` that takes an object with two properties: `props`
+and `error`. The `props` property contains the original component's props, and
+the `error` property holds the error object that was thrown by the component.
 
-The pre-requisites to make your component work with error boundaries is having the following dependencies in versions higher or equal than below:
+The pre-requisites to make your component work with error boundaries is having
+the following dependencies in versions higher or equal than below:
 
 ```json
 {
@@ -22,7 +29,7 @@ The pre-requisites to make your component work with error boundaries is having t
     "preact/": "https://esm.sh/preact@10.16.0/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.0",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.1.3",
-    "@preact/signals-core": "https://esm.sh/@preact/signals-core@1.3.0",
+    "@preact/signals-core": "https://esm.sh/@preact/signals-core@1.3.0"
   }
 }
 ```
@@ -32,7 +39,8 @@ The pre-requisites to make your component work with error boundaries is having t
 To create an error boundary, you can follow these steps:
 
 - Pick your selected Section (e.g `ProductShelf.tsx`)
-- Export a function named `ErrorBoundary`, the function should accept an object with two properties: `props` and `error`.
+- Export a function named `ErrorBoundary`, the function should accept an object
+  with two properties: `props` and `error`.
 
 ```tsx
 // ProductShelf.tsx
@@ -58,6 +66,11 @@ export default function ProductShelf(props: Props) {
 }
 ```
 
-In this example, the `ProductShelf` component is wrapped with the `ErrorBoundary` component. If an error occurs during the rendering of `ProductShelf`, the `ErrorBoundary` component will catch the error and display the fallback UI specified in the `ErrorBoundary` function.
+In this example, the `ProductShelf` component is wrapped with the
+`ErrorBoundary` component. If an error occurs during the rendering of
+`ProductShelf`, the `ErrorBoundary` component will catch the error and display
+the fallback UI specified in the `ErrorBoundary` function.
 
-Remember to always use error boundaries judiciously and only wrap the components that are prone to errors. Using error boundaries effectively can greatly improve the stability and user experience of your applications.
+Remember to always use error boundaries judiciously and only wrap the components
+that are prone to errors. Using error boundaries effectively can greatly improve
+the stability and user experience of your applications.

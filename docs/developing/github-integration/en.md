@@ -1,4 +1,5 @@
 <!-- Colando aqui isso que estava em outro passo e não se encaixa mais. TODO: Completar/integrar -->
+
 ## Clone your site repository
 
 Accept the invitation to access the repository created for your site. This

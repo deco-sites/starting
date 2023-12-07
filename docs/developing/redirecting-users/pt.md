@@ -5,17 +5,27 @@ since: 1.0.0
 
 # Realizando Redirecionamentos em Seções
 
-Os redirecionamentos em seções permitem que você direcione eficientemente os usuários para diferentes páginas com base em determinadas condições, proporcionando uma experiência de navegação suave e contínua. Com o Live.ts, você pode implementar facilmente redirecionamentos usando carregadores inline e a função `redirect` do módulo `deco/mod.ts`.
+Os redirecionamentos em seções permitem que você direcione eficientemente os
+usuários para diferentes páginas com base em determinadas condições,
+proporcionando uma experiência de navegação suave e contínua. Com o Live.ts,
+você pode implementar facilmente redirecionamentos usando carregadores inline e
+a função `redirect` do módulo `deco/mod.ts`.
 
 ## Visão Geral
 
-Os redirecionamentos permitem que você evite a fase inteira de renderização, contornando a necessidade de geração desnecessária de conteúdo quando um redirecionamento é necessário. Eles são especialmente úteis quando você deseja guiar os usuários para páginas específicas com base em determinados critérios, como autenticação do usuário, geolocalização ou qualquer outra condição personalizada.
+Os redirecionamentos permitem que você evite a fase inteira de renderização,
+contornando a necessidade de geração desnecessária de conteúdo quando um
+redirecionamento é necessário. Eles são especialmente úteis quando você deseja
+guiar os usuários para páginas específicas com base em determinados critérios,
+como autenticação do usuário, geolocalização ou qualquer outra condição
+personalizada.
 
 ## Implementação
 
 Para criar um redirecionamento em uma seção, siga estes passos simples:
 
-1. Crie um carregador inline dentro do componente da sua seção e importe a função `redirect` do módulo `deco/mod.ts`.
+1. Crie um carregador inline dentro do componente da sua seção e importe a
+   função `redirect` do módulo `deco/mod.ts`.
 
 ```tsx
 import { redirect } from "deco/mod.ts";
@@ -38,15 +48,24 @@ export const loader = (props: Props, req: Request) => {
 };
 ```
 
-2. Dentro da função `loader`, defina a condição que determina se o redirecionamento deve ser acionado. Se a condição for atendida, construa a nova URL usando a classe `URL` e especifique o caminho para o qual você deseja redirecionar.
+2. Dentro da função `loader`, defina a condição que determina se o
+   redirecionamento deve ser acionado. Se a condição for atendida, construa a
+   nova URL usando a classe `URL` e especifique o caminho para o qual você
+   deseja redirecionar.
 
-3. Por fim, chame a função `redirect` com a URL recém-criada. Isso direcionará instantaneamente o usuário para a página especificada sem a necessidade de renderização adicional.
+3. Por fim, chame a função `redirect` com a URL recém-criada. Isso direcionará
+   instantaneamente o usuário para a página especificada sem a necessidade de
+   renderização adicional.
 
-Observe que você precisa retornar algo (neste caso, as `props`) na função `loader`, mesmo se estiver usando um redirecionamento. Isso é para garantir que a função se comporte conforme o esperado e atenda aos requisitos do compilador TypeScript.
+Observe que você precisa retornar algo (neste caso, as `props`) na função
+`loader`, mesmo se estiver usando um redirecionamento. Isso é para garantir que
+a função se comporte conforme o esperado e atenda aos requisitos do compilador
+TypeScript.
 
 ## Exemplo
 
-Digamos que você deseje redirecionar os usuários para uma página de login caso eles não estejam autenticados:
+Digamos que você deseje redirecionar os usuários para uma página de login caso
+eles não estejam autenticados:
 
 ```tsx
 import { redirect } from "deco/mod.ts";
@@ -69,12 +88,19 @@ export const loader = (props: Props, req: Request) => {
 };
 ```
 
-Neste exemplo, se o usuário não estiver autenticado, ele será redirecionado para a página de login. Caso contrário, o componente continuará sendo renderizado normalmente.
+Neste exemplo, se o usuário não estiver autenticado, ele será redirecionado para
+a página de login. Caso contrário, o componente continuará sendo renderizado
+normalmente.
 
 ## Lembre-se
 
-- Use redirecionamentos com cuidado e apenas quando necessário para garantir uma experiência de usuário suave.
-- Sempre teste seus redirecionamentos cuidadosamente para garantir que eles se comportem conforme o esperado.
-- Mantenha seus redirecionamentos organizados e fáceis de manter para evitar comportamentos indesejados.
+- Use redirecionamentos com cuidado e apenas quando necessário para garantir uma
+  experiência de usuário suave.
+- Sempre teste seus redirecionamentos cuidadosamente para garantir que eles se
+  comportem conforme o esperado.
+- Mantenha seus redirecionamentos organizados e fáceis de manter para evitar
+  comportamentos indesejados.
 
-Com redirecionamentos em seções, você tem o poder de guiar os usuários de forma perfeita em suas aplicações Live.ts com base em condições específicas. Boa navegação! 🚀🔀
+Com redirecionamentos em seções, você tem o poder de guiar os usuários de forma
+perfeita em suas aplicações Live.ts com base em condições específicas. Boa
+navegação! 🚀🔀

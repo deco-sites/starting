@@ -36,8 +36,9 @@ página.
 
 Se você criou um site na deco.cx baseado no nosso
 [starter de ecommerce](https://fashion.deco.site/), ele **já tem todo o código
-necessário para se integrar com o GTM**. No entanto, é necessário configurar um bloco section chamado analytics **Analytics** adicionando a propriedade `trackingId` com o ID do
-[container]
+necessário para se integrar com o GTM**. No entanto, é necessário configurar um
+bloco section chamado analytics **Analytics** adicionando a propriedade
+`trackingId` com o ID do [container]
 (https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation)
 previamente configurado.
 
@@ -58,12 +59,13 @@ automaticamente.
 1. Acesse seu site deco `https://<<sitename>>.deco.site`.
 2. Vá até as ferramentas de desenvolvedor e acesse a aba **Network**.
 3. Recarregue a página e certifique-se que o script
-   `https://www.googletagmanager.com/gtm.js?id=` está sendo
-   carregado.
+   `https://www.googletagmanager.com/gtm.js?id=` está sendo carregado.
 
 ## Integrando o Google Analytics 4
 
-> Recomendamos que utilize o Google Analytics como tag do GTM para evitar interferência. Caso utilize Google Analytics pelo GTag, adicione seu `GA measurement id` na propriedade `GA measurement ids` da section analytics. 
+> Recomendamos que utilize o Google Analytics como tag do GTM para evitar
+> interferência. Caso utilize Google Analytics pelo GTag, adicione seu
+> `GA measurement id` na propriedade `GA measurement ids` da section analytics.
 
 Se já existe uma tag do Google Analytics 4 (GA4) no container do GTM
 configurado, automaticamente o seu site deco.cx já estará enviando eventos para
@@ -91,7 +93,10 @@ GTM. Para isso, siga os passos:
 
 ```javascript
 function main() {
-  return window.LIVE.flags.map(function (flag) { if( flag.value) {return flag.name;} else { return null } }).filter(Boolean);
+  return window.LIVE.flags.map(function (flag) {
+    if (flag.value) return flag.name;
+    else return null;
+  }).filter(Boolean);
 }
 ```
 

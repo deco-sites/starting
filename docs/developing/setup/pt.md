@@ -3,9 +3,11 @@ description: Configuração do ambiente.
 since: 1.0.0
 ---
 
-- Leia o guia em **Comece agora** para entender os conceitos base e a ferramenta de admin da deco
+- Leia o guia em **Comece agora** para entender os conceitos base e a ferramenta
+  de admin da deco
 
-- **Importante**, é possível acessar <https://deco.cx/discord> para respoder dúvidas ou problemas com a _deco.cx_. Participe também da nossa comunidade!
+- **Importante**, é possível acessar <https://deco.cx/discord> para respoder
+  dúvidas ou problemas com a _deco.cx_. Participe também da nossa comunidade!
 
 # Tópicos
 
@@ -15,11 +17,11 @@ since: 1.0.0
 
 # Tecnologias utilizadas na deco
 
-Ao criar um site ou loja online com a _deco.cx_, o usuário tem a flexibilidade de
-criar [Sections](/docs/pt/concepts/section) e
-[Loaders](/docs/pt/concepts/loader) que atendem às suas necessidades
-exclusivas. Para ajudá-la a criar esses componentes com facilidade e rapidez,
-contamos com um conjunto de tecnologias poderosas e eficientes.
+Ao criar um site ou loja online com a _deco.cx_, o usuário tem a flexibilidade
+de criar [Sections](/docs/pt/concepts/section) e
+[Loaders](/docs/pt/concepts/loader) que atendem às suas necessidades exclusivas.
+Para ajudá-la a criar esses componentes com facilidade e rapidez, contamos com
+um conjunto de tecnologias poderosas e eficientes.
 
 Nossa pilha de tecnologia é focada em **simplicidade e desempenho**, tornando-a
 acessível a desenvolvedores com experiência anterior em HTML, CSS, JavaScript e
@@ -59,13 +61,18 @@ A única configuração necessária para codificar sites _deco.cx_ é **instalar
 Deno** em sua máquina. Para instalar o Deno, siga as
 [instruções na página deno.land](https://deno.land/manual/getting_started/installation).
 
-> Certifique-se de manter o deno atualizado! Caso já tenha o deno instalado, rode o `deno upgrade` para atualizá-lo.
+> Certifique-se de manter o deno atualizado! Caso já tenha o deno instalado,
+> rode o `deno upgrade` para atualizá-lo.
 
-Recomendamos fortemente o uso do [Visual Studio Code](https://code.visualstudio.com/download) como IDE e do [Git](https://github.com/git-guides/install-git) para controle de versão.
+Recomendamos fortemente o uso do
+[Visual Studio Code](https://code.visualstudio.com/download) como IDE e do
+[Git](https://github.com/git-guides/install-git) para controle de versão.
 
 ## Testando a deco localmente (opcional)!
 
-A deco oferece um mecanismo para testar e explorar nosso sistema sem a necessidade de subir código ou fazer um deployment na nossa infraestrutura. Para isso, acesse: https://play.deco.cx/
+A deco oferece um mecanismo para testar e explorar nosso sistema sem a
+necessidade de subir código ou fazer um deployment na nossa infraestrutura. Para
+isso, acesse: https://play.deco.cx/
 
 ![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
 
@@ -80,7 +87,9 @@ importa: o código e conteúdo do seu Site.
 Aceite o convite para se juntar ao repositório criado para o seu Site. Esse
 convite é enviado para o endereço de e-mail do seu perfil do Github.
 
-Caso não tenha utilizado uma conta do github para entrar no admin ou caso não tenha recebido um convite, é possível adicionar uma conta do github como colaborador do Site.
+Caso não tenha utilizado uma conta do github para entrar no admin ou caso não
+tenha recebido um convite, é possível adicionar uma conta do github como
+colaborador do Site.
 
 ![Adicionando colaborador no repositório](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9)
 
@@ -94,7 +103,9 @@ git clone git@github.com:deco-sites/site-name.git
 **Lembre-se de alterar `site-name` para o nome do seu site.**
 
 Se preferir, é possível clonar o repositório usando outros métodos, como _git
-https_, por meio da ferramenta _Github_ ou através de uma IDE. Na página do repositório no _Github_ há detalhes sobre algumas diferentes maneiras para fazer o clone.
+https_, por meio da ferramenta _Github_ ou através de uma IDE. Na página do
+repositório no _Github_ há detalhes sobre algumas diferentes maneiras para fazer
+o clone.
 
 # Desenvolvendo com a deco
 
@@ -106,23 +117,32 @@ No terminal, basta entrar na pasta do site e executar o comando:
 deno task start
 ```
 
-Aguarde a inicialização do projeto. Na primeira execução, o deno irá baixar e realizar um cache das dependências do projeto, e a deco irá preparar detalhes do site.
+Aguarde a inicialização do projeto. Na primeira execução, o deno irá baixar e
+realizar um cache das dependências do projeto, e a deco irá preparar detalhes do
+site.
 
 O site estará acessível em <http://localhost:8000>.
 
-> Alguns browsers impedem acessar ou executar código no domínio `localhost`! Desative proteções de acesso ou privacidade do browser para acessar esse endereço.
+> Alguns browsers impedem acessar ou executar código no domínio `localhost`!
+> Desative proteções de acesso ou privacidade do browser para acessar esse
+> endereço.
 
-Caso o código de alguma seção em uso na página inicial do site seja alterado, isto será refletido no endereço acima.
+Caso o código de alguma seção em uso na página inicial do site seja alterado,
+isto será refletido no endereço acima.
 
 ## Publicando alterações
 
-O processo de _deploy_ em produção é muito simples: apenas fazer um _git push_ das alterações na _branch_ _**main**_.
+O processo de _deploy_ em produção é muito simples: apenas fazer um _git push_
+das alterações na _branch_ _**main**_.
 
-Acessando o endereço em produção (como <https://example.deco.site>), essas alterações estarão disponíveis.
+Acessando o endereço em produção (como <https://example.deco.site>), essas
+alterações estarão disponíveis.
 
 ## Agora você pode começar a criar sites cada vez mais do seu jeito! :)
 
-Continue estando a deco para entender o potencial e como criar ou alterar sections, loaders e outros elementos da deco para criar sites e experiências cada vez ,mais personalizadas.
+Continue estando a deco para entender o potencial e como criar ou alterar
+sections, loaders e outros elementos da deco para criar sites e experiências
+cada vez ,mais personalizadas.
 
 Certifique-se de se juntar ao nosso
 [comunidade no Discord](https://deco.cx/discord). Acompanhe as novidades e

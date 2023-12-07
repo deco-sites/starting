@@ -3,8 +3,14 @@ description: Client-side Interactivity.
 since: 1.0.0
 ---
 
-One of the reasons deco is fast is our edge first approach to creating websites. This means that all code you write runs on our servers instead of running on slow, inconsitent user devices (browser). However, sometimes we need to provide extra interactivity to our websites, like adding `onClick`, `useState` or `useEffect` event handlers. 
-In this guide you will learn how to create components that run on the browser. Make sure to read our performance tips before creating any JavaScript on the browser to avoid common pitfails with client-side JavaScript
+One of the reasons deco is fast is our edge first approach to creating websites.
+This means that all code you write runs on our servers instead of running on
+slow, inconsitent user devices (browser). However, sometimes we need to provide
+extra interactivity to our websites, like adding `onClick`, `useState` or
+`useEffect` event handlers. In this guide you will learn how to create
+components that run on the browser. Make sure to read our performance tips
+before creating any JavaScript on the browser to avoid common pitfails with
+client-side JavaScript
 
 # Summary
 
@@ -14,55 +20,67 @@ In this guide you will learn how to create components that run on the browser. M
 4. Considerations and tips
 
 # Making components interactive
-Suppose you have the following component. A counter that allows the user to add/subtract to the displayed value. 
+
+Suppose you have the following component. A counter that allows the user to
+add/subtract to the displayed value.
 <img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
 
 This component can be implemented with the following code:
-```tsx
-import { useState } from 'preact/hooks'
 
-export default function Counter () {
-  const [count, setCount] = useState(0)
+```tsx
+import { useState } from "preact/hooks";
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
 
   return (
     <div>
-      <button onClick={() => setCount(count-1)}>
+      <button onClick={() => setCount(count - 1)}>
         -
       </button>
       <span>{count}</span>
-      <button onClick={() => setCount(count+1)}>
+      <button onClick={() => setCount(count + 1)}>
         +
       </button>
     </div>
-  )
+  );
 }
 ```
 
-Creating a file called `Counter.tsx` and placing it into the `components` folder gives us the following result on the screen:
+Creating a file called `Counter.tsx` and placing it into the `components` folder
+gives us the following result on the screen:
 
 ![Jul-13-2023 10-34-48](https://github.com/deco-sites/starting/assets/1753396/49db9135-842c-46ca-94cb-e65290611d57)
 
-However, when we try clicking on the button, nothing happens. This is because deco does not ship any JavaScript to the browser, thus making hooks like `useState` and `useEffect` not work. To opt into shipping JavaScript to the browser, you must move the `Counter.tsx` file into a special folder called `islands` in the project's root. 
+However, when we try clicking on the button, nothing happens. This is because
+deco does not ship any JavaScript to the browser, thus making hooks like
+`useState` and `useEffect` not work. To opt into shipping JavaScript to the
+browser, you must move the `Counter.tsx` file into a special folder called
+`islands` in the project's root.
 
 ![Jul-13-2023 10-40-08](https://github.com/deco-sites/starting/assets/1753396/e672d732-8377-44fb-9494-057ec22a7e29)
 
-Moving the component's file into the `islands` folder, we have the component with a working interaction
+Moving the component's file into the `islands` folder, we have the component
+with a working interaction
 
 ![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
 
 This component is now called an `island`!
 
-Althought adding islands to your project seems tempting, keep in mind that islands slow down websites and harm [TBT metric](https://web.dev/tbt/), so before moving any component to the `island` folder, make sure that your final interactivity:
+Althought adding islands to your project seems tempting, keep in mind that
+islands slow down websites and harm [TBT metric](https://web.dev/tbt/), so
+before moving any component to the `island` folder, make sure that your final
+interactivity:
 
 - Isn't achieved through page navigation with links or form submissions...
 - Isn't an interaction built purely with CSS...
-- Requires manipulation of elements or the current page's state
-(e.g., using onClick, onChange, useEffect, another hook, or an event listener)
-
+- Requires manipulation of elements or the current page's state (e.g., using
+  onClick, onChange, useEffect, another hook, or an event listener)
 
 # Islands usage limitations
 
-Islands are Preact components. This means they accept `props`. However, these values must be one of:
+Islands are Preact components. This means they accept `props`. However, these
+values must be one of:
 
 - Primitive types `string`, `boolean`, `bigint`, and `null`
 - Simple objects with `string` keys and serializable values
@@ -72,15 +90,21 @@ Islands are Preact components. This means they accept `props`. However, these va
 - Preact Signals (if the signal value is serializable)
 - Most numbers (`Infinity`, `-Infinity`, and `NaN` are converted to `null`)
 
-Complex objects such as Date, functions, and custom classes are not accepted as islands props.
+Complex objects such as Date, functions, and custom classes are not accepted as
+islands props.
 
 # Using Signals Instead of State
 
-`useState` requires working with a separate function for value updates. Preact also uses [`Signals`](https://preactjs.com/guide/v10/signals/) for handling state. A `signal` has a reference that holds a value, but it also has a `.value` attribute that allows updating this value.
+`useState` requires working with a separate function for value updates. Preact
+also uses [`Signals`](https://preactjs.com/guide/v10/signals/) for handling
+state. A `signal` has a reference that holds a value, but it also has a `.value`
+attribute that allows updating this value.
 
-Within a component, if the state is only used locally, you can use the `useSignal` hook to create these elements that can be used in the function body or in the JSX returned, as in the example below.
+Within a component, if the state is only used locally, you can use the
+`useSignal` hook to create these elements that can be used in the function body
+or in the JSX returned, as in the example below.
 
-```tsx
+````tsx
 import { useSignal } from "@preact/signals";
 
 export default function Counter() {
@@ -108,7 +132,7 @@ Signals are also a great way of sharing state between islands, since one can pub
 To use signals, 
 ```tsx 
 import { signal } from '@preact/signals';
-```
+````
 
 Now, use the global scope to create, mutate and subscribe to a signal:
 
@@ -118,22 +142,32 @@ import { signal } from "@preact/signals";
 const count = signal(0);
 
 // Read a signal’s value by accessing .value:
-console.log(count.value);   // 0
+console.log(count.value); // 0
 
 // Update a signal’s value:
 count.value += 1;
 
 // The signal's value has changed:
-console.log(count.value);  // 1
+console.log(count.value); // 1
 ```
 
-To define side-effects over signal changes, use the `effect`, `batch`, `computed`, or `useComputed` operations. Refer to the [signals documentation](https://preactjs.com/guide/v10/signals/) for more details. Also, take a look at [sharing state between islands](https://fresh.deno.dev/docs/examples/sharing-state-between-islands).
+To define side-effects over signal changes, use the `effect`, `batch`,
+`computed`, or `useComputed` operations. Refer to the
+[signals documentation](https://preactjs.com/guide/v10/signals/) for more
+details. Also, take a look at
+[sharing state between islands](https://fresh.deno.dev/docs/examples/sharing-state-between-islands).
 
-> Note that sharing state via the `Context` API will NOT work, since the context will be outside the islands, and thus, only available on the server. 
+> Note that sharing state via the `Context` API will NOT work, since the context
+> will be outside the islands, and thus, only available on the server.
 
 # Considerations and tips
 
-Making a component an island will at least double its size in bytes. The server renders the HTML for this element and sends it to the browser, but it also sends essentially the same HTML plus the JS to be injected on the client side. Therefore, try to create only the necessary islands, as they make the rendering process more resource-intensive.
+Making a component an island will at least double its size in bytes. The server
+renders the HTML for this element and sends it to the browser, but it also sends
+essentially the same HTML plus the JS to be injected on the client side.
+Therefore, try to create only the necessary islands, as they make the rendering
+process more resource-intensive.
 
 Futher read:
+
 - [Introduction to the Islands architecture - EN](https://deno.com/blog/intro-to-islands)

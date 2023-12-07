@@ -11,7 +11,8 @@ since: 1.0.0
 
 # Introdução a Sections (dev)
 
-A Section representa um elemento de UI configurável para um Site deco. Agora, é preciso entender o que isso representa em termos de desenvolvimento.
+A Section representa um elemento de UI configurável para um Site deco. Agora, é
+preciso entender o que isso representa em termos de desenvolvimento.
 
 Uma Section é um código `tsx` dentro da pasta `sections` e que:
 
@@ -19,7 +20,11 @@ Uma Section é um código `tsx` dentro da pasta `sections` e que:
 - tem propriedades serializáveis
 - exporta o tipo de suas propriedades
 
-Um componente Preact, é uma função exportada por padrão (`export default`) que recebe propriedades, retorna um JSX e é invocada a cada renderização do elemento que é definido. Como exemplo, abra, no VSCode, a section `sections/Hero.tsx` do template de ecommerce. Este arquivo também está acessível [no github da deco](https://github.com/deco-sites/start/blob/main/sections/Hero.tsx).
+Um componente Preact, é uma função exportada por padrão (`export default`) que
+recebe propriedades, retorna um JSX e é invocada a cada renderização do elemento
+que é definido. Como exemplo, abra, no VSCode, a section `sections/Hero.tsx` do
+template de ecommerce. Este arquivo também está acessível
+[no github da deco](https://github.com/deco-sites/start/blob/main/sections/Hero.tsx).
 
 O código deste elemento é escrito em HTML com JS, como no exemplo abaixo.
 
@@ -79,7 +84,10 @@ export default function Hero({
 }
 ```
 
-Observe os tipos exportados neste arquivo. Estes mesmos tipos são acessíveis no Admin ao criar um bloco Intro. No Admin, selecione a **Sections**, o bloco `Hero` e a opção de criar de bloco para visualizar as mesmas propriedades em um formulário de edição.
+Observe os tipos exportados neste arquivo. Estes mesmos tipos são acessíveis no
+Admin ao criar um bloco Intro. No Admin, selecione a **Sections**, o bloco
+`Hero` e a opção de criar de bloco para visualizar as mesmas propriedades em um
+formulário de edição.
 
 ![Criar bloco](https://github.com/deco-cx/apps/assets/882438/c7eee318-c6df-4ade-abd8-66390758aca7)
 
@@ -100,69 +108,87 @@ export interface Props {
   links?: Array<Link>;
 }
 ```
+
 _Tipos no arquivo de uma Section_
 
 ![Edição de propriedades da Section Hero](https://github.com/deco-cx/apps/assets/882438/b57f6fae-da58-4cc4-a5cc-aa99985cd442)
 
-Um projeto deco faz uso do tipo das propriedades de um componente para gerar automáticamente o formulário de preenchimento de bloco no Admin. Na figura a seguir é possível visualizar como o Admin conhece as informações a serem colocadas no formulário. Para isto, o Admin entra em contato com o Site em produção para pegar os dados das propriedades das Sections daquele projeto. Por sua vez, o código em um Site é oriundo do GitHub, o mesmo que o desenvolvedor utiliza.
+Um projeto deco faz uso do tipo das propriedades de um componente para gerar
+automáticamente o formulário de preenchimento de bloco no Admin. Na figura a
+seguir é possível visualizar como o Admin conhece as informações a serem
+colocadas no formulário. Para isto, o Admin entra em contato com o Site em
+produção para pegar os dados das propriedades das Sections daquele projeto. Por
+sua vez, o código em um Site é oriundo do GitHub, o mesmo que o desenvolvedor
+utiliza.
 
 ![Estrutura de acesso aos dados do Site](https://github.com/deco-sites/starting/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53)
 
 # Primeira alteração e seleção de ambiente
 
-Execute o projeto localmente (`deno task start`) e altere o código da `Hero` para receber uma nova propriedade opcional, o `hightlight` de um link. Para isso, altere o tipo `Link` e o código JSX do componente, lembrando de salvar o arquivo após a alteração.
+Execute o projeto localmente (`deno task start`) e altere o código da `Hero`
+para receber uma nova propriedade opcional, o `hightlight` de um link. Para
+isso, altere o tipo `Link` e o código JSX do componente, lembrando de salvar o
+arquivo após a alteração.
 
 ```tsx
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
-
 export interface Props {
-   /**
-    * @title Post image.
-    */
-   photo?: ImageWidget;
-   /**
+  /**
+   * @title Post image.
+   */
+  photo?: ImageWidget;
+  /**
    * @title Post body.
    */
-   post: string;
-   /**
+  post: string;
+  /**
    * @title Publish date.
    * @format datetime
    */
-   datetime: string;
-   /**
+  datetime: string;
+  /**
    * @title Post title.
    */
-   title: string;
+  title: string;
 }
 
 export default function LatestPosts({ title, photo }: Props) {
-   return (
-      <div>
-      {photo && <Image
-         src={photo}
-         alt={`${title} image`}
-         height={500}
-         width={500}
-         class="rounded"
-      />}
+  return (
+    <div>
+      {photo && (
+        <Image
+          src={photo}
+          alt={`${title} image`}
+          height={500}
+          width={500}
+          class="rounded"
+        />
+      )}
       <h1 class="font-bold">{title}</h1>
       <p>This is an example section</p>
-      </div>
-   );
+    </div>
+  );
 }
-
 ```
+
 _Alterando o tipo Link e o JSX com a nova propriedade `hightlight`_
 
-Ao realizar esta alteração localmente, ela não afeta ou impacta o Site em produção. No entanto, com o projeto localmente (`deno task start`), é possível visualizar tal alteração no próprio Admin. Para isto, é importante ir no seletor de ambiente, e escolher o `localhost:8000` como referência.
+Ao realizar esta alteração localmente, ela não afeta ou impacta o Site em
+produção. No entanto, com o projeto localmente (`deno task start`), é possível
+visualizar tal alteração no próprio Admin. Para isto, é importante ir no seletor
+de ambiente, e escolher o `localhost:8000` como referência.
 
 ![Alterando o ambiente](https://github.com/deco-cx/apps/assets/882438/62efa5c1-f960-4d21-8ec8-2c8f729c1093)
 
-Ao apontar para o `localhost`, o admin consulta agora a versão rodando localmente para detectar as propriedades e `sections` disponíveis.
+Ao apontar para o `localhost`, o admin consulta agora a versão rodando
+localmente para detectar as propriedades e `sections` disponíveis.
 
-Para que outras pessoas possam ver a alteração, é preciso realizar o `commit` e `push` das alterações. A branch `main` tem o código que é exibido no domínio padrão do Site, mas é possível fazer a visualização de outras branches do repositório, bastando selecionar a branch em questão no seletor de ambientes.
+Para que outras pessoas possam ver a alteração, é preciso realizar o `commit` e
+`push` das alterações. A branch `main` tem o código que é exibido no domínio
+padrão do Site, mas é possível fazer a visualização de outras branches do
+repositório, bastando selecionar a branch em questão no seletor de ambientes.
 
 # Resumo: Para alterar e testar uma `section`
 
@@ -181,6 +207,11 @@ De forma sucinta, para testar alterações na Section `Hero.tsx`:
 
 5. Procure `Hero` dentre os blocos.
 
-6. **Pronto!** Agora você pode configurar `props` para essa Section e ver como ela está sendo renderizada. O _preview_ atualizará automaticamente se você alterar o código da Section localmente.
+6. **Pronto!** Agora você pode configurar `props` para essa Section e ver como
+   ela está sendo renderizada. O _preview_ atualizará automaticamente se você
+   alterar o código da Section localmente.
 
-Lembre-se de salvar o seu arquivo. Caso haja algum erro de tipagem ou transformação, o mesmo será sinalizado na linha de comando ou no próprio VSCode. Quando estiver confortável com as alterações, faça o envio do arquivo alterado ao repositório do GitHub.
+Lembre-se de salvar o seu arquivo. Caso haja algum erro de tipagem ou
+transformação, o mesmo será sinalizado na linha de comando ou no próprio VSCode.
+Quando estiver confortável com as alterações, faça o envio do arquivo alterado
+ao repositório do GitHub.

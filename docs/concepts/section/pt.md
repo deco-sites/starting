@@ -19,9 +19,9 @@ Alguns exemplos de Section para uma loja de ecomemerce seriam:
 ## Interatividade
 
 Observe que as seções são executadas **somente no lado do servidor**, portanto,
-gerenciamento de estado e ciclo de vida como `useState`, `useEffect` e
-callbacks como `onClick`, `onInput` não irão funcionar. Para que funcionem, você
-precisará usar [Islands](https://fresh.deno.dev/docs/concepts/islands).
+gerenciamento de estado e ciclo de vida como `useState`, `useEffect` e callbacks
+como `onClick`, `onInput` não irão funcionar. Para que funcionem, você precisará
+usar [Islands](https://fresh.deno.dev/docs/concepts/islands).
 
 No Admin da _deco.cx_ é possível interagir com as Sections em dois locais:
 

@@ -8,7 +8,7 @@ const action = async (): Promise<void> => {
   const headers = {
     "Content-Type": "application/json",
     "Authorization": "Basic " + btoa(`${CRAWLER_USER_ID}:${CRAWLER_API_KEY}`),
-  }; 
+  };
 
   await fetch(url, {
     method: "POST",

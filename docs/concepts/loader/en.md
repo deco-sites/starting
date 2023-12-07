@@ -10,7 +10,8 @@ sources**, transform it if necessary, and **provide it to the site Sections that
 need it.** Loaders can be used to fetch data from APIs, databases, or any other
 external source. They live locally on the `/loaders/` folder of your project,
 but it's also possible to
-[Installing apps](/docs/en/getting-started/installing-an-app) that contain loaders.
+[Installing apps](/docs/en/getting-started/installing-an-app) that contain
+loaders.
 
 <!-- TODO: Update folder name after new engine -->
 
@@ -31,10 +32,10 @@ can be reused across [Sites](/docs/en/concepts/site) or across teams, making it
 easier to manage and scale your project.
 
 > All Sections for ecommerce stores created by _deco.cx_ in the
-> [Storefront](https://github.com/deco-sites/storefront) start use a canonical Product
-> type, and also every Loader that connects to ecommerce providers's APIs. This
-> means that you can reuse the same UI to show data from different places,
-> depending on the configuration.
+> [Storefront](https://github.com/deco-sites/storefront) start use a canonical
+> Product type, and also every Loader that connects to ecommerce providers's
+> APIs. This means that you can reuse the same UI to show data from different
+> places, depending on the configuration.
 
 <img width="1259" alt="image" src="https://user-images.githubusercontent.com/18706156/224897214-a45b2731-5799-4007-8084-a8a772ddf5d2.png">
 

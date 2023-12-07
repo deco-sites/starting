@@ -7,7 +7,8 @@ descrição: |
 
 - Leia [**Overview**](/docs/pt/overview) da deco.cx.
 
-> Você pode sempre pedir por ajuda ou mais informações no nosso [servidor discord](https://deco.cx/discord)!
+> Você pode sempre pedir por ajuda ou mais informações no nosso
+> [servidor discord](https://deco.cx/discord)!
 
 ## Crie um site deco.cx
 
@@ -21,14 +22,18 @@ descrição: |
 
 ![Seleção de templates](https://github.com/deco-sites/storefront/assets/882438/4c4323ec-2aec-4b08-a523-32f0761c8a36)
 
-O processo de criação do site será iniciado e, após o término, você verá o painel do site:
+O processo de criação do site será iniciado e, após o término, você verá o
+painel do site:
 
 ![Dashboard de site na deco.cx](https://github.com/deco-cx/apps/assets/882438/cac4147f-b013-40ca-bf68-e28ab40e831a)
 
 ## Navegando no site
 
-Logo abaixo no nome do seu projeto, você verá a URL do seu site. Essa URL é pública e o site já está online e acessível.
+Logo abaixo no nome do seu projeto, você verá a URL do seu site. Essa URL é
+pública e o site já está online e acessível.
 
-Você deve ver algo semelhante a https://deco-sites-start.deno.dev, que foi o modelo escolhido no processo de criação.
+Você deve ver algo semelhante a https://deco-sites-start.deno.dev, que foi o
+modelo escolhido no processo de criação.
 
-> A deco.cx é gratuita até 5.000 visualizações/visitas por mês. Verifique nossos [Preços](https://www.deco.cx/pt/pricing) para mais informações.
+> A deco.cx é gratuita até 5.000 visualizações/visitas por mês. Verifique nossos
+> [Preços](https://www.deco.cx/pt/pricing) para mais informações.

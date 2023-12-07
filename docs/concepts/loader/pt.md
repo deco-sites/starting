@@ -10,8 +10,8 @@ executadas antes da renderização de cada página e seu principal objetivo é
 **fornecê-los às Seções do site que precisam.** Os Loaders podem ser usados para
 buscar dados de APIs, bancos de dados ou qualquer outra fonte externa. As
 implementações locais de Loaders vivem na pasta `/loaders` do seu projeto, porém
-é possível
-[Instalar novas apps](/docs/pt/getting-started/installing-an-app) que contém outros loaders.
+é possível [Instalar novas apps](/docs/pt/getting-started/installing-an-app) que
+contém outros loaders.
 
 Além de buscar dados, os Loaders na _deco.cx_ **também podem exportar um tipo de
 Props Typescript**, o que permite que sejam configurados no

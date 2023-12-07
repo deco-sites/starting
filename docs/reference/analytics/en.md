@@ -5,14 +5,21 @@ since: 1.0.0
 
 ## Sending events to the dataLayer
 
-The dataLayer is the data layer used by Google Tag Manager or Google Tag (used by Google Analytics) to manage pixel events configured in the tag.
+The dataLayer is the data layer used by Google Tag Manager or Google Tag (used
+by Google Analytics) to manage pixel events configured in the tag.
 
-In a deco.cx project, there is an sdk/analytics.ts file that contains the sendEvent function, which takes an object of type AnalyticsEvent and adds the data to the dataLayer. This file also contains two components that receive an event property of type AnalyticsEvent and send the event to the dataLayer.
-The SendEventOnLoad component triggers the event when the browser's load event occurs. It is useful for sending events with names following the view_* pattern. The SendEventOnClick component triggers the event when the element is clicked.
+In a deco.cx project, there is an sdk/analytics.ts file that contains the
+sendEvent function, which takes an object of type AnalyticsEvent and adds the
+data to the dataLayer. This file also contains two components that receive an
+event property of type AnalyticsEvent and send the event to the dataLayer. The
+SendEventOnLoad component triggers the event when the browser's load event
+occurs. It is useful for sending events with names following the view_* pattern.
+The SendEventOnClick component triggers the event when the element is clicked.
 
 Examples:
 
-1. Sending an `add_to_cart` event when the user clicks on the "Add to Cart" button. This component should be used within an Island component.
+1. Sending an `add_to_cart` event when the user clicks on the "Add to Cart"
+   button. This component should be used within an Island component.
 
 ```tsx
 import { sendEvent } from "$store/sdk/analytics.tsx";
@@ -49,7 +56,8 @@ function AddToCart({ name, sku, id, price, discount, currency }: Props) {
 }
 ```
 
-2. Sending a `view_item` event on the product page when it loads, using SendEventOnLoad.
+2. Sending a `view_item` event on the product page when it loads, using
+   SendEventOnLoad.
 
 ```tsx
 import type { Product } from "apps/commerce/types.ts";
@@ -83,7 +91,9 @@ function ProductDetails({ product, currency }: Props) {
 }
 ```
 
-3. Sending a `select_item` event when clicking on a product link, using SendEventOnClick. Using SendEventOnClick is useful when the component is rendered on the server.
+3. Sending a `select_item` event when clicking on a product link, using
+   SendEventOnClick. Using SendEventOnClick is useful when the component is
+   rendered on the server.
 
 ```tsx
 import type { Product } from "apps/commerce/types.ts";
@@ -130,8 +140,10 @@ function ProductCard({ product, itemListName, itemListId }: Props) {
 
 ## Customizing the sendEvents function
 
-It is possible to extend the `sendEvents` function to trigger events for other data layers besides the `dataLayer`.
-In the `sdk/analytics.tsx` file of your deco project, you can customize the `sendEvent` function by adding new integrations.
+It is possible to extend the `sendEvents` function to trigger events for other
+data layers besides the `dataLayer`. In the `sdk/analytics.tsx` file of your
+deco project, you can customize the `sendEvent` function by adding new
+integrations.
 
 Example:
 
@@ -154,10 +166,10 @@ export const sendEvent = <E extends AnalyticsEvent>(event: E) => {
   window.DECO_SITES_STD.sendAnalyticsEvent(event);
 + window.gtag("event", event.name, event.params)
 };
-
 ```
 
 ## Integrating cart data with the AnalyticsItem type
 
-To integrate a new cart data model, add a data mapper in the `useCart.ts` hook of the platform you are implementing.
-Example from the [VTEX useCart](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/hooks/useCart.ts#L1).
+To integrate a new cart data model, add a data mapper in the `useCart.ts` hook
+of the platform you are implementing. Example from the
+[VTEX useCart](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/hooks/useCart.ts#L1).
