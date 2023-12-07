@@ -63,13 +63,15 @@ Deno** em sua máquina. Para instalar o Deno, siga as
 
 Recomendamos fortemente o uso do [Visual Studio Code](https://code.visualstudio.com/download) como IDE e do [Git](https://github.com/git-guides/install-git) para controle de versão.
 
-## Testando a deco localmente (opcional)!
+## Teste a deco localmente (opcional)!
 
 A deco oferece um mecanismo para testar e explorar nosso sistema sem a necessidade de subir código ou fazer um deployment na nossa infraestrutura. Para isso, acesse: https://play.deco.cx/
 
 ![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
 
 ## Crie um site deco.cx
+
+**Importante**: Antes de seguir com essa seção, dê uma olhada em [Criando um Site](/docs/pt/getting-started/creating-a-site).
 
 _deco.cx_ abstrai todas as complexidades de configurar um repositório, conectar
 um CMS e deployar na edge. Isso permite que você se concentre apenas no que
@@ -116,9 +118,11 @@ Caso o código de alguma seção em uso na página inicial do site seja alterado
 
 ## Publicando alterações
 
-O processo de _deploy_ em produção é muito simples: apenas fazer um _git push_ das alterações na _branch_ _**main**_.
+O processo de _deploy_ em development é muito simples: apenas fazer um _git push_ das alterações na _branch_ _**main**_.
 
-Acessando o endereço em produção (como <https://example.deco.site>), essas alterações estarão disponíveis.
+Acessando o endereço em dev (como <https://deco-sites-example.deno.dev/>), essas alterações estarão disponíveis.
+
+Você também pode criar um domínio deco.site que disponibilizará para uso <https://example.deco.site/>. Para fazer isso, você precisa solicitar para alguém do time da deco.
 
 ## Agora você pode começar a criar sites cada vez mais do seu jeito! :)
 

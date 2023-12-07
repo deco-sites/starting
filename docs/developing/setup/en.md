@@ -45,13 +45,15 @@ The only setup required to code _deco.cx_ sites is to **install Deno** on your m
 
 We highly recommend using [Visual Studio Code](https://code.visualstudio.com/download) as the IDE and [Git](https://github.com/git-guides/install-git) as the version control tool.
 
-## Testing Deco Locally (Optional)!
+## Test Deco Locally (Optional)!
 
 Deco offers a mechanism to test and explore our system without the need to deploy code or make a deployment on our infrastructure. To do this, visit: https://play.deco.cx/
 
 ![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
 
 ## Create a deco site
+
+**Important**: Before proceeding with this section, make sure to check out [Creating a Site](/docs/en/getting-started/creating-a-site).
 
 _deco.cx_ abstracts all the complexities of setting up a repository, connecting a CMS, and deploying to the edge. This allows you to focus only on what matters: the code and content of your site.
 
@@ -94,9 +96,11 @@ If the code of any section used on the site's homepage is modified, it will be r
 
 ## Publishing changes
 
-The production deployment process is very simple: just do a _git push_ of the changes to the _**main**_ branch.
+The development deployment process is very simple: do a _git push_ of the changes to the _**main**_ branch.
 
-When accessing the production URL (such as <https://example.deco.site>), these changes will be available.
+These changes will be available when accessing the dev URL (such as <https://deco-sites-example.deno.dev/>).
+
+You can also create a deco.site domain that will make <https://example.deco.site/> available to use. To do so, you need to request that to someone from the deco team.
 
 ## Now you can start creating sites in your own way! :)
 

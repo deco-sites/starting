@@ -43,7 +43,8 @@ JSON in the following format:
 ```json
 {
   "facts": [
-    "The Labrador is so popular, in 2006 there were approximately 3-5 times more Labs as there were German Shepherds or Golden Retrievers."
+    "The Labrador is so popular, in 2006 there were approximately 
+    3-5 times more Labs as there were German Shepherds or Golden Retrievers."
   ],
   "success": true
 }
@@ -98,7 +99,7 @@ Loader**.
 1. Define what will be the input `Props` of your loader.
 2. Export a function called `loader` in the same file as your Section.
 
-```ts
+```tsx
 import type { SectionProps } from "deco/mod.ts";
 
 // Props type that will be configured in deco.cx's Admin

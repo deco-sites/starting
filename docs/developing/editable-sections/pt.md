@@ -110,51 +110,63 @@ Um projeto deco faz uso do tipo das propriedades de um componente para gerar aut
 
 # Primeira alteração e seleção de ambiente
 
-Execute o projeto localmente (`deno task start`) e altere o código da `Hero` para receber uma nova propriedade opcional, o `hightlight` de um link. Para isso, altere o tipo `Link` e o código JSX do componente, lembrando de salvar o arquivo após a alteração.
+Execute o projeto localmente (`deno task start`) e altere o código da `Hero` para receber uma nova propriedade opcional, o `highlight` de um link. Para isso, altere o tipo `Link` e o código JSX do componente, lembrando de salvar o arquivo após a alteração.
 
 ```tsx
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 
+/** @title {{{title}}} - {{{href}}} */
+export interface Link {
+  title: string;
+  href: string;
+  highlight?: boolean;
+}
 
 export interface Props {
-   /**
-    * @title Post image.
-    */
-   photo?: ImageWidget;
-   /**
-   * @title Post body.
-   */
-   post: string;
-   /**
-   * @title Publish date.
-   * @format datetime
-   */
-   datetime: string;
-   /**
-   * @title Post title.
-   */
-   title: string;
+  logo?: ImageWidget;
+  title?: string;
+  /** @format textarea */
+  headline?: string;
+  links?: Array<Link>;
 }
 
-export default function LatestPosts({ title, photo }: Props) {
-   return (
-      <div>
-      {photo && <Image
-         src={photo}
-         alt={`${title} image`}
-         height={500}
-         width={500}
-         class="rounded"
-      />}
-      <h1 class="font-bold">{title}</h1>
-      <p>This is an example section</p>
+export default function Hero({
+  title = "deco.cx",
+  logo = "/logo.svg",
+  headline =
+    "The digital experience platform that combines performance and personalization for the ultimate sales results.",
+  links = [
+    { title: "Official website", "href": "https://deco.cx/" },
+    { title: "Linkedin", "href": "https://www.linkedin.com/company/deco-cx/" },
+    { title: "Discord", "href": "https://deco.cx/discord" },
+  ],
+}: Props) {
+  return (
+    <header class="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base">
+      <div class="mb-10 md:mb-20">
+        <img
+          class="object-cover w-20"
+          src={logo}
+          alt={title}
+        />
       </div>
-   );
+      <div class="font-bold text-2xl lg:text-6xl leading-tight lg:leading-none xl:w-5/6">
+        {headline}
+      </div>
+      {!!links?.length && (
+        <ul class="mt-8 flex flex-col md:flex-row gap-2 md:gap-4">
+            {links.map(({ href, title, highlight }) => (
+              <a href={href} aria-label={title}>
+                <li class={`${highlight ? "font-black" : ""}`}>{title}</li>
+              </a>
+            ))}
+        </ul>
+      )}
+    </header>
+  );
 }
-
 ```
-_Alterando o tipo Link e o JSX com a nova propriedade `hightlight`_
+_Alterando o tipo Link e o JSX com a nova propriedade `highlight`_
 
 Ao realizar esta alteração localmente, ela não afeta ou impacta o Site em produção. No entanto, com o projeto localmente (`deno task start`), é possível visualizar tal alteração no próprio Admin. Para isto, é importante ir no seletor de ambiente, e escolher o `localhost:8000` como referência.
 
