@@ -1,11 +1,11 @@
 import type { Handlers } from "$fresh/server.ts";
 import getSupabaseClient from "deco/supabase.ts";
 
-import type { LiveState } from "deco/types.ts";
+import type { DecoState } from "deco/types.ts";
 
 const ZAPIER_WEBHOOK = Deno.env.get("ZAPIER_WEBHOOK");
 
-export const handler: Handlers<null, LiveState> = {
+export const handler: Handlers<null, DecoState> = {
   POST: async (req) => {
     if (!ZAPIER_WEBHOOK) {
       return new Response(null, {

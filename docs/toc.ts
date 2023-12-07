@@ -563,7 +563,7 @@ export const getMenuDataForLanguage = (language: "en" | "pt") =>
     })),
   }));
 
-type SupportedLanguages = "en" | "pt";
+export type SupportedLanguages = "en" | "pt";
 
 export const getTitleForPost = (language: SupportedLanguages, slug: string) => {
   return tableOfContentsBySlug[slug]?.title[language];
