@@ -122,7 +122,7 @@ O processo de _deploy_ em development é muito simples: apenas fazer um _git pus
 
 Acessando o endereço em dev (como <https://deco-sites-example.deno.dev/>), essas alterações estarão disponíveis.
 
-Você também pode criar um domínio deco.site no admin que disponibilizará para uso <https://example.deco.site/>.
+Você também pode criar um domínio deco.site que disponibilizará para uso <https://example.deco.site/>. Para fazer isso, você precisa solicitar para alguém do time da deco.
 
 ## Agora você pode começar a criar sites cada vez mais do seu jeito! :)
 
