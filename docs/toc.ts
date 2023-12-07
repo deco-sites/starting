@@ -203,13 +203,6 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Importando Blocks de um site",
-          en: "Import Blocks from a site",
-        },
-        slug: "developing/importing-other-sites",
-      },
-      {
-        title: {
           pt: "Desenvolvendo Apps",
           en: "Developing Apps",
         },
