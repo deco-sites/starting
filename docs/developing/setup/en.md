@@ -133,7 +133,7 @@ The development deployment process is very simple: do a _git push_ of the change
 
 These changes will be available when accessing the dev URL (such as <https://deco-sites-example.deno.dev/>).
 
-You can also create a deco.site domain in the admin tool that will make <https://example.deco.site/> available to use.
+You can also create a deco.site domain that will make <https://example.deco.site/> available to use. To do so, you need to request that to someone from the deco team.
 
 ## Now you can start creating sites in your own way! :)
 
