@@ -43,7 +43,8 @@ JSON no seguinte formato,
 ```json
 {
   "facts": [
-    "The Labrador is so popular, in 2006 there were approximately 3-5 times more Labs as there were German Shepherds or Golden Retrievers."
+    "The Labrador is so popular, in 2006 there were approximately 
+    3-5 times more Labs as there were German Shepherds or Golden Retrievers."
   ],
   "success": true
 }
@@ -102,7 +103,7 @@ No nosso caso, vamos deixar configurável qual número de facts que vamos mostra
 no nosso componente. Perceba que agora, o que aparecerá parece ser configurado
 não será mais as props da section mas sim as props do seu loader.
 
-```ts
+```tsx
 import type { SectionProps } from "deco/mod.ts";
 
 // Props type that will be configured in deco.cx's Admin
