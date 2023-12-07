@@ -2,6 +2,7 @@ import { MDFileContent } from "deco-sites/starting/components/ui/Types.tsx";
 import type { LoaderContext } from "deco/types.ts";
 import { redirect } from "deco/mod.ts";
 import { getTitleForPost } from "deco-sites/starting/docs/toc.ts";
+import type { SupportedLanguages } from "deco-sites/starting/docs/toc.ts";
 
 /** @title {{{path}}} */
 export interface Doc {
@@ -20,7 +21,8 @@ const loader = async (
 ): Promise<MDFileContent> => {
   const match = (new URL(_req.url)).pathname.match(props.urlPattern);
   const slug = (match && match[props.group]) ?? "/404";
-  const [language, ...rest] = slug.split("/");
+  const [languageOrig, ...rest] = slug.split("/");
+  const language = languageOrig as SupportedLanguages;
   const documentSlug = rest.join("/");
   const path = props.docsPath ?? "docs";
 

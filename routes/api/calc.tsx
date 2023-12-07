@@ -1,10 +1,10 @@
 import type { Handlers } from "$fresh/server.ts";
 
-import type { LiveState } from "deco/types.ts";
+import type { DecoState } from "deco/types.ts";
 
 const ZAPIER_WEBHOOK = Deno.env.get("ZAPIER_WEBHOOK2");
 
-export const handler: Handlers<null, LiveState> = {
+export const handler: Handlers<null, DecoState> = {
   POST: async (req) => {
     const formData = Object.fromEntries((await req.formData()).entries());
 
