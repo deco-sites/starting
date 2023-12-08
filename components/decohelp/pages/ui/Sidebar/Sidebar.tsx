@@ -4,6 +4,7 @@ import Image from "deco-sites/std/components/Image.tsx";
 import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 import MenuButton from "deco-sites/starting/components/decohelp/pages/ui/Sidebar/MenuButton.tsx";
 import useMenuState from "deco-sites/starting/components/decohelp/pages/hooks/useMenuState.ts";
+import SearchButton from "./SearchButton.tsx";
 
 export interface SidebarContent {
   /** @description Icon for closing the mobile menu */
@@ -180,7 +181,6 @@ export default function Sidebar({
       fontWeight: fontWeightValue,
     };
   }
-
   return (
     <div
       class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[140px] top-[103px] lg:mb-[40px] ${
@@ -230,6 +230,7 @@ export default function Sidebar({
               </a>
             </li>
           )}
+          <SearchButton />
           {Topics &&
             Topics.map((topic, index) => {
               const isActive = isTopicActive(

@@ -16,30 +16,49 @@ since: 1.1.0
 
 # What is a custom domain?
 
-Each deco site is assigned a public domain through which it can be accessed, such as the domain `your.deco.site` used in the address `https://your.deco.site`. However, it is common to acquire a custom domain to strengthen the brand or simplify access to a site.
+Each deco site is assigned a public domain through which it can be accessed,
+such as the domain `your.deco.site` used in the address
+`https://your.deco.site`. However, it is common to acquire a custom domain to
+strengthen the brand or simplify access to a site.
 
-Deco does not currently provide a domain name server, but it is possible to hire this service from other companies such as GoDaddy, Google, and Cloudflare. From a technical standpoint, this server must allow the creation of `CNAME` records. It's necessary to be cautious as some hosting services may offer name server services but not allow this type of configuration!
+Deco does not currently provide a domain name server, but it is possible to hire
+this service from other companies such as GoDaddy, Google, and Cloudflare. From
+a technical standpoint, this server must allow the creation of `CNAME` records.
+It's necessary to be cautious as some hosting services may offer name server
+services but not allow this type of configuration!
 
 # Adding a custom domain
 
 ## Requirements
 
 To add a domain:
+
 - The site needs to have a `deco.site` domain provided by Deco.
 - The user needs to be an administrator of the site.
-- The user needs to acquire a custom domain from a name server provider that allows `CNAME` configuration.
-- The user or administrator of the custom domain needs to create a `CNAME` record as indicated in the validation step.
-- ONLY if the domain already has any "CAA" records, it is necessary to add new records.
+- The user needs to acquire a custom domain from a name server provider that
+  allows `CNAME` configuration.
+- The user or administrator of the custom domain needs to create a `CNAME`
+  record as indicated in the validation step.
+- ONLY if the domain already has any "CAA" records, it is necessary to add new
+  records.
 
 ## Before adding a domain
 
-Additional configuration may be required on your website depending on the integration used.
+Additional configuration may be required on your website depending on the
+integration used.
 
-If the domain has a `CAA` record, you need to add new domains so that we can generate the certificate for your new domain. Important: `If your domain doesn't have CAA records, this step is not necessary (and not recommended)`.
+If the domain has a `CAA` record, you need to add new domains so that we can
+generate the certificate for your new domain. Important:
+`If your domain doesn't have CAA records, this step is not necessary (and not recommended)`.
 
-You can check if the domain has these records using the [Google Admin Toolbox Dig](https://toolbox.googleapps.com/apps/dig/#CAA/) or the command `dig yourdomain.com.br caa +short`. If the query doesn't return data (`Record not found!`), skip this step.
+You can check if the domain has these records using the
+[Google Admin Toolbox Dig](https://toolbox.googleapps.com/apps/dig/#CAA/) or the
+command `dig yourdomain.com.br caa +short`. If the query doesn't return data
+(`Record not found!`), skip this step.
 
-If your site has certificates, you need to add the following records, especially the last two (`pki.goog`). Add them to your site's domain (or use `@` as the field name).
+If your site has certificates, you need to add the following records, especially
+the last two (`pki.goog`). Add them to your site's domain (or use `@` as the
+field name).
 
 ```
 0 issue "digicert.com; cansignhttpexchanges=yes"
@@ -52,7 +71,8 @@ If your site has certificates, you need to add the following records, especially
 0 issuewild "pki.goog; cansignhttpexchanges=yes"
 ```
 
-Some domain providers do not accept CAA with `cansignhttpexchanges`. In that case, configure it without this property:
+Some domain providers do not accept CAA with `cansignhttpexchanges`. In that
+case, configure it without this property:
 
 ```
 0 issue "digicert.com"
@@ -65,7 +85,8 @@ Some domain providers do not accept CAA with `cansignhttpexchanges`. In that cas
 0 issuewild "pki.goog"
 ```
 
-Check with your domain provider for further instructions on how to add these records.
+Check with your domain provider for further instructions on how to add these
+records.
 
 ## Adding a domain in the admin panel
 
@@ -73,19 +94,29 @@ Check with your domain provider for further instructions on how to add these rec
 
    ![Site settings](https://github.com/deco-cx/apps/assets/882438/7c60ddbd-7164-42ea-bd16-d8c5d70603df)
 
-2. In Settings, under the Domains listing, check that there is a `deco.site` domain and add an existing domain.  **Contact us if you don't have a `deco.site` domain**.
+2. In Settings, under the Domains listing, check that there is a `deco.site`
+   domain and add an existing domain. **Contact us if you don't have a
+   `deco.site` domain**.
 
-3. Add your domain for the site in the opened modal. The domain should only be the name, without any protocol (http/https) or slashes. Wait for the initial configuration process.
+3. Add your domain for the site in the opened modal. The domain should only be
+   the name, without any protocol (http/https) or slashes. Wait for the initial
+   configuration process.
 
    ![Add domain](https://github.com/deco-cx/apps/assets/882438/8c19ae5c-e522-4a60-9b8b-28e4815cced6)
 
-4. After adding, the domain is registered with Deco but is not yet operational. You now need to set up the domain. Under `...`, click on setup to view the configuration instructions.
+4. After adding, the domain is registered with Deco but is not yet operational.
+   You now need to set up the domain. Under `...`, click on setup to view the
+   configuration instructions.
 
-5. Add the domain configuration to your domain server. This represents a `CNAME` record from the custom domain to the deco domain. In the example, this would be a record from the domain `www.example.com` to `startest.deco.site`.
+5. Add the domain configuration to your domain server. This represents a `CNAME`
+   record from the custom domain to the deco domain. In the example, this would
+   be a record from the domain `www.example.com` to `startest.deco.site`.
 
    ![Domain setup](https://github.com/deco-cx/apps/assets/882438/0d9d876e-2a5e-4e05-8767-dc77e69c548b)
 
-6. Once configured, click on validate configuration for Deco to verify if the record was set up correctly. Important: The domain will remain in an "awaiting" state until we complete the configuration on our infrastructure.
+6. Once configured, click on validate configuration for Deco to verify if the
+   record was set up correctly. Important: The domain will remain in an
+   "awaiting" state until we complete the configuration on our infrastructure.
 
 7. Wait a few minutes and test accessing your domain in the browser.
 
@@ -93,11 +124,15 @@ Check with your domain provider for further instructions on how to add these rec
 
 ## Domain is not validated
 
-Verify that it was correctly registered in the name server. Use a tool like [Google's DNS](https://dns.google/) to check if there is a `CNAME` record correctly pointing to the `deco.site` domain.
+Verify that it was correctly registered in the name server. Use a tool like
+[Google's DNS](https://dns.google/) to check if there is a `CNAME` record
+correctly pointing to the `deco.site` domain.
 
 ## After validation, the settings still show my domain as "Awaiting"
 
-Sometimes, the domain can generate certificates even after leaving the validation screen. However, even in this case, the custom domain may already be operational.
+Sometimes, the domain can generate certificates even after leaving the
+validation screen. However, even in this case, the custom domain may already be
+operational.
 
 ## I want to transfer the apex (root) to Deco.
 

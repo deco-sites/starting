@@ -1,6 +1,6 @@
 import { MDFileContent } from "deco-sites/starting/components/ui/Types.tsx";
 import type { LoaderContext } from "deco/types.ts";
-import { redirect } from "deco/mod.ts";
+import { badRequest, redirect } from "deco/mod.ts";
 import { getTitleForPost } from "deco-sites/starting/docs/toc.ts";
 import type { SupportedLanguages } from "deco-sites/starting/docs/toc.ts";
 
@@ -45,8 +45,16 @@ const loader = async (
     return { content: doc.content, title: doc.title };
   }
 
-  const fileContent = await Deno.readTextFile(url);
-  return { content: fileContent, title: getTitleForPost(language, documentSlug) };
+  try {
+    const fileContent = await Deno.readTextFile(url);
+    return {
+      content: fileContent,
+      title: getTitleForPost(language == "en" ? "en" : "pt", documentSlug),
+    };
+  } catch {
+    badRequest({ message: "File not found" });
+    return { content: "" };
+  }
 };
 
 export default loader;

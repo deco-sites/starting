@@ -5,19 +5,27 @@ since: 1.0.0
 
 # Accepting Other Sections as Parameters in Your Section
 
-In deco, you can create powerful and flexible [Sections](/docs/en/concepts/section) by accepting other sections as parameters. This allows you to build modular and composable components that can be easily customized and reused in different contexts.
+In deco, you can create powerful and flexible
+[Sections](/docs/en/concepts/section) by accepting other sections as parameters.
+This allows you to build modular and composable components that can be easily
+customized and reused in different contexts.
 
 ## Overview
 
-When creating a Section that accepts other sections as parameters, you define an interface for the props of your Section component. This interface includes a property  which is of type `Section`. The `Section` type is a generic type that represents any other section in deco.
+When creating a Section that accepts other sections as parameters, you define an
+interface for the props of your Section component. This interface includes a
+property which is of type `Section`. The `Section` type is a generic type that
+represents any other section in deco.
 
 ## Implementation
 
-To create a Section that accepts other Sections as parameters, follow these steps:
+To create a Section that accepts other Sections as parameters, follow these
+steps:
 
 1. Import the `Section` type from `deco/blocks/section.ts`.
 
-2. Define an interface for the props of your section component. Include a property called `myProp`, which is of type `Section`.
+2. Define an interface for the props of your section component. Include a
+   property called `myProp`, which is of type `Section`.
 
 ```tsx
 // MySection.tsx
@@ -37,11 +45,15 @@ export default function MySection({ myProp: { Component, props } }: Props) {
 }
 ```
 
-3. Inside your section component, access the `Component` and `props` properties from the `myProp` prop. The `Component` property represents the component function of the section passed as a parameter, and the `props` property contains the props of that section.
+3. Inside your section component, access the `Component` and `props` properties
+   from the `myProp` prop. The `Component` property represents the component
+   function of the section passed as a parameter, and the `props` property
+   contains the props of that section.
 
 ## Example
 
-Let's say you have a section called `ProductCardSection` that renders a product card based on certain props:
+Let's say you have a section called `ProductCardSection` that renders a product
+card based on certain props:
 
 ```tsx
 // ProductCardSection.tsx
@@ -63,7 +75,8 @@ export default function ProductCardSection({ title, price, imageUrl }: Props) {
 }
 ```
 
-Now, you want to create a higher-order section called `ProductContainerSection`, which accepts a `ProductCardSection` as a parameter and wraps it in a container:
+Now, you want to create a higher-order section called `ProductContainerSection`,
+which accepts a `ProductCardSection` as a parameter and wraps it in a container:
 
 ```tsx
 // ProductContainerSection.tsx
@@ -74,7 +87,9 @@ export interface Props {
   myProp: Section;
 }
 
-export default function ProductContainerSection({ myProp: { Component, props } }: Props) {
+export default function ProductContainerSection(
+  { myProp: { Component, props } }: Props,
+) {
   return (
     <div className="flex gap-4">
       <Component {...props} />
@@ -83,9 +98,12 @@ export default function ProductContainerSection({ myProp: { Component, props } }
 }
 ```
 
-With this setup, you can now use `ProductContainerSection` to wrap any other section, including the `ProductCardSection`, and add a container around it.
+With this setup, you can now use `ProductContainerSection` to wrap any other
+section, including the `ProductCardSection`, and add a container around it.
 
-Now, let's say you want restrict your section to `ProductCard` because you have a lot of sections in your site but only that one should fit in that place, you can do the following:
+Now, let's say you want restrict your section to `ProductCard` because you have
+a lot of sections in your site but only that one should fit in that place, you
+can do the following:
 
 ```tsx
 // ProductCardSection.tsx
@@ -103,7 +121,9 @@ export interface Props {
 }
 
 // Implement the section and specify the return type as "ProductCard"
-export default function ProductCardSection({ title, price, imageUrl }: Props): ProductCard {
+export default function ProductCardSection(
+  { title, price, imageUrl }: Props,
+): ProductCard {
   return (
     <div>
       <img src={imageUrl} alt={title} />
@@ -128,7 +148,9 @@ export interface Props {
 }
 
 // Implement the section
-export default function ProductContainerSection({ myProp: { Component, props } }: Props) {
+export default function ProductContainerSection(
+  { myProp: { Component, props } }: Props,
+) {
   return (
     <div className="flex gap-4">
       <Component {...props} />
@@ -137,8 +159,12 @@ export default function ProductContainerSection({ myProp: { Component, props } }
 }
 ```
 
-This ensures consistency and reinforces the concept of a named type, making it easier for developers to and business users constrain their sections as they wish!
+This ensures consistency and reinforces the concept of a named type, making it
+easier for developers to and business users constrain their sections as they
+wish!
 
 ## Note
 
-With the ability to accept other sections as parameters, you can create highly modular and customizable sections that adapt to different use cases and make your Live.ts applications even more powerful and flexible. Happy coding! 🧩🚀
+With the ability to accept other sections as parameters, you can create highly
+modular and customizable sections that adapt to different use cases and make
+your Live.ts applications even more powerful and flexible. Happy coding! 🧩🚀

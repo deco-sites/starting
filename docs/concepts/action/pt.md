@@ -67,6 +67,7 @@ export default action;
 ```
 
 [Fonte](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/actions/newsletter/subscribe.ts#L1C1-L37C23)
+
 ## Leitura recomendada
 
 - [Buscando dados de API](/docs/pt/developing/fetching-data)

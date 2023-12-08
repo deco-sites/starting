@@ -94,6 +94,7 @@ import * as $$$$$$76 from "./sections/TripletBanner.tsx";
 import * as $$$$$$77 from "./sections/Webinar/Content.tsx";
 import * as $$$$$$78 from "./sections/Webinar/Hero.tsx";
 import * as $$$$$$$0 from "./matchers/MatchPath.ts";
+import * as $$$$$$$$$0 from "./actions/startAlgoliaCrawler.ts";
 import * as $$$$$$$$$$$0 from "./apps/site.ts";
 
 const manifest = {
@@ -198,6 +199,9 @@ const manifest = {
   },
   "matchers": {
     "deco-sites/starting/matchers/MatchPath.ts": $$$$$$$0,
+  },
+  "actions": {
+    "deco-sites/starting/actions/startAlgoliaCrawler.ts": $$$$$$$$$0,
   },
   "apps": {
     "deco-sites/starting/apps/site.ts": $$$$$$$$$$$0,
