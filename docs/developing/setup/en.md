@@ -78,9 +78,9 @@ https://play.deco.cx/
 
 ## Create a deco site
 
-_deco.cx_ abstracts all the complexities of setting up a repository, connecting
-a CMS, and deploying to the edge. This allows you to focus only on what matters:
-the code and content of your site.
+**Important**: Before proceeding with this section, make sure to check out [Creating a Site](/docs/en/getting-started/creating-a-site).
+
+_deco.cx_ abstracts all the complexities of setting up a repository, connecting a CMS, and deploying to the edge. This allows you to focus only on what matters: the code and content of your site.
 
 ## Clone your site repository
 
