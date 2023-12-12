@@ -34,7 +34,7 @@ const BlogPostSEO = ({ locale = "en", ...props }: Props) => {
         props.post.body[locale]?.descr,
       image: props.post?.body[locale]?.seo?.image || props.post?.img,
     },
-  } as Post & {seo: SEOProps};
+  } as Post & { seo: SEOProps };
 
   return <Metatags {...props} context={context} />;
 };

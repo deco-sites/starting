@@ -173,17 +173,18 @@ export default function Hero({
       </div>
       {!!links?.length && (
         <ul class="mt-8 flex flex-col md:flex-row gap-2 md:gap-4">
-            {links.map(({ href, title, highlight }) => (
-              <a href={href} aria-label={title}>
-                <li class={`${highlight ? "font-black" : ""}`}>{title}</li>
-              </a>
-            ))}
+          {links.map(({ href, title, highlight }) => (
+            <a href={href} aria-label={title}>
+              <li class={`${highlight ? "font-black" : ""}`}>{title}</li>
+            </a>
+          ))}
         </ul>
       )}
     </header>
   );
 }
 ```
+
 _Alterando o tipo Link e o JSX com a nova propriedade `highlight`_
 
 Ao realizar esta alteração localmente, ela não afeta ou impacta o Site em

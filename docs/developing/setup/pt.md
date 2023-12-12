@@ -78,7 +78,8 @@ isso, acesse: https://play.deco.cx/
 
 ## Crie um site deco.cx
 
-**Importante**: Antes de seguir com essa seção, dê uma olhada em [Criando um Site](/docs/pt/getting-started/creating-a-site).
+**Importante**: Antes de seguir com essa seção, dê uma olhada em
+[Criando um Site](/docs/pt/getting-started/creating-a-site).
 
 _deco.cx_ abstrai todas as complexidades de configurar um repositório, conectar
 um CMS e deployar na edge. Isso permite que você se concentre apenas no que
@@ -134,11 +135,15 @@ isto será refletido no endereço acima.
 
 ## Publicando alterações
 
-O processo de _deploy_ em development é muito simples: apenas fazer um _git push_ das alterações na _branch_ _**main**_.
+O processo de _deploy_ em development é muito simples: apenas fazer um _git
+push_ das alterações na _branch_ _**main**_.
 
-Acessando o endereço em dev (como <https://deco-sites-example.deno.dev/>), essas alterações estarão disponíveis.
+Acessando o endereço em dev (como <https://deco-sites-example.deno.dev/>), essas
+alterações estarão disponíveis.
 
-Você também pode criar um domínio deco.site que disponibilizará para uso <https://example.deco.site/>. Para fazer isso, você precisa solicitar para alguém do time da deco.
+Você também pode criar um domínio deco.site que disponibilizará para uso
+<https://example.deco.site/>. Para fazer isso, você precisa solicitar para
+alguém do time da deco.
 
 ## Agora você pode começar a criar sites cada vez mais do seu jeito! :)
 

@@ -36,7 +36,9 @@ export interface Props {
   discordUrl: string;
 }
 
-function MobileMenuLink({ href, label, targetBlank, nested, ...props }: MenuLink) {
+function MobileMenuLink(
+  { href, label, targetBlank, nested, ...props }: MenuLink,
+) {
   const hasNested = nested && nested.length > 0;
   if (hasNested) {
     return (
@@ -49,9 +51,7 @@ function MobileMenuLink({ href, label, targetBlank, nested, ...props }: MenuLink
           {label}
         </a>
         <ul class="pl-[24px]">
-          {nested.map((item) => (
-            <MobileMenuLink {...item} />
-          ))}
+          {nested.map((item) => <MobileMenuLink {...item} />)}
         </ul>
       </li>
     );
@@ -71,10 +71,9 @@ function MobileMenuLink({ href, label, targetBlank, nested, ...props }: MenuLink
 }
 
 function MenuLink({ href, label, targetBlank, nested, ...props }: MenuLink) {
+  const open = useSignal(false);
 
-  const open = useSignal(false)
-
-  const setOpen = () => open.value = !open.value
+  const setOpen = () => open.value = !open.value;
 
   if (nested && nested.length > 0) {
     return (
@@ -237,7 +236,8 @@ export default function Header(props: Props) {
         <div
           class="md:hidden w-[100vw] h-[4px] absolute top-[60px] transition ease-in-out duration-300 left-0"
           style="background-image: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,255,128,1) 100%);"
-        ></div>
+        >
+        </div>
         <ul class="h-full flex items-center">
           <li class="h-full">
             <a
@@ -294,7 +294,8 @@ export default function Header(props: Props) {
                         ? "block cursor-default w-[110vw] h-[110vh] absolute left-[-100px] top-[-20px]"
                         : "hidden"
                     }`}
-                  ></div>
+                  >
+                  </div>
                   <div
                     class={`${
                       openSwitcher.value ? "block" : "hidden"
@@ -309,7 +310,7 @@ export default function Header(props: Props) {
                             window.history.pushState(
                               {},
                               "",
-                              urlMarketers.value
+                              urlMarketers.value,
                             );
                             location.reload();
                           }}
@@ -343,7 +344,7 @@ export default function Header(props: Props) {
                             window.history.pushState(
                               {},
                               "",
-                              urlDevelopers.value
+                              urlDevelopers.value,
                             );
                             location.reload();
                           }}
@@ -380,7 +381,8 @@ export default function Header(props: Props) {
           {props.menuLinks.map((link, index) => {
             return <MenuLink key={index} {...link} />;
           })}
-          <div class="w-[100vw] h-[4px] absolute top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:bg-transparent group-hover:bg-none"></div>
+          <div class="w-[100vw] h-[4px] absolute top-[59px] transition ease-in-out duration-300 left-0 bg-linear-header group-hover:bg-transparent group-hover:bg-none">
+          </div>
         </ul>
         <ul class="lg:hidden px-3">
           <li class="grid items-center">
@@ -437,17 +439,13 @@ export default function Header(props: Props) {
             </button>
           </li>
           <div
-            class={
-              open
-                ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
-                : "hidden"
-            }
+            class={open
+              ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
+              : "hidden"}
           >
             <ul class="flex flex-col divide-y divide-semi-white-13">
               {props.menuLinks.map((link) => {
-                return (
-                  <MobileMenuLink key={link.label} {...link} />
-                );
+                return <MobileMenuLink key={link.label} {...link} />;
               })}
             </ul>
             <ul class="flex flex-col">

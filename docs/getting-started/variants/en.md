@@ -46,7 +46,8 @@ redundant evaluations and maintaining consistency across variants. To read more
 about how to create new matchers check our
 [Matchers Documentation](/docs/en/concepts/matcher).
 
-> Currently we do not support variants other than Page Sections; this feature will be added in the future.
+> Currently we do not support variants other than Page Sections; this feature
+> will be added in the future.
 
 ## Step by step
 
