@@ -11,11 +11,12 @@ export interface Props {
    * @title Crawler ID
    */
   crawlerId: string;
-};
+}
 
-const action = async ({crawlerUserId, crawlerApiKey, crawlerId} : Props): Promise<void> => {
-  const url =
-    `https://crawler.algolia.com/api/1/crawlers/${crawlerId}/reindex`;
+const action = async (
+  { crawlerUserId, crawlerApiKey, crawlerId }: Props,
+): Promise<void> => {
+  const url = `https://crawler.algolia.com/api/1/crawlers/${crawlerId}/reindex`;
   const headers = {
     "Content-Type": "application/json",
     "Authorization": "Basic " + btoa(`${crawlerUserId}:${crawlerApiKey}`),

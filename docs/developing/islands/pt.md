@@ -48,7 +48,8 @@ export default function Counter() {
 }
 ```
 
-Ao criar um arquivo chamado `Counter.tsx` e colocá-lo na pasta `islands`, obtemos o seguinte resultado na tela:
+Ao criar um arquivo chamado `Counter.tsx` e colocá-lo na pasta `islands`,
+obtemos o seguinte resultado na tela:
 
 ![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
 

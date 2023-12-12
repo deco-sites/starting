@@ -47,13 +47,17 @@ export default function Counter() {
 }
 ```
 
-Creating a file called `Counter.tsx` and placing it into the `islands` folder gives us the following result on the screen:
+Creating a file called `Counter.tsx` and placing it into the `islands` folder
+gives us the following result on the screen:
 
 ![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
 
 This is called an `island`!
 
-Although adding islands to your project seems tempting, keep in mind that islands slow down websites and harm [TBT metric](https://web.dev/tbt/), so before moving any component to the `island` folder, make sure that your final interactivity:
+Although adding islands to your project seems tempting, keep in mind that
+islands slow down websites and harm [TBT metric](https://web.dev/tbt/), so
+before moving any component to the `island` folder, make sure that your final
+interactivity:
 
 - Isn't achieved through page navigation with links or form submissions...
 - Isn't an interaction built purely with CSS...

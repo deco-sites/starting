@@ -78,9 +78,12 @@ https://play.deco.cx/
 
 ## Create a deco site
 
-**Important**: Before proceeding with this section, make sure to check out [Creating a Site](/docs/en/getting-started/creating-a-site).
+**Important**: Before proceeding with this section, make sure to check out
+[Creating a Site](/docs/en/getting-started/creating-a-site).
 
-_deco.cx_ abstracts all the complexities of setting up a repository, connecting a CMS, and deploying to the edge. This allows you to focus only on what matters: the code and content of your site.
+_deco.cx_ abstracts all the complexities of setting up a repository, connecting
+a CMS, and deploying to the edge. This allows you to focus only on what matters:
+the code and content of your site.
 
 ## Clone your site repository
 
@@ -129,11 +132,15 @@ reflected at the above address.
 
 ## Publishing changes
 
-The development deployment process is very simple: do a _git push_ of the changes to the _**main**_ branch.
+The development deployment process is very simple: do a _git push_ of the
+changes to the _**main**_ branch.
 
-These changes will be available when accessing the dev URL (such as <https://deco-sites-example.deno.dev/>).
+These changes will be available when accessing the dev URL (such as
+<https://deco-sites-example.deno.dev/>).
 
-You can also create a deco.site domain that will make <https://example.deco.site/> available to use. To do so, you need to request that to someone from the deco team.
+You can also create a deco.site domain that will make
+<https://example.deco.site/> available to use. To do so, you need to request
+that to someone from the deco team.
 
 ## Now you can start creating sites in your own way! :)
 

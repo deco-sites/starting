@@ -28,7 +28,7 @@ manner.
    section. This is where you will find all the Apps available for installation.
    Select to view all "available Apps".
 
-    ![Apps Section](https://github.com/deco-cx/apps/assets/882438/e2533612-6828-4fb6-9959-96f000ca3537)
+   ![Apps Section](https://github.com/deco-cx/apps/assets/882438/e2533612-6828-4fb6-9959-96f000ca3537)
 
 4. **Add an App Block:** Click on "Add" to install an App. This starts the
    process of creating a block. Configure the block and click on "Create" (give

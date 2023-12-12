@@ -34,7 +34,8 @@ the `Revisions` tab to find out when and by which team member a change was made.
    for that page (or block) and who was responsible for making them. You can
    also load the data from a version to use as a basis for the current edit.
 
-   > To restore an old version, simply select the version to be restored and click `Publish`.
+   > To restore an old version, simply select the version to be restored and
+   > click `Publish`.
 
 5. When you make changes to any page or block, you need to click `Publish`,
    otherwise the changes made will be lost.

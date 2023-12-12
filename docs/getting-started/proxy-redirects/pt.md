@@ -39,11 +39,11 @@ do seu site.
    _site_ com o qual deseja trabalhar.
 
 2. Entre na configuração de `redirects` do site.
-    ![Redirects no admin](https://github.com/deco-cx/apps/assets/882438/29e9f388-2c32-4190-96e5-ac5a8001b68c)
+   ![Redirects no admin](https://github.com/deco-cx/apps/assets/882438/29e9f388-2c32-4190-96e5-ac5a8001b68c)
 
 3. Pressione `Criar um redirect` e configure de acordo com sua necessidade.
 
-    ![Criar redirect](https://github.com/deco-cx/apps/assets/882438/63a7d2a4-cc53-47eb-adca-c6cb601e7f41)
+   ![Criar redirect](https://github.com/deco-cx/apps/assets/882438/63a7d2a4-cc53-47eb-adca-c6cb601e7f41)
 
 4. Preencha o campo `De` com a rota desejada, por exemplo, `/example-redirect`
    e, em `Para`, insira `https://google.com` ou a URL para a qual deseja
@@ -80,7 +80,7 @@ passos:
 2. Abra o `App` de site para edição. E pressione para adicionar um novo
    `site map`.
 
-    ![Adicionar site map](https://github.com/deco-cx/apps/assets/882438/92427ed1-54cb-49f2-88f5-3be8c1c27b8a)
+   ![Adicionar site map](https://github.com/deco-cx/apps/assets/882438/92427ed1-54cb-49f2-88f5-3be8c1c27b8a)
 
 3. Selecione o tipo da rota como `Route`, e adicione essa nova rota.
 
@@ -101,11 +101,11 @@ Repita os passos de 1 e 2 da seção anterior. Em seguida:
 1. Suba um arquivo como `redirect.csv` para a base do projeto. Ele deve ter o
    formato indicado abaixo:
 
-    ```
-    from,to,type
-    /example-redirect,/test,temporary
-    /google,https://www.google.com,permanent
-    ```
+   ```
+   from,to,type
+   /example-redirect,/test,temporary
+   /google,https://www.google.com,permanent
+   ```
 
 2. Adicione a rota do tipo `redirectsFromCsv.ts`.
 
