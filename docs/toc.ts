@@ -280,17 +280,24 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Como usar a deco para atingir alta performance",
-          en: "How can you use deco for achieve high performance",
-        },
-        slug: "performance/how-deco-performance",
-      },
-      {
-        title: {
           pt: "Dicas para atingir uma alta performance",
           en: "Performance tips",
         },
         slug: "performance/tips",
+      },
+      {
+        title: {
+          pt: "Enviar apenas os dados necessários para o cliente",
+          en: "Sending only necessary data to client",
+        },
+        slug: "performance/sending-only-necessary-data-to-client",       
+      },
+      {
+        title: {
+          pt: "Como usar a deco para atingir alta performance",
+          en: "How can you use deco for achieve high performance",
+        },
+        slug: "performance/how-deco-performance",
       },
     ],
   },
