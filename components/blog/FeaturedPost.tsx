@@ -38,17 +38,21 @@ export default function FeaturedPost({
               <div class="flex flex-col space-y-2 lg:mr-16 lg:mt-16 lg:mb-16">
                 <div class="text-scale-900 flex space-x-2 text-sm">
                   <p>{date}</p>
-                  <p>•</p>
-                  <p>{readTime} minute read</p>
+                  {readTime && (
+                    <>
+                      <p>•</p>
+                      <p>{readTime} minute read</p>
+                    </>
+                  )}
                 </div>
                 <div class="flex flex-col space-y-4">
                   <h2 class="font-medium text-3xl">{body[locale]?.title}</h2>
                   <p class="p text-xl">{body[locale]?.descr}</p>
                   <div>
                     <div class="flex items-center space-x-3">
-                      <div class="relative h-10 w-10 overflow-auto">
-                        <span>
-                          {authorAvatar && (
+                      {authorAvatar && (
+                        <div class="relative h-10 w-10 overflow-auto">
+                          <span>
                             <Image
                               alt={`${author} avatar`}
                               src={authorAvatar}
@@ -59,9 +63,9 @@ export default function FeaturedPost({
                               width={40}
                               height={40}
                             />
-                          )}
-                        </span>
-                      </div>
+                          </span>
+                        </div>
+                      )}
                       <div class="flex flex-col">
                         <span class="m-0 text-sm">{author}</span>
                         <span class="m-0 text-xs">{authorRole}</span>
