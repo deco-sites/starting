@@ -53,7 +53,7 @@ Por exemplo, é bem possível que o botão de comprar não precise receber dados
 
 O ideal é enviar apenas os dados necessários
 
-* Abordagem errada:
+❌ Abordagem errada:
 
 ```tsx 
   import BuyButton from "$store/components/ui"
@@ -70,7 +70,7 @@ O ideal é enviar apenas os dados necessários
   }
 ```
 
-* Abordagem correta:
+✅ Abordagem correta:
 
 ```tsx 
   import BuyButton from "$store/components/ui"

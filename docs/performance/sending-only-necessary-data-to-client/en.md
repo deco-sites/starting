@@ -53,7 +53,7 @@ For example, it's quite possible that the buy button doesn't need to receive ima
 
 The ideal approach is to send only the necessary data.
 
-* Wrong Approach:
+❌ Wrong Approach:
 
 ```tsx 
   import BuyButton from "$store/components/ui"
@@ -70,7 +70,7 @@ The ideal approach is to send only the necessary data.
   }
 ```
 
-* Correct Approach:
+✅ Correct Approach:
 
 ```tsx 
   import BuyButton from "$store/components/ui"
