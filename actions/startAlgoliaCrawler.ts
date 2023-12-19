@@ -1,25 +1,26 @@
+import { Secret } from "apps/website/loaders/secret.ts";
 export interface Props {
   /**
    * @title Crawler User ID
    */
-  crawlerUserId: string;
+  crawlerUserId: Secret;
   /**
    * @title Crawler API Key
    */
-  crawlerApiKey: string;
+  crawlerApiKey: Secret;
   /**
    * @title Crawler ID
    */
-  crawlerId: string;
+  crawlerId: Secret;
 }
 
 const action = async (
   { crawlerUserId, crawlerApiKey, crawlerId }: Props,
 ): Promise<void> => {
-  const url = `https://crawler.algolia.com/api/1/crawlers/${crawlerId}/reindex`;
+  const url = `https://crawler.algolia.com/api/1/crawlers/${crawlerId.get()}/reindex`;
   const headers = {
     "Content-Type": "application/json",
-    "Authorization": "Basic " + btoa(`${crawlerUserId}:${crawlerApiKey}`),
+    "Authorization": "Basic " + btoa(`${crawlerUserId.get()}:${crawlerApiKey.get()}`),
   };
 
   await fetch(url, {
