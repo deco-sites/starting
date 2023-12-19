@@ -280,10 +280,10 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Dicas para atingir uma alta performance",
-          en: "Performance tips",
+          pt: "Aprenda a usar a técnica de SVG sprites para otimizar a performance do seu site",
+          en: "Learn how to use the SVG sprites technique to optimize the performance of your website",
         },
-        slug: "performance/tips",
+        slug: "performance/tips/svg-sprites",
       },
       {
         title: {
