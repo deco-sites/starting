@@ -10,7 +10,6 @@ function TextLines() {
     const section = document.querySelector("#section");
     const paragraphs = document.querySelectorAll("#section p");
     let selectedParagraphIndex: number | null = null;
-    131313;
     scroll(
       ({ y }: { y: { progress: number } }) => {
         const index = Math.floor(y.progress * paragraphs.length);
@@ -32,7 +31,7 @@ function TextLines() {
       <div
         id="inner"
         class="sticky h-screen top-0 flex items-center justify-center
-      lg:container text-white text-[64px] font-bold"
+      lg:max-w-6xl mx-auto text-white text-[64px] font-semibold leading-[100%]"
       >
         <div>
           <p class="inline text-[#131313]">

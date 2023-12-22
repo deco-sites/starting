@@ -1,4 +1,4 @@
-import { HeroEditor } from "deco-sites/starting/components/nrf/editor/HeroEditor.tsx";
+import HeroEditor from "deco-sites/starting/islands/NRF/HeroEditor.tsx";
 
 export interface Props {
   /**
@@ -9,7 +9,7 @@ export interface Props {
 
 export default function Hero({ title }: Props) {
   return (
-    <div class="bg-black min-h-screen">
+    <div id="hero" class="bg-black min-h-screen">
       <div class="max-w-fit mx-auto flex flex-col items-center gap-8">
         <div
           class="mt-48 inline-block text-[80px] text-left leading-[100%] font-medium text-white"
@@ -31,7 +31,7 @@ export default function Hero({ title }: Props) {
           </button>
         </div>
       </div>
-      <HeroEditor class="mx-auto mt-8" />
+      <HeroEditor />
     </div>
   );
 }
