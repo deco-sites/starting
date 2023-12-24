@@ -91,23 +91,23 @@ Within a component, if the state is only used locally, you can use the
 `useSignal` hook to create these elements that can be used in the function body
 or in the JSX returned, as in the example below.
 
-````tsx
+```tsx
 import { useSignal } from "@preact/signals";
 
 export default function Counter() {
-  const count = useSignal(0)
+  const count = useSignal(0);
 
   return (
     <div>
-      <button onClick={() => count.value-- }>
+      <button onClick={() => count.value--}>
         -
       </button>
       <span>{count}</span>
-      <button onClick={() => count.value++ }>
+      <button onClick={() => count.value++}>
         +
       </button>
     </div>
-  )
+  );
 }
 ```
 
@@ -120,7 +120,7 @@ Signals are also a great way of sharing state between islands, since one can pub
 To use signals, 
 ```tsx 
 import { signal } from '@preact/signals';
-````
+```
 
 Now, use the global scope to create, mutate and subscribe to a signal:
 
