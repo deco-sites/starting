@@ -12,7 +12,7 @@ export default function (props: SectionProps) {
 
   return (
     <div
-      class={`flex lg:flex-row flex-col w-full mx-auto max-w-[1440px] lg:pt-[140px]`}
+      class={`flex lg:flex-row flex-col w-full mx-auto max-w-[1440px] lg:pt-[33px]`}
     >
       {renderSection(props.SectionSidebar, 0)}
       {renderSection(props.SectionContent, 1)}
