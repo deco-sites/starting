@@ -101,7 +101,39 @@
   }
 }
 
-@layer components {}
+@layer components {
+  #cursor-4 {
+    position: absolute;
+    offset-path: url(#cursor-4-line-1);
+    offset-distance: 0%;
+    offset-rotate: 0deg;
+    offset-anchor: top left;
+  }
+
+  #theme-window {
+    opacity: 0;
+    transform-origin: 316px 446px;
+  }
+
+  #code-window {
+    opacity: 0;
+    transform-origin: 20px 215px;
+  }
+
+  #chair-text {
+    overflow: hidden;
+    max-width: fit-content;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 1;
+    left: 591px;
+    top: 140px;
+    font-size: 22px;
+    color: #EBFFFF;
+    font-weight: 600;
+    border-right: 0.15em solid white;
+  }
+}
 
 @layer utilities {}
 

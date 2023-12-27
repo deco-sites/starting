@@ -4,10 +4,12 @@ import { animate, scroll } from "https://esm.sh/motion@10.16.4";
 
 export default function HeroEditorIsland() {
   useEffect(() => {
+    // @ts-ignore
     scroll(
       ({ y }: { y: { progress: number } }) => {
         console.log(y.progress);
         const rotation = Math.max(y.progress * 0.05 * 360);
+        // @ts-ignore
         animate(".hero-inner", {
           rotateX: -rotation,
           duration: 0,
@@ -17,14 +19,14 @@ export default function HeroEditorIsland() {
       },
       {
         target: document.querySelector(".hero-container"),
-        offset: ["100% 1", "150% 1"],
+        offset: ["120% 1", "150% 1"],
       }
     );
   }, []);
 
   return (
     <div class="hero-container duration-0">
-      <HeroEditor class="hero-inner mx-auto mt-8" />;
+      <HeroEditor class="hero-inner w-fit mx-auto mt-8" />;
     </div>
   );
 }

@@ -10,13 +10,17 @@ function TextLines() {
     const section = document.querySelector("#section");
     const paragraphs = document.querySelectorAll("#section p");
     let selectedParagraphIndex: number | null = null;
+    // @ts-ignore 
     scroll(
       ({ y }: { y: { progress: number } }) => {
         const index = Math.floor(y.progress * paragraphs.length);
         if (index !== selectedParagraphIndex && y.progress !== 0) {
-          animate(paragraphs[selectedParagraphIndex], { color: "#131313" });
+          animate(paragraphs[selectedParagraphIndex!], { color: "#131313" });
           animate(paragraphs[index], { color: "white" });
           selectedParagraphIndex = index;
+        } else if (y.progress === 0) {
+          animate(paragraphs[selectedParagraphIndex!], { color: "#131313" });
+          selectedParagraphIndex = null;
         }
       },
       {
