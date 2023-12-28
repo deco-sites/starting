@@ -19,7 +19,7 @@ recursos ou capacidades específicas. Eles permitem que os desenvolvedores
 empacotem e compartilhem funcionalidades específicas do negócio em diferentes
 projetos, tornando mais fácil a manutenção e a expansão dos seus sites deco.
 
-Ao executar o comando `deno run -A -r https://deco.cx/init` no terminal, você
+Ao executar o comando `deno run -Ar https://deco.cx/start` no terminal, você
 pode começar a desenvolver um App do zero e colocá-lo em funcionamento
 rapidamente.
 
@@ -41,7 +41,7 @@ eficiente dos Apps.
 
 Para criar seus próprios deco Apps, siga estes passos:
 
-1. Execute o comando `deno run -A -r https://deco.cx/init` para inicializar um
+1. Execute o comando `deno run -Ar https://deco.cx/start` para inicializar um
    novo deco App.
 2. Defina as funcionalidades ou componentes que você deseja empacotar na app.
 3. Organize as funções, seções, carregadores ou outros componentes deco dentro
