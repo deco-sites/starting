@@ -5,10 +5,10 @@ import type { DecoState } from "deco/types.ts";
 export const handler: Handlers<null, DecoState> = {
     GET: (req) => {
 
-        console.log(Deno.env.get("ZAPIER_WEBHOOK2"));
-        console.log(Deno.env.get("ZAPIER_WEBHOOK_CASE"));
-        console.log(Deno.env.get("ZAPIER_WEBHOOK"));
-        console.log(Deno.env.get("ZAPIER_WEBHOOK_WEBINAR"));
+        console.log("ZAPIER_WEBHOOK2", Deno.env.get("ZAPIER_WEBHOOK2"));
+        console.log("ZAPIER_WEBHOOK_CASE", Deno.env.get("ZAPIER_WEBHOOK_CASE"));
+        console.log("ZAPIER_WEBHOOK", Deno.env.get("ZAPIER_WEBHOOK"));
+        console.log("ZAPIER_WEBHOOK_WEBINAR", Deno.env.get("ZAPIER_WEBHOOK_WEBINAR"));
 
           return new Response(null, {
             headers: {
