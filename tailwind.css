@@ -102,12 +102,27 @@
 }
 
 @layer components {
-  #cursor-4 {
+  .cursor {
     position: absolute;
-    offset-path: url(#cursor-4-line-1);
     offset-distance: 0%;
     offset-rotate: 0deg;
-    offset-anchor: top left;
+    offset-anchor: center;
+  }
+ 
+  #cursor-1 {
+    offset-path: url(#cursor-1-line-1);
+  }
+
+  #cursor-2 {
+    offset-path: url(#cursor-2-line-1);
+  }
+
+  #cursor-3 {
+    offset-path: url(#cursor-3-line-1);
+  }
+
+  #cursor-4 {
+    offset-path: url(#cursor-4-line-1);
   }
 
   #theme-window {
@@ -121,6 +136,7 @@
   }
 
   #chair-text {
+    opacity: 0;
     overflow: hidden;
     max-width: fit-content;
     white-space: nowrap;
@@ -137,7 +153,7 @@
 
 @layer utilities {}
 
-.container {
+.container, .right-container {
   width: 100%
 }
 
@@ -169,12 +185,21 @@
   .container {
     max-width: 1280px
   }
+
+  .right-container {
+    max-width: calc(1280px+((100vw-1280px)/2))
+  }
 }
 
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px
   }
+
+  .right-container {
+    max-width: calc(1536px+((100vw-1536px)/2))
+  }
+
 }
 
 .prose :where(img):not(:where([class~=not-prose] *)) {
