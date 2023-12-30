@@ -1,16 +1,15 @@
 import { useEffect } from "preact/hooks";
-import {
-  animate,
-  AnimationControls,
-  scroll,
-} from "https://esm.sh/motion@10.16.4";
+import { animate, AnimationControls, scroll } from "motion";
 
-function TextLines() {
+export interface Props {
+  lines: string[];
+}
+
+function TextLines({ lines }: Props) {
   useEffect(() => {
-    const section = document.querySelector("#section");
+    const section = document.querySelector("#section")!;
     const paragraphs = document.querySelectorAll("#section p");
     let selectedParagraphIndex: number | null = null;
-    // @ts-ignore 
     scroll(
       ({ y }: { y: { progress: number } }) => {
         const index = Math.floor(y.progress * paragraphs.length);
@@ -38,17 +37,11 @@ function TextLines() {
       lg:max-w-6xl mx-auto text-white text-[64px] font-semibold leading-[100%]"
       >
         <div>
-          <p class="inline text-[#131313]">
-            From landing pages to enterprise ecommerce,{" "}
-          </p>
-          <p class="inline text-[#131313]">deco.cx is the frontend platform{" "}</p>
-          <p class="inline text-[#131313]">
-            that builds high-performance, budget friendly and fully personalized
-            web experiences,{" "}
-          </p>
-          <p class="inline text-[#131313]">
-            seamlessly integrated with any backend API.{" "}
-          </p>
+          {lines.map((line) => (
+            <>
+              <p class="inline text-[#131313]">{line}</p>{" "}
+            </>
+          ))}
         </div>
       </div>
     </div>

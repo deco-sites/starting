@@ -22,6 +22,7 @@ export interface Props {
     discordUrl?: string;
   };
   extraLinks?: ExtraLink[];
+  rounded?: boolean;
 }
 
 function SubMenu({ menu }: { menu: Menu[] }) {
@@ -60,10 +61,16 @@ export default function Footer({
     discordUrl: "https://discord.gg/YsGgt8EQCZ",
   },
   extraLinks,
+  rounded,
 }: Props) {
   return (
     <section class="bg-[#02F67C] relative">
-      <div class="w-full h-28 absolute -top-28 bg-[#02F67C] -z-10"></div>
+      {rounded && (
+        <>
+          <div class="w-full h-28 absolute -top-28 bg-[#02F67C] z-10"></div>
+          <div class="w-full h-28 absolute -top-28 bg-black rounded-b-[100px] z-10"></div>
+        </>
+      )}
       <div class="max-w-screen-2xl m-auto py-8">
         <div class="px-6 md:px-[2.03rem] flex flex-col lg:flex-row gap-12 lg:justify-between">
           <div class="flex flex-col gap-2">

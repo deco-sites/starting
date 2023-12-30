@@ -11,7 +11,7 @@ export interface Props {
 
 export default function CallToAction({ text, cta }: Props) {
   return (
-    <div class="bg-black py-16 md:py-28 rounded-b-[100px]">
+    <div class="bg-black py-16 md:py-28">
       <section class="xl:container mx-auto flex flex-col items-center justify-center gap-8">
         <h2 class="text-center text-[36px] md:text-[80px] leading-[100%] text-white max-w-4xl">
           {text}
