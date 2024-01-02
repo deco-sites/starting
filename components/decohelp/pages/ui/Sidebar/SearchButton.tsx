@@ -42,17 +42,6 @@ export default function SearchButton(
           rel="stylesheet"
           href={asset("/algoliaDocSearch.css")}
         />
-
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-            .algolia-autocomplete .ds-dropdown-menu {
-              width: 1500px;
-            }
-            `
-          }}
-        />
-        
       </Head>
       <div
         title="Search Button"
