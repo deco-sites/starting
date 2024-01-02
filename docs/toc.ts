@@ -290,7 +290,7 @@ const tableOfContents: TableOfContents = [
           pt: "Enviar apenas os dados necessários para o cliente",
           en: "Sending only necessary data to client",
         },
-        slug: "performance/sending-only-necessary-data-to-client",       
+        slug: "performance/sending-only-necessary-data-to-client",
       },
       {
         title: {
