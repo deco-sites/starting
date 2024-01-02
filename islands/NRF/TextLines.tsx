@@ -39,7 +39,7 @@ function TextLines({ lines }: Props) {
         <div>
           {lines.map((line) => (
             <>
-              <p class="inline text-[#131313]">{line}</p>{" "}
+              <p class="inline text-zinc-900">{line}</p>{" "}
             </>
           ))}
         </div>

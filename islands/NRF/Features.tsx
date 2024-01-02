@@ -24,10 +24,10 @@ function FeatureCard({ icon, title, text }: Card) {
       {icon && <Icon id={icon} size={32} />}
       <div class="space-y-4">
         <div
-          class="text-2xl font-bold"
+          class="text-2xl font-semibold leading-[110%]"
           dangerouslySetInnerHTML={{ __html: title }}
         />
-        <p class="leading-[120%]" dangerouslySetInnerHTML={{ __html: text }} />
+        <p class="leading-[120%] text-zinc-400" dangerouslySetInnerHTML={{ __html: text }} />
       </div>
     </div>
   );

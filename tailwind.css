@@ -151,7 +151,38 @@
   }
 }
 
-@layer utilities {}
+@layer utilities {
+  details > div {
+    overflow: hidden;
+    display: grid;
+    /* intentionally independent from .animation as Safari 16
+    would otherwise ignore the expansion animation. */
+    animation-duration: 0.2s;
+  }
+  
+  details > .animation {
+    animation-name: grid-expand;
+    animation-timing-function: ease-out;
+  }
+  
+  details > .collapsing {
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+  }
+  
+  details > div > div {
+    min-height: 0;
+  }
+  
+  @keyframes grid-expand {
+    0% {
+      grid-template-rows: 0fr;
+    }
+    100% {
+      grid-template-rows: 1fr;
+    }
+  }
+}
 
 .container, .right-container {
   width: 100%

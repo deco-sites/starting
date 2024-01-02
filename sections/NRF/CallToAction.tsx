@@ -13,7 +13,7 @@ export default function CallToAction({ text, cta }: Props) {
   return (
     <div class="bg-black py-16 md:py-28">
       <section class="xl:container mx-auto flex flex-col items-center justify-center gap-8">
-        <h2 class="text-center text-[36px] md:text-[80px] leading-[100%] text-white max-w-4xl">
+        <h2 class="text-center text-[36px] md:text-[80px] leading-[100%] text-white font-medium max-w-4xl">
           {text}
         </h2>
         <div class="flex flex-col lg:flex-row gap-4">
