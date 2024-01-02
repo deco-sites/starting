@@ -101,11 +101,59 @@
   }
 }
 
-@layer components {}
+@layer components {
+  .cursor {
+    position: absolute;
+    offset-distance: 0%;
+    offset-rotate: 0deg;
+    offset-anchor: center;
+  }
+ 
+  #cursor-1 {
+    offset-path: url(#cursor-1-line-1);
+  }
+
+  #cursor-2 {
+    offset-path: url(#cursor-2-line-1);
+  }
+
+  #cursor-3 {
+    offset-path: url(#cursor-3-line-1);
+  }
+
+  #cursor-4 {
+    offset-path: url(#cursor-4-line-1);
+  }
+
+  #theme-window {
+    opacity: 0;
+    transform-origin: 316px 446px;
+  }
+
+  #code-window {
+    opacity: 0;
+    transform-origin: 20px 215px;
+  }
+
+  #chair-text {
+    opacity: 0;
+    overflow: hidden;
+    max-width: fit-content;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 1;
+    left: 591px;
+    top: 140px;
+    font-size: 22px;
+    color: #EBFFFF;
+    font-weight: 600;
+    border-right: 0.15em solid white;
+  }
+}
 
 @layer utilities {}
 
-.container {
+.container, .right-container {
   width: 100%
 }
 
@@ -137,12 +185,21 @@
   .container {
     max-width: 1280px
   }
+
+  .right-container {
+    max-width: calc(1280px+((100vw-1280px)/2))
+  }
 }
 
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px
   }
+
+  .right-container {
+    max-width: calc(1536px+((100vw-1536px)/2))
+  }
+
 }
 
 .prose :where(img):not(:where([class~=not-prose] *)) {

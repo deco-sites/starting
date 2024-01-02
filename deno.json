@@ -17,7 +17,8 @@
     "daisyui": "npm:daisyui@3.9.2",
     "deno-dom": "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts",
     "typography": "npm:@tailwindcss/typography@0.5.9",
-    "https://deno.land/x/gfm@0.1.23/mod.ts": "./overrides/gfm.mod.ts"
+    "https://deno.land/x/gfm@0.1.23/mod.ts": "./overrides/gfm.mod.ts",
+    "motion": "https://esm.sh/motion@10.16.4"
   },
   "tasks": {
     "start": "deno task bundle && deno run -A --unstable --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",

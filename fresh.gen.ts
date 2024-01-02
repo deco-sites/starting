@@ -26,6 +26,12 @@ import * as $Header from "./islands/Header.tsx";
 import * as $HelpFaq from "./islands/HelpFaq.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
 import * as $LiveProjects from "./islands/LiveProjects.tsx";
+import * as $NRF_Editor from "./islands/NRF/Editor.tsx";
+import * as $NRF_Features from "./islands/NRF/Features.tsx";
+import * as $NRF_Header from "./islands/NRF/Header.tsx";
+import * as $NRF_HeroEditor from "./islands/NRF/HeroEditor.tsx";
+import * as $NRF_PageWrapper from "./islands/NRF/PageWrapper.tsx";
+import * as $NRF_TextLines from "./islands/NRF/TextLines.tsx";
 import * as $OnThisPage from "./islands/OnThisPage.tsx";
 import * as $PopularDocuments from "./islands/PopularDocuments.tsx";
 import * as $RankingAnalyze from "./islands/RankingAnalyze.tsx";
@@ -63,6 +69,12 @@ const manifest = {
     "./islands/HelpFaq.tsx": $HelpFaq,
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
     "./islands/LiveProjects.tsx": $LiveProjects,
+    "./islands/NRF/Editor.tsx": $NRF_Editor,
+    "./islands/NRF/Features.tsx": $NRF_Features,
+    "./islands/NRF/Header.tsx": $NRF_Header,
+    "./islands/NRF/HeroEditor.tsx": $NRF_HeroEditor,
+    "./islands/NRF/PageWrapper.tsx": $NRF_PageWrapper,
+    "./islands/NRF/TextLines.tsx": $NRF_TextLines,
     "./islands/OnThisPage.tsx": $OnThisPage,
     "./islands/PopularDocuments.tsx": $PopularDocuments,
     "./islands/RankingAnalyze.tsx": $RankingAnalyze,
