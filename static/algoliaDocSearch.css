@@ -5,35 +5,39 @@
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
  */
 /*! @docsearch/css 3.5.2 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
+/*
+ * Todas as alterações feitas pela deco serão marcadas por um comentário #deco. 
+ * Classes alteradas terão o comentário no início.
+*/
 :root {
-    --docsearch-primary-color: #FAFAFA;
-    --docsearch-text-color: #616B6B;
+    --docsearch-primary-color: #FAFAFA; /* #deco */
+    --docsearch-text-color: #616B6B;  /* #deco */
     --docsearch-spacing: 12px;
     --docsearch-icon-stroke-width: 1.4;
     --docsearch-highlight-color: var(--docsearch-primary-color);
-    --docsearch-hit-source-color: var(--Base-Base-500, #616B6B);
-    --docsearch-muted-color: var(--Base-Base-500, #616B6B);
+    --docsearch-hit-source-color: var(--Base-Base-500, #616B6B); /* #deco */
+    --docsearch-muted-color: var(--Base-Base-500, #616B6B); /* #deco */
     --docsearch-container-background: rgba(101, 108, 133, 0.8);
-    --docsearch-logo-color: #999ca9;
+    --docsearch-logo-color: #999ca9;  /* #deco */
     --docsearch-modal-width: 560px;
     --docsearch-modal-height: 600px;
-    --docsearch-modal-background: var(--Base-Base-000, #FFF);;
+    --docsearch-modal-background: var(--Base-Base-000, #FFF); /* #deco */
     --docsearch-modal-shadow: inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.5), 0 3px 8px 0 #555a64;
-    --docsearch-searchbox-height: 36px;
+    --docsearch-searchbox-height: 36px; /* #deco */
     --docsearch-searchbox-background: #ebedf0;
     --docsearch-searchbox-focus-background: #fff;
     --docsearch-searchbox-shadow: inset 0 0 0 2px var(--docsearch-primary-color);
     --docsearch-hit-height: 56px;
     --docsearch-hit-color: #444950;
-    --docsearch-hit-active-color: #000000;
+    --docsearch-hit-active-color: #000000; /* #deco */
     --docsearch-hit-background: #fff;
     --docsearch-hit-shadow: 0 1px 3px 0 #d4d9e1;
     --docsearch-key-gradient: linear-gradient(-225deg, #d5dbe4, #f8f8f8);
     --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff, 0 1px 2px 1px rgba(30, 35, 90, 0.4);
-    --docsearch-footer-height: 52px;
+    --docsearch-footer-height: 52px; /* #deco */
     --docsearch-footer-background: #fff;
     --docsearch-footer-shadow:0 -1px 0 0 #e0e3e8, 0 -3px 6px 0 rgba(69, 98, 155, 0.12);
-    --docsearch-svg-color: #616B6B;
+    --docsearch-svg-color: #616B6B; /* #deco */
 }
 
 html[data-theme=dark] {
@@ -54,6 +58,7 @@ html[data-theme=dark] {
     --docsearch-muted-color:#7f8497
 }
 
+/* #deco */
 .DocSearch-Button {
     align-items: center;
     border: 1px solid var(--Base-Base-300, #C9CFCF);
@@ -77,6 +82,7 @@ html[data-theme=dark] {
     outline:none
 }
 
+/* #deco */
 .DocSearch-Button-Container {
     gap: 8px;
     align-items: center;
@@ -92,6 +98,7 @@ html[data-theme=dark] {
     color:var(--docsearch-text-color)
 }
 
+/* #deco */
 .DocSearch-Button-Placeholder {
     color: var(--Base-Base-700, #0D1717);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -105,12 +112,14 @@ html[data-theme=dark] {
     padding:0 12px 0 6px
 }
 
+/* #deco */
 .DocSearch-Button-Keys {
     display: flex;
     justify-content: flex-end;
     min-width:calc(40px + .8em);
 }
 
+/* #deco */
 .DocSearch-Button-Key {
     align-items: center;
     color: var(--docsearch-muted-color);
@@ -168,6 +177,7 @@ html[data-theme=dark] {
     padding:0
 }
 
+/* #deco */
 .DocSearch-Modal {
     background: var(--docsearch-modal-background);
     border-radius: 4px;
@@ -179,6 +189,7 @@ html[data-theme=dark] {
     position:relative
 }
 
+/* #deco */
 .DocSearch-SearchBar {
     display: flex;
     padding-top: 24px;
@@ -186,6 +197,7 @@ html[data-theme=dark] {
     padding-right: 16px;
 }
 
+/* #deco */
 .DocSearch-Form {
     border-radius: 4px;
     border: 1px solid var(--Base-Base-300, #C9CFCF);
@@ -199,6 +211,7 @@ html[data-theme=dark] {
     width:100%
 }
 
+/* #deco */
 .DocSearch-Input {
     appearance: none;
     background: transparent;
@@ -227,6 +240,7 @@ html[data-theme=dark] {
     padding:0
 }
 
+/* #deco */
 .DocSearch-MagnifierLabel, .DocSearch-Reset {
     align-items: center;
     color: var(--docsearch-svg-color);
@@ -280,10 +294,12 @@ html[data-theme=dark] {
     color:var(--docsearch-highlight-color)
 }
 
+/* #deco */
 .DocSearch-LoadingIndicator svg {
     height: 24px;
     width:24px
 }
+/* #deco */
 .DocSearch-MagnifierLabel svg {
     height: 20px;
     width:20px
@@ -293,6 +309,7 @@ html[data-theme=dark] {
     display:none
 }
 
+/* #deco */
 .DocSearch-Dropdown {
     max-height: calc(var(--docsearch-modal-height) - var(--docsearch-searchbox-height) - var(--docsearch-spacing) - var(--docsearch-footer-height));
     min-height: var(--docsearch-spacing);
@@ -323,6 +340,7 @@ html[data-theme=dark] {
     padding:0
 }
 
+/* #deco */
 .DocSearch-Label {
     color: var(--Base-Base-500, #616B6B);
     text-align: right;
@@ -362,6 +380,7 @@ html[data-theme=dark] {
     margin-bottom:24px
 }
 
+/* #deco */
 .DocSearch-Hits mark {
     background: none;
     color:var(--docsearch-text-color)
@@ -421,6 +440,7 @@ html[data-theme=dark] {
     width:100%
 }
 
+/* #deco */
 .DocSearch-Hit-source {
     color: var(--docsearch-hit-source-color);
     
@@ -559,6 +579,7 @@ svg.DocSearch-Hit-Select-Icon {
     }
 }
 
+/* #deco */
 .DocSearch-ErrorScreen, .DocSearch-NoResults, .DocSearch-StartScreen {
     color: var(--Base-Base-500, #616B6B);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -612,6 +633,7 @@ svg.DocSearch-Hit-Select-Icon {
     text-decoration:underline
 }
 
+/* #deco */
 .DocSearch-Footer {
     align-items: center;
     background: var(--docsearch-footer-background);
@@ -629,6 +651,7 @@ svg.DocSearch-Hit-Select-Icon {
     z-index:300
 }
 
+/* #deco */
 .DocSearch-Commands {
     color: var(--docsearch-muted-color);
     display: none;
@@ -739,6 +762,7 @@ svg.DocSearch-Hit-Select-Icon {
     }
 }
 
+/* #deco */
 .DocSearch-Logo .cls-1, .DocSearch-Logo .cls-2 {
     fill: var(--docsearch-logo-color) !important;
 }
