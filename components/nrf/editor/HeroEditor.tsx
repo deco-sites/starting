@@ -1,6 +1,3 @@
-import { inView, timeline } from "motion";
-import { useEffect } from "preact/hooks";
-import { HERO_ANIMATION_SEQUENCE } from "deco-sites/starting/animations/timelines/hero.ts";
 import {
   Cursors,
   HeroCursorPaths,

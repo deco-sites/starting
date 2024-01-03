@@ -4,6 +4,14 @@ import { useEffect } from "preact/hooks";
 import { animate, inView, stagger, scroll } from "motion";
 import { useSignal } from "@preact/signals";
 
+import { ComponentLibrary } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
+import { RealtimeEditor } from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
+import { DesignSystem } from "../../components/nrf/editor/DesignSystem.tsx";
+import { FullCode } from "../../components/nrf/editor/FullCode.tsx";
+import { AppsIntegrations } from "../../components/nrf/editor/AppsIntegrations.tsx";
+import { Segmentation } from "../../components/nrf/editor/Segmentation.tsx";
+import { Analytics } from "../../components/nrf/editor/Analytics.tsx";
+
 export interface EditorFeature {
   title: string;
   subtitle: string;
@@ -23,6 +31,17 @@ const sections: string[] = [
   "Integrate & Extend",
   // "Multivariate Testing",
 ];
+
+const svgs = [
+  ComponentLibrary,
+  RealtimeEditor,
+  DesignSystem,
+  FullCode,
+  AppsIntegrations,
+  Segmentation,
+  Analytics,
+]
+
 
 function EditorCard({
   title,
@@ -58,14 +77,14 @@ export default function Editor({ features }: Props) {
   useEffect(() => {
     let lastScrollY = window.scrollY;
     let isScrollingDown = true;
-  
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       isScrollingDown = currentScrollY > lastScrollY;
       lastScrollY = currentScrollY;
     };
-  
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll);
 
     const animateItems = (target: Element) => {
       animate(
@@ -74,34 +93,62 @@ export default function Editor({ features }: Props) {
         { delay: stagger(0.1), duration: 1, easing: "ease-out" }
       );
     };
-  
-    const animateFeature = (target: Element, index: number, isEntering: boolean) => {
-      const directionY = isScrollingDown ? (isEntering ? '100px' : '-100px'): (isEntering ? '-100px': '100px');
+
+    const animateFeature = (
+      target: Element,
+      index: number,
+      isEntering: boolean
+    ) => {
+      const directionY = isScrollingDown
+        ? isEntering
+          ? "100px"
+          : "-100px"
+        : isEntering
+        ? "-100px"
+        : "100px";
       const opacityValue = isEntering ? 1 : 0;
       const colorValue = isEntering ? "white" : "#52525B";
       const scaleValue = isEntering ? "scale(1.1)" : "scale(1)";
- 
-      const transformStarting = isEntering ? `translateY(${directionY})` : "translateY(0px)";
-      const transformEnding = isEntering ? "translateY(0px)" : `translateY(${directionY})`;
 
-      animate(`#feature-image-${index}`, { opacity: opacityValue }, { duration: 0.3 });
-      animate(`#feature-title-${index}`, { color: colorValue, transform: scaleValue }, { duration: 0.3 });
-      animate(`#feature-text-${index}`, {
-        opacity: opacityValue, 
-        transform: [transformStarting, transformEnding]
-      }, { delay: 0.1, duration: 0.3 });
-        };
-  
-    inView(".editor", ({ target }) => animateItems(target), { margin: "0px 0px -100px 0px" });
-  
+      const transformStarting = isEntering
+        ? `translateY(${directionY})`
+        : "translateY(0px)";
+      const transformEnding = isEntering
+        ? "translateY(0px)"
+        : `translateY(${directionY})`;
+
+      animate(
+        `#feature-image-${index}`,
+        { opacity: opacityValue },
+        { duration: 0.3 }
+      );
+      animate(
+        `#feature-title-${index}`,
+        { color: colorValue, transform: scaleValue },
+        { duration: 0.3 }
+      );
+      animate(
+        `#feature-text-${index}`,
+        {
+          opacity: opacityValue,
+          transform: [transformStarting, transformEnding],
+        },
+        { delay: 0.1, duration: 0.3 }
+      );
+    };
+
+    inView(".editor", ({ target }) => animateItems(target), {
+      margin: "0px 0px -100px 0px",
+    });
+
     inView(
       ".feature-text",
       ({ target }) => {
         const elements = Array.from(document.querySelectorAll(".feature-text"));
         const index = elements.indexOf(target);
-  
+
         animateFeature(target, index, true);
-  
+
         return () => {
           animateFeature(target, index, false);
         };
@@ -109,49 +156,48 @@ export default function Editor({ features }: Props) {
       { margin: "0px 0px -85% 0px" }
     );
   }, []);
-  
 
-    // scroll(
-    //   ({ y }) => {
-    //     const initialWidth = 741;
-    //     const finalWidth = 671;
-    //     console.log(y.progress);
-    //     const width =
-    //       initialWidth +
-    //       ((finalWidth - initialWidth) *
-    //         Math.max(0, Math.min(100, y.progress))) /
-    //         100;
+  // scroll(
+  //   ({ y }) => {
+  //     const initialWidth = 741;
+  //     const finalWidth = 671;
+  //     console.log(y.progress);
+  //     const width =
+  //       initialWidth +
+  //       ((finalWidth - initialWidth) *
+  //         Math.max(0, Math.min(100, y.progress))) /
+  //         100;
 
-    //     if (y.progress > 0 && y.progress < 1) {
-    //       animate(
-    //         "#blank-editor",
-    //         {
-    //           opacity: 1,
-    //         },
-    //         {
-    //           duration: 0.1,
-    //         }
-    //       );
-    //     } else {
-    //       animate(
-    //         "#blank-editor",
-    //         {
-    //           opacity: 0,
-    //         },
-    //         {
-    //           duration: 0.1,
-    //         }
-    //       );
-    //     }
-    //     document
-    //       .querySelector("#blank-editor")!
-    //       .setAttribute("width", width.toString());
-    //   },
-    //   {
-    //     target: document.querySelector("#blank-editor-container")!,
-    //     offset: ["0.9 1", "200% 1"],
-    //   }
-    // );
+  //     if (y.progress > 0 && y.progress < 1) {
+  //       animate(
+  //         "#blank-editor",
+  //         {
+  //           opacity: 1,
+  //         },
+  //         {
+  //           duration: 0.1,
+  //         }
+  //       );
+  //     } else {
+  //       animate(
+  //         "#blank-editor",
+  //         {
+  //           opacity: 0,
+  //         },
+  //         {
+  //           duration: 0.1,
+  //         }
+  //       );
+  //     }
+  //     document
+  //       .querySelector("#blank-editor")!
+  //       .setAttribute("width", width.toString());
+  //   },
+  //   {
+  //     target: document.querySelector("#blank-editor-container")!,
+  //     offset: ["0.9 1", "200% 1"],
+  //   }
+  // );
   // }, []);
 
   return (
@@ -189,15 +235,15 @@ export default function Editor({ features }: Props) {
                 </div>
               </div>
             ))}
-            <div class="h-[75vh]"/>
+            <div class="h-[75vh]" />
           </div>
           <div class="flex flex-col gap-32 ml-auto">
-            {features.map(({ image }, idx) => (
+            {svgs.map((Component, idx) => (
               <div
                 id={`feature-image-${idx}`}
-                class="opacity-0 feature-image fixed h-screen top-0 right-0 flex items-center justify-center"
+                class="opacity-0 feature-image fixed h-screen left-[calc(50%+3.75rem)] top-0  flex items-center justify-center"
               >
-                <img src={image} class="ml-auto" />
+                <Component />
               </div>
             ))}
           </div>

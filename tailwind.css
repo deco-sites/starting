@@ -149,6 +149,11 @@
     font-weight: 600;
     border-right: 0.15em solid white;
   }
+
+  .editor-feature {
+    width: auto;
+    max-height: 60vh;
+  }
 }
 
 @layer utilities {
