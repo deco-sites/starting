@@ -125,6 +125,10 @@
     offset-path: url(#cursor-4-line-1);
   }
 
+  #cursor-tiago {
+    offset-path: url(#design-system-cursor-path);
+  }
+
   #theme-window {
     opacity: 0;
     transform-origin: 316px 446px;
@@ -148,6 +152,17 @@
     color: #EBFFFF;
     font-weight: 600;
     border-right: 0.15em solid white;
+  }
+
+  .product-frame, .product-name-frame{
+    opacity: 0;
+  }
+
+  #product-name {
+    opacity: 0;
+    overflow: hidden;
+    max-width: fit-content;
+    white-space: nowrap;
   }
 
   .editor-feature {

@@ -1,16 +1,17 @@
 import { BlankEditor } from "deco-sites/starting/components/nrf/editor/Blank.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { useEffect } from "preact/hooks";
-import { animate, inView, stagger, scroll } from "motion";
+import { animate, inView, stagger, timeline } from "motion";
 import { useSignal } from "@preact/signals";
 
 import { ComponentLibrary } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
-import { RealtimeEditor } from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
-import { DesignSystem } from "../../components/nrf/editor/DesignSystem.tsx";
+import { RealtimeEditor, REALTIME_EDITOR_SEQUENCE } from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
+import { DesignSystem, DESIGN_SYSTEM_SEQUENCE} from "../../components/nrf/editor/DesignSystem.tsx";
 import { FullCode } from "../../components/nrf/editor/FullCode.tsx";
 import { AppsIntegrations } from "../../components/nrf/editor/AppsIntegrations.tsx";
 import { Segmentation } from "../../components/nrf/editor/Segmentation.tsx";
 import { Analytics } from "../../components/nrf/editor/Analytics.tsx";
+import { DesignSystemCursor, DesignSystemCursorPath } from "deco-sites/starting/animations/assets/Cursors.tsx";
 
 export interface EditorFeature {
   title: string;
@@ -41,35 +42,6 @@ const svgs = [
   Segmentation,
   Analytics,
 ]
-
-
-function EditorCard({
-  title,
-  subtitle,
-  image,
-  index,
-}: {
-  title: string;
-  subtitle: string;
-  image?: string;
-  index: number;
-}) {
-  return (
-    <>
-      <div class="feature w-full flex items-center justify-between gap-28">
-        <div class="w-1/3 flex gap-20 h-screen items-center ">
-          <div class="flex flex-col gap-6">
-            <h2 class="text-5xl font-semibold">{title}</h2>
-            <p>{subtitle}</p>
-          </div>
-        </div>
-        <div class="flex-1 sticky h-screen top-0 flex items-center justify-center">
-          <img src={image} class="ml-auto" />
-        </div>
-      </div>
-    </>
-  );
-}
 
 export default function Editor({ features }: Props) {
   const currentFeature = useSignal<number | null>(null);
@@ -122,6 +94,8 @@ export default function Editor({ features }: Props) {
         { opacity: opacityValue },
         { duration: 0.3 }
       );
+
+      timeline(DESIGN_SYSTEM_SEQUENCE)
       animate(
         `#feature-title-${index}`,
         { color: colorValue, transform: scaleValue },

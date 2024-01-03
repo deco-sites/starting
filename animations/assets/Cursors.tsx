@@ -277,3 +277,83 @@ export const HeroCursorPaths = () => (
     />
   </Fragment>
 );
+
+export const DesignSystemCursor = () => (
+  <svg
+    width="43"
+    height="30"
+    viewBox="0 0 43 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    id="cursor-tiago"
+    class="cursor"
+  >
+    <g>
+      <g id="Figma arrow" filter="url(#filter0_d_914_12404)">
+        <path
+          d="M1.00035 0.880005L14.0004 7.3684L7.94479 9.25217L5.13668 14.1767L1.00035 0.880005Z"
+          fill="#3988FF"
+        />
+      </g>
+      <g id="Frame 2609046">
+        <path
+          d="M11.4261 13.5402H34.5894C38.8921 13.5402 42.3802 17.0282 42.3802 21.331C42.3802 25.6337 38.8921 29.1218 34.5894 29.1218H21.7442C19.9363 29.1218 19.0324 29.1218 18.279 28.9827C14.8658 28.3528 12.1951 25.6822 11.5652 22.2689C11.4261 21.5155 11.4261 20.6116 11.4261 18.8038V13.5402Z"
+          fill="#3988FF"
+        />
+        <text
+          id="Tiago"
+          fill="white"
+          xml:space="preserve"
+          style="white-space: pre"
+          font-family="Albert Sans"
+          font-size="6.27933"
+          letter-spacing="0px"
+        >
+          <tspan x="18.8578" y="23.359">
+            Tiago
+          </tspan>
+        </text>
+      </g>
+    </g>
+    <defs>
+      <filter
+        id="filter0_d_914_12404"
+        x="0.123379"
+        y="0.529216"
+        width="14.7539"
+        height="15.0506"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dy="0.526183" />
+        <feGaussianBlur stdDeviation="0.438486" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+        />
+        <feBlend
+          mode="normal"
+          in2="BackgroundImageFix"
+          result="effect1_dropShadow_914_12404"
+        />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="effect1_dropShadow_914_12404"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
+)
+
+export const DesignSystemCursorPath = () => (
+  <path id="design-system-cursor-path" d="M-121 201C-118.051 280.547 -50.6393 437.441 195.363 428.96C195.573 428.953 195.774 429.078 195.852 429.273L241.885 543.741C241.928 543.846 241.933 543.963 241.9 544.072L211.459 644.509C211.279 645.102 212.125 645.428 212.39 644.868L359 334.624" stroke="#FDE047" stroke-linecap="round" stroke-linejoin="round"/>
+)
