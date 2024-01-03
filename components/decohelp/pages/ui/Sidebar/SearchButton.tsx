@@ -1,4 +1,4 @@
-import { Head } from "$fresh/runtime.ts";
+import { Head, asset } from "$fresh/runtime.ts";
 import { useEffect, useRef } from "preact/hooks";
 import docsearch from "https://esm.sh/@docsearch/js@3.5.2?target=es2020";
 
@@ -40,12 +40,12 @@ export default function SearchButton(
         />
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+          href={asset("/algoliaDocSearch.css")}
         />
       </Head>
       <div
         title="Search Button"
-        class="h-9 mb-6"
+        class="mb-2"
         ref={ref}
       >
       </div>
