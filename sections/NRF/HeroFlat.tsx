@@ -31,9 +31,11 @@ export default function HeroFlats({
 }: Props) {
   return (
     <div class="bg-black min-h-screen">
-      <div class="max-w-fit mx-auto flex flex-col items-center gap-8">
+      <div class="mx-auto flex flex-col items-center gap-8">
         <div
-          class={`flex xl:container xl:mx-auto py-12 lg:py-28 mx-5 md:mx-10 ${PLACEMENT[placement]} gap-12 md:gap-20 text-left items-center`}
+          class={`flex w-full max-h-screen xl:container xl:mx-auto py-12 lg:py-28 mx-5 md:mx-10 ${
+            PLACEMENT[placement]
+          } gap-12 md:gap-20 text-left items-center`}
         >
           <img
             class="w-full lg:w-1/2 object-fit"
@@ -49,7 +51,8 @@ export default function HeroFlats({
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
-            ></div>
+            >
+            </div>
             <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
               {description}
             </p>
