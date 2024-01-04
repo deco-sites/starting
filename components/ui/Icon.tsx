@@ -67,7 +67,15 @@ export type AvailableIcons =
   | "Visa"
   | "WhatsApp"
   | "WhatsApp"
-  | "WhiteArrow";
+  | "WhiteArrow"
+  /* NRF Icons */
+  | "RocketLaunch"
+  | "Sparkle"
+  | "Gauge"
+  | "Plugs"
+  | "FileSvg";
+
+
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

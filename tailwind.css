@@ -102,6 +102,17 @@
 }
 
 @layer components {
+
+  .features {
+    @apply flex items-center justify-center gap-6 flex-wrap;
+    @apply relative max-w-[1280px] mx-auto;
+  }
+
+  .feature-card {
+    @apply w-[380px] max-w-[380px] h-[350px] bg-[#060A0A] rounded-3xl;
+    @apply flex flex-col items-center justify-center gap-12;
+  }
+
   .cursor {
     position: absolute;
     offset-distance: 0%;
@@ -134,6 +145,11 @@
     transform-origin: 316px 446px;
   }
 
+  #library {
+    opacity: 0;
+    transform-origin: 336px 452px;
+  }
+
   #code-window {
     opacity: 0;
     transform-origin: 20px 215px;
@@ -156,13 +172,6 @@
 
   .product-frame, .product-name-frame{
     opacity: 0;
-  }
-
-  #product-name {
-    opacity: 0;
-    overflow: hidden;
-    max-width: fit-content;
-    white-space: nowrap;
   }
 
   .editor-feature {

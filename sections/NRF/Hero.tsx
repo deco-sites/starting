@@ -1,4 +1,4 @@
-import HeroEditor from "deco-sites/starting/islands/NRF/HeroEditor.tsx";
+import { WebAnalytics } from "deco-sites/starting/components/nrf/hero/WebAnalytics.tsx";
 
 export interface Props {
   /**
@@ -7,31 +7,35 @@ export interface Props {
   title: string;
 }
 
+const TABS = [
+  "Section Library",
+  "No Code Editor",
+  "Full Code Editor",
+  "Web Analytics",
+  "Monitoring",
+];
+
 export default function Hero({ title }: Props) {
   return (
-    <div id="hero" class="bg-black min-h-screen">
+    <div id="hero" class="bg-black min-h-screen space-y-10">
       <div class="max-w-fit mx-auto flex flex-col items-center gap-8">
         <div
-          class="mt-48 inline-block text-[80px] text-left leading-[100%] font-medium text-white"
+          class="mt-48 inline-block text-[104px] text-left leading-[100%] font-medium text-white"
           dangerouslySetInnerHTML={{
             __html: title,
           }}
-        >
-        </div>
-        <div class="w-full p-1 bg-[#191919] text-white border border-[#292a2a] rounded-full flex">
-          <input
-            class="ml-5 appearance-none bg-transparent block w-full placeholder-white focus:outline-none"
-            placeholder="What do you want to build?"
-          />
-          <button
-            type="submit"
-            class="flex items-center gap-2 bg-[hsla(280,100%,78%,1)] hover:bg-[hsla(280,100%,70%,1)] duration-200 py-2 px-4 rounded-full"
-          >
-            Generate
-          </button>
+        ></div>
+      </div>
+      <div class="mx-auto flex flex-col items-center">
+        <div class="p-2 bg-white/5 border border-white/5 rounded-3xl space-y-2">
+          <div class="flex justify-center gap-2 text-white">
+            {TABS.map((tab) => (
+              <div class="text-[14px] px-[18px] py-2 text-white/50">{tab}</div>
+            ))}
+          </div>
+          <WebAnalytics />
         </div>
       </div>
-      <HeroEditor />
     </div>
   );
 }

@@ -4,34 +4,33 @@ import { useEffect } from "preact/hooks";
 import { animate, inView, stagger, timeline } from "motion";
 import { useSignal } from "@preact/signals";
 
-import { ComponentLibrary } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
-import { RealtimeEditor, REALTIME_EDITOR_SEQUENCE } from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
-import { DesignSystem, DESIGN_SYSTEM_SEQUENCE} from "../../components/nrf/editor/DesignSystem.tsx";
+import { ComponentLibrary,
+COMPONENT_LIBRARY_SEQUENCE } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
+import {
+  RealtimeEditor,
+  REALTIME_EDITOR_SEQUENCE,
+} from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
+import {
+  DesignSystem,
+  DESIGN_SYSTEM_SEQUENCE,
+} from "../../components/nrf/editor/DesignSystem.tsx";
 import { FullCode } from "../../components/nrf/editor/FullCode.tsx";
 import { AppsIntegrations } from "../../components/nrf/editor/AppsIntegrations.tsx";
 import { Segmentation } from "../../components/nrf/editor/Segmentation.tsx";
-import { Analytics } from "../../components/nrf/editor/Analytics.tsx";
-import { DesignSystemCursor, DesignSystemCursorPath } from "deco-sites/starting/animations/assets/Cursors.tsx";
+import { Analytics, ANALYTICS_SEQUENCE } from "../../components/nrf/editor/Analytics.tsx";
 
+/**
+ * @title {{{key}}}
+ **/
 export interface EditorFeature {
   title: string;
   subtitle: string;
-  image?: ImageWidget;
+  key: string;
 }
 
 export interface Props {
   features: EditorFeature[];
 }
-
-const sections: string[] = [
-  "Component Library",
-  "No-code editing",
-  "Natural Language",
-  "Themes",
-  "Code editing",
-  "Integrate & Extend",
-  // "Multivariate Testing",
-];
 
 const svgs = [
   ComponentLibrary,
@@ -41,6 +40,17 @@ const svgs = [
   AppsIntegrations,
   Segmentation,
   Analytics,
+];
+
+const ANIMATION_TIMELINES = [
+  COMPONENT_LIBRARY_SEQUENCE,
+  REALTIME_EDITOR_SEQUENCE,
+  DESIGN_SYSTEM_SEQUENCE,
+  DESIGN_SYSTEM_SEQUENCE,
+  DESIGN_SYSTEM_SEQUENCE,
+  DESIGN_SYSTEM_SEQUENCE,
+  ANALYTICS_SEQUENCE,
+  DESIGN_SYSTEM_SEQUENCE,
 ]
 
 export default function Editor({ features }: Props) {
@@ -95,7 +105,8 @@ export default function Editor({ features }: Props) {
         { duration: 0.3 }
       );
 
-      timeline(DESIGN_SYSTEM_SEQUENCE)
+      timeline(ANIMATION_TIMELINES[index]);
+
       animate(
         `#feature-title-${index}`,
         { color: colorValue, transform: scaleValue },
@@ -190,7 +201,7 @@ export default function Editor({ features }: Props) {
           <div class="sticky h-screen top-0 flex items-center justify-center">
             <ul class="text-[#52525B] whitespace-nowrap space-y-2">
               <li class="text-[#02F67C]">How it Works</li>
-              {sections.map((section, idx) => (
+              {features.map(({ key: section }, idx) => (
                 <li id={`feature-title-${idx}`} key={idx}>
                   {section}
                 </li>

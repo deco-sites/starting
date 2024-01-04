@@ -2,8 +2,7 @@
 export const AppsIntegrations = () => {
 
     return (
-        
-<svg width="1090" height="745" viewBox="0 0 1090 745" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+<svg class="editor-feature" width="1090" height="745" viewBox="0 0 1090 745" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_50_2260)">
 <g clip-path="url(#clip1_50_2260)">
 <rect x="50" width="1040" height="684.114" rx="16.5957" fill="black"/>

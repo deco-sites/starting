@@ -15,29 +15,19 @@ export const REALTIME_EDITOR_SEQUENCE: AnimationTimeline = [
     { width: ["291.5px", "20px"] },
     {
       at: 1.14,
-      duration: 0.06,
+      duration: 0.2,
       easing: "ease-out",
     },
   ],
   [
-    "#product-name-frame-tr",
+    "#product-name-frame-tr, #product-name-frame-br",
     { transform: ["translateX(0)", "translateX(-271px)"] },
     {
       at: 1.14,
-      duration: 0.06,
+      duration: 0.2,
       easing: "ease-out",
     },
   ],
-  [
-    "#product-name-frame-br",
-    { transform: ["translateX(0)", "translateX(-271px)"] },
-    {
-      at: 1.14,
-      duration: 0.06,
-      easing: "ease-out",
-    },
-  ],
-
   [
     "#product-name-placeholder",
     { opacity: 0 },
@@ -51,7 +41,25 @@ export const REALTIME_EDITOR_SEQUENCE: AnimationTimeline = [
     "#product-name",
     { width: ["0%", "160px"], opacity: 1 },
     {
-      at: 1.20,
+      at: 1.4,
+      duration: 1,
+      easing: "steps(12, end)",
+    },
+  ],
+  [
+    "#product-name-frame-br, #product-name-frame-tr",
+    { transform: ["translateX(-271px)", "translateX(0)"] },
+    {
+      at: 1.4,
+      duration: 1,
+      easing: "steps(12, end)",
+    },
+  ],
+  [
+    "#product-name-border",
+    { width: ["20px", "291.5px"] },
+    {
+      at: 1.4,
       duration: 1,
       easing: "steps(12, end)",
     },
@@ -301,7 +309,7 @@ export const RealtimeEditor = () => {
                   width="1040"
                   height="643.02"
                   transform="translate(50 41.0941)"
-                  fill="url(#pattern0)"
+                  fill="url(#realtime-p0)"
                   fill-opacity="0.25"
                 />
                 <g id="Product Header / 1 /">
@@ -332,7 +340,7 @@ export const RealtimeEditor = () => {
                             width="404"
                             height="551"
                             rx="6.44444"
-                            fill="url(#pattern1)"
+                            fill="url(#realtime-p1)"
                           />
                         </g>
                       </g>
@@ -413,7 +421,7 @@ export const RealtimeEditor = () => {
                               <text
                                 id="product-name"
                                 fill="white"
-                                xml:space="preserve"
+                                xmlSpace="preserve"
                                 style="white-space: pre"
                                 font-family="Albert Sans"
                                 font-size="48"
@@ -594,7 +602,7 @@ export const RealtimeEditor = () => {
       </g>
       <defs>
         <pattern
-          id="pattern0"
+          id="realtime-p0"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -605,7 +613,7 @@ export const RealtimeEditor = () => {
           />
         </pattern>
         <pattern
-          id="pattern1"
+          id="realtime-p1"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
