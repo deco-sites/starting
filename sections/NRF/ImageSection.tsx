@@ -3,6 +3,9 @@ import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface Props {
   title: string;
+  /**
+   * @format textarea
+   */
   description: string;
   image: ImageWidget;
   placement: "left" | "right";
@@ -38,7 +41,9 @@ export default function ImageSection({
           loading="lazy"
         />
         <div class="w-full lg:w-1/2 space-y-2 lg:space-y-4 lg:max-w-xl gap-4">
-          <p class="text-white text-[40px] leading-[110%] font-semibold">{title}</p>
+          <p class="text-white text-[40px] leading-[110%] font-semibold">
+            {title}
+          </p>
           <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
             {description}
           </p>
