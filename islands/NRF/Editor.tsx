@@ -95,7 +95,7 @@ export default function Editor({ features }: Props) {
 
       animate(
         `#feature-title-${index}`,
-        { color: colorValue, transform: scaleValue },
+        { color: colorValue },
         { duration: 0.3 }
       );
 
@@ -135,9 +135,9 @@ export default function Editor({ features }: Props) {
         <div class="relative w-full right-container ml-auto flex gap-20">
           <div class="hidden sticky h-screen top-0 lg:flex items-center justify-center">
             <ul class="text-[#52525B] whitespace-nowrap space-y-2">
-              <li class="text-[#02F67C] ">How it Works</li>
+              <li class="text-[#02F67C] text-[24px]">How it Works</li>
               {features.map(({ key: section }, idx) => (
-                <li id={`feature-title-${idx}`} key={idx}>
+                <li class="text-sm" id={`feature-title-${idx}`} key={idx}>
                   {section}
                 </li>
               ))}

@@ -114,7 +114,7 @@
   }
 
   .feature-card {
-    @apply w-[380px] max-w-[380px] h-[350px] bg-[#060A0A] rounded-3xl;
+    @apply w-[380px] max-w-[380px] h-[350px] bg-[#000D0D] rounded-3xl;
     @apply flex flex-col items-center justify-start gap-12;
   }
 

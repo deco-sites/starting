@@ -1,6 +1,4 @@
 import { IS_BROWSER } from "https://deno.land/x/fresh@1.1.4/src/runtime/utils.ts";
-import Slider from "deco-sites/starting/components/ui/Slider2.tsx";
-import SliderJS from "deco-sites/starting/islands/SliderJS.tsx";
 import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
 import { useId } from "deco-sites/starting/sdk/useId.ts";
@@ -29,6 +27,7 @@ export interface Props {
   pageInitial: string;
   mkt?: { label: string; url: string; selected?: boolean };
   dev?: { label: string; url: string; selected?: boolean };
+  demo: { label: string; url: string };
   login: { label: string; url: string };
   sign: { label: string; url: string };
   linkedinUrl: string;
@@ -169,7 +168,7 @@ export default function Header(props: Props) {
 
   return (
     <section class="lg:container rounded-full bg-white/5 backdrop-blur-xl fixed top-6 z-50 w-[calc(100vw-64px)] lg:w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
-      <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
+      <nav class="flex flex-row items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <ul class="h-full flex items-center">
           <li class="h-full">
             <a
@@ -193,123 +192,6 @@ export default function Header(props: Props) {
                 />
               </svg>
             </a>
-          </li>
-          <li class="group cursor-pointer relative min-w-[150px]">
-            {showSwitcher.value && (
-              <>
-                <div
-                  class={`select-none flex gap-2 items-center ${
-                    openSwitcher.value ? "md:border-[#06E474] md:border" : ""
-                  }  border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300`}
-                >
-                  <div
-                    onClick={handleMenu}
-                    class="z-10 font-normal text-[16px] md:px-3 md:py-1 text-[#fff] flex items-center justify-center gap-[5px]"
-                  >
-                    {props.pageInitial}
-                    <svg
-                      width="9"
-                      height="5"
-                      viewBox="0 0 9 5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 1.5L3.84921 3.94218C4.2237 4.26317 4.7763 4.26317 5.15079 3.94218L8 1.5"
-                        class="group-hover:border-[#55D695]"
-                        stroke="#fff"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    onClick={handleMenu}
-                    class={`${
-                      openSwitcher.value
-                        ? "block cursor-default w-[110vw] h-[110vh] absolute left-[-100px] top-[-20px]"
-                        : "hidden"
-                    }`}
-                  ></div>
-                  <div
-                    class={`${
-                      openSwitcher.value ? "block" : "hidden"
-                    } absolute top-[35px] left-0 mt-5 rounded border border-[#ffffff10]`}
-                  >
-                    <div class="flex flex-col w-[212px] bg-[#0A2121;] p-2 rounded">
-                      <div class="flex flex-row items-center justify-between">
-                        <a
-                          href="#"
-                          onClick={(e) => {
-                            e.preventDefault();
-                            window.history.pushState(
-                              {},
-                              "",
-                              urlMarketers.value
-                            );
-                            location.reload();
-                          }}
-                          class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
-                        >
-                          <p class="font-sans not-italic font-normal text-[15px] text-[#2FD180] flex-grow">
-                            {props?.mkt?.label}
-                          </p>
-                          <svg
-                            width="15"
-                            height="10"
-                            viewBox="0 0 15 10"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class={props?.mkt?.selected ? "" : "hidden"}
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
-                              fill="#2FD180"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="flex flex-row items-center justify-between">
-                        <a
-                          href="#"
-                          onClick={(e) => {
-                            e.preventDefault();
-                            window.history.pushState(
-                              {},
-                              "",
-                              urlDevelopers.value
-                            );
-                            location.reload();
-                          }}
-                          class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-mytheme-10 rounded"
-                        >
-                          <p class="font-sans not-italic font-normal text-[15px] text-[#06E474] flex-grow">
-                            {props?.dev?.label}
-                          </p>
-                          <svg
-                            width="15"
-                            height="10"
-                            viewBox="0 0 15 10"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            class={props?.dev?.selected ? "" : "hidden"}
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M14.2558 0.244078C14.5813 0.569515 14.5813 1.09715 14.2558 1.42259L5.92251 9.75592C5.59707 10.0814 5.06943 10.0814 4.744 9.75592L0.57733 5.58926C0.251893 5.26382 0.251893 4.73618 0.57733 4.41074C0.902767 4.08531 1.4304 4.08531 1.75584 4.41074L5.33325 7.98816L13.0773 0.244078C13.4028 -0.0813592 13.9304 -0.0813592 14.2558 0.244078Z"
-                              fill="#2FD180"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </>
-            )}
           </li>
         </ul>
         <ul class="hidden lg:flex lg:flex-row h-full group">
@@ -374,7 +256,7 @@ export default function Header(props: Props) {
           <div
             class={
               open
-                ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
+                ? "flex flex-col w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
                 : "hidden"
             }
           >
@@ -422,7 +304,7 @@ export default function Header(props: Props) {
                 <a
                   href={props.linkedinUrl}
                   target="_blank"
-                  class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
+                  class="block px-3 font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
                 >
                   <svg
                     width="18"
@@ -487,11 +369,19 @@ export default function Header(props: Props) {
             </ul>
           </div>
         </ul>
-        <ul class="hidden lg:flex lg:flex-row lg:gap-4 px-3">
+        <ul class="ml-auto hidden lg:flex lg:flex-row lg:gap-4 px-3">
+          <li>
+            <a
+              href={props.demo?.url}
+              class="block md:hover:border-[#02F67C] md:hover:border md:hover:text-[#fff] border-[transparent] border font-normal text-[16px] text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
+            >
+              {props.demo?.label}
+            </a>
+          </li>
           <li>
             <a
               href={props.login.url}
-              class="block md:hover:border-[#02F67C] md:hover:border md:hover:text-[#fff] border-[transparent] border font-normal text-[16px] text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
+              class="block text-white bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-normal text-[16px] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
             >
               {props.login.label}
             </a>
@@ -499,7 +389,7 @@ export default function Header(props: Props) {
           <li>
             <a
               href={props.sign.url}
-              class="block md:hover:bg-[#0A2121] md:hover:border md:hover:text-[#fff] border-[#02F67C] border bg-[#02F67C] font-normal text-[16px] text-[#0A2121] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
+              class="block hover:bg-transparent md:hover:border md:hover:text-[#fff] border-[#02F67C] border bg-[#02F67C] font-normal text-[16px] text-[#0A2121] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
             >
               {props.sign.label}
             </a>

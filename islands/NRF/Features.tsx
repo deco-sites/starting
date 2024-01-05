@@ -56,7 +56,7 @@ export default function Features({ title, cards }: Props) {
   }, []);
 
   return (
-    <section class="relative bg-black text-white py-20">
+    <section class="relative bg-black text-white py-20 max-w-screen overflow-hidden">
       <div class="mx-6 lg:container lg:mx-auto flex justify-center items-center flex-col gap-20">
         <h2 class="font-medium text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl">
           {title}

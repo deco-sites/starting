@@ -19,6 +19,8 @@ export default function CallToAction({ text, cta }: Props) {
         <div class="flex flex-col lg:flex-row gap-4">
           {cta?.map((item) => (
             <a
+              href={item?.href}
+              target={item?.href?.includes("http") ? "_blank" : "_self"}
               class={`border-none rounded-full text-lg py-4 px-8 transition-colors duration-200 cursor-pointer ${
                 item?.variant === "Reverse"
                   ? "border bg-[#113032] text-[#FFF]"
