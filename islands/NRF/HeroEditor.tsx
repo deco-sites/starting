@@ -5,29 +5,34 @@ import { HERO_ANIMATION_SEQUENCE } from "deco-sites/starting/animations/timeline
 
 export default function HeroEditorIsland() {
   useEffect(() => {
-    // @ts-ignore
     scroll(
       ({ y }: { y: { progress: number } }) => {
         const rotation = Math.max(y.progress * 0.05 * 360);
-        // @ts-ignore
-        animate(".hero-inner", {
-          rotateX: -rotation,
-          duration: 0,
-          allowWebkitAcceleration: true,
-          easing: "linear",
-        });
+        animate(
+          ".hero-inner",
+          { rotateX: -rotation },
+          {
+            duration: 0,
+            allowWebkitAcceleration: true,
+            easing: "linear",
+          }
+        );
       },
       {
-        target: document.querySelector(".hero-container"),
+        target: document.querySelector(".hero-container")!,
         offset: ["120% 1", "150% 1"],
       }
     );
 
-    inView("#hero-editor", () => {
-      timeline(HERO_ANIMATION_SEQUENCE);
-    }, {
-      margin: "0px 0px -500px 0px",
-    });
+    inView(
+      "#hero-editor",
+      () => {
+        timeline(HERO_ANIMATION_SEQUENCE);
+      },
+      {
+        margin: "0px 0px -500px 0px",
+      }
+    );
   }, []);
 
   return (

@@ -130,7 +130,7 @@ export default function Editor({ features }: Props) {
   }, []);
 
   return (
-    <div class="editor bg-black text-white py-32">
+    <div class="editor bg-black text-white py-32 z-0">
       <div class="flex flex-col items-center">
         <div class="relative w-full right-container ml-auto flex gap-20">
           <div class="hidden sticky h-screen top-0 lg:flex items-center justify-center">
@@ -149,10 +149,10 @@ export default function Editor({ features }: Props) {
                 <div class="feature-text flex-1 flex gap-20 min-h-screen items-center">
                   <div
                     id={`feature-text-${idx}`}
-                    class="opacity-0 max-w-[344px] flex flex-col h-screen items-center justify-center fixed top-0 gap-6"
+                    class="opacity-0 max-w-[344px] flex flex-col h-screen items-center justify-center fixed top-0 gap-6 pointer-events-none"
                   >
                     <h2 class="text-5xl font-semibold">{title}</h2>
-                    <p>{subtitle}</p>
+                    <p class="text-zinc-400">{subtitle}</p>
                   </div>
                 </div>
               ))}
@@ -162,7 +162,7 @@ export default function Editor({ features }: Props) {
               {svgs.map((Component, idx) => (
                 <div
                   id={`feature-image-${idx}`}
-                  class="opacity-0 feature-image fixed h-screen left-[calc(50%+3.75rem)] top-0  flex items-center justify-center"
+                  class="opacity-0 feature-image fixed h-screen left-[calc(50%+1.5rem)] top-0  flex items-center justify-center pointer-events-none"
                 >
                   <Component class="editor-feature" width="1090" height="745" />
                 </div>

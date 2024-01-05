@@ -10,7 +10,7 @@
     scroll-behavior: smooth;
   }
 
-  details>summary {
+  details > summary {
     list-style: none;
   }
 
@@ -27,7 +27,7 @@
   }
 
   details[open] {
-    >.faq .chevron-down {
+    > .faq .chevron-down {
       transform: rotate(180deg);
     }
   }
@@ -43,7 +43,7 @@
     /* Firefox */
   }
 
-  input[type=range] {
+  input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
@@ -51,30 +51,36 @@
     width: 100%;
   }
 
-  input[type=range]:focus {
+  input[type="range"]:focus {
     outline: none;
   }
 
-  input[type=range]::-webkit-slider-runnable-track {
-    background-color: #06E474;
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #06e474;
     border-radius: 0.5rem;
     height: 0.7rem;
   }
 
-  input[type=range]::-webkit-slider-thumb {
+  input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     /* Override default look */
     appearance: none;
     margin-top: -3px;
     /* Centers thumb on the track */
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(255, 255, 255, 1) 40%,
+      rgba(255, 255, 255, 1) 100%
+    );
     border-radius: 1rem;
     border: 1px solid black;
     height: 1.2rem;
     width: 1.2rem;
   }
 
-  input[type=range]:focus::-webkit-slider-thumb {
+  input[type="range"]:focus::-webkit-slider-thumb {
     border: 2px solid black;
   }
 
@@ -102,7 +108,6 @@
 }
 
 @layer components {
-
   .features {
     @apply flex items-center justify-center gap-6 flex-wrap;
     @apply relative max-w-[1280px] mx-auto;
@@ -110,7 +115,7 @@
 
   .feature-card {
     @apply w-[380px] max-w-[380px] h-[350px] bg-[#060A0A] rounded-3xl;
-    @apply flex flex-col items-center justify-center gap-12;
+    @apply flex flex-col items-center justify-start gap-12;
   }
 
   .cursor {
@@ -119,7 +124,7 @@
     offset-rotate: 0deg;
     offset-anchor: center;
   }
- 
+
   #cursor-1 {
     offset-path: url(#cursor-1-line-1);
   }
@@ -165,18 +170,61 @@
     left: 591px;
     top: 140px;
     font-size: 22px;
-    color: #EBFFFF;
+    color: #ebffff;
     font-weight: 600;
     border-right: 0.15em solid white;
   }
 
-  .product-frame, .product-name-frame{
+  .product-frame,
+  .product-name-frame {
     opacity: 0;
   }
 
   .editor-feature {
+    pointer-events: none;
     width: auto;
-    max-height: 60vh;
+    max-height: 72vh;
+  }
+
+  .ellipse-1 {
+    background: #02F67C;
+    border-radius: 100%;
+    filter: blur(75px);
+    height: 566px;
+    width: 566px;
+    left: 100%;
+    opacity: 0.15;
+    position: absolute;
+    top: -250px;
+    transform: translateX(-50%);
+    z-index: 30;
+  }
+
+  .ellipse-2 {
+    background: #02F67C;
+    border-radius: 100%;
+    filter: blur(75px);
+    height: 566px;
+    width: 566px;
+    opacity: 0.15;
+    position: absolute;
+    top: 60%;
+    transform: translateX(-50%);
+    z-index: 30;
+  }
+
+  .ellipse-3 {
+    background: #02F67C;
+    border-radius: 100%;
+    filter: blur(75px);
+    height: 566px;
+    width: 566px;
+    left: 100%;
+    opacity: 0.15;
+    position: absolute;
+    top: 0%;
+    transform: translateX(-50%);
+    z-index: 30;
   }
 }
 
@@ -188,21 +236,21 @@
     would otherwise ignore the expansion animation. */
     animation-duration: 0.2s;
   }
-  
+
   details > .animation {
     animation-name: grid-expand;
     animation-timing-function: ease-out;
   }
-  
+
   details > .collapsing {
     animation-direction: reverse;
     animation-timing-function: ease-in;
   }
-  
+
   details > div > div {
     min-height: 0;
   }
-  
+
   @keyframes grid-expand {
     0% {
       grid-template-rows: 0fr;
@@ -213,57 +261,57 @@
   }
 }
 
-.container, .right-container {
-  width: 100%
+.container,
+.right-container {
+  width: 100%;
 }
 
 @media (min-width: 480px) {
   .container {
-    max-width: 480px
+    max-width: 480px;
   }
 }
 
 @media (min-width: 640px) {
   .container {
-    max-width: 640px
+    max-width: 640px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 768px
+    max-width: 768px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1024px
+    max-width: 1024px;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1280px
+    max-width: 1280px;
   }
 
   .right-container {
-    max-width: calc(1280px+((100vw-1280px)/2))
+    max-width: calc(1280px+ ((100vw-1280px) / 2));
   }
 }
 
 @media (min-width: 1536px) {
   .container {
-    max-width: 1536px
+    max-width: 1536px;
   }
 
   .right-container {
-    max-width: calc(1536px+((100vw-1536px)/2))
+    max-width: calc(1536px+ ((100vw-1536px) / 2));
   }
-
 }
 
-.prose :where(img):not(:where([class~=not-prose] *)) {
+.prose :where(img):not(:where([class~="not-prose"] *)) {
   border-radius: 0.5rem;
-  transition: transform .2s;
+  transition: transform 0.2s;
   cursor: pointer;
 }
