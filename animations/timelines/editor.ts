@@ -360,7 +360,7 @@ const FULL_CODE_SEQUENCE: AnimationTimeline = [
     "#cursor-full-code",
     {
       x: "700px",
-      y: "700px",
+      y: "680px",
     },
     {
       at: 1.08,

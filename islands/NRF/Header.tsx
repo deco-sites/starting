@@ -2,7 +2,7 @@ import { IS_BROWSER } from "https://deno.land/x/fresh@1.1.4/src/runtime/utils.ts
 import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
 import { useId } from "deco-sites/starting/sdk/useId.ts";
-import { Dropdown } from "deco-sites/starting/components/ui/Dropdown.tsx";
+import { Dropdown } from "deco-sites/starting/components/nrf/Dropdown.tsx";
 
 export interface Alert {
   label: string;
@@ -101,7 +101,7 @@ function MenuLink({ href, label, targetBlank, nested, ...props }: MenuLink) {
       <a
         target={targetBlank ? "_blank" : "_self"}
         href={href}
-        class="flex items-center h-full px-[24px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-center after:absolute after:w-full after:h-[4px] after:bg-transparent after:hover:bg-linear-transp-green-transp after:bottom-[-4px] after:z-20 after:bg-position-100 after:transition-colors after:ease-in after:duration-[0]"
+        class="flex items-center h-full px-[24px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-center"
         style="background-size: 200%;"
       >
         {label}
@@ -199,7 +199,7 @@ export default function Header(props: Props) {
             return <MenuLink key={index} {...link} />;
           })}
         </ul>
-        <ul class="lg:hidden px-3">
+        <ul class="ml-auto lg:hidden pr-8">
           <li class="grid items-center">
             <button class="focus:outline-none" onClick={() => setOpen(!open)}>
               <svg
@@ -256,7 +256,7 @@ export default function Header(props: Props) {
           <div
             class={
               open
-                ? "flex flex-col w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
+                ? "flex flex-col w-[calc(100vw-64px)] h-[calc(100vh-140px)] gap-[40px] fixed bg-[#1E1E1E] left-0 top-[80px] pt-[24px] z-50 px-3 lg:hidden rounded-[24px]"
                 : "hidden"
             }
           >
@@ -265,37 +265,29 @@ export default function Header(props: Props) {
                 return <MobileMenuLink key={link.label} {...link} />;
               })}
             </ul>
-            <ul class="flex flex-col">
+            <ul class="flex flex-col gap-4">
               <li class="h-[50px] grid items-center">
                 <a
-                  href={urlPortuguese.value}
+                  href={props.demo?.url}
                   class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
                 >
-                  {props.pt.label}
+                  {props.demo?.label}
                 </a>
               </li>
-              <li class="h-[50px] grid items-center">
-                <a
-                  href={urlEnglish.value}
-                  class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
-                >
-                  {props.eng.label}
-                </a>
-              </li>
-              <li class="h-[50px] grid items-center hidden">
-                <a
-                  href={props.sign.url}
-                  class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
-                >
-                  {props.sign.label}
-                </a>
-              </li>
-              <li class="h-[50px] grid items-center">
+              <li class="h-[50px] grid items-center bg-[#113032] text-white rounded-full">
                 <a
                   href={props.login.url}
-                  class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
+                  class="block px-6 font-normal text-[16px] leading-[19.36px]"
                 >
                   {props.login.label}
+                </a>
+              </li>
+              <li class="h-[50px] grid items-center bg-[#02F67C] text-[#0A2121] rounded-full">
+                <a
+                  href={props.sign.url}
+                  class="block px-6 font-normal text-[16px] leading-[19.36px]"
+                >
+                  {props.sign.label}
                 </a>
               </li>
             </ul>

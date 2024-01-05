@@ -29,7 +29,7 @@ export default function Hero({ title, cta, alert }: Props) {
           )
         }
         <div
-          class="mt-48 inline-block text-[48px] lg:text-[104px] text-left leading-[100%] font-medium text-white"
+          class="mt-48 inline-block text-[48px] lg:text-[104px] text-left leading-[100%] font-medium text-white max-w-lg lg:max-w-none"
           dangerouslySetInnerHTML={{
             __html: title,
           }}
@@ -52,8 +52,8 @@ export default function Hero({ title, cta, alert }: Props) {
       <div class="mx-auto flex flex-col items-center">
         <HeroEditorTabbed />
       </div>
-      <div class="ellipse-1" />
-      <div class="ellipse-2" />
+      <div class="ellipse-1 hidden lg:block" />
+      <div class="ellipse-2 hidden lg:block" />
     </div>
   );
 }

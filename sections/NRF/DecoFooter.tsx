@@ -68,7 +68,7 @@ export default function Footer({
       {rounded && (
         <>
           <div class="w-full h-28 absolute -top-28 bg-[#02F67C] z-10"></div>
-          <div class="w-full h-28 absolute -top-28 bg-black rounded-b-[100px] z-10"></div>
+          <div class="w-full h-28 absolute -top-28 bg-black rounded-b-[64px] lg:rounded-b-[100px] z-10"></div>
         </>
       )}
       <div class="max-w-screen-2xl m-auto py-8">
