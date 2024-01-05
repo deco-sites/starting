@@ -27,7 +27,7 @@ export interface Props {
   pageInitial: string;
   mkt?: { label: string; url: string; selected?: boolean };
   dev?: { label: string; url: string; selected?: boolean };
-  demo: { label: string; url: string };
+  demo?: { label: string; url: string };
   login: { label: string; url: string };
   sign: { label: string; url: string };
   linkedinUrl: string;
@@ -49,7 +49,7 @@ function MobileMenuLink({
         <a
           href={href}
           target={targetBlank ? "_blank" : "_self"}
-          class="block px-[24px]  font-normal text-[16px] leading-[19.36px] text-white-79"
+          class="block px-[24px]  font-normal text-[16px] leading-[19.36px] text-white"
         >
           {label}
         </a>
@@ -67,7 +67,7 @@ function MobileMenuLink({
       <a
         href={href}
         target={targetBlank ? "_blank" : "_self"}
-        class="block px-[24px]  font-normal text-[16px] leading-[19.36px] text-white-79"
+        class="block px-[24px]  font-normal text-[16px] leading-[19.36px] text-white"
       >
         {label}
       </a>
@@ -168,11 +168,11 @@ export default function Header(props: Props) {
 
   return (
     <section class="lg:container rounded-full bg-white/5 backdrop-blur-xl fixed top-6 z-50 w-[calc(100vw-64px)] lg:w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
-      <nav class="flex flex-row items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
+      <nav class="flex flex-row gap-16 items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <ul class="h-full flex items-center">
           <li class="h-full">
             <a
-              class="flex items-center h-full px-3 pb-[6px]"
+              class="flex items-center h-full pl-8 pb-[6px]"
               href={currentLanguageLink}
             >
               <svg
@@ -369,7 +369,7 @@ export default function Header(props: Props) {
             </ul>
           </div>
         </ul>
-        <ul class="ml-auto hidden lg:flex lg:flex-row lg:gap-4 px-3">
+        <ul class="ml-auto hidden lg:flex lg:flex-row lg:gap-4 pr-8">
           <li>
             <a
               href={props.demo?.url}
