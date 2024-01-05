@@ -59,8 +59,8 @@ export default function Features({ title, cards }: Props) {
 
   return (
     <section class="bg-black text-white py-20">
-      <div class="lg:container mx-auto flex justify-center items-center flex-col gap-20">
-        <h2 class="font-medium text-[72px] leading-[100%] text-center max-w-4xl">
+      <div class="mx-6 lg:container lg:mx-auto flex justify-center items-center flex-col gap-20">
+        <h2 class="font-medium text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl">
           {title}
         </h2>
         <div class="features">

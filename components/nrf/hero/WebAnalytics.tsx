@@ -1,8 +1,6 @@
 export const WebAnalytics = () => {
   return (
      <svg
-      width="1184"
-      height="779"
       viewBox="0 0 1184 779"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

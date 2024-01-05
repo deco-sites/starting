@@ -33,8 +33,8 @@ function TextLines({ lines }: Props) {
     <div id="section" class="bg-black h-[2000px] relative">
       <div
         id="inner"
-        class="sticky h-screen top-0 flex items-center justify-center
-      lg:max-w-6xl mx-auto text-white text-[64px] font-semibold leading-[100%]"
+        class="sticky h-screen top-0 flex items-center justify-center mx-[24px] lg:mx-auto
+      lg:max-w-6xl text-white text-[32px] lg:text-[64px] font-semibold leading-[100%]"
       >
         <div>
           {lines.map((line) => (

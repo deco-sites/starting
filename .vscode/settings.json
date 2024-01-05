@@ -14,5 +14,8 @@
   },
   "[xml]": {
     "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
   }
 }

@@ -1,141 +1,14 @@
-import { AnimationTimeline } from "deco-sites/starting/animations/utils.ts";
+import { AnimatedSvgProps } from "deco-sites/starting/animations/utils.ts";
 
-export const COMPONENT_LIBRARY_SEQUENCE: AnimationTimeline = [
-  [
-    "#library",
-    {
-      opacity: [0,1],
-      scale: [0.3, 1],
-    },
-    {
-      at: "1.05",
-      duration: 0.5,
-      easing: "ease-out",
-    },
-  ],
-  [
-    "#library-product-image",
-    {
-        opacity: [0, 0.3],
-        scale: 0.5,
-        x: [370, 120],
-        y: [430, 100],
-        transformOrigin: "0 0"
-    }, {
-        at: "2.0",
-        duration: 1
-    }
-  ],
-  [
-    "#library-product-image",
-    {
-        transformOrigin: "-60px -50px",
-        opacity: [0.4, 0],
-        scale: [0.5, 0.6],
-    }, {
-        at: "3.0",
-        duration: 0.2
-    }
-  ],
-  [
-    "#library-product-image",
-    {
-        opacity: [0, 0, 1],
-        scale: 1,
-        x: 0,
-        y: 0, 
-        transformOrigin: "201px 188px"
-    }, {
-        at: "3.2",
-        duration: 0.5,
-    }
-  ],
-  [
-    "#library-product-description",
-    {
-        opacity: [0, 0.3],
-        scale: 0.5,
-        x: [0, 320],
-        y: [430, 100],
-        transformOrigin: "0 0"
-    }, {
-        at: "3.0",
-        duration: 1
-    }
-  ],
-  [
-    "#library-product-description",
-    {
-        transformOrigin: "-160px -60px",
-        opacity: [0.4, 0],
-        scale: [0.5, 0.6],
-    }, {
-        at: "4.0",
-        duration: 0.2
-    }
-  ],
-  [
-    "#library-product-description",
-    {
-        opacity: [0, 0, 1],
-        scale: 1,
-        x: 0,
-        y: 0, 
-        transformOrigin: "182px 110px"
-    }, {
-        at: "4.2",
-        duration: 0.5,
-    }
-  ],
-  [
-    "#library-product-form",
-    {
-        opacity: [0, 0.3],
-        scale: 0.5,
-        x: [240, 320],
-        y: [430, 200],
-        transformOrigin: "0 0"
-    }, {
-        at: "3.0",
-        duration: 1
-    }
-  ],
-  [
-    "#library-product-form",
-    {
-        transformOrigin: "-160px -60px",
-        opacity: [0.4, 0],
-        scale: [0.5, 0.6],
-    }, {
-        at: "4.0",
-        duration: 0.2
-    }
-  ],
-  [
-    "#library-product-form",
-    {
-        opacity: [0, 0, 1],
-        scale: 1,
-        x: 0,
-        y: 0, 
-        transformOrigin: "182px 110px"
-    }, {
-        at: "4.2",
-        duration: 0.5,
-    }
-  ],
-];
-
-export const ComponentLibrary = () => {
+export const ComponentLibrary = (props: AnimatedSvgProps) => {
   return (
     <svg
       class="editor-feature"
-      width="1090"
-      height="745"
       viewBox="0 0 1090 745"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      {...props}
     >
       <g id="ComponentLibrary" clip-path="url(#clip0_35_10720)">
         <g id="01 Component Library">
@@ -388,7 +261,8 @@ export const ComponentLibrary = () => {
                       <g>
                         <g id="Column">
                           <rect
-                            id="library-product-image"x="85"
+                            id="library-product-image"
+                            x="85"
                             y="79.1107"
                             width="404"
                             height="376"

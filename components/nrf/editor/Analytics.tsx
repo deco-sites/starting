@@ -1,118 +1,14 @@
-import { AnimationTimeline } from "deco-sites/starting/animations/utils.ts";
+import { AnimatedSvgProps } from "deco-sites/starting/animations/utils.ts";
 
-export const ANALYTICS_SEQUENCE: AnimationTimeline = [
-  [
-    "#cursor-analytics",
-    {
-      opacity: [0, 0, 1],
-      x: ["-40px", "120px"],
-      y: ["200px", "80px"],
-    },
-    {
-      at: 0.08,
-      duration: 1,
-      easing: "ease",
-    },
-  ],
-  [
-    "#cursor-analytics",
-    {
-      scale: ["1.0", "1.1", "1.0"],
-    },
-    {
-      at: 1.08,
-      duration: 0.2,
-      easing: "ease",
-    },
-  ],
-  [
-    "#analytics-plausible",
-    {
-      opacity: [0, 1],
-      y: ["50px", "0"],
-    },
-    {
-      duration: 0.5,
-    },
-  ],
-  [
-    "#cursor-analytics",
-    {
-      x: "720px",
-      y: "80px",
-    },
-    {
-      at: 1.28,
-      duration: 1,
-      easing: "ease",
-    },
-  ],
-  [
-    "#cursor-analytics",
-    {
-      scale: ["1.0", "1.1", "1.0"],
-    },
-    {
-      at: 2.28,
-      duration: 0.2,
-      easing: "ease",
-    },
-  ],
-  [
-    "#analytics-hyperdx",
-    {
-      opacity: [0, 1],
-      y: ["50px", "0"],
-    },
-    {
-      duration: 0.5,
-    },
-  ],
-  [
-    "#cursor-analytics",
-    {
-      x: "750px",
-      y: "430px",
-    },
-    {
-      at: 2.48,
-      duration: 1,
-      easing: "ease",
-    },
-  ],
-  [
-    "#cursor-analytics",
-    {
-      scale: ["1.0", "1.1", "1.0"],
-    },
-    {
-      at: 3.48,
-      duration: 0.2,
-      easing: "ease",
-    },
-  ],
-  [
-    "#analytics-cwv",
-    {
-      opacity: [0, 1],
-      y: ["50px", "0"],
-    },
-    {
-      duration: 0.5,
-    },
-  ],
-
-];
-export const Analytics = () => {
+export const Analytics = (props: AnimatedSvgProps) => {
   return (
     <svg
       class="editor-feature"
-      width="1090"
-      height="745"
       viewBox="0 0 1090 745"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      {...props}
     >
       <g id="Analytics" clip-path="url(#clip0_35_6620)">
         <g id="07 Analytics">
@@ -353,7 +249,10 @@ export const Analytics = () => {
                       fill="url(#analytics-p0)"
                       fill-opacity="0.25"
                     />
-                    <g id="analytics-plausible" filter="url(#filter0_dd_35_6620)">
+                    <g
+                      id="analytics-plausible"
+                      filter="url(#filter0_dd_35_6620)"
+                    >
                       <rect
                         x="81"
                         y="63.7202"

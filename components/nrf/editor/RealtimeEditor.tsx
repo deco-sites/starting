@@ -1,80 +1,14 @@
-import { AnimationTimeline } from "deco-sites/starting/animations/utils.ts";
+import { AnimatedSvgProps } from "deco-sites/starting/animations/utils.ts";
 
-export const REALTIME_EDITOR_SEQUENCE: AnimationTimeline = [
-  [".product-name-frame", { opacity: [0, 1] }, { at: 0.2, duration: 0.8 }],
-  [
-    ".product-frame",
-    { opacity: [0, 1] },
-    {
-      at: 1.04,
-      duration: 0.8,
-    },
-  ],
-  [
-    "#product-name-border",
-    { width: ["291.5px", "20px"] },
-    {
-      at: 1.14,
-      duration: 0.2,
-      easing: "ease-out",
-    },
-  ],
-  [
-    "#product-name-frame-tr, #product-name-frame-br",
-    { transform: ["translateX(0)", "translateX(-271px)"] },
-    {
-      at: 1.14,
-      duration: 0.2,
-      easing: "ease-out",
-    },
-  ],
-  [
-    "#product-name-placeholder",
-    { opacity: 0 },
-    {
-      at: 1.14,
-      duration: 0.06,
-      easing: "ease-out",
-    },
-  ],
-  [
-    "#product-name",
-    { width: ["0%", "160px"], opacity: 1 },
-    {
-      at: 1.4,
-      duration: 1,
-      easing: "steps(12, end)",
-    },
-  ],
-  [
-    "#product-name-frame-br, #product-name-frame-tr",
-    { transform: ["translateX(-271px)", "translateX(0)"] },
-    {
-      at: 1.4,
-      duration: 1,
-      easing: "steps(12, end)",
-    },
-  ],
-  [
-    "#product-name-border",
-    { width: ["20px", "291.5px"] },
-    {
-      at: 1.4,
-      duration: 1,
-      easing: "steps(12, end)",
-    },
-  ],
-];
-export const RealtimeEditor = () => {
+export const RealtimeEditor = (props: AnimatedSvgProps) => {
   return (
     <svg
       class="editor-feature"
-      width="1090"
-      height="745"
       viewBox="0 0 1090 745"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      {...props}
     >
       <g id="RealtimeEditor" clip-path="url(#clip0_35_11509)">
         <g id="02 Realtime Editor">

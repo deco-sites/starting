@@ -166,7 +166,7 @@ export default function Header(props: Props) {
   const alerts = props.alerts;
 
   return (
-    <section class="container rounded-full bg-white/5 backdrop-blur fixed top-6 z-50 w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
+    <section class="lg:container rounded-full bg-white/5 backdrop-blur fixed top-6 z-50 w-[calc(100vw-64px)] lg:w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
       <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <ul class="h-full flex items-center">
           <li class="h-full">

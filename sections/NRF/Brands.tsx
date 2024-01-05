@@ -11,6 +11,7 @@ export interface Image {
 }
 
 export interface Props {
+  title?: string;
   images?: Image[];
 }
 
@@ -29,19 +30,24 @@ const IMAGES = [
   },
 ];
 
-export default function Brands(props: Props) {
-  const { images } = props;
+const TITLE = "Trusted by the most awesome super duper incredible brand:";
 
+export default function Brands({ title, images }: Props) {
   const list = useMemo(
     () =>
-      images && images.length > 0 ? images : Array(6)
-        .fill(null)
-        .map((_, i) => IMAGES[i % 2]),
-    [],
+      images && images.length > 0
+        ? images
+        : Array(6)
+            .fill(null)
+            .map((_, i) => IMAGES[i % 2]),
+    []
   );
 
   return (
-    <div class="bg-black py-32">
+    <div class="bg-black py-32 space-y-12">
+      <h2 class="text-white font-medium text-[24px] leading-[100%] text-center">
+        {title || TITLE}
+      </h2>
       <div class="lg:container flex flex-wrap gap-6 justify-center items-center">
         {list.map((element: Image) => (
           <div class="flex items-center justify-center" target="_blank">
@@ -58,11 +64,7 @@ export default function Brands(props: Props) {
                   src={element?.desktop ? element?.desktop : element.mobile}
                   width={200}
                 />
-                <img
-                  class=""
-                  src={element.mobile}
-                  alt={element.label}
-                />
+                <img class="" src={element.mobile} alt={element.label} />
               </Picture>
             </div>
           </div>

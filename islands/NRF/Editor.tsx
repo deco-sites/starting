@@ -1,23 +1,19 @@
 import { BlankEditor } from "deco-sites/starting/components/nrf/editor/Blank.tsx";
-import { ImageWidget } from "apps/admin/widgets.ts";
 import { useEffect } from "preact/hooks";
 import { animate, inView, stagger, timeline } from "motion";
 import { useSignal } from "@preact/signals";
 
-import { ComponentLibrary,
-COMPONENT_LIBRARY_SEQUENCE } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
-import {
-  RealtimeEditor,
-  REALTIME_EDITOR_SEQUENCE,
-} from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
-import {
-  DesignSystem,
-  DESIGN_SYSTEM_SEQUENCE,
-} from "../../components/nrf/editor/DesignSystem.tsx";
-import { FullCode } from "../../components/nrf/editor/FullCode.tsx";
-import { AppsIntegrations } from "../../components/nrf/editor/AppsIntegrations.tsx";
-import { Segmentation } from "../../components/nrf/editor/Segmentation.tsx";
-import { Analytics, ANALYTICS_SEQUENCE } from "../../components/nrf/editor/Analytics.tsx";
+import { ComponentLibrary } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
+import { RealtimeEditor } from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
+import { DesignSystem } from "../../components/nrf/editor/DesignSystem.tsx";
+import { FullCode } from "deco-sites/starting/components/nrf/editor/FullCode.tsx";
+import { AppsIntegrations } from "deco-sites/starting/components/nrf/editor/AppsIntegrations.tsx";
+import { Segmentation } from "deco-sites/starting/components/nrf/editor/Segmentation.tsx";
+import { ContentModeling } from "deco-sites/starting/components/nrf/editor/ContentModeling.tsx";
+
+import { Analytics } from "deco-sites/starting/components/nrf/editor/Analytics.tsx";
+
+import { EDITOR_TIMELINES } from "deco-sites/starting/animations/timelines/editor.ts";
 
 /**
  * @title {{{key}}}
@@ -40,18 +36,8 @@ const svgs = [
   AppsIntegrations,
   Segmentation,
   Analytics,
+  ContentModeling,
 ];
-
-const ANIMATION_TIMELINES = [
-  COMPONENT_LIBRARY_SEQUENCE,
-  REALTIME_EDITOR_SEQUENCE,
-  DESIGN_SYSTEM_SEQUENCE,
-  DESIGN_SYSTEM_SEQUENCE,
-  DESIGN_SYSTEM_SEQUENCE,
-  DESIGN_SYSTEM_SEQUENCE,
-  ANALYTICS_SEQUENCE,
-  DESIGN_SYSTEM_SEQUENCE,
-]
 
 export default function Editor({ features }: Props) {
   const currentFeature = useSignal<number | null>(null);
@@ -66,7 +52,7 @@ export default function Editor({ features }: Props) {
       lastScrollY = currentScrollY;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    self.addEventListener("scroll", handleScroll);
 
     const animateItems = (target: Element) => {
       animate(
@@ -105,13 +91,14 @@ export default function Editor({ features }: Props) {
         { duration: 0.3 }
       );
 
-      timeline(ANIMATION_TIMELINES[index]);
+      timeline(EDITOR_TIMELINES[index]);
 
       animate(
         `#feature-title-${index}`,
         { color: colorValue, transform: scaleValue },
         { duration: 0.3 }
       );
+
       animate(
         `#feature-text-${index}`,
         {
@@ -142,63 +129,11 @@ export default function Editor({ features }: Props) {
     );
   }, []);
 
-  // scroll(
-  //   ({ y }) => {
-  //     const initialWidth = 741;
-  //     const finalWidth = 671;
-  //     console.log(y.progress);
-  //     const width =
-  //       initialWidth +
-  //       ((finalWidth - initialWidth) *
-  //         Math.max(0, Math.min(100, y.progress))) /
-  //         100;
-
-  //     if (y.progress > 0 && y.progress < 1) {
-  //       animate(
-  //         "#blank-editor",
-  //         {
-  //           opacity: 1,
-  //         },
-  //         {
-  //           duration: 0.1,
-  //         }
-  //       );
-  //     } else {
-  //       animate(
-  //         "#blank-editor",
-  //         {
-  //           opacity: 0,
-  //         },
-  //         {
-  //           duration: 0.1,
-  //         }
-  //       );
-  //     }
-  //     document
-  //       .querySelector("#blank-editor")!
-  //       .setAttribute("width", width.toString());
-  //   },
-  //   {
-  //     target: document.querySelector("#blank-editor-container")!,
-  //     offset: ["0.9 1", "200% 1"],
-  //   }
-  // );
-  // }, []);
-
   return (
     <div class="editor bg-black text-white py-32">
       <div class="flex flex-col items-center">
-        <div id="blank-editor-container" class="flex flex-col">
-          <div class="space-y-10">
-            <div class="space-y-2 item">
-              <p class="text-5xl font-semibold">How it works</p>
-              <p>Short Text of how it works.</p>
-            </div>
-            <BlankEditor class="item" />
-          </div>
-        </div>
         <div class="relative w-full right-container ml-auto flex gap-20">
-          <div class="sticky h-screen top-0 flex items-center justify-center">
+          <div class="hidden sticky h-screen top-0 lg:flex items-center justify-center">
             <ul class="text-[#52525B] whitespace-nowrap space-y-2">
               <li class="text-[#02F67C]">How it Works</li>
               {features.map(({ key: section }, idx) => (
@@ -208,29 +143,31 @@ export default function Editor({ features }: Props) {
               ))}
             </ul>
           </div>
-          <div class="flex flex-col gap-32 max-w-[344px]">
-            {features.map(({ title, subtitle }, idx) => (
-              <div class="feature-text flex-1 flex gap-20 min-h-screen items-center">
-                <div
-                  id={`feature-text-${idx}`}
-                  class="opacity-0 max-w-[344px] flex flex-col h-screen items-center justify-center fixed top-0 gap-6"
-                >
-                  <h2 class="text-5xl font-semibold">{title}</h2>
-                  <p>{subtitle}</p>
+          <div class="hidden lg:block">
+            <div class="flex flex-col gap-32 max-w-[344px]">
+              {features.map(({ title, subtitle }, idx) => (
+                <div class="feature-text flex-1 flex gap-20 min-h-screen items-center">
+                  <div
+                    id={`feature-text-${idx}`}
+                    class="opacity-0 max-w-[344px] flex flex-col h-screen items-center justify-center fixed top-0 gap-6"
+                  >
+                    <h2 class="text-5xl font-semibold">{title}</h2>
+                    <p>{subtitle}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-            <div class="h-[75vh]" />
-          </div>
-          <div class="flex flex-col gap-32 ml-auto">
-            {svgs.map((Component, idx) => (
-              <div
-                id={`feature-image-${idx}`}
-                class="opacity-0 feature-image fixed h-screen left-[calc(50%+3.75rem)] top-0  flex items-center justify-center"
-              >
-                <Component />
-              </div>
-            ))}
+              ))}
+              <div class="h-[75vh]" />
+            </div>
+            <div class="flex flex-col gap-32 ml-auto">
+              {svgs.map((Component, idx) => (
+                <div
+                  id={`feature-image-${idx}`}
+                  class="opacity-0 feature-image fixed h-screen left-[calc(50%+3.75rem)] top-0  flex items-center justify-center"
+                >
+                  <Component class="editor-feature" width="1090" height="745" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
