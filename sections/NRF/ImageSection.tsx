@@ -9,9 +9,9 @@ export interface Props {
   description: string;
   image: ImageWidget;
   placement: "left" | "right";
-  cta: {
-    href: string;
-    text: string;
+  cta?: {
+    href?: string;
+    text?: string;
   };
 }
 
@@ -30,7 +30,7 @@ export default function ImageSection({
   return (
     <div class="bg-black w-full">
       <div
-        class={`flex xl:container xl:mx-auto py-12 lg:py-28 mx-5 md:mx-10 ${PLACEMENT[placement]} gap-12 md:gap-20 text-left items-center`}
+        class={`flex lg:container lg:max-w-6xl lg:mx-auto py-12 lg:py-28 mx-5 md:mx-10 ${PLACEMENT[placement]} gap-12 md:gap-20 text-left items-center`}
       >
         <img
           class="w-full lg:w-1/2 object-fit"
@@ -47,7 +47,7 @@ export default function ImageSection({
           <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
             {description}
           </p>
-          {cta && (
+          {cta?.href && cta?.text && (
             <a
               class="pt-4 flex gap-2 border-none text-[#02F67C] transition-colors duration-200 cursor-pointer"
               href={cta.href}

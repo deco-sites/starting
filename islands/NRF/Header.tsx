@@ -55,7 +55,9 @@ function MobileMenuLink({
           {label}
         </a>
         <ul class="pl-[24px]">
-          {nested.map((item) => <MobileMenuLink {...item} />)}
+          {nested.map((item) => (
+            <MobileMenuLink {...item} />
+          ))}
         </ul>
       </li>
     );
@@ -166,7 +168,7 @@ export default function Header(props: Props) {
   const alerts = props.alerts;
 
   return (
-    <section class="lg:container rounded-full bg-white/5 backdrop-blur fixed top-6 z-50 w-[calc(100vw-64px)] lg:w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
+    <section class="lg:container rounded-full bg-white/5 backdrop-blur-xl fixed top-6 z-50 w-[calc(100vw-64px)] lg:w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
       <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <ul class="h-full flex items-center">
           <li class="h-full">
@@ -228,8 +230,7 @@ export default function Header(props: Props) {
                         ? "block cursor-default w-[110vw] h-[110vh] absolute left-[-100px] top-[-20px]"
                         : "hidden"
                     }`}
-                  >
-                  </div>
+                  ></div>
                   <div
                     class={`${
                       openSwitcher.value ? "block" : "hidden"
@@ -244,7 +245,7 @@ export default function Header(props: Props) {
                             window.history.pushState(
                               {},
                               "",
-                              urlMarketers.value,
+                              urlMarketers.value
                             );
                             location.reload();
                           }}
@@ -278,7 +279,7 @@ export default function Header(props: Props) {
                             window.history.pushState(
                               {},
                               "",
-                              urlDevelopers.value,
+                              urlDevelopers.value
                             );
                             location.reload();
                           }}
@@ -371,9 +372,11 @@ export default function Header(props: Props) {
             </button>
           </li>
           <div
-            class={open
-              ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
-              : "hidden"}
+            class={
+              open
+                ? "flex flex-col justify-between w-screen h-screen gap-[40px] fixed bg-[#0A2121] left-0 top-[107px] pt-[24px] pb-[100px] z-50 px-3 md:hidden"
+                : "hidden"
+            }
           >
             <ul class="flex flex-col divide-y divide-semi-white-13">
               {props.menuLinks.map((link) => {
