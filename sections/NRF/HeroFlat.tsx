@@ -34,7 +34,9 @@ export default function HeroFlats({
       <div class="mx-auto flex flex-col items-center gap-8">
         <div
           class={`flex w-full h-screen xl:container xl:mx-auto py-12 lg:py-28 mx-5 md:mx-10 ${
-            image ? PLACEMENT[placement] : "flex-col items-center justify-center text-center"
+            image
+              ? PLACEMENT[placement]
+              : "flex-col items-center justify-center text-center"
           } gap-12 md:gap-20  items-center`}
         >
           {image && (
@@ -66,6 +68,8 @@ export default function HeroFlats({
             <div class="flex flex-col lg:flex-row gap-4">
               {cta?.map((item) => (
                 <a
+                  href={item?.href}
+                  target={item?.href?.includes("http") ? "_blank" : "_self"}
                   class={`border-none rounded-full text-lg py-4 px-8 transition-colors duration-200 cursor-pointer ${
                     item?.variant === "Reverse"
                       ? "border bg-[#113032] text-[#FFF]"
