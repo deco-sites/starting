@@ -428,6 +428,20 @@ export const RealtimeEditor = (props: AnimatedSvgProps) => {
                                 </tspan>
                               </text>
                             </g>
+                            <text
+                                id="product-name-placeholder"
+                                fill="white"
+                                xml:space="preserve"
+                                style="white-space: pre"
+                                font-family="Albert Sans"
+                                font-size="48"
+                                font-weight="bold"
+                                letter-spacing="-0.02em"
+                              >
+                                <tspan x="536" y="141.8">
+                                  Lorem Ipsum
+                                </tspan>
+                              </text>
                           </g>
                           <g id="product-name">
                             <g id="product-name-border">
@@ -459,7 +473,7 @@ export const RealtimeEditor = (props: AnimatedSvgProps) => {
                         <g id="Form">
                           <g id="Container">
                             <g id="Form Submit">
-                              <g id="Frame 2609177">
+                              <g id="product-form">
                                 <rect
                                   x="531.25"
                                   y="347.966"
