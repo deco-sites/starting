@@ -25,6 +25,7 @@ export interface EditorFeature {
 }
 
 export interface Props {
+  title: string;
   features: EditorFeature[];
 }
 
@@ -39,7 +40,7 @@ const AnimationComponents = {
   "content-modeling": ContentModeling,
 };
 
-export default function Editor({ features }: Props) {
+export default function Editor({ title, features }: Props) {
   const currentFeature = useSignal<number | null>(null);
 
   useEffect(() => {
@@ -175,7 +176,7 @@ export default function Editor({ features }: Props) {
           <div class="hidden sticky h-screen top-0 lg:flex items-center justify-center">
             <ul class="flex flex-col gap-2 text-[#52525B] whitespace-nowrap">
               <li class="text-[#02F67C] text-[24px] font-medium mb-2">
-                How it Works
+                {title}
               </li>
               {features.map(({ key: section, id }, idx) => (
                 <a class="flex items-center gap-2" href={`#${id}`}>
