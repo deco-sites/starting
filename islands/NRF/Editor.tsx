@@ -21,23 +21,23 @@ export interface EditorFeature {
   title: string;
   subtitle: string;
   key: string;
-  id?: string;
+  id: string;
 }
 
 export interface Props {
   features: EditorFeature[];
 }
 
-const svgs = [
-  ComponentLibrary,
-  RealtimeEditor,
-  DesignSystem,
-  FullCode,
-  AppsIntegrations,
-  Segmentation,
-  Analytics,
-  ContentModeling,
-];
+const AnimationComponents = {
+  "component-library": ComponentLibrary,
+  "no-code-editing": RealtimeEditor,
+  "design-system": DesignSystem,
+  "full-code-editing": FullCode,
+  "integrate-extend": AppsIntegrations,
+  "multivariate-testing": Segmentation,
+  monitoring: Analytics,
+  "content-modeling": ContentModeling,
+};
 
 export default function Editor({ features }: Props) {
   const currentFeature = useSignal<number | null>(null);
@@ -149,12 +149,7 @@ export default function Editor({ features }: Props) {
           { duration: 0.3 }
         );
 
-        animate(
-          `#feature-title-${index}`,
-          { x: 0 },
-          { duration: 0.3 }
-        );
-
+        animate(`#feature-title-${index}`, { x: 0 }, { duration: 0.3 });
 
         animateFeature(target, index, true);
 
@@ -165,11 +160,7 @@ export default function Editor({ features }: Props) {
             { duration: 0.3 }
           );
 
-          animate(
-            `#feature-title-${index}`,
-            { x: '-24px'},
-            { duration: 0.3 }
-          );
+          animate(`#feature-title-${index}`, { x: "-24px" }, { duration: 0.3 });
           animateFeature(target, index, false);
         };
       },
@@ -189,11 +180,7 @@ export default function Editor({ features }: Props) {
               {features.map(({ key: section, id }, idx) => (
                 <a class="flex items-center gap-2" href={`#${id}`}>
                   <div id={`feature-progress-wrapper-${idx}`} class="opacity-0">
-                    <svg
-                      class="-rotate-90 h-4"
-                      viewBox="0 0 10 10"
-                      fill="none"
-                    >
+                    <svg class="-rotate-90 h-4" viewBox="0 0 10 10" fill="none">
                       <circle
                         cx="5"
                         cy="5"
@@ -212,7 +199,11 @@ export default function Editor({ features }: Props) {
                       />
                     </svg>
                   </div>
-                  <li class="text-sm -translate-x-[24px]" id={`feature-title-${idx}`} key={idx}>
+                  <li
+                    class="text-sm -translate-x-[24px]"
+                    id={`feature-title-${idx}`}
+                    key={idx}
+                  >
                     {section}
                   </li>
                 </a>
@@ -238,12 +229,16 @@ export default function Editor({ features }: Props) {
               <div class="h-[75vh]" />
             </div>
             <div class="flex flex-col gap-32 ml-auto">
-              {svgs.map((Component, idx) => (
+              {features.map(({ id }, idx) => (
                 <div
                   id={`feature-image-${idx}`}
                   class="opacity-0 feature-image fixed h-screen left-[calc(50%+1.5rem)] top-0  flex items-center justify-center pointer-events-none"
                 >
-                  <Component class="editor-feature" width="1090" height="745" />
+                  {AnimationComponents[id as keyof typeof AnimationComponents]({
+                    class: "editor-feature",
+                    width: "1090",
+                    height: "745",
+                  })}
                 </div>
               ))}
             </div>
