@@ -1,5 +1,5 @@
 import { useEffect } from "preact/hooks";
-import { animate, AnimationControls, scroll } from "motion";
+import { animate, scroll } from "motion";
 
 export interface Props {
   lines: string[];
@@ -11,25 +11,27 @@ function TextLines({ lines, animateOnScroll }: Props) {
     if (animateOnScroll) {
       const section = document.querySelector("#section")!;
       const paragraphs = document.querySelectorAll("#section p");
-      let selectedParagraphIndex: number | null = null;
+      let lastHighlighted = 0;
 
-      scroll(
-        ({ y }: { y: { progress: number } }) => {
-          const index = Math.floor(y.progress * paragraphs.length);
-          if (index !== selectedParagraphIndex && y.progress !== 0) {
-            animate(paragraphs[selectedParagraphIndex!], { color: "#131313" });
-            animate(paragraphs[index], { color: "white" });
-            selectedParagraphIndex = index;
-          } else if (y.progress === 0) {
-            animate(paragraphs[selectedParagraphIndex!], { color: "#131313" });
-            selectedParagraphIndex = null;
-          }
-        },
-        {
-          target: section,
-          offset: ["0 0", "end end"],
+      const handleScroll = ({ y }: { y: { progress: number } }) => {
+        const currHighlighted = Math.floor(
+          y.progress * (paragraphs.length + 1)
+        );
+        const direction = currHighlighted > lastHighlighted ? 1 : -1;
+        const color = direction === 1 ? "white" : "#131313";
+
+        for (
+          let i = lastHighlighted;
+          direction === 1 ? i < currHighlighted : i >= currHighlighted;
+          i += direction
+        ) {
+          animate(paragraphs[i], { color });
         }
-      );
+
+        lastHighlighted = currHighlighted;
+      };
+
+      scroll(handleScroll, { target: section, offset: ["0 0", "end end"] });
     }
   }, []);
 
