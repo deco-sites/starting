@@ -54,9 +54,7 @@ function MobileMenuLink({
           {label}
         </a>
         <ul class="pl-[24px]">
-          {nested.map((item) => (
-            <MobileMenuLink {...item} />
-          ))}
+          {nested.map((item) => <MobileMenuLink {...item} />)}
         </ul>
       </li>
     );
@@ -167,12 +165,12 @@ export default function Header(props: Props) {
   const alerts = props.alerts;
 
   return (
-    <section class="lg:container rounded-full bg-white/5 backdrop-blur-xl fixed top-6 z-50 w-[calc(100vw-64px)] lg:w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
+    <section class="lg:container rounded-full bg-white/5 backdrop-blur-xl fixed top-2 lg:top-6 z-50 w-[calc(100vw-16px)] lg:w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
       <nav class="flex flex-row gap-16 items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <ul class="h-full flex items-center">
           <li class="h-full">
             <a
-              class="flex items-center h-full pl-8 pb-[6px]"
+              class="flex items-center h-full pl-4 lg:pl-8 pb-[6px]"
               href={currentLanguageLink}
             >
               <svg
@@ -199,7 +197,7 @@ export default function Header(props: Props) {
             return <MenuLink key={index} {...link} />;
           })}
         </ul>
-        <ul class="ml-auto lg:hidden pr-8">
+        <ul class="ml-auto lg:hidden pr-4 lg:pr-8">
           <li class="grid items-center">
             <button class="focus:outline-none" onClick={() => setOpen(!open)}>
               <svg
@@ -254,11 +252,9 @@ export default function Header(props: Props) {
             </button>
           </li>
           <div
-            class={
-              open
-                ? "flex flex-col w-[calc(100vw-64px)] h-[calc(100vh-140px)] gap-[40px] fixed bg-[#1E1E1E] left-0 top-[80px] pt-[24px] z-50 px-3 lg:hidden rounded-[24px]"
-                : "hidden"
-            }
+            class={open
+              ? "flex flex-col w-[calc(100vw-64px)] h-[calc(100vh-140px)] gap-[40px] fixed bg-[#1E1E1E] left-0 top-[80px] pt-[24px] z-50 px-3 lg:hidden rounded-[24px]"
+              : "hidden"}
           >
             <ul class="flex flex-col divide-y divide-semi-white-13">
               {props.menuLinks.map((link) => {
