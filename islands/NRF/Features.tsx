@@ -14,12 +14,11 @@ export interface Card {
 }
 
 export interface Props {
-  title: string;
+  title?: string;
   cards: Card[];
 }
 
 function FeatureCard({ icon, title, text }: Card) {
-
   return (
     <div class="feature-card transform translate-y-16 group border-l border-transparent group-hover:-translate-y-3 duration-200 w-full flex flex-col gap-8 py-10 px-12 whitespace-pre-line opacity-0 z-40">
       {icon && (
@@ -28,10 +27,12 @@ function FeatureCard({ icon, title, text }: Card) {
         </div>
       )}
       <div class="space-y-4 text-center">
-        <div
-          class="text-2xl font-semibold leading-[110%]"
-          dangerouslySetInnerHTML={{ __html: title }}
-        />
+        {title && (
+          <div
+            class="text-2xl font-semibold leading-[110%]"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+        )}
         <p class="leading-[120%]" dangerouslySetInnerHTML={{ __html: text }} />
       </div>
     </div>
@@ -67,7 +68,7 @@ export default function Features({ title, cards }: Props) {
           ))}
         </div>
       </div>
-      <div class="ellipse-3 hidden lg:block" />
+      {/* <div class="ellipse-3 hidden lg:block" /> */}
     </section>
   );
 }

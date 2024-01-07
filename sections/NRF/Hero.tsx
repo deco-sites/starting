@@ -35,9 +35,9 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
             {alert.text}
           </div>
         )}
-        <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center gap-6 lg:gap-12">
           <div
-            class="mt-36 lg:mt-48 mx-6 lg:mx-0 inline-block text-[36px] lg:text-[104px] text-center leading-[120%] lg:leading-[100%] font-medium text-white max-w-lg lg:max-w-none"
+            class="mt-36 lg:mt-48 mx-6 lg:mx-0 inline-block text-[36px] lg:text-[104px] text-center leading-[110%] lg:leading-[100%] font-medium text-white max-w-lg lg:max-w-none"
             dangerouslySetInnerHTML={{
               __html: title,
             }}
@@ -46,7 +46,7 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
           {subtitle &&
             (
               <div
-                class="mx-11 inline-block lg:text-[24px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none"
+                class="mx-11 inline-block lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none"
                 dangerouslySetInnerHTML={{
                   __html: subtitle,
                 }}
@@ -58,7 +58,7 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
               <a
                 href={item?.href}
                 target={item?.href.startsWith("http") ? "_blank" : "_self"}
-                class={`w-fit border-none rounded-full py-2 font-semibold px-6 transition-colors duration-200 cursor-pointer ${
+                class={`w-fit lg:text-[24px] border-none rounded-full py-2 font-medium px-6 transition-colors duration-200 cursor-pointer ${
                   item?.variant === "Reverse"
                     ? "border bg-[#113032] text-[#FFF]"
                     : "border bg-[#02F67C] text-[#113032]"
@@ -72,8 +72,8 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
       <div class="mx-auto flex flex-col items-center">
         <HeroEditorTabbed />
       </div>
-      <div class="ellipse-1 hidden lg:block" />
-      <div class="ellipse-2 hidden lg:block" />
+      {/* <div class="ellipse-1 hidden lg:block" />
+      <div class="ellipse-2 hidden lg:block" /> */}
     </div>
   );
 }

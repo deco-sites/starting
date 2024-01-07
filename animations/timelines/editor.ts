@@ -498,7 +498,7 @@ const FULL_CODE_SEQUENCE: AnimationTimeline = [
   [
     "#full-code-description, #full-code-form",
     {
-      y: ["-102px", "0"],
+      y: ["-94px", "0"],
     },
     {
       at: 2.08,

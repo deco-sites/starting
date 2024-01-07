@@ -1,10 +1,11 @@
 import { asset, Head } from "$fresh/runtime.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
   title: string;
   description: string;
   url: string;
-  imageUrl?: string;
+  image?: ImageWidget;
   faviconUrl?: string;
   styleUrls?: string[];
   themeColor?: string;
@@ -14,7 +15,7 @@ export default function HeadComponent({
   title = "deco.cx — starter site",
   description = "Deliver complete commerce experiences — start here!",
   url = "https://start.deco.site",
-  imageUrl = "https://deco.cx/images/deco-logo-light.png",
+  image = "https://deco.cx/images/deco-logo-light.png",
   faviconUrl = "",
   styleUrls = [],
   themeColor = "#003232",
@@ -30,7 +31,7 @@ export default function HeadComponent({
       <meta property="og:url" content={url} />
       <meta
         property="og:image"
-        content={imageUrl}
+        content={image}
       />
       <link
         rel="shortcut icon"

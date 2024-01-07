@@ -226,6 +226,15 @@
     transform: translateX(-50%);
     z-index: 30;
   }
+
+  .feature-progress-bg {
+    stroke: #52525B;
+  }
+
+  .feature-progress {
+    stroke: #02F67C;
+    stroke-dasharray: 0, 1;
+  }
 }
 
 @layer utilities {

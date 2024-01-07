@@ -1,6 +1,5 @@
-import { BlankEditor } from "deco-sites/starting/components/nrf/editor/Blank.tsx";
 import { useEffect } from "preact/hooks";
-import { animate, inView, stagger, timeline } from "motion";
+import { animate, scroll, inView, stagger, timeline } from "motion";
 import { useSignal } from "@preact/signals";
 
 import { ComponentLibrary } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
@@ -22,6 +21,7 @@ export interface EditorFeature {
   title: string;
   subtitle: string;
   key: string;
+  id?: string;
 }
 
 export interface Props {
@@ -61,6 +61,30 @@ export default function Editor({ features }: Props) {
         { delay: stagger(0.1), duration: 1, easing: "ease-out" }
       );
     };
+
+    scroll(
+      ({ y }: { y: { progress: number } }) => {
+        const elements = Array.from(document.querySelectorAll(".feature-text"));
+        const index = Math.floor(y.progress * elements.length);
+        const fractionPerElement = 1 / elements.length;
+
+        const fraction =
+          (y.progress - index * fractionPerElement) / fractionPerElement;
+
+        animate(
+          `#feature-progress-${index}`,
+          {
+            strokeDasharray: `${fraction}, 1`,
+          },
+          {
+            duration: 0,
+          }
+        );
+      },
+      {
+        target: document.querySelector(`.editor`)!,
+      }
+    );
 
     const animateFeature = (
       target: Element,
@@ -119,9 +143,33 @@ export default function Editor({ features }: Props) {
         const elements = Array.from(document.querySelectorAll(".feature-text"));
         const index = elements.indexOf(target);
 
+        animate(
+          `#feature-progress-wrapper-${index}`,
+          { opacity: 1 },
+          { duration: 0.3 }
+        );
+
+        animate(
+          `#feature-title-${index}`,
+          { x: 0 },
+          { duration: 0.3 }
+        );
+
+
         animateFeature(target, index, true);
 
         return () => {
+          animate(
+            `#feature-progress-wrapper-${index}`,
+            { opacity: 0 },
+            { duration: 0.3 }
+          );
+
+          animate(
+            `#feature-title-${index}`,
+            { x: '-24px'},
+            { duration: 0.3 }
+          );
           animateFeature(target, index, false);
         };
       },
@@ -134,19 +182,50 @@ export default function Editor({ features }: Props) {
       <div class="flex flex-col items-center">
         <div class="relative w-full right-container ml-auto flex gap-20">
           <div class="hidden sticky h-screen top-0 lg:flex items-center justify-center">
-            <ul class="text-[#52525B] whitespace-nowrap space-y-2">
-              <li class="text-[#02F67C] text-[24px]">How it Works</li>
-              {features.map(({ key: section }, idx) => (
-                <li class="text-sm" id={`feature-title-${idx}`} key={idx}>
-                  {section}
-                </li>
+            <ul class="flex flex-col gap-2 text-[#52525B] whitespace-nowrap">
+              <li class="text-[#02F67C] text-[24px] font-medium mb-2">
+                How it Works
+              </li>
+              {features.map(({ key: section, id }, idx) => (
+                <a class="flex items-center gap-2" href={`#${id}`}>
+                  <div id={`feature-progress-wrapper-${idx}`} class="opacity-0">
+                    <svg
+                      class="-rotate-90 h-4"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                    >
+                      <circle
+                        cx="5"
+                        cy="5"
+                        r="4.25"
+                        stroke="#52525B"
+                        stroke-width="2"
+                      />
+                      <circle
+                        cx="5"
+                        cy="5"
+                        r="4.25"
+                        pathLength="1"
+                        stroke-width="2"
+                        class="feature-progress"
+                        id={`feature-progress-${idx}`}
+                      />
+                    </svg>
+                  </div>
+                  <li class="text-sm -translate-x-[24px]" id={`feature-title-${idx}`} key={idx}>
+                    {section}
+                  </li>
+                </a>
               ))}
             </ul>
           </div>
           <div class="hidden lg:block">
             <div class="flex flex-col gap-32 max-w-[344px]">
-              {features.map(({ title, subtitle }, idx) => (
-                <div class="feature-text flex-1 flex gap-20 min-h-screen items-center">
+              {features.map(({ title, subtitle, id }, idx) => (
+                <div
+                  id={id}
+                  class="feature-text flex-1 flex gap-20 min-h-screen items-center"
+                >
                   <div
                     id={`feature-text-${idx}`}
                     class="opacity-0 max-w-[344px] flex flex-col h-screen items-center justify-center fixed top-0 gap-6 pointer-events-none"

@@ -246,7 +246,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
                       width="1040"
                       height="643.02"
                       transform="translate(50.168 41.3138)"
-                      fill="url(#pattern0)"
+                      fill="url(#apps-p0)"
                       fill-opacity="0.25"
                     />
                     <g id="Product Header / 1 /">
@@ -312,7 +312,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
                                 width="404"
                                 height="551"
                                 rx="6.44444"
-                                fill="url(#pattern1)"
+                                fill="url(#apps-p1)"
                               />
                             </g>
                           </g>
@@ -809,7 +809,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
                             y="443.965"
                             width="39.4309"
                             height="38.3043"
-                            fill="url(#pattern2)"
+                            fill="url(#apps-p2)"
                           />
                         </g>
                         <rect
@@ -901,7 +901,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
                           y="451.288"
                           width="24.2218"
                           height="23.6585"
-                          fill="url(#pattern3)"
+                          fill="url(#apps-p3)"
                         />
                       </g>
                       <g id="Frame 2608758_2">
@@ -1005,7 +1005,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
                             y="525.141"
                             width="32.6713"
                             height="32.6713"
-                            fill="url(#pattern4)"
+                            fill="url(#apps-p4)"
                           />
                         </g>
                         <rect
@@ -1161,7 +1161,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
       </g>
       <defs>
         <pattern
-          id="pattern0"
+          id="apps-p0"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -1172,7 +1172,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
           />
         </pattern>
         <pattern
-          id="pattern1"
+          id="apps-p1"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -1234,7 +1234,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
           />
         </filter>
         <pattern
-          id="pattern2"
+          id="apps-p2"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -1245,7 +1245,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
           />
         </pattern>
         <pattern
-          id="pattern3"
+          id="apps-p3"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -1256,7 +1256,7 @@ export const AppsIntegrations = (props: AnimatedSvgProps) => {
           />
         </pattern>
         <pattern
-          id="pattern4"
+          id="apps-p4"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
