@@ -9,31 +9,44 @@ export interface Props {
    * @format html
    */
   title: string;
+  /**
+   * @format html
+   */
+  subtitle?: string; // Add subtitle property
   cta?: CTA[];
   alert?: {
     image?: string;
     text?: string;
     href?: string;
-  }
+  };
 }
 
-export default function Hero({ title, cta, alert }: Props) {
+export default function Hero({ title, subtitle, cta, alert }: Props) {
   return (
     <div id="hero" class="relative bg-black min-h-screen space-y-20">
       <div class="max-w-fit mx-auto flex flex-col items-center gap-20">
-        {
-          alert?.text && (
-            <div class="rounded-[56px] border border-white/15 bg-white/5 py-2 px-4">
-              {alert.text}
-            </div>
-          )
-        }
+        {alert?.text && (
+          <div class="rounded-[56px] border border-white/15 bg-white/5 py-2 px-4">
+            {alert.text}
+          </div>
+        )}
         <div
           class="mt-48 inline-block text-[48px] lg:text-[104px] text-left leading-[100%] font-medium text-white max-w-lg lg:max-w-none"
           dangerouslySetInnerHTML={{
             __html: title,
           }}
-        ></div>
+        >
+        </div>
+        {subtitle &&
+          (
+            <div
+              class="mt-4 inline-block text-[24px] lg:text-[48px] text-left leading-[100%] font-medium text-gray-400 max-w-lg lg:max-w-none"
+              dangerouslySetInnerHTML={{
+                __html: subtitle,
+              }}
+            >
+            </div>
+          )}
         {cta &&
           cta?.map((item) => (
             <a
