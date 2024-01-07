@@ -11,6 +11,7 @@ export interface Image {
 }
 
 export interface Props {
+  themeDark?: boolean;
   title?: string;
   images?: Image[];
 }
@@ -32,6 +33,43 @@ const IMAGES = [
 
 const TITLE = "Trusted by the most awesome super duper incredible brand:";
 
+const LogoSlider = ({ logos }: { logos: Image[] }) => {
+  const renderLogoSlide = () => (
+    <div className="flex animate-slide">
+      {logos.map((logo) => (
+        <div class="flex items-center justify-center" target="_blank">
+          <img
+            class="object-contain h-16 max-w-[200px]"
+            src={logo.mobile}
+            alt={logo.label}
+          />
+        </div>
+      ))}
+    </div>
+  );
+
+  return (
+    <div className="logos overflow-hidden py-15 relative">
+      <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-black before:z-10"></div>
+      <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-black after:z-10"></div>
+
+      <div
+        className="flex whitespace-nowrap"
+        onMouseEnter={(e) =>
+          (e.currentTarget.style.animationPlayState = "paused")
+        }
+        onMouseLeave={(e) =>
+          (e.currentTarget.style.animationPlayState = "running")
+        }
+      >
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+      </div>
+    </div>
+  );
+};
+
 export default function Brands({ title, images }: Props) {
   const list = useMemo(
     () =>
@@ -48,28 +86,7 @@ export default function Brands({ title, images }: Props) {
       <h2 class="text-white font-medium text-[24px] leading-[100%] text-center">
         {title || TITLE}
       </h2>
-      <div class="lg:container flex flex-wrap gap-6 justify-center items-center">
-        {list.map((element: Image) => (
-          <div class="flex items-center justify-center" target="_blank">
-            <div class="" target="_blank">
-              <Picture>
-                <Source
-                  media="(max-width: 767px)"
-                  src={element.mobile}
-                  width={80}
-                  class=""
-                />
-                <Source
-                  media="(min-width: 768px)"
-                  src={element?.desktop ? element?.desktop : element.mobile}
-                  width={200}
-                />
-                <img class="" src={element.mobile} alt={element.label} />
-              </Picture>
-            </div>
-          </div>
-        ))}
-      </div>
+      <LogoSlider logos={list} />
     </div>
   );
 }

@@ -675,7 +675,7 @@ const APPS_INTEGRATIONS_SEQUENCE: AnimationTimeline = [
     "#apps-searchbar",
     {
       opacity: [0, 1],
-      y: ["-20px", "8px"],
+      y: ["-20px", "0px"],
     },
     {
       at: 3.48,
@@ -686,7 +686,7 @@ const APPS_INTEGRATIONS_SEQUENCE: AnimationTimeline = [
   [
     "#apps-content",
     {
-      y: ["-32px", "16px"],
+      y: ["-19px", "0px"],
     },
     {
       at: 3.48,
