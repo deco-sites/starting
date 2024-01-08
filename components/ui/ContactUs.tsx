@@ -37,7 +37,6 @@ export interface Props {
     PlaceholderfieldPhone?: string;
     PlaceholderfieldSocial?: string;
     PlaceholderFieldExtra?: string;
-    PlaceholderFieldNeeds?: string;
     PlaceholderfieldUrlSite?: string;
     PlaceholderfieldPageviews?: string;
     submiteName?: string;
@@ -160,21 +159,6 @@ export default function ContactUs(
               </div>
             ))}
           </fieldset>
-
-          <select
-            class="w-full h-[51px] border border-dark-green flex items-center px-4"
-            name="userNeeds"
-          >
-            <option disabled selected>
-              {formInfor?.PlaceholderFieldNeeds ||
-                "What would you like to talk about?"}
-            </option>
-            {FieldNeedOptions.map((need) => {
-              return (
-                <option name={need.name} value={need.name}>{need.label}</option>
-              );
-            })}
-          </select>
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
