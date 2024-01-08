@@ -1,8 +1,6 @@
 import Image from "deco-sites/std/components/Image.tsx";
 import { useMemo } from "preact/hooks";
 import type { Image as ImageType } from "deco-sites/std/components/types.ts";
-import Share from "deco-sites/starting/components/ui/Share.tsx";
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 
 export interface Image {
   label: string;
@@ -13,6 +11,7 @@ export interface Image {
 export interface Props {
   themeDark?: boolean;
   title?: string;
+  url?: string;
   images?: Image[];
 }
 
@@ -70,7 +69,7 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
   );
 };
 
-export default function Brands({ title, images }: Props) {
+export default function Brands({ title, url, images }: Props) {
   const list = useMemo(
     () =>
       images && images.length > 0
@@ -82,11 +81,17 @@ export default function Brands({ title, images }: Props) {
   );
 
   return (
-    <div class="bg-black py-32 space-y-12">
-      <h2 class="text-white font-medium text-[24px] leading-[100%] text-center">
-        {title || TITLE}
-      </h2>
-      <LogoSlider logos={list} />
+    <div class="bg-black py-32">
+      <a
+        href={url}
+        target={url?.includes("http") ? "_blank" : "_self"}
+        class="flex flex-col gap-y-12"
+      >
+        <h2 class="text-white font-medium lg:text-[24px] leading-[100%] text-center">
+          {title || TITLE}
+        </h2>
+        <LogoSlider logos={list} />
+      </a>
     </div>
   );
 }

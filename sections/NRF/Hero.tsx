@@ -41,30 +41,24 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
             dangerouslySetInnerHTML={{
               __html: title,
             }}
-          >
-          </div>
-          {subtitle &&
-            (
-              <div
-                class="mx-11 inline-block lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none"
-                dangerouslySetInnerHTML={{
-                  __html: subtitle,
-                }}
-              >
-              </div>
-            )}
+          ></div>
+          {subtitle && (
+            <div
+              class="mx-11 inline-block lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none"
+              dangerouslySetInnerHTML={{
+                __html: subtitle,
+              }}
+            ></div>
+          )}
           {cta &&
             cta?.map((item) => (
               <a
                 href={item?.href}
-                target={item?.href.startsWith("http") ? "_blank" : "_self"}
-                class={`w-fit lg:text-[24px] border-none rounded-full py-2 font-medium px-6 transition-colors duration-200 cursor-pointer ${
-                  item?.variant === "Reverse"
-                    ? "border bg-[#113032] text-[#FFF]"
-                    : "border bg-[#02F67C] text-[#113032]"
-                }`}
+                target={item?.href.includes("http") ? "_blank" : "_self"}
+                class="group relative relative overflow-hidden rounded-full bg-[#02F67C] px-6 py-2 lg:px-8 lg:py-3 text-black transition-all duration-300 ease-out hover:bg-gradient-to-r hover:from-[#02F67C] hover:to-[#06E474] hover:shadow-hero"
               >
-                {item?.text}
+                <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white font-medium lg:text-[24px] opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
+                <span class="relative">{item?.text}</span>
               </a>
             ))}
         </div>

@@ -252,7 +252,7 @@ const REALTIME_EDITOR_SEQUENCE: AnimationTimeline = [
     "#realtime-cursor-muriel",
     {
       opacity: [0, 0, 1],
-      x: ["400px", "540px"],
+      x: ["400px", "560px"],
       y: ["0px", "120px"],
     },
     {
@@ -302,6 +302,15 @@ const REALTIME_EDITOR_SEQUENCE: AnimationTimeline = [
     },
   ],
   [
+    "#product-name-border rect, #product-name-frame-tr, #product-name-frame-br, #product-name-frame-tl, #product-name-frame-bl",
+    { opacity: ["0", "1"] },
+    {
+      at: 1.34,
+      duration: 0.2,
+      easing: "ease-out",
+    },
+  ],
+  [
     "#product-name-border rect",
     { width: ["291.5px", "20px"] },
     {
@@ -320,7 +329,7 @@ const REALTIME_EDITOR_SEQUENCE: AnimationTimeline = [
     },
   ],
   [
-    "#product-name-placeholder",
+    "#placeholder-mask",
     { opacity: [1, 0] },
     {
       at: 1.14,

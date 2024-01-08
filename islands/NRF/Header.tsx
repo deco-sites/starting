@@ -54,14 +54,16 @@ function MobileMenuLink({
           {label}
         </a>
         <ul class="pl-[24px]">
-          {nested.map((item) => <MobileMenuLink {...item} />)}
+          {nested.map((item) => (
+            <MobileMenuLink {...item} />
+          ))}
         </ul>
       </li>
     );
   }
 
   return (
-    <li class={"grid items-center py-4"}>
+    <li class={"grid items-center py-3 md:py-4"}>
       <a
         href={href}
         target={targetBlank ? "_blank" : "_self"}
@@ -252,9 +254,11 @@ export default function Header(props: Props) {
             </button>
           </li>
           <div
-            class={open
-              ? "flex flex-col w-[calc(100vw-64px)] h-[calc(100vh-140px)] gap-[40px] fixed bg-[#1E1E1E] left-0 top-[80px] pt-[24px] z-50 px-3 lg:hidden rounded-[24px]"
-              : "hidden"}
+            class={
+              open
+                ? "flex flex-col w-[calc(100vw-16px)] gap-[40px] fixed bg-[#1E1E1E] left-0 top-[80px] pt-[24px] z-50 px-3 lg:hidden rounded-[24px]"
+                : "hidden"
+            }
           >
             <ul class="flex flex-col divide-y divide-semi-white-13">
               {props.menuLinks.map((link) => {

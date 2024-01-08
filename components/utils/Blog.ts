@@ -38,7 +38,7 @@ export interface PostData {
 }
 
 export interface PostList {
-  posts: Array<Post>;
+  posts: Post[];
 }
 
 const BLOG_DEFAULT_LOCALE = "pt";

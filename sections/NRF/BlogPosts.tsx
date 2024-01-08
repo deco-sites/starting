@@ -12,16 +12,22 @@ import {
 const IMAGE_WIDTH = 360;
 
 export interface Props {
+  title?: string;
   cards: Post[];
   locale?: SupportedLocales;
 }
 
-export default function Carousel({ cards, locale = "en" }: Props) {
+export default function Carousel({ title, cards, locale = "en" }: Props) {
   const id = useId();
 
   return (
     <section class="bg-black py-24" id={id}>
-      <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto">
+      <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto flex flex-col items-center gap-16 lg:gap-20">
+        {title && (
+          <h2 class="text-white font-medium text-[24px] md:text-[32px] lg:text-[72px] leading-[100%] text-center max-w-4xl">
+            {title}
+          </h2>
+        )}
         <Slider
           class="relative gap-6 col-span-full row-start-2 row-end-5 auto-rows-fr hidden-scroll"
           itemClass="h-full"
