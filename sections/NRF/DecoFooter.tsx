@@ -64,11 +64,32 @@ export default function Footer({
   rounded,
 }: Props) {
   return (
-    <section class="bg-[#02F67C] relative">
+    <section class="bg-[#02F67C] relative z-10">
       {rounded && (
         <>
-          <div class="w-full h-28 absolute -top-28 bg-[#02F67C] z-10"></div>
-          <div class="w-full h-28 absolute -top-28 bg-black rounded-b-[64px] lg:rounded-b-[100px] z-10"></div>
+          <svg
+            class="absolute left-0 -top-[100px]"
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+          >
+            <path d="M0 0C0 55.2285 44.7715 100 100 100H0V0Z" fill="#02F67C" />
+          </svg>
+          <svg
+            class="absolute right-0 -top-[100px]"
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+          >
+            <path
+              d="M100 0C100 55.2285 55.2285 100 0 100H100V0Z"
+              fill="#02F67C"
+            />
+          </svg>
         </>
       )}
       <div class="max-w-screen-2xl m-auto py-8">

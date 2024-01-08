@@ -26,13 +26,13 @@ export default function Carousel({ title, cards, locale = "en" }: Props) {
       id={id}
     >
       {title && (
-        <h2 class="text-white font-medium text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl">
+        <h2 class="text-white font-medium text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl z-10">
           {title}
         </h2>
       )}
       <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto">
         <Slider
-          class="relative gap-6 col-span-full row-start-2 row-end-5 auto-rows-fr hidden-scroll"
+          class="relative gap-6 col-span-full row-start-2 row-end-5 auto-rows-fr hidden-scroll z-10"
           itemClass="h-full"
           snap="opacity-50 disabled:opacity-100 focus:outline-none h-full"
         >

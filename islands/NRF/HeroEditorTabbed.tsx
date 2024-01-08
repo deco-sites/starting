@@ -56,7 +56,7 @@ export const HeroEditorTabbed = () => {
   }, []);
 
   return (
-    <div class="lg:w-full lg:max-w-6xl py-4 lg:py-2 p-2 bg-white/5 border border-white/5 rounded-lg lg:rounded-3xl space-y-2 mx-2 lg:mx-0 z-40">
+    <div class="lg:w-full lg:max-w-6xl py-4 lg:py-2 p-2 bg-white/5 border border-white/5 rounded-lg lg:rounded-3xl space-y-2 mx-2 lg:mx-0 z-40 backdrop-blur-xl">
       <div class="flex justify-center gap-x-8 gap-2 text-white flex-wrap items-center">
         {TABS.map((tab, index) => (
           <button

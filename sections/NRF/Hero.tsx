@@ -31,11 +31,11 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
     >
       <div class="max-w-fit mx-auto flex flex-col items-center gap-16 lg:gap-20">
         {alert?.text && (
-          <div class="rounded-[56px] border border-white/15 bg-white/5 py-2 px-4">
+          <div class="rounded-[56px] border border-white/15 bg-white/5 py-2 px-4 z-10">
             {alert.text}
           </div>
         )}
-        <div class="flex flex-col items-center gap-6 lg:gap-12">
+        <div class="flex flex-col items-center gap-6 lg:gap-12 z-10">
           <div
             class="mt-36 lg:mt-48 mx-6 lg:mx-0 inline-block text-[36px] lg:text-[104px] text-center leading-[110%] lg:leading-[100%] font-medium text-white max-w-lg lg:max-w-none"
             dangerouslySetInnerHTML={{

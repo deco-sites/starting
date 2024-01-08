@@ -3,55 +3,14 @@ import { animate, scroll } from "motion";
 
 export interface Props {
   lines: string[];
+  /**
+   * @description Speed ratio of the animation. Default is 1. Increase for sooner, decrease for later.
+   */
+  speedRatio?: number;
   animateOnScroll?: boolean;
 }
 
-const CursorFollower = () => {
-  // State for cursor position
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  // Event handler for mouse movement
-  const handleMouseMove = (e: any) => {
-    // Calculate the position of the cursor relative to the viewport
-    const x = e.clientX / window.innerWidth * 100;
-    const y = e.clientY / window.innerHeight * 100;
-
-    setPosition({ x, y });
-  };
-
-  // Effect for attaching and cleaning up the global event listener
-  useEffect(() => {
-    // Attach the event listener when the component mounts
-    self.addEventListener('mousemove', handleMouseMove);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      self.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []); // Empty array means the effect runs once on mount and cleanup on unmount
-
-  // Destructure the position state
-  const { x, y } = position;
-
-  // Apply the transform based on cursor position
-  const transform = `translate3d(${x}vw, ${y}vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`;
-
-  return (
-    <div
-      className="cursor-glow"
-      style={{
-        willChange: 'transform',
-        transformStyle: 'preserve-3d',
-        transform: transform,
-      }}
-    >
-    </div>
-  );
-};
-
-
-
-function TextLines({ lines, animateOnScroll }: Props) {
+function TextLines({ lines, speedRatio = 1, animateOnScroll }: Props) {
   const words = lines.join(" ").split(" ");
 
   useEffect(() => {
@@ -64,7 +23,9 @@ function TextLines({ lines, animateOnScroll }: Props) {
       let lastHighlighted = 0;
 
       const handleScroll = ({ y }: { y: { progress: number } }) => {
-        const currHighlighted = Math.floor(y.progress * paragraphs.length);
+        const currHighlighted = Math.floor(
+          y.progress * 2 * paragraphs.length
+        );
         const direction = currHighlighted > lastHighlighted ? 1 : -1;
         const color = direction === 1 ? "white" : "#131313";
 
@@ -86,20 +47,20 @@ function TextLines({ lines, animateOnScroll }: Props) {
   return (
     <div
       id="section"
-      class={`bg-black relative ${animateOnScroll ? "h-[2000px]" : "h-screen"}`}
+      class={`bg-black relative ${
+        animateOnScroll ? "h-[1000px] lg:h-[2000px]" : "h-screen"
+      }`}
     >
       <div
         id="inner"
         class="sticky h-screen top-0 flex items-center justify-center mx-[24px] lg:mx-auto
-      lg:max-w-6xl text-white text-[32px] lg:text-[64px] font-semibold leading-[100%] tracking-[-1.28px]"
+      lg:max-w-6xl text-white text-[32px] lg:text-[64px] font-semibold leading-[100%] tracking-[-1.28px] z-10"
       >
         <div>
           {words.map((word) => (
             <>
               <p
-                class={`inline ${
-                  animateOnScroll ? "text-zinc-600" : "text-white"
-                }`}
+                class={`inline text-white`}
               >
                 {word}
               </p>{" "}

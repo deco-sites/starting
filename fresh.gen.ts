@@ -25,10 +25,12 @@ import * as $Header from "./islands/Header.tsx";
 import * as $HelpFaq from "./islands/HelpFaq.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
 import * as $LiveProjects from "./islands/LiveProjects.tsx";
+import * as $NRF_BackgroundGrid from "./islands/NRF/BackgroundGrid.tsx";
 import * as $NRF_Editor from "./islands/NRF/Editor.tsx";
 import * as $NRF_EditorMobile from "./islands/NRF/EditorMobile.tsx";
 import * as $NRF_Faq from "./islands/NRF/Faq.tsx";
 import * as $NRF_Features from "./islands/NRF/Features.tsx";
+import * as $NRF_FeaturesWithImage from "./islands/NRF/FeaturesWithImage.tsx";
 import * as $NRF_Header from "./islands/NRF/Header.tsx";
 import * as $NRF_HeroEditor from "./islands/NRF/HeroEditor.tsx";
 import * as $NRF_HeroEditorTabbed from "./islands/NRF/HeroEditorTabbed.tsx";
@@ -70,10 +72,12 @@ const manifest = {
     "./islands/HelpFaq.tsx": $HelpFaq,
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
     "./islands/LiveProjects.tsx": $LiveProjects,
+    "./islands/NRF/BackgroundGrid.tsx": $NRF_BackgroundGrid,
     "./islands/NRF/Editor.tsx": $NRF_Editor,
     "./islands/NRF/EditorMobile.tsx": $NRF_EditorMobile,
     "./islands/NRF/Faq.tsx": $NRF_Faq,
     "./islands/NRF/Features.tsx": $NRF_Features,
+    "./islands/NRF/FeaturesWithImage.tsx": $NRF_FeaturesWithImage,
     "./islands/NRF/Header.tsx": $NRF_Header,
     "./islands/NRF/HeroEditor.tsx": $NRF_HeroEditor,
     "./islands/NRF/HeroEditorTabbed.tsx": $NRF_HeroEditorTabbed,

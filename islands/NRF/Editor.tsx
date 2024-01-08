@@ -171,7 +171,7 @@ export default function Editor({ title, features }: Props) {
     <div class="editor bg-black text-white py-32 z-0">
       <div class="flex flex-col items-center">
         <div class="relative w-full right-container ml-auto flex gap-20">
-          <div class="hidden sticky h-screen top-0 lg:flex items-center justify-center">
+          <div class="hidden sticky h-screen top-0 lg:flex items-center justify-center z-10">
             <ul class="flex flex-col gap-2 text-[#52525B] whitespace-nowrap">
               <li class="text-[#02F67C] text-[24px] font-medium mb-2">
                 {title}
@@ -210,7 +210,7 @@ export default function Editor({ title, features }: Props) {
             </ul>
           </div>
           <div class="hidden lg:block">
-            <div class="flex flex-col gap-32 max-w-[344px]">
+            <div class="flex flex-col gap-32 max-w-[344px] z-10">
               {features.map(({ title, subtitle, id }, idx) => (
                 <div
                   id={id}
@@ -218,7 +218,7 @@ export default function Editor({ title, features }: Props) {
                 >
                   <div
                     id={`feature-text-${idx}`}
-                    class="opacity-0 max-w-[344px] flex flex-col h-screen items-center justify-center fixed top-0 gap-6 pointer-events-none"
+                    class="opacity-0 max-w-[344px] flex flex-col h-screen items-center justify-center fixed top-0 gap-6 pointer-events-none z-10"
                   >
                     <h2 class="text-5xl font-semibold">{title}</h2>
                     <p class="text-zinc-400">{subtitle}</p>
@@ -231,7 +231,7 @@ export default function Editor({ title, features }: Props) {
               {features.map(({ id }, idx) => (
                 <div
                   id={`feature-image-${idx}`}
-                  class="opacity-0 feature-image fixed h-screen left-[calc(50%+1.5rem)] top-0  flex items-center justify-center pointer-events-none"
+                  class="opacity-0 feature-image fixed h-screen left-[calc(50%+1.5rem)] top-0  flex items-center justify-center pointer-events-none z-10"
                 >
                   {AnimationComponents[id as keyof typeof AnimationComponents]({
                     class: "editor-feature",

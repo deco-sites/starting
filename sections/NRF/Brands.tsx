@@ -34,7 +34,7 @@ const TITLE = "Trusted by the most awesome super duper incredible brand:";
 
 const LogoSlider = ({ logos }: { logos: Image[] }) => {
   const renderLogoSlide = () => (
-    <div className="flex animate-slide">
+    <div className="flex animate-slide z-10">
       {logos.map((logo) => (
         <div class="flex items-center justify-center" target="_blank">
           <img
@@ -49,9 +49,8 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
 
   return (
     <div className="logos overflow-hidden py-15 relative">
-      <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-black before:z-10"></div>
-      <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-black after:z-10"></div>
-
+      {/* <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-black before:z-20"></div>
+      <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-black after:z-20"></div> */}
       <div
         className="flex whitespace-nowrap"
         onMouseEnter={(e) =>

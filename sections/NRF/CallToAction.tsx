@@ -12,8 +12,8 @@ export interface Props {
 export default function CallToAction({ text, cta }: Props) {
   return (
     <div class="bg-black py-16 md:py-28">
-      <section class="xl:container mx-auto flex flex-col items-center justify-center gap-8 mb-16 lg:mb-0">
-        <h2 class="mx-6 lg:mx-0 text-center text-[36px] md:text-[80px] leading-[100%] text-white font-medium max-w-4xl">
+      <section class="xl:container mx-auto flex flex-col items-center justify-center gap-8 mb-16 lg:mb-0 z-10">
+        <h2 class="mx-6 lg:mx-0 text-center text-[36px] md:text-[80px] leading-[100%] text-white font-medium max-w-4xl z-10">
           {text}
         </h2>
         <div class="flex flex-row gap-4 z-20">
