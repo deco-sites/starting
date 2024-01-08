@@ -63,6 +63,7 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
         {renderLogoSlide()}
         {renderLogoSlide()}
         {renderLogoSlide()}
+        {renderLogoSlide()}
       </div>
     </div>
   );
