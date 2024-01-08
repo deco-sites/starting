@@ -128,7 +128,7 @@ const COMPONENT_LIBRARY_SEQUENCE: AnimationTimeline = [
       duration: 0.5,
     },
   ],
-  
+
   [
     "#library-product-description",
     {
@@ -953,13 +953,15 @@ const CONTENT_MODELING_SEQUENCE: AnimationTimeline = [
   ],
 ];
 
-export const EDITOR_TIMELINES: AnimationTimeline[] = [
-  COMPONENT_LIBRARY_SEQUENCE,
-  REALTIME_EDITOR_SEQUENCE,
-  DESIGN_SYSTEM_SEQUENCE,
-  FULL_CODE_SEQUENCE,
-  APPS_INTEGRATIONS_SEQUENCE,
-  DESIGN_SYSTEM_SEQUENCE,
-  ANALYTICS_SEQUENCE,
-  CONTENT_MODELING_SEQUENCE,
-];
+export const EDITOR_TIMELINES: {
+  [key: string]: AnimationTimeline;
+} = {
+  "component-library": COMPONENT_LIBRARY_SEQUENCE,
+  "no-code-editing": REALTIME_EDITOR_SEQUENCE,
+  "design-system": DESIGN_SYSTEM_SEQUENCE,
+  "full-code-editing": FULL_CODE_SEQUENCE,
+  "integrate-extend": APPS_INTEGRATIONS_SEQUENCE,
+  "multivariate-testing": DESIGN_SYSTEM_SEQUENCE,
+  monitoring: ANALYTICS_SEQUENCE,
+  "content-modeling": CONTENT_MODELING_SEQUENCE,
+};

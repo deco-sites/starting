@@ -41,8 +41,6 @@ const AnimationComponents = {
 };
 
 export default function Editor({ title, features }: Props) {
-  const currentFeature = useSignal<number | null>(null);
-
   useEffect(() => {
     let lastScrollY = window.scrollY;
     let isScrollingDown = true;
@@ -116,7 +114,7 @@ export default function Editor({ title, features }: Props) {
         { duration: 0.3 }
       );
 
-      timeline(EDITOR_TIMELINES[index]);
+      timeline(EDITOR_TIMELINES[target.id]);
 
       animate(
         `#feature-title-${index}`,
