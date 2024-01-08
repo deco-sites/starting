@@ -81,7 +81,7 @@ export default function Brands({ title, url, images }: Props) {
   );
 
   return (
-    <div class="bg-black py-32">
+    <div class="bg-black pt-32">
       <a
         href={url}
         target={url?.includes("http") ? "_blank" : "_self"}

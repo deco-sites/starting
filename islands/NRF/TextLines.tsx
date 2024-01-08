@@ -107,7 +107,7 @@ function TextLines({ lines, animateOnScroll }: Props) {
           ))}
         </div>
       </div>
-      <CursorFollower />
+      {/* <CursorFollower /> */}
     </div>
   );
 }
