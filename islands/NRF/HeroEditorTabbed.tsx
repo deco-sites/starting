@@ -64,10 +64,10 @@ export const HeroEditorTabbed = () => {
               selectedTab.value = index;
               console.log(selectedTab.value);
             }}
-            class={`text-[12px] lg:text-[18px] py-2 font-medium ${
+            class={`text-[12px] lg:text-[18px] py-2 font-medium border-b ${
               index === selectedTab.value
-                ? "text-[#02F67C] border-b border-[#02F67C]"
-                : "text-white"
+                ? "text-[#02F67C] border-[#02F67C]"
+                : "text-white border-transparent"
             }`}
           >
             {tab}

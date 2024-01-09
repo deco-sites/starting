@@ -36,9 +36,8 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
   const renderLogoSlide = () => (
     <div className="flex animate-slide z-10">
       {logos.map((logo) => (
-        <div class="flex items-center justify-center" target="_blank">
+        <div class="flex items-center justify-center h-16 w-36 lg:w-52" target="_blank">
           <img
-            class="object-contain h-16 max-w-[200px]"
             src={logo.mobile}
             alt={logo.label}
           />
