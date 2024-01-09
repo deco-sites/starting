@@ -91,7 +91,7 @@ export default function Footer({
                 />
               </svg>
             </a>
-            <span class="text-[#113032]">© 2023 All rights reserved</span>
+            <span class="text-[#113032]">© 2024 All rights reserved</span>
           </div>
 
           {menu && <SubMenu menu={menu} />}

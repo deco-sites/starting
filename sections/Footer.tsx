@@ -82,7 +82,7 @@ export default function Footer({
                 />
               </svg>
             </a>
-            <span class="text-white">© 2023 All rights reserved</span>
+            <span class="text-white">© 2024 All rights reserved</span>
           </div>
 
           {menu && <SubMenu menu={menu} />}
