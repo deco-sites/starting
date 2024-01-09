@@ -1,4 +1,4 @@
-import { useEffect, useState } from "preact/hooks";
+import { useEffect } from "preact/hooks";
 import { animate, scroll } from "motion";
 
 export interface Props {
@@ -47,7 +47,7 @@ function TextLines({ lines, speedRatio = 1, animateOnScroll }: Props) {
   return (
     <div
       id="section"
-      class={`bg-black relative z-10 ${
+      class={`bg-black relative${
         animateOnScroll ? "py-20 lg:py-0 lg:h-[2000px]" : "lg:h-screen"
       }`}
     >
@@ -68,7 +68,6 @@ function TextLines({ lines, speedRatio = 1, animateOnScroll }: Props) {
           ))}
         </div>
       </div>
-      {/* <CursorFollower /> */}
     </div>
   );
 }
