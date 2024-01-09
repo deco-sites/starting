@@ -30,7 +30,7 @@ export default function Carousel({ title, cards, locale = "en" }: Props) {
           {title}
         </h2>
       )}
-      <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto">
+      <div class="relative px-6 md:px-[7rem] w-full xl:max-w-screen-2xl m-auto">
         <Slider
           class="relative gap-6 col-span-full row-start-2 row-end-5 auto-rows-fr hidden-scroll z-10"
           itemClass="h-full"
