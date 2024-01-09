@@ -242,7 +242,7 @@ export default function Header(props: Props) {
           <li class="h-full">
             <a
               class="flex items-center h-full px-3 pb-[6px]"
-              href={currentLanguageLink}
+              href="/"
             >
               <svg
                 width="70"
