@@ -22,7 +22,7 @@ export default function Carousel({ title, cards, locale = "en" }: Props) {
 
   return (
     <section
-      class="flex flex-col items-center gap-16 lg:gap-20 bg-black py-24"
+      class="flex flex-col items-center gap-16 lg:gap-20 bg-black py-24 max-w-screen overflow-hidden"
       id={id}
     >
       {title && (

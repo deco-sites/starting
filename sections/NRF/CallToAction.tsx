@@ -16,7 +16,7 @@ export default function CallToAction({ text, cta }: Props) {
         <h2 class="mx-6 lg:mx-0 text-center text-[36px] md:text-[80px] leading-[100%] text-white font-medium max-w-4xl z-10">
           {text}
         </h2>
-        <div class="flex flex-row gap-4 z-20">
+        <div class="flex flex-col md:flex-row gap-4 z-20">
           {cta?.map((item) => (
             <a
               href={item?.href}
