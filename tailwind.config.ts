@@ -14,6 +14,8 @@ export default {
     },
     extend: {
       backgroundImage: {
+        "pricing-gradient":
+          "radial-gradient(224.67% 165.67% at -4.18% 112.82%, rgba(2, 246, 124, 0.03) 0%, rgba(8, 26, 26, 0.20) 33%, rgba(8, 26, 26, 0.19) 74.5%, rgba(0, 108, 104, 0.08) 100%), #081A1A;",
         "contact-us-bg-gradient":
           "linear-gradient(169.63deg, #00FF80 -0.25%, #095F5D 152.54%), conic-gradient(from -90deg at 50% 50%, #FFFFFF 0deg, rgba(255, 255, 255, 0) 187.5deg, #FFFFFF 360deg);",
         "white-green":
@@ -47,8 +49,9 @@ export default {
           "linear-gradient(to bottom, #F3FFF9 300px, #ffffff 20%);",
       },
       boxShadow: {
-        "hero": 'rgb(0, 0, 0) 0px 0px 0px 2px, rgb(6, 228, 116) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px',
-        "hero-reverse": 'rgb(0, 0, 0) 0px 0px 0px 2px, rgb(17, 48, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px',
+        hero: "rgb(0, 0, 0) 0px 0px 0px 2px, rgb(6, 228, 116) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        "hero-reverse":
+          "rgb(0, 0, 0) 0px 0px 0px 2px, rgb(17, 48, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",
         "footer-shadow":
           "0px -6px 8px rgba(255, 255, 255, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.5)",
@@ -64,8 +67,8 @@ export default {
       },
       keyframes: {
         slide: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
         },
         blur1: {
           "0%": { transform: "translateY(0) translateX(0)" },
@@ -601,7 +604,7 @@ export default {
         },
       },
       animation: {
-        slide: 'slide 25s infinite linear',
+        slide: "slide 25s infinite linear",
         blur1: "blur1 15s linear infinite",
         blur2: "blur2 15s linear infinite",
         pageSpeedSwitcherText10: "pageSpeedSwitcherText10 ease 7s infinite",
