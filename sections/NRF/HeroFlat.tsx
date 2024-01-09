@@ -50,7 +50,7 @@ export default function HeroFlats({
             />
           )}
           <div
-            class={`w-full space-y-2 lg:space-y-4 gap-4 ${
+            class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 ${
               image
                 ? "lg:w-1/2 lg:max-w-xl"
                 : "flex flex-col items-center justify-center lg:max-w-3xl"
@@ -65,7 +65,7 @@ export default function HeroFlats({
             <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
               {description}
             </p>
-            <div class="flex flex-col lg:flex-row gap-4">
+            <div class="flex flex-col items-start lg:flex-row gap-4">
               {cta?.map((item) => (
                 <a
                   href={item?.href}
