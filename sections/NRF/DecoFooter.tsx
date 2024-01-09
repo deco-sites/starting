@@ -67,29 +67,12 @@ export default function Footer({
     <section class="bg-[#02F67C] relative z-10">
       {rounded && (
         <>
-          <svg
-            class="absolute left-0 -top-[100px]"
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
-            viewBox="0 0 100 100"
-            fill="none"
-          >
-            <path d="M0 0C0 55.2285 44.7715 100 100 100H0V0Z" fill="#02F67C" />
-          </svg>
-          <svg
-            class="absolute right-0 -top-[100px]"
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
-            viewBox="0 0 100 100"
-            fill="none"
-          >
-            <path
-              d="M100 0C100 55.2285 55.2285 100 0 100H100V0Z"
-              fill="#02F67C"
-            />
-          </svg>
+          <div class="absolute left-0 -top-[51px] lg:-top-[100px] bg-[#02F67C]">
+            <div class="bg-black w-[50px] h-[51px] lg:w-[100px] lg:h-[100px] rounded-es-full"></div>
+          </div>
+          <div class="absolute right-0 -top-[51px] lg:-top-[100px] bg-[#02F67C]">
+            <div class="bg-black w-[50px] h-[51px] lg:w-[100px] lg:h-[100px] rounded-ee-full"></div>
+          </div>
         </>
       )}
       <div class="max-w-screen-2xl m-auto py-8">
