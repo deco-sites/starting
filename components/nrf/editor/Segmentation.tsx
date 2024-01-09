@@ -492,8 +492,8 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                             fill="white"
                                             xml:space="preserve"
                                             style="white-space: pre"
-                                            font-family="Roboto"
-                                            font-size="24"
+                                            font-family="Albert Sans"
+                                            font-size="10"
                                             letter-spacing="0px"
                                           >
                                             <tspan x="412.945" y="349.769">
@@ -532,8 +532,8 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                               fill="white"
                                               xml:space="preserve"
                                               style="white-space: pre"
-                                              font-family="Roboto"
-                                              font-size="24"
+                                              font-family="Albert Sans"
+                                              font-size="10"
                                               letter-spacing="0px"
                                             >
                                               <tspan x="449.709" y="349.769">
@@ -957,8 +957,8 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                           fill="white"
                                           xml:space="preserve"
                                           style="white-space: pre"
-                                          font-family="Roboto"
-                                          font-size="24"
+                                          font-family="Albert Sans"
+                                          font-size="10"
                                           letter-spacing="0px"
                                         >
                                           <tspan x="709.354" y="330.851">
@@ -997,8 +997,8 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                             fill="white"
                                             xml:space="preserve"
                                             style="white-space: pre"
-                                            font-family="Roboto"
-                                            font-size="24"
+                                            font-family="Albert Sans"
+                                            font-size="10"
                                             letter-spacing="0px"
                                           >
                                             <tspan x="746.117" y="330.851">
@@ -1510,8 +1510,8 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                               fill="white"
                                               xml:space="preserve"
                                               style="white-space: pre"
-                                              font-family="Roboto"
-                                              font-size="24"
+                                              font-family="Albert Sans"
+                                              font-size="10"
                                               letter-spacing="0px"
                                             >
                                               <tspan x="445.875" y="654.377">
@@ -1550,8 +1550,8 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                                 fill="white"
                                                 xml:space="preserve"
                                                 style="white-space: pre"
-                                                font-family="Roboto"
-                                                font-size="24"
+                                                font-family="Albert Sans"
+                                                font-size="10"
                                                 letter-spacing="0px"
                                               >
                                                 <tspan x="482.639" y="654.377">
@@ -1977,7 +1977,7 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                             fill="white"
                                             xml:space="preserve"
                                             style="white-space: pre"
-                                            font-family="Roboto"
+                                            font-family="Albert Sans"
                                             font-size="10.331"
                                             letter-spacing="0px"
                                           >
@@ -2017,7 +2017,7 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                               fill="white"
                                               xml:space="preserve"
                                               style="white-space: pre"
-                                              font-family="Roboto"
+                                              font-family="Albert Sans"
                                               font-size="10.331"
                                               letter-spacing="0px"
                                             >
@@ -2630,28 +2630,28 @@ export const Segmentation = (props: AnimatedSvgProps) => {
           data-name="DALL&#194;&#183;E 2023-12-28 14.22.31 - A modern armchair with a similar flowing design language as the previously generated chair, in a black, glossy finish, against a dark background.png"
           width="1024"
           height="1024"
-          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/004d0716-f0c9-40c1-8222-95ed965fbb55"
+          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1572d8ef-219e-4289-9739-eaf858645144"
         />
         <image
           id="image3_1587_7044"
           data-name="DALL&#194;&#183;E 2023-12-28 14.23.51 - A contemporary stool with a design that complements the previously generated chairs, in a black, glossy finish, against a dark background. The stool s.png"
           width="1024"
           height="1024"
-          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7a58cc56-add7-4bd6-b712-8452eb4f8f9c"
+          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/80ea86c0-f3d9-4811-ad80-b9116982403a"
         />
         <image
           id="image4_1587_7044"
           data-name="DALL&#194;&#183;E 2023-12-28 14.25.09 - An avant-garde coffee table in a black, glossy finish, designed to complement the series of chairs and stool previously generated. The table should sh.png"
           width="1024"
           height="1024"
-          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e6909860-2890-4a62-ab93-bf64d102674e"
+          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4a2cad13-bc30-4d04-bd35-fcaf23934b18"
         />
         <image
           id="image5_1587_7044"
           data-name="DALL&#194;&#183;E 2023-12-29 01.40.05 - Create a top view of the minimalist, 3D-shaped abstract image resembling a chair in dark mode (referenced image_ file-33SMezOZpVT3WKse0Qyh79p5). The d.png"
           width="1024"
           height="1024"
-          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7053852f-43be-4f79-97f2-24d0550aea92"
+          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/87d2bc7c-6a7f-41ef-9183-852391ee5640"
         />
       </defs>
     </svg>

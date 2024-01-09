@@ -1177,21 +1177,21 @@ export const DesignSystem = (props: AnimatedSvgProps) => {
           data-name="DALL&#194;&#183;E 2023-12-14 10.16.58 - Create a minimalist, 3D-shaped abstract image that evokes the essence of a chair, using pastel orange tones. The design should be highly abstract, foc.png"
           width="1024"
           height="1024"
-          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7ba2c0c5-77b5-473e-ab28-ded82462aa32"
+          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/83f040d9-3483-4584-acd7-994e902e3b5a"
         />
         <image
           id="image3_1460_7923"
           data-name="DALL&#194;&#183;E 2023-12-27 09.19.26 - Modify the minimalist, 3D-Blender textured abstract image of a chair with a punk-rock theme, by changing the background to a vivid pink color. The des.png"
           width="1024"
           height="1024"
-          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5f40de47-3a57-464d-b544-5de496462054"
+          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c01bd3af-8d5f-444b-8398-bfd7b386fb73"
         />
         <image
           id="image4_1460_7923"
           data-name="DALL&#194;&#183;E 2023-12-14 10.16.02 - Create a minimalist, 3D-shaped abstract image that evokes the essence of a chair, using pastel green tones. The design should be highly abstract, focu.png"
           width="1024"
           height="1024"
-          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/253a536e-4d33-416d-bfac-d1d619050547"
+          xlinkHref="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4c7571f7-4282-4027-9833-e31354525399"
         />
       </defs>
     </svg>
