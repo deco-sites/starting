@@ -239,7 +239,7 @@ export const NoCodeEditor = () => {
                 width="1181.82"
                 height="730.704"
                 transform="translate(1.09082 47.7391)"
-                fill="url(#pattern0)"
+                fill="url(#no-code-editor-p0)"
                 fill-opacity="0.25"
               />
               <g id="Frame 2609176" filter="url(#filter0_dd_1265_4447)">
@@ -1222,7 +1222,7 @@ export const NoCodeEditor = () => {
                         y="113.594"
                         width="406.623"
                         height="335.406"
-                        fill="url(#pattern1)"
+                        fill="url(#no-code-editor-p1)"
                       />
                     </g>
                   </g>
@@ -1577,7 +1577,7 @@ export const NoCodeEditor = () => {
                           y="676.711"
                           width="266.614"
                           height="373.669"
-                          fill="url(#pattern2)"
+                          fill="url(#no-code-editor-p2)"
                         />
                         <g id="Off Label">
                           <rect
@@ -1602,7 +1602,7 @@ export const NoCodeEditor = () => {
                           y="676.711"
                           width="266.614"
                           height="373.669"
-                          fill="url(#pattern3)"
+                          fill="url(#no-code-editor-p3)"
                         />
                         <g id="Off Label_2">
                           <rect
@@ -1663,7 +1663,7 @@ export const NoCodeEditor = () => {
       </g>
       <defs>
         <pattern
-          id="pattern0"
+          id="no-code-editor-p0"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -1776,7 +1776,7 @@ export const NoCodeEditor = () => {
           />
         </filter>
         <pattern
-          id="pattern1"
+          id="no-code-editor-p1"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -1787,7 +1787,7 @@ export const NoCodeEditor = () => {
           />
         </pattern>
         <pattern
-          id="pattern2"
+          id="no-code-editor-p2"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -1798,7 +1798,7 @@ export const NoCodeEditor = () => {
           />
         </pattern>
         <pattern
-          id="pattern3"
+          id="no-code-editor-p3"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"

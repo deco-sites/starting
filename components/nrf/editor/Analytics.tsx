@@ -43,7 +43,7 @@ export const Analytics = (props: AnimatedSvgProps) => {
                       width="1040"
                       height="643.02"
                       transform="translate(50.168 41.204)"
-                      fill="url(#pattern0)"
+                      fill="url(#analytics-p0)"
                       fill-opacity="0.25"
                     />
                     <g
@@ -3153,7 +3153,7 @@ export const Analytics = (props: AnimatedSvgProps) => {
       </g>
       <defs>
         <pattern
-          id="pattern0"
+          id="analytics-p0"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"

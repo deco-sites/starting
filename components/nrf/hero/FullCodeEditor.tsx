@@ -239,7 +239,7 @@ export const FullCodeEditor = () => {
                 width="1181.82"
                 height="730.704"
                 transform="translate(1.09082 47.7391)"
-                fill="url(#pattern0)"
+                fill="url(#full-code-editor-p0)"
                 fill-opacity="0.25"
               />
               <g id="Frame 2609176" filter="url(#filter0_dd_1267_9623)">
@@ -396,7 +396,7 @@ export const FullCodeEditor = () => {
                             y="116.604"
                             width="378.84"
                             height="296.064"
-                            fill="url(#pattern1)"
+                            fill="url(#full-code-editor-p1)"
                           />
                         </g>
                         <g id="Frame 2609270">
@@ -406,7 +406,7 @@ export const FullCodeEditor = () => {
                             y="412.667"
                             width="189.42"
                             height="296.064"
-                            fill="url(#pattern2)"
+                            fill="url(#full-code-editor-p2)"
                           />
                           <rect
                             id="Rectangle 798"
@@ -414,7 +414,7 @@ export const FullCodeEditor = () => {
                             y="412.667"
                             width="189.42"
                             height="296.064"
-                            fill="url(#pattern3)"
+                            fill="url(#full-code-editor-p3)"
                           />
                         </g>
                       </g>
@@ -686,7 +686,7 @@ export const FullCodeEditor = () => {
       </g>
       <defs>
         <pattern
-          id="pattern0"
+          id="full-code-editor-p0"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -748,7 +748,7 @@ export const FullCodeEditor = () => {
           />
         </filter>
         <pattern
-          id="pattern1"
+          id="full-code-editor-p1"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -759,7 +759,7 @@ export const FullCodeEditor = () => {
           />
         </pattern>
         <pattern
-          id="pattern2"
+          id="full-code-editor-p2"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -770,7 +770,7 @@ export const FullCodeEditor = () => {
           />
         </pattern>
         <pattern
-          id="pattern3"
+          id="full-code-editor-p3"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"

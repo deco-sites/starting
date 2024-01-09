@@ -239,7 +239,7 @@ export const SectionLibrary = () => {
                 width="1181.82"
                 height="730.704"
                 transform="translate(1.09088 47.7391)"
-                fill="url(#pattern0)"
+                fill="url(#section-library-p0)"
                 fill-opacity="0.25"
               />
               <g id="Frame 2609263">
@@ -1237,7 +1237,7 @@ export const SectionLibrary = () => {
                                     width="217.844"
                                     height="138.998"
                                     rx="12.5648"
-                                    fill="url(#pattern1)"
+                                    fill="url(#section-library-p1)"
                                   />
                                 </g>
                                 <path
@@ -1759,7 +1759,7 @@ export const SectionLibrary = () => {
                                           y="330.338"
                                           width="246.829"
                                           height="258.357"
-                                          fill="url(#pattern2)"
+                                          fill="url(#section-library-p2)"
                                         />
                                       </g>
                                     </g>
@@ -1885,7 +1885,7 @@ export const SectionLibrary = () => {
                                         y="362.079"
                                         width="92.1502"
                                         height="139.249"
-                                        fill="url(#pattern3)"
+                                        fill="url(#section-library-p3)"
                                       />
                                       <g id="Text + Button_2">
                                         <rect
@@ -2340,7 +2340,7 @@ export const SectionLibrary = () => {
                                                   y="610.437"
                                                   width="56.0847"
                                                   height="74.4606"
-                                                  fill="url(#pattern4)"
+                                                  fill="url(#section-library-p4)"
                                                 />
                                                 <g id="Name + Price">
                                                   <text
@@ -2447,7 +2447,7 @@ export const SectionLibrary = () => {
                                         y="589.057"
                                         width="101.443"
                                         height="122.867"
-                                        fill="url(#pattern5)"
+                                        fill="url(#section-library-p5)"
                                       />
                                     </g>
                                   </g>
@@ -2663,7 +2663,7 @@ export const SectionLibrary = () => {
                                             y="596.056"
                                             width="52.9078"
                                             height="53.2033"
-                                            fill="url(#pattern6)"
+                                            fill="url(#section-library-p6)"
                                           />
                                           <g id="Name + Price_2">
                                             <text
@@ -2719,7 +2719,7 @@ export const SectionLibrary = () => {
                                             y="596.056"
                                             width="52.9078"
                                             height="53.2033"
-                                            fill="url(#pattern7)"
+                                            fill="url(#section-library-p7)"
                                           />
                                           <g id="Name + Price_3">
                                             <text
@@ -2777,7 +2777,7 @@ export const SectionLibrary = () => {
                                             y="655.614"
                                             width="52.9078"
                                             height="53.2033"
-                                            fill="url(#pattern8)"
+                                            fill="url(#section-library-p8)"
                                           />
                                           <g id="Name + Price_4">
                                             <text
@@ -2833,7 +2833,7 @@ export const SectionLibrary = () => {
                                             y="655.614"
                                             width="52.9078"
                                             height="53.2033"
-                                            fill="url(#pattern9)"
+                                            fill="url(#section-library-p9)"
                                           />
                                           <g id="Name + Price_5">
                                             <text
@@ -2897,7 +2897,7 @@ export const SectionLibrary = () => {
                                         y="610.243"
                                         width="78.0315"
                                         height="89.5589"
-                                        fill="url(#pattern10)"
+                                        fill="url(#section-library-p10)"
                                       />
                                       <g id="Frame 2608708">
                                         <rect
@@ -3019,7 +3019,7 @@ export const SectionLibrary = () => {
       </g>
       <defs>
         <pattern
-          id="pattern0"
+          id="section-library-p0"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3229,7 +3229,7 @@ export const SectionLibrary = () => {
           />
         </filter>
         <pattern
-          id="pattern1"
+          id="section-library-p1"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3240,7 +3240,7 @@ export const SectionLibrary = () => {
           />
         </pattern>
         <pattern
-          id="pattern2"
+          id="section-library-p2"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3251,7 +3251,7 @@ export const SectionLibrary = () => {
           />
         </pattern>
         <pattern
-          id="pattern3"
+          id="section-library-p3"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3262,7 +3262,7 @@ export const SectionLibrary = () => {
           />
         </pattern>
         <pattern
-          id="pattern4"
+          id="section-library-p4"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3273,7 +3273,7 @@ export const SectionLibrary = () => {
           />
         </pattern>
         <pattern
-          id="pattern5"
+          id="section-library-p5"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3284,7 +3284,7 @@ export const SectionLibrary = () => {
           />
         </pattern>
         <pattern
-          id="pattern6"
+          id="section-library-p6"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3295,7 +3295,7 @@ export const SectionLibrary = () => {
           />
         </pattern>
         <pattern
-          id="pattern7"
+          id="section-library-p7"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3306,7 +3306,7 @@ export const SectionLibrary = () => {
           />
         </pattern>
         <pattern
-          id="pattern8"
+          id="section-library-p8"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3317,7 +3317,7 @@ export const SectionLibrary = () => {
           />
         </pattern>
         <pattern
-          id="pattern9"
+          id="section-library-p9"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
@@ -3328,7 +3328,7 @@ export const SectionLibrary = () => {
           />
         </pattern>
         <pattern
-          id="pattern10"
+          id="section-library-p10"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"

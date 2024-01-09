@@ -42,7 +42,13 @@ export const HeroEditorTabbed = () => {
           </button>
         ))}
       </div>
-      <div>{PANELS[selectedTab.value]()} </div>
+      <div>
+        {PANELS.map((panel, index) => (
+          <div class={`${index === selectedTab.value ? "block" : "hidden"}`}>
+            {panel()}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

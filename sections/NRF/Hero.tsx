@@ -19,6 +19,7 @@ export interface Props {
   alert?: {
     image?: ImageWidget;
     text?: string;
+    mobileText?: string;
     href?: string;
   };
 }
@@ -35,7 +36,7 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
             <a
               href={alert.href}
               target={alert.href?.includes("http") ? "_blank" : "_self"}
-              class="flex items-center gap-4 rounded-[56px] bg-white/5 border border-white/[.15] backdrop-blur-xl py-2 px-4 z-10 text-white hover:scale-[1.05] transition-all duration-300 ease-out cursor-pointer"
+              class="mx-6 lg:mx-0 flex items-center gap-4 rounded-[56px] bg-white/5 border border-white/[.15] backdrop-blur-xl py-2 px-4 z-10 text-white hover:scale-[1.05] transition-all duration-300 ease-out cursor-pointer"
             >
               <img
                 class="w-5 h-5"
@@ -44,9 +45,10 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
                 width={20}
                 height={20}
               />
-              <p>{alert.text}</p>
+              <p class="hidden lg:block">{alert.text}</p>
+              <p class="text-sm lg:hidden">{alert.mobileText || alert.text}</p>
               <svg
-                class="h-5 w-5"
+                class="h-5 w-5 hidden md:block"
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"
@@ -85,7 +87,9 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
                   class="group relative relative overflow-hidden rounded-full bg-[#02F67C] px-6 py-2 lg:px-8 lg:py-3 text-black transition-all duration-300 ease-out hover:bg-gradient-to-r hover:from-[#02F67C] hover:to-[#06E474] hover:shadow-hero"
                 >
                   <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white font-medium lg:text-[24px] opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
-                  <span class="relative font-medium lg:text-[20px]">{item?.text}</span>
+                  <span class="relative font-medium lg:text-[20px]">
+                    {item?.text}
+                  </span>
                 </a>
               ))}
           </div>

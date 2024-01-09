@@ -239,7 +239,7 @@ export const WebAnalytics = () => {
                 width="1181.82"
                 height="730.704"
                 transform="translate(1.09082 47.7391)"
-                fill="url(#pattern0)"
+                fill="url(#webanalytics-p0)"
                 fill-opacity="0.25"
               />
               <g id="Frame 2609176" filter="url(#filter0_dd_1270_13649)">
@@ -2314,7 +2314,7 @@ export const WebAnalytics = () => {
       </g>
       <defs>
         <pattern
-          id="pattern0"
+          id="webanalytics-p0"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
