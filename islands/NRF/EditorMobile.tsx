@@ -57,7 +57,7 @@ export default function Editor({ features }: Props) {
     <div class="editor bg-black text-white py-32">
       <div class="flex flex-col items-center">
         {features.map(({ title, subtitle, id }, idx) => (
-          <div id={id} class="feature flex flex-col items-center py-8 gap-10">
+          <div id={id} class="feature flex flex-col items-center py-8 gap-10 z-10">
             <div class="space-y-4 mx-10">
               <p class="text-[#02F67C] text-[32px]">
                 {String(idx + 1).padStart(2, "0")}
