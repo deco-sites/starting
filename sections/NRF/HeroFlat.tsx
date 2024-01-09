@@ -30,7 +30,7 @@ export default function HeroFlats({
   cta,
 }: Props) {
   return (
-    <div class="bg-black min-h-screen">
+    <div class="bg-black lg:min-h-screen">
       <div class="mx-auto flex flex-col items-center gap-8">
         <div
           class={`flex w-full lg:h-screen xl:container xl:mx-auto py-20 lg:py-28 mx-5 md:mx-10 z-10 ${

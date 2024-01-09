@@ -47,13 +47,13 @@ function TextLines({ lines, speedRatio = 1, animateOnScroll }: Props) {
   return (
     <div
       id="section"
-      class={`bg-black relative ${
-        animateOnScroll ? "h-[1000px] lg:h-[2000px]" : "h-screen"
+      class={`bg-black relative z-10 ${
+        animateOnScroll ? "py-20 lg:py-0 lg:h-[2000px]" : "lg:h-screen"
       }`}
     >
       <div
         id="inner"
-        class="sticky h-screen top-0 flex items-center justify-center mx-[24px] lg:mx-auto
+        class="lg:sticky lg:h-screen top-0 flex items-center justify-center mx-[24px] lg:mx-auto
       lg:max-w-6xl text-white text-[32px] lg:text-[64px] font-semibold leading-[100%] tracking-[-1.28px] z-10"
       >
         <div>
