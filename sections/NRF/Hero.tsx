@@ -64,7 +64,7 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
           )}
           <div class="flex flex-col items-center gap-6 lg:gap-12 z-10">
             <div
-              class="mx-6 lg:mx-0 inline-block text-[36px] lg:text-[104px] text-center leading-[110%] lg:leading-[100%] font-medium text-white max-w-lg lg:max-w-none"
+              class="mx-6 lg:mx-0 inline-block text-[36px] lg:text-[104px] text-center leading-[110%] lg:leading-[100%] lg:tracking-[-3.12px] font-medium text-white max-w-lg lg:max-w-none"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
