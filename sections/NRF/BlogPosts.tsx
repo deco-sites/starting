@@ -83,7 +83,7 @@ export default function Carousel({ title, cards, locale = "en" }: Props) {
         </Slider>
         <div class="flex flex-row justify-end gap-2 pt-6 pb-12 md:pt-0 md:pb-0 md:py-0">
           <button
-            class="rounded-full p-3 bg-black focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:left-[6rem] md:top-[40%]"
+            class="rounded-full p-3 bg-black focus:outline-none flex items-center justify-center border-none border-0 md:absolute z-10 md:left-[8rem] md:top-[30%]"
             data-slide="prev"
             aria-label="Previous item"
           >
@@ -103,7 +103,7 @@ export default function Carousel({ title, cards, locale = "en" }: Props) {
             </svg>
           </button>
           <button
-            class="rounded-full p-3 bg-black focus:outline-none flex items-center justify-center border-none border-0 md:absolute md:top-[40%] right-[6rem]"
+            class="rounded-full p-3 bg-black focus:outline-none flex items-center justify-center border-none border-0 md:absolute z-10 md:top-[30%] right-[8rem]"
             data-slide="next"
             aria-label="Next item"
           >
