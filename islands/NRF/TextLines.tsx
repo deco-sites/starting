@@ -47,7 +47,7 @@ function TextLines({ lines, speedRatio = 1, animateOnScroll }: Props) {
   return (
     <div
       id="section"
-      class={`bg-black relative${
+      class={`bg-black relative ${
         animateOnScroll ? "py-20 lg:py-0 lg:h-[2000px]" : "lg:h-screen"
       }`}
     >
@@ -56,7 +56,7 @@ function TextLines({ lines, speedRatio = 1, animateOnScroll }: Props) {
         class="lg:sticky lg:h-screen top-0 flex items-center justify-center mx-[24px] lg:mx-auto
       lg:max-w-6xl text-white text-[32px] lg:text-[64px] font-semibold leading-[100%] tracking-[-1.28px] z-10"
       >
-        <div>
+        <div class="z-10">
           {words.map((word) => (
             <>
               <p
