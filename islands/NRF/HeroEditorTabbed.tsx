@@ -30,7 +30,6 @@ export const HeroEditorTabbed = () => {
           <button
             onClick={() => {
               selectedTab.value = index;
-              console.log(selectedTab.value);
             }}
             class={`text-[12px] lg:text-[18px] py-2 font-medium border-b ${
               index === selectedTab.value
