@@ -32,7 +32,6 @@ import * as $NRF_Faq from "./islands/NRF/Faq.tsx";
 import * as $NRF_Features from "./islands/NRF/Features.tsx";
 import * as $NRF_FeaturesWithImage from "./islands/NRF/FeaturesWithImage.tsx";
 import * as $NRF_Header from "./islands/NRF/Header.tsx";
-import * as $NRF_HeroEditor from "./islands/NRF/HeroEditor.tsx";
 import * as $NRF_HeroEditorTabbed from "./islands/NRF/HeroEditorTabbed.tsx";
 import * as $NRF_PageWrapper from "./islands/NRF/PageWrapper.tsx";
 import * as $NRF_TextLines from "./islands/NRF/TextLines.tsx";
@@ -79,7 +78,6 @@ const manifest = {
     "./islands/NRF/Features.tsx": $NRF_Features,
     "./islands/NRF/FeaturesWithImage.tsx": $NRF_FeaturesWithImage,
     "./islands/NRF/Header.tsx": $NRF_Header,
-    "./islands/NRF/HeroEditor.tsx": $NRF_HeroEditor,
     "./islands/NRF/HeroEditorTabbed.tsx": $NRF_HeroEditorTabbed,
     "./islands/NRF/PageWrapper.tsx": $NRF_PageWrapper,
     "./islands/NRF/TextLines.tsx": $NRF_TextLines,
