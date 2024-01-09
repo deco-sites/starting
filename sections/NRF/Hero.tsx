@@ -1,4 +1,7 @@
-import { HeroEditorTabbed } from "deco-sites/starting/islands/NRF/HeroEditorTabbed.tsx";
+import {
+  HeroEditorTabbed,
+  Tab,
+} from "deco-sites/starting/islands/NRF/HeroEditorTabbed.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 
 interface CTA {
@@ -6,6 +9,7 @@ interface CTA {
   text: string;
   variant: "Normal" | "Reverse";
 }
+
 export interface Props {
   /**
    * @format html
@@ -22,9 +26,10 @@ export interface Props {
     mobileText?: string;
     href?: string;
   };
+  tabs?: Tab[];
 }
 
-export default function Hero({ title, subtitle, cta, alert }: Props) {
+export default function Hero({ title, subtitle, cta, alert, tabs }: Props) {
   return (
     <div
       id="hero"
@@ -96,7 +101,7 @@ export default function Hero({ title, subtitle, cta, alert }: Props) {
         </div>
       </div>
       <div class="mx-auto flex flex-col items-center">
-        <HeroEditorTabbed />
+        <HeroEditorTabbed tabs={tabs} />
       </div>
     </div>
   );
