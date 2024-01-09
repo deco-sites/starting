@@ -1,7 +1,5 @@
-import { IS_BROWSER } from "https://deno.land/x/fresh@1.1.4/src/runtime/utils.ts";
 import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
-import { useId } from "deco-sites/starting/sdk/useId.ts";
 import { Dropdown } from "deco-sites/starting/components/nrf/Dropdown.tsx";
 
 export interface Alert {
@@ -22,11 +20,7 @@ export interface Props {
   };
   menuLinks: MenuLink[];
   idiom: string;
-  pt: { label: string; url: string; selected?: boolean };
-  eng: { label: string; url: string; selected?: boolean };
   pageInitial: string;
-  mkt?: { label: string; url: string; selected?: boolean };
-  dev?: { label: string; url: string; selected?: boolean };
   demo?: { label: string; url: string };
   login: { label: string; url: string };
   sign: { label: string; url: string };
@@ -112,69 +106,13 @@ function MenuLink({ href, label, targetBlank, nested, ...props }: MenuLink) {
 
 export default function Header(props: Props) {
   const [open, setOpen] = useState(false);
-  const urlPortuguese = useSignal("");
-  const urlEnglish = useSignal("");
-  const urlMarketers = useSignal("");
-  const urlDevelopers = useSignal("");
-  const showSwitcher = useSignal(false);
-  const openSwitcher = useSignal(false);
-  const openLanguage = useSignal(false);
-
-  const currentLanguageLink = props.eng.selected ? "/en" : "/pt";
-
-  if (IS_BROWSER) {
-    urlPortuguese.value = window.location.pathname.replace("en", "pt");
-    urlEnglish.value = window.location.pathname.replace("pt", "en");
-
-    const urlPage = window.location.pathname;
-
-    urlMarketers.value = urlPage.includes("en") ? "/en" : "/pt";
-    urlDevelopers.value = urlPage.includes("en") ? "/en/dev" : "/pt/dev";
-
-    if (urlPage.includes("dev") && props.mkt && props.dev) {
-      props.pageInitial = urlPage.includes("en")
-        ? "for developers"
-        : "para desenvolvedores";
-      props.mkt.selected = false;
-      props.dev.selected = true;
-    }
-
-    const homePageHas = ["/en", "/pt", "/en/dev", "/pt/dev"];
-
-    if (homePageHas.includes(urlPage)) {
-      showSwitcher.value = true;
-    }
-  }
-
-  const handleMenu = () => {
-    if (openSwitcher.value == false) {
-      openSwitcher.value = true;
-    } else {
-      openSwitcher.value = false;
-    }
-  };
-
-  const handleLanguage = () => {
-    if (openLanguage.value == false) {
-      openLanguage.value = true;
-    } else {
-      openLanguage.value = false;
-    }
-  };
-
-  const idMobile = useId();
-  const idDesktop = useId();
-  const alerts = props.alerts;
 
   return (
     <section class="lg:container rounded-full bg-white/5 backdrop-blur-xl fixed top-2 lg:top-6 z-50 w-[calc(100vw-16px)] lg:w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
       <nav class="flex flex-row gap-16 items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <ul class="h-full flex items-center">
           <li class="h-full">
-            <a
-              class="flex items-center h-full pl-4 lg:pl-8 pb-[6px]"
-              href={currentLanguageLink}
-            >
+            <a class="flex items-center h-full pl-4 lg:pl-8 pb-[6px]" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="77"
