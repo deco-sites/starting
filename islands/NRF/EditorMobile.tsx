@@ -21,6 +21,7 @@ export interface EditorFeature {
   title: string;
   subtitle: string;
   key: string;
+  id: string;
 }
 
 export interface Props {
@@ -46,7 +47,7 @@ export default function Editor({ features }: Props) {
         const elements = Array.from(document.querySelectorAll(".feature"));
         const index = elements.indexOf(target);
 
-        timeline(EDITOR_TIMELINES[index]);
+        timeline(EDITOR_TIMELINES[target.id]);
       },
       { margin: "0px 0px -85% 0px" }
     );
@@ -55,8 +56,8 @@ export default function Editor({ features }: Props) {
   return (
     <div class="editor bg-black text-white py-32">
       <div class="flex flex-col items-center">
-        {features.map(({ title, subtitle }, idx) => (
-          <div class="feature flex flex-col items-center py-8 gap-10">
+        {features.map(({ title, subtitle, id }, idx) => (
+          <div id={id} class="feature flex flex-col items-center py-8 gap-10">
             <div class="space-y-4 mx-10">
               <p class="text-[#02F67C] text-[32px]">
                 {String(idx + 1).padStart(2, "0")}

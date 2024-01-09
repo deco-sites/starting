@@ -1,6 +1,5 @@
 import { useEffect } from "preact/hooks";
 import { animate, scroll, inView, stagger, timeline } from "motion";
-import { useSignal } from "@preact/signals";
 
 import { ComponentLibrary } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
 import { RealtimeEditor } from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
