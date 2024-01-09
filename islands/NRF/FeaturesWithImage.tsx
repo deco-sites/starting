@@ -58,7 +58,7 @@ export default function FeaturesWithImage({ title, cards }: Props) {
     <section class="relative bg-black text-white py-20 max-w-screen">
       <div class="mx-6 lg:container lg:mx-auto flex justify-center items-center flex-col gap-20">
         {title && (
-          <h2 class="font-medium text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl">
+          <h2 class="font-medium text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl z-10">
             {title}
           </h2>
         )}
