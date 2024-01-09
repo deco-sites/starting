@@ -66,14 +66,9 @@ export default function Footer({
   return (
     <section class="bg-[#02F67C] relative z-10">
       {rounded && (
-        <>
-          <div class="absolute left-0 -top-[51px] lg:-top-[100px] bg-[#02F67C]">
-            <div class="bg-black w-[50px] h-[51px] lg:w-[100px] lg:h-[100px] rounded-es-full"></div>
-          </div>
-          <div class="absolute right-0 -top-[51px] lg:-top-[100px] bg-[#02F67C]">
-            <div class="bg-black w-[50px] h-[51px] lg:w-[100px] lg:h-[100px] rounded-ee-full"></div>
-          </div>
-        </>
+        <div class="absolute w-full -top-[81px] h-[81px] lg:-top-[100px] lg:h-[100px] bg-[#02F67C]">
+          <div class="w-full h-[51px] lg:h-[100px] bg-black rounded-es-full rounded-ee-full"></div>
+        </div>
       )}
       <div class="max-w-screen-2xl m-auto py-8">
         <div class="px-6 md:px-[2.03rem] flex flex-col lg:flex-row gap-12 lg:justify-between">
