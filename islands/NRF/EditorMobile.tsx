@@ -1,6 +1,5 @@
 import { useEffect } from "preact/hooks";
-import { animate, inView, stagger, timeline } from "motion";
-import { useSignal } from "@preact/signals";
+import { inView, timeline } from "motion";
 
 import { ComponentLibrary } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
 import { RealtimeEditor } from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
@@ -28,16 +27,16 @@ export interface Props {
   features: EditorFeature[];
 }
 
-const svgs = [
-  ComponentLibrary,
-  RealtimeEditor,
-  DesignSystem,
-  FullCode,
-  AppsIntegrations,
-  Segmentation,
-  Analytics,
-  ContentModeling,
-];
+const AnimationComponents = {
+  "component-library": ComponentLibrary,
+  "no-code-editing": RealtimeEditor,
+  "design-system": DesignSystem,
+  "full-code-editing": FullCode,
+  "integrate-extend": AppsIntegrations,
+  "multivariate-testing": Segmentation,
+  monitoring: Analytics,
+  "content-modeling": ContentModeling,
+};
 
 export default function Editor({ features }: Props) {
   useEffect(() => {
@@ -57,7 +56,10 @@ export default function Editor({ features }: Props) {
     <div class="editor bg-black text-white py-32">
       <div class="flex flex-col items-center">
         {features.map(({ title, subtitle, id }, idx) => (
-          <div id={id} class="feature flex flex-col items-center py-8 gap-10 z-10">
+          <div
+            id={id}
+            class="feature flex flex-col items-center py-8 gap-10 z-10"
+          >
             <div class="space-y-4 mx-10">
               <p class="text-[#02F67C] text-[32px]">
                 {String(idx + 1).padStart(2, "0")}
@@ -70,7 +72,7 @@ export default function Editor({ features }: Props) {
               </div>
             </div>
             <div class="w-[93%]">
-              {svgs[idx]({
+              {AnimationComponents[id as keyof typeof AnimationComponents]({
                 class: "w-full",
               })}
             </div>
