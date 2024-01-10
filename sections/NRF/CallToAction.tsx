@@ -1,4 +1,5 @@
 export interface CTA {
+  id?: string;
   href: string;
   text: string;
   variant: "Normal" | "Reverse";
@@ -19,6 +20,8 @@ export default function CallToAction({ text, cta }: Props) {
         <div class="flex flex-col md:flex-row gap-4 z-20">
           {cta?.map((item) => (
             <a
+              key={item?.id}
+              id={item?.id}
               href={item?.href}
               target={item?.href.includes("http") ? "_blank" : "_self"}
               class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out ${
