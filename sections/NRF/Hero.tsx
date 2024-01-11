@@ -76,16 +76,14 @@ export default function Hero({ title, subtitle, cta, alert, tabs }: Props) {
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
-            >
-            </div>
+            ></div>
             {subtitle && (
               <div
                 class="mx-11 inline-block lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none"
                 dangerouslySetInnerHTML={{
                   __html: subtitle,
                 }}
-              >
-              </div>
+              ></div>
             )}
             {cta && (
               <div class="flex flex-col items-start lg:flex-row gap-4">
@@ -101,8 +99,7 @@ export default function Hero({ title, subtitle, cta, alert, tabs }: Props) {
                         : "bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero"
                     }`}
                   >
-                    <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
-                    </span>
+                    <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
                     <span class="relative font-medium lg:text-[20px]">
                       {item?.text}
                     </span>
@@ -113,6 +110,7 @@ export default function Hero({ title, subtitle, cta, alert, tabs }: Props) {
           </div>
         </div>
       </div>
+      {/* <div class="ellipse-1" /> */}
       <div class="mx-auto flex flex-col items-center">
         <HeroEditorTabbed tabs={tabs} />
       </div>
