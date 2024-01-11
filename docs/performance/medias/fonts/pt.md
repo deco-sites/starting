@@ -44,6 +44,7 @@ coloque o seguinte estilo:
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
+<<<<<<< HEAD
   font-display: swap;
   src: url(/live/invoke/website/loaders/asset.ts?src=https://sualoja.deco.site/minha_fonte.ttf) format('truetype');
 }
@@ -62,3 +63,10 @@ do conteúdo de texto, mas pode impactar na movimentação do layout.
 > **dica**: Uma alternativa é fazer uso do `font-display: optional` que permite
 > o browser ativar a fonte de fallback apenas se a conexão do usuário estiver
 > lenta.
+=======
+  font-display: swap; // usar swap ou optional para impactar o FCP/LCP o mininmo
+  src: url(/live/invoke/website/loaders/asset.ts?src=https://example.com/xpto.ttf?v=20240110) format('truetype'); // Importante url self hosted
+}
+</style>
+
+>>>>>>> 8839c2d (restructuring performance docs)

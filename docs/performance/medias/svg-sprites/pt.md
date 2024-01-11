@@ -15,20 +15,22 @@ description: Aprenda a usar a técnica de SVG sprites para otimizar a performanc
 
 # SVG
 
-SVG (Scalable Vector Graphics, ou Vetores Gráficos Escaláveis) é um formato
-gráfico comumente utilizando em aplicações para representar ícones, logomarcas
-ou elementos que precisam ser escalados sem perder qualidade. Contudo, o seu uso
-pode impactar negativamente a performance de uma página web em diversas
-métricas, como: tempo de carregamento da página (speed index), tempo para exibir
-o primeiro conteúdo visível (FCP), tempo para exibir o último conteúdo visível
-(LCP).
+SVG (Scalable Vector Graphics, ou Vetores Gráficos Escaláveis) é um formato gráfico comumente utilizando em aplicações para representar ícones, logomarcas ou elementos que precisam ser escalados sem perder qualidade. Contudo, o seu uso pode impactar negativamente a performance de uma página web em diversas métricas, como: tempo de carregamento da página (speed index), tempo para exibir o primeiro conteúdo visível (FCP), tempo para exibir o último conteúdo visível (LCP).
 
+<<<<<<< HEAD
 # A técnica SVG Sprites
 
 SVG sprites consiste em você ter um arquivo svg que seja cacheável e acessível
 pela internet (exemplo: na sua pasta `static`), e nele tenha as as símbolos de
 cada svg utilizando a tag `<symbol>` e adicionando a propriedade `id` em cada um
 dos elementos que deseja utilizar.
+=======
+Este post vai descrever como utilizar a técnica de SVG sprites para diminuir o impacto na performance de uma página causado por SVGs.
+
+#### O que é a técnica SVG Sprites?
+
+SVG sprites consiste em você ter um arquivo svg que seja acessível pela internet e nele tenha as as símbolos de cada svg utilizando a tag `<symbol>` e adicionando a propriedade `id` em cada um dos elementos que deseja utilizar - pode utilizar outras tags como: `<defs>` , `<g>` dentre outras.
+>>>>>>> 8839c2d (restructuring performance docs)
 
 Segue um exemplo de arquivo svg com um símbolo e id **XMark**
 
@@ -40,9 +42,7 @@ Segue um exemplo de arquivo svg com um símbolo e id **XMark**
 
 # SVG Sprites para melhorar a performance do seu site
 
-Para utilizar um svg que está dentro de um arquivo, é possível referencia-lo
-através do endereço do arquivo e do id do símbolo que foi definido no arquivo
-através da tag `<use>`.
+Para utilizar um svg que está dentro de um arquivo, é possível referencia-lo através do endereço do arquivo e do id do símbolo que foi definido no arquivo através da tag `<use>`.
 
 Segue um exemplo:
 
@@ -64,18 +64,13 @@ Você pode referenciar o símbolo **XMark** dentro do seu html desta forma:
 </svg>
 ```
 
-Desta forma, o tamanho do documento da sua página não será incrementado com o
-tamanho do SVG **XMark**, dado que ele não faz parte do seu documento, pois ele
-está em outro arquivo. No caso de uso de SVG dentro de ilhas, a quantidade de
-JavaScript gerado no bundle será menor.
+Desta forma, o tamanho do documento da sua página não será incrementado com o tamanho do SVG **XMark**, dado que ele não faz parte do seu documento, pois ele está em outro arquivo. No caso de uso de SVG dentro de ilhas, a quantidade de JavaScript gerado no bundle será menor.
 
 # Quando utilizar a técnica?
 
 > ⚠️ Não é sempre adequado utilizar a técnica, porém é sempre válido testá-la.
 
-Considerando que existirá um ou vários arquivos svgs, com o intuito de melhorar
-a performance do seu site e manter uma ótima usabilidade, é sugerido que utilize
-desta abordagem nos seguintes casos:
+Considerando que existirá um ou vários arquivos svgs, com o intuito de melhorar a performance do seu site e manter uma ótima usabilidade, é sugerido que utilize desta abordagem nos seguintes casos:
 
 - SVG não é visível na tela inicial do usuário (não está no "above the fold")
 - SVG é exibido através de interação do usuário na página, por exemplo: hover,
