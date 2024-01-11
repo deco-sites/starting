@@ -1,14 +1,16 @@
 import CheckIcon from "deco-sites/starting/components/ui/CheckIcon.tsx";
 
+export interface CTA {
+  id?: string;
+  text: string;
+  link: string;
+}
 export interface Plan {
   title: string;
   text: string;
   price: string;
   priceCustom: boolean;
-  button: {
-    text: string;
-    link: string;
-  };
+  button: CTA;
   benefits: string[];
 }
 
@@ -20,15 +22,15 @@ export interface Props {
   paidPlans: Plan[];
 }
 
-function Button({ text, link }: { text: string; link: string }) {
+function Button({ id, text, link }: CTA) {
   return (
     <a
+      id={id}
       href={link}
       target="_blank"
       class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero text-center`}
     >
-      <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
-      </span>
+      <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
       <span class="relative font-medium lg:text-[20px] text-center">
         {text}
       </span>
@@ -81,9 +83,7 @@ export default function Pricing({
           <h1 class="text-[42px] leading-[100%] tracking-[-1.92px] md:text-[64px] text-almost-white font-semibold">
             {title}
           </h1>
-          <p class="md:text-[24px] text-zinc-400 leading-[120%]">
-            {text}
-          </p>
+          <p class="md:text-[24px] text-zinc-400 leading-[120%]">{text}</p>
         </div>
         {/* divider */}
         <div class="hidden md:block border-r border-white/[0.1]"></div>
@@ -104,7 +104,11 @@ export default function Pricing({
                 custom={freePlan.priceCustom}
                 recurrence={recurrence}
               />
-              <Button link={freePlan.button.link} text={freePlan.button.text} />
+              <Button
+                id={freePlan.button.id}
+                link={freePlan.button.link}
+                text={freePlan.button.text}
+              />
             </div>
           </div>
           <div>
@@ -150,7 +154,11 @@ export default function Pricing({
                       );
                     })}
                   </ul>
-                  <Button link={plan.button.link} text={plan.button.text} />
+                  <Button
+                    id={plan.button.id}
+                    link={plan.button.link}
+                    text={plan.button.text}
+                  />
                 </div>
               </div>
             );

@@ -6,6 +6,7 @@ export interface Props {
   langThanks?: string;
 
   formInfor?: {
+    buttonId?: string;
     formTitle?: string;
     BusinessCTAName?: string;
     DevCTAName?: string;
@@ -88,6 +89,7 @@ export default function ContactUs({
               required
             />
             <input
+              id={formInfor?.buttonId}
               type="submit"
               value={formInfor?.submiteName || "Get early access"}
               class={`w-full cursor-pointer group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero font-medium lg:text-[20px]`}
