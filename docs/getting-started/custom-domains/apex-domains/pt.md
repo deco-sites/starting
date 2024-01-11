@@ -1,9 +1,7 @@
 ---
-description: Redirecionando domínios Apex.
+description: Como redirecionar domínio sem www
 since: 1.1.0
 ---
-
-# Como redirecionar domínio sem www
 
 ## O que é domínio apex?
 

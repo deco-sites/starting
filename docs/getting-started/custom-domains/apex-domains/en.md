@@ -1,9 +1,7 @@
 ---
-description: Redirecting Apex Domains.
+description: How to Redirect a Non-www Domain
 since: 1.1.0
 ---
-
-# How to Redirect a Non-www Domain
 
 ## What is an Apex Domain?
 
