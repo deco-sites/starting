@@ -289,12 +289,49 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
+          pt: "O guia deco para performance",
+          en: "Deco performance guide",
+        },
+        slug: "performance/guide",
+      },
+      {
+        title: {
+          pt: "Teste local de performance",
+          en: "Performance local test",
+        },
+        slug: "performance/testing/local",
+      },
+      {
+        title: {
+          pt: "Teste de pagespeed",
+          en: "Pagespeed test",
+        },
+        slug: "performance/testing/pagespeed",
+      },
+      {
+        title: {
+          pt: "Teste do Core Web Vitals",
+          en: "Core Web Vitals test",
+        },
+        slug: "performance/testing/cwv",
+      },
+      {
+        title: {
+          pt: "Teste de métricas deco de performance",
+          en: "Deco metrics performance tests",
+        },
+        slug: "performance/testing/decometrics",
+      },
+      // Juntar imagens e sprites. incluir fontes e videos
+      // Nas imagens: REDUZIR E SIMPLIFICAR
+      {
+        title: {
           pt:
             "Aprenda a usar a técnica de SVG sprites para otimizar a performance do seu site",
           en:
             "Learn how to use the SVG sprites technique to optimize the performance of your website",
         },
-        slug: "performance/tips/svg-sprites",
+        slug: "performance/medias/svg-sprites",
       },
       {
         title: {

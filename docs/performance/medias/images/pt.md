@@ -21,57 +21,24 @@ CSS. Além disso, certifique-se de entender os seguintes conceitos:
 - LCP: https://web.dev/lcp/
 - aspect-ratio CSS: https://www.w3schools.com/cssref/css_pr_aspect-ratio.php
 
-### Devo usar image ou picture?
+### Image e Picture
 
-Existem duas tags HTML para adicionar imagens a um site, `<img/>` e
-`<picture/>`. Você deve escolher uma ou outra dependendo do design do seu site
-em dispositivos móveis e desktop. Use `<img/>` quando a proporção da imagem for
-a mesma em todos os tamanhos de tela. Use `<picture/>` se as proporções variarem
-com o tamanho da janela.
-
-No exemplo abaixo, temos a página de um produto em um site de comércio
-eletrônico. Observe que a imagem principal do produto mantém sua proporção
-(360/500 neste caso) tanto em dispositivos móveis quanto em desktops. Nesse
-caso, devemos usar a tag `<img/>`.
+- Image define um img que tem sempre a mesma proporção (largura vs altura) independente do tamanho de tela
 
 <img src="/docs/image-aspect-ratio.png">
 
-No entanto, no exemplo do carrossel de imagens abaixo, vemos que a imagem Não
-mantém sua proporção em dispositivos móveis/desktop, passando de 1440/600 para
-360/600. Nesse caso, devemos usar o elemento `<picture/>`.
+- Picture define imagens que podem variar de tamanho de acordo com a resolução de tela
 
 <img src="/docs/picture-aspect-ratio.png">
 
-Continue lendo para aprender como usar essas tags para adicionar imagens ao seu
-site.
-
-#### Adicionando imagem
-
-Usar apenas a tag `<img/>` do HTML pode ser muito difícil e pode reduzir o
-desempenho do seu site. Para isso, o Deco fornece um componente `<Image/>`. Este
-componente funciona de maneira semelhante à tag `<img/>`, mas oferece algumas
-configurações padrão interessantes, como:
+A deco tem os componentes prontos que oferecem:
 
 - Imagens responsivas para todos os tamanhos de tela
 - Tags de pré-carregamento para melhorar o LCP
 
-Recomenda-se nunca usar a tag `<img/>` diretamente, mas usar o componente
-`<Image/>` em vez disso. Para usá-lo:
+#### Adicionando imagem
 
-```tsx
-import Image from "apps/website/components/Image.tsx";
-
-export default function MeuComponente() {
-  return <Image src="https://example.com/image.png" />;
-}
-```
-
-Agora, você deverá ver a imagem no seu navegador! O componente `<Image/>` não
-adiciona nenhum estilo por padrão. Para estilizá-lo, você pode usar CSS como de
-costume. Por exemplo, para fazer a imagem preencher todo o espaço disponível,
-você pode aplicar
-
-os seguintes tokens do Tailwind ao código acima:
+Para usar, estilize com classes tailwind, é obrigatório usar as props height/width:
 
 ```tsx
 import Image from "apps/website/components/Image.tsx";
@@ -81,59 +48,19 @@ export default function MeuComponente() {
     <Image
       src="https://example.com/image.png"
       class="w-full h-full object-cover"
+      width={50}
+      height={50}
     />
   );
-}
+} 
 ```
 
-Agora, siga o guia para adicionar as propriedades padrão de `width` e `height`
-ao componente `<Image/>`. Observe que isso é obrigatório e não seguir este guia
-pode ter um grande impacto no desempenho.
-
 #### Adicionando picture
-
-As tags `<picture/>` e `<source/>` do HTML sofrem dos mesmos problemas da tag
-`<img/>`. Ambas são complexas e difíceis de usar. Para isso, o Deco também
-fornece os componentes personalizados `<Picture/>` e `<Source/>`, que trazem
-recursos como:
-
-- Imagens responsivas para todos os tamanhos de tela
-- Tags de pré-carregamento para melhorar o LCP
 
 Abaixo, você encontrará um exemplo mínimo que renderiza uma imagem para desktop
 e outra para dispositivos móveis.
 
-```tsx
-import { Picture, Source } from "apps/website/components/Picture.tsx";
-
-function MeuComponente() {
-  return (
-    <Picture>
-      <Source
-        media="(max-width: 768px)"
-        src="https://example.com/image-mobile.png"
-      />
-      <Source
-        media="(min-width: 768px)"
-        src="https://example.com/image-desktop.png"
-      />
-      <img src="https://example.com/image-desktop.png" />
-    </Picture>
-  );
-}
-```
-
-> Observe que você deve usar a tag `<img/>` dentro de Picture, não o componente
-> `<Image/>`. Observe que o atributo `src` na tag `<img/>` É OBRIGATÓRIO e deve
-> receber a imagem maior, neste caso, a do desktop.
-
-O exemplo acima renderiza a imagem `/image-mobile.png` em tamanhos de tela de
-até 768px de largura. Em tamanhos de tela maiores, será renderizada a imagem
-`/image-desktop.png`.
-
-Para estilizar essa imagem, adicione classes à tag `<img/>`. Por exemplo, para
-fazer a imagem preencher todo o espaço disponível, você pode aplicar os
-seguintes tokens do Tailwind ao código acima:
+/// TODO COLOCAR WIDTH HEIGHT EM SOURCE E IMG
 
 ```tsx
 import { Picture, Source } from "apps/website/components/Picture.tsx";
@@ -157,6 +84,18 @@ function MeuComponente() {
   );
 }
 ```
+
+> Observe que você deve usar a tag `<img/>` dentro de Picture, não o componente
+> `<Image/>`. Observe que o atributo `src` na tag `<img/>` É OBRIGATÓRIO e deve
+> receber a imagem maior, neste caso, a do desktop.
+
+O exemplo acima renderiza a imagem `/image-mobile.png` em tamanhos de tela de
+até 768px de largura. Em tamanhos de tela maiores, será renderizada a imagem
+`/image-desktop.png`.
+
+Para estilizar essa imagem, adicione classes à tag `<img/>`. Por exemplo, para
+fazer a imagem preencher todo o espaço disponível, você pode aplicar os
+seguintes tokens do Tailwind ao código acima:
 
 Agora, siga o guia para adicionar as propriedades padrão de `width` e `height`
 ao componente `<Source/>`. Observe que isso é obrigatório e não seguir este guia
@@ -297,32 +236,3 @@ estará otimizando o carregamento de imagens para melhorar o LCP.
 > pré-carregamento de multiplas imagens pode piorar a nota LCP. Para verificar
 > que somente uma imagem esteja sendo pré-carregada, verifique que ha somente
 > uma tag `<link rel="preload"/>`.
-
-Agora você sabe como adicionar imagens ao seu site usando os componentes
-`<Image/>`, `<Picture/>` e `<Source/>` do Deco. Lembre-se de ajustar as
-propriedades de largura e altura corretamente e otimizar o carregamento das
-imagens para um melhor desempenho do LCP.
-
-Você quer aprender como usamos HTML/CSS/JS para implementar os componentes de
-Image, Picture e Source? Veja o código fonte em:
-[Image.tsx](https://github.com/deco-cx/live/blob/main/std/ui/components/Image.tsx)
-,
-[Picture.tsx](https://github.com/deco-cx/live/blob/main/std/ui/components/Picture.tsx)
-
-**Referências:**
-
-<https://github.com/deco-cx/live/blob/main/std/ui/components/Image.tsx>
-
-<https://github.com/deco-cx/live/blob/main/std/ui/components/Picture.tsx>
-
-<https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset>
-
-<https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/sizes>
-
-<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture>
-
-<https://dev.to/antonfrattaroli/what-happens-when-you-type-googlecom-into-a-browser-and-press-enter-39g8>
-
-<https://imagekit.io/responsive-images/#chapter-1---what-is-responsive-images>
-
-<https://caniuse.com/>
