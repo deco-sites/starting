@@ -24,7 +24,7 @@ function TextLines({ lines, speedRatio = 1, animateOnScroll }: Props) {
 
       const handleScroll = ({ y }: { y: { progress: number } }) => {
         const currHighlighted = Math.floor(
-          y.progress * 2 * paragraphs.length
+          y.progress * 2 * paragraphs.length,
         );
         const direction = currHighlighted > lastHighlighted ? 1 : -1;
         const color = direction === 1 ? "white" : "#131313";
@@ -63,7 +63,8 @@ function TextLines({ lines, speedRatio = 1, animateOnScroll }: Props) {
                 class={`inline text-white`}
               >
                 {word}
-              </p>{" "}
+              </p>
+              {" "}
             </>
           ))}
         </div>

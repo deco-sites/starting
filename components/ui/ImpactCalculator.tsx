@@ -77,7 +77,6 @@ export default function ImpactCalculator({
       .catch((error) => {
         loading.value = false;
         alert("Request to PageSpeed has failed. Please try again.");
-        console.log("errorrrr", error);
       });
     const promiseDesktop = fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=desktop`,
@@ -86,7 +85,6 @@ export default function ImpactCalculator({
       .catch((error) => {
         loading.value = false;
         alert("Request to PageSpeed has failed. Please try again.");
-        console.log("errorrrr", error);
       });
 
     const formData = new FormData();

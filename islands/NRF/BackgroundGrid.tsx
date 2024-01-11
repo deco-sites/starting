@@ -21,7 +21,8 @@ export const CursorFollower = () => {
 
   const { x, y } = position.value;
 
-  const transform = `translate3d(${x}vw, ${y}vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`;
+  const transform =
+    `translate3d(${x}vw, ${y}vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`;
 
   return (
     <div
@@ -31,6 +32,7 @@ export const CursorFollower = () => {
         transformStyle: "preserve-3d",
         transform: transform,
       }}
-    ></div>
+    >
+    </div>
   );
 };

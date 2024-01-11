@@ -38,8 +38,8 @@ process and allows for efficient version control and maintenance of Apps.
 
 To create your own deco Apps, follow these steps:
 
-1. Run the command `deno run -Ar https://deco.cx/start` to initialize a new
-   deco App.
+1. Run the command `deno run -Ar https://deco.cx/start` to initialize a new deco
+   App.
 2. Define the functionalities or components you want to bundle into the App.
 3. Organize the functions, sections, loaders, or other deco components within
    the App directory.

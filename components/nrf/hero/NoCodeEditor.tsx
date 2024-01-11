@@ -16,7 +16,7 @@ export const NoCodeEditor = () => {
             rx="18.8588"
             fill="black"
           />
-          
+
           <g id="Top navigation">
             <rect
               width="1181.82"

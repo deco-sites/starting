@@ -21,7 +21,12 @@ function FeatureCard({ image, title, text }: Card) {
     <div class="feature-card transform translate-y-16 group border-l border-transparent group-hover:-translate-y-3 duration-200 w-full flex flex-col gap-8 py-10 px-12 whitespace-pre-line opacity-0 z-40">
       {image && (
         <div class="p-6 rounded-full bg-[#113032] text-[#02F67C]">
-          <img class="object-fit w-12 h-12" src={image} alt={title} width={48} />
+          <img
+            class="object-fit w-12 h-12"
+            src={image}
+            alt={title}
+            width={48}
+          />
         </div>
       )}
       <div class="space-y-4 text-center">
@@ -45,12 +50,12 @@ export default function FeaturesWithImage({ title, cards }: Props) {
         animate(
           target.querySelectorAll(".feature-card"),
           { opacity: 1, transform: "translateY(0px)" },
-          { delay: stagger(0.1), duration: 1, easing: "ease-out" }
+          { delay: stagger(0.1), duration: 1, easing: "ease-out" },
         );
       },
       {
         margin: "0px 0px -100px 0px",
-      }
+      },
     );
   }, []);
 
@@ -63,9 +68,7 @@ export default function FeaturesWithImage({ title, cards }: Props) {
           </h2>
         )}
         <div class="features">
-          {cards?.map((card) => (
-            <FeatureCard {...card} />
-          ))}
+          {cards?.map((card) => <FeatureCard {...card} />)}
         </div>
       </div>
     </section>

@@ -135,7 +135,8 @@ export const RealtimeEditor = (props: AnimatedSvgProps) => {
                               that will make your customer want to buy it{" "}
                             </tspan>
                             <tspan x="557" y="275.195">
-                              right now &#x2014; no lorem ipsum needed, just{" "}
+                              right now &#x2014; no lorem ipsum needed,
+                              just{" "}
                             </tspan>
                             <tspan x="557" y="302.195">
                               pure delightment!

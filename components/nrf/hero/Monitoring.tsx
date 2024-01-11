@@ -242,7 +242,10 @@ export const Monitoring = () => {
                 fill="url(#monitoring-p0)"
                 fill-opacity="0.25"
               />
-              <g id="monitoring-hyperdx-right" filter="url(#filter0_dd_1270_15145)">
+              <g
+                id="monitoring-hyperdx-right"
+                filter="url(#filter0_dd_1270_15145)"
+              >
                 <g clip-path="url(#clip2_1270_15145)">
                   <g id="Assets/Panel header">
                     <rect
@@ -525,7 +528,10 @@ export const Monitoring = () => {
                   stroke-width="0.7853"
                 />
               </g>
-              <g id="monitoring-hyperdx-left" filter="url(#filter1_dd_1270_15145)">
+              <g
+                id="monitoring-hyperdx-left"
+                filter="url(#filter1_dd_1270_15145)"
+              >
                 <g clip-path="url(#clip3_1270_15145)">
                   <g id="Assets/Panel header_2">
                     <rect

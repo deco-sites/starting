@@ -1,5 +1,5 @@
 import { useEffect } from "preact/hooks";
-import { animate, scroll, inView, stagger, timeline } from "motion";
+import { animate, inView, scroll, stagger, timeline } from "motion";
 
 import { ComponentLibrary } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
 import { RealtimeEditor } from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
@@ -15,7 +15,7 @@ import { EDITOR_TIMELINES } from "deco-sites/starting/animations/timelines/edito
 
 /**
  * @title {{{key}}}
- **/
+ */
 export interface EditorFeature {
   title: string;
   subtitle: string;
@@ -56,7 +56,7 @@ export default function Editor({ title, features }: Props) {
       animate(
         target.querySelectorAll(".item"),
         { opacity: 1, transform: "translateY(0px)" },
-        { delay: stagger(0.1), duration: 1, easing: "ease-out" }
+        { delay: stagger(0.1), duration: 1, easing: "ease-out" },
       );
     };
 
@@ -66,8 +66,8 @@ export default function Editor({ title, features }: Props) {
         const index = Math.floor(y.progress * elements.length);
         const fractionPerElement = 1 / elements.length;
 
-        const fraction =
-          (y.progress - index * fractionPerElement) / fractionPerElement;
+        const fraction = (y.progress - index * fractionPerElement) /
+          fractionPerElement;
 
         animate(
           `#feature-progress-${index}`,
@@ -76,23 +76,21 @@ export default function Editor({ title, features }: Props) {
           },
           {
             duration: 0,
-          }
+          },
         );
       },
       {
         target: document.querySelector(`.editor`)!,
-      }
+      },
     );
 
     const animateFeature = (
       target: Element,
       index: number,
-      isEntering: boolean
+      isEntering: boolean,
     ) => {
       const directionY = isScrollingDown
-        ? isEntering
-          ? "100px"
-          : "-100px"
+        ? isEntering ? "100px" : "-100px"
         : isEntering
         ? "-100px"
         : "100px";
@@ -110,7 +108,7 @@ export default function Editor({ title, features }: Props) {
       animate(
         `#feature-image-${index}`,
         { opacity: opacityValue },
-        { duration: 0.3 }
+        { duration: 0.3 },
       );
 
       timeline(EDITOR_TIMELINES[target.id]);
@@ -118,7 +116,7 @@ export default function Editor({ title, features }: Props) {
       animate(
         `#feature-title-${index}`,
         { color: colorValue },
-        { duration: 0.3 }
+        { duration: 0.3 },
       );
 
       animate(
@@ -127,7 +125,7 @@ export default function Editor({ title, features }: Props) {
           opacity: opacityValue,
           transform: [transformStarting, transformEnding],
         },
-        { delay: 0.1, duration: 0.3 }
+        { delay: 0.1, duration: 0.3 },
       );
     };
 
@@ -144,7 +142,7 @@ export default function Editor({ title, features }: Props) {
         animate(
           `#feature-progress-wrapper-${index}`,
           { opacity: 1 },
-          { duration: 0.3 }
+          { duration: 0.3 },
         );
 
         animate(`#feature-title-${index}`, { x: 0 }, { duration: 0.3 });
@@ -155,14 +153,14 @@ export default function Editor({ title, features }: Props) {
           animate(
             `#feature-progress-wrapper-${index}`,
             { opacity: 0 },
-            { duration: 0.3 }
+            { duration: 0.3 },
           );
 
           animate(`#feature-title-${index}`, { x: "-24px" }, { duration: 0.3 });
           animateFeature(target, index, false);
         };
       },
-      { margin: "0px 0px -85% 0px" }
+      { margin: "0px 0px -85% 0px" },
     );
   }, []);
 

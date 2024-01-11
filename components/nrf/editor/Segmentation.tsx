@@ -235,7 +235,8 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                       letter-spacing="0em"
                                     >
                                       <tspan x="289.861" y="207.582">
-                                        The perfect description for your product{" "}
+                                        The perfect description for your
+                                        product{" "}
                                       </tspan>
                                       <tspan x="289.861" y="221.582">
                                         that will make your customer want to buy
@@ -676,7 +677,8 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                     letter-spacing="0em"
                                   >
                                     <tspan x="586.27" y="188.663">
-                                      The perfect description for your product{" "}
+                                      The perfect description for your
+                                      product{" "}
                                     </tspan>
                                     <tspan x="586.27" y="202.663">
                                       that will make your customer want to buy
@@ -1696,7 +1698,8 @@ export const Segmentation = (props: AnimatedSvgProps) => {
                                       letter-spacing="0em"
                                     >
                                       <tspan x="586.27" y="500.436">
-                                        The perfect description for your product{" "}
+                                        The perfect description for your
+                                        product{" "}
                                       </tspan>
                                       <tspan x="586.27" y="514.436">
                                         that will make your customer want to buy
