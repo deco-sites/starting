@@ -68,5 +68,8 @@ do conteúdo de texto, mas pode impactar na movimentação do layout.
   src: url(/live/invoke/website/loaders/asset.ts?src=https://example.com/xpto.ttf?v=20240110) format('truetype'); // Importante url self hosted
 }
 </style>
+<<<<<<< HEAD
 
 >>>>>>> 8839c2d (restructuring performance docs)
+=======
+>>>>>>> 5547273 (lint)
