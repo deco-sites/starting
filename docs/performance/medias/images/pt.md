@@ -23,11 +23,13 @@ CSS. Além disso, certifique-se de entender os seguintes conceitos:
 
 ### Image e Picture
 
-- Image define um img que tem sempre a mesma proporção (largura vs altura) independente do tamanho de tela
+- Image define um img que tem sempre a mesma proporção (largura vs altura)
+  independente do tamanho de tela
 
 <img src="/docs/image-aspect-ratio.png">
 
-- Picture define imagens que podem variar de tamanho de acordo com a resolução de tela
+- Picture define imagens que podem variar de tamanho de acordo com a resolução
+  de tela
 
 <img src="/docs/picture-aspect-ratio.png">
 
@@ -38,7 +40,8 @@ A deco tem os componentes prontos que oferecem:
 
 #### Adicionando imagem
 
-Para usar, estilize com classes tailwind, é obrigatório usar as props height/width:
+Para usar, estilize com classes tailwind, é obrigatório usar as props
+height/width:
 
 ```tsx
 import Image from "apps/website/components/Image.tsx";
@@ -52,7 +55,7 @@ export default function MeuComponente() {
       height={50}
     />
   );
-} 
+}
 ```
 
 #### Adicionando picture

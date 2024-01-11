@@ -6,9 +6,7 @@ Fonts
 
 - Usar componente do designsystem
 
-- usar static -> woff2
--- arquivos pequenos (max 25kb)
--- swap
+- usar static -> woff2 -- arquivos pequenos (max 25kb) -- swap
 
 <style>
 @font-face {
@@ -19,4 +17,3 @@ Fonts
   src: url(/live/invoke/website/loaders/asset.ts?src=https://example.com/xpto.ttf?v=20240110) format('truetype'); // Importante url self hosted
 }
 </style>
-
