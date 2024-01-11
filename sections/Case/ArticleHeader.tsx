@@ -34,7 +34,7 @@ export default function ArticleHeader({
       class="w-full mb-4 md:mb-16 mt-24 pt-16 pb-12 md:pb-20"
       style={{ background: bgColor, color: textColor }}
     >
-      <div class="mx-4 md:mx-12 lg:mx-auto lg:container flex flex-col gap-16">
+      <div class="mx-4 md:mx-12 lg:mx-auto lg:container flex flex-col gap-16 z-10">
         {backToBlog?.label && (
           <div>
             <a
@@ -61,7 +61,7 @@ export default function ArticleHeader({
             </a>
           </div>
         )}
-        <div class="w-full flex flex-col lg:flex-row gap-12 lg:gap-32 items-center">
+        <div class="w-full flex flex-col lg:flex-row gap-12 lg:gap-32 items-center z-10">
           <div class="lg:w-1/2 flex flex-col gap-6">
             {logo && (
               <div class="">
