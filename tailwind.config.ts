@@ -49,7 +49,8 @@ export default {
           "linear-gradient(to bottom, #F3FFF9 300px, #ffffff 20%);",
       },
       boxShadow: {
-        hero: "rgb(0, 0, 0) 0px 0px 0px 2px, rgb(6, 228, 116) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        hero:
+          "rgb(0, 0, 0) 0px 0px 0px 2px, rgb(6, 228, 116) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
         "hero-reverse":
           "rgb(0, 0, 0) 0px 0px 0px 2px, rgb(17, 48, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",

@@ -113,13 +113,18 @@ export default function Counter() {
 
 # Sharing state among islands.
 
-In normal Preact development, sharing state between components is usually done via the [Context](https://preactjs.com/guide/v10/context/) API. This works fine for a full client-side application. However, since we are using islands architecture, sharing state among islands require a new approach.
+In normal Preact development, sharing state between components is usually done
+via the [Context](https://preactjs.com/guide/v10/context/) API. This works fine
+for a full client-side application. However, since we are using islands
+architecture, sharing state among islands require a new approach.
 
-Signals are also a great way of sharing state between islands, since one can publish and subscribe for change events in a concise API. 
+Signals are also a great way of sharing state between islands, since one can
+publish and subscribe for change events in a concise API.
 
-To use signals, 
-```tsx 
-import { signal } from '@preact/signals';
+To use signals,
+
+```tsx
+import { signal } from "@preact/signals";
 ```
 
 Now, use the global scope to create, mutate and subscribe to a signal:

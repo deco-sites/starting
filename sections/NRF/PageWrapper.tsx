@@ -7,9 +7,7 @@ export interface Props {
 export default function PageWrapper({ sections }: Props) {
   return (
     <div id="wrapper" class="bg-[#02F67C]">
-      {sections.map(({ Component, props }) => (
-        <Component {...props} />
-      ))}
+      {sections.map(({ Component, props }) => <Component {...props} />)}
     </div>
   );
 }

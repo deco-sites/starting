@@ -43,6 +43,15 @@ const tableOfContents: TableOfContents = [
           en: "Adding custom domains",
         },
         slug: "getting-started/custom-domains",
+        children: [
+          {
+            title: {
+              pt: "Como redirecionar domínio sem wwww",
+              en: "How to redirect domain without www",
+            },
+            slug: "getting-started/custom-domains/apex-domains",
+          },
+        ],
       },
       {
         title: {
@@ -280,8 +289,10 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Aprenda a usar a técnica de SVG sprites para otimizar a performance do seu site",
-          en: "Learn how to use the SVG sprites technique to optimize the performance of your website",
+          pt:
+            "Aprenda a usar a técnica de SVG sprites para otimizar a performance do seu site",
+          en:
+            "Learn how to use the SVG sprites technique to optimize the performance of your website",
         },
         slug: "performance/tips/svg-sprites",
       },
@@ -540,16 +551,23 @@ since: 1.0.0
 }
 
 const tableOfContentsBySlug = tableOfContents.reduce((acc, cur) => {
-  const entries: TopLevelEntry[] = [cur, ...(cur.children || [])];
-  return Object.assign(
-    acc,
-    entries.reduce((acc, cur) => {
-      if (!cur.slug) return acc;
-      acc[cur.slug] = cur;
-      return acc;
-    }, {} as Record<string, TopLevelEntry>),
-  );
+  return addEntriesToAccumulator(acc, cur);
 }, {} as Record<string, TopLevelEntry>);
+
+function addEntriesToAccumulator(
+  acc: Record<string, TopLevelEntry>,
+  entry: TopLevelEntry,
+) {
+  if (entry.slug) {
+    acc[entry.slug] = entry;
+  }
+  if (entry.children) {
+    entry.children.forEach((child: TopLevelEntry) =>
+      addEntriesToAccumulator(acc, child)
+    );
+  }
+  return acc;
+}
 
 export const getMenuDataForLanguage = (language: "en" | "pt") =>
   tableOfContents.map(({ title, slug, children }) => ({

@@ -123,8 +123,30 @@ export default function Sidebar({
     if (Topics) {
       Topics.forEach((topic, index) => {
         const isActive = topic.SubTopics.some(
-          (subTopic) =>
-            subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug,
+          (subTopic, subTopicIndex) => {
+            if (
+              subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
+            ) {
+              const hasNestedTopics = subTopic.NestedTopics
+                ? subTopic.NestedTopics?.length > 0
+                : false;
+              if (hasNestedTopics) setOpenSubTopicIndex(subTopicIndex);
+
+              return true;
+            }
+
+            const nestedTopicOpened = subTopic.NestedTopics?.some((
+              childTopic,
+            ) =>
+              childTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
+            );
+
+            if (nestedTopicOpened) {
+              setOpenSubTopicIndex(subTopicIndex);
+              return true;
+            }
+            return false;
+          },
         );
         if (isActive) {
           setOpenTopicIndex(index);
@@ -327,6 +349,17 @@ export default function Sidebar({
                                   width={16}
                                   height={16}
                                   strokeWidth={"3"}
+                                  onClick={(event) => {
+                                    event.stopPropagation();
+                                    event.preventDefault();
+                                    if (
+                                      openSubTopicIndex === subTopicIndex
+                                    ) {
+                                      setOpenSubTopicIndex(null);
+                                    } else {
+                                      setOpenSubTopicIndex(subTopicIndex);
+                                    }
+                                  }}
                                 />
                               )}
                               <span>{subTopic.label}</span>
@@ -336,23 +369,34 @@ export default function Sidebar({
                               openSubTopicIndex === subTopicIndex && (
                               <ol class="ml-9 flex flex-col">
                                 {subTopic.NestedTopics.map(
-                                  (ChildTopic, subSubIndex) => (
-                                    <li>
-                                      <a
-                                        class={`flex items-center pl-[32px] pr-2 py-2 text-zinc-900 text-[15px] leading-tight cursor-pointer hover:bg-[#F8F9F5]`}
-                                        href={ChildTopic.SidebarLink}
-                                        key={subSubIndex}
-                                        style={getFontWeightStyle(
-                                          fontWeightChildtopic.fontWeight ||
-                                            "normal",
-                                        )}
-                                      >
-                                        <span>
-                                          {ChildTopic.label}
-                                        </span>
-                                      </a>
-                                    </li>
-                                  ),
+                                  (ChildTopic, subSubIndex) => {
+                                    const isNestedTopicActive =
+                                      isSubTopicActive(
+                                        currentSlug,
+                                        ChildTopic,
+                                      );
+                                    return (
+                                      <li>
+                                        <a
+                                          class={`flex items-center pl-[32px] pr-2 py-2 text-[15px] leading-tight cursor-pointer hover:bg-[#F8F9F5] ${
+                                            isNestedTopicActive
+                                              ? "text-[#2E6ED9]"
+                                              : "text-zinc-900 relative w-min-content"
+                                          }`}
+                                          href={ChildTopic.SidebarLink}
+                                          key={subSubIndex}
+                                          style={getFontWeightStyle(
+                                            fontWeightChildtopic.fontWeight ||
+                                              "normal",
+                                          )}
+                                        >
+                                          <span>
+                                            {ChildTopic.label}
+                                          </span>
+                                        </a>
+                                      </li>
+                                    );
+                                  },
                                 )}
                               </ol>
                             )}

@@ -36,7 +36,10 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
   const renderLogoSlide = () => (
     <div className="flex animate-slide z-10">
       {logos.map((logo) => (
-        <div class="flex items-center justify-center h-16 w-36 lg:w-52" target="_blank">
+        <div
+          class="flex items-center justify-center h-16 w-36 lg:w-52"
+          target="_blank"
+        >
           <img
             src={logo.mobile}
             alt={logo.label}
@@ -48,16 +51,18 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
 
   return (
     <div className="logos overflow-hidden py-15 relative">
-      {/* <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-black before:z-20"></div>
-      <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-black after:z-20"></div> */}
+      {
+        /* <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-black before:z-20"></div>
+      <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-black after:z-20"></div> */
+      }
       <div
         className="flex whitespace-nowrap"
-        onMouseEnter={(e) =>
-          (e.currentTarget.style.animationPlayState = "paused")
-        }
-        onMouseLeave={(e) =>
-          (e.currentTarget.style.animationPlayState = "running")
-        }
+        onMouseEnter={(
+          e,
+        ) => (e.currentTarget.style.animationPlayState = "paused")}
+        onMouseLeave={(
+          e,
+        ) => (e.currentTarget.style.animationPlayState = "running")}
       >
         {renderLogoSlide()}
         {renderLogoSlide()}
@@ -72,12 +77,10 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
 export default function Brands({ title, url, images }: Props) {
   const list = useMemo(
     () =>
-      images && images.length > 0
-        ? images
-        : Array(6)
-            .fill(null)
-            .map((_, i) => IMAGES[i % 2]),
-    []
+      images && images.length > 0 ? images : Array(6)
+        .fill(null)
+        .map((_, i) => IMAGES[i % 2]),
+    [],
   );
 
   return (

@@ -352,8 +352,14 @@ export const DesignSystemCursor = () => (
       </filter>
     </defs>
   </svg>
-)
+);
 
 export const DesignSystemCursorPath = () => (
-  <path id="design-system-cursor-path" d="M-121 201C-118.051 280.547 -50.6393 437.441 195.363 428.96C195.573 428.953 195.774 429.078 195.852 429.273L241.885 543.741C241.928 543.846 241.933 543.963 241.9 544.072L211.459 644.509C211.279 645.102 212.125 645.428 212.39 644.868L359 334.624" stroke="#FDE047" stroke-linecap="round" stroke-linejoin="round"/>
-)
+  <path
+    id="design-system-cursor-path"
+    d="M-121 201C-118.051 280.547 -50.6393 437.441 195.363 428.96C195.573 428.953 195.774 429.078 195.852 429.273L241.885 543.741C241.928 543.846 241.933 543.963 241.9 544.072L211.459 644.509C211.279 645.102 212.125 645.428 212.39 644.868L359 334.624"
+    stroke="#FDE047"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+);

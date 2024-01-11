@@ -47,12 +47,12 @@ export default function Features({ title, cards }: Props) {
         animate(
           target.querySelectorAll(".feature-card"),
           { opacity: 1, transform: "translateY(0px)" },
-          { delay: stagger(0.1), duration: 1, easing: "ease-out" }
+          { delay: stagger(0.1), duration: 1, easing: "ease-out" },
         );
       },
       {
         margin: "0px 0px -100px 0px",
-      }
+      },
     );
   }, []);
 
@@ -65,9 +65,7 @@ export default function Features({ title, cards }: Props) {
           </h2>
         )}
         <div class="features">
-          {cards?.map((card) => (
-            <FeatureCard {...card} />
-          ))}
+          {cards?.map((card) => <FeatureCard {...card} />)}
         </div>
       </div>
       {/* <div class="ellipse-3 hidden lg:block" /> */}

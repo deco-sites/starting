@@ -48,9 +48,7 @@ function MobileMenuLink({
           {label}
         </a>
         <ul class="pl-[24px]">
-          {nested.map((item) => (
-            <MobileMenuLink {...item} />
-          ))}
+          {nested.map((item) => <MobileMenuLink {...item} />)}
         </ul>
       </li>
     );
@@ -193,11 +191,9 @@ export default function Header(props: Props) {
           </div>
         </div>
         <div
-          class={
-            open
-              ? "flex flex-col w-[calc(100vw-16px)] h-[calc(100vh-116px)] overflow-auto gap-[40px] fixed bg-[#1E1E1E] left-0 top-[80px] pb-[80px] pt-[24px] z-50 px-3 lg:hidden rounded-[24px]"
-              : "hidden"
-          }
+          class={open
+            ? "flex flex-col w-[calc(100vw-16px)] h-[calc(100vh-116px)] overflow-auto gap-[40px] fixed bg-[#1E1E1E] left-0 top-[80px] pb-[80px] pt-[24px] z-50 px-3 lg:hidden rounded-[24px]"
+            : "hidden"}
         >
           <ul class="flex flex-col divide-y divide-semi-white-13">
             {props.menuLinks.map((link) => {

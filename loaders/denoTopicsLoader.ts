@@ -38,6 +38,7 @@ const loader = (
       }) ?? ([] as SubTopic[]),
     });
   });
+
   return topics;
 };
 
