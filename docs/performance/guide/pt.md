@@ -170,7 +170,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 - Páginas "sambando" na tela
 - Grande tamanho das imagens baixadas
 
-**Guia**: [Otimizando imagens](/docs/performance/medias/images)
+**Guia**: [Otimizando imagens](/docs/performance/medias/images) 🖼️
 
 > **Dica**: use os componentes deco de imagens, como `<Image>` e `<Picture>`, e
 > os configure corretamente, incluindo largura e altura.
@@ -182,7 +182,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 - Tamanho das páginas é grande e as páginas contem SVGs embutidos e repetidos
 - Problemas no Speedindex
 
-**Guia**: [Otimizando SVGs](/docs/performance/medias/svg-sprites)
+**Guia**: [Otimizando SVGs](/docs/performance/medias/svg-sprites) 📈
 
 ## 🖹 Fontes
 
@@ -191,7 +191,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 - O arquivo de fonte demora a ser carregado
 - Valor alto de FCP (apontando a fonte como problema)
 
-**Guia**: [Otimizando fontes](/docs/performance/medias/fonts)
+**Guia**: [Otimizando fontes](/docs/performance/medias/fonts) 🖹
 
 > **Dica**: Use fontes padrão oferecidas pela google. Se preciso use fontes de
 > pouco tamanho (dando preferência a woff/woff2).
@@ -205,7 +205,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
   alto)
 - Um script de terceiro é tem um tamanho grande
 
-**Guia**: [Otimizando scripts](/docs/performance/lazy-3rd-party-scripts)
+**Guia**: [Otimizando scripts](/docs/performance/lazy-3rd-party-scripts) 📜
 
 > **Dica**: Tente só usar o que for extritamente necessário ou substituir
 > scripts de terceiros por versões mais leves. Se não for possível, postergue a
@@ -220,7 +220,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 - A página demora a carregar inicialmente
 - O tamanho das props em ilhas é grande
 
-**Guia**: [Otimizando loaders](/docs/performance/loaders)
+**Guia**: [Otimizando loaders](/docs/performance/loaders) 🔄
 
 > **Dicas**:
 >
@@ -239,7 +239,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 - A página demora a carregar inicialmente
 - O tamanho das props em ilhas é grande
 
-**Guia**: [Otimizando ilhas](/docs/performance/islands)
+**Guia**: [Otimizando ilhas](/docs/performance/islands) 🏝️
 
 > **Dicas**: Prefira CSS puro para evitar ilhas. Utilize `children` para passar
 > um JSX para dentro de uma ilha. Reduza o máximo possível o escopo da ilha
