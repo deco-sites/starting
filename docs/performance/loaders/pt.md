@@ -3,12 +3,10 @@ descrição: Enviando apenas dados necessários ao cliente
 since: 1.0.0
 ---
 
-
     - Utilizar loaders salvos quando duplicado
     - Cache dos loaders
     - Fetch a terceiros em inline loaders
     - Rendering Deferred (destacar o impacto em SEO)
-
 
 Ao carregar dados de APIs externas usando [Loaders](/docs/pt/concepts/loader) e
 enviá-los para a [Section](/docs/pt/concepts/section), é possível que o tamanho

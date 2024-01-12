@@ -324,67 +324,53 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt:
-            "Otimizando imagens",
-          en:
-            "Optimizing images",
+          pt: "Otimizando imagens",
+          en: "Optimizing images",
         },
         slug: "performance/medias/images",
       },
       {
         title: {
-          pt:
-            "Otimizando SVG através de sprites",
-          en:
-            "Optimizing SVG via sprites",
+          pt: "Otimizando SVG através de sprites",
+          en: "Optimizing SVG via sprites",
         },
         slug: "performance/medias/svg-sprites",
       },
       {
         title: {
-          pt:
-            "Otimizando vídeos",
-          en:
-            "Optimizing videos",
+          pt: "Otimizando vídeos",
+          en: "Optimizing videos",
         },
         slug: "performance/medias/videos",
       },
       {
         title: {
-          pt:
-            "Otimizando fontes",
-          en:
-            "Optimizing fonts",
+          pt: "Otimizando fontes",
+          en: "Optimizing fonts",
         },
         slug: "performance/medias/fonts",
       },
       {
         title: {
-          pt:
-            "Otimizando scripts de terceiros",
-          en:
-            "Optimizing 3rd party scripts",
+          pt: "Otimizando scripts de terceiros",
+          en: "Optimizing 3rd party scripts",
         },
         slug: "performance/lazy-3rd-party-scripts",
       },
       {
         title: {
-          pt:
-            "Otimizando Loaders",
-          en:
-            "Optimizing Loaders",
+          pt: "Otimizando Loaders",
+          en: "Optimizing Loaders",
         },
         slug: "performance/loaders",
       },
       {
         title: {
-          pt:
-            "Otimizando Ilhas",
-          en:
-            "Optimizing Islands",
+          pt: "Otimizando Ilhas",
+          en: "Optimizing Islands",
         },
         slug: "performance/islands",
-      }
+      },
     ],
   },
   {

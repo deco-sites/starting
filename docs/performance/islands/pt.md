@@ -12,7 +12,6 @@ since: 1.0.0
 - Estratégias para utilização de ilhas
   [link](https://github.com/deco-sites/aviator/blob/main/islands/GalleryContainer.tsx)
 
-
 Ao carregar dados de APIs externas usando [Loaders](/docs/pt/concepts/loader) e
 enviá-los para a [Section](/docs/pt/concepts/section), é possível que o tamanho
 do _payload_ impacte negativamente a performance do site. O impacto ocorre tanto
