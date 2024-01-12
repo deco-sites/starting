@@ -45,6 +45,7 @@ coloque o seguinte estilo:
   font-style: normal;
   font-weight: 400;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-display: swap;
   src: url(/live/invoke/website/loaders/asset.ts?src=https://sualoja.deco.site/minha_fonte.ttf) format('truetype');
 }
@@ -73,3 +74,16 @@ do conteúdo de texto, mas pode impactar na movimentação do layout.
 >>>>>>> 8839c2d (restructuring performance docs)
 =======
 >>>>>>> 5547273 (lint)
+=======
+  font-display: swap;
+  src: url(/live/invoke/website/loaders/asset.ts?src=https://sualoja.deco.site/minha_fonte.ttf) format('truetype');
+}
+</style>
+```
+> **importante**: a fonte é cacheada na nossa CDN e browsers dos usuários. Se for preciso substituir a fonte e eliminar o cache do usuário, adicione um parâmetro como `?v=2024_01_01` na URL da fonte para invalidar o cache original.
+
+O `font-display: swap` permite que o browser possa usar uma fonte de fallback até que a fonte de verdade seja carregada. Isso permite acelerar a renderização do conteúdo de texto, mas pode impactar na movimentação do layout.
+
+> **dica**: Uma alternativa é fazer uso do `font-display: optional` que permite o browser ativar a fonte de fallback apenas se a conexão do usuário estiver lenta.
+
+>>>>>>> 91ef870 (Medias performance)
