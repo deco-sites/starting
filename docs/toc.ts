@@ -310,6 +310,13 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
+          pt: "Teste de métricas deco",
+          en: "Deco metrics performance tests",
+        },
+        slug: "performance/testing/decometrics",
+      },
+      {
+        title: {
           pt: "Teste do Core Web Vitals",
           en: "Core Web Vitals test",
         },
@@ -317,36 +324,67 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Teste de métricas deco de performance",
-          en: "Deco metrics performance tests",
+          pt:
+            "Otimizando imagens",
+          en:
+            "Optimizing images",
         },
-        slug: "performance/testing/decometrics",
+        slug: "performance/medias/images",
       },
-      // Juntar imagens e sprites. incluir fontes e videos
-      // Nas imagens: REDUZIR E SIMPLIFICAR
       {
         title: {
           pt:
-            "Aprenda a usar a técnica de SVG sprites para otimizar a performance do seu site",
+            "Otimizando SVG através de sprites",
           en:
-            "Learn how to use the SVG sprites technique to optimize the performance of your website",
+            "Optimizing SVG via sprites",
         },
         slug: "performance/medias/svg-sprites",
       },
       {
         title: {
-          pt: "Enviar apenas os dados necessários para o cliente",
-          en: "Sending only necessary data to client",
+          pt:
+            "Otimizando vídeos",
+          en:
+            "Optimizing videos",
         },
-        slug: "performance/sending-only-necessary-data-to-client",
+        slug: "performance/medias/videos",
       },
       {
         title: {
-          pt: "Como usar a deco para atingir alta performance",
-          en: "How can you use deco for achieve high performance",
+          pt:
+            "Otimizando fontes",
+          en:
+            "Optimizing fonts",
         },
-        slug: "performance/how-deco-performance",
+        slug: "performance/medias/fonts",
       },
+      {
+        title: {
+          pt:
+            "Otimizando scripts de terceiros",
+          en:
+            "Optimizing 3rd party scripts",
+        },
+        slug: "performance/lazy-3rd-party-scripts",
+      },
+      {
+        title: {
+          pt:
+            "Otimizando Loaders",
+          en:
+            "Optimizing Loaders",
+        },
+        slug: "performance/loaders",
+      },
+      {
+        title: {
+          pt:
+            "Otimizando Ilhas",
+          en:
+            "Optimizing Islands",
+        },
+        slug: "performance/islands",
+      }
     ],
   },
   {
