@@ -2,46 +2,38 @@
 description: Aprenda como usar imagens em seu site sem perder desempenho.
 ---
 
-> Resumo
->
+### Resumo
+
 > Deco oferece componentes de Imagem, Picture e Source para trabalhar com
 > imagens. Esses componentes adicionam padrões sensíveis para acelerar seu site.
 > Para adicionar uma imagem ao seu site:
 >
-> 1. Adicione os componentes de imagem (`<Image/>`, `<Source>`, `<Picture>`) ao
-   > seu código
+> 1. Adicione os componentes de imagem da deco (`<Image/>`, `<Source>`, `<Picture>`) ao
+> seu código
 > 2. Estilize os componentes com CSS até obter a aparência desejada
-> 3. Defina os atributos de largura e altura. Confira #Adicionando propriedades
-   > de largura e altura
+> 3. Defina os atributos de largura e altura do componente.
 
-Neste artigo, você aprenderá como adicionar imagens ao seu site mantendo um bom
-[LCP](https://web.dev/lcp/). Será necessário ter conhecimentos básicos de HTML e
-CSS. Além disso, certifique-se de entender os seguintes conceitos:
+> Os componentes da deco já oferecem:
+> - Imagens responsivas para todos os tamanhos de tela
+> - Tags de pré-carregamento para melhorar o LCP
 
-- LCP: https://web.dev/lcp/
-- aspect-ratio CSS: https://www.w3schools.com/cssref/css_pr_aspect-ratio.php
 
-### Image e Picture
+# Image ou Picture
 
-- Image define um img que tem sempre a mesma proporção (largura vs altura)
-  independente do tamanho de tela
+Existem dois componentes para a exibição de imagens: `<Image>` e `<Picture>`. O componente adequado depende do seu caso de uso:
+
+- `<Image>` exibe uma imagem (internamente usando `<img>`) e é útil para imagens que tem sempre a mesma proporção (largura vs altura) independente do tamanho de tela.
 
 <img src="/docs/image-aspect-ratio.png">
 
-- Picture define imagens que podem variar de tamanho de acordo com a resolução
-  de tela
+- `<Picture>` define imagens que podem variar de tamanho de acordo com a resolução de tela.
 
 <img src="/docs/picture-aspect-ratio.png">
 
-A deco tem os componentes prontos que oferecem:
 
-- Imagens responsivas para todos os tamanhos de tela
-- Tags de pré-carregamento para melhorar o LCP
+# Adicionando uma imagem
 
-#### Adicionando imagem
-
-Para usar, estilize com classes tailwind, é obrigatório usar as props
-height/width:
+Utilizando o componente adequado, estilize-o com classes tailwind. É obrigatório definir a src e usar as props height/width:
 
 ```tsx
 import Image from "apps/website/components/Image.tsx";
@@ -51,91 +43,19 @@ export default function MeuComponente() {
     <Image
       src="https://example.com/image.png"
       class="w-full h-full object-cover"
-      width={50}
-      height={50}
+      width={800}
+      height={1200}
     />
   );
 }
 ```
 
-#### Adicionando picture
+O width/height não altera o tamanho da imagem em tela pois a mesma está estilizada pelo CSS. Esses atributos nem precisam ser o tamanho da imagem original. A altura e largura estão presentes para permitir que o browser possa escolher a imagem adequada a ser baixada de acordo com a resolução da tela do usuário.
+
+# Adicionando uma Picture
 
 Abaixo, você encontrará um exemplo mínimo que renderiza uma imagem para desktop
 e outra para dispositivos móveis.
-
-/// TODO COLOCAR WIDTH HEIGHT EM SOURCE E IMG
-
-```tsx
-import { Picture, Source } from "apps/website/components/Picture.tsx";
-
-function MeuComponente() {
-  return (
-    <Picture>
-      <Source
-        media="(max-width: 768px)"
-        src="https://example.com/image-mobile.png"
-      />
-      <Source
-        media="(min-width: 768px)"
-        src="https://example.com/image-desktop.png"
-      />
-      <img
-        src="https://example.com/image-desktop.png"
-        class="w-full h-full object-cover"
-      />
-    </Picture>
-  );
-}
-```
-
-> Observe que você deve usar a tag `<img/>` dentro de Picture, não o componente
-> `<Image/>`. Observe que o atributo `src` na tag `<img/>` É OBRIGATÓRIO e deve
-> receber a imagem maior, neste caso, a do desktop.
-
-O exemplo acima renderiza a imagem `/image-mobile.png` em tamanhos de tela de
-até 768px de largura. Em tamanhos de tela maiores, será renderizada a imagem
-`/image-desktop.png`.
-
-Para estilizar essa imagem, adicione classes à tag `<img/>`. Por exemplo, para
-fazer a imagem preencher todo o espaço disponível, você pode aplicar os
-seguintes tokens do Tailwind ao código acima:
-
-Agora, siga o guia para adicionar as propriedades padrão de `width` e `height`
-ao componente `<Source/>`. Observe que isso é obrigatório e não seguir este guia
-pode impactar no desempenho.
-
-#### Adicionando propriedades de largura e altura
-
-Os atributos `width` e `height` da imagem podem ser muito confusos, mesmo para
-os desenvolvedores mais experientes. Essa confusão ocorre pelo fato de que esses
-atributos
-
-NÃO alteram o tamanho final da imagem renderizada na tela. Em vez disso, eles
-alteram a imagem que o navegador irá baixar em um cenário de imagem responsiva.
-Escolher valores adequados de largura e altura é a chave para baixar uma imagem
-pequena para obter bons resultados de LCP.
-
-Para descobrir um bom valor para largura e altura:
-
-1. Abra seu site e inspecione o elemento da imagem.
-2. Defina o viewport para o tamanho desejado (412px para dispositivos móveis ou
-   1440px para desktop).
-3. Passe o mouse sobre a tag da imagem. Você deverá ver algo como:
-   <img src="/docs/width-attribute.png" />
-4. Voilà! Um bom valor de largura e altura está disponível no atributo "Rendered
-   size". Neste caso, a `width` é 270px e a `height` é 377px.
-
-Agora, abra seu componente e preencha os valores de largura e altura:
-
-```tsx
-import Image from "apps/website/components/Image.tsx";
-
-export default function MeuComponente() {
-  return <Image src="https://example.com/image.png" width={270} height={377} />;
-}
-```
-
-Para Pictures, aplique o mesmo método para cada atributo Source:
 
 ```tsx
 import { Picture, Source } from "apps/website/components/Picture.tsx";
@@ -164,17 +84,47 @@ function MeuComponente() {
 }
 ```
 
-#### Carregando imagens de forma otimizada - melhorando o LCP
+> Observe que você deve usar a tag `<img/>` dentro de Picture, não o componente
+> `<Image/>`. Observe que o atributo `src` na tag `<img/>` É OBRIGATÓRIO e deve
+> receber a imagem maior, neste caso, a do desktop.
+
+O exemplo acima renderiza a imagem `/image-mobile.png` em tamanhos de tela de
+até 768px de largura. Em tamanhos de tela maiores, será renderizada a imagem
+`/image-desktop.png`.
+
+Para estilizar essa imagem, adicione classes à tag `<img/>`. Por exemplo, para
+fazendo a imagem preencher todo o espaço disponível, como no exemplo acima.
+
+# Encontrando as propriedades de largura e altura
+
+Os atributos `width` e `height` da imagem podem ser confusos, mesmo para
+os desenvolvedores experientes. Essa confusão ocorre pelo fato de que esses
+atributos NÃO alteram o tamanho final da imagem renderizada na tela. Em vez disso, eles
+alteram a imagem que o navegador irá baixar em um cenário de imagem responsiva.
+Escolher valores adequados de largura e altura é a chave para baixar uma imagem
+pequena para obter bons resultados de LCP.
+
+Para descobrir um bom valor para largura e altura:
+
+1. Abra seu site e inspecione o elemento da imagem.
+2. Defina o viewport para o tamanho desejado (412px para dispositivos móveis ou
+   1440px para desktop).
+3. Passe o mouse sobre a tag da imagem. Você deverá ver algo como:
+   <img src="/docs/width-attribute.png" />
+4. Voilà! Um bom valor de largura e altura está disponível no atributo "Rendered
+   size". Neste caso, a `width` é 270px e a `height` é 377px.
+
+# Carregando imagens de forma otimizada (melhorando o LCP)
 
 Para um bom LCP, não apenas você precisa enviar payloads pequenos, mas também
-precisa carregar os ativos na ordem correta, priorizando aqueles que estão
-visíveis na tela em relação aos que estão abaixo da dobra. Uma boa heurística é:
+precisa carregá-los na ordem correta, priorizando aqueles que estão
+visíveis na tela em relação aos demais elementos (bellow the fold). Uma boa heurística é:
 
 1. Priorizar a imagem do LCP.
 2. Carregar todas as outras imagens de forma preguiçosa (lazy load).
 
 Felizmente, os componentes `<Image>` e `<Picture>` do Deco nos ajudam a obter
-esse comportamento. Comece localizando o elemento LCP na tela. Em seguida, abra
+esse comportamento. Comece localizando o maior elemento na tela (LCP). Em seguida, abra
 o código do componente e verifique se:
 
 1. O atributo `preload` está definido.
@@ -235,7 +185,11 @@ Verifique que outras imagens nao tenham os atibuto de preload e tenha o
 `loading="lazy"` e `fetchPriority="low"`. Ao adicionar essas configurações, você
 estará otimizando o carregamento de imagens para melhorar o LCP.
 
-> Note que a pagina final deveria ter somente uma imagem pré-carregada. O
-> pré-carregamento de multiplas imagens pode piorar a nota LCP. Para verificar
+> **dica**: a pagina final deveria ter somente <u>uma única imagem pré-carregada</u>. O
+> pré-carregamento de multiplas imagens piora a nota LCP. Para verificar
 > que somente uma imagem esteja sendo pré-carregada, verifique que ha somente
 > uma tag `<link rel="preload"/>`.
+
+# Fontes relevantes
+- [LCP](https://web.dev/lcp/)
+- [Aspect-ratio CSS](https://www.w3schools.com/cssref/css_pr_aspect-ratio.php)

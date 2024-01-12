@@ -2,15 +2,18 @@
 description: Aprenda a usar a técnica de SVG sprites para otimizar a performance do seu site
 ---
 
-> TL;DR: Use um arquivo único SVG e identifique cada símbolo com um `id`. Onde
-> você quiser usar o SVG, utilize a tag `use` apontando pra o ID específico
+### Resumo
 
-## Versão em vídeo
+<iframe width="640" height="339" src="https://www.loom.com/embed/e34d5d715f7c4efaae18e4eca799edca" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Para assistir o conteúdo desse artigo, clique
-[aqui](https://www.loom.com/share/e34d5d715f7c4efaae18e4eca799edca)
+> Para reutilizar elementos SVG e diminuir o tamanho do HTML de páginas:
+>
+> 1. Use um arquivo único SVG (ex.: `sprites.svg``) e identifique cada símbolo com um `id`. 
+> 2. Para usar o SVG, utilize a tag `use` apontando pra o ID específico
+> 3. Faça isso especialmente para os SVG que <u>não estão visíveis em tela</u>.
 
-## SVG
+
+# SVG
 
 SVG (Scalable Vector Graphics, ou Vetores Gráficos Escaláveis) é um formato
 gráfico comumente utilizando em aplicações para representar ícones, logomarcas
@@ -20,15 +23,11 @@ métricas, como: tempo de carregamento da página (speed index), tempo para exib
 o primeiro conteúdo visível (FCP), tempo para exibir o último conteúdo visível
 (LCP).
 
-Este post vai descrever como utilizar a técnica de SVG sprites para diminuir o
-impacto na performance de uma página causado por SVGs.
+# A técnica SVG Sprites
 
-#### O que é a técnica SVG Sprites?
-
-SVG sprites consiste em você ter um arquivo svg que seja acessível pela internet
+SVG sprites consiste em você ter um arquivo svg que seja cacheável e acessível pela internet (exemplo: na sua pasta `static`),
 e nele tenha as as símbolos de cada svg utilizando a tag `<symbol>` e
-adicionando a propriedade `id` em cada um dos elementos que deseja utilizar -
-pode utilizar outras tags como: `<defs>` , `<g>` dentre outras.
+adicionando a propriedade `id` em cada um dos elementos que deseja utilizar.
 
 Segue um exemplo de arquivo svg com um símbolo e id **XMark**
 
@@ -38,7 +37,7 @@ Segue um exemplo de arquivo svg com um símbolo e id **XMark**
 </svg>
 ```
 
-#### Como utilizar SVG Sprites para melhorar a performance do seu site?
+# SVG Sprites para melhorar a performance do seu site
 
 Para utilizar um svg que está dentro de um arquivo, é possível referencia-lo
 através do endereço do arquivo e do id do símbolo que foi definido no arquivo
@@ -69,25 +68,24 @@ tamanho do SVG **XMark**, dado que ele não faz parte do seu documento, pois ele
 está em outro arquivo. No caso de uso de SVG dentro de ilhas, a quantidade de
 JavaScript gerado no bundle será menor.
 
-#### Quando utilizar a técnica?
+# Quando utilizar a técnica?
 
-> :warning: Não é sempre que é válido utilizar a técnica, porém é valido testar.
+> ⚠️ Não é sempre adequado utilizar a técnica, porém é sempre válido testá-la.
 
 Considerando que existirá um ou vários arquivos svgs, com o intuito de melhorar
 a performance do seu site e manter uma ótima usabilidade, é sugerido que utilize
 desta abordagem nos seguintes casos:
 
-- SVG é exibido abaixo do "Fold";
+- SVG não é visível na tela inicial do usuário (não está no "above the fold")
 - SVG é exibido através de interação do usuário na página, por exemplo: hover,
-  dentro de dialogs, ao clicar em botões;
-- No caso de aplicações que utilizam jsx ou afins, que é o caso do Fresh, pois a
-  quantidade de Javascript gerado por svg é consideravelmente grande.
+  dentro de dialogs, ao clicar em botões
+- No caso de aplicações que utilizam jsx ou afins, que é o caso do Fresh, pois a quantidade de Javascript gerado por SVG é consideravelmente grande.
 
 **Extra:**
 
 É possível definir um símbolo dentro do próprio documento e referencia-lo
-posteriormente no mesmo document. Esta abordagem é válida para os casos de onde
-um único svg é repetido várias vezes na página e pode ser utilizada para svgs
+posteriormente no mesmo documento. Esta abordagem é válida para os casos de onde
+um único SVG é repetido várias vezes na página e pode ser utilizada para SVGs
 que são exibidos acima do "Fold".
 
 ```html
@@ -95,10 +93,3 @@ que são exibidos acima do "Fold".
   <use href="#XMark" />
 </svg>
 ```
-
-#### Quais métricas de performance pode ser melhorada com esta técnica?
-
-- Speed Index -
-  <https://developer.chrome.com/docs/lighthouse/performance/speed-index/>;
-- First Contentful Paint (FCP) - <https://web.dev/fcp/>;
-- Largest Contentful Paint (LCP) - [https://web.dev/lcp](https://web.dev/fcp/) ;
