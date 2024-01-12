@@ -396,31 +396,25 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt:
-            "Otimizando scripts de terceiros",
-          en:
-            "Optimizing 3rd party scripts",
+          pt: "Otimizando scripts de terceiros",
+          en: "Optimizing 3rd party scripts",
         },
         slug: "performance/lazy-3rd-party-scripts",
       },
       {
         title: {
-          pt:
-            "Otimizando Loaders",
-          en:
-            "Optimizing Loaders",
+          pt: "Otimizando Loaders",
+          en: "Optimizing Loaders",
         },
         slug: "performance/loaders",
       },
       {
         title: {
-          pt:
-            "Otimizando Ilhas",
-          en:
-            "Optimizing Islands",
+          pt: "Otimizando Ilhas",
+          en: "Optimizing Islands",
         },
         slug: "performance/islands",
-      }
+      },
     ],
   },
   {

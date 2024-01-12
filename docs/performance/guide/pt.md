@@ -187,7 +187,6 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 ## 🖹 Fontes
 
 **Quando atuar**...
-
 - O texto parece "mudar de tamanho" repentinamente
 - O arquivo de fonte demora a ser carregado
 - Valor alto de FCP (apontando a fonte como problema)
