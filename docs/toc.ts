@@ -338,13 +338,6 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Otimizando vídeos",
-          en: "Optimizing videos",
-        },
-        slug: "performance/medias/videos",
-      },
-      {
-        title: {
           pt: "Otimizando fontes",
           en: "Optimizing fonts",
         },

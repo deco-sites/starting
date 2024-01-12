@@ -86,7 +86,7 @@ desta abordagem nos seguintes casos:
 É possível definir um símbolo dentro do próprio documento e referencia-lo
 posteriormente no mesmo documento. Esta abordagem é válida para os casos de onde
 um único SVG é repetido várias vezes na página e pode ser utilizada para SVGs
-que são exibidos acima do "Fold".
+que são exibidos acima do "Fold" (i.e. visíveis na tela do usuário antes da interação do mesmo).
 
 ```html
 <svg>

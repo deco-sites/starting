@@ -16,6 +16,7 @@ description: Aprenda como usar imagens em seu site sem perder desempenho.
 > Os componentes da deco já oferecem:
 > - Imagens responsivas para todos os tamanhos de tela
 > - Tags de pré-carregamento para melhorar o LCP
+> - Processamento das imagens para otimizar o tamanho da imagem
 
 
 # Image ou Picture
@@ -50,7 +51,7 @@ export default function MeuComponente() {
 }
 ```
 
-O width/height não altera o tamanho da imagem em tela pois a mesma está estilizada pelo CSS. Esses atributos nem precisam ser o tamanho da imagem original. A altura e largura estão presentes para permitir que o browser possa escolher a imagem adequada a ser baixada de acordo com a resolução da tela do usuário.
+O width/height não altera o tamanho da imagem em tela pois a mesma está estilizada pelo CSS. Esses atributos nem precisam ser o tamanho original da imagem. A altura e largura estão presentes para permitir que o servidor e browser possa escolher a imagem adequada a ser baixada de acordo com a resolução da tela do usuário.
 
 # Adicionando uma Picture
 
@@ -84,15 +85,15 @@ function MeuComponente() {
 }
 ```
 
-> Observe que você deve usar a tag `<img/>` dentro de Picture, não o componente
-> `<Image/>`. Observe que o atributo `src` na tag `<img/>` É OBRIGATÓRIO e deve
+> Observe que você deve usar a tag `<img>` dentro de Picture, não o componente
+> `<Image>`. Observe que o atributo `src` na tag `<img>` É OBRIGATÓRIO e deve
 > receber a imagem maior, neste caso, a do desktop.
 
 O exemplo acima renderiza a imagem `/image-mobile.png` em tamanhos de tela de
 até 768px de largura. Em tamanhos de tela maiores, será renderizada a imagem
 `/image-desktop.png`.
 
-Para estilizar essa imagem, adicione classes à tag `<img/>`. Por exemplo, para
+Para estilizar essa imagem, adicione classes à tag `<img>`. Por exemplo, para
 fazendo a imagem preencher todo o espaço disponível, como no exemplo acima.
 
 # Encontrando as propriedades de largura e altura

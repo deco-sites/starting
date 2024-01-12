@@ -198,17 +198,6 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 
 **Guia**: [Otimizando SVGs](/docs/performance/medias/svg-sprites)
 
-## 📹 Vídeos
-
-**Quando atuar**...
-
-- Valor alto de LCP (e o maior elemento é um vídeo)
-
-**Guia**: [Otimizando vídeos](/docs/performance/medias/videos)
-
-> **Dica**: vídeos são extremamente custosos para conexões lentas de rede. Dê
-> preferência por animações via CSS ou por composição de imagens.
-
 ## 🖹 Fontes
 
 **Quando atuar**...
