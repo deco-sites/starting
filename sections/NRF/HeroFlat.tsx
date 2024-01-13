@@ -1,4 +1,5 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
+import Video from "deco-sites/std/components/Video.tsx";
 
 export interface CTA {
   id?: string;
@@ -14,6 +15,7 @@ export interface Props {
   title: string;
   description: string;
   image?: ImageWidget;
+  video?: VideoWidget;
   placement: "left" | "right";
   cta: CTA[];
 }
@@ -27,6 +29,7 @@ export default function HeroFlats({
   title,
   description,
   image,
+  video,
   placement,
   cta,
 }: Props) {
@@ -34,11 +37,15 @@ export default function HeroFlats({
     <div class="bg-black lg:min-h-screen">
       <div class="mx-auto flex flex-col items-center gap-8">
         <div
-          class={`flex w-full lg:h-screen xl:container xl:mx-auto py-20 lg:py-28 mx-5 md:mx-10 z-10 ${
+          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
             image
               ? PLACEMENT[placement]
               : "flex-col items-center justify-center text-center"
-          } gap-12 md:gap-20  items-center`}
+          } ${
+            video
+              ? "lg: pt-28 pb-8"
+              : "lg:py-28 lg:h-screen"
+          } gap-12 md:gap-20 items-center`}
         >
           {image && (
             <img
@@ -88,6 +95,24 @@ export default function HeroFlats({
                 </a>
               ))}
             </div>
+          </div>
+        </div>
+        <div class="relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
+          <div class="relative overflow-hidden rounded-[20px]">
+            {video && (
+              <Video
+                controls
+                src={video}
+                loop={false}
+                playsInline={true}
+                autoPlay={false}
+                muted={true}
+                class="relative "
+                loading="eager"
+                width={1156}
+                height={650}
+              />
+            )}
           </div>
         </div>
       </div>
