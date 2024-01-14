@@ -17,6 +17,7 @@ export interface Props {
   image?: ImageWidget;
   videoMp4?: VideoWidget;
   videoWebm?: VideoWidget;
+  showSpecialNrfVideo?: boolean;
   placement: "left" | "right";
   cta: CTA[];
 }
@@ -34,6 +35,7 @@ export default function HeroFlats({
   videoWebm,
   placement,
   cta,
+  showSpecialNrfVideo,
 }: Props) {
   return (
     <div class="bg-black lg:min-h-screen">
@@ -44,9 +46,7 @@ export default function HeroFlats({
               ? PLACEMENT[placement]
               : "flex-col items-center justify-center text-center"
           } ${
-            (videoMp4 || videoWebm)
-              ? "lg: pt-28 pb-8"
-              : "lg:py-28 lg:h-screen"
+            videoMp4 || videoWebm ? "lg: pt-28 pb-8" : "lg:py-28 lg:h-screen"
           } gap-12 md:gap-20 items-center`}
         >
           {image && (
@@ -71,8 +71,7 @@ export default function HeroFlats({
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
-            >
-            </div>
+            ></div>
             <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
               {description}
             </p>
@@ -89,8 +88,7 @@ export default function HeroFlats({
                       : "bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero"
                   }`}
                 >
-                  <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
-                  </span>
+                  <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
                   <span class="relative font-medium lg:text-[20px]">
                     {item?.text}
                   </span>
@@ -101,6 +99,18 @@ export default function HeroFlats({
         </div>
         <div class="relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
           <div class="relative overflow-hidden rounded-[20px]">
+            {showSpecialNrfVideo && (
+              <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe
+                  src="https://player.vimeo.com/video/902689992?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                  title="The Unlimited AI Sales Assistant | deco.cx"
+                ></iframe>
+              </div>
+            )}
+            <script src="https://player.vimeo.com/api/player.js"></script>
             {videoMp4 && (
               <Video
                 controls
