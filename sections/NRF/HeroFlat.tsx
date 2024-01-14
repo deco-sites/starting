@@ -98,7 +98,7 @@ export default function HeroFlats({
           </div>
         </div>
         <div class="relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
-          <div class="relative overflow-hidden rounded-[20px]">
+          <div class="relative overflow-hidden rounded-[20px] w-[80vw]">
             {showSpecialNrfVideo && (
               <div style="padding:56.25% 0 0 0;position:relative;">
                 <iframe
