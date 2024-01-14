@@ -46,7 +46,7 @@ export default function HeroFlats({
               ? PLACEMENT[placement]
               : "flex-col items-center justify-center text-center"
           } ${
-            videoMp4 || videoWebm ? "lg: pt-28 pb-8" : "lg:py-28 lg:h-screen"
+            videoMp4 || videoWebm ? "lg: pt-28 pb-8" : "lg:py-28 lg:mt-48"
           } gap-12 md:gap-20 items-center`}
         >
           {image && (
