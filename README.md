@@ -1,4 +1,4 @@
-# Deco Start — live template
+# Deco Landing Page
 
 Welcome to your live site!
 
