@@ -15,7 +15,8 @@ export interface Props {
   title: string;
   description: string;
   image?: ImageWidget;
-  video?: VideoWidget;
+  videoMp4?: VideoWidget;
+  videoWebm?: VideoWidget;
   placement: "left" | "right";
   cta: CTA[];
 }
@@ -29,7 +30,8 @@ export default function HeroFlats({
   title,
   description,
   image,
-  video,
+  videoMp4,
+  videoWebm,
   placement,
   cta,
 }: Props) {
@@ -42,7 +44,7 @@ export default function HeroFlats({
               ? PLACEMENT[placement]
               : "flex-col items-center justify-center text-center"
           } ${
-            video
+            (videoMp4 || videoWebm)
               ? "lg: pt-28 pb-8"
               : "lg:py-28 lg:h-screen"
           } gap-12 md:gap-20 items-center`}
@@ -99,15 +101,27 @@ export default function HeroFlats({
         </div>
         <div class="relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
           <div class="relative overflow-hidden rounded-[20px]">
-            {video && (
+            {videoMp4 && (
               <Video
                 controls
-                src={video}
+                src={videoMp4}
                 loop={false}
                 playsInline={true}
                 autoPlay={false}
                 muted={true}
-                class="relative "
+                loading="eager"
+                width={1156}
+                height={650}
+              />
+            )}
+            {!videoMp4 && videoWebm && (
+              <Video
+                controls
+                src={videoWebm}
+                loop={false}
+                playsInline={true}
+                autoPlay={false}
+                muted={true}
                 loading="eager"
                 width={1156}
                 height={650}
