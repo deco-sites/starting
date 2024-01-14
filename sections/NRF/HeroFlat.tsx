@@ -108,7 +108,7 @@ export default function HeroFlats({
                 loop={false}
                 playsInline={true}
                 autoPlay={false}
-                muted={true}
+                muted={false}
                 loading="eager"
                 width={1156}
                 height={650}
@@ -121,7 +121,7 @@ export default function HeroFlats({
                 loop={false}
                 playsInline={true}
                 autoPlay={false}
-                muted={true}
+                muted={false}
                 loading="eager"
                 width={1156}
                 height={650}
