@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   .html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
-    font-family: Albert Sanssans-serif;
+    font-family: Albert Sans sans-serif;
     scroll-behavior: smooth;
   }
 
