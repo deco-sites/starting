@@ -7,7 +7,8 @@ export interface Props {
 
 export default function Thanks({
   title = "We have received your contact!",
-  message = "Thank you for your interest in deco.cx. We will be in touch by email shortly.",
+  message =
+    "Thank you for your interest in deco.cx. We will be in touch by email shortly.",
   buttonText = "Back to home page",
   homeLink = "/",
 }: Props) {

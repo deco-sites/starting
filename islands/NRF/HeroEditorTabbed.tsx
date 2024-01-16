@@ -19,7 +19,7 @@ export const HeroEditorTabbed = ({ tabs }: Props) => {
       const animationWidth = animate(
         `#tab-${selectedTab.value}`,
         { width: "100%" },
-        { duration: 5, easing: "linear" }
+        { duration: 5, easing: "linear" },
       );
 
       const tabElements = document.querySelectorAll("[id^='tab-']");

@@ -17,7 +17,7 @@ export default function ArticleQuote({
   textColor = "#0A2121",
 }: Props) {
   return (
-    <div class="lg:container" style={{color: textColor}}>
+    <div class="lg:container" style={{ color: textColor }}>
       <div class="mx-4 md:mx-12 lg:mx-auto lg:w-8/12">
         <div class="flex flex-col gap-5 pt-1 pb-5 lg:pt-4 lg:pb-16 z-10">
           <div class="flex gap-6 items-stretch">

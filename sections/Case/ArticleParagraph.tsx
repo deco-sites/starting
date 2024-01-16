@@ -31,7 +31,8 @@ export default function ArticleParagraph({
                         }
                     `,
         }}
-      ></style>
+      >
+      </style>
       <div class="mx-4 md:mx-12 lg:mx-auto lg:w-8/12">
         <div class="flex flex-col gap-4 py-4">
           {label && (
@@ -46,14 +47,17 @@ export default function ArticleParagraph({
               )}
             </>
           )}
-          {onlyShowTitle ? (
-            ""
-          ) : (
-            <div
-              class="text-lg leading-normal article-content z-10"
-              dangerouslySetInnerHTML={{ __html: text }}
-            ></div>
-          )}
+          {onlyShowTitle
+            ? (
+              ""
+            )
+            : (
+              <div
+                class="text-lg leading-normal article-content z-10"
+                dangerouslySetInnerHTML={{ __html: text }}
+              >
+              </div>
+            )}
         </div>
       </div>
     </div>

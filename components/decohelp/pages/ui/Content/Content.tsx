@@ -12,7 +12,6 @@ import {
 } from "deco-sites/starting/components/decohelp/pages/interfaces.ts";
 
 function renderContentItem(item: ContentType, idx: number) {
-
   return "Text" in item
     ? (
       <article aria-label={item.label}>
