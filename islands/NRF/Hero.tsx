@@ -105,7 +105,7 @@ export default function Hero({
               ></div>
             )}
             {cta && (
-              <div class="flex flex-col items-start lg:flex-row gap-4">
+              <div class="flex flex-col items-center lg:items-start lg:flex-row gap-4">
                 {cta?.map((item) => (
                   <a
                     key={item?.id}
