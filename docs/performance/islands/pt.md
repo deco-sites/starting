@@ -3,14 +3,17 @@ descrição: Enviando apenas dados necessários ao cliente
 since: 1.0.0
 ---
 
-## Ilhas com muitas props
+### Resumo
 
-- Reduzir JSON enviado para as ilhas em props
+> Uma ilha determina um componente interativo e que será hidratado no lado do servidor. O servidor manda todos os dados das props de ilhas para fazer a hidratação, bem como o browser precisa de tempo para processar e renderizar as ilhas.
+>
+> Por isso, é importante tomar alguns cuidados no uso de ilhas:
+>
+> 1. Reduza ao máximo a quantidade de props a ser enviada / utilizada para uma ilha
+> 2. Torne uma ilha apenas o que for necessário, lembrando de usar o `children` para elementos internos que não precisam de hidratação.
 
-## Muitas ilhas
 
-- Estratégias para utilização de ilhas
-  [link](https://github.com/deco-sites/aviator/blob/main/islands/GalleryContainer.tsx)
+# Reduzindo o tamanho do JSON de props enviado para as ilhas
 
 Ao carregar dados de APIs externas usando [Loaders](/docs/pt/concepts/loader) e
 enviá-los para a [Section](/docs/pt/concepts/section), é possível que o tamanho
@@ -189,3 +192,9 @@ Ao implementar esse processo de pré-processamento de dados, é possível otimiz
 a performance da página, garantindo que apenas as informações cruciais sejam
 enviadas e processadas, proporcionando um desempenho mais otimizado para o
 usuário.
+
+
+# Muitas ilhas
+
+- Estratégias para utilização de ilhas
+  [link](https://github.com/deco-sites/aviator/blob/main/islands/GalleryContainer.tsx)
