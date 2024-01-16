@@ -1,5 +1,4 @@
 import { Section } from "deco/blocks/section.ts";
-import { useLivePageContext } from "deco/pages/LivePage.tsx";
 
 export interface SectionProps {
   SectionSidebar: Section;
@@ -8,15 +7,14 @@ export interface SectionProps {
 }
 
 export default function (props: SectionProps) {
-  const { renderSection } = useLivePageContext();
 
   return (
     <div
       class={`flex lg:flex-row flex-col w-full mx-auto max-w-[1440px] lg:pt-[140px]`}
     >
-      {renderSection(props.SectionSidebar, 0)}
-      {renderSection(props.SectionContent, 1)}
-      {renderSection(props.SectionOnThisPage, 2)}
+      {<props.SectionSidebar.Component {...props.SectionSidebar.props} />}
+      {<props.SectionContent.Component {...props.SectionContent.props} />}
+      {<props.SectionOnThisPage.Component {...props.SectionOnThisPage.props} />}
     </div>
   );
 }

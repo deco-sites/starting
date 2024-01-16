@@ -10,10 +10,8 @@ import {
   ContentType,
   Props,
 } from "deco-sites/starting/components/decohelp/pages/interfaces.ts";
-import { useLivePageContext } from "deco/pages/LivePage.tsx";
 
 function renderContentItem(item: ContentType, idx: number) {
-  const { renderSection } = useLivePageContext();
 
   return "Text" in item
     ? (
@@ -56,7 +54,7 @@ function renderContentItem(item: ContentType, idx: number) {
     : "section" in item
     ? (
       <>
-        {renderSection(item.section, idx)}
+        {<item.section.Component {...item.section.props} />}
       </>
     )
     : (
