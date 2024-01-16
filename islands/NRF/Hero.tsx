@@ -51,7 +51,9 @@ export default function Hero({
   return (
     <div
       id="hero"
-      class="relative bg-black min-h-screen space-y-16 lg:space-y-20"
+      class={`relative bg-black space-y-16 lg:space-y-20 ${
+        hideEditor ? "" : "min-h-screen"
+      }`}
     >
       <div class="max-w-fit mx-auto flex flex-col items-center gap-16 lg:gap-20">
         <div class="flex flex-col items-center gap-4 mt-36 lg:mt-48">
