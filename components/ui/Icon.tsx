@@ -68,6 +68,7 @@ export type AvailableIcons =
   | "WhatsApp"
   | "WhatsApp"
   | "WhiteArrow"
+  | "XMark"
   /* NRF Icons */
   | "RocketLaunch"
   | "Sparkle"
