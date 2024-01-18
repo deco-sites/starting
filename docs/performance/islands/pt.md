@@ -5,7 +5,7 @@ since: 1.0.0
 
 ### Resumo
 
-> Uma ilha determina um componente interativo e que será hidratado no lado do servidor. O servidor manda todos os dados das props de ilhas para fazer a hidratação, bem como o browser precisa de tempo para processar e renderizar as ilhas.
+> Uma ilha determina um componente interativo e que será hidratado no lado do cliente. O servidor manda todos os dados das `props` de ilhas para fazer a hidratação, bem como o browser precisa de tempo para processar e renderizar essas ilhas.
 >
 > Por isso, é importante tomar alguns cuidados no uso de ilhas:
 >
@@ -32,13 +32,9 @@ valores). Para diminuir esse tamanho e melhorar a performance da página, é
 possível **filtrar os dados** ainda no Loader para que apenas o necessário seja
 passado para a UI.
 
-## Código de exemplo - 1
+## Reduzindo dados enviados às ilhas
 
-Nesse primeiro exemplo, mostraremos como evitar enviar muitos dados para uma
-Island.
-
-Digamos que existe um componente chamado ProductCard, que recebe todo o JSON de
-um produto.
+Nesse primeiro exemplo, mostraremos como evitar enviar muitos dados para uma ilha. Digamos que existe um componente chamado ProductCard, que recebe todo o JSON de um produto.
 
 ```tsx
 import Image from "apps/website/components/Image.tsx";
@@ -70,17 +66,13 @@ export default function ProductCard({ product }: Props) {
 }
 ```
 
-É possível que esse BuyButton, precise de algumas informações do produto para
-poder adicionar ao carrinho.
+É possível que esse BuyButton, precise de algumas informações do produto para poder adicionar ao carrinho.
 
-Aqui que devemos tomar cuidado a quantidade de dados enviados para a Island.
-
-Por exemplo, é bem possível que o botão de comprar não precise receber dados de
-imagem.
+Aqui que devemos tomar cuidado a quantidade de dados enviados para a Island. Por exemplo, é bem possível que o botão de comprar não precise receber dados de imagem.
 
 O ideal é enviar apenas os dados necessários
 
-❌ Abordagem errada:
+> ❌ Abordagem inadequada
 
 ```tsx
 import BuyButton from "$store/components/ui";
@@ -96,7 +88,7 @@ export default function ProductCard({ product }: Props) {
 }
 ```
 
-✅ Abordagem correta:
+> ✅ Abordagem correta
 
 ```tsx
 import BuyButton from "$store/components/ui";
@@ -118,83 +110,69 @@ A abordagem correta envia apenas os dados de ID e Seller, que no exemplo, são o
 Assim, no momento de hidratação, o JSON que a Island irá carregar não será tão
 grande.
 
-## Código de exemplo - 2
+# Reduzindo o escopo de uma ilha
 
-Neste exemplo, vamos mostrar como evitar enviar um dado muito grande para uma
-section.
+Uma ilha e seus componentes serão todos hidratados do lado do cliente para poderem operar. Isto significa que, para todos os elementos definidos da ilha, eles serão recursivamente hidratados.
 
-Digamos que temos um loader inline para buscar as cores do produto e retornar em
-uma section.
+É possível reduzir o escopo da ilha, fazendo com que, qualquer elemento interno, seja passado como `children` da ilha.
+
+> ❌ Abordagem inadequada
+
+No exemplo abaixo, criamos uma ilha que interage com o `localStorage` para definir um título para uma galeria de itens. No exemplo abaixo, tanto os props de gallery serão inseridos para hidratar o `TitleContainer`, como serão também inseridos para poder hidratar o `Gallery`.
 
 ```tsx
-export default function Colors({ colors }) {
-  return colors.map((color) => <span>{color}</span>);
+import { computed } from "@preact/signals";
+import { IS_BROWSER } from "$fresh/runtime.ts";
+import type { GalleryProps } from "../components/Gallery.tsx";
+import { Gallery } from "../components/Gallery.tsx";
+
+export default function TitleContainer(
+  { galleryProps }: { galleryProps: GalleryProps },
+) {
+  const title = computed(() => {
+    IS_BROWSER ? localStorage.getItem("title") : "Loading...";
+  });
+
+  return (
+    <div>
+      <h1>{title}</h1>
+      <Gallery {...galleryProps}/>
+    </div>
+  );
 }
-
-export const loader = async () => {
-  const colors = await fetch("/product/colors").then((r) => r.json());
-
-  return colors;
-};
 ```
 
-Esse componente parece correto, certo?
+> ✅ Abordagem correta
 
-Porém, após uma investigação, verificamos que o dado retornado trazia também as
-imagens do produto.
-
-Exemplo do retorno da API:
+Se, no entanto, o `Gallery` for repassado como children para a ilha, ele será renderizado, serializado e não será hidratado! Para o `TitleContainer`, o `children` é um html pronto para ser exibido, e, portanto, não é uma ilha em si.
 
 ```tsx
-colors = [
-  {
-    "color": "red"
-    "images": [...]
-  },
-  {
-    "color": "green"
-    "images": [...]
-  },
-  {
-    "color": "orange"
-    "images": [...]
-  },
-}]
-```
+import { computed } from "@preact/signals";
+import type { ComponentChildren } from "preact";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 
-Os dados de imagem nesse retorno, não serão utilizados na section, então não
-precisamos enviá-los.
+export default function TitleContainer(
+  { children }: { children: ComponentChildren },
+) {
+  const title = computed(() => {
+    IS_BROWSER ? localStorage.getItem("title") : "Loading...";
+  });
 
-Podemos filtrar dessa forma:
-
-```tsx
-export default function Colors({ colors }) {
-  return colors.map((color) => <span>{color}</span>);
+  return (
+    <div>
+      <h1>{title}</h1>
+      {children}
+    </div>
+  );
 }
-
-export const loader = async () => {
-  const result = await fetch("/product/colors").then((r) => r.json());
-  const colors = result.map((item) => item.color);
-  return colors;
-};
 ```
 
-Dessa forma, apenas os dados utilizados serão enviados, evitando uma sobrecarga
-desnecessária.
+Uso do title container (em uma section, por exemplo):
 
-## Benefícios
-
-- Redução significativa no tamanho do JSON transmitido.
-- Melhoria perceptível no desempenho da página, especialmente em termos de
-  carregamento.
-
-Ao implementar esse processo de pré-processamento de dados, é possível otimizar
-a performance da página, garantindo que apenas as informações cruciais sejam
-enviadas e processadas, proporcionando um desempenho mais otimizado para o
-usuário.
-
-
-# Muitas ilhas
-
-- Estratégias para utilização de ilhas
-  [link](https://github.com/deco-sites/aviator/blob/main/islands/GalleryContainer.tsx)
+```tsx
+//...
+<TitleContainer>
+    <Gallery {...galleryProps}>
+</TitleContainer>
+//...
+```
