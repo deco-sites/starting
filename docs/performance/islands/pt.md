@@ -170,12 +170,16 @@ export default function TitleContainer(
 Uso do title container (em uma section, por exemplo):
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 48698cd (loader/island performance)
 ```tsx
 //...
 <TitleContainer>
     <Gallery {...galleryProps}>
 </TitleContainer>
 //...
+<<<<<<< HEAD
 ```
 =======
 ## Benefícios
@@ -195,3 +199,6 @@ usuário.
 - Estratégias para utilização de ilhas
   [link](https://github.com/deco-sites/aviator/blob/main/islands/GalleryContainer.tsx)
 >>>>>>> 05a15cd (Small reorg of island perf doc)
+=======
+```
+>>>>>>> 48698cd (loader/island performance)
