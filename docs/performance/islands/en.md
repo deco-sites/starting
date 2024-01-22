@@ -171,4 +171,8 @@ Uso do title container (em uma section, por exemplo):
     <Gallery {...galleryProps}>
 </TitleContainer>
 //...
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> fc46b97 (English vers)
