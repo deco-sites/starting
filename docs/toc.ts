@@ -294,6 +294,7 @@ const tableOfContents: TableOfContents = [
         },
         slug: "performance/guide",
       },
+      /*
       {
         title: {
           pt: "Teste local de performance",
@@ -315,6 +316,7 @@ const tableOfContents: TableOfContents = [
         },
         slug: "performance/testing/decometrics",
       },
+      */
       {
         title: {
           pt: "Teste do Core Web Vitals",

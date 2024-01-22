@@ -53,8 +53,6 @@ possível acompanhar o desempenho da página em detalhes, e simular condições
 adversas (como uma rede ou cpu de menor qualidade). Mais informações no guia
 abaixo:
 
-- [Teste local de performance](/docs/pt/performance/testing/local)
-
 ## Teste de pagespeed
 
 ![Exemplo de teste no pagespeed](https://github.com/deco-sites/starting/assets/882438/35d915a9-1fa0-4c87-b5b5-74cd60bec8f0)
@@ -83,10 +81,6 @@ Como é um teste executável em um ambiente em produção, ele é sujeito a
 variações, no entanto, uma queda abrupta no valor do pagespeed implica em olhar
 para o desempenho da página o quanto antes.
 
-Mais informações no guia:
-
-- [Teste local de pagespeed](/docs/performance/testing/pagespeed)
-
 ## Teste de métricas deco
 
 ![Exemplos de métricas deco](https://github.com/deco-sites/starting/assets/882438/af592b39-0f4d-405f-a0c6-a212b1677058)
@@ -112,10 +106,6 @@ Um usuário que baixa a `100 kb/s` levará `5s` para baixar uma página de
 `500 kb`. Isto é especialmente impactante para usuários de dispositivos móveis
 operando em redes ou situações de baixa capacidade de banda.
 
-Para entender cada métrica e seu significado, acompanhe o guia:
-
-- [Teste de métricas deco](/docs/performance/testing/decometrics)
-
 ## Teste do Core Web Vitals
 
 ![Exemplo de teste do CWV](https://github.com/deco-sites/starting/assets/882438/f911058f-34b4-4c49-a24b-9351d630a752)
@@ -138,10 +128,6 @@ categoriza os valores tipicamente mês-a-mês, por isso é mais uma métrica de
 acompanhamento para diagnosticar eventuais problemas de comportamento que
 passaram desapercebidos ao longo do tempo, ou que refletem a mudança de público
 da página.
-
-Para entender cada métrica e seu significado, acompanhe o guia:
-
-- [Teste de métricas deco](/docs/performance/testing/cwv)
 
 ## Depurando problemas de performance
 
