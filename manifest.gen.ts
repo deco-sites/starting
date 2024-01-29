@@ -87,34 +87,35 @@ import * as $$$$$$69 from "./sections/Case/ArticleParagraph.tsx";
 import * as $$$$$$70 from "./sections/Case/ArticleDivider.tsx";
 import * as $$$$$$71 from "./sections/Case/CaseForm.tsx";
 import * as $$$$$$72 from "./sections/Case/ArticleNumbers.tsx";
-import * as $$$$$$73 from "./sections/Live Projects/Hero.tsx";
-import * as $$$$$$74 from "./sections/Live Projects/ProjectsGrid.tsx";
-import * as $$$$$$75 from "./sections/Sidebar.tsx";
-import * as $$$$$$76 from "./sections/MainBanner.tsx";
-import * as $$$$$$77 from "./sections/TripletBanner.tsx";
-import * as $$$$$$78 from "./sections/CampMentor.tsx";
-import * as $$$$$$79 from "./sections/Thanks.tsx";
-import * as $$$$$$80 from "./sections/Page.tsx";
-import * as $$$$$$81 from "./sections/Faq.tsx";
-import * as $$$$$$82 from "./sections/DepoimentsCarrossel.tsx";
-import * as $$$$$$83 from "./sections/Links.tsx";
-import * as $$$$$$84 from "./sections/Hub/Advantage.tsx";
-import * as $$$$$$85 from "./sections/Hub/SectionSubtitle.tsx";
-import * as $$$$$$86 from "./sections/Hub/Heading.tsx";
-import * as $$$$$$87 from "./sections/Hub/TemplatesGrid.tsx";
-import * as $$$$$$88 from "./sections/Hub/Agencies.tsx";
-import * as $$$$$$89 from "./sections/Hub/TemplatePreview.tsx";
-import * as $$$$$$90 from "./sections/Hub/SectionTitle.tsx";
-import * as $$$$$$91 from "./sections/Hub/TemplateIframe.tsx";
-import * as $$$$$$92 from "./sections/Hub/Integrations.tsx";
-import * as $$$$$$93 from "./sections/Hub/Creator.tsx";
-import * as $$$$$$94 from "./sections/Delight.tsx";
-import * as $$$$$$95 from "./sections/Benefits.tsx";
-import * as $$$$$$96 from "./sections/About.tsx";
-import * as $$$$$$97 from "./sections/HelpFaq.tsx";
-import * as $$$$$$98 from "./sections/RankingAnalyze.tsx";
-import * as $$$$$$99 from "./sections/RankingHeader.tsx";
-import * as $$$$$$100 from "./sections/Carousel.tsx";
+import * as $$$$$$73 from "./sections/Case/ArticleImage.tsx";
+import * as $$$$$$74 from "./sections/Live Projects/Hero.tsx";
+import * as $$$$$$75 from "./sections/Live Projects/ProjectsGrid.tsx";
+import * as $$$$$$76 from "./sections/Sidebar.tsx";
+import * as $$$$$$77 from "./sections/MainBanner.tsx";
+import * as $$$$$$78 from "./sections/TripletBanner.tsx";
+import * as $$$$$$79 from "./sections/CampMentor.tsx";
+import * as $$$$$$80 from "./sections/Thanks.tsx";
+import * as $$$$$$81 from "./sections/Page.tsx";
+import * as $$$$$$82 from "./sections/Faq.tsx";
+import * as $$$$$$83 from "./sections/DepoimentsCarrossel.tsx";
+import * as $$$$$$84 from "./sections/Links.tsx";
+import * as $$$$$$85 from "./sections/Hub/Advantage.tsx";
+import * as $$$$$$86 from "./sections/Hub/SectionSubtitle.tsx";
+import * as $$$$$$87 from "./sections/Hub/Heading.tsx";
+import * as $$$$$$88 from "./sections/Hub/TemplatesGrid.tsx";
+import * as $$$$$$89 from "./sections/Hub/Agencies.tsx";
+import * as $$$$$$90 from "./sections/Hub/TemplatePreview.tsx";
+import * as $$$$$$91 from "./sections/Hub/SectionTitle.tsx";
+import * as $$$$$$92 from "./sections/Hub/TemplateIframe.tsx";
+import * as $$$$$$93 from "./sections/Hub/Integrations.tsx";
+import * as $$$$$$94 from "./sections/Hub/Creator.tsx";
+import * as $$$$$$95 from "./sections/Delight.tsx";
+import * as $$$$$$96 from "./sections/Benefits.tsx";
+import * as $$$$$$97 from "./sections/About.tsx";
+import * as $$$$$$98 from "./sections/HelpFaq.tsx";
+import * as $$$$$$99 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$100 from "./sections/RankingHeader.tsx";
+import * as $$$$$$101 from "./sections/Carousel.tsx";
 import * as $$$$$$$0 from "./matchers/MatchPath.ts";
 import * as $$$$$$$$$0 from "./actions/startAlgoliaCrawler.ts";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
@@ -140,21 +141,22 @@ const manifest = {
     "deco-sites/starting/handlers/feed.ts": $$$$0,
   },
   "sections": {
-    "deco-sites/starting/sections/About.tsx": $$$$$$96,
-    "deco-sites/starting/sections/Benefits.tsx": $$$$$$95,
+    "deco-sites/starting/sections/About.tsx": $$$$$$97,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$96,
     "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$9,
     "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$21,
     "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$16,
     "deco-sites/starting/sections/BlogPostSEO.tsx": $$$$$$60,
     "deco-sites/starting/sections/CampComments.tsx": $$$$$$8,
     "deco-sites/starting/sections/CampHero.tsx": $$$$$$1,
-    "deco-sites/starting/sections/CampMentor.tsx": $$$$$$78,
+    "deco-sites/starting/sections/CampMentor.tsx": $$$$$$79,
     "deco-sites/starting/sections/CampRegistration.tsx": $$$$$$28,
     "deco-sites/starting/sections/CampSteps.tsx": $$$$$$23,
-    "deco-sites/starting/sections/Carousel.tsx": $$$$$$100,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$101,
     "deco-sites/starting/sections/Case/ArticleBannerCTA.tsx": $$$$$$65,
     "deco-sites/starting/sections/Case/ArticleDivider.tsx": $$$$$$70,
     "deco-sites/starting/sections/Case/ArticleHeader.tsx": $$$$$$66,
+    "deco-sites/starting/sections/Case/ArticleImage.tsx": $$$$$$73,
     "deco-sites/starting/sections/Case/ArticleNumbers.tsx": $$$$$$72,
     "deco-sites/starting/sections/Case/ArticleParagraph.tsx": $$$$$$69,
     "deco-sites/starting/sections/Case/ArticleQuote.tsx": $$$$$$67,
@@ -167,11 +169,11 @@ const manifest = {
     "deco-sites/starting/sections/ContactUs.tsx": $$$$$$38,
     "deco-sites/starting/sections/Content.tsx": $$$$$$26,
     "deco-sites/starting/sections/CustomizableContent.tsx": $$$$$$18,
-    "deco-sites/starting/sections/Delight.tsx": $$$$$$94,
-    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$82,
+    "deco-sites/starting/sections/Delight.tsx": $$$$$$95,
+    "deco-sites/starting/sections/DepoimentsCarrossel.tsx": $$$$$$83,
     "deco-sites/starting/sections/Differentials.tsx": $$$$$$32,
     "deco-sites/starting/sections/Divider.tsx": $$$$$$30,
-    "deco-sites/starting/sections/Faq.tsx": $$$$$$81,
+    "deco-sites/starting/sections/Faq.tsx": $$$$$$82,
     "deco-sites/starting/sections/Features.tsx": $$$$$$22,
     "deco-sites/starting/sections/Footer.tsx": $$$$$$34,
     "deco-sites/starting/sections/FooterBigLogo.tsx": $$$$$$61,
@@ -179,27 +181,27 @@ const manifest = {
     "deco-sites/starting/sections/Head.tsx": $$$$$$35,
     "deco-sites/starting/sections/Header.tsx": $$$$$$62,
     "deco-sites/starting/sections/HelpBlogPosts.tsx": $$$$$$27,
-    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$97,
+    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$98,
     "deco-sites/starting/sections/HeroPost.tsx": $$$$$$5,
     "deco-sites/starting/sections/Home/Brands.tsx": $$$$$$6,
     "deco-sites/starting/sections/HowCanWeHelp.tsx": $$$$$$13,
-    "deco-sites/starting/sections/Hub/Advantage.tsx": $$$$$$84,
-    "deco-sites/starting/sections/Hub/Agencies.tsx": $$$$$$88,
-    "deco-sites/starting/sections/Hub/Creator.tsx": $$$$$$93,
-    "deco-sites/starting/sections/Hub/Heading.tsx": $$$$$$86,
-    "deco-sites/starting/sections/Hub/Integrations.tsx": $$$$$$92,
-    "deco-sites/starting/sections/Hub/SectionSubtitle.tsx": $$$$$$85,
-    "deco-sites/starting/sections/Hub/SectionTitle.tsx": $$$$$$90,
-    "deco-sites/starting/sections/Hub/TemplateIframe.tsx": $$$$$$91,
-    "deco-sites/starting/sections/Hub/TemplatePreview.tsx": $$$$$$89,
-    "deco-sites/starting/sections/Hub/TemplatesGrid.tsx": $$$$$$87,
+    "deco-sites/starting/sections/Hub/Advantage.tsx": $$$$$$85,
+    "deco-sites/starting/sections/Hub/Agencies.tsx": $$$$$$89,
+    "deco-sites/starting/sections/Hub/Creator.tsx": $$$$$$94,
+    "deco-sites/starting/sections/Hub/Heading.tsx": $$$$$$87,
+    "deco-sites/starting/sections/Hub/Integrations.tsx": $$$$$$93,
+    "deco-sites/starting/sections/Hub/SectionSubtitle.tsx": $$$$$$86,
+    "deco-sites/starting/sections/Hub/SectionTitle.tsx": $$$$$$91,
+    "deco-sites/starting/sections/Hub/TemplateIframe.tsx": $$$$$$92,
+    "deco-sites/starting/sections/Hub/TemplatePreview.tsx": $$$$$$90,
+    "deco-sites/starting/sections/Hub/TemplatesGrid.tsx": $$$$$$88,
     "deco-sites/starting/sections/ImpactCalculator.tsx": $$$$$$20,
     "deco-sites/starting/sections/Integration.tsx": $$$$$$37,
     "deco-sites/starting/sections/JoinOurCommunity.tsx": $$$$$$17,
-    "deco-sites/starting/sections/Links.tsx": $$$$$$83,
-    "deco-sites/starting/sections/Live Projects/Hero.tsx": $$$$$$73,
-    "deco-sites/starting/sections/Live Projects/ProjectsGrid.tsx": $$$$$$74,
-    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$76,
+    "deco-sites/starting/sections/Links.tsx": $$$$$$84,
+    "deco-sites/starting/sections/Live Projects/Hero.tsx": $$$$$$74,
+    "deco-sites/starting/sections/Live Projects/ProjectsGrid.tsx": $$$$$$75,
+    "deco-sites/starting/sections/MainBanner.tsx": $$$$$$77,
     "deco-sites/starting/sections/Markdown.tsx": $$$$$$24,
     "deco-sites/starting/sections/MarkdownContent.tsx": $$$$$$2,
     "deco-sites/starting/sections/NRF/BlogPosts.tsx": $$$$$$49,
@@ -224,21 +226,21 @@ const manifest = {
     "deco-sites/starting/sections/NRF/TextLines.tsx": $$$$$$58,
     "deco-sites/starting/sections/NRF/Thanks.tsx": $$$$$$57,
     "deco-sites/starting/sections/OnThisPage.tsx": $$$$$$3,
-    "deco-sites/starting/sections/Page.tsx": $$$$$$80,
+    "deco-sites/starting/sections/Page.tsx": $$$$$$81,
     "deco-sites/starting/sections/Partner.tsx": $$$$$$31,
     "deco-sites/starting/sections/PopularDocuments.tsx": $$$$$$36,
     "deco-sites/starting/sections/PopularTopics.tsx": $$$$$$0,
     "deco-sites/starting/sections/Pricing.tsx": $$$$$$11,
     "deco-sites/starting/sections/PricingValue.tsx": $$$$$$19,
     "deco-sites/starting/sections/QuillText.tsx": $$$$$$4,
-    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$98,
-    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$99,
+    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$99,
+    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$100,
     "deco-sites/starting/sections/RankingList.tsx": $$$$$$10,
     "deco-sites/starting/sections/SectionList.tsx": $$$$$$12,
-    "deco-sites/starting/sections/Sidebar.tsx": $$$$$$75,
+    "deco-sites/starting/sections/Sidebar.tsx": $$$$$$76,
     "deco-sites/starting/sections/StripePricing.tsx": $$$$$$7,
-    "deco-sites/starting/sections/Thanks.tsx": $$$$$$79,
-    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$77,
+    "deco-sites/starting/sections/Thanks.tsx": $$$$$$80,
+    "deco-sites/starting/sections/TripletBanner.tsx": $$$$$$78,
     "deco-sites/starting/sections/Webinar/Content.tsx": $$$$$$15,
     "deco-sites/starting/sections/Webinar/Hero.tsx": $$$$$$14,
   },
