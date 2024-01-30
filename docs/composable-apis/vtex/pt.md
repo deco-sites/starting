@@ -50,7 +50,7 @@ supor que, antes de migrar para o Deco, sua loja esteja hospedada em
 Após migrar para o Deco, sua loja continuará sendo servida em `www.minhaloja.com` e a URL de checkout ainda será
 `https://www.minhaloja.com/checkout`.
 
-É importante mencionar a questão da indexação nos motores de busca. Se deseja evitar que o site seja indexado ao pesquisar "secure + nome da loja", você pode adicionar um `<meta name="robots" content="noindex, nofollow">` no
+**Importante:** Ao criar a URL secundária, você deve adicionar um `<meta name="robots" content="noindex">` no `<head>` após o Go Live para evitar indexação indesejada.
 `<Head>` da sua loja. Isso ajudará a prevenir a indexação indesejada.
 
 Atualmente, a VTEX não expõe seus serviços de interface de usuário por meio de
