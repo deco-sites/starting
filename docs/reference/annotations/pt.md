@@ -28,6 +28,7 @@ Lista com todas as annotations suportadas:
 |------------|------------|-----------|
 |`@title`|Recebe texto que será usado como título da label daquele input no formulário.|`@title Número de produtos`|
 |`@description`|Recebe texto que será usado como descrição na label daquele input no formulário.|`@description Total de produtos para mostrar na vitrine`|
+|`@format`|Configura um campo para ser formatado de forma diferente. Isso pode fazer com que seu (Widget)[/docs/pt/widget] mude.|`@format [Format value](#valores-possíveis-para-o-format)`|
 |`@hide`|Esconde essa propriedade no formulário do Admin. O valor continua presente no JSON da Section.|`@hide`|
 |`@ignore`|O valor e a propriedade são completamente ignorados.|`@ignore`|
 |`@maximum`|Configura um valor máximo para aquele campo. Funciona em propriedades do tipo `number`. (valor <= X)|`@maximum 10`|
@@ -40,4 +41,20 @@ Lista com todas as annotations suportadas:
 |`@uniqueItems`|Faz com que campos do tipo `array` não possam ter valores duplicados.|`@uniqueItems true`|
 |`@maxItems`|Faz com que campos do tipo `array` não possam ter mais que X valores.|`@maxItems 3`|
 |`@minItems`|Faz com que campos do tipo `array` não possam ter menos que X valores.|`@minItems 2`|
-|`@default`|Configura um valor padrão para aquele campo.|`@default Testando`|
+|`@default`|Configura um valor padrão para aquele campo. Funciona somente com tipos primitivos.|`@default Testando`|
+|`@deprecated`|Marca um campo como .|`@deprecated vamos remover esse campo na próxima atualização`|
+
+## Valores possíveis para o @format
+
+- `@format color`: Renderiza um input de cor no lugar de um de texto.
+
+<img src="/docs/annotations/color.png" alt="@format color example" width="300">
+
+- `@format date`: Renderiza um input de data no lugar de um de texto.
+
+<img src="/docs/annotations/date.png" alt="@format date example" width="300">
+
+- `@format html`: Renderiza um input que abre um Editor WYSIWYG para edição avançada
+do texto por html.
+
+<img src="/docs/widgets/html-open.png" alt="@format html example" width="300">

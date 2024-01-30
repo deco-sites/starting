@@ -26,6 +26,7 @@ List with all supported annotations:
 |------------|-------------|-------|
 |`@title`|Receives text that will be used as the title of the label for that input in the form.|`@title Number of products`|
 |`@description`|Receives text that will be used as the description in the label for that input in the form.|`@description Total number of products to display in the storefront`|
+|`@format`|Configures a field to be formatted differently. This can cause its [Widget](/docs/en/widget) to change.|`@format [Format value](#possible-values-for-format)`|
 |`@hide`|Hides this property in the Admin form. The value still remains in the JSON of the Section.|`@hide`|
 |`@ignore`|The value and the property are completely ignored.|`@ignore`|
 |`@maximum`|Configures a maximum value for that field. Works on properties of type `number`. (value <= X)|`@maximum 10`|
@@ -39,3 +40,18 @@ List with all supported annotations:
 |`@maxItems`|Ensures that fields of type `array` cannot have more than X values.|`@maxItems 3`|
 |`@minItems`|Ensures that fields of type `array` cannot have fewer than X values.|`@minItems 2`|
 |`@default`|Configures a default value for that field.|`@default Testing`|
+|`@deprecated`|Marks a field as deprecated.|`@deprecated We will remove this field in the next update`|
+
+## Possible Values for `@format`
+
+- `@format color`: Renders a color input instead of a text input.
+
+<img src="/docs/annotations/color.png" alt="@format color example" width="300">
+
+- `@format date`: Renders a date input instead of a text input.
+
+<img src="/docs/annotations/date.png" alt="@format date example" width="300">
+
+- `@format html`: Renders an input that opens a WYSIWYG editor for advanced HTML text editing.
+
+<img src="/docs/widgets/html-open.png" alt="@format html example" width="300">
