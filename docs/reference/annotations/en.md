@@ -1,0 +1,41 @@
+---
+description: Customize the behavior of the Deco Admin form with annotations on its properties.
+---
+
+Customize the behavior of the [Deco Admin](https://admin.deco.cx) form with annotations on its properties.
+
+For example: When using native types (number, string, etc.), the editor will use the property name as the default form label. However, it's possible to customize this by using [JSDoc](https://jsdoc.app/) tags.
+
+- Example:
+
+```ts
+export interface Props {
+  /** @title Number of products */
+  /** @description Total number of products to display in the storefront */
+  count: number;
+}
+```
+
+- Editor:
+
+<img src="/docs/annotations/example.png" alt="Example" width="400">
+
+List with all supported annotations:
+
+| Annotation | Description | Usage |
+|------------|-------------|-------|
+|`@title`|Receives text that will be used as the title of the label for that input in the form.|`@title Number of products`|
+|`@description`|Receives text that will be used as the description in the label for that input in the form.|`@description Total number of products to display in the storefront`|
+|`@hide`|Hides this property in the Admin form. The value still remains in the JSON of the Section.|`@hide`|
+|`@ignore`|The value and the property are completely ignored.|`@ignore`|
+|`@maximum`|Configures a maximum value for that field. Works on properties of type `number`. (value <= X)|`@maximum 10`|
+|`@minimum`|Configures a minimum value for that field. Works on properties of type `number`. (value >= X)|`@minimum 15`|
+|`@exclusiveMaximum`|Configures a maximum value for that field. Works on properties of type `number`. It is the exclusive counterpart of `@maximum`. (value < X)|`@exclusiveMaximum 10`|
+|`@exclusiveMinimum`|Configures a minimum value for that field. Works on properties of type `number`. It is the exclusive counterpart of `@minimum`. (value > X)|`@exclusiveMinimum 15`|
+|`@maxLength`|Configures a maximum length for the text of a field. Works on properties of type `string`.|`@maxLength 30`|
+|`@minLength`|Configures a minimum length for the text of a field. Works on properties of type `string`.|`@minLength 8`|
+|`@readOnly`|Makes a field uneditable in the admin form but still readable.|`@readOnly`|
+|`@uniqueItems`|Ensures that fields of type `array` cannot have duplicate values.|`@uniqueItems true`|
+|`@maxItems`|Ensures that fields of type `array` cannot have more than X values.|`@maxItems 3`|
+|`@minItems`|Ensures that fields of type `array` cannot have fewer than X values.|`@minItems 2`|
+|`@default`|Configures a default value for that field.|`@default Testing`|

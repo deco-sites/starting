@@ -272,6 +272,13 @@ const tableOfContents: TableOfContents = [
         },
         slug: "reference/analytics",
       },
+      {
+        title: {
+          pt: "Annotations",
+          en: "Annotations",
+        },
+        slug: "reference/annotations",
+      }
     ],
   },
   {
