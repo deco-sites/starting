@@ -2,7 +2,7 @@
 description: Lista de widgets disponíveis no Admin da Deco.
 ---
 
-Widgets são componentes que aparecem no formulário do [Admin da Deco](https://admin.deco.cx) de forma correspondente as propriedades de uma [Section](/docs/pt/concepts/section). Aqui está uma lista dos Widgets existentes:
+Widgets são componentes que aparecem no formulário do [Admin da Deco](https://admin.deco.cx) de forma correspondente as propriedades de um [Bloco](/docs/pt/concepts/block). Aqui está uma lista dos Widgets existentes:
 
 # TextArea
 
