@@ -272,6 +272,13 @@ const tableOfContents: TableOfContents = [
         },
         slug: "reference/analytics",
       },
+      {
+        title: {
+          pt: "Widgets",
+          en: "Widgets",
+        },
+        slug: "reference/widgets"
+      },
     ],
   },
   {
