@@ -17,7 +17,7 @@ export function useCards(
 
   useEffect(() => {
     const checkIsMobile = () => {
-      setIsMobile(window.innerWidth <= 1024);
+      setIsMobile(globalThis.windowinnerWidth <= 1024);
     };
 
     checkIsMobile();

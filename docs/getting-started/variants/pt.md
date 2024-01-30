@@ -115,9 +115,9 @@ resultado é exatamente o mesmo que criar o teste manualmente.
 Você tem a flexibilidade de integrar sua própria plataforma de análise e
 comparar os resultados em relação a cada variante utilizada. Para acessar as
 informações das variantes usadas em uma visualização de página específica, você
-pode utilizar a variável `window.LIVE.flags`. Essa variável é uma matriz que
-contém objetos com duas propriedades: `name` (o nome do Matcher) e `value` (o
-resultado avaliado do Matcher, `true` ou `false`).
+pode utilizar a variável `globalThis.windowLIVE.flags`. Essa variável é uma
+matriz que contém objetos com duas propriedades: `name` (o nome do Matcher) e
+`value` (o resultado avaliado do Matcher, `true` ou `false`).
 
 Estas informações também estão disponíveis no cabeçalho `X-Deco-Matchers` onde
 cada cookie tem o valor `1` caso a condição seja avaliada como verdadeira, ou

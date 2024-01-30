@@ -93,7 +93,7 @@ GTM. Para isso, siga os passos:
 
 ```javascript
 function main() {
-  return window.LIVE.flags.map(function (flag) {
+  return globalThis.windowLIVE.flags.map(function (flag) {
     if (flag.value) return flag.name;
     else return null;
   }).filter(Boolean);

@@ -21,12 +21,13 @@ export default function ForwardBackButtons() {
     enabled: false,
   });
 
-  const isEnglish = window.navigator.language.startsWith("en");
+  const isEnglish = globalThis.windownavigator.language.startsWith("en");
   const [isEnglishState, setIsEnglishState] = useState(isEnglish);
 
   useEffect(() => {
-    const encodedURL = window.location.href.split(
-      window.location.search || window.location.hash || /[?#]/,
+    const encodedURL = globalThis.windowlocation.href.split(
+      globalThis.windowlocation.search || globalThis.windowlocation.hash ||
+        /[?#]/,
     )[0];
     const decodedURL = decodeURIComponent(encodedURL);
 

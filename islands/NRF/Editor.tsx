@@ -41,11 +41,11 @@ const AnimationComponents = {
 
 export default function Editor({ title, features }: Props) {
   useEffect(() => {
-    let lastScrollY = window.scrollY;
+    let lastScrollY = globalThis.windowscrollY;
     let isScrollingDown = true;
 
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = globalThis.windowscrollY;
       isScrollingDown = currentScrollY > lastScrollY;
       lastScrollY = currentScrollY;
     };

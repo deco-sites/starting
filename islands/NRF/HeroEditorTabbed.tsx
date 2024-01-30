@@ -2,6 +2,8 @@ import { useSignal } from "@preact/signals";
 import { useEffect } from "preact/hooks";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { animate } from "motion";
+import Image from "apps/website/components/Image.tsx";
+
 export interface Tab {
   title: string;
   image: ImageWidget;
@@ -69,7 +71,13 @@ export const HeroEditorTabbed = ({ tabs }: Props) => {
                 index !== selectedTab.value ? "hidden" : ""
               }`}
             >
-              <img src={tab.image} alt={tab.title} />
+              <Image
+                src={tab.image}
+                alt={tab.title}
+                width={1134}
+                height={746}
+                preload={index === 0 ? true : false}
+              />
             </div>
           ))}
       </div>

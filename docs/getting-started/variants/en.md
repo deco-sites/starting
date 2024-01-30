@@ -114,10 +114,10 @@ same as creating the test manually.
 
 You have the flexibility to integrate your own analytics platform and compare
 the results against each variant being used. To access the information of the
-variants used in a specific PageView, you can utilize the `window.LIVE.flags`
-variable. This variable is an array that contains objects with two properties:
-`name` (the name of the Matcher) and `value` (the evaluated result of the
-Matcher, either `true` or `false`).
+variants used in a specific PageView, you can utilize the
+`globalThis.windowLIVE.flags` variable. This variable is an array that contains
+objects with two properties: `name` (the name of the Matcher) and `value` (the
+evaluated result of the Matcher, either `true` or `false`).
 
 These flags are also available in the `X-Deco-Matchers` header, where each
 cookie has a value of `1` if the condition is evaluated as true, or `0`

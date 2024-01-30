@@ -5,8 +5,8 @@ export const CursorFollower = () => {
   const position = useSignal({ x: 0, y: 0 });
 
   const handleMouseMove = (e: any) => {
-    const x = (e.clientX / window.innerWidth) * 100;
-    const y = (e.clientY / window.innerHeight) * 100;
+    const x = (e.clientX / globalThis.windowinnerWidth) * 100;
+    const y = (e.clientY / globalThis.windowinnerHeight) * 100;
 
     position.value = { x, y };
   };

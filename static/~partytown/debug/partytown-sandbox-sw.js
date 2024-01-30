@@ -98,9 +98,9 @@
         }
     };
     let lastCleanup = 0;
-    const mainWindow = window.parent;
+    const mainWindow = globalThis.windowparent;
     const docImpl = document.implementation.createHTMLDocument();
-    const config = mainWindow.partytown || {};
+    const config = mainglobalThis.windowpartytown || {};
     const libPath = (config.lib || "/~partytown/") + "debug/";
     const logMain = msg => {
         console.debug.apply(console, [ "%cMain 🌎", "background: #717171; color: white; padding: 2px 3px; border-radius: 2px; font-size: 0.8em;", msg ]);
@@ -145,7 +145,7 @@
         }
         return obj;
     };
-    const serializedValueIsError = value => value instanceof window.top.Error;
+    const serializedValueIsError = value => value instanceof globalThis.windowtop.Error;
     const deserializeFromWorker = (worker, serializedTransfer, serializedType, serializedValue) => {
         if (serializedTransfer) {
             serializedType = serializedTransfer[0];
@@ -421,9 +421,9 @@
         const intersectionObserver = getGlobalConstructor(mainWindow, "IntersectionObserver");
         const mutationObserver = getGlobalConstructor(mainWindow, "MutationObserver");
         const resizeObserver = getGlobalConstructor(mainWindow, "ResizeObserver");
-        const perf = mainWindow.performance;
-        const screen = mainWindow.screen;
-        const impls = [ [ mainWindow.history ], [ perf ], [ perf.navigation ], [ perf.timing ], [ screen ], [ screen.orientation ], [ mainWindow.visualViewport ], [ intersectionObserver, 12 ], [ mutationObserver, 12 ], [ resizeObserver, 12 ], [ textNode ], [ comment ], [ frag ], [ shadowRoot ], [ elm ], [ elm.attributes ], [ elm.classList ], [ elm.dataset ], [ elm.style ], [ docImpl ], [ docImpl.doctype ] ];
+        const perf = mainglobalThis.windowperformance;
+        const screen = mainglobalThis.windowscreen;
+        const impls = [ [ mainglobalThis.windowhistory ], [ perf ], [ perf.navigation ], [ perf.timing ], [ screen ], [ screen.orientation ], [ mainglobalThis.windowvisualViewport ], [ intersectionObserver, 12 ], [ mutationObserver, 12 ], [ resizeObserver, 12 ], [ textNode ], [ comment ], [ frag ], [ shadowRoot ], [ elm ], [ elm.attributes ], [ elm.classList ], [ elm.dataset ], [ elm.style ], [ docImpl ], [ docImpl.doctype ] ];
         const initialInterfaces = [ readImplementation("Window", mainWindow), readImplementation("Node", textNode) ];
         const $config$ = JSON.stringify(config, ((k, v) => {
             if ("function" == typeof v) {
@@ -435,7 +435,7 @@
         const initWebWorkerData = {
             $config$: $config$,
             $interfaces$: readImplementations(impls, initialInterfaces),
-            $libPath$: new URL(libPath, mainWindow.location) + "",
+            $libPath$: new URL(libPath, mainglobalThis.windowlocation) + "",
             $origin$: origin,
             $localStorage$: readStorage("localStorage"),
             $sessionStorage$: readStorage("sessionStorage")
@@ -522,7 +522,7 @@
     };
     let worker;
     (receiveMessage => {
-        const swContainer = window.navigator.serviceWorker;
+        const swContainer = globalThis.windownavigator.serviceWorker;
         return swContainer.getRegistration().then((swRegistration => {
             swContainer.addEventListener("message", (ev => receiveMessage(ev.data, (accessRsp => swRegistration.active && swRegistration.active.postMessage(accessRsp)))));
             return (worker, msg) => {
@@ -540,7 +540,7 @@
             };
             logMain("Created Partytown web worker (0.7.2)");
             worker.onerror = ev => console.error("Web Worker Error", ev);
-            mainWindow.addEventListener("pt1", (ev => registerWindow(worker, getAndSetInstanceId(ev.detail.frameElement), ev.detail)));
+            mainglobalThis.windowaddEventListener("pt1", (ev => registerWindow(worker, getAndSetInstanceId(ev.detail.frameElement), ev.detail)));
         }
     }));
 })(window);
