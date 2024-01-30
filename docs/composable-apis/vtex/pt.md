@@ -37,7 +37,7 @@ contrário, siga as etapas deste
 > Certifique-se de que seu site foi criado com base no modelo
 > **Storefront-Vtex** abaixo:
 
-<img width="586" alt="Criando um website no deco.cx" src="https://github.com/deco-sites/starting/assets/76620866/90c657d0-e674-441f-b3b4-267692fc31a0">
+<img width="586" alt="Criando um website no deco.cx" src="https://github.com/deco-sites/storefront/assets/76822093/c39e1173-dbb9-4db5-adc3-041aaa8db94b">
 
 # Configurando a `URL Pública da Loja`
 
@@ -45,10 +45,13 @@ O modelo _Deco Commerce_ atualmente faz o proxy dos serviços _checkout_ e
 _my-account_ da própria VTEX. Isso significa que seu usuário final NÃO será
 redirecionado para nenhum outro domínio ao fazer o checkout. Por exemplo, vamos
 supor que, antes de migrar para o Deco, sua loja esteja hospedada em
-`www.minhaloja.com` e a URL de checkout seja
-`https://www.minhaloja.com/checkout`. Após migrar para o Deco, sua loja
-continuará sendo servida em `www.minhaloja.com` e a URL de checkout ainda será
+`www.minhaloja.com` e a URL de checkout seja `https://www.minhaloja.com/checkout`.  
+
+Após migrar para o Deco, sua loja continuará sendo servida em `www.minhaloja.com` e a URL de checkout ainda será
 `https://www.minhaloja.com/checkout`.
+
+É importante mencionar a questão da indexação nos motores de busca. Se deseja evitar que o site seja indexado ao pesquisar "secure + nome da loja", você pode adicionar um `<meta name="robots" content="noindex, nofollow">` no
+`<Head>` da sua loja. Isso ajudará a prevenir a indexação indesejada.
 
 Atualmente, a VTEX não expõe seus serviços de interface de usuário por meio de
 uma URL pública na internet. Por esse motivo, precisamos de uma URL secundária
