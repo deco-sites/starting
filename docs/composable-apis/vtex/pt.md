@@ -50,9 +50,6 @@ supor que, antes de migrar para o Deco, sua loja esteja hospedada em
 Após migrar para o Deco, sua loja continuará sendo servida em `www.minhaloja.com` e a URL de checkout ainda será
 `https://www.minhaloja.com/checkout`.
 
-**Importante:** Ao criar a URL secundária, você deve adicionar um `<meta name="robots" content="noindex">` no `<head>` após o Go Live para evitar indexação indesejada.
-`<Head>` da sua loja. Isso ajudará a prevenir a indexação indesejada.
-
 Atualmente, a VTEX não expõe seus serviços de interface de usuário por meio de
 uma URL pública na internet. Por esse motivo, precisamos de uma URL secundária
 para habilitar o proxy dos serviços de _checkout_ e _my-account_. Seguindo nosso
@@ -64,6 +61,8 @@ próxima etapa.
 
 A arquitetura final da configuração é:
 <img width="1066" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
+
+**Importante:** Ao criar a URL secundária, você deve adicionar um `<meta name="robots" content="noindex">` no `<head>` após o Go Live para evitar indexação indesejada.
 
 # Conectando à VTEX
 

@@ -37,7 +37,7 @@ otherwise.
 > Make sure your site was created based on the **Storefront-Vtex** template
 > below
 
-<img width="586" alt="Creating a website in deco.cx" src="https://github.com/deco-sites/starting/assets/76620866/90c657d0-e674-441f-b3b4-267692fc31a0">
+<img width="586" alt="Creating a website in deco.cx" src="https://github.com/deco-sites/storefront/assets/76822093/c39e1173-dbb9-4db5-adc3-041aaa8db94b">
 
 # Setting up the `Public store URL`
 
@@ -59,6 +59,8 @@ the next step
 
 The final architecture of the setup is:
 <img width="1066" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
+
+**Important:** When creating a secondary URL, you should add a `<meta name="robots" content="noindex">` in the `<head>` after Go Live to avoid unwanted indexing.
 
 # Connecting to VTEX
 
