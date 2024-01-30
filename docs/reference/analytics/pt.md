@@ -157,7 +157,7 @@ Exemplo:
 
 ```diff
 export const sendEvent = <E extends AnalyticsEvent>(event: E) => {
-  if (typeof window.DECO_SITES_STD?.sendAnalyticsEvent !== "function") {
+  if (typeof globalThis.windowDECO_SITES_STD?.sendAnalyticsEvent !== "function") {
     console.info(
       "Cannot find Analytics section in your page. Press `.` to add Analytics and supress this warning",
     );
@@ -165,14 +165,14 @@ export const sendEvent = <E extends AnalyticsEvent>(event: E) => {
     return;
   }
 +
-+ if (!window.gtag) {
-+   window.gtag = function () {
-+   window.dataLayer.push(arguments);
++ if (!globalThis.windowgtag) {
++   globalThis.windowgtag = function () {
++   globalThis.windowdataLayer.push(arguments);
 + };
 + }
 +
-  window.DECO_SITES_STD.sendAnalyticsEvent(event);
-+ window.gtag("event", event.name, event.params)
+  globalThis.windowDECO_SITES_STD.sendAnalyticsEvent(event);
++ globalThis.windowgtag("event", event.name, event.params)
 };
 ```
 

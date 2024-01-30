@@ -2,10 +2,10 @@ import { useEffect, useState } from "preact/hooks";
 
 const useMenuState = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1124);
+  const [isMobile, setIsMobile] = useState(globalThis.windowinnerWidth < 1124);
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth < 1124);
+    setIsMobile(globalThis.windowinnerWidth < 1124);
     if (!isMobile && isMenuOpen) {
       setIsMenuOpen(false);
     }

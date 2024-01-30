@@ -30,7 +30,10 @@ export function LanguageSwitcher({ languages }: Props) {
 
   const pathWithoutLang = useMemo(() => {
     if (IS_BROWSER) {
-      return window.location.pathname.replace(currentLang?.link ?? "", "");
+      return globalThis.windowlocation.pathname.replace(
+        currentLang?.link ?? "",
+        "",
+      );
     }
     return "";
   }, [currentLang]);

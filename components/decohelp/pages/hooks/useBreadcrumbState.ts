@@ -15,13 +15,13 @@ export function useBreadcrumbState(
   homeLabel: string,
 ): BreadcrumbState {
   const [showBreadcrumb, setShowBreadcrumb] = useState(
-    window.innerWidth < 1124,
+    globalThis.windowinnerWidth < 1124,
   );
   const [pathSegments, setPathSegments] = useState<PathSegment[]>([]);
 
   useEffect(() => {
     const handleResize = () => {
-      setShowBreadcrumb(window.innerWidth < 1124);
+      setShowBreadcrumb(globalThis.windowinnerWidth < 1124);
     };
 
     addEventListener("resize", handleResize);
@@ -36,7 +36,7 @@ export function useBreadcrumbState(
       return;
     }
 
-    const currentPath = window.location.pathname;
+    const currentPath = globalThis.windowlocation.pathname;
     const segments = currentPath.split("/").filter((segment) => segment !== "");
 
     const segmentsWithPaths: PathSegment[] = segments.map((segment, index) => {

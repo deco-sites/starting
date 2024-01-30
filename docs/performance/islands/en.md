@@ -5,20 +5,22 @@ since: 1.0.0
 
 ### Summary
 
-> An island is a component that is interactive and will be hydrated on the client side. The server sends all the data from the island's `props` for hydration, and the browser needs time to process and render these islands.
+> An island is a component that is interactive and will be hydrated on the
+> client side. The server sends all the data from the island's `props` for
+> hydration, and the browser needs time to process and render these islands.
 >
 > Therefore, it is important to take some precautions when using islands:
 >
 > 1. Minimize the amount of props to be sent/used for an island
-> 2. Make an island only what is necessary, remembering to use `children` for internal elements that do not need hydration.
-
+> 2. Make an island only what is necessary, remembering to use `children` for
+   > internal elements that do not need hydration.
 
 # Reducing the size of the props JSON sent to islands
 
-When loading data from external APIs using [Loaders](/docs/en/concepts/loader) and
-sending them to the [Section](/docs/en/concepts/section), it is possible that the size
-of the payload negatively impacts the performance of the site. The impact occurs both
-in the initial loading time and in the
+When loading data from external APIs using [Loaders](/docs/en/concepts/loader)
+and sending them to the [Section](/docs/en/concepts/section), it is possible
+that the size of the payload negatively impacts the performance of the site. The
+impact occurs both in the initial loading time and in the
 [hydration](https://blog.saeloun.com/2021/12/16/hydration/), where the page is
 "initialized" in the browser to make it interactive (using `useEffect`,
 `useSignal`, etc...). You can view the size of the final JSON through the
@@ -28,13 +30,15 @@ in the initial loading time and in the
 
 When the JSON size exceeds ~500kb, it is likely that the UI does not need the
 complete data, but rather some part of it (or a computation based on other
-values). To reduce this size and improve page performance, it is
-possible to **filter the data** in the Loader so that only the necessary data is
-passed to the UI.
+values). To reduce this size and improve page performance, it is possible to
+**filter the data** in the Loader so that only the necessary data is passed to
+the UI.
 
 ## Reducing data sent to islands
 
-In this first example, we will show how to avoid sending too much data to an island. Let's say there is a component called ProductCard that receives the entire JSON of a product.
+In this first example, we will show how to avoid sending too much data to an
+island. Let's say there is a component called ProductCard that receives the
+entire JSON of a product.
 
 ```tsx
 import Image from "apps/website/components/Image.tsx";
@@ -48,7 +52,8 @@ export default function ProductCard({ product }: Props) {
 }
 ```
 
-In it, you want to include an [Island](https://fresh.deno.dev/docs/concepts/islands) to create the buy button.
+In it, you want to include an
+[Island](https://fresh.deno.dev/docs/concepts/islands) to create the buy button.
 
 ```tsx
 import BuyButton from "$store/components/ui";
@@ -64,9 +69,12 @@ export default function ProductCard({ product }: Props) {
 }
 ```
 
-It is possible that this BuyButton needs some product information in order to add it to the cart.
+It is possible that this BuyButton needs some product information in order to
+add it to the cart.
 
-This is where we need to be careful about the amount of data sent to the Island. For example, it is very likely that the buy button does not need to receive image data.
+This is where we need to be careful about the amount of data sent to the Island.
+For example, it is very likely that the buy button does not need to receive
+image data.
 
 The ideal approach is to send only the necessary data.
 
@@ -102,19 +110,26 @@ export default function ProductCard({ product }: Props) {
 }
 ```
 
-The correct approach sends only the ID and Seller data, which in the example are the only ones needed in the Island.
+The correct approach sends only the ID and Seller data, which in the example are
+the only ones needed in the Island.
 
 Thus, during hydration, the JSON that the Island will load will not be as large.
 
 # Reducing the scope of an island
 
-An island and its components will all be hydrated on the client side in order to operate. This means that for all defined elements of the island, they will be recursively hydrated.
+An island and its components will all be hydrated on the client side in order to
+operate. This means that for all defined elements of the island, they will be
+recursively hydrated.
 
-It is possible to reduce the scope of the island by passing any internal elements as `children` of the island.
+It is possible to reduce the scope of the island by passing any internal
+elements as `children` of the island.
 
 > ❌ Inappropriate approach
 
-In the example below, we create an island that interacts with `localStorage` to set a title for a gallery of items. In the example below, both the gallery props will be passed to hydrate the `TitleContainer` and will also be passed to hydrate the `Gallery`.
+In the example below, we create an island that interacts with `localStorage` to
+set a title for a gallery of items. In the example below, both the gallery props
+will be passed to hydrate the `TitleContainer` and will also be passed to
+hydrate the `Gallery`.
 
 ```tsx
 import { computed } from "@preact/signals";
@@ -132,7 +147,7 @@ export default function TitleContainer(
   return (
     <div>
       <h1>{title}</h1>
-      <Gallery {...galleryProps}/>
+      <Gallery {...galleryProps} />
     </div>
   );
 }
@@ -140,7 +155,10 @@ export default function TitleContainer(
 
 > ✅ Correct approach
 
-However, if the `Gallery` is passed as children to the island, it will be rendered, serialized, and not hydrated! For the `TitleContainer`, the `children` is pre-rendered HTML ready to be displayed, and therefore it is not an island itself.
+However, if the `Gallery` is passed as children to the island, it will be
+rendered, serialized, and not hydrated! For the `TitleContainer`, the `children`
+is pre-rendered HTML ready to be displayed, and therefore it is not an island
+itself.
 
 ```tsx
 import { computed } from "@preact/signals";
