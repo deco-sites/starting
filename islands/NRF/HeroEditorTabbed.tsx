@@ -76,7 +76,6 @@ export const HeroEditorTabbed = ({ tabs }: Props) => {
                 alt={tab.title}
                 width={1134}
                 height={746}
-                loading={index === 0 ? "eager" : "lazy"}
                 preload={index === 0 ? true : false}
               />
             </div>
