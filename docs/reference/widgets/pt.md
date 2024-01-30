@@ -142,7 +142,7 @@ Exemplo:
 export interface Props {
   /**
    * @format dynamic-options
-   * @options minhaloja/loaders/produtos.ts
+   * @options deco-sites/minhaloja/loaders/produtos.ts
    */
   produto: string;
 }
@@ -150,7 +150,14 @@ export interface Props {
 
 `minhaloja/loaders/produtos.ts`
 ```ts
-export default function ProdutosLoader(_props: null) {
+import { FnContext, allowCorsFor } from "deco/mod.ts";
+
+export default function ProdutosLoader(_props: unknown, req: Request, ctx: FnContext) {
+    // Allow Cors
+    Object.entries(allowCorsFor(req)).map(([name, value]) => {
+        ctx.response.headers.set(name, value);
+    });
+
     return ["Produto X", "Produto Y", "Produto Z"];
 }
 ```

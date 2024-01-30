@@ -126,7 +126,7 @@ Example:
 export interface Props {
   /**
    * @format dynamic-options
-   * @options mystore/loaders/products.ts
+   * @options deco-sites/mystore/loaders/products.ts
    */
   product: string;
 }
@@ -134,7 +134,14 @@ export interface Props {
 
 `mystore/loaders/produtos.ts`
 ```ts
-export default function ProductsLoader(_props: null) {
+import { FnContext, allowCorsFor } from "deco/mod.ts";
+
+export default function ProductsLoader(_props: unknown, req: Request, ctx: FnContext) {
+    // Allow Cors
+    Object.entries(allowCorsFor(req)).map(([name, value]) => {
+        ctx.response.headers.set(name, value);
+    });
+
     return ["Product X", "Product Y", "Product Z"];
 }
 ```
