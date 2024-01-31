@@ -1,16 +1,11 @@
 import HeaderIsland, { MenuLink } from "deco-sites/starting/islands/Header.tsx";
-
-export interface GitHub {
-  /** @format html */
-  mobile?: string;
-  /** @format html */
-  desktop?: string;
-}
+import { GithubStargazesProps } from "deco-sites/starting/components/ui/GithubStargazers.tsx";
 
 export interface Alert {
+  github?: GithubStargazesProps;
   /** @format html */
   /** @title Text */
-  label: string;
+  text: string;
 }
 
 export interface Alerts {
@@ -19,7 +14,6 @@ export interface Alerts {
 }
 
 export interface Props {
-  githubBarText?: GitHub;
   alerts?: Alerts;
   menuLinks: MenuLink[];
   idiom: string;

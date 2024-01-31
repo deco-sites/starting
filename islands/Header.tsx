@@ -5,9 +5,13 @@ import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
 import { useId } from "deco-sites/starting/sdk/useId.ts";
 import { Dropdown } from "deco-sites/starting/components/ui/Dropdown.tsx";
+import GithubStargazes, {
+  GithubStargazesProps,
+} from "deco-sites/starting/components/ui/GithubStargazers.tsx";
 
 export interface Alert {
-  label: string;
+  github?: GithubStargazesProps;
+  text: string;
 }
 
 export interface MenuLink {
@@ -200,16 +204,17 @@ export default function Header(props: Props) {
       {alerts?.mobile && alerts?.mobile.length > 0 && (
         <div id={idMobile} class="lg:hidden">
           <Slider class="carousel carousel-center w-screen bg-black text-white font-normal text-sm py-3">
-            {alerts.mobile.map((alert, index) => (
+            {alerts.mobile.map((alert, index) => [
               <Slider.Item index={index} class="carousel-item">
+                {alert.github && <GithubStargazes {...alert.github} />}
                 <span
-                  class="flex justify-center items-center w-screen"
+                  class="flex justify-center items-center w-screen gap-2"
                   dangerouslySetInnerHTML={{
-                    __html: alert.label,
+                    __html: alert.text,
                   }}
                 />
               </Slider.Item>
-            ))}
+            ])}
           </Slider>
           <SliderJS rootId={idMobile} interval={5 * 1e3} />
         </div>
@@ -219,12 +224,10 @@ export default function Header(props: Props) {
           <Slider class="carousel carousel-center w-screen bg-black text-white font-normal text-sm py-3">
             {alerts.desktop.map((alert, index) => (
               <Slider.Item index={index} class="carousel-item">
-                <span
-                  class="flex justify-center items-center w-screen"
-                  dangerouslySetInnerHTML={{
-                    __html: alert.label,
-                  }}
-                />
+                <span class="flex justify-center items-center w-screen gap-2">
+                  {alert.github && <GithubStargazes {...alert.github} />}
+                  <span dangerouslySetInnerHTML={{ __html: alert.text }} />
+                </span>
               </Slider.Item>
             ))}
           </Slider>
