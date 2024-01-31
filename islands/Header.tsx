@@ -206,11 +206,11 @@ export default function Header(props: Props) {
           <Slider class="carousel carousel-center w-screen bg-black text-white font-normal text-sm py-3">
             {alerts.mobile.map((alert, index) => [
               <Slider.Item index={index} class="carousel-item">
-                {alert.github && <GithubStargazes {...alert.github} />}
+                {alert.github ? <GithubStargazes {...alert.github} /> : null}
                 <span
                   class="flex justify-center items-center w-screen gap-2"
                   dangerouslySetInnerHTML={{
-                    __html: alert.text,
+                    __html: alert.text ? alert.text : ""
                   }}
                 />
               </Slider.Item>
@@ -225,8 +225,12 @@ export default function Header(props: Props) {
             {alerts.desktop.map((alert, index) => (
               <Slider.Item index={index} class="carousel-item">
                 <span class="flex justify-center items-center w-screen gap-2">
-                  {alert.github && <GithubStargazes {...alert.github} />}
-                  <span dangerouslySetInnerHTML={{ __html: alert.text }} />
+                  {alert.github ? <GithubStargazes {...alert.github} /> : null}
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: alert.text ? alert.text : ""
+                    }}
+                  />
                 </span>
               </Slider.Item>
             ))}
@@ -234,7 +238,6 @@ export default function Header(props: Props) {
           <SliderJS rootId={idDesktop} interval={5 * 1e3} />
         </div>
       )}
-
       <nav class="flex flex-row justify-between items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative">
         <div
           class="md:hidden w-[100vw] h-[4px] absolute top-[60px] transition ease-in-out duration-300 left-0"
