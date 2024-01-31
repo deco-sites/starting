@@ -213,7 +213,7 @@ export default function Header(props: Props) {
                     __html: alert.text ? alert.text : ""
                   }}
                 />
-              </Slider.Item>,
+              </Slider.Item>
             ])}
           </Slider>
           <SliderJS rootId={idMobile} interval={5 * 1e3} />
