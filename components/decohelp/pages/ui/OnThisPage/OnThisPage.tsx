@@ -20,7 +20,7 @@ export default function OnThisPage(props: OnThisPage) {
       if (element) {
         const rect = element.getBoundingClientRect();
 
-        if (rect.top >= 0 && rect.bottom <= globalThis.windowinnerHeight) {
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
           const listItem = document.querySelector(`#item-${index}`);
           if (listItem) {
             listItem.classList.add(activeClass);
@@ -69,8 +69,8 @@ export default function OnThisPage(props: OnThisPage) {
               const targetElement = document.getElementById(id);
               if (targetElement) {
                 const y = targetElement.getBoundingClientRect().top +
-                  globalThis.windowscrollY + yOffset;
-                globalThis.windowscrollTo({ top: y, behavior: "smooth" });
+                  window.scrollY + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
               }
 
               const listItem = document.querySelector(`#item-${index}`);

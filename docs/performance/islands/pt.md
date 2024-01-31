@@ -5,17 +5,13 @@ since: 1.0.0
 
 ### Resumo
 
-> Uma ilha determina um componente interativo e que será hidratado no lado do
-> cliente. O servidor manda todos os dados das `props` de ilhas para fazer a
-> hidratação, bem como o browser precisa de tempo para processar e renderizar
-> essas ilhas.
+> Uma ilha determina um componente interativo e que será hidratado no lado do cliente. O servidor manda todos os dados das `props` de ilhas para fazer a hidratação, bem como o browser precisa de tempo para processar e renderizar essas ilhas.
 >
 > Por isso, é importante tomar alguns cuidados no uso de ilhas:
 >
-> 1. Reduza ao máximo a quantidade de props a ser enviada / utilizada para uma
-   > ilha
-> 2. Torne uma ilha apenas o que for necessário, lembrando de usar o `children`
-   > para elementos internos que não precisam de hidratação.
+> 1. Reduza ao máximo a quantidade de props a ser enviada / utilizada para uma ilha
+> 2. Torne uma ilha apenas o que for necessário, lembrando de usar o `children` para elementos internos que não precisam de hidratação.
+
 
 # Reduzindo o tamanho do JSON de props enviado para as ilhas
 
@@ -38,9 +34,7 @@ passado para a UI.
 
 ## Reduzindo dados enviados às ilhas
 
-Nesse primeiro exemplo, mostraremos como evitar enviar muitos dados para uma
-ilha. Digamos que existe um componente chamado ProductCard, que recebe todo o
-JSON de um produto.
+Nesse primeiro exemplo, mostraremos como evitar enviar muitos dados para uma ilha. Digamos que existe um componente chamado ProductCard, que recebe todo o JSON de um produto.
 
 ```tsx
 import Image from "apps/website/components/Image.tsx";
@@ -72,12 +66,9 @@ export default function ProductCard({ product }: Props) {
 }
 ```
 
-É possível que esse BuyButton, precise de algumas informações do produto para
-poder adicionar ao carrinho.
+É possível que esse BuyButton, precise de algumas informações do produto para poder adicionar ao carrinho.
 
-Aqui que devemos tomar cuidado a quantidade de dados enviados para a Island. Por
-exemplo, é bem possível que o botão de comprar não precise receber dados de
-imagem.
+Aqui que devemos tomar cuidado a quantidade de dados enviados para a Island. Por exemplo, é bem possível que o botão de comprar não precise receber dados de imagem.
 
 O ideal é enviar apenas os dados necessários
 
@@ -121,19 +112,13 @@ grande.
 
 # Reduzindo o escopo de uma ilha
 
-Uma ilha e seus componentes serão todos hidratados do lado do cliente para
-poderem operar. Isto significa que, para todos os elementos definidos da ilha,
-eles serão recursivamente hidratados.
+Uma ilha e seus componentes serão todos hidratados do lado do cliente para poderem operar. Isto significa que, para todos os elementos definidos da ilha, eles serão recursivamente hidratados.
 
-É possível reduzir o escopo da ilha, fazendo com que, qualquer elemento interno,
-seja passado como `children` da ilha.
+É possível reduzir o escopo da ilha, fazendo com que, qualquer elemento interno, seja passado como `children` da ilha.
 
 > ❌ Abordagem inadequada
 
-No exemplo abaixo, criamos uma ilha que interage com o `localStorage` para
-definir um título para uma galeria de itens. No exemplo abaixo, tanto os props
-de gallery serão inseridos para hidratar o `TitleContainer`, como serão também
-inseridos para poder hidratar o `Gallery`.
+No exemplo abaixo, criamos uma ilha que interage com o `localStorage` para definir um título para uma galeria de itens. No exemplo abaixo, tanto os props de gallery serão inseridos para hidratar o `TitleContainer`, como serão também inseridos para poder hidratar o `Gallery`.
 
 ```tsx
 import { computed } from "@preact/signals";
@@ -151,7 +136,7 @@ export default function TitleContainer(
   return (
     <div>
       <h1>{title}</h1>
-      <Gallery {...galleryProps} />
+      <Gallery {...galleryProps}/>
     </div>
   );
 }
@@ -159,9 +144,7 @@ export default function TitleContainer(
 
 > ✅ Abordagem correta
 
-Se, no entanto, o `Gallery` for repassado como children para a ilha, ele será
-renderizado, serializado e não será hidratado! Para o `TitleContainer`, o
-`children` é um html pronto para ser exibido, e, portanto, não é uma ilha em si.
+Se, no entanto, o `Gallery` for repassado como children para a ilha, ele será renderizado, serializado e não será hidratado! Para o `TitleContainer`, o `children` é um html pronto para ser exibido, e, portanto, não é uma ilha em si.
 
 ```tsx
 import { computed } from "@preact/signals";

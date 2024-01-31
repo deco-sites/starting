@@ -69,4 +69,4 @@
         win.addEventListener("DOMContentLoaded", ready);
         win.addEventListener("load", ready);
     }
-}(window, document, navigator, top, globalThis.windowcrossOriginIsolated);
+}(window, document, navigator, top, window.crossOriginIsolated);

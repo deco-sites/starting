@@ -1381,7 +1381,7 @@
                     }));
                 }));
                 commaSplit("atob,btoa,crypto,indexedDB,setTimeout,setInterval,clearTimeout,clearInterval").map((globalName => {
-                    delete WorkerglobalThis.windowprototype[globalName];
+                    delete WorkerWindow.prototype[globalName];
                     if (!(globalName in win)) {
                         value = self[globalName];
                         null != value && (win[globalName] = "function" != typeof value || value.toString().startsWith("class") ? value : value.bind(self));

@@ -87,7 +87,7 @@ For that, follow the steps:
 
 ```javascript
 function main() {
-  return globalThis.windowLIVE.flags.map(function (flag) {
+  return window.LIVE.flags.map(function (flag) {
     if (flag.value) return flag.name;
     else return null;
   }).filter(Boolean);

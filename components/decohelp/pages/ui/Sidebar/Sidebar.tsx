@@ -116,7 +116,7 @@ export default function Sidebar({
   );
 
   useEffect(() => {
-    const currentPath = globalThis.windowlocation.pathname;
+    const currentPath = window.location.pathname;
     const pathParts = currentPath.split("/");
     const slug = pathParts[pathParts.length - 1].toLowerCase();
     setCurrentSlug(slug);
