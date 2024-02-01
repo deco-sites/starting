@@ -27,6 +27,7 @@ import * as $HelpFaq from "./islands/HelpFaq.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
 import * as $LiveProjects from "./islands/LiveProjects.tsx";
 import * as $NRF_BackgroundGrid from "./islands/NRF/BackgroundGrid.tsx";
+import * as $NRF_Contact from "./islands/NRF/Contact.tsx";
 import * as $NRF_Editor from "./islands/NRF/Editor.tsx";
 import * as $NRF_EditorMobile from "./islands/NRF/EditorMobile.tsx";
 import * as $NRF_Features from "./islands/NRF/Features.tsx";
@@ -74,6 +75,7 @@ const manifest = {
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
     "./islands/LiveProjects.tsx": $LiveProjects,
     "./islands/NRF/BackgroundGrid.tsx": $NRF_BackgroundGrid,
+    "./islands/NRF/Contact.tsx": $NRF_Contact,
     "./islands/NRF/Editor.tsx": $NRF_Editor,
     "./islands/NRF/EditorMobile.tsx": $NRF_EditorMobile,
     "./islands/NRF/Features.tsx": $NRF_Features,

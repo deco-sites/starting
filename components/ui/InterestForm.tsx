@@ -1,4 +1,5 @@
-import { Head } from "$fresh/runtime.ts";
+import { RECAPTCHA_SITE_KEY } from "deco-sites/starting/sdk/recaptcha.ts";
+import ReCAPTCHA from "deco-sites/starting/sections/ReCAPTCHA.tsx";
 
 export interface Props {
   webinarName?: string;
@@ -21,17 +22,18 @@ export interface Props {
   };
 }
 
-export default function ContactUs(
-  {
-    webinarName,
-    langThanks = "pt",
-    formInfor,
-  }: Props,
-) {
+export const FORM_ID = "interest-form";
+
+export default function ContactUs({
+  webinarName,
+  langThanks = "pt",
+  formInfor,
+}: Props) {
   return (
     <div>
       <div class="relative mx-auto md:w-full max-w-[511px]">
         <form
+          id={FORM_ID}
           class="flex flex-col justify-center items-center text-base md:text-xl bg-white border border-dark-green rounded-2xl p-4 md:p-8 gap-6 placeholder-[#161A16] "
           method="POST"
           action="/api/webinar"
@@ -67,23 +69,28 @@ export default function ContactUs(
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="userLinkedin"
-            placeholder={formInfor?.PlaceholderfieldSocial ||
-              "Linkedin*"}
+            placeholder={formInfor?.PlaceholderfieldSocial || "Linkedin*"}
             required
           />
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="userMessage"
-            placeholder={formInfor?.PlaceholderFieldExtra ||
-              "Quer acrescentar algo? (opcional)"}
+            placeholder={
+              formInfor?.PlaceholderFieldExtra ||
+              "Quer acrescentar algo? (opcional)"
+            }
           />
           <input
-            class="w-full h-[51px] bg-[#0A2121] text-white text-lg font-semibold rounded-[4px] cursor-pointer"
+            class="g-recaptcha w-full h-[51px] bg-[#0A2121] text-white text-lg font-semibold rounded-[4px] cursor-pointer"
             type="submit"
             value={formInfor?.submiteName || "Reserve agora"}
+            data-sitekey={RECAPTCHA_SITE_KEY}
+            data-callback="onSubmit"
+            data-action="submit"
           />
         </form>
+        <ReCAPTCHA formId={FORM_ID} />
       </div>
     </div>
   );

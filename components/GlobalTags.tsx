@@ -91,6 +91,9 @@ export default function GlobalTags() {
                   transform: translateY(100px);
                 }
 
+                .grecaptcha-badge {
+                  z-index: 10 !important;
+                }                
             `,
         }}
       >

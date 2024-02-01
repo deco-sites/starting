@@ -1,3 +1,6 @@
+import { RECAPTCHA_SITE_KEY } from "deco-sites/starting/sdk/recaptcha.ts";
+import ReCAPTCHA from "deco-sites/starting/sections/ReCAPTCHA.tsx";
+
 export interface listItem {
   title?: string;
   /** @format textarea */
@@ -42,6 +45,8 @@ export interface Props {
   FieldContacts?: Array<NeedOption>;
 }
 
+const FORM_ID = "case-form";
+
 export default function ContactUs({
   langThanks = "en",
   caseName,
@@ -85,6 +90,7 @@ export default function ContactUs({
       </div>
       <div class="w-full xl:w-1/2 relative max-w-[443px]">
         <form
+          id={FORM_ID}
           class="flex flex-col justify-center items-center gap-6 placeholder-[#161A16]"
           method="POST"
           action={"/api/case"}
@@ -131,11 +137,15 @@ export default function ContactUs({
 
           <input
             type="submit"
-            class={`w-full cursor-pointer group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero font-medium lg:text-[20px]`}
+            class={`g-recaptcha w-full cursor-pointer group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero font-medium lg:text-[20px]`}
             value={formInfor?.submiteName || "Schedule a demo"}
+            data-sitekey={RECAPTCHA_SITE_KEY}
+            data-callback="onSubmit"
+            data-action="submit"
           />
         </form>
       </div>
+      <ReCAPTCHA formId={FORM_ID} />
     </div>
   );
 }

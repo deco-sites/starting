@@ -1,4 +1,5 @@
-import { Head } from "$fresh/runtime.ts";
+import { RECAPTCHA_SITE_KEY } from "deco-sites/starting/sdk/recaptcha.ts";
+import ReCAPTCHA from "deco-sites/starting/sections/ReCAPTCHA.tsx";
 export interface listItem {
   title?: string;
   /** @format textarea */
@@ -49,25 +50,25 @@ export interface Props {
   FieldContacts?: Array<NeedOption>;
 }
 
-export default function ContactUs(
-  {
-    infor,
-    langThanks = "en",
-    formInfor,
-    FieldNeedOptions = [
-      { name: "Plataforma deco.cx", label: "deco.cx platform" },
-      { name: "Parceria com a deco.cx", label: "Partnetship" },
-      { name: "Whitelabel deco.cx", label: "Whitelabel" },
-      { name: "decoHub", label: "deco.hub" },
-      { name: "Outros", label: "Other (describe below)" },
-    ],
-    FieldContacts = [
-      { name: "Agência", label: "System Integrator" },
-      { name: "Marca", label: "Ecommerce Enterprise" },
-      { name: "Grupo de Marcas", label: "Ecommerce Holding" },
-    ],
-  }: Props,
-) {
+const FORM_ID = "contact-form";
+
+export default function ContactUs({
+  infor,
+  langThanks = "en",
+  formInfor,
+  FieldNeedOptions = [
+    { name: "Plataforma deco.cx", label: "deco.cx platform" },
+    { name: "Parceria com a deco.cx", label: "Partnetship" },
+    { name: "Whitelabel deco.cx", label: "Whitelabel" },
+    { name: "decoHub", label: "deco.hub" },
+    { name: "Outros", label: "Other (describe below)" },
+  ],
+  FieldContacts = [
+    { name: "Agência", label: "System Integrator" },
+    { name: "Marca", label: "Ecommerce Enterprise" },
+    { name: "Grupo de Marcas", label: "Ecommerce Holding" },
+  ],
+}: Props) {
   return (
     <div class="flex flex-col items-top font-sans p-6 pt-[130px] pb-10 xl:p-40 gap-y-10 overflow-hidden xl:flex-row xl:gap-x-[120px]">
       <div class="w-full text-left xl:w-1/2">
@@ -89,12 +90,8 @@ export default function ContactUs(
                   {index + 1}
                 </span>
                 <div class="w-[90%] flex flex-col">
-                  <h3 class="text-[20px] font-medium">
-                    {item?.title}
-                  </h3>
-                  <p class="text-[16px]">
-                    {item?.description}
-                  </p>
+                  <h3 class="text-[20px] font-medium">{item?.title}</h3>
+                  <p class="text-[16px]">{item?.description}</p>
                 </div>
               </li>
             );
@@ -102,9 +99,9 @@ export default function ContactUs(
         </ol>
       </div>
       <div class="w-full xl:w-1/2 relative max-w-[443px]">
-        <span class="hidden lg:w-[352px] lg:h-[900px] lg:block lg:absolute lg:right-0 lg:-top-24 lg:bg-contact-us-bg-gradient lg:rotate-[333deg] lg:-z-10">
-        </span>
+        <span class="hidden lg:w-[352px] lg:h-[900px] lg:block lg:absolute lg:right-0 lg:-top-24 lg:bg-contact-us-bg-gradient lg:rotate-[333deg] lg:-z-10"></span>
         <form
+          id={FORM_ID}
           class="flex flex-col justify-center items-center bg-white border border-dark-green rounded-2xl p-4 md:p-8 gap-6 placeholder-[#161A16] "
           method="POST"
           action="/api/leads"
@@ -139,8 +136,9 @@ export default function ContactUs(
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="userLinkedin"
-            placeholder={formInfor?.PlaceholderfieldSocial ||
-              "Linkedin (optional)"}
+            placeholder={
+              formInfor?.PlaceholderfieldSocial || "Linkedin (optional)"
+            }
           />
 
           <fieldset class="w-full border border-dark-green py-2 px-4">
@@ -170,24 +168,32 @@ export default function ContactUs(
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="pageviews"
-            placeholder={formInfor?.PlaceholderfieldPageviews ||
-              "Number of Pageviews per month*"}
+            placeholder={
+              formInfor?.PlaceholderfieldPageviews ||
+              "Number of Pageviews per month*"
+            }
             required
           />
           <input
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="userMessage"
-            placeholder={formInfor?.PlaceholderFieldExtra ||
-              "Anything you would like to add? (optional)"}
+            placeholder={
+              formInfor?.PlaceholderFieldExtra ||
+              "Anything you would like to add? (optional)"
+            }
           />
           <input
-            class="w-full h-[51px] bg-dark-green text-white rounded-[4px] cursor-pointer"
+            class="g-recaptcha w-full h-[51px] bg-dark-green text-white rounded-[4px] cursor-pointer"
             type="submit"
             value={formInfor?.submiteName || "Schedule a demo"}
+            data-sitekey={RECAPTCHA_SITE_KEY}
+            data-callback="onSubmit"
+            data-action="submit"
           />
         </form>
       </div>
+      <ReCAPTCHA formId={FORM_ID} />
     </div>
   );
 }
