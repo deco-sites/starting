@@ -41,6 +41,7 @@ List with all supported annotations:
 |`@minItems`|Ensures that fields of type `array` cannot have fewer than X values.|`@minItems 2`|
 |`@default`|Configures a default value for that field.|`@default Testing`|
 |`@deprecated`|Marks a field as deprecated.|`@deprecated We will remove this field in the next update`|
+| `@options` | Required for the operation of the [dynamic options widget](/docs/pt/reference/widgets#dynamic-options). | `@options deco-sites/mystore/loaders/products.ts` |
 
 ## Possible Values for `@format`
 
@@ -55,3 +56,28 @@ List with all supported annotations:
 - `@format html`: Renders an input that opens a WYSIWYG editor for advanced HTML text editing.
 
 <img src="/docs/widgets/html-open.png" alt="@format html example" width="300">
+
+- `@format dynamic-options`: [Read about it here](/docs/en/reference/widgets#dynamic-options).
+
+# Templates in Annotations with Mustache
+
+Our annotations also support templating through [Mustache](https://mustache.github.io/).
+
+To use them, it's quite simple:
+
+```ts
+/**
+ * @title {{{name}}}
+ */
+interface Person {
+  name: string;
+}
+
+export interface Props {
+  people: Person[];
+}
+```
+
+Deco Admin result:
+
+<img src="/docs/annotations/mustache.png" alt="mustache example" width="300">
