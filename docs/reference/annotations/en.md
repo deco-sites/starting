@@ -26,7 +26,7 @@ List with all supported annotations:
 |------------|-------------|-------|
 |`@title`|Receives text that will be used as the title of the label for that input in the form.|`@title Number of products`|
 |`@description`|Receives text that will be used as the description in the label for that input in the form.|`@description Total number of products to display in the storefront`|
-|`@format`|Configures a field to be formatted differently. This can cause its [Widget](/docs/en/widget) to change.|`@format [Format value](#possible-values-for-format)`|
+|`@format`|Configures a field to be formatted differently. This can cause its [Widget](/docs/en/reference/widgets) to change.|`@format [Format value](#possible-values-for-format)`|
 |`@hide`|Hides this property in the Admin form. The value still remains in the JSON of the Section.|`@hide`|
 |`@ignore`|The value and the property are completely ignored.|`@ignore`|
 |`@maximum`|Configures a maximum value for that field. Works on properties of type `number`. (value <= X)|`@maximum 10`|
