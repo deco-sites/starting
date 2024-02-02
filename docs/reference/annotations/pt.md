@@ -42,7 +42,7 @@ Lista com todas as annotations suportadas:
 |`@maxItems`|Faz com que campos do tipo `array` não possam ter mais que X valores.|`@maxItems 3`|
 |`@minItems`|Faz com que campos do tipo `array` não possam ter menos que X valores.|`@minItems 2`|
 |`@default`|Configura um valor padrão para aquele campo. Funciona somente com tipos primitivos.|`@default Testando`|
-|`@deprecated`|Marca um campo como .|`@deprecated vamos remover esse campo na próxima atualização`|
+|`@deprecated`|Marca um campo como descontinuado.|`@deprecated vamos remover esse campo na próxima atualização`|
 
 ## Valores possíveis para o @format
 
