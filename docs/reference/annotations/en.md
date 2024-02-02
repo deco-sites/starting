@@ -4,7 +4,7 @@ description: Customize the behavior of the Deco Admin form with annotations on i
 
 Customize the behavior of the [Deco Admin](https://admin.deco.cx) form with annotations on its properties.
 
-For example: When using native types (number, string, etc.), the editor will use the property name as the default form label. However, it's possible to customize this by using [JSDoc](https://jsdoc.app/) tags.
+When using native types (number, string, etc.), the editor will use the property name as the default form label. However, it's possible to customize this by using [JSDoc](https://jsdoc.app/) tags.
 
 - Example:
 

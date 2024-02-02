@@ -4,7 +4,7 @@ description: Customize o comportamento do formulário do Admin da Deco com annot
 
 Customize o comportamento do formulário do [Admin da Deco](https://admin.deco.cx) com annotations nas suas propriedades.
 
-Por exemplo: Ao usar tipos nativos (number, string, etc.), o editor usará o nome da 
+Ao usar tipos nativos (number, string, etc.), o editor usará o nome da 
 propriedade como a _label_ padrão do formulário. Mas é possível personalizar isso usando 
 tags [JSDoc](https://jsdoc.app/).
 
