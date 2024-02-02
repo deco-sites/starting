@@ -28,7 +28,7 @@ Lista com todas as annotations suportadas:
 |------------|------------|-----------|
 |`@title`|Recebe texto que será usado como título da label daquele input no formulário.|`@title Número de produtos`|
 |`@description`|Recebe texto que será usado como descrição na label daquele input no formulário.|`@description Total de produtos para mostrar na vitrine`|
-|`@format`|Configura um campo para ser formatado de forma diferente. Isso pode fazer com que seu (Widget)[/docs/pt/widget] mude.|`@format [Format value](#valores-possíveis-para-o-format)`|
+|`@format`|Configura um campo para ser formatado de forma diferente. Isso pode fazer com que seu (Widget)[/docs/pt/reference/widgets] mude.|`@format [Format value](#valores-possíveis-para-o-format)`|
 |`@hide`|Esconde essa propriedade no formulário do Admin. O valor continua presente no JSON da Section.|`@hide`|
 |`@ignore`|O valor e a propriedade são completamente ignorados.|`@ignore`|
 |`@maximum`|Configura um valor máximo para aquele campo. Funciona em propriedades do tipo `number`. (valor <= X)|`@maximum 10`|
