@@ -43,6 +43,7 @@ Lista com todas as annotations suportadas:
 |`@minItems`|Faz com que campos do tipo `array` não possam ter menos que X valores.|`@minItems 2`|
 |`@default`|Configura um valor padrão para aquele campo. Funciona somente com tipos primitivos.|`@default Testando`|
 |`@deprecated`|Marca um campo como descontinuado.|`@deprecated vamos remover esse campo na próxima atualização`|
+|`@options`|É necessário para o funcionamento da [widget de dynamic options](/docs/pt/reference/widgets#dynamic-options).|`@options deco-sites/minhaloja/loaders/produtos.ts`|
 
 ## Valores possíveis para o @format
 
@@ -58,3 +59,29 @@ Lista com todas as annotations suportadas:
 do texto por html.
 
 <img src="/docs/widgets/html-open.png" alt="@format html example" width="300">
+
+- `@format dynamic-options`: [Ler sobre aqui](/docs/pt/reference/widgets#dynamic-options).
+
+# Templates em annotations com Mustache
+
+Nossas annotations também suportam templating, através
+do [Mustache](https://mustache.github.io/). 
+
+Para utilizá-las, é bem simples:
+
+```ts
+/**
+ * @title {{{nome}}}
+ */
+interface Pessoa {
+  nome: string;
+}
+
+export interface Props {
+  pessoas: Pessoa[];
+}
+```
+
+Resultado no Admin:
+
+<img src="/docs/annotations/mustache.png" alt="mustache example" width="300">
