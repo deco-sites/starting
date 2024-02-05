@@ -15,22 +15,22 @@ seu repositório e ajuda a reduzir a latência do lado do cliente.
 
 Para começar a usar a Invocação de funções client-side, siga estes passos:
 
-1. Importe o objeto `Runtime` do arquivo `runtime.ts`
+1. Importe o objeto `invoke` do arquivo `runtime.ts`
 
-2. Agora você pode emitir invocações usando a função `Runtime.invoke`. Por
+2. Agora você pode emitir invocações usando a função `invoke`. Por
    exemplo, para buscar dados de uma função, você usaria o seguinte código:
 
 > Não conseguiu achar esse arquivo?
 > [Tente este](https://github.com/deco-sites/fashion/blob/main/runtime.ts)
 
 ```ts
-import { Runtime } from "../runtime.ts";
+import { invoke } from "../runtime.ts";
 import { useCallback } from "preact/hooks";
 
 export default function MyIsland() {
 
   const fetchData = useCallback(() => {
-        const data = await Runtime.app.loaders.myLoader({/* your function input props */});
+        const data = await invoke.app.loaders.myLoader({/* your function input props */});
   }, [])
 
   return <div>
@@ -42,7 +42,7 @@ export default function MyIsland() {
 
 Aqui, a função `invoke` recebe um objeto com uma propriedade `key` que
 especifica o caminho para sua função e uma propriedade `props` que contém suas
-props de entrada da função. Quando você chama `Runtime.invoke`, o live.ts irá
+props de entrada da função. Quando você chama `invoke`, o live.ts irá
 invocar sua função como faz para renderizar seções e retorná-lo para você como
 um objeto JavaScript.
 
@@ -50,9 +50,9 @@ Você também pode agrupar solicitações passando um objeto com várias chaves,
 uma representando uma invocação desejada. Por exemplo:
 
 ```ts
-const { data1, data2 } = await Runtime({
-  data1: Runtime.app.loaders.myLoader({/* your function input props */}),
-  data2: Runtime.app.loaders.myLoader2({/* your function input props */}),
+const { data1, data2 } = await invoke({
+  data1: invoke.app.loaders.myLoader({/* your function input props */}),
+  data2: invoke.app.loaders.myLoader2({/* your function input props */}),
 });
 ```
 
