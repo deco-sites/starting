@@ -30,7 +30,7 @@ import { useCallback } from "preact/hooks";
 export default function MyIsland() {
 
   const fetchData = useCallback(() => {
-        const data = await invoke.app.loaders.myLoader({/* your function input props */});
+    const data = await invoke["deco-sites/minha-loja"].loaders.myLoader({/* your function input props */});
   }, [])
 
   return <div>
@@ -44,15 +44,19 @@ Aqui, a função `invoke` recebe um objeto com uma propriedade `key` que
 especifica o caminho para sua função e uma propriedade `props` que contém suas
 props de entrada da função. Quando você chama `invoke`, o live.ts irá
 invocar sua função como faz para renderizar seções e retorná-lo para você como
-um objeto JavaScript.
+um objeto JavaScript. É possível também chamar funções definidas em um App instalado no projeto. Por exemplo,
+
+```ts
+const dataAppVtex = await invoke.vtex.loaders.vtexLoader({/* your function input props */});
+```
 
 Você também pode agrupar solicitações passando um objeto com várias chaves, cada
 uma representando uma invocação desejada. Por exemplo:
 
 ```ts
 const { data1, data2 } = await invoke({
-  data1: invoke.app.loaders.myLoader({/* your function input props */}),
-  data2: invoke.app.loaders.myLoader2({/* your function input props */}),
+  data1: invoke.path1({/* your function input props */}),
+  data2: invoke.path2({/* your function input props */}),
 });
 ```
 

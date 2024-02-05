@@ -30,7 +30,7 @@ import { useCallback } from "preact/hooks";
 export default function MyIsland() {
 
   const fetchData = useCallback(() => {
-    const data = await invoke.app.loaders.myLoader({/* your function input props */});
+    const data = await invoke["deco-sites/my-store"].loaders.myLoader({/* your function input props */});
   }, [])
 
   return <div>
@@ -43,15 +43,19 @@ export default function MyIsland() {
 Here, the `invoke` function takes an object with a `key` property that specifies
 the path to your function and a props property that contains your function input
 props. When you call `invoke`, live.ts will invoke your function as it
-does for rendering sections and return it to you as a JavaScript object.
+does for rendering sections and return it to you as a JavaScript object. It is also possible to call functions defined in an App installed in the project. For example,
+
+```ts
+const dataAppVtex = await invoke.vtex.loaders.vtexLoader({/* your function input props */});
+```
 
 You can also batch requests by passing an object with multiple keys, each
 representing a desired invocation. For example:
 
 ```ts
 const { data1, data2 } = await invoke({
-  data1: invoke.app.loaders.myLoader({/* your function input props */}),
-  data2: invoke.app.loaders.myLoader2({/* your function input props */}),
+  data1: invoke.path1({/* your function input props */}),
+  data2: invoke.path2({/* your function input props */}),
 });
 ```
 
