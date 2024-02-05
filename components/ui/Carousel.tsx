@@ -67,7 +67,7 @@ export default function Carousel({
                         {card.body[locale]?.title}
                       </h1>
                       <div class="text-base text-[#66736C] leading-[1.5] line-clamp-2 overflow-ellipsis text-left">
-                        {card.body[locale]?.title}
+                        {card.body[locale]?.descr}
                       </div>
                     </div>
                     <div class="flex flex-col gap-2">
