@@ -39,6 +39,7 @@ import * as $NRF_PageWrapper from "./islands/NRF/PageWrapper.tsx";
 import * as $NRF_TextLines from "./islands/NRF/TextLines.tsx";
 import * as $OnThisPage from "./islands/OnThisPage.tsx";
 import * as $PopularDocuments from "./islands/PopularDocuments.tsx";
+import * as $Projects from "./islands/Projects.tsx";
 import * as $RankingAnalyze from "./islands/RankingAnalyze.tsx";
 import * as $RankingHeader from "./islands/RankingHeader.tsx";
 import * as $Sidebar from "./islands/Sidebar.tsx";
@@ -87,6 +88,7 @@ const manifest = {
     "./islands/NRF/TextLines.tsx": $NRF_TextLines,
     "./islands/OnThisPage.tsx": $OnThisPage,
     "./islands/PopularDocuments.tsx": $PopularDocuments,
+    "./islands/Projects.tsx": $Projects,
     "./islands/RankingAnalyze.tsx": $RankingAnalyze,
     "./islands/RankingHeader.tsx": $RankingHeader,
     "./islands/Sidebar.tsx": $Sidebar,
