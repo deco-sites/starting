@@ -41,6 +41,7 @@ interface Category {
 
 interface Props {
   itensPerPage?: number;
+  nomeDaCategoriaGeral?: string;
   indexCategories?: Category[];
   layoutCategoryCard?: {
     textPosition?: "top" | "bottom";
@@ -130,7 +131,7 @@ function TemplatesGrid(props: Props) {
   );
 
   const [classification, setClassification] = useState<Classification>({
-    categoriaSelecionada: "Todos",
+    categoriaSelecionada: { ...props }.nomeDaCategoriaGeral || "Todos",
     paginaAtual: 1,
     itensPorPagina: itensPerPage,
   });
@@ -160,26 +161,30 @@ function TemplatesGrid(props: Props) {
     return categories.find((category) => category.label === label);
   };
 
-  const itensParaExibir = categoriaSelecionada === "Todos"
-    ? indexCategories.flatMap((category) =>
-      category.cards.map((card) => ({
+  const itensParaExibir =
+    categoriaSelecionada === { ...props }.nomeDaCategoriaGeral
+      ? indexCategories.flatMap((category) =>
+        category.cards.map((card) => ({
+          ...card,
+          category: category.label, // Adiciona o campo category ao card
+        }))
+      )
+      : categoriaSelecionada
+      ? indexCategories.find((category) =>
+        category.label === categoriaSelecionada
+      )?.cards.map((card) => ({
         ...card,
-        category: category.label, // Adiciona o campo category ao card
-      }))
-    )
-    : categoriaSelecionada
-    ? indexCategories.find((category) =>
-      category.label === categoriaSelecionada
-    )?.cards.map((card) => ({
-      ...card,
-      category: categoriaSelecionada,
-    })) || []
-    : [];
+        category: categoriaSelecionada,
+      })) || []
+      : [];
 
   const [ordenacaoAleatoriaFeita, setOrdenacaoAleatoriaFeita] = useState(false);
 
   useEffect(() => {
-    if (categoriaSelecionada === "Todos" && !ordenacaoAleatoriaFeita) {
+    if (
+      categoriaSelecionada === { ...props }.nomeDaCategoriaGeral &&
+      !ordenacaoAleatoriaFeita
+    ) {
       // Ordenação aleatória apenas na primeira renderização da página
       setOrdenacaoAleatoriaFeita(true);
       itensParaExibir.sort(() => Math.random() - 0.5);
@@ -208,7 +213,9 @@ function TemplatesGrid(props: Props) {
             handleChangeCategoria(selectedValue);
           }}
         >
-          <option value="Todos">Todos</option>
+          <option value={{ ...props }.nomeDaCategoriaGeral || "Todos"}>
+            {{ ...props }.nomeDaCategoriaGeral || "Todos"}
+          </option>
           {indexCategories.map((category, index) => (
             <option key={index} value={category.label}>
               {category.label}
@@ -217,15 +224,18 @@ function TemplatesGrid(props: Props) {
         </select>
         <div className="hidden lg:flex flex-start border-b-2 gap-x-8 h-[32px] w-full">
           <div
-            key={"Todos"}
+            key={{ ...props }.nomeDaCategoriaGeral || "Todos"}
             className={`cursor-pointer relative top-[2px] ${
               (categoriaSelecionada === "Todos")
                 ? "font-bold border-b-2 border-black"
                 : ""
             }`}
-            onClick={() => handleChangeCategoria("Todos")}
+            onClick={() =>
+              handleChangeCategoria(
+                { ...props }.nomeDaCategoriaGeral || "Todos",
+              )}
           >
-            Todos
+            {{ ...props }.nomeDaCategoriaGeral || "Todos"}
           </div>
           {indexCategories.map((category, index) => (
             <div
