@@ -226,7 +226,7 @@ function TemplatesGrid(props: Props) {
           <div
             key={{ ...props }.nomeDaCategoriaGeral || "Todos"}
             className={`cursor-pointer relative top-[2px] ${
-              (categoriaSelecionada === "Todos")
+              (categoriaSelecionada === { ...props }.nomeDaCategoriaGeral)
                 ? "font-bold border-b-2 border-black"
                 : ""
             }`}
