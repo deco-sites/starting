@@ -132,7 +132,7 @@ export interface Props {
 }
 ```
 
-`mystore/loaders/produtos.ts`
+`mystore/loaders/products.ts`
 ```ts
 import { FnContext, allowCorsFor } from "deco/mod.ts";
 
