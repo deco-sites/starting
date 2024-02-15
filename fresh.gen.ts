@@ -3,7 +3,6 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
-import * as $_middleware from "./routes/_middleware.tsx";
 import * as $admin_catchall_ from "./routes/admin/[...catchall].tsx";
 import * as $api_calc from "./routes/api/calc.tsx";
 import * as $api_case from "./routes/api/case.tsx";
@@ -11,6 +10,7 @@ import * as $api_leads from "./routes/api/leads.tsx";
 import * as $api_platform from "./routes/api/platform.tsx";
 import * as $api_ranking from "./routes/api/ranking.ts";
 import * as $api_webinar from "./routes/api/webinar.tsx";
+import * as $decoday2024 from "./routes/decoday2024.ts";
 import * as $gfm_css from "./routes/gfm.css.ts";
 import * as $hackathon4 from "./routes/hackathon4.ts";
 import * as $proxy_image_index from "./routes/proxy/image/index.tsx";
@@ -50,7 +50,6 @@ import { type Manifest } from "$fresh/server.ts";
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
-    "./routes/_middleware.tsx": $_middleware,
     "./routes/admin/[...catchall].tsx": $admin_catchall_,
     "./routes/api/calc.tsx": $api_calc,
     "./routes/api/case.tsx": $api_case,
@@ -58,6 +57,7 @@ const manifest = {
     "./routes/api/platform.tsx": $api_platform,
     "./routes/api/ranking.ts": $api_ranking,
     "./routes/api/webinar.tsx": $api_webinar,
+    "./routes/decoday2024.ts": $decoday2024,
     "./routes/gfm.css.ts": $gfm_css,
     "./routes/hackathon4.ts": $hackathon4,
     "./routes/proxy/image/index.tsx": $proxy_image_index,
