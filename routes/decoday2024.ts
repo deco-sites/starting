@@ -13,6 +13,10 @@ export const handler: Handlers = {
       .replaceAll(
         "https://deco-sites-deco-day.deno.dev/sprites.svg",
         "/svg-decoday/sprites.svg",
+      )
+      .replaceAll(
+        "https://deco-sites-deco-day.deno.dev/matter-script.js",
+        "/svg-decoday/matter-script.js"
       );
 
     return new Response(modifiedText, {
