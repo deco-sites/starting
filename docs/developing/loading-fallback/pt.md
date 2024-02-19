@@ -45,7 +45,7 @@ export interface Props {
     myProp: string;
 }
 
-export function LoadingFallback({ error }: { error?: Error }) {
+export function LoadingFallback() {
   // Renderize spinners, esqueletos e outros espaços reservados
   return (
     <div>
