@@ -1,6 +1,6 @@
 ---
 description: Limitador de Erros lançados durante a renderização de uma Seção
-since: 1.21.4
+since: 1.54.0
 ---
 
 # Limitador de Erros
@@ -8,15 +8,13 @@ since: 1.21.4
 ## Visão Geral
 
 Captura e tratamento de erro é um conceito poderoso disponível desde a versão
-1.21.4, que permite lidar com erros que ocorrem durante a renderização de
+1.54.0, que permite lidar com erros que ocorrem durante a renderização de
 componentes. Eles permitem que você lide elegantemente com erros e evite que
 toda a aplicação seja interrompida devido a um erro não tratado.
 
 Na deco, criar um limite de erro é tão simples como exportar uma função de
-componente chamada `ErrorBoundary` que recebe um objeto com duas propriedades:
-`props` e `error`. A propriedade `props` contém as props originais do
-componente, e a propriedade `error` armazena o objeto de erro que foi lançado
-pelo componente.
+componente chamada `ErrorFallback` que recebe um objeto com uma propriedade: `error`. 
+A propriedade `error` armazena o objeto de erro que foi lançado pelo componente.
 
 Os pré-requisitos para fazer o seu componente funcionar com tratamento de erro
 são ter as seguintes dependências nas versões iguais ou superiores às abaixo:
@@ -24,7 +22,7 @@ são ter as seguintes dependências nas versões iguais ou superiores às abaixo
 ```json
 {
   "imports": {
-    "deco/": "https://denopkg.com/deco-cx/deco@1.21.4/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.54.0/",
     "$fresh/": "https://denopkg.com/deco-cx/fresh@1.3.2/",
     "preact": "https://esm.sh/preact@10.16.0",
     "preact/": "https://esm.sh/preact@10.16.0/",
@@ -40,18 +38,16 @@ são ter as seguintes dependências nas versões iguais ou superiores às abaixo
 Para criar um limite de erro, você pode seguir estes passos:
 
 - Escolha a Seção selecionada (por exemplo, `ProductShelf.tsx`)
-- Exporte uma função chamada `ErrorBoundary`, a função deve receber um objeto
-  com duas propriedades: `props` e `error`.
+- Exporte uma função chamada `ErrorFallback`, a função deve receber um objeto
+  com uma propriedade: `error`.
 
 ```tsx
 // ProductShelf.tsx
-
-import { ErrorBoundaryParams } from "deco/types.ts";
-
 export interface Props {
     myProp: string;
 }
-export function ErrorBoundary({ props, error }: ErrorBoundaryParams<Props>) {
+
+export function ErrorFallback({ error }: { error?: Error }) {
   // Sua lógica de tratamento de erro vai aqui
   // Você pode exibir uma mensagem de erro, registrar o erro ou renderizar uma interface de substituição
   return (
@@ -67,11 +63,10 @@ export default function ProductShelf(props: Props) {
 }
 ```
 
-Neste exemplo, o componente `ProductShelf` é envolto pelo componente
-`ErrorBoundary`. Se ocorrer um erro durante a renderização de `ProductShelf`, o
-componente `ErrorBoundary` irá capturar o erro e exibir a interface de
-substituição especificada na função `ErrorBoundary`.
+Se ocorrer um erro durante a renderização de `ProductShelf`, o
+componente `ErrorFallback` sera renderizado no lugar de `ProductShelf`
 
 Lembre-se de usar os limites de erro com cuidado e envolver apenas os
 componentes propensos a erros. Usar os limites de erro de forma eficaz pode
 melhorar muito a estabilidade e a experiência do usuário em suas aplicações.
+Caso nao haja nenhum `ErrorFallback` definido, um fallback padrao será utilizado

@@ -192,9 +192,16 @@ const tableOfContents: TableOfContents = [
       {
         title: {
           pt: "Capturando exceções nas Seções",
-          en: "Sections error boundaries",
+          en: "Section error fallback",
         },
-        slug: "developing/error-boundaries",
+        slug: "developing/error-fallback",
+      },
+      {
+        title: {
+          pt: "Estados de carregamento nas Seções",
+          en: "Section loading fallback",
+        },
+        slug: "developing/loading-fallback",
       },
       {
         title: {
