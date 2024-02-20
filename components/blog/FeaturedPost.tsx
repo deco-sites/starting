@@ -21,16 +21,17 @@ export default function FeaturedPost({
         <div class="mx-auto ">
           <div class="w-full cursor-pointer">
             <a class="grid gap-8 lg:grid-cols-2 lg:gap-16" href={path}>
-              <div class="relative h-96 w-full overflow-auto rounded-lg border">
-                <span
-                  style={`box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0`}
-                >
+              <div
+                className="relative overflow-hidden rounded-lg border"
+                style={{ paddingTop: "56.25%" }} 
+              >
+                <span className="block absolute top-0 left-0 bottom-0 right-0">
                   <Image
                     alt="blog thumbnail"
                     src={img}
                     decoding="async"
-                    style={`position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover`}
-                    height={382}
+                    className="absolute top-0 left-0 bottom-0 right-0 w-full h-full object-cover"
+                    height={374}
                     width={714}
                   />
                 </span>
