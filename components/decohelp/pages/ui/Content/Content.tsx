@@ -105,9 +105,7 @@ export default function Page({
                   No content in Page.
                 </span>
               )}
-            <WasThisPageHelpfulContent
-              WasThisPageHelpful={WasThisPageHelpful}
-            />
+            <WasThisPageHelpfulContent />
             <ForwardBackButtons />
           </div>
         </div>
