@@ -169,36 +169,10 @@ export default function TitleContainer(
 
 Uso do title container (em uma section, por exemplo):
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 48698cd (loader/island performance)
 ```tsx
 //...
 <TitleContainer>
     <Gallery {...galleryProps}>
 </TitleContainer>
 //...
-<<<<<<< HEAD
 ```
-=======
-## Benefícios
-
-- Redução significativa no tamanho do JSON transmitido.
-- Melhoria perceptível no desempenho da página, especialmente em termos de
-  carregamento.
-
-Ao implementar esse processo de pré-processamento de dados, é possível otimizar
-a performance da página, garantindo que apenas as informações cruciais sejam
-enviadas e processadas, proporcionando um desempenho mais otimizado para o
-usuário.
-
-
-# Muitas ilhas
-
-- Estratégias para utilização de ilhas
-  [link](https://github.com/deco-sites/aviator/blob/main/islands/GalleryContainer.tsx)
->>>>>>> 05a15cd (Small reorg of island perf doc)
-=======
-```
->>>>>>> 48698cd (loader/island performance)

@@ -1,27 +1,32 @@
-import type { ComponentChildren, ComponentType, JSX } from "preact";
+import { forwardRef } from "preact/compat";
+import type { JSX } from "preact";
 
-type Elements = keyof JSX.IntrinsicElements;
-
-type Props<A extends Elements = "button"> =
-  & JSX.IntrinsicElements[A]
+export type Props =
+  & Omit<JSX.IntrinsicElements["button"], "loading">
   & {
-    as?: A;
-    children: ComponentChildren;
+    loading?: boolean;
+    ariaLabel?: string;
   };
 
-const Button = <A extends Elements = "button">(
-  { as, ...props }: Props<A>,
-) => {
-  const Component = (as ?? "button") as unknown as ComponentType<
-    JSX.IntrinsicElements[A]
-  >;
-
-  return (
-    <Component
-      {...props}
-      class="bg-gradient-to-r block text-center from-[#002020] to-green-900 p-4 text-white font-semibold rounded-2xl w-full focus:outline-none hover:shadow"
-    />
-  );
-};
+const Button = forwardRef<HTMLButtonElement, Props>(({
+  type = "button",
+  class: _class = "",
+  loading,
+  disabled,
+  ariaLabel,
+  children,
+  ...props
+}, ref) => (
+  <button
+    {...props}
+    className={`btn no-animation ${_class}`}
+    disabled={disabled || loading}
+    aria-label={ariaLabel}
+    type={type}
+    ref={ref}
+  >
+    {loading ? <span class="loading loading-spinner" /> : children}
+  </button>
+));
 
 export default Button;

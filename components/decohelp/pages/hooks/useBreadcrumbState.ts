@@ -15,13 +15,13 @@ export function useBreadcrumbState(
   homeLabel: string,
 ): BreadcrumbState {
   const [showBreadcrumb, setShowBreadcrumb] = useState(
-    window.innerWidth < 1124,
+    globalThis.window.innerWidth < 1124,
   );
   const [pathSegments, setPathSegments] = useState<PathSegment[]>([]);
 
   useEffect(() => {
     const handleResize = () => {
-      setShowBreadcrumb(window.innerWidth < 1124);
+      setShowBreadcrumb(globalThis.window.innerWidth < 1124);
     };
 
     addEventListener("resize", handleResize);
