@@ -9,7 +9,7 @@ export default function Button(
 ) {
   return (
     <a
-      class={` mt-auto rounded-full font-medium text-xl px-6 py-4 bg-primary text-base-100`}
+      class="mt-auto rounded-full font-medium text-xl px-6 py-4 bg-primary text-base-100"
       href={href}
     >
       {label} <span class="text-sm">{details}</span>
