@@ -12,12 +12,12 @@ const action = async (
 
   const payload = {
     contents,
-    api_key: apiKey || Deno.env.get("API_KEY"),
+    api_key: apiKey || Deno.env.get("GOOGLE_API_KEY"),
   };
 
   await fetch(
     url ||
-      `https://script.google.com/macros/s/${Deno.env.get("SCRIPT_ID")}/exec`,
+      `https://script.google.com/macros/s/${Deno.env.get("GOOGLE_SCRIPT_ID")}/exec`,
     {
       headers: {
         accept: "application/json",
