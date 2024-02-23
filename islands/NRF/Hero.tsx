@@ -131,7 +131,7 @@ export default function Hero({
                   <button
                     id={demo?.id}
                     onClick={() => {
-                      window?.scrollTo(0, 0);
+                      globalThis.window?.scrollTo(0, 0);
                       open.value = true;
                     }}
                     class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#DA8FFF] hover:from-[#DA8FFF] hover:to-[#DA8FFF] text-[113032] hover:shadow-watch-our-demo`}

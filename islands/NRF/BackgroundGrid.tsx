@@ -4,9 +4,9 @@ import { useEffect } from "preact/hooks";
 export const CursorFollower = () => {
   const position = useSignal({ x: 0, y: 0 });
 
-  const handleMouseMove = (e: any) => {
-    const x = (e.clientX / window.innerWidth) * 100;
-    const y = (e.clientY / window.innerHeight) * 100;
+  const handleMouseMove = (e: MouseEvent) => {
+    const x = (e.clientX / globalThis.window.innerWidth) * 100;
+    const y = (e.clientY / globalThis.window.innerHeight) * 100;
 
     position.value = { x, y };
   };
