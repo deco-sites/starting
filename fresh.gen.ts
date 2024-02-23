@@ -3,6 +3,7 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $_middleware from "./routes/_middleware.ts";
 import * as $admin_catchall_ from "./routes/admin/[...catchall].tsx";
 import * as $api_calc from "./routes/api/calc.tsx";
 import * as $api_case from "./routes/api/case.tsx";
@@ -50,6 +51,7 @@ import { type Manifest } from "$fresh/server.ts";
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
+    "./routes/_middleware.ts": $_middleware,
     "./routes/admin/[...catchall].tsx": $admin_catchall_,
     "./routes/api/calc.tsx": $api_calc,
     "./routes/api/case.tsx": $api_case,
