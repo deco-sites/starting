@@ -187,6 +187,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 ## 🖹 Fontes
 
 **Quando atuar**...
+
 - O texto parece "mudar de tamanho" repentinamente
 - O arquivo de fonte demora a ser carregado
 - Valor alto de FCP (apontando a fonte como problema)
@@ -239,7 +240,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 - A página demora a carregar inicialmente
 - O tamanho das props em ilhas é grande
 
-**Guia**: [Otimizando ilhas](/docs/performance/islands) 
+**Guia**: [Otimizando ilhas](/docs/performance/islands)
 
 > **Dicas**: Prefira CSS puro para evitar ilhas. Utilize `children` para passar
 > um JSX para dentro de uma ilha. Reduza o máximo possível o escopo da ilha

@@ -23,38 +23,12 @@ métricas, como: tempo de carregamento da página (speed index), tempo para exib
 o primeiro conteúdo visível (FCP), tempo para exibir o último conteúdo visível
 (LCP).
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 # A técnica SVG Sprites
 
 SVG sprites consiste em você ter um arquivo svg que seja cacheável e acessível
 pela internet (exemplo: na sua pasta `static`), e nele tenha as as símbolos de
 cada svg utilizando a tag `<symbol>` e adicionando a propriedade `id` em cada um
 dos elementos que deseja utilizar.
-=======
-Este post vai descrever como utilizar a técnica de SVG sprites para diminuir o impacto na performance de uma página causado por SVGs.
-
-#### O que é a técnica SVG Sprites?
-
-SVG sprites consiste em você ter um arquivo svg que seja acessível pela internet e nele tenha as as símbolos de cada svg utilizando a tag `<symbol>` e adicionando a propriedade `id` em cada um dos elementos que deseja utilizar - pode utilizar outras tags como: `<defs>` , `<g>` dentre outras.
->>>>>>> 8839c2d (restructuring performance docs)
-=======
-Este post vai descrever como utilizar a técnica de SVG sprites para diminuir o
-impacto na performance de uma página causado por SVGs.
-=======
-# A técnica SVG Sprites
->>>>>>> d8bdd4d (Update docs / images)
-
-SVG sprites consiste em você ter um arquivo svg que seja cacheável e acessível pela internet (exemplo: na sua pasta `static`),
-e nele tenha as as símbolos de cada svg utilizando a tag `<symbol>` e
-<<<<<<< HEAD
-adicionando a propriedade `id` em cada um dos elementos que deseja utilizar -
-pode utilizar outras tags como: `<defs>` , `<g>` dentre outras.
->>>>>>> 5547273 (lint)
-=======
-adicionando a propriedade `id` em cada um dos elementos que deseja utilizar.
->>>>>>> d8bdd4d (Update docs / images)
 
 Segue um exemplo de arquivo svg com um símbolo e id **XMark**
 
@@ -106,42 +80,19 @@ desta abordagem nos seguintes casos:
 - SVG não é visível na tela inicial do usuário (não está no "above the fold")
 - SVG é exibido através de interação do usuário na página, por exemplo: hover,
   dentro de dialogs, ao clicar em botões
-<<<<<<< HEAD
 - No caso de aplicações que utilizam jsx ou afins, que é o caso do Fresh, pois a
   quantidade de Javascript gerado por SVG é consideravelmente grande.
-=======
-- No caso de aplicações que utilizam jsx ou afins, que é o caso do Fresh, pois a quantidade de Javascript gerado por SVG é consideravelmente grande.
->>>>>>> d8bdd4d (Update docs / images)
 
 **Extra:**
 
 É possível definir um símbolo dentro do próprio documento e referencia-lo
-<<<<<<< HEAD
-<<<<<<< HEAD
 posteriormente no mesmo documento. Esta abordagem é válida para os casos de onde
 um único SVG é repetido várias vezes na página e pode ser utilizada para SVGs
-<<<<<<< HEAD
 que são exibidos acima do "Fold" (i.e. visíveis na tela do usuário antes da
 interação do mesmo).
-=======
-posteriormente no mesmo document. Esta abordagem é válida para os casos de onde
-um único svg é repetido várias vezes na página e pode ser utilizada para svgs
-=======
-posteriormente no mesmo documento. Esta abordagem é válida para os casos de onde
-um único SVG é repetido várias vezes na página e pode ser utilizada para SVGs
->>>>>>> d8bdd4d (Update docs / images)
-que são exibidos acima do "Fold".
->>>>>>> 5547273 (lint)
-=======
-que são exibidos acima do "Fold" (i.e. visíveis na tela do usuário antes da interação do mesmo).
->>>>>>> 91ef870 (Medias performance)
 
 ```html
 <svg>
   <use href="#XMark" />
 </svg>
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> d8bdd4d (Update docs / images)
