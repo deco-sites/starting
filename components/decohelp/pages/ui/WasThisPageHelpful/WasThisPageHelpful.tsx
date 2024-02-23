@@ -1,28 +1,57 @@
-import type { HTML } from "deco-sites/std/components/HTMLRenderer.tsx";
-import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
-import { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
+import type { HTMLWidget } from "apps/admin/widgets.ts";
+import { useState } from "preact/hooks";
+import { Runtime } from "deco-sites/starting/runtime.ts";
 
 export interface WasThisPageHelpfulProps {
   WasThisPageHelpful?: {
     Label?: string;
     Button?: {
       NegativeButtonLabel?: string;
-      NegativeIcon?: LiveImage;
+      NegativeIcon?: ImageWidget;
       PositiveButtonLabel?: string;
-      PositiveIcon?: LiveImage;
+      PositiveIcon?: ImageWidget;
       Width?: number;
       Height?: number;
     };
-    Text?: HTML;
+    
+    Text?: HTMLWidget;
   };
 }
 
+interface ButtonData {
+  label: string;
+  helpful: boolean;
+}
+
 export default function WasThisPageHelpfulContent({
-  WasThisPageHelpful,
+  WasThisPageHelpful = {
+    Label: "Was this page helpful?",
+    Button: {
+      NegativeButtonLabel: "Not really",
+      NegativeIcon:
+        "https://github.com/deco-sites/starting/assets/76822093/4a74c587-0c97-4b24-b6c9-e9a8fdcd60b2",
+      PositiveButtonLabel: "Yes, thanks",
+      PositiveIcon:
+        "https://github.com/deco-sites/starting/assets/76822093/d29d1ea7-fbc0-4e3e-85e2-0458c197fb97",
+    },
+    Text:
+      "Can't find what you're looking for? Spot an error in the documentation? Get in touch with us on our Community Forum",
+  },
 }: WasThisPageHelpfulProps) {
-  const button =
-    "flex items-center justify-center lg:flex-none flex-1 gap-2 text-[#161616] text-sm font-bold leading-tight h-9 px-3 py-2 rounded border transition duration-300 border-zinc-300 focus:border-black";
+  const [buttonClicked, setButtonClicked] = useState<ButtonData | null>(null);
+  const [isPending, setIsPending] = useState(false); 
+
+  const handleButtonClick = async (label: string, helpful: boolean) => {
+    setIsPending(true); 
+    setButtonClicked({ label, helpful });
+    await Runtime.invoke["deco-sites/starting"].actions.feedbackDocs({
+      contents: [helpful, label, window.location.href],
+    });
+    setIsPending(false); 
+  };
+
   const buttonProps = WasThisPageHelpful?.Button;
   const label = WasThisPageHelpful?.Label ?? "";
   const text = WasThisPageHelpful?.Text ?? "";
@@ -38,45 +67,53 @@ export default function WasThisPageHelpfulContent({
             <div class="flex gap-2 lg:w-auto w-full">
               {buttonProps?.NegativeButtonLabel && (
                 <button
-                  class={button}
-                  aria-label={buttonProps?.NegativeButtonLabel ?? ""}
+                  disabled={isPending} 
+                  class="flex items-center justify-center lg:flex-none flex-1 gap-2 text-[#161616] text-sm font-bold leading-tight h-9 px-3 py-2 rounded border transition duration-300 border-zinc-300 focus:border-black"
+                  aria-label={buttonProps.NegativeButtonLabel}
+                  onClick={() =>
+                    handleButtonClick(
+                      buttonProps.NegativeButtonLabel!,
+                      false,
+                    )}
                 >
                   {buttonProps.NegativeIcon && (
-                    <figure>
-                      <Image
-                        src={buttonProps.NegativeIcon}
-                        class="min-w-4 min-h-4"
-                        alt={buttonProps?.NegativeButtonLabel ?? ""}
-                        width={buttonProps?.Width ?? 16}
-                        height={buttonProps?.Height ?? 16}
-                      />
-                    </figure>
+                    <Image
+                      src={buttonProps.NegativeIcon}
+                      class="min-w-4 min-h-4"
+                      alt={buttonProps.NegativeButtonLabel}
+                      width={buttonProps.Width ?? 16}
+                      height={buttonProps.Height ?? 16}
+                    />
                   )}
-                  {buttonProps?.NegativeButtonLabel ?? ""}
+                  {buttonProps.NegativeButtonLabel}
                 </button>
               )}
               {buttonProps?.PositiveButtonLabel && (
                 <button
-                  class={button}
-                  aria-label={buttonProps?.PositiveButtonLabel ?? ""}
+                  disabled={isPending} 
+                  class="flex items-center justify-center lg:flex-none flex-1 gap-2 text-[#161616] text-sm font-bold leading-tight h-9 px-3 py-2 rounded border transition duration-300 border-zinc-300 focus:border-black"
+                  aria-label={buttonProps.PositiveButtonLabel}
+                  onClick={() =>
+                    handleButtonClick(
+                      buttonProps.PositiveButtonLabel!,
+                      true,
+                    )}
                 >
                   {buttonProps.PositiveIcon && (
-                    <figure>
-                      <Image
-                        src={buttonProps.PositiveIcon}
-                        class="min-w-4 min-h-4"
-                        alt={buttonProps?.PositiveButtonLabel ?? ""}
-                        width={buttonProps?.Width ?? 16}
-                        height={buttonProps?.Height ?? 16}
-                      />
-                    </figure>
+                    <Image
+                      src={buttonProps.PositiveIcon}
+                      class="min-w-4 min-h-4"
+                      alt={buttonProps.PositiveButtonLabel}
+                      width={buttonProps.Width ?? 16}
+                      height={buttonProps.Height ?? 16}
+                    />
                   )}
-                  {buttonProps?.PositiveButtonLabel ?? ""}
+                  {buttonProps.PositiveButtonLabel}
                 </button>
               )}
             </div>
           </div>
-          <HTMLRenderer html={text} />
+          <div dangerouslySetInnerHTML={{ __html: text }} />
         </div>
       )}
     </>
