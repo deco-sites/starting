@@ -9,13 +9,14 @@ const action = async (
   _req?: Request,
 ): Promise<void> => {
   const { contents, url, apiKey } = props;
-
+ console.log("Sending feedback")
   const payload = {
     contents,
     api_key: apiKey || Deno.env.get("GOOGLE_API_KEY"),
   };
+  console.log(payload);
 
-  await fetch(
+  const response = await fetch(
     url ||
       `https://script.google.com/macros/s/${Deno.env.get("GOOGLE_SCRIPT_ID")}/exec`,
     {
@@ -27,7 +28,10 @@ const action = async (
       body: JSON.stringify(payload),
     },
   );
-
+  console.log(`https://script.google.com/macros/s/${Deno.env.get("GOOGLE_SCRIPT_ID")}/exec`)
+  console.log(await response.text())
+  
+ console.log("Feedback sent")
   return;
 };
 
