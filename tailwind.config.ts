@@ -702,6 +702,7 @@ export default {
         hoverBtn: "#e2c069",
         "h1-color": "#1F261F",
         "h2-color": "#0A2121",
+        "camp-neutral": "#A1A1AA",
       },
       fontFamily: {
         sans: "Albert Sans, sans-serif",
