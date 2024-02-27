@@ -158,6 +158,19 @@ export default function ProdutosLoader(_props: unknown, req: Request, ctx: FnCon
         ctx.response.headers.set(name, value);
     });
 
-    return ["Produto X", "Produto Y", "Produto Z"];
+    return [
+        {
+            label: "Produto X",
+            value: "X"
+        },
+        {
+            label: "Produto Y",
+            value: "Y"
+        },
+        {
+            label: "Produto Z",
+            value: "Z"
+        }
+    ];
 }
 ```

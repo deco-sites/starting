@@ -132,7 +132,7 @@ export interface Props {
 }
 ```
 
-`mystore/loaders/produtos.ts`
+`mystore/loaders/products.ts`
 ```ts
 import { FnContext, allowCorsFor } from "deco/mod.ts";
 
@@ -142,6 +142,19 @@ export default function ProductsLoader(_props: unknown, req: Request, ctx: FnCon
         ctx.response.headers.set(name, value);
     });
 
-    return ["Product X", "Product Y", "Product Z"];
+    return [
+        {
+            label: "Product X",
+            value: "X"
+        },
+        {
+            label: "Product Y",
+            value: "Y"
+        },
+        {
+            label: "Product Z",
+            value: "Z"
+        }
+    ];
 }
 ```
