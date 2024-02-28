@@ -178,3 +178,149 @@ export default function ProdutosLoader(
   return ["Produto X", "Produto Y", "Produto Z"];
 }
 ```
+
+# Color Input
+
+O widget Color Input exibe um círculo preenchido representando a cor selecionada juntamente com seu valor hexadecimal correspondente. Os usuários podem interagir com o widget clicando nele para abrir um seletor de cores.
+
+<img src="/docs/widgets/color-input.png" alt="Example color input" width="400"/>
+
+Exemplo:
+
+`MySection.tsx`
+
+```ts
+export interface Props {
+  /** @format color-input */
+  "primary"?: string;
+}
+```
+
+# Button Group
+
+O widget Button Group permite que você renderize opções de seleção em um formato de ícone, fornecendo uma maneira visualmente atraente de escolher opções. Cada opção é representada por um ícone, oferecendo flexibilidade e personalização para sua aplicação.
+
+<img src="/docs/widgets/button-group.png" alt="Example button group" width="600"/>
+
+Exemplo:
+
+`MySection.tsx`
+
+```ts
+export interface Props {
+  /**
+   * @format button-group
+   * @options deco-sites/mystore/loaders/icons.ts
+   */
+  textAlignment?: "Left" | "Center" | "Right";
+}
+```
+
+Para garantir que os ícones estejam disponíveis para seleção no widget, é essencial que cada ícone seja definido explicitamente como uma string SVG em um arquivo separado e exportado como uma constante:
+
+`mystore/static/adminIcons.ts`
+```ts
+// adminIcons.ts contém todos os ícones disponíveis necessários para renderizar o widget, em um formato de string.
+export const AlignLeft = `<svg id="AlignLeft" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+<path ... />
+</svg>`;
+```
+
+`mystore/loaders/icons.ts`
+
+```ts
+import { allowCorsFor, FnContext } from "deco/mod.ts";
+// Importe ícones em formato de string
+import { AlignCenter, AlignLeft, AlignRight } from "../static/adminIcons.ts";
+
+// Defina ícones com seus labels e props correspondentes conforme definido na sua interface Props
+const icons = [
+  { component: AlignLeft, label: "Left", prop: "textAlignment" },
+  { component: AlignCenter, label: "Center", prop: "textAlignment" },
+  { component: AlignRight, label: "Right", prop: "textAlignment" },
+];
+
+// Loader para mapear ícones para o formato esperado pelo widget Button Group
+export default function IconsLoader(
+  _props: unknown,
+  req: Request,
+  ctx: FnContext,
+) {
+  Object.entries(allowCorsFor(req)).map(([name, value]) => {
+    ctx.response.headers.set(name, value);
+  });
+
+  const iconsMap = icons.map((icon) => ({
+    value: icon.component,
+    label: icon.label,
+    prop: icon.prop,
+  }));
+
+  return iconsMap;
+}
+```
+
+# Icon Select
+
+O widget Icon Select permite criar um seletor de entrada para ícones, onde cada opção consiste em um ícone e sua etiqueta. Isso permite aos usuários visualizar e escolher facilmente o ícone certo. Todos os ícones renderizados no widget devem ser definidos explicitamente como strings SVG.
+
+<img src="/docs/widgets/icon-select.png" alt="Example icon select" width="400"/>
+
+Exemplo:
+
+`MySection.tsx`
+
+```ts
+export interface Props {
+  /**
+   * @format icon-select
+   * @options deco-sites/storefront/loaders/availableIcons.ts
+   */
+  icon: AvailableIcons;
+}
+```
+
+Para garantir que os ícones estejam disponíveis para seleção no widget, é essencial que cada ícone seja definido explicitamente como uma string SVG em um arquivo separado e exportado como uma constante:
+
+`mystore/static/adminIcons.ts`
+```ts
+// adminIcons.ts contém todos os ícones disponíveis necessários para renderizar o widget, em um formato de string.
+const IconOne = `<svg id="IconOne" viewBox="0 0 58 20" stroke="currentColor" fill="none"><path ... fill="currentColor"/></svg>`;
+const IconTwo = `<svg id="IconOne" viewBox="0 0 58 20" stroke="currentColor" fill="none"><path ... fill="currentColor"/></svg>`;
+export const AvailableIcons = { IconOne, IconTwo }
+```
+
+Se um ícone não for adicionado como uma string, ele não será exibido como uma opção no seletor.
+
+`mystore/loaders/availableIcons.ts`
+
+```ts
+import { allowCorsFor, FnContext } from "deco/mod.ts";
+import { AvailableIcons } from "../static/adminIcons.ts";
+
+const icons = Object.keys(AvailableIcons).map((iconName) => ({
+  component: AvailableIcons[iconName as keyof typeof AvailableIcons],
+  label: iconName,
+}));
+
+// Loader para mapear todos os ícones disponíveis que serão usados nos widgets IconSelect.
+export default function IconsLoader(
+  _props: unknown,
+  req: Request,
+  ctx: FnContext,
+) {
+  // Permitir Cors
+  Object.entries(allowCorsFor(req)).map(([name, value]) => {
+    ctx.response.headers.set(name, value);
+  });
+
+  // Mapeamento de ícones para { value, label, icon }
+  const iconsMap = icons.map((icon) => ({
+    icon: icon.component,
+    label: icon.label,
+    value: icon.label,
+  }));
+
+  return iconsMap;
+}
+```
