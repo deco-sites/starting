@@ -216,7 +216,7 @@ export interface Props {
 }
 ```
 
-Para garantir que os ícones estejam disponíveis para seleção no widget, é essencial que cada ícone seja definido explicitamente como uma string SVG em um arquivo separado e exportado como uma constante:
+Para garantir que os ícones estejam disponíveis para seleção no widget, é essencial que cada ícone seja definido explicitamente como uma string SVG em `static/adminIcons.ts` e exportado como uma constante:
 
 `mystore/static/adminIcons.ts`
 ```ts
@@ -280,17 +280,11 @@ export interface Props {
 }
 ```
 
-Para garantir que os ícones estejam disponíveis para seleção no widget, é essencial que cada ícone seja definido explicitamente como uma string SVG em um arquivo separado e exportado como uma constante:
+Para garantir que todos os ícones sejam devidamente integrados e selecionáveis em nosso widget, cada ícone do seu arquivo `static/sprites.svg` deve ser explicitamente definido como uma string SVG e exportado de um arquivo separado, `static/adminIcons.ts`. Nós simplificamos esse processo com o script `generate-icons.ts` no template da loja Deco, que automatiza a conversão dos ícones de `sprites.svg` para o formato de string e os grava em `adminIcons.ts`.
 
-`mystore/static/adminIcons.ts`
-```ts
-// adminIcons.ts contém todos os ícones disponíveis necessários para renderizar o widget, em um formato de string.
-const IconOne = `<svg id="IconOne" viewBox="0 0 58 20" stroke="currentColor" fill="none"><path ... fill="currentColor"/></svg>`;
-const IconTwo = `<svg id="IconOne" viewBox="0 0 58 20" stroke="currentColor" fill="none"><path ... fill="currentColor"/></svg>`;
-export const AvailableIcons = { IconOne, IconTwo }
-```
+Para adicionar novos ícones, basta inseri-los no seu `sprites.svg`. Em seguida, interrompa a execução do projeto e reinicie-o usando `deno task run`. Isso aciona o script `generate-icons.ts`, atualizando o arquivo `adminIcons.ts` com os novos ícones, tornando-os imediatamente disponíveis para seleção no widget. Essa abordagem centraliza as atualizações de ícones em `sprites.svg`, garantindo um processo de atualização suave.
 
-Se um ícone não for adicionado como uma string, ele não será exibido como uma opção no seletor.
+Esteja ciente de que, se um ícone não foi gerado como uma string em static/adminIcons.ts, ele não será exibido como uma opção no seletor.
 
 `mystore/loaders/availableIcons.ts`
 

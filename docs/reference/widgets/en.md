@@ -210,7 +210,7 @@ export interface Props {
 }
 ```
 
-To ensure that icons are available for selection in the widget, it's essential that each icon is explicitly defined as an SVG string in a separate file and exported as a constant:
+To ensure that icons are available for selection in the widget, it's essential that each icon is explicitly defined as an SVG string in `static/adminIcons.ts` file and exported as a constant:
 
 `mystore/static/adminIcons.ts`
 ```ts
@@ -274,17 +274,11 @@ export interface Props {
 }
 ```
 
-To ensure that icons are available for selection in the widget, it's essential that each icon is explicitly defined as an SVG string in a separate file and exported as a constant:
+To ensure all icons are properly integrated and selectable within our widget, each icon from your `static/sprites.svg` file must be explicitly defined as an SVG string and exported from a separate file, `static/adminIcons.ts`. We have streamlined this process with the `generate-icons.ts` script on Deco's storefront template, which automates the conversion of icons from `sprites.svg` into string format and writes them on `adminIcons.ts`. 
 
-`mystore/static/adminIcons.ts`
-```ts
-// adminIcons.ts contains all available icons needed for rendering the widget, in a string format.
-const IconOne = `<svg id="IconOne" viewBox="0 0 58 20" stroke="currentColor" fill="none"><path ... fill="currentColor"/></svg>`;
-const IconTwo = `<svg id="IconOne" viewBox="0 0 58 20" stroke="currentColor" fill="none"><path ... fill="currentColor"/></svg>`;
-export const AvailableIcons = { IconOne, IconTwo }
-```
+To add new icons, simply insert them into your `sprites.svg`. Then, stop the project's execution and restart it using `deno task run`. This triggers the `generate-icons.ts` script, updating the `adminIcons.ts` file with the new icons, making them immediately available for selection in the widget. This approach centralizes icon updates to `sprites.svg`, ensuring a smooth update process.
 
-If an icon is not added as a string, it will not be displayed as an option in the selector.
+Be aware that if an icon is not exported as a string on static/adminIcons.ts, it will not be displayed as an option in the selector.
 
 `mystore/loaders/availableIcons.ts`
 
