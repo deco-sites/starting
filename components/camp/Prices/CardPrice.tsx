@@ -139,7 +139,7 @@ export default function CardPrice({ props }: { props: Props }) {
       <ul class="flex flex-col gap-2 items-center">
         {requirements.itemRequisite.map((item) => (
           <li class="text-center text-sm flex flex-row gap-2 md:text-base items-center">
-            <Icon id="CheckPrice" size={16} class="min-w-[14px] " />
+            <Icon id="CheckPrice" size={16} class={`min-w-[14px] ${type === "dark" ? "text-[#02F67C]" : "text-[#000]"}`} />
             <span class="w-max">
               {item}
             </span>
