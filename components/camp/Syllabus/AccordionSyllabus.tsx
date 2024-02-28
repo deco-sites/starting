@@ -42,13 +42,13 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
   const totalTime = TotalTime();
 
   return (
-    <details className="border-b rounded-none border-neutral border-opacity-15 last:border-b-0 cursor-pointer">
-      <summary className="collapse-title flex flex-row px-4 md:py-7 md:px-8 font-medium text-white justify-start items-center text-sm md:text-base lg:text-2xl gap-3 xl:gap-4">
+    <details className="border-b rounded-none border-neutral border-opacity-15 last:border-b-0 cursor-pointer syllabus">
+      <summary className="collapse-title flex flex-row px-4 py-5 md:py-7 md:px-8 font-medium text-white justify-start items-center text-sm md:text-base lg:text-2xl gap-3 xl:gap-4">
         <Icon
-          class="text-white w-auto -ml-[3px]"
+          class="text-white w-auto h-auto -ml-[3px] md:min-w-[20px] md:min-h-[20px]"
           id="ChevronDown"
-          width={20}
-          height={20}
+          width={15}
+          height={15}
           strokeWidth={"3"}
         />
         <h4 class=" w-auto">
@@ -72,7 +72,7 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
               <div class="flex flex-col w-fit">
                 <a
                   href={item.link}
-                  class="text-primary text-sm md:text-base xl:text-xl hover:underline cursor-pointer"
+                  class="text-[#02f67c] text-sm md:text-base xl:text-xl hover:underline cursor-pointer"
                 >
                   {item.title}
                 </a>
@@ -85,7 +85,7 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
               <div class="hidden md:flex flex-row gap-3 ml-auto text-base">
                 <a
                   href={item.link}
-                  class="hover:text-primary hover:underline cursor-pointer"
+                  class="hover:text-[#02f67c] hover:underline cursor-pointer"
                 >
                   {item.dataPublish}
                 </a>
