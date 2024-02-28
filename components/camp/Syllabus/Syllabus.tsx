@@ -181,12 +181,14 @@ export default function Syllabus({ props }: { props: Props }) {
   const { title, accordions } = { ...BASE_PROPS, ...props };
 
   return (
-    <div class="flex w-full flex-col justify-center py-16 px-6 gap-10 container">
-      <h2 class="text-neutral text-3xl md:text-4xl xl:text-7xl text-center">
-        {title}
-      </h2>
-      <div class="flex flex-col w-full rounded-xl border-neutral border-opacity-15 border bg-white bg-opacity-5">
-        {accordions.map((accordion) => <AccordionSyllabus props={accordion} />)}
+    <div class="w-full h-full bg-[#121212]">
+      <div class="flex w-full flex-col justify-center py-16 px-6 gap-10 container">
+        <h2 class="text-white text-3xl md:text-4xl xl:text-7xl text-center">
+          {title}
+        </h2>
+        <div class="flex flex-col w-full rounded-xl border-neutral border-opacity-15 border bg-white bg-opacity-5">
+          {accordions.map((accordion) => <AccordionSyllabus props={accordion} />)}
+        </div>
       </div>
     </div>
   );

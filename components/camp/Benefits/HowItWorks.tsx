@@ -51,14 +51,16 @@ export default function HowItWorks({ props }: { props: Props }) {
   const { title, cardWorks } = { ...BASE_PROPS, ...props };
 
   return (
-    <div class="flex flex-col w-full gap-8 px-4 lg:px-0 py-10 xl:py-20 justify-center container">
-      <h2
-        class="text-neutral text-[2rem] md:text-[2.5rem] text-center xl:text-[4rem]"
-        dangerouslySetInnerHTML={{ __html: title }}
-      >
-      </h2>
-      <div class="flex flex-col gap-4 md:gap-6 md:flex-row flex-wrap md:px-4 xl:gap-8 mt-6">
-        {cardWorks.map((card) => <CardWorks props={card} />)}
+    <div class="w-full h-full bg-[#121212]">
+      <div class="flex flex-col w-full gap-8 px-4 lg:px-0 py-10 xl:py-20 justify-center container">
+        <h2
+          class="text-white text-[2rem] md:text-[2.5rem] text-center xl:text-[4rem]"
+          dangerouslySetInnerHTML={{ __html: title }}
+        >
+        </h2>
+        <div class="flex flex-col gap-4 md:gap-6 md:flex-row flex-wrap md:px-4 xl:gap-8 mt-6">
+          {cardWorks.map((card) => <CardWorks props={card} />)}
+        </div>
       </div>
     </div>
   );

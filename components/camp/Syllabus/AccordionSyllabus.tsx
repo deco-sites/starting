@@ -43,7 +43,7 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
 
   return (
     <details className="border-b rounded-none border-neutral border-opacity-15 last:border-b-0 cursor-pointer">
-      <summary className="collapse-title flex flex-row px-4 md:py-7 md:px-8 font-medium text-neutral justify-start items-center text-sm md:text-base lg:text-2xl gap-3 xl:gap-4">
+      <summary className="collapse-title flex flex-row px-4 md:py-7 md:px-8 font-medium text-white justify-start items-center text-sm md:text-base lg:text-2xl gap-3 xl:gap-4">
         <Icon
           class="text-white w-auto -ml-[3px]"
           id="ChevronDown"
@@ -77,7 +77,7 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
                   {item.title}
                 </a>
                 <span
-                  class="text-xs text-neutral"
+                  class="text-xs text-white"
                   dangerouslySetInnerHTML={{ __html: item.content }}
                 >
                 </span>
@@ -89,7 +89,7 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
                 >
                   {item.dataPublish}
                 </a>
-                <span class="text-neutral">{item.time + "h"}</span>
+                <span class="text-white">{item.time + "h"}</span>
               </div>
             </li>
           ))}

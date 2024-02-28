@@ -91,12 +91,14 @@ export default function Mentors({ props }: { props: Props }) {
   const { title, mentors } = { ...BASE_PROPS, ...props };
 
   return (
-    <div class="flex flex-col container gap-10 py-8 px-4 lg:py-20">
-      <h2 class="text-neutral text-3xl text-center md:text-4xl md:leading-9 lg:text-[4rem] lg:leading-[4rem]">
-        {title}
-      </h2>
-      <div class="flex flex-col gap-6 md:flex-row xl:gap-20">
-        {mentors.map((mentor) => <ProfileMentor props={mentor} />)}
+    <div class="w-full h-full bg-[#121212]">
+      <div class="flex flex-col container gap-10 py-8 px-4 lg:py-20">
+        <h2 class="text-white text-3xl text-center md:text-4xl md:leading-9 lg:text-[4rem] lg:leading-[4rem]">
+          {title}
+        </h2>
+        <div class="flex flex-col gap-6 md:flex-row xl:gap-20">
+          {mentors.map((mentor) => <ProfileMentor props={mentor} />)}
+        </div>
       </div>
     </div>
   );

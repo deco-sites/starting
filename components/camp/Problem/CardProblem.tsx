@@ -72,11 +72,11 @@ export default function CardProblem({ props }: { props: Props }) {
       <div class="bg-[#EF4444] border-[#B91C1C] bordered rounded-full w-[56px] h-[56px] flex justify-center items-center">
         <Image width={24} height={24} src={icon} />
       </div>
-      <h3 class={"text-neutral text-3xl font-semibold lg:text-2xl xl:text-3xl"}>
+      <h3 class={"text-white text-3xl font-semibold lg:text-2xl xl:text-3xl"}>
         {title}
       </h3>
       <span
-        class={"text-xl lg:text-lg xl:text-xl mt-auto"}
+        class={"text-xl lg:text-lg xl:text-xl mt-auto text-white"}
         dangerouslySetInnerHTML={{ __html: content }}
       >
       </span>

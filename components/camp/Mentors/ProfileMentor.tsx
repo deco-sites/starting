@@ -48,7 +48,7 @@ export default function ProfileMentor({ props }: { props: Props }) {
         <h5 class="text-xl">{profession}</h5>
       </div>
       <span
-        class="text-neutral text-base"
+        class="text-white text-base"
         dangerouslySetInnerHTML={{ __html: content }}
       >
       </span>
