@@ -200,7 +200,7 @@ export interface Props {
 
 O widget Button Group permite que você renderize opções de seleção em um formato de ícone, fornecendo uma maneira visualmente atraente de escolher opções. Cada opção é representada por um ícone, oferecendo flexibilidade e personalização para sua aplicação.
 
-<img src="/docs/widgets/button-group.png" alt="Example button group" width="600"/>
+<img src="/docs/widgets/button-group.png" alt="Example button group" width="400"/>
 
 Exemplo:
 

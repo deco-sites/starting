@@ -194,7 +194,7 @@ export interface Props {
 
 The Button Group widget allows you to render select options in an icon format, providing a visually appealing way to choose options. Each option is represented by an icon, offering flexibility and customization for your application.
 
-<img src="/docs/widgets/button-group.png" alt="Exemplo button group" width="600"/>
+<img src="/docs/widgets/button-group.png" alt="Exemplo button group" width="400"/>
 
 Example:
 
