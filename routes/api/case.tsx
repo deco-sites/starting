@@ -7,10 +7,11 @@ import { verifyCaptcha } from "deco-sites/starting/sdk/recaptcha.ts";
 const ZAPIER_WEBHOOK = Deno.env.get("ZAPIER_WEBHOOK_CASE");
 
 export const handler: Handlers<null, DecoState> = {
-  POST: async (req) => {    
+  POST: async (req) => {
     const formData = Object.fromEntries((await req.formData()).entries());
     const recaptchaToken = formData["g-recaptcha-response"];
-    const isCaptchaValid = !!recaptchaToken ?? (await verifyCaptcha(recaptchaToken.toString()));
+    const isCaptchaValid = !!recaptchaToken ??
+      (await verifyCaptcha(recaptchaToken.toString()));
 
     if (!ZAPIER_WEBHOOK) {
       return new Response(null, {

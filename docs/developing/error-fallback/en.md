@@ -13,11 +13,11 @@ allow you to gracefully handle errors and prevent the entire application from
 crashing due to an unhandled error.
 
 In deco, creating an error fallback is as simple as exporting a component
-function named `ErrorFallback` that takes an object with the `error` property. 
+function named `ErrorFallback` that takes an object with the `error` property.
 The `error` property holds the error object that was thrown by the component.
 
-The pre-requisites to make your component work is having
-the following dependencies in versions higher or equal than below:
+The pre-requisites to make your component work is having the following
+dependencies in versions higher or equal than below:
 
 ```json
 {
@@ -38,7 +38,8 @@ the following dependencies in versions higher or equal than below:
 To create an error fallback, you can follow these steps:
 
 - Pick your selected Section (e.g `ProductShelf.tsx`)
-- Export a function named `ErrorFallback`, the function should accept an object with the `error` property.
+- Export a function named `ErrorFallback`, the function should accept an object
+  with the `error` property.
 
 ```tsx
 // ProductShelf.tsx
@@ -62,9 +63,10 @@ export default function ProductShelf(props: Props) {
 }
 ```
 
-If an error occurs during the rendering of `ProductShelf`, the `ErrorFallback` component will be rendered instead.
+If an error occurs during the rendering of `ProductShelf`, the `ErrorFallback`
+component will be rendered instead.
 
 Remember to always use error fallbacks judiciously and only wrap the components
 that are prone to errors. Using error boundaries effectively can greatly improve
-the stability and user experience of your applications.
-If no error fallback is set, a default fallback will be rendered instead
+the stability and user experience of your applications. If no error fallback is
+set, a default fallback will be rendered instead

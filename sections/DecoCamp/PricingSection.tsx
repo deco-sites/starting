@@ -55,9 +55,7 @@ export default function PricingSection({
             <div key={index} class="flex-1">
               <h3 className="text-2xl font-bold mb-2">{plan.subtitle}</h3>
               <ul className="text-gray-600">
-                {plan.features.map((feature) => (
-                  <li>{feature}</li>
-                ))}
+                {plan.features.map((feature) => <li>{feature}</li>)}
               </ul>
             </div>
           ))}
@@ -69,7 +67,8 @@ export default function PricingSection({
           <button
             class={`mt-4 group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero`}
           >
-            <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
+            <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
+            </span>
             <span class="relative font-medium lg:text-[20px]">
               {buttonText}
             </span>

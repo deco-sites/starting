@@ -8,15 +8,15 @@ since: 1.54.0
 ## Overview
 
 Loading fallbacks are a powerful concept available to be used since 1.54.0
-version, to handle loading state of sections using data from third party APIs. 
-They allow you to gracefully handle loading states and prevent the entire application from
-hanging due to some third party API
+version, to handle loading state of sections using data from third party APIs.
+They allow you to gracefully handle loading states and prevent the entire
+application from hanging due to some third party API
 
 In deco, creating a loading fallback is as simple as exporting a component
 function named `LoadingFallback`.
 
-The pre-requisites to make your component work is having
-the following dependencies in versions higher or equal than below:
+The pre-requisites to make your component work is having the following
+dependencies in versions higher or equal than below:
 
 ```json
 {
@@ -59,5 +59,6 @@ export default function ProductShelf(props: Props) {
 }
 ```
 
-If `ProductShelf` uses a data coming from a slow third party API, the `LoadingFallback` component will be rendered instead.
-If no loading fallback is set, a default fallback will be rendered instead
+If `ProductShelf` uses a data coming from a slow third party API, the
+`LoadingFallback` component will be rendered instead. If no loading fallback is
+set, a default fallback will be rendered instead

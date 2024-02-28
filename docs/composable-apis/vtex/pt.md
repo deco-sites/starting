@@ -45,9 +45,11 @@ O modelo _Deco Commerce_ atualmente faz o proxy dos serviços _checkout_ e
 _my-account_ da própria VTEX. Isso significa que seu usuário final NÃO será
 redirecionado para nenhum outro domínio ao fazer o checkout. Por exemplo, vamos
 supor que, antes de migrar para o Deco, sua loja esteja hospedada em
-`www.minhaloja.com` e a URL de checkout seja `https://www.minhaloja.com/checkout`.  
+`www.minhaloja.com` e a URL de checkout seja
+`https://www.minhaloja.com/checkout`.
 
-Após migrar para o Deco, sua loja continuará sendo servida em `www.minhaloja.com` e a URL de checkout ainda será
+Após migrar para o Deco, sua loja continuará sendo servida em
+`www.minhaloja.com` e a URL de checkout ainda será
 `https://www.minhaloja.com/checkout`.
 
 Atualmente, a VTEX não expõe seus serviços de interface de usuário por meio de
@@ -62,7 +64,9 @@ próxima etapa.
 A arquitetura final da configuração é:
 <img width="1066" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
 
-**Importante:** Ao criar a URL secundária, você deve adicionar um `<meta name="robots" content="noindex">` no `<head>` após o Go Live para evitar indexação indesejada.
+**Importante:** Ao criar a URL secundária, você deve adicionar um
+`<meta name="robots" content="noindex">` no `<head>` após o Go Live para evitar
+indexação indesejada.
 
 # Conectando à VTEX
 

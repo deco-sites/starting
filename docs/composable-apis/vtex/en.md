@@ -60,7 +60,9 @@ the next step
 The final architecture of the setup is:
 <img width="1066" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
 
-**Important:** When creating a secondary URL, you should add a `<meta name="robots" content="noindex">` in the `<head>` after Go Live to avoid unwanted indexing.
+**Important:** When creating a secondary URL, you should add a
+`<meta name="robots" content="noindex">` in the `<head>` after Go Live to avoid
+unwanted indexing.
 
 # Connecting to VTEX
 

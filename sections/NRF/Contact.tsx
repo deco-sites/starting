@@ -83,9 +83,8 @@ export default function ContactUs({
               class="w-full h-[51px] border border-white/[.1] rounded placeholder-white bg-white/5 text-white backdrop-blur-xl p-4"
               type="text"
               name="userLinkedin"
-              placeholder={
-                formInfor?.PlaceholderfieldSocial || "Linkedin (optional)"
-              }
+              placeholder={formInfor?.PlaceholderfieldSocial ||
+                "Linkedin (optional)"}
             />
             <input
               class="w-full h-[51px] border border-white/[.1] rounded placeholder-white bg-white/5 text-white backdrop-blur-xl p-4"
@@ -102,7 +101,8 @@ export default function ContactUs({
               data-sitekey={RECAPTCHA_SITE_KEY}
               data-callback="onSubmit"
               data-action="submit"
-            ></input>
+            >
+            </input>
           </form>
         </div>
       </div>

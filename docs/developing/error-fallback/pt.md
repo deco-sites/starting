@@ -13,8 +13,9 @@ componentes. Eles permitem que você lide elegantemente com erros e evite que
 toda a aplicação seja interrompida devido a um erro não tratado.
 
 Na deco, criar um limite de erro é tão simples como exportar uma função de
-componente chamada `ErrorFallback` que recebe um objeto com uma propriedade: `error`. 
-A propriedade `error` armazena o objeto de erro que foi lançado pelo componente.
+componente chamada `ErrorFallback` que recebe um objeto com uma propriedade:
+`error`. A propriedade `error` armazena o objeto de erro que foi lançado pelo
+componente.
 
 Os pré-requisitos para fazer o seu componente funcionar com tratamento de erro
 são ter as seguintes dependências nas versões iguais ou superiores às abaixo:
@@ -63,8 +64,8 @@ export default function ProductShelf(props: Props) {
 }
 ```
 
-Se ocorrer um erro durante a renderização de `ProductShelf`, o
-componente `ErrorFallback` sera renderizado no lugar de `ProductShelf`
+Se ocorrer um erro durante a renderização de `ProductShelf`, o componente
+`ErrorFallback` sera renderizado no lugar de `ProductShelf`
 
 Lembre-se de usar os limites de erro com cuidado e envolver apenas os
 componentes propensos a erros. Usar os limites de erro de forma eficaz pode

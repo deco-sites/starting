@@ -126,12 +126,13 @@ import * as $$$$$$108 from "./sections/Hub/TemplateIframe.tsx";
 import * as $$$$$$109 from "./sections/Hub/Integrations.tsx";
 import * as $$$$$$110 from "./sections/Hub/Creator.tsx";
 import * as $$$$$$111 from "./sections/Delight.tsx";
-import * as $$$$$$112 from "./sections/Benefits.tsx";
-import * as $$$$$$113 from "./sections/About.tsx";
-import * as $$$$$$114 from "./sections/HelpFaq.tsx";
-import * as $$$$$$115 from "./sections/RankingAnalyze.tsx";
-import * as $$$$$$116 from "./sections/RankingHeader.tsx";
-import * as $$$$$$117 from "./sections/Carousel.tsx";
+import * as $$$$$$112 from "./sections/Whatsapp.tsx";
+import * as $$$$$$113 from "./sections/Benefits.tsx";
+import * as $$$$$$114 from "./sections/About.tsx";
+import * as $$$$$$115 from "./sections/HelpFaq.tsx";
+import * as $$$$$$116 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$117 from "./sections/RankingHeader.tsx";
+import * as $$$$$$118 from "./sections/Carousel.tsx";
 import * as $$$$$$$0 from "./matchers/MatchPath.ts";
 import * as $$$$$$$$$0 from "./actions/startAlgoliaCrawler.ts";
 import * as $$$$$$$$$1 from "./actions/feedbackDocs.ts";
@@ -158,8 +159,8 @@ const manifest = {
     "deco-sites/starting/handlers/feed.ts": $$$$0,
   },
   "sections": {
-    "deco-sites/starting/sections/About.tsx": $$$$$$113,
-    "deco-sites/starting/sections/Benefits.tsx": $$$$$$112,
+    "deco-sites/starting/sections/About.tsx": $$$$$$114,
+    "deco-sites/starting/sections/Benefits.tsx": $$$$$$113,
     "deco-sites/starting/sections/BlogHeader.tsx": $$$$$$10,
     "deco-sites/starting/sections/BlogPostHeader.tsx": $$$$$$22,
     "deco-sites/starting/sections/BlogPostList.tsx": $$$$$$17,
@@ -181,7 +182,7 @@ const manifest = {
     "deco-sites/starting/sections/CampMentor.tsx": $$$$$$94,
     "deco-sites/starting/sections/CampRegistration.tsx": $$$$$$29,
     "deco-sites/starting/sections/CampSteps.tsx": $$$$$$24,
-    "deco-sites/starting/sections/Carousel.tsx": $$$$$$117,
+    "deco-sites/starting/sections/Carousel.tsx": $$$$$$118,
     "deco-sites/starting/sections/Case/ArticleBannerCTA.tsx": $$$$$$79,
     "deco-sites/starting/sections/Case/ArticleDivider.tsx": $$$$$$84,
     "deco-sites/starting/sections/Case/ArticleHeader.tsx": $$$$$$80,
@@ -211,7 +212,7 @@ const manifest = {
     "deco-sites/starting/sections/Head.tsx": $$$$$$49,
     "deco-sites/starting/sections/Header.tsx": $$$$$$76,
     "deco-sites/starting/sections/HelpBlogPosts.tsx": $$$$$$28,
-    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$114,
+    "deco-sites/starting/sections/HelpFaq.tsx": $$$$$$115,
     "deco-sites/starting/sections/HeroPost.tsx": $$$$$$5,
     "deco-sites/starting/sections/Home/Brands.tsx": $$$$$$6,
     "deco-sites/starting/sections/HowCanWeHelp.tsx": $$$$$$14,
@@ -264,8 +265,8 @@ const manifest = {
     "deco-sites/starting/sections/Pricing.tsx": $$$$$$12,
     "deco-sites/starting/sections/PricingValue.tsx": $$$$$$20,
     "deco-sites/starting/sections/QuillText.tsx": $$$$$$4,
-    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$115,
-    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$116,
+    "deco-sites/starting/sections/RankingAnalyze.tsx": $$$$$$116,
+    "deco-sites/starting/sections/RankingHeader.tsx": $$$$$$117,
     "deco-sites/starting/sections/RankingList.tsx": $$$$$$11,
     "deco-sites/starting/sections/ReCAPTCHA.tsx": $$$$$$7,
     "deco-sites/starting/sections/SectionList.tsx": $$$$$$13,
@@ -276,6 +277,7 @@ const manifest = {
     "deco-sites/starting/sections/WasThisPageHelpful.tsx": $$$$$$98,
     "deco-sites/starting/sections/Webinar/Content.tsx": $$$$$$16,
     "deco-sites/starting/sections/Webinar/Hero.tsx": $$$$$$15,
+    "deco-sites/starting/sections/Whatsapp.tsx": $$$$$$112,
   },
   "matchers": {
     "deco-sites/starting/matchers/MatchPath.ts": $$$$$$$0,

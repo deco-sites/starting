@@ -23,7 +23,7 @@ export default function FeaturedPost({
             <a class="grid gap-8 lg:grid-cols-2 lg:gap-16" href={path}>
               <div
                 className="relative overflow-hidden rounded-lg border"
-                style={{ paddingTop: "56.25%" }} 
+                style={{ paddingTop: "56.25%" }}
               >
                 <span className="block absolute top-0 left-0 bottom-0 right-0">
                   <Image

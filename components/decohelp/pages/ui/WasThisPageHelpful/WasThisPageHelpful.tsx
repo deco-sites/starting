@@ -15,7 +15,7 @@ export interface WasThisPageHelpfulProps {
       Width?: number;
       Height?: number;
     };
-    
+
     Text?: HTMLWidget;
   };
 }
@@ -41,15 +41,15 @@ export default function WasThisPageHelpfulContent({
   },
 }: WasThisPageHelpfulProps) {
   const [buttonClicked, setButtonClicked] = useState<ButtonData | null>(null);
-  const [isPending, setIsPending] = useState(false); 
+  const [isPending, setIsPending] = useState(false);
 
   const handleButtonClick = async (label: string, helpful: boolean) => {
-    setIsPending(true); 
+    setIsPending(true);
     setButtonClicked({ label, helpful });
     await Runtime.invoke["deco-sites/starting"].actions.feedbackDocs({
       contents: [helpful, label, window.location.href],
     });
-    setIsPending(false); 
+    setIsPending(false);
   };
 
   const buttonProps = WasThisPageHelpful?.Button;
@@ -67,7 +67,7 @@ export default function WasThisPageHelpfulContent({
             <div class="flex gap-2 lg:w-auto w-full">
               {buttonProps?.NegativeButtonLabel && (
                 <button
-                  disabled={isPending} 
+                  disabled={isPending}
                   class="flex items-center justify-center lg:flex-none flex-1 gap-2 text-[#161616] text-sm font-bold leading-tight h-9 px-3 py-2 rounded border transition duration-300 border-zinc-300 focus:border-black"
                   aria-label={buttonProps.NegativeButtonLabel}
                   onClick={() =>
@@ -90,7 +90,7 @@ export default function WasThisPageHelpfulContent({
               )}
               {buttonProps?.PositiveButtonLabel && (
                 <button
-                  disabled={isPending} 
+                  disabled={isPending}
                   class="flex items-center justify-center lg:flex-none flex-1 gap-2 text-[#161616] text-sm font-bold leading-tight h-9 px-3 py-2 rounded border transition duration-300 border-zinc-300 focus:border-black"
                   aria-label={buttonProps.PositiveButtonLabel}
                   onClick={() =>

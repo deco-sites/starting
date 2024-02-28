@@ -1,4 +1,3 @@
-
 export const RECAPTCHA_SITE_KEY = "6LcEk2IpAAAAAK7Eq0EZYbB4mqRE1uHUXWmuzXqR";
 export const RECAPTCHA_SECRET = Deno.env.get("RECAPTCHA_SECRET");
 
@@ -12,7 +11,7 @@ export function verifyCaptcha(token: string): Promise<boolean> {
     `https://www.google.com/recaptcha/api/siteverify?secret=${RECAPTCHA_SECRET}&response=${token}`,
     {
       method: "POST",
-    }
+    },
   )
     .then((response) => response.json())
     .then((data) => {

@@ -37,7 +37,8 @@ export default function ContactUs({
   return (
     <section class="flex flex-col gap-12 lg:py-[64px] lg:py-28 2xl:py-36 bg-black">
       <Head>
-        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfTfWIpAAAAAP-H_u5oe4_ajU3uvJea4wwvQIpp"></script>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfTfWIpAAAAAP-H_u5oe4_ajU3uvJea4wwvQIpp">
+        </script>
       </Head>
       <div class="lg:w-full flex flex-col lg:flex-row  justify-center gap-20 mx-6 mx-auto max-w-[1280px] px-4 lg:px-0 z-10 py-28">
         <div class="w-full flex flex-col gap-4 max-w-md self-center">
@@ -83,9 +84,8 @@ export default function ContactUs({
               class="w-full h-[51px] border border-white/[.1] rounded placeholder-white bg-white/5 text-white backdrop-blur-xl p-4"
               type="text"
               name="userLinkedin"
-              placeholder={
-                formInfor?.PlaceholderfieldSocial || "Linkedin (optional)"
-              }
+              placeholder={formInfor?.PlaceholderfieldSocial ||
+                "Linkedin (optional)"}
             />
             <input
               class="w-full h-[51px] border border-white/[.1] rounded placeholder-white bg-white/5 text-white backdrop-blur-xl p-4"
@@ -94,11 +94,12 @@ export default function ContactUs({
               placeholder={formInfor?.PlaceholderfieldUrlSite || "Site URL*"}
               required
             />
-            <input type="submit"
+            <input
+              type="submit"
               class={`g-recaptcha w-full cursor-pointer group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero font-medium lg:text-[20px]`}
               data-sitekey="6LfTfWIpAAAAAP-H_u5oe4_ajU3uvJea4wwvQIpp"
-              data-callback='onSubmit'
-              data-action='submit'
+              data-callback="onSubmit"
+              data-action="submit"
               value={formInfor?.submiteName || "Get early access"}
             />
           </form>

@@ -350,7 +350,7 @@ const tableOfContents: TableOfContents = [
           pt: "Otimizando CSS",
           en: "Optimizing CSS",
         },
-        slug: "performance/medias/css"
+        slug: "performance/medias/css",
       },
       {
         title: {

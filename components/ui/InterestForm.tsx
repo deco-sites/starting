@@ -76,10 +76,8 @@ export default function ContactUs({
             class="w-full h-[51px] border border-dark-green p-4"
             type="text"
             name="userMessage"
-            placeholder={
-              formInfor?.PlaceholderFieldExtra ||
-              "Quer acrescentar algo? (opcional)"
-            }
+            placeholder={formInfor?.PlaceholderFieldExtra ||
+              "Quer acrescentar algo? (opcional)"}
           />
           <input
             class="g-recaptcha w-full h-[51px] bg-[#0A2121] text-white text-lg font-semibold rounded-[4px] cursor-pointer"

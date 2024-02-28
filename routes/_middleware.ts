@@ -10,11 +10,14 @@ export async function handler(
 ) {
   const url = new URL(req.url);
   const response = await ctx.next();
-  if (!url.pathname.startsWith('/decocamp')) {
+  if (!url.pathname.startsWith("/decocamp")) {
     return response;
   }
 
-  const html = (await response.text()).replace(`lang="en"`, `lang="en" style="color-scheme: dark;"`);
+  const html = (await response.text()).replace(
+    `lang="en"`,
+    `lang="en" style="color-scheme: dark;"`,
+  );
 
   return new Response(html, {
     headers: response.headers,

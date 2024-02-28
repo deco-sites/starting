@@ -7,16 +7,16 @@ desde: 1.54.0
 
 ## Visão Geral
 
-Os fallbacks de carregamento são um conceito poderoso disponível para uso desde a versão 1.54.0,
-para lidar com o estado de carregamento de seções usando dados de APIs de terceiros.
-Eles permitem que você lide graciosamente com estados de carregamento e evite que toda a aplicação pare
-devido a alguma API de terceiros.
+Os fallbacks de carregamento são um conceito poderoso disponível para uso desde
+a versão 1.54.0, para lidar com o estado de carregamento de seções usando dados
+de APIs de terceiros. Eles permitem que você lide graciosamente com estados de
+carregamento e evite que toda a aplicação pare devido a alguma API de terceiros.
 
-No deco, criar um fallback de carregamento é tão simples quanto exportar uma função de componente
-chamada `LoadingFallback`.
+No deco, criar um fallback de carregamento é tão simples quanto exportar uma
+função de componente chamada `LoadingFallback`.
 
-Os pré-requisitos para fazer com que seu componente funcione são ter
-as seguintes dependências em versões iguais ou superiores às listadas abaixo:
+Os pré-requisitos para fazer com que seu componente funcione são ter as
+seguintes dependências em versões iguais ou superiores às listadas abaixo:
 
 ```json
 {
@@ -59,5 +59,6 @@ export default function ProductShelf(props: Props) {
 }
 ```
 
-Se `ProductShelf` usar dados provenientes de uma API de terceiros lenta, o componente `LoadingFallback` será renderizado em seu lugar.
-Se nenhum fallback de carregamento for definido, um fallback padrão será renderizado em seu lugar.
+Se `ProductShelf` usar dados provenientes de uma API de terceiros lenta, o
+componente `LoadingFallback` será renderizado em seu lugar. Se nenhum fallback
+de carregamento for definido, um fallback padrão será renderizado em seu lugar.

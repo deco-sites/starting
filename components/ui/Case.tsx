@@ -90,7 +90,8 @@ export default function ContactUs({
         </ol>
       </div>
       <div class="w-full xl:w-1/2 relative max-w-[443px]">
-        <span class="hidden lg:w-[352px] lg:h-[900px] lg:block lg:absolute lg:right-0 lg:-top-24 lg:bg-contact-us-bg-gradient lg:rotate-[333deg] lg:-z-10"></span>
+        <span class="hidden lg:w-[352px] lg:h-[900px] lg:block lg:absolute lg:right-0 lg:-top-24 lg:bg-contact-us-bg-gradient lg:rotate-[333deg] lg:-z-10">
+        </span>
         <form
           id={FORM_ID}
           class="flex flex-col justify-center items-center bg-white border border-dark-green rounded-2xl p-4 md:p-8 gap-6 placeholder-[#161A16] "

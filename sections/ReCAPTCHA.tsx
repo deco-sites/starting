@@ -11,7 +11,8 @@ export default function ReCAPTCHA({ formId }: Props) {
       <Head>
         <script
           src={`https://www.google.com/recaptcha/enterprise.js?render=${RECAPTCHA_SITE_KEY}`}
-        ></script>
+        >
+        </script>
       </Head>
       <script
         dangerouslySetInnerHTML={{

@@ -17,8 +17,8 @@ To get started with client-side function invocation, follow these steps:
 
 1. Import `invoke` from `runtime.ts`
 
-2. Now you can issue invocations using the `invoke` function. For
-   example, to fetch data from a function, you would use the following code:
+2. Now you can issue invocations using the `invoke` function. For example, to
+   fetch data from a function, you would use the following code:
 
 > Can't find this file?
 > [Try this one](https://github.com/deco-sites/storefront/blob/main/runtime.ts)
@@ -42,11 +42,15 @@ export default function MyIsland() {
 
 Here, the `invoke` function takes an object with a `key` property that specifies
 the path to your function and a props property that contains your function input
-props. When you call `invoke`, live.ts will invoke your function as it
-does for rendering sections and return it to you as a JavaScript object. It is also possible to call functions defined in an App installed in the project. For example,
+props. When you call `invoke`, live.ts will invoke your function as it does for
+rendering sections and return it to you as a JavaScript object. It is also
+possible to call functions defined in an App installed in the project. For
+example,
 
 ```ts
-const dataAppVtex = await invoke.vtex.loaders.vtexLoader({/* your function input props */});
+const dataAppVtex = await invoke.vtex.loaders.vtexLoader({
+  /* your function input props */
+});
 ```
 
 You can also batch requests by passing an object with multiple keys, each

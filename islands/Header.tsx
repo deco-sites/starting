@@ -210,10 +210,10 @@ export default function Header(props: Props) {
                 <span
                   class="flex justify-center items-center w-screen gap-2"
                   dangerouslySetInnerHTML={{
-                    __html: alert.text ? alert.text : ""
+                    __html: alert.text ? alert.text : "",
                   }}
                 />
-              </Slider.Item>
+              </Slider.Item>,
             ])}
           </Slider>
           <SliderJS rootId={idMobile} interval={5 * 1e3} />
@@ -228,7 +228,7 @@ export default function Header(props: Props) {
                   {alert.github ? <GithubStargazes {...alert.github} /> : null}
                   <span
                     dangerouslySetInnerHTML={{
-                      __html: alert.text ? alert.text : ""
+                      __html: alert.text ? alert.text : "",
                     }}
                   />
                 </span>
