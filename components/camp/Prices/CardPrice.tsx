@@ -44,12 +44,16 @@ const THEME_COLOR = {
     " text-white bg-gradient-to-br from-[#000d0d] via-[#002417] to-[#002827]",
 };
 const PRICE_COLOR = {
-  "ligth": "text-black",
-  "dark": "text-primary",
+  "ligth": "text-[#000]",
+  "dark": "text-[#fff]",
 };
 const LINE_COLOR = {
-  "ligth": "bg-black",
-  "dark": "bg-content",
+  "ligth": "bg-[#52525B]",
+  "dark": "bg-[#A1A1AA]",
+};
+const SPAN_COLOR = {
+  "ligth": "text-[#52525B]",
+  "dark": "text-[#A1A1AA]",
 };
 
 export default function CardPrice({ props }: { props: Props }) {
@@ -72,9 +76,8 @@ export default function CardPrice({ props }: { props: Props }) {
 
   return (
     <div
-      class={`flex flex-col justify-center items-center rounded-3xl py-10 px-6 gap-5 w-full border-[#000D0D] border-2  ${
-        THEME_COLOR[type]
-      } lg:w-[50%-1.5rem] lg:max-w-[500px]`}
+      class={`flex flex-col justify-center items-center rounded-3xl py-10 px-6 gap-5 w-full border-[#000D0D] border-2  ${THEME_COLOR[type]
+        } lg:w-[50%-1.5rem] lg:max-w-[500px]`}
     >
       <Flag flag={flag} type={type} />
       <div class="flex flex-col items-center gap-1">
@@ -87,9 +90,8 @@ export default function CardPrice({ props }: { props: Props }) {
           {infosPrice.insttalments
             ? (
               <div
-                class={`flex flex-row justify-center items-end gap-2 font-medium ${
-                  PRICE_COLOR[type]
-                }`}
+                class={`flex flex-row justify-center items-end gap-2 font-medium ${PRICE_COLOR[type]
+                  }`}
               >
                 <span class="text-2xl md:text-3xl">
                   {infosPrice.insttalments + "x"}
@@ -106,9 +108,8 @@ export default function CardPrice({ props }: { props: Props }) {
             )
             : (
               <div
-                class={`flex flex-row justify-start items-start ${
-                  PRICE_COLOR[type]
-                }`}
+                class={`flex flex-row justify-start items-start ${PRICE_COLOR[type]
+                  }`}
               >
                 <span class="text-6xl md:text-[5rem]">
                   {arrayPrice && arrayPrice[0].replace(/\s/g, "")}
@@ -120,7 +121,7 @@ export default function CardPrice({ props }: { props: Props }) {
             )}
         </div>
         <span
-          class="text-base md:text-xl"
+          class={`text-base md:text-xl ${SPAN_COLOR[type]}`}
           dangerouslySetInnerHTML={{ __html: infosPrice.afterPrice }}
         >
         </span>
@@ -129,15 +130,16 @@ export default function CardPrice({ props }: { props: Props }) {
         label={button.label}
         details={button.details}
         href={button.href}
+        theme={type}
       />
       <span class="text-xs md:text-base">{afterButton}</span>
-      <span class={`w-[90%] md:w-[80%] h-[1px] bg-black ${LINE_COLOR[type]}`}>
+      <span class={`w-[90%] md:w-[80%] h-[1px] ${LINE_COLOR[type]}`}>
       </span>
       <p class="text-xl md:text-[1.7rem]">{requirements.title}</p>
       <ul class="flex flex-col gap-2 items-center">
         {requirements.itemRequisite.map((item) => (
-          <li class="text-center text-sm flex flex-row gap-2 md:text-base">
-            <Icon id="check" size={16} class="min-w-[14px] " />
+          <li class="text-center text-sm flex flex-row gap-2 md:text-base items-center">
+            <Icon id="CheckPrice" size={16} class={`min-w-[14px] ${type === "dark" ? "text-[#02F67C]" : "text-[#000]"}`} />
             <span class="w-max">
               {item}
             </span>
