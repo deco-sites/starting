@@ -128,8 +128,7 @@ export default function CardPrice({ props }: { props: Props }) {
       <Button
         label={button.label}
         details={button.details}
-        href={button.label}
-        type={type}
+        href={button.href}
       />
       <span class="text-xs md:text-base">{afterButton}</span>
       <span class={`w-[90%] md:w-[80%] h-[1px] bg-black ${LINE_COLOR[type]}`}>
