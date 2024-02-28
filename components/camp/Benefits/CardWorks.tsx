@@ -26,7 +26,7 @@ export default function CardWorks({ props }: { props: Props }) {
         <Image width={24} height={24} src={icon} />
       </div>
       <h3
-        class={"text-neutral font-semibold text-[1.5rem] leading-[1.65rem] lg:text-2xl "}
+        class={"text-white font-semibold text-[1.5rem] leading-[1.65rem] lg:text-2xl "}
         dangerouslySetInnerHTML={{ __html: title }}
       >
       </h3>

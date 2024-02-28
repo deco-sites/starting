@@ -48,22 +48,23 @@ export default function Benefits({ props }: { props: Props }) {
   const { items } = { ...BASE_PROPS, ...props };
 
   return (
-    <div class="container md:flex md:gap-6 md:flex-wrap py-10 px-12 lg:grid lg:grid-cols-4 divide-y lg:divide-x lg:divide-y-0 border-[#A1A1AA]">
-      {items.map((item, index) => (
-        <>
-          <hr
-            class={`hidden h-[131px] self-end bg-[#A1A1AA] ${
-              (index + 1) % 2 == 0 ? "md:block w-[1px] lg:hidden" : ""
-            }`}
-          />
-          <BenefitCard
-            image={item.icon}
-            title={item.title}
-            subTitle={item.subTitle}
-            position={index}
-          />
-        </>
-      ))}
+    <div class="w-full h-full bg-[#121212]">
+      <div class="container md:flex md:gap-6 md:flex-wrap py-10 px-12 lg:grid lg:grid-cols-4 divide-y lg:divide-x lg:divide-y-0 border-[#A1A1AA]">
+        {items.map((item, index) => (
+          <>
+            <hr
+              class={`hidden h-[131px] self-end bg-[#A1A1AA] ${(index + 1) % 2 == 0 ? "md:block w-[1px] lg:hidden" : ""
+                }`}
+            />
+            <BenefitCard
+              image={item.icon}
+              title={item.title}
+              subTitle={item.subTitle}
+              position={index}
+            />
+          </>
+        ))}
+      </div>
     </div>
   );
 }

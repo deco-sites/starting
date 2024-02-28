@@ -1,15 +1,21 @@
 import FaqTitle from "$store/components/camp/Faq/FaqTitle.tsx";
 import Dropdown from "$store/components/camp/Faq/Dropdown.tsx";
 
+
+/**
+* @titleBy question 
+*/
+interface Items {
+  question: string;
+  /**
+   * @format textarea
+   */
+  answer: string;
+}
+
 export interface Props {
   title?: string;
-  items: {
-    question: string;
-    /**
-     * @format textarea
-     */
-    answer: string;
-  }[];
+  items: Items[];
 }
 
 const BASE_PROPS = {
@@ -78,17 +84,19 @@ export default function Faq({ props }: { props: Props }) {
   const { title, items } = { ...BASE_PROPS, ...props };
 
   return (
-    <div class="py-8 md:py-10 lg:py-20 px-4 container">
-      <div class="lg:w-[80%] lg:mx-auto">
-        <FaqTitle title={title ? title : "FAQs"} />
+    <div class="w-full h-full bg-[#121212]">
+      <div class="py-8 md:py-10 lg:py-20 px-4 container">
+        <div class="lg:w-[80%] lg:mx-auto">
+          <FaqTitle title={title ? title : "FAQs"} />
 
-        {items.map((item, index) => (
-          <Dropdown
-            question={item.question}
-            answer={item.answer}
-            position={index}
-          />
-        ))}
+          {items.map((item, index) => (
+            <Dropdown
+              question={item.question}
+              answer={item.answer}
+              position={index}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
