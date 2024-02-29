@@ -29,6 +29,9 @@
   details[open].syllabus summary svg {
     transform: rotate(180deg);
   }
+  details[open].faq summary svg {
+    transform: rotate(180deg);
+  }
 
   details[open] summary.notShow svg {
     transform: rotate(0);
