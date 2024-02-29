@@ -181,7 +181,7 @@ export default function Syllabus({ props }: { props: Props }) {
   const { title, accordions } = { ...BASE_PROPS, ...props };
 
   return (
-    <div class="w-full h-full bg-[#121212]">
+    <div class="w-full h-full bg-black">
       <div class="flex w-full flex-col justify-center py-16 px-6 gap-10 container">
         <h2 class="text-white text-3xl md:text-4xl xl:text-7xl text-center">
           {title}

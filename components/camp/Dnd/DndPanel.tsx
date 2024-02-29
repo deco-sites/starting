@@ -30,8 +30,8 @@ function DndButton(props: DndButtonProps) {
 export default function DndPanel({ buttons, title }: Props) {
     return (
         <>
-            <div class="box-border h-fit my-8 mx-6 sm:mx-8 lg:mx-20 lg:my-20">
-                <div class="h-[720px] overflow-hidden w-full rounded-3xl bg-black relative">
+            <div class="box-border h-fit py-8 px-6 sm:px-8 lg:px-20 lg:py-20 bg-black">
+                <div class="h-[720px] overflow-hidden w-full rounded-3xl bg-[#000D0D] relative">
                     <img src="/camp/ellipse.png" class="absolute z-[15] bottom-0 right-0 rotate-180" />
                     <img src="/camp/ellipse.png" class="absolute z-[15] top-0 left-0"/>
                     <div id="dnd-buttons-panel" class="h-[720px] w-full absolute top-0 left-0">
