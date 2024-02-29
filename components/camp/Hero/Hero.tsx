@@ -85,7 +85,9 @@ export default function Hero({ props }: { props: Props }) {
           </div>
         </div>
         <div class="lg:w-[45%] xl:w-2/4 w-full flex justify-center">
-          <div style="position:relative; aspect-ratio: 16/9; max-height: 405px; max-width: 720px; width: 100%;">
+          <div style="position:relative; height: calc(16 / 9 * 30vw); max-height: 405px; max-width: 720px; width: 100%; @media (max-width: 600px) {
+   height: calc(16 / 9 * 13vw);
+  }">
             <iframe
               src={`https://player.vimeo.com/video/${idVimeo}?transparent=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
               frameborder="0"

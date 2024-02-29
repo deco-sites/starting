@@ -42,7 +42,7 @@ export default function AccordionSyllabus({ props }: { props: Props }) {
   const totalTime = TotalTime();
 
   return (
-    <details className="border-b rounded-none border-neutral border-[rgba(255,255,255,0.15)] last:border-b-0 cursor-pointer syllabus">
+    <details className="border-b rounded-none border-neutral border-opacity-15 last:border-b-0 cursor-pointer syllabus">
       <summary className="collapse-title flex flex-row px-4 py-5 md:py-7 md:px-8 font-medium text-white justify-start items-center text-sm md:text-base lg:text-2xl gap-3 xl:gap-4">
         <Icon
           class="text-white w-auto h-auto -ml-[3px] md:min-w-[20px] md:min-h-[20px]"
