@@ -45,7 +45,7 @@ const THEME_COLOR = {
 };
 const PRICE_COLOR = {
   "ligth": "text-[#000]",
-  "dark": "text-[#fff]",
+  "dark": "text-[#02F67C]",
 };
 const LINE_COLOR = {
   "ligth": "bg-[#52525B]",
