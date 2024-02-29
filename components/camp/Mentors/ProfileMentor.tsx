@@ -45,7 +45,7 @@ export default function ProfileMentor({ props }: { props: Props }) {
         <h4 class="text-2xl text-[#02f67c] md:text-[1.4rem] lg:text-2xl">
           {nameMentor}
         </h4>
-        <h5 class="text-xl">{profession}</h5>
+        <h5 class="text-xl text-[#A1A1AA]">{profession}</h5>
       </div>
       <span
         class="text-white text-base"
