@@ -43,7 +43,7 @@ export default function PopUp({ buttonLabel, items, theme}: Omit<Props, "@Page">
                         {items?.map((item) => (
                             <li class="flex flex-col gap-2">
                                 <h3 className="text-2xl text-[#fff]">{item.title}</h3>
-                                <p className="text-[#A1A1AA] text-base">{item.content}</p>
+                                <p className="text-[#A1A1AA] text-base" dangerouslySetInnerHTML={{__html:item.content}}></p>
                             </li>
                         ))}
                     </ul>
