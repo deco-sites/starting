@@ -14,9 +14,9 @@ export interface Props {
   button: PropsButton;
   afterButtonText: string;
   /**
-   * @description src video of youtube or vimeo
+   * @description idVimeo
    */
-  srcVideo: string;
+  idVimeo: string;
 }
 
 const BASE_PROPS = {
@@ -30,14 +30,14 @@ const BASE_PROPS = {
     label: "Enroll Now ",
     details: "(Starts March 15th)",
   },
-  srcVideo: "https://youtu.be/aHe4fSLkqz0?si=NfgKawY9cCkUpW3O",
+  idVimeo: "https://youtu.be/aHe4fSLkqz0?si=NfgKawY9cCkUpW3O",
   subtitle:
     "<p>From Beginner to Expert: Master deco.cx for&nbsp;Elite Web and Storefront Development</p>",
   afterButtonText: "Check the pre-requisites",
 };
 
 export default function Hero({ props }: { props: Props }) {
-  const { flag, title, subtitle, button, afterButtonText, srcVideo } = {
+  const { flag, title, subtitle, button, afterButtonText, idVimeo } = {
     ...BASE_PROPS,
     ...props,
   };
@@ -73,7 +73,7 @@ export default function Hero({ props }: { props: Props }) {
    height: calc(16 / 9 * 13vw)
   }">
             <iframe
-              src={srcVideo}
+              src={`https://player.vimeo.com/video/${idVimeo}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               style="position:absolute;top:0;left:0;width:100%;height:100%;"
