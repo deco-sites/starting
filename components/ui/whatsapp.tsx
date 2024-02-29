@@ -17,10 +17,10 @@ function WhatsApp({ phone, text }: Props) {
       aria-label="Chat on WhatsApp"
     >
       <button
-        class="bg-[#45D268] text-white p-2 rounded-full shadow-lg"
+        class="bg-[#45D268] text-white p-2 rounded-full shadow-lg w-16 h-16 grid place-items-center"
         aria-label="Chat on WhatsApp"
       >
-        <Icon id="WhatsApp" size={32} stroke="0.01" />
+        <Icon id="WhatsApp" size={40} stroke="0.01" />
       </button>
     </a>
   );
