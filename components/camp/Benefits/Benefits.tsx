@@ -48,7 +48,7 @@ export default function Benefits({ props }: { props: Props }) {
   const { items } = { ...BASE_PROPS, ...props };
 
   return (
-    <div class="w-full h-full bg-[#121212]">
+    <div class="w-full h-full bg-black">
       <div class="container md:flex md:gap-6 md:flex-wrap py-10 px-12 lg:grid lg:grid-cols-4 divide-y lg:divide-x lg:divide-y-0 border-[#A1A1AA]">
         {items.map((item, index) => (
           <>
