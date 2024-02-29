@@ -42,7 +42,7 @@ export default function ProfileMentor({ props }: { props: Props }) {
       >
       </Image>
       <div class="flex flex-col gap-2">
-        <h4 class="text-2xl text-primary md:text-[1.4rem] lg:text-2xl">
+        <h4 class="text-2xl text-[#02f67c] md:text-[1.4rem] lg:text-2xl">
           {nameMentor}
         </h4>
         <h5 class="text-xl">{profession}</h5>
