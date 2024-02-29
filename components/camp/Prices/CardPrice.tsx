@@ -3,6 +3,8 @@ import { formatPrice } from "../sdk/format.ts";
 import Button from "../Button/Button.tsx";
 import Icon from "../ui/Icon.tsx";
 import Flag from "./Flag.tsx";
+import PopUp from "$store/islands/PopUp.tsx";
+import type { Props as PropsPopUp } from "$store/components/camp/PopUp/PopUp.tsx";
 
 interface Price {
   /**
@@ -29,7 +31,7 @@ export interface Props {
   flag: string;
   infosPrice: Price;
   button: ButtonProps;
-  afterButton: string;
+  popUp: PropsPopUp;
   requirements: {
     title: string;
     itemRequisite: string[];
@@ -64,7 +66,7 @@ export default function CardPrice({ props }: { props: Props }) {
     requirements,
     type = "ligth",
     button,
-    afterButton,
+    popUp,
   } = props;
 
   const arrayPrice = infosPrice.insttalments
@@ -132,7 +134,7 @@ export default function CardPrice({ props }: { props: Props }) {
         href={button.href}
         theme={type}
       />
-      <span class="text-xs md:text-base">{afterButton}</span>
+      <PopUp buttonLabel={popUp.buttonLabel} items={popUp.items} theme={type} />
       <span class={`w-[90%] md:w-[80%] h-[1px] ${LINE_COLOR[type]}`}>
       </span>
       <p class="text-xl md:text-[1.7rem]">{requirements.title}</p>

@@ -39,6 +39,7 @@ import * as $NRF_HeroEditorTabbed from "./islands/NRF/HeroEditorTabbed.tsx";
 import * as $NRF_PageWrapper from "./islands/NRF/PageWrapper.tsx";
 import * as $NRF_TextLines from "./islands/NRF/TextLines.tsx";
 import * as $OnThisPage from "./islands/OnThisPage.tsx";
+import * as $PopUp from "./islands/PopUp.tsx";
 import * as $PopularDocuments from "./islands/PopularDocuments.tsx";
 import * as $Projects from "./islands/Projects.tsx";
 import * as $RankingAnalyze from "./islands/RankingAnalyze.tsx";
@@ -91,6 +92,7 @@ const manifest = {
     "./islands/NRF/PageWrapper.tsx": $NRF_PageWrapper,
     "./islands/NRF/TextLines.tsx": $NRF_TextLines,
     "./islands/OnThisPage.tsx": $OnThisPage,
+    "./islands/PopUp.tsx": $PopUp,
     "./islands/PopularDocuments.tsx": $PopularDocuments,
     "./islands/Projects.tsx": $Projects,
     "./islands/RankingAnalyze.tsx": $RankingAnalyze,
