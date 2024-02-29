@@ -1,5 +1,7 @@
 import Button from "../Button/Button.tsx";
 import type { Props as PropsButton } from "$store/components/camp/Button/Button.tsx";
+import PopUp from "$store/islands/PopUp.tsx";
+import type { Props as PropsPopUp } from "$store/components/camp/PopUp/PopUp.tsx";
 
 export interface Props {
   flag: string;
@@ -12,7 +14,7 @@ export interface Props {
    */
   subtitle: string;
   button: PropsButton;
-  afterButtonText: string;
+  popUp: PropsPopUp;
   /**
    * @description idVimeo
    */
@@ -33,11 +35,23 @@ const BASE_PROPS = {
   idVimeo: "https://youtu.be/aHe4fSLkqz0?si=NfgKawY9cCkUpW3O",
   subtitle:
     "<p>From Beginner to Expert: Master deco.cx for&nbsp;Elite Web and Storefront Development</p>",
-  afterButtonText: "Check the pre-requisites",
+  popUp: {
+    buttonLabel: "Check the pre-requisites",
+    items: [
+      {
+        title: "Requisite",
+        content: "React or another component framework",
+      },
+      {
+        title: "Requisite",
+        content: "React or another component framework",
+      },
+    ]
+  }
 };
 
 export default function Hero({ props }: { props: Props }) {
-  const { flag, title, subtitle, button, afterButtonText, idVimeo } = {
+  const { flag, title, subtitle, button, popUp, idVimeo } = {
     ...BASE_PROPS,
     ...props,
   };
@@ -65,10 +79,12 @@ export default function Hero({ props }: { props: Props }) {
               href={button.href}
               details={button.details}
             />
-            <span class="lg:ml-4 text-white text-sm">{afterButtonText}</span>
+            <div class="lg:ml-4">
+              <PopUp buttonLabel={popUp.buttonLabel} items={popUp.items} />
+            </div>
           </div>
         </div>
-        <div class="lg:w-[45%] xl:w-2/4 w-full">
+        <div class="lg:w-[45%] xl:w-2/4 w-full flex justify-center">
           <div style="position:relative; height: calc(16 / 9 * 30vw); max-height: 405px; max-width: 720px; width: 100%; @media (max-width: 600px) {
    height: calc(16 / 9 * 13vw);
   }">
