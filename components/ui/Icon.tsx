@@ -74,7 +74,11 @@ export type AvailableIcons =
   | "Sparkle"
   | "Gauge"
   | "Plugs"
-  | "FileSvg";
+  | "FileSvg"
+  /* Decocamp */
+  | "TsFile"
+  | "Fresh"
+  | "ToolHexagon";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
