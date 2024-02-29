@@ -16,9 +16,9 @@ export interface Props {
   button: PropsButton;
   popUp: PropsPopUp;
   /**
-   * @description src video of youtube or vimeo
+   * @description idVimeo
    */
-  srcVideo: string;
+  idVimeo: string;
 }
 
 const BASE_PROPS = {
@@ -32,7 +32,7 @@ const BASE_PROPS = {
     label: "Enroll Now ",
     details: "(Starts March 15th)",
   },
-  srcVideo: "https://youtu.be/aHe4fSLkqz0?si=NfgKawY9cCkUpW3O",
+  idVimeo: "https://youtu.be/aHe4fSLkqz0?si=NfgKawY9cCkUpW3O",
   subtitle:
     "<p>From Beginner to Expert: Master deco.cx for&nbsp;Elite Web and Storefront Development</p>",
   popUp: {
@@ -51,7 +51,7 @@ const BASE_PROPS = {
 };
 
 export default function Hero({ props }: { props: Props }) {
-  const { flag, title, subtitle, button, popUp, srcVideo } = {
+  const { flag, title, subtitle, button, popUp, idVimeo } = {
     ...BASE_PROPS,
     ...props,
   };
@@ -84,12 +84,12 @@ export default function Hero({ props }: { props: Props }) {
             </div>
           </div>
         </div>
-        <div class="lg:w-[45%] xl:w-2/4 w-full">
-          <div style="position:relative; height: calc(16 / 9 * 30vw); max-height: 360px; width: 100%; @media (max-width: 600px) {
-   height: calc(16 / 9 * 13vw)
+        <div class="lg:w-[45%] xl:w-2/4 w-full flex justify-center">
+          <div style="position:relative; height: calc(16 / 9 * 30vw); max-height: 405px; max-width: 720px; width: 100%; @media (max-width: 600px) {
+   height: calc(16 / 9 * 13vw);
   }">
             <iframe
-              src={srcVideo}
+              src={`https://player.vimeo.com/video/${idVimeo}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               style="position:absolute;top:0;left:0;width:100%;height:100%;"
