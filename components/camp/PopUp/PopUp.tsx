@@ -6,6 +6,7 @@ import { useRef } from "preact/hooks";
 interface Requirements {
     title: string;
     /**
+     * @title content
      * @format html
      */
     content: string;
@@ -21,7 +22,7 @@ const THEME = {
     "ligth": "text-[#000]",
 };
 
-export default function PopUp({ buttonLabel, items, theme = "dark" }: Omit<Props, "@Page"> & { theme?: "dark" | "ligth" }) {
+export default function PopUp({ buttonLabel, items, theme}: Omit<Props, "@Page"> & { theme: "dark" | "ligth" }) {
 
     const modal = useRef<HTMLDialogElement>(null);
 
