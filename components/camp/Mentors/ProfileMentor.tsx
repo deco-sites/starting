@@ -38,7 +38,7 @@ export default function ProfileMentor({ props }: { props: Props }) {
         alt={image.alt}
         width={200}
         height={200}
-        class="xl:max-h-[260px] 2xl:max-h-[330px] object-cover rounded-3xl bordeer border-[5px] border-base-200 md:w-full md:h-auto"
+        class="xl:max-h-[260px] 2xl:max-h-[330px] object-cover rounded-3xl bordeer border-[5px] border-[#113032] md:w-full md:h-auto"
       >
       </Image>
       <div class="flex flex-col gap-2">
