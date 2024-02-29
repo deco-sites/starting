@@ -140,27 +140,44 @@ let dragObject = null;
 let offsetX = 0;
 let offsetY = 0;
 
-// Mouse move event listener, only on dnd panel
-panel.addEventListener("mousemove", (event) => {
+const getPointerPosition = (event) => {
+    if (event.touches && event.touches.length) {
+        return {
+            clientX: event.touches[0].clientX,
+            clientY: event.touches[0].clientY
+        };
+    } else {
+        return {
+            clientX: event.clientX,
+            clientY: event.clientY
+        };
+    }
+}
+
+const handleDragMove = (event) => {
+    const { clientX, clientY } = getPointerPosition(event);
     const rect = panel.getBoundingClientRect();
-    const mouseX = event.clientX - rect.left;
-    const mouseY = event.clientY - rect.top;
+    const mouseX = clientX - rect.left;
+    const mouseY = clientY - rect.top;
 
     const bodyX = mouseX + offsetX;
     const bodyY = mouseY + offsetY;
 
     if (isDragging && dragObject) {
+        console.log('isDragging');
         Matter.Body.setPosition(dragObject, { x: bodyX, y: bodyY });
+        event.preventDefault();
     }
-});
+}
 
-// Mouse down event listener, only on dnd panel
-panel.addEventListener("mousedown", (event) => {
+const handleDragStart = (event) => {
+    const { clientX, clientY } = getPointerPosition(event);
     const rect = panel.getBoundingClientRect();
-    const mouseX = event.clientX - rect.left;
-    const mouseY = event.clientY - rect.top;
+    const mouseX = clientX - rect.left;
+    const mouseY = clientY - rect.top;
     const bodiesUnderCursor = Matter.Query.point(world.bodies, { x: mouseX, y: mouseY });
     if (bodiesUnderCursor.length > 0) {
+        console.log('hit body');
         isDragging = true;
         dragObject = bodiesUnderCursor[0];
         
@@ -169,15 +186,25 @@ panel.addEventListener("mousedown", (event) => {
         // Calculate the offset
         offsetX = dragObject.position.x - mouseX;
         offsetY = dragObject.position.y - mouseY;
+        event.preventDefault();
     }
-});
+}
 
-// Mouse up event listener, on whole document
-document.addEventListener("mouseup", () => {
+const handleDragEnd = () => {
     isDragging = false;
-    Matter.Body.setStatic(dragObject, false);
-    dragObject = null;
-});
+    if (dragObject) {
+        Matter.Body.setStatic(dragObject, false);
+        dragObject = null;
+    }
+}
+
+panel.addEventListener("mousemove", handleDragMove);
+panel.addEventListener("mousedown", handleDragStart);
+document.addEventListener("mouseup", handleDragEnd);
+
+panel.addEventListener("touchstart", handleDragStart);
+panel.addEventListener("touchmove", handleDragMove);
+document.addEventListener("touchend", handleDragEnd);
 
 /**
  * 
