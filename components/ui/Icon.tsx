@@ -78,7 +78,9 @@ export type AvailableIcons =
   /* Decocamp */
   | "TsFile"
   | "Fresh"
-  | "ToolHexagon";
+  | "ToolHexagon"
+  | "sound"
+  | "subtitle";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
