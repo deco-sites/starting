@@ -2,9 +2,12 @@ import Button from "../Button/Button.tsx";
 import type { Props as PropsButton } from "$store/components/camp/Button/Button.tsx";
 import PopUp from "$store/islands/PopUp.tsx";
 import type { Props as PropsPopUp } from "$store/components/camp/PopUp/PopUp.tsx";
+import Icon from "../../ui/Icon.tsx";
 
 export interface Props {
   flag: string;
+  flagSound?: string;
+  flegLegend?: string;
   /**
    * @format html
    */
@@ -23,6 +26,8 @@ export interface Props {
 
 const BASE_PROPS = {
   flag: "Masterclass",
+  flagSound: "Português",
+  flagLegend: "English",
   title:
     '<p>High-Performance<br>Web Dev with<span style="color: rgb(45, 194, 107);" data-mce-style="color: rgb(45, 194, 107);"> <span style="color: rgb(2, 246, 124);" data-mce-style="color: rgb(2, 246, 124);">deco.cx</span></span></p>',
   video:
@@ -51,7 +56,7 @@ const BASE_PROPS = {
 };
 
 export default function Hero({ props }: { props: Props }) {
-  const { flag, title, subtitle, button, popUp, idVimeo } = {
+  const { flag, title, subtitle, button, popUp, idVimeo, flagSound, flagLegend } = {
     ...BASE_PROPS,
     ...props,
   };
@@ -60,9 +65,19 @@ export default function Hero({ props }: { props: Props }) {
     <div class="w-full h-full bg-black">
       <div class="w-full h-full flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-11 lg:px-8 lg:gap-4 pb-16 pt-28 lg:pt-56 container px-3">
         <div class=" h-full flex flex-col justify-center items-center lg:items-start gap-4 md:gap-6 xl:gap-8 lg:w-[55%] xl:w-2/4 w-full">
-          <span class="text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start">
-            {flag}
-          </span>
+          <div class="flex flex-row gap-2 flex-wrap gap-y-3 justify-center items-center">
+            <span class="text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start">
+              {flag}
+            </span>
+            {flagSound && (<span class=" lg:ml-6 text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start flex flex-row items-center justify-center gap-2">
+              <Icon id="sound" width={16} height={16} />
+              {flagSound}
+            </span>)}
+            {flagLegend && (<span class="text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start flex flex-row items-center justify-center gap-2">
+              <Icon id="subtitle" width={16} height={12} />
+              {flagLegend}
+            </span>)}
+          </div>
           <h2
             class="text-4xl md:text-[4rem] md:leading-[4.2rem] lg:text-[2.75rem] lg:leading-[3.2rem] xl:text-[3.5rem] xl:leading-[4rem] 2xl:leading-[4.5rem] 2xl:text-[4rem] text-white text-center lg:text-start"
             dangerouslySetInnerHTML={{ __html: title }}
