@@ -13,7 +13,7 @@ export const handler: Handlers<null, DecoState> = {
     const isCaptchaValid = !!recaptchaToken ??
       (await verifyCaptcha(recaptchaToken.toString()));
 
-    if (!ZAPIER_WEBHOOK) {
+    if (!ZAPIER_WEBHOOK || !isCaptchaValid) {
       return new Response(null, {
         headers: {
           Location: "/",
