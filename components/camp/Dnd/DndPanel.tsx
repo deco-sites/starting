@@ -39,7 +39,7 @@ export default function DndPanel({ buttons, title }: Props) {
                             <div class="absolute h-[720px] z-[15] opacity-0 w-full top-0 left-0"></div>
                             {buttons.map(button => <DndButton {...button}/>)}
                         </div>
-                        <h2 class="absolute z-10 top-6 text-3xl text-center w-full" dangerouslySetInnerHTML={{ __html: title }}></h2>
+                        <h2 class="text-[#fff] absolute z-10 top-6 text-3xl text-center w-full" dangerouslySetInnerHTML={{ __html: title }}></h2>
                     </div>
                 </div>
             </div>

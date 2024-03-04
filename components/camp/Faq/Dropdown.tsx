@@ -23,7 +23,7 @@ export default function Dropdown({ question, answer, position }: Props) {
         />
       </summary>
 
-      <p class="mt-5 md:text-xl md:mt-6 md:leading-[1.875rem] pb-6 md:pb-5">
+      <p class="text-[#fff] mt-5 md:text-xl md:mt-6 md:leading-[1.875rem] pb-6 md:pb-5">
         {answer}
       </p>
     </details>
