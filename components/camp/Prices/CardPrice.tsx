@@ -78,8 +78,9 @@ export default function CardPrice({ props }: { props: Props }) {
 
   return (
     <div
-      class={`flex flex-col justify-center items-center rounded-3xl py-10 px-6 gap-5 w-full border-[#000D0D] border-2  ${THEME_COLOR[type]
-        } lg:w-[50%-1.5rem] lg:max-w-[500px]`}
+      class={`flex flex-col justify-center items-center rounded-3xl py-10 px-6 gap-5 w-full border-[#000D0D] border-2  ${
+        THEME_COLOR[type]
+      } lg:w-[50%-1.5rem] lg:max-w-[500px]`}
     >
       <Flag flag={flag} type={type} />
       <div class="flex flex-col items-center gap-1">
@@ -92,8 +93,9 @@ export default function CardPrice({ props }: { props: Props }) {
           {infosPrice.insttalments
             ? (
               <div
-                class={`flex flex-row justify-center items-end gap-2 font-medium ${PRICE_COLOR[type]
-                  }`}
+                class={`flex flex-row justify-center items-end gap-2 font-medium ${
+                  PRICE_COLOR[type]
+                }`}
               >
                 <span class="text-2xl md:text-3xl">
                   {infosPrice.insttalments + "x"}
@@ -110,8 +112,9 @@ export default function CardPrice({ props }: { props: Props }) {
             )
             : (
               <div
-                class={`flex flex-row justify-start items-start ${PRICE_COLOR[type]
-                  }`}
+                class={`flex flex-row justify-start items-start ${
+                  PRICE_COLOR[type]
+                }`}
               >
                 <span class="text-6xl md:text-[5rem]">
                   {arrayPrice && arrayPrice[0].replace(/\s/g, "")}
@@ -141,7 +144,13 @@ export default function CardPrice({ props }: { props: Props }) {
       <ul class="flex flex-col gap-2 items-center">
         {requirements.itemRequisite.map((item) => (
           <li class="text-center text-sm flex flex-row gap-2 md:text-base items-center">
-            <Icon id="CheckPrice" size={16} class={`min-w-[14px] ${type === "dark" ? "text-[#02F67C]" : "text-[#000]"}`} />
+            <Icon
+              id="CheckPrice"
+              size={16}
+              class={`min-w-[14px] ${
+                type === "dark" ? "text-[#02F67C]" : "text-[#000]"
+              }`}
+            />
             <span class="w-max">
               {item}
             </span>

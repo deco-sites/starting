@@ -187,7 +187,11 @@ export default function Syllabus({ props }: { props: Props }) {
           {title}
         </h2>
         <div class="flex flex-col w-full rounded-xl border-neutral border border-[rgba(255,255,255,0.15)] bg-white bg-opacity-5">
-          {accordions.map((accordion) => <AccordionSyllabus props={accordion} />)}
+          {accordions.map((accordion) => (
+            <AccordionSyllabus
+              props={accordion}
+            />
+          ))}
         </div>
       </div>
     </div>

@@ -1,10 +1,9 @@
 import FaqTitle from "$store/components/camp/Faq/FaqTitle.tsx";
 import Dropdown from "$store/components/camp/Faq/Dropdown.tsx";
 
-
 /**
-* @titleBy question 
-*/
+ * @titleBy question
+ */
 interface Items {
   question: string;
   /**

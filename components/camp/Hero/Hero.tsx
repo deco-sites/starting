@@ -51,12 +51,21 @@ const BASE_PROPS = {
         title: "Requisite",
         content: "React or another component framework",
       },
-    ]
-  }
+    ],
+  },
 };
 
 export default function Hero({ props }: { props: Props }) {
-  const { flag, title, subtitle, button, popUp, idVimeo, flagSound, flagLegend } = {
+  const {
+    flag,
+    title,
+    subtitle,
+    button,
+    popUp,
+    idVimeo,
+    flagSound,
+    flagLegend,
+  } = {
     ...BASE_PROPS,
     ...props,
   };
@@ -69,14 +78,18 @@ export default function Hero({ props }: { props: Props }) {
             <span class="text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start">
               {flag}
             </span>
-            {flagSound && (<span class=" lg:ml-6 text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start flex flex-row items-center justify-center gap-2">
-              <Icon id="sound" width={16} height={16} />
-              {flagSound}
-            </span>)}
-            {flagLegend && (<span class="text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start flex flex-row items-center justify-center gap-2">
-              <Icon id="subtitle" width={16} height={12} />
-              {flagLegend}
-            </span>)}
+            {flagSound && (
+              <span class=" lg:ml-6 text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start flex flex-row items-center justify-center gap-2">
+                <Icon id="sound" width={16} height={16} />
+                {flagSound}
+              </span>
+            )}
+            {flagLegend && (
+              <span class="text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start flex flex-row items-center justify-center gap-2">
+                <Icon id="subtitle" width={16} height={12} />
+                {flagLegend}
+              </span>
+            )}
           </div>
           <h2
             class="text-4xl md:text-[4rem] md:leading-[4.2rem] lg:text-[2.75rem] lg:leading-[3.2rem] xl:text-[3.5rem] xl:leading-[4rem] 2xl:leading-[4.5rem] 2xl:text-[4rem] text-white text-center lg:text-start"

@@ -10,11 +10,15 @@ const THEME = {
 };
 
 export default function Button(
-  { label, details, href, theme }: Omit<Props, "@Page"> & { theme: "dark" | "ligth" },
+  { label, details, href, theme }: Omit<Props, "@Page"> & {
+    theme: "dark" | "ligth";
+  },
 ) {
   return (
     <a
-      class={`mt-auto rounded-full font-medium text-xl px-6 py-4 flex flex-row justify-center items-center flex-wrap gap-1 ${THEME[theme ?? "dark"]}`}
+      class={`mt-auto rounded-full font-medium text-xl px-6 py-4 flex flex-row justify-center items-center flex-wrap gap-1 ${
+        THEME[theme ?? "dark"]
+      }`}
       href={href}
     >
       {label} <span class="text-sm">{details}</span>

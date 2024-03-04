@@ -92,9 +92,13 @@ export default function Mentors({ props }: { props: Props }) {
   return (
     <div class="w-full h-full bg-black">
       <div class="flex flex-col container gap-10 py-8 px-4 lg:py-20">
-        {title && title.length ? <h2 class="text-white text-3xl text-center md:text-4xl md:leading-9 lg:text-[4rem] lg:leading-[4rem]">
-          {title}
-        </h2> : null}
+        {title && title.length
+          ? (
+            <h2 class="text-white text-3xl text-center md:text-4xl md:leading-9 lg:text-[4rem] lg:leading-[4rem]">
+              {title}
+            </h2>
+          )
+          : null}
         <div class="flex flex-col gap-6 md:flex-row md:justify-center xl:gap-20">
           {mentors.map((mentor) => <ProfileMentor props={mentor} />)}
         </div>
