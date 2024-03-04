@@ -44,13 +44,13 @@ List with all supported annotations:
 | `@minItems`         | Ensures that fields of type `array` cannot have fewer than X values.                                                                        | `@minItems 2`                                                        |
 | `@default`          | Configures a default value for that field.                                                                                                  | `@default Testing`                                                   |
 | `@deprecated`       | Marks a field as deprecated.                                                                                                                | `@deprecated We will remove this field in the next update`           |
-| `@options`          | Required for the operation of the [dynamic options widget](/docs/pt/reference/widgets#dynamic-options).                                     | `@options deco-sites/mystore/loaders/products.ts`                    |
+| `@options`          | Required for the operation of the [dynamic options](/docs/pt/reference/widgets#dynamic-options), [button group](/docs/pt/reference/widgets#button-group) and [icon select](/docs/pt/reference/widgets#icon-select) widgets.                                     | `@options deco-sites/mystore/loaders/products.ts`                    |
 
 ## Possible Values for `@format`
 
 - `@format color`: Renders a color input instead of a text input.
 
-<img src="/docs/annotations/color.png" alt="@format color example" width="300">
+<img src="/docs/annotations/color2.png" alt="@format color example" width="300">
 
 - `@format date`: Renders a date input instead of a text input.
 

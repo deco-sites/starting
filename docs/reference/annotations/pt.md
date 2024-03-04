@@ -44,13 +44,13 @@ Lista com todas as annotations suportadas:
 | `@minItems`         | Faz com que campos do tipo `array` não possam ter menos que X valores.                                                                       | `@minItems 2`                                                 |
 | `@default`          | Configura um valor padrão para aquele campo. Funciona somente com tipos primitivos.                                                          | `@default Testando`                                           |
 | `@deprecated`       | Marca um campo como descontinuado.                                                                                                           | `@deprecated vamos remover esse campo na próxima atualização` |
-| `@options`          | É necessário para o funcionamento da [widget de dynamic options](/docs/pt/reference/widgets#dynamic-options).                                | `@options deco-sites/minhaloja/loaders/produtos.ts`           |
+| `@options`          | É necessário para o funcionamento das widgets [dynamic options](/docs/pt/reference/widgets#dynamic-options), [button group](/docs/pt/reference/widgets#button-group) e [icon select](/docs/pt/reference/widgets#icon-select).                                | `@options deco-sites/minhaloja/loaders/produtos.ts`           |
 
 ## Valores possíveis para o @format
 
 - `@format color`: Renderiza um input de cor no lugar de um de texto.
 
-<img src="/docs/annotations/color.png" alt="@format color example" width="300">
+<img src="/docs/annotations/color2.png" alt="@format color example" width="300">
 
 - `@format date`: Renderiza um input de data no lugar de um de texto.
 
