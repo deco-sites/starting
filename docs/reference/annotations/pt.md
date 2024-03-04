@@ -50,7 +50,7 @@ Lista com todas as annotations suportadas:
 
 - `@format color`: Renderiza um input de cor no lugar de um de texto.
 
-<img src="/docs/annotations/color.png" alt="@format color example" width="300">
+<img src="/docs/annotations/color2.png" alt="@format color example" width="300">
 
 - `@format date`: Renderiza um input de data no lugar de um de texto.
 

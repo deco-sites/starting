@@ -50,7 +50,7 @@ List with all supported annotations:
 
 - `@format color`: Renders a color input instead of a text input.
 
-<img src="/docs/annotations/color.png" alt="@format color example" width="300">
+<img src="/docs/annotations/color2.png" alt="@format color example" width="300">
 
 - `@format date`: Renders a date input instead of a text input.
 
