@@ -16,7 +16,7 @@ a plataforma para criar experiências _headless commerce_.
 ![deco admin](https://github.com/deco-cx/apps/assets/882438/5a497330-93e5-497d-a572-fde44421d6ac)
 
 Quando você cria um site na _deco.cx_, ele é automaticamente **deployado na
-_edge_ em 35 regiões em todo o mundo** no [Deno Deploy](https://deno.com/). Isso
+_edge_ em 12 regiões em todo o mundo** no [Deno Deploy](https://deno.com/). Isso
 significa que suas páginas são servidas próximas aos seus usuários, garantindo
 um desempenho ultrarrápido. Além disso, fornecemos um repositório do Github onde
 você pode gerenciar seu código e colaborar com outras pessoas do seu time. Com a

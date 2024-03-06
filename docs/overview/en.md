@@ -17,7 +17,7 @@ experiences.
 ![deco admin](https://github.com/deco-cx/apps/assets/882438/5a497330-93e5-497d-a572-fde44421d6ac)
 
 When you create a site in _deco.cx_, it's automatically **deployed on the edge
-in 35 regions world-wide** on [Deno Deploy](https://deno.com). This means your
+in 12 regions world-wide** on [Deno Deploy](https://deno.com). This means your
 pages are served close to users, ensuring lightning-fast performance.
 Additionally, we provide you with a Github repository where you can manage your
 code and collaborate with others on your team. With _deco.cx_, you can focus on
