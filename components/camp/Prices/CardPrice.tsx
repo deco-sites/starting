@@ -132,6 +132,7 @@ export default function CardPrice({ props }: { props: Props }) {
         </span>
       </div>
       <Button
+        id={button.id}
         label={button.label}
         details={button.details}
         href={button.href}

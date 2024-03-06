@@ -103,6 +103,7 @@ export default function Hero({ props }: { props: Props }) {
           </span>
           <div class="flex flex-col gap-2 items-center lg:items-start ">
             <Button
+              id={button.id}
               label={button.label}
               href={button.href}
               details={button.details}
