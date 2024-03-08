@@ -371,3 +371,7 @@
   transition: transform 0.2s;
   cursor: pointer;
 }
+
+.cursorCustom{
+  cursor: url(/cursor.cur), default;
+}

@@ -52,7 +52,8 @@ export type AvailableIcons =
   | "Git-hub"
   | "Twitter"
   | "video"
-  | "CheckPrice";
+  | "CheckPrice"
+  | "DecoGreen";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
