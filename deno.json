@@ -48,7 +48,7 @@
   "lint": {
     "rules": {
       "tags": [
-        "fresh",
+        "fresh", 
         "recommended"
       ]
     }
