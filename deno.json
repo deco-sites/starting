@@ -55,8 +55,6 @@
   },
   "nodeModulesDir": true,
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "experimentalDecorators": true,
-    "jsxImportSource": "preact"
+    "jsx": "react-jsx"
   }
 }
