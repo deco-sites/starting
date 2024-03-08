@@ -1,4 +1,4 @@
-import { useUI } from "$store/sdk/useUI.ts";
+import { useUI } from "$store/components/camp/sdk/useUI.ts";
 import { useSignal } from "@preact/signals";
 import Icon from "$store/components/camp/ui/Icon.tsx";
 import FlagTime from "$store/components/camp/Program/FlagTime.tsx";

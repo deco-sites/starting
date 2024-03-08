@@ -1,5 +1,5 @@
-import { useUI } from "$store/sdk/useUI.ts";
-import Icon from "$store/components/ui/Icon.tsx";
+import { useUI } from "$store/components/camp/sdk/useUI.ts";
+import Icon from "$store/components/camp/ui/Icon.tsx";
 import FlagTime from "$store/components/camp/Program/FlagTime.tsx";
 import type { ItemsTopic } from "$store/components/camp/Program/Program.tsx";
 
