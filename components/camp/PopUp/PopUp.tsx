@@ -48,7 +48,7 @@ export default function PopUp(
         <div className="modal-box">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-4 top-4">
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-4 top-4 text-[#fff]">
               ✕
             </button>
           </form>
