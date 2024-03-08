@@ -14,6 +14,8 @@ import * as $api_webinar from "./routes/api/webinar.tsx";
 import * as $gfm_css from "./routes/gfm.css.ts";
 import * as $hackathon4 from "./routes/hackathon4.ts";
 import * as $proxy_image_index from "./routes/proxy/image/index.tsx";
+import * as $Article from "./islands/Article.tsx";
+import * as $ButtonTab from "./islands/ButtonTab.tsx";
 import * as $CampHeader from "./islands/CampHeader.tsx";
 import * as $CampMentor from "./islands/CampMentor.tsx";
 import * as $Case from "./islands/Case.tsx";
@@ -68,6 +70,8 @@ const manifest = {
     "./routes/proxy/image/index.tsx": $proxy_image_index,
   },
   islands: {
+    "./islands/Article.tsx": $Article,
+    "./islands/ButtonTab.tsx": $ButtonTab,
     "./islands/CampHeader.tsx": $CampHeader,
     "./islands/CampMentor.tsx": $CampMentor,
     "./islands/Case.tsx": $Case,
