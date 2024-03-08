@@ -14,15 +14,19 @@ import * as $api_webinar from "./routes/api/webinar.tsx";
 import * as $gfm_css from "./routes/gfm.css.ts";
 import * as $hackathon4 from "./routes/hackathon4.ts";
 import * as $proxy_image_index from "./routes/proxy/image/index.tsx";
+import * as $Article from "./islands/Article.tsx";
+import * as $ButtonTab from "./islands/ButtonTab.tsx";
 import * as $CampHeader from "./islands/CampHeader.tsx";
 import * as $CampMentor from "./islands/CampMentor.tsx";
 import * as $Case from "./islands/Case.tsx";
 import * as $ChangeDevice from "./islands/ChangeDevice.tsx";
 import * as $ChangeTheme from "./islands/ChangeTheme.tsx";
+import * as $ChartIsland from "./islands/ChartIsland.tsx";
 import * as $Cms from "./islands/Cms.tsx";
 import * as $ContactUs from "./islands/ContactUs.tsx";
 import * as $FaviconImage from "./islands/FaviconImage.tsx";
 import * as $ForwardBackButtons_ForwardBackButtons from "./islands/ForwardBackButtons/ForwardBackButtons.tsx";
+import * as $Graph from "./islands/Graph.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $HelpFaq from "./islands/HelpFaq.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
@@ -66,16 +70,20 @@ const manifest = {
     "./routes/proxy/image/index.tsx": $proxy_image_index,
   },
   islands: {
+    "./islands/Article.tsx": $Article,
+    "./islands/ButtonTab.tsx": $ButtonTab,
     "./islands/CampHeader.tsx": $CampHeader,
     "./islands/CampMentor.tsx": $CampMentor,
     "./islands/Case.tsx": $Case,
     "./islands/ChangeDevice.tsx": $ChangeDevice,
     "./islands/ChangeTheme.tsx": $ChangeTheme,
+    "./islands/ChartIsland.tsx": $ChartIsland,
     "./islands/Cms.tsx": $Cms,
     "./islands/ContactUs.tsx": $ContactUs,
     "./islands/FaviconImage.tsx": $FaviconImage,
     "./islands/ForwardBackButtons/ForwardBackButtons.tsx":
       $ForwardBackButtons_ForwardBackButtons,
+    "./islands/Graph.tsx": $Graph,
     "./islands/Header.tsx": $Header,
     "./islands/HelpFaq.tsx": $HelpFaq,
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
