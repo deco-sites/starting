@@ -1,7 +1,6 @@
-import { AppProps } from "$fresh/server.ts";
+import { PageProps } from "$fresh/server.ts";
 import GlobalTags from "deco-sites/starting/components/GlobalTags.tsx";
-
-function App({ Component }: AppProps) {
+function App({ Component }: PageProps) {
   return (
     <>
       <GlobalTags />
