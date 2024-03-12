@@ -27,7 +27,7 @@ function FeatureCard({ cardNumber, text }: Card) {
           </div>
         </div>
       )}
-      <div class="space-y-4 text-center">
+      <div class="text-white space-y-4 text-center">
         <p class="leading-[120%]" dangerouslySetInnerHTML={{ __html: text }} />
       </div>
     </div>

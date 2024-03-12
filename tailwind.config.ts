@@ -1,7 +1,8 @@
 import typography from "typography";
+import daisyui from "daisyui";
 
 export default {
-  plugins: [typography],
+  plugins: [daisyui, typography],
   content: ["./**/*.tsx"],
   theme: {
     // https://tailwindcss.com/docs/container#centering-by-default

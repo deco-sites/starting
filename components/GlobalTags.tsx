@@ -4,10 +4,8 @@ import Theme from "$store/sections/Theme/Theme.tsx";
 export default function GlobalTags() {
   return (
     <>
-      {/* Include default fonts and css vars */}
-      <Theme />
       <Head>
-        <link href={asset("/tailwind.css")} rel="stylesheet" />
+        <link href={asset("/styles.css")} rel="stylesheet" />
         {/* Plausible Analytics */}
         <script
           defer

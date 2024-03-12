@@ -19,9 +19,9 @@ export default function HowItWorks(
         />
 
         {/* Enroll Card */}
-        <div className="w-[1280px] h-[625px] flex justify-center items-center gap-16">
-          <div className="p-16 bg-[#000D0D] rounded-3xl flex-col justify-start items-center gap-10 flex">
-            <h3 className="text-white text-[40px] font-semibold font-['Albert Sans'] leading-4">
+        <div className="w-full px-4 lg:w-[1280px] flex justify-center items-center gap-16">
+          <div className="p-4 sm:p-16 bg-[#000D0D] rounded-3xl flex-col justify-start items-center gap-10 flex text-white">
+            <h3 className="text-white text-[40px] font-semibold font-['Albert Sans'] sm:leading-4 text-center sm:text-left">
               Challenge Timeline
             </h3>
             <div className="divider" />
@@ -67,7 +67,7 @@ export default function HowItWorks(
             <a
               href="https://discord.com/channels/985687648595243068/1215655908630208512"
               target="_blank"
-              className="px-8 py-3 absolute bottom-[56px] bg-[#02F67C] rounded-full justify-start items-center gap-2 inline-flex"
+              className="px-8 py-3 absolute bottom-[23px] sm:bottom-[56px] bg-[#02F67C] rounded-full justify-start items-center gap-2 inline-flex"
             >
               <span className="text-black text-xl font-medium font-['Albert Sans']">
                 Enroll now on Landing Page Contest

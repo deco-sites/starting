@@ -54,7 +54,7 @@ const DEFAULT_PROPS = {
 
 function Question({ question, answer }: Question) {
   return (
-    <details class="collapse collapse-arrow join-item border-t border-base-200">
+    <details class="collapse collapse-arrow join-item border-b first:border-t border-solid border-white">
       <summary class="collapse-title text-lg font-medium">
         {question}
       </summary>
@@ -96,7 +96,7 @@ export default function FAQ(props: Props) {
   return (
     <>
       {(!layout?.variation || layout?.variation === "Compact") && (
-        <div class="w-full container px-4 py-8 flex flex-col gap-4 lg:gap-8 lg:py-10 lg:px-40">
+        <div class="w-full container px-4 py-8 flex flex-col gap-4 lg:gap-8 lg:py-10 lg:px-40 text-white">
           <div class="flex flex-col gap-8 lg:gap-10">
             <Header
               title={title || ""}
@@ -113,7 +113,7 @@ export default function FAQ(props: Props) {
       )}
 
       {layout?.variation === "Full" && (
-        <div class="w-full container px-4 py-8 flex flex-col gap-4 lg:gap-8 lg:py-10 lg:px-0">
+        <div class="w-full container px-4 py-8 flex flex-col gap-4 lg:gap-8 lg:py-10 lg:px-0 text-white">
           <div class="flex flex-col gap-8 lg:gap-10">
             <Header
               title={title || ""}
@@ -130,7 +130,7 @@ export default function FAQ(props: Props) {
       )}
 
       {layout?.variation === "Side to side" && (
-        <div class="w-full container px-4 py-8 grid gap-8 grid-flow-row grid-cols-1 lg:grid-flow-col lg:grid-cols-2 lg:grid-rows-2 lg:py-10 lg:px-0">
+        <div class="w-full container px-4 py-8 grid gap-8 grid-flow-row grid-cols-1 lg:grid-flow-col lg:grid-cols-2 lg:grid-rows-2 lg:py-10 lg:px-0 text-white">
           <div class="order-1 lg:order-1">
             <Header
               title={title || ""}

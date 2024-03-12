@@ -263,11 +263,14 @@ function Section({
     .map(([name, value]) => ({ name, value }));
 
   return (
-    <SiteTheme
-      fonts={font ? [font] : undefined}
-      variables={variables}
-      colorScheme={colorScheme}
-    />
+    <>
+      <SiteTheme
+        fonts={font ? [font] : undefined}
+        variables={variables}
+        colorScheme={colorScheme}
+      />
+    </>
+    
   );
 }
 

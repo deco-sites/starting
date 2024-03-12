@@ -33,6 +33,11 @@ export default function HeroFlats({
 }: Props) {
   return (
     <div>
+      <style dangerouslySetInnerHTML={{__html:`
+      body{
+        background-color: black;
+      }
+      `}}></style>
       <div class="mx-auto flex gap-8">
         <div
           class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
@@ -49,7 +54,7 @@ export default function HeroFlats({
             }`}
           >
             <div
-              class="inline-block text-[80px] leading-[100%] font-medium tracking-[-2.4px]"
+              class="text-white inline-block text-[58px] sm:text-[80px] leading-[100%] font-medium tracking-[-2.4px]"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
@@ -65,7 +70,7 @@ export default function HeroFlats({
                   id={item?.id}
                   href={item?.href}
                   target={item?.href.includes("http") ? "_blank" : "_self"}
-                  class={`group relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out ${
+                  class={`bg-primary group relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out ${
                     item.variant === "Reverse"
                       ? "bg-secondary text-white"
                       : "bg-accent text-black"

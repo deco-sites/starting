@@ -28,7 +28,7 @@ function Header(props: Props) {
               (
                 <h1
                   class={clx(
-                    "text-2xl font-light leading-8 lg:leading-10",
+                    "text-2xl font-light leading-8 lg:leading-10 text-white",
                     props.colorReverse
                       ? "text-primary-content"
                       : "text-base-content",
