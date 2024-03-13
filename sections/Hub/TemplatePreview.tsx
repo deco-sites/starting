@@ -6,7 +6,6 @@ import { Template } from "deco-sites/starting/components/ui/Types.tsx";
 import PageSpeed from "deco-sites/starting/components/ui/PageSpeed.tsx";
 
 import { useState } from "preact/hooks";
-import { template } from "$fresh/src/server/render.ts";
 
 export interface Props {
   lang?: string;
