@@ -175,7 +175,9 @@ export default function ProductsLoader(
 
 # Color Input
 
-The Color Input widget displays a filled circle representing the selected color along with its corresponding hexadecimal value. Users can interact with the widget by clicking on it to open a color picker.
+The Color Input widget displays a filled circle representing the selected color
+along with its corresponding hexadecimal value. Users can interact with the
+widget by clicking on it to open a color picker.
 
 <img src="/docs/widgets/color-input.png" alt="Exemplo color input" width="400"/>
 
@@ -192,7 +194,9 @@ export interface Props {
 
 # Button Group
 
-The Button Group widget allows you to render select options in an icon format, providing a visually appealing way to choose options. Each option is represented by an icon, offering flexibility and customization for your application.
+The Button Group widget allows you to render select options in an icon format,
+providing a visually appealing way to choose options. Each option is represented
+by an icon, offering flexibility and customization for your application.
 
 <img src="/docs/widgets/button-group.png" alt="Exemplo button group" width="400"/>
 
@@ -210,12 +214,16 @@ export interface Props {
 }
 ```
 
-To ensure that icons are available for selection in the widget, it's essential that each icon is explicitly defined as an SVG string in `static/adminIcons.ts` file and exported as a constant:
+To ensure that icons are available for selection in the widget, it's essential
+that each icon is explicitly defined as an SVG string in `static/adminIcons.ts`
+file and exported as a constant:
 
 `mystore/static/adminIcons.ts`
+
 ```ts
 // adminIcons.ts contains all available icons needed for rendering the widget, in a string format.
-export const AlignLeft = `<svg id="AlignLeft" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+export const AlignLeft =
+  `<svg id="AlignLeft" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
 <path ... />
 </svg>`;
 ```
@@ -256,7 +264,10 @@ export default function IconsLoader(
 
 # Icon Select
 
-The Icon Select widget enables you to create a select input for icons, where each option consists of both an icon and its label. This allows users to preview and choose the right icon easily. All icons rendered in the widget must be defined explicitly as SVG strings.
+The Icon Select widget enables you to create a select input for icons, where
+each option consists of both an icon and its label. This allows users to preview
+and choose the right icon easily. All icons rendered in the widget must be
+defined explicitly as SVG strings.
 
 <img src="/docs/widgets/icon-select.png" alt="Exemplo icon select" width="400"/>
 
@@ -274,11 +285,22 @@ export interface Props {
 }
 ```
 
-To ensure all icons are properly integrated and selectable within our widget, each icon from your `static/sprites.svg` file must be explicitly defined as an SVG string and exported from a separate file, `static/adminIcons.ts`. We have streamlined this process with the `generate-icons.ts` script on Deco's storefront template, which automates the conversion of icons from `sprites.svg` into string format and writes them on `adminIcons.ts`. 
+To ensure all icons are properly integrated and selectable within our widget,
+each icon from your `static/sprites.svg` file must be explicitly defined as an
+SVG string and exported from a separate file, `static/adminIcons.ts`. We have
+streamlined this process with the `generate-icons.ts` script on Deco's
+storefront template, which automates the conversion of icons from `sprites.svg`
+into string format and writes them on `adminIcons.ts`.
 
-To add new icons, simply insert them into your `sprites.svg`. Then, stop the project's execution and restart it using `deno task run`. This triggers the `generate-icons.ts` script, updating the `adminIcons.ts` file with the new icons, making them immediately available for selection in the widget. This approach centralizes icon updates to `sprites.svg`, ensuring a smooth update process.
+To add new icons, simply insert them into your `sprites.svg`. Then, stop the
+project's execution and restart it using `deno task run`. This triggers the
+`generate-icons.ts` script, updating the `adminIcons.ts` file with the new
+icons, making them immediately available for selection in the widget. This
+approach centralizes icon updates to `sprites.svg`, ensuring a smooth update
+process.
 
-Be aware that if an icon is not exported as a string on static/adminIcons.ts, it will not be displayed as an option in the selector.
+Be aware that if an icon is not exported as a string on static/adminIcons.ts, it
+will not be displayed as an option in the selector.
 
 `mystore/loaders/availableIcons.ts`
 

@@ -33,11 +33,16 @@ export default function HeroFlats({
 }: Props) {
   return (
     <div>
-      <style dangerouslySetInnerHTML={{__html:`
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
       body{
         background-color: black;
       }
-      `}}></style>
+      `,
+        }}
+      >
+      </style>
       <div class="mx-auto flex gap-8">
         <div
           class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${

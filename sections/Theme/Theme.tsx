@@ -270,7 +270,6 @@ function Section({
         colorScheme={colorScheme}
       />
     </>
-    
   );
 }
 
