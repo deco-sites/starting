@@ -209,6 +209,7 @@ export default function Sidebar({
         isMobile ? "absolute" : "sticky"
       }`}
     >
+      <style dangerouslySetInnerHTML={{__html: `body{background-color: white;}`}}></style>
       <div class="flex gap-2 z-30 relative">
         <MenuButton
           isMenuOpen={isMenuOpen}
