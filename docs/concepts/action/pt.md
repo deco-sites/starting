@@ -34,7 +34,7 @@ export interface Props {
   name?: string;
   page?: string;
   part?: string;
-  campaing?: string;
+  campaign?: string;
 }
 
 const action = async (
@@ -49,14 +49,14 @@ const action = async (
     name = "",
     part = "newsletter",
     page = "_",
-    campaing = "newsletter:opt-in",
+    campaign = "newsletter:opt-in",
   } = props;
 
   form.append("newsletterClientName", name);
   form.append("newsletterClientEmail", email);
   form.append("newsInternalPage", page);
   form.append("newsInternalPart", part);
-  form.append("newsInternalCampaign", campaing);
+  form.append("newsInternalCampaign", campaign);
 
   await vcsDeprecated["POST /no-cache/Newsletter.aspx"]({}, {
     body: form,
