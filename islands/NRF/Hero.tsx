@@ -9,7 +9,7 @@ interface CTA {
   id?: string;
   href: string;
   text: string;
-  variant: "Normal" | "Reverse";
+  variant: "Normal" | "Reverse" | "Product Hunt";
 }
 
 export interface Props {
@@ -35,6 +35,38 @@ export interface Props {
     visible?: boolean;
   };
   hideEditor?: boolean;
+}
+
+function ProductHuntCTA({ id, href }: CTA) {
+  return (
+    <a
+      id={id}
+      href={href}
+      class="bg-white/5 border border-white/[0.15] flex items-center gap-6 p-4 rounded-full"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="41"
+        height="40"
+        viewBox="0 0 41 40"
+        fill="none"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M20.5 40C31.546 40 40.5 31.046 40.5 20C40.5 8.954 31.546 0 20.5 0C9.454 0 0.5 8.954 0.5 20C0.5 31.046 9.454 40 20.5 40ZM17.5 20H23.167C23.9626 20 24.7257 19.6839 25.2883 19.1213C25.8509 18.5587 26.167 17.7956 26.167 17C26.167 16.2044 25.8509 15.4413 25.2883 14.8787C24.7257 14.3161 23.9626 14 23.167 14H17.5V20ZM13.5 10H23.167C25.0235 10 26.804 10.7375 28.1167 12.0503C29.4295 13.363 30.167 15.1435 30.167 17C30.167 18.8565 29.4295 20.637 28.1167 21.9497C26.804 23.2625 25.0235 24 23.167 24H17.5V30H13.5V10Z"
+          fill="white"
+        />
+        <div class="flex flex-col gap-1 text-white font-medium">
+          <p class="text-xs leading-[100%]">Coming April 2nd on</p>
+          <p class="text-xl leading-[100%]">Product Hunt</p>
+        </div>
+        <div class="bg-[#02F67C] text-black px-6 py-2 flex items-center rounded-full">
+          Notify me
+        </div>
+      </svg>
+    </a>
+  );
 }
 
 export default function Hero({
@@ -95,38 +127,39 @@ export default function Hero({
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
-            >
-            </div>
+            ></div>
             {subtitle && (
               <div
                 class="mx-11 inline-block lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none"
                 dangerouslySetInnerHTML={{
                   __html: subtitle,
                 }}
-              >
-              </div>
+              ></div>
             )}
             {cta && (
               <div class="flex flex-col items-center lg:items-start lg:flex-row gap-4">
-                {cta?.map((item) => (
-                  <a
-                    key={item?.id}
-                    id={item?.id}
-                    href={item?.href}
-                    target={item?.href.includes("http") ? "_blank" : "_self"}
-                    class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out ${
-                      item.variant === "Reverse"
-                        ? "bg-[#113032] hover:from-[#113032] hover:to-[#0A1F1F] text-white hover:shadow-hero-reverse"
-                        : "bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero"
-                    }`}
-                  >
-                    <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
-                    </span>
-                    <span class="relative font-medium lg:text-[20px]">
-                      {item?.text}
-                    </span>
-                  </a>
-                ))}
+                {cta?.map((item) =>
+                  item.variant === "Product Hunt" ? (
+                    <ProductHuntCTA {...item} />
+                  ) : (
+                    <a
+                      key={item?.id}
+                      id={item?.id}
+                      href={item?.href}
+                      target={item?.href.includes("http") ? "_blank" : "_self"}
+                      class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out ${
+                        item.variant === "Reverse"
+                          ? "bg-[#113032] hover:from-[#113032] hover:to-[#0A1F1F] text-white hover:shadow-hero-reverse"
+                          : "bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero"
+                      }`}
+                    >
+                      <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
+                      <span class="relative font-medium lg:text-[20px]">
+                        {item?.text}
+                      </span>
+                    </a>
+                  )
+                )}
                 {demo?.visible && (
                   <button
                     id={demo?.id}
@@ -136,8 +169,7 @@ export default function Hero({
                     }}
                     class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#DA8FFF] hover:from-[#DA8FFF] hover:to-[#DA8FFF] text-[113032] hover:shadow-watch-our-demo`}
                   >
-                    <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
-                    </span>
+                    <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
                     <span class="relative font-medium lg:text-[20px]">
                       {demo?.title || "Watch our demo"}
                     </span>
@@ -176,8 +208,7 @@ export default function Hero({
                       allow="autoplay; fullscreen; picture-in-picture"
                       style="position:absolute;top:0;left:0;width:100%;height:100%;"
                       title="deco.cx | The open-source frontend platform for pros"
-                    >
-                    </iframe>
+                    ></iframe>
                   </div>
                 </div>
               </div>
