@@ -42,7 +42,7 @@ function ProductHuntCTA({ id, href }: CTA) {
     <a
       id={id}
       href={href}
-      class="bg-white/5 border border-white/[0.15] flex items-center gap-6 p-4 rounded-full"
+      class="bg-white/5 border border-white/[0.15] flex items-center gap-6 p-4 rounded-full backdrop-blur-xl"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -57,14 +57,14 @@ function ProductHuntCTA({ id, href }: CTA) {
           d="M20.5 40C31.546 40 40.5 31.046 40.5 20C40.5 8.954 31.546 0 20.5 0C9.454 0 0.5 8.954 0.5 20C0.5 31.046 9.454 40 20.5 40ZM17.5 20H23.167C23.9626 20 24.7257 19.6839 25.2883 19.1213C25.8509 18.5587 26.167 17.7956 26.167 17C26.167 16.2044 25.8509 15.4413 25.2883 14.8787C24.7257 14.3161 23.9626 14 23.167 14H17.5V20ZM13.5 10H23.167C25.0235 10 26.804 10.7375 28.1167 12.0503C29.4295 13.363 30.167 15.1435 30.167 17C30.167 18.8565 29.4295 20.637 28.1167 21.9497C26.804 23.2625 25.0235 24 23.167 24H17.5V30H13.5V10Z"
           fill="white"
         />
-        <div class="flex flex-col gap-1 text-white font-medium">
-          <p class="text-xs leading-[100%]">Coming April 2nd on</p>
-          <p class="text-xl leading-[100%]">Product Hunt</p>
-        </div>
-        <div class="bg-[#02F67C] text-black px-6 py-2 flex items-center rounded-full">
-          Notify me
-        </div>
       </svg>
+      <div class="flex flex-col gap-1 text-white font-medium">
+        <p class="text-xs leading-[100%]">Coming April 2nd on</p>
+        <p class="text-xl leading-[100%]">Product Hunt</p>
+      </div>
+      <div class="bg-[#02F67C] text-black px-6 py-2 flex items-center rounded-full">
+        Notify me
+      </div>
     </a>
   );
 }
