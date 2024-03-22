@@ -1,60 +1,42 @@
-export default function Why() {
+const fontStyles = `
+  .cormorant-garamond-light {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    .cormorant-garamond-medium-italic {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 500;
+      font-style: italic;
+    }
+`;
+
+export interface Props {
+  title: string;
+  paragraphs: string[];
+}
+
+export default function Why({ title, paragraphs }: Props) {
   return (
-    <div class="flex justify-center w-100 min-h-[900px]">
-      <div class="text-white p-8 max-w-2xl">
+    <div className="flex justify-center items-center min-h-screen w-100 min-h-[900px]">
+      <div className="text-white p-8 max-w-2xl">
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,500&display=swap"
           rel="stylesheet"
         />
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-            .cormorant-garamond-light {
-                font-family: "Cormorant Garamond", serif;
-                font-weight: 300;
-                font-style: normal;
-              }
-              
-              .cormorant-garamond-medium-italic {
-                font-family: "Cormorant Garamond", serif;
-                font-weight: 500;
-                font-style: italic;
-              }
-              `,
-          }}
-        />
-        <h1 class="text-[7rem] cormorant-garamond-medium-italic text-primary mb-6">
-          Why We Web
+        <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
+        <h1 className="text-5xl md:text-7xl lg:text-[7rem] cormorant-garamond-medium-italic text-primary mb-6">
+          {title}
         </h1>
-        <div class="text-xl">
-        <p class="mb-4">
-          We built the web with audacious ambitions: to wire the world, to
-          connect every human mind, to accelerate progress. But, as we advanced,
-          web development got tangled in complexity. What was once
-          straightforward now feels like navigating a maze of frameworks and
-          services, making it harder for new voices and ideas to emerge.
-        </p>
-        <p class="mb-4">
-          The need to simplify is urgent. Web development shouldn't feel like a
-          boring puzzle. It should be easy and fun. It should be scalable and
-          observable by default. It should be realtime and collaborative. It
-          should give anyone the autonomy to test new ideas and evolve without
-          fear of "breaking". And it should just work.
-        </p>
-        <p class="mb-4">
-          With AI, TypeScript, modern browsers, fast runtimes, and affordable
-          edge infrastructure, the web is ready for a breakthrough. This is an
-          invitation for the contrarians, the doers, the ones eager to make
-          their mark: it’s time to cut through the clutter, to build the simpler
-          tools we deserve. It's time to "get site done."
-        </p>
+        <div className="md:text-lg lg:text-xl">
+          {paragraphs.map((paragraph) => <p className="mb-4">{paragraph}</p>)}
         </div>
 
-        <div class="flex justify-between items-center w-100 mt-8">
+        <div className="flex justify-between items-center w-100 mt-8">
           <a href="https://deco.cx" target="_blank">
             <svg
-              width="144"
-              height="40"
+              class="h-5 lg:h-10"
               viewBox="0 0 72 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +51,7 @@ export default function Why() {
               />
             </svg>
           </a>
-          <h1 class="text-white py-2 px-4 rounded text-5xl cormorant-garamond-light">
+          <h1 className="text-white py-2 px-4 rounded text-2xl lg:text-5xl cormorant-garamond-light">
             Get site done.
           </h1>
         </div>
