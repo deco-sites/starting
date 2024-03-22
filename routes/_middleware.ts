@@ -9,6 +9,12 @@ export async function handler(
   ctx: FreshContext<State>,
 ) {
   const url = new URL(req.url);
+
+  // Redirect www.deco.cx to deco.cx
+  if (url.hostname === "www.deco.cx") {
+    return Response.redirect(`https://deco.cx${url.pathname}${url.search}`, 302);
+  }
+
   const response = await ctx.next();
   if (!url.pathname.startsWith("/decocamp")) {
     return response;
