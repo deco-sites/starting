@@ -19,7 +19,7 @@ export interface Props {
 
 export default function Why({ title, paragraphs }: Props) {
   return (
-    <div className="flex justify-center items-center min-h-screen w-100 min-h-[900px]">
+    <div className="flex justify-center items-center min-h-screen w-100 min-h-[900px] relative z-10">
       <div className="text-white p-8 max-w-2xl">
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,500&display=swap"
@@ -29,7 +29,7 @@ export default function Why({ title, paragraphs }: Props) {
         <h1 className="text-5xl md:text-7xl lg:text-[7rem] cormorant-garamond-medium-italic text-primary mb-6">
           {title}
         </h1>
-        <div className="md:text-lg lg:text-xl">
+        <div className="md:text-lg">
           {paragraphs.map((paragraph) => <p className="mb-4">{paragraph}</p>)}
         </div>
 
