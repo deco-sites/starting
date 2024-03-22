@@ -26,6 +26,7 @@ export default function Why() {
         <h1 class="text-[7rem] cormorant-garamond-medium-italic text-primary mb-6">
           Why We Web
         </h1>
+        <div class="text-xl">
         <p class="mb-4">
           We built the web with audacious ambitions: to wire the world, to
           connect every human mind, to accelerate progress. But, as we advanced,
@@ -47,6 +48,7 @@ export default function Why() {
           their mark: it’s time to cut through the clutter, to build the simpler
           tools we deserve. It's time to "get site done."
         </p>
+        </div>
 
         <div class="flex justify-between items-center w-100 mt-8">
           <a href="https://deco.cx" target="_blank">
