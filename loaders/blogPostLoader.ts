@@ -1,4 +1,4 @@
-import { PostList } from "site/components/utils/Blog.ts";
+import { PostList } from "deco-sites/starting/components/utils/Blog.ts";
 
 export type Props = {
   list: PostList;

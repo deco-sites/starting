@@ -1,13 +1,13 @@
 import { IS_BROWSER } from "https://deno.land/x/fresh@1.1.4/src/runtime/utils.ts";
-import Slider from "site/components/ui/Slider2.tsx";
-import SliderJS from "site/islands/SliderJS.tsx";
+import Slider from "deco-sites/starting/components/ui/Slider2.tsx";
+import SliderJS from "deco-sites/starting/islands/SliderJS.tsx";
 import { useSignal } from "@preact/signals";
 import { useState } from "preact/hooks";
-import { useId } from "site/sdk/useId.ts";
-import { Dropdown } from "site/components/ui/Dropdown.tsx";
+import { useId } from "deco-sites/starting/sdk/useId.ts";
+import { Dropdown } from "deco-sites/starting/components/ui/Dropdown.tsx";
 import GithubStargazes, {
   GithubStargazesProps,
-} from "site/components/ui/GithubStargazers.tsx";
+} from "deco-sites/starting/components/ui/GithubStargazers.tsx";
 
 export interface Alert {
   github?: GithubStargazesProps;

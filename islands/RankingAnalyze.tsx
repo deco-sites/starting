@@ -1,1 +1,1 @@
-export { default } from "site/components/ranking/AnalyzeForm.tsx";
+export { default } from "deco-sites/starting/components/ranking/AnalyzeForm.tsx";

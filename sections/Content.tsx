@@ -1,2 +1,2 @@
-export { default } from "site/components/decohelp/pages/ui/Content/Content.tsx";
-export type { Props } from "site/components/decohelp/pages/interfaces.ts";
+export { default } from "deco-sites/starting/components/decohelp/pages/ui/Content/Content.tsx";
+export type { Props } from "deco-sites/starting/components/decohelp/pages/interfaces.ts";

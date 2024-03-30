@@ -1,1 +1,1 @@
-export { default } from "site/components/decohelp/help/PopularDocuments/PopularDocuments.tsx";
+export { default } from "deco-sites/starting/components/decohelp/help/PopularDocuments/PopularDocuments.tsx";

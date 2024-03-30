@@ -1,5 +1,5 @@
-import ReCAPTCHA from "site/sections/ReCAPTCHA.tsx";
-import { RECAPTCHA_SITE_KEY } from "site/sdk/recaptcha.ts";
+import ReCAPTCHA from "deco-sites/starting/sections/ReCAPTCHA.tsx";
+import { RECAPTCHA_SITE_KEY } from "deco-sites/starting/sdk/recaptcha.ts";
 
 export interface listItem {
   title?: string;

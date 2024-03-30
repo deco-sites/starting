@@ -1,1 +1,1 @@
-export { default } from "site/islands/NRF/FeaturesWithImage.tsx";
+export { default } from "deco-sites/starting/islands/NRF/FeaturesWithImage.tsx";

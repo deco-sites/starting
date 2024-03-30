@@ -1,8 +1,8 @@
 import {
   Post,
   SupportedLocales,
-} from "site/components/utils/Blog.ts";
-import { getAspectRatio } from "site/sdk/utils.ts";
+} from "deco-sites/starting/components/utils/Blog.ts";
+import { getAspectRatio } from "deco-sites/starting/sdk/utils.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 
 const IMAGE_WIDTH = 360;

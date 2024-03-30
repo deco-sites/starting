@@ -1,1 +1,1 @@
-export { default } from "site/components/ui/ImpactCalculator.tsx";
+export { default } from "deco-sites/starting/components/ui/ImpactCalculator.tsx";

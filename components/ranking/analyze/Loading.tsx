@@ -1,5 +1,5 @@
 import { AnalyzeFormTranslation } from "../AnalyzeForm.tsx";
-import Spinner from "site/components/ui/Spinner.tsx";
+import Spinner from "deco-sites/starting/components/ui/Spinner.tsx";
 
 export interface Props {
   translations: AnalyzeFormTranslation;

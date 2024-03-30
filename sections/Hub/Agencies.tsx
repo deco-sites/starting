@@ -1,8 +1,8 @@
 import Image from "deco-sites/std/components/Image.tsx";
-import Header from "site/components/ui/SectionHeader.tsx";
+import Header from "deco-sites/starting/components/ui/SectionHeader.tsx";
 import { useMemo } from "preact/hooks";
 import type { Image as ImageType } from "deco-sites/std/components/types.ts";
-import Share from "site/components/ui/Share.tsx";
+import Share from "deco-sites/starting/components/ui/Share.tsx";
 import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
 
 export interface Image {

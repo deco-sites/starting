@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
 import { JSX } from "preact";
-import Spinner from "site/components/ui/Spinner.tsx";
-import Icon from "site/components/ui/Icon.tsx";
+import Spinner from "deco-sites/starting/components/ui/Spinner.tsx";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface Props {
   mainText: string;

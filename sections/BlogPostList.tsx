@@ -3,9 +3,9 @@ import {
   getBlogPath,
   PostList,
   SupportedLocales,
-} from "site/components/utils/Blog.ts";
-import { BlogPostCard } from "site/components/blog/PostCard.tsx";
-import FeaturedPost from "site/components/blog/FeaturedPost.tsx";
+} from "deco-sites/starting/components/utils/Blog.ts";
+import { BlogPostCard } from "deco-sites/starting/components/blog/PostCard.tsx";
+import FeaturedPost from "deco-sites/starting/components/blog/FeaturedPost.tsx";
 
 export type Props = {
   postList: LoaderReturnType<PostList>;

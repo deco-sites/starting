@@ -1,4 +1,4 @@
 export {
   default,
   type Props,
-} from "site/components/camp/Dnd/DndPanel.tsx";
+} from "deco-sites/starting/components/camp/Dnd/DndPanel.tsx";

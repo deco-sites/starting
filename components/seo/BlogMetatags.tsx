@@ -1,6 +1,6 @@
 import Preview from "deco-sites/std/components/seo/components/Preview.tsx";
 import { Head } from "$fresh/runtime.ts";
-import { Post } from "site/components/utils/Blog.ts";
+import { Post } from "deco-sites/starting/components/utils/Blog.ts";
 import type { Props as SEOProps } from "deco-sites/std/components/seo/types.ts";
 interface Props extends Omit<SEOProps, "context"> {
   context?: Post & { seo: SEOProps } | null;

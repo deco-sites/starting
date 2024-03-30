@@ -1,6 +1,6 @@
 import Carousel, {
   Props,
-} from "site/components/ui/Carousel.tsx";
+} from "deco-sites/starting/components/ui/Carousel.tsx";
 
 function CarouselSection(props: Props) {
   return <Carousel {...props} />;

@@ -1,4 +1,4 @@
-import RegistrationStepsHeader from "site/components/camp/registrationForm/registrationSteps/RegistrationStepsHeader.tsx";
+import RegistrationStepsHeader from "deco-sites/starting/components/camp/registrationForm/registrationSteps/RegistrationStepsHeader.tsx";
 
 const registrationSteps = [
   {

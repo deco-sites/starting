@@ -1,6 +1,6 @@
 import { FunctionalComponent } from "preact";
-import { useBreadcrumbState } from "site/components/decohelp/pages/hooks/useBreadcrumbState.ts";
-import Icon from "site/components/ui/Icon.tsx";
+import { useBreadcrumbState } from "deco-sites/starting/components/decohelp/pages/hooks/useBreadcrumbState.ts";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 
 interface BreadcrumbProps {
   homeLabel: string;

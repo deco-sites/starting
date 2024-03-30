@@ -1,5 +1,5 @@
-import HeaderIsland, { MenuLink } from "site/islands/Header.tsx";
-import { GithubStargazesProps } from "site/components/ui/GithubStargazers.tsx";
+import HeaderIsland, { MenuLink } from "deco-sites/starting/islands/Header.tsx";
+import { GithubStargazesProps } from "deco-sites/starting/components/ui/GithubStargazers.tsx";
 
 export interface Alert {
   github?: GithubStargazesProps;

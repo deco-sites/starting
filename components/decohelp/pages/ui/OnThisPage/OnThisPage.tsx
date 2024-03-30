@@ -1,4 +1,4 @@
-import useMenuState from "site/components/decohelp/pages/hooks/useMenuState.ts";
+import useMenuState from "deco-sites/starting/components/decohelp/pages/hooks/useMenuState.ts";
 import { useEffect, useState } from "preact/hooks";
 
 interface OnThisPage {

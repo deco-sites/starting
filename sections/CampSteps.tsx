@@ -1,1 +1,1 @@
-export { default } from "site/components/camp/steps/Steps.tsx";
+export { default } from "deco-sites/starting/components/camp/steps/Steps.tsx";

@@ -1,4 +1,4 @@
-import Icon from "site/components/ui/Icon.tsx";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 
 interface ShowMoreButtonProps {
   onClick: () => void;

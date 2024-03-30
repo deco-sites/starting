@@ -1,17 +1,17 @@
 import { useEffect } from "preact/hooks";
 import { animate, inView, scroll, stagger, timeline } from "motion";
 
-import { ComponentLibrary } from "site/components/nrf/editor/ComponentLibrary.tsx";
-import { RealtimeEditor } from "site/components/nrf/editor/RealtimeEditor.tsx";
+import { ComponentLibrary } from "deco-sites/starting/components/nrf/editor/ComponentLibrary.tsx";
+import { RealtimeEditor } from "deco-sites/starting/components/nrf/editor/RealtimeEditor.tsx";
 import { DesignSystem } from "../../components/nrf/editor/DesignSystem.tsx";
-import { FullCode } from "site/components/nrf/editor/FullCode.tsx";
-import { AppsIntegrations } from "site/components/nrf/editor/AppsIntegrations.tsx";
-import { Segmentation } from "site/components/nrf/editor/Segmentation.tsx";
-import { ContentModeling } from "site/components/nrf/editor/ContentModeling.tsx";
+import { FullCode } from "deco-sites/starting/components/nrf/editor/FullCode.tsx";
+import { AppsIntegrations } from "deco-sites/starting/components/nrf/editor/AppsIntegrations.tsx";
+import { Segmentation } from "deco-sites/starting/components/nrf/editor/Segmentation.tsx";
+import { ContentModeling } from "deco-sites/starting/components/nrf/editor/ContentModeling.tsx";
 
-import { Analytics } from "site/components/nrf/editor/Analytics.tsx";
+import { Analytics } from "deco-sites/starting/components/nrf/editor/Analytics.tsx";
 
-import { EDITOR_TIMELINES } from "site/animations/timelines/editor.ts";
+import { EDITOR_TIMELINES } from "deco-sites/starting/animations/timelines/editor.ts";
 
 /**
  * @title {{{key}}}

@@ -22,7 +22,7 @@ salvas.
 
 Essas entidades salvas podem ser criadas a partir dos blocos de loaders.
 
-![Criando um loader](https://github.com/site/assets/882438/47c63784-4839-4d97-aff4-8c1e8e18332a)
+![Criando um loader](https://github.com/deco-sites/starting/assets/882438/47c63784-4839-4d97-aff4-8c1e8e18332a)
 
 Ao salvar um loader, o mesmo é garantido poder ser reutilizado em diferentes
 sections. Além de permitir alterar as props e ter isto refletido em todos os
@@ -35,7 +35,7 @@ detalhes de SEO como para a exibição do produto em si. Ao utilizar o mesmo
 loader, a deco otimiza para que o loader seja executado apenas uma vez durante o
 ciclo de renderização da página.
 
-![image](https://github.com/site/assets/882438/a39e3806-89e4-4b22-a179-491c048b18f7)
+![image](https://github.com/deco-sites/starting/assets/882438/a39e3806-89e4-4b22-a179-491c048b18f7)
 
 # Não faça `fetchs` em inline loaders
 
@@ -54,4 +54,4 @@ apenas uma vez ou no melhor momento para o sistema.
 
 # Deferred Section
 
-![image](https://github.com/site/assets/882438/06b0fde3-874f-4b26-84b5-d4a41c94e5de)
+![image](https://github.com/deco-sites/starting/assets/882438/06b0fde3-874f-4b26-84b5-d4a41c94e5de)

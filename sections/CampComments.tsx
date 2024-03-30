@@ -1,4 +1,4 @@
-import CommentsSection from "site/components/camp/comments/CommentsSection.tsx";
+import CommentsSection from "deco-sites/starting/components/camp/comments/CommentsSection.tsx";
 
 function CampComment() {
   return <CommentsSection />;

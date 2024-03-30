@@ -1,4 +1,4 @@
-import { AnimationTimeline } from "site/animations/utils.ts";
+import { AnimationTimeline } from "deco-sites/starting/animations/utils.ts";
 
 const COMPONENT_LIBRARY_SEQUENCE: AnimationTimeline = [
   [

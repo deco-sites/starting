@@ -1,7 +1,7 @@
 import Image from "deco-sites/std/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import ShowMoreButton from "site/components/decohelp/help/ui/Button/ShowMore.tsx";
-import { useCards } from "site/components/decohelp/help/PopularDocuments/useCards.ts";
+import ShowMoreButton from "deco-sites/starting/components/decohelp/help/ui/Button/ShowMore.tsx";
+import { useCards } from "deco-sites/starting/components/decohelp/help/PopularDocuments/useCards.ts";
 
 export interface Card {
   href: string;

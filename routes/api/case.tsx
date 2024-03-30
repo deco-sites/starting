@@ -2,7 +2,7 @@ import type { Handlers } from "$fresh/server.ts";
 import getSupabaseClient from "deco/supabase.ts";
 
 import type { DecoState } from "deco/types.ts";
-import { verifyCaptcha } from "site/sdk/recaptcha.ts";
+import { verifyCaptcha } from "deco-sites/starting/sdk/recaptcha.ts";
 
 const ZAPIER_WEBHOOK = Deno.env.get("ZAPIER_WEBHOOK_CASE");
 

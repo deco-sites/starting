@@ -1,9 +1,9 @@
 import { useEffect, useState } from "preact/hooks";
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
-import Icon from "site/components/ui/Icon.tsx";
-import MenuButton from "site/components/decohelp/pages/ui/Sidebar/MenuButton.tsx";
-import useMenuState from "site/components/decohelp/pages/hooks/useMenuState.ts";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import MenuButton from "deco-sites/starting/components/decohelp/pages/ui/Sidebar/MenuButton.tsx";
+import useMenuState from "deco-sites/starting/components/decohelp/pages/hooks/useMenuState.ts";
 import SearchButton from "./SearchButton.tsx";
 
 export interface SidebarContent {
