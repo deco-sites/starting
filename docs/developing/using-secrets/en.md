@@ -30,7 +30,7 @@ export interface Props {
 }
 
 export const loader = async (props: Props) => {
-  const secretValue = await props?.secret?.get();
+  const secretValue = props?.secret?.get();
   // Use secret here
 };
 ```
