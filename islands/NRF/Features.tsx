@@ -2,7 +2,7 @@ import { useEffect } from "preact/hooks";
 import { animate, inView, stagger } from "https://esm.sh/motion@10.16.4";
 import Icon, {
   AvailableIcons,
-} from "deco-sites/starting/components/ui/Icon.tsx";
+} from "site/components/ui/Icon.tsx";
 
 export interface Card {
   icon?: AvailableIcons;

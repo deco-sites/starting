@@ -1,6 +1,6 @@
-import ImpactCalculator from "deco-sites/starting/islands/ImpactCalculator.tsx";
+import ImpactCalculator from "site/islands/ImpactCalculator.tsx";
 
-import type { Props } from "deco-sites/starting/components/ui/ImpactCalculator.tsx";
+import type { Props } from "site/components/ui/ImpactCalculator.tsx";
 
 function ImpactCalculatorSection(props: Props) {
   return <ImpactCalculator {...props} />;

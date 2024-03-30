@@ -1,4 +1,4 @@
-import Header from "deco-sites/starting/sections/PageContest/SectionHeader.tsx";
+import Header from "site/sections/PageContest/SectionHeader.tsx";
 
 export interface Question {
   question: string;

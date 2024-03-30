@@ -1,1 +1,1 @@
-export { default } from "deco-sites/starting/sections/Hub/TemplatePreview.tsx";
+export { default } from "site/sections/Hub/TemplatePreview.tsx";

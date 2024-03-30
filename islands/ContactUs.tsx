@@ -1,1 +1,1 @@
-export { default } from "deco-sites/starting/components/ui/ContactUs.tsx";
+export { default } from "site/components/ui/ContactUs.tsx";

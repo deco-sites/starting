@@ -41,7 +41,7 @@ ferramentas que ajudam neste processo. Entenda como e quando utilizá-las.
 
 ## Testando localmente
 
-![Exemplo de uso de ferramentas do browser para depuração](https://github.com/deco-sites/starting/assets/882438/bf441a9a-5af7-4c83-aa4a-c409c2cfb84c)
+![Exemplo de uso de ferramentas do browser para depuração](https://github.com/site/assets/882438/bf441a9a-5af7-4c83-aa4a-c409c2cfb84c)
 
 **Sempre teste localmente a sua página, section, loader ou action. Por vezes,
 não precisa ser um teste estruturado**. Se já estiver lento para você, já estará
@@ -55,7 +55,7 @@ abaixo:
 
 ## Teste de pagespeed
 
-![Exemplo de teste no pagespeed](https://github.com/deco-sites/starting/assets/882438/35d915a9-1fa0-4c87-b5b5-74cd60bec8f0)
+![Exemplo de teste no pagespeed](https://github.com/site/assets/882438/35d915a9-1fa0-4c87-b5b5-74cd60bec8f0)
 
 O [pagespeed](https://pagespeed.web.dev/) é uma ferramenta de teste desenvolvida
 pela google para avaliar principais aspectos de desempenho de uma página.
@@ -83,7 +83,7 @@ para o desempenho da página o quanto antes.
 
 ## Teste de métricas deco
 
-![Exemplos de métricas deco](https://github.com/deco-sites/starting/assets/882438/af592b39-0f4d-405f-a0c6-a212b1677058)
+![Exemplos de métricas deco](https://github.com/site/assets/882438/af592b39-0f4d-405f-a0c6-a212b1677058)
 
 Por padrão a deco oferece um conjunto de métricas que são avaliadas em uma
 página. Estas métricas são especializadas especialmente para sistemas como a
@@ -108,7 +108,7 @@ operando em redes ou situações de baixa capacidade de banda.
 
 ## Teste do Core Web Vitals
 
-![Exemplo de teste do CWV](https://github.com/deco-sites/starting/assets/882438/f911058f-34b4-4c49-a24b-9351d630a752)
+![Exemplo de teste do CWV](https://github.com/site/assets/882438/f911058f-34b4-4c49-a24b-9351d630a752)
 
 Até agora, exploramos apenas testes sintéticos, ou seja, testes que são
 realizados de maneira artificial e que são apenas uma aproximação do mundo real.

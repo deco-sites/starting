@@ -1,5 +1,5 @@
 import type { LoaderFunction } from "deco/types.ts";
-import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
+import type { Site } from "site/routes/api/ranking.ts";
 import { ranking } from "../routes/api/ranking.ts";
 
 /**

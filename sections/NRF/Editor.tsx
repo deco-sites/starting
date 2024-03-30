@@ -1,1 +1,1 @@
-export { default } from "deco-sites/starting/islands/NRF/Editor.tsx";
+export { default } from "site/islands/NRF/Editor.tsx";

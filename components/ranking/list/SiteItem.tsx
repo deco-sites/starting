@@ -1,8 +1,8 @@
-import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
-import FaviconImage from "deco-sites/starting/islands/FaviconImage.tsx";
+import type { Site } from "site/routes/api/ranking.ts";
+import FaviconImage from "site/islands/FaviconImage.tsx";
 import Icon, {
   AvailableIcons,
-} from "deco-sites/starting/components/ui/Icon.tsx";
+} from "site/components/ui/Icon.tsx";
 
 export interface Props {
   site: Site;

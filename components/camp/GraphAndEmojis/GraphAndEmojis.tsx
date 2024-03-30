@@ -34,8 +34,9 @@ const BASE_PROPS = {
   },
 };
 
+const discordToken = Deno.env.get("DISCORD_TOKEN");
 export async function loader({ props }: { props: Props }, _req: Request) {
-  const token = props.graph.tokenDiscord;
+  const token = props.graph.tokenDiscord ?? discordToken;
   const server = props.graph.IdGuild;
 
   interface MemberGuid {

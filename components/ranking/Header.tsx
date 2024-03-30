@@ -1,4 +1,4 @@
-import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import type { Language } from "./ui/LanguageSwitcher.tsx";
 import { LanguageSwitcher } from "./ui/LanguageSwitcher.tsx";
 import { Head } from "$fresh/runtime.ts";

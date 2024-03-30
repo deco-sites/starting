@@ -51,7 +51,7 @@ applications running on port 8000.
 In the site repository, check for a marker related to the latest commit. The
 deploy should have been successful for the code to be considered in production:
 
-![Successful deploy](https://github.com/deco-sites/starting/assets/882438/6f4e853f-23bf-4ed1-9f4f-b16a97690a6a).
+![Successful deploy](https://github.com/site/assets/882438/6f4e853f-23bf-4ed1-9f4f-b16a97690a6a).
 
 In case of failure, hover over the error indication to see a description of the
 problem.

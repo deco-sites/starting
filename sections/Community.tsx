@@ -1,6 +1,6 @@
 import Community, {
   Props,
-} from "deco-sites/starting/components/ui/Community.tsx";
+} from "site/components/ui/Community.tsx";
 
 function CommunitySection(props: Props) {
   return <Community {...props} />;

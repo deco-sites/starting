@@ -1,7 +1,7 @@
 import {
   HeroEditorTabbed,
   Tab,
-} from "deco-sites/starting/islands/NRF/HeroEditorTabbed.tsx";
+} from "site/islands/NRF/HeroEditorTabbed.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { useSignal } from "@preact/signals";
 

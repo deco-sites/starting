@@ -1,11 +1,11 @@
 import { Head } from "$fresh/runtime.ts";
 import { LoaderReturnType } from "deco/types.ts";
-import { MDFileContent } from "deco-sites/starting/components/ui/Types.tsx";
+import { MDFileContent } from "site/components/ui/Types.tsx";
 
 import {
   frontMatter,
   gfm,
-} from "deco-sites/starting/components/utils/markdown.ts";
+} from "site/components/utils/markdown.ts";
 
 interface FrontMatterContent {
   body: string;

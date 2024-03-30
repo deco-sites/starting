@@ -62,7 +62,7 @@ Depois disso, o `proxy.minhaloja.com` será a `URL Pública da Loja` necessária
 próxima etapa.
 
 A arquitetura final da configuração é:
-<img width="1066" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
+<img width="1066" alt="imagem" src="https://github.com/site/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
 
 **Importante:** Ao criar a URL secundária, você deve adicionar um
 `<meta name="robots" content="noindex">` no `<head>` após o Go Live para evitar
@@ -77,7 +77,7 @@ Para se conectar à sua conta na VTEX:
 2. Na barra superior, selecione _blocos_.
 3. Escolha a guia _Apps_.
 4. Selecione o app **vtex.ts** Você verá algo como:
-   <img width="580" alt="imagem" src="https://github.com/deco-sites/starting/assets/76620866/3a9fe86d-089a-41a6-84b5-d371a90a3a11">
+   <img width="580" alt="imagem" src="https://github.com/site/assets/76620866/3a9fe86d-089a-41a6-84b5-d371a90a3a11">
 
 5. Altere a configuração da conta de `bravtexfashionstore` para o nome da sua
    conta VTEX
@@ -98,26 +98,26 @@ website.
    [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
 2. Na barra superior, selecione _blocos_.
 3. Selecione o bloco `/Products/ProductShelf.tsx` e clique no botão `+`.
-   <img width="480" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">
+   <img width="480" alt="imagem" src="https://github.com/site/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">
 
 4. No campo `products`, selecione qualquer integração VTEX (legacy ou
    Intelligent Search).
-   <img width="434" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/9e084af6-db18-472e-92ac-7255bc4d9705">
+   <img width="434" alt="imagem" src="https://github.com/site/assets/1753396/9e084af6-db18-472e-92ac-7255bc4d9705">
 
 5. Preencha o campo `Collection ID` com uma coleção válida, por exemplo, 139.
 6. Preencha o atributo `count` com o número de produtos a serem exibidos,
    digamos 6.
-   <img width="349" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/df0794a8-fbcc-4c74-915e-ba13e179e9a7">
+   <img width="349" alt="imagem" src="https://github.com/site/assets/1753396/df0794a8-fbcc-4c74-915e-ba13e179e9a7">
 
 7. Agora, no canto superior direito, clique em `Criar` e dê um nome, por
    exemplo, `Coleção 139`.
-   <img width="577" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/97720584-3206-4457-8972-a719323962c4">
+   <img width="577" alt="imagem" src="https://github.com/site/assets/1753396/97720584-3206-4457-8972-a719323962c4">
 
 8. No canto superior direito, clique em `Publicar`.
 9. Agora você pode arrastar e soltar
 
 o bloco `Coleção 139` em qualquer página.
-<img width="1504" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/bfc74614-b44b-45a9-b1e6-2465e0149ac4">
+<img width="1504" alt="imagem" src="https://github.com/site/assets/1753396/bfc74614-b44b-45a9-b1e6-2465e0149ac4">
 
 # Solução de problemas
 

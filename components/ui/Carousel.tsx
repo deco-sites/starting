@@ -1,13 +1,13 @@
 import { useId } from "preact/hooks";
 import Image from "deco-sites/std/components/Image.tsx";
-import Slider from "deco-sites/starting/components/ui/Slider.tsx";
-import SliderControllerJS from "deco-sites/starting/islands/SliderJS.tsx";
-import { getAspectRatio } from "deco-sites/starting/sdk/utils.ts";
+import Slider from "site/components/ui/Slider.tsx";
+import SliderControllerJS from "site/islands/SliderJS.tsx";
+import { getAspectRatio } from "site/sdk/utils.ts";
 import {
   getBlogPath,
   Post,
   SupportedLocales,
-} from "deco-sites/starting/components/utils/Blog.ts";
+} from "site/components/utils/Blog.ts";
 
 const IMAGE_WIDTH = 360;
 

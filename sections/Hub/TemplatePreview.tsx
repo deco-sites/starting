@@ -1,9 +1,9 @@
 import IconArrowLeft from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/arrow-left.tsx";
 import Icon, {
   AvailableIcons,
-} from "deco-sites/starting/components/ui/Icon.tsx";
-import { Template } from "deco-sites/starting/components/ui/Types.tsx";
-import PageSpeed from "deco-sites/starting/components/ui/PageSpeed.tsx";
+} from "site/components/ui/Icon.tsx";
+import { Template } from "site/components/ui/Types.tsx";
+import PageSpeed from "site/components/ui/PageSpeed.tsx";
 
 import { useState } from "preact/hooks";
 

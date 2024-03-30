@@ -1,4 +1,4 @@
-import Button from "deco-sites/starting/components/ui/Button.tsx";
+import Button from "site/components/ui/Button.tsx";
 
 export interface Props {
   price: string;

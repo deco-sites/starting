@@ -58,7 +58,7 @@ After that, the `proxy.mystore.com` will be the `Public store URL` required on
 the next step
 
 The final architecture of the setup is:
-<img width="1066" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
+<img width="1066" alt="image" src="https://github.com/site/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
 
 **Important:** When creating a secondary URL, you should add a
 `<meta name="robots" content="noindex">` in the `<head>` after Go Live to avoid
@@ -73,7 +73,7 @@ To connect to your VTEX account:
 2. On the topbar, select _blocks_
 3. Choose the _Apps_ tab
 4. Select the **vtex** app. You should see something like:
-   <img width="580" alt="image" src="https://github.com/deco-sites/starting/assets/76620866/3a9fe86d-089a-41a6-84b5-d371a90a3a11">
+   <img width="580" alt="image" src="https://github.com/site/assets/76620866/3a9fe86d-089a-41a6-84b5-d371a90a3a11">
 
 5. Change the account configuration from `bravtexfashionstore` to your VTEX
    [account name](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC)
@@ -92,24 +92,24 @@ After the VTEX setup is complete, try adding a shelf to your webiste.
    [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
 2. On the topbar, select _blocks_
 3. Select the block `/Products/ProductShelf.tsx` and click on the `+` button
-   <img width="480" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">
+   <img width="480" alt="image" src="https://github.com/site/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">
 
 4. On the `products` field, select any VTEX integration (legacy or Intelligent
    Search).
-   <img width="434" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/9e084af6-db18-472e-92ac-7255bc4d9705">
+   <img width="434" alt="image" src="https://github.com/site/assets/1753396/9e084af6-db18-472e-92ac-7255bc4d9705">
 
 5. Fill the `Collection ID` with a valid collection, e.g. 139
 6. Fill the `count` attribute with the number of products to display, let's
    say 6.
-   <img width="349" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/df0794a8-fbcc-4c74-915e-ba13e179e9a7">
+   <img width="349" alt="image" src="https://github.com/site/assets/1753396/df0794a8-fbcc-4c74-915e-ba13e179e9a7">
 
 7. Now, on the top right corner, click on `Create` and name it, e.g.
    `Collection 139`
-   <img width="577" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/97720584-3206-4457-8972-a719323962c4">
+   <img width="577" alt="image" src="https://github.com/site/assets/1753396/97720584-3206-4457-8972-a719323962c4">
 
 8. On the top right corner click on `Publish`.
 9. You can now drag&drop the block `Collection 139` in any page.
-   <img width="1504" alt="image" src="https://github.com/deco-sites/starting/assets/1753396/bfc74614-b44b-45a9-b1e6-2465e0149ac4">
+   <img width="1504" alt="image" src="https://github.com/site/assets/1753396/bfc74614-b44b-45a9-b1e6-2465e0149ac4">
 
 # Troubleshooting
 

@@ -2,7 +2,7 @@ import { RequestURLParam } from "apps/website/functions/requestToParam.ts";
 import {
   PostBody,
   PostList,
-} from "deco-sites/starting/components/utils/Blog.ts";
+} from "site/components/utils/Blog.ts";
 
 export type Props = {
   list: PostList;

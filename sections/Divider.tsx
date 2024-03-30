@@ -1,4 +1,4 @@
-import Divider from "deco-sites/starting/components/ui/Divider.tsx";
+import Divider from "site/components/ui/Divider.tsx";
 
 function DividerSection() {
   return <Divider />;

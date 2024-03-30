@@ -2,7 +2,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import type { HTMLWidget } from "apps/admin/widgets.ts";
 import { useState } from "preact/hooks";
-import { Runtime } from "deco-sites/starting/runtime.ts";
+import { Runtime } from "site/runtime.ts";
 
 export interface WasThisPageHelpfulProps {
   WasThisPageHelpful?: {
@@ -31,10 +31,10 @@ export default function WasThisPageHelpfulContent({
     Button: {
       NegativeButtonLabel: "Not really",
       NegativeIcon:
-        "https://github.com/deco-sites/starting/assets/76822093/4a74c587-0c97-4b24-b6c9-e9a8fdcd60b2",
+        "https://github.com/site/assets/76822093/4a74c587-0c97-4b24-b6c9-e9a8fdcd60b2",
       PositiveButtonLabel: "Yes, thanks",
       PositiveIcon:
-        "https://github.com/deco-sites/starting/assets/76822093/d29d1ea7-fbc0-4e3e-85e2-0458c197fb97",
+        "https://github.com/site/assets/76822093/d29d1ea7-fbc0-4e3e-85e2-0458c197fb97",
     },
     Text:
       "Can't find what you're looking for? Spot an error in the documentation? Get in touch with us on our Community Forum",
@@ -46,7 +46,7 @@ export default function WasThisPageHelpfulContent({
   const handleButtonClick = async (label: string, helpful: boolean) => {
     setIsPending(true);
     setButtonClicked({ label, helpful });
-    await Runtime.invoke["deco-sites/starting"].actions.feedbackDocs({
+    await Runtime.invoke.site.actions.feedbackDocs({
       contents: [helpful, label, window.location.href],
     });
     setIsPending(false);

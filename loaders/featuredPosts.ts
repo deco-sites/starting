@@ -2,8 +2,8 @@ import {
   getBlogPath,
   Post,
   PostList,
-} from "deco-sites/starting/components/utils/Blog.ts";
-import { PathObj } from "deco-sites/starting/sections/BlogPostHeader.tsx";
+} from "site/components/utils/Blog.ts";
+import { PathObj } from "site/sections/BlogPostHeader.tsx";
 
 export type Props = {
   postList: PostList;
