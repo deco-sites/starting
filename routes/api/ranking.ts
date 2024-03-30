@@ -6,9 +6,9 @@ const AUTH_TOKEN =
 const AIRTABLE_URL =
   "https://api.airtable.com/v0/appNJ277dOGNDgi2A/tbluRhRRBIYtNKoPR";
 
-const parseBody = async <T>(
+async function parseBody<T>(
   body: ReadableStream<Uint8Array> | null,
-): Promise<T | null> => {
+): Promise<T | null> {
   if (body === null) {
     return null;
   }
@@ -20,7 +20,7 @@ const parseBody = async <T>(
   }
 
   return null;
-};
+}
 
 const fetchRanking = async (website?: string) => {
   const myHeaders = new Headers();
