@@ -1,8 +1,8 @@
 import Image from "deco-sites/std/components/Image.tsx";
 import { useEffect, useId, useState } from "preact/hooks";
-import Header from "site/components/ui/SectionHeader.tsx";
-import PageSpeed from "site/components/ui/PageSpeed.tsx";
-import { Template } from "site/components/ui/Types.tsx";
+import Header from "deco-sites/starting/components/ui/SectionHeader.tsx";
+import PageSpeed from "deco-sites/starting/components/ui/PageSpeed.tsx";
+import { Template } from "deco-sites/starting/components/ui/Types.tsx";
 
 export interface TemplateInfo {
   label?: string;

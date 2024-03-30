@@ -121,7 +121,7 @@ the Admin contacts the live Site to retrieve the property data of the Sections
 in that project. On the other hand, the code on a Site comes from GitHub, the
 same one the developer uses.
 
-![Structure of Site data access](https://github.com/site/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53)
+![Structure of Site data access](https://github.com/deco-sites/starting/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53)
 
 # First modification and environment selection
 

@@ -23,7 +23,7 @@ client-side JavaScript
 
 Suppose you have the following component. A counter that allows the user to
 add/subtract to the displayed value.
-<img width="320"  src="https://github.com/site/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
+<img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
 
 This component can be implemented with the following code:
 
@@ -50,7 +50,7 @@ export default function Counter() {
 Creating a file called `Counter.tsx` and placing it into the `islands` folder
 gives us the following result on the screen:
 
-![Jul-13-2023 10-38-29](https://github.com/site/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
+![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
 
 This is called an `island`!
 

@@ -1,6 +1,6 @@
-import Icon from "site/components/ui/Icon.tsx";
-import ShowMoreButton from "site/components/decohelp/help/ui/Button/ShowMore.tsx";
-import { useTabs } from "site/components/decohelp/help/FAQ/useTabs.ts";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import ShowMoreButton from "deco-sites/starting/components/decohelp/help/ui/Button/ShowMore.tsx";
+import { useTabs } from "deco-sites/starting/components/decohelp/help/FAQ/useTabs.ts";
 
 export interface Question {
   question: string;

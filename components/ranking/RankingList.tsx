@@ -1,5 +1,5 @@
 import { LoaderReturnType } from "deco/types.ts";
-import type { Site } from "site/routes/api/ranking.ts";
+import type { Site } from "deco-sites/starting/routes/api/ranking.ts";
 import { SiteList } from "./list/SiteList.tsx";
 
 export interface TableHeaderTranslations {

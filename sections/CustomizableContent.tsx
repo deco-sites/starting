@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { LoaderReturnType } from "$live/types.ts";
-import { MDFileContent } from "site/components/ui/Types.tsx";
-import MarkdownContent from "site/sections/MarkdownContent.tsx";
+import { MDFileContent } from "deco-sites/starting/components/ui/Types.tsx";
+import MarkdownContent from "deco-sites/starting/sections/MarkdownContent.tsx";
 import { Section } from "deco/blocks/section.ts";
 
 /** @title {{{path}}} */

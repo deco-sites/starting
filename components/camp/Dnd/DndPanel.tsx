@@ -1,6 +1,6 @@
 import Icon, {
   AvailableIcons,
-} from "site/components/ui/Icon.tsx";
+} from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface DndButtonProps {
   label: string;

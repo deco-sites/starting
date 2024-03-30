@@ -1,7 +1,7 @@
 import Image from "deco-sites/std/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Icon from "site/components/ui/Icon.tsx";
-import type { AvailableIcons } from "site/components/ui/Icon.tsx";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import type { AvailableIcons } from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface Props {
   mainText: string;

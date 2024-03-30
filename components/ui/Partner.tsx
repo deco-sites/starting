@@ -1,5 +1,5 @@
 import type { Image } from "deco-sites/std/components/types.ts";
-import Icon from "site/components/ui/Icon.tsx";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 
 export interface Props {
   mainText: string;

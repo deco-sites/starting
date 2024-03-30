@@ -1,6 +1,6 @@
 import PricingValue, {
   Props,
-} from "site/components/ui/PricingValue.tsx";
+} from "deco-sites/starting/components/ui/PricingValue.tsx";
 
 function PricingValueSection(props: Props) {
   return <PricingValue {...props} />;

@@ -121,7 +121,7 @@ produção para pegar os dados das propriedades das Sections daquele projeto. Po
 sua vez, o código em um Site é oriundo do GitHub, o mesmo que o desenvolvedor
 utiliza.
 
-![Estrutura de acesso aos dados do Site](https://github.com/site/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53)
+![Estrutura de acesso aos dados do Site](https://github.com/deco-sites/starting/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53)
 
 # Primeira alteração e seleção de ambiente
 

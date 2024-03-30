@@ -1,5 +1,5 @@
-import Icon from "site/components/ui/Icon.tsx";
-import { Site } from "site/routes/api/ranking.ts";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import { Site } from "deco-sites/starting/routes/api/ranking.ts";
 import { IS_BROWSER } from "https://deno.land/x/fresh@1.1.4/src/runtime/utils.ts";
 import { useEffect } from "preact/compat";
 import { AnalyzeFormTranslation } from "../AnalyzeForm.tsx";

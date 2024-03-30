@@ -1,4 +1,4 @@
-import CheckIcon from "site/components/ui/CheckIcon.tsx";
+import CheckIcon from "deco-sites/starting/components/ui/CheckIcon.tsx";
 
 export interface CTA {
   id?: string;

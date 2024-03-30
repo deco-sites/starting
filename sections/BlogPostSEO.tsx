@@ -1,1 +1,1 @@
-export { default } from "site/components/seo/BlogPostSEO.tsx";
+export { default } from "deco-sites/starting/components/seo/BlogPostSEO.tsx";

@@ -1,1 +1,1 @@
-export { default } from "site/sections/Hub/TemplatesGrid.tsx";
+export { default } from "deco-sites/starting/sections/Hub/TemplatesGrid.tsx";

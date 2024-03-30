@@ -1,4 +1,4 @@
-import Pricing, { Props } from "site/components/ui/Pricing.tsx";
+import Pricing, { Props } from "deco-sites/starting/components/ui/Pricing.tsx";
 
 function PricingSection(props: Props) {
   return <Pricing {...props} />;

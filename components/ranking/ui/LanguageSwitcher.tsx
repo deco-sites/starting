@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
 import { useMemo } from "preact/compat";
 import { useLanguage } from "../hooks/useLanguage.tsx";
-import Icon from "site/components/ui/Icon.tsx";
+import Icon from "deco-sites/starting/components/ui/Icon.tsx";
 import { IS_BROWSER } from "https://deno.land/x/fresh@1.1.4/src/runtime/utils.ts";
 
 export interface Language {

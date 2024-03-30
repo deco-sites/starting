@@ -38,7 +38,7 @@ tools that help in this process. Understand how and when to use them.
 
 ## Local testing
 
-![Example of using browser tools for debugging](https://github.com/site/assets/882438/bf441a9a-5af7-4c83-aa4a-c409c2cfb84c)
+![Example of using browser tools for debugging](https://github.com/deco-sites/starting/assets/882438/bf441a9a-5af7-4c83-aa4a-c409c2cfb84c)
 
 **Always test your page, section, loader, or action locally. It doesn't always
 need to be a structured test**. If it's already slow for you, it will be slow
@@ -51,7 +51,7 @@ network or CPU). More information in the guide below:
 
 ## Pagespeed test
 
-![Example of pagespeed test](https://github.com/site/assets/882438/35d915a9-1fa0-4c87-b5b5-74cd60bec8f0)
+![Example of pagespeed test](https://github.com/deco-sites/starting/assets/882438/35d915a9-1fa0-4c87-b5b5-74cd60bec8f0)
 
 [Pagespeed](https://pagespeed.web.dev/) is a testing tool developed by Google to
 evaluate the main performance aspects of a page. It explores metrics such as how
@@ -79,7 +79,7 @@ page's performance as soon as possible.
 
 ## Deco metrics test
 
-![Examples of deco metrics](https://github.com/site/assets/882438/af592b39-0f4d-405f-a0c6-a212b1677058)
+![Examples of deco metrics](https://github.com/deco-sites/starting/assets/882438/af592b39-0f4d-405f-a0c6-a212b1677058)
 
 By default, deco offers a set of metrics that are evaluated on a page. These
 metrics are specialized especially for systems like deco (SSR with hydration and
@@ -104,7 +104,7 @@ networks or situations.
 
 ## Core Web Vitals test
 
-![Example of Core Web Vitals test](https://github.com/site/assets/882438/f911058f-34b4-4c49-a24b-9351d630a752)
+![Example of Core Web Vitals test](https://github.com/deco-sites/starting/assets/882438/f911058f-34b4-4c49-a24b-9351d630a752)
 
 So far, we have only explored synthetic tests, that is, tests that are performed
 artificially and are only an approximation of the real world. These tests are

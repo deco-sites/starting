@@ -39,7 +39,7 @@ Para se conectar à sua conta na Shopify:
 3. Escolha a guia _Apps_.
 4. Selecione o App **shopify.ts** e clique no bloco shopify. Você verá algo
    como:
-   <img width="480" alt="imagem" src="https://github.com/site/assets/76620866/a4127f6a-9d8f-4d27-b639-3a30db761e44">
+   <img width="480" alt="imagem" src="https://github.com/deco-sites/starting/assets/76620866/a4127f6a-9d8f-4d27-b639-3a30db761e44">
 
 5. Altere a configuração da conta de `gimenesdevstore` para o nome da sua conta
    Shopify. O nome da conta é necessariamente o que está na sua URL pública
@@ -63,20 +63,20 @@ seu website.
    [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
 2. Na barra superior, selecione _blocos_ e depois _sections_.
 3. Selecione o bloco `/Products/ProductShelf.tsx` e clique no botão `+`.
-   <img width="480" alt="imagem" src="https://github.com/site/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">
+   <img width="480" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">
 
 4. No campo `products`, selecione a integração Shopify.
-   <img width="334" alt="imagem" src="https://github.com/site/assets/76620866/9dac417e-fbf7-4fd2-b474-6dd463c5887a">
+   <img width="334" alt="imagem" src="https://github.com/deco-sites/starting/assets/76620866/9dac417e-fbf7-4fd2-b474-6dd463c5887a">
 
 5. Preencha o campo `query` com uma busca, por exemplo, "camiseta".
 6. Preencha o atributo `count` com o número de produtos a serem exibidos,
    digamos 4.
-   <img width="349" alt="imagem" src="https://github.com/site/assets/76620866/648b7b2a-94ca-49c0-bf72-ce7afa683282">
+   <img width="349" alt="imagem" src="https://github.com/deco-sites/starting/assets/76620866/648b7b2a-94ca-49c0-bf72-ce7afa683282">
 
 7. Agora, no canto superior direito, clique em `Criar` e dê um nome, por
    exemplo, `Coleção 139`.
-   <img width="577" alt="imagem" src="https://github.com/site/assets/1753396/97720584-3206-4457-8972-a719323962c4">
+   <img width="577" alt="imagem" src="https://github.com/deco-sites/starting/assets/1753396/97720584-3206-4457-8972-a719323962c4">
 
 8. No canto superior direito, clique em `Publicar`.
 9. Agora você pode arrastar e soltar o bloco `Coleção 139` em qualquer página.
-   <img width="1504" alt="imagem" src="https://github.com/site/assets/76620866/114aa43e-f727-45db-99e2-b7f4b7d6c7a1">
+   <img width="1504" alt="imagem" src="https://github.com/deco-sites/starting/assets/76620866/114aa43e-f727-45db-99e2-b7f4b7d6c7a1">

@@ -1,1 +1,1 @@
-export { default } from "site/components/decohelp/help/FAQ/HelpFaq.tsx";
+export { default } from "deco-sites/starting/components/decohelp/help/FAQ/HelpFaq.tsx";

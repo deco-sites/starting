@@ -1,8 +1,8 @@
-import { MDFileContent } from "site/components/ui/Types.tsx";
+import { MDFileContent } from "deco-sites/starting/components/ui/Types.tsx";
 import type { LoaderContext } from "deco/types.ts";
 import { badRequest, redirect } from "deco/mod.ts";
-import { getTitleForPost } from "site/docs/toc.ts";
-import type { SupportedLanguages } from "site/docs/toc.ts";
+import { getTitleForPost } from "deco-sites/starting/docs/toc.ts";
+import type { SupportedLanguages } from "deco-sites/starting/docs/toc.ts";
 
 /** @title {{{path}}} */
 export interface Doc {

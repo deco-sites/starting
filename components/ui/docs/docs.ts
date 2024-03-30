@@ -1,4 +1,4 @@
-import RAW_TOC from "site/docs/toc.ts";
+import RAW_TOC from "deco-sites/starting/docs/toc.ts";
 
 type RawTableOfContents = Record<string, RawTableOfContentsEntry>;
 

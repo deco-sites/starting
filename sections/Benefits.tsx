@@ -1,6 +1,6 @@
 import Benefits, {
   Props,
-} from "site/components/ui/Benefits.tsx";
+} from "deco-sites/starting/components/ui/Benefits.tsx";
 
 function BenefitsSection(props: Props) {
   return <Benefits {...props} />;
