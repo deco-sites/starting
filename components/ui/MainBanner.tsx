@@ -1,4 +1,4 @@
-import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";

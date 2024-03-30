@@ -1,4 +1,4 @@
-import { Site } from "deco-sites/starting/routes/api/ranking.ts";
+import { Site } from "site/routes/api/ranking.ts";
 import { TableHeaderTranslations } from "../RankingList.tsx";
 import { SiteItem } from "./SiteItem.tsx";
 

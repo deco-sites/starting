@@ -1,1 +1,1 @@
-export { default } from "deco-sites/starting/sections/Live Projects/LiveProjects.tsx";
+export { default } from "site/sections/Live Projects/LiveProjects.tsx";

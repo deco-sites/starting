@@ -1,4 +1,4 @@
-import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 
 export interface Props {
   mainText: string;

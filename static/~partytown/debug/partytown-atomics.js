@@ -330,7 +330,7 @@
                     doc.dispatchEvent(new CustomEvent("pt0"));
                     {
                         const winType = win === win.top ? "top" : "iframe";
-                        logMain(`Executed ${winType} window ${normalizedWinId($winId$)} environment scripts in ${(performance.now() - winCtx.deco-sites/startingTime$).toFixed(1)}ms`);
+                        logMain(`Executed ${winType} window ${normalizedWinId($winId$)} environment scripts in ${(performance.now() - winCtx.siteTime$).toFixed(1)}ms`);
                     }
                 }
                 worker.postMessage([ 8, $winId$ ]);
@@ -387,7 +387,7 @@
                 $winId$: $winId$,
                 $window$: $window$
             };
-            winCtxs[$winId$].deco-sites/startingTime$ = performance.now();
+            winCtxs[$winId$].siteTime$ = performance.now();
             {
                 const winType = $winId$ === $parentWinId$ ? "top" : "iframe";
                 logMain(`Registered ${winType} window ${normalizedWinId($winId$)}`);

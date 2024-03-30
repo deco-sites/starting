@@ -1,1 +1,1 @@
-export { default } from "deco-sites/starting/components/camp/header/Header.tsx";
+export { default } from "site/components/camp/header/Header.tsx";

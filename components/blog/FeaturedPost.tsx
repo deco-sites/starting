@@ -1,7 +1,7 @@
 import {
   Post,
   SupportedLocales,
-} from "deco-sites/starting/components/utils/Blog.ts";
+} from "site/components/utils/Blog.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 
 export default function FeaturedPost({

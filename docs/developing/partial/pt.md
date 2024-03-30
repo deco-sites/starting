@@ -50,7 +50,7 @@ dos Partials criando um seletor de SKU super-rápido.
 Os seletores de SKU permitem que os compradores explorem diferentes variações de
 um produto, cada um com seu conjunto único de preços, imagens e disponibilidade.
 Considere o exemplo a seguir:
-![sku-selector](https://github.com/deco-sites/starting/assets/1753396/cdaca2fc-34cd-404b-8679-d159872f7faa)
+![sku-selector](https://github.com/site/assets/1753396/cdaca2fc-34cd-404b-8679-d159872f7faa)
 
 Como demonstrado, a alteração do SKU selecionado pode resultar em alterações
 significativas na página. Uma abordagem direta é criar um sinal para armazenar o

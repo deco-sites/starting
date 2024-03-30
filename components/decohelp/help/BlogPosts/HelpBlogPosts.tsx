@@ -1,8 +1,8 @@
 import { useId } from "preact/hooks";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
-import Slider from "deco-sites/starting/components/decohelp/help/BlogPosts/Slider.tsx";
-import SliderControllerJS from "deco-sites/starting/islands/SliderJS.tsx";
+import Slider from "site/components/decohelp/help/BlogPosts/Slider.tsx";
+import SliderControllerJS from "site/islands/SliderJS.tsx";
 
 export interface Props {
   cards: Array<{

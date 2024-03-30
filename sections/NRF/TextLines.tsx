@@ -1,1 +1,1 @@
-export { default } from "deco-sites/starting/islands/NRF/TextLines.tsx";
+export { default } from "site/islands/NRF/TextLines.tsx";

@@ -1,15 +1,15 @@
 import HTMLRenderer from "deco-sites/std/components/HTMLRenderer.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
-import YoutubeEmbed from "deco-sites/starting/components/decohelp/pages/ui/Youtube/YoutubeEmbed.tsx";
+import YoutubeEmbed from "site/components/decohelp/pages/ui/Youtube/YoutubeEmbed.tsx";
 import WasThisPageHelpfulContent, {
   WasThisPageHelpfulProps,
-} from "deco-sites/starting/components/decohelp/pages/ui/WasThisPageHelpful/WasThisPageHelpful.tsx";
-import ForwardBackButtons from "deco-sites/starting/islands/ForwardBackButtons/ForwardBackButtons.tsx";
-import BreadCrumb from "deco-sites/starting/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
+} from "site/components/decohelp/pages/ui/WasThisPageHelpful/WasThisPageHelpful.tsx";
+import ForwardBackButtons from "site/islands/ForwardBackButtons/ForwardBackButtons.tsx";
+import BreadCrumb from "site/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
 import {
   ContentType,
   Props,
-} from "deco-sites/starting/components/decohelp/pages/interfaces.ts";
+} from "site/components/decohelp/pages/interfaces.ts";
 
 function renderContentItem(item: ContentType, idx: number) {
   return "Text" in item

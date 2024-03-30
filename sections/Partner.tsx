@@ -1,4 +1,4 @@
-import Partner, { Props } from "deco-sites/starting/components/ui/Partner.tsx";
+import Partner, { Props } from "site/components/ui/Partner.tsx";
 
 function PartnerSection(props: Props) {
   return <Partner {...props} />;

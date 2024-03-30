@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-import { RECAPTCHA_SITE_KEY } from "deco-sites/starting/sdk/recaptcha.ts";
+import { RECAPTCHA_SITE_KEY } from "site/sdk/recaptcha.ts";
 
 export interface Props {
   formId: string;

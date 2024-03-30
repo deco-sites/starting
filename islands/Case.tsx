@@ -1,1 +1,1 @@
-export { default } from "deco-sites/starting/components/ui/Case.tsx";
+export { default } from "site/components/ui/Case.tsx";

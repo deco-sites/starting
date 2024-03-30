@@ -3,7 +3,7 @@ import {
   getBlogPath,
   PostList,
   SupportedLocales,
-} from "deco-sites/starting/components/utils/Blog.ts";
+} from "site/components/utils/Blog.ts";
 
 export type PathObj = {
   url: string;

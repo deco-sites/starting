@@ -24,7 +24,7 @@ problemas comuns com o JavaScript do lado do cliente.
 
 Suponha que você tenha o seguinte componente. Um contador que permite ao usuário
 adicionar/subtrair o valor exibido.
-<img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
+<img width="320"  src="https://github.com/site/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
 
 Este componente pode ser implementado com o seguinte código:
 
@@ -51,7 +51,7 @@ export default function Counter() {
 Ao criar um arquivo chamado `Counter.tsx` e colocá-lo na pasta `islands`,
 obtemos o seguinte resultado na tela:
 
-![Jul-13-2023 10-38-29](https://github.com/deco-sites/starting/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
+![Jul-13-2023 10-38-29](https://github.com/site/assets/1753396/9d4cda22-f302-4b8e-a98e-d5c9dd4af596)
 
 Agora isso é chamado de `island`!
 

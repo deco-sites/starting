@@ -1,6 +1,6 @@
 import TripletBanner, {
   Props,
-} from "deco-sites/starting/components/ui/TripletBanner.tsx";
+} from "site/components/ui/TripletBanner.tsx";
 
 function TripletBannerSection(props: Props) {
   return <TripletBanner {...props} />;

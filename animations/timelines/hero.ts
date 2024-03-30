@@ -1,4 +1,4 @@
-import { AnimationTimeline } from "deco-sites/starting/animations/utils.ts";
+import { AnimationTimeline } from "site/animations/utils.ts";
 
 export const HERO_ANIMATION_SEQUENCE: AnimationTimeline = [
   [

@@ -1,5 +1,5 @@
-import { TopNavigation } from "deco-sites/starting/animations/assets/TopNavigation.tsx";
-import { AnimatedSvgProps } from "deco-sites/starting/animations/utils.ts";
+import { TopNavigation } from "site/animations/assets/TopNavigation.tsx";
+import { AnimatedSvgProps } from "site/animations/utils.ts";
 
 export const ContentModeling = (props: AnimatedSvgProps) => {
   return (

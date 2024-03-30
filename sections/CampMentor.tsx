@@ -1,1 +1,1 @@
-export { default } from "deco-sites/starting/islands/CampMentor.tsx";
+export { default } from "site/islands/CampMentor.tsx";

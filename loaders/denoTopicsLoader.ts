@@ -3,8 +3,8 @@ import type {
   ChildTopic,
   SubTopic,
   Topic,
-} from "deco-sites/starting/components/decohelp/pages/ui/Sidebar/Sidebar.tsx";
-import tableOfContents from "deco-sites/starting/docs/toc.ts";
+} from "site/components/decohelp/pages/ui/Sidebar/Sidebar.tsx";
+import tableOfContents from "site/docs/toc.ts";
 
 const loader = (
   props: { urlPattern: string; group: number; basePath?: string },

@@ -5,7 +5,7 @@ import {
   Post,
   PostList,
   SupportedLocales,
-} from "deco-sites/starting/components/utils/Blog.ts";
+} from "site/components/utils/Blog.ts";
 
 interface Props {
   title: string;

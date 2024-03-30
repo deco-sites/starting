@@ -1,9 +1,9 @@
-import Slider from "deco-sites/starting/components/ui/Slider.tsx";
-import SliderControllerJS from "deco-sites/starting/components/ui/SliderJS.tsx";
+import Slider from "site/components/ui/Slider.tsx";
+import SliderControllerJS from "site/components/ui/SliderJS.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import type { ImageObject } from "deco-sites/std/commerce/types.ts";
-import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 
 interface Dots {
   images: LiveImage[];

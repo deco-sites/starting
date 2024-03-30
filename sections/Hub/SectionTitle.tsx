@@ -1,4 +1,4 @@
-import Header from "deco-sites/starting/components/ui/SectionHeader.tsx";
+import Header from "site/components/ui/SectionHeader.tsx";
 
 export interface Props {
   title?: string;

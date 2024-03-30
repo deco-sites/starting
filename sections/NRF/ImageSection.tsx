@@ -1,5 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Icon from "deco-sites/starting/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 
 export interface Props {
   title: string;
