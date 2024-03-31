@@ -14,12 +14,12 @@ export default function FeaturedPost({
 }: Post & { locale?: SupportedLocales }) {
   return (
     <div class="overflow-hidden bg-black py-18">
-      <div class="mx-auto bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px] p-[56px]">
+      <div class="mx-auto bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px] p-[2.25rem] lg:p-[56px]">
         <div class="mx-auto ">
           <div class="w-full cursor-pointer">
             <a class="grid gap-8 lg:grid-cols-2 lg:gap-16" href={path}>
               <div
-                className="relative overflow-hidden rounded-lg border"
+                className="relative overflow-hidden rounded-[20px]"
                 style={{ paddingTop: "56.25%" }}
               >
                 <span className="block absolute top-0 left-0 bottom-0 right-0">
@@ -44,7 +44,7 @@ export default function FeaturedPost({
                   )}
                 </div> */}
                 <div class="flex flex-col text-white gap-6">
-                    <h2 class="font-600 text-[3.375rem] leading-[100%] tracking-[-1.04px]">{body[locale]?.title}</h2>
+                    <h2 class="font-600 text-[2.375rem] lg:text-[3.375rem] leading-[100%] tracking-[-1.04px]">{body[locale]?.title}</h2>
                   <p class="text-xl">{body[locale]?.descr}</p>
                   <div>
                     <div class="flex items-center space-x-3">

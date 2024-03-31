@@ -35,7 +35,7 @@ export default function BlogPosts({ cards }: Props) {
           {cards?.map((card) => {
             return (
               <a href={card.url} target="_blank" class="rounded-[8px]">
-                <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden h-full">
+                <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-black overflow-hidden h-full">
                   <div class="relative">
                     <p class="bg-black text-white m-[24px] px-3 py-1 w-[fit-content] font-normal not-italic text-[14px] z-10 rounded-[26px] flex items-center absolute">
                       {card.title}

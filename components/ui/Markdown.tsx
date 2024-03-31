@@ -51,7 +51,7 @@ export default function Markdown({ post }: Props) {
   const body = marky(post.data, transformedParsers);
   return (
     <div
-      class="markdown-body prose max-w-none"
+      class="markdown-body prose max-w-none text-[#F9FAFB]"
       dangerouslySetInnerHTML={{ __html: body }}
     />
   );

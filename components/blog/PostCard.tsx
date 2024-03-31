@@ -11,7 +11,7 @@ export function BlogPostCard({
   return (
     <a href={props.path} class="group duration-200 border-[2px] border-[#FFFFFF26] bg-[#FFFFFF0D] rounded-[22px] backdrop-filter backdrop-blur-24">
       <div class="flex flex-col w-full text-white">
-        <div class="overflow-hidden rounded-lg">
+        <div class="overflow-hidden rounded-[22px_22px_0_0]">
           <Image
             src={props.img}
             class="w-full aspect-[4/3] transition-transform duration-300 transform group-hover:scale-105 object-cover"
