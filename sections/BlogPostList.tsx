@@ -20,13 +20,13 @@ export default function MarkdownContainer(props: Props) {
   );
 
   return (
-    <section class="pt-24 md:pt-40 px-5 mx-auto container">
+    <section class="pt-24 md:pt-40 px-16 mx-auto container bg-black">
       <FeaturedPost
         {...highlightPost}
         path={getBlogPath(highlightPost.path, props.locale)}
         locale={props.locale}
       />
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 lg:gap-16 border-t py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8 lg:gap-y-20 lg:gap-x-11 py-20">
         {normalPosts.map((post) => (
           <BlogPostCard
             {...post}

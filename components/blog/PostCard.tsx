@@ -9,8 +9,8 @@ export function BlogPostCard({
   ...props
 }: Post & { locale?: SupportedLocales }) {
   return (
-    <a href={props.path} class="group duration-200">
-      <div class="flex flex-col w-full text-deco-dark-green mb-10 sm:mb-20">
+    <a href={props.path} class="group duration-200 border-[2px] border-[#FFFFFF26] bg-[#FFFFFF0D] rounded-[22px] backdrop-filter backdrop-blur-24">
+      <div class="flex flex-col w-full text-white">
         <div class="overflow-hidden rounded-lg">
           <Image
             src={props.img}
@@ -24,14 +24,14 @@ export function BlogPostCard({
             preload
           />
         </div>
-        <div class="mt-6 flex flex-col gap-2">
-          <h1 class="text-xl font-medium leading-[1.18]">
+        <div class="flex flex-col gap-4 p-8">
+          <h1 class="text-xl font-semi-medium leading-[130%] hover:text-[#4ADE80] tracking-[-0.3px]">
             {props.body[locale]?.title}
           </h1>
-          <div class="text-base text-[#66736C] leading-[1.5]">
+          <div class="text-base leading-[1.5] leading-[120%] tracking-[-0.4px]">
             {props.body[locale]?.descr}
           </div>
-          <div class="text-sm font-light text-[#66736C]">
+          <div class="text-sm font-light">
             <div class="flex gap-2">
               <span>{props.date}</span>
               <span>•</span>

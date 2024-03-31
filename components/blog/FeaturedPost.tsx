@@ -13,8 +13,8 @@ export default function FeaturedPost({
   locale = "en",
 }: Post & { locale?: SupportedLocales }) {
   return (
-    <div class="overflow-hidden py-12">
-      <div class="mx-auto">
+    <div class="overflow-hidden bg-black py-18">
+      <div class="mx-auto bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px] p-[56px]">
         <div class="mx-auto ">
           <div class="w-full cursor-pointer">
             <a class="grid gap-8 lg:grid-cols-2 lg:gap-16" href={path}>
@@ -33,8 +33,8 @@ export default function FeaturedPost({
                   />
                 </span>
               </div>
-              <div class="flex flex-col space-y-2 lg:mr-16 lg:mt-16 lg:mb-16">
-                <div class="text-scale-900 flex space-x-2 text-sm">
+              <div class="flex flex-col items-center">
+                {/* <div class="text-scale-900 flex space-x-2 text-sm">
                   <p>{date}</p>
                   {readTime && (
                     <>
@@ -42,10 +42,10 @@ export default function FeaturedPost({
                       <p>{readTime} minute read</p>
                     </>
                   )}
-                </div>
-                <div class="flex flex-col space-y-4">
-                  <h2 class="font-medium text-3xl">{body[locale]?.title}</h2>
-                  <p class="p text-xl">{body[locale]?.descr}</p>
+                </div> */}
+                <div class="flex flex-col text-white gap-6">
+                    <h2 class="font-600 text-[3.375rem] leading-[100%] tracking-[-1.04px]">{body[locale]?.title}</h2>
+                  <p class="text-xl">{body[locale]?.descr}</p>
                   <div>
                     <div class="flex items-center space-x-3">
                       {authorAvatar && (
@@ -64,9 +64,10 @@ export default function FeaturedPost({
                           </span>
                         </div>
                       )}
-                      <div class="flex flex-col">
-                        <span class="m-0 text-sm">{author}</span>
-                        <span class="m-0 text-xs">{authorRole}</span>
+                      <div class="flex text-white tracking-[-0.32px] leading-[130%] gap-2">
+                        <span class="m-0 text-[1rem]">{author}</span>
+                        <span>•</span>
+                        <span class="m-0 text-[1rem]">{date}</span>
                       </div>
                     </div>
                   </div>
