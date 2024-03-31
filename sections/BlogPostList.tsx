@@ -20,7 +20,8 @@ export default function MarkdownContainer(props: Props) {
   );
 
   return (
-    <section class="pt-24 md:pt-40 px-8 lg:px-16 mx-auto container bg-black">
+    <section class="bg-black">
+      <div class="pt-24 md:pt-40 px-8 lg:px-16 mx-auto container">
       <FeaturedPost
         {...highlightPost}
         path={getBlogPath(highlightPost.path, props.locale)}
@@ -38,6 +39,7 @@ export default function MarkdownContainer(props: Props) {
           dangerouslySetInnerHTML={{ __html: `body{background-color: white;}` }}
         >
         </style>
+      </div>
       </div>
     </section>
   );

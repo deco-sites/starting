@@ -35,7 +35,8 @@ export default function Hero({
   },
 }: Props) {
   return (
-    <div className="flex items-center mx-8 py-12 md:mx-auto md:px-14 md:py-16 lg:px-16 gap-16 lg:py-20 lg:max-w-[1440px] xl:px-16 mt-[107px] bg-[#010101]">
+    <section class="bg-[#010101]">
+    <div className="flex items-center mx-8 py-12 md:mx-auto md:px-14 md:py-16 lg:px-16 gap-16 lg:py-20 lg:max-w-[1440px] xl:px-16 mt-[107px]">
       <div class="flex flex-col gap-8 items-start justify-between self-sttretch font-albert-sans lg:gap-8 xl:gap-12 md:flex-row lg:container lg:max-w-[1440px] text-xl md:text-base">
         <div class="flex flex-col gap-8 md:gap-12 md:w-[100%] md:max-w-[481px] lg:w-[44.2%] items-start">
           <div className="flex flex-col w-full gap-8 md:gap-6">
@@ -85,5 +86,6 @@ export default function Hero({
         </style>
       </div>
     </div>
+    </section>
   );
 }

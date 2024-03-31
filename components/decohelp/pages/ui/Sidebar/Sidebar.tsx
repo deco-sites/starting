@@ -223,7 +223,7 @@ export default function Sidebar({
         />
       </div>
       <aside
-        class={`lg:max-w-[388px] w-full h-full lg:block bg-white ${
+        class={`lg:max-w-[388px] w-full h-full lg:block ${
           !isMobile ? "lg:pl-[64px]" : ""
         } ${isMenuOpen && isMobile ? "block z-20 pl-0 fixed" : "hidden"}`}
       >
@@ -268,7 +268,7 @@ export default function Sidebar({
               return (
                 <ul key={index} class="mt-2 mb-3 flex flex-col">
                   <li
-                    class={`flex items-center py-2 cursor-pointer gap-2 ${
+                    class={`flex items-center p-2 cursor-pointer gap-2 ${
                       topic.SubTopics && topic.SubTopics.length > 0
                         ? ""
                         : "ml-[24px]"
@@ -298,12 +298,12 @@ export default function Sidebar({
                     )}
                     <a
                       href={topic?.LinkTopic}
-                      class="text-zinc-900 text-[15px] font-semibold leading-tight cursor-pointer"
+                      class="text-[#E7E5E4] text-[15px] font-semibold leading-tight cursor-pointer"
                     >
                       {topic.label}
                     </a>
                     {topic.SubTopics && topic.SubTopics.length > 0 && (
-                      <span class="w-5 h-5 p-1 bg-[#C9CECE] rounded-full text-white text-[13px] font-semibold leading-tight flex items-center justify-center">
+                      <span class="w-5 h-5 p-1 bg-[#FFFFFF1A] rounded-full text-[#FFFFFF80] text-[13px] font-semibold leading-tight flex items-center justify-center">
                         {topic.SubTopics.length}
                       </span>
                     )}
@@ -334,8 +334,8 @@ export default function Sidebar({
                               href={subTopic.SidebarLink}
                               class={`flex items-center pl-[32px] pr-2 py-2 text-[15px] leading-tight cursor-pointer ${
                                 isActiveSubTopic
-                                  ? "text-[#2E6ED9]"
-                                  : "text-zinc-900 relative w-min-content hover:bg-[#F8F9F5]"
+                                  ? "text-[#4ADE80]"
+                                  : "text-[#E7E5E4] relative w-min-content hover:bg-[#F8F9F5]"
                               }`}
                               style={getFontWeightStyle(
                                 fontWeightSubtopic.fontWeight || "normal",

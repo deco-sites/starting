@@ -2,7 +2,7 @@ import Markdown, { Props } from "../components/ui/Markdown.tsx";
 
 export default function MarkdownContainer(props: Props) {
   return (
-    <div class="lg:max-w-2xl mx-auto text-white leading-[1.8]">
+    <div class="lg:max-w-2xl mx-auto pt-8 leading-[1.8]">
       <section class="markdown-container">
         <Markdown {...props}></Markdown>
       </section>
