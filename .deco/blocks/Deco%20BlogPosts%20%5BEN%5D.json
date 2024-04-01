@@ -1,1 +1,0 @@
-{"cards":{"page":{"__resolveType":"site/functions/LoadPageProps.ts"},"postList":{"list":{"__resolveType":"blogposts"},"__resolveType":"site/loaders/blogPostLoader.ts"},"__resolveType":"site/loaders/featuredPosts.ts"},"title":"Latest from our blog","locale":"en","__resolveType":"site/sections/NRF/BlogPosts.tsx","bottomPadding":"96px"}
