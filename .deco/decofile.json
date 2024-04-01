@@ -10176,8 +10176,32 @@
   },
   "redirect-2a7e394f48ae": {
     "redirect": {
-      "to": "/",
+      "to": "https://tree.deco.cx",
       "from": "/dd-links",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
+  },
+  "redirect-casebaw": {
+    "redirect": {
+      "to": "https://drive.google.com/file/d/1KtaiilSe-t5zLlGkVMOTLSIaT9E-Vahr/view?usp=drive_link",
+      "from": "/case-baw",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
+  },
+  "redirect-casezeedog": {
+    "redirect": {
+      "to": "https://drive.google.com/file/d/1fWcadlNsFoRCTsTMvkkrHLimr-gp-UG0/view?usp=drive_link",
+      "from": "/case-zeedog",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
+  },
+  "redirect-caseosklen": {
+    "redirect": {
+      "to": "https://drive.google.com/file/d/1a_f9VRfab3Zo6DfCKvnNldWGjxtCXlhk/view?usp=drive_link",
+      "from": "/case-osklen",
       "type": "temporary"
     },
     "__resolveType": "website/loaders/redirect.ts"
