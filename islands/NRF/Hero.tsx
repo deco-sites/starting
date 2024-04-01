@@ -59,7 +59,7 @@ function ProductHuntCTA({ id, href }: CTA) {
         />
       </svg>
       <div class="flex flex-col gap-1 text-white font-medium">
-        <p class="text-xs leading-[100%]">Coming April 2nd on</p>
+        <p class="text-xs leading-[100%]">Coming April 10th on</p>
         <p class="text-xl leading-[100%]">Product Hunt</p>
       </div>
       <div class="bg-[#02F67C] text-black px-6 py-2 flex items-center rounded-full">
