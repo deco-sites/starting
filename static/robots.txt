@@ -3,3 +3,5 @@ User-agent: *
 
 Disallow: /img/* 
 Disallow: /admin/* 
+
+Sitemap: https://deco.cx/sitemap.xml 
