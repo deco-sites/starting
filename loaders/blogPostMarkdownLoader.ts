@@ -1,8 +1,5 @@
 import { RequestURLParam } from "apps/website/functions/requestToParam.ts";
-import {
-  PostBody,
-  PostList,
-} from "site/components/utils/Blog.ts";
+import { PostBody, PostList } from "site/components/utils/Blog.ts";
 
 export type Props = {
   list: PostList;

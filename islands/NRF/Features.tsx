@@ -1,8 +1,6 @@
 import { useEffect } from "preact/hooks";
 import { animate, inView, stagger } from "https://esm.sh/motion@10.16.4";
-import Icon, {
-  AvailableIcons,
-} from "site/components/ui/Icon.tsx";
+import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 
 export interface Card {
   icon?: AvailableIcons;

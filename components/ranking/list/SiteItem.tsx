@@ -1,8 +1,6 @@
 import type { Site } from "site/routes/api/ranking.ts";
 import FaviconImage from "site/islands/FaviconImage.tsx";
-import Icon, {
-  AvailableIcons,
-} from "site/components/ui/Icon.tsx";
+import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 
 export interface Props {
   site: Site;

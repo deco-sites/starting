@@ -12,7 +12,10 @@ export async function handler(
 
   // Redirect www.deco.cx to deco.cx
   if (url.hostname === "www.deco.cx") {
-    return Response.redirect(`https://deco.cx${url.pathname}${url.search}`, 302);
+    return Response.redirect(
+      `https://deco.cx${url.pathname}${url.search}`,
+      302,
+    );
   }
 
   const response = await ctx.next();

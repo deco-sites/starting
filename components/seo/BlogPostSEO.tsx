@@ -1,9 +1,6 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Metatags from "./BlogMetatags.tsx";
-import {
-  Post,
-  SupportedLocales,
-} from "site/components/utils/Blog.ts";
+import { Post, SupportedLocales } from "site/components/utils/Blog.ts";
 import type { Props as SEOProps } from "deco-sites/std/components/seo/types.ts";
 
 export interface Props {

@@ -34,7 +34,10 @@ export default function MarkdownContainer(props: Props) {
             locale={props.locale}
           />
         ))}
-        <style dangerouslySetInnerHTML={{__html: `body{background-color: white;}`}}></style>
+        <style
+          dangerouslySetInnerHTML={{ __html: `body{background-color: white;}` }}
+        >
+        </style>
       </div>
     </section>
   );

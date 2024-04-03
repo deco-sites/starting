@@ -1,8 +1,4 @@
-import {
-  getBlogPath,
-  Post,
-  PostList,
-} from "site/components/utils/Blog.ts";
+import { getBlogPath, Post, PostList } from "site/components/utils/Blog.ts";
 import { PathObj } from "site/sections/BlogPostHeader.tsx";
 
 export type Props = {

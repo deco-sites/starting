@@ -190,7 +190,10 @@ function TemplatesGrid(props: Props) {
           ))}
         </div>
       </div>
-      <style dangerouslySetInnerHTML={{__html: `body{background-color: white;}`}}></style>
+      <style
+        dangerouslySetInnerHTML={{ __html: `body{background-color: white;}` }}
+      >
+      </style>
     </div>
   );
 }

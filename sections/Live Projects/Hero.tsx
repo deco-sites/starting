@@ -79,7 +79,10 @@ export default function Hero({
             </picture>
           </div>
         </div>
-        <style dangerouslySetInnerHTML={{__html: `body{background-color: white;}`}}></style>
+        <style
+          dangerouslySetInnerHTML={{ __html: `body{background-color: white;}` }}
+        >
+        </style>
       </div>
     </div>
   );

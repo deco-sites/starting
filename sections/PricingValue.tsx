@@ -1,6 +1,4 @@
-import PricingValue, {
-  Props,
-} from "site/components/ui/PricingValue.tsx";
+import PricingValue, { Props } from "site/components/ui/PricingValue.tsx";
 
 function PricingValueSection(props: Props) {
   return <PricingValue {...props} />;

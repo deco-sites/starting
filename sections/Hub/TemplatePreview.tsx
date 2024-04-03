@@ -1,7 +1,5 @@
 import IconArrowLeft from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/arrow-left.tsx";
-import Icon, {
-  AvailableIcons,
-} from "site/components/ui/Icon.tsx";
+import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 import { Template } from "site/components/ui/Types.tsx";
 import PageSpeed from "site/components/ui/PageSpeed.tsx";
 
