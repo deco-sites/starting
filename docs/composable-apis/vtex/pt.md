@@ -62,7 +62,7 @@ Depois disso, o `proxy.minhaloja.com` será a `URL Pública da Loja` necessária
 próxima etapa.
 
 A arquitetura final da configuração é:
-<img width="1066" alt="imagem" src="https://github.com/site/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
+<img width="1066" alt="image" src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bb7442a6-f0b0-4267-94a0-e104449b3213">
 
 **Importante:** Ao criar a URL secundária, você deve adicionar um
 `<meta name="robots" content="noindex">` no `<head>` após o Go Live para evitar
