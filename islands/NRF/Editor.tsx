@@ -17,15 +17,15 @@ import { EDITOR_TIMELINES } from "site/animations/timelines/editor.ts";
  * @title {{{key}}}
  */
 export interface EditorFeature {
-  title: string;
-  subtitle: string;
-  key: string;
-  id: string;
+  title?: string;
+  subtitle?: string;
+  key?: string;
+  id?: string;
 }
 
 export interface Props {
-  title: string;
-  features: EditorFeature[];
+  title?: string;
+  features?: EditorFeature[];
 }
 
 const AnimationComponents = {
@@ -173,7 +173,7 @@ export default function Editor({ title, features }: Props) {
               <li class="text-[#02F67C] text-[24px] font-medium mb-2">
                 {title}
               </li>
-              {features.map(({ key: section, id }, idx) => (
+              {features?.map(({ key: section, id }, idx) => (
                 <a class="flex items-center gap-2" href={`#${id}`}>
                   <div id={`feature-progress-wrapper-${idx}`} class="opacity-0">
                     <svg class="-rotate-90 h-4" viewBox="0 0 10 10" fill="none">
@@ -208,7 +208,7 @@ export default function Editor({ title, features }: Props) {
           </div>
           <div class="hidden lg:block">
             <div class="flex flex-col gap-32 max-w-[344px] z-10">
-              {features.map(({ title, subtitle, id }, idx) => (
+              {features?.map(({ title, subtitle, id }, idx) => (
                 <div
                   id={id}
                   class="feature-text flex-1 flex gap-20 min-h-screen items-center"
@@ -225,7 +225,7 @@ export default function Editor({ title, features }: Props) {
               <div class="h-[75vh]" />
             </div>
             <div class="flex flex-col gap-32 ml-auto">
-              {features.map(({ id }, idx) => (
+              {features?.map(({ id }, idx) => (
                 <div
                   id={`feature-image-${idx}`}
                   class="opacity-0 feature-image fixed h-screen left-[calc(50%+1.5rem)] top-0  flex items-center justify-center pointer-events-none z-10"
