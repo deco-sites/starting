@@ -10503,15 +10503,14 @@
   "./routes/[...catchall].tsx": {
     "audiences": [
       {
-        "__resolveType": "everyone"
-      },
-      {
+        "__resolveType": "$live/flags/everyone.ts",
         "routes": [
           {
             "isHref": true,
             "handler": {
               "value": {
-                "__resolveType": "website/handlers/sitemap.ts"
+                "__resolveType": "site/handlers/sitemap.ts",
+                "excludePaths": []
               }
             },
             "pathTemplate": "/sitemap.xml"
@@ -10568,18 +10567,17 @@
             },
             "pathTemplate": "/en"
           }
-        ],
-        "__resolveType": "$live/flags/everyone.ts"
+        ]
       },
       {
+        "__resolveType": "deco-sites/std/loaders/x/redirects.ts",
         "redirects": [
           {
             "to": "/",
             "from": "/pt/*",
             "type": "temporary"
           }
-        ],
-        "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+        ]
       }
     ],
     "__resolveType": "$live/handlers/routesSelection.ts"
