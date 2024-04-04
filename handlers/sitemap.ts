@@ -3,6 +3,7 @@ import type { Resolvable } from "deco/engine/core/resolver.ts";
 import { isResolvable } from "deco/engine/core/resolver.ts";
 import { ConnInfo } from "std/http/server.ts";
 import { Route } from "apps/website/flags/audience.ts";
+import tableOfContents from "site/docs/toc.ts";
 
 const isPage = (handler: Resolvable<Handler>) =>
   isResolvable(handler) &&
@@ -25,6 +26,27 @@ const buildSiteMap = (urls: string[]) => {
 };
 
 const sanitize = (url: string) => url.startsWith("/") ? url : `/${url}`;
+
+const getDocPages = () => {
+  const pages = [];
+
+  for (const entry of tableOfContents) {
+    if (entry.slug) {
+      pages.push(entry.slug);
+    }
+
+    if (entry.children) {
+      for (const child of entry.children) {
+        if (child.slug) {
+          pages.push(child.slug);
+        }
+      }
+    }
+  }
+
+  return pages;
+};
+
 const siteMapFromRoutes = (
   publicUrl: string,
   routes: Route[],
@@ -40,6 +62,13 @@ const siteMapFromRoutes = (
       urls.push(`${publicUrl}${sanitize(route.pathTemplate)}`);
     }
   }
+
+  const docPages = getDocPages();
+  for (const page of docPages) {
+    urls.push(`${publicUrl}/docs/en/${page}`);
+    urls.push(`${publicUrl}/docs/pt/${page}`);
+  }
+
   return buildSiteMap(urls);
 };
 
