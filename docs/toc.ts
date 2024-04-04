@@ -475,7 +475,7 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
-  {
+  /*{
     title: {
       pt: "Treinamento Comercial",
     },
@@ -559,7 +559,7 @@ const tableOfContents: TableOfContents = [
         slug: "treinamento-comercial/proximos-passos",
       },
     ],
-  },
+  },*/
 ];
 
 if (import.meta.main) {
