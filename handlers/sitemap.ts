@@ -29,7 +29,6 @@ const sanitize = (url: string) => url.startsWith("/") ? url : `/${url}`;
 
 const getDocPages = () => {
   const pages = [];
-
   for (const entry of tableOfContents) {
     if (entry.slug) {
       pages.push(entry.slug);
@@ -77,7 +76,7 @@ interface Props {
 }
 
 /**
- * @title Sitemap Custom deco.cx
+ * @title Sitemap Custom deco.cx 
  * @description Return deco's sitemap.xml
  */
 export default function SiteMap({ excludePaths = [] }: Props) {
