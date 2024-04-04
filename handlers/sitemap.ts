@@ -76,7 +76,7 @@ interface Props {
 }
 
 /**
- * @title Sitemap Custom deco.cx 
+ * @title Sitemap Custom deco.cx
  * @description Return deco's sitemap.xml
  */
 export default function SiteMap({ excludePaths = [] }: Props) {
