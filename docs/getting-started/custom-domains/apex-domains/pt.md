@@ -37,7 +37,7 @@ domínio Apex não sejam perdidos.
 5 - Agora, você verá os apontamentos que devem ser feitos na sua plataforma de
 hospedagem de domínio:
 
-![DNS Setup](https://github.com/deco-cx/apps/assets/76620866/ff13f321-58b2-4cc7-9015-5738dd31b849)
+![DNS Setup](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/70b54756-44d8-431b-9fba-2c533863541d)
 
 6 - Após realizar as configurações, clique em Validar Domínio.
 

@@ -37,7 +37,7 @@ Apex domain is not lost.
 5 - Now, you will see the settings that must be made in your domain hosting
 platform:
 
-![DNS Setup](https://github.com/deco-cx/apps/assets/76620866/ff13f321-58b2-4cc7-9015-5738dd31b849)
+![DNS Setup](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/70b54756-44d8-431b-9fba-2c533863541d)
 
 6 - After making the configurations, click on Validate Domain.
 
