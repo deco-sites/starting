@@ -58,7 +58,7 @@ After that, the `proxy.mystore.com` will be the `Public store URL` required on
 the next step
 
 The final architecture of the setup is:
-<img width="1066" alt="image" src="https://github.com/site/assets/1753396/bb49bc27-7632-4ef7-9c67-135dc40f0cc3">
+<img width="1066" alt="image" src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bb7442a6-f0b0-4267-94a0-e104449b3213">
 
 **Important:** When creating a secondary URL, you should add a
 `<meta name="robots" content="noindex">` in the `<head>` after Go Live to avoid
