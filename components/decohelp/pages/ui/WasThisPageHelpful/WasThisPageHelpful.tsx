@@ -31,10 +31,10 @@ export default function WasThisPageHelpfulContent({
     Button: {
       NegativeButtonLabel: "Not really",
       NegativeIcon:
-        "https://github.com/site/assets/76822093/4a74c587-0c97-4b24-b6c9-e9a8fdcd60b2",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c7ad809-b1b8-47ca-ba63-bb9e7399a5fa",
       PositiveButtonLabel: "Yes, thanks",
       PositiveIcon:
-        "https://github.com/site/assets/76822093/d29d1ea7-fbc0-4e3e-85e2-0458c197fb97",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5bae30a2-fb13-4c39-827f-7d9b273d7872",
     },
     Text:
       "Can't find what you're looking for? Spot an error in the documentation? Get in touch with us on our Community Forum",
