@@ -83,6 +83,7 @@ export default function FreePlan({
               __html: description
               }}
             />
+          <div class="flex flex-col items-center gap-2">
             <div class="flex flex-col items-start lg:flex-row gap-4">
               {cta?.map((item) => (
                 <a
@@ -90,7 +91,7 @@ export default function FreePlan({
                   id={item?.id}
                   href={item?.href ?? ""}
                   target={item?.href?.includes("http") ? "_blank" : "_self"}
-                  class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out ${
+                  class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out w-96 ${
                     item.variant === "Reverse"
                       ? "bg-[#113032] hover:from-[#113032] hover:to-[#0A1F1F] text-white hover:shadow-hero-reverse"
                       : "bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero"
@@ -104,9 +105,10 @@ export default function FreePlan({
                 </a>
               ))}
             </div>
-            <div>
+            <div class="text-xs">
               {disclaimer}
             </div>
+          </div>
           </div>
         </div>
         {showSpecialNrfVideo && (
