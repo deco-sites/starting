@@ -825,6 +825,9 @@
               "subtext": " "
             },
             {
+              "__resolveType": "Preview /sections/FreePlan.tsx"
+            },
+            {
               "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx",
               "cards": [
                 {
@@ -5735,7 +5738,14 @@
   "Preview /sections/FreePlan.tsx": {
     "__resolveType": "site/sections/FreePlan.tsx",
     "placement": "left",
-    "cta": []
+    "cta": [
+      {
+        "variant": "Normal",
+        "text": "Apply Now"
+      }
+    ],
+    "title": "<p><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">🎈Start-up Forever Free Plan 🎈</span></p>",
+    "description": "<p>If you are an early stage start-up, we got your back!&nbsp;We will do your company website with no charges at all.</p><p><br data-mce-bogus=\"1\"></p><p><strong>Implementation and subscription are on us forever</strong>. Just send us your Figma and consider it done. Apply below.</p>"
   },
   "Preview /sections/NRF/HeroFlat.tsx": {
     "__resolveType": "site/sections/NRF/HeroFlat.tsx",

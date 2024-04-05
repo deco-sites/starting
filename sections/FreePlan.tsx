@@ -12,6 +12,9 @@ export interface Props {
    * @format html
    */
   title: string;
+  /**
+   * @format html
+  */
   description?: string;
   image?: ImageWidget;
   videoMp4?: VideoWidget;
@@ -72,9 +75,12 @@ export default function FreePlan({
               }}
             >
             </div>
-            <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
-              {description}
-            </p>
+            <div
+              class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]"
+              dangerouslySetInnerHTML={{
+              __html: description
+              }}
+            />
             <div class="flex flex-col items-start lg:flex-row gap-4">
               {cta?.map((item) => (
                 <a
