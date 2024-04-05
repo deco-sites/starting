@@ -25,7 +25,7 @@ export function BlogPostCard({
           />
         </div>
         <div class="flex flex-col gap-4 p-8">
-          <h1 class="text-xl font-semi-medium leading-[130%] hover:text-[#4ADE80] tracking-[-0.3px]">
+          <h1 class="text-xl font-semi-medium leading-[130%] group-hover:text-[#4ADE80] tracking-[-0.3px]">
             {props.body[locale]?.title}
           </h1>
           <div class="text-base leading-[1.5] leading-[120%] tracking-[-0.4px]">
