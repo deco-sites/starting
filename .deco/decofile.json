@@ -797,6 +797,7 @@
               "__resolveType": "Deco Header [EN]"
             },
             {
+              "__resolveType": "site/sections/NRF/Pricing.tsx",
               "text": "Build, preview, and go live today. As you expand, take advantage of our usage-based pricing and pay only for what you need!",
               "title": "Simple pricing that follows your growth",
               "freePlan": {
@@ -811,20 +812,20 @@
                 "priceCustom": false
               },
               "paidPlans": [],
-              "recurrence": "per month",
-              "__resolveType": "site/sections/NRF/Pricing.tsx"
+              "recurrence": "per month"
             },
             {
               "text": "<p>for each</p><p>10,000 pageviews</p>",
+              "__resolveType": "site/sections/NRF/PricingValue.tsx",
               "price": "U$8",
               "button": {
                 "link": "https://deco.cx/admin",
                 "text": "Subscribe now"
               },
-              "subtext": " ",
-              "__resolveType": "site/sections/NRF/PricingValue.tsx"
+              "subtext": " "
             },
             {
+              "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx",
               "cards": [
                 {
                   "text": "Enhance conversion rates by offering a seamless navigation experience, increasing customer satisfaction & sales. Get more bang for your bucks!",
@@ -841,8 +842,7 @@
                   "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a038b983-fd62-4828-a54f-e764d1ddea9d",
                   "title": "Less PPC expenses"
                 }
-              ],
-              "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx"
+              ]
             },
             {
               "__resolveType": "Deco Footer [EN]"
@@ -5731,6 +5731,16 @@
     "SectionOnThisPage": {
       "__resolveType": "site/sections/OnThisPage.tsx"
     }
+  },
+  "Preview /sections/FreePlan.tsx": {
+    "__resolveType": "site/sections/FreePlan.tsx",
+    "placement": "left",
+    "cta": []
+  },
+  "Preview /sections/NRF/HeroFlat.tsx": {
+    "__resolveType": "site/sections/NRF/HeroFlat.tsx",
+    "placement": "left",
+    "cta": []
   },
   "Program": {
     "props": {
