@@ -9,11 +9,11 @@ export interface CTA {
 
 export interface Props {
   /**
-   * @format html
+   * @format rich-text
    */
   title: string;
   /**
-   * @format html
+   * @format rich-text
   */
   description?: string;
   image?: ImageWidget;
@@ -22,6 +22,7 @@ export interface Props {
   showSpecialNrfVideo?: boolean;
   placement: "left" | "right";
   cta?: CTA[];
+  disclaimer?: string;
 }
 
 const PLACEMENT = {
@@ -37,18 +38,19 @@ export default function FreePlan({
   videoWebm,
   placement,
   cta,
+  disclaimer,
   showSpecialNrfVideo,
 }: Props) {
   return (
-    <div class="bg-black lg:min-h-screen">
+    <div class="bg-black">
       <div class="mx-auto flex flex-col items-center gap-8">
         <div
-          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
+          class={`flex w-full xl:container xl:mx-auto py-8 mx-5 md:mx-10 z-10 ${
             image
               ? PLACEMENT[placement]
               : "flex-col items-center justify-center text-center"
           } ${
-            videoMp4 || videoWebm ? "lg: pt-28 pb-8" : "lg:py-28 lg:mt-48"
+            videoMp4 || videoWebm ? "lg: pt-28 pb-8" : "lg:py-28"
           } gap-12 md:gap-20 items-center`}
         >
           {image && (
@@ -101,6 +103,9 @@ export default function FreePlan({
                   </span>
                 </a>
               ))}
+            </div>
+            <div>
+              {disclaimer}
             </div>
           </div>
         </div>

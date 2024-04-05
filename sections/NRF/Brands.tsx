@@ -91,7 +91,7 @@ export default function Brands({ title, url, images }: Props) {
         class="flex flex-col gap-y-12"
       >
         <h2 class="text-white font-medium lg:text-[24px] leading-[100%] text-center z-10">
-          {title || TITLE}
+          {"title || TITLE"}
         </h2>
         <LogoSlider logos={list} />
       </a>
