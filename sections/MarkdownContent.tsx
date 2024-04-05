@@ -81,13 +81,13 @@ export default function DocsPage(
         </style>
       </Head>
       <div class="flex flex-col min-h-screen">
-        <div class="flex-1 px-4">
+        <div class="flex-1 flex flex-col gap-6 px-4">
           {props.data.title && (
             <h1 class="text-white text-[40px] font-semibold leading-[48px]">
               {props.data.title}
             </h1>
           )}
-          <div class="mx-auto max-w-screen-lg flex gap-6">
+          <div class="mx-auto max-w-full lg:max-w-screen-lg flex gap-6">
             <Content content={frontMatterContent} />
           </div>
         </div>
@@ -107,12 +107,12 @@ function Content(props: MDContent) {
   return (
     <main class="py-2 overflow-hidden">
       {attrs.since && (
-        <span class="bg-gray-100 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-[#FFFFFF14] dark:text-[#02F67C]">
+        <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-2 rounded dark:bg-[#FFFFFF14] dark:text-[#02F67C]">
           Version: {attrs.since}
         </span>
       )}
       <div
-        class="mt-6 markdown-body text-[#F9FAFB] bg-black"
+        class="mt-8 markdown-body !text-[#F9FAFB] !bg-black"
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </main>

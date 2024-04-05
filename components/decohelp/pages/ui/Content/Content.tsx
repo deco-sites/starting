@@ -71,11 +71,11 @@ export default function Page({
   WasThisPageHelpful,
 }: Props & WasThisPageHelpfulProps) {
   return (
-    <div class="mx-auto relative lg:mb-[40px] mb-[32px] lg:border-l-2 lg:border-[#D4DBD7] lg:px-[40px] lg:max-w-[calc((100vw-300px))]">
+    <div class="mx-auto relative lg:mb-[40px] mb-[32px] lg:px-10 lg:py-20 lg:max-w-[calc((100vw-560px))]">
       {/* <BreadCrumb homePath={homePath} homeLabel={homeLabel} /> */}
       <div class="w-full">
         <div class="w-full xl:px-0 lg:pl-0 px-6 relative z-0">
-          <div class="flex flex-col gap-[8px] lg:pt-0 pt-[161px]">
+          <div class="flex flex-col gap-8 lg:pt-0 pt-[161px]">
             {Title && (
               <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
                 {Title}
@@ -89,7 +89,7 @@ export default function Page({
             {PageContent?.length > 0
               ? (
                 PageContent.map(({ Type }) => (
-                  <div class="flex flex-col gap-[8px] w-full mx-auto mb-4">
+                  <div class="flex flex-col gap-[8px] w-full mx-auto">
                     {Type.map((item, idx) => (
                       <>
                         {renderContentItem(item, idx)}

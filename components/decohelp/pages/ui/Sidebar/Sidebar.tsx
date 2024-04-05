@@ -223,16 +223,18 @@ export default function Sidebar({
         />
       </div>
       <aside
-        class={`lg:max-w-[388px] w-full h-full lg:block ${
-          !isMobile ? "lg:pl-[64px]" : ""
+        class={`lg:max-w-[388px] w-full h-full lg:flex flex-col gap-10
+         lg:pt-10 ${
+          !isMobile ? "lg:pl-10 " : ""
         } ${isMenuOpen && isMobile ? "block z-20 pl-0 fixed" : "hidden"}`}
       >
+        <SearchButton />
         <ul
-          class={`flex flex-col lg:py-0 pb-[140px] lg:pl-0 pl-[24px] pr-[40px] max-h-full overflow-x-auto lg:pt-0 ${
+          class={`flex flex-col gap-2 lg:py-0 pb-[140px] lg:pl-0 pl-[24px] pr-[10px] lg:max-w-[224px] max-h-full overflow-x-auto lg:pt-0 lg:max-h-[80vh] ${
             isMenuOpen && isMobile ? "pr-[40px] pt-[40px] " : "pr-0 pt-[140px]"
           }`}
         >
-          <li class="flex items-center mb-[24px]">
+          {/* <li class="flex items-center mb-[24px]">
             {SidebarIcon && SidebarIcon.length > 0 && (
               <figure class="mr-2">
                 <Image src={SidebarIcon} alt={AltIcon} width={32} height={32} />
@@ -241,7 +243,7 @@ export default function Sidebar({
             <h2 class="text-[#2FD180] text-[28px] font-semibold leading-none">
               {SidebarTitle}
             </h2>
-          </li>
+          </li> */}
           {Subtitle && Subtitle.length > 0 && (
             <li class="my-[8px] ml-[25px]">
               <a
@@ -256,7 +258,6 @@ export default function Sidebar({
               </a>
             </li>
           )}
-          <SearchButton />
           {Topics &&
             Topics.map((topic, index) => {
               const isActive = isTopicActive(
@@ -266,19 +267,19 @@ export default function Sidebar({
                 index,
               );
               return (
-                <ul key={index} class="mt-2 mb-3 flex flex-col">
+                <ul key={index} class="flex flex-col gap-2">
                   <li
-                    class={`flex items-center p-2 cursor-pointer gap-2 ${
+                    class={`flex items-center p-2 cursor-pointer gap-2 justify-between ${
                       topic.SubTopics && topic.SubTopics.length > 0
                         ? ""
-                        : "ml-[24px]"
+                        : "text-[#4ADE80]"
                     }`}
                     onClick={(event) => {
                       event.stopPropagation();
                       toggleTopicMenu(index);
                     }}
                   >
-                    {topic.SubTopics && topic.SubTopics.length > 0 && (
+                    {/* {topic.SubTopics && topic.SubTopics.length > 0 && (
                       <Icon
                         class={`${openTopicIndex === index ? "rotate-90" : ""}`}
                         id="ChevronRight"
@@ -295,15 +296,23 @@ export default function Sidebar({
                         width={20}
                         height={20}
                       />
-                    )}
+                    )} */}
                     <a
                       href={topic?.LinkTopic}
-                      class="text-[#E7E5E4] text-[15px] font-semibold leading-tight cursor-pointer"
+                      class={`font-inter text-sm font-semibold leading-tight cursor-pointer ${
+                      isActive ? "text-[#4ADE80]" : "text-[#E7E5E4]"
+                    } ${
+                      topic.SubTopics && topic.SubTopics.length > 0
+                        ? ""
+                        : "!text-[#4ADE80]"
+                    }`}
                     >
                       {topic.label}
                     </a>
                     {topic.SubTopics && topic.SubTopics.length > 0 && (
-                      <span class="w-5 h-5 p-1 bg-[#FFFFFF1A] rounded-full text-[#FFFFFF80] text-[13px] font-semibold leading-tight flex items-center justify-center">
+                      <span class={`w-[20px] h-[20px] p-3 bg-[#FFFFFF1A] rounded-full font-inter text-[14px] font-medium leading-normal flex items-center justify-center ${
+                        isActive ? "text-[#4ADE80]" : "text-[#FFFFFF80]"
+                      }`}>
                         {topic.SubTopics.length}
                       </span>
                     )}
@@ -332,10 +341,10 @@ export default function Sidebar({
                           >
                             <a
                               href={subTopic.SidebarLink}
-                              class={`flex items-center pl-[32px] pr-2 py-2 text-[15px] leading-tight cursor-pointer ${
+                              class={`flex items-center px-2 py-3 font-inter text-xs leading-tight cursor-pointer ${
                                 isActiveSubTopic
                                   ? "text-[#4ADE80]"
-                                  : "text-[#E7E5E4] relative w-min-content hover:bg-[#F8F9F5]"
+                                  : "text-[#E7E5E4] relative w-min-content hover:bg-[#FFFFFF0D] hover:rounded-lg hover:text-[#86EFAC]"
                               }`}
                               style={getFontWeightStyle(
                                 fontWeightSubtopic.fontWeight || "normal",
