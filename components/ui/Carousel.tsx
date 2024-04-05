@@ -32,7 +32,7 @@ export default function Carousel({
     >
       <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto py-28">
         <Slider
-          class="relative gap-6 col-span-full row-start-2 row-end-5 auto-rows-fr hidden-scroll"
+          class="relative gap-11 col-span-full row-start-2 row-end-5 auto-rows-fr hidden-scroll"
           itemClass="h-full"
           snap="opacity-50 disabled:opacity-100 focus:outline-none h-full"
         >
@@ -40,7 +40,7 @@ export default function Carousel({
             return (
               <a
                 href={getBlogPath(card.path, locale)}
-                class="rounded-[8px] flex w-[402.66px] h-full"
+                class="group rounded-[8px] flex w-[402.66px] h-full"
               >
                 <article class="rounded-[8px] border-[1px] border-[2px] border-[#FFFFFF26] bg-[#FFFFFF0D] overflow-hidden backdrop-filter backdrop-blur-22">
                   <div>
@@ -63,7 +63,7 @@ export default function Carousel({
                           </p>
                         ))}
                       </div>
-                      <h1 class="font-normal not-italic text-left text-[20px] text-white opacity-[80%]leading-[1.18]">
+                      <h1 class="font-normal not-italic text-left text-[20px] text-white opacity-[80%]leading-[1.18] group-hover:text-[#4ADE80]">
                         {card.body[locale]?.title}
                       </h1>
                       <div class="text-base text-white leading-[1.5] line-clamp-2 overflow-ellipsis text-left">

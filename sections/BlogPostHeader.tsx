@@ -66,7 +66,7 @@ export default function BlogPostHeader(props: Props) {
         </div>
         <div class="flex text-white gap-2">
           <span>{post.date}</span>
-          <span>.</span>
+          <span>·</span>
           <span>{post.author}</span>
         </div>
       </div>
