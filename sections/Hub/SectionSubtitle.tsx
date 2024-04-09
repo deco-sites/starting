@@ -8,9 +8,9 @@ export default function SectionSubtitle(props: Props) {
   } = props;
 
   return (
-    <div class="lg:container mx-4">
-      <div class="container pt-6">
-        <h2 class="text-[20px] font-semibold leading-8 text-[#1F2937] text-center">
+    <div class="bg-black">
+      <div class="container">
+        <h2 class="text-[32px] font-semibold leading-[110%] text-white text-center tracking-[-0.64px]">
           {title}
         </h2>
       </div>

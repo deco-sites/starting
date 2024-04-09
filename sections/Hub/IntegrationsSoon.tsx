@@ -55,10 +55,10 @@ function Integrations(props: Props) {
   function Logo(element: Image) {
     return (
       <div
-        class="flex items-center justify-center w-[109px] sm:w-[138px] sl:w-[124px] sl:h-[110px] sm:h-[110px]  h-[100px] rounded-[20px]  md:w-[30%] lg:h-[120px] lg:w-[224px] md:h-[112px] bg-[#FFFFFF0D] border-[1.136px] border-[#FFFFFF26] backdrop-filter backdrop-blur-22 relative"
+        class="flex items-center justify-center w-[109px] sm:w-[138px] sl:w-[124px] rounded-[20px] md:w-[30%] lg:h-20 lg:w-[224px] backdrop-filter backdrop-blur-22 relative"
         style={{ "borderRadius": "16px" }}
       >
-        <div class="w-full h-full z-60 relative flex items-center justify-center px-[18px] py-1.5lg:px-14 lg:py-8 gap-1">
+        <div class="w-full h-full z-60 relative flex items-center justify-center px-[18px] py-2.5 lg:px-14 lg:py-4 gap-1">
         {element.mobile && (
           <Picture>
             <Source

@@ -14,16 +14,16 @@ export const COLORS = {
     fill: "#ccc",
   },
   "poor": {
-    text: "#c00",
+    text: "#f33",
     fill: "#f33",
   },
   "needs-improvement": {
-    text: "#c33300",
-    fill: "#fa3",
+    text: "#FFAA33",
+    fill: "#FFAA33",
   },
   "good": {
-    text: "#080",
-    fill: "#0c6",
+    text: "#02F67C",
+    fill: "#02F67C",
   },
 };
 
@@ -36,17 +36,17 @@ export const labelRating = (score?: number | null) =>
     ? "needs-improvement"
     : "poor";
 
-function PageSpeed({ score, size = 48, monochrome = false }: Partial<Props>) {
+function PageSpeed({ score, size = 56, monochrome = false }: Partial<Props>) {
   const dasharray = score ? (score / 100 * 351.858) - 4 : 351.858 - 4;
   const rating = labelRating(score);
 
   const colors = COLORS[monochrome ? "monochrome" : rating];
 
   return (
-    <div class="relative" style={{ width: size + "px", height: size + "px" }}>
+    <div class="relative bg-[#FFFFFF14] rounded-[100px] w-12 lg:w-14">
       <svg
         viewBox="0 0 120 120"
-        class="block align-middle"
+        class="block align-middle h-12 lg:h-14"
       >
         <circle
           r="56"
@@ -72,7 +72,7 @@ function PageSpeed({ score, size = 48, monochrome = false }: Partial<Props>) {
       <div class="w-full h-full absolute top-0 left-0 flex items-center justify-center">
         <span
           class={`flex-none text-[${
-            Math.round(size / 3.2) /* 15 for size 48 */
+            Math.round(size / 2.04) /* 15 for size 48 */
           }px] text-[${colors.text}]`}
         >
           {score !== null ? score : "?"}
