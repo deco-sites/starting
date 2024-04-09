@@ -137,22 +137,23 @@ import * as $$$$$$113 from "./sections/PopularDocuments.tsx";
 import * as $$$$$$114 from "./sections/PopularTopics.tsx";
 import * as $$$$$$115 from "./sections/Pricing.tsx";
 import * as $$$$$$116 from "./sections/PricingValue.tsx";
-import * as $$$$$$117 from "./sections/QuillText.tsx";
-import * as $$$$$$118 from "./sections/RankingAnalyze.tsx";
-import * as $$$$$$119 from "./sections/RankingHeader.tsx";
-import * as $$$$$$120 from "./sections/RankingList.tsx";
-import * as $$$$$$121 from "./sections/ReCAPTCHA.tsx";
-import * as $$$$$$122 from "./sections/SectionList.tsx";
-import * as $$$$$$123 from "./sections/Sidebar.tsx";
-import * as $$$$$$124 from "./sections/StripePricing.tsx";
-import * as $$$$$$125 from "./sections/Thanks.tsx";
-import * as $$$$$$126 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$127 from "./sections/TripletBanner.tsx";
-import * as $$$$$$128 from "./sections/WasThisPageHelpful.tsx";
-import * as $$$$$$129 from "./sections/Webinar/Content.tsx";
-import * as $$$$$$130 from "./sections/Webinar/Hero.tsx";
-import * as $$$$$$131 from "./sections/Whatsapp.tsx";
-import * as $$$$$$132 from "./sections/Why.tsx";
+import * as $$$$$$117 from "./sections/ProductHuntCTA.tsx";
+import * as $$$$$$118 from "./sections/QuillText.tsx";
+import * as $$$$$$119 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$120 from "./sections/RankingHeader.tsx";
+import * as $$$$$$121 from "./sections/RankingList.tsx";
+import * as $$$$$$122 from "./sections/ReCAPTCHA.tsx";
+import * as $$$$$$123 from "./sections/SectionList.tsx";
+import * as $$$$$$124 from "./sections/Sidebar.tsx";
+import * as $$$$$$125 from "./sections/StripePricing.tsx";
+import * as $$$$$$126 from "./sections/Thanks.tsx";
+import * as $$$$$$127 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$128 from "./sections/TripletBanner.tsx";
+import * as $$$$$$129 from "./sections/WasThisPageHelpful.tsx";
+import * as $$$$$$130 from "./sections/Webinar/Content.tsx";
+import * as $$$$$$131 from "./sections/Webinar/Hero.tsx";
+import * as $$$$$$132 from "./sections/Whatsapp.tsx";
+import * as $$$$$$133 from "./sections/Why.tsx";
 
 const manifest = {
   "functions": {
@@ -292,22 +293,23 @@ const manifest = {
     "site/sections/PopularTopics.tsx": $$$$$$114,
     "site/sections/Pricing.tsx": $$$$$$115,
     "site/sections/PricingValue.tsx": $$$$$$116,
-    "site/sections/QuillText.tsx": $$$$$$117,
-    "site/sections/RankingAnalyze.tsx": $$$$$$118,
-    "site/sections/RankingHeader.tsx": $$$$$$119,
-    "site/sections/RankingList.tsx": $$$$$$120,
-    "site/sections/ReCAPTCHA.tsx": $$$$$$121,
-    "site/sections/SectionList.tsx": $$$$$$122,
-    "site/sections/Sidebar.tsx": $$$$$$123,
-    "site/sections/StripePricing.tsx": $$$$$$124,
-    "site/sections/Thanks.tsx": $$$$$$125,
-    "site/sections/Theme/Theme.tsx": $$$$$$126,
-    "site/sections/TripletBanner.tsx": $$$$$$127,
-    "site/sections/WasThisPageHelpful.tsx": $$$$$$128,
-    "site/sections/Webinar/Content.tsx": $$$$$$129,
-    "site/sections/Webinar/Hero.tsx": $$$$$$130,
-    "site/sections/Whatsapp.tsx": $$$$$$131,
-    "site/sections/Why.tsx": $$$$$$132,
+    "site/sections/ProductHuntCTA.tsx": $$$$$$117,
+    "site/sections/QuillText.tsx": $$$$$$118,
+    "site/sections/RankingAnalyze.tsx": $$$$$$119,
+    "site/sections/RankingHeader.tsx": $$$$$$120,
+    "site/sections/RankingList.tsx": $$$$$$121,
+    "site/sections/ReCAPTCHA.tsx": $$$$$$122,
+    "site/sections/SectionList.tsx": $$$$$$123,
+    "site/sections/Sidebar.tsx": $$$$$$124,
+    "site/sections/StripePricing.tsx": $$$$$$125,
+    "site/sections/Thanks.tsx": $$$$$$126,
+    "site/sections/Theme/Theme.tsx": $$$$$$127,
+    "site/sections/TripletBanner.tsx": $$$$$$128,
+    "site/sections/WasThisPageHelpful.tsx": $$$$$$129,
+    "site/sections/Webinar/Content.tsx": $$$$$$130,
+    "site/sections/Webinar/Hero.tsx": $$$$$$131,
+    "site/sections/Whatsapp.tsx": $$$$$$132,
+    "site/sections/Why.tsx": $$$$$$133,
   },
   "matchers": {
     "site/matchers/MatchPath.ts": $$$$$$$0,
