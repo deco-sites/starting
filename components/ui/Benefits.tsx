@@ -14,28 +14,33 @@ export interface Props {
 
 export default function Benefits({ cards }: Props) {
   return (
-    <section class="bg-[#fff] flex justify-center items-center flex-col">
-      <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-1 lg:grid-cols-2 px-6 pb-[40px] md:pb-24 md:px-[2rem] max-w-screen-2xl mx-auto">
+    <section class="bg-[#000] flex justify-center items-center flex-col">
+      <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-1 lg:grid-cols-2 px-6 pb-[40px] md:p-20 md:px-[2rem] max-w-screen-2xl mx-auto">
         {cards?.map((card) => (
           <>
             <div
-              class="border-box relative flex flex-col p-[2px] rounded-lg lg:min-h-[220px]"
-              style="background: linear-gradient(225deg, rgba(9,95,93,0.1) 0%, rgba(3,196,115,0.8) 50%, rgba(9,95,93,0.1) 100%)"
+              class="border-box border border-[#FFFFFF26] relative flex flex-col p-8 rounded-[20px]"
+              style="background: linear-gradient(95deg, rgba(255, 255, 255, 0.12) 0.42%, rgba(255, 255, 255, 0.02) 98.11%);
+                     backdrop-filter: blur(22.840909957885742px);"
             >
               <a class="w-full h-full" href={card.href}>
-                <div class="bg-[#fff] rounded-lg h-full w-full flex flex-col gap-4 p-[40px]">
-                  <p class="flex gap-[16px] items-center font-inter not-italic font-medium text-[32px] leading-[38.5px] text-black">
+                <div class="flex gap-8 items-center">
+                  <div class="relative bg-[#FFFFFF0D] rounded-[55px] flex items-center p-6">
                     <Icon
-                      id={card.icon}
-                      width={40}
-                      height={40}
-                      strokeWidth={"1"}
+                          id={card.icon}
+                          width={40}
+                          height={40}
+                          strokeWidth={"1"}
                     />
-                    {card.title}
-                  </p>
-                  <p class="font-sans not-italic font-normal text-[22px] leading-[30px] text-black opacity-60">
-                    {card.text}
-                  </p>
+                  </div>
+                  <div class="h-full w-full flex flex-col gap-4">
+                    <p class="font-semibold text-[22px] lg:text-[32px] leading-[110%] text-white tracking-[-0.64px]">
+                      {card.title}
+                    </p>
+                    <p class="font-normal text-[13px] lg:text-[20px] leading-[30px] text-white tracking-[-0.4px]">
+                      {card.text}
+                    </p>
+                  </div>
                 </div>
               </a>
             </div>
