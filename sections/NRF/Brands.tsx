@@ -90,9 +90,11 @@ export default function Brands({ title, url, images }: Props) {
         target={url?.includes("http") ? "_blank" : "_self"}
         class="flex flex-col gap-y-12"
       >
-        {title && <h2 class="text-white font-medium lg:text-[24px] leading-[100%] text-center z-10">
-          {title}
-        </h2>}
+        {title && (
+          <h2 class="text-white font-medium lg:text-[24px] leading-[100%] text-center z-10">
+            {title}
+          </h2>
+        )}
         <LogoSlider logos={list} />
       </a>
     </div>

@@ -15,7 +15,7 @@ export interface Props {
 export default function Benefits({ cards }: Props) {
   return (
     <section class="bg-[#000] flex justify-center items-center flex-col">
-      <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-1 lg:grid-cols-2 px-6 pb-[40px] md:p-20 md:px-[2rem] max-w-screen-2xl mx-auto">
+      <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-1 lg:grid-cols-2 px-6 lg:px-16 pb-[40px] md:p-20 md:px-[2rem] max-w-screen-2xl mx-auto">
         {cards?.map((card) => (
           <>
             <div

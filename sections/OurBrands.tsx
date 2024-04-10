@@ -101,7 +101,7 @@ function OurBrands(props: Props) {
               <Logo key={element.href} {...element} />
             ))}
           </div>
-          <h3 class="text-white font-medium text-[16px] lg:text-[24px] leading-[100%] tracking-[-0.48px]">
+          <h3 class="text-white font-medium text-[16px] lg:text-[24px] leading-[100%] tracking-[-0.48px] pt-4">
             {news?.title}
           </h3>
           <div class="flex flex-wrap justify-center gap-2 md:gap-4">
