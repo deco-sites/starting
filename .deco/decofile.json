@@ -5016,7 +5016,7 @@
     ],
     "demo": {
       "title": "Watch our demo",
-      "visible": true
+      "visible": false
     },
     "tabs": [
       {
