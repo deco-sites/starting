@@ -265,7 +265,7 @@
               "__resolveType": "[pt] [mkt] Head"
             },
             {
-              "__resolveType": "Deco Header [EN]"
+              "__resolveType": "Deco Header [PT]"
             },
             {
               "__resolveType": "site/sections/BlogPostList.tsx",
@@ -295,7 +295,7 @@
         "__resolveType": "[pt] [mkt] Head"
       },
       {
-        "__resolveType": "Deco Header [EN]"
+        "__resolveType": "Deco Header [PT]"
       },
       {
         "__resolveType": "site/sections/Community.tsx",
@@ -4845,6 +4845,83 @@
       {
         "href": "/en/pricing",
         "label": "Pricing",
+        "nested": [],
+        "targetBlank": false
+      }
+    ],
+    "discordUrl": "https://discord.gg/YsGgt8EQCZ",
+    "linkedinUrl": "https://www.linkedin.com/company/deco-cx/",
+    "pageInitial": "for marketers",
+    "__resolveType": "site/sections/NRF/Header.tsx"
+  },
+  "Deco Header [PT]": {
+    "demo": {
+      "url": "https://www.deco.cx/en/contact-us",
+      "label": "Agende uma demo"
+    },
+    "sign": {
+      "label": "Create site",
+      "url": "https://admin.deco.cx/spaces/new"
+    },
+    "idiom": "Pt",
+    "login": {
+      "label": "Login",
+      "url": "https://admin.deco.cx/spaces/new"
+    },
+    "alerts": {
+      "mobile": [],
+      "desktop": []
+    },
+    "gitUrl": "https://github.com/deco-cx",
+    "menuLinks": [
+      {
+        "href": "/en/hub",
+        "label": "Hub",
+        "nested": []
+      },
+      {
+        "href": "/en/community",
+        "label": "Comunidade",
+        "nested": [],
+        "targetBlank": false
+      },
+      {
+        "href": "deco.cx",
+        "label": "Recursos",
+        "nested": [
+          {
+            "href": "https://deco.camp",
+            "label": "deco.camp",
+            "nested": [],
+            "targetBlank": true
+          },
+          {
+            "href": "/pt/blog",
+            "label": "Blog",
+            "nested": []
+          },
+          {
+            "href": "/pt/customer-stories",
+            "label": "Customer Stories",
+            "nested": []
+          },
+          {
+            "href": "/pt/live-projects",
+            "label": "Live Projects",
+            "nested": []
+          }
+        ],
+        "targetBlank": false
+      },
+      {
+        "href": "/docs/pt/overview",
+        "label": "Documentação",
+        "nested": [],
+        "targetBlank": false
+      },
+      {
+        "href": "/pt/pricing",
+        "label": "Preços",
         "nested": [],
         "targetBlank": false
       }
@@ -13421,7 +13498,7 @@
     "path": "/en/customer-stories",
     "sections": [
       {
-        "__resolveType": "Header - EN"
+        "__resolveType": "Deco Header [PT]"
       },
       {
         "__resolveType": "site/sections/Live Projects/Hero.tsx",
@@ -18240,20 +18317,21 @@
         "__resolveType": "[en] [mkt] Head"
       },
       {
-        "__resolveType": "Header - EN"
+        "__resolveType": "Deco Header [EN]"
       },
       {
+        "__resolveType": "site/sections/Hub/Heading.tsx",
         "alt": "Introdução",
         "title": "High-performance ecommerce resources. ",
         "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1925/ae97d4d8-d7b1-4732-8344-e3fed9e4e063",
         "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1925/0d0d6041-94bd-4ec8-91b1-3322f5bfcc33",
-        "subtitle": "Connect to any platform or third party service, deploy in one click.",
-        "__resolveType": "site/sections/Hub/Heading.tsx"
+        "subtitle": "Connect to any platform or third party service, deploy in one click."
       },
       {
         "__resolveType": "Templates Grid - EN"
       },
       {
+        "__resolveType": "site/sections/Hub/Advantage.tsx",
         "Benefits": [
           {
             "icon": "Time",
@@ -18275,17 +18353,16 @@
             "title": "Try for free",
             "subtitle": "Try the templates for free with your own products, brand colors, and customizations. One-time payment if you publish the website."
           }
-        ],
-        "__resolveType": "site/sections/Hub/Advantage.tsx"
+        ]
       },
       {
+        "__resolveType": "site/sections/Hub/SectionTitle.tsx",
         "label": "Integrations",
         "title": "One-click integrations",
         "layout": {
           "headerAlignment": "center"
         },
-        "description": "Connect with anything, from commerce platforms to any third-party APIs",
-        "__resolveType": "site/sections/Hub/SectionTitle.tsx"
+        "description": "Connect with anything, from commerce platforms to any third-party APIs"
       },
       {
         "title": "Current integrations",
@@ -18295,20 +18372,20 @@
         "__resolveType": "Current integrations"
       },
       {
-        "title": "Coming soon",
-        "__resolveType": "site/sections/Hub/SectionSubtitle.tsx"
+        "__resolveType": "site/sections/Hub/SectionSubtitle.tsx",
+        "title": "Coming soon"
       },
       {
         "__resolveType": "Coming soon integrations"
       },
       {
+        "__resolveType": "site/sections/Hub/SectionTitle.tsx",
         "label": "Agencies",
         "title": "Partner integrators",
         "layout": {
           "headerAlignment": "left"
         },
-        "description": "Work with deco's certified SI partners",
-        "__resolveType": "site/sections/Hub/SectionTitle.tsx"
+        "description": "Work with deco's certified SI partners"
       },
       {
         "__resolveType": "Agencies list"
@@ -18333,20 +18410,21 @@
         "__resolveType": "[pt] [mkt] Head"
       },
       {
-        "__resolveType": "Header - PT"
+        "__resolveType": "Deco Header [PT]"
       },
       {
+        "__resolveType": "site/sections/Hub/Heading.tsx",
         "alt": "Introdução",
         "title": "Recursos para ecommerces de alta performance. ",
         "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1925/ae97d4d8-d7b1-4732-8344-e3fed9e4e063",
         "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1925/0d0d6041-94bd-4ec8-91b1-3322f5bfcc33",
-        "subtitle": "Conecte-se a qualquer plataforma ou serviço de terceiros, faça deploy com um clique. ",
-        "__resolveType": "site/sections/Hub/Heading.tsx"
+        "subtitle": "Conecte-se a qualquer plataforma ou serviço de terceiros, faça deploy com um clique. "
       },
       {
         "__resolveType": "Templates Grid - PT"
       },
       {
+        "__resolveType": "site/sections/Hub/Advantage.tsx",
         "Benefits": [
           {
             "icon": "Time",
@@ -18368,12 +18446,11 @@
             "title": "Experimente grátis",
             "subtitle": "Experimente os templates gratuitamente com seus próprios produtos, cores e personalizações. Pagamento único e só se você publicar o site."
           }
-        ],
-        "__resolveType": "site/sections/Hub/Advantage.tsx"
+        ]
       },
       {
-        "title": "Integrações com um clique",
-        "__resolveType": "site/sections/Hub/SectionTitle.tsx"
+        "__resolveType": "site/sections/Hub/SectionTitle.tsx",
+        "title": "Integrações com um clique"
       },
       {
         "title": "Prontas para usar",
@@ -18383,19 +18460,19 @@
         "__resolveType": "Current integrations"
       },
       {
-        "title": "Em breve",
-        "__resolveType": "site/sections/Hub/SectionSubtitle.tsx"
+        "__resolveType": "site/sections/Hub/SectionSubtitle.tsx",
+        "title": "Em breve"
       },
       {
         "__resolveType": "Coming soon integrations"
       },
       {
+        "__resolveType": "site/sections/Hub/SectionTitle.tsx",
         "title": "Agências parceiras",
         "layout": {
           "headerAlignment": "left"
         },
-        "description": "Trabalhe com parceiros certificados em deco.cx",
-        "__resolveType": "site/sections/Hub/SectionTitle.tsx"
+        "description": "Trabalhe com parceiros certificados em deco.cx"
       },
       {
         "__resolveType": "Agencies list"
@@ -19053,9 +19130,10 @@
     "path": "/pt/live-projects",
     "sections": [
       {
-        "__resolveType": "Header - PT"
+        "__resolveType": "Deco Header [PT]"
       },
       {
+        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "Banner": {
           "bannerHero": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ed1c28ba-362e-49d8-9229-5ebd2820478a"
         },
@@ -19066,10 +19144,10 @@
           "titleGreenButton": "Agende uma demo",
           "titleWhiteButton": "Customer Stories"
         },
-        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "headlineSubtitle": "Descubra a deco.cx, a solução definitiva para um frontend rápido, simples e escalável. Una-se a marcas líderes, aumente sua conversão, crie experiências digitais inigualáveis e sites ultrarrápidos!"
       },
       {
+        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "list": [
           {
             "image": [
@@ -19245,7 +19323,6 @@
           }
         },
         "itensPerPage": 12,
-        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "indexCategories": [
           {
             "cards": [
@@ -19634,13 +19711,13 @@
         "__resolveType": "[en] Footer"
       },
       {
+        "__resolveType": "site/sections/Head.tsx",
         "url": "https://deco.cx/pt/live-projects",
         "title": "deco.cx | Live Projects",
         "imageUrl": "/decocx-meta-pt.png",
         "styleUrls": [],
         "themeColor": "#0A2121",
-        "description": "A plataforma de experiência digital que reúne desempenho e personalização na criação de sites incríveis.",
-        "__resolveType": "site/sections/Head.tsx"
+        "description": "A plataforma de experiência digital que reúne desempenho e personalização na criação de sites incríveis."
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -23621,7 +23698,7 @@
               "__resolveType": "GTM"
             },
             {
-              "__resolveType": "Header - PT"
+              "__resolveType": "Deco Header [EN]"
             },
             {
               "__resolveType": "PageContent"
@@ -24298,82 +24375,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "Deco Header [PT]": {
-    "demo": {
-      "url": "https://www.deco.cx/en/contact-us",
-      "label": "Book a demo"
-    },
-    "sign": {
-      "label": "Create site",
-      "url": "https://admin.deco.cx/spaces/new"
-    },
-    "idiom": "Eng",
-    "login": {
-      "label": "Login",
-      "url": "https://admin.deco.cx/spaces/new"
-    },
-    "alerts": {
-      "mobile": [],
-      "desktop": []
-    },
-    "gitUrl": "https://github.com/deco-cx",
-    "menuLinks": [
-      {
-        "href": "/en/hub",
-        "label": "Hub",
-        "nested": []
-      },
-      {
-        "href": "/en/community",
-        "label": "Comunidade",
-        "nested": [],
-        "targetBlank": false
-      },
-      {
-        "href": "deco.cx",
-        "label": "Recursos",
-        "nested": [
-          {
-            "href": "https://deco.camp",
-            "label": "deco.camp",
-            "nested": [],
-            "targetBlank": true
-          },
-          {
-            "href": "/pt/blog",
-            "label": "Blog",
-            "nested": []
-          },
-          {
-            "href": "/pt/customer-stories",
-            "label": "Customer Stories",
-            "nested": []
-          },
-          {
-            "href": "/pt/live-projects",
-            "label": "Live Projects",
-            "nested": []
-          }
-        ],
-        "targetBlank": false
-      },
-      {
-        "href": "/docs/pt/overview",
-        "label": "Documentação",
-        "nested": [],
-        "targetBlank": false
-      },
-      {
-        "href": "/pt/pricing",
-        "label": "Preços",
-        "nested": [],
-        "targetBlank": false
-      }
-    ],
-    "discordUrl": "https://discord.gg/YsGgt8EQCZ",
-    "linkedinUrl": "https://www.linkedin.com/company/deco-cx/",
-    "pageInitial": "for marketers",
-    "__resolveType": "site/sections/NRF/Header.tsx"
   }
 }
