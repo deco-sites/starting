@@ -1,7 +1,7 @@
 export default function FloatingButton() {
   return (
     <a
-      class="fixed bottom-0 items-center left-0 mx-[42%] mb-8 lg:m-8 z-20 hover:opacity-70"
+      class="fixed bottom-0 items-center left-0 mx-[42%] mb-8 lg:m-8 z-50 hover:opacity-70"
       href="https://www.producthunt.com/posts/deco-cx-2-0-beta?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-deco&#0045;cx&#0045;2&#0045;0&#0045;beta"
       target="_blank"
     >
