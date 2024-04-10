@@ -13126,9 +13126,10 @@
     "path": "/pt/customer-stories",
     "sections": [
       {
-        "__resolveType": "Header - PT"
+        "__resolveType": "Deco Header [PT]"
       },
       {
+        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "Banner": {
           "bannerHero": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c68e4364-bd65-4107-a910-b95139187356"
         },
@@ -13139,10 +13140,10 @@
           "titleGreenButton": "Agende uma demo",
           "titleWhiteButton": "Live Projects"
         },
-        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "headlineSubtitle": "Descubra como a deco.cx transformou negócios: conheça histórias de clientes que aumentaram suas vendas e conversões. Veja o impacto real e agende uma demo para impulsionarmos seu e-commerce."
       },
       {
+        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "list": [
           {
             "image": [
@@ -13318,7 +13319,6 @@
           }
         },
         "itensPerPage": 12,
-        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "indexCategories": [
           {
             "cards": [
@@ -24232,6 +24232,14 @@
     },
     "__resolveType": "website/loaders/redirect.ts"
   },
+  "redirects-advanced-s-928272": {
+    "redirect": {
+      "from": "/advanced-seo-configuration-and-theme-customization-video",
+      "to": "https://drive.google.com/file/d/1aDq8lZv3DwbTwoQh5Ae-c_sz7zuF_rwH/view",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
+  },
   "site": {
     "seo": {
       "type": "website",
@@ -24291,12 +24299,81 @@
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
   },
-  "redirects-advanced-s-928272": {
-    "redirect": {
-      "from": "/advanced-seo-configuration-and-theme-customization-video",
-      "to": "https://drive.google.com/file/d/1aDq8lZv3DwbTwoQh5Ae-c_sz7zuF_rwH/view",
-      "type": "temporary"
+  "Deco Header [PT]": {
+    "demo": {
+      "url": "https://www.deco.cx/en/contact-us",
+      "label": "Book a demo"
     },
-    "__resolveType": "website/loaders/redirect.ts"
+    "sign": {
+      "label": "Create site",
+      "url": "https://admin.deco.cx/spaces/new"
+    },
+    "idiom": "Eng",
+    "login": {
+      "label": "Login",
+      "url": "https://admin.deco.cx/spaces/new"
+    },
+    "alerts": {
+      "mobile": [],
+      "desktop": []
+    },
+    "gitUrl": "https://github.com/deco-cx",
+    "menuLinks": [
+      {
+        "href": "/en/hub",
+        "label": "Hub",
+        "nested": []
+      },
+      {
+        "href": "/en/community",
+        "label": "Comunidade",
+        "nested": [],
+        "targetBlank": false
+      },
+      {
+        "href": "deco.cx",
+        "label": "Recursos",
+        "nested": [
+          {
+            "href": "https://deco.camp",
+            "label": "deco.camp",
+            "nested": [],
+            "targetBlank": true
+          },
+          {
+            "href": "/pt/blog",
+            "label": "Blog",
+            "nested": []
+          },
+          {
+            "href": "/pt/customer-stories",
+            "label": "Customer Stories",
+            "nested": []
+          },
+          {
+            "href": "/pt/live-projects",
+            "label": "Live Projects",
+            "nested": []
+          }
+        ],
+        "targetBlank": false
+      },
+      {
+        "href": "/docs/pt/overview",
+        "label": "Documentação",
+        "nested": [],
+        "targetBlank": false
+      },
+      {
+        "href": "/pt/pricing",
+        "label": "Preços",
+        "nested": [],
+        "targetBlank": false
+      }
+    ],
+    "discordUrl": "https://discord.gg/YsGgt8EQCZ",
+    "linkedinUrl": "https://www.linkedin.com/company/deco-cx/",
+    "pageInitial": "for marketers",
+    "__resolveType": "site/sections/NRF/Header.tsx"
   }
 }
