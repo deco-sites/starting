@@ -11435,7 +11435,7 @@
       "variants": [
         {
           "rule": {
-            "__resolveType": "website/matchers/never.ts"
+            "__resolveType": "website/matchers/always.ts"
           },
           "value": [
             {
@@ -11498,77 +11498,6 @@
             },
             {
               "__resolveType": "Deco Footer [EN]"
-            }
-          ]
-        },
-        {
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          },
-          "value": [
-            {
-              "post": {
-                "page": {
-                  "__resolveType": "site/functions/LoadPageProps.ts"
-                },
-                "postList": {
-                  "__resolveType": "blogposts"
-                },
-                "__resolveType": "site/loaders/blogPostDetailsLoader.ts"
-              },
-              "locale": "en",
-              "__resolveType": "site/sections/BlogPostSEO.tsx",
-              "titleTemplate": "deco.cx - %s "
-            },
-            {
-              "__resolveType": "GTM"
-            },
-            {
-              "page": {
-                "__resolveType": "7946"
-              },
-              "__resolveType": "$live/sections/PageInclude.tsx"
-            },
-            {
-              "page": {
-                "__resolveType": "site/functions/LoadPageProps.ts"
-              },
-              "postList": {
-                "__resolveType": "blogposts"
-              },
-              "backToBlog": "Back to blog",
-              "__resolveType": "site/sections/BlogPostHeader.tsx"
-            },
-            {
-              "post": {
-                "list": {
-                  "__resolveType": "blogposts"
-                },
-                "slug": {
-                  "param": "path",
-                  "__resolveType": "deco-sites/std/functions/requestToParam.ts"
-                },
-                "__resolveType": "site/loaders/blogPostMarkdownLoader.ts"
-              },
-              "text": "test",
-              "__resolveType": "site/sections/Markdown.tsx"
-            },
-            {
-              "cards": {
-                "page": {
-                  "__resolveType": "site/functions/LoadPageProps.ts"
-                },
-                "postList": {
-                  "__resolveType": "blogposts"
-                },
-                "__resolveType": "site/loaders/featuredPosts.ts"
-              },
-              "locale": "en",
-              "__resolveType": "site/sections/Carousel.tsx",
-              "bottomPadding": "96px"
-            },
-            {
-              "__resolveType": "[en] Footer"
             }
           ]
         }
