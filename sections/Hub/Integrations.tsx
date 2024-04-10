@@ -59,26 +59,28 @@ function Integrations(props: Props) {
         style={{ "borderRadius": "16px" }}
       >
         <div class="w-full h-full z-60 relative flex items-center justify-center px-[18px] py-1.5lg:px-14 lg:py-8 gap-1">
-        {element.mobile && (
-          <Picture>
-            <Source
-              media="(max-width: 767px)"
-              src={element.mobile}
-              width={60}
-              class=""
-            />
-            <Source
-              media="(min-width: 768px)"
-              src={element.desktop ? element.desktop : element.mobile}
-              width={110}
-            />
-            <img
-              class="object-contain sm:w-[70px] sm:h-[60px] md:w-[90px] lg:w-[110px]"
-              src={element.mobile}
-            />
-          </Picture>
+          {element.mobile && (
+            <Picture>
+              <Source
+                media="(max-width: 767px)"
+                src={element.mobile}
+                width={60}
+                class=""
+              />
+              <Source
+                media="(min-width: 768px)"
+                src={element.desktop ? element.desktop : element.mobile}
+                width={110}
+              />
+              <img
+                class="object-contain sm:w-[70px] sm:h-[60px] md:w-[90px] lg:w-[110px]"
+                src={element.mobile}
+              />
+            </Picture>
           )}
-          <span class="text-center lg:text-[1.5rem] font-semibold leading-[100%] text-white tracking-[-0.48px]">{element?.label}</span>
+          <span class="text-center lg:text-[1.5rem] font-semibold leading-[100%] text-white tracking-[-0.48px]">
+            {element?.label}
+          </span>
           <div
             class={`${
               element.active ? "hidden" : "hidden"

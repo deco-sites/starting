@@ -158,23 +158,23 @@ import * as $$$$$$134 from "./sections/Why.tsx";
 
 const manifest = {
   "functions": {
-    "site/functions/LoadGitHubRaw.ts": $0,
-    "site/functions/LoadGitHubRawPost.ts": $1,
-    "site/functions/LoadGitHubRawPostList.ts": $2,
-    "site/functions/LoadPageProps.ts": $3,
-    "site/functions/psiRankingList.ts": $4,
+    "site/functions/LoadGitHubRaw.ts": $$0,
+    "site/functions/LoadGitHubRawPost.ts": $$1,
+    "site/functions/LoadGitHubRawPostList.ts": $$2,
+    "site/functions/LoadPageProps.ts": $$3,
+    "site/functions/psiRankingList.ts": $$4,
   },
   "loaders": {
-    "site/loaders/blogPostDetailsLoader.ts": $$$0,
-    "site/loaders/blogPostLoader.ts": $$$1,
-    "site/loaders/blogPostMarkdownLoader.ts": $$$2,
-    "site/loaders/denoLoader.ts": $$$3,
-    "site/loaders/denoTopicsLoader.ts": $$$4,
-    "site/loaders/featuredPosts.ts": $$$5,
+    "site/loaders/blogPostDetailsLoader.ts": $$$$0,
+    "site/loaders/blogPostLoader.ts": $$$$1,
+    "site/loaders/blogPostMarkdownLoader.ts": $$$$2,
+    "site/loaders/denoLoader.ts": $$$$3,
+    "site/loaders/denoTopicsLoader.ts": $$$$4,
+    "site/loaders/featuredPosts.ts": $$$$5,
   },
   "handlers": {
-    "site/handlers/feed.ts": $$$$0,
-    "site/handlers/sitemap.ts": $$$$1,
+    "site/handlers/feed.ts": $$$$$0,
+    "site/handlers/sitemap.ts": $$$$$1,
   },
   "sections": {
     "site/sections/About.tsx": $$$$$$0,
@@ -314,15 +314,15 @@ const manifest = {
     "site/sections/Why.tsx": $$$$$$134,
   },
   "matchers": {
-    "site/matchers/MatchPath.ts": $$$$$$$0,
+    "site/matchers/MatchPath.ts": $$$$$$$$0,
   },
   "actions": {
-    "site/actions/feedbackDocs.ts": $$$$$$$$$0,
-    "site/actions/startAlgoliaCrawler.ts": $$$$$$$$$1,
+    "site/actions/feedbackDocs.ts": $$$$$$$$$$0,
+    "site/actions/startAlgoliaCrawler.ts": $$$$$$$$$$1,
   },
   "apps": {
-    "site/apps/decohub.ts": $$$$$$$$$$$0,
-    "site/apps/site.ts": $$$$$$$$$$$1,
+    "site/apps/decohub.ts": $$$$$$$$$$$$0,
+    "site/apps/site.ts": $$$$$$$$$$$$1,
   },
   "name": "site",
   "baseUrl": import.meta.url,

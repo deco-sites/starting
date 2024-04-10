@@ -110,293 +110,142 @@
   "9323": {
     "name": "Blog post PT",
     "path": "/pt/blog/:path",
-    "sections": {
-      "variants": [
-        {
-          "rule": {
-            "__resolveType": "website/matchers/never.ts"
+    "sections": [
+      {
+        "post": {
+          "page": {
+            "__resolveType": "site/functions/LoadPageProps.ts"
           },
-          "value": [
-            {
-              "post": {
-                "page": {
-                  "__resolveType": "site/functions/LoadPageProps.ts"
-                },
-                "postList": {
-                  "__resolveType": "blogposts"
-                },
-                "__resolveType": "site/loaders/blogPostDetailsLoader.ts"
-              },
-              "locale": "pt",
-              "__resolveType": "site/sections/BlogPostSEO.tsx",
-              "titleTemplate": "deco.cx - %s"
-            },
-            {
-              "__resolveType": "GTM"
-            },
-            {
-              "__resolveType": "Header - PT"
-            },
-            {
-              "page": {
-                "__resolveType": "site/functions/LoadPageProps.ts"
-              },
-              "postList": {
-                "__resolveType": "blogposts"
-              },
-              "__resolveType": "site/sections/BlogPostHeader.tsx"
-            },
-            {
-              "post": {
-                "list": {
-                  "__resolveType": "blogposts"
-                },
-                "slug": {
-                  "param": "path",
-                  "__resolveType": "deco-sites/std/functions/requestToParam.ts"
-                },
-                "__resolveType": "site/loaders/blogPostMarkdownLoader.ts"
-              },
-              "text": "test",
-              "__resolveType": "site/sections/Markdown.tsx"
-            },
-            {
-              "cards": {
-                "0": {
-                  "url": "https://www.deco.cx/pt/blog/como-a-deco-faz-sua-loja-converter-mais.md",
-                  "date": "14 Abril 2023",
-                  "text": "Como a deco faz sua loja converter mais",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0faedaff-7d62-4222-a728-296385ae1eb8",
-                  "title": "BUSINESS",
-                  "author": "Rafael Crespo",
-                  "writtenByLabel": "Escrito por"
-                },
-                "1": {
-                  "url": "https://www.deco.cx/pt/blog/abertura-ii-hackathon-deco.md",
-                  "date": "29 Novembro 2022",
-                  "text": "América Latina e o futuro das experiências digitais",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bd0a9840-15d8-49b7-94f3-2ca2dba4ad50",
-                  "title": "BUSINESS",
-                  "author": "Guilherme Rodrigues",
-                  "writtenByLabel": "Escrito por"
-                },
-                "2": {
-                  "url": "https://www.deco.cx/pt/blog/criando-uma-pagina-com-decocx.md",
-                  "date": "01 Março 2023",
-                  "text": "Minha experiência com deco.cx",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ebbdf003-9984-4b36-9cfc-818b62cea2f3",
-                  "title": "BUSINESS",
-                  "author": "Guilherme Tavano",
-                  "writtenByLabel": "Escrito por"
-                },
-                "3": {
-                  "url": "https://www.deco.cx/pt/blog/pg-vb-pt-br.md",
-                  "date": "29 Novembro 2022",
-                  "text": "A vida é curta",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43feee59-8e8a-42a0-97a8-af7d4ac31ea6",
-                  "title": "BUSINESS",
-                  "author": "Paul Graham",
-                  "writtenByLabel": "Escrito por"
-                },
-                "page": {
-                  "__resolveType": "site/functions/LoadPageProps.ts"
-                },
-                "postList": {
-                  "__resolveType": "blogposts"
-                },
-                "__resolveType": "site/loaders/featuredPosts.ts"
-              },
-              "images": [
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff8801e3-bf33-40d2-8037-3229b558aa77",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0ae3ef7e-a50d-412e-ad4d-6c96d75679fa"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7348ec03-a5db-4f01-bba7-545182dbd959",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5b68e95-5cfa-4c58-bd08-885077f6f2c1"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c3e867b-e862-4e55-9a8d-fd8a93c0a9b7",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98826707-7e42-4eb6-be7e-5d7dcf61ce69"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f325ab19-5779-4533-87f5-d214a45c88a0",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/008ecb21-f953-4c88-ad13-16775ca93c8a"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8c4ad9d9-d034-4ae1-863a-d7dd422c4096",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91c6d097-461e-4f17-8d95-1c710bf2a4d8"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d896d2b-a45c-44d6-b98f-b92cda60ddc8",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2b4a85be-e327-403a-88e6-0f04d83d32e1"
-                }
-              ],
-              "locale": "pt",
-              "__resolveType": "site/sections/Carousel.tsx",
-              "bottomPadding": "96px"
-            },
-            {
-              "__resolveType": "[pt] Footer"
-            }
-          ]
+          "postList": {
+            "__resolveType": "blogposts"
+          },
+          "__resolveType": "site/loaders/blogPostDetailsLoader.ts"
         },
-        {
-          "rule": {
-            "__resolveType": "website/matchers/always.ts"
-          },
-          "value": [
-            {
-              "post": {
-                "page": {
-                  "__resolveType": "site/functions/LoadPageProps.ts"
-                },
-                "postList": {
-                  "__resolveType": "blogposts"
-                },
-                "__resolveType": "site/loaders/blogPostDetailsLoader.ts"
-              },
-              "locale": "pt",
-              "__resolveType": "site/sections/BlogPostSEO.tsx",
-              "titleTemplate": "deco.cx - %s"
-            },
-            {
-              "__resolveType": "GTM"
-            },
-            {
-              "__resolveType": "Header - PT"
-            },
-            {
-              "page": {
-                "__resolveType": "site/functions/LoadPageProps.ts"
-              },
-              "postList": {
-                "__resolveType": "blogposts"
-              },
-              "__resolveType": "site/sections/BlogPostHeader.tsx"
-            },
-            {
-              "post": {
-                "list": {
-                  "__resolveType": "blogposts"
-                },
-                "slug": {
-                  "param": "path",
-                  "__resolveType": "deco-sites/std/functions/requestToParam.ts"
-                },
-                "__resolveType": "site/loaders/blogPostMarkdownLoader.ts"
-              },
-              "text": "test",
-              "__resolveType": "site/sections/Markdown.tsx"
-            },
-            {
-              "cards": {
-                "0": {
-                  "url": "https://www.deco.cx/pt/blog/como-a-deco-faz-sua-loja-converter-mais.md",
-                  "date": "14 Abril 2023",
-                  "text": "Como a deco faz sua loja converter mais",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0faedaff-7d62-4222-a728-296385ae1eb8",
-                  "title": "BUSINESS",
-                  "author": "Rafael Crespo",
-                  "writtenByLabel": "Escrito por"
-                },
-                "1": {
-                  "url": "https://www.deco.cx/pt/blog/abertura-ii-hackathon-deco.md",
-                  "date": "29 Novembro 2022",
-                  "text": "América Latina e o futuro das experiências digitais",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bd0a9840-15d8-49b7-94f3-2ca2dba4ad50",
-                  "title": "BUSINESS",
-                  "author": "Guilherme Rodrigues",
-                  "writtenByLabel": "Escrito por"
-                },
-                "2": {
-                  "url": "https://www.deco.cx/pt/blog/criando-uma-pagina-com-decocx.md",
-                  "date": "01 Março 2023",
-                  "text": "Minha experiência com deco.cx",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ebbdf003-9984-4b36-9cfc-818b62cea2f3",
-                  "title": "BUSINESS",
-                  "author": "Guilherme Tavano",
-                  "writtenByLabel": "Escrito por"
-                },
-                "3": {
-                  "url": "https://www.deco.cx/pt/blog/pg-vb-pt-br.md",
-                  "date": "29 Novembro 2022",
-                  "text": "A vida é curta",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43feee59-8e8a-42a0-97a8-af7d4ac31ea6",
-                  "title": "BUSINESS",
-                  "author": "Paul Graham",
-                  "writtenByLabel": "Escrito por"
-                },
-                "page": {
-                  "__resolveType": "site/functions/LoadPageProps.ts"
-                },
-                "postList": {
-                  "__resolveType": "blogposts"
-                },
-                "__resolveType": "site/loaders/featuredPosts.ts"
-              },
-              "images": [
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff8801e3-bf33-40d2-8037-3229b558aa77",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0ae3ef7e-a50d-412e-ad4d-6c96d75679fa"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7348ec03-a5db-4f01-bba7-545182dbd959",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5b68e95-5cfa-4c58-bd08-885077f6f2c1"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c3e867b-e862-4e55-9a8d-fd8a93c0a9b7",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98826707-7e42-4eb6-be7e-5d7dcf61ce69"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f325ab19-5779-4533-87f5-d214a45c88a0",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/008ecb21-f953-4c88-ad13-16775ca93c8a"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8c4ad9d9-d034-4ae1-863a-d7dd422c4096",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91c6d097-461e-4f17-8d95-1c710bf2a4d8"
-                },
-                {
-                  "text": "Boosting your store speed and optimizing sales",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d896d2b-a45c-44d6-b98f-b92cda60ddc8",
-                  "title": "BUSINESS",
-                  "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2b4a85be-e327-403a-88e6-0f04d83d32e1"
-                }
-              ],
-              "locale": "pt",
-              "__resolveType": "site/sections/Carousel.tsx",
-              "bottomPadding": "96px"
-            },
-            {
-              "__resolveType": "[pt] Footer"
-            }
-          ]
+        "locale": "pt",
+        "__resolveType": "site/sections/BlogPostSEO.tsx",
+        "titleTemplate": "deco.cx - %s"
+      },
+      {
+        "__resolveType": "GTM"
+      },
+      {
+        "__resolveType": "Deco Header [EN]"
+      },
+      {
+        "__resolveType": "site/sections/BlogPostHeader.tsx",
+        "page": {
+          "__resolveType": "site/functions/LoadPageProps.ts"
+        },
+        "postList": {
+          "__resolveType": "blogposts"
         }
-      ],
-      "__resolveType": "website/flags/multivariate.ts"
-    },
+      },
+      {
+        "__resolveType": "site/sections/Markdown.tsx",
+        "post": {
+          "list": {
+            "__resolveType": "blogposts"
+          },
+          "slug": {
+            "param": "path",
+            "__resolveType": "deco-sites/std/functions/requestToParam.ts"
+          },
+          "__resolveType": "site/loaders/blogPostMarkdownLoader.ts"
+        },
+        "text": "test"
+      },
+      {
+        "__resolveType": "site/sections/Carousel.tsx",
+        "cards": {
+          "0": {
+            "url": "https://www.deco.cx/pt/blog/como-a-deco-faz-sua-loja-converter-mais.md",
+            "date": "14 Abril 2023",
+            "text": "Como a deco faz sua loja converter mais",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0faedaff-7d62-4222-a728-296385ae1eb8",
+            "title": "BUSINESS",
+            "author": "Rafael Crespo",
+            "writtenByLabel": "Escrito por"
+          },
+          "1": {
+            "url": "https://www.deco.cx/pt/blog/abertura-ii-hackathon-deco.md",
+            "date": "29 Novembro 2022",
+            "text": "América Latina e o futuro das experiências digitais",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bd0a9840-15d8-49b7-94f3-2ca2dba4ad50",
+            "title": "BUSINESS",
+            "author": "Guilherme Rodrigues",
+            "writtenByLabel": "Escrito por"
+          },
+          "2": {
+            "url": "https://www.deco.cx/pt/blog/criando-uma-pagina-com-decocx.md",
+            "date": "01 Março 2023",
+            "text": "Minha experiência com deco.cx",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ebbdf003-9984-4b36-9cfc-818b62cea2f3",
+            "title": "BUSINESS",
+            "author": "Guilherme Tavano",
+            "writtenByLabel": "Escrito por"
+          },
+          "3": {
+            "url": "https://www.deco.cx/pt/blog/pg-vb-pt-br.md",
+            "date": "29 Novembro 2022",
+            "text": "A vida é curta",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43feee59-8e8a-42a0-97a8-af7d4ac31ea6",
+            "title": "BUSINESS",
+            "author": "Paul Graham",
+            "writtenByLabel": "Escrito por"
+          },
+          "page": {
+            "__resolveType": "site/functions/LoadPageProps.ts"
+          },
+          "postList": {
+            "__resolveType": "blogposts"
+          },
+          "__resolveType": "site/loaders/featuredPosts.ts"
+        },
+        "images": [
+          {
+            "text": "Boosting your store speed and optimizing sales",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff8801e3-bf33-40d2-8037-3229b558aa77",
+            "title": "BUSINESS",
+            "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0ae3ef7e-a50d-412e-ad4d-6c96d75679fa"
+          },
+          {
+            "text": "Boosting your store speed and optimizing sales",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7348ec03-a5db-4f01-bba7-545182dbd959",
+            "title": "BUSINESS",
+            "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5b68e95-5cfa-4c58-bd08-885077f6f2c1"
+          },
+          {
+            "text": "Boosting your store speed and optimizing sales",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c3e867b-e862-4e55-9a8d-fd8a93c0a9b7",
+            "title": "BUSINESS",
+            "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98826707-7e42-4eb6-be7e-5d7dcf61ce69"
+          },
+          {
+            "text": "Boosting your store speed and optimizing sales",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f325ab19-5779-4533-87f5-d214a45c88a0",
+            "title": "BUSINESS",
+            "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/008ecb21-f953-4c88-ad13-16775ca93c8a"
+          },
+          {
+            "text": "Boosting your store speed and optimizing sales",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8c4ad9d9-d034-4ae1-863a-d7dd422c4096",
+            "title": "BUSINESS",
+            "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91c6d097-461e-4f17-8d95-1c710bf2a4d8"
+          },
+          {
+            "text": "Boosting your store speed and optimizing sales",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d896d2b-a45c-44d6-b98f-b92cda60ddc8",
+            "title": "BUSINESS",
+            "author": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2b4a85be-e327-403a-88e6-0f04d83d32e1"
+          }
+        ],
+        "locale": "pt",
+        "bottomPadding": "96px"
+      },
+      {
+        "__resolveType": "Deco Footer [EN]"
+      }
+    ],
     "__resolveType": "$live/pages/LivePage.tsx"
   },
   "9819": {
@@ -416,17 +265,17 @@
               "__resolveType": "[pt] [mkt] Head"
             },
             {
-              "__resolveType": "Header - PT"
+              "__resolveType": "Deco Header [EN]"
             },
             {
+              "__resolveType": "site/sections/BlogPostList.tsx",
               "locale": "pt",
               "postList": {
                 "__resolveType": "blogposts"
-              },
-              "__resolveType": "site/sections/BlogPostList.tsx"
+              }
             },
             {
-              "__resolveType": "[pt] Footer"
+              "__resolveType": "Deco Footer [EN]"
             }
           ]
         }
@@ -446,13 +295,13 @@
         "__resolveType": "[pt] [mkt] Head"
       },
       {
-        "__resolveType": "Header - PT"
+        "__resolveType": "Deco Header [EN]"
       },
       {
+        "__resolveType": "site/sections/Community.tsx",
         "mainText": "Apoiados por uma comunidade de +1000 membros",
         "secondText": "Já estamos construindo a maior comunidade de e-commerce multiplataforma - da América Latina para o mundo. Aqui você encontrará:",
         "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/36e19f8f-5cdc-43b0-a51f-82d506c85544",
-        "__resolveType": "site/sections/Community.tsx",
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
         "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1dac25d-5eaf-412c-a513-0a5685955ae0",
         "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/434db95e-5597-429a-855f-4c863e1df06e",
@@ -460,6 +309,7 @@
         "labelSecondButton": "Junte-se a nós"
       },
       {
+        "__resolveType": "site/sections/Benefits.tsx",
         "cards": [
           {
             "href": "https://discord.gg/YsGgt8EQCZ",
@@ -485,11 +335,10 @@
             "text": "Oferecemos suporte especializado para ajudar a solucionar problemas técnicos e responder perguntas sobre nossa plataforma e tecnologias.",
             "title": "Suporte"
           }
-        ],
-        "__resolveType": "site/sections/Benefits.tsx"
+        ]
       },
       {
-        "__resolveType": "[pt] Footer"
+        "__resolveType": "Deco Footer [EN]"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -624,17 +473,17 @@
               "__resolveType": "[en] [mkt] Head"
             },
             {
-              "__resolveType": "Header - EN"
+              "__resolveType": "Deco Header [EN]"
             },
             {
+              "__resolveType": "site/sections/BlogPostList.tsx",
               "locale": "en",
               "postList": {
                 "__resolveType": "blogposts"
-              },
-              "__resolveType": "site/sections/BlogPostList.tsx"
+              }
             },
             {
-              "__resolveType": "[en] Footer"
+              "__resolveType": "Deco Footer [EN]"
             }
           ]
         }
@@ -2075,20 +1924,21 @@
         "__resolveType": "[en] [mkt] Head"
       },
       {
-        "__resolveType": "Header - EN"
+        "__resolveType": "Deco Header [EN]"
       },
       {
-        "mainText": "Backed up by a community of 1000+ members",
-        "secondText": "We are already building the largest multiplatform e-commerce community -from Latin America to the world. Here you will find:",
-        "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a5559783-e2ea-47f3-9128-6a1d78f62076",
         "__resolveType": "site/sections/Community.tsx",
+        "mainText": "Backed up by a community of 2800+ members",
+        "secondText": "We are building the largest multiplatform e-commerce community — gathering the Elite Web Development on the mission to simplify the web itself.",
+        "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/14b49a10-dccf-4609-8025-ac5feb6afcdc",
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
         "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5d50b76b-b8aa-4fd1-8422-66263d3a9e00",
         "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5a2b8dad-e7d6-434a-b1d2-0a95495573fc",
         "hrefSecondButton": "https://discord.gg/YsGgt8EQCZ",
-        "labelSecondButton": "Join the movement"
+        "labelSecondButton": "Join the community"
       },
       {
+        "__resolveType": "site/sections/Benefits.tsx",
         "cards": [
           {
             "href": "https://discord.gg/YsGgt8EQCZ",
@@ -2114,11 +1964,10 @@
             "text": "We offer specialized support to help solve technical issues and answer questions about our platform and technologies.",
             "title": "Support"
           }
-        ],
-        "__resolveType": "site/sections/Benefits.tsx"
+        ]
       },
       {
-        "__resolveType": "[en] Footer"
+        "__resolveType": "Deco Footer [EN]"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -4934,13 +4783,13 @@
       "label": "Book a demo"
     },
     "sign": {
-      "url": "https://deco.cx/onboarding",
-      "label": "Sign up"
+      "label": "Create site",
+      "url": "https://admin.deco.cx/spaces/new"
     },
     "idiom": "Eng",
     "login": {
-      "url": "https://admin.deco.cx/admin",
-      "label": "Login"
+      "label": "Login",
+      "url": "https://admin.deco.cx/spaces/new"
     },
     "alerts": {
       "mobile": [],
@@ -5016,7 +4865,9 @@
     ],
     "demo": {
       "title": "Watch our demo",
-      "visible": false
+      "visible": true,
+      "video": "https://www.youtube.com/embed/DvCvXwQ86k4",
+      "videoTitle": "deco.cx 2.0 | Product Walkthrough"
     },
     "tabs": [
       {
@@ -5772,6 +5623,15 @@
     "__resolveType": "site/sections/NRF/HeroFlat.tsx",
     "placement": "left",
     "cta": []
+  },
+  "Preview site/sections/Live Projects/LiveProjects.tsx": {
+    "__resolveType": "site/sections/Live Projects/LiveProjects.tsx"
+  },
+  "Preview site/sections/NRF/Header.tsx": {
+    "__resolveType": "site/sections/NRF/Header.tsx"
+  },
+  "Preview site/sections/NRF/Hero.tsx": {
+    "__resolveType": "site/sections/NRF/Hero.tsx"
   },
   "Program": {
     "props": {
@@ -9685,25 +9545,51 @@
     "list": {
       "posts": [
         {
+          "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/76bc55aa-2059-40ee-a819-6f68e981804a",
+          "body": {
+            "en": {
+              "seo": {
+                "title": "Introducing deco.cx 2.0: A New Era for Frontend Development"
+              },
+              "descr": "Typescript, Tailwind web editor with realtime collaboration, AI assistant, SEO configuration and much more. Check out deco.cx 2.0.",
+              "title": "Introducing deco.cx 2.0: A New Era for Frontend Development",
+              "content": "Today marks the launch of **deco.cx 2.0**, an evolution of our platform built upon feedback from our community and a deep understanding of the challenges facing modern web developers. This release embodies our commitment to simplifying the development process while providing powerful, flexible tools that cater to both **developers and content creators.**\n\n- [**New Navigation with Left Menu**](https://drive.google.com/file/d/1R4tr_xfsasJtP2NY5zJnYZipkrKxlipN/view?usp=drive_link): To streamline your workflow, we've introduced a new navigation schema. This redesign prioritizes quick access to frequently used features, enhancing productivity and reducing time spent searching for tools.\n\n- [**Spaces and Windows**](https://drive.google.com/file/d/1qsA6eJOtfiYOLaRB508qM04Ah_3yitpJ/view?usp=drive_link): This feature introduces a more organized way to manage multiple tasks and edit different blocks simultaneously, significantly improving multitasking capabilities within the platform.\n\n- [**Search and Command Bar**](https://drive.google.com/file/d/1EvnU-Y1QzLfiP8xJXpjezU12nkXr1RU-/view?usp=drive_link): A unified search and command interface allows for efficient navigation and action execution across your projects, directly addressing the need for speed in modern development environments.\n\n- [**Code Editor and decopilot:**](https://drive.google.com/file/d/13IjKayZtQn-O5tDsgeD1Fq7NShN6gjfs/view?resourcekey) The integrated code editor and our new AI assistant, decopilot, are designed to streamline coding and creative processes. No need to clone a git repository to do a quick fix on a TypeScript file. Just code directly in the browser, assisted by our GPT-powered decopilot.\n\n- [**Advanced SEO Configuration and Theme Customization**](https://drive.google.com/file/d/1aDq8lZv3DwbTwoQh5Ae-c_sz7zuF_rwH/view?usp=drive_link): These enhancements offer deeper control over site optimization and branding, enabling developers to fine-tune their projects for better performance and coherence. Editing Tailwind themes has never been this fun.\n\n- [**Release Diff and Staging Environment**](https://drive.google.com/file/d/1A0D-cluBivK61hUVwaaPzhWFAG_8uT7k/view?usp=drive_link): With these features, deco.cx 2.0 addresses the entire development lifecycle, from initial creation to testing and deployment, ensuring that developers have the tools needed to deliver quality web experiences efficiently.\n\n- [**Real-Time Collaboration**](https://drive.google.com/file/d/1SKsyznnv57hQdqGj4XmePWsFFuAdVvx7/view?usp=drive_link): Seeing teammates' avatars and changes in real time brings a new level of collaboration to your projects, reminiscent of the live collaboration seen in tools like Figma, but tailored for web development.\n\n- [**Shortcuts**](https://drive.google.com/file/d/1mMk2ix2zVvwBGVfMKeTQ6zRne218FW5v/view?usp=drive_link): Keyboard shortcuts have been implemented to expedite common tasks, reflecting our understanding of the developer's preference for keyboard-driven interfaces.\n\n- **Self Service Onboarding and Billing:** With direct access to onboarding and billing, we empower users to manage their experience autonomously, reflecting a shift towards self-service in software platforms.\n\n- **Developer Profile and Blog:** By introducing developer profiles and improved blog management, deco.cx 2.0 fosters a community and enhances content management, recognizing the role of developers as both creators and contributors.\n\ndeco.cx 2.0 represents a significant leap forward in our mission to **simplify web development** while empowering developers with the tools they need to succeed in today's fast-paced digital landscape. Dive into deco.cx 2.0 and discover how these new features can **transform your development workflow.**\n"
+            },
+            "pt": {
+              "seo": {
+                "title": "Introducing deco.cx 2.0: A New Era for Frontend Development"
+              },
+              "descr": "Typescript, Tailwind web editor with realtime collaboration, AI assistant, SEO configuration and much more. Check out deco.cx 2.0.",
+              "title": "Introducing deco.cx 2.0: A New Era for Frontend Development",
+              "content": "Today marks the launch of **deco.cx 2.0**, an evolution of our platform built upon feedback from our community and a deep understanding of the challenges facing modern web developers. This release embodies our commitment to simplifying the development process while providing powerful, flexible tools that cater to both **developers and content creators.**\n\n- [**New Navigation with Left Menu**](https://drive.google.com/file/d/1R4tr_xfsasJtP2NY5zJnYZipkrKxlipN/view?usp=drive_link): To streamline your workflow, we've introduced a new navigation schema. This redesign prioritizes quick access to frequently used features, enhancing productivity and reducing time spent searching for tools.\n\n- [**Spaces and Windows**](https://drive.google.com/file/d/1qsA6eJOtfiYOLaRB508qM04Ah_3yitpJ/view?usp=drive_link): This feature introduces a more organized way to manage multiple tasks and edit different blocks simultaneously, significantly improving multitasking capabilities within the platform.\n\n- [**Search and Command Bar**](https://drive.google.com/file/d/1EvnU-Y1QzLfiP8xJXpjezU12nkXr1RU-/view?usp=drive_link): A unified search and command interface allows for efficient navigation and action execution across your projects, directly addressing the need for speed in modern development environments.\n\n- [**Code Editor and decopilot:**](https://drive.google.com/file/d/13IjKayZtQn-O5tDsgeD1Fq7NShN6gjfs/view?resourcekey) The integrated code editor and our new AI assistant, decopilot, are designed to streamline coding and creative processes. No need to clone a git repository to do a quick fix on a TypeScript file. Just code directly in the browser, assisted by our GPT-powered decopilot.\n\n- [**Advanced SEO Configuration and Theme Customization**](https://drive.google.com/file/d/1aDq8lZv3DwbTwoQh5Ae-c_sz7zuF_rwH/view?usp=drive_link): These enhancements offer deeper control over site optimization and branding, enabling developers to fine-tune their projects for better performance and coherence. Editing Tailwind themes has never been this fun.\n\n- [**Release Diff and Staging Environment**](https://drive.google.com/file/d/1A0D-cluBivK61hUVwaaPzhWFAG_8uT7k/view?usp=drive_link): With these features, deco.cx 2.0 addresses the entire development lifecycle, from initial creation to testing and deployment, ensuring that developers have the tools needed to deliver quality web experiences efficiently.\n\n- [**Real-Time Collaboration**](https://drive.google.com/file/d/1SKsyznnv57hQdqGj4XmePWsFFuAdVvx7/view?usp=drive_link): Seeing teammates' avatars and changes in real time brings a new level of collaboration to your projects, reminiscent of the live collaboration seen in tools like Figma, but tailored for web development.\n\n- [**Shortcuts**](https://drive.google.com/file/d/1mMk2ix2zVvwBGVfMKeTQ6zRne218FW5v/view?usp=drive_link): Keyboard shortcuts have been implemented to expedite common tasks, reflecting our understanding of the developer's preference for keyboard-driven interfaces.\n\n- **Self Service Onboarding and Billing:** With direct access to onboarding and billing, we empower users to manage their experience autonomously, reflecting a shift towards self-service in software platforms.\n\n- **Developer Profile and Blog:** By introducing developer profiles and improved blog management, deco.cx 2.0 fosters a community and enhances content management, recognizing the role of developers as both creators and contributors.\n\ndeco.cx 2.0 represents a significant leap forward in our mission to **simplify web development** while empowering developers with the tools they need to succeed in today's fast-paced digital landscape. Dive into deco.cx 2.0 and discover how these new features can **transform your development workflow.**\n"
+            }
+          },
+          "date": "10/04/2024",
+          "path": "deco-2-0-a-new-era-for-frontend-development",
+          "tags": [],
+          "author": "deco.cx Team",
+          "readTime": "5 minutes"
+        },
+        {
           "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e081cbe4-c054-49e4-84b4-7e4e3978edbb",
           "body": {
             "en": {
               "seo": {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5c13f04b-e930-4cab-ad60-c2f6705c8b99",
                 "title": "Hospitalar Distribuidora's ROAS skyrockets from 4 to 19 with deco.cx and N1 Agency",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5c13f04b-e930-4cab-ad60-c2f6705c8b99",
                 "description": "A strategic overhaul in healthcare ecommerce marketing and performance"
               },
               "descr": "A strategic overhaul in healthcare ecommerce marketing and performance",
               "title": "Hospitalar Distribuidora's ROAS skyrockets from 4 to 19 with deco.cx and N1 Agency"
             },
             "pt": {
+              "descr": "Uma transformação estratégica na performance digital dentro do setor da saúde",
+              "title": "ROAS da Hospitalar sobe de 4 para 19 com deco.cx e Agência N1",
               "seo": {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/69c70e90-d6d3-45fa-84fa-87b069f27848",
                 "title": "ROAS da Hospitalar sobe de 4 para 19 com deco.cx e Agência N1",
                 "description": "Uma transformação estratégica na performance digital dentro do setor da saúde"
-              },
-              "descr": "Uma transformação estratégica na performance digital dentro do setor da saúde",
-              "title": "ROAS da Hospitalar sobe de 4 para 19 com deco.cx e Agência N1"
+              }
             }
           },
           "date": "11/03/2024",
@@ -9732,8 +9618,8 @@
           "path": "async-rendering",
           "tags": [],
           "author": "Tiago Gimenes",
-          "authorRole": "Developer",
-          "authorAvatar": "https://avatars.githubusercontent.com/u/1753396?v=4"
+          "authorAvatar": "https://avatars.githubusercontent.com/u/1753396?v=4",
+          "authorRole": "Developer"
         },
         {
           "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0ccccbcf-db6d-460c-9cdd-f1dd35679292",
@@ -9836,9 +9722,9 @@
             },
             "pt": {
               "seo": {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8639812d-033d-4eab-92cc-d9b42a88d096",
                 "title": "Core Web Vitals App",
-                "description": "Novo aplicativo para ver os seus resultados de Core Web Vitals"
+                "description": "Novo aplicativo para ver os seus resultados de Core Web Vitals",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8639812d-033d-4eab-92cc-d9b42a88d096"
               },
               "descr": "Novo aplicativo para ver os seus resultados de Core Web Vitals",
               "title": "Core Web Vitals App",
@@ -9856,21 +9742,21 @@
           "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a668b07e-356e-4b6b-b1d1-bb7d4a11e608",
           "body": {
             "en": {
+              "descr": "Euro Colchões' three-person team increased its ecommerce PageSpeed score from 7 to 80, transforming Euro's online and physical presence",
+              "title": "Euro Colchões’ top digital experience increases in-store sales",
               "seo": {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/acc51bf5-3243-4ce6-950f-6dd30634339a",
                 "title": "Euro Colchões’ top digital experience increases in-store sales",
                 "description": "Euro Colchões' three-person team increased its ecommerce PageSpeed score from 7 to 80, transforming Euro's online and physical presence"
-              },
-              "descr": "Euro Colchões' three-person team increased its ecommerce PageSpeed score from 7 to 80, transforming Euro's online and physical presence",
-              "title": "Euro Colchões’ top digital experience increases in-store sales"
+              }
             },
             "pt": {
+              "descr": "A equipe de três pessoas da Euro Colchões aumentou a pontuação de PageSpeed de seu e-commerce de 7 para 80, transformando a presença online e física da Euro",
+              "title": "A melhor experiência digital da Euro Colchões aumenta as vendas em loja",
               "seo": {
                 "title": "A melhor experiência digital da Euro Colchões aumenta as vendas em loja",
                 "description": "A equipe de três pessoas da Euro Colchões aumentou a pontuação de PageSpeed de seu e-commerce de 7 para 80, transformando a presença online e física da Euro"
-              },
-              "descr": "A equipe de três pessoas da Euro Colchões aumentou a pontuação de PageSpeed de seu e-commerce de 7 para 80, transformando a presença online e física da Euro",
-              "title": "A melhor experiência digital da Euro Colchões aumenta as vendas em loja"
+              }
             }
           },
           "date": "01/12/2024",
@@ -9984,8 +9870,8 @@
               "seo": {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8242aca6-5215-4321-8e9d-f876fc1d1d58",
                 "title": "Black Friday 2023",
-                "canonical": "/black-friday-2023",
-                "description": "Checklist for a smooth shopping season"
+                "description": "Checklist for a smooth shopping season",
+                "canonical": "/black-friday-2023"
               },
               "descr": "Checklist for a smooth shopping season",
               "title": "How to Prepare for 2023's Black Friday",
@@ -9995,8 +9881,8 @@
               "seo": {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8242aca6-5215-4321-8e9d-f876fc1d1d58",
                 "title": "Black Friday 2023",
-                "canonical": "/black-friday-2023",
-                "description": "Checklist para uma Black Friday tranquila"
+                "description": "Checklist para uma Black Friday tranquila",
+                "canonical": "/black-friday-2023"
               },
               "descr": "Checklist para uma Black Friday tranquila",
               "title": "Como se preparar para a Black Friday 2023",
@@ -10005,10 +9891,10 @@
           },
           "date": "06/11/2023",
           "path": "black-friday-2023.md",
-          "tags": [],
           "author": "Tiago Gimenes",
           "readTime": "5",
-          "authorAvatar": "https://avatars.githubusercontent.com/u/1753396?v=4"
+          "authorAvatar": "https://avatars.githubusercontent.com/u/1753396?v=4",
+          "tags": []
         },
         {
           "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c4f791fe-9f43-400d-94a0-c203a6dc3b37",
@@ -10024,14 +9910,14 @@
               "content": "## deco play\n\nMaking life easier for developers is at deco's core, and today we're proud to announce deco play, a new way to test our stack in record time!\n\nTo start testing deco play, go to [https://play.deco.cx](https://play.deco.cx) and follow the instructions.\n\n![deco play](https://github.com/deco-sites/std/assets/18706156/ec92362b-9d18-42d8-9c60-bcb5bfef0d71)\n\nIt's the fastest way to spin up a deco site or app on your local machine and start developing with Preact, Tailwind, Deno and getting all the benefits of our CMS that automatically extracts the schema from your functions (UI components, loaders, actions…), makes them easily editable and composable on a Web UI that saves the data locally.\n\nAnd you don't need to be logged into [deco.cx](http://deco.cx) to use deco play, it's just one click away from the command line!"
             },
             "pt": {
+              "descr": "Use deco.cx's powerful CMS directly from the command line",
+              "title": "deco play",
+              "content": "## deco play\n\nMaking life easier for developers is at deco's core, and today we're proud to announce deco play, a new way to test our stack in record time!\n\nTo start testing deco play, go to [https://play.deco.cx](https://play.deco.cx) and follow the instructions.\n\n![deco play](https://github.com/deco-sites/std/assets/18706156/ec92362b-9d18-42d8-9c60-bcb5bfef0d71)\n\nIt's the fastest way to spin up a deco site or app on your local machine and start developing with Preact, Tailwind, Deno and getting all the benefits of our CMS that automatically extracts the schema from your functions (UI components, loaders, actions…), makes them easily editable and composable on a Web UI that saves the data locally.\n\nAnd you don't need to be logged into [deco.cx](http://deco.cx) to use deco play, it's just one click away from the command line!",
               "seo": {
                 "image": "https://github.com/deco-sites/std/assets/18706156/ec92362b-9d18-42d8-9c60-bcb5bfef0d71",
                 "title": "deco play is released",
                 "description": "Use deco.cx's powerful CMS directly from the command line with Preact, Tailwind and Deno"
-              },
-              "descr": "Use deco.cx's powerful CMS directly from the command line",
-              "title": "deco play",
-              "content": "## deco play\n\nMaking life easier for developers is at deco's core, and today we're proud to announce deco play, a new way to test our stack in record time!\n\nTo start testing deco play, go to [https://play.deco.cx](https://play.deco.cx) and follow the instructions.\n\n![deco play](https://github.com/deco-sites/std/assets/18706156/ec92362b-9d18-42d8-9c60-bcb5bfef0d71)\n\nIt's the fastest way to spin up a deco site or app on your local machine and start developing with Preact, Tailwind, Deno and getting all the benefits of our CMS that automatically extracts the schema from your functions (UI components, loaders, actions…), makes them easily editable and composable on a Web UI that saves the data locally.\n\nAnd you don't need to be logged into [deco.cx](http://deco.cx) to use deco play, it's just one click away from the command line!"
+              }
             }
           },
           "date": "31/10/2023",
@@ -10045,8 +9931,8 @@
           "body": {
             "en": {
               "seo": {
-                "image": "https://github.com/deco-cx/apps/assets/882438/1b3f06d2-1d2d-4ec8-a9cf-2c14008229a6",
                 "title": "New Analytics Tool",
+                "image": "https://github.com/deco-cx/apps/assets/882438/1b3f06d2-1d2d-4ec8-a9cf-2c14008229a6",
                 "description": "Analytics with realtime, goals and conversions!"
               },
               "descr": "Analytics with realtime, goals and conversions!",
@@ -10066,26 +9952,52 @@
           "authorAvatar": "https://lh3.googleusercontent.com/a/ACg8ocIjb0LttoalDQynwu_U2A43KTAulDjme3BwrvxzAOOBzQ=s96-c"
         },
         {
-          "img": "https://user-images.githubusercontent.com/121065272/278021160-f0fa7e72-ad95-4dfd-b201-fdbee639d7a0.png",
+          "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/49c3d07b-8ddc-42f0-b73e-235151c82f67",
           "body": {
             "en": {
               "seo": {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/be8ca70a-6e2f-42ed-965c-6771e1fcda39",
-                "title": "Redirects",
-                "description": "Create and manage Redirects on deco.cx"
+                "title": "How Tags Affect a Perfectly Optimized Storefront"
               },
-              "descr": "Create and manage Redirects",
-              "title": "Redirects",
-              "content": "\nToday, we're excited to introduce a new feature that allows our users to\n**manage redirects on their websites directly** on deco.cx's Admin. Now, users\ncan create, edit and delete redirects without any extra effort.\n\nYou can test this feature right now by accessing the admin panel at\n[https://admin.deco.cx](https://admin.deco.cx/).\n\n![Creating a new redirect](https://github.com/deco-sites/std/assets/15680320/19144393-6dc7-4e26-8243-c952c99fbca1)\n\n## Types of Redirect\n\nWhen it comes to creating redirects, you have two options: temporary or\npermanent.\n\n- **Temporary**: not indexed, stored or cached by crawlers (e.g: Google) and\n  browsers. They provide a short-term solution and are ideal for situations\n  where you might want to reroute traffic temporarily.\n\n- **Permanent**: stored by search engines and crawlers. They permanently update\n  the path for the current page, and they are hard to undo. If you're unsure\n  about which type of redirect to choose, we strongly recommend using temporary\n  redirects.\n\n### **Enabling this Feature for Your Site**\n\nFor websites created after the date of this blog post (Oct 23 2023), this\nfeature will be enabled by default.\n\nIf your site was created before this blog post, you can enable this feature by\nupdating your site dependencies to `deco@1.41.11` and `apps@0.15.8`. (Run\n`deno task update`) Next, update your app's **`site`** by adding a new Site Map\nentry named `Redirects`. Once this is done, all managed redirects will function\nseamlessly on your site.\n\n![Editing a redirect](https://github.com/deco-sites/std/assets/18706156/ab3d9567-cb1f-444d-9d77-35f810f1cacc)\n\nIf you have any questions, feel free to reach us at\n[deco.cx Discord Server](https://deco.cx/discord).\n\nThat's all for today. Stay tuned for our next release!\n"
+              "descr": "Find out what's the best score a complex store can really get",
+              "title": "Performance Lab: How Tags Affect a Perfectly Optimized Storefront",
+              "content": "## About\n\nWebsite performance is full of nuances and it's a field of research on it's own. Everyone is looking to get approved by Google’s Core Web Vitals and this is exactly what we aim at deco.cx.  Anyhow, the elephant is the room remains “What's the best score a complex store can really get?” \n\nToday, we set our sails to answer: **how exactly third-party tags affect a perfectly optimized storefront?**\n\n## Methodology\n\nThis study was conducted mirroring a typical e-commerce homepage that loads:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>A header leading to 30+ links with 3 level menu navigation</li>\n        <li>1 full-banner carousel with 2 high definition images (1200x1200)</li>\n        <li>1 Campaign Timer</li>\n        <li>3 Product Shelfs fetching 12 products each</li>\n        <li>1 Shoppable Banner</li>\n        <li>1 Category grid</li>\n        <li>1 Blog post section</li>\n        <li>A footer with 4 columns and 20+ links</li>\n    </ul>\n</div>\n\n## Key Metrics\n\nAdding tags to your storefront will have a direct impact on two performance metrics:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>**Total Blocking Time:** One of Core Web Vitals metrics, it measures the total amount of time after First Contentful Paint (FCP) where the main thread was blocked for long enough to prevent input responsiveness.</li>\n        <li>**Performance Grade:** We used https://pagespeed.web.dev/ API to run tests because it guarantees isonomy of the overall conditions (CPU, connection, etc). More over, since it's an universal tool, anyone can double check this study on their own.</li>\n    </ul>\n</div>\n\nWe calculated the final grades for each scenario by running the performance audit 100 times and using the [median](https://www.investopedia.com/terms/m/median.asp). This strategy will help us:\n\n<ul>\n<li>Avoiding Google Page Speed cache (servers are all USA based)</li>\n<li>Avoiding outliers* that could miss lead results</li>\n</ul>\n\n## Scenario 1: Perfectly Optimized Storefront (no tags)\n\nThis is a storefront built on top of deco.cx without any third-party tags, only with our built-in Analytics Tools (weights 1kb).\n\n<img width=\"1062\" alt=\"Gráfico 1\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0c551a57-a664-40cf-bcae-7b46967b5cdb\">\n\n_Graph 1: Frequency by Performance score with Perfectly Optimized Storefront_\n\nMax grade: 96\n\nMin grade: 73\n\nAverage: 91\n\n**Median**: **93**\n\nCheck this storefront: https://tag-affect.deco.site\n\n## Scenario 2: Perfectly Optimized Storefront + GTM/GA\n\nNow, we have added Google Tag Manager tag and it's most common partner the Google Analytics tag.\n\n<img width=\"1062\" alt=\"Gráfico 2\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cbafb87b-6f0b-4dda-b248-876685eb34ce\">\n\n_Graph 2: Frequency by Performance score with GTM/GA_\n\nMax grade: 96\n\nMin grade: 68\n\nAverage: 86\n\n**Median**: **84**\n\nCheck this storefront: https://tag-affect.deco.site/gtmga\n\n## Scenario 3: Perfectly Optimized Storefront + Full GTM\n\nNow, we have added all tags that a complex operations like one of our most sophisticated customer has.\n\n<img width=\"1062\" alt=\"Gráfico 3\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff52f94d-c5d5-48ae-aa10-4b31638d1fe5\">\n\n_Graph 3: Frequency by Performance score with sophisticated GTM_\n\nMax grade: 75\n\nMin grade: 60\n\nAverage: 69\n\n**Median**: **68**\n\n## Final Thoughts and Conclusion\n\n<img width=\"1062\" alt=\"Gráfico 4\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae1b7f24-f0d8-4ce4-93ca-3f6a1994c75f\">\n\n_Graph 4: Performance comparation_\n\n<img width=\"1062\" alt=\"Gráfico 5\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/275a616e-42b0-46a6-a941-bf8b286a4862\">\n\n_Graph 5: Total Blocking Time comparation_\n\n**Perfectly Optimized Storefront TBT Average:  184**\n\n**Heavy GTM Storefront TBT Average: 2305,5**\n\nUsing deco.cx you can reach as high as 90+ on Google performance grade while creating a heavy content digital experience (fully dynamic using high quality media). As you add more and more third-party tags, will you get as low as 65ish, increasing your TBT by 12X.\n\nThis points out a few relevant insight:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>The most damaged Core Web Vital metric is the TBT, since each tag typically involves additional JavaScript execution, which can delay the rendering of a webpage and cause blocking of other critical tasks, such as user interaction or resource loading.</li>\n        <li>There is a trade-off between adding third-party tags and your website performance</li>\n    </ul>\n</div>\n\n_The rule used for removing outliers in the study is based on quartiles. Check out more at [Khan Academy]( https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/identifying-outliers-iqr-rule)_\n"
             },
             "pt": {
+              "seo": {
+                "title": "Como Tags Afetam uma Loja Virtual Perfeitamente Otimizada"
+              },
+              "descr": "Descubra qual é a melhor pontuação de performance que uma loja complexa realmente pode obter",
+              "title": "Performance Lab: Como Tags Afetam uma Loja Virtual Perfeitamente Otimizada",
+              "content": "## Sobre\n\nO desempenho do site está cheio de nuances e é um campo de pesquisa por si só. Todos estão procurando ser aprovados pelos Core Web Vitals do Google e é exatamente isso que buscamos na deco.cx. De qualquer forma, o elefante na sala continua sendo \"Qual é a melhor pontuação que uma loja complexa pode realmente obter?\" \n\nHoje, colocamos nossas velas para responder: **como exatamente as tags de terceiros afetam uma loja perfeitamente otimizada?**\n\n## Metodologia\n\nEste estudo foi conduzido espelhando uma página inicial típica de comércio eletrônico que carrega:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>Um cabeçalho com mais de 30 links com navegação de menu de 3 níveis</li>\n        <li>1 carrossel de banner completo com 2 imagens de alta definição (1200x1200)</li>\n        <li>1 Contador de Campanha</li>\n        <li>3 Prateleiras de Produtos exibindo 12 produtos cada</li>\n        <li>1 Banner Comercializável</li>\n        <li>1 Grade de Categoria</li>\n        <li>1 Seção de postagens de blog</li>\n        <li>1 rodapé com 4 colunas e mais de 20 links</li>\n    </ul>\n</div>\n\n## Métricas Chave\n\nAdicionar tags à sua loja terá um impacto direto em duas métricas de desempenho:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>**Tempo Total de Bloqueio:** Uma das métricas do Core Web Vitals, mede o tempo total após o Primeiro Conteúdo Exibido (FCP) em que a thread principal foi bloqueada tempo suficiente para evitar a responsividade de entrada.</li>\n        <li>**Nota de Desempenho:** Usamos a API https://pagespeed.web.dev/ para executar testes porque garante a isonomia das condições gerais (CPU, conexão, etc). Além disso, como é uma ferramenta universal, qualquer um pode verificar este estudo por conta própria.</li>\n    </ul>\n</div>\n\nCalculamos as notas finais para cada cenário executando a auditoria de desempenho 100 vezes e usando a [mediana](https://www.investopedia.com/terms/m/median.asp). Essa estratégia nos ajudará a:\n\n<ul>\n<li>Evitar o cache do Google Page Speed (os servidores são todos baseados nos EUA)</li>\n<li>Evitar outliers que poderiam distorcer os resultados</li>\n</ul>\n\n## Cenário 1: Loja Perfeitamente Otimizada (sem tags)\n\nEsta é uma loja construída em cima da deco.cx sem nenhuma tag de terceiros, apenas com nossas Ferramentas de Análise integradas (peso 1kb).\n\n<img width=\"1062\" alt=\"Gráfico 1\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0c551a57-a664-40cf-bcae-7b46967b5cdb\">\n\n_Gráfico 1: Frequência por pontuação de desempenho com Loja Perfeitamente Otimizada_\n\nNota máxima: 96\n\nNota mínima: 73\n\nMédia: 91\n\n**Mediana**: **93**\n\nVerifique esta loja: https://tag-affect.deco.site\n\n## Cenário 2: Loja Perfeitamente Otimizada + GTM/GA\n\nAgora, adicionamos a Tag do Gerenciador de Tags do Google e seu parceiro mais comum, a tag do Google Analytics.\n\n<img width=\"1062\" alt=\"Gráfico 2\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cbafb87b-6f0b-4dda-b248-876685eb34ce\">\n\n_Gráfico 2: Frequência por pontuação de desempenho com GTM/GA_\n\nNota máxima: 96\n\nNota mínima: 68\n\nMédia: 86\n\n**Mediana**: **84**\n\nVerifique esta loja: https://tag-affect.deco.site/gtmga\n\n## Cenário 3: Loja Perfeitamente Otimizada + GTM Completo\n\nAgora, adicionamos todas as tags que uma operação complexa como uma de nossos clientes mais sofisticados possui.\n\n<img width=\"1062\" alt=\"Gráfico 3\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff52f94d-c5d5-48ae-aa10-4b31638d1fe5\">\n\n_Gráfico 3: Frequência por pontuação de desempenho com GTM sofisticado_\n\nNota máxima: 75\n\nNota mínima: 60\n\nMédia: 69\n\n**Mediana**: **68**\n\n## Pensamentos Finais e Conclusão\n\n<img width=\"1062\" alt=\"Gráfico 4\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae1b7f24-f0d8-4ce4-93ca-3f6a1994c75f\">\n\n_Gráfico 4: Comparação de desempenho_\n\n<img width=\"1062\" alt=\"Gráfico 5\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/275a616e-42b0-46a6-a941-bf8b286a4862\">\n\n_Gráfico 5: Comparação do Tempo Total de Bloqueio_\n\n**Média do TBT da Loja Perfeitamente Otimizada:  184**\n\n**Média do TBT da Loja Pesada com GTM: 2305,5**\n\nUsando deco.cx, você pode alcançar mais de 90 na nota de desempenho do Google enquanto cria uma experiência digital com conteúdo pesado (totalmente dinâmica usando mídia de alta qualidade). À medida que você adiciona mais e mais tags de terceiros, poderá chegar a cerca de 65, aumentando seu TBT em 12 vezes.\n\nIsso aponta algumas percepções relevantes:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>A métrica Core Web Vital mais prejudicada é o TBT, pois cada tag geralmente envolve execução adicional de JavaScript, o que pode atrasar a renderização de uma página da web e causar bloqueio de outras tarefas críticas, como interação do usuário ou carregamento de recursos.</li>\n        <li>Há um equilíbrio entre adicionar tags de terceiros e o desempenho do seu site</li>\n    </ul>\n</div>\n\n_A regra usada para remover outliers no estudo é baseada em quartis. Confira mais em [Khan Academy]( https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/identifying-outliers-iqr-rule)_\n"
+            }
+          },
+          "date": "20/03/2024",
+          "path": "how-tags-affect-a-perfectly-optimized-storefront",
+          "author": "Leandro Borges e Vinicius Trindade",
+          "readTime": "5 minutos",
+          "tags": []
+        },
+        {
+          "img": "https://user-images.githubusercontent.com/121065272/278021160-f0fa7e72-ad95-4dfd-b201-fdbee639d7a0.png",
+          "body": {
+            "en": {
+              "descr": "Create and manage Redirects",
+              "title": "Redirects",
               "seo": {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/be8ca70a-6e2f-42ed-965c-6771e1fcda39",
                 "title": "Redirects",
                 "description": "Create and manage Redirects on deco.cx"
               },
+              "content": "\nToday, we're excited to introduce a new feature that allows our users to\n**manage redirects on their websites directly** on deco.cx's Admin. Now, users\ncan create, edit and delete redirects without any extra effort.\n\nYou can test this feature right now by accessing the admin panel at\n[https://admin.deco.cx](https://admin.deco.cx/).\n\n![Creating a new redirect](https://github.com/deco-sites/std/assets/15680320/19144393-6dc7-4e26-8243-c952c99fbca1)\n\n## Types of Redirect\n\nWhen it comes to creating redirects, you have two options: temporary or\npermanent.\n\n- **Temporary**: not indexed, stored or cached by crawlers (e.g: Google) and\n  browsers. They provide a short-term solution and are ideal for situations\n  where you might want to reroute traffic temporarily.\n\n- **Permanent**: stored by search engines and crawlers. They permanently update\n  the path for the current page, and they are hard to undo. If you're unsure\n  about which type of redirect to choose, we strongly recommend using temporary\n  redirects.\n\n### **Enabling this Feature for Your Site**\n\nFor websites created after the date of this blog post (Oct 23 2023), this\nfeature will be enabled by default.\n\nIf your site was created before this blog post, you can enable this feature by\nupdating your site dependencies to `deco@1.41.11` and `apps@0.15.8`. (Run\n`deno task update`) Next, update your app's **`site`** by adding a new Site Map\nentry named `Redirects`. Once this is done, all managed redirects will function\nseamlessly on your site.\n\n![Editing a redirect](https://github.com/deco-sites/std/assets/18706156/ab3d9567-cb1f-444d-9d77-35f810f1cacc)\n\nIf you have any questions, feel free to reach us at\n[deco.cx Discord Server](https://deco.cx/discord).\n\nThat's all for today. Stay tuned for our next release!\n"
+            },
+            "pt": {
               "descr": "Create and manage Redirects",
               "title": "Redirects",
+              "seo": {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/be8ca70a-6e2f-42ed-965c-6771e1fcda39",
+                "title": "Redirects",
+                "description": "Create and manage Redirects on deco.cx"
+              },
               "content": "\nToday, we're excited to introduce a new feature that allows our users to\n**manage redirects on their websites directly** on deco.cx's Admin. Now, users\ncan create, edit and delete redirects without any extra effort.\n\nYou can test this feature right now by accessing the admin panel at\n[https://admin.deco.cx](https://admin.deco.cx/).\n\n![Creating a new redirect](https://github.com/deco-sites/std/assets/15680320/19144393-6dc7-4e26-8243-c952c99fbca1)\n\n## Types of Redirect\n\nWhen it comes to creating redirects, you have two options: temporary or\npermanent.\n\n- **Temporary**: not indexed, stored or cached by crawlers (e.g: Google) and\n  browsers. They provide a short-term solution and are ideal for situations\n  where you might want to reroute traffic temporarily.\n\n- **Permanent**: stored by search engines and crawlers. They permanently update\n  the path for the current page, and they are hard to undo. If you're unsure\n  about which type of redirect to choose, we strongly recommend using temporary\n  redirects.\n\n### **Enabling this Feature for Your Site**\n\nFor websites created after the date of this blog post (Oct 23 2023), this\nfeature will be enabled by default.\n\nIf your site was created before this blog post, you can enable this feature by\nupdating your site dependencies to `deco@1.41.11` and `apps@0.15.8`. (Run\n`deno task update`) Next, update your app's **`site`** by adding a new Site Map\nentry named `Redirects`. Once this is done, all managed redirects will function\nseamlessly on your site.\n\n![Editing a redirect](https://github.com/deco-sites/std/assets/18706156/ab3d9567-cb1f-444d-9d77-35f810f1cacc)\n\nIf you have any questions, feel free to reach us at\n[deco.cx Discord Server](https://deco.cx/discord).\n\nThat's all for today. Stay tuned for our next release!\n"
             }
           },
@@ -10099,23 +10011,23 @@
           "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b86b6a80-ca1a-478a-ba30-8499105f146b",
           "body": {
             "en": {
+              "descr": "Easier to use, refreshed UI, and better JSON editing ",
+              "title": "New Editor",
               "seo": {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7188c283-d2d7-4a38-bbbd-b4e3db275df4",
                 "title": "New Editor",
                 "description": "Easier to use, refreshed UI, and better JSON editing"
               },
-              "descr": "Easier to use, refreshed UI, and better JSON editing ",
-              "title": "New Editor",
               "content": "## New Editor\n\nFollowing up on our [Admin Reloaded](https://www.deco.cx/en/blog/admin-reloaded.md), we're **releasing today the new CMS editor.** This release includes a redesigned layout based on feedback from our users, an emphasis on content segmentation, and a new inline JSON editor.\n\n<img width=\"1112\" alt=\"image\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/70ade914-7c67-424a-882c-d0e78fdf8bb3\" />\n\nYou can test it right now by accessing the admin via https://admin.deco.cx.\n\n## New Layout\n\nThe editor now sits on the left sidebar and it comes with a simpler UI, without compromises. The dynamic form, which varies based on the current block, takes more of the screen's width and its refined inputs provide a better editing experience.\n\n## Publish instantly\n\nThe action bar on the top of the editor was also simplified. Only one click is necessary to publish content, and secondary actions (like creating a draft of splitting traffic) are available in the submenus.\n\n## Developer Mode\n\nPower users are very important to deco and now they get their own mode in the CMS. Developer Mode provides a powerful JSON editor with IDE-like features and instant data validation. Toggle it on the top-right of the sidebar.\n\n<img width=\"1196\" alt=\"image\" src=\"https://github.com/deco-sites/std/assets/18706156/2c4c4341-13c1-4e65-b38a-238b5d8f8e09\"/>\n\n## Drafts and Variants\n\nTo better suit work-in-progress content, Drafts can now be created directly from the top bar and they stay listed on the Variants portion of the editor. This allows sharing the URL so coworkers can preview the block with changes that were made.\n\nVariants, which are used to segment content to different audiences, are now first-class citizens in the editor and it's easier than ever to, for example, create a different page setup for Mobile users. From the Publish button it's possible to split traffic between the current and new versions \n\nThat's it for today. Keep an eye out for our next release."
             },
             "pt": {
+              "descr": "Easier to use, refreshed UI, and better JSON editing ",
+              "title": "New Editor",
               "seo": {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7188c283-d2d7-4a38-bbbd-b4e3db275df4",
                 "title": "New Editor",
                 "description": "Easier to use, refreshed UI, and better JSON editing"
               },
-              "descr": "Easier to use, refreshed UI, and better JSON editing ",
-              "title": "New Editor",
               "content": "## New Editor\n\nFollowing up on our [Admin Reloaded](https://www.deco.cx/en/blog/admin-reloaded.md), we're **releasing today the new CMS editor.** This release includes a redesigned layout based on feedback from our users, an emphasis on content segmentation, and a new inline JSON editor.\n\n<img width=\"1112\" alt=\"image\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/70ade914-7c67-424a-882c-d0e78fdf8bb3\" />\n\nYou can test it right now by accessing the admin via https://admin.deco.cx.\n\n## New Layout\n\nThe editor now sits on the left sidebar and it comes with a simpler UI, without compromises. The dynamic form, which varies based on the current block, takes more of the screen's width and its refined inputs provide a better editing experience.\n\n## Publish instantly\n\nThe action bar on the top of the editor was also simplified. Only one click is necessary to publish content, and secondary actions (like creating a draft of splitting traffic) are available in the submenus.\n\n## Developer Mode\n\nPower users are very important to deco and now they get their own mode in the CMS. Developer Mode provides a powerful JSON editor with IDE-like features and instant data validation. Toggle it on the top-right of the sidebar.\n\n<img width=\"1196\" alt=\"image\" src=\"https://github.com/deco-sites/std/assets/18706156/2c4c4341-13c1-4e65-b38a-238b5d8f8e09\"/>\n\n## Drafts and Variants\n\nTo better suit work-in-progress content, Drafts can now be created directly from the top bar and they stay listed on the Variants portion of the editor. This allows sharing the URL so coworkers can preview the block with changes that were made.\n\nVariants, which are used to segment content to different audiences, are now first-class citizens in the editor and it's easier than ever to, for example, create a different page setup for Mobile users. From the Publish button it's possible to split traffic between the current and new versions \n\nThat's it for today. Keep an eye out for our next release."
             }
           },
@@ -10145,20 +10057,20 @@
           "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7330ca54-003b-44b8-b2a5-0379df6e74a8",
           "body": {
             "en": {
-              "seo": {
-                "image": "https://github.com/site/assets/30700596/94670972-4b40-46f1-a9f9-afb7f492307d"
-              },
               "descr": "Kicking Off October Launch Month 🚀",
               "title": "Admin Reloaded",
-              "content": "## Welcome to the New Admin Beta and the Start of October Launch Month\n\nHey Deco users, we have something new for you! \n\nToday, we’re excited to introduce the beta version of our revamped admin panel, **available now at [https://admin.deco.cx](https://admin.deco.cx/).** Let’s get straight into what’s new and what you can expect in the coming weeks.\n\n## 1. New Navigation and Topbar Menus\n\n<img width=\"818\" alt=\"New navigation menu on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/371dfbb5-0188-4258-bf10-5219534556d0\">\n\nSwitching teams is now hassle-free. Do it straight from the topbar, no need to return to the home page. Access team members and billing options instantly, and with the new integrated menu, Pages, Sections, and Analytics are just a click away.\n\n## 2. New Site Home\n\n\n<img width=\"818\" alt=\"New deco.cx site home\" src=\"https://github.com/deco-cx/blog/assets/1633518/eef869b4-795f-4a6f-b9b6-b12d26d7c3f4\">\n\nWe’ve made it simpler and more intuitive, focusing on a clean design that puts your site and important info front and center.\n\n## 3. New Admin Pages\n\n## Sections\n\n<img width=\"818\" alt=\"Visualize the sections on your deco.cx site\" src=\"https://github.com/deco-cx/blog/assets/1633518/c7fed621-c964-4a4c-bf8e-1b41109a000d\">\n\nYour new Visual Library is here. Easily edit and create headers, footers, banners, and more with the available components.\n\n## Apps\n\n<img width=\"818\" alt=\"New apps screen\" src=\"https://github.com/deco-cx/blog/assets/1633518/66222859-feb6-4a3e-bd1c-f4b9eca3b3ca\">\n\nManage all your installed apps and their settings in one place. And keep an eye out - we’re rolling out improvements throughout the month.\n\n## Deployments\n\n<img width=\"818\" alt=\"Deployments on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/9430e46a-bd01-4a71-8032-75e29381f1d8\">\n\nTrack deno deploy versions, and roll back with ease. Every new commit is displayed, making version management a breeze.\n\n## Logs\n\n<img width=\"818\" alt=\"Logs on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/b1bd8937-f5c5-49aa-a389-61d2bd072930\">\n\nAccess logs from any deployment, filter by date, and pinpoint errors quickly and accurately. Never guess what's happening in production again!\n\n## Coming Up in October Launch Month\n\nWe’re not stopping here. Every week, we’re rolling out new features leading up to the official launch of the new admin panel on October 31st, coinciding with our Fourth Hackathon. Here’s a sneak peek:\n\n* End-to-end New Analytics and VTEX Funnel  \n* A new editor with full variant support and enhanced publishing  \n* Easy redirects and proxies setup  \n* SEO updates and simplified new site creation  \n* Quick start on [play.deco.cx](https://play.deco.cx/)  \n* Unified release history and easy version restoring with GH + Deco integration  \n* A comprehensive library of ecommerce components  \n* One-click app installations from Deco hub  \n\n## Final Words\n\nThe beta version of the new admin is live, and we’re eager to hear your feedback. Explore, test, and let us know your thoughts in the **#admin-feedback** channel on our [deco.cx Discord server](https://deco.cx/discord). Note that you can continue using the stable version at https://deco.cx/admin.\n\nStay tuned for weekly updates, and get ready for the official launch on October 31st. See you soon!\n\nHappy coding!\n\n_The deco.cx team_"
+              "content": "## Welcome to the New Admin Beta and the Start of October Launch Month\n\nHey Deco users, we have something new for you! \n\nToday, we’re excited to introduce the beta version of our revamped admin panel, **available now at [https://admin.deco.cx](https://admin.deco.cx/).** Let’s get straight into what’s new and what you can expect in the coming weeks.\n\n## 1. New Navigation and Topbar Menus\n\n<img width=\"818\" alt=\"New navigation menu on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/371dfbb5-0188-4258-bf10-5219534556d0\">\n\nSwitching teams is now hassle-free. Do it straight from the topbar, no need to return to the home page. Access team members and billing options instantly, and with the new integrated menu, Pages, Sections, and Analytics are just a click away.\n\n## 2. New Site Home\n\n\n<img width=\"818\" alt=\"New deco.cx site home\" src=\"https://github.com/deco-cx/blog/assets/1633518/eef869b4-795f-4a6f-b9b6-b12d26d7c3f4\">\n\nWe’ve made it simpler and more intuitive, focusing on a clean design that puts your site and important info front and center.\n\n## 3. New Admin Pages\n\n## Sections\n\n<img width=\"818\" alt=\"Visualize the sections on your deco.cx site\" src=\"https://github.com/deco-cx/blog/assets/1633518/c7fed621-c964-4a4c-bf8e-1b41109a000d\">\n\nYour new Visual Library is here. Easily edit and create headers, footers, banners, and more with the available components.\n\n## Apps\n\n<img width=\"818\" alt=\"New apps screen\" src=\"https://github.com/deco-cx/blog/assets/1633518/66222859-feb6-4a3e-bd1c-f4b9eca3b3ca\">\n\nManage all your installed apps and their settings in one place. And keep an eye out - we’re rolling out improvements throughout the month.\n\n## Deployments\n\n<img width=\"818\" alt=\"Deployments on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/9430e46a-bd01-4a71-8032-75e29381f1d8\">\n\nTrack deno deploy versions, and roll back with ease. Every new commit is displayed, making version management a breeze.\n\n## Logs\n\n<img width=\"818\" alt=\"Logs on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/b1bd8937-f5c5-49aa-a389-61d2bd072930\">\n\nAccess logs from any deployment, filter by date, and pinpoint errors quickly and accurately. Never guess what's happening in production again!\n\n## Coming Up in October Launch Month\n\nWe’re not stopping here. Every week, we’re rolling out new features leading up to the official launch of the new admin panel on October 31st, coinciding with our Fourth Hackathon. Here’s a sneak peek:\n\n* End-to-end New Analytics and VTEX Funnel  \n* A new editor with full variant support and enhanced publishing  \n* Easy redirects and proxies setup  \n* SEO updates and simplified new site creation  \n* Quick start on [play.deco.cx](https://play.deco.cx/)  \n* Unified release history and easy version restoring with GH + Deco integration  \n* A comprehensive library of ecommerce components  \n* One-click app installations from Deco hub  \n\n## Final Words\n\nThe beta version of the new admin is live, and we’re eager to hear your feedback. Explore, test, and let us know your thoughts in the **#admin-feedback** channel on our [deco.cx Discord server](https://deco.cx/discord). Note that you can continue using the stable version at https://deco.cx/admin.\n\nStay tuned for weekly updates, and get ready for the official launch on October 31st. See you soon!\n\nHappy coding!\n\n_The deco.cx team_",
+              "seo": {
+                "image": "https://github.com/site/assets/30700596/94670972-4b40-46f1-a9f9-afb7f492307d"
+              }
             },
             "pt": {
-              "seo": {
-                "image": "https://github.com/site/assets/30700596/94670972-4b40-46f1-a9f9-afb7f492307d"
-              },
               "descr": "Kicking Off October Launch Month 🚀",
               "title": "Admin Reloaded",
-              "content": "## Welcome to the New Admin Beta and the Start of October Launch Month\n\nHey Deco users, we have something new for you! \n\nToday, we’re excited to introduce the beta version of our revamped admin panel, **available now at [https://admin.deco.cx](https://admin.deco.cx/).** Let’s get straight into what’s new and what you can expect in the coming weeks.\n\n## 1. New Navigation and Topbar Menus\n\n<img width=\"818\" alt=\"New navigation menu on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/371dfbb5-0188-4258-bf10-5219534556d0\">\n\nSwitching teams is now hassle-free. Do it straight from the topbar, no need to return to the home page. Access team members and billing options instantly, and with the new integrated menu, Pages, Sections, and Analytics are just a click away.\n\n## 2. New Site Home\n\n\n<img width=\"818\" alt=\"New deco.cx site home\" src=\"https://github.com/deco-cx/blog/assets/1633518/eef869b4-795f-4a6f-b9b6-b12d26d7c3f4\">\n\nWe’ve made it simpler and more intuitive, focusing on a clean design that puts your site and important info front and center.\n\n## 3. New Admin Pages\n\n## Sections\n\n<img width=\"818\" alt=\"Visualize the sections on your deco.cx site\" src=\"https://github.com/deco-cx/blog/assets/1633518/c7fed621-c964-4a4c-bf8e-1b41109a000d\">\n\nYour new Visual Library is here. Easily edit and create headers, footers, banners, and more with the available components.\n\n## Apps\n\n<img width=\"818\" alt=\"New apps screen\" src=\"https://github.com/deco-cx/blog/assets/1633518/66222859-feb6-4a3e-bd1c-f4b9eca3b3ca\">\n\nManage all your installed apps and their settings in one place. And keep an eye out - we’re rolling out improvements throughout the month.\n\n## Deployments\n\n<img width=\"818\" alt=\"Deployments on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/9430e46a-bd01-4a71-8032-75e29381f1d8\">\n\nTrack deno deploy versions, and roll back with ease. Every new commit is displayed, making version management a breeze.\n\n## Logs\n\n<img width=\"818\" alt=\"Logs on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/b1bd8937-f5c5-49aa-a389-61d2bd072930\">\n\nAccess logs from any deployment, filter by date, and pinpoint errors quickly and accurately. Never guess what's happening in production again!\n\n## Coming Up in October Launch Month\n\nWe’re not stopping here. Every week, we’re rolling out new features leading up to the official launch of the new admin panel on October 31st, coinciding with our Fourth Hackathon. Here’s a sneak peek:\n\n* End-to-end New Analytics and VTEX Funnel  \n* A new editor with full variant support and enhanced publishing  \n* Easy redirects and proxies setup  \n* SEO updates and simplified new site creation  \n* Quick start on [play.deco.cx](https://play.deco.cx/)  \n* Unified release history and easy version restoring with GH + Deco integration  \n* A comprehensive library of ecommerce components  \n* One-click app installations from Deco hub  \n\n## Final Words\n\nThe beta version of the new admin is live, and we’re eager to hear your feedback. Explore, test, and let us know your thoughts in the **#admin-feedback** channel on our [deco.cx Discord server](https://deco.cx/discord). Note that you can continue using the stable version at https://deco.cx/admin.\n\nStay tuned for weekly updates, and get ready for the official launch on October 31st. See you soon!\n\nHappy coding!\n\n_The deco.cx team_"
+              "content": "## Welcome to the New Admin Beta and the Start of October Launch Month\n\nHey Deco users, we have something new for you! \n\nToday, we’re excited to introduce the beta version of our revamped admin panel, **available now at [https://admin.deco.cx](https://admin.deco.cx/).** Let’s get straight into what’s new and what you can expect in the coming weeks.\n\n## 1. New Navigation and Topbar Menus\n\n<img width=\"818\" alt=\"New navigation menu on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/371dfbb5-0188-4258-bf10-5219534556d0\">\n\nSwitching teams is now hassle-free. Do it straight from the topbar, no need to return to the home page. Access team members and billing options instantly, and with the new integrated menu, Pages, Sections, and Analytics are just a click away.\n\n## 2. New Site Home\n\n\n<img width=\"818\" alt=\"New deco.cx site home\" src=\"https://github.com/deco-cx/blog/assets/1633518/eef869b4-795f-4a6f-b9b6-b12d26d7c3f4\">\n\nWe’ve made it simpler and more intuitive, focusing on a clean design that puts your site and important info front and center.\n\n## 3. New Admin Pages\n\n## Sections\n\n<img width=\"818\" alt=\"Visualize the sections on your deco.cx site\" src=\"https://github.com/deco-cx/blog/assets/1633518/c7fed621-c964-4a4c-bf8e-1b41109a000d\">\n\nYour new Visual Library is here. Easily edit and create headers, footers, banners, and more with the available components.\n\n## Apps\n\n<img width=\"818\" alt=\"New apps screen\" src=\"https://github.com/deco-cx/blog/assets/1633518/66222859-feb6-4a3e-bd1c-f4b9eca3b3ca\">\n\nManage all your installed apps and their settings in one place. And keep an eye out - we’re rolling out improvements throughout the month.\n\n## Deployments\n\n<img width=\"818\" alt=\"Deployments on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/9430e46a-bd01-4a71-8032-75e29381f1d8\">\n\nTrack deno deploy versions, and roll back with ease. Every new commit is displayed, making version management a breeze.\n\n## Logs\n\n<img width=\"818\" alt=\"Logs on deco.cx\" src=\"https://github.com/deco-cx/blog/assets/1633518/b1bd8937-f5c5-49aa-a389-61d2bd072930\">\n\nAccess logs from any deployment, filter by date, and pinpoint errors quickly and accurately. Never guess what's happening in production again!\n\n## Coming Up in October Launch Month\n\nWe’re not stopping here. Every week, we’re rolling out new features leading up to the official launch of the new admin panel on October 31st, coinciding with our Fourth Hackathon. Here’s a sneak peek:\n\n* End-to-end New Analytics and VTEX Funnel  \n* A new editor with full variant support and enhanced publishing  \n* Easy redirects and proxies setup  \n* SEO updates and simplified new site creation  \n* Quick start on [play.deco.cx](https://play.deco.cx/)  \n* Unified release history and easy version restoring with GH + Deco integration  \n* A comprehensive library of ecommerce components  \n* One-click app installations from Deco hub  \n\n## Final Words\n\nThe beta version of the new admin is live, and we’re eager to hear your feedback. Explore, test, and let us know your thoughts in the **#admin-feedback** channel on our [deco.cx Discord server](https://deco.cx/discord). Note that you can continue using the stable version at https://deco.cx/admin.\n\nStay tuned for weekly updates, and get ready for the official launch on October 31st. See you soon!\n\nHappy coding!\n\n_The deco.cx team_",
+              "seo": {
+                "image": "https://github.com/site/assets/30700596/94670972-4b40-46f1-a9f9-afb7f492307d"
+              }
             }
           },
           "date": "12/10/2023",
@@ -10170,24 +10082,24 @@
           "img": "https://github.com/deco-cx/blog/assets/1753396/20fb996b-4d04-417c-af69-5beb2a7e7969",
           "body": {
             "en": {
+              "descr": "A journey of learning",
+              "title": "6 months of stores in production",
+              "content": "Over the past six months, we have accumulated a valuable set of lessons while taking stores into production. During this period, we have learned what to avoid, what doesn't work, and the best way to start developing an online store. Below, we share a summary of the lessons we have acquired during this journey.\n\n## **Starting the Development of a Store**\n\nAll projects created at Deco start from a pre-configured template with various components, integrations, and themes. We have noticed that after creating the store, some developers turn to GitHub to modify components and themes directly in the code. Although this is a natural reflex for a developer's work, we have noticed that projects in which development mainly focuses on the CMS (Content Management System) tend to be completed more quickly and with better performance.\n\nThe ideal flow that we have discovered is as follows:\n\n1. Create the project.\n2. Customize the theme, components, SEO optimization, among others through the Deco admin.\n3. Present the result to the end client and collect feedback.\n4. Based on the feedback, adjust the store in the CMS, using the predefined sections, and return to step 3.\n5. If the client is satisfied, migrate the domain to Deco.\n6. If it is necessary to make changes in the code, add specific sections for the use case in question.\n\n## **The `<dialog>` Tag**\n\nIn previous versions of our templates, we used the HTML5 tag **`<dialog>`**. This tag allowed the creation of modals with accessibility support. However, we identified two main problems related to it:\n\n1. It required JavaScript to work properly, which went against our philosophy of minimizing the use of JavaScript on the page.\n2. Recent versions of iPhones (10, 11, and 12) do not support this tag, which forced us to insert \"polyfills\". This insertion was synchronous and significantly affected the performance of the websites.\n\nDue to these two mentioned points, we have adopted an alternative approach using the **`<input type=\"checkbox>`** tag, which is widely supported by all browsers. This change solved both problems. We migrated our templates to this technique and observed an increase in compatibility between our websites and mobile devices.\n\nIf your website is still using the **`<dialog>`** tag, we recommend migrating to **`<input type=\"checkbox>`** as soon as possible to avoid incompatibilities with iPhones. For more information about this approach, please refer to **[this link](https://daisyui.com/components/modal/#method-2-using-a-hidden-checkbox-legacy)**.\n\n## **Absolute Units**\n\nWe noticed that some of our stores had conversion rates below expectations on certain devices, especially iPhones and Android devices. After a deeper analysis, we identified that the \"Go to checkout\" button was being hidden by the browser's address bar in Chrome and Safari on some of these devices.\n\nThis problem occurred due to the use of absolute units, such as **`vh`** (viewport height) and **`vw`** (viewport width), instead of relative units. Absolute units refer to the total size of the device's screen, not taking into account the rendering area of the window, which can hide parts of the user interface.\n\nTo avoid this type of problem, it is essential to avoid the use of absolute units such as **`vh`** and **`vw`**. We recommend reviewing your store to ensure that these units are not being used, especially in the minicart.\n\n## **Flexbox and Percentage Units**\n\nAnother problem that we identified in some stores relates to broken layouts in older versions of Safari. This usually occurs when percentage units are used in conjunction with flexbox. An example of this is the following code snippet:\n\n```html\n<div class=\"flex\">\n   <div class=\"w-full\"/>\n</div>\n\n```\n\nIn this example, we are combining flexbox (class **`flex`**) with percentage units (**`width: 100%`**). This may work in newer browsers but causes issues in older versions of Safari, such as iPhone 10, 11, and 12.\n\nTo solve this problem, we recommend replacing **`w-full`** with classes related to flexbox:\n\n```html\n<div class=\"flex\">\n   <div class=\"flex-grow\"/>\n</div>\n\n```\n\nThis will ensure that the layout works correctly in all browsers.\n\nWe are always keeping up with new projects, collecting feedback, and improving the **[Storefront](https://github.com/deco-sites/storefront)** template.",
               "seo": {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1bc67d75-698c-4d38-9035-64b097273881",
                 "title": "6 months of stores in production",
                 "description": "A journey of learning"
-              },
-              "descr": "A journey of learning",
-              "title": "6 months of stores in production",
-              "content": "Over the past six months, we have accumulated a valuable set of lessons while taking stores into production. During this period, we have learned what to avoid, what doesn't work, and the best way to start developing an online store. Below, we share a summary of the lessons we have acquired during this journey.\n\n## **Starting the Development of a Store**\n\nAll projects created at Deco start from a pre-configured template with various components, integrations, and themes. We have noticed that after creating the store, some developers turn to GitHub to modify components and themes directly in the code. Although this is a natural reflex for a developer's work, we have noticed that projects in which development mainly focuses on the CMS (Content Management System) tend to be completed more quickly and with better performance.\n\nThe ideal flow that we have discovered is as follows:\n\n1. Create the project.\n2. Customize the theme, components, SEO optimization, among others through the Deco admin.\n3. Present the result to the end client and collect feedback.\n4. Based on the feedback, adjust the store in the CMS, using the predefined sections, and return to step 3.\n5. If the client is satisfied, migrate the domain to Deco.\n6. If it is necessary to make changes in the code, add specific sections for the use case in question.\n\n## **The `<dialog>` Tag**\n\nIn previous versions of our templates, we used the HTML5 tag **`<dialog>`**. This tag allowed the creation of modals with accessibility support. However, we identified two main problems related to it:\n\n1. It required JavaScript to work properly, which went against our philosophy of minimizing the use of JavaScript on the page.\n2. Recent versions of iPhones (10, 11, and 12) do not support this tag, which forced us to insert \"polyfills\". This insertion was synchronous and significantly affected the performance of the websites.\n\nDue to these two mentioned points, we have adopted an alternative approach using the **`<input type=\"checkbox>`** tag, which is widely supported by all browsers. This change solved both problems. We migrated our templates to this technique and observed an increase in compatibility between our websites and mobile devices.\n\nIf your website is still using the **`<dialog>`** tag, we recommend migrating to **`<input type=\"checkbox>`** as soon as possible to avoid incompatibilities with iPhones. For more information about this approach, please refer to **[this link](https://daisyui.com/components/modal/#method-2-using-a-hidden-checkbox-legacy)**.\n\n## **Absolute Units**\n\nWe noticed that some of our stores had conversion rates below expectations on certain devices, especially iPhones and Android devices. After a deeper analysis, we identified that the \"Go to checkout\" button was being hidden by the browser's address bar in Chrome and Safari on some of these devices.\n\nThis problem occurred due to the use of absolute units, such as **`vh`** (viewport height) and **`vw`** (viewport width), instead of relative units. Absolute units refer to the total size of the device's screen, not taking into account the rendering area of the window, which can hide parts of the user interface.\n\nTo avoid this type of problem, it is essential to avoid the use of absolute units such as **`vh`** and **`vw`**. We recommend reviewing your store to ensure that these units are not being used, especially in the minicart.\n\n## **Flexbox and Percentage Units**\n\nAnother problem that we identified in some stores relates to broken layouts in older versions of Safari. This usually occurs when percentage units are used in conjunction with flexbox. An example of this is the following code snippet:\n\n```html\n<div class=\"flex\">\n   <div class=\"w-full\"/>\n</div>\n\n```\n\nIn this example, we are combining flexbox (class **`flex`**) with percentage units (**`width: 100%`**). This may work in newer browsers but causes issues in older versions of Safari, such as iPhone 10, 11, and 12.\n\nTo solve this problem, we recommend replacing **`w-full`** with classes related to flexbox:\n\n```html\n<div class=\"flex\">\n   <div class=\"flex-grow\"/>\n</div>\n\n```\n\nThis will ensure that the layout works correctly in all browsers.\n\nWe are always keeping up with new projects, collecting feedback, and improving the **[Storefront](https://github.com/deco-sites/storefront)** template."
+              }
             },
             "pt": {
+              "descr": "Uma jornada de aprendizados",
+              "title": "6 meses de lojas em produçāo",
+              "content": "Nos últimos seis meses acumulamos um valioso conjunto de lições ao levar lojas para produção. Nesse período, aprendemos o que deve ser evitado, o que não funciona e a melhor maneira de iniciar o desenvolvimento de uma loja online. A seguir, compartilhamos um resumo das lições que adquirimos durante essa jornada.\n\n## Início do Desenvolvimento de uma Loja\n\nTodos projetos criados na Deco partem de um template pré-configurado com diversos componentes, integrações e temas. Observamos que, após criar a loja, alguns desenvolvedores recorrem ao GitHub para modificar componentes e temas diretamente no código. Embora isso seja um reflexo natural do trabalho de um desenvolvedor, notamos que os projetos nos quais o desenvolvimento se concentra principalmente no CMS (Content Management System) tendem a ser concluídos mais rapidamente e com melhor desempenho.\n\nO fluxo que descobrimos ser o ideal é o seguinte:\n\n1. Criar o projeto.\n2. Personalizar o tema, componentes, otimização de SEO, entre outros através do admin da deco.\n3. Apresentar o resultado ao cliente final e coletar feedback.\n4. Com base no feedback, ajustar a loja no CMS, usando as seções predefinidas e voltar ao passo 3.\n6. Se o cliente estiver satisfeito, migrar o domínio para a Deco.\n7. Caso seja necessário fazer alterações no código, adicionar seções específicas para o caso de uso em questão.\n\n## A Tag `<dialog>`\n\nEm versões anteriores de nossos templates, utilizávamos a tag HTML5 `<dialog>`. Essa tag permitia a criação de modais com suporte à acessibilidade. No entanto, identificamos dois problemas principais relacionados a ela:\n\n1. Exigia JavaScript para funcionar corretamente, o que ia de encontro à nossa filosofia de minimizar o uso de JavaScript na página.\n2. Versões recentes do iPhone (10, 11 e 12) não oferecem suporte a essa tag, o que nos forçava a inserir \"polyfills\". Essa inserção era síncrona e prejudicava significativamente o desempenho dos sites.\n\nDevido a esses dois pontos mencionados, adotamos uma abordagem alternativa usando a tag `<input type=\"checkbox>`, que é amplamente suportada por todos os navegadores. Essa mudança resolveu ambos os problemas. Migramos nossos templates para essa técnica e observamos um aumento na compatibilidade entre nossos sites e dispositivos móveis.\n\nSe o seu site ainda estiver usando a tag `<dialog>`, recomendamos fazer a migração o mais rápido possível para `<input type=\"checkbox>` para evitar incompatibilidades com iPhones. Para obter mais informações sobre essa abordagem, consulte [este link](https://daisyui.com/components/modal/#method-2-using-a-hidden-checkbox-legacy).\n\n## Unidades absolutas\n\nPercebemos que algumas de nossas lojas apresentavam taxas de conversão abaixo do esperado em determinados dispositivos, especialmente em iPhones e dispositivos Android. Após uma análise mais aprofundada, identificamos que o botão \"Ir para o checkout\" estava sendo ocultado pela barra de endereços dos navegadores Chrome e Safari em alguns desses dispositivos.\n\nEsse problema ocorreu devido ao uso de unidades absolutas, como `vh` (viewport height) e `vw` (viewport width), em vez de unidades relativas. As unidades absolutas fazem referência ao tamanho total da tela do dispositivo, não levando em consideração a área de renderização da janela, o que pode ocultar partes da interface do usuário.\n\nPara evitar esse tipo de problema, é fundamental evitar o uso de unidades absolutas, como `vh` e `vw`. Recomendamos revisar sua loja para garantir que essas unidades não estejam sendo usadas, especialmente no minicart.\n\n## Flexbox e Unidades Percentuais\n\nOutro problema que identificamos em algumas lojas diz respeito ao layout quebrado em versões mais antigas do Safari. Isso ocorre geralmente quando unidades percentuais são usadas em conjunto com flexbox. Um exemplo disso é o seguinte trecho de código:\n\n```html\n<div class=\"flex\">\n   <div class=\"w-full\"/>\n</div>\n```\n\nNesse exemplo, estamos combinando flexbox (classe `flex`) com unidades percentuais (`width: 100%`). Isso pode funcionar em navegadores mais recentes, mas causa problemas em versões mais antigas do Safari, como o iPhone 10, 11 e 12.\n\nPara solucionar esse problema, recomendamos substituir `w-full` por classes relacionadas ao flexbox:\n\n ```html\n<div class=\"flex\">\n   <div class=\"flex-grow\"/>\n</div>\n```\n\nIsso garantirá que o layout funcione corretamente em todos os navegadores.\n\n\nEstamos sempre acompanhando os novos projetos, coletando os apresentados e melhorando o template [Storefront](https://github.com/deco-sites/storefront).",
               "seo": {
                 "image": "https://github.com/deco-cx/blog/assets/1753396/20fb996b-4d04-417c-af69-5beb2a7e7969",
                 "title": "6 meses de lojas em produçāo - Uma jornada de aprendizados",
                 "description": "Nos últimos seis meses acumulamos um valioso conjunto de lições ao levar lojas para produção. Nesse período, aprendemos o que deve ser evitado, o que não funciona e a melhor maneira de iniciar o desenvolvimento de uma loja online. A seguir, compartilhamos um resumo das lições que adquirimos durante essa jornada."
-              },
-              "descr": "Uma jornada de aprendizados",
-              "title": "6 meses de lojas em produçāo",
-              "content": "Nos últimos seis meses acumulamos um valioso conjunto de lições ao levar lojas para produção. Nesse período, aprendemos o que deve ser evitado, o que não funciona e a melhor maneira de iniciar o desenvolvimento de uma loja online. A seguir, compartilhamos um resumo das lições que adquirimos durante essa jornada.\n\n## Início do Desenvolvimento de uma Loja\n\nTodos projetos criados na Deco partem de um template pré-configurado com diversos componentes, integrações e temas. Observamos que, após criar a loja, alguns desenvolvedores recorrem ao GitHub para modificar componentes e temas diretamente no código. Embora isso seja um reflexo natural do trabalho de um desenvolvedor, notamos que os projetos nos quais o desenvolvimento se concentra principalmente no CMS (Content Management System) tendem a ser concluídos mais rapidamente e com melhor desempenho.\n\nO fluxo que descobrimos ser o ideal é o seguinte:\n\n1. Criar o projeto.\n2. Personalizar o tema, componentes, otimização de SEO, entre outros através do admin da deco.\n3. Apresentar o resultado ao cliente final e coletar feedback.\n4. Com base no feedback, ajustar a loja no CMS, usando as seções predefinidas e voltar ao passo 3.\n6. Se o cliente estiver satisfeito, migrar o domínio para a Deco.\n7. Caso seja necessário fazer alterações no código, adicionar seções específicas para o caso de uso em questão.\n\n## A Tag `<dialog>`\n\nEm versões anteriores de nossos templates, utilizávamos a tag HTML5 `<dialog>`. Essa tag permitia a criação de modais com suporte à acessibilidade. No entanto, identificamos dois problemas principais relacionados a ela:\n\n1. Exigia JavaScript para funcionar corretamente, o que ia de encontro à nossa filosofia de minimizar o uso de JavaScript na página.\n2. Versões recentes do iPhone (10, 11 e 12) não oferecem suporte a essa tag, o que nos forçava a inserir \"polyfills\". Essa inserção era síncrona e prejudicava significativamente o desempenho dos sites.\n\nDevido a esses dois pontos mencionados, adotamos uma abordagem alternativa usando a tag `<input type=\"checkbox>`, que é amplamente suportada por todos os navegadores. Essa mudança resolveu ambos os problemas. Migramos nossos templates para essa técnica e observamos um aumento na compatibilidade entre nossos sites e dispositivos móveis.\n\nSe o seu site ainda estiver usando a tag `<dialog>`, recomendamos fazer a migração o mais rápido possível para `<input type=\"checkbox>` para evitar incompatibilidades com iPhones. Para obter mais informações sobre essa abordagem, consulte [este link](https://daisyui.com/components/modal/#method-2-using-a-hidden-checkbox-legacy).\n\n## Unidades absolutas\n\nPercebemos que algumas de nossas lojas apresentavam taxas de conversão abaixo do esperado em determinados dispositivos, especialmente em iPhones e dispositivos Android. Após uma análise mais aprofundada, identificamos que o botão \"Ir para o checkout\" estava sendo ocultado pela barra de endereços dos navegadores Chrome e Safari em alguns desses dispositivos.\n\nEsse problema ocorreu devido ao uso de unidades absolutas, como `vh` (viewport height) e `vw` (viewport width), em vez de unidades relativas. As unidades absolutas fazem referência ao tamanho total da tela do dispositivo, não levando em consideração a área de renderização da janela, o que pode ocultar partes da interface do usuário.\n\nPara evitar esse tipo de problema, é fundamental evitar o uso de unidades absolutas, como `vh` e `vw`. Recomendamos revisar sua loja para garantir que essas unidades não estejam sendo usadas, especialmente no minicart.\n\n## Flexbox e Unidades Percentuais\n\nOutro problema que identificamos em algumas lojas diz respeito ao layout quebrado em versões mais antigas do Safari. Isso ocorre geralmente quando unidades percentuais são usadas em conjunto com flexbox. Um exemplo disso é o seguinte trecho de código:\n\n```html\n<div class=\"flex\">\n   <div class=\"w-full\"/>\n</div>\n```\n\nNesse exemplo, estamos combinando flexbox (classe `flex`) com unidades percentuais (`width: 100%`). Isso pode funcionar em navegadores mais recentes, mas causa problemas em versões mais antigas do Safari, como o iPhone 10, 11 e 12.\n\nPara solucionar esse problema, recomendamos substituir `w-full` por classes relacionadas ao flexbox:\n\n ```html\n<div class=\"flex\">\n   <div class=\"flex-grow\"/>\n</div>\n```\n\nIsso garantirá que o layout funcione corretamente em todos os navegadores.\n\n\nEstamos sempre acompanhando os novos projetos, coletando os apresentados e melhorando o template [Storefront](https://github.com/deco-sites/storefront)."
+              }
             }
           },
           "date": "10/10/2023",
@@ -10244,8 +10156,8 @@
           },
           "date": "23/01/2023",
           "path": "apps-era.md",
-          "descr": "A era dos Apps!",
-          "author": "Marcos Candeia, Tiago Gimenes"
+          "author": "Marcos Candeia, Tiago Gimenes",
+          "descr": "A era dos Apps!"
         },
         {
           "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/450efa63-082e-427a-b218-e8b3690823cc",
@@ -10318,32 +10230,6 @@
           "date": "11/29/2022",
           "path": "pg-vb-pt-br.md",
           "author": "Chat GPT"
-        },
-        {
-          "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/49c3d07b-8ddc-42f0-b73e-235151c82f67",
-          "body": {
-            "en": {
-              "seo": {
-                "title": "How Tags Affect a Perfectly Optimized Storefront"
-              },
-              "descr": "Find out what's the best score a complex store can really get",
-              "title": "Performance Lab: How Tags Affect a Perfectly Optimized Storefront",
-              "content": "## About\n\nWebsite performance is full of nuances and it's a field of research on it's own. Everyone is looking to get approved by Google’s Core Web Vitals and this is exactly what we aim at deco.cx.  Anyhow, the elephant is the room remains “What's the best score a complex store can really get?” \n\nToday, we set our sails to answer: **how exactly third-party tags affect a perfectly optimized storefront?**\n\n## Methodology\n\nThis study was conducted mirroring a typical e-commerce homepage that loads:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>A header leading to 30+ links with 3 level menu navigation</li>\n        <li>1 full-banner carousel with 2 high definition images (1200x1200)</li>\n        <li>1 Campaign Timer</li>\n        <li>3 Product Shelfs fetching 12 products each</li>\n        <li>1 Shoppable Banner</li>\n        <li>1 Category grid</li>\n        <li>1 Blog post section</li>\n        <li>A footer with 4 columns and 20+ links</li>\n    </ul>\n</div>\n\n## Key Metrics\n\nAdding tags to your storefront will have a direct impact on two performance metrics:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>**Total Blocking Time:** One of Core Web Vitals metrics, it measures the total amount of time after First Contentful Paint (FCP) where the main thread was blocked for long enough to prevent input responsiveness.</li>\n        <li>**Performance Grade:** We used https://pagespeed.web.dev/ API to run tests because it guarantees isonomy of the overall conditions (CPU, connection, etc). More over, since it's an universal tool, anyone can double check this study on their own.</li>\n    </ul>\n</div>\n\nWe calculated the final grades for each scenario by running the performance audit 100 times and using the [median](https://www.investopedia.com/terms/m/median.asp). This strategy will help us:\n\n<ul>\n<li>Avoiding Google Page Speed cache (servers are all USA based)</li>\n<li>Avoiding outliers* that could miss lead results</li>\n</ul>\n\n## Scenario 1: Perfectly Optimized Storefront (no tags)\n\nThis is a storefront built on top of deco.cx without any third-party tags, only with our built-in Analytics Tools (weights 1kb).\n\n<img width=\"1062\" alt=\"Gráfico 1\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0c551a57-a664-40cf-bcae-7b46967b5cdb\">\n\n_Graph 1: Frequency by Performance score with Perfectly Optimized Storefront_\n\nMax grade: 96\n\nMin grade: 73\n\nAverage: 91\n\n**Median**: **93**\n\nCheck this storefront: https://tag-affect.deco.site\n\n## Scenario 2: Perfectly Optimized Storefront + GTM/GA\n\nNow, we have added Google Tag Manager tag and it's most common partner the Google Analytics tag.\n\n<img width=\"1062\" alt=\"Gráfico 2\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cbafb87b-6f0b-4dda-b248-876685eb34ce\">\n\n_Graph 2: Frequency by Performance score with GTM/GA_\n\nMax grade: 96\n\nMin grade: 68\n\nAverage: 86\n\n**Median**: **84**\n\nCheck this storefront: https://tag-affect.deco.site/gtmga\n\n## Scenario 3: Perfectly Optimized Storefront + Full GTM\n\nNow, we have added all tags that a complex operations like one of our most sophisticated customer has.\n\n<img width=\"1062\" alt=\"Gráfico 3\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff52f94d-c5d5-48ae-aa10-4b31638d1fe5\">\n\n_Graph 3: Frequency by Performance score with sophisticated GTM_\n\nMax grade: 75\n\nMin grade: 60\n\nAverage: 69\n\n**Median**: **68**\n\n## Final Thoughts and Conclusion\n\n<img width=\"1062\" alt=\"Gráfico 4\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae1b7f24-f0d8-4ce4-93ca-3f6a1994c75f\">\n\n_Graph 4: Performance comparation_\n\n<img width=\"1062\" alt=\"Gráfico 5\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/275a616e-42b0-46a6-a941-bf8b286a4862\">\n\n_Graph 5: Total Blocking Time comparation_\n\n**Perfectly Optimized Storefront TBT Average:  184**\n\n**Heavy GTM Storefront TBT Average: 2305,5**\n\nUsing deco.cx you can reach as high as 90+ on Google performance grade while creating a heavy content digital experience (fully dynamic using high quality media). As you add more and more third-party tags, will you get as low as 65ish, increasing your TBT by 12X.\n\nThis points out a few relevant insight:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>The most damaged Core Web Vital metric is the TBT, since each tag typically involves additional JavaScript execution, which can delay the rendering of a webpage and cause blocking of other critical tasks, such as user interaction or resource loading.</li>\n        <li>There is a trade-off between adding third-party tags and your website performance</li>\n    </ul>\n</div>\n\n_The rule used for removing outliers in the study is based on quartiles. Check out more at [Khan Academy]( https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/identifying-outliers-iqr-rule)_\n"
-            },
-            "pt": {
-              "seo": {
-                "title": "Como Tags Afetam uma Loja Virtual Perfeitamente Otimizada"
-              },
-              "descr": "Descubra qual é a melhor pontuação de performance que uma loja complexa realmente pode obter",
-              "title": "Performance Lab: Como Tags Afetam uma Loja Virtual Perfeitamente Otimizada",
-              "content": "## Sobre\n\nO desempenho do site está cheio de nuances e é um campo de pesquisa por si só. Todos estão procurando ser aprovados pelos Core Web Vitals do Google e é exatamente isso que buscamos na deco.cx. De qualquer forma, o elefante na sala continua sendo \"Qual é a melhor pontuação que uma loja complexa pode realmente obter?\" \n\nHoje, colocamos nossas velas para responder: **como exatamente as tags de terceiros afetam uma loja perfeitamente otimizada?**\n\n## Metodologia\n\nEste estudo foi conduzido espelhando uma página inicial típica de comércio eletrônico que carrega:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>Um cabeçalho com mais de 30 links com navegação de menu de 3 níveis</li>\n        <li>1 carrossel de banner completo com 2 imagens de alta definição (1200x1200)</li>\n        <li>1 Contador de Campanha</li>\n        <li>3 Prateleiras de Produtos exibindo 12 produtos cada</li>\n        <li>1 Banner Comercializável</li>\n        <li>1 Grade de Categoria</li>\n        <li>1 Seção de postagens de blog</li>\n        <li>1 rodapé com 4 colunas e mais de 20 links</li>\n    </ul>\n</div>\n\n## Métricas Chave\n\nAdicionar tags à sua loja terá um impacto direto em duas métricas de desempenho:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>**Tempo Total de Bloqueio:** Uma das métricas do Core Web Vitals, mede o tempo total após o Primeiro Conteúdo Exibido (FCP) em que a thread principal foi bloqueada tempo suficiente para evitar a responsividade de entrada.</li>\n        <li>**Nota de Desempenho:** Usamos a API https://pagespeed.web.dev/ para executar testes porque garante a isonomia das condições gerais (CPU, conexão, etc). Além disso, como é uma ferramenta universal, qualquer um pode verificar este estudo por conta própria.</li>\n    </ul>\n</div>\n\nCalculamos as notas finais para cada cenário executando a auditoria de desempenho 100 vezes e usando a [mediana](https://www.investopedia.com/terms/m/median.asp). Essa estratégia nos ajudará a:\n\n<ul>\n<li>Evitar o cache do Google Page Speed (os servidores são todos baseados nos EUA)</li>\n<li>Evitar outliers que poderiam distorcer os resultados</li>\n</ul>\n\n## Cenário 1: Loja Perfeitamente Otimizada (sem tags)\n\nEsta é uma loja construída em cima da deco.cx sem nenhuma tag de terceiros, apenas com nossas Ferramentas de Análise integradas (peso 1kb).\n\n<img width=\"1062\" alt=\"Gráfico 1\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0c551a57-a664-40cf-bcae-7b46967b5cdb\">\n\n_Gráfico 1: Frequência por pontuação de desempenho com Loja Perfeitamente Otimizada_\n\nNota máxima: 96\n\nNota mínima: 73\n\nMédia: 91\n\n**Mediana**: **93**\n\nVerifique esta loja: https://tag-affect.deco.site\n\n## Cenário 2: Loja Perfeitamente Otimizada + GTM/GA\n\nAgora, adicionamos a Tag do Gerenciador de Tags do Google e seu parceiro mais comum, a tag do Google Analytics.\n\n<img width=\"1062\" alt=\"Gráfico 2\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cbafb87b-6f0b-4dda-b248-876685eb34ce\">\n\n_Gráfico 2: Frequência por pontuação de desempenho com GTM/GA_\n\nNota máxima: 96\n\nNota mínima: 68\n\nMédia: 86\n\n**Mediana**: **84**\n\nVerifique esta loja: https://tag-affect.deco.site/gtmga\n\n## Cenário 3: Loja Perfeitamente Otimizada + GTM Completo\n\nAgora, adicionamos todas as tags que uma operação complexa como uma de nossos clientes mais sofisticados possui.\n\n<img width=\"1062\" alt=\"Gráfico 3\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff52f94d-c5d5-48ae-aa10-4b31638d1fe5\">\n\n_Gráfico 3: Frequência por pontuação de desempenho com GTM sofisticado_\n\nNota máxima: 75\n\nNota mínima: 60\n\nMédia: 69\n\n**Mediana**: **68**\n\n## Pensamentos Finais e Conclusão\n\n<img width=\"1062\" alt=\"Gráfico 4\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae1b7f24-f0d8-4ce4-93ca-3f6a1994c75f\">\n\n_Gráfico 4: Comparação de desempenho_\n\n<img width=\"1062\" alt=\"Gráfico 5\" src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/275a616e-42b0-46a6-a941-bf8b286a4862\">\n\n_Gráfico 5: Comparação do Tempo Total de Bloqueio_\n\n**Média do TBT da Loja Perfeitamente Otimizada:  184**\n\n**Média do TBT da Loja Pesada com GTM: 2305,5**\n\nUsando deco.cx, você pode alcançar mais de 90 na nota de desempenho do Google enquanto cria uma experiência digital com conteúdo pesado (totalmente dinâmica usando mídia de alta qualidade). À medida que você adiciona mais e mais tags de terceiros, poderá chegar a cerca de 65, aumentando seu TBT em 12 vezes.\n\nIsso aponta algumas percepções relevantes:\n\n<div style=\"background-color: rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1.5em\">\n    <ul>\n        <li>A métrica Core Web Vital mais prejudicada é o TBT, pois cada tag geralmente envolve execução adicional de JavaScript, o que pode atrasar a renderização de uma página da web e causar bloqueio de outras tarefas críticas, como interação do usuário ou carregamento de recursos.</li>\n        <li>Há um equilíbrio entre adicionar tags de terceiros e o desempenho do seu site</li>\n    </ul>\n</div>\n\n_A regra usada para remover outliers no estudo é baseada em quartis. Confira mais em [Khan Academy]( https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/identifying-outliers-iqr-rule)_\n"
-            }
-          },
-          "date": "20/03/2024",
-          "path": "how-tags-affect-a-perfectly-optimized-storefront",
-          "tags": [],
-          "author": "Leandro Borges e Vinicius Trindade",
-          "readTime": "5 minutos"
         }
       ]
     },
@@ -11558,77 +11444,6 @@
       "variants": [
         {
           "rule": {
-            "__resolveType": "website/matchers/never.ts"
-          },
-          "value": [
-            {
-              "post": {
-                "page": {
-                  "__resolveType": "site/functions/LoadPageProps.ts"
-                },
-                "postList": {
-                  "__resolveType": "blogposts"
-                },
-                "__resolveType": "site/loaders/blogPostDetailsLoader.ts"
-              },
-              "locale": "en",
-              "__resolveType": "site/sections/BlogPostSEO.tsx",
-              "titleTemplate": "deco.cx - %s "
-            },
-            {
-              "__resolveType": "GTM"
-            },
-            {
-              "page": {
-                "__resolveType": "7946"
-              },
-              "__resolveType": "$live/sections/PageInclude.tsx"
-            },
-            {
-              "page": {
-                "__resolveType": "site/functions/LoadPageProps.ts"
-              },
-              "postList": {
-                "__resolveType": "blogposts"
-              },
-              "backToBlog": "Back to blog",
-              "__resolveType": "site/sections/BlogPostHeader.tsx"
-            },
-            {
-              "post": {
-                "list": {
-                  "__resolveType": "blogposts"
-                },
-                "slug": {
-                  "param": "path",
-                  "__resolveType": "deco-sites/std/functions/requestToParam.ts"
-                },
-                "__resolveType": "site/loaders/blogPostMarkdownLoader.ts"
-              },
-              "text": "test",
-              "__resolveType": "site/sections/Markdown.tsx"
-            },
-            {
-              "cards": {
-                "page": {
-                  "__resolveType": "site/functions/LoadPageProps.ts"
-                },
-                "postList": {
-                  "__resolveType": "blogposts"
-                },
-                "__resolveType": "site/loaders/featuredPosts.ts"
-              },
-              "locale": "en",
-              "__resolveType": "site/sections/Carousel.tsx",
-              "bottomPadding": "96px"
-            },
-            {
-              "__resolveType": "[en] Footer"
-            }
-          ]
-        },
-        {
-          "rule": {
             "__resolveType": "website/matchers/always.ts"
           },
           "value": [
@@ -11650,22 +11465,20 @@
               "__resolveType": "GTM"
             },
             {
-              "page": {
-                "__resolveType": "7946"
-              },
-              "__resolveType": "$live/sections/PageInclude.tsx"
+              "__resolveType": "Deco Header [EN]"
             },
             {
+              "__resolveType": "site/sections/BlogPostHeader.tsx",
               "page": {
                 "__resolveType": "site/functions/LoadPageProps.ts"
               },
               "postList": {
                 "__resolveType": "blogposts"
               },
-              "backToBlog": "Back to blog",
-              "__resolveType": "site/sections/BlogPostHeader.tsx"
+              "backToBlog": "Back to blog"
             },
             {
+              "__resolveType": "site/sections/Markdown.tsx",
               "post": {
                 "list": {
                   "__resolveType": "blogposts"
@@ -11676,10 +11489,10 @@
                 },
                 "__resolveType": "site/loaders/blogPostMarkdownLoader.ts"
               },
-              "text": "test",
-              "__resolveType": "site/sections/Markdown.tsx"
+              "text": "test"
             },
             {
+              "__resolveType": "site/sections/Carousel.tsx",
               "cards": {
                 "page": {
                   "__resolveType": "site/functions/LoadPageProps.ts"
@@ -11690,11 +11503,10 @@
                 "__resolveType": "site/loaders/featuredPosts.ts"
               },
               "locale": "en",
-              "__resolveType": "site/sections/Carousel.tsx",
               "bottomPadding": "96px"
             },
             {
-              "__resolveType": "[en] Footer"
+              "__resolveType": "Deco Footer [EN]"
             }
           ]
         }
@@ -13536,6 +13348,7 @@
         "__resolveType": "Header - EN"
       },
       {
+        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "Banner": {
           "bannerHero": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c51f8c16-0b01-40b8-ae72-7e3a205ca515"
         },
@@ -13546,10 +13359,10 @@
           "titleGreenButton": "Book a Demo",
           "titleWhiteButton": "Live Projects"
         },
-        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "headlineSubtitle": "Discover how deco.cx transformed businesses: dive deep into customer stories of increased sales and conversions. See the real impact they experienced and book a demo to boost your e-commerce revenue."
       },
       {
+        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "list": [
           {
             "image": [
@@ -13725,7 +13538,6 @@
           }
         },
         "itensPerPage": 12,
-        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "indexCategories": [
           {
             "cards": [
@@ -13812,13 +13624,13 @@
         "__resolveType": "[en] Footer"
       },
       {
+        "__resolveType": "site/sections/Head.tsx",
         "url": "https://www.deco.cx/en/customer-stories",
         "title": "deco.cx | Customer Stories",
         "imageUrl": "https://www.deco.cx/decocx-meta-en.png",
         "styleUrls": [],
         "themeColor": "#0A2121",
-        "description": "Discover deco.cx success: in-depth customer stories of boosted sales, conversions. See their real impact. Book a demo to elevate e-commerce revenue.",
-        "__resolveType": "site/sections/Head.tsx"
+        "description": "Discover deco.cx success: in-depth customer stories of boosted sales, conversions. See their real impact. Book a demo to elevate e-commerce revenue."
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -19762,9 +19574,10 @@
     "path": "/en/live-projects",
     "sections": [
       {
-        "__resolveType": "Header - EN"
+        "__resolveType": "Deco Header [EN]"
       },
       {
+        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "Banner": {
           "bannerHero": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ed1c28ba-362e-49d8-9229-5ebd2820478a"
         },
@@ -19775,10 +19588,10 @@
           "titleGreenButton": "Book a Demo",
           "titleWhiteButton": "Customer Stories"
         },
-        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "headlineSubtitle": "Discover deco.cx, the ultimate solution for a fast, simple, and scalable frontend. Boost your conversions with a platform used by leading brands to create unparalleled digital experiences and ultra-fast websites."
       },
       {
+        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "list": [
           {
             "image": [
@@ -19954,7 +19767,6 @@
           }
         },
         "itensPerPage": 12,
-        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "indexCategories": [
           {
             "cards": [
@@ -19986,7 +19798,7 @@
           {
             "cards": [
               {
-                "link": "osklen.com.br",
+                "link": "https://www.osklen.com.br",
                 "image": [
                   {
                     "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/21035848-a0df-407c-81b6-64e631a25aa5",
@@ -19996,7 +19808,7 @@
                 "label": "Osklen"
               },
               {
-                "link": "bawclothing.com.br",
+                "link": "https://www.bawclothing.com.br",
                 "image": [
                   {
                     "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/583999d7-a61a-4e17-b35d-abf58eecd002",
@@ -20320,16 +20132,16 @@
         "nomeDaCategoriaGeral": "All"
       },
       {
-        "__resolveType": "[en] Footer"
-      },
-      {
+        "__resolveType": "site/sections/Head.tsx",
         "url": "https://www.deco.cx/en/live-projects",
         "title": "deco.cx | Live Projects",
         "imageUrl": "https://www.deco.cx/decocx-meta-en.png",
         "styleUrls": [],
         "themeColor": "#0A2121",
-        "description": "The digital experience platform that combines performance and personalization for enterprise ecommerce.",
-        "__resolveType": "site/sections/Head.tsx"
+        "description": "The digital experience platform that combines performance and personalization for enterprise ecommerce."
+      },
+      {
+        "__resolveType": "Deco Footer [EN]"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -21763,6 +21575,9 @@
             },
             {
               "__resolveType": "site/sections/NRF/Grid.tsx"
+            },
+            {
+              "__resolveType": "site/sections/ProductHuntCTA.tsx"
             }
           ]
         },
@@ -21874,6 +21689,9 @@
             },
             {
               "__resolveType": "site/sections/NRF/Grid.tsx"
+            },
+            {
+              "__resolveType": "site/sections/ProductHuntCTA.tsx"
             }
           ]
         }
@@ -24177,7 +23995,7 @@
   },
   "redirect-5507dcf5bdfb": {
     "redirect": {
-      "to": "https://www.producthunt.com/products/deco-cx-2-0",
+      "to": "https://www.producthunt.com/posts/deco-cx-2-0?utm_source=ph",
       "from": "/ph",
       "type": "temporary"
     },
@@ -24339,10 +24157,10 @@
     "seo": {
       "type": "website",
       "title": "deco.cx - Own your frontend. Own your future. ",
-      "themeColor": "dark",
       "description": "The digital experience platform that combines performance and personalization for enterprise ecommerce.",
       "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
+      "descriptionTemplate": "%s | Deco.cx",
+      "themeColor": "dark"
     },
     "global": [
       {
@@ -24393,5 +24211,17 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "Preview /sections/Test.tsx": {
+    "__resolveType": "site/sections/Test.tsx",
+    "features": [
+      {
+        "status": "Live",
+        "name": []
+      }
+    ]
+  },
+  "Preview site/sections/Test.tsx": {
+    "__resolveType": "site/sections/Test.tsx"
   }
 }

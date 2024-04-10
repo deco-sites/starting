@@ -113,7 +113,10 @@ export default function WasThisPageHelpfulContent({
               )}
             </div>
           </div>
-          <div class="text-[#FFFFFF80] text-[0.875rem] leading-[1.125rem] tracking-[-0.14px]" dangerouslySetInnerHTML={{ __html: text }} />
+          <div
+            class="text-[#FFFFFF80] text-[0.875rem] leading-[1.125rem] tracking-[-0.14px]"
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
         </div>
       )}
     </>

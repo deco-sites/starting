@@ -9,7 +9,10 @@ export function BlogPostCard({
   ...props
 }: Post & { locale?: SupportedLocales }) {
   return (
-    <a href={props.path} class="group duration-200 border-[2px] border-[#FFFFFF26] bg-[#FFFFFF0D] rounded-[22px] backdrop-filter backdrop-blur-24">
+    <a
+      href={props.path}
+      class="group duration-200 border-[2px] border-[#FFFFFF26] bg-[#FFFFFF0D] rounded-[22px] backdrop-filter backdrop-blur-24"
+    >
       <div class="flex flex-col w-full text-white">
         <div class="overflow-hidden rounded-[22px_22px_0_0]">
           <Image

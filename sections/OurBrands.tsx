@@ -105,10 +105,12 @@ function OurBrands(props: Props) {
             {news?.title}
           </h3>
           <div class="flex flex-wrap justify-center gap-2 md:gap-4">
-            {listNews.map((element) => <Logo
-              key={element.href}
-              {...element}
-            />)}
+            {listNews.map((element) => (
+              <Logo
+                key={element.href}
+                {...element}
+              />
+            ))}
           </div>
         </div>
       </div>

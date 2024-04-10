@@ -54,7 +54,7 @@ function SubMenu({ menu }: { menu: Menu[] }) {
   );
 }
 
-const footerMessage = "Made with <3 in Brazil"
+const footerMessage = "Made with <3 in Brazil";
 
 export default function Footer({
   menu,
@@ -117,7 +117,9 @@ export default function Footer({
               </svg>
             </a>
             <span class="text-[#113032]">© 2024 All rights reserved</span>
-            <span class="pt-4 text-[14px] text-[#113032] font-normal leading-[150%]">{footerMessage}</span>
+            <span class="pt-4 text-[14px] text-[#113032] font-normal leading-[150%]">
+              {footerMessage}
+            </span>
           </div>
 
           {menu && <SubMenu menu={menu} />}

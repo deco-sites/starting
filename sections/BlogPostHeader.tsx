@@ -70,7 +70,10 @@ export default function BlogPostHeader(props: Props) {
           <span>{post.author}</span>
         </div>
       </div>
-      <style dangerouslySetInnerHTML={{__html: `body{background-color: black;}`}}></style>
+      <style
+        dangerouslySetInnerHTML={{ __html: `body{background-color: black;}` }}
+      >
+      </style>
     </section>
   );
 }

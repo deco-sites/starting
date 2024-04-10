@@ -33,7 +33,7 @@ export interface Props {
   pageInitial: string;
   mkt?: { label: string; url: string; selected?: boolean };
   dev?: { label: string; url: string; selected?: boolean };
-  login: { label: string; url: string };
+  login?: { label: string; url: string };
   sign: { label: string; url: string };
   linkedinUrl: string;
   gitUrl: string;
@@ -479,14 +479,14 @@ export default function Header(props: Props) {
                   {props.sign.label}
                 </a>
               </li>
-              <li class="h-[50px] grid items-center">
+              {/* <li class="h-[50px] grid items-center">
                 <a
                   href={props.login.url}
                   class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
                 >
                   {props.login.label}
                 </a>
-              </li>
+              </li> */}
             </ul>
             <ul class="flex flex-row justify-center">
               <li class="h-[50px] grid items-center">
@@ -579,14 +579,14 @@ export default function Header(props: Props) {
               ]}
             />
           </li>
-          <li>
+          {/* <li>
             <a
               href={props.login.url}
               class="block md:hover:border-[#02F67C] md:hover:border md:hover:text-[#fff] border-[transparent] border font-normal text-[16px] text-[#06E474] px-3 md:py-1 rounded-full md:transition md:ease-in-out md:duration-300"
             >
               {props.login.label}
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href={props.sign.url}

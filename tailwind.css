@@ -5,6 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    background: #000;
   }
 
   .html {
@@ -376,6 +377,18 @@
   border-radius: 0.5rem;
   transition: transform 0.2s;
   cursor: pointer;
+}
+
+.prose a strong{
+  color: #06E474;
+}
+
+.prose a {
+  color: #06E474;
+}
+
+.prose strong {
+  color: white;
 }
 
 .cursorCustom{

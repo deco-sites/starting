@@ -34,7 +34,8 @@ export default function FeaturedPost({
                 </span>
               </div>
               <div class="flex flex-col items-center">
-                {/* <div class="text-scale-900 flex space-x-2 text-sm">
+                {
+                  /* <div class="text-scale-900 flex space-x-2 text-sm">
                   <p>{date}</p>
                   {readTime && (
                     <>
@@ -42,9 +43,12 @@ export default function FeaturedPost({
                       <p>{readTime} minute read</p>
                     </>
                   )}
-                </div> */}
+                </div> */
+                }
                 <div class="flex flex-col text-white gap-6">
-                    <h2 class="font-600 text-[2.375rem] lg:text-[3.375rem] leading-[100%] tracking-[-1.04px]">{body[locale]?.title}</h2>
+                  <h2 class="font-600 text-[2.375rem] lg:text-[3.375rem] leading-[100%] tracking-[-1.04px]">
+                    {body[locale]?.title}
+                  </h2>
                   <p class="text-xl">{body[locale]?.descr}</p>
                   <div>
                     <div class="flex items-center space-x-3">
