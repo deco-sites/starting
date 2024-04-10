@@ -1918,24 +1918,24 @@
     "path": "/en/community",
     "sections": [
       {
-        "__resolveType": "[en] [mkt] Head"
+        "__resolveType": "GTM"
       },
       {
-        "__resolveType": "GTM"
+        "__resolveType": "[en] [mkt] Head"
       },
       {
         "__resolveType": "Deco Header [EN]"
       },
       {
         "__resolveType": "site/sections/Community.tsx",
-        "mainText": "Backed up by a community of 1000+ members",
-        "secondText": "We are already building the largest multiplatform e-commerce community -from Latin America to the world. Here you will find:",
-        "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a5559783-e2ea-47f3-9128-6a1d78f62076",
+        "mainText": "Backed up by a community of 2800+ members",
+        "secondText": "We are building the largest multiplatform e-commerce community — gathering the Elite Web Development on the mission to simplify the web itself.",
+        "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/14b49a10-dccf-4609-8025-ac5feb6afcdc",
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
         "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5d50b76b-b8aa-4fd1-8422-66263d3a9e00",
         "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5a2b8dad-e7d6-434a-b1d2-0a95495573fc",
         "hrefSecondButton": "https://discord.gg/YsGgt8EQCZ",
-        "labelSecondButton": "Join the movement"
+        "labelSecondButton": "Join the community"
       },
       {
         "__resolveType": "site/sections/Benefits.tsx",
@@ -4871,8 +4871,8 @@
     },
     "tabs": [
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5986d39-b570-4c80-8af5-597a67d83b5f",
-        "title": "Section Library"
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b7286e57-55ec-4a4f-bfa4-cf800b223e9c",
+        "title": "Web-based Code Editor"
       },
       {
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e61ea2d8-8bb6-4498-ab89-c179e78264b1",
@@ -13339,6 +13339,7 @@
         "__resolveType": "Header - EN"
       },
       {
+        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "Banner": {
           "bannerHero": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c51f8c16-0b01-40b8-ae72-7e3a205ca515"
         },
@@ -13349,10 +13350,10 @@
           "titleGreenButton": "Book a Demo",
           "titleWhiteButton": "Live Projects"
         },
-        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "headlineSubtitle": "Discover how deco.cx transformed businesses: dive deep into customer stories of increased sales and conversions. See the real impact they experienced and book a demo to boost your e-commerce revenue."
       },
       {
+        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "list": [
           {
             "image": [
@@ -13528,7 +13529,6 @@
           }
         },
         "itensPerPage": 12,
-        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "indexCategories": [
           {
             "cards": [
@@ -13615,13 +13615,13 @@
         "__resolveType": "[en] Footer"
       },
       {
+        "__resolveType": "site/sections/Head.tsx",
         "url": "https://www.deco.cx/en/customer-stories",
         "title": "deco.cx | Customer Stories",
         "imageUrl": "https://www.deco.cx/decocx-meta-en.png",
         "styleUrls": [],
         "themeColor": "#0A2121",
-        "description": "Discover deco.cx success: in-depth customer stories of boosted sales, conversions. See their real impact. Book a demo to elevate e-commerce revenue.",
-        "__resolveType": "site/sections/Head.tsx"
+        "description": "Discover deco.cx success: in-depth customer stories of boosted sales, conversions. See their real impact. Book a demo to elevate e-commerce revenue."
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -19565,9 +19565,10 @@
     "path": "/en/live-projects",
     "sections": [
       {
-        "__resolveType": "Header - EN"
+        "__resolveType": "Deco Header [EN]"
       },
       {
+        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "Banner": {
           "bannerHero": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ed1c28ba-362e-49d8-9229-5ebd2820478a"
         },
@@ -19578,10 +19579,10 @@
           "titleGreenButton": "Book a Demo",
           "titleWhiteButton": "Customer Stories"
         },
-        "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "headlineSubtitle": "Discover deco.cx, the ultimate solution for a fast, simple, and scalable frontend. Boost your conversions with a platform used by leading brands to create unparalleled digital experiences and ultra-fast websites."
       },
       {
+        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "list": [
           {
             "image": [
@@ -19757,7 +19758,6 @@
           }
         },
         "itensPerPage": 12,
-        "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
         "indexCategories": [
           {
             "cards": [
@@ -20123,16 +20123,16 @@
         "nomeDaCategoriaGeral": "All"
       },
       {
-        "__resolveType": "[en] Footer"
-      },
-      {
+        "__resolveType": "site/sections/Head.tsx",
         "url": "https://www.deco.cx/en/live-projects",
         "title": "deco.cx | Live Projects",
         "imageUrl": "https://www.deco.cx/decocx-meta-en.png",
         "styleUrls": [],
         "themeColor": "#0A2121",
-        "description": "The digital experience platform that combines performance and personalization for enterprise ecommerce.",
-        "__resolveType": "site/sections/Head.tsx"
+        "description": "The digital experience platform that combines performance and personalization for enterprise ecommerce."
+      },
+      {
+        "__resolveType": "Deco Footer [EN]"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -24208,5 +24208,8 @@
   },
   "Preview site/sections/NRF/Hero.tsx": {
     "__resolveType": "site/sections/NRF/Hero.tsx"
+  },
+  "Preview site/sections/Live Projects/LiveProjects.tsx": {
+    "__resolveType": "site/sections/Live Projects/LiveProjects.tsx"
   }
 }
