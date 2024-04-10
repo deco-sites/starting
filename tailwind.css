@@ -378,6 +378,18 @@
   cursor: pointer;
 }
 
+.prose a strong{
+  color: #06E474;
+}
+
+.prose a {
+  color: #06E474;
+}
+
+.prose strong {
+  color: white;
+}
+
 .cursorCustom{
   cursor: url(/cursor.cur), default;
 }
