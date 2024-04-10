@@ -26,13 +26,13 @@ export default function Carousel({
 
   return (
     <section
-      class="md:bg-white-green mt-20"
+      class="bg-black"
       style={{ paddingBottom: bottomPadding }}
       id={id}
     >
-      <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto">
+      <div class="relative px-6 md:px-[7rem] max-w-screen-2xl m-auto py-28">
         <Slider
-          class="relative gap-6 col-span-full row-start-2 row-end-5 auto-rows-fr hidden-scroll"
+          class="relative gap-11 col-span-full row-start-2 row-end-5 auto-rows-fr hidden-scroll"
           itemClass="h-full"
           snap="opacity-50 disabled:opacity-100 focus:outline-none h-full"
         >
@@ -40,9 +40,9 @@ export default function Carousel({
             return (
               <a
                 href={getBlogPath(card.path, locale)}
-                class="rounded-[8px] flex w-[420px] h-full"
+                class="group rounded-[8px] flex w-[402.66px] h-full"
               >
-                <article class="rounded-[8px] border-[1px] border-solid border-border-black-opacity bg-white overflow-hidden">
+                <article class="rounded-[8px] border-[1px] border-[2px] border-[#FFFFFF26] bg-[#FFFFFF0D] overflow-hidden backdrop-filter backdrop-blur-22">
                   <div>
                     <Image
                       src={card.img}
@@ -54,7 +54,7 @@ export default function Carousel({
                       height={getAspectRatio(IMAGE_WIDTH, 16 / 9)}
                     />
                   </div>
-                  <div class="flex flex-col gap-4 justify-between py-8 px-6 rounded-[8px] h-[47%]">
+                  <div class="flex flex-col gap-4 justify-between p-8 rounded-[8px] h-[47%]">
                     <div class="flex flex-col gap-4">
                       <div class="flex flex-row gap-2">
                         {card.tags?.map((tag) => (
@@ -63,15 +63,15 @@ export default function Carousel({
                           </p>
                         ))}
                       </div>
-                      <h1 class="font-normal not-italic text-left text-[20px] text-black opacity-[80%]leading-[1.18]">
+                      <h1 class="font-normal not-italic text-left text-[20px] text-white opacity-[80%]leading-[1.18] group-hover:text-[#4ADE80]">
                         {card.body[locale]?.title}
                       </h1>
-                      <div class="text-base text-[#66736C] leading-[1.5] line-clamp-2 overflow-ellipsis text-left">
+                      <div class="text-base text-white leading-[1.5] line-clamp-2 overflow-ellipsis text-left">
                         {card.body[locale]?.descr}
                       </div>
                     </div>
                     <div class="flex flex-col gap-2">
-                      <p class="text-[#66736C] text-left">
+                      <p class="text-white text-left">
                         {card.date} • {card.author}
                       </p>
                     </div>

@@ -50,12 +50,12 @@ function Agencies(props: Props) {
   );
 
   return (
-    <div class="lg:container mx-4">
-      <div class="container py-8 flex flex-col gap-8 lg:gap-12 lg:py-10 lg:px-0">
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+    <div class="bg-black">
+      <div class="container py-8 flex flex-col gap-8 lg:gap-12 lg:py-20 lg:px-16">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-[42px] lg:px-[104px]">
           {list.map((element: Image) => (
             <div
-              class="flex bg-agenciesColor  hover:bg-hoverAgencie items-center justify-center h-[90px] w-[160px] sm:h-[110px] sm:w-[200px] border-2 border-gray-200 relative gap-4 rounded-[36px] lg:rounded-[64px]"
+              class="flex hover:bg-hoverAgencie items-center justify-center relative gap-4 h-10"
               href={element.href}
               target="_blank"
             >

@@ -30,8 +30,8 @@ export default function DocsSidebar(props: Props) {
           >
             <span class="DocSearch-Button-Container">
               <svg
-                width="20"
-                height="20"
+                width="16"
+                height="16"
                 class="DocSearch-Search-Icon"
                 viewBox="0 0 20 20"
               >

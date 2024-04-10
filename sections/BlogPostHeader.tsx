@@ -57,22 +57,20 @@ export default function BlogPostHeader(props: Props) {
           <span class="ml-4 group-hover:underline">{backToBlog}</span>
         </a>
       </div>
-      <div class="w-full flex flex-col gap-4">
-        <h1 class="text-4xl md:text-5xl leading-[1.1">
+      <div class="w-full flex flex-col gap-6">
+        <h1 class="text-4xl md:text-5xl leading-[1.1] text-white font-semibold">
           {post.body[locale]?.title}
         </h1>
-        <div class="text-2xl md:text-3xl leading-[1.18] text-[#66736C]">
+        <div class="text-2xl md:text-3xl leading-[1.18] text-white font-medium">
           {post.body[locale]?.descr}
         </div>
-        <div class="text-[#66736C]">
-          <span class="mr-5">{post.date}</span>
+        <div class="flex text-white gap-2">
+          <span>{post.date}</span>
+          <span>·</span>
           <span>{post.author}</span>
         </div>
       </div>
-      <style
-        dangerouslySetInnerHTML={{ __html: `body{background-color: white;}` }}
-      >
-      </style>
+      <style dangerouslySetInnerHTML={{__html: `body{background-color: black;}`}}></style>
     </section>
   );
 }

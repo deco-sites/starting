@@ -59,16 +59,16 @@ export default function WasThisPageHelpfulContent({
   return (
     <>
       {label && (
-        <div class="bg-[#FAFAFA] flex flex-col p-4 rounded-2xl lg:gap-6 gap-y-4">
-          <div class="flex lg:flex-row flex-col items-center lg:gap-0 gap-y-4">
-            <span class="text-[#161616] text-xl font-semibold leading-normal lg:mr-4 lg:whitespace-nowrap">
+        <div class="bg-[#FFFFFF0D] flex flex-col p-4 rounded-2xl lg:gap-6 gap-y-4 backdrop-blur-lg border-2 border-[#FFFFFF26] lg:mx-[1.281rem]">
+          <div class="flex lg:flex-row flex-col items-center lg:gap-0 gap-y-4 justify-between">
+            <span class="text-[#F9FAFB] text-xl font-semibold leading-normal lg:mr-4 lg:whitespace-nowrap">
               {label}
             </span>
             <div class="flex gap-2 lg:w-auto w-full">
               {buttonProps?.NegativeButtonLabel && (
                 <button
                   disabled={isPending}
-                  class="flex items-center justify-center lg:flex-none flex-1 gap-2 text-[#161616] text-sm font-bold leading-tight h-9 px-3 py-2 rounded border transition duration-300 border-zinc-300 focus:border-black"
+                  class="flex items-center justify-center lg:flex-none flex-1 gap-2 text-[#F9FAFB] bg-[#FFFFFF1A] text-sm font-bold leading-tight h-9 px-4 py-2 rounded-lg transition duration-300 focus:border-black"
                   aria-label={buttonProps.NegativeButtonLabel}
                   onClick={() =>
                     handleButtonClick(
@@ -76,6 +76,7 @@ export default function WasThisPageHelpfulContent({
                       false,
                     )}
                 >
+                  {buttonProps.NegativeButtonLabel}
                   {buttonProps.NegativeIcon && (
                     <Image
                       src={buttonProps.NegativeIcon}
@@ -85,13 +86,12 @@ export default function WasThisPageHelpfulContent({
                       height={buttonProps.Height ?? 16}
                     />
                   )}
-                  {buttonProps.NegativeButtonLabel}
                 </button>
               )}
               {buttonProps?.PositiveButtonLabel && (
                 <button
                   disabled={isPending}
-                  class="flex items-center justify-center lg:flex-none flex-1 gap-2 text-[#161616] text-sm font-bold leading-tight h-9 px-3 py-2 rounded border transition duration-300 border-zinc-300 focus:border-black"
+                  class="flex items-center justify-center lg:flex-none flex-1 gap-2 text-[#F9FAFB] bg-[#FFFFFF1A] text-sm font-bold leading-tight h-9 px-4 py-2 rounded-lg transition duration-300 focus:border-black"
                   aria-label={buttonProps.PositiveButtonLabel}
                   onClick={() =>
                     handleButtonClick(
@@ -99,6 +99,7 @@ export default function WasThisPageHelpfulContent({
                       true,
                     )}
                 >
+                  {buttonProps.PositiveButtonLabel}
                   {buttonProps.PositiveIcon && (
                     <Image
                       src={buttonProps.PositiveIcon}
@@ -108,12 +109,11 @@ export default function WasThisPageHelpfulContent({
                       height={buttonProps.Height ?? 16}
                     />
                   )}
-                  {buttonProps.PositiveButtonLabel}
                 </button>
               )}
             </div>
           </div>
-          <div dangerouslySetInnerHTML={{ __html: text }} />
+          <div class="text-[#FFFFFF80] text-[0.875rem] leading-[1.125rem] tracking-[-0.14px]" dangerouslySetInnerHTML={{ __html: text }} />
         </div>
       )}
     </>

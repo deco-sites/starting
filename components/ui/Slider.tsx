@@ -23,7 +23,7 @@ function Slider({
         children,
         (child, index) => (
           <li
-            class={`w-full min-w-[420px] max-w-[100vw] overflow-hidden ${itemClass}`}
+            class={`w-full min-w-[402.6px] max-w-[100vw] overflow-hidden ${itemClass}`}
           >
             <button data-slider-item={index} data-dot={index} class={snap}>
               {child}

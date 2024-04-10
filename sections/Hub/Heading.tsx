@@ -1,61 +1,65 @@
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import type { Image as DecoImage } from "deco-sites/std/components/types.ts";
 
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+/** @title {{{title}}} - {{{href}}} */
 
 export interface Props {
-  title: string;
-  subtitle: string;
-  alt: string;
-  desktop: LiveImage;
-  mobile: LiveImage;
+  Banner?: {
+    bannerHero?: DecoImage;
+    bannerHeroMobile?: DecoImage;
+    titleImg?: string;
+  };
+  /**
+   * @format html
+   */
+  headline?: string;
+  headlineSubtitle?: string;
 }
 
-function Heading({ title, subtitle, desktop, mobile, alt }: Props) {
+const DEFAULT_TITLE = "<p class=''><span style='background: var(--gradient-1, linear-gradient(93deg, #02F67C 44.7%, #3FB67B 118.6%)); background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;' class=''>High-performance</span> ecommerce resources.</p>"
+
+export default function Hero({
+  Banner = {
+    bannerHero: "",
+    bannerHeroMobile: "",
+    titleImg: "Escolha uma Imagem",
+  },
+  headline = DEFAULT_TITLE,
+  headlineSubtitle = 
+    "Connect to any platform or third party service, deploy in one click.",
+}: Props) {
   return (
-    <div class="relative bg-lightGreen">
-      <div class="container pt-32 md:pt-[166px]">
-        <div class="flex flex-col gap-8 md:flex-row">
-          <div class="md:w-[84%] lg:w-[74%] xl:w-[74%] mx-4 md:mx-0">
-            <h2 class="font-semibold text-[38px] lg:text-[43px] leading-tight lg:text-[42px] xl:text-[46px] 2xl:text-[67px] text-[#113032]">
-              {title}
+    <section class="bg-[#010101]">
+    <div className="flex items-center mx-8 py-12 md:mx-auto md:px-14 md:py-16 lg:px-16 gap-16 lg:py-20 lg:max-w-[1440px] xl:px-16 !pt-[115px] lg:!pt-[150px]">
+      <div class="flex flex-col gap-8 items-center justify-between self-sttretch font-albert-sans lg:gap-8 xl:gap-12 md:flex-row lg:container lg:max-w-[1440px] text-xl md:text-base">
+        <div class="flex flex-col gap-8 md:gap-12 md:w-[100%] md:max-w-[481px] lg:w-[44.2%] items-start">
+          <div className="flex flex-col w-full gap-8 md:gap-6">
+            <h1 class="text-white font-medium text-[56px] leading-[46px] tracking-[-0.56px] md:text-5xl xl:text-[5rem] xl:leading-[80px] md:tracking-[-2.4px]"
+                dangerouslySetInnerHTML={{__html: headline}}
+              />
+            <h2 class="text-[#A1A1AA] font-normal text-[22px] md:text-[18px] lg:text-[1.5rem] leading-[2.25rem] text-[#A1A1AA]">
+              {headlineSubtitle}
             </h2>
-            <h4 class="text-[22px] font-medium text-[#113032] leading-tight lg:text-[22px] xl:text-[28px] mt-6">
-              {subtitle}
-            </h4>
-          </div>
-          <div
-            class="h-[325px] sm:h-[340px] w-100vw md:w-[84%] lg:w-[84%] xl:w-[84%] bg-bgImage   z-50 pr-4"
-            style="border-radius: 200px 0 0 200px; z-index: 10;"
-          >
-            <div class="z-40 mt-[18px] flex items-center justify-start md:my-2 md:ml-2 relative">
-              <Picture class="lg:w-[600px]">
-                <Source
-                  src={mobile}
-                  width={483}
-                  height={280}
-                />
-                <Source
-                  src={desktop}
-                  width={660}
-                  height={440}
-                />
-                <img
-                  src={desktop}
-                  alt={alt}
-                  class="object-fill pl-2 pt-8 mb-4 sm:pt-8 sm:mb-4 sm:pr-0  md:object-fill md:mt-4 md:mr-4 lg:object-fill h-[256px] w-[393px] md:h-[256px] md:w-[393px] lg:h-[256px] xl:h-[256px] lg:w-[393px] md:absolute "
-                />
-              </Picture>
-            </div>
           </div>
         </div>
-      </div>
-      <div
-        class=" bg-bgImage  py-2 w-[28vw] md:w-[35vw] lg:w-[35vw] ml-4 md:pl-2  md:top-[166px] md:absolute md:right-0 hidden md:block h-[280px] md:h-[340px] lg:h-[340px] md:border md:border-tl-[100px] md:border-l-[100px] lg:border-l-[200px]"
-        style="z-index: 0; border-radius: 100px 0 0 100px"
-      >
+        <div class="flex relative w-full lg:max-w-[751px] h-full rounded-[4px] lg:px-10 lg:py-6">
+          <div className="flex md:w-full md:pb-0 md:h-full shadow-md">
+            <picture preload="true">
+              <source
+                media="(max-width: 760px)"
+                srcSet={Banner.bannerHeroMobile}
+                className="rounded-[4px]"
+              />
+              <img
+                className="md:h-full md:w-full rounded-[4px] object-cover"
+                alt={Banner.titleImg}
+                src={Banner.bannerHero}
+              />
+            </picture>
+          </div>
+        </div>
+        <style dangerouslySetInnerHTML={{__html: `body{background-color: white;}`}}></style>
       </div>
     </div>
+    </section>
   );
 }
-
-export default Heading;
