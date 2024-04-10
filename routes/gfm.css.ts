@@ -26,6 +26,10 @@ ol.nested li:before {
   list-style: disc;
 }
 
+.markdown-body pre {
+  background-color: #333 !important;
+}
+
 .markdown-body ol {
   list-style: numeric;
 }

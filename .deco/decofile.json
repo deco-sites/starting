@@ -21673,6 +21673,9 @@
               "__resolveType": "site/sections/NRF/ImageSection.tsx"
             },
             {
+              "__resolveType": "Preview /sections/Roadmap.tsx"
+            },
+            {
               "__resolveType": "Deco FAQ [EN]"
             },
             {
@@ -24223,5 +24226,69 @@
   },
   "Preview site/sections/Test.tsx": {
     "__resolveType": "site/sections/Test.tsx"
+  },
+  "Preview /sections/Roadmap.tsx": {
+    "__resolveType": "site/sections/Roadmap.tsx",
+    "features": [
+      {
+        "status": "Live",
+        "name": [
+          "deco.hub"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "Content Segmentation & AB Testing",
+          "Realtime error monitoring and logs (HyperDX)",
+          "Realtime web analytics (Plausible)"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "Real-time collaboration ",
+          "Component library"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "Full release cycle control"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "Automatic TypeScript code to form",
+          "Web-based Code Editor with realtime visual content preview",
+          "Decopilot"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "SEO & Design System"
+        ]
+      },
+      {
+        "status": "Coming Soon",
+        "name": [
+          "Roles and permissions"
+        ]
+      },
+      {
+        "status": "Coming Soon",
+        "name": [
+          "Self-hosting"
+        ]
+      },
+      {
+        "status": "Coming Soon",
+        "name": [
+          "Open-source"
+        ]
+      }
+    ]
   }
 }
