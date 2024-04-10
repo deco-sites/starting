@@ -9,7 +9,7 @@ export interface Props {
 
 export default function Roadmap({ features }: { features: Feature[] }) {
   return (
-    <section className="bg-black">
+    <section className="bg-transparent relative z-10">
       <div className="container py-8 px-4 flex flex-col items-center justify-center lg:py-16 lg:px-16">
         <div>
           {features.map((feature, index) => (
