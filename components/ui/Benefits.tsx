@@ -15,7 +15,7 @@ export interface Props {
 export default function Benefits({ cards }: Props) {
   return (
     <section class="bg-[#000] flex justify-center items-center flex-col">
-      <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-1 lg:grid-cols-2 px-6 pb-[40px] md:p-20 md:px-[2rem] max-w-screen-2xl mx-auto">
+      <div class="relative grid grid-cols-1 gap-[32px] md:gap-[40px] md:grid-cols-1 lg:grid-cols-2 px-6 lg:px-16 pb-[40px] md:p-20 md:px-[2rem] max-w-screen-2xl mx-auto">
         {cards?.map((card) => (
           <>
             <div
@@ -27,10 +27,10 @@ export default function Benefits({ cards }: Props) {
                 <div class="flex gap-8 items-center">
                   <div class="relative bg-[#FFFFFF0D] rounded-[55px] flex items-center p-6">
                     <Icon
-                          id={card.icon}
-                          width={40}
-                          height={40}
-                          strokeWidth={"1"}
+                      id={card.icon}
+                      width={40}
+                      height={40}
+                      strokeWidth={"1"}
                     />
                   </div>
                   <div class="h-full w-full flex flex-col gap-4">
