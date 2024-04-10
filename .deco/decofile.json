@@ -13402,16 +13402,16 @@
         "nomeDaCategoriaGeral": "Todos"
       },
       {
-        "__resolveType": "[en] Footer"
-      },
-      {
+        "__resolveType": "site/sections/Head.tsx",
         "url": "https://deco.cx/pt/customer-stories",
         "title": "deco.cx | Customer Stories",
         "imageUrl": "/decocx-meta-pt.png",
         "styleUrls": [],
         "themeColor": "#0A2121",
-        "description": "Descubra o sucesso da deco.cx: histórias detalhadas de clientes com aumento de vendas e conversões. Agende uma demo para crescer a receita do seu ecommerce",
-        "__resolveType": "site/sections/Head.tsx"
+        "description": "Descubra o sucesso da deco.cx: histórias detalhadas de clientes com aumento de vendas e conversões. Agende uma demo para crescer a receita do seu ecommerce"
+      },
+      {
+        "__resolveType": "Deco Footer [EN]"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -18314,10 +18314,10 @@
         "__resolveType": "Agencies list"
       },
       {
-        "__resolveType": "[en] Footer"
+        "__resolveType": "site/sections/FooterBigLogo.tsx"
       },
       {
-        "__resolveType": "site/sections/FooterBigLogo.tsx"
+        "__resolveType": "Deco Footer [EN]"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -18401,10 +18401,10 @@
         "__resolveType": "Agencies list"
       },
       {
-        "__resolveType": "[pt] Footer"
+        "__resolveType": "site/sections/FooterBigLogo.tsx"
       },
       {
-        "__resolveType": "site/sections/FooterBigLogo.tsx"
+        "__resolveType": "Deco Footer [EN]"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
