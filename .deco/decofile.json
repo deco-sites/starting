@@ -5624,6 +5624,15 @@
     "placement": "left",
     "cta": []
   },
+  "Preview site/sections/Live Projects/LiveProjects.tsx": {
+    "__resolveType": "site/sections/Live Projects/LiveProjects.tsx"
+  },
+  "Preview site/sections/NRF/Header.tsx": {
+    "__resolveType": "site/sections/NRF/Header.tsx"
+  },
+  "Preview site/sections/NRF/Hero.tsx": {
+    "__resolveType": "site/sections/NRF/Hero.tsx"
+  },
   "Program": {
     "props": {
       "title": "Program",
@@ -19789,7 +19798,7 @@
           {
             "cards": [
               {
-                "link": "https://osklen.com.br",
+                "link": "https://www.osklen.com.br",
                 "image": [
                   {
                     "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/21035848-a0df-407c-81b6-64e631a25aa5",
@@ -19799,7 +19808,7 @@
                 "label": "Osklen"
               },
               {
-                "link": "https://bawclothing.com.br",
+                "link": "https://www.bawclothing.com.br",
                 "image": [
                   {
                     "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/583999d7-a61a-4e17-b35d-abf58eecd002",
@@ -24202,14 +24211,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "Preview site/sections/NRF/Header.tsx": {
-    "__resolveType": "site/sections/NRF/Header.tsx"
-  },
-  "Preview site/sections/NRF/Hero.tsx": {
-    "__resolveType": "site/sections/NRF/Hero.tsx"
-  },
-  "Preview site/sections/Live Projects/LiveProjects.tsx": {
-    "__resolveType": "site/sections/Live Projects/LiveProjects.tsx"
   }
 }
