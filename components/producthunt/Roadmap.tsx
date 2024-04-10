@@ -13,8 +13,8 @@ export default function Roadmap({ features }: { features: Feature[] }) {
       <div className="container py-8 px-4 flex flex-col items-center justify-center lg:py-16 lg:px-16">
         <div>
           {features.map((feature, index) => (
-            <div key={index} className="flex items-center gap-10">
-              <div className="flex flex-col items-center">
+            <div key={index} className="flex items-center gap-4">
+              <div className="flex flex-col items-center self-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="27"
@@ -29,46 +29,51 @@ export default function Roadmap({ features }: { features: Feature[] }) {
                     strokeWidth="4"
                   />
                 </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="5"
-                  height={feature.name.length * 48 + 64}
-                  viewBox="0 0 5 1051"
-                  fill="none"
-                >
-                  <path
-                    d="M2.5 2L2.50005 1049"
-                    stroke={feature.status === "Live" ? "#02F67C" : "#DA8FFF"}
-                    strokeWidth="8"
-                    strokeLinecap="round"
-                  />
-                </svg>
+                <div>
+                  {index !== features.length - 1 &&
+                    (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="5"
+                        height={feature.name.length * 48 + 16}
+                        viewBox="0 0 5 1051"
+                        fill="none"
+                      >
+                        <path
+                          d="M2.5 2L2.50005 1049"
+                          stroke={feature.status === "Live"
+                            ? "#02F67C"
+                            : "#DA8FFF"}
+                          strokeWidth="8"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                    )}
+                </div>
               </div>
               <div
-                class={`flex flex-col gap-4 mb-[10%] mb-[${
-                  10 + feature.name.length
-                }%]`}
+                class={`flex flex-col gap-4 self-start`}
               >
                 {feature.status === "Live"
                   ? (
-                    <div className="flex justify-center bg-green-500 text-white p-3 rounded-[32px] w-[58px]">
+                    <div className="flex justify-center bg-green-500 text-brand-900 px-3 rounded-3xl w-fit">
                       Live
                     </div>
                   )
                   : (
-                    <div className="flex justify-center bg-purple-500 text-white p-3 rounded-[32px] w-[136px]">
+                    <div className="flex justify-center bg-purple-500 text-brand-900 px-3 rounded-3xl w-fit">
                       Coming Soon
                     </div>
                   )}
-                <div className="flex flex-col text-white gap-2">
+                <ul className="flex flex-col text-white gap-1 list-disc">
                   {Array.isArray(feature.name)
                     ? (
                       feature.name.map((name, index) => (
-                        <div key={index}>{name}</div>
+                        <li key={index} className="ml-4">{name}</li>
                       ))
                     )
-                    : <div>{feature.name}</div>}
-                </div>
+                    : <li className="ml-4">{feature.name}</li>}
+                </ul>
               </div>
             </div>
           ))}
