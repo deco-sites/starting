@@ -305,7 +305,7 @@
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
         "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1dac25d-5eaf-412c-a513-0a5685955ae0",
         "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/434db95e-5597-429a-855f-4c863e1df06e",
-        "hrefSecondButton": "https://discord.gg/YsGgt8EQCZ",
+        "hrefSecondButton": "https://discord.gg/6EbRQmQtbQ",
         "labelSecondButton": "Junte-se a nós"
       },
       {
@@ -1934,7 +1934,7 @@
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
         "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5d50b76b-b8aa-4fd1-8422-66263d3a9e00",
         "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5a2b8dad-e7d6-434a-b1d2-0a95495573fc",
-        "hrefSecondButton": "https://discord.gg/YsGgt8EQCZ",
+        "hrefSecondButton": "https://discord.gg/6EbRQmQtbQ",
         "labelSecondButton": "Join the community"
       },
       {
@@ -5624,6 +5624,79 @@
     "placement": "left",
     "cta": []
   },
+  "Preview /sections/Roadmap.tsx": {
+    "__resolveType": "site/sections/Roadmap.tsx",
+    "features": [
+      {
+        "status": "Live",
+        "name": [
+          "deco.hub"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "Content Segmentation & AB Testing",
+          "Realtime error monitoring and logs (HyperDX)",
+          "Realtime web analytics (Plausible)"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "Real-time collaboration ",
+          "Component library"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "Full release cycle control"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "Automatic TypeScript code to form",
+          "Web-based Code Editor with realtime visual content preview",
+          "Decopilot"
+        ]
+      },
+      {
+        "status": "Live",
+        "name": [
+          "SEO & Design System"
+        ]
+      },
+      {
+        "status": "Coming Soon",
+        "name": [
+          "Roles and permissions"
+        ]
+      },
+      {
+        "status": "Coming Soon",
+        "name": [
+          "Self-hosting"
+        ]
+      },
+      {
+        "status": "Coming Soon",
+        "name": [
+          "Open-source"
+        ]
+      }
+    ]
+  },
+  "Preview /sections/Test.tsx": {
+    "__resolveType": "site/sections/Test.tsx",
+    "features": [
+      {
+        "status": "Live",
+        "name": []
+      }
+    ]
+  },
   "Preview site/sections/Live Projects/LiveProjects.tsx": {
     "__resolveType": "site/sections/Live Projects/LiveProjects.tsx"
   },
@@ -5632,6 +5705,9 @@
   },
   "Preview site/sections/NRF/Hero.tsx": {
     "__resolveType": "site/sections/NRF/Hero.tsx"
+  },
+  "Preview site/sections/Test.tsx": {
+    "__resolveType": "site/sections/Test.tsx"
   },
   "Program": {
     "props": {
@@ -24214,81 +24290,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "Preview /sections/Test.tsx": {
-    "__resolveType": "site/sections/Test.tsx",
-    "features": [
-      {
-        "status": "Live",
-        "name": []
-      }
-    ]
-  },
-  "Preview site/sections/Test.tsx": {
-    "__resolveType": "site/sections/Test.tsx"
-  },
-  "Preview /sections/Roadmap.tsx": {
-    "__resolveType": "site/sections/Roadmap.tsx",
-    "features": [
-      {
-        "status": "Live",
-        "name": [
-          "deco.hub"
-        ]
-      },
-      {
-        "status": "Live",
-        "name": [
-          "Content Segmentation & AB Testing",
-          "Realtime error monitoring and logs (HyperDX)",
-          "Realtime web analytics (Plausible)"
-        ]
-      },
-      {
-        "status": "Live",
-        "name": [
-          "Real-time collaboration ",
-          "Component library"
-        ]
-      },
-      {
-        "status": "Live",
-        "name": [
-          "Full release cycle control"
-        ]
-      },
-      {
-        "status": "Live",
-        "name": [
-          "Automatic TypeScript code to form",
-          "Web-based Code Editor with realtime visual content preview",
-          "Decopilot"
-        ]
-      },
-      {
-        "status": "Live",
-        "name": [
-          "SEO & Design System"
-        ]
-      },
-      {
-        "status": "Coming Soon",
-        "name": [
-          "Roles and permissions"
-        ]
-      },
-      {
-        "status": "Coming Soon",
-        "name": [
-          "Self-hosting"
-        ]
-      },
-      {
-        "status": "Coming Soon",
-        "name": [
-          "Open-source"
-        ]
-      }
-    ]
   }
 }
