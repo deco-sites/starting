@@ -5011,12 +5011,12 @@
         "id": "bt-click-new",
         "href": "https://admin.deco.cx/spaces/new",
         "text": "Try now for free",
-        "variant": "Product Hunt"
+        "variant": "Normal"
       }
     ],
     "demo": {
       "title": "Watch our demo",
-      "visible": false
+      "visible": true
     },
     "tabs": [
       {
@@ -5056,6 +5056,20 @@
     ],
     "__resolveType": "site/sections/NRF/TextLines.tsx",
     "animateOnScroll": true
+  },
+  "FreePlan": {
+    "__resolveType": "site/sections/FreePlan.tsx",
+    "placement": "left",
+    "cta": [
+      {
+        "variant": "Normal",
+        "text": "Apply for Startup Plan",
+        "href": "https://forms.gle/TNA4RurBRghW18ZL8"
+      }
+    ],
+    "title": "<p><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">🎈Start-up Forever Free Plan 🎈</span></p>",
+    "description": "<p>If you are an early stage start-up, we got your back!&nbsp;We will do your company website with no charges at all.</p><p><br data-mce-bogus=\"1\"></p><p><strong>Implementation and subscription are on us forever</strong>. Just send us your Figma and consider it done. Apply below.</p>",
+    "disclaimer": "*Eligibility: start-ups with less than $1M in the last 2 years."
   },
   "GTM Main Thread": {
     "trackingIds": [
@@ -5734,6 +5748,12 @@
     "SectionOnThisPage": {
       "__resolveType": "site/sections/OnThisPage.tsx"
     }
+  },
+  "Preview /sections/Benefits.tsx": {
+    "__resolveType": "site/sections/Benefits.tsx"
+  },
+  "Preview /sections/Camp/Benefits/HowItWorks.tsx": {
+    "__resolveType": "site/sections/Camp/Benefits/HowItWorks.tsx"
   },
   "Preview /sections/FreePlan.tsx": {
     "__resolveType": "site/sections/FreePlan.tsx",
@@ -24373,25 +24393,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "Preview /sections/Benefits.tsx": {
-    "__resolveType": "site/sections/Benefits.tsx"
-  },
-  "Preview /sections/Camp/Benefits/HowItWorks.tsx": {
-    "__resolveType": "site/sections/Camp/Benefits/HowItWorks.tsx"
-  },
-  "FreePlan": {
-    "__resolveType": "site/sections/FreePlan.tsx",
-    "placement": "left",
-    "cta": [
-      {
-        "variant": "Normal",
-        "text": "Apply for Startup Plan",
-        "href": "https://forms.gle/TNA4RurBRghW18ZL8"
-      }
-    ],
-    "title": "<p><span style=\"font-size: 36pt;\" data-mce-style=\"font-size: 36pt;\">🎈Start-up Forever Free Plan 🎈</span></p>",
-    "description": "<p>If you are an early stage start-up, we got your back!&nbsp;We will do your company website with no charges at all.</p><p><br data-mce-bogus=\"1\"></p><p><strong>Implementation and subscription are on us forever</strong>. Just send us your Figma and consider it done. Apply below.</p>",
-    "disclaimer": "*Eligibility: start-ups with less than $1M in the last 2 years."
   }
 }

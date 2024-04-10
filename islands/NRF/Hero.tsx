@@ -187,14 +187,22 @@ export default function Hero({
               <div class="relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
                 <div class="relative overflow-hidden rounded-[20px] w-[80vw]">
                   <div style="padding:50.94% 0 0 0;position:relative;">
-                    <iframe
+                    {/* <iframe
                       src="https://player.vimeo.com/video/903151584?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                       frameborder="0"
                       allow="autoplay; fullscreen; picture-in-picture"
                       style="position:absolute;top:0;left:0;width:100%;height:100%;"
                       title="deco.cx | The open-source frontend platform for pros"
                     >
-                    </iframe>
+                    </iframe> */}
+                    <iframe
+                      src="https://www.youtube.com/embed/DvCvXwQ86k4"
+                      title="deco.cx 2.0 | Product Walkthrough"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    ></iframe>
                   </div>
                 </div>
               </div>
