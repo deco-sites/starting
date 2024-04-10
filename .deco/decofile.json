@@ -4871,8 +4871,8 @@
     },
     "tabs": [
       {
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b7286e57-55ec-4a4f-bfa4-cf800b223e9c",
-        "title": "Web-based Code Editor"
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5986d39-b570-4c80-8af5-597a67d83b5f",
+        "title": "Section Library"
       },
       {
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e61ea2d8-8bb6-4498-ab89-c179e78264b1",
@@ -24148,10 +24148,10 @@
     "seo": {
       "type": "website",
       "title": "deco.cx - Own your frontend. Own your future. ",
-      "themeColor": "dark",
       "description": "The digital experience platform that combines performance and personalization for enterprise ecommerce.",
       "titleTemplate": "%s | Deco.cx",
-      "descriptionTemplate": "%s | Deco.cx"
+      "descriptionTemplate": "%s | Deco.cx",
+      "themeColor": "dark"
     },
     "global": [
       {
