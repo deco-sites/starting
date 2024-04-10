@@ -1,6 +1,5 @@
-import { HeroEditorTabbed, Tab } from "site/islands/NRF/HeroEditorTabbed.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { useSignal } from "@preact/signals";
+import { HeroEditorTabbed, Tab } from "site/islands/NRF/HeroEditorTabbed.tsx";
 
 interface CTA {
   id?: string;
@@ -57,8 +56,6 @@ export default function Hero({
   demo,
   hideEditor,
 }: Props) {
-  const open = useSignal(false);
-
   return (
     <div
       id="hero"
@@ -144,13 +141,10 @@ export default function Hero({
                       </a>
                     )
                 )}
-                {demo?.visible && (
-                  <button
+                {(demo?.visible) && (
+                  <label
+                    for="demo-modal"
                     id={demo?.id}
-                    onClick={() => {
-                      globalThis.window?.scrollTo(0, 0);
-                      open.value = true;
-                    }}
                     class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#DA8FFF] hover:from-[#DA8FFF] hover:to-[#DA8FFF] text-[113032] hover:shadow-watch-our-demo`}
                   >
                     <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
@@ -158,7 +152,7 @@ export default function Hero({
                     <span class="text-black relative font-medium lg:text-[20px]">
                       {demo?.title || "Watch our demo"}
                     </span>
-                  </button>
+                  </label>
                 )}
               </div>
             )}
@@ -170,39 +164,36 @@ export default function Hero({
           <HeroEditorTabbed tabs={tabs} />
         </div>
       )}
-      {open.value && (
+
+      <div>
+        <input
+          id="demo-modal"
+          class="modal-toggle hidden"
+          type="checkbox"
+        />
         <div class="modal">
-          <input
-            class="modal-toggle hidden"
-            type="checkbox"
-            checked={open.value}
-          />
-          <div class="modal">
-            <div
-              class="z-50 absolute bg-black/90 top-0 left-0 h-screen w-screen flex items-center justify-center backdrop-blur"
-              onClick={() => {
-                open.value = false;
-              }}
-            >
-              <div class="relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
-                <div class="relative overflow-hidden rounded-[20px] w-[80vw]">
-                  <div style="padding:50.94% 0 0 0;position:relative;">
-                    <iframe
-                      src="https://player.vimeo.com/video/903151584?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameborder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                      title="deco.cx | The open-source frontend platform for pros"
-                    >
-                    </iframe>
-                  </div>
+          <label
+            class="z-50 absolute bg-black/90 top-0 left-0 h-screen w-screen flex items-center justify-center backdrop-blur"
+            for="demo-modal"
+          >
+            <div class="relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
+              <div class="relative overflow-hidden rounded-[20px] w-[80vw]">
+                <div style="padding:50.94% 0 0 0;position:relative;">
+                  <iframe
+                    src="https://player.vimeo.com/video/903151584?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    title="deco.cx | The open-source frontend platform for pros"
+                  >
+                  </iframe>
                 </div>
               </div>
             </div>
-          </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
+          </label>
         </div>
-      )}
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
     </div>
   );
 }
