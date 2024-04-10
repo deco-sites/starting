@@ -305,7 +305,7 @@
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
         "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1dac25d-5eaf-412c-a513-0a5685955ae0",
         "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/434db95e-5597-429a-855f-4c863e1df06e",
-        "hrefSecondButton": "https://discord.gg/6EbRQmQtbQ",
+        "hrefSecondButton": "https://deco.cx/discord",
         "labelSecondButton": "Junte-se a nós"
       },
       {
@@ -1934,7 +1934,7 @@
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
         "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5d50b76b-b8aa-4fd1-8422-66263d3a9e00",
         "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5a2b8dad-e7d6-434a-b1d2-0a95495573fc",
-        "hrefSecondButton": "https://discord.gg/6EbRQmQtbQ",
+        "hrefSecondButton": "https://deco.cx/discord",
         "labelSecondButton": "Join the community"
       },
       {
@@ -3339,7 +3339,7 @@
     ],
     "social": {
       "gitUrl": "https://github.com/deco-cx",
-      "discordUrl": "https://discord.gg/6EbRQmQtbQ",
+      "discordUrl": "https://deco.cx/discord",
       "linkedinUrl": "https://www.linkedin.com/company/deco-cx/"
     },
     "extraLinks": [
@@ -3904,7 +3904,7 @@
     ],
     "social": {
       "gitUrl": "https://github.com/deco-cx",
-      "discordUrl": "https://discord.gg/6EbRQmQtbQ",
+      "discordUrl": "https://deco.cx/discord",
       "linkedinUrl": "https://www.linkedin.com/company/deco-cx/"
     },
     "logoImage": {
@@ -4750,7 +4750,7 @@
     ],
     "social": {
       "gitUrl": "https://github.com/deco-cx",
-      "discordUrl": "https://discord.gg/6EbRQmQtbQ",
+      "discordUrl": "https://deco.cx/discord",
       "linkedinUrl": "https://www.linkedin.com/company/deco-cx/"
     },
     "rounded": true,
