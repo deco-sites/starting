@@ -5008,9 +5008,9 @@
   "Deco Hero [EN]": {
     "cta": [
       {
-        "id": "bt-click-ph",
-        "href": "https://www.producthunt.com/products/deco-cx-2-0",
-        "text": "Notify me",
+        "id": "bt-click-new",
+        "href": "https://admin.deco.cx/spaces/new",
+        "text": "Try now for free",
         "variant": "Product Hunt"
       }
     ],
@@ -21743,20 +21743,6 @@
             },
             {
               "__resolveType": "site/sections/NRF/Grid.tsx"
-            },
-            {
-              "events": [
-                {
-                  "type": {
-                    "name": "get_early_access",
-                    "trigger": "click",
-                    "cssSelector": "#bt-click-contact",
-                    "extraParams": []
-                  },
-                  "trigger": "load"
-                }
-              ],
-              "__resolveType": "website/sections/Analytics/Events.tsx"
             }
           ]
         },
@@ -21868,20 +21854,6 @@
             },
             {
               "__resolveType": "site/sections/NRF/Grid.tsx"
-            },
-            {
-              "events": [
-                {
-                  "type": {
-                    "name": "get_early_access",
-                    "trigger": "click",
-                    "cssSelector": "#bt-click-contact",
-                    "extraParams": []
-                  },
-                  "trigger": "load"
-                }
-              ],
-              "__resolveType": "website/sections/Analytics/Events.tsx"
             }
           ]
         }
