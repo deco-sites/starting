@@ -31,33 +31,33 @@ export interface Props {
   };
 }
 function CardText(
-  { label, description, alignment, pageSpeed, slug }: TemplateInfo
+  { label, description, alignment, pageSpeed, slug }: TemplateInfo,
 ) {
-
   return (
     <>
-    <div
-      class={`w-full flex flex-col gap-6 ${
-        alignment === "center" ? "text-center" : "text-left"
-      }`}
-    >
-      <div class="flex-auto flex items-center gap-4">
-        {pageSpeed && <PageSpeed score={pageSpeed} size={40} />}
-        <div class="flex-auto flex flex-col">
-          {label && (
-            <h3 class="font-medium text-white leading-[110%] text-[1.5rem] lg:text-[1.75rem] tracking-[-0.56px]">
-              {label}
-            </h3>
-          )}
-          {/* {description && (
+      <div
+        class={`w-full flex flex-col gap-6 ${
+          alignment === "center" ? "text-center" : "text-left"
+        }`}
+      >
+        <div class="flex-auto flex items-center gap-4">
+          {pageSpeed && <PageSpeed score={pageSpeed} size={40} />}
+          <div class="flex-auto flex flex-col">
+            {label && (
+              <h3 class="font-medium text-white leading-[110%] text-[1.5rem] lg:text-[1.75rem] tracking-[-0.56px]">
+                {label}
+              </h3>
+            )}
+            {
+              /* {description && (
             <div class="text-sm text-neutral">
               {description}
             </div>
-          )} */}
+          )} */
+            }
+          </div>
         </div>
-      
       </div>
-    </div>
     </>
   );
 }
@@ -109,11 +109,13 @@ function TemplatesGrid(props: Props) {
         id={id}
         class="sm:container mx-4 flex flex-col py-16 lg:grid-cols-4 relative"
       >
-        {/* <Header
+        {
+          /* <Header
           title={header.title}
           description={header.description || ""}
           alignment={layout.headerAlignment || "center"}
-        /> */}
+        /> */
+        }
 
         <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {list.map((
@@ -161,8 +163,7 @@ function TemplatesGrid(props: Props) {
                       pageSpeed={pageSpeed}
                       alignment={layout?.categoryCard?.textAlignment}
                     />
-                  )
-                }
+                  )}
                 <div class="flex items-center">
                   <div class="flex-auto flex items-center gap-2">
                     <div class="flex-none uppercase rounded bg-[#FFFFFF14] text-white font-medium text-[0.8rem] lg:text-[1rem] leading-normal p-2 tracking-[-0.32px]">
@@ -173,7 +174,9 @@ function TemplatesGrid(props: Props) {
                     </div>
                   </div>
                   <div class="flex gap-2 justify-center">
-                    <span class="text-[1rem] text-white font-medium leading-[120%] tracking-[-0.32px]">Theme</span>
+                    <span class="text-[1rem] text-white font-medium leading-[120%] tracking-[-0.32px]">
+                      Theme
+                    </span>
                     {Array.isArray(image)
                       ? (
                         image.map((image, buttonIndex) => (
@@ -184,7 +187,8 @@ function TemplatesGrid(props: Props) {
                                 ? "ring ring-gray-300 ring-offset-[0.5px]"
                                 : ""
                             }`}
-                            onClick={() => handleThemeChange(index, buttonIndex)}
+                            onClick={() =>
+                              handleThemeChange(index, buttonIndex)}
                             style={{ backgroundColor: (image.color) }}
                           >
                           </div>

@@ -67,11 +67,16 @@ export default function ForwardBackButtons() {
 
   return (
     <section class="flex flex-col gap-4">
-      <div class="w-full text-left text-[#F9FAFB] font-medium text-lg leading-[130%] tracking-[-0.3px]">Continue reading</div>
+      <div class="w-full text-left text-[#F9FAFB] font-medium text-lg leading-[130%] tracking-[-0.3px]">
+        Continue reading
+      </div>
       <div class="flex justify-between gap-8">
         {previous.enabled
           ? (
-            <a href={previous.href} class={`text-left flex justify-evenly gap-2 items-center p-4 w-1/2`}>
+            <a
+              href={previous.href}
+              class={`text-left flex justify-evenly gap-2 items-center p-4 w-1/2`}
+            >
               {
                 /* <span class={upper}>
               {`←  ${isEnglishState ? "Previous" : "Anterior"}`}
@@ -99,7 +104,10 @@ export default function ForwardBackButtons() {
           : <span />}
         {next.enabled
           ? (
-            <a href={next.href} class={`text-right flex justify-evenly gap-2 items-center p-4 w-1/2 hover:bg-[#FFFFFF0D] hover:rounded`}>
+            <a
+              href={next.href}
+              class={`text-right flex justify-evenly gap-2 items-center p-4 w-1/2 hover:bg-[#FFFFFF0D] hover:rounded`}
+            >
               {
                 /* <span class={upper}>
               {`${isEnglishState ? "Next" : "Próximo"}  →`}

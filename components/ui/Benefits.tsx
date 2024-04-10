@@ -27,10 +27,10 @@ export default function Benefits({ cards }: Props) {
                 <div class="flex gap-8 items-center">
                   <div class="relative bg-[#FFFFFF0D] rounded-[55px] flex items-center p-6">
                     <Icon
-                          id={card.icon}
-                          width={40}
-                          height={40}
-                          strokeWidth={"1"}
+                      id={card.icon}
+                      width={40}
+                      height={40}
+                      strokeWidth={"1"}
                     />
                   </div>
                   <div class="h-full w-full flex flex-col gap-4">

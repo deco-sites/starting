@@ -224,9 +224,9 @@ export default function Sidebar({
       </div>
       <aside
         class={`lg:max-w-[388px] w-full h-full lg:flex flex-col gap-10
-         lg:pt-10 ${
-          !isMobile ? "lg:pl-10 " : ""
-        } ${isMenuOpen && isMobile ? "block z-20 pl-0 fixed" : "hidden"}`}
+         lg:pt-10 ${!isMobile ? "lg:pl-10 " : ""} ${
+          isMenuOpen && isMobile ? "block z-20 pl-0 fixed" : "hidden"
+        }`}
       >
         <SearchButton />
         <ul
@@ -234,7 +234,8 @@ export default function Sidebar({
             isMenuOpen && isMobile ? "pr-[40px] pt-[40px] " : "pr-0 pt-[140px]"
           }`}
         >
-          {/* <li class="flex items-center mb-[24px]">
+          {
+            /* <li class="flex items-center mb-[24px]">
             {SidebarIcon && SidebarIcon.length > 0 && (
               <figure class="mr-2">
                 <Image src={SidebarIcon} alt={AltIcon} width={32} height={32} />
@@ -243,7 +244,8 @@ export default function Sidebar({
             <h2 class="text-[#2FD180] text-[28px] font-semibold leading-none">
               {SidebarTitle}
             </h2>
-          </li> */}
+          </li> */
+          }
           {Subtitle && Subtitle.length > 0 && (
             <li class="my-[8px] ml-[25px]">
               <a
@@ -279,7 +281,8 @@ export default function Sidebar({
                       toggleTopicMenu(index);
                     }}
                   >
-                    {/* {topic.SubTopics && topic.SubTopics.length > 0 && (
+                    {
+                      /* {topic.SubTopics && topic.SubTopics.length > 0 && (
                       <Icon
                         class={`${openTopicIndex === index ? "rotate-90" : ""}`}
                         id="ChevronRight"
@@ -296,23 +299,26 @@ export default function Sidebar({
                         width={20}
                         height={20}
                       />
-                    )} */}
+                    )} */
+                    }
                     <a
                       href={topic?.LinkTopic}
                       class={`font-inter text-sm font-semibold leading-tight cursor-pointer ${
-                      isActive ? "text-[#4ADE80]" : "text-[#E7E5E4]"
-                    } ${
-                      topic.SubTopics && topic.SubTopics.length > 0
-                        ? ""
-                        : "!text-[#4ADE80]"
-                    }`}
+                        isActive ? "text-[#4ADE80]" : "text-[#E7E5E4]"
+                      } ${
+                        topic.SubTopics && topic.SubTopics.length > 0
+                          ? ""
+                          : "!text-[#4ADE80]"
+                      }`}
                     >
                       {topic.label}
                     </a>
                     {topic.SubTopics && topic.SubTopics.length > 0 && (
-                      <span class={`w-[20px] h-[20px] p-3 bg-[#FFFFFF1A] rounded-full font-inter text-[14px] font-medium leading-normal flex items-center justify-center ${
-                        isActive ? "text-[#4ADE80]" : "text-[#FFFFFF80]"
-                      }`}>
+                      <span
+                        class={`w-[20px] h-[20px] p-3 bg-[#FFFFFF1A] rounded-full font-inter text-[14px] font-medium leading-normal flex items-center justify-center ${
+                          isActive ? "text-[#4ADE80]" : "text-[#FFFFFF80]"
+                        }`}
+                      >
                         {topic.SubTopics.length}
                       </span>
                     )}
