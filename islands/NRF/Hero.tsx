@@ -67,6 +67,18 @@ export default function Hero({
         hideEditor ? "" : "min-h-screen"
       }`}
     >
+      <script>
+        {
+        `document.addEventListener('keydown', function(event) {
+          const checkbox = document.getElementById('demo-modal');
+            if (event.key === 'Escape' || event.keyCode === 27) {
+            if (checkbox.checked) {
+              checkbox.checked = false;
+            }
+          }
+        });`
+        }
+      </script>
       <div class="max-w-fit mx-auto flex flex-col items-center gap-16 lg:gap-20">
         <div class="flex flex-col items-center gap-4 mt-36 lg:mt-48">
           {alert?.text && (
