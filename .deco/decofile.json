@@ -4865,7 +4865,9 @@
     ],
     "demo": {
       "title": "Watch our demo",
-      "visible": false
+      "visible": true,
+      "video": "https://www.youtube.com/embed/DvCvXwQ86k4",
+      "videoTitle": "deco.cx 2.0 | Product Walkthrough"
     },
     "tabs": [
       {
