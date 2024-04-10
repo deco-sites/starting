@@ -24211,5 +24211,17 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "Preview /sections/Test.tsx": {
+    "__resolveType": "site/sections/Test.tsx",
+    "features": [
+      {
+        "status": "Live",
+        "name": []
+      }
+    ]
+  },
+  "Preview site/sections/Test.tsx": {
+    "__resolveType": "site/sections/Test.tsx"
   }
 }
