@@ -60,7 +60,7 @@ export default function Roadmap({ features }: { features: Feature[] }) {
                       Coming Soon
                     </div>
                   )}
-                <div className="flex flex-col bg-black text-white gap-2">
+                <div className="flex flex-col text-white gap-2">
                   {Array.isArray(feature.name)
                     ? (
                       feature.name.map((name, index) => (
