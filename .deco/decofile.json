@@ -295,13 +295,13 @@
         "__resolveType": "[pt] [mkt] Head"
       },
       {
-        "__resolveType": "Header - PT"
+        "__resolveType": "Deco Header [EN]"
       },
       {
+        "__resolveType": "site/sections/Community.tsx",
         "mainText": "Apoiados por uma comunidade de +1000 membros",
         "secondText": "Já estamos construindo a maior comunidade de e-commerce multiplataforma - da América Latina para o mundo. Aqui você encontrará:",
         "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/36e19f8f-5cdc-43b0-a51f-82d506c85544",
-        "__resolveType": "site/sections/Community.tsx",
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
         "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1dac25d-5eaf-412c-a513-0a5685955ae0",
         "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/434db95e-5597-429a-855f-4c863e1df06e",
@@ -309,6 +309,7 @@
         "labelSecondButton": "Junte-se a nós"
       },
       {
+        "__resolveType": "site/sections/Benefits.tsx",
         "cards": [
           {
             "href": "https://discord.gg/YsGgt8EQCZ",
@@ -334,11 +335,10 @@
             "text": "Oferecemos suporte especializado para ajudar a solucionar problemas técnicos e responder perguntas sobre nossa plataforma e tecnologias.",
             "title": "Suporte"
           }
-        ],
-        "__resolveType": "site/sections/Benefits.tsx"
+        ]
       },
       {
-        "__resolveType": "[pt] Footer"
+        "__resolveType": "Deco Footer [EN]"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -1924,13 +1924,13 @@
         "__resolveType": "GTM"
       },
       {
-        "__resolveType": "Header - EN"
+        "__resolveType": "Deco Header [EN]"
       },
       {
+        "__resolveType": "site/sections/Community.tsx",
         "mainText": "Backed up by a community of 1000+ members",
         "secondText": "We are already building the largest multiplatform e-commerce community -from Latin America to the world. Here you will find:",
         "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a5559783-e2ea-47f3-9128-6a1d78f62076",
-        "__resolveType": "site/sections/Community.tsx",
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
         "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5d50b76b-b8aa-4fd1-8422-66263d3a9e00",
         "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5a2b8dad-e7d6-434a-b1d2-0a95495573fc",
@@ -1938,6 +1938,7 @@
         "labelSecondButton": "Join the movement"
       },
       {
+        "__resolveType": "site/sections/Benefits.tsx",
         "cards": [
           {
             "href": "https://discord.gg/YsGgt8EQCZ",
@@ -1963,11 +1964,10 @@
             "text": "We offer specialized support to help solve technical issues and answer questions about our platform and technologies.",
             "title": "Support"
           }
-        ],
-        "__resolveType": "site/sections/Benefits.tsx"
+        ]
       },
       {
-        "__resolveType": "[en] Footer"
+        "__resolveType": "Deco Footer [EN]"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
