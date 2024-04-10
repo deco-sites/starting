@@ -79,7 +79,7 @@ export default function Hero({
         });`
         }
       </script>
-      <div class="max-w-fit mx-auto flex flex-col items-center gap-16 lg:gap-20">
+      <div class="mt-0 max-w-fit mx-auto flex flex-col items-center gap-16 lg:gap-20">
         <div class="flex flex-col items-center gap-4 mt-36 lg:mt-48">
           {alert?.text && (
             <a
