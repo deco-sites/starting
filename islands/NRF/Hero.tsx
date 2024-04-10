@@ -29,6 +29,10 @@ export interface Props {
     id?: string;
     title?: string;
     visible?: boolean;
+    /** @default https://player.vimeo.com/video/903151584?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479 */
+    video?: string;
+    /** @default deco.cx | The open-source frontend platform for pros */
+    videoTitle?: string;
   };
   hideEditor?: boolean;
 }
@@ -180,11 +184,13 @@ export default function Hero({
               <div class="relative overflow-hidden rounded-[20px] w-[80vw]">
                 <div style="padding:50.94% 0 0 0;position:relative;">
                   <iframe
-                    src="https://player.vimeo.com/video/903151584?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    src={demo?.video ||
+                      "https://player.vimeo.com/video/903151584?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"}
                     frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                    title="deco.cx | The open-source frontend platform for pros"
+                    title={demo?.videoTitle ||
+                      "deco.cx | The open-source frontend platform for pros"}
                   >
                   </iframe>
                 </div>
