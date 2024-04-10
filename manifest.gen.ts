@@ -147,34 +147,35 @@ import * as $$$$$$123 from "./sections/Roadmap.tsx";
 import * as $$$$$$124 from "./sections/SectionList.tsx";
 import * as $$$$$$125 from "./sections/Sidebar.tsx";
 import * as $$$$$$126 from "./sections/StripePricing.tsx";
-import * as $$$$$$127 from "./sections/Thanks.tsx";
-import * as $$$$$$128 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$129 from "./sections/TripletBanner.tsx";
-import * as $$$$$$130 from "./sections/WasThisPageHelpful.tsx";
-import * as $$$$$$131 from "./sections/Webinar/Content.tsx";
-import * as $$$$$$132 from "./sections/Webinar/Hero.tsx";
-import * as $$$$$$133 from "./sections/Whatsapp.tsx";
-import * as $$$$$$134 from "./sections/Why.tsx";
+import * as $$$$$$127 from "./sections/Test.tsx";
+import * as $$$$$$128 from "./sections/Thanks.tsx";
+import * as $$$$$$129 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$130 from "./sections/TripletBanner.tsx";
+import * as $$$$$$131 from "./sections/WasThisPageHelpful.tsx";
+import * as $$$$$$132 from "./sections/Webinar/Content.tsx";
+import * as $$$$$$133 from "./sections/Webinar/Hero.tsx";
+import * as $$$$$$134 from "./sections/Whatsapp.tsx";
+import * as $$$$$$135 from "./sections/Why.tsx";
 
 const manifest = {
   "functions": {
-    "site/functions/LoadGitHubRaw.ts": $$0,
-    "site/functions/LoadGitHubRawPost.ts": $$1,
-    "site/functions/LoadGitHubRawPostList.ts": $$2,
-    "site/functions/LoadPageProps.ts": $$3,
-    "site/functions/psiRankingList.ts": $$4,
+    "site/functions/LoadGitHubRaw.ts": $0,
+    "site/functions/LoadGitHubRawPost.ts": $1,
+    "site/functions/LoadGitHubRawPostList.ts": $2,
+    "site/functions/LoadPageProps.ts": $3,
+    "site/functions/psiRankingList.ts": $4,
   },
   "loaders": {
-    "site/loaders/blogPostDetailsLoader.ts": $$$$0,
-    "site/loaders/blogPostLoader.ts": $$$$1,
-    "site/loaders/blogPostMarkdownLoader.ts": $$$$2,
-    "site/loaders/denoLoader.ts": $$$$3,
-    "site/loaders/denoTopicsLoader.ts": $$$$4,
-    "site/loaders/featuredPosts.ts": $$$$5,
+    "site/loaders/blogPostDetailsLoader.ts": $$$0,
+    "site/loaders/blogPostLoader.ts": $$$1,
+    "site/loaders/blogPostMarkdownLoader.ts": $$$2,
+    "site/loaders/denoLoader.ts": $$$3,
+    "site/loaders/denoTopicsLoader.ts": $$$4,
+    "site/loaders/featuredPosts.ts": $$$5,
   },
   "handlers": {
-    "site/handlers/feed.ts": $$$$$0,
-    "site/handlers/sitemap.ts": $$$$$1,
+    "site/handlers/feed.ts": $$$$0,
+    "site/handlers/sitemap.ts": $$$$1,
   },
   "sections": {
     "site/sections/About.tsx": $$$$$$0,
@@ -304,25 +305,26 @@ const manifest = {
     "site/sections/SectionList.tsx": $$$$$$124,
     "site/sections/Sidebar.tsx": $$$$$$125,
     "site/sections/StripePricing.tsx": $$$$$$126,
-    "site/sections/Thanks.tsx": $$$$$$127,
-    "site/sections/Theme/Theme.tsx": $$$$$$128,
-    "site/sections/TripletBanner.tsx": $$$$$$129,
-    "site/sections/WasThisPageHelpful.tsx": $$$$$$130,
-    "site/sections/Webinar/Content.tsx": $$$$$$131,
-    "site/sections/Webinar/Hero.tsx": $$$$$$132,
-    "site/sections/Whatsapp.tsx": $$$$$$133,
-    "site/sections/Why.tsx": $$$$$$134,
+    "site/sections/Test.tsx": $$$$$$127,
+    "site/sections/Thanks.tsx": $$$$$$128,
+    "site/sections/Theme/Theme.tsx": $$$$$$129,
+    "site/sections/TripletBanner.tsx": $$$$$$130,
+    "site/sections/WasThisPageHelpful.tsx": $$$$$$131,
+    "site/sections/Webinar/Content.tsx": $$$$$$132,
+    "site/sections/Webinar/Hero.tsx": $$$$$$133,
+    "site/sections/Whatsapp.tsx": $$$$$$134,
+    "site/sections/Why.tsx": $$$$$$135,
   },
   "matchers": {
-    "site/matchers/MatchPath.ts": $$$$$$$$0,
+    "site/matchers/MatchPath.ts": $$$$$$$0,
   },
   "actions": {
-    "site/actions/feedbackDocs.ts": $$$$$$$$$$0,
-    "site/actions/startAlgoliaCrawler.ts": $$$$$$$$$$1,
+    "site/actions/feedbackDocs.ts": $$$$$$$$$0,
+    "site/actions/startAlgoliaCrawler.ts": $$$$$$$$$1,
   },
   "apps": {
-    "site/apps/decohub.ts": $$$$$$$$$$$$0,
-    "site/apps/site.ts": $$$$$$$$$$$$1,
+    "site/apps/decohub.ts": $$$$$$$$$$$0,
+    "site/apps/site.ts": $$$$$$$$$$$1,
   },
   "name": "site",
   "baseUrl": import.meta.url,

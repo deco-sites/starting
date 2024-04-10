@@ -209,14 +209,16 @@ export default function Header(props: Props) {
                 {props.demo?.label}
               </a>
             </li>
-            {/* <li class="h-[50px] grid items-center bg-[#113032] text-white rounded-full">
+            {
+              /* <li class="h-[50px] grid items-center bg-[#113032] text-white rounded-full">
               <a
                 href={props.login.url}
                 class="block px-6 font-normal text-[16px] leading-[19.36px]"
               >
                 {props.login.label}
               </a>
-            </li> */}
+            </li> */
+            }
             <li class="h-[50px] grid items-center bg-[#02F67C] text-[#0A2121] rounded-full">
               <a
                 href={props.sign.url}
@@ -304,7 +306,8 @@ export default function Header(props: Props) {
               {props.demo?.label}
             </a>
           </li>
-          {/* <li>
+          {
+            /* <li>
             <a
               href={props.login.url}
               class="flex gap-2 items-center text-[#02F67C] bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
@@ -329,7 +332,8 @@ export default function Header(props: Props) {
               </svg>
               <span class="text-[12px] ml-[-4px]">100</span>
             </a>
-          </li> */}
+          </li> */
+          }
           <li>
             <a
               href={props.sign.url}

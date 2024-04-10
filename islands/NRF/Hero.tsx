@@ -70,16 +70,14 @@ export default function Hero({
     >
       <Head>
         <script>
-          {
-          `document.addEventListener('keydown', function(event) {
+          {`document.addEventListener('keydown', function(event) {
             const checkbox = document.getElementById('demo-modal');
               if (event.key === 'Escape' || event.keyCode === 27) {
               if (checkbox.checked) {
                 checkbox.checked = false;
               }
             }
-          });`
-          }
+          });`}
         </script>
       </Head>
       <div class="max-w-fit mx-auto flex flex-col items-center gap-16 lg:gap-20">

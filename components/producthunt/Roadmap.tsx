@@ -44,7 +44,11 @@ export default function Roadmap({ features }: { features: Feature[] }) {
                   />
                 </svg>
               </div>
-              <div class={`flex flex-col gap-4 mb-[10%] mb-[${10 + feature.name.length}%]`}>
+              <div
+                class={`flex flex-col gap-4 mb-[10%] mb-[${
+                  10 + feature.name.length
+                }%]`}
+              >
                 {feature.status === "Live"
                   ? (
                     <div className="flex justify-center bg-green-500 text-white p-3 rounded-[32px] w-[58px]">
