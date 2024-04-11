@@ -4783,8 +4783,8 @@
       "label": "Book a demo"
     },
     "sign": {
-      "label": "Create site",
-      "url": "https://admin.deco.cx/spaces/new"
+      "label": "Sign in",
+      "url": "https://admin.deco.cx/login?returnUrl=%2Fadmin"
     },
     "idiom": "Eng",
     "login": {
