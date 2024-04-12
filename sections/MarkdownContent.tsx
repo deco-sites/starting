@@ -112,6 +112,7 @@ function Content(props: MDContent) {
         </span>
       )}
       <div
+        data-color-mode="dark" data-light-theme="light" data-dark-theme="dark"
         class="mt-8 markdown-body !text-[#F9FAFB] !bg-black"
         dangerouslySetInnerHTML={{ __html: html }}
       />

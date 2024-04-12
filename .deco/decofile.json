@@ -24375,5 +24375,8 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "Preview site/sections/MarkdownContent.tsx": {
+    "__resolveType": "site/sections/MarkdownContent.tsx"
   }
 }
