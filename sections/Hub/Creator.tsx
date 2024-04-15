@@ -1,38 +1,53 @@
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
-
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
+  /**
+   * @format rich-text
+   */
   title: string;
+  /**
+   * @format rich-text
+   */
   subtitle: string;
-  label: string;
-  href: string;
-  desktop: LiveImage;
-  mobile: LiveImage;
+  /**
+   * @format rich-text
+   */
+  label?: string;
+  href?: string;
+  desktop: ImageWidget;
+  mobile: ImageWidget;
 }
 
 function Creator({ title, subtitle, label, href, desktop, mobile }: Props) {
   return (
-    <div class="w-full bg-customGray px-4">
-      <div class="container ">
-        {/* mobile version */}
-        <div class="flex flex-col-reverse pb-8 md:pb-0 items-center justify-center gap-2 md:flex-row-reverse text-center md:text-left">
-          <div class="gap-4 flex flex-col items-center justify-center md:justify-start md:items-start w-[362px] md:w-[440px]">
-            <h2 class="text-[40px] font-semibold text-black leading-12 tracking-tighter">
-              {title}
-            </h2>
-            <h4 class="text-[15px] font-normal leading-5 ">
-              {subtitle}
-            </h4>
-            <a
-              href={href}
-              target="_blank"
-              class="bg-black border-2 text-white rounded-md max-w-[180px] px-4 py-2 text-center hover:bg-white hover:text-black hover:border-black"
+    <div class="w-full px-4 mt-[105px] bg-[#010101]">
+      <div class="container flex items-center sm:mx-8 py-12 md:mx-auto md:px-14 md:py-16 lg:px-16 gap-16 lg:py-20 xl:px-16">
+        <div class="flex lg:flex-row pb-8 md:pb-0 items-center justify-between gap-6 flex-row-reverse flex-col-reverse text-center lg:text-left w-full mx-auto">
+          <div class="gap-4 flex flex-col items-center justify-center md:justify-start md:items-start w-[362px] md:w-[481px]">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: title,
+              }}
             >
-              {label}
-            </a>
+            </div>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: subtitle,
+              }}
+            >
+            </div>
+            {label && href && (
+              <a
+                href={href}
+                target="_blank"
+                class="bg-black border-2 text-white rounded-md max-w-[180px] px-4 py-2 text-center hover:bg-white hover:text-black hover:border-black"
+              >
+                {label}
+              </a>
+            )}
           </div>
-          <div class="py-4 md:min-w-[440px]">
+          <div class="md:min-w-[440px]">
             <Picture>
               <Source
                 src={mobile}
@@ -46,8 +61,8 @@ function Creator({ title, subtitle, label, href, desktop, mobile }: Props) {
               />
               <img
                 src={desktop}
-                class="pb-[10px]"
-                alt="imagem-logo"
+                class="w-full max-h-[579px]"
+                alt="Integrates With Any Commerce Backend"
               />
             </Picture>
           </div>
