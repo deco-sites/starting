@@ -24391,11 +24391,5 @@
       "type": "temporary"
     },
     "__resolveType": "website/loaders/redirect.ts"
-  },
-  "pages-Baby%20Calendar-38405": {
-    "name": "Baby Calendar",
-    "path": "/baby",
-    "sections": [],
-    "__resolveType": "website/pages/Page.tsx"
   }
 }
