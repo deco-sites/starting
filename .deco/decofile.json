@@ -5777,6 +5777,9 @@
   "Preview site/sections/Live Projects/LiveProjects.tsx": {
     "__resolveType": "site/sections/Live Projects/LiveProjects.tsx"
   },
+  "Preview site/sections/MarkdownContent.tsx": {
+    "__resolveType": "site/sections/MarkdownContent.tsx"
+  },
   "Preview site/sections/NRF/Header.tsx": {
     "__resolveType": "site/sections/NRF/Header.tsx"
   },
@@ -18309,94 +18312,98 @@
   "pages-hubhome-en-0a714d994e02": {
     "name": "Hub Home / EN",
     "path": "/en/hub",
-    "sections": [
-      {
-        "__resolveType": "GTM"
-      },
-      {
-        "__resolveType": "[en] [mkt] Head"
-      },
-      {
-        "__resolveType": "Deco Header [EN]"
-      },
-      {
-        "__resolveType": "site/sections/Hub/Heading.tsx",
-        "alt": "Introdução",
-        "title": "High-performance ecommerce resources. ",
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1925/ae97d4d8-d7b1-4732-8344-e3fed9e4e063",
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1925/0d0d6041-94bd-4ec8-91b1-3322f5bfcc33",
-        "subtitle": "Connect to any platform or third party service, deploy in one click."
-      },
-      {
-        "__resolveType": "Templates Grid - EN"
-      },
-      {
-        "__resolveType": "site/sections/Hub/Advantage.tsx",
-        "Benefits": [
-          {
-            "icon": "Time",
-            "title": "Super fast",
-            "subtitle": "Our developers have fine-tuned every line of the theme code to give you an unfair advantage in getting more sales."
+    "sections": {
+      "__resolveType": "website/flags/multivariate.ts",
+      "variants": [
+        {
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           },
-          {
-            "icon": "Cell",
-            "title": "Responsive",
-            "subtitle": "Designed for smartphones first and foremost to make sure your customers can engage with your brand on the go."
-          },
-          {
-            "icon": "Doc",
-            "title": "Customizable",
-            "subtitle": "Design and customize every part of your website from the ground up. You have control over everything down to the finest detail."
-          },
-          {
-            "icon": "Dol",
-            "title": "Try for free",
-            "subtitle": "Try the templates for free with your own products, brand colors, and customizations. One-time payment if you publish the website."
-          }
-        ]
-      },
-      {
-        "__resolveType": "site/sections/Hub/SectionTitle.tsx",
-        "label": "Integrations",
-        "title": "One-click integrations",
-        "layout": {
-          "headerAlignment": "center"
-        },
-        "description": "Connect with anything, from commerce platforms to any third-party APIs"
-      },
-      {
-        "title": "Current integrations",
-        "__resolveType": "site/sections/Hub/SectionSubtitle.tsx"
-      },
-      {
-        "__resolveType": "Current integrations"
-      },
-      {
-        "__resolveType": "site/sections/Hub/SectionSubtitle.tsx",
-        "title": "Coming soon"
-      },
-      {
-        "__resolveType": "Coming soon integrations"
-      },
-      {
-        "__resolveType": "site/sections/Hub/SectionTitle.tsx",
-        "label": "Agencies",
-        "title": "Partner integrators",
-        "layout": {
-          "headerAlignment": "left"
-        },
-        "description": "Work with deco's certified SI partners"
-      },
-      {
-        "__resolveType": "Agencies list"
-      },
-      {
-        "__resolveType": "site/sections/FooterBigLogo.tsx"
-      },
-      {
-        "__resolveType": "Deco Footer [EN]"
-      }
-    ],
+          "value": [
+            {
+              "__resolveType": "GTM"
+            },
+            {
+              "__resolveType": "[en] [mkt] Head"
+            },
+            {
+              "__resolveType": "Header - EN"
+            },
+            {
+              "__resolveType": "site/sections/Hub/Creator.tsx",
+              "alt": "Introdução",
+              "href": "",
+              "title": "<h1 class=\"text-white font-medium text-3xl leading-[46px] tracking-[-0.56px] md:text-5xl xl:text-[5rem] xl:leading-[80px] md:tracking-[-2.4px]\"><p><span style=\"background: var(--gradient-1, linear-gradient(93deg, #02F67C 44.7%, #3FB67B 118.6%)); background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;\">High-performance</span> ecommerce resources.</p></h1>",
+              "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c081cb47-61c2-4f81-9d33-1b836f64364d",
+              "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a681a6be-65bf-421e-9e57-5d01c99db6a1",
+              "subtitle": "<h2 class=\"text-[#A1A1AA] font-normal text-[22px] md:text-[18px] lg:text-[1.5rem] leading-[2.25rem] text-[#A1A1AA]\">Connect to any platform or third party service, deploy in one click.</h2>",
+              "label": "<p></p>"
+            },
+            {
+              "__resolveType": "Templates Grid - EN"
+            },
+            {
+              "Benefits": [
+                {
+                  "icon": "Time",
+                  "title": "Super fast",
+                  "subtitle": "Our developers have fine-tuned every line of the theme code to give you an unfair advantage in getting more sales."
+                },
+                {
+                  "icon": "Cell",
+                  "title": "Responsive",
+                  "subtitle": "Designed for smartphones first and foremost to make sure your customers can engage with your brand on the go."
+                },
+                {
+                  "icon": "Doc",
+                  "title": "Customizable",
+                  "subtitle": "Design and customize every part of your website from the ground up. You have control over everything down to the finest detail."
+                },
+                {
+                  "icon": "Dol",
+                  "title": "Try for free",
+                  "subtitle": "Try the templates for free with your own products, brand colors, and customizations. One-time payment if you publish the website."
+                }
+              ],
+              "__resolveType": "site/sections/Hub/Advantage.tsx"
+            },
+            {
+              "label": "Integrations",
+              "title": "One-click integrations",
+              "layout": {
+                "headerAlignment": "center"
+              },
+              "description": "Connect with anything, from commerce platforms to any third-party APIs",
+              "__resolveType": "site/sections/Hub/SectionTitle.tsx"
+            },
+            {
+              "__resolveType": "Current integrations"
+            },
+            {
+              "__resolveType": "Coming soon integrations"
+            },
+            {
+              "__resolveType": "site/sections/Hub/SectionTitle.tsx",
+              "label": "Agencies",
+              "title": "Partner integrators",
+              "layout": {
+                "headerAlignment": "left"
+              },
+              "description": "Work with deco's certified SI partners"
+            },
+            {
+              "__resolveType": "Agencies list"
+            },
+            {
+              "__resolveType": "[en] Footer"
+            },
+            {
+              "__resolveType": "deco-sites/starting/sections/FooterBigLogo.tsx"
+            }
+          ]
+        }
+      ]
+    },
     "__resolveType": "$live/pages/LivePage.tsx"
   },
   "pages-hubhome-pt-e2240c84703d": {
@@ -24346,7 +24353,8 @@
     "commerce": {
       "platform": "other"
     },
-    "__resolveType": "site/apps/site.ts"
+    "__resolveType": "site/apps/site.ts",
+    "firstByteThresholdMS": false
   },
   "test-pricing": {
     "text": "Crie, teste e suba hoje. À medida que você expande, alavanque-se da nossa cobrança baseada no seu uso da nossa infraestrutura, e pague apenas pelo que precisar!",
@@ -24376,7 +24384,18 @@
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
   },
-  "Preview site/sections/MarkdownContent.tsx": {
-    "__resolveType": "site/sections/MarkdownContent.tsx"
+  "redirects-baby-304521": {
+    "redirect": {
+      "from": "/baby",
+      "to": "https://meetings.hubspot.com/rafael293",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
+  },
+  "pages-Baby%20Calendar-38405": {
+    "name": "Baby Calendar",
+    "path": "/baby",
+    "sections": [],
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
