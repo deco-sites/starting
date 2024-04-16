@@ -21,7 +21,7 @@ export interface Props {
 
 function Creator({ title, subtitle, label, href, desktop, mobile }: Props) {
   return (
-    <div class="w-full px-4 mt-[105px] bg-[#010101]">
+    <div class="w-full px-4 pt-[105px] bg-[#010101]">
       <div class="container flex items-center sm:mx-8 py-12 md:mx-auto md:px-14 md:py-16 lg:px-16 gap-16 lg:py-20 xl:px-16">
         <div class="flex lg:flex-row pb-8 md:pb-0 items-center justify-between gap-6 flex-row-reverse flex-col-reverse text-center lg:text-left w-full mx-auto">
           <div class="gap-4 flex flex-col items-center justify-center md:justify-start md:items-start w-[362px] md:w-[481px]">
