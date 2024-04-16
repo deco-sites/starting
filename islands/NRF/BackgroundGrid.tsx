@@ -1,17 +1,20 @@
-import { useSignal } from "@preact/signals";
 import { useEffect } from "preact/hooks";
 
 export const CursorFollower = () => {
-  const position = useSignal({ x: 0, y: 0 });
-
-  const handleMouseMove = (e: MouseEvent) => {
-    const x = (e.clientX / globalThis.window.innerWidth) * 100;
-    const y = (e.clientY / globalThis.window.innerHeight) * 100;
-
-    position.value = { x, y };
-  };
-
   useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      const cursorGlowElement = document.querySelector('.cursor-glow') as HTMLElement;
+      const x = (e.clientX / self.innerWidth) * 100;
+      const y = (e.clientY / self.innerHeight) * 100;
+      const transform = `translate3d(${x}vw, ${y}vh, 0)`;
+
+      requestAnimationFrame(() => {
+        if (cursorGlowElement) {
+          cursorGlowElement.style.transform = transform;
+        }
+      });
+    };
+
     self.addEventListener("mousemove", handleMouseMove);
 
     return () => {
@@ -19,20 +22,14 @@ export const CursorFollower = () => {
     };
   }, []);
 
-  const { x, y } = position.value;
-
-  const transform =
-    `translate3d(${x}vw, ${y}vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`;
-
   return (
     <div
       className="cursor-glow"
       style={{
         willChange: "transform",
         transformStyle: "preserve-3d",
-        transform: transform,
+        transition: "transform 0.1s ease-out", // Smooth transition for the transform
       }}
-    >
-    </div>
+    ></div>
   );
 };
