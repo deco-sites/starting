@@ -1952,6 +1952,9 @@
       },
       {
         "__resolveType": "Deco Footer [EN]"
+      },
+      {
+        "__resolveType": "site/sections/NRF/Grid.tsx"
       }
     ],
     "__resolveType": "$live/pages/LivePage.tsx"
