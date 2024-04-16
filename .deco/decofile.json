@@ -5774,6 +5774,20 @@
       }
     ]
   },
+  "Preview site/sections/FreePlan.tsx": {
+    "__resolveType": "site/sections/FreePlan.tsx",
+    "placement": "left",
+    "cta": [
+      {
+        "variant": "Normal",
+        "text": "Apply for Startup Plan",
+        "href": "https://forms.gle/TNA4RurBRghW18ZL8"
+      }
+    ],
+    "title": "<p><span>🎈Start-up Forever Free Plan 🎈</span></p>",
+    "description": "<p>Enjoy a free landing page implementation and DEV subscription on us, forever, up to 50k pageviews. Just send us your Figma and consider it done. Apply below:</p>",
+    "disclaimer": "*Eligibility: start-ups with less than $1M in the last 2 years."
+  },
   "Preview site/sections/Live Projects/LiveProjects.tsx": {
     "__resolveType": "site/sections/Live Projects/LiveProjects.tsx"
   },
@@ -18327,7 +18341,7 @@
               "__resolveType": "[en] [mkt] Head"
             },
             {
-              "__resolveType": "Header - EN"
+              "__resolveType": "Deco Header [EN]"
             },
             {
               "__resolveType": "site/sections/Hub/Creator.tsx",
@@ -18343,6 +18357,7 @@
               "__resolveType": "Templates Grid - EN"
             },
             {
+              "__resolveType": "site/sections/Hub/Advantage.tsx",
               "Benefits": [
                 {
                   "icon": "Time",
@@ -18364,17 +18379,16 @@
                   "title": "Try for free",
                   "subtitle": "Try the templates for free with your own products, brand colors, and customizations. One-time payment if you publish the website."
                 }
-              ],
-              "__resolveType": "site/sections/Hub/Advantage.tsx"
+              ]
             },
             {
+              "__resolveType": "site/sections/Hub/SectionTitle.tsx",
               "label": "Integrations",
               "title": "One-click integrations",
               "layout": {
                 "headerAlignment": "center"
               },
-              "description": "Connect with anything, from commerce platforms to any third-party APIs",
-              "__resolveType": "site/sections/Hub/SectionTitle.tsx"
+              "description": "Connect with anything, from commerce platforms to any third-party APIs"
             },
             {
               "__resolveType": "Current integrations"
@@ -18395,7 +18409,7 @@
               "__resolveType": "Agencies list"
             },
             {
-              "__resolveType": "[en] Footer"
+              "__resolveType": "Deco Footer [EN]"
             },
             {
               "__resolveType": "deco-sites/starting/sections/FooterBigLogo.tsx"
@@ -24324,6 +24338,14 @@
     },
     "__resolveType": "website/loaders/redirect.ts"
   },
+  "redirects-baby-304521": {
+    "redirect": {
+      "from": "/baby",
+      "to": "https://meetings.hubspot.com/rafael293",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
+  },
   "site": {
     "seo": {
       "type": "website",
@@ -24383,27 +24405,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "redirects-baby-304521": {
-    "redirect": {
-      "from": "/baby",
-      "to": "https://meetings.hubspot.com/rafael293",
-      "type": "temporary"
-    },
-    "__resolveType": "website/loaders/redirect.ts"
-  },
-  "Preview site/sections/FreePlan.tsx": {
-    "__resolveType": "site/sections/FreePlan.tsx",
-    "placement": "left",
-    "cta": [
-      {
-        "variant": "Normal",
-        "text": "Apply for Startup Plan",
-        "href": "https://forms.gle/TNA4RurBRghW18ZL8"
-      }
-    ],
-    "title": "<p><span>🎈Start-up Forever Free Plan 🎈</span></p>",
-    "description": "<p>Enjoy a free landing page implementation and DEV subscription on us, forever, up to 50k pageviews. Just send us your Figma and consider it done. Apply below:</p>",
-    "disclaimer": "*Eligibility: start-ups with less than $1M in the last 2 years."
   }
 }
