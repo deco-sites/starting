@@ -67,18 +67,18 @@ export default function FreePlan({
             class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 ${
               image
                 ? "lg:w-1/2 lg:max-w-xl"
-                : "flex flex-col items-center justify-center lg:max-w-3xl"
+                : "flex flex-col items-center justify-center lg:max-w-4xl"
             }`}
           >
             <div
-              class="inline-block text-[80px] leading-[100%] font-medium text-white tracking-[-2.4px]"
+              class="inline-block text-2xl md:text-6xl leading-[100%] font-medium text-white tracking-[-2.4px]"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
             >
             </div>
             <div
-              class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]"
+              class="text-white text-[16px] md:text-[18px] leading-[150%] mx-auto max-w-4xl"
               dangerouslySetInnerHTML={{
                 __html: description,
               }}
@@ -91,7 +91,7 @@ export default function FreePlan({
                     id={item?.id}
                     href={item?.href ?? ""}
                     target={item?.href?.includes("http") ? "_blank" : "_self"}
-                    class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out w-96 ${
+                    class={`group relative relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out w-full ${
                       item.variant === "Reverse"
                         ? "bg-[#113032] hover:from-[#113032] hover:to-[#0A1F1F] text-white hover:shadow-hero-reverse"
                         : "bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero"
