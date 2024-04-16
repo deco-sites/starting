@@ -18338,10 +18338,13 @@
               "__resolveType": "GTM"
             },
             {
+              "__resolveType": "Deco Header [EN]"
+            },
+            {
               "__resolveType": "[en] [mkt] Head"
             },
             {
-              "__resolveType": "Deco Header [EN]"
+              "__resolveType": "Templates Grid - EN"
             },
             {
               "__resolveType": "site/sections/Hub/Creator.tsx",
@@ -18352,9 +18355,6 @@
               "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a681a6be-65bf-421e-9e57-5d01c99db6a1",
               "subtitle": "<h2 class=\"text-[#A1A1AA] font-normal text-[22px] md:text-[18px] lg:text-[1.5rem] leading-[2.25rem] text-[#A1A1AA]\">Connect to any platform or third party service, deploy in one click.</h2>",
               "label": "<p></p>"
-            },
-            {
-              "__resolveType": "Templates Grid - EN"
             },
             {
               "__resolveType": "site/sections/Hub/Advantage.tsx",
@@ -23703,7 +23703,7 @@
               "__resolveType": "PageContent"
             },
             {
-              "__resolveType": "[en] Footer"
+              "__resolveType": "Deco Footer [EN]"
             }
           ]
         },
