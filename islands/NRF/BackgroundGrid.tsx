@@ -4,7 +4,7 @@ export const CursorFollower = () => {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       const cursorGlowElement = document.querySelector('.cursor-glow') as HTMLElement;
-      const x = ((e.clientX - 70) / self.innerWidth) * 100;
+      const x = ((e.clientX - 80) / self.innerWidth) * 100;
       const y = ((e.clientY - 80) / self.innerHeight) * 100;
       const transform = `translate3d(${x}vw, ${y}vh, 0)`;
 
