@@ -5785,6 +5785,9 @@
     "description": "<p>Enjoy a free landing page implementation and DEV subscription on us, forever, up to 50k pageviews. Just send us your Figma and consider it done. Apply below:</p>",
     "disclaimer": "*Eligibility: start-ups with less than $1M in the last 2 years."
   },
+  "Preview site/sections/Hub/Creator.tsx": {
+    "__resolveType": "site/sections/Hub/Creator.tsx"
+  },
   "Preview site/sections/Live Projects/LiveProjects.tsx": {
     "__resolveType": "site/sections/Live Projects/LiveProjects.tsx"
   },
@@ -18341,9 +18344,6 @@
               "__resolveType": "[en] [mkt] Head"
             },
             {
-              "__resolveType": "Templates Grid - EN"
-            },
-            {
               "__resolveType": "site/sections/Hub/Creator.tsx",
               "alt": "Introdução",
               "href": "",
@@ -18352,6 +18352,9 @@
               "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a681a6be-65bf-421e-9e57-5d01c99db6a1",
               "subtitle": "<h2 class=\"text-[#A1A1AA] font-normal text-[22px] md:text-[18px] lg:text-[1.5rem] leading-[2.25rem] text-[#A1A1AA]\">Connect to any platform or third party service, deploy in one click.</h2>",
               "label": "<p></p>"
+            },
+            {
+              "__resolveType": "Templates Grid - EN"
             },
             {
               "__resolveType": "site/sections/Hub/Advantage.tsx",
@@ -24402,8 +24405,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "Preview site/sections/Hub/Creator.tsx": {
-    "__resolveType": "site/sections/Hub/Creator.tsx"
   }
 }
