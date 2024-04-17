@@ -4730,7 +4730,7 @@
         "title": "Platform",
         "submenu": [
           {
-            "href": "/admin",
+            "href": "https://admin.deco.cx/",
             "title": "Login"
           },
           {
