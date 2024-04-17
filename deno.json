@@ -2,9 +2,9 @@
   "imports": {
     "site/": "./",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.25.1/",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.61.0/",
+    "$live/": "https://denopkg.com/deco-cx/deco@1.61.1/",
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.61.0/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.61.1/",
     "apps/": "https://denopkg.com/deco-cx/apps@0.36.5/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "preact": "https://esm.sh/preact@10.19.2",
@@ -48,7 +48,10 @@
   ],
   "lint": {
     "rules": {
-      "tags": ["fresh", "recommended"]
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
     }
   },
   "nodeModulesDir": true,
