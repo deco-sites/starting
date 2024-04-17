@@ -583,7 +583,7 @@
               "__resolveType": "Deco Header [EN]"
             },
             {
-              "title": "We have received your contact!",
+              "title": "We have received your contact info!",
               "message": "Thank you for your interest in the future of frontend development. We will be in touch by email shortly.",
               "__resolveType": "site/sections/NRF/Thanks.tsx"
             },
@@ -9768,6 +9768,9 @@
   },
   "analytics@v0": {
     "__resolveType": "decohub/apps/analytics.ts"
+  },
+  "blog": {
+    "__resolveType": "decohub/apps/blog.ts"
   },
   "blogposts": {
     "list": {
@@ -24472,8 +24475,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "blog": {
-    "__resolveType": "decohub/apps/blog.ts"
   }
 }
