@@ -3351,7 +3351,7 @@
         "title": "Platform",
         "submenu": [
           {
-            "href": "/admin",
+            "href": "https://admin.deco.cx/",
             "title": "Login"
           },
           {
@@ -3916,7 +3916,7 @@
         "title": "Plataforma",
         "submenu": [
           {
-            "href": "/admin",
+            "href": "https://admin.deco.cx/",
             "title": "Login"
           },
           {
@@ -4829,13 +4829,13 @@
       "label": "Book a demo"
     },
     "sign": {
-      "label": "Create Site",
-      "url": "https://admin.deco.cx/spaces/new"
+      "label": "Sign in",
+      "url": "https://admin.deco.cx/"
     },
     "idiom": "Eng",
     "login": {
       "label": "Login",
-      "url": "https://admin.deco.cx/spaces/new"
+      "url": "https://admin.deco.cx/"
     },
     "alerts": {
       "mobile": [],
