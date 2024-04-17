@@ -87,7 +87,7 @@ export default function DocsPage(
               {props.data.title}
             </h1>
           )}
-          <div class="mx-auto max-w-full lg:max-w-screen-lg flex gap-6">
+          <div class="max-w-full lg:max-w-screen-lg flex gap-6">
             <Content content={frontMatterContent} />
           </div>
         </div>

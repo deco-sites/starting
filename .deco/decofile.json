@@ -5723,6 +5723,9 @@
       "__resolveType": "site/sections/OnThisPage.tsx"
     }
   },
+  "Preview $live/sections/EmptySection.tsx": {
+    "__resolveType": "$live/sections/EmptySection.tsx"
+  },
   "Preview /sections/Benefits.tsx": {
     "__resolveType": "site/sections/Benefits.tsx"
   },
@@ -5822,6 +5825,9 @@
         "name": []
       }
     ]
+  },
+  "Preview site/sections/CustomizableContent.tsx": {
+    "__resolveType": "site/sections/CustomizableContent.tsx"
   },
   "Preview site/sections/FreePlan.tsx": {
     "__resolveType": "site/sections/FreePlan.tsx",
@@ -13773,6 +13779,15 @@
                 ],
                 "label": "Lojas Torra",
                 "description": "Discover how Lojas Torra saw a 103% surge in its conversion rate and 37% increase in revenue by migrating its frontend to deco.cx."
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ee1a1299-e6f6-4356-ba96-14f2b0b276e7"
+                  }
+                ],
+                "label": "Baw Clothing"
               }
             ],
             "label": "Fashion"
@@ -24457,5 +24472,8 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "blog": {
+    "__resolveType": "decohub/apps/blog.ts"
   }
 }

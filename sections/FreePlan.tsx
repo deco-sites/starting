@@ -83,7 +83,7 @@ export default function FreePlan({
                 __html: description,
               }}
             />
-            <div class="flex flex-col items-center gap-2">
+            <div class="flex flex-col items-center gap-4">
               <div class="flex flex-col items-start lg:flex-row gap-4">
                 {cta?.map((item) => (
                   <a
@@ -105,7 +105,7 @@ export default function FreePlan({
                   </a>
                 ))}
               </div>
-              <div class="text-xs">
+              <div class="text-xs text-white">
                 {disclaimer}
               </div>
             </div>
