@@ -11865,63 +11865,23 @@
               "__resolveType": "site/sections/Case/ArticleQuote.tsx"
             },
             {
-              "infor": {
-                "listItem": [
-                  {
-                    "title": "adasdas",
-                    "number": 1,
-                    "description": "asdasdas"
-                  },
-                  {
-                    "title": "xaxaxa",
-                    "number": 1,
-                    "description": "xaxaxaxa"
-                  }
-                ],
-                "listItems": [],
-                "mainTitle": "Discover Euro's full journey with deco.cx in our e-book!",
-                "description": null
-              },
-              "caseLink": "https://drive.google.com/file/d/1CXIqVThUWbW1n6Id4NasuXztAW7swwAq/view?usp=drive_link",
-              "caseName": "Euro Colchoes",
-              "formInfor": {
-                "formTitle": "Fill in the fields below and receive the ebook via email :)",
-                "submiteName": "Get the e-book",
-                "urlToActionDev": "/api/case",
-                "urlToActionBusiness": "/api/case",
-                "PlaceholderfieldPosition": "Cargo"
-              },
-              "langThanks": "en",
-              "FieldContacts": [
-                {
-                  "name": "System Integrator",
-                  "label": "System Integrator"
-                },
-                {
-                  "name": "Brand",
-                  "label": "Brand"
-                },
-                {
-                  "name": "Brand Group",
-                  "label": "Brand Group"
-                },
-                {
-                  "name": "Technology Partnership",
-                  "label": "Technology Partnership"
-                }
-              ],
-              "__resolveType": "site/sections/Case/CaseForm.tsx"
+              "__resolveType": "site/sections/Case/ArticleBannerCTA.tsx",
+              "text": "Discover Euro's full journey with deco.cx in our e-book!",
+              "button": {
+                "label": "Download the e-book",
+                "href": "https://drive.google.com/file/d/16M2_tyLlDxB9-Vj_CAJbsWNU6rLPbPGG/view?usp=drive_link"
+              }
             },
             {
+              "__resolveType": "site/sections/NRF/CallToAction.tsx",
+              "text": "Ready to delight your customers?",
               "cta": [
                 {
                   "href": "https://www.deco.cx/en/contact-us",
                   "text": "Book a Demo!",
                   "variant": "Normal"
                 }
-              ],
-              "text": "Ready to delight your customers?",
-              "__resolveType": "site/sections/NRF/CallToAction.tsx"
+              ]
             },
             {
               "__resolveType": "Deco Footer [EN]"
