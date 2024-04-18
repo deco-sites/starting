@@ -41,6 +41,11 @@ ol.nested li:before {
 .markdown-body img {
   padding: 15px 0;
 }
+
+.markdown-body a {
+  color: #4ADE80;
+}
+
 .markdown-body {
   font-family: Albert Sans,sans-serif;
 }

@@ -252,8 +252,8 @@ export default function Sidebar({
                 href={LinkSubtitle}
                 class={`${
                   currentSlug === subtitleSlug
-                    ? "text-blue-600"
-                    : "text-zinc-900"
+                    ? "text-[#4ADE80]"
+                    : "text-[#E7E5E4]"
                 } text-[15px] font-semibold leading-tight`}
               >
                 {Subtitle}
@@ -341,8 +341,8 @@ export default function Sidebar({
                             key={subTopicIndex}
                             class={`flex flex-col cursor-pointer ${
                               isActiveSubTopic
-                                ? "text-[#2E6ED9]"
-                                : "text-zinc-900 relative w-min-content"
+                                ? "text-[#4ADE80]"
+                                : "text-[#E7E5E4] relative w-min-content"
                             }`}
                           >
                             <a
@@ -350,7 +350,7 @@ export default function Sidebar({
                               class={`flex items-center px-2 py-3 font-inter text-xs leading-tight cursor-pointer ${
                                 isActiveSubTopic
                                   ? "text-[#4ADE80]"
-                                  : "text-[#E7E5E4] relative w-min-content hover:bg-[#FFFFFF0D] hover:rounded-lg hover:text-[#86EFAC]"
+                                  : "text-[#E7E5E4] relative w-min-content hover:bg-[#FFFFFF0D]"
                               }`}
                               style={getFontWeightStyle(
                                 fontWeightSubtopic.fontWeight || "normal",
@@ -397,10 +397,10 @@ export default function Sidebar({
                                     return (
                                       <li>
                                         <a
-                                          class={`flex items-center pl-[32px] pr-2 py-2 text-[15px] leading-tight cursor-pointer hover:bg-[#F8F9F5] ${
+                                          class={`flex items-center pl-[32px] pr-2 py-2 text-[15px] leading-tight cursor-pointer hover:bg-[#FFFFFF0D] ${
                                             isNestedTopicActive
-                                              ? "text-[#2E6ED9]"
-                                              : "text-zinc-900 relative w-min-content"
+                                              ? "text-[#4ADE80]"
+                                              : "text-[#E7E5E4] relative w-min-content"
                                           }`}
                                           href={ChildTopic.SidebarLink}
                                           key={subSubIndex}
