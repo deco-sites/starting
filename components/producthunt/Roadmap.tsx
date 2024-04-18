@@ -56,12 +56,12 @@ export default function Roadmap({ features }: { features: Feature[] }) {
               >
                 {feature.status === "Live"
                   ? (
-                    <div className="flex justify-center bg-green-500 text-brand-900 px-3 rounded-3xl w-fit">
+                    <div className="flex justify-center bg-green-500 text-base-content px-3 rounded-3xl w-fit">
                       Live
                     </div>
                   )
                   : (
-                    <div className="flex justify-center bg-purple-500 text-brand-900 px-3 rounded-3xl w-fit">
+                    <div className="flex justify-center bg-purple-500 text-base-content px-3 rounded-3xl w-fit">
                       Coming Soon
                     </div>
                   )}
