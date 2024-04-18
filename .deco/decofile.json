@@ -4265,6 +4265,11 @@
         "href": "https://unicode.cx/",
         "label": "Unicode",
         "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/64ab8e32-de24-4e52-9a47-9b44e8001960"
+      },
+      {
+        "label": "b8one",
+        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7677a454-04a6-41eb-a6e0-37dfafeb1bed",
+        "href": "https://www.b8one.com/"
       }
     ],
     "__resolveType": "site/sections/Hub/Agencies.tsx"
