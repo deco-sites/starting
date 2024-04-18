@@ -10512,65 +10512,93 @@
               "__resolveType": "Deco Header [EN]"
             },
             {
-              "date": "March 11, 2024",
-              "title": "Hospitalar's ROAS soars from 4 to 19 with deco.cx and N1 Agency",
+              "date": "April 18th, 2024",
+              "title": "AR&Co kickstarts digital shift: Baw goes headless with deco.cx ",
               "author": "By Maria Cecilia Marques",
-              "bgColor": "#000000",
-              "subtitle": "A strategic overhaul in healthcare ecommerce marketing and performance",
+              "bgColor": "#0d0c0c",
               "textColor": "#fefefe",
-              "screenshot": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/647e7629-bdfe-482f-a6c3-e2abecc7a810",
-              "__resolveType": "site/sections/Case/ArticleHeader.tsx"
+              "screenshot": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5d49f89a-c22b-469f-9eb8-920f34a2f094",
+              "__resolveType": "site/sections/Case/ArticleHeader.tsx",
+              "subtitle": "AR&Co. is getting its headless strategy off the ground, with both quality and speed by trusting deco.cx as its frontend solution."
             },
             {
+              "__resolveType": "site/sections/Case/ArticleNumbers.tsx",
               "items": [
                 {
                   "name": "Taxa de conversão",
-                  "label": "Return on ad spend (ROAS)",
-                  "number": "4 to 19"
+                  "label": "PageSpeed Increase",
+                  "number": "10x"
                 },
                 {
                   "name": "Taxa de conversão",
-                  "label": "Revenue (over 3 months)",
-                  "number": "+12.9%"
+                  "label": "Organic search clicks",
+                  "number": "+68%"
                 },
                 {
-                  "label": "Average Ticket Size",
-                  "number": "+25%"
+                  "label": "(Immediate) Conversion Growth",
+                  "number": "+16%"
                 }
               ],
               "bgColor": "#1cdb92",
-              "textColor": "#ffffff",
-              "__resolveType": "site/sections/Case/ArticleNumbers.tsx"
+              "textColor": "#ffffff"
             },
             {
-              "text": "<p dir=\"ltr\"><a data-mce-href=\"https://www.hospitalardistribuidora.com.br/\" href=\"https://www.hospitalardistribuidora.com.br/\" data-mce-selected=\"inline-boundary\"><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Hospitalar Distribuidora</span>﻿</a> sought to enhance its digital marketing effectiveness and user experience amidst growing competition in the healthcare distribution sector. The company grappled with a stagnant Return on Ad Spend (ROAS), low conversion rates, poor website performance, and a high cart abandonment rate, largely attributed to the complex process involved in purchasing controlled medications.<strong id=\"docs-internal-guid-c58de6b9-7fff-641b-2a62-46c9f72502a1\"></strong><!-- notionvc: fd713655-e1d4-47cf-9800-d0401b099927 --></p>",
+              "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
+              "text": "<p dir=\"ltr\">Like many brands operating ecommerce platforms, <span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\"><a data-mce-href=\"https://www.bawclothing.com.br/\" href=\"https://www.bawclothing.com.br/\" target=\"_blank\" rel=\"noopener\" data-mce-selected=\"inline-boundary\">Baw Clothing﻿</a></span>, pioneer in Brazilian street fashion, struggled with the low performance of its storefront. As a digitally native vertical brand known for its dynamic and fast-paced release cycles, Baw struggled to maintain its distinctive brand identity while meeting the increasing expectations of a discerning customer base. The brand’s existing infrastructure fell short in providing a quick navigation and easy site customization, and was not equipped to handle the rapid content turnover required by Baw's marketing strategies. These inefficiencies hindered conversion rates and sales.</p>",
               "label": "Challenge",
               "textColor": "#ffffff",
-              "titleLevel": "H1",
-              "__resolveType": "site/sections/Case/ArticleParagraph.tsx"
+              "titleLevel": "H1"
             },
             {
-              "text": "<p dir=\"ltr\">Faced with these pains, the company sought help from <span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\"><a data-mce-href=\"https://agencian1.com.br/\" href=\"https://agencian1.com.br/\" target=\"_blank\" rel=\"noopener\">N1</a></span>, an ecommerce specialist and esteemed partner of VTEX and deco.cx. N1 drew up a strategy which involved porting the site's storefront to deco.cx and using VTEX as the backend platform, in a headless architecture. By using deco.cx as the frontend provider, N1 would be able to implement the site quickly, improve its performance, and guarantee its ability to easily apply any brand-related or paid media strategies.</p><p dir=\"ltr\">N1 rebuilt the whole site (including a new design) in only three months. It also partnered with healthcare specialists to test the usability of the online store, and together with Hospitalar decided on a series of improvements to smoothen the customer experience. After identifying that the high rates of cart abandonment were strongly correlated with the friction over buying prescription medication, they implemented several changes. Key interventions included:</p><ol><li dir=\"ltr\" aria-level=\"1\"><p dir=\"ltr\" role=\"presentation\">Product identification: clear marking of products requiring special documentation throughout the shopping journey to align customer expectations from the start.</p></li><li dir=\"ltr\" aria-level=\"1\"><p dir=\"ltr\" role=\"presentation\">Informative banners and landing pages: utilizing deco.cx's no-code page builder for educating customers on controlled medication purchases.</p></li><li dir=\"ltr\" aria-level=\"1\"><p dir=\"ltr\" role=\"presentation\">Fast loading content: leveraged deco.cx's infrastructure and real-time performance monitoring tools for a seamless buying experience.&nbsp;</p></li></ol><p dir=\"ltr\">Under N1's guidance and support, Hospitalar also revamped its digital marketing strategies. The objective was to optimize ad spending by deploying analytical tools for precise targeting and personalization.</p><p><!-- notionvc: 9e4efd7a-4ec8-48b2-8158-ffae52279855 --></p>",
+              "text": "Discover Baw's full journey with deco.cx in our e-book!",
+              "__resolveType": "site/sections/Case/ArticleBannerCTA.tsx",
+              "button": {
+                "label": "Download the e-book!",
+                "href": "https://drive.google.com/file/d/1-idPtNHyWmghxIAct53rSFGff424oMnR/view?usp=drive_link"
+              }
+            },
+            {
+              "__resolveType": "site/sections/General/Spacer.tsx"
+            },
+            {
+              "text": "<p dir=\"ltr\">In response, Baw collaborated with deco.cx, an open-source frontend platform, to transition its online storefront to a headless architecture. This move aimed to enhance site performance, improve manageability, and streamline content updates. The solution involved leveraging deco.cx’s comprehensive toolkit which integrates seamlessly with backend systems, enabling more robust and flexible ecommerce capabilities without the need for multiple service providers. </p><p dir=\"ltr\">Baw partnered with Nois Agency, one of deco.cx's System Integrators (SI), for porting its site to the new platform. The transition strategy included an A/B test to directly compare the new system against the old, ensuring the new setup met all operational expectations without compromising Baw's creative vision.</p>",
               "label": "Solution",
               "textColor": "#ffffff",
               "titleLevel": "H1",
               "__resolveType": "site/sections/Case/ArticleParagraph.tsx"
             },
             {
-              "text": "<p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">1. Unprecedented growth in ROAS:</span> A jump from 4 to 19 within six months.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">2. Conversion rate surge:</span> A 565% increase post-migration.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">3. PageSpeed scores:</span> increased to 60 and 96 on mobile and desktop, respectively, and the site was approved by Google's Core Web Vitals (CWV) standards.&nbsp;</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">4. Revenue growth:</span><strong>&nbsp;</strong>A 12.85% increase within three months.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">5. Enhanced checkout experience:</span><strong>&nbsp;</strong>From 3 out of 15 to 14 out of 15 buyers completing purchases involving prescription steps, boosting customer satisfaction and loyalty.<br></p><p><!-- notionvc: c93488cb-3047-4ce1-acef-3f03078a1edc --></p>",
+              "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
+              "textColor": "#ffffff",
+              "text": "<p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">PageSpeed Improvement</span>: The site’s PageSpeed score soared from 8 to over 80 on desktop and over 50 on mobile.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Conversion Rate Increase</span>: During the test period, deco.cx’s platform achieved a conversion rate 15% higher than the previous system.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Operational Efficiency</span>: There was a notable reduction in the time and resources needed for site updates and feature deployments.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Organic Traffic Growth</span>: Organic traffic increased by 10%, and Baw saw a rise in Google keyword rankings for 239 terms, attributable to better site performance and enhanced SEO capabilities.</p><p><!-- notionvc: c93488cb-3047-4ce1-acef-3f03078a1edc --></p>",
               "label": "Results",
-              "textColor": "#ffffff",
-              "titleLevel": "H1",
-              "__resolveType": "site/sections/Case/ArticleParagraph.tsx"
+              "titleLevel": "H1"
             },
             {
-              "text": "<p dir=\"ltr\">Hospitalar Distribuidora’s case is a testament to the transformative power of strategic partnerships and digital innovation. By focusing on ROAS enhancement, user experience optimization, and data-driven insights, Hospitalar not only achieved remarkable financial performance but also set a benchmark for digital excellence in the healthcare sector.<strong id=\"docs-internal-guid-0ed1779b-7fff-b31d-bd86-fe3edaeec261\"></strong><!-- notionvc: 362d4f48-9f3d-4602-985d-a8b1fa554669 --></p>",
+              "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
+              "textColor": "#ffffff",
+              "text": "<p dir=\"ltr\">Through deco.cx, AR&amp;Co. is getting its headless strategy off the ground, with both quality and speed.</p>",
               "label": "Conclusion",
-              "textColor": "#ffffff",
-              "titleLevel": "H1",
-              "__resolveType": "site/sections/Case/ArticleParagraph.tsx"
+              "titleLevel": "H1"
             },
             {
+              "__resolveType": "site/sections/Case/ArticleQuote.tsx",
+              "quote": "\"Managing change in a large organization like AR&Co. / Arezzo & Co. is definitely a challenge. The strategy we've set up with deco.cx of piloting one brand through an A/B test and then rolling out the solution across the group has been a game changer to guarantee that we innovate effectively.\"",
+              "author": "Fernando Frizzatti (Dex)",
+              "role": "Co-Founder and CTO of Baw, Head of Architecture at AR&Co",
+              "barColor": "#08f67c",
+              "textColor": "#ffffff"
+            },
+            {
+              "__resolveType": "site/sections/Case/ArticleBannerCTA.tsx",
+              "text": "Discover Baw's full journey with deco.cx in our e-book!",
+              "button": {
+                "label": "Download the e-book!",
+                "href": "https://drive.google.com/file/d/1-idPtNHyWmghxIAct53rSFGff424oMnR/view?usp=drive_link"
+              }
+            },
+            {
+              "__resolveType": "site/sections/NRF/CallToAction.tsx",
               "cta": [
                 {
                   "href": "https://www.deco.cx/en/contact-us",
@@ -10578,8 +10606,7 @@
                   "variant": "Normal"
                 }
               ],
-              "text": "Ready to delight your customers?",
-              "__resolveType": "site/sections/NRF/CallToAction.tsx"
+              "text": "Ready to delight your customers?"
             },
             {
               "__resolveType": "Deco Footer [EN]"
@@ -20540,7 +20567,8 @@
         "styleUrls": [],
         "themeColor": "#0A2121",
         "description": "Discover how Zee.Dog regained control of its frontend operation to provide a best-of-breed web shopping experience",
-        "__resolveType": "site/sections/Head.tsx"
+        "__resolveType": "site/sections/Head.tsx",
+        "bodyBackgroundColor": "#FFF"
       },
       {
         "__resolveType": "Header - EN"
@@ -20570,13 +20598,15 @@
           }
         ],
         "bgColor": "#2fb0c1",
-        "__resolveType": "site/sections/Case/ArticleNumbers.tsx"
+        "__resolveType": "site/sections/Case/ArticleNumbers.tsx",
+        "textColor": "#fcfcfc"
       },
       {
         "text": "<p>Zee.Dog, a beloved brand among pet owners with a presence in over 28 countries, has always been known for its design-first culture. But as they expanded, they faced challenges in maintaining their unique brand identity and delivering a seamless online shopping experience.</p><p>Despite their commitment to a one-of-a-kind website design, Zee.Dog's original ecommerce platform couldn't keep up with their vision. Customizations outside the platform's capabilities led to operational complexities and hindered site performance. The 2021 Black Friday campaign was a wake-up call. With page load times exceeding 10 seconds, frustrated customers couldn't complete purchases, leading to significant revenue loss.</p>",
         "label": "Challenge",
         "titleLevel": "H1",
-        "__resolveType": "site/sections/Case/ArticleParagraph.tsx"
+        "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
+        "textColor": "#fafafa"
       },
       {
         "text": "Discover Zee.Dog's full journey with deco.cx in our e-book!",
@@ -20593,40 +20623,46 @@
         "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
         "text": "<p>Enter deco.cx. In October 2022, Zee.Dog's frontend tech lead, Eduardo Brito, saw the potential of deco.cx to revolutionize their online presence. He understood that deco.cx would guarantee a better development experience to Zee.Dog's team, while unlocking new ways to create unparalleled digital experiences. He also knew that the opportunity to pair program with deco.cx's senior engineers, develop a product together, and participate in a community focused on pioneer web development tools promised invaluable learning to his team.</p><p><br data-mce-bogus=\"1\"></p>",
         "label": "Solution",
-        "titleLevel": "H1"
+        "titleLevel": "H1",
+        "textColor": "#ffffff"
       },
       {
         "__resolveType": "site/sections/Case/ArticleQuote.tsx",
         "role": "Frontend Tech Lead @ Zee.Dog",
         "quote": "”When we migrated to deco.cx, they didn’t have any off-the-shelf templates for ecommerce yet, and the team was still building its library of custom components optimized for performance. At the time, we knew that our site wouldn’t reach deco.cx’s gold standard of 90+ pagespeed, and we didn’t aim for that either: if we could reduce our site’s loading time by half that would be huge already. Beyond that though, I realized that the operational gains were so substantial that it was worth migrating to deco.cx’s stack even with an incomplete product.”",
         "author": "Eduardo Brito",
-        "barColor": "#2fb0c1"
+        "barColor": "#2fb0c1",
+        "textColor": "#ffffff"
       },
       {
         "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
         "text": "<p>The migration to deco.cx streamlined Zee.Dog's development process while increasing the autonomy of its marketing team to manage and evolve the ecommerce post go-live.&nbsp;Other than that, the website's average loading time dropped from 15 seconds to 2, and, although this wasn't the primary goal, the performance improvement led to a 30% increase in the site's conversion rate. Given that Zee.Dog's e-commerce already boasted an extraordinarily high conversion rate, this 30% increase was particularly significant. Lastly, not only were all of Zee.Dog's original customizations carefully preserved, several were also enhanced.</p>",
         "label": "Results",
-        "titleLevel": "H1"
+        "titleLevel": "H1",
+        "textColor": "#ffffff"
       },
       {
         "__resolveType": "site/sections/Case/ArticleQuote.tsx",
         "role": "Head of Digital Growth @ Zee.Dog",
         "quote": "”A couple of days after the go-live, I was looking at Hotjar — I tried to stop the 2x speed that I always had to use before deco.cx, but, to my surprise, it was ALREADY OFF. The site was super fast. That's when it became obvious to me that our performance had been killing our conversion.”",
         "author": "Patrícia Silvério",
-        "barColor": "#2fb0c1"
+        "barColor": "#2fb0c1",
+        "textColor": "#ffffff"
       },
       {
         "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
         "text": "<p dir=\"ltr\">The successful migration of zeedog.com.br to deco.cx shows the direct correlation between performance and conversion. Encouraged by these results, Zee.Dog's team is now expanding its strategy to launch its express delivery service on deco.cx, and is also explroing the possibility of migrating the company's USA ecommerce.</p>",
         "label": "Future",
-        "titleLevel": "H1"
+        "titleLevel": "H1",
+        "textColor": "#ffffff"
       },
       {
         "__resolveType": "site/sections/Case/ArticleQuote.tsx",
         "role": "Frontend Tech Lead @ Zee.Dog",
         "quote": "”With the results we are showing at this point, I believe that deco.cx will become the frontend solution used by the whole Petz Group.”",
         "author": "Eduardo Brito",
-        "barColor": "#2fb0c1"
+        "barColor": "#2fb0c1",
+        "textColor": "#ffffff"
       },
       {
         "__resolveType": "site/sections/Case/ArticleBannerCTA.tsx",
