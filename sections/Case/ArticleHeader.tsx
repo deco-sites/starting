@@ -1,17 +1,17 @@
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   /** @format color */
   bgColor?: string;
   /** @format color */
   textColor?: string;
-  logo?: LiveImage;
+  logo?: ImageWidget;
   title: string;
   subtitle: string;
   date: string;
   author: string;
-  screenshot?: LiveImage;
+  screenshot?: ImageWidget;
   backToBlog?: {
     label?: string;
     href?: string;
@@ -87,9 +87,9 @@ export default function ArticleHeader({
             </div>
           </div>
           {screenshot && (
-            <div class="justify-end">
+            <div class="justify-end lg:w-1/2">
               <Image
-                class="drop-shadow-lg rounded-md"
+                class="drop-shadow-lg rounded-md w-full"
                 src={screenshot}
                 fetchPriority={"low"}
                 preload={false}

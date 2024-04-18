@@ -11870,7 +11870,9 @@
               "button": {
                 "label": "Download the e-book",
                 "href": "https://drive.google.com/file/d/16M2_tyLlDxB9-Vj_CAJbsWNU6rLPbPGG/view?usp=drive_link"
-              }
+              },
+              "bgColor": "#081a1a",
+              "textColor": "#ffffff"
             },
             {
               "__resolveType": "site/sections/NRF/CallToAction.tsx",
@@ -24269,5 +24271,18 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "Preview /sections/Case/ArticleHeader.tsx": {
+    "__resolveType": "site/sections/Case/ArticleHeader.tsx",
+    "date": "January 12, 2024",
+    "title": "Euro Colchões’ top digital experience increases in-store sales",
+    "author": "By Maria Cecilia Marques",
+    "bgColor": "#000000",
+    "subtitle": "Euro Colchões' three-person team increased its ecommerce PageSpeed score from 7 to 80, transforming Euro's online and physical presence",
+    "textColor": "#fefefe",
+    "screenshot": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/61619711-1ce3-4444-9678-801eac580373"
+  },
+  "Preview site/sections/Case/ArticleHeader.tsx": {
+    "__resolveType": "site/sections/Case/ArticleHeader.tsx"
   }
 }
