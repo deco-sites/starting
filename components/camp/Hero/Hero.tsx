@@ -78,7 +78,7 @@ export default function Hero({ props }: { props: Props }) {
               {flag}
             </span>
             {flagSound && (
-              <span class=" lg:ml-6 text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start flex flex-row items-center justify-center gap-2">
+              <span class="whitespace-nowrap lg:ml-6 text-white border border-base-content rounded-3xl px-4 py-2 w-min text-sm text-center lg:text-start flex flex-row items-center justify-center gap-2">
                 <Icon id="sound" width={16} height={16} />
                 {flagSound}
               </span>

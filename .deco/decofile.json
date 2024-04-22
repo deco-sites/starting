@@ -24489,5 +24489,8 @@
       "type": "temporary"
     },
     "__resolveType": "website/loaders/redirect.ts"
+  },
+  "Preview site/sections/Camp/Hero/Hero.tsx": {
+    "__resolveType": "site/sections/Camp/Hero/Hero.tsx"
   }
 }
