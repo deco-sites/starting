@@ -21123,7 +21123,7 @@
                 "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/0962d927-5796-4b24-bab8-6588dd2585bb",
                 "button": {
                   "id": "bt-click-enroll-1",
-                  "href": "#Prices",
+                  "href": "#prices-section",
                   "type": "ligth",
                   "label": "Enrol Now",
                   "details": "Starts May 13th"
@@ -21310,7 +21310,7 @@
                   {
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/15c854ac-fe2e-4156-bcae-d56935dcf16a",
                     "title": "<p>Join <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Live Coding Sessions</span> With Mentors</p>",
-                    "content": "<p>Right after the watch party, the respective mentor will host a live coding session that showcases the next proposed exercise. This is also your opportunity to clear up any questions.&nbsp;</p>"
+                    "content": "<p>Right after the watch party, the respective mentor will host a live coding session that showcases the next proposed exercise.</p>"
                   },
                   {
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/b5191791-5756-4d3c-b96b-4a022e08bfb7",
@@ -21575,7 +21575,7 @@
                     "question": "Can I have access to the content without getting certified?"
                   },
                   {
-                    "answer": "Currently, the audio is in portuguese with subtitle in english.",
+                    "answer": "Currently, deco.camp is held in both Portuguese and English.",
                     "question": "In which language is decoCamp taught?"
                   }
                 ]
