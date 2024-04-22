@@ -5034,7 +5034,7 @@
       "deco.cx empowers teams of all sizes to quickly create high-performance digital experiences integrated with any backend API."
     ],
     "__resolveType": "site/sections/NRF/TextLines.tsx",
-    "animateOnScroll": true
+    "animateOnScroll": false
   },
   "FreePlan": {
     "__resolveType": "site/sections/FreePlan.tsx",
@@ -5051,17 +5051,13 @@
     "disclaimer": "*Eligibility: start-ups with less than $1M in the last 2 years."
   },
   "GTM Main Thread": {
-    "trackingIds": [
-      " GTM-P6D23BB"
-    ],
+    "trackingIds": [" GTM-P6D23BB"],
     "__resolveType": "deco-sites/std/sections/Analytics.tsx",
     "googleAnalyticsIds": [],
     "dangerouslyRunOnMainThread": true
   },
   "GTM": {
-    "trackingIds": [
-      " GTM-P6D23BB"
-    ],
+    "trackingIds": [" GTM-P6D23BB"],
     "__resolveType": "deco-sites/std/sections/Analytics.tsx",
     "googleAnalyticsIds": [],
     "dangerouslyRunOnMainThread": true
@@ -5773,9 +5769,7 @@
     "features": [
       {
         "status": "Live",
-        "name": [
-          "deco.hub"
-        ]
+        "name": ["deco.hub"]
       },
       {
         "status": "Live",
@@ -5787,16 +5781,11 @@
       },
       {
         "status": "Live",
-        "name": [
-          "Real-time collaboration ",
-          "Component library"
-        ]
+        "name": ["Real-time collaboration ", "Component library"]
       },
       {
         "status": "Live",
-        "name": [
-          "Full release cycle control"
-        ]
+        "name": ["Full release cycle control"]
       },
       {
         "status": "Live",
@@ -5808,27 +5797,19 @@
       },
       {
         "status": "Live",
-        "name": [
-          "SEO & Design System"
-        ]
+        "name": ["SEO & Design System"]
       },
       {
         "status": "Coming Soon",
-        "name": [
-          "Roles and permissions"
-        ]
+        "name": ["Roles and permissions"]
       },
       {
         "status": "Coming Soon",
-        "name": [
-          "Self-hosting"
-        ]
+        "name": ["Self-hosting"]
       },
       {
         "status": "Coming Soon",
-        "name": [
-          "Open-source"
-        ]
+        "name": ["Open-source"]
       }
     ]
   },
@@ -10082,9 +10063,7 @@
           },
           "date": "05/12/2023",
           "path": "new-loaders-api",
-          "tags": [
-            "loaders"
-          ],
+          "tags": ["loaders"],
           "author": "Tiago Gimenes",
           "authorAvatar": "https://avatars.githubusercontent.com/u/1753396?v=4"
         },
@@ -13267,12 +13246,8 @@
           ],
           "style": {
             "backgroundColors": {
-              "hover": [
-                "#2fd180"
-              ],
-              "neutral": [
-                "#02F67C"
-              ]
+              "hover": ["#2fd180"],
+              "neutral": ["#02F67C"]
             }
           }
         },
@@ -13301,9 +13276,7 @@
           }
         },
         "background": {
-          "backgroundColors": [
-            "#0A2121"
-          ]
+          "backgroundColors": ["#0A2121"]
         },
         "__resolveType": "site/sections/Links.tsx"
       }
@@ -20346,6 +20319,13 @@
                   }
                 ],
                 "label": "Empório Quatro Estrelas"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF"
+                  }
+                ]
               }
             ],
             "label": "Grocery"
@@ -21116,10 +21096,10 @@
                 "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/0962d927-5796-4b24-bab8-6588dd2585bb",
                 "button": {
                   "id": "bt-click-enroll-1",
-                  "href": "https://forms.gle/EgPFjB4Zyv1KUqC7A",
+                  "href": "#Prices",
                   "type": "ligth",
                   "label": "Join Waiting List",
-                  "details": "(Next Class May/24)"
+                  "details": "Enroll Now (Start May/15)"
                 },
                 "idVimeo": "918438377",
                 "srcVideo": "https://vimeo.com/917974820?share=copy",
@@ -21303,8 +21283,8 @@
                   },
                   {
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/15c854ac-fe2e-4156-bcae-d56935dcf16a",
-                    "title": "<p>Join <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Live Q&amp;A Sessions</span> With Mentors</p>",
-                    "content": "<p>Every weekday at 7pm we will have Q&amp;A sessions with your mentors. We will review the exercises and help you with any questions.</p>"
+                    "title": "<p>Join <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Live Coding Sessions</span> With Mentors</p>",
+                    "content": "<p>Right after the watch party, the respective mentor will host a live coding session that showcases the next proposed exercise. This is also your opportunity to clear up any questions.&nbsp;</p>"
                   },
                   {
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/b5191791-5756-4d3c-b96b-4a022e08bfb7",
@@ -21601,10 +21581,10 @@
                     },
                     "button": {
                       "id": "bt-click-enroll-2",
-                      "href": "https://forms.gle/EgPFjB4Zyv1KUqC7A",
+                      "href": "https://payment-link.pagar.me/pl_pLJlbnajmv5x2PLUMETD2y7Mw04V1edE",
                       "type": "ligth",
-                      "label": "Join Waiting List",
-                      "details": "(Next Class May/24)"
+                      "label": "Enroll Now",
+                      "details": "Next Class May 15th"
                     },
                     "labelPlan": "Access to Content Plan",
                     "infosPrice": {
@@ -21659,9 +21639,9 @@
                     },
                     "button": {
                       "id": "bt-click-enroll-cert",
-                      "href": "https://forms.gle/EgPFjB4Zyv1KUqC7A",
+                      "href": "https://payment-link.pagar.me/pl_92XAMJ4PjnZ8D9gTBHOZe0L3VO7KozYE",
                       "type": "dark",
-                      "label": "Join Waiting List",
+                      "label": "Enroll Now",
                       "details": "(Next Class May/24)"
                     },
                     "labelPlan": "Certification",
