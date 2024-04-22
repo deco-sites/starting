@@ -5051,13 +5051,17 @@
     "disclaimer": "*Eligibility: start-ups with less than $1M in the last 2 years."
   },
   "GTM Main Thread": {
-    "trackingIds": [" GTM-P6D23BB"],
+    "trackingIds": [
+      " GTM-P6D23BB"
+    ],
     "__resolveType": "deco-sites/std/sections/Analytics.tsx",
     "googleAnalyticsIds": [],
     "dangerouslyRunOnMainThread": true
   },
   "GTM": {
-    "trackingIds": [" GTM-P6D23BB"],
+    "trackingIds": [
+      " GTM-P6D23BB"
+    ],
     "__resolveType": "deco-sites/std/sections/Analytics.tsx",
     "googleAnalyticsIds": [],
     "dangerouslyRunOnMainThread": true
@@ -5769,7 +5773,9 @@
     "features": [
       {
         "status": "Live",
-        "name": ["deco.hub"]
+        "name": [
+          "deco.hub"
+        ]
       },
       {
         "status": "Live",
@@ -5781,11 +5787,16 @@
       },
       {
         "status": "Live",
-        "name": ["Real-time collaboration ", "Component library"]
+        "name": [
+          "Real-time collaboration ",
+          "Component library"
+        ]
       },
       {
         "status": "Live",
-        "name": ["Full release cycle control"]
+        "name": [
+          "Full release cycle control"
+        ]
       },
       {
         "status": "Live",
@@ -5797,19 +5808,27 @@
       },
       {
         "status": "Live",
-        "name": ["SEO & Design System"]
+        "name": [
+          "SEO & Design System"
+        ]
       },
       {
         "status": "Coming Soon",
-        "name": ["Roles and permissions"]
+        "name": [
+          "Roles and permissions"
+        ]
       },
       {
         "status": "Coming Soon",
-        "name": ["Self-hosting"]
+        "name": [
+          "Self-hosting"
+        ]
       },
       {
         "status": "Coming Soon",
-        "name": ["Open-source"]
+        "name": [
+          "Open-source"
+        ]
       }
     ]
   },
@@ -10063,7 +10082,9 @@
           },
           "date": "05/12/2023",
           "path": "new-loaders-api",
-          "tags": ["loaders"],
+          "tags": [
+            "loaders"
+          ],
           "author": "Tiago Gimenes",
           "authorAvatar": "https://avatars.githubusercontent.com/u/1753396?v=4"
         },
@@ -13246,8 +13267,12 @@
           ],
           "style": {
             "backgroundColors": {
-              "hover": ["#2fd180"],
-              "neutral": ["#02F67C"]
+              "hover": [
+                "#2fd180"
+              ],
+              "neutral": [
+                "#02F67C"
+              ]
             }
           }
         },
@@ -13276,7 +13301,9 @@
           }
         },
         "background": {
-          "backgroundColors": ["#0A2121"]
+          "backgroundColors": [
+            "#0A2121"
+          ]
         },
         "__resolveType": "site/sections/Links.tsx"
       }
@@ -21098,14 +21125,13 @@
                   "id": "bt-click-enroll-1",
                   "href": "#Prices",
                   "type": "ligth",
-                  "label": "Join Waiting List",
-                  "details": "Enroll Now (Start May/15)"
+                  "label": "Enrol Now",
+                  "details": "Starts May 13th"
                 },
                 "idVimeo": "918438377",
                 "srcVideo": "https://vimeo.com/917974820?share=copy",
                 "subtitle": "<p>From Beginner to Expert: Master deco.cx for&nbsp;Elite Web and Storefront Development</p>",
-                "flagSound": "Português",
-                "flegLegend": "English",
+                "flagSound": "Portuguese & English",
                 "afterButtonText": "Check the Pre-requisites"
               },
               "__resolveType": "site/sections/Camp/Hero/Hero.tsx"
@@ -21584,7 +21610,7 @@
                       "href": "https://payment-link.pagar.me/pl_pLJlbnajmv5x2PLUMETD2y7Mw04V1edE",
                       "type": "ligth",
                       "label": "Enroll Now",
-                      "details": "Next Class May 15th"
+                      "details": "(Next Class May 13th)"
                     },
                     "labelPlan": "Access to Content Plan",
                     "infosPrice": {
@@ -21642,7 +21668,7 @@
                       "href": "https://payment-link.pagar.me/pl_92XAMJ4PjnZ8D9gTBHOZe0L3VO7KozYE",
                       "type": "dark",
                       "label": "Enroll Now",
-                      "details": "(Next Class May/24)"
+                      "details": "(Next Class May 13th)"
                     },
                     "labelPlan": "Certification",
                     "infosPrice": {
