@@ -21497,62 +21497,62 @@
                     {
                       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
                       "color": "#76CAD0",
-                      "label": "teste"
+                      "label": "azul 1"
                     },
                     {
                       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
                       "color": "#76CAD0",
-                      "label": "teste"
+                      "label": "azul 2"
                     },
                     {
                       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
                       "color": "#76CAD0",
-                      "label": "teste"
+                      "label": "azul 3"
                     },
                     {
                       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#76CAD0",
-                      "label": "teste"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#76CAD0",
-                      "label": "teste"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#76CAD0",
-                      "label": "teste"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#76CAD0",
-                      "label": "teste"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#76CAD0",
-                      "label": "teste"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
-                      "color": "#DA8FFF",
-                      "label": "teste"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
-                      "color": "#02F67C",
-                      "label": "teste"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
-                      "color": "#02F67C",
-                      "label": "teste"
+                      "color": "#FDE047",
+                      "label": "amarelo 1"
                     },
                     {
                       "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
                       "color": "#FDE047",
-                      "label": "teste"
+                      "label": "amarelo 2"
+                    },
+                    {
+                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                      "color": "#FDE047",
+                      "label": "amarelo 3"
+                    },
+                    {
+                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+                      "color": "#DA8FFF",
+                      "label": "lilás 1"
+                    },
+                    {
+                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                      "color": "#DA8FFF",
+                      "label": "lilás 2"
+                    },
+                    {
+                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                      "color": "#DA8FFF",
+                      "label": "lilás 3"
+                    },
+                    {
+                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+                      "color": "#02F67C",
+                      "label": "verde 1"
+                    },
+                    {
+                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+                      "color": "#02F67C",
+                      "label": "verde 2"
+                    },
+                    {
+                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                      "color": "#02F67C",
+                      "label": "verde 3"
                     }
                   ]
                 }
