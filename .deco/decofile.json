@@ -5072,7 +5072,12 @@
         "title": "Community members",
         "IdGuild": "985687648595243068",
         "buttonHref": "teste",
-        "buttonLabel": "teste"
+        "buttonLabel": "teste",
+        "tokenDiscord": {
+          "__resolveType": "website/loaders/secret.ts",
+          "name": "DISCORD_TOKEN",
+          "encrypted": "bebd1beb09314599e43c0497c01109a111e03910c6066dc0106e8601bad454b6dbd9b1de184ab113e38852314413dd27d2ebfd6b4c7e72bc4dc6fba8756f89f97b9581d13894e55ce0c815a08466f397"
+        }
       },
       "posts": {
         "title": "teste",
@@ -5840,6 +5845,9 @@
         "name": []
       }
     ]
+  },
+  "Preview site/sections/Camp/Hero/Hero.tsx": {
+    "__resolveType": "site/sections/Camp/Hero/Hero.tsx"
   },
   "Preview site/sections/Case/ArticleHeader.tsx": {
     "__resolveType": "site/sections/Case/ArticleHeader.tsx"
@@ -24422,6 +24430,14 @@
     },
     "__resolveType": "website/loaders/redirect.ts"
   },
+  "redirects-discordadm-224917": {
+    "redirect": {
+      "from": "/discord/admin-feedback",
+      "to": "https://discord.gg/wJ3UUygKjx",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
+  },
   "site": {
     "seo": {
       "type": "website",
@@ -24481,16 +24497,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "redirects-discordadm-224917": {
-    "redirect": {
-      "from": "/discord/admin-feedback",
-      "to": "https://discord.gg/wJ3UUygKjx",
-      "type": "temporary"
-    },
-    "__resolveType": "website/loaders/redirect.ts"
-  },
-  "Preview site/sections/Camp/Hero/Hero.tsx": {
-    "__resolveType": "site/sections/Camp/Hero/Hero.tsx"
   }
 }
