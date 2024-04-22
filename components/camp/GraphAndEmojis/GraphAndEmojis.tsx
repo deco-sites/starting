@@ -4,6 +4,11 @@ import type { SectionProps } from "deco/mod.ts";
 import EmojisCommunity from "./EmojisCommunity.tsx";
 import type { Props as EmojisCommunityProps } from "./EmojisCommunity.tsx";
 
+type Secret = {
+  value: string;
+  isSecret: true;
+};
+
 export interface Props {
   title: string;
   /**
@@ -12,7 +17,7 @@ export interface Props {
   subTitle: string;
   graph: {
     title: string;
-    tokenDiscord: string;
+    tokenDiscord: Secret;
     IdGuild: string;
   };
   emojiCommunity: EmojisCommunityProps;
@@ -36,7 +41,7 @@ const BASE_PROPS = {
 
 const discordToken = Deno.env.get("DISCORD_TOKEN");
 export async function loader({ props }: { props: Props }, _req: Request) {
-  const token = props.graph.tokenDiscord ?? discordToken;
+  const token = props.graph.tokenDiscord.value ?? discordToken;
   const server = props.graph.IdGuild;
 
   interface MemberGuid {
