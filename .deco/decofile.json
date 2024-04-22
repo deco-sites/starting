@@ -21473,7 +21473,11 @@
                   "IdGuild": "985687648595243068",
                   "buttonHref": "teste",
                   "buttonLabel": "teste",
-                  "tokenDiscord": ""
+                  "tokenDiscord": {
+                    "__resolveType": "website/loaders/secret.ts",
+                    "encrypted": "eba2bb55d214b60629beb436d9d73a5e48ec311cc48f82c94dc778cc5cc2924d29310a54c2ea3c33b31e0003ebe700fef290008ce111155bec592e615508f5c9fca0052bc85054d33b669a110a2264b7",
+                    "name": "DISCORD_TOKEN"
+                  }
                 },
                 "posts": {
                   "title": "teste",
