@@ -21125,7 +21125,7 @@
                   "id": "bt-click-enroll-1",
                   "href": "#prices-section",
                   "type": "ligth",
-                  "label": "Enrol Now",
+                  "label": "Enroll Now",
                   "details": "Starts May 13th"
                 },
                 "idVimeo": "918438377",
@@ -24481,5 +24481,13 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "redirects-discordadm-224917": {
+    "redirect": {
+      "from": "/discord/admin-feedback",
+      "to": "https://discord.gg/wJ3UUygKjx",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
   }
 }
