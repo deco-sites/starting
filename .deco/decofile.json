@@ -24437,7 +24437,7 @@
   "redirects-discordadm-224917": {
     "redirect": {
       "from": "/discord/admin-feedback",
-      "to": "https://discord.gg/wJ3UUygKjx",
+      "to": "https://discord.com/channels/985687648595243068/1161810042811592755",
       "type": "temporary"
     },
     "__resolveType": "website/loaders/redirect.ts"
