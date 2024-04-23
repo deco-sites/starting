@@ -21638,7 +21638,7 @@
                             "currency": "USD",
                             "afterPrice": "<p>+ a year of deco.cx subscription</p>",
                             "totalPrice": 99,
-                            "beforePrice": "<p><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"><s>R$1080,00</s></span> R$540,00</p>"
+                            "beforePrice": "<p><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><font color=\"#e03e2d\"><strike>﻿</strike></font></span></p>"
                           },
                           "afterButton": "Check the pre-requisites",
                           "requirements": {
