@@ -21595,127 +21595,270 @@
               "__resolveType": "site/sections/Camp/FAQ/Faq.tsx"
             },
             {
-              "props": {
-                "plans": [
-                  {
-                    "flag": "<p><strong>Access to Content:&nbsp;</strong>50% OFF</p>",
-                    "type": "ligth",
-                    "popUp": {
-                      "items": [
+              "__resolveType": "website/flags/multivariate/section.ts",
+              "variants": [
+                {
+                  "value": {
+                    "props": {
+                      "plans": [
                         {
-                          "title": "Language",
-                          "content": "<p>React or any other component framework (Vue, Angular)<!-- notionvc: 0b81541a-c67e-4be6-bab5-7aace2562dcc --></p>"
+                          "flag": "<p><strong>Access to Content:&nbsp;</strong>50% OFF</p>",
+                          "type": "ligth",
+                          "popUp": {
+                            "items": [
+                              {
+                                "title": "Language",
+                                "content": "<p>React or any other component framework (Vue, Angular)<!-- notionvc: 0b81541a-c67e-4be6-bab5-7aace2562dcc --></p>"
+                              },
+                              {
+                                "title": "Desirable",
+                                "content": "<p>React, TypeScript, Tailwind<!-- notionvc: ceba8f91-7fa8-4751-bf33-9f339c06d3df --></p>"
+                              },
+                              {
+                                "title": "Experience",
+                                "content": "<p>Real-life professional experience implementing and managing web apps in production (sites, ecommerces, etc)<!-- notionvc: 6121c94d-9e37-4209-95ee-9f265bbc2f97 --></p>"
+                              }
+                            ],
+                            "buttonLabel": "Check the Pre-Requisites"
+                          },
+                          "button": {
+                            "id": "bt-click-enroll-2",
+                            "href": "https://billing.deco.cx/b/14k7sTcMk1IrfPWfZf",
+                            "type": "ligth",
+                            "label": "Enroll Now",
+                            "details": "(Next Class May 13th)"
+                          },
+                          "labelPlan": "Access to Content Plan",
+                          "infosPrice": {
+                            "0": "<",
+                            "1": "p",
+                            "2": ">",
+                            "3": "t",
+                            "4": "e",
+                            "5": "s",
+                            "6": "t",
+                            "7": "e",
+                            "8": "<",
+                            "9": "/",
+                            "10": "p",
+                            "11": ">",
+                            "currency": "USD",
+                            "afterPrice": "<p>+ a year of deco.cx subscription</p>",
+                            "totalPrice": 99,
+                            "beforePrice": "<p><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"><s>R$1080,00</s></span> R$540,00</p>"
+                          },
+                          "afterButton": "Check the pre-requisites",
+                          "requirements": {
+                            "title": "What you will get:",
+                            "itemRequisite": [
+                              "+15h of video to watch live or on-demand",
+                              "1h of live Q&A after every class",
+                              "Daily challenge",
+                              "Direct access with deco.cx engineering team"
+                            ]
+                          }
                         },
                         {
-                          "title": "Desirable",
-                          "content": "<p>React, TypeScript, Tailwind<!-- notionvc: ceba8f91-7fa8-4751-bf33-9f339c06d3df --></p>"
-                        },
-                        {
-                          "title": "Experience",
-                          "content": "<p>Real-life professional experience implementing and managing web apps in production (sites, ecommerces, etc)<!-- notionvc: 6121c94d-9e37-4209-95ee-9f265bbc2f97 --></p>"
+                          "flag": "<p>Become<strong> an Official Partner</strong></p>",
+                          "type": "dark",
+                          "popUp": {
+                            "items": [
+                              {
+                                "title": "Language",
+                                "content": "<p>React or any other component framework (Vue, Angular)<!-- notionvc: 0535051b-b0ba-4e50-bed5-0cff81d93cbb --></p>"
+                              },
+                              {
+                                "title": "Desirable",
+                                "content": "<p>React, TypeScript, Tailwind<!-- notionvc: 52deef74-a5f7-4aa9-aa17-b8ae969334a9 --></p>"
+                              },
+                              {
+                                "title": "Experience",
+                                "content": "<p>Real-life professional experience implementing and managing web apps in production (sites, ecommerces, etc)<!-- notionvc: 6121c94d-9e37-4209-95ee-9f265bbc2f97 --></p>"
+                              }
+                            ],
+                            "buttonLabel": "Check the Pre-Requisites"
+                          },
+                          "button": {
+                            "id": "bt-click-enroll-cert",
+                            "href": "https://billing.deco.cx/b/00geVlbIg4UDdHObJ0",
+                            "type": "dark",
+                            "label": "Enroll Now",
+                            "details": "(Next Class May 13th)"
+                          },
+                          "labelPlan": "Certification",
+                          "infosPrice": {
+                            "0": "<",
+                            "1": "p",
+                            "2": ">",
+                            "3": "t",
+                            "4": "e",
+                            "5": "s",
+                            "6": "t",
+                            "7": "e",
+                            "8": "<",
+                            "9": "/",
+                            "10": "p",
+                            "11": ">",
+                            "currency": "USD",
+                            "afterPrice": "<p>become a certified deco developer</p>",
+                            "totalPrice": 300,
+                            "beforePrice": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"color: #ffffff;\" data-mce-style=\"color: #ffffff;\">Content + Certification:</span></span></p>"
+                          },
+                          "afterButton": "Check the pre-requisites",
+                          "requirements": {
+                            "title": "Official Partner Benefits:",
+                            "itemRequisite": [
+                              "Agency Revenue Share",
+                              "Leads Referral Priority",
+                              "Premium Support",
+                              "Sales Support & Training"
+                            ]
+                          }
                         }
                       ],
-                      "buttonLabel": "Check the Pre-Requisites"
+                      "content": "<p>For groups, send us an <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\"><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\"><strong><a data-mce-href=\"mailto:leandro@deco.cx\" href=\"mailto:leandro@deco.cx\" target=\"_blank\" rel=\"noopener\" style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">email</a></strong></span> </span>or reach us on <strong><a data-mce-href=\"https://wa.me/5521998595821\" href=\"https://wa.me/5521998595821\" target=\"_blank\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">WhatsApp﻿</span></a></strong></p>"
                     },
-                    "button": {
-                      "id": "bt-click-enroll-2",
-                      "href": "https://payment-link.pagar.me/pl_pLJlbnajmv5x2PLUMETD2y7Mw04V1edE",
-                      "type": "ligth",
-                      "label": "Enroll Now",
-                      "details": "(Next Class May 13th)"
-                    },
-                    "labelPlan": "Access to Content Plan",
-                    "infosPrice": {
-                      "0": "<",
-                      "1": "p",
-                      "2": ">",
-                      "3": "t",
-                      "4": "e",
-                      "5": "s",
-                      "6": "t",
-                      "7": "e",
-                      "8": "<",
-                      "9": "/",
-                      "10": "p",
-                      "11": ">",
-                      "currency": "BRL",
-                      "afterPrice": "<p>+ a year of deco.cx subscription</p>",
-                      "totalPrice": 540,
-                      "beforePrice": "<p><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"><s>R$1080,00</s></span> R$540,00</p>",
-                      "insttalments": 12
-                    },
-                    "afterButton": "Check the pre-requisites",
-                    "requirements": {
-                      "title": "What you will get:",
-                      "itemRequisite": [
-                        "+15h of video to watch live or on-demand",
-                        "1h of live Q&A after every class",
-                        "Daily challenge",
-                        "Direct access with deco.cx engineering team"
-                      ]
-                    }
+                    "__resolveType": "site/sections/Camp/Prices/Prices.tsx"
                   },
-                  {
-                    "flag": "<p>Become<strong> an Official Partner</strong></p>",
-                    "type": "dark",
-                    "popUp": {
-                      "items": [
+                  "rule": {
+                    "__resolveType": "$live/matchers/MatchLocation.ts",
+                    "includeLocations": [],
+                    "excludeLocations": [
+                      {
+                        "country": "Brazil"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "value": {
+                    "props": {
+                      "plans": [
                         {
-                          "title": "Language",
-                          "content": "<p>React or any other component framework (Vue, Angular)<!-- notionvc: 0535051b-b0ba-4e50-bed5-0cff81d93cbb --></p>"
+                          "flag": "<p><strong>Access to Content:&nbsp;</strong>50% OFF</p>",
+                          "type": "ligth",
+                          "popUp": {
+                            "items": [
+                              {
+                                "title": "Language",
+                                "content": "<p>React or any other component framework (Vue, Angular)<!-- notionvc: 0b81541a-c67e-4be6-bab5-7aace2562dcc --></p>"
+                              },
+                              {
+                                "title": "Desirable",
+                                "content": "<p>React, TypeScript, Tailwind<!-- notionvc: ceba8f91-7fa8-4751-bf33-9f339c06d3df --></p>"
+                              },
+                              {
+                                "title": "Experience",
+                                "content": "<p>Real-life professional experience implementing and managing web apps in production (sites, ecommerces, etc)<!-- notionvc: 6121c94d-9e37-4209-95ee-9f265bbc2f97 --></p>"
+                              }
+                            ],
+                            "buttonLabel": "Check the Pre-Requisites"
+                          },
+                          "button": {
+                            "id": "bt-click-enroll-2",
+                            "href": "https://payment-link.pagar.me/pl_pLJlbnajmv5x2PLUMETD2y7Mw04V1edE",
+                            "type": "ligth",
+                            "label": "Enroll Now",
+                            "details": "(Next Class May 13th)"
+                          },
+                          "labelPlan": "Access to Content Plan",
+                          "infosPrice": {
+                            "0": "<",
+                            "1": "p",
+                            "2": ">",
+                            "3": "t",
+                            "4": "e",
+                            "5": "s",
+                            "6": "t",
+                            "7": "e",
+                            "8": "<",
+                            "9": "/",
+                            "10": "p",
+                            "11": ">",
+                            "currency": "BRL",
+                            "afterPrice": "<p>+ a year of deco.cx subscription</p>",
+                            "totalPrice": 540,
+                            "beforePrice": "<p><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"><s>R$1080,00</s></span> R$540,00</p>",
+                            "insttalments": 12
+                          },
+                          "afterButton": "Check the pre-requisites",
+                          "requirements": {
+                            "title": "What you will get:",
+                            "itemRequisite": [
+                              "+15h of video to watch live or on-demand",
+                              "1h of live Q&A after every class",
+                              "Daily challenge",
+                              "Direct access with deco.cx engineering team"
+                            ]
+                          }
                         },
                         {
-                          "title": "Desirable",
-                          "content": "<p>React, TypeScript, Tailwind<!-- notionvc: 52deef74-a5f7-4aa9-aa17-b8ae969334a9 --></p>"
-                        },
-                        {
-                          "title": "Experience",
-                          "content": "<p>Real-life professional experience implementing and managing web apps in production (sites, ecommerces, etc)<!-- notionvc: 6121c94d-9e37-4209-95ee-9f265bbc2f97 --></p>"
+                          "flag": "<p>Become<strong> an Official Partner</strong></p>",
+                          "type": "dark",
+                          "popUp": {
+                            "items": [
+                              {
+                                "title": "Language",
+                                "content": "<p>React or any other component framework (Vue, Angular)<!-- notionvc: 0535051b-b0ba-4e50-bed5-0cff81d93cbb --></p>"
+                              },
+                              {
+                                "title": "Desirable",
+                                "content": "<p>React, TypeScript, Tailwind<!-- notionvc: 52deef74-a5f7-4aa9-aa17-b8ae969334a9 --></p>"
+                              },
+                              {
+                                "title": "Experience",
+                                "content": "<p>Real-life professional experience implementing and managing web apps in production (sites, ecommerces, etc)<!-- notionvc: 6121c94d-9e37-4209-95ee-9f265bbc2f97 --></p>"
+                              }
+                            ],
+                            "buttonLabel": "Check the Pre-Requisites"
+                          },
+                          "button": {
+                            "id": "bt-click-enroll-cert",
+                            "href": "https://payment-link.pagar.me/pl_92XAMJ4PjnZ8D9gTBHOZe0L3VO7KozYE",
+                            "type": "dark",
+                            "label": "Enroll Now",
+                            "details": "(Next Class May 13th)"
+                          },
+                          "labelPlan": "Certification",
+                          "infosPrice": {
+                            "0": "<",
+                            "1": "p",
+                            "2": ">",
+                            "3": "t",
+                            "4": "e",
+                            "5": "s",
+                            "6": "t",
+                            "7": "e",
+                            "8": "<",
+                            "9": "/",
+                            "10": "p",
+                            "11": ">",
+                            "currency": "BRL",
+                            "afterPrice": "<p>become a certified deco developer</p>",
+                            "totalPrice": 1500,
+                            "beforePrice": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"color: #ffffff;\" data-mce-style=\"color: #ffffff;\">Content + Certification:</span></span></p>"
+                          },
+                          "afterButton": "Check the pre-requisites",
+                          "requirements": {
+                            "title": "Official Partner Benefits:",
+                            "itemRequisite": [
+                              "Agency Revenue Share",
+                              "Leads Referral Priority",
+                              "Premium Support",
+                              "Sales Support & Training"
+                            ]
+                          }
                         }
                       ],
-                      "buttonLabel": "Check the Pre-Requisites"
+                      "content": "<p>For groups, send us an <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\"><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\"><strong><a data-mce-href=\"mailto:leandro@deco.cx\" href=\"mailto:leandro@deco.cx\" target=\"_blank\" rel=\"noopener\" style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">email</a></strong></span> </span>or reach us on <strong><a data-mce-href=\"https://wa.me/5521998595821\" href=\"https://wa.me/5521998595821\" target=\"_blank\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">WhatsApp﻿</span></a></strong></p>"
                     },
-                    "button": {
-                      "id": "bt-click-enroll-cert",
-                      "href": "https://payment-link.pagar.me/pl_92XAMJ4PjnZ8D9gTBHOZe0L3VO7KozYE",
-                      "type": "dark",
-                      "label": "Enroll Now",
-                      "details": "(Next Class May 13th)"
-                    },
-                    "labelPlan": "Certification",
-                    "infosPrice": {
-                      "0": "<",
-                      "1": "p",
-                      "2": ">",
-                      "3": "t",
-                      "4": "e",
-                      "5": "s",
-                      "6": "t",
-                      "7": "e",
-                      "8": "<",
-                      "9": "/",
-                      "10": "p",
-                      "11": ">",
-                      "currency": "BRL",
-                      "afterPrice": "<p>become a certified deco developer</p>",
-                      "totalPrice": 1500,
-                      "beforePrice": "<p><span style=\"color: rgb(255, 255, 255);\" data-mce-style=\"color: rgb(255, 255, 255);\"><span style=\"color: #ffffff;\" data-mce-style=\"color: #ffffff;\">Content + Certification:</span></span></p>"
-                    },
-                    "afterButton": "Check the pre-requisites",
-                    "requirements": {
-                      "title": "Official Partner Benefits:",
-                      "itemRequisite": [
-                        "Agency Revenue Share",
-                        "Leads Referral Priority",
-                        "Premium Support",
-                        "Sales Support & Training"
-                      ]
-                    }
+                    "__resolveType": "site/sections/Camp/Prices/Prices.tsx"
+                  },
+                  "rule": {
+                    "__resolveType": "website/matchers/always.ts"
                   }
-                ],
-                "content": "<p>For groups, send us an <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\"><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\"><strong><a data-mce-href=\"mailto:leandro@deco.cx\" href=\"mailto:leandro@deco.cx\" target=\"_blank\" rel=\"noopener\" style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">email</a></strong></span> </span>or reach us on <strong><a data-mce-href=\"https://wa.me/5521998595821\" href=\"https://wa.me/5521998595821\" target=\"_blank\" data-mce-selected=\"inline-boundary\"><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">WhatsApp﻿</span></a></strong></p>"
-              },
-              "__resolveType": "site/sections/Camp/Prices/Prices.tsx"
+                }
+              ]
             },
             {
               "__resolveType": "Deco Footer [EN]"
