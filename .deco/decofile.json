@@ -21154,7 +21154,7 @@
                   },
                   {
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0cb87a96-40ef-49e0-ab18-c7f2317d76cc",
-                    "title": "Portuguese",
+                    "title": "Portuguese and English",
                     "subTitle": "Language"
                   },
                   {
@@ -21725,7 +21725,7 @@
                     "includeLocations": [],
                     "excludeLocations": [
                       {
-                        "country": "Brazil"
+                        "country": "BR"
                       }
                     ]
                   }
