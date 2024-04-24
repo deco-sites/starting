@@ -20072,6 +20072,26 @@
                   }
                 ],
                 "label": "Maximus Tecidos"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e2f4237e-c20b-4570-8019-a6bdd81e4466"
+                  }
+                ],
+                "link": "https://www.pgadesivos.com.br/",
+                "label": "PG Adesivos"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cecb7409-1462-4a01-a664-2f39fcc55a27"
+                  }
+                ],
+                "label": "Teciplast",
+                "link": "https://loja.teciplast.com.br/"
               }
             ],
             "label": "Arts & Crafts"
@@ -20087,9 +20107,34 @@
                   }
                 ],
                 "label": "Bite Auto Peças"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2cff374e-7bd9-4b3f-b8ba-3421ba1da888"
+                  }
+                ],
+                "label": "Urca Renault",
+                "link": "https://urcarenault.leadfy.me/"
               }
             ],
             "label": "Auto"
+          },
+          {
+            "cards": [
+              {
+                "link": "https://loja.conecfit.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3b4ec4a-30e2-43cf-a202-5d6029b90f98",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Conecfit"
+              }
+            ],
+            "label": "Construction"
           },
           {
             "cards": [
@@ -20104,14 +20149,14 @@
                 "label": "Armadillo"
               },
               {
-                "link": "https://www.austral.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8467cd7d-e453-4808-b998-c9950be2abc9",
-                    "color": "#FFFFFF"
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8467cd7d-e453-4808-b998-c9950be2abc9"
                   }
                 ],
-                "label": "Austral"
+                "label": "Austral",
+                "link": "https://www.austral.com.br/"
               },
               {
                 "link": "https://www.aviator.com.br/",
@@ -20132,6 +20177,26 @@
                   }
                 ],
                 "label": "Baw Clothing"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b2832562-2deb-4909-857b-6f027d7159b9"
+                  }
+                ],
+                "link": "https://www.comfortflex.com.br/",
+                "label": "Comfortflex"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/12dbb9e5-665e-412f-a996-4289b0e82236"
+                  }
+                ],
+                "label": "Daniela Tombini",
+                "link": "https://www.danielatombini.com.br/"
               },
               {
                 "link": "https://www.douxstore.com/",
@@ -20257,6 +20322,16 @@
                   }
                 ],
                 "label": "Empório Quatro Estrelas"
+              },
+              {
+                "link": "https://www.shopvinho.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16abe579-94f4-4900-8015-8e93a5afd73f",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Shopvinho"
               }
             ],
             "label": "Grocery"
@@ -20264,24 +20339,14 @@
           {
             "cards": [
               {
-                "link": "https://loja.omronbrasil.com/",
+                "link": "https://www.dentalproclin.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/74b9cc9d-1726-40ea-8a08-9f8877605398",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/915ba5fb-e2fd-43df-a531-505acd7e72ed",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Omron"
-              },
-              {
-                "link": "https://www.hospitalardistribuidora.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f615f33d-ee75-4940-b932-c761604ecce6",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Hospitalar Distribuidora"
+                "label": "Dental Proclin"
               },
               {
                 "link": "https://www.embelleze.com/",
@@ -20294,14 +20359,24 @@
                 "label": "Embelleze"
               },
               {
-                "link": "https://www.dentalproclin.com.br/",
+                "link": "https://www.hospitalardistribuidora.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/915ba5fb-e2fd-43df-a531-505acd7e72ed",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f615f33d-ee75-4940-b932-c761604ecce6",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Dental Proclin"
+                "label": "Hospitalar Distribuidora"
+              },
+              {
+                "link": "https://loja.omronbrasil.com/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/74b9cc9d-1726-40ea-8a08-9f8877605398",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Omron"
               },
               {
                 "link": "https://www.oticaisabeladias.com.br/",
@@ -20312,6 +20387,16 @@
                   }
                 ],
                 "label": "Óticas Isabela Dias"
+              },
+              {
+                "link": "https://www.yenzah.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7064bb87-11a8-4fb6-a911-0ba874a34823",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Yenzah"
               }
             ],
             "label": "Health & Beauty"
@@ -20329,14 +20414,24 @@
                 "label": "Abracadabra"
               },
               {
-                "link": "https://www.atau.com.br/",
+                "link": "https://www.abracasa.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5254d606-29f3-4b7c-9d89-0ba9cb9f5500",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/15e8e359-6d46-4c08-8f66-97c263cca052",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Atau"
+                "label": "Abracasa"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5254d606-29f3-4b7c-9d89-0ba9cb9f5500"
+                  }
+                ],
+                "label": "Atau",
+                "link": "https://www.atau.com.br/"
               },
               {
                 "link": "https://www.belairmoveis.com.br/",
@@ -20367,6 +20462,16 @@
                   }
                 ],
                 "label": "Costa Atacado"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a164d79d-89a9-4053-9372-b30513d69667"
+                  }
+                ],
+                "label": "Cristais Tavares",
+                "link": "https://www.cristaistavares.com.br/"
               },
               {
                 "link": "https://www.eladecora.com.br/",
@@ -20424,23 +20529,23 @@
           {
             "cards": [
               {
-                "link": "https://www.petfarma.com/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9a72fdb0-8534-4593-8ce4-c0b7c59ed80f",
-                    "color": "#FFFFFF"
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9a72fdb0-8534-4593-8ce4-c0b7c59ed80f"
                   }
                 ],
-                "label": "Petfarma"
+                "label": "Petfarma",
+                "link": "https://www.petfarma.com/"
               },
               {
-                "link": "https://www.zeedog.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09118336-54d8-4954-8ab0-e68313e4f0b0",
-                    "color": "#FFFFFF"
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09118336-54d8-4954-8ab0-e68313e4f0b0"
                   }
                 ],
+                "link": "https://www.zeedog.com.br/",
                 "label": "Zee.Dog"
               },
               {
@@ -20467,8 +20572,8 @@
                     "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7c634642-5759-44d0-9f57-99b8e65e9d8a"
                   }
                 ],
-                "label": "Miess",
-                "link": "https://www.miess.com.br/"
+                "link": "https://www.miess.com.br/",
+                "label": "Miess"
               },
               {
                 "image": [
@@ -20492,11 +20597,31 @@
                     "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dcca1748-a085-4195-837d-009e05c77a58"
                   }
                 ],
-                "link": "https://www.adaptio.com.br/",
-                "label": "Adaptio"
+                "label": "Adaptio",
+                "link": "https://www.adaptio.com.br/"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d5098878-8941-48c5-81b0-06faabb9c25c"
+                  }
+                ],
+                "link": "https://www.aforrageiradeturing.com/",
+                "label": "A Forrageira de Turing"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/edcdf462-6c97-4659-b738-24f7834f9146"
+                  }
+                ],
+                "link": "https://www.madeinbrazil.tech/",
+                "label": "MadeinBrazil"
               }
             ],
-            "label": "Tech Agencies"
+            "label": "Tech"
           }
         ],
         "categoriasNoIndice": [
