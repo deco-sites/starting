@@ -522,8 +522,8 @@
               "__resolveType": "site/sections/Head.tsx"
             },
             {
-              "text": "<p>Be a part of the future of frontend development. <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Sign up for deco.cx 2.0 </span>and take your digital experiences to the next level.</p>",
-              "title": "Book a demo for early access",
+              "text": "<p class=\"p1\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Want to see how deco.cx can boost your company?</span></p><p class=\"p1\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Book a demo with us! </span>&nbsp;We'll be in touch shortly.</span></p><ul><li class=\"p1\">See how your team can create and manage high-performing web apps 10x faster.<br></li><li class=\"p1\">Learn about enterprise features, like roles and permissions, security &amp; scalability.&nbsp;<br></li><li class=\"p1\">See how developers and marketers can work in collaboration.</li></ul>",
+              "title": "Talk to our team",
               "langThanks": "en",
               "FieldContacts": [
                 {
