@@ -20054,61 +20054,64 @@
           {
             "cards": [
               {
-                "link": "https://www.zeedog.com.br/",
+                "link": "https://www.dellaaviamentos.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09118336-54d8-4954-8ab0-e68313e4f0b0",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/656e3099-78c9-4db6-9cf7-2ae15a938755",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Zee.Dog"
+                "label": "Della Aviamentos"
               },
               {
-                "link": "https://www.zeenow.com.br/",
+                "link": "https://www.maximustecidos.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d0ba7864-bbd5-4f10-8bc3-33d40ee59403",
-                    "color": "#FFFFFF",
-                    "label": "zeenow"
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/61db3331-7be1-44cc-b1df-9c82c367759d",
+                    "color": "#FFFFFF"
                   }
                 ],
-                "label": "Zeenow"
+                "label": "Maximus Tecidos"
               }
             ],
-            "label": "PET",
-            "category": "PET"
+            "label": "Arts & Crafts"
           },
           {
             "cards": [
               {
-                "link": "https://www.osklen.com.br",
+                "link": "https://www.bite.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/21035848-a0df-407c-81b6-64e631a25aa5",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/23b4ba10-b57f-417e-a4e4-067d0e847279",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Osklen"
+                "label": "Bite Auto Peças"
+              }
+            ],
+            "label": "Auto"
+          },
+          {
+            "cards": [
+              {
+                "link": "https://www.armadillo.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7b95d45e-0b5c-498c-972c-81a607fe859b",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Armadillo"
               },
               {
-                "link": "https://www.bawclothing.com.br",
+                "link": "https://www.austral.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/583999d7-a61a-4e17-b35d-abf58eecd002",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8467cd7d-e453-4808-b998-c9950be2abc9",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Baw Clothing"
-              },
-              {
-                "link": "https://www.lojastorra.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/270f8e00-0405-421e-89ea-3f0b4b58ee03",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Lojas Torra"
+                "label": "Austral"
               },
               {
                 "link": "https://www.aviator.com.br/",
@@ -20121,24 +20124,14 @@
                 "label": "Aviator"
               },
               {
-                "link": "https://www.hectoralbertazzi.com.br/",
+                "link": "https://www.bawclothing.com.br",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e0fb810f-2562-40cb-a626-54a1650ba7f8",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/583999d7-a61a-4e17-b35d-abf58eecd002",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Hector Albertazzi"
-              },
-              {
-                "link": "https://www.meiasola.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/057c3b70-f3d3-429f-94f5-8dbcb4480df1",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Meia Sola"
+                "label": "Baw Clothing"
               },
               {
                 "link": "https://www.douxstore.com/",
@@ -20151,26 +20144,6 @@
                 "label": "Doux"
               },
               {
-                "link": "https://www.ramarim.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3187abb0-041e-4a4f-b137-fea09cb4747c",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Ramarim"
-              },
-              {
-                "link": "https://www.unclek.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/837e2669-21d7-40af-9aa1-02751acf9e30",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Uncle K"
-              },
-              {
                 "link": "https://www.eurorelogios.com.br/",
                 "image": [
                   {
@@ -20181,14 +20154,94 @@
                 "label": "Euro Relógios"
               },
               {
-                "link": "https://www.velocita.com.br/",
+                "link": "https://www.hectoralbertazzi.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a050ba4b-3066-40dd-99a7-6e7acf1a7f32",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e0fb810f-2562-40cb-a626-54a1650ba7f8",
                     "color": "#FFFFFF"
                   }
                 ],
+                "label": "Hector Albertazzi"
+              },
+              {
+                "link": "https://www.ligaretro.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7fef042b-2dd7-444a-ace9-4b1fd49fab7f",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Liga Retrô"
+              },
+              {
+                "link": "https://www.lojastorra.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/270f8e00-0405-421e-89ea-3f0b4b58ee03",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Lojas Torra"
+              },
+              {
+                "link": "https://www.meiasola.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/057c3b70-f3d3-429f-94f5-8dbcb4480df1",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Meia Sola"
+              },
+              {
+                "link": "https://www.osklen.com.br",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/21035848-a0df-407c-81b6-64e631a25aa5",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Osklen"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3187abb0-041e-4a4f-b137-fea09cb4747c"
+                  }
+                ],
+                "label": "Ramarim",
+                "link": "https://www.ramarim.com.br/"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/837e2669-21d7-40af-9aa1-02751acf9e30"
+                  }
+                ],
+                "label": "Uncle K",
+                "link": "https://www.unclek.com.br/"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a050ba4b-3066-40dd-99a7-6e7acf1a7f32"
+                  }
+                ],
+                "link": "https://www.velocita.com.br/",
                 "label": "Velocitá"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dd9f327e-2294-4923-aa5e-e9cd2de74ff3"
+                  }
+                ],
+                "label": "Zorba",
+                "link": "https://www.zorba.com.br/"
               }
             ],
             "label": "Fashion"
@@ -20196,97 +20249,17 @@
           {
             "cards": [
               {
-                "link": "https://www.openbox2.com.br/",
+                "link": "https://www.emporioquatroestrelas.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/278d131d-1b9f-4dde-9b81-189a43b2e04f",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/01a275e7-b3df-4d63-b3b6-40942af41df3",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "OpenBox2"
-              },
-              {
-                "link": "https://www.eurocolchoes.com/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b1eda18d-1965-48b0-bfd6-099efe5c1f3d",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Euro Colchões"
-              },
-              {
-                "link": "https://www.eladecora.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7a938ccf-a415-4824-abe7-34a15c1d732a",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Ela Decora"
-              },
-              {
-                "link": "https://www.costaatacado.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/15077d1e-f1e9-4e49-a757-d3a8e9a35f9b",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Costa Atacado"
-              },
-              {
-                "link": "https://www.belairmoveis.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f1248dde-f284-4593-a15d-c5081937cbb8",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Bel Air Móveis"
-              },
-              {
-                "link": "https://www.atau.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5254d606-29f3-4b7c-9d89-0ba9cb9f5500",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Atau"
-              },
-              {
-                "link": "https://www.abracadabra.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfd3f40a-957e-4436-b39d-c4f908e7412e",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Abracadabra"
-              },
-              {
-                "link": "https://www.copelcolchoes.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7708cfbb-ebe3-4790-b6fe-678f15b5d2b7",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Copel Colchões"
-              },
-              {
-                "link": "https://lojavirtual.lumini.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0c95d5ea-2dfe-4ae7-a8ab-5b628d1e4af0",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Lumini"
+                "label": "Empório Quatro Estrelas"
               }
             ],
-            "label": "Home & Deco"
+            "label": "Grocery"
           },
           {
             "cards": [
@@ -20346,57 +20319,184 @@
           {
             "cards": [
               {
-                "link": "https://www.emporioquatroestrelas.com.br/",
+                "link": "https://www.abracadabra.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/01a275e7-b3df-4d63-b3b6-40942af41df3",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfd3f40a-957e-4436-b39d-c4f908e7412e",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Empório Quatro Estrelas"
-              }
-            ],
-            "label": "Grocery"
-          },
-          {
-            "cards": [
-              {
-                "link": "https://www.dellaaviamentos.com.br/",
-                "image": [
-                  {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/656e3099-78c9-4db6-9cf7-2ae15a938755",
-                    "color": "#FFFFFF"
-                  }
-                ],
-                "label": "Della Aviamentos"
+                "label": "Abracadabra"
               },
               {
-                "link": "https://www.maximustecidos.com.br/",
+                "link": "https://www.atau.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/61db3331-7be1-44cc-b1df-9c82c367759d",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5254d606-29f3-4b7c-9d89-0ba9cb9f5500",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Maximus Tecidos"
+                "label": "Atau"
+              },
+              {
+                "link": "https://www.belairmoveis.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f1248dde-f284-4593-a15d-c5081937cbb8",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Bel Air Móveis"
+              },
+              {
+                "link": "https://www.copelcolchoes.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7708cfbb-ebe3-4790-b6fe-678f15b5d2b7",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Copel Colchões"
+              },
+              {
+                "link": "https://www.costaatacado.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/15077d1e-f1e9-4e49-a757-d3a8e9a35f9b",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Costa Atacado"
+              },
+              {
+                "link": "https://www.eladecora.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7a938ccf-a415-4824-abe7-34a15c1d732a",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Ela Decora"
+              },
+              {
+                "link": "https://www.eurocolchoes.com/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b1eda18d-1965-48b0-bfd6-099efe5c1f3d",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Euro Colchões"
+              },
+              {
+                "link": "https://lojavirtual.lumini.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0c95d5ea-2dfe-4ae7-a8ab-5b628d1e4af0",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Lumini"
+              },
+              {
+                "link": "https://www.openbox2.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/278d131d-1b9f-4dde-9b81-189a43b2e04f",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "OpenBox2"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b1a36966-56af-45ec-beb9-b109e079c383"
+                  }
+                ],
+                "link": "https://star-company.deco.site/",
+                "label": "Star Company"
               }
             ],
-            "label": "Arts & Crafts"
+            "label": "Home & Deco"
           },
           {
             "cards": [
               {
-                "link": "https://www.bite.com.br/",
+                "link": "https://www.petfarma.com/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/23b4ba10-b57f-417e-a4e4-067d0e847279",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9a72fdb0-8534-4593-8ce4-c0b7c59ed80f",
                     "color": "#FFFFFF"
                   }
                 ],
-                "label": "Bite Auto Peças"
+                "label": "Petfarma"
+              },
+              {
+                "link": "https://www.zeedog.com.br/",
+                "image": [
+                  {
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09118336-54d8-4954-8ab0-e68313e4f0b0",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "label": "Zee.Dog"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d0ba7864-bbd5-4f10-8bc3-33d40ee59403",
+                    "label": "zeenow"
+                  }
+                ],
+                "label": "Zeenow",
+                "link": "https://www.zeenow.com.br/"
               }
             ],
-            "label": "Auto"
+            "label": "PET",
+            "category": "PET"
+          },
+          {
+            "cards": [
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7c634642-5759-44d0-9f57-99b8e65e9d8a"
+                  }
+                ],
+                "label": "Miess",
+                "link": "https://www.miess.com.br/"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c79fc2d-e2b6-41a9-a9d3-6002cee225f9"
+                  }
+                ],
+                "link": "https://www.sexshopatacadao.com.br/",
+                "label": "Sex Shop Atacado"
+              }
+            ],
+            "label": "Sex Shops"
+          },
+          {
+            "cards": [
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dcca1748-a085-4195-837d-009e05c77a58"
+                  }
+                ],
+                "link": "https://www.adaptio.com.br/",
+                "label": "Adaptio"
+              }
+            ],
+            "label": "Tech Agencies"
           }
         ],
         "categoriasNoIndice": [
