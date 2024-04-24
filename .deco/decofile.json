@@ -4990,7 +4990,7 @@
   "Deco Hero [EN]": {
     "cta": [
       {
-        "id": "bt-click-new",
+        "id": "bt-click-signup",
         "href": "https://admin.deco.cx/spaces/new",
         "text": "Try now for free",
         "variant": "Normal"
