@@ -18471,9 +18471,6 @@
               "__resolveType": "Deco Header [EN]"
             },
             {
-              "__resolveType": "[en] [mkt] Head"
-            },
-            {
               "__resolveType": "site/sections/Hub/Creator.tsx",
               "alt": "Introdução",
               "href": "",
@@ -18524,6 +18521,14 @@
               "__resolveType": "Current integrations"
             },
             {
+              "__resolveType": "site/sections/Hub/SectionTitle.tsx",
+              "label": "Integrations",
+              "layout": {
+                "headerAlignment": "center"
+              },
+              "description": "Coming soon "
+            },
+            {
               "__resolveType": "Coming soon integrations"
             },
             {
@@ -18540,9 +18545,6 @@
             },
             {
               "__resolveType": "Deco Footer [EN]"
-            },
-            {
-              "__resolveType": "deco-sites/starting/sections/FooterBigLogo.tsx"
             }
           ]
         }
@@ -24148,9 +24150,6 @@
           },
           "value": [
             {
-              "__resolveType": "[en] [docs] Head"
-            },
-            {
               "__resolveType": "GTM"
             },
             {
@@ -24169,9 +24168,6 @@
             "__resolveType": "$live/matchers/MatchAlways.ts"
           },
           "value": [
-            {
-              "__resolveType": "[pt] [docs] Head"
-            },
             {
               "__resolveType": "GTM"
             },
