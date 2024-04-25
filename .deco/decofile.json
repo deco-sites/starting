@@ -5883,6 +5883,9 @@
   "Preview site/sections/MarkdownContent.tsx": {
     "__resolveType": "site/sections/MarkdownContent.tsx"
   },
+  "Preview site/sections/NRF/Contact.tsx": {
+    "__resolveType": "site/sections/NRF/Contact.tsx"
+  },
   "Preview site/sections/NRF/Header.tsx": {
     "__resolveType": "site/sections/NRF/Header.tsx"
   },
@@ -13646,7 +13649,7 @@
         },
         "headline": "Customer Stories",
         "ctaButtons": {
-          "hrefGreenButton": "https://starting.deco.site/en/contact-us",
+          "hrefGreenButton": "https://deco.cx/en/contact-us",
           "hrefWhiteButton": "/en/live-projects",
           "titleGreenButton": "Book a Demo",
           "titleWhiteButton": "Live Projects"
@@ -13859,19 +13862,18 @@
           {
             "cards": [
               {
-                "link": "https://www.deco.cx/en/blog/case-zeedog",
+                "link": "https://deco.cx/en/blog/customer-story-hospitalar",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09118336-54d8-4954-8ab0-e68313e4f0b0",
-                    "color": "#FFFFFF"
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c0265b94-2b8c-4ec4-9f7f-d6dab61efd35",
+                    "color": "#ffffff"
                   }
                 ],
-                "label": "Zee.Dog",
-                "description": "Discover how Zee.Dog regained control of its frontend operation, increasing its conversion rate by 30% and reducing the site's loading time by 5x."
+                "label": "Hospitalar Distribuidora",
+                "description": "By focusing on ad campaign efficiency and user experience optimization, deco.cx and N1 Agency increase Hospitalar's ROAS from 4 to 19 and get revenue up by 13% in only 3 months.  "
               }
             ],
-            "label": "PET",
-            "category": "PET"
+            "label": "Healthcare"
           },
           {
             "cards": [
@@ -13892,18 +13894,19 @@
           {
             "cards": [
               {
-                "link": "https://deco.cx/en/blog/customer-story-hospitalar",
+                "link": "https://www.deco.cx/en/blog/case-zeedog",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c0265b94-2b8c-4ec4-9f7f-d6dab61efd35",
-                    "color": "#ffffff"
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09118336-54d8-4954-8ab0-e68313e4f0b0",
+                    "color": "#FFFFFF"
                   }
                 ],
-                "label": "Hospitalar Distribuidora",
-                "description": "By focusing on ad campaign efficiency and user experience optimization, deco.cx and N1 Agency increase Hospitalar's ROAS from 4 to 19 and get revenue up by 13% in only 3 months.  "
+                "label": "Zee.Dog",
+                "description": "Discover how Zee.Dog regained control of its frontend operation, increasing its conversion rate by 30% and reducing the site's loading time by 5x."
               }
             ],
-            "label": "Healthcare"
+            "label": "PET",
+            "category": "PET"
           }
         ],
         "categoriasNoIndice": [
@@ -13919,7 +13922,8 @@
           "textPosition": "bottom",
           "textAlignment": "left"
         },
-        "nomeDaCategoriaGeral": "All"
+        "nomeDaCategoriaGeral": "All",
+        "projectsTitle": "Explore deco's Customer Stories"
       },
       {
         "__resolveType": "site/sections/Head.tsx",
@@ -19887,7 +19891,7 @@
         },
         "headline": "Live Projects",
         "ctaButtons": {
-          "hrefGreenButton": "https://starting.deco.site/en/contact-us",
+          "hrefGreenButton": "https://deco.cx/en/contact-us",
           "hrefWhiteButton": "/en/customer-stories",
           "titleGreenButton": "Book a Demo",
           "titleWhiteButton": "Customer Stories"
@@ -24867,8 +24871,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "Preview site/sections/NRF/Contact.tsx": {
-    "__resolveType": "site/sections/NRF/Contact.tsx"
   }
 }
