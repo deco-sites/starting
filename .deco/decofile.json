@@ -20099,24 +20099,14 @@
                 "image": [
                   {
                     "color": "#FFFFFF",
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e2f4237e-c20b-4570-8019-a6bdd81e4466"
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7f1cfaad-355b-4df9-a419-953060813a34"
                   }
                 ],
                 "link": "https://www.pgadesivos.com.br/",
                 "label": "PG Adesivos"
-              },
-              {
-                "image": [
-                  {
-                    "color": "#FFFFFF",
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cecb7409-1462-4a01-a664-2f39fcc55a27"
-                  }
-                ],
-                "label": "Teciplast",
-                "link": "https://loja.teciplast.com.br/"
               }
             ],
-            "label": "Arts & Crafts"
+            "label": "Art, Crafts & Fabrics"
           },
           {
             "cards": [
