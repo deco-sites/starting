@@ -10692,13 +10692,13 @@
               "__resolveType": "GTM"
             },
             {
-              "url": "https://deco.cx/",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ee7582aa-bbf0-4c20-8ef6-4ccf0e7cc310",
-              "title": "Hospitalar Distribuidora's Customer Story - deco.cx: the open-source, headless frontend platform",
+              "url": "https://deco.cx/en/blog/customer-story-baw",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/04c7d508-a812-46ea-9cce-6d31873a3120",
+              "title": "AR&Co kickstarts digital transformation: Baw goes headless with deco.cx ",
               "imageUrl": "/decocx-meta-pt.png",
               "styleUrls": [],
               "themeColor": "#000",
-              "description": "Learn how Hospitalar Distribuidora's ROAS skyrockets from 4 to 19 with deco.cx and N1 Agency",
+              "description": "AR&Co. is getting its headless strategy off the ground, with both quality and speed by trusting deco.cx as its frontend solution.",
               "__resolveType": "site/sections/Head.tsx",
               "bodyBackgroundColor": "#000"
             },
@@ -10706,7 +10706,7 @@
               "__resolveType": "Deco Header [EN]"
             },
             {
-              "date": "April 18th, 2024",
+              "date": "April 25th, 2024",
               "title": "AR&Co kickstarts digital shift: Baw goes headless with deco.cx ",
               "author": "By Maria Cecilia Marques",
               "bgColor": "#0d0c0c",
@@ -10778,11 +10778,15 @@
             },
             {
               "__resolveType": "site/sections/Case/ArticleQuote.tsx",
+              "textColor": "#ffffff",
               "quote": "\"Managing change in a large organization like AR&Co. / Arezzo & Co. is definitely a challenge. The strategy we've set up with deco.cx of piloting one brand through an A/B test and then rolling out the solution across the group has been a game changer to guarantee that we innovate effectively.\"",
               "author": "Fernando Frizzatti (Dex)",
               "role": "Co-Founder and CTO of Baw, Head of Architecture at AR&Co",
-              "barColor": "#08f67c",
-              "textColor": "#ffffff"
+              "barColor": "#08f67c"
+            },
+            {
+              "__resolveType": "site/sections/Case/ArticleYoutubeVideo.tsx",
+              "videoCode": " https://www.youtube.com/watch?v=O18SxZNaA0Y"
             },
             {
               "__resolveType": "site/sections/Case/ArticleBannerCTA.tsx",
@@ -13820,7 +13824,7 @@
       {
         "__resolveType": "site/sections/Live Projects/Hero.tsx",
         "Banner": {
-          "bannerHero": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c51f8c16-0b01-40b8-ae72-7e3a205ca515"
+          "bannerHero": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ca399c21-1887-4dbd-9b4c-f54d859ce005"
         },
         "headline": "Customer Stories",
         "ctaButtons": {
@@ -22394,6 +22398,14 @@
               "placement": "right",
               "description": "Choose between self-hosting or using managed global edge infrastructure that deploys your code in 35 regions around the globe, ensuring the lowest server latency possible and auto-scaling as you grow.",
               "__resolveType": "site/sections/NRF/ImageSection.tsx"
+            },
+            {
+              "__resolveType": "site/sections/Hub/SectionTitle.tsx",
+              "title": "Roadmap",
+              "layout": {
+                "headerAlignment": "center"
+              },
+              "description": "Check out the features we've launched so far and what's to come. "
             },
             {
               "__resolveType": "Preview /sections/Roadmap.tsx"
