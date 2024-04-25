@@ -1972,6 +1972,9 @@
         "__resolveType": "Deco Header [EN]"
       },
       {
+        "__resolveType": "site/sections/General/Spacer.tsx"
+      },
+      {
         "__resolveType": "site/sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx",
         "props": {
           "graph": {
@@ -1991,8 +1994,8 @@
             "buttonHref": "teste",
             "buttonLabel": "teste"
           },
-          "title": "Backed by a community of over 3,000 members",
-          "subTitle": "<p class=\"text-[16px] md:text-[24px] text-[#A1A1AA] leading-[150%]\">We are building the largest multiplatform ecommerce community — forming the Elite Web Development on a mission to simplify the web itself.</p>",
+          "title": "Backed by a high-growth community",
+          "subTitle": "<p class=\"text-[16px] md:text-[24px] text-[#A1A1AA] leading-[150%]\" style=\"line-height: 1.2;\" data-mce-style=\"line-height: 1.2;\">We are building the largest multiplatform ecommerce community — forming the Elite Web Development on a mission to simplify the web itself.</p>",
           "emojiCommunity": {
             "title": "<p>Join our thriving community</p>",
             "button": {
