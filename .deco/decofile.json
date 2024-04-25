@@ -24863,5 +24863,8 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "Preview /sections/ProductHuntCTA.tsx": {
+    "__resolveType": "site/sections/ProductHuntCTA.tsx"
   }
 }
