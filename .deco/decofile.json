@@ -20079,7 +20079,7 @@
                 "link": "https://www.dellaaviamentos.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/656e3099-78c9-4db6-9cf7-2ae15a938755",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b67b6337-8625-4ec7-8a4d-0597305ba945",
                     "color": "#FFFFFF"
                   }
                 ],
@@ -20099,7 +20099,7 @@
                 "image": [
                   {
                     "color": "#FFFFFF",
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7f1cfaad-355b-4df9-a419-953060813a34"
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cede2955-3f70-444d-9870-64b85ba6f3a6"
                   }
                 ],
                 "link": "https://www.pgadesivos.com.br/",
@@ -20139,8 +20139,8 @@
                 "link": "https://loja.conecfit.com.br/",
                 "image": [
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3b4ec4a-30e2-43cf-a202-5d6029b90f98",
-                    "color": "#FFFFFF"
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b246f0fe-d2a3-4196-a1d1-6315a112e43f",
+                    "color": "#c03535"
                   }
                 ],
                 "label": "Conecfit"
@@ -20534,9 +20534,19 @@
                 ],
                 "link": "https://star-company.deco.site/",
                 "label": "Star Company"
+              },
+              {
+                "image": [
+                  {
+                    "color": "#FFFFFF",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4a1a7bd8-eedf-45d6-9d99-457b147efe33"
+                  }
+                ],
+                "label": "Teciplast",
+                "link": "https://loja.teciplast.com.br/"
               }
             ],
-            "label": "Home & Deco"
+            "label": "Home & Decor"
           },
           {
             "cards": [
