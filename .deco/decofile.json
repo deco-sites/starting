@@ -1972,17 +1972,6 @@
         "__resolveType": "Deco Header [EN]"
       },
       {
-        "__resolveType": "site/sections/Community.tsx",
-        "mainText": "Backed by a community of over 3,000 members",
-        "secondText": "We are building the largest multiplatform ecommerce community — forming the Elite Web Development on a mission to simplify the web itself.",
-        "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/14b49a10-dccf-4609-8025-ac5feb6afcdc",
-        "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
-        "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5d50b76b-b8aa-4fd1-8422-66263d3a9e00",
-        "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5a2b8dad-e7d6-434a-b1d2-0a95495573fc",
-        "hrefSecondButton": "https://deco.cx/discord",
-        "labelSecondButton": "Join the Community"
-      },
-      {
         "__resolveType": "site/sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx",
         "props": {
           "graph": {
