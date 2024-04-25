@@ -5775,6 +5775,9 @@
   "Preview /sections/NRF/Pricing.tsx": {
     "__resolveType": "site/sections/NRF/Pricing.tsx"
   },
+  "Preview /sections/ProductHuntCTA.tsx": {
+    "__resolveType": "site/sections/ProductHuntCTA.tsx"
+  },
   "Preview /sections/Roadmap.tsx": {
     "__resolveType": "site/sections/Roadmap.tsx",
     "features": [
@@ -20129,7 +20132,7 @@
                 "image": [
                   {
                     "color": "#FFFFFF",
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2cff374e-7bd9-4b3f-b8ba-3421ba1da888"
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a769184a-0528-4b88-9381-5239fa2c43b2"
                   }
                 ],
                 "label": "Urca Renault",
@@ -24863,8 +24866,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "Preview /sections/ProductHuntCTA.tsx": {
-    "__resolveType": "site/sections/ProductHuntCTA.tsx"
   }
 }
