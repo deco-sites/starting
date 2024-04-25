@@ -1983,6 +1983,99 @@
         "labelSecondButton": "Join the Community"
       },
       {
+        "__resolveType": "site/sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx",
+        "props": {
+          "graph": {
+            "title": "Community members",
+            "IdGuild": "985687648595243068",
+            "buttonHref": "teste",
+            "buttonLabel": "teste",
+            "tokenDiscord": {
+              "__resolveType": "website/loaders/secret.ts",
+              "name": "DISCORD_TOKEN",
+              "encrypted": "bebd1beb09314599e43c0497c01109a111e03910c6066dc0106e8601bad454b6dbd9b1de184ab113e38852314413dd27d2ebfd6b4c7e72bc4dc6fba8756f89f97b9581d13894e55ce0c815a08466f397"
+            }
+          },
+          "posts": {
+            "title": "teste",
+            "quantity": 10,
+            "buttonHref": "teste",
+            "buttonLabel": "teste"
+          },
+          "title": "Backed by a community of over 3,000 members",
+          "subTitle": "<p class=\"text-[16px] md:text-[24px] text-[#A1A1AA] leading-[150%]\">We are building the largest multiplatform ecommerce community — forming the Elite Web Development on a mission to simplify the web itself.</p>",
+          "emojiCommunity": {
+            "title": "<p>Join our thriving community</p>",
+            "button": {
+              "href": "https://discord.com/invite/9fkbcvR833",
+              "label": "Join Now "
+            },
+            "buttons": [
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                "color": "#76CAD0",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                "color": "#76CAD0",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                "color": "#76CAD0",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                "color": "#76CAD0",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                "color": "#76CAD0",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                "color": "#76CAD0",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                "color": "#76CAD0",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+                "color": "#76CAD0",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+                "color": "#DA8FFF",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+                "color": "#02F67C",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+                "color": "#02F67C",
+                "label": "teste"
+              },
+              {
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+                "color": "#FDE047",
+                "label": "teste"
+              }
+            ]
+          }
+        }
+      },
+      {
         "__resolveType": "site/sections/Benefits.tsx",
         "cards": [
           {
@@ -10499,6 +10592,99 @@
       ]
     },
     "__resolveType": "site/loaders/blogPostLoader.ts"
+  },
+  "community graph": {
+    "props": {
+      "graph": {
+        "title": "Community members",
+        "IdGuild": "985687648595243068",
+        "buttonHref": "teste",
+        "buttonLabel": "teste",
+        "tokenDiscord": {
+          "__resolveType": "website/loaders/secret.ts",
+          "encrypted": "eba2bb55d214b60629beb436d9d73a5e48ec311cc48f82c94dc778cc5cc2924d29310a54c2ea3c33b31e0003ebe700fef290008ce111155bec592e615508f5c9fca0052bc85054d33b669a110a2264b7",
+          "name": "DISCORD_TOKEN"
+        }
+      },
+      "posts": {
+        "title": "teste",
+        "quantity": 10,
+        "buttonHref": "teste",
+        "buttonLabel": "teste"
+      },
+      "title": "Growing community",
+      "subTitle": "<p>We are gathering the Elite Web Developments on a mission to simplify the web itself.</p>",
+      "emojiCommunity": {
+        "title": "<p>Join our thriving community</p>",
+        "button": {
+          "href": "https://deco.cx/discord",
+          "label": "Join Now "
+        },
+        "buttons": [
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+            "color": "#76CAD0",
+            "label": "azul 1"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+            "color": "#76CAD0",
+            "label": "azul 2"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+            "color": "#76CAD0",
+            "label": "azul 3"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+            "color": "#FDE047",
+            "label": "amarelo 1"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+            "color": "#FDE047",
+            "label": "amarelo 2"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+            "color": "#FDE047",
+            "label": "amarelo 3"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+            "color": "#DA8FFF",
+            "label": "lilás 1"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+            "color": "#DA8FFF",
+            "label": "lilás 2"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+            "color": "#DA8FFF",
+            "label": "lilás 3"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+            "color": "#02F67C",
+            "label": "verde 1"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+            "color": "#02F67C",
+            "label": "verde 2"
+          },
+          {
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+            "color": "#02F67C",
+            "label": "verde 3"
+          }
+        ]
+      }
+    },
+    "__resolveType": "site/sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx"
   },
   "pages-Blogpost%20Baw%20%2F%20EN-434392": {
     "name": "Blogpost Baw / EN",
@@ -21697,97 +21883,7 @@
               "__resolveType": "site/sections/Camp/Mentors/Mentors.tsx"
             },
             {
-              "props": {
-                "graph": {
-                  "title": "Community members",
-                  "IdGuild": "985687648595243068",
-                  "buttonHref": "teste",
-                  "buttonLabel": "teste",
-                  "tokenDiscord": {
-                    "__resolveType": "website/loaders/secret.ts",
-                    "encrypted": "eba2bb55d214b60629beb436d9d73a5e48ec311cc48f82c94dc778cc5cc2924d29310a54c2ea3c33b31e0003ebe700fef290008ce111155bec592e615508f5c9fca0052bc85054d33b669a110a2264b7",
-                    "name": "DISCORD_TOKEN"
-                  }
-                },
-                "posts": {
-                  "title": "teste",
-                  "quantity": 10,
-                  "buttonHref": "teste",
-                  "buttonLabel": "teste"
-                },
-                "title": "Growing community",
-                "subTitle": "<p>We are gathering the Elite Web Developments on a mission to simplify the web itself.</p>",
-                "emojiCommunity": {
-                  "title": "<p>Join our thriving community</p>",
-                  "button": {
-                    "href": "https://deco.cx/discord",
-                    "label": "Join Now "
-                  },
-                  "buttons": [
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#76CAD0",
-                      "label": "azul 1"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#76CAD0",
-                      "label": "azul 2"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#76CAD0",
-                      "label": "azul 3"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#FDE047",
-                      "label": "amarelo 1"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
-                      "color": "#FDE047",
-                      "label": "amarelo 2"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#FDE047",
-                      "label": "amarelo 3"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
-                      "color": "#DA8FFF",
-                      "label": "lilás 1"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#DA8FFF",
-                      "label": "lilás 2"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#DA8FFF",
-                      "label": "lilás 3"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
-                      "color": "#02F67C",
-                      "label": "verde 1"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
-                      "color": "#02F67C",
-                      "label": "verde 2"
-                    },
-                    {
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
-                      "color": "#02F67C",
-                      "label": "verde 3"
-                    }
-                  ]
-                }
-              },
-              "__resolveType": "site/sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx"
+              "__resolveType": "community graph"
             },
             {
               "props": {
