@@ -1976,7 +1976,7 @@
       },
       {
         "__resolveType": "site/sections/Community.tsx",
-        "mainText": "<p>Backed by a community of over 3,000 members</p>",
+        "mainText": "Backed by a community of over 3,000 members",
         "secondText": "We are building the largest multiplatform ecommerce community — forming the Elite Web Development on a mission to simplify the web itself.",
         "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/14b49a10-dccf-4609-8025-ac5feb6afcdc",
         "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
@@ -10533,9 +10533,10 @@
               "author": "By Maria Cecilia Marques",
               "bgColor": "#0d0c0c",
               "textColor": "#fefefe",
-              "screenshot": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5d49f89a-c22b-469f-9eb8-920f34a2f094",
+              "screenshot": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/97293b19-e0dc-4222-a462-029309e51aa5",
               "__resolveType": "site/sections/Case/ArticleHeader.tsx",
-              "subtitle": "AR&Co. is getting its headless strategy off the ground, with both quality and speed by trusting deco.cx as its frontend solution."
+              "subtitle": "AR&Co. is getting its headless strategy off the ground, with both quality and speed by trusting deco.cx as its frontend solution.",
+              "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b8e97ade-5d32-429c-bb9a-57344f79ee7b"
             },
             {
               "__resolveType": "site/sections/Case/ArticleNumbers.tsx",
@@ -24866,5 +24867,8 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "Preview site/sections/NRF/Contact.tsx": {
+    "__resolveType": "site/sections/NRF/Contact.tsx"
   }
 }
