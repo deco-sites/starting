@@ -61,35 +61,35 @@ export default function ContactUs({
             <input
               class="w-full h-[51px] border border-white/[.1] rounded placeholder-white bg-white/5 text-white backdrop-blur-xl p-4"
               type="text"
-              name="userName"
+              name="firstname"
               placeholder={formInfor?.PlaceholderfieldName || "Name*"}
               required
             />
             <input
               class="w-full h-[51px] border border-white/[.1] rounded placeholder-white bg-white/5 text-white backdrop-blur-xl p-4"
               type="email"
-              name="userEmail"
+              name="email"
               placeholder={formInfor?.PlaceholderfieldEmail || "Work e-mail*"}
               required
             />
             <input
               class="w-full h-[51px] border border-white/[.1] rounded placeholder-white bg-white/5 text-white backdrop-blur-xl p-4"
               type="text"
-              name="userRole"
+              name="mobilephone"
               placeholder={formInfor?.PlaceholderfieldPhone || "Phone*"}
               required
             />
             <input
               class="w-full h-[51px] border border-white/[.1] rounded placeholder-white bg-white/5 text-white backdrop-blur-xl p-4"
               type="text"
-              name="userLinkedin"
+              name="linkedin"
               placeholder={formInfor?.PlaceholderfieldSocial ||
                 "Linkedin (optional)"}
             />
             <input
               class="w-full h-[51px] border border-white/[.1] rounded placeholder-white bg-white/5 text-white backdrop-blur-xl p-4"
               type="text"
-              name="siteUrl"
+              name="website"
               placeholder={formInfor?.PlaceholderfieldUrlSite || "Site URL*"}
               required
             />
