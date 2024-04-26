@@ -1,12 +1,18 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
+interface Logo {
+  image: ImageWidget;
+}
+
 export interface Props {
   /** @format color */
   bgColor?: string;
   /** @format color */
   textColor?: string;
   logo?: ImageWidget;
+  /** @description for showing more than one logo */
+  logoList?: Logo[];
   title: string;
   subtitle: string;
   date: string;
@@ -28,6 +34,7 @@ export default function ArticleHeader({
   author = "Por Maria Cecilia Marques",
   screenshot,
   backToBlog,
+  logoList = [],
 }: Props) {
   return (
     <div
@@ -75,6 +82,26 @@ export default function ArticleHeader({
                 />
               </div>
             )}
+            {logoList && logoList.length
+              ? (
+                <div class="flex items-center gap-4">
+                  {logoList.map(({ image }) =>
+                    image
+                      ? (
+                        <Image
+                          src={image}
+                          fetchPriority={"low"}
+                          preload={false}
+                          loading={"lazy"}
+                          width={120}
+                          height={56}
+                        />
+                      )
+                      : null
+                  )}
+                </div>
+              )
+              : null}
             <div class="flex flex-col gap-3">
               <h1 class="text-5xl md:text-6xl font-bold leading-none">
                 {title}
