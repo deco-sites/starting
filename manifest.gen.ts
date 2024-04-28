@@ -143,19 +143,20 @@ import * as $$$$$$$119 from "./sections/RankingAnalyze.tsx";
 import * as $$$$$$$120 from "./sections/RankingHeader.tsx";
 import * as $$$$$$$121 from "./sections/RankingList.tsx";
 import * as $$$$$$$122 from "./sections/ReCAPTCHA.tsx";
-import * as $$$$$$$123 from "./sections/Roadmap.tsx";
-import * as $$$$$$$124 from "./sections/SectionList.tsx";
-import * as $$$$$$$125 from "./sections/Sidebar.tsx";
-import * as $$$$$$$126 from "./sections/StripePricing.tsx";
-import * as $$$$$$$127 from "./sections/Test.tsx";
-import * as $$$$$$$128 from "./sections/Thanks.tsx";
-import * as $$$$$$$129 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$$130 from "./sections/TripletBanner.tsx";
-import * as $$$$$$$131 from "./sections/WasThisPageHelpful.tsx";
-import * as $$$$$$$132 from "./sections/Webinar/Content.tsx";
-import * as $$$$$$$133 from "./sections/Webinar/Hero.tsx";
-import * as $$$$$$$134 from "./sections/Whatsapp.tsx";
-import * as $$$$$$$135 from "./sections/Why.tsx";
+import * as $$$$$$$123 from "./sections/RichLetter.tsx";
+import * as $$$$$$$124 from "./sections/Roadmap.tsx";
+import * as $$$$$$$125 from "./sections/SectionList.tsx";
+import * as $$$$$$$126 from "./sections/Sidebar.tsx";
+import * as $$$$$$$127 from "./sections/StripePricing.tsx";
+import * as $$$$$$$128 from "./sections/Test.tsx";
+import * as $$$$$$$129 from "./sections/Thanks.tsx";
+import * as $$$$$$$130 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$$131 from "./sections/TripletBanner.tsx";
+import * as $$$$$$$132 from "./sections/WasThisPageHelpful.tsx";
+import * as $$$$$$$133 from "./sections/Webinar/Content.tsx";
+import * as $$$$$$$134 from "./sections/Webinar/Hero.tsx";
+import * as $$$$$$$135 from "./sections/Whatsapp.tsx";
+import * as $$$$$$$136 from "./sections/Why.tsx";
 
 const manifest = {
   "functions": {
@@ -301,19 +302,20 @@ const manifest = {
     "site/sections/RankingHeader.tsx": $$$$$$$120,
     "site/sections/RankingList.tsx": $$$$$$$121,
     "site/sections/ReCAPTCHA.tsx": $$$$$$$122,
-    "site/sections/Roadmap.tsx": $$$$$$$123,
-    "site/sections/SectionList.tsx": $$$$$$$124,
-    "site/sections/Sidebar.tsx": $$$$$$$125,
-    "site/sections/StripePricing.tsx": $$$$$$$126,
-    "site/sections/Test.tsx": $$$$$$$127,
-    "site/sections/Thanks.tsx": $$$$$$$128,
-    "site/sections/Theme/Theme.tsx": $$$$$$$129,
-    "site/sections/TripletBanner.tsx": $$$$$$$130,
-    "site/sections/WasThisPageHelpful.tsx": $$$$$$$131,
-    "site/sections/Webinar/Content.tsx": $$$$$$$132,
-    "site/sections/Webinar/Hero.tsx": $$$$$$$133,
-    "site/sections/Whatsapp.tsx": $$$$$$$134,
-    "site/sections/Why.tsx": $$$$$$$135,
+    "site/sections/RichLetter.tsx": $$$$$$$123,
+    "site/sections/Roadmap.tsx": $$$$$$$124,
+    "site/sections/SectionList.tsx": $$$$$$$125,
+    "site/sections/Sidebar.tsx": $$$$$$$126,
+    "site/sections/StripePricing.tsx": $$$$$$$127,
+    "site/sections/Test.tsx": $$$$$$$128,
+    "site/sections/Thanks.tsx": $$$$$$$129,
+    "site/sections/Theme/Theme.tsx": $$$$$$$130,
+    "site/sections/TripletBanner.tsx": $$$$$$$131,
+    "site/sections/WasThisPageHelpful.tsx": $$$$$$$132,
+    "site/sections/Webinar/Content.tsx": $$$$$$$133,
+    "site/sections/Webinar/Hero.tsx": $$$$$$$134,
+    "site/sections/Whatsapp.tsx": $$$$$$$135,
+    "site/sections/Why.tsx": $$$$$$$136,
   },
   "matchers": {
     "site/matchers/MatchPath.ts": $$$$$$$$0,

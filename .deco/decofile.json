@@ -11333,13 +11333,13 @@
     "path": "/welcome",
     "sections": [
       {
-        "url": "https://deco.cx/why",
-        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9dfb2eea-02c2-4de4-b794-ba500f1f7206",
-        "title": "Why We Web — deco.cx",
+        "url": "https://deco.cx/welcome",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4c012f03-74a2-4bba-9d79-ae6848a04e90",
+        "title": "Welcome to deco.cx",
         "imageUrl": "/decocx-meta-pt.png",
         "styleUrls": [],
         "themeColor": "#000",
-        "description": "A manifesto for simpler webdev tools.",
+        "description": "A letter from the founders to people joining deco.cx",
         "__resolveType": "site/sections/Head.tsx",
         "bodyBackgroundColor": "#000"
       },
@@ -24565,5 +24565,15 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "Preview /sections/Why.tsx": {
+    "__resolveType": "site/sections/Why.tsx"
+  },
+  "Preview /sections/RichLetter.tsx": {
+    "__resolveType": "site/sections/RichLetter.tsx",
+    "paragraphs": [
+      "test"
+    ],
+    "title": "test"
   }
 }
