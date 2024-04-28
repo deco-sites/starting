@@ -11328,6 +11328,41 @@
     },
     "__resolveType": "website/pages/Page.tsx"
   },
+  "pages-Welcome-421646": {
+    "name": "Welcome",
+    "path": "/welcome",
+    "sections": [
+      {
+        "url": "https://deco.cx/why",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9dfb2eea-02c2-4de4-b794-ba500f1f7206",
+        "title": "Why We Web — deco.cx",
+        "imageUrl": "/decocx-meta-pt.png",
+        "styleUrls": [],
+        "themeColor": "#000",
+        "description": "A manifesto for simpler webdev tools.",
+        "__resolveType": "site/sections/Head.tsx",
+        "bodyBackgroundColor": "#000"
+      },
+      {
+        "title": "Welcome",
+        "paragraphs": [
+          "to deco.cx! I'm Guilherme, CEO and co-founder.",
+          "When I was 10 years old, creating a site was super simple. It made me feel powerful. But twenty years later, web development, and specially frontend, became extremely complicated. We’re here to make it simple again. This is how we are doing it:",
+          "We blur the lines between 'frontend' and 'backend' development. Soon, every web developer will be an “edge” developer. They will build low-latency, lightweight sites that compose data from multiple sources, respond dynamically to each audience and even run full-blown integration workflows on the back-office — all in the same tool, powered by a huge ecosystem of apps.",
+          "We unlock effective collaboration between web developers and their business teams. In one click, content creators get a high-performance site with a powerful real-time visual editor, on-brand component library, built-in analytics, campaign management and much more. We combine the full customization of code with the business autonomy of no-code — in one platform.",
+          "We narrow the gap between idea and execution, allowing smaller teams to iterate and learn faster from their real-world users. With complete release management, instant rollbacks, A/B testing, feature-flags and observability, we tighten the feedback loop of evolution so our users ship often and ship fearlessly.",
+          "We are the platform of choice to start making money with web development. By making high-quality sites easier to build, and high-integrity developers easier to find in our developer community, we enable a new generation of makers to create high-performance web-based businesses and thrive on the internet. ",
+          "We build the the future of webdev: the zero-friction webdev platform.",
+          "Welcome to deco.cx! It's Time To Kick Ass And Get Site Done. "
+        ],
+        "__resolveType": "site/sections/Why.tsx"
+      },
+      {
+        "__resolveType": "site/sections/NRF/Grid.tsx"
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  },
   "pages-blogpost-lojastorra-en-e7b20bafca87": {
     "name": "Blog post - Lojas Torra / EN",
     "path": "/en/blog/case-lojas-torra",
@@ -22158,6 +22193,9 @@
         }
       },
       {
+        "title": "<h1>Medium length</h1><h1><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">hero headline</span></h1><h1><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\">goes here﻿</span></h1>",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "__resolveType": "site/sections/NRF/HeroFlat.tsx",
         "cta": [
           {
             "href": "#",
@@ -22170,19 +22208,16 @@
             "variant": "Reverse"
           }
         ],
-        "title": "<h1>Medium length</h1><h1><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">hero headline</span></h1><h1><span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\">goes here﻿</span></h1>",
-        "placement": "left",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "__resolveType": "site/sections/NRF/HeroFlat.tsx"
+        "placement": "left"
       },
       {
-        "url": "https://deco.cx/pt",
         "title": "deco.cx - Crie lojas rápidas e aumente as vendas",
+        "description": "A plataforma de experiência digital que reúne desempenho e personalização na criação de sites incríveis.",
+        "__resolveType": "site/sections/Head.tsx",
+        "url": "https://deco.cx/pt",
         "imageUrl": "/decocx-meta-pt.png",
         "styleUrls": [],
-        "themeColor": "#000",
-        "description": "A plataforma de experiência digital que reúne desempenho e personalização na criação de sites incríveis.",
-        "__resolveType": "site/sections/Head.tsx"
+        "themeColor": "#000"
       },
       {
         "images": [
@@ -22306,6 +22341,7 @@
         "__resolveType": "site/sections/NRF/Questions.tsx"
       },
       {
+        "__resolveType": "site/sections/NRF/CallToAction.tsx",
         "cta": [
           {
             "href": "#",
@@ -22318,8 +22354,7 @@
             "variant": "Reverse"
           }
         ],
-        "text": "Lorem ipsum dolor sit amet consectetur.",
-        "__resolveType": "site/sections/NRF/CallToAction.tsx"
+        "text": "Lorem ipsum dolor sit amet consectetur."
       },
       {
         "__resolveType": "Deco Footer [EN]"
@@ -24463,6 +24498,14 @@
     },
     "__resolveType": "website/loaders/redirect.ts"
   },
+  "redirects-pt-593772": {
+    "redirect": {
+      "from": "/pt",
+      "to": "/",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
+  },
   "site": {
     "seo": {
       "type": "website",
@@ -24522,13 +24565,5 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
-  },
-  "redirects-pt-593772": {
-    "redirect": {
-      "from": "/pt",
-      "to": "/",
-      "type": "temporary"
-    },
-    "__resolveType": "website/loaders/redirect.ts"
   }
 }
