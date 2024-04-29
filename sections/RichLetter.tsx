@@ -16,10 +16,10 @@ export interface Props {
   /** @format rich-text */
   title?: string;
   /** @format rich-text */
-  paragraphs?: string[];
+  paragraph?: string;
 }
 
-export default function Why({ title, paragraphs }: Props) {
+export default function Why({ title, paragraph }: Props) {
   return (
     <div className="flex justify-center items-center min-h-screen w-100 min-h-[900px] relative z-10">
       <div className="text-white p-8 max-w-2xl">
@@ -28,12 +28,9 @@ export default function Why({ title, paragraphs }: Props) {
           rel="stylesheet"
         />
         <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
-        {title ?? <h1 className="text-5xl md:text-7xl lg:text-[7rem] cormorant-garamond-medium-italic text-primary mb-6">
-          {title}
-        </h1>
-        }
+        {title && <div className="text-5xl md:text-7xl lg:text-[7rem] cormorant-garamond-medium-italic text-primary mb-6" dangerouslySetInnerHTML={{ "__html": title }}></div>}
         <div className="md:text-lg">
-          {paragraphs && paragraphs.map((paragraph) => <div className="mb-4" dangerouslySetInnerHTML={{ "__html": paragraph }}></div>)}
+          <div className="mb-4" dangerouslySetInnerHTML={{ "__html": paragraph }}></div>
         </div>
 
         <div className="flex justify-between items-center w-100 mt-8">
