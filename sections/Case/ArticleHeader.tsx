@@ -70,38 +70,40 @@ export default function ArticleHeader({
         )}
         <div class="w-full flex flex-col lg:flex-row gap-12 lg:gap-32 items-center z-10">
           <div class="lg:w-1/2 flex flex-col gap-6">
-            {logo && (
-              <div class="">
-                <Image
-                  src={logo}
-                  fetchPriority={"low"}
-                  preload={false}
-                  loading={"lazy"}
-                  width={120}
-                  height={56}
-                />
-              </div>
-            )}
-            {logoList && logoList.length
-              ? (
-                <div class="flex items-center gap-4">
-                  {logoList.map(({ image }) =>
-                    image
-                      ? (
-                        <Image
-                          src={image}
-                          fetchPriority={"low"}
-                          preload={false}
-                          loading={"lazy"}
-                          width={120}
-                          height={56}
-                        />
-                      )
-                      : null
-                  )}
+            <div class="flex gap-4">
+              {logo && (
+                <div class="">
+                  <Image
+                    src={logo}
+                    fetchPriority={"low"}
+                    preload={false}
+                    loading={"lazy"}
+                    width={120}
+                    height={56}
+                  />
                 </div>
-              )
-              : null}
+              )}
+              {logoList && logoList.length
+                ? (
+                  <div class="flex items-center gap-4">
+                    {logoList.map(({ image }) =>
+                      image
+                        ? (
+                          <Image
+                            src={image}
+                            fetchPriority={"low"}
+                            preload={false}
+                            loading={"lazy"}
+                            width={120}
+                            height={56}
+                          />
+                        )
+                        : null
+                    )}
+                  </div>
+                )
+                : null}
+            </div>
             <div class="flex flex-col gap-3">
               <h1 class="text-5xl md:text-6xl font-bold leading-none">
                 {title}
