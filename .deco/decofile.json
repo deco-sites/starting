@@ -10251,13 +10251,13 @@
               "author": "By Maria Cecilia Marques",
               "bgColor": "#0d0c0c",
               "textColor": "#fefefe",
-              "screenshot": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/97293b19-e0dc-4222-a462-029309e51aa5",
+              "screenshot": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6e912319-f016-4db2-a5b7-7cb4330c5ab9",
               "__resolveType": "site/sections/Case/ArticleHeader.tsx",
               "subtitle": "AR&Co. is getting its headless strategy off the ground, with both quality and speed by trusting deco.cx as its frontend solution.",
-              "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b8e97ade-5d32-429c-bb9a-57344f79ee7b",
+              "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b3234b5c-c105-4ba5-aa32-55e126cb5c98",
               "logoList": [
                 {
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43e1a0fa-336d-4ddb-a54e-10f55a33d9e7"
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f0b98e82-e08f-4380-9f7b-03050be5a25e"
                 }
               ]
             },
@@ -10271,8 +10271,8 @@
                 },
                 {
                   "name": "Taxa de conversão",
-                  "label": "Organic search clicks",
-                  "number": "+68%"
+                  "label": "Google Ranking Position",
+                  "number": "15 - 10"
                 },
                 {
                   "label": "(Immediate) Conversion Growth",
@@ -10294,7 +10294,7 @@
               "__resolveType": "site/sections/Case/ArticleBannerCTA.tsx",
               "button": {
                 "label": "Download the e-book!",
-                "href": "https://drive.google.com/file/d/1-idPtNHyWmghxIAct53rSFGff424oMnR/view?usp=drive_link"
+                "href": "https://drive.google.com/file/d/1yBND5Vc0je6cryaNCIDC62QdftfsKgVF/view?usp=drive_link"
               }
             },
             {
@@ -10310,7 +10310,7 @@
             {
               "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
               "textColor": "#ffffff",
-              "text": "<p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">PageSpeed Improvement</span>: The site’s PageSpeed score soared from 8 to over 80 on desktop and over 50 on mobile.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Conversion Rate Increase</span>: During the test period, deco.cx’s platform achieved a conversion rate 15% higher than the previous system.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Operational Efficiency</span>: There was a notable reduction in the time and resources needed for site updates and feature deployments.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Organic Traffic Growth</span>: Organic traffic increased by 10%, and Baw saw a rise in Google keyword rankings for 239 terms, attributable to better site performance and enhanced SEO capabilities.</p><p><!-- notionvc: c93488cb-3047-4ce1-acef-3f03078a1edc --></p>",
+              "text": "<p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">PageSpeed Improvement</span>: The site’s PageSpeed score soared from 8 to over 80 on desktop and over 50 on mobile.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Conversion Rate Increase</span>: During the test period, deco.cx’s platform achieved a conversion rate 16% higher than the previous system.</p><p><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Operational Efficiency</span>: There was a notable reduction in the time and resources needed for site updates and feature deployments.</p><p dir=\"ltr\" role=\"presentation\"><span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\">Enhanced SEO:</span> The site rose from 15th to 10th place in Google Search Ranking when comparing the last four months vs. the same period last year.</p><p><br data-mce-bogus=\"1\"></p><p><!-- notionvc: c93488cb-3047-4ce1-acef-3f03078a1edc --></p>",
               "label": "Results",
               "titleLevel": "H1"
             },
@@ -10330,6 +10330,14 @@
               "barColor": "#08f67c"
             },
             {
+              "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
+              "textColor": "#ffffff",
+              "text": "<p><br data-mce-bogus=\"1\"></p>",
+              "titleLevel": "H2",
+              "label": "Check out Dex's testimonial!",
+              "onlyShowTitle": true
+            },
+            {
               "__resolveType": "site/sections/Case/ArticleYoutubeVideo.tsx",
               "videoCode": "O18SxZNaA0Y?si=052u4VRU5HzXbpNM"
             },
@@ -10338,7 +10346,7 @@
               "text": "Discover Baw's full journey with deco.cx in our e-book!",
               "button": {
                 "label": "Download the e-book!",
-                "href": "https://drive.google.com/file/d/1-idPtNHyWmghxIAct53rSFGff424oMnR/view?usp=drive_link"
+                "href": "https://drive.google.com/file/d/1yBND5Vc0je6cryaNCIDC62QdftfsKgVF/view?usp=drive_link"
               }
             },
             {
