@@ -523,7 +523,7 @@
             },
             {
               "__resolveType": "site/sections/NRF/Contact.tsx",
-              "text": "<h3 class=\"p1\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Want to learn how deco.cx can boost your company's sales? </span></h3><h3 class=\"p1\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\"><br data-mce-bogus=\"1\"></span></strong></span></h3><h3 class=\"p1\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Book a demo with us!&nbsp;</span></strong> We'll be in touch shortly.</span><span style=\"font-size: 18pt;\" data-mce-style=\"font-size: 18pt;\"></span></h3><p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><br data-mce-bogus=\"1\"></span></p><p><span style=\"font-size: 8pt;\" data-mce-style=\"font-size: 8pt;\"><br data-mce-bogus=\"1\"></span></p><p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">1. See how your team can&nbsp;<strong>create</strong> and <strong>manage</strong> high-performing web apps <strong>10x faster</strong>.</span></p><p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">2. Learn about&nbsp;<strong>enterprise features</strong>, like <strong>Roles &amp; Permissions, Security &amp; Scalability</strong>.&nbsp;</span></p><p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">3. Understand how&nbsp;<strong>developers</strong> and <strong>content editors</strong> can <strong>collaborate</strong> to achieve better results.</span></p>",
+              "text": "<h3 class=\"p1\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Want to learn how deco.cx can boost your company's sales? </span></h3><h3 class=\"p1\"><br data-mce-bogus=\"1\"></h3><h3 class=\"p1\"><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Book a demo with us!&nbsp;</span></strong> We'll be in touch shortly.</span></h3><p><br data-mce-bogus=\"1\"></p><p><br data-mce-bogus=\"1\"></p><ul><li><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">1. See how your team can&nbsp;<strong>create</strong> and <strong>manage</strong> high-performing web apps <strong>10x faster</strong>.</span></li><li><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">2. Learn about&nbsp;<strong>enterprise features</strong>, like <strong>Roles &amp; Permissions, Security &amp; Scalability</strong>.&nbsp;</span></li><li><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">3. Understand how&nbsp;<strong>developers</strong> and <strong>content editors</strong> can <strong>collaborate</strong> to achieve better results.</span></li></ul>",
               "title": "Talk to our team!",
               "embedScript": "hbspt.forms.create({region: \"na1\",portalId: \"39764057\",formId: \"cdeec78e-37f4-4e60-a6ed-bf791531ca1b\"});"
             },
@@ -4220,7 +4220,7 @@
       },
       {
         "id": "bt-join-discord",
-        "href": "https://discord.com/invite/9fkbcvR833",
+        "href": "https: //deco.cx/discord",
         "text": "Join our Discord",
         "variant": "Reverse"
       }
@@ -10254,7 +10254,12 @@
               "screenshot": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/97293b19-e0dc-4222-a462-029309e51aa5",
               "__resolveType": "site/sections/Case/ArticleHeader.tsx",
               "subtitle": "AR&Co. is getting its headless strategy off the ground, with both quality and speed by trusting deco.cx as its frontend solution.",
-              "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b8e97ade-5d32-429c-bb9a-57344f79ee7b"
+              "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b8e97ade-5d32-429c-bb9a-57344f79ee7b",
+              "logoList": [
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43e1a0fa-336d-4ddb-a54e-10f55a33d9e7"
+                }
+              ]
             },
             {
               "__resolveType": "site/sections/Case/ArticleNumbers.tsx",
@@ -10326,7 +10331,7 @@
             },
             {
               "__resolveType": "site/sections/Case/ArticleYoutubeVideo.tsx",
-              "videoCode": " https://www.youtube.com/watch?v=O18SxZNaA0Y"
+              "videoCode": "O18SxZNaA0Y?si=052u4VRU5HzXbpNM"
             },
             {
               "__resolveType": "site/sections/Case/ArticleBannerCTA.tsx",
@@ -24513,7 +24518,13 @@
       "platform": "other"
     },
     "__resolveType": "site/apps/site.ts",
-    "firstByteThresholdMS": false
+    "firstByteThresholdMS": false,
+    "abTesting": {
+      "replaces": [],
+      "includeScriptsToHead": {
+        "includes": []
+      }
+    }
   },
   "test-pricing": {
     "text": "Crie, teste e suba hoje. À medida que você expande, alavanque-se da nossa cobrança baseada no seu uso da nossa infraestrutura, e pague apenas pelo que precisar!",
