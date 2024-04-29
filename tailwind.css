@@ -419,3 +419,7 @@
 .hs-form-field > .input {
   @apply w-full h-fit border border-white/[.1] rounded placeholder-white bg-transparent p-0 text-white backdrop-blur-xl;
 }
+
+.hs-form-field > label {
+  @apply text-zinc-400;
+}
