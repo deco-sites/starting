@@ -24561,5 +24561,13 @@
       }
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
+  },
+  "redirects-deco.cxbaw-278272": {
+    "redirect": {
+      "from": "/deco.cx/baw",
+      "to": "/deco.cx/en/blog/customer-story-baw",
+      "type": "permanent"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
   }
 }
