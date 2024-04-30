@@ -24569,5 +24569,13 @@
       "type": "temporary"
     },
     "__resolveType": "website/loaders/redirect.ts"
+  },
+  "redirects-contact-us-767446": {
+    "redirect": {
+      "from": "/contact-us",
+      "to": "/en/contact-us",
+      "type": "temporary"
+    },
+    "__resolveType": "website/loaders/redirect.ts"
   }
 }
