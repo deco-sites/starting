@@ -24562,11 +24562,11 @@
     ],
     "__resolveType": "deco-sites/std/loaders/x/redirects.ts"
   },
-  "redirects-deco.cxbaw-278272": {
+  "redirects-baw-858309": {
     "redirect": {
-      "from": "/deco.cx/baw",
-      "to": "/deco.cx/en/blog/customer-story-baw",
-      "type": "permanent"
+      "from": "/baw",
+      "to": "/en/blog/customer-story-baw",
+      "type": "temporary"
     },
     "__resolveType": "website/loaders/redirect.ts"
   }
