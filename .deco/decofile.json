@@ -5313,22 +5313,13 @@
           "Type": [
             {
               "section": {
-                "__resolveType": "site/sections/Camp/Mentors/Mentors.tsx",
-                "props": {
-                  "mentors": [
-                    {
-                      "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f0b98e82-e08f-4380-9f7b-03050be5a25e",
-                        "alt": "baw"
-                      },
-                      "contacts": [],
-                      "nameMentor": "baw",
-                      "profession": "software baw",
-                      "content": "<p>baw</p>"
-                    }
-                  ],
-                  "title": "Mentors"
-                }
+                "__resolveType": "site/sections/CustomizableContent.tsx",
+                "data": {
+                  "group": 1,
+                  "urlPattern": "/docs/(.*)",
+                  "__resolveType": "site/loaders/denoLoader.ts"
+                },
+                "customizable": []
               }
             }
           ]
@@ -20757,10 +20748,15 @@
         "__resolveType": "site/sections/General/Spacer.tsx"
       },
       {
-        "__resolveType": "site/sections/Delight.tsx",
-        "href": "https://www.deco.cx/en/contact-us",
-        "mainText": "Ready to delight your customers?",
-        "buttonText": "Book a Demo!"
+        "__resolveType": "site/sections/PageContest/CallToAction.tsx",
+        "text": "<p>Ready to delight your customers?</p>",
+        "cta": [
+          {
+            "variant": "Normal",
+            "href": "https://www.deco.cx/en/contact-us",
+            "text": "Book a demo!"
+          }
+        ]
       },
       {
         "__resolveType": "Deco Footer [EN]"
