@@ -704,6 +704,8 @@ export default {
         "h1-color": "#1F261F",
         "h2-color": "#0A2121",
         "camp-neutral": "#A1A1AA",
+        "base-700": "#0D1717",
+        "decorative-one-900": "#02F67C",
       },
       fontFamily: {
         sans: "Albert Sans, sans-serif",

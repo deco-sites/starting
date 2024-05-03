@@ -71,43 +71,41 @@ export default function Page({
   WasThisPageHelpful,
 }: Props & WasThisPageHelpfulProps) {
   return (
-    <div class="mx-auto relative lg:mb-[40px] mb-[32px] lg:px-10 lg:py-20 lg:max-w-[calc((100vw-560px))]">
+    <div class="mx-auto relative lg:mb-[40px] mb-[32px]">
       {/* <BreadCrumb homePath={homePath} homeLabel={homeLabel} /> */}
-      <div class="w-full">
-        <div class="w-full xl:px-0 lg:pl-0 px-6 relative z-0">
-          <div class="flex flex-col gap-8 lg:pt-0 pt-[161px]">
-            {Title && (
-              <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
-                {Title}
-              </h1>
-            )}
-            {Version && Version.length > 0 && (
-              <span class="px-2 py-1 bg-white bg-opacity-0 rounded border border-zinc-300 text-neutral-900 text-[13px] font-semibold leading-tight w-min my-2.5 whitespace-nowrap">
-                {Version}
+      <div class="w-full xl:px-0 lg:pl-0 px-6 relative z-0">
+        <div class="flex flex-col gap-8 lg:pt-0 pt-[161px]">
+          {Title && (
+            <h1 class="text-neutral-900 text-[40px] font-semibold leading-[48px]">
+              {Title}
+            </h1>
+          )}
+          {Version && Version.length > 0 && (
+            <span class="px-2 py-1 bg-white bg-opacity-0 rounded border border-zinc-300 text-neutral-900 text-[13px] font-semibold leading-tight w-min my-2.5 whitespace-nowrap">
+              {Version}
+            </span>
+          )}
+          {PageContent?.length > 0
+            ? (
+              PageContent.map(({ Type }) => (
+                <div class="flex flex-col gap-[8px] w-full mx-auto">
+                  {Type.map((item, idx) => (
+                    <>
+                      {renderContentItem(item, idx)}
+                      {Object.hasOwn(item, "Underline") && item?.Underline &&
+                        <span class="flex border-b bg-zinc-300" />}
+                    </>
+                  ))}
+                </div>
+              ))
+            )
+            : (
+              <span class="flex items-center justify-center border-dashed border-2 border-[#0A1F1F] p-20 mx-auto mb-[8px] mt-10">
+                No content in Page.
               </span>
             )}
-            {PageContent?.length > 0
-              ? (
-                PageContent.map(({ Type }) => (
-                  <div class="flex flex-col gap-[8px] w-full mx-auto">
-                    {Type.map((item, idx) => (
-                      <>
-                        {renderContentItem(item, idx)}
-                        {Object.hasOwn(item, "Underline") && item?.Underline &&
-                          <span class="flex border-b bg-zinc-300" />}
-                      </>
-                    ))}
-                  </div>
-                ))
-              )
-              : (
-                <span class="flex items-center justify-center border-dashed border-2 border-[#0A1F1F] p-20 mx-auto mb-[8px] mt-10">
-                  No content in Page.
-                </span>
-              )}
-            <WasThisPageHelpfulContent />
-            <ForwardBackButtons />
-          </div>
+          <WasThisPageHelpfulContent />
+          <ForwardBackButtons />
         </div>
       </div>
     </div>
