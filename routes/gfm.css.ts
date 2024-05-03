@@ -27,7 +27,13 @@ ol.nested li:before {
 }
 
 .markdown-body pre {
-  background-color: #333 !important;
+  overflow-x: scroll;
+  background-color: #ffffff0d !important;
+  border: 2px solid #ffffff26;
+}
+
+.markdown-body pre code {
+  display: block !important;
 }
 
 .markdown-body ol {
@@ -39,7 +45,9 @@ ol.nested li:before {
 }
 
 .markdown-body img {
-  padding: 15px 0;
+  margin: 15px 0;
+  background: none;
+  border-radius: .5rem;
 }
 
 .markdown-body a {
