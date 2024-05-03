@@ -5343,7 +5343,8 @@
       "iconMenuClose": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98dcacb6-906b-44eb-ad51-974b996497b5"
     },
     "SectionOnThisPage": {
-      "__resolveType": "site/sections/OnThisPage.tsx"
+      "__resolveType": "site/sections/OnThisPage.tsx",
+      "label": "On this page"
     }
   },
   "Preview $live/sections/EmptySection.tsx": {
