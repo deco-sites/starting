@@ -1,17 +1,17 @@
 {
   "imports": {
     "site/": "./",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.25.1/",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.61.5/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.1/",
+    "$live/": "https://denopkg.com/deco-cx/deco@1.63.4/",
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.61.5/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.36.14/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.63.4/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.38.0/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
-    "preact": "https://esm.sh/preact@10.19.2",
-    "preact/": "https://esm.sh/preact@10.19.2/",
+    "preact": "https://esm.sh/preact@10.19.6",
+    "preact/": "https://esm.sh/preact@10.19.6/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.4.0",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.0",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
     "daisyui": "npm:daisyui@4.6.0",
@@ -21,7 +21,7 @@
     "motion": "https://esm.sh/motion@10.16.4"
   },
   "tasks": {
-    "start": "deno task bundle && deno run -A --unstable --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",
+    "start": "deno task bundle && deno run -A --env --config=deno.json $(deno eval 'console.log(import.meta.resolve(\"deco/hypervisor/main.ts\"))') --build-cmd 'deno task build' -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
     "play": "USE_LOCAL_STORAGE_ONLY=true deno task start",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
@@ -33,7 +33,8 @@
     "bundle": "deno eval 'import \"deco/scripts/apps/bundle.ts\"' site",
     "cache_clean": "rm deno.lock; deno cache -r main.ts",
     "build": "deno run -A dev.ts build",
-    "preview": "deno run -A main.ts"
+    "preview": "deno run -A main.ts",
+    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts"
   },
   "githooks": {
     "pre-commit": "check"
