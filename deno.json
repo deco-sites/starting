@@ -55,7 +55,7 @@
       ]
     }
   },
-  "nodeModulesDir": true,
+  "nodeModulesDir": false,
   "compilerOptions": {
     "jsx": "react-jsx",
     "experimentalDecorators": true,
