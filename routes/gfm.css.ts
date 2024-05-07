@@ -28,11 +28,10 @@ ol.nested li:before {
 
 .markdown-body pre {
   overflow-x: scroll;
+  width: 100%;
   background-color: #ffffff0d !important;
   border: 2px solid #ffffff26;
-}
-
-.markdown-body pre code {
+  position: relative !important;
   display: block !important;
 }
 
@@ -56,6 +55,23 @@ ol.nested li:before {
 
 .markdown-body {
   font-family: Albert Sans,sans-serif;
+}
+
+.div-copy {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border: 2px solid #ffffff26;
+  top: .5rem;
+  right: .5rem;
+}
+
+.div-copy:hover {
+  color: #4ADE80;
 }
 `;
 

@@ -1,4 +1,4 @@
-import { Head } from "$fresh/runtime.ts";
+import { Head, asset } from "$fresh/runtime.ts";
 import { LoaderReturnType } from "deco/types.ts";
 import { MDFileContent } from "site/components/ui/Types.tsx";
 
@@ -116,6 +116,7 @@ function Content(props: MDContent) {
         class="mt-8 markdown-body !text-[#F9FAFB] !bg-base-700"
         dangerouslySetInnerHTML={{ __html: html }}
       />
+      <script src={asset("/docs/js/copy-snippets.js")}></script>
     </main>
   );
 }
