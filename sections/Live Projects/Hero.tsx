@@ -51,14 +51,14 @@ export default function Hero({
               <a
                 href={ctaButtons.hrefGreenButton}
                 aria-label={ctaButtons.titleGreenButton}
-                class="flex text-[1.25rem] bg-[#02F67C] py-4 px-6 h-[53px] font-medium text-[#113032] rounded-full items-center justify-center text-center hover:opacity-75"
+                class="flex text-[1.25rem] bg-[#02F67C] py-4 px-6 h-[55px] font-medium text-[#113032] rounded-full items-center justify-center text-center hover:opacity-75"
               >
                 {ctaButtons.titleGreenButton}
               </a>
               <a
                 href={ctaButtons.hrefWhiteButton}
                 aria-label={ctaButtons.titleWhiteButton}
-                class="flex text-[1.25rem] bg-[#113032] py-4 px-6 h-[53px] font-medium text-white rounded-full items-center justify-center text-center hover:opacity-75"
+                class="flex text-[1.25rem] bg-[#113032] py-4 px-6 h-[55px] font-medium text-white rounded-full items-center justify-center text-center hover:opacity-75"
               >
                 {ctaButtons.titleWhiteButton}
               </a>
