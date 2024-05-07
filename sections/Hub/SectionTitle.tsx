@@ -17,7 +17,7 @@ export default function SectionTitle(props: Props) {
 
   return (
     <div class="bg-black">
-      <div class="container pt-10 lg:pt-20 pb-13">
+      <div class="container pt-10 lg:pt-20 pb-13 relative z-10">
         <Header
           title={title}
           description={description}
