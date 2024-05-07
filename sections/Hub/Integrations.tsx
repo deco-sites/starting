@@ -78,11 +78,9 @@ function Integrations(props: Props) {
               />
             </Picture>
           )}
-          {element.mobile ? null : (
           <span class="text-center lg:text-[1.5rem] font-semibold leading-[100%] text-white tracking-[-0.48px]">
             {element?.label}
           </span>
-          )}
           <div
             class={`${
               element.active ? "hidden" : "hidden"

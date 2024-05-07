@@ -48,13 +48,7 @@ export default function Markdown({ post }: Props) {
       }),
     });
   }
-  let body = marky(post.data, transformedParsers);
-  body = body.replace(/<h2/g, '<h2 class="text-[#F9FAFB] my-8"');
-  body = body.replace(/<h3/g, '<h3 class="text-[#F9FAFB]"');
-  body = body.replace(/<h4/g, '<h4 class="text-[#F9FAFB]"');
-  body = body.replace(/<code/g, '<code class="text-[#F9FAFB] bg-[#FFFFFF0D] backdrop-filter backdrop-blur-24 py-0.5"');
-  body = body.replace(/<pre/g, '<pre class="border-2 border-[#FFFFFF26] bg-[#FFFFFF0D] rounded backdrop-filter backdrop-blur-24 p-4"');
-
+  const body = marky(post.data, transformedParsers);
   return (
     <div
       class="markdown-body prose max-w-none text-[#F9FAFB] tracking-[-0.16px]"

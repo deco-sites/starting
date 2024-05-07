@@ -56,23 +56,23 @@ export default function Roadmap({ features }: { features: Feature[] }) {
               >
                 {feature.status === "Live"
                   ? (
-                    <div className="flex justify-center bg-[#02F67C] text-base-content px-3 py-1 rounded-3xl w-fit text-[#113032]">
+                    <div className="flex justify-center bg-green-500 text-base-content px-3 rounded-3xl w-fit">
                       Live
                     </div>
                   )
                   : (
-                    <div className="flex justify-center bg-[#DA8FFF] text-base-content px-3 py-1 rounded-3xl w-fit text-[#113032]">
+                    <div className="flex justify-center bg-purple-500 text-base-content px-3 rounded-3xl w-fit">
                       Coming Soon
                     </div>
                   )}
-                <ul className="flex flex-col text-white gap-1">
+                <ul className="flex flex-col text-white gap-1 list-disc">
                   {Array.isArray(feature.name)
                     ? (
                       feature.name.map((name, index) => (
-                        <li key={index}>{name}</li>
+                        <li key={index} className="ml-4">{name}</li>
                       ))
                     )
-                    : <li>{feature.name}</li>}
+                    : <li className="ml-4">{feature.name}</li>}
                 </ul>
               </div>
             </div>

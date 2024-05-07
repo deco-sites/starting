@@ -301,7 +301,7 @@ export default function Header(props: Props) {
           <li>
             <a
               href={props.demo?.url}
-              class="flex items-center md:hover:border-[#02F67C] md:hover:border md:hover:text-[#fff] border-[transparent] border font-medium text-[16px] text-white max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
+              class="block md:hover:border-[#02F67C] md:hover:border md:hover:text-[#fff] border-[transparent] border font-medium text-[16px] text-white max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
             >
               {props.demo?.label}
             </a>

@@ -216,7 +216,7 @@ function TemplatesGrid(props: Props) {
               className={`cursor-pointer relative top-[2px] ${
                 categoriaSelecionada === "Todos"
                   ? "font-bold border-b-2 border-[#02F67C] text-[#02F67C]"
-                  : "text-white"
+                  : "text-zinc-600"
               }`}
               onClick={() => handleChangeCategoria("Todos")}
             >
@@ -228,7 +228,7 @@ function TemplatesGrid(props: Props) {
                 className={`cursor-pointer relative top-[2px] ${
                   categoriaSelecionada === category.label
                     ? "font-bold border-b-2 border-[#02F67C] text-[#02F67C]"
-                    : "text-white"
+                    : "text-zinc-600"
                 }`}
                 onClick={() => handleChangeCategoria(category.label)}
               >
