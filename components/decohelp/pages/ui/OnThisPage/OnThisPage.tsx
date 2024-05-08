@@ -5,7 +5,7 @@ interface OnThisPage {
   label?: string;
 }
 
-export default function OnThisPage(props: OnThisPage) {
+export default function OnThisPage(props: OnThisPage & { url: string }) {
   const { label = "On this page" } = props;
   const { isMobile } = useMenuState();
   const baseClass = "text-[15px] font-normal leading-tight";
@@ -103,6 +103,8 @@ export default function OnThisPage(props: OnThisPage) {
       removeEventListener("scroll", handleScroll);
     };
   }, [label, activeClass]);
+  
+  const isInEN = props.url.includes("/en/");
 
   return (
     <div
@@ -110,13 +112,39 @@ export default function OnThisPage(props: OnThisPage) {
         isMobile ? "absolute" : "sticky"
       }`}
     >
-      <ul id="content-list" class={`flex flex-col gap-2`}>
+      <ul id="content-list" class={`flex flex-col gap-2 text-white`}>
         {label && (
-          <h3 class="text-white text-[15px] font-semibold leading-tight mb-2">
+          <h3 class="text-white text-[24px] font-semibold leading-tight mb-2">
             {label}
           </h3>
         )}
       </ul>
+      <div class="flex backdrop-blur-xl h-[50px] rounded-full bg-white/5 w-[150px] mt-6">
+        <button 
+          class={`w-1/2 font-semibold rounded-full ${isInEN ? "bg-[#02F67C]" : "text-white"}`}
+          onClick={() => {
+            globalThis.location.href = globalThis.location.href.replace("/pt/", "/en/");
+          }}
+        >
+          EN
+        </button>
+        <button 
+          class={`w-1/2 font-semibold rounded-full ${isInEN ? "text-white" : "bg-[#02F67C]"}`}
+          onClick={() => {
+            globalThis.location.href = globalThis.location.href.replace("/en/", "/pt/");
+          }}
+        >
+          PT
+        </button>
+      </div>
     </div>
   );
+}
+
+export const loader = (props: OnThisPage, req: Request) => {
+
+  return {
+    ...props,
+    url: req.url,
+  }
 }

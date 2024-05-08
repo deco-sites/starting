@@ -143,10 +143,25 @@ export interface Props {
 
 Este widget é especialmente útil quando as opções disponíveis em um campo
 dependem de dados dinâmicos. Ele exibe em sua interface o mesmo que o
-[Select](#select), porém suas opções podem ser carregadas dinamicamente via um
+[Select](#select), porém suas opções podem ser carregadas dinamicamente de outra prop ou via
 loader!
 
-Exemplo:
+Exemplo 1:
+
+`MySection.tsx`
+
+```ts
+export interface Props {
+  names: string[];
+  /**
+   * @format dynamic-options
+   * @options {{{names}}}
+   */
+  name: string;
+}
+```
+
+Exemplo 2:
 
 `MinhaSection.tsx`
 
