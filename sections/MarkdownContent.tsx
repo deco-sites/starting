@@ -34,7 +34,7 @@ export default function DocsPage(
             ? `${props.data.title} | deco.cx docs`
             : "deco.cx docs"}
         </title>
-        <link rel="stylesheet" href={`/gfm.css`} />
+        <link rel="stylesheet" href={`/docs.css`} />
         {description && <meta name="description" content={description} />}
         <style
           dangerouslySetInnerHTML={{

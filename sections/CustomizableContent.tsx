@@ -42,7 +42,7 @@ export default function CustomizableMarkdownContent(
   return (
     <>
       <Head>
-        <link rel="stylesheet" href={`/gfm.css`} />
+        <link rel="stylesheet" href={`/docs.css`} />
         <style
           dangerouslySetInnerHTML={{
             __html: `
