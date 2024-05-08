@@ -30,8 +30,8 @@ export default function PricingTable(
   return (
     <section class="flex flex-col lg:flex-row gap-12 py-10 justify-center mx-6 lg:mx-0">
     {plans.map((plan) => (
-      <div class="flex z-10 pricing-card">
-        <div class="h-full flex flex-col gap-6 rounded-lg bg-black p-6 text-white">
+      <div class="flex z-10">
+        <div class="h-full flex flex-col gap-6 bg-black p-6 text-white pricing-card">
           <div class="flex flex-col gap-4">
              <p class="text-white text-[22px] uppercase">{plan.title}</p>
              <p class="text-base text-gray-400">{plan.subtitle}</p>
