@@ -7,7 +7,7 @@ Widgets são componentes que aparecem no formulário do
 de um [Bloco](/docs/pt/concepts/block). Aqui está uma lista dos Widgets
 existentes:
 
-# TextArea
+## TextArea
 
 <img src="/docs/widgets/textarea.png" alt="Exemplo textarea" width="400"/>
 
@@ -24,7 +24,7 @@ export interface Props {
 }
 ```
 
-# CheckBox
+## CheckBox
 
 <img src="/docs/widgets/checkbox.png" alt="Exemplo checkbox" height="200"/>
 
@@ -36,7 +36,7 @@ export interface Props {
 }
 ```
 
-# ImageUri
+## ImageUri
 
 <img src="/docs/widgets/image.png" alt="Exemplo image" width="400"/>
 
@@ -51,7 +51,7 @@ export interface Props {
 }
 ```
 
-# VideoUri
+## VideoUri
 
 <img src="/docs/widgets/video.png" alt="Exemplo video" width="400"/>
 
@@ -66,7 +66,7 @@ export interface Props {
 }
 ```
 
-# Section
+## Section
 
 <img src="/docs/widgets/section.png" alt="Exemplo section" width="400"/>
 
@@ -89,7 +89,7 @@ export interface Props {
 }
 ```
 
-# Select
+## Select
 
 <img src="/docs/widgets/select.png" alt="Exemplo select" width="300"/>
 
@@ -105,7 +105,7 @@ export interface Props {
 }
 ```
 
-# HTML
+## HTML
 
 <img src="/docs/widgets/html-open.png" alt="Exemplo html" width="600"/>
 
@@ -122,7 +122,7 @@ export interface Props {
 }
 ```
 
-# Secret
+## Secret
 
 <img src="/docs/widgets/secret.png" alt="Exemplo secret" width="400"/>
 
@@ -139,7 +139,7 @@ export interface Props {
 }
 ```
 
-# Dynamic Options
+## Dynamic Options
 
 Este widget é especialmente útil quando as opções disponíveis em um campo
 dependem de dados dinâmicos. Ele exibe em sua interface o mesmo que o
@@ -194,7 +194,7 @@ export default function ProdutosLoader(
 }
 ```
 
-# Color Input
+## Color Input
 
 O widget Color Input exibe um círculo preenchido representando a cor selecionada
 juntamente com seu valor hexadecimal correspondente. Os usuários podem interagir
@@ -213,7 +213,25 @@ export interface Props {
 }
 ```
 
-# Button Group
+## Code
+
+O Widget Code, exibe um Editor de código.
+
+Utilize com ```@language css```, ```@language typescript``` ou ```@language json```
+
+```ts
+export interface Props {
+  /** 
+   * @format code
+   * @language css
+   */
+  myCode?: string;
+}
+```
+
+![Code Widget](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/084fffc4-5a1c-47c2-ac8e-88a1c4829864)
+
+## Button Group
 
 O widget Button Group permite que você renderize opções de seleção em um formato
 de ícone, fornecendo uma maneira visualmente atraente de escolher opções. Cada
@@ -284,7 +302,7 @@ export default function IconsLoader(
 }
 ```
 
-# Icon Select
+## Icon Select
 
 O widget Icon Select permite criar um seletor de entrada para ícones, onde cada
 opção consiste em um ícone e sua etiqueta. Isso permite aos usuários visualizar
