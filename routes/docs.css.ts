@@ -80,7 +80,7 @@ export const handler: Handlers = {
     return new Response(CSS, {
       headers: {
         "content-type": "text/css",
-        "cache-control": "public, max-age=31536000, immutable",
+        "cache-control": "public, max-age=86400, immutable",
       },
     });
   },
