@@ -75,6 +75,8 @@ export type AvailableIcons =
   | "Gauge"
   | "Plugs"
   | "FileSvg"
+  | "InfoCircle"
+  | "Check"
   /* Decocamp */
   | "TsFile"
   | "Fresh"

@@ -138,6 +138,10 @@
     @apply flex flex-col items-center justify-start gap-12;
   }
 
+  .pricing-card {
+    @apply bg-[#000D0D] rounded-3xl;
+  }
+
   .feature-card-lp-contest{
     @apply w-[380px] max-w-[380px] lg:h-[380px] bg-[#F4F4F4] rounded-3xl;
     @apply border-l border-transparent duration-200 whitespace-pre-line text-center;
