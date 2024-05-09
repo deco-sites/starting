@@ -1,5 +1,5 @@
 ---
-description: Creating an Headless A/B Test
+description: Creating a Headless A/B Test
 ---
 
 Cooming soon!

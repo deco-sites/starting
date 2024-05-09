@@ -259,7 +259,7 @@ const tableOfContents: TableOfContents = [
       {
         title: {
           pt: "Criando um Teste A/B Headless",
-          en: "Creating an Headless A/B Test ",
+          en: "Creating a Headless A/B Test ",
         },
         slug: "developing/headless-ab-test",
       },
