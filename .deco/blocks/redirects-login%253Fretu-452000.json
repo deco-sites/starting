@@ -1,0 +1,1 @@
+{"redirect":{"from":"/login?returnUrl=/admin","to":"/","type":"permanent"},"__resolveType":"website/loaders/redirect.ts"}
