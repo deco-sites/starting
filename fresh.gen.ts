@@ -11,7 +11,7 @@ import * as $api_leads from "./routes/api/leads.tsx";
 import * as $api_platform from "./routes/api/platform.tsx";
 import * as $api_ranking from "./routes/api/ranking.ts";
 import * as $api_webinar from "./routes/api/webinar.tsx";
-import * as $gfm_css from "./routes/gfm.css.ts";
+import * as $docs_css from "./routes/docs.css.ts";
 import * as $hackathon4 from "./routes/hackathon4.ts";
 import * as $proxy_image_index from "./routes/proxy/image/index.tsx";
 import * as $Article from "./islands/Article.tsx";
@@ -65,7 +65,7 @@ const manifest = {
     "./routes/api/platform.tsx": $api_platform,
     "./routes/api/ranking.ts": $api_ranking,
     "./routes/api/webinar.tsx": $api_webinar,
-    "./routes/gfm.css.ts": $gfm_css,
+    "./routes/docs.css.ts": $docs_css,
     "./routes/hackathon4.ts": $hackathon4,
     "./routes/proxy/image/index.tsx": $proxy_image_index,
   },

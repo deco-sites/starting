@@ -23,7 +23,7 @@ export interface Props {
 }
 ```
 
-# CheckBox
+## CheckBox
 
 <img src="/docs/widgets/checkbox.png" alt="Exemplo checkbox" height="200"/>
 
@@ -35,7 +35,7 @@ export interface Props {
 }
 ```
 
-# ImageUri
+## ImageUri
 
 <img src="/docs/widgets/image.png" alt="Exemplo image" width="400"/>
 
@@ -50,7 +50,7 @@ export interface Props {
 }
 ```
 
-# VideoUri
+## VideoUri
 
 <img src="/docs/widgets/video.png" alt="Exemplo video" width="400"/>
 
@@ -65,7 +65,7 @@ export interface Props {
 }
 ```
 
-# Section
+## Section
 
 <img src="/docs/widgets/section.png" alt="Exemplo section" width="400"/>
 
@@ -84,7 +84,7 @@ export interface Props {
 }
 ```
 
-# Select
+## Select
 
 <img src="/docs/widgets/select.png" alt="Exemplo select" width="300"/>
 
@@ -100,7 +100,7 @@ export interface Props {
 }
 ```
 
-# HTML
+## HTML
 
 <img src="/docs/widgets/html-open.png" alt="Exemplo html" width="600"/>
 
@@ -117,7 +117,7 @@ export interface Props {
 }
 ```
 
-# Secret
+## Secret
 
 <img src="/docs/widgets/secret.png" alt="Exemplo secret" width="400"/>
 
@@ -134,13 +134,28 @@ export interface Props {
 }
 ```
 
-# Dynamic Options
+## Dynamic Options
 
 This widget is especially useful when the options available in a field depend on
 dynamic data. It displays the same as the [Select](#select), but its options can
-be loaded dynamically via a loader!
+be loaded dynamically via other prop or a loader!
 
-Example:
+Example 1:
+
+`MySection.tsx`
+
+```ts
+export interface Props {
+  names: string[];
+  /**
+   * @format dynamic-options
+   * @options {{{names}}}
+   */
+  name: string;
+}
+```
+
+Example 2:
 
 `MySection.tsx`
 
@@ -173,7 +188,7 @@ export default function ProductsLoader(
 }
 ```
 
-# Color Input
+## Color Input
 
 The Color Input widget displays a filled circle representing the selected color
 along with its corresponding hexadecimal value. Users can interact with the
@@ -192,7 +207,25 @@ export interface Props {
 }
 ```
 
-# Button Group
+## Code
+
+The Code Widget render a code editor.
+
+Use with ```@language css```, ```@language typescript``` or ```@language json```
+
+```ts
+export interface Props {
+  /** 
+   * @format code
+   * @language css
+   */
+  myCode?: string;
+}
+```
+
+![Code Widget](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/084fffc4-5a1c-47c2-ac8e-88a1c4829864)
+
+## Button Group
 
 The Button Group widget allows you to render select options in an icon format,
 providing a visually appealing way to choose options. Each option is represented
@@ -262,7 +295,7 @@ export default function IconsLoader(
 }
 ```
 
-# Icon Select
+## Icon Select
 
 The Icon Select widget enables you to create a select input for icons, where
 each option consists of both an icon and its label. This allows users to preview

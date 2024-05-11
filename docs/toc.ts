@@ -249,6 +249,20 @@ const tableOfContents: TableOfContents = [
         },
         slug: "developing/modifying-status",
       },
+      {
+        title: {
+          pt: "Criando um Teste A/B",
+          en: "Creating an A/B Test",
+        },
+        slug: "developing/ab-test",
+      },
+      {
+        title: {
+          pt: "Criando um Teste A/B Headless",
+          en: "Creating a Headless A/B Test ",
+        },
+        slug: "developing/headless-ab-test",
+      },
     ],
   },
   {
