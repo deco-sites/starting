@@ -37,7 +37,7 @@ export default function BlogPostHeader(props: Props) {
     <section class="max-w-2xl w-full px-5 md:px-0 mx-auto pt-16">
       <div class="mb-8 sm:mb-11 mt-16">
         <a
-          class="group flex items-center cursor-pointer text-subdued"
+          class="group flex items-center cursor-pointer text-[#F9FAFB]"
           href={`/${locale}/blog`}
         >
           <svg
