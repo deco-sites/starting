@@ -19,7 +19,7 @@ function Breadcrumb({
         {items.map(({ name, href }, index) => (
           <li class="flex items-center gap-2" key={index}>
             <a
-              href={href}
+              href={index === 0 ? "#" : href}
               class={`${index === items.length - 1 ? "text-[#4ADE80]" : "text-white"} 
               text-[15px] font-normal leading-tight capitalize`}
             >
