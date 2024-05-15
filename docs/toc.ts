@@ -574,6 +574,21 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },*/
+  {
+    title: {
+      pt: "Arquitetura Deco",
+      en: "Deco Architecture",
+    },
+    children: [
+      {
+        title: {
+          pt: "Usando o Deco CMS como Headless",
+          en: "Using Deco CMS as Headless",
+        },
+        slug: "architecture/headless-cms",
+      },
+    ],
+  }
 ];
 
 if (import.meta.main) {
