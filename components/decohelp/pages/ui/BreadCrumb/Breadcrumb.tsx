@@ -1,42 +1,33 @@
 import { FunctionalComponent } from "preact";
-import { useBreadcrumbState } from "site/components/decohelp/pages/hooks/useBreadcrumbState.ts";
 import Icon from "site/components/ui/Icon.tsx";
 
-interface BreadcrumbProps {
-  homeLabel: string;
-  homePath: string;
+interface PathSegment {
+  name: string;
+  href: string;
 }
 
-const Breadcrumb: FunctionalComponent<BreadcrumbProps> = (
-  { homeLabel, homePath },
-) => {
-  const { showBreadcrumb, pathSegments } = useBreadcrumbState(
-    homeLabel,
-    homePath,
-  );
+interface Props {
+  items: PathSegment[];
+}
 
-  if (!showBreadcrumb) {
-    return null;
-  }
-
+function Breadcrumb({
+  items,
+}: Props) {
   return (
-    <nav class="relative top-[126px] px-12 z-10">
+    <nav>
       <ul class="flex items-center flex-wrap gap-2">
-        {pathSegments.map(({ name, path }, index) => (
+        {items.map(({ name, href }, index) => (
           <li class="flex items-center gap-2" key={index}>
             <a
-              href={path}
-              class={`${
-                index === 0 ? "text-[#616B6B]" : "text-[#001515]"
-              } text-[15px] font-normal leading-tight capitalize`}
+              href={href}
+              class={`${index === items.length - 1 ? "text-[#4ADE80]" : "text-white"} 
+              text-[15px] font-normal leading-tight capitalize`}
             >
               {name}
             </a>
-            {index < pathSegments.length - 1 && (
+            {index < items.length - 1 && (
               <Icon
-                class={`${
-                  index === 0 ? "text-[#616B6B]" : "text-[#001515]"
-                } w-4 h-4`}
+                class={`text-white w-4 h-4`}
                 id="ChevronRight"
                 width={16}
                 height={16}
