@@ -10,7 +10,7 @@ export default function (props: SectionProps) {
   return (
     <section class="bg-base-700">
       <div
-        class={`flex lg:flex-row px-10 gap-10 flex-col w-full mx-auto max-w-screen-2xl lg:pt-[140px]`}
+        class={`flex lg:flex-row lg:px-10 gap-10 flex-col w-full mx-auto max-w-screen-2xl lg:pt-[140px]`}
       >
         <props.SectionSidebar.Component {...props.SectionSidebar.props} />
         <div class="lg:max-w-[736px]">
