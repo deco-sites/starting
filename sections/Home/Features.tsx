@@ -52,9 +52,9 @@ export default function Features({
         <div class="flex flex-col lg:flex-row gap-8 w-full">
             {
                 features?.map(mark => (
-                  <div class="bg-[#0D1717] p-4 flex flex-row gap-4 flex-1">
+                  <div class="bg-[#0D1717] rounded-2xl py-4 px-6 flex flex-row gap-4 flex-1">
                         <Icon id={mark.icon} size={48} />
-                        <div  class="font-albert-sans text-lg text-white" dangerouslySetInnerHTML={{
+                        <div  class="font-albert-sans text-base text-white" dangerouslySetInnerHTML={{
                             __html: mark.description
                         }}/>
                     </div>
