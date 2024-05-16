@@ -13,11 +13,11 @@ export default function MainVideo({
     showSpecialNrfVideo = true
 }: Props) {
   return (
-    <div class="bg-black lg:min-h-screen">
+    <div class="lg:mx-auto lg:max-w-6xl relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen">
         <div class="mx-auto flex flex-col items-center gap-8">
             {showSpecialNrfVideo && (
-            <div class="relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
-                <div class="relative overflow-hidden rounded-[20px] w-[80vw]">
+            <div class="w-full relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
+                <div class="relative overflow-hidden rounded-[20px] w-full">
                 <div style="padding:56.25% 0 0 0;position:relative;">
                     <iframe
                     src="https://player.vimeo.com/video/902689992?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
