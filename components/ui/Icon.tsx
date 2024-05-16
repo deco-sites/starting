@@ -43,6 +43,7 @@ export type AvailableIcons =
   | "MagnifyingGlass"
   | "MapPin"
   | "Mastercard"
+  | "Menu"
   | "Minus"
   | "OCCLogo"
   | "Phone"

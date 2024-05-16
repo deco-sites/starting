@@ -1,11 +1,13 @@
 import { useEffect, useState } from "preact/hooks";
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
 import Icon from "site/components/ui/Icon.tsx";
-import MenuButton from "site/components/decohelp/pages/ui/Sidebar/MenuButton.tsx";
-import useMenuState from "site/components/decohelp/pages/hooks/useMenuState.ts";
 import SearchButton from "./SearchButton.tsx";
-import { ComponentType, JSX } from "preact";
+import { ComponentChildren, JSX } from "preact";
+import Drawer from "site/components/ui/Drawer.tsx";
+import Breadcrumb from "site/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
+import { SectionProps } from "deco/mod.ts";
+
+const DOCS_DRAWER_ID = "deco-docs-drawer";
 
 export interface SidebarContent {
   /** @description Icon for closing the mobile menu */
@@ -108,64 +110,20 @@ function SidebarItem(props: JSX.IntrinsicElements["a"]) {
   );
 }
 
-export default function Sidebar({
-  iconMenuClose,
-  iconMenuOpen,
-  AltIconMenu,
-  SidebarTitle,
-  SidebarIcon,
-  AltIcon,
-  Subtitle,
-  LinkSubtitle,
-  Topics,
-}: SidebarContent) {
+function AsideLinks({
+  topics,
+  subtitle,
+  linkSubtitle,
+}: {
+  topics: Topic[];
+  subtitle: string;
+  linkSubtitle: string;
+}) {
   const [currentSlug, setCurrentSlug] = useState<string | null>(null);
   const [openTopicIndex, setOpenTopicIndex] = useState<number | null>(null);
   const [openSubTopicIndex, setOpenSubTopicIndex] = useState<number | null>(
     null,
   );
-
-  useEffect(() => {
-    const currentPath = window.location.pathname;
-    const pathParts = currentPath.split("/");
-    const slug = pathParts[pathParts.length - 1].toLowerCase();
-    setCurrentSlug(slug);
-    if (Topics) {
-      Topics.forEach((topic, index) => {
-        const isActive = topic.SubTopics.some(
-          (subTopic, subTopicIndex) => {
-            if (
-              subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
-            ) {
-              const hasNestedTopics = subTopic.NestedTopics
-                ? subTopic.NestedTopics?.length > 0
-                : false;
-              if (hasNestedTopics) setOpenSubTopicIndex(subTopicIndex);
-
-              return true;
-            }
-
-            const nestedTopicOpened = subTopic.NestedTopics?.some((
-              childTopic,
-            ) =>
-              childTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
-            );
-
-            if (nestedTopicOpened) {
-              setOpenSubTopicIndex(subTopicIndex);
-              return true;
-            }
-            return false;
-          },
-        );
-        if (isActive) {
-          setOpenTopicIndex(index);
-        }
-      });
-    }
-  }, []);
-
-  const subtitleSlug = LinkSubtitle?.split("/").pop()?.toLowerCase();
 
   const toggleTopicMenu = (index: number) => {
     if (openTopicIndex === index) {
@@ -181,22 +139,48 @@ export default function Sidebar({
     );
   };
 
-  const { isMenuOpen, setIsMenuOpen, isMobile } = useMenuState();
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    const pathParts = currentPath.split("/");
+    const slug = pathParts[pathParts.length - 1].toLowerCase();
+    setCurrentSlug(slug);
 
-  const altIconMenuClose = AltIconMenu;
-  const altIconMenuOpen = AltIconMenu;
+    topics.forEach((topic, index) => {
+      const isActive = topic.SubTopics.some(
+        (subTopic, subTopicIndex) => {
+          if (
+            subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
+          ) {
+            const hasNestedTopics = subTopic.NestedTopics
+              ? subTopic.NestedTopics?.length > 0
+              : false;
+            if (hasNestedTopics) setOpenSubTopicIndex(subTopicIndex);
 
-  const menuCloseProps = {
-    Image: iconMenuClose,
-    AltIconMenu: altIconMenuClose,
-  };
+            return true;
+          }
 
-  const menuOpenProps = {
-    Image: iconMenuOpen,
-    AltIconMenu: altIconMenuOpen,
-  };
+          const nestedTopicOpened = subTopic.NestedTopics?.some((
+            childTopic,
+          ) =>
+            childTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
+          );
 
-  const firstTopic = Topics?.[0];
+          if (nestedTopicOpened) {
+            setOpenSubTopicIndex(subTopicIndex);
+            return true;
+          }
+          return false;
+        },
+      );
+      if (isActive) {
+        setOpenTopicIndex(index);
+      }
+    });
+  }, []);
+
+  const subtitleSlug = linkSubtitle?.split("/").pop()?.toLowerCase();
+
+  const firstTopic = topics[0];
   const firstSubTopic = firstTopic?.SubTopics?.[0];
   const firstNestedTopic = firstSubTopic?.NestedTopics?.[0];
 
@@ -213,47 +197,28 @@ export default function Sidebar({
       fontWeight: fontWeightValue,
     };
   }
+
   return (
-    <div
-      class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[140px] top-[103px] lg:mb-[40px] ${
-        isMobile ? "absolute" : "sticky"
-      }`}
-    >
-      <div class="flex gap-2 z-30 relative">
-        <MenuButton
-          isMenuOpen={isMenuOpen}
-          setIsMenuOpen={setIsMenuOpen}
-          isMobile={isMobile}
-          iconMenuClose={menuCloseProps}
-          iconMenuOpen={menuOpenProps}
-        />
-      </div>
-      <aside
-        class={`lg:w-[300px] w-full h-full lg:flex flex-col gap-10
-          ${isMenuOpen && isMobile ? "block z-20 pl-0 fixed" : "hidden"}`}
-      >
+    <>
         <SearchButton />
         <ul
-          class={`flex flex-col gap-2 lg:py-0 pb-[140px] lg:pl-0 pl-[24px] max-h-full overflow-x-auto lg:pt-0 lg:max-h-[80vh] ${
-            isMenuOpen && isMobile ? "pr-[40px] pt-[40px] " : "pr-0 pt-[140px]"
-          }`}
+          class={`flex flex-col gap-2 pb-[140px] max-h-full overflow-x-auto lg:max-h-[80vh]`}
         >
-          {Subtitle && Subtitle.length > 0 && (
+          {subtitle.length > 0 && (
             <li class="my-[8px] ml-[25px]">
               <a
-                href={LinkSubtitle}
+                href={linkSubtitle}
                 class={`${
                   currentSlug === subtitleSlug
                     ? "text-[#4ADE80]"
                     : "text-[#E7E5E4]"
                 } text-[15px] font-semibold leading-tight`}
               >
-                {Subtitle}
+                {subtitle}
               </a>
             </li>
           )}
-          {Topics &&
-            Topics.map((topic, index) => {
+          {topics.map((topic, index) => {
               const isActive = isTopicActive(
                 openTopicIndex ?? 0,
                 index,
@@ -395,6 +360,73 @@ export default function Sidebar({
               );
             })}
         </ul>
+      </>
+  );
+}
+
+export function loader(props: SidebarContent, req: Request) {
+  const url = new URL(req.url);
+  const [base, lang, ...pathSegments] = url.pathname.split("/").filter(Boolean);
+
+  const breadcrumbItems = pathSegments.map((segment, index) => {
+    const path = pathSegments.slice(0, index + 1).join('/');
+
+    return {
+      name: segment.replace("-", " "),
+      href: new URL(`/${base}/${lang}/${path}`, req.url).href,
+    };
+  });
+
+  return {
+    ...props,
+    breadcrumbItems,
+    lang,
+  };
+}
+
+export default function Sidebar({
+  Subtitle,
+  LinkSubtitle,
+  Topics,
+  breadcrumbItems,
+}: SectionProps<typeof loader>) {
+
+  return (
+    <div
+      class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[140px] top-[103px] lg:mb-[40px] lg:sticky`}
+    >
+      {/* Mobile with drawer */}
+      <div class="flex mt-28 items-start gap-2 lg:hidden text-white px-4">
+        <label for={DOCS_DRAWER_ID} class="cursor-pointer">
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="16"  height="16"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+        </label>
+        <Breadcrumb items={breadcrumbItems} />
+      </div>
+      <Drawer
+        id={DOCS_DRAWER_ID}
+        class="drawer-start"
+        aside={
+          <Drawer.Aside title="Docs" drawer={DOCS_DRAWER_ID}>
+            <div class="w-full px-6">
+              <AsideLinks 
+                topics={Topics ?? []}
+                subtitle={Subtitle ?? ''}
+                linkSubtitle={LinkSubtitle ?? ''}
+              />
+            </div>
+          </Drawer.Aside>
+        }
+      />
+
+      {/* Desktop Aside */}
+      <aside
+        class={`w-[300px] h-full hidden lg:flex flex-col gap-10`}
+      >
+        <AsideLinks 
+          topics={Topics ?? []}
+          subtitle={Subtitle ?? ''}
+          linkSubtitle={LinkSubtitle ?? ''}
+        />
       </aside>
     </div>
   );
