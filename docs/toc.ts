@@ -256,13 +256,6 @@ const tableOfContents: TableOfContents = [
         },
         slug: "developing/ab-test",
       },
-      {
-        title: {
-          pt: "Criando um Teste A/B Headless",
-          en: "Creating a Headless A/B Test ",
-        },
-        slug: "developing/headless-ab-test",
-      },
     ],
   },
   {
@@ -438,6 +431,28 @@ const tableOfContents: TableOfContents = [
         slug: "composable-uis/ecommerce",
       },
     ],
+  },
+  {
+    title: {
+      pt: "External SDKs",
+      en: "External SDKs",
+    },
+    children:[
+      {
+        title:{
+          pt: "Teste A/B",
+          en: "A/B Test",
+        },
+        slug: "sdk/ab-test"
+      },
+      {
+        title:{
+          pt: "Feature Flags",
+          en: "Feature Flags",
+        },
+        slug: "sdk/feature-flags"
+      }
+    ]
   },
   {
     title: {
