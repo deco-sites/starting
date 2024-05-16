@@ -56,7 +56,7 @@ export default function Hero({
     ]
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-6xl relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-10 justify-center items-center">
+    <div class="lg:mx-auto lg:max-w-6xl mt-[50px] relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-10 justify-center items-center">
         <div class="leading-none">
             {
                 pixelTitle &&
