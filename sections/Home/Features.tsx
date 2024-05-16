@@ -28,7 +28,7 @@ export default function Features({
     subTitle = "so serious websites evolve 10x faster",
     features = [
         {
-            icon: 'FastClock',
+            icon: 'Cell',
             description: 'High Performance sit amet consectetur. Vestibulum ullamcorper tempor. Sit amet consectetur.'
         },
         {
@@ -36,13 +36,13 @@ export default function Features({
             description: 'Fast Execution sit amet consectetur. Vestibulum ullamcorper tempor. Sit amet consectetur.'
         },
         {
-            icon: 'Book',
+            icon: 'Cell',
             description: 'Easy Personalization sit amet consectetur. Vestibulum ullamcorper tempor. Sit amet consectetur.'
         }
     ]
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-6xl relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-24 justify-center items-center">
+    <div class="lg:mx-auto lg:max-w-6xl relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-12 justify-center items-center">
         {
             title &&
             <h2 class="font-albert-sans text-3xl lg:text-5xl font-medium text-white text-center" dangerouslySetInnerHTML={{
@@ -52,7 +52,7 @@ export default function Features({
         <div class="flex flex-col lg:flex-row gap-8 w-full">
             {
                 features?.map(mark => (
-                  <div class="flex flex-row gap-4 flex-1">
+                  <div class="bg-[#0D1717] p-4 flex flex-row gap-4 flex-1">
                         <Icon id={mark.icon} size={48} />
                         <div  class="font-albert-sans text-lg text-white" dangerouslySetInnerHTML={{
                             __html: mark.description
