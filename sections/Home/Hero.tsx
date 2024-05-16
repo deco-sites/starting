@@ -73,7 +73,7 @@ export default function Hero({
         </div>
         {
             subTitle &&
-            <h2 class="font-albert-sans mx-11 inline-block text-[40px] lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-[70%]" dangerouslySetInnerHTML={{
+            <h2 class="font-albert-sans mx-11 inline-block text-[40px] lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none" dangerouslySetInnerHTML={{
                 __html: subTitle
             }}></h2>
         }
