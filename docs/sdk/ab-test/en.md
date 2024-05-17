@@ -19,9 +19,7 @@ If you already have your site on deco.cx, the creation of A/B Testing is explain
 
 4 - Monitoring Results
 
-5 - Pre Go-Live
-
-6 - Go Live
+5 - Go Live
 
 ## Creating a deco.cx project
 
@@ -93,23 +91,9 @@ You can monitor the results of your test with the metrics you created directly t
 
 To understand more about the results screen, look at this [documentation](https://deco.cx/docs/en/developing/ab-test#funnel-and-results).
 
-
-## Pre Go-Live
-
-Before putting the code into production, search again for ``abTest`` in the search bar and select what is in the ``static`` folder.
-
-![abTest static search](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/da5748ed-2e65-4304-bacf-94023e0ba6b1)
-
-In the first lines of the file, fill in your configurations:
-
-```js
-const config = {
-  plausibleDomain: "seusite.deco.site",
-  decoDomain: "https://seusite.deco.site"
-}
-```
-
 ## Go-Live
+
+Before deploying the code to production, fill in a field called ``plausibleDomain`` with the same domain registered in the ``Analytics`` tab of your deco.cx dashboard.
 
 To apply all this to your site:
 
@@ -117,7 +101,7 @@ To apply all this to your site:
 - Insert this script into the ``<head>`` of your site:
 
 ```html
-<script src="https://seusite.deco.site/abTest.js" defer="true"></script>
+<script src="https://yoursite.deco.site/abTest.js" defer="true"></script>
 ```
 
 ## Next Steps
