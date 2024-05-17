@@ -706,6 +706,7 @@ export default {
         "camp-neutral": "#A1A1AA",
         "base-700": "#0D1717",
         "decorative-one-900": "#02F67C",
+        "decorative-three-900": "#DA8FFF",
       },
       fontFamily: {
         sans: "Albert Sans, sans-serif",
