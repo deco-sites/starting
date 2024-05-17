@@ -154,4 +154,4 @@ export default Footer;
 
 # Conclusion
 
-By specifying default props directly in the function parameters, this new feature improves the integration between the admin interface and the component rendering. This change simplifies the workflow for developers and enhances the overall user experience by ensuring that default values are visible and manageable across all parts of the CMS.
+By specifying default props directly in the function parameters, this new feature improves the integration between the admin interface and the component rendering. This change simplifies the workflow for developers and enhances the overall user experience by ensuring that default values are visible and manageable across all parts of the Admin.
