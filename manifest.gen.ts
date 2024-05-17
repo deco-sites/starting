@@ -166,15 +166,14 @@ import * as $$$$$$142 from "./sections/SectionList.tsx";
 import * as $$$$$$143 from "./sections/Sidebar.tsx";
 import * as $$$$$$144 from "./sections/StripePricing.tsx";
 import * as $$$$$$145 from "./sections/Test.tsx";
-import * as $$$$$$146 from "./sections/Teste.tsx";
-import * as $$$$$$147 from "./sections/Thanks.tsx";
-import * as $$$$$$148 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$149 from "./sections/TripletBanner.tsx";
-import * as $$$$$$150 from "./sections/WasThisPageHelpful.tsx";
-import * as $$$$$$151 from "./sections/Webinar/Content.tsx";
-import * as $$$$$$152 from "./sections/Webinar/Hero.tsx";
-import * as $$$$$$153 from "./sections/Whatsapp.tsx";
-import * as $$$$$$154 from "./sections/Why.tsx";
+import * as $$$$$$146 from "./sections/Thanks.tsx";
+import * as $$$$$$147 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$148 from "./sections/TripletBanner.tsx";
+import * as $$$$$$149 from "./sections/WasThisPageHelpful.tsx";
+import * as $$$$$$150 from "./sections/Webinar/Content.tsx";
+import * as $$$$$$151 from "./sections/Webinar/Hero.tsx";
+import * as $$$$$$152 from "./sections/Whatsapp.tsx";
+import * as $$$$$$153 from "./sections/Why.tsx";
 
 const manifest = {
   "functions": {
@@ -343,15 +342,14 @@ const manifest = {
     "site/sections/Sidebar.tsx": $$$$$$143,
     "site/sections/StripePricing.tsx": $$$$$$144,
     "site/sections/Test.tsx": $$$$$$145,
-    "site/sections/Teste.tsx": $$$$$$146,
-    "site/sections/Thanks.tsx": $$$$$$147,
-    "site/sections/Theme/Theme.tsx": $$$$$$148,
-    "site/sections/TripletBanner.tsx": $$$$$$149,
-    "site/sections/WasThisPageHelpful.tsx": $$$$$$150,
-    "site/sections/Webinar/Content.tsx": $$$$$$151,
-    "site/sections/Webinar/Hero.tsx": $$$$$$152,
-    "site/sections/Whatsapp.tsx": $$$$$$153,
-    "site/sections/Why.tsx": $$$$$$154,
+    "site/sections/Thanks.tsx": $$$$$$146,
+    "site/sections/Theme/Theme.tsx": $$$$$$147,
+    "site/sections/TripletBanner.tsx": $$$$$$148,
+    "site/sections/WasThisPageHelpful.tsx": $$$$$$149,
+    "site/sections/Webinar/Content.tsx": $$$$$$150,
+    "site/sections/Webinar/Hero.tsx": $$$$$$151,
+    "site/sections/Whatsapp.tsx": $$$$$$152,
+    "site/sections/Why.tsx": $$$$$$153,
   },
   "matchers": {
     "site/matchers/MatchPath.ts": $$$$$$$0,
