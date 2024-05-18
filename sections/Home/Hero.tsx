@@ -60,20 +60,20 @@ export default function Hero({
         <div class="leading-none">
             {
                 pixelTitle &&
-                <h1 class="font-albert-sans text-[50px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
+                <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
                     __html: pixelTitle
                 }}></h1>
             }
             {
                 title &&
-                <h1 class="font-albert-sans text-[40px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
+                <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
                     __html: title
                 }}></h1>
             }
         </div>
         {
             subTitle &&
-            <h2 class="font-albert-sans mx-11 inline-block text-[40px] lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none" dangerouslySetInnerHTML={{
+            <h2 class="font-albert-sans mx-11 inline-block text-[16px] lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none" dangerouslySetInnerHTML={{
                 __html: subTitle
             }}></h2>
         }
