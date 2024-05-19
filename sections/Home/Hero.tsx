@@ -56,7 +56,7 @@ export default function Hero({
     ]
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-6xl mt-[50px] relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-10 justify-center items-center">
+    <div class="lg:mx-auto lg:max-w-6xl mt-[80px] relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-10 justify-center items-center">
         <div class="leading-none">
             {
                 pixelTitle &&
@@ -82,7 +82,7 @@ export default function Hero({
                 ctas?.map(cta => (
                 <a 
                     href={cta.href}
-                    class={`text-base text-[#0A2121] bg-[#02F67C] lg:text-lg px-8 py-4 font-extrabold flex uppercase text-center justify-center p-3 rounded-[10px] font-bold flex items-center justify-center`}
+                    class={`hover:from-[#02F67C] hover:to-[#06E474] transition-all duration-300 ease-out hover:shadow-hero text-base text-[#0A2121] bg-[#02F67C] lg:text-lg px-8 py-4 font-extrabold flex uppercase text-center justify-center p-3 rounded-[10px] font-bold flex items-center justify-center`}
                     target={cta.href.includes("http") ? "_blank" : "_self"}
                   >
                     {cta.text}
