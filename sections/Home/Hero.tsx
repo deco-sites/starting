@@ -59,7 +59,7 @@ export default function Hero({
     <>
         <div class="deco-background"></div>
         <div class="lg:mx-auto lg:max-w-6xl mt-[80px] relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-10 justify-center items-center">
-            <div style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);height: 200vh;width: 100vw;position: absolute;top: -150%;"></div>
+            <div class="h-[200vh] w-[100vw] absolute top-[-200%] lg:top-[-150%]" style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"></div>
             <div class="leading-none">
                 {
                     pixelTitle &&
