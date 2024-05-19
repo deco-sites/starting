@@ -107,7 +107,7 @@ export default function Header(props: Props) {
 
   return (
     <section class="lg:container fixed top-2 lg:top-6 z-50 w-[calc(100vw-16px)] lg:w-full left-1/2 transform -translate-x-1/2 shadow-[0px_4px_16px_0px_rgba(0,0,0,0.10)]">
-      <nav class="flex flex-row gap-16 items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative justify-between">
+      <nav class="flex flex-row items-center h-[63px] pb-[2px] max-w-screen-2xl m-auto relative justify-between">
         <ul class="h-full flex items-center w-[270px]">
           <li class="h-full">
             <a class="flex items-center h-full pl-4 lg:pl-8 pb-[6px]" href="/">

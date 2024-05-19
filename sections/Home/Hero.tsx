@@ -56,62 +56,66 @@ export default function Hero({
     ]
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-6xl mt-[80px] relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-10 justify-center items-center">
-        <div class="leading-none">
+    <>
+        <div class="deco-background"></div>
+        <div class="lg:mx-auto lg:max-w-6xl mt-[80px] relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-10 justify-center items-center">
+            <div style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);height: 200vh;width: 100vw;position: absolute;top: -150%;"></div>
+            <div class="leading-none">
+                {
+                    pixelTitle &&
+                    <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
+                        __html: pixelTitle
+                    }}></h1>
+                }
+                {
+                    title &&
+                    <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
+                        __html: title
+                    }}></h1>
+                }
+            </div>
             {
-                pixelTitle &&
-                <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
-                    __html: pixelTitle
-                }}></h1>
+                subTitle &&
+                <h2 class="font-albert-sans mx-11 inline-block text-[16px] lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none" dangerouslySetInnerHTML={{
+                    __html: subTitle
+                }}></h2>
             }
-            {
-                title &&
-                <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
-                    __html: title
-                }}></h1>
-            }
+            <div class="flex flex-row gap-4 justify-center items-center">
+                {
+                    ctas?.map(cta => (
+                    <a 
+                        href={cta.href}
+                        class={`hover:from-[#02F67C] hover:to-[#06E474] transition-all duration-300 ease-out hover:shadow-hero text-base text-[#0A2121] bg-[#02F67C] lg:text-lg px-8 py-4 font-extrabold flex uppercase text-center justify-center p-3 rounded-[10px] font-bold flex items-center justify-center`}
+                        target={cta.href.includes("http") ? "_blank" : "_self"}
+                    >
+                        {cta.text}
+                    </a>
+                    ))
+                }
+            </div>
+            <div class="flex flex-row justify-center items-center">
+                {
+                    trustSignals.map(trustSignal => (
+                        <div class="flex flex-col justify-center items-center">
+                            <Image
+                                width={35}
+                                class="mb-1"
+                                src={trustSignal.image}
+                                alt={trustSignal.image}
+                                decoding="async"
+                                loading="lazy"
+                            />
+                            <p class="font-albert-sans mx-11 inline-block text-sm text-center text-gray-400" dangerouslySetInnerHTML={{
+                                __html: trustSignal.subTitle
+                            }}></p>
+                            <p class="font-albert-sans mx-11 inline-block text-lg text-center text-white" dangerouslySetInnerHTML={{
+                                __html: trustSignal.title
+                            }}></p>
+                        </div>
+                    ))
+                }
+            </div>
         </div>
-        {
-            subTitle &&
-            <h2 class="font-albert-sans mx-11 inline-block text-[16px] lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none" dangerouslySetInnerHTML={{
-                __html: subTitle
-            }}></h2>
-        }
-        <div class="flex flex-row gap-4 justify-center items-center">
-            {
-                ctas?.map(cta => (
-                <a 
-                    href={cta.href}
-                    class={`hover:from-[#02F67C] hover:to-[#06E474] transition-all duration-300 ease-out hover:shadow-hero text-base text-[#0A2121] bg-[#02F67C] lg:text-lg px-8 py-4 font-extrabold flex uppercase text-center justify-center p-3 rounded-[10px] font-bold flex items-center justify-center`}
-                    target={cta.href.includes("http") ? "_blank" : "_self"}
-                  >
-                    {cta.text}
-                  </a>
-                ))
-            }
-        </div>
-        <div class="flex flex-row justify-center items-center">
-            {
-                trustSignals.map(trustSignal => (
-                    <div class="flex flex-col justify-center items-center">
-                        <Image
-                            width={35}
-                            class="mb-1"
-                            src={trustSignal.image}
-                            alt={trustSignal.image}
-                            decoding="async"
-                            loading="lazy"
-                        />
-                        <p class="font-albert-sans mx-11 inline-block text-sm text-center text-gray-400" dangerouslySetInnerHTML={{
-                            __html: trustSignal.subTitle
-                        }}></p>
-                        <p class="font-albert-sans mx-11 inline-block text-lg text-center text-white" dangerouslySetInnerHTML={{
-                            __html: trustSignal.title
-                        }}></p>
-                    </div>
-                ))
-            }
-        </div>
-    </div>
+    </>
   );
 }
