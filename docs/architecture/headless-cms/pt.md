@@ -14,11 +14,11 @@ O fluxo de atualização é ilustrado no diagrama abaixo:
 
 Para acessar o conteúdo do seu site Deco em formato JSON a partir de um site ou aplicativo externo, você pode utilizar uma requisição GET simples à URL do site, incluindo uma queryString `asJson`.
 
-Por exemplo, ao acessar a página inicial do seu site de comércio, você verá a página totalmente renderizada e pronta para uso, com todos os elementos visuais e interativos:
+Por exemplo, ao acessar a página inicial do seu storefront, você verá a página totalmente renderizada e pronta para uso, com todos os elementos visuais e interativos:
 
 ![Home page store front](/docs/headless-cms/site.png)
 
-No entanto, se você deseja acessar apenas os dados estruturados da página para utilizá-los em um contexto diferente, como um aplicativo móvel ou uma integração com outro sistema, basta adicionar a query string ?asJson à URL. Isso resultará em uma resposta JSON contendo os dados estruturados correspondentes ao conteúdo da página, permitindo uma fácil integração e manipulação desses dados em seu aplicativo externo:
+No entanto, se você deseja acessar apenas os dados estruturados da página para utilizá-los em um contexto diferente, como um aplicativo móvel ou uma integração com outro sistema, basta adicionar a query string `?asJson` à URL. Isso resultará em uma resposta JSON contendo os dados estruturados correspondentes ao conteúdo da página, permitindo uma fácil integração e manipulação desses dados em seu aplicativo externo:
 
 ![JSON response on request with ?asJson query](/docs/headless-cms/asjson.png)
 
