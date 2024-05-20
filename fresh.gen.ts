@@ -29,7 +29,6 @@ import * as $ForwardBackButtons_ForwardBackButtons from "./islands/ForwardBackBu
 import * as $Graph from "./islands/Graph.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $HelpFaq from "./islands/HelpFaq.tsx";
-import * as $Home_BuildShowcase from "./islands/Home/BuildShowcase.tsx";
 import * as $Home_Header from "./islands/Home/Header.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
 import * as $LiveProjects from "./islands/LiveProjects.tsx";
@@ -88,7 +87,6 @@ const manifest = {
     "./islands/Graph.tsx": $Graph,
     "./islands/Header.tsx": $Header,
     "./islands/HelpFaq.tsx": $HelpFaq,
-    "./islands/Home/BuildShowcase.tsx": $Home_BuildShowcase,
     "./islands/Home/Header.tsx": $Home_Header,
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
     "./islands/LiveProjects.tsx": $LiveProjects,
