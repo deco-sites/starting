@@ -1,6 +1,5 @@
 ---
 description: Exportando Propriedades Padrão em um Bloco
-since: 2.0.0
 ---
 
 # Resumo

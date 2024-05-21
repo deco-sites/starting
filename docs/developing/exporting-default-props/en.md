@@ -1,6 +1,5 @@
 ---
 description: Exporting Default Props in a Block
-since: 2.0.0
 ---
 
 # Summary
