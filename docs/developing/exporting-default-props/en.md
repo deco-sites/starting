@@ -156,7 +156,7 @@ export default Footer;
 Então as propriedades definidas no Admin, o preview, o código e o JSON da section deverá parecer como a imagem a seguir, em vez de aparecer com valores vazios:
 
 
-So Admin props, the preview, the code and the JSON file should look like the following image, instead of having empty values defined:
+So the Admin props, the preview, the code and the JSON file should look like the following image, instead of having empty values defined:
 
 ![Default props exported](https://cdn.discordapp.com/attachments/1080887912943603712/1242515016578502696/image.png?ex=664e1dc8&is=664ccc48&hm=e2226b0359f5b959d676ccbabe9b5663a0ba0a9aad19a949d3633d05ea6489a4&)
 
