@@ -149,9 +149,16 @@ export default Footer;
 
 ## Explanation
 
-1. **Default Prop Values:** The default values for image, href, text, alt, height, width, and xpto are specified directly in the function parameter.
+1. **Default Prop Values:** The default values for image, href, text, alt, height, width, and list are specified directly in the function parameter.
 2. **Props Interface:** The Props interface defines the structure and types of the props.
 3. **Component Logic:** The component logic uses these default values, ensuring they are applied consistently.
+
+Então as propriedades definidas no Admin, o preview, o código e o JSON da section deverá parecer como a imagem a seguir, em vez de aparecer com valores vazios:
+
+
+So Admin props, the preview, the code and the JSON file should look like the following image, instead of having empty values defined:
+
+![Default props exported](https://cdn.discordapp.com/attachments/1080887912943603712/1242515016578502696/image.png?ex=664e1dc8&is=664ccc48&hm=e2226b0359f5b959d676ccbabe9b5663a0ba0a9aad19a949d3633d05ea6489a4&)
 
 # Conclusion
 

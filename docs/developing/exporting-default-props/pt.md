@@ -152,9 +152,13 @@ export default function Footer({ image, href, text, alt, height, width, list }: 
 
 ## Explicação
 
-1. **Valores Padrão de Props:** Os valores padrão para image, href, text, alt, height, width e xpto são especificados diretamente no parâmetro da função.
+1. **Valores Padrão de Props:** Os valores padrão para image, href, text, alt, height, width e list são especificados diretamente no parâmetro da função.
 2. **Interface de Props:** A interface Props define a estrutura e os tipos das props.
 3. **Lógica do Componente:** A lógica do componente usa esses valores padrão, garantindo que sejam aplicados de forma consistente.
+
+Então as propriedades definidas no Admin, o preview, o código e o JSON da section deverá parecer como a imagem a seguir, em vez de aparecer com valores vazios:
+
+![Tela atual com props padrões exportadas](https://cdn.discordapp.com/attachments/1080887912943603712/1242515016578502696/image.png?ex=664e1dc8&is=664ccc48&hm=e2226b0359f5b959d676ccbabe9b5663a0ba0a9aad19a949d3633d05ea6489a4&)
 
 # Conclusão
 
