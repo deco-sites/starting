@@ -37,41 +37,44 @@ interface Props {
   width?: number;
   height?: number;
   text?: string;
-  xpto?: {
-    xpto2: string;
-    xpto3: string[]
+  list?: {
+    listItem: string;
+    listItemArray: string[]
   };
 }
 
-export default function Footer({ image, href, text, alt, height, width }: Props) {
+export default function Footer({ image, href, text, alt, height, width, list }: Props) {
   const defaultImage = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4959/d7aa9290-074f-417c-99c3-5b0587c8c2ee";
   const defaultHref = "https://deco.cx/";
   const defaultText = "Made with";
   const defaultAlt = "Made with deco.cx";
   const defaultHeight = 20;
   const defaultWidth = 50;
-  const defaultXpto = {
-    xpto2: "1",
-    xpto3: ["1", "2"]
+  const defaultList = {
+    listItem: "1",
+    listItemArray: ["1", "2"]
   };
 
   return (
-    <div class="py-8 lg:px-0 px-6 fixed bottom-0 w-full mx-auto">
-      <a
-        href={href || defaultHref}
-        class="flex flex-row gap-1 items-center justify-center text-xs"
-        target="_blank"
-      >
-        {text && <p>{text || defaultText}</p>}
-        {image && (
-          <Image
-            src={image || defaultImage}
-            alt={alt || defaultAlt}
-            height={height || defaultHeight}
-            width={width || defaultWidth}
-          />
-        )}
-      </a>
+    <div>
+        <div class="bg-white">
+        <a
+            href={href || defaultHref}
+            class="flex flex-row gap-1 items-center justify-center text-xs"
+            target="_blank"
+        >
+            {text && <p>{text || defaultText}</p>}
+            {image && (
+            <Image
+                src={image || defaultImage}
+                alt={alt || defaultAlt}
+                height={height || defaultHeight}
+                width={width || defaultWidth}
+            />
+            )}
+        </a>
+        </div>
+        {list && <div>{list || defaultList}</div>}
     </div>
   );
 }
@@ -103,13 +106,13 @@ interface Props {
   width?: number;
   height?: number;
   text?: string;
-  xpto?: {
-    xpto2: string;
-    xpto3: string[]
+  list?: {
+    listItem: string;
+    listItemArray: string[]
   };
 }
 
-function Footer({ image, href, text, alt, height, width }: Props = {
+export default function Footer({ image, href, text, alt, height, width, list }: Props = {
   image:
     "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4959/d7aa9290-074f-417c-99c3-5b0587c8c2ee",
   href: "https://deco.cx/",
@@ -117,34 +120,34 @@ function Footer({ image, href, text, alt, height, width }: Props = {
   alt: "Made with deco.cx",
   height: 20,
   width: 50,
-  xpto: {
-    xpto2: "1",
-    xpto3: ["1", "2"]
+  list: {
+    listItem: "1",
+    listItemArray: ["1", "2"]
   },
 }) {
   return (
-    <div class="py-8 lg:px-0 px-6 fixed bottom-0 w-full mx-auto">
-      <a
-        href={href}
-        class="flex flex-row gap-1 items-center justify-center text-xs"
-        target="_blank"
-      >
-        {text && <p>{text}</p>}
-        {image && (
-          <Image
-            src={image}
-            alt={alt}
-            height={height}
-            width={width}
-          />
-        )}
-      </a>
+    <div>
+        <div class="bg-white">
+        <a
+            href={href}
+            class="flex flex-row gap-1 items-center justify-center text-xs"
+            target="_blank"
+        >
+            {text && <p>{text}</p>}
+            {image && (
+            <Image
+                src={image}
+                alt={alt}
+                height={height}
+                width={width}
+            />
+            )}
+        </a>
+        </div>
+        {list && <div>{list}</div>}
     </div>
   );
 }
-
-export default Footer;
-
 ```
 
 ## Explicação

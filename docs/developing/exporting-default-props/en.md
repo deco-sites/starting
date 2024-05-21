@@ -37,13 +37,13 @@ interface Props {
   width?: number;
   height?: number;
   text?: string;
-  xpto?: {
-    xpto2: string;
-    xpto3: string[]
+  list?: {
+    listItem: string;
+    listItemArray: string[]
   };
 }
 
-export default function Footer({ image, href, text, alt, height, width }: Props) {
+export default function Footer({ image, href, text, alt, height, width, list }: Props) {
   const defaultImage = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4959/d7aa9290-074f-417c-99c3-5b0587c8c2ee";
   const defaultHref = "https://deco.cx/";
   const defaultText = "Made with";
@@ -51,8 +51,8 @@ export default function Footer({ image, href, text, alt, height, width }: Props)
   const defaultHeight = 20;
   const defaultWidth = 50;
   const defaultXpto = {
-    xpto2: "1",
-    xpto3: ["1", "2"]
+    listItem: "1",
+    listItemArray: ["1", "2"]
   };
 
   return (
@@ -63,6 +63,7 @@ export default function Footer({ image, href, text, alt, height, width }: Props)
         target="_blank"
       >
         {text && <p>{text || defaultText}</p>}
+        {list && <div>{list || defaultList}</div>}
         {image && (
           <Image
             src={image || defaultImage}
@@ -101,13 +102,13 @@ interface Props {
   width?: number;
   height?: number;
   text?: string;
-  xpto?: {
-    xpto2: string;
-    xpto3: string[]
+  list?: {
+    listItem: string;
+    listItemArray: string[]
   };
 }
 
-function Footer({ image, href, text, alt, height, width }: Props = {
+function Footer({ image, href, text, alt, height, width, list }: Props = {
   image:
     "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4959/d7aa9290-074f-417c-99c3-5b0587c8c2ee",
   href: "https://deco.cx/",
@@ -115,9 +116,9 @@ function Footer({ image, href, text, alt, height, width }: Props = {
   alt: "Made with deco.cx",
   height: 20,
   width: 50,
-  xpto: {
-    xpto2: "1",
-    xpto3: ["1", "2"]
+  list: {
+    listItem: "1",
+    listItemArray: ["1", "2"]
   },
 }) {
   return (
@@ -128,6 +129,7 @@ function Footer({ image, href, text, alt, height, width }: Props = {
         target="_blank"
       >
         {text && <p>{text}</p>}
+        {list && <div>{list}</div>}
         {image && (
           <Image
             src={image}
