@@ -108,7 +108,7 @@ interface Props {
   };
 }
 
-function Footer({ image, href, text, alt, height, width, list }: Props = {
+export default function Footer({ image, href, text, alt, height, width, list }: Props = {
   image:
     "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4959/d7aa9290-074f-417c-99c3-5b0587c8c2ee",
   href: "https://deco.cx/",
@@ -142,9 +142,6 @@ function Footer({ image, href, text, alt, height, width, list }: Props = {
     </div>
   );
 }
-
-export default Footer;
-
 ```
 
 ## Explanation
