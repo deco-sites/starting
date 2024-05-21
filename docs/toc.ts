@@ -162,6 +162,10 @@ const tableOfContents: TableOfContents = [
         slug: "developing/hello-world",
       },
       {
+        title: { pt: "Exportando Propriedades Padrões em um Bloco", en: "Exporting Default Props in a Block" },
+        slug: "developing/exporting-default-props",
+      },
+      {
         title: {
           pt: "Adicionando interatividade em uma página",
           en: "Client-side interactivity",
