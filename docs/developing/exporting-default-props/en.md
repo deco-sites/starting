@@ -50,7 +50,7 @@ export default function Footer({ image, href, text, alt, height, width, list }: 
   const defaultAlt = "Made with deco.cx";
   const defaultHeight = 20;
   const defaultWidth = 50;
-  const defaultXpto = {
+  const defaultList = {
     listItem: "1",
     listItemArray: ["1", "2"]
   };
