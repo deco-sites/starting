@@ -63,13 +63,13 @@ export default function Hero({
             <div class="leading-none">
                 {
                     pixelTitle &&
-                    <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
+                    <h1 class="font-[argent-pixel] text-[36px] lg:text-[80px] font-medium text-center" dangerouslySetInnerHTML={{
                         __html: pixelTitle
                     }}></h1>
                 }
                 {
                     title &&
-                    <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-white text-center" dangerouslySetInnerHTML={{
+                    <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-center" dangerouslySetInnerHTML={{
                         __html: title
                     }}></h1>
                 }

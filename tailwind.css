@@ -125,6 +125,14 @@
     overflow: hidden;
     height: 100vh;
   }
+
+  @font-face {
+    font-family: 'argent-pixel';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/ArgentPixelCF-Regular.woff2) format('woff2');
+  }
 }
 
 @layer components {
