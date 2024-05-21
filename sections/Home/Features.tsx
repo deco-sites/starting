@@ -54,7 +54,7 @@ export default function Features({
                 features?.map(mark => (
                   <div class="bg-gradient-to-r from-[#272D2D] to-[#0B1612] p-[1px] rounded-2xl flex-1">
                     <div class="bg-[#0D1717] h-full flex flex-row justify-between py-4 px-6 gap-4 rounded-2xl">
-                        <div  class="font-[argent-pixel] text-[30px] text-white" dangerouslySetInnerHTML={{
+                        <div  class="font-[argent-pixel] text-[36px] text-white leading-9" dangerouslySetInnerHTML={{
                             __html: mark.description
                         }}/>
                         <Icon id={mark.icon} size={42} />
