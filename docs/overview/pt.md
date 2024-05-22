@@ -13,7 +13,7 @@ usando uma **stack web simples** com **[Preact](https://preactjs.com/)**,
 **[Tailwind](https://tailwindcss.com)** e **[Deno](https://deno.land/)**. Somos
 a plataforma para criar experiências _headless commerce_.
 
-![deco admin](https://github.com/deco-cx/apps/assets/882438/5a497330-93e5-497d-a572-fde44421d6ac)
+<!-- ![deco admin](https://github.com/deco-cx/apps/assets/882438/5a497330-93e5-497d-a572-fde44421d6ac) -->
 
 Quando você cria um site na _deco.cx_, ele é automaticamente **deployado na
 _edge_ em 12 regiões em todo o mundo** no [Deno Deploy](https://deno.com/). Isso
@@ -45,6 +45,8 @@ empresa, a _deco.cx_ oferece uma maneira inovadora e acessível de criar e
 gerenciar sites e lojas online. Os desenvolvedores e desenvolvedoras cuidam do
 código, mas tornam fácil para os usuários de negócios editar textos e imagens
 sem precisar escrever qualquer código.
+
+<!-- 
 
 ## Exemplo de código
 
@@ -142,3 +144,4 @@ export default ProductShelf;
 
 Exportando apenas a `interface Props`, agora é possível configurar esta
 _Section_ no Admin da _deco.cx_ e adicioná-la às páginas do seu site.
+ -->

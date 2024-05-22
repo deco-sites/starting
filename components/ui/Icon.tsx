@@ -85,7 +85,8 @@ export type AvailableIcons =
   | "Fresh"
   | "ToolHexagon"
   | "sound"
-  | "subtitle";
+  | "subtitle"
+  | "Sparkles";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

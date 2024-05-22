@@ -19,7 +19,7 @@ export function CardLinks({
           <div class="flex items-start justify-between w-full pb-2">
             <div class="bg-decorative-three-900 rounded-full bg-opacity-50 grid place-items-center h-[35px] w-[35px]">
               <div class="bg-decorative-three-900 rounded-full grid place-items-center w-[30px] h-[30px]">
-                <Icon id={icon} size={20} />
+                <Icon class="text-primary-dark" id={icon} size={20} />
               </div>
             </div>
             <Icon class="text-white" id="ArrowRight" size={16}/>

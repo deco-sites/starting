@@ -2,7 +2,6 @@
 import { LoaderReturnType } from "$live/types.ts";
 import { MDFileContent } from "site/components/ui/Types.tsx";
 import MarkdownContent from "site/sections/MarkdownContent.tsx";
-import { getTitleForPost } from "site/docs/toc.ts";
 import { CardLinks } from "site/components/ui/docs/CardLinks.tsx";
 import { JoinDiscordCTA } from "site/components/ui/docs/JoinDiscord.tsx";
 
@@ -12,43 +11,56 @@ interface OverviewContentProps {
     mdContent?: LoaderReturnType<MDFileContent>;
 }
 
-export default function OverviewContent(props: OverviewContentProps) {
+const labels = {
+    readTutorials: {
+        "en": "Read tutorials",
+        "pt": "Leia tutoriais"
+    },
+    newProject: {
+        "en": "Start a new project",
+        "pt": "Comece um novo projeto"
+    },
+    watchTour: {
+        "en": "Watch a guided tour",
+        "pt": "Assista um tour guiado"
+    },
+    haveQuestion: {
+        "en": "Have a question or want to get involved?",
+        "pt": "Tem alguma pergunta ou quer se envolver na comunidade?"
+    },
+    joinDiscord: {
+        "en": "Join our discord",
+        "pt": "Entre no nosso discord"
+    }
+}
+
+export default function OverviewContent(props: OverviewContentProps & { language: "en" | "pt" }) {
     const links : {
         icon: AvailableIcons;
         label: string;
         href: string;
       }[] = [
-        { icon: "Book", label: "Read tutorials", href: "/docs" },
-        { icon: "Star", label: "Start a new project", href: "https://admin.deco.cx"},
-        { icon: "Camera", label: "Watch a guided tour", href: "/docs"},
+        { icon: "Book", label: labels.readTutorials[props.language], href:  `https://deco.cx/docs/${props.language}/getting-started/creating-a-site` },
+        { icon: "Sparkle", label: labels.newProject[props.language], href: "https://admin.deco.cx"},
+        { icon: "Camera", label: labels.watchTour[props.language], href: "https://deco.cx/docs"},
     ];
     return (
     <>
+        <div class="p-4 text-white">
+            <CardLinks links={links} />
+        </div>
         {props.mdContent && <MarkdownContent data={{ ...props.mdContent }} />}
-        <CardLinks links={links} />
-        <JoinDiscordCTA label="Have a question or want to get involved?" buttonLabel="Join our discord" />
+        <div class="p-4">
+            <JoinDiscordCTA label={labels.haveQuestion[props.language]} buttonLabel={labels.joinDiscord[props.language]} />
+        </div>
     </>);
 }
 
-// export const loader = async (props: OverviewContentProps, req: Request) => {
-//     const language = req.url.includes("/pt/") ? "pt" : "en";
+export const loader = (props: OverviewContentProps, req: Request) => {
+    const language = req.url.includes("/pt/") ? "pt" : "en";
 
-//     const url = new URL(
-//         `../../../../../docs/overview/${language}.md`,
-//         import.meta.url,
-//     );
-
-//     const fileContent = await Deno.readTextFile(url);
-
-//     console.log(fileContent);
-
-//     const data = {
-//         content: fileContent,
-//         title: getTitleForPost(language, "overview"),
-//     }
-//     return {
-//       ...props,
-//     //   data,
-//       url: req.url,
-//     }
-//   }
+    return {
+      ...props,
+      language,
+    }
+  }

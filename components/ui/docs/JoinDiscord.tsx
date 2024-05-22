@@ -10,7 +10,7 @@ export function JoinDiscordCTA({
 }) {
   return (
     <div class="w-full relative flex justify-between overflow-hidden bg-decorative-three-900 rounded-2xl text-base-700 p-4">
-      <div class="flex flex-col h-full justify-between items-start gap-4">
+      <div class="flex flex-col h-full justify-between items-start gap-4 z-10 w-4/5">
         <span class="lg:text-[20px] font-semibold">{label}</span>
         <a 
           class="flex text-sm gap-2 px-4 py-2 items-center text-white bg-base-700 rounded-[500px]" 
@@ -22,7 +22,7 @@ export function JoinDiscordCTA({
           <Icon id="ArrowRight" size={16} />
         </a>
       </div>
-      <img class="absolute right-0 bottom-0 h-[80px] lg:h-[110px]" src={asset('/docs/capybara.png')} alt="" />
+      <img class="absolute right-0 bottom-0 h-full" src={asset('/docs/capybara.png')} alt="" />
     </div>
   );
 }
