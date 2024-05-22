@@ -16,7 +16,7 @@ Para iniciar o desenvolvimento do seu App deco, execute o seguinte comando no
 seu terminal:
 
 ```bash
-deno run -A -r https://deco.cx/init
+deno run -A -r https://deco.cx/start
 ```
 
 Este comando inicializará um novo projeto de App deco no diretório atual.
