@@ -93,7 +93,7 @@ function MenuLink({ href, label, targetBlank, nested, ...props }: MenuLink) {
       <a
         target={targetBlank ? "_blank" : "_self"}
         href={href}
-        class="flex items-center h-full px-[24px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-center"
+        class="flex items-center h-full px-[20px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-center"
         style="background-size: 200%;"
       >
         {label}

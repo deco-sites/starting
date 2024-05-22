@@ -108,7 +108,7 @@ export default function Brands({ title, url, firstSlider, secondSlider }: Props)
   );
 
   return (
-    <div class="bg-black py-32">
+    <div class="bg-black pb-40 pt-10 max-w-[1440px] mx-auto">
       <a
         href={url}
         target={url?.includes("http") ? "_blank" : "_self"}
@@ -119,7 +119,7 @@ export default function Brands({ title, url, firstSlider, secondSlider }: Props)
             {title}
           </h2>
         )}
-        <div class="flex flex-col gap-6 pt-6 pb-40">
+        <div class="flex flex-col gap-6 pt-6">
         <LogoSlider logos={firstList} direction="left" />
         <LogoSlider logos={secondList} direction="right" />
         </div>

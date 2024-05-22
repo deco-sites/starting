@@ -42,7 +42,7 @@ export default function Features({
     ]
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-6xl relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-12 justify-center items-center">
+    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-14 lg:py-40 lg:px-0 flex flex-col gap-10 justify-center items-center">
         {
             title &&
             <h2 class="font-albert-sans text-3xl lg:text-5xl font-medium text-white text-center" dangerouslySetInnerHTML={{
@@ -65,7 +65,7 @@ export default function Features({
         </div>
         {
             subTitle &&
-            <h2 class="font-albert-sans text-2xl lg:text-4xl text-white text-center" dangerouslySetInnerHTML={{
+            <h2 class="font-albert-sans text-2xl lg:text-[32px] text-white text-center" dangerouslySetInnerHTML={{
                 __html: subTitle
             }}></h2>
         }

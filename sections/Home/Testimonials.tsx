@@ -97,7 +97,7 @@ export default function Testimonials({
     ]
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-6xl relative z-10 px-4 py-14 lg:py-8 lg:px-0 flex flex-col gap-20 justify-center items-center">
+    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-14 lg:py-40 lg:px-0 flex flex-col gap-20 justify-center items-center">
         {
             title &&
             <h2 class="font-albert-sans text-3xl lg:text-5xl font-medium text-white text-center" dangerouslySetInnerHTML={{
@@ -109,7 +109,7 @@ export default function Testimonials({
                 testimonials?.map(testimonial => (
                     <div class="bg-[#162121] p-[1px] rounded-2xl flex-1 mb-4 overflow-hidden">
                         <div class="bg-[#0D1717] h-full flex flex-col justify-between py-4 px-6 gap-4 rounded-2xl">
-                            <div  class="font-albert-sans text-base text-[#949E9E]" dangerouslySetInnerHTML={{
+                            <div  class="font-albert-sans text-base text-[#949E9E] leading-6" dangerouslySetInnerHTML={{
                                 __html: testimonial.description
                             }}/>
                             <div class="flex flex-row justify-between items-center">

@@ -30,53 +30,51 @@ export interface Props {
     subTitle?: string;
     ctas?: CTA[];
     trustSignals?: TrustSignal[];
+    showRadialOnTop?: boolean;
+    shouldAddPaddingTopAndBottom?: boolean;
 }
 
 export default function Hero({
     pixelTitle = "Professional Web Dev",
     title = "Made Easy & Fun",
-    subTitle = "Find all the capabilities you might need to power anything (or everything). Use only what you need, pay only for what you use.",
+    subTitle,
     ctas = [
         {
             href: '#',
             text: 'Try for Free',
         }
     ],
-    trustSignals = [
-        {
-            image: 'https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8bca99ef-0095-43e0-8abb-315ca2910968',
-            title: 'Product Hunt',
-            subTitle: '#1 Product of the Week'
-        },
-        {
-            image: 'https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b',
-            title: 'Developer Tools',
-            subTitle: '#1 Product of the Week'
-        }
-    ]
+    trustSignals,
+    showRadialOnTop = true,
+    shouldAddPaddingTopAndBottom = true,
 }: Props) {
   return (
     <>
         <div class="deco-background"></div>
-        <div class="lg:mx-auto lg:max-w-6xl mt-[80px] relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-10 justify-center items-center">
-            <div class="h-[200vh] w-[100vw] absolute top-[-200%] lg:top-[-150%]" style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"></div>
+        <div class={`lg:mx-auto lg:max-w-[1440px] ${
+            shouldAddPaddingTopAndBottom &&
+            "mt-[80px]"
+        } relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:pt-40 lg:pb-28 flex flex-col gap-8 justify-center items-center`}>
+            {   showRadialOnTop &&
+                <div class="h-[200vh] w-[100vw] absolute top-[-200%] lg:top-[-150%]" style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"></div>
+            }
             <div class="leading-none">
                 {
                     pixelTitle &&
-                    <h1 class="font-[argent-pixel] text-[36px] lg:text-[80px] font-medium text-center" dangerouslySetInnerHTML={{
+                    <h1 class="font-[argent-pixel] text-[36px] lg:text-[80px] leading-[80px] font-medium text-center" dangerouslySetInnerHTML={{
                         __html: pixelTitle
                     }}></h1>
                 }
                 {
                     title &&
-                    <h1 class="font-albert-sans text-[36px] lg:text-[80px] font-medium text-center" dangerouslySetInnerHTML={{
+                    <h1 class="font-albert-sans text-[36px] lg:text-[80px] leading-[80px] font-medium text-center" dangerouslySetInnerHTML={{
                         __html: title
                     }}></h1>
                 }
             </div>
             {
                 subTitle &&
-                <h2 class="font-albert-sans mx-11 inline-block text-[16px] lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none" dangerouslySetInnerHTML={{
+                <h2 class="font-albert-sans mx-11 inline-block text-[16px] lg:text-[20px] leading-7 text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none" dangerouslySetInnerHTML={{
                     __html: subTitle
                 }}></h2>
             }
@@ -93,28 +91,32 @@ export default function Hero({
                     ))
                 }
             </div>
-            <div class="flex flex-row justify-center items-center">
-                {
-                    trustSignals.map(trustSignal => (
-                        <div class="flex flex-col justify-center items-center">
-                            <Image
-                                width={35}
-                                class="mb-1"
-                                src={trustSignal.image}
-                                alt={trustSignal.image}
-                                decoding="async"
-                                loading="lazy"
-                            />
-                            <p class="font-albert-sans mx-11 inline-block text-sm text-center text-gray-400" dangerouslySetInnerHTML={{
-                                __html: trustSignal.subTitle
-                            }}></p>
-                            <p class="font-albert-sans mx-11 inline-block text-lg text-center text-white" dangerouslySetInnerHTML={{
-                                __html: trustSignal.title
-                            }}></p>
-                        </div>
-                    ))
-                }
-            </div>
+            {   
+                trustSignals &&
+                trustSignals.length > 0 &&
+                <div class="flex flex-row justify-center items-center gap-6 pt-[22px]">
+                    {
+                        trustSignals.map(trustSignal => (
+                            <div class="flex flex-col justify-center items-center">
+                                <Image
+                                    width={35}
+                                    class="mb-1"
+                                    src={trustSignal.image}
+                                    alt={trustSignal.image}
+                                    decoding="async"
+                                    loading="lazy"
+                                />
+                                <p class="font-albert-sans inline-block text-xs text-center text-gray-400" dangerouslySetInnerHTML={{
+                                    __html: trustSignal.title
+                                }}></p>
+                                <p class="font-albert-sans inline-block text-base text-center text-white" dangerouslySetInnerHTML={{
+                                    __html: trustSignal.subTitle
+                                }}></p>
+                            </div>
+                        ))
+                    }
+                </div>
+            }
         </div>
     </>
   );
