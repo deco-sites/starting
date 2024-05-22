@@ -129,8 +129,7 @@ Dependendo da tag que está sendo incluída, é possível que a requisição par
 buscar um script `.js` falhe.
 
 Para resolver esse problema, é necessário criar um **proxy de requests** na sua
-loja (leia mais sobre essa solução
-[aqui](https://partytown.builder.io/proxying-requests)). Como os sites deco.cx
+loja ([leia mais sobre proxys de requests aqui](https://partytown.builder.io/proxying-requests)). Como os sites deco.cx
 são projetos [Fresh](https://fresh.deno.dev/) tradicionais, basta seguir os
 seguintes passos para criar este proxy:
 

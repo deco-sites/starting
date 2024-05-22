@@ -3,7 +3,7 @@ description: Learn how to integrate Deco with the Shopify e-commerce platform.
 ---
 
 This article guides you through creating and configuring a website on
-[**deco.cx**](http://deco.cx) for an online store using data from the Shopify
+[**deco.cx**](https://deco.cx) for an online store using data from the Shopify
 e-commerce platform [Shopify](https://www.shopify.com/).
 
 # Table of Contents

@@ -3,7 +3,7 @@ descrição: Aprenda a integrar o Deco com a plataforma de comércio eletrônico
 ---
 
 Este artigo orienta você na criação e configuração de um website no
-[**deco.cx**](http://deco.cx) para uma _loja virtual_ utilizando dados da
+[**deco.cx**](https://deco.cx) para uma _loja virtual_ utilizando dados da
 plataforma de comércio eletrônico [Nuvemshop](https://www.nuvemshop.com.br/).
 
 # Sumário

@@ -3,7 +3,7 @@ descrição: Learn how to integrate Deco with the Nuvemshop e-commerce platform.
 ---
 
 This article guides you through creating and configuring a website on
-[**deco.cx**](http://deco.cx) for an online store using data from the Nuvemshop
+[**deco.cx**](https://deco.cx) for an online store using data from the Nuvemshop
 e-commerce platform [Nuvemshop](https://www.nuvemshop.com.br/).
 
 # Table of Contents

@@ -3,7 +3,7 @@ description: Learn how to integrate deco with VTEX ecommerce platform.
 ---
 
 This article guides you on creating and configuring a website at
-[**deco.cx**](http://deco.cx) for a _storefront_ using data from
+[**deco.cx**](https://deco.cx) for a _storefront_ using data from
 [VTEX](https://vtex.com/ "https://vtex.com/") ecommerce platform.
 
 > TL;DR: To connect to VTEX you need to change `vtex` app configuration at
