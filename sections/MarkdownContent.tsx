@@ -22,7 +22,6 @@ export default function DocsPage(
 ) {
   let description;
   const frontMatterContent = frontMatter(props.data.content);
-  console.log(frontMatterContent);
   const { body, attrs } = frontMatterContent;
   if (attrs?.description) {
     description = String(attrs.description);
