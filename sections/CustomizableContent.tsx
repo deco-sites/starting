@@ -29,6 +29,7 @@ export const loader = (props: Props, req: Request): SectionProps => {
 export default function CustomizableMarkdownContent(
   props: SectionProps,
 ) {
+  console.log(props.data);
   let matchCustom = undefined;
   if (props.customizable) {
     matchCustom = [...props.customizable].sort((x, y) => {
@@ -88,7 +89,10 @@ export default function CustomizableMarkdownContent(
         </style>
       </Head>
       {matchCustom?.content
-        ? matchCustom.content.map((c) => <c.Component {...c.props} />)
+        ? matchCustom.content.map((c) => {
+          console.log("c.props", c.props);
+          return <c.Component {...c.props} mdContent={props.data} />
+        })
         : <MarkdownContent data={{ ...props.data }} />}
     </>
   );
