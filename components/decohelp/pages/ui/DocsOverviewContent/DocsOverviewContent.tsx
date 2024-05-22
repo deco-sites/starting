@@ -26,7 +26,7 @@ const labels = {
     },
     haveQuestion: {
         "en": "Have a question or want to get involved?",
-        "pt": "Tem alguma pergunta ou quer se envolver na comunidade?"
+        "pt": "Tem alguma pergunta ou quer participar da comunidade?"
     },
     joinDiscord: {
         "en": "Join our discord",

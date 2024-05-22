@@ -38,7 +38,7 @@ export default function Marks({
     ]
 }: Props) {
   return (
-    <div class="container relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:h-screen flex flex-col gap-24 justify-center items-center">
+    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-14 lg:py-40 lg:px-0 flex flex-col gap-24 justify-center items-center">
         {
             title &&
             <h2 class="font-albert-sans text-3xl lg:text-5xl font-medium text-white text-center" dangerouslySetInnerHTML={{
@@ -49,7 +49,7 @@ export default function Marks({
             {
                 marks.map(mark => (
                   <div class="flex flex-col gap-4 flex-1">
-                        <h3 class="font-albert-sans text-5xl lg:text-7xl font-medium text-white" dangerouslySetInnerHTML={{
+                        <h3 class="font-albert-sans text-5xl lg:text-[80px] font-medium text-white" dangerouslySetInnerHTML={{
                             __html: mark.title 
                         }}></h3>
                         <hr />

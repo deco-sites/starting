@@ -74,6 +74,10 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        slideRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
         blur1: {
           "0%": { transform: "translateY(0) translateX(0)" },
           "20%": { transform: "translateY(25%) translateX(0)" },
@@ -609,6 +613,7 @@ export default {
       },
       animation: {
         slide: "slide 25s infinite linear",
+        'slide-right': "slideRight 25s linear infinite",
         blur1: "blur1 15s linear infinite",
         blur2: "blur2 15s linear infinite",
         pageSpeedSwitcherText10: "pageSpeedSwitcherText10 ease 7s infinite",
