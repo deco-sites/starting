@@ -70,6 +70,14 @@ export default {
         spacing: "margin, padding",
       },
       keyframes: {
+        sliding: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        slidingright: {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
+        },
         slide: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
@@ -612,6 +620,8 @@ export default {
         },
       },
       animation: {
+        sliding: "sliding 30s linear infinite",
+        slidingright: "slidingright 30s linear infinite",
         slide: "slide 25s infinite linear",
         'slide-right': "slideRight 25s linear infinite",
         blur1: "blur1 15s linear infinite",
