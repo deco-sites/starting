@@ -13,7 +13,7 @@ export default function MainVideo({
     showSpecialNrfVideo = true
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-14 lg:py-0 lg:px-0">
+    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-0 lg:px-0">
         <div class="mx-auto flex flex-col items-center gap-8">
             {showSpecialNrfVideo && (
             <div class="w-full relative z-10 p-3 rounded-[24px] border border-white/[0.15]">
