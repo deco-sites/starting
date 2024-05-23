@@ -348,7 +348,6 @@ const tableOfContents: TableOfContents = [
         },
         slug: "performance/testing/decometrics",
       },
-      */
       {
         title: {
           pt: "Teste do Core Web Vitals",
@@ -356,6 +355,7 @@ const tableOfContents: TableOfContents = [
         },
         slug: "performance/testing/cwv",
       },
+      */
       {
         title: {
           pt: "Otimizando CSS",

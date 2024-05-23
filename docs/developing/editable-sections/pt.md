@@ -24,7 +24,7 @@ Um componente Preact, é uma função exportada por padrão (`export default`) q
 recebe propriedades, retorna um JSX e é invocada a cada renderização do elemento
 que é definido. Como exemplo, abra, no VSCode, a section `sections/Hero.tsx` do
 template de ecommerce. Este arquivo também está acessível
-[no github da deco](https://github.com/deco-sites/start/blob/main/sections/Hero.tsx).
+[no github da deco](https://github.com/deco-sites/storefront/blob/main/sections/Content/Hero.tsx).
 
 O código deste elemento é escrito em HTML com JS, como no exemplo abaixo.
 

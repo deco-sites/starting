@@ -7,7 +7,7 @@ Este artigo orienta você na criação e configuração de um website no
 plataforma de comércio eletrônico [VTEX](https://vtex.com/ "https://vtex.com/").
 
 > TL;DR: Para se conectar à VTEX, você precisa alterar a configuração do app
-> `vtex` em https://deco.cx/admin/sites/{site}/library?type=apps
+> `vtex` em `https://deco.cx/admin/sites/{site}/library?type=apps`
 
 > **Vídeo**: Para assistir ao conteúdo deste artigo, clique
 > [aqui](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
@@ -143,7 +143,7 @@ Problemas comuns ao conectar-se à VTEX surgem de:
 
    <img width="1281" alt="image" src="https://user-images.githubusercontent.com/18706156/226075931-6ffe568e-a6c9-4850-ad88-2a02f7a9f5f0.png">
 3. Configuração de accountName incorreta. Para descobrir o accountName correto:
-   1. Acesse a URL da sua loja atual, por exemplo: https://www.minhaloja.com.br.
+   1. Acesse a URL da sua loja atual, por exemplo: `https://www.minhaloja.com.br`.
    1. Clique com o botão direito e selecione **Inspecionar**.
    1. Com as _Ferramentas de Desenvolvedor_ abertas, pressione _Ctrl + F_ para
       abrir a busca dentro do código HTML.

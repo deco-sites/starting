@@ -7,7 +7,7 @@ This article guides you on creating and configuring a website at
 [VTEX](https://vtex.com/ "https://vtex.com/") ecommerce platform.
 
 > TL;DR: To connect to VTEX you need to change `vtex` app configuration at
-> https://deco.cx/admin/sites/{site}/library?type=apps
+> `https://deco.cx/admin/sites/{site}/library?type=apps`
 
 > **Video**: To watch the content of this article, click
 > [here](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
@@ -134,7 +134,7 @@ Common issues when connecting to VTEX arises from:
 
    <img width="1281" alt="image" src="https://user-images.githubusercontent.com/18706156/226075931-6ffe568e-a6c9-4850-ad88-2a02f7a9f5f0.png">
 3. Wrong accountName setup. To figure out the right accountName:
-   1. Access your current store URL, e.g.: https://www.mystore.com.br.
+   1. Access your current store URL, e.g.: `https://www.mystore.com.br`.
    1. Right-click and select **Inspect**.
    1. With _Dev Tools_ open, type _Ctrl + F_ to open the search within the HTML.
    1. Search for `vtexassets` or `vteximg` (depending on the store's current
