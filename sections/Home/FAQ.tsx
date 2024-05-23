@@ -97,7 +97,9 @@ export default function Faq({
   return (
     <section class="max-w-[768px] z-10 text-white relative mx-auto px-4 lg:px-0">
       <div class="flex flex-col gap-[64px] m-auto">
-        <h2 class="text-white text-center text-[48px] font-bold leading-[57.6px] font-albert-sans">{title}</h2>
+        <h2 class="text-white text-center text-[48px] font-bold leading-[57.6px] font-albert-sans" dangerouslySetInnerHTML={{
+                __html: title
+            }}></h2>
         <div class="flex flex-col gap-[16px]">
           {questions.map((item) => {
             return <FaqItem {...item} />;
