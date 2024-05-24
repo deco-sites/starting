@@ -508,6 +508,19 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
+  {
+    title: { pt: "Decopilot", en: "Decopilot" },
+    children: [
+      {
+        title: { pt: "Como acessar", en: "How to access" },
+        slug: "decopilot/how-to-access",
+      },
+      {
+        title: { pt: "Modos", en: "Modes" },
+        slug: "decopilot/modes",
+      },
+    ],
+  },
   /*{
     title: {
       pt: "Treinamento Comercial",
