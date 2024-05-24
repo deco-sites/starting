@@ -269,13 +269,13 @@ create a new one and select `storefront-vtex` as a template.
 4. Run `deno task start` in the site's root folder.
 
 If everything is ok, the site should be running and accessible via
-<http://localhost:8000>.
+`http://localhost:8000`.
 
 Let's go to deco's admin for this site to finish our setup.
 
 <!-- Update this after our new apps installation process  -->
 
-1. Access <http://localhost:8000>.
+1. Access `http://localhost:8000`.
 2. Press `.` on your keyboard to be redirected to the CMS.
 3. Click on `Apps` to go to the Apps page in Admin.
 4. In the top right, change the environment to `http://localhost:8000`.
@@ -422,4 +422,4 @@ map the data to schema.org's data types.**
 ## Deploying
 
 Now that the app is already and included in deco hub, **create a Pull Request**
-and send us at https://deco.cx/discord (`#deco-prs` channel).
+and send us at [our Discord server](https://deco.cx/discord) (`#deco-prs` channel).

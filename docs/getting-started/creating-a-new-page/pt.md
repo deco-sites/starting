@@ -51,5 +51,4 @@ testar A/B a nova revisão.
 
 Além do teste A/B, que randomiza quais usuários veem o novo conteúdo, é possível
 segmentar e personalizar o conteúdo no deco.cx usando outros fatores como
-localização, dispositivo e mais. Leia sobre variantes
-[aqui](/docs/pt/getting-started/variants).
+localização, dispositivo e mais. [Leia sobre variantes aqui](/docs/pt/getting-started/variants).

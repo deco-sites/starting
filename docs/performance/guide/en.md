@@ -68,7 +68,7 @@ The main metrics are described below:
 | Speed Index | Performance index of the page's most popular content | up to 3.4             |
 | CLS         | Cumulative Layout Shift                              | up to 0.1             |
 
-> source (adapted): https://web.dev/articles/fcp
+> [source (adapted)](https://web.dev/articles/fcp)
 
 Google aggregates these metrics into an index between 0 and 100, generating the
 pagespeed score.

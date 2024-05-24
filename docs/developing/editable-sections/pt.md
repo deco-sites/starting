@@ -211,7 +211,7 @@ De forma sucinta, para testar alterações na Section `Hero.tsx`:
 
 2. Realize alterações localmente no arquivo `sections/Hero.tsx`.
 
-3. Acesse o Admin de _deco.cx_ em https://deco.cx/admin, selecione seu Site e vá
+3. Acesse o [Admin da _deco.cx_](https://deco.cx/admin), selecione seu Site e vá
    em `Sections`.
 
 4. Certifique-se de que `localhost:8000` esteja selecionado no Seletor de

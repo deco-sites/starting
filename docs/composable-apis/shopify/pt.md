@@ -15,7 +15,7 @@ plataforma de comércio eletrônico [Shopify](https://www.shopify.com/).
 # Pré-requisito
 
 - Um website no Deco. Crie um gratuitamente em
-  [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+  [Deco Admin](https://admin.deco.cx/).
 - Uma conta na Shopify.
 
 # Criando o website
@@ -34,7 +34,7 @@ contrário, siga as etapas deste
 Para se conectar à sua conta na Shopify:
 
 1. Acesse o painel administrativo do seu site em
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. Na barra superior, selecione _blocos_.
 3. Escolha a guia _Apps_.
 4. Selecione o App **shopify.ts** e clique no bloco shopify. Você verá algo
@@ -60,7 +60,7 @@ Após a configuração da Shopify ser concluída, tente adicionar uma prateleira
 seu website.
 
 1. Acesse o painel administrativo do seu site em
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. Na barra superior, selecione _blocos_ e depois _sections_.
 3. Selecione o bloco `/Products/ProductShelf.tsx` e clique no botão `+`.
    <img width="480" alt="imagem" src="https://github.com/site/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">

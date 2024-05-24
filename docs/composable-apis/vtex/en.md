@@ -9,8 +9,7 @@ This article guides you on creating and configuring a website at
 > TL;DR: To connect to VTEX you need to change `vtex` app configuration at
 > `https://deco.cx/admin/sites/{site}/library?type=apps`
 
-> **Video**: To watch the content of this article, click
-> [here](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
+> **Video**: [Watch the content of this article here](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
 
 # Summary
 
@@ -24,7 +23,7 @@ This article guides you on creating and configuring a website at
 # Prerequisites
 
 - A deco webiste. Create one for free at
-  [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+  [Deco Admin](https://admin.deco.cx/).
 - A VTEX account
   [(help)](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC).
 
@@ -69,7 +68,7 @@ unwanted indexing.
 To connect to your VTEX account:
 
 1. Access your site's administrative panel at
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. On the topbar, select _blocks_
 3. Choose the _Apps_ tab
 4. Select the **vtex** app. You should see something like:
@@ -89,7 +88,7 @@ block.
 After the VTEX setup is complete, try adding a shelf to your webiste.
 
 1. Access your site's administrative panel at
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. On the topbar, select _blocks_
 3. Select the block `/Products/ProductShelf.tsx` and click on the `+` button
    <img width="480" alt="image" src="https://github.com/site/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">
@@ -126,7 +125,7 @@ Common issues when connecting to VTEX arises from:
    1. With _Dev Tools_ open, go to **Application** or **Storage**.
    1. On the left side, select the **Cookies** item and select the store's URL.
    1. Look for Cookie `vtex_segment` and **copy its value,**.
-   1. Go to the https://jwt.io website and paste the value.
+   1. Go to the [JWT website](https://jwt.io) and paste the value.
    1. Check the returned JSON. The `channel` field brings the `salesChannel`
       value and the `cultureInfo` field brings the `defaultLocale`.
 

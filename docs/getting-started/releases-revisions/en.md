@@ -19,11 +19,11 @@ the `Revisions` tab to find out when and by which team member a change was made.
 2. Access the page or block you want to work on. For instance (remember to
    replace `$sitename` with your site's name):
    - If you want to access the `Page Listing`, go to
-     <https://admin.deco.cx/sites/$sitename/pages>
+     `https://admin.deco.cx/sites/$sitename/pages`
    - If you want to access the `Section Listing`, go to
-     <https://admin.deco.cx/sites/$sitename/sections>
+     `https://admin.deco.cx/sites/$sitename/sections`
    - There are other blocks that can be configured and accessed through the
-     block listing at <https://admin.deco.cx/sites/$sitename/library>
+     block listing at `https://admin.deco.cx/sites/$sitename/library`
 
 3. On the right sidebar of the screen, you can see the page properties and a
    navigation bar with tabs such as `Form`, `JSON`, and `Revisions` (`↻`).

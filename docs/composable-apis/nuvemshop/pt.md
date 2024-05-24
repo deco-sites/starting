@@ -15,7 +15,7 @@ plataforma de comércio eletrônico [Nuvemshop](https://www.nuvemshop.com.br/).
 # Pré-requisito
 
 - Um website no Deco. Crie um gratuitamente em
-  [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+  [Deco Admin](https://admin.deco.cx/).
 - Uma conta na Nuvemshop.
 
 # Criando o website
@@ -34,7 +34,7 @@ contrário, siga as etapas deste
 Para se conectar à sua conta na Nuvemshop:
 
 1. Acesse o painel administrativo do seu site em
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. Na barra superior, selecione _Apps_.
 3. Selecione o App da **Nuvemshop**. Você verá algo como:
    <img width="480" alt="imagem" src="https://github.com/deco-cx/apps/assets/76620866/5a52d192-cb60-4f84-9be6-9dcc00a1056e">
@@ -68,7 +68,7 @@ Após a configuração da Nuvemshop ser concluída, tente adicionar uma pratelei
 ao seu website.
 
 1. Acesse o painel administrativo do seu site em
-   [https://admin.deco.cx/](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. Na barra superior, selecione _sections_.
 3. Selecione o bloco `ProductShelf` e clique no botão `+`.
    <img width="180" alt="imagem" src="https://github.com/deco-cx/apps/assets/76620866/cbd54a38-3caf-431f-aeaf-b8eb2548626e">
