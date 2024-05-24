@@ -4,6 +4,7 @@ import Image from "apps/website/components/Image.tsx";
 export interface Starting {
   label: string;
   image: ImageWidget;
+  cta?: string;
   href: string;
 }
 
@@ -22,7 +23,7 @@ export default function StartingCards({
   cards = [
     {
       image:
-        "../../static/new-landing/Benefit #2.png",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/88b0bc70-00a1-4330-9f2e-88e3b68d3e12",
       label: "Landing Pages",
       cta: "Start now",
       href: "/",
@@ -78,15 +79,41 @@ export default function StartingCards({
             key={index}
           >
             <div class="h-full flex flex-col items-start justify-end gap-4">
-              <Image
-                width={300}
-                height={270}
-                src={card.image}
-                alt={card.image}
-                decoding="async"
-                loading="lazy"
-                class="w-full f-full object-cover"
+            <Image
+              width={32}
+              src={card.image}
+              alt={card.image}
+              decoding="async"
+              loading="lazy"
+            />
+              <div
+                class="font-albert-sans text-[24px] lg:text-[32px] font-semibold leading-[110%] text-white"
+                dangerouslySetInnerHTML={{
+                  __html: card.label,
+                }}
               />
+              <a
+                class="flex px-3 py-[6px] lg:py-2 lg:px-4 items-center gap-2 rounded-[10px] bg-[#DA8FFF]"
+                href={card.href}
+              >
+                <span class="font-bold text-[#0A2121] text-[12px] lg:text-[14px] leading-[140%]">
+                  {card.cta}
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.21967 3.96967C9.51256 3.67678 9.98744 3.67678 10.2803 3.96967L14.7803 8.46967C15.0732 8.76256 15.0732 9.23744 14.7803 9.53033L10.2803 14.0303C9.98744 14.3232 9.51256 14.3232 9.21967 14.0303C8.92678 13.7374 8.92678 13.2626 9.21967 12.9697L12.4393 9.75H3.75C3.33579 9.75 3 9.41421 3 9C3 8.58579 3.33579 8.25 3.75 8.25H12.4393L9.21967 5.03033C8.92678 4.73744 8.92678 4.26256 9.21967 3.96967Z"
+                    fill="#0D1717"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
         ))}
