@@ -1,6 +1,7 @@
 import Image from "deco-sites/std/components/Image.tsx";
 import { useMemo } from "preact/hooks";
 import type { Image as ImageType } from "deco-sites/std/components/types.ts";
+import { App, AppContext as AC } from "$live/mod.ts";
 
 export interface Image {
   label: string;
@@ -11,7 +12,10 @@ export interface Image {
 export interface Props {
   themeDark?: boolean;
   title?: string;
-  url?: string;
+  cta?: {
+    label?: string;
+    href?: string;
+  };
   firstSlider?: Image[];
   secondSlider?: Image[];
   thirdSlider?: Image[];
@@ -64,16 +68,22 @@ const THIRD_IMAGES = [
 
 const TITLE = "Trusted by the most awesome super duper incredible brand:";
 
-const LogoSlider = ({ logos, direction }: { logos: Image[], direction: 'left' | 'right' }) => {
+const LogoSlider = (
+  { logos, direction }: { logos: Image[]; direction: "left" | "right" },
+) => {
   const renderLogoSlide = () => (
-    <div className={`flex z-10 ${direction === 'left' ? 'animate-slide' : 'animate-slide-right'}`}>
+    <div
+      className={`flex z-10 ${
+        direction === "left" ? "animate-slide" : "animate-slide-right"
+      }`}
+    >
       {logos.map((logo) => (
         <div
-          class="flex items-center justify-center h-16 w-36 lg:w-52"
+          class="flex items-center mx-[9px] justify-center h-[140px] lg:h-[270px] w-[248px] lg:w-[477px]"
           target="_blank"
         >
           <img
-            src={logo.mobile}
+            src={logo.desktop}
             alt={logo.label}
           />
         </div>
@@ -82,32 +92,33 @@ const LogoSlider = ({ logos, direction }: { logos: Image[], direction: 'left' | 
   );
 
   return (
-    
-      <div className="logos overflow-hidden py-15 relative">
-        <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
-        </div>
-        <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
-        </div>
-        <div
-          className="flex whitespace-nowrap"
-          onMouseEnter={(
-            e,
-          ) => (e.currentTarget.style.animationPlayState = "paused")}
-          onMouseLeave={(
-            e,
-          ) => (e.currentTarget.style.animationPlayState = "running")}
-        >
-          {renderLogoSlide()}
-          {renderLogoSlide()}
-          {renderLogoSlide()}
-          {renderLogoSlide()}
-          {renderLogoSlide()}
-        </div>
+    <div className="logos overflow-hidden py-15 relative">
+      <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
       </div>
+      <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
+      </div>
+      <div
+        className="flex whitespace-nowrap"
+        onMouseEnter={(
+          e,
+        ) => (e.currentTarget.style.animationPlayState = "paused")}
+        onMouseLeave={(
+          e,
+        ) => (e.currentTarget.style.animationPlayState = "running")}
+      >
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+      </div>
+    </div>
   );
 };
 
-export default function SitesCarousel({ title, url, firstSlider, secondSlider, thirdSlider }: Props) {
+export default function SitesCarousel(
+  { title, cta, firstSlider, secondSlider, thirdSlider }: Props,
+) {
   const firstList = useMemo(
     () =>
       firstSlider && firstSlider.length > 0 ? firstSlider : Array(6)
@@ -132,22 +143,36 @@ export default function SitesCarousel({ title, url, firstSlider, secondSlider, t
 
   return (
     <div class="bg-black pb-40 pt-10 max-w-[1440px] mx-auto">
-      <a
-        href={url}
-        target={url?.includes("http") ? "_blank" : "_self"}
-        class="flex flex-col gap-y-12"
-      >
+      <div class="flex flex-col gap-y-12">
         {title && (
           <h2 class="text-white font-medium lg:text-[24px] leading-[100%] text-center z-10">
             {title}
           </h2>
         )}
-        <div class="flex flex-col gap-6 pt-6">
-        <LogoSlider logos={firstList} direction="left" />
-        <LogoSlider logos={secondList} direction="right" />
-        <LogoSlider logos={thirdList} direction="left" />
+        <div class="flex flex-col gap-6 pt-6 justify-center">
+          <a
+            href={cta?.href}
+            class="absolute w-[max-content] left-1/2 z-30 right-[39%] items-start border-[5px] border-[#113032] bg-[#02F67C] made-in-deco justify-center flex gap-4 px-6 py-8 font-[argent-pixel] text-[#113032] text-[20px] lg:text-[48px] leading-[120%]"
+          >
+            {cta?.label}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="58"
+              height="59"
+              viewBox="0 0 58 59"
+              fill="none"
+            >
+              <path
+                d="M53.4688 17.7188V30.4062H49.8438V34.0312H46.2188V37.6562H42.5938V41.2812H38.9688V44.9062H35.3438V48.5312H31.7188V52.1562H26.2813V48.5312H22.6563V44.9062H19.0313V41.2812H15.4063V37.6562H11.7813V34.0312H8.15626V30.4062H4.53126V17.7188H8.15626V14.0938H11.7813V9.5625H23.5625V14.0938H27.1875V17.7188H30.8125V14.0938H34.4375V9.5625H46.2188V14.0938H49.8438V17.7188H53.4688Z"
+                fill="#113032"
+              />
+            </svg>
+          </a>
+          <LogoSlider logos={firstList} direction="left" />
+          <LogoSlider logos={secondList} direction="right" />
+          <LogoSlider logos={thirdList} direction="left" />
         </div>
-      </a>
+      </div>
     </div>
   );
 }

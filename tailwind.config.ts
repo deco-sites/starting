@@ -50,6 +50,7 @@ export default {
           "linear-gradient(to bottom, #F3FFF9 300px, #ffffff 20%);",
       },
       boxShadow: {
+        "made-in-deco": '0px 48px 13px 0px rgba(0, 0, 0, 0.00), 0px 31px 12px 0px rgba(0, 0, 0, 0.04), 0px 17px 10px 0px rgba(0, 0, 0, 0.13), 0px 8px 8px 0px rgba(0, 0, 0, 0.21), 0px 2px 4px 0px rgba(0, 0, 0, 0.25)',
         "watch-our-demo":
           "rgb(0, 0, 0) 0px 0px 0px 2px, #DA8FFF 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
         hero:
