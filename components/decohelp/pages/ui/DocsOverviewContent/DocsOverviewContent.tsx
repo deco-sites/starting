@@ -41,7 +41,7 @@ export default function OverviewContent(props: OverviewContentProps & { language
         href: string;
       }[] = [
         { icon: "Book", label: labels.readTutorials[props.language], href:  `https://deco.cx/docs/${props.language}/getting-started/creating-a-site` },
-        { icon: "Sparkle", label: labels.newProject[props.language], href: "https://admin.deco.cx"},
+        { icon: "Sparkle", label: labels.newProject[props.language], href: "https://admin.deco.cx/spaces/new"},
         { icon: "Camera", label: labels.watchTour[props.language], href: "https://deco.cx/docs"},
     ];
     return (
