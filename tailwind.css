@@ -29,6 +29,14 @@
   details[open] summary svg {
     transform: rotate(90deg);
   }
+
+  details.home-faq summary svg {
+    transition: all .1s linear;
+  }
+
+  details[open].home-faq summary svg {
+    transform: rotate(45deg);
+  }
   
   details[open].syllabus summary svg {
     transform: rotate(180deg);

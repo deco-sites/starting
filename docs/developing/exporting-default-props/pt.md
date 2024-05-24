@@ -158,7 +158,7 @@ export default function Footer({ image, href, text, alt, height, width, list }: 
 
 Então as propriedades definidas no Admin, o preview, o código e o JSON da section deverá parecer como a imagem a seguir, em vez de aparecer com valores vazios:
 
-![Tela atual com props padrões exportadas](https://cdn.discordapp.com/attachments/1080887912943603712/1242515016578502696/image.png?ex=664e1dc8&is=664ccc48&hm=e2226b0359f5b959d676ccbabe9b5663a0ba0a9aad19a949d3633d05ea6489a4&)
+![Tela atual com props padrões exportadas](/docs/exporting-default-props/export-default-props-example.png)
 
 # Conclusão
 
