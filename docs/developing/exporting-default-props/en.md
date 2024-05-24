@@ -152,7 +152,7 @@ export default function Footer({ image, href, text, alt, height, width, list }: 
 
 So the Admin props, the preview, the code and the JSON file should look like the following image, instead of having empty values defined:
 
-![Default props exported](https://cdn.discordapp.com/attachments/1080887912943603712/1242515016578502696/image.png?ex=664e1dc8&is=664ccc48&hm=e2226b0359f5b959d676ccbabe9b5663a0ba0a9aad19a949d3633d05ea6489a4&)
+![Default props exported](/docs/exporting-default-props/export-default-props-example.png)
 
 # Conclusion
 
