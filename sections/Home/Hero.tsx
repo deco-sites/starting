@@ -41,7 +41,7 @@ export default function Hero({
     <div>
         <div class="deco-background"></div>
         {   showRadialOnTop &&
-            <div class="h-[200vh] z-10 w-[100vw] md:w-[200vw] absolute top-[-130%] md:top-[-135%] md:right-[-100%] lg:w-[100vw] lg:right-0 lg:top-[-150%]" style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"></div>
+            <div class="h-[200vh] z-10 w-[100vw] md:w-[100vw] absolute top-[-130%] lg:w-[100vw] lg:top-[-150%]" style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"></div>
         }
         <div class={`lg:mx-auto z-20 lg:max-w-[1440px] ${
             shouldAddPaddingTopAndBottom &&
