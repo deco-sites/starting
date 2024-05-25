@@ -104,39 +104,39 @@ export default function Testimonials({
                 __html: title
             }}></h2>
         }
-        <div class="columns-1 lg:columns-3 gap-8 w-full">
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-8 w-full">
             {
                 testimonials?.map(testimonial => (
-                    <div class="bg-[#162121] p-[1px] rounded-2xl flex-1 mb-4 overflow-hidden">
-                        <div class="bg-[#0D1717] h-full flex flex-col justify-between py-4 px-6 gap-4 rounded-2xl">
-                            <div  class="font-albert-sans text-base text-[#949E9E] leading-6" dangerouslySetInnerHTML={{
-                                __html: testimonial.description
-                            }}/>
-                            <div class="flex flex-row justify-between items-center">
-                                <div class="flex flex-row items-center gap-4">
-                                    <Image
-                                        width={32}
-                                        src={testimonial.image}
-                                        alt={testimonial.image}
-                                        decoding="async"
-                                        loading="lazy"
-                                    />
-                                    <div  class="font-albert-sans text-base text-white" dangerouslySetInnerHTML={{
-                                        __html: testimonial.name
-                                    }}/>
+                    <a href={testimonial.href}>
+                        <div class="bg-[#162121] p-[1px] rounded-2xl flex-1 mb-4 overflow-hidden">
+                            <div class="bg-[#0D1717] h-full flex flex-col justify-between py-4 px-6 gap-4 rounded-2xl">
+                                <div  class="font-albert-sans text-base text-[#949E9E] leading-6" dangerouslySetInnerHTML={{
+                                    __html: testimonial.description
+                                }}/>
+                                <div class="flex flex-row justify-between items-center">
+                                    <div class="flex flex-row items-center gap-4">
+                                        <Image
+                                            width={32}
+                                            src={testimonial.image}
+                                            alt={testimonial.image}
+                                            decoding="async"
+                                            loading="lazy"
+                                        />
+                                        <div  class="font-albert-sans text-base text-white" dangerouslySetInnerHTML={{
+                                            __html: testimonial.name
+                                        }}/>
+                                    </div>
+                                        <Image
+                                            width={18}
+                                            src={"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50f5e3c5-2b8a-4f4f-a0f9-87fb91d83144"}
+                                            alt={"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50f5e3c5-2b8a-4f4f-a0f9-87fb91d83144"}
+                                            decoding="async"
+                                            loading="lazy"
+                                        />
                                 </div>
-                                <a href={testimonial.href}>
-                                    <Image
-                                        width={18}
-                                        src={"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50f5e3c5-2b8a-4f4f-a0f9-87fb91d83144"}
-                                        alt={"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50f5e3c5-2b8a-4f4f-a0f9-87fb91d83144"}
-                                        decoding="async"
-                                        loading="lazy"
-                                    />
-                                </a>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 ))
             }
         </div>

@@ -38,7 +38,7 @@ export default function Marks({
     ]
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-14 lg:py-40 lg:px-0 flex flex-col gap-24 justify-center items-center">
+    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-14 lg:py-40 md:px-[24px] lg:px-0 flex flex-col gap-24 justify-center items-center">
         {
             title &&
             <h2 class="font-albert-sans text-3xl lg:text-5xl font-medium text-white text-center" dangerouslySetInnerHTML={{
