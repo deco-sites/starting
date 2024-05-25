@@ -41,12 +41,12 @@ export default function Hero({
     <div>
         <div class="deco-background"></div>
         {   showRadialOnTop &&
-            <div class="h-[200vh] z-10 w-[100vw] absolute top-[-150%] md:top-[-200%] lg:top-[-150%]" style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"></div>
+            <div class="h-[200vh] z-10 w-[100vw] md:w-[200vw] absolute top-[-130%] md:top-[-135%] md:right-[-100%] lg:w-[100vw] lg:right-0 lg:top-[-150%]" style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"></div>
         }
         <div class={`lg:mx-auto z-20 lg:max-w-[1440px] ${
             shouldAddPaddingTopAndBottom &&
             "mt-[80px]"
-        } relative z-10 px-4 py-14 lg:py-0 lg:px-0 lg:pt-40 lg:pb-28 flex flex-col gap-8 justify-center items-center`}>
+        } relative z-20 px-4 py-14 pb-8 lg:py-0 lg:px-0 lg:pt-40 lg:pb-8 flex flex-col gap-8 justify-center items-center`}>
             <div class="leading-none">
                 {
                     pixelTitle &&

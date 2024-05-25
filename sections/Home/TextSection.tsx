@@ -12,15 +12,13 @@ export default function TextSection({
     description = "deco.cx is the platform that delivers:"
 }: Props) {
   return (
-    <div class="bg-[#070D0D] lg:mx-auto relative z-10 p-[100px] flex flex-col gap-10 justify-center items-center">
-        <div class="bg-[#030806] border border-[#02F67C] rounded-2xl p-[80px]">
-            {
-                description &&
-                <h2 class="lg:max-w-[1440px] text-[36px] lg:text-[64px] font-medium leading-[43.2px] lg:leading-[76.8px] text-white text-left" dangerouslySetInnerHTML={{
-                    __html: description
-                }}></h2>
-            }
-        </div>
+    <div class="bg-[#0D1717] lg:mx-auto relative z-10 px-4 py-[48px] lg:py-[124px] lg:px-0 flex flex-col gap-10 justify-center items-center">
+        {
+            description &&
+            <h2 class="lg:max-w-[1440px] text-[36px] lg:text-[64px] font-medium leading-[43.2px] lg:leading-[76.8px] text-white text-left" dangerouslySetInnerHTML={{
+                __html: description
+            }}></h2>
+        }
     </div>
   );
 }

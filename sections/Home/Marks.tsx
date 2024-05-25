@@ -45,15 +45,15 @@ export default function Marks({
                 __html: title
             }}></h2>
         }
-        <div class="flex flex-col lg:flex-row gap-8 w-full">
+        <div class="flex flex-col md:flex-row gap-8 w-full">
             {
                 marks.map(mark => (
                   <div class="flex flex-col gap-4 flex-1">
-                        <h3 class="font-albert-sans text-[80px] text-center lg:text-left font-medium text-white" dangerouslySetInnerHTML={{
+                        <h3 class="font-albert-sans text-[80px] text-center md:text-left font-medium text-white" dangerouslySetInnerHTML={{
                             __html: mark.title 
                         }}></h3>
                         <hr />
-                        <div  class="font-albert-sans text-base text-center lg:text-left text-white" dangerouslySetInnerHTML={{
+                        <div  class="font-albert-sans text-sm lg:text-base text-center md:text-left text-white" dangerouslySetInnerHTML={{
                             __html: mark.description
                         }}/>
                     </div>
