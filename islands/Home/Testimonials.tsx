@@ -121,6 +121,7 @@ export default function Testimonials({
           removeEventListener("resize", handleResize);
         };
     }, []);
+    
   return (
     <div class="relative lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-14 lg:py-40 lg:px-0 flex flex-col gap-20 justify-center items-center">
         {
@@ -129,11 +130,7 @@ export default function Testimonials({
                 __html: title
             }}></h2>
         }
-        <div class="max-h-[800px] overflow-hidden lg:max-h-[auto]"
-            style={{
-                maxHeight: isMobile ? (show ? 'auto' : '800px') : 'auto'
-            }}
-        >
+        <div class={`overflow-hidden lg:max-h-[auto] ${isMobile ? (show  ? 'max-h-[auto]' : 'max-h-[800px]') : 'max-h-[auto]'}`}>
             <div class="columns-1 md:columns-2 lg:columns-3 gap-8 w-full">
                 {
                     testimonials?.map(testimonial => (
@@ -170,9 +167,15 @@ export default function Testimonials({
                     ))
                 }
             </div>
+            {
+                isMobile && show &&
+                <div class="w-full p-[48px] pt-[24px] flex">
+                    <button onClick={() => setShow(false)} class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]">{showLessLabel}</button>
+                </div>
+            }
         </div>
         {
-            isMobile &&
+            isMobile && !show &&
             <div class="w-full p-[48px] flex absolute bottom-0 mb-14"
                 style={{
                     background: 'linear-gradient(180deg, rgba(255,255,255,0) 0%, #030806 85%)'
