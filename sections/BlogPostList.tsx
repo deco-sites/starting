@@ -13,22 +13,19 @@ export type Props = {
 };
 
 export default function MarkdownContainer(props: Props) {
-  const postsList = props.postList;
-  const highlightPost = postsList.posts[0];
-  const normalPosts = postsList.posts.filter(
-    (post) => postsList.posts.indexOf(post) != 0,
-  );
+  const { postList } = props;
+  const [newest, ...older] = postList?.posts ?? [];
 
   return (
     <section class="bg-black">
       <div class="pt-24 md:pt-40 px-8 lg:px-16 mx-auto container">
         <FeaturedPost
-          {...highlightPost}
-          path={getBlogPath(highlightPost.path, props.locale)}
+          {...newest}
+          path={getBlogPath(newest.path, props.locale)}
           locale={props.locale}
         />
         <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3 md:gap-8 lg:gap-y-20 lg:gap-x-11 py-20">
-          {normalPosts.map((post) => (
+          {older.map((post) => (
             <BlogPostCard
               {...post}
               path={getBlogPath(post.path, props.locale)}
