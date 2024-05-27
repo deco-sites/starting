@@ -26,26 +26,26 @@ import * as $$$$$$2 from "./sections/BlogHeader.tsx";
 import * as $$$$$$3 from "./sections/BlogPostHeader.tsx";
 import * as $$$$$$4 from "./sections/BlogPostList.tsx";
 import * as $$$$$$5 from "./sections/BlogPostSEO.tsx";
-import * as $$$$$$11 from "./sections/Camp/Achievements/Achievements.tsx";
-import * as $$$$$$12 from "./sections/Camp/Benefits/Benefits.tsx";
-import * as $$$$$$13 from "./sections/Camp/Benefits/HowItWorks.tsx";
-import * as $$$$$$14 from "./sections/Camp/DndButtons.tsx";
-import * as $$$$$$15 from "./sections/Camp/FAQ/Faq.tsx";
-import * as $$$$$$16 from "./sections/Camp/Gallery.tsx";
-import * as $$$$$$17 from "./sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx";
-import * as $$$$$$18 from "./sections/Camp/Hero/Hero.tsx";
-import * as $$$$$$19 from "./sections/Camp/Images/Carousel.tsx";
-import * as $$$$$$20 from "./sections/Camp/Mentors/Mentors.tsx";
-import * as $$$$$$21 from "./sections/Camp/Prices/Prices.tsx";
-import * as $$$$$$22 from "./sections/Camp/Problem/Problem.tsx";
-import * as $$$$$$23 from "./sections/Camp/Program/Program.tsx";
-import * as $$$$$$24 from "./sections/Camp/Syllabus/Syllabus.tsx";
-import * as $$$$$$25 from "./sections/Camp/Theme/Theme.tsx";
-import * as $$$$$$6 from "./sections/CampComments.tsx";
-import * as $$$$$$7 from "./sections/CampHero.tsx";
-import * as $$$$$$8 from "./sections/CampMentor.tsx";
-import * as $$$$$$9 from "./sections/CampRegistration.tsx";
-import * as $$$$$$10 from "./sections/CampSteps.tsx";
+import * as $$$$$$6 from "./sections/Camp/Achievements/Achievements.tsx";
+import * as $$$$$$7 from "./sections/Camp/Benefits/Benefits.tsx";
+import * as $$$$$$8 from "./sections/Camp/Benefits/HowItWorks.tsx";
+import * as $$$$$$9 from "./sections/Camp/DndButtons.tsx";
+import * as $$$$$$10 from "./sections/Camp/FAQ/Faq.tsx";
+import * as $$$$$$11 from "./sections/Camp/Gallery.tsx";
+import * as $$$$$$12 from "./sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx";
+import * as $$$$$$13 from "./sections/Camp/Hero/Hero.tsx";
+import * as $$$$$$14 from "./sections/Camp/Images/Carousel.tsx";
+import * as $$$$$$15 from "./sections/Camp/Mentors/Mentors.tsx";
+import * as $$$$$$16 from "./sections/Camp/Prices/Prices.tsx";
+import * as $$$$$$17 from "./sections/Camp/Problem/Problem.tsx";
+import * as $$$$$$18 from "./sections/Camp/Program/Program.tsx";
+import * as $$$$$$19 from "./sections/Camp/Syllabus/Syllabus.tsx";
+import * as $$$$$$20 from "./sections/Camp/Theme/Theme.tsx";
+import * as $$$$$$21 from "./sections/CampComments.tsx";
+import * as $$$$$$22 from "./sections/CampHero.tsx";
+import * as $$$$$$23 from "./sections/CampMentor.tsx";
+import * as $$$$$$24 from "./sections/CampRegistration.tsx";
+import * as $$$$$$25 from "./sections/CampSteps.tsx";
 import * as $$$$$$26 from "./sections/Carousel.tsx";
 import * as $$$$$$27 from "./sections/Case/ArticleBannerCTA.tsx";
 import * as $$$$$$28 from "./sections/Case/ArticleDivider.tsx";
@@ -216,26 +216,26 @@ const manifest = {
     "site/sections/BlogPostHeader.tsx": $$$$$$3,
     "site/sections/BlogPostList.tsx": $$$$$$4,
     "site/sections/BlogPostSEO.tsx": $$$$$$5,
-    "site/sections/Camp/Achievements/Achievements.tsx": $$$$$$11,
-    "site/sections/Camp/Benefits/Benefits.tsx": $$$$$$12,
-    "site/sections/Camp/Benefits/HowItWorks.tsx": $$$$$$13,
-    "site/sections/Camp/DndButtons.tsx": $$$$$$14,
-    "site/sections/Camp/FAQ/Faq.tsx": $$$$$$15,
-    "site/sections/Camp/Gallery.tsx": $$$$$$16,
-    "site/sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx": $$$$$$17,
-    "site/sections/Camp/Hero/Hero.tsx": $$$$$$18,
-    "site/sections/Camp/Images/Carousel.tsx": $$$$$$19,
-    "site/sections/Camp/Mentors/Mentors.tsx": $$$$$$20,
-    "site/sections/Camp/Prices/Prices.tsx": $$$$$$21,
-    "site/sections/Camp/Problem/Problem.tsx": $$$$$$22,
-    "site/sections/Camp/Program/Program.tsx": $$$$$$23,
-    "site/sections/Camp/Syllabus/Syllabus.tsx": $$$$$$24,
-    "site/sections/Camp/Theme/Theme.tsx": $$$$$$25,
-    "site/sections/CampComments.tsx": $$$$$$6,
-    "site/sections/CampHero.tsx": $$$$$$7,
-    "site/sections/CampMentor.tsx": $$$$$$8,
-    "site/sections/CampRegistration.tsx": $$$$$$9,
-    "site/sections/CampSteps.tsx": $$$$$$10,
+    "site/sections/Camp/Achievements/Achievements.tsx": $$$$$$6,
+    "site/sections/Camp/Benefits/Benefits.tsx": $$$$$$7,
+    "site/sections/Camp/Benefits/HowItWorks.tsx": $$$$$$8,
+    "site/sections/Camp/DndButtons.tsx": $$$$$$9,
+    "site/sections/Camp/FAQ/Faq.tsx": $$$$$$10,
+    "site/sections/Camp/Gallery.tsx": $$$$$$11,
+    "site/sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx": $$$$$$12,
+    "site/sections/Camp/Hero/Hero.tsx": $$$$$$13,
+    "site/sections/Camp/Images/Carousel.tsx": $$$$$$14,
+    "site/sections/Camp/Mentors/Mentors.tsx": $$$$$$15,
+    "site/sections/Camp/Prices/Prices.tsx": $$$$$$16,
+    "site/sections/Camp/Problem/Problem.tsx": $$$$$$17,
+    "site/sections/Camp/Program/Program.tsx": $$$$$$18,
+    "site/sections/Camp/Syllabus/Syllabus.tsx": $$$$$$19,
+    "site/sections/Camp/Theme/Theme.tsx": $$$$$$20,
+    "site/sections/CampComments.tsx": $$$$$$21,
+    "site/sections/CampHero.tsx": $$$$$$22,
+    "site/sections/CampMentor.tsx": $$$$$$23,
+    "site/sections/CampRegistration.tsx": $$$$$$24,
+    "site/sections/CampSteps.tsx": $$$$$$25,
     "site/sections/Carousel.tsx": $$$$$$26,
     "site/sections/Case/ArticleBannerCTA.tsx": $$$$$$27,
     "site/sections/Case/ArticleDivider.tsx": $$$$$$28,
