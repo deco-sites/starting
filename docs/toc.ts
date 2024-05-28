@@ -593,6 +593,21 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },*/
+  {
+    title: {
+      pt: "Referência da API",
+      en: "API Reference",
+    },
+    children: [
+      {
+        title: {
+          pt: "useSection",
+          en: "useSection",
+        },
+        slug: "api-reference/use-section",
+      },
+    ],
+  },
 ];
 
 if (import.meta.main) {

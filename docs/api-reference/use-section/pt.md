@@ -1,4 +1,6 @@
-# Referência da API `useSection`
+---
+description: useSection API reference
+---
 
 O hook `useSection` no deco.cx é uma ferramenta poderosa projetada para gerar automaticamente links para atualização e renderização de seções. Com este hook, você pode usar os Partials do HTMX ou Fresh para renderizar estados específicos de seções. Abaixo está uma explicação detalhada de seu uso, parâmetros e exemplos.
 
