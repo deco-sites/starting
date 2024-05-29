@@ -7,6 +7,7 @@ export interface Image {
   label: string;
   mobile: ImageType;
   desktop?: ImageType;
+  href?: string;
 }
 
 export interface Props {
@@ -78,7 +79,8 @@ const LogoSlider = (
       }`}
     >
       {logos.map((logo) => (
-        <div
+        <a
+          href={logo.href ?? "/"}
           class="flex items-center mx-[9px] justify-center h-[140px] lg:h-[270px] w-[248px] lg:w-[477px]"
           target="_blank"
         >
@@ -86,7 +88,7 @@ const LogoSlider = (
             src={logo.desktop}
             alt={logo.label}
           />
-        </div>
+        </a>
       ))}
     </div>
   );
@@ -142,7 +144,7 @@ export default function SitesCarousel(
   );
 
   return (
-    <div class="bg-black pb-40 pt-10 max-w-[1440px] mx-auto">
+    <div class="bg-black py-12 lg:py-40 max-w-[1440px] mx-auto">
       <div class="flex flex-col gap-y-12">
         {title && (
           <h2 class="text-white font-medium lg:text-[24px] leading-[100%] text-center z-10">
@@ -152,7 +154,7 @@ export default function SitesCarousel(
         <div class="flex flex-col gap-6 pt-6 justify-center">
           <a
             href={cta?.href}
-            class="absolute w-[max-content] left-1/2 transform -translate-x-1/2 z-30 items-center border-[5px] border-[#113032] bg-[#02F67C] made-in-deco justify-center flex gap-4 px-6 py-8 font-[argent-pixel] text-[#113032] text-[20px] lg:text-[48px] leading-[120%]"
+            class="absolute w-[max-content] left-1/2 transform -translate-x-1/2 z-30 items-center border-[5px] border-[#113032] bg-[#02F67C] made-in-deco justify-center flex gap-4 px-8 py-6 font-[argent-pixel] text-[#113032] text-[20px] lg:text-[48px] leading-[120%]"
           >
             {cta?.label}
             <svg

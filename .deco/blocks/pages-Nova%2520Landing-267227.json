@@ -60,196 +60,7 @@
                     "nested": []
                   }
                 ],
-                "targetBlank": false,
-                "column": [
-                  {
-                    "icon": "checklist",
-                    "nested": [
-                      {
-                        "column": [],
-                        "mobileNested": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "mobileNested": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "mobileNested": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      }
-                    ],
-                    "title": "Features"
-                  },
-                  {
-                    "icon": "planet",
-                    "nested": [
-                      {
-                        "column": [],
-                        "label": "Landing Pages",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Institucional & Blog",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Headless Storefronts",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Portfolios & Professional",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "MicroSaaS",
-                        "href": "#",
-                        "tag": {
-                          "description": "COMMING SOON",
-                          "color": "#76CAD0"
-                        }
-                      },
-                      {
-                        "column": [],
-                        "label": "Mobile Apps",
-                        "href": "#",
-                        "tag": {
-                          "color": "#76CAD0",
-                          "description": "COMMING SOON"
-                        }
-                      }
-                    ],
-                    "title": "Use Cases"
-                  },
-                  {
-                    "icon": "bulb",
-                    "nested": [
-                      {
-                        "column": [],
-                        "label": "Headless Commerce",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Master SEO",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Boost PageSpeed",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "AI Sales Assistant",
-                        "href": "#"
-                      }
-                    ],
-                    "title": "Solutions"
-                  }
-                ],
-                "columns": [
-                  {
-                    "icon": "checklist",
-                    "nested": [
-                      {
-                        "columns": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      }
-                    ],
-                    "title": "Features"
-                  },
-                  {
-                    "icon": "planet",
-                    "nested": [
-                      {
-                        "columns": [],
-                        "label": "Landing Pages",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Institucional & Blog",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Headless Storefronts",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Portfolios & Professional",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "MicroSaaS",
-                        "href": "#",
-                        "tag": {
-                          "description": "COMMING SOON",
-                          "color": "#76CAD0"
-                        }
-                      },
-                      {
-                        "columns": [],
-                        "label": "Mobile Apps",
-                        "href": "#",
-                        "tag": {
-                          "color": "#76CAD0",
-                          "description": "COMMING SOON"
-                        }
-                      }
-                    ],
-                    "title": "Use Cases"
-                  },
-                  {
-                    "icon": "bulb",
-                    "nested": [
-                      {
-                        "columns": [],
-                        "label": "Headless Commerce",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Master SEO",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Boost PageSpeed",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "AI Sales Assistant",
-                        "href": "#"
-                      }
-                    ],
-                    "title": "Solutions"
-                  }
-                ]
+                "targetBlank": false
               },
               {
                 "href": "deco.cx",
@@ -277,80 +88,7 @@
                     "nested": []
                   }
                 ],
-                "targetBlank": false,
-                "column": [
-                  {
-                    "icon": "ArrowRight",
-                    "nested": [
-                      {
-                        "column": [],
-                        "label": "Store",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Community",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "deco.camp",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Blog",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Customer Stories",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Live Projects",
-                        "href": "#"
-                      }
-                    ]
-                  }
-                ],
-                "columns": [
-                  {
-                    "nested": [
-                      {
-                        "columns": [],
-                        "label": "Store",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Community",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "deco.camp",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Blog",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Customer Stories",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Live Projects",
-                        "href": "#"
-                      }
-                    ]
-                  }
-                ]
+                "targetBlank": false
               },
               {
                 "href": "/docs/en/overview",
@@ -508,31 +246,117 @@
             "cards": [
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b80fc85-c4e4-4900-a0f8-479a7c47e677",
+                "label": "Landing Pages",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae35a5ed-7e4e-44c0-9be1-8113c0045cfc",
+                "label": "Institucional & Blogs",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e941714f-ca86-4444-a499-984e9e440978",
+                "label": "Portfolios & Professional",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d15bcc01-091d-446f-8b35-8c763bdb7345",
+                "label": "MicroSaaS",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a4aa4780-8436-4919-b814-c60f48b9b6b7",
+                "label": "Headless Storefronts",
+                "cta": "Start now"
               }
             ],
             "title": "Designed to be flexible.<br><span class='text-[#949E9E]'>You can start from anywhere.</span>"
+          },
+          {
+            "__resolveType": "site/sections/Home/BuildShowcase.tsx",
+            "tabs": [
+              {
+                "title": "CMS with real-time preview",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+              },
+              {
+                "title": "Automatic code to no-code editing",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
+                "title": "Native IDE",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+              },
+              {
+                "title": "deco.pilot",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "label": {
+                  "name": "NEW!",
+                  "color": "#02F67C"
+                }
+              },
+              {
+                "title": "One-click install apps & integrations",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
+              }
+            ],
+            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur."
+          },
+          {
+            "__resolveType": "site/sections/Home/BuildShowcase.tsx",
+            "tabs": [
+              {
+                "title": "CMS with real-time preview",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+              },
+              {
+                "title": "Automatic code to no-code editing",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
+                "title": "Native IDE",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+              },
+              {
+                "title": "deco.pilot",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "label": {
+                  "name": "NEW!",
+                  "color": "#02F67C"
+                }
+              },
+              {
+                "title": "One-click install apps & integrations",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
+              }
+            ],
+            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur.",
+            "position": "right"
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
@@ -694,6 +518,47 @@
             ]
           },
           {
+            "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
+            "cards": [
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d339de66-dcb2-4197-83f6-8ceec2f7d87a",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0284ad75-832f-459e-ba64-9138cd1f612f",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              }
+            ]
+          },
+          {
             "__resolveType": "site/sections/Home/FAQ.tsx",
             "title": "<p><span style=\"color: #ffffff\">FAQ</span></p>",
             "questions": [
@@ -817,7 +682,93 @@
             }
           },
           {
-            "__resolveType": "Deco Footer [EN]"
+            "__resolveType": "site/sections/NRF/DecoFooter.tsx",
+            "menu": [
+              {
+                "href": "/",
+                "title": "Platform",
+                "submenu": [
+                  {
+                    "href": "https://admin.deco.cx/",
+                    "title": "Login"
+                  },
+                  {
+                    "href": "/en/pricing",
+                    "title": "Pricing"
+                  },
+                  {
+                    "href": "/en/contact-us",
+                    "title": "Contact us"
+                  }
+                ]
+              },
+              {
+                "href": "/",
+                "title": "Resources",
+                "submenu": [
+                  {
+                    "href": "/docs/en",
+                    "title": "Docs"
+                  },
+                  {
+                    "href": "/en/blog",
+                    "title": "Blog"
+                  },
+                  {
+                    "href": "/en/community",
+                    "title": "Community"
+                  }
+                ]
+              },
+              {
+                "href": "/",
+                "title": "Products",
+                "submenu": [
+                  {
+                    "href": "/ai-assistant",
+                    "title": "AI Assistant"
+                  },
+                  {
+                    "href": "https://www.deco.cx",
+                    "title": "Frontend Platform"
+                  }
+                ]
+              },
+              {
+                "href": "#",
+                "title": "Solutions",
+                "submenu": [
+                  {
+                    "href": "https://www.deco.cx/headless-commerce",
+                    "title": "Headless Commerce"
+                  },
+                  {
+                    "href": "https://www.deco.cx/seo-for-ecommerce",
+                    "title": "Master SEO"
+                  },
+                  {
+                    "href": "https://www.deco.cx/speed-up-your-site",
+                    "title": "Boost PageSpeed"
+                  }
+                ]
+              }
+            ],
+            "social": {
+              "gitUrl": "https://github.com/deco-cx",
+              "discordUrl": "https://deco.cx/discord",
+              "linkedinUrl": "https://www.linkedin.com/company/deco-cx/"
+            },
+            "rounded": false,
+            "extraLinks": [
+              {
+                "href": "https://deco.cx/terms-of-use",
+                "label": "Terms of Use"
+              },
+              {
+                "href": "https://deco.cx/privacy-policy",
+                "label": "Privacy Policy"
+              }
+            ]
           },
           {
             "__resolveType": "GTM"
@@ -1627,196 +1578,7 @@
                     "nested": []
                   }
                 ],
-                "targetBlank": false,
-                "column": [
-                  {
-                    "icon": "checklist",
-                    "nested": [
-                      {
-                        "column": [],
-                        "mobileNested": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "mobileNested": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "mobileNested": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      }
-                    ],
-                    "title": "Features"
-                  },
-                  {
-                    "icon": "planet",
-                    "nested": [
-                      {
-                        "column": [],
-                        "label": "Landing Pages",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Institucional & Blog",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Headless Storefronts",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Portfolios & Professional",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "MicroSaaS",
-                        "href": "#",
-                        "tag": {
-                          "description": "COMMING SOON",
-                          "color": "#76CAD0"
-                        }
-                      },
-                      {
-                        "column": [],
-                        "label": "Mobile Apps",
-                        "href": "#",
-                        "tag": {
-                          "color": "#76CAD0",
-                          "description": "COMMING SOON"
-                        }
-                      }
-                    ],
-                    "title": "Use Cases"
-                  },
-                  {
-                    "icon": "bulb",
-                    "nested": [
-                      {
-                        "column": [],
-                        "label": "Headless Commerce",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Master SEO",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Boost PageSpeed",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "AI Sales Assistant",
-                        "href": "#"
-                      }
-                    ],
-                    "title": "Solutions"
-                  }
-                ],
-                "columns": [
-                  {
-                    "icon": "checklist",
-                    "nested": [
-                      {
-                        "columns": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Pirate ipsum",
-                        "href": "#"
-                      }
-                    ],
-                    "title": "Features"
-                  },
-                  {
-                    "icon": "planet",
-                    "nested": [
-                      {
-                        "columns": [],
-                        "label": "Landing Pages",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Institucional & Blog",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Headless Storefronts",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Portfolios & Professional",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "MicroSaaS",
-                        "href": "#",
-                        "tag": {
-                          "description": "COMMING SOON",
-                          "color": "#76CAD0"
-                        }
-                      },
-                      {
-                        "columns": [],
-                        "label": "Mobile Apps",
-                        "href": "#",
-                        "tag": {
-                          "color": "#76CAD0",
-                          "description": "COMMING SOON"
-                        }
-                      }
-                    ],
-                    "title": "Use Cases"
-                  },
-                  {
-                    "icon": "bulb",
-                    "nested": [
-                      {
-                        "columns": [],
-                        "label": "Headless Commerce",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Master SEO",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Boost PageSpeed",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "AI Sales Assistant",
-                        "href": "#"
-                      }
-                    ],
-                    "title": "Solutions"
-                  }
-                ]
+                "targetBlank": false
               },
               {
                 "href": "deco.cx",
@@ -1844,80 +1606,7 @@
                     "nested": []
                   }
                 ],
-                "targetBlank": false,
-                "column": [
-                  {
-                    "icon": "ArrowRight",
-                    "nested": [
-                      {
-                        "column": [],
-                        "label": "Store",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Community",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "deco.camp",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Blog",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Customer Stories",
-                        "href": "#"
-                      },
-                      {
-                        "column": [],
-                        "label": "Live Projects",
-                        "href": "#"
-                      }
-                    ]
-                  }
-                ],
-                "columns": [
-                  {
-                    "nested": [
-                      {
-                        "columns": [],
-                        "label": "Store",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Community",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "deco.camp",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Blog",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Customer Stories",
-                        "href": "#"
-                      },
-                      {
-                        "columns": [],
-                        "label": "Live Projects",
-                        "href": "#"
-                      }
-                    ]
-                  }
-                ]
+                "targetBlank": false
               },
               {
                 "href": "/docs/en/overview",
@@ -2069,28 +1758,113 @@
             "cards": [
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b80fc85-c4e4-4900-a0f8-479a7c47e677",
+                "label": "Landing Pages",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae35a5ed-7e4e-44c0-9be1-8113c0045cfc",
+                "label": "Institucional & Blogs",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e941714f-ca86-4444-a499-984e9e440978",
+                "label": "Portfolios & Professional",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d15bcc01-091d-446f-8b35-8c763bdb7345",
+                "label": "MicroSaaS",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a4aa4780-8436-4919-b814-c60f48b9b6b7",
+                "label": "Headless Storefronts",
+                "cta": "Start now"
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/Home/BuildShowcase.tsx",
+            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur.",
+            "tabs": [
+              {
+                "title": "CMS with real-time preview",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+              },
+              {
+                "title": "Automatic code to no-code editing",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
+                "title": "Native IDE",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+              },
+              {
+                "title": "deco.pilot",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "label": {
+                  "name": "NEW!",
+                  "color": "#02F67C"
+                }
+              },
+              {
+                "title": "One-click install apps & integrations",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/Home/BuildShowcase.tsx",
+            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur.",
+            "tabs": [
+              {
+                "title": "CMS with real-time preview",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+              },
+              {
+                "title": "Automatic code to no-code editing",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
+                "title": "Native IDE",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+              },
+              {
+                "title": "deco.pilot",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "label": {
+                  "name": "NEW!",
+                  "color": "#02F67C"
+                }
+              },
+              {
+                "title": "One-click install apps & integrations",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
               }
             ]
           },
@@ -2254,6 +2028,47 @@
             ]
           },
           {
+            "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
+            "cards": [
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d339de66-dcb2-4197-83f6-8ceec2f7d87a",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0284ad75-832f-459e-ba64-9138cd1f612f",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              }
+            ]
+          },
+          {
             "__resolveType": "site/sections/Home/FAQ.tsx",
             "title": "<p><span style=\"color: #ffffff\">FAQ</span></p>",
             "questions": [
@@ -2377,7 +2192,93 @@
             }
           },
           {
-            "__resolveType": "Deco Footer [EN]"
+            "__resolveType": "site/sections/NRF/DecoFooter.tsx",
+            "menu": [
+              {
+                "href": "/",
+                "title": "Platform",
+                "submenu": [
+                  {
+                    "href": "https://admin.deco.cx/",
+                    "title": "Login"
+                  },
+                  {
+                    "href": "/en/pricing",
+                    "title": "Pricing"
+                  },
+                  {
+                    "href": "/en/contact-us",
+                    "title": "Contact us"
+                  }
+                ]
+              },
+              {
+                "href": "/",
+                "title": "Resources",
+                "submenu": [
+                  {
+                    "href": "/docs/en",
+                    "title": "Docs"
+                  },
+                  {
+                    "href": "/en/blog",
+                    "title": "Blog"
+                  },
+                  {
+                    "href": "/en/community",
+                    "title": "Community"
+                  }
+                ]
+              },
+              {
+                "href": "/",
+                "title": "Products",
+                "submenu": [
+                  {
+                    "href": "/ai-assistant",
+                    "title": "AI Assistant"
+                  },
+                  {
+                    "href": "https://www.deco.cx",
+                    "title": "Frontend Platform"
+                  }
+                ]
+              },
+              {
+                "href": "#",
+                "title": "Solutions",
+                "submenu": [
+                  {
+                    "href": "https://www.deco.cx/headless-commerce",
+                    "title": "Headless Commerce"
+                  },
+                  {
+                    "href": "https://www.deco.cx/seo-for-ecommerce",
+                    "title": "Master SEO"
+                  },
+                  {
+                    "href": "https://www.deco.cx/speed-up-your-site",
+                    "title": "Boost PageSpeed"
+                  }
+                ]
+              }
+            ],
+            "social": {
+              "gitUrl": "https://github.com/deco-cx",
+              "discordUrl": "https://deco.cx/discord",
+              "linkedinUrl": "https://www.linkedin.com/company/deco-cx/"
+            },
+            "rounded": false,
+            "extraLinks": [
+              {
+                "href": "https://deco.cx/terms-of-use",
+                "label": "Terms of Use"
+              },
+              {
+                "href": "https://deco.cx/privacy-policy",
+                "label": "Privacy Policy"
+              }
+            ]
           },
           {
             "__resolveType": "GTM"
