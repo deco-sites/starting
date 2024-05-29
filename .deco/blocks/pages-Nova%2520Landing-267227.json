@@ -2078,7 +2078,7 @@
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b"
               }
             ],
-            "pixelTitle": "<p><span style=\"color: #02f67c\">Professional Web Dev</span></p>",
+            "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">Professional Web Dev</span></p>",
             "showRadialOnTop": true,
             "ctas": [
               {
@@ -2230,7 +2230,7 @@
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "title": "<p>Everything You Need to <span style=\"font-family: 'ArgentPixel'; color: #02f67C;\">Build</span></p>",
+            "title": "<p>Everything You to Build</p>",
             "tabs": [
               {
                 "title": "CMS with Visual Editor",
@@ -2277,17 +2277,17 @@
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "title": "<p>Lalala <span style=\"font-family: 'ArgentPixel'; color: #02f67C;\">alala</span></p>",
+            "title": "<p>Features to <span style=\"font-family: 'ArgentPixel'; color: #02f67C;\">Evolve</span> your Business</p>",
             "tabs": [
               {
                 "title": "Advanced SEO settings",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4d19d4b7-6fcc-40fa-835e-a694251cda69",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6ad36c34-24e4-422c-a5d8-eb1f12f04d7c",
                 "description": "Native settings that provide all the tools you need for Search Engine Optimization across any platform.",
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/037dd328-baa1-497a-b069-1e32b2afe3ab"
               },
               {
                 "title": "A/B Test & segmentation",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bc58ab53-b415-4f1e-abe4-73cb0c9659b3",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/84928f74-1381-433c-8f02-fc5c4046ccb4",
                 "description": "Personalize content for specific audiences using our native A/B test tool. Create experiments, campaigns and targeted experiences.",
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/760dcccb-2611-4c49-8899-bc8c03ae3511",
                 "label": {
