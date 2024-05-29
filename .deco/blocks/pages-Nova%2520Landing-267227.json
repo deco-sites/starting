@@ -2230,7 +2230,7 @@
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "title": "<p>Everything You to Build</p>",
+            "title": "<p>Everything You to <span class=\"font-[argent-pixel]\">Build</span></p>",
             "tabs": [
               {
                 "title": "CMS with Visual Editor",
