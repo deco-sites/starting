@@ -2086,7 +2086,7 @@
                 "text": "Try for Free"
               }
             ],
-            "subTitle": "<p><span>Find all the capabilities you might need to power anything (or everything). </span></p><p><span>Use only what you need, pay only for what you use.</span></p>"
+            "subTitle": "<p>Find all the capabilities you might need to power anything (or everything).</p><p>Use only what you need, pay only for what you use.</p>"
           },
           {
             "__resolveType": "site/sections/Home/TrustSignals.tsx",
@@ -2104,7 +2104,9 @@
             ]
           },
           {
-            "__resolveType": "site/sections/Home/MainVideo.tsx"
+            "__resolveType": "site/sections/Home/MainVideo.tsx",
+            "videoMp4": "https://vimeo.com/951605687?share=copy",
+            "videoWebm": "https://vimeo.com/951605687?share=copy"
           },
           {
             "__resolveType": "site/sections/Home/DoubleBrands.tsx",
