@@ -2367,48 +2367,79 @@
             "__resolveType": "site/sections/Home/SitesCarousel.tsx",
             "firstSlider": [
               {
-                "label": "site 1",
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c241a483-b0f0-4f62-a3f4-60d03b2e96ec",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a11a27a4-5a6a-4d4d-8699-53869d0b79b0"
+                "label": "Zeedog",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f63ec3ee-6540-4304-b3a8-94348a7e2a07",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/28804581-a6dc-46ab-b27d-4cc3fc95fd4b",
+                "href": "https://www.zeedog.com.br/"
               },
               {
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/db832b0d-2460-4707-a634-df7cd6c60669",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/36297b9c-e6bb-4316-a277-5a4cefe3d90c",
-                "label": "site 2"
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6fff1cce-adb6-42ee-a401-777a459adf59",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c66062da-1976-4b1e-8dbe-2bf2c79740b1",
+                "label": "Osklen",
+                "href": "https://www.osklen.com.br/"
               },
               {
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/35cb3977-6ae9-4f77-a91f-435e0f2d11ac",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bccae44f-0e6c-474f-b4ce-b3122f5ea547",
-                "label": "site 3"
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/252a4aca-996e-4072-99fc-02b66c112fad",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ad7f6ce-627d-4801-ab8f-c9b515875820",
+                "label": "Yenzah",
+                "href": "https://www.yenzah.com.br/"
+              },
+              {
+                "label": "Ramarim",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/287014b3-4a70-4016-967c-5b8960c85863",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c94e70f6-e1c9-4a7c-b4fb-1606bd024daf",
+                "href": "https://www.ramarim.com.br/"
               }
             ],
             "secondSlider": [
               {
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff8581c6-8446-4b4f-9881-3e8f30921d6e",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a036db8c-c626-4cb5-ac71-dbf2ffbd7b0d",
-                "label": "site 4"
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/59a3fafa-e0b6-41fa-96eb-87394816feb9",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b77f8d02-d161-4165-873e-033013bacd8e",
+                "label": "Uncle K",
+                "href": "https://www.unclek.com.br/"
               },
               {
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/61f797ea-eb1b-4535-b4a7-72652db0e76e",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/94a84ba2-7cb7-452d-b169-0d0a40b9621a",
-                "label": "site 5"
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3cd28244-aa1f-4df8-b0ad-f381c596600f",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7fb43518-d24f-4e32-afca-3d753a515f41",
+                "label": "Abracasa",
+                "href": "https://www.abracasa.com.br/"
+              },
+              {
+                "label": "Velocitá",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54a18eef-1f28-4603-af4e-6bfe760582a2",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2438db5f-b73f-46b7-b53e-ca929d9fa2a6",
+                "href": "https://www.velocita.com.br/"
               }
             ],
             "thirdSlider": [
               {
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bba6423f-5d25-43d7-afab-86803f349d35",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f80a8d03-0b9f-46bf-a185-579420dcb2b1",
-                "label": "site 6"
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a8148204-eba3-4b11-8ac1-a8fcfcc72c29",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/75b8a05a-df2b-4860-9699-9b39d7d431cd",
+                "label": "Anacapri",
+                "href": "https://www.anacapri.com.br/"
               },
               {
-                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d6273e4-ee89-41e9-90c7-3203e704ff61",
-                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b30576a4-7b36-4418-9999-638bcd773c82",
-                "label": "site 7"
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d7a6a041-af1f-451f-b585-c2fb3fbd05b3",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/934bd0cc-4d90-410c-b21d-a67115403547",
+                "label": "Aviator",
+                "href": "https://www.aviator.com.br/"
+              },
+              {
+                "label": "Casa & Vídeo",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/af56da52-cd0d-4d15-8487-456098db5556",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5517192f-09df-431a-81d3-53ae8d403190",
+                "href": "https://www.casaevideo.com.br/"
+              },
+              {
+                "label": "BAW",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/211f4352-4528-4894-8473-746411c7abe2",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9babf1ab-3996-44a7-8694-ce9d0629840b",
+                "href": "https://www.bawclothing.com.br/"
               }
             ],
             "cta": {
               "label": "MADE IN DECO",
-              "href": "/"
+              "href": "/live-projects"
             }
           },
           {
