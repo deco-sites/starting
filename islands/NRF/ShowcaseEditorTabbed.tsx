@@ -62,7 +62,7 @@ export const ShowcaseEditorTabbed = (
           position === "left" ? "" : "flex-row-reverse "
         }lg:w-full lg:max-w-[1440px] rounded-lg lg:rounded-3xl mx-2 justify-center gap-8 lg:mx-0 z-40 backdrop-blur-xl`}
       >
-        <div class="flex flex-col max-w-[410px] w-[36%] justify-center h-full gap-x-8 gap-2 text-white flex-wrap">
+        <div class="flex flex-col max-w-[410px] w-[36%] justify-center h-full gap-x-8 text-white flex-wrap">
           {tabs &&
             tabs.map((tab, index) => (
               <div
@@ -76,10 +76,10 @@ export const ShowcaseEditorTabbed = (
                   onClick={() => {
                     selectedTab.value = index;
                   }}
-                  class={`w-full flex flex-col gap-4 text-[12px] items-center lg:text-[18px] leading-[135%] tracking-[-0.36px] pb-4 text-left font-medium border-b border-[#616B6B] duration-200 transition-colors ${
+                  class={`w-full flex flex-col gap-4 text-[12px] text-white items-center lg:text-[18px] leading-[135%] tracking-[-0.36px] text-left font-medium border-b border-[#616B6B] duration-200 transition-colors ${
                     index === selectedTab.value
-                      ? "text-white"
-                      : "text-zinc-600 border-transparent"
+                      ? ""
+                      : "border-transparent"
                   }`}
                 >
                   <div class="flex gap-4 w-full">
@@ -102,8 +102,8 @@ export const ShowcaseEditorTabbed = (
                       )}
                   </div>
                   <span
-                    class={`font-normal text-[14px] leading-[150%] ${
-                      index === selectedTab.value ? "" : "hidden"
+                    class={`font-normal text-[#9CA3AF] text-[14px] leading-[150%] ${
+                      index === selectedTab.value ? "mb-4" : "hidden"
                     }`}
                   >
                     {tab.description}
