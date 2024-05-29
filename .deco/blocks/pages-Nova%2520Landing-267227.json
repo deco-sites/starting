@@ -246,31 +246,117 @@
             "cards": [
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b80fc85-c4e4-4900-a0f8-479a7c47e677",
+                "label": "Landing Pages",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae35a5ed-7e4e-44c0-9be1-8113c0045cfc",
+                "label": "Institucional & Blogs",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e941714f-ca86-4444-a499-984e9e440978",
+                "label": "Portfolios & Professional",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d15bcc01-091d-446f-8b35-8c763bdb7345",
+                "label": "MicroSaaS",
+                "cta": "Start now"
               },
               {
                 "href": "deco.cx",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54141126-fe35-4902-b17b-f44cce253881",
-                "label": "landing"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a4aa4780-8436-4919-b814-c60f48b9b6b7",
+                "label": "Headless Storefronts",
+                "cta": "Start now"
               }
             ],
             "title": "Designed to be flexible.<br><span class='text-[#949E9E]'>You can start from anywhere.</span>"
+          },
+          {
+            "__resolveType": "site/sections/Home/BuildShowcase.tsx",
+            "tabs": [
+              {
+                "title": "CMS with real-time preview",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+              },
+              {
+                "title": "Automatic code to no-code editing",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
+                "title": "Native IDE",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+              },
+              {
+                "title": "deco.pilot",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "label": {
+                  "name": "NEW!",
+                  "color": "#02F67C"
+                }
+              },
+              {
+                "title": "One-click install apps & integrations",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
+              }
+            ],
+            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur."
+          },
+          {
+            "__resolveType": "site/sections/Home/BuildShowcase.tsx",
+            "tabs": [
+              {
+                "title": "CMS with real-time preview",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+              },
+              {
+                "title": "Automatic code to no-code editing",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
+                "title": "Native IDE",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+              },
+              {
+                "title": "deco.pilot",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "label": {
+                  "name": "NEW!",
+                  "color": "#02F67C"
+                }
+              },
+              {
+                "title": "One-click install apps & integrations",
+                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
+              }
+            ],
+            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur.",
+            "position": "right"
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
@@ -432,6 +518,47 @@
             ]
           },
           {
+            "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
+            "cards": [
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d339de66-dcb2-4197-83f6-8ceec2f7d87a",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0284ad75-832f-459e-ba64-9138cd1f612f",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              }
+            ]
+          },
+          {
             "__resolveType": "site/sections/Home/FAQ.tsx",
             "title": "<p><span style=\"color: #ffffff\">FAQ</span></p>",
             "questions": [
@@ -555,7 +682,93 @@
             }
           },
           {
-            "__resolveType": "Deco Footer [EN]"
+            "__resolveType": "site/sections/NRF/DecoFooter.tsx",
+            "menu": [
+              {
+                "href": "/",
+                "title": "Platform",
+                "submenu": [
+                  {
+                    "href": "https://admin.deco.cx/",
+                    "title": "Login"
+                  },
+                  {
+                    "href": "/en/pricing",
+                    "title": "Pricing"
+                  },
+                  {
+                    "href": "/en/contact-us",
+                    "title": "Contact us"
+                  }
+                ]
+              },
+              {
+                "href": "/",
+                "title": "Resources",
+                "submenu": [
+                  {
+                    "href": "/docs/en",
+                    "title": "Docs"
+                  },
+                  {
+                    "href": "/en/blog",
+                    "title": "Blog"
+                  },
+                  {
+                    "href": "/en/community",
+                    "title": "Community"
+                  }
+                ]
+              },
+              {
+                "href": "/",
+                "title": "Products",
+                "submenu": [
+                  {
+                    "href": "/ai-assistant",
+                    "title": "AI Assistant"
+                  },
+                  {
+                    "href": "https://www.deco.cx",
+                    "title": "Frontend Platform"
+                  }
+                ]
+              },
+              {
+                "href": "#",
+                "title": "Solutions",
+                "submenu": [
+                  {
+                    "href": "https://www.deco.cx/headless-commerce",
+                    "title": "Headless Commerce"
+                  },
+                  {
+                    "href": "https://www.deco.cx/seo-for-ecommerce",
+                    "title": "Master SEO"
+                  },
+                  {
+                    "href": "https://www.deco.cx/speed-up-your-site",
+                    "title": "Boost PageSpeed"
+                  }
+                ]
+              }
+            ],
+            "social": {
+              "gitUrl": "https://github.com/deco-cx",
+              "discordUrl": "https://deco.cx/discord",
+              "linkedinUrl": "https://www.linkedin.com/company/deco-cx/"
+            },
+            "rounded": false,
+            "extraLinks": [
+              {
+                "href": "https://deco.cx/terms-of-use",
+                "label": "Terms of Use"
+              },
+              {
+                "href": "https://deco.cx/privacy-policy",
+                "label": "Privacy Policy"
+              }
+            ]
           },
           {
             "__resolveType": "GTM"
@@ -1544,34 +1757,34 @@
             "title": "Designed to be flexible.<br><span class='text-[#949E9E]'>You can start from anywhere.</span>",
             "cards": [
               {
+                "href": "deco.cx",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b80fc85-c4e4-4900-a0f8-479a7c47e677",
                 "label": "Landing Pages",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9f0e6c39-9ff7-4cdc-8fa3-52460ca0a03d",
-                "cta": "Start now",
-                "href": "/"
+                "cta": "Start now"
               },
               {
+                "href": "deco.cx",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae35a5ed-7e4e-44c0-9be1-8113c0045cfc",
                 "label": "Institucional & Blogs",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ac70d4ba-8cb6-4cd3-85a8-0dc90e86bc60",
-                "cta": "Start now",
-                "href": "/"
+                "cta": "Start now"
               },
               {
+                "href": "deco.cx",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e941714f-ca86-4444-a499-984e9e440978",
                 "label": "Portfolios & Professional",
-                "href": "/",
-                "cta": "Start now",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e5888ff4-6996-4c2d-85f5-d1ad5d60d37b"
+                "cta": "Start now"
               },
               {
+                "href": "deco.cx",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d15bcc01-091d-446f-8b35-8c763bdb7345",
                 "label": "MicroSaaS",
-                "href": "/",
-                "cta": "Start now",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f82abe9c-7477-4b80-92b3-028d61079d19"
+                "cta": "Start now"
               },
               {
-                "label": "HeadlessStorefronts",
-                "href": "/",
-                "cta": "Start now",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f16de868-6a78-468b-b052-941da6714ec6"
+                "href": "deco.cx",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a4aa4780-8436-4919-b814-c60f48b9b6b7",
+                "label": "Headless Storefronts",
+                "cta": "Start now"
               }
             ]
           },
@@ -1613,8 +1826,7 @@
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
               }
-            ],
-            "isMobile": "desktop"
+            ]
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
@@ -1654,9 +1866,7 @@
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
               }
-            ],
-            "position": "right",
-            "isMobile": "desktop"
+            ]
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
@@ -1696,8 +1906,7 @@
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
               }
-            ],
-            "isMobile": "mobile"
+            ]
           },
           {
             "__resolveType": "site/sections/Home/SitesCarousel.tsx",
@@ -1746,51 +1955,6 @@
               "label": "MADE IN DECO",
               "href": "/"
             }
-          },
-          {
-            "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
-            "cards": [
-              {
-                "tags": [],
-                "body": {},
-                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8b7352de-61fd-4188-917d-fa28a7d62f76",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
-              },
-              {
-                "tags": [],
-                "body": {},
-                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/66db7140-b74e-4733-adcc-932f4a5c295e",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
-              },
-              {
-                "tags": [],
-                "body": {},
-                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/00c84cba-c831-42ef-8c48-3c3e78455756",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
-              },
-              {
-                "tags": [],
-                "body": {},
-                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/00c84cba-c831-42ef-8c48-3c3e78455756",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
-              },
-              {
-                "tags": [],
-                "body": {},
-                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/00c84cba-c831-42ef-8c48-3c3e78455756",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
-              }
-            ]
           },
           {
             "__resolveType": "site/sections/Home/Testimonials.tsx",
@@ -1860,6 +2024,47 @@
                 "name": "Julyanne Taboaço",
                 "description": "\"I’m sure you will soar even higher; this is just the beginning. Very grateful for this partnership and for believing in you from the very start. And what a partnership! You are tireless in evolving and suggesting improvements, embracing any challenges we face, and always ready to support and grow with us!\"",
                 "href": "#"
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
+            "cards": [
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d339de66-dcb2-4197-83f6-8ceec2f7d87a",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0284ad75-832f-459e-ba64-9138cd1f612f",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
+                "label": "Web dev should be easy and fun!",
+                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
+                "href": "/"
               }
             ]
           },
