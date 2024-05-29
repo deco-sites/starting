@@ -2277,7 +2277,7 @@
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "title": "<p><span style=\"font-family: 'ArgentPixel'; color: #02f67C;\">Evolve</span> </p>",
+            "title": "<p>Lalala <span style=\"font-family: 'ArgentPixel'; color: #02f67C;\">alala</span></p>",
             "tabs": [
               {
                 "title": "Advanced SEO settings",
