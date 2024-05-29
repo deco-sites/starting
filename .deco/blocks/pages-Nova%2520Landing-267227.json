@@ -2066,47 +2066,46 @@
           },
           {
             "__resolveType": "site/sections/Home/Hero.tsx",
-            "pixelTitle": "<p><span style=\"color: #02f67c\">Professional Web Dev</span></p>",
             "trustSignals": [
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8bca99ef-0095-43e0-8abb-315ca2910968",
                 "title": "Product Hunt",
-                "subTitle": "#1 Product of the Week"
+                "subTitle": "#1 Product of the Week",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8bca99ef-0095-43e0-8abb-315ca2910968"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b",
                 "title": "Developer Tools",
-                "subTitle": "#1 Product of the Week"
+                "subTitle": "#1 Product of the Week",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b"
               }
             ],
+            "pixelTitle": "<p><span style=\"color: #02f67c\">Professional Web Dev</span></p>",
             "showRadialOnTop": true,
             "ctas": [
               {
-                "href": "#",
+                "href": "www.deco.new",
                 "text": "Try for Free"
               }
             ],
-            "subTitle": "<p>Find all the capabilities you might need to power anything (or everything).</p><p>Use only what you need, pay only for what you use.</p>"
+            "subTitle": "<p>Build high-performance digital experiences with Deno, HTMX, JSX and Tailwind.</p>"
           },
           {
             "__resolveType": "site/sections/Home/TrustSignals.tsx",
             "trustSignals": [
               {
-                "icon": "winner",
                 "subTitle": "Product Hunt",
-                "title": "#1 Product of the Week"
+                "title": "#1 Product of the Week",
+                "icon": "winner"
               },
               {
-                "icon": "product",
                 "subTitle": "Developer Tools",
-                "title": "#1 Product of the Week"
+                "title": "#1 Product of the Week",
+                "icon": "product"
               }
             ]
           },
           {
             "__resolveType": "site/sections/Home/MainVideo.tsx",
-            "videoMp4": "https://vimeo.com/951605687?share=copy",
-            "videoWebm": "https://vimeo.com/951605687?share=copy"
+            "showSpecialNrfVideo": true
           },
           {
             "__resolveType": "site/sections/Home/DoubleBrands.tsx",
@@ -2180,8 +2179,8 @@
                 "description": "<p>faster PageSpeed on average after migration</p>"
               },
               {
-                "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>3k</p>",
-                "description": "<p><span>developers &amp; designer in our </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/YsGgt8EQCZ\"><u><span style=\"color: #02f67c\">Discord community</span></u></a></p>"
+                "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>3,3k</p>",
+                "description": "<p>developers &amp; designer in our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/YsGgt8EQCZ\"><u><span style=\"color: rgb(2, 246, 124)\">Discord community</span></u></a></p>"
               },
               {
                 "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>400</p>",
@@ -2191,7 +2190,7 @@
           },
           {
             "__resolveType": "site/sections/Home/TextSection2.tsx",
-            "description": "<p><span style=\"color: rgb(255, 255, 255)\">deco.cx is the platform that delivers </span><span class=\"font-[argent-pixel]\" style=\"color: rgb(2, 246, 124)\">High-Performance</span>, <span class=\"font-[argent-pixel]\" style=\"color: rgb(2, 246, 124)\">Fast Execution</span> and <span class=\"font-[argent-pixel]\" style=\"color: rgb(2, 246, 124)\">Easy Personalization</span> so serious websites evolve 10x faster.</p>"
+            "description": "<p><span style=\"color: rgb(2, 246, 124)\">High-Performance</span>, <span style=\"color: rgb(2, 246, 124)\">Fast Execution</span>, and <span style=\"color: rgb(2, 246, 124)\">Easy Personalization</span> that enables professional websites to evolve up to 10x faster.</p>"
           },
           {
             "__resolveType": "site/sections/Home/StartingCards.tsx",
@@ -2242,20 +2241,20 @@
               {
                 "title": "Automatic code to no-code editing",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "description": "\"export interface Props\" becomes an easily editable form to give marketers the freedom to update content.",
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
-                "title": "Native IDE",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "title": "In-browser Web IDE",
+                "description": "Integrated code editor made for React, Tailwind and TypeScript. Directly edit in browser & sync with a Git repository.",
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
               },
               {
                 "title": "deco.pilot",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "description": "AI assistant for code and content generation to help you get site done faster.",
                 "label": {
                   "name": "NEW!",
                   "color": "#02F67C"
@@ -2263,9 +2262,15 @@
               },
               {
                 "title": "One-click install apps & integrations",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "description": "Leverage a rich library of applications, themes, and templates that connect to any API and third-party data sources.",
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
+              },
+              {
+                "title": "Modern Stack",
+                "description": "Based on an efficient, secure and future-proof stack: Deno, Tailwind, JSX, TypeScript & HTMX.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/32a543e5-ae46-48c8-bcfe-041d86eec2b2",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df9d981-30d7-4035-b89e-b7f3446cf60b"
               }
             ],
             "trackId": "1"
