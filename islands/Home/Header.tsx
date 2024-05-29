@@ -84,7 +84,6 @@ function MobileMenuLink({
   label,
   targetBlank,
   columns,
-  ...props
 }: MenuLink) {
   const hasNested = columns && columns.length > 0;
   if (hasNested) {
@@ -297,15 +296,19 @@ export default function Header({ menuLinks, ...props}: Props) {
             : "hidden"}
         >
           <ul class="flex flex-col">
-            {menuLinks.map((link, index) => {
+            {
+              open &&
+              menuLinks &&
+            menuLinks.length > 0 &&
+            menuLinks.map((link, index) => {
               return (
-                <>
+                <div>
                   <MobileMenuLink key={link.label} {...link} />
                   {
                     menuLinks.length - 1 > index &&
                     <hr />
                   }
-                </>
+                </div>
               )
             })}
           </ul>
