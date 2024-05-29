@@ -2230,7 +2230,7 @@
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "title": "<p>Everything You to <span class=\"font-[argent-pixel]\">Build</span></p>",
+            "title": "<p>Everything You Need to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span></p>",
             "tabs": [
               {
                 "title": "CMS with Visual Editor",
@@ -2277,7 +2277,7 @@
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "title": "<p>Features to <span style=\"font-family: 'ArgentPixel'; color: #02f67C;\">Evolve</span> your Business</p>",
+            "title": "<p>Features to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> your Business</p>",
             "tabs": [
               {
                 "title": "Advanced SEO settings",

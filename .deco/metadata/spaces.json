@@ -144,10 +144,10 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
+                "width": 24.570912375790424,
                 "activeItemIndex": 0,
                 "content": [
                   {
@@ -165,19 +165,19 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "width": 75.42908762420957,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::Preview::world::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::Preview::world::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::Preview::world::Preview::%7B%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -194,18 +194,6 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D": {
-          "name": "JSON Properties",
-          "icon": "braces",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "JSON Properties",
-          "id": "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D",
-          "state": {
-            "__signal": null,
-            "value": null
-          }
-        },
         "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::Properties::list::Properties::%7B%7D": {
           "name": "Properties",
           "icon": "list",
@@ -214,8 +202,18 @@
           "viewId": "Properties",
           "id": "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null,
-            "value": null
+            "__signal": null
+          }
+        },
+        "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::Preview::world::Preview::%7B%7D": {
+          "name": "Preview",
+          "icon": "world",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Preview",
+          "id": "%2F.deco%2Fblocks%2Fpages-nrflp-686c24aa8039.json::Preview::world::Preview::%7B%7D",
+          "state": {
+            "__signal": null
           }
         }
       }
@@ -619,7 +617,7 @@
         "content": [
           {
             "type": "stack",
-            "width": 100,
+            "width": 100.00000000000001,
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
@@ -939,7 +937,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 35.90785907859079,
+                "width": 17.660343270099368,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -960,7 +958,7 @@
               },
               {
                 "type": "stack",
-                "width": 64.09214092140921,
+                "width": 82.33965672990064,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
