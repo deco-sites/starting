@@ -128,6 +128,10 @@
     /* Safari */
   }
 
+  .markdown-body li::marker {
+    color: white;
+  }
+
   /* Disable scroll once drawer/modal is openned */
   body:has(.modal-toggle:checked) {
     overflow: hidden;
