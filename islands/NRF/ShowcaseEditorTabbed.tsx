@@ -17,22 +17,28 @@ export interface Tab {
 }
 
 export interface Props {
+  trackId?: "1" | "2" | "3" | "4" | "5";
   tabs?: Tab[];
   position?: "left" | "right";
 }
 
-export const ShowcaseEditorTabbed = ({ tabs, position = "left" }: Props) => {
+export const ShowcaseEditorTabbed = (
+  { tabs, position = "left", trackId }: Props,
+) => {
   const selectedTab = useSignal(0);
 
   useEffect(() => {
     if (tabs && tabs.length > 0) {
       const animationWidth = animate(
-        `#tab-${selectedTab.value}`,
+        `#tab-${trackId}-${selectedTab.value}`,
         { width: "100%" },
         { duration: 5, easing: "linear" },
       );
 
-      const tabElements = document.querySelectorAll("[id^='tab-']");
+      const tabElements = document.querySelectorAll(
+        "[id^='tab-" + trackId + "-']",
+      );
+      console.log(tabElements);
       tabElements.forEach((element, index) => {
         if (index !== selectedTab.value) {
           animate(element, { width: "0%" }, { duration: 0 });
@@ -52,11 +58,11 @@ export const ShowcaseEditorTabbed = ({ tabs, position = "left" }: Props) => {
   return (
     <>
       <div
-        class={`flex flex-col lg:flex-row ${
+        class={`flex flex-row ${
           position === "left" ? "" : "flex-row-reverse "
-        }lg:w-full lg:max-w-[1440px] lg:px-[120px] rounded-lg lg:rounded-3xl mx-2 gap-8 lg:mx-0 z-40 backdrop-blur-xl`}
+        }lg:w-full lg:max-w-[1440px] rounded-lg lg:rounded-3xl mx-2 justify-center gap-8 lg:mx-0 z-40 backdrop-blur-xl`}
       >
-        <div class="flex flex-col w-[48%] justify-center h-full gap-x-8 gap-2 text-white flex-wrap">
+        <div class="flex flex-col max-w-[410px] w-[36%] justify-center h-full gap-x-8 gap-2 text-white flex-wrap">
           {tabs &&
             tabs.map((tab, index) => (
               <div
@@ -103,7 +109,11 @@ export const ShowcaseEditorTabbed = ({ tabs, position = "left" }: Props) => {
                     {tab.description}
                   </span>
                 </button>
-                <div id={`tab-${index}`} class="h-[1px] bg-[#02F67C] w-0"></div>
+                <div
+                  id={`tab-${trackId}-${index}`}
+                  class="h-[1px] bg-[#02F67C] w-0"
+                >
+                </div>
               </div>
             ))}
         </div>
@@ -118,16 +128,14 @@ export const ShowcaseEditorTabbed = ({ tabs, position = "left" }: Props) => {
                 <Image
                   src={tab.image}
                   alt={tab.title}
-                  width={1134}
-                  height={746}
+                  width={758}
+                  height={507}
                   preload={index === 0 ? true : false}
                 />
               </div>
             ))}
         </div>
       </div>
-
-      
     </>
   );
 };

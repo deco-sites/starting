@@ -1,8 +1,7 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
 import {
-  ShowcaseEditorTabbed,
   Tab,
 } from "site/islands/NRF/ShowcaseEditorTabbed.tsx";
+import { ShowcaseEditorAccordion } from "../NRF/ShowcaseEditorAccordion.tsx";
 import { Head } from "$fresh/runtime.ts";
 import { AppContext } from "site/apps/site.ts";
 
@@ -18,20 +17,18 @@ export interface Props {
   subtitle?: string;
   tabs?: Tab[];
   position?: "left" | "right";
-  trackId?: "1" | "2" | "3" | "4" | "5";
 }
 
-export default function BuildShowCase({
+export default function BuildShowCaseMobile({
   title,
   subtitle,
   tabs,
   position,
-  trackId,
 }: Props) {
   return (
     <div
       id="hero"
-      class={`relative bg-black py-20 lg:px-[120px] space-y-16 lg:space-y-20 px-6`}
+      class={`relative bg-black py-20 space-y-16 lg:space-y-20 px-6`}
     >
       <Head>
         <script>
@@ -68,7 +65,7 @@ export default function BuildShowCase({
         </div>
       </div>
       <div class="mx-auto flex flex-col items-center">
-        <ShowcaseEditorTabbed tabs={tabs} position={position} trackId={trackId}/>
+        <ShowcaseEditorAccordion tabs={tabs} position={position} />
       </div>
     </div>
   );
