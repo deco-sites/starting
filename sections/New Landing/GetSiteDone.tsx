@@ -29,7 +29,7 @@ export default function GetSiteDone({
   },
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-0 lg:px-[120px] lg:py-[160px] h-full">
+    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-6 py-12 lg:px-[120px] lg:py-[160px] h-full">
       <div class="mx-auto py-24 bg-[#FAFAFA] relative rounded-[16px]">
         <Image
           width={1156}
@@ -41,11 +41,11 @@ export default function GetSiteDone({
           class="absolute inset-0 z-0 w-full h-full object-cover opacity-[0.05]"
           style="background: radial-gradient(63.25% 54.27% at 50% 50%, rgba(255, 255, 255, 0.05) 21.35%, rgba(255, 255, 255, 0.30) 76.56%, rgba(255, 255, 255, 0.00) 100%);"
         />
-        <div class="flex flex-col items-center justify-center relative z-10 gap-4">
-          <h3 class="text-center font-albert-sans text-[80px] font-medium leading-[80px] tracking-tightest text-[#0D1717]">
+        <div class="flex flex-col items-center justify-center relative z-10 gap-4 px-4">
+          <h3 class="text-center font-albert-sans text-[48px]  lg:text-[80px] font-medium leading-[80px] tracking-tightest text-[#0D1717]">
             {title}
           </h3>
-          <p class="text-center font-albert-sans text-[24px] font-normal leading-[32px] tracking-tight text-[#616B6B]">
+          <p class="text-center font-albert-sans text-[18px] lg:text-[24px] font-normal leading-[32px] tracking-tight text-[#616B6B]">
             {description}
           </p>
           <div class="flex w-full bg-white max-w-[540px] relative z-10 px-4 py-2 rounded-[80px] border border-[#DA8FFF] gap-2 mt-8 get-site-done-shadow">
