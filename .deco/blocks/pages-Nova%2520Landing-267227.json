@@ -278,125 +278,40 @@
             "title": "Designed to be flexible.<br><span class='text-[#949E9E]'>You can start from anywhere.</span>"
           },
           {
-            "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "tabs": [
-              {
-                "title": "CMS with real-time preview",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
-              },
-              {
-                "title": "Automatic code to no-code editing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
-              },
-              {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
-                "title": "Native IDE",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
-              },
-              {
-                "title": "deco.pilot",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "label": {
-                  "name": "NEW!",
-                  "color": "#02F67C"
-                }
-              },
-              {
-                "title": "One-click install apps & integrations",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
-              }
-            ],
-            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur."
-          },
-          {
-            "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "tabs": [
-              {
-                "title": "CMS with real-time preview",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
-              },
-              {
-                "title": "Automatic code to no-code editing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
-              },
-              {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
-                "title": "Native IDE",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
-              },
-              {
-                "title": "deco.pilot",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "label": {
-                  "name": "NEW!",
-                  "color": "#02F67C"
-                }
-              },
-              {
-                "title": "One-click install apps & integrations",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
-              }
-            ],
+            "__resolveType": "site/sections/Home/BuildShowcaseMobile.tsx",
             "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur.",
-            "position": "right"
-          },
-          {
-            "__resolveType": "site/sections/Home/BuildShowcase.tsx",
             "tabs": [
               {
-                "title": "CMS with real-time preview",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+                "title": "Roles & permissions ",
+                "description": "Streamline accesses with fully customizable role-based controls for secure content management.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/781302ad-6baa-432a-a862-8dda21cbe2c6",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a936b648-59ee-49fc-b18c-a1a77a5744f1"
               },
               {
-                "title": "Automatic code to no-code editing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+                "title": "Roles & permissions ",
+                "description": "Streamline accesses with fully customizable role-based controls for secure content management.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/781302ad-6baa-432a-a862-8dda21cbe2c6",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a936b648-59ee-49fc-b18c-a1a77a5744f1"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
-                "title": "Native IDE",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+                "title": "Roles & permissions ",
+                "description": "Streamline accesses with fully customizable role-based controls for secure content management.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/781302ad-6baa-432a-a862-8dda21cbe2c6",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a936b648-59ee-49fc-b18c-a1a77a5744f1"
               },
               {
-                "title": "deco.pilot",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "label": {
-                  "name": "NEW!",
-                  "color": "#02F67C"
-                }
+                "title": "Roles & permissions ",
+                "description": "Streamline accesses with fully customizable role-based controls for secure content management.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/781302ad-6baa-432a-a862-8dda21cbe2c6",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a936b648-59ee-49fc-b18c-a1a77a5744f1"
               },
               {
-                "title": "One-click install apps & integrations",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
+                "title": "Roles & permissions ",
+                "description": "Streamline accesses with fully customizable role-based controls for secure content management.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/781302ad-6baa-432a-a862-8dda21cbe2c6",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a936b648-59ee-49fc-b18c-a1a77a5744f1"
               }
-            ],
-            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur."
+            ]
           },
           {
             "__resolveType": "site/sections/Home/SitesCarousel.tsx",
@@ -1826,7 +1741,8 @@
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
               }
-            ]
+            ],
+            "trackId": "1"
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
@@ -1866,7 +1782,9 @@
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
               }
-            ]
+            ],
+            "position": "right",
+            "trackId": "2"
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
@@ -1906,7 +1824,8 @@
                 "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
               }
-            ]
+            ],
+            "trackId": "3"
           },
           {
             "__resolveType": "site/sections/Home/SitesCarousel.tsx",

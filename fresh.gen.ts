@@ -31,6 +31,7 @@ import * as $Graph from "./islands/Graph.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $HelpFaq from "./islands/HelpFaq.tsx";
 import * as $Home_BuildShowcase from "./islands/Home/BuildShowcase.tsx";
+import * as $Home_BuildShowcaseMobile from "./islands/Home/BuildShowcaseMobile.tsx";
 import * as $Home_Dropdown from "./islands/Home/Dropdown.tsx";
 import * as $Home_Header from "./islands/Home/Header.tsx";
 import * as $Home_Testimonials from "./islands/Home/Testimonials.tsx";
@@ -95,6 +96,7 @@ const manifest = {
     "./islands/Header.tsx": $Header,
     "./islands/HelpFaq.tsx": $HelpFaq,
     "./islands/Home/BuildShowcase.tsx": $Home_BuildShowcase,
+    "./islands/Home/BuildShowcaseMobile.tsx": $Home_BuildShowcaseMobile,
     "./islands/Home/Dropdown.tsx": $Home_Dropdown,
     "./islands/Home/Header.tsx": $Home_Header,
     "./islands/Home/Testimonials.tsx": $Home_Testimonials,
