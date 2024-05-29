@@ -44,6 +44,7 @@ import * as $NRF_Header from "./islands/NRF/Header.tsx";
 import * as $NRF_Hero from "./islands/NRF/Hero.tsx";
 import * as $NRF_HeroEditorTabbed from "./islands/NRF/HeroEditorTabbed.tsx";
 import * as $NRF_PageWrapper from "./islands/NRF/PageWrapper.tsx";
+import * as $NRF_ShowcaseEditorAccordion from "./islands/NRF/ShowcaseEditorAccordion.tsx";
 import * as $NRF_ShowcaseEditorTabbed from "./islands/NRF/ShowcaseEditorTabbed.tsx";
 import * as $NRF_TextLines from "./islands/NRF/TextLines.tsx";
 import * as $OnThisPage from "./islands/OnThisPage.tsx";
@@ -105,6 +106,7 @@ const manifest = {
     "./islands/NRF/Hero.tsx": $NRF_Hero,
     "./islands/NRF/HeroEditorTabbed.tsx": $NRF_HeroEditorTabbed,
     "./islands/NRF/PageWrapper.tsx": $NRF_PageWrapper,
+    "./islands/NRF/ShowcaseEditorAccordion.tsx": $NRF_ShowcaseEditorAccordion,
     "./islands/NRF/ShowcaseEditorTabbed.tsx": $NRF_ShowcaseEditorTabbed,
     "./islands/NRF/TextLines.tsx": $NRF_TextLines,
     "./islands/OnThisPage.tsx": $OnThisPage,
