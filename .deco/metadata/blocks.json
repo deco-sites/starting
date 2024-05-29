@@ -1210,5 +1210,9 @@
   "/.deco/blocks/Preview%20%2Fsections%2FHome%2FMainVideo.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Home/MainVideo.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FHome%2FBuildShowcase.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Home/BuildShowcase.tsx"
   }
 }

@@ -2277,19 +2277,23 @@
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur.",
+            "title": "<p><span style=\"font-family: 'ArgentPixel'; color: #02f67C;\">Evolve</span> </p>",
             "tabs": [
               {
-                "title": "CMS with real-time preview",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+                "title": "Advanced SEO settings",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4d19d4b7-6fcc-40fa-835e-a694251cda69",
+                "description": "Native settings that provide all the tools you need for Search Engine Optimization across any platform.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/037dd328-baa1-497a-b069-1e32b2afe3ab"
               },
               {
-                "title": "Automatic code to no-code editing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+                "title": "A/B Test & segmentation",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bc58ab53-b415-4f1e-abe4-73cb0c9659b3",
+                "description": "Personalize content for specific audiences using our native A/B test tool. Create experiments, campaigns and targeted experiences.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/760dcccb-2611-4c49-8899-bc8c03ae3511",
+                "label": {
+                  "name": "BETA",
+                  "color": "#DA8FFF"
+                }
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
