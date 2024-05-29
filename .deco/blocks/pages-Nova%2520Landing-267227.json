@@ -2296,26 +2296,23 @@
                 }
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
-                "title": "Native IDE",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/260fc6a6-2775-4faf-9175-4eb1b6faf2b5",
+                "title": "Realtime analytics",
+                "description": "Full web analytics, test results, and performance indicators for quick, effective responses.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d98e01fc-cc34-40fd-99d8-90f598b36247"
               },
               {
-                "title": "deco.pilot",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "label": {
-                  "name": "NEW!",
-                  "color": "#02F67C"
-                }
+                "title": "Design System Builder",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/10945153-0186-4b47-9e8a-cd0f800e4e98",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/fd8379da-f9bf-4597-b592-e6bd94e84283",
+                "description": "Start with existing components, styles, and templates, and adjust colors, button styles, and typography to quickly create a unique branded look.",
+                "label": {}
               },
               {
-                "title": "One-click install apps & integrations",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
+                "title": "Real-time collaboration & revisions",
+                "description": "Experience Figma-like collaboration for coding and content editing. Manage revisions effortlessly and gain full control over publications. ",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d8363c95-b574-44f6-83f3-005765a8b48d",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c8b9964b-47ec-4ffa-b4af-7a53c16610d7"
               }
             ],
             "position": "right",
@@ -2323,41 +2320,45 @@
           },
           {
             "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-            "title": "<span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span> ipsum dolor sit amet consectetur.",
+            "title": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Scale</span> Up Fast and Safely</p>",
             "tabs": [
               {
-                "title": "CMS with real-time preview",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90d6ed28-4c74-48db-bead-8d45f46e76fc",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+                "title": "Roles & permissions",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/19889277-96d7-4a64-a1a5-cd5d9109e948",
+                "description": "Streamline team access with fully customizable role-based controls for secure content management.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfc55bff-717a-40f6-a0cd-4d6fa592750f",
+                "label": {
+                  "name": "COMING SOON",
+                  "color": "#76CAD0"
+                }
               },
               {
-                "title": "Automatic code to no-code editing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ba71df-8dd8-4b7e-895e-c2213f84f2ed",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+                "title": "Realtime error logging & tracing",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6aa4b493-9e88-401e-8ba1-4acbaddf05d9",
+                "description": "Comprehensive observability platform with error logs, tracing and metrics for total control.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cbd43d92-b11f-48a3-b7a2-97d8edc5af37"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8f61c0e7-0428-402b-a305-37f6efb7fb21",
-                "title": "Native IDE",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ed69bb28-4751-4d18-b0eb-c9715525d8f4",
+                "title": "Release cycle control and instant rollback",
+                "description": "Immutable deploys and single-commit environments unlock quick evolution without fear of pushing to prod.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9c7025a1-fa0b-4a23-a178-af4b9d94a1bc"
               },
               {
-                "title": "deco.pilot",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3a86433-06b9-4e78-90b7-3cc98828baa6",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
+                "title": "Managed infra or self-hosted",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/64e08b9f-f52f-438e-a79b-5abb47c6a56b",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/542f6867-bb64-44ff-ab18-f059fc5d9b9a",
+                "description": "Deploy your site on a globally distributed edge infrastructure designed for seamless scalability, or choose to self-host on your infrastructure.",
                 "label": {
                   "name": "NEW!",
                   "color": "#02F67C"
                 }
               },
               {
-                "title": "One-click install apps & integrations",
-                "description": "Easily edit content using a drag-and-drop CMS with real-time preview and real-time collaboration",
-                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/753ff490-5004-4f5f-8ebd-3e4fa2df37dc"
+                "title": "deco.records",
+                "description": "Built-in edge-distributed SQLite database with every deco site — quickly code forms and any other data entry.",
+                "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98b6e38e-eebd-4996-bf34-3af2480b9c78",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/55993810-c57b-4fac-a98c-223537d6561f"
               }
             ],
             "trackId": "3"
