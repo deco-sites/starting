@@ -70,6 +70,7 @@ export default {
           "-2px -2px 4px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.2)",
         "button-white-hover-shadow":
           "-2px -2px 4px rgba(255, 255, 255, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.06)",
+        "get-site-done-shadow": "5px 5px 16px 0px rgba(66, 10, 224, 0.25)",
       },
       transitionProperty: {
         height: "height",
@@ -77,7 +78,7 @@ export default {
         "transform-opacity": "transform, opacity",
       },
       transformOrigin: {
-        'center-center': 'center center',
+        "center-center": "center center",
       },
       keyframes: {
         sliding: {

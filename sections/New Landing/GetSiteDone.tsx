@@ -48,13 +48,13 @@ export default function GetSiteDone({
           <p class="text-center font-albert-sans text-[24px] font-normal leading-[32px] tracking-tight text-[#616B6B]">
             {description}
           </p>
-          <div class="flex w-full max-w-[540px] relative z-10 p-3 rounded-[24px] border border-[#DA8FFF] gap-2 mt-8">
+          <div class="flex w-full bg-white max-w-[540px] relative z-10 px-4 py-2 rounded-[80px] border border-[#DA8FFF] gap-2 mt-8 get-site-done-shadow">
             <input
               //   onInput={(e) => (email.value = e.currentTarget.value)}
               //   value={email.value}
               //   disabled={loading.value}
               placeholder={submit.placeholder}
-              class="input pr-0 text-[16px] lg:text-[20px] bg-transparent leading-[34.886px] w-full rounded-[80px] flex justify-center items-center text-white dark:text-black placeholder:text-white dark:placeholder:text-black dark:bg-transparent"
+              class="input pr-0 text-[16px] lg:text-[20px] bg-transparent leading-[34.886px] w-full flex justify-center items-center text-white dark:text-black placeholder:text-[#949E9E] dark:bg-transparent"
             >
               <a
                 type="submit"
