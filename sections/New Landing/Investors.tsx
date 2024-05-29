@@ -65,7 +65,7 @@ function Investors(props: Props) {
                 width={110}
               />
               <img
-                class="object-contain w-[110px] dark:hidden"
+                class="object-contain w-[110px] object-scale-down"
                 src={element.img ?? ""}
               />
             </Picture>
