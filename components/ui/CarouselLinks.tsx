@@ -65,7 +65,7 @@ export default function CarouselLinks({
               {cards.map((card, index) => (
                 <a
                   href={card.href}
-                  class="group block rounded-[8px] w-[71%] sm:w-[193px] sm flex-none lg:w-[320px] min-h-[230px] lg:min-h-[362px] h-full transition-all duration-300 sm:hover:w-[232px] lg:hover:w-[384px]"
+                  class="group block rounded-[8px] w-[88%] sm:w-[193px] sm flex-none lg:w-[320px] min-h-[230px] lg:min-h-[362px] h-full transition-all duration-300 sm:hover:w-[232px] lg:hover:w-[384px]"
                 >
                   <article class="flex flex-col gap-6 overflow-hidden backdrop-filter backdrop-blur-22 transition-all duration-300">
                     <div class="rounded-[8px]">
