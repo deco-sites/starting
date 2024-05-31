@@ -1,5 +1,4 @@
 {
-  "name": "Nova Landing",
   "path": "/",
   "sections": {
     "variants": [
@@ -1470,5 +1469,6 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Home"
 }

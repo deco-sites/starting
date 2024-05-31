@@ -768,7 +768,7 @@
     "__resolveType": "$live/pages/LivePage.tsx"
   },
   "/.deco/blocks/pages-nrflp-686c24aa8039.json": {
-    "name": "Home",
+    "name": "Old Home",
     "path": "/old-landing",
     "blockType": "pages",
     "__resolveType": "$live/pages/LivePage.tsx"
@@ -1198,10 +1198,10 @@
     "__resolveType": "blog/loaders/Blogpost.ts"
   },
   "/.deco/blocks/pages-Nova%2520Landing-267227.json": {
-    "name": "Nova Landing",
     "path": "/",
     "blockType": "pages",
-    "__resolveType": "website/pages/Page.tsx"
+    "__resolveType": "website/pages/Page.tsx",
+    "name": "Home"
   },
   "/.deco/blocks/Preview%20%2Fsections%2FNRF%2FHeader.tsx.json": {
     "blockType": "sections",
