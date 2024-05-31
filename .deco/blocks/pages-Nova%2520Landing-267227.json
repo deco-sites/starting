@@ -780,7 +780,7 @@
             "showRadialOnTop": true,
             "ctas": [
               {
-                "href": "www.deco.new",
+                "href": "https://deco.new",
                 "text": "Try for Free"
               }
             ],
@@ -1319,7 +1319,13 @@
             "title": "<p><span>Made Easy &amp; Fun</span></p>",
             "pixelTitle": "<p><span style=\"color: #02f67c\">Professional Web Dev</span></p>",
             "showRadialOnTop": false,
-            "shouldAddPaddingTopAndBottom": false
+            "shouldAddPaddingTopAndBottom": false,
+            "ctas": [
+              {
+                "href": "https://deco.new",
+                "text": "Try for Free"
+              }
+            ]
           },
           {
             "__resolveType": "site/sections/New Landing/Investors.tsx",
