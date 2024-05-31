@@ -1249,31 +1249,31 @@
             "title": "Designed to be flexible.<br><span class='text-[#949E9E]'>You can start from anywhere.</span>",
             "cards": [
               {
-                "href": "deco.new",
+                "href": "https://deco.new",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b80fc85-c4e4-4900-a0f8-479a7c47e677",
                 "label": "Landing Pages",
                 "cta": "Start now"
               },
               {
-                "href": "deco.new",
+                "href": "https://deco.new",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae35a5ed-7e4e-44c0-9be1-8113c0045cfc",
                 "label": "Institucional & Blogs",
                 "cta": "Start now"
               },
               {
-                "href": "deco.new",
+                "href": "https://deco.new",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e941714f-ca86-4444-a499-984e9e440978",
                 "label": "Portfolios & Professional",
                 "cta": "Start now"
               },
               {
-                "href": "deco.new",
+                "href": "https://deco.new",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d15bcc01-091d-446f-8b35-8c763bdb7345",
                 "label": "MicroSaaS",
                 "cta": "Start now"
               },
               {
-                "href": "deco.new",
+                "href": "https://deco.new",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a4aa4780-8436-4919-b814-c60f48b9b6b7",
                 "label": "Headless Storefronts",
                 "cta": "Start now"
@@ -1491,7 +1491,7 @@
             ],
             "cta": {
               "label": "MADE IN DECO",
-              "href": "/live-projects"
+              "href": "/en/live-projects"
             }
           },
           {
@@ -1501,67 +1501,67 @@
                 "description": "\"deco.cx makes creating high-performance websites easy!\"",
                 "name": "Sibelius Seraphini",
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/88b0bc70-00a1-4330-9f2e-88e3b68d3e12",
-                "href": "#"
+                "href": "https://www.producthunt.com/products/deco-cx-2-0/reviews"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ed554700-2d66-43e2-b6b2-e1844a2db689",
                 "name": "Officialstarone",
                 "description": "\"Figma, vscode and WordPress abilities all in one interface, this is amazing.. I just wish it could be free for students like me, would have to wait till i get a job to be able to afford this 😣\"",
-                "href": "#"
+                "href": "https://www.producthunt.com/products/deco-cx-2-0/reviews"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ea5f2ce-0a0e-4105-8333-2cbddc6c1c6e",
                 "name": "Alex Dulub",
                 "description": "\"It's exciting to see a platform that not only speeds up frontend development but also fosters collaboration between developers and marketing teams. The seamless integration of modern technologies and the focus on both developer power and ease of use are impressive.\"",
-                "href": "#"
+                "href": "https://www.producthunt.com/products/deco-cx-2-0#deco-cx-2-0"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b4a74da-5050-4641-a128-df3b606bfd05",
                 "name": "Andres Pradilla",
                 "description": "\"Wow!!! 🚀 This is a game changer for headless ecommerce! Have seen the product in action and it absolutely rocks! The best news is this product has happy live customers using it day in day out and have seen great value out of the tool!\"",
-                "href": "#"
+                "href": "https://www.producthunt.com/products/deco-cx-2-0#deco-cx-2-0"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/31035191-0815-4a14-b2a5-559c451a19a3",
                 "name": "Joep van den Bogaert",
                 "description": "\"Wow, such an impressive product. Really love how you bring together development and content management. The automatic forms based on the typescript models are awesome.\"",
-                "href": "#"
+                "href": "https://www.producthunt.com/products/deco-cx-2-0#deco-cx-2-0"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/adbf4b08-e54f-4d4a-aecf-94de3974f0e0",
                 "name": "khaosdoctor",
                 "description": "\"This is AWESOME! I’ve been looking to find something like this for my pages for ages. The Deno core using TypeScript is the ABSOLUTE BEST mix ever. Loved the work you guys are doing. Hope you continue to disrupt even more!\"",
-                "href": "#"
+                "href": "https://news.ycombinator.com/item?id=39989467"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/adbf4b08-e54f-4d4a-aecf-94de3974f0e0",
                 "name": "p2hari",
                 "description": "\"oh man, are you folks for real!!! I just checked out the website, git and discord channels (I just joined in) and you are awesome. Open source core and so much more work on git. Bringing partytown to deno etc. etc.\"",
-                "href": "#"
+                "href": "https://news.ycombinator.com/item?id=39989467"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/adbf4b08-e54f-4d4a-aecf-94de3974f0e0",
                 "name": "nopro",
                 "description": "\"This looks amazing, like a modern take on Dreamweaver or something. The low code IDE may soon return! The ability to switch between no-code/code is great for teaching people to code. Dreamweaver (and MySpace profiles) basically taught me CSS.\"",
-                "href": "#"
+                "href": "https://news.ycombinator.com/item?id=39989467"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5b024b3e-d57c-48bc-8818-de33cf4d447a",
                 "name": "Marco Ferreira",
                 "description": "\"Man, I don't even know who to tag here hahaha, but I wanted to give my recognition to deco itself! To the folks who founded it and those who keep updating and improving the platform. Excellent work for the client in terms of registration flexibility and simple for the developer!\"",
-                "href": "#"
+                "href": "https://discord.com/channels/985687648595243068/1043012555112730634/1209611041928118382"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/726cd991-7b37-45a7-b1d2-e1af364ea926",
                 "name": "Gustavo Vasconcellos",
                 "description": "\"A round of applause for the team that has significantly improved the usability of the Admin since the last hackathon. Both the section editor and the library are GREAT. Special recognition to whoever had the idea and implemented the change to repo branches in the Admin: Great job! 👏\"",
-                "href": "#"
+                "href": "https://discord.com/channels/985687648595243068/1043012555112730634/1102025139983495198"
               },
               {
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c766de4-48a5-46c9-aff4-6edd766c949c",
                 "name": "Julyanne Taboaço",
                 "description": "\"I’m sure you will soar even higher; this is just the beginning. Very grateful for this partnership and for believing in you from the very start. And what a partnership! You are tireless in evolving and suggesting improvements, embracing any challenges we face, and always ready to support and grow with us!\"",
-                "href": "#"
+                "href": "https://www.linkedin.com/feed/update/urn:li:activity:7181038197907353600?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7181038197907353600%2C7181112203410894848%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287181112203410894848%2Curn%3Ali%3Aactivity%3A7181038197907353600%29"
               }
             ]
           },
