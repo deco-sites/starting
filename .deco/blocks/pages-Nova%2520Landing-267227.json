@@ -1569,16 +1569,16 @@
             "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
             "cards": [
               {
-                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/18c44403-ce96-4243-8610-2b08249f25c7",
+                "label": "Web Summit Rio PITCH Finals",
+                "description": "Watch our final PITCH on Web Summit Rio PITCH competition 🏆",
+                "href": "https://www.youtube.com/watch?v=FmY9jge-VTo&t=50s"
               },
               {
                 "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d339de66-dcb2-4197-83f6-8ceec2f7d87a",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
+                "label": "\"deco.cx Secures $2.2M Funding\"",
+                "description": "Deco.cx grabs $2.2M to bring simplicity back to brand website creation. Read the full story on TechCrunch.",
+                "href": "https://techcrunch.com/2024/01/09/deco-cx-2-2m-brand-website-e-commerce/"
               },
               {
                 "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0284ad75-832f-459e-ba64-9138cd1f612f",
