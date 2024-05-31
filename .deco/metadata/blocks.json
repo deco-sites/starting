@@ -769,7 +769,7 @@
   },
   "/.deco/blocks/pages-nrflp-686c24aa8039.json": {
     "name": "Home",
-    "path": "/",
+    "path": "/old-landing",
     "blockType": "pages",
     "__resolveType": "$live/pages/LivePage.tsx"
   },
@@ -1199,7 +1199,7 @@
   },
   "/.deco/blocks/pages-Nova%2520Landing-267227.json": {
     "name": "Nova Landing",
-    "path": "/new-landing",
+    "path": "/",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
