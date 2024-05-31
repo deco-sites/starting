@@ -70,5 +70,3 @@ import_map.local.json
 deno.lock
 # Fresh build directory
 _fresh/
-
-.metadata/changeset.json
