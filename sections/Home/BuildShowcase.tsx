@@ -1,1 +1,1 @@
-export { default } from "site/islands/Home/BuildShowcase.tsx";
+export { default, loader } from "site/islands/Home/BuildShowcase.tsx";

@@ -3,6 +3,7 @@ import {
   ShowcaseEditorTabbed,
   Tab,
 } from "site/islands/NRF/ShowcaseEditorTabbed.tsx";
+import { ShowcaseEditorAccordion } from "../NRF/ShowcaseEditorAccordion.tsx";
 import { Head } from "$fresh/runtime.ts";
 import { AppContext } from "site/apps/site.ts";
 
@@ -21,13 +22,34 @@ export interface Props {
   trackId?: "1" | "2" | "3" | "4" | "5";
 }
 
+export const loader = async (
+  props: Props,
+  req: Request,
+  ctx: AppContext,
+) => {
+  const device = ctx.device;
+
+  return {
+    ...props,
+    isMobile: device,
+  };
+};
+
 export default function BuildShowCase({
   title,
   subtitle,
   tabs,
   position,
   trackId,
-}: Props) {
+  isMobile
+}: Omit<Props, "isMobile"> & {
+  title: string;
+  subtitle: string;
+  tabs: Tab[];
+  position: "left" | "right";
+  trackId: "1" | "2" | "3" | "4" | "5";
+  isMobile: string;
+}) {
   return (
     <div
       id="hero"
@@ -68,7 +90,9 @@ export default function BuildShowCase({
         </div>
       </div>
       <div class="mx-auto flex flex-col items-center">
-        <ShowcaseEditorTabbed tabs={tabs} position={position} trackId={trackId}/>
+      {isMobile === "desktop"
+          ? <ShowcaseEditorTabbed tabs={tabs} position={position} trackId={trackId}/>
+          : <ShowcaseEditorAccordion tabs={tabs} position={position} />}
       </div>
     </div>
   );

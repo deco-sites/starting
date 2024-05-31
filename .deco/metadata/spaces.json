@@ -1685,32 +1685,6 @@
       }
     },
     {
-      "id": "deco-records",
-      "name": "Records",
-      "pinned": true,
-      "icon": "database",
-      "layout": [],
-      "tabs": {
-        "deco-records::Deco%20Records::database::Deco%20Records::%7B%7D": {
-          "name": "Deco Records",
-          "icon": "database",
-          "render": "function",
-          "viewId": "Deco Records",
-          "id": "deco-records::Deco%20Records::database::Deco%20Records::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        }
-      },
-      "tags": [
-        {
-          "label": "BETA",
-          "color": "positive"
-        }
-      ],
-      "category": "Content"
-    },
-    {
       "id": "/.deco/blocks/9819.json",
       "name": "Blog PT",
       "pinned": false,
@@ -1840,10 +1814,10 @@
             "content": [
               {
                 "type": "stack",
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
-                "width": 50,
                 "activeItemIndex": 0,
                 "content": [
                   {
@@ -1958,10 +1932,10 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
+                "width": 50,
                 "activeItemIndex": 0,
                 "content": [
                   {
@@ -2149,6 +2123,32 @@
           }
         }
       }
+    },
+    {
+      "id": "deco-records-space",
+      "name": "Records",
+      "pinned": true,
+      "icon": "database",
+      "layout": [],
+      "tabs": {
+        "deco-records-space::Deco%20Records::database::Deco%20Records::%7B%7D": {
+          "name": "Deco Records",
+          "icon": "database",
+          "render": "function",
+          "viewId": "Deco Records",
+          "id": "deco-records-space::Deco%20Records::database::Deco%20Records::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      },
+      "tags": [
+        {
+          "label": "BETA",
+          "color": "positive"
+        }
+      ],
+      "category": "Content"
     }
   ]
 }
