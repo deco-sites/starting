@@ -1675,61 +1675,42 @@
             "shouldAddPaddingTopAndBottom": false
           },
           {
-            "__resolveType": "site/sections/New Landing/GetSiteDone.tsx",
-            "title": "Get your site done.",
-            "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f4ce856f-9c46-4aa9-9384-2c9f951430bb",
-            "description": "Describe your idea and get a professional website quickly",
-            "submit": {
-              "placeholder": "A photographer's portfolio based in Rio, Brazil",
-              "buttonLabel": "Submit"
-            },
-            "lastButton": {
-              "label": "getsitedone.com",
-              "href": "/"
-            }
-          },
-          {
             "__resolveType": "site/sections/New Landing/Investors.tsx",
             "title": "Investors & Supporters",
             "brands": {
               "logos": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3b420f5d-90ca-44aa-afe1-2356a15b3cdd",
-                  "href": "/",
-                  "altText": "itau"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1b2c9cc3-250e-449f-8da3-a20536fa0e45",
+                  "href": "https://cubo.network/",
+                  "altText": "cubo itaú"
                 },
                 {
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a9ccb52a-5f22-4072-9f18-744d1b33652f",
-                  "href": "/",
+                  "href": "https://www.fjlabs.com/",
                   "altText": "fjlabs"
                 },
                 {
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a9d0a965-d491-495f-913e-271ccbb43b75",
-                  "href": "/",
+                  "href": "https://www.crivo.ventures/deco",
                   "altText": "crivo"
                 },
                 {
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/563ffdcc-87b9-4037-92ca-cab32841103f",
-                  "href": "/",
+                  "href": "https://www.lanxcapital.com/?lang=en#investimentos",
                   "altText": "lanx"
                 },
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/97a98886-8d04-4703-863a-7645bc345791",
-                  "href": "/",
-                  "altText": "endeavor"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0bc0bd97-94ad-4ea0-987a-fc68b2897a45",
+                  "href": "https://exame.com/negocios/estas-40-startups-vao-faturar-juntas-r-872-milhoes-e-sao-as-novas-apostas-da-endeavor-veja-a-lista/",
+                  "altText": "endeavor scale up"
                 },
                 {
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d0bea373-ff97-4fdc-9212-d7bcdce7721d",
-                  "href": "/",
+                  "href": "https://www.maya.capital/blog-posts/why-did-maya-invest-in-deco-cx",
                   "altText": "maya"
                 },
                 {
-                  "href": "/",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/34395084-fcb6-46db-a377-4a2f207ca914",
-                  "altText": "websummit"
-                },
-                {
-                  "href": "/",
+                  "href": "https://rio.websummit.com/blog/press-releases/deco-cx-pitch-winner/",
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/34395084-fcb6-46db-a377-4a2f207ca914",
                   "altText": "websummit"
                 }

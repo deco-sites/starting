@@ -938,7 +938,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "width": 17.479674796747968,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -959,7 +959,7 @@
               },
               {
                 "type": "stack",
-                "width": 50.00000000000001,
+                "width": 82.52032520325203,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1057,10 +1057,10 @@
             "content": [
               {
                 "type": "stack",
-                "width": 44.63040446304045,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
+                "width": 44.63040446304045,
                 "activeItemIndex": 0,
                 "content": [
                   {
@@ -1114,17 +1114,6 @@
           "render": "function",
           "viewId": "Properties",
           "id": "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Properties::list::Properties::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        },
-        "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Preview::world::Preview::%7B%7D": {
-          "name": "Preview",
-          "icon": "world",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Preview",
-          "id": "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
           }
