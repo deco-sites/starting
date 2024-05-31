@@ -1577,34 +1577,41 @@
               {
                 "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d339de66-dcb2-4197-83f6-8ceec2f7d87a",
                 "label": "\"deco.cx Secures $2.2M Funding\"",
-                "description": "Deco.cx grabs $2.2M to bring simplicity back to brand website creation. Read the full story on TechCrunch.",
+                "description": "Deco.cx grabs $2.2M to bring simplicity back to brand website creation. Read on TechCrunch.",
                 "href": "https://techcrunch.com/2024/01/09/deco-cx-2-2m-brand-website-e-commerce/"
               },
               {
                 "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0284ad75-832f-459e-ba64-9138cd1f612f",
                 "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
+                "description": "We created deco.cx for busy developers. It’s the only tool you need to build, evolve, and personalize modern web applications.",
+                "href": "https://www.youtube.com/watch?v=HAOy2wXASBA&t=14s"
               },
               {
                 "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
+                "label": "Brazil JS Conf 2024",
+                "description": "Watch some highlights of our participation on Brazil JS Conf 2024",
+                "href": "https://www.youtube.com/watch?v=kU8erL5jM5w&t=1s"
               },
               {
-                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6a73c496-32dc-453e-981f-eafdf6f53f8a",
+                "label": "Why did MAYA invest in deco.cx?",
+                "description": "MAYA invested in deco.cx to support its AI-driven platform that simplifies web development for developers and store owners. Read the full article.",
+                "href": "https://www.maya.capital/blog-posts/why-did-maya-invest-in-deco-cx"
               },
               {
-                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb4972d0-fc2f-4260-a4e0-1e4e74584e69",
-                "label": "Web dev should be easy and fun!",
-                "description": "Lorem ipsum dolor sit amet consectetur. Justo lectus pharetra et turpis sit a pharetra faucibus erat.",
-                "href": "/"
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/07c6d5df-3a74-4cae-95d6-a2b1ede1a630",
+                "label": "VTEX Day 2024",
+                "description": "With a unique, customizable setup featuring dynamic lights and displays, our booth adapted to the brands visiting us, creating a personalized experience for every guest.",
+                "href": "https://www.youtube.com/watch?v=Lj80CLOiL6Y&t=29s"
+              },
+              {
+                "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/07c6d5df-3a74-4cae-95d6-a2b1ede1a630",
+                "label": "Who Run the Code? GIRLS!",
+                "description": "With a unique, customizable setup featuring dynamic lights and displays, our booth adapted to the brands visiting us, creating a personalized experience for every guest.",
+                "href": "https://www.youtube.com/watch?v=Lj80CLOiL6Y&t=29s"
               }
-            ]
+            ],
+            "title": "<p>Check out our useful links and media features<br>to discover everything you didn’t know about <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">deco.cx</a>.</p>"
           },
           {
             "__resolveType": "site/sections/Home/FAQ.tsx",
