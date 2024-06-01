@@ -768,8 +768,8 @@
     "__resolveType": "$live/pages/LivePage.tsx"
   },
   "/.deco/blocks/pages-nrflp-686c24aa8039.json": {
-    "name": "Old Home",
-    "path": "/old-landing",
+    "name": "Home",
+    "path": "/",
     "blockType": "pages",
     "__resolveType": "$live/pages/LivePage.tsx"
   },
@@ -1222,13 +1222,5 @@
   "/.deco/blocks/Preview%20%2Fsections%2FHome%2FTextSection2.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Home/TextSection2.tsx"
-  },
-  "/.deco/blocks/Preview%20%2Fsections%2FHome%2FHeader.tsx.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Home/Header.tsx"
-  },
-  "/.deco/blocks/Header%20v2.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Home/Header.tsx"
   }
 }
