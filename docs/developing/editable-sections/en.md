@@ -89,12 +89,14 @@ Observe the exported types in this file. These same types are accessible in the
 Admin when creating an Hero block. In the Admin, select the **Sections**, the
 `Hero` block, and choose the option to create a block to view the same
 properties in an editing form.
-
-![Create Block](https://github.com/deco-cx/apps/assets/882438/c7eee318-c6df-4ade-abd8-66390758aca7)
-
 Block properties are identical to those found in the Admin form.
 
-```tsx
+![Create new envinronment](/docs/editable-section/section-props.png)
+
+<!-- ![Create Block](https://github.com/deco-cx/apps/assets/882438/c7eee318-c6df-4ade-abd8-66390758aca7) -->
+
+
+<!-- ```tsx
 /** @title {{{title}}} - {{{href}}} */
 export interface Link {
   title: string;
@@ -108,7 +110,7 @@ export interface Props {
   headline?: string;
   links?: Array<Link>;
 }
-```
+``` -->
 
 _Section and its properties types_
 

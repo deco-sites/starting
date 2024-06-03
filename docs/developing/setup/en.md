@@ -91,15 +91,18 @@ Accept the invitation to join the repository created for your site. This
 invitation is sent to the email address associated with your Github profile.
 
 If you haven't used a GitHub account to log into the admin or haven't received
-an invitation, you can add a GitHub account as a collaborator to the site.
+an invitation, you can add a GitHub account as a collaborator to the site at
+Settings tab.
 
-![Adding collaborator to the repository](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9)
+<!-- ![Adding collaborator to the repository](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9) -->
+
+![Adding collaborator to the repository](/docs/setup/repository-access.png)
 
 Use the `git clone` command to download the site code to your machine. We
 recommend using SSH. Open the terminal and execute the command:
 
 ```bash
-git clone git@github.com:deco-sites/site-name.git
+git clone git@github.com:deco-sites/{site-name}.git
 ```
 
 **Remember to change `site-name` to the name of your site.**
@@ -112,20 +115,25 @@ _Github_ provides details about different ways to clone.
 
 ## Run local server
 
-In the terminal, simply navigate to the site folder and execute the command:
+To run your site locally, you can create a new environment at the Releases Tab.
+This will allow that changes that you make in the Deco admin reflects in your
+local repository.
 
-```bash
-deno task start
-```
+![Create new envinronment](/docs/setup/create-environment.png)
+
+After seting a name to your environment and choosing your host to localhost, 
+you can copy the command to paste to your terminal, in the site folder
+
+![Choosing environment and starting server](/docs/setup/start-server.png)
 
 Wait for the project to initialize. On the first run, deno will download and
 cache the project dependencies, and deco will prepare site details.
 
-The site will be accessible at <http://localhost:8000>.
+The site will be accessible at <https://{environment-name}--{site-name}.deco.site>.
 
-> Some browsers may block access to or execution of code on the `localhost`
+<!-- > Some browsers may block access to or execution of code on the `localhost`
 > domain! Disable browser ad blockers or privacy protections to access this
-> address.
+> address. -->
 
 If the code of any section used on the site's homepage is modified, it will be
 reflected at the above address.
@@ -136,11 +144,11 @@ The development deployment process is very simple: do a _git push_ of the
 changes to the _**main**_ branch.
 
 These changes will be available when accessing the dev URL (such as
-<https://deco-sites-example.deno.dev/>).
+<https://deco-sites-example.decocdn/>).
 
-You can also create a deco.site domain that will make
+<!-- You can also create a deco.site domain that will make
 <https://example.deco.site/> available to use. To do so, you need to request
-that to someone from the deco team.
+that to someone from the deco team. -->
 
 ## Now you can start creating sites in your own way! :)
 
