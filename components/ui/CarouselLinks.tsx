@@ -43,18 +43,15 @@ export default function CarouselLinks({
 }: Props) {
   const id = useId();
   const [currentCardIndex, setCurrentCardIndex] = useState<number>(0);
-  const [padding, setPadding] = useState<number>(40);
 
   const handlePrevClick = () => {
     setCurrentCardIndex((prevIndex) => Math.max(prevIndex - 1, 0));
     document.getElementById(`card_${currentCardIndex - 1}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
-    setPadding((prevPadding) => Math.max(prevPadding - 60, 40));
   };
 
   const handleNextClick = () => {
     setCurrentCardIndex((prevIndex) => Math.min(prevIndex + 1, cards.length - 1));
     document.getElementById(`card_${currentCardIndex + 1}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
-    setPadding((prevPadding) => prevPadding + 60); // Aumenta o padding
   };
 
   return (
@@ -78,9 +75,6 @@ export default function CarouselLinks({
           <div class="flex" style={{ justifyContent: "center" }}>
             <SliderFocus
               class="grid grid-flow-col sm:flex gap-[9.66px] sm:gap-4 carousel-start"
-              // style={{
-              //   paddingLeft: `${padding}px`, 
-              // }}
               itemClass="h-full"
               snap="opacity-50 disabled:opacity-100 focus:outline-none h-full"
             >
