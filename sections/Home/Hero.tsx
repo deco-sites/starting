@@ -45,8 +45,8 @@ export default function Hero({
         }
         <div class={`lg:mx-auto z-20 lg:max-w-[1440px] ${
             shouldAddPaddingTopAndBottom &&
-            "mt-[80px]"
-        } relative z-20 px-4 py-14 pb-8 lg:py-0 lg:px-0 lg:pt-24 lg:pb-8 flex flex-col gap-8 justify-center items-center`}>
+            "mt-20 lg:mt-40"
+        } relative z-20 px-4 py-14 lg:px-0 flex flex-col gap-8 justify-center items-center`}>
             <div class="leading-none">
                 {
                     pixelTitle &&

@@ -1,0 +1,359 @@
+{
+  "__resolveType": "site/sections/Home/Header.tsx",
+  "demo": {
+    "url": "https://www.deco.cx/en/contact-us",
+    "label": "Try now"
+  },
+  "sign": {
+    "label": "Sign in",
+    "url": "https://admin.deco.cx/"
+  },
+  "idiom": "Eng",
+  "login": {
+    "label": "Login",
+    "url": "https://admin.deco.cx/"
+  },
+  "alerts": {
+    "mobile": [],
+    "desktop": []
+  },
+  "gitUrl": "https://github.com/deco-cx",
+  "menuLinks": [
+    {
+      "href": "deco.cx",
+      "label": "How it works",
+      "nested": [
+        {
+          "href": "https://deco.camp",
+          "label": "deco.camp",
+          "nested": [],
+          "targetBlank": true
+        },
+        {
+          "href": "/en/blog",
+          "label": "Blog",
+          "nested": []
+        },
+        {
+          "href": "/en/customer-stories",
+          "label": "Customer Stories",
+          "nested": []
+        },
+        {
+          "href": "/en/live-projects",
+          "label": "Live Projects",
+          "nested": []
+        }
+      ],
+      "targetBlank": false,
+      "column": [
+        {
+          "icon": "checklist",
+          "nested": [
+            {
+              "column": [],
+              "mobileNested": [],
+              "label": "Pirate ipsum",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "mobileNested": [],
+              "label": "Pirate ipsum",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "mobileNested": [],
+              "label": "Pirate ipsum",
+              "href": "#"
+            }
+          ],
+          "title": "Features"
+        },
+        {
+          "icon": "planet",
+          "nested": [
+            {
+              "column": [],
+              "label": "Landing Pages",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "Institucional & Blog",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "Headless Storefronts",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "Portfolios & Professional",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "MicroSaaS",
+              "href": "#",
+              "tag": {
+                "description": "COMMING SOON",
+                "color": "#76CAD0"
+              }
+            },
+            {
+              "column": [],
+              "label": "Mobile Apps",
+              "href": "#",
+              "tag": {
+                "color": "#76CAD0",
+                "description": "COMMING SOON"
+              }
+            }
+          ],
+          "title": "Use Cases"
+        },
+        {
+          "icon": "bulb",
+          "nested": [
+            {
+              "column": [],
+              "label": "Headless Commerce",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "Master SEO",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "Boost PageSpeed",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "AI Sales Assistant",
+              "href": "#"
+            }
+          ],
+          "title": "Solutions"
+        }
+      ],
+      "columns": [
+        {
+          "icon": "checklist",
+          "nested": [
+            {
+              "columns": [],
+              "label": "Pirate ipsum",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Pirate ipsum",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Pirate ipsum",
+              "href": "#"
+            }
+          ],
+          "title": "Features"
+        },
+        {
+          "icon": "planet",
+          "nested": [
+            {
+              "columns": [],
+              "label": "Landing Pages",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Institucional & Blog",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Headless Storefronts",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Portfolios & Professional",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "MicroSaaS",
+              "href": "#",
+              "tag": {
+                "description": "COMMING SOON",
+                "color": "#76CAD0"
+              }
+            },
+            {
+              "columns": [],
+              "label": "Mobile Apps",
+              "href": "#",
+              "tag": {
+                "color": "#76CAD0",
+                "description": "COMMING SOON"
+              }
+            }
+          ],
+          "title": "Use Cases"
+        },
+        {
+          "icon": "bulb",
+          "nested": [
+            {
+              "columns": [],
+              "label": "Headless Commerce",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Master SEO",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Boost PageSpeed",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "AI Sales Assistant",
+              "href": "#"
+            }
+          ],
+          "title": "Solutions"
+        }
+      ]
+    },
+    {
+      "href": "deco.cx",
+      "label": "Resources",
+      "nested": [
+        {
+          "href": "https://deco.camp",
+          "label": "deco.camp",
+          "nested": [],
+          "targetBlank": true
+        },
+        {
+          "href": "/en/blog",
+          "label": "Blog",
+          "nested": []
+        },
+        {
+          "href": "/en/customer-stories",
+          "label": "Customer Stories",
+          "nested": []
+        },
+        {
+          "href": "/en/live-projects",
+          "label": "Live Projects",
+          "nested": []
+        }
+      ],
+      "targetBlank": false,
+      "column": [
+        {
+          "icon": "ArrowRight",
+          "nested": [
+            {
+              "column": [],
+              "label": "Store",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "Community",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "deco.camp",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "Blog",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "Customer Stories",
+              "href": "#"
+            },
+            {
+              "column": [],
+              "label": "Live Projects",
+              "href": "#"
+            }
+          ]
+        }
+      ],
+      "columns": [
+        {
+          "nested": [
+            {
+              "columns": [],
+              "label": "Store",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Community",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "deco.camp",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Blog",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Customer Stories",
+              "href": "#"
+            },
+            {
+              "columns": [],
+              "label": "Live Projects",
+              "href": "#"
+            }
+          ],
+          "icon": "ArrowRight"
+        }
+      ]
+    },
+    {
+      "href": "/docs/en/overview",
+      "label": "Docs",
+      "nested": [],
+      "targetBlank": false,
+      "columns": []
+    },
+    {
+      "href": "/en/pricing",
+      "label": "Pricing",
+      "nested": [],
+      "targetBlank": false,
+      "columns": []
+    }
+  ],
+  "discordUrl": "https://discord.gg/YsGgt8EQCZ",
+  "linkedinUrl": "https://www.linkedin.com/company/deco-cx/",
+  "pageInitial": "for marketers"
+}
