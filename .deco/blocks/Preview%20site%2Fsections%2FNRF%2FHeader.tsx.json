@@ -1,1 +1,10 @@
-{"__resolveType":"site/sections/NRF/Header.tsx"}
+{
+  "__resolveType": "site/sections/NRF/Header.tsx",
+  "alerts": {
+    "mobile": [],
+    "desktop": []
+  },
+  "menuLinks": [],
+  "login": {},
+  "sign": {}
+}

@@ -1,23 +1,9 @@
 {
   "__resolveType": "site/sections/Home/Header.tsx",
-  "demo": {
-    "url": "https://www.deco.cx/en/contact-us",
-    "label": "Try now"
-  },
-  "sign": {
-    "label": "Sign in",
-    "url": "https://admin.deco.cx/"
-  },
-  "idiom": "Eng",
-  "login": {
-    "label": "Login",
-    "url": "https://admin.deco.cx/"
-  },
   "alerts": {
     "mobile": [],
     "desktop": []
   },
-  "gitUrl": "https://github.com/deco-cx",
   "menuLinks": [
     {
       "href": "deco.cx",
@@ -353,6 +339,20 @@
       "columns": []
     }
   ],
+  "login": {
+    "label": "Login",
+    "url": "https://admin.deco.cx/"
+  },
+  "sign": {
+    "label": "Sign in",
+    "url": "https://admin.deco.cx/"
+  },
+  "demo": {
+    "url": "https://www.deco.cx/en/contact-us",
+    "label": "Try now"
+  },
+  "idiom": "Eng",
+  "gitUrl": "https://github.com/deco-cx",
   "discordUrl": "https://discord.gg/YsGgt8EQCZ",
   "linkedinUrl": "https://www.linkedin.com/company/deco-cx/",
   "pageInitial": "for marketers"
