@@ -13,6 +13,7 @@ import * as $api_ranking from "./routes/api/ranking.ts";
 import * as $api_webinar from "./routes/api/webinar.tsx";
 import * as $docs_css from "./routes/docs.css.ts";
 import * as $hackathon4 from "./routes/hackathon4.ts";
+import * as $hackathon5 from "./routes/hackathon5.ts";
 import * as $proxy_image_index from "./routes/proxy/image/index.tsx";
 import * as $Article from "./islands/Article.tsx";
 import * as $ButtonTab from "./islands/ButtonTab.tsx";
@@ -30,7 +31,11 @@ import * as $Graph from "./islands/Graph.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $HelpFaq from "./islands/HelpFaq.tsx";
 import * as $Home_BuildShowcase from "./islands/Home/BuildShowcase.tsx";
+import * as $Home_BuildShowcaseMobile from "./islands/Home/BuildShowcaseMobile.tsx";
+import * as $Home_CarouselLinks from "./islands/Home/CarouselLinks.tsx";
+import * as $Home_Dropdown from "./islands/Home/Dropdown.tsx";
 import * as $Home_Header from "./islands/Home/Header.tsx";
+import * as $Home_Testimonials from "./islands/Home/Testimonials.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
 import * as $LiveProjects from "./islands/LiveProjects.tsx";
 import * as $NRF_BackgroundGrid from "./islands/NRF/BackgroundGrid.tsx";
@@ -43,6 +48,7 @@ import * as $NRF_Header from "./islands/NRF/Header.tsx";
 import * as $NRF_Hero from "./islands/NRF/Hero.tsx";
 import * as $NRF_HeroEditorTabbed from "./islands/NRF/HeroEditorTabbed.tsx";
 import * as $NRF_PageWrapper from "./islands/NRF/PageWrapper.tsx";
+import * as $NRF_ShowcaseEditorAccordion from "./islands/NRF/ShowcaseEditorAccordion.tsx";
 import * as $NRF_ShowcaseEditorTabbed from "./islands/NRF/ShowcaseEditorTabbed.tsx";
 import * as $NRF_TextLines from "./islands/NRF/TextLines.tsx";
 import * as $OnThisPage from "./islands/OnThisPage.tsx";
@@ -70,6 +76,7 @@ const manifest = {
     "./routes/api/webinar.tsx": $api_webinar,
     "./routes/docs.css.ts": $docs_css,
     "./routes/hackathon4.ts": $hackathon4,
+    "./routes/hackathon5.ts": $hackathon5,
     "./routes/proxy/image/index.tsx": $proxy_image_index,
   },
   islands: {
@@ -90,7 +97,11 @@ const manifest = {
     "./islands/Header.tsx": $Header,
     "./islands/HelpFaq.tsx": $HelpFaq,
     "./islands/Home/BuildShowcase.tsx": $Home_BuildShowcase,
+    "./islands/Home/BuildShowcaseMobile.tsx": $Home_BuildShowcaseMobile,
+    "./islands/Home/CarouselLinks.tsx": $Home_CarouselLinks,
+    "./islands/Home/Dropdown.tsx": $Home_Dropdown,
     "./islands/Home/Header.tsx": $Home_Header,
+    "./islands/Home/Testimonials.tsx": $Home_Testimonials,
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
     "./islands/LiveProjects.tsx": $LiveProjects,
     "./islands/NRF/BackgroundGrid.tsx": $NRF_BackgroundGrid,
@@ -103,6 +114,7 @@ const manifest = {
     "./islands/NRF/Hero.tsx": $NRF_Hero,
     "./islands/NRF/HeroEditorTabbed.tsx": $NRF_HeroEditorTabbed,
     "./islands/NRF/PageWrapper.tsx": $NRF_PageWrapper,
+    "./islands/NRF/ShowcaseEditorAccordion.tsx": $NRF_ShowcaseEditorAccordion,
     "./islands/NRF/ShowcaseEditorTabbed.tsx": $NRF_ShowcaseEditorTabbed,
     "./islands/NRF/TextLines.tsx": $NRF_TextLines,
     "./islands/OnThisPage.tsx": $OnThisPage,

@@ -1,6 +1,9 @@
 ---
 description: Como criar um Teste A/B e acompanhar os resultados?
 ---
+<div>
+<iframe width="915" height="435" src="https://www.youtube.com/embed/_tXQw2Cew44" title="Creating A/B Tests (Guilherme Tavano) | Short Demos | Brazilian Portuguese 🇧🇷" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 # Como criar um Teste A/B e acompanhar os resultados?
 

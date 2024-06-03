@@ -50,7 +50,7 @@ const TITLE = "Trusted by the most awesome super duper incredible brand:";
 
 const LogoSlider = ({ logos, direction }: { logos: Image[], direction: 'left' | 'right' }) => {
   const renderLogoSlide = () => (
-    <div className={`flex z-10 ${direction === 'left' ? 'animate-slide' : 'animate-slide-right'}`}>
+    <div className={`flex z-10 gap-6 ${direction === 'left' ? 'animate-slide' : 'animate-slide-right'}`}>
       {logos.map((logo) => (
         <div
           class="flex items-center justify-center h-16 w-36 lg:w-52"
@@ -108,7 +108,7 @@ export default function Brands({ title, url, firstSlider, secondSlider }: Props)
   );
 
   return (
-    <div class="bg-black pb-40 pt-10 max-w-[1440px] mx-auto">
+    <div class="bg-black pb-[124px] pt-10 max-w-[1440px] mx-auto">
       <a
         href={url}
         target={url?.includes("http") ? "_blank" : "_self"}

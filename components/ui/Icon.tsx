@@ -88,7 +88,12 @@ export type AvailableIcons =
   | "subtitle"
   | "edit"
   | "speedtest"
-  | "code";
+  | "code"
+  | "winner"
+  | "product"
+  | "checklist"
+  | "planet"
+  | "bulb";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
