@@ -1226,5 +1226,9 @@
   "/.deco/blocks/Preview%20site%2Floaders%2FblogPostDetailsLoader.ts.json": {
     "blockType": "loaders",
     "__resolveType": "site/loaders/blogPostDetailsLoader.ts"
+  },
+  "/.deco/blocks/Preview%20website%2Floaders%2Foptions%2Froutes.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "website/loaders/options/routes.ts"
   }
 }

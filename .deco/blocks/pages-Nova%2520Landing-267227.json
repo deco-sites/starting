@@ -8,16 +8,19 @@
       "__resolveType": "Deco Header [EN]"
     },
     {
+      "__resolveType": "GTM"
+    },
+    {
       "__resolveType": "site/sections/Home/Hero.tsx",
       "trustSignals": [
         {
-          "title": "Product Hunt",
           "subTitle": "#1 Product of the Week",
+          "title": "Product Hunt",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8bca99ef-0095-43e0-8abb-315ca2910968"
         },
         {
-          "title": "Developer Tools",
           "subTitle": "#1 Product of the Week",
+          "title": "Developer Tools",
           "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b"
         }
       ],
@@ -712,7 +715,7 @@
           "__resolveType": "GTM"
         }
       ],
-      "display": false
+      "display": true
     }
   ],
   "seo": {
