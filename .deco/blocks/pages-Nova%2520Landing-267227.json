@@ -118,7 +118,7 @@
     },
     {
       "__resolveType": "site/sections/Home/TextSection2.tsx",
-      "description": "<p><span style=\"color: rgb(2, 246, 124)\">High-Performance</span>, <span style=\"color: rgb(2, 246, 124)\">Fast Execution</span>, and <span style=\"color: rgb(2, 246, 124)\">Easy Personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
+      "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-Performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Fast Execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Easy Personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
     },
     {
       "__resolveType": "site/sections/Home/Marks.tsx",

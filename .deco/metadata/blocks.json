@@ -1222,5 +1222,9 @@
   "/.deco/blocks/Preview%20%2Fsections%2FHome%2FTextSection2.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Home/TextSection2.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Floaders%2FblogPostDetailsLoader.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/blogPostDetailsLoader.ts"
   }
 }
