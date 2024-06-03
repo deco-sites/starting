@@ -21,7 +21,7 @@ function SliderFocus({
     >
       {Children.map(children, (child, index) => (
         <li class={`shrink-0 ${itemClass}`}>
-          <button data-slider-item={index} data-dot={index} class={`${snap} w-full`}>
+          <button data-slider-item={index} data-dot={index} class={`${snap} flex w-screen justify-center pr-[10%] sm:w-full sm:pr-0 `}>
             {child}
           </button>
         </li>
