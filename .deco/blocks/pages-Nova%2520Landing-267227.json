@@ -222,7 +222,7 @@
     },
     {
       "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-      "title": "<p>Features to Evolve your Business</p>",
+      "title": "<p>Features to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> your Business</p>",
       "tabs": [
         {
           "title": "Advanced SEO settings",
