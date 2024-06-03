@@ -53,7 +53,7 @@ export default function BuildShowCase({
   return (
     <div
       id="hero"
-      class={`relative bg-black py-20 lg:px-[120px] space-y-16 lg:space-y-20 px-6`}
+      class={`relative bg-black py-20 lg:px-[120px] space-y-16 lg:space-y-20 px-6 min-h-[840px]`}
     >
       <Head>
         <script>
@@ -92,7 +92,7 @@ export default function BuildShowCase({
       <div class="mx-auto flex flex-col items-center">
       {isMobile === "desktop"
           ? <ShowcaseEditorTabbed tabs={tabs} position={position} trackId={trackId}/>
-          : <ShowcaseEditorAccordion tabs={tabs} position={position} />}
+          : <ShowcaseEditorAccordion tabs={tabs} />}
       </div>
     </div>
   );

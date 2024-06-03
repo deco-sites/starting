@@ -66,20 +66,18 @@ export const ShowcaseEditorTabbed = (
           {tabs &&
             tabs.map((tab, index) => (
               <div
-                class={`flex flex-col p-6 rounded-[16px] justify-center items-start ${
+                class={`flex flex-col p-6 rounded-[16px] justify-center items-start transition-all duration-700 ${
                   index === selectedTab.value
                     ? "bg-[#0D1717]"
-                    : "text-zinc-600 border-transparent"
+                    : "text-zinc-600 border-transparent hover:opacity-75"
                 }`}
               >
                 <button
                   onClick={() => {
                     selectedTab.value = index;
                   }}
-                  class={`w-full flex flex-col gap-4 text-[12px] text-white items-center lg:text-[18px] leading-[135%] tracking-[-0.36px] text-left font-medium border-b border-[#616B6B] duration-200 transition-colors ${
-                    index === selectedTab.value
-                      ? ""
-                      : "border-transparent"
+                  class={`w-full flex flex-col gap-4 text-[12px] text-white items-center lg:text-[18px] leading-[135%] tracking-[-0.36px] text-left font-medium  ${
+                    index === selectedTab.value ? "pb-4" : "border-transparent"
                   }`}
                 >
                   <div class="flex gap-4 w-full">
@@ -101,18 +99,29 @@ export const ShowcaseEditorTabbed = (
                         </span>
                       )}
                   </div>
+                </button>
+                <div
+                  className={`grid 
+  overflow-hidden transition-all duration-700 ease-in-out ${
+                    selectedTab.value === index
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
                   <span
-                    class={`font-normal text-[#9CA3AF] text-[14px] leading-[150%] ${
-                      index === selectedTab.value ? "mb-4" : "hidden"
+                    class={`font-normal text-[#9CA3AF] text-[14px] leading-[150%] overflow-hidden border-b border-[#616B6B] duration-300 transition-colors ${
+                      index === selectedTab.value
+                        ? "pb-4"
+                        : ""
                     }`}
                   >
                     {tab.description}
                   </span>
-                </button>
-                <div
-                  id={`tab-${trackId}-${index}`}
-                  class="h-[1px] bg-[#02F67C] w-0"
-                >
+                  <div
+                    id={`tab-${trackId}-${index}`}
+                    class="h-[1px] bg-[#02F67C] w-0"
+                  >
+                  </div>
                 </div>
               </div>
             ))}
