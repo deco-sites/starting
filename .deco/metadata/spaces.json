@@ -861,7 +861,7 @@
               },
               {
                 "type": "stack",
-                "width": 33.333333333333336,
+                "width": 33.33333333333333,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -898,8 +898,7 @@
           "viewId": "Properties",
           "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null,
-            "value": null
+            "__signal": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Preview::world::Preview::%7B%7D": {
@@ -963,54 +962,25 @@
         },
         "content": [
           {
-            "type": "row",
+            "type": "stack",
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
             "content": [
               {
-                "type": "stack",
-                "width": 44.63040446304045,
+                "type": "component",
                 "isClosable": true,
                 "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Properties::list::Properties::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Properties::list::Properties::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Properties::list::Properties::%7B%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 55.36959553695955,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Preview::world::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Preview::world::Preview::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Preview::world::Preview::%7B%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
+                "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Properties::list::Properties::%7B%7D\" />",
+                "id": "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Properties::list::Properties::%7B%7D",
+                "componentName": "component",
+                "componentState": {
+                  "id": "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Properties::list::Properties::%7B%7D"
+                }
               }
-            ]
+            ],
+            "width": 100,
+            "activeItemIndex": 0
           }
         ],
         "isClosable": true,
@@ -1028,7 +998,8 @@
           "viewId": "Properties",
           "id": "%2F.deco%2Fblocks%2Fpages-liveprojectsen-5d5a28602980.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         }
       }
@@ -2026,8 +1997,7 @@
           "viewId": "Properties",
           "id": "%2F.deco%2Fblocks%2F22757.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null,
-            "value": null
+            "__signal": null
           }
         },
         "%2F.deco%2Fblocks%2F22757.json::Preview::world::Preview::%7B%7D": {

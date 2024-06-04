@@ -650,6 +650,16 @@
               "label": "Bel Air Móveis"
             },
             {
+              "link": "https://www.casaevideo.com.br/",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b85450fa-81c8-4396-b511-bcef393af70b",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Casa & Video"
+            },
+            {
               "link": "https://www.copelcolchoes.com.br/",
               "image": [
                 {
@@ -660,24 +670,24 @@
               "label": "Copel Colchões"
             },
             {
-              "link": "https://www.costaatacado.com.br/",
-              "image": [
-                {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/100b89f4-c08f-498f-b816-b23130e1e184",
-                  "color": "#FFFFFF"
-                }
-              ],
-              "label": "Costa Atacado"
-            },
-            {
               "image": [
                 {
                   "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/05bdfddd-6115-4282-b970-377b24485bfd"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/100b89f4-c08f-498f-b816-b23130e1e184"
                 }
               ],
-              "label": "Cristais Tavares",
-              "link": "https://www.cristaistavares.com.br/"
+              "label": "Costa Atacado",
+              "link": "https://www.costaatacado.com.br/"
+            },
+            {
+              "link": "https://www.cristaistavares.com.br/",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/05bdfddd-6115-4282-b970-377b24485bfd",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Cristais Tavares"
             },
             {
               "link": "https://www.eladecora.com.br/",
@@ -710,13 +720,13 @@
               "label": "Lumini"
             },
             {
-              "link": "https://www.openbox2.com.br/",
               "image": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/35f9bea5-9017-4418-90dd-ca953dac9e36",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/35f9bea5-9017-4418-90dd-ca953dac9e36"
                 }
               ],
+              "link": "https://www.openbox2.com.br/",
               "label": "OpenBox2"
             },
             {
@@ -726,8 +736,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c3393e0c-15e2-4dc1-acaf-9f2ffa8f3244"
                 }
               ],
-              "link": "https://star-company.deco.site/",
-              "label": "Star Company"
+              "label": "Star Company",
+              "link": "https://star-company.deco.site/"
             },
             {
               "image": [
@@ -736,8 +746,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e5ad9d6e-71c8-42b5-b167-847009df9898"
                 }
               ],
-              "label": "Teciplast",
-              "link": "https://loja.teciplast.com.br/"
+              "link": "https://loja.teciplast.com.br/",
+              "label": "Teciplast"
             }
           ],
           "label": "Home & Decor"
