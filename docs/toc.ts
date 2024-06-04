@@ -162,7 +162,10 @@ const tableOfContents: TableOfContents = [
         slug: "developing/hello-world",
       },
       {
-        title: { pt: "Exportando Propriedades Padrões em um Bloco", en: "Exporting Default Props in a Block" },
+        title: {
+          pt: "Exportando Propriedades Padrões em um Bloco",
+          en: "Exporting Default Props in a Block",
+        },
         slug: "developing/exporting-default-props",
       },
       {
@@ -304,6 +307,14 @@ const tableOfContents: TableOfContents = [
         },
         slug: "reference/widgets",
       },
+
+      {
+        title: {
+          pt: "Deco Records",
+          en: "Deco Records",
+        },
+        slug: "reference/deco-records",
+      },
     ],
   },
   {
@@ -441,22 +452,22 @@ const tableOfContents: TableOfContents = [
       pt: "External SDKs",
       en: "External SDKs",
     },
-    children:[
+    children: [
       {
-        title:{
+        title: {
           pt: "Teste A/B",
           en: "A/B Test",
         },
-        slug: "sdk/ab-test"
+        slug: "sdk/ab-test",
       },
       {
-        title:{
+        title: {
           pt: "Feature Flags",
           en: "Feature Flags",
         },
-        slug: "sdk/feature-flags"
-      }
-    ]
+        slug: "sdk/feature-flags",
+      },
+    ],
   },
   {
     title: {
