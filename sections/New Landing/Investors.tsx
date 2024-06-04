@@ -50,7 +50,11 @@ function Investors(props: Props) {
         class="flex items-center justify-center rounded-[20px] w-auto backdrop-filter backdrop-blur-22 relative"
         style={{ "borderRadius": "16px" }}
       >
-        <div class="w-full h-full z-60 relative flex items-center justify-center px-5 py-[10px] gap-4">
+        <a
+          href={element.href}
+          target="_blank"
+          class="w-full h-full z-60 relative flex items-center justify-center px-5 py-[10px] gap-4"
+        >
           {element.img && (
             <Picture>
               <Source
@@ -70,7 +74,7 @@ function Investors(props: Props) {
               />
             </Picture>
           )}
-        </div>
+        </a>
       </div>
     );
   }
