@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { useEffect } from "preact/hooks";
+import { useEffect, useRef } from "preact/hooks";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { animate } from "motion";
 import Image from "apps/website/components/Image.tsx";
@@ -26,38 +26,60 @@ export const ShowcaseEditorTabbed = (
   { tabs, position = "left", trackId }: Props,
 ) => {
   const selectedTab = useSignal(0);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (tabs && tabs.length > 0) {
-      const animationWidth = animate(
-        `#tab-${trackId}-${selectedTab.value}`,
-        { width: "100%" },
-        { duration: 5, easing: "linear" },
-      );
+    const containerElement = containerRef.current;
 
-      const tabElements = document.querySelectorAll(
-        "[id^='tab-" + trackId + "-']",
-      );
-      console.log(tabElements);
-      tabElements.forEach((element, index) => {
-        if (index !== selectedTab.value) {
-          animate(element, { width: "0%" }, { duration: 0 });
-        }
-      });
-
-      const interval = setInterval(() => {
-        selectedTab.value = (selectedTab.value + 1) % tabs.length;
-      }, 5000);
-      return () => {
-        animationWidth.stop();
-        clearInterval(interval);
-      };
+    if (!containerElement || !tabs || tabs.length === 0) {
+      return;
     }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const animationWidth = animate(
+              `#tab-${trackId}-${selectedTab.value}`,
+              { width: "100%" },
+              { duration: 5, easing: "linear" },
+            );
+
+            const tabElements = document.querySelectorAll(
+              "[id^='tab-" + trackId + "-']",
+            );
+
+            tabElements.forEach((element, index) => {
+              if (index !== selectedTab.value) {
+                animate(element, { width: "0%" }, { duration: 0 });
+              }
+            });
+
+            const interval = setInterval(() => {
+              selectedTab.value = (selectedTab.value + 1) % tabs.length;
+            }, 5000);
+
+            observer.unobserve(entry.target);
+
+            return () => {
+              animationWidth.stop();
+              clearInterval(interval);
+            };
+          }
+        });
+      },
+      { threshold: 0.5 },
+    );
+
+    observer.observe(containerElement);
+
+    return () => observer.disconnect();
   }, [tabs, selectedTab.value]);
 
   return (
     <>
       <div
+        ref={containerRef}
         class={`flex flex-row ${
           position === "left" ? "" : "flex-row-reverse "
         }lg:w-full lg:max-w-[1440px] rounded-lg lg:rounded-3xl mx-2 justify-center gap-8 lg:mx-0 z-40 backdrop-blur-xl`}
@@ -80,7 +102,7 @@ export const ShowcaseEditorTabbed = (
                     index === selectedTab.value ? "pb-4" : "border-transparent"
                   }`}
                 >
-                  <div class="flex gap-4 w-full">
+                  <h3 class="flex gap-4 w-full">
                     <Image
                       src={tab.icon}
                       alt={tab.title}
@@ -98,7 +120,7 @@ export const ShowcaseEditorTabbed = (
                           {tab.label?.name}
                         </span>
                       )}
-                  </div>
+                  </h3>
                 </button>
                 <div
                   className={`grid 
@@ -110,9 +132,7 @@ export const ShowcaseEditorTabbed = (
                 >
                   <span
                     class={`font-normal text-[#9CA3AF] text-[14px] leading-[150%] overflow-hidden border-b border-[#616B6B] duration-300 transition-colors ${
-                      index === selectedTab.value
-                        ? "pb-4"
-                        : ""
+                      index === selectedTab.value ? "pb-4" : ""
                     }`}
                   >
                     {tab.description}
