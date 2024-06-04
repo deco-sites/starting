@@ -1,5 +1,5 @@
 import { useId } from "preact/hooks";
-import { useEffect, useState } from "preact/hooks";
+import { useState } from "preact/hooks";
 import Image from "deco-sites/std/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import SliderFocus from "site/components/ui/SliderFocus.tsx";
@@ -25,16 +25,6 @@ export interface Props {
   cards: Post[];
 }
 
-const isElementInViewport = (el: HTMLElement): boolean => {
-  const rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-};
-
 export default function CarouselLinks({
   bottomPadding,
   title =
@@ -46,12 +36,20 @@ export default function CarouselLinks({
 
   const handlePrevClick = () => {
     setCurrentCardIndex((prevIndex) => Math.max(prevIndex - 1, 0));
-    document.getElementById(`card_${currentCardIndex - 1}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+    document.getElementById(`card_${currentCardIndex - 1}`)?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   };
 
   const handleNextClick = () => {
-    setCurrentCardIndex((prevIndex) => Math.min(prevIndex + 1, cards.length - 1));
-    document.getElementById(`card_${currentCardIndex + 1}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+    setCurrentCardIndex((prevIndex) =>
+      Math.min(prevIndex + 1, cards.length - 1)
+    );
+    document.getElementById(`card_${currentCardIndex + 1}`)?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   };
 
   return (
@@ -64,11 +62,14 @@ export default function CarouselLinks({
         <h2
           class="font-albert-sans text-lg lg:text-2xl font-medium text-white text-center leading-[115%] tracking-[-0.72px]"
           dangerouslySetInnerHTML={{ __html: title }}
-        ></h2>
+        >
+        </h2>
       )}
       <div class="relative">
-        <div className="before:absolute before:inset-y-0 before:left-0 before:w-[10%] before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20"></div>
-        <div className="after:absolute after:inset-y-0 after:right-0 after:w-[10%] after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20"></div>
+        <div className="before:absolute before:inset-y-0 before:left-0 before:w-[10%] before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
+        </div>
+        <div className="after:absolute after:inset-y-0 after:right-0 after:w-[10%] after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
+        </div>
 
         {/* Contêiner para os cards */}
         <div class="relative overflow-hidden">
@@ -100,7 +101,9 @@ export default function CarouselLinks({
                     </div>
                     <div
                       class={`flex flex-col gap-4 justify-between rounded-[8px] h-[47%] group-hover:space-y-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-                        currentCardIndex === index ? "opacity-100 sm:opacity-0" : ""
+                        currentCardIndex === index
+                          ? "opacity-100 sm:opacity-0"
+                          : ""
                       }`}
                     >
                       <div class="flex flex-col gap-4 overflow-hidden">
@@ -181,7 +184,7 @@ export default function CarouselLinks({
           </button>
         </div>
       </div>
-      <SliderControllerJS rootId={id} />
+      <SliderControllerJS rootId={id} infinite />
     </section>
   );
 }
