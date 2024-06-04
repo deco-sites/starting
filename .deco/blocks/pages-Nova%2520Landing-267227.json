@@ -884,7 +884,10 @@
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b80fc85-c4e4-4900-a0f8-479a7c47e677",
                     "label": "Landing Pages",
                     "cta": "Start now",
-                    "id": "bt-click-signup"
+                    "id": "bt-click-signup",
+                    "icons": {
+                      "active": false
+                    }
                   },
                   {
                     "href": "https://deco.new",

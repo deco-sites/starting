@@ -1230,5 +1230,13 @@
   "/.deco/blocks/Preview%20website%2Floaders%2Foptions%2Froutes.ts.json": {
     "blockType": "loaders",
     "__resolveType": "website/loaders/options/routes.ts"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FHome%2FHeader.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Home/Header.tsx"
+  },
+  "/.deco/blocks/HeaderV2.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Home/Header.tsx"
   }
 }
