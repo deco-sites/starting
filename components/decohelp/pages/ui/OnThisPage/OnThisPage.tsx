@@ -1,4 +1,3 @@
-import useMenuState from "site/components/decohelp/pages/hooks/useMenuState.ts";
 import { useEffect, useState } from "preact/hooks";
 
 interface OnThisPage {
@@ -7,7 +6,6 @@ interface OnThisPage {
 
 export default function OnThisPage(props: OnThisPage & { url: string }) {
   const { label = "On this page" } = props;
-  const { isMobile } = useMenuState();
   const baseClass = "text-[15px] font-normal leading-tight";
   const activeClass = label && label.length > 0
     ? "text-decorative-one-900"
@@ -108,9 +106,7 @@ export default function OnThisPage(props: OnThisPage & { url: string }) {
 
   return (
     <div
-      class={`lg:w-[300px] w-full xl:block hidden lg:top-[140px] lg:mb-[140px] ${
-        isMobile ? "absolute" : "sticky"
-      }`}
+      class={`lg:w-[300px] w-full xl:block hidden lg:top-[140px] lg:mb-[140px] lg:sticky`}
     >
       <ul id="content-list" class={`flex flex-col gap-2 text-white`}>
         {label && (

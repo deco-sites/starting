@@ -162,6 +162,10 @@ const tableOfContents: TableOfContents = [
         slug: "developing/hello-world",
       },
       {
+        title: { pt: "Exportando Propriedades Padrões em um Bloco", en: "Exporting Default Props in a Block" },
+        slug: "developing/exporting-default-props",
+      },
+      {
         title: {
           pt: "Adicionando interatividade em uma página",
           en: "Client-side interactivity",
@@ -255,13 +259,6 @@ const tableOfContents: TableOfContents = [
           en: "Creating an A/B Test",
         },
         slug: "developing/ab-test",
-      },
-      {
-        title: {
-          pt: "Criando um Teste A/B Headless",
-          en: "Creating a Headless A/B Test ",
-        },
-        slug: "developing/headless-ab-test",
       },
     ],
   },
@@ -441,6 +438,28 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
+      pt: "External SDKs",
+      en: "External SDKs",
+    },
+    children:[
+      {
+        title:{
+          pt: "Teste A/B",
+          en: "A/B Test",
+        },
+        slug: "sdk/ab-test"
+      },
+      {
+        title:{
+          pt: "Feature Flags",
+          en: "Feature Flags",
+        },
+        slug: "sdk/feature-flags"
+      }
+    ]
+  },
+  {
+    title: {
       pt: "Deco Hub",
       en: "Deco Hub",
     },
@@ -576,18 +595,25 @@ const tableOfContents: TableOfContents = [
   },*/
   {
     title: {
-      pt: "Arquitetura Deco",
-      en: "Deco Architecture",
+      pt: "Referência da API",
+      en: "API Reference",
     },
     children: [
       {
         title: {
-          pt: "Usando o Deco CMS como Headless",
-          en: "Using Deco CMS as Headless",
+          pt: "useSection",
+          en: "useSection",
         },
-        slug: "architecture/headless-cms",
+        slug: "api-reference/use-section",
       },
     ],
+  },
+  {
+    title: {
+      pt: "CMS Headless",
+      en: "Headless CMS",
+    },
+    slug: "headless-cms",
   }
 ];
 

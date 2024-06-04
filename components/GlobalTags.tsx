@@ -32,6 +32,13 @@ export default function GlobalTags() {
                     overflow-x: hidden;
                     scroll-behavior: smooth;
                 }
+                @font-face {
+                  font-family: 'argent-pixel';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-display: swap;
+                  src: url(/fonts/ArgentPixelCF-Regular.woff2) format('woff2');
+                }
                 /* latin */
                 @font-face {
                     font-family: 'Albert Sans';

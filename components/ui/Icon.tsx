@@ -43,6 +43,7 @@ export type AvailableIcons =
   | "MagnifyingGlass"
   | "MapPin"
   | "Mastercard"
+  | "Menu"
   | "Minus"
   | "OCCLogo"
   | "Phone"
@@ -82,7 +83,15 @@ export type AvailableIcons =
   | "Fresh"
   | "ToolHexagon"
   | "sound"
-  | "subtitle";
+  | "subtitle"
+  | "edit"
+  | "speedtest"
+  | "code"
+  | "winner"
+  | "product"
+  | "checklist"
+  | "planet"
+  | "bulb";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

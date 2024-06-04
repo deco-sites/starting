@@ -1,1 +1,237 @@
-{"name":"Pricing Stripe / EN","path":"/en/pricing","sections":{"variants":[{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"GTM"},{"__resolveType":"Deco Head [EN]"},{"__resolveType":"Deco Header [EN]"},{"__resolveType":"site/sections/NRF/Pricing.tsx","text":"Build, preview, and go live today. As you expand, take advantage of our usage-based pricing and pay only for what you need!","title":"Simple pricing that follows your growth","freePlan":{"text":"Your free sandbox to start building blazing-fast websites. Up to 5,000 pageviews per month.","price":"$0","title":"Start building for free","button":{"link":"https://admin.deco.cx/","text":"Sign-up!"},"benefits":[],"priceCustom":false},"paidPlans":[],"recurrence":"per month"},{"__resolveType":"site/sections/NRF/PricingTable.tsx","text":"<p>Testando</p>","price":"$9","button":{"link":"https://teste.com/","text":"Teste"},"subtext":"Teste","title":"Teste","subtitle":"+ US$8 for each additional 10k pageviews","benefits":[],"plan":[{"benefits":[{}],"title":"dev","subtitle":"+ US$8 for each additional 10k pageviews","currency":"usd","price":"9","callToAction":"Upgrade to DEV","callToActionUrl":"https://teste.com"}],"currency":"USD","plans":[{"benefits":[{"title":"<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>All features included in SANDBOX</strong></span><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">5 team members</span></strong><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">50k pageviews included</span></strong><br></p>","description":"Shared across all team sites"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">50 GB/mo Bandwidth</span></strong><br></p>","description":"Shared across all team sites"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Custom domains</span></strong><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Dedicated environment</span></strong><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">AI copilot</span></strong><br></p>","description":"500 decopilot gens included"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99%</span></strong><br></p>"}],"title":"dev","price":"$9","currency":"usd/mo","info":"+ $8 for each additional 10k pageviews","subtitle":"Add custom domains for ","callToActionUrl":"https://admin.deco.cx/","callToAction":"Sign up"},{"benefits":[{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">All features included in DEV</span></strong><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Unlimited team members</span></strong><br></p>"},{"title":"<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>250k pageviews included</strong></span><br></p>","description":"Per PRO site"},{"title":"<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>250 GB/mo Bandwidth</strong></span><br></p>","description":"Per PRO site"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">AI copilot</span></strong><br></p>","description":"2500 decopilot gens included"},{"description":"powered by Plausible","title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime web analytics</span></strong><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime error logging &amp; tracing</span></strong><br></p>","description":"powered by HyperDX"},{"title":"<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Content segmentation</strong></span><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">A/B test results, roles &amp; permissions</span></strong><br></p>","description":"Coming soon"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99.9%</span></strong><br></p>"}],"title":"pro","subtitle":"Get analytics and observability for","currency":"usd/mo","price":"$99","info":"+ $8 for each additional 10k pageviews","callToAction":"Sign up","callToActionUrl":"https://admin.deco.cx/"},{"benefits":[{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">All features included in PRO</span></strong><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Unlimited team members</span></strong><br></p>"},{"title":"<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Unlimited pageviews included</strong></span><br></p>","description":"Per ENTERPRISE site"},{"title":"<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Unlimited Bandwidth</strong></span><br></p>","description":"Per ENTERPRISE site"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">AI copilot</span></strong><br></p>","description":"Unlimited decopilot gens included"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime web analytics</span></strong><br></p>","description":"powered by Plausible"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime error logging &amp; tracing</span></strong><br></p>","description":"powered by HyperDX"},{"title":"<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Content segmentation</strong></span><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">A/B test results, roles &amp; permissions</span></strong><br></p>","description":"Coming soon"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99.9%</span></strong><br></p>"},{"title":"<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Premium support</span></strong><br></p>"}],"title":"Enterprise","callToAction":"Book a demo","callToActionUrl":"https://deco.cx/en/contact-us","subtitle":"Unlimited scalability","info":"+ $8 for each 10k pageviews","price":"$500","currency":"usd/mo"}]},{"__resolveType":"FreePlan"},{"__resolveType":"site/sections/NRF/FeaturesWithImage.tsx","cards":[{"text":"Enhance conversion rates by offering a seamless navigation experience, increasing customer satisfaction & sales. Get more bang for your bucks!","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/31e0735d-7f8f-4748-88a6-4cb2fbb2c226","title":"<p>Increase conversion</p>"},{"text":"Elevate SEO rankings, increase online visibility, and build customer trust with ultra-fast page load times.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/258f20c1-e6c2-46e0-8937-e8aad1883803","title":"<p>Boost Organic Traffic</p>"},{"text":"Lower paid media expenses by reducing bounce rates, achieving higher quality scores and optimizing ad investments.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a038b983-fd62-4828-a54f-e764d1ddea9d","title":"Less PPC expenses"}]},{"__resolveType":"Deco Footer [EN]"},{"__resolveType":"site/sections/NRF/Grid.tsx"}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Pricing Stripe / EN",
+  "path": "/en/pricing",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
+        "value": [
+          {
+            "__resolveType": "GTM"
+          },
+          {
+            "__resolveType": "Deco Head [EN]"
+          },
+          {
+            "__resolveType": "Deco Header [EN]"
+          },
+          {
+            "__resolveType": "site/sections/NRF/Pricing.tsx",
+            "text": "Build, preview, and go live today. As you expand, take advantage of our usage-based pricing and pay only for what you need!",
+            "title": "Simple pricing that follows your growth",
+            "freePlan": {
+              "text": "Your free sandbox to start building blazing-fast websites. Up to 5,000 pageviews per month.",
+              "price": "$0",
+              "title": "Start building for free",
+              "button": {
+                "link": "https://admin.deco.cx/",
+                "text": "Sign-up!"
+              },
+              "benefits": [],
+              "priceCustom": false
+            },
+            "paidPlans": [],
+            "recurrence": "per month"
+          },
+          {
+            "__resolveType": "site/sections/NRF/PricingTable.tsx",
+            "text": "<p>Testando</p>",
+            "price": "$9",
+            "button": {
+              "link": "https://teste.com/",
+              "text": "Teste"
+            },
+            "subtext": "Teste",
+            "title": "Teste",
+            "subtitle": "+ US$8 for each additional 10k pageviews",
+            "benefits": [],
+            "plan": [
+              {
+                "benefits": [
+                  {}
+                ],
+                "title": "dev",
+                "subtitle": "+ US$8 for each additional 10k pageviews",
+                "currency": "usd",
+                "price": "9",
+                "callToAction": "Upgrade to DEV",
+                "callToActionUrl": "https://teste.com"
+              }
+            ],
+            "currency": "USD",
+            "plans": [
+              {
+                "benefits": [
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>All features included in SANDBOX</strong></span><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">5 team members</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">50k pageviews included</span></strong><br></p>",
+                    "description": "Shared across all team sites"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">50 GB/mo Bandwidth</span></strong><br></p>",
+                    "description": "Shared across all team sites"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Custom domains</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Dedicated environment</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">AI copilot</span></strong><br></p>",
+                    "description": "500 decopilot gens included"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99%</span></strong><br></p>"
+                  }
+                ],
+                "price": "$9",
+                "currency": "usd/mo",
+                "info": "+ $8 for each additional 10k pageviews",
+                "subtitle": "Add custom domains for ",
+                "callToActionUrl": "https://admin.deco.cx/",
+                "callToAction": "Sign up",
+                "title": "Free"
+              },
+              {
+                "benefits": [
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">All features included in DEV</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Unlimited team members</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>250k pageviews included</strong></span><br></p>",
+                    "description": "Per PRO site"
+                  },
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>250 GB/mo Bandwidth</strong></span><br></p>",
+                    "description": "Per PRO site"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">AI copilot</span></strong><br></p>",
+                    "description": "2500 decopilot gens included"
+                  },
+                  {
+                    "description": "powered by Plausible",
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime web analytics</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime error logging &amp; tracing</span></strong><br></p>",
+                    "description": "powered by HyperDX"
+                  },
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Content segmentation</strong></span><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">A/B test results, roles &amp; permissions</span></strong><br></p>",
+                    "description": "Coming soon"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99.9%</span></strong><br></p>"
+                  }
+                ],
+                "title": "Git-based CMS",
+                "subtitle": "Get analytics and observability for",
+                "currency": "usd/mo",
+                "price": "$99",
+                "info": "+ $8 for each additional 10k pageviews",
+                "callToAction": "Sign up",
+                "callToActionUrl": "https://admin.deco.cx/"
+              },
+              {
+                "benefits": [
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">All features included in PRO</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Unlimited team members</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Pay as you grow</strong></span><br></p>",
+                    "description": "Unlimited pageviews scalability"
+                  },
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Unlimited Bandwidth</strong></span><br></p>",
+                    "description": "Per ENTERPRISE site"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">AI copilot</span></strong><br></p>",
+                    "description": "Unlimited decopilot gens included"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime web analytics</span></strong><br></p>",
+                    "description": "powered by Plausible"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime error logging &amp; tracing</span></strong><br></p>",
+                    "description": "powered by HyperDX"
+                  },
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Content segmentation</strong></span><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">A/B test results, roles &amp; permissions</span></strong><br></p>",
+                    "description": "Coming soon"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99.9%</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Premium support</span></strong><br></p>"
+                  }
+                ],
+                "title": "Pro",
+                "callToAction": "Book a demo",
+                "callToActionUrl": "https://deco.cx/en/contact-us",
+                "subtitle": "Unlimited scalability",
+                "info": "+ $8 for each 10k pageviews",
+                "price": "$500",
+                "currency": "usd/mo"
+              }
+            ]
+          },
+          {
+            "__resolveType": "FreePlan"
+          },
+          {
+            "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx",
+            "cards": [
+              {
+                "text": "Enhance conversion rates by offering a seamless navigation experience, increasing customer satisfaction & sales. Get more bang for your bucks!",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/31e0735d-7f8f-4748-88a6-4cb2fbb2c226",
+                "title": "<p>Increase conversion</p>"
+              },
+              {
+                "text": "Elevate SEO rankings, increase online visibility, and build customer trust with ultra-fast page load times.",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/258f20c1-e6c2-46e0-8937-e8aad1883803",
+                "title": "<p>Boost Organic Traffic</p>"
+              },
+              {
+                "text": "Lower paid media expenses by reducing bounce rates, achieving higher quality scores and optimizing ad investments.",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a038b983-fd62-4828-a54f-e764d1ddea9d",
+                "title": "Less PPC expenses"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Deco Footer [EN]"
+          },
+          {
+            "__resolveType": "site/sections/NRF/Grid.tsx"
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

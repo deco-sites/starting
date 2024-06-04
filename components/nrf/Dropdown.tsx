@@ -62,7 +62,7 @@ export function Dropdown({
     flat: {
       open: "",
       default:
-        "relative flex text-white text-opacity-80 items-center h-full px-[24px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-centerp",
+        "relative flex text-white text-opacity-80 items-center h-full px-[20px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-centerp",
     },
   };
 
@@ -72,7 +72,7 @@ export function Dropdown({
     <div class={`${open ? variantClass.open : ""} ${variantClass.default}`}>
       <div
         onClick={onClick}
-        class="z-10 md:px-3 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer"
+        class="z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer"
       >
         {value}
         <svg
