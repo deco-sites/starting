@@ -32,29 +32,29 @@ export default function CarouselLinks({
   cards,
 }: Props) {
   const id = useId();
-  const [currentCardIndex, setCurrentCardIndex] = useState<number>(0);
+  // const [currentCardIndex, setCurrentCardIndex] = useState<number>(0);
 
-  const handlePrevClick = () => {
-    setCurrentCardIndex((prevIndex) => Math.max(prevIndex - 1, 0));
-    document.getElementById(`card_${currentCardIndex - 1}`)?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  };
+  // const handlePrevClick = () => {
+  //   setCurrentCardIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+  //   document.getElementById(`card_${currentCardIndex - 1}`)?.scrollIntoView({
+  //     behavior: "smooth",
+  //     block: "center",
+  //   });
+  // };
 
-  const handleNextClick = () => {
-    setCurrentCardIndex((prevIndex) =>
-      Math.min(prevIndex + 1, cards.length - 1)
-    );
-    document.getElementById(`card_${currentCardIndex + 1}`)?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  };
+  // const handleNextClick = () => {
+  //   setCurrentCardIndex((prevIndex) =>
+  //     Math.min(prevIndex + 1, cards.length - 1)
+  //   );
+  //   document.getElementById(`card_${currentCardIndex + 1}`)?.scrollIntoView({
+  //     behavior: "smooth",
+  //     block: "center",
+  //   });
+  // };
 
   return (
     <section
-      class="flex flex-col relative px-6 py-16 lg:px-16 gap-8 lg:gap-12 max-w-screen-2xl m-auto lg:py-36 z-10"
+      class="flex flex-col relative px-6 py-16 lg:px-16 gap-8 lg:gap-12 max-w-[1440px] m-auto lg:py-36 z-10"
       style={{ paddingBottom: bottomPadding }}
       id={id}
     >
@@ -75,7 +75,7 @@ export default function CarouselLinks({
         <div class="relative overflow-hidden">
           <div class="flex" style={{ justifyContent: "center" }}>
             <SliderFocus
-              class="grid grid-flow-col sm:flex gap-[9.66px] sm:gap-4 carousel-start"
+              class="grid grid-flow-col sm:flex gap-[9.66px] sm:justify-center sm:gap-4 carousel-start"
               itemClass="h-full"
               snap="opacity-50 disabled:opacity-100 focus:outline-none h-full"
             >
@@ -83,11 +83,10 @@ export default function CarouselLinks({
                 <a
                   id={`card_${index}`}
                   href={card.href}
-                  class={`group block rounded-[8px] w-[80vw] sm:w-[193px] sm:flex-none lg:w-[320px] min-h-[230px] lg:min-h-[362px] h-full transition-all duration-300 sm:hover:w-[232px] lg:hover:w-[384px] ${
-                    currentCardIndex === index ? "current-card" : ""
-                  }`}
+                  class={`group block rounded-[8px] w-[75vw] sm:w-[193px] sm:flex-none lg:w-[320px] min-h-[230px] lg:min-h-[362px] h-full transition-all duration-300 sm:hover:w-[232px] lg:hover:w-[384px] 
+                    `}
                 >
-                  <article class="flex flex-col gap-6 overflow-hidden backdrop-filter backdrop-blur-22 transition-all duration-300">
+                  <article class="flex flex-col gap-[14.49px] lg:gap-6 overflow-hidden backdrop-filter backdrop-blur-22 transition-all duration-300">
                     <div class="rounded-[8px]">
                       <Image
                         src={card.img as string}
@@ -100,14 +99,12 @@ export default function CarouselLinks({
                       />
                     </div>
                     <div
-                      class={`flex flex-col gap-4 justify-between rounded-[8px] h-[47%] group-hover:space-y-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-                        currentCardIndex === index
-                          ? "opacity-100 sm:opacity-0"
-                          : ""
-                      }`}
+                      class={`flex flex-col gap-4 justify-between rounded-[8px] h-[47%] transition-opacity duration-300
+                        
+                      `}
                     >
-                      <div class="flex flex-col gap-4 overflow-hidden">
-                        <h5 class="sm:w-[384px] flex items-center gap-2 font-medium not-italic text-left text-[14.5px] leading-[115%] tracking-[-0.72px] lg:text-[24px] text-white">
+                      <div class="flex flex-col gap-[9.66px] lg:gap-4 overflow-hidden">
+                        <h5 class="flex items-center gap-2 font-medium not-italic text-left text-[14.5px] leading-[115%] tracking-[-0.54px] lg:text-lg group-hover:lg:text-[24px] text-white justify-between">
                           {card.label}
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +123,7 @@ export default function CarouselLinks({
                             />
                           </svg>
                         </h5>
-                        <div class="sm:w-[384px] text-[9.66px] lg:text-[16px] text-[#9CA3AF] leading-[1.5] line-clamp-2 overflow-ellipsis text-left">
+                        <div class="text-[9.66px] lg:text-[12px] group-hover:lg:text-[16px] text-[#9CA3AF] leading-[1.5] line-clamp-2 overflow-ellipsis text-left">
                           {card.description}
                         </div>
                       </div>
@@ -141,10 +138,10 @@ export default function CarouselLinks({
         {/* Botões de navegação */}
         <div class="flex flex-row justify-end">
           <button
-            class="rounded-full p-1.5 lg:p-3 bg-[#02F67C] focus:outline-none flex items-center justify-center border-none border-0 absolute left-[0.5rem] sm:left-[6rem] top-[35%] sm:top-[18%] z-40"
+            class="rounded-full p-1.5 lg:p-3 bg-[#02F67C] focus:outline-none flex items-center justify-center border-none border-0 absolute left-[0.5rem] sm:left-[1rem] lg:left-[6rem] top-[35%] sm:top-[30%] z-40"
             data-slide="prev"
             aria-label="Previous item"
-            onClick={handlePrevClick}
+            
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -162,10 +159,10 @@ export default function CarouselLinks({
             </svg>
           </button>
           <button
-            class="rounded-full p-1.5 lg:p-3 bg-[#02F67C] focus:outline-none flex items-center justify-center border-none border-0 absolute top-[35%] sm:top-[18%] right-[0.5rem] sm:right-[6rem] z-40"
+            class="rounded-full p-1.5 lg:p-3 bg-[#02F67C] focus:outline-none flex items-center justify-center border-none border-0 absolute top-[35%] sm:top-[30%] right-[0.5rem] sm:right-[1rem] lg:right-[6rem] z-40"
             data-slide="next"
             aria-label="Next item"
-            onClick={handleNextClick}
+            
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
