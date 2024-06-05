@@ -109,8 +109,7 @@ usuários **fazer upload de imagens**.
 O tipo é um _wrapper_ para `string`, então a Section receberá a URL da imagem
 hospedada nos servidores da _deco.cx_.
 
-> Você pode ler mais sobre como trabalhar com Imagens na _deco.cx_
-> [aqui](/docs/pt/receitas/imagens)
+> Você pode ler mais sobre [como trabalhar com Imagens na _deco.cx_](/docs/pt/receitas/imagens)
 
 **Opcional:** A _deco.cx_ fornece um componente que otimiza o carregamento da
 imagens e pode ser usado em conjunto com esta propriedade.
@@ -130,8 +129,7 @@ export interface props {
 Semelhante à Imagem, as propriedades com este tipo serão editadas através de um
 _widget_ com a possibilidade de upload de vídeos.
 
-Exemplo de uso
-[aqui](https://github.com/deco-sites/fashion/blob/e15a0320fe9e0b7503eb4723f7c230b23886c2b5/sections/VideoCarousel.tsx#L3).
+[Exemplo de uso aqui](https://github.com/deco-sites/fashion/blob/e15a0320fe9e0b7503eb4723f7c230b23886c2b5/sections/VideoCarousel.tsx#L3).
 
 ```ts
 import type { VideoWidget as Video } from "apps/admin/widgets.ts";

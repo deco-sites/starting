@@ -24,7 +24,7 @@ A Preact component is a function exported by default (`export default`) that
 receives properties, returns JSX, and is invoked on each rendering of the
 defined element. As an example, open the `sections/Hero.tsx` file from the
 ecommerce template in VSCode. This file is also accessible
-[on the deco GitHub](https://github.com/deco-sites/start/blob/main/sections/Hero.tsx).
+[on the deco GitHub](https://github.com/deco-sites/storefront/blob/main/sections/Content/Hero.tsx).
 
 The code of this element is written in HTML with JS, as shown in the example
 below.
@@ -211,7 +211,7 @@ In summary, to test modifications on the Section `Hero.tsx`:
 
 2. Make local modifications to the file `sections/Hero.tsx`.
 
-3. Access the Admin of _deco.cx_ at https://deco.cx/admin, select your Site, and
+3. Access the [Admin of _deco.cx_](https://deco.cx/admin), select your Site, and
    go to the `Sections`.
 
 4. Make sure that `localhost:8000` is selected in the Environment Selector in

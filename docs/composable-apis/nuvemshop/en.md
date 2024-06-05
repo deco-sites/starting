@@ -3,7 +3,7 @@ descrição: Learn how to integrate Deco with the Nuvemshop e-commerce platform.
 ---
 
 This article guides you through creating and configuring a website on
-[**deco.cx**](http://deco.cx) for an online store using data from the Nuvemshop
+[**deco.cx**](https://deco.cx) for an online store using data from the Nuvemshop
 e-commerce platform [Nuvemshop](https://www.nuvemshop.com.br/).
 
 # Table of Contents
@@ -15,7 +15,7 @@ e-commerce platform [Nuvemshop](https://www.nuvemshop.com.br/).
 # Prerequisites
 
 - A website on Deco. Create one for free at
-  [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+  [Deco Admin](https://admin.deco.cx/).
 - An account on Nuvemshop.
 
 # Creating the Website
@@ -34,7 +34,7 @@ Otherwise, follow the steps in this
 To connect to your Nuvemshop account:
 
 1. Access the admin panel of your site at
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. In the top bar, select _apps_.
 3. Select the **Nuvemshop** App. You will se something like:
    <img width="480" alt="image" src="https://github.com/deco-cx/apps/assets/76620866/5a52d192-cb60-4f84-9be6-9dcc00a1056e">
@@ -68,7 +68,7 @@ reusable collection block.
 After the Nuvemshop setup is complete, try adding a shelf to your website.
 
 1. Access the admin panel of your site at
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. In the top bar, select _sections_.
 3. Select the `ProductShelf` block and click on the `+` button.
    <img width="180" alt="image" src="https://github.com/deco-cx/apps/assets/76620866/cbd54a38-3caf-431f-aeaf-b8eb2548626e">

@@ -65,13 +65,10 @@
               {
                 "benefits": [
                   {
-                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>All features included in SANDBOX</strong></span><br></p>"
-                  },
-                  {
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">5 team members</span></strong><br></p>"
                   },
                   {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">50k pageviews included</span></strong><br></p>",
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">5k pageviews included</span></strong><br></p>",
                     "description": "Shared across all team sites"
                   },
                   {
@@ -92,10 +89,7 @@
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99%</span></strong><br></p>"
                   }
                 ],
-                "price": "$9",
-                "currency": "usd/mo",
-                "info": "+ $8 for each additional 10k pageviews",
-                "subtitle": "Add custom domains for ",
+                "subtitle": "Play in our sandbox",
                 "callToActionUrl": "https://admin.deco.cx/",
                 "callToAction": "Sign up",
                 "title": "Free"
@@ -140,10 +134,10 @@
                   }
                 ],
                 "title": "Git-based CMS",
-                "subtitle": "Get analytics and observability for",
+                "subtitle": "A fully integrated Headless CMS",
                 "currency": "usd/mo",
-                "price": "$99",
-                "info": "+ $8 for each additional 10k pageviews",
+                "price": "$9",
+                "info": "+ $2 for each additional user",
                 "callToAction": "Sign up",
                 "callToActionUrl": "https://admin.deco.cx/"
               },

@@ -3,14 +3,13 @@ descrição: Aprenda a integrar o Deco com a plataforma de comércio eletrônico
 ---
 
 Este artigo orienta você na criação e configuração de um website no
-[**deco.cx**](http://deco.cx) para uma _loja virtual_ utilizando dados da
+[**deco.cx**](https://deco.cx) para uma _loja virtual_ utilizando dados da
 plataforma de comércio eletrônico [VTEX](https://vtex.com/ "https://vtex.com/").
 
 > TL;DR: Para se conectar à VTEX, você precisa alterar a configuração do app
-> `vtex` em https://deco.cx/admin/sites/{site}/library?type=apps
+> `vtex` em `https://deco.cx/admin/sites/{site}/library?type=apps`
 
-> **Vídeo**: Para assistir ao conteúdo deste artigo, clique
-> [aqui](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
+> **Vídeo**: [Assista ao conteúdo deste artigo aqui](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
 
 # Sumário
 
@@ -24,7 +23,7 @@ plataforma de comércio eletrônico [VTEX](https://vtex.com/ "https://vtex.com/"
 # Pré-requisitos
 
 - Um website no Deco. Crie um gratuitamente em
-  [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+  [Deco Admin](https://admin.deco.cx/).
 - Uma conta na VTEX
   [(ajuda)](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC).
 
@@ -73,15 +72,14 @@ indexação indesejada.
 Para se conectar à sua conta na VTEX:
 
 1. Acesse o painel administrativo do seu site em
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. Na barra superior, selecione _blocos_.
 3. Escolha a guia _Apps_.
 4. Selecione o app **vtex.ts** Você verá algo como:
    <img width="580" alt="imagem" src="https://github.com/site/assets/76620866/3a9fe86d-089a-41a6-84b5-d371a90a3a11">
 
 5. Altere a configuração da conta de `bravtexfashionstore` para o nome da sua
-   conta VTEX
-   [aqui](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC).
+   [conta VTEX](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC).
 6. Defina a `URL Pública da Loja`.
 7. Clique em `Salvar` e depois em `Publicar`.
 
@@ -95,7 +93,7 @@ Após a configuração da VTEX ser concluída, tente adicionar uma prateleira ao
 website.
 
 1. Acesse o painel administrativo do seu site em
-   [https://deco.cx/admin](https://deco.cx/admin "https://deco.cx/admin").
+   [Deco Admin](https://admin.deco.cx/).
 2. Na barra superior, selecione _blocos_.
 3. Selecione o bloco `/Products/ProductShelf.tsx` e clique no botão `+`.
    <img width="480" alt="imagem" src="https://github.com/site/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">
@@ -134,7 +132,7 @@ Problemas comuns ao conectar-se à VTEX surgem de:
    1. Abra o _Dev Tools_, e va para **Application** ou **Storage**.
    1. No lado esquerdo, selecione **Cookies** e a url do site.
    1. Procure pelo Cookie `vtex_segment` e **copie o valor**.
-   1. Em outra aba, abra https://jwt.io e cole o valor do cookie copiado no paço
+   1. Em outra aba, abra [o site do JWT](https://jwt.io) e cole o valor do cookie copiado no paço
       anterior.
    1. No JSON retornado: A propriedade `channel` traz o valor do `salesChannel`.
       A propriedade `cultureInfo` traz o valor de `defaultLocale`.
@@ -143,7 +141,7 @@ Problemas comuns ao conectar-se à VTEX surgem de:
 
    <img width="1281" alt="image" src="https://user-images.githubusercontent.com/18706156/226075931-6ffe568e-a6c9-4850-ad88-2a02f7a9f5f0.png">
 3. Configuração de accountName incorreta. Para descobrir o accountName correto:
-   1. Acesse a URL da sua loja atual, por exemplo: https://www.minhaloja.com.br.
+   1. Acesse a URL da sua loja atual, por exemplo: `https://www.minhaloja.com.br`.
    1. Clique com o botão direito e selecione **Inspecionar**.
    1. Com as _Ferramentas de Desenvolvedor_ abertas, pressione _Ctrl + F_ para
       abrir a busca dentro do código HTML.

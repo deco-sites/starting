@@ -4,7 +4,7 @@ Welcome to your live site!
 
 This repository was created for you when you created a new site. To edit the
 code of the components in this site, you may clone this repo and run the project
-locally.
+locally. 
 
 ---
 NOTE: To edit or create new pages with existing components, you don't need to

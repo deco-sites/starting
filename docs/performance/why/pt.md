@@ -13,7 +13,7 @@ Uma das principais vantagens de ter um site com bom desempenho é a capacidade d
 capturar e reter a atenção do usuário. Sites com carregamento lento geralmente
 resultam em altas taxas de rejeição, em que os visitantes deixam o site antes de
 interagir com seu conteúdo. A pesquisa do
-[Google]((https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/))
+[Google](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)
 revela que, à medida que o tempo de carregamento da página aumenta de um a três
 segundos, a probabilidade de rejeição aumenta em 32%. Portanto, quanto mais
 rápido um site carregar, menores serão as chances de os usuários abandoná-lo.
