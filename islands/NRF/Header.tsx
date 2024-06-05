@@ -55,7 +55,7 @@ function MobileMenuLink({
   }
 
   return (
-    <li class={"grid items-center py-3 md:py-4"}>
+    <li class={"grid items-center py-3 md:py-4 text-white"}>
       <a
         href={href}
         target={targetBlank ? "_blank" : "_self"}
