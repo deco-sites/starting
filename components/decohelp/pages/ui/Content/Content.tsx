@@ -63,8 +63,6 @@ function renderContentItem(item: ContentType, idx: number) {
 }
 
 export default function Page({
-  homeLabel,
-  homePath,
   Title,
   Version,
   PageContent,
