@@ -6,7 +6,7 @@ since: 1.0.0
 - Leia o guia em **Comece agora** para entender os conceitos base e a ferramenta
   de admin da deco
 
-- **Importante**, é possível acessar <https://deco.cx/discord> para respoder
+- **Importante**, é possível acessar [nosso Discord](https://deco.cx/discord) para reportar
   dúvidas ou problemas com a _deco.cx_. Participe também da nossa comunidade!
 
 # Tópicos
@@ -72,7 +72,7 @@ Recomendamos fortemente o uso do
 
 A deco oferece um mecanismo para testar e explorar nosso sistema sem a
 necessidade de subir código ou fazer um deployment na nossa infraestrutura. Para
-isso, acesse: https://play.deco.cx/
+isso, acesse [o Deco Play](https://play.deco.cx/)
 
 ![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
 
@@ -124,7 +124,7 @@ Aguarde a inicialização do projeto. Na primeira execução, o deno irá baixar
 realizar um cache das dependências do projeto, e a deco irá preparar detalhes do
 site.
 
-O site estará acessível em <http://localhost:8000>.
+O site estará acessível em `http://localhost:8000`.
 
 > Alguns browsers impedem acessar ou executar código no domínio `localhost`!
 > Desative proteções de acesso ou privacidade do browser para acessar esse
@@ -138,11 +138,11 @@ isto será refletido no endereço acima.
 O processo de _deploy_ em development é muito simples: apenas fazer um _git
 push_ das alterações na _branch_ _**main**_.
 
-Acessando o endereço em dev (como <https://deco-sites-example.deno.dev/>), essas
+Acessando o endereço em dev (como `https://deco-sites-example.deno.dev/`), essas
 alterações estarão disponíveis.
 
 Você também pode criar um domínio deco.site que disponibilizará para uso
-<https://example.deco.site/>. Para fazer isso, você precisa solicitar para
+`https://example.deco.site/`. Para fazer isso, você precisa solicitar para
 alguém do time da deco.
 
 ## Agora você pode começar a criar sites cada vez mais do seu jeito! :)

@@ -7,7 +7,7 @@ since: 1.0.0
   deco admin tool.
 
 - **Important**, you can access
-  [https://deco.cx/discord](https://deco.cx/discord) to ask questions or report
+  [our Discord](https://deco.cx/discord) to ask questions or report
   issues with _deco.cx_. Join our community too!
 
 # Summary
@@ -71,8 +71,7 @@ We highly recommend using
 ## Test Deco Locally (Optional)!
 
 Deco offers a mechanism to test and explore our system without the need to
-deploy code or make a deployment on our infrastructure. To do this, visit:
-https://play.deco.cx/
+deploy code or make a deployment on our infrastructure. To do this, visit [the Deco Play](https://play.deco.cx/)
 
 ![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
 
@@ -121,7 +120,7 @@ deno task start
 Wait for the project to initialize. On the first run, deno will download and
 cache the project dependencies, and deco will prepare site details.
 
-The site will be accessible at <http://localhost:8000>.
+The site will be accessible at `http://localhost:8000`.
 
 > Some browsers may block access to or execution of code on the `localhost`
 > domain! Disable browser ad blockers or privacy protections to access this
@@ -136,10 +135,10 @@ The development deployment process is very simple: do a _git push_ of the
 changes to the _**main**_ branch.
 
 These changes will be available when accessing the dev URL (such as
-<https://deco-sites-example.deno.dev/>).
+`https://deco-sites-example.deno.dev/`).
 
 You can also create a deco.site domain that will make
-<https://example.deco.site/> available to use. To do so, you need to request
+`https://example.deco.site/` available to use. To do so, you need to request
 that to someone from the deco team.
 
 ## Now you can start creating sites in your own way! :)

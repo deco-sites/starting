@@ -38,8 +38,7 @@ Se você criou um site na deco.cx baseado no nosso
 [starter de ecommerce](https://fashion.deco.site/), ele **já tem todo o código
 necessário para se integrar com o GTM**. No entanto, é necessário configurar um
 bloco section chamado analytics **Analytics** adicionando a propriedade
-`trackingId` com o ID do [container]
-(https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation)
+`trackingId` com o ID do [container](https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation)
 previamente configurado.
 
 Para isso, siga os passos:
@@ -129,8 +128,7 @@ Dependendo da tag que está sendo incluída, é possível que a requisição par
 buscar um script `.js` falhe.
 
 Para resolver esse problema, é necessário criar um **proxy de requests** na sua
-loja (leia mais sobre essa solução
-[aqui](https://partytown.builder.io/proxying-requests)). Como os sites deco.cx
+loja ([leia mais sobre proxys de requests aqui](https://partytown.builder.io/proxying-requests)). Como os sites deco.cx
 são projetos [Fresh](https://fresh.deno.dev/) tradicionais, basta seguir os
 seguintes passos para criar este proxy:
 

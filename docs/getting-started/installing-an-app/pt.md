@@ -17,9 +17,7 @@ direta.
 
 # Instalando a app
 
-1. **Acesse o deco Admin:** Comece fazendo login na sua conta do deco Admin.
-   Visite [https://admin.deco.cx](https://admin.deco.cx) e insira suas
-   credenciais.
+1. **Acesse o deco Admin:** Comece fazendo login na sua conta do [deco Admin](https://admin.deco.cx).
 
 2. **Escolha o Site de Destino:** Após fazer login, selecione o site específico
    onde deseja instalar o App. Você será direcionado para a página inicial do

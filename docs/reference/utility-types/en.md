@@ -109,8 +109,7 @@ users to **upload images** from their own computer.
 The type is a _wrapper_ for `string`, so the Section will get the URL of the
 image that will be hosted on _deco.cx_ servers.
 
-> You can read more about how to work with Images in _deco.cx_
-> [here](/docs/en/tips/images)
+> You can read more about [how to work with Images in _deco.cx_](/docs/en/tips/images)
 
 **Optional:** [deco.cx](https://www.deco.cx) provides a component that optimizes
 the image loading and can be used in conjunction with this property. Example:
@@ -128,8 +127,7 @@ export interface props {
 Similar to Image, properties with this type will be edited through a video
 upload _widget_.
 
-Example of use
-[here](https://github.com/deco-sites/fashion/blob/e15a0320fe9e0b7503eb4723f7c230b23886c2b5/sections/VideoCarousel.tsx#L3).
+[Example of use here](https://github.com/deco-sites/fashion/blob/e15a0320fe9e0b7503eb4723f7c230b23886c2b5/sections/VideoCarousel.tsx#L3).
 
 ```ts
 import type { VideoWidget as Video } from "apps/admin/widgets.ts";

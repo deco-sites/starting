@@ -12,7 +12,7 @@ description: |
 
 ## Create a deco.cx website
 
-1. Login/Signup on [https://admin.deco.cx/](https://admin.deco.cx/).
+1. Login/Signup on [Deco Admin](https://admin.deco.cx/).
 2. Choose your site's template.
 3. Set a name for your site.
 4. Set a name for your team.
@@ -32,7 +32,7 @@ site's dashboard:
 You can see your site's URL right below your site name. This URL is public and
 the site is already online.
 
-You should see something similar to https://deco-sites-start.deno.dev, which was
+You should see something similar to `https://deco-sites-start.deno.dev`, which was
 the template chosen in the creation process.
 
 > deco.cx is free up until 5.000 page view/visits per month. Check our

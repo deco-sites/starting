@@ -72,7 +72,7 @@ As principais métricas são descritas abaixo:
 | Speed Index | Índice do desempenho da página em popular conteúdo         | até 3,4              |
 | CLS         | Índice da quantidade de mudanças de layout cumulativa      | até 0,1              |
 
-> fonte (adaptado): https://web.dev/articles/fcp?hl=pt-br
+> [fonte (adaptado)](https://web.dev/articles/fcp?hl=pt-br)
 
 A google agrega essas métricas em um índice entre 0 e 100, gerando a nota do
 pagespeed.
