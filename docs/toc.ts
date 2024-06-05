@@ -608,6 +608,13 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
+  {
+    title: {
+      pt: "CMS Headless",
+      en: "Headless CMS",
+    },
+    slug: "headless-cms",
+  }
 ];
 
 if (import.meta.main) {
