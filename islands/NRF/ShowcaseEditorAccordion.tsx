@@ -19,37 +19,9 @@ export interface Tab {
 
 export interface Props {
   tabs?: Tab[];
-  position?: "left" | "right";
 }
 
-export const ShowcaseEditorAccordion = ({ tabs, position = "left" }: Props) => {
-  const selectedTab = useSignal(0);
-
-  useEffect(() => {
-    if (tabs && tabs.length > 0) {
-      const animationWidth = animate(
-        `#tab-${selectedTab.value}`,
-        { width: "100%" },
-        { duration: 5, easing: "linear" },
-      );
-
-      const tabElements = document.querySelectorAll("[id^='tab-']");
-      tabElements.forEach((element, index) => {
-        if (index !== selectedTab.value) {
-          animate(element, { width: "0%" }, { duration: 0 });
-        }
-      });
-
-      const interval = setInterval(() => {
-        selectedTab.value = (selectedTab.value + 1) % tabs.length;
-      }, 5000);
-      return () => {
-        animationWidth.stop();
-        clearInterval(interval);
-      };
-    }
-  }, [tabs, selectedTab.value]);
-
+export const ShowcaseEditorAccordion = ({ tabs}: Props) => {
   const itemVisible = useSignal(0);
   const len = tabs?.length;
   const len2 = 5 * ((len ?? 0) - 1);

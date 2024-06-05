@@ -73,10 +73,10 @@ function Aside(
 ) {
   return (
     <div class="bg-base-700 flex flex-col w-full h-full overflow-y-scroll">
-      <div class="flex justify-between items-center px-6 py-3">
-        <h1>
+      <div class="flex justify-between text-white items-center px-6 py-3">
+        <h2>
           <span class="font-medium text-2xl">{title}</span>
-        </h1>
+        </h2>
         <label for={drawer} aria-label="X" class="btn p-0 btn-ghost">
           <Icon id="XMark" size={24} strokeWidth={2} />
         </label>

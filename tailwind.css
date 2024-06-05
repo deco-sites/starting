@@ -145,6 +145,10 @@
     font-display: swap;
     src: url(/fonts/ArgentPixelCF-Regular.woff2) format('woff2');
   }
+
+  .markdown-body iframe{
+    width: 100%;
+  }
 }
 
 @layer components {

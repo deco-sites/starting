@@ -38,7 +38,7 @@ _Data returned from the Dog Facts API being called elsewhere_
 If we make an HTTP request to the Dog Fact API, we will see that it returns a
 JSON in the following format:
 
-> Open in your browser: https://dogapi.dog/api/facts?number=1
+> Open in your browser [this URL with params for the Dog Fact API](https://dogapi.dog/api/facts?number=1)
 
 ```json
 {

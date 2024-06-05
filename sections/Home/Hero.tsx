@@ -1,4 +1,5 @@
 export interface CTA {
+    trackID?: string;
     href: string;
     text: string;
 }
@@ -45,8 +46,8 @@ export default function Hero({
         }
         <div class={`lg:mx-auto z-20 lg:max-w-[1440px] ${
             shouldAddPaddingTopAndBottom &&
-            "mt-[80px]"
-        } relative z-20 px-4 py-14 pb-8 lg:py-0 lg:px-0 lg:pt-24 lg:pb-8 flex flex-col gap-8 justify-center items-center`}>
+            "mt-20 lg:mt-40"
+        } relative z-20 px-4 py-14 lg:px-0 flex flex-col gap-8 justify-center items-center`}>
             <div class="leading-none">
                 {
                     pixelTitle &&
@@ -71,6 +72,7 @@ export default function Hero({
                 {
                     ctas?.map(cta => (
                     <a 
+                        id={cta.trackID}
                         href={cta.href}
                         class={`hover:from-[#02F67C] hover:to-[#06E474] w-full md:w-auto transition-all duration-300 ease-out hover:shadow-hero text-base text-[#0A2121] bg-[#02F67C] md:text-lg px-8 py-2 md:px-6 lg:py-4 font-extrabold flex text-center justify-center p-3 rounded-[10px] font-bold flex items-center justify-center`}
                         target={cta.href.includes("http") ? "_blank" : "_self"}

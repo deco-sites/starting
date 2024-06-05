@@ -84,9 +84,13 @@ const LogoSlider = (
           class="flex items-center mx-[9px] justify-center h-[140px] lg:h-[270px] w-[248px] lg:w-[477px]"
           target="_blank"
         >
-          <img
-            src={logo.desktop}
-            alt={logo.label}
+          <Image
+            width={477}
+            src={logo.desktop as string}
+            alt={logo.desktop}
+            decoding="async"
+            loading="lazy"
+            fetchPriority="low"
           />
         </a>
       ))}

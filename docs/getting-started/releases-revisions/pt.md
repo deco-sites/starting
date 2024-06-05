@@ -20,11 +20,11 @@ quando e por que membro do time uma alteração foi feita.
 2. Acesse a página ou bloco que você quer trabalhar. Por exemplo (lembre-se de
    substituir `$sitename` pelo nome do seu site):
    - Se você quiser ir para a `Listagem de Páginas`, acesse
-     <https://admin.deco.cx/sites/$sitename/pages>
+     `https://admin.deco.cx/sites/$sitename/pages`
    - Se você ir para a `Listagem de Sections`, acesse
-     <https://admin.deco.cx/sites/$sitename/sections>
+     `https://admin.deco.cx/sites/$sitename/sections`
    - Existem outros blocos que podem ser configurados e podem ser acessados pela
-     listagem de blocos em <https://admin.deco.cx/sites/$sitename/library>
+     listagem de blocos em `https://admin.deco.cx/sites/$sitename/library`
 
 3. Na barra lateral direita da tela você pode ver as propriedades da página e
    uma barra de navegação com abas como `Form`, `JSON` e `Revisions` (`↻`).

@@ -48,17 +48,27 @@ const SECOND_IMAGES = [
 
 const TITLE = "Trusted by the most awesome super duper incredible brand:";
 
-const LogoSlider = ({ logos, direction }: { logos: Image[], direction: 'left' | 'right' }) => {
+const LogoSlider = (
+  { logos, direction }: { logos: Image[]; direction: "left" | "right" },
+) => {
   const renderLogoSlide = () => (
-    <div className={`flex z-10 gap-6 ${direction === 'left' ? 'animate-slide' : 'animate-slide-right'}`}>
+    <div
+      className={`flex z-10 gap-6 ${
+        direction === "left" ? "animate-slide" : "animate-slide-right"
+      }`}
+    >
       {logos.map((logo) => (
         <div
           class="flex items-center justify-center h-16 w-36 lg:w-52"
           target="_blank"
         >
-          <img
+          <Image
+            width={144}
             src={logo.mobile}
-            alt={logo.label}
+            alt={logo.mobile}
+            decoding="async"
+            loading="lazy"
+            fetchPriority="low"
           />
         </div>
       ))}
@@ -66,32 +76,33 @@ const LogoSlider = ({ logos, direction }: { logos: Image[], direction: 'left' | 
   );
 
   return (
-    
-      <div className="logos overflow-hidden py-15 relative">
-        <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
-        </div>
-        <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
-        </div>
-        <div
-          className="flex whitespace-nowrap"
-          onMouseEnter={(
-            e,
-          ) => (e.currentTarget.style.animationPlayState = "paused")}
-          onMouseLeave={(
-            e,
-          ) => (e.currentTarget.style.animationPlayState = "running")}
-        >
-          {renderLogoSlide()}
-          {renderLogoSlide()}
-          {renderLogoSlide()}
-          {renderLogoSlide()}
-          {renderLogoSlide()}
-        </div>
+    <div className="logos overflow-hidden py-15 relative">
+      <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
       </div>
+      <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
+      </div>
+      <div
+        className="flex whitespace-nowrap"
+        onMouseEnter={(
+          e,
+        ) => (e.currentTarget.style.animationPlayState = "paused")}
+        onMouseLeave={(
+          e,
+        ) => (e.currentTarget.style.animationPlayState = "running")}
+      >
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+        {renderLogoSlide()}
+      </div>
+    </div>
   );
 };
 
-export default function Brands({ title, url, firstSlider, secondSlider }: Props) {
+export default function Brands(
+  { title, url, firstSlider, secondSlider }: Props,
+) {
   const firstList = useMemo(
     () =>
       firstSlider && firstSlider.length > 0 ? firstSlider : Array(6)
@@ -120,8 +131,8 @@ export default function Brands({ title, url, firstSlider, secondSlider }: Props)
           </h2>
         )}
         <div class="flex flex-col gap-6 pt-6">
-        <LogoSlider logos={firstList} direction="left" />
-        <LogoSlider logos={secondList} direction="right" />
+          <LogoSlider logos={firstList} direction="left" />
+          <LogoSlider logos={secondList} direction="right" />
         </div>
       </a>
     </div>

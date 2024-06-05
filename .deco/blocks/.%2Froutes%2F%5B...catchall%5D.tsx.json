@@ -1,1 +1,82 @@
-{"audiences":[{"__resolveType":"$live/flags/everyone.ts","routes":[{"isHref":true,"handler":{"value":{"__resolveType":"site/handlers/sitemap.ts","excludePaths":[]}},"pathTemplate":"/sitemap.xml"},{"handler":{"value":{"page":{"__resolveType":"pages-nrflp-686c24aa8039"},"__resolveType":"website/handlers/fresh.ts"}},"pathTemplate":"/"},{"handler":{"value":{"to":"/en/blog","type":"temporary","__resolveType":"$live/handlers/redirect.ts"}},"pathTemplate":"/blog"},{"isHref":false,"handler":{"value":{"to":"/en/*","type":"temporary","__resolveType":"$live/handlers/redirect.ts"}},"pathTemplate":"/pt/*"},{"handler":{"value":{"to":"/","type":"temporary","__resolveType":"$live/handlers/redirect.ts"}},"pathTemplate":"/en/*"},{"handler":{"value":{"to":"/","type":"temporary","__resolveType":"$live/handlers/redirect.ts"}},"pathTemplate":"/en"}]},{"__resolveType":"deco-sites/std/loaders/x/redirects.ts","redirects":[{"to":"/","from":"/pt/*","type":"temporary"}]}],"__resolveType":"$live/handlers/routesSelection.ts"}
+{
+  "audiences": [
+    {
+      "__resolveType": "$live/flags/everyone.ts",
+      "routes": [
+        {
+          "isHref": true,
+          "handler": {
+            "value": {
+              "__resolveType": "site/handlers/sitemap.ts",
+              "excludePaths": []
+            }
+          },
+          "pathTemplate": "/sitemap.xml"
+        },
+        {
+          "handler": {
+            "value": {
+              "page": {
+                "__resolveType": "pages-Nova%20Landing-267227"
+              },
+              "__resolveType": "website/handlers/fresh.ts"
+            }
+          },
+          "pathTemplate": "/"
+        },
+        {
+          "handler": {
+            "value": {
+              "to": "/en/blog",
+              "type": "temporary",
+              "__resolveType": "$live/handlers/redirect.ts"
+            }
+          },
+          "pathTemplate": "/blog"
+        },
+        {
+          "isHref": false,
+          "handler": {
+            "value": {
+              "to": "/en/*",
+              "type": "temporary",
+              "__resolveType": "$live/handlers/redirect.ts"
+            }
+          },
+          "pathTemplate": "/pt/*"
+        },
+        {
+          "handler": {
+            "value": {
+              "to": "/",
+              "type": "temporary",
+              "__resolveType": "$live/handlers/redirect.ts"
+            }
+          },
+          "pathTemplate": "/en/*"
+        },
+        {
+          "handler": {
+            "value": {
+              "to": "/",
+              "type": "temporary",
+              "__resolveType": "$live/handlers/redirect.ts"
+            }
+          },
+          "pathTemplate": "/en"
+        }
+      ]
+    },
+    {
+      "__resolveType": "deco-sites/std/loaders/x/redirects.ts",
+      "redirects": [
+        {
+          "to": "/",
+          "from": "/pt/*",
+          "type": "temporary"
+        }
+      ]
+    }
+  ],
+  "__resolveType": "$live/handlers/routesSelection.ts"
+}

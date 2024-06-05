@@ -76,10 +76,10 @@ export function Dropdown({
   const variantClass = variants[variant];
 
   return (
-    <div class={`${open ? variantClass.open : ""} ${variantClass.default}`}>
+    <div class={`group/item ${variantClass.default}`}>
       <div
         onClick={onClick}
-        class={`${open ? "font-bold text-white" : ""} z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer`}
+        class={`group-hover/item:font-bold group-hover/item:text-white z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer`}
       >
         {value}
         <svg
@@ -107,9 +107,9 @@ export function Dropdown({
       >
       </div>
       <div
-        class={`${open ? "block" : "hidden"} ${
+        class={`opacity-0 pointer-events-none duration-300 group-hover/item:opacity-100 group-hover/item:pointer-events-auto transition-all ${
           variant === "flat" ? "top-[48px]" : "top-[35px]"
-        } z-30 absolute left-0 mt-5 rounded backdrop-blur-xl`}
+        } z-30 absolute left-0 pt-5 rounded`}
       >
         <div class="flex flex-row gap-[48px] rounded-lg bg-white/5 backdrop-blur-xl border border-[#FFFFFF33] p-6">
           {columns.map((col, index) => (

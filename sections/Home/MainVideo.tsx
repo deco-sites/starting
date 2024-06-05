@@ -5,12 +5,14 @@ export interface Props {
   videoMp4?: VideoWidget;
   videoWebm?: VideoWidget;
   showSpecialNrfVideo?: boolean;
+  URLEmbedLink?: string;
 }
 
 export default function MainVideo({
     videoMp4 = "",
     videoWebm = "",
-    showSpecialNrfVideo = true
+    showSpecialNrfVideo = true,
+    URLEmbedLink = "https://player.vimeo.com/video/902689992?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
 }: Props) {
   return (
     <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-0 lg:px-0">
@@ -20,7 +22,7 @@ export default function MainVideo({
                 <div class="relative overflow-hidden rounded-[20px] w-full">
                 <div style="padding:56.25% 0 0 0;position:relative;">
                     <iframe
-                    src="https://player.vimeo.com/video/902689992?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    src={URLEmbedLink}
                     frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;"
