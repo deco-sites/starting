@@ -41,6 +41,8 @@ export type AvailableIcons =
   | "Instagram"
   | "Linkedin"
   | "Logo"
+  | "MadeInDeco"
+  | "MadeInDecoMob"
   | "MagnifyingGlass"
   | "MapPin"
   | "Mastercard"
