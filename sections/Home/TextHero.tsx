@@ -40,13 +40,13 @@ export default function TextHero({
             <div class="leading-none">
                 {
                     pixelTitle &&
-                    <h2 class="font-[argent-pixel] text-[32px] md:text-[64px] lg:text-[80px] leading-[38px] md:leading-[100%] lg:leading-[80px] font-medium text-center" dangerouslySetInnerHTML={{
+                    <h2 class="font-[argent-pixel] text-[32px] lg:text-[72px] leading-[38px] md:leading-[100%] lg:leading-[80px] font-medium text-center" dangerouslySetInnerHTML={{
                         __html: pixelTitle
                     }}></h2>
                 }
                 {
                     title &&
-                    <h2 class="font-albert-sans text-[32px] md:text-[64px] lg:text-[80px] leading-[38px] md:leading-[100%] lg:leading-[80px] font-medium text-center text-white" dangerouslySetInnerHTML={{
+                    <h2 class="font-albert-sans text-[32px] lg:text-[72px] leading-[38px] md:leading-[100%] lg:leading-[80px] font-medium text-center text-white" dangerouslySetInnerHTML={{
                         __html: title
                     }}></h2>
                 }

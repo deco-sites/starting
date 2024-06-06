@@ -107,7 +107,7 @@ export function Dropdown({
       >
       </div>
       <div
-        class={`opacity-0 pointer-events-none duration-300 group-hover/item:opacity-100 group-hover/item:pointer-events-auto transition-all ${
+        class={`opacity-0 pointer-events-none group-hover/item:opacity-100 group-hover/item:pointer-events-auto ${
           variant === "flat" ? "top-[48px]" : "top-[35px]"
         } z-30 absolute left-0 pt-5 rounded`}
       >
