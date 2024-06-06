@@ -40,7 +40,7 @@ Follow the steps below to create new tables in your database or watch the video.
 In this process, [drizzle-orm](https://orm.drizzle.team/) and
 [drizzle-kit](https://orm.drizzle.team/) will be used to create and manage
 tables in your database through
-[schema migrations](https://medium.com/@joelrodrigues/o-que-s%C3%A3o-database-migrations-f817448870a2).
+[schema migrations](https://medium.com/@92rogen/understanding-schema-migration-its-like-git-but-for-dbs-4dcbfde8e051).
 In the following example, a table named "profiles" will be created with the
 columns: `id`, `name`, and `email`.
 
