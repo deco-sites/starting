@@ -14,7 +14,7 @@ export interface WasThisPageHelpfulProps {
       PositiveIcon?: ImageWidget;
       Width?: number;
       Height?: number;
-    };
+    }; 
 
     Text?: HTMLWidget;
   };
@@ -50,6 +50,12 @@ export default function WasThisPageHelpfulContent({
       contents: [helpful, label, window.location.href],
     });
     setIsPending(false);
+
+    const toast = document.getElementById('feedback-toast');
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 3000); // Hide after 3 seconds
   };
 
   const buttonProps = WasThisPageHelpful?.Button;
@@ -117,6 +123,11 @@ export default function WasThisPageHelpfulContent({
             class="text-[#FFFFFF80] text-[0.875rem] leading-[1.125rem] tracking-[-0.14px]"
             dangerouslySetInnerHTML={{ __html: text }}
           />
+          <div id="feedback-toast" className="toast hidden transition duration-700">
+            <div className="alert text-sm">
+              <span>Thank you for your feedback!</span>
+            </div>
+          </div>
         </div>
       )}
     </>
