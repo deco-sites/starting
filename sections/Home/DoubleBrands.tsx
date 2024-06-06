@@ -53,13 +53,13 @@ const LogoSlider = (
 ) => {
   const renderLogoSlide = () => (
     <div
-      className={`flex z-10 gap-6 ${
+      className={`flex z-10 gap-4 lg:gap-6 ${
         direction === "left" ? "animate-slide" : "animate-slide-right"
       }`}
     >
       {logos.map((logo) => (
         <div
-          class="flex items-center justify-center h-16 w-36 lg:w-52"
+          class="flex items-center justify-center h-[30px] w-[72px] lg:w-52"
           target="_blank"
         >
           <Image
@@ -77,9 +77,9 @@ const LogoSlider = (
 
   return (
     <div className="logos overflow-hidden py-15 relative">
-      <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
+      <div className="before:absolute before:inset-y-0 before:left-0 before:w-[70px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
       </div>
-      <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
+      <div className="after:absolute after:inset-y-0 after:right-0 after:w-[70px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
       </div>
       <div
         className="flex whitespace-nowrap"
@@ -119,7 +119,7 @@ export default function Brands(
   );
 
   return (
-    <div class="bg-black pb-[124px] pt-10 max-w-[1440px] mx-auto">
+    <div class="bg-black pb-12 lg:pb-[124px] pt-6 lg:pt-10 max-w-[1440px] mx-auto">
       <a
         href={url}
         target={url?.includes("http") ? "_blank" : "_self"}
@@ -130,7 +130,7 @@ export default function Brands(
             {title}
           </h2>
         )}
-        <div class="flex flex-col gap-6 pt-6">
+        <div class="flex flex-col gap-4 lg:gap-6 pt-6">
           <LogoSlider logos={firstList} direction="left" />
           <LogoSlider logos={secondList} direction="right" />
         </div>

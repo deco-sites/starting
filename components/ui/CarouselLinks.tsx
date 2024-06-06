@@ -60,7 +60,7 @@ export default function CarouselLinks({
     >
       {title && (
         <h2
-          class="font-albert-sans text-lg lg:text-2xl font-medium text-white text-center leading-[115%] tracking-[-0.72px]"
+          class="font-albert-sans text-lg lg:text-2xl font-medium text-white text-center leading-[115%] tracking-[-0.72px] max-w-[636px] mx-auto"
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h2>
