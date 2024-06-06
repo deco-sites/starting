@@ -95,7 +95,7 @@ export default function Faq({
       ]
  }: Props) {
   return (
-    <section class="max-w-[768px] z-10 text-white relative mx-auto px-4 lg:px-0 lg:py-40">
+    <section class="max-w-[768px] z-10 text-white relative mx-auto py-12 px-6 lg:px-0 lg:py-40">
       <div class="flex flex-col gap-[64px] m-auto">
         <h2 class="text-white text-center text-[48px] font-bold leading-[57.6px] font-albert-sans" dangerouslySetInnerHTML={{
                 __html: title
