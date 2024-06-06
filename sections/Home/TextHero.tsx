@@ -36,7 +36,7 @@ export default function TextHero({
   return (
     <div>
         <div class="deco-background"></div>
-        <div class={`lg:mx-auto z-20 lg:max-w-[1440px] relative z-20 px-4 py-14 lg:py-40 lg:px-0 flex flex-col gap-8 justify-center items-center`}>
+        <div class={`lg:mx-auto z-20 lg:max-w-[1440px] relative z-20 px-6 py-12 lg:py-40 lg:px-0 flex flex-col gap-8 justify-center items-center`}>
             <div class="leading-none">
                 {
                     pixelTitle &&
