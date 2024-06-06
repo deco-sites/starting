@@ -71,10 +71,10 @@ const LogoSlider = (
   );
 
   return (
-    <div className="logos overflow-hidden py-15 relative">
-      <div className="before:absolute before:inset-y-0 before:left-0 before:w-[60px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
+    <div className="logos overflow-hidden py-15 relative w-full">
+      <div className="before:absolute before:inset-y-0 before:left-0 before:w-[60px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#0D1717] before:z-20">
       </div>
-      <div className="after:absolute after:inset-y-0 after:right-0 after:w-[60px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
+      <div className="after:absolute after:inset-y-0 after:right-0 after:w-[60px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#0D1717] after:z-20">
       </div>
       <div
         className="flex whitespace-nowrap gap-4"
