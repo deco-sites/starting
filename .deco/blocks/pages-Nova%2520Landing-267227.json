@@ -891,6 +891,22 @@
                   },
                   {
                     "href": "https://deco.new",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/19e4ddef-3e5b-46e1-b339-f40badfa92a5",
+                    "label": "Headless Storefronts",
+                    "cta": "Start now",
+                    "id": "bt-click-signup",
+                    "icons": {
+                      "logos": [
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/57efa191-5f45-4a58-9109-8c2e8ddc3b3b",
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c9080c9a-a527-4dd2-a323-b8ff84545714",
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1623d48f-34bc-4bbf-b096-c94c7f8b651a",
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/95fee40b-69fb-436b-8b0d-c3dc87f74b04"
+                      ],
+                      "active": true
+                    }
+                  },
+                  {
+                    "href": "https://deco.new",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae35a5ed-7e4e-44c0-9be1-8113c0045cfc",
                     "label": "Institutional & Blogs",
                     "cta": "Start now",
@@ -909,22 +925,6 @@
                     "label": "MicroSaaS",
                     "cta": "Start now",
                     "id": "bt-click-signup"
-                  },
-                  {
-                    "href": "https://deco.new",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a4aa4780-8436-4919-b814-c60f48b9b6b7",
-                    "label": "Headless Storefronts",
-                    "cta": "Start now",
-                    "id": "bt-click-signup",
-                    "icons": {
-                      "logos": [
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/57efa191-5f45-4a58-9109-8c2e8ddc3b3b",
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c9080c9a-a527-4dd2-a323-b8ff84545714",
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1623d48f-34bc-4bbf-b096-c94c7f8b651a",
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/95fee40b-69fb-436b-8b0d-c3dc87f74b04"
-                      ],
-                      "active": true
-                    }
                   }
                 ]
               },
