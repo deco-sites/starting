@@ -31,56 +31,65 @@ below.
 
 ```tsx
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
-/** @title {{{title}}} - {{{href}}} */
-export interface Link {
-  title: string;
+export interface CTA {
+  id?: string;
   href: string;
+  text: string;
+  variant: "Normal" | "Reverse";
 }
 
 export interface Props {
-  logo?: ImageWidget;
-  title?: string;
-  /** @format textarea */
-  headline?: string;
-  links?: Array<Link>;
+  /**
+   * @format html
+   */
+  title: string;
+  description: string;
+  image?: ImageWidget;
+  placement: "left" | "right";
+  cta: CTA[];
 }
 
-export default function Hero({
-  title = "deco.cx",
-  logo = "/logo.svg",
-  headline =
-    "The digital experience platform that combines performance and personalization for the ultimate sales results.",
-  links = [
-    { title: "Official website", "href": "https://deco.cx/" },
-    { title: "Linkedin", "href": "https://www.linkedin.com/company/deco-cx/" },
-    { title: "Discord", "href": "https://deco.cx/discord" },
-  ],
+const PLACEMENT = {
+  left: "flex-col text-left lg:flex-row-reverse",
+  right: "flex-col text-left lg:flex-row",
+};
+
+export default function HeroFlats({
+  title = "Hero",
+  description = "Your description here",
+  image,
+  placement,
+  cta,
 }: Props) {
   return (
-    <header class="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base">
-      <div class="mb-10 md:mb-20">
-        <img
-          class="object-cover w-20"
-          src={logo}
-          alt={title}
-        />
+    <div>
+      <div class="mx-auto flex flex-col items-center gap-8">
+        <div
+          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
+            image
+              ? PLACEMENT[placement]
+              : "flex-col items-center justify-center text-center"
+          } lg:py-36 gap-12 md:gap-20 items-center`}
+        >
+          {image && (
+            <Image
+              width={640}
+              class="w-full lg:w-1/2 object-fit"
+              sizes="(max-width: 640px) 100vw, 30vw"
+              src={image}
+              alt={image}
+              decoding="async"
+              loading="lazy"
+            />
+          )}
+
+          ...
+          
+        </div>
       </div>
-      <div class="font-bold text-3xl lg:text-6xl leading-tight lg:leading-none xl:w-5/6">
-        {headline}
-      </div>
-      {!!links?.length && (
-        <ul class="mt-8 flex flex-col md:flex-row gap-2 md:gap-4">
-          {links.map(({ href, title }) => (
-            <li>
-              <a target="_blank" href={href} aria-label={title} class="link">
-                {title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </header>
+    </div>
   );
 }
 ```
@@ -91,7 +100,7 @@ Admin when creating an Hero block. In the Admin, select the **Sections**, the
 properties in an editing form.
 Block properties are identical to those found in the Admin form.
 
-![Create new envinronment](/docs/editable-section/section-props.png)
+![Editing properties of the Hero Section](/docs/editable-section/section-props.png)
 
 <!-- ![Create Block](https://github.com/deco-cx/apps/assets/882438/c7eee318-c6df-4ade-abd8-66390758aca7) -->
 
@@ -114,7 +123,7 @@ export interface Props {
 
 _Section and its properties types_
 
-![Editing properties of the Hero Section](https://github.com/deco-cx/apps/assets/882438/b57f6fae-da58-4cc4-a5cc-aa99985cd442)
+<!-- ![Editing properties of the Hero Section](https://github.com/deco-cx/apps/assets/882438/b57f6fae-da58-4cc4-a5cc-aa99985cd442) -->
 
 A deco project uses the type of a component's properties to automatically
 generate the block editing form in the Admin. In the following figure, you can
@@ -123,66 +132,102 @@ the Admin contacts the live Site to retrieve the property data of the Sections
 in that project. On the other hand, the code on a Site comes from GitHub, the
 same one the developer uses.
 
-![Structure of Site data access](https://github.com/site/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53)
+![Structure of Site data access](https://github.com/deco-sites/starting/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53)
 
 # First modification and environment selection
 
-Run the project locally (`deno task start`) and modify the code of the `Hero` to
-receive a new optional property, the `highlight` of a link. To do this, modify
-the `Link` type and the JSX code of the component, remembering to save the file
+Run the project locally and modify the code of the `Hero` to
+receive a new optional property, the `highlight` of a CTA link. To do this, modify
+the `CTA` type and the JSX code of the component, remembering to save the file
 after the modification.
 
 ```tsx
 import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
-/** @title {{{title}}} - {{{href}}} */
-export interface Link {
-  title: string;
+export interface CTA {
+  id?: string;
   href: string;
-  highlight?: boolean;
+  text: string;
+  variant: "Normal" | "Reverse";
+  highlight: boolean;
 }
 
 export interface Props {
-  logo?: ImageWidget;
-  title?: string;
-  /** @format textarea */
-  headline?: string;
-  links?: Array<Link>;
+  /**
+   * @format html
+   */
+  title: string;
+  description: string;
+  image?: ImageWidget;
+  placement: "left" | "right";
+  cta: CTA[];
 }
 
-export default function Hero({
-  title = "deco.cx",
-  logo = "/logo.svg",
-  headline =
-    "The digital experience platform that combines performance and personalization for the ultimate sales results.",
-  links = [
-    { title: "Official website", "href": "https://deco.cx/" },
-    { title: "Linkedin", "href": "https://www.linkedin.com/company/deco-cx/" },
-    { title: "Discord", "href": "https://deco.cx/discord" },
-  ],
+const PLACEMENT = {
+  left: "flex-col text-left lg:flex-row-reverse",
+  right: "flex-col text-left lg:flex-row",
+};
+
+export default function HeroFlats({
+  title = "Hero",
+  description = "Your description here",
+  image,
+  placement,
+  cta,
 }: Props) {
   return (
-    <header class="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base">
-      <div class="mb-10 md:mb-20">
-        <img
-          class="object-cover w-20"
-          src={logo}
-          alt={title}
-        />
+    <div>
+      <div class="mx-auto flex flex-col items-center gap-8">
+        <div
+          class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
+            image
+              ? PLACEMENT[placement]
+              : "flex-col items-center justify-center text-center"
+          } lg:py-36 gap-12 md:gap-20 items-center`}
+        >
+          {image && (
+            <Image
+              width={640}
+              class="w-full lg:w-1/2 object-fit"
+              sizes="(max-width: 640px) 100vw, 30vw"
+              src={image}
+              alt={image}
+              decoding="async"
+              loading="lazy"
+            />
+          )}
+
+          ...
+
+            <div class="flex flex-col items-center lg:items-start lg:flex-row gap-4">
+              {cta?.map((item) => (
+                <a
+                  key={item?.id}
+                  id={item?.id}
+                  href={item?.href}
+                  target={item?.href.includes("http") ? "_blank" : "_self"}
+                  class={`group relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out ${
+                    item.variant === "Reverse"
+                      ? "bg-secondary text-white"
+                      : "bg-accent text-black"
+                  }`}
+                >
+                  <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
+                  </span>
+                  /* change to highlight the text button */
+                  <span class={`relative font-medium lg:text-[20px] ${highlight ? "font-black" : ""}`}>
+                    {item?.text}
+                  </span>
+                </a>
+              ))}
+            </div>
+
+            ...
+          
+        </div>
       </div>
-      <div class="font-bold text-2xl lg:text-6xl leading-tight lg:leading-none xl:w-5/6">
-        {headline}
-      </div>
-      {!!links?.length && (
-        <ul class="mt-8 flex flex-col md:flex-row gap-2 md:gap-4">
-          {links.map(({ href, title, highlight }) => (
-            <a href={href} aria-label={title}>
-              <li class={`${highlight ? "font-black" : ""}`}>{title}</li>
-            </a>
-          ))}
-        </ul>
-      )}
-    </header>
+    </div>
   );
 }
 ```
@@ -190,15 +235,16 @@ export default function Hero({
 _Altering the Link type and JSX with the new `highlight` property_
 
 When making this modification locally, it does not affect or impact the live
-Site. However, with the project running locally (`deno task start`), it is
-possible to see this modification in the Admin itself. For this, it is important
-to go to the environment selector and choose `localhost:8000` as the reference.
+Site. However, with the project running locally, it is
+possible to see this modification in the Admin itself. For this, you must 
+follow the steps to [create a local environment visible to the Admin](developing/setup).
 
-![Changing the environment](https://github.com/deco-cx/apps/assets/882438/62efa5c1-f960-4d21-8ec8-2c8f729c1093)
+![Changing the environment](/docs/editable-section/choosing-environment.png)
 
-By pointing to `localhost`, the admin now queries the locally running version to
+By pointing to the environment you created, the admin now queries it to
 detect the available properties and `sections`.
 
+The
 To allow others to see the modification, it is necessary to commit and push the
 changes. The `main` branch contains the code that is displayed on the default
 domain of the Site, but it is possible to view other branches of the repository
