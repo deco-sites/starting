@@ -68,13 +68,13 @@ Recomendamos fortemente o uso do
 [Visual Studio Code](https://code.visualstudio.com/download) como IDE e do
 [Git](https://github.com/git-guides/install-git) para controle de versão.
 
-## Teste a deco localmente (opcional)!
+<!-- ## Teste a deco localmente (opcional)!
 
 A deco oferece um mecanismo para testar e explorar nosso sistema sem a
 necessidade de subir código ou fazer um deployment na nossa infraestrutura. Para
 isso, acesse [o Deco Play](https://play.deco.cx/)
 
-![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
+![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341) -->
 
 ## Crie um site deco.cx
 
@@ -92,9 +92,11 @@ convite é enviado para o endereço de e-mail do seu perfil do Github.
 
 Caso não tenha utilizado uma conta do github para entrar no admin ou caso não
 tenha recebido um convite, é possível adicionar uma conta do github como
-colaborador do Site.
+colaborador do Site na aba Configurações do site no Admin.
 
-![Adicionando colaborador no repositório](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9)
+<!-- ![Adicionando colaborador no repositório](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9) -->
+
+![Adding collaborator to the repository](/docs/setup/repository-access.png)
 
 Use o comando `git clone` para baixar o código do site para o seu máquina.
 Recomendamos o uso de SSH. Abra o terminal e execute o comando:
@@ -114,21 +116,25 @@ o clone.
 
 ## Executar servidor local
 
-No terminal, basta entrar na pasta do site e executar o comando:
+Para executar seu site localmente, crie um novo ambiente na aba Releases.
+Isso permitirá que as mudanças feitas no painel administrativo do Deco sejam refletidas no seu repositório local e vice-versa.
 
-```bash
-deno task start
-```
+![Criar novo ambiente](/docs/setup/create-environment.png)
+
+Após definir um nome para o seu ambiente e escolher seu host como localhost,
+copie o comando e cole-o no seu terminal na pasta do site.
+
+![Escolhendo host e iniciando servidor](/docs/setup/start-server.png)
 
 Aguarde a inicialização do projeto. Na primeira execução, o deno irá baixar e
 realizar um cache das dependências do projeto, e a deco irá preparar detalhes do
 site.
 
-O site estará acessível em `http://localhost:8000`.
+O site estará acessível em https://{nome-do-ambiente}--{nome-do-site}.deco.site.
 
-> Alguns browsers impedem acessar ou executar código no domínio `localhost`!
+<!-- > Alguns browsers impedem acessar ou executar código no domínio `localhost`!
 > Desative proteções de acesso ou privacidade do browser para acessar esse
-> endereço.
+> endereço. -->
 
 Caso o código de alguma seção em uso na página inicial do site seja alterado,
 isto será refletido no endereço acima.
@@ -138,7 +144,7 @@ isto será refletido no endereço acima.
 O processo de _deploy_ em development é muito simples: apenas fazer um _git
 push_ das alterações na _branch_ _**main**_.
 
-Acessando o endereço em dev (como `https://deco-sites-example.deno.dev/`), essas
+Acessando o endereço em dev (como `https://deco-sites-exemplo.decocdn`), essas
 alterações estarão disponíveis.
 
 Você também pode criar um domínio deco.site que disponibilizará para uso

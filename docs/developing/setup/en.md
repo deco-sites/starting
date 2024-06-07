@@ -68,29 +68,29 @@ We highly recommend using
 [Visual Studio Code](https://code.visualstudio.com/download) as the IDE and
 [Git](https://github.com/git-guides/install-git) as the version control tool.
 
-## Test Deco Locally (Optional)!
+<!-- ## Test Deco Locally (Optional)!
 
 Deco offers a mechanism to test and explore our system without the need to
 deploy code or make a deployment on our infrastructure. To do this, visit [the Deco Play](https://play.deco.cx/)
 
-![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
+![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341) -->
 
-## Create a deco site
+## Create a Deco Site
 
 **Important**: Before proceeding with this section, make sure to check out
 [Creating a Site](/docs/en/getting-started/creating-a-site).
 
 _deco.cx_ abstracts all the complexities of setting up a repository, connecting
-a CMS, and deploying to the edge. This allows you to focus only on what matters:
+a CMS, and deploying to the edge. This allows you to focus on what matters most:
 the code and content of your site.
 
-## Clone your site repository
+## Clone Your Site Repository
 
 Accept the invitation to join the repository created for your site. This
-invitation is sent to the email address associated with your Github profile.
+invitation is sent to the email address associated with your GitHub profile.
 
-If you haven't used a GitHub account to log into the admin or haven't received
-an invitation, you can add a GitHub account as a collaborator to the site at
+If you haven't used a GitHub account to log into the admin panel or haven't received
+an invitation, you can add a GitHub account as a collaborator to the site in the
 Settings tab.
 
 <!-- ![Adding collaborator to the repository](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9) -->
@@ -98,35 +98,35 @@ Settings tab.
 ![Adding collaborator to the repository](/docs/setup/repository-access.png)
 
 Use the `git clone` command to download the site code to your machine. We
-recommend using SSH. Open the terminal and execute the command:
+recommend using SSH. Open the terminal and execute the following command:
 
 ```bash
 git clone git@github.com:deco-sites/{site-name}.git
 ```
 
-**Remember to change `site-name` to the name of your site.**
+**Remember to replace `site-name` with the name of your site.**
 
 Alternatively, you can clone the repository using other methods, such as _git
-https_, through the _Github_ tool, or using an IDE. The repository page on
-_Github_ provides details about different ways to clone.
+https_, the _GitHub_ tool, or an IDE. The repository page on
+_GitHub_ provides details about different ways to clone.
 
-# Developing with deco
+## Developing with Deco
 
-## Run local server
+### Run Local Server
 
-To run your site locally, you can create a new environment at the Releases Tab.
-This will allow that changes that you make in the Deco admin reflects in your
-local repository.
+To run your site locally, create a new environment in the Releases tab.
+This will allow changes made in the Deco admin panel to be reflected in your
+local repository and vice versa.
 
-![Create new envinronment](/docs/setup/create-environment.png)
+![Create new environment](/docs/setup/create-environment.png)
 
-After seting a name to your environment and choosing your host to localhost, 
-you can copy the command to paste to your terminal, in the site folder
+After setting a name for your environment and choosing your host as localhost, 
+copy the command and paste it into your terminal in the site folder.
 
 ![Choosing environment and starting server](/docs/setup/start-server.png)
 
-Wait for the project to initialize. On the first run, deno will download and
-cache the project dependencies, and deco will prepare site details.
+Wait for the project to initialize. On the first run, Deno will download and
+cache the project dependencies, and Deco will prepare the site details.
 
 The site will be accessible at `https://{environment-name}--{site-name}.deco.site`.
 
@@ -137,23 +137,23 @@ The site will be accessible at `https://{environment-name}--{site-name}.deco.sit
 If the code of any section used on the site's homepage is modified, it will be
 reflected at the above address.
 
-## Publishing changes
+### Publishing Changes
 
-The development deployment process is very simple: do a _git push_ of the
-changes to the _**main**_ branch.
+The development deployment process is very simple: do a git push of the changes 
+to the main branch.
 
 These changes will be available when accessing the dev URL (such as
 `https://deco-sites-example.decocdn/`).
 
-<!-- You can also create a deco.site domain that will make
-<https://example.deco.site/> available to use. To do so, you need to request
-that to someone from the deco team. -->
+You can also create a deco.site domain that will make
+`https://example.deco.site/` available to use. To do so, you need to request
+that from someone on the Deco team.
 
-## Now you can start creating sites in your own way! :)
+## Start Creating Sites Your Way! :)
 
-Keep exploring deco to understand its potential and how to create or modify
-sections, loaders, and other elements of deco to create increasingly
-personalized sites and experiences.
+Keep exploring Deco to understand its potential and learn how to create or modify
+sections, loaders, and other elements to build increasingly personalized sites
+and experiences.
 
 Be sure to join our [Discord community](https://deco.cx/discord). Stay updated
 with the latest news and keep evolving with us!
