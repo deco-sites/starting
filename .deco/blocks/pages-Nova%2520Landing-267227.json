@@ -785,7 +785,7 @@
                 "id": "bt-click-signup"
               }
             ],
-            "subTitle": "<p>Build high-performance digital experiences with Deno, HTMX, JSX and Tailwind.</p>",
+            "subTitle": "<p>Build, evolve and scale high performance sites, apps and storefronts with a Universal CMS based on Deno, HTMX, JSX and Tailwind.</p>",
             "shouldAddPaddingTopAndBottom": true
           },
           {
