@@ -162,8 +162,8 @@ export default function SitesCarousel(
             class="absolute w-[max-content] left-1/2 transform -translate-x-1/2 z-30 items-center border-[2px] lg:border-[5px] border-[#113032] bg-[#02F67C] made-in-deco justify-center flex gap-2 lg:gap-4 px-3 py-2 lg:px-8 lg:py-6 font-[argent-pixel] text-[#113032] text-[20px] lg:text-[48px] leading-[120%]"
           >
             {cta?.label}
-            <Icon id="MadeInDeco" size={58} class="hidden lg:block"/>
-            <Icon id="MadeInDecoMob" size={24} class="lg:hidden"/>
+            <Icon id="MadeInDeco" size={58} class="hidden lg:block" />
+            <Icon id="MadeInDecoMob" size={24} class="lg:hidden" />
           </a>
           <LogoSlider logos={firstList} direction="left" />
           <LogoSlider logos={secondList} direction="right" />

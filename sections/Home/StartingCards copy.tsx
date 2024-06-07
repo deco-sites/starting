@@ -79,13 +79,13 @@ export default function StartingCards({
             key={index}
           >
             <div class="h-full flex flex-col items-start justify-end gap-4">
-            <Image
-              width={32}
-              src={card.image}
-              alt={card.image}
-              decoding="async"
-              loading="lazy"
-            />
+              <Image
+                width={32}
+                src={card.image}
+                alt={card.image}
+                decoding="async"
+                loading="lazy"
+              />
               <div
                 class="font-albert-sans text-[24px] lg:text-[32px] font-semibold leading-[110%] text-white"
                 dangerouslySetInnerHTML={{

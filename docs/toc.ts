@@ -162,7 +162,10 @@ const tableOfContents: TableOfContents = [
         slug: "developing/hello-world",
       },
       {
-        title: { pt: "Exportando Propriedades Padrões em um Bloco", en: "Exporting Default Props in a Block" },
+        title: {
+          pt: "Exportando Propriedades Padrões em um Bloco",
+          en: "Exporting Default Props in a Block",
+        },
         slug: "developing/exporting-default-props",
       },
       {
@@ -259,6 +262,28 @@ const tableOfContents: TableOfContents = [
           en: "Creating an A/B Test",
         },
         slug: "developing/ab-test",
+      },
+    ],
+  },
+  {
+    title: {
+      pt: "Decopilot",
+      en: "Decopilot",
+    },
+    children: [
+      {
+        title: {
+          pt: "Como acessar",
+          en: "How to access",
+        },
+        slug: "decopilot/how-to-access",
+      },
+      {
+        title: {
+          pt: "Assistente",
+          en: "Assistant",
+        },
+        slug: "decopilot/assistant",
       },
     ],
   },
@@ -441,22 +466,22 @@ const tableOfContents: TableOfContents = [
       pt: "External SDKs",
       en: "External SDKs",
     },
-    children:[
+    children: [
       {
-        title:{
+        title: {
           pt: "Teste A/B",
           en: "A/B Test",
         },
-        slug: "sdk/ab-test"
+        slug: "sdk/ab-test",
       },
       {
-        title:{
+        title: {
           pt: "Feature Flags",
           en: "Feature Flags",
         },
-        slug: "sdk/feature-flags"
-      }
-    ]
+        slug: "sdk/feature-flags",
+      },
+    ],
   },
   {
     title: {
@@ -614,7 +639,7 @@ const tableOfContents: TableOfContents = [
       en: "Headless CMS",
     },
     slug: "headless-cms",
-  }
+  },
 ];
 
 if (import.meta.main) {

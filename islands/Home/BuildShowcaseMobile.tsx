@@ -1,6 +1,4 @@
-import {
-  Tab,
-} from "site/islands/NRF/ShowcaseEditorTabbed.tsx";
+import { Tab } from "site/islands/NRF/ShowcaseEditorTabbed.tsx";
 import { ShowcaseEditorAccordion } from "../NRF/ShowcaseEditorAccordion.tsx";
 import { Head } from "$fresh/runtime.ts";
 import { AppContext } from "site/apps/site.ts";

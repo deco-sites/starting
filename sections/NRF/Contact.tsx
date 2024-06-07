@@ -6,9 +6,9 @@ export interface Props {
   /** @format html */
   text: string;
 
-  /** 
-   * @format textarea 
-   * */
+  /**
+   * @format textarea
+   */
   embedScript: string;
 }
 
@@ -31,11 +31,18 @@ export default function ContactUs({
         </div>
         <div class="hidden lg:block border-r border-white/[0.1]"></div>
         <div class="w-full relative max-w-md">
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-        <script dangerouslySetInnerHTML={{
-            __html: embedScript,
-          }}>
-        </script>
+          <script
+            charset="utf-8"
+            type="text/javascript"
+            src="//js.hsforms.net/forms/embed/v2.js"
+          >
+          </script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: embedScript,
+            }}
+          >
+          </script>
         </div>
       </div>
     </section>

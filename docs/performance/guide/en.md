@@ -220,7 +220,7 @@ some cases.
 >
 > - Use `inline loaders` to transform data to be sent to a section and/or island
 > - Consider deferring the display (`Deferred`) of sections with expensive
-  > loaders
+>   loaders
 > - Change the loader's props to reduce the amount of data loaded in the loaders
 > - Save loaders that are reused on different pages/sections
 

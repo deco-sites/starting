@@ -11,9 +11,9 @@ description: Learn how to use fonts on your website without sacrificing performa
 >
 > 1. Use the default `Theme` section in the deco template.
 > 2. Prefer using one of the
-   > [default font families offered by Google](https://fonts.google.com/).
+>    [default font families offered by Google](https://fonts.google.com/).
 > 3. If you need a custom font, use a small-sized font and prefer the woff/woff2
-   > formats.
+>    formats.
 
 # Fonts in the deco theme
 

@@ -46,7 +46,7 @@ gerenciar sites e lojas online. Os desenvolvedores e desenvolvedoras cuidam do
 código, mas tornam fácil para os usuários de negócios editar textos e imagens
 sem precisar escrever qualquer código.
 
-<!-- 
+<!--
 
 ## Exemplo de código
 

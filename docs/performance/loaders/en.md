@@ -9,10 +9,10 @@ since: 1.0.0
 > optimize their usage. Here are some tips:
 >
 > 1. When the loader is reused in different sections or pages, it is recommended
-   > to use a saved loader (reusable)
+>    to use a saved loader (reusable)
 > 2. Do not make `fetch` requests in inline loaders
 > 3. Sections that load data and are not displayed on the initial screen (above
-   > the fold) can be deferred
+>    the fold) can be deferred
 
 # Reusing Loaders
 

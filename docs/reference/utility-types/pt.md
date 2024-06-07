@@ -109,7 +109,8 @@ usuários **fazer upload de imagens**.
 O tipo é um _wrapper_ para `string`, então a Section receberá a URL da imagem
 hospedada nos servidores da _deco.cx_.
 
-> Você pode ler mais sobre [como trabalhar com Imagens na _deco.cx_](/docs/pt/receitas/imagens)
+> Você pode ler mais sobre
+> [como trabalhar com Imagens na _deco.cx_](/docs/pt/receitas/imagens)
 
 **Opcional:** A _deco.cx_ fornece um componente que otimiza o carregamento da
 imagens e pode ser usado em conjunto com esta propriedade.

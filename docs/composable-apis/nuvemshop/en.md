@@ -33,8 +33,7 @@ Otherwise, follow the steps in this
 
 To connect to your Nuvemshop account:
 
-1. Access the admin panel of your site at
-   [Deco Admin](https://admin.deco.cx/).
+1. Access the admin panel of your site at [Deco Admin](https://admin.deco.cx/).
 2. In the top bar, select _apps_.
 3. Select the **Nuvemshop** App. You will se something like:
    <img width="480" alt="image" src="https://github.com/deco-cx/apps/assets/76620866/5a52d192-cb60-4f84-9be6-9dcc00a1056e">
@@ -67,8 +66,7 @@ reusable collection block.
 
 After the Nuvemshop setup is complete, try adding a shelf to your website.
 
-1. Access the admin panel of your site at
-   [Deco Admin](https://admin.deco.cx/).
+1. Access the admin panel of your site at [Deco Admin](https://admin.deco.cx/).
 2. In the top bar, select _sections_.
 3. Select the `ProductShelf` block and click on the `+` button.
    <img width="180" alt="image" src="https://github.com/deco-cx/apps/assets/76620866/cbd54a38-3caf-431f-aeaf-b8eb2548626e">

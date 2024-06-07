@@ -33,8 +33,7 @@ Otherwise, follow the steps in this
 
 To connect to your Shopify account:
 
-1. Access the admin panel of your site at
-   [Deco Admin](https://admin.deco.cx/).
+1. Access the admin panel of your site at [Deco Admin](https://admin.deco.cx/).
 2. In the top bar, select _blocks_.
 3. Choose the _Apps_ tab.
 4. Select the **shopify.ts** App and click on the shopify block. You will see
@@ -58,8 +57,7 @@ collection block.
 
 After the Shopify setup is complete, try adding a shelf to your website.
 
-1. Access the admin panel of your site at
-   [Deco Admin](https://admin.deco.cx/).
+1. Access the admin panel of your site at [Deco Admin](https://admin.deco.cx/).
 2. In the top bar, select _blocks_ and then _sections_.
 3. Select the `/Products/ProductShelf.tsx` block and click on the `+` button.
    <img width="480" alt="image" src="https://github.com/site/assets/1753396/a2bfe995-daf1-4ef7-8957-2bc55712ec87">

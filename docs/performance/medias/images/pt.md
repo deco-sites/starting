@@ -9,7 +9,7 @@ description: Aprenda como usar imagens em seu site sem perder desempenho.
 > Para adicionar uma imagem ao seu site:
 >
 > 1. Adicione os componentes de imagem da deco (`<Image/>`, `<Source>`,
-   > `<Picture>`) ao seu código
+>    `<Picture>`) ao seu código
 > 2. Estilize os componentes com CSS até obter a aparência desejada
 > 3. Defina os atributos de largura e altura do componente.
 

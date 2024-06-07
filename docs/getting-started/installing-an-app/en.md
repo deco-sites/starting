@@ -17,7 +17,8 @@ manner.
 
 # Installing the App
 
-1. **Access the Deco Admin:** Start by logging into your [Deco Admin](https://admin.deco.cx) account.
+1. **Access the Deco Admin:** Start by logging into your
+   [Deco Admin](https://admin.deco.cx) account.
 
 2. **Choose the Target Site:** After logging in, select the specific site where
    you want to install the App. You will be directed to the site's homepage.

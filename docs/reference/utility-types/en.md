@@ -109,7 +109,8 @@ users to **upload images** from their own computer.
 The type is a _wrapper_ for `string`, so the Section will get the URL of the
 image that will be hosted on _deco.cx_ servers.
 
-> You can read more about [how to work with Images in _deco.cx_](/docs/en/tips/images)
+> You can read more about
+> [how to work with Images in _deco.cx_](/docs/en/tips/images)
 
 **Optional:** [deco.cx](https://www.deco.cx) provides a component that optimizes
 the image loading and can be used in conjunction with this property. Example:

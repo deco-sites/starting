@@ -123,9 +123,9 @@ tag being included, it is possible that the request for fetch a `.js` script
 fails.
 
 To solve this problem, you need to create a **requests proxy** in your store
-([read more about proxying requests here](https://partytown.builder.io/proxying-requests)). Like deco.cx websites
-are traditional [Fresh](https://fresh.deno.dev/) projects, just follow the
-following steps to create this proxy:
+([read more about proxying requests here](https://partytown.builder.io/proxying-requests)).
+Like deco.cx websites are traditional [Fresh](https://fresh.deno.dev/) projects,
+just follow the following steps to create this proxy:
 
 1. In your project, inside the `routes/` folder, create a file called
    `proxy.ts`.
