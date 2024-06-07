@@ -72,10 +72,6 @@
                     "description": "Shared across all team sites"
                   },
                   {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">50 GB/mo Bandwidth</span></strong><br></p>",
-                    "description": "Shared across all team sites"
-                  },
-                  {
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Custom domains</span></strong><br></p>"
                   },
                   {
@@ -123,7 +119,7 @@
                   }
                 ],
                 "title": "Git-based CMS",
-                "subtitle": "A fully integrated Headless CMS",
+                "subtitle": "Edit visually, deploy anywhere",
                 "currency": "usd/mo",
                 "price": "$9",
                 "info": "+ $2 for each additional user",
@@ -134,6 +130,9 @@
                 "benefits": [
                   {
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">All features included in PRO</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Always-On infrastructure</strong></span></p>"
                   },
                   {
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Unlimited team members</span></strong><br></p>"
