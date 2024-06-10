@@ -49,18 +49,19 @@ columns: `id`, `name`, and `email`.
 
 1. Edit the file `db/schema.ts` to create tables:
 
-  ```ts
-  import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
-  
-  export const profiles = sqliteTable("profiles", {
-    id: integer("id").primaryKey({ autoIncrement: true }),
-    name: text("name").notNull(),
-    email: text("email"),
-  });
+```ts
+import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
+
+export const profiles = sqliteTable("profiles", {
+  id: integer("id").primaryKey({ autoIncrement: true }),
+  name: text("name").notNull(),
+  email: text("email"),
+});
+```
 
 2. Run the Deno task `db:setup:deps` in your terminal to install the necessary
-   dependencies for schema migration. You'll need Deno version 1.43.0 or higher and
-   must use the environment variable `DENO_FUTURE=1` to enable npm module
+   dependencies for schema migration. You'll need Deno version 1.43.0 or higher
+   and must use the environment variable `DENO_FUTURE=1` to enable npm module
    installation:
 
 ```sh
