@@ -16,7 +16,9 @@ eventuais erros durante o desenvolvimento.
 # Como acessar
 
 Após [criar seu site](https://deco.cx/docs/pt/getting-started/creating-a-site),
-selecione o widget de código em qualquer uma das seções do seu site.
+abra um arquivo de código em qualquer section do seu site. Você pode fazer isso
+através da barra de pesquisa do nosso CMS ou clicando no ícone de código como
+mostrado abaixo:
 ![Vai para o código](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10475/e92ec929-45eb-4dfc-bc90-b517001ef5f7)
 
 Na barra lateral direita você poderá acessar o decopilot conforme a imagem:

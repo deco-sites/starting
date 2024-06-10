@@ -17,7 +17,7 @@ to be called to create any of this components. Just ask! From loaders and
 actions to sections, Decopilot will ask if it can proceed with the process of
 creation or not. Heres a exemple how it work with sections:
 
-> Prompt: Create a section sahying Hello World!
+> Prompt: Create a section saying Hello World!
 
 ![Create Section](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10642/7f67b4af-fac1-41e2-91e5-a6d9e9c1910d)
 

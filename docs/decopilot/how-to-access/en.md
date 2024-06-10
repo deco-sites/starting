@@ -15,7 +15,8 @@ fixing any potential errors during development.
 
 After
 [creating your site](https://deco.cx/docs/en/getting-started/creating-a-site),
-select the Code Widget in any of the sections of your site.
+open a code file in any section of your site. You can do this through the search
+bar of our CMS or by clicking the code icon as shown below:
 ![Go to code](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10475/e92ec929-45eb-4dfc-bc90-b517001ef5f7)
 
 On the right sidebar, you can access the Decopilot as shown in the image:
