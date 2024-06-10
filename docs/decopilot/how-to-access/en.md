@@ -2,7 +2,7 @@
 description: How to access the Decopilot
 ---
 
-# Introducion
+# Introduction
 
 The Decopilot is a code generation tool designed to further streamline the
 website creation process. Seeking to combine the convenience of using artificial
