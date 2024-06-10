@@ -48,7 +48,8 @@ No exemplo a seguir, será criado uma tabela com nome profiles, com as colunas:
 
 <iframe width="640" height="400" src="https://www.loom.com/embed/7d7442496a8c45109eaf67f1e00fc2f1?sid=2124b27e-d754-44f0-b7a2-8fc0e977d945" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-1. Edite o arquivo `db/schema.ts` para criar tabelas.
+<!-- Use span due to a bug in markdown parser deno-gfm -->
+<span>1.</span> Edite o arquivo `db/schema.ts` para criar tabelas.
 
 ```ts
 import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
@@ -60,32 +61,28 @@ export const profiles = sqliteTable("profiles", {
 });
 ```
 
-2. Execute a deno task `db:setup:deps` no seu terminal para instalar as
+<span>2.</span> Entre no admin do seu site, clique no menu de `Settings`, em seguida, na
+   seção Database credentials, clique em `Generate now`. Por fim, clique no
+   icone de copiar as credenciais.
+
+<span>3.</span> Adicione as credenciais, nas variáveis de ambiente do sistema operacional do
+   seu computador.
+   ![Visualização do botão de gerar credenciais](/docs/reference/deco-records/generate-credentials.webp)
+
+<span>4.</span> Execute a deno task `db:setup:deps` no seu terminal para instalar as
    dependências necessárias para realizar o schema migration. É necessário
    versão do deno maior ou igual a 1.43.0 e utilizar a variável de ambiente
    `DENO_FUTURE=1` para habilitar a instalação de módulos npm.
 
-```sh
-DENO_FUTURE=1 deno task db:setup:deps
-```
-
-3. Execute a deno task `db:generate`, para criar os arquivos sql responsáveis
-   pela schema migration. Execute este comando sempre que realizar uma alteração
+<span>5.</span> Execute a deno task `db:schema:update`, para criar os arquivos sql responsáveis
+   pela schema migration e aplica-los ao banco de dados. Execute este comando sempre que realizar uma alteração
    nas suas tabelas para gerar novas schema migrations.
 
 ```sh
-DENO_FUTURE=1 deno task db:generate
+deno task db:setup:deps
 ```
 
-4. Entre no admin do seu site, clique no menu de `Settings`, em seguida, na
-   seção Database credentials, clique em `Generate now`. Por fim, clique no
-   icone de copiar as credenciais.
-5. Adicione as credenciais, nas variáveis de ambiente do sistema operacional do
-   seu computador.
-   ![Visualização do botão de gerar credenciais](/docs/reference/deco-records/generate-credentials.webp)
-6. Execute a deno task `db:migrate`, para aplicar os schema migrations criadas
-   no passo 3, no deco records.
-7. No menu de records do seu site, no admin da deco, terá as tabelas de
+<span>6.</span> No menu de records do seu site, no admin da deco, terá as tabelas de
    `profiles` e `__drizzle__migrations`. A tabela drizzle__migrations é auto
    gerada e utilizada pelo drizzle-kit para gerenciar os schema migrations.
    ![Visualização das tabelas do deco records](/docs/reference/deco-records/records-view-tables.webp)
@@ -102,37 +99,141 @@ lista, remove e cria um perfil.
 Crie uma section que será o gerenciador de perfis.
 
 ```ts
+import { eq } from "drizzle-orm";
 import { SectionProps } from "deco/types.ts";
 import type { AppContext } from "site/apps/deco/records.ts";
 import { profiles } from "site/db/schema.ts";
+import { useSection } from "deco/hooks/useSection.ts";
+import Icon from "site/components/ui/Icon.tsx";
+
+type ProfileInsert = typeof profiles.$inferInsert;
+type ProfilesKeys = keyof ProfileInsert;
+type ProfileValue<K extends keyof ProfileInsert> = ProfileInsert[K];
+
+/**
+* Checa se `key` é uma chave válida do tipo profile.
+*/
+const isProfilePropKey = (
+  key: string,
+): key is ProfilesKeys => key in profiles.$inferInsert;
+
+/**
+* Checa se `value` é do mesmo tipo de profiles[key]
+*/
+const isProfilePropType = (
+  key: ProfilesKeys,
+  value: unknown,
+): value is ProfileValue<typeof key> =>
+  typeof value === typeof profiles.$inferInsert[key];
+
+interface Props {
+  mode?: "create" | "delete";
+  email?: string;
+}
 
 export async function loader(
-  p: null,
+  { mode, email }: Props,
   req: Request,
   { invoke }: AppContext,
 ) {
-  const drizzle = await invoke.records.loaders.drizzle(); // pega o client do drizzle
+  // Client do ORM drizzle
+  const drizzle = await invoke.records.loaders.drizzle();
 
+  // Se o mode for create e o request possuir body, então cria um profile novo
+  if (mode === "create" && req.body) {
+    const newProfile: Partial<typeof profiles.$inferInsert> = {};
+    const formData = await req.formData();
+    formData.forEach((value, key) =>
+      isProfilePropKey(key) &&
+      isProfilePropType(key, value) &&
+      (newProfile[key] = value as any)
+    );
+
+    // Insere newProfile no banco de dados.
+    await drizzle.insert(profiles).values(
+      newProfile as typeof profiles.$inferInsert,
+    );
+  } 
+  // Se mode for delete e email for definido e não vazio, então remova todos or perfis com este email.
+  else if (mode === "delete" && email) {
+    await drizzle.delete(profiles).where(eq(profiles.email, email));
+  }
+
+  // Seleciona todos os perfils do banco de dados, trazendo somenente email e nome.
   const profilesData = await drizzle.select({
     email: profiles.email,
     name: profiles.name,
-  }).from(profiles); // faz uma query na tabela de profiles, selecionando colunas email e name
-
+  }).from(profiles);
   return { profiles: profilesData };
 }
 
 export default function ManageProfiles(
   { profiles = [] }: SectionProps<typeof loader>,
 ) {
+  // Url da section, com a propriedade mode = create, será utilizada para submit do form e criação de novo perfil.
+  const createUrl = useSection<Props>({
+    props: { mode: "create" },
+  });
   return (
     <>
+      <div>
+        <form
+          hx-post={createUrl}
+          hx-trigger="click"
+          hx-target="closest section"
+          hx-swap="outerHTML"
+          class="p-2 flex flex-col gap-2"
+        >
+          <div class="flex gap-2">
+            <label for="name">Name</label>
+            <input
+              // propriedade name do profiles
+              name="name"
+              id="name"
+              required
+              class="border border-gray-300 rounded"
+            />
+          </div>
+
+          <div class="flex gap-2">
+            <label for="description">email</label>
+            <input
+              // propriedade email do profiles
+              name="email"
+              id="email"
+              required
+              class="border border-gray-300 rounded"
+            />
+          </div>
+
+          <div>
+            <button type="submit">Create</button>
+          </div>
+        </form>
+      </div>
+
       <div class="divide-y divide-gray-300 p-2 w-fit">
         <h3>Members List</h3>
-        {profiles.map((profile) => {
+        {profiles.map((profile) => {       
+          // Url da section, com a propriedade mode = delete e email do perfil a ser removido, será utilizada para submit do form e remoção  do perfil.
+          const profileDeleteUrl = useSection<Props>({
+            props: { mode: "delete", email: profile.email ?? "" },
+          });
           return (
             <div class="flex gap-2 items-center">
               <span>{profile.name}</span>
               <span>{profile.email}</span>
+              <form
+                hx-post={profileDeleteUrl}
+                hx-trigger="click"
+                hx-target="closest section"
+                hx-swap="outerHTML"
+                class="w-4 h-4"
+              >
+                <button type="submit" class="w-4 h-4">
+                  <Icon id="Trash" size={16} />
+                </button>
+              </form>
             </div>
           );
         })}
@@ -143,194 +244,7 @@ export default function ManageProfiles(
 ```
 
 No exemplo anterior, o inline loader que faz utiliza o cliente `drizzle`, que é
-fornecido pela app do records, e faz uma consulta no banco de dados, retornando
-o resultado da consulta para a section. Já a section, mapeia a a lista de
-profiles, renderizando as propriedades name e email.
-
-Agora, vamos adicionar o formulário que será utilizado para criar um novo perfil
-na tabela de profiles.
-
-```diff
-import { profiles } from "site/db/schema.ts";
-+ import { useSection } from "deco/hooks/useSection.ts";
-+ import Icon from "site/components/ui/Icon.tsx";
-+
-+ interface Props {
-+   mode?: "create";
-+ }
-// ...
-+
-export default function ManageProfiles(
-  { profiles = [] }: SectionProps<typeof loader>,
-) {
-+ const createUrl = useSection<Props>({
-+   props: { mode: "create" },
-+ });
-  return (
-    <>
-+     <div>
-+       <form
-+         hx-post={createUrl}
-+         hx-trigger="click"
-+         hx-target="closest section"
-+         hx-swap="outerHTML"
-+         class="p-2 flex flex-col gap-2"
-+       >
-+         <div class="flex gap-2">
-+           <label for="name">Name</label>
-+           <input
-+             name="name"
-+             id="name"
-+             required
-+             class="border border-gray-300 rounded"
-+           />
-+         </div>
-+
-+         <div class="flex gap-2">
-+           <label for="description">email</label>
-+           <input
-+             name="email"
-+             id="email"
-+             required
-+             class="border border-gray-300 rounded"
-+           />
-+         </div>
-+
-+         <div>
-+           <button type="submit">Create</button>
-+         </div>
-+       </form>
-+     </div>
-      <div class="divide-y divide-gray-300 p-2 w-fit">
-        <h3>Members List</h3>
-        {profiles.map((profile) => {
-          return (
-            <div class="flex gap-2 items-center">
-              <span>{profile.name}</span>
-              <span>{profile.email}</span>
-            </div>
-          );
-        })}
-      </div>
-    </>
-  );
-}
-```
-
-Adicionamos um formulário, que tem os campos de texto name e email, e sua
-realiza um post na url `createUrl` quando feito o submit. A `createUrl` é o link
-que invoca a renderização da própria section no servidor. Agora que o formulário
-foi adicionado, vamos adicionar no inline loader a criação do usuário, quando a
-props mode possuir o valor `create`.
-
-```diff
-+ import { eq } from "drizzle-orm";
-// ...
-
-interface Props {
-   mode?: "create";
-}
-
-export async function loader(
-- _: null,
-+  { mode }: Props,
-  req: Request,
-  { invoke }: AppContext,
-) {
-  const drizzle = await invoke.records.loaders.drizzle();
-+
-+ if (mode === "create" && req.body) {
-+   const newProfile: any = {};
-+   const formData = await req.formData();
-+   formData.forEach((value, key) => newProfile[key] = value);
-+
-+   await drizzle.insert(profiles).values(
-+     newProfile as typeof profiles.$inferInsert,
-+   );
-+ }
-  const profilesData = await drizzle.select({
-    email: profiles.email,
-    name: profiles.name,
-  }).from(profiles);
-  return { profiles: profilesData };
-}
-
-// ...
-```
-
-O inline loader, quando receber a propriedade mode com valor create e o request
-possuir a proprieadade body, ele irá inserir uma nova linha na tabela de
-profiles com o name e email recebidos da requisição. Já temos a listagem e a
-criação de um perfil novo, o próximo passo é fazer a remoção de um perfil.
-
-Para fazer a remoção, adicionaremos a propriedade mode com valor `delete` e uma
-nova propriedade chamada `email`, que serão utilizados no inline loader para
-remover o perfil.
-
-```diff
-export default function ManageProfiles() {
-  // ...
-
-      <div class="divide-y divide-gray-300 p-2 w-fit">
-      <h3>Members List</h3>
-      {profiles.map((profile) => {
-+       const profileDeleteUrl = useSection<Props>({
-+         props: { mode: "delete", email: profile.email ?? "" },
-+       });
-        return (
-          <div class="flex gap-2 items-center">
-            <span>{profile.name}</span>
-            <span>{profile.email}</span>
-+           <form
-+             hx-post={profileDeleteUrl}
-+             hx-trigger="click"
-+             hx-target="closest section"
-+             hx-swap="outerHTML"
-+             class="w-4 h-4"
-+            >
-+              <button type="submit" class="w-4 h-4">
-+                <Icon id="Trash" size={16} />
-+              </button>
-+            </form>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-```
-
-Adicionamos o formulário com a propriedade mode com valor delete e email, que
-será utilizado no inline loader para remoção do perfil. Por fim, vamos remover o
-perfil no inline loader.
-
-```diff
-// ...
-interface Props {
--  mode?: "create";
-+  mode?: "create" | "delete";
-+  email?: string;
-}
-// ...
-
- if (mode === "create" && req.body) {
-   const newProfile: any = {};
-   const formData = await req.formData();
-   formData.forEach((value, key) => newProfile[key] = value);
-
-   await drizzle.insert(profiles).values(
-     newProfile as typeof profiles.$inferInsert,
-   );
-- }
-+ } else if (mode === "delete" && email) {
-+   await drizzle.delete(profiles).where(eq(profiles.email, email));
-+ }
-
-  const profilesData = await drizzle.select({
-    email: profiles.email,
-    name: profiles.name,
-  }).from(profiles);
-```
+fornecido pela app do records, e faz uma consulta no banco de dados, insere e remove perfis.
 
 ## Desenvolvendo localmente
 
