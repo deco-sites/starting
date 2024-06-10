@@ -776,7 +776,7 @@
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b"
               }
             ],
-            "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">Professional Web Dev</span></p>",
+            "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">How Webdevs Build</span></p>",
             "showRadialOnTop": true,
             "ctas": [
               {
@@ -785,8 +785,9 @@
                 "id": "bt-click-signup"
               }
             ],
-            "subTitle": "<p>Build, evolve and scale high performance sites, apps and <br> storefronts with a Universal CMS based on Deno, HTMX, JSX and Tailwind.</p>",
-            "shouldAddPaddingTopAndBottom": true
+            "subTitle": "<p>An universal git-based CMS to build high performance sites, apps and <br>storefronts with Deno, HTMX, JSX and Tailwind.</p>",
+            "shouldAddPaddingTopAndBottom": true,
+            "title": "<p>Professional Websites</p>"
           },
           {
             "__resolveType": "site/sections/Home/TrustSignals.tsx",
@@ -877,7 +878,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/StartingCards.tsx",
-                "title": "Designed to be flexible.<br><span class='text-[#949E9E]'>You can start from anywhere.</span>",
+                "title": "<p>One platform to rule<br>all your digital experiences</p>",
                 "cards": [
                   {
                     "href": "https://deco.new",
@@ -930,7 +931,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/TextSection2.tsx",
-                "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-Performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Fast Execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Easy Personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
+                "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">fast execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">easy personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
               },
               {
                 "__resolveType": "site/sections/Home/Marks.tsx",
@@ -998,7 +999,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p>Features to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> your Business</p>",
+                "title": "<p> <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> Your Business Continuously</p>",
                 "tabs": [
                   {
                     "title": "Advanced SEO settings",
