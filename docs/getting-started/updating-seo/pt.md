@@ -58,7 +58,8 @@ esperado. Você pode testar diferentes versões para ver o que mais lhe agrada.
 Após isso, **clique no botão Publicar** na parte superior direita para criar uma
 nova revisão deste bloco. Revisões são versões imutáveis dos dados editados na
 deco e servem para conseguirmos acompanhar e revertar as mudanças ao longo do
-tempo. [Saiba mais sobre revisões aqui](/docs/pt/getting-started/releases-revisions).
+tempo.
+[Saiba mais sobre revisões aqui](/docs/pt/getting-started/releases-revisions).
 
 Pronto! Agora seu site está com os dados de SEO atualizados e você aprendeu como
 editar um block na deco.cx.

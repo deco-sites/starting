@@ -88,7 +88,9 @@ export default function CustomizableMarkdownContent(
         </style>
       </Head>
       {matchCustom?.content
-        ? matchCustom.content.map((c) => <c.Component {...c.props} mdContent={props.data} />)
+        ? matchCustom.content.map((c) => (
+          <c.Component {...c.props} mdContent={props.data} />
+        ))
         : <MarkdownContent data={{ ...props.data }} />}
     </>
   );

@@ -4,7 +4,8 @@ description: How to create and track an A/B test?
 
 # How to Create and Track an A/B Test?
 
-A/B tests for websites involve splitting the audience and directing them to two different versions of the site to see which one generates more engagement.
+A/B tests for websites involve splitting the audience and directing them to two
+different versions of the site to see which one generates more engagement.
 
 Let's explore each step:
 
@@ -23,15 +24,18 @@ In the sidebar, click on "Experiments"
 This screen lists your experiments. Click on "Create new Experiment"
 
 Some information will be required:
+
 - Name
 - Description
 - Traffic (percentage that will go to the new version)
 
 ## Traffic Segmentation
 
-You have just chosen the traffic percentage for your test, but you can customize this even further.
+You have just chosen the traffic percentage for your test, but you can customize
+this even further.
 
-The creation of the Experiment has generated a new Segment, which can be checked in the sidebar, under "Segments":
+The creation of the Experiment has generated a new Segment, which can be checked
+in the sidebar, under "Segments":
 
 ![Segments screen](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f25a1aab-3c16-45a3-8083-742d88b52e1e)
 
@@ -47,7 +51,8 @@ Examples of segmentation:
 
 ## Editing Your Variant
 
-Now with the segment created, you can choose whether to test a complete page or a specific section.
+Now with the segment created, you can choose whether to test a complete page or
+a specific section.
 
 Create a variant:
 ![Create variants](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ef0f35c3-e98a-4523-96df-e811102aafa6)
@@ -70,10 +75,10 @@ Example in code:
 import { sendEvent } from "./sdk/analytics.tsx";
 
 <button
-	onClick={() => sendEvent({ name: "add_to_cart"}, params)}
+  onClick={() => sendEvent({ name: "add_to_cart" }, params)}
 >
-	Add to Cart
-</button>
+  Add to Cart
+</button>;
 ```
 
 ## Funnel and Results
@@ -85,21 +90,29 @@ On the screen that lists the Experiments, select the desired Test.
 Check out the features:
 
 ### Sample Size
-Indication of the minimum sample size for the test to be considered statistically significant.
+
+Indication of the minimum sample size for the test to be considered
+statistically significant.
 
 ### Probability
+
 See the probability of your variation being the winner relative to the other.
 
 ### Goal Setting
+
 Select the goals you want to compare, there is no limit.
 
 ### Filter by Period
+
 Filter by period to understand if there were any outliers during the test.
 
 ### Funnel
-See the conversion rate of each of your metrics to understand where you are losing your user.
+
+See the conversion rate of each of your metrics to understand where you are
+losing your user.
 
 ### Real-Time
+
 Data is transferred in real-time, no more waiting a day or two to analyze them.
 
 ![Experiments screen](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6ddc740d-9590-431b-b1e7-f0a0130bc5f6)

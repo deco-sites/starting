@@ -46,7 +46,7 @@ export const loader = async (
 };
 
 const LogoSlider = (
-  { logos }: { logos: Image[];},
+  { logos }: { logos: Image[] },
 ) => {
   const renderLogoSlide = () => (
     <div
@@ -121,23 +121,23 @@ function Investors({ title, brands, isMobile }: Omit<Props, "isMobile"> & {
           target="_blank"
           class="w-full h-full z-60 relative flex items-center justify-center lg:px-5 lg:py-[10px] gap-4"
         >
-            <Picture>
-              <Source
-                media="(max-width: 767px)"
-                src={element.img ?? ""}
-                width={144}
-                class=""
-              />
-              <Source
-                media="(min-width: 768px)"
-                src={element.img ?? ""}
-                width={110}
-              />
-              <img
-                class="object-contain w-[110px] object-scale-down"
-                src={element.img ?? ""}
-              />
-            </Picture>
+          <Picture>
+            <Source
+              media="(max-width: 767px)"
+              src={element.img ?? ""}
+              width={144}
+              class=""
+            />
+            <Source
+              media="(min-width: 768px)"
+              src={element.img ?? ""}
+              width={110}
+            />
+            <img
+              class="object-contain w-[110px] object-scale-down"
+              src={element.img ?? ""}
+            />
+          </Picture>
         </a>
       </div>
     );
@@ -150,16 +150,15 @@ function Investors({ title, brands, isMobile }: Omit<Props, "isMobile"> & {
           <div class="font-albert-sans text-white font-medium text-[16px] lg:text-[24px] leading-[100%] tracking-[-0.48px]">
             {title}
           </div>
-          {isMobile === 'desktop' ? (
-          <div class="flex flex-wrap justify-center gap-4">
-            {listBrands.map((element, index) => (
-              <Logo key={index} {...element} />
-            ))}
-          </div>
-          )
-          : (
-            <LogoSlider logos={listBrands}  />
-          )}
+          {isMobile === "desktop"
+            ? (
+              <div class="flex flex-wrap justify-center gap-4">
+                {listBrands.map((element, index) => (
+                  <Logo key={index} {...element} />
+                ))}
+              </div>
+            )
+            : <LogoSlider logos={listBrands} />}
         </div>
       </div>
     </div>

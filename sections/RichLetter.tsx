@@ -28,9 +28,19 @@ export default function Why({ title, paragraph }: Props) {
           rel="stylesheet"
         />
         <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
-        {title && <div className="text-5xl md:text-7xl lg:text-[7rem] cormorant-garamond-medium-italic text-primary mb-6" dangerouslySetInnerHTML={{ "__html": title }}></div>}
+        {title && (
+          <div
+            className="text-5xl md:text-7xl lg:text-[7rem] cormorant-garamond-medium-italic text-primary mb-6"
+            dangerouslySetInnerHTML={{ "__html": title }}
+          >
+          </div>
+        )}
         <div className="md:text-lg">
-          <div className="mb-4" dangerouslySetInnerHTML={{ "__html": paragraph }}></div>
+          <div
+            className="mb-4"
+            dangerouslySetInnerHTML={{ "__html": paragraph }}
+          >
+          </div>
         </div>
 
         <div className="flex justify-between items-center w-100 mt-8">

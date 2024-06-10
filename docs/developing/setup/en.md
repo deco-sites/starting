@@ -6,9 +6,8 @@ since: 1.0.0
 - Read the guide in **Getting Started** to understand the basic concepts and the
   deco admin tool.
 
-- **Important**, you can access
-  [our Discord](https://deco.cx/discord) to ask questions or report
-  issues with _deco.cx_. Join our community too!
+- **Important**, you can access [our Discord](https://deco.cx/discord) to ask
+  questions or report issues with _deco.cx_. Join our community too!
 
 # Summary
 
@@ -71,7 +70,8 @@ We highly recommend using
 ## Test Deco Locally (Optional)!
 
 Deco offers a mechanism to test and explore our system without the need to
-deploy code or make a deployment on our infrastructure. To do this, visit [the Deco Play](https://play.deco.cx/)
+deploy code or make a deployment on our infrastructure. To do this, visit
+[the Deco Play](https://play.deco.cx/)
 
 ![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341)
 

@@ -226,10 +226,10 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 > **Dicas**:
 >
 > - Use `inline loaders` para transformar dados a serem enviados a uma section
-  > e/ou ilha
+>   e/ou ilha
 > - Considere postergar a exibição (`Deferred`) de sections com loaders custosos
 > - Altere as props do loader para diminuir a quantidade de dados carregados nos
-  > loaders
+>   loaders
 > - Salve os loaders que são reutilizados em diferentes páginas/sections
 
 ## 🏝️ Ilhas

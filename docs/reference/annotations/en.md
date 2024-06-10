@@ -45,7 +45,7 @@ List with all supported annotations:
 | `@default`          | Configures a default value for that field.                                                                                                                                                                                  | `@default Testing`                                                   |
 | `@deprecated`       | Marks a field as deprecated.                                                                                                                                                                                                | `@deprecated We will remove this field in the next update`           |
 | `@options`          | Required for the operation of the [dynamic options](/docs/pt/reference/widgets#dynamic-options), [button group](/docs/pt/reference/widgets#button-group) and [icon select](/docs/pt/reference/widgets#icon-select) widgets. | `@options deco-sites/mystore/loaders/products.ts`                    |
-| `@language`          | Required for the Widget ```@format code```, used to define the language on editor. | `@language javascript`                    |
+| `@language`         | Required for the Widget `@format code`, used to define the language on editor.                                                                                                                                              | `@language javascript`                                               |
 
 ## Possible Values for `@format`
 

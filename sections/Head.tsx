@@ -32,7 +32,9 @@ export default function HeadComponent({
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={image} />
-      {faviconUrl && <link rel="shortcut icon" href={faviconUrl} type="image/x-icon"></link>}
+      {faviconUrl && (
+        <link rel="shortcut icon" href={faviconUrl} type="image/x-icon"></link>
+      )}
 
       <link
         rel="apple-touch-icon"

@@ -56,7 +56,8 @@ different versions to see what suits you best.
 
 After that, **click the Publish button** in the upper right to create a new
 revision of this block. Revisions are immutable versions of the data edited in
-deco and are used to track and roll back changes over time. [Learn more about revisions here](/docs/en/getting-started/releases-revisions).
+deco and are used to track and roll back changes over time.
+[Learn more about revisions here](/docs/en/getting-started/releases-revisions).
 
 There you go! Now your site has updated SEO data, and you have learned how to
 edit a block in deco.cx.

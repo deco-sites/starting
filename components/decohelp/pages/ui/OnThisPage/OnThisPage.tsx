@@ -39,7 +39,9 @@ export default function OnThisPage(props: OnThisPage & { url: string }) {
       if (!markdownBody) {
         throw new Error("Markdown body not present");
       }
-      headings = Array.from(markdownBody.querySelectorAll("h1, h2, h3, h4, h5, h6"));
+      headings = Array.from(
+        markdownBody.querySelectorAll("h1, h2, h3, h4, h5, h6"),
+      );
 
       headings.forEach((element, index) => {
         if (element) {
@@ -101,7 +103,7 @@ export default function OnThisPage(props: OnThisPage & { url: string }) {
       removeEventListener("scroll", handleScroll);
     };
   }, [label, activeClass]);
-  
+
   const isInEN = props.url.includes("/en/");
 
   return (
@@ -116,18 +118,28 @@ export default function OnThisPage(props: OnThisPage & { url: string }) {
         )}
       </ul>
       <div class="flex backdrop-blur-xl h-[50px] rounded-full bg-white/5 w-[150px] mt-6">
-        <button 
-          class={`w-1/2 font-semibold rounded-full ${isInEN ? "bg-[#02F67C]" : "text-white"}`}
+        <button
+          class={`w-1/2 font-semibold rounded-full ${
+            isInEN ? "bg-[#02F67C]" : "text-white"
+          }`}
           onClick={() => {
-            globalThis.location.href = globalThis.location.href.replace("/pt/", "/en/");
+            globalThis.location.href = globalThis.location.href.replace(
+              "/pt/",
+              "/en/",
+            );
           }}
         >
           EN
         </button>
-        <button 
-          class={`w-1/2 font-semibold rounded-full ${isInEN ? "text-white" : "bg-[#02F67C]"}`}
+        <button
+          class={`w-1/2 font-semibold rounded-full ${
+            isInEN ? "text-white" : "bg-[#02F67C]"
+          }`}
           onClick={() => {
-            globalThis.location.href = globalThis.location.href.replace("/en/", "/pt/");
+            globalThis.location.href = globalThis.location.href.replace(
+              "/en/",
+              "/pt/",
+            );
           }}
         >
           PT
@@ -138,9 +150,8 @@ export default function OnThisPage(props: OnThisPage & { url: string }) {
 }
 
 export const loader = (props: OnThisPage, req: Request) => {
-
   return {
     ...props,
     url: req.url,
-  }
-}
+  };
+};

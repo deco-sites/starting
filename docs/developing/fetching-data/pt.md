@@ -38,7 +38,8 @@ _Dados retornados da API Dog Facts sendo chamada no browser_
 Se executarmos um http request para a API da Dog Fact veremos que ele retorna um
 JSON no seguinte formato,
 
-> Abra no seu browser: [esta URL com parâmetros para a API](https://dogapi.dog/api/facts?number=1)
+> Abra no seu browser:
+> [esta URL com parâmetros para a API](https://dogapi.dog/api/facts?number=1)
 
 ```json
 {

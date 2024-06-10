@@ -13,9 +13,9 @@ since: 1.0.0
 > Por isso, é importante tomar alguns cuidados no uso de ilhas:
 >
 > 1. Reduza ao máximo a quantidade de props a ser enviada / utilizada para uma
-   > ilha
+>    ilha
 > 2. Torne uma ilha apenas o que for necessário, lembrando de usar o `children`
-   > para elementos internos que não precisam de hidratação.
+>    para elementos internos que não precisam de hidratação.
 
 # Reduzindo o tamanho do JSON de props enviado para as ilhas
 

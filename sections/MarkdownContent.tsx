@@ -1,4 +1,4 @@
-import { Head, asset } from "$fresh/runtime.ts";
+import { asset, Head } from "$fresh/runtime.ts";
 import { LoaderReturnType } from "deco/types.ts";
 import { MDFileContent } from "site/components/ui/Types.tsx";
 
@@ -112,7 +112,9 @@ function Content(props: MDContent) {
         </span>
       )}
       <div
-        data-color-mode="dark" data-light-theme="light" data-dark-theme="dark"
+        data-color-mode="dark"
+        data-light-theme="light"
+        data-dark-theme="dark"
         class="mt-8 markdown-body !text-[#F9FAFB] !bg-base-700"
         dangerouslySetInnerHTML={{ __html: html }}
       />

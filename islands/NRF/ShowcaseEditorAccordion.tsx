@@ -21,7 +21,7 @@ export interface Props {
   tabs?: Tab[];
 }
 
-export const ShowcaseEditorAccordion = ({ tabs}: Props) => {
+export const ShowcaseEditorAccordion = ({ tabs }: Props) => {
   const itemVisible = useSignal(0);
   const len = tabs?.length;
   const len2 = 5 * ((len ?? 0) - 1);

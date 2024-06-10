@@ -422,4 +422,5 @@ map the data to schema.org's data types.**
 ## Deploying
 
 Now that the app is already and included in deco hub, **create a Pull Request**
-and send us at [our Discord server](https://deco.cx/discord) (`#deco-prs` channel).
+and send us at [our Discord server](https://deco.cx/discord) (`#deco-prs`
+channel).

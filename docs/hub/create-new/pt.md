@@ -425,4 +425,5 @@ importante mapear corretamente os dados baseado nos tipos do schema.org.**
 ## Lançando
 
 Agora que o app já está incluído no deco hub, **crie um Pull Request** e
-envie-nos para [nosso servidor no Discord](https://deco.cx/discord) (canal `#deco-prs`).
+envie-nos para [nosso servidor no Discord](https://deco.cx/discord) (canal
+`#deco-prs`).
