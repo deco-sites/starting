@@ -329,6 +329,14 @@ const tableOfContents: TableOfContents = [
         },
         slug: "reference/widgets",
       },
+
+      {
+        title: {
+          pt: "Deco Records",
+          en: "Deco Records",
+        },
+        slug: "reference/deco-records",
+      },
     ],
   },
   {

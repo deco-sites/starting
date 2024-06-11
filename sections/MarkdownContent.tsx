@@ -98,7 +98,10 @@ export default function DocsPage(
 
 function Content(props: MDContent) {
   const { body, attrs } = props.content;
-  const _html = gfm.render(body, { allowIframes: true });
+  const _html = gfm.render(body, {
+    allowIframes: true,
+    allowedAttributes: { "div": ["style"] },
+  });
   const html = _html.replaceAll(
     /( href="https:\/\/(?!www.deco)).*?/g,
     ' target="_blank"$1',
