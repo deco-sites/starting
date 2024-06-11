@@ -19,10 +19,6 @@ const tableOfContents: TableOfContents = [
         slug: "getting-started/creating-a-site",
       },
       {
-        title: { pt: "Atualizando o SEO", en: "Updating SEO" },
-        slug: "getting-started/updating-seo",
-      },
-      {
         title: { pt: "Criando uma nova Página", en: "Creating a new Page" },
         slug: "getting-started/creating-a-new-page",
       }, // TODO
@@ -32,10 +28,17 @@ const tableOfContents: TableOfContents = [
       // },
       {
         title: {
-          pt: "Segmentação de Conteúdo",
-          en: "Segmenting Content with Variants",
+          pt: "Criando rascunhos e Restaurando versões",
+          en: "Creating drafts and Restoring versions",
         },
-        slug: "getting-started/variants",
+        slug: "getting-started/releases-revisions",
+      },
+      {
+        title: {
+          pt: "Instalando Apps",
+          en: "Installing Apps",
+        },
+        slug: "getting-started/installing-an-app",
       },
       {
         title: {
@@ -53,90 +56,28 @@ const tableOfContents: TableOfContents = [
           },
         ],
       },
+    ],
+  },
+  {
+    title: { pt: "Funcionalidades do CMS", en: "CMS capabilities" },
+    children: [
+      {
+        title: { pt: "Atualizando o SEO", en: "Updating SEO" },
+        slug: "cms-capabilities/updating-seo",
+      },
+      {
+        title: {
+          pt: "Segmentação de Conteúdo",
+          en: "Segmenting Content with Variants",
+        },
+        slug: "cms-capabilities/variants",
+      },
       {
         title: {
           pt: "Criando Redirecionamentos e Proxies",
           en: "Adding Proxies and Redirects",
         },
-        slug: "getting-started/proxy-redirects",
-      },
-      {
-        title: {
-          pt: "Criando rascunhos e Restaurando versões",
-          en: "Creating drafts and Restoring versions",
-        },
-        slug: "getting-started/releases-revisions",
-      },
-      {
-        title: {
-          pt: "Instalando Apps",
-          en: "Installing Apps",
-        },
-        slug: "getting-started/installing-an-app",
-      },
-    ],
-  },
-  {
-    title: {
-      pt: "Conceitos",
-      en: "Concepts",
-    },
-    children: [
-      {
-        title: {
-          pt: "Block",
-          en: "Block",
-        },
-        slug: "concepts/block",
-      },
-      {
-        title: {
-          pt: "Section",
-          en: "Section",
-        },
-        slug: "concepts/section",
-      },
-      {
-        title: {
-          pt: "Loader",
-          en: "Loader",
-        },
-        slug: "concepts/loader",
-      },
-      {
-        title: {
-          pt: "Action",
-          en: "Action",
-        },
-        slug: "concepts/action",
-      },
-      {
-        title: {
-          pt: "Page",
-          en: "Page",
-        },
-        slug: "concepts/page",
-      },
-      {
-        title: {
-          pt: "Matcher",
-          en: "Matcher",
-        },
-        slug: "concepts/matcher",
-      },
-      {
-        title: {
-          pt: "Segment",
-          en: "Segment",
-        },
-        slug: "concepts/segment",
-      },
-      {
-        title: {
-          pt: "App",
-          en: "App",
-        },
-        slug: "concepts/app",
+        slug: "cms-capabilities/proxy-redirects",
       },
     ],
   },
