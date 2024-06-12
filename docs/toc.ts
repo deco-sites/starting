@@ -21,17 +21,13 @@ const tableOfContents: TableOfContents = [
       {
         title: { pt: "Criando uma nova Página", en: "Creating a new Page" },
         slug: "getting-started/creating-a-new-page",
-      }, // TODO
-      // {
-      //   title: { pt: "Reusando Seções", en: "Reusing Sections" },
-      //   slug: "getting-started/reusing-sections",
-      // },
+      },
       {
         title: {
-          pt: "Criando rascunhos e Restaurando versões",
-          en: "Creating drafts and Restoring versions",
+          pt: "Gerenciando mudanças e publicando",
+          en: "Managing changes and publishing",
         },
-        slug: "getting-started/releases-revisions",
+        slug: "getting-started/changes-and-publishing",
       },
       {
         title: {

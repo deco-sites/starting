@@ -3,7 +3,8 @@ description: |
    Step-by-step on how to create a Site on deco.cx
 ---
 
-This documentation will guide you through the process of creating and setting up your first site using Deco.cx. A Deco site is the primary asset for Deco users, serving as the hub for creating, editing, and managing their own space on the web.
+This documentation will guide you through the process of creating and setting up your first site using Deco.cx. 
+A Deco site is the primary asset for Deco users, serving as the hub for creating, editing, and managing their own space on the web.
 
 ## 1. Select a Template
 
