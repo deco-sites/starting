@@ -31,10 +31,10 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Instalando Apps",
-          en: "Installing Apps",
+          pt: "Adicionando um blog ao seu site",
+          en: "Adding a blog to your site",
         },
-        slug: "getting-started/installing-an-app",
+        slug: "getting-started/adding-a-blog",
       },
       {
         title: {
