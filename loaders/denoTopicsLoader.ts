@@ -6,7 +6,42 @@ import type {
 } from "site/components/decohelp/pages/ui/Sidebar/Sidebar.tsx";
 import tableOfContents from "site/docs/toc.ts";
 
-const loader = (
+
+const GITHUB_API_URL = 'https://api.github.com';
+const OWNER = 'deco-cx';
+const REPO = 'apps';
+const OUTPUT_DIR = 'docs';
+
+async function fetchAppsReposWithReadme() {
+  const url = `${GITHUB_API_URL}/repos/${OWNER}/${REPO}/contents`;
+  const response = await fetch(url);
+  const data = await response.json();
+
+  const dirsWithReadme = [];
+
+  if (!Array.isArray(data)) {
+    return dirsWithReadme;
+  }
+
+  for (const item of data) {
+    if (item.type === 'dir') {
+      const url = `${GITHUB_API_URL}/repos/${OWNER}/${REPO}/contents/${item.path}/README.md`;
+      const response = await fetch(url, {
+        method: 'HEAD',
+      });
+      const hasReadme = response.status === 200;
+
+      if (hasReadme) {
+        dirsWithReadme.push(item.path);
+      }
+    }
+  
+  }
+
+  return dirsWithReadme;
+}
+
+const loader = async (
   props: { urlPattern: string; group: number; basePath?: string },
   _req: Request,
   _ctx: LoaderContext,
@@ -38,6 +73,30 @@ const loader = (
       }) ?? ([] as SubTopic[]),
     });
   });
+
+  const appsRepos = await fetchAppsReposWithReadme();
+
+  if (!appsRepos.length) {
+    return topics;
+  }
+
+  const decoHub =  {
+    label: 'Deco Hub',
+    LinkTopic: undefined,
+    SubTopics: appsRepos.map((repo) => {
+      return {
+        label: repo,
+        SidebarLink: `/docs/${languageTyped}/decohub/${repo}`,
+        NestedTopics: [],
+      };
+    })
+  };
+
+  topics.push(decoHub);
+
+  console.log(appsRepos);
+
+  console.log(topics);
 
   return topics;
 };

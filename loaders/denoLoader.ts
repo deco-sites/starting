@@ -14,6 +14,10 @@ export interface Doc {
   title?: string;
 }
 
+const GITHUB_API_URL = 'https://api.github.com';
+const OWNER = 'deco-cx';
+const REPO = 'apps';
+
 const loader = async (
   props: { urlPattern: string; group: number; docs?: Doc[]; docsPath?: string },
   _req: Request,
@@ -34,6 +38,31 @@ const loader = async (
     >; // redirect, component won't be resolved, so don't need the data;
   }
 
+  if (documentSlug.includes("decohub")) {
+    const appName = documentSlug.split("/")[1];
+
+    const url = `${GITHUB_API_URL}/repos/${OWNER}/${REPO}/contents/${appName}/README.md`;
+    const response = await fetch(url);
+
+    // if (response.status === 200) {
+    // console.log(response.status, "teste");
+    // const data = await response.json();
+    // const content = atob(data.content);
+    // } else {
+    //   console.log(response.status);
+      const content = `## Sorry :(\nWe could not fetch this content, but you can read it at the [app repo](https://github.com/deco-cx/apps/tree/main/${appName})`;
+    //   console.log(content);
+    // }
+
+    const contentWithDescription = `---\ndescription: This is the README of the ${appName} app\n---\n${content}`;
+
+    // const contentWithDescription = description + "\n" + content;
+
+    console.log(appName, contentWithDescription, "teste2")
+
+    return { content: contentWithDescription, title: appName };
+  }
+
   const url = new URL(
     `../${path}/${documentSlug}/${language}.md`,
     import.meta.url,
@@ -47,6 +76,7 @@ const loader = async (
 
   try {
     const fileContent = await Deno.readTextFile(url);
+    console.log(fileContent);
     return {
       content: fileContent,
       title: getTitleForPost(language == "en" ? "en" : "pt", documentSlug),
