@@ -94,10 +94,6 @@ const loader = async (
 
   topics.push(decoHub);
 
-  console.log(appsRepos);
-
-  console.log(topics);
-
   return topics;
 };
 
