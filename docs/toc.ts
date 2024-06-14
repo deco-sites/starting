@@ -79,8 +79,8 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
-      pt: "Desenvolvendo novas funcionalidades",
-      en: "Developing new capabilities",
+      pt: "Guia de Desenvolvimento",
+      en: "Developing guide",
     },
     children: [
       {
@@ -201,8 +201,8 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
-      pt: "Referência",
-      en: "Reference",
+      pt: "Funcionalidades de Desenvolvimento",
+      en: "Development capabilities",
     },
     children: [
       {
@@ -240,6 +240,27 @@ const tableOfContents: TableOfContents = [
           en: "Widgets",
         },
         slug: "reference/widgets",
+      },
+      {
+        title: {
+          pt: "Dados padronizados",
+          en: "Standard data types",
+        },
+        slug: "composable-uis/standard-data-types",
+      },
+      {
+        title: {
+          pt: "Biblioteca de blocos",
+          en: "Block Library",
+        },
+        slug: "composable-uis/block-library",
+      },
+      {
+        title: {
+          pt: "E-commerce",
+          en: "E-commerce",
+        },
+        slug: "composable-uis/ecommerce",
       },
     ],
   },
@@ -346,37 +367,8 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
-      pt: "Criando componentes reutilizáveis",
-      en: "Creating composable UIs",
-    },
-    children: [
-      {
-        title: {
-          pt: "Dados padronizados",
-          en: "Standard data types",
-        },
-        slug: "composable-uis/standard-data-types",
-      },
-      {
-        title: {
-          pt: "Biblioteca de blocos",
-          en: "Block Library",
-        },
-        slug: "composable-uis/block-library",
-      },
-      {
-        title: {
-          pt: "E-commerce",
-          en: "E-commerce",
-        },
-        slug: "composable-uis/ecommerce",
-      },
-    ],
-  },
-  {
-    title: {
-      pt: "External SDKs",
-      en: "External SDKs",
+      pt: "Funcionalidades da Plataforma",
+      en: "Platform capabilities",
     },
     children:[
       {
@@ -392,9 +384,17 @@ const tableOfContents: TableOfContents = [
           en: "Feature Flags",
         },
         slug: "sdk/feature-flags"
+      },
+      {
+        title: {
+          pt: "CMS Headless",
+          en: "Headless CMS",
+        },
+        slug: "headless-cms",
       }
     ]
   },
+  /*
   {
     title: {
       pt: "Deco Hub",
@@ -445,7 +445,7 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
-  /*{
+  {
     title: {
       pt: "Treinamento Comercial",
     },
@@ -544,13 +544,6 @@ const tableOfContents: TableOfContents = [
         slug: "api-reference/use-section",
       },
     ],
-  },
-  {
-    title: {
-      pt: "CMS Headless",
-      en: "Headless CMS",
-    },
-    slug: "headless-cms",
   }
 ];
 
