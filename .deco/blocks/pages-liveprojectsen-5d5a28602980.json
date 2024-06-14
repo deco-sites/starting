@@ -490,6 +490,16 @@
               "label": "Empório Quatro Estrelas"
             },
             {
+              "link": "https://nutrilatina.com.br",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3e7f55bd-9118-478f-aaf0-3d715ebdd29b",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Nutrilatina"
+            },
+            {
               "link": "https://www.saddicenter.com.br/",
               "image": [
                 {
@@ -500,13 +510,13 @@
               "label": "Saddi Center"
             },
             {
+              "link": "https://www.shopvinho.com.br/",
               "image": [
                 {
-                  "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/194d9a2e-532f-4513-be34-77518f1889ec"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/194d9a2e-532f-4513-be34-77518f1889ec",
+                  "color": "#FFFFFF"
                 }
               ],
-              "link": "https://www.shopvinho.com.br/",
               "label": "Shopvinho"
             },
             {
@@ -591,27 +601,27 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/639bcb00-d877-4461-99d0-0382a606dd7d"
                 }
               ],
-              "link": "https://www.oticaisabeladias.com.br/",
-              "label": "Óticas Isabela Dias"
+              "label": "Óticas Isabela Dias",
+              "link": "https://www.oticaisabeladias.com.br/"
             },
             {
+              "link": "https://www.oticasprevent.com.br/",
               "image": [
                 {
-                  "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/74dc407a-3c23-46a3-a3c2-3731b561cb7f"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/74dc407a-3c23-46a3-a3c2-3731b561cb7f",
+                  "color": "#FFFFFF"
                 }
               ],
-              "link": "https://www.oticasprevent.com.br/",
               "label": "Óticas Prevent"
             },
             {
+              "link": "https://www.yenzah.com.br/",
               "image": [
                 {
-                  "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/558ba815-e52c-4a82-833e-079eb546bd66"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/558ba815-e52c-4a82-833e-079eb546bd66",
+                  "color": "#FFFFFF"
                 }
               ],
-              "link": "https://www.yenzah.com.br/",
               "label": "Yenzah"
             }
           ],
