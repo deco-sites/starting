@@ -53,8 +53,14 @@ export default function Markdown({ post }: Props) {
   body = body.replace(/<h3/g, '<h3 class="text-[#F9FAFB]"');
   body = body.replace(/<h4/g, '<h4 class="text-[#F9FAFB]"');
   body = body.replace(/<hr/g, '<hr class="border border-[#FFFFFF26]"');
-  body = body.replace(/<code/g, '<code class="text-[#F9FAFB] bg-[#FFFFFF0D] backdrop-filter backdrop-blur-24 py-0.5"');
-  body = body.replace(/<pre/g, '<pre class="border-2 border-[#FFFFFF26] bg-[#FFFFFF0D] rounded backdrop-filter backdrop-blur-24 p-4"');
+  body = body.replace(
+    /<code/g,
+    '<code class="text-[#F9FAFB] bg-[#FFFFFF0D] backdrop-filter backdrop-blur-24 py-0.5"',
+  );
+  body = body.replace(
+    /<pre/g,
+    '<pre class="border-2 border-[#FFFFFF26] bg-[#FFFFFF0D] rounded backdrop-filter backdrop-blur-24 p-4"',
+  );
   body = body.replace(/<ul/g, '<ul class="marker:text-green-500"');
 
   return (

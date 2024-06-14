@@ -200,167 +200,164 @@ function AsideLinks({
 
   return (
     <>
-        <SearchButton />
-        <ul
-          class={`flex flex-col gap-2 pb-[140px] max-h-full overflow-x-auto lg:max-h-[80vh]`}
-        >
-          {subtitle.length > 0 && (
-            <li class="my-[8px] ml-[25px]">
-              <a
-                href={linkSubtitle}
-                class={`${
-                  currentSlug === subtitleSlug
-                    ? "text-[#4ADE80]"
-                    : "text-[#E7E5E4]"
-                } text-[15px] font-semibold leading-tight`}
-              >
-                {subtitle}
-              </a>
-            </li>
-          )}
-          {topics.map((topic, index) => {
-              const isActive = isTopicActive(
-                openTopicIndex ?? 0,
-                index,
-              );
-              return (
-                <ul key={index} class="flex flex-col gap-2">
-                  <li>
-                    <SidebarItem
-                      href={topic?.LinkTopic}
-                      aria-selected={isActive}
-                      onClick={(event) => {
-                        event.stopPropagation();
-                        toggleTopicMenu(index);
-                      }}
-                    >
-                      <span>
-                        {topic.label}
+      <SearchButton />
+      <ul
+        class={`flex flex-col gap-2 pb-[140px] max-h-full overflow-x-auto lg:max-h-[80vh]`}
+      >
+        {subtitle.length > 0 && (
+          <li class="my-[8px] ml-[25px]">
+            <a
+              href={linkSubtitle}
+              class={`${
+                currentSlug === subtitleSlug
+                  ? "text-[#4ADE80]"
+                  : "text-[#E7E5E4]"
+              } text-[15px] font-semibold leading-tight`}
+            >
+              {subtitle}
+            </a>
+          </li>
+        )}
+        {topics.map((topic, index) => {
+          const isActive = isTopicActive(
+            openTopicIndex ?? 0,
+            index,
+          );
+          return (
+            <ul key={index} class="flex flex-col gap-2">
+              <li>
+                <SidebarItem
+                  href={topic?.LinkTopic}
+                  aria-selected={isActive}
+                  onClick={(event) => {
+                    event.stopPropagation();
+                    toggleTopicMenu(index);
+                  }}
+                >
+                  <span>
+                    {topic.label}
+                  </span>
+                  {topic.SubTopics && topic.SubTopics.length > 0 && (
+                    <div class="flex items-center justify-end gap-[10px]">
+                      <span
+                        class={`w-[20px] h-[20px] p-3 bg-[#FFFFFF1A] rounded-full font-inter text-[14px] font-medium leading-normal flex items-center justify-center ${
+                          isActive ? "text-[#4ADE80]" : "text-[#FFFFFF80]"
+                        }`}
+                      >
+                        {topic.SubTopics.length}
                       </span>
-                      {topic.SubTopics && topic.SubTopics.length > 0 && (
-                        <div class="flex items-center justify-end gap-[10px]">
-                          <span
-                            class={`w-[20px] h-[20px] p-3 bg-[#FFFFFF1A] rounded-full font-inter text-[14px] font-medium leading-normal flex items-center justify-center ${
-                              isActive ? "text-[#4ADE80]" : "text-[#FFFFFF80]"
-                            }`}
-                          >
-                            {topic.SubTopics.length}
-                          </span>
-                          <Icon
-                            class={`${
-                              openTopicIndex === index ? "rotate-90" : ""
-                            }`}
-                            id="ChevronRight"
-                            width={16}
-                            height={16}
-                            strokeWidth={"3"}
-                          />
-                        </div>
-                      )}
-                    </SidebarItem>
-                  </li>
-                  {topic.SubTopics &&
-                    topic.SubTopics.length > 0 && (
-                    <ol
-                      class={`font-semibold flex ml-2 pl-2 border-l border-[#303D3D] flex-col ${
-                        isActive ? "" : "hidden"
-                      }`}
-                    >
-                      {topic.SubTopics.map((subTopic, subTopicIndex) => {
-                        const isActiveSubTopic = isSubTopicActive(
-                          currentSlug,
-                          subTopic,
-                        );
-
-                        return (
-                          <li
-                            key={subTopicIndex}
-                          >
-                            <SidebarItem
-                              href={subTopic.SidebarLink}
-                              aria-selected={isActiveSubTopic}
-                              style={getFontWeightStyle(
-                                fontWeightSubtopic.fontWeight || "normal",
-                              )}
-                            >
-                              <span>{subTopic.label}</span>
-                              {subTopic.NestedTopics &&
-                                subTopic.NestedTopics.length > 0 && (
-                                <div class="flex items-center justify-end gap-[10px]">
-                                  <span
-                                    class={`w-[20px] h-[20px] p-3 bg-[#FFFFFF1A] rounded-full font-inter text-[14px] font-medium leading-normal flex items-center justify-center ${
-                                      isActiveSubTopic
-                                        ? "text-[#4ADE80]"
-                                        : "text-[#FFFFFF80]"
-                                    }`}
-                                  >
-                                    {subTopic.NestedTopics.length}
-                                  </span>
-                                  <Icon
-                                    class={openSubTopicIndex === subTopicIndex
-                                      ? "rotate-90"
-                                      : ""}
-                                    id="ChevronRight"
-                                    width={16}
-                                    height={16}
-                                    strokeWidth={"3"}
-                                    onClick={(event) => {
-                                      event.stopPropagation();
-                                      event.preventDefault();
-                                      if (
-                                        openSubTopicIndex === subTopicIndex
-                                      ) {
-                                        setOpenSubTopicIndex(null);
-                                      } else {
-                                        setOpenSubTopicIndex(subTopicIndex);
-                                      }
-                                    }}
-                                  />
-                                </div>
-                              )}
-                            </SidebarItem>
-                            {subTopic.NestedTopics &&
-                              subTopic.NestedTopics.length > 0 &&
-                              openSubTopicIndex === subTopicIndex && (
-                              <ol class="flex flex-col ml-2 pl-2 border-l border-[#303D3D]">
-                                {subTopic.NestedTopics.map(
-                                  (ChildTopic, subSubIndex) => {
-                                    const isNestedTopicActive =
-                                      isSubTopicActive(
-                                        currentSlug,
-                                        ChildTopic,
-                                      );
-                                    return (
-                                      <li>
-                                        <SidebarItem
-                                          aria-selected={isNestedTopicActive}
-                                          href={ChildTopic.SidebarLink}
-                                          key={subSubIndex}
-                                          style={getFontWeightStyle(
-                                            fontWeightChildtopic.fontWeight ||
-                                              "normal",
-                                          )}
-                                        >
-                                          <span>
-                                            {ChildTopic.label}
-                                          </span>
-                                        </SidebarItem>
-                                      </li>
-                                    );
-                                  },
-                                )}
-                              </ol>
-                            )}
-                          </li>
-                        );
-                      })}
-                    </ol>
+                      <Icon
+                        class={`${openTopicIndex === index ? "rotate-90" : ""}`}
+                        id="ChevronRight"
+                        width={16}
+                        height={16}
+                        strokeWidth={"3"}
+                      />
+                    </div>
                   )}
-                </ul>
-              );
-            })}
-        </ul>
-      </>
+                </SidebarItem>
+              </li>
+              {topic.SubTopics &&
+                topic.SubTopics.length > 0 && (
+                <ol
+                  class={`font-semibold flex ml-2 pl-2 border-l border-[#303D3D] flex-col ${
+                    isActive ? "" : "hidden"
+                  }`}
+                >
+                  {topic.SubTopics.map((subTopic, subTopicIndex) => {
+                    const isActiveSubTopic = isSubTopicActive(
+                      currentSlug,
+                      subTopic,
+                    );
+
+                    return (
+                      <li
+                        key={subTopicIndex}
+                      >
+                        <SidebarItem
+                          href={subTopic.SidebarLink}
+                          aria-selected={isActiveSubTopic}
+                          style={getFontWeightStyle(
+                            fontWeightSubtopic.fontWeight || "normal",
+                          )}
+                        >
+                          <span>{subTopic.label}</span>
+                          {subTopic.NestedTopics &&
+                            subTopic.NestedTopics.length > 0 && (
+                            <div class="flex items-center justify-end gap-[10px]">
+                              <span
+                                class={`w-[20px] h-[20px] p-3 bg-[#FFFFFF1A] rounded-full font-inter text-[14px] font-medium leading-normal flex items-center justify-center ${
+                                  isActiveSubTopic
+                                    ? "text-[#4ADE80]"
+                                    : "text-[#FFFFFF80]"
+                                }`}
+                              >
+                                {subTopic.NestedTopics.length}
+                              </span>
+                              <Icon
+                                class={openSubTopicIndex === subTopicIndex
+                                  ? "rotate-90"
+                                  : ""}
+                                id="ChevronRight"
+                                width={16}
+                                height={16}
+                                strokeWidth={"3"}
+                                onClick={(event) => {
+                                  event.stopPropagation();
+                                  event.preventDefault();
+                                  if (
+                                    openSubTopicIndex === subTopicIndex
+                                  ) {
+                                    setOpenSubTopicIndex(null);
+                                  } else {
+                                    setOpenSubTopicIndex(subTopicIndex);
+                                  }
+                                }}
+                              />
+                            </div>
+                          )}
+                        </SidebarItem>
+                        {subTopic.NestedTopics &&
+                          subTopic.NestedTopics.length > 0 &&
+                          openSubTopicIndex === subTopicIndex && (
+                          <ol class="flex flex-col ml-2 pl-2 border-l border-[#303D3D]">
+                            {subTopic.NestedTopics.map(
+                              (ChildTopic, subSubIndex) => {
+                                const isNestedTopicActive = isSubTopicActive(
+                                  currentSlug,
+                                  ChildTopic,
+                                );
+                                return (
+                                  <li>
+                                    <SidebarItem
+                                      aria-selected={isNestedTopicActive}
+                                      href={ChildTopic.SidebarLink}
+                                      key={subSubIndex}
+                                      style={getFontWeightStyle(
+                                        fontWeightChildtopic.fontWeight ||
+                                          "normal",
+                                      )}
+                                    >
+                                      <span>
+                                        {ChildTopic.label}
+                                      </span>
+                                    </SidebarItem>
+                                  </li>
+                                );
+                              },
+                            )}
+                          </ol>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ol>
+              )}
+            </ul>
+          );
+        })}
+      </ul>
+    </>
   );
 }
 
@@ -369,7 +366,7 @@ export function loader(props: SidebarContent, req: Request) {
   const [base, lang, ...pathSegments] = url.pathname.split("/").filter(Boolean);
 
   const breadcrumbItems = pathSegments.map((segment, index) => {
-    const path = pathSegments.slice(0, index + 1).join('/');
+    const path = pathSegments.slice(0, index + 1).join("/");
 
     return {
       name: segment.replace("-", " "),
@@ -390,7 +387,6 @@ export default function Sidebar({
   Topics,
   breadcrumbItems,
 }: SectionProps<typeof loader>) {
-
   return (
     <div
       class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[140px] top-[103px] lg:mb-[40px] lg:sticky`}
@@ -398,7 +394,23 @@ export default function Sidebar({
       {/* Mobile with drawer */}
       <div class="flex mt-28 items-start gap-2 lg:hidden text-white px-4">
         <label for={DOCS_DRAWER_ID} class="cursor-pointer">
-          <svg  xmlns="http://www.w3.org/2000/svg"  width="16"  height="16"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+          </svg>
         </label>
         <Breadcrumb items={breadcrumbItems} />
       </div>
@@ -408,10 +420,10 @@ export default function Sidebar({
         aside={
           <Drawer.Aside title="Docs" drawer={DOCS_DRAWER_ID}>
             <div class="w-full px-6">
-              <AsideLinks 
+              <AsideLinks
                 topics={Topics ?? []}
-                subtitle={Subtitle ?? ''}
-                linkSubtitle={LinkSubtitle ?? ''}
+                subtitle={Subtitle ?? ""}
+                linkSubtitle={LinkSubtitle ?? ""}
               />
             </div>
           </Drawer.Aside>
@@ -422,10 +434,10 @@ export default function Sidebar({
       <aside
         class={`w-[300px] h-full hidden lg:flex flex-col gap-10`}
       >
-        <AsideLinks 
+        <AsideLinks
           topics={Topics ?? []}
-          subtitle={Subtitle ?? ''}
-          linkSubtitle={LinkSubtitle ?? ''}
+          subtitle={Subtitle ?? ""}
+          linkSubtitle={LinkSubtitle ?? ""}
         />
       </aside>
     </div>

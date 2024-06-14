@@ -9,7 +9,7 @@ description: Learn how to use the SVG sprites technique to optimize your website
 > To reuse SVG elements and reduce the size of HTML pages:
 >
 > 1. Use a single SVG file (e.g., `sprites.svg`) and identify each symbol with
-   > an `id`.
+>    an `id`.
 > 2. To use the SVG, use the `use` tag pointing to the specific ID.
 > 3. Do this especially for SVGs that are <u>not visible on the screen</u>.
 

@@ -54,7 +54,9 @@ export default function BlogPostHeader(props: Props) {
               d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
             />
           </svg>
-          <span class="ml-4 group-hover:underline text-[#F9FAFB]">{backToBlog}</span>
+          <span class="ml-4 group-hover:underline text-[#F9FAFB]">
+            {backToBlog}
+          </span>
         </a>
       </div>
       <div class="w-full flex flex-col gap-6">

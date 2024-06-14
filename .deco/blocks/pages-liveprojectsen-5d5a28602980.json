@@ -318,21 +318,31 @@
               "image": [
                 {
                   "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3ea6ed9b-b080-40c5-b56c-666c7b893092"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/30ae4400-b353-4b60-97aa-ecee72097112"
                 }
               ],
-              "link": "https://www.comfortflex.com.br/",
-              "label": "Comfortflex"
+              "link": "https://www.calcadosclovis.com.br/",
+              "label": "Clovis"
             },
             {
               "image": [
                 {
                   "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0833134c-c7f3-4eed-baa1-57fd42ecd229"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3ea6ed9b-b080-40c5-b56c-666c7b893092"
                 }
               ],
-              "label": "Daniela Tombini",
-              "link": "https://www.danielatombini.com.br/"
+              "label": "Comfortflex",
+              "link": "https://www.comfortflex.com.br/"
+            },
+            {
+              "link": "https://www.danielatombini.com.br/",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0833134c-c7f3-4eed-baa1-57fd42ecd229",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Daniela Tombini"
             },
             {
               "link": "https://www.douxstore.com/",
@@ -395,14 +405,14 @@
               "label": "Lojas Torra"
             },
             {
-              "link": "https://www.meiasola.com.br/",
               "image": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bb05ee4a-c266-4549-a069-6e2855ca05c2",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bb05ee4a-c266-4549-a069-6e2855ca05c2"
                 }
               ],
-              "label": "Meia Sola"
+              "label": "Meia Sola",
+              "link": "https://www.meiasola.com.br/"
             },
             {
               "image": [
@@ -421,8 +431,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/424f5a92-aa19-4495-aa88-03548b2947ac"
                 }
               ],
-              "label": "Ramarim",
-              "link": "https://www.ramarim.com.br/"
+              "link": "https://www.ramarim.com.br/",
+              "label": "Ramarim"
             },
             {
               "image": [
@@ -431,8 +441,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/46b86834-1715-42d8-9259-a49a69499855"
                 }
               ],
-              "link": "https://www.technos.com.br/",
-              "label": "Technos"
+              "label": "Technos",
+              "link": "https://www.technos.com.br/"
             },
             {
               "image": [
@@ -441,8 +451,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4333a9dd-f952-46bd-9d82-7ad1c8bb3ddb"
                 }
               ],
-              "label": "Uncle K",
-              "link": "https://www.unclek.com.br/"
+              "link": "https://www.unclek.com.br/",
+              "label": "Uncle K"
             },
             {
               "image": [

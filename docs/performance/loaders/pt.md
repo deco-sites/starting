@@ -9,10 +9,10 @@ since: 1.0.0
 > como otimizar o seu uso. Seguem algumas dicas:
 >
 > 1. Quando o loader for reutilizado em diferentes sections ou páginas,
-   > recomenda-se utilizar um loader salvo (reusável)
+>    recomenda-se utilizar um loader salvo (reusável)
 > 2. Não faça `fetchs` em inline loaders
 > 3. Sections que carregam dados e que não estão sendo exibidas na tela inicial
-   > (above the fold), podem ser Deferred
+>    (above the fold), podem ser Deferred
 
 # Reutilizando loaders
 

@@ -776,7 +776,7 @@
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b"
               }
             ],
-            "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">Professional Web Dev</span></p>",
+            "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">How Webdevs Build</span></p>",
             "showRadialOnTop": true,
             "ctas": [
               {
@@ -785,8 +785,9 @@
                 "id": "bt-click-signup"
               }
             ],
-            "subTitle": "<p>Build high-performance digital experiences with Deno, HTMX, JSX and Tailwind.</p>",
-            "shouldAddPaddingTopAndBottom": true
+            "subTitle": "<p>An universal git-based CMS to build high performance sites, apps and <br>storefronts with Deno, HTMX, JSX and Tailwind.</p>",
+            "shouldAddPaddingTopAndBottom": true,
+            "title": "<p>Professional Websites</p>"
           },
           {
             "__resolveType": "site/sections/Home/TrustSignals.tsx",
@@ -835,8 +836,8 @@
                     "label": "miss"
                   },
                   {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/87f2915b-da43-46bd-939c-d804e1d03b1f",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/665e131f-e6c4-4df6-88f3-aaf9898494c5",
+                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/58e0e9a6-4609-4087-8dd7-ae1cc2d34b77",
+                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f041d872-04ac-443f-8422-bb162c5796d8",
                     "label": "bis"
                   },
                   {
@@ -877,7 +878,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/StartingCards.tsx",
-                "title": "Designed to be flexible.<br><span class='text-[#949E9E]'>You can start from anywhere.</span>",
+                "title": "<p>One platform to rule<br>all your digital experiences</p>",
                 "cards": [
                   {
                     "href": "https://deco.new",
@@ -891,7 +892,23 @@
                   },
                   {
                     "href": "https://deco.new",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae35a5ed-7e4e-44c0-9be1-8113c0045cfc",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/652b3b84-e4e7-4594-980f-bf58c23c2b53",
+                    "label": "Headless Storefronts",
+                    "cta": "Start now",
+                    "id": "bt-click-signup",
+                    "icons": {
+                      "logos": [
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/57efa191-5f45-4a58-9109-8c2e8ddc3b3b",
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c9080c9a-a527-4dd2-a323-b8ff84545714",
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1623d48f-34bc-4bbf-b096-c94c7f8b651a",
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/95fee40b-69fb-436b-8b0d-c3dc87f74b04"
+                      ],
+                      "active": true
+                    }
+                  },
+                  {
+                    "href": "https://deco.new",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1a967269-248d-4684-9723-8dec5cd58f45",
                     "label": "Institutional & Blogs",
                     "cta": "Start now",
                     "id": "bt-click-signup"
@@ -909,28 +926,12 @@
                     "label": "MicroSaaS",
                     "cta": "Start now",
                     "id": "bt-click-signup"
-                  },
-                  {
-                    "href": "https://deco.new",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a4aa4780-8436-4919-b814-c60f48b9b6b7",
-                    "label": "Headless Storefronts",
-                    "cta": "Start now",
-                    "id": "bt-click-signup",
-                    "icons": {
-                      "logos": [
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/57efa191-5f45-4a58-9109-8c2e8ddc3b3b",
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c9080c9a-a527-4dd2-a323-b8ff84545714",
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1623d48f-34bc-4bbf-b096-c94c7f8b651a",
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/95fee40b-69fb-436b-8b0d-c3dc87f74b04"
-                      ],
-                      "active": true
-                    }
                   }
                 ]
               },
               {
                 "__resolveType": "site/sections/Home/TextSection2.tsx",
-                "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-Performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Fast Execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Easy Personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
+                "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">fast execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">easy personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
               },
               {
                 "__resolveType": "site/sections/Home/Marks.tsx",
@@ -998,7 +999,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p>Features to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> your Business</p>",
+                "title": "<p> <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> Your Business Continuously</p>",
                 "tabs": [
                   {
                     "title": "Advanced SEO settings",
@@ -1236,7 +1237,7 @@
               },
               {
                 "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
-                "title": "<p>Check out our useful links and media features<br>to discover everything you didn’t know about <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">deco.cx</a>.</p>",
+                "title": "<p>Check out our useful links and media features to discover everything you didn’t know about <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">deco.cx</a>.</p>",
                 "cards": [
                   {
                     "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/18c44403-ce96-4243-8610-2b08249f25c7",
@@ -1374,7 +1375,7 @@
                       "altText": "lanx"
                     },
                     {
-                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0bc0bd97-94ad-4ea0-987a-fc68b2897a45",
+                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9be517fd-1dc8-40cd-8185-ddd26bc30be0",
                       "href": "https://exame.com/negocios/estas-40-startups-vao-faturar-juntas-r-872-milhoes-e-sao-as-novas-apostas-da-endeavor-veja-a-lista/",
                       "altText": "endeavor scale up"
                     },
@@ -1382,11 +1383,6 @@
                       "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d0bea373-ff97-4fdc-9212-d7bcdce7721d",
                       "href": "https://www.maya.capital/blog-posts/why-did-maya-invest-in-deco-cx",
                       "altText": "maya"
-                    },
-                    {
-                      "href": "https://rio.websummit.com/blog/press-releases/deco-cx-pitch-winner/",
-                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/34395084-fcb6-46db-a377-4a2f207ca914",
-                      "altText": "websummit"
                     }
                   ]
                 }

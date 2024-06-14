@@ -19,13 +19,20 @@ function SliderFocus({
       class={`flex carousel-start items-center overflow-x-hidden snap-x snap-mandatory ${_class}`}
       {...props}
     >
-      {Children.map(children, (child, index) => (
-        <li class={`shrink-0 ${itemClass}`}>
-          <button data-slider-item={index} data-dot={index} class={`${snap} flex w-screen justify-center pr-[12.5%] sm:w-full sm:pr-0 `}>
-            {child}
-          </button>
-        </li>
-      ))}
+      {Children.map(
+        children,
+        (child, index) => (
+          <li class={`shrink-0 ${itemClass}`}>
+            <button
+              data-slider-item={index}
+              data-dot={index}
+              class={`${snap} flex w-screen justify-center pr-[12.5%] sm:w-full sm:pr-0 `}
+            >
+              {child}
+            </button>
+          </li>
+        ),
+      )}
     </ul>
   );
 }

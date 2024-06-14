@@ -22,9 +22,10 @@ Explore the template components and edit them using the live preview. After sele
 
 Your site will not be yours until you save it to your team! Click on the "Save site to your team" button in the top right corner of the admin page to claim ownership of the site.
 
-> Before saving the site, what you see is an ephemeral website.
-
 ![Save site to your team](/docs/getting-started/creating-site/save-site-btn.png)
+
+You should see something similar to `https://deco-sites-landing.deno.dev/`, which
+was the template chosen in the creation process.
 
 ### 3.1. Log into the Platform
 ### 3.2. Give a Name to Your Site and Choose a Team

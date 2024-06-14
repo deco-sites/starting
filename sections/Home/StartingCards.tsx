@@ -63,7 +63,7 @@ export default function StartingCards({
   ],
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-6 py-14 lg:py-40 lg:px-[120px] flex flex-col gap-20 justify-center items-center bg-[#030806]">
+    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-6 py-16 lg:py-40 lg:px-[120px] flex flex-col gap-20 justify-center items-center bg-[#030806]">
       {title &&
         (
           <h2
@@ -88,7 +88,7 @@ export default function StartingCards({
               backgroundPosition: "center",
             }}
           >
-            <div class="absolute inset-0 bg-black bg-opacity-20 flex flex-col items-start justify-end p-10 gap-4">
+            <div class="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-start justify-end p-10 gap-4">
               <h3
                 class="font-albert-sans text-[24px] lg:text-[32px] font-semibold leading-[110%] text-white"
                 dangerouslySetInnerHTML={{

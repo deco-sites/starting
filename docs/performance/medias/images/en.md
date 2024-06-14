@@ -9,7 +9,7 @@ description: Learn how to use images on your website without sacrificing perform
 > your site:
 >
 > 1. Add the deco image components (`<Image/>`, `<Source>`, `<Picture>`) to your
-   > code
+>    code
 > 2. Style the components with CSS until you achieve the desired appearance
 > 3. Set the width and height attributes of the component.
 

@@ -13,7 +13,7 @@ since: 1.0.0
 >
 > 1. Minimize the amount of props to be sent/used for an island
 > 2. Make an island only what is necessary, remembering to use `children` for
-   > internal elements that do not need hydration.
+>    internal elements that do not need hydration.
 
 # Reducing the size of the props JSON sent to islands
 

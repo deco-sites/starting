@@ -211,11 +211,11 @@ export interface Props {
 
 The Code Widget render a code editor.
 
-Use with ```@language css```, ```@language typescript``` or ```@language json```
+Use with `@language css`, `@language typescript` or `@language json`
 
 ```ts
 export interface Props {
-  /** 
+  /**
    * @format code
    * @language css
    */

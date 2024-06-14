@@ -60,7 +60,7 @@ export default function CarouselLinks({
     >
       {title && (
         <h2
-          class="font-albert-sans text-lg lg:text-2xl font-medium text-white text-center leading-[115%] tracking-[-0.72px]"
+          class="font-albert-sans text-lg lg:text-2xl font-medium text-white text-center leading-[115%] tracking-[-0.72px] max-w-[636px] mx-auto"
           dangerouslySetInnerHTML={{ __html: title }}
         >
         </h2>
@@ -141,7 +141,6 @@ export default function CarouselLinks({
             class="rounded-full p-1.5 lg:p-3 bg-[#02F67C] focus:outline-none flex items-center justify-center border-none border-0 left-[0.5rem] sm:left-[1rem] lg:left-[6rem] top-[35%] sm:top-[30%] z-40"
             data-slide="prev"
             aria-label="Previous item"
-            
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +161,6 @@ export default function CarouselLinks({
             class="rounded-full p-1.5 lg:p-3 bg-[#02F67C] focus:outline-none flex items-center justify-center border-none border-0 top-[35%] sm:top-[30%] right-[0.5rem] sm:right-[1rem] lg:right-[6rem] z-40"
             data-slide="next"
             aria-label="Next item"
-            
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -9,7 +9,8 @@ This article guides you on creating and configuring a website at
 > TL;DR: To connect to VTEX you need to change `vtex` app configuration at
 > `https://deco.cx/admin/sites/{site}/library?type=apps`
 
-> **Video**: [Watch the content of this article here](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
+> **Video**:
+> [Watch the content of this article here](https://www.loom.com/share/ff6dc0fdaa064ac5948133ed5b0b8463)
 
 # Summary
 
@@ -22,8 +23,7 @@ This article guides you on creating and configuring a website at
 
 # Prerequisites
 
-- A deco webiste. Create one for free at
-  [Deco Admin](https://admin.deco.cx/).
+- A deco webiste. Create one for free at [Deco Admin](https://admin.deco.cx/).
 - A VTEX account
   [(help)](https://help.vtex.com/tutorial/what-is-an-account-name--i0mIGLcg3QyEy8OCicEoC).
 

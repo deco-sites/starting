@@ -50,3 +50,13 @@ Here, we will select the Hero section. After the selection, we can see the form 
 ![Section Form](/docs/getting-started/creating-a-new-page/section-form.png)
 
 > Note: The example you see above is of a reusable block, which is a global resource that can be used by other pages. This is why you cannot edit this section unless you detach it to change only on that page or edit it in a new space (which will affect all pages that use it).
+
+If the page has been published before, the Publish modal will offer you the
+option to A/B test the new revision.
+
+## Variants
+
+Besides A/B testing, which randomizes which users see the new content, it's
+possible to segment and personalize content in deco.cx using other factors like
+user's location, device and more.
+[Read more about Variants here](/docs/en/getting-started/variants).

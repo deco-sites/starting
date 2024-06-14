@@ -99,7 +99,10 @@ const tableOfContents: TableOfContents = [
         slug: "developing/hello-world",
       },
       {
-        title: { pt: "Exportando Propriedades Padrões em um Bloco", en: "Exporting Default Props in a Block" },
+        title: {
+          pt: "Exportando Propriedades Padrões em um Bloco",
+          en: "Exporting Default Props in a Block",
+        },
         slug: "developing/exporting-default-props",
       },
       {
@@ -201,6 +204,28 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
+      pt: "Decopilot",
+      en: "Decopilot",
+    },
+    children: [
+      {
+        title: {
+          pt: "Como acessar",
+          en: "How to access",
+        },
+        slug: "decopilot/how-to-access",
+      },
+      {
+        title: {
+          pt: "Assistente",
+          en: "Assistant",
+        },
+        slug: "decopilot/assistant",
+      },
+    ],
+  },
+  {
+    title: {
       pt: "Funcionalidades de Desenvolvimento",
       en: "Development capabilities",
     },
@@ -261,6 +286,14 @@ const tableOfContents: TableOfContents = [
           en: "E-commerce",
         },
         slug: "composable-uis/ecommerce",
+      },
+
+      {
+        title: {
+          pt: "Deco Records",
+          en: "Deco Records",
+        },
+        slug: "reference/deco-records",
       },
     ],
   },
@@ -370,16 +403,16 @@ const tableOfContents: TableOfContents = [
       pt: "Funcionalidades da Plataforma",
       en: "Platform capabilities",
     },
-    children:[
+    children: [
       {
-        title:{
+        title: {
           pt: "Teste A/B",
           en: "A/B Test",
         },
-        slug: "sdk/ab-test"
+        slug: "sdk/ab-test",
       },
       {
-        title:{
+        title: {
           pt: "Feature Flags",
           en: "Feature Flags",
         },

@@ -74,7 +74,10 @@ export default function HeroAndHeader(
                       class="relative flex justify-center text-[#00FF80]"
                       href={cta?.href}
                     >
-                      <button disabled class="relative w-[500px] h-[88px] bg-[#949E9E] flex justify-center items-center">
+                      <button
+                        disabled
+                        class="relative w-[500px] h-[88px] bg-[#949E9E] flex justify-center items-center"
+                      >
                         <div class="triangulo-top-right-mini md:triangulo-top-right absolute top-[-1px] right-[-1px]" />
                         <div class="triangulo-top-left-mini md:triangulo-top-left absolute top-[-1px] left-[-2px]" />
                         <div class="triangulo-bottom-right-mini md:triangulo-bottom-right absolute bottom-[-1px] right-[-1px]" />

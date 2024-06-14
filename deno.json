@@ -17,7 +17,6 @@
     "daisyui": "npm:daisyui@4.6.0",
     "deno-dom": "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts",
     "typography": "npm:@tailwindcss/typography@0.5.9",
-    "https://deno.land/x/gfm@0.1.23/mod.ts": "./overrides/gfm.mod.ts",
     "motion": "https://esm.sh/motion@10.16.4",
     "@floating-ui/react": "https://esm.sh/@floating-ui/react@0.24.3?external=preact/compat,tabbable,@floating-ui/react-dom,react,react-dom",
     "stripe": "https://esm.sh/stripe@12.6.0"

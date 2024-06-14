@@ -11,9 +11,9 @@ description: Aprenda como usar imagens em seu site sem perder desempenho.
 >
 > 1. Utilize a section de `Theme` padrão no template da deco.
 > 2. De preferência ao uso de uma das
-   > [famílias de fontes padrões oferecidas pela google](https://fonts.google.com/)
+>    [famílias de fontes padrões oferecidas pela google](https://fonts.google.com/)
 > 3. Caso precise de uma fonte própria, use uma fonte de tamanho pequeno, dando
-   > preferência aos formatos woff/woff2.
+>    preferência aos formatos woff/woff2.
 
 # Fontes no tema da deco
 

@@ -6,8 +6,9 @@ since: 1.0.0
 - Leia o guia em **Comece agora** para entender os conceitos base e a ferramenta
   de admin da deco
 
-- **Importante**, é possível acessar [nosso Discord](https://deco.cx/discord) para reportar
-  dúvidas ou problemas com a _deco.cx_. Participe também da nossa comunidade!
+- **Importante**, é possível acessar [nosso Discord](https://deco.cx/discord)
+  para reportar dúvidas ou problemas com a _deco.cx_. Participe também da nossa
+  comunidade!
 
 # Tópicos
 

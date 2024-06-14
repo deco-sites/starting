@@ -1,6 +1,7 @@
 import Image from "deco-sites/std/components/Image.tsx";
 import { useMemo } from "preact/hooks";
 import type { Image as ImageType } from "deco-sites/std/components/types.ts";
+import Icon from "site/components/ui/Icon.tsx";
 import { App, AppContext as AC } from "$live/mod.ts";
 
 export interface Image {
@@ -74,14 +75,14 @@ const LogoSlider = (
 ) => {
   const renderLogoSlide = () => (
     <div
-      className={`flex z-10 ${
+      className={`flex z-10 gap-[9px] lg:gap-[18px] ${
         direction === "left" ? "animate-slide" : "animate-slide-right"
       }`}
     >
       {logos.map((logo) => (
         <a
           href={logo.href ?? "/"}
-          class="flex items-center mx-[9px] justify-center h-[140px] lg:h-[270px] w-[248px] lg:w-[477px]"
+          class="flex items-center justify-center h-[140px] lg:h-[270px] w-[248px] lg:w-[477px]"
           target="_blank"
         >
           <Image
@@ -99,12 +100,12 @@ const LogoSlider = (
 
   return (
     <div className="logos overflow-hidden py-15 relative">
-      <div className="before:absolute before:inset-y-0 before:left-0 before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
+      <div className="before:absolute before:inset-y-0 before:left-0 before:w-[90px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
       </div>
-      <div className="after:absolute after:inset-y-0 after:right-0 after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
+      <div className="after:absolute after:inset-y-0 after:right-0 after:w-[90px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
       </div>
       <div
-        className="flex whitespace-nowrap"
+        className="flex whitespace-nowrap gap-[9px] lg:gap-[18px]"
         onMouseEnter={(
           e,
         ) => (e.currentTarget.style.animationPlayState = "paused")}
@@ -155,24 +156,14 @@ export default function SitesCarousel(
             {title}
           </h2>
         )}
-        <div class="flex flex-col gap-6 pt-6 justify-center">
+        <div class="flex flex-col gap-[11.29px] lg:gap-6 justify-center">
           <a
             href={cta?.href}
-            class="absolute w-[max-content] left-1/2 transform -translate-x-1/2 z-30 items-center border-[5px] border-[#113032] bg-[#02F67C] made-in-deco justify-center flex gap-4 px-8 py-6 font-[argent-pixel] text-[#113032] text-[20px] lg:text-[48px] leading-[120%]"
+            class="absolute w-[max-content] left-1/2 transform -translate-x-1/2 z-30 items-center border-[2px] lg:border-[5px] border-[#113032] bg-[#02F67C] made-in-deco justify-center flex gap-2 lg:gap-4 px-3 py-2 lg:px-8 lg:py-6 font-[argent-pixel] text-[#113032] text-[20px] lg:text-[48px] leading-[120%]"
           >
             {cta?.label}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="58"
-              height="59"
-              viewBox="0 0 58 59"
-              fill="none"
-            >
-              <path
-                d="M53.4688 17.7188V30.4062H49.8438V34.0312H46.2188V37.6562H42.5938V41.2812H38.9688V44.9062H35.3438V48.5312H31.7188V52.1562H26.2813V48.5312H22.6563V44.9062H19.0313V41.2812H15.4063V37.6562H11.7813V34.0312H8.15626V30.4062H4.53126V17.7188H8.15626V14.0938H11.7813V9.5625H23.5625V14.0938H27.1875V17.7188H30.8125V14.0938H34.4375V9.5625H46.2188V14.0938H49.8438V17.7188H53.4688Z"
-                fill="#113032"
-              />
-            </svg>
+            <Icon id="MadeInDeco" size={58} class="hidden lg:block" />
+            <Icon id="MadeInDecoMob" size={24} class="lg:hidden" />
           </a>
           <LogoSlider logos={firstList} direction="left" />
           <LogoSlider logos={secondList} direction="right" />

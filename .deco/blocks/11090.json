@@ -65,14 +65,10 @@
               {
                 "benefits": [
                   {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">5 team members</span></strong><br></p>"
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">2 team members</span></strong><br></p>"
                   },
                   {
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">5k pageviews included</span></strong><br></p>",
-                    "description": "Shared across all team sites"
-                  },
-                  {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">50 GB/mo Bandwidth</span></strong><br></p>",
                     "description": "Shared across all team sites"
                   },
                   {
@@ -100,66 +96,8 @@
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">All features included in DEV</span></strong><br></p>"
                   },
                   {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Unlimited team members</span></strong><br></p>"
-                  },
-                  {
-                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>250k pageviews included</strong></span><br></p>",
-                    "description": "Per PRO site"
-                  },
-                  {
-                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>250 GB/mo Bandwidth</strong></span><br></p>",
-                    "description": "Per PRO site"
-                  },
-                  {
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">AI copilot</span></strong><br></p>",
                     "description": "2500 decopilot gens included"
-                  },
-                  {
-                    "description": "powered by Plausible",
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime web analytics</span></strong><br></p>"
-                  },
-                  {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime error logging &amp; tracing</span></strong><br></p>",
-                    "description": "powered by HyperDX"
-                  },
-                  {
-                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Content segmentation</strong></span><br></p>"
-                  },
-                  {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">A/B test results, roles &amp; permissions</span></strong><br></p>",
-                    "description": "Coming soon"
-                  },
-                  {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99.9%</span></strong><br></p>"
-                  }
-                ],
-                "title": "Git-based CMS",
-                "subtitle": "A fully integrated Headless CMS",
-                "currency": "usd/mo",
-                "price": "$9",
-                "info": "+ $2 for each additional user",
-                "callToAction": "Sign up",
-                "callToActionUrl": "https://admin.deco.cx/"
-              },
-              {
-                "benefits": [
-                  {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">All features included in PRO</span></strong><br></p>"
-                  },
-                  {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Unlimited team members</span></strong><br></p>"
-                  },
-                  {
-                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Pay as you grow</strong></span><br></p>",
-                    "description": "Unlimited pageviews scalability"
-                  },
-                  {
-                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Unlimited Bandwidth</strong></span><br></p>",
-                    "description": "Per ENTERPRISE site"
-                  },
-                  {
-                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">AI copilot</span></strong><br></p>",
-                    "description": "Unlimited decopilot gens included"
                   },
                   {
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Realtime web analytics</span></strong><br></p>",
@@ -178,6 +116,37 @@
                   },
                   {
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99.9%</span></strong><br></p>"
+                  }
+                ],
+                "title": "Git-based CMS",
+                "subtitle": "Edit visually, deploy anywhere",
+                "currency": "usd/mo",
+                "price": "$9",
+                "info": "+ $2 for each additional user",
+                "callToAction": "Sign up",
+                "callToActionUrl": "https://admin.deco.cx/"
+              },
+              {
+                "benefits": [
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">All features included in PRO</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Always-On infrastructure</strong></span></p>"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Unlimited team members</span></strong><br></p>"
+                  },
+                  {
+                    "title": "<p><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\"><strong>Unlimited Bandwidth</strong></span><br></p>",
+                    "description": "Per ENTERPRISE site"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">AI copilot</span></strong><br></p>",
+                    "description": "Unlimited decopilot gens included"
+                  },
+                  {
+                    "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">SLA 99.9%</span></strong><br></p>"
                   },
                   {
                     "title": "<p><strong><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Premium support</span></strong><br></p>"
@@ -186,9 +155,9 @@
                 "title": "Pro",
                 "callToAction": "Book a demo",
                 "callToActionUrl": "https://deco.cx/en/contact-us",
-                "subtitle": "Unlimited scalability",
+                "subtitle": "Edge-native Universal CMS",
                 "info": "+ $8 for each 10k pageviews",
-                "price": "$500",
+                "price": "$99",
                 "currency": "usd/mo"
               }
             ]

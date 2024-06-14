@@ -143,8 +143,8 @@ export interface Props {
 
 Este widget é especialmente útil quando as opções disponíveis em um campo
 dependem de dados dinâmicos. Ele exibe em sua interface o mesmo que o
-[Select](#select), porém suas opções podem ser carregadas dinamicamente de outra prop ou via
-loader!
+[Select](#select), porém suas opções podem ser carregadas dinamicamente de outra
+prop ou via loader!
 
 Exemplo 1:
 
@@ -217,11 +217,11 @@ export interface Props {
 
 O Widget Code, exibe um Editor de código.
 
-Utilize com ```@language css```, ```@language typescript``` ou ```@language json```
+Utilize com `@language css`, `@language typescript` ou `@language json`
 
 ```ts
 export interface Props {
-  /** 
+  /**
    * @format code
    * @language css
    */

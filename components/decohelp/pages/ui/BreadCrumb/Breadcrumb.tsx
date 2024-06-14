@@ -20,7 +20,9 @@ function Breadcrumb({
           <li class="flex items-center gap-2" key={index}>
             <a
               href={index === 0 ? "#" : href}
-              class={`${index === items.length - 1 ? "text-[#4ADE80]" : "text-white"} 
+              class={`${
+                index === items.length - 1 ? "text-[#4ADE80]" : "text-white"
+              } 
               text-[15px] font-normal leading-tight capitalize`}
             >
               {name}
@@ -39,6 +41,6 @@ function Breadcrumb({
       </ul>
     </nav>
   );
-};
+}
 
 export default Breadcrumb;

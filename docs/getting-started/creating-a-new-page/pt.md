@@ -51,3 +51,13 @@ as propriedades da seção.
 ![Formulário da Seção](/docs/getting-started/creating-a-new-page/section-form.png)
 
 > Obs.: O exemplo acima é de um bloco reutilizável, que é um recurso global que pode ser usado por outras páginas. Por isso, você não pode editar essa seção a menos que a separe para mudar apenas naquela página ou edite em um novo espaço (o que afetará todas as páginas que a utilizam).
+
+Se a página foi publicada anteriormente, o modal Publish oferecerá a opção de
+testar A/B a nova revisão.
+
+## Variantes
+
+Além do teste A/B, que randomiza quais usuários veem o novo conteúdo, é possível
+segmentar e personalizar o conteúdo no deco.cx usando outros fatores como
+localização, dispositivo e mais.
+[Leia sobre variantes aqui](/docs/pt/getting-started/variants).

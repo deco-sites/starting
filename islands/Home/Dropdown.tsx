@@ -19,7 +19,7 @@ export interface MenuLink {
   tag?: {
     color: string;
     description: string;
-  }
+  };
 }
 
 function DropdownItem({ href, label, tag }: MenuLink) {
@@ -35,10 +35,15 @@ function DropdownItem({ href, label, tag }: MenuLink) {
       >
         <p class="font-sans not-italic font-normal text-[15px] text-[#fff] flex-grow flex gap-[8px] items-center whitespace-nowrap">
           {label}
-          {
-            tag?.description && tag?.color &&
-            <div class="font-semibold uppercase flex justify-center items-center px-[4px] py-[2px] text-[6px] rounded-[26.5px] text-[#000]" style={{backgroundColor: tag.color, lineHeight: 'normal'}}>{tag.description}</div>
-          }
+          {tag?.description && tag?.color &&
+            (
+              <div
+                class="font-semibold uppercase flex justify-center items-center px-[4px] py-[2px] text-[6px] rounded-[26.5px] text-[#000]"
+                style={{ backgroundColor: tag.color, lineHeight: "normal" }}
+              >
+                {tag.description}
+              </div>
+            )}
         </p>
       </a>
     </div>
@@ -107,7 +112,7 @@ export function Dropdown({
       >
       </div>
       <div
-        class={`opacity-0 pointer-events-none duration-300 group-hover/item:opacity-100 group-hover/item:pointer-events-auto transition-all ${
+        class={`opacity-0 pointer-events-none group-hover/item:opacity-100 group-hover/item:pointer-events-auto ${
           variant === "flat" ? "top-[48px]" : "top-[35px]"
         } z-30 absolute left-0 pt-5 rounded`}
       >
@@ -115,19 +120,19 @@ export function Dropdown({
           {columns.map((col, index) => (
             <>
               <div>
-                {
-                  col.icon && col.title &&
-                  <div class="pb-[24px] flex">
-                    <Icon id={col.icon} size={20} />
-                    <p class="pl-[8px] font-bold text-[16px] text-white">{col.title}</p>
-                  </div>
-                }
-                {col.nested?.map(item => <DropdownItem {...item} />)}
+                {col.icon && col.title &&
+                  (
+                    <div class="pb-[24px] flex">
+                      <Icon id={col.icon} size={20} />
+                      <p class="pl-[8px] font-bold text-[16px] text-white">
+                        {col.title}
+                      </p>
+                    </div>
+                  )}
+                {col.nested?.map((item) => <DropdownItem {...item} />)}
               </div>
-              {
-                columns.length - 1 > index &&
-                <div class="w-[1px] bg-[#162121] h-[300px]"></div>
-              }
+              {columns.length - 1 > index &&
+                <div class="w-[1px] bg-[#162121] h-[300px]"></div>}
             </>
           ))}
         </div>

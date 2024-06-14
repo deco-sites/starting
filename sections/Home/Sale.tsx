@@ -12,8 +12,8 @@ export interface Props {
 }
 
 const SIDE = {
-    left: "animate-sliding",
-    right: "animate-slidingright",
+  left: "animate-sliding",
+  right: "animate-slidingright",
 };
 
 export default function Sale({
@@ -21,7 +21,7 @@ export default function Sale({
   content = [
     {
       label: "TRY IT NOW FOR FREE",
-      repeat: 30
+      repeat: 30,
     },
   ],
 }: Props) {
@@ -33,11 +33,14 @@ export default function Sale({
             <span class="text-[15px] font-[argent-pixel] text-[#113032] whitespace-nowrap">
               {label}
             </span>
-            <span style={{
-                width: '2px',
-                height: '2px',
-                border: '0.25px solid #113032'
-            }}></span>
+            <span
+              style={{
+                width: "2px",
+                height: "2px",
+                border: "0.25px solid #113032",
+              }}
+            >
+            </span>
           </>
         ))}
       </div>
@@ -45,7 +48,9 @@ export default function Sale({
   });
   return (
     <div class="z-10 bg-secondary relative w-full overflow-hidden h-11">
-      <div class={`${SIDE[sideToRun]} absolute top-0 left-0 flex flex-nowrap h-11`}>
+      <div
+        class={`${SIDE[sideToRun]} absolute top-0 left-0 flex flex-nowrap h-11`}
+      >
         {slideContent}
       </div>
     </div>
