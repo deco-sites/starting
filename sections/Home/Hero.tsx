@@ -1,3 +1,5 @@
+import { ImageWidget } from "apps/admin/widgets.ts";
+
 export interface CTA {
   trackID?: string;
   href: string;
@@ -5,6 +7,13 @@ export interface CTA {
 }
 
 export interface Props {
+    alert?: {
+        image?: ImageWidget;
+        text?: string;
+        mobileText?: string;
+        href?: string;
+        readMoreText?: string;
+    };
   /**
    * @format rich-text
    * @default Click here to tweak this text however you want.
@@ -26,6 +35,7 @@ export interface Props {
 }
 
 export default function Hero({
+    alert,
   pixelTitle = "Professional Web Dev",
   title = "Made Easy & Fun",
   subTitle,
@@ -55,6 +65,62 @@ export default function Hero({
           "mt-20 lg:mt-40"
         } relative z-20 px-4 py-14 lg:px-0 flex flex-col gap-8 justify-center items-center`}
       >
+        {alert?.text && (
+            <a
+              href={alert.href}
+              style={{
+                boxShadow: '0px 0px 40px 0px rgba(2, 246, 124, 0.15)',
+                background: 'rgba(2, 246, 124, 0.05)',
+                border: '1px solid rgba(2, 246, 124, 0.15)'
+              }}
+              target={alert.href?.includes("http") ? "_blank" : "_self"}
+              class="font-albert-sans mx-6 lg:mx-0 flex items-center texxt-[14px] gap-4 rounded-[56px] bg-white/5 border border-white/[.15] backdrop-blur-xl py-2 px-4 z-10 text-white hover:scale-[1.05] transition-all duration-300 ease-out cursor-pointer"
+            >
+                {
+                    alert.image &&
+                <img
+                    class="w-5 h-5"
+                    src={alert.image}
+                    alt="icon"
+                    width={20}
+                    height={20}
+                />
+                }
+              <p class="hidden lg:flex gap-[16px]">{alert.text} 
+                {
+                    alert.readMoreText &&
+                    <>
+                        <span class="text-[#616B6B]">|</span>
+                        <span class="text-[#616B6B]">{alert.readMoreText}</span>
+                    </>
+                }
+            </p>
+            <p class="text-sm flex gap-[16px] lg:hidden">{alert.mobileText || alert.text} 
+                {
+                    alert.readMoreText &&
+                    <>
+                        <span class="text-[#616B6B]">|</span>
+                        <span class="text-[#616B6B]">{alert.readMoreText}</span>
+                    </>
+                }
+            </p>
+              <svg
+                class="h-5 w-5 hidden md:block"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.7441 4.41083C11.0695 4.08539 11.5971 4.08539 11.9226 4.41083L16.9226 9.41083C17.248 9.73626 17.248 10.2639 16.9226 10.5893L11.9226 15.5893C11.5971 15.9148 11.0695 15.9148 10.7441 15.5893C10.4186 15.2639 10.4186 14.7363 10.7441 14.4108L14.3215 10.8334H4.66666C4.20642 10.8334 3.83333 10.4603 3.83333 10.0001C3.83333 9.53984 4.20642 9.16675 4.66666 9.16675H14.3215L10.7441 5.58934C10.4186 5.2639 10.4186 4.73626 10.7441 4.41083Z"
+                  fill="#616B6B"
+                />
+              </svg>
+            </a>
+          )}
         <div class="leading-none">
           {pixelTitle &&
             (
