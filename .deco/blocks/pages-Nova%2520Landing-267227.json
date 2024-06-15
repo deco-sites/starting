@@ -776,7 +776,7 @@
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b"
               }
             ],
-            "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">How Webdevs Build</span></p>",
+            "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">How Professional Webdevs</span></p>",
             "showRadialOnTop": true,
             "ctas": [
               {
@@ -785,9 +785,9 @@
                 "id": "bt-click-signup"
               }
             ],
-            "subTitle": "<p>An universal git-based CMS to build high performance sites, apps and <br>storefronts with Deno, HTMX, JSX and Tailwind.</p>",
+            "subTitle": "<p>Universal Git-based CMS to build high performance sites, apps and <br>storefronts with Deno, HTMX, JSX and Tailwind.</p>",
             "shouldAddPaddingTopAndBottom": true,
-            "title": "<p>Professional Websites</p>"
+            "title": "<p>Build Profitable Websites</p>"
           },
           {
             "__resolveType": "site/sections/Home/TrustSignals.tsx",
