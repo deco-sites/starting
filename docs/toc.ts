@@ -491,6 +491,7 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
+  /*
   {
     title: {
       pt: "Deco Hub",
@@ -541,6 +542,7 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
+  /*
   /*{
     title: {
       pt: "Treinamento Comercial",
