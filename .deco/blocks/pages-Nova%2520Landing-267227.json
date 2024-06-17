@@ -791,7 +791,7 @@
             "alert": {
               "text": "Hackathon 5: Transform ideas into ultra-fast htmx templates",
               "mobileText": "Hackathon 5: Ideas to ultra-fast htmx templates",
-              "href": "Read More",
+              "href": "https://deco.cx/hackathon5",
               "readMoreText": "Read More"
             }
           },
