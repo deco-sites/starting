@@ -27,6 +27,49 @@ export const ShowcaseEditorTabbed = (
 ) => {
   const selectedTab = useSignal(0);
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const intervalRef = useRef<number | null>(null);
+
+  const animateProgressBar = (index: number) => {
+    const progressBar = document.getElementById(`tab-${trackId}-${index}`);
+    if (progressBar) {
+      animate(progressBar, { width: "100%" }, { duration: 5, easing: "linear" });
+    }
+  };
+
+  const resetProgressBar = (index: number) => {
+    const progressBar = document.getElementById(`tab-${trackId}-${index}`);
+    if (progressBar) {
+      animate(progressBar, { width: "0%" }, { duration: 0 });
+    }
+  };
+
+  const startAutoSwitch = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+    intervalRef.current = globalThis.setInterval(() => {
+      const nextTab = (selectedTab.value + 1) % (tabs?.length || 1);
+      resetProgressBar(selectedTab.value);
+      selectedTab.value = nextTab;
+      animateProgressBar(nextTab);
+    }, 5000);
+    animateProgressBar(selectedTab.value);
+  };
+
+  const stopAutoSwitch = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  };
+
+  const handleTabClick = (index: number) => {
+    stopAutoSwitch();
+    resetProgressBar(selectedTab.value);
+    selectedTab.value = index;
+    animateProgressBar(index);
+    startAutoSwitch();
+  };
 
   useEffect(() => {
     const containerElement = containerRef.current;
@@ -39,32 +82,8 @@ export const ShowcaseEditorTabbed = (
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const animationWidth = animate(
-              `#tab-${trackId}-${selectedTab.value}`,
-              { width: "100%" },
-              { duration: 5, easing: "linear" },
-            );
-
-            const tabElements = document.querySelectorAll(
-              "[id^='tab-" + trackId + "-']",
-            );
-
-            tabElements.forEach((element, index) => {
-              if (index !== selectedTab.value) {
-                animate(element, { width: "0%" }, { duration: 0 });
-              }
-            });
-
-            const interval = setInterval(() => {
-              selectedTab.value = (selectedTab.value + 1) % tabs.length;
-            }, 5000);
-
+            startAutoSwitch();
             observer.unobserve(entry.target);
-
-            return () => {
-              animationWidth.stop();
-              clearInterval(interval);
-            };
           }
         });
       },
@@ -73,8 +92,15 @@ export const ShowcaseEditorTabbed = (
 
     observer.observe(containerElement);
 
-    return () => observer.disconnect();
-  }, [tabs, selectedTab.value]);
+    return () => {
+      observer.disconnect();
+      stopAutoSwitch();
+    };
+  }, [tabs]);
+
+  useEffect(() => {
+    return () => stopAutoSwitch();
+  }, []);
 
   return (
     <>
@@ -88,6 +114,7 @@ export const ShowcaseEditorTabbed = (
           {tabs &&
             tabs.map((tab, index) => (
               <div
+                key={index}
                 class={`flex flex-col p-6 rounded-[16px] justify-center items-start transition-all duration-700 ${
                   index === selectedTab.value
                     ? "bg-[#0D1717]"
@@ -95,9 +122,7 @@ export const ShowcaseEditorTabbed = (
                 }`}
               >
                 <button
-                  onClick={() => {
-                    selectedTab.value = index;
-                  }}
+                  onClick={() => handleTabClick(index)}
                   class={`w-full flex flex-col gap-4 text-[12px] text-white items-center lg:text-[18px] leading-[135%] tracking-[-0.36px] text-left font-medium  ${
                     index === selectedTab.value ? "pb-4" : "border-transparent"
                   }`}
@@ -150,6 +175,7 @@ export const ShowcaseEditorTabbed = (
           {tabs &&
             tabs.map((tab, index) => (
               <div
+                key={index}
                 class={`flex justify-center items-center ${
                   index !== selectedTab.value ? "hidden" : ""
                 }`}
