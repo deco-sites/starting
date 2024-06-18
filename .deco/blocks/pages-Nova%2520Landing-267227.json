@@ -899,7 +899,7 @@
                   },
                   {
                     "href": "https://deco.new",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9ee06345-56c0-4ac9-b17c-084abaea63ca",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16cdb646-edd5-4baa-8126-97b7802531a2",
                     "label": "Headless Storefronts",
                     "cta": "Start now",
                     "id": "bt-click-signup",
@@ -911,7 +911,8 @@
                         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae59c1e9-2954-4df2-91e6-b6730843f0b9",
                         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a3a86f33-7457-40f3-8615-23fb164dce1e",
                         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0a170927-f726-43f7-91d9-ee1ec9dd43e5",
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a5bac162-488a-4dcc-8e69-cc954b912bb9"
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a5bac162-488a-4dcc-8e69-cc954b912bb9",
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/190b1b52-4323-4c5d-ad94-1c1c552839d4"
                       ],
                       "active": true
                     }
