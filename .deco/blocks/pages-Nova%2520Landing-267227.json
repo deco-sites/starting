@@ -782,7 +782,8 @@
               {
                 "href": "https://deco.new",
                 "text": "Try for Free",
-                "id": "bt-click-signup"
+                "id": "bt-click-signup",
+                "trackID": "bt-click-signup"
               }
             ],
             "subTitle": "<p>Universal Git-based CMS to build high performance sites, apps and <br>storefronts with Deno, HTMX, JSX and Tailwind.</p>",
