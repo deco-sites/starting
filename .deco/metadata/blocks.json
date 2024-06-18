@@ -1256,5 +1256,9 @@
   "/.deco/blocks/Preview%20%2Fsections%2FHome%2FTextHero.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Home/TextHero.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FNRF%2FDecoFooter.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/NRF/DecoFooter.tsx"
   }
 }
