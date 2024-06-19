@@ -1,6 +1,6 @@
-import Image from "deco-sites/std/components/Image.tsx";
 import { useMemo } from "preact/hooks";
 import type { Image as ImageType } from "deco-sites/std/components/types.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Image {
   label: string;
