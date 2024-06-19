@@ -46,7 +46,6 @@ export const ShowcaseEditorAccordion = ({ tabs }: Props) => {
                 alt={tab.title}
                 width={24}
                 height={24}
-                preload={index === 0 ? true : false}
               />
               <h3 className="text-white text-[18px] leading-relaxed font-semibold leading-[120%] tracking-[-0.36px]">
                 {tab.title}
@@ -78,7 +77,6 @@ export const ShowcaseEditorAccordion = ({ tabs }: Props) => {
                   alt={tab.title}
                   width={672}
                   height={449}
-                  preload={index === 0 ? true : false}
                 />
               </div>
             </div>
