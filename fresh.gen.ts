@@ -33,7 +33,6 @@ import * as $HelpFaq from "./islands/HelpFaq.tsx";
 import * as $Home_BuildShowcase from "./islands/Home/BuildShowcase.tsx";
 import * as $Home_Dropdown from "./islands/Home/Dropdown.tsx";
 import * as $Home_Header from "./islands/Home/Header.tsx";
-import * as $Home_Testimonials from "./islands/Home/Testimonials.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
 import * as $LiveProjects from "./islands/LiveProjects.tsx";
 import * as $NRF_BackgroundGrid from "./islands/NRF/BackgroundGrid.tsx";
@@ -96,7 +95,6 @@ const manifest = {
     "./islands/Home/BuildShowcase.tsx": $Home_BuildShowcase,
     "./islands/Home/Dropdown.tsx": $Home_Dropdown,
     "./islands/Home/Header.tsx": $Home_Header,
-    "./islands/Home/Testimonials.tsx": $Home_Testimonials,
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
     "./islands/LiveProjects.tsx": $LiveProjects,
     "./islands/NRF/BackgroundGrid.tsx": $NRF_BackgroundGrid,
