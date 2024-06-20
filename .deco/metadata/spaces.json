@@ -747,7 +747,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 37.3134328358209,
+                "width": 30,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -769,7 +769,7 @@
               },
               {
                 "type": "stack",
-                "width": 62.686567164179095,
+                "width": 70,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -809,7 +809,7 @@
           "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Properties::list::Properties::%7B%7D",
           "state": {
             "__signal": null,
-            "value": null
+            "value": "error"
           }
         },
         "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Preview::world::Preview::%7B%7D": {
