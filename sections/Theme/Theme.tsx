@@ -5,12 +5,13 @@
  * https://github.com/saadeghi/daisyui/blob/37bca23444bc9e4d304362c14b7088f9a08f1c74/src/docs/src/routes/theme-generator.svelte
  */
 import SiteTheme, { Font } from "apps/website/components/Theme.tsx";
+import { asset } from "$fresh/runtime.ts";
 import Color from "npm:colorjs.io";
 import { AppContext } from "site/apps/site.ts";
 import {
-  fontAlbertHref,
-  fontArgentHref,
-  styleHref,
+  FONT_ALBERT,
+  FONT_ARGENT,
+  STYLE_PATH,
 } from "site/components/GlobalTags.tsx";
 
 export interface ThemeColors {
@@ -464,11 +465,13 @@ export function Preview(props: Props) {
     </>
   );
 }
-const fonts = [
-  fontAlbertHref,
-  fontArgentHref,
-];
+
 export function loader(props: Props, _: Request, ctx: AppContext) {
+  const styleHref = asset(STYLE_PATH);
+  const fonts = [
+    asset(FONT_ALBERT),
+    asset(FONT_ARGENT),
+  ];
   ctx.response.headers.append(
     "link",
     `<${styleHref}>; rel=preload; as=style`,

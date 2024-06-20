@@ -1,12 +1,12 @@
 import { asset, Head } from "$fresh/runtime.ts";
 export const STYLE_PATH = "/styles.css";
-export const styleHref = asset(STYLE_PATH);
 export const FONT_ARGENT = "/fonts/ArgentPixelCF-Regular.woff2";
-export const fontArgentHref = asset(FONT_ARGENT);
 export const FONT_ALBERT = "/fonts/font_albert.woff2";
-export const fontAlbertHref = asset(FONT_ALBERT);
 
 export default function GlobalTags() {
+  const styleHref = asset(STYLE_PATH);
+  const fontAlbertHref = asset(FONT_ALBERT);
+  const fontArgentHref = asset(FONT_ARGENT);
   return (
     <>
       <Head>
