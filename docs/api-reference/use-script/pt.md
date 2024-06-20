@@ -9,7 +9,7 @@ A função `useScript` foi projetada para ajudar os desenvolvedores a inserir sc
 ### Importação
 
 ```typescript
-import { useScript } from "apps/utils/useScript.ts";
+import { useScript } from "deco/hooks/useScript.ts";
 ```
 
 ### Parâmetros
@@ -32,7 +32,7 @@ import { useScript } from "apps/utils/useScript.ts";
 Neste exemplo, `useScript` é usado para inserir um script simples que registra uma mensagem quando a janela é carregada.
 
 ```tsx
-import { useScript } from "apps/utils/useScript.ts";
+import { useScript } from "deco/hooks/useScript.ts";
 
 const onLoad = () => {
   console.log("Window loaded");
@@ -58,7 +58,7 @@ export default ExampleComponent;
 Neste exemplo, `useScript` é usado para criar um manipulador de eventos minificado para um atributo `hx-on:click` que altera o texto de um botão quando clicado.
 
 ```tsx
-import { useScript } from "apps/utils/useScript.ts";
+import { useScript } from "deco/hooks/useScript.ts";
 
 const onClick = () => {
   event!.currentTarget.innerText = "Clicked!";
