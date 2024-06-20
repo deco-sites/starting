@@ -6,6 +6,12 @@
  */
 import SiteTheme, { Font } from "apps/website/components/Theme.tsx";
 import Color from "npm:colorjs.io";
+import { AppContext } from "site/apps/site.ts";
+import {
+  fontAlbertHref,
+  fontArgentHref,
+  styleHref,
+} from "site/components/GlobalTags.tsx";
 
 export interface ThemeColors {
   /**
@@ -457,6 +463,25 @@ export function Preview(props: Props) {
       )}
     </>
   );
+}
+const fonts = [
+  fontAlbertHref,
+  fontArgentHref,
+];
+export function loader(props: Props, _: Request, ctx: AppContext) {
+  ctx.response.headers.append(
+    "link",
+    `<${styleHref}>; rel=preload; as=style`,
+  );
+
+  fonts.forEach((font) => {
+    ctx.response.headers.append(
+      "link",
+      `<${font}>; rel=preload; as=font; type=font/woff2; crossorigin`,
+    );
+  });
+
+  return props;
 }
 
 export default Section;
