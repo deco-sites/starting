@@ -1,5 +1,4 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Icon from "site/components/ui/Icon.tsx";
 
@@ -135,14 +134,11 @@ export default function StartingCards({
                     <div class="flex items-start gap-[2.4px] lg:gap-[5.4px]">
                       {card?.icons?.logos?.map((logo) => (
                         <span class="p-[4.8px] lg:p-[7.2px] rounded-[45px] border-[0.45px] border-[#FFFFFF36] bg-[#FFFFFF17]">
-                          <Image
+                          <img
                             class="w-[14.4px] lg:w-[19.2px]"
                             width={22}
                             src={logo}
-                            alt={logo}
-                            decoding="async"
                             loading="lazy"
-                            fetchPriority={"low"}
                           />
                         </span>
                       ))}
