@@ -134,9 +134,14 @@ export default function Testimonials({
           </h2>
         )}
       <div
-        class={`overflow-hidden max-h-[800px] [&>input:checked]:max-h-[auto] lg:max-h-[auto]`}
+        class={`overflow-hidden max-h-[800px] [&:has(input:checked)]:max-h-[unset] lg:max-h-[unset]`}
       >
-        <input type="checkbox" class="hidden peer" />
+        <input
+          id="collapse-testimonials"
+          name="collapse-testimonials"
+          type="checkbox"
+          class="hidden peer"
+        />
         <div class="columns-1 md:columns-2 lg:columns-3 gap-8 w-full">
           {testimonials?.map((testimonial) => (
             <a href={testimonial.href}>
@@ -178,21 +183,27 @@ export default function Testimonials({
           ))}
         </div>
         <div class="w-full p-[48px] pt-[24px] hidden peer-checked:flex lg:hidden">
-          <button class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]">
+          <label
+            for="collapse-testimonials"
+            class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]"
+          >
             {showLessLabel}
-          </button>
+          </label>
         </div>
-      </div>
-      <div
-        class="w-full p-[48px] flex absolute bottom-0 mb-14 peer-checked:hidden lg:hidden"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(255,255,255,0) 0%, #030806 85%)",
-        }}
-      >
-        <button class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]">
-          {showMoreLabel}
-        </button>
+        <div
+          class="w-full p-[48px] flex absolute bottom-0 mb-14 peer-checked:hidden lg:hidden"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(255,255,255,0) 0%, #030806 85%)",
+          }}
+        >
+          <label
+            for="collapse-testimonials"
+            class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]"
+          >
+            {showMoreLabel}
+          </label>
+        </div>
       </div>
     </div>
   );
