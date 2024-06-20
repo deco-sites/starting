@@ -4,7 +4,7 @@ description: Create pages on deco.cx with no need to code
 
 Now we will create a new page to your site. The process is very simple:
 
-## 1. Access the Pages space
+## 1. Access the Pages tab
 
 **Pages** have a dedicated space in deco.cx's Admin and you can access it via
 the side bar.
@@ -45,18 +45,23 @@ To add a new component to the page, click on the Add Sections button in the edit
 > If you want to develop/code a new Section, check our
 > [Developing Guide](/docs/en/developing/setup).
 
-Here, we will select the Hero section. After the selection, we can see the form where we can edit its properties.
+Here, we will select the Hero section. 
+
+![Hero section](/docs/getting-started/creating-a-new-page/hero.png)
+
+After the selection, we can see the form where we can edit its properties.
+These properties are obtained from the TypeScript props of that section.
 
 ![Section Form](/docs/getting-started/creating-a-new-page/section-form.png)
 
 > Note: The example you see above is of a reusable block, which is a global resource that can be used by other pages. This is why you cannot edit this section unless you detach it to change only on that page or edit it in a new space (which will affect all pages that use it).
 
-If the page has been published before, the Publish modal will offer you the
-option to A/B test the new revision.
+Let's detach the section to edit its properties for that page.
+We will change the Title in the Title property. As you make changes, the preview will 
+update in real-time to show you how the section will look with the new property values.
 
-## Variants
+![Changing Section](/docs/getting-started/creating-a-new-page/changing-section.png)
 
-Besides A/B testing, which randomizes which users see the new content, it's
-possible to segment and personalize content in deco.cx using other factors like
-user's location, device and more.
-[Read more about Variants here](/docs/en/getting-started/variants).
+Each component may have different properties that can be customized. 
+These properties are defined in the code of the section and can be 
+accessed through the props object.

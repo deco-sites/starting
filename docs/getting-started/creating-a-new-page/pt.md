@@ -4,7 +4,7 @@ description: Aprenda como criar páginas na deco.cx sem precisar de código
 
 Agora vamos criar uma nova página para o seu site. O processo é muito simples:
 
-## 1. Acesse o space de Páginas
+## 1. Acesse a aba de Páginas
 
 Páginas têm um space dedicado no Admin do Deco.cx, acessível pela barra lateral.
 
@@ -45,19 +45,23 @@ Para adicionar um novo componente à página, clique no botão "Adicionar Seçõ
 > Se você deseja desenvolver/codar uma nova seção, consulte nosso
 > [Guia de desenvolvimento](/docs/pt/developing/setup).
 
-Vamos selecionar a seção Hero. Após a seleção, podemos ver o formulário onde podemos editar 
-as propriedades da seção.
+Vamos selecionar a seção Hero. 
+
+![Seção Hero](/docs/getting-started/creating-a-new-page/hero.png)
+
+Após a seleção, podemos ver o formulário onde podemos editar suas propriedades.
+Essas propriedades são obtidas a partir das props do TypeScript dessa seção.
 
 ![Formulário da Seção](/docs/getting-started/creating-a-new-page/section-form.png)
 
-> Obs.: O exemplo acima é de um bloco reutilizável, que é um recurso global que pode ser usado por outras páginas. Por isso, você não pode editar essa seção a menos que a separe para mudar apenas naquela página ou edite em um novo espaço (o que afetará todas as páginas que a utilizam).
+> Nota: O exemplo que você vê acima é de um bloco reutilizável, que é um recurso global que pode ser usado por outras páginas. Por isso, você não pode editar essa seção a menos que a desanexe para alterar apenas nessa página ou a edite em um novo espaço (o que afetará todas as páginas que a utilizam).
 
-Se a página foi publicada anteriormente, o modal Publish oferecerá a opção de
-testar A/B a nova revisão.
+Vamos desanexar a seção para editar suas propriedades para essa página.
+Vamos mudar o Título na propriedade Title. À medida que você faz alterações, a pré-visualização será
+atualizada em tempo real para mostrar como a seção ficará com os novos valores de propriedade.
 
-## Variantes
+![Mudando a Seção](/docs/getting-started/creating-a-new-page/changing-section.png)
 
-Além do teste A/B, que randomiza quais usuários veem o novo conteúdo, é possível
-segmentar e personalizar o conteúdo no deco.cx usando outros fatores como
-localização, dispositivo e mais.
-[Leia sobre variantes aqui](/docs/pt/getting-started/variants).
+Cada componente pode ter diferentes propriedades que podem ser personalizadas.
+Essas propriedades são definidas no código da seção e podem ser
+acessadas através do objeto props.

@@ -11,9 +11,9 @@ Vá para o [Deco Admin](https://admin.deco.cx/spaces/new) e escolha um template 
 
 ![Escolhendo um template](/docs/getting-started/creating-site/choose-template.png)
 
-## 2. Explore e Edite o Template
+## 2. Explore o Template
 
-Explore os componentes do template e faça edições usando a pré-visualização ao vivo. Depois de escolher o template que melhor se adapta ao site que você quer criar, você será redirecionado para o editor do site. Aqui, você pode modificar o conteúdo, estrutura e configurações do seu site.
+Explore os componentes do template e faça edições usando a pré-visualização ao vivo. Depois de escolher o template que melhor se adapta ao site que você quer criar, você será redirecionado para o editor do site. Aqui, você pode modificar o conteúdo e estrutura do site.
 
 ![Editando um site](/docs/getting-started/creating-site/site-editor.png)
 
