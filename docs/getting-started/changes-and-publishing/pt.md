@@ -11,28 +11,47 @@ Quando você cria e salva seu site pela primeira vez, você estará no ambiente 
 
 ![Ambiente de Staging](/docs/getting-started/changing-and-publishing/staging-env.png)
 
-Vamos dar uma olhada nas alterações que fizemos neste ambiente. Clique no menu dropdown e selecione a opção de staging. Você verá esta página, mostrando o que foi alterado em comparação com o site em produção. No nosso caso, adicionamos uma nova página com algumas seções.
+Vamos dar uma olhada nas mudanças que fizemos neste ambiente. Clique no dropdown e selecione a opção staging. 
+Você verá esta página, mostrando o que foi alterado em comparação com o site em produção. 
+No nosso caso, adicionamos uma nova página com algumas seções. Essa diferença é exibida via JSON, 
+que representa o estado do site de forma estruturada.
 
-![Alterações no Ambiente](/docs/getting-started/changing-and-publishing/env-changes.png)
+![Mudanças no Ambiente](/docs/getting-started/changing-and-publishing/env-changes.png)
 
-A partir daqui, podemos publicar nossas alterações para produção clicando no botão "Publicar agora" ou no botão "Publicar" ao lado do dropdown do ambiente.
+A partir daqui, você pode publicar nossas mudanças para a produção clicando no botão "Publicar agora" ou no botão "Publicar" ao lado do dropdown do ambiente.
 
 ## Criar Ambientes
 
-Além do ambiente de staging, podemos criar ambientes adicionais. Isso é útil para isolar trabalhos diferentes de usuários diferentes, para que cada um possa criar seu próprio ambiente e trabalhar nele sem afetar os outros ou o site ao vivo.
+Além do ambiente de staging, você pode criar ambientes adicionais. Isso é útil para isolar trabalhos diferentes de usuários diferentes, permitindo que cada um crie seu próprio ambiente e trabalhe nele sem afetar os outros ou o site ao vivo.
 
-Para criar um novo ambiente, clique no link "Ver todos" no dropdown do ambiente ou clique na aba Releases.
+### 1. Ver Todos os Ambientes
 
-![Acessar Página de Releases](/docs/getting-started/changing-and-publishing/open-releases-tab.png)
+Clique no link "Ver todos" no dropdown do ambiente ou vá para a aba Lançamentos. Isso abrirá a Página de Lançamentos, onde você pode ver todos os ambientes criados para o seu site, bem como os lançamentos publicados.
 
-Isso abrirá a Página de Releases, onde você pode clicar no botão "Novo ambiente".
+![Acessar Página de Lançamentos](/docs/getting-started/changing-and-publishing/open-releases-tab.png)
+
+### 2. Criar um Novo Ambiente
+
+Clique no botão "Novo ambiente".
 
 ![Botão Novo Ambiente](/docs/getting-started/changing-and-publishing/new-env-btn.png)
 
-Escolha um nome para seu ambiente e selecione a opção Web para o host. Veremos sobre a [opção localhost](/docs/getting-started/developing/setup) mais tarde.
+### 3. Escolher um Nome e um Host
+
+Escolha um nome para o seu ambiente e selecione a opção Web para o host. Vamos discutir a [opção localhost](/docs/getting-started/developing/setup) mais tarde.
 
 ![Formulário Novo Ambiente](/docs/getting-started/changing-and-publishing/creating-new-env.png)
 
-É isso aí! Agora você tem seu próprio ambiente e espaço de trabalho isolado para fazer alterações no seu site, e quando estiver pronto para lançar, pode publicar da mesma forma que fez com o ambiente de staging.
+Pronto! Agora você tem seu próprio ambiente e espaço de trabalho isolado para fazer mudanças no seu site. Quando estiver pronto para ir ao ar, você pode publicar da mesma forma que fez com o ambiente de staging.
 
 ![Novo Ambiente Criado](/docs/getting-started/changing-and-publishing/env-created.png)
+
+### 4. Rebaseando suas Alterações
+
+Ao publicar com múltiplos ambientes, pode ser necessário mesclar suas alterações com as feitas em outros ambientes. Por exemplo, se você estiver editando seu site no seu novo ambiente, `maria`, enquanto um colega estiver editando no ambiente `staging`, e seu colega publicar suas mudanças, você precisará rebasear seu ambiente para incorporar as novas mudanças que agora estão em produção.
+
+Nesse cenário, em vez de ver o botão "Publicar agora" na página de Lançamentos, você verá um botão "Rebase", como mostrado abaixo.
+
+![Rebase no ambiente](/docs/getting-started/changing-and-publishing/rebase.png)
+
+Clique neste botão para incorporar as mudanças de produção no seu ambiente. Depois de rebasear, você pode publicar suas alterações clicando no botão "Publicar agora".
