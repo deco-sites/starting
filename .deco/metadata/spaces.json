@@ -747,23 +747,34 @@
             "content": [
               {
                 "type": "stack",
-                "width": 29.454418740091107,
+                "width": 30,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
-                "activeItemIndex": 1,
+                "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Properties::list::Properties::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Properties::list::Properties::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Properties::list::Properties::%7B%7D"
                     },
                     "isClosable": true,
-                    "reorderEnabled": true
-                  },
+                    "reorderEnabled": true,
+                    "width": 30
+                  }
+                ]
+              },
+              {
+                "type": "stack",
+                "width": 70,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
                   {
                     "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Preview::world::Preview::%7B%7D",
                     "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Preview::world::Preview::%7B%7D\" />",
@@ -773,92 +784,8 @@
                       "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Preview::world::Preview::%7B%7D"
                     },
                     "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 23.722942714003445,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.css%22%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.css%22%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.css%22%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 23.291224404426014,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Terminal::terminal::Terminal::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Terminal::terminal::Terminal::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Terminal::terminal::Terminal::%7B%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  }
-                ]
-              },
-              {
-                "type": "stack",
-                "width": 23.53141414147944,
-                "isClosable": true,
-                "reorderEnabled": true,
-                "title": "",
-                "activeItemIndex": 0,
-                "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2FGlobalTags.tsx%22%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2FGlobalTags.tsx%22%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2FGlobalTags.tsx%22%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  },
-                  {
-                    "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Froutes%2F_app.tsx%22%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Froutes%2F_app.tsx%22%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Froutes%2F_app.tsx%22%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  },
-                  {
-                    "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.config.ts%22%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.config.ts%22%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.config.ts%22%7D"
-                    },
-                    "isClosable": true,
-                    "reorderEnabled": true
+                    "reorderEnabled": true,
+                    "width": 70
                   }
                 ]
               }
@@ -872,84 +799,6 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D": {
-          "name": "JSON Properties",
-          "icon": "braces",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "JSON Properties",
-          "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::JSON%20Properties::braces::JSON%20Properties::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        },
-        "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.css%22%7D": {
-          "name": "Code",
-          "icon": "code",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Code",
-          "viewProps": {
-            "spaceId": "/tailwind.css"
-          },
-          "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.css%22%7D",
-          "state": {
-            "__signal": "error"
-          }
-        },
-        "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Terminal::terminal::Terminal::%7B%7D": {
-          "name": "Terminal",
-          "icon": "terminal",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Terminal",
-          "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Terminal::terminal::Terminal::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        },
-        "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.config.ts%22%7D": {
-          "name": "Code",
-          "icon": "code",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Code",
-          "viewProps": {
-            "spaceId": "/tailwind.config.ts"
-          },
-          "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Ftailwind.config.ts%22%7D",
-          "state": {
-            "__signal": "error"
-          }
-        },
-        "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Froutes%2F_app.tsx%22%7D": {
-          "name": "Code",
-          "icon": "code",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Code",
-          "viewProps": {
-            "spaceId": "/routes/_app.tsx"
-          },
-          "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Froutes%2F_app.tsx%22%7D",
-          "state": {
-            "__signal": "error"
-          }
-        },
-        "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2FGlobalTags.tsx%22%7D": {
-          "name": "Code",
-          "icon": "code",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Code",
-          "viewProps": {
-            "spaceId": "/components/GlobalTags.tsx"
-          },
-          "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Code::code::Code::%7B%22spaceId%22%3A%22%2Fcomponents%2FGlobalTags.tsx%22%7D",
-          "state": {
-            "__signal": "error"
-          }
-        },
         "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Preview::world::Preview::%7B%7D": {
           "name": "Preview",
           "icon": "world",
@@ -959,6 +808,20 @@
           "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Preview::world::Preview::%7B%7D",
           "state": {
             "__signal": null
+          },
+          "width": 70
+        },
+        "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Properties::list::Properties::%7B%7D": {
+          "name": "Properties",
+          "icon": "list",
+          "accepts": "function",
+          "render": "function",
+          "viewId": "Properties",
+          "width": 30,
+          "id": "%2F.deco%2Fblocks%2Fpages-Nova%252520Landing-267227.json::Properties::list::Properties::%7B%7D",
+          "state": {
+            "__signal": null,
+            "value": null
           }
         }
       }
@@ -4943,25 +4806,33 @@
         },
         "content": [
           {
-            "type": "stack",
+            "type": "row",
             "isClosable": true,
             "reorderEnabled": true,
             "title": "",
             "content": [
               {
-                "type": "component",
+                "type": "stack",
+                "width": 100,
                 "isClosable": true,
                 "reorderEnabled": true,
-                "title": "<div class=\"contents text-base-700\" id=\"header-Publish::Environment::rocket::Environment::%7B%7D\" />",
-                "id": "Publish::Environment::rocket::Environment::%7B%7D",
-                "componentName": "component",
-                "componentState": {
-                  "id": "Publish::Environment::rocket::Environment::%7B%7D"
-                }
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "Publish::Environment::rocket::Environment::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-Publish::Environment::rocket::Environment::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "Publish::Environment::rocket::Environment::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
               }
-            ],
-            "width": 100,
-            "activeItemIndex": 0
+            ]
           }
         ],
         "isClosable": true,

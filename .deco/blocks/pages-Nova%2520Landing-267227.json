@@ -960,114 +960,55 @@
                 "title": "<p> </p>"
               },
               {
-                "__resolveType": "website/flags/multivariate/section.ts",
-                "variants": [
+                "__resolveType": "site/sections/Home/BuildShowcase.tsx",
+                "title": "<p>Everything You Need to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span></p>",
+                "tabs": [
                   {
-                    "value": {
-                      "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                      "title": "<p>Everything You Need to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span></p>",
-                      "tabs": [
-                        {
-                          "title": "CMS with Visual Editor",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a7933919-5f38-4055-83fc-830ca29fe3ab",
-                          "description": "Easily edit content using a visual CMS with real-time preview and real-time collaboration.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
-                        },
-                        {
-                          "title": "Automatic content extraction from TS",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4716aca7-9cc1-4f76-8099-89082d7a5573",
-                          "description": "\"export interface Props\" becomes an easily editable form to give marketers the freedom to update content.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
-                        },
-                        {
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5fcf67e5-475a-4553-a0fb-b9930115fd49",
-                          "title": "In-browser Web IDE",
-                          "description": "Integrated code editor made for React, Tailwind and TypeScript. Directly edit in browser & sync with a Git repository.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
-                        },
-                        {
-                          "title": "deco.pilot",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/96200ebc-bb33-4f11-9c26-85b68961c743",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
-                          "description": "AI assistant for code and content generation to help you get site done faster.",
-                          "label": {
-                            "name": "NEW!",
-                            "color": "#02F67C"
-                          }
-                        },
-                        {
-                          "title": "One-click install apps & integrations",
-                          "description": "Leverage a rich library of applications, themes, and templates that connect to any API and third-party data sources.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2436533f-d50a-4df8-97c7-cd176dece311"
-                        },
-                        {
-                          "title": "Modern Stack",
-                          "description": "Based on an efficient, secure and future-proof stack: Deno, Tailwind, JSX, TypeScript & HTMX.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/32a543e5-ae46-48c8-bcfe-041d86eec2b2",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c80fd09d-36a2-43f1-b9e2-e575115338cc"
-                        }
-                      ],
-                      "trackId": "1"
+                    "title": "CMS with Visual Editor",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a7933919-5f38-4055-83fc-830ca29fe3ab",
+                    "description": "Easily edit content using a visual CMS with real-time preview and real-time collaboration.",
+                    "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
+                  },
+                  {
+                    "title": "Automatic content extraction from TS",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4716aca7-9cc1-4f76-8099-89082d7a5573",
+                    "description": "\"export interface Props\" becomes an easily editable form to give marketers the freedom to update content.",
+                    "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
+                  },
+                  {
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5fcf67e5-475a-4553-a0fb-b9930115fd49",
+                    "title": "In-browser Web IDE",
+                    "description": "Integrated code editor made for React, Tailwind and TypeScript. Directly edit in browser & sync with a Git repository.",
+                    "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
+                  },
+                  {
+                    "title": "deco.pilot",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/96200ebc-bb33-4f11-9c26-85b68961c743",
+                    "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
+                    "description": "AI assistant for code and content generation to help you get site done faster.",
+                    "label": {
+                      "name": "NEW!",
+                      "color": "#02F67C"
                     }
                   },
                   {
-                    "value": {
-                      "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                      "title": "<p>Everything You Need to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span></p>",
-                      "tabs": [
-                        {
-                          "title": "CMS with Visual Editor",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a7933919-5f38-4055-83fc-830ca29fe3ab",
-                          "description": "Easily edit content using a visual CMS with real-time preview and real-time collaboration.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
-                        },
-                        {
-                          "title": "Automatic content extraction from TS",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4716aca7-9cc1-4f76-8099-89082d7a5573",
-                          "description": "\"export interface Props\" becomes an easily editable form to give marketers the freedom to update content.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
-                        },
-                        {
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5fcf67e5-475a-4553-a0fb-b9930115fd49",
-                          "title": "In-browser Web IDE",
-                          "description": "Integrated code editor made for React, Tailwind and TypeScript. Directly edit in browser & sync with a Git repository.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/536946cb-924f-4934-a769-615e589f691f"
-                        },
-                        {
-                          "title": "deco.pilot",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/96200ebc-bb33-4f11-9c26-85b68961c743",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16c84e9d-3cca-4f2a-84d9-ddb230b47c2f",
-                          "description": "AI assistant for code and content generation to help you get site done faster.",
-                          "label": {
-                            "name": "NEW!",
-                            "color": "#02F67C"
-                          }
-                        },
-                        {
-                          "title": "One-click install apps & integrations",
-                          "description": "Leverage a rich library of applications, themes, and templates that connect to any API and third-party data sources.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2436533f-d50a-4df8-97c7-cd176dece311"
-                        },
-                        {
-                          "title": "Modern Stack",
-                          "description": "Based on an efficient, secure and future-proof stack: Deno, Tailwind, JSX, TypeScript & HTMX.",
-                          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/32a543e5-ae46-48c8-bcfe-041d86eec2b2",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c80fd09d-36a2-43f1-b9e2-e575115338cc"
-                        }
-                      ],
-                      "trackId": "1"
-                    },
-                    "rule": {
-                      "__resolveType": "website/matchers/always.ts"
-                    }
+                    "title": "One-click install apps & integrations",
+                    "description": "Leverage a rich library of applications, themes, and templates that connect to any API and third-party data sources.",
+                    "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2436533f-d50a-4df8-97c7-cd176dece311"
+                  },
+                  {
+                    "title": "Modern Stack",
+                    "description": "Based on an efficient, secure and future-proof stack: Deno, Tailwind, JSX, TypeScript & HTMX.",
+                    "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/32a543e5-ae46-48c8-bcfe-041d86eec2b2",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c80fd09d-36a2-43f1-b9e2-e575115338cc"
                   }
-                ]
+                ],
+                "trackId": "1"
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p>Evolve Your Business Continuously</p>",
+                "title": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> Your Business Continuously</p>",
                 "tabs": [
                   {
                     "title": "Advanced SEO settings",
