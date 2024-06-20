@@ -790,8 +790,8 @@
             "shouldAddPaddingTopAndBottom": true,
             "title": "<p>Build Profitable Websites</p>",
             "alert": {
-              "text": "Hackathon 5: Transform ideas into ultra-fast htmx templates",
-              "mobileText": "Hackathon 5: Ideas to ultra-fast htmx templates",
+              "text": "Hackathon 5: Transform Ideas into Ultra-Fast HTMX Templates",
+              "mobileText": "Hackathon 5: HTMX Edition",
               "href": "https://deco.cx/hackathon5",
               "readMoreText": "Read More"
             }
