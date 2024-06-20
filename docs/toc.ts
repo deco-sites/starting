@@ -639,6 +639,13 @@ const tableOfContents: TableOfContents = [
         },
         slug: "api-reference/use-section",
       },
+      {
+        title: {
+          pt: "useScript",
+          en: "useScript",
+        },
+        slug: "api-reference/use-script",
+      },
     ],
   },
   {
