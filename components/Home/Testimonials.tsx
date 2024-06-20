@@ -1,6 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { useEffect, useState } from "preact/hooks";
 
 export interface Testimonial {
   image: ImageWidget;
@@ -122,29 +121,8 @@ export default function Testimonials({
   showMoreLabel = "SHOW MORE",
   showLessLabel = "SHOW LESS",
 }: Props) {
-  const [isMobile, setIsMobile] = useState(false);
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(globalThis.window.innerWidth <= 1024);
-    };
-
-    checkIsMobile();
-
-    const handleResize = () => {
-      checkIsMobile();
-    };
-
-    addEventListener("resize", handleResize);
-
-    return () => {
-      removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
-    <div class="relative lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-14 lg:py-40 lg:px-0 flex flex-col gap-20 justify-center items-center">
+    <div class="relative lg:mx-auto lg:max-w-[1440px] z-10 px-4 py-14 lg:py-40 lg:px-0 flex flex-col gap-20 justify-center items-center">
       {title &&
         (
           <h2
@@ -156,10 +134,9 @@ export default function Testimonials({
           </h2>
         )}
       <div
-        class={`overflow-hidden lg:max-h-[auto] ${
-          isMobile ? (show ? "max-h-[auto]" : "max-h-[800px]") : "max-h-[auto]"
-        }`}
+        class={`overflow-hidden max-h-[800px] [&>input:checked]:max-h-[auto] lg:max-h-[auto]`}
       >
+        <input type="checkbox" class="hidden peer" />
         <div class="columns-1 md:columns-2 lg:columns-3 gap-8 w-full">
           {testimonials?.map((testimonial) => (
             <a href={testimonial.href}>
@@ -200,35 +177,23 @@ export default function Testimonials({
             </a>
           ))}
         </div>
-        {isMobile && show &&
-          (
-            <div class="w-full p-[48px] pt-[24px] flex">
-              <button
-                onClick={() => setShow(false)}
-                class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]"
-              >
-                {showLessLabel}
-              </button>
-            </div>
-          )}
+        <div class="w-full p-[48px] pt-[24px] hidden peer-checked:flex lg:hidden">
+          <button class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]">
+            {showLessLabel}
+          </button>
+        </div>
       </div>
-      {isMobile && !show &&
-        (
-          <div
-            class="w-full p-[48px] flex absolute bottom-0 mb-14"
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(255,255,255,0) 0%, #030806 85%)",
-            }}
-          >
-            <button
-              onClick={() => setShow(true)}
-              class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]"
-            >
-              {showMoreLabel}
-            </button>
-          </div>
-        )}
+      <div
+        class="w-full p-[48px] flex absolute bottom-0 mb-14 peer-checked:hidden lg:hidden"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(255,255,255,0) 0%, #030806 85%)",
+        }}
+      >
+        <button class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]">
+          {showMoreLabel}
+        </button>
+      </div>
     </div>
   );
 }
