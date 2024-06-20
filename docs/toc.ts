@@ -19,23 +19,22 @@ const tableOfContents: TableOfContents = [
         slug: "getting-started/creating-a-site",
       },
       {
-        title: { pt: "Atualizando o SEO", en: "Updating SEO" },
-        slug: "getting-started/updating-seo",
-      },
-      {
         title: { pt: "Criando uma nova Página", en: "Creating a new Page" },
         slug: "getting-started/creating-a-new-page",
-      }, // TODO
-      // {
-      //   title: { pt: "Reusando Seções", en: "Reusing Sections" },
-      //   slug: "getting-started/reusing-sections",
-      // },
+      },
       {
         title: {
-          pt: "Segmentação de Conteúdo",
-          en: "Segmenting Content with Variants",
+          pt: "Gerenciando mudanças e publicando",
+          en: "Managing changes and publishing",
         },
-        slug: "getting-started/variants",
+        slug: "getting-started/changes-and-publishing",
+      },
+      {
+        title: {
+          pt: "Adicionando um blog ao seu site",
+          en: "Adding a blog to your site",
+        },
+        slug: "getting-started/adding-a-blog",
       },
       {
         title: {
@@ -53,97 +52,35 @@ const tableOfContents: TableOfContents = [
           },
         ],
       },
+    ],
+  },
+  {
+    title: { pt: "Funcionalidades do CMS", en: "CMS capabilities" },
+    children: [
+      {
+        title: { pt: "Atualizando o SEO", en: "Updating SEO" },
+        slug: "cms-capabilities/updating-seo",
+      },
+      {
+        title: {
+          pt: "Segmentação de Conteúdo",
+          en: "Segmenting Content with Variants",
+        },
+        slug: "cms-capabilities/variants",
+      },
       {
         title: {
           pt: "Criando Redirecionamentos e Proxies",
           en: "Adding Proxies and Redirects",
         },
-        slug: "getting-started/proxy-redirects",
-      },
-      {
-        title: {
-          pt: "Criando rascunhos e Restaurando versões",
-          en: "Creating drafts and Restoring versions",
-        },
-        slug: "getting-started/releases-revisions",
-      },
-      {
-        title: {
-          pt: "Instalando Apps",
-          en: "Installing Apps",
-        },
-        slug: "getting-started/installing-an-app",
+        slug: "cms-capabilities/proxy-redirects",
       },
     ],
   },
   {
     title: {
-      pt: "Conceitos",
-      en: "Concepts",
-    },
-    children: [
-      {
-        title: {
-          pt: "Block",
-          en: "Block",
-        },
-        slug: "concepts/block",
-      },
-      {
-        title: {
-          pt: "Section",
-          en: "Section",
-        },
-        slug: "concepts/section",
-      },
-      {
-        title: {
-          pt: "Loader",
-          en: "Loader",
-        },
-        slug: "concepts/loader",
-      },
-      {
-        title: {
-          pt: "Action",
-          en: "Action",
-        },
-        slug: "concepts/action",
-      },
-      {
-        title: {
-          pt: "Page",
-          en: "Page",
-        },
-        slug: "concepts/page",
-      },
-      {
-        title: {
-          pt: "Matcher",
-          en: "Matcher",
-        },
-        slug: "concepts/matcher",
-      },
-      {
-        title: {
-          pt: "Segment",
-          en: "Segment",
-        },
-        slug: "concepts/segment",
-      },
-      {
-        title: {
-          pt: "App",
-          en: "App",
-        },
-        slug: "concepts/app",
-      },
-    ],
-  },
-  {
-    title: {
-      pt: "Desenvolvendo novas funcionalidades",
-      en: "Developing new capabilities",
+      pt: "Guia de Desenvolvimento",
+      en: "Developing guide",
     },
     children: [
       {
@@ -289,8 +226,8 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
-      pt: "Referência",
-      en: "Reference",
+      pt: "Funcionalidades de Desenvolvimento",
+      en: "Development capabilities",
     },
     children: [
       {
@@ -328,6 +265,27 @@ const tableOfContents: TableOfContents = [
           en: "Widgets",
         },
         slug: "reference/widgets",
+      },
+      {
+        title: {
+          pt: "Dados padronizados",
+          en: "Standard data types",
+        },
+        slug: "composable-uis/standard-data-types",
+      },
+      {
+        title: {
+          pt: "Biblioteca de blocos",
+          en: "Block Library",
+        },
+        slug: "composable-uis/block-library",
+      },
+      {
+        title: {
+          pt: "E-commerce",
+          en: "E-commerce",
+        },
+        slug: "composable-uis/ecommerce",
       },
 
       {
@@ -442,37 +400,8 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
-      pt: "Criando componentes reutilizáveis",
-      en: "Creating composable UIs",
-    },
-    children: [
-      {
-        title: {
-          pt: "Dados padronizados",
-          en: "Standard data types",
-        },
-        slug: "composable-uis/standard-data-types",
-      },
-      {
-        title: {
-          pt: "Biblioteca de blocos",
-          en: "Block Library",
-        },
-        slug: "composable-uis/block-library",
-      },
-      {
-        title: {
-          pt: "E-commerce",
-          en: "E-commerce",
-        },
-        slug: "composable-uis/ecommerce",
-      },
-    ],
-  },
-  {
-    title: {
-      pt: "External SDKs",
-      en: "External SDKs",
+      pt: "Funcionalidades da Plataforma",
+      en: "Platform capabilities",
     },
     children: [
       {
@@ -487,10 +416,18 @@ const tableOfContents: TableOfContents = [
           pt: "Feature Flags",
           en: "Feature Flags",
         },
-        slug: "sdk/feature-flags",
+        slug: "sdk/feature-flags"
       },
-    ],
+      {
+        title: {
+          pt: "CMS Headless",
+          en: "Headless CMS",
+        },
+        slug: "headless-cms",
+      }
+    ]
   },
+  /*
   {
     title: {
       pt: "Deco Hub",
@@ -541,7 +478,7 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
-  /*{
+  {
     title: {
       pt: "Treinamento Comercial",
     },
@@ -647,14 +584,7 @@ const tableOfContents: TableOfContents = [
         slug: "api-reference/use-script",
       },
     ],
-  },
-  {
-    title: {
-      pt: "CMS Headless",
-      en: "Headless CMS",
-    },
-    slug: "headless-cms",
-  },
+  }
 ];
 
 if (import.meta.main) {

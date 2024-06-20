@@ -28,16 +28,16 @@ Apex domain is not lost.
 
 3 - Enter your apex domain (without subdomain):
 
-![Domain step](/docs/getting-started/custom-domains/apex-domain.png)
+![Domain step](https://github.com/deco-cx/apps/assets/76620866/85b1bcd5-5dec-4a61-bb0b-635e0b8a3d3a)
 
 4 - Define which subdomain to redirect to:
 
-![Sudomain step](/docs/getting-started/custom-domains/subdomain.png)
+![Sudomain step](https://github.com/deco-cx/apps/assets/76620866/ab92d6cb-ef08-4f98-a0e5-b241f932722d)
 
 5 - Now, you will see the settings that must be made in your domain hosting
 platform:
 
-![DNS Setup](/docs/getting-started/custom-domains/validate-apex.png)
+![DNS Setup](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/70b54756-44d8-431b-9fba-2c533863541d)
 
 6 - After making the configurations, click on Validate Domain.
 

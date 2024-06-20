@@ -28,16 +28,16 @@ domínio Apex não sejam perdidos.
 
 3 - Insira o seu domínio apex (sem subdomínio):
 
-![Domain step](/docs/getting-started/custom-domains/apex-domain.png)
+![Domain step](https://github.com/deco-cx/apps/assets/76620866/85b1bcd5-5dec-4a61-bb0b-635e0b8a3d3a)
 
 4 - Defina para qual subdomínio redirecionar:
 
-![Sudomain step](/docs/getting-started/custom-domains/subdomain.png)
+![Sudomain step](https://github.com/deco-cx/apps/assets/76620866/ab92d6cb-ef08-4f98-a0e5-b241f932722d)
 
 5 - Agora, você verá os apontamentos que devem ser feitos na sua plataforma de
 hospedagem de domínio:
 
-![DNS Setup](/docs/getting-started/custom-domains/validate-apex.png)
+![DNS Setup](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/70b54756-44d8-431b-9fba-2c533863541d)
 
 6 - Após realizar as configurações, clique em Validar Domínio.
 

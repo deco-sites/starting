@@ -3,37 +3,43 @@ description: |
    Step-by-step on how to create a Site on deco.cx
 ---
 
-## Prerequisites
+This documentation will guide you through the process of creating and setting up your first site using Deco.cx. 
+A Deco site is the primary asset for Deco users, serving as the hub for creating, editing, and managing their own space on the web.
 
-- Read deco.cx's [**Overview**](/docs/en/overview).
+## 1. Select a Template
 
-> You can always ask for help or more info on our
-> [discord server](https://deco.cx/discord)!
+Go to the [Deco Admin](https://admin.deco.cx/spaces/new) and select a template to start. In this example, we will choose the landing template, which has the structure and components common to landing pages.
 
-## Create a deco.cx website
+![Choosing a template](/docs/getting-started/creating-site/choose-template.png)
 
-1. Login/Signup on [Deco Admin](https://admin.deco.cx/).
-2. Choose your site's template.
-3. Set a name for your site.
-4. Set a name for your team.
-5. Click on **+ Create Site**.
-6. **Important:** Select the **Start** template.
-7. Click on **Create**.
+## 2. Explore the Template
 
-![Template selection](https://github.com/deco-sites/storefront/assets/882438/4c4323ec-2aec-4b08-a523-32f0761c8a36)
+Explore the template components and edit them using the live preview. After selecting the template that best fits the site you want to create, you'll be redirected to the website editor. Here, you can modify the site content and structure.
 
-The site creation process will start and, after it finished, you'll see the
-site's dashboard:
+![Edit a site](/docs/getting-started/creating-site/site-editor.png)
 
-![Site Dashboard on deco.cx](https://github.com/deco-cx/apps/assets/882438/cac4147f-b013-40ca-bf68-e28ab40e831a)
+## 3. Save Your Site
 
-## Navigating on your site
+Your site will not be yours until you save it to your team! Click on the "Save site to your team" button in the top right corner of the admin page to claim ownership of the site.
 
-You can see your site's URL right below your site name. This URL is public and
-the site is already online.
+![Save site to your team](/docs/getting-started/creating-site/save-site-btn.png)
 
-You should see something similar to `https://deco-sites-start.deno.dev`, which
+You should see something similar to `https://deco-sites-landing.deno.dev/`, which
 was the template chosen in the creation process.
 
-> deco.cx is free up until 5.000 page view/visits per month. Check our
-> [Pricing](https://www.deco.cx/en/pricing) for more info.
+### 3.1. Log into the Platform
+### 3.2. Give a Name to Your Site and Choose a Team
+
+![Choosing a name and a team to save site](/docs/getting-started/creating-site/save-site.png)
+
+If you do not have a team yet, one will be created with a name of your choice:
+
+![Choosing a name and a team that you'll create](/docs/getting-started/creating-site/save-site-and-team.png)
+
+Deco will set up configurations and deploy your site according to the template you chose and the changes you made before saving. Within less than 5 minutes, you'll have a website to call your own.
+
+## 4. Congratulations! You've Created Your First Deco Site
+
+![Site Home](/docs/getting-started/creating-site/site-home.png)
+
+That's it! Now you can edit your site as you wish. Don't forget to follow the next tutorials to discover more features and capabilities of Deco.cx.

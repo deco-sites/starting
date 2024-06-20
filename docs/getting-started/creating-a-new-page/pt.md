@@ -2,21 +2,23 @@
 description: Aprenda como criar páginas na deco.cx sem precisar de código
 ---
 
-Você deve estar familiarizado com os conceitos básicos de
-[Blocks](/docs/pt/concepts/blocks) e [Section](/docs/pt/concepts/sections) e
-agora vamos entender como usá-los para criar páginas em um site deco.cx.
+Agora vamos criar uma nova página para o seu site. O processo é muito simples:
 
-![Criando páginas](/docs/creating-new-page/pages-menu-pt.png)
+## 1. Acesse a aba de Páginas
 
-Clique em **Páginas** no menu superior e você poderá ver todas as páginas
-publicadas no site, juntamente com o _path_ que elas são acessíveis aos seus
-usuários.
+Páginas têm um space dedicado no Admin do Deco.cx, acessível pela barra lateral.
 
-## Crie uma nova página
+![Space de páginas](/docs/getting-started/creating-a-new-page/pages-space.png)
 
-Para criar uma nova página em seu site, **clique no botão Criar no canto
-superior direito da lista de páginas**. Um formulário será aberto com os
-seguintes campos:
+Nesta página, você pode ver todas as páginas publicadas no site, junto com os caminhos pelos quais elas são acessíveis aos seus usuários.
+
+Aqui você pode clicar no botão "Criar nova página" para criar uma página.
+
+> Alternativamente, você pode clicar no botão "Criar página" na Página Inicial do Site ou digitar `/new page` na barra de comando localizada no topo central da página do Admin.
+
+## 2. Dê um nome e um caminho à página
+
+Preencha o formulário de criação de página com as seguintes informações:
 
 - **Nome:** nome significativo para entender o que essa página representa. Não
   afeta a interface do usuário ou os metadados da página.
@@ -27,29 +29,39 @@ seguintes campos:
 - **Template** (opcional): selecione uma página já existente e comece a partir
   dela.
 
-Após criada, você será redirecionado para o editor de página. Agora é possível
-editar e adicionar novas Sections disponíveis em seu site e configurar a página
+Aqui, vamos criar uma página em branco.
+
+![Criando uma nova página](/docs/getting-started/creating-a-new-page/new-page.png)
+
+## 3. Edite o conteúdo da página
+
+Agora é possível editar e adicionar novas Sections disponíveis em seu site e configurar a página
 do jeito que você quiser.
 
-Para adicionar uma nova Section à página, clique no botão **Add Sections** no
-editor e verifique todas as opções disponíveis.
+Para adicionar um novo componente à página, clique no botão "Adicionar Seções" no editor e explore todas as opções disponíveis. Seções são componentes de UI (pequenas partes do site) que podem receber propriedades e serem editadas através de um formulário no Admin.
 
-![Criando páginas](/docs/creating-new-page/add-section.png)
+![Adicionando uma seção](/docs/getting-started/creating-a-new-page/add-section.png)
 
 > Se você deseja desenvolver/codar uma nova seção, consulte nosso
 > [Guia de desenvolvimento](/docs/pt/developing/setup).
 
-## Publicação
+Vamos selecionar a seção Hero. 
 
-Após a edição, clique em **Salvar** para criar uma nova revisão e depois em
-**Publicar** para publicar a página recém-criada.
+![Seção Hero](/docs/getting-started/creating-a-new-page/hero.png)
 
-Se a página foi publicada anteriormente, o modal Publish oferecerá a opção de
-testar A/B a nova revisão.
+Após a seleção, podemos ver o formulário onde podemos editar suas propriedades.
+Essas propriedades são obtidas a partir das props do TypeScript dessa seção.
 
-## Variantes
+![Formulário da Seção](/docs/getting-started/creating-a-new-page/section-form.png)
 
-Além do teste A/B, que randomiza quais usuários veem o novo conteúdo, é possível
-segmentar e personalizar o conteúdo no deco.cx usando outros fatores como
-localização, dispositivo e mais.
-[Leia sobre variantes aqui](/docs/pt/getting-started/variants).
+> Nota: O exemplo que você vê acima é de um bloco reutilizável, que é um recurso global que pode ser usado por outras páginas. Por isso, você não pode editar essa seção a menos que a desanexe para alterar apenas nessa página ou a edite em um novo espaço (o que afetará todas as páginas que a utilizam).
+
+Vamos desanexar a seção para editar suas propriedades para essa página.
+Vamos mudar o Título na propriedade Title. À medida que você faz alterações, a pré-visualização será
+atualizada em tempo real para mostrar como a seção ficará com os novos valores de propriedade.
+
+![Mudando a Seção](/docs/getting-started/creating-a-new-page/changing-section.png)
+
+Cada componente pode ter diferentes propriedades que podem ser personalizadas.
+Essas propriedades são definidas no código da seção e podem ser
+acessadas através do objeto props.
