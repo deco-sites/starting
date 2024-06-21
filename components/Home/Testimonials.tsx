@@ -182,24 +182,25 @@ export default function Testimonials({
             </a>
           ))}
         </div>
-        <div class="w-full p-[48px] pt-[24px] hidden peer-checked:flex lg:hidden">
+        <div class="w-full p-12 pt-6 hidden peer-checked:flex lg:hidden">
           <label
             for="collapse-testimonials"
-            class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]"
+            class="mx-auto py-2 px-3 font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]"
           >
             {showLessLabel}
           </label>
         </div>
         <div
-          class="w-full p-[48px] flex absolute bottom-0 mb-14 peer-checked:hidden lg:hidden"
+          class="w-[var(--w)] pb-12 flex absolute bottom-0 mb-14 peer-checked:hidden lg:hidden"
           style={{
             background:
               "linear-gradient(180deg, rgba(255,255,255,0) 0%, #030806 85%)",
+            "--w": "calc(100% - 2 * 16px)",
           }}
         >
           <label
             for="collapse-testimonials"
-            class="mx-auto py-[8px] px-[12px] font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]"
+            class="mx-auto py-2 px-3 font-bold font-[argent-pixel] text-[16px] bg-[#02F67C] text-[#113032] border border-[#113032]"
           >
             {showMoreLabel}
           </label>
