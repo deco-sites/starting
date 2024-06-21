@@ -4,8 +4,9 @@
 
 import * as $$$$$$$$$0 from "./actions/feedbackDocs.ts";
 import * as $$$$$$$$$1 from "./actions/startAlgoliaCrawler.ts";
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$$$$$$$$$0 from "./apps/deco/htmx.ts";
+import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$2 from "./apps/site.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $1 from "./functions/LoadGitHubRawPost.ts";
 import * as $2 from "./functions/LoadGitHubRawPostList.ts";
@@ -395,8 +396,9 @@ const manifest = {
     "site/actions/startAlgoliaCrawler.ts": $$$$$$$$$1,
   },
   "apps": {
-    "site/apps/decohub.ts": $$$$$$$$$$$0,
-    "site/apps/site.ts": $$$$$$$$$$$1,
+    "site/apps/deco/htmx.ts": $$$$$$$$$$$0,
+    "site/apps/decohub.ts": $$$$$$$$$$$1,
+    "site/apps/site.ts": $$$$$$$$$$$2,
   },
   "name": "site",
   "baseUrl": import.meta.url,
