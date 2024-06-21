@@ -11,6 +11,7 @@ import { AppContext } from "site/apps/site.ts";
 import {
   FONT_ALBERT,
   FONT_ARGENT,
+  getStyleSrc,
   STYLE_PATH,
 } from "site/components/GlobalTags.tsx";
 
@@ -466,8 +467,8 @@ export function Preview(props: Props) {
   );
 }
 
-export function loader(props: Props, _: Request, ctx: AppContext) {
-  const styleHref = asset(STYLE_PATH);
+export async function loader(props: Props, _: Request, ctx: AppContext) {
+  const styleHref = await getStyleSrc();
   const fonts = [
     asset(FONT_ALBERT),
     asset(FONT_ARGENT),

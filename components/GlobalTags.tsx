@@ -1,7 +1,13 @@
 import { asset, Head } from "$fresh/runtime.ts";
+import { Context } from "deco/deco.ts";
+
 export const STYLE_PATH = "/styles.css";
 export const FONT_ARGENT = "/fonts/ArgentPixelCF-Regular.woff2";
 export const FONT_ALBERT = "/fonts/font_albert.woff2";
+export const getStyleSrc = async () => {
+  const revision = await Context.active().release?.revision();
+  return asset(`${STYLE_PATH}?revision=${revision}`);
+};
 
 export default function GlobalTags() {
   const fontAlbertHref = asset(FONT_ALBERT);
