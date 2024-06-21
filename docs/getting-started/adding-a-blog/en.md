@@ -20,38 +20,19 @@ Click on the switch button and the app will be installed in your site.
 
 ![Install app](/docs/getting-started/adding-a-blog/install-app.png)
 
+The Weather App brings us a section that renders a message with the
+current temperature. Besides the section, this app also has a loader, a 
+Typescript function that returns data. This specific loader returns the 
+temperature of a given location (or of the current location if no location
+is passed). Let's use them both and see how they can be integrated.
+
 3. Use the app funcionalities
 
-To use the app, we will create a section that varies its text according to
-the temperature of the user. To do this, we will use the concept of variants
-and matchers.
+3.1 Go to WhatsTheTemperature Section
 
-A variant intuitively is a variation of a section or a page. It allows 
-you to segment content based on certain conditions, enabling you to customize 
-and personalize your page for different user segments.
-
-A matcher is the responsible to evaluate specific conditions and segment your 
-audience based on various criteria.
-
-The Weather App offers a matcher that receives a temperature range and a
-temperature value and evaluates whether the temperature is in the range
-or not.
-
-3.1 Create a new section
-
-Click on the "Create new Section" button on the Sections page.
+Go to the Sections Page and click on the WhatsTheTemperature Section. You 
+can filter the list by the app.
 
 ![]()
 
-A section will be created with one property, and you can see
-its code and change the property value.
-
-![]()
-
-3.2 Use the section in a page
-
-Click on "Add [Section]" button to add the section that we created.
-
-![]()
-
-3.3 Create a variant of the section
+Open the section properties 
