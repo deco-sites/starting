@@ -4,13 +4,11 @@ export const FONT_ARGENT = "/fonts/ArgentPixelCF-Regular.woff2";
 export const FONT_ALBERT = "/fonts/font_albert.woff2";
 
 export default function GlobalTags() {
-  const styleHref = asset(STYLE_PATH);
   const fontAlbertHref = asset(FONT_ALBERT);
   const fontArgentHref = asset(FONT_ARGENT);
   return (
     <>
       <Head>
-        <link href={styleHref} rel="stylesheet" />
         {/* Plausible Analytics */}
         <script
           defer
