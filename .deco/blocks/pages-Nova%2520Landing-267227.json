@@ -754,6 +754,9 @@
       {
         "value": [
           {
+            "__resolveType": "site/sections/Theme/ThemeHints.tsx"
+          },
+          {
             "__resolveType": "Deco Head [EN]"
           },
           {

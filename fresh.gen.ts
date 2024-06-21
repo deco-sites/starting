@@ -33,7 +33,6 @@ import * as $HelpFaq from "./islands/HelpFaq.tsx";
 import * as $Home_BuildShowcase from "./islands/Home/BuildShowcase.tsx";
 import * as $Home_Dropdown from "./islands/Home/Dropdown.tsx";
 import * as $Home_Header from "./islands/Home/Header.tsx";
-import * as $Home_Testimonials from "./islands/Home/Testimonials.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
 import * as $LiveProjects from "./islands/LiveProjects.tsx";
 import * as $NRF_BackgroundGrid from "./islands/NRF/BackgroundGrid.tsx";
@@ -42,7 +41,6 @@ import * as $NRF_Editor from "./islands/NRF/Editor.tsx";
 import * as $NRF_EditorMobile from "./islands/NRF/EditorMobile.tsx";
 import * as $NRF_Features from "./islands/NRF/Features.tsx";
 import * as $NRF_FeaturesWithImage from "./islands/NRF/FeaturesWithImage.tsx";
-import * as $NRF_Header from "./islands/NRF/Header.tsx";
 import * as $NRF_Hero from "./islands/NRF/Hero.tsx";
 import * as $NRF_HeroEditorTabbed from "./islands/NRF/HeroEditorTabbed.tsx";
 import * as $NRF_PageWrapper from "./islands/NRF/PageWrapper.tsx";
@@ -97,7 +95,6 @@ const manifest = {
     "./islands/Home/BuildShowcase.tsx": $Home_BuildShowcase,
     "./islands/Home/Dropdown.tsx": $Home_Dropdown,
     "./islands/Home/Header.tsx": $Home_Header,
-    "./islands/Home/Testimonials.tsx": $Home_Testimonials,
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
     "./islands/LiveProjects.tsx": $LiveProjects,
     "./islands/NRF/BackgroundGrid.tsx": $NRF_BackgroundGrid,
@@ -106,7 +103,6 @@ const manifest = {
     "./islands/NRF/EditorMobile.tsx": $NRF_EditorMobile,
     "./islands/NRF/Features.tsx": $NRF_Features,
     "./islands/NRF/FeaturesWithImage.tsx": $NRF_FeaturesWithImage,
-    "./islands/NRF/Header.tsx": $NRF_Header,
     "./islands/NRF/Hero.tsx": $NRF_Hero,
     "./islands/NRF/HeroEditorTabbed.tsx": $NRF_HeroEditorTabbed,
     "./islands/NRF/PageWrapper.tsx": $NRF_PageWrapper,

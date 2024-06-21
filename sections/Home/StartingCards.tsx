@@ -1,5 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 
 export interface Starting {
   label: string;
@@ -81,13 +82,32 @@ export default function StartingCards({
               index < 2 ? "lg:col-span-3" : "lg:col-span-2"
             } ${index < 4 ? "sm:col-span-3" : "sm:col-span-6"}
           }`}
-            key={index}
-            style={{
-              backgroundImage: `url(${card.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
           >
+            <Picture>
+              <Source
+                src={card.image}
+                width={360}
+                height={215}
+                decoding="async"
+                loading="lazy"
+                fetchPriority="low"
+                media="(max-width: 640px)"
+              />
+              <Source
+                src={card.image}
+                width={1024}
+                decoding="async"
+                loading="lazy"
+                fetchPriority="low"
+                media="(min-width: 641px)"
+              />
+              <img
+                src={card.image}
+                decoding="async"
+                loading="lazy"
+                class="absolute inset-0 w-full object-cover object-center"
+              />
+            </Picture>
             <div class="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-start justify-end p-10 gap-4">
               <h3
                 class="font-albert-sans text-[24px] lg:text-[32px] font-semibold leading-[110%] text-white"
@@ -103,34 +123,23 @@ export default function StartingCards({
                   <span class="font-bold text-[#0A2121] text-[12px] lg:text-[14px] leading-[140%]">
                     {card.cta}
                   </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.21967 3.96967C9.51256 3.67678 9.98744 3.67678 10.2803 3.96967L14.7803 8.46967C15.0732 8.76256 15.0732 9.23744 14.7803 9.53033L10.2803 14.0303C9.98744 14.3232 9.51256 14.3232 9.21967 14.0303C8.92678 13.7374 8.92678 13.2626 9.21967 12.9697L12.4393 9.75H3.75C3.33579 9.75 3 9.41421 3 9C3 8.58579 3.33579 8.25 3.75 8.25H12.4393L9.21967 5.03033C8.92678 4.73744 8.92678 4.26256 9.21967 3.96967Z"
-                      fill="#0D1717"
-                    />
-                  </svg>
+                  <Icon
+                    id="ArrowRight"
+                    size={18}
+                    class="shrink-0 text-base-700"
+                  />
                 </a>
                 {card.icons?.active == true &&
                   (
                     <div class="flex items-start gap-[2.4px] lg:gap-[5.4px]">
                       {card?.icons?.logos?.map((logo) => (
                         <span class="p-[4.8px] lg:p-[7.2px] rounded-[45px] border-[0.45px] border-[#FFFFFF36] bg-[#FFFFFF17]">
-                          <Image
+                          <img
                             class="w-[14.4px] lg:w-[19.2px]"
                             width={22}
+                            height={22}
                             src={logo}
-                            alt={logo}
-                            decoding="async"
                             loading="lazy"
-                            fetchPriority={"low"}
                           />
                         </span>
                       ))}

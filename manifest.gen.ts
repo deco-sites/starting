@@ -185,12 +185,13 @@ import * as $$$$$$161 from "./sections/StripePricing.tsx";
 import * as $$$$$$162 from "./sections/Test.tsx";
 import * as $$$$$$163 from "./sections/Thanks.tsx";
 import * as $$$$$$164 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$165 from "./sections/TripletBanner.tsx";
-import * as $$$$$$166 from "./sections/WasThisPageHelpful.tsx";
-import * as $$$$$$167 from "./sections/Webinar/Content.tsx";
-import * as $$$$$$168 from "./sections/Webinar/Hero.tsx";
-import * as $$$$$$169 from "./sections/Whatsapp.tsx";
-import * as $$$$$$170 from "./sections/Why.tsx";
+import * as $$$$$$165 from "./sections/Theme/ThemeHints.tsx";
+import * as $$$$$$166 from "./sections/TripletBanner.tsx";
+import * as $$$$$$167 from "./sections/WasThisPageHelpful.tsx";
+import * as $$$$$$168 from "./sections/Webinar/Content.tsx";
+import * as $$$$$$169 from "./sections/Webinar/Hero.tsx";
+import * as $$$$$$170 from "./sections/Whatsapp.tsx";
+import * as $$$$$$171 from "./sections/Why.tsx";
 
 const manifest = {
   "functions": {
@@ -378,12 +379,13 @@ const manifest = {
     "site/sections/Test.tsx": $$$$$$162,
     "site/sections/Thanks.tsx": $$$$$$163,
     "site/sections/Theme/Theme.tsx": $$$$$$164,
-    "site/sections/TripletBanner.tsx": $$$$$$165,
-    "site/sections/WasThisPageHelpful.tsx": $$$$$$166,
-    "site/sections/Webinar/Content.tsx": $$$$$$167,
-    "site/sections/Webinar/Hero.tsx": $$$$$$168,
-    "site/sections/Whatsapp.tsx": $$$$$$169,
-    "site/sections/Why.tsx": $$$$$$170,
+    "site/sections/Theme/ThemeHints.tsx": $$$$$$165,
+    "site/sections/TripletBanner.tsx": $$$$$$166,
+    "site/sections/WasThisPageHelpful.tsx": $$$$$$167,
+    "site/sections/Webinar/Content.tsx": $$$$$$168,
+    "site/sections/Webinar/Hero.tsx": $$$$$$169,
+    "site/sections/Whatsapp.tsx": $$$$$$170,
+    "site/sections/Why.tsx": $$$$$$171,
   },
   "matchers": {
     "site/matchers/MatchPath.ts": $$$$$$$0,
