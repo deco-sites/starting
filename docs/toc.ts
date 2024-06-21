@@ -85,120 +85,120 @@ const tableOfContents: TableOfContents = [
     children: [
       {
         title: { pt: "Configuração do ambiente", en: "Environment setup" },
-        slug: "developing/setup",
+        slug: "developing-guide/setup",
       },
       {
         title: {
           pt: "Tornando uma Seção configurável",
           en: "Making Sections editable",
         },
-        slug: "developing/editable-sections",
+        slug: "developing-guide/editable-sections",
       },
       {
         title: { pt: "Criando uma Section", en: "Creating a Section" },
-        slug: "developing/hello-world",
+        slug: "developing-guide/hello-world",
       },
       {
         title: {
           pt: "Exportando Propriedades Padrões em um Bloco",
           en: "Exporting Default Props in a Block",
         },
-        slug: "developing/exporting-default-props",
+        slug: "developing-guide/exporting-default-props",
       },
       {
         title: {
           pt: "Adicionando interatividade em uma página",
           en: "Client-side interactivity",
         },
-        slug: "developing/islands",
+        slug: "developing-guide/islands",
       },
       {
         title: {
           pt: "Tematizando uma Seção",
           en: "Making a Section Themeable",
         },
-        slug: "developing/themeable-section",
+        slug: "developing-guide/themeable-section",
       },
       {
         title: {
           pt: "Carregando dados de uma API",
           en: "Fetching data from APIs",
         },
-        slug: "developing/fetching-data",
+        slug: "developing-guide/fetching-data",
       },
       {
         title: {
           pt: "Carregando dados de uma API a partir do browser",
           en: "Client-side Invocation",
         },
-        slug: "developing/fetching-data-client",
+        slug: "developing-guide/fetching-data-client",
       },
       {
         title: {
           pt: "Capturando exceções nas Seções",
           en: "Section error fallback",
         },
-        slug: "developing/error-fallback",
+        slug: "developing-guide/error-fallback",
       },
       {
         title: {
           pt: "Estados de carregamento nas Seções",
           en: "Section loading fallback",
         },
-        slug: "developing/loading-fallback",
+        slug: "developing-guide/loading-fallback",
       },
       {
         title: {
           pt: "Redirecionando usuários a partir de Seções",
           en: "Redirecting users from Sections",
         },
-        slug: "developing/redirecting-users",
+        slug: "developing-guide/redirecting-users",
       },
       {
         title: {
           pt: "Aceitando uma Seção como parâmetro da minha Seção",
           en: "Accepting Other Sections as Parameters in Your Section",
         },
-        slug: "developing/accept-a-section",
+        slug: "developing-guide/accept-a-section",
       },
       {
         title: {
           pt: "Desenvolvendo Apps",
           en: "Developing Apps",
         },
-        slug: "developing/creating-an-app",
+        slug: "developing-guide/creating-an-app",
       },
       {
         title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
-        slug: "developing/using-secrets",
+        slug: "developing-guide/using-secrets",
       },
       {
         title: {
           pt: "Instalando Apps",
           en: "Installing Apps",
         },
-        slug: "developing/making-an-app-installable",
+        slug: "developing-guide/making-an-app-installable",
       },
       {
         title: {
           pt: "Partial",
           en: "Partial",
         },
-        slug: "developing/partial",
+        slug: "developing-guide/partial",
       },
       {
         title: {
           pt: "Modificando o status de retorno de uma pagina",
           en: "Modifying the return status of a page",
         },
-        slug: "developing/modifying-status",
+        slug: "developing-guide/modifying-status",
       },
       {
         title: {
           pt: "Criando um Teste A/B",
           en: "Creating an A/B Test",
         },
-        slug: "developing/ab-test",
+        slug: "developing-guide/ab-test",
       },
     ],
   },
