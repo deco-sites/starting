@@ -137,6 +137,7 @@ export default function StartingCards({
                           <img
                             class="w-[14.4px] lg:w-[19.2px]"
                             width={22}
+                            height={22}
                             src={logo}
                             loading="lazy"
                           />
