@@ -750,7 +750,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 62.5,
+                "width": 70,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -772,7 +772,7 @@
               },
               {
                 "type": "stack",
-                "width": 37.5,
+                "width": 30,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
