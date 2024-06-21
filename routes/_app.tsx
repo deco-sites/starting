@@ -1,12 +1,9 @@
 import { defineApp } from "$fresh/server.ts";
-import { Context } from "deco/deco.ts";
-import { asset, Head } from "$fresh/runtime.ts";
-import GlobalTags from "site/components/GlobalTags.tsx";
-import { STYLE_PATH } from "site/components/GlobalTags.tsx";
+import { Head } from "$fresh/runtime.ts";
+import GlobalTags, { getStyleSrc } from "site/components/GlobalTags.tsx";
 
 export default defineApp(async (_req, ctx) => {
-  const revision = await Context.active().release?.revision();
-  const styleHref = asset(`${STYLE_PATH}?revision=${revision}`);
+  const styleHref = await getStyleSrc();
   return (
     <>
       <Head>
