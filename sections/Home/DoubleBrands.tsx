@@ -64,6 +64,7 @@ const LogoSlider = (
         >
           <img
             width={144}
+            height={30}
             src={logo.mobile}
             alt={logo.mobile}
             decoding="async"
