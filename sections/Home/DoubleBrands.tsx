@@ -62,13 +62,12 @@ const LogoSlider = (
           class="flex items-center justify-center h-[30px] w-[72px] lg:w-52"
           target="_blank"
         >
-          <Image
+          <img
             width={144}
             src={logo.mobile}
             alt={logo.mobile}
             decoding="async"
             loading="lazy"
-            fetchPriority="low"
           />
         </div>
       ))}
