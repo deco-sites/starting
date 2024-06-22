@@ -11,11 +11,8 @@
   },
   "global": [
     {
-      "__resolveType": "htmx/sections/htmx.tsx"
-    },
-    {
-      "__resolveType": "site/sections/Theme/Theme.tsx",
-      "colorScheme": "dark"
+      "colorScheme": "dark",
+      "__resolveType": "site/sections/Theme/Theme.tsx"
     }
   ],
   "routes": [
@@ -39,8 +36,5 @@
     "includeScriptsToHead": {
       "includes": []
     }
-  },
-  "flavor": {
-    "framework": "fresh"
   }
 }

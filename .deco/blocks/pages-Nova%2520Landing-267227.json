@@ -820,7 +820,7 @@
             "URLEmbedLink": "https://player.vimeo.com/video/951605687?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           },
           {
-            "__resolveType": "htmx/sections/Deferred.tsx",
+            "__resolveType": "website/sections/Rendering/Deferred.tsx",
             "sections": [
               {
                 "__resolveType": "site/sections/Home/DoubleBrands.tsx",
@@ -1492,10 +1492,7 @@
                 "__resolveType": "GTM"
               }
             ],
-            "trigger": {
-              "type": "load"
-            },
-            "loading": "lazy"
+            "display": false
           }
         ],
         "rule": {
