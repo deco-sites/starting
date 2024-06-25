@@ -473,10 +473,6 @@
     "blockType": "apps",
     "__resolveType": "decohub/apps/analytics.ts"
   },
-  "/.deco/blocks/blog.json": {
-    "blockType": "apps",
-    "__resolveType": "decohub/apps/blog.ts"
-  },
   "/.deco/blocks/blogposts.json": {
     "blockType": "loaders",
     "__resolveType": "site/loaders/blogPostLoader.ts"
@@ -1193,10 +1189,6 @@
     "blockType": "loaders",
     "__resolveType": "website/loaders/redirect.ts"
   },
-  "/.deco/blocks/collections%2Fblog%2Fposts%2Faccffb46d778.json": {
-    "blockType": "loaders",
-    "__resolveType": "blog/loaders/Blogpost.ts"
-  },
   "/.deco/blocks/pages-Nova%2520Landing-267227.json": {
     "path": "/",
     "blockType": "pages",
@@ -1222,10 +1214,6 @@
   "/.deco/blocks/Preview%20%2Fsections%2FHome%2FTextSection2.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Home/TextSection2.tsx"
-  },
-  "/.deco/blocks/Preview%20site%2Floaders%2FblogPostDetailsLoader.ts.json": {
-    "blockType": "loaders",
-    "__resolveType": "site/loaders/blogPostDetailsLoader.ts"
   },
   "/.deco/blocks/Preview%20website%2Floaders%2Foptions%2Froutes.ts.json": {
     "blockType": "loaders",
@@ -1260,5 +1248,9 @@
   "/.deco/blocks/Preview%20%2Fsections%2FNRF%2FDecoFooter.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/NRF/DecoFooter.tsx"
+  },
+  "/.deco/blocks/deco-blog.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/blog.ts"
   }
 }

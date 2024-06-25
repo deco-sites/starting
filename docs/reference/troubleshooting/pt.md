@@ -52,7 +52,7 @@ No repositório do site, verifique uma marcação referente ao último _commit_.
 _deploy_ deve ter sido realizado com sucesso para que o código possa ser
 considerado em produção:
 
-![Deploy bem sucedido](https://github.com/site/assets/882438/6f4e853f-23bf-4ed1-9f4f-b16a97690a6a).
+![Deploy bem sucedido](https://github.com/deco-sites/starting/assets/882438/6f4e853f-23bf-4ed1-9f4f-b16a97690a6a).
 
 Em caso de falha, passe o cursor na sinalização de erro para ver uma indicação
 do problema.
