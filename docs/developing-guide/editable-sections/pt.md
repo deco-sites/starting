@@ -1,18 +1,14 @@
 ---
-description: Tornando uma Seção configurável
-since: 1.0.0
+
+description: Editando seções  
+since: 1.0.0  
+
 ---
 
-# Tópicos
+# Introdução às Seções (dev)
 
-1. Introdução a Sections (dev)
-2. Primeira alteração e seleção de ambiente
-3. Resumo: Para alterar e testar uma `section`
-
-# Introdução a Sections (dev)
-
-A Section representa um elemento de UI configurável para um Site deco. Agora, é
-preciso entender o que isso representa em termos de desenvolvimento.
+Uma Seção representa um elemento de UI configurável para um site deco. 
+É essencial entender o que isso significa para um desenvolvedor.
 
 Uma Section é um código `tsx` dentro da pasta `sections` e que:
 
@@ -20,210 +16,106 @@ Uma Section é um código `tsx` dentro da pasta `sections` e que:
 - tem propriedades serializáveis
 - exporta o tipo de suas propriedades
 
-Um componente Preact, é uma função exportada por padrão (`export default`) que
-recebe propriedades, retorna um JSX e é invocada a cada renderização do elemento
-que é definido. Como exemplo, abra, no VSCode, a section `sections/Hero.tsx` do
-template de ecommerce. Este arquivo também está acessível
-[no github da deco](https://github.com/deco-sites/storefront/blob/main/sections/Content/Hero.tsx).
+Um componente Preact é uma função exportada por padrão (`export default`). Ele recebe 
+propriedades, retorna JSX e é invocado durante cada renderização do elemento definido.
 
-O código deste elemento é escrito em HTML com JS, como no exemplo abaixo.
+Vamos explorar como podemos manipular essas seções e ver as mudanças refletidas na
+interface do Admin.
+
+## 1. Abra a seção Hero
+
+Como exemplo, abra a seção `Hero.tsx` na interface do Admin do site que você criou em 
+um [tutorial anterior](/docs/getting-started/creating-a-site/pt.md). Clique no ícone 
+`</>` na barra direita para ver o código da seção.
+
+O código deste elemento é escrito em HTML com JavaScript, como mostrado no exemplo 
+abaixo.
+
+![Código da Seção Hero](/docs/editable-section/hero-section-code.png)
+
+Observe os tipos exportados neste arquivo. Esses mesmos tipos são acessíveis no 
+formulário de propriedades da seção quando você clica no ícone de lista na barra 
+direita.
+
+![Editando propriedades da Seção Hero](/docs/editable-section/section-props.png)
+
+**Seção e seus tipos de propriedades**
+
+<!-- help: precisa disso? -->
+<!-- Um projeto Deco usa o tipo das propriedades de um componente para gerar automaticamente o formulário de edição de bloco no Admin. Na figura a seguir, você pode ver como o Admin sabe as informações a serem colocadas no formulário. Para isso, o Admin entra em contato com o site ao vivo para recuperar os dados das propriedades das Seções naquele projeto. Por outro lado, o código de um site vem do GitHub, o mesmo que o desenvolvedor usa.
+
+![Estrutura de acesso aos dados do site](https://github.com/deco-sites/starting/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53) -->
+
+## 2. Execute seu site localmente
+
+Siga os passos de [configuração do ambiente](/docs/developing-guide/setup/pt.md) e 
+execute seu projeto localmente para ver as mudanças que você fizer no código refletidas 
+na interface do Admin.
+
+## 3. Adicione uma nova propriedade à seção Hero
+
+Modifique o código de `sections/Hero.tsx` para receber uma nova propriedade opcional, o 
+`size` (tamanho) de um botão CTA. Adicione ao tipo `CTA` uma nova propriedade, `size`, 
+que deve ser uma dessas strings: "xs", "sm", "md" e "lg".
 
 ```tsx
-import type { ImageWidget } from "apps/admin/widgets.ts";
-
-/** @title {{{title}}} - {{{href}}} */
-export interface Link {
-  title: string;
+export interface CTA {
+  id?: string;
   href: string;
-}
-
-export interface Props {
-  logo?: ImageWidget;
-  title?: string;
-  /** @format textarea */
-  headline?: string;
-  links?: Array<Link>;
-}
-
-export default function Hero({
-  title = "deco.cx",
-  logo = "/logo.svg",
-  headline =
-    "The digital experience platform that combines performance and personalization for the ultimate sales results.",
-  links = [
-    { title: "Official website", "href": "https://deco.cx/" },
-    { title: "Linkedin", "href": "https://www.linkedin.com/company/deco-cx/" },
-    { title: "Discord", "href": "https://deco.cx/discord" },
-  ],
-}: Props) {
-  return (
-    <header class="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base">
-      <div class="mb-10 md:mb-20">
-        <img
-          class="object-cover w-20"
-          src={logo}
-          alt={title}
-        />
-      </div>
-      <div class="font-bold text-3xl lg:text-6xl leading-tight lg:leading-none xl:w-5/6">
-        {headline}
-      </div>
-      {!!links?.length && (
-        <ul class="mt-8 flex flex-col md:flex-row gap-2 md:gap-4">
-          {links.map(({ href, title }) => (
-            <li>
-              <a target="_blank" href={href} aria-label={title} class="link">
-                {title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </header>
-  );
+  text: string;
+  outline?: boolean;
+  size?: "xs" | "sm" | "md" | "lg";
 }
 ```
 
-Observe os tipos exportados neste arquivo. Estes mesmos tipos são acessíveis no
-Admin ao criar um bloco Intro. No Admin, selecione a **Sections**, o bloco
-`Hero` e a opção de criar de bloco para visualizar as mesmas propriedades em um
-formulário de edição.
+Esse tipo de campo indica ao Admin que essa propriedade só pode assumir esses valores, 
+fazendo a plataforma mostrar um componente de seleção para editar esse campo.
 
-![Criar bloco](https://github.com/deco-cx/apps/assets/882438/c7eee318-c6df-4ade-abd8-66390758aca7)
+Você pode ler mais sobre esses formatos e tipos de campo na 
+[documentação de Widgets](/docs/reference/widgets/pt.md).
 
-As propriedades do código de um bloco se refletem no Admin.
+Vamos adicionar um botão CTA na nossa seção Hero para ver a modificação:
 
-```tsx
-/** @title {{{title}}} - {{{href}}} */
-export interface Link {
-  title: string;
-  href: string;
-}
+![Exemplo de Botão CTA](/docs/editable-section/cta-button-example.png)
 
-export interface Props {
-  logo?: ImageWidget;
-  title?: string;
-  /** @format textarea */
-  headline?: string;
-  links?: Array<Link>;
-}
-```
+Agora o CTA tem o campo de tamanho:
 
-_Tipos no arquivo de uma Section_
+![Campo de Tamanho do CTA](/docs/editable-section/cta-size-field.png)
 
-![Edição de propriedades da Section Hero](https://github.com/deco-cx/apps/assets/882438/b57f6fae-da58-4cc4-a5cc-aa99985cd442)
-
-Um projeto deco faz uso do tipo das propriedades de um componente para gerar
-automáticamente o formulário de preenchimento de bloco no Admin. Na figura a
-seguir é possível visualizar como o Admin conhece as informações a serem
-colocadas no formulário. Para isto, o Admin entra em contato com o Site em
-produção para pegar os dados das propriedades das Sections daquele projeto. Por
-sua vez, o código em um Site é oriundo do GitHub, o mesmo que o desenvolvedor
-utiliza.
-
-![Estrutura de acesso aos dados do Site](https://github.com/site/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53)
-
-# Primeira alteração e seleção de ambiente
-
-Execute o projeto localmente (`deno task start`) e altere o código da `Hero`
-para receber uma nova propriedade opcional, o `hightlight` de um link. Para
-isso, altere o tipo `Link` e o código JSX do componente, lembrando de salvar o
-arquivo após a alteração.
+Também vamos modificar o conteúdo JSX para fazer o tamanho do botão CTA mudar de acordo 
+com a opção selecionada no formulário do Admin:
 
 ```tsx
-import type { ImageWidget } from "apps/admin/widgets.ts";
+...
 
-/** @title {{{title}}} - {{{href}}} */
-export interface Link {
-  title: string;
-  href: string;
-  highlight?: boolean;
-}
+<div class="flex items-center gap-3">
+  {cta?.map((item) => (
+    <a
+      key={item?.id}
+      id={item?.id}
+      href={item?.href}
+      target={item?.href.includes("http") ? "_blank" : "_self"}
+      class={`font-normal btn btn-primary ${item.outline && "btn-outline"} ${
+        item.size && `btn-${item.size}`
+      }`}
+    >
+      {item?.text}
+    </a>
+  ))}
+</div>
 
-export interface Props {
-  logo?: ImageWidget;
-  title?: string;
-  /** @format textarea */
-  headline?: string;
-  links?: Array<Link>;
-}
-
-export default function Hero({
-  title = "deco.cx",
-  logo = "/logo.svg",
-  headline =
-    "The digital experience platform that combines performance and personalization for the ultimate sales results.",
-  links = [
-    { title: "Official website", "href": "https://deco.cx/" },
-    { title: "Linkedin", "href": "https://www.linkedin.com/company/deco-cx/" },
-    { title: "Discord", "href": "https://deco.cx/discord" },
-  ],
-}: Props) {
-  return (
-    <header class="lg:container mx-8 md:mx-16 lg:mx-auto mt-8 md:mt-12 mb-28 text-xl md:text-base">
-      <div class="mb-10 md:mb-20">
-        <img
-          class="object-cover w-20"
-          src={logo}
-          alt={title}
-        />
-      </div>
-      <div class="font-bold text-2xl lg:text-6xl leading-tight lg:leading-none xl:w-5/6">
-        {headline}
-      </div>
-      {!!links?.length && (
-        <ul class="mt-8 flex flex-col md:flex-row gap-2 md:gap-4">
-          {links.map(({ href, title, highlight }) => (
-            <a href={href} aria-label={title}>
-              <li class={`${highlight ? "font-black" : ""}`}>{title}</li>
-            </a>
-          ))}
-        </ul>
-      )}
-    </header>
-  );
-}
+...
 ```
 
-_Alterando o tipo Link e o JSX com a nova propriedade `highlight`_
+Com essa mudança, você pode ajustar o tamanho do botão através do formulário do Admin:
 
-Ao realizar esta alteração localmente, ela não afeta ou impacta o Site em
-produção. No entanto, com o projeto localmente (`deno task start`), é possível
-visualizar tal alteração no próprio Admin. Para isto, é importante ir no seletor
-de ambiente, e escolher o `localhost:8000` como referência.
+![Ajuste de Tamanho do Botão CTA](/docs/editable-section/cta-button-size-adjustment.gif)
 
-![Alterando o ambiente](https://github.com/deco-cx/apps/assets/882438/62efa5c1-f960-4d21-8ec8-2c8f729c1093)
+## 4. Pronto para começar!
 
-Ao apontar para o `localhost`, o admin consulta agora a versão rodando
-localmente para detectar as propriedades e `sections` disponíveis.
+Agora você pode configurar `props` para as Seções do seu site e ver como elas são 
+renderizadas. A pré-visualização será automaticamente atualizada se você modificar o 
+código da Seção localmente.
 
-Para que outras pessoas possam ver a alteração, é preciso realizar o `commit` e
-`push` das alterações. A branch `main` tem o código que é exibido no domínio
-padrão do Site, mas é possível fazer a visualização de outras branches do
-repositório, bastando selecionar a branch em questão no seletor de ambientes.
-
-# Resumo: Para alterar e testar uma `section`
-
-De forma sucinta, para testar alterações na Section `Hero.tsx`:
-
-1. Execute `deno task start` no Terminal. _(Você não precisa executar novamente
-   se já estiver rodando)_
-
-2. Realize alterações localmente no arquivo `sections/Hero.tsx`.
-
-3. Acesse o [Admin da _deco.cx_](https://deco.cx/admin), selecione seu Site e vá
-   em `Sections`.
-
-4. Certifique-se de que `localhost:8000` esteja selecionado no Seletor de
-   Ambiente no canto superior direito da página.
-
-5. Procure `Hero` dentre os blocos.
-
-6. **Pronto!** Agora você pode configurar `props` para essa Section e ver como
-   ela está sendo renderizada. O _preview_ atualizará automaticamente se você
-   alterar o código da Section localmente.
-
-Lembre-se de salvar o seu arquivo. Caso haja algum erro de tipagem ou
-transformação, o mesmo será sinalizado na linha de comando ou no próprio VSCode.
-Quando estiver confortável com as alterações, faça o envio do arquivo alterado
-ao repositório do GitHub.
+Para publicar as mudanças, faça um _git push_ para a branch principal ou publique seu 
+ambiente diretamente na interface do Admin.
