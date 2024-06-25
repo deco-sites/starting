@@ -86,7 +86,7 @@ To see your deco App in action, run the following command:
 deno task start
 ```
 
-<img width="466" alt="image" src="https://github.com/site/assets/5839364/a0dfa130-91e0-4542-84e6-29d4539c7cff">
+<img width="466" alt="image" src="https://github.com/deco-sites/starting/assets/5839364/a0dfa130-91e0-4542-84e6-29d4539c7cff">
 
 This command will start your app and automatically generate the necessary files
 to make the app usable by any deco site.
