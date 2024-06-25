@@ -114,7 +114,7 @@ export default function StartingCards({
                   }}
                 />
                 <div class="flex items-end gap-4">
-                  <div class="flex px-3 py-[6px] lg:py-2 lg:px-4 items-center gap-2 rounded-[10px] bg-[#DA8FFF] hover:bg-[#bf77e4] border-2 border-[#DA8FFF] transition duration-300 easy-in-out">
+                  <div class="flex px-3 py-[6px] lg:py-2 lg:px-4 items-center gap-2 rounded-[10px] bg-[#DA8FFF] hover:bg-[#bf77e4] border-2 border-[#DA8FFF] transition duration-300 ease-in-out">
                     <span class="font-bold text-[#0A2121] text-[12px] lg:text-[14px] leading-[140%]">
                       {card.cta}
                     </span>

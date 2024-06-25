@@ -36,7 +36,7 @@ function MobileMenuLink({ href, label, targetBlank, nested }: MenuLink) {
         <a
           href={href}
           target={targetBlank ? "_blank" : "_self"}
-          class="block px-[24px]  font-normal text-[16px] leading-[19.36px] text-white"
+          class="block px-[24px] font-normal text-[16px] leading-[19.36px] text-white"
         >
           {label}
         </a>
@@ -50,7 +50,7 @@ function MobileMenuLink({ href, label, targetBlank, nested }: MenuLink) {
   }
 
   return (
-    <li class={"grid items-center py-3 md:py-4 text-white"}>
+    <li class={"grid items-center py-3 md:py-4 text-white opacity-70 hover:opacity-100 transition duration-300 ease-in-out"}>
       <a
         href={href}
         target={targetBlank ? "_blank" : "_self"}
@@ -194,7 +194,7 @@ export default function Header(props: Props) {
                 <li class="h-[50px] grid items-center">
                   <a
                     href={props.demo?.url}
-                    class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#2FD180]"
+                    class="block px-6  font-normal text-[16px] leading-[19.36px] text-[#fff] hover:text-[#02F67C] transition duration-300 ease-in-out"
                   >
                     {props.demo?.label}
                   </a>
@@ -207,7 +207,7 @@ export default function Header(props: Props) {
                 {props.login.label}
               </a>
             </li> */}
-                <li class="h-[50px] grid items-center bg-[#02F67C] text-[#0A2121] rounded-full">
+                <li class="h-[50px] grid items-center hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] rounded-lg">
                   <a
                     href={props.sign.url}
                     class="block px-6 font-normal text-[16px] leading-[19.36px]"
@@ -222,7 +222,7 @@ export default function Header(props: Props) {
                     href={props.linkedinUrl}
                     title="linkedin"
                     target="_blank"
-                    class="block px-3 font-normal text-[16px] leading-[19.36px] text-[#fff] hover:text-[#2FD180] transition duration-300 easy-in-out"
+                    class="block px-3 font-normal text-[16px] leading-[19.36px] text-[#fff] hover:text-[#2FD180] transition duration-300 ease-in-out"
                   >
                     <svg
                       width="18"
@@ -245,7 +245,7 @@ export default function Header(props: Props) {
                     href={props.gitUrl}
                     target="_blank"
                     title="Github"
-                    class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#fff] hover:text-[#2FD180] transition duration-300 easy-in-out"
+                    class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#fff] hover:text-[#2FD180] transition duration-300 ease-in-out"
                   >
                     <svg
                       width="19"
@@ -268,7 +268,7 @@ export default function Header(props: Props) {
                     href={props.discordUrl}
                     target="_blank"
                     title="Discord"
-                    class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#fff] hover:text-[#2FD180] transtion duration-300 easy-in-out"
+                    class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#fff] hover:text-[#2FD180] transtion duration-300 ease-in-out"
                   >
                     <svg
                       width="21"
@@ -328,7 +328,7 @@ export default function Header(props: Props) {
           <li>
             <a
               href={props.sign.url}
-              class="flex items-center border-2 border-[#02F67C] bg-[#02F67C] font-medium text-[16px] text-[#0A2121] max-h-[37px] px-4 py-2 rounded-lg md:transition md:ease-in-out md:duration-300"
+              class="flex items-center hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-lg md:transition md:ease-in-out md:duration-300"
             >
               {props.sign.label}
             </a>
@@ -337,4 +337,7 @@ export default function Header(props: Props) {
       </nav>
     </section>
   );
+
+
+  
 }

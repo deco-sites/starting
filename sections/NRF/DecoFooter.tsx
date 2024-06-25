@@ -141,7 +141,7 @@ export default function Footer({
                   href={linkedinUrl}
                   title="linkedin"
                   target="_blank"
-                  class="block px-3 font-normal text-[16px] leading-[19.36px] text-[#0A2121] hover:text-[#1d6262] transition duration-300 easy-in-out"
+                  class="block px-3 font-normal text-[16px] leading-[19.36px] text-[#0A2121] hover:text-[#1d6262] transition duration-300 ease-in-out"
                 >
                   <svg
                     width="18"
@@ -164,7 +164,7 @@ export default function Footer({
                   href={gitUrl}
                   target="_blank"
                   title="Github"
-                  class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#0A2121] hover:text-[#1d6262]  transition duration-300 easy-in-out"
+                  class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#0A2121] hover:text-[#1d6262]  transition duration-300 ease-in-out"
                 >
                   <svg
                     width="19"
@@ -187,7 +187,7 @@ export default function Footer({
                   href={discordUrl}
                   target="_blank"
                   title="Discord"
-                  class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#0A2121] hover:text-[#1d6262]  transtion duration-300 easy-in-out"
+                  class="block px-3  font-normal text-[16px] leading-[19.36px] text-[#0A2121] hover:text-[#1d6262]  transtion duration-300 ease-in-out"
                 >
                   <svg
                     width="21"
