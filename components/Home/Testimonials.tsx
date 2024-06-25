@@ -19,7 +19,7 @@ export interface Testimonial {
 export interface Props {
   /**
    * @format rich-text
-   * @default Click here to tweak this text however you want.
+   * @default Click here to tweak this text however you want
    */
   title?: string;
   testimonials?: Testimonial[];
