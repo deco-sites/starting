@@ -10,13 +10,13 @@ since: 1.0.0
   para reportar dúvidas ou problemas com a _deco.cx_. Participe também da nossa
   comunidade!
 
-# Tópicos
+## Tópicos
 
 1. Tecnologias utilizadas na deco
 2. Comece a desenvolver com a deco
 3. Desenvolvendo com a deco
 
-# Tecnologias utilizadas na deco
+## Tecnologias utilizadas na deco
 
 Ao criar um site ou loja online com a _deco.cx_, o usuário tem a flexibilidade
 de criar [Sections](/docs/pt/concepts/section) e
@@ -54,9 +54,9 @@ desenvolvedores JavaScript e TypeScript. Foi projetado para tornar fácil a
 criação de aplicações web de alta qualidade, alta performance e altamente
 personalizáveis.
 
-# Comece a desenvolver com a deco
+## Comece a desenvolver com a deco
 
-## Ferramentas necessárias
+### Ferramentas necessárias
 
 A única configuração necessária para codificar sites _deco.cx_ é **instalar o
 Deno** em sua máquina. Para instalar o Deno, siga as
@@ -77,16 +77,11 @@ isso, acesse [o Deco Play](https://play.deco.cx/)
 
 ![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341) -->
 
-## Crie um site deco.cx
+### 1. Crie um site deco.cx
 
-**Importante**: Antes de seguir com essa seção, dê uma olhada em
-[Criando um Site](/docs/pt/getting-started/creating-a-site).
+Siga o tutorial de [Criar um Site Deco](/docs/pt/getting-started/creating-a-site).
 
-_deco.cx_ abstrai todas as complexidades de configurar um repositório, conectar
-um CMS e deployar na edge. Isso permite que você se concentre apenas no que
-importa: o código e conteúdo do seu Site.
-
-## Clone o repositório do seu site
+### 2. Clone o repositório do seu site
 
 Aceite o convite para se juntar ao repositório criado para o seu Site. Esse
 convite é enviado para o endereço de e-mail do seu perfil do Github.
@@ -97,7 +92,7 @@ colaborador do Site na aba Configurações do site no Admin.
 
 <!-- ![Adicionando colaborador no repositório](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9) -->
 
-![Adding collaborator to the repository](/docs/setup/repository-access.png)
+![Adicionando colaborador no repositório](/docs/setup/repository-access.png)
 
 Use o comando `git clone` para baixar o código do site para o seu máquina.
 Recomendamos o uso de SSH. Abra o terminal e execute o comando:
@@ -113,20 +108,30 @@ https_, por meio da ferramenta _Github_ ou através de uma IDE. Na página do
 repositório no _Github_ há detalhes sobre algumas diferentes maneiras para fazer
 o clone.
 
-# Desenvolvendo com a deco
+### 3. Executar servidor local
 
-## Executar servidor local
+#### 3.1 Crie um novo ambiente
 
-Para executar seu site localmente, crie um novo ambiente na aba Releases. Isso
-permitirá que as mudanças feitas no painel administrativo do Deco sejam
+Para executar seu site localmente, crie um novo ambiente na aba Releases.
+Isso permitirá que as mudanças feitas no Admin da deco sejam 
 refletidas no seu repositório local e vice-versa.
 
 ![Criar novo ambiente](/docs/setup/create-environment.png)
 
-Após definir um nome para o seu ambiente e escolher seu host como localhost,
-copie o comando e cole-o no seu terminal na pasta do site.
+#### 3.2 Defina o nome e o host do seu ambiente
 
-![Escolhendo host e iniciando servidor](/docs/setup/start-server.png)
+Escolha um nome para o seu ambiente e defina seu host como localhost.
+
+![Definindo nome e host do ambiente](/docs/setup/choose-host.png)
+
+#### 3.3 Execute seu site localmente
+
+Copie o comando mostrado depois da criação do ambiente e cole-o no seu 
+terminal na pasta do site.
+
+![Comando de iniciar server](/docs/setup/start-server-command.png)
+
+![Iniciando server no terminal](/docs/setup/start-server-terminal.png)
 
 Aguarde a inicialização do projeto. Na primeira execução, o deno irá baixar e
 realizar um cache das dependências do projeto, e a deco irá preparar detalhes do
@@ -141,17 +146,15 @@ O site estará acessível em https://{nome-do-ambiente}--{nome-do-site}.deco.sit
 Caso o código de alguma seção em uso na página inicial do site seja alterado,
 isto será refletido no endereço acima.
 
-## Publicando alterações
+#### 3.4 Publicando alterações
 
 O processo de _deploy_ em development é muito simples: apenas fazer um _git
 push_ das alterações na _branch_ _**main**_.
 
-Acessando o endereço em dev (como `https://deco-sites-exemplo.decocdn`), essas
-alterações estarão disponíveis.
+Você também pode publicar seu ambiente no próprio Admin clicando no botão de
+Publicar agora, na página do seu ambiente.
 
-Você também pode criar um domínio deco.site que disponibilizará para uso
-`https://example.deco.site/`. Para fazer isso, você precisa solicitar para
-alguém do time da deco.
+![Publicar mudanças](/docs/setup/publish-button.png)
 
 ## Agora você pode começar a criar sites cada vez mais do seu jeito! :)
 
