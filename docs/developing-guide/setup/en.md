@@ -9,13 +9,13 @@ since: 1.0.0
 - **Important**, you can access [our Discord](https://deco.cx/discord) to ask
   questions or report issues with _deco.cx_. Join our community too!
 
-# Summary
+## Summary
 
 1. Technology stack
 2. Start developing
 3. Developing with deco
 
-# Technology stack
+## Technology stack
 
 When creating a website or online store with _deco.cx_, users have the
 flexibility to create [Sections](/docs/en/concepts/section) and
@@ -52,9 +52,9 @@ Node.js (_fun fact_: they were
 developers. It is designed to make it easy to create high-quality,
 high-performance, and highly customizable web applications.
 
-# Start developing
+## Start developing
 
-## Required Tools
+### Required Tools
 
 The only setup required to code _deco.cx_ sites is to **install Deno** on your
 machine. To install Deno, follow the
@@ -67,6 +67,7 @@ We highly recommend using
 [Visual Studio Code](https://code.visualstudio.com/download) as the IDE and
 [Git](https://github.com/git-guides/install-git) as the version control tool.
 
+<!-- help: o que eh isso? kkkkkkk -->
 <!-- ## Test Deco Locally (Optional)!
 
 Deco offers a mechanism to test and explore our system without the need to
@@ -75,16 +76,11 @@ deploy code or make a deployment on our infrastructure. To do this, visit
 
 ![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341) -->
 
-## Create a Deco Site
+### 1. Create a Deco Site
 
-**Important**: Before proceeding with this section, make sure to check out
-[Creating a Site](/docs/en/getting-started/creating-a-site).
+Follow the steps in the [Creating a Site tutorial](/docs/en/getting-started/creating-a-site).
 
-_deco.cx_ abstracts all the complexities of setting up a repository, connecting
-a CMS, and deploying to the edge. This allows you to focus on what matters most:
-the code and content of your site.
-
-## Clone Your Site Repository
+### 2. Clone Your Site Repository
 
 Accept the invitation to join the repository created for your site. This
 invitation is sent to the email address associated with your GitHub profile.
@@ -110,20 +106,29 @@ Alternatively, you can clone the repository using other methods, such as _git
 https_, the _GitHub_ tool, or an IDE. The repository page on
 _GitHub_ provides details about different ways to clone.
 
-## Developing with Deco
+### 3. Run Local Server
 
-### Run Local Server
-
+#### 3.1 Create new environment
 To run your site locally, create a new environment in the Releases tab.
-This will allow changes made in the Deco admin panel to be reflected in your
+This will allow changes made in the deco Admin panel to be reflected in your
 local repository and vice versa.
 
 ![Create new environment](/docs/setup/create-environment.png)
 
-After setting a name for your environment and choosing your host as localhost, 
-copy the command and paste it into your terminal in the site folder.
+#### 3.2 Set a name and a host to your environment
 
-![Choosing environment and starting server](/docs/setup/start-server.png)
+Choose a name for your environment and set your host as localhost. 
+
+![Choosing environment and starting server](/docs/setup/choose-host.png)
+
+#### 3.3 Run your site locally
+
+Copy the command shown after you create your environment and paste it into your 
+terminal in the site folder.
+
+![Start server command](/docs/setup/start-server-command.png)
+
+![Execute command on terminal](/docs/setup/start-server-terminal.png)
 
 Wait for the project to initialize. On the first run, Deno will download and
 cache the project dependencies, and Deco will prepare the site details.
@@ -137,17 +142,15 @@ The site will be accessible at `https://{environment-name}--{site-name}.deco.sit
 If the code of any section used on the site's homepage is modified, it will be
 reflected at the above address.
 
-### Publishing Changes
+#### 3.4 Publishing Changes
 
 The development deployment process is very simple: do a git push of the changes 
 to the main branch.
 
-These changes will be available when accessing the dev URL (such as
-`https://deco-sites-example.decocdn/`).
+Alternativaly, publish your local environment in the Admin by clicking on the
+Publish now button in your environment page.
 
-You can also create a deco.site domain that will make
-`https://example.deco.site/` available to use. To do so, you need to request
-that from someone on the Deco team.
+![Publish changes](/docs/setup/publish-button.png)
 
 ## Start Creating Sites Your Way! :)
 
