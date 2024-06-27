@@ -1,0 +1,20 @@
+{
+  "name": "Glossary",
+  "path": "/glossary",
+  "sections": [
+    {
+      "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "site/sections/PageContest/Hero.tsx",
+      "description": "testando"
+    },
+    {
+      "__resolveType": "Deco Header [EN]"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

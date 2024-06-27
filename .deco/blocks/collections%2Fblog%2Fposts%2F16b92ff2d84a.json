@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/posts/16b92ff2d84a",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [],
+    "categories": []
+  }
+}
