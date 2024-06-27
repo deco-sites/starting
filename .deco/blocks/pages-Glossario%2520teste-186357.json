@@ -1,0 +1,19 @@
+{
+  "name": "Glossario teste",
+  "path": "/glossarytest",
+  "sections": [
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "site/sections/Camp/Hero/Hero.tsx"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

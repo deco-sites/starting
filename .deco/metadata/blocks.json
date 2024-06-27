@@ -1252,5 +1252,11 @@
   "/.deco/blocks/deco-blog.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/blog.ts"
+  },
+  "/.deco/blocks/pages-Glossary-979161.json": {
+    "name": "Glossary",
+    "path": "/glossary",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
