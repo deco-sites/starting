@@ -220,13 +220,13 @@ export default function Header({ menuLinks, ...props }: Props) {
             </a>
           </li>
         </ul>
-        <ul class="hidden lg:flex lg:flex-row h-full px-8 py-2 rounded-xl bg-white/5  border border-[#FFFFFF33] backdrop-blur-3xl gap-14 justify-between">
-          <div class="flex gap-10">
+        <div class="hidden lg:flex lg:flex-row h-full px-8 py-2 rounded-xl bg-white/5 border border-[#FFFFFF33] gap-14 justify-between">
+          <ul class="flex gap-10">
             {menuLinks.map((link, index) => {
               return <MenuLink key={index} {...link} />;
             })}
-          </div>
-          <div class="flex gap-6 align-end">
+          </ul>
+          <ul class="flex gap-6 align-end">
             <li class="relative h-full grid hover:text-[#02F67C] text-transparent">
               <a
                 target={"_blank"}
@@ -262,7 +262,7 @@ export default function Header({ menuLinks, ...props }: Props) {
                     </clipPath>
                   </defs>
                 </svg>
-                <span class="h-4">{stars.value}</span>
+                <span class="h-4">{members.value}</span>
               </a>
             </li>
             <li class="group relative grid hover:text-[#02F67C] text-transparent">
@@ -286,11 +286,11 @@ export default function Header({ menuLinks, ...props }: Props) {
                   />
                 </svg>
 
-                <span class="h-4">{members.value}</span>
+                <span class="h-4">{stars.value}</span>
               </a>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
         <ul class=" ml-auto flex flex-row items-center lg:hidden gap-4 z-[51]">
           <li>
             <a
