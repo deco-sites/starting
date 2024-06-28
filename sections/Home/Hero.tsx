@@ -74,7 +74,7 @@ export default function Hero({
               border: "1px solid rgba(2, 246, 124, 0.15)",
             }}
             target={alert.href?.includes("http") ? "_blank" : "_self"}
-            class="font-albert-sans mx-6 lg:mx-0 flex items-center texxt-[14px] gap-4 rounded-[56px] bg-white/5 border border-white/[.15] backdrop-blur-xl py-2 px-4 z-10 text-white hover:scale-[1.05] transition-all duration-300 ease-out cursor-pointer"
+            class="font-albert-sans mx-6 lg:mx-0 flex items-center texxt-[14px] gap-4 rounded-lg bg-white/5 border border-white/[.15] backdrop-blur-xl py-2 px-4 z-10 text-white hover:scale-[1.05] transition-all duration-300 ease-out cursor-pointer"
           >
             {alert.image &&
               (
