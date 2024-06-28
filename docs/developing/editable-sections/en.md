@@ -86,7 +86,6 @@ export default function HeroFlats({
           )}
 
           ...
-          
         </div>
       </div>
     </div>
@@ -97,13 +96,12 @@ export default function HeroFlats({
 Observe the exported types in this file. These same types are accessible in the
 Admin when creating an Hero block. In the Admin, select the **Sections**, the
 `Hero` block, and choose the option to create a block to view the same
-properties in an editing form.
-Block properties are identical to those found in the Admin form.
+properties in an editing form. Block properties are identical to those found in
+the Admin form.
 
 ![Editing properties of the Hero Section](/docs/editable-section/section-props.png)
 
 <!-- ![Create Block](https://github.com/deco-cx/apps/assets/882438/c7eee318-c6df-4ade-abd8-66390758aca7) -->
-
 
 <!-- ```tsx
 /** @title {{{title}}} - {{{href}}} */
@@ -136,10 +134,10 @@ same one the developer uses.
 
 # First modification and environment selection
 
-Run the project locally and modify the code of the `Hero` to
-receive a new optional property, the `highlight` of a CTA link. To do this, modify
-the `CTA` type and the JSX code of the component, remembering to save the file
-after the modification.
+Run the project locally and modify the code of the `Hero` to receive a new
+optional property, the `highlight` of a CTA link. To do this, modify the `CTA`
+type and the JSX code of the component, remembering to save the file after the
+modification.
 
 ```tsx
 import type { ImageWidget } from "apps/admin/widgets.ts";
@@ -200,31 +198,34 @@ export default function HeroFlats({
 
           ...
 
-            <div class="flex flex-col items-center lg:items-start lg:flex-row gap-4">
-              {cta?.map((item) => (
-                <a
-                  key={item?.id}
-                  id={item?.id}
-                  href={item?.href}
-                  target={item?.href.includes("http") ? "_blank" : "_self"}
-                  class={`group relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out ${
-                    item.variant === "Reverse"
-                      ? "bg-secondary text-white"
-                      : "bg-accent text-black"
+          <div class="flex flex-col items-center lg:items-start lg:flex-row gap-4">
+            {cta?.map((item) => (
+              <a
+                key={item?.id}
+                id={item?.id}
+                href={item?.href}
+                target={item?.href.includes("http") ? "_blank" : "_self"}
+                class={`group relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out ${
+                  item.variant === "Reverse"
+                    ? "bg-secondary text-white"
+                    : "bg-accent text-black"
+                }`}
+              >
+                <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
+                </span>
+                /* change to highlight the text button */
+                <span
+                  class={`relative font-medium lg:text-[20px] ${
+                    item?.highlight ? "font-black" : ""
                   }`}
                 >
-                  <span class="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40">
-                  </span>
-                  /* change to highlight the text button */
-                  <span class={`relative font-medium lg:text-[20px] ${item?.highlight ? "font-black" : ""}`}>
-                    {item?.text}
-                  </span>
-                </a>
-              ))}
-            </div>
+                  {item?.text}
+                </span>
+              </a>
+            ))}
+          </div>
 
-            ...
-          
+          ...
         </div>
       </div>
     </div>
@@ -235,20 +236,19 @@ export default function HeroFlats({
 _Altering the Link type and JSX with the new `highlight` property_
 
 When making this modification locally, it does not affect or impact the live
-Site. However, with the project running locally, it is
-possible to see this modification in the Admin itself. For this, you must 
-follow the steps to [create a local environment visible to the Admin](developing/setup).
+Site. However, with the project running locally, it is possible to see this
+modification in the Admin itself. For this, you must follow the steps to
+[create a local environment visible to the Admin](developing/setup).
 
 ![Changing the environment](/docs/editable-section/choosing-environment.png)
 
-By pointing to the environment you created, the admin now queries it to
-detect the available properties and `sections`.
+By pointing to the environment you created, the admin now queries it to detect
+the available properties and `sections`.
 
-The
-To allow others to see the modification, it is necessary to commit and push the
-changes. The `main` branch contains the code that is displayed on the default
-domain of the Site, but it is possible to view other branches of the repository
-by selecting the desired branch in the environment selector.
+The To allow others to see the modification, it is necessary to commit and push
+the changes. The `main` branch contains the code that is displayed on the
+default domain of the Site, but it is possible to view other branches of the
+repository by selecting the desired branch in the environment selector.
 
 # Step-by-step: Modifying and testing a `section`
 

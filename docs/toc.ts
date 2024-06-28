@@ -416,7 +416,7 @@ const tableOfContents: TableOfContents = [
           pt: "Feature Flags",
           en: "Feature Flags",
         },
-        slug: "sdk/feature-flags"
+        slug: "sdk/feature-flags",
       },
       {
         title: {
@@ -424,8 +424,8 @@ const tableOfContents: TableOfContents = [
           en: "Headless CMS",
         },
         slug: "headless-cms",
-      }
-    ]
+      },
+    ],
   },
   /*
   {
@@ -584,7 +584,7 @@ const tableOfContents: TableOfContents = [
         slug: "api-reference/use-script",
       },
     ],
-  }
+  },
 ];
 
 if (import.meta.main) {

@@ -43,7 +43,8 @@ function SubMenu({ menu }: { menu: Menu[] }) {
                   <li>
                     <a href={submenuItem.href} class="inline-block group">
                       <div class="mb-[6px]">{submenuItem.title}</div>
-                      <div class="h-[2px] bg-white w-0 group-hover:w-full duration-500"></div>
+                      <div class="h-[2px] bg-white w-0 group-hover:w-full duration-500">
+                      </div>
                     </a>
                   </li>
                 );

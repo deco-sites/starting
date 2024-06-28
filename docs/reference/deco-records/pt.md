@@ -49,6 +49,7 @@ No exemplo a seguir, será criado uma tabela com nome profiles, com as colunas:
 <iframe width="640" height="400" src="https://www.loom.com/embed/7d7442496a8c45109eaf67f1e00fc2f1?sid=2124b27e-d754-44f0-b7a2-8fc0e977d945" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <!-- Use span due to a bug in markdown parser deno-gfm -->
+
 <span>1.</span> Edite o arquivo `db/schema.ts` para criar tabelas.
 
 ```ts
@@ -61,31 +62,32 @@ export const profiles = sqliteTable("profiles", {
 });
 ```
 
-<span>2.</span> Entre no admin do seu site, clique no menu de `Settings`, em seguida, na
-   seção Database credentials, clique em `Generate now`. Por fim, clique no
-   icone de copiar as credenciais.
+<span>2.</span> Entre no admin do seu site, clique no menu de `Settings`, em
+seguida, na seção Database credentials, clique em `Generate now`. Por fim,
+clique no icone de copiar as credenciais.
 
-<span>3.</span> Adicione as credenciais, nas variáveis de ambiente do sistema operacional do
-   seu computador.
-   ![Visualização do botão de gerar credenciais](/docs/reference/deco-records/generate-credentials.webp)
+<span>3.</span> Adicione as credenciais, nas variáveis de ambiente do sistema
+operacional do seu computador.
+![Visualização do botão de gerar credenciais](/docs/reference/deco-records/generate-credentials.webp)
 
-<span>4.</span> Execute a deno task `db:setup:deps` no seu terminal para instalar as
-   dependências necessárias para realizar o schema migration. É necessário
-   versão do deno maior ou igual a 1.43.0 e utilizar a variável de ambiente
-   `DENO_FUTURE=1` para habilitar a instalação de módulos npm.
+<span>4.</span> Execute a deno task `db:setup:deps` no seu terminal para
+instalar as dependências necessárias para realizar o schema migration. É
+necessário versão do deno maior ou igual a 1.43.0 e utilizar a variável de
+ambiente `DENO_FUTURE=1` para habilitar a instalação de módulos npm.
 
-<span>5.</span> Execute a deno task `db:schema:update`, para criar os arquivos sql responsáveis
-   pela schema migration e aplica-los ao banco de dados. Execute este comando sempre que realizar uma alteração
-   nas suas tabelas para gerar novas schema migrations.
+<span>5.</span> Execute a deno task `db:schema:update`, para criar os arquivos
+sql responsáveis pela schema migration e aplica-los ao banco de dados. Execute
+este comando sempre que realizar uma alteração nas suas tabelas para gerar novas
+schema migrations.
 
 ```sh
 deno task db:setup:deps
 ```
 
-<span>6.</span> No menu de records do seu site, no admin da deco, terá as tabelas de
-   `profiles` e `__drizzle__migrations`. A tabela drizzle__migrations é auto
-   gerada e utilizada pelo drizzle-kit para gerenciar os schema migrations.
-   ![Visualização das tabelas do deco records](/docs/reference/deco-records/records-view-tables.webp)
+<span>6.</span> No menu de records do seu site, no admin da deco, terá as
+tabelas de `profiles` e `__drizzle__migrations`. A tabela drizzle__migrations é
+auto gerada e utilizada pelo drizzle-kit para gerenciar os schema migrations.
+![Visualização das tabelas do deco records](/docs/reference/deco-records/records-view-tables.webp)
 
 > Adicione os arquivos auto gerados em um git commit e realize um push para o
 > git remoto.
@@ -111,15 +113,15 @@ type ProfilesKeys = keyof ProfileInsert;
 type ProfileValue<K extends keyof ProfileInsert> = ProfileInsert[K];
 
 /**
-* Checa se `key` é uma chave válida do tipo profile.
-*/
+ * Checa se `key` é uma chave válida do tipo profile.
+ */
 const isProfilePropKey = (
   key: string,
 ): key is ProfilesKeys => key in profiles.$inferInsert;
 
 /**
-* Checa se `value` é do mesmo tipo de profiles[key]
-*/
+ * Checa se `value` é do mesmo tipo de profiles[key]
+ */
 const isProfilePropType = (
   key: ProfilesKeys,
   value: unknown,
@@ -153,8 +155,7 @@ export async function loader(
     await drizzle.insert(profiles).values(
       newProfile as typeof profiles.$inferInsert,
     );
-  } 
-  // Se mode for delete e email for definido e não vazio, então remova todos or perfis com este email.
+  } // Se mode for delete e email for definido e não vazio, então remova todos or perfis com este email.
   else if (mode === "delete" && email) {
     await drizzle.delete(profiles).where(eq(profiles.email, email));
   }
@@ -214,7 +215,7 @@ export default function ManageProfiles(
 
       <div class="divide-y divide-gray-300 p-2 w-fit">
         <h3>Members List</h3>
-        {profiles.map((profile) => {       
+        {profiles.map((profile) => {
           // Url da section, com a propriedade mode = delete e email do perfil a ser removido, será utilizada para submit do form e remoção  do perfil.
           const profileDeleteUrl = useSection<Props>({
             props: { mode: "delete", email: profile.email ?? "" },
@@ -244,7 +245,8 @@ export default function ManageProfiles(
 ```
 
 No exemplo anterior, o inline loader que faz utiliza o cliente `drizzle`, que é
-fornecido pela app do records, e faz uma consulta no banco de dados, insere e remove perfis.
+fornecido pela app do records, e faz uma consulta no banco de dados, insere e
+remove perfis.
 
 ## Desenvolvendo localmente
 

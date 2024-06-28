@@ -89,9 +89,9 @@ the code and content of your site.
 Accept the invitation to join the repository created for your site. This
 invitation is sent to the email address associated with your GitHub profile.
 
-If you haven't used a GitHub account to log into the admin panel or haven't received
-an invitation, you can add a GitHub account as a collaborator to the site in the
-Settings tab.
+If you haven't used a GitHub account to log into the admin panel or haven't
+received an invitation, you can add a GitHub account as a collaborator to the
+site in the Settings tab.
 
 <!-- ![Adding collaborator to the repository](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9) -->
 
@@ -107,20 +107,20 @@ git clone git@github.com:deco-sites/{site-name}.git
 **Remember to replace `site-name` with the name of your site.**
 
 Alternatively, you can clone the repository using other methods, such as _git
-https_, the _GitHub_ tool, or an IDE. The repository page on
-_GitHub_ provides details about different ways to clone.
+https_, the _GitHub_ tool, or an IDE. The repository page on _GitHub_ provides
+details about different ways to clone.
 
 ## Developing with Deco
 
 ### Run Local Server
 
-To run your site locally, create a new environment in the Releases tab.
-This will allow changes made in the Deco admin panel to be reflected in your
-local repository and vice versa.
+To run your site locally, create a new environment in the Releases tab. This
+will allow changes made in the Deco admin panel to be reflected in your local
+repository and vice versa.
 
 ![Create new environment](/docs/setup/create-environment.png)
 
-After setting a name for your environment and choosing your host as localhost, 
+After setting a name for your environment and choosing your host as localhost,
 copy the command and paste it into your terminal in the site folder.
 
 ![Choosing environment and starting server](/docs/setup/start-server.png)
@@ -128,7 +128,8 @@ copy the command and paste it into your terminal in the site folder.
 Wait for the project to initialize. On the first run, Deno will download and
 cache the project dependencies, and Deco will prepare the site details.
 
-The site will be accessible at `https://{environment-name}--{site-name}.deco.site`.
+The site will be accessible at
+`https://{environment-name}--{site-name}.deco.site`.
 
 <!-- > Some browsers may block access to or execution of code on the `localhost`
 > domain! Disable browser ad blockers or privacy protections to access this
@@ -139,7 +140,7 @@ reflected at the above address.
 
 ### Publishing Changes
 
-The development deployment process is very simple: do a git push of the changes 
+The development deployment process is very simple: do a git push of the changes
 to the main branch.
 
 These changes will be available when accessing the dev URL (such as
@@ -151,9 +152,9 @@ that from someone on the Deco team.
 
 ## Start Creating Sites Your Way! :)
 
-Keep exploring Deco to understand its potential and learn how to create or modify
-sections, loaders, and other elements to build increasingly personalized sites
-and experiences.
+Keep exploring Deco to understand its potential and learn how to create or
+modify sections, loaders, and other elements to build increasingly personalized
+sites and experiences.
 
 Be sure to join our [Discord community](https://deco.cx/discord). Stay updated
 with the latest news and keep evolving with us!

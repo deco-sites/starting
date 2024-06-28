@@ -41,16 +41,16 @@ function MobileMenuLink({ href, label, targetBlank, nested }: MenuLink) {
           {label}
         </a>
         <ul class="pl-[24px]">
-          {nested.map((item) => (
-            <MobileMenuLink {...item} />
-          ))}
+          {nested.map((item) => <MobileMenuLink {...item} />)}
         </ul>
       </li>
     );
   }
 
   return (
-    <li class={"grid items-center py-3 md:py-4 text-white opacity-70 hover:opacity-100 transition duration-300 ease-in-out"}>
+    <li
+      class={"grid items-center py-3 md:py-4 text-white opacity-70 hover:opacity-100 transition duration-300 ease-in-out"}
+    >
       <a
         href={href}
         target={targetBlank ? "_blank" : "_self"}
@@ -181,9 +181,7 @@ export default function Header(props: Props) {
               </svg>
             </label>
             <div
-              class={
-                "hidden peer-checked:flex flex-col w-[calc(100vw-16px)] h-[calc(100vh-116px)] overflow-auto gap-[40px] fixed bg-[#1E1E1E] left-0 top-[80px] pb-[80px] pt-[24px] z-50 px-3 rounded-[24px]"
-              }
+              class={"hidden peer-checked:flex flex-col w-[calc(100vw-16px)] h-[calc(100vh-116px)] overflow-auto gap-[40px] fixed bg-[#1E1E1E] left-0 top-[80px] pb-[80px] pt-[24px] z-50 px-3 rounded-[24px]"}
             >
               <ul class="flex flex-col divide-y divide-semi-white-13">
                 {props.menuLinks.map((link) => {
@@ -199,14 +197,16 @@ export default function Header(props: Props) {
                     {props.demo?.label}
                   </a>
                 </li>
-                {/* <li class="h-[50px] grid items-center bg-[#113032] text-white rounded-full">
+                {
+                  /* <li class="h-[50px] grid items-center bg-[#113032] text-white rounded-full">
               <a
                 href={props.login.url}
                 class="block px-6 font-normal text-[16px] leading-[19.36px]"
               >
                 {props.login.label}
               </a>
-            </li> */}
+            </li> */
+                }
                 <li class="h-[50px] grid items-center hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] rounded-lg">
                   <a
                     href={props.sign.url}
@@ -299,7 +299,8 @@ export default function Header(props: Props) {
               {props.demo?.label}
             </a>
           </li>
-          {/* <li>
+          {
+            /* <li>
             <a
               href={props.login.url}
               class="flex gap-2 items-center text-[#02F67C] bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
@@ -324,7 +325,8 @@ export default function Header(props: Props) {
               </svg>
               <span class="text-[12px] ml-[-4px]">100</span>
             </a>
-          </li> */}
+          </li> */
+          }
           <li>
             <a
               href={props.sign.url}
@@ -337,7 +339,4 @@ export default function Header(props: Props) {
       </nav>
     </section>
   );
-
-
-  
 }

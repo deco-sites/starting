@@ -23,7 +23,8 @@ export interface Props {
 }
 
 export default function StartingCards({
-  title = "Designed to be flexible.<br><span class='text-[#949E9E]'>You can start from anywhere.</span>",
+  title =
+    "Designed to be flexible.<br><span class='text-[#949E9E]'>You can start from anywhere.</span>",
   cards = [
     {
       image:
@@ -70,7 +71,8 @@ export default function StartingCards({
           dangerouslySetInnerHTML={{
             __html: title,
           }}
-        ></h2>
+        >
+        </h2>
       )}
       <div class="grid md:grid-cols-6 gap-6 w-full">
         {cards?.map((card, index) => (

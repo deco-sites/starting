@@ -38,7 +38,6 @@ export interface Props {
   discordUrl: string;
 }
 
-
 function MobileMenuDropdown({ icon, nested, title }: ColumnMenu) {
   const [open, setOpen] = useState(false);
 
@@ -173,7 +172,7 @@ export default function Header({ menuLinks, ...props }: Props) {
     const total_stars = repos.reduce(
       (acc: number, repo: { stargazers_count: number }) =>
         acc + repo.stargazers_count,
-      0
+      0,
     );
     console.log(total_stars);
     stars.value = total_stars;
@@ -181,7 +180,7 @@ export default function Header({ menuLinks, ...props }: Props) {
 
   const retrieveDiscordMemberCount = async () => {
     const response = await fetch(
-      "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true"
+      "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true",
     );
     const discordData = await response.json();
     console.log(discordData.approximate_member_count);
@@ -359,11 +358,9 @@ export default function Header({ menuLinks, ...props }: Props) {
           </div>
         </div>
         <div
-          class={
-            open
-              ? "flex flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"
-              : "hidden"
-          }
+          class={open
+            ? "flex flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"
+            : "hidden"}
         >
           <ul class="flex flex-col">
             {open &&
@@ -435,7 +432,8 @@ export default function Header({ menuLinks, ...props }: Props) {
           </ul>
         </div>
         <ul class="hidden lg:flex lg:flex-row gap-4 items-center">
-          {/* <li>
+          {
+            /* <li>
             <a
               href={props.login.url}
               class="flex gap-2 items-center text-[#02F67C] bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
@@ -460,7 +458,8 @@ export default function Header({ menuLinks, ...props }: Props) {
               </svg>
               <span class="text-[12px] ml-[-4px]">100</span>
             </a>
-          </li> */}
+          </li> */
+          }
           <li>
             <a
               href={props.sign.url}

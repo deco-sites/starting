@@ -106,12 +106,12 @@ const LogoSlider = ({
     <div className="logos py-15 relative">
       <div
         className="flex whitespace-nowrap gap-[9px] lg:gap-[18px]"
-        onMouseEnter={(e) =>
-          (e.currentTarget.style.animationPlayState = "paused")
-        }
-        onMouseLeave={(e) =>
-          (e.currentTarget.style.animationPlayState = "running")
-        }
+        onMouseEnter={(
+          e,
+        ) => (e.currentTarget.style.animationPlayState = "paused")}
+        onMouseLeave={(
+          e,
+        ) => (e.currentTarget.style.animationPlayState = "running")}
       >
         {renderLogoSlide()}
         {renderLogoSlide()}
@@ -132,30 +132,24 @@ export default function SitesCarousel({
 }: Props) {
   const firstList = useMemo(
     () =>
-      firstSlider && firstSlider.length > 0
-        ? firstSlider
-        : Array(6)
-            .fill(null)
-            .map((_, i) => FIRST_IMAGES[i % 2]),
-    []
+      firstSlider && firstSlider.length > 0 ? firstSlider : Array(6)
+        .fill(null)
+        .map((_, i) => FIRST_IMAGES[i % 2]),
+    [],
   );
   const secondList = useMemo(
     () =>
-      secondSlider && secondSlider.length > 0
-        ? secondSlider
-        : Array(6)
-            .fill(null)
-            .map((_, i) => SECOND_IMAGES[i % 2]),
-    []
+      secondSlider && secondSlider.length > 0 ? secondSlider : Array(6)
+        .fill(null)
+        .map((_, i) => SECOND_IMAGES[i % 2]),
+    [],
   );
   const thirdList = useMemo(
     () =>
-      thirdSlider && thirdSlider.length > 0
-        ? thirdSlider
-        : Array(6)
-            .fill(null)
-            .map((_, i) => THIRD_IMAGES[i % 2]),
-    []
+      thirdSlider && thirdSlider.length > 0 ? thirdSlider : Array(6)
+        .fill(null)
+        .map((_, i) => THIRD_IMAGES[i % 2]),
+    [],
   );
 
   return (
@@ -167,8 +161,10 @@ export default function SitesCarousel({
           </h2>
         )}
         <div class="flex flex-col gap-[11.29px] lg:gap-6 justify-center logos py-15 relative">
-          <div className="before:absolute before:inset-y-0 before:left-0 before:w-[90px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20"></div>
-          <div className="after:absolute after:inset-y-0 after:right-0 after:w-[90px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20"></div>
+          <div className="before:absolute before:inset-y-0 before:left-0 before:w-[90px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
+          </div>
+          <div className="after:absolute after:inset-y-0 after:right-0 after:w-[90px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
+          </div>
           <a
             href={cta?.href}
             class="absolute w-[max-content] left-1/2 transform -translate-x-1/2 z-30 items-center border-[2px] lg:border-[5px] border-[#113032] bg-[#02F67C] hover:bg-[#2FD180] hover:scale-105 made-in-deco justify-center flex gap-2 lg:gap-4 px-3 py-2 lg:px-8 lg:py-6 font-[argent-pixel] text-[#113032] text-[20px] lg:text-[48px] leading-[120%] transition ease-in-out duration-300"

@@ -117,8 +117,9 @@ o clone.
 
 ## Executar servidor local
 
-Para executar seu site localmente, crie um novo ambiente na aba Releases.
-Isso permitirá que as mudanças feitas no painel administrativo do Deco sejam refletidas no seu repositório local e vice-versa.
+Para executar seu site localmente, crie um novo ambiente na aba Releases. Isso
+permitirá que as mudanças feitas no painel administrativo do Deco sejam
+refletidas no seu repositório local e vice-versa.
 
 ![Criar novo ambiente](/docs/setup/create-environment.png)
 
