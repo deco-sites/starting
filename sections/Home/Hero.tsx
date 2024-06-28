@@ -54,7 +54,7 @@ export default function Hero({
       {showRadialOnTop &&
         (
           <div
-            class="h-[200vh] z-10 w-[100vw] md:w-[100vw] absolute top-[-130%] lg:w-[100vw] lg:top-[-150%]"
+            class="h-[200vh] z-10 w-[100vw] md:w-[100vw] absolute lg:w-[100vw] lg:top-[-150%]"
             style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"
           >
           </div>

@@ -33,7 +33,7 @@ function DropdownItem({ href, label, tag }: MenuLink) {
         href={href}
         class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-black/5 rounded"
       >
-        <p class="font-sans not-italic font-normal text-[15px] text-[#fff] flex-grow flex gap-[8px] items-center whitespace-nowrap">
+        <p class="font-sans not-italic font-normal text-[15px] text-[#fff] hover:scale-[97%] hover:text-[#02F67C] flex-grow flex gap-[8px] items-center whitespace-nowrap transition duration-300 ease-in-out">
           {label}
           {tag?.description && tag?.color &&
             (
@@ -74,7 +74,7 @@ export function Dropdown({
     flat: {
       open: "text-[#fff]",
       default:
-        "relative flex text-white text-opacity-80 items-center h-full px-[20px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-centerp",
+        "relative flex text-white items-center h-full self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-centerp",
     },
   };
 
@@ -84,7 +84,7 @@ export function Dropdown({
     <div class={`group/item ${variantClass.default}`}>
       <div
         onClick={onClick}
-        class={`group-hover/item:font-bold group-hover/item:text-white z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer`}
+        class={`group-hover/item:text-[#02F67C] z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer transition duration-300 ease-in-out`}
       >
         {value}
         <svg
@@ -132,7 +132,7 @@ export function Dropdown({
                 {col.nested?.map((item) => <DropdownItem {...item} />)}
               </div>
               {columns.length - 1 > index &&
-                <div class="w-[1px] bg-[#162121] h-[300px]"></div>}
+                <div class="w-[1px] bg-[#3e4a44] h-[300px]"></div>}
             </>
           ))}
         </div>
