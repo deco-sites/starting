@@ -221,7 +221,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             </a>
           </li>
         </ul>
-        <ul class="hidden lg:flex lg:flex-row h-full px-8 py-2 rounded-xl bg-white/5  border border-[#FFFFFF33] gap-14 justify-between">
+        <ul class="hidden lg:flex lg:flex-row h-full px-8 py-2 rounded-xl bg-white/5  border border-[#FFFFFF33] backdrop-blur-3xl gap-14 justify-between">
           <div class="flex gap-10">
             {menuLinks.map((link, index) => {
               return <MenuLink key={index} {...link} />;
