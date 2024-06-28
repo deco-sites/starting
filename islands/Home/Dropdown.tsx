@@ -107,7 +107,7 @@ export function Dropdown({
           variant === "flat" ? "top-0 pt-12" : "top-[35px] pt-5"
         } z-30 absolute left-0 rounded`}
       >
-        <div class="flex flex-row gap-[48px] rounded-lg border border-[#FFFFFF33] p-6 bg-[#030806e3]">
+        <div class="flex flex-row gap-[48px] rounded-lg border border-[#FFFFFF33] p-6 bg-[#10271ee3]">
           {columns.map((col, index) => (
             <>
               <div>

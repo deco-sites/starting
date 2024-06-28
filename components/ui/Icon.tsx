@@ -44,6 +44,7 @@ export type AvailableIcons =
   | "Instagram"
   | "Linkedin"
   | "Logo"
+  | "laurel"
   | "MadeInDeco"
   | "MadeInDecoMob"
   | "MagnifyingGlass"
