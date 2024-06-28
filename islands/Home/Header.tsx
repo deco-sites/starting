@@ -220,7 +220,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             </a>
           </li>
         </ul>
-        <div class="hidden lg:flex lg:flex-row h-full px-8 py-2 rounded-xl bg-white/5 border border-[#FFFFFF33] gap-14 justify-between">
+        <div class="hidden lg:flex lg:flex-row h-full px-8 py-2 rounded-xl bg-white/5 border border-[#FFFFFF33] backdrop-blur-2xl gap-14 justify-between">
           <ul class="flex gap-10">
             {menuLinks.map((link, index) => {
               return <MenuLink key={index} {...link} />;
@@ -399,7 +399,7 @@ export default function Header({ menuLinks, ...props }: Props) {
                       fill="CurrentColor"
                     />
                   </svg>
-                  <span class="h-6 font-bold">{stars.value}</span>
+                  <span class="h-6 font-bold">{members.value}</span>
                 </a>
               </li>
               <li class="group relative grid hover:text-[#02F67C] text-transparent">
@@ -425,7 +425,7 @@ export default function Header({ menuLinks, ...props }: Props) {
                     />
                   </svg>
 
-                  <span class="h-6 font-bold">{members.value}</span>
+                  <span class="h-6 font-bold">{stars.value}</span>
                 </a>
               </li>
             </ul>

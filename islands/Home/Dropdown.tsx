@@ -81,10 +81,10 @@ export function Dropdown({
   const variantClass = variants[variant];
 
   return (
-    <div class={`group/item ${variantClass.default}`}>
+    <div class={`group/item cursor-pointer ${variantClass.default}`}>
       <div
         onClick={onClick}
-        class={`group-hover/item:text-[#02F67C] z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer transition duration-300 ease-in-out`}
+        class={`group-hover/item:text-[#02F67C] z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer transition duration-300 ease-in-out z-50`}
       >
         {value}
         <svg
@@ -103,20 +103,11 @@ export function Dropdown({
         </svg>
       </div>
       <div
-        onClick={onClick}
-        class={`${
-          open
-            ? "block cursor-pointer w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]"
-            : "hidden"
-        }`}
+        class={`${!open && "opacity-0 pointer-events-none"} group-hover/item:opacity-100 group-hover/item:pointer-events-auto ${
+          variant === "flat" ? "top-0 pt-12" : "top-[35px] pt-5"
+        } z-30 absolute left-0 rounded`}
       >
-      </div>
-      <div
-        class={`opacity-0 pointer-events-none group-hover/item:opacity-100 group-hover/item:pointer-events-auto ${
-          variant === "flat" ? "top-[48px]" : "top-[35px]"
-        } z-30 absolute left-0 pt-5 rounded`}
-      >
-        <div class="flex flex-row gap-[48px] rounded-lg bg-white/5 backdrop-blur-xl border border-[#FFFFFF33] p-6">
+        <div class="flex flex-row gap-[48px] rounded-lg border border-[#FFFFFF33] p-6 bg-[#030806e3]">
           {columns.map((col, index) => (
             <>
               <div>
