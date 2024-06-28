@@ -30,7 +30,6 @@ export interface Props {
   };
   menuLinks: MenuLink[];
   idiom: string;
-  pageInitial: string;
   demo?: { label: string; url: string };
   login: { label: string; url: string };
   sign: { label: string; url: string };
@@ -38,6 +37,7 @@ export interface Props {
   gitUrl: string;
   discordUrl: string;
 }
+
 
 function MobileMenuDropdown({ icon, nested, title }: ColumnMenu) {
   const [open, setOpen] = useState(false);
