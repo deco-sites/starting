@@ -1,4 +1,4 @@
-import { useSignal, useSignalEffect } from "@preact/signals";
+import { useSignal } from "@preact/signals";
 import { useEffect, useState } from "preact/hooks";
 import { Dropdown } from "site/islands/Home/Dropdown.tsx";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
@@ -122,10 +122,6 @@ function MobileMenuLink({ href, label, targetBlank, columns }: MenuLink) {
 }
 
 function MenuLink({ href, label, targetBlank, columns, ...props }: MenuLink) {
-  const open = useSignal(false);
-
-  const setOpen = () => (open.value = !open.value);
-
   if (columns && columns.length > 0) {
     return (
       <li
@@ -135,8 +131,6 @@ function MenuLink({ href, label, targetBlank, columns, ...props }: MenuLink) {
         <Dropdown
           columns={columns}
           value={label}
-          onClick={setOpen}
-          open={open.value}
         />
       </li>
     );
@@ -171,7 +165,6 @@ export default function Header({ menuLinks, ...props }: Props) {
         acc + repo.stargazers_count,
       0
     );
-    console.log(total_stars);
     stars.value = total_stars;
   };
 
@@ -180,7 +173,6 @@ export default function Header({ menuLinks, ...props }: Props) {
       "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true"
     );
     const discordData = await response.json();
-    console.log(discordData.approximate_member_count);
     members.value = discordData.approximate_member_count;
   };
 
@@ -191,7 +183,7 @@ export default function Header({ menuLinks, ...props }: Props) {
 
   return (
     <section class="lg:container fixed z-50 w-full top-0 lg:w-full left-1/2 transform -translate-x-1/2">
-      <nav class="flex flex-row items-center max-w-screen-2xl m-auto relative justify-between px-4 mt-8 md:px-8                                                                                                                                    z-50">
+      <nav class="flex flex-row items-center max-w-screen-2xl m-auto relative justify-between px-4 mt-8 md:px-8 z-50">
         <ul class="h-full flex items-center z-[51]">
           <li class="h-full">
             <a
@@ -217,7 +209,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             </a>
           </li>
         </ul>
-        <div class="hidden lg:flex lg:flex-row h-full px-8 py-2 rounded-xl bg-white/5 border border-[#FFFFFF33] backdrop-blur-2xl gap-14 justify-between">
+        <div class="hidden relative lg:flex lg:flex-row h-full px-8 py-2 rounded-xl bg-[#0035184d] border border-[#FFFFFF33] gap-14 justify-between before:absolute before:backdrop-blur-2xl before:w-full  before:h-full before:top-0 before:left-0 before:rounded-xl">
           <ul class="flex gap-10">
             {menuLinks.map((link, index) => {
               return <MenuLink key={index} {...link} />;
