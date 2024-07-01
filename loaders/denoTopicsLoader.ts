@@ -6,18 +6,27 @@ import type {
 } from "site/components/decohelp/pages/ui/Sidebar/Sidebar.tsx";
 import tableOfContents from "site/docs/toc.ts";
 
-
 const GITHUB_API_URL = 'https://api.github.com';
+const GH_USER_CONTENT_URL = 'https://raw.githubusercontent.com';
 const OWNER = 'deco-cx';
 const REPO = 'apps';
-const OUTPUT_DIR = 'docs';
+
+export const cache = "stale-while-revalidate";
+
+export const cacheKey = (
+  _props: unknown,
+  _req: Request,
+  _ctx: LoaderContext,
+) => {
+  return "http://localhost:3000/docs/en/overview";
+}
 
 async function fetchAppsReposWithReadme() {
   const url = `${GITHUB_API_URL}/repos/${OWNER}/${REPO}/contents`;
   const response = await fetch(url);
   const data = await response.json();
 
-  const dirsWithReadme = [];
+  const dirsWithReadme: string[] = [];
 
   if (!Array.isArray(data)) {
     return dirsWithReadme;
@@ -25,10 +34,8 @@ async function fetchAppsReposWithReadme() {
 
   for (const item of data) {
     if (item.type === 'dir') {
-      const url = `${GITHUB_API_URL}/repos/${OWNER}/${REPO}/contents/${item.path}/README.md`;
-      const response = await fetch(url, {
-        method: 'HEAD',
-      });
+      const url = `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${item.path}/README.md`;
+      const response = await fetch(url);
       const hasReadme = response.status === 200;
 
       if (hasReadme) {
@@ -42,15 +49,16 @@ async function fetchAppsReposWithReadme() {
 }
 
 const loader = async (
-  props: { urlPattern: string; group: number; basePath?: string },
+  props: { urlPattern: string; group: number; basePath?: string;},
   _req: Request,
   _ctx: LoaderContext,
-): Array<Topic> => {
+): Promise<Topic[]> => {
   const match = (new URL(_req.url)).pathname.match(props.urlPattern);
   const slug = (match && match[props.group]) ?? "/404";
   const [language, ..._rest] = slug.split("/");
   const languageTyped = language as ("en" | "pt");
   const base = props.basePath ? (props.basePath + language + "/") : "";
+
   const topics = tableOfContents.map((topic) => {
     return ({
       label: topic.title[languageTyped] ?? topic.slug,

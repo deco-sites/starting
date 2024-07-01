@@ -25,11 +25,7 @@ const tableOfContents: TableOfContents = [
       {
         title: { pt: "Criando uma nova Página", en: "Creating a new Page" },
         slug: "getting-started/creating-a-new-page",
-      }, // TODO
-      // {
-      //   title: { pt: "Reusando Seções", en: "Reusing Sections" },
-      //   slug: "getting-started/reusing-sections",
-      // },
+      },
       {
         title: {
           pt: "Segmentação de Conteúdo",
@@ -491,58 +487,6 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
-  /*
-  {
-    title: {
-      pt: "Deco Hub",
-      en: "Deco Hub",
-    },
-    children: [
-      {
-        title: {
-          pt: "NuvemShop",
-          en: "NuvemShop",
-        },
-        slug: "composable-apis/nuvemshop",
-      },
-      {
-        title: {
-          pt: "Shopify",
-          en: "Shopify",
-        },
-        slug: "composable-apis/shopify",
-      },
-      {
-        title: {
-          pt: "VNDA.",
-          en: "VNDA.",
-        },
-        slug: "composable-apis/vnda",
-      },
-      {
-        title: {
-          pt: "VTEX",
-          en: "VTEX",
-        },
-        slug: "composable-apis/vtex",
-      },
-      {
-        title: {
-          pt: "GTM",
-          en: "GTM",
-        },
-        slug: "composable-apis/gtm",
-      },
-      {
-        title: {
-          pt: "Criando um novo app",
-          en: "Creating a new app",
-        },
-        slug: "hub/create-new",
-      },
-    ],
-  },
-  /*
   /*{
     title: {
       pt: "Treinamento Comercial",
