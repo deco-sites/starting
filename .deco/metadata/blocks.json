@@ -1258,5 +1258,19 @@
     "path": "/glossary",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FGlossaryPostList.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/GlossaryPostList.tsx"
+  },
+  "/.deco/blocks/pages-Glossary%2520Post-27319.json": {
+    "name": "Glossary Post",
+    "path": "/glossary/:slug",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FGlossaryPost.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/GlossaryPost.tsx"
   }
 }
