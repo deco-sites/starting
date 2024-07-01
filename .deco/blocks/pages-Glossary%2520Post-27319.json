@@ -1,0 +1,16 @@
+{
+  "name": "Glossary Post",
+  "path": "/glossary/:slug",
+  "sections": [
+    {
+      "__resolveType": "Deco Header [EN]"
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
