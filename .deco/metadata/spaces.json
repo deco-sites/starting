@@ -197,6 +197,46 @@
       "name": "Blog",
       "pinned": true,
       "icon": "article",
+      "layout": [
+        {
+          "w": 6,
+          "h": 24
+        },
+        {
+          "w": 18,
+          "h": 24,
+          "x": 6
+        }
+      ],
+      "tabs": {
+        "tab-1": {
+          "name": "Blog",
+          "icon": "article",
+          "render": "function",
+          "viewId": "Blog",
+          "id": "tab-1",
+          "state": {
+            "__signal": null
+          }
+        },
+        "tab-2": {
+          "name": "Blog Items",
+          "icon": "article",
+          "render": "function",
+          "viewId": "Blog Items",
+          "id": "tab-2",
+          "state": {
+            "__signal": null
+          }
+        }
+      },
+      "category": "Content"
+    },
+    {
+      "id": "site-seo",
+      "name": "SEO",
+      "pinned": true,
+      "icon": "world-search",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -243,12 +283,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "tab-1",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-tab-1\" />",
+                    "id": "site-seo::Partial%20Form::pencil::Partial%20Form::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22seo%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fsite.json%5C%22%7D%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-site-seo::Partial%20Form::pencil::Partial%20Form::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22seo%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fsite.json%5C%22%7D%22%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "tab-1"
+                      "id": "site-seo::Partial%20Form::pencil::Partial%20Form::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22seo%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fsite.json%5C%22%7D%22%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -264,12 +304,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "tab-2",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-tab-2\" />",
+                    "id": "site-seo::Preview::world::Preview::%7B%22spaceId%22%3A%22%2F.deco%2Fblocks%2Fsite.json%22%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-site-seo::Preview::world::Preview::%7B%22spaceId%22%3A%22%2F.deco%2Fblocks%2Fsite.json%22%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "tab-2"
+                      "id": "site-seo::Preview::world::Preview::%7B%22spaceId%22%3A%22%2F.deco%2Fblocks%2Fsite.json%22%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -286,36 +326,6 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "tab-1": {
-          "name": "Blog",
-          "icon": "article",
-          "render": "function",
-          "viewId": "Blog",
-          "id": "tab-1",
-          "state": {
-            "__signal": null
-          }
-        },
-        "tab-2": {
-          "name": "Blog Items",
-          "icon": "article",
-          "render": "function",
-          "viewId": "Blog Items",
-          "id": "tab-2",
-          "state": {
-            "__signal": null
-          }
-        }
-      },
-      "category": "Content"
-    },
-    {
-      "id": "site-seo",
-      "name": "SEO",
-      "pinned": true,
-      "icon": "world-search",
-      "layout": [],
-      "tabs": {
         "site-seo::Partial%20Form::pencil::Partial%20Form::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22seo%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fsite.json%5C%22%7D%22%7D": {
           "name": "Partial Form",
           "icon": "pencil",
@@ -326,7 +336,8 @@
           },
           "id": "site-seo::Partial%20Form::pencil::Partial%20Form::%7B%22spaceId%22%3A%22%7B%5C%22path%5C%22%3A%5B%5C%22seo%5C%22%5D%2C%5C%22filepath%5C%22%3A%5C%22%2F.deco%2Fblocks%2Fsite.json%5C%22%7D%22%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "site-seo::Preview::world::Preview::%7B%22spaceId%22%3A%22%2F.deco%2Fblocks%2Fsite.json%22%7D": {
@@ -889,7 +900,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 41.66666666666667,
+                "width": 19.365079365079367,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -911,7 +922,7 @@
               },
               {
                 "type": "stack",
-                "width": 58.333333333333336,
+                "width": 80.63492063492063,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2343,7 +2354,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 15.387320847621561,
+                "width": 24.390243902439025,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2365,7 +2376,7 @@
               },
               {
                 "type": "stack",
-                "width": 55.96677584501094,
+                "width": 51.21951219512194,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2387,7 +2398,7 @@
               },
               {
                 "type": "stack",
-                "width": 28.64590330736749,
+                "width": 24.390243902439018,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -2425,7 +2436,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2FDeco%2520BlogPosts%2520%255BEN%255D.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2FDeco%2520BlogPosts%2520%255BEN%255D.json::Preview::world::Preview::%7B%7D": {
@@ -3431,7 +3443,7 @@
       "id": "Publish",
       "name": "Publish",
       "pinned": false,
-      "icon": "rocket",
+      "icon": "rocket-launch",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -3478,12 +3490,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "Publish::Environment::rocket::Environment::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-Publish::Environment::rocket::Environment::%7B%7D\" />",
+                    "id": "Publish::Environment::rocket-launch::Environment::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-Publish::Environment::rocket-launch::Environment::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "Publish::Environment::rocket::Environment::%7B%7D"
+                      "id": "Publish::Environment::rocket-launch::Environment::%7B%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -3500,12 +3512,12 @@
         "maximisedItemId": null
       },
       "tabs": {
-        "Publish::Environment::rocket::Environment::%7B%7D": {
+        "Publish::Environment::rocket-launch::Environment::%7B%7D": {
           "name": "Environment",
-          "icon": "rocket",
+          "icon": "rocket-launch",
           "render": "function",
           "viewId": "Environment",
-          "id": "Publish::Environment::rocket::Environment::%7B%7D",
+          "id": "Publish::Environment::rocket-launch::Environment::%7B%7D",
           "state": {
             "__signal": null
           }
@@ -4798,7 +4810,8 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2F9842.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "%2F.deco%2Fblocks%2F9842.json::Preview::world::Preview::%7B%7D": {
