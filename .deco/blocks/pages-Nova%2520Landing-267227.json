@@ -805,12 +805,12 @@
               {
                 "subTitle": "Product Hunt",
                 "title": "#1 Product of the Day",
-                "icon": "winner"
+                "icon": "laurel"
               },
               {
                 "subTitle": "Product Hunt",
                 "title": "#3 Product of the Month",
-                "icon": "thirdPlace"
+                "icon": "laurel"
               }
             ]
           },
