@@ -2,7 +2,6 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import { ComponentChildren, Fragment } from "preact";
 import { BlogPost } from "apps/blog/types.ts";
 
-
 export interface CTA {
   text?: string;
 }
@@ -56,7 +55,7 @@ export default function GlossaryPostList({
   const to = perPage * (page + 1);
 
   const ContainerComponent = page === 0 ? Container : Fragment;
-
+  console.log(posts);
   const usedFirstLetters = new Set();
 
   posts?.sort((a, b) => {
@@ -67,14 +66,14 @@ export default function GlossaryPostList({
 
   posts?.forEach((post) => {
     const title = post?.title;
-    const firstLetter = title?.charAt(0).toUpperCase();
+    const firstLetter = title?.charAt(0)?.toUpperCase();
     if (/[A-Za-z]/.test(firstLetter)) {
       usedFirstLetters.add(firstLetter);
     }
   });
 
   function getFirstLetter(title: string) {
-    return title?.charAt(0).toUpperCase();
+    return title?.charAt(0)?.toUpperCase();
   }
 
   let currentLetter = "";
@@ -109,103 +108,127 @@ export default function GlossaryPostList({
 
   return (
     <section class="bg-black">
-    <ContainerComponent>
-      <div class="bg-black">
-        <div class="hidden md:flex justify-center mb-16 gap-2">
-          {alphabet.map((letter) => {
-            const isUsed = Array.from(usedFirstLetters).includes(letter);
-            return (
-              <a
-                class={`p-2 ${isUsed ? "font-bold text-white hover:text-[#02F67C]" : "text-[#9499AD] cursor-default"}`}
-                href={isUsed ? `#${letter}` : undefined}
-              >
-                {letter}
-              </a>
-            );
-          })}
-        </div>
+      <ContainerComponent>
+        <div class="bg-black">
+          <div class="hidden md:flex justify-center mb-16 gap-2">
+            {alphabet.map((letter) => {
+              const isUsed = Array.from(usedFirstLetters).includes(letter);
+              return (
+                <a
+                  class={`p-2 ${
+                    isUsed
+                      ? "font-bold text-white hover:text-[#02F67C]"
+                      : "text-[#9499AD] cursor-default"
+                  }`}
+                  href={isUsed ? `#${letter}` : undefined}
+                >
+                  {letter}
+                </a>
+              );
+            })}
+          </div>
 
-        <div class="flex gap-10">
-          <div class="flex-col hidden md:flex">
-            <span class="text-[#02F67C]">All glossary terms</span>
-            {posts?.slice(from, to).map((post) => {
-              const title = post?.title;
-              const letter = getFirstLetter(title?.trim());
-              if (letter !== currentLetter) {
-                currentLetter = letter;
-                return (
-                  <div key={title} class="flex flex-col">
-                    <div class="w-10 h-[1px] bg-white my-4"></div>
+          <div class="flex gap-10">
+            <div class="flex-col hidden md:flex">
+              <span class="text-[#02F67C]">All glossary terms</span>
+              {posts?.slice(from, to).map((post) => {
+                const title = post?.title;
+                const letter = getFirstLetter(title?.trim());
+                if (letter !== currentLetter) {
+                  currentLetter = letter;
+                  return (
+                    <div key={title} class="flex flex-col">
+                      <div class="w-10 h-[1px] bg-white my-4"></div>
+                      <a
+                        href={`/blog/${post?.slug}`}
+                        class=" overflow-hidden  text-white hover:text-[#02F67C]"
+                      >
+                        {title}
+                      </a>
+                    </div>
+                  );
+                } else {
+                  return (
                     <a
+                      key={title}
                       href={`/blog/${post?.slug}`}
-                      class=" overflow-hidden  text-white hover:text-[#02F67C]"
+                      class="overflow-hidden  text-white hover:text-[#02F67C]"
                     >
                       {title}
                     </a>
-                  </div>
-                );
-              } else {
-                return (
-                  <a
-                    key={title}
-                    href={`/blog/${post?.slug}`}
-                    class="overflow-hidden  text-white hover:text-[#02F67C]"
-                  >
-                    {title}
-                  </a>
-                );
-              }
-            })}
-          </div>
-          <div class="gap-8 grid grid-cols-1">
-            {posts?.slice(from, to).map((post) => {
-              const title = post?.title;
-              const letter = getFirstLetter(title?.trim());
-              if (letter !== currentLetter) {
-                currentLetter = letter;
-                return (
-                  <div key={title} class="max-w-[608px]">
-                    <div class="flex flex-col gap-2 mb-6">
-                      <span id={currentLetter.toUpperCase()} class="text-[#02F67C]">{letter}</span>
-                      <div class="w-full h-[1px] bg-[#02F67C]"></div>
-                    </div>
-                    <a href={`/blog/${post?.slug}`} class=" overflow-hidden">
-                      <div class="p-6 space-y-4 bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px]">
-                        <div class="space-y-2">
-                          <h3 class="text-2xl font-bold text-white">{title}</h3>
-                          <p class="text-white">{post?.excerpt}</p>
+                  );
+                }
+              })}
+            </div>
+            <div class="gap-8 grid grid-cols-1 w-full">
+              {posts?.slice(from, to).map((post) => {
+                const title = post?.title;
+                const letter = getFirstLetter(title?.trim());
+                if (letter !== currentLetter) {
+                  currentLetter = letter;
+                  return (
+                    <>
+                      {title && (
+                        <div key={title} class="max-w-[608px] w-full">
+                          <div class="flex flex-col gap-2 mb-6">
+                            <span
+                              id={currentLetter?.toUpperCase()}
+                              class="text-[#02F67C]"
+                            >
+                              {letter}
+                            </span>
+                            <div class="w-full h-[1px] bg-[#02F67C]"></div>
+                          </div>
+                          <a
+                            href={`/blog/${post?.slug}`}
+                            class=" overflow-hidden"
+                          >
+                            <div class="p-6 space-y-4 bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px]">
+                              <div class="space-y-2">
+                                <h3 class="text-2xl font-bold text-white">
+                                  {title}
+                                </h3>
+                                <p class="text-white">{post?.excerpt}</p>
+                              </div>
+                              <div class="flex flex-wrap gap-2">
+                                <span class="text-white">Read more</span>
+                              </div>
+                            </div>
+                          </a>
                         </div>
-                        <div class="flex flex-wrap gap-2">
-                          <span class="text-white">Read more</span>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                );
-              } else {
-                return (
-                  <a
-                    key={title}
-                    href={`/blog/${post?.slug}`}
-                    class="overflow-hidden max-w-[608px] bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px]"
-                  >
-                    <div class="p-6 space-y-4">
-                      <div class="space-y-2">
-                        <h3 class="text-2xl font-bold text-white">{title}</h3>
-                        <p class="text-white">{post?.excerpt}</p>
-                      </div>
-                      <div class="flex flex-wrap gap-2">
-                        <span class="text-white">Read more</span>
-                      </div>
-                    </div>
-                  </a>
-                );
-              }
-            })}
+                      )}
+                    </>
+                  );
+                } else {
+                  return (
+                    <>
+                      {title && (
+                        <a
+                          key={title}
+                          href={`/blog/${post?.slug}`}
+                          class="overflow-hidden max-w-[608px] w-full bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px]"
+                        >
+                          <div class="p-6 space-y-4">
+                            <div class="space-y-2">
+                              <h3 class="text-2xl font-bold text-white">
+                                {title}
+                              </h3>
+                              <p class="text-white">{post?.excerpt}</p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                              <span class="text-white">Read more</span>
+                            </div>
+                          </div>
+                        </a>
+                      )}
+                    </>
+                  );
+                }
+              })}
+            </div>
           </div>
         </div>
-      </div>
-    </ContainerComponent>
+      </ContainerComponent>
     </section>
   );
 }
