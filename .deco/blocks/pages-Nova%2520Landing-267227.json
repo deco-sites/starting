@@ -995,7 +995,7 @@
                     }
                   },
                   {
-                    "title": "One-click install apps & integrations",
+                    "title": "One-Click Install Apps & Integrations",
                     "description": "Leverage a rich library of applications, themes, and templates that connect to any API and third-party data sources.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2436533f-d50a-4df8-97c7-cd176dece311"
@@ -1014,13 +1014,13 @@
                 "title": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> Your Business Continuously</p>",
                 "tabs": [
                   {
-                    "title": "Advanced SEO settings",
+                    "title": "Advanced SEO Settings",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6ad36c34-24e4-422c-a5d8-eb1f12f04d7c",
                     "description": "Native settings that provide all the tools you need for Search Engine Optimization across any platform.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/037dd328-baa1-497a-b069-1e32b2afe3ab"
                   },
                   {
-                    "title": "A/B Test & segmentation",
+                    "title": "A/B Test & Segmentation",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/84928f74-1381-433c-8f02-fc5c4046ccb4",
                     "description": "Personalize content for specific audiences using our native A/B test tool. Create experiments, campaigns and targeted experiences.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/760dcccb-2611-4c49-8899-bc8c03ae3511",
@@ -1031,7 +1031,7 @@
                   },
                   {
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/260fc6a6-2775-4faf-9175-4eb1b6faf2b5",
-                    "title": "Realtime analytics",
+                    "title": "Realtime Analytics",
                     "description": "Full web analytics, test results, and performance indicators for quick, effective responses.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d98e01fc-cc34-40fd-99d8-90f598b36247"
                   },
@@ -1043,7 +1043,7 @@
                     "label": {}
                   },
                   {
-                    "title": "Real-time collaboration & revisions",
+                    "title": "Real-time Collaboration & Revisions",
                     "description": "Experience Figma-like collaboration for coding and content editing. Manage revisions effortlessly and gain full control over publications. ",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d8363c95-b574-44f6-83f3-005765a8b48d",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c8b9964b-47ec-4ffa-b4af-7a53c16610d7"
@@ -1057,7 +1057,7 @@
                 "title": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Scale</span> Up Fast and Safely</p>",
                 "tabs": [
                   {
-                    "title": "Roles & permissions",
+                    "title": "Roles & Permissions",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/19889277-96d7-4a64-a1a5-cd5d9109e948",
                     "description": "Streamline team access with fully customizable role-based controls for secure content management.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfc55bff-717a-40f6-a0cd-4d6fa592750f",
@@ -1067,19 +1067,19 @@
                     }
                   },
                   {
-                    "title": "Realtime error logging & tracing",
+                    "title": "Realtime Error Logging & Tracing",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6aa4b493-9e88-401e-8ba1-4acbaddf05d9",
                     "description": "Comprehensive observability platform with error logs, tracing and metrics for total control.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cbd43d92-b11f-48a3-b7a2-97d8edc5af37"
                   },
                   {
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ed69bb28-4751-4d18-b0eb-c9715525d8f4",
-                    "title": "Release cycle control and instant rollback",
+                    "title": "Release Cycle Control & Instant Rollback",
                     "description": "Immutable deploys and single-commit environments unlock quick evolution without fear of pushing to prod.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9c7025a1-fa0b-4a23-a178-af4b9d94a1bc"
                   },
                   {
-                    "title": "Managed infra or self-hosted",
+                    "title": "Managed Infra or Self-Hosted",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/64e08b9f-f52f-438e-a79b-5abb47c6a56b",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/542f6867-bb64-44ff-ab18-f059fc5d9b9a",
                     "description": "Deploy your site on a globally distributed edge infrastructure designed for seamless scalability, or choose to self-host on your infrastructure.",
