@@ -1272,5 +1272,13 @@
   "/.deco/blocks/Preview%20%2Fsections%2FGlossaryPost.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/GlossaryPost.tsx"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fposts%2Fc03bdfc8a9ad.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Blogpost.ts"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FPageContest%2FHero.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/PageContest/Hero.tsx"
   }
 }
