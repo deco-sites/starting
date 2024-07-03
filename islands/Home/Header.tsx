@@ -128,10 +128,7 @@ function MenuLink({ href, label, targetBlank, columns, ...props }: MenuLink) {
         class="relative h-full grid text-white hover:text-[#02F67C] transition duration-200 ease-in-out"
         {...props}
       >
-        <Dropdown
-          columns={columns}
-          value={label}
-        />
+        <Dropdown columns={columns} value={label} />
       </li>
     );
   }
@@ -163,14 +160,14 @@ export default function Header({ menuLinks, ...props }: Props) {
     const total_stars = repos.reduce(
       (acc: number, repo: { stargazers_count: number }) =>
         acc + repo.stargazers_count,
-      0
+      0,
     );
     stars.value = total_stars;
   };
 
   const retrieveDiscordMemberCount = async () => {
     const response = await fetch(
-      "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true"
+      "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true",
     );
     const discordData = await response.json();
     members.value = discordData.approximate_member_count;
@@ -209,73 +206,51 @@ export default function Header({ menuLinks, ...props }: Props) {
             </a>
           </li>
         </ul>
-        <div class="hidden relative lg:flex lg:flex-row h-full px-8 py-2 rounded-xl bg-[#0035184d] border border-[#FFFFFF33] gap-14 justify-between before:absolute before:backdrop-blur-2xl before:w-full  before:h-full before:top-0 before:left-0 before:rounded-xl">
-          <ul class="flex gap-10">
+        <div class="hidden relative lg:flex lg:flex-row items-center h-full px-3 py-1.5 rounded-xl bg-[#0035184d] border border-[#FFFFFF33] gap-14 justify-between before:absolute before:backdrop-blur-2xl before:w-full  before:h-full before:top-0 before:left-0 before:rounded-xl">
+          <ul class="flex items-center gap-10">
             {menuLinks.map((link, index) => {
               return <MenuLink key={index} {...link} />;
             })}
           </ul>
           <ul class="flex gap-6 align-end">
-            <li class="relative h-full grid hover:text-[#02F67C] text-transparent">
-              <a
-                target={"_blank"}
-                href={props.discordUrl}
-                class="flex items-center gap-2 opacity-60 hover:opacity-100 text-white text-[13px] transition ease-in duration-200 justify-center"
-                style="background-size: 200%;"
-              >
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-4 h-4"
-                >
-                  <g clip-path="url(#clip0_1453_8578)">
-                    <path
-                      d="M4.57219 5.62691V5.62305C4.12366 5.62305 3.76172 5.99383 3.76172 6.44955C3.76172 6.90527 4.12366 7.27607 4.57219 7.27607C5.02071 7.27607 5.38268 6.90529 5.38268 6.45341C5.38268 5.99765 5.01677 5.62691 4.57219 5.62691Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M6 0.140625C2.76396 0.140625 0.140625 2.76396 0.140625 6C0.140625 9.23604 2.76396 11.8594 6 11.8594C9.23604 11.8594 11.8594 9.23604 11.8594 6C11.8594 2.76396 9.23604 0.140625 6 0.140625ZM8.16783 9.09166C8.16783 9.09166 7.87266 8.76328 7.66029 8.47371C8.68322 8.18405 9.06888 7.60474 9.06888 7.60474C8.00531 8.26233 7.01201 8.51534 6 8.48245C4.98799 8.51527 3.99469 8.26233 2.93123 7.60474C2.93123 7.60474 3.31678 8.18405 4.33983 8.47371C4.12739 8.76338 3.83231 9.09166 3.83231 9.09166C2.07748 9.05304 1.39687 7.97937 1.3575 8.0257C1.3575 5.63508 2.51813 3.6885 2.51813 3.6885C3.55678 2.94319 4.52463 2.9122 4.70953 2.90834L4.82759 3.02034C3.5017 3.3911 2.86041 3.97043 2.86041 3.97043C3.99837 3.4208 5.07091 3.22746 6 3.21588C6.92911 3.2276 8.00156 3.4208 9.13959 3.97043C9.13959 3.97043 8.4983 3.3911 7.17244 3.02034L7.29047 2.90834C7.47539 2.9122 8.44322 2.94309 9.48187 3.6885C9.48187 3.6885 10.6425 5.63503 10.6425 8.0257C10.6031 7.97937 9.92252 9.05304 8.16783 9.09166Z"
-                      fill="currentColor"
-                    />
-                    <path
-                      d="M7.42768 5.62305V5.62691C6.98309 5.62691 6.61719 5.9977 6.61719 6.45341C6.61719 6.90529 6.97918 7.27607 7.42768 7.27607C7.87618 7.27607 8.23815 6.90529 8.23815 6.44955C8.23815 5.9938 7.8762 5.62305 7.42768 5.62305Z"
-                      fill="currentColor"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1453_8578">
-                      <rect width="12" height="12" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <span class="h-4">{members.value}</span>
-              </a>
-            </li>
             <li class="group relative grid hover:text-[#02F67C] text-transparent">
               <a
                 target={"_blank"}
                 href={props.gitUrl}
-                class="flex items-center gap-2 opacity-60 hover:opacity-100 text-white text-[13px] transition ease-in duration-200 justify-center"
+                class="group flex items-center text-white text-[12px] h-fit rounded-md border border-[#FFFFFF14] hover:border-[#FFFFFF30] justify-center"
                 style="background-size: 200%;"
               >
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-4 h-4"
-                >
-                  <path
-                    d="M6 0.25C2.685 0.25 0 2.89 0 6.146C0 8.7515 1.719 10.961 4.1025 11.74C4.4025 11.7955 4.5125 11.613 4.5125 11.4565C4.5125 11.3165 4.5075 10.9455 4.505 10.454C2.836 10.8095 2.484 9.663 2.484 9.663C2.211 8.9825 1.8165 8.8005 1.8165 8.8005C1.273 8.435 1.8585 8.4425 1.8585 8.4425C2.461 8.4835 2.7775 9.05 2.7775 9.05C3.3125 9.9515 4.182 9.691 4.525 9.5405C4.579 9.159 4.7335 8.8995 4.905 8.752C3.5725 8.6045 2.172 8.0975 2.172 5.8385C2.172 5.195 2.4045 4.669 2.7895 4.2565C2.722 4.1075 2.5195 3.508 2.842 2.696C2.842 2.696 3.3445 2.538 4.492 3.3005C4.972 3.1695 5.482 3.1045 5.992 3.1015C6.502 3.1045 7.012 3.1695 7.492 3.3005C8.632 2.538 9.1345 2.696 9.1345 2.696C9.457 3.508 9.2545 4.1075 9.1945 4.2565C9.577 4.669 9.8095 5.195 9.8095 5.8385C9.8095 8.1035 8.407 8.602 7.072 8.747C7.282 8.924 7.477 9.2855 7.477 9.838C7.477 10.627 7.4695 11.261 7.4695 11.4525C7.4695 11.607 7.5745 11.7915 7.882 11.7325C10.2825 10.9585 12 8.7475 12 6.146C12 2.89 9.3135 0.25 6 0.25Z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <div class="flex items-center gap-1 rounded-l-md bg-[#23413B97] px-3 py-[3px]">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-2.5 h-2.5"
+                  >
+                    <path
+                      d="M6 0.25C2.685 0.25 0 2.89 0 6.146C0 8.7515 1.719 10.961 4.1025 11.74C4.4025 11.7955 4.5125 11.613 4.5125 11.4565C4.5125 11.3165 4.5075 10.9455 4.505 10.454C2.836 10.8095 2.484 9.663 2.484 9.663C2.211 8.9825 1.8165 8.8005 1.8165 8.8005C1.273 8.435 1.8585 8.4425 1.8585 8.4425C2.461 8.4835 2.7775 9.05 2.7775 9.05C3.3125 9.9515 4.182 9.691 4.525 9.5405C4.579 9.159 4.7335 8.8995 4.905 8.752C3.5725 8.6045 2.172 8.0975 2.172 5.8385C2.172 5.195 2.4045 4.669 2.7895 4.2565C2.722 4.1075 2.5195 3.508 2.842 2.696C2.842 2.696 3.3445 2.538 4.492 3.3005C4.972 3.1695 5.482 3.1045 5.992 3.1015C6.502 3.1045 7.012 3.1695 7.492 3.3005C8.632 2.538 9.1345 2.696 9.1345 2.696C9.457 3.508 9.2545 4.1075 9.1945 4.2565C9.577 4.669 9.8095 5.195 9.8095 5.8385C9.8095 8.1035 8.407 8.602 7.072 8.747C7.282 8.924 7.477 9.2855 7.477 9.838C7.477 10.627 7.4695 11.261 7.4695 11.4525C7.4695 11.607 7.5745 11.7915 7.882 11.7325C10.2825 10.9585 12 8.7475 12 6.146C12 2.89 9.3135 0.25 6 0.25Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <span class="font-bold">Star us</span>
+                </div>
+                <div class="flex items-center gap-1 rounded-r-md px-3 py-[3px] bg-[#0A1F1F90] opacity-70 group-hover:opacity-100">
+                  <svg
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-2.5 h-2.5"
+                  >
+                    <path
+                      d="M13.2535 5.42745C13.202 5.28795 13.1285 5.17782 13.033 5.08972C12.9374 5.00895 12.7978 4.95022 12.6288 4.92819L9.0643 4.61249L7.68996 1.35263C7.62382 1.19845 7.52828 1.09566 7.40334 1.0149C7.27105 0.941477 7.13876 0.912109 7.00647 0.912109C6.87418 0.912109 6.74189 0.941477 6.6096 1.0149C6.48466 1.09566 6.38912 1.19845 6.32297 1.35263L4.94864 4.61249L1.38418 4.92819C1.21515 4.95022 1.07551 5.00895 0.979964 5.08972C0.884422 5.17782 0.810928 5.28795 0.759483 5.42745C0.708037 5.55961 0.700687 5.6991 0.730085 5.8386C0.759483 5.9781 0.840326 6.10291 0.965266 6.21304L3.66249 8.54781L2.85406 12.0132C2.81731 12.1748 2.83201 12.3143 2.89081 12.4464C2.9496 12.5712 3.03779 12.6814 3.14804 12.7695C3.25828 12.8502 3.38322 12.9016 3.53755 12.909C3.67719 12.9236 3.82418 12.8869 3.95647 12.7988L7.00647 10.9633L10.0565 12.7988C10.1888 12.8869 10.3284 12.9236 10.4827 12.909C10.6224 12.9016 10.7547 12.8502 10.8649 12.7695C10.9751 12.6814 11.0633 12.5712 11.1221 12.4464C11.1809 12.3143 11.1956 12.1748 11.1589 12.0132L10.3504 8.54781L13.055 6.21304C13.1726 6.10291 13.2535 5.9781 13.2829 5.8386C13.3122 5.6991 13.3049 5.55961 13.2535 5.42745ZM8.71153 8.01184L9.32153 10.655L7.00647 9.2453L4.69141 10.6403L5.30141 8.01184L3.25828 6.22773L5.94081 5.99278L7.00647 3.51118L8.07213 6.00747L10.7547 6.24975L8.71153 8.01184Z"
+                      fill="currentColor"
+                    />
+                  </svg>
 
-                <span class="h-4">{stars.value}</span>
+                  <span class="mt-0.5 font-bold">{stars.value}</span>
+                </div>
               </a>
             </li>
           </ul>
@@ -284,7 +259,7 @@ export default function Header({ menuLinks, ...props }: Props) {
           <li>
             <a
               href={props.sign.url}
-              class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[16px] px-4 py-2 transition ease-in-out duration-300"
+              class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[16px] px-5 py-2 transition ease-in-out duration-300"
             >
               {props.sign.label}
             </a>
@@ -339,9 +314,7 @@ export default function Header({ menuLinks, ...props }: Props) {
               />
             </svg>
             <div
-              class={
-                "hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"
-              }
+              class={"hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"}
             >
               <ul class="flex flex-col">
                 {menuLinks &&
@@ -414,7 +387,8 @@ export default function Header({ menuLinks, ...props }: Props) {
           </label>
         </div>
         <ul class="hidden lg:flex lg:flex-row gap-4 items-center">
-          {/* <li>
+          {
+            /* <li>
             <a
               href={props.login.url}
               class="flex gap-2 items-center text-[#02F67C] bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
@@ -439,7 +413,8 @@ export default function Header({ menuLinks, ...props }: Props) {
               </svg>
               <span class="text-[12px] ml-[-4px]">100</span>
             </a>
-          </li> */}
+          </li> */
+          }
           <li>
             <a
               href={props.sign.url}
