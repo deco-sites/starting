@@ -6,7 +6,8 @@
       "__resolveType": "Deco Header [EN]"
     },
     {
-      "__resolveType": "site/sections/PageContest/Hero.tsx"
+      "__resolveType": "site/sections/PageContest/Hero.tsx",
+      "title": "<p>CMS Glossary</p>"
     },
     {
       "__resolveType": "site/sections/GlossaryPostList.tsx",
