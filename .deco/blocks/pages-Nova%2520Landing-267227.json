@@ -957,7 +957,7 @@
                   },
                   {
                     "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>400</p>",
-                    "description": "<p><span>stars on GitHub. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"svg-container flex items-center pl-[16px]\" href=\"https://github.com/deco-cx\"><span style=\"color: rgb(246, 213, 121)\">Give us a star</span></a></p>"
+                    "description": "<p class=\"flex flex-col items-center md:items-start\">stars on GitHub.<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"svg-container pl-[16px]\" href=\"https://github.com/deco-cx\"><span style=\"color: rgb(246, 213, 121)\">Give us a star</span></a></p>"
                   }
                 ],
                 "title": "<p> </p>"
