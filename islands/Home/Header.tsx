@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { useEffect, useState } from "preact/hooks";
+import { useEffect } from "preact/hooks";
 import { Dropdown } from "site/islands/Home/Dropdown.tsx";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 export interface Alert {
@@ -39,15 +39,19 @@ export interface Props {
 }
 
 function MobileMenuDropdown({ icon, nested, title }: ColumnMenu) {
-  const [open, setOpen] = useState(false);
-
   return (
     <>
       {icon && title && (
         <li>
+          <input
+            id={title.toLocaleLowerCase()}
+            name={title.toLocaleLowerCase()}
+            type="checkbox"
+            class="peer"
+            hidden
+          />
           <div
             class="pb-[24px] flex items-center gap-2 text-white cursor-pointer hover:text-[#02F67C] transition duration-200 ease-in-out"
-            onClick={() => setOpen(!open)}
           >
             <Icon id={icon} size={25} />
             <p class="font-bold text-[16px]">{title}</p>
@@ -56,11 +60,11 @@ function MobileMenuDropdown({ icon, nested, title }: ColumnMenu) {
               width={15}
               height={15}
               strokeWidth={"3"}
-              class={`${open ? "rotate-180" : ""}`}
+              class={"peer-checked:rotate-180"}
             />
           </div>
           <div
-            class={`${open ? "flex" : "hidden"} pl-[10px] flex-col pb-[30px]`}
+            class={`hidden peer-checked:flex pl-[10px] flex-col pb-[30px]`}
           >
             {nested?.map((item) => (
               <li class={"grid items-center py-2"}>
@@ -151,7 +155,6 @@ function MenuLink({ href, label, targetBlank, columns, ...props }: MenuLink) {
 }
 
 export default function Header({ menuLinks, ...props }: Props) {
-  const [open, setOpen] = useState(false);
   const stars = useSignal("-");
   const members = useSignal("-");
 
