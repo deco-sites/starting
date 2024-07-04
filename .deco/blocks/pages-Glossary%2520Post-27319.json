@@ -6,6 +6,23 @@
       "__resolveType": "Deco Header [EN]"
     },
     {
+      "__resolveType": "site/sections/GlossaryPost.tsx",
+      "page": {
+        "slug": {
+          "__resolveType": "website/functions/requestToParam.ts",
+          "param": "slug"
+        }
+      },
+      "posts": {
+        "__resolveType": "blog/loaders/BlogpostList.ts",
+        "count": 6
+      },
+      "slug": {
+        "__resolveType": "website/functions/requestToParam.ts",
+        "param": "slug"
+      }
+    },
+    {
       "__resolveType": "Deco Footer [EN]"
     }
   ],

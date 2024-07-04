@@ -37,7 +37,7 @@ const DEFAULT_IMAGE =
 
 function Container({ children }: { children: ComponentChildren }) {
   return (
-    <div class="container lg:mx-auto lg:py-14 mx-2 py-12 text-sm">
+    <div class="container lg:mx-auto lg:pb-14 lg:pt-0 mx-2 py-12 text-sm">
       <div class="space-y-8">{children}</div>
     </div>
   );
@@ -55,7 +55,6 @@ export default function GlossaryPostList({
   const to = perPage * (page + 1);
 
   const ContainerComponent = page === 0 ? Container : Fragment;
-  console.log(posts);
   const usedFirstLetters = new Set();
 
   posts?.sort((a, b) => {
@@ -107,15 +106,15 @@ export default function GlossaryPostList({
   ];
 
   return (
-    <section class="bg-black">
+    <section class="bg-black flex justify-center mb-20">
       <ContainerComponent>
         <div class="bg-black">
-          <div class="hidden md:flex justify-center mb-16 gap-2">
+          <div class="hidden md:flex justify-center mb-16">
             {alphabet.map((letter) => {
               const isUsed = Array.from(usedFirstLetters).includes(letter);
               return (
                 <a
-                  class={`p-2 ${
+                  class={`h-10 w-10 flex justify-center items-center ${
                     isUsed
                       ? "font-bold text-white hover:text-[#02F67C]"
                       : "text-[#9499AD] cursor-default"
@@ -129,8 +128,10 @@ export default function GlossaryPostList({
           </div>
 
           <div class="flex gap-10">
-            <div class="flex-col hidden md:flex">
-              <span class="text-[#02F67C]">All glossary terms</span>
+            <div class="flex-col hidden md:flex min-w-[240px]">
+              <a href="/glossary" class="text-[#02F67C] hover:font-semibold">
+                All glossary terms
+              </a>
               {posts?.slice(from, to).map((post) => {
                 const title = post?.title;
                 const letter = getFirstLetter(title?.trim());
@@ -140,7 +141,7 @@ export default function GlossaryPostList({
                     <div key={title} class="flex flex-col">
                       <div class="w-10 h-[1px] bg-white my-4"></div>
                       <a
-                        href={`/blog/${post?.slug}`}
+                        href={`/glossary/${post?.slug}`}
                         class=" overflow-hidden  text-white hover:text-[#02F67C]"
                       >
                         {title}
@@ -151,7 +152,7 @@ export default function GlossaryPostList({
                   return (
                     <a
                       key={title}
-                      href={`/blog/${post?.slug}`}
+                      href={`/glossary/${post?.slug}`}
                       class="overflow-hidden  text-white hover:text-[#02F67C]"
                     >
                       {title}
@@ -169,7 +170,7 @@ export default function GlossaryPostList({
                   return (
                     <>
                       {title && (
-                        <div key={title} class="max-w-[608px] w-full">
+                        <div key={title} class="max-w-[640px] w-full">
                           <div class="flex flex-col gap-2 mb-6">
                             <span
                               id={currentLetter?.toUpperCase()}
@@ -180,7 +181,7 @@ export default function GlossaryPostList({
                             <div class="w-full h-[1px] bg-[#02F67C]"></div>
                           </div>
                           <a
-                            href={`/blog/${post?.slug}`}
+                            href={`/glossary/${post?.slug}`}
                             class=" overflow-hidden"
                           >
                             <div class="p-6 space-y-4 bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px]">
@@ -205,7 +206,7 @@ export default function GlossaryPostList({
                       {title && (
                         <a
                           key={title}
-                          href={`/blog/${post?.slug}`}
+                          href={`/glossary/${post?.slug}`}
                           class="overflow-hidden max-w-[608px] w-full bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px]"
                         >
                           <div class="p-6 space-y-4">

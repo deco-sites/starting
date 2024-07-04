@@ -1280,5 +1280,17 @@
   "/.deco/blocks/Preview%20%2Fsections%2FPageContest%2FHero.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/PageContest/Hero.tsx"
+  },
+  "/.deco/blocks/Preview%20blog%2Floaders%2FBlogPostPage.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/BlogPostPage.ts"
+  },
+  "/.deco/blocks/Preview%20site%2Floaders%2FblogPostDetailsLoader.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/blogPostDetailsLoader.ts"
+  },
+  "/.deco/blocks/Preview%20blog%2Floaders%2FBlogPostItem.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/BlogPostItem.ts"
   }
 }
