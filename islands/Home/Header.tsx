@@ -159,14 +159,9 @@ export default function Header({ menuLinks, ...props }: Props) {
   const members = useSignal("-");
 
   const retrieveGithubStars = async () => {
-    const response = await fetch("https://api.github.com/orgs/deco-cx/repos");
-    const repos = await response.json();
-    const total_stars = repos.reduce(
-      (acc: number, repo: { stargazers_count: number }) =>
-        acc + repo.stargazers_count,
-      0
-    );
-    stars.value = total_stars;
+    const response = await fetch("https://api.github.com/repos/deco-cx/deco");
+    const repo = await response.json();
+    stars.value = repo.stargazers_count;
   };
 
   const retrieveDiscordMemberCount = async () => {
