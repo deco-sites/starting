@@ -319,6 +319,14 @@ export default function Header({ menuLinks, ...props }: Props) {
               </ul>
               <ul class="flex flex-row justify-between items-center mt-auto">
                 <ul class="flex flex-row justify-center gap-8 w-full items-center">
+                  <li>
+                    <a
+                      href={props.sign.url}
+                      class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[16px] px-4 py-2 transition ease-in-out duration-300"
+                    >
+                      {props.sign.label}
+                    </a>
+                  </li>
                   <li class="group relative grid hover:text-[#02F67C] text-transparent">
                     <a
                       target={"_blank"}

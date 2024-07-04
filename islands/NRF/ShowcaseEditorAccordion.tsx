@@ -1,8 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { useEffect } from "preact/hooks";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { animate } from "motion";
-import Icon from "site/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 
 export interface Tab {
@@ -54,7 +51,7 @@ export const ShowcaseEditorAccordion = ({ tabs }: Props) => {
               {tab.label?.name &&
                 (
                   <span
-                    class="px-2 py-1 flex items-center justify-center rounded-[53px] text-[10px] leading-[120%] text-[#0D1717]"
+                    class="px-2 py-1 flex items-center justify-center rounded-[53px] text-[10px] leading-[120%] text-[#0D1717] whitespace-nowrap"
                     style={{ backgroundColor: tab.label?.color }}
                   >
                     {tab.label?.name}
