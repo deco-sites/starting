@@ -100,7 +100,7 @@ export function Dropdown({
       </label>
       <div
         class={`opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto group-hover/item:opacity-100 group-hover/item:pointer-events-auto ${
-          variant === "flat" ? "top-0 pt-12" : "top-[35px] pt-5"
+          variant === "flat" ? "top-0 mt-8 pt-4" : "top-[35px] pt-5"
         } z-30 absolute left-0 rounded`}
       >
         <div class="flex flex-row gap-[48px] rounded-lg border border-[#FFFFFF33] p-6 bg-[#0035184d] backdrop-blur-2xl">
