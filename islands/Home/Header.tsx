@@ -178,8 +178,8 @@ export default function Header({ menuLinks, ...props }: Props) {
   }, []);
 
   return (
-    <section class="lg:container fixed z-50 w-full top-0 lg:w-full left-1/2 transform -translate-x-1/2">
-      <nav class="flex flex-row items-center max-w-screen-2xl m-auto relative justify-between px-4 mt-8 md:px-8 z-50">
+    <section class="lg:container fixed z-50 w-full top-0 lg:w-full left-1/2 transform -translate-x-1/2 py-4 lg:py-8 before:absolute before:backdrop-blur-2xl lg:before:backdrop-blur-none before:w-full  before:h-full before:top-0 before:left-0">
+      <nav class="flex flex-row items-center max-w-screen-2xl m-auto relative justify-between px-4 md:px-8 z-50">
         <ul class="h-full flex items-center z-[51]">
           <li class="h-full">
             <a
@@ -205,7 +205,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             </a>
           </li>
         </ul>
-        <div class="hidden relative lg:flex lg:flex-row items-center h-full px-3 py-1.5 rounded-xl bg-[#0035184d] border border-[#FFFFFF33] gap-14 justify-between before:absolute before:backdrop-blur-2xl before:w-full  before:h-full before:top-0 before:left-0 before:rounded-xl">
+        <div class="hidden relative lg:flex lg:flex-row items-center h-full px-3 py-1.5 rounded-xl bg-[#0035184d] border border-[#FFFFFF33] gap-14 justify-between before:absolute lg:before:backdrop-blur-2xl lg:before:w-full  before:h-full before:top-0 before:left-0 before:rounded-xl">
           <ul class="flex items-center gap-10">
             {menuLinks.map((link, index) => {
               return <MenuLink key={index} {...link} />;
@@ -254,15 +254,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             </li>
           </ul>
         </div>
-        <ul class=" ml-auto flex flex-row items-center lg:hidden gap-4 z-[51]">
-          <li>
-            <a
-              href={props.sign.url}
-              class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[16px] px-5 py-2 transition ease-in-out duration-300"
-            >
-              {props.sign.label}
-            </a>
-          </li>
+        <ul class="ml-auto flex flex-row items-center lg:hidden gap-4 z-[51]">
           <li>
             <a
               href={props.demo?.url}
