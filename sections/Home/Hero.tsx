@@ -45,24 +45,14 @@ export default function Hero({
       text: "Try for Free",
     },
   ],
-  showRadialOnTop = true,
   shouldAddPaddingTopAndBottom = true,
 }: Props) {
   return (
     <div>
       <div class="deco-background"></div>
-      {showRadialOnTop &&
-        (
-          <div
-            class="h-[200vh] z-10 w-[100vw] md:w-[100vw] absolute lg:w-[100vw] lg:top-[-150%]"
-            style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"
-          >
-          </div>
-        )}
       <div
         class={`lg:mx-auto z-20 lg:max-w-[1440px] ${
-          shouldAddPaddingTopAndBottom &&
-          "mt-20 lg:mt-40"
+          shouldAddPaddingTopAndBottom && "mt-20 lg:mt-40"
         } relative z-20 px-4 py-14 lg:px-0 flex flex-col gap-8 justify-center items-center`}
       >
         {alert?.text && (
@@ -76,35 +66,32 @@ export default function Hero({
             target={alert.href?.includes("http") ? "_blank" : "_self"}
             class="font-albert-sans mx-6 lg:mx-0 flex items-center texxt-[14px] gap-4 rounded-lg bg-white/5 border border-white/[.15] backdrop-blur-xl py-2 px-4 z-10 text-white hover:scale-[1.05] transition-all duration-300 ease-out cursor-pointer"
           >
-            {alert.image &&
-              (
-                <img
-                  class="w-5 h-5"
-                  src={alert.image}
-                  alt="icon"
-                  width={20}
-                  height={20}
-                />
-              )}
+            {alert.image && (
+              <img
+                class="w-5 h-5"
+                src={alert.image}
+                alt="icon"
+                width={20}
+                height={20}
+              />
+            )}
             <p class="hidden lg:flex gap-[16px]">
               {alert.text}
-              {alert.readMoreText &&
-                (
-                  <>
-                    <span class="text-[#616B6B]">|</span>
-                    <span class="text-[#616B6B]">{alert.readMoreText}</span>
-                  </>
-                )}
+              {alert.readMoreText && (
+                <>
+                  <span class="text-[#616B6B]">|</span>
+                  <span class="text-[#616B6B]">{alert.readMoreText}</span>
+                </>
+              )}
             </p>
             <p class="text-sm flex gap-[16px] lg:hidden">
               {alert.mobileText || alert.text}
-              {alert.readMoreText &&
-                (
-                  <>
-                    <span class="text-[#616B6B]">|</span>
-                    <span class="text-[#616B6B]">{alert.readMoreText}</span>
-                  </>
-                )}
+              {alert.readMoreText && (
+                <>
+                  <span class="text-[#616B6B]">|</span>
+                  <span class="text-[#616B6B]">{alert.readMoreText}</span>
+                </>
+              )}
             </p>
             <svg
               class="h-5 w-5 hidden md:block"
@@ -124,37 +111,31 @@ export default function Hero({
           </a>
         )}
         <div class="leading-none">
-          {pixelTitle &&
-            (
-              <h1
-                class="font-[argent-pixel] text-[32px] md:text-[64px] lg:text-[80px] leading-[38px] md:leading-[100%] lg:leading-[80px] font-medium text-center"
-                dangerouslySetInnerHTML={{
-                  __html: pixelTitle,
-                }}
-              >
-              </h1>
-            )}
-          {title &&
-            (
-              <h1
-                class="font-albert-sans text-[32px] md:text-[64px] lg:text-[80px] leading-[38px] md:leading-[100%] lg:leading-[80px] font-medium text-center text-white"
-                dangerouslySetInnerHTML={{
-                  __html: title,
-                }}
-              >
-              </h1>
-            )}
-        </div>
-        {subTitle &&
-          (
-            <h2
-              class="font-albert-sans mx-11 inline-block text-[16px] lg:text-[20px] leading-7 text-center leading-[150%] text-[#949E9E] max-w-lg md:max-w-none"
+          {pixelTitle && (
+            <h1
+              class="font-[argent-pixel] text-[32px] md:text-[64px] lg:text-[80px] leading-[38px] md:leading-[100%] lg:leading-[80px] font-medium text-center"
               dangerouslySetInnerHTML={{
-                __html: subTitle,
+                __html: pixelTitle,
               }}
-            >
-            </h2>
+            ></h1>
           )}
+          {title && (
+            <h1
+              class="font-albert-sans text-[32px] md:text-[64px] lg:text-[80px] leading-[38px] md:leading-[100%] lg:leading-[80px] font-medium text-center text-white"
+              dangerouslySetInnerHTML={{
+                __html: title,
+              }}
+            ></h1>
+          )}
+        </div>
+        {subTitle && (
+          <h2
+            class="font-albert-sans mx-11 inline-block text-[16px] lg:text-[20px] leading-7 text-center leading-[150%] text-[#949E9E] max-w-lg md:max-w-none"
+            dangerouslySetInnerHTML={{
+              __html: subTitle,
+            }}
+          ></h2>
+        )}
         <div class="flex flex-row gap-4 justify-center items-center w-full md:w-auto">
           {ctas?.map((cta) => (
             <a
