@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { useEffect } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import { Dropdown } from "site/islands/Home/Dropdown.tsx";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 export interface Alert {
@@ -50,9 +50,7 @@ function MobileMenuDropdown({ icon, nested, title }: ColumnMenu) {
             class="peer"
             hidden
           />
-          <div
-            class="pb-[24px] flex items-center gap-2 text-white cursor-pointer hover:text-[#02F67C] transition duration-200 ease-in-out"
-          >
+          <div class="pb-[24px] flex items-center gap-2 text-white cursor-pointer hover:text-[#02F67C] transition duration-200 ease-in-out">
             <Icon id={icon} size={25} />
             <p class="font-bold text-[16px]">{title}</p>
             <Icon
@@ -305,9 +303,7 @@ export default function Header({ menuLinks, ...props }: Props) {
               />
             </svg>
             <div
-              class={
-                "hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"
-              }
+              class={"hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"}
             >
               <ul class="flex flex-col">
                 {menuLinks &&
