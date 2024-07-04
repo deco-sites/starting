@@ -1,5 +1,5 @@
 import { useSignal } from "@preact/signals";
-import { useEffect, useState } from "preact/hooks";
+import { useEffect } from "preact/hooks";
 import { Dropdown } from "site/islands/Home/Dropdown.tsx";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 export interface Alert {

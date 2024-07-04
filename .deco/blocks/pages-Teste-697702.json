@@ -16,7 +16,7 @@
             "description": "Learn how to deploy high-performances web experiences become the Elite Web "
           },
           {
-            "__resolveType": "Deco Header [EN]"
+            "__resolveType": "HeaderV2"
           },
           {
             "__resolveType": "site/sections/Camp/Theme/Theme.tsx",

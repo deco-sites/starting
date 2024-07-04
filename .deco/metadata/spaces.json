@@ -4538,7 +4538,7 @@
     },
     {
       "id": "/.deco/blocks/Deco%20Header%20%5BEN%5D.json",
-      "name": "Deco Header [EN]",
+      "name": "HeaderV2",
       "pinned": false,
       "icon": "package",
       "layout": {

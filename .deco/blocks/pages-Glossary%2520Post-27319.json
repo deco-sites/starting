@@ -3,7 +3,7 @@
   "path": "/glossary/:slug",
   "sections": [
     {
-      "__resolveType": "Deco Header [EN]"
+      "__resolveType": "HeaderV2"
     },
     {
       "__resolveType": "site/sections/GlossaryPost.tsx",
