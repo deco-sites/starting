@@ -214,10 +214,10 @@ export default function Header({ menuLinks, ...props }: Props) {
               <a
                 target={"_blank"}
                 href={props.gitUrl}
-                class="group flex items-center text-white text-[12px] h-fit rounded-md border border-[#FFFFFF14] hover:border-[#FFFFFF30] justify-center"
+                class="group flex items-center text-white text-[12px] rounded-md border border-[#FFFFFF14] hover:border-[#FFFFFF30] justify-center"
                 style="background-size: 200%;"
               >
-                <div class="flex items-center gap-1 rounded-l-md bg-[#23413B97] px-3 py-[3px]">
+                <div class="flex items-center gap-1 rounded-l-md bg-[#23413B97] px-3 py-[3px] h-full">
                   <svg
                     width="12"
                     height="12"
@@ -233,7 +233,7 @@ export default function Header({ menuLinks, ...props }: Props) {
                   </svg>
                   <span class="font-bold">Star us</span>
                 </div>
-                <div class="flex items-center gap-1 rounded-r-md px-3 py-[3px] bg-[#0A1F1F90] opacity-70 group-hover:opacity-100">
+                <div class="flex items-center gap-1 rounded-r-md h-full px-3 py-[3px] bg-[#0A1F1F90] opacity-70 group-hover:opacity-100">
                   <svg
                     viewBox="0 0 14 13"
                     fill="none"
