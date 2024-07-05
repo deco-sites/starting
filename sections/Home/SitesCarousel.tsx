@@ -2,7 +2,6 @@ import Image from "deco-sites/std/components/Image.tsx";
 import { useMemo } from "preact/hooks";
 import type { Image as ImageType } from "deco-sites/std/components/types.ts";
 import Icon from "site/components/ui/Icon.tsx";
-import { App, AppContext as AC } from "$live/mod.ts";
 
 export interface Image {
   label: string;
@@ -86,13 +85,15 @@ const LogoSlider = ({
       {logos.map((logo) => (
         <a
           href={logo.href ?? "/"}
-          class="flex items-center justify-center h-[140px] lg:h-[270px] w-[248px] lg:w-[477px] hover:scale-105 transition ease-in-out duration-300"
+          class="flex items-center justify-center h-[140px] rounded-lg lg:h-[270px] w-[248px] lg:w-[477px] hover:scale-105 transition ease-in-out duration-300"
           target="_blank"
         >
           <Image
             width={477}
+            height={270}
             src={logo.desktop as string}
             alt={logo.desktop}
+            preload={true}
             decoding="async"
             loading="lazy"
             fetchPriority="low"
@@ -113,8 +114,6 @@ const LogoSlider = ({
           e,
         ) => (e.currentTarget.style.animationPlayState = "running")}
       >
-        {renderLogoSlide()}
-        {renderLogoSlide()}
         {renderLogoSlide()}
         {renderLogoSlide()}
         {renderLogoSlide()}
