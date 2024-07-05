@@ -1,6 +1,5 @@
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 import { useRef } from "preact/hooks";
-import GoTrueAdminApi from "https://esm.sh/v135/@supabase/gotrue-js@2.57.0/dist/module/GoTrueAdminApi.js";
 
 export interface DropdownItemProps {
   label: string;
