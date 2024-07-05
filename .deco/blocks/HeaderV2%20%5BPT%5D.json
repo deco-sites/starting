@@ -1,0 +1,31 @@
+{
+  "__resolveType": "site/sections/Home/Header.tsx",
+  "alerts": {
+    "mobile": [],
+    "desktop": []
+  },
+  "menuLinks": [
+    {
+      "columns": [
+        {
+          "icon": "ArrowRight",
+          "nested": [
+            {
+              "columns": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "login": {},
+  "sign": {
+    "label": "Criar site",
+    "url": "https://admin.deco.cx"
+  },
+  "idiom": "pt",
+  "demo": {
+    "label": "Agende uma demo",
+    "url": "https://www.deco.cx/en/contact-us"
+  }
+}
