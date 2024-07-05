@@ -1,4 +1,6 @@
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
+import { useRef } from "preact/hooks";
+import GoTrueAdminApi from "https://esm.sh/v135/@supabase/gotrue-js@2.57.0/dist/module/GoTrueAdminApi.js";
 
 export interface DropdownItemProps {
   label: string;
@@ -51,11 +53,14 @@ export interface Props {
   variant?: "rounded" | "flat";
 }
 
-export function Dropdown({
-  columns,
-  value,
-  variant = "flat",
-}: Props) {
+export function Dropdown({ columns, value, variant = "flat" }: Props) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const updateInputRef = (value: boolean) => {
+    if (inputRef.current) {
+      inputRef.current.checked = value;
+    }
+  };
   const variants = {
     rounded: {
       default:
@@ -74,12 +79,15 @@ export function Dropdown({
       <input
         id={value.toLocaleLowerCase()}
         name={value.toLocaleLowerCase()}
+        ref={inputRef}
         type="checkbox"
         class="peer"
         hidden
       />
       <label
         for={value.toLocaleLowerCase()}
+        onMouseEnter={() => updateInputRef(true)}
+        onMouseLeave={() => updateInputRef(false)}
         class={`group-hover/item:text-[#02F67C] z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer transition duration-300 ease-in-out z-50`}
       >
         {value}
@@ -99,9 +107,11 @@ export function Dropdown({
         </svg>
       </label>
       <div
-        class={`opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto group-hover/item:opacity-100 group-hover/item:pointer-events-auto ${
+        class={`opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto ${
           variant === "flat" ? "top-0 mt-8 pt-4" : "top-[35px] pt-5"
         } z-30 absolute left-0 rounded`}
+        onMouseEnter={() => updateInputRef(true)}
+        onMouseLeave={() => updateInputRef(false)}
       >
         <div class="flex flex-row gap-[48px] rounded-lg border border-[#FFFFFF33] p-6 bg-[#0035184d] backdrop-blur-2xl">
           {columns.map((col, index) => (
@@ -115,7 +125,9 @@ export function Dropdown({
                     </p>
                   </div>
                 )}
-                {col.nested?.map((item) => <DropdownItem {...item} />)}
+                {col.nested?.map((item) => (
+                  <DropdownItem {...item} />
+                ))}
               </div>
               {columns.length - 1 > index && (
                 <div class="w-[1px] bg-[#3e4a44] h-[300px]"></div>
