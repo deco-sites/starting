@@ -125,9 +125,7 @@ export function Dropdown({ columns, value, variant = "flat" }: Props) {
                     </p>
                   </div>
                 )}
-                {col.nested?.map((item) => (
-                  <DropdownItem {...item} />
-                ))}
+                {col.nested?.map((item) => <DropdownItem {...item} />)}
               </div>
               {columns.length - 1 > index && (
                 <div class="w-[1px] bg-[#3e4a44] h-[300px]"></div>
