@@ -1292,5 +1292,15 @@
   "/.deco/blocks/Preview%20blog%2Floaders%2FBlogPostItem.ts.json": {
     "blockType": "loaders",
     "__resolveType": "blog/loaders/BlogPostItem.ts"
+  },
+  "/.deco/blocks/pages-Pricing-336816.json": {
+    "name": "Pricing",
+    "path": "/pricing",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/DoubleBrands.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Home/DoubleBrands.tsx"
   }
 }
