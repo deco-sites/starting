@@ -11,6 +11,7 @@ import * as $api_leads from "./routes/api/leads.tsx";
 import * as $api_platform from "./routes/api/platform.tsx";
 import * as $api_ranking from "./routes/api/ranking.ts";
 import * as $api_webinar from "./routes/api/webinar.tsx";
+import * as $bugbounty from "./routes/bugbounty.ts";
 import * as $docs_css from "./routes/docs.css.ts";
 import * as $hackathon4 from "./routes/hackathon4.ts";
 import * as $hackathon5 from "./routes/hackathon5.ts";
@@ -70,6 +71,7 @@ const manifest = {
     "./routes/api/platform.tsx": $api_platform,
     "./routes/api/ranking.ts": $api_ranking,
     "./routes/api/webinar.tsx": $api_webinar,
+    "./routes/bugbounty.ts": $bugbounty,
     "./routes/docs.css.ts": $docs_css,
     "./routes/hackathon4.ts": $hackathon4,
     "./routes/hackathon5.ts": $hackathon5,
