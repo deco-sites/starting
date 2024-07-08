@@ -10,7 +10,8 @@
       "pixelTitle": "<p><span style=\"color: #02f67c\">Simple pricing</span></p>",
       "title": "<p>that follows your growth</p>",
       "subTitle": "<p>buld, preview, and go live today. As you expand, take advantage of our usage-based pricing and pay only for what you need!</p>",
-      "ctas": []
+      "ctas": [],
+      "alert": {}
     },
     {
       "__resolveType": "DoubleBrands"
@@ -20,6 +21,44 @@
     },
     {
       "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "site/sections/PricingTiers.tsx",
+      "tiers": [
+        {
+          "features": [
+            {
+              "title": "Up to 5k pageviews"
+            },
+            {
+              "title": "Up to 5 Code Editors"
+            },
+            {
+              "title": "Unlimited Public Projects",
+              "moreInfo": "Unlimited public projects are available as long as they are hosted in public GitHub repositories."
+            },
+            {
+              "title": "Custom Domains"
+            },
+            {
+              "title": "Community-Based Support"
+            },
+            {
+              "title": "deco.pilot",
+              "subtitleInfo": "50 AI Copilot Generations Included"
+            }
+          ],
+          "button": {},
+          "title": "Free",
+          "subtitle": "Gain full control at no cost. Test in our sandbox and go live for free in just minutes.",
+          "monthlyBasePrice": 0,
+          "featuresTitle": "<p><span>Highlighted Features:</span></p>",
+          "accessButton": {
+            "title": "Start for Free",
+            "href": "/pricing"
+          }
+        }
+      ]
     }
   ],
   "seo": {
