@@ -1085,21 +1085,15 @@
                 ],
                 "thirdSlider": [
                   {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a8148204-eba3-4b11-8ac1-a8fcfcc72c29",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/75b8a05a-df2b-4860-9699-9b39d7d431cd",
-                    "label": "Anacapri",
-                    "href": "https://www.anacapri.com.br/"
-                  },
-                  {
                     "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d7a6a041-af1f-451f-b585-c2fb3fbd05b3",
                     "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/934bd0cc-4d90-410c-b21d-a67115403547",
                     "label": "Aviator",
                     "href": "https://www.aviator.com.br/"
                   },
                   {
-                    "label": "Casa & Vídeo",
                     "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/af56da52-cd0d-4d15-8487-456098db5556",
                     "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5517192f-09df-431a-81d3-53ae8d403190",
+                    "label": "Casa & Vídeo",
                     "href": "https://www.casaevideo.com.br/"
                   },
                   {
@@ -1182,6 +1176,20 @@
                     "name": "Julyanne Taboaço",
                     "description": "\"I’m sure you will soar even higher; this is just the beginning. Very grateful for this partnership and for believing in you from the very start. And what a partnership! You are tireless in evolving and suggesting improvements, embracing any challenges we face, and always ready to support and grow with us!\"",
                     "href": "https://www.linkedin.com/feed/update/urn:li:activity:7181038197907353600?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7181038197907353600%2C7181112203410894848%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287181112203410894848%2Curn%3Ali%3Aactivity%3A7181038197907353600%29"
+                  }
+                ],
+                "subtitle": "Backed by a community of +4,000 developers.",
+                "title": "<p>Join our Community</p>",
+                "socialLinks": [
+                  {
+                    "icon": "Discord",
+                    "title": "Join our Discord",
+                    "link": "https://discord.com/invite/hBUs29me8Z"
+                  },
+                  {
+                    "icon": "Github-rounded",
+                    "title": "Star us on GitHub",
+                    "link": "https://github.com/deco-cx"
                   }
                 ]
               },
