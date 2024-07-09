@@ -3221,7 +3221,7 @@
       "id": "/.deco/blocks/Deco%20Head%20%5BEN%5D.json",
       "name": "Deco Head [EN]",
       "pinned": false,
-      "icon": "package",
+      "icon": "block",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -3261,7 +3261,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 50,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -3275,6 +3275,7 @@
                     "componentState": {
                       "id": "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Properties::list::Properties::%7B%7D"
                     },
+                    "width": 30,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -3282,20 +3283,21 @@
               },
               {
                 "type": "stack",
-                "width": 50,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::world::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::world::Preview::%7B%7D\" />",
+                    "id": "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::visibility::Preview::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::visibility::Preview::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::world::Preview::%7B%7D"
+                      "id": "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::visibility::Preview::%7B%7D"
                     },
+                    "width": 70,
                     "isClosable": true,
                     "reorderEnabled": true
                   }
@@ -3317,18 +3319,20 @@
           "accepts": "function",
           "render": "function",
           "viewId": "Properties",
+          "width": 30,
           "id": "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Properties::list::Properties::%7B%7D",
           "state": {
             "__signal": null
           }
         },
-        "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::world::Preview::%7B%7D": {
+        "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::visibility::Preview::%7B%7D": {
           "name": "Preview",
-          "icon": "world",
+          "icon": "visibility",
           "accepts": "function",
           "render": "function",
           "viewId": "Preview",
-          "id": "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::world::Preview::%7B%7D",
+          "width": 70,
+          "id": "%2F.deco%2Fblocks%2FDeco%2520Head%2520%255BEN%255D.json::Preview::visibility::Preview::%7B%7D",
           "state": {
             "__signal": null
           }
@@ -6463,6 +6467,91 @@
           "viewId": "Preview",
           "width": 70,
           "id": "%2F.deco%2Fblocks%2FDoubleBrands.json::Preview::visibility::Preview::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      }
+    },
+    {
+      "id": "{\"oid\":\"2672b23e4c380654d1dcbed4c50e77565bee70ab\",\"short\":\"2672b23\",\"commit\":{\"message\":\"Remove deno.tmp and add to git ignore\\n\\nSigned-off-by: Marcos Candeia <marrcooos@gmail.com>\\n\",\"parent\":[\"37757cd4cc4e591e72dc5ba065d281543b15010d\"],\"tree\":\"42db5be7be47620939a07183dc61b472ae04101a\",\"author\":{\"name\":\"Marcos Candeia\",\"email\":\"marrcooos@gmail.com\",\"timestamp\":1720465219,\"timezoneOffset\":180},\"committer\":{\"name\":\"Marcos Candeia\",\"email\":\"marrcooos@gmail.com\",\"timestamp\":1720465219,\"timezoneOffset\":180}}}",
+      "name": "Release 2672b23",
+      "pinned": false,
+      "icon": "rocket-launch",
+      "layout": {
+        "settings": {
+          "hasHeaders": true,
+          "constrainDragToContainer": true,
+          "reorderEnabled": true,
+          "selectionEnabled": false,
+          "popoutWholeStack": false,
+          "blockedPopoutsThrowError": true,
+          "closePopoutsOnUnload": true,
+          "showPopoutIcon": false,
+          "showMaximiseIcon": false,
+          "showCloseIcon": false,
+          "responsiveMode": "onload"
+        },
+        "dimensions": {
+          "borderWidth": 8,
+          "minItemHeight": 10,
+          "minItemWidth": 10,
+          "headerHeight": 40,
+          "dragProxyWidth": 300,
+          "dragProxyHeight": 200
+        },
+        "labels": {
+          "close": "close",
+          "maximise": "maximise",
+          "minimise": "minimise",
+          "popout": "open in new window",
+          "popin": "pop in",
+          "tabDropdown": "additional tabs"
+        },
+        "content": [
+          {
+            "type": "row",
+            "isClosable": true,
+            "reorderEnabled": true,
+            "title": "",
+            "content": [
+              {
+                "type": "stack",
+                "width": 100,
+                "isClosable": true,
+                "reorderEnabled": true,
+                "title": "",
+                "activeItemIndex": 0,
+                "content": [
+                  {
+                    "id": "%7B%22oid%22%3A%222672b23e4c380654d1dcbed4c50e77565bee70ab%22%2C%22short%22%3A%222672b23%22%2C%22commit%22%3A%7B%22message%22%3A%22Remove%20deno.tmp%20and%20add%20to%20git%20ignore%5Cn%5CnSigned-off-by%3A%20Marcos%20Candeia%20%3Cmarrcooos%40gmail.com%3E%5Cn%22%2C%22parent%22%3A%5B%2237757cd4cc4e591e72dc5ba065d281543b15010d%22%5D%2C%22tree%22%3A%2242db5be7be47620939a07183dc61b472ae04101a%22%2C%22author%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket-launch::Release::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-%7B%22oid%22%3A%222672b23e4c380654d1dcbed4c50e77565bee70ab%22%2C%22short%22%3A%222672b23%22%2C%22commit%22%3A%7B%22message%22%3A%22Remove%20deno.tmp%20and%20add%20to%20git%20ignore%5Cn%5CnSigned-off-by%3A%20Marcos%20Candeia%20%3Cmarrcooos%40gmail.com%3E%5Cn%22%2C%22parent%22%3A%5B%2237757cd4cc4e591e72dc5ba065d281543b15010d%22%5D%2C%22tree%22%3A%2242db5be7be47620939a07183dc61b472ae04101a%22%2C%22author%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket-launch::Release::%7B%7D\" />",
+                    "type": "component",
+                    "componentName": "component",
+                    "componentState": {
+                      "id": "%7B%22oid%22%3A%222672b23e4c380654d1dcbed4c50e77565bee70ab%22%2C%22short%22%3A%222672b23%22%2C%22commit%22%3A%7B%22message%22%3A%22Remove%20deno.tmp%20and%20add%20to%20git%20ignore%5Cn%5CnSigned-off-by%3A%20Marcos%20Candeia%20%3Cmarrcooos%40gmail.com%3E%5Cn%22%2C%22parent%22%3A%5B%2237757cd4cc4e591e72dc5ba065d281543b15010d%22%5D%2C%22tree%22%3A%2242db5be7be47620939a07183dc61b472ae04101a%22%2C%22author%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket-launch::Release::%7B%7D"
+                    },
+                    "isClosable": true,
+                    "reorderEnabled": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "isClosable": true,
+        "reorderEnabled": true,
+        "title": "",
+        "openPopouts": [],
+        "maximisedItemId": null
+      },
+      "tabs": {
+        "%7B%22oid%22%3A%222672b23e4c380654d1dcbed4c50e77565bee70ab%22%2C%22short%22%3A%222672b23%22%2C%22commit%22%3A%7B%22message%22%3A%22Remove%20deno.tmp%20and%20add%20to%20git%20ignore%5Cn%5CnSigned-off-by%3A%20Marcos%20Candeia%20%3Cmarrcooos%40gmail.com%3E%5Cn%22%2C%22parent%22%3A%5B%2237757cd4cc4e591e72dc5ba065d281543b15010d%22%5D%2C%22tree%22%3A%2242db5be7be47620939a07183dc61b472ae04101a%22%2C%22author%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket-launch::Release::%7B%7D": {
+          "name": "Release",
+          "icon": "rocket-launch",
+          "render": "function",
+          "viewId": "Release",
+          "id": "%7B%22oid%22%3A%222672b23e4c380654d1dcbed4c50e77565bee70ab%22%2C%22short%22%3A%222672b23%22%2C%22commit%22%3A%7B%22message%22%3A%22Remove%20deno.tmp%20and%20add%20to%20git%20ignore%5Cn%5CnSigned-off-by%3A%20Marcos%20Candeia%20%3Cmarrcooos%40gmail.com%3E%5Cn%22%2C%22parent%22%3A%5B%2237757cd4cc4e591e72dc5ba065d281543b15010d%22%5D%2C%22tree%22%3A%2242db5be7be47620939a07183dc61b472ae04101a%22%2C%22author%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%2C%22committer%22%3A%7B%22name%22%3A%22Marcos%20Candeia%22%2C%22email%22%3A%22marrcooos%40gmail.com%22%2C%22timestamp%22%3A1720465219%2C%22timezoneOffset%22%3A180%7D%7D%7D::Release::rocket-launch::Release::%7B%7D",
           "state": {
             "__signal": null
           }

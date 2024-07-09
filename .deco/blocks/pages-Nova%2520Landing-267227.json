@@ -757,9 +757,6 @@
             "__resolveType": "site/sections/Theme/ThemeHints.tsx"
           },
           {
-            "__resolveType": "Deco Head [EN]"
-          },
-          {
             "__resolveType": "HeaderV2"
           },
           {
@@ -1176,20 +1173,6 @@
                     "name": "Julyanne Taboaço",
                     "description": "\"I’m sure you will soar even higher; this is just the beginning. Very grateful for this partnership and for believing in you from the very start. And what a partnership! You are tireless in evolving and suggesting improvements, embracing any challenges we face, and always ready to support and grow with us!\"",
                     "href": "https://www.linkedin.com/feed/update/urn:li:activity:7181038197907353600?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7181038197907353600%2C7181112203410894848%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287181112203410894848%2Curn%3Ali%3Aactivity%3A7181038197907353600%29"
-                  }
-                ],
-                "subtitle": "Backed by a community of +4,000 developers.",
-                "title": "<p>Join our Community</p>",
-                "socialLinks": [
-                  {
-                    "icon": "Discord",
-                    "title": "Join our Discord",
-                    "link": "https://discord.com/invite/hBUs29me8Z"
-                  },
-                  {
-                    "icon": "Github-rounded",
-                    "title": "Star us on GitHub",
-                    "link": "https://github.com/deco-cx"
                   }
                 ]
               },
