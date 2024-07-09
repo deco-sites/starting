@@ -14,15 +14,6 @@
       "alert": {}
     },
     {
-      "__resolveType": "DoubleBrands"
-    },
-    {
-      "__resolveType": "Preview /sections/Home/FAQ.tsx"
-    },
-    {
-      "__resolveType": "Deco Footer [EN]"
-    },
-    {
       "__resolveType": "site/sections/PricingTiers.tsx",
       "tiers": [
         {
@@ -57,8 +48,68 @@
             "title": "Start for Free",
             "href": "/pricing"
           }
+        },
+        {
+          "features": [
+            {
+              "title": "Deco Hosting",
+              "subtitleInfo": "50K Pageviews + $8 per 10K Pageviews"
+            },
+            {
+              "title": "1 Hosted Project"
+            },
+            {
+              "title": "Live Site Preview",
+              "subtitleInfo": "3 environments"
+            },
+            {
+              "title": "Unlimited Code Editors"
+            }
+          ],
+          "accessButton": {
+            "title": "Get Started",
+            "href": "/"
+          },
+          "title": "Pro",
+          "subtitle": "Ideal for freelancers looking to deliver professional websites to their clients with ease.",
+          "monthlyBasePrice": 9,
+          "annualDiscount": 15,
+          "featuresTitle": "<p>Everything in <span style=\"color: #02f67c\">Free</span>, plus:</p>",
+          "calculator": {
+            "title": "Add-Ons Calculator:",
+            "pricePerPageview": 8,
+            "pricePerProject": 9,
+            "items": [
+              {
+                "title": "Pageviews",
+                "subtitle": "$8 per 10k pageviews",
+                "price": 8,
+                "initialValue": 50000,
+                "addValue": 10000,
+                "unit": "Pageview"
+              },
+              {
+                "title": "Projects",
+                "subtitle": "#9 per project",
+                "price": 9,
+                "initialValue": 1,
+                "addValue": 1,
+                "unit": "Project"
+              }
+            ]
+          },
+          "active": true
         }
       ]
+    },
+    {
+      "__resolveType": "DoubleBrands"
+    },
+    {
+      "__resolveType": "Preview /sections/Home/FAQ.tsx"
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
     }
   ],
   "seo": {

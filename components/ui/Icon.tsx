@@ -52,11 +52,13 @@ export type AvailableIcons =
   | "Mastercard"
   | "Menu"
   | "Minus"
+  | "minus-rounded"
   | "OCCLogo"
   | "Phone"
   | "PigMoney"
   | "Pix"
   | "Plus"
+  | "plus-rounded"
   | "Post"
   | "QuestionMarkCircle"
   | "Return"
@@ -86,6 +88,7 @@ export type AvailableIcons =
   | "FileSvg"
   | "InfoCircle"
   | "Check"
+  | "check-rounded"
   /* Decocamp */
   | "TsFile"
   | "Fresh"
@@ -110,6 +113,7 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
    */
   id: AvailableIcons;
   size?: number;
+  color?: string;
 }
 
 function Icon({
@@ -123,6 +127,7 @@ function Icon({
   return (
     <svg
       {...otherProps}
+
       width={width ?? size}
       height={height ?? size}
       stroke-width={strokeWidth}
