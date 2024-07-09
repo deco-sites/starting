@@ -3,11 +3,6 @@ description: Aprenda como carregar dados usando Loaders e Sections, permitindo q
 since: 1.0.0
 ---
 
-## Leitura sugerida
-
-- [Tech Stack](/docs/pt/developing/setup)
-- [Conceitos básicos: Section](/docs/pt/concepts/section)
-
 Buscar dados de APIs é um requisito comum ao criar sites ou aplicações. A
 _deco.cx_ oferece uma solução de _data-fetching_ que ocorre **no server-side** e
 é flexível para permitir que os usuários de negócios configurem como os dados
@@ -33,7 +28,10 @@ _Visualização da Section DogFacts mostrando os dados retornados da API_
 
 _Dados retornados da API Dog Facts sendo chamada no browser_
 
-## Criando a Section
+## 1. Criando a Section
+
+Primeiro, vamos criar uma Section que renderizará os dados buscados da API. 
+Crie a seção `DogFacts.tsx` na pasta sections/ do seu projeto.
 
 Se executarmos um http request para a API da Dog Fact veremos que ele retorna um
 JSON no seguinte formato,
@@ -60,8 +58,7 @@ chamada `fact` que é a `string` representada pela mensagem.
 
 Vamos ver isso em ação criando uma nova Section:
 
-1. Crie a Section `DogFacts.tsx` na pasta `sections/` do seu projeto.
-2. Cole o seguinte código:
+Cole o seguinte código:
 
 ```tsx
 export interface DogFact {
@@ -89,13 +86,17 @@ export default function DogFacts({ title, dogFacts }: Props) {
 > esse componente já consegue ser utilizado com dados estáticos, oque não faz
 > muito sentido para nosso caso de uso.
 
-## Criando o Loader e testando a section
+## 2. Criando o Loader e testando a Section
 
-Os Loaders permitem que você defina como os dados são buscados e transformados
-antes de serem repassado a uma Section. Eles são **funções Typescript
-regulares** que podem usar funções _async_ como `fetch`. Os Loaders podem ser
-"conectados" a uma Section por meio de uma das `props` da Section, e isso
-acontece com base no **tipo de retorno do Loader**.
+Agora vamos criar um Loader que buscará os dados da Dog Fact API e os passará para 
+a Section.
+
+Os Loaders permitem que você defina como os dados são buscados e transformados antes 
+de serem passados para uma Section. Eles são **funções regulares de Typescript** que 
+podem usar funções _async_ como `fetch`. Os Loaders podem ser "plugados" em uma Section 
+via uma das `props` da Section, e isso acontece com base no **tipo de retorno do Loader** 
+(o tipo de retorno do Loader é o tipo de entrada da Section).
+
 
 1. Defina qual será as `Props` de input do seu loader.
 2. Exporte uma função chamada `loader` dentro do mesmo arquivo da sua section.
@@ -136,20 +137,19 @@ export default function DogFacts(
   );
 }
 ```
+> Observação: O tipo `SectionProps` é um tipo auxiliar usado para inferir 
+o tipo de retorno do loader.
 
-3. Execute `deno task start` se ainda não o fez.
-4. Assumindo que `deno task start` está rodando, acesse https://deco.cx/admin e
-   selecione seu Site.
-5. Certifique-se de que `localhost:8000` esteja selecionado no Seletor de
-   Ambiente em no canto superior direito do Admin.
-6. Vá para `Library` e procure por `DogFacts` na barra lateral esquerda.
-7. Configure as `props` do Loader selecionado (`numberOfFacts`) com um número
-   desejado (_ex:_ 4).
+## 3. Testando a Section
 
-<img width="1510" alt="Library showing the DogFacts Section rendering data fetched from the API" src="https://user-images.githubusercontent.com/5839364/230696322-33137a3f-052b-416b-880a-19fcbf091908.png">
+1. Execute o servidor localmente com `DECO_ENV_NAME={environment_name} deno task start`.
+2. Acesse `https://deco.cx/admin` no seu site e certifique-se de que seu ambiente está selecionado no Seletor de Ambiente no canto superior direito do Admin.
+3. Vá para `Sections` e procure por DogFacts na barra lateral esquerda.
+4. Configure as props do Loader selecionado (`numberOfFacts`) com um número desejado (por exemplo, 4).
 
-_Biblioteca mostrando os dados de renderização da Section DogFacts obtidos da
-API_
+Agora, vamos ver isso funcionando conectando-o a uma Section.
+
+![DogFacts Section rendering data fetched from the API](/docs/developing-guide/fetching-data/dog-facts-section.png)
 
 **É isso!** Agora você criou uma Section que exibe os dados obtidos de um API
 externa usando um Loader, tornando tudo configurável por usuários de negócios

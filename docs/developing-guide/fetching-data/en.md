@@ -3,11 +3,6 @@ description: Learn how to load data with deco.cx using Loaders and Sections, all
 since: 1.0.0
 ---
 
-## Suggested reading
-
-- [Tech Stack](/docs/en/developing/setup)
-- [Core Concepts: Sections](/docs/en/concepts/section)
-
 Fetching data is a common requirement when building websites or applications.
 _deco.cx_ provides a data-fetching solution that loads data **on the
 server-side** and is flexible enough to allow business users to customize how
@@ -33,7 +28,10 @@ _Preview of DogFacts Section showing data returned from API_
 
 _Data returned from the Dog Facts API being called elsewhere_
 
-## Creating the Section
+## 1. Creating the Section
+
+First, let's create a Section that will render the data fetched from the API.
+Create the DogFacts.tsx section in the sections/ folder of your project.
 
 If we make an HTTP request to the Dog Fact API, we will see that it returns a
 JSON in the following format:
@@ -60,8 +58,7 @@ called fact, which is the string represented by the message.
 
 Let's see this in action by creating a new section:
 
-1. Create the DogFacts.tsx section in the sections/ folder of your project.
-2. Paste the following code:
+Paste the following code:
 
 ```tsx
 export interface DogFact {
@@ -85,17 +82,20 @@ export default function DogFacts({ title, dogFacts }: Props) {
 }
 ```
 
-> At this point, we can run `deno task start` and check in our admin that this
+> At this point, you can check in the admin (in your local environment) that this
 > component can already be used with static data, which doesn't make much sense
 > for our use case.
 
-## Creating the Loader and testing the Section
+## 2. Creating the Loader and testing the Section
+
+Now let's create a Loader that will fetch the
+data from the Dog Fact API and pass it to the Section.
 
 Loaders allow you to define how data is fetched and transformed before it is
 passed on to a Section. They are **regular Typescript functions** that can use
-_async_ functions like `fetch`. Loaders can be "plugged" into a Section via one
+_async_ functions like `fetch`. Loaders can be "plugged" into a Section via one of
 the Section's `props`, and that happens based on the **return type of the
-Loader**.
+Loader** (the return type of the Loader is the input type of the Section).
 
 1. Define what will be the input `Props` of your loader.
 2. Export a function called `loader` in the same file as your Section.
@@ -132,24 +132,20 @@ export default function DogFacts(
   );
 }
 ```
+> Note: The `SectionProps` type is a helper type that is used to infer the return type of the loader.
 
-3. Run `deno task start` if you haven't already done so.
-4. Assuming that `deno task start` is running, go to `https://deco.cx/admin` and
-   select your Site.
-5. Make sure that `localhost:8000` is selected in the Environment Selector in
-   the upper right corner of the Admin.
-6. Go to `Library` and search for DogFacts in the left sidebar.
-7. Configure the props of the selected Loader (numberOfFacts) with a desired
+## 3. Testing the Section
+
+1. Run the server locally with `DECO_ENV_NAME={environment_name} deno task start`.
+2. Go to `https://deco.cx/admin` in your site and make sure that your environment 
+  is selected in the Environment Selector in the upper right corner of the Admin.
+3. Go to `Sections` and search for DogFacts in the left sidebar.
+4. Configure the props of the selected Loader (numberOfFacts) with a desired
    number (e.g., 4).
 
 Now, let's see it working hooking it up with a Section.
 
-<img width="1510" alt="Library showing the DogFacts Section rendering data fetched from the API" src="https://user-images.githubusercontent.com/5839364/230696322-33137a3f-052b-416b-880a-19fcbf091908.png">
-
-_Library showing the DogFacts Section rendering data fetched from the API_
-
-> It's also possible to create a new `prop` loaded from a new loader in an
-> existing Section.
+![DogFacts Section rendering data fetched from the API](/docs/developing-guide/fetching-data/dog-facts-section.png)
 
 **That's it!** Now you've built a Section that displays data fetched from an
 external API using a Loader, making it all configurable by business users as
