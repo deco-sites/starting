@@ -10,8 +10,8 @@ export interface Question {
 
 export function FaqItem({ question, answer }: Question) {
   return (
-    <details class="home-faq">
-      <summary class="border-[#272D2D] border rounded-2xl flex flex-row justify-between items-center px-[24px] py-[22.5px] gap-[16px] group cursor-pointer bg-[#0D1717] rounded-2xl">
+    <details class="home-faq bg-[#0D1717] hover:bg-[#142020] border-[#272D2D] border rounded-2xl open:mb-2 transition ease-in-out duration-300">
+      <summary class="rounded-2xl flex flex-row justify-between items-center px-[24px] py-[22.5px] gap-[16px] group cursor-pointer ">
         <p class="font-bold text-[18px] leading-[27px] text-white">
           {question}
         </p>
@@ -25,7 +25,7 @@ export function FaqItem({ question, answer }: Question) {
           />
         </div>
       </summary>
-      <p class="border-[#272D2D] border rounded-t-none border-t-0 relative top-[-15px] pt-[5px] px-[24px] py-[22.5px] bg-[#0D1717] text-[#949E9E] text-[18px] leading-[27px] rounded-2xl">
+      <p class="rounded-t-none border-t-0 relative top-[-15px] pt-[5px] px-[24px] py-[22.5px] text-[#949E9E] text-[18px] leading-[27px]">
         {answer}
       </p>
     </details>

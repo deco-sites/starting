@@ -1,0 +1,29 @@
+{
+  "name": "Pricing",
+  "path": "/pricing",
+  "sections": [
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "site/sections/Home/Hero.tsx",
+      "pixelTitle": "<p><span style=\"color: #02f67c\">Simple pricing</span></p>",
+      "title": "<p>that follows your growth</p>",
+      "subTitle": "<p>buld, preview, and go live today. As you expand, take advantage of our usage-based pricing and pay only for what you need!</p>",
+      "ctas": []
+    },
+    {
+      "__resolveType": "DoubleBrands"
+    },
+    {
+      "__resolveType": "Preview /sections/Home/FAQ.tsx"
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

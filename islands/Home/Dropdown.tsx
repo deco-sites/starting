@@ -1,4 +1,5 @@
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
+import { useRef } from "preact/hooks";
 
 export interface DropdownItemProps {
   label: string;
@@ -23,27 +24,22 @@ export interface MenuLink {
 }
 
 function DropdownItem({ href, label, tag }: MenuLink) {
-  const variants = {
-    rounded: "",
-  };
-
   return (
     <div class="flex flex-row items-center justify-between">
       <a
         href={href}
         class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-black/5 rounded"
       >
-        <p class="font-sans not-italic font-normal text-[15px] text-[#fff] flex-grow flex gap-[8px] items-center whitespace-nowrap">
+        <p class="font-sans not-italic font-normal text-[15px] text-[#fff] hover:scale-[97%] hover:text-[#02F67C] flex-grow flex gap-[8px] items-center whitespace-nowrap transition duration-300 ease-in-out">
           {label}
-          {tag?.description && tag?.color &&
-            (
-              <div
-                class="font-semibold uppercase flex justify-center items-center px-[4px] py-[2px] text-[6px] rounded-[26.5px] text-[#000]"
-                style={{ backgroundColor: tag.color, lineHeight: "normal" }}
-              >
-                {tag.description}
-              </div>
-            )}
+          {tag?.description && tag?.color && (
+            <div
+              class="font-semibold uppercase flex justify-center items-center px-[4px] py-[2px] text-[6px] rounded-[26.5px] text-[#000]"
+              style={{ backgroundColor: tag.color, lineHeight: "normal" }}
+            >
+              {tag.description}
+            </div>
+          )}
         </p>
       </a>
     </div>
@@ -51,40 +47,47 @@ function DropdownItem({ href, label, tag }: MenuLink) {
 }
 
 export interface Props {
-  open: boolean;
-  onClick: () => void;
   columns: ColumnMenu[];
   value: string;
   variant?: "rounded" | "flat";
 }
 
-export function Dropdown({
-  open,
-  onClick,
-  columns,
-  value,
-  variant = "flat",
-}: Props) {
+export function Dropdown({ columns, value, variant = "flat" }: Props) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const updateInputRef = (value: boolean) => {
+    if (inputRef.current) {
+      inputRef.current.checked = value;
+    }
+  };
   const variants = {
     rounded: {
-      open: "md:text-[#fff] md:border-[#06E474] md:border",
       default:
         "select-none hidden md:flex gap-2 items-center text-[#06E474] border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300",
     },
     flat: {
-      open: "text-[#fff]",
       default:
-        "relative flex text-white text-opacity-80 items-center h-full px-[20px] self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 transition-colors ease-in duration-300 justify-centerp",
+        "relative flex text-white items-center h-full self-center font-normal text-[16px] bg-clip-text bg-position-100 transition-colors ease-in duration-300 justify-centerp",
     },
   };
 
   const variantClass = variants[variant];
 
   return (
-    <div class={`group/item ${variantClass.default}`}>
-      <div
-        onClick={onClick}
-        class={`group-hover/item:font-bold group-hover/item:text-white z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer`}
+    <div class={`group/item cursor-pointer ${variantClass.default}`}>
+      <input
+        id={value.toLocaleLowerCase()}
+        name={value.toLocaleLowerCase()}
+        ref={inputRef}
+        type="checkbox"
+        class="peer"
+        hidden
+      />
+      <label
+        for={value.toLocaleLowerCase()}
+        onMouseEnter={() => updateInputRef(true)}
+        onMouseLeave={() => updateInputRef(false)}
+        class={`group-hover/item:text-[#02F67C] z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer transition duration-300 ease-in-out z-50`}
       >
         {value}
         <svg
@@ -101,38 +104,31 @@ export function Dropdown({
             stroke-linecap="round"
           />
         </svg>
-      </div>
+      </label>
       <div
-        onClick={onClick}
-        class={`${
-          open
-            ? "block cursor-pointer w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]"
-            : "hidden"
-        }`}
+        class={`opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto ${
+          variant === "flat" ? "top-0 mt-8 pt-4" : "top-[35px] pt-5"
+        } z-30 absolute left-0 rounded`}
+        onMouseEnter={() => updateInputRef(true)}
+        onMouseLeave={() => updateInputRef(false)}
       >
-      </div>
-      <div
-        class={`opacity-0 pointer-events-none group-hover/item:opacity-100 group-hover/item:pointer-events-auto ${
-          variant === "flat" ? "top-[48px]" : "top-[35px]"
-        } z-30 absolute left-0 pt-5 rounded`}
-      >
-        <div class="flex flex-row gap-[48px] rounded-lg bg-white/5 backdrop-blur-xl border border-[#FFFFFF33] p-6">
+        <div class="flex flex-row gap-[48px] rounded-lg border border-[#FFFFFF33] p-6 bg-[#0035184d] backdrop-blur-2xl">
           {columns.map((col, index) => (
             <>
               <div>
-                {col.icon && col.title &&
-                  (
-                    <div class="pb-[24px] flex">
-                      <Icon id={col.icon} size={20} />
-                      <p class="pl-[8px] font-bold text-[16px] text-white">
-                        {col.title}
-                      </p>
-                    </div>
-                  )}
+                {col.icon && col.title && (
+                  <div class="pb-[24px] flex">
+                    <Icon id={col.icon} size={20} />
+                    <p class="pl-[8px] font-bold text-[16px] text-white">
+                      {col.title}
+                    </p>
+                  </div>
+                )}
                 {col.nested?.map((item) => <DropdownItem {...item} />)}
               </div>
-              {columns.length - 1 > index &&
-                <div class="w-[1px] bg-[#162121] h-[300px]"></div>}
+              {columns.length - 1 > index && (
+                <div class="w-[1px] bg-[#3e4a44] h-[300px]"></div>
+              )}
             </>
           ))}
         </div>

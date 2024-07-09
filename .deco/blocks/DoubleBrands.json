@@ -1,0 +1,65 @@
+{
+  "__resolveType": "site/sections/Home/DoubleBrands.tsx",
+  "firstSlider": [
+    {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dbd48a22-2ef7-4416-b2bd-b2d0f6d6a526",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/01a82a66-41ec-432e-aa66-d9d1ba07ecb2",
+      "label": "torra"
+    },
+    {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/20a10db5-e7b4-42e7-869b-202fb904a797",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/11351343-9661-407a-b6b8-85e4be09c884",
+      "label": "baw"
+    },
+    {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/de8d0ab4-5dd5-41ee-b879-04753c831b8f",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f6d358a0-0b0b-4fd8-a2dc-68c73d35dfbd",
+      "label": "os"
+    },
+    {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/01e0a61e-9f3b-4d66-a326-9e384d0240ec",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1dcef30-d90c-48a9-a117-71e60fdc1022",
+      "label": "miss"
+    },
+    {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/58e0e9a6-4609-4087-8dd7-ae1cc2d34b77",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f041d872-04ac-443f-8422-bb162c5796d8",
+      "label": "bis"
+    },
+    {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cf96296f-8f87-4e41-a9dd-08022a1c7d76",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/55678e79-b481-4845-ac4d-0f734aaa8170",
+      "label": "zee"
+    }
+  ],
+  "secondSlider": [
+    {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/75e52629-74bd-4825-9581-45c62c468577",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9526f46d-5b53-470a-bb40-90fc8e00e422",
+      "label": "embelezze"
+    },
+    {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d58ceb68-f09d-4df2-a76a-b8884acd8c29",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/80198427-d2b9-43f4-8c69-ca36abee8cd2",
+      "label": "uncle"
+    },
+    {
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/846b57af-d1f0-45ee-b984-ca401bbb6ec6",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6886893f-8669-4a13-a51e-4d7aa4514ab4",
+      "label": "austral"
+    },
+    {
+      "label": "aviator",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6826fb95-6735-4369-938b-9ca177cb60b9",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/774f961c-6866-4ec7-a427-604f58a1708d"
+    },
+    {
+      "label": "velocita",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/820ccf6c-11aa-44f9-8310-84d2218f2665",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2c9cc042-0983-49e1-a7bd-3881762b2e8e"
+    }
+  ],
+  "themeDark": true,
+  "url": "/",
+  "title": " "
+}

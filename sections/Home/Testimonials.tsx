@@ -1,1 +1,1 @@
-export { default } from "site/islands/Home/Testimonials.tsx";
+export { default } from "site/components/Home/Testimonials.tsx";

@@ -1,0 +1,27 @@
+{
+  "name": "Glossary",
+  "path": "/glossary",
+  "sections": [
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "site/sections/PageContest/Hero.tsx",
+      "title": "<p>CMS Glossary</p>"
+    },
+    {
+      "__resolveType": "site/sections/GlossaryPostList.tsx",
+      "posts": {
+        "__resolveType": "blog/loaders/BlogpostList.ts",
+        "count": 6
+      }
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

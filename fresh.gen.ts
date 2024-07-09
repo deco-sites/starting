@@ -11,6 +11,7 @@ import * as $api_leads from "./routes/api/leads.tsx";
 import * as $api_platform from "./routes/api/platform.tsx";
 import * as $api_ranking from "./routes/api/ranking.ts";
 import * as $api_webinar from "./routes/api/webinar.tsx";
+import * as $bugbounty from "./routes/bugbounty.ts";
 import * as $docs_css from "./routes/docs.css.ts";
 import * as $hackathon4 from "./routes/hackathon4.ts";
 import * as $hackathon5 from "./routes/hackathon5.ts";
@@ -33,7 +34,6 @@ import * as $HelpFaq from "./islands/HelpFaq.tsx";
 import * as $Home_BuildShowcase from "./islands/Home/BuildShowcase.tsx";
 import * as $Home_Dropdown from "./islands/Home/Dropdown.tsx";
 import * as $Home_Header from "./islands/Home/Header.tsx";
-import * as $Home_Testimonials from "./islands/Home/Testimonials.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
 import * as $LiveProjects from "./islands/LiveProjects.tsx";
 import * as $NRF_BackgroundGrid from "./islands/NRF/BackgroundGrid.tsx";
@@ -42,7 +42,6 @@ import * as $NRF_Editor from "./islands/NRF/Editor.tsx";
 import * as $NRF_EditorMobile from "./islands/NRF/EditorMobile.tsx";
 import * as $NRF_Features from "./islands/NRF/Features.tsx";
 import * as $NRF_FeaturesWithImage from "./islands/NRF/FeaturesWithImage.tsx";
-import * as $NRF_Header from "./islands/NRF/Header.tsx";
 import * as $NRF_Hero from "./islands/NRF/Hero.tsx";
 import * as $NRF_HeroEditorTabbed from "./islands/NRF/HeroEditorTabbed.tsx";
 import * as $NRF_PageWrapper from "./islands/NRF/PageWrapper.tsx";
@@ -72,6 +71,7 @@ const manifest = {
     "./routes/api/platform.tsx": $api_platform,
     "./routes/api/ranking.ts": $api_ranking,
     "./routes/api/webinar.tsx": $api_webinar,
+    "./routes/bugbounty.ts": $bugbounty,
     "./routes/docs.css.ts": $docs_css,
     "./routes/hackathon4.ts": $hackathon4,
     "./routes/hackathon5.ts": $hackathon5,
@@ -97,7 +97,6 @@ const manifest = {
     "./islands/Home/BuildShowcase.tsx": $Home_BuildShowcase,
     "./islands/Home/Dropdown.tsx": $Home_Dropdown,
     "./islands/Home/Header.tsx": $Home_Header,
-    "./islands/Home/Testimonials.tsx": $Home_Testimonials,
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
     "./islands/LiveProjects.tsx": $LiveProjects,
     "./islands/NRF/BackgroundGrid.tsx": $NRF_BackgroundGrid,
@@ -106,7 +105,6 @@ const manifest = {
     "./islands/NRF/EditorMobile.tsx": $NRF_EditorMobile,
     "./islands/NRF/Features.tsx": $NRF_Features,
     "./islands/NRF/FeaturesWithImage.tsx": $NRF_FeaturesWithImage,
-    "./islands/NRF/Header.tsx": $NRF_Header,
     "./islands/NRF/Hero.tsx": $NRF_Hero,
     "./islands/NRF/HeroEditorTabbed.tsx": $NRF_HeroEditorTabbed,
     "./islands/NRF/PageWrapper.tsx": $NRF_PageWrapper,

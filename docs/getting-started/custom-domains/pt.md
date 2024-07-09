@@ -105,9 +105,9 @@ Veja mais instruções no seu provedor de domínios em como adicionar esses camp
    ![Adicionar domínio](/docs/getting-started/custom-domains/add-domain.png)
 
 4. Depois da adição, o domínio está registrado na deco, mas ainda não é
-   operante. É preciso agora fazer o setup do domínio de acordo com as 
-   instruções de configuração descritas em _Configuração de Domínio_,
-   logo em baixo do domínio adicionado.
+   operante. É preciso agora fazer o setup do domínio de acordo com as
+   instruções de configuração descritas em _Configuração de Domínio_, logo em
+   baixo do domínio adicionado.
 
 5. Adicione a configuração de domínio no seu servidor de domínios. Isto
    representa um apontamento `CNAME` do domínio própio, para o domínio da deco.
