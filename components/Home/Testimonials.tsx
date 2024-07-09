@@ -170,8 +170,8 @@ export default function Testimonials({
         <div class="columns-1 md:columns-2 lg:columns-3 gap-8 w-full">
           {testimonials?.map((testimonial) => (
             <a href={testimonial.href}>
-              <div class="bg-[#162121] hover:bg-[#3e5757] p-[1px] rounded-2xl flex-1 mb-4 overflow-hidden">
-                <div class="bg-[#0D1717] h-full flex flex-col justify-between py-4 px-6 gap-4 rounded-2xl">
+              <div class="bg-[#070D0D] hover:bg-[#243939] p-[1px] rounded-2xl flex-1 mb-4 overflow-hidden">
+                <div class="bg-[#0B1612] h-full flex flex-col justify-between py-4 px-6 gap-4 rounded-2xl">
                   <div
                     class="font-albert-sans text-base text-[#949E9E] leading-6"
                     dangerouslySetInnerHTML={{
