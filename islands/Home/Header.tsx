@@ -61,9 +61,7 @@ function MobileMenuDropdown({ icon, nested, title }: ColumnMenu) {
               class={"peer-checked:rotate-180"}
             />
           </div>
-          <div
-            class={`hidden peer-checked:flex pl-[10px] flex-col pb-[30px]`}
-          >
+          <div class={`hidden peer-checked:flex pl-[10px] flex-col pb-[30px]`}>
             {nested?.map((item) => (
               <li class={"grid items-center py-2"}>
                 <a
@@ -158,7 +156,7 @@ export default function Header({ menuLinks, ...props }: Props) {
 
   const retrieveGithubStars = async () => {
     const response = await fetch("https://api.github.com/repos/deco-cx/deco");
-    const repo = await response.json();
+    const repo: { stargazers_count: string } = await response.json();
     stars.value = repo.stargazers_count;
   };
 
@@ -166,7 +164,8 @@ export default function Header({ menuLinks, ...props }: Props) {
     const response = await fetch(
       "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true"
     );
-    const discordData = await response.json();
+    const discordData: { approximate_member_count: string } =
+      await response.json();
     members.value = discordData.approximate_member_count;
   };
 
@@ -255,6 +254,7 @@ export default function Header({ menuLinks, ...props }: Props) {
         <ul class="ml-auto flex flex-row items-center lg:hidden gap-4 z-[51]">
           <li>
             <a
+              id="bt-click-signup"
               href={props.demo?.url}
               class="flex items-center hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-lg md:transition md:ease-in-out md:duration-300"
             >
@@ -303,7 +303,9 @@ export default function Header({ menuLinks, ...props }: Props) {
               />
             </svg>
             <div
-              class={"hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"}
+              class={
+                "hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"
+              }
             >
               <ul class="flex flex-col">
                 {menuLinks &&
@@ -322,6 +324,7 @@ export default function Header({ menuLinks, ...props }: Props) {
                   <li>
                     <a
                       href={props.sign.url}
+                      id="bt-click-signup"
                       class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[16px] px-4 py-2 transition ease-in-out duration-300"
                     >
                       {props.sign.label}
@@ -387,6 +390,7 @@ export default function Header({ menuLinks, ...props }: Props) {
           <li>
             <a
               href={props.sign.url}
+              id="bt-click-signup"
               class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[16px] px-4 py-2 transition ease-in-out duration-300"
             >
               {props.sign.label}
@@ -395,6 +399,7 @@ export default function Header({ menuLinks, ...props }: Props) {
           <li>
             <a
               href={props.demo?.url}
+              id="bt-click-signup"
               class="flex items-center hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-lg md:transition md:ease-in-out md:duration-300"
             >
               {props.demo?.label}
