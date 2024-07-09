@@ -39,6 +39,7 @@ export type AvailableIcons =
   | "FilterList"
   | "GreenArrow"
   | "Git-hub"
+  | "Github-rounded"
   | "Heart"
   | "IconCart"
   | "Instagram"
