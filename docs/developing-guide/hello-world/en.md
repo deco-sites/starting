@@ -3,71 +3,59 @@ description: Creating a Section
 since: 1.0.0
 ---
 
-# Summary
-
-1. Creating a Section
-2. Properties of a Section
-3. Theming the Section with DaisyUI
-
-# Creating a Section
-
-The Section is a [Preact](https://preactjs.com/) component that is configurable
-in the Admin. In order for the Section to be visible in the Admin, it is
-necessary to create this component in the `sections/` folder or in one of its
-subdirectories.
-
-Start by creating a Section and then explore different types of properties and
-property specializations in the admin.
+Now that you are more familiar with Sections and how they are used in the 
+admin, let's create a Section from scratch. In this guide, you will learn 
+how to create a Section, add properties to it, and style it with your 
+themes.
 
 Open your site's folder in an IDE and perform the following actions:
 
-1. Create a `.tsx` file in the `sections/` folder of your Site with the desired
-   name for the Section (e.g.: `LatestPosts.tsx`).
+## 1. Create a `.tsx` file in the `sections/` folder
 
-2. Export a [Preact](https://preactjs.com/) component **using `export default`**
-   as shown in the example below. File `sections/LatestPosts.tsx`:
+Create a `.tsx` file in the `sections/` folder of your site with the 
+desired name for the Section (e.g., `Post.tsx`).
 
-   ```tsx
-   export interface Props {
-     title: string;
-   }
+The Section is a [Preact](https://preactjs.com/) component that is 
+configurable in the Admin. For the Section to be visible in the Admin, you 
+need to create this component in the `sections/` folder or one of its 
+subdirectories.
 
-   export default function LatestPosts({ title }: Props) {
-     return (
-       <div>
-         <h1 class="font-bold">{title}</h1>
-         <p>This is an example section</p>
-       </div>
-     );
-   }
-   ```
+## 2. Export the component
+
+Export a [Preact](https://preactjs.com/) component **using `export default`** 
+as shown in the example below:
+
+  `sections/Post.tsx`
+  ```tsx
+  export interface Props {
+    title: string;
+  }
+
+  export default function Post({ title }: Props) {
+    return (
+      <div>
+        <h1 class="font-bold">{title}</h1>
+        <p>This is an example section</p>
+      </div>
+    );
+  }
+  ```
 
 **Done!** The Section has been created locally in your project.
 
-If the project is running locally (`deno task start`) and if the environment
-selector is pointing to `localhost:8000`, it will be possible to see the new
-Section in the section library (**Sections**).
+## 3. View the Section in the Admin
 
-# Properties of a Section
+Run the project locally as you did before in the [setup](/docs/setup/pt.md). 
+By selecting your local environment in the Admin, you can view the new 
+Section in the Sections library (**Sections**) and add it to a page.
 
-A Section can have any property that is serializable and accept as a property in
-deco admin. That includes:
+![New section in the section library](/docs/hello-world/new-section.png)
 
-- `strings` and `numbers`
-- Simple types of serializable objects
-- Generated types from union, extends, `Pick`, or `Omit`
-- `Sections` (`import { Section } from "deco/blocks/section.ts"`)
-- `ImageWidget` (`import type { ImageWidget } from "apps/admin/widgets.ts";`)
-  and other components from the admin widgets
-- Arrays of the types indicated above
+## 4. Adding properties to the Section
 
-In addition to those types, it is possible to annotate some properties so that
-the admin form changes the input mechanism or to determine certain aspects of
-the property's behavior.
-
-As an example, let's add three new properties to our `LatestPosts` component,
-one for an image (`photo`), another for the post body (`post`), and one for the
-post time.
+Let's add three new properties to our `Post` component: one for an image 
+(`photo`), another for the post body (`post`), and one for the post time 
+(`datetime`).
 
 ```tsx
 import type { ImageWidget } from "apps/admin/widgets.ts";
@@ -80,6 +68,7 @@ export interface Props {
   photo?: ImageWidget;
   /**
    * @title Post body.
+   * @format textarea
    */
   post: string;
   /**
@@ -93,36 +82,60 @@ export interface Props {
   title: string;
 }
 
-export default function LatestPosts({ title, photo }: Props) {
+export default function Post({ title, photo, datetime, post }: Props) {
   return (
     <div>
       {photo && (
         <Image
           src={photo}
           alt={`${title} image`}
-          height={500}
-          width={500}
+          height={300}
+          width={300}
           class="rounded"
         />
       )}
-      <h1 class="font-bold">{title}</h1>
+      <h1 class="font-bold text-lg">{title}</h1>
+      <p>Published at: {datetime}</p>
       <p>This is an example section</p>
+      <p>{post}</p>
     </div>
   );
 }
 ```
 
-Upon saving and loading the admin in the local environment (with deno running),
-you can see that the admin prepares its own form components for the placement of
-images, dates, as well as indicating what each field is based on the title
-indicated in the code.
+A Section can have any property that is serializable and interpretable in 
+the properties form in the deco admin. This includes:
 
-# Theming the Section with DaisyUI
+- `strings` and `numbers`
+- Simple types of serializable objects
+- Types generated from union, extends, `Pick`, or `Omit`
+- `Sections` ( `import { Section } from "deco/blocks/section.ts"` )
+- `ImageWidget` (`import type { ImageWidget } from "apps/admin/widgets.ts";`) 
+and other components from the admin
+- Arrays of the types listed above
 
-In the deco base project, it is possible to access a special Section called
-`Theme.tsx`. This section defines tokens and special class names that can be
-used by other Sections following the structure of the DaisyUI tool. Inside
-`Theme.tsx`, you can observe some tokens like the main color tokens:
+In addition to the types above, it is possible to annotate some properties so 
+that the admin form changes the input mechanism or determines certain aspects 
+of the property's behavior (through the `@format` annotation, for example). 
+Read more about [these annotations here](https://deco.cx/docs/en/reference/widgets).
+
+## 5. Viewing the new properties in the Admin
+
+With the project running locally, open the Section again in the Admin. You will 
+see the new properties added to the `Post` component. The admin prepares its 
+own form components for inserting images, dates, and indicates what each field 
+is based on the `title` provided in the code.
+
+![Section properties form in the admin](/docs/hello-world/section-properties.png)
+
+## 6. Theming the Section
+
+### 6.1 Site Theme
+
+In the deco base project, you can access a special Section called `Theme.tsx`. 
+This section defines tokens and special class names that can be used by other 
+Sections following the DaisyUI tool structure. Inside `Theme.tsx`, you can see 
+some tokens like the main color tokens:
 
 ```tsx
 export interface MainColors {
@@ -140,7 +153,7 @@ export interface MainColors {
   "primary": string;
   /**
    * @format color
-   * @title Scondary
+   * @title Secondary
    * @default #8C3D3D
    */
   "secondary": string;
@@ -153,20 +166,43 @@ export interface MainColors {
 }
 ```
 
-Modify the LatestPost class to make use of some tokens. For example, the main
-title of the post now follows the primary color of the site.
+The colors of each token can be changed in the Admin, under the Themes tab. 
+There, you can change the colors of your current theme or create a new theme.
+
+![Changing theme colors](/docs/hello-world/themes.png)
+
+### 6.2 Page Theme
+
+Besides the site theme, it is possible to change the theme of a specific page. 
+To do this, just access a specific page in the Admin and add the desired theme 
+section.
+
+![Choosing the page theme](/docs/hello-world/add-section.png)
+
+![Changing the page theme](/docs/hello-world/section-themes.png)
+
+In this case, we added the Groovy Vibes theme section to the My New Page. 
+This specific page now has a different theme from the rest of the site.
+
+![Adding the Groovy Vibes theme](/docs/hello-world/page-theme.png)
+
+### 6.3 Styling the Section
+
+Adapt the post class to make use of some tokens. For example, the main title 
+of the post now follows the primary color of the theme.
 
 ```tsx
-import type { ImageWidget as DecoImage } from "apps/admin/widgets.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   /**
    * @title Post image.
    */
-  photo?: DecoImage;
+  photo?: ImageWidget;
   /**
    * @title Post body.
+   * @format textarea
    */
   post: string;
   /**
@@ -180,27 +216,28 @@ export interface Props {
   title: string;
 }
 
-export default function LatestPosts({ title, photo }: Props) {
+export default function Post({ title, photo, datetime, post }: Props) {
   return (
     <div>
       {photo && (
         <Image
           src={photo}
           alt={`${title} image`}
-          height={500}
-          width={500}
+          height={300}
+          width={300}
           class="rounded"
         />
       )}
-      <h1 class="font-bold text-primary">{title}</h1>
+      <h1 class="font-bold text-lg text-primary">{title}</h1>
+      <p>Published at: {datetime}</p>
       <p>This is an example section</p>
+      <p>{post}</p>
     </div>
   );
 }
 ```
 
-The source code of Theme.tsx demonstrates different uses of the tokens. Now, if
-a Theme component is on the same page as LatestPosts, the latter can be styled
-from the theme component.
+Now, the `Post` Section follows the site (or page) theme and uses the 
+colors defined in the theme.
 
-![Styling with the theme component](https://github.com/deco-cx/apps/assets/882438/10e8d567-6eab-498b-ac8e-44e3362b3131)
+![Section with site theme](/docs/hello-world/new-section-with-theme.png)

@@ -89,8 +89,8 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Tornando uma Seção configurável",
-          en: "Making Sections editable",
+          pt: "Editando uma section",
+          en: "Editing a Section",
         },
         slug: "developing-guide/editable-sections",
       },
@@ -100,24 +100,10 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Exportando Propriedades Padrões em um Bloco",
-          en: "Exporting Default Props in a Block",
+          pt: "Interatividade com HTMX",
+          en: "Interactivity with HTMX"
         },
-        slug: "developing-guide/exporting-default-props",
-      },
-      {
-        title: {
-          pt: "Adicionando interatividade em uma página",
-          en: "Client-side interactivity",
-        },
-        slug: "developing-guide/islands",
-      },
-      {
-        title: {
-          pt: "Tematizando uma Seção",
-          en: "Making a Section Themeable",
-        },
-        slug: "developing-guide/themeable-section",
+        slug: "developing-guide/htmx",
       },
       {
         title: {
@@ -128,78 +114,11 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Carregando dados de uma API a partir do browser",
-          en: "Client-side Invocation",
+          pt: "Criando um loader",
+          en: "Creating a loader",
         },
-        slug: "developing-guide/fetching-data-client",
-      },
-      {
-        title: {
-          pt: "Capturando exceções nas Seções",
-          en: "Section error fallback",
-        },
-        slug: "developing-guide/error-fallback",
-      },
-      {
-        title: {
-          pt: "Estados de carregamento nas Seções",
-          en: "Section loading fallback",
-        },
-        slug: "developing-guide/loading-fallback",
-      },
-      {
-        title: {
-          pt: "Redirecionando usuários a partir de Seções",
-          en: "Redirecting users from Sections",
-        },
-        slug: "developing-guide/redirecting-users",
-      },
-      {
-        title: {
-          pt: "Aceitando uma Seção como parâmetro da minha Seção",
-          en: "Accepting Other Sections as Parameters in Your Section",
-        },
-        slug: "developing-guide/accept-a-section",
-      },
-      {
-        title: {
-          pt: "Desenvolvendo Apps",
-          en: "Developing Apps",
-        },
-        slug: "developing-guide/creating-an-app",
-      },
-      {
-        title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
-        slug: "developing-guide/using-secrets",
-      },
-      {
-        title: {
-          pt: "Instalando Apps",
-          en: "Installing Apps",
-        },
-        slug: "developing-guide/making-an-app-installable",
-      },
-      {
-        title: {
-          pt: "Partial",
-          en: "Partial",
-        },
-        slug: "developing-guide/partial",
-      },
-      {
-        title: {
-          pt: "Modificando o status de retorno de uma pagina",
-          en: "Modifying the return status of a page",
-        },
-        slug: "developing-guide/modifying-status",
-      },
-      {
-        title: {
-          pt: "Criando um Teste A/B",
-          en: "Creating an A/B Test",
-        },
-        slug: "developing-guide/ab-test",
-      },
+        slug: "developing-guide/creating-loaders",
+      }
     ],
   },
   {
@@ -294,6 +213,101 @@ const tableOfContents: TableOfContents = [
           en: "Deco Records",
         },
         slug: "reference/deco-records",
+      },
+      {
+        title: {
+          pt: "Exportando Propriedades Padrões em um Bloco",
+          en: "Exporting Default Props in a Block",
+        },
+        slug: "developing-capabilities/exporting-default-props",
+      },
+      {
+        title: {
+          pt: "Adicionando interatividade em uma página",
+          en: "Client-side interactivity",
+        },
+        slug: "developing-capabilities/islands",
+      },
+      {
+        title: {
+          pt: "Tematizando uma Seção",
+          en: "Making a Section Themeable",
+        },
+        slug: "developing-capabilities/themeable-section",
+      },
+      {
+        title: {
+          pt: "Carregando dados de uma API a partir do browser",
+          en: "Client-side Invocation",
+        },
+        slug: "developing-capabilities/fetching-data-client",
+      },
+      {
+        title: {
+          pt: "Capturando exceções nas Seções",
+          en: "Section error fallback",
+        },
+        slug: "developing-capabilities/error-fallback",
+      },
+      {
+        title: {
+          pt: "Estados de carregamento nas Seções",
+          en: "Section loading fallback",
+        },
+        slug: "developing-capabilities/loading-fallback",
+      },
+      {
+        title: {
+          pt: "Redirecionando usuários a partir de Seções",
+          en: "Redirecting users from Sections",
+        },
+        slug: "developing-capabilities/redirecting-users",
+      },
+      {
+        title: {
+          pt: "Aceitando uma Seção como parâmetro da minha Seção",
+          en: "Accepting Other Sections as Parameters in Your Section",
+        },
+        slug: "developing-capabilities/accept-a-section",
+      },
+      {
+        title: {
+          pt: "Desenvolvendo Apps",
+          en: "Developing Apps",
+        },
+        slug: "developing-capabilities/creating-an-app",
+      },
+      {
+        title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
+        slug: "developing-capabilities/using-secrets",
+      },
+      {
+        title: {
+          pt: "Instalando Apps",
+          en: "Installing Apps",
+        },
+        slug: "developing-capabilities/making-an-app-installable",
+      },
+      {
+        title: {
+          pt: "Partial",
+          en: "Partial",
+        },
+        slug: "developing-capabilities/partial",
+      },
+      {
+        title: {
+          pt: "Modificando o status de retorno de uma pagina",
+          en: "Modifying the return status of a page",
+        },
+        slug: "developing-capabilities/modifying-status",
+      },
+      {
+        title: {
+          pt: "Criando um Teste A/B",
+          en: "Creating an A/B Test",
+        },
+        slug: "developing-capabilities/ab-test",
       },
     ],
   },
