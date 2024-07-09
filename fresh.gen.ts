@@ -58,6 +58,7 @@ import * as $Sidebar from "./islands/Sidebar.tsx";
 import * as $SliderCampJS from "./islands/SliderCampJS.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $WasThisPageHelpful from "./islands/WasThisPageHelpful.tsx";
+import * as $pricing_PricingCard from "./islands/pricing/PricingCard.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -121,6 +122,7 @@ const manifest = {
     "./islands/SliderCampJS.tsx": $SliderCampJS,
     "./islands/SliderJS.tsx": $SliderJS,
     "./islands/WasThisPageHelpful.tsx": $WasThisPageHelpful,
+    "./islands/pricing/PricingCard.tsx": $pricing_PricingCard,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

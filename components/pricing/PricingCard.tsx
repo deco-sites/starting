@@ -22,6 +22,7 @@ export interface CalculatorItem {
   price: number;
   initialValue: number;
   addValue: number;
+  hasNote?: boolean;
 }
 
 /**
@@ -45,7 +46,6 @@ export interface PricingCardProps {
    * @example 15 = 15%
    */
   annualDiscount?: number;
-  useAnnualDiscount?: boolean;
   /**
    * @format rich-text
    */
@@ -74,6 +74,11 @@ function FeatureItem({ feature }: { feature: Feature }) {
   );
 }
 
+const OPERATIONS = {
+  sum: (initialValue: number, newValue: number) => initialValue + newValue,
+  sub: (initialValue: number, newValue: number) => initialValue - newValue,
+};
+
 function CalculatorElement({
   item,
   onClick,
@@ -81,39 +86,38 @@ function CalculatorElement({
   item: CalculatorItem;
   index: number;
   currentPrice: number;
-  onClick: Function;
+  onClick: (operation: "sum" | "sub", value: number) => void;
 }) {
   const price = useSignal<number>(item.initialValue);
-  const formatedPrice = abbreviateNumber(item.price);
+  const formatedPrice = abbreviateNumber(item.addValue);
 
   const handlePriceUpdate = (operation: "sum" | "sub") => {
-    const operations = {
-      sum: (initialValue: number, newValue: number) => initialValue + newValue,
-      sub: (initialValue: number, newValue: number) => initialValue - newValue,
-    };
-
-    const newValue = operations[operation](price.value, item.price);
-    console.log(newValue);
-    if (item.initialValue <= newValue) price.value = newValue;
+    const newValue = OPERATIONS[operation](price.value, item.addValue);
+    if (item.initialValue <= newValue) {
+      price.value = newValue;
+      onClick(operation, item.price);
+    }
   };
 
   return (
     <div class="flex justify-between w-full">
       <div class="flex flex-col">
-        <span>{item.unit}</span>
+        <div class="flex items-center gap-1">
+          <span>{item.unit}</span>
+          {item.hasNote && <Icon id="star-sign" size={15} />}
+        </div>
         <span class="text-[#949E9E] text-sm">{`$${item.price} per ${
           formatedPrice !== "1" ? `${formatedPrice} ` : ""
         }${item.unit}`}</span>
       </div>
       <div class="flex gap-2 text-[#949E9E]">
-        <div onClick={() => handlePriceUpdate("sub")}>
-          <Icon
-            class="cursor-pointer hover:text-white transition duration-300 ease-in-out"
-            id="minus-rounded"
-            size={20}
-            strokeWidth={1}
-          />
-        </div>
+        <Icon
+          onClick={() => handlePriceUpdate("sub")}
+          class="cursor-pointer hover:text-white transition duration-300 ease-in-out"
+          id="minus-rounded"
+          size={20}
+          strokeWidth={1}
+        />
         <span class="text-white">{abbreviateNumber(price.value)}</span>
         <Icon
           class="cursor-pointer hover:text-white transition duration-300 ease-in-out"
@@ -127,48 +131,27 @@ function CalculatorElement({
   );
 }
 
-function PricingCard({
-  active,
-  title,
-  subtitle,
-  monthlyBasePrice,
-  annualDiscount,
-  useAnnualDiscount,
-  featuresTitle,
-  features = [],
-  calculator,
-  accessButton,
-}: PricingCardProps) {
+export interface Props {
+  pricingCard: PricingCardProps;
+  useAnnualDiscount: boolean;
+}
+
+function PricingCard({ pricingCard, useAnnualDiscount }: Props) {
+  const {
+    active,
+    title,
+    subtitle,
+    monthlyBasePrice,
+    annualDiscount,
+    featuresTitle,
+    features = [],
+    calculator,
+    accessButton
+  } = pricingCard;
   const currentPrice = useSignal(monthlyBasePrice);
   const calculatorValues = useSignal(
     calculator?.items?.map((item) => item.initialValue)
   );
-
-  // const handlePriceUpdate = (
-  //   operation: "sum" | "sub",
-  //   calculatorIndex: number,
-  //   item: CalculatorItem
-  // ) => {
-  //   const operations = {
-  //     sum: (initialValue: number, newValue: number) => initialValue + newValue,
-  //     sub: (initialValue: number, newValue: number) => initialValue - newValue,
-  //   };
-
-  //   const newPrice = operations[operation](currentPrice.value, item.price);
-  //   if (newPrice >= monthlyBasePrice) currentPrice.value = newPrice;
-
-  //   if (calculatorValues.value) {
-  //     const oldValues = calculatorValues.value;
-  //     oldValues[calculatorIndex] = operations[operation](
-  //       currentPrice.value,
-  //       item.addValue
-  //     );
-  //     if (item.initialValue >= oldValues[calculatorIndex])
-  //       calculatorValues.value = oldValues;
-  //   }
-  // };
-
-  // const updatePrice = (newValue)
 
   const styles = {
     active: {
@@ -182,9 +165,14 @@ function PricingCard({
     },
   };
 
+  function handlePriceUpdate(operation: "sum" | "sub", value: number) {
+    const newValue = OPERATIONS[operation](currentPrice.value, value);
+    if (newValue >= monthlyBasePrice) currentPrice.value = newValue;
+  }
+
   return (
     <div
-      class={`flex flex-col grow gap-5 p-6 w-full mx-4 rounded-lg border ${
+      class={`flex flex-col grow gap-5 p-6 w-full md:w-[600px] mx-4 rounded-lg border ${
         active ? styles.active.container : styles.regular.container
       }`}
     >
@@ -219,7 +207,7 @@ function PricingCard({
           <p class="font-bold">{calculator.title}</p>
           {calculator.items?.map((item: CalculatorItem, index: number) => (
             <CalculatorElement
-              onClick={() => {}}
+              onClick={handlePriceUpdate}
               index={index}
               item={item}
               currentPrice={

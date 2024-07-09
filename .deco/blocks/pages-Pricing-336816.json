@@ -86,7 +86,8 @@
                 "price": 8,
                 "initialValue": 50000,
                 "addValue": 10000,
-                "unit": "Pageview"
+                "unit": "Pageview",
+                "hasNote": true
               },
               {
                 "title": "Projects",
