@@ -1,5 +1,6 @@
 export interface CTA {
   href: string;
+  id?: string;
   text: string;
 }
 
@@ -29,6 +30,7 @@ export default function TextHero({
   ctas = [
     {
       href: "https://admin.deco.cx/spaces/new",
+      id: "bt-click-signup",
       text: "Try for Free",
     },
   ],
@@ -75,6 +77,7 @@ export default function TextHero({
           {ctas?.map((cta) => (
             <a
               href={cta.href}
+              id={cta.id}
               class={`w-full hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] md:text-lg px-8 py-2 md:px-6 lg:py-4 font-extrabold flex text-center justify-center p-3 rounded-[10px] font-bold flex items-center justify-center`}
               target={cta.href.includes("http") ? "_blank" : "_self"}
             >
