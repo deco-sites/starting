@@ -1,8 +1,9 @@
 
 /**
- * @title {{{title}}}
+ * @title {{{id}}}
  */
 export interface Result {
+  id?:string;
   /**
    * @format rich-text
    * @default Click here to tweak this text however you want.
