@@ -134,7 +134,7 @@ export default function Testimonials({
       <div class="flex flex-col items-center gap-4">
         {title && (
           <h2
-            class="font-albert-sans text-2xl lg:text-4xl font-medium text-white text-center"
+            class="font-albert-sans text-3xl lg:text-4xl font-medium text-white text-center"
             dangerouslySetInnerHTML={{
               __html: title,
             }}
@@ -147,7 +147,7 @@ export default function Testimonials({
           </p>
         )}
         {socialLinks && (
-          <div class="flex gap-8 items-center">
+          <div class="flex flex-col md:flex-row gap-2 items-center">
             {socialLinks.map(({ icon, title, link }) => (
               <a href={link} class="flex gap-2 items-center font-bold text-white bg-[#0D1717] hover:bg-[#121e1e] border border-[#162121] rounded-lg px-4 py-3 opacity-80 hover:opacity-100 transition duration-300 ease-in-out">
                 <Icon id={icon} size={20} strokeWidth={0}/>
