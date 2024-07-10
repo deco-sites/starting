@@ -65,5 +65,5 @@ large compared to components that depend on data from APIs!
 Universal components make interoperability possible! Read more information on
 how to create type loaders in our documentation
 
-- [Fetching data](/docs/en/developing/fetching-data)
+- [Fetching data](/docs/en/developing-guide/fetching-data)
 - [Core Concepts: Loaders](/docs/en/concepts/loader)

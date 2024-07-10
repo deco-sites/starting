@@ -27,7 +27,7 @@ reflected in the Admin interface.
 ## 1. Open the Hero section
 
 As an example, open the `Hero.tsx` section in the Admin interface of the 
-site you created in a [previous tutorial](/docs/getting-started/creating-a-site/en.md). 
+site you created in a [previous tutorial](/docs/en/getting-started/creating-a-site). 
 Click on the `</>` icon on the right bar to view the section's code.
 
 The code for this element is written in HTML with JavaScript, as shown 
@@ -43,14 +43,9 @@ right bar.
 
 **Section and its properties types**
 
-<!-- help: precisa disso? -->
-<!-- A Deco project uses the type of a component's properties to automatically generate the block editing form in the Admin. In the following figure, you can see how the Admin knows the information to be placed in the form. To do this, the Admin contacts the live site to retrieve the property data of the Sections in that project. On the other hand, the code on a site comes from GitHub, the same one the developer uses.
-
-![Structure of Site data access](https://github.com/deco-sites/starting/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53) -->
-
 ## 2. Run your site locally
 
-Follow the [environment configuration](/docs/developing-guide/setup/en.md) 
+Follow the [environment configuration](/docs/en/developing-guide/setup) 
 steps and run your project locally to see the changes you make in the 
 code reflected in the Admin interface.
 
@@ -75,7 +70,7 @@ these values, prompting the platform to show a select component to edit this
 field.
 
 You can read more about these field formats and types in the 
-[Widget documentation](/docs/reference/widgets/en.md).
+[Widget documentation](/docs/en/developing-capabilities/section-properties/widgets).
 
 Let's add a CTA button in our Hero section to see the modification:
 

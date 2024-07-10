@@ -63,7 +63,7 @@ In the HTMX version, we will no longer use the `useState` hook neither the
 state of the site, so we will make a request to the server to update
 the counter state.
 
-That's when the [`useSection` hook](/docs/api-reference/use-section/) 
+That's when the [`useSection` hook](/docs/en/api-reference/use-section) 
 comes in handy. This hook automatically creates routes for rendering your 
 UI states without requiring developers to handle routing manually. 
 

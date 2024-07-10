@@ -159,5 +159,5 @@ requirements when dealing with data coming from APIs. The deco.cx platform
 solves a myriad of other use cases related to dynamic data that we can use,
 check the following links to understand how to use them.
 
-- [Standard data types](/docs/en/composable-uis/standard-data-types)
+- [Standard data types](/docs/en/developing-capabilities/section-properties/standard-data-types)
 - [Core Concepts: Loaders](/docs/en/concepts/loader)

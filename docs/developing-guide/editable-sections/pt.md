@@ -25,7 +25,7 @@ interface do Admin.
 ## 1. Abra a seção Hero
 
 Como exemplo, abra a seção `Hero.tsx` na interface do Admin do site que você criou em 
-um [tutorial anterior](/docs/getting-started/creating-a-site/pt.md). Clique no ícone 
+um [tutorial anterior](/docs/pt/getting-started/creating-a-site). Clique no ícone 
 `</>` na barra direita para ver o código da seção.
 
 O código deste elemento é escrito em HTML com JavaScript, como mostrado no exemplo 
@@ -41,14 +41,9 @@ direita.
 
 **Seção e seus tipos de propriedades**
 
-<!-- help: precisa disso? -->
-<!-- Um projeto Deco usa o tipo das propriedades de um componente para gerar automaticamente o formulário de edição de bloco no Admin. Na figura a seguir, você pode ver como o Admin sabe as informações a serem colocadas no formulário. Para isso, o Admin entra em contato com o site ao vivo para recuperar os dados das propriedades das Seções naquele projeto. Por outro lado, o código de um site vem do GitHub, o mesmo que o desenvolvedor usa.
-
-![Estrutura de acesso aos dados do site](https://github.com/deco-sites/starting/assets/882438/dcc4d63a-bbb2-4f81-909a-054eef048a53) -->
-
 ## 2. Execute seu site localmente
 
-Siga os passos de [configuração do ambiente](/docs/developing-guide/setup/pt.md) e 
+Siga os passos de [configuração do ambiente](/docs/pt/developing-guide/setup) e 
 execute seu projeto localmente para ver as mudanças que você fizer no código refletidas 
 na interface do Admin.
 
@@ -72,7 +67,7 @@ Esse tipo de campo indica ao Admin que essa propriedade só pode assumir esses v
 fazendo a plataforma mostrar um componente de seleção para editar esse campo.
 
 Você pode ler mais sobre esses formatos e tipos de campo na 
-[documentação de Widgets](/docs/reference/widgets/pt.md).
+[documentação de Widgets](/docs/pt/developing-capabilities/section-properties/widgets).
 
 Vamos adicionar um botão CTA na nossa seção Hero para ver a modificação:
 

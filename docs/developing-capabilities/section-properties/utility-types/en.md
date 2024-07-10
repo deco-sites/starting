@@ -5,7 +5,7 @@ description: Sections can be coded by devs and configured by business users in t
 ## Suggested Reading
 
 - [Core Concepts: Section](/docs/en/concepts/section)
-- [Coding a new Section](/docs/en/developing/hello-world)
+- [Coding a new Section](/docs/en/developing-guide/hello-world)
 
 You already know that it's easy to create a configurable
 [Section](/docs/en/concepts/section) on _deco.cx_. In this post we'll outline
@@ -180,4 +180,4 @@ API _(like Shopify, Magento, VTEX...)_.
 
 To understand how to accomplish that with [Sections](/docs/en/concepts/section)
 and [Loaders](/docs/en/concepts/loader), go to the
-[Fetching data from APIs](/docs/en/developing/fetching-data) tutorial.
+[Fetching data from APIs](/docs/en/developing-guide/fetching-data) tutorial.

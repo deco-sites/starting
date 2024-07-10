@@ -12,7 +12,7 @@ existentes:
 <img src="/docs/widgets/textarea.png" alt="Exemplo textarea" width="400"/>
 
 Este Widget é renderizado para campos de texto que usam a
-[Annotation de JSDoc](/docs/pt/reference/annotations) de formatação especial
+[Annotation de JSDoc](/docs/pt/developing-capabilities/section-properties/annotations) de formatação especial
 `@format textarea`. Exemplo:
 
 ```ts

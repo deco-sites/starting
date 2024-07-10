@@ -48,7 +48,7 @@ the Admin.
 ![Adding a section](/docs/getting-started/creating-a-new-page/add-section.png)
 
 > If you want to develop/code a new Section, check our
-> [Developing Guide](/docs/en/developing/setup).
+> [Developing Guide](/docs/en/developing-guide/setup).
 
 Here, we will select the Hero section.
 

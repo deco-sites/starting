@@ -53,7 +53,7 @@ Aqui, estamos usando o hook `useState` do Preact para gerenciar o estado do cont
 
 Na versão HTMX, não usaremos mais o hook `useState` nem o evento `onClick`. Ao usar HTMX, precisamos de uma rota para cada estado da UI, então faremos uma solicitação ao servidor para atualizar o estado do contador.
 
-É aí que o [hook `useSection`](/docs/api-reference/use-section/) é útil. Este hook cria automaticamente rotas para renderizar seus estados de UI sem exigir que os desenvolvedores lidem manualmente com o roteamento.
+É aí que o [hook `useSection`](/docs/pt/api-reference/use-section) é útil. Este hook cria automaticamente rotas para renderizar seus estados de UI sem exigir que os desenvolvedores lidem manualmente com o roteamento.
 
 Vamos ver o que muda na versão HTMX:
 

@@ -45,7 +45,7 @@ as shown in the example below:
 
 ## 3. View the Section in the Admin
 
-Run the project locally as you did before in the [setup](/docs/setup/pt.md). 
+Run the project locally as you did before in the [setup](/docs/en/developing-guide/setup). 
 By selecting your local environment in the Admin, you can view the new 
 Section in the Sections library (**Sections**) and add it to a page.
 
@@ -117,7 +117,7 @@ and other components from the admin
 In addition to the types above, it is possible to annotate some properties so 
 that the admin form changes the input mechanism or determines certain aspects 
 of the property's behavior (through the `@format` annotation, for example). 
-Read more about [these annotations here](https://deco.cx/docs/en/reference/widgets).
+Read more about [these annotations here](/docs/en/developing-capabilities/section-properties/widgets).
 
 ## 5. Viewing the new properties in the Admin
 
