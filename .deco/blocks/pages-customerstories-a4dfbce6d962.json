@@ -1,1 +1,298 @@
-{"name":"Customer Stories PT","path":"/pt/customer-stories","sections":[{"__resolveType":"HeaderV2"},{"__resolveType":"site/sections/Live Projects/Hero.tsx","Banner":{"bannerHero":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c68e4364-bd65-4107-a910-b95139187356"},"headline":"Customer Stories","ctaButtons":{"hrefGreenButton":"https://starting.deco.site/pt/contact-us","hrefWhiteButton":"/pt/live-projects","titleGreenButton":"Agende uma demo","titleWhiteButton":"Live Projects"},"headlineSubtitle":"Descubra como a deco.cx transformou negócios: conheça histórias de clientes que aumentaram suas vendas e conversões. Veja o impacto real e agende uma demo para impulsionarmos seu e-commerce."},{"__resolveType":"site/sections/Live Projects/ProjectsGrid.tsx","list":[{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a","color":"#FFFFFF"}],"label":"Lojas Torra","price":"Fashion","categoria":"Fashion","pageSpeed":100,"description":"FASHION"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a","color":"#FFFFFF"}],"label":"Lojas Torra","price":"Fashion","categoria":"Fashion","pageSpeed":100,"description":"FASHION"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a","color":"#FFFFFF"}],"label":"Lojas Torra","price":"Fashion","categoria":"Fashion","pageSpeed":100,"description":"FASHION"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a","color":"#FFFFFF"}],"label":"Lojas Torra","price":"Fashion","categoria":"Educação","pageSpeed":100,"description":"FASHION"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/481d0f2b-6921-49f0-8a16-25d80100ee7c","color":"#FFFFFF"}],"label":"Teste","categoria":"Teste","description":"Teste"}],"cards":[{"link":"https://www.aviator.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3fd1e04d-251d-4bb2-9f7b-2acf5ce1f929","color":"#FFFFFF"}],"label":"Aviator","category":"Fashion","categoria":"B2B","description":"Fundada em 1987, começou com camisas masculinas e agora oferece uma gama diversificada de roupas. Com lojas no Rio e online, a marca foca em qualidade e satisfação do cliente."},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3715dc13-086c-4be6-a4ee-885458e279b4","color":"#FFFFFF"}],"label":"Zee.Dog","category":"PET","description":"Nascida em Los Angeles, a Zee.Dog desafia o mercado pet tradicional, inovando e oferecendo acessórios que refletem o estilo de vida dos donos."},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4f9b708f-ccc3-464f-a6a4-e3d7306235f6","color":"#FFFFFF"}],"label":"Teste","category":"Farma","description":"esse é um teste"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfa18b1a-6e27-4c0a-b37f-95b0fd93015b","color":"#FFFFFF"}],"label":"Outros","category":"esporte","description":"asjhuahfueufhe"}],"layout":{"categoryCard":{"textPosition":"bottom","textAlignment":"left"}},"itensPerPage":12,"indexCategories":[{"cards":[{"link":"https://www.deco.cx/pt/blog/case-lojas-torra","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/270f8e00-0405-421e-89ea-3f0b4b58ee03","color":"#FFFFFF"}],"label":"Lojas Torra","description":"Descubra como a Lojas Torra aumentou sua taxa de conversão em 103% e fez sua receita crescer 37% miigrando o seu frontend para a deco.cx."}],"label":"Fashion"},{"cards":[{"link":"https://www.deco.cx/pt/blog/case-zeedog","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09118336-54d8-4954-8ab0-e68313e4f0b0","color":"#FFFFFF"}],"label":"Zee.Dog","description":"Descubra como a Zee.Dog retomou controle do seu frontend, alcançando um aumento de 30% na taxa de conversão e reduzindo o tempo de carregamento em 5x."}],"label":"PET","category":"PET"},{"cards":[{"link":"https://www.deco.cx/pt/blog/case-eurocolchoes","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16bcccf6-4e73-436f-88d1-dfd085ba2e09","color":"#FFFFFF"}],"label":"Euro Colchões","description":"A equipe de três pessoas da Euro Colchões aumentou PageSpeed ​​da eurocolchoes.com de 7 para 80, transformando a presença online e física da marca."}],"label":"Lifestyle"},{"cards":[{"link":"https://deco.cx/pt/blog/customer-story-hospitalar","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b781ff8e-4395-4bb0-a219-aa250a7ed8a2","color":"#FFFFFF"}],"label":"Hospitalar Distribuidora","description":"Ao focar na eficiência das campanhas de mídia e na otimização da experiência do usuário, a deco.cx e a N1 aumentam o ROAS da Hospitalar de 4 para 19 e em apenas 3 meses."}],"label":"Healthcare"}],"categoriasNoIndice":["Todos","Fashion","PET","Farma","B2B","Saúde","Outros"],"layoutCategoryCard":{"textPosition":"bottom","textAlignment":"left"},"nomeDaCategoriaGeral":"Todos"},{"__resolveType":"site/sections/Head.tsx","url":"https://deco.cx/pt/customer-stories","title":"deco.cx | Customer Stories","imageUrl":"/decocx-meta-pt.png","styleUrls":[],"themeColor":"#0A2121","description":"Descubra o sucesso da deco.cx: histórias detalhadas de clientes com aumento de vendas e conversões. Agende uma demo para crescer a receita do seu ecommerce"},{"__resolveType":"Deco Footer [EN]"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Customer Stories PT",
+  "path": "/pt/customer-stories",
+  "sections": [
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "site/sections/Live Projects/Hero.tsx",
+      "Banner": {
+        "bannerHero": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c68e4364-bd65-4107-a910-b95139187356"
+      },
+      "headline": "Customer Stories",
+      "ctaButtons": {
+        "hrefGreenButton": "https://starting.deco.site/pt/contact-us",
+        "hrefWhiteButton": "/pt/live-projects",
+        "titleGreenButton": "Agende uma demo",
+        "titleWhiteButton": "Live Projects"
+      },
+      "headlineSubtitle": "Descubra como a deco.cx transformou negócios: conheça histórias de clientes que aumentaram suas vendas e conversões. Veja o impacto real e agende uma demo para impulsionarmos seu e-commerce."
+    },
+    {
+      "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
+      "list": [
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Lojas Torra",
+          "price": "Fashion",
+          "categoria": "Fashion",
+          "pageSpeed": 100,
+          "description": "FASHION"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Lojas Torra",
+          "price": "Fashion",
+          "categoria": "Fashion",
+          "pageSpeed": 100,
+          "description": "FASHION"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Lojas Torra",
+          "price": "Fashion",
+          "categoria": "Fashion",
+          "pageSpeed": 100,
+          "description": "FASHION"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Lojas Torra",
+          "price": "Fashion",
+          "categoria": "Educação",
+          "pageSpeed": 100,
+          "description": "FASHION"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/481d0f2b-6921-49f0-8a16-25d80100ee7c",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Teste",
+          "categoria": "Teste",
+          "description": "Teste"
+        }
+      ],
+      "cards": [
+        {
+          "link": "https://www.aviator.com.br/",
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3fd1e04d-251d-4bb2-9f7b-2acf5ce1f929",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Aviator",
+          "category": "Fashion",
+          "categoria": "B2B",
+          "description": "Fundada em 1987, começou com camisas masculinas e agora oferece uma gama diversificada de roupas. Com lojas no Rio e online, a marca foca em qualidade e satisfação do cliente."
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3715dc13-086c-4be6-a4ee-885458e279b4",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "category": "PET",
+          "description": "Nascida em Los Angeles, a Zee.Dog desafia o mercado pet tradicional, inovando e oferecendo acessórios que refletem o estilo de vida dos donos."
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4f9b708f-ccc3-464f-a6a4-e3d7306235f6",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Teste",
+          "category": "Farma",
+          "description": "esse é um teste"
+        },
+        {
+          "image": [
+            {
+              "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfa18b1a-6e27-4c0a-b37f-95b0fd93015b",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Outros",
+          "category": "esporte",
+          "description": "asjhuahfueufhe"
+        }
+      ],
+      "layout": {
+        "categoryCard": {
+          "textPosition": "bottom",
+          "textAlignment": "left"
+        }
+      },
+      "itensPerPage": 12,
+      "indexCategories": [
+        {
+          "cards": [
+            {
+              "link": "https://www.deco.cx/pt/blog/case-lojas-torra",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/270f8e00-0405-421e-89ea-3f0b4b58ee03",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Lojas Torra",
+              "description": "Descubra como a Lojas Torra aumentou sua taxa de conversão em 103% e fez sua receita crescer 37% miigrando o seu frontend para a deco.cx."
+            }
+          ],
+          "label": "Fashion"
+        },
+        {
+          "cards": [
+            {
+              "link": "https://www.deco.cx/pt/blog/case-zeedog",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09118336-54d8-4954-8ab0-e68313e4f0b0",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Zee.Dog",
+              "description": "Descubra como a Zee.Dog retomou controle do seu frontend, alcançando um aumento de 30% na taxa de conversão e reduzindo o tempo de carregamento em 5x."
+            }
+          ],
+          "label": "PET",
+          "category": "PET"
+        },
+        {
+          "cards": [
+            {
+              "link": "https://www.deco.cx/pt/blog/case-eurocolchoes",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16bcccf6-4e73-436f-88d1-dfd085ba2e09",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Euro Colchões",
+              "description": "A equipe de três pessoas da Euro Colchões aumentou PageSpeed ​​da eurocolchoes.com de 7 para 80, transformando a presença online e física da marca."
+            }
+          ],
+          "label": "Lifestyle"
+        },
+        {
+          "cards": [
+            {
+              "link": "https://deco.cx/pt/blog/customer-story-hospitalar",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b781ff8e-4395-4bb0-a219-aa250a7ed8a2",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Hospitalar Distribuidora",
+              "description": "Ao focar na eficiência das campanhas de mídia e na otimização da experiência do usuário, a deco.cx e a N1 aumentam o ROAS da Hospitalar de 4 para 19 e em apenas 3 meses."
+            }
+          ],
+          "label": "Healthcare"
+        }
+      ],
+      "categoriasNoIndice": [
+        "Todos",
+        "Fashion",
+        "PET",
+        "Farma",
+        "B2B",
+        "Saúde",
+        "Outros"
+      ],
+      "layoutCategoryCard": {
+        "textPosition": "bottom",
+        "textAlignment": "left"
+      },
+      "nomeDaCategoriaGeral": "Todos"
+    },
+    {
+      "__resolveType": "site/sections/Head.tsx",
+      "url": "https://deco.cx/pt/customer-stories",
+      "title": "deco.cx | Customer Stories",
+      "imageUrl": "/decocx-meta-pt.png",
+      "styleUrls": [],
+      "themeColor": "#0A2121",
+      "description": "Descubra o sucesso da deco.cx: histórias detalhadas de clientes com aumento de vendas e conversões. Agende uma demo para crescer a receita do seu ecommerce"
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "GTM"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

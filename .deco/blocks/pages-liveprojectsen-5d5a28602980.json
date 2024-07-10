@@ -966,6 +966,9 @@
     },
     {
       "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "GTM"
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"
