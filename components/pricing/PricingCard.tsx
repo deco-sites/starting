@@ -3,10 +3,13 @@ import { useSignal } from "@preact/signals";
 import { abbreviateNumber } from "site/components/utils/formatNumber.ts";
 
 /**
- * @title {{{title}}},{{{subtitleInfo}}}
+ * @title {{{title}}}
  */
 export interface Feature {
   title: string;
+  /**
+   * @format rich-text
+   */
   subtitleInfo?: string;
   /**
    * @format rich-text
@@ -35,7 +38,7 @@ export interface Calculator {
 }
 
 /**
- * @title {{{title}}},{{{subtitleInfo}}}
+ * @title {{{title}}}
  */
 export interface PricingCardProps {
   active?: boolean;
@@ -89,7 +92,7 @@ function FeatureItem({
           )}
         </div>
         {feature.subtitleInfo && (
-          <span
+          <div
             class="text-[#949E9E] text-sm"
             dangerouslySetInnerHTML={{
               __html: feature.subtitleInfo,
