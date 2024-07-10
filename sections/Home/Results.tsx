@@ -1,4 +1,8 @@
-export interface Mark {
+
+/**
+ * @title {{{title}}}
+ */
+export interface Result {
   /**
    * @format rich-text
    * @default Click here to tweak this text however you want.
@@ -17,28 +21,32 @@ export interface Props {
    * @default Click here to tweak this text however you want.
    */
   title?: string;
-  marks?: Mark[];
+  results?: Result[];
 }
 
-export default function Marks({
+export default function Results({
   title = "Results don't have to be explained",
-  marks = [
+  results = [
+    {
+      title: "+70",
+      description: "Websites using deco.cx",
+    },
     {
       title: "6X",
-      description: "faster PageSpeed on average after migration",
+      description: "average faster PageSpeed",
     },
     {
       title: "+3k",
-      description: "developers & designer in our Discord community",
+      description: "in our Discord community",
     },
     {
       title: "+400",
-      description: "starts on GitHub — check it out!",
+      description: "starts on our GitHub",
     },
   ],
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-4 py-14 lg:py-40 md:px-[24px] lg:px-0 flex flex-col gap-24 justify-center items-center">
+    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 p-6 md:p-10 flex flex-col gap-12 justify-center items-center bg-[#070D0D] border-[#0B1612] rounded-lg">
       {title &&
         (
           <h2
@@ -49,21 +57,21 @@ export default function Marks({
           >
           </h2>
         )}
-      <div class="flex flex-col md:flex-row gap-8 w-full">
-        {marks.map((mark) => (
-          <div class="flex flex-col gap-4 flex-1">
+      <div class="columns-1 md:columns-2 lg:flex md:flex-row gap-4 w-full">
+        {results.map((result) => (
+          <div class="flex flex-col gap-4 flex-1 mb-4 lg:mb-0">
             <h3
-              class="font-albert-sans text-[80px] text-center md:text-left font-medium text-white"
+              class="font-albert-sans text-[80px] text-left font-medium text-white leading-none"
               dangerouslySetInnerHTML={{
-                __html: mark.title,
+                __html: result.title,
               }}
             >
             </h3>
-            <hr />
+            <hr class="border-[#C9CFCF]"/>
             <div
-              class="font-albert-sans text-sm lg:text-base text-center md:text-left text-white"
+              class="font-albert-sans text-sm lg:text-base text-left text-white"
               dangerouslySetInnerHTML={{
-                __html: mark.description,
+                __html: result.description,
               }}
             />
           </div>

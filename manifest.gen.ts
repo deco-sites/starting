@@ -105,7 +105,7 @@ import * as $$$$$$79 from "./sections/Home/Features.tsx";
 import * as $$$$$$80 from "./sections/Home/Header.tsx";
 import * as $$$$$$81 from "./sections/Home/Hero.tsx";
 import * as $$$$$$82 from "./sections/Home/MainVideo.tsx";
-import * as $$$$$$83 from "./sections/Home/Marks.tsx";
+import * as $$$$$$83 from "./sections/Home/Results.tsx";
 import * as $$$$$$84 from "./sections/Home/Sale.tsx";
 import * as $$$$$$85 from "./sections/Home/SitesCarousel.tsx";
 import * as $$$$$$86 from "./sections/Home/StartingCards copy.tsx";
@@ -303,7 +303,7 @@ const manifest = {
     "site/sections/Home/Header.tsx": $$$$$$80,
     "site/sections/Home/Hero.tsx": $$$$$$81,
     "site/sections/Home/MainVideo.tsx": $$$$$$82,
-    "site/sections/Home/Marks.tsx": $$$$$$83,
+    "site/sections/Home/Results.tsx": $$$$$$83,
     "site/sections/Home/Sale.tsx": $$$$$$84,
     "site/sections/Home/SitesCarousel.tsx": $$$$$$85,
     "site/sections/Home/StartingCards copy.tsx": $$$$$$86,
