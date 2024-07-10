@@ -247,6 +247,7 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: { pt: "Propriedades de Sections", en: "Section Properties" },
+        slug: "developing-capabilities/section-properties/utility-types",
         children: [
           {
             title: { pt: "Tipos utilitários", en: "Utility types" },
@@ -281,6 +282,7 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: { pt: "Sections Interativas", en: "Interactive Sections" },
+        slug: "developing-capabilities/interactive-sections/partial",
         children: [
           {
             title: {
