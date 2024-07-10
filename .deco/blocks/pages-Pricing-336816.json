@@ -11,7 +11,8 @@
       "title": "<p>that follows your growth</p>",
       "subTitle": "<p>buld, preview, and go live today. As you expand, take advantage of our usage-based pricing and pay only for what you need!</p>",
       "ctas": [],
-      "alert": {}
+      "alert": {},
+      "showRadialOnTop": false
     },
     {
       "__resolveType": "site/sections/PricingTiers.tsx",
@@ -189,6 +190,19 @@
     },
     {
       "__resolveType": "Preview /sections/Home/FAQ.tsx"
+    },
+    {
+      "__resolveType": "site/sections/HeroBanner.tsx",
+      "pixelTitle": "<p><span style=\"color: #02f67c\">Git-base CMS for Free.</span></p>",
+      "title": "<p>Don't wait, Start Now.</p>",
+      "showRadial": true,
+      "ctas": [
+        {
+          "href": "https://admin.deco.cx",
+          "text": "Try for Free"
+        }
+      ],
+      "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bbd3d20c-aeee-4646-a488-6781648019fb"
     },
     {
       "__resolveType": "Deco Footer [EN]"

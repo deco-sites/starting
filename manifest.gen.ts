@@ -197,6 +197,7 @@ import * as $$$$$$171 from "./sections/Webinar/Content.tsx";
 import * as $$$$$$172 from "./sections/Webinar/Hero.tsx";
 import * as $$$$$$173 from "./sections/Whatsapp.tsx";
 import * as $$$$$$174 from "./sections/Why.tsx";
+import * as $$$$$$175 from "./sections/HeroBanner.tsx";
 
 const manifest = {
   "functions": {
@@ -394,6 +395,7 @@ const manifest = {
     "site/sections/Webinar/Hero.tsx": $$$$$$172,
     "site/sections/Whatsapp.tsx": $$$$$$173,
     "site/sections/Why.tsx": $$$$$$174,
+    "site/sections/HeroBanner.tsx": $$$$$$175
   },
   "matchers": {
     "site/matchers/MatchPath.ts": $$$$$$$0,
