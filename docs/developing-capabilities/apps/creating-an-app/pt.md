@@ -104,4 +104,4 @@ os seus apps! 🚀
 
 ## Leitura Adicional
 
-- [Tornando um App Instalável](/docs/en/developing/making-an-app-installable)
+- [Tornando um App Instalável](/docs/en/developing-capabilities/apps/making-an-app-installable)

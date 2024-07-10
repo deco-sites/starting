@@ -11,7 +11,7 @@ Here is a list of the existing widgets:
 <img src="/docs/widgets/textarea.png" alt="Exemplo textarea" width="400"/>
 
 This widget is rendered for text fields using the
-[JSDoc Annotation](/docs/en/reference/annotations) with the special formatting
+[JSDoc Annotation](/docs/en/developing-capabilities/section-properties/annotations) with the special formatting
 `@format textarea`. Example:
 
 ```ts

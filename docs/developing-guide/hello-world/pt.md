@@ -43,7 +43,7 @@ Exporte um componente [Preact](https://preactjs.com/) **usando
 
 ## 3. Visualize a Section no Admin
 
-Execute o projeto localmente como foi feito anteriormente no [setup](/docs/setup/pt.md).
+Execute o projeto localmente como foi feito anteriormente no [setup](/docs/pt/developing-guide/setup).
 Ao selecionar seu ambiente local no Admin, você poderá visualizar a nova Section
 na biblioteca de Sections (**Sections**) e adicioná-la a uma página.
 
@@ -115,7 +115,7 @@ interpretável no formulário de propriedades no admin da deco. Isto inclue:
 Além dos tipos acima, é possível anotar algumas propriedades para que o
 formulário do admin altere o mecanismo de inserção ou para determinar alguns
 aspectos do comportamento da propriedade (através da anotação `@format`, por
-exemplo). Leia mais sobre [essas anotações aqui](https://deco.cx/docs/pt/reference/widgets)
+exemplo). Leia mais sobre [essas anotações aqui](/docs/pt/developing-capabilities/section-properties/widgets)
 
 ## 5. Visualizando as novas propriedades no Admin
 

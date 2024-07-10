@@ -5,7 +5,7 @@ description: Sections podem ser codificadas por desenvolvedores e configuradas p
 ## Leitura sugerida
 
 - [Conceitos: Section](/docs/pt/concepts/section)
-- [Codificando uma nova Section](/docs/pt/developing/hello-world)
+- [Codificando uma nova Section](/docs/pt/developing-guide/hello-world)
 
 Você já sabe que é fácil criar uma [Section](/docs/pt/concepts/section)
 configurável na _deco.cx_. Neste post vamos detalhar todas as formas possíveis
@@ -182,4 +182,4 @@ provider _(como Shopify, Magento, VTEX...)_.
 
 Para entender como fazer isso com [Sections](/docs/pt/concepts/section) e
 [Loaders](/docs/pt/concepts/loader), leia
-[Buscando dados de APIs](/docs/pt/developing/fetching-data).
+[Buscando dados de APIs](/docs/pt/developing-guide/fetching-data).

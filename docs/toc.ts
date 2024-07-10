@@ -123,6 +123,261 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
+      pt: "Conceitos",
+      en: "Concepts",
+    },
+    children: [
+      {
+        title: {
+          pt: "Block",
+          en: "Block",
+        },
+        slug: "concepts/block",
+      },
+      {
+        title: {
+          pt: "Section",
+          en: "Section",
+        },
+        slug: "concepts/section",
+      },
+      {
+        title: {
+          pt: "Loader",
+          en: "Loader",
+        },
+        slug: "concepts/loader",
+      },
+      {
+        title: {
+          pt: "Action",
+          en: "Action",
+        },
+        slug: "concepts/action",
+      },
+      {
+        title: {
+          pt: "Page",
+          en: "Page",
+        },
+        slug: "concepts/page",
+      },
+      {
+        title: {
+          pt: "Matcher",
+          en: "Matcher",
+        },
+        slug: "concepts/matcher",
+      },
+      {
+        title: {
+          pt: "Segment",
+          en: "Segment",
+        },
+        slug: "concepts/segment",
+      },
+      {
+        title: {
+          pt: "App",
+          en: "App",
+        },
+        slug: "concepts/app",
+      },
+    ],
+  },
+  {
+    title: {
+      pt: "Funcionalidades de Desenvolvimento",
+      en: "Development capabilities",
+    },
+    children: [
+      {
+        title: { pt: "Blocos", en: "Blocks" },
+        slug: "developing-capabilities/blocks",
+        children: [
+          {
+            title: {
+              pt: "Exportando Propriedades Padrões em um Bloco",
+              en: "Exporting Default Props in a Block",
+            },
+            slug: "developing-capabilities/blocks/exporting-default-props",
+          },
+          {
+            title: {
+              pt: "Biblioteca de blocos",
+              en: "Block Library",
+            },
+            slug: "developing-capabilities/blocks/block-library",
+          },
+        ],
+      },
+      {
+        title: { pt: "Seções", en: "Sections" },
+        slug: "developing-capabilities/sections",
+        children: [
+          {
+            title: {
+              pt: "Capturando exceções nas Seções",
+              en: "Section error fallback",
+            },
+            slug: "developing-capabilities/sections/error-fallback",
+          },
+          {
+            title: {
+              pt: "Estados de carregamento nas Seções",
+              en: "Section loading fallback",
+            },
+            slug: "developing-capabilities/sections/loading-fallback",
+          },
+          {
+            title: {
+              pt: "Redirecionando usuários a partir de Seções",
+              en: "Redirecting users from Sections",
+            },
+            slug: "developing-capabilities/sections/redirecting-users",
+          },
+          {
+            title: {
+              pt: "Aceitando uma Seção como parâmetro da minha Seção",
+              en: "Accepting Other Sections as Parameters in Your Section",
+            },
+            slug: "developing-capabilities/sections/accept-a-section",
+          },
+        ],
+      },
+      {
+        title: { pt: "Propriedades de Sections", en: "Section Properties" },
+        children: [
+          {
+            title: { pt: "Tipos utilitários", en: "Utility types" },
+            slug: "developing-capabilities/section-properties/utility-types",
+          },
+          {
+            title: {
+              pt: "Dados padronizados",
+              en: "Standard data types",
+            },
+            slug: "developing-capabilities/section-properties/standard-data-types",
+          },
+          {
+            title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
+            slug: "developing-capabilities/section-properties/using-secrets",
+          },
+          {
+            title: {
+              pt: "Annotations",
+              en: "Annotations",
+            },
+            slug: "developing-capabilities/section-properties/annotations",
+          },
+          {
+            title: {
+              pt: "Widgets",
+              en: "Widgets",
+            },
+            slug: "developing-capabilities/section-properties/widgets",
+          },
+        ],
+      },
+      {
+        title: { pt: "Sections Interativas", en: "Interactive Sections" },
+        children: [
+          {
+            title: {
+              pt: "Partial",
+              en: "Partial",
+            },
+            slug: "developing-capabilities/interactive-sections/partial",
+          },
+        ],
+      },
+      {
+        title: { pt: "Loaders", en: "Loaders" },
+        slug: "developing-capabilities/loaders",
+      },
+      {
+        title: { pt: "Islands", en: "Islands" },
+        slug: "developing-capabilities/islands",
+        children: [
+          {
+            title: {
+              pt: "Actions",
+              en: "Actions",
+            },
+            slug: "developing-capabilities/islands/actions",
+          },
+          {
+            title: {
+              pt: "Carregando dados de uma API a partir do browser",
+              en: "Client-side Invocation",
+            },
+            slug: "developing-capabilities/islands/fetching-data-client",
+          },
+        ]
+      },
+      {
+        title: { pt: "Apps", en: "Apps" },
+        slug: "developing-capabilities/apps",
+        children: [
+          {
+            title: {
+              pt: "Desenvolvendo Apps",
+              en: "Developing Apps",
+            },
+            slug: "developing-capabilities/apps/creating-an-app",
+          },
+          {
+            title: {
+              pt: "Instalando Apps",
+              en: "Installing Apps",
+            },
+            slug: "developing-capabilities/apps/making-an-app-installable",
+          },
+          {
+            title: {
+              pt: "Modificando o status de retorno de uma pagina",
+              en: "Modifying the return status of a page",
+            },
+            slug: "developing-capabilities/apps/modifying-status",
+          },
+          {
+            title: {
+              pt: "Criando um Teste A/B",
+              en: "Creating an A/B Test",
+            },
+            slug: "developing-capabilities/apps/ab-test",
+          },
+        ]
+      },
+      {
+        title: { pt: "Problemas comuns", en: "Troubleshooting" },
+        slug: "reference/troubleshooting",
+      },
+      {
+        title: {
+          pt: "E-commerce Analytics",
+          en: "E-commerce Analytics",
+        },
+        slug: "reference/analytics",
+      },
+      {
+        title: {
+          pt: "Deco Records",
+          en: "Deco Records",
+        },
+        slug: "reference/deco-records",
+      },
+      {
+        title: {
+          pt: "Contribuindo",
+          en: "Contributing",
+        },
+        slug: "reference/contributing",
+      },
+    ],
+  },
+  {
+    title: {
       pt: "Decopilot",
       en: "Decopilot",
     },
@@ -140,174 +395,6 @@ const tableOfContents: TableOfContents = [
           en: "Assistant",
         },
         slug: "decopilot/assistant",
-      },
-    ],
-  },
-  {
-    title: {
-      pt: "Funcionalidades de Desenvolvimento",
-      en: "Development capabilities",
-    },
-    children: [
-      {
-        title: { pt: "Problemas comuns", en: "Troubleshooting" },
-        slug: "reference/troubleshooting",
-      },
-      {
-        title: { pt: "Tipos utilitários", en: "Utility types" },
-        slug: "reference/utility-types",
-      },
-      {
-        title: {
-          pt: "Contribuindo",
-          en: "Contributing",
-        },
-        slug: "reference/contributing",
-      },
-      {
-        title: {
-          pt: "E-commerce Analytics",
-          en: "E-commerce Analytics",
-        },
-        slug: "reference/analytics",
-      },
-      {
-        title: {
-          pt: "Annotations",
-          en: "Annotations",
-        },
-        slug: "reference/annotations",
-      },
-      {
-        title: {
-          pt: "Widgets",
-          en: "Widgets",
-        },
-        slug: "reference/widgets",
-      },
-      {
-        title: {
-          pt: "Dados padronizados",
-          en: "Standard data types",
-        },
-        slug: "composable-uis/standard-data-types",
-      },
-      {
-        title: {
-          pt: "Biblioteca de blocos",
-          en: "Block Library",
-        },
-        slug: "composable-uis/block-library",
-      },
-      {
-        title: {
-          pt: "E-commerce",
-          en: "E-commerce",
-        },
-        slug: "composable-uis/ecommerce",
-      },
-
-      {
-        title: {
-          pt: "Deco Records",
-          en: "Deco Records",
-        },
-        slug: "reference/deco-records",
-      },
-      {
-        title: {
-          pt: "Exportando Propriedades Padrões em um Bloco",
-          en: "Exporting Default Props in a Block",
-        },
-        slug: "developing-capabilities/exporting-default-props",
-      },
-      {
-        title: {
-          pt: "Adicionando interatividade em uma página",
-          en: "Client-side interactivity",
-        },
-        slug: "developing-capabilities/islands",
-      },
-      {
-        title: {
-          pt: "Tematizando uma Seção",
-          en: "Making a Section Themeable",
-        },
-        slug: "developing-capabilities/themeable-section",
-      },
-      {
-        title: {
-          pt: "Carregando dados de uma API a partir do browser",
-          en: "Client-side Invocation",
-        },
-        slug: "developing-capabilities/fetching-data-client",
-      },
-      {
-        title: {
-          pt: "Capturando exceções nas Seções",
-          en: "Section error fallback",
-        },
-        slug: "developing-capabilities/error-fallback",
-      },
-      {
-        title: {
-          pt: "Estados de carregamento nas Seções",
-          en: "Section loading fallback",
-        },
-        slug: "developing-capabilities/loading-fallback",
-      },
-      {
-        title: {
-          pt: "Redirecionando usuários a partir de Seções",
-          en: "Redirecting users from Sections",
-        },
-        slug: "developing-capabilities/redirecting-users",
-      },
-      {
-        title: {
-          pt: "Aceitando uma Seção como parâmetro da minha Seção",
-          en: "Accepting Other Sections as Parameters in Your Section",
-        },
-        slug: "developing-capabilities/accept-a-section",
-      },
-      {
-        title: {
-          pt: "Desenvolvendo Apps",
-          en: "Developing Apps",
-        },
-        slug: "developing-capabilities/creating-an-app",
-      },
-      {
-        title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
-        slug: "developing-capabilities/using-secrets",
-      },
-      {
-        title: {
-          pt: "Instalando Apps",
-          en: "Installing Apps",
-        },
-        slug: "developing-capabilities/making-an-app-installable",
-      },
-      {
-        title: {
-          pt: "Partial",
-          en: "Partial",
-        },
-        slug: "developing-capabilities/partial",
-      },
-      {
-        title: {
-          pt: "Modificando o status de retorno de uma pagina",
-          en: "Modifying the return status of a page",
-        },
-        slug: "developing-capabilities/modifying-status",
-      },
-      {
-        title: {
-          pt: "Criando um Teste A/B",
-          en: "Creating an A/B Test",
-        },
-        slug: "developing-capabilities/ab-test",
       },
     ],
   },
@@ -396,13 +483,7 @@ const tableOfContents: TableOfContents = [
         },
         slug: "performance/lazy-3rd-party-scripts",
       },
-      {
-        title: {
-          pt: "Otimizando Loaders",
-          en: "Optimizing Loaders",
-        },
-        slug: "performance/loaders",
-      },
+      // TODO: Optimizing loaders
       {
         title: {
           pt: "Otimizando Ilhas",
@@ -441,142 +522,6 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
-  /*
-  {
-    title: {
-      pt: "Deco Hub",
-      en: "Deco Hub",
-    },
-    children: [
-      {
-        title: {
-          pt: "NuvemShop",
-          en: "NuvemShop",
-        },
-        slug: "composable-apis/nuvemshop",
-      },
-      {
-        title: {
-          pt: "Shopify",
-          en: "Shopify",
-        },
-        slug: "composable-apis/shopify",
-      },
-      {
-        title: {
-          pt: "VNDA.",
-          en: "VNDA.",
-        },
-        slug: "composable-apis/vnda",
-      },
-      {
-        title: {
-          pt: "VTEX",
-          en: "VTEX",
-        },
-        slug: "composable-apis/vtex",
-      },
-      {
-        title: {
-          pt: "GTM",
-          en: "GTM",
-        },
-        slug: "composable-apis/gtm",
-      },
-      {
-        title: {
-          pt: "Criando um novo app",
-          en: "Creating a new app",
-        },
-        slug: "hub/create-new",
-      },
-    ],
-  },
-  {
-    title: {
-      pt: "Treinamento Comercial",
-    },
-    children: [
-      {
-        title: {
-          pt: "Introdução",
-        },
-        slug: "treinamento-comercial/introducao",
-      },
-      {
-        title: {
-          pt: "Agenda",
-        },
-        slug: "treinamento-comercial/agenda",
-      },
-      {
-        title: {
-          pt: "Diagnóstico Inicial",
-        },
-        slug: "treinamento-comercial/diagnostico-inicial",
-      },
-      {
-        title: {
-          pt: "Sales Deck",
-        },
-        slug: "treinamento-comercial/sales-deck",
-      },
-      {
-        title: {
-          pt: "Q&A Comercial",
-        },
-        slug: "treinamento-comercial/qa-comercial",
-      },
-      {
-        title: {
-          pt: "Produto",
-        },
-        slug: "treinamento-comercial/produto",
-      },
-      {
-        title: {
-          pt: "Headless & Composable",
-        },
-        slug: "treinamento-comercial/headless-composable",
-      },
-      {
-        title: {
-          pt: "Web Performance",
-        },
-        slug: "treinamento-comercial/web-performance",
-      },
-      {
-        title: {
-          pt: "Agências Parceiras",
-        },
-        slug: "treinamento-comercial/agencias-parceiras",
-      },
-      {
-        title: {
-          pt: "Nichos de Clients",
-        },
-        slug: "treinamento-comercial/nichos-de-clientes",
-      },
-      {
-        title: {
-          pt: "Objeções",
-        },
-        slug: "treinamento-comercial/objecoes",
-      },
-      {
-        title: {
-          pt: "Seu Primeiro Case",
-        },
-        slug: "treinamento-comercial/seu-primeiro-case",
-      },
-      {
-        title: {
-          pt: "Próximos Passos",
-        },
-        slug: "treinamento-comercial/proximos-passos",
-      },
-    ],
-  },*/
   {
     title: {
       pt: "Referência da API",

@@ -102,4 +102,4 @@ features to further enhance your apps! 🚀
 
 ## Further Reading
 
-- [Making an App Installable](/docs/en/developing/making-an-app-installable)
+- [Making an App Installable](/docs/en/developing-capabilities/apps/making-an-app-installable)

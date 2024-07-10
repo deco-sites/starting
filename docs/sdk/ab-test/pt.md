@@ -8,7 +8,7 @@ Esse conteúdo é para quem ainda não tem o site na deco.cx e deseja utilizar a
 Feature de Teste A/B de forma headless, sem migrar de tecnologia.
 
 Se você já tem o site na deco.cx, a criação de Teste A/B está explicada nessa
-outra [documentação](https://deco.cx/docs/pt/developing/ab-test).
+outra [documentação](/docs/pt/developing-capabilities/apps/ab-test).
 
 ## Como começar?
 
@@ -102,7 +102,7 @@ diretamente pelo painel da deco.cx.
 4 - Acompanhe os resultados.
 
 Para entender mais sobre a tela de resultados, olhe essa
-[documentação](https://deco.cx/docs/pt/developing/ab-test#funil-e-resultado).
+[documentação](/docs/pt/developing-capabilities/apps/ab-test#funil-e-resultado).
 
 ## Go-Live
 

@@ -49,7 +49,7 @@ através de um formulário no Admin.
 ![Adicionando uma seção](/docs/getting-started/creating-a-new-page/add-section.png)
 
 > Se você deseja desenvolver/codar uma nova seção, consulte nosso
-> [Guia de desenvolvimento](/docs/pt/developing/setup).
+> [Guia de desenvolvimento](/docs/pt/developing-guide/setup).
 
 Vamos selecionar a seção Hero.
 

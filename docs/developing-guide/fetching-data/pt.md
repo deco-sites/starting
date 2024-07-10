@@ -163,5 +163,5 @@ maior parte dos requisitos quando lidamos com dados vindos de API. A plataforma
 da `deco.cx` possui uma outra infinidade de casos de usos relacionados com dados
 dinâmicos que podemos utilizar.
 
-- [Componentes Universais](/docs/pt/composable-uis/standard-data-types)
+- [Componentes Universais](/docs/pt/developing-capabilities/section-properties/standard-data-types)
 - [Conceitos básicos: Loaders](/docs/pt/concepts/loader)

@@ -67,5 +67,5 @@ Componentes universais faz com que a interoperabilidade entre plataformas seja
 possível e o mais fácil possível. Leia mais sobre como criar loaders abaixo nos
 nossos tutoriais;
 
-- [Carregando dados de uma API](/docs/pt/developing/fetching-data)
+- [Carregando dados de uma API](/docs/pt/developing-guide/fetching-data)
 - [Conceitos básicos: Loaders](/docs/pt/concepts/loader)
