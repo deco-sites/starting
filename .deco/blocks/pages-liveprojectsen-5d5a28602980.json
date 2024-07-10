@@ -3,7 +3,7 @@
   "path": "/en/live-projects",
   "sections": [
     {
-      "__resolveType": "Deco Header [EN]"
+      "__resolveType": "HeaderV2"
     },
     {
       "__resolveType": "site/sections/Live Projects/Hero.tsx",
@@ -318,21 +318,41 @@
               "image": [
                 {
                   "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/30ae4400-b353-4b60-97aa-ecee72097112"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/278d9235-4ba9-435a-8feb-b912eccea3e3"
                 }
               ],
-              "link": "https://www.calcadosclovis.com.br/",
-              "label": "Clovis"
+              "link": "https://www.bolovo.com.br/",
+              "label": "Bolovo"
             },
             {
               "image": [
                 {
                   "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3ea6ed9b-b080-40c5-b56c-666c7b893092"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8e13e76b-89f2-4a2a-bf5f-16b293539232"
                 }
               ],
-              "label": "Comfortflex",
-              "link": "https://www.comfortflex.com.br/"
+              "label": "Brandili",
+              "link": "https://brandili.deco.site/"
+            },
+            {
+              "link": "https://www.calcadosclovis.com.br/",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/30ae4400-b353-4b60-97aa-ecee72097112",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Clovis"
+            },
+            {
+              "link": "https://www.comfortflex.com.br/",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3ea6ed9b-b080-40c5-b56c-666c7b893092",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Comfortflex"
             },
             {
               "link": "https://www.danielatombini.com.br/",
@@ -385,24 +405,24 @@
               "label": "Hector Albertazzi"
             },
             {
-              "link": "https://www.ligaretro.com.br/",
               "image": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ebd6ad35-1f65-463a-a7c5-9dfc82fcf4b9",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ebd6ad35-1f65-463a-a7c5-9dfc82fcf4b9"
                 }
               ],
-              "label": "Liga Retrô"
+              "label": "Liga Retrô",
+              "link": "https://www.ligaretro.com.br/"
             },
             {
-              "link": "https://www.lojastorra.com.br/",
               "image": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/22b30bf4-93d9-4ad7-a8f8-7126b0708a22",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/22b30bf4-93d9-4ad7-a8f8-7126b0708a22"
                 }
               ],
-              "label": "Lojas Torra"
+              "label": "Lojas Torra",
+              "link": "https://www.lojastorra.com.br/"
             },
             {
               "image": [
@@ -411,8 +431,18 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bb05ee4a-c266-4549-a069-6e2855ca05c2"
                 }
               ],
-              "label": "Meia Sola",
-              "link": "https://www.meiasola.com.br/"
+              "link": "https://www.meiasola.com.br/",
+              "label": "Meia Sola"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/26dc7d9a-c2c1-4d96-9862-ea6016077b63"
+                }
+              ],
+              "label": "Notta",
+              "link": "https://www.notta.com.br/"
             },
             {
               "image": [
@@ -421,8 +451,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/81513145-ed88-4e65-992a-ec741445f174"
                 }
               ],
-              "label": "Osklen",
-              "link": "https://www.osklen.com.br"
+              "link": "https://www.osklen.com.br",
+              "label": "Osklen"
             },
             {
               "image": [
@@ -441,8 +471,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/46b86834-1715-42d8-9259-a49a69499855"
                 }
               ],
-              "label": "Technos",
-              "link": "https://www.technos.com.br/"
+              "link": "https://www.technos.com.br/",
+              "label": "Technos"
             },
             {
               "image": [
@@ -451,8 +481,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4333a9dd-f952-46bd-9d82-7ad1c8bb3ddb"
                 }
               ],
-              "link": "https://www.unclek.com.br/",
-              "label": "Uncle K"
+              "label": "Uncle K",
+              "link": "https://www.unclek.com.br/"
             },
             {
               "image": [
@@ -461,8 +491,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/228fb1ea-1a50-4dec-909b-622e00550ad2"
                 }
               ],
-              "link": "https://www.velocita.com.br/",
-              "label": "Velocitá"
+              "label": "Velocitá",
+              "link": "https://www.velocita.com.br/"
             },
             {
               "image": [
@@ -471,8 +501,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c9a9cd70-a11b-4468-9447-19a9ebf2b09e"
                 }
               ],
-              "link": "https://www.zorba.com.br/",
-              "label": "Zorba"
+              "label": "Zorba",
+              "link": "https://www.zorba.com.br/"
             }
           ],
           "label": "Fashion"
@@ -488,6 +518,16 @@
                 }
               ],
               "label": "Empório Quatro Estrelas"
+            },
+            {
+              "link": "https://www.loja.notco.com/",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/03a1517f-3472-49ed-9dc7-51d8a080b5b7",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Notco"
             },
             {
               "link": "https://nutrilatina.com.br",
@@ -510,13 +550,13 @@
               "label": "Saddi Center"
             },
             {
-              "link": "https://www.shopvinho.com.br/",
               "image": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/194d9a2e-532f-4513-be34-77518f1889ec",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/194d9a2e-532f-4513-be34-77518f1889ec"
                 }
               ],
+              "link": "https://www.shopvinho.com.br/",
               "label": "Shopvinho"
             },
             {
@@ -526,8 +566,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a33da5a5-8709-4db6-922f-f7d8896000b9"
                 }
               ],
-              "link": "https://www.truesource.com.br/",
-              "label": "True Source"
+              "label": "True Source",
+              "link": "https://www.truesource.com.br/"
             }
           ],
           "label": "Grocery"
@@ -553,6 +593,16 @@
                 }
               ],
               "label": "Embelleze"
+            },
+            {
+              "link": "https://www.granado.com.br/",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/84efc4b8-b4ee-45a5-bb91-dad41079ce98",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Granado"
             },
             {
               "link": "https://www.hospitalardistribuidora.com.br/",
@@ -585,24 +635,24 @@
               "label": "Loja Prohall"
             },
             {
-              "link": "https://loja.omronbrasil.com/",
-              "image": [
-                {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/fe930aa7-aa86-4795-b9af-397d518056be",
-                  "color": "#FFFFFF"
-                }
-              ],
-              "label": "Omron"
-            },
-            {
               "image": [
                 {
                   "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/639bcb00-d877-4461-99d0-0382a606dd7d"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/fe930aa7-aa86-4795-b9af-397d518056be"
                 }
               ],
-              "label": "Óticas Isabela Dias",
-              "link": "https://www.oticaisabeladias.com.br/"
+              "label": "Omron",
+              "link": "https://loja.omronbrasil.com/"
+            },
+            {
+              "link": "https://www.oticaisabeladias.com.br/",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/639bcb00-d877-4461-99d0-0382a606dd7d",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Óticas Isabela Dias"
             },
             {
               "link": "https://www.oticasprevent.com.br/",
@@ -615,14 +665,14 @@
               "label": "Óticas Prevent"
             },
             {
-              "link": "https://www.yenzah.com.br/",
               "image": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/558ba815-e52c-4a82-833e-079eb546bd66",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/558ba815-e52c-4a82-833e-079eb546bd66"
                 }
               ],
-              "label": "Yenzah"
+              "label": "Yenzah",
+              "link": "https://www.yenzah.com.br/"
             }
           ],
           "label": "Health & Beauty"
@@ -916,6 +966,9 @@
     },
     {
       "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "GTM"
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"

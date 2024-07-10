@@ -1,0 +1,73 @@
+{
+  "__resolveType": "site/sections/Home/Header.tsx",
+  "alerts": {
+    "mobile": [],
+    "desktop": []
+  },
+  "menuLinks": [
+    {
+      "columns": [
+        {
+          "icon": "ArrowRight",
+          "nested": [
+            {
+              "columns": [],
+              "label": "Hub",
+              "href": "/pt/hub"
+            },
+            {
+              "columns": [],
+              "href": "/en/community",
+              "label": "Comunidade"
+            },
+            {
+              "columns": [],
+              "label": "deco.camp",
+              "href": "https://deco.camp/"
+            },
+            {
+              "columns": [],
+              "label": "Blog",
+              "href": "/pt/blog"
+            },
+            {
+              "columns": [],
+              "label": "Costumer Stories",
+              "href": "/pt/customer-stories"
+            },
+            {
+              "columns": [],
+              "label": "Live Projects",
+              "href": "/pt/live-projects"
+            }
+          ]
+        }
+      ],
+      "label": "Recursos",
+      "href": "/"
+    },
+    {
+      "columns": [],
+      "label": "Documentação",
+      "href": "/docs/pt/overview"
+    },
+    {
+      "columns": [],
+      "label": "Preços",
+      "href": "/pt/pricing"
+    }
+  ],
+  "login": {},
+  "sign": {
+    "label": "Criar site",
+    "url": "https://admin.deco.cx/spaces/new"
+  },
+  "idiom": "pt",
+  "demo": {
+    "label": "Agende uma demo",
+    "url": "https://www.deco.cx/en/contact-us"
+  },
+  "linkedinUrl": "https://www.linkedin.com/company/deco-cx/",
+  "gitUrl": "https://github.com/deco-cx",
+  "discordUrl": "https://discord.gg/YsGgt8EQCZ"
+}

@@ -8,7 +8,7 @@ since: 1.33.2
 Before you begin, make sure you have a ready Deco site, and the desired App
 should be available in the Apps directory. If you're unsure how to do this,
 refer to the
-[tutorial on making an app installable](/docs/en/developing/making-an-app-installable).
+[tutorial on making an app installable](/docs/en/developing-capabilities/apps/making-an-app-installable).
 
 # Apps
 

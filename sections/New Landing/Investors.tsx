@@ -32,11 +32,7 @@ const IMAGES = [
   },
 ];
 
-export const loader = async (
-  props: Props,
-  req: Request,
-  ctx: AppContext,
-) => {
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const device = ctx.device;
 
   return {
@@ -45,16 +41,13 @@ export const loader = async (
   };
 };
 
-const LogoSlider = (
-  { logos }: { logos: Image[] },
-) => {
+const LogoSlider = ({ logos }: { logos: Image[] }) => {
   const renderLogoSlide = () => (
-    <div
-      className={`flex z-10 gap-4 lg:gap-6 animate-slide`}
-    >
+    <div className={`flex z-10 gap-4 lg:gap-6 animate-slide`}>
       {logos.map((logo) => (
-        <div
+        <a
           class="flex items-center justify-center h-[30px] w-[82px] lg:w-52 m-5"
+          href={logo.href}
           target="_blank"
         >
           <Image
@@ -65,7 +58,7 @@ const LogoSlider = (
             loading="lazy"
             fetchPriority="low"
           />
-        </div>
+        </a>
       ))}
     </div>
   );
@@ -95,7 +88,11 @@ const LogoSlider = (
   );
 };
 
-function Investors({ title, brands, isMobile }: Omit<Props, "isMobile"> & {
+function Investors({
+  title,
+  brands,
+  isMobile,
+}: Omit<Props, "isMobile"> & {
   title?: string;
   brands?: {
     logos?: Image[];
@@ -104,17 +101,17 @@ function Investors({ title, brands, isMobile }: Omit<Props, "isMobile"> & {
 }) {
   const listBrands = useMemo(
     () =>
-      brands?.logos && brands?.logos.length > 0
-        ? brands?.logos
-        : Array(20).fill(null).map((_, i) => IMAGES[i % 2]) as Image[],
+      brands?.logos && brands?.logos.length > 0 ? brands?.logos : (Array(20)
+        .fill(null)
+        .map((_, i) => IMAGES[i % 2]) as Image[]),
     [],
   );
 
   function Logo(element: Image) {
     return (
       <div
-        class="flex items-center justify-center rounded-[20px] w-auto backdrop-filter backdrop-blur-22 relative"
-        style={{ "borderRadius": "16px" }}
+        class="flex items-center justify-center rounded-[20px] w-auto backdrop-filter backdrop-blur-22 relative hover:scale-105 transition ease-in-out duration-300"
+        style={{ borderRadius: "16px" }}
       >
         <a
           href={element.href}
@@ -146,19 +143,11 @@ function Investors({ title, brands, isMobile }: Omit<Props, "isMobile"> & {
   return (
     <div class="bg-[#0D1717] relative z-10">
       <div class="lg:container py-8 lg:py-[52px] lg:py-8 lg:px-16">
-        <div class="w-full flex flex-col gap-4 items-center">
+        <div class="w-full flex flex-col gap-8 items-center">
           <div class="font-albert-sans text-white font-medium text-[16px] lg:text-[24px] leading-[100%] tracking-[-0.48px]">
             {title}
           </div>
-          {isMobile === "desktop"
-            ? (
-              <div class="flex flex-wrap justify-center gap-4">
-                {listBrands.map((element, index) => (
-                  <Logo key={index} {...element} />
-                ))}
-              </div>
-            )
-            : <LogoSlider logos={listBrands} />}
+          <LogoSlider logos={listBrands} />
         </div>
       </div>
     </div>

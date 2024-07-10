@@ -32,7 +32,10 @@ export const ShowcaseEditorTabbed = (
   const animateProgressBar = (index: number) => {
     const progressBar = document.getElementById(`tab-${trackId}-${index}`);
     if (progressBar) {
-      animate(progressBar, { width: "100%" }, { duration: 5, easing: "linear" });
+      animate(progressBar, { width: "100%" }, {
+        duration: 5,
+        easing: "linear",
+      });
     }
   };
 

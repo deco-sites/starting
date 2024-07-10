@@ -10,7 +10,7 @@ export interface CTA {
 
 export interface Props {
   /**
-   * @format html
+   * @format rich-text
    */
   title: string;
   description: string;

@@ -19,7 +19,7 @@
             "__resolveType": "deco-sites/std/sections/SEO.tsx"
           },
           {
-            "__resolveType": "Deco Header [EN]"
+            "__resolveType": "HeaderV2"
           },
           {
             "font": {
@@ -759,7 +759,7 @@
         },
         "value": [
           {
-            "__resolveType": "Deco Header [EN]"
+            "__resolveType": "HeaderV2"
           },
           {
             "__resolveType": "Deco Hero [EN]"
@@ -876,7 +876,7 @@
             "__resolveType": "Deco Head [EN]"
           },
           {
-            "__resolveType": "Deco Header [EN]"
+            "__resolveType": "HeaderV2"
           },
           {
             "__resolveType": "site/sections/NRF/Hero.tsx",
