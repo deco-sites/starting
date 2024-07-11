@@ -13,7 +13,7 @@ As diferentes categorias presentes na listagem são obtidas a partir do diretór
 
 A partir desta tela é possível:
 
-<img width="320" alt="Opções na listagem de Sections" src="/docs/cms-capabilities/sections/sections2.png">
+<img width="480" alt="Opções na listagem de Sections" src="/docs/cms-capabilities/sections/sections2.png">
 
 - **Saved**: Listar as sections salvas
 - **Library**: Listar e testar todas as sections disponíveis pra uso
@@ -47,6 +47,7 @@ Na barra lateral a direita, é possível acessar:
 - `☰` Formulário com propriedades
 - `{}` Descrição textual das propriedades
 - `</>` Editor de código
+- `🖥️` Logs relacionados a visualização da section
 - `✨` Decopilot: IA para alteração do código
 
 ## Criar nova Section
@@ -55,5 +56,5 @@ Na barra lateral a direita, é possível acessar:
 
 <img width="320" alt="Criando uma section" src="/docs/cms-capabilities/sections/sections6.png">
 
-- **New template**: Cria uma section que será disponibilizada na biblioteca de componentes. Isto significa criar uma base de código que definirá um conjunto de propriedades e um programa para gerer o HTML associado.
+- **New template**: Cria uma section que será disponibilizada na biblioteca de componentes. Isto significa criar uma base de código que definirá um conjunto de propriedades e um programa para gerar o HTML associado.
 - **Using a template**: Cria uma section salva a partir de uma base existente. O nome será a identificação deste elemento entre as diferentes páginas.

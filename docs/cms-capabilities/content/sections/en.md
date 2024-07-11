@@ -13,7 +13,7 @@ The different categories in the listing are obtained from the directory where th
 
 From this screen, you can:
 
-<img width="320" alt="Options in the Sections Listing" src="/docs/cms-capabilities/sections/sections2.png">
+<img width="480" alt="Options in the Sections Listing" src="/docs/cms-capabilities/sections/sections2.png">
 
 - **Saved**: List saved sections
 - **Library**: List and test all available sections for use
@@ -47,6 +47,7 @@ In the right sidebar, you can access:
 - `☰` Form with properties
 - `{}` Textual description of properties
 - `</>` Code editor
+- `🖥️` Logs related to section preview
 - `✨` Decopilot: AI for code modification
 
 ## Creating a new Section
