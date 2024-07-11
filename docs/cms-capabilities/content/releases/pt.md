@@ -5,11 +5,11 @@ since: 2.0
 
 Na tela de releases, é possível avaliar os diferentes ambientes de edição (environment) do site, bem como as diferentes publicações (releases) realizadas. Cada ambiente de edição oferece um espaço único para que múltiplos usuários possam fazer alterações e possa enviar tais alterações para produção (para o endereço do site oficial).
 
-<img width="640" alt="Tela de Releases e envs" src="/docs/cms-capabilites/releases/releases1.png">
+<img width="640" alt="Tela de Releases e envs" src="/docs/cms-capabilities/releases/releases1.png">
 
 Ao realizar qualquer alteração no site, o seletor de ambientes sinaliza que há alterações realizadas no ambiente atual. O `Staging` é o ambiente padrão e inicia sem alterações. Isto é indicado no canto superior direito, no seletor de ambientes. O nome staging, sem um número associado e na cor verde, indica que o ambiente atual não difere do ambiente em produção.
 
-<img width="640" alt="Tela de Releases e envs" src="/docs/cms-capabilites/releases/releases2.png">
+<img width="640" alt="Tela de Releases e envs" src="/docs/cms-capabilities/releases/releases2.png">
 
 Para publicar um ambiente, é preciso ir na opção de `publish`. Nela, será possível verificar as alterações realizadas, bem como realizar a publicação para o endereço em produção. Observe que cada ambiente pode realizar mudanças e alterações de forma independente. Antes de publicar uma alteração, ou mesmo quando achar necessário, o usuário realizará um `Rebase`.
 
@@ -22,7 +22,7 @@ O processo de `rebase` se traduz em incorporar o estado atual do ambiente de pro
 
 Vamos dar um exemplo de mudanças em um cenário com dois ambientes: `staging` e `matheus`. As seguintes ações foram realizadas:
 
-<img width="640" alt="Tela de Releases e envs" src="/docs/cms-capabilites/releases/releases3.png">
+<img width="640" alt="Tela de Releases e envs" src="/docs/cms-capabilities/releases/releases3.png">
 
 1. Um, ou dois usuários, realizaram o total de duas mudanças no ambiente `staging`
 2. Um usuário realizou uma alteração no ambiente `matheus`. Neste momento, todos os dois ambientes divergem entre si e divergem do ambiente em produção.
@@ -39,7 +39,7 @@ Um ambiente representa um espaço de trabalho onde é possível realizar um conj
 
 O `Staging` é o ambiente padrão e inicia sem alterações. Isto é indicado no canto superior direito, no seletor de ambientes. O nome staging, sem um número associado e na cor verde, indica que o ambiente atual não difere do ambiente em produção.
 
-<img width="640" alt="Biblioteca de sections" src="/docs/cms-capabilites/releases/releases1.png">
+<img width="640" alt="Biblioteca de sections" src="/docs/cms-capabilities/releases/releases1.png">
 
 # Releases (evoluções)
 

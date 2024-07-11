@@ -5,11 +5,11 @@ since: 2.0
 
 On the releases screen, it is possible to evaluate the different editing environments (environment) of the site, as well as the different publications (releases) made. Each editing environment offers a unique space for multiple users to make changes and send those changes to production (to the official site address).
 
-<img width="640" alt="Releases and environments screen" src="/docs/cms-capabilites/releases/releases1.png">
+<img width="640" alt="Releases and environments screen" src="/docs/cms-capabilities/releases/releases1.png">
 
 When making any changes to the site, the environment selector indicates that there are changes made in the current environment. The `Staging` is the default environment and starts without any changes. This is indicated in the top right corner, in the environment selector. The name staging, without an associated number and in green, indicates that the current environment does not differ from the production environment.
 
-<img width="640" alt="Releases and environments screen" src="/docs/cms-capabilites/releases/releases2.png">
+<img width="640" alt="Releases and environments screen" src="/docs/cms-capabilities/releases/releases2.png">
 
 To publish an environment, you need to go to the `publish` option. There, you will be able to review the changes made, as well as publish them to the production address. Note that each environment can make changes and modifications independently. Before publishing a change, or whenever necessary, the user will perform a `Rebase`.
 
@@ -22,7 +22,7 @@ The `rebase` process translates into incorporating the current state of the prod
 
 Let's give an example of changes in a scenario with two environments: `staging` and `matheus`. The following actions were performed:
 
-<img width="640" alt="Releases and environments screen" src="/docs/cms-capabilites/releases/releases3.png">
+<img width="640" alt="Releases and environments screen" src="/docs/cms-capabilities/releases/releases3.png">
 
 1. One or two users made a total of two changes in the `staging` environment.
 2. One user made a change in the `matheus` environment. At this point, both environments differ from each other and differ from the production environment.
@@ -39,7 +39,7 @@ An environment represents a workspace where a set of changes or modifications ca
 
 The `Staging` is the default environment and starts without any changes. This is indicated in the top right corner, in the environment selector. The name staging, without an associated number and in green, indicates that the current environment does not differ from the production environment.
 
-<img width="640" alt="Sections library" src="/docs/cms-capabilites/releases/releases1.png">
+<img width="640" alt="Sections library" src="/docs/cms-capabilities/releases/releases1.png">
 
 # Releases (evolutions)
 
