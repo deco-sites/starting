@@ -8,7 +8,7 @@ Here is a list of the existing widgets:
 
 ## TextArea
 
-<img src="/docs/widgets/textarea.png" alt="Exemplo textarea" width="400"/>
+<img src="/docs/widgets/textarea.png" alt="Textarea example" width="400"/>
 
 This Widget renders a special text field. Just use the TextArea type. Example:
 
@@ -22,7 +22,7 @@ export interface Props {
 
 ## CheckBox
 
-<img src="/docs/widgets/checkbox.png" alt="Exemplo checkbox" height="200"/>
+<img src="/docs/widgets/checkbox.png" alt="Checkbox example" height="200"/>
 
 This widget is rendered for boolean fields. Example:
 
@@ -34,7 +34,7 @@ export interface Props {
 
 ## ImageUri
 
-<img src="/docs/widgets/image.png" alt="Exemplo image" width="400"/>
+<img src="/docs/widgets/image.png" alt="Image example" width="400"/>
 
 This widget is rendered for fields of type `ImageWidget`. This type can be
 imported from `deco-cx/apps`. Example:
@@ -49,7 +49,7 @@ export interface Props {
 
 ## VideoUri
 
-<img src="/docs/widgets/video.png" alt="Exemplo video" width="400"/>
+<img src="/docs/widgets/video.png" alt="Video example" width="400"/>
 
 This widget is rendered for fields of type `VideoWidget`. This type can be
 imported from `deco-cx/apps`. Example:
@@ -64,7 +64,7 @@ export interface Props {
 
 ## Section
 
-<img src="/docs/widgets/section.png" alt="Exemplo section" width="400"/>
+<img src="/docs/widgets/section.png" alt="Section example" width="400"/>
 
 The `Section` widget is used to create Sections that can receive other Sections
 as properties. It works similarly to receiving other components via props. When
@@ -83,7 +83,7 @@ export interface Props {
 
 ## Select
 
-<img src="/docs/widgets/select.png" alt="Exemplo select" width="300"/>
+<img src="/docs/widgets/select.png" alt="Select example" width="300"/>
 
 The Select widget is used to create dropdown lists or option menus, allowing
 users to choose between different alternatives. This widget is rendered for
@@ -99,7 +99,7 @@ export interface Props {
 
 ## HTML
 
-<img src="/docs/widgets/html-open.png" alt="Exemplo html" width="600"/>
+<img src="/docs/widgets/html-open.png" alt="HTML example" width="600"/>
 
 The HTML widget is rendered for fields of type `HTMLWidget`. This widget allows
 editing the content of its field through a
@@ -132,7 +132,7 @@ export interface Props {
 
 ## Secret
 
-<img src="/docs/widgets/secret.png" alt="Exemplo secret" width="400"/>
+<img src="/docs/widgets/secret.png" alt="Secret example" width="400"/>
 
 The Secret widget is intended for sensitive fields, such as passwords, and
 ensures that the content is encrypted to protect confidential information. It is
@@ -207,7 +207,7 @@ The Color Input widget displays a filled circle representing the selected color
 along with its corresponding hexadecimal value. Users can interact with the
 widget by clicking on it to open a color picker. Default value: "#000".
 
-<img src="/docs/widgets/color-input.png" alt="Exemplo color input" width="400"/>
+<img src="/docs/widgets/color-input.png" alt="Color input example" width="400"/>
 
 Example:
 
@@ -245,7 +245,7 @@ The Button Group widget allows you to render select options in an icon format,
 providing a visually appealing way to choose options. Each option is represented
 by an icon, offering flexibility and customization for your application.
 
-<img src="/docs/widgets/button-group.png" alt="Exemplo button group" width="400"/>
+<img src="/docs/widgets/button-group.png" alt="Button group example" width="400"/>
 
 Example:
 
@@ -316,7 +316,7 @@ each option consists of both an icon and its label. This allows users to preview
 and choose the right icon easily. All icons rendered in the widget must be
 defined explicitly as SVG strings.
 
-<img src="/docs/widgets/icon-select.png" alt="Exemplo icon select" width="400"/>
+<img src="/docs/widgets/icon-select.png" alt="Icon select example" width="400"/>
 
 Example:
 
