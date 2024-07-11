@@ -66,11 +66,11 @@ const tableOfContents: TableOfContents = [
           { title: { pt: "Pages", en: "Pages" },
             slug: "cms-capabilities/content/pages"
           },
-          { title: { pt: "Releases", en: "Releases" },
-            slug: "cms-capabilities/content/releases"
-          },
           { title: { pt: "Sections", en: "Sections" },
             slug: "cms-capabilities/content/sections"
+          },
+          { title: { pt: "Releases", en: "Releases" },
+            slug: "cms-capabilities/content/releases"
           }
         ]
       },
