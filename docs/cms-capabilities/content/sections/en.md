@@ -25,7 +25,7 @@ From this screen, you can:
 
 A **saved section** represents a component that can be shared across multiple pages. Elements like **Footer** and **Header** can be shared between different pages, allowing their properties to be configured only once.
 
-<img width="320" alt="Saved Sections" src="/docs/cms-capabilities/sections/sections3.png">
+<img width="480" alt="Saved Sections" src="/docs/cms-capabilities/sections/sections3.png">
 
 Saved sections can be configured from this screen, affecting all sections in the system. By clicking on a saved section, you can modify its previously configured properties.
 

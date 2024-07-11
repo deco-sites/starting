@@ -25,7 +25,7 @@ A partir desta tela é possível:
 
 Uma **sections salva** representa um compoente que pode ser comparitlhado entre várias páginas. Elementos como **Footer** e **Header** podem ser compartilhado entre diferentes páginas, da forma que estes elementos podem ter suas propriedades configuradas apenas uma vez.
 
-<img width="320" alt="Sections salvas" src="/docs/cms-capabilities/sections/sections3.png">
+<img width="480" alt="Sections salvas" src="/docs/cms-capabilities/sections/sections3.png">
 
 As sections salvas podem ser configuradas a partir desta tela, de forma afetar todas as sections do sistema. Ao clicar em uma section salva é possível alterar suas propriedades configuradas anteriormente. 
 

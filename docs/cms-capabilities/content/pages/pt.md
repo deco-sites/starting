@@ -5,16 +5,13 @@ since: 2.0
 
 # Páginas
 
-Você deve estar familiarizado com os conceitos básicos de
-[Blocks](/docs/pt/concepts/blocks) e [Section](/docs/pt/concepts/sections) e vamos entender como usá-los para criar páginas em um site deco.cx.
-
 A listagem de páginas de um site pode ser acessada na barra lateral em `Content > Pages`.
 
 <img width="640" alt="Listagem de páginas" src="/docs/cms-capabilities/pages/pages1.png">
 
-Uma **Page** é um bloco fundamental na criação de um Site _deco.cx_ que normalmente terá várias Pages. Cada Page consiste em:
+Uma **Page** é um bloco fundamental na criação de um Site _deco.cx_ que normalmente terá várias Pages. Cada `Page` consiste em:
 
-- **uma ou mais [Sections](/docs/pt/concepts/section)** configuradas, que podem ser consideradas como componentes modulares que compõem o conteúdo da Page. 
+- **uma ou mais [Sections](/docs/pt/concepts/section)** configuradas, que podem ser consideradas como componentes modulares que compõem o conteúdo da página. 
 - **um nome:** um nome significativo para entender o que essa página representa. Não afeta a interface do usuário ou os metadados da página, apenas exibido na listagem de páginas do admin.
 - **um path:** representa a URL que aquela página estará acessível para seus usuários. Pode ser estático (por exemplo: `/posts`) ou dinâmico (por exemplo: `/posts/:slug`, `/search/*`), seguindo o esquema [URLPattern](http://mdn.io/urlpattern).
 
@@ -22,9 +19,10 @@ Uma **Page** é um bloco fundamental na criação de um Site _deco.cx_ que norma
 
 Clique em **Pages** no menu superior e você poderá ver todas as páginas publicadas no site, juntamente com o _path_ que elas são acessíveis aos seus usuários.
 
-É possível duplicar ou apagar páginas usando as ações extras na listagem de páginas (ícone de 3 pontos):
-
 <img width="640" alt="Ações extras" src="/docs/cms-capabilities/pages/pages2.png">
+
+> É possível duplicar ou apagar páginas usando as ações extras na listagem de páginas (ícone de 3 pontos).
+
 
 Para criar uma nova página em seu site, **clique no botão Criar no canto superior direito da lista de páginas**. Um formulário será aberto com os campo: **nome**, **path** e **template**. Template permite criar uma página tomando o conteúdo de outra como base (campo opcional).
 

@@ -5,8 +5,6 @@ since: 2.0
 
 # Pages
 
-You should be familiar with the basic concepts of [Blocks](/docs/en/concepts/blocks) and [Sections](/docs/en/concepts/sections) and we will understand how to use them to create pages on a deco.cx website.
-
 The listing of pages on a website can be accessed in the sidebar under `Content > Pages`.
 
 <img width="640" alt="Page listing" src="/docs/cms-capabilities/pages/pages1.png">
@@ -21,9 +19,9 @@ A **Page** is a fundamental building block in creating a deco.cx website, which 
 
 Click on **Pages** in the top menu and you will be able to see all the published pages on the website, along with the path they are accessible to your users.
 
-You can duplicate or delete pages using the extra actions in the page listing (3-dot icon):
-
 <img width="640" alt="Extra actions" src="/docs/cms-capabilities/pages/pages2.png">
+
+> You can duplicate or delete pages using the extra actions in the page listing (3-dot icon).
 
 To create a new page on your website, **click on the Create button in the top right corner of the page list**. A form will open with the fields: **name**, **path**, and **template**. Template allows you to create a page based on the content of another page (optional field).
 
