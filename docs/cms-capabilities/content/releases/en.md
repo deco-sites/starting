@@ -33,8 +33,6 @@ Let's give an example of changes in a scenario with two environments: `staging` 
 
 # Environment (development environments)
 
-TODO
-
 An environment represents a workspace where a set of changes or modifications can be made and published. Every environment is shareable: multiple users can make changes in the same environment, so that all changes can be published at the same time.
 
 The `Staging` is the default environment and starts without any changes. This is indicated in the top right corner, in the environment selector. The name staging, without an associated number and in green, indicates that the current environment does not differ from the production environment.
