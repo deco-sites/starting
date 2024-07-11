@@ -876,6 +876,32 @@
                 ]
               },
               {
+                "__resolveType": "site/sections/Home/Results.tsx",
+                "title": "<p>Results don't have to be explained</p>",
+                "results": [
+                  {
+                    "title": "<p><span style=\"color: #02f67c\">+</span>70</p>",
+                    "description": "<p>Websites using deco.cx</p>",
+                    "id": "Websites using deco"
+                  },
+                  {
+                    "title": "<p>6<span style=\"color: #02f67c\">X</span></p>",
+                    "description": "<p>average faster PageSpeed</p>",
+                    "id": "PageSpeed"
+                  },
+                  {
+                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>4,2k</p>",
+                    "description": "<p>in our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/hBUs29me8Z\"><span style=\"color: #02f67c\">Discord community</span></a></p>",
+                    "id": "Discord "
+                  },
+                  {
+                    "title": "<p><span style=\"color: #02f67c\">+</span>470</p>",
+                    "description": "<p>starts on our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/deco-cx\">GitHub</a></p>",
+                    "id": "Github Stars"
+                  }
+                ]
+              },
+              {
                 "__resolveType": "site/sections/Home/TextSection2.tsx",
                 "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">fast execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">easy personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
               },
@@ -925,32 +951,6 @@
                   }
                 ],
                 "trackId": "1"
-              },
-              {
-                "__resolveType": "site/sections/Home/Results.tsx",
-                "title": "<p>Results don't have to be explained</p>",
-                "results": [
-                  {
-                    "title": "<p><span style=\"color: #02f67c\">+</span>70</p>",
-                    "description": "<p>Websites using deco.cx</p>",
-                    "id": "Websites using deco"
-                  },
-                  {
-                    "title": "<p>6<span style=\"color: #02f67c\">X</span></p>",
-                    "description": "<p>average faster PageSpeed</p>",
-                    "id": "PageSpeed"
-                  },
-                  {
-                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>4,2k</p>",
-                    "description": "<p>in our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/hBUs29me8Z\"><span style=\"color: #02f67c\">Discord community</span></a></p>",
-                    "id": "Discord "
-                  },
-                  {
-                    "title": "<p><span style=\"color: #02f67c\">+</span>470</p>",
-                    "description": "<p>starts on our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/deco-cx\">GitHub</a></p>",
-                    "id": "Github Stars"
-                  }
-                ]
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
