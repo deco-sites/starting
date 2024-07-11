@@ -94,7 +94,7 @@ const isSubTopicActive = (
   currentSlug: string | null,
   subTopic: SubTopic,
 ): boolean => {
-  const subTopicSlug = subTopic.SidebarLink?.split("/").pop()?.toLowerCase();
+  const subTopicSlug = subTopic.SidebarLink?.toLowerCase();
   const isActiveSubTopic = currentSlug === subTopicSlug;
   return isActiveSubTopic;
 };
@@ -141,28 +141,30 @@ function AsideLinks({
 
   useEffect(() => {
     const currentPath = window.location.pathname;
-    const pathParts = currentPath.split("/");
-    const slug = pathParts[pathParts.length - 1].toLowerCase();
-    setCurrentSlug(slug);
 
     topics.forEach((topic, index) => {
       const isActive = topic.SubTopics.some(
         (subTopic, subTopicIndex) => {
           if (
-            subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
+            currentPath.endsWith(subTopic.SidebarLink?.toLowerCase())
           ) {
             const hasNestedTopics = subTopic.NestedTopics
               ? subTopic.NestedTopics?.length > 0
               : false;
             if (hasNestedTopics) setOpenSubTopicIndex(subTopicIndex);
-
+            setCurrentSlug(subTopic.SidebarLink?.toLowerCase());
             return true;
           }
 
           const nestedTopicOpened = subTopic.NestedTopics?.some((
             childTopic,
-          ) =>
-            childTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
+          ) => {
+            if (currentPath.endsWith(childTopic.SidebarLink?.toLowerCase())) {
+              setCurrentSlug(childTopic.SidebarLink?.toLowerCase());
+              return true;
+            }
+            return false;
+          }
           );
 
           if (nestedTopicOpened) {
@@ -178,7 +180,7 @@ function AsideLinks({
     });
   }, []);
 
-  const subtitleSlug = linkSubtitle?.split("/").pop()?.toLowerCase();
+  const subtitleSlug = linkSubtitle?.toLowerCase();
 
   const firstTopic = topics[0];
   const firstSubTopic = firstTopic?.SubTopics?.[0];
