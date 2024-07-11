@@ -13,9 +13,9 @@ Here is a list of the existing widgets:
 This Widget renders a special text field. Just use the TextArea type. Example:
 
 ```ts
-export interface Props {
-  import { TextArea } from "apps/admin/widgets.ts";
+import { TextArea } from "apps/admin/widgets.ts";
 
+export interface Props {
   context: TextArea;
 }
 ```
@@ -214,9 +214,9 @@ Example:
 `MySection.tsx`
 
 ```ts
-export interface Props {
-  import { Color } from "apps/admin/widgets.ts";
+import { Color } from "apps/admin/widgets.ts";
 
+export interface Props {
   "primary"?: Color;
 }
 ```
@@ -228,9 +228,9 @@ The Code Widget displays a code editor.
 Use the types `CSS`, `TypeScript`, or `Json`. Example:
 
 ```ts
-export interface Props {
-  import { CSS, TypeScript, Json } from "apps/admin/widgets.ts";
+import { CSS, TypeScript, Json } from "apps/admin/widgets.ts";
 
+export interface Props {
   myCSSCode?: CSS;
   myTSCode?: TypeScript;
   myJsonCode?: Json;

@@ -14,9 +14,9 @@ existentes:
 Este Widget renderiza um campo de texto especial. Basta utilizar o tipo TextArea. Exemplo:
 
 ```ts
-export interface Props {
-  import { TextArea } from "apps/admin/widgets.ts";
+import { TextArea } from "apps/admin/widgets.ts";
 
+export interface Props {
   context: TextArea;
 }
 ```
@@ -220,9 +220,9 @@ Exemplo:
 `MySection.tsx`
 
 ```ts
-export interface Props {
-  import { Color } from "apps/admin/widgets.ts";
+import { Color } from "apps/admin/widgets.ts";
 
+export interface Props {
   "primary"?: Color;
 }
 ```
@@ -234,9 +234,9 @@ O Widget Code exibe um Editor de código.
 Utilize os tipos `CSS`, `TypeScript` ou `Json`. Exemplo:
 
 ```ts
-export interface Props {
-  import { CSS, TypeScript, Json } from "apps/admin/widgets.ts";
+import { CSS, TypeScript, Json } from "apps/admin/widgets.ts";
 
+export interface Props {
   myCSSCode?: CSS;
   myTSCode?: TypeScript;
   myJsonCode?: Json;
