@@ -33,8 +33,6 @@ Vamos dar um exemplo de mudanças em um cenário com dois ambientes: `staging` e
 
 # Environment (ambientes de desenvolvimento)
 
-TODO
-
 Um ambiente representa um espaço de trabalho onde é possível realizar um conjunto de alterações ou modificações que poderão ser publicadas. Todo ambiente é compartilhável: ou seja, multiplos usuários podem fazer alterações no mesmo ambiente, de forma que todas possam ser publicadas ao mesmo tempo.
 
 O `Staging` é o ambiente padrão e inicia sem alterações. Isto é indicado no canto superior direito, no seletor de ambientes. O nome staging, sem um número associado e na cor verde, indica que o ambiente atual não difere do ambiente em produção.
