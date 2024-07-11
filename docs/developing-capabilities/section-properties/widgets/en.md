@@ -116,7 +116,7 @@ export interface Props {
 
 ## RichText
 
-<img src="/docs/widgets/rich-text.png" alt="Exemplo rich text" width="600"/>
+<img src="/docs/widgets/rich-text.png" alt="Rich text example" width="600"/>
 
 The RichText widget represents formatted text with support for various style and formatting options.
 This widget allows developers to include text content that can have different fonts,
