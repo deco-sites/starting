@@ -36,21 +36,8 @@
               "title": "Community-Based Support"
             },
             {
-              "title": "Real-Time Analytics"
-            },
-            {
-              "title": "Native Monitoring & Observability",
-              "subtitleInfo": "<p>Powred by <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.hyperdx.io/\"><span style=\"color: #02f67c\">HyperDX</span></a></p>"
-            },
-            {
-              "title": "Component Library"
-            },
-            {
-              "title": "App Store"
-            },
-            {
               "title": "deco.pilot",
-              "subtitleInfo": "<p>50 AI Copilot Generations Included</p>"
+              "subtitleInfo": "50 AI Copilot Generations Included"
             }
           ],
           "button": {},
@@ -78,15 +65,6 @@
             },
             {
               "title": "Unlimited Code Editors"
-            },
-            {
-              "title": "AB Testing & Results"
-            },
-            {
-              "title": "Instant Rollbacks"
-            },
-            {
-              "title": "99,9% Uptime SLA"
             }
           ],
           "accessButton": {
@@ -183,7 +161,8 @@
               "title": "Special Deals for Self-Hosting"
             },
             {
-              "title": "Whitelabel Licensing"
+              "title": "Whitelabel Licensing",
+              "moreInfo": "<p>testingg</p>"
             }
           ],
           "calculator": {

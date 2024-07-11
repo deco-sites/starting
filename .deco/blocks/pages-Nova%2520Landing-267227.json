@@ -880,6 +880,24 @@
                 "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">fast execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">easy personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
               },
               {
+                "__resolveType": "site/sections/Home/Marks.tsx",
+                "marks": [
+                  {
+                    "title": "<p>6<span style=\"color: rgb(2, 246, 124)\">X</span></p>",
+                    "description": "<p>faster PageSpeed on average after migration</p>"
+                  },
+                  {
+                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>4,2k</p>",
+                    "description": "<p>developers &amp; designers in our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/YsGgt8EQCZ\"><u><span style=\"color: rgb(2, 246, 124)\">Discord community</span></u></a></p>"
+                  },
+                  {
+                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>470</p>",
+                    "description": "<p>stars on GitHub.<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"svg-container pl-[16px]\" href=\"https://github.com/deco-cx\"><span style=\"color: rgb(246, 213, 121)\">Give us a star</span></a></p>"
+                  }
+                ],
+                "title": "<p> </p>"
+              },
+              {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
                 "title": "<p>Everything You Need to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span></p>",
                 "tabs": [
@@ -925,32 +943,6 @@
                   }
                 ],
                 "trackId": "1"
-              },
-              {
-                "__resolveType": "site/sections/Home/Results.tsx",
-                "title": "<p>Results don't have to be explained</p>",
-                "results": [
-                  {
-                    "title": "<p><span style=\"color: #02f67c\">+</span>70</p>",
-                    "description": "<p>Websites using deco.cx</p>",
-                    "id": "Websites using deco"
-                  },
-                  {
-                    "title": "<p>6<span style=\"color: #02f67c\">X</span></p>",
-                    "description": "<p>average faster PageSpeed</p>",
-                    "id": "PageSpeed"
-                  },
-                  {
-                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>4,2k</p>",
-                    "description": "<p>in our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/hBUs29me8Z\"><span style=\"color: #02f67c\">Discord community</span></a></p>",
-                    "id": "Discord "
-                  },
-                  {
-                    "title": "<p><span style=\"color: #02f67c\">+</span>470</p>",
-                    "description": "<p>starts on our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/deco-cx\">GitHub</a></p>",
-                    "id": "Github Stars"
-                  }
-                ]
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
@@ -1182,21 +1174,7 @@
                     "description": "\"I’m sure you will soar even higher; this is just the beginning. Very grateful for this partnership and for believing in you from the very start. And what a partnership! You are tireless in evolving and suggesting improvements, embracing any challenges we face, and always ready to support and grow with us!\"",
                     "href": "https://www.linkedin.com/feed/update/urn:li:activity:7181038197907353600?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7181038197907353600%2C7181112203410894848%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287181112203410894848%2Curn%3Ali%3Aactivity%3A7181038197907353600%29"
                   }
-                ],
-                "socialLinks": [
-                  {
-                    "icon": "Discord",
-                    "title": "Join Our Discord",
-                    "link": "https://discord.gg/hBUs29me8Z"
-                  },
-                  {
-                    "icon": "Github-rounded",
-                    "title": "Star us on Github",
-                    "link": "https://github.com/deco-cx"
-                  }
-                ],
-                "title": "<p>Join our Community</p>",
-                "subtitle": "Backed by a community of +4,000 developers."
+                ]
               },
               {
                 "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
@@ -1248,7 +1226,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/FAQ.tsx",
-                "title": "<p><span style=\"color: #ffffff\">FAQ</span></p>",
+                "title": "<p><span style=\"color: rgb(255, 255, 255)\">FAQ</span></p>",
                 "questions": [
                   {
                     "answer": "Deco.cx is the frontend platform that bridges the gap between basic no-code site builders and complex full-code setups, allowing businesses of all sizes to create high-performance, fully personalized and AI-native web experiences. Our open-source platform bundles the best-in-class of framework, hosting, CMS, visual editor and code editor. ",
@@ -1445,8 +1423,7 @@
             ],
             "trigger": {
               "type": "load"
-            },
-            "loading": "lazy"
+            }
           }
         ],
         "rule": {
