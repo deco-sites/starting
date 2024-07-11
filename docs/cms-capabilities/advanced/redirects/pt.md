@@ -1,9 +1,7 @@
 ---
 description: Aprenda como criar proxies e redirecionamentos para uma rota específica
-since: 1.0.0
+since: 2.0
 ---
-
-# Visão Geral
 
 Adicionar **proxies** e **redirecionamentos** são práticas comuns no
 desenvolvimento web para _melhorar a experiência do usuário_ e _otimizar a
@@ -31,36 +29,37 @@ redireciona para a página inicial do google.com. Observe a diferença: o primei
 manterá você no mesmo domínio, enquanto o último o levará para fora do domínio
 do seu site.
 
-## Passo a passo
+## Adicionando um redirect
 
-### Adicionando um Redirecionamento
+### 1. Acessar a Página de Redirects
 
-1. Primeiro, faça login no Admin da deco. Uma vez logado, você pode acessar o
-   _site_ com o qual deseja trabalhar.
+Acesse a página de `redirects`. Isto permite acesso a criação de redirects.
 
-2. Entre na configuração de `redirects` do site.
-   ![Redirects no admin](https://github.com/deco-cx/apps/assets/882438/29e9f388-2c32-4190-96e5-ac5a8001b68c)
+<img width="640" alt="Redirects view" src="/docs/cms-capabilities/redirects/redirects1.png">
 
-3. Pressione `Criar um redirect` e configure de acordo com sua necessidade.
+### 2. Pressione o Create a redirect
 
-   ![Criar redirect](https://github.com/deco-cx/apps/assets/882438/63a7d2a4-cc53-47eb-adca-c6cb601e7f41)
+Faça a configuração do redirecionamento de acordo com sua necessidade:
 
-4. Preencha o campo `De` com a rota desejada, por exemplo, `/example-redirect`
-   e, em `Para`, insira `https://google.com` ou a URL para a qual deseja
-   **redirecionar**.
+- **From**: o campo de origem, que representa o caminho que o usuário está tentando acessar, e na qual ele será redirecionado. Este campo suporta o [URLPattern](http://mdn.io/urlpattern).
+- **To**: o campo de destino. Pode ser um endereço absoluto ou um caminho relativo
+- **Type**: a definição do tipo de redirect (`permanent` ou `temporary`)
 
-5. Escolha o tipo como `temporary`, já que este redirecionamento pode mudar ao
+> Escolha o tipo como `temporary`, quando o redirecionamento pode mudar ao
    longo do tempo. Se o redirecionamento não deve mudar ao longo do tempo, você
    pode selecionar `permanent` (o que pode resultar em respostas mais rápidas,
    já que os redirecionamentos permanentes são armazenados em cache pelo
    navegador do usuário).
 
-6. Crie o redirect para aplicá-lo.
+<img width="320" alt="Add redirect form" src="/docs/cms-capabilities/redirects/redirects2.png">
 
-Agora você pode acessar `https://seu-site.deco.site/example-redirect` e
-verificar se o redirecionamento está funcionando corretamente.
+### 3. Crie o redirect
 
-### Adicionando um Proxy
+Para o redirect entrar em efeito, é preciso publicar as alterações do seu site.
+
+Em seguida, você pode acessar `https://seu-site.deco.site/example-redirect` e verificar se o redirecionamento está funcionando corretamente.
+
+## Adicionando um Proxy \[via apps de ecommerce e website\]
 
 Proxies são utilizados quando você deseja _manter o usuário_ dentro do _mesmo
 site, mas fornecendo um conteúdo diferente_. Os **proxies** permitem o
@@ -71,32 +70,30 @@ usuário consistente. Os proxies são comumente usados durante processos de
 migração de plataforma, permitindo que você adote gradualmente o Deco e decida
 se uma página específica deve ser proxied ou servida diretamente pelo Deco.
 
-Para criar um proxy em vez de um redirecionamento, você pode seguir os seguintes
+Para criar ou editar um proxy em vez de um redirecionamento, você pode seguir os seguintes
 passos:
 
-1. Primeiro, faça login no Admin da deco. Uma vez logado, você pode acessar o
-   _site_ com o qual deseja trabalhar.
+### 1. Acesso o `App` de site
 
-2. Abra o `App` de site para edição. E pressione para adicionar um novo
-   `site map`.
+Acesse a visualização de apps do site, e procure pelo `App` de site. Para editá-lo, clique na descrição do app.
 
-   ![Adicionar site map](https://github.com/deco-cx/apps/assets/882438/92427ed1-54cb-49f2-88f5-3be8c1c27b8a)
+<img width="480" alt="Configure site app" src="/docs/cms-capabilities/redirects/proxies1.png">
 
-3. Selecione o tipo da rota como `Route`, e adicione essa nova rota.
+### 2. Procure peloRoutes Map
 
-4. Como `Path template`, selecione a base da rota (ex.: `/example-proxy`),
-   selecione o valor `Proxy` e a `URL`, como a URL a ser proxiada (ex.:
-   `https://deco.cx`).
+Procure no formulário de edição do app, pela propriedade de routes map.
 
-5. Publique as alterações.
+<img width="320" alt="Configure site app" src="/docs/cms-capabilities/redirects/proxies2.png">
 
-Agora, ao acessar a rota especificada (por exemplo,
-`https://seu-site.deco.site/example-proxy`), você será proxied para a URL
-especificada (neste caso, `https://deco.cx`).
+Edite o proxy existente para adicionar novas rotas a serem proxiadas (quando for o caso) ou adicione um proxy obtido de algum app de e-commerce.
 
-### Adicionando um arquivo de redirects.
+Publique as alterações para que a nova rota de proxy entre em efeito.
 
-Repita os passos de 1 e 2 da seção anterior. Em seguida:
+## Adicionando um arquivo de redirects.
+
+Repita o passo 1 da seção anterior e procure pelo `Route Maps`.
+
+Em seguida:
 
 1. Suba um arquivo como `redirect.csv` para a base do projeto. Ele deve ter o
    formato indicado abaixo:

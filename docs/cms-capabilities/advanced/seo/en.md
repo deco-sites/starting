@@ -1,63 +1,58 @@
 ---
 description: |
-  How to edit a block in deco.cx
+  How to configure meta-tags and media sharing in the admin
 ---
 
-Let's begin updating the website information. deco.cx allows you, through the
-Admin, to change content without the need for code changes, and this is done
-through the concept of [Blocks](/docs/en/concepts/block).
+SEO (Search Engine Optimization) represents a set of actions taken on a website to facilitate its search and indexing by robots, especially search engines. On this page, we configure some of these elements (meta-tags) that are used by search engines, but also by systems for generating the visualization of shared links.
 
-The first Block we can edit is the **site**, an [App](/docs/en/concepts/app)
-from deco that configures and prepares a project to operate as a website on the
-internet. This block configures important metadata about the page, including SEO
-data and title, description, and thumbnail (this information is used in social
-media previews).
+In this edition, it is possible to configure changes that will be applied to the entire site.
 
-Conveniently, on the Site detail page in deco, you can preview how the **SEO**
-is configured.
+<img width="640" alt="SEO Configuration" src="/docs/cms-capabilities/seo/seo1.png">
 
-To edit it, click on **Edit** in the upper right corner. You will be redirected
-to the block editing page.
+Pay attention to some of the available settings for configuring the page title:
 
-![SEO Editing](https://github.com/deco-cx/apps/assets/882438/c7986877-6c2c-4f21-90e6-3634c73f22f6)
+- Title: Site title
+- Title template: Base for dynamically created titles by other components (in the ecommerce `app`, we have the `SEOPLP` and `SEOPDP` blocks)
 
-Our block editor is divided into two sections:
+And the configuration of whether the site should be indexed or not (`Disable indexing`).
 
-1. **Form**: edit the information that the people who created the block made
-   available for editing on the right sidebar.
-2. **Preview**: when applicable, preview how your block will be rendered on the
-   left side.
+## Configuring SEO for a page
 
-In the top bar of the page, you have access to:
+Despite the global SEO configuration, it is possible to specialize the SEO for a specific page. To do this, you need to enter the page's edit mode and list the SEO properties of the page.
 
-- **Address bar**: test specific URLs for the block you are editing (useful for
-  product pages, for example).
+## Sitemap
 
-And in the sidebar, you can select other views of the page:
+The deco sitemap is automatically generated from the page listing. Ecommerce sites process the sitemap received from the backend to generate a valid sitemap.
 
-- **Performance Metrics:** see which resources this block is using and the
-  amount of JavaScript being sent to the browser.
-- **Revisions:** access the version history of the edited content.
-- **JSON Editor:** edit form data as JSON.
-- **Preview mode:**: disable the automatic overlay on the preview to test
-  interactive elements of the block.
+## Robots.txt
 
-![editor](https://github.com/deco-cx/apps/assets/882438/ebcee0fc-1d97-4b2d-a5e9-54a873d88b1e)
+The `robots.txt` represents a standard file used by bots on the internet to define how they should process your site.
 
-All changes you make in the form are **automatically reflected** in the preview
-on the left. When you are editing pages, you can also use the preview to select
-specific sections and reorder them directly on the page.
+To do this, it is possible to edit the file in the admin itself:
 
-## Editing SEO
+<img width="320" alt="Robots.txt" src="/docs/cms-capabilities/seo/seo2.png">
 
-Edit the title, description, and image of your site's SEO according to what you
-are building and ensure that social media previews are as expected. You can try
-different versions to see what suits you best.
+The robots file follows a well-defined format that must be respected to allow proper processing of your site.
 
-After that, **click the Publish button** in the upper right to create a new
-revision of this block. Revisions are immutable versions of the data edited in
-deco and are used to track and roll back changes over time.
-[Learn more about revisions here](/docs/en/getting-started/releases-revisions).
+```
+User-agent: AIBadBot
+Disallow: /
 
-There you go! Now your site has updated SEO data, and you have learned how to
-edit a block in deco.cx.
+User-agent: Googlebot
+Allow: /
+
+User-agent: BotName
+User-agent: BotName2
+Disallow: /
+Allow: /cgi-bin
+Allow: /institutional
+```
+
+Each directive (a set of rules for a bot) is made up of one (or more) `User-agent`s, at least one `allow` or `disallow` rule, and other optional rules (depending on the bot).
+
+The values for these rules can include `*` to represent all or any set of bots or paths.
+
+> With the growth of generative AI bots, we do not recommend granting access to any bot and any path by default. An ideal configuration:
+
+> - for search engines (like google/bing/etc): allow access to all paths, with some exceptions
+> - for all bots, block everything except very specific or AI-oriented paths, such as institutional pages, or even representative product shelves or catalogs for AI.

@@ -57,6 +57,12 @@ The "default" variant represents the page to be displayed when no matcher is sat
 
 > **Important**: Matchers are tested in the order they are placed, from the first (top) to the last (default). When a matcher is satisfied, it is immediately executed and no other subsequent conditions are tested, regardless of any other matcher that may satisfy the configured condition.
 
+## Editing the SEO of a page
+
+The SEO of a page follows the defined pattern on the website. It is possible to customize the SEO of a page by editing the SEO from the SEO editing option.
+
+<img width="640" alt="Section library" src="/docs/cms-capabilities/pages/pages-seo.png">
+
 ## Publishing changes
 
 The page will be updated with every edit made. These changes are specific to the environment you are working on (initially, staging). A change in the environment is not reflected in the production environment until that change is published.

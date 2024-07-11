@@ -58,6 +58,12 @@ A variante "default" representa a página a ser exibida quando nenhum matcher é
 
 > **Importante**: os matchers são testado na ordem que são colocados do primeiro (mais acima) até o último (default). Quando um matcher é satisfeito, ele é imeditamente executado e nenhuma outra condição posterior é testada, independente de qualquer outro matcher em seguida que possa satisfazer a condição configurada.
 
+## Editar um SEO de uma página
+
+O SEO de uma página segue o padrão definido no site. É possível especializar o SEO de uma página editando o SEO a partir da opção de edição de SEO.
+
+<img width="640" alt="Biblioteca de sections" src="/docs/cms-capabilities/pages/pages-seo.png">
+
 ## Publicar alterações
 
 A página será alterada a cada edição feita. Estas alterações são pertinentes ao ambiente que você esteja trabalhando (inicialmente, staging). Uma alteração no ambiente não é refletido no ambiente em produção até que essa alteração esteja publicada.

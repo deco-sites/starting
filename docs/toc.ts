@@ -87,13 +87,13 @@ const tableOfContents: TableOfContents = [
         slug: "cms-capabilities/advanced",
         children: [
           {
-            title: { pt: "Atualizando o SEO", en: "Updating SEO" },
+            title: { pt: "SEO (e robots)", en: "SEO (and robots)" },
             slug: "cms-capabilities/advanced/seo",
           },
           {
             title: {
-              pt: "Criando Redirecionamentos e Proxies",
-              en: "Adding Proxies and Redirects",
+              pt: "Redirects (e Proxies)",
+              en: "Redirects (and Proxies)",
             },
             slug: "cms-capabilities/advanced/redirects",
           },
@@ -106,10 +106,31 @@ const tableOfContents: TableOfContents = [
           },
           {
             title: {
+              pt: "Actions",
+              en: "Actions",
+            },
+            slug: "cms-capabilities/advanced/actions",
+          },
+          {
+            title: {
               pt: "Segments",
               en: "Segments",
             },
             slug: "cms-capabilities/advanced/segments",
+          },
+          {
+            title: {
+              pt: "Apps",
+              en: "Apps",
+            },
+            slug: "cms-capabilities/advanced/apps",
+          },
+          {
+            title: {
+              pt: "Experiments",
+              en: "Experiments",
+            },
+            slug: "cms-capabilities/advanced/experiments",
           }
         ]
       },
