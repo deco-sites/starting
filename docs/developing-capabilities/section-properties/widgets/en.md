@@ -225,7 +225,7 @@ export interface Props {
 
 The Code Widget displays a code editor.
 
-Use the types `CSS`, `TypeScript`, or `Json`. Example:
+Use `CSS`, `TypeScript`, or `Json` types. Example:
 
 ```ts
 import { CSS, TypeScript, Json } from "apps/admin/widgets.ts";
