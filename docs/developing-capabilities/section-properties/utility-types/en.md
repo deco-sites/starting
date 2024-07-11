@@ -47,11 +47,11 @@ export default function LatestPosts({ title }: Props) {
 
 - Preview of section editing in Admin
 
-<img width="202" alt="image" src="https://user-images.githubusercontent.com/18706156/225458611-9fe5d3a2-e602-4313-b5b3-c2dddec80888.png">
+<img width="640" alt="Section Form" src="/docs/dev-capabilities/utility-types/section-form.png">
 
 ## Types accepted
 
-The [deco.cx](deco.cx "deco.cx") editor accepts a subset of types Typescript for
+The deco.cx editor accepts a subset of types Typescript for
 section configuration. This is the list of supported types in time:
 
 ### Native Types
@@ -109,9 +109,6 @@ users to **upload images** from their own computer.
 The type is a _wrapper_ for `string`, so the Section will get the URL of the
 image that will be hosted on _deco.cx_ servers.
 
-> You can read more about
-> [how to work with Images in _deco.cx_](/docs/en/tips/images)
-
 **Optional:** [deco.cx](https://www.deco.cx) provides a component that optimizes
 the image loading and can be used in conjunction with this property. Example:
 
@@ -156,7 +153,7 @@ export interface props {
 
 - Editor:
 
-![Example](https://deco.fibery.io/api/files/62cc889a-9460-4899-8d35-44f6a6608400?is-public=1#align=%3Aalignment%2Fblock-center&width=350&height=135)
+<img width="640" alt="Section form with customized label and description" src="/docs/dev-capabilities/utility-types/label-and-description.png">
 
 The available tags are fields compatible with
 [JSON Schema](https://json-schema.org/), i.e. `@title`, `@description`,
@@ -169,15 +166,5 @@ export interface props {
 }
 ```
 
-Other types of valid formats are: `uri`, `color`.
-
-### Loading data from external APIs
-
-A common use-case for getting data inside of Sections is to **use external
-sources like APIs or databases**. This is a very common scenario in ecommerce
-stores, where we usually want to get product data from an ecommerce provider's
-API _(like Shopify, Magento, VTEX...)_.
-
-To understand how to accomplish that with [Sections](/docs/en/concepts/section)
-and [Loaders](/docs/en/concepts/loader), go to the
-[Fetching data from APIs](/docs/en/developing-guide/fetching-data) tutorial.
+Other types of valid formats are: `uri`, `color`. You can read more
+about it in the [annotations doc](/docs/en/developing-capabilities/section-properties/annotations).
