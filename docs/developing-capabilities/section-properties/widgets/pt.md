@@ -13,14 +13,14 @@ existentes:
 
 Este Widget é renderizado para campos de texto que usam a
 [Annotation de JSDoc](/docs/pt/developing-capabilities/section-properties/annotations) de formatação especial
-`@format textarea`. Exemplo:
+`@format textarea`. 
+Utilize o tipo TextArea. Exemplo:
 
 ```ts
 export interface Props {
-  /**
-   * @format textarea
-   */
-  context: string;
+  import { TextArea } from "apps/admin/widgets.ts";
+
+  context: TextArea;
 }
 ```
 
@@ -122,6 +122,22 @@ export interface Props {
 }
 ```
 
+## RichText
+
+<img src="/docs/widgets/rich-text.png" alt="Exemplo rich text" width="600"/>
+
+O widget RichText representa texto formatado com suporte para várias opções de estilos e formatação.
+Este widget permite que os desenvolvedores incluam conteúdo de texto que pode ter diferentes fontes,
+tamanhos, cores e outros estilos de formatação aplicados.
+
+```ts
+import { RichText } from "apps/admin/widgets.ts";
+
+export interface Props {
+  content: RichText;
+}
+```
+
 ## Secret
 
 <img src="/docs/widgets/secret.png" alt="Exemplo secret" width="400"/>
@@ -198,7 +214,7 @@ export default function ProdutosLoader(
 
 O widget Color Input exibe um círculo preenchido representando a cor selecionada
 juntamente com seu valor hexadecimal correspondente. Os usuários podem interagir
-com o widget clicando nele para abrir um seletor de cores.
+com o widget clicando nele para abrir um seletor de cores. Valor padrão: "#000".
 
 <img src="/docs/widgets/color-input.png" alt="Example color input" width="400"/>
 
@@ -208,24 +224,25 @@ Exemplo:
 
 ```ts
 export interface Props {
-  /** @format color-input */
-  "primary"?: string;
+  import { Color } from "apps/admin/widgets.ts";
+
+  "primary"?: Color;
 }
 ```
 
 ## Code
 
-O Widget Code, exibe um Editor de código.
+O Widget Code exibe um Editor de código.
 
-Utilize com `@language css`, `@language typescript` ou `@language json`
+Utilize os tipos `CSS`, `TypeScript` ou `Json`. Exemplo:
 
 ```ts
 export interface Props {
-  /**
-   * @format code
-   * @language css
-   */
-  myCode?: string;
+  import { CSS, TypeScript, Json } from "apps/admin/widgets.ts";
+
+  myCSSCode?: CSS;
+  myTSCode?: TypeScript;
+  myJsonCode?: Json;
 }
 ```
 

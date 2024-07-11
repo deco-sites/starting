@@ -12,14 +12,14 @@ Here is a list of the existing widgets:
 
 This widget is rendered for text fields using the
 [JSDoc Annotation](/docs/en/developing-capabilities/section-properties/annotations) with the special formatting
-`@format textarea`. Example:
+`@format textarea`.
+Use the TextArea type. Example:
 
 ```ts
 export interface Props {
-  /**
-   * @format textarea
-   */
-  context: string;
+  import { TextArea } from "apps/admin/widgets.ts";
+
+  context: TextArea;
 }
 ```
 
@@ -117,6 +117,22 @@ export interface Props {
 }
 ```
 
+## RichText
+
+<img src="/docs/widgets/rich-text.png" alt="Exemplo rich text" width="600"/>
+
+The RichText widget represents formatted text with support for various style and formatting options.
+This widget allows developers to include text content that can have different fonts,
+sizes, colors, and other formatting styles applied.
+
+```ts
+import { RichText } from "apps/admin/widgets.ts";
+
+export interface Props {
+  content: RichText;
+}
+```
+
 ## Secret
 
 <img src="/docs/widgets/secret.png" alt="Exemplo secret" width="400"/>
@@ -192,7 +208,7 @@ export default function ProductsLoader(
 
 The Color Input widget displays a filled circle representing the selected color
 along with its corresponding hexadecimal value. Users can interact with the
-widget by clicking on it to open a color picker.
+widget by clicking on it to open a color picker. Default value: "#000".
 
 <img src="/docs/widgets/color-input.png" alt="Exemplo color input" width="400"/>
 
@@ -202,24 +218,25 @@ Example:
 
 ```ts
 export interface Props {
-  /** @format color-input */
-  "primary"?: string;
+  import { Color } from "apps/admin/widgets.ts";
+
+  "primary"?: Color;
 }
 ```
 
 ## Code
 
-The Code Widget render a code editor.
+The Code Widget displays a code editor.
 
-Use with `@language css`, `@language typescript` or `@language json`
+Use the types `CSS`, `TypeScript`, or `Json`. Example:
 
 ```ts
 export interface Props {
-  /**
-   * @format code
-   * @language css
-   */
-  myCode?: string;
+  import { CSS, TypeScript, Json } from "apps/admin/widgets.ts";
+
+  myCSSCode?: CSS;
+  myTSCode?: TypeScript;
+  myJsonCode?: Json;
 }
 ```
 
