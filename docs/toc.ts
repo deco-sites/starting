@@ -57,25 +57,69 @@ const tableOfContents: TableOfContents = [
   {
     title: { pt: "Funcionalidades do CMS", en: "CMS capabilities" },
     children: [
-      {
-        title: { pt: "Atualizando o SEO", en: "Updating SEO" },
-        slug: "cms-capabilities/updating-seo",
+      { title: { pt: "Home", en: "Home" },
+        slug: "cms-capabilities/home"
       },
-      {
-        title: {
-          pt: "Segmentação de Conteúdo",
-          en: "Segmenting Content with Variants",
-        },
-        slug: "cms-capabilities/variants",
+      { title: { pt: "Content", en: "Content" },
+        slug: "cms-capabilities/content",
+        children: [
+          { title: { pt: "Pages", en: "Pages" },
+            slug: "cms-capabilities/content/pages"
+          },
+          { title: { pt: "Sections", en: "Sections" },
+            slug: "cms-capabilities/content/sections"
+          },
+          { title: { pt: "Blog", en: "Blog" },
+            slug: "cms-capabilities/content/blog"
+          },
+          { title: { pt: "Releases", en: "Releases" },
+            slug: "cms-capabilities/content/releases"
+          },
+          { title: { pt: "Assets", en: "Assets" },
+            slug: "cms-capabilities/content/assets"
+          },
+          { title: { pt: "Records", en: "Records" },
+            slug: "cms-capabilities/content/records"
+          }
+        ]
       },
-      {
-        title: {
-          pt: "Criando Redirecionamentos e Proxies",
-          en: "Adding Proxies and Redirects",
-        },
-        slug: "cms-capabilities/proxy-redirects",
+      { title: { pt: "Advanced", en: "Advanced" },
+        slug: "cms-capabilities/advanced",
+        children: [
+          {
+            title: { pt: "Atualizando o SEO", en: "Updating SEO" },
+            slug: "cms-capabilities/advanced/seo",
+          },
+          {
+            title: {
+              pt: "Criando Redirecionamentos e Proxies",
+              en: "Adding Proxies and Redirects",
+            },
+            slug: "cms-capabilities/advanced/redirects",
+          },
+          {
+            title: {
+              pt: "Loaders",
+              en: "Loaders",
+            },
+            slug: "cms-capabilities/advanced/loaders",
+          },
+          {
+            title: {
+              pt: "Segments",
+              en: "Segments",
+            },
+            slug: "cms-capabilities/advanced/segments",
+          }
+        ]
       },
-    ],
+      { title: { pt: "Management", en: "Management" },
+        slug: "cms-capabilities/management",
+        children: [
+          
+        ]
+      }
+    ]
   },
   {
     title: {

@@ -20,28 +20,33 @@ export interface Note {
  */
 export interface PricingTiersProps {
   tiers?: PricingCardProps[];
+  /**
+   * @description 15 = 15%
+   */
+  annualDiscount?: number;
   notes?: Note[];
 }
 
-function PricingTiers({ notes, tiers }: PricingTiersProps) {
-  const useAnnualDiscount = useSignal(false);
+function PricingTiers({ notes, tiers, annualDiscount }: PricingTiersProps) {
+  const applyAnnualDiscount = useSignal(false);
 
   function handleUpdateDiscount(value: boolean) {
-    useAnnualDiscount.value = value;
+    applyAnnualDiscount.value = value;
   }
 
   return (
     <div class="flex justify-center elative w-full">
       <div class="relative flex flex-col items-center gap-8 z-10 max-w-[1440px] mx-4">
         <div class="bg-[#070D0D] border border-[#0B1612] p-0.5 rounded-[10px]">
-          <SelectTimePlan updateDiscount={handleUpdateDiscount} />
+          <SelectTimePlan updateDiscount={handleUpdateDiscount} annualDiscount={annualDiscount} />
         </div>
-        <div class="flex flex-wrap justify-center text-white gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:flex text-white gap-4 w-full">
           {tiers?.map((tier) => (
             <PricingCard
               pricingCard={tier}
               key={tier.title}
-              useAnnualDiscount={useAnnualDiscount.value}
+              annualDiscount={annualDiscount}
+              applyDiscount={applyAnnualDiscount.value}
             />
           ))}
         </div>
