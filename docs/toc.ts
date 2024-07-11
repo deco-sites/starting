@@ -69,8 +69,17 @@ const tableOfContents: TableOfContents = [
           { title: { pt: "Sections", en: "Sections" },
             slug: "cms-capabilities/content/sections"
           },
+          { title: { pt: "Blog", en: "Blog" },
+            slug: "cms-capabilities/content/blog"
+          },
           { title: { pt: "Releases", en: "Releases" },
             slug: "cms-capabilities/content/releases"
+          },
+          { title: { pt: "Assets", en: "Assets" },
+            slug: "cms-capabilities/content/assets"
+          },
+          { title: { pt: "Records", en: "Records" },
+            slug: "cms-capabilities/content/records"
           }
         ]
       },

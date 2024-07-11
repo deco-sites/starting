@@ -3,8 +3,6 @@ description: Working with sections
 since: 2.0
 ---
 
-# Sections
-
 Sections represent components that can be used to build a page. A section is a Preact component, which means it transforms the properties passed to it into HTML.
 
 When you open the sections (sidebar `Content > Sections`), you will have access to a set of saved sections, the component library, and the ability to create and save sections.

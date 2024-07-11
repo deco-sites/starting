@@ -3,8 +3,6 @@ description: Trabalhando com sections
 since: 2.0
 ---
 
-# Sections
-
 As sections representam componentes que podem ser utilizadas para montar uma página. Uma section é um componente Preact, ou seja, um elemento que transforma algumas propriedades passadas para este componente em HTML.
 
 Ao abrir as sections (barra lateral `Content > Sections`), você terá acesso a um conjunto de sections salvas, a biblioteca de componentes e a possibilidade de criar e salvar sections. 

@@ -3,8 +3,6 @@ description: Aprenda como criar páginas na deco.cx sem precisar de código
 since: 2.0
 ---
 
-# Páginas
-
 A listagem de páginas de um site pode ser acessada na barra lateral em `Content > Pages`.
 
 <img width="640" alt="Listagem de páginas" src="/docs/cms-capabilities/pages/pages1.png">

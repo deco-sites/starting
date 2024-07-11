@@ -3,8 +3,6 @@ description: Learn how to create pages on deco.cx without needing code
 since: 2.0
 ---
 
-# Pages
-
 The listing of pages on a website can be accessed in the sidebar under `Content > Pages`.
 
 <img width="640" alt="Page listing" src="/docs/cms-capabilities/pages/pages1.png">
