@@ -33,7 +33,7 @@ Note that although the ProductShelf depends on a "Product" list to work, it does
 not depend on what is the source of the data that will provide this information.
 This is only possible because the `Product` type is a type created by a central
 entity on `schema.org`. Another possible way of thinking about our ProductShelf
-would be to write an [Inline Loader](/docs/en/tutorials/data-fetching) and make
+would be to write an [Inline Loader](/docs/en/developing-guide/fetching-data) and make
 this inline loader read the API data of an e-commerce in specific (e.g Shopify)
 and only then render the ProductShelf.
 
@@ -55,7 +55,7 @@ products from APIs and even different e-commerce platforms, they are:
 [VTEXProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/loaders/intelligentSearch/productList.ts#L1),
 [VTEXLegacyProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/vtex/loaders/legacy/productList.ts#L1),
 It is
-[ShopifyProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/shopify/loaders/intelligentSearch/ProductList.ts#L1)
+[ShopifyProductList](https://github.com/deco-cx/apps/blob/3e337b6b2996d7ecd72db34174896638c92f8811/shopify/loaders/ProductList.ts#L1)
 
 This makes Universal Components something that has value and usability. very
 large compared to components that depend on data from APIs!

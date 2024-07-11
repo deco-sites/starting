@@ -47,7 +47,7 @@ export default function LatestPosts({ title }: Props) {
 
 - Preview of section editing in Admin
 
-<img width="640" alt="image" src="/docs/dev-capabilities/utility-types/section-form.png">
+<img width="640" alt="Section Form" src="/docs/dev-capabilities/utility-types/section-form.png">
 
 ## Types accepted
 
@@ -109,9 +109,6 @@ users to **upload images** from their own computer.
 The type is a _wrapper_ for `string`, so the Section will get the URL of the
 image that will be hosted on _deco.cx_ servers.
 
-> You can read more about
-> [how to work with Images in _deco.cx_](/docs/en/tips/images)
-
 **Optional:** [deco.cx](https://www.deco.cx) provides a component that optimizes
 the image loading and can be used in conjunction with this property. Example:
 
@@ -169,15 +166,5 @@ export interface props {
 }
 ```
 
-Other types of valid formats are: `uri`, `color`.
-
-### Loading data from external APIs
-
-A common use-case for getting data inside of Sections is to **use external
-sources like APIs or databases**. This is a very common scenario in ecommerce
-stores, where we usually want to get product data from an ecommerce provider's
-API _(like Shopify, Magento, VTEX...)_.
-
-To understand how to accomplish that with [Sections](/docs/en/concepts/section)
-and [Loaders](/docs/en/concepts/loader), go to the
-[Fetching data from APIs](/docs/en/developing-guide/fetching-data) tutorial.
+Other types of valid formats are: `uri`, `color`. You can read more
+about it in the [annotations doc](/docs/en/developing-capabilities/section-properties/annotations).

@@ -47,7 +47,7 @@ export default function LatestPosts({ title }: Props) {
 
 - Como fica o editor no Admin:
 
-<img width="202" alt="image" src="https://user-images.githubusercontent.com/18706156/225458611-9fe5d3a2-e602-4313-b5b3-c2dddec80888.png">
+<img width="640" alt="Formulário da Section no Admin" src="/docs/dev-capabilities/utility-types/section-form.png">
 
 ## Tipos suportados
 
@@ -109,9 +109,6 @@ usuários **fazer upload de imagens**.
 O tipo é um _wrapper_ para `string`, então a Section receberá a URL da imagem
 hospedada nos servidores da _deco.cx_.
 
-> Você pode ler mais sobre
-> [como trabalhar com Imagens na _deco.cx_](/docs/pt/receitas/imagens)
-
 **Opcional:** A _deco.cx_ fornece um componente que otimiza o carregamento da
 imagens e pode ser usado em conjunto com esta propriedade.
 
@@ -158,7 +155,7 @@ export interface props {
 
 - Editor:
 
-![Exemplo](https://deco.fibery.io/api/files/62cc889a-9460-4899-8d35-44f6a6608400?is-public=1#align=%3Aalignment%2Fblock-center&width=350&height=135)
+<img width="640" alt="Formulário da Section com label e descrição costumizadas" src="/docs/dev-capabilities/utility-types/label-and-description.png">
 
 As tags disponíveis são os campos compatíveis com
 [JSON Schema](https://json-schema.org/), ou seja, `@title`, `@description`,
@@ -171,15 +168,5 @@ export interface props {
 }
 ```
 
-Outros tipos de formatos válidos são: `uri`, `color`.
-
-### Carregando dados de APIs externas
-
-Um caso de uso comum para obter dados dentro de Sections é **usar fontes como
-APIs ou bancos de dados**. Este é um cenário muito comum no ecommerce, onde
-geralmente queremos obter dados do produto através da API de um ecommerce
-provider _(como Shopify, Magento, VTEX...)_.
-
-Para entender como fazer isso com [Sections](/docs/pt/concepts/section) e
-[Loaders](/docs/pt/concepts/loader), leia
-[Buscando dados de APIs](/docs/pt/developing-guide/fetching-data).
+Outros tipos de formatos válidos são: `uri`, `color`. Você pode ler mais sobre
+isso [na documentação de Annotations](/docs/pt/developing-capabilities/section-properties/annotations).
