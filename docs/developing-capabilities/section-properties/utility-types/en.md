@@ -47,11 +47,11 @@ export default function LatestPosts({ title }: Props) {
 
 - Preview of section editing in Admin
 
-<img width="202" alt="image" src="https://user-images.githubusercontent.com/18706156/225458611-9fe5d3a2-e602-4313-b5b3-c2dddec80888.png">
+<img width="640" alt="image" src="/docs/dev-capabilities/utility-types/section-form.png">
 
 ## Types accepted
 
-The [deco.cx](deco.cx "deco.cx") editor accepts a subset of types Typescript for
+The deco.cx editor accepts a subset of types Typescript for
 section configuration. This is the list of supported types in time:
 
 ### Native Types
@@ -156,7 +156,7 @@ export interface props {
 
 - Editor:
 
-![Example](https://deco.fibery.io/api/files/62cc889a-9460-4899-8d35-44f6a6608400?is-public=1#align=%3Aalignment%2Fblock-center&width=350&height=135)
+<img width="640" alt="Section form with customized label and description" src="/docs/dev-capabilities/utility-types/label-and-description.png">
 
 The available tags are fields compatible with
 [JSON Schema](https://json-schema.org/), i.e. `@title`, `@description`,
