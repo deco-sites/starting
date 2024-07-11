@@ -10,10 +10,7 @@ Here is a list of the existing widgets:
 
 <img src="/docs/widgets/textarea.png" alt="Exemplo textarea" width="400"/>
 
-This widget is rendered for text fields using the
-[JSDoc Annotation](/docs/en/developing-capabilities/section-properties/annotations) with the special formatting
-`@format textarea`.
-Use the TextArea type. Example:
+This Widget renders a special text field. Just use the TextArea type. Example:
 
 ```ts
 export interface Props {

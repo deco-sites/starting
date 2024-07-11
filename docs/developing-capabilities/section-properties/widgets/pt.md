@@ -11,10 +11,7 @@ existentes:
 
 <img src="/docs/widgets/textarea.png" alt="Exemplo textarea" width="400"/>
 
-Este Widget é renderizado para campos de texto que usam a
-[Annotation de JSDoc](/docs/pt/developing-capabilities/section-properties/annotations) de formatação especial
-`@format textarea`. 
-Utilize o tipo TextArea. Exemplo:
+Este Widget renderiza um campo de texto especial. Basta utilizar o tipo TextArea. Exemplo:
 
 ```ts
 export interface Props {
