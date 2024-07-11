@@ -122,7 +122,8 @@
             ]
           },
           "active": true,
-          "monthlyBasePrice": "9"
+          "monthlyBasePrice": "9",
+          "useAnnualDiscount": true
         },
         {
           "features": [
@@ -169,7 +170,8 @@
           "subtitle": "Ideal for growing brands and agencies that need to manage multiple projects efficiently.",
           "monthlyBasePrice": "99",
           "annualDiscount": 15,
-          "featuresTitle": "<p>Everythin in <span style=\"color: #02f67c\">Pro</span>, plus:</p>"
+          "featuresTitle": "<p>Everythin in <span style=\"color: #02f67c\">Pro</span>, plus:</p>",
+          "useAnnualDiscount": true
         },
         {
           "features": [
@@ -204,7 +206,8 @@
           "icon": "star-sign",
           "text": "<p>1 GB of bandwidth per 10K pageviews | <strong>$1.00 per extra GB</strong> | 10 requests per pageview | <strong>%0.08 per additional 1,000 requests</strong></p>"
         }
-      ]
+      ],
+      "annualDiscount": 15
     },
     {
       "__resolveType": "DoubleBrands"

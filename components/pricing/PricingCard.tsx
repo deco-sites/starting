@@ -42,14 +42,10 @@ export interface Calculator {
  */
 export interface PricingCardProps {
   active?: boolean;
+  useAnnualDiscount?: boolean;
   title: string;
   subtitle?: string;
   monthlyBasePrice: string;
-  /**
-   * @title Annual Discount (E.g. 15 = 15%)
-   * @example 15 = 15%
-   */
-  annualDiscount?: number;
   /**
    * @format rich-text
    */
@@ -163,16 +159,17 @@ function CalculatorElement({
 
 export interface Props {
   pricingCard: PricingCardProps;
-  useAnnualDiscount: boolean;
+  annualDiscount: number | undefined;
+  applyDiscount: boolean;
 }
 
-function PricingCard({ pricingCard, useAnnualDiscount }: Props) {
+function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
   const {
     active,
+    useAnnualDiscount,
     title,
     subtitle,
     monthlyBasePrice,
-    annualDiscount,
     featuresTitle,
     features = [],
     calculator,
@@ -210,11 +207,11 @@ function PricingCard({ pricingCard, useAnnualDiscount }: Props) {
 
   return (
     <div
-      class={`flex flex-col grow gap-5 p-6 w-full md:w-[340px] max-w-[500px] rounded-lg border ${
+      class={`flex flex-col grow gap-5 p-6 w-full rounded-lg border ${
         active ? styles.active.container : styles.regular.container
       }`}
     >
-      <div class="flex flex-col gap-2 mb-5">
+      <div class="flex flex-col gap-2">
         <h3 class="font-[argent-pixel] text-3xl mb-2">{title}</h3>
         <div class="flex items-center gap-4">
           <p>
@@ -226,7 +223,7 @@ function PricingCard({ pricingCard, useAnnualDiscount }: Props) {
               <>
                 <span class="text-3xl text-[#02F67C] font-semibold mr-1">
                   $
-                  {useAnnualDiscount && annualDiscount
+                  {applyDiscount && useAnnualDiscount && annualDiscount
                     ? (
                         parseFloat(currentPrice.value) *
                         (1 - annualDiscount / 100)
@@ -237,7 +234,7 @@ function PricingCard({ pricingCard, useAnnualDiscount }: Props) {
               </>
             )}
           </p>
-          {useAnnualDiscount && annualDiscount && (
+          {(applyDiscount && useAnnualDiscount && annualDiscount) && (
             <div class="rounded-lg border border-[#02F67C] bg-[#02F67C20] px-3 py-0.5 text-sm">
               {annualDiscount}% off
             </div>
@@ -245,6 +242,15 @@ function PricingCard({ pricingCard, useAnnualDiscount }: Props) {
         </div>
         <p class="text-[#949E9E]">{subtitle}</p>
       </div>
+      <a
+        href={accessButton.href}
+        class={`w-full text-center text-lg font-bold rounded-lg py-4 ${
+          active ? styles.active.button : styles.regular.button
+        }`}
+      >
+        {accessButton.title}
+      </a>
+      <hr class="border-[#162121]" />
       <div class="flex flex-col h-full gap-4">
         <div
           class="font-semibold"
@@ -273,14 +279,7 @@ function PricingCard({ pricingCard, useAnnualDiscount }: Props) {
           ))}
         </div>
       )}
-      <a
-        href={accessButton.href}
-        class={`w-full text-center text-lg font-bold rounded-lg py-4 ${
-          active ? styles.active.button : styles.regular.button
-        }`}
-      >
-        {accessButton.title}
-      </a>
+      
     </div>
   );
 }
