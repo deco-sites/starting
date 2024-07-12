@@ -79,11 +79,11 @@ Agora você tem seu próprio ambiente e espaço de trabalho isolado para fazer a
 
 ## (Opcional) 5. Deploy do Seu Site
 
-Se você quiser fazer o deploy do seu site para um ambiente ao vivo, você pode fazer isso clicando no botão "Add Deco Hosting" na página inicial do site ou no botão "Go live" no dropdown de ambientes.
+Se você quiser fazer o deploy do seu site usando o Hosting da Deco, você pode fazer isso clicando no botão "Add Deco Hosting" na página inicial do site ou no botão "Go live" no dropdown de ambientes.
 
 <img src="/docs/getting-started/creating-site/go-live-btn.png" alt="Botão de Deploy do site" width="340"/>
 
-Isso vai fazer o deploy do seu site com Deno Deploy, tornando-o acessível através de uma URL pública como `https://deco-sites-maria-landing.deno.dev/`.
+Seu site se tornará acessível através de uma URL pública como `https://deco-sites-maria-landing.deno.dev/`.
 
 Esse deploy incluirá 5.000 visualizações de página (compartilhadas entre todos os sites da equipe). Se você precisar de mais visualizações de página, você pode [atualizar seu plano](https://deco.cx/en/pricing) no Deco Admin.
 

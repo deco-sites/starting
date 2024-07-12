@@ -110,11 +110,13 @@ o clone.
 
 ### 3. Executar servidor local
 
+Para rodar seu site localmente, editar e ver as mudanças no Admin, você precisa 
+ter um ambiente local (um ambiente com `localhost` como host). Para isso, você 
+pode usar o ambiente `localhost` criado por padrão ou criar um novo.
+
 #### 3.1 Crie um novo ambiente
 
-Para executar seu site localmente, crie um novo ambiente na aba Releases.
-Isso permitirá que as mudanças feitas no Admin da deco sejam 
-refletidas no seu repositório local e vice-versa.
+Abra a aba de Releases e clique no botão Novo ambiente no Admin.
 
 ![Criar novo ambiente](/docs/setup/create-environment.png)
 
@@ -148,7 +150,8 @@ isto será refletido no endereço acima.
 
 #### 3.4 Publicando alterações
 
-O processo de _deploy_ em development é muito simples: apenas fazer um _git
+Considerando que você escolheu o Deco Hosting para o deploy de seu site, 
+o processo de _deploy_ em development é muito simples: apenas fazer um _git
 push_ das alterações na _branch_ _**main**_.
 
 Você também pode publicar seu ambiente no próprio Admin clicando no botão de
