@@ -137,7 +137,12 @@ const tableOfContents: TableOfContents = [
       { title: { pt: "Management", en: "Management" },
         slug: "cms-capabilities/management",
         children: [
-          
+          { title: { pt: "Settings (domínios)", en: "Settings (domains)" },
+            slug: "cms-capabilities/management/custom-domains"
+          },
+          { title: { pt: "Settings (domínios APEX)", en: "Settings (APEX domains)" },
+            slug: "cms-capabilities/management/apex-domains"
+          }
         ]
       }
     ]
