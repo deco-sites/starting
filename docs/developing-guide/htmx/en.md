@@ -25,7 +25,7 @@ the deco Admin.
 ## Step 2: Making the Preact version of the Counter
 
 Let's create a Preact component for the counter to see the 
-difference to a HTMX version:
+difference compared to a HTMX version:
 
 ```tsx
 import { useState } from "preact/hooks";
@@ -58,8 +58,8 @@ and the `onClick` event to update the counter when the buttons are clicked.
 
 ## Step 3: Making the HTMX version of the Counter
 
-In the HTMX version, we will no longer use the `useState` hook neither the
-`onClick` event. When using HTMX, we need to have one route to each UI
+In the HTMX version, we will no longer use the `useState` hook or the
+`onClick` event. When using HTMX, we need to have one route for each UI
 state of the site, so we will make a request to the server to update
 the counter state.
 
@@ -97,14 +97,14 @@ export default function Section({ count = 0 }:{ count: number }) {
 }
 ```
 
-To update the state as we mentioned before, we are using the `hx-get`
-with the useSection hook. The `hx-get` attribute makes a GET request to
-the URL returned by the useSection hook. The response is a new HTML
-with the new UI state of the counter. The `hx-target` attribute defines 
-the target element where the response will be inserted, in this case, 
-the closest section element to the button. The `hx-swap` attribute 
-defines how the response will be inserted, in this case, replacing the 
-entire section element with the response.
+To update the state as mentioned before, we are using the hx-get 
+attribute with the useSection hook. The hx-get attribute makes a GET 
+request to the URL returned by the useSection hook. The response is 
+new HTML with the updated UI state of the counter. The hx-target 
+attribute defines the target element where the response will be 
+inserted, in this case, the closest section element to the button. 
+The hx-swap attribute defines how the response will be inserted, 
+in this case, replacing the entire section element with the response.
 
 To illustrate the difference between the Preact and HTMX versions,
 let's use them both and see how they behave in the network tab of the
