@@ -112,8 +112,6 @@ function CalculatorElement({
   onChange,
 }: {
   item: CalculatorItem;
-  index: number;
-  currentPrice: number;
   onChange: (operation: "sum" | "sub", value: number) => void;
 }) {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -131,6 +129,10 @@ function CalculatorElement({
     }
   };
 
+  const calculateAddingPrice = (value: number) => {
+    return Math.ceil((value - item.initialValue) / item.addValue) * item.price;
+  };
+
   const updateCalculatorInput = debounce((value: string) => {
     let newValue: number;
     if (isNaN(Number(value)) || Number(value) < item.initialValue) {
@@ -139,9 +141,9 @@ function CalculatorElement({
       newValue = Number(value);
     }
 
-    const addingPrice =
-      Math.ceil((newValue - calculatorValue.value) / item.addValue) *
-      item.price;
+    let addingPrice = 0;
+    addingPrice -= calculateAddingPrice(calculatorValue.value)
+    addingPrice += calculateAddingPrice(newValue)
 
     calculatorValue.value = newValue;
     onChange("sum", addingPrice);
@@ -207,9 +209,6 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
     accessButton,
   } = pricingCard;
   const currentPrice = useSignal(monthlyBasePrice);
-  const calculatorValues = useSignal(
-    calculator?.items?.map((item) => item.initialValue)
-  );
 
   const styles = {
     active: {
@@ -298,15 +297,8 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
       {calculator && (
         <div class="flex flex-col gap-4 w-full py-6">
           <p class="font-bold">{calculator.title}</p>
-          {calculator.items?.map((item: CalculatorItem, index: number) => (
-            <CalculatorElement
-              onChange={handlePriceUpdate}
-              index={index}
-              item={item}
-              currentPrice={
-                calculatorValues.value ? calculatorValues.value[index] : 0
-              }
-            />
+          {calculator.items?.map((item: CalculatorItem) => (
+            <CalculatorElement onChange={handlePriceUpdate} item={item} />
           ))}
         </div>
       )}
