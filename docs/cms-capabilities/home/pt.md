@@ -32,7 +32,7 @@ Nele, é possível definir configurações a respeito de seu perfil (incluindo s
 
 A API Key permite executar operações no admin (loaders e actions), com as permissões do seu usuário. Na requisição para loaders/actions do admin, defina o header `x-api-key` que é disponibilizado nesta tela.
 
-<img width="320" alt="API Key" src="/docs/cms-capabilities/home/home6.png">
+<img width="480" alt="API Key" src="/docs/cms-capabilities/home/home6.png">
 
 ## Times
 
@@ -43,4 +43,4 @@ A gestão de time permite a configuração de:
 - **Billing**: Permite a contratação e gestão do tipo de conta para o time
 - **Settings**: Altera o nome do time ou apaga o próprio time
 
-<img width="480" alt="Home" src="/docs/cms-capabilities/home/home4.png">
+<img width="640" alt="Home" src="/docs/cms-capabilities/home/home4.png">
