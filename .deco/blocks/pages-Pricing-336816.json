@@ -9,7 +9,7 @@
       "__resolveType": "site/sections/Home/Hero.tsx",
       "pixelTitle": "<p><span style=\"color: #02f67c\">Simple pricing</span></p>",
       "title": "<p>that follows your growth</p>",
-      "subTitle": "<p>buld, preview, and go live today. As you expand, take advantage of our usage-based pricing and pay only for what you need!</p>",
+      "subTitle": "<p>Build, preview, and go live today. As you expand, take advantage of our usage-based pricing and pay only for what you need!</p>",
       "ctas": [],
       "alert": {},
       "showRadialOnTop": false
@@ -110,14 +110,6 @@
                 "addValue": 10000,
                 "unit": "Pageview",
                 "hasNote": true
-              },
-              {
-                "title": "Projects",
-                "subtitle": "#9 per project",
-                "price": 9,
-                "initialValue": 1,
-                "addValue": 1,
-                "unit": "Project"
               }
             ]
           },
@@ -152,12 +144,6 @@
                 "initialValue": 500000,
                 "addValue": 10000,
                 "hasNote": true
-              },
-              {
-                "unit": "Project",
-                "price": 9,
-                "initialValue": 10,
-                "addValue": 1
               }
             ],
             "title": "Add-Ons Calculator:"
@@ -207,7 +193,8 @@
           "text": "<p>1 GB of bandwidth per 10K pageviews | <strong>$1.00 per extra GB</strong> | 10 requests per pageview | <strong>%0.08 per additional 1,000 requests</strong></p>"
         }
       ],
-      "annualDiscount": 15
+      "annualDiscount": 15,
+      "showToggleMenu": true
     },
     {
       "__resolveType": "DoubleBrands"

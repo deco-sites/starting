@@ -1,0 +1,8 @@
+{
+  "redirect": {
+    "from": "/gh",
+    "to": "https://github.com/deco-cx/deco",
+    "type": "temporary"
+  },
+  "__resolveType": "website/loaders/redirect.ts"
+}
