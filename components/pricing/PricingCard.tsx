@@ -1,6 +1,8 @@
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 import { useSignal } from "@preact/signals";
+import { useRef } from "preact/hooks";
 import { abbreviateNumber } from "site/components/utils/formatNumber.ts";
+import { debounce } from "std/async/debounce.ts";
 
 /**
  * @title {{{title}}}
@@ -107,23 +109,47 @@ const OPERATIONS = {
 
 function CalculatorElement({
   item,
-  onClick,
+  onChange,
 }: {
   item: CalculatorItem;
   index: number;
   currentPrice: number;
-  onClick: (operation: "sum" | "sub", value: number) => void;
+  onChange: (operation: "sum" | "sub", value: number) => void;
 }) {
-  const price = useSignal<number>(item.initialValue);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const calculatorValue = useSignal<number>(item.initialValue);
   const formatedPrice = abbreviateNumber(item.addValue);
 
   const handlePriceUpdate = (operation: "sum" | "sub") => {
-    const newValue = OPERATIONS[operation](price.value, item.addValue);
+    const newValue = OPERATIONS[operation](
+      calculatorValue.value,
+      item.addValue
+    );
     if (item.initialValue <= newValue) {
-      price.value = newValue;
-      onClick(operation, item.price);
+      calculatorValue.value = newValue;
+      onChange(operation, item.price);
     }
   };
+
+  const updateCalculatorInput = debounce((value: string) => {
+    let newValue: number;
+    if (isNaN(Number(value)) || Number(value) < item.initialValue) {
+      newValue = item.initialValue;
+    } else {
+      newValue = Number(value);
+    }
+
+    const addingPrice =
+      Math.ceil((newValue - calculatorValue.value) / item.addValue) *
+      item.price;
+
+    calculatorValue.value = newValue;
+    onChange("sum", addingPrice);
+
+    if (inputRef.current) {
+      inputRef.current.value = abbreviateNumber(calculatorValue.value);
+    }
+  }, 500);
 
   return (
     <div class="flex justify-between w-full">
@@ -136,7 +162,7 @@ function CalculatorElement({
           formatedPrice !== "1" ? `${formatedPrice} ` : ""
         }${item.unit}`}</span>
       </div>
-      <div class="flex gap-2 text-[#949E9E]">
+      <div class="flex gap-2 text-[#949E9E] h-fit items-center">
         <Icon
           onClick={() => handlePriceUpdate("sub")}
           class="cursor-pointer hover:text-white transition duration-300 ease-in-out"
@@ -144,7 +170,12 @@ function CalculatorElement({
           size={20}
           strokeWidth={1}
         />
-        <span class="text-white">{abbreviateNumber(price.value)}</span>
+        <input
+          class="text-white bg-transparent text-center w-14 h-fit"
+          onChange={(e) => updateCalculatorInput(e.currentTarget.value)}
+          value={abbreviateNumber(calculatorValue.value)}
+          ref={inputRef}
+        />
         <Icon
           class="cursor-pointer hover:text-white transition duration-300 ease-in-out"
           id="plus-rounded"
@@ -234,7 +265,7 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
               </>
             )}
           </p>
-          {(applyDiscount && useAnnualDiscount && annualDiscount) && (
+          {applyDiscount && useAnnualDiscount && annualDiscount && (
             <div class="rounded-lg border border-[#02F67C] bg-[#02F67C20] px-3 py-0.5 text-sm">
               {annualDiscount}% off
             </div>
@@ -269,7 +300,7 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
           <p class="font-bold">{calculator.title}</p>
           {calculator.items?.map((item: CalculatorItem, index: number) => (
             <CalculatorElement
-              onClick={handlePriceUpdate}
+              onChange={handlePriceUpdate}
               index={index}
               item={item}
               currentPrice={
@@ -279,7 +310,6 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
           ))}
         </div>
       )}
-      
     </div>
   );
 }
