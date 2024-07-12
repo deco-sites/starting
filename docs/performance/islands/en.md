@@ -24,9 +24,9 @@ impact occurs both in the initial loading time and in the
 [hydration](https://blog.saeloun.com/2021/12/16/hydration/), where the page is
 "initialized" in the browser to make it interactive (using `useEffect`,
 `useSignal`, etc...). You can view the size of the final JSON through the
-**Performance** tab in the Deco CMS.
+**Performance** tab of one of your site pages in the Deco CMS.
 
-![288067513-db3a14e1-c0ac-47f8-83b9-afc8db60de71](https://github.com/deco-sites/starting/assets/76822093/ec005f5d-4169-4e89-acd0-8c06baf3c80d)
+<img width="640" alt="Performance information of a page" src="/docs/performance/performance-tab.png">
 
 When the JSON size exceeds ~500kb, it is likely that the UI does not need the
 complete data, but rather some part of it (or a computation based on other
