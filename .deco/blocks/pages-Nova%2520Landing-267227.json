@@ -1259,7 +1259,7 @@
                     "question": "Does deco.cx replace my current commerce platform?"
                   },
                   {
-                    "answer": "Deco.cx uses Deno, Preact, Tailwind, and Fresh. Deno offers a secure runtime for JavaScript and TypeScript, while Preact is a lightweight, React-compatible framework. Tailwind facilitates optimized web styling, and Fresh is a modern server-side web framework designed for Deno.",
+                    "answer": "Deco.cx uses Deno, Preact, Tailwind, Fresh and HTMX. Deno offers a secure runtime for JavaScript and TypeScript, while Preact is a lightweight, React-compatible framework. Tailwind facilitates optimized web styling, and Fresh is a modern server-side web framework designed for Deno. Finally, HTMX adds interactive features to web pages with minimal JavaScript.",
                     "question": "What tech stack does deco.cx use?"
                   },
                   {
@@ -1291,12 +1291,8 @@
                     "question": "What does the implementation process with deco.cx look like?"
                   },
                   {
-                    "answer": "About 80% is already open source at deco-cx/deco (our engine) and deco-cx/apps (our integrations). We are working hard to provide a fully self-hosted and open source version in Q1 2024. Bear with us as we nail the final details that will allow for long term extensibility.",
+                    "answer": "About 80% is already open source at deco-cx/deco (our engine) and deco-cx/apps (our integrations). We are working hard to provide a fully self-hosted and open source version. Bear with us as we nail the final details that will allow for long term extensibility.",
                     "question": "Is deco.cx open-source?"
-                  },
-                  {
-                    "answer": "Yes! Starting from 9 USD / mo you can add custom domains for unlimited sites (according to our free usage policy limits) and even invite collaborators to edit content.",
-                    "question": "As a developer, can I host multiple customer projects in my personal team?"
                   }
                 ]
               },

@@ -7,7 +7,9 @@
     },
     {
       "__resolveType": "site/sections/PageContest/Hero.tsx",
-      "title": "<p>CMS Glossary</p>"
+      "title": "<p>CMS Glossary</p>",
+      "description": " ",
+      "placement": "right"
     },
     {
       "__resolveType": "site/sections/GlossaryPostList.tsx",
