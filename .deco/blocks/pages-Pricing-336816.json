@@ -73,6 +73,11 @@
               "title": "1 Hosted Project"
             },
             {
+              "title": "Hosting (50K Pageviews / Mo)",
+              "subtitleInfo": "<p><span>+ $8 per 10K Pageviews</span></p>",
+              "noteIcon": "star-sign"
+            },
+            {
               "title": "Live Site Preview",
               "subtitleInfo": "3 environments"
             },

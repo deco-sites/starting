@@ -13,6 +13,7 @@ export interface Feature {
    * @format rich-text
    */
   subtitleInfo?: string;
+  noteIcon?: AvailableIcons;
   /**
    * @format rich-text
    */
@@ -89,14 +90,17 @@ function FeatureItem({
             </div>
           )}
         </div>
-        {feature.subtitleInfo && (
-          <div
-            class="text-[#949E9E] text-sm"
-            dangerouslySetInnerHTML={{
-              __html: feature.subtitleInfo,
-            }}
-          />
-        )}
+        <div class="flex items-center gap-2 ">
+          {feature.subtitleInfo && (
+            <div
+              class="text-[#949E9E] text-sm"
+              dangerouslySetInnerHTML={{
+                __html: feature.subtitleInfo,
+              }}
+            />
+          )}
+          {feature.noteIcon && <Icon id={feature.noteIcon} size={14} />}
+        </div>
       </div>
     </div>
   );
@@ -142,8 +146,8 @@ function CalculatorElement({
     }
 
     let addingPrice = 0;
-    addingPrice -= calculateAddingPrice(calculatorValue.value)
-    addingPrice += calculateAddingPrice(newValue)
+    addingPrice -= calculateAddingPrice(calculatorValue.value);
+    addingPrice += calculateAddingPrice(newValue);
 
     calculatorValue.value = newValue;
     onChange("sum", addingPrice);
