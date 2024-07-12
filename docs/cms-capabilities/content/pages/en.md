@@ -81,4 +81,8 @@ Add a "**Matcher**" that represents a rule to be tested to evaluate which sectio
 
 The variant is created with all the sections copied from the original page. Each variant can have sections edited independently. Click on the created variant and modify the sections as desired. The "default" variant represents the page to be displayed when no matcher is satisfied.
 
+When you have multiple variants on a single page, deco automatically displays the preview of the selected variant by default. If no variant is selected, deco shows what the user would see if assigned to the variant. This allows you to navigate between the selected variants and visualize the user experience for each variant.
+
+You can also have a variant within another variant. You can use different matchers or a combination of them.
+
 > **Important**: Matchers are tested in the order they are placed, from the first (top) to the last (default). When a matcher is satisfied, it is immediately executed and no other subsequent conditions are tested, regardless of any other matcher that may satisfy the configured condition.

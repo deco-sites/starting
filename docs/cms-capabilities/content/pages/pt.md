@@ -82,4 +82,8 @@ Adicione um "**Matcher**" que representa uma regra que será testada para avalia
 
 A variante é criada com todas as sections copiadas da página original. Cada variante pode ter sections editadas de forma independente. Clique na variante criada e altera as sections da forma que quiser. A variante "default" representa a página a ser exibida quando nenhum matcher é satisfeito.
 
+Quando você tem várias variantes em uma única página, a deco automaticamente exibe a pré-visualização da variante selecionada por padrão. Se nenhuma variante estiver selecionada, a deco mostra o que o usuário veria se fosse atribuído à variante. Isso permite que você navegue entre as variantes selecionadas e visualize como seria a experiência do usuário para cada variante.
+
+Você também pode ter uma variante dentro de outra variante. Você pode usar matchers diferentes ou uma combinação deles.
+
 > **Importante**: os matchers são testado na ordem que são colocados do primeiro (mais acima) até o último (default). Quando um matcher é satisfeito, ele é imeditamente executado e nenhuma outra condição posterior é testada, independente de qualquer outro matcher em seguida que possa satisfazer a condição configurada.
