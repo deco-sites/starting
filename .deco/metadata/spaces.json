@@ -1869,7 +1869,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 36.58536585365853,
+                "width": 36.32935260842237,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -1891,24 +1891,12 @@
               },
               {
                 "type": "stack",
-                "width": 63.414634146341456,
+                "width": 63.67064739157761,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
-                "activeItemIndex": 1,
+                "activeItemIndex": 0,
                 "content": [
-                  {
-                    "id": "%2F.deco%2Fblocks%2Fpages-Pricing-336816.json::Preview::visibility::Preview::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Pricing-336816.json::Preview::visibility::Preview::%7B%7D\" />",
-                    "type": "component",
-                    "componentName": "component",
-                    "componentState": {
-                      "id": "%2F.deco%2Fblocks%2Fpages-Pricing-336816.json::Preview::visibility::Preview::%7B%7D"
-                    },
-                    "width": 70,
-                    "isClosable": true,
-                    "reorderEnabled": true
-                  },
                   {
                     "id": "%2F.deco%2Fblocks%2Fpages-Pricing-336816.json::JSON%20Properties::data-object::JSON%20Properties::%7B%7D",
                     "title": "<div class=\"contents text-base-700\" id=\"header-%2F.deco%2Fblocks%2Fpages-Pricing-336816.json::JSON%20Properties::data-object::JSON%20Properties::%7B%7D\" />",
@@ -1945,18 +1933,6 @@
             "value": null
           }
         },
-        "%2F.deco%2Fblocks%2Fpages-Pricing-336816.json::Preview::visibility::Preview::%7B%7D": {
-          "name": "Preview",
-          "icon": "visibility",
-          "accepts": "function",
-          "render": "function",
-          "viewId": "Preview",
-          "width": 70,
-          "id": "%2F.deco%2Fblocks%2Fpages-Pricing-336816.json::Preview::visibility::Preview::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        },
         "%2F.deco%2Fblocks%2Fpages-Pricing-336816.json::JSON%20Properties::data-object::JSON%20Properties::%7B%7D": {
           "name": "JSON Properties",
           "icon": "data-object",
@@ -1965,7 +1941,8 @@
           "viewId": "JSON Properties",
           "id": "%2F.deco%2Fblocks%2Fpages-Pricing-336816.json::JSON%20Properties::data-object::JSON%20Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         }
       }
