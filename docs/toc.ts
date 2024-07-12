@@ -188,6 +188,13 @@ const tableOfContents: TableOfContents = [
           en: "Creating a loader",
         },
         slug: "developing-guide/creating-loaders",
+      },
+      {
+        title: {
+          pt: "Newsletter com HTMX e Deco Records",
+          en: "Newsletter with HTMX and Deco Records",
+        },
+        slug: "developing-guide/examples",
       }
     ],
   },
