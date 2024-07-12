@@ -1,39 +1,46 @@
 ---
 descrição: |
-    Passo a passo de como criar um Site no deco.cx
+    Home: gestão de times, sites e perfil do usuário
 ---
 
-## Pré-requisitos
+A `home` representa o espaço inicial do usuário. A partir desta tela, é possível acessar sites, times, bem como a própria documentação da deco.
 
-- Leia [**Overview**](/docs/pt/overview) da deco.cx.
+<img width="640" alt="Home" src="/docs/cms-capabilities/home/home1.png">
 
-> Você pode sempre pedir por ajuda ou mais informações no nosso
-> [servidor discord](https://deco.cx/discord)!
+## Command Bar
 
-## Crie um site deco.cx
+Na home, e ao longo do uso do admin, uma `command bar` estará sempre disponível na barra superior da tela. A barra de comando opera de acordo com o contexto aberto. Na `home`, ela permite buscar, e abrir, sites e times do usuário.
 
-1. Faça login/inscreva-se em [Deco Admin](https://admin.deco.cx/).
-2. Escolha um template para o seu site.
-3. Defina um nome para a sua equipe.
-4. Clique em **+ Criar site**.
-5. Defina um nome para seu site.
-6. **Importante:** Selecione o modelo **Start**.
-7. Clique em **Criar**.
+<img width="480" alt="Command Bar" src="/docs/cms-capabilities/home/home3.png">
 
-![Seleção de templates](https://github.com/deco-sites/storefront/assets/882438/4c4323ec-2aec-4b08-a523-32f0761c8a36)
+Além disso, é possível realizar comandos específicos. Na `home` estão disponíveis os comandos:
 
-O processo de criação do site será iniciado e, após o término, você verá o
-painel do site:
+- **/open**: para abrir sites ou times (comando padrão ao selecionar um time ou site a partir da busca)
+- **/delete**: para apagar sites ou times
 
-![Dashboard de site na deco.cx](https://github.com/deco-cx/apps/assets/882438/cac4147f-b013-40ca-bf68-e28ab40e831a)
+## Perfil
 
-## Navegando no site
+Além da `command bar`, é sempre possível acessar o perfil do seu usuário a partir de qualquer espaço no admin. Para isto, acesse a foto do seu usuário no canto superior direito.
 
-Logo abaixo no nome do seu projeto, você verá a URL do seu site. Essa URL é
-pública e o site já está online e acessível.
+<img width="320" alt="Acesso ao Perfil" src="/docs/cms-capabilities/home/home2.png">
 
-Você deve ver algo semelhante a `https://deco-sites-start.deno.dev`, que foi o
-modelo escolhido no processo de criação.
+Nele, é possível definir configurações a respeito de seu perfil (incluindo sua foto), detalhes de pagamento (para usuários que executam tarefas), e uma API key para uso do admin.
 
-> A deco.cx é gratuita até 5.000 visualizações/visitas por mês. Verifique nossos
-> [Preços](https://www.deco.cx/pt/pricing) para mais informações.
+<img width="640" alt="Perfil do usuário" src="/docs/cms-capabilities/home/home5.png">
+
+### API Key (Dev)
+
+A API Key permite executar operações no admin (loaders e actions), com as permissões do seu usuário. Na requisição para loaders/actions do admin, defina o header `x-api-key` que é disponibilizado nesta tela.
+
+<img width="320" alt="API Key" src="/docs/cms-capabilities/home/home6.png">
+
+## Times
+
+A gestão de time permite a configuração de:
+
+- **Sites**: Listagem dos sites do time, bem como capacidade de mover, apagar e abrir site
+- **Members**: Listagem dos membros do time, permitindo a gerência de papéis e o convite de membros
+- **Billing**: Permite a contratação e gestão do tipo de conta para o time
+- **Settings**: Altera o nome do time ou apaga o próprio time
+
+<img width="480" alt="Home" src="/docs/cms-capabilities/home/home4.png">
