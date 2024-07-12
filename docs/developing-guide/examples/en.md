@@ -8,7 +8,7 @@ since: 1.0.0
 ## Main tools
 
 - Deco.cx for hosting and CMS.
-- Deco Records as an SQLITE database, using [Drizzle ORM](https://orm.drizzle.team/)
+- Deco Records as an SQLite database, using [Drizzle ORM](https://orm.drizzle.team/)
 - Resend app for sending confirmation emails. Email sending API that offers a free plan of 3,000 emails per month.
 
 ## Necessary configurations
@@ -17,8 +17,6 @@ since: 1.0.0
 2. Configure [Deco Records](https://deco.cx/docs/en/reference/deco-records)
 > For this tutorial, we created a "newsletter" table with columns `id`, `email`, `confirmed_at`, `confirmation_key`.
 3. Install the Resend app in the "Apps" menu, configuring the API Key. When installing the Resend app on deco, you will find instructions on how to do this.
-
---- video goes here ---
 
 ## Creating the sections used
 
