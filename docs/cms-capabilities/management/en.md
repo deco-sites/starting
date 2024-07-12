@@ -1,8 +1,9 @@
 ---
 description: |
-   Guide on site management capabilities
+   Guide on site management functionalities
 ---
 
-Site management involves settings (GIT repository access, domains), and monitoring site logs and analytics.
+Site management involves settings (access to GIT repository, domains), and monitoring site logs and analytics.
 
-- [Settings (Domains)](management/settings): Management of site domains.
+- [Settings (Domains)](management/custom-domains): Management of custom domains for the site (www.example.com).
+- [Settings (APEX Domains)](management/apex-domains): Management of redirect domains (example.com -> www.example.com).
