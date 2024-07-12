@@ -227,13 +227,6 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Page",
-          en: "Page",
-        },
-        slug: "concepts/page",
-      },
-      {
-        title: {
           pt: "Matcher",
           en: "Matcher",
         },
