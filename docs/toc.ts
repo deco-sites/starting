@@ -402,13 +402,6 @@ const tableOfContents: TableOfContents = [
           },
           {
             title: {
-              pt: "Modificando o status de retorno de uma pagina",
-              en: "Modifying the return status of a page",
-            },
-            slug: "developing-capabilities/apps/modifying-status",
-          },
-          {
-            title: {
               pt: "Criando um Teste A/B",
               en: "Creating an A/B Test",
             },
@@ -417,8 +410,18 @@ const tableOfContents: TableOfContents = [
         ]
       },
       {
-        title: { pt: "Problemas comuns", en: "Troubleshooting" },
-        slug: "reference/troubleshooting",
+        title: {
+          pt: "Deco Records",
+          en: "Deco Records",
+        },
+        slug: "reference/deco-records",
+      },
+      {
+        title: {
+          pt: "Modificando o status de retorno de uma pagina",
+          en: "Modifying the return status of a page",
+        },
+        slug: "developing-capabilities/modifying-status",
       },
       {
         title: {
@@ -428,11 +431,8 @@ const tableOfContents: TableOfContents = [
         slug: "reference/analytics",
       },
       {
-        title: {
-          pt: "Deco Records",
-          en: "Deco Records",
-        },
-        slug: "reference/deco-records",
+        title: { pt: "Problemas comuns", en: "Troubleshooting" },
+        slug: "reference/troubleshooting",
       },
       {
         title: {
