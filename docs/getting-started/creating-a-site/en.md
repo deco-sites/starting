@@ -87,8 +87,6 @@ Your site will be accessible through a public URL like `https://deco-sites-maria
 
 This deployment will include 5,000 page views (shared across all team sites). If you need more page views, you can [upgrade your plan](https://deco.cx/en/pricing) in the Deco Admin.
 
-Additionally, since you have your site's source code, you can deploy it to any other hosting service that supports Deno.
-
 ## 6. Congratulations! You've Created Your First Deco Site
 
 That's it! Now you can edit your site as you wish. Don't forget to follow the next tutorials to discover more features and capabilities of Deco.cx.

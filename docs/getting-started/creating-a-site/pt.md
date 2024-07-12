@@ -87,8 +87,6 @@ Seu site se tornará acessível através de uma URL pública como `https://deco-
 
 Esse deploy incluirá 5.000 visualizações de página (compartilhadas entre todos os sites da equipe). Se você precisar de mais visualizações de página, você pode [atualizar seu plano](https://deco.cx/en/pricing) no Deco Admin.
 
-Além disso, como você tem o código-fonte do seu site, você pode fazer o deploy em qualquer outro serviço de hospedagem que suporte Deno.
-
 ## 6. Parabéns! Você Criou Seu Primeiro Site Deco
 
 É isso aí! Agora você pode editar seu site como quiser. Não se esqueça de seguir os próximos tutoriais para descobrir mais recursos e capacidades do Deco.cx.
