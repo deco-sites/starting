@@ -31,7 +31,7 @@ woff/woff2 format and with a small file size (less than 25kb).
 This font can be served statically by placing the file in the `static`
 directory.
 
-Then, in the `Theme` section, simply specify the font name and the associated
+Then, in the `Theme` space, in a specific theme, simply specify the font name and the associated
 style guide. For a font in the file `static/my_font.ttf`, use the following
 style:
 
