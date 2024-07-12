@@ -13,7 +13,7 @@ Ao abrir os loaders (barra lateral `Advanced > Loaders`), você terá acesso a u
 
 <img width="640" alt="Listagem de Loaders" src="/docs/cms-capabilities/loaders/loaders1.png">
 
-As diferentes categorias presentes na listagem são obtidas a partir do diretório que a loader se encontra ou da **App** na qual ela origina (uma **App** pode importar diferentes loaders).
+As diferentes categorias presentes na listagem são obtidas a partir do diretório que o loader se encontra ou da **App** na qual ele origina (uma **App** pode importar diferentes loaders).
 
 A partir desta tela é possível:
 
