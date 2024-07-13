@@ -186,7 +186,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             src={props.logo}
             alt={props.logo}
             width={120}
-            class="w-32 h-fit"
+            class="w-32"
           />
         </a>
         <div class="hidden relative lg:flex lg:flex-row items-center h-full px-3 py-1.5 rounded-xl bg-[#0035184d] border border-[#FFFFFF33] gap-14 justify-between before:absolute lg:before:backdrop-blur-2xl lg:before:w-full  before:h-full before:top-0 before:left-0 before:rounded-xl">
