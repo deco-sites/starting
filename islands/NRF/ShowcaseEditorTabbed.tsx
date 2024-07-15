@@ -147,7 +147,7 @@ export const ShowcaseEditorTabbed = ({
                     {tab.title}
                     {tab.label?.name && (
                       <span
-                        class="px-2 py-1 flex items-center justify-center rounded-[53px] text-[10px] leading-[120%] text-[#0D1717]"
+                        class="px-2 py-1 flex items-center justify-center text-nowrap h-fit rounded-[53px] text-[10px] leading-[120%] text-[#0D1717]"
                         style={{ backgroundColor: tab.label?.color }}
                       >
                         {tab.label?.name}
