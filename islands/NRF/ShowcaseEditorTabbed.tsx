@@ -40,7 +40,7 @@ export const ShowcaseEditorTabbed = ({
         {
           duration: 5,
           easing: "linear",
-        }
+        },
       );
     }
   };
@@ -96,7 +96,7 @@ export const ShowcaseEditorTabbed = ({
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     observer.observe(containerElement);
@@ -158,10 +158,10 @@ export const ShowcaseEditorTabbed = ({
                 <div
                   className={`grid 
                     overflow-hidden transition-all w-full duration-700 gap-4 ease-in-out ${
-                      selectedTab.value === index
-                        ? "grid-rows-[1fr] opacity-100"
-                        : "grid-rows-[0fr] opacity-0"
-                    }`}
+                    selectedTab.value === index
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
+                  }`}
                 >
                   <span
                     class={`font-normal text-white lg:text-[#9CA3AF] text-[14px] leading-[150%] overflow-hidden  duration-300 transition-colors ${
@@ -183,7 +183,8 @@ export const ShowcaseEditorTabbed = ({
                     <div
                       id={`tab-${trackId}-${index}`}
                       class="h-[1px] bg-[#02F67C] w-0"
-                    ></div>
+                    >
+                    </div>
                   </div>
                 </div>
               </div>
