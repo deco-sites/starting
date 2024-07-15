@@ -1,4 +1,3 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
 import {
   ShowcaseEditorTabbed,
   Tab,
@@ -21,9 +20,9 @@ export interface Props {
   trackId?: "1" | "2" | "3" | "4" | "5";
 }
 
-export const loader = async (
+export const loader = (
   props: Props,
-  req: Request,
+  _req: Request,
   ctx: AppContext,
 ) => {
   const device = ctx.device;

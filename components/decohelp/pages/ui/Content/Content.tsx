@@ -66,7 +66,6 @@ export default function Page({
   Title,
   Version,
   PageContent,
-  WasThisPageHelpful,
 }: Props & WasThisPageHelpfulProps) {
   return (
     <div class="docContent mx-auto relative lg:mb-[40px] mb-[32px]">

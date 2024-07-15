@@ -33,6 +33,19 @@ export interface Props {
   bgStripColor?: "bg-dark-green" | "bg-highlight";
 }
 
+type LighthouseResult = {
+  lighthouseResult: {
+    audits: {
+      "largest-contentful-paint": {
+        numericValue: number;
+      };
+    };
+    configSettings: {
+      formFactor: "mobile" | "desktop";
+    };
+  };
+};
+
 export default function ImpactCalculator({
   mainText,
   formInfos,
@@ -73,16 +86,16 @@ export default function ImpactCalculator({
     const promiseMobile = fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=mobile`,
     )
-      .then((response) => response.json())
-      .catch((error) => {
+      .then((response) => (response.json() as Promise<LighthouseResult>))
+      .catch(() => {
         loading.value = false;
         alert("Request to PageSpeed has failed. Please try again.");
       });
     const promiseDesktop = fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=desktop`,
     )
-      .then((response) => response.json())
-      .catch((error) => {
+      .then((response) => (response.json() as Promise<LighthouseResult>))
+      .catch(() => {
         loading.value = false;
         alert("Request to PageSpeed has failed. Please try again.");
       });
@@ -101,6 +114,7 @@ export default function ImpactCalculator({
 
     Promise.all([promiseMobile, promiseDesktop]).then((results) => {
       results.forEach((result) => {
+        if (!result) return;
         const resultLCP =
           result.lighthouseResult.audits["largest-contentful-paint"]
             .numericValue;

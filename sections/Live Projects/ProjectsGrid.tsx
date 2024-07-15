@@ -51,7 +51,7 @@ interface Props {
 }
 
 function CardText(
-  { label, category, description, alignment }: TemplateInfo,
+  { label, category, alignment }: TemplateInfo,
 ) {
   return (
     <div
@@ -105,8 +105,8 @@ function TemplatesGrid(props: Props) {
     },
   } = props;
 
-  const [themes, setThemes] = useState(
-    indexCategories.flatMap((category) => category.cards.map(() => 0)),
+  const themes = indexCategories.flatMap((category) =>
+    category.cards.map(() => 0)
   );
 
   const [classification, setClassification] = useState<Classification>({
@@ -132,13 +132,6 @@ function TemplatesGrid(props: Props) {
   };
 
   const { categoriaSelecionada, paginaAtual, itensPorPagina } = classification;
-
-  const findCategoryByLabel = (
-    label: string,
-    categories: { label: string }[],
-  ) => {
-    return categories.find((category) => category.label === label);
-  };
 
   const itensParaExibir =
     categoriaSelecionada === { ...props }.nomeDaCategoriaGeral

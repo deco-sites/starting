@@ -1,6 +1,5 @@
 import Image from "deco-sites/std/components/Image.tsx";
-import { useEffect, useId, useState } from "preact/hooks";
-import Header from "site/components/ui/SectionHeader.tsx";
+import { useId, useState } from "preact/hooks";
 import PageSpeed from "site/components/ui/PageSpeed.tsx";
 import { Template } from "site/components/ui/Types.tsx";
 
@@ -31,7 +30,7 @@ export interface Props {
   };
 }
 function CardText(
-  { label, description, alignment, pageSpeed, slug }: TemplateInfo,
+  { label, alignment, pageSpeed }: TemplateInfo,
 ) {
   return (
     <>
@@ -66,10 +65,6 @@ function TemplatesGrid(props: Props) {
   const id = `category-list-${useId()}`;
   const {
     lang = "pt",
-    header = {
-      title: "",
-      description: "",
-    },
     list = [
       {
         label: "Feminino",
@@ -124,7 +119,6 @@ function TemplatesGrid(props: Props) {
               description,
               slug,
               image,
-              buttonText,
               pageSpeed,
               price,
             },

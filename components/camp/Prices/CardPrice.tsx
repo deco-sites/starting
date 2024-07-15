@@ -60,7 +60,6 @@ const SPAN_COLOR = {
 
 export default function CardPrice({ props }: { props: Props }) {
   const {
-    labelPlan,
     flag,
     infosPrice,
     requirements,

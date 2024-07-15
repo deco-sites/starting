@@ -1,6 +1,5 @@
 import tableOfContents from "./toc.ts";
 import { join } from "https://deno.land/std@0.190.0/path/mod.ts";
-import { contentType } from "$fresh/src/server/deps.ts";
 import type { TopLevelEntry } from "site/docs/toc.ts";
 
 const mainCreateFilesFromToc = async () => {
@@ -105,7 +104,7 @@ const checkUnsuedDocFile = async () => {
   console.log(await processAllFiles("./docs"));
 };
 
-const generateCSVFromTOC = async () => {
+const generateCSVFromTOC = () => {
   const process = (entity: TopLevelEntry[]) => {
     const data = [] as string[];
     for (let i = 0; i < entity.length; i++) {

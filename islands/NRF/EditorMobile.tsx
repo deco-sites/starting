@@ -43,9 +43,6 @@ export default function Editor({ features }: Props) {
     inView(
       ".feature",
       ({ target }) => {
-        const elements = Array.from(document.querySelectorAll(".feature"));
-        const index = elements.indexOf(target);
-
         timeline(EDITOR_TIMELINES[target.id]);
       },
       { margin: "0px 0px -85% 0px" },

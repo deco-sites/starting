@@ -23,10 +23,6 @@ export default function GetSiteDone({
     placeholder: "A photographer's portfolio based in Rio, Brazil",
     buttonLabel: "Submit",
   },
-  lastButton = {
-    label: "getsitedone.com",
-    href: "/",
-  },
 }: Props) {
   return (
     <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 px-6 py-12 lg:px-[120px] lg:py-[160px] h-full">
