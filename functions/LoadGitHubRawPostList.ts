@@ -25,7 +25,7 @@ const gitHubRawLoader: LoaderFunction<Props, PostList> = async (
   ).then((res) => res.json());
 
   return {
-    data: res,
+    data: res as PostList,
   };
 };
 

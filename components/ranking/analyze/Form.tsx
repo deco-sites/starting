@@ -1,5 +1,4 @@
 import type { JSX } from "preact";
-import { forwardRef } from "preact/compat";
 import { AnalyzeFormTranslation } from "../AnalyzeForm.tsx";
 import { FieldForm } from "./FieldForm.tsx";
 

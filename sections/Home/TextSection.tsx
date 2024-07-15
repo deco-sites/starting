@@ -1,5 +1,3 @@
-import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
-
 export interface Props {
   /**
    * @format rich-text

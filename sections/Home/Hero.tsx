@@ -117,7 +117,8 @@ export default function Hero({
               dangerouslySetInnerHTML={{
                 __html: pixelTitle,
               }}
-            ></h1>
+            >
+            </h1>
           )}
           {title && (
             <h1
@@ -125,7 +126,8 @@ export default function Hero({
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
-            ></h1>
+            >
+            </h1>
           )}
         </div>
         {subTitle && (
@@ -134,7 +136,8 @@ export default function Hero({
             dangerouslySetInnerHTML={{
               __html: subTitle,
             }}
-          ></h2>
+          >
+          </h2>
         )}
         <div class="flex flex-row gap-4 justify-center items-center w-full md:w-auto">
           {ctas?.map((cta) => (

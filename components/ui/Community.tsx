@@ -25,8 +25,6 @@ const DEFAULT_TEXT =
 export default function Community(
   {
     lazyload,
-    blur1Background,
-    blur2Background,
     peopleImage,
     mainText = DEFAULT_TEXT,
     secondText,

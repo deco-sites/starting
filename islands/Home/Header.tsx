@@ -166,10 +166,10 @@ export default function Header({ menuLinks, ...props }: Props) {
 
   const retrieveDiscordMemberCount = async () => {
     const response = await fetch(
-      "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true"
+      "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true",
     );
-    const discordData: { approximate_member_count: string } =
-      await response.json();
+    const discordData: { approximate_member_count: string } = await response
+      .json();
     members.value = discordData.approximate_member_count;
   };
 
@@ -290,9 +290,7 @@ export default function Header({ menuLinks, ...props }: Props) {
               />
             </svg>
             <div
-              class={
-                "hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"
-              }
+              class={"hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"}
             >
               <ul class="flex flex-col">
                 {menuLinks &&
@@ -348,7 +346,8 @@ export default function Header({ menuLinks, ...props }: Props) {
           </label>
         </div>
         <ul class="hidden lg:flex lg:flex-row gap-4 items-center">
-          {/* <li>
+          {
+            /* <li>
             <a
               href={props.login.url}
               class="flex gap-2 items-center text-[#02F67C] bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
@@ -373,7 +372,8 @@ export default function Header({ menuLinks, ...props }: Props) {
               </svg>
               <span class="text-[12px] ml-[-4px]">100</span>
             </a>
-          </li> */}
+          </li> */
+          }
           <li>
             <a
               href={props.sign.url}

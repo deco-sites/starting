@@ -58,7 +58,8 @@ export default function HeroBanner({
         <div
           class="absolute z-10 h-[1200px] md:h-[1400px] w-[100vw] translate-y-[35%] bottom-[-200px] md:bottom-[-150px] lg:bottom-[-100px]"
           style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"
-        ></div>
+        >
+        </div>
       )}
       <div
         class={`lg:mx-auto z-20 lg:max-w-[1440px] ${
@@ -127,7 +128,8 @@ export default function HeroBanner({
               dangerouslySetInnerHTML={{
                 __html: pixelTitle,
               }}
-            ></h1>
+            >
+            </h1>
           )}
           {title && (
             <h1
@@ -135,7 +137,8 @@ export default function HeroBanner({
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
-            ></h1>
+            >
+            </h1>
           )}
         </div>
         {subTitle && (
@@ -144,7 +147,8 @@ export default function HeroBanner({
             dangerouslySetInnerHTML={{
               __html: subTitle,
             }}
-          ></h2>
+          >
+          </h2>
         )}
         <div class="flex flex-row gap-4 justify-center items-center w-full md:w-auto">
           {ctas?.map((cta) => (

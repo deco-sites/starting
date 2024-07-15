@@ -1,5 +1,4 @@
 import { useId } from "preact/hooks";
-import { useState } from "preact/hooks";
 import Image from "deco-sites/std/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import SliderFocus from "site/components/ui/SliderFocus.tsx";

@@ -2,7 +2,7 @@ import { useEffect, useState } from "preact/hooks";
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Icon from "site/components/ui/Icon.tsx";
 import SearchButton from "./SearchButton.tsx";
-import { ComponentChildren, JSX } from "preact";
+import { JSX } from "preact";
 import Drawer from "site/components/ui/Drawer.tsx";
 import Breadcrumb from "site/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
 import { SectionProps } from "deco/mod.ts";
@@ -131,12 +131,6 @@ function AsideLinks({
     } else {
       setOpenTopicIndex(index);
     }
-  };
-
-  const toggleDropdown = (subTopicIndex: number) => {
-    setOpenSubTopicIndex(
-      (isOpen) => (isOpen === subTopicIndex ? null : subTopicIndex),
-    );
   };
 
   useEffect(() => {

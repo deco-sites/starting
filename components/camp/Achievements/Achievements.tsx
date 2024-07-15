@@ -1,4 +1,4 @@
-import { asset, Head } from "$fresh/runtime.ts";
+import { asset } from "$fresh/runtime.ts";
 
 import BigText from "$store/components/camp/ui/BigText.tsx";
 

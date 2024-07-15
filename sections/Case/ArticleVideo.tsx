@@ -18,6 +18,8 @@ export default function ArticleVideo({
           <Video
             src={videoMp4}
             loop={true}
+            width={1200}
+            height={600}
             playsInline={true}
             autoPlay={true}
             muted={true}
@@ -27,11 +29,13 @@ export default function ArticleVideo({
             {videoWebm && (
               <Source
                 src={videoWebm}
+                width={1200}
                 type="video/webm"
               />
             )}
             <Source
               src={videoMp4}
+              width={1200}
               type="video/mp4"
             />
           </Video>

@@ -63,7 +63,7 @@ export default function Footer(
           />
         </p>
         <div class="flex gap-4 md:gap-6 text-white pt-5 md:pt-0">
-          {links?.map(({ labelIcon, href }, index) => (
+          {links?.map(({ labelIcon, href }) => (
             <a href={href ?? "#"}>
               <Icon id={labelIcon ?? ""} size={30} />
             </a>

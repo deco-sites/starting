@@ -10,7 +10,7 @@ export interface Props {
   animateOnScroll?: boolean;
 }
 
-function TextLines({ lines, speedRatio = 1, animateOnScroll }: Props) {
+function TextLines({ lines, animateOnScroll }: Props) {
   const words = lines.join(" ").split(" ");
 
   useEffect(() => {

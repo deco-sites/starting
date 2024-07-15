@@ -2,7 +2,6 @@ import Slider from "site/components/ui/Slider.tsx";
 import SliderControllerJS from "site/components/ui/SliderJS.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Image from "deco-sites/std/components/Image.tsx";
-import type { ImageObject } from "deco-sites/std/commerce/types.ts";
 import Icon from "site/components/ui/Icon.tsx";
 
 interface Dots {
@@ -70,52 +69,10 @@ function Controls() {
   );
 }
 
-function Dots({ images }: Dots) {
-  return (
-    <>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-          @property --dot-progress {
-            syntax: '<percentage>';
-            inherits: false;
-            initial-value: 0%;
-          }`,
-        }}
-      >
-      </style>
-      <ol class="flex items-center justify-center items-center z-10 min-w-[100px] md:z-0 md:mt-[30px] md:max-h-[373px] gap-[10px]">
-        {images.map((_: LiveImage, index: number) => (
-          <li class="lg:h-auto">
-            <button
-              data-dot={index}
-              aria-label={`go to slider item ${index}`}
-              class="h-full w-[100px] rounded focus:outline-none group"
-            >
-              <Image
-                style={{ aspectRatio: "432 / 432" }}
-                src={_}
-                alt={_}
-                width={100}
-                class="w-full rounded-full"
-                height={100}
-                // Preload LCP image for better web vitals
-                loading={"lazy"}
-              />
-            </button>
-          </li>
-        ))}
-      </ol>
-    </>
-  );
-}
-
 export default function DepoimentsCarroussel(
-  { depoiments, preload, interval }: Props,
+  { depoiments }: Props,
 ) {
   const thumbsSliderId = "1231231";
-
-  const images = depoiments.map((depoiment) => depoiment.avatar) ?? [];
 
   return (
     <>

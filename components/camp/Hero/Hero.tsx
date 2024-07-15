@@ -27,6 +27,7 @@ export interface Props {
 const BASE_PROPS = {
   flag: "Masterclass",
   flagSound: "Português",
+  flagLegend: undefined,
   title:
     '<p>High-Performance<br>Web Dev with<span style="color: rgb(45, 194, 107);" data-mce-style="color: rgb(45, 194, 107);"> <span style="color: rgb(2, 246, 124);" data-mce-style="color: rgb(2, 246, 124);">deco.cx</span></span></p>',
   video:
@@ -106,6 +107,7 @@ export default function Hero({ props }: { props: Props }) {
               label={button.label}
               href={button.href}
               details={button.details}
+              theme={"dark"}
             />
             <div class="lg:ml-4">
               <PopUp buttonLabel={popUp.buttonLabel} items={popUp.items} />

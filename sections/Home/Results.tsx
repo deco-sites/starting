@@ -1,9 +1,8 @@
-
 /**
  * @title {{{id}}}
  */
 export interface Result {
-  id?:string;
+  id?: string;
   /**
    * @format rich-text
    * @default Click here to tweak this text however you want.
@@ -68,7 +67,7 @@ export default function Results({
               }}
             >
             </h3>
-            <hr class="border-[#C9CFCF]"/>
+            <hr class="border-[#C9CFCF]" />
             <div
               class="font-albert-sans text-sm lg:text-base text-left text-white"
               dangerouslySetInnerHTML={{
