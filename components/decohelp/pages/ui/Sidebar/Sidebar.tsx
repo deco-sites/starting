@@ -164,8 +164,7 @@ function AsideLinks({
               return true;
             }
             return false;
-          }
-          );
+          });
 
           if (nestedTopicOpened) {
             setOpenSubTopicIndex(subTopicIndex);
@@ -204,7 +203,7 @@ function AsideLinks({
     <>
       <SearchButton />
       <ul
-        class={`flex flex-col gap-2 pb-[140px] max-h-full overflow-x-auto lg:max-h-[80vh]`}
+        class={`flex flex-col gap-2 pb-[140px] max-h-full overflow-x-auto lg:max-h-max`}
       >
         {subtitle.length > 0 && (
           <li class="my-[8px] ml-[25px]">
@@ -434,7 +433,7 @@ export default function Sidebar({
 
       {/* Desktop Aside */}
       <aside
-        class={`w-[300px] h-full hidden lg:flex flex-col gap-10`}
+        class={`w-[300px] h-full lg:h-max hidden lg:flex flex-col gap-10`}
       >
         <AsideLinks
           topics={Topics ?? []}

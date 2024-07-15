@@ -118,9 +118,9 @@ export interface Props {
 
 <img src="/docs/widgets/rich-text.png" alt="Rich text example" width="600"/>
 
-The RichText widget represents formatted text with support for various style and formatting options.
-This widget allows developers to include text content that can have different fonts,
-sizes, colors, and other formatting styles applied.
+The RichText widget represents formatted text with support for various style and
+formatting options. This widget allows developers to include text content that
+can have different fonts, sizes, colors, and other formatting styles applied.
 
 ```ts
 import { RichText } from "apps/admin/widgets.ts";
@@ -228,7 +228,7 @@ The Code Widget displays a code editor.
 Use `CSS`, `TypeScript`, or `Json` types. Example:
 
 ```ts
-import { CSS, TypeScript, Json } from "apps/admin/widgets.ts";
+import { CSS, Json, TypeScript } from "apps/admin/widgets.ts";
 
 export interface Props {
   myCSSCode?: CSS;

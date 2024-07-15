@@ -10,8 +10,7 @@ since: 1.0.0
 >
 > 1. Quando o loader for reutilizado em diferentes sections ou páginas,
 >    recomenda-se utilizar um loader salvo (reusável)
-> 2. Não faça `fetchs` em inline loaders
-> 3. Sections que carregam dados e que não estão sendo exibidas na tela inicial
+> 2. Sections que carregam dados e que não estão sendo exibidas na tela inicial
 >    (above the fold), podem ser Deferred
 
 # Reutilizando loaders
@@ -36,21 +35,6 @@ loader, a deco otimiza para que o loader seja executado apenas uma vez durante o
 ciclo de renderização da página.
 
 ![image](https://github.com/deco-sites/starting/assets/882438/a39e3806-89e4-4b22-a179-491c048b18f7)
-
-# Não faça `fetchs` em inline loaders
-
-Os inline loaders permitem enriquecer uma section de forma bastante direta.
-Durante a execução do inline loader, é possível inclusive fazer a execução de
-fetchs ou invocações de outro loaders.
-
-Apesar de possível, essa estratégia não é recomendada. Criar uma prop para
-receber este dado, e criar um loader em si para carregá-lo, e fazer essa ligação
-pelo admin, é uma estratégia mais segura para garantir que a mesma seja
-otimizada.
-
-Isto porque os inline loaders não são otimizados por natureza. Já os loaders
-carregados definidos pelo admin podem ser otimizados para serem executados
-apenas uma vez ou no melhor momento para o sistema.
 
 # Deferred Section
 

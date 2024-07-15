@@ -1,8 +1,6 @@
-import { join } from "https://deno.land/std@0.190.0/path/mod.ts";
-
 type LocalizedTitle = { pt?: string; en?: string };
 type Entry = { title: LocalizedTitle; slug?: string };
-type TopLevelEntry = Entry & { children?: Array<TopLevelEntry> };
+export type TopLevelEntry = Entry & { children?: Array<TopLevelEntry> };
 
 type TableOfContents = Array<TopLevelEntry>;
 
@@ -57,33 +55,39 @@ const tableOfContents: TableOfContents = [
   {
     title: { pt: "Funcionalidades do CMS", en: "CMS capabilities" },
     children: [
-      { title: { pt: "Home", en: "Home" },
-        slug: "cms-capabilities/home"
-      },
-      { title: { pt: "Content", en: "Content" },
+      { title: { pt: "Home", en: "Home" }, slug: "cms-capabilities/home" },
+      {
+        title: { pt: "Content", en: "Content" },
         slug: "cms-capabilities/content",
         children: [
-          { title: { pt: "Pages", en: "Pages" },
-            slug: "cms-capabilities/content/pages"
+          {
+            title: { pt: "Pages", en: "Pages" },
+            slug: "cms-capabilities/content/pages",
           },
-          { title: { pt: "Sections", en: "Sections" },
-            slug: "cms-capabilities/content/sections"
+          {
+            title: { pt: "Sections", en: "Sections" },
+            slug: "cms-capabilities/content/sections",
           },
-          { title: { pt: "Blog", en: "Blog" },
-            slug: "cms-capabilities/content/blog"
+          {
+            title: { pt: "Blog", en: "Blog" },
+            slug: "cms-capabilities/content/blog",
           },
-          { title: { pt: "Releases", en: "Releases" },
-            slug: "cms-capabilities/content/releases"
+          {
+            title: { pt: "Releases", en: "Releases" },
+            slug: "cms-capabilities/content/releases",
           },
-          { title: { pt: "Assets", en: "Assets" },
-            slug: "cms-capabilities/content/assets"
+          {
+            title: { pt: "Assets", en: "Assets" },
+            slug: "cms-capabilities/content/assets",
           },
-          { title: { pt: "Records", en: "Records" },
-            slug: "cms-capabilities/content/records"
-          }
-        ]
+          {
+            title: { pt: "Records", en: "Records" },
+            slug: "cms-capabilities/content/records",
+          },
+        ],
       },
-      { title: { pt: "Advanced", en: "Advanced" },
+      {
+        title: { pt: "Advanced", en: "Advanced" },
         slug: "cms-capabilities/advanced",
         children: [
           {
@@ -131,21 +135,27 @@ const tableOfContents: TableOfContents = [
               en: "Experiments",
             },
             slug: "cms-capabilities/advanced/experiments",
-          }
-        ]
+          },
+        ],
       },
-      { title: { pt: "Management", en: "Management" },
+      {
+        title: { pt: "Management", en: "Management" },
         slug: "cms-capabilities/management",
         children: [
-          { title: { pt: "Settings (domínios)", en: "Settings (domains)" },
-            slug: "cms-capabilities/management/custom-domains"
+          {
+            title: { pt: "Settings (domínios)", en: "Settings (domains)" },
+            slug: "cms-capabilities/management/custom-domains",
           },
-          { title: { pt: "Settings (domínios APEX)", en: "Settings (APEX domains)" },
-            slug: "cms-capabilities/management/apex-domains"
-          }
-        ]
-      }
-    ]
+          {
+            title: {
+              pt: "Settings (domínios APEX)",
+              en: "Settings (APEX domains)",
+            },
+            slug: "cms-capabilities/management/apex-domains",
+          },
+        ],
+      },
+    ],
   },
   {
     title: {
@@ -171,7 +181,7 @@ const tableOfContents: TableOfContents = [
       {
         title: {
           pt: "Interatividade com HTMX",
-          en: "Interactivity with HTMX"
+          en: "Interactivity with HTMX",
         },
         slug: "developing-guide/htmx",
       },
@@ -195,7 +205,7 @@ const tableOfContents: TableOfContents = [
           en: "Newsletter with HTMX and Deco Records",
         },
         slug: "developing-guide/examples",
-      }
+      },
     ],
   },
   {
@@ -272,13 +282,6 @@ const tableOfContents: TableOfContents = [
             },
             slug: "developing-capabilities/blocks/exporting-default-props",
           },
-          {
-            title: {
-              pt: "Biblioteca de blocos",
-              en: "Block Library",
-            },
-            slug: "developing-capabilities/blocks/block-library",
-          },
         ],
       },
       {
@@ -328,10 +331,14 @@ const tableOfContents: TableOfContents = [
               pt: "Dados padronizados",
               en: "Standard data types",
             },
-            slug: "developing-capabilities/section-properties/standard-data-types",
+            slug:
+              "developing-capabilities/section-properties/standard-data-types",
           },
           {
-            title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
+            title: {
+              pt: "Utilização de Segredos e Senhas",
+              en: "Using Secrets",
+            },
             slug: "developing-capabilities/section-properties/using-secrets",
           },
           {
@@ -385,7 +392,7 @@ const tableOfContents: TableOfContents = [
             },
             slug: "developing-capabilities/islands/fetching-data-client",
           },
-        ]
+        ],
       },
       {
         title: { pt: "Apps", en: "Apps" },
@@ -412,7 +419,7 @@ const tableOfContents: TableOfContents = [
             },
             slug: "developing-capabilities/apps/ab-test",
           },
-        ]
+        ],
       },
       {
         title: {
@@ -438,13 +445,6 @@ const tableOfContents: TableOfContents = [
       {
         title: { pt: "Problemas comuns", en: "Troubleshooting" },
         slug: "reference/troubleshooting",
-      },
-      {
-        title: {
-          pt: "Contribuindo",
-          en: "Contributing",
-        },
-        slug: "reference/contributing",
       },
     ],
   },
@@ -550,6 +550,13 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
+          pt: "Otimizando loaders",
+          en: "Optimizing loaders",
+        },
+        slug: "performance/loaders",
+      },
+      {
+        title: {
           pt: "Otimizando scripts de terceiros",
           en: "Optimizing 3rd party scripts",
         },
@@ -617,78 +624,6 @@ const tableOfContents: TableOfContents = [
     ],
   },
 ];
-
-if (import.meta.main) {
-  for (const content of tableOfContents) {
-    if (content.slug) {
-      const path = `./${content.slug}`;
-      const stat: { isDirectory: boolean } = await Deno.stat(path).catch(
-        (_) => ({ isDirectory: false }),
-      );
-      let isCreated = false;
-      if (!stat.isDirectory) {
-        isCreated = await Deno.mkdir(path)
-          .then(() => true)
-          .catch(() => false);
-      }
-      if (!content.children && !isCreated) {
-        await Promise.all([
-          Deno.create(`${join(path, "en.md")}`),
-          Deno.create(`${join(path, "pt.md")}`),
-        ]);
-        await Deno.writeTextFile(
-          join(path, "en.md"),
-          `---
-description: TODO
-since: 1.0.0
----`,
-        );
-        await Deno.writeTextFile(
-          join(path, "pt.md"),
-          `---
-description: TODO
-since: 1.0.0
----`,
-        );
-        continue;
-      }
-    } else if (content.children) {
-      for (const children of content.children) {
-        const path = `./${children.slug}`;
-        const stat: { isDirectory: boolean } = await Deno.stat(path).catch(
-          (_) => ({ isDirectory: false }),
-        );
-        if (!stat.isDirectory) {
-          if (
-            await Deno.mkdir(path, { recursive: true })
-              .then(() => true)
-              .catch(() => false)
-          ) {
-            await Promise.all([
-              Deno.create(`${join(path, "en.md")}`),
-              Deno.create(`${join(path, "pt.md")}`),
-            ]);
-
-            await Deno.writeTextFile(
-              join(path, "en.md"),
-              `---
-description: TODO
-since: 1.0.0
----`,
-            );
-            await Deno.writeTextFile(
-              join(path, "pt.md"),
-              `---
-description: TODO
-since: 1.0.0
----`,
-            );
-          }
-        }
-      }
-    }
-  }
-}
 
 const tableOfContentsBySlug = tableOfContents.reduce((acc, cur) => {
   return addEntriesToAccumulator(acc, cur);

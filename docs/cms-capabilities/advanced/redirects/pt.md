@@ -41,15 +41,18 @@ Acesse a página de `redirects`. Isto permite acesso a criação de redirects.
 
 Faça a configuração do redirecionamento de acordo com sua necessidade:
 
-- **From**: o campo de origem, que representa o caminho que o usuário está tentando acessar, e na qual ele será redirecionado. Este campo suporta o [URLPattern](http://mdn.io/urlpattern).
-- **To**: o campo de destino. Pode ser um endereço absoluto ou um caminho relativo
+- **From**: o campo de origem, que representa o caminho que o usuário está
+  tentando acessar, e na qual ele será redirecionado. Este campo suporta o
+  [URLPattern](http://mdn.io/urlpattern).
+- **To**: o campo de destino. Pode ser um endereço absoluto ou um caminho
+  relativo
 - **Type**: a definição do tipo de redirect (`permanent` ou `temporary`)
 
-> Escolha o tipo como `temporary`, quando o redirecionamento pode mudar ao
-   longo do tempo. Se o redirecionamento não deve mudar ao longo do tempo, você
-   pode selecionar `permanent` (o que pode resultar em respostas mais rápidas,
-   já que os redirecionamentos permanentes são armazenados em cache pelo
-   navegador do usuário).
+> Escolha o tipo como `temporary`, quando o redirecionamento pode mudar ao longo
+> do tempo. Se o redirecionamento não deve mudar ao longo do tempo, você pode
+> selecionar `permanent` (o que pode resultar em respostas mais rápidas, já que
+> os redirecionamentos permanentes são armazenados em cache pelo navegador do
+> usuário).
 
 <img width="320" alt="Add redirect form" src="/docs/cms-capabilities/redirects/redirects2.png">
 
@@ -57,7 +60,8 @@ Faça a configuração do redirecionamento de acordo com sua necessidade:
 
 Para o redirect entrar em efeito, é preciso publicar as alterações do seu site.
 
-Em seguida, você pode acessar `https://seu-site.deco.site/example-redirect` e verificar se o redirecionamento está funcionando corretamente.
+Em seguida, você pode acessar `https://seu-site.deco.site/example-redirect` e
+verificar se o redirecionamento está funcionando corretamente.
 
 ## Adicionando um Proxy \[via apps de ecommerce e website\]
 
@@ -70,12 +74,13 @@ usuário consistente. Os proxies são comumente usados durante processos de
 migração de plataforma, permitindo que você adote gradualmente o Deco e decida
 se uma página específica deve ser proxied ou servida diretamente pelo Deco.
 
-Para criar ou editar um proxy em vez de um redirecionamento, você pode seguir os seguintes
-passos:
+Para criar ou editar um proxy em vez de um redirecionamento, você pode seguir os
+seguintes passos:
 
 ### 1. Acesso o `App` de site
 
-Acesse a visualização de apps do site, e procure pelo `App` de site. Para editá-lo, clique na descrição do app.
+Acesse a visualização de apps do site, e procure pelo `App` de site. Para
+editá-lo, clique na descrição do app.
 
 <img width="480" alt="Configure site app" src="/docs/cms-capabilities/redirects/proxies1.png">
 
@@ -85,7 +90,8 @@ Procure no formulário de edição do app, pela propriedade de routes map.
 
 <img width="320" alt="Configure site app" src="/docs/cms-capabilities/redirects/proxies2.png">
 
-Edite o proxy existente para adicionar novas rotas a serem proxiadas (quando for o caso) ou adicione um proxy obtido de algum app de e-commerce.
+Edite o proxy existente para adicionar novas rotas a serem proxiadas (quando for
+o caso) ou adicione um proxy obtido de algum app de e-commerce.
 
 Publique as alterações para que a nova rota de proxy entre em efeito.
 

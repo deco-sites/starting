@@ -169,4 +169,5 @@ export interface props {
 ```
 
 Outros tipos de formatos válidos são: `uri`, `color`. Você pode ler mais sobre
-isso [na documentação de Annotations](/docs/pt/developing-capabilities/section-properties/annotations).
+isso
+[na documentação de Annotations](/docs/pt/developing-capabilities/section-properties/annotations).

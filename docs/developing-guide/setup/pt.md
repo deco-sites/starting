@@ -79,7 +79,8 @@ isso, acesse [o Deco Play](https://play.deco.cx/)
 
 ### 1. Crie um site deco.cx
 
-Siga o tutorial de [Criar um Site Deco](/docs/pt/getting-started/creating-a-site).
+Siga o tutorial de
+[Criar um Site Deco](/docs/pt/getting-started/creating-a-site).
 
 ### 2. Clone o repositório do seu site
 
@@ -110,8 +111,8 @@ o clone.
 
 ### 3. Executar servidor local
 
-Para rodar seu site localmente, editar e ver as mudanças no Admin, você precisa 
-ter um ambiente local (um ambiente com `localhost` como host). Para isso, você 
+Para rodar seu site localmente, editar e ver as mudanças no Admin, você precisa
+ter um ambiente local (um ambiente com `localhost` como host). Para isso, você
 pode usar o ambiente `localhost` criado por padrão ou criar um novo.
 
 #### 3.1 Crie um novo ambiente
@@ -128,8 +129,8 @@ Escolha um nome para o seu ambiente e defina seu host como localhost.
 
 #### 3.3 Execute seu site localmente
 
-Copie o comando mostrado depois da criação do ambiente e cole-o no seu 
-terminal na pasta do site.
+Copie o comando mostrado depois da criação do ambiente e cole-o no seu terminal
+na pasta do site.
 
 ![Comando de iniciar server](/docs/setup/start-server-command.png)
 
@@ -150,9 +151,9 @@ isto será refletido no endereço acima.
 
 #### 3.4 Publicando alterações
 
-Considerando que você escolheu o Deco Hosting para o deploy de seu site, 
-o processo de _deploy_ em development é muito simples: apenas fazer um _git
-push_ das alterações na _branch_ _**main**_.
+Considerando que você escolheu o Deco Hosting para o deploy de seu site, o
+processo de _deploy_ em development é muito simples: apenas fazer um _git push_
+das alterações na _branch_ _**main**_.
 
 Você também pode publicar seu ambiente no próprio Admin clicando no botão de
 Publicar agora, na página do seu ambiente.

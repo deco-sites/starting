@@ -34,9 +34,10 @@ Perceba que, apesar da ProductShelf depender de uma lista de "Product" pra
 funcionar, ela não depende de qual é a fonte do dado que vai prover essa
 informação. Isso só é possível porque o tipo `Product` é um tipo criado por uma
 entidade central no `schema.org`. Uma outra forma possível de pensar nossa
-ProductShelf seria escrever um [Inline Loader](/docs/pt/developing-guide/fetching-data)
-e fazer com que esse inline loader leia os dados da API de um e-commerce em
-específico (e.g Shopify) e só então renderizar a ProductShelf.
+ProductShelf seria escrever um
+[Inline Loader](/docs/pt/developing-guide/fetching-data) e fazer com que esse
+inline loader leia os dados da API de um e-commerce em específico (e.g Shopify)
+e só então renderizar a ProductShelf.
 
 Isso é totalmente possível e factível, no entanto, deve-se atentar que quando
 isso é feito, o nosso usuário de negócio perde a possibilidade de, por exemplo,

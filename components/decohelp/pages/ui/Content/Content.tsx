@@ -5,13 +5,13 @@ import WasThisPageHelpfulContent, {
   WasThisPageHelpfulProps,
 } from "site/components/decohelp/pages/ui/WasThisPageHelpful/WasThisPageHelpful.tsx";
 import ForwardBackButtons from "site/islands/ForwardBackButtons/ForwardBackButtons.tsx";
-import BreadCrumb from "site/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
+
 import {
   ContentType,
   Props,
 } from "site/components/decohelp/pages/interfaces.ts";
 
-function renderContentItem(item: ContentType, idx: number) {
+function renderContentItem(item: ContentType, _idx: number) {
   return "Text" in item
     ? (
       <article aria-label={item.label}>
@@ -69,7 +69,7 @@ export default function Page({
   WasThisPageHelpful,
 }: Props & WasThisPageHelpfulProps) {
   return (
-    <div class="mx-auto relative lg:mb-[40px] mb-[32px]">
+    <div class="docContent mx-auto relative lg:mb-[40px] mb-[32px]">
       <div class="w-full xl:px-0 lg:pl-0 relative z-0">
         <div class="flex flex-col gap-8">
           {Title && (

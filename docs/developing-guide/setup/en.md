@@ -69,7 +69,8 @@ We highly recommend using
 
 ### 1. Create a Deco Site
 
-Follow the steps in the [Creating a Site tutorial](/docs/en/getting-started/creating-a-site).
+Follow the steps in the
+[Creating a Site tutorial](/docs/en/getting-started/creating-a-site).
 
 ### 2. Clone Your Site Repository
 
@@ -97,9 +98,9 @@ details about different ways to clone.
 
 ### 3. Run Local Server
 
-To run your site locally, edit, and see the changes in the Admin, you need 
-to have a local environment (an environment with `localhost` as the host). 
-To do this, you can use the default `localhost` environment or create a new one.
+To run your site locally, edit, and see the changes in the Admin, you need to
+have a local environment (an environment with `localhost` as the host). To do
+this, you can use the default `localhost` environment or create a new one.
 
 #### 3.1 Create new environment
 
@@ -109,13 +110,13 @@ Open the Releases tab in the Admin and click on the New environment button.
 
 #### 3.2 Set a name and a host to your environment
 
-Choose a name for your environment and set your host as localhost. 
+Choose a name for your environment and set your host as localhost.
 
 ![Choosing environment and starting server](/docs/setup/choose-host.png)
 
 #### 3.3 Run your site locally
 
-Copy the command shown after you create your environment and paste it into your 
+Copy the command shown after you create your environment and paste it into your
 terminal in the site folder.
 
 ![Start server command](/docs/setup/start-server-command.png)
@@ -137,9 +138,9 @@ reflected at the above address.
 
 #### 3.4 Publishing Changes
 
-Considering that you chose the Deco Hosting to deploy your site, the development 
-deployment process is very simple: do a git push of the changes
-to the main branch.
+Considering that you chose the Deco Hosting to deploy your site, the development
+deployment process is very simple: do a git push of the changes to the main
+branch.
 
 Alternativaly, publish your local environment in the Admin by clicking on the
 Publish now button in your environment page.
