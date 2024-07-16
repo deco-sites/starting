@@ -1,7 +1,0 @@
-{
-  "__resolveType": "blog/loaders/BlogPostPage.ts",
-  "slug": {
-    "__resolveType": "website/functions/requestToParam.ts",
-    "param": "ai"
-  }
-}
