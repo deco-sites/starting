@@ -45,7 +45,7 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
     <div className={`flex z-10 gap-4 lg:gap-6 animate-slide`}>
       {logos.map((logo) => (
         <a
-          class="flex items-center justify-center h-[30px] w-[82px] lg:w-52 m-5"
+          class="flex items-center justify-center h-[30px] w-[82px] lg:w-36 m-5"
           href={logo.href}
           target="_blank"
         >
