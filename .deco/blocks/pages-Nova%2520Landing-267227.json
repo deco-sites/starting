@@ -789,12 +789,7 @@
             "subTitle": "<p>Universal Git-based CMS to build high performance sites, apps and <br>storefronts with Deno, HTMX, JSX and Tailwind.</p>",
             "shouldAddPaddingTopAndBottom": true,
             "title": "<p>Build Profitable Websites</p>",
-            "alert": {
-              "text": "Hackathon 5: Transform Ideas into Ultra-Fast HTMX Templates",
-              "mobileText": "Hackathon: HTMX Edition",
-              "href": "https://deco.cx/hackathon5",
-              "readMoreText": "Read More"
-            }
+            "alert": {}
           },
           {
             "__resolveType": "site/sections/Home/TrustSignals.tsx",
