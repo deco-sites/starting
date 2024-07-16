@@ -1,5 +1,3 @@
-import MentorInfos from "./MentorInfos.tsx";
-
 const MentorImg = (props: { img: string }) => {
   return (
     <div>

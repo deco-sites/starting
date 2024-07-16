@@ -7,7 +7,6 @@ interface PageButton {
 }
 
 export default function ForwardBackButtons() {
-  const upper = "text-neutral-900 text-sm font-bold leading-tight";
   const lower = "text-gray-900 font-medium";
 
   const [previous, setPrevious] = useState<PageButton>({
@@ -20,9 +19,6 @@ export default function ForwardBackButtons() {
     href: "",
     enabled: false,
   });
-
-  const isEnglish = window.navigator.language.startsWith("en");
-  const [isEnglishState, setIsEnglishState] = useState(isEnglish);
 
   useEffect(() => {
     const encodedURL = window.location.href.split(
@@ -58,10 +54,6 @@ export default function ForwardBackButtons() {
           enabled: !!nextLink.getAttribute("href"),
         });
       }
-
-      const pathSegments = decodedURL.split("/");
-      const english = pathSegments.includes("en");
-      setIsEnglishState(english);
     }
   }, []);
 

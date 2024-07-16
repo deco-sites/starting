@@ -22,7 +22,7 @@ const gitHubRawLoader: LoaderFunction<Props, PostList> = async (
   const resultPath = path;
   const res = await fetch(
     `https://raw.githubusercontent.com/${repo}/${branch}/${resultPath}`,
-  ).then((res) => res.json());
+  ).then((res) => res.json() as Promise<PostList>);
 
   return {
     data: res,

@@ -50,7 +50,8 @@ Clique no botão "Novo ambiente".
 ### 3. Escolher um Nome e um Host
 
 Escolha um nome para o seu ambiente e selecione a opção Web para o host. Vamos
-discutir a [opção localhost](/docs/getting-started/developing-guide/setup) mais tarde.
+discutir a [opção localhost](/docs/getting-started/developing-guide/setup) mais
+tarde.
 
 ![Formulário Novo Ambiente](/docs/getting-started/changing-and-publishing/creating-new-env.png)
 

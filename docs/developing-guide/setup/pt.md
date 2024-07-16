@@ -79,7 +79,8 @@ isso, acesse [o Deco Play](https://play.deco.cx/)
 
 ### 1. Crie um site deco.cx
 
-Siga o tutorial de [Criar um Site Deco](/docs/pt/getting-started/creating-a-site).
+Siga o tutorial de
+[Criar um Site Deco](/docs/pt/getting-started/creating-a-site).
 
 ### 2. Clone o repositório do seu site
 
@@ -112,9 +113,9 @@ o clone.
 
 #### 3.1 Crie um novo ambiente
 
-Para executar seu site localmente, crie um novo ambiente na aba Releases.
-Isso permitirá que as mudanças feitas no Admin da deco sejam 
-refletidas no seu repositório local e vice-versa.
+Para executar seu site localmente, crie um novo ambiente na aba Releases. Isso
+permitirá que as mudanças feitas no Admin da deco sejam refletidas no seu
+repositório local e vice-versa.
 
 ![Criar novo ambiente](/docs/setup/create-environment.png)
 
@@ -126,8 +127,8 @@ Escolha um nome para o seu ambiente e defina seu host como localhost.
 
 #### 3.3 Execute seu site localmente
 
-Copie o comando mostrado depois da criação do ambiente e cole-o no seu 
-terminal na pasta do site.
+Copie o comando mostrado depois da criação do ambiente e cole-o no seu terminal
+na pasta do site.
 
 ![Comando de iniciar server](/docs/setup/start-server-command.png)
 

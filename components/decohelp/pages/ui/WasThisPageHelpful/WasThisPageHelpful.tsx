@@ -40,12 +40,10 @@ export default function WasThisPageHelpfulContent({
       "Can't find what you're looking for? Spot an error in the documentation? Get in touch with us on our Community Forum",
   },
 }: WasThisPageHelpfulProps) {
-  const [buttonClicked, setButtonClicked] = useState<ButtonData | null>(null);
   const [isPending, setIsPending] = useState(false);
 
   const handleButtonClick = async (label: string, helpful: boolean) => {
     setIsPending(true);
-    setButtonClicked({ label, helpful });
     await Runtime.invoke.site.actions.feedbackDocs({
       contents: [helpful, label, window.location.href],
     });

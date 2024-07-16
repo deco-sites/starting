@@ -50,8 +50,8 @@ Click the "New environment" button.
 ### 3. Choose a Name and Host
 
 Choose a name for your environment and select the Web option for the host. We
-will discuss the [localhost option](/docs/getting-started/developing-guide/setup)
-later.
+will discuss the
+[localhost option](/docs/getting-started/developing-guide/setup) later.
 
 ![New environment Form](/docs/getting-started/changing-and-publishing/creating-new-env.png)
 

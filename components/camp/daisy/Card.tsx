@@ -20,7 +20,6 @@ export default function Card(props: Props) {
     subtitle,
     callToAction,
     imageOnBottom,
-    glass,
     imageOnSide,
   } = props;
   return (

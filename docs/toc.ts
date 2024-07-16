@@ -57,33 +57,39 @@ const tableOfContents: TableOfContents = [
   {
     title: { pt: "Funcionalidades do CMS", en: "CMS capabilities" },
     children: [
-      { title: { pt: "Home", en: "Home" },
-        slug: "cms-capabilities/home"
-      },
-      { title: { pt: "Content", en: "Content" },
+      { title: { pt: "Home", en: "Home" }, slug: "cms-capabilities/home" },
+      {
+        title: { pt: "Content", en: "Content" },
         slug: "cms-capabilities/content",
         children: [
-          { title: { pt: "Pages", en: "Pages" },
-            slug: "cms-capabilities/content/pages"
+          {
+            title: { pt: "Pages", en: "Pages" },
+            slug: "cms-capabilities/content/pages",
           },
-          { title: { pt: "Sections", en: "Sections" },
-            slug: "cms-capabilities/content/sections"
+          {
+            title: { pt: "Sections", en: "Sections" },
+            slug: "cms-capabilities/content/sections",
           },
-          { title: { pt: "Blog", en: "Blog" },
-            slug: "cms-capabilities/content/blog"
+          {
+            title: { pt: "Blog", en: "Blog" },
+            slug: "cms-capabilities/content/blog",
           },
-          { title: { pt: "Releases", en: "Releases" },
-            slug: "cms-capabilities/content/releases"
+          {
+            title: { pt: "Releases", en: "Releases" },
+            slug: "cms-capabilities/content/releases",
           },
-          { title: { pt: "Assets", en: "Assets" },
-            slug: "cms-capabilities/content/assets"
+          {
+            title: { pt: "Assets", en: "Assets" },
+            slug: "cms-capabilities/content/assets",
           },
-          { title: { pt: "Records", en: "Records" },
-            slug: "cms-capabilities/content/records"
-          }
-        ]
+          {
+            title: { pt: "Records", en: "Records" },
+            slug: "cms-capabilities/content/records",
+          },
+        ],
       },
-      { title: { pt: "Advanced", en: "Advanced" },
+      {
+        title: { pt: "Advanced", en: "Advanced" },
         slug: "cms-capabilities/advanced",
         children: [
           {
@@ -131,16 +137,15 @@ const tableOfContents: TableOfContents = [
               en: "Experiments",
             },
             slug: "cms-capabilities/advanced/experiments",
-          }
-        ]
+          },
+        ],
       },
-      { title: { pt: "Management", en: "Management" },
+      {
+        title: { pt: "Management", en: "Management" },
         slug: "cms-capabilities/management",
-        children: [
-          
-        ]
-      }
-    ]
+        children: [],
+      },
+    ],
   },
   {
     title: {
@@ -166,7 +171,7 @@ const tableOfContents: TableOfContents = [
       {
         title: {
           pt: "Interatividade com HTMX",
-          en: "Interactivity with HTMX"
+          en: "Interactivity with HTMX",
         },
         slug: "developing-guide/htmx",
       },
@@ -183,7 +188,7 @@ const tableOfContents: TableOfContents = [
           en: "Creating a loader",
         },
         slug: "developing-guide/creating-loaders",
-      }
+      },
     ],
   },
   {
@@ -323,10 +328,14 @@ const tableOfContents: TableOfContents = [
               pt: "Dados padronizados",
               en: "Standard data types",
             },
-            slug: "developing-capabilities/section-properties/standard-data-types",
+            slug:
+              "developing-capabilities/section-properties/standard-data-types",
           },
           {
-            title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
+            title: {
+              pt: "Utilização de Segredos e Senhas",
+              en: "Using Secrets",
+            },
             slug: "developing-capabilities/section-properties/using-secrets",
           },
           {
@@ -380,7 +389,7 @@ const tableOfContents: TableOfContents = [
             },
             slug: "developing-capabilities/islands/fetching-data-client",
           },
-        ]
+        ],
       },
       {
         title: { pt: "Apps", en: "Apps" },
@@ -407,7 +416,7 @@ const tableOfContents: TableOfContents = [
             },
             slug: "developing-capabilities/apps/ab-test",
           },
-        ]
+        ],
       },
       {
         title: {

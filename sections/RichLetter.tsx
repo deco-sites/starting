@@ -38,7 +38,7 @@ export default function Why({ title, paragraph }: Props) {
         <div className="md:text-lg">
           <div
             className="mb-4"
-            dangerouslySetInnerHTML={{ "__html": paragraph }}
+            dangerouslySetInnerHTML={{ "__html": paragraph || "" }}
           >
           </div>
         </div>

@@ -78,7 +78,8 @@ deploy code or make a deployment on our infrastructure. To do this, visit
 
 ### 1. Create a Deco Site
 
-Follow the steps in the [Creating a Site tutorial](/docs/en/getting-started/creating-a-site).
+Follow the steps in the
+[Creating a Site tutorial](/docs/en/getting-started/creating-a-site).
 
 ### 2. Clone Your Site Repository
 
@@ -109,21 +110,22 @@ details about different ways to clone.
 ### 3. Run Local Server
 
 #### 3.1 Create new environment
-To run your site locally, create a new environment in the Releases tab.
-This will allow changes made in the deco Admin panel to be reflected in your
-local repository and vice versa.
+
+To run your site locally, create a new environment in the Releases tab. This
+will allow changes made in the deco Admin panel to be reflected in your local
+repository and vice versa.
 
 ![Create new environment](/docs/setup/create-environment.png)
 
 #### 3.2 Set a name and a host to your environment
 
-Choose a name for your environment and set your host as localhost. 
+Choose a name for your environment and set your host as localhost.
 
 ![Choosing environment and starting server](/docs/setup/choose-host.png)
 
 #### 3.3 Run your site locally
 
-Copy the command shown after you create your environment and paste it into your 
+Copy the command shown after you create your environment and paste it into your
 terminal in the site folder.
 
 ![Start server command](/docs/setup/start-server-command.png)

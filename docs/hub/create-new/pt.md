@@ -87,7 +87,8 @@ tipo de exportação Adereços = {
 ```
 
 > Dica: você pode usar qualquer um dos
-> [Tipos utilitários](/docs/pt/developing-capabilities/section-properties/utility-types) que você já conhece.
+> [Tipos utilitários](/docs/pt/developing-capabilities/section-properties/utility-types)
+> que você já conhece.
 
 É também neste arquivo que você pode disponibilizar clientes/serviços para os
 carregadores e ações do app, a fim de simplificar as chamadas REST/GraphQL.

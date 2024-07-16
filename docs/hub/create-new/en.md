@@ -86,7 +86,8 @@ export type Props = {
 };
 ```
 
-> Tip: You can use any of the [Utility Types](/docs/en/developing-capabilities/section-properties/utility-types)
+> Tip: You can use any of the
+> [Utility Types](/docs/en/developing-capabilities/section-properties/utility-types)
 > that you already know.
 
 It's also in this file that you can make clients/services available to the app's

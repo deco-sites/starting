@@ -4,7 +4,7 @@ import MarkdownContent from "site/sections/MarkdownContent.tsx";
 import { CardLinks } from "site/components/ui/docs/CardLinks.tsx";
 import { JoinDiscordCTA } from "site/components/ui/docs/JoinDiscord.tsx";
 
-import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
+import { AvailableIcons } from "site/components/ui/Icon.tsx";
 
 interface OverviewContentProps {
   mdContent?: LoaderReturnType<MDFileContent>;

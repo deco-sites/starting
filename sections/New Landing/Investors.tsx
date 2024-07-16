@@ -1,7 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
 import { useMemo } from "preact/hooks";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import { Picture, Source } from "apps/website/components/Picture.tsx";
 import { AppContext } from "site/apps/site.ts";
 
 export interface Image {
@@ -32,7 +31,7 @@ const IMAGES = [
   },
 ];
 
-export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
   const device = ctx.device;
 
   return {
@@ -91,7 +90,6 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
 function Investors({
   title,
   brands,
-  isMobile,
 }: Omit<Props, "isMobile"> & {
   title?: string;
   brands?: {
@@ -106,39 +104,6 @@ function Investors({
         .map((_, i) => IMAGES[i % 2]) as Image[]),
     [],
   );
-
-  function Logo(element: Image) {
-    return (
-      <div
-        class="flex items-center justify-center rounded-[20px] w-auto backdrop-filter backdrop-blur-22 relative hover:scale-105 transition ease-in-out duration-300"
-        style={{ borderRadius: "16px" }}
-      >
-        <a
-          href={element.href}
-          target="_blank"
-          class="w-full h-full z-60 relative flex items-center justify-center lg:px-5 lg:py-[10px] gap-4"
-        >
-          <Picture>
-            <Source
-              media="(max-width: 767px)"
-              src={element.img ?? ""}
-              width={144}
-              class=""
-            />
-            <Source
-              media="(min-width: 768px)"
-              src={element.img ?? ""}
-              width={110}
-            />
-            <img
-              class="object-contain w-[110px] object-scale-down"
-              src={element.img ?? ""}
-            />
-          </Picture>
-        </a>
-      </div>
-    );
-  }
 
   return (
     <div class="bg-[#0D1717] relative z-10">

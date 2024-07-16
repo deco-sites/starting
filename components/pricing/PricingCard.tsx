@@ -85,7 +85,8 @@ function FeatureItem({
                 dangerouslySetInnerHTML={{
                   __html: feature.moreInfo,
                 }}
-              ></div>
+              >
+              </div>
             </div>
           )}
         </div>
@@ -121,7 +122,7 @@ function CalculatorElement({
   const handlePriceUpdate = (operation: "sum" | "sub") => {
     const newValue = OPERATIONS[operation](
       calculatorValue.value,
-      item.addValue
+      item.addValue,
     );
     if (item.initialValue <= newValue) {
       calculatorValue.value = newValue;
@@ -142,8 +143,8 @@ function CalculatorElement({
     }
 
     let addingPrice = 0;
-    addingPrice -= calculateAddingPrice(calculatorValue.value)
-    addingPrice += calculateAddingPrice(newValue)
+    addingPrice -= calculateAddingPrice(calculatorValue.value);
+    addingPrice += calculateAddingPrice(newValue);
 
     calculatorValue.value = newValue;
     onChange("sum", addingPrice);
@@ -160,9 +161,11 @@ function CalculatorElement({
           <span>{item.unit}</span>
           {item.hasNote && <Icon id={item.noteIcon ?? "star-sign"} size={15} />}
         </div>
-        <span class="text-[#949E9E] text-sm">{`$${item.price} per ${
-          formatedPrice !== "1" ? `${formatedPrice} ` : ""
-        }${item.unit}`}</span>
+        <span class="text-[#949E9E] text-sm">
+          {`$${item.price} per ${
+            formatedPrice !== "1" ? `${formatedPrice} ` : ""
+          }${item.unit}`}
+        </span>
       </div>
       <div class="flex gap-2 text-[#949E9E] h-fit items-center">
         <Icon
@@ -229,10 +232,11 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
 
     const newValue = OPERATIONS[operation](
       parseFloat(currentPrice.value),
-      value
+      value,
     );
-    if (newValue >= parseFloat(monthlyBasePrice))
+    if (newValue >= parseFloat(monthlyBasePrice)) {
       currentPrice.value = String(newValue);
+    }
   }
 
   return (
@@ -245,24 +249,26 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
         <h3 class="font-[argent-pixel] text-3xl mb-2">{title}</h3>
         <div class="flex items-center gap-4">
           <p>
-            {isNaN(parseFloat(currentPrice.value)) ? (
-              <span class="text-3xl text-[#02F67C] font-semibold mr-1">
-                {currentPrice.value}
-              </span>
-            ) : (
-              <>
+            {isNaN(parseFloat(currentPrice.value))
+              ? (
                 <span class="text-3xl text-[#02F67C] font-semibold mr-1">
-                  $
-                  {applyDiscount && useAnnualDiscount && annualDiscount
-                    ? (
+                  {currentPrice.value}
+                </span>
+              )
+              : (
+                <>
+                  <span class="text-3xl text-[#02F67C] font-semibold mr-1">
+                    $
+                    {applyDiscount && useAnnualDiscount && annualDiscount
+                      ? (
                         parseFloat(currentPrice.value) *
                         (1 - annualDiscount / 100)
                       ).toFixed(2)
-                    : currentPrice.value}
-                </span>
-                / month
-              </>
-            )}
+                      : currentPrice.value}
+                  </span>
+                  / month
+                </>
+              )}
           </p>
           {applyDiscount && useAnnualDiscount && annualDiscount && (
             <div class="rounded-lg border border-[#02F67C] bg-[#02F67C20] px-3 py-0.5 text-sm">

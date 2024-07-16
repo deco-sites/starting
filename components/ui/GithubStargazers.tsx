@@ -10,7 +10,7 @@ export const fetchRepo = async (repo: string): Promise<Props> => {
     if (!response.ok) {
       throw new Error("Erro ao buscar os dados do repositório");
     }
-    const data = await response.json();
+    const data = await response.json() as Props;
     return data;
   } catch (error) {
     console.error(error);

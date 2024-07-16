@@ -1,5 +1,4 @@
 import { Dropdown } from "site/components/nrf/Dropdown.tsx";
-import Icon from "site/components/ui/Icon.tsx";
 
 export interface Alert {
   label: string;
