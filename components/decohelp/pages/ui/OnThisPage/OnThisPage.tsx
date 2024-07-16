@@ -35,12 +35,12 @@ export default function OnThisPage(props: OnThisPage & { url: string }) {
 
   useEffect(() => {
     function createLinksInArticles() {
-      const markdownBody = document.querySelector(".docContent");
+      const markdownBody = document.querySelector(".markdown-body");
       if (!markdownBody) {
         throw new Error("Markdown body not present");
       }
       headings = Array.from(
-        markdownBody.querySelectorAll("h1, h2"),
+        markdownBody.querySelectorAll("h1, h2, h3, h4, h5, h6"),
       );
 
       headings.forEach((element, index) => {

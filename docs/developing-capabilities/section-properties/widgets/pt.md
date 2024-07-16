@@ -11,8 +11,7 @@ existentes:
 
 <img src="/docs/widgets/textarea.png" alt="Exemplo textarea" width="400"/>
 
-Este Widget renderiza um campo de texto especial. Basta utilizar o tipo
-TextArea. Exemplo:
+Este Widget renderiza um campo de texto especial. Basta utilizar o tipo TextArea. Exemplo:
 
 ```ts
 import { TextArea } from "apps/admin/widgets.ts";
@@ -124,10 +123,9 @@ export interface Props {
 
 <img src="/docs/widgets/rich-text.png" alt="Exemplo rich text" width="600"/>
 
-O widget RichText representa texto formatado com suporte para várias opções de
-estilos e formatação. Este widget permite que os desenvolvedores incluam
-conteúdo de texto que pode ter diferentes fontes, tamanhos, cores e outros
-estilos de formatação aplicados.
+O widget RichText representa texto formatado com suporte para várias opções de estilos e formatação.
+Este widget permite que os desenvolvedores incluam conteúdo de texto que pode ter diferentes fontes,
+tamanhos, cores e outros estilos de formatação aplicados.
 
 ```ts
 import { RichText } from "apps/admin/widgets.ts";
@@ -236,7 +234,7 @@ O Widget Code exibe um Editor de código.
 Utilize os tipos `CSS`, `TypeScript` ou `Json`. Exemplo:
 
 ```ts
-import { CSS, Json, TypeScript } from "apps/admin/widgets.ts";
+import { CSS, TypeScript, Json } from "apps/admin/widgets.ts";
 
 export interface Props {
   myCSSCode?: CSS;

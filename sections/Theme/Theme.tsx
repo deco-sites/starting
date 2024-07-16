@@ -12,6 +12,7 @@ import {
   FONT_ALBERT,
   FONT_ARGENT,
   getStyleSrc,
+  STYLE_PATH,
 } from "site/components/GlobalTags.tsx";
 
 export interface ThemeColors {

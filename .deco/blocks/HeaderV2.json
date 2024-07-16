@@ -115,7 +115,7 @@
       "columns": []
     },
     {
-      "href": "/pricing",
+      "href": "/en/pricing",
       "label": "Pricing",
       "nested": [],
       "targetBlank": false,
@@ -138,6 +138,5 @@
   "gitUrl": "https://github.com/deco-cx",
   "discordUrl": "https://discord.gg/hBUs29me8Z",
   "linkedinUrl": "https://www.linkedin.com/company/deco-cx/",
-  "pageInitial": "for marketers",
-  "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1e79cc6e-caeb-4289-a689-b9fa1e6968aa"
+  "pageInitial": "for marketers"
 }

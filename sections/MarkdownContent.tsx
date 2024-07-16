@@ -13,12 +13,16 @@ interface MDContent {
   content: FrontMatterContent;
 }
 
+function getTitle(content: string): string | undefined {
+  return content.split("\n").find((x) => x.startsWith("# "))?.trim();
+}
+
 export default function DocsPage(
   props: { data: LoaderReturnType<MDFileContent> },
 ) {
   let description;
   const frontMatterContent = frontMatter(props.data.content);
-  const { attrs } = frontMatterContent;
+  const { body, attrs } = frontMatterContent;
   if (attrs?.description) {
     description = String(attrs.description);
   }

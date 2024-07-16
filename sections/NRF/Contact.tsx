@@ -1,3 +1,6 @@
+import ReCAPTCHA from "site/sections/ReCAPTCHA.tsx";
+import { RECAPTCHA_SITE_KEY } from "site/sdk/recaptcha.ts";
+
 export interface Props {
   title: string;
   /** @format html */

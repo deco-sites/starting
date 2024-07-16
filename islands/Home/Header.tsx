@@ -2,9 +2,6 @@ import { useSignal } from "@preact/signals";
 import { useEffect } from "preact/hooks";
 import { Dropdown } from "site/islands/Home/Dropdown.tsx";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
-import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "deco-sites/std/components/Image.tsx";
-
 export interface Alert {
   label: string;
 }
@@ -27,19 +24,18 @@ export interface MenuLink {
 }
 
 export interface Props {
-  idiom: string;
-  logo: ImageWidget;
-  menuLinks: MenuLink[];
-  sign: { label: string; url: string };
-  demo?: { label: string; url: string };
-  login: { label: string; url: string };
-  linkedinUrl: string;
-  gitUrl: string;
-  discordUrl: string;
   alerts?: {
     mobile?: Alert[];
     desktop?: Alert[];
   };
+  menuLinks: MenuLink[];
+  idiom: string;
+  demo?: { label: string; url: string };
+  login: { label: string; url: string };
+  sign: { label: string; url: string };
+  linkedinUrl: string;
+  gitUrl: string;
+  discordUrl: string;
 }
 
 function MobileMenuDropdown({ icon, nested, title }: ColumnMenu) {
@@ -166,10 +162,10 @@ export default function Header({ menuLinks, ...props }: Props) {
 
   const retrieveDiscordMemberCount = async () => {
     const response = await fetch(
-      "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true",
+      "https://discord.com/api/v9/invites/hBUs29me8Z?with_counts=true&with_expiration=true"
     );
-    const discordData: { approximate_member_count: string } = await response
-      .json();
+    const discordData: { approximate_member_count: string } =
+      await response.json();
     members.value = discordData.approximate_member_count;
   };
 
@@ -181,14 +177,31 @@ export default function Header({ menuLinks, ...props }: Props) {
   return (
     <section class="lg:container fixed z-50 w-full top-0 lg:w-full left-1/2 transform -translate-x-1/2 py-4 lg:py-8 before:absolute before:backdrop-blur-2xl lg:before:backdrop-blur-none before:w-full  before:h-full before:top-0 before:left-0">
       <nav class="flex flex-row items-center max-w-screen-2xl m-auto relative justify-between px-4 md:px-8 z-50">
-        <a class="flex items-center h-full lg:pl-8 pb-[6px]" href="/">
-          <Image
-            src={props.logo}
-            alt={props.logo}
-            width={120}
-            class="w-32"
-          />
-        </a>
+        <ul class="h-full flex items-center z-[51]">
+          <li class="h-full">
+            <a
+              class="flex items-center h-full pb-[6px] w-24 md:w-36 lg:w-auto mt-[2px]"
+              href="/"
+            >
+              <svg
+                width="144"
+                height="40"
+                viewBox="0 0 144 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M142.437 18.0741L136.511 25.3333C137.696 27.5556 139.03 29.6296 140.363 31.5556C141.252 32.7407 141.548 34.3704 141.104 35.8518V36C140.511 38.0741 138.733 39.7037 136.511 39.8518C135.178 40 133.844 40 132.511 40C131.178 40 129.844 40 128.511 39.8518C127.178 39.7037 126.141 39.1111 125.252 38.2222C124.363 39.1111 123.326 39.7037 121.993 39.8518C120.807 40 119.326 40 117.993 40C116.511 40 115.178 40 113.993 39.8518C113.252 39.7037 112.659 39.5556 112.067 39.2593C110.437 39.7037 108.659 39.8518 106.881 39.8518C103.03 39.8518 100.363 38.8148 98.2889 37.4815C96.5111 38.963 94.2889 39.8518 91.7704 39.8518C88.6593 39.8518 86.7333 38.5185 85.5482 37.4815C82.8815 38.963 79.6222 39.8518 76.363 39.8518C73.1037 39.8518 70.1407 38.963 67.9185 37.4815C67.4741 37.7778 67.0296 38.0741 66.5852 38.2222C64.363 39.2593 61.4 39.8518 58.5852 39.8518C53.9926 39.8518 51.0296 38.3704 49.1037 36.7407C48.8074 37.037 48.363 37.3333 47.9185 37.6296C43.9185 39.7037 39.6222 39.8518 37.8444 39.8518C31.3259 39.8518 28.0667 37.037 26.2889 34.6667C26.1407 34.5185 25.9926 34.3704 25.9926 34.0741C23.0296 37.6296 19.1778 39.8518 13.5481 39.8518C8.51111 39.8518 4.51111 37.9259 2.14074 34.6667C-0.377778 30.963 -0.674074 25.9259 1.25185 20.5926C3.91852 13.6296 10.2889 9.18519 17.9926 9.18519C17.9926 9.18519 18.1407 9.18519 18.2889 9.18519C18.2889 9.03704 18.2889 8.74074 18.2889 8.59259C18.1407 6.22222 19.7704 4 22.1407 3.11111L29.1037 0.444444C29.8444 0.148148 30.5852 0 31.3259 0C33.5481 0 35.6222 1.18518 36.6593 3.25926L39.6222 9.33333C40.5111 9.18518 41.4 9.18519 42.2889 9.18519C46.437 9.18519 49.9926 10.6667 52.2148 13.3333C55.6222 10.6667 59.9185 9.18519 64.6593 9.18519C67.1778 9.18519 69.4 9.62963 71.3259 10.5185C71.6222 10.6667 72.0667 10.963 72.363 11.2593C75.0296 9.92593 77.9926 9.18519 81.1037 9.18519C85.9926 9.18519 90.1407 11.1111 92.5111 14.5185C93.6963 16.2963 94.437 18.2222 94.7333 20.4444C97.6963 13.6296 104.659 9.18519 112.659 9.18519C114.437 9.18519 116.363 9.48148 117.844 9.92593C118.141 9.77778 118.437 9.77778 118.881 9.77778C120.067 9.48148 121.252 9.48148 122.437 9.48148C123.622 9.48148 124.956 9.48148 126.141 9.62963C127.178 9.77778 128.067 10.0741 128.807 10.6667C129.548 10.0741 130.437 9.62963 131.474 9.62963C132.659 9.48148 133.993 9.48148 135.326 9.48148C136.659 9.48148 137.844 9.48148 139.03 9.77778C140.956 10.0741 142.437 11.2593 143.178 13.037C143.919 14.6667 143.622 16.5926 142.437 18.0741Z"
+                  fill="#02F67C"
+                />
+                <path
+                  d="M130.289 24.5925C132.067 28.2962 134.141 31.5555 136.067 34.3703V34.5184C133.696 34.6666 131.326 34.6666 129.104 34.5184C128.067 33.0369 127.03 30.8147 126.141 28.5925L121.548 34.5184C119.326 34.6666 116.659 34.6666 114.585 34.5184L123.178 24.148C121.696 21.4814 120.215 18.6666 119.326 14.6666C121.4 14.5184 123.474 14.5184 125.548 14.6666C126.141 16.5925 126.733 18.6666 127.474 20.5925L132.067 14.6666C134.141 14.3703 136.511 14.3703 138.437 14.6666L130.289 24.5925ZM33.9925 12.148C34.5851 12.2962 35.0296 11.9999 34.7333 11.4073L31.9185 5.62953C31.7703 5.18508 31.1777 5.18508 30.8814 5.33323L23.7703 7.9999C23.1777 8.14805 23.1777 8.74064 23.7703 8.88879L25.9925 9.48138C24.2148 13.3332 22.1407 19.2592 20.3629 22.9629C18.437 27.111 17.3999 29.9258 14.1407 29.9258C10.8814 29.9258 10.2888 27.4073 11.7703 23.7036C13.3999 19.4073 16.0666 18.2221 19.1777 19.111C20.0666 17.9258 20.6592 16.148 20.9555 14.5184C20.0666 14.2221 19.0296 14.2221 18.1407 14.2221C13.1037 14.2221 8.21476 16.7406 6.28884 22.2221C3.47402 29.1851 5.84439 34.6666 13.5481 34.6666C19.1777 34.6666 22.2888 32.148 25.9925 24.2962C28.0666 19.9999 29.6962 15.7036 31.7703 11.5555L33.9925 12.148ZM48.8074 21.7777C47.474 25.3332 43.1777 26.8147 35.0296 26.6666C35.0296 29.0369 36.6592 30.074 39.6222 30.074C41.6962 30.074 43.9185 29.6295 45.3999 28.7406C45.8444 30.2221 45.8444 31.5555 45.5481 32.8888C43.0296 34.2221 40.0666 34.5184 37.8444 34.5184C29.4 34.5184 28.2148 28.148 29.9925 23.2592C31.6222 18.5184 36.0666 14.2221 42.1407 14.2221C47.9185 14.3703 50.2888 18.074 48.8074 21.7777ZM41.2518 18.5184C38.8814 18.5184 37.1037 19.9999 36.0666 22.5184C41.1037 22.5184 42.8814 21.7777 43.3259 20.5925C43.6222 19.7036 43.3259 18.5184 41.2518 18.5184ZM64.3629 19.111C65.3999 19.111 66.437 19.2592 67.0296 19.7036C68.0666 18.2221 68.8074 16.7406 68.8074 15.2592C67.9185 14.8147 66.2888 14.5184 64.3629 14.5184C57.8444 14.5184 52.6592 18.3703 50.7333 23.7036C48.9555 28.7406 50.2888 34.9629 58.5851 34.9629C60.8074 34.9629 63.0296 34.5184 64.5111 33.7777C64.9555 32.2962 65.1036 30.8147 64.6592 29.3332C63.6222 29.7777 62.1407 30.2221 60.5111 30.2221C56.3629 30.2221 55.9185 27.111 56.8074 24.4443C57.8444 21.3332 60.3629 19.111 64.3629 19.111ZM93.2518 27.8518C90.7333 27.8518 89.3999 29.4814 88.8074 30.9629C88.2148 32.7406 88.9555 34.8147 91.7703 34.8147C94.1407 34.8147 95.6222 33.3332 96.2148 31.8518C96.8074 29.9258 96.2148 27.8518 93.2518 27.8518ZM88.9555 26.074C86.8814 31.5555 81.9925 34.6666 76.3629 34.6666C68.8074 34.6666 66.5851 28.7406 68.5111 23.111C70.2888 18.074 74.8814 14.3703 80.9555 14.3703C88.6592 14.3703 91.0296 20.148 88.9555 26.074ZM80.2148 18.9629C77.3999 18.9629 75.474 21.4814 74.7333 23.9999C73.6962 27.111 74.2888 30.2221 77.3999 30.2221C80.0666 30.2221 81.9925 27.8518 82.8814 25.3332C83.7703 22.2221 83.474 18.9629 80.2148 18.9629ZM108.807 29.9258C104.659 29.9258 104.215 26.8147 105.104 24.148C106.141 21.3332 108.659 19.111 112.659 19.111C113.696 19.111 114.733 19.2592 115.326 19.7036C116.363 18.2221 117.104 16.7406 117.104 15.2592C116.215 14.8147 114.585 14.5184 112.659 14.5184C106.141 14.5184 100.955 18.3703 99.0296 23.7036C97.2518 28.7406 98.5851 34.9629 106.881 34.9629C109.104 34.9629 111.326 34.5184 112.807 33.7777C113.252 32.2962 113.4 30.8147 112.956 29.3332C111.918 29.4814 110.437 29.9258 108.807 29.9258Z"
+                  fill="#113032"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
         <div class="hidden relative lg:flex lg:flex-row items-center h-full px-3 py-1.5 rounded-xl bg-[#0035184d] border border-[#FFFFFF33] gap-14 justify-between before:absolute lg:before:backdrop-blur-2xl lg:before:w-full  before:h-full before:top-0 before:left-0 before:rounded-xl">
           <ul class="flex items-center gap-10">
             {menuLinks.map((link, index) => {
@@ -290,7 +303,9 @@ export default function Header({ menuLinks, ...props }: Props) {
               />
             </svg>
             <div
-              class={"hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"}
+              class={
+                "hidden peer-checked/header-icon:flex peer-checked/header-icon:bg-red flex-col w-full h-screen overflow-auto gap-[40px] fixed bg-[#03080680] backdrop-blur-3xl left-0 top-0 pb-[80px] z-50 px-8 lg:hidden pt-24"
+              }
             >
               <ul class="flex flex-col">
                 {menuLinks &&
@@ -346,8 +361,7 @@ export default function Header({ menuLinks, ...props }: Props) {
           </label>
         </div>
         <ul class="hidden lg:flex lg:flex-row gap-4 items-center">
-          {
-            /* <li>
+          {/* <li>
             <a
               href={props.login.url}
               class="flex gap-2 items-center text-[#02F67C] bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
@@ -372,8 +386,7 @@ export default function Header({ menuLinks, ...props }: Props) {
               </svg>
               <span class="text-[12px] ml-[-4px]">100</span>
             </a>
-          </li> */
-          }
+          </li> */}
           <li>
             <a
               href={props.sign.url}

@@ -1,3 +1,5 @@
+import StepImage from "./stepsImages/StepImage.tsx";
+
 const Step = (
   props: { src: string; alt: string; text: string; title: string },
 ) => {

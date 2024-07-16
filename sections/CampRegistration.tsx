@@ -1,5 +1,48 @@
 import RegistrationStepsHeader from "site/components/camp/registrationForm/registrationSteps/RegistrationStepsHeader.tsx";
 
+const registrationSteps = [
+  {
+    text: "Preencha o form de inscrição.",
+    id: 1,
+    class: "text-black mb-9 text-xl font-bold",
+  },
+  { text: "Siga as instruções por e-mail", id: 2 },
+  { text: "Envie um vídeo de apresentação", id: 3 },
+  { text: "Entre no Discord e na plataforma Deco", id: 4 },
+  { text: "Comece a aprender", id: 5 },
+];
+
+const registrationInput = [
+  {
+    label: "Nome",
+    placeholder: "Nome",
+    type: "text",
+    name: "nome",
+    id: "nome",
+  },
+  {
+    label: "E-mal",
+    placeholder: "E-mail",
+    type: "email",
+    name: "email",
+    id: "email",
+  },
+  {
+    label: "Linkedin",
+    placeholder: "Ex: https://www.linkedin.com/in/fulano",
+    type: "text",
+    name: "linkedin",
+    id: "linkedin",
+  },
+  {
+    label: "Onde você estuda?",
+    placeholder: "Universidade",
+    type: "text",
+    name: "universidade",
+    id: "univerdidade",
+  },
+];
+
 const CampRegistration = () => {
   return (
     <div class="lg:flex justify-between max-w-[1100px] mx-auto mb-40">

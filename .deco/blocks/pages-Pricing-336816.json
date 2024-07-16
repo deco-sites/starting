@@ -20,30 +20,20 @@
         {
           "features": [
             {
-              "title": "Git-based CMS"
+              "title": "Up to 5k pageviews"
             },
             {
-              "title": "Free public GitHub Repos"
+              "title": "Up to 5 Code Editors"
             },
             {
-              "title": "Hosting (50K Pageviews / Mo)",
-              "subtitleInfo": "<p><span>+ $8 per 10K Pageviews</span></p>",
-              "noteIcon": "star-sign"
-            },
-            {
-              "title": "Unlimited Public Projects"
-            },
-            {
-              "title": "Up to 5 Members"
+              "title": "Unlimited Public Projects",
+              "moreInfo": "Unlimited public projects are available as long as they are hosted in public GitHub repositories."
             },
             {
               "title": "Custom Domains"
             },
             {
               "title": "Community-Based Support"
-            },
-            {
-              "title": "Content Segmentation"
             },
             {
               "title": "Real-Time Analytics"
@@ -59,7 +49,8 @@
               "title": "App Store"
             },
             {
-              "title": "deco.pilot"
+              "title": "deco.pilot",
+              "subtitleInfo": "<p>50 AI Copilot Generations Included</p>"
             }
           ],
           "button": {},
@@ -75,21 +66,18 @@
         {
           "features": [
             {
-              "title": "Web IDE with Live Previews"
+              "title": "Deco Hosting",
+              "subtitleInfo": "50K Pageviews + $8 per 10K Pageviews"
             },
             {
-              "title": "Private GitHub Repos"
+              "title": "1 Hosted Project"
             },
             {
-              "title": "Hosting (50K Pageviews / Mo)",
-              "subtitleInfo": "<p><span>+ $8 per 10K Pageviews</span></p>",
-              "noteIcon": "star-sign"
+              "title": "Live Site Preview",
+              "subtitleInfo": "3 environments"
             },
             {
-              "title": "Unlimited Private Project"
-            },
-            {
-              "title": "Up to 20 Members"
+              "title": "Unlimited Code Editors"
             },
             {
               "title": "AB Testing & Results"
@@ -132,22 +120,20 @@
         {
           "features": [
             {
-              "title": "Hosting (50K Pageviews / Mo)",
-              "subtitleInfo": "<p><span>+ $8 per 10K Pageviews</span></p>",
-              "noteIcon": "star-sign"
+              "title": "Deco Hosted",
+              "subtitleInfo": "500K Pageviews + $8 per 10K Pageviews"
             },
             {
-              "title": "GetSiteDone Pro for Free",
-              "moreInfo": "<p>PRO members have priority access to the clients of <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://getsitedone.com\">getsitedone.com</a>.</p>"
+              "title": "15 Hosted Project"
             },
             {
-              "title": "Customizable Roles & Permissions"
+              "title": "Unlimited Live Site Previews"
             },
             {
-              "title": "SSO"
+              "title": "GetSiteDone Pro for Free"
             },
             {
-              "title": "99.99% Uptime SLA"
+              "title": "Roles & Permissions"
             }
           ],
           "calculator": {

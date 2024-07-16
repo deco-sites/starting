@@ -67,10 +67,18 @@ We highly recommend using
 [Visual Studio Code](https://code.visualstudio.com/download) as the IDE and
 [Git](https://github.com/git-guides/install-git) as the version control tool.
 
+<!-- help: o que eh isso? kkkkkkk -->
+<!-- ## Test Deco Locally (Optional)!
+
+Deco offers a mechanism to test and explore our system without the need to
+deploy code or make a deployment on our infrastructure. To do this, visit
+[the Deco Play](https://play.deco.cx/)
+
+![deco play](https://github.com/deco-cx/apps/assets/882438/e52c7727-b1c2-44cc-b709-10adba203341) -->
+
 ### 1. Create a Deco Site
 
-Follow the steps in the
-[Creating a Site tutorial](/docs/en/getting-started/creating-a-site).
+Follow the steps in the [Creating a Site tutorial](/docs/en/getting-started/creating-a-site).
 
 ### 2. Clone Your Site Repository
 
@@ -80,6 +88,8 @@ invitation is sent to the email address associated with your GitHub profile.
 If you haven't used a GitHub account to log into the admin panel or haven't
 received an invitation, you can add a GitHub account as a collaborator to the
 site in the Settings tab.
+
+<!-- ![Adding collaborator to the repository](https://github.com/deco-cx/apps/assets/882438/0cdcc7a7-90fd-4cbe-9eea-0ca68ee533d9) -->
 
 ![Adding collaborator to the repository](/docs/setup/repository-access.png)
 
@@ -98,25 +108,22 @@ details about different ways to clone.
 
 ### 3. Run Local Server
 
-To run your site locally, edit, and see the changes in the Admin, you need to
-have a local environment (an environment with `localhost` as the host). To do
-this, you can use the default `localhost` environment or create a new one.
-
 #### 3.1 Create new environment
-
-Open the Releases tab in the Admin and click on the New environment button.
+To run your site locally, create a new environment in the Releases tab.
+This will allow changes made in the deco Admin panel to be reflected in your
+local repository and vice versa.
 
 ![Create new environment](/docs/setup/create-environment.png)
 
 #### 3.2 Set a name and a host to your environment
 
-Choose a name for your environment and set your host as localhost.
+Choose a name for your environment and set your host as localhost. 
 
 ![Choosing environment and starting server](/docs/setup/choose-host.png)
 
 #### 3.3 Run your site locally
 
-Copy the command shown after you create your environment and paste it into your
+Copy the command shown after you create your environment and paste it into your 
 terminal in the site folder.
 
 ![Start server command](/docs/setup/start-server-command.png)
@@ -138,9 +145,8 @@ reflected at the above address.
 
 #### 3.4 Publishing Changes
 
-Considering that you chose the Deco Hosting to deploy your site, the development
-deployment process is very simple: do a git push of the changes to the main
-branch.
+The development deployment process is very simple: do a git push of the changes
+to the main branch.
 
 Alternativaly, publish your local environment in the Admin by clicking on the
 Publish now button in your environment page.

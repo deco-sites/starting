@@ -30,6 +30,8 @@ const IMAGES = [
   },
 ];
 
+const TITLE = "Trusted by the most awesome super duper incredible brand:";
+
 const LogoSlider = ({ logos }: { logos: Image[] }) => {
   const renderLogoSlide = () => (
     <div className="flex animate-slide z-10">

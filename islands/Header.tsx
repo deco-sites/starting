@@ -41,7 +41,7 @@ export interface Props {
 }
 
 function MobileMenuLink(
-  { href, label, targetBlank, nested }: MenuLink,
+  { href, label, targetBlank, nested, ...props }: MenuLink,
 ) {
   const hasNested = nested && nested.length > 0;
   if (hasNested) {
@@ -121,6 +121,8 @@ export default function Header(props: Props) {
   const showSwitcher = useSignal(false);
   const openSwitcher = useSignal(false);
   const openLanguage = useSignal(false);
+
+  const currentLanguageLink = props.eng.selected ? "/en" : "/pt";
 
   if (IS_BROWSER) {
     urlPortuguese.value = window.location.pathname.replace("en", "pt");

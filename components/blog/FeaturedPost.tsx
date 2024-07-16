@@ -6,7 +6,9 @@ export default function FeaturedPost({
   path,
   body,
   date,
+  readTime,
   author,
+  authorRole,
   authorAvatar,
   locale = "en",
 }: Post & { locale?: SupportedLocales }) {

@@ -20,9 +20,9 @@ export interface Props {
   trackId?: "1" | "2" | "3" | "4" | "5";
 }
 
-export const loader = (
+export const loader = async (
   props: Props,
-  _req: Request,
+  req: Request,
   ctx: AppContext,
 ) => {
   const device = ctx.device;

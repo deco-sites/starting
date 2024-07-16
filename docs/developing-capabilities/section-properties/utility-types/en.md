@@ -51,8 +51,8 @@ export default function LatestPosts({ title }: Props) {
 
 ## Types accepted
 
-The deco.cx editor accepts a subset of types Typescript for section
-configuration. This is the list of supported types in time:
+The deco.cx editor accepts a subset of types Typescript for
+section configuration. This is the list of supported types in time:
 
 ### Native Types
 
@@ -166,6 +166,5 @@ export interface props {
 }
 ```
 
-Other types of valid formats are: `uri`, `color`. You can read more about it in
-the
-[annotations doc](/docs/en/developing-capabilities/section-properties/annotations).
+Other types of valid formats are: `uri`, `color`. You can read more
+about it in the [annotations doc](/docs/en/developing-capabilities/section-properties/annotations).

@@ -1,3 +1,5 @@
+import Button from "site/components/ui/Button.tsx";
+
 export interface Props {
   price: string;
   /**
@@ -11,7 +13,7 @@ export interface Props {
   };
 }
 
-export default function PricingValue({ price, text, subtext }: Props) {
+export default function PricingValue({ price, text, subtext, button }: Props) {
   return (
     <section class="flex gap-12 bg-black py-10 justify-center mx-6 lg:mx-0">
       <div class="flex flex-col max-w-[1024px] gap-2 lg:gap-6 items-center z-10">

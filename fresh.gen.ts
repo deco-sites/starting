@@ -24,12 +24,14 @@ import * as $Case from "./islands/Case.tsx";
 import * as $ChangeDevice from "./islands/ChangeDevice.tsx";
 import * as $ChangeTheme from "./islands/ChangeTheme.tsx";
 import * as $ChartIsland from "./islands/ChartIsland.tsx";
+import * as $Cms from "./islands/Cms.tsx";
 import * as $ContactUs from "./islands/ContactUs.tsx";
 import * as $FaviconImage from "./islands/FaviconImage.tsx";
 import * as $ForwardBackButtons_ForwardBackButtons from "./islands/ForwardBackButtons/ForwardBackButtons.tsx";
 import * as $Graph from "./islands/Graph.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $HelpFaq from "./islands/HelpFaq.tsx";
+import * as $Home_BuildShowcase from "./islands/Home/BuildShowcase.tsx";
 import * as $Home_Dropdown from "./islands/Home/Dropdown.tsx";
 import * as $Home_Header from "./islands/Home/Header.tsx";
 import * as $ImpactCalculator from "./islands/ImpactCalculator.tsx";
@@ -42,6 +44,7 @@ import * as $NRF_Features from "./islands/NRF/Features.tsx";
 import * as $NRF_FeaturesWithImage from "./islands/NRF/FeaturesWithImage.tsx";
 import * as $NRF_Hero from "./islands/NRF/Hero.tsx";
 import * as $NRF_HeroEditorTabbed from "./islands/NRF/HeroEditorTabbed.tsx";
+import * as $NRF_PageWrapper from "./islands/NRF/PageWrapper.tsx";
 import * as $NRF_ShowcaseEditorAccordion from "./islands/NRF/ShowcaseEditorAccordion.tsx";
 import * as $NRF_ShowcaseEditorTabbed from "./islands/NRF/ShowcaseEditorTabbed.tsx";
 import * as $NRF_TextLines from "./islands/NRF/TextLines.tsx";
@@ -52,6 +55,7 @@ import * as $Projects from "./islands/Projects.tsx";
 import * as $RankingAnalyze from "./islands/RankingAnalyze.tsx";
 import * as $RankingHeader from "./islands/RankingHeader.tsx";
 import * as $Sidebar from "./islands/Sidebar.tsx";
+import * as $SliderCampJS from "./islands/SliderCampJS.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $WasThisPageHelpful from "./islands/WasThisPageHelpful.tsx";
 import * as $pricing_PricingCard from "./islands/pricing/PricingCard.tsx";
@@ -85,6 +89,7 @@ const manifest = {
     "./islands/ChangeDevice.tsx": $ChangeDevice,
     "./islands/ChangeTheme.tsx": $ChangeTheme,
     "./islands/ChartIsland.tsx": $ChartIsland,
+    "./islands/Cms.tsx": $Cms,
     "./islands/ContactUs.tsx": $ContactUs,
     "./islands/FaviconImage.tsx": $FaviconImage,
     "./islands/ForwardBackButtons/ForwardBackButtons.tsx":
@@ -92,6 +97,7 @@ const manifest = {
     "./islands/Graph.tsx": $Graph,
     "./islands/Header.tsx": $Header,
     "./islands/HelpFaq.tsx": $HelpFaq,
+    "./islands/Home/BuildShowcase.tsx": $Home_BuildShowcase,
     "./islands/Home/Dropdown.tsx": $Home_Dropdown,
     "./islands/Home/Header.tsx": $Home_Header,
     "./islands/ImpactCalculator.tsx": $ImpactCalculator,
@@ -104,6 +110,7 @@ const manifest = {
     "./islands/NRF/FeaturesWithImage.tsx": $NRF_FeaturesWithImage,
     "./islands/NRF/Hero.tsx": $NRF_Hero,
     "./islands/NRF/HeroEditorTabbed.tsx": $NRF_HeroEditorTabbed,
+    "./islands/NRF/PageWrapper.tsx": $NRF_PageWrapper,
     "./islands/NRF/ShowcaseEditorAccordion.tsx": $NRF_ShowcaseEditorAccordion,
     "./islands/NRF/ShowcaseEditorTabbed.tsx": $NRF_ShowcaseEditorTabbed,
     "./islands/NRF/TextLines.tsx": $NRF_TextLines,
@@ -114,6 +121,7 @@ const manifest = {
     "./islands/RankingAnalyze.tsx": $RankingAnalyze,
     "./islands/RankingHeader.tsx": $RankingHeader,
     "./islands/Sidebar.tsx": $Sidebar,
+    "./islands/SliderCampJS.tsx": $SliderCampJS,
     "./islands/SliderJS.tsx": $SliderJS,
     "./islands/WasThisPageHelpful.tsx": $WasThisPageHelpful,
     "./islands/pricing/PricingCard.tsx": $pricing_PricingCard,

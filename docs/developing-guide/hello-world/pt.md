@@ -11,8 +11,8 @@ Abra a pasta do seu site em uma IDE e execute as seguintes ações:
 
 ## 1. Crie um arquivo `.tsx` na pasta `sections/`
 
-Crie um arquivo `.tsx` na pasta `sections/` em seu Site com o nome desejado para
-Section (_e.g_: `Post.tsx`).
+Crie um arquivo `.tsx` na pasta `sections/` em seu Site com o nome desejado
+para Section (_e.g_: `Post.tsx`).
 
 A Section é um componente [Preact](https://preactjs.com/) que é configurável no
 Admin. Para que a Section seja visível no Admin, é preciso criar esse componente
@@ -23,39 +23,37 @@ na pasta `sections/` ou em algum de seus sub-diretórios.
 Exporte um componente [Preact](https://preactjs.com/) **usando
 `export default`** como o exemplo abaixo:
 
-`sections/Post.tsx`
+  `sections/Post.tsx`
+  ```tsx
+  export interface Props {
+    title: string;
+  }
 
-```tsx
-export interface Props {
-  title: string;
-}
-
-export default function Post({ title }: Props) {
-  return (
-    <div>
-      <h1 class="font-bold">{title}</h1>
-      <p>This is an example section</p>
-    </div>
-  );
-}
-```
+  export default function Post({ title }: Props) {
+    return (
+      <div>
+        <h1 class="font-bold">{title}</h1>
+        <p>This is an example section</p>
+      </div>
+    );
+  }
+  ```
 
 **Pronto!** A Section foi criada localmente no seu projeto.
 
 ## 3. Visualize a Section no Admin
 
-Execute o projeto localmente como foi feito anteriormente no
-[setup](/docs/pt/developing-guide/setup). Ao selecionar seu ambiente local no
-Admin, você poderá visualizar a nova Section na biblioteca de Sections
-(**Sections**) e adicioná-la a uma página.
+Execute o projeto localmente como foi feito anteriormente no [setup](/docs/pt/developing-guide/setup).
+Ao selecionar seu ambiente local no Admin, você poderá visualizar a nova Section
+na biblioteca de Sections (**Sections**) e adicioná-la a uma página.
 
 ![Nova section na section library](/docs/hello-world/new-section.png)
 
 ## 4. Adicionando propriedades à Section
 
-Vamos adicionar três novas propriedades ao nosso componente `Post`, uma para
-imagem (`photo`), outro para o corpo da postagem (`post`) e um para a hora da
-postagem.
+Vamos adicionar três novas propriedades ao nosso componente
+`Post`, uma para imagem (`photo`), outro para o corpo da postagem
+(`post`) e um para a hora da postagem.
 
 ```tsx
 import type { ImageWidget } from "apps/admin/widgets.ts";
@@ -117,16 +115,15 @@ interpretável no formulário de propriedades no admin da deco. Isto inclue:
 Além dos tipos acima, é possível anotar algumas propriedades para que o
 formulário do admin altere o mecanismo de inserção ou para determinar alguns
 aspectos do comportamento da propriedade (através da anotação `@format`, por
-exemplo). Leia mais sobre
-[essas anotações aqui](/docs/pt/developing-capabilities/section-properties/widgets)
+exemplo). Leia mais sobre [essas anotações aqui](/docs/pt/developing-capabilities/section-properties/widgets)
 
 ## 5. Visualizando as novas propriedades no Admin
 
-Com o projeto executando localmente, abra novamente a Section no Admin. Você
-verá as novas propriedades adicionadas ao componente `Post`. É possível ver que
-o admin prepara componentes próprios de formulário para a inserção de imagens,
-data, bem como sinaliza o que é cada campo a partir do `title` indicado em
-código.
+Com o projeto executando localmente, abra novamente a Section no Admin.
+Você verá as novas propriedades adicionadas ao componente `Post`.
+É possível ver que o admin  prepara componentes próprios de formulário 
+para a inserção de imagens, data, bem como sinaliza o que é cada campo 
+a partir do `title` indicado em código.
 
 ![Formulário da section no admin](/docs/hello-world/section-properties.png)
 
@@ -193,6 +190,7 @@ Esta página em específico agora tem um tema diferente do restante do site.
 Adapte a classe de postagens para fazer uso de alguns tokens. Por exemplo, o
 título principal da postagem agora segue a cor primária do tema.
 
+
 ```tsx
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
@@ -239,7 +237,8 @@ export default function Post({ title, photo, datetime, post }: Props) {
 }
 ```
 
-Agora, a Section `Post` segue o tema do site (ou da página) e utiliza as cores
-definidas no tema.
+Agora, a Section `Post` segue o tema do site (ou da página) e utiliza
+as cores definidas no tema.
 
 ![Section com tema do site](/docs/hello-world/new-section-with-theme.png)
+

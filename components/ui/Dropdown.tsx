@@ -5,6 +5,10 @@ export interface DropdownItemProps {
 }
 
 function DropdownItem({ href, label, selected }: DropdownItemProps) {
+  const variants = {
+    rounded: "",
+  };
+
   return (
     <div class="flex flex-row items-center justify-between">
       <a

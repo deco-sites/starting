@@ -10,21 +10,20 @@ página toda **sexta-feira** para **50% dos usuários**. Ao utilizar variantes,
 você pode modificar dinamicamente o conteúdo direcionado a segmentos específicos
 de sua audiência.
 
-As **variantes** são impulsionadas por **Matchers** (ou **Segments**), que são
-_blocos_ usados para avaliar _condições_ específicas com base em
-_características do usuário_, _data e hora_, _seleção aleatória_ (testes A/B),
-_histórico de navegação do usuário_, _dispositivo do usuário_, ou _qualquer
-informação externa extraída da solicitação_. **Matchers** são configurados para
-determinar se um usuário pertence a um determinado **Segmento** ou não.
-**Segmentos** se referem a uma parte dos usuários do seu site que satisfazem as
-condições definidas pelos matchers. Um usuário pode pertencer a vários
-**segmentos** simultaneamente. Por exemplo, um usuário pode fazer parte do
-segmento `São Paulo`, que segmenta usuários localizados em `São Paulo`, e também
-pode fazer parte de um experimento que inclui 50% dos usuários. **Segmentos**
-podem ser combinados para criar critérios de segmentação mais específicos.
+As **variantes** são impulsionadas por **Matchers** (ou **Segments**), que são _blocos_ usados
+para avaliar _condições_ específicas com base em _características do usuário_,
+_data e hora_, _seleção aleatória_ (testes A/B), _histórico de navegação do
+usuário_, _dispositivo do usuário_, ou _qualquer informação externa extraída da
+solicitação_. **Matchers** são configurados para determinar se um usuário
+pertence a um determinado **Segmento** ou não. **Segmentos** se referem a uma
+parte dos usuários do seu site que satisfazem as condições definidas pelos
+matchers. Um usuário pode pertencer a vários **segmentos** simultaneamente. Por
+exemplo, um usuário pode fazer parte do segmento `São Paulo`, que segmenta
+usuários localizados em `São Paulo`, e também pode fazer parte de um experimento
+que inclui 50% dos usuários. **Segmentos** podem ser combinados para criar
+critérios de segmentação mais específicos.
 
-A tela de segmentos permite listar os **Matchers**/**Segmentos** salvos, uma
-listagem de onde são utilizados, e bem como criar novos Segmentos.
+A tela de segmentos permite listar os **Matchers**/**Segmentos** salvos, uma listagem de onde são utilizados, e bem como criar novos Segmentos.
 
 <img width="640" alt="Biblioteca de Segmentos" src="/docs/cms-capabilities/segments/segments1.png">
 
@@ -61,21 +60,15 @@ resultado é exatamente o mesmo que criar o teste manualmente.
 
 ## Criando segmentos
 
-Para criar um segmento a ser usado em diferentes sites, basta entrar na operação
-de "Create New Segment".
+Para criar um segmento a ser usado em diferentes sites, basta entrar na operação de "Create New Segment".
 
 <img width="320" alt="Criando um novo Segmento" src="/docs/cms-capabilities/segments/segments2.png">
 
 É possível:
 
-- **Create template**: Cria um segmento que será disponibilizado na biblioteca
-  de segmentos. Isto significa criar uma base de código que definirá um conjunto
-  de propriedades e um programa para retornar dados.
-- **Using a template**: Cria um segmento salvo a partir de uma base existente. O
-  nome será a identificação deste elemento.
+- **Create template**: Cria um segmento que será disponibilizado na biblioteca de segmentos. Isto significa criar uma base de código que definirá um conjunto de propriedades e um programa para retornar dados.
+- **Using a template**: Cria um segmento salvo a partir de uma base existente. O nome será a identificação deste elemento.
 
-A implementação padrão oferece um conjunto rico de seleções possíveis para uso,
-mas é possível criar qualquer segmento que se baseie na requisição, contexto do
-site ou propriedades definidas pelo usuário.
+A implementação padrão oferece um conjunto rico de seleções possíveis para uso, mas é possível criar qualquer segmento que se baseie na requisição, contexto do site ou propriedades definidas pelo usuário.
 
 <img width="480" alt="Selecionando uma base" src="/docs/cms-capabilities/segments/segments3.png">

@@ -1,4 +1,5 @@
 import { Section } from "deco/blocks/section.ts";
+import { notUndefined } from "deco/engine/core/utils.ts";
 
 export interface Props {
   sections: Section[];

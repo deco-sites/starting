@@ -13,8 +13,9 @@ export function verifyCaptcha(token: string): Promise<boolean> {
       method: "POST",
     },
   )
-    .then((response) => response.json() as Promise<{ success: boolean }>)
+    .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       return data.success;
     });
 }

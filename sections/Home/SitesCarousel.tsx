@@ -67,6 +67,8 @@ const THIRD_IMAGES = [
   },
 ];
 
+const TITLE = "Trusted by the most awesome super duper incredible brand:";
+
 const LogoSlider = ({
   logos,
   direction,

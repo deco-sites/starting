@@ -56,10 +56,9 @@ export default function HeroBanner({
       {/* <div class="deco-background"></div> */}
       {showRadial && (
         <div
-          class="absolute z-10 h-[1200px] md:h-[1400px] w-[100vw] translate-y-[35%] bottom-[-200px] md:bottom-[-150px] lg:bottom-[-100px]"
-          style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"
-        >
-        </div>
+          class="h-[100vh] z-10 w-[100vw] md:w-[100vw] absolute lg:w-[100vw] lg:top-[50px] scale-150 lg:scale-100"
+          style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 45%);"
+        ></div>
       )}
       <div
         class={`lg:mx-auto z-20 lg:max-w-[1440px] ${
@@ -128,8 +127,7 @@ export default function HeroBanner({
               dangerouslySetInnerHTML={{
                 __html: pixelTitle,
               }}
-            >
-            </h1>
+            ></h1>
           )}
           {title && (
             <h1
@@ -137,8 +135,7 @@ export default function HeroBanner({
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
-            >
-            </h1>
+            ></h1>
           )}
         </div>
         {subTitle && (
@@ -147,15 +144,14 @@ export default function HeroBanner({
             dangerouslySetInnerHTML={{
               __html: subTitle,
             }}
-          >
-          </h2>
+          ></h2>
         )}
         <div class="flex flex-row gap-4 justify-center items-center w-full md:w-auto">
           {ctas?.map((cta) => (
             <a
               id={cta.trackID}
               href={cta.href}
-              class={`hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] md:text-lg px-8 py-2 md:px-6 lg:py-4 font-extrabold flex text-center justify-center p-3 rounded-[10px] font-bold flex items-center justify-center`}
+              class={`w-full hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] md:text-lg px-8 py-2 md:px-6 lg:py-4 font-extrabold flex text-center justify-center p-3 rounded-[10px] font-bold flex items-center justify-center`}
               target={cta.href.includes("http") ? "_blank" : "_self"}
             >
               {cta.text}

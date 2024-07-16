@@ -82,19 +82,19 @@ export default function DogFacts({ title, dogFacts }: Props) {
 }
 ```
 
-> At this point, you can check in the admin (in your local environment) that
-> this component can already be used with static data, which doesn't make much
-> sense for our use case.
+> At this point, you can check in the admin (in your local environment) that this
+> component can already be used with static data, which doesn't make much sense
+> for our use case.
 
 ## 2. Creating the Loader and testing the Section
 
-Now let's create a Loader that will fetch the data from the Dog Fact API and
-pass it to the Section.
+Now let's create a Loader that will fetch the
+data from the Dog Fact API and pass it to the Section.
 
 Loaders allow you to define how data is fetched and transformed before it is
 passed on to a Section. They are **regular Typescript functions** that can use
-_async_ functions like `fetch`. Loaders can be "plugged" into a Section via one
-of the Section's `props`, and that happens based on the **return type of the
+_async_ functions like `fetch`. Loaders can be "plugged" into a Section via one of
+the Section's `props`, and that happens based on the **return type of the
 Loader** (the return type of the Loader is the input type of the Section).
 
 1. Define what will be the input `Props` of your loader.
@@ -132,17 +132,13 @@ export default function DogFacts(
   );
 }
 ```
-
-> Note: The `SectionProps` type is a helper type that is used to infer the
-> return type of the loader.
+> Note: The `SectionProps` type is a helper type that is used to infer the return type of the loader.
 
 ## 3. Testing the Section
 
-1. Run the server locally with
-   `DECO_ENV_NAME={environment_name} deno task start`.
-2. Go to `https://deco.cx/admin` in your site and make sure that your
-   environment is selected in the Environment Selector in the upper right corner
-   of the Admin.
+1. Run the server locally with `DECO_ENV_NAME={environment_name} deno task start`.
+2. Go to `https://deco.cx/admin` in your site and make sure that your environment 
+  is selected in the Environment Selector in the upper right corner of the Admin.
 3. Go to `Sections` and search for DogFacts in the left sidebar.
 4. Configure the props of the selected Loader (numberOfFacts) with a desired
    number (e.g., 4).

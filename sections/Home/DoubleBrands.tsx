@@ -46,6 +46,8 @@ const SECOND_IMAGES = [
   },
 ];
 
+const TITLE = "Trusted by the most awesome super duper incredible brand:";
+
 const LogoSlider = (
   { logos, direction }: { logos: Image[]; direction: "left" | "right" },
 ) => {

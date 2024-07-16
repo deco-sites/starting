@@ -7,8 +7,8 @@
     },
     {
       "__resolveType": "site/sections/PageContest/Hero.tsx",
-      "title": "<p>CMS Glossary</p>",
-      "description": " ",
+      "title": "<p>deco's Glossary</p>",
+      "description": " Dive into our comprehensive content management and web development glossary. Discover key terms essential to understanding the world of deco, the universal Git-based CMS for high-performance websites, apps, and storefronts with Deno, HTMX, JSX, and Tailwind.",
       "placement": "right"
     },
     {

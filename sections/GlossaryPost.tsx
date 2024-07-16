@@ -162,7 +162,6 @@ export default function GlossaryPost({ slug, posts }: Props) {
         {image && (
           <Image
             className="w-full object-cover aspect-video max-h-[600px] rounded-2xl"
-            width={1200}
             src={image || ""}
           />
         )}

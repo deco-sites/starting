@@ -32,6 +32,9 @@ export interface Props {
   };
 }
 
+const DEFAULT_IMAGE =
+  "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9";
+
 function Container({ children }: { children: ComponentChildren }) {
   return (
     <div class="container lg:mx-auto lg:pb-14 lg:pt-0 mx-2 py-12 text-sm">
@@ -41,6 +44,7 @@ function Container({ children }: { children: ComponentChildren }) {
 }
 
 export default function GlossaryPostList({
+  cta = { text: "Show more" },
   posts,
   pagination: {
     page = 0,

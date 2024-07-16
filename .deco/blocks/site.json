@@ -24,11 +24,6 @@
     },
     {
       "__resolveType": "website/loaders/redirects.ts"
-    },
-    {
-      "__resolveType": "website/loaders/redirectsFromCsv.ts",
-      "redirects": [],
-      "from": "redirects.csv"
     }
   ],
   "caching": {

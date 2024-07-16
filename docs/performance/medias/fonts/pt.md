@@ -32,9 +32,9 @@ fonte preferencialmente no formato woff/woff2 e de pouco tamanho (menor do que
 Esta fonte pode ser servida estaticamente colocando o arquivo no diretório
 `static`.
 
-A partir disso, no space de `Themes`, em um tema específico, basta colocar o
-nome da fonte da família, e o styleguide associado. Para uma fonte no arquivo
-`static/minha_fonte.ttf`, coloque o seguinte estilo:
+A partir disso, no space de `Themes`, em um tema específico, basta colocar o nome da fonte da família,
+e o styleguide associado. Para uma fonte no arquivo `static/minha_fonte.ttf`,
+coloque o seguinte estilo:
 
 ```css
 <style>

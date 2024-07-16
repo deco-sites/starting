@@ -1,3 +1,4 @@
+import { FunctionalComponent } from "preact";
 import Icon from "site/components/ui/Icon.tsx";
 
 interface PathSegment {

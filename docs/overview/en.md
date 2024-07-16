@@ -3,109 +3,139 @@ description: |
    deco.cx is a website builder that allows you to create, personalize and deploy websites with ease. With a focus on personalization, you can create experiments, segment content by audience and more.
 ---
 
-## What is deco.cx
+[deco.cx](https://deco.cx) is a modern web development platform that offers a
+simple and efficient tech stack combined with powerful features to create
+blazingly fast websites.
 
-### The Old Web is broken, complicated and fragmented.
+What sets _deco.cx_ apart is its **personalization** features and how easy it is
+to **manage content without code changes**. deco.cx also makes it **easy for
+developers** to code UI components and behavior using a **simple web stack**
+with [Preact](https://preactjs.com/), [Tailwind](https://tailwindcss.com) and
+[Deno](https://deno.land/). We are the platform to create headless commerce
+experiences.
 
-For the last 10 years, our team built high-volume, mission-critical websites and
-applications. We tested out most new frameworks and frontend architectures from
-KnockoutJS to React to GraphQL. Reflecting on our challenges and results, we
-believe <u>the current state of web development is broken</u>:
+<!-- ![deco admin](https://github.com/deco-cx/apps/assets/882438/5a497330-93e5-497d-a572-fde44421d6ac) -->
 
-<div style="margin: 0 2rem">
+## How it works
 
-🧩 <u>The complexity to build and deploy a web application has grown</u>
-steadily, discouraging junior developers from building the web.
+When you create a site in _deco.cx_, it's automatically **deployed on the edge
+in 12 regions world-wide** on [Deno Deploy](https://deno.com). This means your
+pages are served close to users, ensuring lightning-fast performance.
+Additionally, we provide you with a Github repository where you can manage your
+code and collaborate with others on your team. With _deco.cx_, you can focus on
+building your site **without worrying** about deployment or repository
+management.
 
-😓 <u>Developers and content creators often struggle to collaborate</u> because
-the Headless CMS becomes a silo, requiring a lot of time to integrate and
-evolve;
+One of _deco_'s unique capabilities is the ability for developers to declare how
+UI components and functions can be configured, which then become **forms that
+can be easily edited** by business users. deco's personalization engine offers a
+range of features on top of this customization, unlocking new opportunities for
+businesses to **tailor their content to individual users.**
 
-🐢 <u>Client-side-first apps have terrible performance for high-volume</u>,
-content-driven websites like ecommerce storefronts, shipping ever-growing
-amounts of JavaScript code.
+_deco.cx_ sites and stores have stellar performance thanks to a combination of
+edge deployment, server-side rendering, and server-side navigation. As a result,
+our typical sites score above 90 on Google's Lighthouse scores, which translates
+to better SEO and higher conversion rates.
 
-</div>
+Whether you're a developer, marketer, or business owner, _deco.cx_ offers an
+innovative and accessible way to create and manage websites and online stores.
+Developers handle the code part, but they make it easy for business users to
+edit text and images without needing to write any code themselves.
 
-We wanted a simpler way for web developers to build and collaborate with their
-marketing peers, using modern web technologies, and without having to configure
-so much stuff. "No-code" is not enough, and often removes power from developers.
-We wanted to have one environment from code to content to data. We wanted to
-build the other side of code, a collaborative experience builder for developers
-and content creators to work together in.
+<!--
+## Code example
 
-<iframe width="640" height="396" src="https://www.youtube.com/embed/HAOy2wXASBA?si=UdeZM3XGhpPx9G3T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+This is what a _deco.cx_'s [Section](/docs/en/concepts/section) looks like:
 
-## Making webdev straightforward for teams of all sizes
+```tsx
+import ProductCard, {
+  Layout as cardLayout,
+} from "$store/components/product/ProductCard.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
+import Header from "$store/components/ui/SectionHeader.tsx";
+import Slider from "$store/components/ui/Slider.tsx";
+import SliderJS from "$store/islands/SliderJS.tsx";
+import { useId } from "$store/sdk/useId.ts";
+import { useOffer } from "$store/sdk/useOffer.ts";
+import { usePlatform } from "$store/sdk/usePlatform.tsx";
+import type { Product } from "apps/commerce/types.ts";
 
-That's why we created deco.cx: a complete webdev platform for developers and
-content teams to build collaborative experiences together. <u>Developers write
-components and functions using Deno, JSX, HTMX, TypeScript, and Tailwind</u>. We
-automatically generate a beautiful, visual admin UI from the TypeScript code!
+export interface Props {
+  products: Product[] | null;
+  title?: string;
+  description?: string;
+  layout?: {
+    headerAlignment?: "center" | "left";
+    headerfontSize?: "Normal" | "Large";
+  };
+  cardLayout?: cardLayout;
+}
 
-Forget the costly and complex setup of a Headless CMS, or the inflexible
-structure of a no-code prison. deco.cx offers a seamless solution, making webdev
-straightforward for teams of all sizes:
+function ProductShelf({
+  products,
+  title,
+  description,
+  layout,
+  cardLayout,
+}: Props) {
+  const id = useId();
+  const platform = usePlatform();
 
-<div style="margin: 0 2rem">
+  if (!products || products.length === 0) {
+    return null;
+  }
 
-🔧 Localhost or web-based code editor with real-time visual content previews
+  return (
+    <div class="w-full container  py-8 flex flex-col gap-12 lg:gap-16 lg:py-10">
+      <Header
+        title={title || ""}
+        description={description || ""}
+        fontSize={layout?.headerfontSize || "Large"}
+        alignment={layout?.headerAlignment || "center"}
+      />
 
-📝 Automatic conversion from TypeScript code to Content Schemas
+      <div
+        id={id}
+        class="container grid grid-cols-[48px_1fr_48px] px-0 sm:px-5"
+      >
+        <Slider class="carousel carousel-center sm:carousel-end gap-6 col-span-full row-start-2 row-end-5">
+          {products?.map((product, index) => (
+            <Slider.Item
+              index={index}
+              class="carousel-item w-[270px] sm:w-[292px] first:pl-6 sm:first:pl-0 last:pr-6 sm:last:pr-0"
+            >
+              <ProductCard
+                product={product}
+                itemListName={title}
+                layout={cardLayout}
+                platform={platform}
+                index={index}
+              />
+            </Slider.Item>
+          ))}
+        </Slider>
 
-👥 Realtime collaboration and Git-based release history with easy rollback
+        <>
+          <div class="hidden relative sm:block z-10 col-start-1 row-start-3">
+            <Slider.PrevButton class="btn btn-circle btn-outline absolute right-1/2 bg-base-100">
+              <Icon size={24} id="ChevronLeft" strokeWidth={3} />
+            </Slider.PrevButton>
+          </div>
+          <div class="hidden relative sm:block z-10 col-start-3 row-start-3">
+            <Slider.NextButton class="btn btn-circle btn-outline absolute left-1/2 bg-base-100">
+              <Icon size={24} id="ChevronRight" strokeWidth={3} />
+            </Slider.NextButton>
+          </div>
+        </>
+        <SliderJS rootId={id} />
+      </div>
+    </div>
+  );
+}
 
-🤖 Decopilot, our AI assistant for code and content creation
+export default ProductShelf;
+```
 
-🌍 Global and page-specific SEO editor
-
-🎨 Customizable Theme editor using Tailwind and DaisyUI (import with AI!)
-
-🏢 Enterprise-grade features, including full control over release cycles,
-role-based permissions, real-time web analytics with Plausible, and error
-monitoring with HyperDX.
-
-</div>
-
-## Why choose deco.cx
-
-### From code to collaborative content — build your own bespoke no-code solution
-
-Dealing with ”content type” editors is a PITA. With deco.cx, you just <u>write
-React (JSX) components with TypeScript</u> and we <u>automatically generate a
-no-code editor</u> that matches your Props.
-
-<img width="640" alt="TS to props" src="/docs/overview/tstoprops.png">
-
-### Powerful bundle: realtime analytics and observability out of the box
-
-Setting up your observability and analytics stack can be devastating. Deco comes
-with comprehensive tools that enables anyone to <u>check error logs, tracing and
-metrics for total control</u>.
-
-<img width="640" alt="TS to props" src="/docs/overview/analytics.png">
-
-### Ultra lightweight SSR JSX + HTMX tailwind based component library
-
-We carefully chosen a stack that prioritizes performance without sacrificing
-simplicity. Our stack includes technologies like htmx, which allows for
-<u>seamless and efficient communication between the client and server</u>.
-
-<img width="640" alt="TS to props" src="/docs/overview/stack.png">
-
-## Community, learning and Get Site Done
-
-- [Join our Discord Community!](https://deco.cx/discord)
-- [Enlist in our deco.camp courses](https://deco.camp)
-- [Get Site Done!](https://www.getsitedone.com/)
-
-## Next steps!
-
-- [Getting started](/docs/en/getting-started/creating-a-site): Take your first
-  steps with deco! Learn about our CMS and the basic concepts.
-- [Developing Guide](/docs/en/developing-guide/setup): Learn how to program your
-  site using our framework.
-- [CMS Capabilities](/docs/en/cms-capabilities/home): Explore what our CMS can
-  do beyond the basics.
-- [Dev Capabilities](/docs/en/developing-capabilities/blocks): Find references
-  to implement advanced functionality in our framework.
+By only exporting the `interface Props`, it's now possible to configure this
+Section in _deco.cx_'s Admin and add it to your site's pages.
+-->

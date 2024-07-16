@@ -96,6 +96,7 @@ export default function Editor({ title, features }: Props) {
         : "100px";
       const opacityValue = isEntering ? 1 : 0;
       const colorValue = isEntering ? "white" : "#52525B";
+      const scaleValue = isEntering ? "scale(1.1)" : "scale(1)";
 
       const transformStarting = isEntering
         ? `translateY(${directionY})`

@@ -224,8 +224,11 @@ function generateHeaderTextColor(props?: Props) {
 }
 
 function generateLinkClasses(props?: Props) {
-  const { textColor } = props?.links?.style ?? {};
+  const { backgroundColors, textColor } = props?.links?.style ?? {};
+  const { neutral, hover } = backgroundColors ?? {};
   const txtColor = textColor ? `text-[${textColor}]` : "text-default";
+  const colorClasses = generateColorClasses(neutral);
+  const hoverColorClasses = generateColorClasses(hover, "r", "hover:");
   return `${txtColor} group h-[52px] px-6 rounded-full flex justify-start items-center font-bold gap-4`;
 }
 

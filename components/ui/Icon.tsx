@@ -130,6 +130,7 @@ function Icon({
   return (
     <svg
       {...otherProps}
+
       width={width ?? size}
       height={height ?? size}
       stroke-width={strokeWidth}

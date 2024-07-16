@@ -96,7 +96,7 @@ export async function loader({ props }: { props: Props }, _req: Request) {
     }
 
     // Agrupar membros por mês
-    allMembers.forEach((member) => {
+    allMembers.forEach((member, index) => {
       const joinedDate = new Date(member.joined_at);
       const year = joinedDate.getFullYear();
 

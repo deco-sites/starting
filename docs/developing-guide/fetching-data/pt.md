@@ -30,8 +30,8 @@ _Dados retornados da API Dog Facts sendo chamada no browser_
 
 ## 1. Criando a Section
 
-Primeiro, vamos criar uma Section que renderizará os dados buscados da API. Crie
-a seção `DogFacts.tsx` na pasta sections/ do seu projeto.
+Primeiro, vamos criar uma Section que renderizará os dados buscados da API. 
+Crie a seção `DogFacts.tsx` na pasta sections/ do seu projeto.
 
 Se executarmos um http request para a API da Dog Fact veremos que ele retorna um
 JSON no seguinte formato,
@@ -88,15 +88,15 @@ export default function DogFacts({ title, dogFacts }: Props) {
 
 ## 2. Criando o Loader e testando a Section
 
-Agora vamos criar um Loader que buscará os dados da Dog Fact API e os passará
-para a Section.
+Agora vamos criar um Loader que buscará os dados da Dog Fact API e os passará para 
+a Section.
 
-Os Loaders permitem que você defina como os dados são buscados e transformados
-antes de serem passados para uma Section. Eles são **funções regulares de
-Typescript** que podem usar funções _async_ como `fetch`. Os Loaders podem ser
-"plugados" em uma Section via uma das `props` da Section, e isso acontece com
-base no **tipo de retorno do Loader** (o tipo de retorno do Loader é o tipo de
-entrada da Section).
+Os Loaders permitem que você defina como os dados são buscados e transformados antes 
+de serem passados para uma Section. Eles são **funções regulares de Typescript** que 
+podem usar funções _async_ como `fetch`. Os Loaders podem ser "plugados" em uma Section 
+via uma das `props` da Section, e isso acontece com base no **tipo de retorno do Loader** 
+(o tipo de retorno do Loader é o tipo de entrada da Section).
+
 
 1. Defina qual será as `Props` de input do seu loader.
 2. Exporte uma função chamada `loader` dentro do mesmo arquivo da sua section.
@@ -137,20 +137,15 @@ export default function DogFacts(
   );
 }
 ```
-
-> Observação: O tipo `SectionProps` é um tipo auxiliar usado para inferir o tipo
-> de retorno do loader.
+> Observação: O tipo `SectionProps` é um tipo auxiliar usado para inferir 
+o tipo de retorno do loader.
 
 ## 3. Testando a Section
 
-1. Execute o servidor localmente com
-   `DECO_ENV_NAME={environment_name} deno task start`.
-2. Acesse `https://deco.cx/admin` no seu site e certifique-se de que seu
-   ambiente está selecionado no Seletor de Ambiente no canto superior direito do
-   Admin.
+1. Execute o servidor localmente com `DECO_ENV_NAME={environment_name} deno task start`.
+2. Acesse `https://deco.cx/admin` no seu site e certifique-se de que seu ambiente está selecionado no Seletor de Ambiente no canto superior direito do Admin.
 3. Vá para `Sections` e procure por DogFacts na barra lateral esquerda.
-4. Configure as props do Loader selecionado (`numberOfFacts`) com um número
-   desejado (por exemplo, 4).
+4. Configure as props do Loader selecionado (`numberOfFacts`) com um número desejado (por exemplo, 4).
 
 Agora, vamos ver isso funcionando conectando-o a uma Section.
 
