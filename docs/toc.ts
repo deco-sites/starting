@@ -1,8 +1,6 @@
-import { join } from "https://deno.land/std@0.190.0/path/mod.ts";
-
 type LocalizedTitle = { pt?: string; en?: string };
 type Entry = { title: LocalizedTitle; slug?: string };
-type TopLevelEntry = Entry & { children?: Array<TopLevelEntry> };
+export type TopLevelEntry = Entry & { children?: Array<TopLevelEntry> };
 
 type TableOfContents = Array<TopLevelEntry>;
 
@@ -143,7 +141,19 @@ const tableOfContents: TableOfContents = [
       {
         title: { pt: "Management", en: "Management" },
         slug: "cms-capabilities/management",
-        children: [],
+        children: [
+          {
+            title: { pt: "Settings (domínios)", en: "Settings (domains)" },
+            slug: "cms-capabilities/management/custom-domains",
+          },
+          {
+            title: {
+              pt: "Settings (domínios APEX)",
+              en: "Settings (APEX domains)",
+            },
+            slug: "cms-capabilities/management/apex-domains",
+          },
+        ],
       },
     ],
   },
@@ -189,6 +199,13 @@ const tableOfContents: TableOfContents = [
         },
         slug: "developing-guide/creating-loaders",
       },
+      {
+        title: {
+          pt: "Newsletter com HTMX e Deco Records",
+          en: "Newsletter with HTMX and Deco Records",
+        },
+        slug: "developing-guide/examples",
+      },
     ],
   },
   {
@@ -224,13 +241,6 @@ const tableOfContents: TableOfContents = [
           en: "Action",
         },
         slug: "concepts/action",
-      },
-      {
-        title: {
-          pt: "Page",
-          en: "Page",
-        },
-        slug: "concepts/page",
       },
       {
         title: {
@@ -271,13 +281,6 @@ const tableOfContents: TableOfContents = [
               en: "Exporting Default Props in a Block",
             },
             slug: "developing-capabilities/blocks/exporting-default-props",
-          },
-          {
-            title: {
-              pt: "Biblioteca de blocos",
-              en: "Block Library",
-            },
-            slug: "developing-capabilities/blocks/block-library",
           },
         ],
       },
@@ -443,13 +446,6 @@ const tableOfContents: TableOfContents = [
         title: { pt: "Problemas comuns", en: "Troubleshooting" },
         slug: "reference/troubleshooting",
       },
-      {
-        title: {
-          pt: "Contribuindo",
-          en: "Contributing",
-        },
-        slug: "reference/contributing",
-      },
     ],
   },
   {
@@ -554,6 +550,13 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
+          pt: "Otimizando loaders",
+          en: "Optimizing loaders",
+        },
+        slug: "performance/loaders",
+      },
+      {
+        title: {
           pt: "Otimizando scripts de terceiros",
           en: "Optimizing 3rd party scripts",
         },
@@ -621,78 +624,6 @@ const tableOfContents: TableOfContents = [
     ],
   },
 ];
-
-if (import.meta.main) {
-  for (const content of tableOfContents) {
-    if (content.slug) {
-      const path = `./${content.slug}`;
-      const stat: { isDirectory: boolean } = await Deno.stat(path).catch(
-        (_) => ({ isDirectory: false }),
-      );
-      let isCreated = false;
-      if (!stat.isDirectory) {
-        isCreated = await Deno.mkdir(path)
-          .then(() => true)
-          .catch(() => false);
-      }
-      if (!content.children && !isCreated) {
-        await Promise.all([
-          Deno.create(`${join(path, "en.md")}`),
-          Deno.create(`${join(path, "pt.md")}`),
-        ]);
-        await Deno.writeTextFile(
-          join(path, "en.md"),
-          `---
-description: TODO
-since: 1.0.0
----`,
-        );
-        await Deno.writeTextFile(
-          join(path, "pt.md"),
-          `---
-description: TODO
-since: 1.0.0
----`,
-        );
-        continue;
-      }
-    } else if (content.children) {
-      for (const children of content.children) {
-        const path = `./${children.slug}`;
-        const stat: { isDirectory: boolean } = await Deno.stat(path).catch(
-          (_) => ({ isDirectory: false }),
-        );
-        if (!stat.isDirectory) {
-          if (
-            await Deno.mkdir(path, { recursive: true })
-              .then(() => true)
-              .catch(() => false)
-          ) {
-            await Promise.all([
-              Deno.create(`${join(path, "en.md")}`),
-              Deno.create(`${join(path, "pt.md")}`),
-            ]);
-
-            await Deno.writeTextFile(
-              join(path, "en.md"),
-              `---
-description: TODO
-since: 1.0.0
----`,
-            );
-            await Deno.writeTextFile(
-              join(path, "pt.md"),
-              `---
-description: TODO
-since: 1.0.0
----`,
-            );
-          }
-        }
-      }
-    }
-  }
-}
 
 const tableOfContentsBySlug = tableOfContents.reduce((acc, cur) => {
   return addEntriesToAccumulator(acc, cur);
