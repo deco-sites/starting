@@ -1302,5 +1302,9 @@
   "/.deco/blocks/DoubleBrands.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Home/DoubleBrands.tsx"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fposts%2Faec3d821c849.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Blogpost.ts"
   }
 }
