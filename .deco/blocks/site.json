@@ -24,6 +24,11 @@
     },
     {
       "__resolveType": "website/loaders/redirects.ts"
+    },
+    {
+      "__resolveType": "deco-sites/std/loaders/x/redirectsFromCsv.ts",
+      "redirects": [],
+      "from": "redirects.csv"
     }
   ],
   "caching": {
