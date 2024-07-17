@@ -279,7 +279,7 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
             </div>
           )}
         </div>
-        <p class="text-[#949E9E]">{subtitle}</p>
+        <p class="text-[#949E9E] min-h-20">{subtitle}</p>
       </div>
       <a
         href={accessButton.href}
