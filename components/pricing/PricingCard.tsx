@@ -13,6 +13,7 @@ export interface Feature {
    * @format rich-text
    */
   subtitleInfo?: string;
+  noteIcon?: AvailableIcons;
   /**
    * @format rich-text
    */
@@ -78,26 +79,30 @@ function FeatureItem({
           {feature.moreInfo && (
             <div class="group relative flex gap-2 h-fit mt-1">
               <Icon id="info" size={16} />
-              <div
-                class={`hidden group-hover:flex absolute max-w-[250px] w-max rounded-lg mt-8 p-3 border-2 ${
-                  active ? styles.active : styles.regular
-                }`}
-                dangerouslySetInnerHTML={{
-                  __html: feature.moreInfo,
-                }}
-              >
+              <div class="hidden group-hover:flex absolute max-w-[250px] w-max rounded-lg pt-4">
+                <div
+                  class={`p-3 border-2 ${
+                    active ? styles.active : styles.regular
+                  }`}
+                  dangerouslySetInnerHTML={{
+                    __html: feature.moreInfo,
+                  }}
+                ></div>
               </div>
             </div>
           )}
         </div>
-        {feature.subtitleInfo && (
-          <div
-            class="text-[#949E9E] text-sm"
-            dangerouslySetInnerHTML={{
-              __html: feature.subtitleInfo,
-            }}
-          />
-        )}
+        <div class="flex items-center gap-2 ">
+          {feature.subtitleInfo && (
+            <div
+              class="text-[#949E9E] text-sm"
+              dangerouslySetInnerHTML={{
+                __html: feature.subtitleInfo,
+              }}
+            />
+          )}
+          {feature.noteIcon && <Icon id={feature.noteIcon} size={14} />}
+        </div>
       </div>
     </div>
   );
@@ -122,7 +127,7 @@ function CalculatorElement({
   const handlePriceUpdate = (operation: "sum" | "sub") => {
     const newValue = OPERATIONS[operation](
       calculatorValue.value,
-      item.addValue,
+      item.addValue
     );
     if (item.initialValue <= newValue) {
       calculatorValue.value = newValue;
@@ -232,7 +237,7 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
 
     const newValue = OPERATIONS[operation](
       parseFloat(currentPrice.value),
-      value,
+      value
     );
     if (newValue >= parseFloat(monthlyBasePrice)) {
       currentPrice.value = String(newValue);
@@ -249,26 +254,24 @@ function PricingCard({ pricingCard, annualDiscount, applyDiscount }: Props) {
         <h3 class="font-[argent-pixel] text-3xl mb-2">{title}</h3>
         <div class="flex items-center gap-4">
           <p>
-            {isNaN(parseFloat(currentPrice.value))
-              ? (
+            {isNaN(parseFloat(currentPrice.value)) ? (
+              <span class="text-3xl text-[#02F67C] font-semibold mr-1">
+                {currentPrice.value}
+              </span>
+            ) : (
+              <>
                 <span class="text-3xl text-[#02F67C] font-semibold mr-1">
-                  {currentPrice.value}
-                </span>
-              )
-              : (
-                <>
-                  <span class="text-3xl text-[#02F67C] font-semibold mr-1">
-                    $
-                    {applyDiscount && useAnnualDiscount && annualDiscount
-                      ? (
+                  $
+                  {applyDiscount && useAnnualDiscount && annualDiscount
+                    ? (
                         parseFloat(currentPrice.value) *
                         (1 - annualDiscount / 100)
                       ).toFixed(2)
-                      : currentPrice.value}
-                  </span>
-                  / month
-                </>
-              )}
+                    : currentPrice.value}
+                </span>
+                / month
+              </>
+            )}
           </p>
           {applyDiscount && useAnnualDiscount && annualDiscount && (
             <div class="rounded-lg border border-[#02F67C] bg-[#02F67C20] px-3 py-0.5 text-sm">
