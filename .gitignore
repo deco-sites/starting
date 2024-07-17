@@ -74,3 +74,6 @@ _fresh/
 
 # Deno files
 deno.*.tmp
+
+# deco .metadata
+.metadata/
