@@ -91,7 +91,7 @@
             {
               "columns": [],
               "label": "Blog",
-              "href": "https://deco.cx/en/blog"
+              "href": "/en/blog"
             },
             {
               "columns": [],
@@ -115,7 +115,7 @@
       "columns": []
     },
     {
-      "href": "/en/pricing",
+      "href": "/pricing",
       "label": "Pricing",
       "nested": [],
       "targetBlank": false,
