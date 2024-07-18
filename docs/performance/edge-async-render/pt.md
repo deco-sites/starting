@@ -37,7 +37,7 @@ As requisições subsequentes são respondidas com essa resposta em cache, reduz
 drasticamente o tempo total de resposta para apenas a latência entre o navegador e o CDN, 
 mais o tempo de download do conteúdo.
 
-![Stale Edge Cache](/docs/performance/stale-edge-cache.png)
+![Stale Edge Cache](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d9ee3b7-cce2-47f3-a320-2a72b2e63e2a)
 
 Essa funcionalidade está ativada por padrão para todas as seções, mas pode ser desativada se necessário.
 

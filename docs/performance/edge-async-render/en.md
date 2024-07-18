@@ -24,7 +24,7 @@ This functionality is enabled by default for all sections but can be disabled if
 
 This feature is enabled by default in the sections of sites on deco.cx. To disable it, simply turn off the `Optimization` option in the section properties in the Admin.
 
-![Disable Async Rendering](/docs/performance/disable-async-render.png)
+![Disable Async Rendering](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d9ee3b7-cce2-47f3-a320-2a72b2e63e2a)
 
 ### Benefits
 
