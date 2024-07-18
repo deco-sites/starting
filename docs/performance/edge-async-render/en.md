@@ -4,8 +4,6 @@ description: Documentation on async rendering in Deco.cx.
 
 ---
 
-# Documentation: Async Rendering in deco.cx
-
 ## Introduction
 
 Async rendering is an essential technique for improving performance and user experience in modern web applications. In deco.cx, async rendering utilizes progressive loading to load page sections asynchronously, rendering quickly loaded content and displaying skeletons and loading states for slower requests, providing users with an immediate visual experience.

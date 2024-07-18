@@ -4,8 +4,6 @@ description: Documentation on async rendering in Deco.cx.
 
 ---
 
-# Documentação: Renderização Assíncrona em deco.cx
-
 ## Introdução
 
 A renderização assíncrona é uma técnica essencial para melhorar a 

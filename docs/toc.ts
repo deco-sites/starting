@@ -570,6 +570,13 @@ const tableOfContents: TableOfContents = [
         },
         slug: "performance/islands",
       },
+      {
+        title: {
+          pt: "Renderização assíncrona",
+          en: "Async rendering",
+        },
+        slug: "performance/edge-async-render",
+      }
     ],
   },
   {
