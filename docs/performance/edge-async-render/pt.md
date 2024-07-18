@@ -8,7 +8,7 @@ description: Documentation on async rendering in Deco.cx.
 
 A renderização assíncrona é uma técnica essencial para melhorar a 
 performance e a experiência do usuário em aplicações web modernas. 
-A renderização assíncrona na deco.cx utiliza o paradigma de carregamento
+Este recurso na deco.cx utiliza o paradigma de carregamento
 progressivo para carregar seções de uma página de forma assíncrona:
 renderizando o conteúdo das requisições rápidas e recorrendo a esqueletos 
 e estados de carregamento para o conteúdo de requisições lentas, 
