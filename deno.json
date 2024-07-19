@@ -1,11 +1,11 @@
 {
   "imports": {
     "site/": "./",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.5/",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.70.6/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.7/",
+    "$live/": "https://denopkg.com/deco-cx/deco@1.75.2/",
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.70.6/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.45.1/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.75.2/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.48.0/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "preact": "https://esm.sh/preact@10.19.6",
     "preact/": "https://esm.sh/preact@10.19.6/",
@@ -13,13 +13,12 @@
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "std/": "https://deno.land/std@0.190.0/",
-    "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
     "daisyui": "npm:daisyui@4.6.0",
     "deno-dom": "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts",
     "typography": "npm:@tailwindcss/typography@0.5.9",
     "motion": "https://esm.sh/motion@10.16.4",
-    "@floating-ui/react": "https://esm.sh/@floating-ui/react@0.24.3?external=preact/compat,tabbable,@floating-ui/react-dom,react,react-dom",
-    "stripe": "https://esm.sh/stripe@12.6.0"
+    "partytown/": "https://deno.land/x/partytown@0.4.8/",
+    "@floating-ui/react": "https://esm.sh/@floating-ui/react@0.24.3?external=preact/compat,tabbable,@floating-ui/react-dom,react,react-dom"
   },
   "tasks": {
     "start": "deno task bundle && deno run -A --env --config=deno.json $(deno eval 'console.log(import.meta.resolve(\"deco/hypervisor/main.ts\"))') --build-cmd 'deno task build' -- deno task dev",

@@ -1,1 +1,81 @@
-{"name":"Comercial Contatos","path":"/pt/comercial","sections":[{"links":{"items":[{"href":"https://meetings.hubspot.com/leandro-borges/demo-comercial-decocx","icon":"Phone","label":"Agende uma demo"},{"href":"https://wa.me/5521988447814","icon":"WhatsApp","label":"Guilherme Rodrigues | Co-Founder"},{"href":"https://wa.me/558399432457","icon":"WhatsApp","label":"Luciano Júnior | Co-Founder"},{"href":"https://wa.me/5521994885014","icon":"WhatsApp","label":"Rafael Crespo | Co-Founder"},{"href":"https://wa.me/5521998595821","icon":"WhatsApp","label":"Leandro Borges | Head of Sales"}],"style":{"backgroundColors":{"hover":["#2fd180"],"neutral":["#02F67C"]}}},"header":{"logo":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3422736c-a9f4-4380-9108-212532e41566","title":"A plataforma de composição de experiências digitais para a nova geração de marcas globais","textColor":"white"},"social":{"items":[{"href":"https://www.instagram.com/deco.cx/","label":"Instagram"},{"href":"https://linkedin.com/company/deco-cx","label":"Linkedin"},{"href":"https://deco.cx/discord","label":"Discord"}],"style":{"iconColor":"white"}},"background":{"backgroundColors":["#0A2121"]},"__resolveType":"site/sections/Links.tsx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Comercial Contatos",
+  "path": "/pt/comercial",
+  "sections": [
+    {
+      "links": {
+        "items": [
+          {
+            "href": "https://meetings.hubspot.com/leandro-borges/demo-comercial-decocx",
+            "icon": "Phone",
+            "label": "Agende uma demo"
+          },
+          {
+            "href": "https://wa.me/5521988447814",
+            "icon": "WhatsApp",
+            "label": "Guilherme Rodrigues | Co-Founder"
+          },
+          {
+            "href": "https://wa.me/558399432457",
+            "icon": "WhatsApp",
+            "label": "Luciano Júnior | Co-Founder"
+          },
+          {
+            "href": "https://wa.me/5521994885014",
+            "icon": "WhatsApp",
+            "label": "Rafael Crespo | Co-Founder"
+          },
+          {
+            "href": "https://wa.me/5521998595821",
+            "icon": "WhatsApp",
+            "label": "Leandro Borges | Head of Sales"
+          }
+        ],
+        "style": {
+          "backgroundColors": {
+            "hover": [
+              "#2fd180"
+            ],
+            "neutral": [
+              "#02F67C"
+            ]
+          }
+        }
+      },
+      "header": {
+        "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3422736c-a9f4-4380-9108-212532e41566",
+        "title": "A plataforma de composição de experiências digitais para a nova geração de marcas globais",
+        "textColor": "white"
+      },
+      "social": {
+        "items": [
+          {
+            "href": "https://www.instagram.com/deco.cx/",
+            "label": "Instagram"
+          },
+          {
+            "href": "https://linkedin.com/company/deco-cx",
+            "label": "Linkedin"
+          },
+          {
+            "href": "https://deco.cx/discord",
+            "label": "Discord"
+          }
+        ],
+        "style": {
+          "iconColor": "white"
+        }
+      },
+      "background": {
+        "backgroundColors": [
+          "#0A2121"
+        ]
+      },
+      "__resolveType": "site/sections/Links.tsx"
+    },
+    {
+      "__resolveType": "GTM"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

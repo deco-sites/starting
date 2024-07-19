@@ -19,12 +19,14 @@ export type AvailableIcons =
   | "Check"
   | "CreditCard"
   | "Deco"
+  | "DecoCX"
   | "DecoIcon"
   | "DecoLogo"
   | "DeviceDesktop"
   | "DeviceMobile"
   | "DeviceTablet"
   | "Discount"
+  | "Git-hub"
   | "Discord"
   | "DiscordButton"
   | "Dol"
@@ -36,11 +38,15 @@ export type AvailableIcons =
   | "FilterList"
   | "FilterList"
   | "GreenArrow"
+  | "Git-hub"
+  | "Github-rounded"
   | "Heart"
   | "IconCart"
+  | "info"
   | "Instagram"
   | "Linkedin"
   | "Logo"
+  | "laurel"
   | "MadeInDeco"
   | "MadeInDecoMob"
   | "MagnifyingGlass"
@@ -48,11 +54,13 @@ export type AvailableIcons =
   | "Mastercard"
   | "Menu"
   | "Minus"
+  | "minus-rounded"
   | "OCCLogo"
   | "Phone"
   | "PigMoney"
   | "Pix"
   | "Plus"
+  | "plus-rounded"
   | "Post"
   | "QuestionMarkCircle"
   | "Return"
@@ -61,6 +69,7 @@ export type AvailableIcons =
   | "ShoppingCart"
   | "ShopifyLogo"
   | "Star"
+  | "star-sign"
   | "Support"
   | "Time"
   | "Tiktok"
@@ -82,6 +91,7 @@ export type AvailableIcons =
   | "FileSvg"
   | "InfoCircle"
   | "Check"
+  | "check-rounded"
   /* Decocamp */
   | "TsFile"
   | "Fresh"
@@ -92,6 +102,7 @@ export type AvailableIcons =
   | "speedtest"
   | "code"
   | "winner"
+  | "thirdPlace"
   | "product"
   | "checklist"
   | "planet"
@@ -105,6 +116,7 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
    */
   id: AvailableIcons;
   size?: number;
+  color?: string;
 }
 
 function Icon({

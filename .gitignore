@@ -70,3 +70,10 @@ import_map.local.json
 deno.lock
 # Fresh build directory
 _fresh/
+
+
+# Deno files
+deno.*.tmp
+
+# deco .metadata
+.metadata/

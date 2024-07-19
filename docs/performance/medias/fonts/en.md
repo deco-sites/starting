@@ -17,15 +17,13 @@ description: Learn how to use fonts on your website without sacrificing performa
 
 # Fonts in the deco theme
 
-![Theme configuration with fonts](https://github.com/site/assets/882438/c697a548-0beb-49d5-af67-0a1bb0f9f043)
+<img width="640" alt="Theme configuration with fonts" src="/docs/performance/theme-font.png">
 
-The `Theme` component in deco is already prepared to use optimized fonts
+The `Themes` component in deco is already prepared to use optimized fonts
 [offered by Google](https://fonts.google.com/) through the `GoogleFont` font
 loader.
 
 # Custom Fonts
-
-![Using custom fonts](https://github.com/site/assets/882438/2a267a57-34eb-479f-91dc-e8e3f10cfca8)
 
 To use custom fonts, it is recommended to use a font preferably in the
 woff/woff2 format and with a small file size (less than 25kb).
@@ -33,9 +31,9 @@ woff/woff2 format and with a small file size (less than 25kb).
 This font can be served statically by placing the file in the `static`
 directory.
 
-Then, in the `Theme` section, simply specify the font name and the associated
-style guide. For a font in the file `static/my_font.ttf`, use the following
-style:
+Then, in the `Theme` space, in a specific theme, simply specify the font name
+and the associated style guide. For a font in the file `static/my_font.ttf`, use
+the following style:
 
 ```css
 <style>
@@ -48,6 +46,8 @@ style:
 }
 </style>
 ```
+
+<img width="320" alt="Using custom fonts" src="/docs/performance/custom-font.png">
 
 > **important**: The font is cached in our CDN and users' browsers. If it is
 > necessary to replace the font and eliminate the user's cache, add a parameter

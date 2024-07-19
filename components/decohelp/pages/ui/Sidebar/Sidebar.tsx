@@ -2,7 +2,7 @@ import { useEffect, useState } from "preact/hooks";
 import { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Icon from "site/components/ui/Icon.tsx";
 import SearchButton from "./SearchButton.tsx";
-import { ComponentChildren, JSX } from "preact";
+import { JSX } from "preact";
 import Drawer from "site/components/ui/Drawer.tsx";
 import Breadcrumb from "site/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
 import { SectionProps } from "deco/mod.ts";
@@ -94,7 +94,7 @@ const isSubTopicActive = (
   currentSlug: string | null,
   subTopic: SubTopic,
 ): boolean => {
-  const subTopicSlug = subTopic.SidebarLink?.split("/").pop()?.toLowerCase();
+  const subTopicSlug = subTopic.SidebarLink?.toLowerCase();
   const isActiveSubTopic = currentSlug === subTopicSlug;
   return isActiveSubTopic;
 };
@@ -133,37 +133,32 @@ function AsideLinks({
     }
   };
 
-  const toggleDropdown = (subTopicIndex: number) => {
-    setOpenSubTopicIndex(
-      (isOpen) => (isOpen === subTopicIndex ? null : subTopicIndex),
-    );
-  };
-
   useEffect(() => {
     const currentPath = window.location.pathname;
-    const pathParts = currentPath.split("/");
-    const slug = pathParts[pathParts.length - 1].toLowerCase();
-    setCurrentSlug(slug);
 
     topics.forEach((topic, index) => {
       const isActive = topic.SubTopics.some(
         (subTopic, subTopicIndex) => {
           if (
-            subTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
+            currentPath.endsWith(subTopic.SidebarLink?.toLowerCase())
           ) {
             const hasNestedTopics = subTopic.NestedTopics
               ? subTopic.NestedTopics?.length > 0
               : false;
             if (hasNestedTopics) setOpenSubTopicIndex(subTopicIndex);
-
+            setCurrentSlug(subTopic.SidebarLink?.toLowerCase());
             return true;
           }
 
           const nestedTopicOpened = subTopic.NestedTopics?.some((
             childTopic,
-          ) =>
-            childTopic.SidebarLink?.split("/").pop()?.toLowerCase() === slug
-          );
+          ) => {
+            if (currentPath.endsWith(childTopic.SidebarLink?.toLowerCase())) {
+              setCurrentSlug(childTopic.SidebarLink?.toLowerCase());
+              return true;
+            }
+            return false;
+          });
 
           if (nestedTopicOpened) {
             setOpenSubTopicIndex(subTopicIndex);
@@ -178,7 +173,7 @@ function AsideLinks({
     });
   }, []);
 
-  const subtitleSlug = linkSubtitle?.split("/").pop()?.toLowerCase();
+  const subtitleSlug = linkSubtitle?.toLowerCase();
 
   const firstTopic = topics[0];
   const firstSubTopic = firstTopic?.SubTopics?.[0];

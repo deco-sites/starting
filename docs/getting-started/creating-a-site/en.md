@@ -1,39 +1,114 @@
 ---
 description: |
-   Step-by-step on how to create a Site on deco.cx
+   Step-by-step guide on how to create a site on Deco.cx.
 ---
 
-## Prerequisites
+This documentation will guide you through the process of creating and setting up
+your first site using Deco.cx. A Deco site is the primary asset for Deco users,
+serving as the hub for creating, editing, and managing their own space on the
+web.
 
-- Read deco.cx's [**Overview**](/docs/en/overview).
+## 1. Select a Template
 
-> You can always ask for help or more info on our
-> [discord server](https://deco.cx/discord)!
+Go to the [Deco Admin](https://admin.deco.cx/spaces/new) and select a template
+to start. In this example, we will choose the landing template, which has the
+structure and components common to landing pages.
 
-## Create a deco.cx website
+![Choosing a template](/docs/getting-started/creating-site/choose-template.png)
 
-1. Login/Signup on [Deco Admin](https://admin.deco.cx/).
-2. Choose your site's template.
-3. Set a name for your site.
-4. Set a name for your team.
-5. Click on **+ Create Site**.
-6. **Important:** Select the **Start** template.
-7. Click on **Create**.
+## 2. Explore the Template
 
-![Template selection](https://github.com/deco-sites/storefront/assets/882438/4c4323ec-2aec-4b08-a523-32f0761c8a36)
+After selecting a template, you can explore its components in a shared view-only
+mode. This allows you to explore the admin settings and features of the template
+without making any changes.
 
-The site creation process will start and, after it finished, you'll see the
-site's dashboard:
+![Edit a site](/docs/getting-started/creating-site/site-editor.png)
 
-![Site Dashboard on deco.cx](https://github.com/deco-cx/apps/assets/882438/cac4147f-b013-40ca-bf68-e28ab40e831a)
+## 3. Save Your Site
 
-## Navigating on your site
+To officially create your site from the template, click on the "Use this
+template" button in the top right corner of the admin page to claim ownership of
+the site.
 
-You can see your site's URL right below your site name. This URL is public and
-the site is already online.
+![Save site to your team](/docs/getting-started/creating-site/save-site-btn.png)
 
-You should see something similar to `https://deco-sites-start.deno.dev`, which
-was the template chosen in the creation process.
+### 3.1. Log into the Platform
 
-> deco.cx is free up until 5.000 page view/visits per month. Check our
-> [Pricing](https://www.deco.cx/en/pricing) for more info.
+### 3.2. Name Your Site and Choose a Team
+
+You will be prompted to choose a name for your site and a team to save it to:
+
+![Choosing a name and a team to save site](/docs/getting-started/creating-site/save-site.png)
+
+If you do not have a team yet, one will be created with a name of your choice:
+
+![Choosing a name and a team that you'll create](/docs/getting-started/creating-site/save-site-and-team.png)
+
+Deco will configure your site according to the template you chose.
+
+## 4. Finish Site Setup
+
+You will be redirected to the site home page:
+
+![Site Home](/docs/getting-started/creating-site/site-home.png)
+
+From here, you have two options:
+
+1. Run your site locally using your local development environment.
+   - This gives you the power to modify your site by changing its code as well
+     as using the Deco Admin.
+2. Create a new environment to edit your site through only the Deco Admin.
+   - Here you can make changes to your site without needing access to the site
+     code.
+
+### Option 1: Run Your Site Locally
+
+To run your site locally, you need to:
+
+1. Install Deno on your machine. You can follow the instructions on the
+   [Deno website](https://deno.land/).
+2. Clone the site repository:
+   ```bash
+   git clone git@github.com:deco-sites/maria-landing.git
+   ```
+3. Enter the repository folder and start the server:
+   ```bash
+   cd maria-landing
+   DECO_ENV_NAME=localhost deno task start
+   ```
+
+Now, you can modify the code and see the changes in the Admin and vice-versa.
+
+### Option 2: Create a New Environment
+
+Environments are isolated workspaces where you can make changes to your site
+without affecting the live site. To create a new environment:
+
+1. Click on the "New" button in the environment dropdown in the Admin.
+   ![New Environment button](/docs/getting-started/creating-site/new-env-btn.png)
+2. Choose a name and a host for your environment. Since we are not going to run
+   the site locally, select the Web option for the host.
+   ![New Environment Form](/docs/getting-started/creating-site/new-env-form.png)
+
+You now have your own environment and isolated workspace to make changes to your
+site without needing to run its code.
+
+## (Optional) 5. Deploy Your Site
+
+If you want to deploy your site to a live environment using the Deco Hosting,
+you can do so by clicking the "Add Deco Hosting" button on the site home page or
+the "Go live" button in the environment dropdown.
+
+<img src="/docs/getting-started/creating-site/go-live-btn.png" alt="Deploy site button" width="340"/>
+
+Your site will be accessible through a public URL like
+`https://deco-sites-maria-landing.deno.dev/`.
+
+This deployment will include 5,000 page views (shared across all team sites). If
+you need more page views, you can
+[upgrade your plan](https://deco.cx/en/pricing) in the Deco Admin.
+
+## 6. Congratulations! You've Created Your First Deco Site
+
+That's it! Now you can edit your site as you wish. Don't forget to follow the
+next tutorials to discover more features and capabilities of Deco.cx.

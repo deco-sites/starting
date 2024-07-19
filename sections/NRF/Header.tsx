@@ -1,1 +1,1 @@
-export { default } from "site/islands/NRF/Header.tsx";
+export { default } from "site/components/nrf/Header.tsx";

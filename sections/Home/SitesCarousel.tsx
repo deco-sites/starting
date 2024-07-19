@@ -2,7 +2,6 @@ import Image from "deco-sites/std/components/Image.tsx";
 import { useMemo } from "preact/hooks";
 import type { Image as ImageType } from "deco-sites/std/components/types.ts";
 import Icon from "site/components/ui/Icon.tsx";
-import { App, AppContext as AC } from "$live/mod.ts";
 
 export interface Image {
   label: string;
@@ -68,11 +67,13 @@ const THIRD_IMAGES = [
   },
 ];
 
-const TITLE = "Trusted by the most awesome super duper incredible brand:";
-
-const LogoSlider = (
-  { logos, direction }: { logos: Image[]; direction: "left" | "right" },
-) => {
+const LogoSlider = ({
+  logos,
+  direction,
+}: {
+  logos: Image[];
+  direction: "left" | "right";
+}) => {
   const renderLogoSlide = () => (
     <div
       className={`flex z-10 gap-[9px] lg:gap-[18px] ${
@@ -82,13 +83,15 @@ const LogoSlider = (
       {logos.map((logo) => (
         <a
           href={logo.href ?? "/"}
-          class="flex items-center justify-center h-[140px] lg:h-[270px] w-[248px] lg:w-[477px]"
+          class="flex items-center justify-center h-[140px] rounded-lg lg:h-[270px] w-[248px] lg:w-[477px] hover:scale-105 transition ease-in-out duration-300"
           target="_blank"
         >
           <Image
             width={477}
+            height={270}
             src={logo.desktop as string}
             alt={logo.desktop}
+            preload={true}
             decoding="async"
             loading="lazy"
             fetchPriority="low"
@@ -99,11 +102,7 @@ const LogoSlider = (
   );
 
   return (
-    <div className="logos overflow-hidden py-15 relative">
-      <div className="before:absolute before:inset-y-0 before:left-0 before:w-[90px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
-      </div>
-      <div className="after:absolute after:inset-y-0 after:right-0 after:w-[90px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
-      </div>
+    <div className="logos py-15 relative">
       <div
         className="flex whitespace-nowrap gap-[9px] lg:gap-[18px]"
         onMouseEnter={(
@@ -116,16 +115,18 @@ const LogoSlider = (
         {renderLogoSlide()}
         {renderLogoSlide()}
         {renderLogoSlide()}
-        {renderLogoSlide()}
-        {renderLogoSlide()}
       </div>
     </div>
   );
 };
 
-export default function SitesCarousel(
-  { title, cta, firstSlider, secondSlider, thirdSlider }: Props,
-) {
+export default function SitesCarousel({
+  title,
+  cta,
+  firstSlider,
+  secondSlider,
+  thirdSlider,
+}: Props) {
   const firstList = useMemo(
     () =>
       firstSlider && firstSlider.length > 0 ? firstSlider : Array(6)
@@ -149,17 +150,21 @@ export default function SitesCarousel(
   );
 
   return (
-    <div class="bg-black py-12 lg:py-40 max-w-[1440px] mx-auto">
+    <div class="bg-black py-12 lg:py-40 max-w-[1440px] mx-auto overflow-hidden">
       <div class="flex flex-col gap-y-12">
         {title && (
           <h2 class="text-white font-medium lg:text-[24px] leading-[100%] text-center z-10">
             {title}
           </h2>
         )}
-        <div class="flex flex-col gap-[11.29px] lg:gap-6 justify-center">
+        <div class="flex flex-col gap-[11.29px] lg:gap-6 justify-center logos py-15 relative">
+          <div className="before:absolute before:inset-y-0 before:left-0 before:w-[90px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
+          </div>
+          <div className="after:absolute after:inset-y-0 after:right-0 after:w-[90px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
+          </div>
           <a
             href={cta?.href}
-            class="absolute w-[max-content] left-1/2 transform -translate-x-1/2 z-30 items-center border-[2px] lg:border-[5px] border-[#113032] bg-[#02F67C] made-in-deco justify-center flex gap-2 lg:gap-4 px-3 py-2 lg:px-8 lg:py-6 font-[argent-pixel] text-[#113032] text-[20px] lg:text-[48px] leading-[120%]"
+            class="absolute w-[max-content] left-1/2 transform -translate-x-1/2 z-30 items-center border-[2px] lg:border-[5px] border-[#113032] bg-[#02F67C] hover:bg-[#2FD180] hover:scale-105 made-in-deco justify-center flex gap-2 lg:gap-4 px-3 py-2 lg:px-8 lg:py-6 font-[argent-pixel] text-[#113032] text-[20px] lg:text-[48px] leading-[120%] transition ease-in-out duration-300"
           >
             {cta?.label}
             <Icon id="MadeInDeco" size={58} class="hidden lg:block" />

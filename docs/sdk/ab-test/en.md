@@ -10,7 +10,7 @@ utilize the A/B Testing Feature headlessly, without migrating technology.
 
 If you already have your site on deco.cx, the creation of A/B Testing is
 explained in this other
-[documentation](https://deco.cx/docs/en/developing/ab-test).
+[documentation](/docs/en/developing-capabilities/apps/ab-test).
 
 ## How to start?
 
@@ -104,7 +104,7 @@ through the deco.cx panel.
 4 - Monitor the results.
 
 To understand more about the results screen, look at this
-[documentation](https://deco.cx/docs/en/developing/ab-test#funnel-and-results).
+[documentation](/docs/en/developing-capabilities/apps/ab-test#funnel-and-results).
 
 ## Go-Live
 

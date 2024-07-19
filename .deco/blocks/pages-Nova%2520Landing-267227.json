@@ -15,7 +15,7 @@
             "description": "Learn how to deploy high-performances web experiences become the Elite Web "
           },
           {
-            "__resolveType": "Deco Header [EN]"
+            "__resolveType": "HeaderV2"
           },
           {
             "__resolveType": "site/sections/Camp/Theme/Theme.tsx",
@@ -754,10 +754,10 @@
       {
         "value": [
           {
-            "__resolveType": "Deco Head [EN]"
+            "__resolveType": "site/sections/Theme/ThemeHints.tsx"
           },
           {
-            "__resolveType": "Deco Header [EN]"
+            "__resolveType": "HeaderV2"
           },
           {
             "__resolveType": "GTM"
@@ -776,18 +776,20 @@
                 "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b"
               }
             ],
-            "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">How Webdevs Build</span></p>",
+            "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">How Professional Webdevs</span></p>",
             "showRadialOnTop": true,
             "ctas": [
               {
                 "href": "https://deco.new",
                 "text": "Try for Free",
-                "id": "bt-click-signup"
+                "id": "bt-click-signup",
+                "trackID": "bt-click-signup"
               }
             ],
-            "subTitle": "<p>An universal git-based CMS to build high performance sites, apps and <br>storefronts with Deno, HTMX, JSX and Tailwind.</p>",
+            "subTitle": "<p>Universal Git-based CMS to build high performance sites, apps and <br>storefronts with Deno, HTMX, JSX and Tailwind.</p>",
             "shouldAddPaddingTopAndBottom": true,
-            "title": "<p>Professional Websites</p>"
+            "title": "<p>Build Profitable Websites</p>",
+            "alert": {}
           },
           {
             "__resolveType": "site/sections/Home/TrustSignals.tsx",
@@ -795,12 +797,12 @@
               {
                 "subTitle": "Product Hunt",
                 "title": "#1 Product of the Day",
-                "icon": "winner"
+                "icon": "laurel"
               },
               {
-                "subTitle": "Developer Tools",
-                "title": "#1 Product of the Week",
-                "icon": "product"
+                "subTitle": "Product Hunt",
+                "title": "#3 Product of the Month",
+                "icon": "laurel"
               }
             ]
           },
@@ -810,71 +812,10 @@
             "URLEmbedLink": "https://player.vimeo.com/video/951605687?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           },
           {
-            "__resolveType": "website/sections/Rendering/Deferred.tsx",
+            "__resolveType": "htmx/sections/Deferred.tsx",
             "sections": [
               {
-                "__resolveType": "site/sections/Home/DoubleBrands.tsx",
-                "firstSlider": [
-                  {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dbd48a22-2ef7-4416-b2bd-b2d0f6d6a526",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/01a82a66-41ec-432e-aa66-d9d1ba07ecb2",
-                    "label": "torra"
-                  },
-                  {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/20a10db5-e7b4-42e7-869b-202fb904a797",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/11351343-9661-407a-b6b8-85e4be09c884",
-                    "label": "baw"
-                  },
-                  {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/de8d0ab4-5dd5-41ee-b879-04753c831b8f",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f6d358a0-0b0b-4fd8-a2dc-68c73d35dfbd",
-                    "label": "os"
-                  },
-                  {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/01e0a61e-9f3b-4d66-a326-9e384d0240ec",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1dcef30-d90c-48a9-a117-71e60fdc1022",
-                    "label": "miss"
-                  },
-                  {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/87f2915b-da43-46bd-939c-d804e1d03b1f",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/665e131f-e6c4-4df6-88f3-aaf9898494c5",
-                    "label": "bis"
-                  },
-                  {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cf96296f-8f87-4e41-a9dd-08022a1c7d76",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/55678e79-b481-4845-ac4d-0f734aaa8170",
-                    "label": "zee"
-                  }
-                ],
-                "secondSlider": [
-                  {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/75e52629-74bd-4825-9581-45c62c468577",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9526f46d-5b53-470a-bb40-90fc8e00e422",
-                    "label": "embelezze"
-                  },
-                  {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d58ceb68-f09d-4df2-a76a-b8884acd8c29",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/80198427-d2b9-43f4-8c69-ca36abee8cd2",
-                    "label": "uncle"
-                  },
-                  {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/846b57af-d1f0-45ee-b984-ca401bbb6ec6",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6886893f-8669-4a13-a51e-4d7aa4514ab4",
-                    "label": "austral"
-                  },
-                  {
-                    "label": "aviator",
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6826fb95-6735-4369-938b-9ca177cb60b9",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/774f961c-6866-4ec7-a427-604f58a1708d"
-                  },
-                  {
-                    "label": "velocita",
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/820ccf6c-11aa-44f9-8310-84d2218f2665",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2c9cc042-0983-49e1-a7bd-3881762b2e8e"
-                  }
-                ],
-                "themeDark": true,
-                "url": "/"
+                "__resolveType": "DoubleBrands"
               },
               {
                 "__resolveType": "site/sections/Home/StartingCards.tsx",
@@ -892,7 +833,7 @@
                   },
                   {
                     "href": "https://deco.new",
-                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/652b3b84-e4e7-4594-980f-bf58c23c2b53",
+                    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/16cdb646-edd5-4baa-8126-97b7802531a2",
                     "label": "Headless Storefronts",
                     "cta": "Start now",
                     "id": "bt-click-signup",
@@ -900,8 +841,8 @@
                       "logos": [
                         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/57efa191-5f45-4a58-9109-8c2e8ddc3b3b",
                         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c9080c9a-a527-4dd2-a323-b8ff84545714",
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1623d48f-34bc-4bbf-b096-c94c7f8b651a",
-                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/95fee40b-69fb-436b-8b0d-c3dc87f74b04"
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ea877fd8-811c-4772-9dbf-a4c7e79c44d0",
+                        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ae59c1e9-2954-4df2-91e6-b6730843f0b9"
                       ],
                       "active": true
                     }
@@ -930,25 +871,34 @@
                 ]
               },
               {
-                "__resolveType": "site/sections/Home/TextSection2.tsx",
-                "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">fast execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">easy personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
-              },
-              {
-                "__resolveType": "site/sections/Home/Marks.tsx",
-                "marks": [
+                "__resolveType": "site/sections/Home/Results.tsx",
+                "title": "<p>Results don't have to be explained</p>",
+                "results": [
                   {
-                    "title": "<p>6<span style=\"color: rgb(2, 246, 124)\">X</span></p>",
-                    "description": "<p>faster PageSpeed on average after migration</p>"
+                    "title": "<p><span style=\"color: #02f67c\">+</span>70</p>",
+                    "description": "<p>Websites using deco.cx</p>",
+                    "id": "Websites using deco"
                   },
                   {
-                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>3,3k</p>",
-                    "description": "<p>developers &amp; designers in our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/YsGgt8EQCZ\"><u><span style=\"color: rgb(2, 246, 124)\">Discord community</span></u></a></p>"
+                    "title": "<p>6<span style=\"color: #02f67c\">X</span></p>",
+                    "description": "<p>average faster PageSpeed</p>",
+                    "id": "PageSpeed"
                   },
                   {
-                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>400</p>",
-                    "description": "<p><span>stars on GitHub. </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"svg-container flex items-center pl-[16px]\" href=\"https://github.com/deco-cx\"><span style=\"color: rgb(246, 213, 121)\">Give us a star</span></a></p>"
+                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>4,2k</p>",
+                    "description": "<p>in our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/hBUs29me8Z\"><span style=\"color: #02f67c\">Discord community</span></a></p>",
+                    "id": "Discord "
+                  },
+                  {
+                    "title": "<p><span style=\"color: #02f67c\">+</span>470</p>",
+                    "description": "<p>starts on our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/deco-cx\">GitHub</a></p>",
+                    "id": "Github Stars"
                   }
                 ]
+              },
+              {
+                "__resolveType": "site/sections/Home/TextSection2.tsx",
+                "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">fast execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">easy personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
@@ -961,7 +911,7 @@
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ccd0a8e-c2b2-4036-885d-e9b12057b0e6"
                   },
                   {
-                    "title": "Automatic content extraction from TS",
+                    "title": "TS Props Auto-Create Content Schemas",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4716aca7-9cc1-4f76-8099-89082d7a5573",
                     "description": "\"export interface Props\" becomes an easily editable form to give marketers the freedom to update content.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e23d24e0-85ad-43bf-bbc9-8311cafc499e"
@@ -983,7 +933,7 @@
                     }
                   },
                   {
-                    "title": "One-click install apps & integrations",
+                    "title": "One-Click Install Apps & Integrations",
                     "description": "Leverage a rich library of applications, themes, and templates that connect to any API and third-party data sources.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9277ef03-ecda-4257-b500-74427670f991",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2436533f-d50a-4df8-97c7-cd176dece311"
@@ -999,16 +949,16 @@
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p> <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> Your Business Continuously</p>",
+                "title": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> Your Business Continuously</p>",
                 "tabs": [
                   {
-                    "title": "Advanced SEO settings",
+                    "title": "Advanced SEO Settings",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6ad36c34-24e4-422c-a5d8-eb1f12f04d7c",
                     "description": "Native settings that provide all the tools you need for Search Engine Optimization across any platform.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/037dd328-baa1-497a-b069-1e32b2afe3ab"
                   },
                   {
-                    "title": "A/B Test & segmentation",
+                    "title": "A/B Test & Segmentation",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/84928f74-1381-433c-8f02-fc5c4046ccb4",
                     "description": "Personalize content for specific audiences using our native A/B test tool. Create experiments, campaigns and targeted experiences.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/760dcccb-2611-4c49-8899-bc8c03ae3511",
@@ -1019,7 +969,7 @@
                   },
                   {
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/260fc6a6-2775-4faf-9175-4eb1b6faf2b5",
-                    "title": "Realtime analytics",
+                    "title": "Realtime Analytics",
                     "description": "Full web analytics, test results, and performance indicators for quick, effective responses.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d98e01fc-cc34-40fd-99d8-90f598b36247"
                   },
@@ -1031,7 +981,7 @@
                     "label": {}
                   },
                   {
-                    "title": "Real-time collaboration & revisions",
+                    "title": "Real-time Collaboration & Revisions",
                     "description": "Experience Figma-like collaboration for coding and content editing. Manage revisions effortlessly and gain full control over publications. ",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d8363c95-b574-44f6-83f3-005765a8b48d",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c8b9964b-47ec-4ffa-b4af-7a53c16610d7"
@@ -1045,7 +995,7 @@
                 "title": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Scale</span> Up Fast and Safely</p>",
                 "tabs": [
                   {
-                    "title": "Roles & permissions",
+                    "title": "Roles & Permissions",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/19889277-96d7-4a64-a1a5-cd5d9109e948",
                     "description": "Streamline team access with fully customizable role-based controls for secure content management.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfc55bff-717a-40f6-a0cd-4d6fa592750f",
@@ -1055,19 +1005,19 @@
                     }
                   },
                   {
-                    "title": "Realtime error logging & tracing",
+                    "title": "Realtime Error Logging & Tracing",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6aa4b493-9e88-401e-8ba1-4acbaddf05d9",
                     "description": "Comprehensive observability platform with error logs, tracing and metrics for total control.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cbd43d92-b11f-48a3-b7a2-97d8edc5af37"
                   },
                   {
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ed69bb28-4751-4d18-b0eb-c9715525d8f4",
-                    "title": "Release cycle control and instant rollback",
+                    "title": "Release Cycle Control & Instant Rollback",
                     "description": "Immutable deploys and single-commit environments unlock quick evolution without fear of pushing to prod.",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9c7025a1-fa0b-4a23-a178-af4b9d94a1bc"
                   },
                   {
-                    "title": "Managed infra or self-hosted",
+                    "title": "Managed Infra or Self-Hosted",
                     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/64e08b9f-f52f-438e-a79b-5abb47c6a56b",
                     "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/542f6867-bb64-44ff-ab18-f059fc5d9b9a",
                     "description": "Deploy your site on a globally distributed edge infrastructure designed for seamless scalability, or choose to self-host on your infrastructure.",
@@ -1135,21 +1085,15 @@
                 ],
                 "thirdSlider": [
                   {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a8148204-eba3-4b11-8ac1-a8fcfcc72c29",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/75b8a05a-df2b-4860-9699-9b39d7d431cd",
-                    "label": "Anacapri",
-                    "href": "https://www.anacapri.com.br/"
-                  },
-                  {
                     "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d7a6a041-af1f-451f-b585-c2fb3fbd05b3",
                     "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/934bd0cc-4d90-410c-b21d-a67115403547",
                     "label": "Aviator",
                     "href": "https://www.aviator.com.br/"
                   },
                   {
-                    "label": "Casa & Vídeo",
                     "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/af56da52-cd0d-4d15-8487-456098db5556",
                     "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5517192f-09df-431a-81d3-53ae8d403190",
+                    "label": "Casa & Vídeo",
                     "href": "https://www.casaevideo.com.br/"
                   },
                   {
@@ -1233,7 +1177,21 @@
                     "description": "\"I’m sure you will soar even higher; this is just the beginning. Very grateful for this partnership and for believing in you from the very start. And what a partnership! You are tireless in evolving and suggesting improvements, embracing any challenges we face, and always ready to support and grow with us!\"",
                     "href": "https://www.linkedin.com/feed/update/urn:li:activity:7181038197907353600?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7181038197907353600%2C7181112203410894848%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287181112203410894848%2Curn%3Ali%3Aactivity%3A7181038197907353600%29"
                   }
-                ]
+                ],
+                "socialLinks": [
+                  {
+                    "icon": "Discord",
+                    "title": "Join Our Discord",
+                    "link": "https://discord.gg/hBUs29me8Z"
+                  },
+                  {
+                    "icon": "Github-rounded",
+                    "title": "Star us on Github",
+                    "link": "https://github.com/deco-cx"
+                  }
+                ],
+                "title": "<p>Join our Community</p>",
+                "subtitle": "Backed by a community of +4,000 developers."
               },
               {
                 "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
@@ -1276,10 +1234,10 @@
                     "href": "https://www.youtube.com/watch?v=Lj80CLOiL6Y&t=29s"
                   },
                   {
-                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/07c6d5df-3a74-4cae-95d6-a2b1ede1a630",
+                    "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/018d9c6d-301f-48b1-b45f-78b0c145fd68",
                     "label": "Who Run the Code? GIRLS!",
-                    "description": "With a unique, customizable setup featuring dynamic lights and displays, our booth adapted to the brands visiting us, creating a personalized experience for every guest.",
-                    "href": "https://www.youtube.com/watch?v=Lj80CLOiL6Y&t=29s"
+                    "description": "Join us and Fernanda Weiden as we explore the future of scalability, reliability, performance, and efficiency in technology!",
+                    "href": "https://www.youtube.com/watch?v=x9NYhfq9r6s&t=6s"
                   }
                 ]
               },
@@ -1296,7 +1254,7 @@
                     "question": "Does deco.cx replace my current commerce platform?"
                   },
                   {
-                    "answer": "Deco.cx uses Deno, Preact, Tailwind, and Fresh. Deno offers a secure runtime for JavaScript and TypeScript, while Preact is a lightweight, React-compatible framework. Tailwind facilitates optimized web styling, and Fresh is a modern server-side web framework designed for Deno.",
+                    "answer": "Deco.cx uses Deno, Preact, Tailwind, Fresh and HTMX. Deno offers a secure runtime for JavaScript and TypeScript, while Preact is a lightweight, React-compatible framework. Tailwind facilitates optimized web styling, and Fresh is a modern server-side web framework designed for Deno. Finally, HTMX adds interactive features to web pages with minimal JavaScript.",
                     "question": "What tech stack does deco.cx use?"
                   },
                   {
@@ -1328,12 +1286,8 @@
                     "question": "What does the implementation process with deco.cx look like?"
                   },
                   {
-                    "answer": "About 80% is already open source at deco-cx/deco (our engine) and deco-cx/apps (our integrations). We are working hard to provide a fully self-hosted and open source version in Q1 2024. Bear with us as we nail the final details that will allow for long term extensibility.",
+                    "answer": "About 80% is already open source at deco-cx/deco (our engine) and deco-cx/apps (our integrations). We are working hard to provide a fully self-hosted and open source version. Bear with us as we nail the final details that will allow for long term extensibility.",
                     "question": "Is deco.cx open-source?"
-                  },
-                  {
-                    "answer": "Yes! Starting from 9 USD / mo you can add custom domains for unlimited sites (according to our free usage policy limits) and even invite collaborators to edit content.",
-                    "question": "As a developer, can I host multiple customer projects in my personal team?"
                   }
                 ]
               },
@@ -1355,32 +1309,32 @@
                 "brands": {
                   "logos": [
                     {
-                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1b2c9cc3-250e-449f-8da3-a20536fa0e45",
+                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/23553a25-0c2a-49c2-887c-cc72c97a8786",
                       "href": "https://cubo.network/",
                       "altText": "cubo itaú"
                     },
                     {
-                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a9ccb52a-5f22-4072-9f18-744d1b33652f",
+                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a1b16dfa-82fb-4013-9542-2db6b664f1b5",
                       "href": "https://www.fjlabs.com/",
                       "altText": "fjlabs"
                     },
                     {
-                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a9d0a965-d491-495f-913e-271ccbb43b75",
+                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/846669aa-8007-420a-8b9a-f2adae796665",
                       "href": "https://www.crivo.ventures/deco",
                       "altText": "crivo"
                     },
                     {
-                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/563ffdcc-87b9-4037-92ca-cab32841103f",
+                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ee41c75-1c05-4955-8605-89bf78db0468",
                       "href": "https://www.lanxcapital.com/?lang=en#investimentos",
                       "altText": "lanx"
                     },
                     {
-                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9be517fd-1dc8-40cd-8185-ddd26bc30be0",
+                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2248701d-ca54-44b5-a2e6-3ddc5dcb6f59",
                       "href": "https://exame.com/negocios/estas-40-startups-vao-faturar-juntas-r-872-milhoes-e-sao-as-novas-apostas-da-endeavor-veja-a-lista/",
                       "altText": "endeavor scale up"
                     },
                     {
-                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d0bea373-ff97-4fdc-9212-d7bcdce7721d",
+                      "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/10d19b1f-b7fa-4f35-ab3d-070c86b0db43",
                       "href": "https://www.maya.capital/blog-posts/why-did-maya-invest-in-deco-cx",
                       "altText": "maya"
                     }
@@ -1480,7 +1434,10 @@
                 "__resolveType": "GTM"
               }
             ],
-            "display": true
+            "trigger": {
+              "type": "load"
+            },
+            "loading": "lazy"
           }
         ],
         "rule": {

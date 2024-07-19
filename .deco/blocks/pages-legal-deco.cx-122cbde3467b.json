@@ -1,1 +1,28 @@
-{"name":"Legal - deco.cx","path":"/pt/legal","sections":[{"__resolveType":"Header - PT"},{"data":{"content":"---\ndescription: TODO\nsince: 1.0.0\n---\n\n# Jurídico deco.cx\n\nNosso time jurídico resguarda os interesses da deco.cx e assegura que todos os produtos, atividades e operações da empresa estejam em conformidade com as normas regulatórias, políticas internas e melhores práticas de mercado. Estamos comprometidos em minimizar riscos legais, prever desafios e resolver questões críticas de maneira eficaz e justa.\n\n  \n\nNós cultivamos a integridade e entendemos a importância de estabelecer relações transparentes com nossos clientes e parceiros. Por isso, compilamos todos os nossos documentos e políticas em um único lugar de fácil acesso.\n\n  \n\n# Master Services Agreement\n\n[deco.cx/msa-brasil](http://deco.cx/msa-brasil)\n\nEste é o nosso contrato principal que delineia os termos e condições sob os quais prestamos nossos serviços. Aqui você encontrará informações sobre o escopo de nossos serviços, preços, condições de pagamento e outras diretrizes que regem nossa relação com você, nosso cliente.\n\n  \n\n# Master Partner Agreement\n\n[deco.cx/mpa-brasil](http://deco.cx/mpa-brasil)\n\nSe você é um parceiro ou está interessado em se tornar um, este é o documento que você precisa ler. Ele especifica como você pode se envolver na venda ou promoção de nossos serviços, e o que esperamos de você em troca.\n\n  \n\n# Política de Privacidade\n\n[deco.cx/politica-privacidade](http://deco.cx/politica-privacidade)\n\nLevamos a proteção de dados e a privacidade muito a sério. Este documento fornece detalhes sobre como coletamos, armazenamos e usamos dados pessoais. Estamos comprometidos em proteger sua privacidade e em cumprir com todas as leis e regulamentos vigentes.\n\n  \n\n# Termos de Uso\n\n[deco.cx/termos-de-uso](http://deco.cx/termos-de-uso)\n\nEstas são as regras do jogo. Ao usar nossos serviços, você concorda em cumprir com um conjunto específico de diretrizes e restrições. Este documento é crucial para garantir que nossa plataforma permaneça segura, eficaz e benéfica para todos os usuários.\n\n  \nPara qualquer dúvida ou consideração, não hesite em nos contatar pelo email [legal@deco.cx](mailto:legal@deco.cx)."},"__resolveType":"site/sections/MarkdownContent.tsx"},{"__resolveType":"[pt] Footer"},{"type":"article","title":"Legal - deco.cx","description":"Saiba mais sobre Master Service Agreement, Política de Privacidade e Termos de Uso da deco.cx","__resolveType":"deco-sites/std/sections/SEO.tsx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Legal - deco.cx",
+  "path": "/pt/legal",
+  "sections": [
+    {
+      "__resolveType": "Header - PT"
+    },
+    {
+      "data": {
+        "content": "---\ndescription: TODO\nsince: 1.0.0\n---\n\n# Jurídico deco.cx\n\nNosso time jurídico resguarda os interesses da deco.cx e assegura que todos os produtos, atividades e operações da empresa estejam em conformidade com as normas regulatórias, políticas internas e melhores práticas de mercado. Estamos comprometidos em minimizar riscos legais, prever desafios e resolver questões críticas de maneira eficaz e justa.\n\n  \n\nNós cultivamos a integridade e entendemos a importância de estabelecer relações transparentes com nossos clientes e parceiros. Por isso, compilamos todos os nossos documentos e políticas em um único lugar de fácil acesso.\n\n  \n\n# Master Services Agreement\n\n[deco.cx/msa-brasil](http://deco.cx/msa-brasil)\n\nEste é o nosso contrato principal que delineia os termos e condições sob os quais prestamos nossos serviços. Aqui você encontrará informações sobre o escopo de nossos serviços, preços, condições de pagamento e outras diretrizes que regem nossa relação com você, nosso cliente.\n\n  \n\n# Master Partner Agreement\n\n[deco.cx/mpa-brasil](http://deco.cx/mpa-brasil)\n\nSe você é um parceiro ou está interessado em se tornar um, este é o documento que você precisa ler. Ele especifica como você pode se envolver na venda ou promoção de nossos serviços, e o que esperamos de você em troca.\n\n  \n\n# Política de Privacidade\n\n[deco.cx/politica-privacidade](http://deco.cx/politica-privacidade)\n\nLevamos a proteção de dados e a privacidade muito a sério. Este documento fornece detalhes sobre como coletamos, armazenamos e usamos dados pessoais. Estamos comprometidos em proteger sua privacidade e em cumprir com todas as leis e regulamentos vigentes.\n\n  \n\n# Termos de Uso\n\n[deco.cx/termos-de-uso](http://deco.cx/termos-de-uso)\n\nEstas são as regras do jogo. Ao usar nossos serviços, você concorda em cumprir com um conjunto específico de diretrizes e restrições. Este documento é crucial para garantir que nossa plataforma permaneça segura, eficaz e benéfica para todos os usuários.\n\n  \nPara qualquer dúvida ou consideração, não hesite em nos contatar pelo email [legal@deco.cx](mailto:legal@deco.cx)."
+      },
+      "__resolveType": "site/sections/MarkdownContent.tsx"
+    },
+    {
+      "__resolveType": "[pt] Footer"
+    },
+    {
+      "type": "article",
+      "title": "Legal - deco.cx",
+      "description": "Saiba mais sobre Master Service Agreement, Política de Privacidade e Termos de Uso da deco.cx",
+      "__resolveType": "deco-sites/std/sections/SEO.tsx"
+    },
+    {
+      "__resolveType": "GTM"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

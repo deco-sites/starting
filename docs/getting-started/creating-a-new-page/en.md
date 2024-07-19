@@ -2,54 +2,74 @@
 description: Create pages on deco.cx with no need to code
 ---
 
-You should be familiar with the core concepts of
-[Blocks](/docs/en/concepts/block) and [Section](/docs/en/concepts/section), and
-now let's understand how to tie those together and create pages in a deco.cx
-site.
+Now we will create a new page to your site. The process is very simple:
 
-**Pages** have a dedicated section in deco.cx's Admin and you can access it via
-the top menu.
+## 1. Access the Pages tab
 
-![Creating pages](/docs/creating-new-page/pages-menu.png)
+**Pages** have a dedicated space in deco.cx's Admin and you can access it via
+the side bar.
 
-In this page, you see all the pages published on the site, alongside the path
-which they're accessible to your users.
+![Pages space](/docs/getting-started/creating-a-new-page/pages-space.png)
 
-## Create a new page
+On this page, you can see all the pages published on the site, along with the
+paths through which they are accessible to your users.
 
-To create a new page on your site, **click on the Create button in the top right
-of the page list**. It'll open a form with the following fields:
+Here you can click on the "Create new page" button to create a page.
+
+> Alternatively, you can click on the "Create page" button at the Site Home or
+> type `/new page` on the command bar located on the top center of the Admin
+> page.
+
+## 2. Give the page a name and a path
+
+Fill out the form with the following information:
 
 - **Name:** meaningful name to understand what that page represents. Doesn't
   impact page's UI or metadata.
-- **Path:** represents the URL which that page will be accesible for your users.
+- **Path:** represents the URL which that page will be accesible to your users.
   It can be static (e.g: `/posts`) or dynamic (e.g: `/posts/:slug`,
   `/search/*`), following [URLPattern](http://mdn.io/urlpattern) schema.
-- **Template** (optional): copy sections from a page that already exists.
+- **Template** (optional): copy a structure from a page that already exists.
 
-You'll be redirected to the page editor after the page is created. Now it's
-possible to edit and add new Sections available in your site and setup the page
-just as you want it.
+Here we will create a blank page.
 
-To add a new Section to the page, click on **Add Sections** button in the editor
-and check all the available options.
+![Creating a new page](/docs/getting-started/creating-a-new-page/new-page.png)
 
-![Creating pages](/docs/creating-new-page/add-section.png)
+## 3. Edit the page content
+
+Now you can edit and add new components available on your site and set up the
+page just as you want it.
+
+To add a new component to the page, click on the Add Sections button in the
+editor and explore all the available options. Sections are UI components (small
+parts of the site) that can receive props and can be edited through a form in
+the Admin.
+
+![Adding a section](/docs/getting-started/creating-a-new-page/add-section.png)
 
 > If you want to develop/code a new Section, check our
-> [Developing Guide](/docs/en/developing/setup).
+> [Developing Guide](/docs/en/developing-guide/setup).
 
-## Publishing
+Here, we will select the Hero section.
 
-After you're finished, click on **Save** to create a new revision and then
-**Publish** to publish the newly created page.
+![Hero section](/docs/getting-started/creating-a-new-page/hero.png)
 
-If the page has been published before, the Publish modal will offer you the
-option to A/B test the new revision.
+After the selection, we can see the form where we can edit its properties. These
+properties are obtained from the TypeScript props of that section.
 
-## Variants
+![Section Form](/docs/getting-started/creating-a-new-page/section-form.png)
 
-Besides A/B testing, which randomizes which users see the new content, it's
-possible to segment and personalize content in deco.cx using other factors like
-user's location, device and more.
-[Read more about Variants here](/docs/en/getting-started/variants).
+> Note: The example you see above is of a reusable block, which is a global
+> resource that can be used by other pages. This is why you cannot edit this
+> section unless you detach it to change only on that page or edit it in a new
+> space (which will affect all pages that use it).
+
+Let's detach the section to edit its properties for that page. We will change
+the Title in the Title property. As you make changes, the preview will update in
+real-time to show you how the section will look with the new property values.
+
+![Changing Section](/docs/getting-started/creating-a-new-page/changing-section.png)
+
+Each component may have different properties that can be customized. These
+properties are defined in the code of the section and can be accessed through
+the props object.

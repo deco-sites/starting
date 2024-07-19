@@ -1,4 +1,4 @@
-import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
+import { AvailableIcons } from "site/components/ui/Icon.tsx";
 
 export interface SlideProps {
   label?: string;
@@ -25,7 +25,7 @@ export default function Sale({
     },
   ],
 }: Props) {
-  const slideContent = content?.map(({ label, icon, repeat = 1 }) => {
+  const slideContent = content?.map(({ label, repeat = 1 }) => {
     return (
       <div class="flex items-center gap-x-10 mx-4">
         {Array(repeat).fill(0).map(() => (

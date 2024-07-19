@@ -93,7 +93,7 @@ export default function GraphCustom({ member }: Props) {
                   size: isMobile ? 16 : 24,
                 },
                 // Include a dollar sign in the ticks
-                callback: function (value, index, ticks) {
+                callback: function (value) {
                   return `${
                     value && typeof value === "number" && value / 1000
                   }K`;

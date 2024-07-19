@@ -38,7 +38,7 @@ const fetchRanking = async (website?: string) => {
     method: "GET",
     headers: myHeaders,
   })
-    .then((response) => response.json())
+    .then((response) => response.json() as Promise<AirTableListResponse>)
     .then((data: AirTableListResponse) => {
       return data.records.map(toSite);
     });

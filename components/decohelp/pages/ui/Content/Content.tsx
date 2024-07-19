@@ -5,13 +5,12 @@ import WasThisPageHelpfulContent, {
   WasThisPageHelpfulProps,
 } from "site/components/decohelp/pages/ui/WasThisPageHelpful/WasThisPageHelpful.tsx";
 import ForwardBackButtons from "site/islands/ForwardBackButtons/ForwardBackButtons.tsx";
-import BreadCrumb from "site/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
 import {
   ContentType,
   Props,
 } from "site/components/decohelp/pages/interfaces.ts";
 
-function renderContentItem(item: ContentType, idx: number) {
+function renderContentItem(item: ContentType) {
   return "Text" in item
     ? (
       <article aria-label={item.label}>
@@ -66,7 +65,6 @@ export default function Page({
   Title,
   Version,
   PageContent,
-  WasThisPageHelpful,
 }: Props & WasThisPageHelpfulProps) {
   return (
     <div class="mx-auto relative lg:mb-[40px] mb-[32px]">
@@ -86,9 +84,9 @@ export default function Page({
             ? (
               PageContent.map(({ Type }) => (
                 <div class="flex flex-col gap-[8px] w-full mx-auto">
-                  {Type.map((item, idx) => (
+                  {Type.map((item) => (
                     <>
-                      {renderContentItem(item, idx)}
+                      {renderContentItem(item)}
                       {Object.hasOwn(item, "Underline") && item?.Underline &&
                         <span class="flex border-b bg-zinc-300" />}
                     </>

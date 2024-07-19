@@ -1,6 +1,6 @@
-import Image from "deco-sites/std/components/Image.tsx";
 import { useMemo } from "preact/hooks";
 import type { Image as ImageType } from "deco-sites/std/components/types.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Image {
   label: string;
@@ -46,8 +46,6 @@ const SECOND_IMAGES = [
   },
 ];
 
-const TITLE = "Trusted by the most awesome super duper incredible brand:";
-
 const LogoSlider = (
   { logos, direction }: { logos: Image[]; direction: "left" | "right" },
 ) => {
@@ -62,13 +60,13 @@ const LogoSlider = (
           class="flex items-center justify-center h-[30px] w-[72px] lg:w-52"
           target="_blank"
         >
-          <Image
+          <img
             width={144}
+            height={30}
             src={logo.mobile}
             alt={logo.mobile}
             decoding="async"
             loading="lazy"
-            fetchPriority="low"
           />
         </div>
       ))}

@@ -80,7 +80,7 @@ export default function FreePlan({
             <div
               class="text-white text-[16px] md:text-[18px] leading-[150%] mx-auto max-w-4xl"
               dangerouslySetInnerHTML={{
-                __html: description,
+                __html: description || "",
               }}
             />
             <div class="flex flex-col items-center gap-4">

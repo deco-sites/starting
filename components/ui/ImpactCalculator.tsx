@@ -3,6 +3,14 @@ import { JSX } from "preact";
 import Spinner from "site/components/ui/Spinner.tsx";
 import Icon from "site/components/ui/Icon.tsx";
 
+type lighthouseResultType = {
+  lighthouseResult: {
+    audits: { "largest-contentful-paint": { numericValue: number } };
+
+    configSettings: { formFactor: string };
+  };
+};
+
 export interface Props {
   mainText: string;
   delayWarningMessage?: string;
@@ -73,16 +81,16 @@ export default function ImpactCalculator({
     const promiseMobile = fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=mobile`,
     )
-      .then((response) => response.json())
-      .catch((error) => {
+      .then((response) => response.json() as Promise<lighthouseResultType>)
+      .catch(() => {
         loading.value = false;
         alert("Request to PageSpeed has failed. Please try again.");
       });
     const promiseDesktop = fetch(
       `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${website.value}&strategy=desktop`,
     )
-      .then((response) => response.json())
-      .catch((error) => {
+      .then((response) => response.json() as Promise<lighthouseResultType>)
+      .catch(() => {
         loading.value = false;
         alert("Request to PageSpeed has failed. Please try again.");
       });
@@ -101,13 +109,15 @@ export default function ImpactCalculator({
 
     Promise.all([promiseMobile, promiseDesktop]).then((results) => {
       results.forEach((result) => {
-        const resultLCP =
-          result.lighthouseResult.audits["largest-contentful-paint"]
-            .numericValue;
-        if (result.lighthouseResult.configSettings.formFactor == "mobile") {
-          mobileLCP.value = resultLCP;
-        } else {
-          desktopLCP.value = resultLCP;
+        if (result?.lighthouseResult) {
+          const resultLCP =
+            result.lighthouseResult.audits["largest-contentful-paint"]
+              .numericValue;
+          if (result.lighthouseResult.configSettings.formFactor == "mobile") {
+            mobileLCP.value = resultLCP;
+          } else {
+            desktopLCP.value = resultLCP;
+          }
         }
       });
       loading.value = false;

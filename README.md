@@ -1,5 +1,5 @@
-# Deco Landing Page
-
+# Deco Landing Page   
+ 
 Welcome to your live site!
 
 This repository was created for you when you created a new site. To edit the
@@ -22,4 +22,3 @@ deno task start
 
 Navigate to `https://localhost:8080` to see your site and start creating new
 components. 
-

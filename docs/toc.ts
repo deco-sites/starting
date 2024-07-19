@@ -1,8 +1,6 @@
-import { join } from "https://deno.land/std@0.190.0/path/mod.ts";
-
 type LocalizedTitle = { pt?: string; en?: string };
 type Entry = { title: LocalizedTitle; slug?: string };
-type TopLevelEntry = Entry & { children?: Array<TopLevelEntry> };
+export type TopLevelEntry = Entry & { children?: Array<TopLevelEntry> };
 
 type TableOfContents = Array<TopLevelEntry>;
 
@@ -19,19 +17,22 @@ const tableOfContents: TableOfContents = [
         slug: "getting-started/creating-a-site",
       },
       {
-        title: { pt: "Atualizando o SEO", en: "Updating SEO" },
-        slug: "getting-started/updating-seo",
-      },
-      {
         title: { pt: "Criando uma nova Página", en: "Creating a new Page" },
         slug: "getting-started/creating-a-new-page",
       },
       {
         title: {
-          pt: "Segmentação de Conteúdo",
-          en: "Segmenting Content with Variants",
+          pt: "Gerenciando mudanças e publicando",
+          en: "Managing changes and publishing",
         },
-        slug: "getting-started/variants",
+        slug: "getting-started/changes-and-publishing",
+      },
+      {
+        title: {
+          pt: "Adicionando um app ao seu site",
+          en: "Adding an app to your site",
+        },
+        slug: "getting-started/adding-an-app",
       },
       {
         title: {
@@ -49,26 +50,161 @@ const tableOfContents: TableOfContents = [
           },
         ],
       },
+    ],
+  },
+  {
+    title: { pt: "Funcionalidades do CMS", en: "CMS capabilities" },
+    children: [
+      { title: { pt: "Home", en: "Home" }, slug: "cms-capabilities/home" },
       {
-        title: {
-          pt: "Criando Redirecionamentos e Proxies",
-          en: "Adding Proxies and Redirects",
-        },
-        slug: "getting-started/proxy-redirects",
+        title: { pt: "Content", en: "Content" },
+        slug: "cms-capabilities/content",
+        children: [
+          {
+            title: { pt: "Pages", en: "Pages" },
+            slug: "cms-capabilities/content/pages",
+          },
+          {
+            title: { pt: "Sections", en: "Sections" },
+            slug: "cms-capabilities/content/sections",
+          },
+          {
+            title: { pt: "Blog", en: "Blog" },
+            slug: "cms-capabilities/content/blog",
+          },
+          {
+            title: { pt: "Releases", en: "Releases" },
+            slug: "cms-capabilities/content/releases",
+          },
+          {
+            title: { pt: "Assets", en: "Assets" },
+            slug: "cms-capabilities/content/assets",
+          },
+          {
+            title: { pt: "Records", en: "Records" },
+            slug: "cms-capabilities/content/records",
+          },
+        ],
+      },
+      {
+        title: { pt: "Advanced", en: "Advanced" },
+        slug: "cms-capabilities/advanced",
+        children: [
+          {
+            title: { pt: "SEO (e robots)", en: "SEO (and robots)" },
+            slug: "cms-capabilities/advanced/seo",
+          },
+          {
+            title: {
+              pt: "Redirects (e Proxies)",
+              en: "Redirects (and Proxies)",
+            },
+            slug: "cms-capabilities/advanced/redirects",
+          },
+          {
+            title: {
+              pt: "Loaders",
+              en: "Loaders",
+            },
+            slug: "cms-capabilities/advanced/loaders",
+          },
+          {
+            title: {
+              pt: "Actions",
+              en: "Actions",
+            },
+            slug: "cms-capabilities/advanced/actions",
+          },
+          {
+            title: {
+              pt: "Segments",
+              en: "Segments",
+            },
+            slug: "cms-capabilities/advanced/segments",
+          },
+          {
+            title: {
+              pt: "Apps",
+              en: "Apps",
+            },
+            slug: "cms-capabilities/advanced/apps",
+          },
+          {
+            title: {
+              pt: "Experiments",
+              en: "Experiments",
+            },
+            slug: "cms-capabilities/advanced/experiments",
+          },
+        ],
+      },
+      {
+        title: { pt: "Management", en: "Management" },
+        slug: "cms-capabilities/management",
+        children: [
+          {
+            title: { pt: "Settings (domínios)", en: "Settings (domains)" },
+            slug: "cms-capabilities/management/custom-domains",
+          },
+          {
+            title: {
+              pt: "Settings (domínios APEX)",
+              en: "Settings (APEX domains)",
+            },
+            slug: "cms-capabilities/management/apex-domains",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: {
+      pt: "Guia de Desenvolvimento",
+      en: "Developing guide",
+    },
+    children: [
+      {
+        title: { pt: "Configuração do ambiente", en: "Environment setup" },
+        slug: "developing-guide/setup",
       },
       {
         title: {
-          pt: "Criando rascunhos e Restaurando versões",
-          en: "Creating drafts and Restoring versions",
+          pt: "Editando uma section",
+          en: "Editing a Section",
         },
-        slug: "getting-started/releases-revisions",
+        slug: "developing-guide/editable-sections",
+      },
+      {
+        title: { pt: "Criando uma Section", en: "Creating a Section" },
+        slug: "developing-guide/hello-world",
       },
       {
         title: {
-          pt: "Instalando Apps",
-          en: "Installing Apps",
+          pt: "Interatividade com HTMX",
+          en: "Interactivity with HTMX",
         },
-        slug: "getting-started/installing-an-app",
+        slug: "developing-guide/htmx",
+      },
+      {
+        title: {
+          pt: "Carregando dados de uma API",
+          en: "Fetching data from APIs",
+        },
+        slug: "developing-guide/fetching-data",
+      },
+      {
+        title: {
+          pt: "Criando um loader",
+          en: "Creating a loader",
+        },
+        slug: "developing-guide/creating-loaders",
+      },
+      {
+        title: {
+          pt: "Newsletter com HTMX e Deco Records",
+          en: "Newsletter with HTMX and Deco Records",
+        },
+        slug: "developing-guide/examples",
       },
     ],
   },
@@ -108,13 +244,6 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Page",
-          en: "Page",
-        },
-        slug: "concepts/page",
-      },
-      {
-        title: {
           pt: "Matcher",
           en: "Matcher",
         },
@@ -138,126 +267,184 @@ const tableOfContents: TableOfContents = [
   },
   {
     title: {
-      pt: "Desenvolvendo novas funcionalidades",
-      en: "Developing new capabilities",
+      pt: "Funcionalidades de Desenvolvimento",
+      en: "Development capabilities",
     },
     children: [
       {
-        title: { pt: "Configuração do ambiente", en: "Environment setup" },
-        slug: "developing/setup",
+        title: { pt: "Blocos", en: "Blocks" },
+        slug: "developing-capabilities/blocks",
+        children: [
+          {
+            title: {
+              pt: "Exportando Propriedades Padrões em um Bloco",
+              en: "Exporting Default Props in a Block",
+            },
+            slug: "developing-capabilities/blocks/exporting-default-props",
+          },
+        ],
+      },
+      {
+        title: { pt: "Seções", en: "Sections" },
+        slug: "developing-capabilities/sections",
+        children: [
+          {
+            title: {
+              pt: "Capturando exceções nas Seções",
+              en: "Section error fallback",
+            },
+            slug: "developing-capabilities/sections/error-fallback",
+          },
+          {
+            title: {
+              pt: "Estados de carregamento nas Seções",
+              en: "Section loading fallback",
+            },
+            slug: "developing-capabilities/sections/loading-fallback",
+          },
+          {
+            title: {
+              pt: "Redirecionando usuários a partir de Seções",
+              en: "Redirecting users from Sections",
+            },
+            slug: "developing-capabilities/sections/redirecting-users",
+          },
+          {
+            title: {
+              pt: "Aceitando uma Seção como parâmetro da minha Seção",
+              en: "Accepting Other Sections as Parameters in Your Section",
+            },
+            slug: "developing-capabilities/sections/accept-a-section",
+          },
+        ],
+      },
+      {
+        title: { pt: "Propriedades de Sections", en: "Section Properties" },
+        slug: "developing-capabilities/section-properties/utility-types",
+        children: [
+          {
+            title: { pt: "Tipos utilitários", en: "Utility types" },
+            slug: "developing-capabilities/section-properties/utility-types",
+          },
+          {
+            title: {
+              pt: "Dados padronizados",
+              en: "Standard data types",
+            },
+            slug:
+              "developing-capabilities/section-properties/standard-data-types",
+          },
+          {
+            title: {
+              pt: "Utilização de Segredos e Senhas",
+              en: "Using Secrets",
+            },
+            slug: "developing-capabilities/section-properties/using-secrets",
+          },
+          {
+            title: {
+              pt: "Annotations",
+              en: "Annotations",
+            },
+            slug: "developing-capabilities/section-properties/annotations",
+          },
+          {
+            title: {
+              pt: "Widgets",
+              en: "Widgets",
+            },
+            slug: "developing-capabilities/section-properties/widgets",
+          },
+        ],
+      },
+      {
+        title: { pt: "Sections Interativas", en: "Interactive Sections" },
+        slug: "developing-capabilities/interactive-sections/partial",
+        children: [
+          {
+            title: {
+              pt: "Partial",
+              en: "Partial",
+            },
+            slug: "developing-capabilities/interactive-sections/partial",
+          },
+        ],
+      },
+      {
+        title: { pt: "Loaders", en: "Loaders" },
+        slug: "developing-capabilities/loaders",
+      },
+      {
+        title: { pt: "Islands", en: "Islands" },
+        slug: "developing-capabilities/islands",
+        children: [
+          {
+            title: {
+              pt: "Actions",
+              en: "Actions",
+            },
+            slug: "developing-capabilities/islands/actions",
+          },
+          {
+            title: {
+              pt: "Carregando dados de uma API a partir do browser",
+              en: "Client-side Invocation",
+            },
+            slug: "developing-capabilities/islands/fetching-data-client",
+          },
+        ],
+      },
+      {
+        title: { pt: "Apps", en: "Apps" },
+        slug: "developing-capabilities/apps",
+        children: [
+          {
+            title: {
+              pt: "Desenvolvendo Apps",
+              en: "Developing Apps",
+            },
+            slug: "developing-capabilities/apps/creating-an-app",
+          },
+          {
+            title: {
+              pt: "Instalando Apps",
+              en: "Installing Apps",
+            },
+            slug: "developing-capabilities/apps/making-an-app-installable",
+          },
+          {
+            title: {
+              pt: "Criando um Teste A/B",
+              en: "Creating an A/B Test",
+            },
+            slug: "developing-capabilities/apps/ab-test",
+          },
+        ],
       },
       {
         title: {
-          pt: "Tornando uma Seção configurável",
-          en: "Making Sections editable",
+          pt: "Deco Records",
+          en: "Deco Records",
         },
-        slug: "developing/editable-sections",
-      },
-      {
-        title: { pt: "Criando uma Section", en: "Creating a Section" },
-        slug: "developing/hello-world",
-      },
-      {
-        title: {
-          pt: "Exportando Propriedades Padrões em um Bloco",
-          en: "Exporting Default Props in a Block",
-        },
-        slug: "developing/exporting-default-props",
-      },
-      {
-        title: {
-          pt: "Adicionando interatividade em uma página",
-          en: "Client-side interactivity",
-        },
-        slug: "developing/islands",
-      },
-      {
-        title: {
-          pt: "Tematizando uma Seção",
-          en: "Making a Section Themeable",
-        },
-        slug: "developing/themeable-section",
-      },
-      {
-        title: {
-          pt: "Carregando dados de uma API",
-          en: "Fetching data from APIs",
-        },
-        slug: "developing/fetching-data",
-      },
-      {
-        title: {
-          pt: "Carregando dados de uma API a partir do browser",
-          en: "Client-side Invocation",
-        },
-        slug: "developing/fetching-data-client",
-      },
-      {
-        title: {
-          pt: "Capturando exceções nas Seções",
-          en: "Section error fallback",
-        },
-        slug: "developing/error-fallback",
-      },
-      {
-        title: {
-          pt: "Estados de carregamento nas Seções",
-          en: "Section loading fallback",
-        },
-        slug: "developing/loading-fallback",
-      },
-      {
-        title: {
-          pt: "Redirecionando usuários a partir de Seções",
-          en: "Redirecting users from Sections",
-        },
-        slug: "developing/redirecting-users",
-      },
-      {
-        title: {
-          pt: "Aceitando uma Seção como parâmetro da minha Seção",
-          en: "Accepting Other Sections as Parameters in Your Section",
-        },
-        slug: "developing/accept-a-section",
-      },
-      {
-        title: {
-          pt: "Desenvolvendo Apps",
-          en: "Developing Apps",
-        },
-        slug: "developing/creating-an-app",
-      },
-      {
-        title: { pt: "Utilização de Segredos e Senhas", en: "Using Secrets" },
-        slug: "developing/using-secrets",
-      },
-      {
-        title: {
-          pt: "Instalando Apps",
-          en: "Installing Apps",
-        },
-        slug: "developing/making-an-app-installable",
-      },
-      {
-        title: {
-          pt: "Partial",
-          en: "Partial",
-        },
-        slug: "developing/partial",
+        slug: "reference/deco-records",
       },
       {
         title: {
           pt: "Modificando o status de retorno de uma pagina",
           en: "Modifying the return status of a page",
         },
-        slug: "developing/modifying-status",
+        slug: "developing-capabilities/modifying-status",
       },
       {
         title: {
-          pt: "Criando um Teste A/B",
-          en: "Creating an A/B Test",
+          pt: "E-commerce Analytics",
+          en: "E-commerce Analytics",
         },
-        slug: "developing/ab-test",
+        slug: "reference/analytics",
+      },
+      {
+        title: { pt: "Problemas comuns", en: "Troubleshooting" },
+        slug: "reference/troubleshooting",
       },
     ],
   },
@@ -280,58 +467,6 @@ const tableOfContents: TableOfContents = [
           en: "Assistant",
         },
         slug: "decopilot/assistant",
-      },
-    ],
-  },
-  {
-    title: {
-      pt: "Referência",
-      en: "Reference",
-    },
-    children: [
-      {
-        title: { pt: "Problemas comuns", en: "Troubleshooting" },
-        slug: "reference/troubleshooting",
-      },
-      {
-        title: { pt: "Tipos utilitários", en: "Utility types" },
-        slug: "reference/utility-types",
-      },
-      {
-        title: {
-          pt: "Contribuindo",
-          en: "Contributing",
-        },
-        slug: "reference/contributing",
-      },
-      {
-        title: {
-          pt: "E-commerce Analytics",
-          en: "E-commerce Analytics",
-        },
-        slug: "reference/analytics",
-      },
-      {
-        title: {
-          pt: "Annotations",
-          en: "Annotations",
-        },
-        slug: "reference/annotations",
-      },
-      {
-        title: {
-          pt: "Widgets",
-          en: "Widgets",
-        },
-        slug: "reference/widgets",
-      },
-
-      {
-        title: {
-          pt: "Deco Records",
-          en: "Deco Records",
-        },
-        slug: "reference/deco-records",
       },
     ],
   },
@@ -415,18 +550,19 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
+          pt: "Otimizando loaders",
+          en: "Optimizing loaders",
+        },
+        slug: "performance/loaders",
+      },
+      {
+        title: {
           pt: "Otimizando scripts de terceiros",
           en: "Optimizing 3rd party scripts",
         },
         slug: "performance/lazy-3rd-party-scripts",
       },
-      {
-        title: {
-          pt: "Otimizando Loaders",
-          en: "Optimizing Loaders",
-        },
-        slug: "performance/loaders",
-      },
+      // TODO: Optimizing loaders
       {
         title: {
           pt: "Otimizando Ilhas",
@@ -434,41 +570,19 @@ const tableOfContents: TableOfContents = [
         },
         slug: "performance/islands",
       },
+      {
+        title: {
+          pt: "Renderização assíncrona",
+          en: "Async rendering",
+        },
+        slug: "performance/edge-async-render",
+      }
     ],
   },
   {
     title: {
-      pt: "Criando componentes reutilizáveis",
-      en: "Creating composable UIs",
-    },
-    children: [
-      {
-        title: {
-          pt: "Dados padronizados",
-          en: "Standard data types",
-        },
-        slug: "composable-uis/standard-data-types",
-      },
-      {
-        title: {
-          pt: "Biblioteca de blocos",
-          en: "Block Library",
-        },
-        slug: "composable-uis/block-library",
-      },
-      {
-        title: {
-          pt: "E-commerce",
-          en: "E-commerce",
-        },
-        slug: "composable-uis/ecommerce",
-      },
-    ],
-  },
-  {
-    title: {
-      pt: "External SDKs",
-      en: "External SDKs",
+      pt: "Funcionalidades da Plataforma",
+      en: "Platform capabilities",
     },
     children: [
       {
@@ -485,93 +599,15 @@ const tableOfContents: TableOfContents = [
         },
         slug: "sdk/feature-flags",
       },
+      {
+        title: {
+          pt: "CMS Headless",
+          en: "Headless CMS",
+        },
+        slug: "headless-cms",
+      },
     ],
   },
-  /*{
-    title: {
-      pt: "Treinamento Comercial",
-    },
-    children: [
-      {
-        title: {
-          pt: "Introdução",
-        },
-        slug: "treinamento-comercial/introducao",
-      },
-      {
-        title: {
-          pt: "Agenda",
-        },
-        slug: "treinamento-comercial/agenda",
-      },
-      {
-        title: {
-          pt: "Diagnóstico Inicial",
-        },
-        slug: "treinamento-comercial/diagnostico-inicial",
-      },
-      {
-        title: {
-          pt: "Sales Deck",
-        },
-        slug: "treinamento-comercial/sales-deck",
-      },
-      {
-        title: {
-          pt: "Q&A Comercial",
-        },
-        slug: "treinamento-comercial/qa-comercial",
-      },
-      {
-        title: {
-          pt: "Produto",
-        },
-        slug: "treinamento-comercial/produto",
-      },
-      {
-        title: {
-          pt: "Headless & Composable",
-        },
-        slug: "treinamento-comercial/headless-composable",
-      },
-      {
-        title: {
-          pt: "Web Performance",
-        },
-        slug: "treinamento-comercial/web-performance",
-      },
-      {
-        title: {
-          pt: "Agências Parceiras",
-        },
-        slug: "treinamento-comercial/agencias-parceiras",
-      },
-      {
-        title: {
-          pt: "Nichos de Clients",
-        },
-        slug: "treinamento-comercial/nichos-de-clientes",
-      },
-      {
-        title: {
-          pt: "Objeções",
-        },
-        slug: "treinamento-comercial/objecoes",
-      },
-      {
-        title: {
-          pt: "Seu Primeiro Case",
-        },
-        slug: "treinamento-comercial/seu-primeiro-case",
-      },
-      {
-        title: {
-          pt: "Próximos Passos",
-        },
-        slug: "treinamento-comercial/proximos-passos",
-      },
-    ],
-  },*/
   {
     title: {
       pt: "Referência da API",
@@ -585,88 +621,16 @@ const tableOfContents: TableOfContents = [
         },
         slug: "api-reference/use-section",
       },
+      {
+        title: {
+          pt: "useScript",
+          en: "useScript",
+        },
+        slug: "api-reference/use-script",
+      },
     ],
   },
-  {
-    title: {
-      pt: "CMS Headless",
-      en: "Headless CMS",
-    },
-    slug: "headless-cms",
-  },
 ];
-
-if (import.meta.main) {
-  for (const content of tableOfContents) {
-    if (content.slug) {
-      const path = `./${content.slug}`;
-      const stat: { isDirectory: boolean } = await Deno.stat(path).catch(
-        (_) => ({ isDirectory: false }),
-      );
-      let isCreated = false;
-      if (!stat.isDirectory) {
-        isCreated = await Deno.mkdir(path)
-          .then(() => true)
-          .catch(() => false);
-      }
-      if (!content.children && !isCreated) {
-        await Promise.all([
-          Deno.create(`${join(path, "en.md")}`),
-          Deno.create(`${join(path, "pt.md")}`),
-        ]);
-        await Deno.writeTextFile(
-          join(path, "en.md"),
-          `---
-description: TODO
-since: 1.0.0
----`,
-        );
-        await Deno.writeTextFile(
-          join(path, "pt.md"),
-          `---
-description: TODO
-since: 1.0.0
----`,
-        );
-        continue;
-      }
-    } else if (content.children) {
-      for (const children of content.children) {
-        const path = `./${children.slug}`;
-        const stat: { isDirectory: boolean } = await Deno.stat(path).catch(
-          (_) => ({ isDirectory: false }),
-        );
-        if (!stat.isDirectory) {
-          if (
-            await Deno.mkdir(path, { recursive: true })
-              .then(() => true)
-              .catch(() => false)
-          ) {
-            await Promise.all([
-              Deno.create(`${join(path, "en.md")}`),
-              Deno.create(`${join(path, "pt.md")}`),
-            ]);
-
-            await Deno.writeTextFile(
-              join(path, "en.md"),
-              `---
-description: TODO
-since: 1.0.0
----`,
-            );
-            await Deno.writeTextFile(
-              join(path, "pt.md"),
-              `---
-description: TODO
-since: 1.0.0
----`,
-            );
-          }
-        }
-      }
-    }
-  }
-}
 
 const tableOfContentsBySlug = tableOfContents.reduce((acc, cur) => {
   return addEntriesToAccumulator(acc, cur);

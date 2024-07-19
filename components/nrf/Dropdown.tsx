@@ -1,3 +1,5 @@
+import { clx } from "site/sdk/clx.ts";
+
 export interface DropdownItemProps {
   label: string;
   href: string;
@@ -5,10 +7,6 @@ export interface DropdownItemProps {
 }
 
 function DropdownItem({ href, label, selected }: DropdownItemProps) {
-  const variants = {
-    rounded: "",
-  };
-
   return (
     <div class="flex flex-row items-center justify-between">
       <a
@@ -39,23 +37,20 @@ function DropdownItem({ href, label, selected }: DropdownItemProps) {
 }
 
 export interface Props {
-  open: boolean;
-  onClick: () => void;
   items: DropdownItemProps[];
   value: string;
   variant?: "rounded" | "flat";
 }
 
 export function Dropdown({
-  open,
-  onClick,
   items,
   value,
   variant = "flat",
 }: Props) {
   const variants = {
     rounded: {
-      open: "md:text-[#fff] md:border-[#06E474] md:border",
+      open:
+        "[&>input:checked]:md:text-[#fff] [&>input:checked]:md:border-[#06E474] [&>input:checked]:md:border",
       default:
         "select-none hidden md:flex gap-2 items-center text-[#06E474] border-[transparent] rounded-full border md:hover:border-[#2FD180] md:hover:border md:hover:rounded-full focus:outline-none md:transition md:ease-in-out md:duration-300",
     },
@@ -69,9 +64,10 @@ export function Dropdown({
   const variantClass = variants[variant];
 
   return (
-    <div class={`${open ? variantClass.open : ""} ${variantClass.default}`}>
-      <div
-        onClick={onClick}
+    <div class={clx(variantClass.default, variantClass.open)}>
+      <input id={value} name={value} type="checkbox" class="hidden peer" />
+      <label
+        for={value}
         class="z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer"
       >
         {value}
@@ -89,18 +85,13 @@ export function Dropdown({
             stroke-linecap="round"
           />
         </svg>
-      </div>
+      </label>
       <div
-        onClick={onClick}
-        class={`${
-          open
-            ? "block cursor-pointer w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]"
-            : "hidden"
-        }`}
+        class={"hidden peer-checked:block cursor-pointer w-[110vw] h-[110vh] absolute left-[-90vw] top-[-20px]"}
       >
       </div>
       <div
-        class={`${open ? "block" : "hidden"} ${
+        class={`${"hidden peer-checked:block"} ${
           variant === "flat" ? "top-[48px]" : "top-[35px]"
         } z-30 absolute right-0 mt-5 rounded`}
       >

@@ -56,13 +56,6 @@ export default function ContactUs({
   infor,
   langThanks = "en",
   formInfor,
-  FieldNeedOptions = [
-    { name: "Plataforma deco.cx", label: "deco.cx platform" },
-    { name: "Parceria com a deco.cx", label: "Partnetship" },
-    { name: "Whitelabel deco.cx", label: "Whitelabel" },
-    { name: "decoHub", label: "deco.hub" },
-    { name: "Outros", label: "Other (describe below)" },
-  ],
   FieldContacts = [
     { name: "Agência", label: "System Integrator" },
     { name: "Marca", label: "Ecommerce Enterprise" },

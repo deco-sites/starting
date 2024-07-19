@@ -33,13 +33,22 @@ accessing the "Records" menu.
 
 ## Creating Tables
 
-> You will need the files that were created during the installation of deco records on your computer. If necessary, perform a git pull from your remote project.
+> You will need the files that were created during the installation of deco
+> records on your computer. If necessary, perform a git pull from your remote
+> project.
 
-Follow the steps below to create new tables in your database or watch the video. This process will use [drizzle-orm](https://orm.drizzle.team/) and [drizzle-kit](https://orm.drizzle.team/) to create and manage tables in your database through [schema migrations](https://medium.com/@joelrodrigues/o-que-s%C3%A3o-database-migrations-f817448870a2). In the following example, a table named `profiles` will be created with the columns: `id`, `name`, and `email`.
+Follow the steps below to create new tables in your database or watch the video.
+This process will use [drizzle-orm](https://orm.drizzle.team/) and
+[drizzle-kit](https://orm.drizzle.team/) to create and manage tables in your
+database through
+[schema migrations](https://medium.com/@joelrodrigues/o-que-s%C3%A3o-database-migrations-f817448870a2).
+In the following example, a table named `profiles` will be created with the
+columns: `id`, `name`, and `email`.
 
 <iframe width="640" height="400" src="https://www.loom.com/embed/7d7442496a8c45109eaf67f1e00fc2f1?sid=2124b27e-d754-44f0-b7a2-8fc0e977d945" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <!-- Use span due to a bug in markdown parser deno-gfm -->
+
 <span>1.</span> Edit the `db/schema.ts` file to create tables.
 
 ```ts
@@ -52,25 +61,40 @@ export const profiles = sqliteTable("profiles", {
 });
 ```
 
-<span>2.</span> Go to your site's admin, click on the `Settings` menu, then in the Database credentials section, click `Generate now`. Finally, click the icon to copy the credentials.
-<span>3.</span> Add the credentials to your computer's operating system environment variables.
-   ![Visualization of the generate credentials button](/docs/reference/deco-records/generate-credentials.webp)
-<span>4.</span> Run the deno task `db:setup:deps` in your terminal to install the necessary dependencies to perform the schema migration. You need Deno version 1.43.0 or higher and use the environment variable `DENO_FUTURE=1` to enable the installation of npm modules.
-<span>5.</span> Run the deno task `db:schema:update` to create the SQL files responsible for the schema migration and apply them to the database. Run this command whenever you make changes to your tables to generate new schema migrations.
+<span>2.</span> Go to your site's admin, click on the `Settings` menu, then in
+the Database credentials section, click `Generate now`. Finally, click the icon
+to copy the credentials.
+<span>3.</span> Add the credentials to your computer's operating system
+environment variables.
+![Visualization of the generate credentials button](/docs/reference/deco-records/generate-credentials.webp)
+<span>4.</span> Run the deno task `db:setup:deps` in your terminal to install
+the necessary dependencies to perform the schema migration. You need Deno
+version 1.43.0 or higher and use the environment variable `DENO_FUTURE=1` to
+enable the installation of npm modules.
+<span>5.</span> Run the deno task `db:schema:update` to create the SQL files
+responsible for the schema migration and apply them to the database. Run this
+command whenever you make changes to your tables to generate new schema
+migrations.
 
 ```sh
 deno task db:setup:deps
 ```
 
-<span>6.</span> In the records menu of your site, in the deco admin, you will see the `profiles` and `__drizzle__migrations` tables. The `drizzle__migrations` table is auto-generated and used by drizzle-kit to manage schema migrations.
+<span>6.</span> In the records menu of your site, in the deco admin, you will
+see the `profiles` and `__drizzle__migrations` tables. The `drizzle__migrations`
+table is auto-generated and used by drizzle-kit to manage schema migrations.
 
 ![Visualization of deco records tables](/docs/reference/deco-records/records-view-tables.webp)
 
-> Add the auto-generated files to a git commit and push them to the remote git repository.
+> Add the auto-generated files to a git commit and push them to the remote git
+> repository.
 
 ## Reading and Writing Data
 
-With the `profiles` table created, we can now create a [section](https://deco.cx/docs/pt/concepts/section) to manage profiles, where we can list, remove, and create a profile. Create a section that will be the profile manager.
+With the `profiles` table created, we can now create a
+[section](https://deco.cx/docs/pt/concepts/section) to manage profiles, where we
+can list, remove, and create a profile. Create a section that will be the
+profile manager.
 
 ```ts
 import { eq } from "drizzle-orm";
@@ -127,8 +151,7 @@ export async function loader(
     await drizzle.insert(profiles).values(
       newProfile as typeof profiles.$inferInsert,
     );
-  } 
-  // If mode is delete and email is defined and not empty, then remove all profiles with this email.
+  } // If mode is delete and email is defined and not empty, then remove all profiles with this email.
   else if (mode === "delete" && email) {
     await drizzle.delete(profiles).where(eq(profiles.email, email));
   }
@@ -188,7 +211,7 @@ export default function ManageProfiles(
 
       <div class="divide-y divide-gray-300 p-2 w-fit">
         <h3>Members List</h3>
-        {profiles.map((profile) => {       
+        {profiles.map((profile) => {
           // Section URL with mode = delete property and the email of the profile to be removed, used for form submission and profile removal.
           const profileDeleteUrl = useSection<Props>({
             props: { mode: "delete", email: profile.email ?? "" },
@@ -217,7 +240,8 @@ export default function ManageProfiles(
 }
 ```
 
-In the previous example, the inline loader uses the `drizzle` client provided by the records app to query the database, insert, and remove profiles.
+In the previous example, the inline loader uses the `drizzle` client provided by
+the records app to query the database, insert, and remove profiles.
 
 ## Developing Locally
 

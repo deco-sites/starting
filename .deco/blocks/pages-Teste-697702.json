@@ -16,7 +16,7 @@
             "description": "Learn how to deploy high-performances web experiences become the Elite Web "
           },
           {
-            "__resolveType": "Deco Header [EN]"
+            "__resolveType": "HeaderV2"
           },
           {
             "__resolveType": "site/sections/Camp/Theme/Theme.tsx",
@@ -934,7 +934,7 @@
                 "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-Performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Fast Execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Easy Personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
               },
               {
-                "__resolveType": "site/sections/Home/Marks.tsx",
+                "__resolveType": "site/sections/Home/Results.tsx",
                 "marks": [
                   {
                     "title": "<p>6<span style=\"color: rgb(2, 246, 124)\">X</span></p>",
