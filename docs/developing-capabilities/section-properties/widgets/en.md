@@ -176,7 +176,7 @@ Example 2:
 export interface Props {
   /**
    * @format dynamic-options
-   * @options deco-sites/mystore/loaders/products.ts
+   * @options site/loaders/products.ts
    */
   product: string;
 }
@@ -187,8 +187,12 @@ export interface Props {
 ```ts
 import { allowCorsFor, FnContext } from "deco/mod.ts";
 
+interface Props {
+  term?: string;
+}
+
 export default function ProductsLoader(
-  _props: unknown,
+  props: Props,
   req: Request,
   ctx: FnContext,
 ) {
@@ -197,9 +201,15 @@ export default function ProductsLoader(
     ctx.response.headers.set(name, value);
   });
 
-  return ["Product X", "Product Y", "Product Z"];
+  // fetch X api
+  const products = ["Product X", "Product Y", "Product Z"]
+
+  return products.filter(p => p.includes(props.term));
 }
 ```
+
+
+Note that your loader can receive a ``term``, this will behave like a search.
 
 ## Color Input
 

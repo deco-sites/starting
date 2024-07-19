@@ -195,8 +195,12 @@ export interface Props {
 ```ts
 import { allowCorsFor, FnContext } from "deco/mod.ts";
 
-export default function ProdutosLoader(
-  _props: unknown,
+interface Props {
+  term?: string;
+}
+
+export default function ProductsLoader(
+  props: Props,
   req: Request,
   ctx: FnContext,
 ) {
@@ -205,9 +209,14 @@ export default function ProdutosLoader(
     ctx.response.headers.set(name, value);
   });
 
-  return ["Produto X", "Produto Y", "Produto Z"];
+  // fetch X api
+  const products = ["Product X", "Product Y", "Product Z"]
+
+  return products.filter(p => p.includes(props.term));
 }
 ```
+
+Perceba que o seu loader pode receber um ``term``, isso vai se comportar como uma busca.
 
 ## Color Input
 
@@ -264,7 +273,7 @@ Exemplo:
 export interface Props {
   /**
    * @format button-group
-   * @options deco-sites/mystore/loaders/icons.ts
+   * @options site/loaders/icons.ts
    */
   textAlignment?: "Left" | "Center" | "Right";
 }
