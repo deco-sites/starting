@@ -14,6 +14,21 @@ export interface Doc {
   title?: string;
 }
 
+const GH_USER_CONTENT_URL = 'https://raw.githubusercontent.com';
+const OWNER = 'deco-cx';
+const REPO = 'apps';
+
+export const cache = "stale-while-revalidate";
+
+export const cacheKey = (
+  _props: unknown,
+  req: Request,
+  _ctx: LoaderContext,
+) => {
+  const url = new URL(req.url);
+  return url.pathname;
+}
+
 const loader = async (
   props: { urlPattern: string; group: number; docs?: Doc[]; docsPath?: string },
   _req: Request,
@@ -34,6 +49,20 @@ const loader = async (
     >; // redirect, component won't be resolved, so don't need the data;
   }
 
+  if (documentSlug.includes("decohub")) {
+    const appName = documentSlug.split("/")[1];
+
+    const url = `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${appName}/README.md`;
+
+    const response = await fetch(url);
+
+    const content = await response.text();
+
+    const contentWithDescription = `---\ndescription: This is the README of the ${appName} app\n---\n${content}`;
+
+    return { content: contentWithDescription, title: appName };
+  }
+
   const url = new URL(
     `../${path}/${documentSlug}/${language}.md`,
     import.meta.url,
@@ -47,6 +76,7 @@ const loader = async (
 
   try {
     const fileContent = await Deno.readTextFile(url);
+
     return {
       content: fileContent,
       title: getTitleForPost(language == "en" ? "en" : "pt", documentSlug),
