@@ -490,36 +490,6 @@ const tableOfContents: TableOfContents = [
         },
         slug: "performance/guide",
       },
-      /*
-      {
-        title: {
-          pt: "Teste local de performance",
-          en: "Performance local test",
-        },
-        slug: "performance/testing/local",
-      },
-      {
-        title: {
-          pt: "Teste de pagespeed",
-          en: "Pagespeed test",
-        },
-        slug: "performance/testing/pagespeed",
-      },
-      {
-        title: {
-          pt: "Teste de métricas deco",
-          en: "Deco metrics performance tests",
-        },
-        slug: "performance/testing/decometrics",
-      },
-      {
-        title: {
-          pt: "Teste do Core Web Vitals",
-          en: "Core Web Vitals test",
-        },
-        slug: "performance/testing/cwv",
-      },
-      */
       {
         title: {
           pt: "Otimizando CSS",
@@ -562,7 +532,6 @@ const tableOfContents: TableOfContents = [
         },
         slug: "performance/lazy-3rd-party-scripts",
       },
-      // TODO: Optimizing loaders
       {
         title: {
           pt: "Otimizando Ilhas",
