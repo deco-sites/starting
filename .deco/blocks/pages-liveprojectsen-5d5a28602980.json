@@ -730,24 +730,34 @@
               "label": "Casa & Video"
             },
             {
-              "link": "https://www.copelcolchoes.com.br/",
+              "link": "https://www.lojaclickhouse.com.br/",
               "image": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f66f7f84-74ea-404a-92d5-b647ed0c8a3a",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d8c3ac10-2853-4152-be9b-0380d5968903",
                   "color": "#FFFFFF"
                 }
               ],
-              "label": "Copel Colchões"
+              "label": "ClickHouse"
             },
             {
               "image": [
                 {
                   "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/100b89f4-c08f-498f-b816-b23130e1e184"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f66f7f84-74ea-404a-92d5-b647ed0c8a3a"
                 }
               ],
-              "label": "Costa Atacado",
-              "link": "https://www.costaatacado.com.br/"
+              "label": "Copel Colchões",
+              "link": "https://www.copelcolchoes.com.br/"
+            },
+            {
+              "link": "https://www.costaatacado.com.br/",
+              "image": [
+                {
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/100b89f4-c08f-498f-b816-b23130e1e184",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Costa Atacado"
             },
             {
               "link": "https://www.cristaistavares.com.br/",
@@ -780,13 +790,13 @@
               "label": "Lojas Top Móveis"
             },
             {
-              "link": "https://lojavirtual.lumini.com.br/",
               "image": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6618e37e-7564-4ea0-9ee3-f3e80d1f432a",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6618e37e-7564-4ea0-9ee3-f3e80d1f432a"
                 }
               ],
+              "link": "https://lojavirtual.lumini.com.br/",
               "label": "Lumini"
             },
             {
@@ -796,8 +806,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/35f9bea5-9017-4418-90dd-ca953dac9e36"
                 }
               ],
-              "link": "https://www.openbox2.com.br/",
-              "label": "OpenBox2"
+              "label": "OpenBox2",
+              "link": "https://www.openbox2.com.br/"
             },
             {
               "image": [
@@ -806,8 +816,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c3393e0c-15e2-4dc1-acaf-9f2ffa8f3244"
                 }
               ],
-              "label": "Star Company",
-              "link": "https://star-company.deco.site/"
+              "link": "https://star-company.deco.site/",
+              "label": "Star Company"
             },
             {
               "image": [
@@ -816,8 +826,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e5ad9d6e-71c8-42b5-b167-847009df9898"
                 }
               ],
-              "link": "https://loja.teciplast.com.br/",
-              "label": "Teciplast"
+              "label": "Teciplast",
+              "link": "https://loja.teciplast.com.br/"
             }
           ],
           "label": "Home & Decor"
