@@ -44,7 +44,7 @@ export default function GlossaryPostList({
   posts,
   pagination: {
     page = 0,
-    perPage = 6,
+    perPage = 60,
   } = {},
 }: Props) {
   const from = perPage * page;
@@ -203,7 +203,7 @@ export default function GlossaryPostList({
                         <a
                           key={title}
                           href={`/glossary/${post?.slug}`}
-                          class="overflow-hidden max-w-[608px] w-full bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px]"
+                          class="overflow-hidden max-w-[640px] w-full bg-[#FFFFFF0D] border border-[#FFFFFF26] rounded-[20px]"
                         >
                           <div class="p-6 space-y-4">
                             <div class="space-y-2">

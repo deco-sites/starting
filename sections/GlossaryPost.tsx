@@ -12,7 +12,7 @@ interface Props {
 
 const PARAGRAPH_STYLES = "[&_p]:leading-[150%] [&_*]:mb-4 text-white";
 const HEADING_STYLES =
-  "[&>h1]:text-4xl [&>h1]:my-6 [&>h1]:font-bold [&>h2]:text-3xl [&>h2]:my-6 [&>h2]:font-bold [&>h3]:text-2xl [&>h3]:text-[#02F67C] [&>h3]:my-6 [&>h3]:font-bold [&>h4]:text-xl [&>h4]:my-6 [&>h4]:font-bold [&>h5]:text-lg [&>h5]:my-6 [&>h5]:font-bold [&>h6]:text-white [&>h6]:my-6 [&>h6]:font-bold";
+  "[&>h1]:text-4xl [&>h1]:my-6 [&>h1]:font-bold [&>h2]:text-3xl [&>h2]:my-6 [&>h2]:font-bold [&>h2]:text-[#02F67C] [&>h1]:text-2xl [&>h1]:text-[#02F67C] [&>h1]:my-6 [&>h1]:font-bold [&>h4]:text-xl [&>h4]:my-6 [&>h4]:font-bold [&>h5]:text-lg [&>h5]:my-6 [&>h5]:font-bold [&>h6]:text-white [&>h6]:my-6 [&>h6]:font-bold";
 const CODE_BLOCK_STYLES =
   "[&>pre]:bg-gray-100 [&>pre]:text-white [&>pre]:p-4 [&>pre]:font-mono [&>pre]:text-sm [&>pre]:border [&>pre]:rounded-md [&>pre]:overflow-x-auto [&>code]:block [&>code]:w-full";
 const IMAGE_STYLES = "[&_img]:rounded-2xl [&_img]:w-full [&_img]:my-12";
@@ -108,6 +108,12 @@ function SocialIcons() {
 export default function GlossaryPost({ slug, posts }: Props) {
   const post = posts?.find((p) => p.slug === slug);
 
+  posts?.sort((a, b) => {
+    const titleA = a?.title?.toLowerCase().trim();
+    const titleB = b?.title?.toLowerCase().trim();
+    return titleA?.localeCompare(titleB);
+  });
+
   const { title, image, content, excerpt } = post || DEFAULT_PROPS;
 
   let currentLetter = "";
@@ -116,44 +122,43 @@ export default function GlossaryPost({ slug, posts }: Props) {
     return title?.charAt(0).toUpperCase();
   }
 
+  
+
   return (
     <div class="flex gap-10 w-full container mx-auto px-4 md:px-0 py-24 lg:py-0  lg:pb-28 lg:mt-44 ">
       <div class="flex-col hidden md:flex min-w-[240px]">
-        <a href="/glossary" class="text-white hover:font-semibold">
-          All glossary terms
-        </a>
-        {posts?.map((post) => {
-          const title = post?.title;
-          const letter = getFirstLetter(title);
-          if (letter !== currentLetter) {
-            currentLetter = letter;
-            return (
-              <div key={title} class="flex flex-col">
-                <div class="w-10 h-[1px] bg-gray-200 my-4"></div>
-                <a
-                  href={`/glossary/${post?.slug}`}
-                  class={`overflow-hidden hover:font-semibold ${
-                    title?.toUpperCase() === slug?.toUpperCase() &&
-                    "text-[#02F67C]"
-                  }`}
-                >
-                  {title}
-                </a>
-              </div>
-            );
-          } else {
-            return (
-              <a
-                key={title}
-                href={`/glossary/${post?.slug}`}
-                class="overflow-hidden hover:font-semibold"
-              >
-                {title}
+              <a href="/glossary" class="text-white hover:text-[#02F67C]">
+                All glossary terms
               </a>
-            );
-          }
-        })}
-      </div>
+              {posts?.map((post) => {
+                const currentTitle = post?.title;
+                const letter = getFirstLetter(currentTitle?.trim());
+                if (letter !== currentLetter) {
+                  currentLetter = letter;
+                  return (
+                    <div key={currentTitle} class="flex flex-col">
+                      <div class="w-10 h-[1px] bg-white my-4"></div>
+                      <a
+                        href={`/glossary/${post?.slug}`}
+                        class={` overflow-hidden  ${title===currentTitle ? "text-[#02F67C]" : "text-white"} hover:text-[#02F67C]`}
+                      >
+                        {currentTitle}
+                      </a>
+                    </div>
+                  );
+                } else {
+                  return (
+                    <a
+                      key={currentTitle}
+                      href={`/glossary/${post?.slug}`}
+                      class={`overflow-hidden hover:text-[#02F67C] ${title===currentTitle ? "text-[#02F67C]" : "text-white"}`}
+                    >
+                      {currentTitle}
+                    </a>
+                  );
+                }
+              })}
+            </div>
       <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0">
         <div className="w-full flex flex-col gap-12 items-center justify-center">
           <h1 className="text-5xl font-bold text-[#02f67c]">{title}</h1>

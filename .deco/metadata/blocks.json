@@ -283,10 +283,6 @@
     "__resolveType": "blog/loaders/Blogpost.ts",
     "blockType": "loaders"
   },
-  "/.deco/blocks/collections%2Fblog%2Fposts%2Faec3d821c849.json": {
-    "__resolveType": "blog/loaders/Blogpost.ts",
-    "blockType": "loaders"
-  },
   "/.deco/blocks/collections%2Fblog%2Fposts%2Fc03bdfc8a9ad.json": {
     "__resolveType": "blog/loaders/Blogpost.ts",
     "blockType": "loaders"

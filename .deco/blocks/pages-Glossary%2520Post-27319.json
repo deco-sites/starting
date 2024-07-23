@@ -15,7 +15,7 @@
       },
       "posts": {
         "__resolveType": "blog/loaders/BlogpostList.ts",
-        "count": 6
+        "count": 60
       },
       "slug": {
         "__resolveType": "website/functions/requestToParam.ts",
