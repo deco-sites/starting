@@ -91,7 +91,7 @@ export interface FormProps {
 
 export default function Section(props: FormProps) {
   return (
-    <div class="relative min-h-screen h-full bg-[#F0ECE2] -z-50">
+    <div class="relative min-h-screen h-full">
       <Image
         preload
         src={props.background}
