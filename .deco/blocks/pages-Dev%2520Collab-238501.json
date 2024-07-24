@@ -1,0 +1,22 @@
+{
+  "name": "Dev Collab",
+  "path": "/dev-collab",
+  "sections": [
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "site/sections/Home/FAQ.tsx"
+    },
+    {
+      "__resolveType": "Deco Investors"
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

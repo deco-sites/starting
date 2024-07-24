@@ -102,6 +102,11 @@
               "columns": [],
               "label": "Live Projects",
               "href": "/en/live-projects"
+            },
+            {
+              "columns": [],
+              "label": "Glossary",
+              "href": "/glossary"
             }
           ]
         }

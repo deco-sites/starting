@@ -1022,5 +1022,15 @@
     "path": "/tuju",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Dev%2520Collab-238501.json": {
+    "name": "Dev Collab",
+    "path": "/dev-collab",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Deco%20Investors.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/New Landing/Investors.tsx"
   }
 }

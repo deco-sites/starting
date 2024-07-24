@@ -91,36 +91,41 @@ export interface FormProps {
 
 export default function Section(props: FormProps) {
   return (
-    <div class="flex flex-col text-[#113032] justify-center lg:justify-between md:flex-row items-center min-h-screen">
-      <div
-        class="flex md:absolute -z-50 items-center overflow-hidden bg-no-repeat bg-cover bg-center h-32 md:h-screen w-screen"
-        style={`background-image: url('${props.background}');`}
-      ></div>
-      <div
-        class="flex flex-col bg-[#F0ECE2] md:bg-transparent justify-center bg-no-repeat bg-auto md:bg-cover px-4 md:px-16 max-w-[750px] min-h-[800px] ml-0 lg:ml-20 grow"
-        style="background-image: url('/background.svg');"
-      >
-        <div class="flex relative self-start items-center w-full h-full">
-          <Icon
-            id="deco"
-            width="173"
-            height="48"
-            class="absolute top-[-26px]"
-          />
-          <Icon
-            id="Flower"
-            width="50"
-            height="50"
-            class="hidden md:block absolute top-[-26px] right-[-90px]"
-          />
-        </div>
+    <>
+      <Image
+        preload
+        src={props.background}
+        height={200}
+        width={400}
+        class="flex md:absolute -z-50 items-center overflow-hidden bg-no-repeat bg-cover bg-center h-32 md:h-screen w-screen object-cover"
+      />
+      <div class="flex flex-col text-[#113032] justify-center lg:justify-between md:flex-row items-center min-h-screen">
+        <div
+          class="flex flex-col bg-[#F0ECE2] md:bg-transparent justify-center bg-no-repeat bg-auto md:bg-cover px-4 md:px-16 max-w-[750px] max-h-[800px] min-h-[650px] h-full ml-0 lg:ml-20 md:my-8 grow"
+          style="background-image: url('/background.svg');"
+        >
+          <div class="flex relative self-start items-center w-full h-full">
+            <Icon
+              id="deco"
+              width="173"
+              height="48"
+              class="absolute top-[-26px]"
+            />
+            <Icon
+              id="Flower"
+              width="50"
+              height="50"
+              class="hidden md:block absolute top-[-26px] right-[-90px]"
+            />
+          </div>
 
-        <FormStates {...props} />
+          <FormStates {...props} />
+        </div>
+        <div class="hidden lg:flex flex-col items-center justify-between h-screen py-8 px-4">
+          <Image src={props.logo} width={100} />
+          <span class="text-white text-2xl">{props.date}</span>
+        </div>
       </div>
-      <div class="hidden lg:flex flex-col items-center justify-between h-screen py-8 px-4">
-        <Image src={props.logo} width={100} />
-        <span class="text-white text-2xl">{props.date}</span>
-      </div>
-    </div>
+    </>
   );
 }

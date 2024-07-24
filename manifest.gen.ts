@@ -119,78 +119,82 @@ import * as $$$$$$93 from "./sections/Links.tsx";
 import * as $$$$$$94 from "./sections/Live Projects/Hero.tsx";
 import * as $$$$$$95 from "./sections/Live Projects/LiveProjects.tsx";
 import * as $$$$$$96 from "./sections/Live Projects/ProjectsGrid.tsx";
-import * as $$$$$$97 from "./sections/MainBanner.tsx";
-import * as $$$$$$98 from "./sections/Markdown.tsx";
-import * as $$$$$$99 from "./sections/MarkdownContent.tsx";
-import * as $$$$$$121 from "./sections/New Landing/CarouselLinks.tsx";
-import * as $$$$$$122 from "./sections/New Landing/GetSiteDone.tsx";
-import * as $$$$$$123 from "./sections/New Landing/Investors.tsx";
-import * as $$$$$$100 from "./sections/NRF/BlogPosts.tsx";
-import * as $$$$$$101 from "./sections/NRF/Brands.tsx";
-import * as $$$$$$102 from "./sections/NRF/CallToAction.tsx";
-import * as $$$$$$103 from "./sections/NRF/Contact.tsx";
-import * as $$$$$$104 from "./sections/NRF/DecoFooter.tsx";
-import * as $$$$$$105 from "./sections/NRF/Editor.tsx";
-import * as $$$$$$106 from "./sections/NRF/EditorMobile.tsx";
-import * as $$$$$$107 from "./sections/NRF/Features.tsx";
-import * as $$$$$$108 from "./sections/NRF/FeaturesWithImage.tsx";
-import * as $$$$$$109 from "./sections/NRF/Grid.tsx";
-import * as $$$$$$110 from "./sections/NRF/Header.tsx";
-import * as $$$$$$111 from "./sections/NRF/Hero.tsx";
-import * as $$$$$$112 from "./sections/NRF/HeroFlat.tsx";
-import * as $$$$$$113 from "./sections/NRF/ImageSection.tsx";
-import * as $$$$$$114 from "./sections/NRF/PlatformContact.tsx";
-import * as $$$$$$115 from "./sections/NRF/Pricing.tsx";
-import * as $$$$$$116 from "./sections/NRF/PricingTable.tsx";
-import * as $$$$$$117 from "./sections/NRF/PricingValue.tsx";
-import * as $$$$$$118 from "./sections/NRF/Questions.tsx";
-import * as $$$$$$119 from "./sections/NRF/TextLines.tsx";
-import * as $$$$$$120 from "./sections/NRF/Thanks.tsx";
-import * as $$$$$$124 from "./sections/OnThisPage.tsx";
-import * as $$$$$$125 from "./sections/Page.tsx";
-import * as $$$$$$126 from "./sections/PageContest/CallToAction.tsx";
-import * as $$$$$$127 from "./sections/PageContest/Faq.tsx";
-import * as $$$$$$128 from "./sections/PageContest/Features.tsx";
-import * as $$$$$$129 from "./sections/PageContest/Hero.tsx";
-import * as $$$$$$130 from "./sections/PageContest/HowItWorks.tsx";
-import * as $$$$$$131 from "./sections/PageContest/SectionHeader.tsx";
-import * as $$$$$$132 from "./sections/Partner.tsx";
-import * as $$$$$$133 from "./sections/PopularDocuments.tsx";
-import * as $$$$$$134 from "./sections/PopularTopics.tsx";
-import * as $$$$$$135 from "./sections/Pricing.tsx";
-import * as $$$$$$136 from "./sections/PricingTiers.tsx";
-import * as $$$$$$137 from "./sections/PricingValue.tsx";
-import * as $$$$$$138 from "./sections/ProductHuntCTA.tsx";
-import * as $$$$$$139 from "./sections/QuillText.tsx";
-import * as $$$$$$140 from "./sections/RankingAnalyze.tsx";
-import * as $$$$$$141 from "./sections/RankingHeader.tsx";
-import * as $$$$$$142 from "./sections/RankingList.tsx";
-import * as $$$$$$143 from "./sections/ReCAPTCHA.tsx";
-import * as $$$$$$144 from "./sections/RichLetter.tsx";
-import * as $$$$$$145 from "./sections/Roadmap.tsx";
-import * as $$$$$$146 from "./sections/SectionList.tsx";
-import * as $$$$$$147 from "./sections/Sidebar.tsx";
-import * as $$$$$$148 from "./sections/Test.tsx";
-import * as $$$$$$149 from "./sections/Thanks.tsx";
-import * as $$$$$$150 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$151 from "./sections/Theme/ThemeHints.tsx";
-import * as $$$$$$152 from "./sections/TripletBanner.tsx";
-import * as $$$$$$153 from "./sections/WasThisPageHelpful.tsx";
-import * as $$$$$$154 from "./sections/Webinar/Content.tsx";
-import * as $$$$$$155 from "./sections/Webinar/Hero.tsx";
-import * as $$$$$$156 from "./sections/Whatsapp.tsx";
-import * as $$$$$$157 from "./sections/Why.tsx";
-import * as $$$$$$158 from "./sections/tuju/Form.tsx";
+import * as $$$$$$97 from "./sections/LiveProjects/Hero.tsx";
+import * as $$$$$$98 from "./sections/LiveProjects/LiveProjects.tsx";
+import * as $$$$$$99 from "./sections/LiveProjects/ProjectsGrid.tsx";
+import * as $$$$$$100 from "./sections/LiveProjects/ProjectsSlider.tsx";
+import * as $$$$$$101 from "./sections/MainBanner.tsx";
+import * as $$$$$$102 from "./sections/Markdown.tsx";
+import * as $$$$$$103 from "./sections/MarkdownContent.tsx";
+import * as $$$$$$125 from "./sections/New Landing/CarouselLinks.tsx";
+import * as $$$$$$126 from "./sections/New Landing/GetSiteDone.tsx";
+import * as $$$$$$127 from "./sections/New Landing/Investors.tsx";
+import * as $$$$$$104 from "./sections/NRF/BlogPosts.tsx";
+import * as $$$$$$105 from "./sections/NRF/Brands.tsx";
+import * as $$$$$$106 from "./sections/NRF/CallToAction.tsx";
+import * as $$$$$$107 from "./sections/NRF/Contact.tsx";
+import * as $$$$$$108 from "./sections/NRF/DecoFooter.tsx";
+import * as $$$$$$109 from "./sections/NRF/Editor.tsx";
+import * as $$$$$$110 from "./sections/NRF/EditorMobile.tsx";
+import * as $$$$$$111 from "./sections/NRF/Features.tsx";
+import * as $$$$$$112 from "./sections/NRF/FeaturesWithImage.tsx";
+import * as $$$$$$113 from "./sections/NRF/Grid.tsx";
+import * as $$$$$$114 from "./sections/NRF/Header.tsx";
+import * as $$$$$$115 from "./sections/NRF/Hero.tsx";
+import * as $$$$$$116 from "./sections/NRF/HeroFlat.tsx";
+import * as $$$$$$117 from "./sections/NRF/ImageSection.tsx";
+import * as $$$$$$118 from "./sections/NRF/PlatformContact.tsx";
+import * as $$$$$$119 from "./sections/NRF/Pricing.tsx";
+import * as $$$$$$120 from "./sections/NRF/PricingTable.tsx";
+import * as $$$$$$121 from "./sections/NRF/PricingValue.tsx";
+import * as $$$$$$122 from "./sections/NRF/Questions.tsx";
+import * as $$$$$$123 from "./sections/NRF/TextLines.tsx";
+import * as $$$$$$124 from "./sections/NRF/Thanks.tsx";
+import * as $$$$$$128 from "./sections/OnThisPage.tsx";
+import * as $$$$$$129 from "./sections/Page.tsx";
+import * as $$$$$$130 from "./sections/PageContest/CallToAction.tsx";
+import * as $$$$$$131 from "./sections/PageContest/Faq.tsx";
+import * as $$$$$$132 from "./sections/PageContest/Features.tsx";
+import * as $$$$$$133 from "./sections/PageContest/Hero.tsx";
+import * as $$$$$$134 from "./sections/PageContest/HowItWorks.tsx";
+import * as $$$$$$135 from "./sections/PageContest/SectionHeader.tsx";
+import * as $$$$$$136 from "./sections/Partner.tsx";
+import * as $$$$$$137 from "./sections/PopularDocuments.tsx";
+import * as $$$$$$138 from "./sections/PopularTopics.tsx";
+import * as $$$$$$139 from "./sections/Pricing.tsx";
+import * as $$$$$$140 from "./sections/PricingTiers.tsx";
+import * as $$$$$$141 from "./sections/PricingValue.tsx";
+import * as $$$$$$142 from "./sections/ProductHuntCTA.tsx";
+import * as $$$$$$143 from "./sections/QuillText.tsx";
+import * as $$$$$$144 from "./sections/RankingAnalyze.tsx";
+import * as $$$$$$145 from "./sections/RankingHeader.tsx";
+import * as $$$$$$146 from "./sections/RankingList.tsx";
+import * as $$$$$$147 from "./sections/ReCAPTCHA.tsx";
+import * as $$$$$$148 from "./sections/RichLetter.tsx";
+import * as $$$$$$149 from "./sections/Roadmap.tsx";
+import * as $$$$$$150 from "./sections/SectionList.tsx";
+import * as $$$$$$151 from "./sections/Sidebar.tsx";
+import * as $$$$$$152 from "./sections/Test.tsx";
+import * as $$$$$$153 from "./sections/Thanks.tsx";
+import * as $$$$$$154 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$155 from "./sections/Theme/ThemeHints.tsx";
+import * as $$$$$$156 from "./sections/TripletBanner.tsx";
+import * as $$$$$$162 from "./sections/tuju/Form.tsx";
+import * as $$$$$$157 from "./sections/WasThisPageHelpful.tsx";
+import * as $$$$$$158 from "./sections/Webinar/Content.tsx";
+import * as $$$$$$159 from "./sections/Webinar/Hero.tsx";
+import * as $$$$$$160 from "./sections/Whatsapp.tsx";
+import * as $$$$$$161 from "./sections/Why.tsx";
 
 const manifest = {
-  functions: {
+  "functions": {
     "site/functions/LoadGitHubRaw.ts": $0,
     "site/functions/LoadGitHubRawPost.ts": $1,
     "site/functions/LoadGitHubRawPostList.ts": $2,
     "site/functions/LoadPageProps.ts": $3,
     "site/functions/psiRankingList.ts": $4,
   },
-  loaders: {
+  "loaders": {
     "site/loaders/blogPostDetailsLoader.ts": $$$0,
     "site/loaders/blogPostLoader.ts": $$$1,
     "site/loaders/blogPostMarkdownLoader.ts": $$$2,
@@ -198,11 +202,11 @@ const manifest = {
     "site/loaders/denoTopicsLoader.ts": $$$4,
     "site/loaders/featuredPosts.ts": $$$5,
   },
-  handlers: {
+  "handlers": {
     "site/handlers/feed.ts": $$$$0,
     "site/handlers/sitemap.ts": $$$$1,
   },
-  sections: {
+  "sections": {
     "site/sections/About.tsx": $$$$$$0,
     "site/sections/Benefits.tsx": $$$$$$1,
     "site/sections/BlogPostHeader.tsx": $$$$$$2,
@@ -300,84 +304,88 @@ const manifest = {
     "site/sections/Live Projects/Hero.tsx": $$$$$$94,
     "site/sections/Live Projects/LiveProjects.tsx": $$$$$$95,
     "site/sections/Live Projects/ProjectsGrid.tsx": $$$$$$96,
-    "site/sections/MainBanner.tsx": $$$$$$97,
-    "site/sections/Markdown.tsx": $$$$$$98,
-    "site/sections/MarkdownContent.tsx": $$$$$$99,
-    "site/sections/New Landing/CarouselLinks.tsx": $$$$$$121,
-    "site/sections/New Landing/GetSiteDone.tsx": $$$$$$122,
-    "site/sections/New Landing/Investors.tsx": $$$$$$123,
-    "site/sections/NRF/BlogPosts.tsx": $$$$$$100,
-    "site/sections/NRF/Brands.tsx": $$$$$$101,
-    "site/sections/NRF/CallToAction.tsx": $$$$$$102,
-    "site/sections/NRF/Contact.tsx": $$$$$$103,
-    "site/sections/NRF/DecoFooter.tsx": $$$$$$104,
-    "site/sections/NRF/Editor.tsx": $$$$$$105,
-    "site/sections/NRF/EditorMobile.tsx": $$$$$$106,
-    "site/sections/NRF/Features.tsx": $$$$$$107,
-    "site/sections/NRF/FeaturesWithImage.tsx": $$$$$$108,
-    "site/sections/NRF/Grid.tsx": $$$$$$109,
-    "site/sections/NRF/Header.tsx": $$$$$$110,
-    "site/sections/NRF/Hero.tsx": $$$$$$111,
-    "site/sections/NRF/HeroFlat.tsx": $$$$$$112,
-    "site/sections/NRF/ImageSection.tsx": $$$$$$113,
-    "site/sections/NRF/PlatformContact.tsx": $$$$$$114,
-    "site/sections/NRF/Pricing.tsx": $$$$$$115,
-    "site/sections/NRF/PricingTable.tsx": $$$$$$116,
-    "site/sections/NRF/PricingValue.tsx": $$$$$$117,
-    "site/sections/NRF/Questions.tsx": $$$$$$118,
-    "site/sections/NRF/TextLines.tsx": $$$$$$119,
-    "site/sections/NRF/Thanks.tsx": $$$$$$120,
-    "site/sections/OnThisPage.tsx": $$$$$$124,
-    "site/sections/Page.tsx": $$$$$$125,
-    "site/sections/PageContest/CallToAction.tsx": $$$$$$126,
-    "site/sections/PageContest/Faq.tsx": $$$$$$127,
-    "site/sections/PageContest/Features.tsx": $$$$$$128,
-    "site/sections/PageContest/Hero.tsx": $$$$$$129,
-    "site/sections/PageContest/HowItWorks.tsx": $$$$$$130,
-    "site/sections/PageContest/SectionHeader.tsx": $$$$$$131,
-    "site/sections/Partner.tsx": $$$$$$132,
-    "site/sections/PopularDocuments.tsx": $$$$$$133,
-    "site/sections/PopularTopics.tsx": $$$$$$134,
-    "site/sections/Pricing.tsx": $$$$$$135,
-    "site/sections/PricingTiers.tsx": $$$$$$136,
-    "site/sections/PricingValue.tsx": $$$$$$137,
-    "site/sections/ProductHuntCTA.tsx": $$$$$$138,
-    "site/sections/QuillText.tsx": $$$$$$139,
-    "site/sections/RankingAnalyze.tsx": $$$$$$140,
-    "site/sections/RankingHeader.tsx": $$$$$$141,
-    "site/sections/RankingList.tsx": $$$$$$142,
-    "site/sections/ReCAPTCHA.tsx": $$$$$$143,
-    "site/sections/RichLetter.tsx": $$$$$$144,
-    "site/sections/Roadmap.tsx": $$$$$$145,
-    "site/sections/SectionList.tsx": $$$$$$146,
-    "site/sections/Sidebar.tsx": $$$$$$147,
-    "site/sections/Test.tsx": $$$$$$148,
-    "site/sections/Thanks.tsx": $$$$$$149,
-    "site/sections/Theme/Theme.tsx": $$$$$$150,
-    "site/sections/Theme/ThemeHints.tsx": $$$$$$151,
-    "site/sections/TripletBanner.tsx": $$$$$$152,
-    "site/sections/WasThisPageHelpful.tsx": $$$$$$153,
-    "site/sections/Webinar/Content.tsx": $$$$$$154,
-    "site/sections/Webinar/Hero.tsx": $$$$$$155,
-    "site/sections/Whatsapp.tsx": $$$$$$156,
-    "site/sections/Why.tsx": $$$$$$157,
-    "site/sections/tuju/Form.tsx": $$$$$$158,
+    "site/sections/LiveProjects/Hero.tsx": $$$$$$97,
+    "site/sections/LiveProjects/LiveProjects.tsx": $$$$$$98,
+    "site/sections/LiveProjects/ProjectsGrid.tsx": $$$$$$99,
+    "site/sections/LiveProjects/ProjectsSlider.tsx": $$$$$$100,
+    "site/sections/MainBanner.tsx": $$$$$$101,
+    "site/sections/Markdown.tsx": $$$$$$102,
+    "site/sections/MarkdownContent.tsx": $$$$$$103,
+    "site/sections/New Landing/CarouselLinks.tsx": $$$$$$125,
+    "site/sections/New Landing/GetSiteDone.tsx": $$$$$$126,
+    "site/sections/New Landing/Investors.tsx": $$$$$$127,
+    "site/sections/NRF/BlogPosts.tsx": $$$$$$104,
+    "site/sections/NRF/Brands.tsx": $$$$$$105,
+    "site/sections/NRF/CallToAction.tsx": $$$$$$106,
+    "site/sections/NRF/Contact.tsx": $$$$$$107,
+    "site/sections/NRF/DecoFooter.tsx": $$$$$$108,
+    "site/sections/NRF/Editor.tsx": $$$$$$109,
+    "site/sections/NRF/EditorMobile.tsx": $$$$$$110,
+    "site/sections/NRF/Features.tsx": $$$$$$111,
+    "site/sections/NRF/FeaturesWithImage.tsx": $$$$$$112,
+    "site/sections/NRF/Grid.tsx": $$$$$$113,
+    "site/sections/NRF/Header.tsx": $$$$$$114,
+    "site/sections/NRF/Hero.tsx": $$$$$$115,
+    "site/sections/NRF/HeroFlat.tsx": $$$$$$116,
+    "site/sections/NRF/ImageSection.tsx": $$$$$$117,
+    "site/sections/NRF/PlatformContact.tsx": $$$$$$118,
+    "site/sections/NRF/Pricing.tsx": $$$$$$119,
+    "site/sections/NRF/PricingTable.tsx": $$$$$$120,
+    "site/sections/NRF/PricingValue.tsx": $$$$$$121,
+    "site/sections/NRF/Questions.tsx": $$$$$$122,
+    "site/sections/NRF/TextLines.tsx": $$$$$$123,
+    "site/sections/NRF/Thanks.tsx": $$$$$$124,
+    "site/sections/OnThisPage.tsx": $$$$$$128,
+    "site/sections/Page.tsx": $$$$$$129,
+    "site/sections/PageContest/CallToAction.tsx": $$$$$$130,
+    "site/sections/PageContest/Faq.tsx": $$$$$$131,
+    "site/sections/PageContest/Features.tsx": $$$$$$132,
+    "site/sections/PageContest/Hero.tsx": $$$$$$133,
+    "site/sections/PageContest/HowItWorks.tsx": $$$$$$134,
+    "site/sections/PageContest/SectionHeader.tsx": $$$$$$135,
+    "site/sections/Partner.tsx": $$$$$$136,
+    "site/sections/PopularDocuments.tsx": $$$$$$137,
+    "site/sections/PopularTopics.tsx": $$$$$$138,
+    "site/sections/Pricing.tsx": $$$$$$139,
+    "site/sections/PricingTiers.tsx": $$$$$$140,
+    "site/sections/PricingValue.tsx": $$$$$$141,
+    "site/sections/ProductHuntCTA.tsx": $$$$$$142,
+    "site/sections/QuillText.tsx": $$$$$$143,
+    "site/sections/RankingAnalyze.tsx": $$$$$$144,
+    "site/sections/RankingHeader.tsx": $$$$$$145,
+    "site/sections/RankingList.tsx": $$$$$$146,
+    "site/sections/ReCAPTCHA.tsx": $$$$$$147,
+    "site/sections/RichLetter.tsx": $$$$$$148,
+    "site/sections/Roadmap.tsx": $$$$$$149,
+    "site/sections/SectionList.tsx": $$$$$$150,
+    "site/sections/Sidebar.tsx": $$$$$$151,
+    "site/sections/Test.tsx": $$$$$$152,
+    "site/sections/Thanks.tsx": $$$$$$153,
+    "site/sections/Theme/Theme.tsx": $$$$$$154,
+    "site/sections/Theme/ThemeHints.tsx": $$$$$$155,
+    "site/sections/TripletBanner.tsx": $$$$$$156,
+    "site/sections/tuju/Form.tsx": $$$$$$162,
+    "site/sections/WasThisPageHelpful.tsx": $$$$$$157,
+    "site/sections/Webinar/Content.tsx": $$$$$$158,
+    "site/sections/Webinar/Hero.tsx": $$$$$$159,
+    "site/sections/Whatsapp.tsx": $$$$$$160,
+    "site/sections/Why.tsx": $$$$$$161,
   },
-  matchers: {
+  "matchers": {
     "site/matchers/MatchPath.ts": $$$$$$$0,
   },
-  actions: {
+  "actions": {
     "site/actions/feedbackDocs.ts": $$$$$$$$$0,
     "site/actions/startAlgoliaCrawler.ts": $$$$$$$$$1,
   },
-  apps: {
+  "apps": {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,
     "site/apps/deco/htmx.ts": $$$$$$$$$$$1,
     "site/apps/decohub.ts": $$$$$$$$$$$2,
     "site/apps/site.ts": $$$$$$$$$$$3,
   },
-  name: "site",
-  baseUrl: import.meta.url,
+  "name": "site",
+  "baseUrl": import.meta.url,
 };
 
 export type Manifest = typeof manifest;

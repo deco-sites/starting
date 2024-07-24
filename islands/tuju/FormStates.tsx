@@ -7,7 +7,7 @@ export default function FormStates(props: FormProps) {
   const [sent, setSent] = useState(false);
 
   return (
-    <div class="flex flex-col justify-center grow">
+    <div class="flex flex-col justify-center grow my-16">
       {sent ? (
         <SentState
           sentText={props.sentText}
