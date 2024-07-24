@@ -6,7 +6,7 @@
   :root {
     background: #000;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
@@ -37,10 +37,11 @@
   details[open].home-faq summary svg {
     transform: rotate(45deg);
   }
-  
+
   details[open].syllabus summary svg {
     transform: rotate(180deg);
   }
+
   details[open].faq summary svg {
     transform: rotate(180deg);
   }
@@ -138,7 +139,7 @@
     height: 100vh;
   }
 
-  .markdown-body iframe{
+  .markdown-body iframe {
     width: 100%;
   }
 }
@@ -158,7 +159,7 @@
     @apply bg-[#000D0D] rounded-3xl;
   }
 
-  .feature-card-lp-contest{
+  .feature-card-lp-contest {
     @apply w-[380px] max-w-[380px] lg:h-[380px] bg-[#F4F4F4] rounded-3xl;
     @apply border-l border-transparent duration-200 whitespace-pre-line text-center;
     @apply flex flex-col items-center justify-start gap-8 py-10 px-8 lg:px-12;
@@ -417,7 +418,7 @@
   cursor: pointer;
 }
 
-.prose a strong{
+.prose a strong {
   color: #06E474;
 }
 
@@ -429,32 +430,109 @@
   color: white;
 }
 
-.cursorCustom{
+.cursorCustom {
   cursor: url(/cursor.cur), default;
 }
 
-.hbspt-form > form {
+.hbspt-form>form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .hs-button {
-  @apply w-full cursor-pointer relative overflow-hidden rounded-full  hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero font-medium lg:text-[20px];
+  @apply w-full cursor-pointer relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero font-medium lg:text-[20px];
 }
 
-.hs-form-field > .input > input {
+.hs-form-field>.input>input {
   @apply w-full h-[51px] rounded placeholder-white bg-white/5 p-4;
 }
 
-.hs-form-field > .input > textarea {
+.hs-form-field>.input>textarea {
   @apply w-full h-fit rounded placeholder-white bg-white/5 p-4;
 }
 
-.hs-form-field > .input {
+.hs-form-field>.input {
   @apply w-full h-fit border border-white/[.1] rounded placeholder-white bg-transparent p-0 text-white backdrop-blur-xl;
 }
 
-.hs-form-field > label {
+.hs-form-field>label {
   @apply text-zinc-400;
+}
+
+/* custom-scrollbar.css */
+.light-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.light-scrollbar::-webkit-scrollbar-track {
+  background: #f0ece1;
+}
+
+.light-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.light-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.light-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f0ece1;
+}
+
+/* custom-checkbox.css */
+input[type="checkbox"].light-checkbox {
+  appearance: none;
+  margin-top: 0.25rem;
+  min-width: 1rem;
+  max-width: 1rem;
+  height: 1rem;
+  background-color: #f0ece1;
+  /* Tailwind gray-200 */
+  border: 2px solid #2d3748;
+  /* Tailwind gray-300 */
+  border-radius: 0.25rem;
+  /* Tailwind rounded */
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+input[type="checkbox"].light-checkbox:checked {
+  background-color: #2d3748;
+  /* Tailwind gray-800 */
+  border-color: #2d3748;
+  /* Tailwind gray-800 */
+}
+
+input[type="checkbox"].light-checkbox:checked::after {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0.15rem;
+  background-color: #fff;
+  /* Tailwind white */
+  border-radius: 0.125rem;
+  /* Tailwind rounded-sm */
+}
+
+input.light-autofill:-webkit-autofill,
+input.light-autofill:-webkit-autofill:hover,
+input.light-autofill:-webkit-autofill:focus,
+textarea.light-autofill:-webkit-autofill,
+textarea.light-autofill:-webkit-autofill:hover,
+textarea.light-autofill:-webkit-autofill:focus,
+select.light-autofill:-webkit-autofill,
+select.light-autofill:-webkit-autofill:hover,
+select.light-autofill:-webkit-autofill:focus {
+  -webkit-text-fill-color: #2d3748 !important;
+  /* Tailwind gray-800 */
+  -webkit-box-shadow: 0 0 0px 1000px #e2e8f0 inset !important;
+  /* Tailwind gray-200 */
+  box-shadow: 0 0 0px 1000px #e2e8f0 inset !important;
+  /* Tailwind gray-200 */
+  transition: background-color 5000s ease-in-out 0s;
 }

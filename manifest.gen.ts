@@ -180,16 +180,17 @@ import * as $$$$$$154 from "./sections/Webinar/Content.tsx";
 import * as $$$$$$155 from "./sections/Webinar/Hero.tsx";
 import * as $$$$$$156 from "./sections/Whatsapp.tsx";
 import * as $$$$$$157 from "./sections/Why.tsx";
+import * as $$$$$$158 from "./sections/tuju/Form.tsx";
 
 const manifest = {
-  "functions": {
+  functions: {
     "site/functions/LoadGitHubRaw.ts": $0,
     "site/functions/LoadGitHubRawPost.ts": $1,
     "site/functions/LoadGitHubRawPostList.ts": $2,
     "site/functions/LoadPageProps.ts": $3,
     "site/functions/psiRankingList.ts": $4,
   },
-  "loaders": {
+  loaders: {
     "site/loaders/blogPostDetailsLoader.ts": $$$0,
     "site/loaders/blogPostLoader.ts": $$$1,
     "site/loaders/blogPostMarkdownLoader.ts": $$$2,
@@ -197,11 +198,11 @@ const manifest = {
     "site/loaders/denoTopicsLoader.ts": $$$4,
     "site/loaders/featuredPosts.ts": $$$5,
   },
-  "handlers": {
+  handlers: {
     "site/handlers/feed.ts": $$$$0,
     "site/handlers/sitemap.ts": $$$$1,
   },
-  "sections": {
+  sections: {
     "site/sections/About.tsx": $$$$$$0,
     "site/sections/Benefits.tsx": $$$$$$1,
     "site/sections/BlogPostHeader.tsx": $$$$$$2,
@@ -360,22 +361,23 @@ const manifest = {
     "site/sections/Webinar/Hero.tsx": $$$$$$155,
     "site/sections/Whatsapp.tsx": $$$$$$156,
     "site/sections/Why.tsx": $$$$$$157,
+    "site/sections/tuju/Form.tsx": $$$$$$158,
   },
-  "matchers": {
+  matchers: {
     "site/matchers/MatchPath.ts": $$$$$$$0,
   },
-  "actions": {
+  actions: {
     "site/actions/feedbackDocs.ts": $$$$$$$$$0,
     "site/actions/startAlgoliaCrawler.ts": $$$$$$$$$1,
   },
-  "apps": {
+  apps: {
     "site/apps/deco/blog.ts": $$$$$$$$$$$0,
     "site/apps/deco/htmx.ts": $$$$$$$$$$$1,
     "site/apps/decohub.ts": $$$$$$$$$$$2,
     "site/apps/site.ts": $$$$$$$$$$$3,
   },
-  "name": "site",
-  "baseUrl": import.meta.url,
+  name: "site",
+  baseUrl: import.meta.url,
 };
 
 export type Manifest = typeof manifest;

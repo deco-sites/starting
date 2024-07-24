@@ -1016,5 +1016,11 @@
   "/.deco/blocks/collections%2Fblog%2Fposts%2Fb5b6855519dc.json": {
     "blockType": "loaders",
     "__resolveType": "blog/loaders/Blogpost.ts"
+  },
+  "/.deco/blocks/pages-TUJU-556287.json": {
+    "name": "TUJU",
+    "path": "/tuju",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
