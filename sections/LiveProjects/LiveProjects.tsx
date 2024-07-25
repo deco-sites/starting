@@ -119,7 +119,7 @@ function TemplatesGrid(props: Props) {
     },
   } = props;
 
-  const [themes, setThemes] = useState(
+  const [themes, _setThemes] = useState(
     indexCategories.flatMap((category) => category.cards.map(() => 0)),
   );
 
@@ -146,13 +146,6 @@ function TemplatesGrid(props: Props) {
   };
 
   const { categoriaSelecionada, paginaAtual, itensPorPagina } = classification;
-
-  const findCategoryByLabel = (
-    label: string,
-    categories: { label: string }[],
-  ) => {
-    return categories.find((category) => category.label === label);
-  };
 
   const itensParaExibir = categoriaSelecionada === "Todos"
     ? indexCategories.flatMap((category) =>

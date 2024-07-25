@@ -1,4 +1,3 @@
-
 /** @title {{{pixelTitel}}} {{{title}}} */
 export interface Props {
   /**
@@ -25,7 +24,8 @@ export default function Hero({ pixelTitle, title, subTitle }: Props) {
             dangerouslySetInnerHTML={{
               __html: pixelTitle,
             }}
-          ></h1>
+          >
+          </h1>
         )}
         {title && (
           <h1
@@ -33,7 +33,8 @@ export default function Hero({ pixelTitle, title, subTitle }: Props) {
             dangerouslySetInnerHTML={{
               __html: title,
             }}
-          ></h1>
+          >
+          </h1>
         )}
       </div>
       {subTitle && (
@@ -42,7 +43,8 @@ export default function Hero({ pixelTitle, title, subTitle }: Props) {
           dangerouslySetInnerHTML={{
             __html: subTitle,
           }}
-        ></h2>
+        >
+        </h2>
       )}
     </section>
   );

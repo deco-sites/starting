@@ -545,7 +545,7 @@ const tableOfContents: TableOfContents = [
           en: "Async rendering",
         },
         slug: "performance/edge-async-render",
-      }
+      },
     ],
   },
   {

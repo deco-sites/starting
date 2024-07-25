@@ -8,22 +8,24 @@ export default function FormStates(props: FormProps) {
 
   return (
     <div class="flex flex-col justify-center grow my-16">
-      {sent ? (
-        <SentState
-          sentText={props.sentText}
-          sentTitle={props.sentTitle}
-          locationInfo={props.locationInfo}
-        />
-      ) : (
-        <>
-          <p dangerouslySetInnerHTML={{ __html: props.initialText }}></p>
-          <Form
-            fields={props.formFields}
-            term={props.termUse}
-            onSent={() => setSent(true)}
+      {sent
+        ? (
+          <SentState
+            sentText={props.sentText}
+            sentTitle={props.sentTitle}
+            locationInfo={props.locationInfo}
           />
-        </>
-      )}
+        )
+        : (
+          <>
+            <p dangerouslySetInnerHTML={{ __html: props.initialText }}></p>
+            <Form
+              fields={props.formFields}
+              term={props.termUse}
+              onSent={() => setSent(true)}
+            />
+          </>
+        )}
     </div>
   );
 }

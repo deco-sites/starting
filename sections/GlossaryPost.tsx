@@ -122,43 +122,45 @@ export default function GlossaryPost({ slug, posts }: Props) {
     return title?.charAt(0).toUpperCase();
   }
 
-  
-
   return (
     <div class="flex gap-10 w-full container mx-auto px-4 md:px-0 py-24 lg:py-0  lg:pb-28 lg:mt-44 ">
       <div class="flex-col hidden md:flex min-w-[240px]">
-              <a href="/glossary" class="text-white hover:text-[#02F67C]">
-                All glossary terms
+        <a href="/glossary" class="text-white hover:text-[#02F67C]">
+          All glossary terms
+        </a>
+        {posts?.map((post) => {
+          const currentTitle = post?.title;
+          const letter = getFirstLetter(currentTitle?.trim());
+          if (letter !== currentLetter) {
+            currentLetter = letter;
+            return (
+              <div key={currentTitle} class="flex flex-col">
+                <div class="w-10 h-[1px] bg-white my-4"></div>
+                <a
+                  href={`/glossary/${post?.slug}`}
+                  class={` overflow-hidden  ${
+                    title === currentTitle ? "text-[#02F67C]" : "text-white"
+                  } hover:text-[#02F67C]`}
+                >
+                  {currentTitle}
+                </a>
+              </div>
+            );
+          } else {
+            return (
+              <a
+                key={currentTitle}
+                href={`/glossary/${post?.slug}`}
+                class={`overflow-hidden hover:text-[#02F67C] ${
+                  title === currentTitle ? "text-[#02F67C]" : "text-white"
+                }`}
+              >
+                {currentTitle}
               </a>
-              {posts?.map((post) => {
-                const currentTitle = post?.title;
-                const letter = getFirstLetter(currentTitle?.trim());
-                if (letter !== currentLetter) {
-                  currentLetter = letter;
-                  return (
-                    <div key={currentTitle} class="flex flex-col">
-                      <div class="w-10 h-[1px] bg-white my-4"></div>
-                      <a
-                        href={`/glossary/${post?.slug}`}
-                        class={` overflow-hidden  ${title===currentTitle ? "text-[#02F67C]" : "text-white"} hover:text-[#02F67C]`}
-                      >
-                        {currentTitle}
-                      </a>
-                    </div>
-                  );
-                } else {
-                  return (
-                    <a
-                      key={currentTitle}
-                      href={`/glossary/${post?.slug}`}
-                      class={`overflow-hidden hover:text-[#02F67C] ${title===currentTitle ? "text-[#02F67C]" : "text-white"}`}
-                    >
-                      {currentTitle}
-                    </a>
-                  );
-                }
-              })}
-            </div>
+            );
+          }
+        })}
+      </div>
       <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0">
         <div className="w-full flex flex-col gap-12 items-center justify-center">
           <h1 className="text-5xl font-bold text-[#02f67c]">{title}</h1>

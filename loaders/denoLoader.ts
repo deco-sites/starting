@@ -14,9 +14,9 @@ export interface Doc {
   title?: string;
 }
 
-const GH_USER_CONTENT_URL = 'https://raw.githubusercontent.com';
-const OWNER = 'deco-cx';
-const REPO = 'apps';
+const GH_USER_CONTENT_URL = "https://raw.githubusercontent.com";
+const OWNER = "deco-cx";
+const REPO = "apps";
 
 export const cache = "stale-while-revalidate";
 
@@ -27,7 +27,7 @@ export const cacheKey = (
 ) => {
   const url = new URL(req.url);
   return url.pathname;
-}
+};
 
 const loader = async (
   props: { urlPattern: string; group: number; docs?: Doc[]; docsPath?: string },
@@ -52,13 +52,15 @@ const loader = async (
   if (documentSlug.includes("decohub")) {
     const appName = documentSlug.split("/")[1];
 
-    const url = `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${appName}/README.md`;
+    const url =
+      `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${appName}/README.md`;
 
     const response = await fetch(url);
 
     const content = await response.text();
 
-    const contentWithDescription = `---\ndescription: This is the README of the ${appName} app\n---\n${content}`;
+    const contentWithDescription =
+      `---\ndescription: This is the README of the ${appName} app\n---\n${content}`;
 
     return { content: contentWithDescription, title: appName };
   }

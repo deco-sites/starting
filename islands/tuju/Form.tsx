@@ -9,40 +9,40 @@ const InputField = ({ field }: { field: FormField }) => {
   if (children && children.length > 0) {
     return (
       <div class="flex flex-col md:flex-row gap-8">
-        {children.map((child) => (
-          <InputField field={child} />
-        ))}
+        {children.map((child) => <InputField field={child} />)}
       </div>
     );
   }
 
   return (
     <label class="w-full" for={inputId}>
-      {selectValues && selectValues?.length > 0 ? (
-        <select
-          id={inputId}
-          name={inputId}
-          required={required}
-          class="cursor-pointer w-full bg-[#f0ede2] border-b border-[#27AE6B] placeholder-[#113032] outline-none pl-2 pb-1 light-autofill"
-        >
-          <option class="bg-[#f0ede2]" value="" disabled selected>{`${name}${
-            required ? "*" : ""
-          }`}</option>
-          {selectValues.map((option) => (
-            <option class="bg-[#f0ede2]" value={option}>
-              {option}
+      {selectValues && selectValues?.length > 0
+        ? (
+          <select
+            id={inputId}
+            name={inputId}
+            required={required}
+            class="cursor-pointer w-full bg-[#f0ede2] border-b border-[#27AE6B] placeholder-[#113032] outline-none pl-2 pb-1 light-autofill"
+          >
+            <option class="bg-[#f0ede2]" value="" disabled selected>
+              {`${name}${required ? "*" : ""}`}
             </option>
-          ))}
-        </select>
-      ) : (
-        <input
-          id={inputId}
-          name={inputId}
-          class="w-full bg-[#f0ede2] border-b border-[#27AE6B] placeholder-[#113032] outline-none pl-2 pb-1 light-autofill"
-          placeholder={`${name}${required ? "*" : ""}`}
-          required={required}
-        />
-      )}
+            {selectValues.map((option) => (
+              <option class="bg-[#f0ede2]" value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+        )
+        : (
+          <input
+            id={inputId}
+            name={inputId}
+            class="w-full bg-[#f0ede2] border-b border-[#27AE6B] placeholder-[#113032] outline-none pl-2 pb-1 light-autofill"
+            placeholder={`${name}${required ? "*" : ""}`}
+            required={required}
+          />
+        )}
     </label>
   );
 };
@@ -74,7 +74,7 @@ export default function Form({
 
     try {
       const response = await fetch(
-        `https://script.google.com/macros/s/AKfycbzBpNdbtSUMwykOT9Il9gZhHldiwg_VlKRnYZ0akmN9tOI7-Pv6-6rltiwKrZHY9uwFkg/exec${params}`
+        `https://script.google.com/macros/s/AKfycbzBpNdbtSUMwykOT9Il9gZhHldiwg_VlKRnYZ0akmN9tOI7-Pv6-6rltiwKrZHY9uwFkg/exec${params}`,
       );
       if (response.status === 200) {
         onSent();
@@ -82,7 +82,7 @@ export default function Form({
         alert("Erro ao enviar. Por favor, envie o fomulário novamente");
       }
     } catch (error) {
-      console.log(error.message)
+      console.log(error.message);
       alert("Erro inesperado. Por favor, envie o fomulário novamente");
     }
 
@@ -95,9 +95,7 @@ export default function Form({
         class="flex flex-col gap-8 w-full py-8"
         onSubmit={(e) => handleSubmit(e)}
       >
-        {fields.map((field) => (
-          <InputField field={field} />
-        ))}
+        {fields.map((field) => <InputField field={field} />)}
         <div class="flex flex-col md:flex-row gap-8 md:gap-4 w-full text-[#113032] items-center">
           <label class="flex gap-2" for="acceptTerm">
             <input
@@ -110,7 +108,7 @@ export default function Form({
               required
             />
             <div>
-              <span>Concordo com o </span>
+              <span>Concordo com o</span>
               <span
                 onClick={(e) => {
                   e.preventDefault();
@@ -127,11 +125,16 @@ export default function Form({
             disabled={loading.value}
             type="submit"
           >
-            {loading.value ? (
-              <Icon id="Loading" width="20" height="20" class="animate-spin" />
-            ) : (
-              <>Enviar</>
-            )}
+            {loading.value
+              ? (
+                <Icon
+                  id="Loading"
+                  width="20"
+                  height="20"
+                  class="animate-spin"
+                />
+              )
+              : <>Enviar</>}
           </button>
         </div>
       </form>

@@ -23,7 +23,10 @@ export default function SentState({
         style="font-family: 'Playfair Display'"
         dangerouslySetInnerHTML={{ __html: sentTitle }}
       />
-      <p class="text-md md:text-lg" dangerouslySetInnerHTML={{ __html: sentText }} />
+      <p
+        class="text-md md:text-lg"
+        dangerouslySetInnerHTML={{ __html: sentText }}
+      />
       <div class="flex flex-col gap-3 border-y border-[#949E9E] py-8">
         {locationInfo.map((location) => (
           <div class="flex flex-col gap-1">

@@ -16,7 +16,7 @@ export interface Props {
   projects?: IProject[];
 }
 
-function Project({ name, icon, banner="", url, performance }: IProject) {
+function Project({ banner = "" }: IProject) {
   return (
     <div class="border-2 border-black rounded-lg max-w-[150px]">
       <Image

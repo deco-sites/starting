@@ -6,10 +6,10 @@ import type {
 } from "site/components/decohelp/pages/ui/Sidebar/Sidebar.tsx";
 import tableOfContents from "site/docs/toc.ts";
 
-const GITHUB_API_URL = 'https://api.github.com';
-const GH_USER_CONTENT_URL = 'https://raw.githubusercontent.com';
-const OWNER = 'deco-cx';
-const REPO = 'apps';
+const GITHUB_API_URL = "https://api.github.com";
+const GH_USER_CONTENT_URL = "https://raw.githubusercontent.com";
+const OWNER = "deco-cx";
+const REPO = "apps";
 
 export const cache = "stale-while-revalidate";
 
@@ -19,7 +19,7 @@ export const cacheKey = (
   _ctx: LoaderContext,
 ) => {
   return "http://localhost:3000/docs/en/overview";
-}
+};
 
 async function fetchAppsReposWithReadme() {
   const url = `${GITHUB_API_URL}/repos/${OWNER}/${REPO}/contents`;
@@ -33,8 +33,9 @@ async function fetchAppsReposWithReadme() {
   }
 
   for (const item of data) {
-    if (item.type === 'dir') {
-      const url = `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${item.path}/README.md`;
+    if (item.type === "dir") {
+      const url =
+        `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${item.path}/README.md`;
       const response = await fetch(url);
       const hasReadme = response.status === 200;
 
@@ -42,14 +43,13 @@ async function fetchAppsReposWithReadme() {
         dirsWithReadme.push(item.path);
       }
     }
-  
   }
 
   return dirsWithReadme;
 }
 
 const loader = async (
-  props: { urlPattern: string; group: number; basePath?: string;},
+  props: { urlPattern: string; group: number; basePath?: string },
   _req: Request,
   _ctx: LoaderContext,
 ): Promise<Topic[]> => {
@@ -88,8 +88,8 @@ const loader = async (
     return topics;
   }
 
-  const decoHub =  {
-    label: 'Deco Hub',
+  const decoHub = {
+    label: "Deco Hub",
     LinkTopic: undefined,
     SubTopics: appsRepos.map((repo) => {
       return {
@@ -97,7 +97,7 @@ const loader = async (
         SidebarLink: `/docs/${languageTyped}/decohub/${repo}`,
         NestedTopics: [],
       };
-    })
+    }),
   };
 
   topics.push(decoHub);

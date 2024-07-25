@@ -12,7 +12,6 @@ export default function TermModal({ term, onClose, onAccept }: Props) {
       onClick={onClose}
       class="fixed flex items-center justify-center top-0 left-0 min-h-screen w-screen bg-[#00000060] px-4"
       style={"html::-webkit-scrollbar-track: none"}
-      
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -33,7 +32,8 @@ export default function TermModal({ term, onClose, onAccept }: Props) {
         <article
           class="overflow-y-scroll max-h-[600px] scrollbar-bg pr-2 light-scrollbar"
           dangerouslySetInnerHTML={{ __html: term }}
-        ></article>
+        >
+        </article>
         <button
           onClick={() => onAccept(true)}
           class="btn w-fit px-8 py-3 bg-[#27AE6B] hover:bg-[#329f69] text-white self-end"

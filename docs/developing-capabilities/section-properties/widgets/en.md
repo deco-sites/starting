@@ -202,14 +202,13 @@ export default function ProductsLoader(
   });
 
   // fetch X api
-  const products = ["Product X", "Product Y", "Product Z"]
+  const products = ["Product X", "Product Y", "Product Z"];
 
-  return products.filter(p => p.includes(props.term));
+  return products.filter((p) => p.includes(props.term));
 }
 ```
 
-
-Note that your loader can receive a ``term``, this will behave like a search.
+Note that your loader can receive a `term`, this will behave like a search.
 
 ## Color Input
 
