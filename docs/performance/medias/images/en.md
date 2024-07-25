@@ -28,12 +28,12 @@ appropriate component depends on your use case:
   images that always have the same aspect ratio (width vs height) regardless of
   screen size.
 
-<img src="/docs/image-aspect-ratio.png">
+<img alt="Image component as a product image" src="/docs/image-aspect-ratio.png">
 
 - `<Picture>` defines images that can vary in size according to the screen
   resolution.
 
-<img src="/docs/picture-aspect-ratio.png">
+<img alt="Picture component as a banner image" src="/docs/picture-aspect-ratio.png">
 
 # Adding an image
 
@@ -85,6 +85,7 @@ function MeuComponente() {
       />
       <img
         src="https://example.com/image-desktop.png"
+        alt="Image description"
         class="w-full h-full object-cover"
       />
     </Picture>
@@ -118,7 +119,7 @@ To find a good width and height value:
 2. Set the viewport to the desired size (412px for mobile devices or 1440px for
    desktop).
 3. Hover over the image tag. You should see something like:
-   <img src="/docs/width-attribute.png" />
+   <img alt="Image properties in the browser inspector" src="/docs/width-attribute.png" />
 4. Voilà! A good width and height value is available in the "Rendered size"
    attribute. In this case, the `width` is 270px and the `height` is 377px.
 

@@ -28,12 +28,12 @@ componente adequado depende do seu caso de uso:
   que tem sempre a mesma proporção (largura vs altura) independente do tamanho
   de tela.
 
-<img src="/docs/image-aspect-ratio.png">
+<img alt="Componente image como uma imagem de produto" src="/docs/image-aspect-ratio.png">
 
 - `<Picture>` define imagens que podem variar de tamanho de acordo com a
   resolução de tela.
 
-<img src="/docs/picture-aspect-ratio.png">
+<img alt="Componente de Picture como uma imagem de banner" src="/docs/picture-aspect-ratio.png">
 
 # Adicionando uma imagem
 
@@ -119,7 +119,7 @@ Para descobrir um bom valor para largura e altura:
 2. Defina o viewport para o tamanho desejado (412px para dispositivos móveis ou
    1440px para desktop).
 3. Passe o mouse sobre a tag da imagem. Você deverá ver algo como:
-   <img src="/docs/width-attribute.png" />
+   <img alt="Propriedades da imagem no inspetor do navegador" src="/docs/width-attribute.png" />
 4. Voilà! Um bom valor de largura e altura está disponível no atributo "Rendered
    size". Neste caso, a `width` é 270px e a `height` é 377px.
 

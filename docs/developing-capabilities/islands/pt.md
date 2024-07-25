@@ -24,7 +24,8 @@ problemas comuns com o JavaScript do lado do cliente.
 
 Suponha que você tenha o seguinte componente. Um contador que permite ao usuário
 adicionar/subtrair o valor exibido.
-<img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
+
+<img width="320" alt="Componente de contador" src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
 
 Este componente pode ser implementado com o seguinte código:
 

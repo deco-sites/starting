@@ -23,7 +23,8 @@ client-side JavaScript
 
 Suppose you have the following component. A counter that allows the user to
 add/subtract to the displayed value.
-<img width="320"  src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
+
+<img width="320" alt="Counter component" src="https://github.com/deco-sites/starting/assets/1753396/ffecce87-22e4-4165-8436-e46cf9681eb0" />
 
 This component can be implemented with the following code:
 
