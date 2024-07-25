@@ -24,4 +24,4 @@ On the right sidebar, you can access the Decopilot as shown in the image:
 
 There you go! Now you can explore the functionalities of our Decopilot. To do
 so, it's worth accessing the
-[Assistant](http://deco.cx/docs/en/decopilot/assistant).
+[Assistant](https://deco.cx/docs/en/decopilot/assistant).

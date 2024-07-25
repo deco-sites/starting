@@ -26,4 +26,4 @@ Na barra lateral direita você poderá acessar o decopilot conforme a imagem:
 
 Pronto! Agora você pode experimentar as funcionalidades do nosso decopilot. Para
 isso, vale a pena acessar o
-[Assistant](http://deco.cx/docs/pt/decopilot/assistant).
+[Assistant](https://deco.cx/docs/pt/decopilot/assistant).
