@@ -3,7 +3,7 @@ description: Adding custom domains.
 since: 1.1.0
 ---
 
-# Summary
+## Summary
 
 1. What is a custom domain?
 2. Adding a custom domain
@@ -14,7 +14,7 @@ since: 1.1.0
    - Testing your configuration
 4. Troubleshooting
 
-# What is a custom domain?
+## What is a custom domain?
 
 Each deco site is assigned a public domain through which it can be accessed,
 such as the domain `your.deco.site` used in the address
@@ -27,9 +27,9 @@ a technical standpoint, this server must allow the creation of `CNAME` records.
 It's necessary to be cautious as some hosting services may offer name server
 services but not allow this type of configuration!
 
-# Adding a custom domain
+## Adding a custom domain
 
-## Requirements
+### Requirements
 
 To add a domain:
 
@@ -42,7 +42,7 @@ To add a domain:
 - ONLY if the domain already has any "CAA" records, it is necessary to add new
   records.
 
-## Before adding a domain
+### Before adding a domain
 
 Additional configuration may be required on your website depending on the
 integration used.
@@ -88,7 +88,7 @@ case, configure it without this property:
 Check with your domain provider for further instructions on how to add these
 records.
 
-## Adding a domain in the admin panel
+### Adding a domain in the admin panel
 
 1. Go to the home page of the site and navigate to the Settings tab.
 
@@ -120,24 +120,24 @@ records.
 
 7. Wait a few minutes and test accessing your domain in the browser.
 
-# Troubleshooting
+## Troubleshooting
 
-## Domain is not validated
+### Domain is not validated
 
 Verify that it was correctly registered in the name server. Use a tool like
 [Google's DNS](https://dns.google/) to check if there is a `CNAME` record
 correctly pointing to the `deco.site` domain.
 
-## After validation, the settings still show my domain as "Awaiting"
+### After validation, the settings still show my domain as "Awaiting"
 
 Sometimes, the domain can generate certificates even after leaving the
 validation screen. However, even in this case, the custom domain may already be
 operational.
 
-## I want to transfer the apex (root) to Deco.
+### I want to transfer the apex (root) to Deco.
 
 Currently, it is not possible to make this setup in Deco.
 
-## Other situations
+### Other situations
 
 If you need further assistance, please reach out to Deco's Discord server.

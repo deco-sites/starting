@@ -3,7 +3,7 @@ description: Adicionando domínios próprios
 since: 1.1.0
 ---
 
-# Tópicos
+## Tópicos
 
 1. O que é um domínio próprio?
 2. Adicionando um domínio
@@ -14,7 +14,7 @@ since: 1.1.0
    - Testando sua configuração
 4. Erros comuns
 
-# O que é um domínio próprio?
+## O que é um domínio próprio?
 
 Cada site deco recebe um domínio público na qual ela é acessível, como o domínio
 `your.deco.site` que é usado no endereço `https://your.deco.site`. No entanto, é
@@ -28,9 +28,9 @@ criação de apontamentos do tipo `CNAME`. É preciso ter cuidado pois alguns
 serviços de hospedagem podem oferecer o serviço de nomes, mas não permitir este
 tipo de configuração!
 
-# Adicionando um domínio próprio
+## Adicionando um domínio próprio
 
-## Requisitos
+### Requisitos
 
 Para adicionar um domínio:
 
@@ -43,7 +43,7 @@ Para adicionar um domínio:
 - APENAS caso o domínio já tenha algum apontamento `CAA`, é preciso adicionar
   novos apontamentos
 
-## Antes de adicionar um domínio
+### Antes de adicionar um domínio
 
 Pode ser necessária alguma configuração adicional em seu site dependendo da
 integração utilizada.
@@ -88,7 +88,7 @@ neste caso, configure sem essa propriedade:
 
 Veja mais instruções no seu provedor de domínios em como adicionar esses campos.
 
-## Adicionando um domínio no admin
+### Adicionando um domínio no admin
 
 1. Entre na página inicial do site, e navegue para a aba de Configurações.
 
@@ -123,9 +123,9 @@ Veja mais instruções no seu provedor de domínios em como adicionar esses camp
 
 7. Aguarde alguns minutos e teste acessar seu domínio no browser.
 
-# Erros Comuns
+## Erros Comuns
 
-## O domínio não é validado
+### O domínio não é validado
 
 Verifique se o mesmo foi cadastrado corretamente no servidor de nomes. Use uma
 ferramenta como o [DNS da google](https://dns.google/) para verificar se há um
@@ -133,16 +133,16 @@ registro de `CNAME` apontando o domínio corretamente para um domínio
 `deco.site`. Alguns provedores de domínios podem levar até 12 horas para
 efetivar o novo apontamento.
 
-## Após a validação, as configurações ainda exibem meu domínio como "Awaiting"
+### Após a validação, as configurações ainda exibem meu domínio como "Awaiting"
 
 Por vezes, o domínio pode fazer a geração de certificados mesmo depois de sair
 da tela de validação. No entanto, mesmo nesse caso, o domínio próprio pode já
 estar operante.
 
-## Quero transferir o apex (nome raíz) para a deco.
+### Quero transferir o apex (nome raíz) para a deco.
 
 Atualmente, não é possível fazer esse apontamento na deco.
 
-## Outras situações
+### Outras situações
 
 Procure o discord da deco caso precise de ajuda!

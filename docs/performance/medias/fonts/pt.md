@@ -2,7 +2,7 @@
 description: Aprenda como usar imagens em seu site sem perder desempenho.
 ---
 
-### Resumo
+## Resumo
 
 > O carregamento de fontes pode impactar no tempo até a primeira renderização de
 > conteúdo, na mudança de layout e no próprio índice de velocidade da página.
@@ -15,7 +15,7 @@ description: Aprenda como usar imagens em seu site sem perder desempenho.
 > 3. Caso precise de uma fonte própria, use uma fonte de tamanho pequeno, dando
 >    preferência aos formatos woff/woff2.
 
-# Fontes no tema da deco
+## Fontes no tema da deco
 
 <img width="640" alt="Configuração do tema com fontes" src="/docs/performance/theme-font.png">
 
@@ -23,7 +23,7 @@ O componente de `Themes` da deco já está preparado para o uso de fontes
 otimizadas [oferecidas pela google](https://fonts.google.com/) através do loader
 de fontes `GoogleFont`.
 
-# Fontes personalizadas
+## Fontes personalizadas
 
 Para fazer o uso de fontes personalizadas, a recomendação é fazer o uso de uma
 fonte preferencialmente no formato woff/woff2 e de pouco tamanho (menor do que

@@ -3,7 +3,7 @@ description: Um Segment na deco é um Matcher configurado juntamente com uma Var
 since: 1.18.0
 ---
 
-# Segmento: Direcionando Grupos Específicos de Usuários
+## Segmento: Direcionando Grupos Específicos de Usuários
 
 No Deco, um **Segmento** se refere a um grupo específico ou subset de usuários
 que atendem a certas condições ou critérios. Segmentos são uma ferramenta
@@ -11,7 +11,7 @@ poderosa que permite direcionar e personalizar o conteúdo para grupos de
 usuários específicos, proporcionando experiências sob medida e otimizando a
 entrega de conteúdo.
 
-## Compreendendo os Segmentos
+### Compreendendo os Segmentos
 
 Segmentos são definidos por [Matchers](/docs/pt/concepts/matchers), que avaliam
 condições e determinam se um usuário pertence a um segmento específico. Matchers
@@ -20,7 +20,7 @@ horário, tipo de dispositivo, localização geográfica e muito mais. Ao aprove
 os Matchers, você pode criar variações de conteúdo dinâmicas e personalizadas
 com base nessas condições.
 
-## Utilizando os Segmentos
+### Utilizando os Segmentos
 
 Segmentos desempenham um papel crucial em várias áreas do Deco, especialmente no
 contexto de [Variants](/docs/pt/getting-started/variants). Variantes permitem

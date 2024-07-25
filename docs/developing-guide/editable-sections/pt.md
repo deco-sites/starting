@@ -5,7 +5,7 @@ since: 1.0.0
 
 ---
 
-# Introdução às Seções (dev)
+## Introdução às Seções (dev)
 
 Uma Seção representa um elemento de UI configurável para um site deco. É
 essencial entender o que isso significa para um desenvolvedor.

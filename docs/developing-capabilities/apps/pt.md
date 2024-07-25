@@ -3,8 +3,6 @@ description: Apps - Capacidades de Negócios para os seus Sites deco
 since: 1.24.0
 ---
 
-# Deco Apps
-
 As Apps são poderosos conjuntos de capacidades de negócios que podem ser
 importados e configurados em sites deco. Uma App na deco é essencialmente uma
 **coleção** de vários **componentes**, como **ações**, **seções**,

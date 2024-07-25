@@ -13,14 +13,14 @@ criar componentes que são executados no navegador. Certifique-se de ler nossas
 dicas de desempenho antes de criar qualquer JavaScript no navegador, para evitar
 problemas comuns com o JavaScript do lado do cliente.
 
-# Sumário
+## Sumário
 
 1. Tornando os componentes interativos
 2. Limitações de uso das islands
 3. Compartilhando estado entre as islands
 4. Considerações e dicas
 
-# Tornando os componentes interativos
+## Tornando os componentes interativos
 
 Suponha que você tenha o seguinte componente. Um contador que permite ao usuário
 adicionar/subtrair o valor exibido.
@@ -67,7 +67,7 @@ componente para a pasta `island`, verifique se sua interatividade final:
 - Requer manipulação de elementos ou estado da página atual (por exemplo, usando
   onClick, onChange, useEffect, outro hook ou um ouvinte de eventos)
 
-# Limitações de uso das islands
+## Limitações de uso das islands
 
 As islands são componentes do Preact. Isso significa que elas aceitam `props`.
 No entanto, esses valores devem ser um dos seguintes:
@@ -84,7 +84,7 @@ No entanto, esses valores devem ser um dos seguintes:
 Objetos complexos como `Date`, funções e classes personalizadas não são aceitos
 como props de islands.
 
-# Utilizando signals no lugar de state
+## Utilizando signals no lugar de state
 
 O `useState` exige que se trabalhe com uma função a parte para a atualização de
 valor. Preact, e outros sistemas, oferecem
@@ -116,7 +116,7 @@ export default function Counter() {
 }
 ```
 
-# Compartilhando estado entre as islands
+## Compartilhando estado entre as islands
 
 No desenvolvimento normal do Preact, o compartilhamento de estado entre
 componentes geralmente é feito por meio da API
@@ -161,7 +161,7 @@ mais detalhes. Além disso, dê uma olhada em
 > funcionará, pois o contexto estará fora das islands e, portanto, só estará
 > disponível no servidor.
 
-# Considerações e dicas
+## Considerações e dicas
 
 Ao transformar um componente em uma island, pelo menos o tamanho dele em bytes
 será duplicado. O servidor renderiza o HTML para esse elemento e o envia para o

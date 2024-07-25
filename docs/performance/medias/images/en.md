@@ -2,7 +2,7 @@
 description: Learn how to use images on your website without sacrificing performance.
 ---
 
-### Summary
+## Summary
 
 > Deco provides Image, Picture, and Source components to work with images. These
 > components add responsive patterns to speed up your site. To add an image to
@@ -19,7 +19,7 @@ description: Learn how to use images on your website without sacrificing perform
 > - Preloading tags to improve LCP
 > - Image processing to optimize image size
 
-# Image or Picture
+## Image or Picture
 
 There are two components for displaying images: `<Image>` and `<Picture>`. The
 appropriate component depends on your use case:
@@ -35,7 +35,7 @@ appropriate component depends on your use case:
 
 <img alt="Picture component as a banner image" src="/docs/picture-aspect-ratio.png">
 
-# Adding an image
+## Adding an image
 
 Using the appropriate component, style it with Tailwind classes. It is mandatory
 to set the src and use the height/width props:
@@ -60,7 +60,7 @@ styled by CSS. These attributes don't even need to be the original size of the
 image. The height and width are present to allow the server and browser to
 choose the appropriate image to download based on the user's screen resolution.
 
-# Adding a Picture
+## Adding a Picture
 
 Below, you will find a minimal example that renders an image for desktop and
 another one for mobile devices.
@@ -104,7 +104,7 @@ rendered.
 To style this image, add classes to the `<img>` tag. For example, to make the
 image fill the available space, as shown in the example above.
 
-# Finding the width and height properties
+## Finding the width and height properties
 
 The `width` and `height` attributes of the image can be confusing, even for
 experienced developers. This confusion arises from the fact that these
@@ -123,7 +123,7 @@ To find a good width and height value:
 4. Voilà! A good width and height value is available in the "Rendered size"
    attribute. In this case, the `width` is 270px and the `height` is 377px.
 
-# Loading images in an optimized way (improving LCP)
+## Loading images in an optimized way (improving LCP)
 
 For a good LCP, not only do you need to send small payloads, but you also need
 to load them in the correct order, prioritizing those that are visible on the
@@ -199,7 +199,7 @@ configurations, you will optimize the image loading to improve LCP.
 > image is being preloaded, check that there is only one `<link rel="preload"/>`
 > tag.
 
-# Relevant sources
+## Relevant sources
 
 - [LCP](https://web.dev/lcp/)
 - [Aspect-ratio CSS](https://www.w3schools.com/cssref/css_pr_aspect-ratio.php)

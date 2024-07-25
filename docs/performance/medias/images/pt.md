@@ -2,7 +2,7 @@
 description: Aprenda como usar imagens em seu site sem perder desempenho.
 ---
 
-### Resumo
+## Resumo
 
 > Deco oferece componentes de Imagem, Picture e Source para trabalhar com
 > imagens. Esses componentes adicionam padrões sensíveis para acelerar seu site.
@@ -19,7 +19,7 @@ description: Aprenda como usar imagens em seu site sem perder desempenho.
 > - Tags de pré-carregamento para melhorar o LCP
 > - Processamento das imagens para otimizar o tamanho da imagem
 
-# Image ou Picture
+## Image ou Picture
 
 Existem dois componentes para a exibição de imagens: `<Image>` e `<Picture>`. O
 componente adequado depende do seu caso de uso:
@@ -35,7 +35,7 @@ componente adequado depende do seu caso de uso:
 
 <img alt="Componente de Picture como uma imagem de banner" src="/docs/picture-aspect-ratio.png">
 
-# Adicionando uma imagem
+## Adicionando uma imagem
 
 Utilizando o componente adequado, estilize-o com classes tailwind. É obrigatório
 definir a src e usar as props height/width:
@@ -61,7 +61,7 @@ imagem. A altura e largura estão presentes para permitir que o servidor e
 browser possa escolher a imagem adequada a ser baixada de acordo com a resolução
 da tela do usuário.
 
-# Adicionando uma Picture
+## Adicionando uma Picture
 
 Abaixo, você encontrará um exemplo mínimo que renderiza uma imagem para desktop
 e outra para dispositivos móveis.
@@ -104,7 +104,7 @@ até 768px de largura. Em tamanhos de tela maiores, será renderizada a imagem
 Para estilizar essa imagem, adicione classes à tag `<img>`. Por exemplo, para
 fazendo a imagem preencher todo o espaço disponível, como no exemplo acima.
 
-# Encontrando as propriedades de largura e altura
+## Encontrando as propriedades de largura e altura
 
 Os atributos `width` e `height` da imagem podem ser confusos, mesmo para os
 desenvolvedores experientes. Essa confusão ocorre pelo fato de que esses
@@ -123,7 +123,7 @@ Para descobrir um bom valor para largura e altura:
 4. Voilà! Um bom valor de largura e altura está disponível no atributo "Rendered
    size". Neste caso, a `width` é 270px e a `height` é 377px.
 
-# Carregando imagens de forma otimizada (melhorando o LCP)
+## Carregando imagens de forma otimizada (melhorando o LCP)
 
 Para um bom LCP, não apenas você precisa enviar payloads pequenos, mas também
 precisa carregá-los na ordem correta, priorizando aqueles que estão visíveis na
@@ -199,7 +199,7 @@ estará otimizando o carregamento de imagens para melhorar o LCP.
 > Para verificar que somente uma imagem esteja sendo pré-carregada, verifique
 > que ha somente uma tag `<link rel="preload"/>`.
 
-# Fontes relevantes
+## Fontes relevantes
 
 - [LCP](https://web.dev/lcp/)
 - [Aspect-ratio CSS](https://www.w3schools.com/cssref/css_pr_aspect-ratio.php)

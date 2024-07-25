@@ -3,7 +3,7 @@ description: The deco guide to performance
 since: 1.0.0
 ---
 
-# Three rules for high performance
+## Three rules for high performance
 
 ### Understand the framework and system architecture
 
@@ -30,13 +30,13 @@ issues is an ongoing task, but it should not be an end in itself.
 > experience. Sometimes the system may not deliver the best performance, as long
 > as it is a conscious decision to deliver the best experience to the user.
 
-# Analyzing page performance
+## Analyzing page performance
 
 Testing performance involves understanding a series of tools and possible
 metrics that seek to understand what needs to be improved (and how). There are
 tools that help in this process. Understand how and when to use them.
 
-## Local testing
+### Local testing
 
 ![Example of using browser tools for debugging](https://github.com/deco-sites/starting/assets/882438/bf441a9a-5af7-4c83-aa4a-c409c2cfb84c)
 
@@ -49,7 +49,7 @@ itself to debug performance issues. With them, you can monitor the performance
 of the page in detail and simulate adverse conditions (such as a lower quality
 network or CPU). More information in the guide below:
 
-## Pagespeed test
+### Pagespeed test
 
 ![Example of pagespeed test](https://github.com/deco-sites/starting/assets/882438/35d915a9-1fa0-4c87-b5b5-74cd60bec8f0)
 
@@ -77,7 +77,7 @@ Since it is a test executed in a production environment, it is subject to
 variations. However, a sudden drop in the pagespeed score implies looking at the
 page's performance as soon as possible.
 
-## Deco metrics test
+### Deco metrics test
 
 ![Examples of deco metrics](https://github.com/deco-sites/starting/assets/882438/af592b39-0f4d-405f-a0c6-a212b1677058)
 
@@ -102,7 +102,7 @@ A user who downloads at `100 kb/s` will take `5s` to download a `500 kb` page.
 This is especially impactful for mobile users operating on low-bandwidth
 networks or situations.
 
-## Core Web Vitals test
+### Core Web Vitals test
 
 ![Example of Core Web Vitals test](https://github.com/deco-sites/starting/assets/882438/f911058f-34b4-4c49-a24b-9351d630a752)
 
@@ -124,7 +124,7 @@ categorizes the values typically on a month-to-month basis, so it is more of a
 monitoring metric to diagnose any behavior issues that have gone unnoticed over
 time or that reflect a change in the page's audience.
 
-## Debugging performance issues
+### Debugging performance issues
 
 If, however, none of the tools help in the process of identifying a performance
 issue, perform some manual tests that can identify the cause of the problem:
@@ -143,7 +143,7 @@ issue, perform some manual tests that can identify the cause of the problem:
   - Performance improvements are constantly added to the system and can fix
     issues that lead to slowness.
 
-# Performance improvements
+## Performance improvements
 
 After identifying a problem, whether through a negative experience or some tests
 indicating an inadequate metric value, action must be taken.
@@ -155,7 +155,7 @@ related improvements.
 Note that the situations in which you should take action are just examples of
 some cases.
 
-## 🖼️ Images (jpg, png, gifs, ...)
+### 🖼️ Images (jpg, png, gifs, ...)
 
 **When to act**...
 
@@ -168,7 +168,7 @@ some cases.
 > **Tip**: Use deco image components, such as `<Image>` and `<Picture>`, and
 > configure them correctly, including width and height.
 
-## 📈 Images (SVG)
+### 📈 Images (SVG)
 
 **When to act**...
 
@@ -177,7 +177,7 @@ some cases.
 
 **Guide**: [Optimizing SVGs](/docs/performance/medias/svg-sprites)
 
-## 🖹 Fonts
+### 🖹 Fonts
 
 **When to act**...
 
@@ -190,7 +190,7 @@ some cases.
 > **Tip**: Use standard fonts offered by Google. If necessary, use smaller fonts
 > (preferably woff/woff2).
 
-## 📜 Third-party scripts
+### 📜 Third-party scripts
 
 **When to act**...
 
@@ -206,7 +206,7 @@ some cases.
 > script until after the page has already loaded and the user is interacting
 > with it.
 
-## 🔄 Data loading efficiency (loaders)
+### 🔄 Data loading efficiency (loaders)
 
 **When to act**...
 
@@ -224,7 +224,7 @@ some cases.
 > - Change the loader's props to reduce the amount of data loaded in the loaders
 > - Save loaders that are reused on different pages/sections
 
-## 🏝️ Islands
+### 🏝️ Islands
 
 **When to act**...
 
@@ -238,7 +238,7 @@ some cases.
 > island. Reduce the scope of the island as much as possible (e.g., prefer a
 > button as an island rather than an entire `form`).
 
-# Relevant sources
+## Relevant sources
 
 - [web.dev - Core Web Vitals](https://web.dev/explore/learn-core-web-vitals)
 

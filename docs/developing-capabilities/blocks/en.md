@@ -3,7 +3,7 @@ description: Block empowers deco's ecosystem
 since: 1.0.0
 ---
 
-# Overview
+## Overview
 
 Imagine being able to **serialize** a function and save it in a **database**.
 What if this function could be composed together with multiple options? How

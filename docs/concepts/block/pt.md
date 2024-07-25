@@ -3,7 +3,7 @@ description: O Block empoderam o ecossistema da deco
 since: 1.0.0
 ---
 
-# Visão Geral
+## Visão Geral
 
 Imagine poder **serializar** uma função e salvá-la em um **banco de dados**. E
 se essa função pudesse ser combinada com várias opções diferentes? Como isso

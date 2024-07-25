@@ -3,8 +3,6 @@ description: Modificando o status de retorno de uma pagina
 since: 1.0.0
 ---
 
-# Modificando o status de retorno de uma pagina
-
 ## Visão Geral
 
 A modificação do status de retorno permite que você informe ao navegador de

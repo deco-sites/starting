@@ -2,7 +2,7 @@
 description: Learn how to use fonts on your website without sacrificing performance.
 ---
 
-### Summary
+## Summary
 
 > Loading fonts can impact the time to first contentful paint, layout shift, and
 > overall page speed index.
@@ -15,7 +15,7 @@ description: Learn how to use fonts on your website without sacrificing performa
 > 3. If you need a custom font, use a small-sized font and prefer the woff/woff2
 >    formats.
 
-# Fonts in the deco theme
+## Fonts in the deco theme
 
 <img width="640" alt="Theme configuration with fonts" src="/docs/performance/theme-font.png">
 
@@ -23,7 +23,7 @@ The `Themes` component in deco is already prepared to use optimized fonts
 [offered by Google](https://fonts.google.com/) through the `GoogleFont` font
 loader.
 
-# Custom Fonts
+## Custom Fonts
 
 To use custom fonts, it is recommended to use a font preferably in the
 woff/woff2 format and with a small file size (less than 25kb).

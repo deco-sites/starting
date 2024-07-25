@@ -2,7 +2,7 @@
 description: Learn how to use the SVG sprites technique to optimize your website's performance
 ---
 
-### Summary
+## Summary
 
 <iframe width="640" height="339" src="https://www.loom.com/embed/e34d5d715f7c4efaae18e4eca799edca" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -13,7 +13,7 @@ description: Learn how to use the SVG sprites technique to optimize your website
 > 2. To use the SVG, use the `use` tag pointing to the specific ID.
 > 3. Do this especially for SVGs that are <u>not visible on the screen</u>.
 
-# SVG
+## SVG
 
 SVG (Scalable Vector Graphics) is a graphic format commonly used in applications
 to represent icons, logos, or elements that need to be scaled without losing
@@ -21,7 +21,7 @@ quality. However, its use can negatively impact the performance of a web page in
 various metrics, such as page loading time (speed index), time to display the
 first visible content (FCP), and time to display the last visible content (LCP).
 
-# The SVG Sprites Technique
+## The SVG Sprites Technique
 
 SVG sprites consist of having a cacheable and accessible SVG file (e.g., in your
 `static` folder), and within it, have the symbols of each SVG using the
@@ -35,7 +35,7 @@ Here's an example of an SVG file with a symbol and ID **XMark**
 </svg>
 ```
 
-# SVG Sprites to improve your website's performance
+## SVG Sprites to improve your website's performance
 
 To use an SVG that is inside a file, you can reference it using the file's
 address and the ID of the symbol defined in the file using the `<use>` tag.
@@ -65,7 +65,7 @@ the **XMark** SVG, as it is not part of your document since it is in another
 file. In the case of using SVGs within islands, the amount of JavaScript
 generated in the bundle will be smaller.
 
-# When to use the technique?
+## When to use the technique?
 
 > ⚠️ It is not always appropriate to use the technique, but it is always worth
 > testing.

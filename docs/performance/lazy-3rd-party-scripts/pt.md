@@ -2,7 +2,7 @@
 description: Aprenda como usar scripts de terceiros em seu site sem perder desempenho.
 ---
 
-### Resumo
+## Resumo
 
 > O uso de scripts de terceiros pode ter um grande impacto no desempenho de um
 > site. Tais scripts costumam operar de forma bloqueante e podem atrapalhar o
@@ -15,7 +15,7 @@ description: Aprenda como usar scripts de terceiros em seu site sem perder desem
 > 3. Usar async ou defer nos scripts
 > 4. Pré-carregar conexão com a origem do script
 
-# Postergando o carregamento de scripts.
+## Postergando o carregamento de scripts.
 
 Caso o script em questão não seja prioritário, isto é, pode aguardar uma
 interação do usuário ou não representa uma funcionalidade vital ao site, uma
@@ -59,7 +59,7 @@ const observer = new IntersectionObserver((items) => {
 observer.observe(elem);
 ```
 
-# Async e Defer nos script
+## Async e Defer nos script
 
 A presença de uma tag `<script src="script.js">` ocasiona o atraso da execução
 do carregamento da DOM. Isto porque o browser irá respeitar a ordem dos scripts
@@ -80,7 +80,7 @@ completo, é possível fazer uso do atributo defer:
 <script defer src="script.js">
 ```
 
-# Pré-carregar conexão com a origem do script
+## Pré-carregar conexão com a origem do script
 
 Se possível, é uma recomendação servir o script localmente (pasta `static`).
 Caso o script esteja em outro domínio, a recomendação é fazer uso do prefetch

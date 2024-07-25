@@ -3,7 +3,7 @@ description: Sending only necessary data to the client
 since: 1.0.0
 ---
 
-### Summary
+## Summary
 
 > Loaders are mechanisms for data loading. There are some tips on how to
 > optimize their usage. Here are some tips:
@@ -13,7 +13,7 @@ since: 1.0.0
 > 2. Sections that load data and are not displayed on the initial screen (above
 >    the fold) can be deferred
 
-# Reusing Loaders
+## Reusing Loaders
 
 The system's `sections` can have data loaded via `loaders`. These loaders can be
 defined within the section itself or loaded from saved entities.
@@ -34,6 +34,6 @@ that the loader is executed only once during the page rendering cycle.
 
 ![image](https://github.com/deco-sites/starting/assets/882438/a39e3806-89e4-4b22-a179-491c048b18f7)
 
-# Deferred Section
+## Deferred Section
 
 ![image](https://github.com/deco-sites/starting/assets/882438/06b0fde3-874f-4b26-84b5-d4a41c94e5de)

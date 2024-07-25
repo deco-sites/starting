@@ -3,7 +3,7 @@ description: Um Matcher na deco é uma função que retorna um booleano
 since: 1.18.0
 ---
 
-# Matchers: Potencializando as Variants
+## Matchers: Potencializando as Variants
 
 Os **Matchers** são blocos essenciais no deco que desempenham um papel
 fundamental ao potencializar as [Variants](/docs/pt/getting-started/variants).
@@ -12,7 +12,7 @@ base em vários critérios. Ao aproveitar os Matchers, você pode criar
 experiências personalizadas e dinâmicas para seus usuários. Ao criar um novo
 **Matcher Block**, você pode chamá-lo de [Segmento](/docs/pt/concepts/segment).
 
-## Compreendendo os Matchers
+### Compreendendo os Matchers
 
 No deco, os **Matchers** são criados usando _funções_ dentro do código do seu
 site. Eles são ferramentas poderosas que permitem que você defina condições e
@@ -33,7 +33,7 @@ funcionalidade do deco para integrar fontes de dados externas, como buscar dados
 de um sistema Salesforce ERP, e usar esses dados para determinar o segmento ao
 qual um usuário pertence.
 
-## Matchers Nativos
+### Matchers Nativos
 
 | Matcher        | Casos de Uso Comuns                                                                             | Sticky  |
 | -------------- | ----------------------------------------------------------------------------------------------- | ------- |
@@ -42,7 +42,7 @@ qual um usuário pertence.
 | Date Matcher   | Criar a página da Black Friday/ Agendar banners para aparecerem em datas e horários específicos | none    |
 | Device Matcher | Exibir uma página diferente com base no dispositivo do usuário                                  | none    |
 
-## Desenvolvendo um Novo Matcher
+### Desenvolvendo um Novo Matcher
 
 Em seu repositório, os Matchers estão localizados na pasta `matchers`, assim
 como as seções e loaders. Vamos criar um novo matcher chamado `MeuMatcher.ts`
@@ -156,7 +156,7 @@ capacidade de criar Matchers personalizados, você pode integrar fontes de dados
 externas, realizar cálculos complexos e implementar lógicas intrincadas para
 determinar a segmentação do usuário e fornecer experiências personalizadas.
 
-## Aproveitando o Poder dos Matchers nas Variants
+### Aproveitando o Poder dos Matchers nas Variants
 
 Os **Matchers** são a base das Variants no deco. Ao _combinar Matchers com
 diferentes condições_, você pode criar variações de conteúdo direcionadas para

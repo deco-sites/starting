@@ -3,7 +3,7 @@ descrição: Enviando apenas dados necessários ao cliente
 since: 1.0.0
 ---
 
-### Resumo
+## Resumo
 
 > Uma ilha determina um componente interativo e que será hidratado no lado do
 > cliente. O servidor manda todos os dados das `props` de ilhas para fazer a
@@ -17,7 +17,7 @@ since: 1.0.0
 > 2. Torne uma ilha apenas o que for necessário, lembrando de usar o `children`
 >    para elementos internos que não precisam de hidratação.
 
-# Reduzindo o tamanho do JSON de props enviado para as ilhas
+## Reduzindo o tamanho do JSON de props enviado para as ilhas
 
 Ao carregar dados de APIs externas usando [Loaders](/docs/pt/concepts/loader) e
 enviá-los para a [Section](/docs/pt/concepts/section), é possível que o tamanho
@@ -36,7 +36,7 @@ valores). Para diminuir esse tamanho e melhorar a performance da página, é
 possível **filtrar os dados** ainda no Loader para que apenas o necessário seja
 passado para a UI.
 
-## Reduzindo dados enviados às ilhas
+### Reduzindo dados enviados às ilhas
 
 Nesse primeiro exemplo, mostraremos como evitar enviar muitos dados para uma
 ilha. Digamos que existe um componente chamado ProductCard, que recebe todo o
@@ -119,7 +119,7 @@ A abordagem correta envia apenas os dados de ID e Seller, que no exemplo, são o
 Assim, no momento de hidratação, o JSON que a Island irá carregar não será tão
 grande.
 
-# Reduzindo o escopo de uma ilha
+### Reduzindo o escopo de uma ilha
 
 Uma ilha e seus componentes serão todos hidratados do lado do cliente para
 poderem operar. Isto significa que, para todos os elementos definidos da ilha,

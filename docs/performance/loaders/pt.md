@@ -3,7 +3,7 @@ descrição: Enviando apenas dados necessários ao cliente
 since: 1.0.0
 ---
 
-### Resumo
+## Resumo
 
 > Os loaders são mecanismos para carregamento de dados. Existem algumas dicas em
 > como otimizar o seu uso. Seguem algumas dicas:
@@ -13,7 +13,7 @@ since: 1.0.0
 > 2. Sections que carregam dados e que não estão sendo exibidas na tela inicial
 >    (above the fold), podem ser Deferred
 
-# Reutilizando loaders
+## Reutilizando loaders
 
 As `sections` do sistema podem ter dados carregados via `loaders`. Esses loaders
 podem ser definidos na própria section ou podem ser carregado de entidades
@@ -36,6 +36,6 @@ ciclo de renderização da página.
 
 ![image](https://github.com/deco-sites/starting/assets/882438/a39e3806-89e4-4b22-a179-491c048b18f7)
 
-# Deferred Section
+## Deferred Section
 
 ![image](https://github.com/deco-sites/starting/assets/882438/06b0fde3-874f-4b26-84b5-d4a41c94e5de)

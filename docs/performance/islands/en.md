@@ -3,7 +3,7 @@ description: Optimizing the use of islands
 since: 1.0.0
 ---
 
-### Summary
+## Summary
 
 > An island is a component that is interactive and will be hydrated on the
 > client side. The server sends all the data from the island's `props` for
@@ -15,7 +15,7 @@ since: 1.0.0
 > 2. Make an island only what is necessary, remembering to use `children` for
 >    internal elements that do not need hydration.
 
-# Reducing the size of the props JSON sent to islands
+## Reducing the size of the props JSON sent to islands
 
 When loading data from external APIs using [Loaders](/docs/en/concepts/loader)
 and sending them to the [Section](/docs/en/concepts/section), it is possible
@@ -34,7 +34,7 @@ values). To reduce this size and improve page performance, it is possible to
 **filter the data** in the Loader so that only the necessary data is passed to
 the UI.
 
-## Reducing data sent to islands
+### Reducing data sent to islands
 
 In this first example, we will show how to avoid sending too much data to an
 island. Let's say there is a component called ProductCard that receives the
@@ -115,7 +115,7 @@ the only ones needed in the Island.
 
 Thus, during hydration, the JSON that the Island will load will not be as large.
 
-# Reducing the scope of an island
+### Reducing the scope of an island
 
 An island and its components will all be hydrated on the client side in order to
 operate. This means that for all defined elements of the island, they will be

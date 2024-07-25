@@ -12,14 +12,14 @@ components that run on the browser. Make sure to read our performance tips
 before creating any JavaScript on the browser to avoid common pitfails with
 client-side JavaScript
 
-# Summary
+## Summary
 
 1. Making components interactive
 2. Islands usage limitations
 3. Sharing state among islands.
 4. Considerations and tips
 
-# Making components interactive
+## Making components interactive
 
 Suppose you have the following component. A counter that allows the user to
 add/subtract to the displayed value.
@@ -65,7 +65,7 @@ interactivity:
 - Requires manipulation of elements or the current page's state (e.g., using
   onClick, onChange, useEffect, another hook, or an event listener)
 
-# Islands usage limitations
+## Islands usage limitations
 
 Islands are Preact components. This means they accept `props`. However, these
 values must be one of:
@@ -81,7 +81,7 @@ values must be one of:
 Complex objects such as Date, functions, and custom classes are not accepted as
 islands props.
 
-# Using Signals Instead of State
+## Using Signals Instead of State
 
 `useState` requires working with a separate function for value updates. Preact
 also uses [`Signals`](https://preactjs.com/guide/v10/signals/) for handling
@@ -112,7 +112,7 @@ export default function Counter() {
 }
 ```
 
-# Sharing state among islands.
+## Sharing state among islands.
 
 In normal Preact development, sharing state between components is usually done
 via the [Context](https://preactjs.com/guide/v10/context/) API. This works fine
@@ -154,7 +154,7 @@ details. Also, take a look at
 > Note that sharing state via the `Context` API will NOT work, since the context
 > will be outside the islands, and thus, only available on the server.
 
-# Considerations and tips
+## Considerations and tips
 
 Making a component an island will at least double its size in bytes. The server
 renders the HTML for this element and sends it to the browser, but it also sends

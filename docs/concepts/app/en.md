@@ -3,8 +3,6 @@ description: Apps - Business Capabilities for Your deco Sites
 since: 1.24.0
 ---
 
-# Deco Apps
-
 Deco Apps are powerful bundles of business capabilities that can be imported and
 configured into deco sites. An App in deco is essentially a **collection** of
 various **components**, such as **actions**, **sections**, **loaders**,

@@ -3,8 +3,6 @@ description: Modifying the return status of a page
 since: 1.0.0
 ---
 
-# Modifying the return status of a page
-
 ## Overview
 
 Modifying the return status allows you to correctly inform the browser of the

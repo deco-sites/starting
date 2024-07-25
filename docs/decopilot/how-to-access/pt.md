@@ -3,7 +3,7 @@ description: Como acessar o decopilot
 
 ---
 
-# Introdução
+## Introdução
 
 O Decopilot é uma ferramenta de geração de código projetada para acelerar ainda
 mais o processo de criação de sites. Buscando combinar a praticidade do uso de
@@ -13,7 +13,7 @@ web, o Decopilot oferece a liberdade para criar um site e seu conteúdo em
 questão de minutos, enquanto auxilia você na identificação e correção de
 eventuais erros durante o desenvolvimento.
 
-# Como acessar
+## Como acessar
 
 Após [criar seu site](https://deco.cx/docs/pt/getting-started/creating-a-site),
 abra um arquivo de código em qualquer section do seu site. Você pode fazer isso

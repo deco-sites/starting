@@ -3,7 +3,7 @@ description: O guia deco para performance
 since: 1.0.0
 ---
 
-# Três regras para o alto desempenho
+## Três regras para o alto desempenho
 
 ### Entenda o framework e arquitetura do sistema
 
@@ -33,13 +33,13 @@ só.
 > isso seja uma decisão consciente para entregar a melhor experiência ao
 > usuário.
 
-# Analisando o desempenho de uma página
+## Analisando o desempenho de uma página
 
 Testar o desempenho passa por entender uma série de ferramentas e possíveis
 métricas que buscadm entender o que deve ser melhorado (e como). Existem
 ferramentas que ajudam neste processo. Entenda como e quando utilizá-las.
 
-## Testando localmente
+### Testando localmente
 
 ![Exemplo de uso de ferramentas do browser para depuração](https://github.com/deco-sites/starting/assets/882438/bf441a9a-5af7-4c83-aa4a-c409c2cfb84c)
 
@@ -53,7 +53,7 @@ possível acompanhar o desempenho da página em detalhes, e simular condições
 adversas (como uma rede ou cpu de menor qualidade). Mais informações no guia
 abaixo:
 
-## Teste de pagespeed
+### Teste de pagespeed
 
 ![Exemplo de teste no pagespeed](https://github.com/deco-sites/starting/assets/882438/35d915a9-1fa0-4c87-b5b5-74cd60bec8f0)
 
@@ -81,7 +81,7 @@ Como é um teste executável em um ambiente em produção, ele é sujeito a
 variações, no entanto, uma queda abrupta no valor do pagespeed implica em olhar
 para o desempenho da página o quanto antes.
 
-## Teste de métricas deco
+### Teste de métricas deco
 
 ![Exemplos de métricas deco](https://github.com/deco-sites/starting/assets/882438/af592b39-0f4d-405f-a0c6-a212b1677058)
 
@@ -106,7 +106,7 @@ Um usuário que baixa a `100 kb/s` levará `5s` para baixar uma página de
 `500 kb`. Isto é especialmente impactante para usuários de dispositivos móveis
 operando em redes ou situações de baixa capacidade de banda.
 
-## Teste do Core Web Vitals
+### Teste do Core Web Vitals
 
 ![Exemplo de teste do CWV](https://github.com/deco-sites/starting/assets/882438/f911058f-34b4-4c49-a24b-9351d630a752)
 
@@ -129,7 +129,7 @@ acompanhamento para diagnosticar eventuais problemas de comportamento que
 passaram desapercebidos ao longo do tempo, ou que refletem a mudança de público
 da página.
 
-## Depurando problemas de performance
+### Depurando problemas de performance
 
 Se, no entanto, nenhuma das ferramentas auxiliar no processo de identificação de
 um problema de desempenho, execute alguns testes manuais que podem identificar a
@@ -151,7 +151,7 @@ causa do problema:
   - Melhorias de desempenho são constantemente adicionadas ao sistema e podem
     corrigir problemas que levam a lentidão.
 
-# Melhorias de desempenhos
+## Melhorias de desempenhos
 
 Após identificar um problema, seja por uma experiência negativa ou por alguns
 dos testes indicarem alguma métrica com valor inadequado, é preciso atuar.
@@ -162,7 +162,7 @@ melhorias relacionadas.
 
 Observe que as situações em que você deve atuar são só exemplos de alguns casos.
 
-## 🖼️ Imagens (jpg, png, gifs, ...)
+### 🖼️ Imagens (jpg, png, gifs, ...)
 
 **Quando atuar**...
 
@@ -175,7 +175,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 > **Dica**: use os componentes deco de imagens, como `<Image>` e `<Picture>`, e
 > os configure corretamente, incluindo largura e altura.
 
-## 📈 Imagens (SVG)
+### 📈 Imagens (SVG)
 
 **Quando atuar**...
 
@@ -184,7 +184,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 
 **Guia**: [Otimizando SVGs](/docs/performance/medias/svg-sprites)
 
-## 🖹 Fontes
+### 🖹 Fontes
 
 **Quando atuar**...
 
@@ -197,7 +197,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 > **Dica**: Use fontes padrão oferecidas pela google. Se preciso use fontes de
 > pouco tamanho (dando preferência a woff/woff2).
 
-## 📜 Scripts de terceiros
+### 📜 Scripts de terceiros
 
 **Quando atuar**...
 
@@ -213,7 +213,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 > execução do script para depois que a página já estiver carregado e o usuário
 > estiver interagindo com ela.
 
-## 🔄 Eficiência no carregamento de dados (loaders)
+### 🔄 Eficiência no carregamento de dados (loaders)
 
 **Quando atuar**...
 
@@ -232,7 +232,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 >   loaders
 > - Salve os loaders que são reutilizados em diferentes páginas/sections
 
-## 🏝️ Ilhas
+### 🏝️ Ilhas
 
 **Quando atuar**...
 
@@ -246,7 +246,7 @@ Observe que as situações em que você deve atuar são só exemplos de alguns c
 > um JSX para dentro de uma ilha. Reduza o máximo possível o escopo da ilha
 > (ex.: prefira um botão como ilha, do que todo um `form`).
 
-# Fontes relevantes
+## Fontes relevantes
 
 - [web.dev - Core Web Vitals](https://web.dev/explore/learn-core-web-vitals?hl=pt-br)
 

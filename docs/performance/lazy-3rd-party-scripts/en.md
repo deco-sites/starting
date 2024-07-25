@@ -2,7 +2,7 @@
 description: Learn how to use third-party scripts on your website without sacrificing performance.
 ---
 
-### Summary
+## Summary
 
 > The use of third-party scripts can have a significant impact on website
 > performance. These scripts often operate in a blocking manner and can hinder
@@ -15,7 +15,7 @@ description: Learn how to use third-party scripts on your website without sacrif
 > 3. Use async or defer attributes for scripts
 > 4. Preload connection to the script's origin
 
-# Delaying the loading of scripts.
+## Delaying the loading of scripts.
 
 If the script in question is not a priority, meaning it can wait for user
 interaction or does not represent a vital functionality for the website, a
@@ -58,7 +58,7 @@ const observer = new IntersectionObserver((items) => {
 observer.observe(elem);
 ```
 
-# Async and Defer in Scripts
+## Async and Defer in Scripts
 
 The presence of a `<script src="script.js">` tag causes a delay in the execution
 of DOM loading. This is because the browser will respect the order of the
@@ -79,7 +79,7 @@ use the defer attribute:
 <script defer src="script.js">
 ```
 
-# Preload connection to the script's origin
+## Preload connection to the script's origin
 
 If possible, it is recommended to serve the script locally (in the `static`
 folder). If the script is hosted on another domain, the recommendation is to use

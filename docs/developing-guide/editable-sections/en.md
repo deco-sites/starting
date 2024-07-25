@@ -5,7 +5,7 @@ since: 1.0.0
 
 ---
 
-# Introduction to Sections (dev)
+## Introduction to Sections (dev)
 
 A Section represents a configurable UI element for a Deco site. It is essential
 to understand what this entails for a developer.
