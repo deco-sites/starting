@@ -6,7 +6,52 @@
       "__resolveType": "HeaderV2"
     },
     {
+      "__resolveType": "site/sections/DevCollab/Hero.tsx",
+      "title": "<p><span class='font-[argent-pixel] text-[#02F67C]'>Dev</span> Collab</p>",
+      "subTitle": "<p>Um dia intenso entre o time de engenharia da deco.cx com os devs da sua empresa para solucionar desafios tecnológicos da sua empresa</p>",
+      "ctas": [
+        {
+          "href": "/",
+          "text": "Reservar Agora"
+        }
+      ],
+      "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f21a03d9-ab2b-4cc0-9acf-01af42bcfe91"
+    },
+    {
+      "__resolveType": "site/sections/DevCollab/FinalDelivery.tsx",
+      "title": "Entrega Final",
+      "items": [
+        {
+          "icon": "dev-computer",
+          "title": "PoCs Estruturadas",
+          "text": "Cada time irá apresentar uma PoC funcional e viável para implementação"
+        },
+        {
+          "icon": "grad-hat",
+          "title": "Debate e Seleção de Stack",
+          "text": "O time terá um momento de discutir e evoluir na escolha de sua stack de trabalho"
+        },
+        {
+          "icon": "benchmark",
+          "title": "Benchmarking",
+          "text": "Vamos trazer as melhores práticas que vemos no mercado atendendo os melhores times de tecnologia"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/Home/FAQ.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Home/TextHero.tsx",
+      "subTitle": "<p><span>Se você acredita que sua empresa pode se beneficiar, solicite o agendamento.</span></p>",
+      "pixelTitle": "<p></p>",
+      "title": "<p>O Dev Collab é <span style=\"color: #02f67c\">exclusivo para convidados e parceiros</span> da <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">deco</a>.<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">cx</a>.</p>",
+      "ctas": [
+        {
+          "href": "/",
+          "text": "Reservar Agora"
+        }
+      ]
     },
     {
       "__resolveType": "Deco Investors"
