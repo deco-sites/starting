@@ -38,6 +38,37 @@
       ]
     },
     {
+      "__resolveType": "site/sections/DevCollab/Schedule.tsx",
+      "title": "Pequenos times, altamente produtivos",
+      "schedule": [
+        {
+          "activities": [
+            "<p>Definição de desafios</p>",
+            "<p><span>Definição dos times e distribuição dos desafios</span></p>"
+          ],
+          "mode": "Remoto",
+          "title": "7 dias antes"
+        },
+        {
+          "activities": [
+            "<p>Workshop de introdução e setup de ambiente na deco.cx</p>"
+          ],
+          "mode": "Remoto",
+          "title": "1-2 dias antes"
+        },
+        {
+          "activities": [
+            "<p>Alinhamento de expectativas</p>",
+            "<p>Sessão de coding guiada por mentor da deco</p>",
+            "<p>Apresentação + Happy hour</p>"
+          ],
+          "highlight": true,
+          "mode": "Presencial",
+          "title": "No dia"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/DevCollab/FinalDelivery.tsx",
       "title": "Entrega Final",
       "items": [
