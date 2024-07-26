@@ -18,6 +18,26 @@
       "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f21a03d9-ab2b-4cc0-9acf-01af42bcfe91"
     },
     {
+      "__resolveType": "site/sections/DevCollab/Benefits.tsx",
+      "items": [
+        {
+          "icon": "Users",
+          "title": "Trabalho Integrado",
+          "text": "Nossos times lado a lado"
+        },
+        {
+          "icon": "benchmark",
+          "title": "Entrega Concreta",
+          "text": "PoC desenvolvida durante o dia"
+        },
+        {
+          "icon": "dev-computer",
+          "title": "Inovação Tecnológica",
+          "text": "Debate de arquitetura e soluções"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/DevCollab/FinalDelivery.tsx",
       "title": "Entrega Final",
       "items": [

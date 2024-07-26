@@ -36,7 +36,7 @@ export default function Hero({
   ],
 }: Props) {
   return (
-    <div class="relative z-10 mx-0 md:mx-4 mt-28 mb-20">
+    <div class="relative z-10 mx-0 md:mx-4 mt-28 mb-12">
       <div class="flex flex-col items-center justify-center gap-8 h-[675px]">
         {background && (
           <Image src={background} width={400} height={600} class="absolute top-0 max-w-[1280px] w-full h-full object-cover rounded-3xl" />

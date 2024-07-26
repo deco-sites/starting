@@ -83,6 +83,7 @@ export type AvailableIcons =
   | "Trash"
   | "Truck"
   | "User"
+  | "Users"
   | "VTEXLogo"
   | "VndaLogo"
   | "Visa"
