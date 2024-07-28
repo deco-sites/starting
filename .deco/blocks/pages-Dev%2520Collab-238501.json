@@ -146,7 +146,8 @@
           "href": "/",
           "text": "Reservar Agora"
         }
-      ]
+      ],
+      "showRadial": true
     },
     {
       "__resolveType": "Deco Investors"
