@@ -85,7 +85,7 @@ export default function TextHero({
       {showRadial && (
         <div class="relative">
           <div
-            class="h-[200vh] z-10 w-[100vw] md:w-[100vw] absolute lg:w-[100vw] lg:top-[50px] scale-150 lg:scale-100 translate-y-[-20rem] lg:translate-y-[-30rem]"
+            class="h-[1500px] z-10 w-[100vw] md:w-[100vw] absolute lg:w-[100vw] lg:top-[50px] scale-150 lg:scale-100 translate-y-[-20rem] lg:translate-y-[-30rem]"
             style="background: radial-gradient(circle, rgba(2,246,124,.4) 0%, rgba(255,255,255,0) 60%);"
           ></div>
         </div>
