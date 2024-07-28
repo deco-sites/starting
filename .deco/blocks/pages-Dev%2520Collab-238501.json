@@ -15,7 +15,7 @@
           "text": "Reservar Agora"
         }
       ],
-      "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f21a03d9-ab2b-4cc0-9acf-01af42bcfe91"
+      "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4f82786f-4e55-41d5-a0c9-15bbd7f2635f"
     },
     {
       "__resolveType": "site/sections/DevCollab/Benefits.tsx",
@@ -38,29 +38,57 @@
       ]
     },
     {
+      "__resolveType": "site/sections/DevCollab/Activities.tsx",
+      "title": "Um dia de intensivo presencial com o acompanhamento da deco para a solução de um desafio tecnológico da sua empresa",
+      "subtitle": "Times de 3-5 devs do seu negócio para cada engenheiro da deco.cx, para trabalho ágil e focado em cada desafio.",
+      "schedule": [
+        {
+          "icon": "Doc-list",
+          "subtitle": "A primeira fase do Dev Collab é o mapeamento das principais dores de cabeça do que time e seleção do que iremos atacar.",
+          "thumb": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8fca28e8-ac0b-4330-ac2c-b6edcdb8aea8",
+          "title": "<p><span style=\"color: #02f67c\">Escolha</span><span> dos Desafios</span></p>",
+          "id": "Escolha dos desafios"
+        },
+        {
+          "icon": "grad-hat",
+          "subtitle": "No dia escolhido, os desenvolvedores do seu time e o time da deco.cx irão se encontrar presencialmente para codar PoCs para os desafios escolhidos.",
+          "thumb": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d911f51c-6ca6-49b8-99ea-8f150484394e",
+          "title": "<p><span style=\"color: #02f67c\">Intensivo</span><span> e Presencial</span></p>",
+          "id": "Intensivo e Presencial"
+        },
+        {
+          "icon": "Slide-graph",
+          "subtitle": "Em um ambiente presencial, times desenvolvem PoCs e compartilham resultados em uma apresentação final, seguida de um Happy Hour.",
+          "thumb": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/20862a3f-ba99-437a-9318-14a02649f161",
+          "title": "<p><span style=\"color: #02f67c\">Apresentação</span><span> e Confraternização</span></p>",
+          "id": "Apresentação e Confraternização"
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/DevCollab/Schedule.tsx",
       "title": "Pequenos times, altamente produtivos",
       "schedule": [
         {
           "activities": [
-            "<p>Definição de desafios</p>",
-            "<p><span>Definição dos times e distribuição dos desafios</span></p>"
+            "Definição de desafios",
+            "Definição dos times e distribuição dos desafios"
           ],
           "mode": "Remoto",
           "title": "7 dias antes"
         },
         {
           "activities": [
-            "<p>Workshop de introdução e setup de ambiente na deco.cx</p>"
+            "Workshop de introdução e setup de ambiente na deco.cx"
           ],
           "mode": "Remoto",
           "title": "1-2 dias antes"
         },
         {
           "activities": [
-            "<p>Alinhamento de expectativas</p>",
-            "<p>Sessão de coding guiada por mentor da deco</p>",
-            "<p>Apresentação + Happy hour</p>"
+            "Alinhamento de expectativas",
+            "Sessão de coding guiada por mentor da deco",
+            "Apresentação + Happy hour"
           ],
           "highlight": true,
           "mode": "Presencial",

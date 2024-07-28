@@ -40,7 +40,7 @@ export default function Schedule({ title, schedule = [] }: Props) {
                     item.highlight ? styles.card.highlight : styles.card.regular
                   }`}
                 >
-                  <span dangerouslySetInnerHTML={{ __html: text }} />
+                  <span>{text}</span>
                 </div>
               ))}
             </div>

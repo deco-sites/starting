@@ -39,7 +39,13 @@ export default function Hero({
     <div class="relative z-10 mx-0 md:mx-4 mt-28 mb-12">
       <div class="flex flex-col items-center justify-center gap-8 h-[675px]">
         {background && (
-          <Image src={background} width={400} height={600} class="absolute top-0 max-w-[1280px] w-full h-full object-cover rounded-3xl" />
+          <Image
+            preload
+            src={background}
+            width={1200}
+            height={600}
+            class="absolute top-0 max-w-[1280px] w-full h-full object-cover rounded-3xl"
+          />
         )}
         <div class="flex flex-col items-center gap-4 leading-none z-20">
           {title && (
