@@ -16,7 +16,7 @@ export interface Props {
 
 export default function FinalDelivery({ title, items = [] }: Props) {
   return (
-    <div class="relative flex flex-col items-center justify-center gap-16 z-10">
+    <div class="relative flex flex-col items-center justify-center gap-16 z-10 my-20">
       <h2 class="text-3xl md:text-4xl lg:text-[40px] text-white font-medium">{title}</h2>
       <div class="flex flex-col lg:flex-row gap-8 px-4 w-full justify-center">
         {items.map((item) => (

@@ -97,6 +97,22 @@
       ]
     },
     {
+      "__resolveType": "site/sections/DevCollab/Teams.tsx",
+      "title": "Pequenos times, altamente produtivos",
+      "subtitle": "Cada equipe será composta por 4-5 devs da sua empresa e 1 dev da deco.cx. Sem limite de times trabalhando em desafios distintos.",
+      "tags": [
+        {
+          "id": "5x devs da sua empresa",
+          "text": "<p><strong><span style=\"color: rgb(2, 246, 124)\">5x</span></strong> devs da sua empresa</p>"
+        },
+        {
+          "id": "1x dev deco",
+          "text": "<p><strong>1x </strong>dev deco</p>"
+        }
+      ],
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/940d7858-2a53-4f39-93f5-3a85fac30884"
+    },
+    {
       "__resolveType": "site/sections/DevCollab/FinalDelivery.tsx",
       "title": "Entrega Final",
       "items": [

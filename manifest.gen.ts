@@ -68,6 +68,7 @@ import * as $$$$$$42 from "./sections/DevCollab/Benefits.tsx";
 import * as $$$$$$43 from "./sections/DevCollab/FinalDelivery.tsx";
 import * as $$$$$$44 from "./sections/DevCollab/Hero.tsx";
 import * as $$$$$$45 from "./sections/DevCollab/Schedule.tsx";
+import * as $$$$$$168 from "./sections/DevCollab/Teams.tsx";
 import * as $$$$$$46 from "./sections/Differentials.tsx";
 import * as $$$$$$47 from "./sections/Divider.tsx";
 import * as $$$$$$48 from "./sections/DocsOverviewContent.tsx";
@@ -258,6 +259,7 @@ const manifest = {
     "site/sections/DevCollab/FinalDelivery.tsx": $$$$$$43,
     "site/sections/DevCollab/Hero.tsx": $$$$$$44,
     "site/sections/DevCollab/Schedule.tsx": $$$$$$45,
+    "site/sections/DevCollab/Teams.tsx": $$$$$$168,
     "site/sections/Differentials.tsx": $$$$$$46,
     "site/sections/Divider.tsx": $$$$$$47,
     "site/sections/DocsOverviewContent.tsx": $$$$$$48,
