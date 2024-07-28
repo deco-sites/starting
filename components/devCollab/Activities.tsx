@@ -24,7 +24,7 @@ export interface Props {
 
 export default function Activities({ title, subtitle, schedule = [] }: Props) {
   return (
-    <div class="relative flex flex-col items-center justify-center gap-16 z-10 my-16 px-4 py-20">
+    <div class="relative flex flex-col items-center justify-center gap-16 z-10 my-16 px-4 py-10 md:py-20">
       <div class="flex flex-col items-center gap-4 max-w-[1200px]">
         <h2 class="text-3xl md:text-4xl lg:text-[40px] text-white text-center font-medium">
           {title}
@@ -36,9 +36,9 @@ export default function Activities({ title, subtitle, schedule = [] }: Props) {
           <div class="relative overflow-hidden pt-48 lg:max-w-[416px] p-4 box-border bg-[#070D0D] border border-[#0B1612] rounded-2xl">
             <Image
               src={item.thumb}
-              width={100}
-              height={100}
-              class="absolute w-full max-h-[250px]  md:max-w-[350px] lg:max-w-full object-cover top-0 left-0 md:left-[30%] lg:left-0 p-4 object-top"
+              width={362}
+              height={250}
+              class="absolute w-full max-h-[250px] md:max-w-[350px] lg:max-w-full object-cover top-0 left-0 md:left-[30%] lg:left-0 p-4 object-top"
             />
             <div class="flex gap-4">
               <Icon

@@ -21,13 +21,13 @@ export interface Props {
 
 export default function Teams({ image, title, subtitle, tags }: Props) {
   return (
-    <div class="relative overflow-hidden flex justify-center z-10 my-20">
-      <div class="flex flex-col lg:flex-row gap-4 items-center justify-center rounded-lg bg-[#070D0D] lg:max-h-[26rem] w-fit max-w-[1200px] p-4">
+    <div class="relative flex justify-center z-10 py-10 md:py-20">
+      <div class="flex overflow-hidden flex-col lg:flex-row gap-4 items-center justify-center rounded-lg bg-[#070D0D] lg:max-h-[26rem] w-fit max-w-[1200px] p-4">
         <Image
           src={image}
-          width={500}
-          height={500}
-          class="w-full lg:w-[50%] max-w-[600px]"
+          width={600}
+          height={600}
+          class="w-full lg:w-[40%] lg:scale-150 lg:translateX-[-4rem] max-w-[600px]"
         />
         <div class="flex flex-col gap-8 p-6">
           <h2 class="text-3xl md:text-4xl lg:text-[40px] text-white font-medium">
