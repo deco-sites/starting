@@ -22,7 +22,7 @@ export default function Schedule({ title, schedule = [] }: Props) {
   };
 
   return (
-    <div class="relative flex flex-col items-center justify-center gap-16 z-10 my-10 md:my-20">
+    <div class="relative flex flex-col items-center justify-center gap-16 z-10 my-10 md:my-20 text-[#949E9E]">
       <h2 class="text-3xl md:text-4xl lg:text-[40px] text-white text-center font-medium">{title}</h2>
       <div class="flex flex-col items-stretch justify-center md:flex-row gap-8 px-4 w-full">
         {schedule.map((item) => (

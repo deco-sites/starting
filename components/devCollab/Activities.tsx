@@ -24,7 +24,7 @@ export interface Props {
 
 export default function Activities({ title, subtitle, schedule = [] }: Props) {
   return (
-    <div class="relative flex flex-col items-center justify-center gap-16 z-10 my-16 px-4 py-10 md:py-20">
+    <div class="relative flex flex-col items-center justify-center gap-16 z-10 my-16 px-4 py-10 md:py-20 text-[#949E9E]">
       <div class="flex flex-col items-center gap-4 max-w-[1200px]">
         <h2 class="text-3xl md:text-4xl lg:text-[40px] text-white text-center font-medium">
           {title}

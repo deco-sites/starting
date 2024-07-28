@@ -36,7 +36,7 @@ export default function Hero({
   ],
 }: Props) {
   return (
-    <div class="relative z-10 mx-0 md:mx-4 m-20 pb-12">
+    <div class="relative z-10 mx-0 md:mx-4 m-20 pb-12 text-[#949E9E]">
       <div class="flex flex-col items-center justify-center gap-8 h-[675px]">
         {background && (
           <div class="absolute top-0 max-w-[1280px] w-full h-full px-4">
