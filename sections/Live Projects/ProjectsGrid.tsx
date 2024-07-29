@@ -1,6 +1,7 @@
 import Image from "deco-sites/std/components/Image.tsx";
 import { useEffect, useId, useState } from "preact/hooks";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Screenshot {
   label?: string;
@@ -17,6 +18,7 @@ export interface Template {
   label: string;
   description?: string;
   link?: string;
+  icon?: ImageWidget;
   image?: Screenshot[];
 }
 

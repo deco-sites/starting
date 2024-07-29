@@ -1,11 +1,11 @@
 import Icon from "site/components/ui/Icon.tsx";
 
 export interface Question {
-  question: string;
+  question?: string;
   /**
    * @format textarea
    */
-  answer: string;
+  answer?: string;
 }
 
 export function FaqItem({ question, answer }: Question) {
@@ -33,12 +33,12 @@ export function FaqItem({ question, answer }: Question) {
 }
 
 export interface Props {
-  questions: Question[];
+  questions?: Question[];
   /**
    * @format rich-text
    * @default Click here to tweak this text however you want.
    */
-  title: string;
+  title?: string;
 }
 
 export default function Faq({

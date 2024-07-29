@@ -1032,5 +1032,15 @@
   "/.deco/blocks/Deco%20Investors.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/New Landing/Investors.tsx"
+  },
+  "/.deco/blocks/pages-Live%2520Projects-467277.json": {
+    "name": "Live Projects",
+    "path": "/live-projects",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/FAQ%20%5BEN%5D.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Home/FAQ.tsx"
   }
 }
