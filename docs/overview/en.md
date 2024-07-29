@@ -3,9 +3,7 @@ description: |
    deco.cx is a website builder that allows you to create, personalize and deploy websites with ease. With a focus on personalization, you can create experiments, segment content by audience and more.
 ---
 
-## What is deco.cx
-
-### The Old Web is broken, complicated and fragmented.
+## The Old Web is broken, complicated and fragmented.
 
 For the last 10 years, our team built high-volume, mission-critical websites and
 applications. We tested out most new frameworks and frontend architectures from

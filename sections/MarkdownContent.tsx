@@ -114,7 +114,7 @@ function Content(props: MDContent) {
         data-color-mode="dark"
         data-light-theme="light"
         data-dark-theme="dark"
-        class="mt-8 markdown-body !text-[#F9FAFB] !bg-base-700"
+        class="markdown-body !text-[#F9FAFB] !bg-base-700"
         dangerouslySetInnerHTML={{ __html: html }}
       />
       <script src={asset("/docs/js/copy-snippets.js")}></script>

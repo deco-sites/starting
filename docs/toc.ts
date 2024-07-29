@@ -6,7 +6,7 @@ type TableOfContents = Array<TopLevelEntry>;
 
 const tableOfContents: TableOfContents = [
   {
-    title: { pt: "Visão Geral", en: "Overview" },
+    title: { pt: "O que é deco.cx", en: "What is deco.cx" },
     slug: "overview",
   },
   {
