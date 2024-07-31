@@ -51,6 +51,7 @@ docs/pt/performance/testing/cwv,docs/pt/,permanent
 /blog/abertura-ii-hackathon-deco.md,/blog/,permanent
 /docs/en/tips/images,/docs/en/,permanent
 /start,https://deno.land/x/deco/scripts/init.ts,permanent
+/run,https://deno.land/x/deco/scripts/run.ts,permanent
 /docs/en/performance/testing/cwv,/docs/en,permanent
 /docs/en/concepts/deco.cx,/docs/en/,permanent
 /pt,/,temporary
