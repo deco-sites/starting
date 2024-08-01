@@ -196,7 +196,7 @@
         }
       },
       "itensPerPage": 12,
-      "indexCategories": [
+      "categories": [
         {
           "cards": [
             {
@@ -223,14 +223,15 @@
               "image": [
                 {
                   "color": "#FFFFFF",
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cede2955-3f70-444d-9870-64b85ba6f3a6"
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0160d672-2e4f-453b-8d26-29863641c4cb"
                 }
               ],
               "link": "https://www.pgadesivos.com.br/",
               "label": "PG Adesivos"
             }
           ],
-          "label": "Art, Crafts & Fabrics"
+          "label": "Art, Crafts & Fabrics",
+          "hideCategoryNameOnCard": false
         },
         {
           "cards": [
@@ -963,7 +964,7 @@
         "textPosition": "bottom",
         "textAlignment": "left"
       },
-      "nomeDaCategoriaGeral": "All"
+      "defaultCategory": "All"
     },
     {
       "__resolveType": "site/sections/Head.tsx",
