@@ -1,5 +1,5 @@
 import Image from "deco-sites/std/components/Image.tsx";
-import { useEffect, useId, useState } from "preact/hooks";
+import { useId } from "preact/hooks";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import { useSignal } from "@preact/signals";

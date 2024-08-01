@@ -797,12 +797,14 @@
               {
                 "subTitle": "Product Hunt",
                 "title": "#1 Product of the Day",
-                "icon": "laurel"
+                "icon": "laurel",
+                "link": " https://www.producthunt.com/products/deco-cx-2-0#deco-cx-2-0"
               },
               {
                 "subTitle": "Product Hunt",
                 "title": "#3 Product of the Month",
-                "icon": "laurel"
+                "icon": "laurel",
+                "link": " https://www.producthunt.com/products/deco-cx-2-0#deco-cx-2-0"
               }
             ]
           },

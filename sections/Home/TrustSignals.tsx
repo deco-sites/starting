@@ -4,6 +4,7 @@ export interface TrustSignal {
   icon: AvailableIcons;
   title: string;
   subTitle: string;
+  link?: string;
 }
 
 export interface Props {
@@ -18,7 +19,11 @@ export default function TrustSignals({ trustSignals }: Props) {
       {trustSignals && trustSignals.length > 0 && (
         <div class="flex flex-col min-[600px]:flex-row justify-center items-center gap-6 pt-[22px]">
           {trustSignals.map((trustSignal) => (
-            <div class="flex justify-center items-center gap-2">
+            <a
+              href={trustSignal.link}
+              target="_blank"
+              class="flex justify-center items-center gap-2 hover:scale-105 transition duration-300"
+            >
               <Icon
                 class="mt-2 scale-x-[-1]"
                 id={trustSignal.icon}
@@ -31,18 +36,16 @@ export default function TrustSignals({ trustSignals }: Props) {
                   dangerouslySetInnerHTML={{
                     __html: trustSignal.title,
                   }}
-                >
-                </p>
+                ></p>
                 <p
                   class="font-albert-sans inline-block text-xs text-center text-gray-400"
                   dangerouslySetInnerHTML={{
                     __html: trustSignal.subTitle,
                   }}
-                >
-                </p>
+                ></p>
               </div>
               <Icon class="mt-2" id={trustSignal.icon} width={35} height={35} />
-            </div>
+            </a>
           ))}
         </div>
       )}
