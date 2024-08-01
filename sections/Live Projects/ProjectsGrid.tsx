@@ -67,7 +67,6 @@ function ProjectCard({ link, label, category, image, icon }: TemplateInfo) {
               src={image}
               alt={label}
               width={398}
-              height={244}
               loading="lazy"
               style={{ width: "100%" }}
             />
@@ -76,7 +75,6 @@ function ProjectCard({ link, label, category, image, icon }: TemplateInfo) {
               src={image}
               alt={label}
               width={398}
-              height={244}
               loading="lazy"
               style={{ width: "100%" }}
             />
