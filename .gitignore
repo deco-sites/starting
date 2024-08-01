@@ -77,3 +77,4 @@ deno.*.tmp
 
 # deco .metadata
 .metadata/
+.deco/metadata/*
