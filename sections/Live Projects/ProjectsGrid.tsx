@@ -61,9 +61,9 @@ function ProjectCard({ link, label, category, image, icon }: TemplateInfo) {
     <a href={`${link}`} target="_blank" className="flex flex-col gap-4">
       {image && (
         <div class="rounded-2xl p-2 border border-[#0B1612] bg-[#070D0D]">
-          <div class="group overflow-y-hidden max-h-[400px] md:max-h-[300px] rounded-lg">
+          <div class="group overflow-y-hidden max-h-[400px] md:max-h-[300px] rounded-lg object-top">
             <Image
-              className="group-hover:translate-y-[-8rem] transition duration-[2000ms] ease-in-out object-top object-cover"
+              className="group-hover:translate-y-[-8rem] h-full transition duration-[2000ms] ease-in-out object-top object-cover"
               src={image}
               alt={label}
               width={398}
@@ -72,7 +72,7 @@ function ProjectCard({ link, label, category, image, icon }: TemplateInfo) {
               style={{ width: "100%" }}
             />
             <Image
-              className="group-hover:translate-y-[-8rem] transition duration-[2000ms] ease-in-out object-top object-cover"
+              className="group-hover:translate-y-[-8rem] h-full transition duration-[2000ms] ease-in-out object-top object-cover"
               src={image}
               alt={label}
               width={398}
