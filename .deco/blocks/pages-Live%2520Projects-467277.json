@@ -182,7 +182,7 @@
         }
       },
       "itensPerPage": 12,
-      "indexCategories": [
+      "categories": [
         {
           "cards": [
             {
@@ -223,7 +223,8 @@
                 }
               ],
               "label": "PG Adesivos",
-              "link": "https://www.pgadesivos.com.br/?srsltid=AfmBOoq8UrtWRMewpXeVh0nVeYFdA6JRw-77BFHzgjeY74zlUfx5fz2d"
+              "link": "https://www.pgadesivos.com.br/?srsltid=AfmBOoq8UrtWRMewpXeVh0nVeYFdA6JRw-77BFHzgjeY74zlUfx5fz2d",
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/99439932-0bd7-4e5b-8dfb-9d5bd32abef9"
             }
           ],
           "label": "Art, Crafts & Fabrics",
@@ -960,7 +961,7 @@
         "textPosition": "bottom",
         "textAlignment": "left"
       },
-      "nomeDaCategoriaGeral": "All"
+      "defaultCategory": "All"
     },
     {
       "__resolveType": "site/sections/Head.tsx",
