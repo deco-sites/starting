@@ -123,7 +123,7 @@ export default function GlossaryPost({ slug, posts }: Props) {
   }
 
   return (
-    <div class="flex gap-10 w-full container mx-auto px-4 md:px-0 py-24 lg:py-0  lg:pb-28 lg:mt-44 ">
+    <div class="flex gap-10 w-full container mx-auto px-4 md:px-0 py-24 lg:py-0  lg:pb-28 lg:mt-44 justify-center">
       <div class="flex-col hidden md:flex min-w-[240px]">
         <a href="/glossary" class="text-white hover:text-[#02F67C]">
           All glossary terms
@@ -161,7 +161,7 @@ export default function GlossaryPost({ slug, posts }: Props) {
           }
         })}
       </div>
-      <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0">
+      <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0 lg:max-w-2xl lg:mx-0">
         <div className="w-full flex flex-col gap-12 items-center justify-center">
           <h1 className="text-5xl font-bold text-[#02f67c]">{title}</h1>
           <p class="text-white text-xl text-center">{excerpt}</p>
