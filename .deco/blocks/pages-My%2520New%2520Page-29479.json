@@ -1284,7 +1284,7 @@
               "ctas": [
                 {
                   "href": "https://deco.new",
-                  "text": "Try for Free",
+                  "text": "Try for Free now now now now now",
                   "id": "bt-click-signup"
                 }
               ]
@@ -1387,9 +1387,6 @@
                 }
               ]
             }
-          },
-          {
-            "__resolveType": "GTM"
           }
         ],
         "rule": {
