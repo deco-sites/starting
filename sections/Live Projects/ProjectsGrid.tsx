@@ -162,7 +162,7 @@ function TemplatesGrid(props: Props) {
           category: category.label,
         }))
       )
-      .flat()
+      .flat(),
   );
 
   const handleChangeCategoria = (newCategory: string) => {
@@ -171,7 +171,7 @@ function TemplatesGrid(props: Props) {
     const newProjects = categories
       .filter(
         (category) =>
-          category.label === newCategory || newCategory === defaultCategory
+          category.label === newCategory || newCategory === defaultCategory,
       )
       .map((category) =>
         category.cards.map((project) => ({
@@ -209,7 +209,7 @@ function TemplatesGrid(props: Props) {
             {projects.value
               .slice(
                 currentPage.value * itensPerPage,
-                (currentPage.value + 1) * itensPerPage
+                (currentPage.value + 1) * itensPerPage,
               )
               .map(({ label, description, link, image, category, icon }) => (
                 <ProjectCard

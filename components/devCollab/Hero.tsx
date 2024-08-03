@@ -56,7 +56,8 @@ export default function Hero({
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
-            ></h1>
+            >
+            </h1>
           )}
           {subTitle && (
             <h2
@@ -64,7 +65,8 @@ export default function Hero({
               dangerouslySetInnerHTML={{
                 __html: subTitle,
               }}
-            ></h2>
+            >
+            </h2>
           )}
         </div>
         <div class="flex flex-row gap-4 justify-center items-center w-full md:w-auto z-20">
@@ -80,7 +82,6 @@ export default function Hero({
           ))}
         </div>
       </div>
-
     </div>
   );
 }
