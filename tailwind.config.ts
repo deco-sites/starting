@@ -58,8 +58,7 @@ export default {
           "0px 48px 13px 0px rgba(0, 0, 0, 0.00), 0px 31px 12px 0px rgba(0, 0, 0, 0.04), 0px 17px 10px 0px rgba(0, 0, 0, 0.13), 0px 8px 8px 0px rgba(0, 0, 0, 0.21), 0px 2px 4px 0px rgba(0, 0, 0, 0.25)",
         "watch-our-demo":
           "rgb(0, 0, 0) 0px 0px 0px 2px, #DA8FFF 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
-        hero:
-          "rgb(0, 0, 0) 0px 0px 0px 2px, rgb(6, 228, 116) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+        hero: "rgb(0, 0, 0) 0px 0px 0px 2px, rgb(6, 228, 116) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
         "hero-reverse":
           "rgb(0, 0, 0) 0px 0px 0px 2px, rgb(17, 48, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
         "custom-shadow": "0px 4px 60px rgba(0, 0, 0, 0.17)",
@@ -81,6 +80,16 @@ export default {
         "center-center": "center center",
       },
       keyframes: {
+        slideInFromTop: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-50px)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0)" /* End position */,
+          },
+        },
         sliding: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
@@ -92,6 +101,10 @@ export default {
         slide: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
+        },
+        slidefull: {
+          "0%": { transform: "translateX(-100vw)" },
+          "100%": { transform: "translateX(100vw)" },
         },
         slideRight: {
           "0%": { transform: "translateX(-100%)" },
@@ -635,6 +648,7 @@ export default {
         },
       },
       animation: {
+        slidigingDown: "slideInFromTop 500ms ease-in forwards",
         sliding: "sliding 30s linear infinite",
         slidingright: "slidingright 30s linear infinite",
         slide: "slide 25s infinite linear",

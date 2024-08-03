@@ -11,10 +11,71 @@
         "__resolveType": "site/sections/Home/TextHero.tsx",
         "pixelTitle": "<p><span style=\"color: #02f67c\">Incredible websites</span></p>",
         "title": "<p>built by our community</p>",
-        "subTitle": "<p><span>Find inspiration from +100 websites all made using </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\"><span>deco.cx</span></a><span>. </span></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://admin.deco.cx/spaces/new\"><u><span style=\"color: #02f67c\">Looking for templates to start your project?</span></u></a></p>",
+        "subTitle": "<p><span>Find inspiration from +100 websites all made using </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\"><span>deco.cx</span></a><span>.</span></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://admin.deco.cx/spaces/new\"><u><span style=\"color: #02f67c\">Looking for templates to start your project?</span></u></a></p>",
         "ctas": [],
         "topPage": true
       }
+    },
+    {
+      "__resolveType": "site/sections/Live Projects/ProjectsSlider.tsx",
+      "projects": [
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a876cba-9665-43ee-acd4-0fe665e65fc3",
+          "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/013a4f33-a02d-48b5-bceb-6165f5cac0c6",
+          "url": "https://www.pgadesivos.com.br/?srsltid=AfmBOoq8UrtWRMewpXeVh0nVeYFdA6JRw-77BFHzgjeY74zlUfx5fz2d",
+          "name": "PG Adress",
+          "performance": 95,
+          "category": "Pet"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a876cba-9665-43ee-acd4-0fe665e65fc3",
+          "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/013a4f33-a02d-48b5-bceb-6165f5cac0c6",
+          "url": "https://www.pgadesivos.com.br/?srsltid=AfmBOoq8UrtWRMewpXeVh0nVeYFdA6JRw-77BFHzgjeY74zlUfx5fz2d",
+          "name": "PG Adress",
+          "performance": 95,
+          "category": "Pet"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a876cba-9665-43ee-acd4-0fe665e65fc3",
+          "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/013a4f33-a02d-48b5-bceb-6165f5cac0c6",
+          "url": "https://www.pgadesivos.com.br/?srsltid=AfmBOoq8UrtWRMewpXeVh0nVeYFdA6JRw-77BFHzgjeY74zlUfx5fz2d",
+          "name": "PG Adress",
+          "performance": 95,
+          "category": "Pet"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a876cba-9665-43ee-acd4-0fe665e65fc3",
+          "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/013a4f33-a02d-48b5-bceb-6165f5cac0c6",
+          "url": "https://www.pgadesivos.com.br/?srsltid=AfmBOoq8UrtWRMewpXeVh0nVeYFdA6JRw-77BFHzgjeY74zlUfx5fz2d",
+          "name": "PG Adress",
+          "performance": 20,
+          "category": "Testing"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a876cba-9665-43ee-acd4-0fe665e65fc3",
+          "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/013a4f33-a02d-48b5-bceb-6165f5cac0c6",
+          "url": "https://www.pgadesivos.com.br/?srsltid=AfmBOoq8UrtWRMewpXeVh0nVeYFdA6JRw-77BFHzgjeY74zlUfx5fz2d",
+          "name": "PG Adress",
+          "performance": 95,
+          "category": "Pet"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a876cba-9665-43ee-acd4-0fe665e65fc3",
+          "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/013a4f33-a02d-48b5-bceb-6165f5cac0c6",
+          "url": "https://www.pgadesivos.com.br/?srsltid=AfmBOoq8UrtWRMewpXeVh0nVeYFdA6JRw-77BFHzgjeY74zlUfx5fz2d",
+          "name": "PG Adress",
+          "performance": 95,
+          "category": "Pet"
+        },
+        {
+          "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a876cba-9665-43ee-acd4-0fe665e65fc3",
+          "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/013a4f33-a02d-48b5-bceb-6165f5cac0c6",
+          "url": "https://www.pgadesivos.com.br/?srsltid=AfmBOoq8UrtWRMewpXeVh0nVeYFdA6JRw-77BFHzgjeY74zlUfx5fz2d",
+          "name": "PG Adress",
+          "performance": 30,
+          "category": "Pet e shop"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
