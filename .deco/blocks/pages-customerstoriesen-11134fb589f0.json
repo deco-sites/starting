@@ -253,7 +253,10 @@
               "description": "Euro Colchões' three-person team increased its ecommerce PageSpeed score from 7 to 80, transforming Euro's online and physical presence."
             },
             {
-              "image": []
+              "image": [],
+              "label": "Maximus Tecidos",
+              "link": "https://deco.cx/en/blog/maximus-tecidos",
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b2f4ad04-724f-49fb-987f-5e8075a72cfd"
             }
           ],
           "label": "Lifestyle"
