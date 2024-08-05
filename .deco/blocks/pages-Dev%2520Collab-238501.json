@@ -8,7 +8,7 @@
     {
       "__resolveType": "site/sections/DevCollab/Hero.tsx",
       "title": "<p><span class='font-[argent-pixel] text-[#02F67C]'>Dev</span> Collab</p>",
-      "subTitle": "<p>Um dia intenso entre o time de engenharia da deco.cx com os devs da sua empresa para solucionar desafios tecnológicos da sua empresa</p>",
+      "subTitle": "<p>Um dia intenso entre o time de engenharia da deco.cx com os devs da sua empresa para solucionar os seus desafios tecnológicos.</p>",
       "ctas": [
         {
           "href": "/",
