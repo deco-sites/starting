@@ -63,8 +63,8 @@ function Project({ project }: { project: IProject }) {
             <Image
               src={project.banner || ""}
               alt={project.banner}
-              height={400}
-              width={300}
+              height={378}
+              width={282}
               class="w-full h-full object-top"
             />
           </div>
