@@ -52,19 +52,19 @@ function ProgressBar({ progress }: { progress: number }) {
 function Project({ project }: { project: IProject }) {
   return (
     <a
-      class="group rounded-lg w-[360px] relative"
+      class="group rounded-lg w-[300px] relative"
       href={project.url}
       target="_blank"
     >
       <ProgressBar progress={project.performance}/>
       <div class="flex flex-col gap-4">
         <div class="box-border bg-[#070D0D] p-2 border border-[#0B1612] rounded-xl">
-          <div class="flex items-start justify-center max-h-[400px] overflow-hidden rounded-lg">
+          <div class="flex items-start justify-center max-h-[400px] max-w-[300px] overflow-hidden rounded-lg">
             <Image
               src={project.banner || ""}
               alt={project.banner}
-              height={200}
-              width={100}
+              height={400}
+              width={300}
               class="w-full h-full object-top"
             />
           </div>

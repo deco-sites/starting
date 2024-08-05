@@ -181,7 +181,7 @@ function TemplatesGrid(props: Props) {
 
   return (
     <section class="relative bg-[#010101] z-10">
-      <div class="flex flex-col items-center mx-8 pb-10 lg:mx-auto lg:py-20 lg:px-16 gap-y-11 lg:max-w-[1440px]">
+      <div class="flex flex-col items-center mx-8 pb-10 lg:mx-auto py-12 lg:py-20 lg:px-16 gap-y-11 lg:max-w-[1440px]">
         <h2 class="text-white w-full text-left font-albert-sans text-[3rem] font-semibold leading-[120%]">
           {projectsTitle}
         </h2>
