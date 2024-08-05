@@ -14,6 +14,10 @@ export interface IProject {
 }
 
 function ProgressBar({ progress }: { progress: number }) {
+  const radius = 45
+  const dasharray = 2 * Math.PI * radius
+  const dashoffset = dasharray * ((100 - progress) / 100)
+
   return (
     <div class="absolute scale-[40%] group-hover:scale-[60%] right-[-30px] top-[-30px] transition duration-500">
       <div class="flex items-center justify-center w-[100px] h-[100px] relative bg-black rounded-full">
@@ -30,12 +34,12 @@ function ProgressBar({ progress }: { progress: number }) {
           <circle
             cx="50"
             cy="50"
-            r="45"
+            r={radius}
             stroke="url(#P0-20497123-gradientStroke-metric)"
             stroke-width="12"
             fill="transparent"
-            stroke-dasharray={progress * 3}
-            stroke-dashoffset="223.2706"
+            stroke-dasharray={dasharray}
+            stroke-dashoffset={dashoffset}
             stroke-linecap="round"
             transform="rotate(-90, 50, 50)"
           ></circle>

@@ -8,10 +8,10 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Home/TextHero.tsx",
-        "pixelTitle": "<p><span style=\"color: #02f67c\">Incredible websites</span></p>",
+        "__resolveType": "site/sections/Live Projects/TextHero.tsx",
+        "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">Incredible websites</span></p>",
         "title": "<p>built by our community</p>",
-        "subTitle": "<p><span>Find inspiration from +100 websites all made using </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\"><span>deco.cx</span></a><span>.</span></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://admin.deco.cx/spaces/new\"><u><span style=\"color: #02f67c\">Looking for templates to start your project?</span></u></a></p>",
+        "subTitle": "<p>Find inspiration from +100 websites all made using <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">deco.cx</a>.</p><p><a style=\"text-decoration: underline; text-decoration-color: rgb(2, 246, 124);\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://admin.deco.cx/spaces/new\"><span style=\"color: rgb(2, 246, 124)\">Looking for templates to start your project?</span></a></p>",
         "ctas": [],
         "topPage": true
       }
