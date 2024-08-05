@@ -754,13 +754,13 @@
       {
         "value": [
           {
+            "__resolveType": "GTM"
+          },
+          {
             "__resolveType": "site/sections/Theme/ThemeHints.tsx"
           },
           {
             "__resolveType": "HeaderV2"
-          },
-          {
-            "__resolveType": "GTM"
           },
           {
             "__resolveType": "site/sections/Home/Hero.tsx",
