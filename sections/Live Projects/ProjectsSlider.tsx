@@ -14,10 +14,10 @@ export default function ProjectsSlider({ projects }: Props) {
         ></div>
       </div>
       <div class="flex gap-4 overflow-hidden">
-        {Array(3)
+        {Array(2)
           .fill(0)
           .map(() => (
-            <div class="flex gap-4 animate-slide justify-center relative z-10 py-16">
+            <div class="flex gap-4 animate-sliding justify-center relative z-10 py-16">
               {projects.map((project) => (
                 <Project project={project} />
               ))}
