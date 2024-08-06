@@ -92,7 +92,7 @@ export default {
         },
         sliding: {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
         slidingright: {
           "0%": { transform: "translateX(-50%)" },
@@ -649,7 +649,7 @@ export default {
       },
       animation: {
         slidigingDown: "slideInFromTop 500ms ease-in forwards",
-        sliding: "sliding 70s linear infinite",
+        sliding: "sliding 80s linear infinite",
         slidingright: "slidingright 30s linear infinite",
         slide: "slide 25s infinite linear",
         "slide-right": "slideRight 25s linear infinite",

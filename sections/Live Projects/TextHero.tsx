@@ -46,7 +46,7 @@ export default function TextHero({
     <div class="overflow-hidden">
       <div class="deco-background"></div>
       <div
-        class={`lg:mx-auto z-20 lg:max-w-[1440px] relative z-20 px-6 ${ topPage ? "pt-40" : "pt-12"} lg:pt-40 pb-12 lg:px-0 flex flex-col gap-8 justify-center items-center`}
+        class={`lg:mx-auto z-20 lg:max-w-[1440px] relative z-20 px-6 ${ topPage ? "pt-28" : "pt-12"} lg:pt-28 pb-8 lg:px-0 flex flex-col gap-8 justify-center items-center`}
       >
         <div class="leading-none">
           {pixelTitle && (
