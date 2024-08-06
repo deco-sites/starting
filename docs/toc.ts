@@ -585,6 +585,13 @@ const tableOfContents: TableOfContents = [
     children: [
       {
         title: {
+          pt: "Invoke",
+          en: "Invoke",
+        },
+        slug: "api-reference/invoke",
+      },
+      {
+        title: {
           pt: "useSection",
           en: "useSection",
         },
