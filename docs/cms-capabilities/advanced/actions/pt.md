@@ -45,7 +45,7 @@ Na barra lateral a direita, é possível acessar:
 - `🖥️` Logs relacionados a visualização do loader
 - `✨` Decopilot: IA para alteração do código
 
-## Criar novo Loader
+## Criar nova Action
 
 É possível criar uma action salva ou a base (template) de uma action.
 
