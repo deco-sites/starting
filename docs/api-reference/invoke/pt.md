@@ -20,18 +20,21 @@ com base no tipo do seu manifesto e no tipo da ação/carregador que você está
 Por exemplo:
 
 ```typescript
-const result = invoke.site.loaders.example(
+import { invoke } from "site/runtime.ts";
+
+const resultado = await invoke.site.loaders.exemplo(
     props: T, // Este será o tipo das props da action/loader sendo chamado
     init?: InvokerRequestInit // Este é um objeto de inicialização de requisição fetch estendido com algumas opções extras
 );
 
-console.log(result); // Este será o tipo do valor de retorno da action/loader
+console.log(resultado); // Este será o tipo do valor de retorno da action/loader
 ```
 
 
-### Importando
+## Importando a API
 
-**Uso no Cliente**:
+### Uso no Browser (client-side)
+
 Para uso no Cliente, o Invoke é exportado da `runtime.ts` no raiz do projeto.
 
 Abaixo está um exemplo de um arquivo `runtime.ts` típico, que cria
@@ -48,7 +51,8 @@ import type { Manifest as ManifestLinxImpulse } from 'apps/linx-impulse/manifest
 export const invoke = proxy<Manifest & ManifestVTEX &  ManifestLinxImpulse>();
 ```
 
-**Uso no Servidor**:
+### Uso no Servidor
+
 Para uso no Servidor, o Invoke pode sempre ser acessado a partir 
 do *Contexto* da Aplicação. Isso torna o Invoke mais fácil de usar dentro de actions
 e loaders.
@@ -72,9 +76,9 @@ export const async function getUserNotes(
 }
 ```
 
-### Uso de Exemplos
+## Exemplos de Uso
 
-#### Exemplo 1: Chamando uma Action ou Loader a partir do Navegador
+### Exemplo 1: Chamando uma Action ou Loader a partir do Navegador
 
 Suponha que temos um loader chamado `getUser`, que retorna um objeto de usuário,
 baseado em um `id` de usuário enviado.
@@ -110,7 +114,7 @@ então temos mais confiança para interagir com nossas APIs.
 e usar o cliente Invoke do arquivo `runtime.ts` no servidor resultará em um erro.
 Para chamar actions/loaders a partir do servidor, veja o próximo exemplo.
 
-#### Exemplo 2: Chamando uma Action ou Loader a partir do Servidor
+### Exemplo 2: Chamando uma Action ou Loader a partir do Servidor
 
 Suponha que estamos criando uma ação chamada `addItem` que adiciona um item a um carrinho.
 
@@ -174,7 +178,7 @@ export const async function addItem(
 O cliente Invoke que vem do Contexto da Aplicação é também tipado, baseado
 no tipo `AppContext` exportado por convenção do seu `site` app.
 
-#### Exemplo 3: Enviando um arquivo para o Servidor
+### Exemplo 3: Enviando um arquivo para o Servidor
 
 Suponha que temos uma ação chamada `uploadFile`, que envia um arquivo para um
 destino. A ação recebe uma propriedade `file`, que é um objeto de arquivo
@@ -246,7 +250,7 @@ Agora o arquivo `file` pode ser acessado seguramente na action!
 objeto para o servidor, que só suporta arquivos e strings. Isso significa que qualquer
 propriedade que seja um número ou um booleano será convertida para uma string.
 
-#### Exemplo 4: Batch Invoke
+### Exemplo 4: Batch Invoke
 
 Batch Invoke é útil quando você precisa realizar múltiplas operações
 simultaneamente e quer minimizar a latência de rede, reduzindo o número de

@@ -2,7 +2,7 @@
 description: Invoke Client API Reference
 ---
 
-### Description
+## Description
 
 The Invoke API is a typed RPC (Remote Procedure Call) client.
 It makes interacting programatically with loaders and actions safer and 
@@ -21,7 +21,9 @@ type of your manifest and the type of the action/loader you are calling:
 For example:
 
 ```typescript
-const result = invoke.site.loaders.example(
+import { invoke } from "site/runtime.ts";
+
+const result = await invoke.site.loaders.example(
     props: T, // This will be the type of the props of the action/loader being called
     init?: InvokerRequestInit // This is a fetch request init object extended with some extra options
 );
@@ -30,9 +32,10 @@ console.log(result); // This will be the type of the return value of the action/
 ```
 
 
-### Importing
+## Importing the API
 
-**Client-side usage**: 
+### Client-side usage
+
 For client-side usage, the Invoke client is exported from the `runtime.ts` file,
 at the root of the project.
 
@@ -50,7 +53,8 @@ import type { Manifest as ManifestLinxImpulse } from 'apps/linx-impulse/manifest
 export const invoke = proxy<Manifest & ManifestVTEX &  ManifestLinxImpulse>();
 ```
 
-**Server-side usage**: 
+### Server-side usage
+
 For server-side usage, the Invoke client can always be accessed from 
 the *Application Context*. This makes it easy to use invoke inside actions
 and loaders.
@@ -74,9 +78,9 @@ export const async function getUserNotes(
 }
 ```
 
-### Usage Examples
+## Usage Examples
 
-#### Example 1: Calling an Action or Loader from the Browser
+### Example 1: Calling an Action or Loader from the Browser
 
 Suppose we have a loader called `getUser`, that returns a user object,
 based on a given user id.
@@ -114,7 +118,7 @@ and use the Invoke client from the `runtime.ts` file on the server-side
 will result in an error. For calling actions/loaders from the server, 
 refer to the next section.
 
-#### Example 2: Calling an Action or Loader on the Server
+### Example 2: Calling an Action or Loader on the Server
 
 Suppose we are creating an action called `addItem`, that adds an item to a cart.
 
@@ -178,7 +182,7 @@ export const async function addItem(
 The Invoke client that comes from the Application Context is also typed, based
 on the `AppContext` type exported by convention from your `site` app.
 
-#### Example 3: Uploading a file to the Server
+### Example 3: Uploading a file to the Server
 
 Suppose we have an action called `uploadFile`, that uploads a file to a given
 destination. The action receives a `file` property, which is a file object
@@ -251,7 +255,7 @@ send a FormData object to the server, which only supports Files and strings.
 This means that any property that is a number or a boolean will be converted
 to a string.
 
-#### Example 4: Batch Invoke
+### Example 4: Batch Invoke
 
 Batch invoke is useful when you need to perform multiple operations
 simultaneously and want to minimize network latency by reducing the
