@@ -106,7 +106,7 @@ function SocialIcons() {
 }
 
 export default function GlossaryPost({ slug, posts }: Props) {
-  const post = posts?.find((p) => p.slug === slug);
+  const post = posts?.find((p) => p?.slug === slug);
 
   posts?.sort((a, b) => {
     const titleA = a?.title?.toLowerCase().trim();
