@@ -110,9 +110,9 @@ export default function GlossaryPostList({
               const isUsed = Array.from(usedFirstLetters).includes(letter);
               return (
                 <a
-                  class={`h-10 w-10 flex justify-center items-center ${
+                  class={`min-h-9 min-w-9 flex justify-center font-bold border border-transparent items-center transition duration-300 ${
                     isUsed
-                      ? "font-bold text-white hover:text-[#02F67C]"
+                      ? "font-bold text-white hover:border-[#02F67C40] hover:bg-[#02F67C30] rounded-lg"
                       : "text-[#9499AD] cursor-default"
                   }`}
                   href={isUsed ? `#${letter}` : undefined}

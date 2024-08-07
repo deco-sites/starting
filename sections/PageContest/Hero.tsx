@@ -52,7 +52,7 @@ export default function HeroFlats({
           } lg:py-36 gap-12 md:gap-20 items-center`}
         >
           <div
-            class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 ${
+            class={`mx-6 lg:mx-auto lg:w-full gap-4 ${
               image
                 ? "lg:w-1/2 lg:max-w-xl"
                 : "flex flex-col items-center justify-center lg:max-w-3xl"
@@ -65,7 +65,7 @@ export default function HeroFlats({
               }}
             >
             </div>
-            <p class="text-zinc-400 text-[16px] md:text-[18px] leading-[150%]">
+            <p class="mt-0 text-zinc-400 text-[16px] md:text-[18px] leading-[150%] max-w-[600px]">
               {description}
             </p>
             <div class="flex flex-col items-center lg:items-start lg:flex-row gap-4">
