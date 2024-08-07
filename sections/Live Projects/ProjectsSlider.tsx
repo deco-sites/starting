@@ -17,7 +17,7 @@ export default function ProjectsSlider({ projects }: Props) {
         {Array(2)
           .fill(0)
           .map(() => (
-            <div class="flex gap-4 animate-sliding justify-center relative z-10">
+            <div class="flex gap-4 animate-sliding justify-center relative z-10 pb-4">
               {projects.map((project) => (
                 <Project project={project} />
               ))}

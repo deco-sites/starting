@@ -649,7 +649,7 @@ export default {
       },
       animation: {
         slidigingDown: "slideInFromTop 500ms ease-in forwards",
-        sliding: "sliding 80s linear infinite",
+        sliding: "sliding 300s linear infinite",
         slidingright: "slidingright 30s linear infinite",
         slide: "slide 25s infinite linear",
         "slide-right": "slideRight 25s linear infinite",
