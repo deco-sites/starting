@@ -13,7 +13,7 @@
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   "[xml]": {
-    "editor.defaultFormatter": "DotJoshJohnson.xml"
+    "editor.defaultFormatter": "redhat.vscode-xml"
   },
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"

@@ -3,6 +3,7 @@ import type { JSX } from "preact";
 
 export type AvailableIcons =
   | "ArrowRight"
+  | "right-arrow"
   | "Bag"
   | "Bars3"
   | "benchmark"
