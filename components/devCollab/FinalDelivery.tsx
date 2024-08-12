@@ -25,7 +25,9 @@ export default function FinalDelivery({ title, items = [] }: Props) {
               <Icon id={item.icon} size={24}/>
             </div>
             <span class="text-3xl text-white font-bold">{item.title}</span>
-            <span class="text-[#949E9E]">{item.text}</span>
+            <span class="text-[#949E9E]" dangerouslySetInnerHTML={{
+              __html: item.text
+            }} />
           </div>
         ))}
       </div>
