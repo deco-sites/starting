@@ -1,6 +1,14 @@
 import { BlogPost } from "apps/blog/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import type { RequestURLParam } from "apps/website/functions/requestToParam.ts";
+import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
+import GlossaryItem from "site/components/Glossary/GlossaryItem.tsx";
+
+export interface CTA {
+  icon: AvailableIcons;
+  text: string;
+  link: string;
+}
 
 interface Props {
   /**
@@ -8,19 +16,19 @@ interface Props {
    */
   slug: RequestURLParam;
   posts?: BlogPost[] | null;
+  CTA: CTA;
 }
 
 const PARAGRAPH_STYLES = "[&_p]:leading-[150%] [&_*]:mb-4 text-white";
 const HEADING_STYLES =
-  "[&>h1]:text-4xl [&>h1]:my-6 [&>h1]:font-bold [&>h2]:text-3xl [&>h2]:my-6 [&>h2]:font-bold [&>h2]:text-[#02F67C] [&>h1]:text-2xl [&>h1]:text-[#02F67C] [&>h1]:my-6 [&>h1]:font-bold [&>h4]:text-xl [&>h4]:my-6 [&>h4]:font-bold [&>h5]:text-lg [&>h5]:my-6 [&>h5]:font-bold [&>h6]:text-white [&>h6]:my-6 [&>h6]:font-bold";
+  "[&>h1]:text-4xl [&>h1]:my-6 [&>h1]:font-bold [&>h2]:text-3xl [&>h2]:my-6 [&>h2]:font-bold [&>h1]:text-2xl [&>h1]:my-6 [&>h1]:font-bold [&>h4]:text-xl [&>h4]:my-6 [&>h4]:font-bold [&>h5]:text-lg [&>h5]:my-6 [&>h5]:font-bold [&>h6]:text-white [&>h6]:my-6 [&>h6]:font-bold";
 const CODE_BLOCK_STYLES =
   "[&>pre]:bg-gray-100 [&>pre]:text-white [&>pre]:p-4 [&>pre]:font-mono [&>pre]:text-sm [&>pre]:border [&>pre]:rounded-md [&>pre]:overflow-x-auto [&>code]:block [&>code]:w-full";
 const IMAGE_STYLES = "[&_img]:rounded-2xl [&_img]:w-full [&_img]:my-12";
 const BLOCKQUOTE_STYLES =
   "[&>blockquote]:my-6 [&>blockquote]:border-l-2 [&>blockquote]:border-black [&>blockquote]:text-xl [&>blockquote]:italic [&>blockquote]:pl-6";
 
-const CONTENT_STYLES =
-  ` ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES}`;
+const CONTENT_STYLES = ` ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES}`;
 
 const DEFAULT_AVATAR =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e";
@@ -105,7 +113,7 @@ function SocialIcons() {
   );
 }
 
-export default function GlossaryPost({ slug, posts }: Props) {
+export default function GlossaryPost({ slug, posts, CTA }: Props) {
   const post = posts?.find((p) => p?.slug === slug);
 
   posts?.sort((a, b) => {
@@ -116,77 +124,80 @@ export default function GlossaryPost({ slug, posts }: Props) {
 
   const { title, image, content, excerpt } = post || DEFAULT_PROPS;
 
-  let currentLetter = "";
-
   function getFirstLetter(title: string) {
     return title?.charAt(0).toUpperCase();
   }
 
+  let nextPostIndex = 0
+  posts?.forEach((post, index) => {
+    if (getFirstLetter(post?.title) !== getFirstLetter(title)) return;
+
+    if (index + 1 !== posts.length && posts[index + 1] && posts[index + 1].title) {
+      nextPostIndex = index + 1
+    }
+  })
+
   return (
-    <div class="flex gap-10 w-full container mx-auto px-4 md:px-0 py-24 lg:py-0  lg:pb-28 lg:mt-44 justify-center">
-      <div class="flex-col hidden md:flex min-w-[240px]">
-        <a href="/glossary" class="text-white hover:text-[#02F67C]">
-          All glossary terms
-        </a>
-        {posts?.map((post) => {
-          const currentTitle = post?.title;
-          const letter = getFirstLetter(currentTitle?.trim());
-          if (letter !== currentLetter) {
-            currentLetter = letter;
-            return (
-              <div key={currentTitle} class="flex flex-col">
-                <div class="w-10 h-[1px] bg-white my-4"></div>
-                <a
-                  href={`/glossary/${post?.slug}`}
-                  class={` overflow-hidden  ${
-                    title === currentTitle ? "text-[#02F67C]" : "text-white"
-                  } hover:text-[#02F67C]`}
-                >
-                  {currentTitle}
-                </a>
-              </div>
-            );
-          } else {
-            return (
-              <a
-                key={currentTitle}
-                href={`/glossary/${post?.slug}`}
-                class={`overflow-hidden hover:text-[#02F67C] ${
-                  title === currentTitle ? "text-[#02F67C]" : "text-white"
-                }`}
-              >
-                {currentTitle}
-              </a>
-            );
-          }
-        })}
-      </div>
-      <div className="w-full flex flex-col gap-20 container mx-auto px-4 md:px-0 lg:max-w-2xl lg:mx-0">
-        <div className="w-full flex flex-col gap-12 items-center justify-center">
-          <h1 className="text-5xl font-bold text-[#02f67c]">{title}</h1>
-          <p class="text-white text-xl text-center">{excerpt}</p>
-        </div>
-        {image && (
-          <Image
-            className="w-full object-cover aspect-video max-h-[600px] rounded-2xl"
-            width={1066}
-            src={image || ""}
-          />
-        )}
-        <div
-          class={CONTENT_STYLES}
-          dangerouslySetInnerHTML={{
-            __html: content,
-          }}
+    <div class="flex flex-col gap-16 w-full container pt-36 justify-center">
+      <div className="flex flex-col gap-4 items-center justify-center">
+        <a
+          href={CTA.link}
+          class="flex gap-2 items-center font-medium text-[#02F67C] hover:scale-105 transition duration-300"
         >
+          <Icon id={CTA.icon} size={20} class="rotate-180" />
+          <span>{CTA.text}</span>
+        </a>
+        <h1 className="text-5xl text-white font-[argent-pixel]">{title}</h1>
+      </div>
+      <div class="flex gap-4 justify-center">
+        <div class="flex-col hidden md:flex min-w-[240px]">
+          {posts
+            ?.filter(
+              (post) => getFirstLetter(post?.title) === getFirstLetter(title)
+            )
+            .map((post) => (
+              <GlossaryItem
+                title={post.title}
+                link={`/glossary/${post.slug}`}
+              />
+            ))}
+          <a
+            class="flex justify-between w-full py-2 px-4 font-medium text-white hover:text-[#02F67C] border border-[#162121] bg-[#0D1717] rounded-lg transition duration-300"
+            href={`/glossary/${posts && posts[nextPostIndex].slug}`}
+          >
+            <span>
+              Go to letter {posts && getFirstLetter(posts[nextPostIndex].slug)}
+            </span>
+            <Icon id="ArrowRight" size={20}/>
+          </a>
         </div>
-        <div class="flex flex-col gap-10  w-full ">
-          <div class="space-y-4">
-            <p class="text-lg font-bold text-white">
-              Follow us on social media
+        <div className="w-full flex flex-col gap-8 container mx-auto px-4 md:px-0 lg:max-w-2xl lg:mx-0">
+          <div class="pl-1 bg-[#02F67C] rounded-lg">
+            <p class="text-white bg-[#0D1717] p-6 rounded-lg text-xl">
+              {excerpt}
             </p>
-            <div class="flex flex-col gap-8 md:flex-row justify-between">
-              <SocialIcons />
+          </div>
+          {image && (
+            <Image
+              className="w-full object-cover aspect-video max-h-[600px] rounded-2xl"
+              width={1066}
+              src={image || ""}
+            />
+          )}
+          <div
+            class={CONTENT_STYLES}
+            dangerouslySetInnerHTML={{
+              __html: content,
+            }}
+          ></div>
+          <div class="flex flex-col gap-10  w-full ">
+            <div class="space-y-4">
+              <p class="text-lg font-bold text-white">
+                Follow us on social media
+              </p>
+              <div class="flex flex-col gap-8 md:flex-row justify-between">
+                <SocialIcons />
+              </div>
             </div>
           </div>
         </div>

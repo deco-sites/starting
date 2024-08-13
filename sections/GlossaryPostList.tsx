@@ -1,6 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { BlogPost } from "apps/blog/types.ts";
-import Icon from "site/components/ui/Icon.tsx";
+import GlossaryItem, { alphabet } from "site/components/Glossary/GlossaryItem.tsx";
 
 export interface CTA {
   text?: string;
@@ -23,18 +23,6 @@ export interface Props {
   posts?: BlogPost[] | null;
 }
 
-function GlossaryItem({ title, link }: { title: string; link: string }) {
-  return (
-    <a
-      href={link}
-      class="flex items-center justify-between w-full md:w-60 h-fit py-2 px-4 gap-2 text-[#C9CFCF] hover:text-[#02F67C] hover:bg-[#0D171790] rounded-lg transition duration-300"
-    >
-      <span class="text-lg">{title}</span>
-      <Icon id="right-arrow" size={12} />
-    </a>
-  );
-}
-
 export default function GlossaryPostList({ posts }: Props) {
   posts?.sort((a, b) => {
     const titleA = a?.title?.toLowerCase().trim();
@@ -45,10 +33,6 @@ export default function GlossaryPostList({ posts }: Props) {
   function getFirstLetter(title: string) {
     return title?.charAt(0)?.toUpperCase();
   }
-
-  const alphabet = Array.from({ length: 26 }, (_, i) =>
-    String.fromCharCode(65 + i)
-  ); // Create list of characters
 
   const filteredPosts = Object.fromEntries(
     alphabet.map((char) => [

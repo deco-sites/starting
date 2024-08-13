@@ -7,6 +7,11 @@
     },
     {
       "__resolveType": "site/sections/GlossaryPost.tsx",
+      "CTA": {
+        "link": "/glossary",
+        "icon": "ArrowRight",
+        "text": "Go back to glossary"
+      },
       "page": {
         "slug": {
           "__resolveType": "website/functions/requestToParam.ts",
