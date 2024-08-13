@@ -27,7 +27,7 @@ function GlossaryItem({ title, link }: { title: string; link: string }) {
   return (
     <a
       href={link}
-      class="flex items-center justify-between w-full md:w-60 py-2 px-4 gap-2 text-[#C9CFCF] hover:text-[#02F67C] hover:bg-[#0D171790] rounded-lg transition duration-300"
+      class="flex items-center justify-between w-full md:w-60 h-fit py-2 px-4 gap-2 text-[#C9CFCF] hover:text-[#02F67C] hover:bg-[#0D171790] rounded-lg transition duration-300"
     >
       <span class="text-lg">{title}</span>
       <Icon id="right-arrow" size={12} />
@@ -83,7 +83,7 @@ export default function GlossaryPostList({ posts }: Props) {
               <div class="flex flex-col md:flex-row gap-2">
                 <h2
                   id={char}
-                  class="grow font-bold text-6xl p-2 pt-12 text-white"
+                  class="grow font-bold text-6xl p-2 text-white"
                 >
                   {char}
                 </h2>
