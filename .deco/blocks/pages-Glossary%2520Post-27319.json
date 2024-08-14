@@ -12,6 +12,10 @@
         "icon": "ArrowRight",
         "text": "Go back to glossary"
       },
+      "disclaimer": {
+        "title": "Can't find what you're looking for?",
+        "subtitle": "<p>Get in touch with us on our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.com/invite/hBUs29me8Z\"><u>Community Forum</u></a>.</p>"
+      },
       "page": {
         "slug": {
           "__resolveType": "website/functions/requestToParam.ts",

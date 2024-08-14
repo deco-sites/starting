@@ -1,6 +1,8 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { BlogPost } from "apps/blog/types.ts";
-import GlossaryItem, { alphabet } from "site/components/Glossary/GlossaryItem.tsx";
+import GlossaryItem, {
+  alphabet,
+} from "site/components/Glossary/GlossaryItem.tsx";
 
 export interface CTA {
   text?: string;
@@ -43,7 +45,7 @@ export default function GlossaryPostList({ posts }: Props) {
 
   return (
     <section class="bg-black flex justify-center mb-20">
-      <div class="flex flex-col bg-black items-center w-full px-2">
+      <div class="flex flex-col bg-black items-center px-2">
         <div class="flex overflow-scroll hidden-scroll mb-16 max-w-full w-fit">
           {alphabet.map((letter) => {
             return (
@@ -65,18 +67,17 @@ export default function GlossaryPostList({ posts }: Props) {
             .filter(([, postList]) => postList && postList.length > 0)
             .map(([char, currentPosts]) => (
               <div class="flex flex-col md:flex-row gap-2">
-                <h2
-                  id={char}
-                  class="grow font-bold text-6xl p-2 text-white"
-                >
+                <h2 id={char} class="grow font-bold text-6xl p-2 text-white">
                   {char}
                 </h2>
                 <div class="grid gap-4 grid-cols-1 md:grid-cols-2 w-full md:w-fit">
                   {currentPosts?.map((post) => (
-                    <GlossaryItem
-                      title={post?.title}
-                      link={`/glossary/${post?.slug}`}
-                    />
+                    <div class="md:w-60">
+                      <GlossaryItem
+                        title={post?.title}
+                        link={`/glossary/${post?.slug}`}
+                      />
+                    </div>
                   ))}
                 </div>
               </div>
