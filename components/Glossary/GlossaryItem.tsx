@@ -14,8 +14,8 @@ function GlossaryItem({
   disabled?: boolean;
 }) {
   const styles = {
-    disabled: "opacity-60 pointer-events-none",
-    regular: "hover:text-[#02F67C] hover:bg-[#0D171790]",
+    disabled: "opacity-70 pointer-events-none",
+    regular: "text-[#C9CFCF] hover:text-[#02F67C] hover:bg-[#0D171790]",
   };
   return (
     <a
@@ -23,7 +23,7 @@ function GlossaryItem({
       disabled={disabled}
       class={`${
         disabled ? styles.disabled : styles.regular
-      } flex items-center justify-between w-full h-fit py-2 px-4 gap-2 font-medium text-[#C9CFCF] rounded-lg transition duration-300`}
+      } flex items-center justify-between w-full h-fit py-2 px-4 gap-2 font-medium rounded-lg transition duration-300`}
     >
       <span class="text-lg">{title}</span>
       <Icon id="right-arrow" size={12} />

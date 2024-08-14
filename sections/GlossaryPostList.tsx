@@ -45,7 +45,7 @@ export default function GlossaryPostList({ posts }: Props) {
 
   return (
     <section class="bg-black flex justify-center mb-20">
-      <div class="flex flex-col bg-black items-center px-2">
+      <div class="flex flex-col bg-black items-center w-full px-2">
         <div class="flex overflow-scroll hidden-scroll mb-16 max-w-full w-fit">
           {alphabet.map((letter) => {
             return (
