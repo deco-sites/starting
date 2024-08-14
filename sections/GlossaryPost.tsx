@@ -167,7 +167,7 @@ export default function GlossaryPost({ slug, posts, CTA, disclaimer }: Props) {
         <h1 className="text-5xl text-white font-[argent-pixel]">{title}</h1>
       </div>
       <div class="flex flex-col lg:flex-row gap-10 lg:gap-4 justify-center">
-        <div class="flex flex-col gap-1 mx-2 min-w-[240px]">
+        <div class="flex flex-col gap-1 mx-4 md:mx-2 min-w-[240px]">
           {posts
             ?.filter(
               (post) => getFirstLetter(post?.title) === getFirstLetter(title)
