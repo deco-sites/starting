@@ -192,7 +192,7 @@ export default function GlossaryPost({ slug, posts, CTA, disclaimer }: Props) {
   });
 
   return (
-    <div class="flex flex-col gap-16 w-full container pt-36 pb-16 justify-center">
+    <div class="flex flex-col gap-12 md:gap-16 w-full container pt-28 md:pt-36 pb-16 justify-center">
       <div class="md:hidden">
         <div class="flex justify-between py-2 px-4 text-white">
           <span class="text-lg grow">{title}</span>
