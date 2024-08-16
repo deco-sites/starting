@@ -6,13 +6,14 @@
       "__resolveType": "HeaderV2"
     },
     {
-      "__resolveType": "site/sections/PageContest/Hero.tsx",
+      "__resolveType": "site/sections/Glossary/Hero.tsx",
       "title": "<p><span class=\"font-[argent-pixel]\"><span style=\"color: #02f67c\">deco.cx</span>'s</span> Glossary</p>",
       "description": "Check out our glossary for key terms in content management and web development.",
       "placement": "right"
     },
+
     {
-      "__resolveType": "site/sections/GlossaryPostList.tsx",
+      "__resolveType": "site/sections/Glossary/GlossaryPostList.tsx",
       "posts": {
         "__resolveType": "blog/loaders/BlogpostList.ts",
         "count": 60

@@ -28,6 +28,7 @@ import * as $Cms from "./islands/Cms.tsx";
 import * as $ContactUs from "./islands/ContactUs.tsx";
 import * as $FaviconImage from "./islands/FaviconImage.tsx";
 import * as $ForwardBackButtons_ForwardBackButtons from "./islands/ForwardBackButtons/ForwardBackButtons.tsx";
+import * as $Glossary_Search from "./islands/Glossary/Search.tsx";
 import * as $Graph from "./islands/Graph.tsx";
 import * as $Header from "./islands/Header.tsx";
 import * as $HelpFaq from "./islands/HelpFaq.tsx";
@@ -96,6 +97,7 @@ const manifest = {
     "./islands/FaviconImage.tsx": $FaviconImage,
     "./islands/ForwardBackButtons/ForwardBackButtons.tsx":
       $ForwardBackButtons_ForwardBackButtons,
+    "./islands/Glossary/Search.tsx": $Glossary_Search,
     "./islands/Graph.tsx": $Graph,
     "./islands/Header.tsx": $Header,
     "./islands/HelpFaq.tsx": $HelpFaq,

@@ -3,6 +3,7 @@ import Image from "apps/website/components/Image.tsx";
 import type { RequestURLParam } from "apps/website/functions/requestToParam.ts";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 import GlossaryItem from "site/components/Glossary/GlossaryItem.tsx";
+import Search from "site/islands/Glossary/Search.tsx";
 
 /**
  * @title {{{text}}}
@@ -105,21 +106,18 @@ export function NextPost({
   );
 }
 
-export default function GlossaryPost({ slug, posts, CTA, disclaimer }: Props) {
-  const post = posts?.find((p) => p?.slug === slug);
+function getFirstLetter(title: string) {
+  return title?.charAt(0).toUpperCase();
+}
 
-  posts = posts?.filter((post) => post?.title);
-  posts?.sort((a, b) => {
-    const titleA = a?.title?.toLowerCase().trim();
-    const titleB = b?.title?.toLowerCase().trim();
-    return titleA?.localeCompare(titleB);
-  });
-
-  const { title, image, content, excerpt } = post || DEFAULT_PROPS;
-
-  function getFirstLetter(title: string) {
-    return title?.charAt(0).toUpperCase();
-  }
+function Menu({
+  posts,
+  currentPost,
+}: {
+  posts: BlogPost[];
+  currentPost: BlogPost;
+}) {
+  const { title } = currentPost;
 
   let nextLetterIndex = 0;
   posts?.forEach((post, index) => {
@@ -133,6 +131,45 @@ export default function GlossaryPost({ slug, posts, CTA, disclaimer }: Props) {
       nextLetterIndex = index + 1;
     }
   });
+
+  return (
+    <div class="flex flex-col gap-1 md:mx-2 min-w-[240px] w-full">
+      {/* <Search /> */}
+      {posts
+        ?.filter(
+          (post) => getFirstLetter(post?.title) === getFirstLetter(title)
+        )
+        .map((post) => (
+          <GlossaryItem
+            title={post.title}
+            disabled={post.title === title}
+            link={`/glossary/${post.slug}`}
+          />
+        ))}
+      <a
+        class="flex justify-between w-full py-2 px-4 font-medium text-white hover:text-[#02F67C] border border-[#162121] bg-[#0D1717] rounded-lg transition duration-300"
+        href={`/glossary/${posts && posts[nextLetterIndex].slug}`}
+      >
+        <span>
+          Go to letter {posts && getFirstLetter(posts[nextLetterIndex].slug)}
+        </span>
+        <Icon id="ArrowRight" size={20} />
+      </a>
+    </div>
+  );
+}
+
+export default function GlossaryPost({ slug, posts, CTA, disclaimer }: Props) {
+  const post = posts?.find((p) => p?.slug === slug);
+
+  posts = posts?.filter((post) => post?.title);
+  posts?.sort((a, b) => {
+    const titleA = a?.title?.toLowerCase().trim();
+    const titleB = b?.title?.toLowerCase().trim();
+    return titleA?.localeCompare(titleB);
+  });
+
+  const { title, image, content, excerpt } = post || DEFAULT_PROPS;
 
   let nextPost = 0;
   posts?.forEach((post, index) => {
@@ -156,6 +193,28 @@ export default function GlossaryPost({ slug, posts, CTA, disclaimer }: Props) {
 
   return (
     <div class="flex flex-col gap-16 w-full container pt-36 pb-16 justify-center">
+      <div class="md:hidden">
+        <div class="flex justify-between py-2 px-4 text-white">
+          <span class="text-lg grow">{title}</span>
+          <label for="glossary-menu">
+            <Icon
+              id="Menu"
+              size={20}
+              class="hover:opacity-70 transition duration-300 cursor-pointer"
+            />
+          </label>
+        </div>
+        <input
+          id="glossary-menu"
+          name="glossary-menu"
+          class="peer/glossary-menu"
+          type="checkbox"
+          hidden
+        />
+        <div class="hidden peer-checked/glossary-menu:flex w-full py-12">
+          <Menu posts={posts || []} currentPost={post || DEFAULT_PROPS} />
+        </div>
+      </div>
       <div className="flex flex-col gap-4 items-center justify-center">
         <a
           href={CTA.link}
@@ -167,29 +226,9 @@ export default function GlossaryPost({ slug, posts, CTA, disclaimer }: Props) {
         <h1 className="text-5xl text-white font-[argent-pixel]">{title}</h1>
       </div>
       <div class="flex flex-col lg:flex-row gap-10 lg:gap-4 justify-center">
-        <div class="flex flex-col gap-1 mx-4 md:mx-2 min-w-[240px]">
-          {posts
-            ?.filter(
-              (post) => getFirstLetter(post?.title) === getFirstLetter(title)
-            )
-            .map((post) => (
-              <GlossaryItem
-                title={post.title}
-                disabled={post.title === title}
-                link={`/glossary/${post.slug}`}
-              />
-            ))}
-          <a
-            class="flex justify-between w-full py-2 px-4 font-medium text-white hover:text-[#02F67C] border border-[#162121] bg-[#0D1717] rounded-lg transition duration-300"
-            href={`/glossary/${posts && posts[nextLetterIndex].slug}`}
-          >
-            <span>
-              Go to letter{" "}
-              {posts && getFirstLetter(posts[nextLetterIndex].slug)}
-            </span>
-            <Icon id="ArrowRight" size={20} />
-          </a>
-        </div>
+        <aside class="hidden md:flex">
+          <Menu posts={posts || []} currentPost={post || DEFAULT_PROPS} />
+        </aside>
         <div className="w-full flex flex-col gap-8 container mx-auto px-4 md:px-0 lg:max-w-2xl lg:mx-0">
           <div class="pl-1 bg-[#02F67C] rounded-lg">
             <p class="text-white bg-[#0D1717] p-6 rounded-lg text-xl">

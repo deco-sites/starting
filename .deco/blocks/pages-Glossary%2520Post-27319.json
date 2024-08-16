@@ -6,7 +6,7 @@
       "__resolveType": "HeaderV2"
     },
     {
-      "__resolveType": "site/sections/GlossaryPost.tsx",
+      "__resolveType": "site/sections/Glossary/GlossaryPost.tsx",
       "CTA": {
         "link": "/glossary",
         "icon": "ArrowRight",
