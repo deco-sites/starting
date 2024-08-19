@@ -195,6 +195,7 @@ export default function Testimonials({
                     <div class="flex flex-row items-center gap-4">
                       <Image
                         width={32}
+                        height={32}
                         src={testimonial.image}
                         alt={testimonial.image}
                         decoding="async"
@@ -209,6 +210,7 @@ export default function Testimonials({
                     </div>
                     <Image
                       width={18}
+                      height={18}
                       src={"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50f5e3c5-2b8a-4f4f-a0f9-87fb91d83144"}
                       alt={"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50f5e3c5-2b8a-4f4f-a0f9-87fb91d83144"}
                       decoding="async"

@@ -19,14 +19,12 @@ export interface Props {
 const IMAGES = [
   {
     altText: "deco",
-    img:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/637e8601-6b86-4979-aa97-68013a2a60fd",
+    img: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/637e8601-6b86-4979-aa97-68013a2a60fd",
     href: "/",
   },
   {
     altText: "deco",
-    img:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/637e8601-6b86-4979-aa97-68013a2a60fd",
+    img: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/637e8601-6b86-4979-aa97-68013a2a60fd",
     href: "",
   },
 ];
@@ -50,7 +48,8 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
           target="_blank"
         >
           <Image
-            width={144}
+            width={80}
+            height={32}
             src={logo.img}
             alt={logo.img}
             decoding="async"
@@ -64,18 +63,16 @@ const LogoSlider = ({ logos }: { logos: Image[] }) => {
 
   return (
     <div className="logos overflow-hidden py-15 relative w-full">
-      <div className="before:absolute before:inset-y-0 before:left-0 before:w-[60px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#0D1717] before:z-20">
-      </div>
-      <div className="after:absolute after:inset-y-0 after:right-0 after:w-[60px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#0D1717] after:z-20">
-      </div>
+      <div className="before:absolute before:inset-y-0 before:left-0 before:w-[60px] lg:before:w-64 before:bg-gradient-to-l before:from-black/0 before:to-[#0D1717] before:z-20"></div>
+      <div className="after:absolute after:inset-y-0 after:right-0 after:w-[60px] lg:after:w-64 after:bg-gradient-to-r after:from-black/0 after:to-[#0D1717] after:z-20"></div>
       <div
         className="flex whitespace-nowrap gap-4"
-        onMouseEnter={(
-          e,
-        ) => (e.currentTarget.style.animationPlayState = "paused")}
-        onMouseLeave={(
-          e,
-        ) => (e.currentTarget.style.animationPlayState = "running")}
+        onMouseEnter={(e) =>
+          (e.currentTarget.style.animationPlayState = "paused")
+        }
+        onMouseLeave={(e) =>
+          (e.currentTarget.style.animationPlayState = "running")
+        }
       >
         {renderLogoSlide()}
         {renderLogoSlide()}
@@ -99,10 +96,12 @@ function Investors({
 }) {
   const listBrands = useMemo(
     () =>
-      brands?.logos && brands?.logos.length > 0 ? brands?.logos : (Array(20)
-        .fill(null)
-        .map((_, i) => IMAGES[i % 2]) as Image[]),
-    [],
+      brands?.logos && brands?.logos.length > 0
+        ? brands?.logos
+        : (Array(20)
+            .fill(null)
+            .map((_, i) => IMAGES[i % 2]) as Image[]),
+    []
   );
 
   return (

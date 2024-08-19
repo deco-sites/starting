@@ -186,6 +186,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             src={props.logo}
             alt={props.logo}
             width={120}
+            height={40}
             class="w-32 h-fit"
           />
         </a>
