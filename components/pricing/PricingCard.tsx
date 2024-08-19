@@ -79,7 +79,7 @@ function FeatureItem({
           {feature.moreInfo && (
             <div class="group relative flex gap-2 h-fit mt-1">
               <Icon id="info" size={16} />
-              <div class="hidden group-hover:flex absolute max-w-[250px] w-max rounded-lg pt-4">
+              <div class="hidden group-hover:flex absolute max-w-[250px] w-max rounded-lg pt-5 right-0">
                 <div
                   class={`p-3 border-2 ${
                     active ? styles.active : styles.regular
