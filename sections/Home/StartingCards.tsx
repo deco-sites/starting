@@ -77,7 +77,7 @@ export default function StartingCards({
       <div class="grid md:grid-cols-6 gap-6 w-full">
         {cards?.map((card, index) => (
           <div
-            class={`bg-[#030806] border border-[#0B1612] hover:border-[#494a49] h-[350px] p-10 rounded-[24px] overflow-hidden relative ${
+            class={`bg-[#030806] border border-[#0B1612] hover:border-[#2f2f2f] h-[350px] p-10 rounded-[24px] overflow-hidden relative ${
               index < 2 ? "lg:col-span-3" : "lg:col-span-2"
             } ${index < 4 ? "sm:col-span-3" : "sm:col-span-6"}
           }`}
