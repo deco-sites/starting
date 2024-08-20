@@ -12,6 +12,10 @@ export interface Props {
    */
   title?: string;
   /**
+   * @default false
+   */
+  hideTitle?: boolean;
+  /**
    * @format html
    */
   subtitle?: string;
@@ -20,11 +24,7 @@ export interface Props {
   trackId?: "1" | "2" | "3" | "4" | "5";
 }
 
-export const loader = (
-  props: Props,
-  _req: Request,
-  ctx: AppContext,
-) => {
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
   const device = ctx.device;
 
   return {
@@ -35,6 +35,7 @@ export const loader = (
 
 export default function BuildShowCase({
   title,
+  hideTitle,
   subtitle,
   tabs,
   position,
@@ -53,38 +54,38 @@ export default function BuildShowCase({
       id="hero"
       class={`relative bg-black py-20 lg:px-[120px] space-y-16 lg:space-y-20 px-6 min-h-[840px]`}
     >
-      <div class="mx-auto flex flex-col items-center gap-16 lg:gap-20 border-t border-[#16E47D]">
-        <div class="flex flex-col items-center gap-4 border-t border-[#16E47D]">
-          <div class="flex flex-col items-center gap-6 lg:gap-12 z-10">
-            <h2
-              class="mx-6 lg:mx-0 inline-block text-[32px] lg:text-[48px] text-center leading-[115%] lg:tracking-[-1.44px] font-medium text-white max-w- lg:max-w-none"
-              dangerouslySetInnerHTML={{
-                __html: title ?? "",
-              }}
-            >
-            </h2>
-            {subtitle && (
-              <h3
-                class="mx-11 inline-block lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none"
+      {!hideTitle && (
+        <div class="mx-auto flex flex-col items-center gap-16 lg:gap-20 border-t border-[#16E47D]">
+          <div class="flex flex-col items-center gap-4 border-t border-[#16E47D]">
+            <div class="flex flex-col items-center gap-6 lg:gap-12 z-10">
+              <h2
+                class="mx-6 lg:mx-0 inline-block text-[32px] lg:text-[48px] text-center leading-[115%] lg:tracking-[-1.44px] font-medium text-white max-w- lg:max-w-none"
                 dangerouslySetInnerHTML={{
-                  __html: subtitle,
+                  __html: title ?? "",
                 }}
-              >
-              </h3>
-            )}
+              ></h2>
+              {subtitle && (
+                <h3
+                  class="mx-11 inline-block lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none"
+                  dangerouslySetInnerHTML={{
+                    __html: subtitle,
+                  }}
+                ></h3>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      )}
       <div class="mx-auto flex flex-col items-center">
-        {isMobile === "desktop"
-          ? (
-            <ShowcaseEditorTabbed
-              tabs={tabs}
-              position={position}
-              trackId={trackId}
-            />
-          )
-          : <ShowcaseEditorAccordion tabs={tabs} />}
+        {isMobile === "desktop" ? (
+          <ShowcaseEditorTabbed
+            tabs={tabs}
+            position={position}
+            trackId={trackId}
+          />
+        ) : (
+          <ShowcaseEditorAccordion tabs={tabs} />
+        )}
       </div>
     </div>
   );

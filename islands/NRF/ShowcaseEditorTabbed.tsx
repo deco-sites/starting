@@ -117,9 +117,9 @@ export const ShowcaseEditorTabbed = ({
         ref={containerRef}
         class={`flex flex-row ${
           position === "left" ? "" : "flex-row-reverse "
-        }w-full lg:max-w-[1440px] rounded-lg lg:rounded-3xl mx-2 justify-center gap-8 lg:mx-0 z-40 backdrop-blur-xl`}
+        }w-full lg:max-w-[1440px] rounded-lg lg:rounded-3xl mx-2 justify-center gap-4 lg:mx-0 z-40 backdrop-blur-xl`}
       >
-        <div class="flex flex-col w-full lg:w-[36%] justify-center h-full gap-x-8 text-white flex-wrap">
+        <div class="flex flex-col w-full lg:w-[36%] justify-center h-full gap-x-4 text-white flex-wrap">
           {tabs &&
             tabs.map((tab, index) => (
               <div
@@ -195,17 +195,17 @@ export const ShowcaseEditorTabbed = ({
             tabs.map((tab, index) => (
               <div
                 key={index}
-                class={`flex justify-center items-center w-full ${
+                class={`flex justify-center items-center w-[1000px] ${
                   index !== selectedTab.value ? "hidden" : ""
                 }`}
               >
                 <Image
                   src={tab.image}
                   alt={tab.title}
-                  width={840}
-                  height={560}
+                  width={600}
+                  height={400}
                   preload={index === 0 ? true : false}
-                  class="w-full max-w-[1000px]"
+                  class="w-[1000px]"
                 />
               </div>
             ))}
