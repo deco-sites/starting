@@ -990,7 +990,8 @@
                   }
                 ],
                 "trackId": "2",
-                "position": "right"
+                "position": "right",
+                "hideTitle": false
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
