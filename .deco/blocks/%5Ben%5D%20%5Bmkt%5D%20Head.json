@@ -1,1 +1,10 @@
-{"url":"https://www.deco.cx/en/","title":"deco.cx - Own your frontend. Own your future. ","imageUrl":"https://www.deco.cx/decocx-meta-en.png","styleUrls":[],"themeColor":"#0A2121","description":"The digital experience platform that combines performance and personalization for enterprise ecommerce.","__resolveType":"site/sections/Head.tsx"}
+{
+  "url": "https://www.deco.cx/en/",
+  "title": "deco.cx - Build high-performance Web Apps 10x faster",
+  "imageUrl": "https://www.deco.cx/decocx-meta-en.png",
+  "styleUrls": [],
+  "themeColor": "#0A2121",
+  "description": "The universal CMS for building everything from websites to advanced web apps.",
+  "__resolveType": "site/sections/Head.tsx",
+  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/24f3e915-ae47-452c-a549-2750e5644105"
+}
