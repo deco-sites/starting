@@ -36,13 +36,15 @@ export default function TrustSignals({ trustSignals }: Props) {
                   dangerouslySetInnerHTML={{
                     __html: trustSignal.title,
                   }}
-                ></p>
+                >
+                </p>
                 <p
                   class="font-albert-sans inline-block text-xs text-center text-gray-400"
                   dangerouslySetInnerHTML={{
                     __html: trustSignal.subTitle,
                   }}
-                ></p>
+                >
+                </p>
               </div>
               <Icon class="mt-2" id={trustSignal.icon} width={35} height={35} />
             </a>

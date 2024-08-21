@@ -1,7 +1,8 @@
 import Icon from "site/components/ui/Icon.tsx";
 
-export const alphabet = Array.from({ length: 26 }, (_, i) =>
-  String.fromCharCode(65 + i)
+export const alphabet = Array.from(
+  { length: 26 },
+  (_, i) => String.fromCharCode(65 + i),
 ); // Create list of characters
 
 function GlossaryItem({

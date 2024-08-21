@@ -40,7 +40,7 @@ export default function GlossaryPostList({ posts }: Props) {
     alphabet.map((char) => [
       char,
       posts?.filter((post) => getFirstLetter(post?.title) === char),
-    ])
+    ]),
   );
 
   return (

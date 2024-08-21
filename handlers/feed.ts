@@ -1,5 +1,3 @@
-import { Handler } from "deco/mod.ts";
-import { ConnInfo } from "std/http/server.ts";
 import {
   getBlogPath,
   Post,
@@ -57,8 +55,8 @@ export default function BlogRSS({
   description,
   list,
   locale = "en",
-}: Props): Handler {
-  return (_req: Request, _ctx: ConnInfo) => {
+}: Props) {
+  return function (_req: Request, _ctx: Deno.ServeHandlerInfo) {
     const currentDate = new Date().toUTCString();
     const itemsXML = list.posts
       .map((post: Post) => generateItemXML(post, locale))

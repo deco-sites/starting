@@ -1,13 +1,11 @@
 import type { Handler } from "deco/blocks/handler.ts";
 import type { Resolvable } from "deco/engine/core/resolver.ts";
 import { isResolvable } from "deco/engine/core/resolver.ts";
-import { ConnInfo } from "std/http/server.ts";
 import { Route } from "apps/website/flags/audience.ts";
 import tableOfContents from "site/docs/toc.ts";
 
 const isPage = (handler: Resolvable<Handler>) =>
-  isResolvable(handler) &&
-  handler.__resolveType.endsWith("handlers/fresh.ts");
+  isResolvable(handler) && handler.__resolveType.endsWith("handlers/fresh.ts");
 
 const isAbsolute = (href: string) =>
   !href.includes(":") && !href.includes("*") && !href.startsWith("/_live");
@@ -25,7 +23,7 @@ const buildSiteMap = (urls: string[]) => {
   return entries.join("\n");
 };
 
-const sanitize = (url: string) => url.startsWith("/") ? url : `/${url}`;
+const sanitize = (url: string) => (url.startsWith("/") ? url : `/${url}`);
 
 const getDocPages = () => {
   const pages = [];
@@ -56,7 +54,8 @@ const siteMapFromRoutes = (
   for (const route of routes) {
     if (
       !excludePathsSet.has(route.pathTemplate) &&
-      isAbsolute(route.pathTemplate) && isPage(route.handler.value)
+      isAbsolute(route.pathTemplate) &&
+      isPage(route.handler.value)
     ) {
       urls.push(`${publicUrl}${sanitize(route.pathTemplate)}`);
     }
@@ -80,9 +79,9 @@ interface Props {
  * @description Return deco's sitemap.xml
  */
 export default function SiteMap({ excludePaths = [] }: Props) {
-  return function (req: Request, connInfo: ConnInfo) {
+  return function (req: Request, connInfo: Deno.ServeHandlerInfo) {
     const reqUrl = new URL(req.url);
-    const ctx = connInfo as ConnInfo & {
+    const ctx = connInfo as Deno.ServeHandlerInfo & {
       params: Record<string, string>;
       state: {
         routes: Route[];

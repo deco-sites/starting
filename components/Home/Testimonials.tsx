@@ -66,63 +66,72 @@ export default function Testimonials({
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ea5f2ce-0a0e-4105-8333-2cbddc6c1c6e",
       name: "Alex Dulub",
-      description: `"It's exciting to see a platform that not only speeds up frontend development but also fosters collaboration between developers and marketing teams. The seamless integration of modern technologies and the focus on both developer power and ease of use are impressive."`,
+      description:
+        `"It's exciting to see a platform that not only speeds up frontend development but also fosters collaboration between developers and marketing teams. The seamless integration of modern technologies and the focus on both developer power and ease of use are impressive."`,
       href: "#",
     },
     {
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b4a74da-5050-4641-a128-df3b606bfd05",
       name: "Andres Pradilla",
-      description: `"Wow!!! 🚀 This is a game changer for headless ecommerce! Have seen the product in action and it absolutely rocks! The best news is this product has happy live customers using it day in day out and have seen great value out of the tool!"`,
+      description:
+        `"Wow!!! 🚀 This is a game changer for headless ecommerce! Have seen the product in action and it absolutely rocks! The best news is this product has happy live customers using it day in day out and have seen great value out of the tool!"`,
       href: "#",
     },
     {
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/31035191-0815-4a14-b2a5-559c451a19a3",
       name: "Joep van den Bogaert",
-      description: `"Wow, such an impressive product. Really love how you bring together development and content management. The automatic forms based on the typescript models are awesome."`,
+      description:
+        `"Wow, such an impressive product. Really love how you bring together development and content management. The automatic forms based on the typescript models are awesome."`,
       href: "#",
     },
     {
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/adbf4b08-e54f-4d4a-aecf-94de3974f0e0",
       name: "khaosdoctor",
-      description: `"This is AWESOME! I’ve been looking to find something like this for my pages for ages. The Deno core using TypeScript is the ABSOLUTE BEST mix ever. Loved the work you guys are doing. Hope you continue to disrupt even more!"`,
+      description:
+        `"This is AWESOME! I’ve been looking to find something like this for my pages for ages. The Deno core using TypeScript is the ABSOLUTE BEST mix ever. Loved the work you guys are doing. Hope you continue to disrupt even more!"`,
       href: "#",
     },
     {
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/adbf4b08-e54f-4d4a-aecf-94de3974f0e0",
       name: "p2hari",
-      description: `"oh man, are you folks for real!!! I just checked out the website, git and discord channels (I just joined in) and you are awesome. Open source core and so much more work on git. Bringing partytown to deno etc. etc."`,
+      description:
+        `"oh man, are you folks for real!!! I just checked out the website, git and discord channels (I just joined in) and you are awesome. Open source core and so much more work on git. Bringing partytown to deno etc. etc."`,
       href: "#",
     },
     {
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/adbf4b08-e54f-4d4a-aecf-94de3974f0e0",
       name: "nopro",
-      description: `"This looks amazing, like a modern take on Dreamweaver or something. The low code IDE may soon return! The ability to switch between no-code/code is great for teaching people to code. Dreamweaver (and MySpace profiles) basically taught me CSS."`,
+      description:
+        `"This looks amazing, like a modern take on Dreamweaver or something. The low code IDE may soon return! The ability to switch between no-code/code is great for teaching people to code. Dreamweaver (and MySpace profiles) basically taught me CSS."`,
       href: "#",
     },
     {
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5b024b3e-d57c-48bc-8818-de33cf4d447a",
       name: "Marco Ferreira",
-      description: `"Man, I don't even know who to tag here hahaha, but I wanted to give my recognition to deco itself! To the folks who founded it and those who keep updating and improving the platform. Excellent work for the client in terms of registration flexibility and simple for the developer!"`,
+      description:
+        `"Man, I don't even know who to tag here hahaha, but I wanted to give my recognition to deco itself! To the folks who founded it and those who keep updating and improving the platform. Excellent work for the client in terms of registration flexibility and simple for the developer!"`,
       href: "#",
     },
     {
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/726cd991-7b37-45a7-b1d2-e1af364ea926",
       name: "Gustavo Vasconcellos",
-      description: `"A round of applause for the team that has significantly improved the usability of the Admin since the last hackathon. Both the section editor and the library are GREAT. Special recognition to whoever had the idea and implemented the change to repo branches in the Admin: Great job! 👏"`,
+      description:
+        `"A round of applause for the team that has significantly improved the usability of the Admin since the last hackathon. Both the section editor and the library are GREAT. Special recognition to whoever had the idea and implemented the change to repo branches in the Admin: Great job! 👏"`,
       href: "#",
     },
     {
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c766de4-48a5-46c9-aff4-6edd766c949c",
       name: "Julyanne Taboaço",
-      description: `"I’m sure you will soar even higher; this is just the beginning. Very grateful for this partnership and for believing in you from the very start. And what a partnership! You are tireless in evolving and suggesting improvements, embracing any challenges we face, and always ready to support and grow with us!"`,
+      description:
+        `"I’m sure you will soar even higher; this is just the beginning. Very grateful for this partnership and for believing in you from the very start. And what a partnership! You are tireless in evolving and suggesting improvements, embracing any challenges we face, and always ready to support and grow with us!"`,
       href: "#",
     },
   ],
@@ -138,7 +147,8 @@ export default function Testimonials({
             dangerouslySetInnerHTML={{
               __html: title,
             }}
-          ></h2>
+          >
+          </h2>
         )}
 
         {subtitle && (

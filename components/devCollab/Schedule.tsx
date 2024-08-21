@@ -16,14 +16,17 @@ export interface Props {
 export default function Schedule({ title, schedule = [] }: Props) {
   const styles = {
     card: {
-      highlight: "bg-[#27ae6bd6] border border-[#27AE6B] shadow-[0_0_40px_0_rgba(2,246,124,0.3)]",
+      highlight:
+        "bg-[#27ae6bd6] border border-[#27AE6B] shadow-[0_0_40px_0_rgba(2,246,124,0.3)]",
       regular: "bg-[#162121] border border-[#273433]",
     },
   };
 
   return (
     <div class="relative flex flex-col items-center justify-center gap-16 z-10 my-10 md:my-20 text-[#949E9E]">
-      <h2 class="text-3xl md:text-4xl lg:text-[40px] text-white text-center font-medium">{title}</h2>
+      <h2 class="text-3xl md:text-4xl lg:text-[40px] text-white text-center font-medium">
+        {title}
+      </h2>
       <div class="flex flex-col items-stretch justify-center md:flex-row gap-8 px-4 w-full">
         {schedule.map((item) => (
           <div class="flex flex-col items-center gap-6 lg:max-w-96 grow">

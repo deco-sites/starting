@@ -63,29 +63,31 @@ export default function BuildShowCase({
                 dangerouslySetInnerHTML={{
                   __html: title ?? "",
                 }}
-              ></h2>
+              >
+              </h2>
               {subtitle && (
                 <h3
                   class="mx-11 inline-block lg:text-[26px] text-center leading-[150%] text-gray-400 max-w-lg lg:max-w-none"
                   dangerouslySetInnerHTML={{
                     __html: subtitle,
                   }}
-                ></h3>
+                >
+                </h3>
               )}
             </div>
           </div>
         </div>
       )}
       <div class="mx-auto flex flex-col items-center">
-        {isMobile === "desktop" ? (
-          <ShowcaseEditorTabbed
-            tabs={tabs}
-            position={position}
-            trackId={trackId}
-          />
-        ) : (
-          <ShowcaseEditorAccordion tabs={tabs} />
-        )}
+        {isMobile === "desktop"
+          ? (
+            <ShowcaseEditorTabbed
+              tabs={tabs}
+              position={position}
+              trackId={trackId}
+            />
+          )
+          : <ShowcaseEditorAccordion tabs={tabs} />}
       </div>
     </div>
   );

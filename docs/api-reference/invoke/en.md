@@ -4,19 +4,19 @@ description: Invoke Client API Reference
 
 ## Description
 
-The Invoke API is a typed RPC (Remote Procedure Call) client.
-It makes interacting programatically with loaders and actions safer and 
-as easy as calling a function, abstracting away the details of the underlying 
-network transport.
+The Invoke API is a typed RPC (Remote Procedure Call) client. It makes
+interacting programatically with loaders and actions safer and as easy as
+calling a function, abstracting away the details of the underlying network
+transport.
 
-A single invoke client can be used to interact with actions and loaders 
-from your site and from any installed App. The Invoke client have ways to
-be used both from the Client and from the Server, and supports more complex
-patterns out of the box, like calling multiple loaders/actions in a single
-request (See Example 4: Batch Invoke), or sending files via a multipart request.
+A single invoke client can be used to interact with actions and loaders from
+your site and from any installed App. The Invoke client have ways to be used
+both from the Client and from the Server, and supports more complex patterns out
+of the box, like calling multiple loaders/actions in a single request (See
+Example 4: Batch Invoke), or sending files via a multipart request.
 
-A Invoke type signature will always be dynamic, and will be inferred based on the
-type of your manifest and the type of the action/loader you are calling:
+A Invoke type signature will always be dynamic, and will be inferred based on
+the type of your manifest and the type of the action/loader you are calling:
 
 For example:
 
@@ -31,7 +31,6 @@ const result = await invoke.site.loaders.example(
 console.log(result); // This will be the type of the return value of the action/loader
 ```
 
-
 ## Importing the API
 
 ### Client-side usage
@@ -39,25 +38,25 @@ console.log(result); // This will be the type of the return value of the action/
 For client-side usage, the Invoke client is exported from the `runtime.ts` file,
 at the root of the project.
 
-Below is an example of a typical `runtime.ts` file, that creates
-a client for interacting with actions and loaders from your site, 
-and from two apps: VTEX and Linx Impulse. All Apps can be used in
-the same way, since they all export a `Manifest`.
+Below is an example of a typical `runtime.ts` file, that creates a client for
+interacting with actions and loaders from your site, and from two apps: VTEX and
+Linx Impulse. All Apps can be used in the same way, since they all export a
+`Manifest`.
 
 ```typescript
-import { proxy } from 'deco/clients/withManifest.ts';
-import type { Manifest } from './manifest.gen.ts'
-import type { Manifest as ManifestVTEX } from 'apps/vtex/manifest.gen.ts'
-import type { Manifest as ManifestLinxImpulse } from 'apps/linx-impulse/manifest.gen.ts'
+import { proxy } from "deco/clients/withManifest.ts";
+import type { Manifest } from "./manifest.gen.ts";
+import type { Manifest as ManifestVTEX } from "apps/vtex/manifest.gen.ts";
+import type { Manifest as ManifestLinxImpulse } from "apps/linx-impulse/manifest.gen.ts";
 
-export const invoke = proxy<Manifest & ManifestVTEX &  ManifestLinxImpulse>();
+export const invoke = proxy<Manifest & ManifestVTEX & ManifestLinxImpulse>();
 ```
 
 ### Server-side usage
 
-For server-side usage, the Invoke client can always be accessed from 
-the *Application Context*. This makes it easy to use invoke inside actions
-and loaders.
+For server-side usage, the Invoke client can always be accessed from the
+_Application Context_. This makes it easy to use invoke inside actions and
+loaders.
 
 Below is an example of a loader that uses the Invoke client to call another
 loader from the same application:
@@ -82,8 +81,8 @@ export const async function getUserNotes(
 
 ### Example 1: Calling an Action or Loader from the Browser
 
-Suppose we have a loader called `getUser`, that returns a user object,
-based on a given user id.
+Suppose we have a loader called `getUser`, that returns a user object, based on
+a given user id.
 
 ```typescript
 import type { AppContext } from "site/apps/site.ts";
@@ -99,8 +98,8 @@ export const async function getUser(
 }
 ```
 
-We can now call this loader from the Browser, using the `invoke` client
-exported from the `runtime.ts` file:
+We can now call this loader from the Browser, using the `invoke` client exported
+from the `runtime.ts` file:
 
 ```typescript
 import { invoke } from "site/runtime.ts";
@@ -108,22 +107,22 @@ import { invoke } from "site/runtime.ts";
 const user = await invoke.site.loaders.getUser({ id: "123" });
 ```
 
-Since the Invoke client is typed, the return type of the `getUser` function
-is automatically inferred, and the type of the `user` variable is `User`.
-All of the parameter types are also inferred, so we get more confidence for
-interacting with our APIs.
+Since the Invoke client is typed, the return type of the `getUser` function is
+automatically inferred, and the type of the `user` variable is `User`. All of
+the parameter types are also inferred, so we get more confidence for interacting
+with our APIs.
 
-**Important**: This should only be used in the Browser. Trying to import
-and use the Invoke client from the `runtime.ts` file on the server-side
-will result in an error. For calling actions/loaders from the server, 
-refer to the next section.
+**Important**: This should only be used in the Browser. Trying to import and use
+the Invoke client from the `runtime.ts` file on the server-side will result in
+an error. For calling actions/loaders from the server, refer to the next
+section.
 
 ### Example 2: Calling an Action or Loader on the Server
 
 Suppose we are creating an action called `addItem`, that adds an item to a cart.
 
-Suppose we also already have a loader called `cart`, that returns the current cart
-for a given user, based on a session contained in the request cookies:
+Suppose we also already have a loader called `cart`, that returns the current
+cart for a given user, based on a session contained in the request cookies:
 
 ```typescript
 import type { AppContext } from "site/apps/site.ts";
@@ -185,9 +184,9 @@ on the `AppContext` type exported by convention from your `site` app.
 ### Example 3: Uploading a file to the Server
 
 Suppose we have an action called `uploadFile`, that uploads a file to a given
-destination. The action receives a `file` property, which is a file object
-that contains the file data, and a `destination` property, which is a string
-that specifies the destination path for where the file should be uploaded.
+destination. The action receives a `file` property, which is a file object that
+contains the file data, and a `destination` property, which is a string that
+specifies the destination path for where the file should be uploaded.
 
 ```typescript
 import type { AppContext } from "site/apps/site.ts";
@@ -216,57 +215,57 @@ request, which is a nice way to send files to the server, using the `FormData`
 API and the `multipart/form-data` content type under the hood.
 
 To make use of this, you only need to add a `multipart: true` option to the
-Invoke `InvokerRequestInit` (Which is the second argument to any invoke call), and
-the client will automatically use a custom protocol to send the payload 
-via multipart, thus making it possible to send files to the server.
+Invoke `InvokerRequestInit` (Which is the second argument to any invoke call),
+and the client will automatically use a custom protocol to send the payload via
+multipart, thus making it possible to send files to the server.
 
-We can now call this action from the Browser, using the `invoke` client
-exported from the `runtime.ts` file:
+We can now call this action from the Browser, using the `invoke` client exported
+from the `runtime.ts` file:
 
 ```tsx
 import { invoke } from "site/runtime.ts";
 
 export function UploadFileInput() {
-    const uploadFile = async (file: File) => {
-        await invoke.site.actions.uploadFile({
-            file: file,
-            destination: "/uploads/files"
-        }, { multipart: true });
-    }
+  const uploadFile = async (file: File) => {
+    await invoke.site.actions.uploadFile({
+      file: file,
+      destination: "/uploads/files",
+    }, { multipart: true });
+  };
 
-    return (
-      <input 
-        type="file" 
-        onChange={async (e) => {
-          const file = e.target.files[0];
-          if (file) {
-            await uploadFile(file);
-          }
-        }}
-      />
-    );
+  return (
+    <input
+      type="file"
+      onChange={async (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          await uploadFile(file);
+        }
+      }}
+    />
+  );
 }
 ```
 
 Now the `file` property can be safely accessed in the action!
 
-**Important**: When using the `multipart` option, the Invoke client will
-send a FormData object to the server, which only supports Files and strings.
-This means that any property that is a number or a boolean will be converted
-to a string.
+**Important**: When using the `multipart` option, the Invoke client will send a
+FormData object to the server, which only supports Files and strings. This means
+that any property that is a number or a boolean will be converted to a string.
 
 ### Example 4: Batch Invoke
 
 Batch invoke is useful when you need to perform multiple operations
-simultaneously and want to minimize network latency by reducing the
-number of individual requests. Here’s an example scenario where using
-batch invoke makes sense: retrieving multiple sets of related data in a single request.
+simultaneously and want to minimize network latency by reducing the number of
+individual requests. Here’s an example scenario where using batch invoke makes
+sense: retrieving multiple sets of related data in a single request.
 
-Suppose we have a user logged in, and we have three different loaders
-that return data related to the user: One for notes, one for the address and one
-for the orders. 
+Suppose we have a user logged in, and we have three different loaders that
+return data related to the user: One for notes, one for the address and one for
+the orders.
 
-We can retrieve all three of these sets of data in a single request by using a batch invoke:
+We can retrieve all three of these sets of data in a single request by using a
+batch invoke:
 
 ```typescript
 import { invoke } from "site/runtime.ts";
@@ -288,6 +287,7 @@ const {
 });
 ```
 
-By passing an object with the loaders/actions as properties, the Invoke client will
-automatically batch the requests, and return the results in the same format
-as the passed object. We still have automatically inferred types when batch invoking this way!
+By passing an object with the loaders/actions as properties, the Invoke client
+will automatically batch the requests, and return the results in the same format
+as the passed object. We still have automatically inferred types when batch
+invoking this way!

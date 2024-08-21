@@ -14,9 +14,9 @@ export interface IProject {
 }
 
 function ProgressBar({ progress }: { progress: number }) {
-  const radius = 45
-  const dasharray = 2 * Math.PI * radius
-  const dashoffset = dasharray * ((100 - progress) / 100)
+  const radius = 45;
+  const dasharray = 2 * Math.PI * radius;
+  const dashoffset = dasharray * ((100 - progress) / 100);
 
   return (
     <div class="absolute scale-[40%] group-hover:scale-[60%] right-[-30px] top-[-30px] transition duration-500">
@@ -42,7 +42,8 @@ function ProgressBar({ progress }: { progress: number }) {
             stroke-dashoffset={dashoffset}
             stroke-linecap="round"
             transform="rotate(-90, 50, 50)"
-          ></circle>
+          >
+          </circle>
         </svg>
       </div>
     </div>
@@ -56,7 +57,7 @@ function Project({ project }: { project: IProject }) {
       href={project.url}
       target="_blank"
     >
-      <ProgressBar progress={project.performance}/>
+      <ProgressBar progress={project.performance} />
       <div class="flex flex-col gap-4">
         <div class="box-border bg-[#070D0D] p-2 border border-[#0B1612] rounded-xl">
           <div class="flex items-start justify-center h-[400px] max-w-[300px] overflow-hidden rounded-lg">

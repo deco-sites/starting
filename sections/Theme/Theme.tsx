@@ -6,7 +6,7 @@
  */
 import SiteTheme, { Font } from "apps/website/components/Theme.tsx";
 import { asset } from "$fresh/runtime.ts";
-import Color from "npm:colorjs.io";
+import Color from "npm:colorjs.io@0.5.2";
 import { AppContext } from "site/apps/site.ts";
 import {
   FONT_ALBERT,

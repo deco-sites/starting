@@ -26,7 +26,8 @@ export interface Props {
 
 export default function CarouselLinks({
   bottomPadding,
-  title = "Lorem ipsum dolor sit amet consectetur.<br>Lectus diam pellentesque sit velit.",
+  title =
+    "Lorem ipsum dolor sit amet consectetur.<br>Lectus diam pellentesque sit velit.",
   cards,
 }: Props) {
   const id = useId();
@@ -60,11 +61,14 @@ export default function CarouselLinks({
         <h2
           class="font-albert-sans text-lg lg:text-2xl font-medium text-white text-center leading-[115%] tracking-[-0.72px] max-w-[636px] mx-auto"
           dangerouslySetInnerHTML={{ __html: title }}
-        ></h2>
+        >
+        </h2>
       )}
       <div class="relative pt-8 lg:pt-12">
-        <div className="before:absolute before:inset-y-0 before:left-0 before:w-[8%] before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20"></div>
-        <div className="after:absolute after:inset-y-0 after:right-0 after:w-[8%] after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20"></div>
+        <div className="before:absolute before:inset-y-0 before:left-0 before:w-[8%] before:bg-gradient-to-l before:from-black/0 before:to-[#030806] before:z-20">
+        </div>
+        <div className="after:absolute after:inset-y-0 after:right-0 after:w-[8%] after:bg-gradient-to-r after:from-black/0 after:to-[#030806] after:z-20">
+        </div>
 
         {/* Contêiner para os cards */}
         <div class="relative overflow-hidden">

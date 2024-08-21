@@ -3,7 +3,6 @@ import Image from "apps/website/components/Image.tsx";
 import type { RequestURLParam } from "apps/website/functions/requestToParam.ts";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 import GlossaryItem from "site/components/Glossary/GlossaryItem.tsx";
-import Search from "site/islands/Glossary/Search.tsx";
 
 /**
  * @title {{{text}}}
@@ -44,7 +43,8 @@ const IMAGE_STYLES = "[&_img]:rounded-2xl [&_img]:w-full [&_img]:my-12";
 const BLOCKQUOTE_STYLES =
   "[&>blockquote]:my-6 [&>blockquote]:border-l-2 [&>blockquote]:border-black [&>blockquote]:text-xl [&>blockquote]:italic [&>blockquote]:pl-6";
 
-const CONTENT_STYLES = ` ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES}`;
+const CONTENT_STYLES =
+  ` ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES}`;
 
 const DEFAULT_AVATAR =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e";
@@ -93,7 +93,9 @@ export function NextPost({
   return (
     <a
       href={`/glossary/${href}`}
-      class={`group flex gap-2 md:gap-6 flex-col-reverse ${styles[type].container} md:items-center`}
+      class={`group flex gap-2 md:gap-6 flex-col-reverse ${
+        styles[type].container
+      } md:items-center`}
     >
       <div class="p-4 rounded-lg text-white border border-[#162121] group-hover:border-[#FFFFFF40] bg-[#0D1717] transition duration-300">
         <Icon id="ArrowRight" size={16} class={`${styles[type].icon}`} />
@@ -137,7 +139,7 @@ function Menu({
       {/* <Search /> */}
       {posts
         ?.filter(
-          (post) => getFirstLetter(post?.title) === getFirstLetter(title)
+          (post) => getFirstLetter(post?.title) === getFirstLetter(title),
         )
         .map((post) => (
           <GlossaryItem
@@ -247,7 +249,8 @@ export default function GlossaryPost({ slug, posts, CTA, disclaimer }: Props) {
             dangerouslySetInnerHTML={{
               __html: content,
             }}
-          ></div>
+          >
+          </div>
 
           <div class="flex flex-col gap-2 w-full border border-[#162121] bg-[#0D1717] rounded-xl text-white font-semibold p-6">
             <span class="text-xl">{disclaimer?.title}</span>
