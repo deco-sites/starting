@@ -73,6 +73,7 @@ export type AvailableIcons =
   | "plus-rounded"
   | "Post"
   | "QuestionMarkCircle"
+  | "Redirect"
   | "Return"
   | "Sale"
   | "Share"

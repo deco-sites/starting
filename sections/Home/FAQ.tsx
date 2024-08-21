@@ -10,7 +10,7 @@ export interface Question {
 
 export function FaqItem({ question, answer }: Question) {
   return (
-    <details class="home-faq bg-[#0D1717] hover:bg-[#142020] border-[#272D2D] border rounded-2xl open:mb-2 transition ease-in-out duration-300">
+    <details class="home-faq bg-[#070D0D] border-[#0B1612] hover:border-[#12241e] border rounded-2xl open:mb-2 transition ease-in-out duration-300">
       <summary class="rounded-2xl flex flex-row justify-between items-center px-[24px] py-[22.5px] gap-[16px] group cursor-pointer ">
         <p class="font-bold text-[18px] leading-[27px] text-white">
           {question}
