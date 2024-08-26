@@ -15,13 +15,6 @@ export default function GlobalTags() {
   return (
     <>
       <Head>
-        {/* Plausible Analytics */}
-        <script
-          defer
-          data-domain="deco.cx"
-          data-api="https://plausible.io/api/event"
-          src={asset("/plausible_script.js")}
-        />
 
         {/* PostHog Script -> We are testing */}
         <script

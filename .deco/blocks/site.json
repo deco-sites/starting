@@ -16,6 +16,10 @@
     {
       "__resolveType": "site/sections/Theme/Theme.tsx",
       "colorScheme": "dark"
+    },
+    {
+      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx",
+      "domain": "deco.cx"
     }
   ],
   "routes": [
