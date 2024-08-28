@@ -87,6 +87,12 @@
       "label": "Commerce Growth",
       "href": "https://commercegrowth.ag/",
       "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ebe2ba66-d039-40fb-b11d-d0dc65562df1"
+    },
+    {
+      "label": "Wave Commerce",
+      "href": "https://www.wavecommerce.com.br/",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6ea01aa1-9203-47db-8926-70407ca9a1d3",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a37373b-5594-4e36-af42-12e58a144cc1"
     }
   ],
   "__resolveType": "site/sections/Hub/Agencies.tsx"
