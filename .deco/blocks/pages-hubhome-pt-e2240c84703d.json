@@ -80,5 +80,5 @@
       "__resolveType": "Deco Footer [EN]"
     }
   ],
-  "__resolveType": "$live/pages/LivePage.tsx"
+  "__resolveType": "website/pages/Page.tsx"
 }
