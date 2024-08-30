@@ -106,9 +106,11 @@ function Content(props: MDContent) {
   return (
     <main class="py-2 overflow-hidden">
       {attrs.since && (
-        <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-2 rounded dark:bg-[#FFFFFF14] dark:text-[#02F67C]">
-          Version: {attrs.since}
-        </span>
+        <div class="mb-4">
+          <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-2 rounded dark:bg-[#FFFFFF14] dark:text-[#02F67C]">
+            Version: {attrs.since}
+          </span>
+        </div>
       )}
       <div
         data-color-mode="dark"
@@ -117,7 +119,7 @@ function Content(props: MDContent) {
         class="markdown-body !text-[#F9FAFB] !bg-base-700"
         dangerouslySetInnerHTML={{ __html: html }}
       />
-      <script src={asset("/docs/js/copy-snippets.js")}></script>
+      <script src={asset("/docs/js/copy-snippets.min.js")}></script>
     </main>
   );
 }

@@ -40,7 +40,7 @@ export default function SearchButton(
         />
         <link
           rel="stylesheet"
-          href={asset("/algoliaDocSearch.css")}
+          href={asset("/algoliaDocSearch.min.css")}
         />
       </Head>
       <div
