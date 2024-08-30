@@ -386,6 +386,16 @@
               "label": "Euro Relógios"
             },
             {
+              "link": "https://www.fossil.com.br",
+              "image": [
+                {
+                  "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/starting/6d86f5d3-5601-4bb0-86e0-662769ce8f21/Screenshot-2024-08-30-at-10.26.18.png",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Fossil"
+            },
+            {
               "link": "https://www.gaston.com.br/",
               "image": [
                 {
@@ -396,14 +406,24 @@
               "label": "Gaston"
             },
             {
-              "link": "https://www.hectoralbertazzi.com.br/",
               "image": [
                 {
-                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d816e2b4-c362-46fe-b13c-b131c17f8b61",
-                  "color": "#FFFFFF"
+                  "color": "#FFFFFF",
+                  "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d816e2b4-c362-46fe-b13c-b131c17f8b61"
                 }
               ],
-              "label": "Hector Albertazzi"
+              "label": "Hector Albertazzi",
+              "link": "https://www.hectoralbertazzi.com.br/"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/starting/bca595fc-7994-475d-af80-2f9eb8eddf7c/Screenshot-2024-08-30-at-10.29.25.png"
+                }
+              ],
+              "label": "Jóias Vip",
+              "link": "https://www.joiasvip.com.br/"
             },
             {
               "image": [
@@ -412,8 +432,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ebd6ad35-1f65-463a-a7c5-9dfc82fcf4b9"
                 }
               ],
-              "label": "Liga Retrô",
-              "link": "https://www.ligaretro.com.br/"
+              "link": "https://www.ligaretro.com.br/",
+              "label": "Liga Retrô"
             },
             {
               "image": [
@@ -439,11 +459,21 @@
               "image": [
                 {
                   "color": "#FFFFFF",
+                  "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/starting/55451803-11db-47fd-9b6e-f543da8df12b/Screenshot-2024-08-30-at-10.28.12.png"
+                }
+              ],
+              "link": "https://www.montecarlo.com.br/",
+              "label": "Monte Carlo"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/26dc7d9a-c2c1-4d96-9862-ea6016077b63"
                 }
               ],
-              "label": "Notta",
-              "link": "https://www.notta.com.br/"
+              "link": "https://www.notta.com.br/",
+              "label": "Notta"
             },
             {
               "image": [
@@ -452,8 +482,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/81513145-ed88-4e65-992a-ec741445f174"
                 }
               ],
-              "link": "https://www.osklen.com.br",
-              "label": "Osklen"
+              "label": "Osklen",
+              "link": "https://www.osklen.com.br"
             },
             {
               "image": [
@@ -462,8 +492,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/424f5a92-aa19-4495-aa88-03548b2947ac"
                 }
               ],
-              "link": "https://www.ramarim.com.br/",
-              "label": "Ramarim"
+              "label": "Ramarim",
+              "link": "https://www.ramarim.com.br/"
             },
             {
               "image": [
@@ -472,8 +502,8 @@
                   "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/46b86834-1715-42d8-9259-a49a69499855"
                 }
               ],
-              "link": "https://www.technos.com.br/",
-              "label": "Technos"
+              "label": "Technos",
+              "link": "https://www.technos.com.br/"
             },
             {
               "image": [
