@@ -1,5 +1,5 @@
 ---
-descrição: Learn how to integrate Deco with the Nuvemshop e-commerce platform.
+description: Learn how to integrate Deco with the Nuvemshop e-commerce platform.
 ---
 
 This article guides you through creating and configuring a website on

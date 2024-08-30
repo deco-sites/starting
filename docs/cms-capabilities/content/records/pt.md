@@ -1,6 +1,6 @@
 ---
-descrição: Records - Banco de dados embutido
-desde: 2.0
+description: Records - Banco de dados embutido
+since: 2.0
 ---
 
 A `deco` oferece um banco de dados embutido que pode ser usado como fonte de

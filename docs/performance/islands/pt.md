@@ -1,5 +1,5 @@
 ---
-descrição: Enviando apenas dados necessários ao cliente
+description: Enviando apenas dados necessários ao cliente
 since: 1.0.0
 ---
 

@@ -1,5 +1,5 @@
 ---
-descrição: Aprenda a integrar o Deco com a plataforma de comércio eletrônico VTEX.
+description: Aprenda a integrar o Deco com a plataforma de comércio eletrônico VTEX.
 ---
 
 Este artigo orienta você na criação e configuração de um website no

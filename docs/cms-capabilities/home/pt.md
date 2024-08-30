@@ -1,5 +1,5 @@
 ---
-descrição: |
+description: |
     Home: gestão de times, sites e perfil do usuário
 ---
 

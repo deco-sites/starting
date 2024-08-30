@@ -1,6 +1,6 @@
 ---
-descrição: Instalanda apps
-desde: 1.33.2
+description: Instalando apps
+since: 1.33.2
 ---
 
 # Pré-requisitos

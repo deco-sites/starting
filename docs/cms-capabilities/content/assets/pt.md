@@ -1,6 +1,6 @@
 ---
-descrição: Recursos digitais do site
-desde: 2.0
+description: Recursos digitais do site
+since: 2.0
 ---
 
 Os `assets` representam bens digitais como as imagens que são carregadas na

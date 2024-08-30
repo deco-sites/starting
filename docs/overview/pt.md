@@ -1,5 +1,5 @@
 ---
-descrição: |
+description: |
   deco.cx é um construtor de sites que permite criar, personalizar e implantar sites com facilidade. Com foco na personalização, você pode criar experimentos, segmentar conteúdo por público-alvo e muito mais.
 ---
 

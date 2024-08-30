@@ -1,6 +1,6 @@
 ---
-descrição: Adição de fallback de carregamento para seções
-desde: 1.54.0
+description: Adição de fallback de carregamento para seções
+since: 1.54.0
 ---
 
 # Fallback de Carregamento

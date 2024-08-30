@@ -1,6 +1,6 @@
 ---
-descrição: Adicionando um blog
-desde: 2.0
+description: Adicionando um blog
+since: 2.0
 ---
 
 O Blog representa um espaço para gestão de um blog no seu site. Nesta
