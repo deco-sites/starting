@@ -59,7 +59,7 @@ Para apoiar essas afirmações, vários estudos e pesquisas foram realizados,
 fornecendo evidências concretas da relação entre o desempenho do site e o
 sucesso empresarial no comércio eletrônico. Fontes notáveis incluem o benchmark
 do
-[Google]((https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/))
+[Google](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)
 para velocidade de página móvel, o estudo da
 [Akamai Technologies](https://www.akamai.com/uk/en/resources/webinars-and-presentations/webinar-how-web-performance-impacts-business-success.jsp)
 sobre a importância do desempenho da web, a pesquisa do
