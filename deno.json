@@ -43,7 +43,8 @@
     "@std/testing": "jsr:@std/testing@^1.0.0",
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
-    "simple-git": "npm:simple-git@^3.25.0"
+    "simple-git": "npm:simple-git@^3.25.0",
+    "hightlight.js": "npm:highlight.js@11.10.0"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",

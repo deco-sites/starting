@@ -3,6 +3,8 @@ import Image from "apps/website/components/Image.tsx";
 import type { RequestURLParam } from "apps/website/functions/requestToParam.ts";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 import GlossaryItem from "site/components/Glossary/GlossaryItem.tsx";
+import Content from "site/islands/Glossary/Content.tsx";
+import { Head } from "$fresh/runtime.ts";
 
 /**
  * @title {{{text}}}
@@ -33,17 +35,6 @@ interface Props {
   CTA: CTA;
   disclaimer?: Disclaimer;
 }
-
-const PARAGRAPH_STYLES = "[&_p]:leading-[150%] [&_*]:mb-4 text-[#cdcdcd]";
-const HEADING_STYLES =
-  "[&>h1]:text-white [&>h1]:text-4xl [&>h1]:my-6 [&>h1]:font-bold [&>h2]:text-white [&>h2]:text-3xl [&>h2]:my-6 [&>h2]:font-bold [&>h1]:text-2xl [&>h1]:my-6 [&>h1]:font-bold [&>h3]:text-white [&>h3]:text-2xl [&>h3]:font-bold [&>h4]:text-xl [&>h4]:text-white [&>h4]:my-6 [&>h4]:font-bold [&>h5]:text-lg [&>h5]:text-white [&>h5]:my-6 [&>h5]:font-bold [&>h6]:text-white [&>h6]:my-6 [&>h6]:font-bold";
-const CODE_BLOCK_STYLES =
-  "[&>pre]:bg-gray-100 [&>pre]:text-white [&>pre]:p-4 [&>pre]:font-mono [&>pre]:text-sm [&>pre]:border [&>pre]:rounded-md [&>pre]:overflow-x-auto [&>pre]:bg-transparent [&>code]:block [&>code]:w-full";
-const IMAGE_STYLES = "[&_img]:rounded-2xl [&_img]:w-full [&_img]:my-12";
-const BLOCKQUOTE_STYLES =
-  "[&>blockquote]:my-6 [&>blockquote]:border-l-2 [&>blockquote]:border-black [&>blockquote]:text-xl [&>blockquote]:italic [&>blockquote]:pl-6";
-
-const CONTENT_STYLES = ` ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES}`;
 
 const DEFAULT_AVATAR =
   "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/7286de42-e9c5-4fcb-ae8b-b992eea4b78e";
@@ -190,89 +181,89 @@ export default function GlossaryPost({ slug, posts, CTA, disclaimer }: Props) {
     }
   });
 
-  console.log(content);
-
   return (
-    <div class="flex flex-col gap-12 md:gap-16 w-full container pt-28 md:pt-36 pb-16 justify-center">
-      <div class="md:hidden">
-        <div class="flex justify-between py-2 px-4 text-white">
-          <span class="text-lg grow">{title}</span>
-          <label for="glossary-menu">
-            <Icon
-              id="Menu"
-              size={20}
-              class="hover:opacity-70 transition duration-300 cursor-pointer"
-            />
-          </label>
-        </div>
-        <input
-          id="glossary-menu"
-          name="glossary-menu"
-          class="peer/glossary-menu"
-          type="checkbox"
-          hidden
+    <>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/highlight.js@11.8.0/styles/github-dark-dimmed.min.css"
         />
-        <div class="hidden peer-checked/glossary-menu:flex w-full py-12">
-          <Menu posts={posts || []} currentPost={post || DEFAULT_PROPS} />
-        </div>
-      </div>
-      <div className="flex flex-col gap-4 items-center justify-center">
-        <a
-          href={CTA.link}
-          class="flex gap-2 items-center font-medium text-[#02F67C] hover:scale-105 transition duration-300"
-        >
-          <Icon id={CTA.icon} size={20} class="rotate-180" />
-          <span>{CTA.text}</span>
-        </a>
-        <h1 className="text-5xl text-white font-[argent-pixel]">{title}</h1>
-      </div>
-      <div class="flex flex-col lg:flex-row gap-10 lg:gap-4 justify-center">
-        <aside class="hidden md:flex">
-          <Menu posts={posts || []} currentPost={post || DEFAULT_PROPS} />
-        </aside>
-        <div className="w-full flex flex-col gap-8 container mx-auto px-4 md:px-0 lg:max-w-2xl lg:mx-0">
-          <div class="pl-1 bg-[#02F67C] rounded-lg">
-            <p class="text-white bg-[#0D1717] p-6 rounded-lg text-xl">
-              {excerpt}
-            </p>
+      </Head>
+      <div class="flex flex-col gap-12 md:gap-16 w-full container pt-28 md:pt-36 pb-16 justify-center">
+        <div class="md:hidden">
+          <div class="flex justify-between py-2 px-4 text-white">
+            <span class="text-lg grow">{title}</span>
+            <label for="glossary-menu">
+              <Icon
+                id="Menu"
+                size={20}
+                class="hover:opacity-70 transition duration-300 cursor-pointer"
+              />
+            </label>
           </div>
-          {image && (
-            <Image
-              className="w-full object-cover aspect-video max-h-[600px] rounded-2xl"
-              width={1066}
-              src={image || ""}
-            />
-          )}
-          <div
-            class={CONTENT_STYLES}
-            dangerouslySetInnerHTML={{
-              __html: content,
-            }}
-          ></div>
-
-          <div class="flex flex-col gap-2 w-full border border-[#162121] bg-[#0D1717] rounded-xl text-white font-semibold p-6">
-            <span class="text-xl">{disclaimer?.title}</span>
-            {disclaimer?.subtitle && (
-              <div
-                class="text-sm opacity-60"
-                dangerouslySetInnerHTML={{ __html: disclaimer?.subtitle }}
+          <input
+            id="glossary-menu"
+            name="glossary-menu"
+            class="peer/glossary-menu"
+            type="checkbox"
+            hidden
+          />
+          <div class="hidden peer-checked/glossary-menu:flex w-full py-12">
+            <Menu posts={posts || []} currentPost={post || DEFAULT_PROPS} />
+          </div>
+        </div>
+        <div className="flex flex-col gap-4 items-center justify-center">
+          <a
+            href={CTA.link}
+            class="flex gap-2 items-center font-medium text-[#02F67C] hover:scale-105 transition duration-300"
+          >
+            <Icon id={CTA.icon} size={20} class="rotate-180" />
+            <span>{CTA.text}</span>
+          </a>
+          <h1 className="text-5xl text-white font-[argent-pixel]">{title}</h1>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-4 justify-center">
+          <aside class="hidden md:flex">
+            <Menu posts={posts || []} currentPost={post || DEFAULT_PROPS} />
+          </aside>
+          <div className="w-full flex flex-col gap-8 container mx-auto px-4 md:px-0 lg:max-w-2xl lg:mx-0">
+            <div class="pl-1 bg-[#02F67C] rounded-lg">
+              <p class="text-white bg-[#0D1717] p-6 rounded-lg text-xl">
+                {excerpt}
+              </p>
+            </div>
+            {image && (
+              <Image
+                className="w-full object-cover aspect-video max-h-[600px] rounded-2xl"
+                width={1066}
+                src={image || ""}
               />
             )}
-          </div>
-          <div class="flex justify-between w-full">
-            <NextPost
-              type="prev"
-              title={posts && posts[prevPost].title}
-              href={posts && posts[prevPost].slug}
-            />
-            <NextPost
-              type="next"
-              title={posts && posts[nextPost].title}
-              href={posts && posts[nextPost].slug}
-            />
+            <Content content={content} />
+            <div class="flex flex-col gap-2 w-full border border-[#162121] bg-[#0D1717] rounded-xl text-white font-semibold p-6">
+              <span class="text-xl">{disclaimer?.title}</span>
+              {disclaimer?.subtitle && (
+                <div
+                  class="text-sm opacity-60"
+                  dangerouslySetInnerHTML={{ __html: disclaimer?.subtitle }}
+                />
+              )}
+            </div>
+            <div class="flex justify-between w-full">
+              <NextPost
+                type="prev"
+                title={posts && posts[prevPost].title}
+                href={posts && posts[prevPost].slug}
+              />
+              <NextPost
+                type="next"
+                title={posts && posts[nextPost].title}
+                href={posts && posts[nextPost].slug}
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
