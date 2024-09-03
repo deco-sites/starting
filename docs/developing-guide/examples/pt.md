@@ -1,7 +1,7 @@
 ---
 
-description: Newsletter com HTMX e Deco Records  
-since: 1.0.0  
+description: Newsletter com HTMX e Deco Records\
+since: 1.0.0
 
 ---
 

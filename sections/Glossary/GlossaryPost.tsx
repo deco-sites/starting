@@ -83,7 +83,9 @@ export function NextPost({
   return (
     <a
       href={`/glossary/${href}`}
-      class={`group flex gap-2 md:gap-6 flex-col-reverse ${styles[type].container} md:items-center`}
+      class={`group flex gap-2 md:gap-6 flex-col-reverse ${
+        styles[type].container
+      } md:items-center`}
     >
       <div class="p-4 rounded-lg text-white border border-[#162121] group-hover:border-[#FFFFFF40] bg-[#0D1717] transition duration-300">
         <Icon id="ArrowRight" size={16} class={`${styles[type].icon}`} />
@@ -127,7 +129,7 @@ function Menu({
       {/* <Search /> */}
       {posts
         ?.filter(
-          (post) => getFirstLetter(post?.title) === getFirstLetter(title)
+          (post) => getFirstLetter(post?.title) === getFirstLetter(title),
         )
         .map((post) => (
           <GlossaryItem

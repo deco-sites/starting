@@ -181,7 +181,10 @@ export default function Header({ menuLinks, ...props }: Props) {
   return (
     <section class="lg:container fixed z-50 w-full top-0 lg:w-full left-1/2 transform -translate-x-1/2 py-4 lg:py-8 before:absolute before:backdrop-blur-2xl lg:before:backdrop-blur-none before:w-full  before:h-full before:top-0 before:left-0">
       <nav class="flex flex-row items-center max-w-screen-2xl m-auto relative justify-between px-4 md:px-8 z-50">
-        <a class="flex items-center h-full lg:pl-8 pb-[6px]" href="https://deco.cx">
+        <a
+          class="flex items-center h-full lg:pl-8 pb-[6px]"
+          href="https://deco.cx"
+        >
           <Image
             src={props.logo}
             alt={props.logo}

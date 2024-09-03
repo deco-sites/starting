@@ -1,7 +1,7 @@
 ---
 
-description: Editando seções  
-since: 1.0.0  
+description: Editando seções\
+since: 1.0.0
 
 ---
 

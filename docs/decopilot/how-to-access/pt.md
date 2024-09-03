@@ -1,6 +1,5 @@
 ---
 description: Como acessar o decopilot
-
 ---
 
 ## Introdução

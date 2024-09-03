@@ -15,7 +15,6 @@ export default function GlobalTags() {
   return (
     <>
       <Head>
-
         {/* PostHog Script -> We are testing */}
         <script
           dangerouslySetInnerHTML={{

@@ -11,7 +11,8 @@ const IMAGE_STYLES = "[&_img]:rounded-2xl [&_img]:w-full [&_img]:my-12";
 const BLOCKQUOTE_STYLES =
   "[&>blockquote]:my-6 [&>blockquote]:border-l-2 [&>blockquote]:border-black [&>blockquote]:text-xl [&>blockquote]:italic [&>blockquote]:pl-6";
 
-const CONTENT_STYLES = `code-container ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES}`;
+const CONTENT_STYLES =
+  `code-container ${PARAGRAPH_STYLES} ${HEADING_STYLES} ${CODE_BLOCK_STYLES} ${IMAGE_STYLES} ${BLOCKQUOTE_STYLES}`;
 
 export default function Content({ content }: { content: string }) {
   const container = useRef<HTMLDivElement>(null);
@@ -40,7 +41,8 @@ export default function Content({ content }: { content: string }) {
         dangerouslySetInnerHTML={{
           __html: content,
         }}
-      ></div>
+      >
+      </div>
     </>
   );
 }

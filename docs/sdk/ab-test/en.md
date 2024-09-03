@@ -1,6 +1,5 @@
 ---
 description: Creating Headless A/B Testing
-
 ---
 
 ## Who is this content for?

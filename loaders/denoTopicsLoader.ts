@@ -21,6 +21,20 @@ export const cacheKey = (
   return "http://localhost:3000/docs/en/overview";
 };
 
+const isValidItem = (
+  item: PromiseSettledResult<
+    {
+      data: Response;
+      path: string;
+    } | undefined
+  >,
+): item is PromiseFulfilledResult<{
+  data: Response;
+  path: string;
+}> => {
+  return item.status === "fulfilled" && item.value?.data.status === 200;
+};
+
 async function fetchAppsReposWithReadme() {
   const url = `${GITHUB_API_URL}/repos/${OWNER}/${REPO}/contents`;
   const response = await fetch(url);
@@ -32,20 +46,18 @@ async function fetchAppsReposWithReadme() {
     return dirsWithReadme;
   }
 
-  for (const item of data) {
-    if (item.type === "dir") {
-      const url =
-        `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${item.path}/README.md`;
-      const response = await fetch(url);
-      const hasReadme = response.status === 200;
-
-      if (hasReadme) {
-        dirsWithReadme.push(item.path);
-      }
+  const promiseSettled = await Promise.allSettled(data.map(async ({ path, type }) => {
+    if (type === "dir" && !!path) {
+      const data = await fetch(
+        `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${path}/README.md`,
+      );
+      return { data, path };
     }
-  }
+  }));
 
-  return dirsWithReadme;
+  return promiseSettled.filter(isValidItem).map((promise) =>
+    promise.value.path
+  );
 }
 
 const loader = async (

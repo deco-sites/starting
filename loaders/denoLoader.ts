@@ -24,10 +24,7 @@ export const cacheKey = (
   _props: unknown,
   req: Request,
   _ctx: LoaderContext,
-) => {
-  const url = new URL(req.url);
-  return url.pathname;
-};
+) => new URL(req.url).href;
 
 const loader = async (
   props: { urlPattern: string; group: number; docs?: Doc[]; docsPath?: string },
