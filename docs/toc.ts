@@ -213,6 +213,13 @@ const tableOfContents: TableOfContents = [
         },
         slug: "developing-guide/examples",
       },
+      {
+        title: {
+          pt: "Go Live com Teste A/B",
+          en: "Go Live with A/B Testing",
+        },
+        slug: "developing-guide/go-live-ab-testing",
+      }
     ],
   },
   {
