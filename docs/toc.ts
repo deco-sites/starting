@@ -136,6 +136,13 @@ const tableOfContents: TableOfContents = [
             },
             slug: "cms-capabilities/advanced/experiments",
           },
+          {
+            title: {
+              pt: "Teste A/B",
+              en: "Creating an A/B Test",
+            },
+            slug: "developing-capabilities/apps/ab-test",
+          },
         ],
       },
       {
@@ -411,14 +418,7 @@ const tableOfContents: TableOfContents = [
               en: "Installing Apps",
             },
             slug: "developing-capabilities/apps/making-an-app-installable",
-          },
-          {
-            title: {
-              pt: "Criando um Teste A/B",
-              en: "Creating an A/B Test",
-            },
-            slug: "developing-capabilities/apps/ab-test",
-          },
+          }
         ],
       },
       {
@@ -556,8 +556,8 @@ const tableOfContents: TableOfContents = [
     children: [
       {
         title: {
-          pt: "Teste A/B",
-          en: "A/B Test",
+          pt: "Teste A/B headless",
+          en: "Headless A/B Test",
         },
         slug: "sdk/ab-test",
       },

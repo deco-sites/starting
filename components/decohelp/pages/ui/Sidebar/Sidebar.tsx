@@ -197,7 +197,7 @@ function AsideLinks({
     <>
       <SearchButton />
       <ul
-        class={`flex flex-col gap-2 pb-[140px] max-h-full overflow-x-auto lg:max-h-[80vh]`}
+        class={`flex flex-col gap-2 pb-[140px] max-h-full overflow-x-auto lg:max-h-[80vh] docs-scrollbar`}
       >
         {subtitle.length > 0 && (
           <li class="my-[8px] ml-[25px]">

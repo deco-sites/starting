@@ -566,3 +566,11 @@ select.light-autofill:-webkit-autofill:focus {
   /* Tailwind gray-200 */
   transition: background-color 5000s ease-in-out 0s;
 }
+
+.docs-scrollbar::-webkit-scrollbar {
+  @apply bg-transparent w-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#FFFFFF1A] rounded-full;
+}
