@@ -1,1 +1,66 @@
-{"name":"Community / PT","path":"/pt/community","sections":[{"__resolveType":"GTM"},{"__resolveType":"[pt] [mkt] Head"},{"__resolveType":"HeaderV2"},{"__resolveType":"site/sections/Community.tsx","mainText":"Apoiados por uma comunidade de +1000 membros","secondText":"Já estamos construindo a maior comunidade de e-commerce multiplataforma - da América Latina para o mundo. Aqui você encontrará:","peopleImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/36e19f8f-5cdc-43b0-a51f-82d506c85544","blurBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6","blur1Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1dac25d-5eaf-412c-a513-0a5685955ae0","blur2Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/434db95e-5597-429a-855f-4c863e1df06e","hrefSecondButton":"https://deco.cx/discord","labelSecondButton":"Junte-se a nós"},{"__resolveType":"site/sections/Benefits.tsx","cards":[{"href":"https://discord.gg/YsGgt8EQCZ","icon":"Book","text":"Aprenda Desenvolvimento Web para e-commerce do zero usando nossas tecnologias modernas.","title":"deco.cx camp"},{"href":"https://discord.gg/YsGgt8EQCZ","icon":"Bag","text":"Estamos listando todas as vagas de emprego que encontramos no ecossistema de e-commerce e você pode compartilhar a sua.","title":"Vagas de emprego"},{"href":"https://experts.deco.cx/","icon":"Cash","text":"Monetize suas habilidades completando projetos de curto prazo e alcançando resultados para clientes usando deco.cx.","title":"Bounties"},{"href":"https://discord.gg/YsGgt8EQCZ","icon":"Support","text":"Oferecemos suporte especializado para ajudar a solucionar problemas técnicos e responder perguntas sobre nossa plataforma e tecnologias.","title":"Suporte"}]},{"__resolveType":"Deco Footer [EN]"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Community / PT",
+  "path": "/pt/community",
+  "sections": [
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "[pt] [mkt] Head"
+    },
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "site/sections/Community.tsx",
+      "mainText": "Apoiados por uma comunidade de +1000 membros",
+      "secondText": "Já estamos construindo a maior comunidade de e-commerce multiplataforma - da América Latina para o mundo. Aqui você encontrará:",
+      "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/36e19f8f-5cdc-43b0-a51f-82d506c85544",
+      "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
+      "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1dac25d-5eaf-412c-a513-0a5685955ae0",
+      "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/434db95e-5597-429a-855f-4c863e1df06e",
+      "hrefSecondButton": "https://deco.cx/discord",
+      "labelSecondButton": "Junte-se a nós"
+    },
+    {
+      "__resolveType": "site/sections/Benefits.tsx",
+      "cards": [
+        {
+          "href": "https://discord.gg/YsGgt8EQCZ",
+          "icon": "Book",
+          "text": "Aprenda Desenvolvimento Web para e-commerce do zero usando nossas tecnologias modernas.",
+          "title": "deco.cx camp"
+        },
+        {
+          "href": "https://discord.gg/YsGgt8EQCZ",
+          "icon": "Bag",
+          "text": "Estamos listando todas as vagas de emprego que encontramos no ecossistema de e-commerce e você pode compartilhar a sua.",
+          "title": "Vagas de emprego"
+        },
+        {
+          "href": "https://experts.deco.cx/",
+          "icon": "Cash",
+          "text": "Monetize suas habilidades completando projetos de curto prazo e alcançando resultados para clientes usando deco.cx.",
+          "title": "Bounties"
+        },
+        {
+          "href": "https://discord.gg/YsGgt8EQCZ",
+          "icon": "Support",
+          "text": "Oferecemos suporte especializado para ajudar a solucionar problemas técnicos e responder perguntas sobre nossa plataforma e tecnologias.",
+          "title": "Suporte"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/sections/Seo/SeoV2.tsx",
+        "noIndexing": true
+      }
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}
