@@ -1418,7 +1418,8 @@
   },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "description": ""
+    "description": "",
+    "title": ""
   },
   "__resolveType": "website/pages/Page.tsx",
   "name": "Home"
