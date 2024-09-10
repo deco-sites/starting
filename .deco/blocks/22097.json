@@ -1,1 +1,305 @@
-{"name":"Home Dev / PT","path":"/pt/dev","sections":[{"__resolveType":"GTM"},{"__resolveType":"[pt] [dev] Head"},{"page":{"__resolveType":"8220"},"__resolveType":"$live/sections/PageInclude.tsx"},{"theme":"dark","button":"Start now!","mainText":"Acelere a construção de lojas super rápidas","themeDark":true,"blackBlock":"<p>A&nbsp;<strong>headless frontend solution</strong>, integrated with any platform.</p><p><br></p>","buttonCta1":{"href":"/onboarding","buttonName":"Comece a desenvolver"},"buttonCta2":{"href":"/pt/contact-us","buttonName":"Entre em contato"},"greenBlock":"Create conversion-driven storefronts, optimized for each audience.","miniBanner":{"titleText":"Com nossa infra na edge, oferecemos uma qualidade de performance imbatível.","linkedText":"Tecnologias","bannerTopImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ecce10f3-b505-4412-a239-ddbe247244db","altBannerTopImage":"interface com template de um ecommerce ","bannerBottomImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4a6fdf51-c071-4b4e-b48b-ad30c3bf7c6e","altBannerBottomImage":"interface com tecnologias otimizadas para desenvolvimento web"},"secondText":"The digital experience platform that brings performance and personalization together.","mobileH1Size":"44px","__resolveType":"site/sections/MainBanner.tsx","mainLine1Text":"Build fast stores and","mainLine2Text":"increase sales by","switcherButton":{"themeDark":true,"switcherButton1":{"href":"/pt","name":"Usuário de negócio"},"switcherButton2":{"href":"/pt/dev","name":"Desenvolvedor"}},"descriptionText":"Aumente sua produtividade e desenvolva lojas virtuais em tempo recorde.","switcherButton1":{"href":"/","name":"For Business users"},"switcherButton2":{"href":"/dev","name":"For Developers"}},{"title":"Marcas líderes do ecommerce preferem a deco.cx","images":[{"href":"/","label":"Zeedog","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b88cc9a3-893f-4592-a088-4d3dbfee4b9e"},{"href":"/","label":"Osklen","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/38a0e011-0b17-4626-b93f-c46022f29263"},{"href":"/","label":"Lojas Torra","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6aab7857-90b9-4519-8a32-9b094b08b1f9"},{"href":"/","label":"Uncle K","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50840350-025e-4875-a452-ce97856abab1","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09bce13f-6554-4597-af40-7db5464331bf"},{"label":"Lolja","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d9b415c3-4017-4fb6-bb00-59c9f7539125"}],"themeDark":true,"__resolveType":"site/sections/Home/Brands.tsx"},{"title":"Construa, deploye e evolua na velocidade da luz com building blocks editáveis em uma infraestrutura na edge perto do usuário.","darkMode":true,"sections":[{"text":"A deco.cx oferece uma abordagem flexível e baseada em componentes para a construção de UIs. Com JSX, você pode criar e modificar seções com facilidade, possibilitando um processo de desenvolvimento mais rápido e maior capacidade de manutenção.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/81fca422-d89f-460e-bd4c-3f44924ae8ea","title":"Sections","subtitle":"UI personalizável com JSX","imagePosition":"right"},{"text":"Aproveite nossa extensa biblioteca de carregadores pré-construídos para integrar seu projeto a qualquer API. A deco.cx simplifica a busca e gerenciamento de dados, permitindo que você se concentre no que realmente importa - construir ótimas experiências para o usuário.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f0eac0a6-3840-426b-82dd-49f871f4b517","title":"Loaders","subtitle":"Conecte a qualquer API","imagePosition":"left"},{"text":"Implemente seus projetos instantaneamente na borda com deco.cx, garantindo tempos de carregamento ultrarrápidos e uma experiência otimizada para o usuário em todo o mundo.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5e82fb26-3878-4549-873a-243a9b4244c0","title":"Deployment","subtitle":"Deploy instantâneo na edge","imagePosition":"right"},{"text":"Fique de olho no desempenho do seu site e identifique problemas rapidamente usando as ferramentas de monitoramento da deco.cx. Debugue e resolva problemas de forma eficiente para manter uma UX afinada.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/63d4522b-ac93-4f66-a1f6-98d7f9e7d0cc","title":"Monitoramento","subtitle":"Performance e bugs","imagePosition":"left"}],"__resolveType":"site/sections/Differentials.tsx"},{"cards":[{"icon":"FastPagespeed","text":"Com uma baixa curva de aprendizado, deco.cx torna o processo de aprendizagem do desenvolvimento web fácil e acessível. Com apenas o básico de HTML, CSS e JavaScript, você pode iniciar sua jornada de construir incríveis experiências na web.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ec9b0cc1-dea3-4250-b134-b6519c41384b","title":"Aprenda rápido"},{"icon":"Sale","text":"Utilize nossa biblioteca ou crie seus próprios componentes. Com uma simples linha de código você permite que um conteúdo ou uma parte do layout seja editável através do CMS.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/df32267e-a3b7-48cf-ace7-b2c89788756a","title":"Componentes editáveis"},{"icon":"FastClock","text":"A deco.cx valoriza o poder do open source. Promovemos um ambiente colaborativo, permitindo que devs adaptem e estendam a plataforma para atender qualquer tipo de necessidade.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b0b29a5d-0b3c-4962-8b47-b6e6dbdd880c","title":"Totalmente open source"}],"title":"Construída para devs. Amada por usuários de negócio.","col1Text":"Deco is a vendor-neutral platform that lets you select the products that are best for you, regardless of the vendor.","col2Text":"Faster time to market Pagespeeds affects SEO, visitor engagement and sales. Deco leverages edge computing and CDN capabilities to ensure digital experiences are always fast.","col3Text":"Get all the tools you need to build and optimize your headless experience for less price and make your teams work smarter.","col2Title":"Faster time to market","col3Title":"Reduced costs","col1Ttitle":"Unrivaled pagespeeds","__resolveType":"site/sections/Features.tsx"},{"image":{"imageMobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc88cf59-e7a6-4971-9cef-26074e2d4114"},"imageDesktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/509ffc8f-976e-41a3-9d74-b347e4ac1adb"}},"mainText":"Integre com o <span style=\"color: #02F67C\">mundo inteiro</span> ","secondText":"De plataformas de ecommerce a qualquer outra API externa, deco.cx oferece uma biblioteca open-source com integrações nativas e reutilizáveis. Crie seu próprio workflow de integração com facilidade.","imageEffect":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91b973bf-425e-454b-8528-8d2a8bd2fd36","__resolveType":"site/sections/Integration.tsx"},{"__resolveType":"site/sections/Divider.tsx"},{"col1":"Manage all storefronts in one place","col2":"Easier stack for hiring and training","col3":"Expand your market","col4":"Make your customers happy","title":"Operado com Deno, Fresh, Twind e Preact","button":"Junte-se à deco.cx","benefits":["Foco em produtividade no desenvolvimento","Server-side, sem nada JS por padrão","Feature flags extensíveis em tempo real","Deploy instantâneo na edge"],"mainText":"Conheça o framework da próxima geração","buttonHref":"/pt/contact-us","imgFirstLine":["https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ee087734-c17a-46f6-b5f3-59a9bba51130","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a64dce4a-405a-4e2f-8beb-14c0140173b5","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/88bf4a21-8043-4d2e-837a-8f4455df282c","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54535591-b407-42ad-a8e4-6303b66b0a15"],"imgThirdLine":["https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9d310326-5975-472e-9113-5260757be2a0","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1bcd2b99-df66-479d-a93c-b8836d5708da","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc4ad80e-5fb9-4cc5-9728-33ce447997a9","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b48e76b0-5655-439e-8a5e-e452e162f5db"],"__resolveType":"site/sections/Partner.tsx","imgSecondLine":["https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/18704485-b943-41c3-be04-a21ade485bc9","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/04fcc5d0-559e-461d-a365-ad558622744f","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/37201d25-eec9-418d-9730-922fc04660dc","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b3033518-2724-4701-8985-bafb83821c6d"]},{"__resolveType":"[pt]"},{"subText":"We are already building the largest multiplatform e-commerce community -from Latin America to the world. Here you will find:","col1Text":"A self-paced bootcamp for students. Learn webdev for ecommerce from scratch using our modern technologies.","col2Text":"We are listing all fulltime job positions we find in the commerce ecosystem, and you can share yours.","col3Text":"A self-paced bootcamp for students. Learn webdev for ecommerce from scratch using our modern technologies.","col4Text":"We are listing all fulltime job positions we find in the commerce ecosystem, and you can share yours.","lazyload":true,"mainText":"Apoiado por uma comunidade de mais de 1.000 membros.","col1Title":"deco camp","col2Title":"job positions","col3Title":"bounties","col4Title":"support","secondText":"Já estamos construindo a maior comunidade de comércio eletrônico multiplataforma - da América Latina para o mundo.","mainTextPt1":"Baked up by a 730+ members community","mainTextPt2":" ","peopleImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ced9e4-bdc9-437c-bea6-1ce09e7607e5","__resolveType":"site/sections/Community.tsx","blurBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a8cb4a96-e2fe-405e-ac30-4f1901df6f25","blur1Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43da2f47-2eb2-4876-9faa-7409c4c1dda0","blur2Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/44bb7e09-3493-47aa-bacf-75760b8ac6df","hrefFirstButton":"/pt/community","hrefSecondButton":"https://discord.gg/YsGgt8EQCZ","labelFirstButton":"Saiba mais","labelSecondButton":"Entre na comunidade"},{"cards":[{"url":"https://www.deco.cx/blog/como-a-deco-faz-sua-loja-converter-mais.md","date":"14 Abril 2023","text":"Como a deco faz sua loja converter mais","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a38d0752-27b5-4f32-9149-b1a89500ffa1","title":"BUSINESS","author":"Rafael Crespo","writtenByLabel":"Escrito por"},{"url":"https://www.deco.cx/blog/abertura-ii-hackathon-deco.md","date":"12 Março 2023","text":"América Latina e o futuro das experiências digitais","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b38b420f-512e-40b9-9daa-a3338d1ff729","title":"BUSINESS","author":"Guilherme Rodrigues","writtenByLabel":"Escrito por"},{"url":"https://www.deco.cx/blog/criando-uma-pagina-com-decocx.md","date":"01 Março 2023","text":"Minha experiência com deco.cx","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4f408bd4-dc47-4d46-9c3e-f4390dfe4e39","title":"BUSINESS","author":"Guilherme Tavano","writtenByLabel":"Escrito por"},{"url":"https://www.deco.cx/blog/pg-vb-pt-br.md","date":"22 Novembro 2022","text":"A vida é curta","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8ba927ff-2cb5-45de-96e0-6898bc7f174e","title":"BUSINESS","author":"Paul Graham","writtenByLabel":"Escrito por"}],"images":[{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff8801e3-bf33-40d2-8037-3229b558aa77","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0ae3ef7e-a50d-412e-ad4d-6c96d75679fa"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7348ec03-a5db-4f01-bba7-545182dbd959","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5b68e95-5cfa-4c58-bd08-885077f6f2c1"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c3e867b-e862-4e55-9a8d-fd8a93c0a9b7","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98826707-7e42-4eb6-be7e-5d7dcf61ce69"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f325ab19-5779-4533-87f5-d214a45c88a0","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/008ecb21-f953-4c88-ad13-16775ca93c8a"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8c4ad9d9-d034-4ae1-863a-d7dd422c4096","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91c6d097-461e-4f17-8d95-1c710bf2a4d8"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d896d2b-a45c-44d6-b98f-b92cda60ddc8","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2b4a85be-e327-403a-88e6-0f04d83d32e1"}],"__resolveType":"site/sections/Carousel.tsx"},{"quest1":"What is deco?","quest2":"Does deco replaces my current commerce platform?","quest3":"What tech stack deco uses?","quest4":"How deco enables fast websites?","quest5":"How can I get more details on the platform?","questions":[{"answer":"A deco.cx é uma plataforma moderna de desenvolvimento web que oferece uma stack de tecnologia simples e eficiente combinada com recursos poderosos para criar websites extremamente rápidos.","question":"O que é a deco.cx?"},{"answer":"Não. Em vez disso, a deco.cx serve como uma solução de frontend \"headless\" que se integra perfeitamente às plataformas existentes, melhorando o desempenho e a experiência do usuário.","question":"A deco.cx substitui uma plataforma de ecommerce?"},{"answer":"A stack da deco.cx é baseada em Deno, Twind e Fresh. Deno é um ambiente de execução seguro para JavaScript e TypeScript, enquanto Twind é uma biblioteca de CSS-in-JS que permite a criação de estilos otimizados para a web. Fresh é um framework web moderno para server side construído para Deno. Juntas, essas tecnologias fornecem uma base poderosa e segura para criar lojas virtuais escaláveis e de alto desempenho.","question":"Qual stack a deco.cx usa?"},{"answer":"A deco.cx aproveita tecnologias de ponta, como renderização server side e infraestrutura global de edge, para garantir um desempenho rápido do site.","question":"Como é possível criar sites tão rápido com a deco.cx?"},{"answer":"O processo de implementação da deco.cx envolve a migração da implementação frontend de uma loja de e-commerce para a stack de tecnologia da deco.cx. Essa migração pode ser realizada por uma das agências parceiras da deco.cx, uma pessoa dev freelancer ou uma pessoa dev dentro da própria equipe do cliente. A duração do processo de implementação geralmente varia entre 2 semanas e 2 meses, dependendo da complexidade da loja.","question":"Como é o processo de implementação de um site na deco.cx?"},{"answer":"Junte-se à nossa comunidade no Discord para saber mais sobre a deco.cx ou entre em contato com nossa equipe de vendas para mais detalhes.","question":"Como posso obter mais detalhes sobre a plataforma?"}],"__resolveType":"site/sections/Faq.tsx"},{"form":{"action":"#","method":"get"},"href":"/","name":"Name","email":"Work e-mail","button":"Schedule a demo","linkedin":"LinkedIn","mainText":"Que tal surpreender seus clientes?","position":"Position","buttonText":"Entre em contato","placeholder":"Enter your work email","__resolveType":"site/sections/Delight.tsx"},{"__resolveType":"[pt] Footer"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Home Dev / PT",
+  "path": "/pt/dev",
+  "sections": [
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "[pt] [dev] Head"
+    },
+    {
+      "page": {
+        "__resolveType": "8220"
+      },
+      "__resolveType": "$live/sections/PageInclude.tsx"
+    },
+    {
+      "theme": "dark",
+      "button": "Start now!",
+      "mainText": "Acelere a construção de lojas super rápidas",
+      "themeDark": true,
+      "blackBlock": "<p>A&nbsp;<strong>headless frontend solution</strong>, integrated with any platform.</p><p><br></p>",
+      "buttonCta1": {
+        "href": "/onboarding",
+        "buttonName": "Comece a desenvolver"
+      },
+      "buttonCta2": {
+        "href": "/pt/contact-us",
+        "buttonName": "Entre em contato"
+      },
+      "greenBlock": "Create conversion-driven storefronts, optimized for each audience.",
+      "miniBanner": {
+        "titleText": "Com nossa infra na edge, oferecemos uma qualidade de performance imbatível.",
+        "linkedText": "Tecnologias",
+        "bannerTopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ecce10f3-b505-4412-a239-ddbe247244db",
+        "altBannerTopImage": "interface com template de um ecommerce ",
+        "bannerBottomImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4a6fdf51-c071-4b4e-b48b-ad30c3bf7c6e",
+        "altBannerBottomImage": "interface com tecnologias otimizadas para desenvolvimento web"
+      },
+      "secondText": "The digital experience platform that brings performance and personalization together.",
+      "mobileH1Size": "44px",
+      "__resolveType": "site/sections/MainBanner.tsx",
+      "mainLine1Text": "Build fast stores and",
+      "mainLine2Text": "increase sales by",
+      "switcherButton": {
+        "themeDark": true,
+        "switcherButton1": {
+          "href": "/pt",
+          "name": "Usuário de negócio"
+        },
+        "switcherButton2": {
+          "href": "/pt/dev",
+          "name": "Desenvolvedor"
+        }
+      },
+      "descriptionText": "Aumente sua produtividade e desenvolva lojas virtuais em tempo recorde.",
+      "switcherButton1": {
+        "href": "/",
+        "name": "For Business users"
+      },
+      "switcherButton2": {
+        "href": "/dev",
+        "name": "For Developers"
+      }
+    },
+    {
+      "title": "Marcas líderes do ecommerce preferem a deco.cx",
+      "images": [
+        {
+          "href": "/",
+          "label": "Zeedog",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b88cc9a3-893f-4592-a088-4d3dbfee4b9e"
+        },
+        {
+          "href": "/",
+          "label": "Osklen",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/38a0e011-0b17-4626-b93f-c46022f29263"
+        },
+        {
+          "href": "/",
+          "label": "Lojas Torra",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6aab7857-90b9-4519-8a32-9b094b08b1f9"
+        },
+        {
+          "href": "/",
+          "label": "Uncle K",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50840350-025e-4875-a452-ce97856abab1",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09bce13f-6554-4597-af40-7db5464331bf"
+        },
+        {
+          "label": "Lolja",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d9b415c3-4017-4fb6-bb00-59c9f7539125"
+        }
+      ],
+      "themeDark": true,
+      "__resolveType": "site/sections/Home/Brands.tsx"
+    },
+    {
+      "title": "Construa, deploye e evolua na velocidade da luz com building blocks editáveis em uma infraestrutura na edge perto do usuário.",
+      "darkMode": true,
+      "sections": [
+        {
+          "text": "A deco.cx oferece uma abordagem flexível e baseada em componentes para a construção de UIs. Com JSX, você pode criar e modificar seções com facilidade, possibilitando um processo de desenvolvimento mais rápido e maior capacidade de manutenção.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/81fca422-d89f-460e-bd4c-3f44924ae8ea",
+          "title": "Sections",
+          "subtitle": "UI personalizável com JSX",
+          "imagePosition": "right"
+        },
+        {
+          "text": "Aproveite nossa extensa biblioteca de carregadores pré-construídos para integrar seu projeto a qualquer API. A deco.cx simplifica a busca e gerenciamento de dados, permitindo que você se concentre no que realmente importa - construir ótimas experiências para o usuário.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f0eac0a6-3840-426b-82dd-49f871f4b517",
+          "title": "Loaders",
+          "subtitle": "Conecte a qualquer API",
+          "imagePosition": "left"
+        },
+        {
+          "text": "Implemente seus projetos instantaneamente na borda com deco.cx, garantindo tempos de carregamento ultrarrápidos e uma experiência otimizada para o usuário em todo o mundo.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5e82fb26-3878-4549-873a-243a9b4244c0",
+          "title": "Deployment",
+          "subtitle": "Deploy instantâneo na edge",
+          "imagePosition": "right"
+        },
+        {
+          "text": "Fique de olho no desempenho do seu site e identifique problemas rapidamente usando as ferramentas de monitoramento da deco.cx. Debugue e resolva problemas de forma eficiente para manter uma UX afinada.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/63d4522b-ac93-4f66-a1f6-98d7f9e7d0cc",
+          "title": "Monitoramento",
+          "subtitle": "Performance e bugs",
+          "imagePosition": "left"
+        }
+      ],
+      "__resolveType": "site/sections/Differentials.tsx"
+    },
+    {
+      "cards": [
+        {
+          "icon": "FastPagespeed",
+          "text": "Com uma baixa curva de aprendizado, deco.cx torna o processo de aprendizagem do desenvolvimento web fácil e acessível. Com apenas o básico de HTML, CSS e JavaScript, você pode iniciar sua jornada de construir incríveis experiências na web.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ec9b0cc1-dea3-4250-b134-b6519c41384b",
+          "title": "Aprenda rápido"
+        },
+        {
+          "icon": "Sale",
+          "text": "Utilize nossa biblioteca ou crie seus próprios componentes. Com uma simples linha de código você permite que um conteúdo ou uma parte do layout seja editável através do CMS.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/df32267e-a3b7-48cf-ace7-b2c89788756a",
+          "title": "Componentes editáveis"
+        },
+        {
+          "icon": "FastClock",
+          "text": "A deco.cx valoriza o poder do open source. Promovemos um ambiente colaborativo, permitindo que devs adaptem e estendam a plataforma para atender qualquer tipo de necessidade.",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b0b29a5d-0b3c-4962-8b47-b6e6dbdd880c",
+          "title": "Totalmente open source"
+        }
+      ],
+      "title": "Construída para devs. Amada por usuários de negócio.",
+      "col1Text": "Deco is a vendor-neutral platform that lets you select the products that are best for you, regardless of the vendor.",
+      "col2Text": "Faster time to market Pagespeeds affects SEO, visitor engagement and sales. Deco leverages edge computing and CDN capabilities to ensure digital experiences are always fast.",
+      "col3Text": "Get all the tools you need to build and optimize your headless experience for less price and make your teams work smarter.",
+      "col2Title": "Faster time to market",
+      "col3Title": "Reduced costs",
+      "col1Ttitle": "Unrivaled pagespeeds",
+      "__resolveType": "site/sections/Features.tsx"
+    },
+    {
+      "image": {
+        "imageMobile": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc88cf59-e7a6-4971-9cef-26074e2d4114"
+        },
+        "imageDesktop": {
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/509ffc8f-976e-41a3-9d74-b347e4ac1adb"
+        }
+      },
+      "mainText": "Integre com o <span style=\"color: #02F67C\">mundo inteiro</span> ",
+      "secondText": "De plataformas de ecommerce a qualquer outra API externa, deco.cx oferece uma biblioteca open-source com integrações nativas e reutilizáveis. Crie seu próprio workflow de integração com facilidade.",
+      "imageEffect": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91b973bf-425e-454b-8528-8d2a8bd2fd36",
+      "__resolveType": "site/sections/Integration.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Divider.tsx"
+    },
+    {
+      "col1": "Manage all storefronts in one place",
+      "col2": "Easier stack for hiring and training",
+      "col3": "Expand your market",
+      "col4": "Make your customers happy",
+      "title": "Operado com Deno, Fresh, Twind e Preact",
+      "button": "Junte-se à deco.cx",
+      "benefits": [
+        "Foco em produtividade no desenvolvimento",
+        "Server-side, sem nada JS por padrão",
+        "Feature flags extensíveis em tempo real",
+        "Deploy instantâneo na edge"
+      ],
+      "mainText": "Conheça o framework da próxima geração",
+      "buttonHref": "/pt/contact-us",
+      "imgFirstLine": [
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ee087734-c17a-46f6-b5f3-59a9bba51130",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a64dce4a-405a-4e2f-8beb-14c0140173b5",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/88bf4a21-8043-4d2e-837a-8f4455df282c",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/54535591-b407-42ad-a8e4-6303b66b0a15"
+      ],
+      "imgThirdLine": [
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9d310326-5975-472e-9113-5260757be2a0",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1bcd2b99-df66-479d-a93c-b8836d5708da",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc4ad80e-5fb9-4cc5-9728-33ce447997a9",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b48e76b0-5655-439e-8a5e-e452e162f5db"
+      ],
+      "__resolveType": "site/sections/Partner.tsx",
+      "imgSecondLine": [
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/18704485-b943-41c3-be04-a21ade485bc9",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/04fcc5d0-559e-461d-a365-ad558622744f",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/37201d25-eec9-418d-9730-922fc04660dc",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b3033518-2724-4701-8985-bafb83821c6d"
+      ]
+    },
+    {
+      "__resolveType": "[pt]"
+    },
+    {
+      "subText": "We are already building the largest multiplatform e-commerce community -from Latin America to the world. Here you will find:",
+      "col1Text": "A self-paced bootcamp for students. Learn webdev for ecommerce from scratch using our modern technologies.",
+      "col2Text": "We are listing all fulltime job positions we find in the commerce ecosystem, and you can share yours.",
+      "col3Text": "A self-paced bootcamp for students. Learn webdev for ecommerce from scratch using our modern technologies.",
+      "col4Text": "We are listing all fulltime job positions we find in the commerce ecosystem, and you can share yours.",
+      "lazyload": true,
+      "mainText": "Apoiado por uma comunidade de mais de 1.000 membros.",
+      "col1Title": "deco camp",
+      "col2Title": "job positions",
+      "col3Title": "bounties",
+      "col4Title": "support",
+      "secondText": "Já estamos construindo a maior comunidade de comércio eletrônico multiplataforma - da América Latina para o mundo.",
+      "mainTextPt1": "Baked up by a 730+ members community",
+      "mainTextPt2": " ",
+      "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ced9e4-bdc9-437c-bea6-1ce09e7607e5",
+      "__resolveType": "site/sections/Community.tsx",
+      "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a8cb4a96-e2fe-405e-ac30-4f1901df6f25",
+      "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43da2f47-2eb2-4876-9faa-7409c4c1dda0",
+      "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/44bb7e09-3493-47aa-bacf-75760b8ac6df",
+      "hrefFirstButton": "/pt/community",
+      "hrefSecondButton": "https://discord.gg/YsGgt8EQCZ",
+      "labelFirstButton": "Saiba mais",
+      "labelSecondButton": "Entre na comunidade"
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx",
+      "quest1": "What is deco?",
+      "quest2": "Does deco replaces my current commerce platform?",
+      "quest3": "What tech stack deco uses?",
+      "quest4": "How deco enables fast websites?",
+      "quest5": "How can I get more details on the platform?",
+      "questions": [
+        {
+          "answer": "A deco.cx é uma plataforma moderna de desenvolvimento web que oferece uma stack de tecnologia simples e eficiente combinada com recursos poderosos para criar websites extremamente rápidos.",
+          "question": "O que é a deco.cx?"
+        },
+        {
+          "answer": "Não. Em vez disso, a deco.cx serve como uma solução de frontend \"headless\" que se integra perfeitamente às plataformas existentes, melhorando o desempenho e a experiência do usuário.",
+          "question": "A deco.cx substitui uma plataforma de ecommerce?"
+        },
+        {
+          "answer": "A stack da deco.cx é baseada em Deno, Twind e Fresh. Deno é um ambiente de execução seguro para JavaScript e TypeScript, enquanto Twind é uma biblioteca de CSS-in-JS que permite a criação de estilos otimizados para a web. Fresh é um framework web moderno para server side construído para Deno. Juntas, essas tecnologias fornecem uma base poderosa e segura para criar lojas virtuais escaláveis e de alto desempenho.",
+          "question": "Qual stack a deco.cx usa?"
+        },
+        {
+          "answer": "A deco.cx aproveita tecnologias de ponta, como renderização server side e infraestrutura global de edge, para garantir um desempenho rápido do site.",
+          "question": "Como é possível criar sites tão rápido com a deco.cx?"
+        },
+        {
+          "answer": "O processo de implementação da deco.cx envolve a migração da implementação frontend de uma loja de e-commerce para a stack de tecnologia da deco.cx. Essa migração pode ser realizada por uma das agências parceiras da deco.cx, uma pessoa dev freelancer ou uma pessoa dev dentro da própria equipe do cliente. A duração do processo de implementação geralmente varia entre 2 semanas e 2 meses, dependendo da complexidade da loja.",
+          "question": "Como é o processo de implementação de um site na deco.cx?"
+        },
+        {
+          "answer": "Junte-se à nossa comunidade no Discord para saber mais sobre a deco.cx ou entre em contato com nossa equipe de vendas para mais detalhes.",
+          "question": "Como posso obter mais detalhes sobre a plataforma?"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Delight.tsx",
+      "form": {
+        "action": "#",
+        "method": "get"
+      },
+      "href": "/",
+      "name": "Name",
+      "email": "Work e-mail",
+      "button": "Schedule a demo",
+      "linkedin": "LinkedIn",
+      "mainText": "Que tal surpreender seus clientes?",
+      "position": "Position",
+      "buttonText": "Entre em contato",
+      "placeholder": "Enter your work email"
+    },
+    {
+      "__resolveType": "[pt] Footer"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/sections/Seo/SeoV2.tsx",
+        "noIndexing": true
+      }
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}
