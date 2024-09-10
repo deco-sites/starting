@@ -12,6 +12,7 @@
     "seo": {
       "title": "Ensuring Stability with Rollback in Web Development",
       "description": "Rollback is a crucial process in web development, allowing developers to restore a system, software, or database to a previous state when an update causes issues."
-    }
+    },
+    "extraProps": []
   }
 }

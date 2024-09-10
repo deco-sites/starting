@@ -1,13 +1,13 @@
 {
   "seo": {
     "type": "website",
-    "title": "Build high-performance Web Apps faster",
-    "titleTemplate": "%s | deco.cx",
-    "descriptionTemplate": "%s | deco.cx",
+    "title": "deco.cx - The TypeScript-powered Webdev Engine",
     "themeColor": "dark",
-    "description": "The all-in-one platform for building everything from websites to advanced web apps.",
+    "description": "The all-in-one solution for developers to build and evolve full-stack, enterprise-class web apps faster.",
     "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f334b629-a37d-4be1-a7b3-d35cc1eff16b",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/24f3e915-ae47-452c-a549-2750e5644105"
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/24f3e915-ae47-452c-a549-2750e5644105",
+    "titleTemplate": "%s",
+    "descriptionTemplate": "%s"
   },
   "global": [
     {

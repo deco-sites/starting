@@ -1399,6 +1399,15 @@
               "type": "load"
             },
             "loading": "lazy"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "website/sections/Seo/SeoV2.tsx",
+              "title": "deco.cx - The TypeScript-powered Webdev Engine",
+              "description": "The all-in-one solution for developers to build and evolve full-stack, enterprise-class web apps faster.",
+              "type": "website"
+            }
           }
         ],
         "rule": {
