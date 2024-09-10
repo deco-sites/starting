@@ -12,6 +12,7 @@
     "seo": {
       "title": "Tailwind CSS: Building Responsive Web Apps with Ease",
       "description": "In web development, efficiency and flexibility are crucial. Traditional CSS frameworks often come with predefined styles and components that can feel limiting. Tailwind CSS, a utility-first CSS framework, changes how developers approach styling. "
-    }
+    },
+    "extraProps": []
   }
 }

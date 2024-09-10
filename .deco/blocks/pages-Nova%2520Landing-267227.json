@@ -814,7 +814,7 @@
                       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b"
                     }
                   ],
-                  "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">How Professional Webdevs</span></p>",
+                  "pixelTitle": "<p><strong><span style=\"color: #02f67c\">The TypeScript-powered</span></strong></p>",
                   "showRadialOnTop": true,
                   "ctas": [
                     {
@@ -824,9 +824,9 @@
                       "trackID": "bt-click-signup"
                     }
                   ],
-                  "subTitle": "<p>Universal Git-based CMS to build high performance sites, apps and <br>storefronts with Deno, HTMX, JSX and Tailwind.</p>",
+                  "subTitle": "<p>How developers build and evolve enterprise-grade, full-stack web apps 10x faster.</p>",
                   "shouldAddPaddingTopAndBottom": true,
-                  "title": "<p>Build Profitable Websites</p>",
+                  "title": "<p>Webdev Engine</p>",
                   "alert": {}
                 },
                 "rule": {
@@ -865,7 +865,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/StartingCards.tsx",
-                "title": "<p>One platform to rule<br>all your digital experiences</p>",
+                "title": "<p>Fully extensible platform for any type of <span style=\"color: #02f67c\">custom software</span>.</p>",
                 "cards": [
                   {
                     "href": "https://deco.new",
@@ -943,12 +943,8 @@
                 ]
               },
               {
-                "__resolveType": "site/sections/Home/TextSection2.tsx",
-                "description": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">High-performance</span>, <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">fast execution</span>, and <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">easy personalization</span> that enables high-volume, content-heavy websites to evolve 10x faster.</p>"
-              },
-              {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p>Everything You Need to <span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Build</span></p>",
+                "title": "<p>Everything You Need to Build</p>",
                 "tabs": [
                   {
                     "title": "CMS with Visual Editor",
@@ -1412,7 +1408,8 @@
     ]
   },
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "description": ""
   },
   "__resolveType": "website/pages/Page.tsx",
   "name": "Home"

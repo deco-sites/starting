@@ -12,6 +12,7 @@
     "seo": {
       "title": "Building Responsive Web Apps with Tailwind CSS and DaisyUI",
       "description": "Designing websites that adapt to various screen sizes and devices is essential in today’s digital world. With users accessing content from a wide range of devices, from mobile phones to desktop monitors, having a responsive site ensures that everyone has a seamless experience. In web development, responsive design has become a critical approach to making sure that websites look great and function well on any device."
-    }
+    },
+    "extraProps": []
   }
 }
