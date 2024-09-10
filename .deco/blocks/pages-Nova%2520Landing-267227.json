@@ -944,7 +944,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p>Everything You Need to Build</p>",
+                "title": "<p>Everything You Need to <span style=\"color: #02f67c\">Build</span></p>",
                 "tabs": [
                   {
                     "title": "CMS with Visual Editor",
@@ -991,7 +991,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Evolve</span> Your Business Continuously</p>",
+                "title": "<p>Evolve Your Business Continuously</p>",
                 "tabs": [
                   {
                     "title": "Advanced SEO Settings",
