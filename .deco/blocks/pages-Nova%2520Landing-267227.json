@@ -921,26 +921,33 @@
                 "title": "<p>Results don't have to be explained</p>",
                 "results": [
                   {
-                    "title": "<p><span style=\"color: #02f67c\">+</span>70</p>",
-                    "description": "<p>Websites using deco.cx</p>",
-                    "id": "Websites using deco"
+                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>100</p>",
+                    "description": "<p>web apps built on deco</p>",
+                    "id": "web apps built on deco"
                   },
                   {
-                    "title": "<p>6<span style=\"color: #02f67c\">X</span></p>",
-                    "description": "<p>average faster PageSpeed</p>",
-                    "id": "PageSpeed"
+                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>4B</p>",
+                    "description": "<p><span>requests served / mo</span></p>",
+                    "id": "Requests"
                   },
                   {
-                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>4,2k</p>",
+                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>5k</p>",
                     "description": "<p>in our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.gg/hBUs29me8Z\"><span style=\"color: #02f67c\">Discord community</span></a></p>",
                     "id": "Discord "
                   },
                   {
-                    "title": "<p><span style=\"color: #02f67c\">+</span>470</p>",
+                    "title": "<p><span style=\"color: rgb(2, 246, 124)\">+</span>620</p>",
                     "description": "<p>starts on our <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/deco-cx\">GitHub</a></p>",
                     "id": "Github Stars"
                   }
                 ]
+              },
+              {
+                "__resolveType": "website/sections/Rendering/Lazy.tsx",
+                "section": {
+                  "__resolveType": "site/sections/Home/TextSection2.tsx",
+                  "description": "<p><span style=\"color: #02f67c\">Fast execution</span>, <span style=\"color: #02f67c\">easy personalization</span>&nbsp;and <span style=\"color: #02f67c\">high performance</span> that enable high-volume, content-heavy apps to evolve 10x faster.</p>"
+                }
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
@@ -1153,6 +1160,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/Testimonials.tsx",
+                "title": "<p>Join our Community</p>",
                 "testimonials": [
                   {
                     "description": "\"deco.cx makes creating high-performance websites easy!\"",
@@ -1233,7 +1241,6 @@
                     "link": "https://github.com/deco-cx"
                   }
                 ],
-                "title": "<p>Join our Community</p>",
                 "subtitle": "Backed by a community of +4,000 developers."
               },
               {
@@ -1406,7 +1413,9 @@
               "__resolveType": "website/sections/Seo/SeoV2.tsx",
               "title": "deco.cx - The TypeScript-powered Webdev Engine",
               "description": "The all-in-one solution for developers to build and evolve full-stack, enterprise-class web apps faster.",
-              "type": "website"
+              "type": "website",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/starting/ed8a10c6-69f7-41e6-9f3d-101ebdad975c/thumbnail.png",
+              "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/starting/423032f5-328c-4df8-bc88-3c16ae2ca306/dzinhozin.png"
             }
           }
         ],

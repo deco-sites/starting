@@ -11,7 +11,6 @@
       "description": "Check out our glossary for key terms in content management and web development.",
       "placement": "right"
     },
-
     {
       "__resolveType": "site/sections/Glossary/GlossaryPostList.tsx",
       "posts": {
@@ -24,6 +23,15 @@
     },
     {
       "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/sections/Seo/SeoV2.tsx",
+        "title": "deco.cx's Glossary ",
+        "description": "Check out our glossary for key terms in web development.",
+        "titleTemplate": "%s | deco.cx's Glossary "
+      }
     }
   ],
   "seo": {
