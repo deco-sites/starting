@@ -46,7 +46,7 @@ export default function Results({
   ],
 }: Props) {
   return (
-    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 p-6 md:p-10 flex flex-col gap-12 justify-center items-center bg-[#070D0D] border-[#0B1612] rounded-lg">
+    <div class="lg:mx-auto lg:max-w-[1440px] relative z-10 p-6 md:p-10 flex flex-col gap-16 lg:gap-20 justify-center items-center bg-[#070D0D] border-[#0B1612] rounded-lg">
       {title &&
         (
           <h2
@@ -61,7 +61,7 @@ export default function Results({
         {results.map((result) => (
           <div class="flex flex-col gap-4 flex-1 mb-4 lg:mb-0">
             <h3
-              class="font-albert-sans text-[80px] text-left font-medium text-white leading-none"
+              class="font-albert-sans text-[72px] text-left font-medium text-white leading-none"
               dangerouslySetInnerHTML={{
                 __html: result.title,
               }}
@@ -69,7 +69,7 @@ export default function Results({
             </h3>
             <hr class="border-[#C9CFCF]" />
             <div
-              class="font-albert-sans text-sm lg:text-base text-left text-white"
+              class="font-albert-sans text-[20px] text-left text-white"
               dangerouslySetInnerHTML={{
                 __html: result.description,
               }}

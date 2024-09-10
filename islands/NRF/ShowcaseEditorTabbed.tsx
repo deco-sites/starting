@@ -195,7 +195,7 @@ export const ShowcaseEditorTabbed = ({
             tabs.map((tab, index) => (
               <div
                 key={index}
-                class={`flex justify-center items-center w-[1000px] ${
+                class={`flex justify-center items-center w-[900px] ${
                   index !== selectedTab.value ? "hidden" : ""
                 }`}
               >
@@ -205,7 +205,7 @@ export const ShowcaseEditorTabbed = ({
                   width={600}
                   height={400}
                   preload={index === 0 ? true : false}
-                  class="w-[1000px]"
+                  class="w-[900px]"
                 />
               </div>
             ))}

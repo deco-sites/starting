@@ -143,7 +143,7 @@ export default function Testimonials({
       <div class="flex flex-col items-center gap-4">
         {title && (
           <h2
-            class="font-albert-sans text-3xl lg:text-4xl font-medium text-white text-center"
+            class="font-albert-sans text-3xl lg:text-5xl font-medium text-white text-center"
             dangerouslySetInnerHTML={{
               __html: title,
             }}
@@ -152,7 +152,7 @@ export default function Testimonials({
         )}
 
         {subtitle && (
-          <p class="font-albert-sans text-xl font-medium text-white text-center opacity-70">
+          <p class="font-albert-sans text-lg md:text-xl lg:text-2xl font-medium text-white text-center opacity-70">
             {subtitle}
           </p>
         )}

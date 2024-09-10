@@ -56,7 +56,7 @@ function MobileMenuDropdown({ icon, nested, title }: ColumnMenu) {
           />
           <div class="pb-[24px] flex items-center gap-2 text-white cursor-pointer hover:text-[#02F67C] transition duration-200 ease-in-out">
             <Icon id={icon} size={25} />
-            <p class="font-bold text-[16px]">{title}</p>
+            <p class="font-bold text-[13px]">{title}</p>
             <Icon
               id={"ChevronDown"}
               width={15}
@@ -71,7 +71,7 @@ function MobileMenuDropdown({ icon, nested, title }: ColumnMenu) {
                 <a
                   href={item.href}
                   target={item?.targetBlank ? "_blank" : "_self"}
-                  class="block px-[24px]  font-normal text-[16px] leading-[19.36px] text-white hover:text-[#02F67C] transition duration-200 ease-in-out"
+                  class="block px-[24px]  font-normal text-[13px] leading-[19.36px] text-white hover:text-[#02F67C] transition duration-200 ease-in-out"
                 >
                   {item.label}
                 </a>
@@ -99,7 +99,7 @@ function MobileMenuLink({ href, label, targetBlank, columns }: MenuLink) {
                   <a
                     href={item.href}
                     target={item?.targetBlank ? "_blank" : "_self"}
-                    class="block pr-[24px]  font-normal text-[16px] leading-[19.36px] text-white hover:text-[#02F67C] transition duration-200 ease-in-out"
+                    class="block pr-[24px]  font-normal text-[13px] leading-[19.36px] text-white hover:text-[#02F67C] transition duration-200 ease-in-out"
                   >
                     {item.label}
                   </a>
@@ -117,7 +117,7 @@ function MobileMenuLink({ href, label, targetBlank, columns }: MenuLink) {
       <a
         href={href}
         target={targetBlank ? "_blank" : "_self"}
-        class="block pr-[24px]  font-normal text-[16px] leading-[19.36px] text-white"
+        class="block pr-[24px]  font-normal text-[13px] leading-[19.36px] text-white"
       >
         {label}
       </a>
@@ -145,7 +145,7 @@ function MenuLink({ href, label, targetBlank, columns, ...props }: MenuLink) {
       <a
         target={targetBlank ? "_blank" : "_self"}
         href={href}
-        class="flex items-center h-full self-center font-normal text-[16px] bg-clip-text bg-linear-white-green bg-position-100 justify-center"
+        class="flex items-center h-full self-center font-normal text-[13px] bg-clip-text bg-linear-white-green bg-position-100 justify-center"
         style="background-size: 200%;"
       >
         {label}
@@ -247,7 +247,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             <a
               id="bt-click-signup"
               href={props.demo?.url}
-              class="flex items-center hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-lg md:transition md:ease-in-out md:duration-300"
+              class="flex items-center hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] font-medium text-[13px] max-h-[37px] px-4 py-2 rounded-lg md:transition md:ease-in-out md:duration-300"
             >
               {props.demo?.label}
             </a>
@@ -314,7 +314,7 @@ export default function Header({ menuLinks, ...props }: Props) {
                     <a
                       href={props.sign.url}
                       id="bt-click-signup"
-                      class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[16px] px-4 py-2 transition ease-in-out duration-300"
+                      class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[13px] px-4 py-2 transition ease-in-out duration-300"
                     >
                       {props.sign.label}
                     </a>
@@ -323,7 +323,7 @@ export default function Header({ menuLinks, ...props }: Props) {
                     <a
                       target={"_blank"}
                       href={props.gitUrl}
-                      class="flex items-center gap-2 opacity-80 text-white hover:text-[#02F67C] text-[16px] transition ease-in duration-200 justify-center"
+                      class="flex items-center gap-2 opacity-80 text-white hover:text-[#02F67C] text-[13px] transition ease-in duration-200 justify-center"
                       style="background-size: 200%;"
                     >
                       <svg
@@ -354,7 +354,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             /* <li>
             <a
               href={props.login.url}
-              class="flex gap-2 items-center text-[#02F67C] bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
+              class="flex gap-2 items-center text-[#02F67C] bg-[#113032] md:hover:text-[#fff] border-[#113032] border hover:bg-transparent font-medium text-[13px] max-h-[37px] px-4 py-2 rounded-full md:transition md:ease-in-out md:duration-300"
             >
               {props.login.label}
               <svg
@@ -382,7 +382,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             <a
               href={props.sign.url}
               id="bt-click-signup"
-              class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[16px] px-4 py-2 transition ease-in-out duration-300"
+              class="flex items-center text-[#b6b6b6] md:hover:text-[#fff] font-medium text-[13px] px-4 py-2 transition ease-in-out duration-300"
             >
               {props.sign.label}
             </a>
@@ -391,7 +391,7 @@ export default function Header({ menuLinks, ...props }: Props) {
             <a
               href={props.demo?.url}
               id="bt-click-signup"
-              class="flex items-center hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] font-medium text-[16px] max-h-[37px] px-4 py-2 rounded-lg md:transition md:ease-in-out md:duration-300"
+              class="flex items-center hover:shadow-[0_0_40px_0_rgba(2,246,124,0.3)] md:w-auto transition-all duration-300 ease-out border-[#02F67C] border-2 text-base text-[#0A2121] bg-[#02F67C] md:hover:bg-[#2FD180] font-medium text-[13px] max-h-[37px] px-4 py-2 rounded-lg md:transition md:ease-in-out md:duration-300"
             >
               {props.demo?.label}
             </a>
