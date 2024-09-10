@@ -865,7 +865,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/StartingCards.tsx",
-                "title": "<p>Fully extensible platform for any type of <span style=\"color: #02f67c\">custom software</span>.</p>",
+                "title": "<p>Fully extensible platform for any type of <span style=\"color: rgb(2, 246, 124)\">custom software</span></p>",
                 "cards": [
                   {
                     "href": "https://deco.new",
@@ -991,7 +991,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p>Evolve Your Business Continuously</p>",
+                "title": "<p><span style=\"color: #02f67c\">Evolve</span> Your Business Continuously</p>",
                 "tabs": [
                   {
                     "title": "Advanced SEO Settings",
@@ -1035,7 +1035,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p><span class=\"font-[argent-pixel] text-[#02F67C] font-normal\">Scale</span> Up Fast and Safely</p>",
+                "title": "<p><span style=\"color: #02f67c\">Scale</span> Up Fast and Safely</p>",
                 "tabs": [
                   {
                     "title": "Roles & Permissions",
