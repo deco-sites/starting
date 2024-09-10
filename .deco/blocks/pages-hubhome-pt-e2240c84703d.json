@@ -78,6 +78,13 @@
     },
     {
       "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "website/sections/Seo/SeoV2.tsx",
+        "noIndexing": true
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
