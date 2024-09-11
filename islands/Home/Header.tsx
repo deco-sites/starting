@@ -129,7 +129,7 @@ function MenuLink({ href, label, targetBlank, columns, ...props }: MenuLink) {
   if (columns && columns.length > 0) {
     return (
       <li
-        class="relative h-full grid text-white hover:text-[#02F67C] transition duration-200 ease-in-out"
+        class="relative h-full grid text-white text-[13px] hover:text-[#02F67C] transition duration-200 ease-in-out"
         {...props}
       >
         <Dropdown columns={columns} value={label} />

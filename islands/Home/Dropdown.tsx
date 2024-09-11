@@ -87,7 +87,7 @@ export function Dropdown({ columns, value, variant = "flat" }: Props) {
         for={value.toLocaleLowerCase()}
         onMouseEnter={() => updateInputRef(true)}
         onMouseLeave={() => updateInputRef(false)}
-        class={`group-hover/item:text-[#02F67C] z-10 md:py-1 font-normal text-[16px] flex items-center justify-center gap-[5px] cursor-pointer transition duration-300 ease-in-out z-50`}
+        class={`group-hover/item:text-[#02F67C] z-10 md:py-1 font-normal text-[13px] flex items-center justify-center gap-[5px] cursor-pointer transition duration-300 ease-in-out z-50`}
       >
         {value}
         <svg
@@ -119,7 +119,7 @@ export function Dropdown({ columns, value, variant = "flat" }: Props) {
                 {col.icon && col.title && (
                   <div class="pb-[24px] flex">
                     <Icon id={col.icon} size={20} />
-                    <p class="pl-[8px] font-bold text-[16px] text-white">
+                    <p class="pl-[8px] font-bold text-[13px] text-white">
                       {col.title}
                     </p>
                   </div>
