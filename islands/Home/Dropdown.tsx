@@ -30,7 +30,7 @@ function DropdownItem({ href, label, tag }: MenuLink) {
         href={href}
         class="flex flex-row items-center justify-between flex-grow p-2 hover:bg-black/5 rounded"
       >
-        <p class="font-sans not-italic font-normal text-[15px] text-[#fff] hover:scale-[97%] hover:text-[#02F67C] flex-grow flex gap-[8px] items-center whitespace-nowrap transition duration-300 ease-in-out">
+        <p class="font-sans not-italic font-normal text-[13px] text-[#FFFFFF] hover:scale-[97%] hover:text-[#02F67C] flex-grow flex gap-[8px] items-center whitespace-nowrap transition duration-300 ease-in-out">
           {label}
           {tag?.description && tag?.color && (
             <div
