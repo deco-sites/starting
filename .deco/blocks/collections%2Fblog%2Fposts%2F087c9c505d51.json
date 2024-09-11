@@ -12,6 +12,7 @@
     "seo": {
       "title": "What are microservices?",
       "description": "Microservices represent a significant shift from traditional monolithic architecture. Instead of building a single and unified application, microservices architecture divides an application into multiple, loosely coupled services. "
-    }
+    },
+    "extraProps": []
   }
 }
