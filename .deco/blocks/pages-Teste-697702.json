@@ -1237,7 +1237,7 @@
               },
               {
                 "__resolveType": "site/sections/New Landing/CarouselLinks.tsx",
-                "title": "<p>Check out our useful links and media features<br>to discover everything you didn’t know about <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">deco.cx</a>.</p>",
+                "title": "<p>Check out our useful links and media features<br>to discover everything you didn’t know about <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://deco.cx\">deco.cx</a>.</p>",
                 "cards": [
                   {
                     "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/18c44403-ce96-4243-8610-2b08249f25c7",

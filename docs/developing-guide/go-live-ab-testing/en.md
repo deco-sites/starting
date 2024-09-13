@@ -20,7 +20,7 @@ For the current site www.deco.cx, we will associate the new site with the subdom
 
 ### How to Do It:
 
-1 - Register a subdomain on [deco.cx](http://deco.cx)
+1 - Register a subdomain on [deco.cx](https://deco.cx)
 
 - [Doc](https://deco.cx/docs/en/getting-started/custom-domains/)
 

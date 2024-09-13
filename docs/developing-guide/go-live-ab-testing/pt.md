@@ -20,7 +20,7 @@ Meu site atual ``www.deco.cx``, vamos associar o novo site ao domínio ``store.d
 
 ### Como fazer:
 
-1 - Registrar um sub-domínio na [deco.cx](http://deco.cx)
+1 - Registrar um sub-domínio na [deco.cx](https://deco.cx)
 
 - [Doc](https://deco.cx/docs/en/getting-started/custom-domains/)
 

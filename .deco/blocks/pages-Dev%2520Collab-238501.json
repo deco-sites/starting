@@ -172,7 +172,7 @@
       "__resolveType": "site/sections/Home/TextHero.tsx",
       "subTitle": "<p><span>Se você acredita que sua empresa pode se beneficiar, solicite o agendamento.</span></p>",
       "pixelTitle": "<p></p>",
-      "title": "<p>O Dev Collab é <span style=\"color: #02f67c\">exclusivo para convidados e parceiros</span> da <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">deco</a>.<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://deco.cx\">cx</a>.</p>",
+      "title": "<p>O Dev Collab é <span style=\"color: #02f67c\">exclusivo para convidados e parceiros</span> da <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://deco.cx\">deco</a>.<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://deco.cx\">cx</a>.</p>",
       "ctas": [
         {
           "href": "https://forms.gle/xk8Hy7WWjnYxFqTs8",
