@@ -951,7 +951,7 @@
               },
               {
                 "__resolveType": "site/sections/Home/BuildShowcase.tsx",
-                "title": "<p>Everything You Need to <span style=\"color: #02f67c\">Build</span></p>",
+                "title": "<p>Everything You Need to <span style=\"color: rgb(2, 246, 124)\">Build</span></p>",
                 "tabs": [
                   {
                     "title": "CMS with Visual Editor",
@@ -1426,10 +1426,7 @@
     ]
   },
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx",
-    "description": "",
-    "title": "",
-    "type": "website"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
   "__resolveType": "website/pages/Page.tsx",
   "name": "Home"
