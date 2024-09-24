@@ -33,7 +33,7 @@ _Dados retornados da API Dog Facts sendo chamada no browser_
 Primeiro, vamos criar uma Section que renderizará os dados buscados da API. Crie
 a seção `DogFacts.tsx` na pasta sections/ do seu projeto.
 
-Se executarmos um http request para a API da Dog Fact veremos que ele retorna um
+Se executarmos um _HTTP request_ para a API da Dog Fact veremos que ele retorna um
 JSON no seguinte formato,
 
 > Abra no seu browser:
@@ -49,11 +49,11 @@ JSON no seguinte formato,
 }
 ```
 
-Perceba que a única coisa que nos importa são os facts, logo vamos criar nossa
-section preparada para receber esses facts re renderiza-los da maneira que
+Perceba que a única coisa que nos importa são os "facts", logo vamos criar nossa
+section preparada para receber esses facts e renderizá-los da maneira que
 desejarmos.
 
-Para isso, vamos criar um tipo `DoctFact` que contém apenas uma propriedade
+Para isso, vamos criar um tipo `DogFact` que contém apenas uma propriedade
 chamada `fact` que é a `string` representada pela mensagem.
 
 Vamos ver isso em ação criando uma nova Section:
@@ -83,7 +83,7 @@ export default function DogFacts({ title, dogFacts }: Props) {
 ```
 
 > Nesse momento podemos rodar o `deno task start` e verificar no nosso admin que
-> esse componente já consegue ser utilizado com dados estáticos, oque não faz
+> esse componente já consegue ser utilizado com dados estáticos, o que não faz
 > muito sentido para nosso caso de uso.
 
 ## 2. Criando o Loader e testando a Section
@@ -102,7 +102,7 @@ entrada da Section).
 2. Exporte uma função chamada `loader` dentro do mesmo arquivo da sua section.
 
 No nosso caso, vamos deixar configurável qual número de facts que vamos mostrar
-no nosso componente. Perceba que agora, o que aparecerá parece ser configurado
+no nosso componente. Perceba que agora, o que aparecerá para ser configurado
 não será mais as props da section mas sim as props do seu loader.
 
 ```tsx
