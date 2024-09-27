@@ -582,6 +582,13 @@ const tableOfContents: TableOfContents = [
         },
         slug: "headless-cms",
       },
+      {
+        title: {
+          pt: "Integração GTM",
+          en: "GTM Integration",
+        },
+        slug: "gtm",
+      },
     ],
   },
   {
