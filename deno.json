@@ -1,29 +1,18 @@
 {
   "imports": {
-    "site/": "./",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.8/",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.95.6/",
-    "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.95.6/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.56.18/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
-    "preact": "https://esm.sh/preact@10.19.6",
-    "preact/": "https://esm.sh/preact@10.19.6/",
-    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.4.0",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
-    "std/": "https://deno.land/std@0.190.0/",
-    "daisyui": "npm:daisyui@4.6.0",
-    "deno-dom": "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts",
-    "typography": "npm:@tailwindcss/typography@0.5.9",
-    "motion": "https://esm.sh/motion@10.16.4",
-    "partytown/": "https://deno.land/x/partytown@0.4.8/",
-    "@floating-ui/react": "https://esm.sh/@floating-ui/react@0.24.3?external=preact/compat,tabbable,@floating-ui/react-dom,react,react-dom",
+    "$live/": "https://denopkg.com/deco-cx/deco@1.104.2/",
+    "$store/": "./",
     "@cliffy/prompt": "jsr:@cliffy/prompt@^1.0.0-rc.5",
     "@core/asyncutil": "jsr:@core/asyncutil@^1.0.2",
-    "@deco/durable": "jsr:@deco/durable@^0.5.3",
-    "@deco/warp": "jsr:@deco/warp@0.3.6",
+    "@deco/deco": "jsr:@deco/deco@1.104.2",
+    "@deco/dev": "jsr:@deco/dev@1.104.0",
+    "@deco/durable": "jsr:@deco/durable@0.5.3",
+    "@deco/warp": "jsr:@deco/warp@0.3.8",
+    "@floating-ui/react": "https://esm.sh/@floating-ui/react@0.24.3?external=preact/compat,tabbable,@floating-ui/react-dom,react,react-dom",
     "@hono/hono": "jsr:@hono/hono@^4.5.4",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "@std/assert": "jsr:@std/assert@^1.0.2",
     "@std/async": "jsr:@std/async@^0.224.1",
     "@std/cli": "jsr:@std/cli@^1.0.3",
@@ -41,10 +30,24 @@
     "@std/semver": "jsr:@std/semver@^0.224.3",
     "@std/streams": "jsr:@std/streams@^1.0.0",
     "@std/testing": "jsr:@std/testing@^1.0.0",
+    "@supabase/supabase-js": "jsr:@supabase/supabase-js@^2.45.4",
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.59.17/",
+    "daisyui": "npm:daisyui@4.6.0",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.8/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.104.2/",
+    "deno-dom": "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
+    "hightlight.js": "npm:highlight.js@11.10.0",
+    "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
+    "motion": "https://esm.sh/motion@10.16.4",
+    "partytown/": "https://deno.land/x/partytown@0.4.8/",
+    "preact": "npm:preact@10.23.1",
+    "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
     "simple-git": "npm:simple-git@^3.25.0",
-    "hightlight.js": "npm:highlight.js@11.10.0"
+    "site/": "./",
+    "std/": "https://deno.land/std@0.190.0/",
+    "typography": "npm:@tailwindcss/typography@0.5.9"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -56,11 +59,12 @@
     "check": "deno fmt && deno lint && deno check dev.ts main.ts",
     "install": "deno eval 'import \"deco/scripts/apps/install.ts\"'",
     "uninstall": "deno eval 'import \"deco/scripts/apps/uninstall.ts\"'",
-    "bundle": "deno eval 'import \"deco/scripts/apps/bundle.ts\"' site",
+    "bundle": "deno run -A jsr:@deco/deco/scripts/bundle site",
     "cache_clean": "rm deno.lock; deno cache -r main.ts",
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
-    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts"
+    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts",
+    "reload": "deno cache -r https://deco.cx/run"
   },
   "githooks": {
     "pre-commit": "check"
@@ -86,5 +90,6 @@
     "jsx": "react-jsx",
     "experimentalDecorators": true,
     "jsxImportSource": "preact"
-  }
+  },
+  "lock": false
 }

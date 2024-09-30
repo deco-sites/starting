@@ -1,39 +1,33 @@
 import { asset, Head } from "$fresh/runtime.ts";
-import { LoaderReturnType } from "deco/types.ts";
 import { MDFileContent } from "site/components/ui/Types.tsx";
-
 import { frontMatter, gfm } from "site/components/utils/markdown.ts";
-
+import { type LoaderReturnType } from "@deco/deco";
 interface FrontMatterContent {
-  body: string;
-  attrs: Record<string, unknown>;
+    body: string;
+    attrs: Record<string, unknown>;
 }
-
 interface MDContent {
-  content: FrontMatterContent;
+    content: FrontMatterContent;
 }
-
-export default function DocsPage(
-  props: { data: LoaderReturnType<MDFileContent> },
-) {
-  let description;
-  const frontMatterContent = frontMatter(props.data.content);
-  const { attrs } = frontMatterContent;
-  if (attrs?.description) {
-    description = String(attrs.description);
-  }
-  return (
-    <>
+export default function DocsPage(props: {
+    data: LoaderReturnType<MDFileContent>;
+}) {
+    let description;
+    const frontMatterContent = frontMatter(props.data.content);
+    const { attrs } = frontMatterContent;
+    if (attrs?.description) {
+        description = String(attrs.description);
+    }
+    return (<>
       <Head>
         <title>
           {props.data.title
             ? `${props.data.title} | deco.cx docs`
             : "deco.cx docs"}
         </title>
-        <link rel="stylesheet" href={`/docs.css`} />
-        {description && <meta name="description" content={description} />}
-        <style
-          dangerouslySetInnerHTML={{
+        <link rel="stylesheet" href={`/docs.css`}/>
+        {description && <meta name="description" content={description}/>}
+        <style dangerouslySetInnerHTML={{
             __html: `
           /* latin-ext */
           @font-face {
@@ -72,54 +66,35 @@ export default function DocsPage(
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
           }
       `,
-          }}
-        >
+        }}>
         </style>
       </Head>
       <div class="flex flex-col min-h-screen">
         <div class="flex-1 flex flex-col gap-6 px-4">
-          {props.data.title && (
-            <h1 class="text-white text-[40px] font-semibold leading-[48px]">
+          {props.data.title && (<h1 class="text-white text-[40px] font-semibold leading-[48px]">
               {props.data.title}
-            </h1>
-          )}
+            </h1>)}
           <div class="max-w-full lg:max-w-screen-lg flex gap-6">
-            <Content content={frontMatterContent} />
+            <Content content={frontMatterContent}/>
           </div>
         </div>
       </div>
-    </>
-  );
+    </>);
 }
-
 function Content(props: MDContent) {
-  const { body, attrs } = props.content;
-  const _html = gfm.render(body, {
-    allowIframes: true,
-    allowedAttributes: { "div": ["style"] },
-  });
-  const html = _html.replaceAll(
-    /( href="https:\/\/(?!www.deco)).*?/g,
-    ' target="_blank"$1',
-  );
-
-  return (
-    <main class="py-2 overflow-hidden">
-      {attrs.since && (
-        <div class="mb-4">
+    const { body, attrs } = props.content;
+    const _html = gfm.render(body, {
+        allowIframes: true,
+        allowedAttributes: { "div": ["style"] },
+    });
+    const html = _html.replaceAll(/( href="https:\/\/(?!www.deco)).*?/g, ' target="_blank"$1');
+    return (<main class="py-2 overflow-hidden">
+      {attrs.since && (<div class="mb-4">
           <span class="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-2 rounded dark:bg-[#FFFFFF14] dark:text-[#02F67C]">
             Version: {attrs.since}
           </span>
-        </div>
-      )}
-      <div
-        data-color-mode="dark"
-        data-light-theme="light"
-        data-dark-theme="dark"
-        class="markdown-body !text-[#F9FAFB] !bg-base-700"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+        </div>)}
+      <div data-color-mode="dark" data-light-theme="light" data-dark-theme="dark" class="markdown-body !text-[#F9FAFB] !bg-base-700" dangerouslySetInnerHTML={{ __html: html }}/>
       <script src={asset("/docs/js/copy-snippets.min.js")}></script>
-    </main>
-  );
+    </main>);
 }

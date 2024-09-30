@@ -14,7 +14,7 @@ the network. It integrates seamlessly with the `hx-on:` handlers of HTMX.
 ### Importing
 
 ```typescript
-import { useScript } from "deco/hooks/useScript.ts";
+import { useScript } from "@deco/deco/hooks";
 ```
 
 ### Parameters
@@ -39,7 +39,7 @@ In this example, `useScript` is used to inline a simple script that logs a
 message when the window loads.
 
 ```tsx
-import { useScript } from "deco/hooks/useScript.ts";
+import { useScript } from "@deco/deco/hooks";
 
 const onLoad = () => {
   console.log("Window loaded");
@@ -66,7 +66,7 @@ In this example, `useScript` is used to create a minified event handler for an
 `hx-on:click` attribute that changes the text of a button when clicked.
 
 ```tsx
-import { useScript } from "deco/hooks/useScript.ts";
+import { useScript } from "@deco/deco/hooks";
 
 const onClick = () => {
   event!.currentTarget.innerText = "Clicked!";

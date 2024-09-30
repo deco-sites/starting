@@ -15,7 +15,7 @@ perfeitamente com os manipuladores `hx-on:` do HTMX.
 ### Importação
 
 ```typescript
-import { useScript } from "deco/hooks/useScript.ts";
+import { useScript } from "@deco/deco/hooks";
 ```
 
 ### Parâmetros
@@ -40,7 +40,7 @@ Neste exemplo, `useScript` é usado para inserir um script simples que registra
 uma mensagem quando a janela é carregada.
 
 ```tsx
-import { useScript } from "deco/hooks/useScript.ts";
+import { useScript } from "@deco/deco/hooks";
 
 const onLoad = () => {
   console.log("Window loaded");
@@ -68,7 +68,7 @@ minificado para um atributo `hx-on:click` que altera o texto de um botão quando
 clicado.
 
 ```tsx
-import { useScript } from "deco/hooks/useScript.ts";
+import { useScript } from "@deco/deco/hooks";
 
 const onClick = () => {
   event!.currentTarget.innerText = "Clicked!";
