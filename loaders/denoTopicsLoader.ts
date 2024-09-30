@@ -1,4 +1,4 @@
-import type { LoaderContext } from "deco/types.ts";
+import type { LoaderContext } from "@deco/deco";
 import type {
   ChildTopic,
   SubTopic,
@@ -46,14 +46,16 @@ async function fetchAppsReposWithReadme() {
     return dirsWithReadme;
   }
 
-  const promiseSettled = await Promise.allSettled(data.map(async ({ path, type }) => {
-    if (type === "dir" && !!path) {
-      const data = await fetch(
-        `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${path}/README.md`,
-      );
-      return { data, path };
-    }
-  }));
+  const promiseSettled = await Promise.allSettled(
+    data.map(async ({ path, type }) => {
+      if (type === "dir" && !!path) {
+        const data = await fetch(
+          `${GH_USER_CONTENT_URL}/${OWNER}/${REPO}/master/${path}/README.md`,
+        );
+        return { data, path };
+      }
+    }),
+  );
 
   return promiseSettled.filter(isValidItem).map((promise) =>
     promise.value.path

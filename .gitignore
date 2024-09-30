@@ -78,3 +78,4 @@ deno.*.tmp
 # deco .metadata
 .metadata/
 .deco/metadata/*
+static/tailwind.css

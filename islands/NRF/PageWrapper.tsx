@@ -1,13 +1,9 @@
-import type { Section } from "deco/blocks/section.ts";
-
+import { type Section } from "@deco/deco/blocks";
 export interface Props {
-  sections: Section[];
+    sections: Section[];
 }
-
 export default function PageWrapper({ sections }: Props) {
-  return (
-    <div class="bg-[#02F67C]">
-      {sections.map(({ Component, props }) => <Component {...props} />)}
-    </div>
-  );
+    return (<div class="bg-[#02F67C]">
+      {sections.map(({ Component, props }) => <Component {...props}/>)}
+    </div>);
 }

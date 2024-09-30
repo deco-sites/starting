@@ -1,13 +1,9 @@
-import { Section } from "deco/blocks/section.ts";
-
+import { type Section } from "@deco/deco/blocks";
 export interface Props {
-  sections: Section[];
+    sections: Section[];
 }
-
 export default function SectionList({ sections }: Props) {
-  return (
-    <>
-      {sections.map((section) => <section.Component {...section.props} />)}
-    </>
-  );
+    return (<>
+      {sections.map((section) => <section.Component {...section.props}/>)}
+    </>);
 }

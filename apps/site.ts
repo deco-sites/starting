@@ -1,4 +1,4 @@
-import { App, AppContext as AC } from "$live/mod.ts";
+import { AppContext as AC, App } from "@deco/deco";
 import std, { Props } from "apps/compat/std/mod.ts";
 
 import manifest, { Manifest } from "../manifest.gen.ts";
@@ -22,3 +22,4 @@ export type SiteApp = ReturnType<typeof Site>;
 export type AppContext = AC<SiteApp>;
 export { onBeforeResolveProps } from "apps/compat/$live/mod.ts";
 export { Preview } from "apps/website/mod.ts";
+
