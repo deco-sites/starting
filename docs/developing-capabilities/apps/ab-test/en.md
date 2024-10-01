@@ -118,3 +118,36 @@ Data is transferred in real-time, no more waiting a day or two to analyze them.
 ![Experiments screen](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6ddc740d-9590-431b-b1e7-f0a0130bc5f6)
 
 ![Experiments screen](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cc637298-e938-494c-9253-b7d1bef6f99a)
+
+## GA4 Setup for A/B Testing
+
+To ensure that customers consistently see the same version when browsing an A/B Test on deco.cx, we use a cookie called _deco_segment_.
+
+This cookie lasts for 30 days by default and can be used to determine which version the user is in.
+
+All data sent to the deco.cx Analytics is already segmented by version.
+
+However, for this to also occur in GA4, it is necessary to check this cookie and segment the events based on that information.
+
+ - Example of cookie:
+```
+deco_segment=TdCJTIyYWN0aXZlJTIyJTNBJTVCJTVEJTJDJTIyaW5hY3RpdmVEcmF3biUyMiUzQSU1QiUyMlRlc3RlJTIwVGF2YW5vJTIyJTVEJTdE
+```
+
+ - To extract readable data from this hash, use the following function:
+```javascript
+getData(myCookie) {
+	return JSON.parse(decodeURIComponent(atob(myCookie)))
+}
+
+```
+
+ - This will return an object like:
+```json
+{
+	active: [],
+	inactiveDrawn: ['Teste Tavano']
+}
+```
+
+In this way, within GTM you can know whether the user is part of Test X or not and send the events in a segmented manner.

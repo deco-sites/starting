@@ -124,3 +124,35 @@ analisá-los.
 ![Experiments screen](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6ddc740d-9590-431b-b1e7-f0a0130bc5f6)
 
 ![Experiments screen](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cc637298-e938-494c-9253-b7d1bef6f99a)
+
+## Setup do GA4 para Teste A/B
+
+Para garantir que os clientes vejam sempre na mesma versão ao navegar em um Teste A/B na deco.cx, utilizamos um cookie, chamado _deco_segment_.
+
+Esse cookie dura por padrão 30 dias e pode ser utilizado para entender em qual versão o usuário está.
+
+Todos os dados que vão para o Analytics da deco.cx, já são separados por segmento.
+
+Porém, para que isso também aconteça no GA4, é necessário verificar esse cookie e segmentar os eventos com base nessa informação.
+
+ - Exemplo de cookie
+```
+deco_segment=TdCJTIyYWN0aXZlJTIyJTNBJTVCJTVEJTJDJTIyaW5hY3RpdmVEcmF3biUyMiUzQSU1QiUyMlRlc3RlJTIwVGF2YW5vJTIyJTVEJTdE
+```
+
+ - Para extrair o dado legível deste hash, utilize a função:
+```javascript
+getData(myCookie) {
+	return JSON.parse(decodeURIComponent(atob(myCookie)))
+}
+```
+
+ - Isso irá devolver um objeto como:
+```json
+{
+	active: [],
+	inactiveDrawn: ['Teste Tavano']
+}
+```
+
+Desta forma, no GTM você tem a informação se o usuário está ou não no Teste X e pode enviar os eventos de forma segmentada.
