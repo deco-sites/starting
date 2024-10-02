@@ -14,6 +14,7 @@ Let's explore each step:
 - Editing your variant
 - Creating events and collecting data
 - Funnel and results
+- GA4 Setup for A/B Testing
 
 ## Creating an Experiment
 
@@ -121,7 +122,7 @@ Data is transferred in real-time, no more waiting a day or two to analyze them.
 
 ## GA4 Setup for A/B Testing
 
-To ensure that customers consistently see the same version when browsing an A/B Test on deco.cx, we use a cookie called _deco_segment_.
+To ensure data consistency while navigating an A/B test on deco.cx, we use a cookie called deco_segment.
 
 This cookie lasts for 30 days by default and can be used to determine which version the user is in.
 
@@ -150,4 +151,4 @@ getData(myCookie) {
 }
 ```
 
-In this way, within GTM you can know whether the user is part of Test X or not and send the events in a segmented manner.
+This way, in GTM, you can identify whether the user is participating in Test X, allowing for the segmented and accurate dispatch of events.

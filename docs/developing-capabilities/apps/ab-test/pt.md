@@ -127,7 +127,7 @@ analisá-los.
 
 ## Setup do GA4 para Teste A/B
 
-Para garantir que os clientes vejam sempre na mesma versão ao navegar em um Teste A/B na deco.cx, utilizamos um cookie, chamado _deco_segment_.
+Para assegurar a consistência dos dados fornecidos fornecidos ao navegar em um Teste A/B na deco.cx, utilizamos um cookie, chamado _deco_segment_.
 
 Esse cookie dura por padrão 30 dias e pode ser utilizado para entender em qual versão o usuário está.
 
@@ -155,4 +155,4 @@ getData(myCookie) {
 }
 ```
 
-Desta forma, no GTM você tem a informação se o usuário está ou não no Teste X e pode enviar os eventos de forma segmentada.
+Dessa forma, no GTM, você consegue identificar se o usuário está participando do Teste X, permitindo o envio de eventos de forma segmentada e precisa.
