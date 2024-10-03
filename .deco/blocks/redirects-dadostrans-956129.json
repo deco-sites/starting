@@ -1,0 +1,8 @@
+{
+  "redirect": {
+    "from": "/dadostransferencia",
+    "to": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/starting/13d3c124-64f6-4ae2-b68f-b7bbe7a7b051/deco_Transferencia.pdf",
+    "type": "temporary"
+  },
+  "__resolveType": "website/loaders/redirect.ts"
+}
