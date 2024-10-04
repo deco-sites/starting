@@ -1,38 +1,30 @@
-import { LoaderReturnType } from "deco/types.ts";
 import {
   getBlogPath,
   PostList,
   SupportedLocales,
 } from "site/components/utils/Blog.ts";
-
+import { type LoaderReturnType } from "@deco/deco";
 export type PathObj = {
   url: string;
 };
-
 export type PropNull = {
   ignoreProp?: string;
 };
-
 export type Props = {
   postList: LoaderReturnType<PostList>;
   page: LoaderReturnType<PathObj>;
   backToBlog?: string;
 };
-
 export default function BlogPostHeader(props: Props) {
   const url = props.page.url;
   const postsList = props.postList;
   const locale = url.split("/")[1] as SupportedLocales;
   const backToBlog = props.backToBlog || "Voltar para o blog";
-
-  const post = postsList.posts.filter(
-    (x) => getBlogPath(x.path, locale) === url,
-  )[0];
-
+  const post =
+    postsList.posts.filter((x) => getBlogPath(x.path, locale) === url)[0];
   if (!post) {
     return <div>Post not found.</div>;
   }
-
   return (
     <section class="max-w-2xl w-full px-5 md:px-0 mx-auto pt-16">
       <div class="mb-8 sm:mb-11 mt-16">

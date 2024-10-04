@@ -127,32 +127,40 @@ analisá-los.
 
 ## Setup do GA4 para Teste A/B
 
-Para assegurar a consistência dos dados fornecidos fornecidos ao navegar em um Teste A/B na deco.cx, utilizamos um cookie, chamado _deco_segment_.
+Para assegurar a consistência dos dados fornecidos fornecidos ao navegar em um
+Teste A/B na deco.cx, utilizamos um cookie, chamado _deco_segment_.
 
-Esse cookie dura por padrão 30 dias e pode ser utilizado para entender em qual versão o usuário está.
+Esse cookie dura por padrão 30 dias e pode ser utilizado para entender em qual
+versão o usuário está.
 
-Todos os dados que vão para o Analytics da deco.cx, já são separados por segmento.
+Todos os dados que vão para o Analytics da deco.cx, já são separados por
+segmento.
 
-Porém, para que isso também aconteça no GA4, é necessário verificar esse cookie e segmentar os eventos com base nessa informação.
+Porém, para que isso também aconteça no GA4, é necessário verificar esse cookie
+e segmentar os eventos com base nessa informação.
 
- - Exemplo de cookie
+- Exemplo de cookie
+
 ```
 deco_segment=TdCJTIyYWN0aXZlJTIyJTNBJTVCJTVEJTJDJTIyaW5hY3RpdmVEcmF3biUyMiUzQSU1QiUyMlRlc3RlJTIwVGF2YW5vJTIyJTVEJTdE
 ```
 
- - Para extrair o dado legível deste hash, utilize a função:
+- Para extrair o dado legível deste hash, utilize a função:
+
 ```javascript
 getData(myCookie) {
 	return JSON.parse(decodeURIComponent(atob(myCookie)))
 }
 ```
 
- - Isso irá devolver um objeto como:
+- Isso irá devolver um objeto como:
+
 ```json
 {
-	active: [],
-	inactiveDrawn: ['Teste Tavano']
+  "active": [],
+  "inactiveDrawn": ["Teste Tavano"]
 }
 ```
 
-Dessa forma, no GTM, você consegue identificar se o usuário está participando do Teste X, permitindo o envio de eventos de forma segmentada e precisa.
+Dessa forma, no GTM, você consegue identificar se o usuário está participando do
+Teste X, permitindo o envio de eventos de forma segmentada e precisa.

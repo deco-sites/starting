@@ -5,10 +5,8 @@ import SearchButton from "./SearchButton.tsx";
 import { JSX } from "preact";
 import Drawer from "site/components/ui/Drawer.tsx";
 import Breadcrumb from "site/components/decohelp/pages/ui/BreadCrumb/Breadcrumb.tsx";
-import { SectionProps } from "deco/mod.ts";
-
+import { type SectionProps } from "@deco/deco";
 const DOCS_DRAWER_ID = "deco-docs-drawer";
-
 export interface SidebarContent {
   /** @description Icon for closing the mobile menu */
   iconMenuClose: LiveImage;
@@ -25,7 +23,6 @@ export interface SidebarContent {
   LinkSubtitle?: string;
   Topics?: Array<Topic>;
 }
-
 export interface Topic {
   label?: string;
   Image?: LiveImage;
@@ -33,7 +30,6 @@ export interface Topic {
   LinkTopic?: string;
   SubTopics: Array<SubTopic>;
 }
-
 export interface SubTopic {
   label: string;
   fontWeight?:
@@ -57,7 +53,6 @@ export interface SubTopic {
   SidebarLink: string;
   NestedTopics?: Array<ChildTopic>;
 }
-
 export interface ChildTopic {
   label: string;
   fontWeight?:
@@ -80,16 +75,10 @@ export interface ChildTopic {
     | "unset";
   SidebarLink: string;
 }
-
-const isTopicActive = (
-  openTopicIndex: number,
-  index: number,
-): boolean => {
+const isTopicActive = (openTopicIndex: number, index: number): boolean => {
   const isOpen = openTopicIndex === index;
-
   return isOpen;
 };
-
 const isSubTopicActive = (
   currentSlug: string | null,
   subTopic: SubTopic,
@@ -98,7 +87,6 @@ const isSubTopicActive = (
   const isActiveSubTopic = currentSlug === subTopicSlug;
   return isActiveSubTopic;
 };
-
 function SidebarItem(props: JSX.IntrinsicElements["a"]) {
   return (
     <a
@@ -109,12 +97,7 @@ function SidebarItem(props: JSX.IntrinsicElements["a"]) {
     />
   );
 }
-
-function AsideLinks({
-  topics,
-  subtitle,
-  linkSubtitle,
-}: {
+function AsideLinks({ topics, subtitle, linkSubtitle }: {
   topics: Topic[];
   subtitle: string;
   linkSubtitle: string;
@@ -124,7 +107,6 @@ function AsideLinks({
   const [openSubTopicIndex, setOpenSubTopicIndex] = useState<number | null>(
     null,
   );
-
   const toggleTopicMenu = (index: number) => {
     if (openTopicIndex === index) {
       setOpenTopicIndex(null);
@@ -132,67 +114,53 @@ function AsideLinks({
       setOpenTopicIndex(index);
     }
   };
-
   useEffect(() => {
     const currentPath = window.location.pathname;
-
     topics.forEach((topic, index) => {
-      const isActive = topic.SubTopics.some(
-        (subTopic, subTopicIndex) => {
-          if (
-            currentPath.endsWith(subTopic.SidebarLink?.toLowerCase())
-          ) {
-            const hasNestedTopics = subTopic.NestedTopics
-              ? subTopic.NestedTopics?.length > 0
-              : false;
-            if (hasNestedTopics) setOpenSubTopicIndex(subTopicIndex);
-            setCurrentSlug(subTopic.SidebarLink?.toLowerCase());
-            return true;
-          }
-
-          const nestedTopicOpened = subTopic.NestedTopics?.some((
-            childTopic,
-          ) => {
-            if (currentPath.endsWith(childTopic.SidebarLink?.toLowerCase())) {
-              setCurrentSlug(childTopic.SidebarLink?.toLowerCase());
-              return true;
-            }
-            return false;
-          });
-
-          if (nestedTopicOpened) {
+      const isActive = topic.SubTopics.some((subTopic, subTopicIndex) => {
+        if (currentPath.endsWith(subTopic.SidebarLink?.toLowerCase())) {
+          const hasNestedTopics = subTopic.NestedTopics
+            ? subTopic.NestedTopics?.length > 0
+            : false;
+          if (hasNestedTopics) {
             setOpenSubTopicIndex(subTopicIndex);
+          }
+          setCurrentSlug(subTopic.SidebarLink?.toLowerCase());
+          return true;
+        }
+        const nestedTopicOpened = subTopic.NestedTopics?.some((childTopic) => {
+          if (currentPath.endsWith(childTopic.SidebarLink?.toLowerCase())) {
+            setCurrentSlug(childTopic.SidebarLink?.toLowerCase());
             return true;
           }
           return false;
-        },
-      );
+        });
+        if (nestedTopicOpened) {
+          setOpenSubTopicIndex(subTopicIndex);
+          return true;
+        }
+        return false;
+      });
       if (isActive) {
         setOpenTopicIndex(index);
       }
     });
   }, []);
-
   const subtitleSlug = linkSubtitle?.toLowerCase();
-
   const firstTopic = topics[0];
   const firstSubTopic = firstTopic?.SubTopics?.[0];
   const firstNestedTopic = firstSubTopic?.NestedTopics?.[0];
-
   const fontWeightSubtopic = {
     fontWeight: firstSubTopic?.fontWeight || "normal",
   };
-
   const fontWeightChildtopic = {
     fontWeight: firstNestedTopic?.fontWeight || "normal",
   };
-
   function getFontWeightStyle(fontWeightValue: string) {
     return {
       fontWeight: fontWeightValue,
     };
   }
-
   return (
     <>
       <SearchButton />
@@ -214,10 +182,7 @@ function AsideLinks({
           </li>
         )}
         {topics.map((topic, index) => {
-          const isActive = isTopicActive(
-            openTopicIndex ?? 0,
-            index,
-          );
+          const isActive = isTopicActive(openTopicIndex ?? 0, index);
           return (
             <ul key={index} class="flex flex-col gap-2">
               <li>
@@ -264,11 +229,8 @@ function AsideLinks({
                       currentSlug,
                       subTopic,
                     );
-
                     return (
-                      <li
-                        key={subTopicIndex}
-                      >
+                      <li key={subTopicIndex}>
                         <SidebarItem
                           href={subTopic.SidebarLink}
                           aria-selected={isActiveSubTopic}
@@ -300,9 +262,7 @@ function AsideLinks({
                                 onClick={(event) => {
                                   event.stopPropagation();
                                   event.preventDefault();
-                                  if (
-                                    openSubTopicIndex === subTopicIndex
-                                  ) {
+                                  if (openSubTopicIndex === subTopicIndex) {
                                     setOpenSubTopicIndex(null);
                                   } else {
                                     setOpenSubTopicIndex(subTopicIndex);
@@ -355,33 +315,27 @@ function AsideLinks({
     </>
   );
 }
-
 export function loader(props: SidebarContent, req: Request) {
   const url = new URL(req.url);
   const [base, lang, ...pathSegments] = url.pathname.split("/").filter(Boolean);
-
   const breadcrumbItems = pathSegments.map((segment, index) => {
     const path = pathSegments.slice(0, index + 1).join("/");
-
     return {
       name: segment.replace("-", " "),
       href: new URL(`/${base}/${lang}/${path}`, req.url).href,
     };
   });
-
   return {
     ...props,
     breadcrumbItems,
     lang,
   };
 }
-
-export default function Sidebar({
-  Subtitle,
-  LinkSubtitle,
-  Topics,
-  breadcrumbItems,
-}: SectionProps<typeof loader>) {
+export default function Sidebar(
+  { Subtitle, LinkSubtitle, Topics, breadcrumbItems }: SectionProps<
+    typeof loader
+  >,
+) {
   return (
     <div
       class={`flex flex-col w-full mx-auto max-w-[1440px] lg:top-[140px] top-[103px] lg:mb-[40px] lg:sticky`}
@@ -426,9 +380,7 @@ export default function Sidebar({
       />
 
       {/* Desktop Aside */}
-      <aside
-        class={`w-[300px] h-full hidden lg:flex flex-col gap-10`}
-      >
+      <aside class={`w-[300px] h-full hidden lg:flex flex-col gap-10`}>
         <AsideLinks
           topics={Topics ?? []}
           subtitle={Subtitle ?? ""}

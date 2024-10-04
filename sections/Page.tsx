@@ -1,11 +1,9 @@
-import { Section } from "deco/blocks/section.ts";
-
+import { type Section } from "@deco/deco/blocks";
 export interface SectionProps {
   SectionSidebar: Section;
   SectionContent: Section;
   SectionOnThisPage: Section;
 }
-
 export default function (props: SectionProps) {
   return (
     <section class="bg-base-700">
@@ -16,9 +14,7 @@ export default function (props: SectionProps) {
         <div class="lg:max-w-[736px]">
           <props.SectionContent.Component {...props.SectionContent.props} />
         </div>
-        <props.SectionOnThisPage.Component
-          {...props.SectionOnThisPage.props}
-        />
+        <props.SectionOnThisPage.Component {...props.SectionOnThisPage.props} />
       </div>
     </section>
   );
