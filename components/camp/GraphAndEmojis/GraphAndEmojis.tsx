@@ -1,10 +1,9 @@
 import Graph from "./Graph/Graph.tsx";
 import Icon from "../ui/Icon.tsx";
-import type { SectionProps } from "deco/mod.ts";
 import EmojisCommunity from "./EmojisCommunity.tsx";
 import type { Props as EmojisCommunityProps } from "./EmojisCommunity.tsx";
 import { Secret } from "apps/website/loaders/secret.ts";
-
+import { type SectionProps } from "@deco/deco";
 export interface Props {
   title: string;
   /**
@@ -18,7 +17,6 @@ export interface Props {
   };
   emojiCommunity: EmojisCommunityProps;
 }
-
 const BASE_PROPS = {
   title: "Growing community",
   subTitle:
@@ -34,33 +32,35 @@ const BASE_PROPS = {
     buttonHref: "#",
   },
 };
-
 const discordToken = Deno.env.get("DISCORD_TOKEN");
-export async function loader({ props }: { props: Props }, _req: Request) {
+export async function loader({ props }: {
+  props: Props;
+}, _req: Request) {
   const token = props.graph.tokenDiscord.get() ?? discordToken;
   const server = props.graph.IdGuild;
-
   interface MemberGuid {
-    user: { id: string };
+    user: {
+      id: string;
+    };
     joined_at: string; // Certifique-se de que joined_at seja do tipo string
     roles?: string[];
   }
-
   const apiUrl = `https://discord.com/api/guilds/${server}/members`;
-
   const allMembers: Array<MemberGuid> = [];
   let hasMore = true;
   let after: string | null = null;
   let totalMembers = 0;
-
-  const membersByMonth: { [month: string]: { count: number; total: number } } =
-    {};
+  const membersByMonth: {
+    [month: string]: {
+      count: number;
+      total: number;
+    };
+  } = {};
   let sortedMembersByMonth: {
     month: string;
     count: number;
     total: number;
   }[] = [];
-
   try {
     while (hasMore) {
       const responseM: Array<MemberGuid> = await fetch(
@@ -72,7 +72,6 @@ export async function loader({ props }: { props: Props }, _req: Request) {
           },
         },
       ).then((r) => r.json());
-
       if (responseM && responseM.length > 0) {
         responseM.forEach((member: MemberGuid) => {
           allMembers.push({
@@ -84,7 +83,6 @@ export async function loader({ props }: { props: Props }, _req: Request) {
             totalMembers++;
           }
         });
-
         if (responseM.length < 1000) {
           hasMore = false;
         } else {
@@ -94,17 +92,13 @@ export async function loader({ props }: { props: Props }, _req: Request) {
         hasMore = false;
       }
     }
-
     // Agrupar membros por mês
     allMembers.forEach((member) => {
       const joinedDate = new Date(member.joined_at);
       const year = joinedDate.getFullYear();
-
       if (year >= 2023) {
         const monthKey = `${year}-${joinedDate.getMonth() + 1}`;
-
         totalMembers--;
-
         if (membersByMonth[monthKey]) {
           membersByMonth[monthKey].count++;
           membersByMonth[monthKey].total = allMembers.length - totalMembers;
@@ -116,14 +110,12 @@ export async function loader({ props }: { props: Props }, _req: Request) {
         }
       }
     });
-
     // Converter o objeto para um array de objetos
     sortedMembersByMonth = Object.keys(membersByMonth).map((key) => ({
       month: key,
       count: membersByMonth[key].count,
       total: membersByMonth[key].total,
     }));
-
     // Ordenar o array por data
     sortedMembersByMonth.sort((a, b) =>
       new Date(a.month).getTime() - new Date(b.month).getTime()
@@ -131,24 +123,15 @@ export async function loader({ props }: { props: Props }, _req: Request) {
   } catch (error) {
     console.error("Erro na requisição:", error);
   }
-
   return { sortedMembersByMonth, ...props };
 }
-
 export default function PrimarySection(
   { ...props }: SectionProps<typeof loader>,
 ) {
-  const {
-    title,
-    subTitle,
-    graph,
-    sortedMembersByMonth,
-    emojiCommunity,
-  } = {
+  const { title, subTitle, graph, sortedMembersByMonth, emojiCommunity } = {
     ...BASE_PROPS,
     ...props,
   };
-
   return (
     <div class="w-full h-full bg-[#000]">
       <div class="container max-w-[1280px] mx-auto flex justify-center flex-col w-full py-8 md:py-10 px-4 lg:py-20">

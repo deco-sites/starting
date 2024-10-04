@@ -2,33 +2,26 @@ import { Head } from "$fresh/runtime.ts";
 import { LoaderReturnType } from "$live/types.ts";
 import { MDFileContent } from "site/components/ui/Types.tsx";
 import MarkdownContent from "site/sections/MarkdownContent.tsx";
-import { Section } from "deco/blocks/section.ts";
-
+import { type Section } from "@deco/deco/blocks";
 /** @title {{{path}}} */
 export interface CustomizableContent {
   path: string;
   content?: Section[];
 }
-
 export interface Props {
   data: LoaderReturnType<MDFileContent>;
   customizable?: CustomizableContent[];
 }
-
 interface SectionProps extends Props {
   url: string;
 }
-
 export const loader = (props: Props, req: Request): SectionProps => {
   return {
     ...props,
     url: req.url,
   };
 };
-
-export default function CustomizableMarkdownContent(
-  props: SectionProps,
-) {
+export default function CustomizableMarkdownContent(props: SectionProps) {
   let matchCustom = undefined;
   if (props.customizable) {
     matchCustom = [...props.customizable].sort((x, y) => {

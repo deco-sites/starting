@@ -1,4 +1,3 @@
-import { LoaderReturnType } from "deco/types.ts";
 import {
   getBlogPath,
   PostList,
@@ -6,16 +5,14 @@ import {
 } from "site/components/utils/Blog.ts";
 import { BlogPostCard } from "site/components/blog/PostCard.tsx";
 import FeaturedPost from "site/components/blog/FeaturedPost.tsx";
-
+import { type LoaderReturnType } from "@deco/deco";
 export type Props = {
   postList: LoaderReturnType<PostList>;
   locale?: SupportedLocales;
 };
-
 export default function MarkdownContainer(props: Props) {
   const { postList } = props;
   const [newest, ...older] = postList?.posts ?? [];
-
   return (
     <section class="bg-black">
       <div class="pt-24 md:pt-40 px-8 lg:px-16 mx-auto container">

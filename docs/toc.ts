@@ -219,7 +219,7 @@ const tableOfContents: TableOfContents = [
           en: "Go Live with A/B Testing",
         },
         slug: "developing-guide/go-live-ab-testing",
-      }
+      },
     ],
   },
   {
@@ -425,7 +425,7 @@ const tableOfContents: TableOfContents = [
               en: "Installing Apps",
             },
             slug: "developing-capabilities/apps/making-an-app-installable",
-          }
+          },
         ],
       },
       {

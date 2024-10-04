@@ -1,5 +1,4 @@
-import type { LoaderFunction } from "deco/types.ts";
-
+import { type LoaderFunction } from "@deco/deco";
 export interface Props {
   /** @description Complete user/repo format */
   repo: string;
@@ -8,7 +7,6 @@ export interface Props {
   /** @description Path to fetch, or leave blank and add :path route param. */
   path: string;
 }
-
 /**
  * @title GitHub Raw Loader
  * @description Grabs data from a GitHub repo
@@ -23,10 +21,8 @@ const gitHubRawLoader: LoaderFunction<Props, string> = async (
   const res = await fetch(
     `https://raw.githubusercontent.com/${repo}/${branch}/${resultPath}`,
   ).then((res) => res.text());
-
   return {
     data: res,
   };
 };
-
 export default gitHubRawLoader;

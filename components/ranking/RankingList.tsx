@@ -1,14 +1,12 @@
-import { LoaderReturnType } from "deco/types.ts";
 import type { Site } from "site/routes/api/ranking.ts";
 import { SiteList } from "./list/SiteList.tsx";
-
+import { type LoaderReturnType } from "@deco/deco";
 export interface TableHeaderTranslations {
   pagespeed: string;
   name: string;
   website: string;
   poweredBy: string;
 }
-
 export interface Props {
   title: string;
   tableHeader: TableHeaderTranslations;
@@ -20,14 +18,9 @@ export interface Props {
   hideFavicons?: boolean;
   sites: LoaderReturnType<Site[]>;
 }
-
-export default function RankingList({
-  title,
-  hideFavicons = false,
-  tableHeader,
-  footer,
-  sites,
-}: Props) {
+export default function RankingList(
+  { title, hideFavicons = false, tableHeader, footer, sites }: Props,
+) {
   return (
     <div class="min-h-[calc(100vh-98px)] text-zinc-100 flex justify-between flex-col max-w-screen-xl px-6 md:px-10 mx-auto">
       <div>

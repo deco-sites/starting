@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from "preact/hooks";
 
 interface Props {
   /**
@@ -27,13 +27,18 @@ interface GameObject {
 }
 
 export default function SpaceInvaders({
-  backgroundColor = '#000000',
-  spaceshipColor = '#00ff00',
-  enemyColor = '#ff0000',
-  bulletColor = '#ffffff'
+  backgroundColor = "#000000",
+  spaceshipColor = "#00ff00",
+  enemyColor = "#ff0000",
+  bulletColor = "#ffffff",
 }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [spaceship, setSpaceship] = useState<GameObject>({ x: 0, y: 0, width: 50, height: 30 });
+  const [spaceship, setSpaceship] = useState<GameObject>({
+    x: 0,
+    y: 0,
+    width: 50,
+    height: 30,
+  });
   const [enemies, setEnemies] = useState<GameObject[]>([]);
   const [bullets, setBullets] = useState<GameObject[]>([]);
   const [gameLoop, setGameLoop] = useState<number | null>(null);
@@ -42,11 +47,16 @@ export default function SpaceInvaders({
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     const initGame = () => {
-      setSpaceship({ x: canvas.width / 2 - 25, y: canvas.height - 50, width: 50, height: 30 });
+      setSpaceship({
+        x: canvas.width / 2 - 25,
+        y: canvas.height - 50,
+        width: 50,
+        height: 30,
+      });
       setEnemies(createEnemies());
     };
 
@@ -58,7 +68,7 @@ export default function SpaceInvaders({
             x: i * 100 + 50,
             y: j * 50 + 50,
             width: 40,
-            height: 40
+            height: 40,
           });
         }
       }
@@ -72,27 +82,27 @@ export default function SpaceInvaders({
       ctx.fillStyle = spaceshipColor;
       ctx.fillRect(spaceship.x, spaceship.y, spaceship.width, spaceship.height);
 
-      enemies.forEach(enemy => {
+      enemies.forEach((enemy) => {
         ctx.fillStyle = enemyColor;
         ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
       });
 
-      bullets.forEach(bullet => {
+      bullets.forEach((bullet) => {
         ctx.fillStyle = bulletColor;
         ctx.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
       });
     };
 
     const updateGame = () => {
-      setBullets(prevBullets =>
+      setBullets((prevBullets) =>
         prevBullets
-          .map(bullet => ({ ...bullet, y: bullet.y - 5 }))
-          .filter(bullet => bullet.y > 0)
+          .map((bullet) => ({ ...bullet, y: bullet.y - 5 }))
+          .filter((bullet) => bullet.y > 0)
       );
 
-      setEnemies(prevEnemies =>
-        prevEnemies.filter(enemy =>
-          !bullets.some(bullet =>
+      setEnemies((prevEnemies) =>
+        prevEnemies.filter((enemy) =>
+          !bullets.some((bullet) =>
             bullet.x < enemy.x + enemy.width &&
             bullet.x + bullet.width > enemy.x &&
             bullet.y < enemy.y + enemy.height &&
@@ -113,25 +123,43 @@ export default function SpaceInvaders({
 
     const handleKeyDown = (e: KeyboardEvent) => {
       switch (e.key) {
-        case 'ArrowLeft':
-          setSpaceship(prev => ({ ...prev, x: Math.max(0, prev.x - 10) }));
+        case "ArrowLeft":
+          setSpaceship((prev) => ({ ...prev, x: Math.max(0, prev.x - 10) }));
           break;
-        case 'ArrowRight':
-          setSpaceship(prev => ({ ...prev, x: Math.min(canvas.width - prev.width, prev.x + 10) }));
+        case "ArrowRight":
+          setSpaceship((prev) => ({
+            ...prev,
+            x: Math.min(canvas.width - prev.width, prev.x + 10),
+          }));
           break;
-        case ' ':
-          setBullets(prev => [...prev, { x: spaceship.x + spaceship.width / 2 - 2, y: spaceship.y, width: 4, height: 10 }]);
+        case " ":
+          setBullets(
+            (prev) => [...prev, {
+              x: spaceship.x + spaceship.width / 2 - 2,
+              y: spaceship.y,
+              width: 4,
+              height: 10,
+            }],
+          );
           break;
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
 
     return () => {
       if (gameLoop) clearInterval(gameLoop);
-      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [spaceship, enemies, bullets, backgroundColor, spaceshipColor, enemyColor, bulletColor]);
+  }, [
+    spaceship,
+    enemies,
+    bullets,
+    backgroundColor,
+    spaceshipColor,
+    enemyColor,
+    bulletColor,
+  ]);
 
   return (
     <div class="flex justify-center items-center h-screen bg-gray-900">

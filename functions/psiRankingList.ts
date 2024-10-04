@@ -1,7 +1,6 @@
-import type { LoaderFunction } from "deco/types.ts";
 import type { Site } from "site/routes/api/ranking.ts";
 import { ranking } from "../routes/api/ranking.ts";
-
+import { type LoaderFunction } from "@deco/deco";
 /**
  * @title PageSpeed Insights Ranking Loader
  * @description Gets ranking information
@@ -12,5 +11,4 @@ const psiRankingListLoader: LoaderFunction<null, Site[]> = async () => {
     data: ranking.list,
   };
 };
-
 export default psiRankingListLoader;

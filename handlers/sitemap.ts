@@ -1,15 +1,11 @@
-import type { Handler } from "deco/blocks/handler.ts";
-import type { Resolvable } from "deco/engine/core/resolver.ts";
-import { isResolvable } from "deco/engine/core/resolver.ts";
 import { Route } from "apps/website/flags/audience.ts";
 import tableOfContents from "site/docs/toc.ts";
-
+import { type Handler } from "@deco/deco/blocks";
+import { isResolvable, type Resolvable } from "@deco/deco";
 const isPage = (handler: Resolvable<Handler>) =>
   isResolvable(handler) && handler.__resolveType.endsWith("handlers/fresh.ts");
-
 const isAbsolute = (href: string) =>
   !href.includes(":") && !href.includes("*") && !href.startsWith("/_live");
-
 const buildSiteMap = (urls: string[]) => {
   const entries: string[] = [];
   for (const url of urls) {
@@ -22,16 +18,13 @@ const buildSiteMap = (urls: string[]) => {
   }
   return entries.join("\n");
 };
-
 const sanitize = (url: string) => (url.startsWith("/") ? url : `/${url}`);
-
 const getDocPages = () => {
   const pages = [];
   for (const entry of tableOfContents) {
     if (entry.slug) {
       pages.push(entry.slug);
     }
-
     if (entry.children) {
       for (const child of entry.children) {
         if (child.slug) {
@@ -40,10 +33,8 @@ const getDocPages = () => {
       }
     }
   }
-
   return pages;
 };
-
 const siteMapFromRoutes = (
   publicUrl: string,
   routes: Route[],
@@ -60,20 +51,16 @@ const siteMapFromRoutes = (
       urls.push(`${publicUrl}${sanitize(route.pathTemplate)}`);
     }
   }
-
   const docPages = getDocPages();
   for (const page of docPages) {
     urls.push(`${publicUrl}/docs/en/${page}`);
     urls.push(`${publicUrl}/docs/pt/${page}`);
   }
-
   return buildSiteMap(urls);
 };
-
 interface Props {
   excludePaths?: string[];
 }
-
 /**
  * @title Sitemap Custom deco.cx
  * @description Return deco's sitemap.xml

@@ -1,21 +1,17 @@
 import { asset, Head } from "$fresh/runtime.ts";
-import { LoaderReturnType } from "deco/types.ts";
 import { MDFileContent } from "site/components/ui/Types.tsx";
-
 import { frontMatter, gfm } from "site/components/utils/markdown.ts";
-
+import { type LoaderReturnType } from "@deco/deco";
 interface FrontMatterContent {
   body: string;
   attrs: Record<string, unknown>;
 }
-
 interface MDContent {
   content: FrontMatterContent;
 }
-
-export default function DocsPage(
-  props: { data: LoaderReturnType<MDFileContent> },
-) {
+export default function DocsPage(props: {
+  data: LoaderReturnType<MDFileContent>;
+}) {
   let description;
   const frontMatterContent = frontMatter(props.data.content);
   const { attrs } = frontMatterContent;
@@ -91,7 +87,6 @@ export default function DocsPage(
     </>
   );
 }
-
 function Content(props: MDContent) {
   const { body, attrs } = props.content;
   const _html = gfm.render(body, {
@@ -102,7 +97,6 @@ function Content(props: MDContent) {
     /( href="https:\/\/(?!www.deco)).*?/g,
     ' target="_blank"$1',
   );
-
   return (
     <main class="py-2 overflow-hidden">
       {attrs.since && (
