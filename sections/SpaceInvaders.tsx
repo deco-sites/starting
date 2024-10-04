@@ -145,11 +145,11 @@ export default function SpaceInvaders({
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
+    globalThis.window.addEventListener("keydown", handleKeyDown);
 
     return () => {
       if (gameLoop) clearInterval(gameLoop);
-      window.removeEventListener("keydown", handleKeyDown);
+      globalThis.window.removeEventListener("keydown", handleKeyDown);
     };
   }, [
     spaceship,

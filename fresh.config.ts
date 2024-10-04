@@ -6,7 +6,6 @@ export default defineConfig({
   plugins: [
     ...plugins({
       manifest: decoManifest,
-      // deno-lint-ignore no-explicit-any
     }),
   ],
 });

@@ -64,7 +64,7 @@ export default function MarioBrosGame({
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
+    globalThis.window.addEventListener("keydown", handleKeyDown);
 
     const gameLoop = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -123,7 +123,7 @@ export default function MarioBrosGame({
     gameLoop();
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
+      globalThis.window.removeEventListener("keydown", handleKeyDown);
     };
   }, [backgroundColor, characterColor, obstacleColor, groundColor]);
 
