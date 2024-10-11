@@ -7,8 +7,9 @@ import * as $$$$$$$$$1 from "./actions/startAlgoliaCrawler.ts";
 import * as $$$$$$$$$$$0 from "./apps/deco/analytics.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/htmx.ts";
-import * as $$$$$$$$$$$3 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$4 from "./apps/site.ts";
+import * as $$$$$$$$$$$3 from "./apps/deco/posthog.ts";
+import * as $$$$$$$$$$$4 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$5 from "./apps/site.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $1 from "./functions/LoadGitHubRawPost.ts";
 import * as $2 from "./functions/LoadGitHubRawPostList.ts";
@@ -399,8 +400,9 @@ const manifest = {
     "site/apps/deco/analytics.ts": $$$$$$$$$$$0,
     "site/apps/deco/blog.ts": $$$$$$$$$$$1,
     "site/apps/deco/htmx.ts": $$$$$$$$$$$2,
-    "site/apps/decohub.ts": $$$$$$$$$$$3,
-    "site/apps/site.ts": $$$$$$$$$$$4,
+    "site/apps/deco/posthog.ts": $$$$$$$$$$$3,
+    "site/apps/decohub.ts": $$$$$$$$$$$4,
+    "site/apps/site.ts": $$$$$$$$$$$5,
   },
   "name": "site",
   "baseUrl": import.meta.url,

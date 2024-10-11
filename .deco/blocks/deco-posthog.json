@@ -1,0 +1,7 @@
+{
+  "__resolveType": "site/apps/deco/posthog.ts",
+  "apiKey": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "c0cc868409082f19e3c915a7164c8416db5c4b10e355f0147c5d3d7643ac8f01cde714a3fa9692b63259c0f7fc2a393f"
+  }
+}

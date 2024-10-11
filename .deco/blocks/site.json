@@ -20,6 +20,13 @@
     {
       "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx",
       "domain": "deco.cx"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "posthog/sections/Analytics/PostHog.tsx",
+        "apiKey": "phc_cTNAUDgVFqt6MXNWfccJMQ9iSrmT5W8whLQYzCyNLbM"
+      }
     }
   ],
   "routes": [
