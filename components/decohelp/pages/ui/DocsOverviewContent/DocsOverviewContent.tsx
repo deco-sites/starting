@@ -1,8 +1,8 @@
-import { LoaderReturnType } from "$live/types.ts";
-import { MDFileContent } from "site/components/ui/Types.tsx";
-import MarkdownContent from "site/sections/MarkdownContent.tsx";
+import { LoaderReturnType } from "@deco/deco";
 import { CardLinks } from "site/components/ui/docs/CardLinks.tsx";
 import { JoinDiscordCTA } from "site/components/ui/docs/JoinDiscord.tsx";
+import { MDFileContent } from "site/components/ui/Types.tsx";
+import MarkdownContent from "site/sections/MarkdownContent.tsx";
 
 import { AvailableIcons } from "site/components/ui/Icon.tsx";
 

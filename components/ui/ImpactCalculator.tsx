@@ -1,7 +1,7 @@
 import { useSignal } from "@preact/signals";
 import { JSX } from "preact";
-import Spinner from "site/components/ui/Spinner.tsx";
 import Icon from "site/components/ui/Icon.tsx";
+import Spinner from "site/components/ui/Spinner.tsx";
 
 type lighthouseResultType = {
   lighthouseResult: {
@@ -75,6 +75,7 @@ export default function ImpactCalculator({
   };
 
   const handleSubmit = (e: JSX.TargetedEvent<HTMLFormElement>) => {
+    // @ts-expect-error: preventDefault is not a function
     e.preventDefault();
     loading.value = true;
 

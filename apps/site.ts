@@ -1,4 +1,4 @@
-import { App, AppContext as AC } from "$live/mod.ts";
+import { App, AppContext as AC } from "@deco/deco";
 import std, { Props } from "apps/compat/std/mod.ts";
 
 import manifest, { Manifest } from "../manifest.gen.ts";

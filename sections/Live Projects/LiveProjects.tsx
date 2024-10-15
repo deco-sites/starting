@@ -1,6 +1,6 @@
 import Image from "deco-sites/std/components/Image.tsx";
-import { useEffect, useId, useState } from "preact/hooks";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import { useEffect, useId, useState } from "preact/hooks";
 
 export interface Screenshot {
   label?: string;
@@ -192,6 +192,7 @@ function TemplatesGrid(props: Props) {
             className="p-2 cursor-pointer w-full bg-[#000D0D] rounded-lg lg:hidden"
             value={categoriaSelecionada}
             onChange={(e) => {
+              // @ts-expect-error: e.target does not exists
               const selectedValue = (e.target as HTMLSelectElement).value;
               handleChangeCategoria(selectedValue);
             }}

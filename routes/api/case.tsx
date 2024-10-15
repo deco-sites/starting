@@ -1,13 +1,13 @@
 import type { Handlers } from "$fresh/server.ts";
-import getSupabaseClient from "deco/supabase.ts";
-import { verifyCaptcha } from "site/sdk/recaptcha.ts";
 import { type DecoState } from "@deco/deco";
+import { verifyCaptcha } from "site/sdk/recaptcha.ts";
+import { getSupabaseClient } from "site/supabase.ts";
 const ZAPIER_WEBHOOK = Deno.env.get("ZAPIER_WEBHOOK_CASE");
 export const handler: Handlers<null, DecoState> = {
   POST: async (req) => {
     const formData = Object.fromEntries((await req.formData()).entries());
     const recaptchaToken = formData["g-recaptcha-response"];
-    const isCaptchaValid = !!recaptchaToken ??
+    const isCaptchaValid = !!recaptchaToken ||
       (await verifyCaptcha(recaptchaToken.toString()));
     if (!ZAPIER_WEBHOOK || !isCaptchaValid) {
       return new Response(null, {

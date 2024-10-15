@@ -1,8 +1,8 @@
 import { Head } from "$fresh/runtime.ts";
-import { LoaderReturnType } from "$live/types.ts";
+import { LoaderReturnType } from "@deco/deco";
+import { type Section } from "@deco/deco/blocks";
 import { MDFileContent } from "site/components/ui/Types.tsx";
 import MarkdownContent from "site/sections/MarkdownContent.tsx";
-import { type Section } from "@deco/deco/blocks";
 /** @title {{{path}}} */
 export interface CustomizableContent {
   path: string;
