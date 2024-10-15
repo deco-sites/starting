@@ -2,10 +2,10 @@
   "imports": {
     "site/": "./",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.8/",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.103.0/",
+    "$live/": "https://denopkg.com/deco-cx/deco@1.106.2/",
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.103.0/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.60.2/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.106.2/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.62.5/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "preact": "npm:preact@10.23.1",
     "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
@@ -46,8 +46,8 @@
     "simple-git": "npm:simple-git@^3.25.0",
     "hightlight.js": "npm:highlight.js@11.10.0",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@1.103.0",
-    "@deco/dev": "jsr:@deco/dev@1.104.0"
+    "@deco/deco": "jsr:@deco/deco@1.106.2",
+    "@deco/dev": "jsr:@deco/dev@1.106.2"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -63,7 +63,7 @@
     "cache_clean": "rm deno.lock; deno cache -r main.ts",
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
-    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts",
+    "dev": "deno run -A --env --unstable-kv --unstable-hmr dev.ts",
     "reload": "deno cache -r https://deco.cx/run"
   },
   "githooks": {
