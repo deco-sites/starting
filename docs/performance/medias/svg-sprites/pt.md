@@ -33,8 +33,21 @@ dos elementos que deseja utilizar.
 Segue um exemplo de arquivo svg com um símbolo e id **XMark**
 
 ```html
-<svg style="display:none">
-  <symbol id="XMark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></symbol>
+<svg style="display: none">
+  <symbol
+    id="XMark"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M6 18L18 6M6 6l12 12"
+    />
+  </symbol>
 </svg>
 ```
 
@@ -51,8 +64,21 @@ Digamos que o nome do arquivo svg é `icons.svg` e ele está disponível no path
 
 ```html
 <!-- icons.svg -->
-<svg style="display:none">
- <symbol id="XMark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></symbol>
+<svg style="display: none">
+  <symbol
+    id="XMark"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M6 18L18 6M6 6l12 12"
+    />
+  </symbol>
 </svg>
 ```
 

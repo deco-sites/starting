@@ -50,19 +50,19 @@ By triggering the "Tailwind generation" process we get the following
 
 ```css
 .flex {
-  display: flex
+  display: flex;
 }
 
 .justify-center {
-  justify-content: center
+  justify-content: center;
 }
 
 .p-2 {
-  padding: 8px
+  padding: 8px;
 }
 
 .p-4 {
-  padding: 16px
+  padding: 16px;
 }
 ```
 

@@ -36,7 +36,9 @@ the subdomain store.deco.cx.
   tag:
 
 ```html
-<script src="https://store.deco.cx/live/invoke/site/loaders/abTestScript.ts"></script>
+<script
+  src="https://store.deco.cx/live/invoke/site/loaders/abTestScript.ts"
+></script>
 ```
 
 This script will randomly assign users to stay on the current site or redirect

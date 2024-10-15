@@ -66,7 +66,9 @@ document.querySelector("#my-button").textContent = "Buy!";
 CSS to run
 
 ```css
-#my-button { color: red !important; }
+#my-button {
+  color: red !important;
+}
 ```
 
 ## Configuração de Eventos
@@ -116,7 +118,8 @@ Agora, para que tudo isso seja aplicado no seu site:
 - Insira esse script no `<head>` do seu site:
 
 ```html
-<script src="https://seusite.deco.site/live/invoke/abTest" defer="true"></script>
+<script src="https://seusite.deco.site/live/invoke/abTest" defer="true"></script
+>
 ```
 
 ## Próximos passos

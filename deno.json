@@ -1,6 +1,6 @@
 {
   "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.6.8/",
+    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "$live/": "https://denopkg.com/deco-cx/deco@1.106.2/",
     "$store/": "./",
     "@cliffy/prompt": "jsr:@cliffy/prompt@^1.0.0-rc.5",

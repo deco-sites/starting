@@ -36,7 +36,9 @@ Exemplo: Meu site atual `www.deco.cx`, vamos associar o novo site ao domínio
 - Insira na tag `<head>` do seu site atual, esse loader em uma tag `<script>`:
 
 ```html
-<script src="https://store.deco.cx/live/invoke/site/loaders/abTestScript.ts"></script>
+<script
+  src="https://store.deco.cx/live/invoke/site/loaders/abTestScript.ts"
+></script>
 ```
 
 Esse script, irá sortear os usuáriso para mantê-los no site ou redirecioná-los

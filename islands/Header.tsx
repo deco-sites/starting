@@ -123,10 +123,10 @@ export default function Header(props: Props) {
   const openLanguage = useSignal(false);
 
   if (IS_BROWSER) {
-    urlPortuguese.value = window.location.pathname.replace("en", "pt");
-    urlEnglish.value = window.location.pathname.replace("pt", "en");
+    urlPortuguese.value = globalThis.location.pathname.replace("en", "pt");
+    urlEnglish.value = globalThis.location.pathname.replace("pt", "en");
 
-    const urlPage = window.location.pathname;
+    const urlPage = globalThis.location.pathname;
 
     urlMarketers.value = urlPage.includes("en") ? "/en" : "/pt";
     urlDevelopers.value = urlPage.includes("en") ? "/en/dev" : "/pt/dev";
@@ -311,7 +311,7 @@ export default function Header(props: Props) {
                           href="#"
                           onClick={(e) => {
                             e.preventDefault();
-                            window.history.pushState(
+                            globalThis.history.pushState(
                               {},
                               "",
                               urlMarketers.value,
@@ -345,7 +345,7 @@ export default function Header(props: Props) {
                           href="#"
                           onClick={(e) => {
                             e.preventDefault();
-                            window.history.pushState(
+                            globalThis.history.pushState(
                               {},
                               "",
                               urlDevelopers.value,

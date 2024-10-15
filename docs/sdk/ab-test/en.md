@@ -68,7 +68,9 @@ document.querySelector("#my-button").textContent = "Buy!";
 CSS to run
 
 ```css
-#my-button { color: red !important; }
+#my-button {
+  color: red !important;
+}
 ```
 
 ## Event Configuration

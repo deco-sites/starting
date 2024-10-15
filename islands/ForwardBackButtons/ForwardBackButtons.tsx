@@ -21,8 +21,8 @@ export default function ForwardBackButtons() {
   });
 
   useEffect(() => {
-    const encodedURL = window.location.href.split(
-      window.location.search || window.location.hash || /[?#]/,
+    const encodedURL = globalThis.location.href.split(
+      globalThis.location.search || globalThis.location.hash || /[?#]/,
     )[0];
     const decodedURL = decodeURIComponent(encodedURL);
 

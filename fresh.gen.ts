@@ -65,7 +65,7 @@ import * as $pricing_PricingTiers from "./islands/pricing/PricingTiers.tsx";
 import * as $pricing_SelectTimePlan from "./islands/pricing/SelectTimePlan.tsx";
 import * as $tuju_Form from "./islands/tuju/Form.tsx";
 import * as $tuju_FormStates from "./islands/tuju/FormStates.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

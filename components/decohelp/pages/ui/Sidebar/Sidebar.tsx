@@ -115,7 +115,7 @@ function AsideLinks({ topics, subtitle, linkSubtitle }: {
     }
   };
   useEffect(() => {
-    const currentPath = window.location.pathname;
+    const currentPath = globalThis.location.pathname;
     topics.forEach((topic, index) => {
       const isActive = topic.SubTopics.some((subTopic, subTopicIndex) => {
         if (currentPath.endsWith(subTopic.SidebarLink?.toLowerCase())) {

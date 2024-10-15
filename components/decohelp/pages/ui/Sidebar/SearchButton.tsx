@@ -14,9 +14,10 @@ export default function SearchButton(
   props: { docsearch?: (args: DocSearchProps) => void },
 ) {
   const ref = useRef<HTMLDivElement>(null);
-  const lang = window.location.href && window.location.href.includes("/en/")
-    ? "en"
-    : "pt";
+  const lang =
+    globalThis.location.href && globalThis.location.href.includes("/en/")
+      ? "en"
+      : "pt";
   useEffect(() => {
     if (ref.current) {
       props.docsearch || docsearch({

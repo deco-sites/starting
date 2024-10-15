@@ -606,7 +606,7 @@ html {
     scroll-behavior: smooth;
   }
 
-  details>summary {
+  details > summary {
     list-style: none;
   }
 
@@ -619,7 +619,7 @@ html {
   }
 
   details.home-faq summary svg {
-    transition: all .1s linear;
+    transition: all 0.1s linear;
   }
 
   details[open].home-faq summary svg {
@@ -635,7 +635,7 @@ html {
   }
 
   details[open] {
-    >.faq .chevron-down {
+    > .faq .chevron-down {
       transform: rotate(180deg);
     }
   }
@@ -676,11 +676,13 @@ html {
     appearance: none;
     margin-top: -3px;
     /* Centers thumb on the track */
-    background: radial-gradient(circle,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 1) 40%,
-        rgba(255, 255, 255, 1) 40%,
-        rgba(255, 255, 255, 1) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(255, 255, 255, 1) 40%,
+      rgba(255, 255, 255, 1) 100%
+    );
     border-radius: 1rem;
     border: 1px solid black;
     height: 1.2rem;
@@ -5242,7 +5244,7 @@ details.collapse summary::-webkit-details-marker {
     max-height: 72vh;
   }
 .ellipse-3 {
-    background: #02F67C;
+    background: #02f67c;
     border-radius: 100%;
     filter: blur(75px);
     height: 566px;
@@ -5255,7 +5257,7 @@ details.collapse summary::-webkit-details-marker {
     z-index: 30;
   }
 .feature-progress {
-    stroke: #02F67C;
+    stroke: #02f67c;
     stroke-dasharray: 0, 1;
   }
 .deco-background {
@@ -5291,9 +5293,9 @@ details.collapse summary::-webkit-details-marker {
 .cursor-glow {
     width: 150px;
     height: 150px;
-    background-color: #02F67C;
+    background-color: #02f67c;
     filter: blur(125px);
-    transition: .2s ease;
+    transition: 0.2s ease;
     position: fixed;
     top: 0%;
     bottom: auto;
@@ -11619,18 +11621,18 @@ details.collapse summary::-webkit-details-marker {
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
-details>div {
+details > div {
     overflow: hidden;
     display: grid;
     /* intentionally independent from .animation as Safari 16
     would otherwise ignore the expansion animation. */
     animation-duration: 0.2s;
   }
-details>.animation {
+details > .animation {
     animation-name: grid-expand;
     animation-timing-function: ease-out;
   }
-details>div>div {
+details > div > div {
     min-height: 0;
   }
 @keyframes grid-expand {
@@ -11678,7 +11680,7 @@ details>div>div {
   }
 
   .right-container {
-    max-width: calc(1280px+ ((100vw-1280px) / 2));
+    max-width: calc(1280px + 100vw-1280px / 2);
   }
 }
 
@@ -11688,7 +11690,7 @@ details>div>div {
   }
 
   .right-container {
-    max-width: calc(1536px+ ((100vw-1536px) / 2));
+    max-width: calc(1536px + 100vw-1536px / 2);
   }
 }
 
@@ -11699,11 +11701,11 @@ details>div>div {
 }
 
 .prose a strong {
-  color: #06E474;
+  color: #06e474;
 }
 
 .prose a {
-  color: #06E474;
+  color: #06e474;
 }
 
 .prose strong {
@@ -11714,7 +11716,7 @@ details>div>div {
   cursor: url(/cursor.cur), default;
 }
 
-.hbspt-form>form {
+.hbspt-form > form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -11743,10 +11745,10 @@ details>div>div {
 
 .hs-button:hover {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: #02F67C var(--tw-gradient-from-position);
+  --tw-gradient-from: #02f67c var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(2 246 124 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #06E474 var(--tw-gradient-to-position);
+  --tw-gradient-to: #06e474 var(--tw-gradient-to-position);
   --tw-shadow: rgb(0, 0, 0) 0px 0px 0px 2px, rgb(6, 228, 116) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   --tw-shadow-colored: 0px 0px 0px 2px var(--tw-shadow-color), 0px 0px 0px 4px var(--tw-shadow-color), 0px 0px 0px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -11763,7 +11765,7 @@ details>div>div {
   }
 }
 
-.hs-form-field>.input>input {
+.hs-form-field > .input > input {
   height: 51px;
   width: 100%;
   border-radius: 0.25rem;
@@ -11771,17 +11773,17 @@ details>div>div {
   padding: 1rem;
 }
 
-.hs-form-field>.input>input::-moz-placeholder {
+.hs-form-field > .input > input::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
-.hs-form-field>.input>input::placeholder {
+.hs-form-field > .input > input::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
-.hs-form-field>.input>textarea {
+.hs-form-field > .input > textarea {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -11790,17 +11792,17 @@ details>div>div {
   padding: 1rem;
 }
 
-.hs-form-field>.input>textarea::-moz-placeholder {
+.hs-form-field > .input > textarea::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
-.hs-form-field>.input>textarea::placeholder {
+.hs-form-field > .input > textarea::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
-.hs-form-field>.input {
+.hs-form-field > .input {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -11813,23 +11815,23 @@ details>div>div {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hs-form-field>.input::-moz-placeholder {
+.hs-form-field > .input::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
-.hs-form-field>.input::placeholder {
+.hs-form-field > .input::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
-.hs-form-field>.input {
+.hs-form-field > .input {
   --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.hs-form-field>label {
+.hs-form-field > label {
   --tw-text-opacity: 1;
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
@@ -11884,7 +11886,7 @@ input[type="checkbox"].light-checkbox:checked {
 }
 
 input[type="checkbox"].light-checkbox:checked::after {
-  content: '';
+  content: "";
   display: block;
   width: 0.5rem;
   height: 0.5rem;
@@ -11920,7 +11922,7 @@ select.light-autofill:-webkit-autofill:focus {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 9999px;
-  background-color: #FFFFFF1A;
+  background-color: #ffffff1a;
 }
 
 @media (min-width: 640px) {

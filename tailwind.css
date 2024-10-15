@@ -18,7 +18,7 @@
     scroll-behavior: smooth;
   }
 
-  details>summary {
+  details > summary {
     list-style: none;
   }
 
@@ -31,7 +31,7 @@
   }
 
   details.home-faq summary svg {
-    transition: all .1s linear;
+    transition: all 0.1s linear;
   }
 
   details[open].home-faq summary svg {
@@ -51,7 +51,7 @@
   }
 
   details[open] {
-    >.faq .chevron-down {
+    > .faq .chevron-down {
       transform: rotate(180deg);
     }
   }
@@ -91,11 +91,13 @@
     appearance: none;
     margin-top: -3px;
     /* Centers thumb on the track */
-    background: radial-gradient(circle,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 1) 40%,
-        rgba(255, 255, 255, 1) 40%,
-        rgba(255, 255, 255, 1) 100%);
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(255, 255, 255, 1) 40%,
+      rgba(255, 255, 255, 1) 100%
+    );
     border-radius: 1rem;
     border: 1px solid black;
     height: 1.2rem;
@@ -151,17 +153,18 @@
   }
 
   .feature-card {
-    @apply w-[380px] max-w-[380px] lg:h-[350px] bg-[#000D0D] rounded-3xl;
+    @apply w-[380px] max-w-[380px] lg:h-[350px] bg-[#000d0d] rounded-3xl;
     @apply flex flex-col items-center justify-start gap-12;
   }
 
   .pricing-card {
-    @apply bg-[#000D0D] rounded-3xl;
+    @apply bg-[#000d0d] rounded-3xl;
   }
 
   .feature-card-lp-contest {
-    @apply w-[380px] max-w-[380px] lg:h-[380px] bg-[#F4F4F4] rounded-3xl;
-    @apply border-l border-transparent duration-200 whitespace-pre-line text-center;
+    @apply w-[380px] max-w-[380px] lg:h-[380px] bg-[#f4f4f4] rounded-3xl;
+    @apply border-l border-transparent duration-200 whitespace-pre-line
+      text-center;
     @apply flex flex-col items-center justify-start gap-8 py-10 px-8 lg:px-12;
   }
 
@@ -234,7 +237,7 @@
   }
 
   .ellipse-1 {
-    background: #02F67C;
+    background: #02f67c;
     border-radius: 100%;
     filter: blur(75px);
     height: 566px;
@@ -248,7 +251,7 @@
   }
 
   .ellipse-2 {
-    background: #02F67C;
+    background: #02f67c;
     border-radius: 100%;
     filter: blur(75px);
     height: 566px;
@@ -261,7 +264,7 @@
   }
 
   .ellipse-3 {
-    background: #02F67C;
+    background: #02f67c;
     border-radius: 100%;
     filter: blur(75px);
     height: 566px;
@@ -275,11 +278,11 @@
   }
 
   .feature-progress-bg {
-    stroke: #52525B;
+    stroke: #52525b;
   }
 
   .feature-progress {
-    stroke: #02F67C;
+    stroke: #02f67c;
     stroke-dasharray: 0, 1;
   }
 
@@ -318,9 +321,9 @@
   .cursor-glow {
     width: 150px;
     height: 150px;
-    background-color: #02F67C;
+    background-color: #02f67c;
     filter: blur(125px);
-    transition: .2s ease;
+    transition: 0.2s ease;
     position: fixed;
     top: 0%;
     bottom: auto;
@@ -334,9 +337,9 @@
     --stroke-width: 20px;
     --radius: calc((var(--size) - var(--stroke-width)) / 2);
     --circumference: calc(var(--radius) * pi * 2);
-    --dash: calc((var(--progress) * var(--circumference)) / 100);
+    --dash: calc(var(--progress) * var(--circumference) / 100);
   }
-  
+
   .circular-progress circle {
     cx: var(--half-size);
     cy: var(--half-size);
@@ -345,11 +348,11 @@
     fill: none;
     stroke-linecap: round;
   }
-  
+
   .circular-progress circle.bg {
     stroke: #ddd;
   }
-  
+
   .circular-progress circle.fg {
     transform: rotate(-90deg);
     transform-origin: var(--half-size) var(--half-size);
@@ -360,7 +363,7 @@
 }
 
 @layer utilities {
-  details>div {
+  details > div {
     overflow: hidden;
     display: grid;
     /* intentionally independent from .animation as Safari 16
@@ -368,17 +371,17 @@
     animation-duration: 0.2s;
   }
 
-  details>.animation {
+  details > .animation {
     animation-name: grid-expand;
     animation-timing-function: ease-out;
   }
 
-  details>.collapsing {
+  details > .collapsing {
     animation-direction: reverse;
     animation-timing-function: ease-in;
   }
 
-  details>div>div {
+  details > div > div {
     min-height: 0;
   }
 
@@ -428,7 +431,7 @@
   }
 
   .right-container {
-    max-width: calc(1280px+ ((100vw-1280px) / 2));
+    max-width: calc(1280px + 100vw-1280px / 2);
   }
 }
 
@@ -438,7 +441,7 @@
   }
 
   .right-container {
-    max-width: calc(1536px+ ((100vw-1536px) / 2));
+    max-width: calc(1536px + 100vw-1536px / 2);
   }
 }
 
@@ -449,11 +452,11 @@
 }
 
 .prose a strong {
-  color: #06E474;
+  color: #06e474;
 }
 
 .prose a {
-  color: #06E474;
+  color: #06e474;
 }
 
 .prose strong {
@@ -464,29 +467,33 @@
   cursor: url(/cursor.cur), default;
 }
 
-.hbspt-form>form {
+.hbspt-form > form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .hs-button {
-  @apply w-full cursor-pointer relative overflow-hidden rounded-full hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300 ease-out bg-[#02F67C] hover:from-[#02F67C] hover:to-[#06E474] text-black hover:shadow-hero font-medium lg:text-[20px];
+  @apply w-full cursor-pointer relative overflow-hidden rounded-full
+    hover:bg-gradient-to-r px-6 py-2 lg:px-8 lg:py-3 transition-all duration-300
+    ease-out bg-[#02f67c] hover:from-[#02f67c] hover:to-[#06e474] text-black
+    hover:shadow-hero font-medium lg:text-[20px];
 }
 
-.hs-form-field>.input>input {
+.hs-form-field > .input > input {
   @apply w-full h-[51px] rounded placeholder-white bg-white/5 p-4;
 }
 
-.hs-form-field>.input>textarea {
+.hs-form-field > .input > textarea {
   @apply w-full h-fit rounded placeholder-white bg-white/5 p-4;
 }
 
-.hs-form-field>.input {
-  @apply w-full h-fit border border-white/[.1] rounded placeholder-white bg-transparent p-0 text-white backdrop-blur-xl;
+.hs-form-field > .input {
+  @apply w-full h-fit border border-white/[.1] rounded placeholder-white
+    bg-transparent p-0 text-white backdrop-blur-xl;
 }
 
-.hs-form-field>label {
+.hs-form-field > label {
   @apply text-zinc-400;
 }
 
@@ -538,7 +545,7 @@ input[type="checkbox"].light-checkbox:checked {
 }
 
 input[type="checkbox"].light-checkbox:checked::after {
-  content: '';
+  content: "";
   display: block;
   width: 0.5rem;
   height: 0.5rem;
@@ -572,5 +579,5 @@ select.light-autofill:-webkit-autofill:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-[#FFFFFF1A] rounded-full;
+  @apply bg-[#ffffff1a] rounded-full;
 }

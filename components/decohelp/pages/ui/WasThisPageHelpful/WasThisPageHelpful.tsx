@@ -45,7 +45,7 @@ export default function WasThisPageHelpfulContent({
   const handleButtonClick = async (label: string, helpful: boolean) => {
     setIsPending(true);
     await Runtime.invoke.site.actions.feedbackDocs({
-      contents: [helpful, label, window.location.href],
+      contents: [helpful, label, globalThis.location.href],
     });
     setIsPending(false);
   };
