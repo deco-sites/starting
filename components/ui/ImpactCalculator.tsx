@@ -75,7 +75,6 @@ export default function ImpactCalculator({
   };
 
   const handleSubmit = (e: JSX.TargetedEvent<HTMLFormElement>) => {
-    // @ts-expect-error: preventDefault is not a function
     e.preventDefault();
     loading.value = true;
 

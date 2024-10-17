@@ -6,8 +6,7 @@ export const handler: Handlers<null, DecoState> = {
   POST: async (req) => {
     const formData = Object.fromEntries((await req.formData()).entries());
     const recaptchaToken = formData["g-recaptcha-response"];
-    const isCaptchaValid = !!recaptchaToken ??
-      (await verifyCaptcha(recaptchaToken.toString()));
+    const isCaptchaValid = await verifyCaptcha(recaptchaToken.toString());
     if (!ZAPIER_WEBHOOK || !isCaptchaValid) {
       return new Response(null, {
         headers: {

@@ -3,6 +3,8 @@ description: Arquitetura Self-host
 since: 2.0
 ---
 
+## TODO (WIP)
+
 ## Deployando seu site (Docker)
 
 ```dockerfile
@@ -29,7 +31,7 @@ RUN deno cache --allow-import --frozen main.ts dev.ts _docker_deps.ts
 
 ARG GIT_REVISION=1
 
-ENV DECO_SITE_NAME=selfhostmgr
+ENV DECO_SITE_NAME=yoursitename
 
 ENV DENO_DEPLOYMENT_ID=$GIT_REVISION
 
@@ -38,4 +40,4 @@ CMD ["run", "--cached-only", "-A", "--unstable-kv", "main.ts"]
 
 Para deployar no fly.io...
 
-`flyctl lauch`
+`flyctl launch`
