@@ -620,6 +620,35 @@ const tableOfContents: TableOfContents = [
       },
     ],
   },
+  {
+    title: {
+      pt: "Self-host your site",
+      en: "Self-host your site",
+    },
+    children: [
+      {
+        title: {
+          pt: "Arquitetura Self-host",
+          en: "Self-host architecture",
+        },
+        slug: "self-host/architecture",
+      },
+      {
+        title: {
+          pt: "Self-host seu site deco",
+          en: "Self-host your site deco",
+        },
+        slug: "self-host/site",
+      },
+      {
+        title: {
+          pt: "Self-host suas envs",
+          en: "Self-host your envs",
+        },
+        slug: "self-host/envs",
+      },
+    ],
+  },
 ];
 
 const tableOfContentsBySlug = tableOfContents.reduce((acc, cur) => {
