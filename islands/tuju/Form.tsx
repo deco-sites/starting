@@ -82,7 +82,8 @@ export default function Form({
         alert("Erro ao enviar. Por favor, envie o fomulário novamente");
       }
     } catch (error) {
-      console.log(error.message);
+      const errorObj = error as { message?: string };
+      console.log(errorObj.message ? errorObj.message : error);
       alert("Erro inesperado. Por favor, envie o fomulário novamente");
     }
 

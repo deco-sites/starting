@@ -33,7 +33,7 @@
     "@std/testing": "jsr:@std/testing@^1.0.0",
     "@supabase/supabase-js": "jsr:@supabase/supabase-js@^2.45.4",
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.62.5/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.62.9/",
     "daisyui": "npm:daisyui@4.6.0",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.8/",
     "deco/": "https://denopkg.com/deco-cx/deco@1.106.2/",
