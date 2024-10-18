@@ -93,6 +93,19 @@ Here are the main changes and impacts:
 - **Local Customization:** Greater flexibility in integrating with internal
   systems.
 
+### Relevant Aspects of the Self-host Solution
+
+- **Cache Async Render:** By default, the CDN caches the sections rendered on
+  the /deco/render route (HTMX and partials). Without this cache, the system may
+  be overloaded with unnecessary requests. It might be beneficial for the
+  solution to cache these elements.
+
+- **Loader Cache:** Calls to loaders receive local cache on the web server. This
+  cache typically occupies 1GB and can fill the disk of the image if it has not
+  been mounted with a sufficiently large ephemeral storage. This and other
+  options can be configured via environment variables and are defined in the
+  deco runtime code.
+
 ## deco.cx Architecture with Self-hosted Site and Environments
 
 <img width="640" alt="Self-host Site and Envs Architecture" src="/docs/self-host/self-host-envs.png">

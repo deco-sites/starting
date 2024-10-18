@@ -94,6 +94,19 @@ organização. Veja as principais mudanças e impactos:
   responsáveis pela segurança e otimização do acesso ao site.
 - **Customização Local:** Maior flexibilidade para acesso aos sistemas internos.
 
+### Aspectos Relevantes da Solução Self-Host
+
+- **Cache de Renderização Assíncrona:** Por padrão, a CDN realiza cache das
+  seções renderizadas na rota `/deco/render` (HTMX e partials). Sem esse cache,
+  o sistema pode ser sobrecarregado com requisições desnecessárias. Portanto, é
+  recomendável implementar o cache desses elementos na solução self-host.
+
+- **Cache do Loader:** As chamadas aos loaders recebem cache local no servidor
+  web. Esse cache, por padrão, ocupa 1GB e pode consumir o espaço em disco da
+  imagem se não for montado com um tamanho adequado. Esta e outras opções podem
+  ser configuradas via variáveis de ambiente e são definidas no código do deco
+  runtime.
+
 ## Arquitetura deco.cx com Self-host do Site e Ambientes
 
 <img width="640" alt="Arquitetura Self-host de Site e Envs" src="/docs/self-host/self-host-envs.png">

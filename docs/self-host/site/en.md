@@ -1,5 +1,5 @@
 ---
-description: Self-host Architecture
+description: Self-host your site deco
 since: 2.0
 ---
 

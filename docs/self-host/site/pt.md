@@ -1,5 +1,5 @@
 ---
-description: Arquitetura Self-host
+description: Self-host seu site deco
 since: 2.0
 ---
 

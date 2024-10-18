@@ -642,7 +642,7 @@ const tableOfContents: TableOfContents = [
       },
       {
         title: {
-          pt: "Self-host suas envs",
+          pt: "Self-host seus envs",
           en: "Self-host your envs",
         },
         slug: "self-host/envs",
