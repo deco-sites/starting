@@ -1,0 +1,9 @@
+{
+  "name": "Atualizações Contratuais 2025",
+  "path": "/atualizacoes-contratuais-2025",
+  "sections": [],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
