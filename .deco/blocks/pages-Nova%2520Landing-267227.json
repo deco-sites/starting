@@ -827,7 +827,9 @@
                   "subTitle": "<p>How developers build and evolve enterprise-grade, full-stack web apps 10x faster.</p>",
                   "shouldAddPaddingTopAndBottom": true,
                   "title": "<p>Webdev Engine</p>",
-                  "alert": {}
+                  "alert": {
+                    "text": "Meet Webdraw.ai: the first AI Canvas IDE"
+                  }
                 },
                 "rule": {
                   "__resolveType": "website/matchers/always.ts"
