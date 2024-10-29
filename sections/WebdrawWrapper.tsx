@@ -6,5 +6,10 @@ interface Props {
 }
 
 export default function Section({ content }: Props) {
-  return <div dangerouslySetInnerHTML={{ __html: content }} />
+  
+  return (
+    <div>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
+    </div>
+  )
 }

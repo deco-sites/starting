@@ -1,0 +1,10 @@
+{
+  "__resolveType": "site/sections/Home/Header.tsx",
+  "menuLinks": [],
+  "sign": {},
+  "login": {},
+  "alerts": {
+    "mobile": [],
+    "desktop": []
+  }
+}
