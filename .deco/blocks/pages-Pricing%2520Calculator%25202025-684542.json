@@ -11,14 +11,11 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Home/TextSection.tsx",
-        "description": "<p></p><p></p><p>Coming soon </p>"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Deco Footer [EN]"
+        "__resolveType": "site/sections/NRF/TextLines.tsx",
+        "lines": [
+          "Pricing calculator 2025 coming soon"
+        ],
+        "animateOnScroll": false
       }
     }
   ],
