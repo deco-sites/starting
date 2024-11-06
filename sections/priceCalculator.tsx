@@ -1,14 +1,5 @@
-interface Props {
-  /**
-  * @description The description of name.
-  */
-  calculatorHTML: string;
-}
+import PriceCalculatorIsland from "site/islands/PriceCalculatorIsland.tsx";
 
-export default function Section({ calculatorHTML }: Props) {
-  return (
-    <div>
-      <div dangerouslySetInnerHTML={{ __html: calculatorHTML }} />
-    </div>
-  )
+export default function Section() {
+  return <PriceCalculatorIsland/>;
 }
