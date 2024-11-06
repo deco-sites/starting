@@ -11,11 +11,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/NRF/TextLines.tsx",
-        "lines": [
-          "Pricing calculator 2025 coming soon"
-        ],
-        "animateOnScroll": false
+        "__resolveType": "site/sections/priceCalculator.tsx"
       }
     },
     {
