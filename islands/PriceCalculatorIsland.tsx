@@ -494,7 +494,7 @@ export default function PriceCalculatorIsland() {
                   <div className="flex items-center gap-2">
                     <span>Eficiência média</span>
                     <button className="text-gray-400 hover:text-white">
-                      ℹ️
+                      
                     </button>
                   </div>
                   <span className="text-emerald-400">
@@ -623,7 +623,7 @@ function calculateScenario(pageviews: number, infrastructureType: string) {
   const { bandwidth: bandwidthCost, request: requestCost } =
     EFFICIENTY_COSTS[infrastructureType];
 
-  const bandwidth = pageviews * bandwidthCost * 0.025;
+  const bandwidth = pageviews * bandwidthCost * 0.005;
   const request = pageviews * requestCost * 0.0004;
   const total = bandwidth + request;
 
