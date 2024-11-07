@@ -1,4 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
+import Tooltip from "site/components/camp/daisy/Tooltip.tsx";
 
 interface INPUT {
   plan: string;
@@ -209,10 +210,10 @@ export default function PriceCalculatorIsland() {
               >
                 <div>
                   <label className="block text-sm font-medium mb-1">
-                    No. de licenças - Content Editor
+                    No. de licenças
                   </label>
                   <p className="text-xs text-gray-400 mb-2">
-                    Acesso para editar conteúdos e utilizar dados
+                    Acesso a todos os recursos do plano Pro
                   </p>
                   <input
                     type="number"
@@ -381,16 +382,20 @@ export default function PriceCalculatorIsland() {
                   <div
                     className={`${inputs.hosting === "cloud" ? "hidden" : ""}`}
                   >
-                    <span>
+                    <a
+                      href="https://meetings.hubspot.com/leandro-borges/alinhamento-clientes-e-parceiros?uuid=444532e8-38a1-497f-96b1-7c7fb7753698"
+                      target= "_blank"
+                      className="underline"
+                    >
                       Fale com o nosso time de vendas
-                    </span>
+                    </a>
                   </div>
                 </div>
 
                 <div
                   className={`${inputs.hosting === "self" ? "hidden" : ""}`}
                 >
-                  <div className="flex items-center gap-4 justify-center">
+                  <div className="justify-center pl-16 py-4">
                     <label className="flex items-center gap-2">
                       <input
                         type="radio"
@@ -482,9 +487,15 @@ export default function PriceCalculatorIsland() {
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
                     <span>Eficiente</span>
-                    <button className="text-gray-400 hover:text-white">
-                      ℹ️
-                    </button>
+                    <Tooltip
+                      dataTip={"Menos banda e requisições por pageview. Requisições / pageview = 7,0. Banda / pageview = 0,3 GB"}
+                    >
+                      <div class="relative inline-flex items-center">
+                        <div class="w-4 h-4 rounded-full border border-gray-500">
+                          <p class="text-xs text-gray-500">i</p>
+                        </div>
+                      </div>
+                    </Tooltip>
                   </div>
                   <span className="text-emerald-400">
                     {formatToReal(estimatedCost.efficiency.efficient)}
@@ -493,9 +504,16 @@ export default function PriceCalculatorIsland() {
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
                     <span>Eficiência média</span>
-                    <button className="text-gray-400 hover:text-white">
-                      
-                    </button>
+
+                    <Tooltip
+                      dataTip={"Mais banda e requisições por pageview. Requisições / pageview = 8,6. Banda / pageview = 0,7 GB"}
+                    >
+                      <div class="relative inline-flex items-center">
+                        <div class="w-4 h-4 rounded-full border border-gray-500">
+                          <p class="text-xs text-gray-500">i</p>
+                        </div>
+                      </div>
+                    </Tooltip>
                   </div>
                   <span className="text-emerald-400">
                     {formatToReal(estimatedCost.efficiency.medium_efficiency)}
@@ -504,9 +522,15 @@ export default function PriceCalculatorIsland() {
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
                     <span>Não otimizado</span>
-                    <button className="text-gray-400 hover:text-white">
-                      ℹ️
-                    </button>
+                    <Tooltip
+                      dataTip={"Ainda mais banda e requisições por pageview. Requisições / pageview = 10,1. Banda / pageview = 1,0 GB"}
+                    >
+                      <div class="relative inline-flex items-center">
+                        <div class="w-4 h-4 rounded-full border border-gray-500">
+                          <p class="text-xs text-gray-500">i</p>
+                        </div>
+                      </div>
+                    </Tooltip>
                   </div>
                   <span className="text-emerald-400">
                     {formatToReal(estimatedCost.efficiency.not_optimized)}

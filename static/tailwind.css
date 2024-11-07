@@ -9382,6 +9382,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
 .border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
@@ -10339,6 +10343,9 @@ details.collapse summary::-webkit-details-marker {
 .pl-1 {
   padding-left: 0.25rem;
 }
+.pl-16 {
+  padding-left: 4rem;
+}
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -10437,6 +10444,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-3 {
   padding-top: 0.75rem;
+}
+.pt-32 {
+  padding-top: 8rem;
 }
 .pt-36 {
   padding-top: 9rem;
