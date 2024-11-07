@@ -17,6 +17,12 @@
       "section": {
         "__resolveType": "Deco Footer [EN]"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/WebdrawWrapper.tsx"
+      }
     }
   ],
   "seo": {
