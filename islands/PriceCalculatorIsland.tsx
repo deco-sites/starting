@@ -80,7 +80,7 @@ export default function PriceCalculatorIsland() {
     "w-full bg-black border border-gray-700 rounded-md p-2 text-white focus:border-emerald-400 focus:outline-none focus:ring-1 focus:ring-emerald-400";
 
   return (
-    <div className="bg-black text-white min-h-screen p-8">
+    <div className="bg-black text-white min-h-screen p-8 pt-64">
       <div className="max-w-6xl mx-auto">
         <div className="bg-black w-full mb-8">
           <h1
@@ -625,7 +625,7 @@ function calculateScenario(pageviews: number, infrastructureType: string) {
 
   const bandwidth = pageviews * bandwidthCost;
   const request = pageviews * requestCost * 0.0004;
-  const total = bandwidth + request;
+  const total = bandwidth + request * 0.005;
 
   return { total, bandwidth, request };
 }
