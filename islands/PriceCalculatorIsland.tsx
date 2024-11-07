@@ -623,9 +623,9 @@ function calculateScenario(pageviews: number, infrastructureType: string) {
   const { bandwidth: bandwidthCost, request: requestCost } =
     EFFICIENTY_COSTS[infrastructureType];
 
-  const bandwidth = pageviews * bandwidthCost;
+  const bandwidth = pageviews * bandwidthCost * 0.025;
   const request = pageviews * requestCost * 0.0004;
-  const total = bandwidth + request * 0.00005;
+  const total = bandwidth + request;
 
   return { total, bandwidth, request };
 }
