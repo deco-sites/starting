@@ -102,7 +102,7 @@ export default function PriceCalculatorIsland() {
 
             <div className="space-y-6">
               {/* Currency Selection */}
-              <div>
+              {/* <div>
                 <label className="block font-medium mb-2">Moeda</label>
                 <select
                   className={inputStyle}
@@ -112,6 +112,13 @@ export default function PriceCalculatorIsland() {
                 >
                   <option value="BRL">BRL (R$)</option>
                 </select>
+              </div> */}
+
+              <div>
+                <label className="block font-medium mb-2">Moeda</label>
+                <div className={inputStyle}>
+                  BRL (R$)
+                </div>
               </div>
 
               {/* Plans */}
