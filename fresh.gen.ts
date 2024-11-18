@@ -54,6 +54,7 @@ import * as $OnThisPage from "./islands/OnThisPage.tsx";
 import * as $PopUp from "./islands/PopUp.tsx";
 import * as $PopularDocuments from "./islands/PopularDocuments.tsx";
 import * as $PriceCalculatorIsland from "./islands/PriceCalculatorIsland.tsx";
+import * as $PriceCalculatorIslandEN from "./islands/PriceCalculatorIslandEN.tsx";
 import * as $Projects from "./islands/Projects.tsx";
 import * as $RankingAnalyze from "./islands/RankingAnalyze.tsx";
 import * as $RankingHeader from "./islands/RankingHeader.tsx";
@@ -125,6 +126,7 @@ const manifest = {
     "./islands/PopUp.tsx": $PopUp,
     "./islands/PopularDocuments.tsx": $PopularDocuments,
     "./islands/PriceCalculatorIsland.tsx": $PriceCalculatorIsland,
+    "./islands/PriceCalculatorIslandEN.tsx": $PriceCalculatorIslandEN,
     "./islands/Projects.tsx": $Projects,
     "./islands/RankingAnalyze.tsx": $RankingAnalyze,
     "./islands/RankingHeader.tsx": $RankingHeader,

@@ -1,0 +1,16 @@
+{
+  "name": "EN pricing calculator 2025",
+  "path": "/en/pricing-calculator-2025",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/priceCalculatorEN.tsx"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

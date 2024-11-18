@@ -14,7 +14,7 @@ interface INPUT {
 
 export default function PriceCalculatorIsland() {
   const [inputs, setInputs] = useState({
-    currency: "BRL",
+    currency: "USD",
     plan: "enterprise",
     hosting: "cloud",
     builder_seats: 0,
@@ -44,8 +44,11 @@ export default function PriceCalculatorIsland() {
   function updateCosts() {
     const infrastructureCost = calculateInfrastructure(inputs);
     const { total, bandwidth, request } =
-      infrastructureCost.selectedInfrastructure ||
-      { total: 0, bandwidth: 0, request: 0 };
+      infrastructureCost.selectedInfrastructure || {
+        total: 0,
+        bandwidth: 0,
+        request: 0,
+      };
     const seatsCost = calculateSeats(inputs);
     const supportCost = calculateSupport(inputs);
 
@@ -92,37 +95,38 @@ export default function PriceCalculatorIsland() {
               letterSpacing: "0.1em",
             }}
           >
-            Calculadora de preços deco.cx
+            deco.cx Price Calculator
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column - Configurations */}
           <div className="bg-black p-6 rounded-lg border border-gray-800">
-            <h2 className="text-2xl font-semibold mb-6">Configurações</h2>
+            <h2 className="text-2xl font-semibold mb-6">Configurations</h2>
 
             <div className="space-y-6">
               {/* Currency Selection */}
               <div>
-                <label className="block font-medium mb-2">Moeda</label>
+                <label className="block font-medium mb-2">Currency</label>
                 <select
                   className={inputStyle}
                   value={inputs.currency}
                   onChange={(e) =>
-                    setInputs({ ...inputs, currency: e.target.value })}
+                    setInputs({ ...inputs, currency: e.target.value })
+                  }
                 >
-                  <option value="BRL">BRL (R$)</option>
+                  <option value="USD">USD ($)</option>
                 </select>
               </div>
 
               {/* Plans */}
               <div>
-                <label className="block font-medium mb-2">Planos</label>
+                <label className="block font-medium mb-2">Plans</label>
                 <p className="text-sm text-gray-400 mb-2">
-                  Não sabe qual é para você? Veja os{" "}
+                  Not sure which one is for you? See the{" "}
                   <a href="#" className="text-emerald-400">
-                    recursos incluídos
+                    features included
                   </a>{" "}
-                  em cada plano.
+                  in each plan.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <button
@@ -163,10 +167,10 @@ export default function PriceCalculatorIsland() {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium mb-1">
-                      No. de licenças - Builder
+                      No. of licenses - Builder
                     </label>
                     <p className="text-xs text-gray-400 mb-2">
-                      Acesso irrestrito para desenvolver e orquestrar
+                      Unrestricted access to develop and orchestrate
                     </p>
                     <input
                       type="number"
@@ -183,10 +187,10 @@ export default function PriceCalculatorIsland() {
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-1">
-                      No. de licenças - Content Editor
+                      No. of licenses - Content Editor
                     </label>
                     <p className="text-xs text-gray-400 mb-2">
-                      Acesso para editar conteúdos e utilizar dados
+                      Access to edit content and use data
                     </p>
                     <input
                       type="number"
@@ -205,15 +209,13 @@ export default function PriceCalculatorIsland() {
                 </div>
               </div>
 
-              <div
-                className={`${inputs.plan === "enterprise" ? "hidden" : ""}`}
-              >
+              <div className={`${inputs.plan === "enterprise" ? "hidden" : ""}`}>
                 <div>
                   <label className="block text-sm font-medium mb-1">
-                    No. de licenças
+                    No. of licenses
                   </label>
                   <p className="text-xs text-gray-400 mb-2">
-                    Acesso a todos os recursos do plano Pro
+                    Access to all features of the Pro plan
                   </p>
                   <input
                     type="number"
@@ -232,10 +234,9 @@ export default function PriceCalculatorIsland() {
 
               {/* Infrastructure */}
               <div>
-                <label className="block font-medium mb-2">Infraestrutura</label>
+                <label className="block font-medium mb-2">Infrastructure</label>
                 <p className="text-sm text-gray-400 mb-2">
-                  Escolha entre infra 100% gerenciada ou hospede projetos você
-                  mesmo.
+                  Choose between 100% managed infra or host projects yourself.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <button
@@ -271,11 +272,11 @@ export default function PriceCalculatorIsland() {
               {/* Pageviews */}
               <div>
                 <label className="block font-medium mb-2">
-                  Pageviews mensais esperados
+                  Expected monthly pageviews
                 </label>
                 <p className="text-sm text-gray-400 mb-2">
-                  Para calcular multiplique sessões por média de páginas
-                  visitadas / sessão
+                  To calculate, multiply sessions by average pages visited per
+                  session
                 </p>
                 <input
                   type="number"
@@ -290,25 +291,25 @@ export default function PriceCalculatorIsland() {
                   }}
                 />
                 <p className="text-xs text-gray-400 mt-2 italic">
-                  Nota: Embora o custo agora seja calculado com base em
-                  requisições e consumo de banda, pedimos a média de pageviews
-                  mensais porque é mais fácil de estimar, especialmente para
-                  novos clientes. Usaremos esse número como uma referência para
-                  simulações e projeções de custos.
+                  Note: Although the cost is now calculated based on requests
+                  and bandwidth consumption, we ask for the average monthly
+                  pageviews because it is easier to estimate, especially for new
+                  clients. We will use this number as a reference for
+                  simulations and cost projections.
                 </p>
               </div>
 
               {/* Support Packages */}
               <div>
                 <label className="block font-medium mb-2">
-                  Pacotes de suporte
+                  Support Packages
                 </label>
                 <p className="text-sm text-gray-400 mb-2">
-                  Não sabe qual é para você? Veja os{" "}
+                  Not sure which one is for you? See the{" "}
                   <a href="#" className="text-emerald-400">
-                    recursos incluídos
+                    features included
                   </a>{" "}
-                  em cada pacote.
+                  in each package.
                 </p>
                 <div className="grid grid-cols-3 gap-4">
                   <button
@@ -357,44 +358,41 @@ export default function PriceCalculatorIsland() {
 
           {/* Right Column - Estimated Costs */}
           <div className="bg-black p-6 rounded-lg border border-gray-800">
-            <h2 className="text-2xl font-semibold mb-6">Custos estimados</h2>
+            <h2 className="text-2xl font-semibold mb-6">Estimated Costs</h2>
 
             <div className="space-y-4">
               {/* License Cost */}
               <div className="flex justify-between items-center">
-                <span>Licenciamento de seats</span>
+                <span>Seat Licensing</span>
                 <span className="text-emerald-400">
-                  {formatToReal(estimatedCost.seats)}
+                  {formatToCurrency(estimatedCost.seats, inputs.currency)}
                 </span>
               </div>
 
               {/* Infrastructure */}
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
-                  <span>Infraestrutura</span>
-                  <div
-                    className={`${inputs.hosting === "self" ? "hidden" : ""}`}
-                  >
+                  <span>Infrastructure</span>
+                  <div className={`${inputs.hosting === "self" ? "hidden" : ""}`}>
                     <span className="text-emerald-400">
-                      {formatToReal(estimatedCost.infrastructure.total)}
+                      {formatToCurrency(
+                        estimatedCost.infrastructure.total,
+                        inputs.currency
+                      )}
                     </span>
                   </div>
-                  <div
-                    className={`${inputs.hosting === "cloud" ? "hidden" : ""}`}
-                  >
+                  <div className={`${inputs.hosting === "cloud" ? "hidden" : ""}`}>
                     <a
                       href="https://meetings.hubspot.com/leandro-borges/alinhamento-clientes-e-parceiros?uuid=444532e8-38a1-497f-96b1-7c7fb7753698"
-                      target= "_blank"
+                      target="_blank"
                       className="underline"
                     >
-                      Fale com o nosso time de vendas
+                      Talk to our sales team
                     </a>
                   </div>
                 </div>
 
-                <div
-                  className={`${inputs.hosting === "self" ? "hidden" : ""}`}
-                >
+                <div className={`${inputs.hosting === "self" ? "hidden" : ""}`}>
                   <div className="justify-center pl-16 py-4">
                     <label className="flex items-center gap-2">
                       <input
@@ -409,12 +407,14 @@ export default function PriceCalculatorIsland() {
                         }}
                         className="accent-emerald-400"
                       />
-                      <span>Eficiente</span>
+                      <span>Efficient</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input
                         type="radio"
-                        checked={inputs.infrastructure === "medium_efficiency"}
+                        checked={
+                          inputs.infrastructure === "medium_efficiency"
+                        }
                         onChange={() => {
                           setInputs({
                             ...inputs,
@@ -424,7 +424,7 @@ export default function PriceCalculatorIsland() {
                         }}
                         className="accent-emerald-400"
                       />
-                      <span>Eficiência média</span>
+                      <span>Medium Efficiency</span>
                     </label>
                     <label className="flex items-center gap-2">
                       <input
@@ -439,21 +439,27 @@ export default function PriceCalculatorIsland() {
                         }}
                         className="accent-emerald-400"
                       />
-                      <span>Não otimizado</span>
+                      <span>Not Optimized</span>
                     </label>
                   </div>
 
                   <div className="flex justify-between items-center pl-4">
-                    <span className="text-sm">Banda</span>
+                    <span className="text-sm">Bandwidth</span>
                     <span className="text-sm text-emerald-400">
-                      {formatToReal(estimatedCost.infrastructure.bandwidth)}
+                      {formatToCurrency(
+                        estimatedCost.infrastructure.bandwidth,
+                        inputs.currency
+                      )}
                     </span>
                   </div>
 
                   <div className="flex justify-between items-center pl-4">
-                    <span className="text-sm">Request</span>
+                    <span className="text-sm">Requests</span>
                     <span className="text-sm text-emerald-400">
-                      {formatToReal(estimatedCost.infrastructure.request)}
+                      {formatToCurrency(
+                        estimatedCost.infrastructure.request,
+                        inputs.currency
+                      )}
                     </span>
                   </div>
                 </div>
@@ -461,18 +467,18 @@ export default function PriceCalculatorIsland() {
 
               {/* Support */}
               <div className="flex justify-between items-center">
-                <span>Suporte</span>
+                <span>Support</span>
                 <span className="text-emerald-400">
-                  {formatToReal(estimatedCost.support)}
+                  {formatToCurrency(estimatedCost.support, inputs.currency)}
                 </span>
               </div>
 
               {/* Total Cost */}
               <div className="pt-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
-                  <span className="font-semibold">Custo Mensal Total</span>
+                  <span className="font-semibold">Total Monthly Cost</span>
                   <span className="text-xl font-bold text-emerald-400">
-                    {formatToReal(estimatedCost.total)}
+                    {formatToCurrency(estimatedCost.total, inputs.currency)}
                   </span>
                 </div>
               </div>
@@ -481,66 +487,81 @@ export default function PriceCalculatorIsland() {
             {/* Infrastructure Efficiency Scenarios */}
             <div className="mt-8">
               <h3 className="font-semibold text-lg mb-4">
-                Cenários de eficiência da infraestrutura
+                Infrastructure Efficiency Scenarios
               </h3>
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
-                    <span>Eficiente</span>
+                    <span>Efficient</span>
                     <Tooltip
-                      dataTip={"Menos banda e requisições por pageview. Requisições / pageview = 7,0. Banda / pageview = 0,3 GB"}
+                      dataTip={
+                        "Less bandwidth and requests per pageview. Requests/pageview = 7.0. Bandwidth/pageview = 0.3 GB"
+                      }
                     >
-                      <div class="relative inline-flex items-center">
-                        <div class="w-4 h-4 rounded-full border border-gray-500">
-                          <p class="text-xs text-gray-500">i</p>
+                      <div className="relative inline-flex items-center">
+                        <div className="w-4 h-4 rounded-full border border-gray-500">
+                          <p className="text-xs text-gray-500">i</p>
                         </div>
                       </div>
                     </Tooltip>
                   </div>
                   <span className="text-emerald-400">
-                    {formatToReal(estimatedCost.efficiency.efficient)}
+                    {formatToCurrency(
+                      estimatedCost.efficiency.efficient,
+                      inputs.currency
+                    )}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
-                    <span>Eficiência média</span>
+                    <span>Medium Efficiency</span>
 
                     <Tooltip
-                      dataTip={"Mais banda e requisições por pageview. Requisições / pageview = 8,6. Banda / pageview = 0,7 GB"}
+                      dataTip={
+                        "More bandwidth and requests per pageview. Requests/pageview = 8.6. Bandwidth/pageview = 0.7 GB"
+                      }
                     >
-                      <div class="relative inline-flex items-center">
-                        <div class="w-4 h-4 rounded-full border border-gray-500">
-                          <p class="text-xs text-gray-500">i</p>
+                      <div className="relative inline-flex items-center">
+                        <div className="w-4 h-4 rounded-full border border-gray-500">
+                          <p className="text-xs text-gray-500">i</p>
                         </div>
                       </div>
                     </Tooltip>
                   </div>
                   <span className="text-emerald-400">
-                    {formatToReal(estimatedCost.efficiency.medium_efficiency)}
+                    {formatToCurrency(
+                      estimatedCost.efficiency.medium_efficiency,
+                      inputs.currency
+                    )}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
-                    <span>Não otimizado</span>
+                    <span>Not Optimized</span>
                     <Tooltip
-                      dataTip={"Ainda mais banda e requisições por pageview. Requisições / pageview = 10,1. Banda / pageview = 1,0 GB"}
+                      dataTip={
+                        "Even more bandwidth and requests per pageview. Requests/pageview = 10.1. Bandwidth/pageview = 1.0 GB"
+                      }
                     >
-                      <div class="relative inline-flex items-center">
-                        <div class="w-4 h-4 rounded-full border border-gray-500">
-                          <p class="text-xs text-gray-500">i</p>
+                      <div className="relative inline-flex items-center">
+                        <div className="w-4 h-4 rounded-full border border-gray-500">
+                          <p className="text-xs text-gray-500">i</p>
                         </div>
                       </div>
                     </Tooltip>
                   </div>
                   <span className="text-emerald-400">
-                    {formatToReal(estimatedCost.efficiency.not_optimized)}
+                    {formatToCurrency(
+                      estimatedCost.efficiency.not_optimized,
+                      inputs.currency
+                    )}
                   </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </div>
   );
 }
@@ -568,52 +589,52 @@ function calculateSeats(inputs: INPUT) {
   if (plan === "enterprise") {
     /// Builder
     if (builder_seats > 100) {
-      seats += builder_seats * 250;
+      seats += builder_seats * 50;
     } else if (builder_seats > 50) {
-      seats += 25000;
+      seats += 5000;
     } else if (builder_seats > 20) {
-      seats += 15000;
+      seats += 3000;
     } else if (builder_seats > 10) {
-      seats += 7000;
+      seats += 1400;
     } else if (builder_seats > 5) {
-      seats += 4000;
+      seats += 800;
     } else if (builder_seats > 1) {
-      seats += 2250;
+      seats += 450;
     } else if (builder_seats === 1) {
-      seats += 500;
+      seats += 100;
     }
 
     /// Content Editor
     if (content_editor_seats > 100) {
-      seats += content_editor_seats * 125;
+      seats += content_editor_seats * 25;
     } else if (content_editor_seats > 50) {
-      seats += 12500;
+      seats += 2500;
     } else if (content_editor_seats > 20) {
-      seats += 7500;
+      seats += 1500;
     } else if (content_editor_seats > 10) {
-      seats += 3500;
+      seats += 700;
     } else if (content_editor_seats > 5) {
-      seats += 2000;
+      seats += 400;
     } else if (content_editor_seats > 1) {
-      seats += 1125;
+      seats += 225;
     } else if (content_editor_seats === 1) {
-      seats += 250;
+      seats += 50;
     }
   } else {
     if (general_seats > 100) {
-      seats += 30 * general_seats;
+      seats += 6 * general_seats;
     } else if (general_seats > 50) {
-      seats += 3000;
+      seats += 600;
     } else if (general_seats > 20) {
-      seats += 1750;
+      seats += 350;
     } else if (general_seats > 10) {
-      seats += 800;
+      seats += 160;
     } else if (general_seats > 5) {
-      seats += 450;
+      seats += 90;
     } else if (general_seats > 1) {
-      seats += 250;
+      seats += 50;
     } else if (general_seats === 1) {
-      seats += 55;
+      seats += 11;
     }
   }
 
@@ -633,9 +654,10 @@ function calculateInfrastructure(inputs: INPUT) {
     efficient: calculateScenario(pageviews, "efficient"),
   };
 
-  const selectedInfrastructure = (hosting === "self")
-    ? { total: 0, bandwidth: 0, request: 0 }
-    : result[infrastructure];
+  const selectedInfrastructure =
+    hosting === "self"
+      ? { total: 0, bandwidth: 0, request: 0 }
+      : result[infrastructure];
 
   return {
     selectedInfrastructure,
@@ -647,8 +669,8 @@ function calculateScenario(pageviews: number, infrastructureType: string) {
   const { bandwidth: bandwidthCost, request: requestCost } =
     EFFICIENTY_COSTS[infrastructureType];
 
-  const bandwidth = pageviews * bandwidthCost * 0.005;
-  const request = pageviews * requestCost * 0.0004;
+  const bandwidth = pageviews * bandwidthCost * 0.001;
+  const request = pageviews * requestCost * 0.00008;
   const total = bandwidth + request;
 
   return { total, bandwidth, request };
@@ -664,20 +686,20 @@ function calculateSupport(input: INPUT) {
       cost = 0;
       break;
     case "premium":
-      cost = 5000;
+      cost = 1000;
       break;
     case "enterprise":
-      cost = 10000;
+      cost = 2000;
       break;
   }
 
   return cost;
 }
 
-function formatToReal(value: number) {
-  return value.toLocaleString("pt-BR", {
+function formatToCurrency(value: number, currency: string) {
+  return value.toLocaleString("en-US", {
     style: "currency",
-    currency: "BRL",
+    currency: currency,
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });

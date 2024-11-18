@@ -171,6 +171,7 @@ import * as $$$$$$143 from "./sections/Partner.tsx";
 import * as $$$$$$144 from "./sections/PopularDocuments.tsx";
 import * as $$$$$$145 from "./sections/PopularTopics.tsx";
 import * as $$$$$$171 from "./sections/priceCalculator.tsx";
+import * as $$$$$$172 from "./sections/priceCalculatorEN.tsx";
 import * as $$$$$$146 from "./sections/Pricing.tsx";
 import * as $$$$$$147 from "./sections/PricingTiers.tsx";
 import * as $$$$$$148 from "./sections/PricingValue.tsx";
@@ -190,7 +191,7 @@ import * as $$$$$$161 from "./sections/Thanks.tsx";
 import * as $$$$$$162 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$163 from "./sections/Theme/ThemeHints.tsx";
 import * as $$$$$$164 from "./sections/TripletBanner.tsx";
-import * as $$$$$$172 from "./sections/tuju/Form.tsx";
+import * as $$$$$$173 from "./sections/tuju/Form.tsx";
 import * as $$$$$$165 from "./sections/WasThisPageHelpful.tsx";
 import * as $$$$$$166 from "./sections/WebdrawWrapper.tsx";
 import * as $$$$$$167 from "./sections/Webinar/Content.tsx";
@@ -366,6 +367,7 @@ const manifest = {
     "site/sections/PopularDocuments.tsx": $$$$$$144,
     "site/sections/PopularTopics.tsx": $$$$$$145,
     "site/sections/priceCalculator.tsx": $$$$$$171,
+    "site/sections/priceCalculatorEN.tsx": $$$$$$172,
     "site/sections/Pricing.tsx": $$$$$$146,
     "site/sections/PricingTiers.tsx": $$$$$$147,
     "site/sections/PricingValue.tsx": $$$$$$148,
@@ -385,7 +387,7 @@ const manifest = {
     "site/sections/Theme/Theme.tsx": $$$$$$162,
     "site/sections/Theme/ThemeHints.tsx": $$$$$$163,
     "site/sections/TripletBanner.tsx": $$$$$$164,
-    "site/sections/tuju/Form.tsx": $$$$$$172,
+    "site/sections/tuju/Form.tsx": $$$$$$173,
     "site/sections/WasThisPageHelpful.tsx": $$$$$$165,
     "site/sections/WebdrawWrapper.tsx": $$$$$$166,
     "site/sections/Webinar/Content.tsx": $$$$$$167,
