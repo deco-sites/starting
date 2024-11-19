@@ -828,8 +828,8 @@
                   "shouldAddPaddingTopAndBottom": true,
                   "title": "<p>Webdev Engine</p>",
                   "alert": {
-                    "text": "Meet Webdraw.ai: the first AI Canvas IDE",
-                    "mobileText": "Webdraw.ai: the first AI Canvas IDE",
+                    "text": "Try the fastest way to get started with deco: Webdraw",
+                    "mobileText": "Get started quickly with deco: Webdraw",
                     "href": "https://webdraw.ai/"
                   }
                 },
