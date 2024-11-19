@@ -88,7 +88,7 @@ export default function PriceCalculatorIsland() {
             className="text-2xl sm:text-2xl md:text-3xl font-mono text-[#02F67C] tracking-wider text-center"
             style={{
               textShadow: "0 0 10px rgba(2, 246, 124, 0.5)",
-              fontFamily: "'Argent Pixel', monospace",
+              fontFamily: "'Albert Sanss', monospace",
               letterSpacing: "0.1em",
             }}
           >
