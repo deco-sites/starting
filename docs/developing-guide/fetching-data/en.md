@@ -53,8 +53,8 @@ Note that the only thing we care about is the "facts" property. Therefore, we
 will create a section that is prepared to receive these facts and render them in
 any way we want.
 
-To do this, we will create a type called DogFact that contains only one property
-called fact, which is the string represented by the message.
+To do this, we will create a type called `DogFact` that contains only one property
+called `fact`, which is the `string` represented by the message.
 
 Let's see this in action by creating a new section:
 
@@ -82,9 +82,9 @@ export default function DogFacts({ title, dogFacts }: Props) {
 }
 ```
 
-> At this point, you can check in the admin (in your local environment) that
-> this component can already be used with static data, which doesn't make much
-> sense for our use case.
+> At this point, you can run `deno task start` and check in the admin
+> (in your local environment) that this component can already be used with
+> static data, which doesn't make much sense for our use case.
 
 ## 2. Creating the Loader and testing the Section
 
@@ -99,6 +99,10 @@ Loader** (the return type of the Loader is the input type of the Section).
 
 1. Define what will be the input `Props` of your loader.
 2. Export a function called `loader` in the same file as your Section.
+
+In our case, we'll make the number of facts shown in our component configurable.
+Note that now, what will appear to be configured will no longer be the props of
+the section, but rather the props of your loader.
 
 ```tsx
 import type { SectionProps } from "deco/mod.ts";
