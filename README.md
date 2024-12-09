@@ -1,4 +1,4 @@
-# Deco Landing Page     
+# Deco.cx
   
 Welcome to your live site!
 
