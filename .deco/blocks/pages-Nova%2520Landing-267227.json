@@ -814,7 +814,7 @@
                       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2dcb3c54-ff6f-4f9c-a9ae-573b4729f73b"
                     }
                   ],
-                  "pixelTitle": "<p><strong><span style=\"color: #02f67c\">The TypeScript-powered</span></strong></p>",
+                  "pixelTitle": "<p><strong><span style=\"color: rgb(2, 246, 124)\">High-performance</span></strong></p>",
                   "showRadialOnTop": true,
                   "ctas": [
                     {
@@ -824,9 +824,9 @@
                       "trackID": "bt-click-signup"
                     }
                   ],
-                  "subTitle": "<p>How developers build and evolve enterprise-grade, full-stack web apps 10x faster.</p>",
+                  "subTitle": "<p>How leading brands build and evolve enterprise-grade storefronts 10x faster.</p>",
                   "shouldAddPaddingTopAndBottom": true,
-                  "title": "<p>Webdev Engine</p>",
+                  "title": "<p>commerce experiences</p>",
                   "alert": {
                     "text": "Try the fastest way to get started with deco: Webdraw",
                     "mobileText": "Get started quickly with deco: Webdraw",
