@@ -8,7 +8,7 @@ export default defineApp(async (_req, ctx) => {
     <>
       <Head>
         <link href={styleHref} rel="stylesheet" />
-        <script defer src="/onedollarstats/tracker.js"></script>
+        <script defer src="/onedollarstats/tracker.js?1"></script>
       </Head>
       <GlobalTags />
       <ctx.Component />
