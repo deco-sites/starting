@@ -1,0 +1,8 @@
+{
+  "redirect": {
+    "from": "/cadastrofornecedor",
+    "to": "https://airtable.com/appBanRKbYqfcTiSI/shrg4xIwj719HFV5u",
+    "type": "temporary"
+  },
+  "__resolveType": "website/loaders/redirect.ts"
+}
