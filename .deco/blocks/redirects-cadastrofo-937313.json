@@ -1,7 +1,7 @@
 {
   "redirect": {
     "from": "/cadastrofornecedor",
-    "to": "https://airtable.com/appBanRKbYqfcTiSI/shrg4xIwj719HFV5u",
+    "to": "https://airtable.com/appBanRKbYqfcTiSI/shr96SsnHX3bbEukI",
     "type": "temporary"
   },
   "__resolveType": "website/loaders/redirect.ts"
