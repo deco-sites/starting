@@ -1,1 +1,145 @@
-{"name":"Community / EN","path":"/en/community","sections":[{"__resolveType":"GTM"},{"__resolveType":"HeaderV2"},{"__resolveType":"site/sections/General/Spacer.tsx"},{"__resolveType":"site/sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx","props":{"graph":{"title":"Community members","IdGuild":"985687648595243068","buttonHref":"teste","buttonLabel":"teste","tokenDiscord":{"__resolveType":"website/loaders/secret.ts","name":"DISCORD_TOKEN","encrypted":"bebd1beb09314599e43c0497c01109a111e03910c6066dc0106e8601bad454b6dbd9b1de184ab113e38852314413dd27d2ebfd6b4c7e72bc4dc6fba8756f89f97b9581d13894e55ce0c815a08466f397"}},"posts":{"title":"teste","quantity":10,"buttonHref":"teste","buttonLabel":"teste"},"title":"Backed by a high-growth community","subTitle":"<p class=\"text-[16px] md:text-[24px] text-[#A1A1AA] leading-[150%]\" style=\"line-height: 1.2;\" data-mce-style=\"line-height: 1.2;\">We are building the largest multiplatform ecommerce community — forming the Elite Web Development on a mission to simplify the web itself.</p>","emojiCommunity":{"title":"<p>Join our thriving community</p>","button":{"href":"https://discord.com/invite/9fkbcvR833","label":"Join Now "},"buttons":[{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc","color":"#76CAD0","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc","color":"#76CAD0","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc","color":"#76CAD0","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc","color":"#76CAD0","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc","color":"#76CAD0","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc","color":"#76CAD0","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc","color":"#76CAD0","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc","color":"#76CAD0","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86","color":"#DA8FFF","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86","color":"#02F67C","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86","color":"#02F67C","label":"teste"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86","color":"#FDE047","label":"teste"}]}}},{"__resolveType":"site/sections/Benefits.tsx","cards":[{"href":"https://deco.camp/","icon":"Book","text":"A self-paced bootcamp for students. Learn web dev for ecommerce from scratch using our modern technologies.","title":"deco.camp"},{"href":"https://discord.gg/YsGgt8EQCZ","icon":"Bag","text":"We list all full-time job positions that we come across with in the ecommerce ecosystem, and you can share your listings too.","title":"Job positions"},{"href":"//experts.deco.cx","icon":"Cash","text":"Monetize your skills by completing short-term projects and achieving specific outcomes for clients using deco.cx.","title":"Bounties"},{"href":"https://discord.gg/YsGgt8EQCZ","icon":"Support","text":"We offer specialized support to help solve technical issues and answer questions about our platform and technologies.","title":"Support"}]},{"__resolveType":"Deco Footer [EN]"}],"__resolveType":"$live/pages/LivePage.tsx","seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx","title":"Community / EN"}}
+{
+  "name": "Community / EN",
+  "path": "/en/community",
+  "sections": [
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "site/sections/General/Spacer.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Camp/GraphAndEmoji/GraphAndEmoji.tsx",
+      "props": {
+        "graph": {
+          "title": "Community members",
+          "IdGuild": "985687648595243068",
+          "buttonHref": "teste",
+          "buttonLabel": "teste",
+          "tokenDiscord": {
+            "__resolveType": "website/loaders/secret.ts",
+            "name": "DISCORD_TOKEN",
+            "encrypted": "bebd1beb09314599e43c0497c01109a111e03910c6066dc0106e8601bad454b6dbd9b1de184ab113e38852314413dd27d2ebfd6b4c7e72bc4dc6fba8756f89f97b9581d13894e55ce0c815a08466f397"
+          }
+        },
+        "posts": {
+          "title": "teste",
+          "quantity": 10,
+          "buttonHref": "teste",
+          "buttonLabel": "teste"
+        },
+        "title": "Backed by a high-growth community",
+        "subTitle": "<p class=\"text-[16px] md:text-[24px] text-[#A1A1AA] leading-[150%]\" style=\"line-height: 1.2;\" data-mce-style=\"line-height: 1.2;\">We are building the largest multiplatform ecommerce community — forming the Elite Web Development on a mission to simplify the web itself.</p>",
+        "emojiCommunity": {
+          "title": "<p>Join our thriving community</p>",
+          "button": {
+            "href": "https://deco.cx/discord",
+            "label": "Join Now "
+          },
+          "buttons": [
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+              "color": "#76CAD0",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+              "color": "#76CAD0",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+              "color": "#76CAD0",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+              "color": "#76CAD0",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+              "color": "#76CAD0",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+              "color": "#76CAD0",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+              "color": "#76CAD0",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/c8d33811-7a7e-4580-9479-c2114d1730bc",
+              "color": "#76CAD0",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+              "color": "#DA8FFF",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+              "color": "#02F67C",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+              "color": "#02F67C",
+              "label": "teste"
+            },
+            {
+              "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4376/e770b622-afb3-4122-910f-4821eea7df86",
+              "color": "#FDE047",
+              "label": "teste"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "__resolveType": "site/sections/Benefits.tsx",
+      "cards": [
+        {
+          "href": "https://deco.camp/",
+          "icon": "Book",
+          "text": "A self-paced bootcamp for students. Learn web dev for ecommerce from scratch using our modern technologies.",
+          "title": "deco.camp"
+        },
+        {
+          "href": "https://discord.gg/YsGgt8EQCZ",
+          "icon": "Bag",
+          "text": "We list all full-time job positions that we come across with in the ecommerce ecosystem, and you can share your listings too.",
+          "title": "Job positions"
+        },
+        {
+          "href": "//experts.deco.cx",
+          "icon": "Cash",
+          "text": "Monetize your skills by completing short-term projects and achieving specific outcomes for clients using deco.cx.",
+          "title": "Bounties"
+        },
+        {
+          "href": "https://discord.gg/YsGgt8EQCZ",
+          "icon": "Support",
+          "text": "We offer specialized support to help solve technical issues and answer questions about our platform and technologies.",
+          "title": "Support"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Community / EN"
+  }
+}
