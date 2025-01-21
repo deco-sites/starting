@@ -345,8 +345,7 @@ const tableOfContents: TableOfContents = [
               pt: "Dados padronizados",
               en: "Standard data types",
             },
-            slug:
-              "developing-capabilities/section-properties/standard-data-types",
+            slug: "developing-capabilities/section-properties/standard-data-types",
           },
           {
             title: {
@@ -387,6 +386,7 @@ const tableOfContents: TableOfContents = [
       {
         title: { pt: "Loaders", en: "Loaders" },
         slug: "developing-capabilities/loaders",
+        
       },
       {
         title: { pt: "Islands", en: "Islands" },
@@ -441,6 +441,13 @@ const tableOfContents: TableOfContents = [
           en: "Modifying the return status of a page",
         },
         slug: "developing-capabilities/modifying-status",
+      },
+      {
+        title: {
+          pt: "Gerenciando o Acesso de um Bloco",
+          en: "Managing Block Access",
+        },
+        slug: "developing-capabilities/manage-block-access",
       },
       {
         title: {
@@ -657,7 +664,7 @@ const tableOfContentsBySlug = tableOfContents.reduce((acc, cur) => {
 
 function addEntriesToAccumulator(
   acc: Record<string, TopLevelEntry>,
-  entry: TopLevelEntry,
+  entry: TopLevelEntry
 ) {
   if (entry.slug) {
     acc[entry.slug] = entry;
@@ -692,7 +699,7 @@ type NextOrPrevious = { title?: string; category?: string; href?: string };
 
 const getNextPreviousForEntry = (
   language: SupportedLanguages,
-  entry: TopLevelEntry,
+  entry: TopLevelEntry
 ): NextOrPrevious => ({
   href: `/docs/${language}/${entry.slug}`,
   title: entry.title?.[language],
@@ -700,29 +707,33 @@ const getNextPreviousForEntry = (
 
 export const getNextAndPreviousPost = (
   language: SupportedLanguages,
-  slug: string,
+  slug: string
 ) => {
   const tableOfContentsEntries = tableOfContents.reduce((entries, cur) => {
     return entries.concat(
-      [cur, ...(cur.children || [])].filter(({ slug }) => slug),
+      [cur, ...(cur.children || [])].filter(({ slug }) => slug)
     );
   }, [] as TopLevelEntry[]);
 
   const currentIndex = tableOfContentsEntries.findLastIndex(
-    ({ slug: currentSlug }) => currentSlug && slug.includes(currentSlug),
+    ({ slug: currentSlug }) => currentSlug && slug.includes(currentSlug)
   );
 
-  const previous = currentIndex === 0 ? undefined : getNextPreviousForEntry(
-    language,
-    tableOfContentsEntries[currentIndex - 1],
-  );
+  const previous =
+    currentIndex === 0
+      ? undefined
+      : getNextPreviousForEntry(
+          language,
+          tableOfContentsEntries[currentIndex - 1]
+        );
 
-  const next = currentIndex === tableOfContentsEntries.length - 1
-    ? undefined
-    : getNextPreviousForEntry(
-      language,
-      tableOfContentsEntries[currentIndex + 1],
-    );
+  const next =
+    currentIndex === tableOfContentsEntries.length - 1
+      ? undefined
+      : getNextPreviousForEntry(
+          language,
+          tableOfContentsEntries[currentIndex + 1]
+        );
 
   return {
     previous,
