@@ -1,0 +1,8 @@
+{
+  "redirect": {
+    "from": "/recurringsuppliers",
+    "to": "https://airtable.com/appBanRKbYqfcTiSI/shrhUaKYfUdlczeYO",
+    "type": "temporary"
+  },
+  "__resolveType": "website/loaders/redirect.ts"
+}
