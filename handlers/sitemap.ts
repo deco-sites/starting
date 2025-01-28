@@ -1,5 +1,4 @@
 import { Route } from "apps/website/flags/audience.ts";
-import tableOfContents from "site/docs/toc.ts";
 import { type Handler } from "@deco/deco/blocks";
 import { isResolvable, type Resolvable } from "@deco/deco";
 const isPage = (handler: Resolvable<Handler>) =>

@@ -20,9 +20,7 @@ import * as $$$$1 from "./handlers/sitemap.ts";
 import * as $$$0 from "./loaders/blogPostDetailsLoader.ts";
 import * as $$$1 from "./loaders/blogPostLoader.ts";
 import * as $$$2 from "./loaders/blogPostMarkdownLoader.ts";
-import * as $$$3 from "./loaders/denoLoader.ts";
-import * as $$$4 from "./loaders/denoTopicsLoader.ts";
-import * as $$$5 from "./loaders/featuredPosts.ts";
+import * as $$$3 from "./loaders/featuredPosts.ts";
 import * as $$$$$$$0 from "./matchers/MatchPath.ts";
 import * as $$$$$$0 from "./sections/About.tsx";
 import * as $$$$$$1 from "./sections/Benefits.tsx";
@@ -211,9 +209,7 @@ const manifest = {
     "site/loaders/blogPostDetailsLoader.ts": $$$0,
     "site/loaders/blogPostLoader.ts": $$$1,
     "site/loaders/blogPostMarkdownLoader.ts": $$$2,
-    "site/loaders/denoLoader.ts": $$$3,
-    "site/loaders/denoTopicsLoader.ts": $$$4,
-    "site/loaders/featuredPosts.ts": $$$5,
+    "site/loaders/featuredPosts.ts": $$$3,
   },
   "handlers": {
     "site/handlers/feed.ts": $$$$0,
