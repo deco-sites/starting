@@ -45,7 +45,7 @@ export default function OverviewContent(
       icon: "Book",
       label: labels.readTutorials[props.language],
       href:
-        `https://deco.cx/docs/${props.language}/getting-started/creating-a-site`,
+        `https://docs.deco.cx/${props.language}/getting-started/creating-a-site`,
     },
     {
       icon: "Sparkle",
