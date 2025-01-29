@@ -32,7 +32,7 @@ export interface Props {
 export default function Header({
   linkedinUrl = "https://www.linkedin.com/company/deco-cx/",
   gitUrl = "https://github.com/deco-cx",
-  discordUrl = "https://discord.gg/YsGgt8EQCZ",
+  discordUrl = "https://discord.gg/deco-cx",
   ...rest
 }: Props) {
   return (

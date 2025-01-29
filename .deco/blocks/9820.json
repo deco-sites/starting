@@ -26,13 +26,13 @@
       "__resolveType": "site/sections/Benefits.tsx",
       "cards": [
         {
-          "href": "https://discord.gg/YsGgt8EQCZ",
+          "href": "https://discord.gg/deco-cx",
           "icon": "Book",
           "text": "Aprenda Desenvolvimento Web para e-commerce do zero usando nossas tecnologias modernas.",
           "title": "deco.cx camp"
         },
         {
-          "href": "https://discord.gg/YsGgt8EQCZ",
+          "href": "https://discord.gg/deco-cx",
           "icon": "Bag",
           "text": "Estamos listando todas as vagas de emprego que encontramos no ecossistema de e-commerce e você pode compartilhar a sua.",
           "title": "Vagas de emprego"
@@ -44,7 +44,7 @@
           "title": "Bounties"
         },
         {
-          "href": "https://discord.gg/YsGgt8EQCZ",
+          "href": "https://discord.gg/deco-cx",
           "icon": "Support",
           "text": "Oferecemos suporte especializado para ajudar a solucionar problemas técnicos e responder perguntas sobre nossa plataforma e tecnologias.",
           "title": "Suporte"
