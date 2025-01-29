@@ -72,7 +72,7 @@ export default function Footer({
     },
     {
       name: "Discord",
-      url: "https://discord.gg/YsGgt8EQCZ",
+      url: "https://discord.gg/deco-cx",
       icon: "Discord",
     },
   ],

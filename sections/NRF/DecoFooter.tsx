@@ -56,7 +56,7 @@ const footerMessage = "Made with <3 in Brazil";
 
 export default function Footer({
   menu,
-  discordUrl = "https://discord.gg/YsGgt8EQCZ",
+  discordUrl = "https://discord.gg/deco-cx",
   gitUrl = "https://github.com/deco-cx",
   linkedinUrl = "https://www.linkedin.com/company/deco-cx/",
   extraLinks,
