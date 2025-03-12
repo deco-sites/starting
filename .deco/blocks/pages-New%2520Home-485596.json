@@ -155,10 +155,120 @@
       "imagePosition": "left"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "DecoFooter"
-      }
+      "__resolveType": "site/sections/NewStories.tsx",
+      "stories": [
+        {
+          "imageUrl": "https://data.decoassets.com/starting/6792d83a-631a-446f-90ff-f84941c14a0a/casaevideoimg.webp",
+          "title": "Casa & Video grows 20% organic traffic with AI catalog enrichment App",
+          "description": "Create custom, AI-powered storefronts that convert visitors into customers.",
+          "imageAlt": "CVLB",
+          "logoUrl": "https://data.decoassets.com/starting/3598cb21-285d-445e-a03b-2fb8f19b1665/CVLB.svg"
+        },
+        {
+          "imageUrl": "https://data.decoassets.com/starting/4e66f35c-49dc-4083-a255-cdc3933bdc6a/leroy-(1).jpg",
+          "title": "Leroy Merlin replaces 3 different tools with deco.cx and boosts productivity",
+          "description": "Content team hires deco.cx to re-vamp its online catalog and moves 3 times faster.",
+          "imageAlt": "Leroy",
+          "logoUrl": "https://data.decoassets.com/starting/bd101b63-51ad-4a79-9b04-fe5d4e28e7b5/leroylogo.svg",
+          "logoAlt": "Leroy"
+        },
+        {
+          "imageUrl": "https://data.decoassets.com/starting/c8c26ffa-fa3a-4d0b-a152-852b9291bc0f/luccas.webp",
+          "title": "Luccas Toon boosts audience engagement and data with AI Apps",
+          "description": "New AI-focused content hub retains audience 2x than previous solution.",
+          "imageAlt": "Luccas Toon",
+          "logoUrl": "https://data.decoassets.com/starting/8d14c4ce-c728-4801-ba0b-6de11b0f50a2/luccasnetologo.svg",
+          "logoAlt": "Luccas Toon"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/NewGrid.tsx",
+      "tag": " Lorem Ipsum",
+      "title": "AI adoption means efficiency",
+      "items": [
+        {
+          "prefix": "+",
+          "value": "70",
+          "description": "websites using deco.cx"
+        },
+        {
+          "value": "6",
+          "description": "average faster PageSpeed",
+          "suffix": "x"
+        },
+        {
+          "prefix": "+",
+          "value": "400",
+          "description": "stars on our GitHub"
+        },
+        {
+          "prefix": "+",
+          "value": "3k",
+          "description": "in our Discord community",
+          "link": {
+            "url": "http://deco.cx/discord",
+            "text": "Discord"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/WhyUs.tsx",
+      "badge": {
+        "text": " Why us"
+      },
+      "title": {
+        "line1": "Our software",
+        "line2": "building DNA"
+      },
+      "cards": [
+        {
+          "description": "Collaborative development approach",
+          "title": "Collab",
+          "image": "https://data.decoassets.com/starting/7ec5feb4-f601-404b-80ba-af394dfc6201/collab.svg",
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='h-4 w-4 sm:h-5 sm:w-5 text-primary mb-1' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z'></path></svg>"
+        },
+        {
+          "image": "https://data.decoassets.com/starting/ac861ff4-bd06-4f2c-8aa9-6d6e91da95a2/rollout.svg",
+          "title": "Rollout",
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='h-4 w-4 sm:h-5 sm:w-5 text-primary mb-1' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z'></path></svg>",
+          "description": "Smooth deployment process"
+        },
+        {
+          "image": "https://data.decoassets.com/starting/1e66b5a1-1c76-48f9-8c7c-52e2dce5f494/live-poc.svg",
+          "description": "Rapid prototyping and testing",
+          "title": "Live PoC",
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='h-4 w-4 sm:h-5 sm:w-5 text-primary mb-1' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z'></path></svg>"
+        },
+        {
+          "image": "https://data.decoassets.com/starting/cc6f5592-7efb-498f-9f60-0d8f629a1bd2/innovation.svg",
+          "description": "Ongoing improvements and updates",
+          "title": "Continuous Innovation",
+          "icon": "<svg xmlns='http://www.w3.org/2000/svg' class='h-4 w-4 sm:h-5 sm:w-5 text-primary mb-1' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M13 10V3L4 14h7v7l9-11h-7z'></path></svg>"
+        }
+      ],
+      "dnaImage": "https://data.decoassets.com/starting/6c7c663d-780b-4c5c-a1d9-81f0eeabc2a8/dna.svg"
+    },
+    {
+      "__resolveType": "site/sections/NewFaq.tsx",
+      "title": "We know what you are thinking. How is this possible?",
+      "subtitle": "Read our customers frequent asked questions",
+      "faqs": [
+        {
+          "question": "Which Apps are selected to be done for free?",
+          "answer": "We are looking to acelerate AI digital transformation. So we are prioritazing Apps that have high-volume usage."
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/NewApplyNow.tsx",
+      "pattern": "https://data.decoassets.com/starting/e0841a37-8cb2-4377-822e-96d1ce9c4c8b/pattern.svg",
+      "title": "Ready to transform your business with AI?",
+      "buttonText": "Apply now"
+    },
+    {
+      "__resolveType": "DecoFooter"
     }
   ],
   "seo": {

@@ -52,7 +52,7 @@ export default function CaseBlock({
           <div className="lg:w-1/2 px-4 lg:px-14 py-10 relative z-10">
             <div className="flex flex-col gap-6 mb-10">
               <div className="inline-flex w-fit items-center gap-2 px-3 py-1 rounded-full border border-[#333737]">
-                <div className="w-2 h-2 bg-primary rounded-full" />
+                <div className="w-2 h-2 bg-secondary rounded-full" />
                 <span className="text-[#a1acaa] text-sm">{tagText}</span>
               </div>
               <h2 className="text-3xl md:text-5xl text-white leading-tight">

@@ -36,7 +36,6 @@ interface Props {
 }
 
 export default function Section({
-  name = "Capy",
   badgeText = "Trusted by 5k+ customers",
   headingText = "Free high-impact AI Apps",
   highlightedText = "Free",
@@ -47,13 +46,13 @@ export default function Section({
 }: Props) {
   return (
     <>
-      <section class="relative overflow-hidden lg:mx-auto lg:max-w-[1440px] px-4">
-        <div class="max-w-container mx-auto pt-12 sm:pt-16 md:pt-20 lg:pt-48 pb-4">
+      <section class="relative overflow-hidden lg:mx-auto lg:max-w-[1440px]">
+        <div class="max-w-container mx-auto pt-24 lg:pt-48 pb-4">
           <div class="px-4 mb-12 sm:mb-16 md:mb-20 lg:mb-24 md:px-8 lg:px-16">
             <div class="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-24 mb-8">
               <div class="w-full lg:w-2/3">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#333737] mb-4 sm:mb-6">
-                  <div class="w-2 h-2 bg-primary rounded-full"></div>
+                  <div class="w-2 h-2 bg-secondary rounded-full"></div>
                   <span class="text-[#a1acaa] text-xs sm:text-sm">
                     {badgeText}
                   </span>

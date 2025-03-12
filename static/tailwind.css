@@ -5345,6 +5345,9 @@ details.collapse summary::-webkit-details-marker {
 .-left-6 {
   left: -1.5rem;
 }
+.-right-1\/4 {
+  right: -25%;
+}
 .-right-20 {
   right: -5rem;
 }
@@ -5356,6 +5359,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .bottom-1\/2 {
   bottom: 50%;
+}
+.bottom-4 {
+  bottom: 1rem;
 }
 .bottom-6 {
   bottom: 1.5rem;
@@ -6061,6 +6067,9 @@ details.collapse summary::-webkit-details-marker {
 .hidden {
   display: none;
 }
+.aspect-\[1\/1\] {
+  aspect-ratio: 1/1;
+}
 .aspect-\[156\/87\] {
   aspect-ratio: 156/87;
 }
@@ -6390,6 +6399,9 @@ details.collapse summary::-webkit-details-marker {
 .min-h-4 {
   min-height: 1rem;
 }
+.min-h-48 {
+  min-height: 12rem;
+}
 .min-h-56 {
   min-height: 14rem;
 }
@@ -6551,6 +6563,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[14\.4px\] {
   width: 14.4px;
+}
+.w-\[150\%\] {
+  width: 150%;
 }
 .w-\[150px\] {
   width: 150px;
@@ -7150,6 +7165,11 @@ details.collapse summary::-webkit-details-marker {
 .scale-50 {
   --tw-scale-x: .5;
   --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-\[1\.5\] {
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .scale-\[40\%\] {
@@ -8712,6 +8732,12 @@ details.collapse summary::-webkit-details-marker {
 .justify-items-center {
   justify-items: center;
 }
+.gap-0 {
+  gap: 0px;
+}
+.gap-0\.5 {
+  gap: 0.125rem;
+}
 .gap-1 {
   gap: 0.25rem;
 }
@@ -9477,6 +9503,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(13 23 23 / var(--tw-bg-opacity)) !important;
 }
+.\!bg-black {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity)) !important;
+}
 .bg-\[\#00000060\] {
   background-color: #00000060;
 }
@@ -10038,6 +10068,9 @@ details.collapse summary::-webkit-details-marker {
 .p-4 {
   padding: 1rem;
 }
+.p-5 {
+  padding: 1.25rem;
+}
 .p-6 {
   padding: 1.5rem;
 }
@@ -10194,6 +10227,10 @@ details.collapse summary::-webkit-details-marker {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 .py-20 {
   padding-top: 5rem;
@@ -12453,6 +12490,16 @@ select.light-autofill:-webkit-autofill:focus {
   color: rgb(219 39 119 / var(--tw-text-opacity));
 }
 
+.hover\:-translate-y-0:hover {
+  --tw-translate-y: -0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:-translate-y-0\.5:hover {
+  --tw-translate-y: -0.125rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:translate-y-\[-2px\]:hover {
   --tw-translate-y: -2px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -12494,6 +12541,10 @@ select.light-autofill:-webkit-autofill:focus {
 
 .hover\:rounded:hover {
   border-radius: 0.25rem;
+}
+
+.hover\:border:hover {
+  border-width: 1px;
 }
 
 .hover\:border-\[\#02F67C40\]:hover {
@@ -12773,6 +12824,12 @@ select.light-autofill:-webkit-autofill:focus {
 .hover\:shadow-hero-reverse:hover {
   --tw-shadow: rgb(0, 0, 0) 0px 0px 0px 2px, rgb(17, 48, 50) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   --tw-shadow-colored: 0px 0px 0px 2px var(--tw-shadow-color), 0px 0px 0px 4px var(--tw-shadow-color), 0px 0px 0px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -13112,6 +13169,10 @@ select.light-autofill:-webkit-autofill:focus {
 
 @media (min-width: 640px) {
 
+  .sm\:-right-1\/2 {
+    right: -50%;
+  }
+
   .sm\:bottom-\[56px\] {
     bottom: 56px;
   }
@@ -13153,6 +13214,10 @@ select.light-autofill:-webkit-autofill:focus {
     margin-right: 2rem;
   }
 
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .sm\:mb-11 {
     margin-bottom: 2.75rem;
   }
@@ -13183,6 +13248,14 @@ select.light-autofill:-webkit-autofill:focus {
 
   .sm\:h-24 {
     height: 6rem;
+  }
+
+  .sm\:h-4 {
+    height: 1rem;
+  }
+
+  .sm\:h-5 {
+    height: 1.25rem;
   }
 
   .sm\:h-8 {
@@ -13217,6 +13290,10 @@ select.light-autofill:-webkit-autofill:focus {
     max-height: 120px;
   }
 
+  .sm\:min-h-56 {
+    min-height: 14rem;
+  }
+
   .sm\:min-h-\[800px\] {
     min-height: 800px;
   }
@@ -13234,12 +13311,24 @@ select.light-autofill:-webkit-autofill:focus {
     width: 5rem;
   }
 
+  .sm\:w-4 {
+    width: 1rem;
+  }
+
   .sm\:w-48 {
     width: 12rem;
   }
 
+  .sm\:w-5 {
+    width: 1.25rem;
+  }
+
   .sm\:w-\[138px\] {
     width: 138px;
+  }
+
+  .sm\:w-\[200\%\] {
+    width: 200%;
   }
 
   .sm\:w-\[522px\] {
@@ -13278,6 +13367,12 @@ select.light-autofill:-webkit-autofill:focus {
     flex: none;
   }
 
+  .sm\:scale-\[2\] {
+    --tw-scale-x: 2;
+    --tw-scale-y: 2;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -13302,12 +13397,20 @@ select.light-autofill:-webkit-autofill:focus {
     flex-wrap: wrap;
   }
 
+  .sm\:gap-16 {
+    gap: 4rem;
+  }
+
   .sm\:gap-24 {
     gap: 6rem;
   }
 
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:gap-6 {
+    gap: 1.5rem;
   }
 
   .sm\:gap-8 {
@@ -13322,14 +13425,28 @@ select.light-autofill:-webkit-autofill:focus {
     padding: 4rem;
   }
 
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:py-10 {
@@ -13352,6 +13469,11 @@ select.light-autofill:-webkit-autofill:focus {
     padding-bottom: 6rem;
   }
 
+  .sm\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -13360,6 +13482,10 @@ select.light-autofill:-webkit-autofill:focus {
   .sm\:py-\[40px\] {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .sm\:pb-8 {
+    padding-bottom: 2rem;
   }
 
   .sm\:pr-0 {
@@ -13377,6 +13503,11 @@ select.light-autofill:-webkit-autofill:focus {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-6xl {
@@ -13398,6 +13529,11 @@ select.light-autofill:-webkit-autofill:focus {
 
   .sm\:text-\[80px\] {
     font-size: 80px;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-sm {
@@ -13741,6 +13877,10 @@ select.light-autofill:-webkit-autofill:focus {
     max-height: 750px;
   }
 
+  .md\:min-h-64 {
+    min-height: 16rem;
+  }
+
   .md\:min-h-\[100vh\] {
     min-height: 100vh;
   }
@@ -13982,6 +14122,10 @@ select.light-autofill:-webkit-autofill:focus {
     max-width: 584px;
   }
 
+  .md\:max-w-\[60\%\] {
+    max-width: 60%;
+  }
+
   .md\:max-w-\[780px\] {
     max-width: 780px;
   }
@@ -14142,6 +14286,10 @@ select.light-autofill:-webkit-autofill:focus {
     overflow: hidden;
   }
 
+  .md\:overflow-visible {
+    overflow: visible;
+  }
+
   .md\:rounded {
     border-radius: 0.25rem;
   }
@@ -14241,6 +14389,11 @@ select.light-autofill:-webkit-autofill:focus {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .md\:px-14 {
@@ -15009,6 +15162,10 @@ select.light-autofill:-webkit-autofill:focus {
     margin-right: 1rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:mt-40 {
     margin-top: 10rem;
   }
@@ -15626,6 +15783,14 @@ select.light-autofill:-webkit-autofill:focus {
     border-width: 5px;
   }
 
+  .lg\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
+  .lg\:border-r {
+    border-right-width: 1px;
+  }
+
   .lg\:border-l-transparent {
     border-left-color: transparent;
   }
@@ -15710,6 +15875,11 @@ select.light-autofill:-webkit-autofill:focus {
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .lg\:px-24 {
@@ -15800,6 +15970,11 @@ select.light-autofill:-webkit-autofill:focus {
   .lg\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .lg\:py-36 {
@@ -16506,6 +16681,10 @@ select.light-autofill:-webkit-autofill:focus {
 
   .xl\:text-\[5vw\] {
     font-size: 5vw;
+  }
+
+  .xl\:text-\[64px\] {
+    font-size: 64px;
   }
 
   .xl\:text-\[80px\] {

@@ -1,6 +1,5 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 
-
 interface NewServiceProps {
   badge: {
     text: string;
@@ -28,12 +27,12 @@ export default function NewService({
 }: NewServiceProps) {
   return (
     <section class="service-section w-full mx-auto lg:max-w-[1440px] px-4 md:px-16 py-6">
-      <div class={`flex ${imagePosition === "left" ? "flex-row-reverse" : ""} justify-between gap-20 items-center w-full`}>
+      <div class={`flex flex-col ${imagePosition === "left" ? "md:flex-row-reverse" : "md:flex-row"} justify-between gap-6 md:gap-20 items-center w-full`}>
         <div class="order-2 h-full w-full lg:order-1">
           <div class="flex flex-col justify-between h-full w-full">
             <div class="space-y-6">
               <div class="inline-flex w-fit items-center gap-2 px-3 py-1 rounded-full border border-[#333737]">
-                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                <div class="w-2 h-2 bg-secondary rounded-full"></div>
                 <span class="text-[#a1acaa] text-sm">{badge.text}</span>
               </div>
               <h2 class="service-title text-3xl md:text-5xl text-white leading-tight">
