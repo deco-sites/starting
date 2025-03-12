@@ -26,8 +26,8 @@ export default function NewService({
   imagePosition = "right"
 }: NewServiceProps) {
   return (
-    <section class="service-section w-full mx-auto lg:max-w-[1440px] px-4 md:px-16 py-6">
-      <div class={`flex flex-col ${imagePosition === "left" ? "md:flex-row-reverse" : "md:flex-row"} justify-between gap-6 md:gap-20 items-center w-full`}>
+    <section class="service-section w-full mx-auto lg:max-w-[1440px] px-4 md:px-16 py-16 md:py-6">
+      <div class={`flex flex-col ${imagePosition === "left" ? "md:flex-row-reverse" : "md:flex-row"} justify-between gap-12 md:gap-20 items-center w-full`}>
         <div class="order-2 h-full w-full lg:order-1">
           <div class="flex flex-col justify-between h-full w-full">
             <div class="space-y-6">
