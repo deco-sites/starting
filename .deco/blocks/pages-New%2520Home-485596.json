@@ -11,7 +11,7 @@
     {
       "__resolveType": "site/sections/NewHero.tsx",
       "image": "https://data.decoassets.com/starting/190fa0bc-23f6-4a42-ac6b-e475889474d4/hero-image.png",
-      "headingText": "The Enterprise AI Software House",
+      "headingText": "Enterprise AI Agency",
       "highlightedText": "Your",
       "buttonText": "Book a demo"
     },
@@ -25,6 +25,10 @@
         {
           "image": "https://data.decoassets.com/starting/faeaf182-200f-4e71-a85c-f62ba42dde87/ZeeDog.svg",
           "alt": "Zeedog"
+        },
+        {
+          "image": "https://data.decoassets.com/starting/bd101b63-51ad-4a79-9b04-fe5d4e28e7b5/leroylogo.svg",
+          "alt": "Leroy Merlin"
         },
         {
           "image": "https://data.decoassets.com/starting/c583bff5-a3b6-4648-b070-767545c670b9/osklen.svg",
@@ -41,10 +45,6 @@
         {
           "image": "https://data.decoassets.com/starting/bccd37ca-deb8-48c6-94e2-f7ede595d36e/livemode-(3).png",
           "alt": "Livemode"
-        },
-        {
-          "image": "https://data.decoassets.com/starting/bd101b63-51ad-4a79-9b04-fe5d4e28e7b5/leroylogo.svg",
-          "alt": "Leroy Merlin"
         },
         {
           "image": "https://data.decoassets.com/starting/3598cb21-285d-445e-a03b-2fb8f19b1665/CVLB.svg",
