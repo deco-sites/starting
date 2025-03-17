@@ -57,13 +57,44 @@
       ]
     },
     {
+      "__resolveType": "site/sections/NewGrid.tsx",
+      "tag": " Lorem Ipsum",
+      "title": "AI adoption means efficiency",
+      "items": [
+        {
+          "prefix": "+",
+          "value": "70",
+          "description": "websites using deco.cx"
+        },
+        {
+          "value": "6",
+          "description": "average faster PageSpeed",
+          "suffix": "x"
+        },
+        {
+          "prefix": "+",
+          "value": "400",
+          "description": "stars on our GitHub"
+        },
+        {
+          "prefix": "+",
+          "value": "3k",
+          "description": "in our Discord community",
+          "link": {
+            "url": "http://deco.cx/discord",
+            "text": "Discord"
+          }
+        }
+      ]
+    },
+    {
       "__resolveType": "site/sections/CaseBlock.tsx",
-      "title": "AR&Co kickstarts digital shift: Baw goes headless with deco.cx",
-      "description": "Learn how Baw Clothing improved performance and conversion rates with deco.cx's headless architecture.",
+      "title": "Livemode builds its own Photoshop",
+      "description": "Learn how Livemode is generating media assets for its broadcasts 100x times faster with AI.",
       "ctaUrl": "Read Impact Story",
       "imageAlt": "Baw",
       "clientLogoAlt": "Baw",
-      "imageUrl": "https://data.decoassets.com/starting/329cf6d1-3a4c-40c1-8088-d079c8305df0/baw-thumbnail.png",
+      "imageUrl": "https://data.decoassets.com/starting/1fa18b13-bf83-4058-b18d-aca8361f46fd/Livemode-Thumbnail---Enterprise-AI-Apps.png",
       "clientLogoUrl": "https://data.decoassets.com/starting/e7e5b357-bb11-423b-af53-331e17e2e5d9/BAW.svg"
     },
     {
@@ -182,37 +213,6 @@
           "imageAlt": "Luccas Toon",
           "logoUrl": "https://data.decoassets.com/starting/8d14c4ce-c728-4801-ba0b-6de11b0f50a2/luccasnetologo.svg",
           "logoAlt": "Luccas Toon"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/NewGrid.tsx",
-      "tag": " Lorem Ipsum",
-      "title": "AI adoption means efficiency",
-      "items": [
-        {
-          "prefix": "+",
-          "value": "70",
-          "description": "websites using deco.cx"
-        },
-        {
-          "value": "6",
-          "description": "average faster PageSpeed",
-          "suffix": "x"
-        },
-        {
-          "prefix": "+",
-          "value": "400",
-          "description": "stars on our GitHub"
-        },
-        {
-          "prefix": "+",
-          "value": "3k",
-          "description": "in our Discord community",
-          "link": {
-            "url": "http://deco.cx/discord",
-            "text": "Discord"
-          }
         }
       ]
     },
