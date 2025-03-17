@@ -11,9 +11,9 @@
     {
       "__resolveType": "site/sections/NewHero.tsx",
       "image": "https://data.decoassets.com/starting/190fa0bc-23f6-4a42-ac6b-e475889474d4/hero-image.png",
-      "headingText": "Enterprise AI Agency",
-      "highlightedText": "Your",
-      "buttonText": "Book a demo"
+      "headingText": "adoção de AI na sua empresa",
+      "highlightedText": "Aceleramos",
+      "buttonText": "Agendar reunião"
     },
     {
       "__resolveType": "site/sections/NewBrandList.tsx",
