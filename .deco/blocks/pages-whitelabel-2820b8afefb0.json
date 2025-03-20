@@ -1,1 +1,68 @@
-{"name":"Whitelabel","path":"/pt/white-label","sections":[{"__resolveType":"GTM"},{"__resolveType":"[pt] [mkt] Head"},{"page":{"__resolveType":"8220"},"__resolveType":"$live/sections/PageInclude.tsx"},{"mainText":"deco Whitelabel: Uma digital experience platform para chamar de sua","secondText":"Tematize, estenda e comercialize uma deco.cx personalizada para os seus clientes","peopleImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/411cd236-f540-42d2-9e7b-82338bc2dc86","__resolveType":"site/sections/Community.tsx","blurBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4585954c-a989-4ba7-93fc-2fb9a3d92fd6","blur1Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1dac25d-5eaf-412c-a513-0a5685955ae0","blur2Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/434db95e-5597-429a-855f-4c863e1df06e","hrefSecondButton":"https://www.deco.cx/pt/contact-us","labelSecondButton":"Quero acesso antecipado!"},{"cards":[{"href":"https://www.deco.cx/pt/contact-us","icon":"Cash","text":"Ganhe uma fonte de renda recorrente oferecendo aos seus clientes uma plataforma personalizada, tematizada e de alto desempenho.","title":"Tenha receita recorrente"},{"href":"https://www.deco.cx/pt/contact-us","icon":"Post","text":"Tenha controle total sobre sua plataforma, adicione funcionalidades exclusivas e crie uma experiência personalizada para seus clientes usando nosso editor visual e recursos de customização.","title":"Adicione suas funcionalidades"},{"href":"https://www.deco.cx/pt/contact-us","icon":"Logo","text":"Concentre-se no crescimento do seu negócio enquanto nós cuidamos de toda a infraestrutura, garantindo uma experiência de alta velocidade e mais disponibilidade para seus clientes.","title":"Infraestrutura 100% gerenciada"},{"href":"https://www.deco.cx/pt/contact-us","icon":"BoldHeart","text":"Fortaleça sua marca e diferencie-se da concorrência, oferecendo uma solução de experiência digital única, alinhada com sua identidade visual.","title":"Valorize a sua marca"}],"__resolveType":"site/sections/Benefits.tsx"},{"href":"https://www.deco.cx/pt/contact-us","mainText":"Inscreva-se aqui e participe do early-access","buttonText":"Quero acesso antecipado!","__resolveType":"site/sections/Delight.tsx"},{"__resolveType":"[pt] Footer"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Whitelabel",
+  "path": "/pt/white-label",
+  "sections": [
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "[pt] [mkt] Head"
+    },
+    {
+      "page": {
+        "__resolveType": "8220"
+      },
+      "__resolveType": "$live/sections/PageInclude.tsx"
+    },
+    {
+      "mainText": "deco Whitelabel: Uma digital experience platform para chamar de sua",
+      "secondText": "Tematize, estenda e comercialize uma deco.cx personalizada para os seus clientes",
+      "peopleImage": "https://assets.decocache.com/starting/ff7b5564-c272-40a8-9818-958924f2b611/1742491165511-411cd236-f540-42d2-9e7b-82338bc2dc86",
+      "__resolveType": "site/sections/Community.tsx",
+      "blurBackground": "https://assets.decocache.com/starting/38d641d2-eb78-4408-9460-978f98a51fc6/1742491166951-4585954c-a989-4ba7-93fc-2fb9a3d92fd6",
+      "blur1Background": "https://assets.decocache.com/starting/4f4f48c4-42f1-463d-9ed0-e19e2966c681/1742491168562-e1dac25d-5eaf-412c-a513-0a5685955ae0",
+      "blur2Background": "https://assets.decocache.com/starting/c33d33b9-cc76-4c9b-9706-9d7a77e5a309/1742491170320-434db95e-5597-429a-855f-4c863e1df06e",
+      "hrefSecondButton": "https://www.deco.cx/pt/contact-us",
+      "labelSecondButton": "Quero acesso antecipado!"
+    },
+    {
+      "cards": [
+        {
+          "href": "https://www.deco.cx/pt/contact-us",
+          "icon": "Cash",
+          "text": "Ganhe uma fonte de renda recorrente oferecendo aos seus clientes uma plataforma personalizada, tematizada e de alto desempenho.",
+          "title": "Tenha receita recorrente"
+        },
+        {
+          "href": "https://www.deco.cx/pt/contact-us",
+          "icon": "Post",
+          "text": "Tenha controle total sobre sua plataforma, adicione funcionalidades exclusivas e crie uma experiência personalizada para seus clientes usando nosso editor visual e recursos de customização.",
+          "title": "Adicione suas funcionalidades"
+        },
+        {
+          "href": "https://www.deco.cx/pt/contact-us",
+          "icon": "Logo",
+          "text": "Concentre-se no crescimento do seu negócio enquanto nós cuidamos de toda a infraestrutura, garantindo uma experiência de alta velocidade e mais disponibilidade para seus clientes.",
+          "title": "Infraestrutura 100% gerenciada"
+        },
+        {
+          "href": "https://www.deco.cx/pt/contact-us",
+          "icon": "BoldHeart",
+          "text": "Fortaleça sua marca e diferencie-se da concorrência, oferecendo uma solução de experiência digital única, alinhada com sua identidade visual.",
+          "title": "Valorize a sua marca"
+        }
+      ],
+      "__resolveType": "site/sections/Benefits.tsx"
+    },
+    {
+      "href": "https://www.deco.cx/pt/contact-us",
+      "mainText": "Inscreva-se aqui e participe do early-access",
+      "buttonText": "Quero acesso antecipado!",
+      "__resolveType": "site/sections/Delight.tsx"
+    },
+    {
+      "__resolveType": "[pt] Footer"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

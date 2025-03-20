@@ -1,1 +1,30 @@
-{"cards":[{"text":"No-code for easy drag & drop building AND full-code for unlimited customizations.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/34137836-a8bc-4a27-b6a2-c26c7aadc910","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Launch sites faster</span> </p><p>with no-code &amp; full code.</p>"},{"text":"Reduce the gap from vision to execution with our AI-powered code and content capabilities.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/db64132e-15d2-414d-acf1-45c201c6689a","title":"<p><span style=\"color: rgb(2, 246, 124);\">Craft your dream project</span> at the speed of AI.</p>"},{"text":"Get more visibility delivering state-of-the-art digital experiences that load instantly.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/61372b34-fabe-4099-b9ea-791e8520a994","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Boost Core Web Vitals</span> and PageSpeed.</p>"},{"text":"Enrich your visitors' experiences by easily leveraging any third-party dynamic content and data.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/fcda4628-0063-4b41-bb53-8c836919ccfd","title":"<p><span style=\"color: rgb(2, 246, 124);\">Seamless integration</span> with any data source.</p>"},{"text":"Deploy your site on a globally distributed edge infrastructure, designed for instant scalability.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cf0af075-973f-4f17-b0c6-54418b871b6e","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Global edge hosting</span> for unbeatable speed.</p>"}],"__resolveType":"site/sections/NRF/FeaturesWithImage.tsx"}
+{
+  "cards": [
+    {
+      "text": "No-code for easy drag & drop building AND full-code for unlimited customizations.",
+      "image": "https://assets.decocache.com/starting/aa0d111a-eee5-4b0b-a85d-342267852d15/1742491206321-34137836-a8bc-4a27-b6a2-c26c7aadc910",
+      "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Launch sites faster</span> </p><p>with no-code &amp; full code.</p>"
+    },
+    {
+      "text": "Reduce the gap from vision to execution with our AI-powered code and content capabilities.",
+      "image": "https://assets.decocache.com/starting/be229136-9680-4ad2-ba51-4eace45421ce/1742491207779-db64132e-15d2-414d-acf1-45c201c6689a",
+      "title": "<p><span style=\"color: rgb(2, 246, 124);\">Craft your dream project</span> at the speed of AI.</p>"
+    },
+    {
+      "text": "Get more visibility delivering state-of-the-art digital experiences that load instantly.",
+      "image": "https://assets.decocache.com/starting/0c1297f5-a043-475c-94a6-01a674a50cd8/1742491209176-61372b34-fabe-4099-b9ea-791e8520a994",
+      "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Boost Core Web Vitals</span> and PageSpeed.</p>"
+    },
+    {
+      "text": "Enrich your visitors' experiences by easily leveraging any third-party dynamic content and data.",
+      "image": "https://assets.decocache.com/starting/ed7d4a81-a243-4337-97e4-1b76fe26fb43/1742491210530-fcda4628-0063-4b41-bb53-8c836919ccfd",
+      "title": "<p><span style=\"color: rgb(2, 246, 124);\">Seamless integration</span> with any data source.</p>"
+    },
+    {
+      "text": "Deploy your site on a globally distributed edge infrastructure, designed for instant scalability.",
+      "image": "https://assets.decocache.com/starting/bdc276be-e0f6-4390-9790-7398f6138c71/1742491211874-cf0af075-973f-4f17-b0c6-54418b871b6e",
+      "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Global edge hosting</span> for unbeatable speed.</p>"
+    }
+  ],
+  "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx"
+}

@@ -1,1 +1,45 @@
-{"alt":"business graph","tags":[{"href":"/","label":"Gettting started"},{"href":"/","label":"Billing"},{"href":"/","label":"Partnerships"},{"href":"/","label":"deco.hub"},{"href":"/","label":"Setup"}],"cards":[{"alt":"docs icon","href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/547c1abc-dcc7-4da4-9569-d677ae9e5467","label":"Docs","description":"Designed for smartphones first and foremost to make sure your customers can engage with your brand on the go."},{"alt":"sales training icon","href":"/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bb727013-8f2b-44d1-9eb9-e485087dc321","label":"Sales Training","description":"Aprenda a apresentar os benefícios da deco para seus clientes atuais e prospectar novos clientes."}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d8f3fe5c-9868-428d-a189-c0da68e4346a","title":"How can we help?","lazyload":false,"__resolveType":"site/sections/HowCanWeHelp.tsx"}
+{
+  "alt": "business graph",
+  "tags": [
+    {
+      "href": "/",
+      "label": "Gettting started"
+    },
+    {
+      "href": "/",
+      "label": "Billing"
+    },
+    {
+      "href": "/",
+      "label": "Partnerships"
+    },
+    {
+      "href": "/",
+      "label": "deco.hub"
+    },
+    {
+      "href": "/",
+      "label": "Setup"
+    }
+  ],
+  "cards": [
+    {
+      "alt": "docs icon",
+      "href": "/",
+      "image": "https://assets.decocache.com/starting/70f6f227-b2e1-426a-914c-0df4c7676abe/1742490944424-547c1abc-dcc7-4da4-9569-d677ae9e5467",
+      "label": "Docs",
+      "description": "Designed for smartphones first and foremost to make sure your customers can engage with your brand on the go."
+    },
+    {
+      "alt": "sales training icon",
+      "href": "/",
+      "image": "https://assets.decocache.com/starting/f3e2d001-a2cd-497d-9947-ffa4f31c6c9e/1742490946050-bb727013-8f2b-44d1-9eb9-e485087dc321",
+      "label": "Sales Training",
+      "description": "Aprenda a apresentar os benefícios da deco para seus clientes atuais e prospectar novos clientes."
+    }
+  ],
+  "image": "https://assets.decocache.com/starting/44a97f2a-3a47-428d-8683-ff697ee3dd5e/1742490947482-d8f3fe5c-9868-428d-a189-c0da68e4346a",
+  "title": "How can we help?",
+  "lazyload": false,
+  "__resolveType": "site/sections/HowCanWeHelp.tsx"
+}

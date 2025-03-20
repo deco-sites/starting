@@ -20,8 +20,8 @@
             "alt": "Introdução",
             "href": "",
             "title": "<h1 class=\"text-white font-medium text-3xl leading-[46px] tracking-[-0.56px] md:text-5xl xl:text-[5rem] xl:leading-[80px] md:tracking-[-2.4px]\"><p><span style=\"background: var(--gradient-1, linear-gradient(93deg, #02F67C 44.7%, #3FB67B 118.6%)); background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;\">High-performance</span> ecommerce resources.</p></h1>",
-            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c081cb47-61c2-4f81-9d33-1b836f64364d",
-            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a681a6be-65bf-421e-9e57-5d01c99db6a1",
+            "mobile": "https://assets.decocache.com/starting/bb322bbe-35f6-425e-a7e9-cdd4a7d78d1c/1742490815626-c081cb47-61c2-4f81-9d33-1b836f64364d",
+            "desktop": "https://assets.decocache.com/starting/f1e4df6b-d0bc-405d-820e-6144e7843ffc/1742490817856-a681a6be-65bf-421e-9e57-5d01c99db6a1",
             "subtitle": "<h2 class=\"text-[#A1A1AA] font-normal text-[22px] md:text-[18px] lg:text-[1.5rem] leading-[2.25rem] text-[#A1A1AA]\">Connect to any platform or third party service, deploy in one click.</h2>",
             "label": "<p></p>"
           },

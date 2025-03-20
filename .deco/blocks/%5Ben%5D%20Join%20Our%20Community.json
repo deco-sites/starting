@@ -1,1 +1,12 @@
-{"lazyload":false,"mainText":"Join our community","hrefButton":"/","iconButton":"DiscordButton","secondText":"Join the growing community of deco.cx users to ask questions, share tips, and level up together.","labelButton":"Join the community","peopleImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f1f80cb9-d681-41af-8467-7f42ec7fe9f5","__resolveType":"site/sections/JoinOurCommunity.tsx","blur1Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e323195e-5b1b-4c30-bb09-4d562d6083b3","blur2Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e1f01ec0-ea5b-441e-a42c-ec6490102434"}
+{
+  "lazyload": false,
+  "mainText": "Join our community",
+  "hrefButton": "/",
+  "iconButton": "DiscordButton",
+  "secondText": "Join the growing community of deco.cx users to ask questions, share tips, and level up together.",
+  "labelButton": "Join the community",
+  "peopleImage": "https://assets.decocache.com/starting/1bb32d6f-935f-44b3-852b-808a8f926067/1742491160960-f1f80cb9-d681-41af-8467-7f42ec7fe9f5",
+  "__resolveType": "site/sections/JoinOurCommunity.tsx",
+  "blur1Background": "https://assets.decocache.com/starting/c1c5cfda-3989-48fd-a13f-f303851017f5/1742491162454-e323195e-5b1b-4c30-bb09-4d562d6083b3",
+  "blur2Background": "https://assets.decocache.com/starting/13b5f8d7-168f-4068-8202-c2c4cb0186e5/1742491163848-e1f01ec0-ea5b-441e-a42c-ec6490102434"
+}

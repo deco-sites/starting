@@ -1,1 +1,84 @@
-{"name":"Pricing Stripe / PT","path":"/pt/pricing","sections":[{"__resolveType":"GTM"},{"__resolveType":"[pt] [mkt] Head"},{"__resolveType":"HeaderV2"},{"__resolveType":"site/sections/NRF/Pricing.tsx","title":"Preço simples que acompanha seu crescimento","text":"Crie, teste e suba hoje. À medida que você expande, alavanque-se da nossa cobrança baseada no seu uso da nossa infraestrutura, e pague apenas pelo que precisar!","recurrence":"por mês","freePlan":{"title":"Comece grátis","text":"Sua sandbox gratuita para começar a criar sites ultra rápidos. Até 5.000 pageviews por mês/","price":"R$0","priceCustom":false,"button":{"link":"https://deco.cx/admin","text":"Assine já!"},"benefits":[]},"paidPlans":[]},{"__resolveType":"site/sections/NRF/PricingValue.tsx","text":"<p>por cada 10.000 pageviews</p>","price":"R$40","button":{"link":"https://deco.cx/admin","text":"Assine já"},"subtext":" "},{"__resolveType":"site/sections/FreePlan.tsx","description":"<p>Desfrute de uma implementação gratuita de landing page e assinatura DEV por nossa conta, para sempre, até 50 mil pageviews. Basta enviar-nos o seu Figma e considere tudo pronto. Inscreva-se abaixo:</p><p><span style=\"color: rgb(31, 31, 31)\"><br></span></p>","title":"<p>🎈Plano Start-up Eternamente Gratuito 🎈</p>","disclaimer":"Elegibilidade: startups com menos de 1 milhão de dólares em receita nos últimos 2 anos.","placement":"left","cta":[{"variant":"Normal","href":"https://forms.gle/TNA4RurBRghW18ZL8","text":"Inscreva-se no Plano Start-up"}]},{"__resolveType":"site/sections/NRF/FeaturesWithImage.tsx","cards":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/31e0735d-7f8f-4748-88a6-4cb2fbb2c226","text":"Melhore a conversão por meio da navegação sem interrupções, aumentando a satisfação e o engajamento do cliente.","title":"<p>Aumente a conversão</p>"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/258f20c1-e6c2-46e0-8937-e8aad1883803","title":"<p>Aumente o tráfego orgânico</p>","text":"Eleve o ranking de SEO, visibilidade online e confiança com tempos de carregamento ultrarrápidos."},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a038b983-fd62-4828-a54f-e764d1ddea9d","title":"<p>Menos despesas com PPC</p>","text":"Reduza as despesas com mídia paga, diminuindo as taxas de rejeição, aumentando as pontuações de qualidade e otimizando os investimentos em anúncios."}]},{"__resolveType":"Deco Footer [EN]"},{"__resolveType":"site/sections/NRF/Grid.tsx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Pricing Stripe / PT",
+  "path": "/pt/pricing",
+  "sections": [
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "[pt] [mkt] Head"
+    },
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "site/sections/NRF/Pricing.tsx",
+      "title": "Preço simples que acompanha seu crescimento",
+      "text": "Crie, teste e suba hoje. À medida que você expande, alavanque-se da nossa cobrança baseada no seu uso da nossa infraestrutura, e pague apenas pelo que precisar!",
+      "recurrence": "por mês",
+      "freePlan": {
+        "title": "Comece grátis",
+        "text": "Sua sandbox gratuita para começar a criar sites ultra rápidos. Até 5.000 pageviews por mês/",
+        "price": "R$0",
+        "priceCustom": false,
+        "button": {
+          "link": "https://deco.cx/admin",
+          "text": "Assine já!"
+        },
+        "benefits": []
+      },
+      "paidPlans": []
+    },
+    {
+      "__resolveType": "site/sections/NRF/PricingValue.tsx",
+      "text": "<p>por cada 10.000 pageviews</p>",
+      "price": "R$40",
+      "button": {
+        "link": "https://deco.cx/admin",
+        "text": "Assine já"
+      },
+      "subtext": " "
+    },
+    {
+      "__resolveType": "site/sections/FreePlan.tsx",
+      "description": "<p>Desfrute de uma implementação gratuita de landing page e assinatura DEV por nossa conta, para sempre, até 50 mil pageviews. Basta enviar-nos o seu Figma e considere tudo pronto. Inscreva-se abaixo:</p><p><span style=\"color: rgb(31, 31, 31)\"><br></span></p>",
+      "title": "<p>🎈Plano Start-up Eternamente Gratuito 🎈</p>",
+      "disclaimer": "Elegibilidade: startups com menos de 1 milhão de dólares em receita nos últimos 2 anos.",
+      "placement": "left",
+      "cta": [
+        {
+          "variant": "Normal",
+          "href": "https://forms.gle/TNA4RurBRghW18ZL8",
+          "text": "Inscreva-se no Plano Start-up"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx",
+      "cards": [
+        {
+          "image": "https://assets.decocache.com/starting/97245a63-6899-4b39-b9a6-f00e78628da6/1742491027934-31e0735d-7f8f-4748-88a6-4cb2fbb2c226",
+          "text": "Melhore a conversão por meio da navegação sem interrupções, aumentando a satisfação e o engajamento do cliente.",
+          "title": "<p>Aumente a conversão</p>"
+        },
+        {
+          "image": "https://assets.decocache.com/starting/2be7af2e-9809-4bd4-856d-159686512aaa/1742491029224-258f20c1-e6c2-46e0-8937-e8aad1883803",
+          "title": "<p>Aumente o tráfego orgânico</p>",
+          "text": "Eleve o ranking de SEO, visibilidade online e confiança com tempos de carregamento ultrarrápidos."
+        },
+        {
+          "image": "https://assets.decocache.com/starting/da4e51bd-c1ae-4f66-842a-a39d158e61a7/1742491030384-a038b983-fd62-4828-a54f-e764d1ddea9d",
+          "title": "<p>Menos despesas com PPC</p>",
+          "text": "Reduza as despesas com mídia paga, diminuindo as taxas de rejeição, aumentando as pontuações de qualidade e otimizando os investimentos em anúncios."
+        }
+      ]
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "site/sections/NRF/Grid.tsx"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

@@ -1,1 +1,124 @@
-{"images":[{"href":"https://docs.deco.cx/pt/composable-apis/vtex","label":"VTEX","active":false,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/989362e9-0d0a-455d-9b3a-7388599374d7","altText":"vtex logo","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/aa458b45-0856-40d1-9bc7-d7aa298f86c1"},{"href":"https://docs.deco.cx/pt/composable-apis/shopify","label":"Shopify","active":false,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/99303fb5-512e-4da6-b73d-39d016eb61c8","altText":"vtex logo","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ba08eb76-0bc4-49fd-89f6-ed07f12c1825"},{"href":"https://www.deco.cx/pt","label":"Vnda","active":false,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/75ce56a7-c1b1-40fa-b59a-b523c6fad9aa","altText":"vtex logo","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9cd38f5b-6391-449d-907a-e12c5141b9f1"},{"href":"https://wake.tech/","label":"Wake","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a7992830-475a-499f-bf0c-fc1927caf69b","altText":"Wake","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/01e58de6-9f84-4cca-989c-50b68f48914c"},{"href":"https://www.nuvemshop.com.br/","label":"nuvemshop","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/233e9345-5a45-41fd-8b33-9193fbe5c808","altText":"nuvemshop","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f0e53884-173b-4ba8-85c2-d7ed87fb7d37"},{"href":"https://www.linx.com.br/linx-commerce/","label":"Linx Commerce","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d6493cae-4c05-431f-94fa-7f84f2f9cc32","altText":"Linx Commerce","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2f141d28-5981-4f6a-ae35-81a5b898852f"},{"href":"https://www.deco.cx/pt","label":"LINX Impulse","active":false,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a944437-010a-4f8f-8e5e-ae31294abc04","altText":"linx impulse","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7e8c1392-f9ea-4fff-b828-6afc430d531d"},{"href":"https://www.opinioes-verificadas.com/pt/","label":"opinioes verificadas","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9832e325-2238-45a6-9761-8c67107225ab","altText":"opinioes verificadas","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6f2893be-ffe8-4091-852f-14063eea85d1"},{"href":"algolia.com/","label":"Algolia","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1524e469-2cb7-4102-85fd-aeda3061026e","altText":"algolia","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/956f9526-b191-40a1-8c0d-c39aa1cbfa2e"},{"href":"https://typesense.org/","label":"Typesense","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8d67aaf4-83f4-4c6b-b27e-fedb43fd6b2f","altText":"typsense","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4c5af3db-3d44-4c8a-8bf1-30f687c3092e"},{"href":"https://www.powerreviews.com/","label":"Power Reviews","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b21cba8-89ea-4f93-bc82-55dec8e709e5","altText":"Power Reviews","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5fa1d823-eb19-44d7-ab16-89ea3db39efd"},{"href":"https://buttercms.com/","label":"ButterCMS","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/75444c64-44ac-466c-a378-3f6250c23eeb","altText":"ButterCMS","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e4e7c1ca-d803-48a5-b40e-d0896c60cd75"},{"href":"https://mailchimp.com/","label":"mailchimp","altText":"mailchimp","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/405de431-ba77-4f01-9069-e8f24ba18423","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5fc0a86c-7f7d-468e-b315-b7249144c8fb"},{"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8fd392d3-9f56-4baa-a7e0-b26e5b99caf1","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c1f186cd-7337-49ab-809f-b3bfd63ac11b","altText":"konfidecy","href":"https://www.konfidency.com.br/"},{"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/aa86d34e-87ec-4523-b7e5-c50c972ea649","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5a6a4c02-0d0a-43b4-9228-bb8444ea7ffd","altText":"stripe","href":"https://stripe.com/"},{"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff3eaae8-d50b-410c-b6e3-a11a8d533fa8","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1dba1d3b-664e-4096-8390-05a280ae37b7","altText":"wordpress","href":"https://wordpress.org/"},{"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5ca8110e-de0f-479f-9cda-51acd6dd3699","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cecac1a8-df42-4633-800e-834e928257eb","altText":"Google Analytics","href":"https://marketingplatform.google.com/about/analytics/"}],"__resolveType":"site/sections/Hub/Integrations.tsx"}
+{
+  "images": [
+    {
+      "href": "https://docs.deco.cx/pt/composable-apis/vtex",
+      "label": "VTEX",
+      "active": false,
+      "mobile": "https://assets.decocache.com/starting/e18461b2-379b-46ff-9bf2-3ed3c5eb637e/1742492058778-989362e9-0d0a-455d-9b3a-7388599374d7",
+      "altText": "vtex logo",
+      "desktop": "https://assets.decocache.com/starting/09398f74-73de-4884-adfb-48dabfb61bce/1742492060249-aa458b45-0856-40d1-9bc7-d7aa298f86c1"
+    },
+    {
+      "href": "https://docs.deco.cx/pt/composable-apis/shopify",
+      "label": "Shopify",
+      "active": false,
+      "mobile": "https://assets.decocache.com/starting/536ca3fe-1739-4c12-bfaa-a99b96d4d2d8/1742492061515-99303fb5-512e-4da6-b73d-39d016eb61c8",
+      "altText": "vtex logo",
+      "desktop": "https://assets.decocache.com/starting/6757c309-f5e3-4ade-a064-684d590b7b08/1742492062649-ba08eb76-0bc4-49fd-89f6-ed07f12c1825"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "label": "Vnda",
+      "active": false,
+      "mobile": "https://assets.decocache.com/starting/e0997f1a-8255-4c97-b403-e7ffe3581170/1742492063972-75ce56a7-c1b1-40fa-b59a-b523c6fad9aa",
+      "altText": "vtex logo",
+      "desktop": "https://assets.decocache.com/starting/0a62c8f1-c25e-444d-a87d-522b34871928/1742492065162-9cd38f5b-6391-449d-907a-e12c5141b9f1"
+    },
+    {
+      "href": "https://wake.tech/",
+      "label": "Wake",
+      "mobile": "https://assets.decocache.com/starting/cb962610-3764-4f4f-824c-935bb243d1c2/1742492066435-a7992830-475a-499f-bf0c-fc1927caf69b",
+      "altText": "Wake",
+      "desktop": "https://assets.decocache.com/starting/0be02fc8-7a1f-4455-82b8-bff9d1394c0a/1742492067714-01e58de6-9f84-4cca-989c-50b68f48914c"
+    },
+    {
+      "href": "https://www.nuvemshop.com.br/",
+      "label": "nuvemshop",
+      "mobile": "https://assets.decocache.com/starting/054417ba-d911-4ab7-bc52-9d8e698e8c30/1742492068994-233e9345-5a45-41fd-8b33-9193fbe5c808",
+      "altText": "nuvemshop",
+      "desktop": "https://assets.decocache.com/starting/0336bd99-680c-4d43-adf1-e9a81e4438f8/1742492070152-f0e53884-173b-4ba8-85c2-d7ed87fb7d37"
+    },
+    {
+      "href": "https://www.linx.com.br/linx-commerce/",
+      "label": "Linx Commerce",
+      "mobile": "https://assets.decocache.com/starting/9742e458-cf12-49bf-a657-8ecb30b1a194/1742492071292-d6493cae-4c05-431f-94fa-7f84f2f9cc32",
+      "altText": "Linx Commerce",
+      "desktop": "https://assets.decocache.com/starting/5ca3a761-a2ba-432c-90b5-bd5af6817a34/1742492072452-2f141d28-5981-4f6a-ae35-81a5b898852f"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "label": "LINX Impulse",
+      "active": false,
+      "mobile": "https://assets.decocache.com/starting/18f65c9f-6e1f-4074-a01a-2e1561ba223a/1742492073608-8a944437-010a-4f8f-8e5e-ae31294abc04",
+      "altText": "linx impulse",
+      "desktop": "https://assets.decocache.com/starting/6e639220-fc1a-4c94-98c1-ca8968f1d656/1742492074825-7e8c1392-f9ea-4fff-b828-6afc430d531d"
+    },
+    {
+      "href": "https://www.opinioes-verificadas.com/pt/",
+      "label": "opinioes verificadas",
+      "mobile": "https://assets.decocache.com/starting/d05581f0-9f91-4e69-bb6d-bdfcb8f7e454/1742492076597-9832e325-2238-45a6-9761-8c67107225ab",
+      "altText": "opinioes verificadas",
+      "desktop": "https://assets.decocache.com/starting/1a44bef8-02db-4d20-acea-8be1a2b02594/1742492077822-6f2893be-ffe8-4091-852f-14063eea85d1"
+    },
+    {
+      "href": "algolia.com/",
+      "label": "Algolia",
+      "mobile": "https://assets.decocache.com/starting/e7b5c1f4-55ed-48bf-88ec-4f51a06d0cb7/1742492079098-1524e469-2cb7-4102-85fd-aeda3061026e",
+      "altText": "algolia",
+      "desktop": "https://assets.decocache.com/starting/3a23090b-c021-4f41-b99d-a88dc489ebd0/1742492080287-956f9526-b191-40a1-8c0d-c39aa1cbfa2e"
+    },
+    {
+      "href": "https://typesense.org/",
+      "label": "Typesense",
+      "mobile": "https://assets.decocache.com/starting/e8d48e0b-9996-439d-88a3-09767aee6ffd/1742492081551-8d67aaf4-83f4-4c6b-b27e-fedb43fd6b2f",
+      "altText": "typsense",
+      "desktop": "https://assets.decocache.com/starting/726d1e5a-00c6-49e9-b0e9-e01483e2539e/1742492082771-4c5af3db-3d44-4c8a-8bf1-30f687c3092e"
+    },
+    {
+      "href": "https://www.powerreviews.com/",
+      "label": "Power Reviews",
+      "mobile": "https://assets.decocache.com/starting/8f79f07f-006d-4ae7-843d-ebac368a90b2/1742492083935-0b21cba8-89ea-4f93-bc82-55dec8e709e5",
+      "altText": "Power Reviews",
+      "desktop": "https://assets.decocache.com/starting/01c289a4-45ba-4e6f-ae7f-fbd812f2ce89/1742492085143-5fa1d823-eb19-44d7-ab16-89ea3db39efd"
+    },
+    {
+      "href": "https://buttercms.com/",
+      "label": "ButterCMS",
+      "mobile": "https://assets.decocache.com/starting/79ec8119-15f6-46e8-ae66-6cddab24fd24/1742492086366-75444c64-44ac-466c-a378-3f6250c23eeb",
+      "altText": "ButterCMS",
+      "desktop": "https://assets.decocache.com/starting/1dd2bb3e-a70a-48ee-849e-b3f7995e9c48/1742492087621-e4e7c1ca-d803-48a5-b40e-d0896c60cd75"
+    },
+    {
+      "href": "https://mailchimp.com/",
+      "label": "mailchimp",
+      "altText": "mailchimp",
+      "mobile": "https://assets.decocache.com/starting/df801a97-6c6a-438f-b358-7cda5e058daa/1742492088865-405de431-ba77-4f01-9069-e8f24ba18423",
+      "desktop": "https://assets.decocache.com/starting/d1a34c76-527b-48e9-8ffa-50bb29a71b47/1742492090089-5fc0a86c-7f7d-468e-b315-b7249144c8fb"
+    },
+    {
+      "mobile": "https://assets.decocache.com/starting/67fae066-dd61-4bf4-84bb-85bab6a2dc9c/1742492091265-8fd392d3-9f56-4baa-a7e0-b26e5b99caf1",
+      "desktop": "https://assets.decocache.com/starting/7767e82e-2baf-459a-ab83-675e0c628012/1742492092536-c1f186cd-7337-49ab-809f-b3bfd63ac11b",
+      "altText": "konfidecy",
+      "href": "https://www.konfidency.com.br/"
+    },
+    {
+      "mobile": "https://assets.decocache.com/starting/2cec2dcd-02c3-4f95-a0c5-14e00455f1ef/1742492094171-aa86d34e-87ec-4523-b7e5-c50c972ea649",
+      "desktop": "https://assets.decocache.com/starting/bf059a5a-b119-43cd-b5f8-252b9a1a6507/1742492095390-5a6a4c02-0d0a-43b4-9228-bb8444ea7ffd",
+      "altText": "stripe",
+      "href": "https://stripe.com/"
+    },
+    {
+      "mobile": "https://assets.decocache.com/starting/d81bc9fa-fec6-4f3b-afcd-bdc5ec45033a/1742492096720-ff3eaae8-d50b-410c-b6e3-a11a8d533fa8",
+      "desktop": "https://assets.decocache.com/starting/6ccd0bd1-41b0-470f-b944-4e6071352c44/1742492097975-1dba1d3b-664e-4096-8390-05a280ae37b7",
+      "altText": "wordpress",
+      "href": "https://wordpress.org/"
+    },
+    {
+      "mobile": "https://assets.decocache.com/starting/89532018-a908-4b54-8f82-c287d1739a1b/1742492099393-5ca8110e-de0f-479f-9cda-51acd6dd3699",
+      "desktop": "https://assets.decocache.com/starting/5c6b656f-3f1b-42e5-87db-12d61f470a5d/1742492100634-cecac1a8-df42-4633-800e-834e928257eb",
+      "altText": "Google Analytics",
+      "href": "https://marketingplatform.google.com/about/analytics/"
+    }
+  ],
+  "__resolveType": "site/sections/Hub/Integrations.tsx"
+}

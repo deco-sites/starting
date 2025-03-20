@@ -1,1 +1,11 @@
-{"url":"https://deco.cx/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e5f969d0-3f0c-4fe3-aafe-94e4b5b71f97","title":"deco.cx: the open-source, headless frontend platform","imageUrl":"/decocx-meta-pt.png","styleUrls":[],"themeColor":"#000","description":"Deco.cx is the web builder for the post-AI era. Its an open-source, headless frontend platform that enables businesses to create authentic, high-performance digital experiences.","__resolveType":"site/sections/Head.tsx","bodyBackgroundColor":"#000"}
+{
+  "url": "https://deco.cx/",
+  "image": "https://assets.decocache.com/starting/e98541a8-9fda-4e0d-b3d3-5b996d716b66/1742491018419-e5f969d0-3f0c-4fe3-aafe-94e4b5b71f97",
+  "title": "deco.cx: the open-source, headless frontend platform",
+  "imageUrl": "/decocx-meta-pt.png",
+  "styleUrls": [],
+  "themeColor": "#000",
+  "description": "Deco.cx is the web builder for the post-AI era. Its an open-source, headless frontend platform that enables businesses to create authentic, high-performance digital experiences.",
+  "__resolveType": "site/sections/Head.tsx",
+  "bodyBackgroundColor": "#000"
+}

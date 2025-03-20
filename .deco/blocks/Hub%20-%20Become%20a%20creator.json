@@ -1,1 +1,9 @@
-{"href":"https://www.deco.cx/pt","label":"Learn more","title":"Become a creator","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1925/7163bdf6-54a0-4464-9322-bbf80591a657","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1925/af752762-40c7-4591-ae47-db44d6aa83a6","subtitle":"Check our guidelines and submit your pack for a chance to be listed among the top deco packs","__resolveType":"site/sections/Hub/Creator.tsx"}
+{
+  "href": "https://www.deco.cx/pt",
+  "label": "Learn more",
+  "title": "Become a creator",
+  "mobile": "https://assets.decocache.com/starting/f635e0c2-2a40-4e6a-b74b-26f7be3963ae/1742491024069-7163bdf6-54a0-4464-9322-bbf80591a657",
+  "desktop": "https://assets.decocache.com/starting/a2cb230c-9004-4f04-af05-5d8a8d237a95/1742491025605-af752762-40c7-4591-ae47-db44d6aa83a6",
+  "subtitle": "Check our guidelines and submit your pack for a chance to be listed among the top deco packs",
+  "__resolveType": "site/sections/Hub/Creator.tsx"
+}

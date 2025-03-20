@@ -1,1 +1,47 @@
-{"cta":[{"id":"bt-click-signup","href":"https://admin.deco.cx/spaces/new","text":"Try now for free","variant":"Normal"}],"demo":{"title":"Watch our demo","visible":true,"video":"https://www.youtube.com/embed/DvCvXwQ86k4","videoTitle":"deco.cx 2.0 | Product Walkthrough"},"tabs":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5986d39-b570-4c80-8af5-597a67d83b5f","title":"Section Library"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e61ea2d8-8bb6-4498-ab89-c179e78264b1","title":"No Code Editor"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/72277e92-9d2e-4237-b1d7-22235bcd3798","title":"Full Code Editor"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d414d1af-1442-4127-83c4-5dbc154c967a","title":"Web Analytics"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6a44931b-316f-4e71-b597-b42847a6b11b","title":"Monitoring"}],"alert":{"href":"https://techcrunch.com/2024/01/09/deco-cx-2-2m-brand-website-e-commerce","text":"\"Deco.cx grabs $2.2M to bring simplicity back to brand website creation\"","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ad26bee3-dcda-4796-9077-9f81050f7a75","mobileText":"As featured on TechCrunch"},"title":"<h1>Your first&nbsp;and last</h1><h1><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">web editor</span></h1>","subtitle":"<p>Build high-performance digital experiences with Deno, JSX and Tailwind.</p>","__resolveType":"site/sections/NRF/Hero.tsx"}
+{
+  "cta": [
+    {
+      "id": "bt-click-signup",
+      "href": "https://admin.deco.cx/spaces/new",
+      "text": "Try now for free",
+      "variant": "Normal"
+    }
+  ],
+  "demo": {
+    "title": "Watch our demo",
+    "visible": true,
+    "video": "https://www.youtube.com/embed/DvCvXwQ86k4",
+    "videoTitle": "deco.cx 2.0 | Product Walkthrough"
+  },
+  "tabs": [
+    {
+      "image": "https://assets.decocache.com/starting/9fab1ad5-c764-4e4f-8e54-e74d47665343/1742490592785-b5986d39-b570-4c80-8af5-597a67d83b5f",
+      "title": "Section Library"
+    },
+    {
+      "image": "https://assets.decocache.com/starting/be50f946-b1f0-47d9-ba20-4c2364314962/1742490594770-e61ea2d8-8bb6-4498-ab89-c179e78264b1",
+      "title": "No Code Editor"
+    },
+    {
+      "image": "https://assets.decocache.com/starting/a45febc9-b291-41ce-bba6-d894d2fba813/1742490596609-72277e92-9d2e-4237-b1d7-22235bcd3798",
+      "title": "Full Code Editor"
+    },
+    {
+      "image": "https://assets.decocache.com/starting/08929d4c-0016-416d-aec6-ceb83c07883c/1742490599724-d414d1af-1442-4127-83c4-5dbc154c967a",
+      "title": "Web Analytics"
+    },
+    {
+      "image": "https://assets.decocache.com/starting/f0285992-f3ef-478e-b7a6-d8da4b2e46b3/1742490602393-6a44931b-316f-4e71-b597-b42847a6b11b",
+      "title": "Monitoring"
+    }
+  ],
+  "alert": {
+    "href": "https://techcrunch.com/2024/01/09/deco-cx-2-2m-brand-website-e-commerce",
+    "text": "\"Deco.cx grabs $2.2M to bring simplicity back to brand website creation\"",
+    "image": "https://assets.decocache.com/starting/e86e2f93-c875-43c4-8607-d07faa1808e0/1742491241989-ad26bee3-dcda-4796-9077-9f81050f7a75",
+    "mobileText": "As featured on TechCrunch"
+  },
+  "title": "<h1>Your first&nbsp;and last</h1><h1><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">web editor</span></h1>",
+  "subtitle": "<p>Build high-performance digital experiences with Deno, JSX and Tailwind.</p>",
+  "__resolveType": "site/sections/NRF/Hero.tsx"
+}

@@ -1,1 +1,129 @@
-{"name":"Blogpost ZeeDog / EN","path":"/en/blog/case-zeedog","sections":[{"__resolveType":"GTM"},{"__resolveType":"HeaderV2"},{"__resolveType":"site/sections/Case/ArticleHeader.tsx","date":"October 17, 2023","logo":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d8f57168-3bff-44d5-8b85-1e2705421747","title":"From creative vision to technical mastery: Zee.Dog's journey with deco.cx","author":"By Maria Cecilia Marques","bgColor":"#2fb0c1","subtitle":"Discover how Zee.Dog regained control of its frontend operation to provide a best-of-breed web shopping experience","textColor":"#000000","screenshot":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc808da5-5d78-48cb-bdb4-f46d2f5a59f5"},{"bgColor":"#2fb0c1","textColor":"#fcfcfc","__resolveType":"site/sections/Case/ArticleNumbers.tsx","items":[{"name":"Taxa de conversão","label":"Average Loading Time","number":"5x faster"},{"name":"Taxa de conversão","label":"Conversion rate","number":"+30%"}]},{"__resolveType":"site/sections/Case/ArticleParagraph.tsx","textColor":"#fafafa","text":"<p>Zee.Dog, a beloved brand among pet owners with a presence in over 28 countries, has always been known for its design-first culture. But as they expanded, they faced challenges in maintaining their unique brand identity and delivering a seamless online shopping experience.</p><p>Despite their commitment to a one-of-a-kind website design, Zee.Dog's original ecommerce platform couldn't keep up with their vision. Customizations outside the platform's capabilities led to operational complexities and hindered site performance. The 2021 Black Friday campaign was a wake-up call. With page load times exceeding 10 seconds, frustrated customers couldn't complete purchases, leading to significant revenue loss.</p>","label":"Challenge","titleLevel":"H1"},{"text":"Discover Zee.Dog's full journey with deco.cx in our e-book!","__resolveType":"site/sections/Case/ArticleBannerCTA.tsx","button":{"href":"https://drive.google.com/file/d/1Zkkw9Ah_520nCeUhgGj1mHkQLeybLULJ/view?usp=drive_link","label":"Download the e-book"}},{"__resolveType":"site/sections/General/Spacer.tsx"},{"__resolveType":"site/sections/Case/ArticleParagraph.tsx","text":"<p>Enter deco.cx. In October 2022, Zee.Dog's frontend tech lead, Eduardo Brito, saw the potential of deco.cx to revolutionize their online presence. He understood that deco.cx would guarantee a better development experience to Zee.Dog's team, while unlocking new ways to create unparalleled digital experiences. He also knew that the opportunity to pair program with deco.cx's senior engineers, develop a product together, and participate in a community focused on pioneer web development tools promised invaluable learning to his team.</p><p><br data-mce-bogus=\"1\"></p>","label":"Solution","titleLevel":"H1","textColor":"#ffffff"},{"__resolveType":"site/sections/Case/ArticleQuote.tsx","textColor":"#ffffff","role":"Frontend Tech Lead @ Zee.Dog","quote":"”When we migrated to deco.cx, they didn’t have any off-the-shelf templates for ecommerce yet, and the team was still building its library of custom components optimized for performance. At the time, we knew that our site wouldn’t reach deco.cx’s gold standard of 90+ pagespeed, and we didn’t aim for that either: if we could reduce our site’s loading time by half that would be huge already. Beyond that though, I realized that the operational gains were so substantial that it was worth migrating to deco.cx’s stack even with an incomplete product.”","author":"Eduardo Brito","barColor":"#2fb0c1"},{"__resolveType":"site/sections/Case/ArticleParagraph.tsx","textColor":"#ffffff","text":"<p>The migration to deco.cx streamlined Zee.Dog's development process while increasing the autonomy of its marketing team to manage and evolve the ecommerce post go-live.&nbsp;Other than that, the website's average loading time dropped from 15 seconds to 2, and, although this wasn't the primary goal, the performance improvement led to a 30% increase in the site's conversion rate. Given that Zee.Dog's e-commerce already boasted an extraordinarily high conversion rate, this 30% increase was particularly significant. Lastly, not only were all of Zee.Dog's original customizations carefully preserved, several were also enhanced.</p>","label":"Results","titleLevel":"H1"},{"__resolveType":"site/sections/Case/ArticleQuote.tsx","textColor":"#ffffff","role":"Head of Digital Growth @ Zee.Dog","quote":"”A couple of days after the go-live, I was looking at Hotjar — I tried to stop the 2x speed that I always had to use before deco.cx, but, to my surprise, it was ALREADY OFF. The site was super fast. That's when it became obvious to me that our performance had been killing our conversion.”","author":"Patrícia Silvério","barColor":"#2fb0c1"},{"__resolveType":"site/sections/Case/ArticleParagraph.tsx","textColor":"#ffffff","text":"<p dir=\"ltr\">The successful migration of zeedog.com.br to deco.cx shows the direct correlation between performance and conversion. Encouraged by these results, Zee.Dog's team is now expanding its strategy to launch its express delivery service on deco.cx, and is also explroing the possibility of migrating the company's USA ecommerce.</p>","label":"Future","titleLevel":"H1"},{"__resolveType":"site/sections/Case/ArticleQuote.tsx","textColor":"#ffffff","role":"Frontend Tech Lead @ Zee.Dog","quote":"”With the results we are showing at this point, I believe that deco.cx will become the frontend solution used by the whole Petz Group.”","author":"Eduardo Brito","barColor":"#2fb0c1"},{"__resolveType":"site/sections/Case/ArticleBannerCTA.tsx","text":"Discover Zee.Dog's full journey with deco.cx in our e-book!","button":{"href":"https://drive.google.com/file/d/1Zkkw9Ah_520nCeUhgGj1mHkQLeybLULJ/view?usp=drive_link","label":"Download the e-book"}},{"__resolveType":"site/sections/General/Spacer.tsx"},{"__resolveType":"site/sections/PageContest/CallToAction.tsx","text":"<p>Ready to delight your customers?</p>","cta":[{"variant":"Normal","href":"https://www.deco.cx/en/contact-us","text":"Book a demo!"}]},{"__resolveType":"Deco Footer [EN]"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Blogpost ZeeDog / EN",
+  "path": "/en/blog/case-zeedog",
+  "sections": [
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "site/sections/Case/ArticleHeader.tsx",
+      "date": "October 17, 2023",
+      "logo": "https://assets.decocache.com/starting/306e25a8-74d9-4178-ba4a-aaa57490b8eb/1742490586797-d8f57168-3bff-44d5-8b85-1e2705421747",
+      "title": "From creative vision to technical mastery: Zee.Dog's journey with deco.cx",
+      "author": "By Maria Cecilia Marques",
+      "bgColor": "#2fb0c1",
+      "subtitle": "Discover how Zee.Dog regained control of its frontend operation to provide a best-of-breed web shopping experience",
+      "textColor": "#000000",
+      "screenshot": "https://assets.decocache.com/starting/e97ae764-6bcd-4c36-8069-da3fde06c060/1742490588250-dc808da5-5d78-48cb-bdb4-f46d2f5a59f5"
+    },
+    {
+      "bgColor": "#2fb0c1",
+      "textColor": "#fcfcfc",
+      "__resolveType": "site/sections/Case/ArticleNumbers.tsx",
+      "items": [
+        {
+          "name": "Taxa de conversão",
+          "label": "Average Loading Time",
+          "number": "5x faster"
+        },
+        {
+          "name": "Taxa de conversão",
+          "label": "Conversion rate",
+          "number": "+30%"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
+      "textColor": "#fafafa",
+      "text": "<p>Zee.Dog, a beloved brand among pet owners with a presence in over 28 countries, has always been known for its design-first culture. But as they expanded, they faced challenges in maintaining their unique brand identity and delivering a seamless online shopping experience.</p><p>Despite their commitment to a one-of-a-kind website design, Zee.Dog's original ecommerce platform couldn't keep up with their vision. Customizations outside the platform's capabilities led to operational complexities and hindered site performance. The 2021 Black Friday campaign was a wake-up call. With page load times exceeding 10 seconds, frustrated customers couldn't complete purchases, leading to significant revenue loss.</p>",
+      "label": "Challenge",
+      "titleLevel": "H1"
+    },
+    {
+      "text": "Discover Zee.Dog's full journey with deco.cx in our e-book!",
+      "__resolveType": "site/sections/Case/ArticleBannerCTA.tsx",
+      "button": {
+        "href": "https://drive.google.com/file/d/1Zkkw9Ah_520nCeUhgGj1mHkQLeybLULJ/view?usp=drive_link",
+        "label": "Download the e-book"
+      }
+    },
+    {
+      "__resolveType": "site/sections/General/Spacer.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
+      "text": "<p>Enter deco.cx. In October 2022, Zee.Dog's frontend tech lead, Eduardo Brito, saw the potential of deco.cx to revolutionize their online presence. He understood that deco.cx would guarantee a better development experience to Zee.Dog's team, while unlocking new ways to create unparalleled digital experiences. He also knew that the opportunity to pair program with deco.cx's senior engineers, develop a product together, and participate in a community focused on pioneer web development tools promised invaluable learning to his team.</p><p><br data-mce-bogus=\"1\"></p>",
+      "label": "Solution",
+      "titleLevel": "H1",
+      "textColor": "#ffffff"
+    },
+    {
+      "__resolveType": "site/sections/Case/ArticleQuote.tsx",
+      "textColor": "#ffffff",
+      "role": "Frontend Tech Lead @ Zee.Dog",
+      "quote": "”When we migrated to deco.cx, they didn’t have any off-the-shelf templates for ecommerce yet, and the team was still building its library of custom components optimized for performance. At the time, we knew that our site wouldn’t reach deco.cx’s gold standard of 90+ pagespeed, and we didn’t aim for that either: if we could reduce our site’s loading time by half that would be huge already. Beyond that though, I realized that the operational gains were so substantial that it was worth migrating to deco.cx’s stack even with an incomplete product.”",
+      "author": "Eduardo Brito",
+      "barColor": "#2fb0c1"
+    },
+    {
+      "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
+      "textColor": "#ffffff",
+      "text": "<p>The migration to deco.cx streamlined Zee.Dog's development process while increasing the autonomy of its marketing team to manage and evolve the ecommerce post go-live.&nbsp;Other than that, the website's average loading time dropped from 15 seconds to 2, and, although this wasn't the primary goal, the performance improvement led to a 30% increase in the site's conversion rate. Given that Zee.Dog's e-commerce already boasted an extraordinarily high conversion rate, this 30% increase was particularly significant. Lastly, not only were all of Zee.Dog's original customizations carefully preserved, several were also enhanced.</p>",
+      "label": "Results",
+      "titleLevel": "H1"
+    },
+    {
+      "__resolveType": "site/sections/Case/ArticleQuote.tsx",
+      "textColor": "#ffffff",
+      "role": "Head of Digital Growth @ Zee.Dog",
+      "quote": "”A couple of days after the go-live, I was looking at Hotjar — I tried to stop the 2x speed that I always had to use before deco.cx, but, to my surprise, it was ALREADY OFF. The site was super fast. That's when it became obvious to me that our performance had been killing our conversion.”",
+      "author": "Patrícia Silvério",
+      "barColor": "#2fb0c1"
+    },
+    {
+      "__resolveType": "site/sections/Case/ArticleParagraph.tsx",
+      "textColor": "#ffffff",
+      "text": "<p dir=\"ltr\">The successful migration of zeedog.com.br to deco.cx shows the direct correlation between performance and conversion. Encouraged by these results, Zee.Dog's team is now expanding its strategy to launch its express delivery service on deco.cx, and is also explroing the possibility of migrating the company's USA ecommerce.</p>",
+      "label": "Future",
+      "titleLevel": "H1"
+    },
+    {
+      "__resolveType": "site/sections/Case/ArticleQuote.tsx",
+      "textColor": "#ffffff",
+      "role": "Frontend Tech Lead @ Zee.Dog",
+      "quote": "”With the results we are showing at this point, I believe that deco.cx will become the frontend solution used by the whole Petz Group.”",
+      "author": "Eduardo Brito",
+      "barColor": "#2fb0c1"
+    },
+    {
+      "__resolveType": "site/sections/Case/ArticleBannerCTA.tsx",
+      "text": "Discover Zee.Dog's full journey with deco.cx in our e-book!",
+      "button": {
+        "href": "https://drive.google.com/file/d/1Zkkw9Ah_520nCeUhgGj1mHkQLeybLULJ/view?usp=drive_link",
+        "label": "Download the e-book"
+      }
+    },
+    {
+      "__resolveType": "site/sections/General/Spacer.tsx"
+    },
+    {
+      "__resolveType": "site/sections/PageContest/CallToAction.tsx",
+      "text": "<p>Ready to delight your customers?</p>",
+      "cta": [
+        {
+          "variant": "Normal",
+          "href": "https://www.deco.cx/en/contact-us",
+          "text": "Book a demo!"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

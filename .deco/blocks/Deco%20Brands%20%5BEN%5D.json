@@ -1,1 +1,31 @@
-{"url":"https://deco.cx/en/live-projects","title":"Meet our customers ","images":[{"label":"baw","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/974fd614-b8ee-43ca-9e06-d0cb854f9854"},{"label":"zeedog","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a024916e-9a31-4b11-8bcf-28f2f3015ac8"},{"label":"osklen","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/21a5e284-892c-4729-9690-27ed37e07c19"},{"label":"unkle k","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7d851dd8-784b-41d7-b637-2342d43baf11"},{"label":"torra","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9fd32ba0-8c11-419b-a634-5b5bc943c82b"},{"label":"aviator","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8dd728a0-9393-4676-9060-2c5e3ff5dc86"}],"__resolveType":"site/sections/NRF/Brands.tsx"}
+{
+  "url": "https://deco.cx/en/live-projects",
+  "title": "Meet our customers ",
+  "images": [
+    {
+      "label": "baw",
+      "mobile": "https://assets.decocache.com/starting/4bd00645-8be6-4284-91dd-4e9db72eda69/1742490607640-974fd614-b8ee-43ca-9e06-d0cb854f9854"
+    },
+    {
+      "label": "zeedog",
+      "mobile": "https://assets.decocache.com/starting/e62756ea-76d9-45a3-8f87-87cbd237eaee/1742490605939-a024916e-9a31-4b11-8bcf-28f2f3015ac8"
+    },
+    {
+      "label": "osklen",
+      "mobile": "https://assets.decocache.com/starting/def3f11a-9d0e-46f3-b025-9f6d510cde7e/1742490610354-21a5e284-892c-4729-9690-27ed37e07c19"
+    },
+    {
+      "label": "unkle k",
+      "mobile": "https://assets.decocache.com/starting/4083cedb-9ca9-4a0b-b547-acf4378c6a1f/1742490618364-7d851dd8-784b-41d7-b637-2342d43baf11"
+    },
+    {
+      "label": "torra",
+      "mobile": "https://assets.decocache.com/starting/87229f7d-67d9-4e6f-ad66-be56b9af595f/1742490611782-9fd32ba0-8c11-419b-a634-5b5bc943c82b"
+    },
+    {
+      "label": "aviator",
+      "mobile": "https://assets.decocache.com/starting/67252f1d-2b3b-44f7-aa7a-4b941ae2cf04/1742490619943-8dd728a0-9393-4676-9060-2c5e3ff5dc86"
+    }
+  ],
+  "__resolveType": "site/sections/NRF/Brands.tsx"
+}

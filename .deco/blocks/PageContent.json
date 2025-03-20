@@ -1,1 +1,53 @@
-{"__resolveType":"site/sections/Page.tsx","SectionContent":{"homePath":"/docs","homeLabel":"/docs","PageContent":[{"Type":[{"section":{"__resolveType":"site/sections/CustomizableContent.tsx","data":{"group":1,"urlPattern":"/docs/(.*)","__resolveType":"site/loaders/denoLoader.ts"},"customizable":[{"content":[{"__resolveType":"site/sections/DocsOverviewContent.tsx"}],"path":"overview"}]}}]}],"__resolveType":"site/sections/Content.tsx","WasThisPageHelpful":{"Button":{}}},"SectionSidebar":{"Topics":{"group":1,"basePath":"/docs/","urlPattern":"/docs/(.*)","__resolveType":"site/loaders/denoTopicsLoader.ts"},"AltIconMenu":"Sidebar","iconMenuOpen":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98dcacb6-906b-44eb-ad51-974b996497b5","__resolveType":"site/sections/Sidebar.tsx","iconMenuClose":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98dcacb6-906b-44eb-ad51-974b996497b5"},"SectionOnThisPage":{"__resolveType":"site/sections/OnThisPage.tsx","label":"On this page"}}
+{
+  "__resolveType": "site/sections/Page.tsx",
+  "SectionContent": {
+    "homePath": "/docs",
+    "homeLabel": "/docs",
+    "PageContent": [
+      {
+        "Type": [
+          {
+            "section": {
+              "__resolveType": "site/sections/CustomizableContent.tsx",
+              "data": {
+                "group": 1,
+                "urlPattern": "/docs/(.*)",
+                "__resolveType": "site/loaders/denoLoader.ts"
+              },
+              "customizable": [
+                {
+                  "content": [
+                    {
+                      "__resolveType": "site/sections/DocsOverviewContent.tsx"
+                    }
+                  ],
+                  "path": "overview"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "__resolveType": "site/sections/Content.tsx",
+    "WasThisPageHelpful": {
+      "Button": {}
+    }
+  },
+  "SectionSidebar": {
+    "Topics": {
+      "group": 1,
+      "basePath": "/docs/",
+      "urlPattern": "/docs/(.*)",
+      "__resolveType": "site/loaders/denoTopicsLoader.ts"
+    },
+    "AltIconMenu": "Sidebar",
+    "iconMenuOpen": "https://assets.decocache.com/starting/067a298d-0982-45d1-bbee-6d73ecc066ca/1742491248327-98dcacb6-906b-44eb-ad51-974b996497b5",
+    "__resolveType": "site/sections/Sidebar.tsx",
+    "iconMenuClose": "https://assets.decocache.com/starting/067a298d-0982-45d1-bbee-6d73ecc066ca/1742491248327-98dcacb6-906b-44eb-ad51-974b996497b5"
+  },
+  "SectionOnThisPage": {
+    "__resolveType": "site/sections/OnThisPage.tsx",
+    "label": "On this page"
+  }
+}

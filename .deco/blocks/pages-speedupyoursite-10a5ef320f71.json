@@ -1,1 +1,290 @@
-{"name":"Speed Up Your Site","path":"/speed-up-your-site","sections":[{"__resolveType":"HeaderV2","githubBarText":{"0":"<","1":"p","2":">","3":"⭐","4":" ","5":"6","6":"3","7":" ","8":"—","9":" ","10":"S","11":"t","12":"a","13":"r","14":" ","15":"<","16":"a","17":" ","18":"c","19":"l","20":"a","21":"s","22":"s","23":"=","24":"\"","25":"u","26":"n","27":"d","28":"e","29":"r","30":"l","31":"i","32":"n","33":"e","34":"\"","35":" ","36":"h","37":"r","38":"e","39":"f","40":"=","41":"\"","42":"h","43":"t","44":"t","45":"p","46":"s","47":":","48":"/","49":"/","50":"g","51":"i","52":"t","53":"h","54":"u","55":"b","56":".","57":"c","58":"o","59":"m","60":"/","61":"d","62":"e","63":"c","64":"o","65":"-","66":"c","67":"x","68":"/","69":"d","70":"e","71":"c","72":"o","73":"\"","74":" ","75":"t","76":"a","77":"r","78":"g","79":"e","80":"t","81":"=","82":"\"","83":"_","84":"b","85":"l","86":"a","87":"n","88":"k","89":"\"","90":">","91":"d","92":"e","93":"c","94":"o","95":".","96":"c","97":"x","98":" ","99":"o","100":"n","101":" ","102":"G","103":"i","104":"t","105":"h","106":"u","107":"b","108":"<","109":"/","110":"a","111":">","112":" ","113":"a","114":"n","115":"d","116":" ","117":"h","118":"e","119":"l","120":"p","121":" ","122":"o","123":"t","124":"h","125":"e","126":"r","127":"s","128":" ","129":"d","130":"i","131":"s","132":"c","133":"o","134":"v","135":"e","136":"r","137":" ","138":"o","139":"u","140":"r","141":" ","142":"p","143":"r","144":"o","145":"d","146":"u","147":"c","148":"t","149":"!","150":"<","151":"/","152":"p","153":">","mobile":"<p>⭐ 94 — <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>Star us on Github</u></a>.</p>","desktop":"<p>⭐ 94 — Star <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>deco.cx on Github</u></a> and help others discover our product!</p>"}},{"cta":[{"id":"bt-click-contact","href":"https://www.deco.cx/en/contact-us","text":"Book a demo","variant":"Normal"}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b6e51dd6-0dd5-4158-995b-d4583f74f1cf","title":"<h1><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">Speed up</span></h1><h1><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\"><span style=\"color: #02f67c;\">your website,</span></span></h1><h1><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">not your costs</span><br></h1>","placement":"left","description":"Transform milliseconds into millions. Elevate your digital experience with lightning-fast websites on top of any backend.","__resolveType":"site/sections/NRF/HeroFlat.tsx"},{"url":"https://deco.cx/pt","title":"High Performance Websites - deco.cx Headless Frontend Platform","imageUrl":"/decocx-meta-pt.png","styleUrls":[],"themeColor":"#000","description":"Elevate your digital experience with lightning-fast websites on top of any backend.","__resolveType":"site/sections/Head.tsx"},{"__resolveType":"Deco Brands [EN]"},{"lines":["deco.cx is the frontend platform for high-performance,           ","budget friendly and fully personalized digital experiences,","       paving your way to a smooth headless adoption."],"__resolveType":"site/sections/NRF/TextLines.tsx","animateOnScroll":true},{"cards":[{"icon":"DecoIcon","text":"Lower server latency will enhance browsing experiences to perfection.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/25f59ed7-040e-40dd-85c1-da3c21aff909","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Edge computing</span><br>always close to the user.</p>"},{"icon":"ArrowRight","text":"Your assets will be always as optimized as they can be.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3e0f1195-d00a-493f-a869-e86145d1855a","title":"<p><font color=\"#02f67c\">Perfect images</font><br>always auto-optimized.</p>"},{"icon":"DecoIcon","text":"Our real time performance-oriented analytics provides key insights.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b3393ea4-6f10-47bc-8ddb-3c567bfb29c8","title":"<p><span style=\"color: #02f67c;\">Full observability</span></p><p>of weight and latency.</p>"},{"icon":"ArrowRight","text":"By default, our storefront sends 0 JS to the browser.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1e732b11-0b43-4b2a-9b47-a6b175c48ffb","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Server side rendering </span></p><p>arquitecture</p>"}],"title":"Designed for speed in every aspect:","__resolveType":"site/sections/NRF/FeaturesWithImage.tsx"},{"cta":{},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98725b00-019d-4d6f-971f-0559dc8a8367","title":"Jumpstart using our optimized storefront and its component library","placement":"right","description":"Our theme-ready, reusable library seamlessly adapts to any commerce backend, ensuring a swift, efficient setup. Tailored for flexibility, these agnostic components let you craft unique digital storefronts while significantly cutting down development time.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7cb37209-1f2a-4107-9488-32901daae95e","title":"On the Edge, scalable & reliable infrastructure","placement":"left","description":"Rest easy knowing your storefront is powered by Deco's robust, scalable infrastructure. Designed for reliability and high performance, our platform ensures your site remains fast and responsive, even during peak traffic. Enjoy peace of mind with an infrastructure that grows with your business needs, minus the technical worries.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a72ee639-92ba-4674-8e88-f4462d60a814","title":"Install vetted apps with 1-click and enhance your experience ","placement":"right","description":"Elevate your e-commerce experience effortlessly with Deco's one-click app installations. Our app hub offers a spectrum of functionalities, from analytics to personalization, streamlining your site's capabilities. Enhance your storefront's features and user experience without the complexities of manual integrations.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cd14d535-924b-4f7d-aa63-5d53f65a6339","title":"Ship features faster with a visual no-code editing and full-code control","placement":"left","description":"Accelerate feature deployment with Deco's dual editing power. Our intuitive no-code visual editor empowers marketing teams to implement changes swiftly, while developers retain full-code control for deeper customizations. This harmonious blend ensures rapid, seamless updates, keeping your storefront agile and ahead of the curve.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"__resolveType":"Deco FAQ [EN]"},{"cta":[{"id":"bt-click-contact","href":"https://www.deco.cx/en/contact-us","text":"Book a demo","variant":"Normal"}],"text":"Speed up your website","__resolveType":"site/sections/NRF/CallToAction.tsx"},{"__resolveType":"Deco Footer [EN]"},{"__resolveType":"GTM"},{"__resolveType":"site/sections/NRF/Grid.tsx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Speed Up Your Site",
+  "path": "/speed-up-your-site",
+  "sections": [
+    {
+      "__resolveType": "HeaderV2",
+      "githubBarText": {
+        "0": "<",
+        "1": "p",
+        "2": ">",
+        "3": "⭐",
+        "4": " ",
+        "5": "6",
+        "6": "3",
+        "7": " ",
+        "8": "—",
+        "9": " ",
+        "10": "S",
+        "11": "t",
+        "12": "a",
+        "13": "r",
+        "14": " ",
+        "15": "<",
+        "16": "a",
+        "17": " ",
+        "18": "c",
+        "19": "l",
+        "20": "a",
+        "21": "s",
+        "22": "s",
+        "23": "=",
+        "24": "\"",
+        "25": "u",
+        "26": "n",
+        "27": "d",
+        "28": "e",
+        "29": "r",
+        "30": "l",
+        "31": "i",
+        "32": "n",
+        "33": "e",
+        "34": "\"",
+        "35": " ",
+        "36": "h",
+        "37": "r",
+        "38": "e",
+        "39": "f",
+        "40": "=",
+        "41": "\"",
+        "42": "h",
+        "43": "t",
+        "44": "t",
+        "45": "p",
+        "46": "s",
+        "47": ":",
+        "48": "/",
+        "49": "/",
+        "50": "g",
+        "51": "i",
+        "52": "t",
+        "53": "h",
+        "54": "u",
+        "55": "b",
+        "56": ".",
+        "57": "c",
+        "58": "o",
+        "59": "m",
+        "60": "/",
+        "61": "d",
+        "62": "e",
+        "63": "c",
+        "64": "o",
+        "65": "-",
+        "66": "c",
+        "67": "x",
+        "68": "/",
+        "69": "d",
+        "70": "e",
+        "71": "c",
+        "72": "o",
+        "73": "\"",
+        "74": " ",
+        "75": "t",
+        "76": "a",
+        "77": "r",
+        "78": "g",
+        "79": "e",
+        "80": "t",
+        "81": "=",
+        "82": "\"",
+        "83": "_",
+        "84": "b",
+        "85": "l",
+        "86": "a",
+        "87": "n",
+        "88": "k",
+        "89": "\"",
+        "90": ">",
+        "91": "d",
+        "92": "e",
+        "93": "c",
+        "94": "o",
+        "95": ".",
+        "96": "c",
+        "97": "x",
+        "98": " ",
+        "99": "o",
+        "100": "n",
+        "101": " ",
+        "102": "G",
+        "103": "i",
+        "104": "t",
+        "105": "h",
+        "106": "u",
+        "107": "b",
+        "108": "<",
+        "109": "/",
+        "110": "a",
+        "111": ">",
+        "112": " ",
+        "113": "a",
+        "114": "n",
+        "115": "d",
+        "116": " ",
+        "117": "h",
+        "118": "e",
+        "119": "l",
+        "120": "p",
+        "121": " ",
+        "122": "o",
+        "123": "t",
+        "124": "h",
+        "125": "e",
+        "126": "r",
+        "127": "s",
+        "128": " ",
+        "129": "d",
+        "130": "i",
+        "131": "s",
+        "132": "c",
+        "133": "o",
+        "134": "v",
+        "135": "e",
+        "136": "r",
+        "137": " ",
+        "138": "o",
+        "139": "u",
+        "140": "r",
+        "141": " ",
+        "142": "p",
+        "143": "r",
+        "144": "o",
+        "145": "d",
+        "146": "u",
+        "147": "c",
+        "148": "t",
+        "149": "!",
+        "150": "<",
+        "151": "/",
+        "152": "p",
+        "153": ">",
+        "mobile": "<p>⭐ 94 — <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>Star us on Github</u></a>.</p>",
+        "desktop": "<p>⭐ 94 — Star <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>deco.cx on Github</u></a> and help others discover our product!</p>"
+      }
+    },
+    {
+      "cta": [
+        {
+          "id": "bt-click-contact",
+          "href": "https://www.deco.cx/en/contact-us",
+          "text": "Book a demo",
+          "variant": "Normal"
+        }
+      ],
+      "image": "https://assets.decocache.com/starting/1d763ed4-5bfe-4259-9521-9639c7bfb01b/1742491721931-b6e51dd6-0dd5-4158-995b-d4583f74f1cf",
+      "title": "<h1><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">Speed up</span></h1><h1><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\"><span style=\"color: #02f67c;\">your website,</span></span></h1><h1><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\" data-mce-style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\">not your costs</span><br></h1>",
+      "placement": "left",
+      "description": "Transform milliseconds into millions. Elevate your digital experience with lightning-fast websites on top of any backend.",
+      "__resolveType": "site/sections/NRF/HeroFlat.tsx"
+    },
+    {
+      "url": "https://deco.cx/pt",
+      "title": "High Performance Websites - deco.cx Headless Frontend Platform",
+      "imageUrl": "/decocx-meta-pt.png",
+      "styleUrls": [],
+      "themeColor": "#000",
+      "description": "Elevate your digital experience with lightning-fast websites on top of any backend.",
+      "__resolveType": "site/sections/Head.tsx"
+    },
+    {
+      "__resolveType": "Deco Brands [EN]"
+    },
+    {
+      "lines": [
+        "deco.cx is the frontend platform for high-performance,           ",
+        "budget friendly and fully personalized digital experiences,",
+        "       paving your way to a smooth headless adoption."
+      ],
+      "__resolveType": "site/sections/NRF/TextLines.tsx",
+      "animateOnScroll": true
+    },
+    {
+      "cards": [
+        {
+          "icon": "DecoIcon",
+          "text": "Lower server latency will enhance browsing experiences to perfection.",
+          "image": "https://assets.decocache.com/starting/85f18c2b-1335-47ad-8a61-0d554c59896f/1742491724293-25f59ed7-040e-40dd-85c1-da3c21aff909",
+          "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Edge computing</span><br>always close to the user.</p>"
+        },
+        {
+          "icon": "ArrowRight",
+          "text": "Your assets will be always as optimized as they can be.",
+          "image": "https://assets.decocache.com/starting/0848cec5-0d45-4f09-8c3e-479a355742cd/1742491725737-3e0f1195-d00a-493f-a869-e86145d1855a",
+          "title": "<p><font color=\"#02f67c\">Perfect images</font><br>always auto-optimized.</p>"
+        },
+        {
+          "icon": "DecoIcon",
+          "text": "Our real time performance-oriented analytics provides key insights.",
+          "image": "https://assets.decocache.com/starting/a24d856b-609e-4bdc-9408-65e6226b6b58/1742491728631-b3393ea4-6f10-47bc-8ddb-3c567bfb29c8",
+          "title": "<p><span style=\"color: #02f67c;\">Full observability</span></p><p>of weight and latency.</p>"
+        },
+        {
+          "icon": "ArrowRight",
+          "text": "By default, our storefront sends 0 JS to the browser.",
+          "image": "https://assets.decocache.com/starting/70bbf7c5-a6f6-4a55-9409-af7da18e57f5/1742491729989-1e732b11-0b43-4b2a-9b47-a6b175c48ffb",
+          "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Server side rendering </span></p><p>arquitecture</p>"
+        }
+      ],
+      "title": "Designed for speed in every aspect:",
+      "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx"
+    },
+    {
+      "cta": {},
+      "image": "https://assets.decocache.com/starting/68d17948-6370-49ab-ad7d-fa8d3ebe0347/1742491731269-98725b00-019d-4d6f-971f-0559dc8a8367",
+      "title": "Jumpstart using our optimized storefront and its component library",
+      "placement": "right",
+      "description": "Our theme-ready, reusable library seamlessly adapts to any commerce backend, ensuring a swift, efficient setup. Tailored for flexibility, these agnostic components let you craft unique digital storefronts while significantly cutting down development time.",
+      "__resolveType": "site/sections/NRF/ImageSection.tsx"
+    },
+    {
+      "cta": {},
+      "image": "https://assets.decocache.com/starting/1008a83b-7cad-4da1-89b4-c3607eb859c2/1742491732573-7cb37209-1f2a-4107-9488-32901daae95e",
+      "title": "On the Edge, scalable & reliable infrastructure",
+      "placement": "left",
+      "description": "Rest easy knowing your storefront is powered by Deco's robust, scalable infrastructure. Designed for reliability and high performance, our platform ensures your site remains fast and responsive, even during peak traffic. Enjoy peace of mind with an infrastructure that grows with your business needs, minus the technical worries.",
+      "__resolveType": "site/sections/NRF/ImageSection.tsx"
+    },
+    {
+      "cta": {},
+      "image": "https://assets.decocache.com/starting/eabf9fe2-ad09-40ee-818f-ec7d4c78cc1d/1742491733935-a72ee639-92ba-4674-8e88-f4462d60a814",
+      "title": "Install vetted apps with 1-click and enhance your experience ",
+      "placement": "right",
+      "description": "Elevate your e-commerce experience effortlessly with Deco's one-click app installations. Our app hub offers a spectrum of functionalities, from analytics to personalization, streamlining your site's capabilities. Enhance your storefront's features and user experience without the complexities of manual integrations.",
+      "__resolveType": "site/sections/NRF/ImageSection.tsx"
+    },
+    {
+      "cta": {},
+      "image": "https://assets.decocache.com/starting/777297f0-0db0-40c3-b6cd-28f8d536e188/1742491735282-cd14d535-924b-4f7d-aa63-5d53f65a6339",
+      "title": "Ship features faster with a visual no-code editing and full-code control",
+      "placement": "left",
+      "description": "Accelerate feature deployment with Deco's dual editing power. Our intuitive no-code visual editor empowers marketing teams to implement changes swiftly, while developers retain full-code control for deeper customizations. This harmonious blend ensures rapid, seamless updates, keeping your storefront agile and ahead of the curve.",
+      "__resolveType": "site/sections/NRF/ImageSection.tsx"
+    },
+    {
+      "__resolveType": "Deco FAQ [EN]"
+    },
+    {
+      "cta": [
+        {
+          "id": "bt-click-contact",
+          "href": "https://www.deco.cx/en/contact-us",
+          "text": "Book a demo",
+          "variant": "Normal"
+        }
+      ],
+      "text": "Speed up your website",
+      "__resolveType": "site/sections/NRF/CallToAction.tsx"
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "site/sections/NRF/Grid.tsx"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}
