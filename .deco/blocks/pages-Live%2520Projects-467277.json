@@ -1,1 +1,1168 @@
-{"name":"Live Projects","path":"/live-projects","sections":[{"__resolveType":"HeaderV2"},{"__resolveType":"website/sections/Rendering/Lazy.tsx","section":{"__resolveType":"site/sections/Live Projects/TextHero.tsx","pixelTitle":"<p><span style=\"color: rgb(2, 246, 124)\">Incredible websites</span></p>","title":"<p>built by our community</p>","subTitle":"<p>Find inspiration from +100 websites all made using <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://deco.cx\">deco.cx</a>.</p><p><a style=\"text-decoration: underline; text-decoration-color: rgb(2, 246, 124);\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://admin.deco.cx/spaces/new\"><span style=\"color: rgb(2, 246, 124)\">Looking for templates to start your project?</span></a></p>","ctas":[],"topPage":true}},{"__resolveType":"site/sections/Live Projects/ProjectsSlider.tsx","projects":[{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b1d9b09-d4d3-4736-a00c-4734bb4df7b7","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2d43f4d9-fba9-4bcb-aaf4-bc9daadf5dc6","url":"https://urcarenault.leadfy.me/","name":"Urca Renault","performance":90,"category":"Auto"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfd49116-7dff-4429-9b3b-33f65a06d65d","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/feab8e25-6b9f-4d9b-b6b0-03381e586143","url":"https://loja.conecfit.com.br/","name":"Conecfit","performance":90,"category":"Construction"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9755456f-1e8d-4e32-9978-3746559e037a","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1ffc5084-a28c-42e6-96ed-ff90bfe5a0e8","url":"https://www.armadillo.com.br/","name":"Armadillo","performance":90,"category":"Fashion"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1ff640ed-0af5-40c9-a7be-ff233d885532","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2d524710-9c18-4f20-9933-3a51b82f8117","url":"https://www.austral.com.br/","name":"Austral","performance":90,"category":"Fashion"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7fc3c619-6d54-4f4c-8551-1651ead84a34","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ccc2e661-45c0-4c19-95b6-95c28020f01a","url":"https://www.aviator.com.br/","name":"Aviator","performance":90,"category":"Fashion"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/339c1f17-53b6-45a8-a4a5-0bd1beb8ce1c","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff7ce533-bbbd-4921-ade1-8f88cb267e2d","url":"https://www.bawclothing.com.br","name":"Baw Clothing","performance":90,"category":"Fashion"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c3363f36-91e8-4c19-8206-b549dfad0c51","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7df006a9-8abc-4856-9d7d-6d98fe3d0db3","url":"https://www.bolovo.com.br/","name":"Bolovo","performance":90,"category":"Fashion"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb0ffe08-807a-4a0e-9f6a-2b5481405c4e","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5c29bd4f-871d-48fa-a233-0b6524f1c325","url":"https://brandili.deco.site/","name":"Brandili","performance":90,"category":"Fashion"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6bdda707-63f7-487e-bee0-e60baa4010f6","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dcb16175-7de2-4444-8dbc-6a2052806b0d","url":"https://www.calcadosclovis.com.br/","name":"Clovis","performance":90,"category":"Fashion"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/78d79b75-9300-49f8-b551-d1d62e0692cd","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bd78b55d-168f-4c9b-8803-a873397741c0","url":"https://www.comfortflex.com.br/","name":"Comfortflex","performance":90,"category":"Fashion"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1d1bca53-89b1-4141-a14d-c05ccb84fdd1","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d615de9e-5ad7-4d31-b613-bdb2d48bdd48","url":"https://www.danielatombini.com.br/","name":"Daniela Tombini","performance":90,"category":"Fashion"},{"icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3e5c014d-6f7a-4225-a5b2-9b0bf5bc2adc","banner":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ed937d13-a3c0-4d9b-83a7-ce056284c88f","url":"https://www.douxstore.com/","name":"Doux","performance":90,"category":"Fashion"}]},{"__resolveType":"site/sections/Live Projects/ProjectsGrid.tsx","list":[{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a","color":"#FFFFFF"}],"label":"Lojas Torra","price":"Fashion","categoria":"Fashion","pageSpeed":100,"description":"FASHION"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a","color":"#FFFFFF"}],"label":"Lojas Torra","price":"Fashion","categoria":"Fashion","pageSpeed":100,"description":"FASHION"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a","color":"#FFFFFF"}],"label":"Lojas Torra","price":"Fashion","categoria":"Fashion","pageSpeed":100,"description":"FASHION"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2ab2db43-f040-4d3b-9e51-63b5234dfe6a","color":"#FFFFFF"}],"label":"Lojas Torra","price":"Fashion","categoria":"Educação","pageSpeed":100,"description":"FASHION"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6df10507-a02f-4427-ba7e-920183ee17b8","color":"#FFFFFF"}],"label":"Zee.Dog","categoria":"PET","description":"PET"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/481d0f2b-6921-49f0-8a16-25d80100ee7c","color":"#FFFFFF"}],"label":"Teste","categoria":"Teste","description":"Teste"}],"cards":[{"link":"https://www.aviator.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3fd1e04d-251d-4bb2-9f7b-2acf5ce1f929","color":"#FFFFFF"}],"label":"Aviator","category":"Fashion","categoria":"B2B","description":"Fundada em 1987, começou com camisas masculinas e agora oferece uma gama diversificada de roupas. Com lojas no Rio e online, a marca foca em qualidade e satisfação do cliente."},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3715dc13-086c-4be6-a4ee-885458e279b4","color":"#FFFFFF"}],"label":"Zee.Dog","category":"PET","description":"Nascida em Los Angeles, a Zee.Dog desafia o mercado pet tradicional, inovando e oferecendo acessórios que refletem o estilo de vida dos donos."},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4f9b708f-ccc3-464f-a6a4-e3d7306235f6","color":"#FFFFFF"}],"label":"Teste","category":"Farma","description":"esse é um teste"},{"image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfa18b1a-6e27-4c0a-b37f-95b0fd93015b","color":"#FFFFFF"}],"label":"Outros","category":"esporte","description":"asjhuahfueufhe"}],"layout":{"categoryCard":{"textPosition":"bottom","textAlignment":"left"}},"itensPerPage":12,"categories":[{"cards":[{"link":"https://www.dellaaviamentos.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f6f28f23-3f40-409d-9142-f052d54ea08f","color":"#FFFFFF"}],"label":"Della Aviamentos","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a735af4a-92bd-4c4e-b1d0-a0288de49ec4"},{"link":"https://www.maximustecidos.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c958d2b6-3b59-41e5-834e-c821b911fa42","color":"#FFFFFF"}],"label":"Maximus Tecidos","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9db7fe6c-9300-47d2-8c4c-5cf0dffda694"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6ce3a5e1-473e-4923-9ce0-fb7028173deb"}],"link":"https://www.pgadesivos.com.br/","label":"PG Adesivos","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/438cfb6b-fa2f-4b72-804d-86ed97d79273"}],"label":"Art, Crafts & Fabrics","hideCategoryNameOnCard":false},{"cards":[{"link":"https://www.bite.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/27b93fb5-9910-401c-9888-b232160d4287","color":"#ffffff"}],"label":"Bite Auto Peças","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/aad6cd74-3381-4521-be1d-789718391ff4"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2d43f4d9-fba9-4bcb-aaf4-bc9daadf5dc6"}],"label":"Urca Renault","link":"https://urcarenault.leadfy.me/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0b1d9b09-d4d3-4736-a00c-4734bb4df7b7"}],"label":"Auto"},{"cards":[{"link":"https://loja.conecfit.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/feab8e25-6b9f-4d9b-b6b0-03381e586143","color":"#ffffff"}],"label":"Conecfit","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfd49116-7dff-4429-9b3b-33f65a06d65d"}],"label":"Construction"},{"cards":[{"link":"https://www.armadillo.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1ffc5084-a28c-42e6-96ed-ff90bfe5a0e8","color":"#FFFFFF"}],"label":"Armadillo","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9755456f-1e8d-4e32-9978-3746559e037a"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2d524710-9c18-4f20-9933-3a51b82f8117"}],"label":"Austral","link":"https://www.austral.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1ff640ed-0af5-40c9-a7be-ff233d885532"},{"link":"https://www.aviator.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ccc2e661-45c0-4c19-95b6-95c28020f01a","color":"#FFFFFF"}],"label":"Aviator","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7fc3c619-6d54-4f4c-8551-1651ead84a34"},{"link":"https://www.bawclothing.com.br","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff7ce533-bbbd-4921-ade1-8f88cb267e2d","color":"#FFFFFF"}],"label":"Baw Clothing","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/339c1f17-53b6-45a8-a4a5-0bd1beb8ce1c"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7df006a9-8abc-4856-9d7d-6d98fe3d0db3"}],"link":"https://www.bolovo.com.br/","label":"Bolovo","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c3363f36-91e8-4c19-8206-b549dfad0c51"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5c29bd4f-871d-48fa-a233-0b6524f1c325"}],"label":"Brandili","link":"https://brandili.deco.site/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb0ffe08-807a-4a0e-9f6a-2b5481405c4e"},{"link":"https://www.calcadosclovis.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dcb16175-7de2-4444-8dbc-6a2052806b0d","color":"#FFFFFF"}],"label":"Clovis","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6bdda707-63f7-487e-bee0-e60baa4010f6"},{"link":"https://www.comfortflex.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bd78b55d-168f-4c9b-8803-a873397741c0","color":"#FFFFFF"}],"label":"Comfortflex","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/78d79b75-9300-49f8-b551-d1d62e0692cd"},{"link":"https://www.danielatombini.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d615de9e-5ad7-4d31-b613-bdb2d48bdd48","color":"#FFFFFF"}],"label":"Daniela Tombini","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1d1bca53-89b1-4141-a14d-c05ccb84fdd1"},{"link":"https://www.douxstore.com/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ed937d13-a3c0-4d9b-83a7-ce056284c88f","color":"#FFFFFF"}],"label":"Doux","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3e5c014d-6f7a-4225-a5b2-9b0bf5bc2adc"},{"link":"https://www.eurorelogios.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/46a61863-3aa9-48a2-b409-8dfbf856b331","color":"#FFFFFF"}],"label":"Euro Relógios","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/772f1899-6b13-4688-b881-c70c4afa73f3"},{"link":"https://www.gaston.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6f7cedd3-27ce-41b3-bcbb-0a87c90904f2","color":"#FFFFFF"}],"label":"Gaston","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e3d413e9-e8c6-4402-976f-52ff98074cac"},{"link":"https://www.hectoralbertazzi.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9aa7bf0d-edcb-4937-afa6-7c276cfa4d92","color":"#FFFFFF"}],"label":"Hector Albertazzi","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c1aa2ec7-7a5c-41b7-839d-66f3c2f1b89e"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4b8a2bbd-cd7c-44f2-9bac-841520044b12"}],"label":"Liga Retrô","link":"https://www.ligaretro.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/811d0427-b743-414e-a236-8172a891103a"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/30be1ab7-69cb-45bc-9c50-943731b008e0"}],"label":"Lojas Torra","link":"https://www.lojastorra.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eb8df74a-0b88-4463-9691-d204473989de"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/689b5672-67e2-4d87-ba51-52842c3fcf6b"}],"link":"https://www.meiasola.com.br/","label":"Meia Sola","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c4015b4a-7aa6-4862-a243-c189bbed57fb"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1e8df378-9f13-4c8b-bc4a-9df94f0ccdfa"}],"label":"Notta","link":"https://www.notta.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4a486fa6-00f5-482a-8b89-a165f26350fe"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/539348b2-dadf-4b89-9dc2-8014b27d2d5b"}],"link":"https://www.osklen.com.br","label":"Osklen","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/40c431a9-ca47-451d-86bd-2c63639773d5"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/13cbca40-ad1a-4c79-9d55-966a8e5f7f93"}],"link":"https://www.ramarim.com.br/","label":"Ramarim","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1b42a5fa-585d-45e7-904e-3fcc5ba9fd3e"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f1bcf08c-6940-4109-a1bd-c7145a7355ec"}],"link":"https://www.technos.com.br/","label":"Technos","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2a905847-9b2a-4d0b-a6db-7de6b871f2ef"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/991c00c8-d1d5-4599-8e3b-83196106e385"}],"label":"Uncle K","link":"https://www.unclek.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a72665e9-386c-4b36-b30d-5aba80e9cd06"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8fd4a259-7e36-4d68-a01a-2d79d2883cbe"}],"label":"Velocitá","link":"https://www.velocita.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/783f1684-778d-47f9-b169-0e162c28a5d7"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dd5ff6ef-69ec-4380-8905-d5212d0c5dd9"}],"label":"Zorba","link":"https://www.zorba.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1f83cf6e-2fdf-470b-bc47-f93534bb4f62"}],"label":"Fashion"},{"cards":[{"link":"https://www.emporioquatroestrelas.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/733bd01a-5b38-496d-8116-ecedefb732d0","color":"#FFFFFF"}],"label":"Empório Quatro Estrelas","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/60ad5edd-02d7-4ce2-8fb6-f74e42457c0b"},{"link":"https://www.loja.notco.com/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2f320321-8e38-43a8-9102-9abd9f6f15d6","color":"#FFFFFF"}],"label":"Notco","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3071e0fa-da84-4e86-9aa8-a53086649efe"},{"link":"https://nutrilatina.com.br","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/94992d3e-59c5-4df5-9370-97496c07fe9b","color":"#FFFFFF"}],"label":"Nutrilatina","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d33d5244-02b8-4a4d-9d56-20a4425dd0dd"},{"link":"https://www.saddicenter.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/76d2048a-7cf4-4b86-9c5b-c579b59329ea","color":"#FFFFFF"}],"label":"Saddi Center","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/637fd92a-2c9c-4224-9a0a-d9d4bbc29507"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cd0dacf2-b3ed-432b-85e3-585f913a7de5"}],"link":"https://www.shopvinho.com.br/","label":"Shopvinho","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e5298a7d-fc67-4a52-9d7d-62d40400206e"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d5af56b8-61e1-4987-9982-826be98e5e1d"}],"label":"True Source","link":"https://www.truesource.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/03843dc4-779b-4ab5-8350-b2ce79154895"}],"label":"Grocery"},{"cards":[{"link":"https://www.dentalproclin.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c077a05c-09e4-47ad-ab5d-c037f8a21e2d","color":"#FFFFFF"}],"label":"Dental Proclin","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/01a76d16-20c9-43ac-8528-8f0a2cfdbe6d"},{"link":"https://www.embelleze.com/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f91a8862-5470-4439-96b6-00292cd00662","color":"#FFFFFF"}],"label":"Embelleze","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e21ecd17-4689-4b28-9a4d-0ea45d489b2a"},{"link":"https://www.granado.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/588bf673-056e-4fb6-a8a2-74fb1448a6c2","color":"#FFFFFF"}],"label":"Granado","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/62ddfcd4-024d-40fb-994b-2c4cdebe204d"},{"link":"https://www.hospitalardistribuidora.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b02009db-d9e4-47be-a650-b27221dd8d42","color":"#FFFFFF"}],"label":"Hospitalar Distribuidora","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1355ce36-59c8-4430-974b-11dd58bd9587"},{"link":"https://www.lojainterdental.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/06c1dfc4-62a6-4b7d-b449-54366314d984","color":"#FFFFFF"}],"label":"Loja Interdental","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8e5ebc6c-b2fc-46ef-9958-f49d0e329587"},{"link":"https://www.lojaprohall.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/97dc7707-cf80-4295-ab22-539ed903f320","color":"#FFFFFF"}],"label":"Loja Prohall","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/07cca63e-e573-4f47-b6a7-6f66b46fb515"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d0d88d82-ae2a-4bb6-a2ca-30b2fca0f448"}],"label":"Omron","link":"https://loja.omronbrasil.com/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0a80aa11-3585-45f0-9625-fa195344aa29"},{"link":"https://www.oticaisabeladias.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5131a78c-03a5-442e-93ab-490f738d7d99","color":"#FFFFFF"}],"label":"Óticas Isabela Dias","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7e88ce3d-b2dc-4b72-be76-1aa99fba8969"},{"link":"https://www.oticasprevent.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9916ed3a-a3cd-4a2b-9bc3-82bde226b80b","color":"#FFFFFF"}],"label":"Óticas Prevent","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/56094eb0-bd86-4083-84f4-b90ca40d95a8"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/52c42718-0b90-4cad-9537-e78b5019187f"}],"label":"Yenzah","link":"https://www.yenzah.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/15bd7943-e38a-46f2-b04e-bd8f58b2d42f"}],"label":"Health & Beauty"},{"cards":[{"link":"https://www.abracadabra.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/442fa1ee-a39f-4037-a1b1-ee6f0e9d1d70","color":"#FFFFFF"}],"label":"Abracadabra","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/755c9dec-3801-4f0c-80f9-29fe9e8ce1bd"},{"link":"https://www.abracasa.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5df34060-b407-40dd-a33f-d103c38958a0","color":"#FFFFFF"}],"label":"Abracasa","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7a6773bf-774f-4c06-80b7-eb9f55e5f385"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4b8c330e-b926-4480-a8ea-7ce6283dab69"}],"label":"Atau","link":"https://www.atau.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5cba3b32-7e3f-44a5-8b45-0bdfba0a3287"},{"link":"https://www.belairmoveis.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/690c4356-df8b-402a-b2ea-486f38ff6b5e","color":"#FFFFFF"}],"label":"Bel Air Móveis","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d12d307-152b-40c3-aa0f-4dfa83d93721"},{"link":"https://www.casaevideo.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e08a837c-d64e-432b-a52d-ef38df7477ff","color":"#FFFFFF"}],"label":"Casa & Video","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/19646bd5-d505-4a0b-89ba-af2427e956fa"},{"link":"https://www.lojaclickhouse.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6573b245-0f70-44df-8630-757d6aeebae9","color":"#FFFFFF"}],"label":"ClickHouse","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ba7373e6-750b-4354-a774-b3b2b177de54"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/46d87414-ec40-4e41-8386-ab55a0ff86cd"}],"label":"Copel Colchões","link":"https://www.copelcolchoes.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/cf4eecdd-e3b7-457b-ba0b-e786402b7e7c"},{"link":"https://www.costaatacado.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6c83a94e-3e7f-434f-b284-cd7e75d8a923","color":"#FFFFFF"}],"label":"Costa Atacado","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d990a5df-232e-4c0b-b185-6a64ff5280dd"},{"link":"https://www.cristaistavares.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c636bc56-d667-4638-a3b4-475630e363c4","color":"#FFFFFF"}],"label":"Cristais Tavares","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/46ad9205-cbb3-4482-9fd1-1e85784aef3f"},{"link":"https://www.eladecora.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/fa9b11a7-686b-48be-bc62-f952ff51f44f","color":"#FFFFFF"}],"label":"Ela Decora","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7ef2dcc6-f2bf-4365-a743-287712243380"},{"link":"https://www.lojastopmoveis.com.br/","image":[{"img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9f55ed96-1986-469f-a272-94235fb4aed3","color":"#FFFFFF"}],"label":"Lojas Top Móveis","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a3ea423f-22d8-4ac0-87dc-1c5692922027"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6618e37e-7564-4ea0-9ee3-f3e80d1f432a"}],"link":"https://lojavirtual.lumini.com.br/","label":"Lumini","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a0b659f4-7b4c-4e0d-83c9-5c8cd53e632c"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7ef2f3ab-3738-4e37-9322-92fc73aea85a"}],"label":"OpenBox2","link":"https://www.openbox2.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/af488451-8f0b-4cdd-a69e-12b7a442ec81"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c3393e0c-15e2-4dc1-acaf-9f2ffa8f3244"}],"link":"https://star-company.deco.site/","label":"Star Company"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6e8900f2-9bca-4786-8078-018391510295"}],"label":"Teciplast","link":"https://loja.teciplast.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5cb564a7-240f-45e1-91a8-e3ee96d2937c"}],"label":"Home & Decor"},{"cards":[{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c256bedf-4895-433c-bda3-2608663c1cfa"}],"label":"Petfarma","link":"https://www.petfarma.com/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/236814e9-e8a2-4345-bf9c-feb051c1e95f"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a686b801-d7e0-4df1-87d3-c4c996118880"}],"link":"https://www.zeedog.com.br/","label":"Zee.Dog","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b95b5fd3-76a1-48ea-a1db-2933f9970d1e"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8e9c0007-b8aa-4877-a166-1bd11335001f","label":"zeenow"}],"label":"Zeenow","link":"https://www.zeenow.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c7e754f6-a1d4-4639-97d4-6f17441615a9"}],"label":"PET","category":"PET"},{"cards":[{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ec5c258c-cce0-4b67-b390-2209ea651407"}],"link":"https://www.hotrio.com.br","label":"Hot Rio","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/44dfec78-c14e-4d93-ba57-2433335792bb"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/08d1ec80-2cce-4289-bd25-bdc59c2369b7"}],"link":"https://www.miess.com.br/","label":"Miess","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/243db511-e351-4e06-8e6b-dc1becb78410"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a30d97b7-6174-46d6-ab7b-e26a6758be69"}],"link":"https://www.sexshopatacadao.com.br/","label":"Sex Shop Atacado","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09cb4c0a-b1b0-4fd2-b6d1-f9da803071b7"}],"label":"Sex Shops"},{"cards":[{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0aab2340-3f8d-4183-b931-320f9e52d443"}],"label":"Adaptio","link":"https://www.adaptio.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/40afe08f-a237-4885-b919-796e627ff2a9"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e6f6aa08-14e1-4efa-9123-2c4d614b56a2"}],"link":"https://www.aforrageiradeturing.com/","label":"A Forrageira de Turing","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c489d01c-752f-46db-8e8b-7923891314d3"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/225eb51d-675d-40a7-ab6b-c6af4a78a177"}],"link":"https://getsitedone.deco.site","label":"Get Site Done","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3e11346b-6e2f-4322-bb6c-a69f4c44914e"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/94759971-26fb-46ac-ba41-817179bb7665"}],"label":"MadeinBrazil","link":"https://www.madeinbrazil.tech/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6a7ddb5f-fc2b-40fc-a375-10c02387164d"},{"image":[{"color":"#FFFFFF","img":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6fce070e-6c1f-4c10-ac8b-68956e0dc279","label":"Cooper company"}],"label":"CooperCompany","link":"https://www.coopercompany.com.br/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/951da4e7-e666-47c7-ba4a-1381b0282eaa"}],"label":"Tech"}],"categoriasNoIndice":["Todos","Fashion","PET","Farma","B2B","Saúde","Outros"],"layoutCategoryCard":{"textPosition":"bottom","textAlignment":"left"},"defaultCategory":"All"},{"__resolveType":"site/sections/Head.tsx","url":"https://www.deco.cx/en/live-projects","title":"deco.cx | Live Projects","imageUrl":"https://www.deco.cx/decocx-meta-en.png","styleUrls":[],"themeColor":"#0A2121","description":"The digital experience platform that combines performance and personalization for enterprise ecommerce."},{"__resolveType":"Deco Footer [EN]"},{"__resolveType":"GTM"}],"seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Live Projects",
+  "path": "/live-projects",
+  "sections": [
+    {
+      "__resolveType": "HeaderV2"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Live Projects/TextHero.tsx",
+        "pixelTitle": "<p><span style=\"color: rgb(2, 246, 124)\">Incredible websites</span></p>",
+        "title": "<p>built by our community</p>",
+        "subTitle": "<p>Find inspiration from +100 websites all made using <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://deco.cx\">deco.cx</a>.</p><p><a style=\"text-decoration: underline; text-decoration-color: rgb(2, 246, 124);\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://admin.deco.cx/spaces/new\"><span style=\"color: rgb(2, 246, 124)\">Looking for templates to start your project?</span></a></p>",
+        "ctas": [],
+        "topPage": true
+      }
+    },
+    {
+      "__resolveType": "site/sections/Live Projects/ProjectsSlider.tsx",
+      "projects": [
+        {
+          "icon": "https://assets.decocache.com/starting/cf28c634-fc8a-4e64-bdb8-c09d2e95dc00/1742491274442-0b1d9b09-d4d3-4736-a00c-4734bb4df7b7",
+          "banner": "https://assets.decocache.com/starting/1564664f-992a-4006-b42d-977ccc86781b/1742491276329-2d43f4d9-fba9-4bcb-aaf4-bc9daadf5dc6",
+          "url": "https://urcarenault.leadfy.me/",
+          "name": "Urca Renault",
+          "performance": 90,
+          "category": "Auto"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/dbd38620-2a21-4638-ae4f-066146f48a34/1742491278167-bfd49116-7dff-4429-9b3b-33f65a06d65d",
+          "banner": "https://assets.decocache.com/starting/c8da9877-418d-4c12-a607-94a40aee81a1/1742491280276-feab8e25-6b9f-4d9b-b6b0-03381e586143",
+          "url": "https://loja.conecfit.com.br/",
+          "name": "Conecfit",
+          "performance": 90,
+          "category": "Construction"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/377ce7d1-977c-422f-b335-77bc2b8fb5d5/1742491281981-9755456f-1e8d-4e32-9978-3746559e037a",
+          "banner": "https://assets.decocache.com/starting/988a858e-fd13-4726-9ac9-e2161440ef32/1742491283953-1ffc5084-a28c-42e6-96ed-ff90bfe5a0e8",
+          "url": "https://www.armadillo.com.br/",
+          "name": "Armadillo",
+          "performance": 90,
+          "category": "Fashion"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/f1b4bf97-df9b-489a-826c-4a90d2827037/1742491285768-1ff640ed-0af5-40c9-a7be-ff233d885532",
+          "banner": "https://assets.decocache.com/starting/1e72fe7c-d0cb-41a1-bee9-c35a1b605d23/1742491288018-2d524710-9c18-4f20-9933-3a51b82f8117",
+          "url": "https://www.austral.com.br/",
+          "name": "Austral",
+          "performance": 90,
+          "category": "Fashion"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/d25f757e-73c5-4a38-90fb-e03d30fafc8b/1742491290141-7fc3c619-6d54-4f4c-8551-1651ead84a34",
+          "banner": "https://assets.decocache.com/starting/61f4c9d9-e086-4fda-9c06-2b701abdbcad/1742491291925-ccc2e661-45c0-4c19-95b6-95c28020f01a",
+          "url": "https://www.aviator.com.br/",
+          "name": "Aviator",
+          "performance": 90,
+          "category": "Fashion"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/194fe489-d06a-4c10-b51c-038205810ebc/1742491293985-339c1f17-53b6-45a8-a4a5-0bd1beb8ce1c",
+          "banner": "https://assets.decocache.com/starting/47ae27a4-ca52-4af5-a429-88351cfbb747/1742491296137-ff7ce533-bbbd-4921-ade1-8f88cb267e2d",
+          "url": "https://www.bawclothing.com.br",
+          "name": "Baw Clothing",
+          "performance": 90,
+          "category": "Fashion"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/8d32f33b-f55a-4c8e-b972-097cd69b2368/1742491299045-c3363f36-91e8-4c19-8206-b549dfad0c51",
+          "banner": "https://assets.decocache.com/starting/cbabccd4-b160-4e7f-98fe-145963ca0dfe/1742491300837-7df006a9-8abc-4856-9d7d-6d98fe3d0db3",
+          "url": "https://www.bolovo.com.br/",
+          "name": "Bolovo",
+          "performance": 90,
+          "category": "Fashion"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/a900697f-f164-4fde-b484-94ef6fb87281/1742491302977-eb0ffe08-807a-4a0e-9f6a-2b5481405c4e",
+          "banner": "https://assets.decocache.com/starting/4a600e75-5da5-4ed7-a9dd-4c347f11ea1f/1742491304563-5c29bd4f-871d-48fa-a233-0b6524f1c325",
+          "url": "https://brandili.deco.site/",
+          "name": "Brandili",
+          "performance": 90,
+          "category": "Fashion"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/877a0bc6-3fd7-42a6-84d1-6196aecd71dc/1742491306458-6bdda707-63f7-487e-bee0-e60baa4010f6",
+          "banner": "https://assets.decocache.com/starting/0d224365-33cc-4802-b849-e85f5494d1b8/1742491308415-dcb16175-7de2-4444-8dbc-6a2052806b0d",
+          "url": "https://www.calcadosclovis.com.br/",
+          "name": "Clovis",
+          "performance": 90,
+          "category": "Fashion"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/5a65a1c5-8f7f-492f-be54-b7395ab49b1b/1742491310558-78d79b75-9300-49f8-b551-d1d62e0692cd",
+          "banner": "https://assets.decocache.com/starting/2024b1cb-4815-4afb-848e-9a343b6862f8/1742491312229-bd78b55d-168f-4c9b-8803-a873397741c0",
+          "url": "https://www.comfortflex.com.br/",
+          "name": "Comfortflex",
+          "performance": 90,
+          "category": "Fashion"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/093f6fae-27ce-4a5c-83d8-9e33bb74ffd5/1742491314285-1d1bca53-89b1-4141-a14d-c05ccb84fdd1",
+          "banner": "https://assets.decocache.com/starting/ab2df124-3fa7-4237-97ca-b34f49744882/1742491316331-d615de9e-5ad7-4d31-b613-bdb2d48bdd48",
+          "url": "https://www.danielatombini.com.br/",
+          "name": "Daniela Tombini",
+          "performance": 90,
+          "category": "Fashion"
+        },
+        {
+          "icon": "https://assets.decocache.com/starting/0140d665-97a1-46cf-9518-95254aa4a079/1742491318111-3e5c014d-6f7a-4225-a5b2-9b0bf5bc2adc",
+          "banner": "https://assets.decocache.com/starting/01bb408d-2d27-494f-a80c-60b733bea4d1/1742491319671-ed937d13-a3c0-4d9b-83a7-ce056284c88f",
+          "url": "https://www.douxstore.com/",
+          "name": "Doux",
+          "performance": 90,
+          "category": "Fashion"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Live Projects/ProjectsGrid.tsx",
+      "list": [
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/90471768-3452-445b-ad7e-e81185687e5f/1742490927603-2ab2db43-f040-4d3b-9e51-63b5234dfe6a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Lojas Torra",
+          "price": "Fashion",
+          "categoria": "Fashion",
+          "pageSpeed": 100,
+          "description": "FASHION"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/90471768-3452-445b-ad7e-e81185687e5f/1742490927603-2ab2db43-f040-4d3b-9e51-63b5234dfe6a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Lojas Torra",
+          "price": "Fashion",
+          "categoria": "Fashion",
+          "pageSpeed": 100,
+          "description": "FASHION"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/90471768-3452-445b-ad7e-e81185687e5f/1742490927603-2ab2db43-f040-4d3b-9e51-63b5234dfe6a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Lojas Torra",
+          "price": "Fashion",
+          "categoria": "Fashion",
+          "pageSpeed": 100,
+          "description": "FASHION"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/90471768-3452-445b-ad7e-e81185687e5f/1742490927603-2ab2db43-f040-4d3b-9e51-63b5234dfe6a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Lojas Torra",
+          "price": "Fashion",
+          "categoria": "Educação",
+          "pageSpeed": 100,
+          "description": "FASHION"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/43c672ab-8f50-494b-83e2-bd5abefff36f/1742490929634-6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/43c672ab-8f50-494b-83e2-bd5abefff36f/1742490929634-6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/43c672ab-8f50-494b-83e2-bd5abefff36f/1742490929634-6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/43c672ab-8f50-494b-83e2-bd5abefff36f/1742490929634-6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/43c672ab-8f50-494b-83e2-bd5abefff36f/1742490929634-6df10507-a02f-4427-ba7e-920183ee17b8",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "categoria": "PET",
+          "description": "PET"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/40b1ce4f-706a-4c7a-af9d-5d631015a119/1742490931133-481d0f2b-6921-49f0-8a16-25d80100ee7c",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Teste",
+          "categoria": "Teste",
+          "description": "Teste"
+        }
+      ],
+      "cards": [
+        {
+          "link": "https://www.aviator.com.br/",
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/18832515-8e00-4acc-a650-b7aa58d52d98/1742490932668-3fd1e04d-251d-4bb2-9f7b-2acf5ce1f929",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Aviator",
+          "category": "Fashion",
+          "categoria": "B2B",
+          "description": "Fundada em 1987, começou com camisas masculinas e agora oferece uma gama diversificada de roupas. Com lojas no Rio e online, a marca foca em qualidade e satisfação do cliente."
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/bad4e560-30fa-4706-9ba7-cc65d08c65bc/1742490934199-3715dc13-086c-4be6-a4ee-885458e279b4",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Zee.Dog",
+          "category": "PET",
+          "description": "Nascida em Los Angeles, a Zee.Dog desafia o mercado pet tradicional, inovando e oferecendo acessórios que refletem o estilo de vida dos donos."
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/bde4133f-afee-4ec6-a73b-8189ceec5a77/1742490935643-4f9b708f-ccc3-464f-a6a4-e3d7306235f6",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Teste",
+          "category": "Farma",
+          "description": "esse é um teste"
+        },
+        {
+          "image": [
+            {
+              "img": "https://assets.decocache.com/starting/1aa4e5ff-8d48-478d-b84e-0ec63f089e5b/1742490937106-bfa18b1a-6e27-4c0a-b37f-95b0fd93015b",
+              "color": "#FFFFFF"
+            }
+          ],
+          "label": "Outros",
+          "category": "esporte",
+          "description": "asjhuahfueufhe"
+        }
+      ],
+      "layout": {
+        "categoryCard": {
+          "textPosition": "bottom",
+          "textAlignment": "left"
+        }
+      },
+      "itensPerPage": 12,
+      "categories": [
+        {
+          "cards": [
+            {
+              "link": "https://www.dellaaviamentos.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/f8d97f36-db7c-4266-a0ce-79e43614438d/1742491321861-f6f28f23-3f40-409d-9142-f052d54ea08f",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Della Aviamentos",
+              "icon": "https://assets.decocache.com/starting/c7c11211-c2fe-4361-afa5-ee6e8af57a5d/1742491323752-a735af4a-92bd-4c4e-b1d0-a0288de49ec4"
+            },
+            {
+              "link": "https://www.maximustecidos.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/20552266-ed49-4220-9200-452864d7fe62/1742491325654-c958d2b6-3b59-41e5-834e-c821b911fa42",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Maximus Tecidos",
+              "icon": "https://assets.decocache.com/starting/ee017b68-03f7-440d-bdae-faaf7258de6f/1742491327720-9db7fe6c-9300-47d2-8c4c-5cf0dffda694"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/3a40c91e-b639-4357-99c0-3fd68b86ddf4/1742491329557-6ce3a5e1-473e-4923-9ce0-fb7028173deb"
+                }
+              ],
+              "link": "https://www.pgadesivos.com.br/",
+              "label": "PG Adesivos",
+              "icon": "https://assets.decocache.com/starting/6d3c1382-2668-4b9b-bb33-817dd793985d/1742491331286-438cfb6b-fa2f-4b72-804d-86ed97d79273"
+            }
+          ],
+          "label": "Art, Crafts & Fabrics",
+          "hideCategoryNameOnCard": false
+        },
+        {
+          "cards": [
+            {
+              "link": "https://www.bite.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/63273030-478b-4dac-995c-2a0eb894de26/1742491332839-27b93fb5-9910-401c-9888-b232160d4287",
+                  "color": "#ffffff"
+                }
+              ],
+              "label": "Bite Auto Peças",
+              "icon": "https://assets.decocache.com/starting/46542ffd-46e0-4499-b251-a055af97c214/1742491334595-aad6cd74-3381-4521-be1d-789718391ff4"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/1564664f-992a-4006-b42d-977ccc86781b/1742491276329-2d43f4d9-fba9-4bcb-aaf4-bc9daadf5dc6"
+                }
+              ],
+              "label": "Urca Renault",
+              "link": "https://urcarenault.leadfy.me/",
+              "icon": "https://assets.decocache.com/starting/cf28c634-fc8a-4e64-bdb8-c09d2e95dc00/1742491274442-0b1d9b09-d4d3-4736-a00c-4734bb4df7b7"
+            }
+          ],
+          "label": "Auto"
+        },
+        {
+          "cards": [
+            {
+              "link": "https://loja.conecfit.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/c8da9877-418d-4c12-a607-94a40aee81a1/1742491280276-feab8e25-6b9f-4d9b-b6b0-03381e586143",
+                  "color": "#ffffff"
+                }
+              ],
+              "label": "Conecfit",
+              "icon": "https://assets.decocache.com/starting/dbd38620-2a21-4638-ae4f-066146f48a34/1742491278167-bfd49116-7dff-4429-9b3b-33f65a06d65d"
+            }
+          ],
+          "label": "Construction"
+        },
+        {
+          "cards": [
+            {
+              "link": "https://www.armadillo.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/988a858e-fd13-4726-9ac9-e2161440ef32/1742491283953-1ffc5084-a28c-42e6-96ed-ff90bfe5a0e8",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Armadillo",
+              "icon": "https://assets.decocache.com/starting/377ce7d1-977c-422f-b335-77bc2b8fb5d5/1742491281981-9755456f-1e8d-4e32-9978-3746559e037a"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/1e72fe7c-d0cb-41a1-bee9-c35a1b605d23/1742491288018-2d524710-9c18-4f20-9933-3a51b82f8117"
+                }
+              ],
+              "label": "Austral",
+              "link": "https://www.austral.com.br/",
+              "icon": "https://assets.decocache.com/starting/f1b4bf97-df9b-489a-826c-4a90d2827037/1742491285768-1ff640ed-0af5-40c9-a7be-ff233d885532"
+            },
+            {
+              "link": "https://www.aviator.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/61f4c9d9-e086-4fda-9c06-2b701abdbcad/1742491291925-ccc2e661-45c0-4c19-95b6-95c28020f01a",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Aviator",
+              "icon": "https://assets.decocache.com/starting/d25f757e-73c5-4a38-90fb-e03d30fafc8b/1742491290141-7fc3c619-6d54-4f4c-8551-1651ead84a34"
+            },
+            {
+              "link": "https://www.bawclothing.com.br",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/47ae27a4-ca52-4af5-a429-88351cfbb747/1742491296137-ff7ce533-bbbd-4921-ade1-8f88cb267e2d",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Baw Clothing",
+              "icon": "https://assets.decocache.com/starting/194fe489-d06a-4c10-b51c-038205810ebc/1742491293985-339c1f17-53b6-45a8-a4a5-0bd1beb8ce1c"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/cbabccd4-b160-4e7f-98fe-145963ca0dfe/1742491300837-7df006a9-8abc-4856-9d7d-6d98fe3d0db3"
+                }
+              ],
+              "link": "https://www.bolovo.com.br/",
+              "label": "Bolovo",
+              "icon": "https://assets.decocache.com/starting/8d32f33b-f55a-4c8e-b972-097cd69b2368/1742491299045-c3363f36-91e8-4c19-8206-b549dfad0c51"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/4a600e75-5da5-4ed7-a9dd-4c347f11ea1f/1742491304563-5c29bd4f-871d-48fa-a233-0b6524f1c325"
+                }
+              ],
+              "label": "Brandili",
+              "link": "https://brandili.deco.site/",
+              "icon": "https://assets.decocache.com/starting/a900697f-f164-4fde-b484-94ef6fb87281/1742491302977-eb0ffe08-807a-4a0e-9f6a-2b5481405c4e"
+            },
+            {
+              "link": "https://www.calcadosclovis.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/0d224365-33cc-4802-b849-e85f5494d1b8/1742491308415-dcb16175-7de2-4444-8dbc-6a2052806b0d",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Clovis",
+              "icon": "https://assets.decocache.com/starting/877a0bc6-3fd7-42a6-84d1-6196aecd71dc/1742491306458-6bdda707-63f7-487e-bee0-e60baa4010f6"
+            },
+            {
+              "link": "https://www.comfortflex.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/2024b1cb-4815-4afb-848e-9a343b6862f8/1742491312229-bd78b55d-168f-4c9b-8803-a873397741c0",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Comfortflex",
+              "icon": "https://assets.decocache.com/starting/5a65a1c5-8f7f-492f-be54-b7395ab49b1b/1742491310558-78d79b75-9300-49f8-b551-d1d62e0692cd"
+            },
+            {
+              "link": "https://www.danielatombini.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/ab2df124-3fa7-4237-97ca-b34f49744882/1742491316331-d615de9e-5ad7-4d31-b613-bdb2d48bdd48",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Daniela Tombini",
+              "icon": "https://assets.decocache.com/starting/093f6fae-27ce-4a5c-83d8-9e33bb74ffd5/1742491314285-1d1bca53-89b1-4141-a14d-c05ccb84fdd1"
+            },
+            {
+              "link": "https://www.douxstore.com/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/01bb408d-2d27-494f-a80c-60b733bea4d1/1742491319671-ed937d13-a3c0-4d9b-83a7-ce056284c88f",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Doux",
+              "icon": "https://assets.decocache.com/starting/0140d665-97a1-46cf-9518-95254aa4a079/1742491318111-3e5c014d-6f7a-4225-a5b2-9b0bf5bc2adc"
+            },
+            {
+              "link": "https://www.eurorelogios.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/9c537033-9d61-41e4-bd83-b1239cf5dcdb/1742491336714-46a61863-3aa9-48a2-b409-8dfbf856b331",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Euro Relógios",
+              "icon": "https://assets.decocache.com/starting/ee19b4ab-c939-470a-85ab-7bf06ca59787/1742491338456-772f1899-6b13-4688-b881-c70c4afa73f3"
+            },
+            {
+              "link": "https://www.gaston.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/dd71abc5-d641-44e0-bd59-a00aca96c80d/1742491340207-6f7cedd3-27ce-41b3-bcbb-0a87c90904f2",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Gaston",
+              "icon": "https://assets.decocache.com/starting/1336d5ad-5e13-4b06-9daa-e78f4cf2bffa/1742491341879-e3d413e9-e8c6-4402-976f-52ff98074cac"
+            },
+            {
+              "link": "https://www.hectoralbertazzi.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/8f3f71d9-f4cc-4167-9f70-599238c03266/1742491343657-9aa7bf0d-edcb-4937-afa6-7c276cfa4d92",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Hector Albertazzi",
+              "icon": "https://assets.decocache.com/starting/6e358ace-f228-47d4-a993-848861f3269c/1742491345540-c1aa2ec7-7a5c-41b7-839d-66f3c2f1b89e"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/2a3b4026-e68d-499e-88e2-d4926ea90dec/1742491347295-4b8a2bbd-cd7c-44f2-9bac-841520044b12"
+                }
+              ],
+              "label": "Liga Retrô",
+              "link": "https://www.ligaretro.com.br/",
+              "icon": "https://assets.decocache.com/starting/ba52575f-edac-477e-843b-259922c1ed71/1742491349081-811d0427-b743-414e-a236-8172a891103a"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/3cdbac89-896d-4592-b17a-671645d77c4f/1742491351202-30be1ab7-69cb-45bc-9c50-943731b008e0"
+                }
+              ],
+              "label": "Lojas Torra",
+              "link": "https://www.lojastorra.com.br/",
+              "icon": "https://assets.decocache.com/starting/e5772a28-6181-4c29-aecb-eb0bd02525aa/1742491353130-eb8df74a-0b88-4463-9691-d204473989de"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/31d7488f-ac98-425c-aadf-f3dc62a7faa8/1742491354941-689b5672-67e2-4d87-ba51-52842c3fcf6b"
+                }
+              ],
+              "link": "https://www.meiasola.com.br/",
+              "label": "Meia Sola",
+              "icon": "https://assets.decocache.com/starting/987025d1-c92d-4dda-9747-2cad745ccfb9/1742491358359-c4015b4a-7aa6-4862-a243-c189bbed57fb"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/57932e5e-b55a-4564-a534-3b8d593eab53/1742491360112-1e8df378-9f13-4c8b-bc4a-9df94f0ccdfa"
+                }
+              ],
+              "label": "Notta",
+              "link": "https://www.notta.com.br/",
+              "icon": "https://assets.decocache.com/starting/7a521cf1-e8c3-43b5-b3f2-ace970961ee9/1742491364146-4a486fa6-00f5-482a-8b89-a165f26350fe"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/af90e4bc-2643-4aab-9b28-c3acf79129fc/1742491365896-539348b2-dadf-4b89-9dc2-8014b27d2d5b"
+                }
+              ],
+              "link": "https://www.osklen.com.br",
+              "label": "Osklen",
+              "icon": "https://assets.decocache.com/starting/b82a7809-fdbb-4913-805e-d4a931a1329e/1742491369990-40c431a9-ca47-451d-86bd-2c63639773d5"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/93d8bba0-7603-4cc6-9e21-ea2d7b3bed21/1742491371712-13cbca40-ad1a-4c79-9d55-966a8e5f7f93"
+                }
+              ],
+              "link": "https://www.ramarim.com.br/",
+              "label": "Ramarim",
+              "icon": "https://assets.decocache.com/starting/ef696f2b-8b23-40b2-aee7-6d681325d93b/1742491373592-1b42a5fa-585d-45e7-904e-3fcc5ba9fd3e"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/68c6755d-d5e9-423f-a672-d9f2a3b9fa96/1742491375229-f1bcf08c-6940-4109-a1bd-c7145a7355ec"
+                }
+              ],
+              "link": "https://www.technos.com.br/",
+              "label": "Technos",
+              "icon": "https://assets.decocache.com/starting/3ab2005e-e07a-46c3-9792-382b42e282a4/1742491376947-2a905847-9b2a-4d0b-a6db-7de6b871f2ef"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/ed959276-ffd6-4bf0-a804-551124ff28cf/1742491382559-991c00c8-d1d5-4599-8e3b-83196106e385"
+                }
+              ],
+              "label": "Uncle K",
+              "link": "https://www.unclek.com.br/",
+              "icon": "https://assets.decocache.com/starting/9b31cc71-6b0f-47f3-a31e-9ad51149566f/1742491384176-a72665e9-386c-4b36-b30d-5aba80e9cd06"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/06ba3690-8abd-4fc0-8ab6-804a9d2f951b/1742491385818-8fd4a259-7e36-4d68-a01a-2d79d2883cbe"
+                }
+              ],
+              "label": "Velocitá",
+              "link": "https://www.velocita.com.br/",
+              "icon": "https://assets.decocache.com/starting/26f5a75a-0050-4672-928b-901566f19c87/1742491387641-783f1684-778d-47f9-b169-0e162c28a5d7"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/35cccf33-d320-48e2-814e-658486973e02/1742491389331-dd5ff6ef-69ec-4380-8905-d5212d0c5dd9"
+                }
+              ],
+              "label": "Zorba",
+              "link": "https://www.zorba.com.br/",
+              "icon": "https://assets.decocache.com/starting/2a8feb33-c073-4071-9ca8-494291938ad6/1742491391381-1f83cf6e-2fdf-470b-bc47-f93534bb4f62"
+            }
+          ],
+          "label": "Fashion"
+        },
+        {
+          "cards": [
+            {
+              "link": "https://www.emporioquatroestrelas.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/29d688dc-ccc4-4e20-9a06-9fb3a2198890/1742491396414-733bd01a-5b38-496d-8116-ecedefb732d0",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Empório Quatro Estrelas",
+              "icon": "https://assets.decocache.com/starting/1b531de9-0137-440e-8e38-f28f9bcaec27/1742491409688-60ad5edd-02d7-4ce2-8fb6-f74e42457c0b"
+            },
+            {
+              "link": "https://www.loja.notco.com/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/5c5c10e4-e7f0-43b2-8290-7adca6aa6f47/1742491412070-2f320321-8e38-43a8-9102-9abd9f6f15d6",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Notco",
+              "icon": "https://assets.decocache.com/starting/8f944c74-ada1-415c-a2f3-cb42151a3b19/1742491414528-3071e0fa-da84-4e86-9aa8-a53086649efe"
+            },
+            {
+              "link": "https://nutrilatina.com.br",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/936c3358-9e62-45cd-af8a-b7826aaeece3/1742491417027-94992d3e-59c5-4df5-9370-97496c07fe9b",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Nutrilatina",
+              "icon": "https://assets.decocache.com/starting/75f05d73-b372-4767-b6dd-a1c56b9c6017/1742491419001-d33d5244-02b8-4a4d-9d56-20a4425dd0dd"
+            },
+            {
+              "link": "https://www.saddicenter.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/a69fa369-5ebc-41de-b5e9-737a629a1572/1742491420956-76d2048a-7cf4-4b86-9c5b-c579b59329ea",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Saddi Center",
+              "icon": "https://assets.decocache.com/starting/a777ee1a-58cb-42bb-9246-787fac7fe2e9/1742491425732-637fd92a-2c9c-4224-9a0a-d9d4bbc29507"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/2007bf76-13d2-4705-acc5-b32d43859a45/1742491428302-cd0dacf2-b3ed-432b-85e3-585f913a7de5"
+                }
+              ],
+              "link": "https://www.shopvinho.com.br/",
+              "label": "Shopvinho",
+              "icon": "https://assets.decocache.com/starting/44d024e5-0b38-47b3-be0a-03846db7f78e/1742491430135-e5298a7d-fc67-4a52-9d7d-62d40400206e"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/6de7a2b3-52d0-4e37-885f-0ec66cd837b4/1742491431631-d5af56b8-61e1-4987-9982-826be98e5e1d"
+                }
+              ],
+              "label": "True Source",
+              "link": "https://www.truesource.com.br/",
+              "icon": "https://assets.decocache.com/starting/8c55e45b-6e10-4b05-8575-d2e7b155bdef/1742491433200-03843dc4-779b-4ab5-8350-b2ce79154895"
+            }
+          ],
+          "label": "Grocery"
+        },
+        {
+          "cards": [
+            {
+              "link": "https://www.dentalproclin.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/ab86c6ce-9d28-482f-9cce-d94d7ffb1fdc/1742491434690-c077a05c-09e4-47ad-ab5d-c037f8a21e2d",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Dental Proclin",
+              "icon": "https://assets.decocache.com/starting/f55c5467-8b2b-48d9-84ea-e90295f8a70b/1742491436482-01a76d16-20c9-43ac-8528-8f0a2cfdbe6d"
+            },
+            {
+              "link": "https://www.embelleze.com/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/1e621280-0d91-4ed4-b426-7faf9e277d7c/1742491438296-f91a8862-5470-4439-96b6-00292cd00662",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Embelleze",
+              "icon": "https://assets.decocache.com/starting/29263f6f-5ce3-4e50-88d7-4b55776a67de/1742491441128-e21ecd17-4689-4b28-9a4d-0ea45d489b2a"
+            },
+            {
+              "link": "https://www.granado.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/a72e5bf8-b496-4725-a9a1-41b9bd1fd6ba/1742491443829-588bf673-056e-4fb6-a8a2-74fb1448a6c2",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Granado",
+              "icon": "https://assets.decocache.com/starting/ad6b0f36-d9f6-4796-8da0-1f29e09b9d83/1742491445864-62ddfcd4-024d-40fb-994b-2c4cdebe204d"
+            },
+            {
+              "link": "https://www.hospitalardistribuidora.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/ac1cf3e3-f525-4740-acff-145d22d4d455/1742491447956-b02009db-d9e4-47be-a650-b27221dd8d42",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Hospitalar Distribuidora",
+              "icon": "https://assets.decocache.com/starting/c4d24e50-71b0-4c4b-a077-84aabff970d0/1742491451583-1355ce36-59c8-4430-974b-11dd58bd9587"
+            },
+            {
+              "link": "https://www.lojainterdental.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/016d4b07-8ac4-45aa-b3c7-d22bb688670e/1742491454366-06c1dfc4-62a6-4b7d-b449-54366314d984",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Loja Interdental",
+              "icon": "https://assets.decocache.com/starting/1761181d-4afa-448f-9256-6ffb7eee15bd/1742491457278-8e5ebc6c-b2fc-46ef-9958-f49d0e329587"
+            },
+            {
+              "link": "https://www.lojaprohall.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/2ba28fa9-a2ba-4020-b57a-4a70d5fa0db1/1742491458899-97dc7707-cf80-4295-ab22-539ed903f320",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Loja Prohall",
+              "icon": "https://assets.decocache.com/starting/85640ecc-6922-4eaa-9664-1c194daa5fde/1742491462601-07cca63e-e573-4f47-b6a7-6f66b46fb515"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/8c933f1b-6045-4cf9-adbc-c718838397a0/1742491464195-d0d88d82-ae2a-4bb6-a2ca-30b2fca0f448"
+                }
+              ],
+              "label": "Omron",
+              "link": "https://loja.omronbrasil.com/",
+              "icon": "https://assets.decocache.com/starting/32e7a26a-cf70-456b-a138-f58d0906ca16/1742491465978-0a80aa11-3585-45f0-9625-fa195344aa29"
+            },
+            {
+              "link": "https://www.oticaisabeladias.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/76f6322e-fbe7-4f59-94ba-c7eafbfc6be5/1742491467939-5131a78c-03a5-442e-93ab-490f738d7d99",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Óticas Isabela Dias",
+              "icon": "https://assets.decocache.com/starting/a08716a4-bae9-4748-a04c-9cb201ef211f/1742491471519-7e88ce3d-b2dc-4b72-be76-1aa99fba8969"
+            },
+            {
+              "link": "https://www.oticasprevent.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/9c579226-7e71-4d8f-ba70-bf9381a9dc70/1742491473249-9916ed3a-a3cd-4a2b-9bc3-82bde226b80b",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Óticas Prevent",
+              "icon": "https://assets.decocache.com/starting/75f3fab3-b6a5-4b9a-8d70-d53b182a4e6a/1742491476789-56094eb0-bd86-4083-84f4-b90ca40d95a8"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/b903c167-b500-496c-a2de-4b35c549f83c/1742491478739-52c42718-0b90-4cad-9537-e78b5019187f"
+                }
+              ],
+              "label": "Yenzah",
+              "link": "https://www.yenzah.com.br/",
+              "icon": "https://assets.decocache.com/starting/960dc0dd-e0b9-4bbf-9a45-d687c41fa6e0/1742491482145-15bd7943-e38a-46f2-b04e-bd8f58b2d42f"
+            }
+          ],
+          "label": "Health & Beauty"
+        },
+        {
+          "cards": [
+            {
+              "link": "https://www.abracadabra.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/87fb91e9-effe-4078-98f0-269f47f2f4e8/1742491484207-442fa1ee-a39f-4037-a1b1-ee6f0e9d1d70",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Abracadabra",
+              "icon": "https://assets.decocache.com/starting/7b3a3371-95ea-4f1f-9f57-17edada610de/1742491487738-755c9dec-3801-4f0c-80f9-29fe9e8ce1bd"
+            },
+            {
+              "link": "https://www.abracasa.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/335504e7-2e3c-49a7-912a-8e8415e79c35/1742491489309-5df34060-b407-40dd-a33f-d103c38958a0",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Abracasa",
+              "icon": "https://assets.decocache.com/starting/72d4ff03-6f8a-4e01-a638-7b0240d7adff/1742491491179-7a6773bf-774f-4c06-80b7-eb9f55e5f385"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/a5d7c9b7-ea9c-4b55-91c4-f9b8afaba73f/1742491492966-4b8c330e-b926-4480-a8ea-7ce6283dab69"
+                }
+              ],
+              "label": "Atau",
+              "link": "https://www.atau.com.br/",
+              "icon": "https://assets.decocache.com/starting/a079cd4e-1127-4a4d-b809-d4651485dc17/1742491495183-5cba3b32-7e3f-44a5-8b45-0bdfba0a3287"
+            },
+            {
+              "link": "https://www.belairmoveis.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/0739148c-62ee-47cb-bec7-d9f4ba8dcf04/1742491497196-690c4356-df8b-402a-b2ea-486f38ff6b5e",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Bel Air Móveis",
+              "icon": "https://assets.decocache.com/starting/8298937e-9cf1-49de-8763-5ede25c236cf/1742491499013-3d12d307-152b-40c3-aa0f-4dfa83d93721"
+            },
+            {
+              "link": "https://www.casaevideo.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/83d24bed-eef3-4feb-9275-da04c5d67b56/1742491500915-e08a837c-d64e-432b-a52d-ef38df7477ff",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Casa & Video",
+              "icon": "https://assets.decocache.com/starting/985e29a5-0924-4916-a8f0-fd6ac22b1933/1742491502650-19646bd5-d505-4a0b-89ba-af2427e956fa"
+            },
+            {
+              "link": "https://www.lojaclickhouse.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/e6a84744-89d0-466f-8a0a-5684f4a99154/1742491504361-6573b245-0f70-44df-8630-757d6aeebae9",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "ClickHouse",
+              "icon": "https://assets.decocache.com/starting/3eb7eb25-9b00-41fd-8ea0-b4c533f050c9/1742491506234-ba7373e6-750b-4354-a774-b3b2b177de54"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/e777d001-6d60-4a49-828b-083a0cfbae45/1742491507760-46d87414-ec40-4e41-8386-ab55a0ff86cd"
+                }
+              ],
+              "label": "Copel Colchões",
+              "link": "https://www.copelcolchoes.com.br/",
+              "icon": "https://assets.decocache.com/starting/2477506a-c6be-4c37-800a-f639dad8eea6/1742491509240-cf4eecdd-e3b7-457b-ba0b-e786402b7e7c"
+            },
+            {
+              "link": "https://www.costaatacado.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/be1b8630-7963-4b57-acf8-237f03343fc2/1742491510907-6c83a94e-3e7f-434f-b284-cd7e75d8a923",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Costa Atacado",
+              "icon": "https://assets.decocache.com/starting/26b3dcb4-5b95-4534-b1cd-b06050d5c16d/1742491512480-d990a5df-232e-4c0b-b185-6a64ff5280dd"
+            },
+            {
+              "link": "https://www.cristaistavares.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/2bd4a475-1724-4300-8b1c-96d1f68a82ba/1742491514038-c636bc56-d667-4638-a3b4-475630e363c4",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Cristais Tavares",
+              "icon": "https://assets.decocache.com/starting/c3b14566-519d-4643-bf45-199119fb6ad0/1742491515869-46ad9205-cbb3-4482-9fd1-1e85784aef3f"
+            },
+            {
+              "link": "https://www.eladecora.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/00252325-d01b-4deb-8005-a24f6c101df3/1742491517563-fa9b11a7-686b-48be-bc62-f952ff51f44f",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Ela Decora",
+              "icon": "https://assets.decocache.com/starting/907b17f0-32fd-4834-b206-9cbff96b92da/1742491519513-7ef2dcc6-f2bf-4365-a743-287712243380"
+            },
+            {
+              "link": "https://www.lojastopmoveis.com.br/",
+              "image": [
+                {
+                  "img": "https://assets.decocache.com/starting/128581e4-df39-42b5-9c26-990736062232/1742491521218-9f55ed96-1986-469f-a272-94235fb4aed3",
+                  "color": "#FFFFFF"
+                }
+              ],
+              "label": "Lojas Top Móveis",
+              "icon": "https://assets.decocache.com/starting/2fcba661-c65d-4d35-8651-484e9c166dc0/1742491522977-a3ea423f-22d8-4ac0-87dc-1c5692922027"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/e1c10aed-a032-404c-8f48-7572c4768377/1742491524464-6618e37e-7564-4ea0-9ee3-f3e80d1f432a"
+                }
+              ],
+              "link": "https://lojavirtual.lumini.com.br/",
+              "label": "Lumini",
+              "icon": "https://assets.decocache.com/starting/b9b059a8-5220-4d3e-bcde-32cbce968f44/1742491526545-a0b659f4-7b4c-4e0d-83c9-5c8cd53e632c"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/dbb44568-1ab3-4826-9450-b9fe5e832b94/1742491528209-7ef2f3ab-3738-4e37-9322-92fc73aea85a"
+                }
+              ],
+              "label": "OpenBox2",
+              "link": "https://www.openbox2.com.br/",
+              "icon": "https://assets.decocache.com/starting/e7f91037-15d3-4bd5-bbfc-c3a8884b352e/1742491530203-af488451-8f0b-4cdd-a69e-12b7a442ec81"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/979e680c-17f6-4443-8eef-4500e4599e45/1742491531464-c3393e0c-15e2-4dc1-acaf-9f2ffa8f3244"
+                }
+              ],
+              "link": "https://star-company.deco.site/",
+              "label": "Star Company"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/be15d28f-7459-45ae-98ea-442fb9ca63b3/1742491533302-6e8900f2-9bca-4786-8078-018391510295"
+                }
+              ],
+              "label": "Teciplast",
+              "link": "https://loja.teciplast.com.br/",
+              "icon": "https://assets.decocache.com/starting/d40bc077-2d31-43bf-804f-a9377405c018/1742491537008-5cb564a7-240f-45e1-91a8-e3ee96d2937c"
+            }
+          ],
+          "label": "Home & Decor"
+        },
+        {
+          "cards": [
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/1f8d554b-762a-43d1-af70-6052095680d3/1742491538741-c256bedf-4895-433c-bda3-2608663c1cfa"
+                }
+              ],
+              "label": "Petfarma",
+              "link": "https://www.petfarma.com/",
+              "icon": "https://assets.decocache.com/starting/a68e76bc-21a0-493d-8edc-e62143217ac4/1742491540353-236814e9-e8a2-4345-bf9c-feb051c1e95f"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/aecff0cc-987e-41f6-8299-d38d9d825652/1742491542115-a686b801-d7e0-4df1-87d3-c4c996118880"
+                }
+              ],
+              "link": "https://www.zeedog.com.br/",
+              "label": "Zee.Dog",
+              "icon": "https://assets.decocache.com/starting/08526378-f166-44a4-a1ab-6109f2460e58/1742491544219-b95b5fd3-76a1-48ea-a1db-2933f9970d1e"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/c97338da-c8e8-4856-b0b4-d63e817f25ff/1742491545984-8e9c0007-b8aa-4877-a166-1bd11335001f",
+                  "label": "zeenow"
+                }
+              ],
+              "label": "Zeenow",
+              "link": "https://www.zeenow.com.br/",
+              "icon": "https://assets.decocache.com/starting/a915c2b7-9531-45a0-8264-85b576b8424d/1742491547610-c7e754f6-a1d4-4639-97d4-6f17441615a9"
+            }
+          ],
+          "label": "PET",
+          "category": "PET"
+        },
+        {
+          "cards": [
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/72fc2269-ed4f-4a0d-a941-5a7e0bdc6f78/1742491549274-ec5c258c-cce0-4b67-b390-2209ea651407"
+                }
+              ],
+              "link": "https://www.hotrio.com.br",
+              "label": "Hot Rio",
+              "icon": "https://assets.decocache.com/starting/5e6e02a7-a6db-423b-adcd-4397f259063c/1742491551135-44dfec78-c14e-4d93-ba57-2433335792bb"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/e3d72c71-3b37-4c4e-b784-73c5378b8b4e/1742491552742-08d1ec80-2cce-4289-bd25-bdc59c2369b7"
+                }
+              ],
+              "link": "https://www.miess.com.br/",
+              "label": "Miess",
+              "icon": "https://assets.decocache.com/starting/09c6878e-0fbd-4eba-af22-1618e19b4e1a/1742491554562-243db511-e351-4e06-8e6b-dc1becb78410"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/6b4b882a-2e49-4ef2-8be9-f895bd4f4aea/1742491556283-a30d97b7-6174-46d6-ab7b-e26a6758be69"
+                }
+              ],
+              "link": "https://www.sexshopatacadao.com.br/",
+              "label": "Sex Shop Atacado",
+              "icon": "https://assets.decocache.com/starting/743ed409-5a70-4e61-99d7-1aa2c13a1c8a/1742491558180-09cb4c0a-b1b0-4fd2-b6d1-f9da803071b7"
+            }
+          ],
+          "label": "Sex Shops"
+        },
+        {
+          "cards": [
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/1abf3ff0-543e-4098-88a2-07067e6f60dc/1742491560197-0aab2340-3f8d-4183-b931-320f9e52d443"
+                }
+              ],
+              "label": "Adaptio",
+              "link": "https://www.adaptio.com.br/",
+              "icon": "https://assets.decocache.com/starting/804c1ec7-4051-405f-80d4-c4211591d8ee/1742491565391-40afe08f-a237-4885-b919-796e627ff2a9"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/1b6b106b-c89b-482e-b767-e70cfeefffe3/1742491566978-e6f6aa08-14e1-4efa-9123-2c4d614b56a2"
+                }
+              ],
+              "link": "https://www.aforrageiradeturing.com/",
+              "label": "A Forrageira de Turing",
+              "icon": "https://assets.decocache.com/starting/dce3744a-5f46-4494-b1a1-cc09b90d80b2/1742491569933-c489d01c-752f-46db-8e8b-7923891314d3"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/cef9117c-eb05-4afa-949e-39f7b6eec916/1742491572124-225eb51d-675d-40a7-ab6b-c6af4a78a177"
+                }
+              ],
+              "link": "https://getsitedone.deco.site",
+              "label": "Get Site Done",
+              "icon": "https://assets.decocache.com/starting/c9de04c5-387f-4383-b870-d4c9df78525a/1742491591219-3e11346b-6e2f-4322-bb6c-a69f4c44914e"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/7ccbed19-8afb-4fc0-a032-724dcffb8d8b/1742491631542-94759971-26fb-46ac-ba41-817179bb7665"
+                }
+              ],
+              "label": "MadeinBrazil",
+              "link": "https://www.madeinbrazil.tech/",
+              "icon": "https://assets.decocache.com/starting/1e0fd493-f3f1-4e43-b4cc-fe5fc962b29a/1742491633891-6a7ddb5f-fc2b-40fc-a375-10c02387164d"
+            },
+            {
+              "image": [
+                {
+                  "color": "#FFFFFF",
+                  "img": "https://assets.decocache.com/starting/50ecdfc2-0065-4663-81f1-d4b9cd32dbc9/1742491640384-6fce070e-6c1f-4c10-ac8b-68956e0dc279",
+                  "label": "Cooper company"
+                }
+              ],
+              "label": "CooperCompany",
+              "link": "https://www.coopercompany.com.br/",
+              "icon": "https://assets.decocache.com/starting/e157815a-cda3-43be-9df2-abc25fa7c9f4/1742491646161-951da4e7-e666-47c7-ba4a-1381b0282eaa"
+            }
+          ],
+          "label": "Tech"
+        }
+      ],
+      "categoriasNoIndice": [
+        "Todos",
+        "Fashion",
+        "PET",
+        "Farma",
+        "B2B",
+        "Saúde",
+        "Outros"
+      ],
+      "layoutCategoryCard": {
+        "textPosition": "bottom",
+        "textAlignment": "left"
+      },
+      "defaultCategory": "All"
+    },
+    {
+      "__resolveType": "site/sections/Head.tsx",
+      "url": "https://www.deco.cx/en/live-projects",
+      "title": "deco.cx | Live Projects",
+      "imageUrl": "https://www.deco.cx/decocx-meta-en.png",
+      "styleUrls": [],
+      "themeColor": "#0A2121",
+      "description": "The digital experience platform that combines performance and personalization for enterprise ecommerce."
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "GTM"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

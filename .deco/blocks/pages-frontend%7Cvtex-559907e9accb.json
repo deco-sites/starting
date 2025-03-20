@@ -1,1 +1,337 @@
-{"name":"Frontend | VTEX","path":"/frontend-vtex","sections":[{"url":"https://deco.cx/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/96a0b0b8-356e-435a-838a-1a29162343c4","title":"Elevate Your VTEX Storefront - deco.cx Headless Frontend Platform","imageUrl":"/decocx-meta-pt.png","styleUrls":[],"themeColor":"#000","description":"Build High-Performance Storefronts for VTEX: Engineered by Pro LATAM Devs, Alumni of Uber, Microsoft, Amazon.","__resolveType":"site/sections/Head.tsx"},{"__resolveType":"GTM"},{"__resolveType":"HeaderV2","githubBarText":{"0":"<","1":"p","2":">","3":"⭐","4":" ","5":"6","6":"3","7":" ","8":"—","9":" ","10":"S","11":"t","12":"a","13":"r","14":" ","15":"<","16":"a","17":" ","18":"c","19":"l","20":"a","21":"s","22":"s","23":"=","24":"\"","25":"u","26":"n","27":"d","28":"e","29":"r","30":"l","31":"i","32":"n","33":"e","34":"\"","35":" ","36":"h","37":"r","38":"e","39":"f","40":"=","41":"\"","42":"h","43":"t","44":"t","45":"p","46":"s","47":":","48":"/","49":"/","50":"g","51":"i","52":"t","53":"h","54":"u","55":"b","56":".","57":"c","58":"o","59":"m","60":"/","61":"d","62":"e","63":"c","64":"o","65":"-","66":"c","67":"x","68":"/","69":"d","70":"e","71":"c","72":"o","73":"\"","74":" ","75":"t","76":"a","77":"r","78":"g","79":"e","80":"t","81":"=","82":"\"","83":"_","84":"b","85":"l","86":"a","87":"n","88":"k","89":"\"","90":">","91":"d","92":"e","93":"c","94":"o","95":".","96":"c","97":"x","98":" ","99":"o","100":"n","101":" ","102":"G","103":"i","104":"t","105":"h","106":"u","107":"b","108":"<","109":"/","110":"a","111":">","112":" ","113":"a","114":"n","115":"d","116":" ","117":"h","118":"e","119":"l","120":"p","121":" ","122":"o","123":"t","124":"h","125":"e","126":"r","127":"s","128":" ","129":"d","130":"i","131":"s","132":"c","133":"o","134":"v","135":"e","136":"r","137":" ","138":"o","139":"u","140":"r","141":" ","142":"p","143":"r","144":"o","145":"d","146":"u","147":"c","148":"t","149":"!","150":"<","151":"/","152":"p","153":">","mobile":"<p>⭐ 94 — <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>Star us on Github</u></a>.</p>","desktop":"<p>⭐ 94 — Star <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>deco.cx on Github</u></a> and help others discover our product!</p>"}},{"cta":[{"id":"bt-click-contact","href":"#contact-form","text":"Send your site","variant":"Normal"}],"demo":{"title":"Watch our demo","visible":true},"tabs":[{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5986d39-b570-4c80-8af5-597a67d83b5f","title":"Section Library"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e61ea2d8-8bb6-4498-ab89-c179e78264b1","title":"No Code Editor"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/72277e92-9d2e-4237-b1d7-22235bcd3798","title":"Full Code Editor"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d414d1af-1442-4127-83c4-5dbc154c967a","title":"Web Analytics"},{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6a44931b-316f-4e71-b597-b42847a6b11b","title":"Monitoring"}],"alert":{"href":"https://techcrunch.com/2024/01/09/deco-cx-2-2m-brand-website-e-commerce","text":"\"Deco.cx grabs $2.2M to bring simplicity back to brand website creation\"","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/44800dcc-6280-42ba-bdd1-2acc4e66d05c","mobileText":"As featured on TechCrunch"},"title":"<h1>Premium Frontend<br>Implementation<br>for <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">VTEX</span><br></h1>","subtitle":"<p>Build high-performance storefronts for VTEX:<br>Engineered by pro LATAM devs, alumni of Uber, Microsoft, Amazon<br></p>","hideEditor":true,"__resolveType":"site/sections/NRF/Hero.tsx"},{"url":"https://www.deco.cx/en/customer-stories","title":"Leading Retail Clients in Brazil  >","images":[{"label":"zeedog","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a024916e-9a31-4b11-8bcf-28f2f3015ac8"},{"label":"baw","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/974fd614-b8ee-43ca-9e06-d0cb854f9854"},{"label":"osklen","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/21a5e284-892c-4729-9690-27ed37e07c19"},{"label":"torra","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9fd32ba0-8c11-419b-a634-5b5bc943c82b"},{"label":"unkle k","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7d851dd8-784b-41d7-b637-2342d43baf11"},{"label":"aviator","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8dd728a0-9393-4676-9060-2c5e3ff5dc86"}],"__resolveType":"site/sections/NRF/Brands.tsx"},{"cards":[{"icon":"DecoIcon","text":"Efficient Process for Quick Execution: From Concept to Live in 90 Days","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bc036983-fdbe-4e5c-b23d-d6ccde01fe44","title":"<p>Delivery <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">under</span><br><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">3 months</span></p>"},{"icon":"ArrowRight","text":"Rapid Development Cycle: Your Initial Version in Just 14 Days","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/88768a86-1e79-4775-8cde-29d9c436a819","title":"<p>First preview<br>in <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">2 weeks</span></p>"},{"icon":"DecoIcon","text":"Comprehensive, Customizable UI Elements: Themed for Cohesive Design","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7aaa23e6-a195-4697-ac90-86d64d98be1f","title":"<p>Full <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">UI component</span><br><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">library</span> themed</p>"},{"text":"Achieve Exceptional Load Times: Optimized for 90+ Speed Scores Before GTM","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/944811f2-8358-4225-acb8-de1918626861","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Pagespeed 90</span><br>before GTM</p>"},{"text":"Unified Editing Experience: Visually Craft and Modify with Integrated Tools","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/87291e99-da8f-49a4-a0ba-661ef10c7a66","title":"<p>Integrated <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">visual</span><br><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">site editor</span></p>"},{"text":"Expertise from Uber, Microsoft, Amazon Alumni: Seamlessly Crafting Your Experience","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9442c67f-2d69-4292-8c3f-23fc51e9fc2c","title":"<p>Engineered by<br><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Pro LATAM devs</span></p>"}],"__resolveType":"site/sections/NRF/FeaturesWithImage.tsx"},{"id":"contact-form","text":"<p>Send us your URL or Figma, and we'll deliver a <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">custom quote in under 24 hours.</span></p>","title":"Elevate Your VTEX Storefront","formInfor":{"platform":"vtex","submiteName":"Send your site now!","PlaceholderfieldUrlSite":"Site URL or Figma Design*"},"langThanks":"en","FieldContacts":[{"name":"Agência","label":"System Integrator"},{"name":"Marca","label":"Ecommerce Enterprise"},{"name":"Grupo de Marcas","label":"Ecommerce Holding"},{"name":"Parceiros de Tecnologia","label":"Technology Partnership"},{"name":"Other","label":"Other"}],"__resolveType":"site/sections/NRF/PlatformContact.tsx","FieldNeedOptions":[]},{"__resolveType":"Deco Footer [EN]"},{"__resolveType":"site/sections/NRF/Grid.tsx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Frontend | VTEX",
+  "path": "/frontend-vtex",
+  "sections": [
+    {
+      "url": "https://deco.cx/",
+      "image": "https://assets.decocache.com/starting/c49ca26b-254c-493c-af40-0c949173222b/1742490591136-96a0b0b8-356e-435a-838a-1a29162343c4",
+      "title": "Elevate Your VTEX Storefront - deco.cx Headless Frontend Platform",
+      "imageUrl": "/decocx-meta-pt.png",
+      "styleUrls": [],
+      "themeColor": "#000",
+      "description": "Build High-Performance Storefronts for VTEX: Engineered by Pro LATAM Devs, Alumni of Uber, Microsoft, Amazon.",
+      "__resolveType": "site/sections/Head.tsx"
+    },
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "HeaderV2",
+      "githubBarText": {
+        "0": "<",
+        "1": "p",
+        "2": ">",
+        "3": "⭐",
+        "4": " ",
+        "5": "6",
+        "6": "3",
+        "7": " ",
+        "8": "—",
+        "9": " ",
+        "10": "S",
+        "11": "t",
+        "12": "a",
+        "13": "r",
+        "14": " ",
+        "15": "<",
+        "16": "a",
+        "17": " ",
+        "18": "c",
+        "19": "l",
+        "20": "a",
+        "21": "s",
+        "22": "s",
+        "23": "=",
+        "24": "\"",
+        "25": "u",
+        "26": "n",
+        "27": "d",
+        "28": "e",
+        "29": "r",
+        "30": "l",
+        "31": "i",
+        "32": "n",
+        "33": "e",
+        "34": "\"",
+        "35": " ",
+        "36": "h",
+        "37": "r",
+        "38": "e",
+        "39": "f",
+        "40": "=",
+        "41": "\"",
+        "42": "h",
+        "43": "t",
+        "44": "t",
+        "45": "p",
+        "46": "s",
+        "47": ":",
+        "48": "/",
+        "49": "/",
+        "50": "g",
+        "51": "i",
+        "52": "t",
+        "53": "h",
+        "54": "u",
+        "55": "b",
+        "56": ".",
+        "57": "c",
+        "58": "o",
+        "59": "m",
+        "60": "/",
+        "61": "d",
+        "62": "e",
+        "63": "c",
+        "64": "o",
+        "65": "-",
+        "66": "c",
+        "67": "x",
+        "68": "/",
+        "69": "d",
+        "70": "e",
+        "71": "c",
+        "72": "o",
+        "73": "\"",
+        "74": " ",
+        "75": "t",
+        "76": "a",
+        "77": "r",
+        "78": "g",
+        "79": "e",
+        "80": "t",
+        "81": "=",
+        "82": "\"",
+        "83": "_",
+        "84": "b",
+        "85": "l",
+        "86": "a",
+        "87": "n",
+        "88": "k",
+        "89": "\"",
+        "90": ">",
+        "91": "d",
+        "92": "e",
+        "93": "c",
+        "94": "o",
+        "95": ".",
+        "96": "c",
+        "97": "x",
+        "98": " ",
+        "99": "o",
+        "100": "n",
+        "101": " ",
+        "102": "G",
+        "103": "i",
+        "104": "t",
+        "105": "h",
+        "106": "u",
+        "107": "b",
+        "108": "<",
+        "109": "/",
+        "110": "a",
+        "111": ">",
+        "112": " ",
+        "113": "a",
+        "114": "n",
+        "115": "d",
+        "116": " ",
+        "117": "h",
+        "118": "e",
+        "119": "l",
+        "120": "p",
+        "121": " ",
+        "122": "o",
+        "123": "t",
+        "124": "h",
+        "125": "e",
+        "126": "r",
+        "127": "s",
+        "128": " ",
+        "129": "d",
+        "130": "i",
+        "131": "s",
+        "132": "c",
+        "133": "o",
+        "134": "v",
+        "135": "e",
+        "136": "r",
+        "137": " ",
+        "138": "o",
+        "139": "u",
+        "140": "r",
+        "141": " ",
+        "142": "p",
+        "143": "r",
+        "144": "o",
+        "145": "d",
+        "146": "u",
+        "147": "c",
+        "148": "t",
+        "149": "!",
+        "150": "<",
+        "151": "/",
+        "152": "p",
+        "153": ">",
+        "mobile": "<p>⭐ 94 — <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>Star us on Github</u></a>.</p>",
+        "desktop": "<p>⭐ 94 — Star <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>deco.cx on Github</u></a> and help others discover our product!</p>"
+      }
+    },
+    {
+      "cta": [
+        {
+          "id": "bt-click-contact",
+          "href": "#contact-form",
+          "text": "Send your site",
+          "variant": "Normal"
+        }
+      ],
+      "demo": {
+        "title": "Watch our demo",
+        "visible": true
+      },
+      "tabs": [
+        {
+          "image": "https://assets.decocache.com/starting/9fab1ad5-c764-4e4f-8e54-e74d47665343/1742490592785-b5986d39-b570-4c80-8af5-597a67d83b5f",
+          "title": "Section Library"
+        },
+        {
+          "image": "https://assets.decocache.com/starting/be50f946-b1f0-47d9-ba20-4c2364314962/1742490594770-e61ea2d8-8bb6-4498-ab89-c179e78264b1",
+          "title": "No Code Editor"
+        },
+        {
+          "image": "https://assets.decocache.com/starting/a45febc9-b291-41ce-bba6-d894d2fba813/1742490596609-72277e92-9d2e-4237-b1d7-22235bcd3798",
+          "title": "Full Code Editor"
+        },
+        {
+          "image": "https://assets.decocache.com/starting/08929d4c-0016-416d-aec6-ceb83c07883c/1742490599724-d414d1af-1442-4127-83c4-5dbc154c967a",
+          "title": "Web Analytics"
+        },
+        {
+          "image": "https://assets.decocache.com/starting/f0285992-f3ef-478e-b7a6-d8da4b2e46b3/1742490602393-6a44931b-316f-4e71-b597-b42847a6b11b",
+          "title": "Monitoring"
+        }
+      ],
+      "alert": {
+        "href": "https://techcrunch.com/2024/01/09/deco-cx-2-2m-brand-website-e-commerce",
+        "text": "\"Deco.cx grabs $2.2M to bring simplicity back to brand website creation\"",
+        "image": "https://assets.decocache.com/starting/13a83c4c-3603-45e2-bd47-dbbb40697fed/1742490603702-44800dcc-6280-42ba-bdd1-2acc4e66d05c",
+        "mobileText": "As featured on TechCrunch"
+      },
+      "title": "<h1>Premium Frontend<br>Implementation<br>for <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">VTEX</span><br></h1>",
+      "subtitle": "<p>Build high-performance storefronts for VTEX:<br>Engineered by pro LATAM devs, alumni of Uber, Microsoft, Amazon<br></p>",
+      "hideEditor": true,
+      "__resolveType": "site/sections/NRF/Hero.tsx"
+    },
+    {
+      "url": "https://www.deco.cx/en/customer-stories",
+      "title": "Leading Retail Clients in Brazil  >",
+      "images": [
+        {
+          "label": "zeedog",
+          "mobile": "https://assets.decocache.com/starting/e62756ea-76d9-45a3-8f87-87cbd237eaee/1742490605939-a024916e-9a31-4b11-8bcf-28f2f3015ac8"
+        },
+        {
+          "label": "baw",
+          "mobile": "https://assets.decocache.com/starting/4bd00645-8be6-4284-91dd-4e9db72eda69/1742490607640-974fd614-b8ee-43ca-9e06-d0cb854f9854"
+        },
+        {
+          "label": "osklen",
+          "mobile": "https://assets.decocache.com/starting/def3f11a-9d0e-46f3-b025-9f6d510cde7e/1742490610354-21a5e284-892c-4729-9690-27ed37e07c19"
+        },
+        {
+          "label": "torra",
+          "mobile": "https://assets.decocache.com/starting/87229f7d-67d9-4e6f-ad66-be56b9af595f/1742490611782-9fd32ba0-8c11-419b-a634-5b5bc943c82b"
+        },
+        {
+          "label": "unkle k",
+          "mobile": "https://assets.decocache.com/starting/4083cedb-9ca9-4a0b-b547-acf4378c6a1f/1742490618364-7d851dd8-784b-41d7-b637-2342d43baf11"
+        },
+        {
+          "label": "aviator",
+          "mobile": "https://assets.decocache.com/starting/67252f1d-2b3b-44f7-aa7a-4b941ae2cf04/1742490619943-8dd728a0-9393-4676-9060-2c5e3ff5dc86"
+        }
+      ],
+      "__resolveType": "site/sections/NRF/Brands.tsx"
+    },
+    {
+      "cards": [
+        {
+          "icon": "DecoIcon",
+          "text": "Efficient Process for Quick Execution: From Concept to Live in 90 Days",
+          "image": "https://assets.decocache.com/starting/36ce866a-255b-4faa-898a-03d3f4e0f836/1742490621200-bc036983-fdbe-4e5c-b23d-d6ccde01fe44",
+          "title": "<p>Delivery <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">under</span><br><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">3 months</span></p>"
+        },
+        {
+          "icon": "ArrowRight",
+          "text": "Rapid Development Cycle: Your Initial Version in Just 14 Days",
+          "image": "https://assets.decocache.com/starting/59595655-4564-4cad-8489-0fe821d1fb50/1742490623600-88768a86-1e79-4775-8cde-29d9c436a819",
+          "title": "<p>First preview<br>in <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">2 weeks</span></p>"
+        },
+        {
+          "icon": "DecoIcon",
+          "text": "Comprehensive, Customizable UI Elements: Themed for Cohesive Design",
+          "image": "https://assets.decocache.com/starting/b8989a34-1263-488a-89ba-9d06dc0d0aea/1742490625764-7aaa23e6-a195-4697-ac90-86d64d98be1f",
+          "title": "<p>Full <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">UI component</span><br><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">library</span> themed</p>"
+        },
+        {
+          "text": "Achieve Exceptional Load Times: Optimized for 90+ Speed Scores Before GTM",
+          "image": "https://assets.decocache.com/starting/9763bef5-bb5d-4194-b417-bbb0c1544704/1742490627153-944811f2-8358-4225-acb8-de1918626861",
+          "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Pagespeed 90</span><br>before GTM</p>"
+        },
+        {
+          "text": "Unified Editing Experience: Visually Craft and Modify with Integrated Tools",
+          "image": "https://assets.decocache.com/starting/29f59b66-0f10-4cd8-8e2f-f1bea53e4fbd/1742490629244-87291e99-da8f-49a4-a0ba-661ef10c7a66",
+          "title": "<p>Integrated <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">visual</span><br><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">site editor</span></p>"
+        },
+        {
+          "text": "Expertise from Uber, Microsoft, Amazon Alumni: Seamlessly Crafting Your Experience",
+          "image": "https://assets.decocache.com/starting/11e67cf4-7141-4464-8236-f4a95c097a2d/1742490632028-9442c67f-2d69-4292-8c3f-23fc51e9fc2c",
+          "title": "<p>Engineered by<br><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Pro LATAM devs</span></p>"
+        }
+      ],
+      "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx"
+    },
+    {
+      "id": "contact-form",
+      "text": "<p>Send us your URL or Figma, and we'll deliver a <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">custom quote in under 24 hours.</span></p>",
+      "title": "Elevate Your VTEX Storefront",
+      "formInfor": {
+        "platform": "vtex",
+        "submiteName": "Send your site now!",
+        "PlaceholderfieldUrlSite": "Site URL or Figma Design*"
+      },
+      "langThanks": "en",
+      "FieldContacts": [
+        {
+          "name": "Agência",
+          "label": "System Integrator"
+        },
+        {
+          "name": "Marca",
+          "label": "Ecommerce Enterprise"
+        },
+        {
+          "name": "Grupo de Marcas",
+          "label": "Ecommerce Holding"
+        },
+        {
+          "name": "Parceiros de Tecnologia",
+          "label": "Technology Partnership"
+        },
+        {
+          "name": "Other",
+          "label": "Other"
+        }
+      ],
+      "__resolveType": "site/sections/NRF/PlatformContact.tsx",
+      "FieldNeedOptions": []
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "site/sections/NRF/Grid.tsx"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

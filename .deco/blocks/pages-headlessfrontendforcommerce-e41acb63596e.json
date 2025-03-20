@@ -34,14 +34,14 @@
               {
                 "id": "component-library",
                 "key": "Component Library",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/181a8f78-ca09-4a32-9e7b-b7a1c32de83b",
+                "image": "https://assets.decocache.com/starting/d03d2baa-e98b-4f3a-9884-825f28f18004/1742490957988-181a8f78-ca09-4a32-9e7b-b7a1c32de83b",
                 "title": "Lightning-fast UI component library",
                 "subtitle": "Speed up your building process. With our intuitive visual editor, embrace rapid design and deployment using pre-built, universally adaptable UI components."
               },
               {
                 "id": "design-system",
                 "key": "Design System",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c96a31e0-86fc-4729-af2f-73d108604651",
+                "image": "https://assets.decocache.com/starting/3319435d-b778-4d4a-a4db-5b2aa467eb09/1742490959559-c96a31e0-86fc-4729-af2f-73d108604651",
                 "title": "Native design system builder",
                 "subtitle": "Update your site's style in a snap. Easily tweak colors, button styles, and typography to create a distinct on-brand look with just a few clicks."
               },
@@ -54,7 +54,7 @@
               {
                 "id": "full-code-editing",
                 "key": "Full Code Editing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0a7a8bfc-06f2-46d0-8e01-e375acf3356e",
+                "image": "https://assets.decocache.com/starting/406208b4-d958-483f-9f76-73d0a48b27dd/1742490961226-0a7a8bfc-06f2-46d0-8e01-e375acf3356e",
                 "title": "Full code control in the browser",
                 "subtitle": "Accelerate web development with deco.cx's integrated code editor made for Preact, Tailwind and Typescript. Edit directly in-browser, sync with any Git, and leverage our AI co-pilot for seamless coding."
               },
@@ -67,21 +67,21 @@
               {
                 "id": "integrate-extend",
                 "key": "Integrate & Extend",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c87b9d9a-b856-429b-9419-5550184f3afd",
+                "image": "https://assets.decocache.com/starting/92057f91-c042-4573-adc7-750327ec7e7a/1742490963545-c87b9d9a-b856-429b-9419-5550184f3afd",
                 "title": "One-click-install apps and integrations",
                 "subtitle": "Enhance your site effortlessly through our deco Hub. Access a vast library of themes, apps, and templates that connect with any backend API."
               },
               {
                 "id": "multivariate-testing",
                 "key": "Multivariate Testing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5660489b-fb47-45e5-af7f-36a9576839cc",
+                "image": "https://assets.decocache.com/starting/bd17b368-a434-4377-99fa-dc66d065d718/1742490965364-5660489b-fb47-45e5-af7f-36a9576839cc",
                 "title": "Personalize your content for specific audiences",
                 "subtitle": "Go beyond A/B testing. Create experiments, campaigns and targeted experiences backed by data-driven insights."
               },
               {
                 "id": "monitoring",
                 "key": "Monitoring",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d9950545-c882-4e1c-beb0-637eb732b4dd",
+                "image": "https://assets.decocache.com/starting/df2e7ca6-a07b-4c6b-9b0e-b63441191344/1742490967285-d9950545-c882-4e1c-beb0-637eb732b4dd",
                 "title": "In-Depth Web Analytics & Observability",
                 "subtitle": "Unlock advanced audience insights and comprehensive system observability for optimal performance."
               }
@@ -89,7 +89,7 @@
             "__resolveType": "site/sections/NRF/EditorMobile.tsx"
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/121143f2-e825-44d4-99de-2ab04e97002d",
+            "image": "https://assets.decocache.com/starting/da494700-dce8-4a46-ac90-048f68bf733b/1742490969362-121143f2-e825-44d4-99de-2ab04e97002d",
             "title": "100% managed global edge infrastructure",
             "placement": "right",
             "description": "Choose between self-hosting or using managed global edge infrastructure that deploys your code in 35 regions around the globe, ensuring the lowest server latency possible and auto-scaling as you grow.",
@@ -144,30 +144,30 @@
             ],
             "tabs": [
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5986d39-b570-4c80-8af5-597a67d83b5f",
+                "image": "https://assets.decocache.com/starting/9fab1ad5-c764-4e4f-8e54-e74d47665343/1742490592785-b5986d39-b570-4c80-8af5-597a67d83b5f",
                 "title": "Section Library"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e61ea2d8-8bb6-4498-ab89-c179e78264b1",
+                "image": "https://assets.decocache.com/starting/be50f946-b1f0-47d9-ba20-4c2364314962/1742490594770-e61ea2d8-8bb6-4498-ab89-c179e78264b1",
                 "title": "No Code Editor"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/72277e92-9d2e-4237-b1d7-22235bcd3798",
+                "image": "https://assets.decocache.com/starting/a45febc9-b291-41ce-bba6-d894d2fba813/1742490596609-72277e92-9d2e-4237-b1d7-22235bcd3798",
                 "title": "Full Code Editor"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d414d1af-1442-4127-83c4-5dbc154c967a",
+                "image": "https://assets.decocache.com/starting/08929d4c-0016-416d-aec6-ceb83c07883c/1742490599724-d414d1af-1442-4127-83c4-5dbc154c967a",
                 "title": "Web Analytics"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6a44931b-316f-4e71-b597-b42847a6b11b",
+                "image": "https://assets.decocache.com/starting/f0285992-f3ef-478e-b7a6-d8da4b2e46b3/1742490602393-6a44931b-316f-4e71-b597-b42847a6b11b",
                 "title": "Monitoring"
               }
             ],
             "alert": {
               "href": "https://techcrunch.com/2024/01/09/deco-cx-2-2m-brand-website-e-commerce",
               "text": "\"Deco.cx grabs $2.2M to bring simplicity back to brand website creation\"",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/44800dcc-6280-42ba-bdd1-2acc4e66d05c",
+              "image": "https://assets.decocache.com/starting/13a83c4c-3603-45e2-bd47-dbbb40697fed/1742490603702-44800dcc-6280-42ba-bdd1-2acc4e66d05c",
               "mobileText": "As featured on TechCrunch"
             },
             "title": "<h1><strong id=\"docs-internal-guid-911242e6-7fff-6333-63d9-087ff4d4ea7f\">Headless&nbsp;</strong></h1><h1><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">frontend platform</span></h1><h1><strong id=\"docs-internal-guid-911242e6-7fff-6333-63d9-087ff4d4ea7f\">for commerce</strong></h1>",
@@ -190,14 +190,14 @@
               {
                 "id": "component-library",
                 "key": "Component Library",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/181a8f78-ca09-4a32-9e7b-b7a1c32de83b",
+                "image": "https://assets.decocache.com/starting/d03d2baa-e98b-4f3a-9884-825f28f18004/1742490957988-181a8f78-ca09-4a32-9e7b-b7a1c32de83b",
                 "title": "Lightning-fast UI component library",
                 "subtitle": "Speed up your building process. With our intuitive visual editor, embrace rapid design and deployment using pre-built, universally adaptable UI components."
               },
               {
                 "id": "design-system",
                 "key": "Design System",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c96a31e0-86fc-4729-af2f-73d108604651",
+                "image": "https://assets.decocache.com/starting/3319435d-b778-4d4a-a4db-5b2aa467eb09/1742490959559-c96a31e0-86fc-4729-af2f-73d108604651",
                 "title": "Native design system builder",
                 "subtitle": "Update your site's style in a snap. Easily tweak colors, button styles, and typography to create a distinct on-brand look with just a few clicks."
               },
@@ -210,7 +210,7 @@
               {
                 "id": "full-code-editing",
                 "key": "Full Code Editing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0a7a8bfc-06f2-46d0-8e01-e375acf3356e",
+                "image": "https://assets.decocache.com/starting/406208b4-d958-483f-9f76-73d0a48b27dd/1742490961226-0a7a8bfc-06f2-46d0-8e01-e375acf3356e",
                 "title": "Full code control in the browser",
                 "subtitle": "Accelerate web development with deco.cx's integrated code editor made for Preact, Tailwind and Typescript. Edit directly in-browser, sync with any Git, and leverage our AI co-pilot for seamless coding."
               },
@@ -223,21 +223,21 @@
               {
                 "id": "integrate-extend",
                 "key": "Integrate & Extend",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c87b9d9a-b856-429b-9419-5550184f3afd",
+                "image": "https://assets.decocache.com/starting/92057f91-c042-4573-adc7-750327ec7e7a/1742490963545-c87b9d9a-b856-429b-9419-5550184f3afd",
                 "title": "One-click-install apps and integrations",
                 "subtitle": "Enhance your site effortlessly through our deco Hub. Access a vast library of themes, apps, and templates that connect with any backend API."
               },
               {
                 "id": "multivariate-testing",
                 "key": "Multivariate Testing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5660489b-fb47-45e5-af7f-36a9576839cc",
+                "image": "https://assets.decocache.com/starting/bd17b368-a434-4377-99fa-dc66d065d718/1742490965364-5660489b-fb47-45e5-af7f-36a9576839cc",
                 "title": "Personalize content for specific audiences",
                 "subtitle": "Go beyond A/B testing. Create experiments, campaigns and targeted experiences backed by data-driven insights."
               },
               {
                 "id": "monitoring",
                 "key": "Monitoring",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d9950545-c882-4e1c-beb0-637eb732b4dd",
+                "image": "https://assets.decocache.com/starting/df2e7ca6-a07b-4c6b-9b0e-b63441191344/1742490967285-d9950545-c882-4e1c-beb0-637eb732b4dd",
                 "title": "In-depth web analytics & observability",
                 "subtitle": "Unlock advanced audience insights and comprehensive system observability for optimal performance."
               }
@@ -245,7 +245,7 @@
             "__resolveType": "site/sections/NRF/Editor.tsx"
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/121143f2-e825-44d4-99de-2ab04e97002d",
+            "image": "https://assets.decocache.com/starting/da494700-dce8-4a46-ac90-048f68bf733b/1742490969362-121143f2-e825-44d4-99de-2ab04e97002d",
             "title": "100% managed global edge infrastructure",
             "placement": "right",
             "description": "Choose between self-hosting or using managed global edge infrastructure that deploys your code in 35 regions around the globe, ensuring the lowest server latency possible and auto-scaling as you grow.",

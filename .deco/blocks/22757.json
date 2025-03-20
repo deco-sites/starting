@@ -1,1 +1,447 @@
-{"name":"Home / EN","path":"/en","sections":[{"__resolveType":"[en] [mkt] Head"},{"__resolveType":"GTM"},{"__resolveType":"Header - EN"},{"theme":"ligth","button":"Start now!","mainText":"Build unparalleled shopping experiences","themeDark":false,"blackBlock":"<p>A&nbsp;<strong>headless frontend solution</strong>, integrated with any platform.</p><p><br></p>","buttonCta1":{"href":"https://deco.cx/onboarding","buttonName":"Get started for free"},"buttonCta2":{"href":"/en/contact-us","buttonName":"Contact us"},"greenBlock":"Create conversion-driven storefronts, optimized for each audience.","miniBanner":{"titleText":"All-in-one frontend solution, natively integrated with any headless platform","imgLogoAlt":"Deco logo","imgLogoSrc":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/05ab33ff-2677-4a2c-b3be-d09fd7df1b74","linkedText":"Ecommerce backend","bannerTopImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dea05ebe-630c-4708-84d4-c36d1393df62","altBannerTopImage":"interface mostrando um ecommerce","bannerBottomImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/27042c4c-4a49-4a74-a36c-fe828b355527","altBannerBottomImage":"interface mostrando as possibilidades de integração"},"secondText":"The digital experience platform that brings performance and personalization together.","__resolveType":"site/sections/MainBanner.tsx","mainLine1Text":"Build fast stores and","mainLine2Text":"increase sales by","switcherButton":{"themeDark":false,"switcherButton1":{"href":"/en","name":"For Business users"},"switcherButton2":{"href":"/en/dev","name":"For Developers"}},"descriptionText":"The digital experience platform that combines performance and personalization for the ultimate sales results.","switcherButton1":{"href":"/","name":"For Business users"},"switcherButton2":{"href":"/dev","name":"For Developers"},"activePercentualCarrosel":false},{"title":"Chosen by leading commerce brands","images":[{"href":"/","label":"Zeedog","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e785f785-cf01-4220-addf-51ecd7b6e3c5"},{"href":"/","label":"Osklen","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9e16015e-b34b-4864-b251-884c2a23b9ee"},{"href":"/","label":"Lojas Torra","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6ddfe7bb-4621-44d6-b895-d3dd6b4a7f21"},{"href":"/","label":"Uncle K","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50840350-025e-4875-a452-ce97856abab1"},{"label":"Euro Colchões","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/fb37546c-22bc-4245-93ce-c4ecbbb9c501"},{"label":"Baw","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/789942c7-4802-4c3d-b992-e993ea775807"},{"label":"Embelleze","mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e88c1372-63f8-4385-8519-641ed935d42c"}],"themeDark":false,"__resolveType":"site/sections/Home/Brands.tsx"},{"title":"deco.cx enables seamless collaboration between marketing and tech teams to build high-converting headless storefronts.","darkMode":false,"sections":[{"text":"Design high-converting shopping experiences with a powerful, visual builder. Your business team with the autonomy to modify components without writing a single line of code.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1936d280-c86a-4676-8918-96b04f542deb","title":"Edit","subtitle":"Easy to use page builder","imagePosition":"right"},{"text":"No complicated set-up here, simply select a page or section you want to test ideas on, and get testing! Try experimenting with different headlines, sales copy, or product descriptions and quickly learn which idea converts the best.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6cb80ee4-4e24-4a0a-b55c-da65017650b6","title":"Test","subtitle":"Create A/B tests in 5 secs","imagePosition":"left"},{"text":"Conversion-driven storefronts that are optimized for each audience, increasing engagement and conversion rates.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/56e340f8-dc8a-4a5c-933f-9a0eb620e797","title":"Personalize","subtitle":"Craft unique experiences","imagePosition":"right"},{"text":"Integrated real-time analytics to identify the greatest opportunities to boost conversions.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1e76700e-33e5-4920-878c-2752403c2bd1","title":"Evolve","subtitle":"Analyze your data","imagePosition":"left"}],"__resolveType":"site/sections/Differentials.tsx"},{"cards":[{"icon":"FastPagespeed","text":"Deliver ultra-fast experiences that boost engagement, reduce bounce rates, and increase conversion rates.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3a70a167-bbba-46d5-99e2-a79e2b90b59f","title":"Unrivaled pagespeeds"},{"icon":"FastClock","text":"Launch new products and campaigns quickly. Accelerate deployment and stay ahead of the competition.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0338c2a1-1c92-4392-b919-65f078c0127d","title":"Faster time to market"},{"icon":"PigMoney","text":"Maximize your revenue and ROI with our performance-optimized storefronts, personalized experiences, and conversion-driven approach.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a732af7d-51f0-4eb7-9604-95217ec0b826","title":"Increased profitability"}],"title":"A platform built for business users and loved by developers","col1Text":"Deco is a vendor-neutral platform that lets you select the products that are best for you, regardless of the vendor.","col2Text":"Faster time to market Pagespeeds affects SEO, visitor engagement and sales. Deco leverages edge computing and CDN capabilities to ensure digital experiences are always fast.","col3Text":"Get all the tools you need to build and optimize your headless experience for less price and make your teams work smarter.","col2Title":"Faster time to market","col3Title":"Reduced costs","col1Ttitle":"Unrivaled pagespeeds","__resolveType":"site/sections/Features.tsx"},{"image":{"imageMobile":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0bcaf2c0-a5d2-46d7-bcae-ee247f86275a"},"imageDesktop":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/fe8bbc6c-a1fc-4ec5-976a-44117b203f49"}},"mainText":"Integrate with <span style=\"color: #02F67C\">everything</span> ","secondText":"From commerce platforms to any third-party APIs, deco offers an open-source library of pre-built and reusable loaders. Create your own custom integration workflow with ease.","imageEffect":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91b973bf-425e-454b-8528-8d2a8bd2fd36","__resolveType":"site/sections/Integration.tsx"},{"__resolveType":"site/sections/Divider.tsx"},{"col1":"Manage all storefronts in one place","col2":"Easier stack for hiring and training","col3":"Expand your market","col4":"Make your customers happy","title":"Are you an agency?","button":"Join us","benefits":["Manage all storefronts in one place","Streamline hiring and training with an easy-to-use stack","Expand your market reach","Delight your customers with exceptional results"],"mainText":"Trusted by leading agencies","buttonHref":"/en/contact-us","imgFirstLine":["https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c2d07ebf-df36-4b05-87e1-bda0c67933e1","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c3986170-3f64-4284-82c1-1dfb4c8bb51b","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/24274de5-5080-4269-8a4d-c248199a5ad7","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/07c4f8bf-4072-4048-9809-404e2d50281e","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0349152c-fc21-4d18-849c-86c9275b2016","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc9a0be4-0430-46f8-b48d-1b7d6814e6ad","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6f210b8f-6869-47ef-832a-4d76e2be5e63","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ce57a863-d0bb-4391-a11e-9736dfa7fc02","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4ed4bc3b-3e35-4b99-9b5d-5d0f4aa682bf","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a9c0830b-418f-4ae5-8c6f-02af53c9b5c9","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/576a235b-8527-47ee-a59f-4c7ca08477ee","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e341478e-347c-4cf2-9d44-e2c3b6918bf1","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/abbd532b-1a30-4544-a003-dcb28cd82ade","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/15c04027-2b90-4380-960a-32b40f887e2a","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ccb3e558-9f57-42a8-a689-904686340a6f","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/051d710b-8a26-4173-8c1d-2d37b09012b2","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/78fd9938-a59e-44b2-9736-6df50322ec9b","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ad629020-98b3-4e98-87e4-042b96b6c939","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3063abef-9151-4bc9-a2d2-83f6f375b965","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dd12d840-c46f-440d-91e1-6cc29d0948dd"],"imgThirdLine":["https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dacf2835-af17-4058-b008-77da64a5e57d","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90c87c56-4509-4d99-9e95-3f5c752b9404","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/03dec92e-43f2-4d21-a114-62ade9b920e3","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/34f87d22-933e-4ff0-9c28-fef8e762f816","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43a4f074-2837-4a64-b1df-18b97fa95694","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/95278b70-89a9-4dee-a761-7b768bec8501","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ab6adc70-fff5-4fee-95e3-501a9be07cfe","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/402ea91a-b192-425f-b507-40035089c36b","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4ae7f118-004f-41d1-8856-7f4c328e0871","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c61426a-e20a-43e6-92ac-d00da9a50416","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1e68fd82-43c8-4c14-bca1-88bc6a016e0e","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/827e1a69-abc8-42a4-b419-c813239f2e98","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bef1add3-8306-4523-af87-1983de675c63","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e7b94ff7-54b3-4f16-bbac-9980acdacc61","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5e5f5547-2e3c-4c02-8ce1-42aea5d27b28","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7e72c503-110c-4627-b3ba-b02de51e0331","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0349152c-fc21-4d18-849c-86c9275b2016","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/85500ce8-e648-443a-b871-8e05df1d9204","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/87e9fe3d-0174-424d-b020-597532c71667"],"__resolveType":"site/sections/Partner.tsx","imgSecondLine":["https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6cf4c1ef-09c5-4e46-a851-1b4ff7a8854c","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfeef6de-7ad1-46a6-8f6f-c482d357adbe","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/97fba5fa-be35-4699-a40d-5d45cc84fc0c","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3b362f97-d1f7-406f-b33a-84204c5621f6","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/259bf047-5bb8-4368-ba01-210830871e0a","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4f7fc1de-a07a-40ee-b7e8-8ead68821184","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1f3dec0d-2e46-47b3-a3cc-b221cbc50b7c","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0349152c-fc21-4d18-849c-86c9275b2016","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c8e24727-3606-4565-a6e6-e934663ff9bc","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ac045e1a-69f4-4535-a1c4-45d3847a1298","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9a939824-e0b7-41f7-8edc-20f0a519b6ea","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/26e2a8a1-fd7e-495c-8076-9e080e110280","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e6473299-67ee-40f7-aa91-b83ab69f58bf","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e60c0334-5cdc-44e9-89bb-c2097d618706","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2d9ff011-1c4d-429a-a738-4e55103d2858","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eaee6bac-a65f-49d0-8fe4-4ba3c9d2c755","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bd99ff30-625f-4461-b93b-f2d8eea6c410","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ee6df342-a122-4483-9eb5-6e0d35755c49","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0be87542-d837-4062-aa99-423ad36bf226","https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6a3c757a-9455-49b2-b0bc-e14505e09607"]},{"__resolveType":"[en]"},{"subText":"We are already building the largest multiplatform e-commerce community -from Latin America to the world. Here you will find:","col1Text":"A self-paced bootcamp for students. Learn webdev for ecommerce from scratch using our modern technologies.","col2Text":"We are listing all fulltime job positions we find in the commerce ecosystem, and you can share yours.","col3Text":"A self-paced bootcamp for students. Learn webdev for ecommerce from scratch using our modern technologies.","col4Text":"We are listing all fulltime job positions we find in the commerce ecosystem, and you can share yours.","lazyload":true,"mainText":"Access a world of talent","col1Title":"deco camp","col2Title":"job positions","col3Title":"bounties","col4Title":"support","secondText":"Join the largest multiplatform e-commerce community with over 1.000 devs, designers and students – from Latin America to the world.","mainTextPt1":"Baked up by a 730+ members community","mainTextPt2":" ","peopleImage":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c6257f2b-7acc-4bbf-b7e8-90b47ed7836c","__resolveType":"site/sections/Community.tsx","blurBackground":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a8cb4a96-e2fe-405e-ac30-4f1901df6f25","blur1Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4f7bff96-d3d1-45c0-bf0c-e5c2049bcd6e","blur2Background":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/01071c90-a479-4113-a9bb-3298ce220d7f","hrefFirstButton":"/en/community","hrefSecondButton":"https://discord.gg/deco-cx","labelFirstButton":"Learn more","labelSecondButton":"Join the community"},{"cards":{"0":{"url":"/blog/como-a-deco-faz-sua-loja-converter-mais.md","date":"14 April 2023","text":"How deco makes your store convert more","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/29ec4ea8-c448-4403-a920-e71636d76af8","title":"BUSINESS","author":"Rafael Crespo","writtenByLabel":"Written by"},"1":{"url":"/blog/abertura-ii-hackathon-deco.md","date":"12 March 2023","text":"Latin America and the future of digital experiences","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7ac1334b-147b-40e3-850b-fdd65a3ba01c","title":"BUSINESS","author":"Guilherme Rodrigues","writtenByLabel":"Written by"},"2":{"url":"/blog/criando-uma-pagina-com-decocx.md","date":"01 March 2023","text":"My experience with deco.cx","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ab26ccca-d671-42fd-8779-470124c38e63","title":"BUSINESS","author":"Guilherme Tavano","writtenByLabel":"Written by"},"3":{"url":"/blog/pg-vb-pt-br.md","date":"29 November 2022","text":"Life is short                          ","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6652f325-99f3-45fe-946d-d7e8fdb405b9","title":"BUSINESS","author":"Paul Graham","writtenByLabel":"Written by"},"page":{"__resolveType":"site/functions/LoadPageProps.ts"},"postList":{"__resolveType":"blogposts"},"__resolveType":"site/loaders/featuredPosts.ts"},"images":[{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff8801e3-bf33-40d2-8037-3229b558aa77","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0ae3ef7e-a50d-412e-ad4d-6c96d75679fa"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7348ec03-a5db-4f01-bba7-545182dbd959","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5b68e95-5cfa-4c58-bd08-885077f6f2c1"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c3e867b-e862-4e55-9a8d-fd8a93c0a9b7","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98826707-7e42-4eb6-be7e-5d7dcf61ce69"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f325ab19-5779-4533-87f5-d214a45c88a0","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/008ecb21-f953-4c88-ad13-16775ca93c8a"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8c4ad9d9-d034-4ae1-863a-d7dd422c4096","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91c6d097-461e-4f17-8d95-1c710bf2a4d8"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d896d2b-a45c-44d6-b98f-b92cda60ddc8","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2b4a85be-e327-403a-88e6-0f04d83d32e1"}],"locale":"en","__resolveType":"site/sections/Carousel.tsx"},{"quest1":"What is deco?","quest2":"Does deco replaces my current commerce platform?","quest3":"What tech stack deco uses?","quest4":"How deco enables fast websites?","quest5":"How can I get more details on the platform?","questions":[{"answer":"Deco.cx is a front-end-as-a-service platform that brings performance and personalization together to create exceptional e-commerce experiences. With built-in CMS, A/B testing, audience personalization, campaigns, and analytics, it's designed for both business users and developers.","question":"What is deco?"},{"answer":"No, deco does not replace your current commerce platform. Instead, it serves as a headless frontend solution that seamlessly integrates with your existing platform, enhancing its performance and user experience.","question":"Does deco.cx replace my current commerce platform?"},{"answer":"Deco.cx's tech stack is based on Deno, Preact, Tailwind, and Fresh. Deno is a secure JavaScript and TypeScript runtime. Preact is a React-compatible low-footprint component framework. Tailwind is a world-class functional CSS library that enables the creation of optimized styles for the web. Fresh is a modern server-side web framework built for Deno. Together, these technologies provide a powerful and secure foundation for creating high-performance and scalable storefronts.","question":"What tech stack does Deco use?"},{"answer":"Deco leverages on cutting-edge technologies such as server-side rendering and global edge infrastructure to ensure fast website performance.","question":"How does Deco enable fast websites?"},{"answer":"Deco's implementation process involves migrating the front-end implementation of an e-commerce store to Deco's tech stack. This migration can be carried out by one of Deco's partner agencies, an independent freelancer, or a developer within the client's own team. The duration of the implementation process typically ranges between 2 weeks and 2 months, depending on the complexity of the store.","question":"How is deco’s implementation process?"},{"answer":"Join our community on Discord to learn more about deco.cx or get in touch with our sales team for more details.","question":"How can I get more details on the platform?"}],"__resolveType":"site/sections/Faq.tsx"},{"__resolveType":"[en] calculator light mode"},{"__resolveType":"[en] calculator blocks"},{"form":{"action":"#","method":"get"},"href":"/en/contact-us","name":"Name","email":"Work e-mail","button":"Schedule a demo","linkedin":"LinkedIn","mainText":"Ready to delight your customers?","position":"Position","buttonText":"Get in touch","placeholder":"Enter your work email","__resolveType":"site/sections/Delight.tsx"},{"__resolveType":"[en] Footer"},{"__resolveType":"site/sections/FooterBigLogo.tsx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Home / EN",
+  "path": "/en",
+  "sections": [
+    {
+      "__resolveType": "[en] [mkt] Head"
+    },
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "Header - EN"
+    },
+    {
+      "theme": "ligth",
+      "button": "Start now!",
+      "mainText": "Build unparalleled shopping experiences",
+      "themeDark": false,
+      "blackBlock": "<p>A&nbsp;<strong>headless frontend solution</strong>, integrated with any platform.</p><p><br></p>",
+      "buttonCta1": {
+        "href": "https://deco.cx/onboarding",
+        "buttonName": "Get started for free"
+      },
+      "buttonCta2": {
+        "href": "/en/contact-us",
+        "buttonName": "Contact us"
+      },
+      "greenBlock": "Create conversion-driven storefronts, optimized for each audience.",
+      "miniBanner": {
+        "titleText": "All-in-one frontend solution, natively integrated with any headless platform",
+        "imgLogoAlt": "Deco logo",
+        "imgLogoSrc": "https://assets.decocache.com/starting/371f9913-ef12-4672-b98a-6c2971ef2854/1742491048727-05ab33ff-2677-4a2c-b3be-d09fd7df1b74",
+        "linkedText": "Ecommerce backend",
+        "bannerTopImage": "https://assets.decocache.com/starting/66b89a50-7a4c-4915-ba7e-c714cd1a24b7/1742491050342-dea05ebe-630c-4708-84d4-c36d1393df62",
+        "altBannerTopImage": "interface mostrando um ecommerce",
+        "bannerBottomImage": "https://assets.decocache.com/starting/1b493903-9769-46b8-a059-df336a06fad8/1742491053761-27042c4c-4a49-4a74-a36c-fe828b355527",
+        "altBannerBottomImage": "interface mostrando as possibilidades de integração"
+      },
+      "secondText": "The digital experience platform that brings performance and personalization together.",
+      "__resolveType": "site/sections/MainBanner.tsx",
+      "mainLine1Text": "Build fast stores and",
+      "mainLine2Text": "increase sales by",
+      "switcherButton": {
+        "themeDark": false,
+        "switcherButton1": {
+          "href": "/en",
+          "name": "For Business users"
+        },
+        "switcherButton2": {
+          "href": "/en/dev",
+          "name": "For Developers"
+        }
+      },
+      "descriptionText": "The digital experience platform that combines performance and personalization for the ultimate sales results.",
+      "switcherButton1": {
+        "href": "/",
+        "name": "For Business users"
+      },
+      "switcherButton2": {
+        "href": "/dev",
+        "name": "For Developers"
+      },
+      "activePercentualCarrosel": false
+    },
+    {
+      "title": "Chosen by leading commerce brands",
+      "images": [
+        {
+          "href": "/",
+          "label": "Zeedog",
+          "mobile": "https://assets.decocache.com/starting/912a6647-87f6-410f-b962-afd1e6b73f6e/1742491955959-e785f785-cf01-4220-addf-51ecd7b6e3c5"
+        },
+        {
+          "href": "/",
+          "label": "Osklen",
+          "mobile": "https://assets.decocache.com/starting/8d98afb0-59e8-4906-8b92-62948e1b2538/1742491957396-9e16015e-b34b-4864-b251-884c2a23b9ee"
+        },
+        {
+          "href": "/",
+          "label": "Lojas Torra",
+          "mobile": "https://assets.decocache.com/starting/f52d9d9c-6fb4-4814-a9e5-424d5de6a58a/1742491958809-6ddfe7bb-4621-44d6-b895-d3dd6b4a7f21"
+        },
+        {
+          "href": "/",
+          "label": "Uncle K",
+          "mobile": "https://assets.decocache.com/starting/00d1c2b1-f841-46d7-bf4f-9dde17b28aef/1742490917581-50840350-025e-4875-a452-ce97856abab1"
+        },
+        {
+          "label": "Euro Colchões",
+          "mobile": "https://assets.decocache.com/starting/943748c4-de0c-4982-8f82-e3a0c0239399/1742492110404-fb37546c-22bc-4245-93ce-c4ecbbb9c501"
+        },
+        {
+          "label": "Baw",
+          "mobile": "https://assets.decocache.com/starting/7e47989f-a9cd-4c05-9e2d-9391caf029ab/1742492114880-789942c7-4802-4c3d-b992-e993ea775807"
+        },
+        {
+          "label": "Embelleze",
+          "mobile": "https://assets.decocache.com/starting/30d399e1-0a0e-4a07-be73-c74b15480a0f/1742492116566-e88c1372-63f8-4385-8519-641ed935d42c"
+        }
+      ],
+      "themeDark": false,
+      "__resolveType": "site/sections/Home/Brands.tsx"
+    },
+    {
+      "title": "deco.cx enables seamless collaboration between marketing and tech teams to build high-converting headless storefronts.",
+      "darkMode": false,
+      "sections": [
+        {
+          "text": "Design high-converting shopping experiences with a powerful, visual builder. Your business team with the autonomy to modify components without writing a single line of code.",
+          "image": "https://assets.decocache.com/starting/b0009440-ccb7-4d93-9403-ae57c5645d24/1742491071885-1936d280-c86a-4676-8918-96b04f542deb",
+          "title": "Edit",
+          "subtitle": "Easy to use page builder",
+          "imagePosition": "right"
+        },
+        {
+          "text": "No complicated set-up here, simply select a page or section you want to test ideas on, and get testing! Try experimenting with different headlines, sales copy, or product descriptions and quickly learn which idea converts the best.",
+          "image": "https://assets.decocache.com/starting/12b1473a-eefc-4256-9160-fe7c35cd8a0c/1742491078037-6cb80ee4-4e24-4a0a-b55c-da65017650b6",
+          "title": "Test",
+          "subtitle": "Create A/B tests in 5 secs",
+          "imagePosition": "left"
+        },
+        {
+          "text": "Conversion-driven storefronts that are optimized for each audience, increasing engagement and conversion rates.",
+          "image": "https://assets.decocache.com/starting/8c1b192c-2561-4dff-9cfd-29b8e7c2a008/1742491079650-56e340f8-dc8a-4a5c-933f-9a0eb620e797",
+          "title": "Personalize",
+          "subtitle": "Craft unique experiences",
+          "imagePosition": "right"
+        },
+        {
+          "text": "Integrated real-time analytics to identify the greatest opportunities to boost conversions.",
+          "image": "https://assets.decocache.com/starting/05ed5aab-c576-48bc-a7a6-fee2915949e3/1742491081673-1e76700e-33e5-4920-878c-2752403c2bd1",
+          "title": "Evolve",
+          "subtitle": "Analyze your data",
+          "imagePosition": "left"
+        }
+      ],
+      "__resolveType": "site/sections/Differentials.tsx"
+    },
+    {
+      "cards": [
+        {
+          "icon": "FastPagespeed",
+          "text": "Deliver ultra-fast experiences that boost engagement, reduce bounce rates, and increase conversion rates.",
+          "image": "https://assets.decocache.com/starting/815943c2-a743-4e6f-824b-b184c2afb419/1742491083285-3a70a167-bbba-46d5-99e2-a79e2b90b59f",
+          "title": "Unrivaled pagespeeds"
+        },
+        {
+          "icon": "FastClock",
+          "text": "Launch new products and campaigns quickly. Accelerate deployment and stay ahead of the competition.",
+          "image": "https://assets.decocache.com/starting/d26faea6-b176-468b-9b47-3c9a38bb5180/1742491084865-0338c2a1-1c92-4392-b919-65f078c0127d",
+          "title": "Faster time to market"
+        },
+        {
+          "icon": "PigMoney",
+          "text": "Maximize your revenue and ROI with our performance-optimized storefronts, personalized experiences, and conversion-driven approach.",
+          "image": "https://assets.decocache.com/starting/769206e6-37fc-46f6-8d7e-f75d732cb3b9/1742491086266-a732af7d-51f0-4eb7-9604-95217ec0b826",
+          "title": "Increased profitability"
+        }
+      ],
+      "title": "A platform built for business users and loved by developers",
+      "col1Text": "Deco is a vendor-neutral platform that lets you select the products that are best for you, regardless of the vendor.",
+      "col2Text": "Faster time to market Pagespeeds affects SEO, visitor engagement and sales. Deco leverages edge computing and CDN capabilities to ensure digital experiences are always fast.",
+      "col3Text": "Get all the tools you need to build and optimize your headless experience for less price and make your teams work smarter.",
+      "col2Title": "Faster time to market",
+      "col3Title": "Reduced costs",
+      "col1Ttitle": "Unrivaled pagespeeds",
+      "__resolveType": "site/sections/Features.tsx"
+    },
+    {
+      "image": {
+        "imageMobile": {
+          "src": "https://assets.decocache.com/starting/2660e157-360c-4b8d-bba1-67bd96deed03/1742491087587-0bcaf2c0-a5d2-46d7-bcae-ee247f86275a"
+        },
+        "imageDesktop": {
+          "src": "https://assets.decocache.com/starting/c14c0ae5-d725-4e37-8830-419db7836ff0/1742491089050-fe8bbc6c-a1fc-4ec5-976a-44117b203f49"
+        }
+      },
+      "mainText": "Integrate with <span style=\"color: #02F67C\">everything</span> ",
+      "secondText": "From commerce platforms to any third-party APIs, deco offers an open-source library of pre-built and reusable loaders. Create your own custom integration workflow with ease.",
+      "imageEffect": "https://assets.decocache.com/starting/df8176a2-402d-4233-a3ab-3df1db8db9fc/1742491090205-91b973bf-425e-454b-8528-8d2a8bd2fd36",
+      "__resolveType": "site/sections/Integration.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Divider.tsx"
+    },
+    {
+      "col1": "Manage all storefronts in one place",
+      "col2": "Easier stack for hiring and training",
+      "col3": "Expand your market",
+      "col4": "Make your customers happy",
+      "title": "Are you an agency?",
+      "button": "Join us",
+      "benefits": [
+        "Manage all storefronts in one place",
+        "Streamline hiring and training with an easy-to-use stack",
+        "Expand your market reach",
+        "Delight your customers with exceptional results"
+      ],
+      "mainText": "Trusted by leading agencies",
+      "buttonHref": "/en/contact-us",
+      "imgFirstLine": [
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c2d07ebf-df36-4b05-87e1-bda0c67933e1",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c3986170-3f64-4284-82c1-1dfb4c8bb51b",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/24274de5-5080-4269-8a4d-c248199a5ad7",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/07c4f8bf-4072-4048-9809-404e2d50281e",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0349152c-fc21-4d18-849c-86c9275b2016",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc9a0be4-0430-46f8-b48d-1b7d6814e6ad",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6f210b8f-6869-47ef-832a-4d76e2be5e63",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ce57a863-d0bb-4391-a11e-9736dfa7fc02",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4ed4bc3b-3e35-4b99-9b5d-5d0f4aa682bf",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a9c0830b-418f-4ae5-8c6f-02af53c9b5c9",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/576a235b-8527-47ee-a59f-4c7ca08477ee",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e341478e-347c-4cf2-9d44-e2c3b6918bf1",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/abbd532b-1a30-4544-a003-dcb28cd82ade",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/15c04027-2b90-4380-960a-32b40f887e2a",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ccb3e558-9f57-42a8-a689-904686340a6f",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/051d710b-8a26-4173-8c1d-2d37b09012b2",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/78fd9938-a59e-44b2-9736-6df50322ec9b",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ad629020-98b3-4e98-87e4-042b96b6c939",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3063abef-9151-4bc9-a2d2-83f6f375b965",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dd12d840-c46f-440d-91e1-6cc29d0948dd"
+      ],
+      "imgThirdLine": [
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dacf2835-af17-4058-b008-77da64a5e57d",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/90c87c56-4509-4d99-9e95-3f5c752b9404",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/03dec92e-43f2-4d21-a114-62ade9b920e3",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/34f87d22-933e-4ff0-9c28-fef8e762f816",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43a4f074-2837-4a64-b1df-18b97fa95694",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/95278b70-89a9-4dee-a761-7b768bec8501",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ab6adc70-fff5-4fee-95e3-501a9be07cfe",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/402ea91a-b192-425f-b507-40035089c36b",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4ae7f118-004f-41d1-8856-7f4c328e0871",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c61426a-e20a-43e6-92ac-d00da9a50416",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1e68fd82-43c8-4c14-bca1-88bc6a016e0e",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/827e1a69-abc8-42a4-b419-c813239f2e98",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bef1add3-8306-4523-af87-1983de675c63",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e7b94ff7-54b3-4f16-bbac-9980acdacc61",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5e5f5547-2e3c-4c02-8ce1-42aea5d27b28",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7e72c503-110c-4627-b3ba-b02de51e0331",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0349152c-fc21-4d18-849c-86c9275b2016",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/85500ce8-e648-443a-b871-8e05df1d9204",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/87e9fe3d-0174-424d-b020-597532c71667"
+      ],
+      "__resolveType": "site/sections/Partner.tsx",
+      "imgSecondLine": [
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6cf4c1ef-09c5-4e46-a851-1b4ff7a8854c",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bfeef6de-7ad1-46a6-8f6f-c482d357adbe",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/97fba5fa-be35-4699-a40d-5d45cc84fc0c",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3b362f97-d1f7-406f-b33a-84204c5621f6",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/259bf047-5bb8-4368-ba01-210830871e0a",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4f7fc1de-a07a-40ee-b7e8-8ead68821184",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1f3dec0d-2e46-47b3-a3cc-b221cbc50b7c",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0349152c-fc21-4d18-849c-86c9275b2016",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c8e24727-3606-4565-a6e6-e934663ff9bc",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ac045e1a-69f4-4535-a1c4-45d3847a1298",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9a939824-e0b7-41f7-8edc-20f0a519b6ea",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/26e2a8a1-fd7e-495c-8076-9e080e110280",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e6473299-67ee-40f7-aa91-b83ab69f58bf",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e60c0334-5cdc-44e9-89bb-c2097d618706",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2d9ff011-1c4d-429a-a738-4e55103d2858",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/eaee6bac-a65f-49d0-8fe4-4ba3c9d2c755",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bd99ff30-625f-4461-b93b-f2d8eea6c410",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ee6df342-a122-4483-9eb5-6e0d35755c49",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0be87542-d837-4062-aa99-423ad36bf226",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6a3c757a-9455-49b2-b0bc-e14505e09607"
+      ]
+    },
+    {
+      "__resolveType": "[en]"
+    },
+    {
+      "subText": "We are already building the largest multiplatform e-commerce community -from Latin America to the world. Here you will find:",
+      "col1Text": "A self-paced bootcamp for students. Learn webdev for ecommerce from scratch using our modern technologies.",
+      "col2Text": "We are listing all fulltime job positions we find in the commerce ecosystem, and you can share yours.",
+      "col3Text": "A self-paced bootcamp for students. Learn webdev for ecommerce from scratch using our modern technologies.",
+      "col4Text": "We are listing all fulltime job positions we find in the commerce ecosystem, and you can share yours.",
+      "lazyload": true,
+      "mainText": "Access a world of talent",
+      "col1Title": "deco camp",
+      "col2Title": "job positions",
+      "col3Title": "bounties",
+      "col4Title": "support",
+      "secondText": "Join the largest multiplatform e-commerce community with over 1.000 devs, designers and students – from Latin America to the world.",
+      "mainTextPt1": "Baked up by a 730+ members community",
+      "mainTextPt2": " ",
+      "peopleImage": "https://assets.decocache.com/starting/88190716-6e5d-473d-a23f-1ac0ad054cb0/1742491093929-c6257f2b-7acc-4bbf-b7e8-90b47ed7836c",
+      "__resolveType": "site/sections/Community.tsx",
+      "blurBackground": "https://assets.decocache.com/starting/721e0032-7ec7-4dad-a843-1303cc6c385a/1742491095429-a8cb4a96-e2fe-405e-ac30-4f1901df6f25",
+      "blur1Background": "https://assets.decocache.com/starting/4f469f8d-ce56-4ea7-82b1-a504d349f02d/1742491096906-4f7bff96-d3d1-45c0-bf0c-e5c2049bcd6e",
+      "blur2Background": "https://assets.decocache.com/starting/2b2d5827-4df9-450c-9c29-507c7944ad77/1742491098610-01071c90-a479-4113-a9bb-3298ce220d7f",
+      "hrefFirstButton": "/en/community",
+      "hrefSecondButton": "https://discord.gg/deco-cx",
+      "labelFirstButton": "Learn more",
+      "labelSecondButton": "Join the community"
+    },
+    {
+      "cards": {
+        "0": {
+          "url": "/blog/como-a-deco-faz-sua-loja-converter-mais.md",
+          "date": "14 April 2023",
+          "text": "How deco makes your store convert more",
+          "image": "https://assets.decocache.com/starting/7ba9090c-7c26-46fb-87ee-cc9dbda42ae4/1742491100374-29ec4ea8-c448-4403-a920-e71636d76af8",
+          "title": "BUSINESS",
+          "author": "Rafael Crespo",
+          "writtenByLabel": "Written by"
+        },
+        "1": {
+          "url": "/blog/abertura-ii-hackathon-deco.md",
+          "date": "12 March 2023",
+          "text": "Latin America and the future of digital experiences",
+          "image": "https://assets.decocache.com/starting/46fbe5ee-184f-4c3a-aaa2-13f1d46390cd/1742491102153-7ac1334b-147b-40e3-850b-fdd65a3ba01c",
+          "title": "BUSINESS",
+          "author": "Guilherme Rodrigues",
+          "writtenByLabel": "Written by"
+        },
+        "2": {
+          "url": "/blog/criando-uma-pagina-com-decocx.md",
+          "date": "01 March 2023",
+          "text": "My experience with deco.cx",
+          "image": "https://assets.decocache.com/starting/a1fb0a5b-8581-4159-a61e-bbcfd2525fe6/1742491104012-ab26ccca-d671-42fd-8779-470124c38e63",
+          "title": "BUSINESS",
+          "author": "Guilherme Tavano",
+          "writtenByLabel": "Written by"
+        },
+        "3": {
+          "url": "/blog/pg-vb-pt-br.md",
+          "date": "29 November 2022",
+          "text": "Life is short                          ",
+          "image": "https://assets.decocache.com/starting/98cdbbc5-86a3-4cc8-b228-0201eb3181fd/1742491105643-6652f325-99f3-45fe-946d-d7e8fdb405b9",
+          "title": "BUSINESS",
+          "author": "Paul Graham",
+          "writtenByLabel": "Written by"
+        },
+        "page": {
+          "__resolveType": "site/functions/LoadPageProps.ts"
+        },
+        "postList": {
+          "__resolveType": "blogposts"
+        },
+        "__resolveType": "site/loaders/featuredPosts.ts"
+      },
+      "images": [
+        {
+          "text": "Boosting your store speed and optimizing sales",
+          "image": "https://assets.decocache.com/starting/1432c5f6-3f70-4f40-ae57-7886ea1d4c7d/1742491109441-ff8801e3-bf33-40d2-8037-3229b558aa77",
+          "title": "BUSINESS",
+          "author": "https://assets.decocache.com/starting/7687dd1e-7a11-4d81-8335-83b959ef75a4/1742491111332-0ae3ef7e-a50d-412e-ad4d-6c96d75679fa"
+        },
+        {
+          "text": "Boosting your store speed and optimizing sales",
+          "image": "https://assets.decocache.com/starting/f24b0aac-57f9-426d-b16e-a4d2eea09ad3/1742491113245-7348ec03-a5db-4f01-bba7-545182dbd959",
+          "title": "BUSINESS",
+          "author": "https://assets.decocache.com/starting/aeae7f05-f8d5-4792-903f-798998046239/1742491114620-b5b68e95-5cfa-4c58-bd08-885077f6f2c1"
+        },
+        {
+          "text": "Boosting your store speed and optimizing sales",
+          "image": "https://assets.decocache.com/starting/fd745a76-79f6-4426-aef1-f8b0d85ac7fb/1742491116252-3c3e867b-e862-4e55-9a8d-fd8a93c0a9b7",
+          "title": "BUSINESS",
+          "author": "https://assets.decocache.com/starting/740ae5d6-55d7-4427-9430-47335e802956/1742491117723-98826707-7e42-4eb6-be7e-5d7dcf61ce69"
+        },
+        {
+          "text": "Boosting your store speed and optimizing sales",
+          "image": "https://assets.decocache.com/starting/fc05a7f4-8745-4000-9e72-6ff92d90a8f9/1742491119217-f325ab19-5779-4533-87f5-d214a45c88a0",
+          "title": "BUSINESS",
+          "author": "https://assets.decocache.com/starting/1750edda-57fa-46f3-88cd-ba0a4301a59a/1742491121027-008ecb21-f953-4c88-ad13-16775ca93c8a"
+        },
+        {
+          "text": "Boosting your store speed and optimizing sales",
+          "image": "https://assets.decocache.com/starting/9885979d-dd34-443c-b2a0-cc1cf05b6fbe/1742491122514-8c4ad9d9-d034-4ae1-863a-d7dd422c4096",
+          "title": "BUSINESS",
+          "author": "https://assets.decocache.com/starting/f2d1a7b6-10ac-4763-a713-99d0b4602b2b/1742491123887-91c6d097-461e-4f17-8d95-1c710bf2a4d8"
+        },
+        {
+          "text": "Boosting your store speed and optimizing sales",
+          "image": "https://assets.decocache.com/starting/d47adff8-1b5f-4184-827b-2667d80dba45/1742491125387-3d896d2b-a45c-44d6-b98f-b92cda60ddc8",
+          "title": "BUSINESS",
+          "author": "https://assets.decocache.com/starting/b11c957d-4270-4eae-8df4-c3e2786abc33/1742491126924-2b4a85be-e327-403a-88e6-0f04d83d32e1"
+        }
+      ],
+      "locale": "en",
+      "__resolveType": "site/sections/Carousel.tsx"
+    },
+    {
+      "quest1": "What is deco?",
+      "quest2": "Does deco replaces my current commerce platform?",
+      "quest3": "What tech stack deco uses?",
+      "quest4": "How deco enables fast websites?",
+      "quest5": "How can I get more details on the platform?",
+      "questions": [
+        {
+          "answer": "Deco.cx is a front-end-as-a-service platform that brings performance and personalization together to create exceptional e-commerce experiences. With built-in CMS, A/B testing, audience personalization, campaigns, and analytics, it's designed for both business users and developers.",
+          "question": "What is deco?"
+        },
+        {
+          "answer": "No, deco does not replace your current commerce platform. Instead, it serves as a headless frontend solution that seamlessly integrates with your existing platform, enhancing its performance and user experience.",
+          "question": "Does deco.cx replace my current commerce platform?"
+        },
+        {
+          "answer": "Deco.cx's tech stack is based on Deno, Preact, Tailwind, and Fresh. Deno is a secure JavaScript and TypeScript runtime. Preact is a React-compatible low-footprint component framework. Tailwind is a world-class functional CSS library that enables the creation of optimized styles for the web. Fresh is a modern server-side web framework built for Deno. Together, these technologies provide a powerful and secure foundation for creating high-performance and scalable storefronts.",
+          "question": "What tech stack does Deco use?"
+        },
+        {
+          "answer": "Deco leverages on cutting-edge technologies such as server-side rendering and global edge infrastructure to ensure fast website performance.",
+          "question": "How does Deco enable fast websites?"
+        },
+        {
+          "answer": "Deco's implementation process involves migrating the front-end implementation of an e-commerce store to Deco's tech stack. This migration can be carried out by one of Deco's partner agencies, an independent freelancer, or a developer within the client's own team. The duration of the implementation process typically ranges between 2 weeks and 2 months, depending on the complexity of the store.",
+          "question": "How is deco’s implementation process?"
+        },
+        {
+          "answer": "Join our community on Discord to learn more about deco.cx or get in touch with our sales team for more details.",
+          "question": "How can I get more details on the platform?"
+        }
+      ],
+      "__resolveType": "site/sections/Faq.tsx"
+    },
+    {
+      "__resolveType": "[en] calculator light mode"
+    },
+    {
+      "__resolveType": "[en] calculator blocks"
+    },
+    {
+      "form": {
+        "action": "#",
+        "method": "get"
+      },
+      "href": "/en/contact-us",
+      "name": "Name",
+      "email": "Work e-mail",
+      "button": "Schedule a demo",
+      "linkedin": "LinkedIn",
+      "mainText": "Ready to delight your customers?",
+      "position": "Position",
+      "buttonText": "Get in touch",
+      "placeholder": "Enter your work email",
+      "__resolveType": "site/sections/Delight.tsx"
+    },
+    {
+      "__resolveType": "[en] Footer"
+    },
+    {
+      "__resolveType": "site/sections/FooterBigLogo.tsx"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

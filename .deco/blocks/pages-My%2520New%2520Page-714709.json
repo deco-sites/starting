@@ -1,1 +1,15 @@
-{"name":"My New Page","path":"/example-path","sections":[{"__resolveType":"deco-sites/hackathon-10-23/sections/Head.tsx","title":"deco.cx - Hackathon 4a Edição Black Friday","description":"De 31/10 a 05/11 - Inscreva-se e concorra a R$ 20k em prêmios","url":"https://www.deco.cx/hackathon4","imageUrl":"https://hackathon-10-23.deco.site/meta-hackathon-4.png?a=1","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/fccbe63f-d42c-4090-92df-09363fe3fb72"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "My New Page",
+  "path": "/example-path",
+  "sections": [
+    {
+      "__resolveType": "deco-sites/hackathon-10-23/sections/Head.tsx",
+      "title": "deco.cx - Hackathon 4a Edição Black Friday",
+      "description": "De 31/10 a 05/11 - Inscreva-se e concorra a R$ 20k em prêmios",
+      "url": "https://www.deco.cx/hackathon4",
+      "imageUrl": "https://hackathon-10-23.deco.site/meta-hackathon-4.png?a=1",
+      "image": "https://assets.decocache.com/starting/5a0ac933-fd9c-4322-ba31-24b80a4241bd/1742490912374-fccbe63f-d42c-4090-92df-09363fe3fb72"
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

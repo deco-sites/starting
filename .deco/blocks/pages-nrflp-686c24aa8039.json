@@ -13,7 +13,7 @@
             "__resolveType": "GTM"
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d3a9fccc-5ed8-4984-82a6-0b0a1a01dffc",
+            "image": "https://assets.decocache.com/starting/19de033a-af8d-4c10-809b-1be04c43e2db/1742490675425-d3a9fccc-5ed8-4984-82a6-0b0a1a01dffc",
             "title": "High-Performance Web Dev with deco.cx - decoCamp",
             "description": "Learn how to deploy high-performances web experiences become the Elite Web ",
             "__resolveType": "deco-sites/std/sections/SEO.tsx"
@@ -99,7 +99,7 @@
                 "buttonLabel": "Check the Requirements"
               },
               "title": "<p>High-Performance<br>Web Dev with<span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\"> <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">deco.cx</span></span></p>",
-              "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/0962d927-5796-4b24-bab8-6588dd2585bb",
+              "video": "https://assets.decocache.com/starting/dd7b7d3b-156d-41f7-afc0-7f270973df50/1742490677711-0962d927-5796-4b24-bab8-6588dd2585bb",
               "button": {
                 "id": "bt-click-enroll-1",
                 "href": "#prices-section",
@@ -119,22 +119,22 @@
             "props": {
               "items": [
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/22c5637f-a952-4fe8-8c22-f2cd53f14ec4",
+                  "icon": "https://assets.decocache.com/starting/139d59cb-bc25-48a4-8bdb-13f1089a7591/1742490679246-22c5637f-a952-4fe8-8c22-f2cd53f14ec4",
                   "title": "TypeScript, JSX, Tailwind ",
                   "subTitle": "Stack we will use"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0cb87a96-40ef-49e0-ab18-c7f2317d76cc",
+                  "icon": "https://assets.decocache.com/starting/bd964383-2303-48b2-a1a0-3f1f66d805c3/1742490680467-0cb87a96-40ef-49e0-ab18-c7f2317d76cc",
                   "title": "Portuguese and English",
                   "subTitle": "Language"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/a9b63e44-031c-4aa7-8349-d6f786d97e3c",
+                  "icon": "https://assets.decocache.com/starting/86d1ed37-1004-4688-8c01-4b8f015347fb/1742490681671-a9b63e44-031c-4aa7-8349-d6f786d97e3c",
                   "title": "Intermediate",
                   "subTitle": "Recommended Experience"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/66141bbe-ebde-410e-b575-2916c870c7fb",
+                  "icon": "https://assets.decocache.com/starting/71d20d82-bc8f-46ce-9eae-34cfb6301b7e/1742490683326-66141bbe-ebde-410e-b575-2916c870c7fb",
                   "title": "15h of video content",
                   "subTitle": "3 weeks, 5h per week"
                 }
@@ -148,32 +148,32 @@
               "subtitle": "<p><span style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\">...Yet, the supply of developers equipped to deliver these needs lags far behind.</span></p>",
               "cardProblem": [
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/d4f7f0db-7eed-4cce-b4c0-f40457abee05",
+                  "icon": "https://assets.decocache.com/starting/9d459c89-34ac-4afb-a636-fb54ade2e5be/1742490684527-d4f7f0db-7eed-4cce-b4c0-f40457abee05",
                   "title": "Slow Performance",
                   "content": "<p>Achieving near-instantaneous load times remains a demanding challenge, critical for user retention.</p>"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/1f418f4a-793a-4bc9-aa63-9b145a99aaaf",
+                  "icon": "https://assets.decocache.com/starting/86082eb3-ac5b-4241-8d24-c83c8565c92f/1742490685671-1f418f4a-793a-4bc9-aa63-9b145a99aaaf",
                   "title": "Hard to Personalize",
                   "content": "<p>Tailoring content to resonate with each visitor's unique preferences is a nuanced art few have mastered.</p>"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/4815a11d-22dd-4625-afa8-3eb7c9a2036d",
+                  "icon": "https://assets.decocache.com/starting/017b3910-5c3c-414e-956f-ae4bd898cbec/1742490686955-4815a11d-22dd-4625-afa8-3eb7c9a2036d",
                   "title": "Poor Collaboration",
                   "content": "<p>Developers rarely build websites that enable marketing teams and other stakeholders to manage and update with ease.</p>"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/b312ca82-6f38-4dc9-a37d-46d510b95185",
+                  "icon": "https://assets.decocache.com/starting/962d9398-5f63-4841-b9ae-0b6eb35c5a4b/1742490688578-b312ca82-6f38-4dc9-a37d-46d510b95185",
                   "title": "Overwhelming Choices",
                   "content": "<p>Selecting the right stack from an ever-expanding arsenal is daunting yet essential for high-performance outcomes.</p>"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/bde0b27d-11e6-48ec-b223-184731f2c487",
+                  "icon": "https://assets.decocache.com/starting/7de4a44d-86c3-4eae-8b32-4d3c4075bb49/1742490689875-bde0b27d-11e6-48ec-b223-184731f2c487",
                   "title": "Skill Upgradation",
                   "content": "<p>Staying current with the evolving web development landscape is hard without a clear direction or mentorship.</p>"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/a5e2dd88-732b-4f68-bcdc-35a5d2d762ab",
+                  "icon": "https://assets.decocache.com/starting/d4df05dd-c9e9-40a3-86af-26462b48b75b/1742490691026-a5e2dd88-732b-4f68-bcdc-35a5d2d762ab",
                   "title": "Integration Overload",
                   "content": "<p>Merging various platforms and tools into a cohesive system is complex, often hindering developer productivity.</p>"
                 }
@@ -277,22 +277,22 @@
               "title": "<p>How it works</p>",
               "cardWorks": [
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/b7b7f2e6-bf3a-4d2e-bb4e-a988ac406e6b",
+                  "icon": "https://assets.decocache.com/starting/29806b5e-3cce-4818-b32f-bbf3177020da/1742490692259-b7b7f2e6-bf3a-4d2e-bb4e-a988ac406e6b",
                   "title": "<p>Watch <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Pre-Recorded</span> Video Classes</p>",
                   "content": "<p>Every week day we will launch a new video (60 min long), you can watch by yourself or join our watch party at 6pm.</p>"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/4fddb2dd-ac91-4d32-93da-676dbb914d38",
+                  "icon": "https://assets.decocache.com/starting/1b65e1a5-da34-4565-a17c-f1a91dacb7e4/1742490693664-4fddb2dd-ac91-4d32-93da-676dbb914d38",
                   "title": "<p>Do your&nbsp;<span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Homework Exercises</span></p>",
                   "content": "<p>Learn by doing. By the end of every video you will also get a suggestion of an exercise to help you consolidate your learnings.</p>"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/15c854ac-fe2e-4156-bcae-d56935dcf16a",
+                  "icon": "https://assets.decocache.com/starting/2b673a6b-8401-43fb-8a06-10e0953435e7/1742490694815-15c854ac-fe2e-4156-bcae-d56935dcf16a",
                   "title": "<p>Join <span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Live Coding Sessions</span> With Mentors</p>",
                   "content": "<p>Right after the watch party, the respective mentor will host a live coding session that showcases the next proposed exercise.</p>"
                 },
                 {
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/b5191791-5756-4d3c-b96b-4a022e08bfb7",
+                  "icon": "https://assets.decocache.com/starting/657e087e-5d13-44cb-9cee-6e4d1cca4cc0/1742490696007-b5191791-5756-4d3c-b96b-4a022e08bfb7",
                   "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\"><span style=\"color: rgb(236, 240, 241);\" data-mce-style=\"color: rgb(236, 240, 241);\">Submit your Work</span> and Become a Certified Partner</span></p>",
                   "content": "<p>At the end of decoCamp, you can choose to submit the work done and get certified.&nbsp;&nbsp;</p>"
                 }
@@ -307,7 +307,7 @@
                 {
                   "image": {
                     "alt": "Matheus Gaudêncio",
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/a09ff2fe-a610-4397-a885-cce2b87dff3f"
+                    "src": "https://assets.decocache.com/starting/e4c75b94-40ba-4b05-9a5d-d12604a334a2/1742490697309-a09ff2fe-a610-4397-a885-cce2b87dff3f"
                   },
                   "content": "<p>As the founding software engineer at deco.cx, Gaudencio has spearheaded educational initiatives and provided crucial support. Prior to this role, he served as a licensed computer science teacher at UFCG, where he took on responsibilities for chairs in web development and infrastructure. Additionally, Gaudencio led Public-Private Partnership (PPP) projects with industry giants like Lenovo and VTEX. With a decade-long tenure at UFCG, Matheus impacted the lives of over 1000 students.</p>",
                   "contacts": [
@@ -330,7 +330,7 @@
                 {
                   "image": {
                     "alt": "Tiago Gimenes",
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/106dc900-5175-4786-8503-ef819efddb36"
+                    "src": "https://assets.decocache.com/starting/2f0ce3d6-3ce1-4593-b880-71426e0a0e68/1742490698517-106dc900-5175-4786-8503-ef819efddb36"
                   },
                   "content": "<p>Tiago is a software developer with a solid academic background, having graduated from Ecole Polytechnique in Paris and obtained a master's degree in Artificial Intelligence from HKUST. Over the past six years, he has dedicated his expertise to web development and optimizing frontend performance at leading ecommerce solutions. His journey reflects a commitment to staying updated with technological advances, enabling him to navigate the dynamic field of software development.</p>",
                   "contacts": [
@@ -349,7 +349,7 @@
                 {
                   "image": {
                     "alt": "Luciano Junior",
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4391/38a43da0-02a5-4070-9198-99484acd7dae"
+                    "src": "https://assets.decocache.com/starting/eac9d810-540f-4cda-bd9b-602780f717d9/1742490700121-38a43da0-02a5-4070-9198-99484acd7dae"
                   },
                   "content": "<p>Luciano Júnior, a.k.a <strong>Lucis,&nbsp;</strong>has been coding since he was 7 and is passionate about creating simple solutions of make people's lives better. He is an advocate of the Web and has experience in building multi-tenant scalable applications, especially with his favorite language: Typescript. Lucis is also passionate about education, having mentored and lectured in his area since his college degree in Computer Science at UFCG. He follows the mantra \"Simplicity is the ultimate sophistication\".</p>",
                   "contacts": [
@@ -375,7 +375,7 @@
                 {
                   "image": {
                     "alt": "hericles-emanuel",
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d2357200-5258-4cff-b758-9e2caab4d979"
+                    "src": "https://assets.decocache.com/starting/067d4854-b3f2-4dd4-8335-69da1c7ec728/1742490701342-d2357200-5258-4cff-b758-9e2caab4d979"
                   },
                   "content": "<p>Héricles is a software engineer dedicated to enhancing user experiences through UI/UX development, styling, and web animations. Grounded in a solid foundation from UFCG, he infuses his work with a blend of technical expertise and creative innovation. Over the past few years, he has also been actively involved in contributing to and maintaining open-source projects across various computer science fields while remaining committed to crafting visually captivating designs that not only meet functional needs but also inspire and delight users.</p>",
                   "contacts": [
@@ -394,7 +394,7 @@
                 {
                   "image": {
                     "alt": "Guilherme Rodrigues",
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/37723d07-665d-4603-9633-1b798f4ff79e"
+                    "src": "https://assets.decocache.com/starting/62c7bf57-bcc0-4e81-9ebf-32a3932a9d25/1742490702930-37723d07-665d-4603-9633-1b798f4ff79e"
                   },
                   "content": "<p>Guilherme Rodrigues, co-founder and CEO of Deco.cx, is a distinguished software engineer with a robust background in computer science from PUC-Rio. His innovative work includes pioneering one of Brazil's first taxi apps and making significant contributions to the growth of VTEX, enhancing e-commerce across Latin America. Guilherme is dedicated to nurturing the next wave of tech talent, using his extensive experience to foster innovation and drive excellence in web development.</p>",
                   "contacts": [
@@ -417,7 +417,7 @@
                 {
                   "image": {
                     "alt": "A picture of Viktor Marinho",
-                    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d11e4aaa-1374-4861-b955-17a2c9800ac4"
+                    "src": "https://assets.decocache.com/starting/a4d02731-07f7-49de-9208-270de1a7aafe/1742490704224-d11e4aaa-1374-4861-b955-17a2c9800ac4"
                   },
                   "content": "<p>Viktor is a software developer with a passion for crafting innovative solutions to complex problems. Commited to continuous learning and improvement, he is dedicated to staying abreast of the latest technologies and industry trends, always seeking opportunities to apply those cutting-edge tools to real-world problems.</p><p><br></p>",
                   "contacts": [
@@ -782,14 +782,14 @@
               {
                 "id": "component-library",
                 "key": "Component Library",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/181a8f78-ca09-4a32-9e7b-b7a1c32de83b",
+                "image": "https://assets.decocache.com/starting/d03d2baa-e98b-4f3a-9884-825f28f18004/1742490957988-181a8f78-ca09-4a32-9e7b-b7a1c32de83b",
                 "title": "Lightning-fast UI component library",
                 "subtitle": "Speed up your building process. With our intuitive visual editor, embrace rapid design and deployment using pre-built, universally adaptable UI components."
               },
               {
                 "id": "design-system",
                 "key": "Design System",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c96a31e0-86fc-4729-af2f-73d108604651",
+                "image": "https://assets.decocache.com/starting/3319435d-b778-4d4a-a4db-5b2aa467eb09/1742490959559-c96a31e0-86fc-4729-af2f-73d108604651",
                 "title": "Native design system builder",
                 "subtitle": "Update your site's style in a snap. Easily tweak colors, button styles, and typography to create a distinct on-brand look with just a few clicks."
               },
@@ -802,7 +802,7 @@
               {
                 "id": "full-code-editing",
                 "key": "Full Code Editing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0a7a8bfc-06f2-46d0-8e01-e375acf3356e",
+                "image": "https://assets.decocache.com/starting/406208b4-d958-483f-9f76-73d0a48b27dd/1742490961226-0a7a8bfc-06f2-46d0-8e01-e375acf3356e",
                 "title": "Full code control in the browser",
                 "subtitle": "Accelerate web development with deco.cx's integrated code editor made for Preact, Tailwind and Typescript. Edit directly in-browser, sync with any Git, and leverage our AI co-pilot for seamless coding."
               },
@@ -815,21 +815,21 @@
               {
                 "id": "integrate-extend",
                 "key": "Integrate & Extend",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c87b9d9a-b856-429b-9419-5550184f3afd",
+                "image": "https://assets.decocache.com/starting/92057f91-c042-4573-adc7-750327ec7e7a/1742490963545-c87b9d9a-b856-429b-9419-5550184f3afd",
                 "title": "One-click-install apps and integrations",
                 "subtitle": "Enhance your site effortlessly through our deco Hub. Access a vast library of themes, apps, and templates that connect with any backend API."
               },
               {
                 "id": "multivariate-testing",
                 "key": "Multivariate Testing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5660489b-fb47-45e5-af7f-36a9576839cc",
+                "image": "https://assets.decocache.com/starting/bd17b368-a434-4377-99fa-dc66d065d718/1742490965364-5660489b-fb47-45e5-af7f-36a9576839cc",
                 "title": "Personalize your content for specific audiences",
                 "subtitle": "Go beyond A/B testing. Create experiments, campaigns and targeted experiences backed by data-driven insights."
               },
               {
                 "id": "monitoring",
                 "key": "Monitoring",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d9950545-c882-4e1c-beb0-637eb732b4dd",
+                "image": "https://assets.decocache.com/starting/df2e7ca6-a07b-4c6b-9b0e-b63441191344/1742490967285-d9950545-c882-4e1c-beb0-637eb732b4dd",
                 "title": "In-Depth Web Analytics & Observability",
                 "subtitle": "Unlock advanced audience insights and comprehensive system observability for optimal performance."
               }
@@ -837,7 +837,7 @@
             "__resolveType": "site/sections/NRF/EditorMobile.tsx"
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/121143f2-e825-44d4-99de-2ab04e97002d",
+            "image": "https://assets.decocache.com/starting/da494700-dce8-4a46-ac90-048f68bf733b/1742490969362-121143f2-e825-44d4-99de-2ab04e97002d",
             "title": "100% managed global edge infrastructure",
             "placement": "right",
             "description": "Choose between self-hosting or using managed global edge infrastructure that deploys your code in 35 regions around the globe, ensuring the lowest server latency possible and auto-scaling as you grow.",
@@ -896,30 +896,30 @@
             },
             "tabs": [
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5986d39-b570-4c80-8af5-597a67d83b5f",
+                "image": "https://assets.decocache.com/starting/9fab1ad5-c764-4e4f-8e54-e74d47665343/1742490592785-b5986d39-b570-4c80-8af5-597a67d83b5f",
                 "title": "Section Library"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e61ea2d8-8bb6-4498-ab89-c179e78264b1",
+                "image": "https://assets.decocache.com/starting/be50f946-b1f0-47d9-ba20-4c2364314962/1742490594770-e61ea2d8-8bb6-4498-ab89-c179e78264b1",
                 "title": "No Code Editor"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/72277e92-9d2e-4237-b1d7-22235bcd3798",
+                "image": "https://assets.decocache.com/starting/a45febc9-b291-41ce-bba6-d894d2fba813/1742490596609-72277e92-9d2e-4237-b1d7-22235bcd3798",
                 "title": "Full Code Editor"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d414d1af-1442-4127-83c4-5dbc154c967a",
+                "image": "https://assets.decocache.com/starting/08929d4c-0016-416d-aec6-ceb83c07883c/1742490599724-d414d1af-1442-4127-83c4-5dbc154c967a",
                 "title": "Web Analytics"
               },
               {
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6a44931b-316f-4e71-b597-b42847a6b11b",
+                "image": "https://assets.decocache.com/starting/f0285992-f3ef-478e-b7a6-d8da4b2e46b3/1742490602393-6a44931b-316f-4e71-b597-b42847a6b11b",
                 "title": "Monitoring"
               }
             ],
             "alert": {
               "href": "https://techcrunch.com/2024/01/09/deco-cx-2-2m-brand-website-e-commerce",
               "text": "\"Deco.cx grabs $2.2M to bring simplicity back to brand website creation\"",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ad26bee3-dcda-4796-9077-9f81050f7a75",
+              "image": "https://assets.decocache.com/starting/e86e2f93-c875-43c4-8607-d07faa1808e0/1742491241989-ad26bee3-dcda-4796-9077-9f81050f7a75",
               "mobileText": "As featured on TechCrunch"
             },
             "title": "<h1>Your first&nbsp;and last</h1><h1><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">web editor</span></h1>",
@@ -941,14 +941,14 @@
               {
                 "id": "component-library",
                 "key": "Component Library",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/181a8f78-ca09-4a32-9e7b-b7a1c32de83b",
+                "image": "https://assets.decocache.com/starting/d03d2baa-e98b-4f3a-9884-825f28f18004/1742490957988-181a8f78-ca09-4a32-9e7b-b7a1c32de83b",
                 "title": "Lightning-fast UI component library",
                 "subtitle": "Speed up your building process. With our intuitive visual editor, embrace rapid design and deployment using pre-built, universally adaptable UI components."
               },
               {
                 "id": "design-system",
                 "key": "Design System",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c96a31e0-86fc-4729-af2f-73d108604651",
+                "image": "https://assets.decocache.com/starting/3319435d-b778-4d4a-a4db-5b2aa467eb09/1742490959559-c96a31e0-86fc-4729-af2f-73d108604651",
                 "title": "Native design system builder",
                 "subtitle": "Update your site's style in a snap. Easily tweak colors, button styles, and typography to create a distinct on-brand look with just a few clicks."
               },
@@ -961,7 +961,7 @@
               {
                 "id": "full-code-editing",
                 "key": "Full Code Editing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0a7a8bfc-06f2-46d0-8e01-e375acf3356e",
+                "image": "https://assets.decocache.com/starting/406208b4-d958-483f-9f76-73d0a48b27dd/1742490961226-0a7a8bfc-06f2-46d0-8e01-e375acf3356e",
                 "title": "Full code control in the browser",
                 "subtitle": "Accelerate web development with deco.cx's integrated code editor made for Preact, Tailwind and Typescript. Edit directly in-browser, sync with any Git, and leverage our AI co-pilot for seamless coding."
               },
@@ -974,21 +974,21 @@
               {
                 "id": "integrate-extend",
                 "key": "Integrate & Extend",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c87b9d9a-b856-429b-9419-5550184f3afd",
+                "image": "https://assets.decocache.com/starting/92057f91-c042-4573-adc7-750327ec7e7a/1742490963545-c87b9d9a-b856-429b-9419-5550184f3afd",
                 "title": "One-click-install apps and integrations",
                 "subtitle": "Enhance your site effortlessly through our deco Hub. Access a vast library of themes, apps, and templates that connect with any backend API."
               },
               {
                 "id": "multivariate-testing",
                 "key": "Multivariate Testing",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5660489b-fb47-45e5-af7f-36a9576839cc",
+                "image": "https://assets.decocache.com/starting/bd17b368-a434-4377-99fa-dc66d065d718/1742490965364-5660489b-fb47-45e5-af7f-36a9576839cc",
                 "title": "Personalize content for specific audiences",
                 "subtitle": "Go beyond A/B testing. Create experiments, campaigns and targeted experiences backed by data-driven insights."
               },
               {
                 "id": "monitoring",
                 "key": "Monitoring",
-                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d9950545-c882-4e1c-beb0-637eb732b4dd",
+                "image": "https://assets.decocache.com/starting/df2e7ca6-a07b-4c6b-9b0e-b63441191344/1742490967285-d9950545-c882-4e1c-beb0-637eb732b4dd",
                 "title": "In-depth web analytics & observability",
                 "subtitle": "Unlock advanced audience insights and comprehensive system observability for optimal performance."
               }
@@ -996,7 +996,7 @@
             "__resolveType": "site/sections/NRF/Editor.tsx"
           },
           {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/121143f2-e825-44d4-99de-2ab04e97002d",
+            "image": "https://assets.decocache.com/starting/da494700-dce8-4a46-ac90-048f68bf733b/1742490969362-121143f2-e825-44d4-99de-2ab04e97002d",
             "title": "100% managed global edge infrastructure",
             "placement": "right",
             "description": "Choose between self-hosting or using managed global edge infrastructure that deploys your code in 35 regions around the globe, ensuring the lowest server latency possible and auto-scaling as you grow.",

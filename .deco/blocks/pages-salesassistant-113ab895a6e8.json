@@ -1,1 +1,295 @@
-{"name":"AI Assistant","path":"/ai-assistant","sections":[{"__resolveType":"GTM"},{"__resolveType":"HeaderV2","githubBarText":{"0":"<","1":"p","2":">","3":"⭐","4":" ","5":"6","6":"3","7":" ","8":"—","9":" ","10":"S","11":"t","12":"a","13":"r","14":" ","15":"<","16":"a","17":" ","18":"c","19":"l","20":"a","21":"s","22":"s","23":"=","24":"\"","25":"u","26":"n","27":"d","28":"e","29":"r","30":"l","31":"i","32":"n","33":"e","34":"\"","35":" ","36":"h","37":"r","38":"e","39":"f","40":"=","41":"\"","42":"h","43":"t","44":"t","45":"p","46":"s","47":":","48":"/","49":"/","50":"g","51":"i","52":"t","53":"h","54":"u","55":"b","56":".","57":"c","58":"o","59":"m","60":"/","61":"d","62":"e","63":"c","64":"o","65":"-","66":"c","67":"x","68":"/","69":"d","70":"e","71":"c","72":"o","73":"\"","74":" ","75":"t","76":"a","77":"r","78":"g","79":"e","80":"t","81":"=","82":"\"","83":"_","84":"b","85":"l","86":"a","87":"n","88":"k","89":"\"","90":">","91":"d","92":"e","93":"c","94":"o","95":".","96":"c","97":"x","98":" ","99":"o","100":"n","101":" ","102":"G","103":"i","104":"t","105":"h","106":"u","107":"b","108":"<","109":"/","110":"a","111":">","112":" ","113":"a","114":"n","115":"d","116":" ","117":"h","118":"e","119":"l","120":"p","121":" ","122":"o","123":"t","124":"h","125":"e","126":"r","127":"s","128":" ","129":"d","130":"i","131":"s","132":"c","133":"o","134":"v","135":"e","136":"r","137":" ","138":"o","139":"u","140":"r","141":" ","142":"p","143":"r","144":"o","145":"d","146":"u","147":"c","148":"t","149":"!","150":"<","151":"/","152":"p","153":">","mobile":"<p>⭐ 94 — <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>Star us on Github</u></a>.</p>","desktop":"<p>⭐ 94 — Star <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>deco.cx on Github</u></a> and help others discover our product!</p>"}},{"url":"https://deco.cx/pt","title":"AI Personal Shopping Assistant - deco.cx Headless Frontend Platform","imageUrl":"/decocx-meta-pt.png","styleUrls":[],"themeColor":"#000","description":"Boost your online store sales with a multilingual GTP-powered AI assistant that understands your business with text, images or audio.","__resolveType":"site/sections/Head.tsx"},{"cta":[{"id":"bt-click-contact","href":"https://www.deco.cx/en/contact-us","text":"Book a demo","variant":"Normal"}],"title":"<h1>The Unlimited AI Sales Assistant</h1>","placement":"left","description":"Empower your online store with a multilingual, GPT-powered AI assistant that understands text, images, and audio. Make your customers feel like they are always talking to your best salesperson.","__resolveType":"site/sections/NRF/HeroFlat.tsx","showSpecialNrfVideo":true},{"lines":["Deco.cx's AI Assistant is a GPT-powered, ","multilingual sales genius ","trained on your product database.","It is fully personalized, ","integrates in minutes with any commerce platform","and helps your customers buy what they need. "],"animate":false,"__resolveType":"site/sections/NRF/TextLines.tsx","animateOnScroll":true},{"cards":[{"icon":"DecoIcon","text":"Leverage the power of AI to understand customer needs, increasing sales and providing a unique buying experience. ","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7d35d699-013b-4839-9d1b-c4b6000f4b41","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Boost Sales</span><br>at the Speed of AI</p>"},{"icon":"ArrowRight","text":"Automate routine questions and tasks, freeing your staff to focus on more complex and revenue-generating activities.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/73d029da-24a1-4050-a6e0-78572c977cd7","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Enhance Operational</span><br>Efficiency</p>"},{"icon":"DecoIcon","text":"Offer tailored product recommendations and advices, making every customer feel deeply connected to your brand.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7aaa23e6-a195-4697-ac90-86d64d98be1f","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Personalize Your</span><br>Shopping Experience</p>"}],"title":"Automate your sales workflow in minutes","__resolveType":"site/sections/NRF/FeaturesWithImage.tsx"},{"cta":{},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8a0aec43-e0a8-4c6e-95c4-ed343f79272f","title":"On-Brand and On-Data","placement":"left","description":"Fine-tune your AI assistant using your first-party data, crafting custom responses that resonate with your brand's voice.  Personalize the look and feel of the chat interface by adjusting colors and design, ensuring it aligns seamlessly with your brand aesthetics. ","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{"href":"#"},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a8d2cf34-f63b-4326-9237-52f9d10a3ab3","title":"Help your customers 24/7. Anywhere, in every language.","placement":"right","description":"Deco.cx's Assistant is your tireless sales concierge, operating round the clock in multiple languages. It employs sophisticated natural language processing to interpret and respond authentically to diverse customer queries.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/48ac0ea0-2285-4d69-85a7-e6873a617852","title":"Universal commerce platform integration","placement":"left","description":"Seamlessly connect with your favorite e-commerce platform. Our pre-built loaders ensure smooth integration, enhancing your store's capabilities without any hassle.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{"text":"Button"},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b2c828a5-7a8b-4be4-af67-6e6bcb2b8e59","title":"Text. Image. Audio. Everything.","placement":"right","description":"Deco.cx's assistant isn’t just about text. It can process images and audio sent by customers, recognizing product features and matching them to items in your store, and enhancing the shopping experience with visual interactivity.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{"text":"Button"},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4851bb24-1901-4190-9fb8-7e3f6cd4eaad","title":"Real-Time Analytics Insights","placement":"left","description":"Gain an immediate understanding of customer behaviors and preferences. This powerful tool tracks and analyzes customer interactions, providing actionable insights that help you make informed decisions, optimize your store's performance, and personalize the shopping experience on the fly.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":[{"href":"https://www.deco.cx/en/contact-us","text":"Get Early Access","variant":"Normal"}],"text":"Boost Your Sales with AI","__resolveType":"site/sections/NRF/CallToAction.tsx"},{"__resolveType":"Deco Footer [EN]"},{"__resolveType":"site/sections/NRF/Grid.tsx"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "AI Assistant",
+  "path": "/ai-assistant",
+  "sections": [
+    {
+      "__resolveType": "GTM"
+    },
+    {
+      "__resolveType": "HeaderV2",
+      "githubBarText": {
+        "0": "<",
+        "1": "p",
+        "2": ">",
+        "3": "⭐",
+        "4": " ",
+        "5": "6",
+        "6": "3",
+        "7": " ",
+        "8": "—",
+        "9": " ",
+        "10": "S",
+        "11": "t",
+        "12": "a",
+        "13": "r",
+        "14": " ",
+        "15": "<",
+        "16": "a",
+        "17": " ",
+        "18": "c",
+        "19": "l",
+        "20": "a",
+        "21": "s",
+        "22": "s",
+        "23": "=",
+        "24": "\"",
+        "25": "u",
+        "26": "n",
+        "27": "d",
+        "28": "e",
+        "29": "r",
+        "30": "l",
+        "31": "i",
+        "32": "n",
+        "33": "e",
+        "34": "\"",
+        "35": " ",
+        "36": "h",
+        "37": "r",
+        "38": "e",
+        "39": "f",
+        "40": "=",
+        "41": "\"",
+        "42": "h",
+        "43": "t",
+        "44": "t",
+        "45": "p",
+        "46": "s",
+        "47": ":",
+        "48": "/",
+        "49": "/",
+        "50": "g",
+        "51": "i",
+        "52": "t",
+        "53": "h",
+        "54": "u",
+        "55": "b",
+        "56": ".",
+        "57": "c",
+        "58": "o",
+        "59": "m",
+        "60": "/",
+        "61": "d",
+        "62": "e",
+        "63": "c",
+        "64": "o",
+        "65": "-",
+        "66": "c",
+        "67": "x",
+        "68": "/",
+        "69": "d",
+        "70": "e",
+        "71": "c",
+        "72": "o",
+        "73": "\"",
+        "74": " ",
+        "75": "t",
+        "76": "a",
+        "77": "r",
+        "78": "g",
+        "79": "e",
+        "80": "t",
+        "81": "=",
+        "82": "\"",
+        "83": "_",
+        "84": "b",
+        "85": "l",
+        "86": "a",
+        "87": "n",
+        "88": "k",
+        "89": "\"",
+        "90": ">",
+        "91": "d",
+        "92": "e",
+        "93": "c",
+        "94": "o",
+        "95": ".",
+        "96": "c",
+        "97": "x",
+        "98": " ",
+        "99": "o",
+        "100": "n",
+        "101": " ",
+        "102": "G",
+        "103": "i",
+        "104": "t",
+        "105": "h",
+        "106": "u",
+        "107": "b",
+        "108": "<",
+        "109": "/",
+        "110": "a",
+        "111": ">",
+        "112": " ",
+        "113": "a",
+        "114": "n",
+        "115": "d",
+        "116": " ",
+        "117": "h",
+        "118": "e",
+        "119": "l",
+        "120": "p",
+        "121": " ",
+        "122": "o",
+        "123": "t",
+        "124": "h",
+        "125": "e",
+        "126": "r",
+        "127": "s",
+        "128": " ",
+        "129": "d",
+        "130": "i",
+        "131": "s",
+        "132": "c",
+        "133": "o",
+        "134": "v",
+        "135": "e",
+        "136": "r",
+        "137": " ",
+        "138": "o",
+        "139": "u",
+        "140": "r",
+        "141": " ",
+        "142": "p",
+        "143": "r",
+        "144": "o",
+        "145": "d",
+        "146": "u",
+        "147": "c",
+        "148": "t",
+        "149": "!",
+        "150": "<",
+        "151": "/",
+        "152": "p",
+        "153": ">",
+        "mobile": "<p>⭐ 94 — <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>Star us on Github</u></a>.</p>",
+        "desktop": "<p>⭐ 94 — Star <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>deco.cx on Github</u></a> and help others discover our product!</p>"
+      }
+    },
+    {
+      "url": "https://deco.cx/pt",
+      "title": "AI Personal Shopping Assistant - deco.cx Headless Frontend Platform",
+      "imageUrl": "/decocx-meta-pt.png",
+      "styleUrls": [],
+      "themeColor": "#000",
+      "description": "Boost your online store sales with a multilingual GTP-powered AI assistant that understands your business with text, images or audio.",
+      "__resolveType": "site/sections/Head.tsx"
+    },
+    {
+      "cta": [
+        {
+          "id": "bt-click-contact",
+          "href": "https://www.deco.cx/en/contact-us",
+          "text": "Book a demo",
+          "variant": "Normal"
+        }
+      ],
+      "title": "<h1>The Unlimited AI Sales Assistant</h1>",
+      "placement": "left",
+      "description": "Empower your online store with a multilingual, GPT-powered AI assistant that understands text, images, and audio. Make your customers feel like they are always talking to your best salesperson.",
+      "__resolveType": "site/sections/NRF/HeroFlat.tsx",
+      "showSpecialNrfVideo": true
+    },
+    {
+      "lines": [
+        "Deco.cx's AI Assistant is a GPT-powered, ",
+        "multilingual sales genius ",
+        "trained on your product database.",
+        "It is fully personalized, ",
+        "integrates in minutes with any commerce platform",
+        "and helps your customers buy what they need. "
+      ],
+      "animate": false,
+      "__resolveType": "site/sections/NRF/TextLines.tsx",
+      "animateOnScroll": true
+    },
+    {
+      "cards": [
+        {
+          "icon": "DecoIcon",
+          "text": "Leverage the power of AI to understand customer needs, increasing sales and providing a unique buying experience. ",
+          "image": "https://assets.decocache.com/starting/eaf1b3bc-e58c-46e7-9177-1eacc3b3640b/1742490633226-7d35d699-013b-4839-9d1b-c4b6000f4b41",
+          "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Boost Sales</span><br>at the Speed of AI</p>"
+        },
+        {
+          "icon": "ArrowRight",
+          "text": "Automate routine questions and tasks, freeing your staff to focus on more complex and revenue-generating activities.",
+          "image": "https://assets.decocache.com/starting/9134f14b-8a68-492c-8a20-3164dcd7e15b/1742490634429-73d029da-24a1-4050-a6e0-78572c977cd7",
+          "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Enhance Operational</span><br>Efficiency</p>"
+        },
+        {
+          "icon": "DecoIcon",
+          "text": "Offer tailored product recommendations and advices, making every customer feel deeply connected to your brand.",
+          "image": "https://assets.decocache.com/starting/b8989a34-1263-488a-89ba-9d06dc0d0aea/1742490625764-7aaa23e6-a195-4697-ac90-86d64d98be1f",
+          "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Personalize Your</span><br>Shopping Experience</p>"
+        }
+      ],
+      "title": "Automate your sales workflow in minutes",
+      "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx"
+    },
+    {
+      "cta": {},
+      "image": "https://assets.decocache.com/starting/2b32d15d-9b0a-4ed2-87ca-f13181208cec/1742490636046-8a0aec43-e0a8-4c6e-95c4-ed343f79272f",
+      "title": "On-Brand and On-Data",
+      "placement": "left",
+      "description": "Fine-tune your AI assistant using your first-party data, crafting custom responses that resonate with your brand's voice.  Personalize the look and feel of the chat interface by adjusting colors and design, ensuring it aligns seamlessly with your brand aesthetics. ",
+      "__resolveType": "site/sections/NRF/ImageSection.tsx"
+    },
+    {
+      "cta": {
+        "href": "#"
+      },
+      "image": "https://assets.decocache.com/starting/0431ed05-52c9-4385-a8e5-5f251deee6e9/1742490637565-a8d2cf34-f63b-4326-9237-52f9d10a3ab3",
+      "title": "Help your customers 24/7. Anywhere, in every language.",
+      "placement": "right",
+      "description": "Deco.cx's Assistant is your tireless sales concierge, operating round the clock in multiple languages. It employs sophisticated natural language processing to interpret and respond authentically to diverse customer queries.",
+      "__resolveType": "site/sections/NRF/ImageSection.tsx"
+    },
+    {
+      "cta": {},
+      "image": "https://assets.decocache.com/starting/82486182-0175-44c1-b3ed-255cb299a6a3/1742490639033-48ac0ea0-2285-4d69-85a7-e6873a617852",
+      "title": "Universal commerce platform integration",
+      "placement": "left",
+      "description": "Seamlessly connect with your favorite e-commerce platform. Our pre-built loaders ensure smooth integration, enhancing your store's capabilities without any hassle.",
+      "__resolveType": "site/sections/NRF/ImageSection.tsx"
+    },
+    {
+      "cta": {
+        "text": "Button"
+      },
+      "image": "https://assets.decocache.com/starting/5e2c3362-6db5-416c-b910-9d0db350b665/1742490640402-b2c828a5-7a8b-4be4-af67-6e6bcb2b8e59",
+      "title": "Text. Image. Audio. Everything.",
+      "placement": "right",
+      "description": "Deco.cx's assistant isn’t just about text. It can process images and audio sent by customers, recognizing product features and matching them to items in your store, and enhancing the shopping experience with visual interactivity.",
+      "__resolveType": "site/sections/NRF/ImageSection.tsx"
+    },
+    {
+      "cta": {
+        "text": "Button"
+      },
+      "image": "https://assets.decocache.com/starting/3a58fa0d-07db-4a6e-a15e-160007cbbfda/1742490642058-4851bb24-1901-4190-9fb8-7e3f6cd4eaad",
+      "title": "Real-Time Analytics Insights",
+      "placement": "left",
+      "description": "Gain an immediate understanding of customer behaviors and preferences. This powerful tool tracks and analyzes customer interactions, providing actionable insights that help you make informed decisions, optimize your store's performance, and personalize the shopping experience on the fly.",
+      "__resolveType": "site/sections/NRF/ImageSection.tsx"
+    },
+    {
+      "cta": [
+        {
+          "href": "https://www.deco.cx/en/contact-us",
+          "text": "Get Early Access",
+          "variant": "Normal"
+        }
+      ],
+      "text": "Boost Your Sales with AI",
+      "__resolveType": "site/sections/NRF/CallToAction.tsx"
+    },
+    {
+      "__resolveType": "Deco Footer [EN]"
+    },
+    {
+      "__resolveType": "site/sections/NRF/Grid.tsx"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

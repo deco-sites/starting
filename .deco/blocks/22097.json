@@ -32,9 +32,9 @@
       "miniBanner": {
         "titleText": "Com nossa infra na edge, oferecemos uma qualidade de performance imbatível.",
         "linkedText": "Tecnologias",
-        "bannerTopImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ecce10f3-b505-4412-a239-ddbe247244db",
+        "bannerTopImage": "https://assets.decocache.com/starting/7db25964-a7e0-4543-ae1f-ff953a452a9a/1742491881655-ecce10f3-b505-4412-a239-ddbe247244db",
         "altBannerTopImage": "interface com template de um ecommerce ",
-        "bannerBottomImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4a6fdf51-c071-4b4e-b48b-ad30c3bf7c6e",
+        "bannerBottomImage": "https://assets.decocache.com/starting/f5ad5f64-1155-4ebb-8550-dc9170fc435c/1742491883986-4a6fdf51-c071-4b4e-b48b-ad30c3bf7c6e",
         "altBannerBottomImage": "interface com tecnologias otimizadas para desenvolvimento web"
       },
       "secondText": "The digital experience platform that brings performance and personalization together.",
@@ -69,27 +69,27 @@
         {
           "href": "/",
           "label": "Zeedog",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b88cc9a3-893f-4592-a088-4d3dbfee4b9e"
+          "mobile": "https://assets.decocache.com/starting/a05f6687-f5b8-4d7a-a880-62644a6610be/1742490913570-b88cc9a3-893f-4592-a088-4d3dbfee4b9e"
         },
         {
           "href": "/",
           "label": "Osklen",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/38a0e011-0b17-4626-b93f-c46022f29263"
+          "mobile": "https://assets.decocache.com/starting/c4340078-ba34-48c8-a636-83279fb8906e/1742490914743-38a0e011-0b17-4626-b93f-c46022f29263"
         },
         {
           "href": "/",
           "label": "Lojas Torra",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6aab7857-90b9-4519-8a32-9b094b08b1f9"
+          "mobile": "https://assets.decocache.com/starting/af10e019-02b8-46da-b722-47a3c84c60ef/1742490916104-6aab7857-90b9-4519-8a32-9b094b08b1f9"
         },
         {
           "href": "/",
           "label": "Uncle K",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/50840350-025e-4875-a452-ce97856abab1",
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/09bce13f-6554-4597-af40-7db5464331bf"
+          "mobile": "https://assets.decocache.com/starting/00d1c2b1-f841-46d7-bf4f-9dde17b28aef/1742490917581-50840350-025e-4875-a452-ce97856abab1",
+          "desktop": "https://assets.decocache.com/starting/51980553-21f5-4931-9fbf-ebca605313bf/1742490919147-09bce13f-6554-4597-af40-7db5464331bf"
         },
         {
           "label": "Lolja",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d9b415c3-4017-4fb6-bb00-59c9f7539125"
+          "mobile": "https://assets.decocache.com/starting/b8a876d7-e65a-4a41-8a47-7a6b1dbab4b9/1742491686489-d9b415c3-4017-4fb6-bb00-59c9f7539125"
         }
       ],
       "themeDark": true,
@@ -101,28 +101,28 @@
       "sections": [
         {
           "text": "A deco.cx oferece uma abordagem flexível e baseada em componentes para a construção de UIs. Com JSX, você pode criar e modificar seções com facilidade, possibilitando um processo de desenvolvimento mais rápido e maior capacidade de manutenção.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/81fca422-d89f-460e-bd4c-3f44924ae8ea",
+          "image": "https://assets.decocache.com/starting/442016d7-a557-4ae7-b627-a6af3477fd3d/1742491885694-81fca422-d89f-460e-bd4c-3f44924ae8ea",
           "title": "Sections",
           "subtitle": "UI personalizável com JSX",
           "imagePosition": "right"
         },
         {
           "text": "Aproveite nossa extensa biblioteca de carregadores pré-construídos para integrar seu projeto a qualquer API. A deco.cx simplifica a busca e gerenciamento de dados, permitindo que você se concentre no que realmente importa - construir ótimas experiências para o usuário.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f0eac0a6-3840-426b-82dd-49f871f4b517",
+          "image": "https://assets.decocache.com/starting/dec75ac3-78a6-44dd-977c-2e2c160858c8/1742491887315-f0eac0a6-3840-426b-82dd-49f871f4b517",
           "title": "Loaders",
           "subtitle": "Conecte a qualquer API",
           "imagePosition": "left"
         },
         {
           "text": "Implemente seus projetos instantaneamente na borda com deco.cx, garantindo tempos de carregamento ultrarrápidos e uma experiência otimizada para o usuário em todo o mundo.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5e82fb26-3878-4549-873a-243a9b4244c0",
+          "image": "https://assets.decocache.com/starting/b0d51c65-8ec0-40b1-a94a-de47c17dd1dd/1742491888962-5e82fb26-3878-4549-873a-243a9b4244c0",
           "title": "Deployment",
           "subtitle": "Deploy instantâneo na edge",
           "imagePosition": "right"
         },
         {
           "text": "Fique de olho no desempenho do seu site e identifique problemas rapidamente usando as ferramentas de monitoramento da deco.cx. Debugue e resolva problemas de forma eficiente para manter uma UX afinada.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/63d4522b-ac93-4f66-a1f6-98d7f9e7d0cc",
+          "image": "https://assets.decocache.com/starting/1542d58c-a640-473f-bee0-7386455cc632/1742491890238-63d4522b-ac93-4f66-a1f6-98d7f9e7d0cc",
           "title": "Monitoramento",
           "subtitle": "Performance e bugs",
           "imagePosition": "left"
@@ -135,19 +135,19 @@
         {
           "icon": "FastPagespeed",
           "text": "Com uma baixa curva de aprendizado, deco.cx torna o processo de aprendizagem do desenvolvimento web fácil e acessível. Com apenas o básico de HTML, CSS e JavaScript, você pode iniciar sua jornada de construir incríveis experiências na web.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ec9b0cc1-dea3-4250-b134-b6519c41384b",
+          "image": "https://assets.decocache.com/starting/8a19cc8b-3091-4844-b7bc-559b988b098b/1742491891715-ec9b0cc1-dea3-4250-b134-b6519c41384b",
           "title": "Aprenda rápido"
         },
         {
           "icon": "Sale",
           "text": "Utilize nossa biblioteca ou crie seus próprios componentes. Com uma simples linha de código você permite que um conteúdo ou uma parte do layout seja editável através do CMS.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/df32267e-a3b7-48cf-ace7-b2c89788756a",
+          "image": "https://assets.decocache.com/starting/96b91abe-e1d6-4f20-9a4a-c5f86f295cc6/1742491893169-df32267e-a3b7-48cf-ace7-b2c89788756a",
           "title": "Componentes editáveis"
         },
         {
           "icon": "FastClock",
           "text": "A deco.cx valoriza o poder do open source. Promovemos um ambiente colaborativo, permitindo que devs adaptem e estendam a plataforma para atender qualquer tipo de necessidade.",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b0b29a5d-0b3c-4962-8b47-b6e6dbdd880c",
+          "image": "https://assets.decocache.com/starting/1ab88172-0afd-4f86-ac01-7f6d54431b8c/1742491894517-b0b29a5d-0b3c-4962-8b47-b6e6dbdd880c",
           "title": "Totalmente open source"
         }
       ],
@@ -163,15 +163,15 @@
     {
       "image": {
         "imageMobile": {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc88cf59-e7a6-4971-9cef-26074e2d4114"
+          "src": "https://assets.decocache.com/starting/e0066eff-a117-452b-97e6-91a06e202618/1742491896070-dc88cf59-e7a6-4971-9cef-26074e2d4114"
         },
         "imageDesktop": {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/509ffc8f-976e-41a3-9d74-b347e4ac1adb"
+          "src": "https://assets.decocache.com/starting/370cae07-8353-4740-8939-e2297d45fb6f/1742491897506-509ffc8f-976e-41a3-9d74-b347e4ac1adb"
         }
       },
       "mainText": "Integre com o <span style=\"color: #02F67C\">mundo inteiro</span> ",
       "secondText": "De plataformas de ecommerce a qualquer outra API externa, deco.cx oferece uma biblioteca open-source com integrações nativas e reutilizáveis. Crie seu próprio workflow de integração com facilidade.",
-      "imageEffect": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91b973bf-425e-454b-8528-8d2a8bd2fd36",
+      "imageEffect": "https://assets.decocache.com/starting/df8176a2-402d-4233-a3ab-3df1db8db9fc/1742491090205-91b973bf-425e-454b-8528-8d2a8bd2fd36",
       "__resolveType": "site/sections/Integration.tsx"
     },
     {
@@ -230,11 +230,11 @@
       "secondText": "Já estamos construindo a maior comunidade de comércio eletrônico multiplataforma - da América Latina para o mundo.",
       "mainTextPt1": "Baked up by a 730+ members community",
       "mainTextPt2": " ",
-      "peopleImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71ced9e4-bdc9-437c-bea6-1ce09e7607e5",
+      "peopleImage": "https://assets.decocache.com/starting/7a236ac2-8c22-4766-9aaf-2e439aff8ca7/1742491898848-71ced9e4-bdc9-437c-bea6-1ce09e7607e5",
       "__resolveType": "site/sections/Community.tsx",
-      "blurBackground": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a8cb4a96-e2fe-405e-ac30-4f1901df6f25",
-      "blur1Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43da2f47-2eb2-4876-9faa-7409c4c1dda0",
-      "blur2Background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/44bb7e09-3493-47aa-bacf-75760b8ac6df",
+      "blurBackground": "https://assets.decocache.com/starting/721e0032-7ec7-4dad-a843-1303cc6c385a/1742491095429-a8cb4a96-e2fe-405e-ac30-4f1901df6f25",
+      "blur1Background": "https://assets.decocache.com/starting/e47d4147-09ae-42e7-9beb-febabddaac15/1742491900443-43da2f47-2eb2-4876-9faa-7409c4c1dda0",
+      "blur2Background": "https://assets.decocache.com/starting/315f9a70-f815-490e-9272-b4ef57f39818/1742491902149-44bb7e09-3493-47aa-bacf-75760b8ac6df",
       "hrefFirstButton": "/pt/community",
       "hrefSecondButton": "https://discord.gg/deco-cx",
       "labelFirstButton": "Saiba mais",

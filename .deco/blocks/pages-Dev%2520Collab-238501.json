@@ -15,7 +15,7 @@
           "text": "Reservar Agora"
         }
       ],
-      "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4f82786f-4e55-41d5-a0c9-15bbd7f2635f"
+      "background": "https://assets.decocache.com/starting/dac892ee-814a-4c22-87e8-f4c9f77859bd/1742491871862-4f82786f-4e55-41d5-a0c9-15bbd7f2635f"
     },
     {
       "__resolveType": "site/sections/DevCollab/Benefits.tsx",
@@ -45,21 +45,21 @@
           "title": "<p><span style=\"color: #02f67c\">Escolha</span><span> dos Desafios</span></p>",
           "icon": "Doc-list",
           "subtitle": "A primeira fase do Dev Collab é o mapeamento dos desafios mais empolgantes do seu time e seleção do que iremos atacar.",
-          "thumb": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8fca28e8-ac0b-4330-ac2c-b6edcdb8aea8",
+          "thumb": "https://assets.decocache.com/starting/e276c9f8-c6bb-44d7-a625-7c44b19fb11c/1742491873530-8fca28e8-ac0b-4330-ac2c-b6edcdb8aea8",
           "id": "Escolha dos desafios"
         },
         {
           "title": "<p><span style=\"color: #02f67c\">Intensivo</span><span> e Presencial</span></p>",
           "icon": "grad-hat",
           "subtitle": "No dia escolhido, os desenvolvedores do seu time e o time da deco.cx irão se encontrar presencialmente para codar PoCs para os desafios escolhidos.",
-          "thumb": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d911f51c-6ca6-49b8-99ea-8f150484394e",
+          "thumb": "https://assets.decocache.com/starting/001d073a-f2ec-4bd6-aaf9-480ad6c99948/1742491875968-d911f51c-6ca6-49b8-99ea-8f150484394e",
           "id": "Intensivo e Presencial"
         },
         {
           "title": "<p><span style=\"color: #02f67c\">Apresentação</span><span> e Confraternização</span></p>",
           "icon": "Slide-graph",
           "subtitle": "Ao final do dia, apresentaremos as PoCs e compartilharemos resultados e aprendizados, seguido de um Happy Hour.",
-          "thumb": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/20862a3f-ba99-437a-9318-14a02649f161",
+          "thumb": "https://assets.decocache.com/starting/9bf79fb3-a06d-441c-a7e2-8862cccc5207/1742491877383-20862a3f-ba99-437a-9318-14a02649f161",
           "id": "Apresentação e Confraternização"
         }
       ],
@@ -113,7 +113,7 @@
           "text": "<p><strong>1x </strong>dev deco</p>"
         }
       ],
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9937caca-7ef9-4480-a8ca-cbdcfddeead0"
+      "image": "https://assets.decocache.com/starting/efa8d59e-873e-4201-951b-8db9f581b6f8/1742491878724-9937caca-7ef9-4480-a8ca-cbdcfddeead0"
     },
     {
       "__resolveType": "site/sections/DevCollab/FinalDelivery.tsx",
@@ -193,7 +193,7 @@
     "__resolveType": "website/sections/Seo/SeoV2.tsx",
     "title": "Dev Collab - Destrave seu Backlog de Engenharia",
     "description": "Um dia de desenvolvimento de soluções com o time de engenheiros da deco.cx",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b07aac8b-fe08-42a3-a102-e27c53a33e8f"
+    "image": "https://assets.decocache.com/starting/de8f8f31-92c6-4a1d-910c-18e47f4954b6/1742491880260-b07aac8b-fe08-42a3-a102-e27c53a33e8f"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

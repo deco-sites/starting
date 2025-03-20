@@ -1,1 +1,88 @@
-{"cards":{"0":{"url":"https://www.deco.cx/pt/blog/como-a-deco-faz-sua-loja-converter-mais.md","date":"14 Abril 2023","text":"Como a deco faz sua loja converter mais","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0faedaff-7d62-4222-a728-296385ae1eb8","title":"BUSINESS","author":"Rafael Crespo","writtenByLabel":"Escrito por"},"1":{"url":"https://www.deco.cx/pt/blog/abertura-ii-hackathon-deco.md","date":"29 Novembro 2022","text":"América Latina e o futuro das experiências digitais","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/bd0a9840-15d8-49b7-94f3-2ca2dba4ad50","title":"BUSINESS","author":"Guilherme Rodrigues","writtenByLabel":"Escrito por"},"2":{"url":"https://www.deco.cx/pt/blog/criando-uma-pagina-com-decocx.md","date":"01 Março 2023","text":"Minha experiência com deco.cx","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ebbdf003-9984-4b36-9cfc-818b62cea2f3","title":"BUSINESS","author":"Guilherme Tavano","writtenByLabel":"Escrito por"},"3":{"url":"https://www.deco.cx/pt/blog/pg-vb-pt-br.md","date":"29 Novembro 2022","text":"A vida é curta","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/43feee59-8e8a-42a0-97a8-af7d4ac31ea6","title":"BUSINESS","author":"Paul Graham","writtenByLabel":"Escrito por"},"page":{"__resolveType":"site/functions/LoadPageProps.ts"},"postList":{"__resolveType":"posts"},"__resolveType":"site/loaders/featuredPosts.ts"},"images":[{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ff8801e3-bf33-40d2-8037-3229b558aa77","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0ae3ef7e-a50d-412e-ad4d-6c96d75679fa"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7348ec03-a5db-4f01-bba7-545182dbd959","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b5b68e95-5cfa-4c58-bd08-885077f6f2c1"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3c3e867b-e862-4e55-9a8d-fd8a93c0a9b7","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/98826707-7e42-4eb6-be7e-5d7dcf61ce69"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/f325ab19-5779-4533-87f5-d214a45c88a0","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/008ecb21-f953-4c88-ad13-16775ca93c8a"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8c4ad9d9-d034-4ae1-863a-d7dd422c4096","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91c6d097-461e-4f17-8d95-1c710bf2a4d8"},{"text":"Boosting your store speed and optimizing sales","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3d896d2b-a45c-44d6-b98f-b92cda60ddc8","title":"BUSINESS","author":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/2b4a85be-e327-403a-88e6-0f04d83d32e1"}],"locale":"pt","__resolveType":"site/sections/Carousel.tsx","bottomPadding":"96px"}
+{
+  "cards": {
+    "0": {
+      "url": "https://www.deco.cx/pt/blog/como-a-deco-faz-sua-loja-converter-mais.md",
+      "date": "14 Abril 2023",
+      "text": "Como a deco faz sua loja converter mais",
+      "image": "https://assets.decocache.com/starting/d7d49c8f-6955-496a-b321-19c41935b7e9/1742491983434-0faedaff-7d62-4222-a728-296385ae1eb8",
+      "title": "BUSINESS",
+      "author": "Rafael Crespo",
+      "writtenByLabel": "Escrito por"
+    },
+    "1": {
+      "url": "https://www.deco.cx/pt/blog/abertura-ii-hackathon-deco.md",
+      "date": "29 Novembro 2022",
+      "text": "América Latina e o futuro das experiências digitais",
+      "image": "https://assets.decocache.com/starting/a6763a0a-ca38-449d-b495-320890f32e78/1742491988710-bd0a9840-15d8-49b7-94f3-2ca2dba4ad50",
+      "title": "BUSINESS",
+      "author": "Guilherme Rodrigues",
+      "writtenByLabel": "Escrito por"
+    },
+    "2": {
+      "url": "https://www.deco.cx/pt/blog/criando-uma-pagina-com-decocx.md",
+      "date": "01 Março 2023",
+      "text": "Minha experiência com deco.cx",
+      "image": "https://assets.decocache.com/starting/17cf6624-0271-46c2-8459-f361cf97a64e/1742491990942-ebbdf003-9984-4b36-9cfc-818b62cea2f3",
+      "title": "BUSINESS",
+      "author": "Guilherme Tavano",
+      "writtenByLabel": "Escrito por"
+    },
+    "3": {
+      "url": "https://www.deco.cx/pt/blog/pg-vb-pt-br.md",
+      "date": "29 Novembro 2022",
+      "text": "A vida é curta",
+      "image": "https://assets.decocache.com/starting/19b557dd-99d2-4679-aa71-f017d2a5bb73/1742491992980-43feee59-8e8a-42a0-97a8-af7d4ac31ea6",
+      "title": "BUSINESS",
+      "author": "Paul Graham",
+      "writtenByLabel": "Escrito por"
+    },
+    "page": {
+      "__resolveType": "site/functions/LoadPageProps.ts"
+    },
+    "postList": {
+      "__resolveType": "posts"
+    },
+    "__resolveType": "site/loaders/featuredPosts.ts"
+  },
+  "images": [
+    {
+      "text": "Boosting your store speed and optimizing sales",
+      "image": "https://assets.decocache.com/starting/1432c5f6-3f70-4f40-ae57-7886ea1d4c7d/1742491109441-ff8801e3-bf33-40d2-8037-3229b558aa77",
+      "title": "BUSINESS",
+      "author": "https://assets.decocache.com/starting/7687dd1e-7a11-4d81-8335-83b959ef75a4/1742491111332-0ae3ef7e-a50d-412e-ad4d-6c96d75679fa"
+    },
+    {
+      "text": "Boosting your store speed and optimizing sales",
+      "image": "https://assets.decocache.com/starting/f24b0aac-57f9-426d-b16e-a4d2eea09ad3/1742491113245-7348ec03-a5db-4f01-bba7-545182dbd959",
+      "title": "BUSINESS",
+      "author": "https://assets.decocache.com/starting/aeae7f05-f8d5-4792-903f-798998046239/1742491114620-b5b68e95-5cfa-4c58-bd08-885077f6f2c1"
+    },
+    {
+      "text": "Boosting your store speed and optimizing sales",
+      "image": "https://assets.decocache.com/starting/fd745a76-79f6-4426-aef1-f8b0d85ac7fb/1742491116252-3c3e867b-e862-4e55-9a8d-fd8a93c0a9b7",
+      "title": "BUSINESS",
+      "author": "https://assets.decocache.com/starting/740ae5d6-55d7-4427-9430-47335e802956/1742491117723-98826707-7e42-4eb6-be7e-5d7dcf61ce69"
+    },
+    {
+      "text": "Boosting your store speed and optimizing sales",
+      "image": "https://assets.decocache.com/starting/fc05a7f4-8745-4000-9e72-6ff92d90a8f9/1742491119217-f325ab19-5779-4533-87f5-d214a45c88a0",
+      "title": "BUSINESS",
+      "author": "https://assets.decocache.com/starting/1750edda-57fa-46f3-88cd-ba0a4301a59a/1742491121027-008ecb21-f953-4c88-ad13-16775ca93c8a"
+    },
+    {
+      "text": "Boosting your store speed and optimizing sales",
+      "image": "https://assets.decocache.com/starting/9885979d-dd34-443c-b2a0-cc1cf05b6fbe/1742491122514-8c4ad9d9-d034-4ae1-863a-d7dd422c4096",
+      "title": "BUSINESS",
+      "author": "https://assets.decocache.com/starting/f2d1a7b6-10ac-4763-a713-99d0b4602b2b/1742491123887-91c6d097-461e-4f17-8d95-1c710bf2a4d8"
+    },
+    {
+      "text": "Boosting your store speed and optimizing sales",
+      "image": "https://assets.decocache.com/starting/d47adff8-1b5f-4184-827b-2667d80dba45/1742491125387-3d896d2b-a45c-44d6-b98f-b92cda60ddc8",
+      "title": "BUSINESS",
+      "author": "https://assets.decocache.com/starting/b11c957d-4270-4eae-8df4-c3e2786abc33/1742491126924-2b4a85be-e327-403a-88e6-0f04d83d32e1"
+    }
+  ],
+  "locale": "pt",
+  "__resolveType": "site/sections/Carousel.tsx",
+  "bottomPadding": "96px"
+}

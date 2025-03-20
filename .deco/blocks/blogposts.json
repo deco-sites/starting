@@ -21,7 +21,7 @@
         "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/starting/4775092f-c385-45e5-a933-90531ddf3047/My-account-(2).png"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/971f5e4d-fc34-4b4e-98a3-fd09eeae079a",
+        "img": "https://assets.decocache.com/starting/da66e40e-6293-4519-8235-8182707a2042/1742490822211-971f5e4d-fc34-4b4e-98a3-fd09eeae079a",
         "body": {
           "en": {
             "descr": "How They’re Draining Your Website’s Resources",
@@ -35,7 +35,7 @@
         "author": "Matheus Gaudêncio"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/05ed5d60-22c1-459a-8323-53d3b2b3b3d9",
+        "img": "https://assets.decocache.com/starting/fabb0630-1988-47d5-95ed-5e2b3357783c/1742490823797-05ed5d60-22c1-459a-8323-53d3b2b3b3d9",
         "body": {
           "en": {
             "descr": "How to refactor common design patterns from React into Native Web",
@@ -54,7 +54,7 @@
         "author": "Tiago Gimenes"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0c77486d-7514-4e44-9794-979dccf63018",
+        "img": "https://assets.decocache.com/starting/cc71cabb-2463-4a9e-90e7-ccb0453d111a/1742490825331-0c77486d-7514-4e44-9794-979dccf63018",
         "body": {
           "en": {
             "descr": "Elevating web performance with edge async rendering",
@@ -63,7 +63,7 @@
             "seo": {
               "title": "More on edge async rendering: unveiling new deco.cx capabilities",
               "description": "Introduction: Elevating web performance with edge async rendering",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0c77486d-7514-4e44-9794-979dccf63018"
+              "image": "https://assets.decocache.com/starting/cc71cabb-2463-4a9e-90e7-ccb0453d111a/1742490825331-0c77486d-7514-4e44-9794-979dccf63018"
             }
           }
         },
@@ -75,7 +75,7 @@
         "authorAvatar": "https://lh3.googleusercontent.com/a/ACg8ocIW-_JDhQKd8vtQBip4uUk_Nj5NUyRdJdalXMzjzJ0fLSk3FNgJ=s96-c"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/58575cda-d89d-4715-8497-0050fbff26cf",
+        "img": "https://assets.decocache.com/starting/0b805fca-cadf-477b-8fc6-cf1e1ec6f97c/1742490826882-58575cda-d89d-4715-8497-0050fbff26cf",
         "body": {
           "en": {
             "descr": "Simplifying event handling with inline scripts",
@@ -90,7 +90,7 @@
         "authorRole": "Developer"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ce8eaf0a-71df-4e9f-b629-96b997daaf51",
+        "img": "https://assets.decocache.com/starting/89054413-df59-447e-ac1b-7913a684646e/1742490828612-ce8eaf0a-71df-4e9f-b629-96b997daaf51",
         "body": {
           "en": {
             "descr": "Unleash the power of native web APIs",
@@ -109,7 +109,7 @@
         "author": "Tiago Gimenes"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0cde31e0-3af8-46e0-a6bd-1e9c4182af00",
+        "img": "https://assets.decocache.com/starting/636cbc91-dd62-4f90-8235-29c3d4a66062/1742490830805-0cde31e0-3af8-46e0-a6bd-1e9c4182af00",
         "body": {
           "en": {
             "descr": "Elevate your building experience without sacrificing community and flexibility",
@@ -128,12 +128,12 @@
         "author": "Maria Cecilia Marques"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b34b8767-2234-4a13-ac79-d9d9d86bca16",
+        "img": "https://assets.decocache.com/starting/7c86a3ab-e102-49b1-b7ef-cb2d4d92524f/1742490832328-b34b8767-2234-4a13-ac79-d9d9d86bca16",
         "body": {
           "en": {
             "seo": {
               "title": "10 sites on deco.cx with approved Core Web Vitals",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/decc330d-2bc5-4612-ba43-6fc72df9bddd",
+              "image": "https://assets.decocache.com/starting/ea700876-1726-4a05-94cb-c4b52fdfc826/1742490834079-decc330d-2bc5-4612-ba43-6fc72df9bddd",
               "description": "Mastering Google Core Web Vitals for Your Site"
             },
             "descr": "10 sites on deco.cx with approved CWV",
@@ -145,7 +145,7 @@
             "title": "At deco.cx, the grass IS greener!",
             "seo": {
               "title": "10 sites on deco.cx with approved Core Web Vitals",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3753332b-b0bb-4dc7-b43a-803774e535ca",
+              "image": "https://assets.decocache.com/starting/aedc76ca-6044-4fc1-a279-eeb156434f5d/1742490835757-3753332b-b0bb-4dc7-b43a-803774e535ca",
               "description": "Mastering Google Core Web Vitals for Your Site"
             },
             "content": "In the digital marketplace, performance isn't just a feature—it's a necessity. This is especially true as Google's Core Web Vitals (CWV) become a key determinant of a site's success, reshaping how sites are built and optimized everywhere. \n\nAt [deco.cx](https://deco.cx/), we're not just meeting these standards—we're making it easier than ever to exceed them. Most importantly, we are doing so without sacrificing easy personalization, as well as fast, on-budget execution. \n\nTo find out how your site's Core Web Vitals are, visit [pagespeed.web.dev](https://pagespeed.web.dev/).\n\nHere’s a look at how some of our clients are already seeing significant benefits. These sites aren’t just meeting Google's Core Web Vitals standards; they are fully approved on mobile devices at the origin URL. This approval reflects real-world usability, as it simulates an average mobile navigation session rather than merely testing the homepage. This ensures that the entire user experience, from start to finish, adheres to the highest performance standards set by Google.\n\n- **Lumini**: [lojavirtual.lumini.com.br](https://lojavirtual.lumini.com.br/)<br>\n- **Osklen**: [osklen.com.br](https://www.osklen.com.br/)<br>\n- **Velocità**: [velocita.com.br](https://www.velocita.com.br/)<br>\n- **Armadillo**: [armadillo.com.br](https://www.armadillo.com.br/)<br>\n- **Austral**: [austral.com.br](https://austral.com.br/)<br>\n- **Ligaretro**: [ligaretro.com.br](https://www.ligaretro.com.br/)<br>\n- **Uncle K**: [unclek.com.br](https://www.unclek.com.br/)<br>\n- **Openbox2:** [openbox2.com.br](https://www.openbox2.com.br/)<br>\n- **Euro Colchões:** [eurocolchoes.com](https://www.eurocolchoes.com/)<br>\n- **Petfarma:** [petfarma.com](https://www.petfarma.com/)<br>\n\n**Explore more success stories:**  [deco.cx/live-projects](https://deco.cx/en/live-projects)<br>\n\n### **Understanding Core Web Vitals**\n\nCore Web Vitals are a set of specific metrics that Google uses to gauge the health and user-friendliness of a website. These metrics focus on three main areas:\n\n- **Largest Contentful Paint (LCP)**: How long it takes for the main content of a page to load.<br>\n- **First Input Delay (FID)**: The time from when a user first interacts with your site to the moment the browser can respond to that interaction.<br>\n- **Cumulative Layout Shift (CLS)**: How stable a page is as it loads (i.e., how much it moves around).<br>\n\nTo help you understand and optimize these metrics, deco.cx offers a CWV app that provides reports and insights. Learn how to use this tool effectively [here](https://deco.cx/en/blog/core-web-vitals-app)\n\n### **Why Choose deco.cx for High Performance?**\n\nSwitching to deco.cx typically results in a substantial boost in site performance — improving PageSpeed scores by 5x on average. This enhancement is due to several built-in optimizations, features, and very intentional tech choices:\n\n- **Server-Side Rendering (SSR)**: Provides faster load times and better SEO performance.<br>\n- **Edge Deployment**: Delivers your content from the closest server to the user, minimizing delays.<br>\n- **Optimized Images**: Automatically adjusts images to the most efficient formats and sizes for faster loading.<br>\n- **Lazy Loading and Cacheable Fonts**: Improves load times and bandwidth usage for a smoother user experience.<br>\n\nThese features ensure that your website is not only fast and responsive but also meets the mobile-first standards that Google now requires.\n\nVisit our [performance docs](https://docs.deco.cx/en/performance/why) to learn more about how deco.cx delivers speed and reliability. \n\n### **See All Green with deco.cx**\n\nChoosing deco.cx means setting your site up for top-tier performance. With our platform, seeing all green on Google’s Core Web Vitals isn’t just a goal—it’s an expectation. Ready to elevate your website's performance and user experience?\n\nGet started with deco.cx today and ensure your site scores impressively across all vital metrics. \n\n[Book a demo](https://deco.cx/en/contact-us) or [Sign in](https://admin.deco.cx/). \n"
@@ -158,7 +158,7 @@
         "readTime": "2 mins"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/76bc55aa-2059-40ee-a819-6f68e981804a",
+        "img": "https://assets.decocache.com/starting/bec41cf2-761a-4652-94e4-b619445c8ef4/1742490837386-76bc55aa-2059-40ee-a819-6f68e981804a",
         "body": {
           "en": {
             "descr": "Typescript, Tailwind web editor with realtime collaboration, AI assistant, SEO configuration and much more. Check out deco.cx 2.0.",
@@ -203,21 +203,21 @@
           }
         },
         "tags": [],
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/49c3d07b-8ddc-42f0-b73e-235151c82f67",
+        "img": "https://assets.decocache.com/starting/cd9b0afc-f013-4c4e-8a85-4236521f1b93/1742490838863-49c3d07b-8ddc-42f0-b73e-235151c82f67",
         "date": "03/20/2024",
         "path": "how-tags-affect-a-perfectly-optimized-storefront",
         "author": "Leandro Borges e Vinicius Trindade",
         "readTime": "5 minutos"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e081cbe4-c054-49e4-84b4-7e4e3978edbb",
+        "img": "https://assets.decocache.com/starting/53dc6be3-625a-441b-8eff-e9f078b24b10/1742490840178-e081cbe4-c054-49e4-84b4-7e4e3978edbb",
         "body": {
           "en": {
             "descr": "A strategic overhaul in healthcare ecommerce marketing and performance",
             "title": "Hospitalar Distribuidora's ROAS skyrockets from 4 to 19 with deco.cx and N1 Agency",
             "seo": {
               "title": "Hospitalar Distribuidora's ROAS skyrockets from 4 to 19 with deco.cx and N1 Agency",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5c13f04b-e930-4cab-ad60-c2f6705c8b99",
+              "image": "https://assets.decocache.com/starting/5cad1eb7-8ca4-45ee-b239-347120548022/1742490841996-5c13f04b-e930-4cab-ad60-c2f6705c8b99",
               "description": "A strategic overhaul in healthcare ecommerce marketing and performance"
             }
           },
@@ -225,7 +225,7 @@
             "descr": "Uma transformação estratégica na performance digital dentro do setor da saúde",
             "title": "ROAS da Hospitalar sobe de 4 para 19 com deco.cx e Agência N1",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/69c70e90-d6d3-45fa-84fa-87b069f27848",
+              "image": "https://assets.decocache.com/starting/e703fd3f-e8a3-43f0-ab76-7807500fa705/1742490843869-69c70e90-d6d3-45fa-84fa-87b069f27848",
               "title": "ROAS da Hospitalar sobe de 4 para 19 com deco.cx e Agência N1",
               "description": "Uma transformação estratégica na performance digital dentro do setor da saúde"
             }
@@ -237,7 +237,7 @@
         "author": "By Maria Cecilia Marques"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b639eea6-1449-4668-89a5-9520d01c1b24",
+        "img": "https://assets.decocache.com/starting/1961b44d-91fd-447f-a3bd-1afe2928011f/1742490845269-b639eea6-1449-4668-89a5-9520d01c1b24",
         "body": {
           "en": {
             "descr": "New rendering mode unlocking instant page responses",
@@ -261,13 +261,13 @@
         "authorRole": "Developer"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0ccccbcf-db6d-460c-9cdd-f1dd35679292",
+        "img": "https://assets.decocache.com/starting/2a26f6d0-88fd-463c-bc0a-4298c2ee100e/1742490846786-0ccccbcf-db6d-460c-9cdd-f1dd35679292",
         "body": {
           "en": {
             "descr": "How to Apply Customizable Animations in Sections",
             "title": "Adding Animations to Your Website",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/e92db02f-6bbc-4a32-9489-86ef19724289",
+              "image": "https://assets.decocache.com/starting/7adfd345-bec9-404a-a12e-ef91b4dd88ee/1742490848888-e92db02f-6bbc-4a32-9489-86ef19724289",
               "title": "Adding Animations to Your Website",
               "description": "How to Apply Customizable Animations in Sections"
             },
@@ -277,7 +277,7 @@
             "descr": "Como Aplicar Animações Customizáveis em Sections ",
             "title": "Adicionando Animações ao Seu Site",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b1e2f925-3fad-4624-b6de-4bd5b8461f25",
+              "image": "https://assets.decocache.com/starting/ed7eb532-fb90-49fa-a615-86b7f0e94a2e/1742490850426-b1e2f925-3fad-4624-b6de-4bd5b8461f25",
               "title": "Adicionando Animações ao Seu Site",
               "description": "Como Aplicar Animações Customizáveis em Sections "
             },
@@ -292,13 +292,13 @@
         "readTime": "3"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a22ac582-c4b1-4d7a-9184-4b4db6ced61e",
+        "img": "https://assets.decocache.com/starting/c0082296-3acb-4030-8621-cfa34a40a421/1742490851777-a22ac582-c4b1-4d7a-9184-4b4db6ced61e",
         "body": {
           "en": {
             "descr": "A review by GearSEO",
             "title": "How deco.cx supports SEO",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/91023bb0-c6f2-4bae-ad1b-a3e3df7fb23f",
+              "image": "https://assets.decocache.com/starting/21360d50-c9a1-4322-8ce8-0f439aa5b7d8/1742490853845-91023bb0-c6f2-4bae-ad1b-a3e3df7fb23f",
               "title": "How deco.cx supports SEO: insights from Gear SEO",
               "description": "In this blog post we summarize the main points from GearSEO’s article and complement them with real examples of how clients leverage deco.cx to achieve extraordinary results."
             },
@@ -308,7 +308,7 @@
             "descr": "Revisão por GearSEO",
             "title": "Como a deco.cx apoia SEO",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/926a24a9-c3dd-41e9-9a02-451b71114e5b"
+              "image": "https://assets.decocache.com/starting/a71a2d62-4f5d-44e8-9385-d358b2a03f5d/1742490855835-926a24a9-c3dd-41e9-9a02-451b71114e5b"
             },
             "content": "Práticas de SEO (Otimização para Motores de Busca) são importantes para sites de e-commerce porque afetam o desempenho do site nos motores de busca (por exemplo: Bing, Google), possibilitando (ou não) que potenciais clientes descubram lojas online e eventualmente realizem uma compra.\n\nA plataforma onde o website é hospedado influencia significativamente o sucesso do SEO. Para entender como isso funciona, a GearSEO, uma líder em integrador de sistemas (SI), publicou um artigo com insights e exemplos práticos sobre como escolher a melhor plataforma para criar e hospedar experiências de comércio eletrônico.\n\n<hr/>\n**Artigo original por Rodrigo Botinhão, CEO e Fundador da Gear SEO**: [Leia aqui](https://gearseo.com.br/mercado/plataforma-de-e-commerce-para-seo/)\n\n**Artigo original traduzido para Inglês**: [Leia aqui](https://deco.cx/en/blog/gear-seo-article-en)\n\n<hr/>\n\nNeste post do blog, resumimos os principais pontos do artigo da GearSEO e complementamos com exemplos reais de como os clientes aproveitam a [deco.cx](https://deco.cx) para alcançar resultados extraordinários.\n\n### **Elementos-chave de SEO para plataformas de e-commerce**\n\n### **1. Design rápido e responsivo**\n\nO Google prioriza cada vez mais as versões móveis dos websites. Seu site deve ser responsivo, garantindo que o conteúdo seja carregado rapidamente em todos os dispositivos.\n\n<div style=\"background-color: rgba(255, 255, 255, 0.10); border-radius: 8px; padding: 1.5em\">\n💨 Todo site construído na <a href=\"https://deco.cx\" target=\"_blank\">deco.cx</a> é inerentemente responsivo. Migrar para a deco.cx geralmente resulta em um aumento de 5x no PageSpeed e em ser aprovado pelos padrões de Core Web Vitals (CWV) do Google. A deco.cx suporta alto desempenho do website por meio de:\n\n<ul>\n    <li>Renderização Server Side</li>\n    <li>Deploy na Edge</li>\n    <li>Otimização de imagens\n        <ul>\n            <li>Conversão automática para formatos leves (webp/avif)</li>\n            <li>Diferentes tamanhos para cada tipo de dispositivo</li>\n            <li>Pré-carregamento da imagem principal (LCP do CWV)</li>\n            <li>Lazy loading das imagens</li>\n        </ul>\n    </li>\n    <li>Fontes armazenáveis em cache</li>\n</ul>\n<a href=\"https://docs.deco.cx/en/performance/why\">Clique aqui para ler mais!</a>\n</div>\n\n![CWV.png](https://ibb.co/cX2VcHN)\n\n_[dentalproclin.com.br](https://www.dentalproclin.com.br/), nosso primeiro cliente utilizando [wake.tech](https://www.wake.tech/), com CWV aprovada_\n\n### **2. URLs customizáveis**\n\nTer flexibilidade para incorporar palavras-chave em suas URLs é uma estratégia eficaz de otimização.\n\n<div style=\"background-color: rgba(255, 255, 255, 0.10); border-radius: 8px; padding: 1.5em\">🔗 Ao expor o código backend e frontend aos criadores do site, <a href=\"https://deco.cx\" target=\"_blank\">deco.cx</a> permite controle total sobre a estrutura da URL, possibilitando a personalização ideal de SEO.\n</div>\n\nPor exemplo, o projeto da Gear SEO [BolsasJá](http://bolsasja.com.br) alcançou melhorias significativas de SEO ao personalizar as URLs de categoria e subcategoria para o primeiro nível de navegação, aumentando a relevância da página.\n\nCategoria: [https://bolsasja.com.br/bolsas-femininas](https://bolsasja.com.br/bolsas-femininas)\n\nSubcategoria: [https://bolsasja.com.br/bolsa-casual](https://bolsasja.com.br/bolsa-casual)\n\n### **3. Estratégia de conteúdo integrada**\n\nMesclar e-commerce com páginas ricas em conteúdo é uma tática para melhorar a Experiência do Cliente e aumentar os resultados de SEO. Esse conteúdo varia desde blogs de e-commerce incorporados até landing pages personalizadas para produtos e categorias. \n\n<div style=\"background-color: rgba(255, 255, 255, 0.10); border-radius: 8px; padding: 1.5em\"> 🧩 Na <a href=\"https://deco.cx\" target=\"_blank\">deco.cx</a>, você pode mesclar textos, imagens, vídeos e outros elementos HTML em Páginas de Detalhes do Produto (PDPs), além de gerenciar conteúdo de satélite dentro do seu domínio, aproveitando a escrita integrada de blog e a personalização frontend/backend para resultados de SEO superiores.\n</div>\n\n\n![Aviator.png](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0e76a4b4-7e7d-4f73-9dde-8ddd0cca74b0)\n\n_ [PDP](https://www.aviator.com.br/camisa-oxford-slim-fit-verde-oliva-camisa-oxford-slim-fit-verde-oliva-vde-oliva/p) e [blog](https://www.aviator.com.br/blog) da Aviator _\n\n### **4. Coleções e landing pages flexíveis**\n\nColeções e landing pages personalizadas são essenciais para segmentar palavras-chave de cauda longa e tráfego sazonal.\n\n<div style=\"background-color: rgba(255, 255, 255, 0.10); border-radius: 8px; padding: 1.5em\"> 🛍️ <a href=\"https://deco.cx\" target=\"_blank\">deco.cx</a>, permite a criação de coleções de produtos e landing pages em URLs personalizadas que não estão diretamente vinculadas à árvore de catálogo principal, facilitando a criação de conteúdo que tem mais chances de converter compradores.\n</div>\n\n\n![Embelleze.png](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a4f84f0c-a594-41af-834c-80fc23734289)\n\n_ [LP especial da Black Friday](https://www.embelleze.com/black-friday) da Embelleze, com produtos fora do catálogo principal _\n\n### **5. Elementos meta editáveis**\n\nTer controle e fácil acesso para editar meta tags/títulos é fundamental para obter o máximo proveito da indexação do Google e do Bing, pois essas informações são o que os novos usuários verão primeiro ao descobrir um website. Uma das meta tags mais relevantes é a tag canônica, que informa ao mecanismo de busca qual é a URL canônica. A URL canônica é a versão de uma página da web escolhida pelo mecanismo de busca como a versão principal quando há duplicatas. Esta URL selecionada é priorizada para evitar a exibição de conteúdo repetitivo que não fornece valor único nos resultados da pesquisa.\n\n<div style=\"background-color: rgba(255, 255, 255, 0.10); border-radius: 8px; padding: 1.5em\"> 🎯 A [deco.cx](https://deco.cx) permite controle total sobre elementos meta em todo o seu site (título, descrição, imagem meta e mais). Quando se trata de tags canônicas, a deco.cx não apenas atribui canônicos por padrão para garantir que os mecanismos de busca saibam como priorizar as URLs mais relevantes, mas também torna essas tags totalmente personalizáveis. Essa flexibilidade significa que você pode evitar que URLs secundárias criadas por paginação ou filtros sejam indexadas pelos mecanismos de busca.\n</div>\n\n\nPor exemplo, na deco.cx só a opção A é indexada por padrão (embora isso seja 100% editável):\n\nA. yoursite.com/categories/category-1\n\nB. yoursite.com/categories/category-1/?ordenation=true&page=3\n\n![Formulário criado na deco.cx pela Zee.Dog para editar elementos meta de SEO](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d4fc86df-6d1a-4fa5-b8ee-0d3435a40b4d)\n\n_Formulário criado na deco.cx pela [Zee.Dog](http://Zee.Dog) para editar elementos meta de SEO_\n\n### **7. Frameworks SEO-friendly**\n\nSites construídos com frameworks que garantem que os mecanismos de busca possam rastrear e indexar páginas geralmente são classificados em posições mais altas. \n\n<div style=\"background-color: rgba(255, 255, 255, 0.10); border-radius: 8px; padding: 1.5em\"> ⚙️ O framework da <a href=\"https://deco.cx\" target=\"_blank\">deco.cx</a> é 100% server side por padrão, o que significa que nenhum JavaScript é enviado para o navegador do cliente. Mesmo que você adicione scripts do lado do cliente, eles são primeiro renderizados no lado do servidor. Isso garante que os mecanismos de busca tenham acesso a todo o conteúdo do seu site.\n</div>\n\n### **8. Organização e disponibilidade de produtos**\n\nSempre que um produto estiver fora de estoque ou removido, todas as visitas orgânicas à URL correspondente resultarão em erros (página não encontrada, erro 404). Gerenciar corretamente essas situações para redirecionar seus visitantes é importante para manter o tráfego e as classificações de busca. \n\n<div style=\"background-color: rgba(255, 255, 255, 0.10); border-radius: 8px; padding: 1.5em\">🚫 Muitas plataformas permitem que você redirecione URLs ausentes para endereços semelhantes ou para a página inicial do seu site. Na <a href=\"https://deco.cx\" target=\"_blank\">deco.cx</a>, você pode ir um passo além, mantendo a URL original disponível e direcionando seu visitante para produtos similares em sua loja. Essa prática evita erros em buscas por produtos indisponíveis e permite que itens fora de estoque continuem trazendo tráfego orgânico para seu site.\n</div>\n\n### **9. Disponibilidade constante do site**\n\nUm alto tempo de atividade é crucial para manter as classificações de SEO.\n\n<div style=\"background-color: rgba(255, 255, 255, 0.10); border-radius: 8px; padding: 1.5em\">✅ Os sites na <a href=\"https://deco.cx\" target=\"_blank\">deco.cx</a> têm garantia de 99,99% de tempo de atividade em média, assegurando que estejam sempre disponíveis tanto para clientes quanto para mecanismos de busca.\n</div>\n\n### **deco.cx: líder em e-commerce focado em SEO**\n\nA análise da Gear SEO posiciona a deco.cx como líder na implementação de recomendações de SEO com mínima complexidade. Através do programa \"SEO na Prática\", a Gear SEO demonstrou a eficácia da deco.cx usando a headless storefront \"Bolsas Já\", que combina o frontend da deco.cx com o backend da Shopify.\n\n\n![SEOGraph.png](https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8fb2698f-f47c-49eb-9e15-aeed1496c36e)\n\n### **Por que optar pela deco.cx?**\n\n- **Flexibilidade headless**:  Oferece implementações criativas de SEO, desde responsividade até gerenciamento de elementos meta.\n\n- **Integrações seamless**: Funciona sem esforço com os principais backends de comércio eletrônico.\n\n- **Desenvolvimento econômico**: Reduz custos enquanto aprimora o foco em SEO.\n\n### **Considerações finais**\n\nEm um ecossistema onde a perfeição é elusiva, a deco.cx se destaca por atender às necessidades abrangentes de SEO. Suas funcionalidades são projetadas para se alinhar aos princípios básicos de SEO, garantindo o sucesso do comércio eletrônico."
           }
@@ -319,13 +319,13 @@
         "tags": []
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/404f1989-1061-43c1-af63-e3243de57666",
+        "img": "https://assets.decocache.com/starting/90fce191-c596-46cb-81c2-13d6b977200a/1742490858004-404f1989-1061-43c1-af63-e3243de57666",
         "body": {
           "en": {
             "descr": "Discover the essential factors to consider when choosing an e-commerce platform with strong SEO support",
             "title": "What is the best e-commerce platform for SEO?",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dd636fc5-673a-4a3a-b5a4-df1fa37cfed7",
+              "image": "https://assets.decocache.com/starting/e0ce8b90-aa31-4ac4-b53b-0ef057d76217/1742490859669-dd636fc5-673a-4a3a-b5a4-df1fa37cfed7",
               "title": "What is the best e-commerce platform for SEO?",
               "description": "The article discusses the essential factors to consider when choosing an e-commerce platform with strong SEO support"
             },
@@ -360,27 +360,27 @@
             "title": "Euro Colchões’ top digital experience increases in-store sales",
             "descr": "Euro Colchões' three-person team increased its ecommerce PageSpeed score from 7 to 80, transforming Euro's online and physical presence",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/acc51bf5-3243-4ce6-950f-6dd30634339a",
+              "image": "https://assets.decocache.com/starting/22b73eb8-d757-4542-8e14-68769bca9933/1742490861222-acc51bf5-3243-4ce6-950f-6dd30634339a",
               "title": "Euro Colchões’ top digital experience increases in-store sales",
               "description": "Euro Colchões' three-person team increased its ecommerce PageSpeed score from 7 to 80, transforming Euro's online and physical presence"
             }
           }
         },
         "path": "case-eurocolchoes",
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a668b07e-356e-4b6b-b1d1-bb7d4a11e608",
+        "img": "https://assets.decocache.com/starting/6633147e-ae5c-482a-8601-7544937157c3/1742490862483-a668b07e-356e-4b6b-b1d1-bb7d4a11e608",
         "date": "01/12/2024",
         "author": "By Maria Cecilia Marques",
         "tags": []
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a9db4aff-6729-4c81-bb8f-1a57c8dd9ee8",
+        "img": "https://assets.decocache.com/starting/aaf6ddd0-23f2-452a-abe6-86da181cb322/1742490864119-a9db4aff-6729-4c81-bb8f-1a57c8dd9ee8",
         "body": {
           "en": {
             "descr": "New App to see your Core Web Vitals results",
             "title": "Core Web Vitals App",
             "content": "In recent years, web performance has become a crucial factor for the success of websites and online applications. Core Web Vitals, introduced by Google, has been a benchmark for measuring user experience on the web.\n\nToday, we announce an App on [deco.cx](https://deco.cx) that allows you to bring up a complete report of Core Web Vitals.\n\n<img src=\"https://github.com/deco-cx/apps/assets/76620866/d7313173-7e9d-4780-8fd6-a46cee6ae177\"/>\n\n## What Are Core Web Vitals?\n\nCore Web Vitals are a set of specific metrics that Google considers essential for the overall user experience on the web. They include aspects such as loading time, interactivity, and visual content stability.\n\n## Features\n\nIn this app, you have access to charts that indicate the real user experience on your website.\n\nAvailable reports:\n\n- Overview - Core Web Vitals\n\n- LCP - Largest Contentful Paint\n\n- FID - First Input Delay\n\n- CLS - Cumulative Layout Shift\n\n- INP - Interaction to Next Paint\n\n- FCP - First Contentful Paint\n\n- TTFB - Time to First Byte\n\n- FP - First Paint\n\n- DCL - DOM Content Loaded\n\n- OL - Onload\n\n- Device Distribution\n\n- Connection Distribution\n\n\nAll these reports present monthly results and have the option to filter between Phone, Desktop, and Tablet.\n\n## How to Use?\n\n**If you already use deco.cx:**\n\n1 - Update the version of the apps via repository (command `deno task update`)\n\n2 - Find the \"crux\" app available in the list of apps\n\n3 - Fill in the URL you want to access data from\n\n4 - Click on Create/Install\n\n**Se você não usa deco.cx:**\n\n1 - Log in at: \n[https://admin.deco.cx/admin/new](https://admin.deco.cx/admin/new)\n\n2 - Create a site from some template\n\n3 - Find the \"crux\" app available in the list of apps\n\n4 - Fill in the URL you want to access data from\n\n5 - Click on Create/Install\n\n## Important\n\nThe functioning of the report depends on the site being on the CrUX dataset list.\n\nMost sites that have a sufficient volume of data are on this list.",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0a014c80-bea1-4141-93f0-a4e29bef98c3",
+              "image": "https://assets.decocache.com/starting/d19a0716-c5e2-435b-bb93-8af22f79db8a/1742490865517-0a014c80-bea1-4141-93f0-a4e29bef98c3",
               "title": "Core Web Vitals App",
               "description": "New App to see your Core Web Vitals results"
             }
@@ -392,7 +392,7 @@
             "seo": {
               "title": "Core Web Vitals App",
               "description": "Novo aplicativo para ver os seus resultados de Core Web Vitals",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8639812d-033d-4eab-92cc-d9b42a88d096"
+              "image": "https://assets.decocache.com/starting/afbecd49-4922-4c7e-af54-113ba929cb4a/1742490867525-8639812d-033d-4eab-92cc-d9b42a88d096"
             }
           }
         },
@@ -404,7 +404,7 @@
         "authorAvatar": "https://lh3.googleusercontent.com/ogw/AKPQZvxFwHo7yUU95E95OBqFaqXuLRfAGq0mMDuC7cQ7=s64-c-mo"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/96455eb9-e73d-457a-8ce0-e983aa753ea4",
+        "img": "https://assets.decocache.com/starting/93508ade-e62d-4b10-85a9-0d3b300f6606/1742490868957-96455eb9-e73d-457a-8ce0-e983aa753ea4",
         "body": {
           "en": {
             "descr": "Discover how this change can aid in the development of your websites.",
@@ -423,7 +423,7 @@
         "tags": []
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d27fcd6a-1042-4729-8058-dd8c52a4b46d",
+        "img": "https://assets.decocache.com/starting/b8f13d0c-9807-4af5-b510-f9b8ec74bbd7/1742490870380-d27fcd6a-1042-4729-8058-dd8c52a4b46d",
         "body": {
           "en": {
             "descr": "Preparations, uptime, customer testimonials, and more.",
@@ -435,7 +435,7 @@
             "title": "Dos desafios aos saltos: nossa Black Friday 2023",
             "content": "Desde a sua fundação em agosto de 2022, a [deco.cx](https://deco.cx/) tem visto um crescimento muito acelerado. Nossa primeira loja foi para o ar em maio (zeedog.com.br), e até o período da Black Friday e Cyber Monday (24 a 27 de novembro de 2023) alcançamos mais de 20 projetos _live_.\n\n👏🏻 Em primeiro lugar, queremos agradecer aos nossos clientes pelo apoio e confiança! Todos os projetos _live_ podem ser vistos em: [deco.cx/pt/projetos-ao-vivo](https://deco.cx/en/live-projects)\n\nEstamos muito orgulhosos das mais de 20 marcas que estão na nossa plataforma: muitas são líderes de suas indústrias, com tráfego e GMV significativos. Juntas, geraram um total de **15M** de visualizações de página durante o período BFCM, atingindo o pico às **21:01 (GMT-3) na quarta-feira, 22 de novembro.**\n\n![pedidos BF 1](https://github.com/deco-cx/deco/assets/134245972/9d8d159f-13d5-4bef-b23e-c28ffdbdd35a)\n\n![pedidos BF 2](https://github.com/deco-cx/deco/assets/134245972/8df8bea2-962b-4a13-ad3e-e3399bea78ba)\n\n![pedidos BF 3](https://github.com/deco-cx/deco/assets/134245972/4dc8ffae-ea6c-47ff-8baa-b2db42db2e33)\n\n_Requisições totais de 20 a 27 de novembro de 2023_\n\nConseguimos manter nosso _uptime_ em 99,99% durante o período BFCM. No entanto, enfrentamos uma [degradação de desempenho por 1 hora na noite de quarta-feira,](https://deco.instatus.com/clpagkpn724079bbom1qcbc3fh) em que um de nossos clientes experimentou até 30% de falhas nas requisições para “adicionar ao carrinho” e navegação mais lenta.\n\n⚠️ _Isso significa que, enquanto o incidente ocorreu, uma parcela dos visitantes teve uma experiência de compra abaixo da média. O motivo foi que [Deno](http://deno.com/), nosso provedor de infraestrutura, demorou mais do que o esperado para escalar corretamente sua infraestrutura à medida que o tráfego aumentava. Embora todos os preparativos estivessem no lugar, houve um limite imprevisto em sua própria infraestrutura, que foi então abordado e permitiu um escalonamento suficiente._\n\nLamentamos profundamente essa degradação do serviço e tomamos as medidas para evitar problemas semelhantes no futuro. A confiabilidade dos sites de nossos clientes é a prioridade número um para a equipe de engenharia da Deco. Fora este incidente, ficamos satisfeitos com o desempenho sólido de nossos sistemas durante todo o período crítico de vendas da Black Friday.\n\n## Como nos preparamos?\n\nEsta foi a nossa primeira BFCM como [deco.cx](https://deco.cx/), mas individualmente nossos engenheiros têm muita experiência anterior. À medida que nos aproximávamos deste período chave do ano, tomamos algumas medidas para garantir o sucesso de nossos clientes:\n\n- **Otimizando Lojas de Maior Tráfego:** Revisamos meticulosamente e otimizamos o uso de recursos para nossas lojas de maior tráfego.\n\n- **Colaboração com a Deno:** Nos tornamos um [estudo de caso da Deno](https://deno.com/blog/deco-cx-subhosting-serve-their-clients-storefronts-fast) e aproveitamos nosso relacionamento com eles para ter um canal de comunicação direto com sua liderança, o que foi crucial para resolver o problema de serviço degradado o mais rápido possível.\n\n- **Infraestrutura de Backup na AWS:** Construímos uma infraestrutura de backup usando a AWS para ter uma rede de segurança caso a Deno enfrentasse problemas mais profundos.\n\n- **Canal de Suporte Aprimorado:** Introduzimos um novo [canal de suporte centralizado em nosso servidor Discord](https://discord.com/channels/985687648595243068/1176583956573999114) para comunicação eficiente com parceiros e clientes em momentos de alta demanda.\n\n## Principais resultados\n\nApós o período BFCM, nos reunimos com alguns de nossos clientes para falar de suas experiências. Segue um pouco de suas histórias:\n\n> A Embelleze superou todas as expectativas de vendas no ecommerce durante esta BF. No dia 24, alcançamos as maiores vendas da história da loja virtual da Embelleze! Isso foi graças à plataforma deco, que proporcionou uma experiência de compra prática, rápida e amigável ao usuário, a [Tec4u](https://www.tec4udigital.com/), que nos apoiou na transição para deco, e a expertise da [Sourei](http://sourei.com.br/), que nos permitiu otimizar nossos gastos com mídia e ter total observabilidade dos resultados. Essas mudanças levaram a um aumento de 125% em nosso Retorno sobre Investimento (ROI) e um crescimento de 144% na receita.\n\n<div align=\"right\">- Aline Augusto, Head de ecommerce, marketplace e mídia na [Embelleze](http://embelleze.com/)</div>\n\n![Gráfico Embelleze 2](https://github.com/deco-cx/deco/assets/134245972/a1fe8db7-801c-42b7-9aaa-6a95c432108e)\n\n_Gráfico mostrando a receita do ecommerce da Embelleze nas 24 horas da Black Friday 2023. As linhas mostram a receita deste ano vs. o ano passado vs. a meta para este ano._\n\n> Esta Black Friday foi ótima para todos os nossos clientes que estão na [deco.cx](https://deco.cx/). Eu vi pessoalmente como a plataforma da deco possibilita melhores experiências de compra e mais eficiência no gerenciamento diário de ecommerces. Tenho ganhado muito com nossa parceria - eles de fato ouvem nossos feedbacks sobre as ferramentas de otimização de desempenho da plataforma.\n\n<div align=\"right\">- Henrique Reis, Co-Fundador e CEO da [Sourei Digital Services](http://sourei.com.br/)</div>\n\n> Nosso ecommerce cresceu muito no ano passado e nossos resultados da Black Friday de 2022 foram incríveis. Este ano, escolhemos reduzir nossa estratégia de promoção com descontos menos expressivos. Mesmo assim, superamos nossa meta original (manter os resultados do ano passado), aumentando nossas vendas em 15%!\n\n<div align=\"right\">- Guilherme Ladowsky, Sócio na [Aviator](http://aviator.com.br/)</div>\n\n> Migramos para a deco em setembro e o impacto na performance do site foi instantâneo - passamos de uma média de PageSpeed de 20 em dispositivos móveis para mais de 80. Isso foi especialmente importante para nós, já que mais da metade de nossas vendas são feitas por dispositivos móveis. Além da melhoria no desempenho, trabalhamos com a [agência eplus](https://www.agenciaeplus.com.br/) e outros parceiros para aumentar a taxa de conversão da nossa loja. E agora estamos colhendo os benefícios desses investimentos - vendemos 100% a mais nesta BF em comparação com o mesmo período do ano passado!\n\n<div align=\"right\">- Tania Puglisi, Head de ecommerce na [OpenBox2](http://openbox2.com.br/)</div>\n\n## Próxima Black Friday\n\nQuanto ao período BFCM do próximo ano, pretendemos ter milhares de projetos ao vivo na [deco.cx](https://deco.cx/), desde _landing pages_ geradas por IA até as maiores operações de ecommerce do mundo.\n",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/64896cb4-327b-4c6d-a7b7-9a97a6df4bff"
+              "image": "https://assets.decocache.com/starting/c74e38fe-ceb2-4d87-92a6-0c347b308514/1742490872095-64896cb4-327b-4c6d-a7b7-9a97a6df4bff"
             }
           }
         },
@@ -446,7 +446,7 @@
         "readTime": "3"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1d6078d8-29e6-4bdc-8d3a-9c8b5566de69",
+        "img": "https://assets.decocache.com/starting/a54e82f2-16c8-4437-8f99-d6e8bbc1f6cf/1742490873619-1d6078d8-29e6-4bdc-8d3a-9c8b5566de69",
         "body": {
           "en": {
             "descr": "Leverage stale caching and tracing on all loaders at deco.cx",
@@ -476,7 +476,7 @@
         ]
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/9cd72d58-1a57-443f-83a3-d263105670ff",
+        "img": "https://assets.decocache.com/starting/4e686e56-300c-4f7d-b286-7e8176f6e259/1742490877461-9cd72d58-1a57-443f-83a3-d263105670ff",
         "body": {
           "en": {
             "descr": "Discurso da abertura da segunda Hackathon deco.cx.",
@@ -494,13 +494,13 @@
         "author": "Guilherme Rodrigues"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/10a6a987-e88a-4d3b-b915-a6346d16f43c",
+        "img": "https://assets.decocache.com/starting/8561ba0b-c3eb-4d3b-baa5-1e74bfe3db96/1742490879642-10a6a987-e88a-4d3b-b915-a6346d16f43c",
         "body": {
           "en": {
             "descr": "Nuvemshop is now available on deco.cx",
             "title": "Nuvemshop Integration",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5160315f-a46c-4e15-977a-29f70ad7cc40"
+              "image": "https://assets.decocache.com/starting/cd6b2f12-1ea1-474e-a55e-da131aa15842/1742490881386-5160315f-a46c-4e15-977a-29f70ad7cc40"
             },
             "content": "We're thrilled to bring you the latest chapter in our journey to streamline your e-commerce experience. Introducing the new integration of [deco.cx](https://deco.cx/) with Nuvemshop, an e-commerce platform for growing businesses!\n\n## Seamless Integration for Growth\n\nOur goal is simple: to empower your e-commerce store with the robust capabilities of Nuvemshop, making it easier than ever to expand your business.\n\nSimply fill in your Nuvemshop store details on [deco.cx](https://deco.cx/), and you're all set to fetch your products and customize your frontend.\n\n## Available Features\n\n- Product Shelf\n\n<img src=\"https://github.com/deco-cx/apps/assets/76620866/c4978a59-3e23-491c-8044-4461d4bcffbb\" width=\"600\">\n\n- Product Listing Pages \n\n- Category and Search\n\n- Product Details Page\n\n- Minicart\n\n- Checkout Proxied\n\nIt's about bringing the functionality of Nuvemshop into [deco.cx](https://deco.cx/), where your e-commerce vision takes on a new life, more customizable and fast."
           },
@@ -509,7 +509,7 @@
             "title": "Integração da Nuvemshop",
             "content": "Estamos empolgados em trazer o mais recente capítulo em nossa jornada para simplificar a sua experiência de e-commerce. Apresentamos a nova integração do [deco.cx](https://deco.cx/) com a Nuvemshop, uma plataforma de e-commerce para negócios em crescimento!\n\n## Integração Perfeita para o Crescimento\n\nNosso objetivo é simples: capacitar a sua loja de e-commerce com as capacidades robustas da Nuvemshop, tornando mais fácil do que nunca expandir o seu negócio.\n\nBasta preencher os detalhes da sua loja Nuvemshop na [deco.cx](https://deco.cx/), e você está pronto para buscar seus produtos e personalizar o seu frontend.\n\n## Recursos Disponíveis\n\n- Prateleira de Produtos\n\n<img src=\"https://github.com/deco-cx/apps/assets/76620866/c4978a59-3e23-491c-8044-4461d4bcffbb\" width=\"600\">\n\n- Páginas de Listagem de Produtos\n\n- Categoria e Busca\n\n- Página de Detalhes do Produto\n\n- Minicart\n\n- Checkout Proxied\n\nTrata-se de trazer a funcionalidade da Nuvemshop para a [deco.cx](https://deco.cx/), onde a sua visão de e-commerce ganha vida de forma nova, mais personalizável e rápida.",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/edeb5de3-d3e7-4e1e-a065-705d27f98d96"
+              "image": "https://assets.decocache.com/starting/749ae143-f28e-431c-9dde-c970fb8c92e7/1742490883363-edeb5de3-d3e7-4e1e-a065-705d27f98d96"
             }
           }
         },
@@ -521,13 +521,13 @@
         "tags": []
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8242aca6-5215-4321-8e9d-f876fc1d1d58",
+        "img": "https://assets.decocache.com/starting/e9b77b9c-af65-4dd4-a819-301a6826025f/1742490887278-8242aca6-5215-4321-8e9d-f876fc1d1d58",
         "body": {
           "en": {
             "descr": "Checklist for a smooth shopping season",
             "title": "How to Prepare for 2023's Black Friday",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8242aca6-5215-4321-8e9d-f876fc1d1d58",
+              "image": "https://assets.decocache.com/starting/e9b77b9c-af65-4dd4-a819-301a6826025f/1742490887278-8242aca6-5215-4321-8e9d-f876fc1d1d58",
               "title": "Black Friday 2023",
               "description": "Checklist for a smooth shopping season",
               "canonical": "/black-friday-2023"
@@ -539,7 +539,7 @@
             "title": "Como se preparar para a Black Friday 2023",
             "content": "A Black Friday está chegando e é uma oportunidade incrível para as marcas aumentarem suas vendas. Para ajudar você a aproveitar ao máximo esse período de compras, compilamos uma lista de tarefas essenciais para garantir que sua loja online esteja totalmente preparada para a Black Friday 2023.\n\n## Adote a Compilação Ahead-of-Time\n\nO Fresh recentemente introduziu um recurso inovador chamado \"compilações _ahead-of-time_\", projetado para transformar como você cria e entrega seu site. Essa abordagem não apenas estabiliza o JavaScript da sua loja, mas também melhora significativamente os tempos de inicialização do servidor. Para entender essa nova abordagem completamente, você pode explorar a documentação estruturada fornecida pelo Fresh **[aqui](https://fresh.deno.dev/docs/concepts/ahead-of-time-builds)**.\n\nNa [deco.cx](https://deco.cx/), recomendamos fortemente a adoção da versão _ahead-of-time_, pois ela fornece escalabilidade ao seu servidor, o que é essencial para lidar com as demandas de eventos como a Black Friday. Para migrar para essa nova versão, instrua seu desenvolvedor a realizar a atualização usando o seguinte comando:\n\n```sh\ndeno run -Ar https://deco.cx/upgrade\n```\n\nApós concluir a atualização, certifique-se de que:\n\n1. Sua loja está funcionando corretamente, incluindo a verificação das páginas inicial, detalhes do produto (PDP) e listagem de produtos (PLP), além de verificar a funcionalidade de adicionar ao carrinho e quaisquer outros fluxos críticos.\n2. A edição administrativa está funcionando sem problemas, permitindo que você edite as seções da sua loja e as publique.\n\nSe sua loja já estiver online, a equipe do [deco.cx](https://deco.cx/) já executou esse comando para você. Para verificar, peça ao seu desenvolvedor para procurar um Pull Request (PR) no GitHub com o título \"Preparations for Black Friday\". Se encontrar algum problema durante esse processo, não hesite em nos contatar no [deco.cx discord](https://deco.cx/discord).\n\n## Suporte ao Mobile Safari\n\nHá alguns meses, compartilhamos um post no blog detalhando as **[lições que aprendemos](https://www.deco.cx/en/blog/licoes-6-meses.md)** com nossas lojas em produção. Recomendamos fortemente a implementação de todas as sugestões mencionadas no post antes da Black Friday. No entanto, um dos passos mais importantes é garantir que sua loja funcione perfeitamente nas versões 12, 13 e 14 do Safari.\n\nPara isso, siga estas etapas:\n\n1. Verifique se seu arquivo **`fresh.config.ts`** inclui o destino de compilação Safari12.\n2. Certifique-se de que seu site não usa a tag **`<dialog>`**.\n\nPeça ao seu desenvolvedor para fazer os ajustes necessários para remover a tag **`<dialog>`** e configurar o Safari12 como destino de compilação. Recomendamos realizar esta etapa após migrar para as compilações *ahead-of-time* para garantir uma transição tranquila.\n\nAo iniciarmos a temporada de compras de fim de ano, a equipe da [deco.cx](https://deco.cx/) está empenhada em fornecer estabilidade e confiabilidade durante este período crítico. A partir desta semana, estaremos trabalhando ativamente em melhorias de estabilidade para aprimorar sua experiência na Black Friday. É crucial ficar atualizado com as últimas versões da deco e ficar atento a mais postagens informativas sobre como otimizar sua loja online para o sucesso na Black Friday.",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8242aca6-5215-4321-8e9d-f876fc1d1d58",
+              "image": "https://assets.decocache.com/starting/e9b77b9c-af65-4dd4-a819-301a6826025f/1742490887278-8242aca6-5215-4321-8e9d-f876fc1d1d58",
               "title": "Black Friday 2023",
               "description": "Checklist para uma Black Friday tranquila",
               "canonical": "/black-friday-2023"
@@ -554,7 +554,7 @@
         "tags": []
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c4f791fe-9f43-400d-94a0-c203a6dc3b37",
+        "img": "https://assets.decocache.com/starting/9da57ac0-b78f-4afc-9975-ce53afe53bae/1742490888708-c4f791fe-9f43-400d-94a0-c203a6dc3b37",
         "body": {
           "en": {
             "descr": "Use deco.cx's powerful CMS directly from the command line",
@@ -615,7 +615,7 @@
             "descr": "Create and manage Redirects",
             "title": "Redirects",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/be8ca70a-6e2f-42ed-965c-6771e1fcda39",
+              "image": "https://assets.decocache.com/starting/f2b38ae5-bd23-4a46-90d5-69f56cd2b0cb/1742490890057-be8ca70a-6e2f-42ed-965c-6771e1fcda39",
               "title": "Redirects",
               "description": "Create and manage Redirects on deco.cx"
             },
@@ -625,7 +625,7 @@
             "descr": "Create and manage Redirects",
             "title": "Redirects",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/be8ca70a-6e2f-42ed-965c-6771e1fcda39",
+              "image": "https://assets.decocache.com/starting/f2b38ae5-bd23-4a46-90d5-69f56cd2b0cb/1742490890057-be8ca70a-6e2f-42ed-965c-6771e1fcda39",
               "title": "Redirects",
               "description": "Create and manage Redirects on deco.cx"
             },
@@ -639,13 +639,13 @@
         "authorAvatar": "https://cdn.discordapp.com/avatars/87899733435088896/ae5525772e63fc0f47680e90b0902cd2.webp?size=240"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b86b6a80-ca1a-478a-ba30-8499105f146b",
+        "img": "https://assets.decocache.com/starting/e03ba4fa-9fb1-457b-ae5d-fe527ebe5012/1742490891744-b86b6a80-ca1a-478a-ba30-8499105f146b",
         "body": {
           "en": {
             "descr": "Easier to use, refreshed UI, and better JSON editing ",
             "title": "New Editor",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7188c283-d2d7-4a38-bbbd-b4e3db275df4",
+              "image": "https://assets.decocache.com/starting/5852649b-9f02-4179-a50a-c3f87d58322a/1742490893563-7188c283-d2d7-4a38-bbbd-b4e3db275df4",
               "title": "New Editor",
               "description": "Easier to use, refreshed UI, and better JSON editing"
             },
@@ -655,7 +655,7 @@
             "descr": "Easier to use, refreshed UI, and better JSON editing ",
             "title": "New Editor",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7188c283-d2d7-4a38-bbbd-b4e3db275df4",
+              "image": "https://assets.decocache.com/starting/5852649b-9f02-4179-a50a-c3f87d58322a/1742490893563-7188c283-d2d7-4a38-bbbd-b4e3db275df4",
               "title": "New Editor",
               "description": "Easier to use, refreshed UI, and better JSON editing"
             },
@@ -685,7 +685,7 @@
         "author": "Por Maria Cecilia Marques"
       },
       {
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/7330ca54-003b-44b8-b2a5-0379df6e74a8",
+        "img": "https://assets.decocache.com/starting/e679aafe-232a-4fd6-975d-7fcab3b721e7/1742490895251-7330ca54-003b-44b8-b2a5-0379df6e74a8",
         "body": {
           "en": {
             "descr": "Kicking Off October Launch Month 🚀",
@@ -726,7 +726,7 @@
             "descr": "A journey of learning",
             "content": "Over the past six months, we have accumulated a valuable set of lessons while taking stores into production. During this period, we have learned what to avoid, what doesn't work, and the best way to start developing an online store. Below, we share a summary of the lessons we have acquired during this journey.\n\n## **Starting the Development of a Store**\n\nAll projects created at Deco start from a pre-configured template with various components, integrations, and themes. We have noticed that after creating the store, some developers turn to GitHub to modify components and themes directly in the code. Although this is a natural reflex for a developer's work, we have noticed that projects in which development mainly focuses on the CMS (Content Management System) tend to be completed more quickly and with better performance.\n\nThe ideal flow that we have discovered is as follows:\n\n1. Create the project.\n2. Customize the theme, components, SEO optimization, among others through the Deco admin.\n3. Present the result to the end client and collect feedback.\n4. Based on the feedback, adjust the store in the CMS, using the predefined sections, and return to step 3.\n5. If the client is satisfied, migrate the domain to Deco.\n6. If it is necessary to make changes in the code, add specific sections for the use case in question.\n\n## **The `<dialog>` Tag**\n\nIn previous versions of our templates, we used the HTML5 tag **`<dialog>`**. This tag allowed the creation of modals with accessibility support. However, we identified two main problems related to it:\n\n1. It required JavaScript to work properly, which went against our philosophy of minimizing the use of JavaScript on the page.\n2. Recent versions of iPhones (10, 11, and 12) do not support this tag, which forced us to insert \"polyfills\". This insertion was synchronous and significantly affected the performance of the websites.\n\nDue to these two mentioned points, we have adopted an alternative approach using the **`<input type=\"checkbox>`** tag, which is widely supported by all browsers. This change solved both problems. We migrated our templates to this technique and observed an increase in compatibility between our websites and mobile devices.\n\nIf your website is still using the **`<dialog>`** tag, we recommend migrating to **`<input type=\"checkbox>`** as soon as possible to avoid incompatibilities with iPhones. For more information about this approach, please refer to **[this link](https://daisyui.com/components/modal/#method-2-using-a-hidden-checkbox-legacy)**.\n\n## **Absolute Units**\n\nWe noticed that some of our stores had conversion rates below expectations on certain devices, especially iPhones and Android devices. After a deeper analysis, we identified that the \"Go to checkout\" button was being hidden by the browser's address bar in Chrome and Safari on some of these devices.\n\nThis problem occurred due to the use of absolute units, such as **`vh`** (viewport height) and **`vw`** (viewport width), instead of relative units. Absolute units refer to the total size of the device's screen, not taking into account the rendering area of the window, which can hide parts of the user interface.\n\nTo avoid this type of problem, it is essential to avoid the use of absolute units such as **`vh`** and **`vw`**. We recommend reviewing your store to ensure that these units are not being used, especially in the minicart.\n\n## **Flexbox and Percentage Units**\n\nAnother problem that we identified in some stores relates to broken layouts in older versions of Safari. This usually occurs when percentage units are used in conjunction with flexbox. An example of this is the following code snippet:\n\n```html\n<div class=\"flex\">\n   <div class=\"w-full\"/>\n</div>\n\n```\n\nIn this example, we are combining flexbox (class **`flex`**) with percentage units (**`width: 100%`**). This may work in newer browsers but causes issues in older versions of Safari, such as iPhone 10, 11, and 12.\n\nTo solve this problem, we recommend replacing **`w-full`** with classes related to flexbox:\n\n```html\n<div class=\"flex\">\n   <div class=\"flex-grow\"/>\n</div>\n\n```\n\nThis will ensure that the layout works correctly in all browsers.\n\nWe are always keeping up with new projects, collecting feedback, and improving the **[Storefront](https://github.com/deco-sites/storefront)** template.",
             "seo": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1bc67d75-698c-4d38-9035-64b097273881",
+              "image": "https://assets.decocache.com/starting/eb4197fc-9384-4dbb-8de8-b438f7cf60a9/1742490896978-1bc67d75-698c-4d38-9035-64b097273881",
               "title": "6 months of stores in production",
               "description": "A journey of learning"
             }
@@ -785,7 +785,7 @@
         "path": "customer-story-baw",
         "date": "04/25/2023",
         "author": "Maria Cecilia Marques",
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ec116700-62ee-408d-8621-3f8b2db72e8b",
+        "img": "https://assets.decocache.com/starting/8c2654dc-587f-4cc5-b9fd-a8c1c457294c/1742490898724-ec116700-62ee-408d-8621-3f8b2db72e8b",
         "tags": []
       },
       {
@@ -804,7 +804,7 @@
         "path": "como-a-deco-faz-sua-loja-converter-mais.md",
         "date": "04/14/2023",
         "author": "Rafael Crespo",
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/450efa63-082e-427a-b218-e8b3690823cc"
+        "img": "https://assets.decocache.com/starting/8c764d2f-e5ec-41e8-b09c-0fc90f82635c/1742490900484-450efa63-082e-427a-b218-e8b3690823cc"
       },
       {
         "body": {
@@ -822,7 +822,7 @@
         "path": "criando-uma-pagina-com-decocx.md",
         "date": "03/01/2023",
         "author": "Guilherme Tavano",
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/179d2e1f-8214-46f4-bc85-497f2313145e"
+        "img": "https://assets.decocache.com/starting/4418daa2-12c7-45b3-b212-31690daf3fc4/1742490902277-179d2e1f-8214-46f4-bc85-497f2313145e"
       },
       {
         "body": {
@@ -839,7 +839,7 @@
         },
         "path": "apps-era.md",
         "author": "Marcos Candeia, Tiago Gimenes",
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5a07de58-ba83-4c6c-92e1-bea033350318",
+        "img": "https://assets.decocache.com/starting/d5f6899c-f089-40f8-b914-2309946a04da/1742490903848-5a07de58-ba83-4c6c-92e1-bea033350318",
         "date": "01/23/2023",
         "descr": "A era dos Apps!"
       },
@@ -871,7 +871,7 @@
             "seo": {
               "title": "Maximus Tecidos, 2B Digital & deco.cx: A Seamless Transition to Enhanced E-commerce Performance",
               "description": "This article outlines how Maximus Tecidos, in collaboration with Agência 2B Digital, successfully transitioned to deco.cx, resulting in significant improvements in site performance and management ease.",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/341e8759-7fbd-42fd-821b-5382f7cc053a"
+              "image": "https://assets.decocache.com/starting/de17ba41-a8c4-4cfb-80b7-5af9faa39613/1742490905675-341e8759-7fbd-42fd-821b-5382f7cc053a"
             }
           },
           "pt": {
@@ -881,14 +881,14 @@
             "seo": {
               "title": "Maximus Tecidos, 2B Digital & deco.cx: Uma Transição Suave para Melhor Desempenho no E-commerce",
               "description": "Este artigo descreve como a Maximus Tecidos, em colaboração com a Agência 2B Digital, realizou com sucesso a transição para a deco.cx, resultando em melhorias significativas no desempenho do site e na facilidade de gestão",
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/72426ea0-ebee-45a1-9701-79c7cd007bb4"
+              "image": "https://assets.decocache.com/starting/51cb4603-671f-4dbe-9c47-6b779f12c163/1742490909138-72426ea0-ebee-45a1-9701-79c7cd007bb4"
             }
           }
         },
         "path": "maximus-tecidos",
         "date": "05/08/2024",
         "author": "Maria Cecília Marques",
-        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/8903bdfe-fda3-4a79-8b3b-544f64e8f9d6"
+        "img": "https://assets.decocache.com/starting/78d3e067-4712-471c-9738-8c5d798720e0/1742490910586-8903bdfe-fda3-4a79-8b3b-544f64e8f9d6"
       }
     ]
   },

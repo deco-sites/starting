@@ -76,11 +76,11 @@
         ],
         "AltIcon": "treinamento comercial",
         "AltIconMenu": "treinamento comercial",
-        "SidebarIcon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/80b16b46-7b1e-463e-bb8f-8eb2c2b4ae96",
+        "SidebarIcon": "https://assets.decocache.com/starting/3bda3676-be66-473b-83f5-f6668e82674d/1742491650844-80b16b46-7b1e-463e-bb8f-8eb2c2b4ae96",
         "SidebarTitle": "Treinamento comercial",
-        "iconMenuOpen": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/de49691f-91d8-4fdc-8fca-4046b27a0fc1",
+        "iconMenuOpen": "https://assets.decocache.com/starting/ae107ca0-0035-435d-886d-629c40c76f11/1742491652422-de49691f-91d8-4fdc-8fca-4046b27a0fc1",
         "__resolveType": "site/sections/Sidebar.tsx",
-        "iconMenuClose": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c27f8e38-72ee-4faa-a4b4-ba0359ab7bc4"
+        "iconMenuClose": "https://assets.decocache.com/starting/5b329997-618e-4ed4-bd57-6485460fe214/1742491653818-c27f8e38-72ee-4faa-a4b4-ba0359ab7bc4"
       },
       "SectionOnThisPage": {
         "__resolveType": "site/sections/OnThisPage.tsx"

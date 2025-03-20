@@ -1,1 +1,22 @@
-{"Topics":[{"label":"Introdução","SubTopics":[]},{"label":"Agenda","SubTopics":[]},{"label":"Diagnóstico inicial","SubTopics":[]}],"AltIconMenu":"icon menu close/open","SidebarIcon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/fc9b7ec9-18b2-4591-bbf0-f351f850167c","SidebarTitle":"Sales Training","iconMenuOpen":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1b98954c-ab5b-408e-b523-52ed523b1e46","__resolveType":"site/sections/Sidebar.tsx","iconMenuClose":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c08ee218-509d-45cc-98cf-3ac3ad83ab94"}
+{
+  "Topics": [
+    {
+      "label": "Introdução",
+      "SubTopics": []
+    },
+    {
+      "label": "Agenda",
+      "SubTopics": []
+    },
+    {
+      "label": "Diagnóstico inicial",
+      "SubTopics": []
+    }
+  ],
+  "AltIconMenu": "icon menu close/open",
+  "SidebarIcon": "https://assets.decocache.com/starting/8730db4d-2be6-40c3-89d5-357a062d0fa1/1742491128519-fc9b7ec9-18b2-4591-bbf0-f351f850167c",
+  "SidebarTitle": "Sales Training",
+  "iconMenuOpen": "https://assets.decocache.com/starting/2871dbbc-5cec-4a8e-acde-b76371d6de2b/1742491129955-1b98954c-ab5b-408e-b523-52ed523b1e46",
+  "__resolveType": "site/sections/Sidebar.tsx",
+  "iconMenuClose": "https://assets.decocache.com/starting/1774ba52-cba8-43dd-9d2f-5b83e585526e/1742491131358-c08ee218-509d-45cc-98cf-3ac3ad83ab94"
+}

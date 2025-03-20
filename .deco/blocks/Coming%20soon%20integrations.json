@@ -1,1 +1,149 @@
-{"images":[{"href":"https://www.wapstore.com.br/","label":"wap store","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a123ab5e-a854-4295-8f57-9753c9c7a72e","altText":"wap store","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/a123ab5e-a854-4295-8f57-9753c9c7a72e"},{"href":"https://www.deco.cx/pt","label":"Magento","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5bf6549e-68a4-45d0-b946-cddc6d565685","altText":"Magento","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5bf6549e-68a4-45d0-b946-cddc6d565685"},{"href":"https://www.deco.cx/pt","label":"Bigcommerce","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/abe9530c-f844-45da-b9a0-b17701a78b1c","altText":"oracle","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/abe9530c-f844-45da-b9a0-b17701a78b1c"},{"href":"https://www.deco.cx/pt","label":"Wordpress","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1925db5f-1b28-477e-a69d-a67883632691","altText":"wordPress","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1925db5f-1b28-477e-a69d-a67883632691"},{"href":"https://www.salesforce.com/br/products/commerce-cloud/overview/","label":"Salesforce Cloud","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3557ca0e-9251-491f-a1ca-3400c8159192","altText":"salesforce cloud","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/3557ca0e-9251-491f-a1ca-3400c8159192"},{"href":"https://www.oracle.com/br/cx/ecommerce/","label":"Oracle","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/019b44fc-8a9b-4b66-a153-4b3e10282efc","altText":"oracle commerce","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/019b44fc-8a9b-4b66-a153-4b3e10282efc"},{"href":"https://www.deco.cx/pt","label":"Google Analytics","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ced37104-c20a-41e8-bb68-25e76dcfbdee","altText":"sales","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ced37104-c20a-41e8-bb68-25e76dcfbdee"},{"href":"https://sizebay.com/","label":"Sizebay","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/13bf6bf6-5399-4599-b685-9c8666431069","altText":"sizebay","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/13bf6bf6-5399-4599-b685-9c8666431069"},{"href":"https://www.deco.cx/pt","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc25a10f-b59a-4ca2-9565-11ac6d804cd0","altText":"sales","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/dc25a10f-b59a-4ca2-9565-11ac6d804cd0","label":"Jitsu"},{"href":"https://www.deco.cx/pt","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/755f237f-53e7-4bfd-966d-2bb446c891cc","altText":"google ","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/755f237f-53e7-4bfd-966d-2bb446c891cc","label":"Stripe"},{"href":"https://www.deco.cx/pt","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ee62be2d-86cc-42e3-914e-18e14765e8dc","altText":"paypal","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ee62be2d-86cc-42e3-914e-18e14765e8dc","label":"PayPal"},{"href":"https://www.deco.cx/pt","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b2791243-8077-4844-81ec-63efb5c1b169","altText":"pagar.me","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b2791243-8077-4844-81ec-63efb5c1b169","label":"Pagar.me"},{"href":"https://www.deco.cx/pt","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ddcc28c3-0dd1-4ea7-9c11-ee5478b7cc9f","altText":"NuPay","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ddcc28c3-0dd1-4ea7-9c11-ee5478b7cc9f","label":"NuPay"},{"href":"https://www.deco.cx/pt","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b21dd5bb-3e6c-41ef-b30c-803332438c06","altText":"stripe","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/b21dd5bb-3e6c-41ef-b30c-803332438c06","label":"Strapi"},{"href":"https://www.deco.cx/pt","label":"RD Station","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71d18b4f-eda1-4952-8d36-d28a4bbbae20","altText":"RdStation","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/71d18b4f-eda1-4952-8d36-d28a4bbbae20"},{"href":"https://www.bling.com.br/","label":"Bling","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6e17eb4b-6c2d-494e-8925-b54ca1e0e778","altText":"bling erp","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/6e17eb4b-6c2d-494e-8925-b54ca1e0e778"},{"href":"https://tiny.com.br/","label":"Tiny erp","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ce2b8be9-455b-45d0-a132-34dad78c1027","altText":"tiny erp","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ce2b8be9-455b-45d0-a132-34dad78c1027"},{"href":"https://anymarket.com.br/","label":"Any Market","active":true,"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ccbdf1e9-608e-46de-ad56-e89e279ac837","altText":"any market","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/ccbdf1e9-608e-46de-ad56-e89e279ac837"}],"__resolveType":"site/sections/Hub/Integrations.tsx"}
+{
+  "images": [
+    {
+      "href": "https://www.wapstore.com.br/",
+      "label": "wap store",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/f06ac85b-a8ec-4c8e-a5fd-a9f00e74341d/1742491249661-a123ab5e-a854-4295-8f57-9753c9c7a72e",
+      "altText": "wap store",
+      "desktop": "https://assets.decocache.com/starting/f06ac85b-a8ec-4c8e-a5fd-a9f00e74341d/1742491249661-a123ab5e-a854-4295-8f57-9753c9c7a72e"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "label": "Magento",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/ca1907b8-2801-4751-8a32-57746336289f/1742491250873-5bf6549e-68a4-45d0-b946-cddc6d565685",
+      "altText": "Magento",
+      "desktop": "https://assets.decocache.com/starting/ca1907b8-2801-4751-8a32-57746336289f/1742491250873-5bf6549e-68a4-45d0-b946-cddc6d565685"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "label": "Bigcommerce",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/d7aaecd1-560c-473c-a984-e2810e5dbc19/1742491252200-abe9530c-f844-45da-b9a0-b17701a78b1c",
+      "altText": "oracle",
+      "desktop": "https://assets.decocache.com/starting/d7aaecd1-560c-473c-a984-e2810e5dbc19/1742491252200-abe9530c-f844-45da-b9a0-b17701a78b1c"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "label": "Wordpress",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/ac5e4e03-0250-4bff-b550-e77be4590a20/1742491253383-1925db5f-1b28-477e-a69d-a67883632691",
+      "altText": "wordPress",
+      "desktop": "https://assets.decocache.com/starting/ac5e4e03-0250-4bff-b550-e77be4590a20/1742491253383-1925db5f-1b28-477e-a69d-a67883632691"
+    },
+    {
+      "href": "https://www.salesforce.com/br/products/commerce-cloud/overview/",
+      "label": "Salesforce Cloud",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/ff3e81e6-fb8e-40e0-b659-723b633db188/1742491254589-3557ca0e-9251-491f-a1ca-3400c8159192",
+      "altText": "salesforce cloud",
+      "desktop": "https://assets.decocache.com/starting/ff3e81e6-fb8e-40e0-b659-723b633db188/1742491254589-3557ca0e-9251-491f-a1ca-3400c8159192"
+    },
+    {
+      "href": "https://www.oracle.com/br/cx/ecommerce/",
+      "label": "Oracle",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/750319ec-98c0-41ac-a785-eccefd2a22a8/1742491255813-019b44fc-8a9b-4b66-a153-4b3e10282efc",
+      "altText": "oracle commerce",
+      "desktop": "https://assets.decocache.com/starting/750319ec-98c0-41ac-a785-eccefd2a22a8/1742491255813-019b44fc-8a9b-4b66-a153-4b3e10282efc"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "label": "Google Analytics",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/27f5b231-dadd-467e-93d6-9c8807f0b877/1742491257019-ced37104-c20a-41e8-bb68-25e76dcfbdee",
+      "altText": "sales",
+      "desktop": "https://assets.decocache.com/starting/27f5b231-dadd-467e-93d6-9c8807f0b877/1742491257019-ced37104-c20a-41e8-bb68-25e76dcfbdee"
+    },
+    {
+      "href": "https://sizebay.com/",
+      "label": "Sizebay",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/f61012cc-3029-4d24-bf8f-ce198d772eab/1742491258243-13bf6bf6-5399-4599-b685-9c8666431069",
+      "altText": "sizebay",
+      "desktop": "https://assets.decocache.com/starting/f61012cc-3029-4d24-bf8f-ce198d772eab/1742491258243-13bf6bf6-5399-4599-b685-9c8666431069"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/9ad81413-cd0c-4ac8-893e-40441d8d831a/1742491259449-dc25a10f-b59a-4ca2-9565-11ac6d804cd0",
+      "altText": "sales",
+      "desktop": "https://assets.decocache.com/starting/9ad81413-cd0c-4ac8-893e-40441d8d831a/1742491259449-dc25a10f-b59a-4ca2-9565-11ac6d804cd0",
+      "label": "Jitsu"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/edaf7ce2-2d64-4ff0-a4a2-a1cdcda32ff6/1742491260627-755f237f-53e7-4bfd-966d-2bb446c891cc",
+      "altText": "google ",
+      "desktop": "https://assets.decocache.com/starting/edaf7ce2-2d64-4ff0-a4a2-a1cdcda32ff6/1742491260627-755f237f-53e7-4bfd-966d-2bb446c891cc",
+      "label": "Stripe"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/01d16901-186f-41cd-9e75-6dfb75109254/1742491261896-ee62be2d-86cc-42e3-914e-18e14765e8dc",
+      "altText": "paypal",
+      "desktop": "https://assets.decocache.com/starting/01d16901-186f-41cd-9e75-6dfb75109254/1742491261896-ee62be2d-86cc-42e3-914e-18e14765e8dc",
+      "label": "PayPal"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/7e87b1e2-1a0b-4df4-b650-dffb69e84dd2/1742491263310-b2791243-8077-4844-81ec-63efb5c1b169",
+      "altText": "pagar.me",
+      "desktop": "https://assets.decocache.com/starting/7e87b1e2-1a0b-4df4-b650-dffb69e84dd2/1742491263310-b2791243-8077-4844-81ec-63efb5c1b169",
+      "label": "Pagar.me"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/7639f35f-1989-48ac-bef8-f515604929e6/1742491264529-ddcc28c3-0dd1-4ea7-9c11-ee5478b7cc9f",
+      "altText": "NuPay",
+      "desktop": "https://assets.decocache.com/starting/7639f35f-1989-48ac-bef8-f515604929e6/1742491264529-ddcc28c3-0dd1-4ea7-9c11-ee5478b7cc9f",
+      "label": "NuPay"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/43d1d5c2-a70b-4b8f-bc73-8b2d4c1d5ae4/1742491265840-b21dd5bb-3e6c-41ef-b30c-803332438c06",
+      "altText": "stripe",
+      "desktop": "https://assets.decocache.com/starting/43d1d5c2-a70b-4b8f-bc73-8b2d4c1d5ae4/1742491265840-b21dd5bb-3e6c-41ef-b30c-803332438c06",
+      "label": "Strapi"
+    },
+    {
+      "href": "https://www.deco.cx/pt",
+      "label": "RD Station",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/ccc00d85-dafb-4e16-91b1-66b836a9992b/1742491267066-71d18b4f-eda1-4952-8d36-d28a4bbbae20",
+      "altText": "RdStation",
+      "desktop": "https://assets.decocache.com/starting/ccc00d85-dafb-4e16-91b1-66b836a9992b/1742491267066-71d18b4f-eda1-4952-8d36-d28a4bbbae20"
+    },
+    {
+      "href": "https://www.bling.com.br/",
+      "label": "Bling",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/6094187e-3215-4008-a33a-d4e1c78a1f27/1742491268290-6e17eb4b-6c2d-494e-8925-b54ca1e0e778",
+      "altText": "bling erp",
+      "desktop": "https://assets.decocache.com/starting/6094187e-3215-4008-a33a-d4e1c78a1f27/1742491268290-6e17eb4b-6c2d-494e-8925-b54ca1e0e778"
+    },
+    {
+      "href": "https://tiny.com.br/",
+      "label": "Tiny erp",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/b7dd6c45-9665-4a61-a27b-19a23d911304/1742491269549-ce2b8be9-455b-45d0-a132-34dad78c1027",
+      "altText": "tiny erp",
+      "desktop": "https://assets.decocache.com/starting/b7dd6c45-9665-4a61-a27b-19a23d911304/1742491269549-ce2b8be9-455b-45d0-a132-34dad78c1027"
+    },
+    {
+      "href": "https://anymarket.com.br/",
+      "label": "Any Market",
+      "active": true,
+      "mobile": "https://assets.decocache.com/starting/eb32c07b-cde4-4848-ba14-a9f0269420bf/1742491270912-ccbdf1e9-608e-46de-ad56-e89e279ac837",
+      "altText": "any market",
+      "desktop": "https://assets.decocache.com/starting/eb32c07b-cde4-4848-ba14-a9f0269420bf/1742491270912-ccbdf1e9-608e-46de-ad56-e89e279ac837"
+    }
+  ],
+  "__resolveType": "site/sections/Hub/Integrations.tsx"
+}

@@ -1,1 +1,321 @@
-{"name":"Headless CMS for Commerce","path":"/a-headless-commerce","sections":{"variants":[{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"__resolveType":"GTM"},{"__resolveType":"HeaderV2","githubBarText":{"0":"<","1":"p","2":">","3":"⭐","4":" ","5":"6","6":"3","7":" ","8":"—","9":" ","10":"S","11":"t","12":"a","13":"r","14":" ","15":"<","16":"a","17":" ","18":"c","19":"l","20":"a","21":"s","22":"s","23":"=","24":"\"","25":"u","26":"n","27":"d","28":"e","29":"r","30":"l","31":"i","32":"n","33":"e","34":"\"","35":" ","36":"h","37":"r","38":"e","39":"f","40":"=","41":"\"","42":"h","43":"t","44":"t","45":"p","46":"s","47":":","48":"/","49":"/","50":"g","51":"i","52":"t","53":"h","54":"u","55":"b","56":".","57":"c","58":"o","59":"m","60":"/","61":"d","62":"e","63":"c","64":"o","65":"-","66":"c","67":"x","68":"/","69":"d","70":"e","71":"c","72":"o","73":"\"","74":" ","75":"t","76":"a","77":"r","78":"g","79":"e","80":"t","81":"=","82":"\"","83":"_","84":"b","85":"l","86":"a","87":"n","88":"k","89":"\"","90":">","91":"d","92":"e","93":"c","94":"o","95":".","96":"c","97":"x","98":" ","99":"o","100":"n","101":" ","102":"G","103":"i","104":"t","105":"h","106":"u","107":"b","108":"<","109":"/","110":"a","111":">","112":" ","113":"a","114":"n","115":"d","116":" ","117":"h","118":"e","119":"l","120":"p","121":" ","122":"o","123":"t","124":"h","125":"e","126":"r","127":"s","128":" ","129":"d","130":"i","131":"s","132":"c","133":"o","134":"v","135":"e","136":"r","137":" ","138":"o","139":"u","140":"r","141":" ","142":"p","143":"r","144":"o","145":"d","146":"u","147":"c","148":"t","149":"!","150":"<","151":"/","152":"p","153":">","mobile":"<p>⭐ 94 — <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>Star us on Github</u></a>.</p>","desktop":"<p>⭐ 94 — Star <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>deco.cx on Github</u></a> and help others discover our product!</p>"}},{"cta":[{"id":"bt-join-discord","href":"https://discord.gg/deco-cx","text":"Join our Discord","variant":"Normal"},{"id":"bt-click-signup","href":"https://deco.cx/onboarding","text":"Sign Up","variant":"Normal"}],"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/4fc2aaaa-6e54-49ae-9c45-12e1c66b346e","title":"<h4>Looking for a <span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">Headless CMS</span>?&nbsp;<br></h4><h4>Meet the ultimate solution</h4>","placement":"left","description":"deco.cx is an all-in-one frontend platform and your simplified path to adopting headless architecture with speed and affordability, integrated with any commerce backend.","__resolveType":"site/sections/NRF/HeroFlat.tsx"},{"url":"https://deco.cx/pt","title":" Looking for a Headless CMS? - deco.cx Headless Frontend Platform","imageUrl":"/decocx-meta-pt.png","styleUrls":[],"themeColor":"#000","description":"deco.cx is an all-in-one frontend platform and your simplified path to adopting headless architecture with speed and affordability, integrated with any commerce backend.","__resolveType":"site/sections/Head.tsx"},{"lines":["deco.cx is the frontend platform","for high-performance,","budget friendly","and fully personalized digital experiences,","paving your way to a smooth headless adoption."],"animate":false,"__resolveType":"site/sections/NRF/TextLines.tsx","animateOnScroll":true},{"cards":[{"icon":"DecoIcon","text":"Break free from your current platform limitations. Craft unique shopping journeys with limitless customization.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5f6096e4-f74d-419f-aa19-e3ec7b10bc2b","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Freedom to Build</span>&nbsp;<br>Any Experience.</p>"},{"icon":"ArrowRight","text":"No-code visual editor combined with a full-code modern tech stack based on Deno, Typescript and Tailwind.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c42eaf68-960d-4fc1-8e66-68481e82a1d2","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Ship Features Faster</span><br>With and Without Code.</p>"},{"icon":"DecoIcon","text":"Get more visibility boosting Core Web Vitals, Pagespeed and SEO ranking with headless architecture.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0d26ef6b-494e-4fda-b826-6c71affd6e54","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Master Performance&nbsp;</span><br>and SEO</p>"},{"icon":"DecoIcon","text":"Seamlessly transition to headless in under two months – no complications, no stress.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/c89a004b-f383-4031-a416-f37bad97668f","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">&lt; 60-Day Migration﻿,</span><br>Zero Hassles</p>"},{"icon":"DecoIcon","text":"Empower teams with an editor that blends business autonomy with tech efficiency for rapid, collaborative development.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/1e0bc29e-912c-44d8-ac44-309dee2b035a","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Realtime Collaboration</span><br>for Biz and Tech teams</p>"},{"icon":"DecoIcon","text":"Know everything that's going on with your store and code. Find and fix issues instantly with out-of-the-box tools.","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/5b6dd9c9-2029-4f26-8615-1504052fffae","title":"<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Observability&nbsp;</span><br>and Monitoring</p>"}],"__resolveType":"site/sections/NRF/FeaturesWithImage.tsx"},{"cta":{},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/434aab16-8a09-45a6-8583-b32ea906711a","title":"Start Fast With a Pre-Built UI Component Library","placement":"left","description":"Kick off projects swiftly using our complete, extensible and universal library of ready-to-use UI components. Theme anything with in-browser code editor or use our native Design System tooling.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/87f29d2d-8567-495c-8a91-d61c49d944e2","title":"Visual Site Editor to Create Experiences for Each Audience","placement":"right","description":"Go beyond A/B testing. Craft unique digital experiences tailored to each of your audiences, leveraging our intuitive editor and AI co-pílot. ","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{"text":"Button"},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0fe90f86-1e0b-4f1b-b2b4-06feaa5399dc","title":"Integrates With Any Commerce Backend","placement":"left","description":"Enhance your site seamlessly connecting with any e-commerce platform or other APIs for a unified backend experience. ","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":{"text":"Button"},"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/842fc70f-66b0-4910-9738-d757042596f3","title":"100% Managed Infrastructure on Global Edge","placement":"right","description":"Choose between self-hosting or using managed global edge infrastructure that deploys your code in 35 regions around the globe, ensuring the lowest server latency possible and auto-scaling as your grow.","__resolveType":"site/sections/NRF/ImageSection.tsx"},{"cta":[{"href":"https://www.deco.cx/en/contact-us","text":"Book a Demo","variant":"Normal"}],"text":"Are You Ready for Headless?","__resolveType":"site/sections/NRF/CallToAction.tsx"},{"__resolveType":"Deco Footer [EN]"},{"type":"website","title":"Headless CMS for Commerce","noIndexing":true,"description":"deco.cx is an all-in-one frontend platform and your simplified path to adopting headless architecture with speed and affordability, integrated with any commerce backend.","__resolveType":"deco-sites/std/sections/SEO.tsx"}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Headless CMS for Commerce",
+  "path": "/a-headless-commerce",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
+        "value": [
+          {
+            "__resolveType": "GTM"
+          },
+          {
+            "__resolveType": "HeaderV2",
+            "githubBarText": {
+              "0": "<",
+              "1": "p",
+              "2": ">",
+              "3": "⭐",
+              "4": " ",
+              "5": "6",
+              "6": "3",
+              "7": " ",
+              "8": "—",
+              "9": " ",
+              "10": "S",
+              "11": "t",
+              "12": "a",
+              "13": "r",
+              "14": " ",
+              "15": "<",
+              "16": "a",
+              "17": " ",
+              "18": "c",
+              "19": "l",
+              "20": "a",
+              "21": "s",
+              "22": "s",
+              "23": "=",
+              "24": "\"",
+              "25": "u",
+              "26": "n",
+              "27": "d",
+              "28": "e",
+              "29": "r",
+              "30": "l",
+              "31": "i",
+              "32": "n",
+              "33": "e",
+              "34": "\"",
+              "35": " ",
+              "36": "h",
+              "37": "r",
+              "38": "e",
+              "39": "f",
+              "40": "=",
+              "41": "\"",
+              "42": "h",
+              "43": "t",
+              "44": "t",
+              "45": "p",
+              "46": "s",
+              "47": ":",
+              "48": "/",
+              "49": "/",
+              "50": "g",
+              "51": "i",
+              "52": "t",
+              "53": "h",
+              "54": "u",
+              "55": "b",
+              "56": ".",
+              "57": "c",
+              "58": "o",
+              "59": "m",
+              "60": "/",
+              "61": "d",
+              "62": "e",
+              "63": "c",
+              "64": "o",
+              "65": "-",
+              "66": "c",
+              "67": "x",
+              "68": "/",
+              "69": "d",
+              "70": "e",
+              "71": "c",
+              "72": "o",
+              "73": "\"",
+              "74": " ",
+              "75": "t",
+              "76": "a",
+              "77": "r",
+              "78": "g",
+              "79": "e",
+              "80": "t",
+              "81": "=",
+              "82": "\"",
+              "83": "_",
+              "84": "b",
+              "85": "l",
+              "86": "a",
+              "87": "n",
+              "88": "k",
+              "89": "\"",
+              "90": ">",
+              "91": "d",
+              "92": "e",
+              "93": "c",
+              "94": "o",
+              "95": ".",
+              "96": "c",
+              "97": "x",
+              "98": " ",
+              "99": "o",
+              "100": "n",
+              "101": " ",
+              "102": "G",
+              "103": "i",
+              "104": "t",
+              "105": "h",
+              "106": "u",
+              "107": "b",
+              "108": "<",
+              "109": "/",
+              "110": "a",
+              "111": ">",
+              "112": " ",
+              "113": "a",
+              "114": "n",
+              "115": "d",
+              "116": " ",
+              "117": "h",
+              "118": "e",
+              "119": "l",
+              "120": "p",
+              "121": " ",
+              "122": "o",
+              "123": "t",
+              "124": "h",
+              "125": "e",
+              "126": "r",
+              "127": "s",
+              "128": " ",
+              "129": "d",
+              "130": "i",
+              "131": "s",
+              "132": "c",
+              "133": "o",
+              "134": "v",
+              "135": "e",
+              "136": "r",
+              "137": " ",
+              "138": "o",
+              "139": "u",
+              "140": "r",
+              "141": " ",
+              "142": "p",
+              "143": "r",
+              "144": "o",
+              "145": "d",
+              "146": "u",
+              "147": "c",
+              "148": "t",
+              "149": "!",
+              "150": "<",
+              "151": "/",
+              "152": "p",
+              "153": ">",
+              "mobile": "<p>⭐ 94 — <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>Star us on Github</u></a>.</p>",
+              "desktop": "<p>⭐ 94 — Star <a href=\"https://github.com/deco-cx/deco\" target=\"_blank\" rel=\"noopener\" data-mce-href=\"https://github.com/deco-cx/deco\" data-mce-linkchecker-status=\"valid\"><u>deco.cx on Github</u></a> and help others discover our product!</p>"
+            }
+          },
+          {
+            "cta": [
+              {
+                "id": "bt-join-discord",
+                "href": "https://discord.gg/deco-cx",
+                "text": "Join our Discord",
+                "variant": "Normal"
+              },
+              {
+                "id": "bt-click-signup",
+                "href": "https://deco.cx/onboarding",
+                "text": "Sign Up",
+                "variant": "Normal"
+              }
+            ],
+            "image": "https://assets.decocache.com/starting/41c4f6f8-8362-435a-8d63-785076eac70a/1742491184982-4fc2aaaa-6e54-49ae-9c45-12e1c66b346e",
+            "title": "<h4>Looking for a <span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">Headless CMS</span>?&nbsp;<br></h4><h4>Meet the ultimate solution</h4>",
+            "placement": "left",
+            "description": "deco.cx is an all-in-one frontend platform and your simplified path to adopting headless architecture with speed and affordability, integrated with any commerce backend.",
+            "__resolveType": "site/sections/NRF/HeroFlat.tsx"
+          },
+          {
+            "url": "https://deco.cx/pt",
+            "title": " Looking for a Headless CMS? - deco.cx Headless Frontend Platform",
+            "imageUrl": "/decocx-meta-pt.png",
+            "styleUrls": [],
+            "themeColor": "#000",
+            "description": "deco.cx is an all-in-one frontend platform and your simplified path to adopting headless architecture with speed and affordability, integrated with any commerce backend.",
+            "__resolveType": "site/sections/Head.tsx"
+          },
+          {
+            "lines": [
+              "deco.cx is the frontend platform",
+              "for high-performance,",
+              "budget friendly",
+              "and fully personalized digital experiences,",
+              "paving your way to a smooth headless adoption."
+            ],
+            "animate": false,
+            "__resolveType": "site/sections/NRF/TextLines.tsx",
+            "animateOnScroll": true
+          },
+          {
+            "cards": [
+              {
+                "icon": "DecoIcon",
+                "text": "Break free from your current platform limitations. Craft unique shopping journeys with limitless customization.",
+                "image": "https://assets.decocache.com/starting/28ab77d4-7a36-4d3e-85f7-2dc0d7ba1a1a/1742491186873-5f6096e4-f74d-419f-aa19-e3ec7b10bc2b",
+                "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Freedom to Build</span>&nbsp;<br>Any Experience.</p>"
+              },
+              {
+                "icon": "ArrowRight",
+                "text": "No-code visual editor combined with a full-code modern tech stack based on Deno, Typescript and Tailwind.",
+                "image": "https://assets.decocache.com/starting/1afcd440-7fdb-4a62-9474-835f9590d18b/1742491188239-c42eaf68-960d-4fc1-8e66-68481e82a1d2",
+                "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Ship Features Faster</span><br>With and Without Code.</p>"
+              },
+              {
+                "icon": "DecoIcon",
+                "text": "Get more visibility boosting Core Web Vitals, Pagespeed and SEO ranking with headless architecture.",
+                "image": "https://assets.decocache.com/starting/a9bbc107-907c-4766-9620-28a50db7dadb/1742491189572-0d26ef6b-494e-4fda-b826-6c71affd6e54",
+                "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Master Performance&nbsp;</span><br>and SEO</p>"
+              },
+              {
+                "icon": "DecoIcon",
+                "text": "Seamlessly transition to headless in under two months – no complications, no stress.",
+                "image": "https://assets.decocache.com/starting/b079d6d4-108e-4821-bfdc-a59e25ce2956/1742491191148-c89a004b-f383-4031-a416-f37bad97668f",
+                "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">&lt; 60-Day Migration﻿,</span><br>Zero Hassles</p>"
+              },
+              {
+                "icon": "DecoIcon",
+                "text": "Empower teams with an editor that blends business autonomy with tech efficiency for rapid, collaborative development.",
+                "image": "https://assets.decocache.com/starting/a7988b8f-8ad2-4b97-b863-d660a3500d72/1742491192518-1e0bc29e-912c-44d8-ac44-309dee2b035a",
+                "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Realtime Collaboration</span><br>for Biz and Tech teams</p>"
+              },
+              {
+                "icon": "DecoIcon",
+                "text": "Know everything that's going on with your store and code. Find and fix issues instantly with out-of-the-box tools.",
+                "image": "https://assets.decocache.com/starting/bd163f1c-b90b-4846-a400-e7b2fc610001/1742491194107-5b6dd9c9-2029-4f26-8615-1504052fffae",
+                "title": "<p><span style=\"color: rgb(2, 246, 124);\" data-mce-style=\"color: rgb(2, 246, 124);\">Observability&nbsp;</span><br>and Monitoring</p>"
+              }
+            ],
+            "__resolveType": "site/sections/NRF/FeaturesWithImage.tsx"
+          },
+          {
+            "cta": {},
+            "image": "https://assets.decocache.com/starting/6df5c2d1-6520-40b6-8c88-3a8f6ebc27be/1742491195533-434aab16-8a09-45a6-8583-b32ea906711a",
+            "title": "Start Fast With a Pre-Built UI Component Library",
+            "placement": "left",
+            "description": "Kick off projects swiftly using our complete, extensible and universal library of ready-to-use UI components. Theme anything with in-browser code editor or use our native Design System tooling.",
+            "__resolveType": "site/sections/NRF/ImageSection.tsx"
+          },
+          {
+            "cta": {},
+            "image": "https://assets.decocache.com/starting/ac35d416-c9d3-4381-b7d0-35c2384461f3/1742491197148-87f29d2d-8567-495c-8a91-d61c49d944e2",
+            "title": "Visual Site Editor to Create Experiences for Each Audience",
+            "placement": "right",
+            "description": "Go beyond A/B testing. Craft unique digital experiences tailored to each of your audiences, leveraging our intuitive editor and AI co-pílot. ",
+            "__resolveType": "site/sections/NRF/ImageSection.tsx"
+          },
+          {
+            "cta": {
+              "text": "Button"
+            },
+            "image": "https://assets.decocache.com/starting/b3d3615f-040e-4955-991f-654c39a544cc/1742491198763-0fe90f86-1e0b-4f1b-b2b4-06feaa5399dc",
+            "title": "Integrates With Any Commerce Backend",
+            "placement": "left",
+            "description": "Enhance your site seamlessly connecting with any e-commerce platform or other APIs for a unified backend experience. ",
+            "__resolveType": "site/sections/NRF/ImageSection.tsx"
+          },
+          {
+            "cta": {
+              "text": "Button"
+            },
+            "image": "https://assets.decocache.com/starting/5abbb70c-831d-4eb4-b58c-31f5b64d643d/1742491200114-842fc70f-66b0-4910-9738-d757042596f3",
+            "title": "100% Managed Infrastructure on Global Edge",
+            "placement": "right",
+            "description": "Choose between self-hosting or using managed global edge infrastructure that deploys your code in 35 regions around the globe, ensuring the lowest server latency possible and auto-scaling as your grow.",
+            "__resolveType": "site/sections/NRF/ImageSection.tsx"
+          },
+          {
+            "cta": [
+              {
+                "href": "https://www.deco.cx/en/contact-us",
+                "text": "Book a Demo",
+                "variant": "Normal"
+              }
+            ],
+            "text": "Are You Ready for Headless?",
+            "__resolveType": "site/sections/NRF/CallToAction.tsx"
+          },
+          {
+            "__resolveType": "Deco Footer [EN]"
+          },
+          {
+            "type": "website",
+            "title": "Headless CMS for Commerce",
+            "noIndexing": true,
+            "description": "deco.cx is an all-in-one frontend platform and your simplified path to adopting headless architecture with speed and affordability, integrated with any commerce backend.",
+            "__resolveType": "deco-sites/std/sections/SEO.tsx"
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

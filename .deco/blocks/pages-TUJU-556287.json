@@ -4,7 +4,7 @@
   "sections": [
     {
       "__resolveType": "site/sections/tuju/Form.tsx",
-      "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/0dae4387-a2bf-4faa-8b26-932df1285162",
+      "logo": "https://assets.decocache.com/starting/4f7adb70-6a03-408a-a033-3c077d6086dc/1742491181150-0dae4387-a2bf-4faa-8b26-932df1285162",
       "date": "29.07.24",
       "formFields": [
         {
@@ -50,7 +50,7 @@
           "id": "camisa"
         }
       ],
-      "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/00d1ad7e-61d3-41b5-8161-7bf19798d829",
+      "background": "https://assets.decocache.com/starting/3f3a2a03-b041-488b-a46f-9d724583b2f5/1742491183108-00d1ad7e-61d3-41b5-8161-7bf19798d829",
       "sentState": {
         "title": "Obrigado por  preencher o formulário!",
         "text": "Recebemos todas as suas informações e mal podemos esperar para encontrá-lo(a) no jantar no            .Se tiver qualquer dúvida ou precisar de mais informações, é só nos contatar."
