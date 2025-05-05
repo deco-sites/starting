@@ -322,12 +322,6 @@
           "href": "https://deco.cx/pricing-calculator-2025"
         }
       }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Deco Footer [EN]"
-      }
     }
   ],
   "seo": {

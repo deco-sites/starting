@@ -126,7 +126,7 @@ export default function PriceCalculatorIsland() {
                 <label className="block font-medium mb-2">Plans</label>
                 <p className="text-sm text-gray-400 mb-2">
                   Not sure which one is for you? See the{" "}
-                  <a href="#" className="text-emerald-400">
+                  <a href="https://deco.cx/en/contract-updates-2025" className="text-emerald-400">
                     features included
                   </a>{" "}
                   in each plan.
@@ -311,7 +311,7 @@ export default function PriceCalculatorIsland() {
                 </label>
                 <p className="text-sm text-gray-400 mb-2">
                   Not sure which one is for you? See the{" "}
-                  <a href="#" className="text-emerald-400">
+                  <a href="https://deco.cx/en/contract-updates-2025" className="text-emerald-400">
                     features included
                   </a>{" "}
                   in each package.
