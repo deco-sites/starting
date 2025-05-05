@@ -10,6 +10,7 @@ interface INPUT {
   infrastructure: string;
   pageviews: number;
   support: string;
+  currency: string;
 }
 
 export default function PriceCalculatorIsland() {
@@ -105,24 +106,19 @@ export default function PriceCalculatorIsland() {
 
             <div className="space-y-6">
               {/* Currency Selection */}
-              {/* <div>
+              <div>
                 <label className="block font-medium mb-2">Currency</label>
                 <select
                   className={inputStyle}
                   value={inputs.currency}
-                  onChange={(e) =>
-                    setInputs({ ...inputs, currency: e.target.value })
-                  }
+                  onChange={(e: Event) => {
+                    const target = e.target as HTMLSelectElement;
+                    setInputs({ ...inputs, currency: target.value });
+                  }}
                 >
                   <option value="USD">USD ($)</option>
+                  <option value="BRL">BRL (R$)</option>
                 </select>
-              </div> */}
-
-              <div>
-                <label className="block font-medium mb-2">Moeda</label>
-                <div className={inputStyle}>
-                 USD ($)
-                </div>
               </div>
 
               {/* Plans */}
@@ -216,7 +212,9 @@ export default function PriceCalculatorIsland() {
                 </div>
               </div>
 
-              <div className={`${inputs.plan === "enterprise" ? "hidden" : ""}`}>
+              <div
+                className={`${inputs.plan === "enterprise" ? "hidden" : ""}`}
+              >
                 <div>
                   <label className="block text-sm font-medium mb-1">
                     No. of licenses
@@ -380,15 +378,19 @@ export default function PriceCalculatorIsland() {
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
                   <span>Infrastructure</span>
-                  <div className={`${inputs.hosting === "self" ? "hidden" : ""}`}>
+                  <div
+                    className={`${inputs.hosting === "self" ? "hidden" : ""}`}
+                  >
                     <span className="text-emerald-400">
                       {formatToCurrency(
                         estimatedCost.infrastructure.total,
-                        inputs.currency
+                        inputs.currency,
                       )}
                     </span>
                   </div>
-                  <div className={`${inputs.hosting === "cloud" ? "hidden" : ""}`}>
+                  <div
+                    className={`${inputs.hosting === "cloud" ? "hidden" : ""}`}
+                  >
                     <a
                       href="https://meetings.hubspot.com/leandro-borges/alinhamento-clientes-e-parceiros?uuid=444532e8-38a1-497f-96b1-7c7fb7753698"
                       target="_blank"
@@ -419,9 +421,7 @@ export default function PriceCalculatorIsland() {
                     <label className="flex items-center gap-2">
                       <input
                         type="radio"
-                        checked={
-                          inputs.infrastructure === "medium_efficiency"
-                        }
+                        checked={inputs.infrastructure === "medium_efficiency"}
                         onChange={() => {
                           setInputs({
                             ...inputs,
@@ -455,7 +455,7 @@ export default function PriceCalculatorIsland() {
                     <span className="text-sm text-emerald-400">
                       {formatToCurrency(
                         estimatedCost.infrastructure.bandwidth,
-                        inputs.currency
+                        inputs.currency,
                       )}
                     </span>
                   </div>
@@ -465,7 +465,7 @@ export default function PriceCalculatorIsland() {
                     <span className="text-sm text-emerald-400">
                       {formatToCurrency(
                         estimatedCost.infrastructure.request,
-                        inputs.currency
+                        inputs.currency,
                       )}
                     </span>
                   </div>
@@ -501,9 +501,7 @@ export default function PriceCalculatorIsland() {
                   <div className="flex items-center gap-2">
                     <span>Efficient</span>
                     <Tooltip
-                      dataTip={
-                        "Less bandwidth and requests per pageview. Requests/pageview = 7.0. Bandwidth/pageview = 0.3 GB"
-                      }
+                      dataTip={"Less bandwidth and requests per pageview. Requests/pageview = 7.0. Bandwidth/pageview = 0.3 GB"}
                     >
                       <div className="relative inline-flex items-center">
                         <div className="w-4 h-4 rounded-full border border-gray-500">
@@ -515,7 +513,7 @@ export default function PriceCalculatorIsland() {
                   <span className="text-emerald-400">
                     {formatToCurrency(
                       estimatedCost.efficiency.efficient,
-                      inputs.currency
+                      inputs.currency,
                     )}
                   </span>
                 </div>
@@ -524,9 +522,7 @@ export default function PriceCalculatorIsland() {
                     <span>Medium Efficiency</span>
 
                     <Tooltip
-                      dataTip={
-                        "More bandwidth and requests per pageview. Requests/pageview = 8.6. Bandwidth/pageview = 0.7 GB"
-                      }
+                      dataTip={"More bandwidth and requests per pageview. Requests/pageview = 8.6. Bandwidth/pageview = 0.7 GB"}
                     >
                       <div className="relative inline-flex items-center">
                         <div className="w-4 h-4 rounded-full border border-gray-500">
@@ -538,7 +534,7 @@ export default function PriceCalculatorIsland() {
                   <span className="text-emerald-400">
                     {formatToCurrency(
                       estimatedCost.efficiency.medium_efficiency,
-                      inputs.currency
+                      inputs.currency,
                     )}
                   </span>
                 </div>
@@ -546,9 +542,7 @@ export default function PriceCalculatorIsland() {
                   <div className="flex items-center gap-2">
                     <span>Not Optimized</span>
                     <Tooltip
-                      dataTip={
-                        "Even more bandwidth and requests per pageview. Requests/pageview = 10.1. Bandwidth/pageview = 1.0 GB"
-                      }
+                      dataTip={"Even more bandwidth and requests per pageview. Requests/pageview = 10.1. Bandwidth/pageview = 1.0 GB"}
                     >
                       <div className="relative inline-flex items-center">
                         <div className="w-4 h-4 rounded-full border border-gray-500">
@@ -560,7 +554,7 @@ export default function PriceCalculatorIsland() {
                   <span className="text-emerald-400">
                     {formatToCurrency(
                       estimatedCost.efficiency.not_optimized,
-                      inputs.currency
+                      inputs.currency,
                     )}
                   </span>
                 </div>
@@ -568,7 +562,7 @@ export default function PriceCalculatorIsland() {
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   );
 }
@@ -589,59 +583,113 @@ const EFFICIENTY_COSTS = {
 };
 
 function calculateSeats(inputs: INPUT) {
-  const { plan, builder_seats, content_editor_seats, general_seats } = inputs;
+  const { plan, builder_seats, content_editor_seats, general_seats, currency } =
+    inputs;
 
   let seats = 0;
 
   if (plan === "enterprise") {
     /// Builder
-    if (builder_seats > 100) {
-      seats += builder_seats * 50;
-    } else if (builder_seats > 50) {
-      seats += 5000;
-    } else if (builder_seats > 20) {
-      seats += 3000;
-    } else if (builder_seats > 10) {
-      seats += 1400;
-    } else if (builder_seats > 5) {
-      seats += 800;
-    } else if (builder_seats > 1) {
-      seats += 450;
-    } else if (builder_seats === 1) {
-      seats += 100;
-    }
+    if (currency === "USD") {
+      if (builder_seats > 100) {
+        seats += builder_seats * 50;
+      } else if (builder_seats > 50) {
+        seats += 5000;
+      } else if (builder_seats > 20) {
+        seats += 3000;
+      } else if (builder_seats > 10) {
+        seats += 1400;
+      } else if (builder_seats > 5) {
+        seats += 800;
+      } else if (builder_seats > 1) {
+        seats += 450;
+      } else if (builder_seats === 1) {
+        seats += 100;
+      }
 
-    /// Content Editor
-    if (content_editor_seats > 100) {
-      seats += content_editor_seats * 25;
-    } else if (content_editor_seats > 50) {
-      seats += 2500;
-    } else if (content_editor_seats > 20) {
-      seats += 1500;
-    } else if (content_editor_seats > 10) {
-      seats += 700;
-    } else if (content_editor_seats > 5) {
-      seats += 400;
-    } else if (content_editor_seats > 1) {
-      seats += 225;
-    } else if (content_editor_seats === 1) {
-      seats += 50;
+      /// Content Editor
+      if (content_editor_seats > 100) {
+        seats += content_editor_seats * 25;
+      } else if (content_editor_seats > 50) {
+        seats += 2500;
+      } else if (content_editor_seats > 20) {
+        seats += 1500;
+      } else if (content_editor_seats > 10) {
+        seats += 700;
+      } else if (content_editor_seats > 5) {
+        seats += 400;
+      } else if (content_editor_seats > 1) {
+        seats += 225;
+      } else if (content_editor_seats === 1) {
+        seats += 50;
+      }
+    } else {
+      if (builder_seats > 100) {
+        seats += builder_seats * 250;
+      } else if (builder_seats > 50) {
+        seats += 25000;
+      } else if (builder_seats > 20) {
+        seats += 15000;
+      } else if (builder_seats > 10) {
+        seats += 7000;
+      } else if (builder_seats > 5) {
+        seats += 4000;
+      } else if (builder_seats > 1) {
+        seats += 2250;
+      } else if (builder_seats === 1) {
+        seats += 500;
+      }
+
+      /// Content Editor
+      if (content_editor_seats > 100) {
+        seats += content_editor_seats * 125;
+      } else if (content_editor_seats > 50) {
+        seats += 12500;
+      } else if (content_editor_seats > 20) {
+        seats += 7500;
+      } else if (content_editor_seats > 10) {
+        seats += 3500;
+      } else if (content_editor_seats > 5) {
+        seats += 2000;
+      } else if (content_editor_seats > 1) {
+        seats += 1125;
+      } else if (content_editor_seats === 1) {
+        seats += 250;
+      }
     }
   } else {
-    if (general_seats > 100) {
-      seats += 6 * general_seats;
-    } else if (general_seats > 50) {
-      seats += 600;
-    } else if (general_seats > 20) {
-      seats += 350;
-    } else if (general_seats > 10) {
-      seats += 160;
-    } else if (general_seats > 5) {
-      seats += 90;
-    } else if (general_seats > 1) {
-      seats += 50;
-    } else if (general_seats === 1) {
-      seats += 11;
+    if (currency === "USD") {
+      if (general_seats > 100) {
+        seats += 6 * general_seats;
+      } else if (general_seats > 50) {
+        seats += 600;
+      } else if (general_seats > 20) {
+        seats += 350;
+      } else if (general_seats > 10) {
+        seats += 160;
+      } else if (general_seats > 5) {
+        seats += 90;
+      } else if (general_seats > 1) {
+        seats += 50;
+      } else if (general_seats === 1) {
+        seats += 11;
+      }
+    } else {
+      if (general_seats > 100) {
+        seats += 30 * general_seats;
+      } else if (general_seats > 50) {
+        seats += 3000;
+      } else if (general_seats > 20) {
+        seats += 1750;
+      } else if (general_seats > 10) {
+        seats += 800;
+      } else if (general_seats > 5) {
+        seats += 450;
+      } else if (general_seats > 1) {
+        seats += 250;
+      } else if (general_seats === 1) {
+        seats += 55;
+      }
     }
   }
 
@@ -649,22 +697,25 @@ function calculateSeats(inputs: INPUT) {
 }
 
 function calculateInfrastructure(inputs: INPUT) {
-  let { pageviews, infrastructure, hosting } = inputs;
+  let { pageviews, infrastructure, hosting, currency } = inputs;
 
   if (isNaN(pageviews)) {
     pageviews = 0;
   }
 
   const result = {
-    not_optimized: calculateScenario(pageviews, "not_optimized"),
-    medium_efficiency: calculateScenario(pageviews, "medium_efficiency"),
-    efficient: calculateScenario(pageviews, "efficient"),
+    not_optimized: calculateScenario(pageviews, "not_optimized", currency),
+    medium_efficiency: calculateScenario(
+      pageviews,
+      "medium_efficiency",
+      currency,
+    ),
+    efficient: calculateScenario(pageviews, "efficient", currency),
   };
 
-  const selectedInfrastructure =
-    hosting === "self"
-      ? { total: 0, bandwidth: 0, request: 0 }
-      : result[infrastructure];
+  const selectedInfrastructure = hosting === "self"
+    ? { total: 0, bandwidth: 0, request: 0 }
+    : result[infrastructure];
 
   return {
     selectedInfrastructure,
@@ -672,32 +723,52 @@ function calculateInfrastructure(inputs: INPUT) {
   };
 }
 
-function calculateScenario(pageviews: number, infrastructureType: string) {
+function calculateScenario(
+  pageviews: number,
+  infrastructureType: string,
+  currency: string,
+) {
   const { bandwidth: bandwidthCost, request: requestCost } =
     EFFICIENTY_COSTS[infrastructureType];
 
-  const bandwidth = pageviews * bandwidthCost * 0.001;
-  const request = pageviews * requestCost * 0.00008;
+  const bandwidth = pageviews * bandwidthCost *
+    (currency === "USD" ? 0.001 : 0.005);
+  const request = pageviews * requestCost *
+    (currency === "USD" ? 0.00008 : 0.0004);
   const total = bandwidth + request;
 
   return { total, bandwidth, request };
 }
 
 function calculateSupport(input: INPUT) {
-  const support = input.support;
+  const { support, currency } = input;
 
   let cost = 0;
 
-  switch (support) {
-    case "free":
-      cost = 0;
-      break;
-    case "premium":
-      cost = 1000;
-      break;
-    case "enterprise":
-      cost = 2000;
-      break;
+  if (currency === "USD") {
+    switch (support) {
+      case "free":
+        cost = 0;
+        break;
+      case "premium":
+        cost = 1000;
+        break;
+      case "enterprise":
+        cost = 2000;
+        break;
+    }
+  } else {
+    switch (support) {
+      case "free":
+        cost = 0;
+        break;
+      case "premium":
+        cost = 5000;
+        break;
+      case "enterprise":
+        cost = 10000;
+        break;
+    }
   }
 
   return cost;

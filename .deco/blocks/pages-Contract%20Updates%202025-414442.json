@@ -1,0 +1,335 @@
+{
+  "name": "Contract Updates 2025",
+  "path": "/en/contract-updates-2025",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "HeaderV2"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ContAtt.tsx",
+        "mainTitle": "💸Contract Updates",
+        "subtitle": "Effective March 2025",
+        "introParagraph": "All contracts signed before August 2024 will be updated to the new deco.cx billing models. The purpose of these changes is to align our business model with the new features and capabilities of the product.",
+        "changesTitle": "What's Changing?",
+        "changes": [
+          {
+            "title": "1. Seat-Based Pricing",
+            "text": "We're introducing user-based licensing. This means you'll now pay based on the number of users who have access to your project."
+          },
+          {
+            "title": "2. Usage-Based Hosting Fees",
+            "text": "We're replacing the pageview-based pricing model with a simpler, more transparent structure based on requests and bandwidth usage."
+          },
+          {
+            "title": "3. New Support Packages",
+            "text": "We're rolling out new premium support options for those who need more dedicated service and faster response times."
+          }
+        ],
+        "cta1": {
+          "text": "deco.cx Pricing Calculator",
+          "href": "https://deco.cx/en/pricing-calculator-2025"
+        },
+        "licensingTitle": "Licensing Costs",
+        "licensingParagraph": "We offer two plan types -Pro and Enterprise, each with different features and capabilities.",
+        "licensingList": [
+          {
+            "text": "Pro Plan: Core features for standard projects."
+          },
+          {
+            "text": "Enterprise Plan: Advanced tools like SSO, custom permissions, and approval workflows."
+          }
+        ],
+        "plansTable": {
+          "title": "Plans - included features",
+          "plans": [
+            {
+              "name": "Pro",
+              "features": [
+                {
+                  "text": "Integrated Git-Based CMS"
+                },
+                {
+                  "text": "Web IDE with live previews"
+                },
+                {
+                  "text": "Unlimited projects"
+                },
+                {
+                  "text": "Shareable and reusable component library"
+                },
+                {
+                  "text": "Design Systems Library (Themes)"
+                },
+                {
+                  "text": "Integrated blog application"
+                },
+                {
+                  "text": "Integrated Landing Pages"
+                },
+                {
+                  "text": "Custom domains"
+                },
+                {
+                  "text": "Real-time analytics"
+                },
+                {
+                  "text": "Real-time observability"
+                },
+                {
+                  "text": "Real-time performance metrics"
+                },
+                {
+                  "text": "Integrated SQLite database"
+                },
+                {
+                  "text": "Personalization tools: A/B testing, content segmentation"
+                },
+                {
+                  "text": "AI Copilot with 25 generations per user per month"
+                }
+              ]
+            },
+            {
+              "name": "Enterprise",
+              "features": [
+                {
+                  "text": "Integrated Git-Based CMS"
+                },
+                {
+                  "text": "Web IDE with live previews"
+                },
+                {
+                  "text": "Unlimited projects"
+                },
+                {
+                  "text": "Shareable and reusable component library"
+                },
+                {
+                  "text": "Design Systems Library (Themes)"
+                },
+                {
+                  "text": "Integrated blog and Landing Page"
+                },
+                {
+                  "text": "Custom domains"
+                },
+                {
+                  "text": "Real-time analytics"
+                },
+                {
+                  "text": "Real-time observability"
+                },
+                {
+                  "text": "Real-time performance metrics"
+                },
+                {
+                  "text": "Integrated SQLite database"
+                },
+                {
+                  "text": "Personalization tools: A/B testing, content segmentation"
+                },
+                {
+                  "text": "AI Copilot with 50 generations per user per month"
+                },
+                {
+                  "text": "Custom permissions"
+                },
+                {
+                  "text": "Publication approval workflow"
+                }
+              ]
+            }
+          ]
+        },
+        "seatsCalcTitle": "How to Calculate User Costs:",
+        "seatsCalcSteps": [
+          {
+            "label": "1.",
+            "value": "Check the number of users accessing your project in the admin panel (excluding the deco.cx or carcara.tech teams). You can find this information in the Billing section under \"Number of Seats.\""
+          },
+          {
+            "label": "2.",
+            "value": "Select the appropriate package from the pricing table below."
+          }
+        ],
+        "priceTableEnterprise": {
+          "title": "Enterprise Plan",
+          "rows": [
+            {
+              "seats": "1",
+              "builder": "$100 / month",
+              "builderPerSeat": "$100 / seat",
+              "contentEditor": "$50 / month",
+              "contentEditorPerSeat": "$50 / seat"
+            },
+            {
+              "seats": "5",
+              "builder": "$450 / month",
+              "builderPerSeat": "$90 / seat",
+              "contentEditor": "$225 / month",
+              "contentEditorPerSeat": "$45 / seat"
+            },
+            {
+              "seats": "10",
+              "builder": "$800 / month",
+              "builderPerSeat": "$80 / seat",
+              "contentEditor": "$400 / month",
+              "contentEditorPerSeat": "$40 / seat"
+            },
+            {
+              "seats": "20",
+              "builder": "$1,400 / month",
+              "builderPerSeat": "$70 / seat",
+              "contentEditor": "$700 / month",
+              "contentEditorPerSeat": "$35 / seat"
+            },
+            {
+              "seats": "50",
+              "builder": "$3,000 / month",
+              "builderPerSeat": "$60 / seat",
+              "contentEditor": "$1,500 / month",
+              "contentEditorPerSeat": "$30 / seat"
+            },
+            {
+              "seats": "100",
+              "builder": "$5,000 / month",
+              "builderPerSeat": "$50 / seat",
+              "contentEditor": "$2,500 / month",
+              "contentEditorPerSeat": "$25 / seat"
+            },
+            {
+              "seats": "100+",
+              "builder": "Scales accordingly",
+              "builderPerSeat": "$50 / additional seat",
+              "contentEditor": "Scales accordingly",
+              "contentEditorPerSeat": "$25 / additional seat"
+            }
+          ]
+        },
+        "priceTablePro": {
+          "title": "Pro Plan",
+          "rows": [
+            {
+              "seats": "1",
+              "price": "$11 / month",
+              "pricePerSeat": "$11 / seat"
+            },
+            {
+              "seats": "5",
+              "price": "$50 / month",
+              "pricePerSeat": "$10 / seat"
+            },
+            {
+              "seats": "10",
+              "price": "$90 / month",
+              "pricePerSeat": "$9 / seat"
+            },
+            {
+              "seats": "20",
+              "price": "$160 / month",
+              "pricePerSeat": "$8 / seat"
+            },
+            {
+              "seats": "50",
+              "price": "$350 / month",
+              "pricePerSeat": "$7 / seat"
+            },
+            {
+              "seats": "100",
+              "price": "$600 / month",
+              "pricePerSeat": "$6 / seat"
+            },
+            {
+              "seats": "100+",
+              "price": "Scales accordingly",
+              "pricePerSeat": "$6 / additional seat"
+            }
+          ]
+        },
+        "proExampleTitle": "Example (Pro Plan):",
+        "proExampleText": "If your team has 12 users, you'll need the 20-seat package, which costs $160/month.",
+        "entExampleTitle": "Example (Enterprise Plan):",
+        "entExampleText": "For 7 Builders and 25 Content Editors, choose:",
+        "entExampleList": [
+          {
+            "label": "10-Builder package",
+            "value": "$800/month"
+          },
+          {
+            "label": "50-Content Editor package",
+            "value": "$1,500/month"
+          },
+          {
+            "label": "Total",
+            "value": "$2,300/month"
+          }
+        ],
+        "hostingTitle": "Hosting Charges",
+        "hostingParagraph": "We're moving away from the $8 per 10,000 pageviews model (which assumed 10 requests per pageview) and are shifting to a straightforward usage-based approach:",
+        "hostingList": [
+          {
+            "text": "$80 per 1 million requests"
+          },
+          {
+            "text": "$1 per 1 GB of bandwidth"
+          }
+        ],
+        "hostingExtraParagraph": "Previously, we limited requests to 10 per pageview, with any excess billed at $0.08 per 1,000 extra requests (equivalent to $80 per 1 million requests). You can view your average request count in the Billing panel.",
+        "hostingExamples": [
+          {
+            "label": "Example",
+            "value": "For 2.3 million requests: (2,300,000 / 1,000,000) * 80 = $184"
+          },
+          {
+            "label": "Bandwidth Charges",
+            "value": "Bandwidth is billed at $1 per GB of data transfer. In the previous model, we included 1 GB per 10,000 pageviews, with any additional usage billed at $1 per GB."
+          },
+          {
+            "label": "Example",
+            "value": "If your site consumed 150 GB last month: 150 * 1 = $150"
+          }
+        ],
+        "supportTitle": "Support Options",
+        "supportList": [
+          {
+            "title": "1. Community Support (Free)",
+            "text": "Access our #deco-help channel on Discord, connect with other users, and join daily Q&A sessions with our #deco-pros. No guaranteed response time (SLA)."
+          },
+          {
+            "title": "2. Premium Support ($1,000/month)",
+            "text": "Priority support via email and Discord tickets with a 24-hour response time SLA."
+          },
+          {
+            "title": "3. Enterprise Support ($2,000/month)",
+            "text": "Weekly check-ins, top-priority support, and a 5-hour response time SLA."
+          }
+        ],
+        "whyChangeTitle": "Why Are We Making These Changes?",
+        "whyChangeParagraph1": "Over the past year, we've enhanced the product and introduced features tailored for broader use cases, including internal tools projects and self-hosting.",
+        "whyChangeParagraph2": "In light of these updates, our previous pricing model based solely on hosting no longer fits. The new structure is designed to offer better transparency and align with our expanded feature set.",
+        "whatToDoTitle": "What's Next?",
+        "whatToDoParagraph1": "By February 2025, you'll need to sign the updated contract to continue using deco.cx services, confirming your acceptance of the new pricing terms. We'll be sending out the new agreements soon.",
+        "whatToDoParagraph2": "To get a sense of your total costs under the new model, check out our:",
+        "finalCTA": {
+          "text": "deco.cx Pricing Calculator",
+          "href": "https://deco.cx/en/pricing-calculator-2025"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Deco Footer [EN]"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

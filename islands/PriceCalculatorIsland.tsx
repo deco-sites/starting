@@ -10,6 +10,7 @@ interface INPUT {
   infrastructure: string;
   pageviews: number;
   support: string;
+  currency: string;
 }
 
 export default function PriceCalculatorIsland() {
@@ -102,23 +103,19 @@ export default function PriceCalculatorIsland() {
 
             <div className="space-y-6">
               {/* Currency Selection */}
-              {/* <div>
+              <div>
                 <label className="block font-medium mb-2">Moeda</label>
                 <select
                   className={inputStyle}
                   value={inputs.currency}
-                  onChange={(e) =>
-                    setInputs({ ...inputs, currency: e.target.value })}
+                  onChange={(e: Event) => {
+                    const target = e.target as HTMLSelectElement;
+                    setInputs({ ...inputs, currency: target.value });
+                  }}
                 >
                   <option value="BRL">BRL (R$)</option>
+                  <option value="USD">USD ($)</option>
                 </select>
-              </div> */}
-
-              <div>
-                <label className="block font-medium mb-2">Moeda</label>
-                <div className={inputStyle}>
-                  BRL (R$)
-                </div>
               </div>
 
               {/* Plans */}
@@ -126,7 +123,10 @@ export default function PriceCalculatorIsland() {
                 <label className="block font-medium mb-2">Planos</label>
                 <p className="text-sm text-gray-400 mb-2">
                   Não sabe qual é para você? Veja os{" "}
-                  <a href="https://deco.cx/atualizacoes-contratuais-2025" className="text-emerald-400">
+                  <a
+                    href="https://deco.cx/atualizacoes-contratuais-2025"
+                    className="text-emerald-400"
+                  >
                     recursos incluídos
                   </a>{" "}
                   em cada plano.
@@ -312,7 +312,10 @@ export default function PriceCalculatorIsland() {
                 </label>
                 <p className="text-sm text-gray-400 mb-2">
                   Não sabe qual é para você? Veja os{" "}
-                  <a href="https://deco.cx/atualizacoes-contratuais-2025" className="text-emerald-400">
+                  <a
+                    href="https://deco.cx/atualizacoes-contratuais-2025"
+                    className="text-emerald-400"
+                  >
                     recursos incluídos
                   </a>{" "}
                   em cada pacote.
@@ -371,7 +374,7 @@ export default function PriceCalculatorIsland() {
               <div className="flex justify-between items-center">
                 <span>Licenciamento de seats</span>
                 <span className="text-emerald-400">
-                  {formatToReal(estimatedCost.seats)}
+                  {formatToCurrency(estimatedCost.seats, inputs.currency)}
                 </span>
               </div>
 
@@ -383,7 +386,10 @@ export default function PriceCalculatorIsland() {
                     className={`${inputs.hosting === "self" ? "hidden" : ""}`}
                   >
                     <span className="text-emerald-400">
-                      {formatToReal(estimatedCost.infrastructure.total)}
+                      {formatToCurrency(
+                        estimatedCost.infrastructure.total,
+                        inputs.currency,
+                      )}
                     </span>
                   </div>
                   <div
@@ -391,7 +397,7 @@ export default function PriceCalculatorIsland() {
                   >
                     <a
                       href="https://meetings.hubspot.com/leandro-borges/alinhamento-clientes-e-parceiros?uuid=444532e8-38a1-497f-96b1-7c7fb7753698"
-                      target= "_blank"
+                      target="_blank"
                       className="underline"
                     >
                       Fale com o nosso time de vendas
@@ -453,14 +459,20 @@ export default function PriceCalculatorIsland() {
                   <div className="flex justify-between items-center pl-4">
                     <span className="text-sm">Banda</span>
                     <span className="text-sm text-emerald-400">
-                      {formatToReal(estimatedCost.infrastructure.bandwidth)}
+                      {formatToCurrency(
+                        estimatedCost.infrastructure.bandwidth,
+                        inputs.currency,
+                      )}
                     </span>
                   </div>
 
                   <div className="flex justify-between items-center pl-4">
                     <span className="text-sm">Request</span>
                     <span className="text-sm text-emerald-400">
-                      {formatToReal(estimatedCost.infrastructure.request)}
+                      {formatToCurrency(
+                        estimatedCost.infrastructure.request,
+                        inputs.currency,
+                      )}
                     </span>
                   </div>
                 </div>
@@ -470,7 +482,7 @@ export default function PriceCalculatorIsland() {
               <div className="flex justify-between items-center">
                 <span>Suporte</span>
                 <span className="text-emerald-400">
-                  {formatToReal(estimatedCost.support)}
+                  {formatToCurrency(estimatedCost.support, inputs.currency)}
                 </span>
               </div>
 
@@ -479,7 +491,7 @@ export default function PriceCalculatorIsland() {
                 <div className="flex justify-between items-center">
                   <span className="font-semibold">Custo Mensal Total</span>
                   <span className="text-xl font-bold text-emerald-400">
-                    {formatToReal(estimatedCost.total)}
+                    {formatToCurrency(estimatedCost.total, inputs.currency)}
                   </span>
                 </div>
               </div>
@@ -505,7 +517,10 @@ export default function PriceCalculatorIsland() {
                     </Tooltip>
                   </div>
                   <span className="text-emerald-400">
-                    {formatToReal(estimatedCost.efficiency.efficient)}
+                    {formatToCurrency(
+                      estimatedCost.efficiency.efficient,
+                      inputs.currency,
+                    )}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
@@ -523,7 +538,10 @@ export default function PriceCalculatorIsland() {
                     </Tooltip>
                   </div>
                   <span className="text-emerald-400">
-                    {formatToReal(estimatedCost.efficiency.medium_efficiency)}
+                    {formatToCurrency(
+                      estimatedCost.efficiency.medium_efficiency,
+                      inputs.currency,
+                    )}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
@@ -540,7 +558,10 @@ export default function PriceCalculatorIsland() {
                     </Tooltip>
                   </div>
                   <span className="text-emerald-400">
-                    {formatToReal(estimatedCost.efficiency.not_optimized)}
+                    {formatToCurrency(
+                      estimatedCost.efficiency.not_optimized,
+                      inputs.currency,
+                    )}
                   </span>
                 </div>
               </div>
@@ -568,59 +589,113 @@ const EFFICIENTY_COSTS = {
 };
 
 function calculateSeats(inputs: INPUT) {
-  const { plan, builder_seats, content_editor_seats, general_seats } = inputs;
+  const { plan, builder_seats, content_editor_seats, general_seats, currency } =
+    inputs;
 
   let seats = 0;
 
   if (plan === "enterprise") {
     /// Builder
-    if (builder_seats > 100) {
-      seats += builder_seats * 250;
-    } else if (builder_seats > 50) {
-      seats += 25000;
-    } else if (builder_seats > 20) {
-      seats += 15000;
-    } else if (builder_seats > 10) {
-      seats += 7000;
-    } else if (builder_seats > 5) {
-      seats += 4000;
-    } else if (builder_seats > 1) {
-      seats += 2250;
-    } else if (builder_seats === 1) {
-      seats += 500;
-    }
+    if (currency === "BRL") {
+      if (builder_seats > 100) {
+        seats += builder_seats * 250;
+      } else if (builder_seats > 50) {
+        seats += 25000;
+      } else if (builder_seats > 20) {
+        seats += 15000;
+      } else if (builder_seats > 10) {
+        seats += 7000;
+      } else if (builder_seats > 5) {
+        seats += 4000;
+      } else if (builder_seats > 1) {
+        seats += 2250;
+      } else if (builder_seats === 1) {
+        seats += 500;
+      }
 
-    /// Content Editor
-    if (content_editor_seats > 100) {
-      seats += content_editor_seats * 125;
-    } else if (content_editor_seats > 50) {
-      seats += 12500;
-    } else if (content_editor_seats > 20) {
-      seats += 7500;
-    } else if (content_editor_seats > 10) {
-      seats += 3500;
-    } else if (content_editor_seats > 5) {
-      seats += 2000;
-    } else if (content_editor_seats > 1) {
-      seats += 1125;
-    } else if (content_editor_seats === 1) {
-      seats += 250;
+      /// Content Editor
+      if (content_editor_seats > 100) {
+        seats += content_editor_seats * 125;
+      } else if (content_editor_seats > 50) {
+        seats += 12500;
+      } else if (content_editor_seats > 20) {
+        seats += 7500;
+      } else if (content_editor_seats > 10) {
+        seats += 3500;
+      } else if (content_editor_seats > 5) {
+        seats += 2000;
+      } else if (content_editor_seats > 1) {
+        seats += 1125;
+      } else if (content_editor_seats === 1) {
+        seats += 250;
+      }
+    } else {
+      if (builder_seats > 100) {
+        seats += builder_seats * 50;
+      } else if (builder_seats > 50) {
+        seats += 5000;
+      } else if (builder_seats > 20) {
+        seats += 3000;
+      } else if (builder_seats > 10) {
+        seats += 1400;
+      } else if (builder_seats > 5) {
+        seats += 800;
+      } else if (builder_seats > 1) {
+        seats += 450;
+      } else if (builder_seats === 1) {
+        seats += 100;
+      }
+
+      /// Content Editor
+      if (content_editor_seats > 100) {
+        seats += content_editor_seats * 25;
+      } else if (content_editor_seats > 50) {
+        seats += 2500;
+      } else if (content_editor_seats > 20) {
+        seats += 1500;
+      } else if (content_editor_seats > 10) {
+        seats += 700;
+      } else if (content_editor_seats > 5) {
+        seats += 400;
+      } else if (content_editor_seats > 1) {
+        seats += 225;
+      } else if (content_editor_seats === 1) {
+        seats += 50;
+      }
     }
   } else {
-    if (general_seats > 100) {
-      seats += 30 * general_seats;
-    } else if (general_seats > 50) {
-      seats += 3000;
-    } else if (general_seats > 20) {
-      seats += 1750;
-    } else if (general_seats > 10) {
-      seats += 800;
-    } else if (general_seats > 5) {
-      seats += 450;
-    } else if (general_seats > 1) {
-      seats += 250;
-    } else if (general_seats === 1) {
-      seats += 55;
+    if (currency === "BRL") {
+      if (general_seats > 100) {
+        seats += 30 * general_seats;
+      } else if (general_seats > 50) {
+        seats += 3000;
+      } else if (general_seats > 20) {
+        seats += 1750;
+      } else if (general_seats > 10) {
+        seats += 800;
+      } else if (general_seats > 5) {
+        seats += 450;
+      } else if (general_seats > 1) {
+        seats += 250;
+      } else if (general_seats === 1) {
+        seats += 55;
+      }
+    } else {
+      if (general_seats > 100) {
+        seats += 6 * general_seats;
+      } else if (general_seats > 50) {
+        seats += 600;
+      } else if (general_seats > 20) {
+        seats += 350;
+      } else if (general_seats > 10) {
+        seats += 160;
+      } else if (general_seats > 5) {
+        seats += 90;
+      } else if (general_seats > 1) {
+        seats += 50;
+      } else if (general_seats === 1) {
+        seats += 11;
+      }
     }
   }
 
@@ -628,19 +703,23 @@ function calculateSeats(inputs: INPUT) {
 }
 
 function calculateInfrastructure(inputs: INPUT) {
-  let { pageviews, infrastructure, hosting } = inputs;
+  let { pageviews, infrastructure, hosting, currency } = inputs;
 
   if (isNaN(pageviews)) {
     pageviews = 0;
   }
 
   const result = {
-    not_optimized: calculateScenario(pageviews, "not_optimized"),
-    medium_efficiency: calculateScenario(pageviews, "medium_efficiency"),
-    efficient: calculateScenario(pageviews, "efficient"),
+    not_optimized: calculateScenario(pageviews, "not_optimized", currency),
+    medium_efficiency: calculateScenario(
+      pageviews,
+      "medium_efficiency",
+      currency,
+    ),
+    efficient: calculateScenario(pageviews, "efficient", currency),
   };
 
-  const selectedInfrastructure = (hosting === "self")
+  const selectedInfrastructure = hosting === "self"
     ? { total: 0, bandwidth: 0, request: 0 }
     : result[infrastructure];
 
@@ -650,41 +729,61 @@ function calculateInfrastructure(inputs: INPUT) {
   };
 }
 
-function calculateScenario(pageviews: number, infrastructureType: string) {
+function calculateScenario(
+  pageviews: number,
+  infrastructureType: string,
+  currency: string,
+) {
   const { bandwidth: bandwidthCost, request: requestCost } =
     EFFICIENTY_COSTS[infrastructureType];
 
-  const bandwidth = pageviews * bandwidthCost * 0.005;
-  const request = pageviews * requestCost * 0.0004;
+  const bandwidth = pageviews * bandwidthCost *
+    (currency === "BRL" ? 0.005 : 0.001);
+  const request = pageviews * requestCost *
+    (currency === "BRL" ? 0.0004 : 0.00008);
   const total = bandwidth + request;
 
   return { total, bandwidth, request };
 }
 
 function calculateSupport(input: INPUT) {
-  const support = input.support;
+  const { support, currency } = input;
 
   let cost = 0;
 
-  switch (support) {
-    case "free":
-      cost = 0;
-      break;
-    case "premium":
-      cost = 5000;
-      break;
-    case "enterprise":
-      cost = 10000;
-      break;
+  if (currency === "BRL") {
+    switch (support) {
+      case "free":
+        cost = 0;
+        break;
+      case "premium":
+        cost = 5000;
+        break;
+      case "enterprise":
+        cost = 10000;
+        break;
+    }
+  } else {
+    switch (support) {
+      case "free":
+        cost = 0;
+        break;
+      case "premium":
+        cost = 1000;
+        break;
+      case "enterprise":
+        cost = 2000;
+        break;
+    }
   }
 
   return cost;
 }
 
-function formatToReal(value: number) {
-  return value.toLocaleString("pt-BR", {
+function formatToCurrency(value: number, currency: string) {
+  return value.toLocaleString(currency === "BRL" ? "pt-BR" : "en-US", {
     style: "currency",
-    currency: "BRL",
+    currency: currency,
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });

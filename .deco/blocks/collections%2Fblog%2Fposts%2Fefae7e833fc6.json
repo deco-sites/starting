@@ -12,6 +12,7 @@
     "seo": {
       "title": "What is a plugin?",
       "description": "A plugin, also known as an add-on or extension, is a software component designed to add specific features or functionalities to an existing application."
-    }
+    },
+    "extraProps": []
   }
 }
