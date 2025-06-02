@@ -32,7 +32,7 @@
     "@std/semver": "jsr:@std/semver@^0.224.3",
     "@std/streams": "jsr:@std/streams@^1.0.0",
     "@std/testing": "jsr:@std/testing@^1.0.0",
-    "@supabase/supabase-js": "jsr:@supabase/supabase-js@^2.45.4",
+    "@supabase/supabase-js": "jsr:@supabase/supabase-js@2.49.8",
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
     "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.98.0/",
     "daisyui": "npm:daisyui@4.6.0",
