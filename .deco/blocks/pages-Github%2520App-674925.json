@@ -1,0 +1,19 @@
+{
+  "name": "Github App",
+  "path": "/githubapp",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Hub/Heading.tsx",
+      "headline": "<p><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\"><strong>Deco Environment Manager</strong></span></p>",
+      "headlineSubtitle": "A GitHub App that enables Deco to manage and interact with your repositories as part of isolated, configurable workspaces called *environments*.",
+      "Banner": {
+        "bannerHero": "https://assets.decocache.com/starting/cf39a2a3-4b72-481d-b6fe-e352fc3218df/capy-6.png",
+        "bannerHeroMobile": "https://assets.decocache.com/starting/cf39a2a3-4b72-481d-b6fe-e352fc3218df/capy-6.png"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
