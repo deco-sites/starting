@@ -10,6 +10,17 @@
         "bannerHero": "https://assets.decocache.com/starting/cf39a2a3-4b72-481d-b6fe-e352fc3218df/capy-6.png",
         "bannerHeroMobile": "https://assets.decocache.com/starting/cf39a2a3-4b72-481d-b6fe-e352fc3218df/capy-6.png"
       }
+    },
+    {
+      "__resolveType": "site/sections/NRF/CallToAction.tsx",
+      "cta": [
+        {
+          "variant": "Normal",
+          "href": "https://github.com/apps/deco-environments-manager",
+          "text": "Install it Now!"
+        }
+      ],
+      "text": " "
     }
   ],
   "seo": {
