@@ -828,9 +828,9 @@
                   "shouldAddPaddingTopAndBottom": true,
                   "title": "<p>commerce experiences</p>",
                   "alert": {
-                    "text": "Try the fastest way to get started with deco: Webdraw",
-                    "mobileText": "Get started quickly with deco: Webdraw",
-                    "href": "https://webdraw.ai/"
+                    "text": "Try the fastest way to get started with deco: deco.chat",
+                    "mobileText": "Get started quickly with deco: deco.chat",
+                    "href": "https://deco.chat/"
                   }
                 },
                 "rule": {
